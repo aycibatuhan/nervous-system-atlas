@@ -1,0 +1,145 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cervical-spondylotic-myelopathy",
+ "name": "Cervical spondylotic myelopathy",
+ "eponyms": [],
+ "category": "compressive",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "spinal-cord",
+   "cervical-enlargement",
+   "spinal-white-columns",
+   "roots-c5-t1",
+   "spinal-nerve-root-dermatome"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -80
+  },
+  "radiusMm": 8
+ },
+ "presentation": "An older patient reports that their hands have become clumsy, buttons are difficult and writing has deteriorated, while their family notices a stiff, unsteady gait. Examination shows wasting of the intrinsic hand muscles with absent or inverted reflexes at one cervical level, brisk reflexes below it with clonus, extensor plantars, a positive Hoffmann sign and reduced vibration sense in the feet; neck movement may be limited and painful.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "hands (at the level)",
+   "sign": "Lower motor neuron weakness and wasting of the hands with reduced reflexes at the compressed segments",
+   "substrate": "spinal-gray-anterior-horn"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "legs (below the level)",
+   "sign": "Spastic paraparesis with hyperreflexia, clonus, Hoffmann sign and extensor plantars",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "sensory-vibration-proprioception",
+   "side": "bilateral",
+   "distribution": "legs and hands",
+   "sign": "Reduced vibration and position sense, sensory ataxia, Lhermitte sign",
+   "substrate": "pathway-dcml"
+  },
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "gait",
+   "sign": "Spastic, broad-based gait; frequent falls",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "sphincter",
+   "side": "bilateral",
+   "distribution": "bladder",
+   "sign": "Urgency and frequency late",
+   "substrate": "intermediolateral-column"
+  }
+ ],
+ "reasoning": "Degenerative disc bulging, osteophytes, facet hypertrophy and a thickened ligamentum flavum narrow the cervical canal, most often at C5–C6 and C6–C7, so that the cord is squeezed with every extension of the neck and its venous drainage and pial arteries are compromised. The compression damages the cord at the level of the stenosis and the long tracts passing through it. At the level, the anterior horn cells and the exiting roots are injured, producing lower motor neuron signs confined to those myotomes, typically wasting of the hand and forearm with loss of the corresponding reflex; the inverted supinator reflex, in which tapping the brachioradialis tendon produces finger flexion instead, shows a C5–C6 segmental lesion with hyperactive segments below. Below the level, the lateral corticospinal tracts, which crossed in the medulla and so serve the same side, are damaged bilaterally by the midline compression, giving spasticity and hyperreflexia in the legs, and the posterior columns, uncrossed until the medulla, give bilateral loss of vibration and proprioception. The spinothalamic tracts lie anterolaterally and are affected less. The combination of segmental lower motor neuron signs in the arms and upper motor neuron signs in the legs mimics motor neuron disease, but the sensory signs, the sphincter symptoms and the neck pain point to a compressive lesion.",
+ "imagingFindings": [
+  {
+   "pathology": "Cervical spondylotic myelopathy",
+   "modality": "MRI",
+   "finding": "Multilevel canal stenosis with cord flattening and intramedullary T2 hyperintensity at the most compressed level; T1 hypointensity implies irreversible change.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Ossification of the posterior longitudinal ligament",
+   "modality": "CT",
+   "finding": "Calcified ligament behind the vertebral bodies narrowing the canal, common in East Asian patients.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Dynamic compression",
+   "modality": "MRI",
+   "finding": "Cord compression worsens in extension on flexion-extension imaging.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Degenerative cervical spondylosis",
+  "Ossification of the posterior longitudinal ligament",
+  "Congenitally narrow canal",
+  "Rheumatoid atlantoaxial subluxation",
+  "Disc herniation"
+ ],
+ "mimics": [
+  {
+   "name": "Amyotrophic lateral sclerosis",
+   "howToDistinguish": "No sensory signs, bulbar involvement, fasciculations widespread; EMG shows denervation in unaffected regions"
+  },
+  {
+   "name": "Multiple sclerosis",
+   "howToDistinguish": "Relapsing course, brain lesions, optic neuritis"
+  },
+  {
+   "name": "Subacute combined degeneration",
+   "howToDistinguish": "Low B12, no compression on MRI"
+  },
+  {
+   "name": "Carpal tunnel and ulnar neuropathy",
+   "howToDistinguish": "Hand symptoms in a nerve distribution without leg signs"
+  }
+ ],
+ "management": [
+  "MRI of the cervical spine; surgical decompression for progressive myelopathy or cord signal change",
+  "Avoid neck hyperextension and contact sports",
+  "Nerve conduction studies to exclude a coexisting peripheral entrapment"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    45,
+    45
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    130,
+    132
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -80
+  },
+  "label": "cervical cord at C5–C7"
+ },
+ "cameraPreset": "posterior"
+}

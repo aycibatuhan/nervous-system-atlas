@@ -1,0 +1,141 @@
+{
+ "kind": "syndrome",
+ "id": "syn-hemiballismus",
+ "name": "Hemiballismus",
+ "eponyms": [
+  "hemichorea-hemiballismus"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "subthalamic-nucleus",
+   "globus-pallidus",
+   "putamen",
+   "thalamus"
+  ],
+  "side": "contralateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "subthalamic-nucleus-r"
+  ]
+ },
+ "presentation": "An elderly hypertensive or poorly controlled diabetic patient suddenly begins to fling one arm and leg in wide, violent, uncontrollable movements that continue while awake, exhaust the patient and may injure the limb. The movements involve the proximal joints, look like throwing, and stop in sleep. Strength, sensation and cognition are normal. Over weeks the flinging usually subsides into a milder chorea and then resolves.",
+ "deficits": [
+  {
+   "modality": "other",
+   "side": "contralateral",
+   "distribution": "arm and leg, proximal",
+   "sign": "Large-amplitude flinging (ballistic) movements of one side of the body",
+   "substrate": "subthalamic-nucleus"
+  },
+  {
+   "modality": "motor",
+   "side": "n/a",
+   "distribution": "preserved",
+   "sign": "No weakness, spasticity or reflex change",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "other",
+   "side": "contralateral",
+   "distribution": "face (sometimes)",
+   "sign": "Facial and lingual involvement with grimacing in some",
+   "substrate": "subthalamic-nucleus"
+  }
+ ],
+ "reasoning": "The subthalamic nucleus is the only excitatory nucleus in the basal ganglia loop: it receives inhibition from the external pallidum and drives the internal pallidum and substantia nigra reticulata, which in turn inhibit the motor thalamus. Its output is the brake in the indirect pathway that suppresses unwanted movement. A small infarct or hemorrhage that destroys the nucleus on one side removes that excitatory drive, so the internal pallidum falls silent, the ventral lateral thalamus is released from inhibition and fires excessively on the motor and premotor cortex, which discharges the flinging, involuntary movements. The basal ganglia loops of each hemisphere serve the contralateral body through the corticospinal tract, which crosses in the medulla, so a right subthalamic lesion produces left hemiballismus. The movements are not weakness, because the corticospinal system is intact, and they cease in sleep because cortical drive falls. The subthalamic nucleus is supplied by perforators from the posterior communicating and posterior cerebral arteries and is a typical site for hypertensive lacunes and small hemorrhages; nonketotic hyperglycemia produces the same syndrome from striatal dysfunction, with a characteriztic T1-bright putamen on MRI. Lesions of the striatum, the pallidum or the thalamus can also cause hemichorea-hemiballismus, and dopamine-blocking drugs help by reducing the thalamocortical overactivity. Spontaneous recovery is the rule as the remaining circuit adapts.",
+ "imagingFindings": [
+  {
+   "pathology": "Subthalamic lacunar infarct or hemorrhage",
+   "modality": "MRI",
+   "finding": "Small area of restricted diffusion or hemorrhage in the contralateral subthalamic nucleus, below the thalamus and above the substantia nigra on coronal images.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Nonketotic hyperglycemic hemichorea",
+   "modality": "MRI",
+   "finding": "T1 hyperintensity of the contralateral putamen and caudate without diffusion restriction, resolving with glucose control.",
+   "sequence": "T1"
+  },
+  {
+   "pathology": "Other basal ganglia lesion",
+   "modality": "MRI",
+   "finding": "Striatal or pallidal infarct, tumor or demyelination on the side opposite the movements.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Lacunar infarct of the subthalamic nucleus",
+  "Small hypertensive hemorrhage",
+  "Nonketotic hyperglycemia",
+  "Striatal or thalamic infarct",
+  "Tumor, demyelination, HIV toxoplasmosis (bilateral or unilateral)"
+ ],
+ "mimics": [
+  {
+   "name": "Focal motor seizure",
+   "howToDistinguish": "Rhythmic, brief, with impaired awareness or spread; EEG"
+  },
+  {
+   "name": "Hemichorea from Huntington or Sydenham chorea",
+   "howToDistinguish": "Bilateral over time, family history or streptococcal illness, smaller amplitude"
+  },
+  {
+   "name": "Tardive dyskinesia",
+   "howToDistinguish": "Orofacial, bilateral, history of dopamine blockers"
+  }
+ ],
+ "management": [
+  "MRI and glucose; correct hyperglycemia",
+  "Dopamine-depleting or blocking drugs (tetrabenazine, haloperidol, risperidone) taper as the movements subside",
+  "Protect the limb; deep brain stimulation or pallidotomy for rare persistent cases"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    315,
+    315
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    320,
+    320
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    56,
+    56
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    242,
+    244
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": 12,
+   "y": -12,
+   "z": -6
+  },
+  "label": "subthalamic nucleus beneath the thalamus"
+ },
+ "cameraPreset": "anterior"
+}

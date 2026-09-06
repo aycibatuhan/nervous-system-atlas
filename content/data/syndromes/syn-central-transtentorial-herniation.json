@@ -1,0 +1,142 @@
+{
+ "kind": "syndrome",
+ "id": "syn-central-transtentorial-herniation",
+ "name": "Central (downward) transtentorial herniation",
+ "eponyms": [
+  "rostrocaudal deterioration"
+ ],
+ "category": "herniation",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "thalamus",
+   "level-midbrain-superior-colliculus",
+   "reticular-formation",
+   "red-nucleus",
+   "level-pons-caudal"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -22,
+   "z": -8
+  },
+  "radiusMm": 12
+ },
+ "presentation": "A patient with diffuse brain swelling or a midline mass becomes progressively less responsive without a dilating pupil. First they are drowsy with small reactive pupils, sighs and yawns, and their arms flex when a painful stimulus is applied; then they breathe in a crescendo-decrescendo rhythm, the pupils become mid-sized and fixed, the eyes stop moving with the head, and the limbs extend; finally breathing becomes rapid then irregular, the pupils dilate, and the limbs are flaccid.",
+ "deficits": [
+  {
+   "modality": "consciousness",
+   "side": "bilateral",
+   "distribution": "diencephalon then brainstem",
+   "sign": "Progressive decline from drowsiness to coma as the reticular activating system is compressed level by level",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "pupil",
+   "side": "bilateral",
+   "distribution": "both",
+   "sign": "Small reactive (diencephalic stage), then mid-position fixed (midbrain), then dilated (terminal)",
+   "substrate": "pathway-pupillary-light-reflex"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "all limbs",
+   "sign": "Decorticate (flexor) posturing at the diencephalic stage, decerebrate (extensor) posturing at the midbrain-pontine stage, flaccidity at the medullary stage",
+   "substrate": "pathway-rubrospinal"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "vestibulo-ocular reflex",
+   "sign": "Loss of oculocephalic and caloric responses as the pons is involved",
+   "substrate": "pathway-vestibular-vor"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "respiration",
+   "sign": "Cheyne–Stokes then central hyperventilation, ataxic breathing and apnea",
+   "substrate": "reticular-formation"
+  }
+ ],
+ "reasoning": "A diffuse increase in the volume of both hemispheres, or a midline mass, pushes the diencephalon and the upper brainstem downward through the tentorial notch, and the signs appear in rostrocaudal order as each level is compressed and its perforating arteries are stretched. At the diencephalic stage the thalamus and hypothalamus are compressed, consciousness fades, the pupils are small because the descending sympathetic pathway from the hypothalamus is interrupted while the midbrain parasympathetic outflow is intact, and the limbs adopt the decorticate posture, with the arms flexed by the rubrospinal and other brainstem flexor pathways that are still connected below the red nucleus while cortical control is lost. At the midbrain stage the third nerve nuclei and the pretectal light reflex pathways fail, so the pupils become mid-sized and fixed, the vertical gaze pathways are lost, and because the red nucleus and its rubrospinal tract are now disconnected, only the pontine vestibulospinal and reticulospinal extensor drives reach the cord, producing decerebrate extension. At the pontine stage the horizontal gaze centers and the vestibulo-ocular arcs are destroyed, so the eyes no longer move with head turning or caloric stimulation, breathing becomes rapid and regular, and at the medullary stage the respiratory centers fail and the limbs are flaccid. The Duret hemorrhages produced by shearing of the basilar perforators during descent make the pontine stage irreversible. Because the herniation is midline and symmetric, there is no lateralizing pupil and no ipsilateral or contralateral pattern to read, which is the clinical difference from uncal herniation.",
+ "imagingFindings": [
+  {
+   "pathology": "Central herniation",
+   "modality": "CT",
+   "finding": "Effacement of the suprasellar, perimesencephalic and quadrigeminal cisterns, downward displacement of the pineal calcification, obliteration of the basal cisterns, compressed ventricles.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Duret hemorrhages",
+   "modality": "MRI",
+   "finding": "Central midbrain and pontine hemorrhages on SWI in a patient with a history of herniation.",
+   "sequence": "SWI"
+  },
+  {
+   "pathology": "Diffuse cerebral edema",
+   "modality": "CT",
+   "finding": "Loss of gray-white differentiation, effaced sulci and cisterns, 'pseudo-subarachnoid hemorrhage' appearance.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Diffuse cerebral edema (trauma, anoxia, hepatic failure, hyponatremia)",
+  "Bilateral or midline masses",
+  "Hydrocephalus",
+  "Large hemispheric mass in late stages"
+ ],
+ "mimics": [
+  {
+   "name": "Metabolic encephalopathy",
+   "howToDistinguish": "Pupils reactive throughout, no rostrocaudal progression, asterixis or myoclonus"
+  },
+  {
+   "name": "Pontine hemorrhage",
+   "howToDistinguish": "Abrupt coma with pinpoint pupils and quadriplegia without preceding diencephalic stage"
+  },
+  {
+   "name": "Brain death",
+   "howToDistinguish": "End stage of the same process: absent brainstem reflexes and apnea"
+  }
+ ],
+ "management": [
+  "Treat intracranial hypertension urgently: osmotherapy, head elevation, sedation, ventilation to normocapnia, CSF drainage, decompressive surgery",
+  "Intracranial pressure monitoring in comatose patients with swelling",
+  "Recognize the stage from pupils, posture and breathing; the midbrain stage is the last from which good recovery is likely"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 30,
+   "pages": [
+    270,
+    270
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    211,
+    214
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -22,
+   "z": -8
+  },
+  "label": "midbrain at the tentorial notch"
+ },
+ "cameraPreset": "lateral-l"
+}

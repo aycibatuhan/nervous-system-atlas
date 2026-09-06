@@ -1,0 +1,123 @@
+{
+ "kind": "syndrome",
+ "id": "syn-sciatic-neuropathy",
+ "name": "Sciatic neuropathy",
+ "eponyms": [],
+ "category": "traumatic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "nerve-sciatic",
+   "nerve-common-peroneal",
+   "nerve-tibial",
+   "plexus-lumbosacral"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "sciatic-nerve-l"
+  ]
+ },
+ "presentation": "After a hip replacement, a posterior hip dislocation or an injection into the buttock, a patient has a flail foot that neither dorsiflexes nor plantar flexes, weak knee flexion, and numbness of the whole foot and the lateral leg, sparing the inner side of the leg. The ankle reflex is absent and the knee reflex is normal. The peroneal division is usually worse than the tibial, so the picture can mimic a foot drop from the fibular head until the plantar flexors are examined.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "hamstrings, all muscles below the knee",
+   "sign": "Weak knee flexion; foot drop with weak eversion, inversion and plantar flexion (peroneal division usually more affected than tibial)",
+   "substrate": "nerve-sciatic"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "lateral leg, dorsum and sole of the foot",
+   "sign": "Sensory loss in the peroneal and tibial territories; medial leg (saphenous) spared",
+   "substrate": "nerve-sciatic"
+  },
+  {
+   "modality": "reflex",
+   "side": "ipsilateral",
+   "distribution": "ankle",
+   "sign": "Absent ankle jerk with preserved knee jerk",
+   "substrate": "nerve-tibial"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "buttock and posterior thigh",
+   "sign": "Deep pain in the buttock radiating down the leg",
+   "substrate": "nerve-sciatic"
+  }
+ ],
+ "reasoning": "The sciatic nerve carries the L4–S3 fibers of the sacral plexus out of the pelvis through the greater sciatic foramen beneath the piriformis, runs down the posterior thigh supplying the hamstrings, and divides above the knee into the tibial and common peroneal nerves. Its two divisions are separate bundles from the outset, and the peroneal division, with fewer and larger fascicles and less connective tissue, tethered at the fibular head, is the more vulnerable to stretch, so a sciatic lesion at the hip frequently presents as a predominant foot drop that can be mistaken for a common peroneal palsy; the distinction rests on finding weakness of the tibial-innervated plantar flexors and invertors and the hamstrings, an absent ankle reflex and sensory loss on the sole. The knee reflex and hip adduction are normal because the femoral and obturator nerves are separate, and the medial leg is spared because the saphenous nerve is femoral. The lesion is peripheral and ipsilateral. A lesion of the L5 and S1 roots produces a similar distribution but adds back pain, gluteal weakness from the superior and inferior gluteal nerves, which leave the plexus before the sciatic nerve is formed, and paraspinal denervation on EMG; a lumbosacral plexopathy involves the gluteal nerves as well. Common causes at the hip are surgery, dislocation, hematoma and prolonged compression in coma, and in the thigh, injections and tumors.",
+ "imagingFindings": [
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Denervation in both peroneal and tibial-innervated muscles and the hamstrings, sparing the glutei and paraspinals; sural and superficial peroneal sensory responses reduced.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Hip or gluteal lesion",
+   "modality": "MRI",
+   "finding": "Hematoma, tumor, or postoperative change around the nerve at the sciatic notch; T2 hyperintensity and enlargement of the nerve on MR neurography.",
+   "sequence": "STIR"
+  },
+  {
+   "pathology": "Hip dislocation or arthroplasty",
+   "modality": "CT",
+   "finding": "Posterior dislocation, acetabular fracture fragments or a prosthetic component in contact with the nerve.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Hip arthroplasty or posterior dislocation",
+  "Gluteal injection",
+  "Prolonged compression during coma, surgery or sitting",
+  "Gluteal or thigh hematoma",
+  "Tumor of the nerve or adjacent tissue",
+  "Piriformis syndrome (contested)"
+ ],
+ "mimics": [
+  {
+   "name": "Common peroneal neuropathy at the fibular head",
+   "howToDistinguish": "Plantar flexion, inversion and the ankle reflex are normal; sensory loss confined to the dorsum and lateral leg"
+  },
+  {
+   "name": "L5–S1 radiculopathy",
+   "howToDistinguish": "Back pain, gluteal weakness, paraspinal denervation, straight leg raise positive"
+  },
+  {
+   "name": "Lumbosacral plexopathy",
+   "howToDistinguish": "Gluteal muscles and other plexus nerves involved"
+  }
+ ],
+ "management": [
+  "Ankle-foot orthosis and physiotherapy; monitor for recovery over 6–18 months",
+  "Urgent decompression for hematoma or an identifiable compressive lesion",
+  "EMG at 3–4 weeks to define the lesion and prognosis"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    160,
+    165
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -90,
+   "y": -50,
+   "z": -220
+  },
+  "label": "sciatic nerve at the greater sciatic notch (virtual)"
+ },
+ "cameraPreset": "anterior"
+}

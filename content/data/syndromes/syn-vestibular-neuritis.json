@@ -1,0 +1,118 @@
+{
+ "kind": "syndrome",
+ "id": "syn-vestibular-neuritis",
+ "name": "Vestibular neuritis",
+ "eponyms": [
+  "vestibular neuronitis"
+ ],
+ "category": "infectious",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-08-vestibulocochlear",
+   "vestibular-nuclei"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-08-vestibulocochlear-l"
+  ]
+ },
+ "presentation": "Over a few hours a previously well adult develops continuous, severe rotatory vertigo with vomiting, and lies still because every head movement makes it worse. There is no hearing loss, no headache and no other neurological complaint. The eyes show a horizontal-torsional nystagmus beating away from one ear that increases on looking in the direction of the fast phase and is suppressed by fixation, and rapid head turning toward that ear produces a catch-up saccade. Symptoms settle over days to weeks.",
+ "deficits": [
+  {
+   "modality": "vestibular",
+   "side": "ipsilateral",
+   "distribution": "vestibular nerve (superior division)",
+   "sign": "Acute prolonged vertigo with unidirectional horizontal-torsional nystagmus beating away from the lesion",
+   "substrate": "cn-08-vestibulocochlear"
+  },
+  {
+   "modality": "vestibular",
+   "side": "ipsilateral",
+   "distribution": "vestibulo-ocular reflex",
+   "sign": "Positive head impulse test toward the affected ear",
+   "substrate": "pathway-vestibular-vor"
+  },
+  {
+   "modality": "gait",
+   "side": "ipsilateral",
+   "distribution": "trunk and gait",
+   "sign": "Veering and falling toward the affected side; able to stand unaided",
+   "substrate": "pathway-vestibulospinal"
+  },
+  {
+   "modality": "auditory",
+   "side": "n/a",
+   "distribution": "spared",
+   "sign": "Normal hearing (labyrinthitis if hearing is lost)",
+   "substrate": "pathway-auditory"
+  }
+ ],
+ "reasoning": "The two labyrinths send a balanced tonic discharge to the vestibular nuclei, and the brain reads any asymmetry between them as rotation. Inflammation of one vestibular nerve, an uncrossed peripheral nerve whose signs are therefore ipsilateral, usually its superior division which carries the horizontal and anterior canal and utricular afferents, silences one side, so the intact side's discharge is unopposed: the brain perceives rotation toward the healthy ear, the slow phase of the vestibulo-ocular reflex drives the eyes toward the lesion and the corrective fast phase beats away from it, and the vestibulospinal system tilts the body toward the lesion. The nystagmus follows Alexander's law, growing when gaze is directed toward the fast phase, is suppressed by visual fixation because the cerebellum can override a peripheral imbalance, and stays unidirectional whatever the direction of gaze: these three features separate a peripheral from a central lesion, along with the head impulse test, in which turning the head toward the dead labyrinth fails to generate the reflex eye movement and the patient makes a visible catch-up saccade. A normal head impulse test in a patient with acute vertigo is the alarming finding, because it means the reflex is intact and the vertigo is central. Recovery depends on cerebellar compensation, which requires movement, so vestibular suppressants are stopped early.",
+ "imagingFindings": [
+  {
+   "pathology": "Vestibular neuritis",
+   "modality": "MRI",
+   "finding": "Usually normal; occasionally enhancement of the vestibular nerve in the internal acoustic meatus. Imaging is done to exclude stroke when the examination is not clearly peripheral.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Stroke mimic",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the lateral medulla, cerebellar peduncle or inferior cerebellum; DWI may be falsely negative in the first 48 h for small posterior fossa infarcts.",
+   "sequence": "DWI"
+  }
+ ],
+ "commonCauses": [
+  "Presumed viral (herpes simplex reactivation) inflammation of the vestibular nerve",
+  "Post-viral",
+  "Labyrinthine ischemia in vasculopaths (with hearing loss)"
+ ],
+ "mimics": [
+  {
+   "name": "Cerebellar or lateral medullary stroke",
+   "howToDistinguish": "Normal head impulse, direction-changing or vertical nystagmus, skew deviation, inability to stand; HINTS 'central' pattern"
+  },
+  {
+   "name": "Labyrinthitis",
+   "howToDistinguish": "Same vertigo with acute hearing loss"
+  },
+  {
+   "name": "Vestibular migraine",
+   "howToDistinguish": "Recurrent, shorter, with migraine features"
+  },
+  {
+   "name": "Ménière disease",
+   "howToDistinguish": "Episodic, with fluctuating hearing loss and fullness"
+  }
+ ],
+ "management": [
+  "Apply the HINTS examination; a central pattern or any other neurological sign requires urgent MRI",
+  "Short course of antiemetics and vestibular suppressants, then early mobilization and vestibular rehabilitation",
+  "Corticosteroids within 3 days may hasten recovery"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    109,
+    112
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -40,
+   "y": -30,
+   "z": -30
+  },
+  "label": "vestibular nerve in the internal acoustic meatus"
+ },
+ "cameraPreset": "inferior"
+}

@@ -1,0 +1,107 @@
+{
+ "kind": "syndrome",
+ "id": "syn-bppv",
+ "name": "Benign paroxysmal positional vertigo",
+ "eponyms": [],
+ "category": "otologic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-08-vestibulocochlear",
+   "vestibular-nuclei",
+   "flocculonodular-lobe"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-08-vestibulocochlear-l"
+  ]
+ },
+ "presentation": "The patient wakes, rolls over in bed and the room spins violently for twenty seconds, then settles; the same thing happens when looking up to a shelf or bending to tie shoes. There is no hearing loss and no vertigo when still. The Dix–Hallpike test with the affected ear down reproduces the vertigo after a few seconds' latency, with a torsional upbeating nystagmus that fatigues and reverses on sitting up.",
+ "deficits": [
+  {
+   "modality": "vestibular",
+   "side": "ipsilateral",
+   "distribution": "posterior semicircular canal",
+   "sign": "Brief positional vertigo with latency, torsional-upbeat nystagmus on Dix–Hallpike, fatigability",
+   "substrate": "cn-08-vestibulocochlear"
+  },
+  {
+   "modality": "auditory",
+   "side": "n/a",
+   "distribution": "spared",
+   "sign": "Normal hearing; no tinnitus",
+   "substrate": "pathway-auditory"
+  },
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "mild",
+   "sign": "Mild unsteadiness between attacks; no ataxia",
+   "substrate": "pathway-vestibular-vor"
+  }
+ ],
+ "reasoning": "Otoconia dislodged from the utricular macula fall into the posterior semicircular canal, the most dependent canal, where they float in the endolymph. When the head moves into the plane of that canal the debris sinks, dragging the endolymph and deflecting the cupula, which the brain interprets as sustained rotation in the plane of the canal; the deflection stops once the particles settle, hence the latency of a few seconds while the debris starts to move and the short duration. The posterior canal projects through the vestibular nerve and nuclei to the ipsilateral superior oblique and the contralateral inferior rectus, so the nystagmus is torsional toward the affected (lower) ear and upbeating, an exact fingerprint of the canal involved, and reverses when the patient sits up and the debris moves back. Repeating the maneuver disperses the debris, so the response fatigues, and the cerebellum suppresses it with repetition. The horizontal canal variant gives a horizontal geotropic or apogeotropic nystagmus on rolling in bed. The peripheral origin is confirmed by the latency, the brevity, the fatigability and the absence of any other neurological sign; positional nystagmus that is purely vertical, persistent, without latency or unfatigable points instead to the cerebellar nodulus or the fourth ventricle region, and requires imaging.",
+ "imagingFindings": [
+  {
+   "pathology": "Benign paroxysmal positional vertigo",
+   "modality": "MRI",
+   "finding": "Diagnosis is clinical by Dix–Hallpike or supine roll test; imaging is normal and unnecessary in typical cases.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Central positional vertigo (mimic)",
+   "modality": "MRI",
+   "finding": "Nodular or fourth ventricular lesion (tumor, Chiari, demyelination) when nystagmus is downbeat, persistent or without latency.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Idiopathic otolith degeneration (age)",
+  "Head trauma",
+  "After vestibular neuritis or prolonged bed rest",
+  "Ménière disease (secondary)"
+ ],
+ "mimics": [
+  {
+   "name": "Central positional vertigo",
+   "howToDistinguish": "No latency, no fatigue, downbeat or direction-changing nystagmus, other signs"
+  },
+  {
+   "name": "Orthostatic hypotension",
+   "howToDistinguish": "Lightheadedness on standing, no spinning, no nystagmus"
+  },
+  {
+   "name": "Vestibular migraine",
+   "howToDistinguish": "Longer attacks with headache or photophobia; positional nystagmus atypical"
+  }
+ ],
+ "management": [
+  "Epley (canalith repositioning) maneuver for the posterior canal; barbecue roll for the horizontal canal",
+  "Avoid vestibular suppressants beyond a few days",
+  "Image only when the pattern is atypical or repositioning fails repeatedly"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    112,
+    114
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -40,
+   "y": -30,
+   "z": -30
+  },
+  "label": "vestibular nerve entering the internal acoustic meatus"
+ },
+ "cameraPreset": "inferior"
+}

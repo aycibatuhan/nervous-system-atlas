@@ -1,0 +1,165 @@
+{
+ "kind": "syndrome",
+ "id": "syn-conus-vs-cauda-equina",
+ "name": "Conus medullaris versus cauda equina syndrome",
+ "eponyms": [],
+ "category": "compressive",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "conus-medullaris",
+   "cauda-equina",
+   "roots-l2-s1",
+   "spinal-nerve-root-dermatome",
+   "autonomic-sacral-parasympathetic"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -50,
+   "z": -160
+  },
+  "radiusMm": 10
+ },
+ "presentation": "A patient with a large central lumbar disc prolapse has severe back and leg pain, numbness of the buttocks and perineum, weakness of both legs and cannot pass urine. In cauda equina syndrome the pain is severe and asymmetric, the weakness is flaccid and asymmetric with absent ankle reflexes, and the bladder is affected late; in a conus lesion the onset is sudden, saddle anesthesia and sphincter loss are early and symmetric, pain is mild, and the knee reflexes may be brisk. Both are emergencies.",
+ "deficits": [
+  {
+   "modality": "sensory-light-touch",
+   "side": "bilateral",
+   "distribution": "saddle area (S2–S5)",
+   "sign": "Saddle anesthesia: symmetric and early in conus lesions, asymmetric and later in cauda equina",
+   "substrate": "roots-l2-s1"
+  },
+  {
+   "modality": "sphincter",
+   "side": "bilateral",
+   "distribution": "bladder, bowel, sexual function",
+   "sign": "Painless retention with overflow, fecal incontinence, impotence; early in conus, late in cauda equina",
+   "substrate": "autonomic-sacral-parasympathetic"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "legs",
+   "sign": "Conus: mild symmetric weakness, brisk knees possible; cauda: marked asymmetric flaccid weakness with areflexia",
+   "substrate": "cauda-equina"
+  },
+  {
+   "modality": "pain",
+   "side": "bilateral",
+   "distribution": "back and legs",
+   "sign": "Severe radicular pain in cauda equina; mild or absent in conus",
+   "substrate": "spinal-nerve-root-dermatome"
+  },
+  {
+   "modality": "reflex",
+   "side": "bilateral",
+   "distribution": "sacral reflexes",
+   "sign": "Absent anal and bulbocavernosus reflexes in both",
+   "substrate": "conus-medullaris"
+  }
+ ],
+ "reasoning": "The spinal cord ends at the conus medullaris opposite L1–L2, and below that the lumbar and sacral roots hang as the cauda equina in the lumbar cistern. The conus contains the sacral segments S2–S5: the parasympathetic neurons for the bladder and rectum, the motor neurons for the sphincters and the sensory relay for the perineum, all packed into a centimeter or two of cord, so a lesion of the conus is symmetric and hits the sacral functions first and hardest, giving early saddle anesthesia and sphincter failure with little leg weakness, while the lumbar roots that have already left the cord above may be spared; if the lesion extends upward into the lumbar segments or spares the sacral roots that pass beside it, upper motor neuron signs such as brisk knee jerks can coexist. The cauda equina, by contrast, is a bundle of peripheral nerve roots, so its compression produces a lower motor neuron and radicular picture: severe pain in the distribution of the compressed roots, asymmetric flaccid weakness and areflexia, dermatomal sensory loss that becomes a saddle distribution as the lower sacral roots at the center of the bundle are engulfed, and sphincter loss that appears later because the sacral roots are the smallest and most central. Neither has a crossed component: both are bilateral because the structures involved lie in the midline of the canal. The distinction matters less than the recognition, since both require MRI within hours and decompression before the sphincters are permanently lost.",
+ "imagingFindings": [
+  {
+   "pathology": "Cauda equina compression",
+   "modality": "MRI",
+   "finding": "Large central disc extrusion, tumor or abscess filling the lumbar canal and compressing the roots; sagittal and axial T2 of the lumbar spine.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Conus lesion",
+   "modality": "MRI",
+   "finding": "Intramedullary tumor (ependymoma), infarct, demyelination or metastasis at T12–L1 with signal change in the conus; contrast needed.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Post-void residual",
+   "modality": "US",
+   "finding": "Bladder ultrasound showing retention above 200 mL supports the diagnosis and monitors recovery.",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Central lumbar disc herniation",
+  "Spinal stenosis, trauma, epidural abscess or hematoma",
+  "Metastasis or primary tumor (cauda: schwannoma, myxopapillary ependymoma; conus: ependymoma, metastasis)",
+  "Ankylosing spondylitis, arachnoiditis",
+  "Conus infarct"
+ ],
+ "mimics": [
+  {
+   "name": "Bilateral lumbosacral radiculopathy without sacral involvement",
+   "howToDistinguish": "No saddle anesthesia or sphincter change"
+  },
+  {
+   "name": "Lumbosacral plexopathy",
+   "howToDistinguish": "Unilateral, sphincters spared"
+  },
+  {
+   "name": "Cervical or thoracic myelopathy",
+   "howToDistinguish": "Sensory level higher, spasticity dominant"
+  }
+ ],
+ "management": [
+  "Rectal examination, perineal sensation and a bladder scan in every patient with back pain and sphincter symptoms; emergency MRI of the whole spine",
+  "Surgical decompression as soon as possible, ideally within 24–48 hours of sphincter involvement",
+  "Catheterization and bowel management; MRI of the whole neuraxis for intramedullary lesions"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    168,
+    168
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    172,
+    172
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    41,
+    41
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    45,
+    45
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    162,
+    163
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -50,
+   "z": -160
+  },
+  "label": "conus medullaris at T12–L1"
+ },
+ "cameraPreset": "posterior"
+}

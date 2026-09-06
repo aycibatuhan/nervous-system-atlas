@@ -1,0 +1,143 @@
+{
+ "kind": "syndrome",
+ "id": "syn-radiculopathy-cervical",
+ "name": "Cervical radiculopathy (C5–C8)",
+ "eponyms": [],
+ "category": "radiculopathy",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "roots-c5-t1",
+   "spinal-nerve-root-dermatome",
+   "dorsal-root-ganglion",
+   "plexus-brachial"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "roots-c5-t1-l"
+  ]
+ },
+ "presentation": "Neck pain shoots down the arm in a band, worse when the head is turned and tilted toward that side, with tingling in specific fingers: the thumb for C6, the middle finger for C7, the little finger for C8. The corresponding reflex is lost, biceps and brachioradialis for C6, triceps for C7, and one muscle group is weak, deltoid and biceps for C5, wrist extensors for C6, triceps and finger extensors for C7, finger flexors and intrinsics for C8. Relief on placing the hand on the head is characteriztic.",
+ "deficits": [
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "neck to arm in a dermatomal band",
+   "sign": "Radicular pain and paresthesias worsened by neck extension and rotation (Spurling sign), relieved by shoulder abduction",
+   "substrate": "spinal-nerve-root-dermatome"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "dermatome (C5 lateral shoulder, C6 thumb, C7 middle finger, C8 little finger)",
+   "sign": "Dermatomal sensory loss, often incomplete because of overlap",
+   "substrate": "dorsal-root-ganglion"
+  },
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "myotome",
+   "sign": "Weakness in the root's muscles across more than one nerve territory (C5 deltoid/biceps, C6 biceps/wrist extensors, C7 triceps/wrist flexors, C8 finger flexors/intrinsics)",
+   "substrate": "roots-c5-t1"
+  },
+  {
+   "modality": "reflex",
+   "side": "ipsilateral",
+   "distribution": "one reflex",
+   "sign": "Reduced biceps and brachioradialis (C5–C6) or triceps (C7); C8 has no reflex",
+   "substrate": "roots-c5-t1"
+  }
+ ],
+ "reasoning": "Each cervical spinal nerve leaves the canal through the intervertebral foramen above the vertebra of the same number (C6 exits between C5 and C6), so a C5–C6 disc herniation or foraminal osteophyte compresses the C6 root, and a C6–C7 lesion the C7 root, the two commonest. The root contains the dorsal root ganglion's central processes for one dermatome and the motor axons for one myotome, and because the myotome of a root is distributed among several peripheral nerves, root weakness crosses nerve territories, whereas nerve weakness crosses root territories: C7 weakness involves the triceps (radial nerve) and the wrist flexors (median nerve), which no single nerve lesion could produce. The lesion is proximal to the plexus, so it is strictly unilateral and ipsilateral. Pain follows the dermatome because the dorsal root is compressed and inflamed, and it is provoked by narrowing the foramen with extension and ipsilateral tilt and relieved by abducting the arm, which reduces tension on the root. The reflex arc runs through the root, so the reflex of that segment is lost while others remain, which localizes the level more reliably than sensory testing, since adjacent dermatomes overlap. Sparing of the sensory nerve action potential on nerve conduction studies distinguishes a preganglionic root lesion, where the dorsal root ganglion is intact, from a postganglionic plexus or nerve lesion, where it is lost.",
+ "imagingFindings": [
+  {
+   "pathology": "Foraminal disc herniation or spondylosis",
+   "modality": "MRI",
+   "finding": "Posterolateral disc protrusion or uncovertebral osteophyte narrowing the foramen and contacting the exiting root on axial T2; sagittal images through the foramina.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Root avulsion or tumor",
+   "modality": "MRI",
+   "finding": "Pseudomeningocele after traction injury; enhancing nerve sheath tumor enlarging the foramen.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Denervation",
+   "modality": "EMG/NCS",
+   "finding": "Denervation in muscles of one myotome across several nerves, including the paraspinals, with normal sensory nerve action potentials.",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Cervical disc herniation (younger)",
+  "Foraminal spondylosis (older)",
+  "Herpes zoster",
+  "Nerve sheath tumor",
+  "Traction injury",
+  "Diabetic or inflammatory radiculitis"
+ ],
+ "mimics": [
+  {
+   "name": "Carpal tunnel syndrome (vs C6–C7)",
+   "howToDistinguish": "Sensory loss confined to the median territory, thenar weakness only, night symptoms, no neck pain"
+  },
+  {
+   "name": "Ulnar neuropathy (vs C8)",
+   "howToDistinguish": "Sensory loss in the little finger but sparing the medial forearm; no finger flexor weakness of the index"
+  },
+  {
+   "name": "Brachial neuritis (Parsonage–Turner)",
+   "howToDistinguish": "Severe pain first, then multi-root weakness with no compressive lesion"
+  },
+  {
+   "name": "Rotator cuff or shoulder disease",
+   "howToDistinguish": "Pain with shoulder movement, no neurological deficit"
+  }
+ ],
+ "management": [
+  "Most disc-related radiculopathies resolve in weeks with analgesia and physiotherapy",
+  "MRI for progressive weakness, myelopathic signs or pain unresponsive after 6–8 weeks; EMG when the level is unclear",
+  "Foraminotomy or anterior discectomy for persistent deficit or intractable pain"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    100,
+    100
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 18,
+   "pages": [
+    510,
+    511
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    145,
+    147
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -15,
+   "y": -45,
+   "z": -85
+  },
+  "label": "cervical roots leaving the foramina"
+ },
+ "cameraPreset": "posterior"
+}

@@ -1,0 +1,129 @@
+{
+ "kind": "syndrome",
+ "id": "syn-optic-neuritis",
+ "name": "Optic neuritis",
+ "eponyms": [],
+ "category": "demyelinating",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-02-optic",
+   "optic-chiasm",
+   "lateral-geniculate-nucleus"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "optic-nerve-l"
+  ]
+ },
+ "presentation": "A young woman notices that vision in one eye has become blurred and dim over two or three days, colors look washed out, and the eye aches when she moves it. Acuity is reduced, there is a central scotoma, the pupil on that side responds less briskly to light than the other (a relative afferent pupillary defect), and the disc is normal in two-thirds of cases or mildly swollen in the rest. Vision recovers over weeks, but the episode may be the first sign of multiple sclerosis.",
+ "deficits": [
+  {
+   "modality": "visual-acuity",
+   "side": "ipsilateral",
+   "distribution": "one eye",
+   "sign": "Reduced acuity and color vision with a central or cecocentral scotoma",
+   "substrate": "cn-02-optic"
+  },
+  {
+   "modality": "pupil",
+   "side": "ipsilateral",
+   "distribution": "afferent",
+   "sign": "Relative afferent pupillary defect",
+   "substrate": "pathway-pupillary-light-reflex"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "orbit",
+   "sign": "Pain on eye movement from traction on the inflamed nerve sheath at the orbital apex",
+   "substrate": "cn-02-optic"
+  },
+  {
+   "modality": "visual-acuity",
+   "side": "ipsilateral",
+   "distribution": "recovered eye",
+   "sign": "Persisting desaturation of red and Uhthoff phenomenon (blurring with heat or exercise)",
+   "substrate": "cn-02-optic"
+  }
+ ],
+ "reasoning": "Each optic nerve carries the axons of all the ganglion cells of one retina, so a lesion in front of the chiasm produces a monocular deficit, and because the light reflex afferents travel in the same nerve, the pupil of the affected eye constricts less when light swings onto it (the pathway is uncrossed up to the chiasm, so the deficit is strictly ipsilateral), while both pupils stay equal in size because the efferent pathways are intact and bilateral: the relative afferent pupillary defect is the objective sign of a unilateral prechiasmal lesion. Inflammation and demyelination of the nerve, usually behind the disc (retrobulbar), block conduction in the papillomacular bundle first, which is why central vision and color suffer most. The nerve is a tract of the central nervous system with oligodendrocyte myelin and is attacked by the same process that produces multiple sclerosis elsewhere; the risk of MS after a first episode depends largely on whether the brain MRI already shows demyelinating lesions. The recovered nerve conducts slowly, which shows as a delayed visual evoked potential and as Uhthoff's phenomenon when a rise in temperature blocks marginal conduction. Bilateral, severe, poorly recovering or recurrent optic neuritis, especially with a long lesion on MRI, raises neuromyelitis optica spectrum disorder or MOG antibody disease instead, where the treatment and prognosis differ.",
+ "imagingFindings": [
+  {
+   "pathology": "Optic neuritis",
+   "modality": "MRI",
+   "finding": "T2 hyperintensity and gadolinium enhancement of a short segment of the intraorbital optic nerve on fat-suppressed coronal images.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Multiple sclerosis",
+   "modality": "MRI",
+   "finding": "Periventricular, juxtacortical, infratentorial or spinal cord demyelinating lesions on brain and cord MRI that determine the risk and diagnosis.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Neuromyelitis optica spectrum",
+   "modality": "MRI",
+   "finding": "Long, bilateral or chiasmal optic nerve enhancement with longitudinally extensive transverse myelitis.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Multiple sclerosis or clinically isolated syndrome",
+  "Neuromyelitis optica spectrum disorder (aquaporin-4)",
+  "MOG antibody-associated disease",
+  "Infectious and parainfectious (syphilis, Lyme, viral)",
+  "Sarcoidosis"
+ ],
+ "mimics": [
+  {
+   "name": "Anterior ischemic optic neuropathy",
+   "howToDistinguish": "Older patient, painless, altitudinal defect, pale swollen disc; check ESR for giant cell arteritis"
+  },
+  {
+   "name": "Leber hereditary optic neuropathy",
+   "howToDistinguish": "Young man, sequential painless bilateral loss, no recovery"
+  },
+  {
+   "name": "Compressive optic neuropathy",
+   "howToDistinguish": "Slowly progressive, no pain, no recovery; mass on MRI"
+  }
+ ],
+ "management": [
+  "MRI of the brain and orbits with contrast; serum aquaporin-4 and MOG antibodies if atypical",
+  "High-dose intravenous methylprednisolone hastens recovery; oral low-dose steroids alone are avoided",
+  "Discuss disease-modifying therapy when MRI shows MS lesions"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    48,
+    49
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 21,
+   "pages": [
+    224,
+    227
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -25,
+   "y": 30,
+   "z": -10
+  },
+  "label": "intraorbital optic nerve"
+ },
+ "cameraPreset": "anterior"
+}

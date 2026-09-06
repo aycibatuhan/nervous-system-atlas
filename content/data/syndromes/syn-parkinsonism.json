@@ -1,0 +1,152 @@
+{
+ "kind": "syndrome",
+ "id": "syn-parkinsonism",
+ "name": "Parkinsonism",
+ "eponyms": [
+  "Parkinson disease",
+  "paralysis agitans"
+ ],
+ "category": "degenerative",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "substantia-nigra",
+   "putamen",
+   "globus-pallidus",
+   "subthalamic-nucleus",
+   "thalamus-va-vl"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "substantia-nigra-l",
+   "substantia-nigra-r"
+  ]
+ },
+ "presentation": "A patient in their sixties has noticed that one hand shakes at rest, stops shaking when they reach for a cup, and that handwriting has become small and cramped; a spouse says the face has lost its expression and the voice its volume. Examination finds a resting tremor at four to six cycles per second, cogwheel rigidity that appears when the other arm is moved, slow and decrementing finger tapping, a stooped posture with a shuffling gait and reduced arm swing on the affected side, and a tendency to fall backward when pulled.",
+ "deficits": [
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "limbs, asymmetric onset",
+   "sign": "Bradykinesia: slow, small, decrementing repetitive movements; hypomimia, micrographia, hypophonia",
+   "substrate": "pathway-basal-ganglia-loops"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "limbs and neck",
+   "sign": "Rigidity (lead-pipe, with cogwheeling when tremor coexists)",
+   "substrate": "substantia-nigra"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "hands, asymmetric",
+   "sign": "Rest tremor at 4–6 Hz, pill-rolling, suppressed by movement",
+   "substrate": "thalamus-va-vl"
+  },
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "gait and posture",
+   "sign": "Shuffling festinating gait, stooped posture, freezing, postural instability with retropulsion",
+   "substrate": "pathway-basal-ganglia-loops"
+  },
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "diffuse",
+   "sign": "Constipation, orthostatic hypotension, urinary urgency, anosmia and REM sleep behavior disorder, often preceding motor signs",
+   "substrate": "pathway-olfactory"
+  }
+ ],
+ "reasoning": "The dopaminergic neurons of the substantia nigra pars compacta project to the striatum, where dopamine facilitates the direct pathway through D1 receptors and inhibits the indirect pathway through D2 receptors, tilting the balance of the basal ganglia loops toward the release of movement. When more than half of these neurons have died, the direct pathway weakens and the indirect pathway is disinhibited, the subthalamic nucleus and internal pallidum become overactive, and the ventral lateral and ventral anterior thalamus are held under excessive inhibition, so the motor cortex receives too little thalamic drive: movements become small, slow and infrequent (bradykinesia), and the postural and locomotor programs of the brainstem are under-recruited, giving the stooped posture, shuffling gait and loss of postural reflexes. The abnormal synchronous oscillations of the pallidothalamic circuit that appear when dopamine is lost are relayed to the cortex as the rest tremor, which is suppressed when voluntary movement resets the circuit, and the rigidity reflects enhanced long-latency stretch reflexes. Each hemisphere's loop controls the contralateral body through the crossed corticospinal projection, so the asymmetric neuronal loss of Parkinson disease produces signs that begin on one side, opposite the more affected nigra, and remain asymmetric. The corticospinal tract itself is intact, so strength and reflexes are normal and the plantars are flexor. Lewy body pathology starts in the olfactory bulb, dorsal vagal nucleus and locus coeruleus years before it reaches the nigra, which explains the premotor anosmia, constipation and REM sleep behavior disorder. Symmetric onset, early falls, early dementia, ophthalmoplegia, marked autonomic failure or a poor levodopa response point to the atypical parkinsonian syndromes, and drugs that block dopamine receptors produce a symmetric reversible form.",
+ "imagingFindings": [
+  {
+   "pathology": "Parkinson disease",
+   "modality": "MRI",
+   "finding": "Usually normal; loss of the dorsolateral nigral hyperintensity ('swallow tail') on high-resolution SWI, and neuromelanin loss on specialized sequences. MRI is done to exclude structural mimics.",
+   "sequence": "SWI"
+  },
+  {
+   "pathology": "Dopamine transporter imaging",
+   "modality": "SPECT",
+   "finding": "Reduced striatal uptake, asymmetric and worse in the putamen, in Parkinson disease and the atypical degenerations; normal in essential tremor and drug-induced parkinsonism.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Atypical parkinsonism",
+   "modality": "MRI",
+   "finding": "Midbrain atrophy ('hummingbird' sign) in progressive supranuclear palsy; putaminal rim and pontine 'hot cross bun' in multiple system atrophy; asymmetric cortical atrophy in corticobasal degeneration.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Vascular parkinsonism",
+   "modality": "MRI",
+   "finding": "Extensive white matter disease and basal ganglia lacunes with lower-body predominant signs.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Parkinson disease (Lewy body)",
+  "Drug-induced (antipsychotics, metoclopramide, valproate)",
+  "Multiple system atrophy, progressive supranuclear palsy, corticobasal degeneration, dementia with Lewy bodies",
+  "Vascular parkinsonism",
+  "Normal pressure hydrocephalus, Wilson disease (young), carbon monoxide or manganese toxicity"
+ ],
+ "mimics": [
+  {
+   "name": "Essential tremor",
+   "howToDistinguish": "Action and postural tremor, no bradykinesia or rigidity, often familial and alcohol-responsive"
+  },
+  {
+   "name": "Normal pressure hydrocephalus",
+   "howToDistinguish": "Gait and bladder first, ventriculomegaly, tap response"
+  },
+  {
+   "name": "Depression or hypothyroidism",
+   "howToDistinguish": "Slowing without rigidity or tremor"
+  },
+  {
+   "name": "Dystonic tremor",
+   "howToDistinguish": "Irregular, position-dependent, with dystonic posturing"
+  }
+ ],
+ "management": [
+  "Clinical diagnosis: bradykinesia plus tremor or rigidity, asymmetric, with a clear levodopa response; review drugs",
+  "Levodopa is the most effective therapy; dopamine agonists and MAO-B inhibitors in younger patients; physiotherapy and exercise throughout",
+  "Deep brain stimulation of the subthalamic nucleus or internal pallidum for motor fluctuations and dyskinesias"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    315,
+    318
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    243,
+    250
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -20,
+   "z": -15
+  },
+  "label": "substantia nigra in the midbrain"
+ },
+ "cameraPreset": "inferior"
+}

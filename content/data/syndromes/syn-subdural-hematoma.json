@@ -1,0 +1,149 @@
+{
+ "kind": "syndrome",
+ "id": "syn-subdural-hematoma",
+ "name": "Subdural hematoma",
+ "eponyms": [],
+ "category": "traumatic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "dura-mater",
+   "arachnoid-mater",
+   "meningeal-spaces",
+   "veins-superficial-cerebral",
+   "sinus-superior-sagittal"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -60,
+   "y": -10,
+   "z": 20
+  },
+  "radiusMm": 25
+ },
+ "presentation": "An elderly man on warfarin, or an alcoholic with atrophy, becomes confused, unsteady and drowsy over days to weeks, sometimes without remembering any injury; the family notice a fluctuating level of alertness, a headache and a slight weakness of one side. CT shows a crescent of blood over one hemisphere, dark if old and layered if it has rebled. In a young patient after a violent injury, the same crescent appears within hours, is bright white, and comes with a contused, swollen brain and a poor outlook.",
+ "deficits": [
+  {
+   "modality": "consciousness",
+   "side": "n/a",
+   "distribution": "diffuse",
+   "sign": "Fluctuating confusion and drowsiness (chronic); coma from the outset (acute with brain injury)",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm and leg",
+   "sign": "Hemiparesis from hemispheric compression; may be ipsilateral through Kernohan notch",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "head",
+   "sign": "Headache, worse over weeks in chronic hematomas",
+   "substrate": "dura-mater"
+  },
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "gait",
+   "sign": "Unsteadiness and falls in the elderly, mimicking dementia or normal pressure hydrocephalus",
+   "substrate": "lobe-frontal"
+  },
+  {
+   "modality": "pupil",
+   "side": "ipsilateral",
+   "distribution": "one pupil",
+   "sign": "Dilated pupil with uncal herniation in large collections",
+   "substrate": "cn-03-oculomotor"
+  }
+ ],
+ "reasoning": "The bridging veins run from the surface of the hemisphere through the subdural space and the dura to empty into the superior sagittal sinus, and they are torn when the brain moves relative to the skull: violently in acceleration-deceleration injury, or with trivial force in the elderly and in alcoholics, in whom cerebral atrophy has lengthened and stretched the veins across a widened subdural space. Venous blood at low pressure spreads freely between the dura and the arachnoid, which are not attached to each other, and so the hematoma forms a thin crescent over the whole convexity, crossing sutures but stopping at the falx and tentorium, the opposite of the epidural clot. In the acute form the same force that tears the veins contuses and swells the brain, and the mass effect and the brain injury combine to produce early coma and a high mortality. In the chronic form the small initial bleed is walled off by a vascular membrane that repeatedly rebleeds and secretes fluid, so the collection grows over weeks in a brain that has room to accommodate it, and the signs are those of a slowly increasing unilateral mass: fluctuating drowsiness, headache and a mild contralateral hemiparesis, since the compressed motor cortex and its corticospinal fibers serve the opposite side after crossing in the medulla, with the same risk of a false-localizing ipsilateral weakness from the Kernohan notch when the shift is large. Bilateral chronic hematomas cancel each other's shift and present as dementia or gait disorder, and anticoagulants and antiplatelet drugs are the commonest precipitants.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute subdural hematoma",
+   "modality": "CT",
+   "finding": "Hyperdense crescentic collection over the convexity crossing sutures, often with underlying contusions and marked midline shift.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Chronic subdural hematoma",
+   "modality": "CT",
+   "finding": "Hypodense or isodense crescent with mass effect; isodense collections are missed unless the sulcal effacement and shift are noticed; mixed density and fluid levels with rebleeding.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Membranes and age",
+   "modality": "MRI",
+   "finding": "T1-bright subacute blood, enhancing membranes, and hemosiderin on SWI; MRI detects small bilateral isodense collections.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Head injury, often trivial in the elderly",
+  "Anticoagulation and antiplatelet therapy",
+  "Cerebral atrophy (age, alcohol)",
+  "Intracranial hypotension (spontaneous or after lumbar puncture)",
+  "Shaken infant"
+ ],
+ "mimics": [
+  {
+   "name": "Epidural hematoma",
+   "howToDistinguish": "Biconvex, does not cross sutures, arterial, lucid interval"
+  },
+  {
+   "name": "Dementia or normal pressure hydrocephalus",
+   "howToDistinguish": "No crescent on CT; slower course"
+  },
+  {
+   "name": "Stroke",
+   "howToDistinguish": "Abrupt onset; DWI or hemorrhage within the brain"
+  }
+ ],
+ "management": [
+  "CT for any elderly or anticoagulated patient with confusion, headache or falls; reverse anticoagulation",
+  "Burr-hole drainage for symptomatic chronic hematomas; craniotomy for acute hematomas over 10 mm or with shift",
+  "Observe small asymptomatic collections with repeat imaging; consider tranexamic acid or embolization of the middle meningeal artery for recurrence"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    429,
+    430
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    28,
+    29
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    199,
+    200
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -60,
+   "y": -10,
+   "z": 20
+  },
+  "label": "subdural space over the convexity beneath the bridging veins"
+ },
+ "cameraPreset": "lateral-l"
+}

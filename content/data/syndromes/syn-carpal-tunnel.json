@@ -1,0 +1,117 @@
+{
+ "kind": "syndrome",
+ "id": "syn-carpal-tunnel",
+ "name": "Carpal tunnel syndrome",
+ "eponyms": [],
+ "category": "entrapment",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "nerve-median",
+   "plexus-brachial"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "median-nerve-l"
+  ]
+ },
+ "presentation": "A middle-aged woman wakes at night with numb, painful hands that she shakes to relieve, and drops small objects during the day. Tingling involves the thumb, index and middle fingers and the radial half of the ring finger but spares the little finger and the palm; the thenar eminence is wasted in advanced cases and thumb abduction is weak. Tapping the wrist (Tinel) or holding it flexed (Phalen) reproduces the tingling.",
+ "deficits": [
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "palmar thumb, index, middle and radial ring finger",
+   "sign": "Nocturnal paresthesias and later sensory loss in the median digital distribution, sparing the thenar palm",
+   "substrate": "nerve-median"
+  },
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "abductor pollicis brevis, opponens pollicis",
+   "sign": "Thenar wasting and weak thumb abduction and opposition; long flexors spared",
+   "substrate": "nerve-median"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "wrist, sometimes forearm and shoulder",
+   "sign": "Aching pain radiating proximally",
+   "substrate": "nerve-median"
+  }
+ ],
+ "reasoning": "The median nerve enters the hand beneath the flexor retinaculum in the carpal tunnel together with the nine flexor tendons, and any increase in the contents or decrease in the space of the tunnel compresses it: tenosynovitis, fluid retention in pregnancy, hypothyroidism, acromegaly, amyloid, diabetes and repetitive wrist flexion. Compression damages the large myelinated fibers first, producing paresthesias that are worst at night when the wrist flexes during sleep and venous congestion rises. The palmar cutaneous branch leaves the nerve above the tunnel and passes over the retinaculum, so sensation over the thenar eminence is spared, a point that separates carpal tunnel syndrome from a proximal median lesion or a C6–C7 radiculopathy. The motor branch to the thenar muscles arises within or just beyond the tunnel, so the abductor pollicis brevis and opponens waste while the flexor pollicis longus and the pronator, supplied in the forearm, are normal; the first two lumbricals are also affected but are hard to test. The lesion is peripheral and ipsilateral, and though it is often bilateral, one hand usually dominates. Nerve conduction shows slowing across the wrist with normal forearm conduction, which confirms the site. Sensory symptoms that include the little finger, the forearm, or weakness of the finger flexors point elsewhere.",
+ "imagingFindings": [
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Prolonged median distal sensory and motor latencies across the wrist with normal ulnar values; denervation of the abductor pollicis brevis in severe cases.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Median nerve compression",
+   "modality": "US",
+   "finding": "Enlarged cross-sectional area of the median nerve proximal to the tunnel (above about 10 mm²) with flattening beneath the retinaculum.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Space-occupying lesion in the tunnel",
+   "modality": "MRI",
+   "finding": "Ganglion, tenosynovitis, amyloid or anomalous muscle within the carpal tunnel in atypical cases.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Idiopathic (often bilateral, middle-aged women)",
+  "Pregnancy, hypothyroidism, diabetes, acromegaly, rheumatoid arthritis",
+  "Repetitive wrist use",
+  "Amyloidosis and dialysis",
+  "Wrist fracture"
+ ],
+ "mimics": [
+  {
+   "name": "C6–C7 radiculopathy",
+   "howToDistinguish": "Neck pain, sensory loss including the forearm and thenar palm, reflex change, normal distal latencies"
+  },
+  {
+   "name": "Pronator syndrome (proximal median)",
+   "howToDistinguish": "Thenar palm numb, forearm pain, flexor pollicis longus weak"
+  },
+  {
+   "name": "Polyneuropathy",
+   "howToDistinguish": "Bilateral, symmetric, feet involved, sural response abnormal"
+  },
+  {
+   "name": "Thoracic outlet syndrome",
+   "howToDistinguish": "Medial forearm sensory loss and interosseous weakness"
+  }
+ ],
+ "management": [
+  "Night splints and activity modification; treat the underlying condition",
+  "Corticosteroid injection into the tunnel for temporary relief",
+  "Surgical release for persistent symptoms, sensory loss or thenar wasting"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    148,
+    150
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -60,
+   "y": -30,
+   "z": -200
+  },
+  "label": "median nerve at the wrist (virtual)"
+ },
+ "cameraPreset": "anterior"
+}

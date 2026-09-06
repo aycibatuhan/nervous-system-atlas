@@ -1,0 +1,138 @@
+{
+ "kind": "syndrome",
+ "id": "syn-als-pattern",
+ "name": "Amyotrophic lateral sclerosis: mixed upper and lower motor neuron pattern",
+ "eponyms": [
+  "motor neuron disease",
+  "Lou Gehrig disease"
+ ],
+ "category": "degenerative",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "spinal-gray-anterior-horn",
+   "gyrus-precentral",
+   "hypoglossal-nucleus",
+   "nucleus-ambiguus",
+   "spinal-white-columns"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "tract-corticospinal-l",
+   "tract-corticospinal-r"
+  ]
+ },
+ "presentation": "A patient in their sixties develops weakness and wasting of one hand with twitching visible under the skin of the arms, and over months the weakness spreads to the other limbs and to the tongue, so that speech becomes slurred and swallowing difficult. Reflexes are brisk in wasted limbs, the jaw jerk is exaggerated and the plantars are extensor, yet there is no sensory loss, no sphincter disturbance and eye movements remain normal to the end.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "limbs, asymmetric at onset",
+   "sign": "Lower motor neuron signs: wasting, fasciculation, cramps, weakness",
+   "substrate": "spinal-gray-anterior-horn"
+  },
+  {
+   "modality": "reflex",
+   "side": "bilateral",
+   "distribution": "same limbs",
+   "sign": "Upper motor neuron signs: hyperreflexia in wasted limbs, spasticity, Hoffmann, Babinski, brisk jaw jerk",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "bulbar",
+   "side": "bilateral",
+   "distribution": "tongue, palate, larynx",
+   "sign": "Mixed bulbar and pseudobulbar palsy: wasted fasciculating tongue with a brisk jaw jerk, dysarthria, dysphagia, emotional lability",
+   "substrate": "pathway-corticobulbar"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "n/a",
+   "distribution": "spared",
+   "sign": "No sensory loss; sphincters and eye movements spared",
+   "substrate": "pathway-dcml"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "diaphragm",
+   "sign": "Respiratory failure from diaphragm weakness; orthopnea",
+   "substrate": "nerve-phrenic"
+  }
+ ],
+ "reasoning": "Motor neuron disease destroys both the upper motor neurons, the pyramidal cells of the motor cortex whose axons form the corticospinal and corticobulbar tracts, and the lower motor neurons in the anterior horns of the cord and the motor nuclei of the brainstem, while sparing everything else. Loss of the lower motor neurons denervates muscle, producing wasting, weakness and the spontaneous discharges of dying motor units seen as fasciculations; loss of the upper motor neurons removes the descending inhibition of the surviving spinal reflex arcs, producing hyperreflexia and extensor plantars. The unique combination of a brisk reflex in a wasted, fasciculating muscle can only occur when both neurons of the motor pathway degenerate together. The corticospinal tracts cross in the medulla and the disease is bilateral, so the upper motor neuron signs are widespread without a lateralizing pattern, though the disease begins focally and spreads to contiguous regions. The sensory pathways, the oculomotor nuclei and the sacral Onuf nucleus that supplies the sphincters are spared for reasons that are not fully understood, and their preservation is part of the diagnostic criteria: any sensory level, sphincter loss or ophthalmoplegia should prompt a search for another diagnosis, above all compressive cervical myelopathy, which produces a similar arm-and-leg pattern. Diagnosis requires upper and lower motor neuron signs in several body regions with EMG evidence of denervation in clinically unaffected muscles.",
+ "imagingFindings": [
+  {
+   "pathology": "Amyotrophic lateral sclerosis",
+   "modality": "MRI",
+   "finding": "Often normal; bilateral corticospinal tract T2/FLAIR hyperintensity from the corona radiata to the pons and a hypointense precentral gyrus rim on SWI in some. Cervical MRI is done to exclude myelopathy.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Denervation",
+   "modality": "EMG/NCS",
+   "finding": "Fibrillations, positive sharp waves and fasciculations with large, unstable motor units in at least three regions; normal sensory conduction.",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Sporadic amyotrophic lateral sclerosis",
+  "Familial (C9orf72, SOD1) ALS",
+  "Progressive muscular atrophy (lower motor neuron only) or primary lateral sclerosis (upper only) variants"
+ ],
+ "mimics": [
+  {
+   "name": "Cervical spondylotic myelopathy with radiculopathy",
+   "howToDistinguish": "Sensory signs, neck pain, compression on MRI; no bulbar signs"
+  },
+  {
+   "name": "Multifocal motor neuropathy with conduction block",
+   "howToDistinguish": "Pure lower motor neuron, asymmetric, distal, treatable; conduction block on NCS"
+  },
+  {
+   "name": "Kennedy disease (spinobulbar muscular atrophy)",
+   "howToDistinguish": "X-linked, slow, gynecomastia, perioral fasciculations, mild sensory neuropathy"
+  },
+  {
+   "name": "Inclusion body myositis",
+   "howToDistinguish": "Finger flexor and quadriceps weakness; CK raised; biopsy"
+  }
+ ],
+ "management": [
+  "Confirm with EMG and exclude mimics with cervical MRI and blood tests; riluzole and edaravone modestly slow progression",
+  "Multidisciplinary care: respiratory monitoring with early non-invasive ventilation, gastrostomy before weight loss, communication aids",
+  "Discuss prognosis and advance care planning early"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    169,
+    171
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 29,
+   "pages": [
+    289,
+    291
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -85
+  },
+  "label": "anterior horns and lateral columns of the cervical cord"
+ },
+ "cameraPreset": "posterior"
+}

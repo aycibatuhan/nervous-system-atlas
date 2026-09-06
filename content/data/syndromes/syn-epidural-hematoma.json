@@ -1,0 +1,141 @@
+{
+ "kind": "syndrome",
+ "id": "syn-epidural-hematoma",
+ "name": "Epidural (extradural) hematoma",
+ "eponyms": [
+  "extradural hematoma"
+ ],
+ "category": "traumatic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "dura-mater",
+   "meningeal-spaces",
+   "lobe-temporal",
+   "cn-03-oculomotor"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -55,
+   "y": -10,
+   "z": 10
+  },
+  "radiusMm": 20
+ },
+ "presentation": "A young man is knocked out briefly in a fall, wakes and talks normally, then over the next few hours develops a worsening headache, vomits, becomes drowsy and is found with a dilated pupil on the side of the injury and weakness of the opposite limbs. The skull X-ray or CT shows a fracture of the temporal bone crossing the groove of the middle meningeal artery, and beneath it a lens-shaped clot pressing the brain inward.",
+ "deficits": [
+  {
+   "modality": "consciousness",
+   "side": "n/a",
+   "distribution": "diffuse, then brainstem",
+   "sign": "Initial concussion, lucid interval, then progressive deterioration to coma as the clot expands",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "pupil",
+   "side": "ipsilateral",
+   "distribution": "one pupil",
+   "sign": "Dilated fixed pupil from uncal herniation",
+   "substrate": "cn-03-oculomotor"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm and leg",
+   "sign": "Hemiparesis from compression of the hemisphere and the cerebral peduncle",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "head",
+   "sign": "Severe headache and vomiting",
+   "substrate": "dura-mater"
+  }
+ ],
+ "reasoning": "The dura mater is the periosteum of the inner table of the skull, and the middle meningeal artery runs in a groove on the inner surface of the thin squamous temporal bone between the bone and the dura. A blow to the temple fractures the bone across the groove and tears the artery, and arterial blood at systemic pressure strips the dura from the skull, accumulating in the potential space between them. Because the dura is firmly attached at the sutures, the clot cannot spread across them and instead grows inward as a biconvex lens, in contrast to the crescentic subdural hematoma that spreads freely over the hemisphere beneath the dura. The initial blow causes a brief concussion, and the patient recovers as the arterial bleeding takes time to reach a critical volume, producing the lucid interval that is the classical and dangerous feature, because the deterioration that follows is due to a rapidly expanding arterial mass and not to brain injury. The expanding clot compresses the temporal lobe and pushes the uncus over the tentorium, so the sequence of signs is that of uncal herniation: an ipsilateral dilated pupil from third nerve compression, then contralateral hemiparesis from compression of the ipsilateral cerebral peduncle, whose corticospinal fibers cross in the medulla, then coma. Venous epidural hematomas from torn dural sinuses, in the posterior fossa or vertex, evolve more slowly. Because the underlying brain is often uninjured, prompt evacuation produces full recovery, which makes recognition of the lucid interval critical.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute epidural hematoma",
+   "modality": "CT",
+   "finding": "Hyperdense biconvex (lentiform) extra-axial collection that does not cross sutures but may cross the falx or tentorium, usually beneath a temporal fracture; a swirl sign of low density indicates active bleeding.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Skull fracture",
+   "modality": "CT",
+   "finding": "Linear fracture of the squamous temporal bone crossing the middle meningeal groove on bone windows.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Mass effect",
+   "modality": "CT",
+   "finding": "Midline shift, effaced ventricle and uncal herniation with a large clot.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Temporal skull fracture tearing the middle meningeal artery",
+  "Dural venous sinus tear (posterior fossa, vertex)",
+  "Anticoagulation with minor trauma"
+ ],
+ "mimics": [
+  {
+   "name": "Acute subdural hematoma",
+   "howToDistinguish": "Crescentic, crosses sutures, usually with underlying brain injury and no lucid interval"
+  },
+  {
+   "name": "Cerebral contusion",
+   "howToDistinguish": "Intraparenchymal hemorrhage in the temporal or frontal poles"
+  },
+  {
+   "name": "Concussion",
+   "howToDistinguish": "Recovery without deterioration; normal CT"
+  }
+ ],
+ "management": [
+  "Immediate CT for any head injury with loss of consciousness, vomiting, drowsiness or a fracture; observe those with a lucid interval closely",
+  "Emergency craniotomy and evacuation for symptomatic or large (over 30 mL) hematomas; small asymptomatic clots may be observed with repeat CT",
+  "Reverse anticoagulation; manage intracranial pressure"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    429,
+    430
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    28,
+    29
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    199,
+    200
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -55,
+   "y": -10,
+   "z": 10
+  },
+  "label": "temporal convexity beneath the squamous temporal bone"
+ },
+ "cameraPreset": "lateral-l"
+}

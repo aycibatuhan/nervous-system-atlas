@@ -1,0 +1,151 @@
+{
+ "kind": "syndrome",
+ "id": "syn-brown-sequard",
+ "name": "Brown-Séquard syndrome (hemicord)",
+ "eponyms": [
+  "Brown-Séquard syndrome",
+  "hemisection of the cord"
+ ],
+ "category": "traumatic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "spinal-cord",
+   "spinal-white-columns",
+   "spinal-gray-anterior-horn",
+   "spinal-nerve-root-dermatome"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -4,
+   "y": -45,
+   "z": -80
+  },
+  "radiusMm": 8
+ },
+ "presentation": "After a stab wound to the back, or with a lateral disc or tumor pressing on one side of the cord, a patient has weakness of the leg on one side with brisk reflexes and an upgoing toe, cannot feel a tuning fork or joint movement in that same leg, yet reports that pin-prick and cold are lost in the other leg, starting a couple of segments below the injury. At the level of the lesion itself there is a narrow band of complete sensory loss and flaccid weakness on the injured side.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "below the lesion",
+   "sign": "Spastic weakness with hyperreflexia and extensor plantar (lateral corticospinal tract)",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "sensory-vibration-proprioception",
+   "side": "ipsilateral",
+   "distribution": "below the lesion",
+   "sign": "Loss of vibration and position sense (posterior column)",
+   "substrate": "pathway-dcml"
+  },
+  {
+   "modality": "sensory-pain-temp",
+   "side": "contralateral",
+   "distribution": "from 1–2 segments below the lesion downward",
+   "sign": "Loss of pain and temperature (spinothalamic tract)",
+   "substrate": "pathway-lateral-spinothalamic"
+  },
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "at the level of the lesion",
+   "sign": "Segmental lower motor neuron weakness and a band of anesthesia from anterior horn and root damage",
+   "substrate": "spinal-gray-anterior-horn"
+  }
+ ],
+ "reasoning": "The three long tracts of the cord cross at different places, and a lesion of one half of the cord separates them. The lateral corticospinal tract has already crossed in the medulla, so it carries the motor command for the same side of the body, and cutting it produces ipsilateral upper motor neuron weakness below the lesion. The posterior columns carry uncrossed proprioceptive and vibration fibers, which cross only in the medulla after relaying in the gracile and cuneate nuclei, so their interruption gives ipsilateral loss of those modalities. The spinothalamic tract, by contrast, is formed by second-order fibers that crossed in the anterior white commissure within one or two segments of their entry, so it carries pain and temperature from the opposite side, and its section gives contralateral loss beginning a segment or two below the lesion, where the fibers entering at the lesion level have not yet crossed. Fibers crossing at the level of the lesion are caught on both sides, and the damaged dorsal root and anterior horn add an ipsilateral segmental band of complete sensory loss and flaccid weakness that marks the level exactly. Light touch survives on both sides because it travels by both routes. The dissociation, with weakness and proprioceptive loss on one side and pain loss on the other, is unique to the cord and cannot be produced by any brain lesion.",
+ "imagingFindings": [
+  {
+   "pathology": "Penetrating cord injury",
+   "modality": "MRI",
+   "finding": "Hemicord signal change and hemorrhage at the level of the wound on T2 and gradient echo; CT for bone and metal fragments.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Extramedullary compression",
+   "modality": "MRI",
+   "finding": "Lateral disc herniation, meningioma or schwannoma indenting one side of the cord with cord signal change.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Demyelination",
+   "modality": "MRI",
+   "finding": "Short, eccentric dorsolateral T2 lesion typical of multiple sclerosis, enhancing when acute.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Penetrating trauma",
+  "Lateral cervical disc herniation or spondylosis",
+  "Extramedullary tumor (meningioma, schwannoma)",
+  "Multiple sclerosis (partial form)",
+  "Radiation myelopathy, hemicord infarct"
+ ],
+ "mimics": [
+  {
+   "name": "Lateral medullary syndrome",
+   "howToDistinguish": "Facial sensory loss and cranial nerve signs; no limb weakness"
+  },
+  {
+   "name": "Peripheral nerve or plexus injury",
+   "howToDistinguish": "Lower motor neuron pattern, no contralateral sensory loss, no level"
+  },
+  {
+   "name": "Conversion disorder",
+   "howToDistinguish": "Sensory loss splits the midline exactly in all modalities and does not follow tract anatomy"
+  }
+ ],
+ "management": [
+  "Spinal immobilization and urgent MRI when traumatic or compressive; surgical decompression as indicated",
+  "Methylprednisolone is not routinely used for traumatic cord injury",
+  "Prognosis for walking is the best of the incomplete cord syndromes"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    168,
+    170
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    41,
+    44
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    41,
+    44
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -4,
+   "y": -45,
+   "z": -80
+  },
+  "label": "one half of the cervical cord"
+ },
+ "examSequence": [
+  "Find the motor level: last normal muscle group",
+  "Pin-prick from the feet upward on each side separately: the level will differ by side",
+  "Vibration and joint position in each foot",
+  "Reflexes and plantars",
+  "Look for the narrow band of complete loss at the lesion"
+ ],
+ "cameraPreset": "posterior"
+}

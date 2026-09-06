@@ -1,0 +1,147 @@
+{
+ "kind": "syndrome",
+ "id": "syn-central-cord-syringomyelia",
+ "name": "Central cord syndrome and syringomyelia",
+ "eponyms": [
+  "Schneider syndrome (acute)"
+ ],
+ "category": "congenital",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "spinal-cord",
+   "spinal-white-columns",
+   "spinal-gray-anterior-horn",
+   "cervical-enlargement",
+   "cerebellar-tonsil"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -85
+  },
+  "radiusMm": 6
+ },
+ "presentation": "A young adult notices painless burns and cuts on the fingers, then weakness and wasting of the hands. Examination shows loss of pain and temperature over the shoulders, arms and upper chest in a cape distribution while light touch, vibration and position sense are normal in the same area; the arm reflexes are absent, the hand muscles are wasted, and later the legs become spastic. In an elderly person a hyperextension neck injury produces the acute version, with weakness of the arms far worse than the legs.",
+ "deficits": [
+  {
+   "modality": "sensory-pain-temp",
+   "side": "bilateral",
+   "distribution": "cape distribution over shoulders and arms (cervical syrinx)",
+   "sign": "Dissociated loss of pain and temperature with preserved touch and proprioception",
+   "substrate": "pathway-lateral-spinothalamic"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "hands and arms",
+   "sign": "Lower motor neuron weakness, wasting and areflexia at the level of the cavity (anterior horns)",
+   "substrate": "spinal-gray-anterior-horn"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "legs (later or in acute cases)",
+   "sign": "Spastic paraparesis from the lateral corticospinal tracts; arms weaker than legs in acute central cord injury",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "hands, eye",
+   "sign": "Trophic changes, Charcot joints, Horner syndrome from the intermediolateral column",
+   "substrate": "pathway-oculosympathetic"
+  }
+ ],
+ "reasoning": "The center of the cord, around the central canal, is where the second-order pain and temperature fibers from both sides cross in the anterior white commissure before ascending in the spinothalamic tracts. A cavity that expands from the central canal (a syrinx) or a hemorrhagic contusion of the central gray in hyperextension injury destroys these crossing fibers over the segments involved, so pain and temperature are lost bilaterally in exactly those dermatomes, while the posterior columns, which carry vibration and proprioception uncrossed at the periphery of the cord, and the spinothalamic fibers from the lower body, which crossed below the lesion and are already ascending in the lateral funiculus, are spared: a suspended, dissociated sensory loss. In the cervical cord this produces the cape or shawl distribution. As the cavity widens it reaches the anterior horns, producing wasting and areflexia of the hands and arms at the level, and then the medial part of the lateral funiculus, where the arm fibers of the corticospinal tract lie closest to the center, so spasticity appears in the legs and weakness in the arms exceeds that in the legs; the sacral fibers of the spinothalamic tract lie outermost and are spared until late (sacral sparing). Involvement of the intermediolateral column adds a Horner syndrome. Most syrinxes are driven by obstruction of CSF flow at the foramen magnum by a Chiari malformation.",
+ "imagingFindings": [
+  {
+   "pathology": "Syringomyelia",
+   "modality": "MRI",
+   "finding": "Central cavity within the cord isointense to CSF on all sequences, extending over several segments, with a Chiari I malformation or a tumor at either end.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Acute central cord injury",
+   "modality": "MRI",
+   "finding": "Central cord T2 hyperintensity and swelling at C4–C6 with spondylotic canal narrowing and ligamentum flavum buckling after hyperextension.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Intramedullary tumor",
+   "modality": "MRI",
+   "finding": "Enhancing nodule (ependymoma, hemangioblastoma) at one end of a syrinx.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Chiari I malformation with syringomyelia",
+  "Post-traumatic or post-inflammatory syrinx",
+  "Intramedullary tumor",
+  "Acute hyperextension injury in a spondylotic cervical spine"
+ ],
+ "mimics": [
+  {
+   "name": "Cervical spondylotic myelopathy",
+   "howToDistinguish": "Posterior columns involved; no dissociated loss; gradual"
+  },
+  {
+   "name": "Brachial plexus or ulnar neuropathy",
+   "howToDistinguish": "Sensory loss follows nerve territory, all modalities"
+  },
+  {
+   "name": "Motor neuron disease",
+   "howToDistinguish": "No sensory loss at all"
+  },
+  {
+   "name": "Leprosy",
+   "howToDistinguish": "Nerve thickening, skin lesions, dissociated loss in a patchy distribution"
+  }
+ ],
+ "management": [
+  "MRI of the whole neuraxis with contrast; posterior fossa decompression for a Chiari-related syrinx, shunting or tumor removal otherwise",
+  "Protect insensate hands from burns",
+  "Acute central cord injury: immobilization, blood pressure support; surgery for ongoing compression"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    169,
+    171
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    42,
+    44
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    42,
+    44
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -85
+  },
+  "label": "central cervical cord"
+ },
+ "cameraPreset": "posterior"
+}

@@ -1,0 +1,132 @@
+{
+ "kind": "syndrome",
+ "id": "syn-homonymous-hemianopia",
+ "name": "Homonymous hemianopia and its variants",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-02-optic",
+   "lateral-geniculate-nucleus",
+   "lobe-temporal",
+   "lobe-parietal",
+   "cortex-calcarine"
+  ],
+  "side": "contralateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "tract-optic-radiation-l"
+  ]
+ },
+ "presentation": "The patient does not see things on one side, reads only half a line, and has been bumping into objects on that side. Confrontation shows loss of the same half of the visual field in both eyes. Whether the defect is a quadrant or a hemifield, whether the two eyes' defects match exactly, whether the macular region is spared and whether a pupil defect is present together tell the examiner where along the retrochiasmal pathway the lesion lies.",
+ "deficits": [
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "same hemifield of both eyes",
+   "sign": "Homonymous hemianopia; congruity increases as the lesion moves posteriorly",
+   "substrate": "pathway-visual"
+  },
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "upper quadrant",
+   "sign": "Superior quadrantanopia from Meyer's loop in the temporal lobe",
+   "substrate": "lobe-temporal"
+  },
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "lower quadrant",
+   "sign": "Inferior quadrantanopia from the parietal radiation",
+   "substrate": "lobe-parietal"
+  },
+  {
+   "modality": "pupil",
+   "side": "contralateral",
+   "distribution": "afferent",
+   "sign": "Relative afferent pupillary defect only with optic tract lesions",
+   "substrate": "pathway-pupillary-light-reflex"
+  }
+ ],
+ "reasoning": "Behind the chiasm every structure carries the opposite half of the visual world from both eyes, because the crossed nasal fibers of one eye have joined the uncrossed temporal fibers of the other: a lesion of the optic tract, lateral geniculate body, optic radiation or occipital cortex therefore produces a homonymous defect in the contralateral field. Where along that pathway the lesion sits is read from four features. Congruity: in the tract the fibers from the two eyes are not yet aligned, so the defect differs between the eyes, whereas in the calcarine cortex corresponding points are precisely superimposed and the defects are identical. Pupils: the light reflex afferents leave the tract before the geniculate, so only a tract lesion produces a contralateral relative afferent pupillary defect. Shape: the radiation splits after the geniculate, the upper field fibers looping forward through the temporal lobe (Meyer's loop) and the lower field fibers passing through the parietal lobe, so temporal lesions give superior quadrant ('pie in the sky') and parietal lesions inferior quadrant defects, and geniculate lesions give sector defects from its dual blood supply. Macular sparing: the occipital pole receives collateral supply from the middle cerebral artery, so posterior cerebral infarcts often spare the central few degrees. Bilateral occipital lesions produce cortical blindness with normal pupils, and lesions of the occipital tip alone produce a homonymous central scotoma.",
+ "imagingFindings": [
+  {
+   "pathology": "Posterior cerebral artery infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the calcarine cortex, the commonest cause of an isolated congruous hemianopia with macular sparing.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Temporal or parietal lesion",
+   "modality": "MRI",
+   "finding": "Infarct, hemorrhage, tumor or resection cavity in the optic radiation; quadrantic defect matches the lobe.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Optic tract lesion",
+   "modality": "MRI",
+   "finding": "Tumor, aneurysm or demyelination around the tract lateral to the hypothalamus; later 'bow-tie' atrophy of the contralateral disc.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Posterior cerebral artery infarct",
+  "Middle cerebral artery infarct involving the radiation",
+  "Intracerebral hemorrhage",
+  "Tumor",
+  "Temporal lobectomy (superior quadrantanopia)",
+  "Demyelination"
+ ],
+ "mimics": [
+  {
+   "name": "Hemispatial neglect",
+   "howToDistinguish": "Patient does not search the neglected side but sees a stimulus presented alone; extinction on double stimulation"
+  },
+  {
+   "name": "Bitemporal hemianopia",
+   "howToDistinguish": "Different halves in each eye"
+  },
+  {
+   "name": "Functional visual loss",
+   "howToDistinguish": "Fields tubular or spiraling, inconsistent"
+  }
+ ],
+ "management": [
+  "Formal perimetry to document the defect; imaging directed by the pattern",
+  "Treat the cause; stroke care in most",
+  "Reading and scanning rehabilitation; driving is usually prohibited with a complete hemianopia"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    349,
+    350
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    51
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -30,
+   "y": -60,
+   "z": 5
+  },
+  "label": "optic radiation through the temporal and parietal lobes"
+ },
+ "cameraPreset": "lateral-l"
+}

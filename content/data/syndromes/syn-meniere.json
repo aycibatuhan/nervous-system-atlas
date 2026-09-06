@@ -1,0 +1,129 @@
+{
+ "kind": "syndrome",
+ "id": "syn-meniere",
+ "name": "Ménière disease",
+ "eponyms": [
+  "endolymphatic hydrops"
+ ],
+ "category": "otologic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-08-vestibulocochlear",
+   "cochlear-nuclei",
+   "vestibular-nuclei"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-08-vestibulocochlear-l"
+  ]
+ },
+ "presentation": "A middle-aged patient describes attacks of spinning vertigo lasting from twenty minutes to several hours, preceded by a feeling of fullness in one ear, a roaring tinnitus and muffled hearing, with vomiting and unsteadiness during the attack. Between attacks hearing in that ear gradually declines, first for low tones and then across frequencies. Over years the vertigo burns out as the labyrinth is destroyed, leaving a deaf ear and occasional drop attacks.",
+ "deficits": [
+  {
+   "modality": "vestibular",
+   "side": "ipsilateral",
+   "distribution": "labyrinth",
+   "sign": "Episodic vertigo of 20 minutes to 12 hours with peripheral-type nystagmus during attacks",
+   "substrate": "cn-08-vestibulocochlear"
+  },
+  {
+   "modality": "auditory",
+   "side": "ipsilateral",
+   "distribution": "one ear",
+   "sign": "Fluctuating then progressive low-frequency sensorineural hearing loss with aural fullness and tinnitus",
+   "substrate": "pathway-auditory"
+  },
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "drop attacks",
+   "sign": "Tumarkin otolithic crises: sudden falls without loss of consciousness in late disease",
+   "substrate": "pathway-vestibulospinal"
+  }
+ ],
+ "reasoning": "The membranous labyrinth is filled with endolymph, produced by the stria vascularis and absorbed in the endolymphatic sac. In Ménière disease absorption fails and endolymph accumulates, distending the cochlear duct and the saccule (endolymphatic hydrops). The distended membranes stretch the hair cells, and periodic ruptures or leaks mix potassium-rich endolymph with perilymph, depolarizing and temporarily paralyzing the hair cells and their nerve fibers; the sudden loss of one labyrinth's output creates an acute imbalance between the two sides, perceived as rotation with nystagmus initially toward and then away from the affected ear as the labyrinth first fires excessively and then fails. Because the cochlea and vestibular labyrinth share the same fluid, hearing and balance are affected together, and the low-frequency apex of the cochlea, where the duct is most distensible, suffers first, producing the characteriztic low-tone loss and fullness. Each attack leaves a little permanent hair cell damage, so hearing declines stepwise and the vestibular function is eventually lost, at which point the vertigo stops. The disorder is peripheral and unilateral in most patients, with no central or crossed signs, and the length of the attacks separates it from the seconds of BPPV and the days of neuritis. About a third of patients eventually develop disease in the other ear.",
+ "imagingFindings": [
+  {
+   "pathology": "Endolymphatic hydrops",
+   "modality": "MRI",
+   "finding": "Delayed post-gadolinium 3D-FLAIR of the inner ear shows an enlarged non-enhancing endolymphatic space in the cochlea and vestibule; otherwise the MRI is normal.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Exclusion of a retrocochlear lesion",
+   "modality": "MRI",
+   "finding": "Normal internal acoustic meatus and cerebellopontine angle; imaging is done once to exclude a schwannoma in any unilateral sensorineural loss.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Idiopathic endolymphatic hydrops",
+  "Post-traumatic or post-infectious hydrops",
+  "Autoimmune inner ear disease",
+  "Otosclerosis and syphilis (rare secondary)"
+ ],
+ "mimics": [
+  {
+   "name": "Vestibular migraine",
+   "howToDistinguish": "Attacks with headache or photophobia; hearing preserved"
+  },
+  {
+   "name": "Vestibular schwannoma",
+   "howToDistinguish": "Progressive, non-fluctuating loss with poor discrimination; MRI"
+  },
+  {
+   "name": "BPPV",
+   "howToDistinguish": "Seconds-long positional attacks; hearing normal"
+  },
+  {
+   "name": "Transient ischemic attack of the labyrinth",
+   "howToDistinguish": "Vasculopath, brief, with other posterior circulation symptoms"
+  }
+ ],
+ "management": [
+  "Audiometry and MRI to exclude a retrocochlear cause",
+  "Salt restriction and a diuretic; vestibular suppressants during attacks",
+  "Intratympanic steroids or gentamicin, or endolymphatic sac surgery, for intractable vertigo"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    353,
+    353
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    109,
+    109
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    112,
+    112
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -45,
+   "y": -30,
+   "z": -32
+  },
+  "label": "inner ear and vestibulocochlear nerve"
+ },
+ "cameraPreset": "inferior"
+}

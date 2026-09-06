@@ -1,0 +1,138 @@
+{
+ "kind": "syndrome",
+ "id": "syn-myasthenia-gravis",
+ "name": "Myasthenia gravis",
+ "eponyms": [],
+ "category": "neuromuscular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "neuromuscular-junction",
+   "motor-unit",
+   "cn-03-oculomotor",
+   "nucleus-ambiguus"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "cn-03-oculomotor-l",
+   "cn-03-oculomotor-r"
+  ]
+ },
+ "presentation": "A woman in her twenties, or a man in his sixties, notices that by evening her eyelids droop and she sees double, that chewing tires halfway through a meal and her voice fades to a nasal whisper on the telephone, and that she cannot hold her arms up to dry her hair. In the morning everything is better. Examination shows fatigable ptosis on sustained upgaze, variable ophthalmoplegia that fits no single nerve, weakness of eye closure and neck flexion, normal reflexes, normal sensation and normal pupils.",
+ "deficits": [
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "extraocular muscles and levator, asymmetric",
+   "sign": "Fatigable ptosis and diplopia not conforming to a nerve pattern; pupils spared",
+   "substrate": "neuromuscular-junction"
+  },
+  {
+   "modality": "bulbar",
+   "side": "bilateral",
+   "distribution": "face, jaw, palate, larynx, tongue",
+   "sign": "Fatigable chewing, nasal dysarthria, dysphagia, myasthenic snarl",
+   "substrate": "neuromuscular-junction"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "neck flexors and proximal limbs",
+   "sign": "Fatigable proximal weakness worse with activity and in the evening",
+   "substrate": "motor-unit"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "diaphragm and accessory muscles",
+   "sign": "Myasthenic crisis: respiratory failure, often precipitated by infection or drugs",
+   "substrate": "nerve-phrenic"
+  },
+  {
+   "modality": "reflex",
+   "side": "n/a",
+   "distribution": "preserved",
+   "sign": "Normal reflexes, sensation and coordination",
+   "substrate": "dorsal-root-ganglion"
+  }
+ ],
+ "reasoning": "Antibodies against the acetylcholine receptor, or in a minority against muscle-specific kinase, reduce the number of functioning receptors at the postsynaptic membrane of the neuromuscular junction. Each nerve impulse still releases acetylcholine, but with fewer receptors the endplate potential is closer to the firing threshold, and because the amount of acetylcholine released falls during a train of impulses, successive endplate potentials drop below threshold and muscle fibers fail one by one: weakness that increases with use and recovers with rest, the defining feature. Muscles with a high firing rate and a low safety factor, the extraocular muscles and the levator, fail first, so ptosis and diplopia are the commonest presentation, and the pattern of eye movement weakness varies from hour to hour and fits no nerve or nuclear lesion; the pupil, a smooth muscle supplied by autonomic fibers, is never involved, which distinguishes ocular myasthenia from a third nerve palsy. The disease is a disorder of transmission, not of the nerve or the muscle, so there is no sensory loss, the reflexes are preserved, muscle bulk is normal until late and the nerve conduction velocities are normal, while repetitive stimulation at low frequency shows the decrement of failing junctions and single-fiber EMG shows jitter. Everything is bilateral though often asymmetric, and no crossing logic applies. The thymus is abnormal in most patients, hyperplastic in the young and a thymoma in about a tenth, and its removal helps. Bulbar and respiratory weakness can progress within hours to a crisis, and many drugs, including aminoglycosides, magnesium and beta-blockers, unmask or worsen the disease.",
+ "imagingFindings": [
+  {
+   "pathology": "Thymoma or thymic hyperplasia",
+   "modality": "CT",
+   "finding": "Anterior mediastinal mass (thymoma) or an enlarged thymus on contrast CT of the chest, required in every new diagnosis.",
+   "sequence": "CT contrast"
+  },
+  {
+   "pathology": "Neuromuscular transmission defect",
+   "modality": "EMG/NCS",
+   "finding": "Decrement of more than 10% on 3 Hz repetitive nerve stimulation in a weak muscle; increased jitter and blocking on single-fiber EMG (most sensitive).",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Serology",
+   "modality": "EMG/NCS",
+   "finding": "Serology alongside electrodiagnosis: acetylcholine receptor antibodies in 85% of generalized and 50% of ocular cases; MuSK antibodies in most of the rest.",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Autoimmune (acetylcholine receptor antibodies)",
+  "MuSK antibody myasthenia",
+  "Thymoma-associated",
+  "Drug-induced (penicillamine, immune checkpoint inhibitors)",
+  "Congenital myasthenic syndromes"
+ ],
+ "mimics": [
+  {
+   "name": "Lambert–Eaton myasthenic syndrome",
+   "howToDistinguish": "Proximal leg weakness that improves briefly with exercise, areflexia, dry mouth; increment on high-frequency stimulation; small cell lung cancer"
+  },
+  {
+   "name": "Ocular motor nerve palsies",
+   "howToDistinguish": "Fixed pattern, pupil may be involved, no fatigability"
+  },
+  {
+   "name": "Botulism",
+   "howToDistinguish": "Descending, fixed dilated pupils, autonomic failure"
+  },
+  {
+   "name": "Oculopharyngeal or mitochondrial myopathy",
+   "howToDistinguish": "Slowly progressive, non-fluctuating ptosis, no antibodies"
+  },
+  {
+   "name": "Thyroid eye disease",
+   "howToDistinguish": "Restrictive, with proptosis and lid retraction"
+  }
+ ],
+ "management": [
+  "Confirm with antibodies and electrodiagnosis; CT of the chest for thymoma; check thyroid function",
+  "Pyridostigmine for symptoms; corticosteroids and steroid-sparing immunosuppression for generalized disease; thymectomy for thymoma and for young antibody-positive patients",
+  "Crisis: measure vital capacity, intubate early, give intravenous immunoglobulin or plasma exchange; review the drug list for junction-blocking agents"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 30,
+   "pages": [
+    293,
+    297
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": 0,
+   "y": 20,
+   "z": -20
+  },
+  "label": "extraocular muscles and levator (the first muscles to fatigue)"
+ },
+ "cameraPreset": "anterior"
+}

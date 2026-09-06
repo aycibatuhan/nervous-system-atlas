@@ -1,0 +1,139 @@
+{
+ "kind": "syndrome",
+ "id": "syn-bulbar-vs-pseudobulbar",
+ "name": "Bulbar versus pseudobulbar palsy",
+ "eponyms": [],
+ "category": "degenerative",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "nucleus-ambiguus",
+   "hypoglossal-nucleus",
+   "facial-motor-nucleus",
+   "internal-capsule",
+   "corona-radiata",
+   "gyrus-precentral"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "brainstem"
+  ]
+ },
+ "presentation": "Two patients cannot swallow or speak clearly. The first has a flaccid, wasted, fasciculating tongue, a nasal voice, an absent gag and an absent jaw jerk: bulbar palsy, the lower motor neurons of the medulla have died. The second has a small, spastic tongue that cannot be protruded, strangled slow speech, an exaggerated gag and jaw jerk, and laughs or cries without feeling either: pseudobulbar palsy, the corticobulbar tracts have been cut on both sides.",
+ "deficits": [
+  {
+   "modality": "bulbar",
+   "side": "bilateral",
+   "distribution": "tongue, palate, pharynx, larynx",
+   "sign": "Bulbar: flaccid dysarthria, nasal regurgitation, wasted fasciculating tongue, absent gag and jaw jerk",
+   "substrate": "nucleus-ambiguus"
+  },
+  {
+   "modality": "bulbar",
+   "side": "bilateral",
+   "distribution": "same muscles",
+   "sign": "Pseudobulbar: spastic dysarthria, dysphagia, small spastic tongue, brisk gag and jaw jerk",
+   "substrate": "pathway-corticobulbar"
+  },
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "limbic-brainstem connections",
+   "sign": "Pseudobulbar affect: involuntary laughing and crying",
+   "substrate": "pathway-corticobulbar"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "limbs (ALS)",
+   "sign": "Mixed upper and lower motor neuron limb signs when the cause is motor neuron disease",
+   "substrate": "pathway-lateral-corticospinal"
+  }
+ ],
+ "reasoning": "The muscles of the tongue, palate, pharynx and larynx are driven by lower motor neurons in the hypoglossal nucleus and nucleus ambiguus of the medulla (the 'bulb'), and those neurons in turn receive corticobulbar input from both hemispheres, crossed and uncrossed. Destruction of the medullary nuclei or their nerves gives a lower motor neuron picture of flaccid weakness with wasting, fasciculation and loss of the reflexes whose efferent limb they form; the bilateral cortical input is irrelevant once the final pathway is gone. Because the corticobulbar projection is bilateral, a lesion of the tract on one side causes little more than transient dysarthria; a pseudobulbar palsy requires both corticobulbar tracts to be interrupted, typically by successive lacunar strokes in the two internal capsules or the pons, by bilateral demyelination, or by the upper motor neuron degeneration of amyotrophic lateral sclerosis. The muscles are then weak but spastic, the jaw jerk and gag are exaggerated because the brainstem reflex arcs are released from cortical inhibition, and the loss of cortical control over the brainstem circuits that generate laughing and crying produces the emotional incontinence. In motor neuron disease both mechanisms coexist, giving a wasted fasciculating tongue with a brisk jaw jerk, a combination that is diagnostic.",
+ "imagingFindings": [
+  {
+   "pathology": "Bilateral capsular or pontine lacunes",
+   "modality": "MRI",
+   "finding": "Multiple old lacunar infarcts in both internal capsules, corona radiata or basis pontis with confluent white matter disease.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Amyotrophic lateral sclerosis",
+   "modality": "MRI",
+   "finding": "Symmetric corticospinal tract T2 hyperintensity and precentral hypointensity on SWI; tongue atrophy; medulla otherwise normal.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Medullary lesion",
+   "modality": "MRI",
+   "finding": "Infarct, syrinx, tumor or demyelination involving the nucleus ambiguus and hypoglossal nucleus.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Motor neuron disease (both)",
+  "Bilateral strokes (pseudobulbar)",
+  "Multiple sclerosis (pseudobulbar)",
+  "Brainstem tumor, syringobulbia, Guillain–Barré, myasthenia, polio (bulbar)"
+ ],
+ "mimics": [
+  {
+   "name": "Myasthenia gravis",
+   "howToDistinguish": "Fatigable bulbar weakness without wasting or reflex change; ptosis; antibody positive"
+  },
+  {
+   "name": "Oculopharyngeal muscular dystrophy or myopathy",
+   "howToDistinguish": "Ptosis and dysphagia with a family history; no fasciculation, normal reflexes"
+  },
+  {
+   "name": "Kennedy disease",
+   "howToDistinguish": "Slowly progressive lower motor neuron bulbar and limb weakness in men with gynecomastia"
+  }
+ ],
+ "management": [
+  "Swallow assessment and aspiration precautions; gastrostomy when oral intake becomes unsafe",
+  "Assess respiration in bulbar motor neuron disease",
+  "Dextromethorphan-quinidine or antidepressants for pseudobulbar affect"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    119,
+    119
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    121,
+    121
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 29,
+   "pages": [
+    289,
+    289
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -40,
+   "z": -48
+  },
+  "label": "medullary motor nuclei"
+ },
+ "cameraPreset": "anterior"
+}

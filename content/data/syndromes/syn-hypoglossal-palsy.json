@@ -1,0 +1,124 @@
+{
+ "kind": "syndrome",
+ "id": "syn-hypoglossal-palsy",
+ "name": "Hypoglossal nerve palsy",
+ "eponyms": [],
+ "category": "neoplastic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-12-hypoglossal",
+   "hypoglossal-nucleus",
+   "artery-internal-carotid",
+   "level-medulla-olive"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-12-hypoglossal-l"
+  ]
+ },
+ "presentation": "On protrusion the tongue deviates toward one side, and that half of the tongue is wasted and ripples with fasciculations. The patient has mild slurring of lingual consonants and difficulty moving food around the mouth. In a young patient with neck pain and a Horner syndrome the cause is a carotid dissection pressing on the nerve; in an older patient a skull base tumor; bilateral involvement with a brisk jaw jerk means motor neuron disease.",
+ "deficits": [
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "half of the tongue",
+   "sign": "Tongue deviates toward the lesion on protrusion; atrophy and fasciculation (lower motor neuron)",
+   "substrate": "cn-12-hypoglossal"
+  },
+  {
+   "modality": "bulbar",
+   "side": "n/a",
+   "distribution": "speech and swallowing",
+   "sign": "Mild lingual dysarthria and difficulty manipulating food",
+   "substrate": "cn-12-hypoglossal"
+  },
+  {
+   "modality": "autonomic",
+   "side": "ipsilateral",
+   "distribution": "eye (with carotid lesions)",
+   "sign": "Horner syndrome when the carotid sheath is involved",
+   "substrate": "pathway-oculosympathetic"
+  }
+ ],
+ "reasoning": "The hypoglossal nucleus in the medulla and its nerve supply the intrinsic and extrinsic muscles of the ipsilateral half of the tongue. Protrusion is performed by the two genioglossus muscles pushing the tongue forward and toward the opposite side, so when one is paralyzed the intact muscle pushes the tongue toward the weak side: the tongue points to the lesion in a lower motor neuron palsy. Wasting and fasciculation confirm that the lesion is nuclear or infranuclear. The nucleus receives corticobulbar input mainly from the contralateral hemisphere, so a capsular stroke produces deviation away from the lesion without atrophy and with associated face and arm weakness on the same side as the tongue deviation. The nerve leaves through the hypoglossal canal and descends in the neck between the internal carotid artery and the internal jugular vein before turning forward over the carotid bifurcation, which is why carotid dissection, carotid endarterectomy and tumors of the carotid space are the commonest peripheral causes and why a Horner syndrome from the sympathetic plexus often accompanies them. A nuclear lesion in the medial medulla adds contralateral hemiparesis and proprioceptive loss (Dejerine). Bilateral lower motor neuron tongue weakness with upper motor neuron limb signs is the hallmark of amyotrophic lateral sclerosis.",
+ "imagingFindings": [
+  {
+   "pathology": "Carotid dissection",
+   "modality": "MRA",
+   "finding": "Crescentic intramural hematoma in the upper cervical internal carotid artery on fat-saturated T1, with luminal narrowing.",
+   "sequence": "T1"
+  },
+  {
+   "pathology": "Skull base tumor",
+   "modality": "MRI",
+   "finding": "Enhancing lesion of the hypoglossal canal or clivus (chordoma, metastasis, meningioma, glomus); CT shows canal widening or erosion.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Denervation of the tongue",
+   "modality": "MRI",
+   "finding": "Fatty atrophy and T2 hyperintensity of one half of the tongue on axial images, a useful sign of a chronic lesion.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Internal carotid artery dissection",
+  "Skull base tumor or metastasis",
+  "Carotid endarterectomy or neck surgery",
+  "Medial medullary infarct",
+  "Motor neuron disease (bilateral)",
+  "Radiotherapy to the neck"
+ ],
+ "mimics": [
+  {
+   "name": "Upper motor neuron tongue weakness",
+   "howToDistinguish": "Deviates away from a hemispheric lesion, no atrophy or fasciculation, associated hemiparesis"
+  },
+  {
+   "name": "Facial palsy",
+   "howToDistinguish": "Apparent tongue deviation from the asymmetric mouth; check with the lips held symmetric"
+  },
+  {
+   "name": "Pseudobulbar palsy",
+   "howToDistinguish": "Spastic, slow tongue without wasting; brisk jaw jerk"
+  }
+ ],
+ "management": [
+  "MRI of the medulla, skull base and neck with MRA of the carotid",
+  "Speech therapy; most dissection-related palsies recover",
+  "Look for fasciculations and limb signs to exclude motor neuron disease"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    353,
+    353
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    128,
+    128
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -12,
+   "y": -35,
+   "z": -50
+  },
+  "label": "hypoglossal nucleus and nerve in the medulla; canal at the skull base"
+ },
+ "cameraPreset": "inferior"
+}

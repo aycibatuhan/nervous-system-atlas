@@ -1,0 +1,155 @@
+{
+ "kind": "syndrome",
+ "id": "syn-subarachnoid-hemorrhage",
+ "name": "Aneurysmal subarachnoid hemorrhage and vasospasm",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "subarachnoid-space-cisterns",
+   "circle-of-willis",
+   "artery-acom",
+   "artery-pcom",
+   "artery-mca",
+   "cn-03-oculomotor"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "artery-acom",
+   "artery-pcom-l",
+   "artery-pcom-r"
+  ]
+ },
+ "presentation": "A patient describes the worst headache of their life, reaching maximum intensity within seconds, with vomiting, neck stiffness and photophobia; some collapse and lose consciousness briefly. A third nerve palsy with a dilated pupil points to a posterior communicating aneurysm. If the patient survives the first days, a new focal deficit or confusion between days four and fourteen means vasospasm, and drowsiness with dilated ventricles means hydrocephalus.",
+ "deficits": [
+  {
+   "modality": "pain",
+   "side": "bilateral",
+   "distribution": "head and neck",
+   "sign": "Thunderclap headache with meningism, photophobia and vomiting",
+   "substrate": "subarachnoid-space-cisterns"
+  },
+  {
+   "modality": "consciousness",
+   "side": "n/a",
+   "distribution": "diffuse",
+   "sign": "Transient loss of consciousness at ictus; drowsiness from raised pressure or hydrocephalus",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "oculomotor",
+   "sign": "Pupil-involving third nerve palsy with posterior communicating aneurysms",
+   "substrate": "cn-03-oculomotor"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "focal deficits (delayed)",
+   "sign": "Delayed ischemic deficits from vasospasm in the territory of the spasmed artery, days 4–14",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "visual-acuity",
+   "side": "bilateral",
+   "distribution": "retina",
+   "sign": "Subhyaloid (Terson) hemorrhages on fundoscopy",
+   "substrate": "cn-02-optic"
+  }
+ ],
+ "reasoning": "Saccular aneurysms form at the branch points of the circle of Willis, where the muscular layer of the arterial wall is deficient: the anterior communicating, posterior communicating and middle cerebral bifurcation are the commonest sites. The arteries lie in the subarachnoid space bathed in CSF, so rupture floods the basal cisterns with arterial blood in seconds; the sudden rise in intracranial pressure explains the abrupt headache and the transient loss of consciousness, and blood irritating the meninges produces the neck stiffness that appears over the following hours. Because the hemorrhage lies outside the brain, there is often no focal deficit at first, unless the jet of blood or the expanding aneurysm has injured a neighbor: a posterior communicating aneurysm sits directly on the oculomotor nerve, and its enlargement or rupture compresses the superficial pupillary fibers first, giving a painful pupil-involving third nerve palsy that is a warning sign before rupture. Blood in the cisterns has two delayed consequences. It blocks the arachnoid granulations and the basal cisterns, producing communicating hydrocephalus, and its breakdown products cause the cerebral arteries to constrict from about the fourth day, most severely where the clot is thickest, so that delayed infarcts appear in the territory of the spasmed vessel and produce the focal deficits, contralateral weakness or aphasia, of that territory. Rebleeding, most likely in the first day, is the other early killer and the reason aneurysms are secured urgently.",
+ "imagingFindings": [
+  {
+   "pathology": "Subarachnoid hemorrhage",
+   "modality": "CT",
+   "finding": "Hyperdense blood in the basal cisterns, Sylvian fissures and sulci within 6 hours in nearly all cases; the distribution suggests the aneurysm site (anterior interhemispheric for AComm, Sylvian for MCA).",
+   "sequence": "CT non-contrast",
+   "timing": "Sensitivity falls after 6–12 hours"
+  },
+  {
+   "pathology": "Xanthochromia",
+   "modality": "LP/CSF",
+   "finding": "Yellow supernatant from bilirubin 12 hours or more after the ictus when CT is negative and suspicion persists.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Aneurysm",
+   "modality": "CTA",
+   "finding": "Saccular aneurysm at a circle of Willis branch point; catheter angiography if CTA is negative."
+  },
+  {
+   "pathology": "Vasospasm",
+   "modality": "CTA",
+   "finding": "Segmental narrowing of the proximal arteries with raised transcranial Doppler velocities; delayed infarcts on DWI.",
+   "timing": "Days 4–14"
+  }
+ ],
+ "commonCauses": [
+  "Ruptured saccular aneurysm (85%)",
+  "Perimesencephalic non-aneurysmal hemorrhage",
+  "Arteriovenous malformation",
+  "Trauma",
+  "Reversible cerebral vasoconstriction syndrome, dissection"
+ ],
+ "mimics": [
+  {
+   "name": "Migraine or thunderclap headache of other cause",
+   "howToDistinguish": "CT within 6 hours and, if negative, lumbar puncture excludes SAH"
+  },
+  {
+   "name": "Meningitis",
+   "howToDistinguish": "Fever, slower onset, CSF pleocytosis"
+  },
+  {
+   "name": "Reversible cerebral vasoconstriction syndrome",
+   "howToDistinguish": "Recurrent thunderclap headaches, normal CSF, multifocal constriction that resolves"
+  }
+ ],
+ "management": [
+  "Immediate CT; lumbar puncture at 12 hours if CT negative; CTA once confirmed",
+  "Secure the aneurysm within 24–72 hours by endovascular coiling or clipping; nimodipine for 21 days; maintain normovolemia",
+  "Monitor for hydrocephalus (ventricular drain), vasospasm (Doppler, clinical) and hyponatremia"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    429,
+    429
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    474,
+    474
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    196,
+    198
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": 5,
+   "z": -15
+  },
+  "label": "basal cisterns around the circle of Willis"
+ },
+ "cameraPreset": "inferior"
+}

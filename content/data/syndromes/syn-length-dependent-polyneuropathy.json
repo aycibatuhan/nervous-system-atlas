@@ -1,0 +1,130 @@
+{
+ "kind": "syndrome",
+ "id": "syn-length-dependent-polyneuropathy",
+ "name": "Length-dependent sensorimotor polyneuropathy",
+ "eponyms": [],
+ "category": "metabolic-toxic",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "dorsal-root-ganglion",
+   "nerve-tibial",
+   "nerve-common-peroneal",
+   "nerve-median",
+   "nerve-ulnar"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "tibial-nerve-l",
+   "tibial-nerve-r"
+  ]
+ },
+ "presentation": "A patient with long-standing diabetes describes numbness and burning of both feet that began in the toes and has crept up to the ankles over a year or two, with unsteadiness in the dark. The ankle reflexes are absent, vibration sense is lost at the toes and reduced at the ankles, pin-prick is dulled in a stocking distribution, and when the numbness reaches the knees the fingertips begin to tingle. Toe extension is mildly weak and the feet are dry and hairless.",
+ "deficits": [
+  {
+   "modality": "sensory-light-touch",
+   "side": "bilateral",
+   "distribution": "stocking then glove distribution",
+   "sign": "Symmetric distal loss of all modalities beginning in the toes; large-fiber loss gives vibration and proprioceptive loss with sensory ataxia, small-fiber loss gives burning pain and reduced pin-prick",
+   "substrate": "dorsal-root-ganglion"
+  },
+  {
+   "modality": "reflex",
+   "side": "bilateral",
+   "distribution": "ankles first",
+   "sign": "Absent ankle reflexes with preserved knee reflexes until late",
+   "substrate": "nerve-tibial"
+  },
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "intrinsic foot muscles, toe and ankle dorsiflexors",
+   "sign": "Mild distal weakness and wasting late in the course",
+   "substrate": "nerve-common-peroneal"
+  },
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "distal",
+   "sign": "Dry skin, hair loss, orthostatic hypotension, gastroparesis, erectile dysfunction in small-fiber and autonomic involvement",
+   "substrate": "sympathetic-trunk"
+  }
+ ],
+ "reasoning": "In a metabolic, toxic or hereditary neuropathy the axon is affected along its whole length, and the longest axons fail first because the distal part of a long axon is farthest from the cell body that maintains it. The longest axons in the body run from the dorsal root ganglia and anterior horns of the lumbosacral cord to the toes, so symptoms begin in the toes of both feet simultaneously and ascend, and when the sensory loss has reached mid-calf the axons of comparable length to the fingertips begin to fail, giving the glove that follows the stocking; the anterior trunk may develop a patch of loss when the intercostal axons reach the threshold length. The process is symmetric because both legs' axons are equally long, and there is no crossed pattern, since the lesion lies entirely in the peripheral nervous system in the ipsilateral nerves. Sensory fibers suffer before motor fibers in most axonal neuropathies, and the ankle reflex, whose afferent limb is the longest sensory arc, disappears first. Large-fiber loss removes vibration and proprioception and causes sensory ataxia and a positive Romberg; small-fiber loss produces burning pain, loss of pin-prick and temperature discrimination and autonomic failure, and may occur alone with normal conduction studies. Asymmetry, proximal onset, marked weakness, a rapid course or cranial nerve involvement argue against a length-dependent process and point to a demyelinating, vasculitic or infiltrative neuropathy.",
+ "imagingFindings": [
+  {
+   "pathology": "Axonal sensorimotor polyneuropathy",
+   "modality": "EMG/NCS",
+   "finding": "Reduced sural and superficial peroneal sensory amplitudes, then reduced peroneal and tibial motor amplitudes with relatively preserved conduction velocities; distal denervation. Small-fiber neuropathy has normal studies.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Skin biopsy (small fiber)",
+   "modality": "EMG/NCS",
+   "finding": "Reduced intraepidermal nerve fiber density at the distal leg compared with the thigh.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Demyelinating neuropathy (mimic)",
+   "modality": "EMG/NCS",
+   "finding": "Slowed conduction velocities, prolonged distal latencies and conduction block point to CIDP or hereditary demyelination instead.",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Diabetes mellitus",
+  "Alcohol and nutritional deficiency (B12, thiamine, B6 excess)",
+  "Chemotherapy (platinum, taxanes, vincristine)",
+  "Chronic kidney disease",
+  "Hereditary (Charcot–Marie–Tooth)",
+  "Paraproteinemia, amyloidosis, HIV, hypothyroidism",
+  "Idiopathic in the elderly"
+ ],
+ "mimics": [
+  {
+   "name": "Lumbar spinal stenosis",
+   "howToDistinguish": "Symptoms with walking relieved by sitting, asymmetric, root pattern"
+  },
+  {
+   "name": "Bilateral tarsal tunnel",
+   "howToDistinguish": "Soles only, dorsum spared"
+  },
+  {
+   "name": "Myelopathy",
+   "howToDistinguish": "Brisk reflexes and extensor plantars with a sensory level"
+  },
+  {
+   "name": "Sensory neuronopathy (ganglionopathy)",
+   "howToDistinguish": "Non-length-dependent, ataxic, arms and face involved early; paraneoplastic or Sjögren"
+  }
+ ],
+ "management": [
+  "Screen: glucose tolerance, B12, serum protein electrophoresis, renal and thyroid function; nerve conduction studies to confirm the axonal length-dependent pattern",
+  "Treat the cause and control pain with gabapentinoids, duloxetine or tricyclics",
+  "Foot care and fall prevention"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 27,
+   "pages": [
+    283,
+    287
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -160
+  },
+  "label": "lumbosacral roots and dorsal root ganglia"
+ },
+ "cameraPreset": "anterior"
+}

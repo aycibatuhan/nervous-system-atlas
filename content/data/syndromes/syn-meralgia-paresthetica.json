@@ -1,0 +1,115 @@
+{
+ "kind": "syndrome",
+ "id": "syn-meralgia-paresthetica",
+ "name": "Meralgia paresthetica",
+ "eponyms": [],
+ "category": "entrapment",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "nerve-lateral-femoral-cutaneous",
+   "plexus-lumbosacral"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "lateral-femoral-cutaneous-nerve-l"
+  ]
+ },
+ "presentation": "An overweight patient, or one who has recently lost weight or wears a heavy belt, complains of burning, tingling and numbness over an oval patch on the outer thigh, worse on standing and walking and relieved by sitting. There is no weakness, the knee reflex is normal and the sensory loss is sharply confined to the anterolateral thigh above the knee. Pressure just inside the anterior superior iliac spine reproduces the discomfort.",
+ "deficits": [
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "anterolateral thigh",
+   "sign": "Burning paresthesias, allodynia and later numbness in an oval area on the lateral thigh",
+   "substrate": "nerve-lateral-femoral-cutaneous"
+  },
+  {
+   "modality": "motor",
+   "side": "n/a",
+   "distribution": "none",
+   "sign": "No weakness; knee reflex normal",
+   "substrate": "nerve-femoral"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "lateral thigh",
+   "sign": "Pain worse with standing, hip extension and tight clothing",
+   "substrate": "nerve-lateral-femoral-cutaneous"
+  }
+ ],
+ "reasoning": "The lateral femoral cutaneous nerve is a purely sensory branch of the lumbar plexus from the L2 and L3 roots that crosses the iliacus and leaves the pelvis by passing under, through or over the lateral end of the inguinal ligament just medial to the anterior superior iliac spine, where it turns sharply from a horizontal to a vertical course. At that angle it is compressed by a tight belt, a protuberant abdomen, pregnancy, prolonged hip extension or scar, and it can be injured during pelvic surgery or iliac crest bone harvest. Because the nerve carries no motor fibers and no reflex arc, the syndrome is purely sensory, which is its most useful feature: any weakness of the quadriceps or loss of the knee jerk means the femoral nerve or the L2–L4 roots are involved instead. The territory is the anterolateral thigh from the greater trochanter to the knee, which overlaps the L2–L3 dermatomes, but a root lesion would produce back pain, would extend medially and would involve the iliopsoas or quadriceps. The lesion is peripheral and ipsilateral, though it is bilateral in about a fifth of patients with obesity or diabetes. Sensory conduction of the nerve is technically difficult, so the diagnosis is clinical, confirmed if necessary by relief after a local anesthetic block at the inguinal ligament.",
+ "imagingFindings": [
+  {
+   "pathology": "Meralgia paresthetica",
+   "modality": "US",
+   "finding": "Enlarged, hypoechoic lateral femoral cutaneous nerve at the inguinal ligament; ultrasound also guides the diagnostic block.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Pelvic or retroperitoneal lesion (atypical cases)",
+   "modality": "MRI",
+   "finding": "Mass along the nerve's course over the iliacus when the onset is progressive or bilateral without a mechanical cause.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Obesity, pregnancy, tight belts and clothing",
+  "Diabetes",
+  "Prolonged hip extension or lying prone",
+  "Pelvic surgery, iliac crest harvest, hernia repair",
+  "Retroperitoneal mass (rare)"
+ ],
+ "mimics": [
+  {
+   "name": "L2–L3 radiculopathy",
+   "howToDistinguish": "Back pain, weakness of hip flexion, sensory loss extending to the anterior and medial thigh"
+  },
+  {
+   "name": "Femoral neuropathy",
+   "howToDistinguish": "Quadriceps weakness and absent knee jerk"
+  },
+  {
+   "name": "Trochanteric bursitis",
+   "howToDistinguish": "Tenderness over the trochanter with normal sensation"
+  }
+ ],
+ "management": [
+  "Remove the compression: weight loss, loose clothing; reassure, as most cases resolve",
+  "Local anesthetic and steroid injection at the inguinal ligament",
+  "Neuropathic pain agents; rarely surgical decompression or neurectomy"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    157
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    164,
+    164
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -100,
+   "y": 10,
+   "z": -210
+  },
+  "label": "lateral femoral cutaneous nerve at the anterior superior iliac spine (virtual)"
+ },
+ "cameraPreset": "anterior"
+}

@@ -1,0 +1,115 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cubital-tunnel",
+ "name": "Ulnar neuropathy at the elbow",
+ "eponyms": [
+  "cubital tunnel syndrome",
+  "tardy ulnar palsy"
+ ],
+ "category": "entrapment",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "nerve-ulnar",
+   "plexus-brachial"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "ulnar-nerve-l"
+  ]
+ },
+ "presentation": "A patient who leans on the elbow at a desk, or who had an elbow fracture years ago, has numbness of the little finger and the ulnar half of the ring finger on both the palmar and dorsal surfaces, weakness of finger spreading, and a hand that is wasted between the thumb and index finger. The ring and little fingers curl into a claw; when pinching a sheet of paper the thumb flexes at its tip (Froment sign). Tapping behind the medial epicondyle sends tingling into the little finger.",
+ "deficits": [
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "little finger, ulnar half of the ring finger, dorsal and palmar ulnar hand",
+   "sign": "Sensory loss in the ulnar territory including the dorsum of the hand; forearm spared",
+   "substrate": "nerve-ulnar"
+  },
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "interossei, hypothenar, adductor pollicis, medial lumbricals, flexor digitorum profundus to the ring and little fingers",
+   "sign": "Weak finger abduction and adduction, wasting of the first dorsal interosseous, Froment sign, ulnar claw of the ring and little fingers, Wartenberg sign",
+   "substrate": "nerve-ulnar"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "medial elbow",
+   "sign": "Aching at the elbow with Tinel sign in the ulnar groove",
+   "substrate": "nerve-ulnar"
+  }
+ ],
+ "reasoning": "The ulnar nerve passes behind the medial epicondyle in the ulnar groove and then beneath the aponeurosis between the two heads of the flexor carpi ulnaris (the cubital tunnel), where it is superficial, tethered and stretched by elbow flexion and compressed by leaning; a previous fracture, arthritis or a shallow groove that lets the nerve dislocate adds to the injury. All the ulnar-innervated muscles lie distal to the elbow, so an elbow lesion weakens the flexor carpi ulnaris and the ulnar half of the flexor digitorum profundus as well as the hand intrinsics, whereas a lesion at the wrist (Guyon's canal) spares the forearm muscles and, depending on the site, the sensory branches. The dorsal cutaneous branch leaves the nerve several centimeters above the wrist, so dorsal ulnar hand sensation is lost with an elbow lesion but spared with a wrist lesion, and the medial forearm, supplied by the medial antebrachial cutaneous nerve from the plexus, is spared with any ulnar lesion, which distinguishes it from a C8 root or lower trunk lesion. The claw posture is produced by paralysis of the medial two lumbricals and interossei, which normally flex the knuckles and extend the fingers, and it is paradoxically less severe in high lesions because the paralyzed profundus no longer flexes the fingertips (the ulnar paradox). Froment sign reflects substitution of the median flexor pollicis longus for the paralyzed adductor pollicis. The lesion is peripheral and ipsilateral; conduction slowing or block across the elbow confirms the site.",
+ "imagingFindings": [
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Slowing of ulnar motor conduction or conduction block across the elbow segment with normal forearm and wrist conduction; denervation in the first dorsal interosseous and flexor carpi ulnaris; dorsal ulnar cutaneous response reduced.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Nerve enlargement at the elbow",
+   "modality": "US",
+   "finding": "Swollen hypoechoic ulnar nerve in the groove or beneath the cubital tunnel aponeurosis, with subluxation on flexion in some.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Elbow deformity or mass",
+   "modality": "MRI",
+   "finding": "Old fracture, arthritis, ganglion or accessory anconeus compressing the nerve.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Leaning on the elbow, prolonged flexion (habitual, occupational, perioperative)",
+  "Old elbow fracture (tardy ulnar palsy)",
+  "Arthritis, ganglion",
+  "Subluxing ulnar nerve"
+ ],
+ "mimics": [
+  {
+   "name": "C8 radiculopathy or lower trunk plexopathy",
+   "howToDistinguish": "Sensory loss extends to the medial forearm, thenar muscles involved, neck or shoulder pain"
+  },
+  {
+   "name": "Ulnar neuropathy at the wrist",
+   "howToDistinguish": "Dorsal hand sensation and forearm muscles spared; cyclist's palsy or ganglion"
+  },
+  {
+   "name": "Motor neuron disease",
+   "howToDistinguish": "No sensory loss, wasting spreads to median muscles"
+  }
+ ],
+ "management": [
+  "Avoid leaning and prolonged flexion; elbow pad or night extension splint",
+  "Electrodiagnosis to confirm the elbow site and grade severity",
+  "Surgical decompression or transposition for progressive weakness or failure of conservative measures"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    150,
+    153
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -55,
+   "y": -20,
+   "z": -140
+  },
+  "label": "ulnar nerve behind the medial epicondyle (virtual)"
+ },
+ "cameraPreset": "anterior"
+}

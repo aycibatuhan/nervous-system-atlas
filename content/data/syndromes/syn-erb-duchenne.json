@@ -1,0 +1,134 @@
+{
+ "kind": "syndrome",
+ "id": "syn-erb-duchenne",
+ "name": "Upper brachial plexus palsy (Erb–Duchenne)",
+ "eponyms": [
+  "Erb palsy",
+  "waiter's tip deformity"
+ ],
+ "category": "plexopathy",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "plexus-brachial",
+   "roots-c5-t1",
+   "nerve-axillary",
+   "nerve-musculocutaneous",
+   "nerve-suprascapular"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "brachial-plexus-l"
+  ]
+ },
+ "presentation": "After a difficult delivery with shoulder dystocia, or a motorcycle crash in which the shoulder was forced down while the head went the other way, the arm hangs limp at the side, rotated inward with the elbow straight and the forearm pronated, the wrist and fingers flexed: the 'waiter's tip'. The hand grips normally. Sensation is reduced over the outer shoulder and the lateral forearm, and the biceps and brachioradialis reflexes are absent.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "shoulder abductors and external rotators, elbow flexors, supinator",
+   "sign": "Weak deltoid, supraspinatus, infraspinatus, biceps, brachialis, brachioradialis; arm adducted, internally rotated, extended and pronated",
+   "substrate": "plexus-brachial"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "lateral arm and forearm (C5–C6)",
+   "sign": "Sensory loss over the deltoid and radial forearm",
+   "substrate": "roots-c5-t1"
+  },
+  {
+   "modality": "reflex",
+   "side": "ipsilateral",
+   "distribution": "biceps and brachioradialis",
+   "sign": "Absent C5–C6 reflexes; triceps preserved",
+   "substrate": "roots-c5-t1"
+  },
+  {
+   "modality": "motor",
+   "side": "n/a",
+   "distribution": "hand",
+   "sign": "Hand and finger function preserved (C8–T1 intact)",
+   "substrate": "nerve-median"
+  }
+ ],
+ "reasoning": "Forcing the head and shoulder apart stretches the upper part of the brachial plexus, the C5 and C6 roots and the upper trunk they form, while the lower roots are protected by their more horizontal course. The upper trunk gives the suprascapular nerve to the supraspinatus and infraspinatus, and its fibers continue into the lateral cord to the musculocutaneous nerve for the elbow flexors and into the posterior cord to the axillary nerve for the deltoid and teres minor; C5–C6 fibers also reach the brachioradialis and supinator through the radial nerve. Their loss paralyzes shoulder abduction and external rotation, elbow flexion and supination, and the intact antagonists supplied by C7–T1 pull the limb into the characteriztic adducted, internally rotated, extended and pronated posture. The C5 and C6 dermatomes cover the lateral shoulder, arm and forearm, so the sensory loss follows them, and the biceps and brachioradialis reflex arcs, which run through C5–C6, are lost while the C7 triceps jerk survives. The lesion is peripheral and uncrossed, so everything is ipsilateral. Whether the roots are avulsed from the cord (preganglionic, no recovery possible, with a Horner if T1 is also torn) or the trunk is stretched (postganglionic, recovery possible) is the crucial prognostic question: preserved sensory nerve action potentials in an anesthetic area show that the dorsal root ganglion is still connected to the periphery and the lesion is preganglionic.",
+ "imagingFindings": [
+  {
+   "pathology": "Plexus stretch injury",
+   "modality": "MRI",
+   "finding": "Edema and T2 hyperintensity of the C5–C6 roots and upper trunk on MR neurography; pseudomeningoceles at the foramina indicate root avulsion.",
+   "sequence": "STIR"
+  },
+  {
+   "pathology": "Root avulsion",
+   "modality": "CT",
+   "finding": "CT myelography showing contrast-filled pseudomeningoceles and absent rootlets at C5–C6.",
+   "sequence": "CT contrast"
+  },
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Denervation in C5–C6 muscles with preserved lateral antebrachial cutaneous sensory responses in avulsion (preganglionic) or absent responses in trunk lesions (postganglionic).",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Obstetric shoulder dystocia",
+  "Motorcycle and traction injuries",
+  "Rucksack (pack) palsy",
+  "Radiation plexopathy (upper trunk)",
+  "Brachial neuritis"
+ ],
+ "mimics": [
+  {
+   "name": "C5–C6 radiculopathy",
+   "howToDistinguish": "Neck pain, usually one root, paraspinal denervation"
+  },
+  {
+   "name": "Axillary nerve injury alone",
+   "howToDistinguish": "Deltoid only, elbow flexion normal"
+  },
+  {
+   "name": "Rotator cuff tear",
+   "howToDistinguish": "Pain and weakness of abduction without sensory loss or reflex change"
+  }
+ ],
+ "management": [
+  "Physiotherapy to prevent contractures; most obstetric palsies recover within months",
+  "EMG at 3–4 weeks and MRI to define avulsion; nerve grafting or transfers if no biceps recovery by 3–6 months",
+  "Late tendon transfers for fixed deficits"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    412,
+    413
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    147,
+    147
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -60,
+   "y": -20,
+   "z": -40
+  },
+  "label": "upper trunk of the brachial plexus"
+ },
+ "cameraPreset": "anterior"
+}

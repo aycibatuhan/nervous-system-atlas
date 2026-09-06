@@ -1,0 +1,138 @@
+{
+ "kind": "syndrome",
+ "id": "syn-normal-pressure-hydrocephalus",
+ "name": "Normal pressure hydrocephalus",
+ "eponyms": [
+  "Hakim–Adams syndrome"
+ ],
+ "category": "csf-pressure",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "ventricle-lateral",
+   "ventricle-third",
+   "arachnoid-granulations",
+   "corona-radiata",
+   "lobe-frontal"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "lateral-ventricle-l",
+   "lateral-ventricle-r"
+  ]
+ },
+ "presentation": "An elderly patient shuffles into clinic with feet that seem glued to the floor, turning in several small steps, and the family report months of forgetfulness, slowness and, more recently, urinary urgency and wetting. There is no tremor and the arms swing normally. CT shows ventricles that are far larger than the sulci would predict, and after fifty milliliters of CSF is removed the gait improves for a few days.",
+ "deficits": [
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "legs",
+   "sign": "Magnetic, wide-based, shuffling gait with difficulty initiating steps and turning; upper body relatively spared",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "frontal-subcortical",
+   "sign": "Slowing, apathy, poor attention and executive function; memory impaired secondarily",
+   "substrate": "cortex-prefrontal"
+  },
+  {
+   "modality": "sphincter",
+   "side": "bilateral",
+   "distribution": "bladder",
+   "sign": "Urgency progressing to incontinence, often with indifference",
+   "substrate": "gyrus-cingulate"
+  }
+ ],
+ "reasoning": "In normal pressure hydrocephalus CSF absorption through the arachnoid granulations is chronically impaired, often after old hemorrhage, infection or for no discoverable reason in the elderly, and the ventricles slowly enlarge while the intracranial pressure measured at a single lumbar puncture remains within the normal range, though prolonged monitoring shows intermittent pressure waves. The enlarged frontal horns stretch the periventricular white matter, and the fibers that run closest to the ventricular wall on their way from the medial frontal cortex to the internal capsule are those for the legs and for bladder control, together with the frontal-subcortical circuits that connect the prefrontal cortex to the basal ganglia and thalamus. Stretching and ischemia of these fibers explain the triad: a gait disorder that resembles parkinsonism in the legs but spares the arms, urinary urgency from loss of the frontal inhibition of the bladder reflex, and a subcortical dementia of slowing and apathy rather than the amnesia of Alzheimer disease. The process is bilateral and symmetric with no lateralizing or crossed signs. The distinction from atrophy rests on the disproportion between ventricular size and sulcal width, with crowding of the sulci at the vertex and widening of the Sylvian fissures, and from Alzheimer disease and vascular parkinsonism on the temporary improvement in gait after a large-volume lumbar puncture or a period of lumbar drainage, which also predicts the response to shunting. The gait responds best and earliest; established dementia responds least.",
+ "imagingFindings": [
+  {
+   "pathology": "Normal pressure hydrocephalus",
+   "modality": "MRI",
+   "finding": "Ventriculomegaly out of proportion to sulcal atrophy (Evans index above 0.3), tight high-convexity sulci with widened Sylvian fissures (DESH), callosal angle under 90°, periventricular T2 change and an accentuated aqueductal flow void.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Tap test",
+   "modality": "LP/CSF",
+   "finding": "Normal opening pressure; objective gait improvement after removal of 30–50 mL of CSF or after 3 days of lumbar drainage predicts shunt response.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Secondary causes",
+   "modality": "MRI",
+   "finding": "Hemosiderin from old subarachnoid hemorrhage, meningeal thickening from previous infection.",
+   "sequence": "SWI"
+  }
+ ],
+ "commonCauses": [
+  "Idiopathic (elderly)",
+  "Previous subarachnoid hemorrhage",
+  "Previous meningitis",
+  "Head injury"
+ ],
+ "mimics": [
+  {
+   "name": "Alzheimer disease",
+   "howToDistinguish": "Memory loss precedes gait change; hippocampal atrophy; no tap response"
+  },
+  {
+   "name": "Vascular parkinsonism",
+   "howToDistinguish": "Stepwise course with extensive white matter disease and lacunes"
+  },
+  {
+   "name": "Parkinson disease",
+   "howToDistinguish": "Rest tremor, asymmetric rigidity, reduced arm swing, levodopa response"
+  },
+  {
+   "name": "Cervical myelopathy",
+   "howToDistinguish": "Spasticity, sensory signs, compression on MRI"
+  }
+ ],
+ "management": [
+  "MRI and a large-volume tap test or lumbar drain trial in patients with the triad and ventriculomegaly",
+  "Ventriculoperitoneal shunt with an adjustable valve for responders; the gait improves most",
+  "Manage comorbid Alzheimer pathology and vascular risk"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    231,
+    231
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    234,
+    234
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    237,
+    237
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": 0,
+   "y": -10,
+   "z": 15
+  },
+  "label": "frontal horns and periventricular white matter"
+ },
+ "cameraPreset": "anterior"
+}

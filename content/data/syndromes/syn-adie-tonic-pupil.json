@@ -1,0 +1,125 @@
+{
+ "kind": "syndrome",
+ "id": "syn-adie-tonic-pupil",
+ "name": "Adie tonic pupil",
+ "eponyms": [
+  "Holmes–Adie syndrome"
+ ],
+ "category": "functional-pattern",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "ganglion-ciliary",
+   "cn-03-oculomotor"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "ciliary-ganglion-l"
+  ]
+ },
+ "presentation": "A young woman notices in the mirror that one pupil is larger than the other. In bright light the difference is obvious and the large pupil barely constricts; when she reads, that pupil slowly narrows and then stays small for a long time after she looks up again. Vision is normal apart from difficulty focusing at near. Her ankle reflexes are absent. There is no ptosis, no diplopia and no headache.",
+ "deficits": [
+  {
+   "modality": "pupil",
+   "side": "ipsilateral",
+   "distribution": "one pupil",
+   "sign": "Dilated pupil with absent or segmental (vermiform) light reaction and slow tonic constriction to near with slow redilation",
+   "substrate": "ganglion-ciliary"
+  },
+  {
+   "modality": "visual-acuity",
+   "side": "ipsilateral",
+   "distribution": "near vision",
+   "sign": "Blurred near vision from tonic accommodation and ciliary muscle paresis",
+   "substrate": "ganglion-ciliary"
+  },
+  {
+   "modality": "reflex",
+   "side": "bilateral",
+   "distribution": "ankles and knees",
+   "sign": "Absent deep tendon reflexes in Holmes–Adie syndrome",
+   "substrate": "dorsal-root-ganglion"
+  }
+ ],
+ "reasoning": "The ciliary ganglion in the orbit contains the postganglionic parasympathetic neurons for the sphincter pupillae and the ciliary muscle, and receives its preganglionic input from the Edinger–Westphal nucleus through the oculomotor nerve. Damage to the ganglion or the short ciliary nerves, usually a benign idiopathic denervation and occasionally viral or traumatic, removes the final pathway to the iris sphincter and ciliary muscle of that eye, so the pupil dilates, fails to react to light and accommodation is lost; the deficit is ipsilateral because the ganglion serves only its own eye. Over the following weeks the surviving fibers sprout. About thirty times more ganglion cells serve the ciliary muscle than the sphincter, so the regenerating fibers that reach the iris are mostly accommodative ones, and the sphincter comes to be driven by the near effort rather than by light: light-near dissociation with a slow, tonic near response and slow redilation, because the misdirected fibers fire tonically. The denervated sphincter also develops receptor supersensitivity, so dilute pilocarpine that does not affect the normal pupil constricts the tonic pupil, the diagnostic test. Segments of the iris still innervated produce the worm-like segmental contractions seen at the slit lamp. The associated areflexia, which makes it the Holmes–Adie syndrome, reflects a wider loss of peripheral neurons and is benign. Over years the pupil becomes small and the other eye may follow.",
+ "imagingFindings": [
+  {
+   "pathology": "Denervation supersensitivity",
+   "modality": "MRI",
+   "finding": "Imaging is normal; the diagnosis rests on constriction of the affected pupil to 0.125% pilocarpine with no effect on the normal pupil, so MRI is reserved for atypical cases.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Orbital or ganglion lesion (atypical cases)",
+   "modality": "MRI",
+   "finding": "Orbital apex or ciliary ganglion lesion; imaging is reserved for painful or progressive cases.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Idiopathic (young women)",
+  "Viral ganglionitis",
+  "Orbital trauma or surgery",
+  "Autonomic neuropathies (diabetes, amyloid, Sjögren)",
+  "Paraneoplastic autonomic neuropathy"
+ ],
+ "mimics": [
+  {
+   "name": "Third nerve palsy",
+   "howToDistinguish": "Ptosis and ophthalmoplegia accompany the large pupil"
+  },
+  {
+   "name": "Pharmacologic mydriasis",
+   "howToDistinguish": "Fixed pupil that does not constrict to full-strength pilocarpine; history of exposure"
+  },
+  {
+   "name": "Argyll Robertson pupils",
+   "howToDistinguish": "Small, bilateral, brisk near response"
+  }
+ ],
+ "management": [
+  "Confirm with dilute pilocarpine; reassure",
+  "Reading glasses or low-dose pilocarpine for symptomatic accommodative loss",
+  "Test the reflexes and consider autonomic evaluation if other autonomic symptoms are present"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    408,
+    408
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    414,
+    414
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    87,
+    87
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -30,
+   "y": 35,
+   "z": -12
+  },
+  "label": "ciliary ganglion behind the globe"
+ },
+ "cameraPreset": "anterior"
+}

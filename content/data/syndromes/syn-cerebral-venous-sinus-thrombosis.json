@@ -1,0 +1,138 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cerebral-venous-sinus-thrombosis",
+ "name": "Cerebral venous sinus thrombosis",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "sinus-superior-sagittal",
+   "sinus-transverse-sigmoid",
+   "veins-superficial-cerebral",
+   "vein-great-cerebral",
+   "sinus-cavernous"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "sinus-superior-sagittal"
+  ]
+ },
+ "presentation": "A woman in the postpartum period, or on the combined contraceptive pill, develops a headache that builds over days and is worse lying flat, then has a focal seizure and weakness of one leg, and the fundi show swollen discs. CT shows a hemorrhagic lesion that does not fit an arterial territory, near the vertex; CT venography shows a filling defect in the superior sagittal sinus. Deep venous thrombosis produces bilateral thalamic swelling and coma; cavernous sinus thrombosis a painful ophthalmoplegia with proptosis.",
+ "deficits": [
+  {
+   "modality": "pain",
+   "side": "bilateral",
+   "distribution": "head",
+   "sign": "Subacute progressive headache, worse lying down, with papilledema (raised pressure)",
+   "substrate": "sinus-superior-sagittal"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "leg, or bilateral legs",
+   "sign": "Focal deficits from venous infarcts, often parasagittal leg weakness, sometimes bilateral",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "other",
+   "side": "n/a",
+   "distribution": "cortex",
+   "sign": "Focal or generalized seizures, far commoner than in arterial stroke",
+   "substrate": "veins-superficial-cerebral"
+  },
+  {
+   "modality": "consciousness",
+   "side": "bilateral",
+   "distribution": "thalami (deep venous thrombosis)",
+   "sign": "Drowsiness to coma with bilateral thalamic and basal ganglia edema",
+   "substrate": "vein-great-cerebral"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "cavernous sinus",
+   "sign": "Painful ophthalmoplegia, proptosis and chemosis with cavernous sinus thrombosis",
+   "substrate": "sinus-cavernous"
+  }
+ ],
+ "reasoning": "The dural venous sinuses drain the cerebral veins to the internal jugular veins: the superior sagittal sinus collects the superficial veins from the convexities, the great cerebral vein and straight sinus drain the deep structures, and the transverse and sigmoid sinuses carry both to the jugular bulb. Thrombosis of a sinus obstructs venous outflow from the region it drains without interrupting arterial inflow, so blood continues to arrive but cannot leave; capillary pressure rises, fluid leaks into the tissue, and the swollen, congested cortex is prone to seizures and to hemorrhage into the edematous tissue. These venous infarcts do not respect arterial territories, are often bilateral or parasagittal when the superior sagittal sinus is involved, since the veins of both leg areas drain into it, and can be hemorrhagic from the start. Occlusion of the sinus also blocks CSF absorption through the arachnoid granulations that project into it, so intracranial pressure rises with headache, papilledema and sixth nerve palsies even without infarction, a picture identical to idiopathic intracranial hypertension. Thrombosis of the deep system swells both thalami and produces coma, and thrombosis of the cavernous sinus, usually septic, involves the ocular motor nerves in its wall. Because the superior sagittal sinus drains both hemispheres, deficits are often bilateral, and when unilateral they are contralateral to the congested cortex, since the corticospinal fibers cross in the medulla. The clinical clue is a headache that has progressed over days in a patient with a prothrombotic state, and the diagnosis is made by imaging the veins, not the arteries.",
+ "imagingFindings": [
+  {
+   "pathology": "Venous sinus thrombosis",
+   "modality": "MRV",
+   "finding": "Absent flow in the superior sagittal, transverse or sigmoid sinus on MR or CT venography; the 'empty delta' sign on contrast CT; a hyperdense sinus or cortical vein (cord sign) on plain CT.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Venous infarct",
+   "modality": "MRI",
+   "finding": "Parasagittal or temporal edema with petechial or frank hemorrhage not confined to an arterial territory; mixed restricted and facilitated diffusion.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Thrombus signal",
+   "modality": "MRI",
+   "finding": "T1-bright subacute clot within the sinus and a blooming cortical vein on SWI.",
+   "sequence": "SWI"
+  }
+ ],
+ "commonCauses": [
+  "Pregnancy and puerperium, oral contraceptives",
+  "Thrombophilia (factor V Leiden, antiphospholipid syndrome)",
+  "Dehydration, malignancy, inflammatory bowel disease",
+  "Local infection (otitis, mastoiditis, sinusitis) for lateral and cavernous sinuses",
+  "Head injury, lumbar puncture, dural puncture"
+ ],
+ "mimics": [
+  {
+   "name": "Idiopathic intracranial hypertension",
+   "howToDistinguish": "Normal venography; no seizures or focal deficits"
+  },
+  {
+   "name": "Arterial stroke",
+   "howToDistinguish": "Abrupt onset, territorial infarct on DWI, no venous filling defect"
+  },
+  {
+   "name": "Meningitis or encephalitis",
+   "howToDistinguish": "Fever, CSF pleocytosis; may coexist"
+  }
+ ],
+ "management": [
+  "CT or MR venography in any subacute headache with papilledema, seizures or atypical infarcts",
+  "Anticoagulate with heparin even when the infarct is hemorrhagic; treat the underlying cause and any infection",
+  "Endovascular thrombectomy or decompressive craniectomy for deterioration despite anticoagulation; antiepileptic drugs for seizures"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    431,
+    433
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    200,
+    201
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -30,
+   "z": 60
+  },
+  "label": "superior sagittal sinus at the vertex"
+ },
+ "cameraPreset": "superior"
+}
