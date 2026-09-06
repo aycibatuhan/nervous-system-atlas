@@ -1,0 +1,120 @@
+{
+ "kind": "pathway",
+ "id": "pathway-posterior-spinocerebellar",
+ "name": "Posterior spinocerebellar tract",
+ "synonyms": [
+  "dorsal spinocerebellar tract",
+  "Flechsig's tract"
+ ],
+ "type": "ascending",
+ "modality": "unconscious proprioception from the leg and lower trunk",
+ "summary": "Proprioceptive fibers from muscle spindles, tendon organs and joints of the leg and trunk end in Clarke's column (nucleus dorsalis, C8–L3); its neurons send uncrossed axons up the lateral funiculus as the posterior spinocerebellar tract into the inferior cerebellar peduncle to the vermis and paravermis. The arm equivalent is the cuneocerebellar tract from the accessory cuneate nucleus. The pathway is uncrossed and carries information the cerebellum uses to coordinate the same-side limb, so lesions produce ipsilateral ataxia without conscious sensory loss.",
+ "origin": {
+  "structures": [
+   "dorsal-root-ganglion",
+   "spinal-gray-posterior-horn"
+  ],
+  "note": "Muscle spindle and Golgi tendon organ afferents from the leg and lower trunk; second-order neurons in Clarke's column (lamina VII)."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Dorsal root ganglion cell",
+   "synapse": "Clarke's column (nucleus dorsalis)"
+  },
+  {
+   "order": 2,
+   "cellBody": "Clarke's column neuron",
+   "synapse": "cerebellar cortex of the vermis and intermediate zone as mossy fibers"
+  }
+ ],
+ "decussation": null,
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "dorsal-root-ganglion",
+   "sideRelativeToOrigin": "ipsilateral"
+  },
+  {
+   "order": 2,
+   "structureId": "spinal-grey-posterior-horn",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "Clarke's column at the base of the dorsal horn, C8–L3 (fibers from below L3 ascend in the fasciculus gracilis first)"
+  },
+  {
+   "order": 3,
+   "structureId": "spinal-white-columns",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "posterior part of the lateral funiculus, superficial"
+  },
+  {
+   "order": 4,
+   "structureId": "inferior-cerebellar-peduncle",
+   "meshId": "inferior-cerebellar-peduncle-l",
+   "sideRelativeToOrigin": "ipsilateral"
+  },
+  {
+   "order": 5,
+   "structureId": "cerebellar-vermis",
+   "meshId": "cerebellar-vermis-vi",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "anterior lobe and paravermis"
+  }
+ ],
+ "termination": "Cerebellar cortex of the ipsilateral vermis and intermediate zone (spinocerebellum) as mossy fibers, with collaterals to the deep nuclei.",
+ "meshIds": [
+  "inferior-cerebellar-peduncle-l",
+  "inferior-cerebellar-peduncle-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Lateral funiculus of the cord (Friedreich ataxia, hemicord lesion)",
+   "effects": "Ipsilateral limb ataxia without conscious sensory loss (in Friedreich the posterior columns are also lost)",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Inferior cerebellar peduncle or medulla",
+   "effects": "Ipsilateral limb and gait ataxia (part of the lateral medullary syndrome)",
+   "side": "ipsilateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Spinocerebellar tracts are uncrossed: ataxia from cord or medullary lesions is ipsilateral",
+   "Friedreich ataxia destroys both the spinocerebellar tracts and the posterior columns, giving mixed cerebellar and sensory ataxia"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-cerebellar-hemispheric"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    149,
+    150
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    239
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "status": "draft"
+}

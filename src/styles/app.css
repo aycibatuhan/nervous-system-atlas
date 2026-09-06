@@ -49,3 +49,6 @@ code { background: var(--panel2); padding: 0 4px; border-radius: 3px; }
 .path { margin-bottom: 8px; } .path p { margin: 2px 0; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; } .chip { background: var(--panel2); border: 1px solid var(--border); border-radius: 12px; padding: 2px 8px; color: var(--fg); text-decoration: none; font-size: 12px; } .chip:hover { border-color: var(--accent); }
 .xref { color: var(--accent2); } .small { font-size: 11px; }
+.waypoints { padding-left: 0; list-style: none; } .wp { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; padding: 4px 6px; border-left: 3px solid var(--border); margin-bottom: 4px; cursor: pointer; }
+.wp:hover { background: var(--panel2); } .wp-n { display: inline-block; min-width: 18px; text-align: center; background: var(--panel2); border-radius: 9px; font-size: 11px; }
+.wp.side-contralateral { border-left-color: #e15759; } .wp.side-ipsilateral { border-left-color: #59a14f; } .wp.side-bilateral { border-left-color: #f28e2b; } .wp .small { flex-basis: 100%; }

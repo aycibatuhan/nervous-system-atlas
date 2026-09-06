@@ -1,0 +1,182 @@
+{
+ "kind": "pathway",
+ "id": "pathway-lateral-spinothalamic",
+ "name": "Lateral spinothalamic tract",
+ "synonyms": [
+  "anterolateral system",
+  "spinal lemniscus"
+ ],
+ "type": "ascending",
+ "modality": "pain and temperature",
+ "summary": "Small myelinated and unmyelinated pain and temperature fibers end in the dorsal horn (laminae I, II and V) within a segment or two of their entry; second-order neurons cross in the anterior white commissure over one to two segments and ascend in the anterolateral funiculus as the spinothalamic tract, joined in the brainstem by spinoreticular and spinomesencephalic fibers, to the ventral posterolateral thalamus and then the somatosensory cortex and insula. The early crossing is the key: cord lesions cause contralateral loss beginning one or two segments below the lesion, and a central cord lesion catches the crossing fibers of both sides for a band of dissociated loss.",
+ "origin": {
+  "structures": [
+   "dorsal-root-ganglion",
+   "spinal-gray-posterior-horn"
+  ],
+  "note": "Free nerve endings (nociceptors and thermoreceptors); A-delta and C fibers; cell bodies in the dorsal root ganglia; second-order cells in the dorsal horn."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Dorsal root ganglion cell",
+   "synapse": "dorsal horn laminae I, II and V (via Lissauer's tract)"
+  },
+  {
+   "order": 2,
+   "cellBody": "Dorsal horn projection neuron",
+   "synapse": "VPL thalamus (also intralaminar nuclei and reticular formation)"
+  },
+  {
+   "order": 3,
+   "cellBody": "VPL thalamic neuron",
+   "synapse": "postcentral gyrus and insula"
+  }
+ ],
+ "decussation": {
+  "level": "Anterior white commissure, 1–2 segments above entry",
+  "structureId": "spinal-white-columns",
+  "note": "Second-order axons cross obliquely; a syrinx damages them here."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "dorsal-root-ganglion",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "first-order neuron"
+  },
+  {
+   "order": 2,
+   "structureId": "spinal-grey-posterior-horn",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "synapse in the substantia gelatinosa and nucleus proprius"
+  },
+  {
+   "order": 3,
+   "structureId": "spinal-white-columns",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "crosses in the anterior white commissure; ascends in the anterolateral funiculus, sacral fibers lateral"
+  },
+  {
+   "order": 4,
+   "structureId": "level-medulla-olive",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "lateral medulla, dorsal to the olive"
+  },
+  {
+   "order": 5,
+   "structureId": "level-pons-caudal",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "lateral tegmentum with the spinal lemniscus"
+  },
+  {
+   "order": 6,
+   "structureId": "level-midbrain-superior-colliculus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "lateral tegmentum beside the medial lemniscus"
+  },
+  {
+   "order": 7,
+   "structureId": "thalamus-vpl",
+   "meshId": "thalamus-ventral-posterior-ventrolateral-l",
+   "sideRelativeToOrigin": "contralateral"
+  },
+  {
+   "order": 8,
+   "structureId": "gyrus-postcentral",
+   "meshId": "gyrus-postcentral-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "with projections to the insula and cingulate for the affective dimension of pain"
+  }
+ ],
+ "termination": "Ventral posterolateral nucleus of the thalamus (discriminative pain), intralaminar nuclei and reticular formation (arousal and affect), periaqueductal gray (descending modulation).",
+ "meshIds": [
+  "brainstem"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Peripheral nerve or root",
+   "effects": "Loss in the nerve or dermatome distribution, often with pain",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Central cord (syrinx)",
+   "effects": "Bilateral cape-like dissociated loss of pain and temperature at the involved segments with preserved touch and vibration",
+   "side": "bilateral"
+  },
+  {
+   "level": "Hemicord (Brown-Séquard)",
+   "effects": "Contralateral loss starting one to two segments below the lesion",
+   "side": "contralateral"
+  },
+  {
+   "level": "Lateral medulla (Wallenberg)",
+   "effects": "Contralateral body loss with ipsilateral facial loss (spinal trigeminal tract)",
+   "side": "contralateral"
+  },
+  {
+   "level": "Pons and midbrain lateral tegmentum",
+   "effects": "Contralateral hemianalgesia of face and body",
+   "side": "contralateral"
+  },
+  {
+   "level": "Thalamus",
+   "effects": "Contralateral loss of all modalities, later central pain",
+   "side": "contralateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Pain and temperature loss on the opposite side to weakness and proprioceptive loss is the hemicord",
+   "The sensory level for pin-prick is one to two segments below the true lesion",
+   "Sacral sparing means an intramedullary lesion: the sacral fibers lie most laterally"
+  ],
+  "syndromes": [
+   "syn-brown-sequard",
+   "syn-central-cord-syringomyelia",
+   "syn-wallenberg-lateral-medullary",
+   "syn-anterior-cord"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    143,
+    145
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    204
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    33,
+    38
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    41,
+    44
+   ]
+  }
+ ],
+ "status": "draft",
+ "somatotopy": "Cord: sacral fibers lateral and superficial, cervical medial (the reverse of the posterior columns). Brainstem: leg lateral, arm medial."
+}

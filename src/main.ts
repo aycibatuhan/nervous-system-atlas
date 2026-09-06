@@ -7,6 +7,7 @@ import { TreePanel } from './ui/TreePanel.ts';
 import { SliceControls } from './ui/SliceControls.ts';
 import { ContentPanel } from './ui/ContentPanel.ts';
 import { Toolbar } from './ui/Toolbar.ts';
+import { PathwayPanel } from './ui/PathwayPanel.ts';
 import { h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
 import { loadRawVolume } from './volume/VolumeSource.ts';
@@ -44,7 +45,10 @@ async function boot(): Promise<void> {
   const left = document.getElementById('left')!; const right = document.getElementById('right')!; const bottom = document.getElementById('bottom')!; const top = document.getElementById('toolbar')!;
   const tree = new TreePanel(app, left);
   new SliceControls(app, bottom);
-  new ContentPanel(app, right);
+  const contentPanel = new ContentPanel(app, right);
+  const pathwayHost = h('div', { class: 'content', hidden: true }); right.append(pathwayHost);
+  const pathwayPanel = new PathwayPanel(app, pathwayHost);
+  const showPathway = (id: string | null) => { const cp = right.querySelector('.content:not([hidden])'); if (id) { pathwayPanel.show(id); pathwayHost.hidden = false; (right.firstElementChild as HTMLElement).hidden = true; } else { pathwayPanel.exit(); pathwayHost.hidden = true; (right.firstElementChild as HTMLElement).hidden = false; } void cp; };
   const help = h('div', { class: 'help', hidden: true }, h('b', {}, 'Shortcuts'), h('br'),
     ...PRESETS.map((p) => h('div', {}, h('kbd', {}, p.key), ' ', p.label)),
     h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' toggle axial / coronal / sagittal slice'),
@@ -89,6 +93,8 @@ async function boot(): Promise<void> {
     onRoute(route, params) {
       if (params.ax !== undefined || params.cor !== undefined || params.sag !== undefined) setSlices(app, { ...(params.ax !== undefined ? { axial: params.ax } : {}), ...(params.cor !== undefined ? { coronal: params.cor } : {}), ...(params.sag !== undefined ? { sagittal: params.sag } : {}) });
       if (params.c) setContrast(app, params.c);
+      if (route.kind === 'pathway') { showPathway(route.id); return; }
+      showPathway(null);
       if (route.kind === 'structure') {
         // route ids may be structure ids or mesh ids
         const meshId = app.registry.byId.has(route.id) ? route.id : (app.manifest.meshes.find((m) => m.structureId === route.id)?.id ?? null);

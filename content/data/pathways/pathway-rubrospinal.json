@@ -1,0 +1,108 @@
+{
+ "kind": "pathway",
+ "id": "pathway-rubrospinal",
+ "name": "Rubrospinal tract",
+ "synonyms": [],
+ "type": "descending",
+ "modality": "flexor facilitation of the upper limb",
+ "summary": "Neurons of the magnocellular red nucleus send axons that cross immediately in the ventral tegmental decussation of the midbrain and descend in the lateral funiculus of the cord just in front of the lateral corticospinal tract, ending on interneurons that excite flexor and inhibit extensor motor neurons, mainly of the arm. Small in humans, it matters clinically in two ways: it is one reason cerebellar and red nucleus lesions affect limb movement, and its preserved flexor drive to the arms after lesions above the red nucleus produces decorticate posturing, while lesions below the red nucleus remove it and leave extensor (decerebrate) posturing.",
+ "origin": {
+  "structures": [
+   "red-nucleus"
+  ],
+  "note": "Magnocellular part of the red nucleus, driven by the motor cortex and the interposed nuclei of the cerebellum."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Red nucleus neuron",
+   "synapse": "spinal interneurons in the intermediate gray of the cervical cord"
+  },
+  {
+   "order": 2,
+   "cellBody": "Interneuron",
+   "synapse": "flexor motor neurons"
+  }
+ ],
+ "decussation": {
+  "level": "Ventral tegmental decussation, midbrain",
+  "structureId": "red-nucleus",
+  "note": "Crosses at once beneath the red nucleus."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "red-nucleus",
+   "meshId": "red-nucleus-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "origin"
+  },
+  {
+   "order": 2,
+   "structureId": "level-midbrain-superior-colliculus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "ventral tegmental decussation"
+  },
+  {
+   "order": 3,
+   "structureId": "level-pons-caudal",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "lateral tegmentum"
+  },
+  {
+   "order": 4,
+   "structureId": "spinal-white-columns",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "lateral funiculus, anterior to the corticospinal tract, cervical segments mainly"
+  }
+ ],
+ "termination": "Interneurons of the cervical cord facilitating flexors of the upper limb.",
+ "meshIds": [
+  "red-nucleus-l",
+  "red-nucleus-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Above the red nucleus (hemispheric mass, thalamus)",
+   "effects": "Decorticate posture: arms flexed, legs extended (rubrospinal flexor drive intact)",
+   "side": "bilateral"
+  },
+  {
+   "level": "Below the red nucleus (pons)",
+   "effects": "Decerebrate posture: arms and legs extended (only vestibulospinal and reticulospinal extensor drive remains)",
+   "side": "bilateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "The posture of a comatose patient tells you whether the red nucleus is still connected to the cord: flexed arms above, extended arms below",
+   "In humans the corticospinal tract has taken over most of what the rubrospinal tract does in cats"
+  ],
+  "syndromes": [
+   "syn-central-transtentorial-herniation",
+   "syn-claude"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    157,
+    157
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    211,
+    214
+   ]
+  }
+ ],
+ "status": "draft"
+}

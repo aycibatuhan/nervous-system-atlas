@@ -1,0 +1,162 @@
+{
+ "kind": "pathway",
+ "id": "pathway-trigeminothalamic",
+ "name": "Trigeminal sensory pathways",
+ "synonyms": [
+  "trigeminal lemniscus",
+  "ventral and dorsal trigeminothalamic tracts"
+ ],
+ "type": "ascending",
+ "modality": "touch, pain, temperature and proprioception of the face",
+ "summary": "Facial sensation uses the same logic as body sensation but with the trigeminal nuclei standing in for the dorsal horn and dorsal column nuclei. Touch fibers end in the principal sensory nucleus in the pons; pain and temperature fibers descend in the spinal trigeminal tract to the spinal nucleus in the medulla and upper cervical cord; jaw proprioception has its cell bodies in the mesencephalic nucleus. Second-order axons cross to form the trigeminal lemniscus (ventral trigeminothalamic tract), which ascends beside the medial lemniscus to the ventral posteromedial thalamus and then to the face area of the postcentral gyrus. The long descending tract is why facial pain loss is ipsilateral in lateral medullary lesions and why it is the face, not the body, that gives the crossed pattern.",
+ "origin": {
+  "structures": [
+   "ganglion-trigeminal"
+  ],
+  "note": "Cell bodies of all modalities except jaw proprioception in the trigeminal ganglion; jaw spindle afferents in the mesencephalic nucleus."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Trigeminal ganglion cell (or mesencephalic nucleus)",
+   "synapse": "principal sensory nucleus (touch) or spinal trigeminal nucleus (pain, temperature)"
+  },
+  {
+   "order": 2,
+   "cellBody": "Trigeminal nuclear neuron",
+   "synapse": "VPM thalamus after crossing in the trigeminal lemniscus"
+  },
+  {
+   "order": 3,
+   "cellBody": "VPM neuron",
+   "synapse": "face area of the postcentral gyrus"
+  }
+ ],
+ "decussation": {
+  "level": "Pons and medulla, at the level of each nucleus",
+  "structureId": "brainstem",
+  "note": "Most second-order fibers cross; a small dorsal trigeminothalamic bundle from the principal nucleus stays ipsilateral."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "ganglion-trigeminal",
+   "meshId": "ophthalmic-nerve-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "first-order neurons"
+  },
+  {
+   "order": 2,
+   "structureId": "cn-05-trigeminal",
+   "meshId": "cn-05-trigeminal-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "root entry at the mid-pons"
+  },
+  {
+   "order": 3,
+   "structureId": "trigeminal-nuclei",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "touch to the principal nucleus"
+  },
+  {
+   "order": 4,
+   "structureId": "spinal-trigeminal-nucleus-tract",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "pain and temperature descend to the spinal nucleus (pars caudalis)"
+  },
+  {
+   "order": 5,
+   "structureId": "medial-lemniscus",
+   "meshId": "tract-medial-lemniscus-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "trigeminal lemniscus ascends medial to the spinothalamic tract"
+  },
+  {
+   "order": 6,
+   "structureId": "thalamus-vpm",
+   "meshId": "thalamus-ventral-posterior-ventrolateral-l",
+   "sideRelativeToOrigin": "contralateral"
+  },
+  {
+   "order": 7,
+   "structureId": "gyrus-postcentral",
+   "meshId": "gyrus-postcentral-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "lower part of the postcentral gyrus"
+  }
+ ],
+ "termination": "Ventral posteromedial nucleus of the thalamus and the face region of the primary somatosensory cortex.",
+ "meshIds": [
+  "cn-05-trigeminal-l",
+  "cn-05-trigeminal-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Nerve, ganglion or root",
+   "effects": "Ipsilateral loss of all modalities in the divisions involved",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Lateral medulla",
+   "effects": "Ipsilateral loss of facial pain and temperature with preserved touch; contralateral body loss",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Upper cervical cord (C2–C3)",
+   "effects": "Onion-skin loss over the posterior face and scalp",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Rostral pons (principal nucleus or lemniscus)",
+   "effects": "Loss of facial touch; above the pons all facial modalities are lost contralaterally with the body",
+   "side": "n/a"
+  },
+  {
+   "level": "Thalamus (VPM) or cortex",
+   "effects": "Contralateral facial numbness together with the body, same side",
+   "side": "contralateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Face and body numb on the same side: thalamus or cortex. Face one side, body the other: lateral brainstem",
+   "Dissociated facial sensory loss (pain lost, touch kept) puts the lesion in the descending trigeminal system",
+   "The corneal reflex tests the trigeminal pathway at its most sensitive point"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-trigeminal-neuralgia",
+   "syn-central-cord-syringomyelia"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    334,
+    335
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    208
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    117,
+    120
+   ]
+  }
+ ],
+ "status": "draft",
+ "somatotopy": "Spinal nucleus: onion-skin arrangement with perioral regions rostral and peripheral face caudal; divisions inverted (V3 dorsal, V1 ventral) in the tract."
+}

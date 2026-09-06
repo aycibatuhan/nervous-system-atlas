@@ -1,0 +1,187 @@
+{
+ "kind": "pathway",
+ "id": "pathway-papez-limbic",
+ "name": "Papez circuit and limbic connections",
+ "synonyms": [],
+ "type": "limbic",
+ "modality": "declarative memory and emotion",
+ "summary": "The classical memory circuit runs from the hippocampus through the fornix to the mammillary bodies, from there by the mammillothalamic tract to the anterior thalamic nuclei, on to the cingulate gyrus, and back through the cingulum bundle and entorhinal cortex to the hippocampus. Every station is a site of clinical amnesia: the hippocampus in Alzheimer disease, anoxia and herpes encephalitis, the fornix in surgery, the mammillary bodies in thiamine deficiency, the anterior and mediodorsal thalamus in stroke, and the cingulate in tumors. The amygdala, orbitofrontal cortex and mediodorsal thalamus form a parallel limbic loop for emotion and social behavior.",
+ "origin": {
+  "structures": [
+   "hippocampus",
+   "gyrus-parahippocampal-uncus"
+  ],
+  "note": "Hippocampal formation (subiculum) with input from the entorhinal cortex, which collects from the association cortices."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Hippocampal (subicular) pyramidal neuron",
+   "synapse": "mammillary body via the fornix"
+  },
+  {
+   "order": 2,
+   "cellBody": "Mammillary body neuron",
+   "synapse": "anterior thalamic nuclei via the mammillothalamic tract"
+  },
+  {
+   "order": 3,
+   "cellBody": "Anterior thalamic neuron",
+   "synapse": "cingulate gyrus via the anterior limb of the internal capsule"
+  },
+  {
+   "order": 4,
+   "cellBody": "Cingulate neuron",
+   "synapse": "entorhinal cortex via the cingulum"
+  },
+  {
+   "order": 5,
+   "cellBody": "Entorhinal neuron",
+   "synapse": "hippocampus via the perforant path"
+  }
+ ],
+ "decussation": null,
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "hippocampus",
+   "meshId": "hippocampus-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "output via the fimbria"
+  },
+  {
+   "order": 2,
+   "structureId": "fornix",
+   "meshId": "fornix",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "crus, body and columns"
+  },
+  {
+   "order": 3,
+   "structureId": "mammillary-body",
+   "meshId": "mammillary-body-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "postcommissural fornix ends here"
+  },
+  {
+   "order": 4,
+   "structureId": "thalamus-anterior-nuclei",
+   "meshId": "thalamus-ventral-anterior-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "mammillothalamic tract"
+  },
+  {
+   "order": 5,
+   "structureId": "gyrus-cingulate",
+   "meshId": "gyrus-cingulate-anterior-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "cingulate cortex"
+  },
+  {
+   "order": 6,
+   "structureId": "gyrus-parahippocampal-uncus",
+   "meshId": "gyrus-parahippocampal-anterior-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "cingulum bundle to the entorhinal cortex"
+  },
+  {
+   "order": 7,
+   "structureId": "hippocampus",
+   "meshId": "hippocampus-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "perforant path closes the loop"
+  }
+ ],
+ "termination": "Hippocampus (closing the loop), with outputs to the prefrontal cortex and the septal nuclei, and from the amygdala to the hypothalamus and brainstem for autonomic and behavioral responses.",
+ "meshIds": [
+  "hippocampus-l",
+  "hippocampus-r",
+  "fornix",
+  "mammillary-body-l",
+  "mammillary-body-r",
+  "mammillothalamic-tract-l",
+  "mammillothalamic-tract-r",
+  "gyrus-cingulate-anterior-l",
+  "gyrus-cingulate-anterior-r",
+  "amygdala-l",
+  "amygdala-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Hippocampus (bilateral)",
+   "effects": "Anterograde amnesia with preserved remote memory and intelligence",
+   "side": "bilateral"
+  },
+  {
+   "level": "Fornix (bilateral, surgery)",
+   "effects": "Anterograde amnesia",
+   "side": "bilateral"
+  },
+  {
+   "level": "Mammillary bodies (thiamine deficiency)",
+   "effects": "Korsakoff amnesia with confabulation",
+   "side": "bilateral"
+  },
+  {
+   "level": "Anterior or mediodorsal thalamus (infarct)",
+   "effects": "Amnesia, apathy, confabulation",
+   "side": "bilateral"
+  },
+  {
+   "level": "Cingulate gyrus (bilateral)",
+   "effects": "Akinetic mutism, apathy",
+   "side": "bilateral"
+  },
+  {
+   "level": "Amygdala (bilateral)",
+   "effects": "Klüver–Bucy syndrome: placidity, hyperorality, hypersexuality",
+   "side": "bilateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Memory loss for new events with intact reasoning is the Papez circuit; the lesion can be anywhere along it",
+   "Thiamine deficiency and third ventricular surgery injure the same circuit at different stations",
+   "Unilateral lesions cause material-specific loss: verbal on the left, visuospatial on the right"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff",
+   "syn-kluver-bucy"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    366
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    232,
+    233
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    54,
+    54
+   ]
+  }
+ ],
+ "status": "draft"
+}

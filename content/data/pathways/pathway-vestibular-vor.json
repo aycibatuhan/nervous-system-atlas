@@ -1,0 +1,175 @@
+{
+ "kind": "pathway",
+ "id": "pathway-vestibular-vor",
+ "name": "Vestibular pathways and vestibulo-ocular reflex",
+ "synonyms": [],
+ "type": "vestibular",
+ "modality": "balance, spatial orientation and gaze stabilization",
+ "summary": "Hair cells of the semicircular canals and otolith organs excite the vestibular ganglion neurons whose axons form the vestibular nerve to the four vestibular nuclei and directly to the flocculonodular lobe. The nuclei send excitatory and inhibitory projections through the MLF to the abducens, trochlear and oculomotor nuclei, producing the vestibulo-ocular reflex that moves the eyes opposite to head rotation with a latency of a few milliseconds, descend as the vestibulospinal tracts for posture, and ascend through the thalamus to the vestibular cortex in the posterior insula and temporoparietal junction. Because the two labyrinths are balanced, a unilateral loss creates a bias interpreted as rotation (vertigo) with nystagmus beating away from the lesion.",
+ "origin": {
+  "structures": [
+   "cn-08-vestibulocochlear"
+  ],
+  "note": "Hair cells of the three semicircular canal cristae and the utricular and saccular maculae; bipolar neurons of Scarpa's ganglion."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Vestibular ganglion neuron",
+   "synapse": "vestibular nuclei (superior, lateral, medial, inferior) and cerebellar flocculonodular lobe"
+  },
+  {
+   "order": 2,
+   "cellBody": "Vestibular nuclear neuron",
+   "synapse": "ocular motor nuclei via the MLF; spinal cord via the vestibulospinal tracts; thalamus (VPL/VPI) for perception; cerebellum"
+  },
+  {
+   "order": 3,
+   "cellBody": "Ocular motor neuron",
+   "synapse": "extraocular muscles"
+  }
+ ],
+ "decussation": {
+  "level": "MLF at the level of the vestibular nuclei",
+  "structureId": "medial-longitudinal-fasciculus",
+  "note": "Each horizontal canal excites the contralateral abducens nucleus and, via its interneurons, the ipsilateral medial rectus."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "cn-08-vestibulocochlear",
+   "meshId": "cn-08-vestibulocochlear-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "vestibular nerve"
+  },
+  {
+   "order": 2,
+   "structureId": "vestibular-nuclei",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "medial and superior nuclei for the VOR, lateral for posture"
+  },
+  {
+   "order": 3,
+   "structureId": "flocculonodular-lobe",
+   "meshId": "cerebellar-lobule-x-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "direct and indirect vestibulocerebellar fibers; VOR calibration"
+  },
+  {
+   "order": 4,
+   "structureId": "medial-longitudinal-fasciculus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "bilateral",
+   "note": "ascending to the ocular motor nuclei"
+  },
+  {
+   "order": 5,
+   "structureId": "abducens-nucleus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "horizontal VOR"
+  },
+  {
+   "order": 6,
+   "structureId": "oculomotor-nucleus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "bilateral",
+   "note": "vertical and torsional VOR"
+  },
+  {
+   "order": 7,
+   "structureId": "spinal-white-columns",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "vestibulospinal tracts"
+  },
+  {
+   "order": 8,
+   "structureId": "insula",
+   "meshId": "insula-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "vestibular cortex in the posterior insula (parieto-insular vestibular cortex) via the thalamus"
+  }
+ ],
+ "termination": "Extraocular motor nuclei (vestibulo-ocular reflex), spinal motor neurons (vestibulospinal reflexes), cerebellum, and the parieto-insular vestibular cortex for the perception of motion and verticality.",
+ "meshIds": [
+  "cn-08-vestibulocochlear-l",
+  "cn-08-vestibulocochlear-r",
+  "cerebellar-lobule-x-l",
+  "cerebellar-lobule-x-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Labyrinth or vestibular nerve (unilateral)",
+   "effects": "Acute vertigo, nausea, unidirectional horizontal-torsional nystagmus beating away from the lesion, positive head impulse toward the lesion, falling toward the lesion",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Bilateral vestibular loss (ototoxicity)",
+   "effects": "Oscillopsia with head movement and imbalance in the dark, no vertigo",
+   "side": "bilateral"
+  },
+  {
+   "level": "Vestibular nuclei (lateral medulla)",
+   "effects": "Central vertigo with direction-changing or vertical nystagmus, skew deviation, normal head impulse, other medullary signs",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "MLF",
+   "effects": "Internuclear ophthalmoplegia with skew and vertical nystagmus",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Cerebellum (flocculus, nodulus)",
+   "effects": "Gaze-evoked, downbeat or positional nystagmus, impaired pursuit and VOR cancellation",
+   "side": "n/a"
+  },
+  {
+   "level": "Vestibular cortex / thalamus",
+   "effects": "Tilt of the perceived vertical, lateropulsion, room-tilt illusion",
+   "side": "contralateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "HINTS beats early MRI for separating vestibular neuritis from stroke: normal head impulse, direction-changing nystagmus or skew means central",
+   "Nystagmus from a peripheral lesion obeys Alexander's law and is suppressed by fixation; central nystagmus is not",
+   "The VOR is fast enough to keep your eyes on this text while you shake your head; a damaged VOR makes the world jump"
+  ],
+  "syndromes": [
+   "syn-vestibular-neuritis",
+   "syn-central-vs-peripheral-vertigo",
+   "syn-bppv",
+   "syn-wallenberg-lateral-medullary",
+   "syn-ino"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    339,
+    341
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    158,
+    159
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    107,
+    115
+   ]
+  }
+ ],
+ "status": "draft"
+}

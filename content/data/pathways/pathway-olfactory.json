@@ -1,0 +1,143 @@
+{
+ "kind": "pathway",
+ "id": "pathway-olfactory",
+ "name": "Olfactory pathway",
+ "synonyms": [],
+ "type": "olfactory",
+ "modality": "smell",
+ "summary": "Olfactory receptor neurons in the nasal epithelium send unmyelinated axons through the cribriform plate to synapse in the glomeruli of the olfactory bulb on mitral and tufted cells, whose axons form the olfactory tract. At the anterior perforated substance the tract divides: the lateral stria ends in the primary olfactory cortex of the uncus (piriform cortex), the amygdala and the entorhinal cortex, and the medial stria in the septal area and, through the anterior commissure, the opposite bulb. Smell is the only sense that reaches the cortex without a thalamic relay and one of the few that is largely ipsilateral, and its cortical stations in the medial temporal lobe explain olfactory auras in temporal lobe epilepsy.",
+ "origin": {
+  "structures": [
+   "cn-01-olfactory"
+  ],
+  "note": "Bipolar olfactory receptor neurons in the olfactory epithelium (regenerate throughout life)."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Olfactory receptor neuron",
+   "synapse": "mitral and tufted cells in the glomeruli of the olfactory bulb"
+  },
+  {
+   "order": 2,
+   "cellBody": "Mitral/tufted cell",
+   "synapse": "piriform cortex, amygdala, entorhinal cortex, olfactory tubercle (via the lateral olfactory stria); anterior olfactory nucleus and contralateral bulb (via the medial stria and anterior commissure)"
+  },
+  {
+   "order": 3,
+   "cellBody": "Piriform cortex neuron",
+   "synapse": "orbitofrontal cortex via the mediodorsal thalamus (secondary olfactory cortex); hypothalamus"
+  }
+ ],
+ "decussation": {
+  "level": "Anterior commissure (partial)",
+  "structureId": "anterior-commissure",
+  "note": "Mostly ipsilateral; some fibers cross to the opposite bulb."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "cn-01-olfactory",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "olfactory filaments through the cribriform plate"
+  },
+  {
+   "order": 2,
+   "structureId": "lobe-frontal",
+   "meshId": "cortex-orbitofrontal-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "olfactory bulb and tract in the olfactory sulcus of the orbital surface"
+  },
+  {
+   "order": 3,
+   "structureId": "gyrus-parahippocampal-uncus",
+   "meshId": "uncus-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "primary olfactory (piriform) cortex of the uncus via the lateral stria"
+  },
+  {
+   "order": 4,
+   "structureId": "amygdala",
+   "meshId": "amygdala-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "corticomedial amygdala"
+  },
+  {
+   "order": 5,
+   "structureId": "thalamus-mediodorsal",
+   "meshId": "thalamus-mediodorsal-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "relay to the orbitofrontal cortex for conscious odour identification"
+  }
+ ],
+ "termination": "Piriform cortex (uncus), amygdala, entorhinal cortex and, via the mediodorsal thalamus, the orbitofrontal cortex; hypothalamus for feeding and reproductive responses.",
+ "meshIds": [
+  "uncus-l",
+  "uncus-r",
+  "amygdala-l",
+  "amygdala-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Olfactory epithelium (rhinitis, viral infection, toxins)",
+   "effects": "Anosmia or hyposmia, often bilateral; the commonest cause",
+   "side": "bilateral"
+  },
+  {
+   "level": "Olfactory filaments (cribriform plate fracture)",
+   "effects": "Post-traumatic anosmia, often permanent",
+   "side": "bilateral"
+  },
+  {
+   "level": "Olfactory bulb or tract (meningioma, frontal tumor)",
+   "effects": "Unilateral anosmia, often unnoticed, with frontal signs",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Uncus / medial temporal lobe (seizures)",
+   "effects": "Olfactory hallucinations (uncinate fits), usually unpleasant",
+   "side": "n/a"
+  },
+  {
+   "level": "Neurodegeneration (Parkinson, Alzheimer)",
+   "effects": "Early hyposmia preceding motor or cognitive symptoms",
+   "side": "bilateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Test smell in every patient with personality change: a subfrontal meningioma announces itself here",
+   "Olfactory hallucinations are almost always temporal lobe seizures, not psychiatric"
+  ],
+  "syndromes": [
+   "syn-anosmia"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    323,
+    324
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    125,
+    125
+   ]
+  }
+ ],
+ "status": "draft"
+}

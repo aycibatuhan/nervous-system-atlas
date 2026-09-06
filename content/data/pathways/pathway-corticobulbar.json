@@ -1,0 +1,153 @@
+{
+ "kind": "pathway",
+ "id": "pathway-corticobulbar",
+ "name": "Corticobulbar tract",
+ "synonyms": [
+  "corticonuclear tract"
+ ],
+ "type": "descending",
+ "modality": "voluntary control of the face, tongue, jaw, palate, pharynx and larynx",
+ "summary": "Corticobulbar fibers arise from the face and mouth areas of the motor cortex, descend with the corticospinal tract through the genu of the internal capsule and the medial crus, and peel off in the brainstem to the motor nuclei of V, VII, IX, X, XI and XII. The projection is bilateral to most nuclei, but mainly contralateral to the lower facial subnucleus and the hypoglossal nucleus (genioglossus), which is why a hemispheric stroke gives lower-face weakness with a spared forehead and a tongue that deviates away from the lesion, while bilateral lesions produce pseudobulbar palsy with a brisk jaw jerk, spastic dysarthria, dysphagia and emotional lability.",
+ "origin": {
+  "structures": [
+   "gyrus-precentral",
+   "cortex-premotor-sma"
+  ],
+  "note": "Lower part of the precentral gyrus (face, tongue, larynx areas) and the frontal operculum."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Pyramidal cell in the lateral motor cortex",
+   "synapse": "on interneurons around and on the cranial nerve motor nuclei"
+  },
+  {
+   "order": 2,
+   "cellBody": "Cranial nerve motor neuron",
+   "synapse": "neuromuscular junction"
+  }
+ ],
+ "decussation": {
+  "level": "At the level of each nucleus",
+  "note": "Bilateral to V, upper VII, IX, X, XI; mainly contralateral to lower VII and XII."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "gyrus-precentral",
+   "meshId": "gyrus-precentral-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "face area above the Sylvian fissure"
+  },
+  {
+   "order": 2,
+   "structureId": "internal-capsule",
+   "meshId": "internal-capsule-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "genu"
+  },
+  {
+   "order": 3,
+   "structureId": "cerebral-peduncle-crus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "medial to the corticospinal fibers"
+  },
+  {
+   "order": 4,
+   "structureId": "trigeminal-nuclei",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "bilateral",
+   "note": "motor nucleus of V"
+  },
+  {
+   "order": 5,
+   "structureId": "facial-motor-nucleus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "bilateral",
+   "note": "upper face bilateral, lower face contralateral"
+  },
+  {
+   "order": 6,
+   "structureId": "nucleus-ambiguus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "bilateral"
+  },
+  {
+   "order": 7,
+   "structureId": "hypoglossal-nucleus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "mainly contralateral to genioglossus"
+  }
+ ],
+ "termination": "Motor nuclei of the trigeminal, facial, glossopharyngeal, vagus, accessory and hypoglossal nerves.",
+ "meshIds": [
+  "tract-corticobulbar-l",
+  "tract-corticobulbar-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Unilateral hemispheric or capsular lesion",
+   "effects": "Contralateral lower facial weakness with spared forehead; tongue deviates away from the lesion; mild dysarthria; no dysphagia",
+   "side": "contralateral"
+  },
+  {
+   "level": "Bilateral lesions (bilateral strokes, ALS, MS)",
+   "effects": "Pseudobulbar palsy: spastic dysarthria, dysphagia, brisk jaw jerk and gag, emotional lability",
+   "side": "bilateral"
+  },
+  {
+   "level": "Pontine lesion below the facial nucleus",
+   "effects": "Not corticobulbar: lower motor neuron facial palsy with contralateral limb weakness",
+   "side": "n/a"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Forehead sparing is the fingerprint of a corticobulbar (upper motor neuron) facial palsy",
+   "Pseudobulbar palsy needs two lesions: look for bilateral capsular or pontine strokes, or motor neuron disease",
+   "Emotional facial movements survive corticobulbar lesions because they use a separate limbic-brainstem route"
+  ],
+  "syndromes": [
+   "syn-facial-palsy-peripheral-vs-central",
+   "syn-bulbar-vs-pseudobulbar",
+   "syn-lacunar-dysarthria-clumsy-hand"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    155,
+    155
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    337,
+    337
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    36,
+    36
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    119,
+    121
+   ]
+  }
+ ],
+ "status": "draft"
+}

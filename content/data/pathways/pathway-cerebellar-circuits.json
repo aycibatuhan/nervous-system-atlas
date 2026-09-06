@@ -1,0 +1,213 @@
+{
+ "kind": "pathway",
+ "id": "pathway-cerebellar-circuits",
+ "name": "Cerebellar afferent and efferent circuits",
+ "synonyms": [],
+ "type": "cerebellar",
+ "modality": "coordination, timing and motor learning",
+ "summary": "Information enters the cerebellum as mossy fibers (from the pontine nuclei carrying cortical plans, the spinal cord carrying proprioception, and the vestibular nuclei) and climbing fibers (from the contralateral inferior olive), both exciting the Purkinje cells through the granule cell layer; Purkinje cells inhibit the deep nuclei, which provide the only output. The lateral hemisphere talks to the dentate nucleus, the superior cerebellar peduncle, the contralateral red nucleus and the ventral lateral thalamus, and so to the motor cortex; the vermis talks to the fastigial nucleus and the vestibular and reticular nuclei. Because the outflow crosses in the midbrain and the corticospinal tract crosses again in the medulla, the cerebellum controls the same side of the body, and the pontine input crosses once, so it works with the opposite cortex.",
+ "origin": {
+  "structures": [
+   "cerebellum",
+   "pontine-nuclei",
+   "inferior-olivary-nucleus",
+   "spinal-cord",
+   "vestibular-nuclei"
+  ],
+  "note": "Afferents from the pontine nuclei (crossed), inferior olive (crossed), spinal cord (uncrossed) and vestibular system; output from the deep nuclei."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Pontine nucleus (mossy fiber) / inferior olive (climbing fiber)",
+   "synapse": "granule cells / Purkinje cells"
+  },
+  {
+   "order": 2,
+   "cellBody": "Granule cell (parallel fibers)",
+   "synapse": "Purkinje cell"
+  },
+  {
+   "order": 3,
+   "cellBody": "Purkinje cell (inhibitory)",
+   "synapse": "deep cerebellar nuclei"
+  },
+  {
+   "order": 4,
+   "cellBody": "Dentate/interposed nucleus",
+   "synapse": "contralateral red nucleus and VL thalamus via the superior cerebellar peduncle"
+  },
+  {
+   "order": 5,
+   "cellBody": "VL thalamic neuron",
+   "synapse": "motor and premotor cortex"
+  }
+ ],
+ "decussation": {
+  "level": "Pontocerebellar fibers (pons), olivocerebellar fibers (medulla), superior cerebellar peduncle decussation (midbrain)",
+  "structureId": "superior-cerebellar-peduncle",
+  "note": "Input from the cortex crosses once (pons); output crosses once (midbrain); the corticospinal tract crosses again, so the cerebellum is ipsilateral to the limb it controls."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "gyrus-precentral",
+   "meshId": "gyrus-precentral-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "cortical origin of corticopontine fibers"
+  },
+  {
+   "order": 2,
+   "structureId": "pontine-nuclei",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "relay; transverse fibers cross"
+  },
+  {
+   "order": 3,
+   "structureId": "middle-cerebellar-peduncle",
+   "meshId": "middle-cerebellar-peduncle",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "mossy fibers to the contralateral hemisphere"
+  },
+  {
+   "order": 4,
+   "structureId": "inferior-olivary-nucleus",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "climbing fibers cross to the contralateral cerebellum"
+  },
+  {
+   "order": 5,
+   "structureId": "inferior-cerebellar-peduncle",
+   "meshId": "inferior-cerebellar-peduncle-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "olivocerebellar and spinocerebellar input"
+  },
+  {
+   "order": 6,
+   "structureId": "cerebellar-hemisphere",
+   "meshId": "cerebellar-hemisphere-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "cerebellar cortex: Purkinje cells"
+  },
+  {
+   "order": 7,
+   "structureId": "dentate-nucleus",
+   "meshId": "dentate-nucleus-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "output nucleus"
+  },
+  {
+   "order": 8,
+   "structureId": "superior-cerebellar-peduncle",
+   "meshId": "superior-cerebellar-peduncle",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "decussates in the caudal midbrain"
+  },
+  {
+   "order": 9,
+   "structureId": "red-nucleus",
+   "meshId": "red-nucleus-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "back on the side of the cortex"
+  },
+  {
+   "order": 10,
+   "structureId": "thalamus-va-vl",
+   "meshId": "thalamus-ventrolateral-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "ventral lateral nucleus"
+  },
+  {
+   "order": 11,
+   "structureId": "gyrus-precentral",
+   "meshId": "gyrus-precentral-l",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "closing the loop to the motor cortex"
+  }
+ ],
+ "termination": "Motor and premotor cortex (via VL thalamus), red nucleus (rubrospinal), vestibular and reticular nuclei (via the fastigial nucleus), and the inferior olive (via the central tegmental tract, completing the Guillain–Mollaret triangle).",
+ "meshIds": [
+  "middle-cerebellar-peduncle",
+  "superior-cerebellar-peduncle",
+  "inferior-cerebellar-peduncle-l",
+  "inferior-cerebellar-peduncle-r",
+  "dentate-nucleus-l",
+  "dentate-nucleus-r",
+  "tract-dentatorubrothalamic-l",
+  "tract-dentatorubrothalamic-r"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Cerebellar hemisphere or dentate nucleus",
+   "effects": "Ipsilateral limb ataxia, dysmetria, intention tremor, dysdiadochokinesia, hypotonia",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Vermis and fastigial nucleus",
+   "effects": "Truncal and gait ataxia, nystagmus, little limb ataxia",
+   "side": "bilateral"
+  },
+  {
+   "level": "Middle cerebellar peduncle or pontine nuclei",
+   "effects": "Ipsilateral limb ataxia (input from the contralateral cortex)",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Superior cerebellar peduncle below its decussation",
+   "effects": "Ipsilateral ataxia",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Superior cerebellar peduncle above its decussation, red nucleus, VL thalamus",
+   "effects": "Contralateral ataxia and Holmes tremor",
+   "side": "contralateral"
+  },
+  {
+   "level": "Inferior olive or central tegmental tract",
+   "effects": "Palatal tremor after olivary hypertrophy",
+   "side": "n/a"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Cerebellar signs are ipsilateral unless the lesion is above the midbrain decussation",
+   "The cerebellum does not initiate movement, so cerebellar lesions never cause paralysis; they make movement inaccurate",
+   "A dentate lesion and a contralateral thalamic lesion give the same limb ataxia; the neighbors tell them apart"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-cerebellar-vermian-midline",
+   "syn-claude",
+   "syn-lacunar-ataxic-hemiparesis"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    240
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    213
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "status": "draft"
+}

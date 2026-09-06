@@ -1,0 +1,116 @@
+{
+ "kind": "pathway",
+ "id": "pathway-vestibulospinal",
+ "name": "Vestibulospinal tracts",
+ "synonyms": [],
+ "type": "descending",
+ "modality": "postural tone and balance",
+ "summary": "Two tracts carry vestibular information to the cord. The lateral vestibulospinal tract from the lateral (Deiters) nucleus descends uncrossed the whole length of the cord in the anterior funiculus and excites extensor (antigravity) motor neurons, driven by the otoliths and by the cerebellar vermis and fastigial nucleus; the medial vestibulospinal tract from the medial nucleus descends in the MLF to the cervical cord, bilaterally, to coordinate head and neck position with eye movements. Together with the reticulospinal tracts they make up the medial (ventromedial) descending system for posture, and their unopposed extensor drive is what produces decerebrate rigidity.",
+ "origin": {
+  "structures": [
+   "vestibular-nuclei"
+  ],
+  "note": "Lateral vestibular nucleus (lateral tract) and medial vestibular nucleus (medial tract), receiving the vestibular nerve and cerebellar input."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Vestibular nuclear neuron",
+   "synapse": "spinal interneurons and directly on extensor motor neurons"
+  },
+  {
+   "order": 2,
+   "cellBody": "Motor neuron",
+   "synapse": "antigravity muscles"
+  }
+ ],
+ "decussation": null,
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "vestibular-nuclei",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "lateral and medial nuclei at the pontomedullary junction"
+  },
+  {
+   "order": 2,
+   "structureId": "level-medulla-olive",
+   "meshId": "brainstem",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "lateral tract in the ventrolateral medulla; medial tract in the MLF"
+  },
+  {
+   "order": 3,
+   "structureId": "spinal-white-columns",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "anterior funiculus; the medial tract ends in the cervical cord, the lateral runs to the sacral cord"
+  },
+  {
+   "order": 4,
+   "structureId": "spinal-grey-anterior-horn",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral",
+   "note": "extensor motor neurons and interneurons"
+  }
+ ],
+ "termination": "Extensor motor neurons of the trunk and limbs (lateral tract) and neck motor neurons (medial tract, bilateral).",
+ "meshIds": [
+  "brainstem"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Vestibular nerve or nuclei (unilateral)",
+   "effects": "Falling and past-pointing toward the side of the lesion, lateropulsion",
+   "side": "ipsilateral"
+  },
+  {
+   "level": "Brainstem transection between the vestibular nuclei and the red nucleus",
+   "effects": "Decerebrate rigidity: unopposed extensor drive",
+   "side": "bilateral"
+  },
+  {
+   "level": "Cerebellar vermis (anterior lobe)",
+   "effects": "Loss of inhibition of the lateral vestibular nucleus: increased extensor tone and gait ataxia",
+   "side": "bilateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "The lateral vestibulospinal tract is the extensor engine of decerebrate posturing",
+   "Patients with acute vestibular lesions fall toward the lesion; the tract has lost its push on that side"
+  ],
+  "syndromes": [
+   "syn-vestibular-neuritis",
+   "syn-central-transtentorial-herniation"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    158,
+    159
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    339,
+    341
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    107,
+    110
+   ]
+  }
+ ],
+ "status": "draft"
+}

@@ -1,0 +1,123 @@
+{
+ "kind": "pathway",
+ "id": "pathway-anterior-spinothalamic",
+ "name": "Anterior spinothalamic tract",
+ "synonyms": [
+  "ventral spinothalamic tract"
+ ],
+ "type": "ascending",
+ "modality": "crude (non-discriminative) touch and pressure",
+ "summary": "Fibers carrying light touch and pressure that do not require fine localization end in the dorsal horn, cross in the anterior white commissure and ascend in the anterior funiculus as the anterior spinothalamic tract, merging with the lateral spinothalamic tract in the brainstem as the spinal lemniscus. Because crude touch travels both here and in the posterior columns, touch is rarely lost completely by a single cord lesion, which is why pain and temperature (single route) and vibration and position (single route) are the discriminating modalities in cord examination.",
+ "origin": {
+  "structures": [
+   "dorsal-root-ganglion",
+   "spinal-gray-posterior-horn"
+  ],
+  "note": "Low-threshold mechanoreceptors; second-order cells in the nucleus proprius."
+ },
+ "neuronChain": [
+  {
+   "order": 1,
+   "cellBody": "Dorsal root ganglion cell",
+   "synapse": "dorsal horn (nucleus proprius)"
+  },
+  {
+   "order": 2,
+   "cellBody": "Dorsal horn neuron",
+   "synapse": "VPL thalamus after crossing"
+  },
+  {
+   "order": 3,
+   "cellBody": "VPL neuron",
+   "synapse": "postcentral gyrus"
+  }
+ ],
+ "decussation": {
+  "level": "Anterior white commissure over several segments",
+  "structureId": "spinal-white-columns",
+  "note": "Crosses less abruptly than the pain fibers."
+ },
+ "waypoints": [
+  {
+   "order": 1,
+   "structureId": "dorsal-root-ganglion",
+   "sideRelativeToOrigin": "ipsilateral"
+  },
+  {
+   "order": 2,
+   "structureId": "spinal-grey-posterior-horn",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "ipsilateral"
+  },
+  {
+   "order": 3,
+   "structureId": "spinal-white-columns",
+   "meshId": "spinal-cord",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "anterior funiculus"
+  },
+  {
+   "order": 4,
+   "structureId": "medial-lemniscus",
+   "meshId": "tract-medial-lemniscus-l",
+   "sideRelativeToOrigin": "contralateral",
+   "note": "joins the spinal lemniscus and runs beside the medial lemniscus in the brainstem"
+  },
+  {
+   "order": 5,
+   "structureId": "thalamus-vpl",
+   "meshId": "thalamus-ventral-posterior-ventrolateral-l",
+   "sideRelativeToOrigin": "contralateral"
+  },
+  {
+   "order": 6,
+   "structureId": "gyrus-postcentral",
+   "meshId": "gyrus-postcentral-l",
+   "sideRelativeToOrigin": "contralateral"
+  }
+ ],
+ "termination": "Ventral posterolateral nucleus of the thalamus and the somatosensory cortex.",
+ "meshIds": [
+  "brainstem"
+ ],
+ "lesionEffectsByLevel": [
+  {
+   "level": "Hemicord lesion",
+   "effects": "Crude touch largely preserved on both sides because of the dual pathway",
+   "side": "n/a"
+  },
+  {
+   "level": "Anterior cord infarct",
+   "effects": "Loss of pain, temperature and crude touch below the level with preserved posterior column function",
+   "side": "bilateral"
+  }
+ ],
+ "clinical": {
+  "pearls": [
+   "Test pain and vibration, not light touch, when localizing a cord lesion: touch has two routes and stays",
+   "The anterior spinothalamic tract is the reason 'sensory loss' after a cord lesion is rarely total"
+  ],
+  "syndromes": [
+   "syn-anterior-cord"
+  ]
+ },
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    145,
+    146
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    36,
+    38
+   ]
+  }
+ ],
+ "status": "draft"
+}
