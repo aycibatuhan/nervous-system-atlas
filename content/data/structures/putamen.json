@@ -1,0 +1,191 @@
+{
+ "kind": "structure",
+ "id": "putamen",
+ "name": "Putamen",
+ "synonyms": [],
+ "system": "basal-ganglia",
+ "meshIds": [
+  "putamen-l",
+  "putamen-r"
+ ],
+ "summary": "The largest and most lateral basal ganglion, a convex shell of gray matter lateral to the globus pallidus (together forming the lentiform nucleus) and separated from the insula by the external capsule, claustrum and extreme capsule. With the caudate it forms the striatum, and its part of the striatum is the motor one: it receives the sensorimotor cortex and dopamine from the substantia nigra and projects to the pallidum through the direct and indirect pathways. It is the first target of Parkinson disease dopamine loss (posterior putamen), the site of the lenticulostriate hypertensive hemorrhage, and a common site of lacunar infarcts and of toxic and metabolic injury.",
+ "anatomy": {
+  "location": "Lateral part of the lentiform nucleus, lateral to the external medullary lamina and globus pallidus, medial to the external capsule, claustrum and insula, and lateral to the internal capsule; connected to the caudate head anteriorly across the anterior limb.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "gyrus-precentral and gyrus-postcentral",
+    "note": "sensorimotor cortex"
+   },
+   {
+    "from": "substantia-nigra (pars compacta)",
+    "via": "nigrostriatal pathway"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "globus-pallidus",
+    "note": "direct and indirect pathways"
+   }
+  ],
+  "pathways": [
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "Motor input stage of the basal ganglia: selects and scales movements through the direct (facilitatory) and indirect (inhibitory) pathways under dopaminergic modulation; motor habit learning.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-lenticulostriate",
+   "artery-mca",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-lenticulostriate"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": 3,
+     "z": 2
+    },
+    "label": "putamen lateral to the globus pallidus and internal capsule"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 25,
+     "y": 3,
+     "z": 2
+    },
+    "label": "lentiform nucleus with the putamen lateral"
+   }
+  ],
+  "normalAppearance": "Gray matter lateral to the darker (iron-rich) globus pallidus on axial T2; loses its normal outline early in MCA stroke (obscured lentiform nucleus sign). Bilateral symmetric putaminal signal change points to toxic, metabolic, mitochondrial or prion disease; a putaminal rim of T2 hyperintensity with atrophy suggests multiple system atrophy.",
+  "pathology": [
+   {
+    "pathology": "Hypertensive putaminal hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense hematoma centered on the putamen, extending medially into the capsule or into the ventricle.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Lacunar infarct",
+    "modality": "MRI",
+    "finding": "Small restriction in the putamen or adjacent capsule.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Multiple system atrophy (parkinsonian type)",
+    "modality": "MRI",
+    "finding": "Putaminal atrophy with a lateral T2-hyperintense rim and hypointensity of the posterior putamen.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Methanol or Wilson disease",
+    "modality": "MRI",
+    "finding": "Bilateral putaminal necrosis or T2 change.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Early MCA infarct",
+    "modality": "CT",
+    "finding": "Obscuration of the lentiform nucleus outline within hours.",
+    "sequence": "CT non-contrast"
+   }
+  ],
+  "sequenceOfChoice": "CT for hemorrhage; DWI, T2 and SWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemiparesis with a large hemorrhage",
+    "side": "contralateral",
+    "mechanism": "Extension into the internal capsule"
+   },
+   {
+    "deficit": "Parkinsonism",
+    "side": "contralateral",
+    "mechanism": "Loss of dopaminergic input to the posterior putamen"
+   },
+   {
+    "deficit": "Dystonia, chorea or hemiballismus",
+    "side": "contralateral",
+    "mechanism": "Striatal lesions disrupting the indirect pathway"
+   },
+   {
+    "deficit": "Bradykinesia and rigidity after bilateral necrosis",
+    "side": "bilateral",
+    "mechanism": "Toxic injury (methanol, CO, Wilson)"
+   }
+  ],
+  "examination": [
+   "Rest tremor, rigidity with cogwheeling, bradykinesia with decrement on finger tapping",
+   "Observe posture and gait, arm swing",
+   "Look for dystonic posturing and chorea",
+   "Blood pressure and cardiovascular risk"
+  ],
+  "syndromes": [
+   "syn-parkinsonism",
+   "syn-hemiballismus",
+   "syn-lacunar-pure-motor"
+  ],
+  "pearls": [
+   "The putamen is the striatum's motor department: its disease produces movement disorders, the caudate's produces behavioral change",
+   "Deep hemorrhage in a hypertensive patient is putaminal until proven otherwise"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    310,
+    311
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    315,
+    318
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    55,
+    56
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    243,
+    250
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    192,
+    195
+   ]
+  }
+ ],
+ "tags": [
+  "basal-ganglia"
+ ],
+ "status": "draft",
+ "latin": "Putamen"
+}

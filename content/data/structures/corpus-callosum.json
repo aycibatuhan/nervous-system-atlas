@@ -1,0 +1,207 @@
+{
+ "kind": "structure",
+ "id": "corpus-callosum",
+ "name": "Corpus callosum",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "corpus-callosum",
+  "tract-corpus-callosum"
+ ],
+ "summary": "The great commissure of about 200 million axons joining homologous areas of the two hemispheres, arching over the lateral ventricles in the floor of the interhemispheric fissure. Its rostrum and genu connect the frontal lobes, the body the motor and parietal regions, and the splenium the occipital and temporal lobes. It lets the hemispheres share information, so its interruption (surgery, infarction, tumor, demyelination) causes disconnection syndromes: alexia without agraphia when the splenium is cut with the left occipital cortex, left-hand apraxia and agraphia when the anterior body is cut. Lesions of the callosum are a hallmark of multiple sclerosis, diffuse axonal injury and butterfly glioma.",
+ "anatomy": {
+  "location": "Midline, above the septum pellucidum and fornix and below the cingulate gyrus, from the rostrum beneath the genu in front to the splenium above the pineal region behind; its fibers spread as the radiations into the centrum semiovale and form the forceps minor and major at either end.",
+  "subdivisions": [
+   {
+    "name": "Rostrum and genu",
+    "note": "prefrontal and orbitofrontal connections (forceps minor)"
+   },
+   {
+    "name": "Body",
+    "note": "premotor, motor, somatosensory and parietal connections"
+   },
+   {
+    "name": "Isthmus",
+    "note": "pre- and postcentral and auditory connections"
+   },
+   {
+    "name": "Splenium",
+    "note": "posterior parietal, temporal and occipital connections (forceps major)"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Interhemispheric transfer of sensory, motor and cognitive information; coordination of bimanual movements; transfer of visual information from the right hemisphere to left-hemisphere language areas.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": 0,
+     "z": 20
+    },
+    "label": "rostrum, genu, body and splenium on the midline"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 0,
+     "z": 20
+    },
+    "label": "body of the callosum forming the roof of the lateral ventricles"
+   }
+  ],
+  "normalAppearance": "The bright white arch on midline sagittal T1; thinning of the body or splenium suggests chronic white matter disease or hydrocephalus, and callosal lesions perpendicular to the ventricles (Dawson's fingers) on sagittal FLAIR are characteriztic of multiple sclerosis.",
+  "pathology": [
+   {
+    "pathology": "Multiple sclerosis",
+    "modality": "MRI",
+    "finding": "Ovoid FLAIR-bright lesions at the callososeptal interface and perpendicular to the callosum on sagittal FLAIR.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Diffuse axonal injury",
+    "modality": "MRI",
+    "finding": "Microhemorrhages in the splenium and body on SWI after rotational trauma; associated with poor outcome.",
+    "sequence": "SWI"
+   },
+   {
+    "pathology": "Butterfly glioblastoma or lymphoma",
+    "modality": "MRI",
+    "finding": "Enhancing mass crossing the callosum into both hemispheres; lymphoma is homogeneously enhancing and restricts diffusion.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Cytotoxic lesion of the splenium",
+    "modality": "MRI",
+    "finding": "Transient oval restriction in the splenium with encephalitis, antiepileptic withdrawal or metabolic disturbance; reversible.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Agenesis of the corpus callosum",
+    "modality": "MRI",
+    "finding": "Absent callosum with parallel lateral ventricles (racing car sign), colpocephaly and radially oriented medial gyri.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal FLAIR and T1; SWI for trauma; DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Alexia without agraphia",
+    "side": "n/a",
+    "mechanism": "Splenium plus left occipital lobe: the seeing right hemisphere cannot reach the left language cortex"
+   },
+   {
+    "deficit": "Left-hand apraxia and agraphia, left tactile anomia",
+    "side": "n/a",
+    "mechanism": "Anterior body: left hemisphere language cannot reach the right motor cortex"
+   },
+   {
+    "deficit": "Alien hand syndrome and intermanual conflict",
+    "side": "n/a",
+    "mechanism": "Anterior callosal disconnection with medial frontal involvement"
+   },
+   {
+    "deficit": "Impaired bimanual coordination",
+    "side": "bilateral",
+    "mechanism": "Loss of interhemispheric motor transfer"
+   },
+   {
+    "deficit": "Often clinically silent",
+    "side": "n/a",
+    "mechanism": "Slowly growing lesions and congenital agenesis are compensated"
+   }
+  ],
+  "examination": [
+   "Name objects placed in the left hand with eyes closed",
+   "Write with the left hand and imitate gestures with each hand",
+   "Read words presented briefly in the left visual field",
+   "Observe for a hand acting on its own"
+  ],
+  "syndromes": [
+   "syn-alexia-without-agraphia",
+   "syn-callosal-disconnection",
+   "syn-multiple-sclerosis-pattern"
+  ],
+  "pearls": [
+   "Disconnection syndromes are easily missed: test each hand and each visual field separately",
+   "A lesion crossing the callosum is a glioblastoma, lymphoma or demyelination, not a metastasis"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    250,
+    251
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    270,
+    271
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    289,
+    290
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    25,
+    26
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    191,
+    191
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 21,
+   "pages": [
+    224,
+    224
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "white-matter"
+ ],
+ "status": "draft",
+ "latin": "Corpus callosum",
+ "subsystem": "lobe-white-matter"
+}

@@ -1,0 +1,228 @@
+{
+ "kind": "structure",
+ "id": "lobe-occipital",
+ "name": "Occipital lobe",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-intracalcarine-l",
+  "cortex-intracalcarine-r",
+  "cortex-supracalcarine-l",
+  "cortex-supracalcarine-r",
+  "cuneus-l",
+  "cuneus-r",
+  "gyrus-lingual-l",
+  "gyrus-lingual-r",
+  "occipital-pole-l",
+  "occipital-pole-r",
+  "cortex-lateral-occipital-superior-l",
+  "cortex-lateral-occipital-superior-r",
+  "cortex-lateral-occipital-inferior-l",
+  "cortex-lateral-occipital-inferior-r",
+  "gyrus-occipital-fusiform-l",
+  "gyrus-occipital-fusiform-r",
+  "cortex-temporo-occipital-fusiform-l",
+  "cortex-temporo-occipital-fusiform-r"
+ ],
+ "summary": "The posterior pole of the hemisphere behind the parieto-occipital sulcus, devoted to vision. The primary visual cortex lines the calcarine sulcus on the medial surface, mapping the contralateral hemifield with the macula at the pole and the periphery anteriorly; the surrounding extrastriate areas on the cuneus, lingual gyrus and lateral occipital cortex analyze color, form and motion and feed the ventral (temporal, 'what') and dorsal (parietal, 'where') streams. It is almost entirely PCA territory with MCA collateral at the pole, which is why PCA infarcts spare the macula.",
+ "anatomy": {
+  "location": "Behind the parieto-occipital sulcus on the medial surface and behind an imaginary line to the preoccipital notch laterally; the calcarine sulcus divides the medial surface into the cuneus above and the lingual gyrus below; lateral occipital gyri and the occipital pole face the convexity.",
+  "subdivisions": [
+   {
+    "name": "Primary visual (striate) cortex, area 17/V1",
+    "note": "banks of the calcarine sulcus; upper bank = lower field, lower bank = upper field"
+   },
+   {
+    "name": "Extrastriate cortex, areas 18 and 19 (V2–V5)",
+    "note": "cuneus, lingual gyrus, lateral occipital cortex: color (V4, lingual/fusiform), motion (V5/MT, lateral occipitotemporal junction)"
+   },
+   {
+    "name": "Occipital pole",
+    "note": "macular representation with dual MCA/PCA supply"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "Conscious vision: detection of light, contrast, orientation, color and motion, and the first stages of object and face recognition and of spatial vision.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-mca",
+   "territory-watershed"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 15,
+     "y": -80,
+     "z": 5
+    },
+    "label": "calcarine cortex and occipital pole"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 8,
+     "y": -75,
+     "z": 5
+    },
+    "label": "calcarine sulcus dividing cuneus from lingual gyrus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -85,
+     "z": 5
+    },
+    "label": "medial occipital cortex on both sides of the calcarine sulcus"
+   }
+  ],
+  "normalAppearance": "The calcarine sulcus is found on sagittal images running forward from the pole to meet the parieto-occipital sulcus in a Y; the striate cortex is slightly thinner and may show the stria of Gennari on high-resolution T1. PCA infarcts respect the calcarine territory and spare the pole.",
+  "pathology": [
+   {
+    "pathology": "PCA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the medial occipital cortex; pole spared (macular sparing).",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Posterior reversible encephalopathy",
+    "modality": "MRI",
+    "finding": "Bilateral parieto-occipital vasogenic edema without restriction in hypertension, eclampsia or immunosuppression.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Occipital lobe epilepsy",
+    "modality": "MRI",
+    "finding": "Cortical dysplasia or gliosis of the occipital cortex with visual auras.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Posterior cortical atrophy",
+    "modality": "MRI",
+    "finding": "Occipitoparietal atrophy with cortical visual dysfunction.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "DWI and FLAIR; perimetry"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Homonymous hemianopia with macular sparing",
+    "side": "contralateral",
+    "mechanism": "Calcarine cortex with collateral supply to the pole"
+   },
+   {
+    "deficit": "Homonymous quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Upper (lower field) or lower (upper field) bank of the calcarine sulcus"
+   },
+   {
+    "deficit": "Cortical blindness with denial (Anton syndrome)",
+    "side": "bilateral",
+    "mechanism": "Bilateral striate cortex"
+   },
+   {
+    "deficit": "Achromatopsia and prosopagnosia",
+    "side": "bilateral",
+    "mechanism": "Ventral occipitotemporal cortex"
+   },
+   {
+    "deficit": "Akinetopsia (motion blindness)",
+    "side": "bilateral",
+    "mechanism": "Area V5/MT"
+   },
+   {
+    "deficit": "Alexia without agraphia",
+    "side": "n/a",
+    "mechanism": "Left occipital cortex plus splenium"
+   },
+   {
+    "deficit": "Elementary visual hallucinations and photopsias",
+    "side": "contralateral",
+    "mechanism": "Occipital seizures or migraine aura"
+   }
+  ],
+  "examination": [
+   "Confrontation fields quadrant by quadrant, testing macular sparing",
+   "Pupils (normal in cortical lesions)",
+   "Reading, color naming, face recognition",
+   "Optokinetic nystagmus (asymmetric in parietal, normal in occipital lesions)"
+  ],
+  "syndromes": [
+   "syn-pca-infarct",
+   "syn-homonymous-hemianopia",
+   "syn-anton",
+   "syn-alexia-without-agraphia"
+  ],
+  "pearls": [
+   "Normal pupils with a visual field defect: the lesion is behind the lateral geniculate",
+   "A patient walking into walls who insists he can see has bilateral occipital infarcts"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    287,
+    288
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    327,
+    329
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    51
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    53
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "occipital"
+ ],
+ "status": "draft",
+ "latin": "Lobus occipitalis",
+ "subsystem": "lobe-occipital"
+}
