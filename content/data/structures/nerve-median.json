@@ -1,0 +1,167 @@
+{
+ "kind": "structure",
+ "id": "nerve-median",
+ "name": "Median nerve",
+ "synonyms": [],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "Formed by lateral and medial roots from the lateral and medial cords (C6–T1), the median nerve runs down the arm with the brachial artery, passes through the cubital fossa medial to the biceps tendon, between the heads of pronator teres and under the flexor digitorum superficialis arch (giving the pure motor anterior interosseous nerve), and enters the hand through the carpal tunnel beneath the flexor retinaculum. It supplies most forearm flexors and pronators, the LOAF muscles of the hand (lateral two lumbricals, opponens, abductor pollicis brevis, flexor pollicis brevis) and sensation to the lateral three and a half digits. Carpal tunnel syndrome is the commonest entrapment neuropathy of all.",
+ "anatomy": {
+  "location": "Axilla and arm on the brachial artery, cubital fossa medial to the artery, forearm between flexor digitorum superficialis and profundus, wrist under the flexor retinaculum with the nine flexor tendons, hand as the recurrent motor branch and digital nerves.",
+  "subdivisions": [
+   {
+    "name": "Forearm branches",
+    "note": "pronator teres, flexor carpi radialis, palmaris longus, flexor digitorum superficialis"
+   },
+   {
+    "name": "Anterior interosseous nerve",
+    "note": "flexor pollicis longus, flexor digitorum profundus to index and middle fingers, pronator quadratus; no sensory fibers"
+   },
+   {
+    "name": "Palmar cutaneous branch",
+    "note": "thenar skin; arises above the wrist, spared in carpal tunnel syndrome"
+   },
+   {
+    "name": "Recurrent motor branch",
+    "note": "abductor pollicis brevis, opponens pollicis, flexor pollicis brevis"
+   },
+   {
+    "name": "Digital nerves",
+    "note": "sensation of thumb, index, middle and lateral half of the ring finger and their dorsal tips"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Pronation, wrist and finger flexion, thumb opposition and abduction, precision grip; sensation of the radial palm and lateral three and a half digits.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord; fibers from C6–T1"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Wrist ultrasound measures the cross-sectional area of the nerve at the carpal tunnel inlet (enlarged in carpal tunnel syndrome); MRI shows flattening under the retinaculum and denervation of the thenar muscles.",
+  "pathology": [
+   {
+    "pathology": "Carpal tunnel syndrome",
+    "modality": "US",
+    "finding": "Enlarged median nerve cross-sectional area (over ~10–12 mm²) at the tunnel inlet with distal flattening; nerve conduction shows slowed sensory and prolonged distal motor latency across the wrist.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Anterior interosseous neuropathy",
+    "modality": "MRI",
+    "finding": "Denervation edema of flexor pollicis longus, pronator quadratus and the radial half of flexor digitorum profundus without sensory change.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "Pronator syndrome",
+    "modality": "MRI",
+    "finding": "Proximal median compression at pronator teres with forearm flexor and thenar involvement and forearm pain.",
+    "sequence": "STIR"
+   }
+  ],
+  "sequenceOfChoice": "Nerve conduction studies and EMG; wrist ultrasound; MRI for proximal lesions"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Nocturnal tingling of the thumb, index and middle fingers relieved by shaking, later thenar wasting (carpal tunnel syndrome)",
+    "side": "ipsilateral",
+    "mechanism": "Compression under the flexor retinaculum; palmar cutaneous branch spared"
+   },
+   {
+    "deficit": "Inability to make an O with thumb and index (pinch sign)",
+    "side": "ipsilateral",
+    "mechanism": "Anterior interosseous nerve: flexor pollicis longus and index profundus"
+   },
+   {
+    "deficit": "Hand of benediction on attempted fist",
+    "side": "ipsilateral",
+    "mechanism": "High median lesion: index and middle fingers cannot flex"
+   },
+   {
+    "deficit": "Ape hand with loss of opposition",
+    "side": "ipsilateral",
+    "mechanism": "Recurrent motor branch or carpal tunnel: thenar paralysis"
+   }
+  ],
+  "examination": [
+   "Thumb abduction against resistance (abductor pollicis brevis) and opposition",
+   "Two-point discrimination on the index finger versus the little finger",
+   "Phalen and Tinel signs at the wrist",
+   "Pinch sign for the anterior interosseous nerve",
+   "Thenar skin sensation (spared in carpal tunnel, lost in proximal lesions)"
+  ],
+  "syndromes": [
+   "syn-carpal-tunnel",
+   "syn-klumpke"
+  ],
+  "pearls": [
+   "Numbness that spares the thenar eminence and involves the fingertips of the first three digits is the carpal tunnel; thenar numbness means the lesion is above the wrist",
+   "Weak thumb abduction with normal pronation and forearm flexion places the lesion at the wrist"
+  ]
+ },
+ "pitfalls": [
+  "C6 or C7 radiculopathy mimics carpal tunnel syndrome: neck pain, a reduced reflex and proximal weakness point to the root"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    113,
+    113
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    120,
+    120
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    141,
+    147
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    148,
+    150
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "upper-limb"
+ ],
+ "status": "draft",
+ "latin": "Nervus medianus",
+ "subsystem": "upper-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

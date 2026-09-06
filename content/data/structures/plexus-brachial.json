@@ -1,0 +1,186 @@
+{
+ "kind": "structure",
+ "id": "plexus-brachial",
+ "name": "Brachial plexus",
+ "synonyms": [],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "The ventral rami of C5–T1 reorganize in the neck and axilla into the brachial plexus so that fibers from each root are redistributed to several nerves: roots form trunks (upper C5–C6, middle C7, lower C8–T1) between the scalene muscles, trunks split into anterior and posterior divisions behind the clavicle, divisions regroup into cords named for their position around the axillary artery (lateral, posterior, medial), and cords give the terminal nerves. The sequence 'roots, trunks, divisions, cords, branches' is the key to localizing plexus injuries: upper trunk lesions (Erb) paralyze the shoulder and elbow flexors, lower trunk lesions (Klumpke) the hand, and cord lesions produce recognizable combinations that no single nerve or root explains.",
+ "anatomy": {
+  "location": "From the intervertebral foramina of C5–T1 through the interscalene triangle (roots and trunks), over the first rib behind the clavicle (divisions), and around the axillary artery in the axilla (cords) to the terminal branches at the lower border of pectoralis minor.",
+  "subdivisions": [
+   {
+    "name": "Roots (C5–T1)",
+    "note": "dorsal scapular nerve (C5), long thoracic nerve (C5–C7), contributions to the phrenic nerve"
+   },
+   {
+    "name": "Trunks",
+    "note": "upper (C5–C6): suprascapular nerve and nerve to subclavius; middle (C7); lower (C8–T1)"
+   },
+   {
+    "name": "Divisions",
+    "note": "anterior divisions → flexors (lateral and medial cords); posterior divisions → extensors (posterior cord)"
+   },
+   {
+    "name": "Lateral cord",
+    "note": "musculocutaneous nerve, lateral root of the median nerve, lateral pectoral nerve"
+   },
+   {
+    "name": "Posterior cord",
+    "note": "axillary and radial nerves, subscapular and thoracodorsal nerves"
+   },
+   {
+    "name": "Medial cord",
+    "note": "ulnar nerve, medial root of the median nerve, medial pectoral, medial cutaneous nerves of arm and forearm"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Motor and sensory supply of the entire upper limb and shoulder girdle, plus sympathetic fibers distributed with the nerves.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord: the plexus roots emerge at C5–T1 below the MNI volume"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. MR neurography of the plexus shows the trunks and cords as bright fascicular structures on STIR; thickening, enhancement or discontinuity indicate injury, inflammation or infiltration.",
+  "pathology": [
+   {
+    "pathology": "Traumatic plexopathy / root avulsion",
+    "modality": "MRI",
+    "finding": "Pseudomeningocele at an avulsed root on cervical MRI or CT myelography; thickened T2-bright trunks in stretch injury.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "Neoplastic versus radiation plexopathy",
+    "modality": "MRI",
+    "finding": "Enhancing mass infiltrating the lower plexus (Pancoast tumor, breast cancer, painful, Horner) versus diffuse thickening without mass after radiation (painless, myokymia on EMG).",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Neuralgic amyotrophy",
+    "modality": "MRI",
+    "finding": "Focal nerve constrictions or T2 hyperintensity in the upper trunk and its branches with denervation edema in shoulder muscles.",
+    "sequence": "STIR"
+   }
+  ],
+  "sequenceOfChoice": "MR neurography (STIR, T1+Gd); EMG/NCS to separate root, plexus and nerve"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Erb–Duchenne palsy: arm hangs adducted, internally rotated, pronated (waiter's tip)",
+    "side": "ipsilateral",
+    "mechanism": "Upper trunk C5–C6: deltoid, biceps, supraspinatus, infraspinatus, brachioradialis"
+   },
+   {
+    "deficit": "Klumpke palsy: claw hand with intrinsic wasting, often with Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Lower trunk C8–T1, T1 sympathetic fibers"
+   },
+   {
+    "deficit": "Weak elbow flexion and forearm pronation with lateral forearm numbness",
+    "side": "ipsilateral",
+    "mechanism": "Lateral cord: musculocutaneous and lateral median fibers"
+   },
+   {
+    "deficit": "Weak wrist and finger extension plus deltoid weakness",
+    "side": "ipsilateral",
+    "mechanism": "Posterior cord: radial and axillary nerves"
+   },
+   {
+    "deficit": "Hand intrinsic and finger flexor weakness with medial arm numbness",
+    "side": "ipsilateral",
+    "mechanism": "Medial cord: ulnar and medial median fibers"
+   }
+  ],
+  "examination": [
+   "Test muscles supplied by different nerves from the same root, and by the same nerve from different roots, to separate root, plexus and nerve",
+   "Sensory map: dermatomal (root) versus peripheral nerve versus plexus (cord) territories",
+   "Reflexes: biceps C5–C6, triceps C7",
+   "Look for Horner syndrome, winging of the scapula and paraspinal wasting (root level)",
+   "Tinel sign over the supraclavicular fossa"
+  ],
+  "syndromes": [
+   "syn-erb-duchenne",
+   "syn-klumpke",
+   "syn-neurogenic-thoracic-outlet",
+   "syn-parsonage-turner"
+  ],
+  "pearls": [
+   "Preserved paraspinal and serratus anterior function with a plexus pattern places the lesion beyond the roots",
+   "A painful, progressive lower plexopathy with Horner syndrome is a Pancoast tumor until proven otherwise; a painless slowly progressive one after breast cancer treatment is radiation"
+  ]
+ },
+ "pitfalls": [
+  "Cervical radiculopathy and brachial plexopathy overlap in symptoms; EMG of paraspinal muscles and sensory nerve action potentials (preserved in root lesions, lost in plexus lesions) separate them"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    81,
+    83
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    111,
+    113
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    412,
+    413
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    134,
+    135
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    141,
+    147
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "upper-limb"
+ ],
+ "status": "draft",
+ "latin": "Plexus brachialis",
+ "subsystem": "upper-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

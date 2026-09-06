@@ -1,0 +1,162 @@
+{
+ "kind": "structure",
+ "id": "roots-c5-t1",
+ "name": "Cervical roots C5–T1",
+ "synonyms": [
+  "brachial plexus roots"
+ ],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "The five roots of the brachial plexus each carry a recognizable package of muscle, reflex and dermatome that lets a cervical radiculopathy be assigned to a level at the bedside: C5 shoulder abduction and the lateral upper arm; C6 elbow flexion, wrist extension and the thumb; C7 elbow extension, wrist flexion and the middle finger; C8 finger flexion and the little finger; T1 finger abduction and the medial arm. Because cervical roots exit above their vertebra, the C6 root is compressed by the C5–C6 disc and the C7 root by the C6–C7 disc, the two commonest levels; C8 exits below C7.",
+ "anatomy": {
+  "location": "Ventral rami leaving the intervertebral foramina between C4–C5 (C5 root) and T1–T2 (T1 root), passing between the scalene muscles into the posterior triangle to form the trunks of the plexus.",
+  "subdivisions": [
+   {
+    "name": "C5",
+    "note": "deltoid, supraspinatus, infraspinatus, biceps (with C6), rhomboids; biceps reflex; lateral upper arm"
+   },
+   {
+    "name": "C6",
+    "note": "biceps, brachioradialis, extensor carpi radialis, pronator teres; biceps and brachioradialis reflexes; thumb and lateral forearm"
+   },
+   {
+    "name": "C7",
+    "note": "triceps, wrist flexors, finger extensors, pronator teres, latissimus; triceps reflex; middle finger"
+   },
+   {
+    "name": "C8",
+    "note": "finger flexors, thumb flexors and extensors, hand intrinsics (with T1); finger flexor reflex; little finger and medial forearm"
+   },
+   {
+    "name": "T1",
+    "note": "hand intrinsics (interossei, abductor pollicis brevis); medial arm; sympathetic fibers to the eye"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Segmental motor, sensory and (T1) sympathetic supply to the upper limb, redistributed by the brachial plexus.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "upper cervical cord above the C5–T1 segments"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Cervical MRI shows foraminal narrowing by disc or osteophyte at the appropriate level; the root affected is the one exiting at that foramen (C5–C6 disc → C6).",
+  "pathology": [
+   {
+    "pathology": "Cervical disc herniation with radiculopathy",
+    "modality": "MRI",
+    "finding": "Posterolateral disc protrusion at C5–C6 or C6–C7 narrowing the foramen and contacting the exiting root.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Cervical spondylosis with foraminal stenosis",
+    "modality": "CT",
+    "finding": "Uncovertebral and facet osteophytes narrowing the foramina, often multilevel.",
+    "sequence": "CT non-contrast"
+   }
+  ],
+  "sequenceOfChoice": "Cervical MRI; EMG including paraspinal muscles to confirm a root level"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Neck pain radiating to the thumb with weak biceps and brachioradialis and a reduced biceps reflex",
+    "side": "ipsilateral",
+    "mechanism": "C6 radiculopathy (C5–C6 disc)"
+   },
+   {
+    "deficit": "Pain to the middle finger with weak triceps and wrist flexion and a reduced triceps reflex",
+    "side": "ipsilateral",
+    "mechanism": "C7 radiculopathy (C6–C7 disc)"
+   },
+   {
+    "deficit": "Shoulder pain with weak deltaoid and external rotation",
+    "side": "ipsilateral",
+    "mechanism": "C5 radiculopathy"
+   },
+   {
+    "deficit": "Little finger numbness with weak finger flexion and intrinsics, Horner syndrome possible",
+    "side": "ipsilateral",
+    "mechanism": "C8–T1 lesion (disc, Pancoast tumor)"
+   }
+  ],
+  "examination": [
+   "Spurling test (neck extension and rotation to the painful side)",
+   "Key muscle for each root and the reflexes",
+   "Dermatomal sensation: thumb (C6), middle finger (C7), little finger (C8)",
+   "Check for myelopathy signs in the legs (cord compression at the same level)"
+  ],
+  "syndromes": [
+   "syn-radiculopathy-cervical",
+   "syn-cervical-spondylotic-myelopathy",
+   "syn-erb-duchenne",
+   "syn-klumpke"
+  ],
+  "pearls": [
+   "A reflex loss plus a dermatome plus a myotome equals a root; a single nerve pattern equals a nerve; a mixture equals the plexus",
+   "Paraspinal muscle denervation on EMG proves the lesion is at the root, proximal to the plexus"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    98,
+    100
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 19,
+   "pages": [
+    510,
+    511
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    141,
+    147
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    130,
+    133
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "upper-limb"
+ ],
+ "status": "draft",
+ "latin": "Radices C5–T1",
+ "subsystem": "upper-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

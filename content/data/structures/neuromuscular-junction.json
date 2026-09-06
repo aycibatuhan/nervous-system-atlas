@@ -1,0 +1,153 @@
+{
+ "kind": "structure",
+ "id": "neuromuscular-junction",
+ "name": "Neuromuscular junction",
+ "synonyms": [
+  "motor end plate"
+ ],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "The chemical synapse between a motor axon terminal and a skeletal muscle fiber. Acetylcholine released in quanta from the terminal crosses the cleft, binds nicotinic receptors on the folded post-synaptic membrane to produce an end-plate potential and a muscle action potential, and is hydrolysed by acetylcholinesterase. Disease of the junction produces fatigable weakness without sensory loss, wasting or reflex change: post-synaptic antibodies in myasthenia gravis, pre-synaptic calcium-channel antibodies in the Lambert–Eaton syndrome, and toxins (botulinum, organophosphates, neuromuscular blockers) at various steps.",
+ "anatomy": {
+  "location": "Motor end plates near the middle of each muscle fiber where the terminal branches of the motor axon end; one junction per fiber, many per motor unit.",
+  "subdivisions": [
+   {
+    "name": "Presynaptic terminal",
+    "note": "voltage-gated calcium channels, acetylcholine vesicles; target of Lambert–Eaton antibodies and botulinum toxin"
+   },
+   {
+    "name": "Synaptic cleft",
+    "note": "acetylcholinesterase in the basal lamina; target of organophosphates and pyridostigmine"
+   },
+   {
+    "name": "Postsynaptic membrane",
+    "note": "junctional folds with nicotinic acetylcholine receptors and MuSK; target of myasthenia gravis antibodies and of non-depolarizing blockers"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Reliable one-to-one transmission of the motor neuron action potential to the muscle fiber with a large safety factor, which disease erodes to produce fatigability.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord; the junction is in the muscles, not imaged"
+   }
+  ],
+  "normalAppearance": "Not imaged directly. The imaging task in junction disease is the thymus: CT of the chest for thymoma or hyperplasia in myasthenia gravis, and a search for small-cell lung cancer in the Lambert–Eaton syndrome.",
+  "pathology": [
+   {
+    "pathology": "Thymoma in myasthenia gravis",
+    "modality": "CT",
+    "finding": "Anterior mediastinal soft-tissue mass; thymic hyperplasia in younger patients.",
+    "sequence": "CT contrast"
+   },
+   {
+    "pathology": "Small-cell lung cancer in Lambert–Eaton syndrome",
+    "modality": "CT",
+    "finding": "Central lung mass with mediastinal nodes; repeat imaging for two years if negative.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "Chest CT; repetitive nerve stimulation and single-fiber EMG; antibody testing"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Fatigable ptosis, diplopia, dysarthria, dysphagia and proximal weakness worse through the day",
+    "side": "bilateral",
+    "mechanism": "Postsynaptic receptor loss (myasthenia gravis)"
+   },
+   {
+    "deficit": "Proximal leg weakness that improves briefly with exercise, dry mouth, absent reflexes that return after exercise",
+    "side": "bilateral",
+    "mechanism": "Presynaptic calcium channel antibodies (Lambert–Eaton)"
+   },
+   {
+    "deficit": "Descending paralysis with dilated pupils and dry mouth",
+    "side": "bilateral",
+    "mechanism": "Botulinum toxin blocking release"
+   },
+   {
+    "deficit": "Weakness with fasciculations, salivation and miosis",
+    "side": "bilateral",
+    "mechanism": "Cholinesterase inhibition (organophosphates)"
+   }
+  ],
+  "examination": [
+   "Sustained up-gaze for ptosis, repeated arm abduction, count to 50 for dysarthria",
+   "Ice pack test on a ptotic lid",
+   "Reflexes: normal in myasthenia, absent then facilitated in Lambert–Eaton",
+   "Pupils: normal in myasthenia, dilated in botulism",
+   "Respiratory function (vital capacity, single breath count)"
+  ],
+  "syndromes": [
+   "syn-myasthenia-gravis",
+   "syn-lambert-eaton"
+  ],
+  "pearls": [
+   "Fluctuating weakness with normal sensation and normal reflexes is the junction",
+   "Never give aminoglycosides or magnesium to a myasthenic without thinking; check vital capacity, not oxygen saturation, in a myasthenic crisis"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    91,
+    93
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    129,
+    129
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 29,
+   "pages": [
+    293,
+    298
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    219,
+    220
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "neuromuscular"
+ ],
+ "status": "draft",
+ "latin": "Junctio neuromuscularis",
+ "subsystem": "neuromuscular",
+ "level": {
+  "region": "peripheral"
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "kind": "structure",
+ "id": "ganglion-pterygopalatine",
+ "name": "Pterygopalatine ganglion",
+ "synonyms": [
+  "sphenopalatine ganglion"
+ ],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "The largest parasympathetic ganglion of the head, suspended from the maxillary nerve in the pterygopalatine fossa behind the maxilla. Preganglionic fibers from the superior salivatory nucleus arrive by the greater petrosal nerve (facial nerve) after joining the sympathetic deep petrosal nerve in the nerve of the pterygoid canal (vidian nerve); postganglionic fibers travel with maxillary nerve branches to the lacrimal gland (via the zygomatic and lacrimal nerves) and to the glands of the nose, palate and pharynx. It is a target for blocks in cluster headache and facial pain, and perineural spread of sinonasal cancer passes through it.",
+ "anatomy": {
+  "location": "Pterygopalatine fossa, a small space behind the maxillary sinus between the pterygoid process and the maxilla, communicating with the orbit (inferior orbital fissure), the nasal cavity (sphenopalatine foramen), the middle cranial fossa (foramen rotundum) and the pterygoid canal.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "facial-motor-nucleus region (superior salivatory nucleus)",
+    "via": "greater petrosal nerve → nerve of the pterygoid canal"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "lacrimal gland",
+    "via": "zygomatic and lacrimal nerves"
+   },
+   {
+    "to": "nasal and palatine glands",
+    "via": "nasopalatine and palatine nerves"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Secretomotor supply to the lacrimal gland and the mucous glands of the nasal cavity, palate, pharynx and paranasal sinuses; vasomotor control of the nasal mucosa.",
+ "bloodSupply": {
+  "arteries": [
+   "regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": 20,
+     "z": -30
+    },
+    "label": "pterygopalatine fossa behind the maxillary sinus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 25,
+     "y": 20,
+     "z": -30
+    },
+    "label": "fossa medial to the pterygoid process"
+   }
+  ],
+  "normalAppearance": "The fossa is a fat-filled slit behind the maxillary sinus on axial CT and T1; loss of its fat signal or enhancement indicates tumor spread (nasopharyngeal, sinonasal, palatal cancers) or inflammation.",
+  "pathology": [
+   {
+    "pathology": "Perineural tumor spread",
+    "modality": "MRI",
+    "finding": "Obliteration of the fat in the pterygopalatine fossa with enhancement extending along the vidian nerve or V2 toward Meckel's cave.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Juvenile angiofibroma",
+    "modality": "MRI",
+    "finding": "Enhancing mass in the fossa widening the sphenopalatine foramen in an adolescent male.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Skull base CT and fat-saturated T1+Gd"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Dry eye and dry nasal mucosa",
+    "side": "ipsilateral",
+    "mechanism": "Loss of parasympathetic secretomotor supply"
+   },
+   {
+    "deficit": "Facial pain with autonomic features responding to ganglion block",
+    "side": "ipsilateral",
+    "mechanism": "Ganglion involvement in cluster headache and facial pain syndromes"
+   },
+   {
+    "deficit": "Maxillary numbness with tumor spread",
+    "side": "ipsilateral",
+    "mechanism": "Maxillary nerve in the fossa"
+   }
+  ],
+  "examination": [
+   "Schirmer test",
+   "Nasal mucosal dryness",
+   "Sensation over the cheek (V2)"
+  ],
+  "syndromes": [
+   "syn-facial-palsy-peripheral-vs-central"
+  ],
+  "pearls": [
+   "Reduced tearing on the side of a facial palsy means the lesion is proximal to the greater petrosal nerve, before the ganglion",
+   "The pterygopalatine fossa is a crossroads for tumor spread from the nose, palate and sinuses toward the skull base"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    398,
+    398
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    337,
+    339
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    124
+   ]
+  }
+ ],
+ "tags": [
+  "ganglion"
+ ],
+ "status": "draft",
+ "latin": "Ganglion pterygopalatinum",
+ "subsystem": "ganglia",
+ "level": {
+  "region": "peripheral"
+ }
+}

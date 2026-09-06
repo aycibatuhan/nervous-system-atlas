@@ -1,0 +1,103 @@
+{
+ "kind": "structure",
+ "id": "nerve-lateral-femoral-cutaneous",
+ "name": "Lateral femoral cutaneous nerve",
+ "synonyms": [],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "A purely sensory branch of the lumbar plexus (L2–L3) that crosses iliacus and passes under or through the inguinal ligament just medial to the anterior superior iliac spine to supply the skin of the anterolateral thigh. Its entrapment at the ligament by obesity, pregnancy, tight belts or prolonged hip flexion produces meralgia paresthetica: burning, tingling and numbness over the lateral thigh with no weakness and no reflex change.",
+ "anatomy": {
+  "location": "Lateral border of psoas, across iliacus deep to its fascia, under the lateral end of the inguinal ligament about 1 cm medial to the anterior superior iliac spine, then over sartorius into the thigh, dividing into anterior and posterior branches.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Sensation of the anterolateral thigh from the greater trochanter to the knee; no motor fibers.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord; the nerve arises from L2–L3"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Ultrasound identifies the nerve at the inguinal ligament for diagnostic block; imaging is otherwise unnecessary unless a pelvic mass is suspected.",
+  "pathology": [
+   {
+    "pathology": "Meralgia paresthetica",
+    "modality": "US",
+    "finding": "Swollen nerve at the inguinal ligament; a diagnostic local anesthetic block relieves the symptoms.",
+    "sequence": "n/a"
+   }
+  ],
+  "sequenceOfChoice": "Clinical diagnosis; nerve block; sensory conduction studies if available"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Burning pain, tingling and numbness over the lateral thigh, worse on standing and walking",
+    "side": "ipsilateral",
+    "mechanism": "Entrapment at the inguinal ligament"
+   },
+   {
+    "deficit": "No weakness, normal knee jerk",
+    "side": "n/a",
+    "mechanism": "Purely sensory nerve"
+   }
+  ],
+  "examination": [
+   "Map the sensory loss on the lateral thigh (does not cross the midline of the thigh or reach the knee joint)",
+   "Confirm normal quadriceps power and knee reflex to exclude L3 root or femoral lesions",
+   "Tenderness or Tinel at the inguinal ligament"
+  ],
+  "syndromes": [
+   "syn-meralgia-paresthetica"
+  ],
+  "pearls": [
+   "A patch of lateral thigh numbness with normal power and reflexes is meralgia paresthetica, not a radiculopathy",
+   "Ask about weight gain, pregnancy, belts and hip surgery"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    157
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    164,
+    164
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "lower-limb"
+ ],
+ "status": "draft",
+ "latin": "Nervus cutaneus femoris lateralis",
+ "subsystem": "lower-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

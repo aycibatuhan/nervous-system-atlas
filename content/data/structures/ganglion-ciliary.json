@@ -1,0 +1,154 @@
+{
+ "kind": "structure",
+ "id": "ganglion-ciliary",
+ "name": "Ciliary ganglion",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [
+  "ciliary-ganglion-l",
+  "ciliary-ganglion-r"
+ ],
+ "summary": "A parasympathetic ganglion the size of a pinhead in the posterior orbit, lateral to the optic nerve and medial to the lateral rectus, where preganglionic fibers from the Edinger–Westphal nucleus travelling in the inferior division of the oculomotor nerve synapse. Its postganglionic fibers reach the eye in the short ciliary nerves to constrict the pupil and contract the ciliary muscle for accommodation; sympathetic and sensory fibers pass through it without synapsing. Damage to the ganglion or its short ciliary nerves (viral infection, orbital surgery, trauma) produces the Adie tonic pupil, a large pupil that reacts poorly to light but slowly and tonically to near, with denervation supersensitivity to dilute pilocarpine.",
+ "anatomy": {
+  "location": "Orbital apex, about 1 cm in front of the superior orbital fissure, between the optic nerve and the lateral rectus, on the lateral side of the ophthalmic artery; connected to the nerve to the inferior oblique (parasympathetic root), the nasociliary nerve (sensory root) and the internal carotid plexus (sympathetic root).",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "oculomotor-nucleus (Edinger–Westphal)",
+    "via": "cn-03-oculomotor, inferior division"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "sphincter pupillae and ciliary muscle",
+    "via": "short ciliary nerves"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Relay of parasympathetic outflow to the sphincter pupillae and ciliary muscle; passage of sympathetic fibers to the dilator and of sensory fibers from the cornea and iris.",
+ "bloodSupply": {
+  "arteries": [
+   "regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 18,
+     "y": 25,
+     "z": -18
+    },
+    "label": "orbital apex lateral to the optic nerve, medial to the lateral rectus"
+   }
+  ],
+  "normalAppearance": "Not identifiable on routine orbital MRI; the region is the orbital apex lateral to the optic nerve. Orbital MRI is used to exclude a mass or inflammation when a tonic pupil accompanies other orbital signs.",
+  "pathology": [
+   {
+    "pathology": "Orbital apex lesion",
+    "modality": "MRI",
+    "finding": "Mass or inflammation at the apex affecting the ganglion and the nerves passing through the superior orbital fissure.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Pharmacological pupil testing (0.1% pilocarpine); orbital MRI only if other signs"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Adie tonic pupil: large, poorly light-reactive pupil with slow tonic constriction to near and slow redilation",
+    "side": "ipsilateral",
+    "mechanism": "Postganglionic parasympathetic denervation with aberrant regeneration of accommodative fibers into the sphincter"
+   },
+   {
+    "deficit": "Loss of accommodation and blurred near vision",
+    "side": "ipsilateral",
+    "mechanism": "Ciliary muscle denervation"
+   },
+   {
+    "deficit": "Absent ankle reflexes with tonic pupils (Holmes–Adie syndrome)",
+    "side": "bilateral",
+    "mechanism": "Associated benign polyneuropathy of unknown cause"
+   }
+  ],
+  "examination": [
+   "Pupil size in light and dark; slit-lamp for segmental (vermiform) iris contraction",
+   "Light reaction versus near reaction (light-near dissociation)",
+   "Constriction to 0.1% pilocarpine (supersensitivity)",
+   "Ankle reflexes"
+  ],
+  "syndromes": [
+   "syn-adie-tonic-pupil",
+   "syn-argyll-robertson"
+  ],
+  "pearls": [
+   "A dilated pupil with light-near dissociation and a normal lid and eye movements is Adie, not a third nerve palsy",
+   "Adie pupils are common, benign and usually in young women; over years they become small"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    329,
+    331
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    397,
+    397
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    408,
+    408
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    414,
+    414
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    83,
+    83
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    87,
+    87
+   ]
+  }
+ ],
+ "tags": [
+  "ganglion"
+ ],
+ "status": "draft",
+ "latin": "Ganglion ciliare",
+ "subsystem": "ganglia",
+ "level": {
+  "region": "peripheral"
+ }
+}

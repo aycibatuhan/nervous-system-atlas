@@ -1,0 +1,144 @@
+{
+ "kind": "structure",
+ "id": "ganglion-geniculate",
+ "name": "Geniculate ganglion",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "The sensory ganglion of the facial nerve, sitting at the sharp bend (genu) of the nerve in the facial canal of the temporal bone where the labyrinthine segment turns into the tympanic segment. It holds the cell bodies for taste from the anterior two-thirds of the tongue (chorda tympani) and for the small cutaneous area of the external ear and gives off the greater petrosal nerve carrying parasympathetic fibers to the lacrimal gland. Varicella zoster reactivation here produces the Ramsay Hunt syndrome (facial palsy with vesicles in the ear canal), and the ganglion region is where Bell palsy enhances on MRI.",
+ "anatomy": {
+  "location": "Anterior genu of the facial nerve in the petrous temporal bone, above the cochlea and medial to the middle ear, at the junction of the labyrinthine and tympanic segments; the hiatus of the greater petrosal nerve opens onto the floor of the middle cranial fossa just in front of it.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "nucleus-solitarius",
+    "via": "nervus intermedius",
+    "note": "taste"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "First-order neurons for taste from the anterior tongue and palate and for somatic sensation of part of the ear; branch point of the parasympathetic supply to the lacrimal and nasal glands.",
+ "bloodSupply": {
+  "arteries": [
+   "regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 32,
+     "y": -25,
+     "z": -30
+    },
+    "label": "genu of the facial nerve in the petrous bone above the cochlea"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 32,
+     "y": -25,
+     "z": -30
+    },
+    "label": "geniculate ganglion region medial to the middle ear"
+   }
+  ],
+  "normalAppearance": "High-resolution temporal bone CT shows the geniculate fossa; MRI shows mild normal enhancement of the ganglion, with asymmetric intense enhancement of the labyrinthine segment and ganglion in Bell palsy and Ramsay Hunt syndrome, and expansion in facial schwannoma or hemangioma.",
+  "pathology": [
+   {
+    "pathology": "Bell palsy",
+    "modality": "MRI",
+    "finding": "Enhancement of the labyrinthine segment, geniculate ganglion and proximal tympanic segment without a mass.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Ramsay Hunt syndrome",
+    "modality": "MRI",
+    "finding": "Similar enhancement, sometimes involving the eighth nerve and labyrinth; vesicles in the ear canal clinically.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Facial nerve schwannoma or geniculate hemangioma",
+    "modality": "CT",
+    "finding": "Expansion of the geniculate fossa with bone erosion (hemangioma) or a smooth enlargement (schwannoma).",
+    "sequence": "CT non-contrast"
+   }
+  ],
+  "sequenceOfChoice": "Temporal bone CT and MRI with contrast"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Lower motor neuron facial palsy with loss of taste, reduced tearing and hyperacusis",
+    "side": "ipsilateral",
+    "mechanism": "Lesion at the ganglion: all facial nerve functions involved"
+   },
+   {
+    "deficit": "Vesicles in the ear canal and severe ear pain with facial palsy",
+    "side": "ipsilateral",
+    "mechanism": "Zoster of the geniculate ganglion (Ramsay Hunt)"
+   },
+   {
+    "deficit": "Crocodile tears after recovery",
+    "side": "ipsilateral",
+    "mechanism": "Aberrant regeneration of salivary fibers into the greater petrosal nerve"
+   }
+  ],
+  "examination": [
+   "Facial movement including the forehead",
+   "Taste on the anterior tongue",
+   "Schirmer test",
+   "Inspect the ear canal and pinna for vesicles; hearing and balance (eighth nerve involvement in Ramsay Hunt)"
+  ],
+  "syndromes": [
+   "syn-facial-palsy-peripheral-vs-central",
+   "syn-ramsay-hunt"
+  ],
+  "pearls": [
+   "A facial palsy with a dry eye and loss of taste localizes to the geniculate ganglion or the canal proximal to the chorda",
+   "Look in the ear of every facial palsy: Ramsay Hunt needs antivirals and has a worse prognosis than Bell palsy"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    337,
+    339
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    352,
+    352
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    124
+   ]
+  }
+ ],
+ "tags": [
+  "ganglion"
+ ],
+ "status": "draft",
+ "latin": "Ganglion geniculi",
+ "subsystem": "ganglia",
+ "level": {
+  "region": "peripheral"
+ }
+}

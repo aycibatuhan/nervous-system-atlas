@@ -1,0 +1,180 @@
+{
+ "kind": "structure",
+ "id": "autonomic-cranial-parasympathetic",
+ "name": "Cranial parasympathetic outflow",
+ "synonyms": [],
+ "system": "autonomic",
+ "meshIds": [],
+ "summary": "The craniosacral parasympathetic system leaves the brainstem in four cranial nerves, each with its own brainstem nucleus and peripheral ganglion: the oculomotor nerve (Edinger–Westphal nucleus → ciliary ganglion) constricts the pupil and accommodates; the facial nerve (superior salivatory nucleus → pterygopalatine and submandibular ganglia) drives lacrimation, nasal secretion and submandibular and sublingual salivation; the glossopharyngeal nerve (inferior salivatory nucleus → otic ganglion) drives the parotid; and the vagus (dorsal motor nucleus and nucleus ambiguus → ganglia in the walls of the viscera) slows the heart, constricts the bronchi and drives gut secretion and motility down to the splenic flexure. Long preganglionic and short postganglionic fibers, acetylcholine at both synapses and muscarinic receptors at the target are its pharmacological fingerprints.",
+ "anatomy": {
+  "location": "Nuclei in the midbrain (Edinger–Westphal), pons (superior salivatory) and medulla (inferior salivatory, dorsal vagal, ambiguus); preganglionic fibers in CN III, VII, IX and X; ganglia in the orbit (ciliary), pterygopalatine fossa, submandibular region, below the foramen ovale (otic) and within the thoracic and abdominal viscera.",
+  "subdivisions": [
+   {
+    "name": "Oculomotor (III)",
+    "note": "Edinger–Westphal → ciliary ganglion → sphincter pupillae, ciliary muscle"
+   },
+   {
+    "name": "Facial (VII)",
+    "note": "superior salivatory nucleus → greater petrosal nerve → pterygopalatine ganglion (lacrimal, nasal, palatine glands); chorda tympani → submandibular ganglion (submandibular, sublingual glands)"
+   },
+   {
+    "name": "Glossopharyngeal (IX)",
+    "note": "inferior salivatory nucleus → tympanic plexus, lesser petrosal nerve → otic ganglion → parotid via the auriculotemporal nerve"
+   },
+   {
+    "name": "Vagus (X)",
+    "note": "dorsal motor nucleus and ambiguus → cardiac, pulmonary, esophageal and abdominal plexuses → intramural ganglia"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-pupillary-light-reflex"
+  ]
+ },
+ "function": "Rest-and-digest control of the head and thoracoabdominal viscera: pupillary constriction and accommodation, secretion of tears and saliva, cardiac slowing, bronchoconstriction, gut secretion and peristalsis.",
+ "bloodSupply": {
+  "arteries": [
+   "regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -24,
+     "z": -6
+    },
+    "label": "Edinger–Westphal region of the midbrain"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 5,
+     "y": -46,
+     "z": -44
+    },
+    "label": "dorsal vagal nucleus region in the medulla"
+   }
+  ],
+  "normalAppearance": "Nuclei and ganglia are not resolved on routine MRI; the relevant imaging is of the nerves along their courses (orbit for the ciliary ganglion region, temporal bone for the facial nerve, skull base for IX and X).",
+  "pathology": [
+   {
+    "pathology": "Compressive third nerve palsy with pupil involvement",
+    "modality": "CTA",
+    "finding": "PComm aneurysm compressing the superficial parasympathetic fibers.",
+    "sequence": "CT contrast"
+   },
+   {
+    "pathology": "Facial nerve lesion proximal to the geniculate ganglion",
+    "modality": "MRI",
+    "finding": "Enhancement of the labyrinthine segment with reduced tearing and salivation on that side.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Imaging of the relevant cranial nerve; pharmacological pupil tests; Schirmer test"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Dilated, unreactive pupil with loss of accommodation",
+    "side": "ipsilateral",
+    "mechanism": "Preganglionic fibers in CN III or the ciliary ganglion"
+   },
+   {
+    "deficit": "Dry eye and reduced nasal secretion",
+    "side": "ipsilateral",
+    "mechanism": "Greater petrosal nerve or pterygopalatine ganglion (facial nerve lesion at or above the geniculate ganglion)"
+   },
+   {
+    "deficit": "Reduced salivation",
+    "side": "ipsilateral",
+    "mechanism": "Chorda tympani (VII) or otic ganglion pathway (IX)"
+   },
+   {
+    "deficit": "Tachycardia, gastroparesis",
+    "side": "n/a",
+    "mechanism": "Vagal denervation (diabetes, surgery)"
+   }
+  ],
+  "examination": [
+   "Pupil reaction to light and near; dilute pilocarpine test for denervation supersensitivity",
+   "Schirmer test for tearing",
+   "Heart rate variability with breathing and Valsalva",
+   "Salivary flow"
+  ],
+  "syndromes": [
+   "syn-cn3-palsy",
+   "syn-adie-tonic-pupil",
+   "syn-facial-palsy-peripheral-vs-central"
+  ],
+  "pearls": [
+   "The pupillary fibers travel on the surface of the third nerve: compression hits them first, ischemia spares them",
+   "A facial palsy with dry eye and loss of taste is proximal (geniculate or above); with normal tearing it is distal"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    387,
+    392
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    396,
+    399
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    329,
+    331
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    337,
+    345
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    83,
+    85
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    124
+   ]
+  }
+ ],
+ "tags": [
+  "autonomic"
+ ],
+ "status": "draft",
+ "latin": "Pars parasympathica: nervi craniales III, VII, IX, X",
+ "level": {
+  "region": "peripheral"
+ }
+}

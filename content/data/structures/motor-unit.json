@@ -1,0 +1,162 @@
+{
+ "kind": "structure",
+ "id": "motor-unit",
+ "name": "Motor unit and skeletal muscle",
+ "synonyms": [
+  "lower motor neuron unit"
+ ],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "A motor unit is one anterior horn cell, its axon and all the muscle fibers it innervates, from a few fibers in the extraocular muscles to over a thousand in gastrocnemius. Force is graded by recruiting units in order of size and by increasing their firing rate. This is the framework of electromyography: neurogenic disease loses units and enlarges the survivors by collateral reinnervation (large, long, polyphasic potentials with reduced recruitment), while myopathic disease loses fibers within units (small, short, polyphasic potentials with early recruitment). Clinically, the motor unit is the lower motor neuron, and its failure produces weakness with wasting, fasciculations, hypotonia and lost reflexes.",
+ "anatomy": {
+  "location": "Anterior horn cell in the spinal gray matter or brainstem motor nucleus, axon in the ventral root and peripheral nerve, terminal branches at the end plates of muscle fibers scattered through the muscle.",
+  "subdivisions": [
+   {
+    "name": "Type I (slow, oxidative) units",
+    "note": "small, fatigue-resistant, recruited first; postural muscles"
+   },
+   {
+    "name": "Type II (fast) units",
+    "note": "large, glycolytic, recruited later for power"
+   },
+   {
+    "name": "Muscle spindle and Golgi tendon organ",
+    "note": "sensory feedback that sets tone and the stretch reflex; gamma motor neurons adjust spindle sensitivity"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Generation of muscle force under voluntary and reflex control; the size principle of recruitment; maintenance of tone through the stretch reflex loop.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord: anterior horn cells are the motor unit's origin"
+   }
+  ],
+  "normalAppearance": "Muscle MRI (T1 for fatty replacement, STIR for edema) shows the pattern of involvement: selective muscles in dystrophies and myopathies, diffuse edema in myositis, denervation edema in the territory of a nerve or root; muscle ultrasound shows increased echogenicity.",
+  "pathology": [
+   {
+    "pathology": "Inflammatory myopathy",
+    "modality": "MRI",
+    "finding": "Symmetric STIR-bright edema of proximal muscles, later fatty atrophy; guides biopsy site.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "Muscular dystrophy",
+    "modality": "MRI",
+    "finding": "Selective fatty replacement of specific muscles (e.g. adductors and hamstrings) on T1 with characteriztic patterns per gene.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Denervation",
+    "modality": "MRI",
+    "finding": "STIR edema of muscles sharing a nerve or root, then atrophy.",
+    "sequence": "STIR"
+   }
+  ],
+  "sequenceOfChoice": "Muscle MRI; EMG; creatine kinase; biopsy"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weakness with wasting, fasciculations, hypotonia and reduced reflexes",
+    "side": "n/a",
+    "mechanism": "Loss of motor units (neurogenic)"
+   },
+   {
+    "deficit": "Proximal weakness with preserved reflexes and no fasciculations",
+    "side": "bilateral",
+    "mechanism": "Loss of fibers within units (myopathic)"
+   },
+   {
+    "deficit": "Cramps and fasciculations",
+    "side": "n/a",
+    "mechanism": "Irritable motor units in neurogenic disease"
+   }
+  ],
+  "examination": [
+   "Distribution: proximal (myopathy) versus distal (neuropathy) versus mixed asymmetric (motor neuron disease)",
+   "Look for fasciculations at rest in several muscles",
+   "Reflexes relative to weakness",
+   "Gower sign and neck flexion power",
+   "Creatine kinase"
+  ],
+  "syndromes": [
+   "syn-myopathy-pattern",
+   "syn-als-pattern",
+   "syn-poliomyelitis"
+  ],
+  "pearls": [
+   "Proximal symmetric weakness with normal sensation and preserved reflexes is muscle; distal weakness with sensory loss is nerve; asymmetric weakness with fasciculations and brisk reflexes is motor neuron disease",
+   "EMG asks one question: are the units big and few (nerve) or small and many (muscle)?"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    93,
+    93
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    101,
+    102
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    129,
+    129
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    136,
+    140
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 30,
+   "pages": [
+    299,
+    305
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "neuromuscular"
+ ],
+ "status": "draft",
+ "subsystem": "neuromuscular",
+ "level": {
+  "region": "peripheral"
+ }
+}

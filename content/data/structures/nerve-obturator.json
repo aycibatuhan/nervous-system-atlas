@@ -1,0 +1,108 @@
+{
+ "kind": "structure",
+ "id": "nerve-obturator",
+ "name": "Obturator nerve",
+ "synonyms": [],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "Formed from the anterior divisions of L2–L4 inside psoas, the obturator nerve runs along the pelvic side wall and leaves through the obturator canal to supply the adductor muscles of the thigh (adductor longus, brevis and magnus, gracilis, obturator externus) and a patch of skin on the medial thigh. It is injured by pelvic tumors, obstetric trauma and pelvic surgery, and its lesion produces a wide-based, circumducting gait with weak adduction and medial thigh numbness; hip joint pain referred to the knee travels in its articular branches.",
+ "anatomy": {
+  "location": "Medial border of psoas, along the lateral pelvic wall below the pelvic brim, through the obturator foramen in the obturator canal, dividing into anterior and posterior branches around adductor brevis.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Hip adduction and part of medial rotation; sensation of the medial thigh; sensory fibers to the hip and knee joints.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord; the obturator nerve arises from L2–L4"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Pelvic MRI shows a mass or endometriosis along the pelvic side wall or at the obturator canal, with adductor denervation.",
+  "pathology": [
+   {
+    "pathology": "Obturator neuropathy",
+    "modality": "MRI",
+    "finding": "STIR-bright adductor muscles with a pelvic side wall mass or post-surgical change.",
+    "sequence": "STIR"
+   }
+  ],
+  "sequenceOfChoice": "EMG of the adductors; pelvic MRI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weak hip adduction with a circumducting gait",
+    "side": "ipsilateral",
+    "mechanism": "Adductor paralysis"
+   },
+   {
+    "deficit": "Numbness of the medial thigh",
+    "side": "ipsilateral",
+    "mechanism": "Cutaneous branch"
+   },
+   {
+    "deficit": "Referred knee pain from hip disease",
+    "side": "ipsilateral",
+    "mechanism": "Articular branches to hip and knee"
+   }
+  ],
+  "examination": [
+   "Hip adduction against resistance in the supine position",
+   "Sensation over the medial thigh",
+   "Combine with femoral testing: both weak means root or plexus"
+  ],
+  "syndromes": [
+   "syn-lumbosacral-plexopathy"
+  ],
+  "pearls": [
+   "Isolated adductor weakness after pelvic surgery is the obturator nerve",
+   "Knee pain with a normal knee and a limited hip is obturator-referred hip disease"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    112,
+    112
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    164
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "lower-limb"
+ ],
+ "status": "draft",
+ "latin": "Nervus obturatorius",
+ "subsystem": "lower-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

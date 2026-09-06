@@ -1,0 +1,125 @@
+{
+ "kind": "structure",
+ "id": "nerve-axillary",
+ "name": "Axillary nerve",
+ "synonyms": [
+  "circumflex nerve"
+ ],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "A terminal branch of the posterior cord (C5–C6) that leaves the axilla backward through the quadrangular space with the posterior circumflex humeral artery, winds around the surgical neck of the humerus and supplies deltoid and teres minor and a patch of skin over the deltoid (the regimental badge area). Its fixed course at the surgical neck makes it the nerve most often injured by anterior shoulder dislocation and proximal humeral fracture; the result is a flat shoulder that cannot abduct and numbness over the lateral shoulder.",
+ "anatomy": {
+  "location": "From the posterior cord behind the axillary artery, through the quadrangular space (bounded by teres minor, teres major, long head of triceps and the humerus), around the surgical neck of the humerus deep to deltoid.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Motor supply to deltoid (abduction from 15 to 90 degrees) and teres minor (external rotation); sensory supply to the skin over the lower deltoid (superior lateral cutaneous nerve of the arm).",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord; fibers from C5–C6"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Shoulder MRI shows deltoid and teres minor denervation edema and the nerve in the quadrangular space; radiographs show the dislocation or fracture responsible.",
+  "pathology": [
+   {
+    "pathology": "Axillary neuropathy after shoulder dislocation",
+    "modality": "MRI",
+    "finding": "STIR-bright deltoid and teres minor with a thickened nerve at the surgical neck.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "Quadrilateral space syndrome",
+    "modality": "MRI",
+    "finding": "Isolated teres minor atrophy from compression in the quadrangular space, often in throwing athletes.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Radiograph, shoulder MRI; EMG of deltoid and teres minor"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weak shoulder abduction with a flattened deltoid contour",
+    "side": "ipsilateral",
+    "mechanism": "Deltoid paralysis"
+   },
+   {
+    "deficit": "Numbness over the lateral upper arm (regimental badge)",
+    "side": "ipsilateral",
+    "mechanism": "Superior lateral cutaneous nerve of the arm"
+   },
+   {
+    "deficit": "Weak external rotation",
+    "side": "ipsilateral",
+    "mechanism": "Teres minor"
+   }
+  ],
+  "examination": [
+   "Test abduction against resistance and palpate deltoid contraction before reducing a dislocation",
+   "Sensation over the deltoid",
+   "Compare with a C5 radiculopathy (biceps and rhomboids also involved) and upper trunk lesion (supraspinatus, biceps)"
+  ],
+  "syndromes": [
+   "syn-axillary-neuropathy",
+   "syn-erb-duchenne"
+  ],
+  "pearls": [
+   "Document deltoid function and lateral shoulder sensation before and after reducing every shoulder dislocation",
+   "Deltoid weakness with intact biceps and supraspinatus is the axillary nerve, not C5"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    113,
+    113
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    141,
+    147
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    150,
+    150
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "upper-limb"
+ ],
+ "status": "draft",
+ "latin": "Nervus axillaris",
+ "subsystem": "upper-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "kind": "structure",
+ "id": "autonomic-sacral-parasympathetic",
+ "name": "Sacral parasympathetic outflow and bladder control",
+ "synonyms": [],
+ "system": "autonomic",
+ "meshIds": [],
+ "summary": "The sacral parasympathetic neurons in the S2–S4 segments of the conus send preganglionic fibers through the pelvic splanchnic nerves to ganglia in the walls of the bladder, rectum and genitals, driving detrusor contraction, rectal emptying and erection. Micturition is a reflex coordinated in the pontine micturition center and released or withheld by the frontal lobes: bladder filling is sensed, the pons switches detrusor contraction on and the sphincter (pudendal, Onuf's nucleus) off, and the cortex decides when. Lesions above the sacral cord give a spastic, small, reflexic bladder with urgency; lesions of the conus, cauda equina or pelvic nerves give a flaccid, large, areflexic bladder with retention and overflow.",
+ "anatomy": {
+  "location": "Sacral parasympathetic nucleus in the intermediolateral region of S2–S4 in the conus medullaris; pelvic splanchnic nerves joining the inferior hypogastric plexus; intramural ganglia in the pelvic viscera; pudendal nerve (S2–S4, somatic) to the external sphincters and perineum.",
+  "subdivisions": [
+   {
+    "name": "Sacral parasympathetic nucleus (S2–S4)",
+    "note": "detrusor contraction, rectal contraction, erection"
+   },
+   {
+    "name": "Onuf's nucleus (S2–S4, somatic)",
+    "note": "external urethral and anal sphincters via the pudendal nerve; spared in ALS, lost in multiple system atrophy"
+   },
+   {
+    "name": "Sympathetic (T11–L2) via the hypogastric nerves",
+    "note": "bladder neck closure, ejaculation, relaxation of the detrusor"
+   },
+   {
+    "name": "Pontine micturition center",
+    "note": "coordinates detrusor and sphincter (detrusor-sphincter synergy)"
+   },
+   {
+    "name": "Medial frontal cortex",
+    "note": "voluntary initiation and inhibition of voiding"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Emptying of the bladder and rectum, penile and clitoral erection, and, with the sympathetic and somatic components, continence, ejaculation and coordinated voiding.",
+ "bloodSupply": {
+  "arteries": [
+   "regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cord (the sacral outflow lies in the conus at L1–L2, below the MNI volume)"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -34,
+     "z": -36
+    },
+    "label": "pontine tegmentum: the micturition center lies dorsally near the locus coeruleus"
+   }
+  ],
+  "normalAppearance": "Not imaged directly; the sagittal lumbar MRI shows the conus and cauda equina, and cranial MRI shows the medial frontal and pontine regions. Urodynamics classify the bladder dysfunction.",
+  "pathology": [
+   {
+    "pathology": "Conus or cauda equina lesion",
+    "modality": "MRI",
+    "finding": "Mass, disc or infarct at the conus or compressing the sacral roots with an areflexic bladder.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Suprasacral cord lesion",
+    "modality": "MRI",
+    "finding": "Cervical or thoracic myelopathy with detrusor overactivity and detrusor-sphincter dyssynergia.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Normal pressure hydrocephalus / bilateral medial frontal lesions",
+    "modality": "MRI",
+    "finding": "Ventriculomegaly or medial frontal lesions with urge incontinence and gait apraxia.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Spine MRI; post-void residual; urodynamics"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Urgency, frequency and reflex incontinence with a small bladder",
+    "side": "bilateral",
+    "mechanism": "Suprasacral cord lesion: detrusor overactivity without inhibition, often with dyssynergia"
+   },
+   {
+    "deficit": "Retention with overflow, a large painless bladder, absent anal reflex",
+    "side": "bilateral",
+    "mechanism": "Conus, cauda equina or pelvic nerve lesion: detrusor areflexia"
+   },
+   {
+    "deficit": "Incontinence without concern (frontal)",
+    "side": "bilateral",
+    "mechanism": "Loss of cortical inhibition and awareness"
+   },
+   {
+    "deficit": "Erectile failure and constipation",
+    "side": "bilateral",
+    "mechanism": "Sacral parasympathetic loss"
+   }
+  ],
+  "examination": [
+   "Perianal sensation, anal tone, anal and bulbocavernosus reflexes",
+   "Post-void residual by bladder scan",
+   "Lower limb reflexes and plantars to place the lesion above or below the conus",
+   "Gait and cognition if a frontal cause is suspected"
+  ],
+  "syndromes": [
+   "syn-conus-vs-cauda-equina",
+   "syn-complete-transection-spinal-shock",
+   "syn-normal-pressure-hydrocephalus"
+  ],
+  "pearls": [
+   "Retention means the lesion is at or below the conus (or spinal shock); urgency means it is above",
+   "Preserved sphincter control in a patient with wasted hands and brisk legs favors ALS; early incontinence favors multiple system atrophy"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    403,
+    404
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    44,
+    44
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    45,
+    45
+   ]
+  }
+ ],
+ "tags": [
+  "autonomic"
+ ],
+ "status": "draft",
+ "latin": "Nervi splanchnici pelvici (S2–S4)",
+ "level": {
+  "region": "peripheral"
+ }
+}

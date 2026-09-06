@@ -1,0 +1,109 @@
+{
+ "kind": "structure",
+ "id": "nerve-long-thoracic",
+ "name": "Long thoracic nerve",
+ "synonyms": [],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "Arising directly from the C5, C6 and C7 roots before they form the trunks, the long thoracic nerve descends behind the plexus and over the outer surface of serratus anterior, which it supplies segmentally. Its long superficial course makes it vulnerable to stretch (carrying heavy loads, sports), to surgery in the axilla and to neuralgic amyotrophy; the resulting serratus palsy produces winging of the scapula when the arm is pushed forward. Because it leaves the roots proximal to the trunks, its involvement points to a root or very proximal lesion rather than a trunk or cord lesion.",
+ "anatomy": {
+  "location": "From the posterior aspect of the C5–C7 roots in the neck, through or behind the middle scalene, down the lateral chest wall on serratus anterior to its lower digitations.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Motor supply to serratus anterior: protraction and upward rotation of the scapula and stabilization of the scapula against the chest wall during arm elevation.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum from regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervical cord; the nerve arises from C5–C7 roots"
+   }
+  ],
+  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. MR neurography shows the nerve along the chest wall; denervation edema of serratus anterior on STIR is the indirect sign.",
+  "pathology": [
+   {
+    "pathology": "Long thoracic neuropathy",
+    "modality": "MRI",
+    "finding": "T2 hyperintensity and later fatty atrophy of serratus anterior with a normal or thickened nerve.",
+    "sequence": "STIR"
+   }
+  ],
+  "sequenceOfChoice": "EMG of serratus anterior; MR neurography"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Medial winging of the scapula on forward pushing against a wall",
+    "side": "ipsilateral",
+    "mechanism": "Serratus anterior paralysis"
+   },
+   {
+    "deficit": "Difficulty elevating the arm above 90 degrees",
+    "side": "ipsilateral",
+    "mechanism": "Loss of scapular upward rotation"
+   },
+   {
+    "deficit": "No sensory loss",
+    "side": "n/a",
+    "mechanism": "Purely motor nerve"
+   }
+  ],
+  "examination": [
+   "Push-against-the-wall test for winging",
+   "Compare with lateral winging of trapezius palsy (accessory nerve), which appears on abduction",
+   "Check the rest of the plexus and the C5–C7 roots"
+  ],
+  "syndromes": [
+   "syn-parsonage-turner",
+   "syn-erb-duchenne"
+  ],
+  "pearls": [
+   "Winging worse on pushing forward is serratus (long thoracic); worse on abduction is trapezius (accessory nerve)",
+   "Serratus involvement with shoulder pain a few weeks earlier is neuralgic amyotrophy"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    113,
+    113
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    141,
+    147
+   ]
+  }
+ ],
+ "tags": [
+  "pns",
+  "upper-limb"
+ ],
+ "status": "draft",
+ "latin": "Nervus thoracicus longus",
+ "subsystem": "upper-limb",
+ "level": {
+  "region": "peripheral"
+ }
+}

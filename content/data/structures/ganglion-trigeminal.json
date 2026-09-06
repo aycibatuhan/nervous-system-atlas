@@ -1,0 +1,148 @@
+{
+ "kind": "structure",
+ "id": "ganglion-trigeminal",
+ "name": "Trigeminal ganglion",
+ "synonyms": [
+  "Gasserian ganglion",
+  "semilunar ganglion"
+ ],
+ "system": "cranial-nerves",
+ "meshIds": [
+  "ophthalmic-nerve-l",
+  "ophthalmic-nerve-r"
+ ],
+ "summary": "The sensory ganglion of the trigeminal nerve, a crescent of pseudounipolar cell bodies lying in Meckel's cave, a dural pocket on the petrous apex lateral to the cavernous sinus. Its peripheral processes form the ophthalmic, maxillary and mandibular divisions and its central processes form the sensory root entering the pons; the motor root passes beneath it without synapsing. Herpes zoster and herpes simplex lie latent here (zoster ophthalmicus when V1 reactivates), tumors of Meckel's cave (schwannoma, meningioma, perineural spread) produce facial numbness, and the ganglion is the target of radiofrequency and balloon procedures for trigeminal neuralgia.",
+ "anatomy": {
+  "location": "Meckel's cave, an evagination of dura and arachnoid on the anterior surface of the petrous temporal bone near its apex, lateral to the cavernous sinus and internal carotid artery, above the foramen ovale, with the temporal lobe above.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "trigeminal-nuclei",
+    "via": "sensory root"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Contains the first-order neurons for touch, pain, temperature and proprioception (except jaw proprioception) of the face, cornea, oral and nasal cavities, teeth, dura and scalp.",
+ "bloodSupply": {
+  "arteries": [
+   "regional arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 20,
+     "y": -10,
+     "z": -25
+    },
+    "label": "Meckel's cave on the petrous apex lateral to the cavernous sinus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 20,
+     "y": -10,
+     "z": -25
+    },
+    "label": "ganglion in its CSF-filled dural cave above the foramen ovale"
+   }
+  ],
+  "normalAppearance": "Meckel's cave is a CSF-bright pocket on thin coronal and axial T2 with the ganglion as a crescent of tissue; it enhances mildly. Asymmetric enhancement, a mass, or enlargement suggests schwannoma, meningioma, perineural tumor spread or inflammation.",
+  "pathology": [
+   {
+    "pathology": "Trigeminal schwannoma",
+    "modality": "MRI",
+    "finding": "Dumbbell enhancing mass expanding Meckel's cave and extending into the posterior fossa or the cavernous sinus.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Perineural spread of head and neck cancer",
+    "modality": "MRI",
+    "finding": "Thickened enhancing V2 or V3 leading back to an enhancing, enlarged Meckel's cave with loss of the CSF signal.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Herpes zoster ophthalmicus",
+    "modality": "MRI",
+    "finding": "Enhancement of the ganglion and V1 with a V1 dermatomal rash; usually a clinical diagnosis.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Thin T2 and T1+Gd through the skull base with fat saturation"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Numbness of the whole side of the face with loss of the corneal reflex",
+    "side": "ipsilateral",
+    "mechanism": "Ganglion or sensory root: all three divisions"
+   },
+   {
+    "deficit": "Facial pain in one division with a vesicular rash",
+    "side": "ipsilateral",
+    "mechanism": "Zoster reactivation in the ganglion"
+   },
+   {
+    "deficit": "Neurotrophic keratitis",
+    "side": "ipsilateral",
+    "mechanism": "Corneal anesthesia after ganglion or V1 damage"
+   }
+  ],
+  "examination": [
+   "Light touch and pin-prick in V1, V2 and V3 and the corneal reflex",
+   "Look for vesicles on the nose tip (Hutchinson sign predicting eye involvement in zoster)",
+   "Masseter and pterygoid power (motor root usually spared in ganglion lesions)"
+  ],
+  "syndromes": [
+   "syn-trigeminal-neuralgia",
+   "syn-cavernous-sinus"
+  ],
+  "pearls": [
+   "Facial numbness across all three divisions with a preserved jaw is the ganglion or sensory root, not the brainstem",
+   "Zoster on the tip of the nose means the nasociliary branch of V1 is involved: refer to ophthalmology"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    335
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    351,
+    351
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    117,
+    120
+   ]
+  }
+ ],
+ "tags": [
+  "ganglion"
+ ],
+ "status": "draft",
+ "latin": "Ganglion trigeminale (Gasseri)",
+ "subsystem": "ganglia",
+ "level": {
+  "region": "peripheral"
+ }
+}
