@@ -108,5 +108,72 @@
   "landmark_mean_mm": true,
   "landmark_max_mm": false
  },
- "notes": "12-dof affine from BodyParts3D concept centroids to MNI atlas mesh centroids (deep nuclei, ventricles, brainstem, cerebellum, chiasm, pituitary, pineal). Edit 'matrix' to override; rerun with --manual."
+ "notes": "12-dof affine from BodyParts3D concept centroids to MNI atlas mesh centroids (deep nuclei, ventricles, brainstem, cerebellum, chiasm, pituitary, pineal). Edit 'matrix' to override; rerun with --manual.",
+ "post_correction": {
+  "enabled": true,
+  "model": "monotone-cubic-ramp",
+  "axis": "y",
+  "space": "BodyParts3D source millimetres (+x subject left, +y posterior, +z up)",
+  "applies_to": [
+   "artery-vertebral-l",
+   "artery-vertebral-r"
+  ],
+  "knots": [
+   [
+    1393.2,
+    0.0
+   ],
+   [
+    1405.9,
+    3.01
+   ],
+   [
+    1418.4,
+    8.15
+   ],
+   [
+    1431.4,
+    12.56
+   ],
+   [
+    1455.8,
+    16.78
+   ],
+   [
+    1471.8,
+    17.52
+   ],
+   [
+    1481.4,
+    14.95
+   ],
+   [
+    1502.5,
+    0.0
+   ]
+  ],
+  "knot_labels": [
+   "C6 vertebra",
+   "C5 vertebra",
+   "C4 vertebra",
+   "C3 vertebra",
+   "axis (C2)",
+   "atlas (C1)",
+   "foramen magnum",
+   "vertebrobasilar junction"
+  ],
+  "anchor_zero_mm": 1502.5,
+  "full_dy_mm": 17.52,
+  "fit": {
+   "samples": 17,
+   "rms_mm": 0.84,
+   "mean_abs_mm": 0.68,
+   "max_abs_mm": 1.94
+  },
+  "references": [
+   "aseg-brainstem",
+   "zanatomy-vertebral-artery"
+  ],
+  "notes": "Anteroposterior ramp added to MNI y after the affine, as a function of BodyParts3D source height: a Fritsch-Carlson monotone cubic Hermite through the knots, clamped outside them, so it is exactly 0.0 at and above the vertebrobasilar junction (the basilar therefore does not move and the vertebral arteries stay welded to it) and exactly the bottom knot's value below C6.  Applied only to the bp3d_selection.yaml entries flagged `postCorrection: true`. The correction is restricted to the posterior circulation.  The BodyParts3D cervical spine is 18 mm posterior at C3, 12 mm at C4, 8 mm at C5 and 2 mm at C7 against the corrected Z-Anatomy vertebrae, and the BodyParts3D vertebral artery sits 10-12 mm behind its own vertebral bodies -- the same as Z-Anatomy's -- so the artery is right in its own body and the whole neck is what the affine misplaces.  The BodyParts3D internal carotid, however, is drawn about 18 mm anterior of its own cervical spine (31-38 mm in front of the vertebral artery at C3-C4, against 14-19 mm in Z-Anatomy and in life), so the two errors cancel and the registered carotid already lands within 2-8 mm of the corrected Z-Anatomy carotid, slightly anterior.  Giving it the same ramp would push it 15-20 mm too far forward, out of the carotid sheath.  Hence the per-entry flag rather than a rule over every sub-cranial BodyParts3D vertex."
+ }
 }

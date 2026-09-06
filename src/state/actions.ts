@@ -97,7 +97,7 @@ export function soloGroup(app: App, meshIds: Iterable<string>): void {
 export function selectStructure(app: App, id: string | null, opts: { moveSlices?: boolean; ensureVisible?: boolean; fit?: boolean } = {}): void {
   const s = app.store.get();
   if (id && opts.ensureVisible !== false && !meshShouldBeVisible(app, id)) setStructureVisible(app, id, true);
-  app.store.set({ selectedId: id });
+  app.store.set({ selectedId: id, selectedStructureId: null });
   if (id) {
     void app.registry.ensureFull(id).then((mesh) => {
       if (!mesh) return;

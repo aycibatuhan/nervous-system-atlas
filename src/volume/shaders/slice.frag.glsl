@@ -20,6 +20,11 @@ uniform sampler3D uCord;          // spinal cord MRI on its own grid (PAM50 curv
 uniform mat4  uCordWorldToVoxel;
 uniform vec3  uCordDims;
 uniform float uHasCord;
+uniform usampler3D uSpine;        // PAM50 spinal levels on the cord grid, R8UI (1 = C1 ... 30 = S5)
+uniform sampler2D  uSpineLut;     // 256x1 RGBA8, level id -> ramp colour + tint strength
+uniform float uHasSpine;
+uniform uint  uSpineSel;          // bit i set: level i belongs to the selected cord segment
+uniform uint  uSpineHover;        // bit i set: level i is under the cursor
 uniform float uWindow, uLevel;    // 0..255
 uniform float uOverlayOpacity;
 uniform float uShowAllLabels;
@@ -30,6 +35,16 @@ uniform ivec3 uAxisU, uAxisV;
 in vec3 vWorldPos;
 
 bool inside(ivec3 p) { return all(greaterThanEqual(p, ivec3(0))) && all(lessThan(p, ivec3(uDims))); }
+
+// ---- spinal levels (only ever sampled below the MNI box, where the cord volume takes over)
+bool spineBit(uint mask, uint lid) { return lid != 0u && lid < 32u && ((mask >> lid) & 1u) != 0u; }
+
+/** 1 if the level at this cord voxel is part of the selected cord segment, else 0 (the outline membership). */
+uint spineSelAt(ivec3 p) {
+  if (uHasSpine < 0.5) return 0u;
+  if (any(lessThan(p, ivec3(0))) || any(greaterThanEqual(p, ivec3(uCordDims)))) return 0u;
+  return spineBit(uSpineSel, texelFetch(uSpine, p, 0).r) ? 1u : 0u;
+}
 
 uint flagsAt(ivec3 p) {
   if (!inside(p) || uHasLabels < 0.5) return 0u;
@@ -59,6 +74,8 @@ void main() {
   bool inMni = all(greaterThanEqual(vox, vec3(-0.5))) && all(lessThanEqual(vox, uDims - 0.5));
 
   float raw;
+  bool inCord = false;
+  ivec3 cp = ivec3(0);
   if (inMni) {
     raw = texture(uIntensity, (vox + 0.5) / uDims).r * 255.0;
   } else if (uHasCord > 0.5) {
@@ -67,6 +84,8 @@ void main() {
     if (any(lessThan(cv, vec3(-0.5))) || any(greaterThan(cv, uCordDims - 0.5))) discard;
     raw = texture(uCord, (cv + 0.5) / uCordDims).r * 255.0;
     if (raw <= 0.0) discard;   // outside the reformatted tube: keep the plane transparent, not black
+    cp = ivec3(floor(cv + 0.5));
+    inCord = true;
   } else {
     discard;
   }
@@ -101,6 +120,18 @@ void main() {
       bool sel = ((me | nb0 | nb1 | nb2 | nb3) & 1u) != 0u;
       color = sel ? uOutlineColor : vec3(1.0, 0.55, 0.15);
     }
+  }
+  // spinal levels: the cord grid's own label volume, on the same overlay opacity / "all labels" controls as
+  // the anatomical labels, with the selected cord segment outlined exactly the way a selected structure is
+  if (inCord && uHasSpine > 0.5) {
+    uint lid = texelFetch(uSpine, cp, 0).r;
+    vec4 sc = texelFetch(uSpineLut, ivec2(int(lid), 0), 0);
+    uint me = spineSelAt(cp);
+    float on = max(uShowAllLabels, float(me != 0u || spineBit(uSpineHover, lid)));
+    color = mix(color, sc.rgb, sc.a * uOverlayOpacity * on);
+    uint nb0 = spineSelAt(cp + uAxisU), nb1 = spineSelAt(cp - uAxisU), nb2 = spineSelAt(cp + uAxisV), nb3 = spineSelAt(cp - uAxisV);
+    bool edge = (me != nb0) || (me != nb1) || (me != nb2) || (me != nb3);
+    if (edge && (me | nb0 | nb1 | nb2 | nb3) != 0u) color = uOutlineColor;
   }
   if (uLinearOut > 0.5) {
     // the composer's OutputPass will apply ACES + sRGB; pre-invert both so the MRI window/level is reproduced exactly

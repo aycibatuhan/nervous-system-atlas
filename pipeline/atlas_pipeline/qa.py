@@ -83,15 +83,26 @@ def main(argv=None) -> None:
             if r["after_max_abs_mm"] > 1.0:
                 problems.append(f"zanatomy sub-cranial midline residual {r['after_max_abs_mm']} mm exceeds the 1 mm gate")
             # anteroposterior ramp: the cord must be continuous with the MNI brainstem at the cervicomedullary
-            # junction, and nothing at or above the upper (pontomesencephalic) anchor may move at all.
+            # junction, every named brainstem level must sit on the MNI centreline, and nothing at or above
+            # the upper anchor -- the mesencephalic-diencephalic junction, above the top of the Z-Anatomy
+            # midbrain, so the whole midbrain is inside the corrected band -- may move at all.
             ap = rep.get("ap")
             if ap:
                 cmj = ap.get("cmj_residual", {}).get("max_abs_mm")
                 above = ap.get("above_anchor_max_abs_dy_mm")
+                anchor = ap.get("anchor_zero_m")
                 moved = ap.get("meshes_moved", [])
+                levels = ap.get("per_level", [])
+                gate = ap.get("per_level_gate_mm", 2.0)
+                bad = [L for L in levels if abs(L["after_mm"]) > gate]
                 midline["ap"] = {"cmj_residual_max_abs_mm": cmj, "above_anchor_max_abs_dy_mm": above,
-                                 "full_dy_mm": ap["knots"][0][1], "meshes_moved": len(moved),
-                                 "max_mesh_dy_mm": max((m["max_dy_mm"] for m in moved), default=0.0)}
+                                 "anchor_zero_m": anchor, "full_dy_mm": ap["knots"][0][1],
+                                 "midbrain_min_dy_mm": min((v for _, v in ap["knots"]), default=0.0),
+                                 "per_level_gate_mm": gate, "per_level_n": len(levels),
+                                 "per_level_max_abs_mm": ap.get("per_level_max_abs_mm"),
+                                 "meshes_moved": len(moved),
+                                 "max_mesh_abs_dy_mm": max((m.get("max_abs_dy_mm", m["max_dy_mm"])
+                                                            for m in moved), default=0.0)}
                 if cmj is None:
                     warnings.append("zanatomy AP ramp: no measured profile in the midline report")
                 elif cmj > 1.5:
@@ -100,8 +111,71 @@ def main(argv=None) -> None:
                 if above is None or above > 0.0:
                     problems.append(f"zanatomy AP ramp displaces geometry at or above the upper anchor "
                                     f"({above} mm; must be exactly 0)")
+                if anchor is None or anchor < 1.6175:
+                    problems.append(f"zanatomy AP upper anchor {anchor} m is not above the top of the "
+                                    f"Z-Anatomy Midbrain object (1.6175 m): the midbrain would be left "
+                                    f"outside the corrected band")
+                if not levels:
+                    warnings.append("zanatomy AP ramp: no per-level residual table in the midline report")
+                for L in bad:
+                    problems.append(f"zanatomy AP residual at the {L['level']} {L['after_mm']} mm exceeds "
+                                    f"the {gate} mm per-level gate")
         else:
             warnings.append("no work/zanatomy/midline/report.json (run atlas-zanatomy-midline)")
+    # BodyParts3D sub-cranial anteroposterior correction (atlas-register --post-correction).  Three things
+    # are gated: that the split of the two vertebral arteries has not regressed to the shared whole-tree
+    # union, that the ramp removed the sub-cranial offset, and the hard rule that it moved no cranial mesh.
+    bp3d_ap = {}
+    bt = CONFIG / "bp3d_to_mni.json"
+    prep = WORK / "bp3d" / "post_correction.json"
+    bp_meshes = {m["id"]: m for m in meshes if m["source"] == "bodyparts3d"}
+    vl, vr = bp_meshes.get("artery-vertebral-l"), bp_meshes.get("artery-vertebral-r")
+    if vl and vr:
+        bl, br = np.array(vl["bbox"], float), np.array(vr["bbox"], float)
+        bp3d_ap["vertebral_x_mm"] = {"left": [bl[0][0], bl[1][0]], "right": [br[0][0], br[1][0]]}
+        if bl[1][0] > 2.0 or br[0][0] < -2.0:
+            problems.append("artery-vertebral-l/r cross the midline: the concepts have gone back to the "
+                            "shared `partof` whole-tree union (bp3d_selection.yaml needs `tree: isa`)")
+        if np.allclose(bl, br, atol=1e-6):
+            problems.append("artery-vertebral-l and artery-vertebral-r have identical bounds (duplicate mesh)")
+    if any(m.get("postCorrectionMaxMm") for m in bp_meshes.values()):
+        pc = json.loads(bt.read_text()).get("post_correction")
+        if pc is None:
+            problems.append("bp3d_to_mni.json: meshes carry a post-correction but the config has no "
+                            "post_correction block (run atlas-register --post-correction)")
+        elif pc.get("stale"):
+            problems.append("bp3d_to_mni.json: post_correction is stale (run atlas-register --post-correction)")
+    if prep.exists():
+        rep = json.loads(prep.read_text())
+        sub, gate = rep["subcranial"], rep["cranial_gate"]
+        vbj, vbj0 = rep["vertebrobasilar_junction"]["after"], rep["vertebrobasilar_junction"]["before"]
+        bp3d_ap |= {"before_max_abs_mm": sub["before_max_abs_mm"], "after_max_abs_mm": sub["after_max_abs_mm"],
+                    "fit_rms_mm": rep["fit"]["rms_mm"], "meshes_moved": gate["meshes_moved"],
+                    "worst_cranial_dy_mm": gate["worst_cranial"]["max_dy_mm"],
+                    "vbj_to_basilar_mm": vbj.get("junction_to_basilar_mm"),
+                    "vbj_to_mra_mm": vbj.get("distance_to_mra_mm")}
+        if sub["after_max_abs_mm"] > 3.0:
+            problems.append(f"bp3d sub-cranial AP residual {sub['after_max_abs_mm']} mm exceeds the 3 mm gate")
+        if gate["worst_cranial"]["max_dy_mm"] > 1.0:
+            problems.append(f"bp3d post-correction moves the cranial mesh {gate['worst_cranial']['id']} by "
+                            f"{gate['worst_cranial']['max_dy_mm']} mm; no mesh entirely above MNI z = -70 may "
+                            f"move by more than 1 mm")
+        d = vbj.get("junction_to_basilar_mm")
+        if d is not None and d > 6.0:
+            problems.append(f"vertebrobasilar junction {d} mm from the basilar's inferior end (gate 6 mm): "
+                            f"the vertebral arteries have come off the basilar")
+        d = vbj.get("distance_to_mra_mm"); d0 = vbj0.get("distance_to_mra_mm")
+        if d is not None:
+            # 8 mm is the landmark maximum of the BodyParts3D affine itself; the correction is pinned to
+            # zero at the junction so that the basilar does not move, and cannot improve on it there.
+            if d > 8.0:
+                problems.append(f"vertebrobasilar junction {d} mm from the MRA atlas midline vessel "
+                                f"(gate 8 mm, the affine's own landmark maximum)")
+            if d0 is not None and d > d0 + 0.5:
+                problems.append(f"the post-correction moved the vertebrobasilar junction away from the MRA "
+                                f"atlas ({d0} -> {d} mm)")
+    elif any(m.get("postCorrectionMaxMm") for m in bp_meshes.values()):
+        warnings.append("no work/bp3d/post_correction.json (run atlas-register --post-correction)")
     reg = {}
     for name in ("bp3d_to_mni.json", "zanatomy_to_mni.json"):
         p = CONFIG / name
@@ -111,7 +185,8 @@ def main(argv=None) -> None:
             if mean is not None and mean > 4.0:
                 problems.append(f"{name}: landmark mean residual {mean} mm exceeds the 4 mm gate")
     report = {"meshes": len(meshes), "bytes": total_bytes, "triangles": total_tris, "registration": reg,
-              "zanatomyMidline": midline, "cordVolume": cord, "ncSources": nc, "problems": problems, "warnings": warnings}
+              "zanatomyMidline": midline, "bp3dSubcranialAp": bp3d_ap, "cordVolume": cord, "ncSources": nc,
+              "problems": problems, "warnings": warnings}
     (WORK.parent / "qa").mkdir(exist_ok=True)
     (WORK.parent / "qa" / "report.json").write_text(json.dumps(report, indent=1))
     print(f"QA: {len(meshes)} meshes, {total_bytes/1e6:.1f} MB, {total_tris/1e6:.2f} M triangles; registration {json.dumps(reg)}")
@@ -120,8 +195,17 @@ def main(argv=None) -> None:
         a = midline.get("ap")
         if a:
             print(f"  zanatomy AP ramp: +{a['full_dy_mm']} mm at the CMJ, residual there {a['cmj_residual_max_abs_mm']} mm "
-                  f"(gate 1.5); {a['above_anchor_max_abs_dy_mm']} mm above the anchor (gate 0); "
-                  f"{a['meshes_moved']} meshes move, max {a['max_mesh_dy_mm']} mm")
+                  f"(gate 1.5); {a['midbrain_min_dy_mm']} mm at the intercollicular knot; "
+                  f"{a['above_anchor_max_abs_dy_mm']} mm at/above the anchor {a['anchor_zero_m']} m (gate 0); "
+                  f"per-level max {a['per_level_max_abs_mm']} mm over {a['per_level_n']} levels "
+                  f"(gate {a['per_level_gate_mm']}); {a['meshes_moved']} meshes move, "
+                  f"max {a['max_mesh_abs_dy_mm']} mm")
+    if bp3d_ap.get("after_max_abs_mm") is not None:
+        print(f"  bp3d sub-cranial AP ramp: offset {bp3d_ap['before_max_abs_mm']} mm -> "
+              f"{bp3d_ap['after_max_abs_mm']} mm (gate 3.0), fit rms {bp3d_ap['fit_rms_mm']} mm; "
+              f"{len(bp3d_ap['meshes_moved'])} meshes move, worst cranial {bp3d_ap['worst_cranial_dy_mm']} mm "
+              f"(gate 1.0); vertebrobasilar junction {bp3d_ap['vbj_to_basilar_mm']} mm from the basilar "
+              f"(gate 6.0), {bp3d_ap['vbj_to_mra_mm']} mm from the MRA atlas (gate 8.0)")
     if cord:
         print(f"  cord MRI: {'x'.join(map(str, cord['grid']))} at {cord['spacing']} mm, {cord['bytes_gz']/1e6:.2f} MB gz, "
               f"PAM50<->MNI residual {cord['mni_residual_rms_mm']} mm (gate 2.0)")

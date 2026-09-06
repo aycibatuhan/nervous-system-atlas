@@ -197,22 +197,34 @@
     ],
     [
      1.5505,
-     20.17
+     20.18
     ],
     [
      1.5646,
-     15.2
+     15.19
     ],
     [
      1.577,
-     8.38
+     8.42
     ],
     [
      1.589,
-     3.81
+     3.69
     ],
     [
      1.599,
+     0.0
+    ],
+    [
+     1.6093,
+     -5.17
+    ],
+    [
+     1.6155,
+     0.0
+    ],
+    [
+     1.6184,
      0.0
     ]
    ],
@@ -222,18 +234,28 @@
     "obex",
     "pontomedullary junction",
     "mid-pons",
-    "pontomesencephalic junction"
+    "pontomesencephalic junction",
+    "intercollicular level",
+    "posterior commissure",
+    "mesencephalic-diencephalic junction"
    ],
-   "anchor_zero_m": 1.599,
+   "anchor_zero_m": 1.6184,
    "anchor_full_m": 1.543,
    "full_dy_mm": 23.31,
+   "midbrain_min_dy_mm": -5.17,
    "fit": {
     "samples": 27,
-    "rms_mm": 1.058,
-    "mean_abs_mm": 0.745,
-    "max_abs_mm": 3.202
+    "rms_mm": 0.999,
+    "mean_abs_mm": 0.725,
+    "max_abs_mm": 2.73,
+    "midbrain": {
+     "samples": 5,
+     "rms_mm": 0.425,
+     "mean_abs_mm": 0.275,
+     "max_abs_mm": 0.92
+    }
    },
-   "notes": "dy = ramp(z_src), added to MNI y (positive = anterior) after the affine. ramp is a Fritsch-Carlson monotone cubic Hermite through the knots with clamped zero end tangents, exactly 0.0 at and above anchor_zero_m (the pontomesencephalic junction, so the midbrain and everything above it is bit-identical) and exactly full_dy_mm at and below anchor_full_m (the cervicomedullary junction, so the cord's own shape and its ~21 deg slope are preserved). Knot heights are anatomy read off the Z-Anatomy objects; knot values are least-squares-fitted to the measured per-slab AP profile of the Z-Anatomy brainstem silhouette against the MNI aseg brainstem (label 16)."
+   "notes": "dy = ramp(z_src), added to MNI y (positive = anterior) after the affine. ramp is a Fritsch-Carlson monotone cubic Hermite through the knots with clamped zero end tangents, exactly 0.0 at and above anchor_zero_m (the mesencephalic-diencephalic junction, the rostral end of the cerebral aqueduct, which is above the top of the Z-Anatomy Midbrain object, so the diencephalon and the whole forebrain are bit-identical) and exactly full_dy_mm at and below anchor_full_m (the cervicomedullary junction, so the cord's own shape and its ~21 deg slope are preserved). It has one interior extremum, midbrain_min_dy_mm at the intercollicular knot, and is monotone on either side of it. Knot heights are anatomy read off the Z-Anatomy objects; knot values are least-squares-fitted -- below the pontomesencephalic junction to the measured per-slab AP profile of the Z-Anatomy brainstem silhouette against the MNI aseg brainstem (label 16), above it to five corresponding-structure centroids (inferior colliculus, red nucleus, superior colliculus and posterior commissure from MASSP, plus the pineal reference point), because the aseg Brain-Stem label stops at the cerebral peduncle and its silhouette is not comparable there."
   }
  }
 }

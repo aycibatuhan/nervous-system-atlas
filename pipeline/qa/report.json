@@ -1,7 +1,7 @@
 {
  "meshes": 662,
- "bytes": 40809628,
- "triangles": 6287942,
+ "bytes": 40337592,
+ "triangles": 6211856,
  "registration": {
   "bp3d_to_mni.json": {
    "landmark_mean_mm": 3.31,
@@ -21,12 +21,39 @@
   "before_max_abs_mm": 12.183,
   "after_max_abs_mm": 0.4182,
   "ap": {
-   "cmj_residual_max_abs_mm": 0.98,
+   "cmj_residual_max_abs_mm": 0.97,
    "above_anchor_max_abs_dy_mm": 0.0,
+   "anchor_zero_m": 1.6184,
    "full_dy_mm": 23.31,
-   "meshes_moved": 145,
-   "max_mesh_dy_mm": 23.31
+   "midbrain_min_dy_mm": -5.17,
+   "per_level_gate_mm": 2.0,
+   "per_level_n": 7,
+   "per_level_max_abs_mm": 1.33,
+   "meshes_moved": 156,
+   "max_mesh_abs_dy_mm": 23.31
   }
+ },
+ "bp3dSubcranialAp": {
+  "vertebral_x_mm": {
+   "left": [
+    -32.6,
+    -0.6
+   ],
+   "right": [
+    -1.4,
+    30.3
+   ]
+  },
+  "before_max_abs_mm": 17.6,
+  "after_max_abs_mm": 1.95,
+  "fit_rms_mm": 0.84,
+  "meshes_moved": [
+   "artery-vertebral-l",
+   "artery-vertebral-r"
+  ],
+  "worst_cranial_dy_mm": 0.0,
+  "vbj_to_basilar_mm": 3.89,
+  "vbj_to_mra_mm": 6.76
  },
  "cordVolume": {
   "grid": [
@@ -35,7 +62,7 @@
    613
   ],
   "spacing": 0.75,
-  "bytes_gz": 758311,
+  "bytes_gz": 758077,
   "mni_residual_rms_mm": 0.59
  },
  "ncSources": [

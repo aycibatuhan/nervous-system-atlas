@@ -22,6 +22,9 @@ Outputs (public/data/volumes/)
 cord_t2.u8.bin, cord_t1.u8.bin   the reformatted MRI on their own axis-aligned MNI-frame grid (NOT the
                                  193x229x193 brain grid -- the cord is off it), gzipped, x-fastest
 labels_spine.u8.bin              PAM50 spinal levels (1 = C1 ... 30 = S5) through the same reformat
+labels_spine.json                its lookup table (id -> name, cord region, segment mesh id, ramp colour),
+                                 the same shape labels.json has for the anatomical volume; referenced from
+                                 manifest.volumes.labels_spine.lut
 cord.json                        grid + per-volume metadata, merged into manifest.volumes by atlas-manifest
 cord_levels.json                 spinal and vertebral level boundaries in world mm along our centreline, so
                                  derived.py's cord segment blocks can be re-cut from measured levels later
@@ -60,6 +63,18 @@ CENTRELINE_STEP = 2.0   # mm: arc-length step of the centreline shipped in cord_
 SPINAL_LEVELS = ([f"C{i}" for i in range(1, 9)] + [f"T{i}" for i in range(1, 13)]
                  + [f"L{i}" for i in range(1, 6)] + [f"S{i}" for i in range(1, 6)])
 VERTEBRAL_LEVELS = [f"C{i}" for i in range(1, 8)] + [f"T{i}" for i in range(1, 13)] + ["L1"]
+
+# The four cord regions the level volume is coloured by; the mesh ids are derived.py's cord segment blocks, so
+# a level painted on a slice and the 3D block it belongs to are the same selection in the UI.  Each region gets
+# a smooth rostral -> caudal ramp between two anchors of one hue, so a sagittal slice reads as four bands with
+# the individual level still legible inside each.
+SPINE_REGIONS = [
+    ("cervical", "spinal-segment-cervical", "Cervical cord (C1-C8)", "#A9D2F2", "#123E6E"),
+    ("thoracic", "spinal-segment-thoracic", "Thoracic cord (T1-T12)", "#B9E4B2", "#1B5E2B"),
+    ("lumbar", "spinal-segment-lumbar", "Lumbar cord (L1-L5)", "#FBD9A5", "#B4530A"),
+    ("sacral", "spinal-segment-sacral", "Sacral and coccygeal cord (S1-S5, Co)", "#F3B4AE", "#8C2118"),
+]
+REGION_OF = {"C": "cervical", "T": "thoracic", "L": "lumbar", "S": "sacral"}
 
 
 def pam50_dir() -> Path:
@@ -339,6 +354,50 @@ def centreline_table(m: dict, step: float = CENTRELINE_STEP) -> tuple[np.ndarray
     return out_s, out_p
 
 
+def ramp(lo: str, hi: str, n: int, i: int) -> str:
+    """Colour i of n on a linear sRGB ramp between two hex anchors (n == 1 keeps the light anchor)."""
+    a = [int(lo[k:k + 2], 16) for k in (1, 3, 5)]
+    b = [int(hi[k:k + 2], 16) for k in (1, 3, 5)]
+    t = 0.0 if n < 2 else i / (n - 1)
+    return "#" + "".join(f"{round(x + (y - x) * t):02X}" for x, y in zip(a, b))
+
+
+def spine_lut(spinal: list[dict]) -> dict:
+    """labels_spine.json: id -> level entry, in the same shape labels.json uses for the anatomical volume.
+
+    Every id in labels_spine.u8.bin (1 = C1 ... 30 = S5) maps to its name, the cord region it belongs to, the
+    derived.py cord segment block that carries it in 3D, and a colour from that region's ramp.  Where the level
+    was measured on our centreline the world z range and arc length come along, so the UI can name the level
+    under the cursor without reloading cord_levels.json.
+    """
+    by = {r["name"]: r for r in spinal}
+    regions = {key: {"name": name, "meshId": mid, "structureId": mid, "system": "spinal-cord",
+                     "levels": [n for n in SPINAL_LEVELS if REGION_OF[n[0]] == key],
+                     "colour": ramp(lo, hi, 2, 1)}
+               for key, mid, name, lo, hi in SPINE_REGIONS}
+    anchors = {key: (lo, hi) for key, _mid, _name, lo, hi in SPINE_REGIONS}
+    mesh_of = {key: mid for key, mid, _name, _lo, _hi in SPINE_REGIONS}
+    lut = {}
+    for lid, name in enumerate(SPINAL_LEVELS, 1):
+        key = REGION_OF[name[0]]
+        peers = regions[key]["levels"]
+        lo, hi = anchors[key]
+        e = {"name": name, "region": key, "regionName": regions[key]["name"], "meshId": mesh_of[key],
+             "structureId": mesh_of[key], "system": "spinal-cord",
+             "colour": ramp(lo, hi, len(peers), peers.index(name))}
+        r = by.get(name)
+        if r:
+            e["zMm"] = r["z_mm"]
+            e["arcMm"] = r["arc_mm"]
+        lut[str(lid)] = e
+    return {"space": "MNI152NLin2009cAsym", "volume": "labels_spine", "source": "pam50",
+            "note": "PAM50 spinal levels carried onto our cord centreline by the atlas-pam50 curved reformat. "
+                    "ids are the PAM50 spinal-level ids (1 = C1 ... 30 = S5) as they appear in "
+                    "volumes/labels_spine.u8.bin; meshId is the derived.py cord segment block that contains "
+                    "the level, so selecting a level and selecting its 3D block are the same selection.",
+            "regions": regions, "lut": lut}
+
+
 def segment_blocks() -> dict:
     """z range of derived.py's cord segment blocks, from the current mesh records."""
     p = WORK / "meshes.json"
@@ -398,7 +457,7 @@ def main(argv=None) -> None:
     lv = sample("PAM50_spinal_levels", m["world_pam"], order=0)
     rec = write_volume("labels_spine", dims, lv.astype(np.uint8), sel) if not a.no_write else {}
     rec.update({"space": "cord", "spacing": [a.spacing] * 3, "origin_ras": out["origin_ras"],
-                "affine_ras": out["affine_ras"], "lut": "volumes/cord_levels.json"})
+                "affine_ras": out["affine_ras"], "lut": "volumes/labels_spine.json"})
     out["contrasts"]["labels_spine"] = rec
     print(f"  {'labels_spine':12s} 30 levels        {rec.get('bytes_gz', 0)/1024:8.1f} KB gz")
 
@@ -422,6 +481,11 @@ def main(argv=None) -> None:
 
     if not a.no_write:
         (VOLUMES / "cord.json").write_text(json.dumps(out, indent=1))
+        sl = spine_lut(spinal)
+        (VOLUMES / "labels_spine.json").write_text(json.dumps(sl, indent=1))
+        print(f"\nwrote {VOLUMES / 'labels_spine.json'}: {len(sl['lut'])} levels in "
+              f"{len(sl['regions'])} regions ("
+              + ", ".join(f"{k} {len(v['levels'])}" for k, v in sl["regions"].items()) + ")")
         cl_s, cl_p = centreline_table(m)
         (VOLUMES / "cord_levels.json").write_text(json.dumps(
             {"space": "MNI152NLin2009cAsym", "source": "pam50",

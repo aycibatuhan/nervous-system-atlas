@@ -30,7 +30,21 @@ def qa():
     from .qa import main; main()
 
 def build_all():
-    from .build_all import main; main()
+    """Run the whole pipeline in order (the same sequence as pipeline/rebuild.sh, minus the Blender export)."""
+    import subprocess, sys
+    from pathlib import Path
+    steps = ["atlas-download", "atlas-volumes", "atlas-atlas-meshes", "atlas-venat", "atlas-bp3d-select", "atlas-bp3d-meshes",
+             "atlas-zanatomy-midline", "atlas-zanatomy-meshes", "atlas-pam50", "atlas-derived", "atlas-brainstem-nav",
+             "atlas-labels", "atlas-manifest", "atlas-qa"]
+    bindir = Path(sys.executable).parent
+    for step in steps:
+        exe = bindir / step
+        if not exe.exists():
+            print(f"[build] skip {step} (not installed)"); continue
+        print(f"[build] == {step}")
+        r = subprocess.run([str(exe)] + (sys.argv[1:] if step == "atlas-manifest" else []))
+        if r.returncode != 0:
+            print(f"[build] {step} failed with code {r.returncode}"); sys.exit(r.returncode)
 
 def zanatomy_register():
     from .zanatomy import main_register; main_register()

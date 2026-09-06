@@ -28,9 +28,18 @@ meshes:
   # ---- arteries
   - {id: artery-internal-carotid-l, fma: 4062, name: "Internal carotid artery (L)", system: arteries, subsystem: anterior-circulation, side: left, budget: medium, colour: "#C42B2B", visible: true}
   - {id: artery-internal-carotid-r, fma: 3949, name: "Internal carotid artery (R)", system: arteries, subsystem: anterior-circulation, side: right, budget: medium, colour: "#C42B2B", visible: true}
-  - {id: artery-vertebral-l, fma: 4066, name: "Vertebral artery (L)", system: arteries, subsystem: posterior-circulation, side: left, budget: medium, colour: "#B0302A", visible: true}
-  - {id: artery-vertebral-r, fma: 3958, name: "Vertebral artery (R)", system: arteries, subsystem: posterior-circulation, side: right, budget: medium, colour: "#B0302A", visible: true}
-  - {id: artery-basilar, fma: 50542, name: "Basilar artery", system: arteries, subsystem: posterior-circulation, side: midline, budget: small, colour: "#C42B2B", visible: true}
+  # The vertebrobasilar concepts list their whole tree in the `partof` map -- 43 element files for each
+  # vertebral artery, 29 of them shared, so unioning both maps gave the two arteries and the basilar three
+  # byte-identical copies of the entire tree (both vertebrals, the basilar and both PCAs).  `tree: isa` takes
+  # instead the single element file each concept *is*: FJ1725 the right vertebral, FJ1725M the left,
+  # and, for the basilar, FJ1672 -- the `isa` map lists a second, duplicate basilar element (FJ1844, the same
+  # vessel to within 1 mm), so the entry names the element explicitly rather than unioning the two into a
+  # double-walled tube.  postCorrection applies the sub-cranial anteroposterior ramp of bp3d_to_mni.json: the affine is
+  # fitted on brain landmarks and leaves the neck ~17 mm too far back (see register.py; the carotid is
+  # deliberately not flagged, its own model error cancels the registration error).
+  - {id: artery-vertebral-l, fma: 4066, tree: isa, postCorrection: true, name: "Vertebral artery (L)", system: arteries, subsystem: posterior-circulation, side: left, budget: medium, colour: "#B0302A", visible: true}
+  - {id: artery-vertebral-r, fma: 3958, tree: isa, postCorrection: true, name: "Vertebral artery (R)", system: arteries, subsystem: posterior-circulation, side: right, budget: medium, colour: "#B0302A", visible: true}
+  - {id: artery-basilar, fma: 50542, tree: isa, elements: [FJ1672], name: "Basilar artery", system: arteries, subsystem: posterior-circulation, side: midline, budget: small, colour: "#C42B2B", visible: true}
   - {id: artery-aca-l, fma: 50030, name: "Anterior cerebral artery (L)", system: arteries, subsystem: anterior-circulation, side: left, budget: small, colour: "#E0533F", visible: true, structureId: artery-aca}
   - {id: artery-aca-r, fma: 50029, name: "Anterior cerebral artery (R)", system: arteries, subsystem: anterior-circulation, side: right, budget: small, colour: "#E0533F", visible: true, structureId: artery-aca}
   - {id: artery-acom, fma: 50169, name: "Anterior communicating artery", system: arteries, subsystem: circle-of-willis, side: midline, budget: tiny, colour: "#F28E2B", visible: true}

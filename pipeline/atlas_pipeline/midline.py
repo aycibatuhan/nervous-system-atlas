@@ -44,14 +44,32 @@ alone without tearing the cord off the medulla.
 
     dy(p) = ramp(p_z)                                 p = source point in Z-Anatomy world metres
 
-`ramp` is a Fritsch-Carlson monotone cubic Hermite through six anatomical knots (pontomesencephalic junction,
-mid-pons, pontomedullary junction, obex, foramen magnum, cervicomedullary junction) with clamped zero end
+`ramp` is a Fritsch-Carlson monotone cubic Hermite through nine anatomical knots with clamped zero end
 tangents, so it joins the untouched region above and the constant region below without a crease.  The knot
 *heights* are anatomy (read off the Z-Anatomy objects); the knot *values* are least-squares-fitted to the
-measured per-slab profile.  It is exactly 0 at and above the pontomesencephalic junction, so the midbrain,
-diencephalon and the whole forebrain are bit-identical, and constant below the cervicomedullary junction, so
-the cord's own shape and slope (~21 deg, which already matches the MNI brainstem axis) are preserved and the
-whole sub-cranial body inherits one rigid AP translation.
+measurements below.  The curve has a single interior extremum, at the intercollicular knot, and is monotone on
+either side of it: it falls from +23.3 mm at the cervicomedullary junction through 0 at the pontomesencephalic
+junction to -5.2 mm in the mid-midbrain, then returns to exactly 0 at the mesencephalic-diencephalic junction
+(the rostral end of the cerebral aqueduct, above the top of the Z-Anatomy `Midbrain` object).  It is exactly
+0.0 at and above that upper anchor, so the diencephalon and the whole forebrain are bit-identical, and
+constant below the cervicomedullary junction, so the cord's own shape and slope (~21 deg, which already
+matches the MNI brainstem axis) are preserved and the whole sub-cranial body inherits one rigid AP
+translation.
+
+Two references, because one does not cover the whole band
+--------------------------------------------------------
+Below the pontomesencephalic junction the model is fitted to the per-slab silhouette profile above.  Above it
+that measurement is *not comparable*: the FreeSurfer aseg `Brain-Stem` label (16) stops at the front of the
+cerebral peduncles -- at MNI z -10 its mid-sagittal anterior boundary is y = -23, and the peduncular block in
+front of that is labelled Ventral-DC (28/60) -- while the Z-Anatomy `Midbrain` mesh is a complete midbrain
+whose ventral surface reaches y = -6 there.  Comparing the two silhouette centres therefore reports the
+Z-Anatomy midbrain as 9-10 mm anterior when corresponding structures put it at 2-5 mm (Harvard-Oxford's
+brainstem label cuts at the same place, so this is a property of the segmentations, not of one of them).
+Above the junction the model is fitted instead to five corresponding-structure centroids -- inferior
+colliculus, red nucleus and superior colliculus from MASSP, the posterior commissure from MASSP, and the
+pineal gland's MNI reference point -- which are true correspondences and are what the registration itself is
+fitted on.  The silhouette is still measured up through the midbrain and written to the report, flagged
+`in_fit: false`, because it is the evidence for this split.
 
 The measurement needs the Z-Anatomy brainstem surfaces, which the atlas does not ship (the published brainstem
 is the MNI aseg one).  `blender/dump_brainstem_ap.py` dumps them to work/zanatomy/brainstem_dump.npz; without
@@ -87,16 +105,50 @@ AP_SLAB_M = 0.0020        # measurement slab thickness in source metres (~2.1 mm
 AP_XW_MM = 3.0            # mid-sagittal half-width used for the silhouette centre, both sides
 AP_MEAS_TOP_M = 1.6130    # measure from the upper midbrain ...
 AP_MEAS_BOT_M = 1.5410    # ... down to just below the cervicomedullary junction
-# Knot heights in Z-Anatomy world metres, ascending.  All six are read off the source objects:
+AP_SILHOUETTE_MAX_M = 1.5990   # ... but only fit the silhouette up to the pontomesencephalic junction: above
+                               # it the aseg Brain-Stem label stops at the cerebral peduncle (see the header)
+# Knot heights in Z-Anatomy world metres, ascending.  All nine are read off the source objects:
 #   1.5430  cervicomedullary junction, just below the top of `White matter of spinal cord` (z 1.5452)
 #   1.5505  foramen magnum (the `Foramen magnum.j` label anchor, z 1.5505-1.5561)
 #   1.5646  obex -- the caudal tip of the `Fourth ventricle` object
 #   1.5770  pontomedullary junction (`Pons` bottom 1.5753, `Medulla oblongata` top 1.5789)
 #   1.5890  mid-pons (`Pons` spans 1.5753-1.6030)
-#   1.5990  pontomesencephalic junction, just below the `Midbrain` bottom (1.6009): the upper anchor, dy = 0
-AP_KNOT_Z = (1.5430, 1.5505, 1.5646, 1.5770, 1.5890, 1.5990)
+#   1.5990  pontomesencephalic junction, just below the `Midbrain` bottom (1.6009); dy passes through 0 here
+#   1.6093  intercollicular level -- the floor of `Superior colliculus` (1.6093-1.6157), i.e. the
+#           superior/inferior collicular junction; the minimum of the ramp
+#   1.6155  posterior commissure -- the floor of `Posterior commissure` (1.6155-1.6181)
+#   1.6184  mesencephalic-diencephalic junction -- the rostral end of `Aqueduct of midbrain`
+#           (1.6013-1.6184), where it opens into the third ventricle at the posterior commissure.  It is
+#           above the top of `Midbrain` (1.6175) and of `Posterior commissure` (1.6181), so the whole
+#           Z-Anatomy midbrain is inside the corrected band: the upper anchor, dy = 0
+AP_KNOT_Z = (1.5430, 1.5505, 1.5646, 1.5770, 1.5890, 1.5990, 1.6093, 1.6155, 1.6184)
 AP_KNOT_LABEL = ("cervicomedullary junction", "foramen magnum", "obex", "pontomedullary junction",
-                 "mid-pons", "pontomesencephalic junction")
+                 "mid-pons", "pontomesencephalic junction", "intercollicular level",
+                 "posterior commissure", "mesencephalic-diencephalic junction")
+
+# Above the pontomesencephalic junction the ramp is fitted to corresponding-structure centroids instead of the
+# silhouette: (Z-Anatomy object base name, MASSP label ids, or None for the registration's own MNI point).
+MASSP = RAW / "massp" / "tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz"
+AP_MIDBRAIN_LANDMARKS = (
+    ("Inferior colliculus", (32, 33)),
+    ("Red nucleus", (7, 8)),
+    ("Superior colliculus", (34, 35)),
+    ("Pineal gland", None),
+    ("Posterior commissure", (55,)),
+)
+PINEAL_MNI = (0.0, -33.0, 3.0)          # the same reference point the Z-Anatomy affine is fitted on
+
+# Named levels for the per-level residual gate: (label, source height, half-window in source metres).
+AP_LEVELS = (
+    ("upper midbrain", 1.6128, 0.0025),
+    ("lower midbrain", 1.6090, 0.0025),
+    ("pontomesencephalic junction", 1.5990, 0.0025),
+    ("mid-pons", 1.5890, 0.0025),
+    ("pontomedullary junction", 1.5770, 0.0025),
+    ("obex", 1.5646, 0.0025),
+    ("cervicomedullary junction", 1.5450, 0.0025),
+)
+AP_LEVEL_GATE_MM = 2.0
 
 # True midline objects in work/zanatomy/objects.json, used as direct midline samples (bbox x-centre).
 MIDLINE_OBJECTS = (
@@ -323,36 +375,106 @@ def measure_ap(T: np.ndarray) -> list[dict]:
             last_ref_y = y
             row |= {"mni_y_mm": round(y, 2), "mni_n": 0, "ref": "t1-cord-estimate"}
         row["dy_mm"] = round(row["mni_y_mm"] - row["zanatomy_y_mm"], 2)
+        row["in_fit"] = bool(row.get("ref") == "aseg-brainstem" and row["z_src_m"] <= AP_SILHOUETTE_MAX_M)
+        if not row["in_fit"] and row["z_src_m"] > AP_SILHOUETTE_MAX_M:
+            row["note"] = ("above the pontomesencephalic junction the aseg Brain-Stem label stops at the "
+                           "cerebral peduncle, so the two silhouettes are not comparable: measured, reported, "
+                           "not fitted (the midbrain knots are fitted to corresponding structures instead)")
         rows.append(row)
     return rows
 
 
-def fit_ap(profile: list[dict]) -> tuple[list[list[float]], dict]:
-    """Least-squares fit of the six knot values to the measured profile, monotone and anchored at zero.
+def _massp_labels(labels) -> np.ndarray | None:
+    """Centroid of a set of MASSP label ids in MNI RAS mm."""
+    import nibabel as nib
+    img = nib.load(str(MASSP))
+    d = np.rint(np.asanyarray(img.dataobj)).astype(np.int32)
+    ijk = np.argwhere(np.isin(d, list(labels)))
+    if not len(ijk):
+        return None
+    return ijk.mean(0) @ img.affine[:3, :3].T + img.affine[:3, 3]
 
-    The knot heights are fixed anatomy; only their values move, parameterised as a cumulative sum of
-    non-negative increments from the upper anchor down, which makes the ramp monotone by construction."""
+
+def measure_ap_midbrain(T: np.ndarray) -> list[dict]:
+    """Corresponding-structure AP offsets through the midbrain, where the silhouette is not comparable.
+
+    One row per structure, in the same shape as `measure_ap`'s rows so the report, the residual table and the
+    figures can treat them alike.  `dy_mm` is again the shift the Z-Anatomy geometry needs (+ = anterior)."""
+    lmp = ZW / "landmarks.json"
+    if not (lmp.exists() and MASSP.exists()):
+        return []
+    lm = json.loads(lmp.read_text())
+    rows = []
+    for name, labels in AP_MIDBRAIN_LANDMARKS:
+        pts = [(np.array(v["centroid_m"], float), v["verts"]) for k, v in lm.items() if k.split(".")[0] == name]
+        if not pts:
+            continue
+        src = sum(p * w for p, w in pts) / sum(w for _, w in pts)
+        p = (src[None, :] @ T[:3, :3].T + T[:3, 3])[0]
+        ref = np.array(PINEAL_MNI, float) if labels is None else _massp_labels(labels)
+        if ref is None:
+            continue
+        rows.append({"z_src_m": round(float(src[2]), 4), "z_mni_mm": round(float(p[2]), 1),
+                     "zanatomy_y_mm": round(float(p[1]), 2), "mni_y_mm": round(float(ref[1]), 2),
+                     "n": len(pts), "ref": f"landmark:{name}",
+                     "mni_source": "mni-reference-point" if labels is None else f"massp:{','.join(map(str, labels))}",
+                     "dy_mm": round(float(ref[1] - p[1]), 2), "in_fit": True})
+    rows.sort(key=lambda r: r["z_src_m"])
+    return rows
+
+
+def fit_ap(profile: list[dict], midbrain: list[dict] | None = None) -> tuple[list[list[float]], dict]:
+    """Least-squares fit of the nine knot values, shape-constrained and anchored at zero at the top.
+
+    The knot heights are fixed anatomy; only their values move.  The six sub-mesencephalic values are
+    parameterised as a cumulative sum of non-negative increments from the pontomesencephalic junction down, so
+    that segment is monotone by construction and is exactly 0 at the junction; the two midbrain values are
+    parameterised as non-positive and ordered, so that segment is monotone too and never carries the midbrain
+    anterior (it is anterior of the MNI midbrain everywhere in this band).  The last knot is hard-pinned to
+    exactly 0.0, which is what makes "nothing at or above the anchor moves" bit-exact rather than fitted.
+
+    The two groups of measurements are averaged separately in the cost so the 27 silhouette slabs do not swamp
+    the 5 midbrain correspondences."""
     from scipy.optimize import minimize
-    pts = [(r["z_src_m"], r["dy_mm"]) for r in profile
-           if r.get("ref") == "aseg-brainstem" and AP_KNOT_Z[0] <= r["z_src_m"] <= AP_KNOT_Z[-1]]
-    Z = np.array([a for a, _ in pts])
-    Y = np.array([b for _, b in pts])
+    pts = [(r["z_src_m"], r["dy_mm"]) for r in profile if r.get("in_fit")]
+    Z = np.array([a for a, _ in pts]); Y = np.array([b for _, b in pts])
+    mb = [(r["z_src_m"], r["dy_mm"]) for r in (midbrain or []) if r.get("in_fit")]
+    ZM = np.array([a for a, _ in mb]); YM = np.array([b for _, b in mb])
     kz = np.array(AP_KNOT_Z, float)
+    nlow = 6                                  # knots at and below the pontomesencephalic junction
 
     def values(q):
-        return np.concatenate([[0.0], np.cumsum(np.abs(q))])[::-1]
+        low = np.concatenate([[0.0], np.cumsum(np.abs(q[:nlow - 1]))])[::-1]
+        return np.concatenate([low, [-(abs(q[nlow - 1]) + abs(q[nlow])), -abs(q[nlow]), 0.0]])
 
     def cost(q):
-        return float(np.mean((Y - mono_cubic(kz, values(q), Z)) ** 2))
+        v = values(q)
+        c = float(np.mean((Y - mono_cubic(kz, v, Z)) ** 2)) if len(Y) else 0.0
+        if len(YM):
+            c += float(np.mean((YM - mono_cubic(kz, v, ZM)) ** 2))
+        return c
 
-    q0 = np.full(len(kz) - 1, (Y.max() if len(Y) else 20.0) / (len(kz) - 1))
+    q0 = np.concatenate([np.full(nlow - 1, (Y.max() if len(Y) else 20.0) / (nlow - 1)),
+                         [abs(YM.min()) if len(YM) else 5.0, 0.5]])
     res = minimize(cost, q0, method="Nelder-Mead",
-                   options={"maxiter": 40000, "maxfev": 40000, "xatol": 1e-7, "fatol": 1e-10})
+                   options={"maxiter": 200000, "maxfev": 200000, "xatol": 1e-8, "fatol": 1e-12})
+    res = minimize(cost, res.x, method="Nelder-Mead",
+                   options={"maxiter": 200000, "maxfev": 200000, "xatol": 1e-9, "fatol": 1e-13})
     v = values(res.x)
+    v[-1] = 0.0
     r = Y - mono_cubic(kz, v, Z)
     stats = {"samples": int(len(Y)), "rms_mm": round(float(np.sqrt((r ** 2).mean())), 3),
              "mean_abs_mm": round(float(np.abs(r).mean()), 3), "max_abs_mm": round(float(np.abs(r).max()), 3)}
-    return [[round(float(a), 4), round(float(b), 2)] for a, b in zip(kz, v)], stats
+    if len(YM):
+        rm = YM - mono_cubic(kz, v, ZM)
+        stats["midbrain"] = {"samples": int(len(YM)), "rms_mm": round(float(np.sqrt((rm ** 2).mean())), 3),
+                             "mean_abs_mm": round(float(np.abs(rm).mean()), 3),
+                             "max_abs_mm": round(float(np.abs(rm).max()), 3)}
+    def _r(b):                                    # avoid a "-0.0" knot in the config
+        y = round(float(b), 2)
+        return 0.0 if y == 0.0 else y
+
+    return [[round(float(a), 4), _r(b)] for a, b in zip(kz, v)], stats
 
 
 def ap_residuals(profile: list[dict], ap: dict) -> tuple[list[dict], dict]:
@@ -364,8 +486,10 @@ def ap_residuals(profile: list[dict], ap: dict) -> tuple[list[dict], dict]:
         fit = float(ap_shift(np.array([r["z_src_m"]]), ap)[0])
         row = r | {"fit_mm": round(fit, 2), "residual_mm": round(r["dy_mm"] - fit, 2)}
         rows.append(row)
-        if r["z_mni_mm"] <= -62.0:
-            (cmj if r.get("ref") == "aseg-brainstem" else cmj_t1).append(abs(row["residual_mm"]))
+        if r.get("in_fit") and r["z_mni_mm"] <= -62.0:
+            cmj.append(abs(row["residual_mm"]))
+        elif r.get("ref") == "t1-cord-estimate" and r["z_mni_mm"] <= -62.0:
+            cmj_t1.append(abs(row["residual_mm"]))
     out = {"band": "MNI z <= -62 mm (cervicomedullary junction)", "reference": "aseg-brainstem",
            "n": len(cmj), "max_abs_mm": round(max(cmj), 2) if cmj else None,
            "mean_abs_mm": round(float(np.mean(cmj)), 2) if cmj else None}
@@ -373,6 +497,30 @@ def ap_residuals(profile: list[dict], ap: dict) -> tuple[list[dict], dict]:
         out["t1_estimate"] = {"n": len(cmj_t1), "max_abs_mm": round(max(cmj_t1), 2),
                               "mean_abs_mm": round(float(np.mean(cmj_t1)), 2)}
     return rows, out
+
+
+def ap_per_level(rows: list[dict]) -> list[dict]:
+    """The named-level residual table the AP gate runs on, before and after the ramp.
+
+    Every level takes the measurements that fall in its window and that are of the kind valid there -- the
+    silhouette slabs below the pontomesencephalic junction, the corresponding-structure centroids above it --
+    so `before_mm` and `after_mm` are always a like-for-like comparison of the same two things."""
+    used = [r for r in rows if r.get("in_fit") and "residual_mm" in r]
+    out = []
+    for label, z, half in AP_LEVELS:
+        sel = [r for r in used if abs(r["z_src_m"] - z) <= half]
+        if not sel:
+            continue
+        out.append({
+            "level": label, "z_src_m": z,
+            "z_mni_mm": round(float(np.mean([r["z_mni_mm"] for r in sel])), 1),
+            "n": len(sel), "reference": sorted({r["ref"].split(":")[0] for r in sel})[0],
+            "structures": sorted({r["ref"] for r in sel}) if any(r["ref"].startswith("landmark") for r in sel) else None,
+            "before_mm": round(float(np.mean([r["dy_mm"] for r in sel])), 2),
+            "after_mm": round(float(np.mean([r["residual_mm"] for r in sel])), 2),
+            "max_abs_after_mm": round(float(np.max([abs(r["residual_mm"]) for r in sel])), 2),
+        })
+    return out
 
 
 def mesh_ap_displacements(T: np.ndarray, pc: dict) -> list[dict]:
@@ -393,10 +541,14 @@ def mesh_ap_displacements(T: np.ndarray, pc: dict) -> list[dict]:
             worst_above = max(worst_above, float(np.abs(dy[above]).max()))
         if float(np.abs(dy).max()) < 0.005:
             continue
-        rows.append({"mesh": path.stem, "max_dy_mm": round(float(dy.max()), 2),
+        # the ramp is negative through the midbrain and positive below the pons, so report both extremes
+        rows.append({"mesh": path.stem, "max_abs_dy_mm": round(float(np.abs(dy).max()), 2),
+                     "max_dy_mm": round(float(dy.max()), 2), "min_dy_mm": round(float(dy.min()), 2),
                      "mean_dy_mm": round(float(dy.mean()), 2),
-                     "fraction_moved": round(float((dy > 0.005).mean()), 3)})
-    rows.sort(key=lambda r: -r["max_dy_mm"])
+                     "band": ("midbrain" if dy.max() <= 0.005 else
+                              "sub-mesencephalic" if dy.min() >= -0.005 else "both"),
+                     "fraction_moved": round(float((np.abs(dy) > 0.005).mean()), 3)})
+    rows.sort(key=lambda r: -r["max_abs_dy_mm"])
     return rows, worst_above
 
 
@@ -419,7 +571,12 @@ def cn_check(T: np.ndarray, pc: dict) -> list[dict]:
     for tag, keys in (("pons", ("Pons.l", "Pons.r")), ("medulla", ("Medulla oblongata.l", "Medulla oblongata.r"))):
         V = np.vstack([D[k] for k in keys if k in D])
         parents[tag] = (cKDTree(V), cKDTree(V @ T[:3, :3].T + T[:3, 3]), cKDTree(transform(V, T, pc)))
-    PARENT = {"05": "pons", "06": "pons", "07": "pons", "08": "pons",
+    for tag, keys in (("midbrain", ("Midbrain.l", "Midbrain.r")),):
+        V = np.vstack([D[k] for k in keys if k in D])
+        if len(V):
+            parents[tag] = (cKDTree(V), cKDTree(V @ T[:3, :3].T + T[:3, 3]), cKDTree(transform(V, T, pc)))
+    PARENT = {"03": "midbrain", "04": "midbrain",
+              "05": "pons", "06": "pons", "07": "pons", "08": "pons",
               "09": "medulla", "10": "medulla", "11": "medulla", "12": "medulla"}
     rows = []
     for path in sorted((ZW / "objs").glob("cn-*.ply")):
@@ -431,8 +588,10 @@ def cn_check(T: np.ndarray, pc: dict) -> list[dict]:
             continue
         src_tree, tree0, tree1 = parents[tag]
         root = V[src_tree.query(V)[0] <= 0.002]              # within 2 mm of the parent surface, in metres
+        dy = ap_shift(V[:, 2], pc["ap"])
         row = {"mesh": path.stem, "parent": tag, "root_verts": int(len(root)),
-               "max_dy_mm": round(float(ap_shift(V[:, 2], pc["ap"]).max()), 2)}
+               "max_abs_dy_mm": round(float(np.abs(dy).max()), 2),
+               "max_dy_mm": round(float(dy.max()), 2), "min_dy_mm": round(float(dy.min()), 2)}
         if len(root) < 3:
             row["note"] = "no vertex within 2 mm of the parent surface (this object is not a root)"
             rows.append(row)
@@ -491,6 +650,10 @@ def ap_landmarks(T: np.ndarray, pc: dict) -> dict:
                 row |= {"z_mni_mm": round(float(c[2]), 1), f"zanatomy_y_{tag}": round(float(c[1]), 1),
                         "mni_y_mm": round(float(W[sel, 1].mean()), 1),
                         f"offset_{tag}_mm": round(float(c[1] - W[sel, 1].mean()), 1)}
+            row["statistic"] = ("Z-Anatomy surface-vertex mean vs the mean of the aseg brainstem voxels in a "
+                                "6 mm slab at the same MNI z: two different statistics on two differently "
+                                "shaped objects, so this is a cross-check, not the gate; the gated like-for-"
+                                "like numbers are in ap.per_level")
             out.setdefault("brainstem_centroids", []).append(row)
     return out
 
@@ -654,15 +817,29 @@ def figures(T: np.ndarray, pc: dict, S: np.ndarray, X: np.ndarray, keep: np.ndar
     # --- 6. the measured AP profile and the fitted ramp
     if ap and ap.get("profile"):
         rows = ap["profile"]
+        mbrows = ap.get("midbrain", [])
         zs = np.array([r["z_src_m"] for r in rows]); dy = np.array([r["dy_mm"] for r in rows])
-        zm = np.array([r["z_mni_mm"] for r in rows]); est = np.array([r["ref"] == "aseg-brainstem" for r in rows])
-        g = np.linspace(min(zs) - 0.002, max(zs) + 0.004, 800)
-        fig, a = plt.subplots(figsize=(8, 6.5))
+        zm = np.array([r["z_mni_mm"] for r in rows])
+        est = np.array([bool(r.get("in_fit")) for r in rows])
+        t1e = np.array([r["ref"] == "t1-cord-estimate" for r in rows])
+        bad = ~est & ~t1e                          # silhouette above the pontomesencephalic junction
+        g = np.linspace(min(zs) - 0.002, float(ap["knots"][-1][0]) + 0.002, 1200)
+        fig, a = plt.subplots(figsize=(8.5, 7.5))
+        a.axvline(0, color="0.6", lw=0.8)
         a.plot(ap_shift(g, pc["ap"]), g, color="#2F4C8F", lw=2, label="fitted ramp", zorder=3)
         a.scatter(dy[est], zs[est], s=18, c="#B4553F", label="measured (vs aseg brainstem)", zorder=4)
-        if (~est).any():
-            a.scatter(dy[~est], zs[~est], s=18, facecolors="none", edgecolors="#B4553F",
+        if t1e.any():
+            a.scatter(dy[t1e], zs[t1e], s=18, facecolors="none", edgecolors="#B4553F",
                       label="measured (vs T1 cord estimate)", zorder=4)
+        if bad.any():
+            a.scatter(dy[bad], zs[bad], s=18, marker="x", c="0.6", zorder=4,
+                      label="silhouette above the PMJ (aseg label truncated;\nmeasured, not fitted)")
+        if mbrows:
+            a.scatter([r["dy_mm"] for r in mbrows], [r["z_src_m"] for r in mbrows], s=42, marker="D",
+                      c="#3A7D44", zorder=5, label="measured (corresponding structures)")
+            for r in mbrows:
+                a.annotate(r["ref"].split(":")[1], (r["dy_mm"], r["z_src_m"]), fontsize=6.5, color="#3A7D44",
+                           xytext=(5, -2), textcoords="offset points")
         for (kz, kv), lbl in zip(ap["knots"], ap["knot_labels"]):
             a.axhline(kz, color="0.75", lw=0.6)
             a.annotate(f"{lbl}  ({kv:.1f} mm)", (0.5, kz), fontsize=7, va="bottom", color="0.35")
@@ -671,13 +848,100 @@ def figures(T: np.ndarray, pc: dict, S: np.ndarray, X: np.ndarray, keep: np.ndar
         sec = a.secondary_yaxis("right", functions=(lambda v: c1 * v + c0, lambda v: (v - c0) / c1))
         sec.set_ylabel("MNI z (mm), approximate")
         a.axhline(ap["knots"][-1][0], color="#2F4C8F", lw=1.0, ls="--")
-        a.annotate("above the anchor the affine leaves the Z-Anatomy midbrain\nslightly anterior; not corrected",
-                   (-9.5, ap["knots"][-1][0] + 0.0012), fontsize=7, color="#2F4C8F")
-        a.grid(alpha=0.25); a.legend(loc="upper left", fontsize=8)
+        a.annotate("upper anchor: dy is exactly 0 here and above,\nso the diencephalon and forebrain never move",
+                   (5.0, ap["knots"][-1][0] + 0.0008), fontsize=7, color="#2F4C8F")
+        a.grid(alpha=0.25); a.legend(loc="lower right", fontsize=7)
         f = ap["fit"]
+        mb = f.get("midbrain", {})
         a.set_title(f"Anteroposterior offset of the Z-Anatomy brainstem/cord and the fitted ramp\n"
-                    f"(fit rms {f['rms_mm']} mm over {f['samples']} slabs)", fontsize=10)
+                    f"(fit rms {f['rms_mm']} mm over {f['samples']} slabs below the PMJ"
+                    + (f"; {mb['rms_mm']} mm over {mb['samples']} midbrain correspondences)" if mb else ")"),
+                    fontsize=10)
         fig.tight_layout(); p = MID / "ap_profile.png"; fig.savefig(p, dpi=120); plt.close(fig)
+        written.append(str(p))
+
+    # --- 7. the midbrain: mid-sagittal and paramedian T1 with the brainstem contours, before and after
+    if T1W.exists() and ASEG.exists() and D is not None:
+        img = nib.load(str(T1W)); vol = np.asanyarray(img.dataobj).astype(float); aff = img.affine
+        W = aseg_brainstem()
+        refs = {}
+        lmv = json.loads((ZW / "landmarks.json").read_text()) if (ZW / "landmarks.json").exists() else {}
+        if MASSP.exists():
+            for name, labels in AP_MIDBRAIN_LANDMARKS:
+                c = np.array(PINEAL_MNI, float) if labels is None else _massp_labels(labels)
+                if c is not None:
+                    refs[name] = c
+        for tag, xc in (("sagittal", 0.0), ("paramedian", 7.0)):
+            sl = vol[int(round(xc - aff[0, 3])), :, :].T
+            ext = [aff[1, 3], aff[1, 3] + vol.shape[1], aff[2, 3], aff[2, 3] + vol.shape[2]]
+            Wm = W[np.abs(W[:, 0] - xc) < 2]
+            fig, ax = plt.subplots(1, 2, figsize=(12, 7), sharey=True)
+            for a2, use_pc, ttl in ((ax[0], None, "before (affine only)"), (ax[1], pc, "after (affine + AP ramp)")):
+                a2.imshow(sl, cmap="gray", origin="lower", extent=ext, aspect="equal",
+                          vmax=np.percentile(sl, 99.5))
+                a2.scatter(Wm[:, 1], Wm[:, 2], s=2, c="#2F4C8F", alpha=0.20, linewidths=0,
+                           label="MNI aseg brainstem")
+                for name, col in (("Midbrain", "#B4553F"), ("Pons", "#3A7D44"), ("Medulla oblongata", "#E8A33D")):
+                    if f"{name}.l" not in D:
+                        continue
+                    V = np.vstack([D[f"{name}.l"], D[f"{name}.r"]])
+                    P = transform(V, T, use_pc)
+                    m = np.abs(P[:, 0] - xc) < 2
+                    a2.scatter(P[m, 1], P[m, 2], s=1.6, c=col, alpha=0.6, linewidths=0, label=f"Z-Anatomy {name}")
+                for name, c in refs.items():
+                    if abs(c[0] - xc) > 9:
+                        continue
+                    a2.plot(c[1], c[2], marker="+", ms=9, mew=1.6, color="#2F4C8F", zorder=6)
+                    a2.annotate(name, (c[1], c[2]), fontsize=6.5, color="#2F4C8F", xytext=(4, 3),
+                                textcoords="offset points")
+                    pts = [(np.array(v["centroid_m"], float), v["verts"]) for k, v in lmv.items()
+                           if k.split(".")[0] == name]
+                    if pts:
+                        s = sum(p * w for p, w in pts) / sum(w for _, w in pts)
+                        q = correct(s[None, :], s[None, :] @ T[:3, :3].T + T[:3, 3], use_pc)[0]
+                        a2.plot(q[1], q[2], marker="x", ms=7, mew=1.6, color="#B4553F", zorder=6)
+                a2.axhline(-25.0, color="0.8", ls=":", lw=0.6)
+                a2.set_xlim(-70, 10); a2.set_ylim(-70, 15); a2.set_title(ttl, fontsize=10)
+                a2.set_xlabel("MNI y (mm)")
+            ax[0].set_ylabel("MNI z (mm)"); ax[1].legend(loc="lower left", fontsize=7, markerscale=5)
+            mn = pc.get("ap", {}).get("midbrain_min_dy_mm")
+            fig.suptitle(f"MNI T1 at x = {xc:.0f}: the Z-Anatomy midbrain, pons and medulla before and after "
+                         f"the AP ramp\n+ = MNI reference centroid, x = Z-Anatomy centroid"
+                         + (f"; the ramp reaches {mn:.1f} mm at the intercollicular knot,\nand is exactly 0 "
+                            f"at and above the mesencephalic-diencephalic junction" if mn is not None else ""),
+                         fontsize=9)
+            fig.tight_layout(); p = MID / f"midbrain_{tag}.png"; fig.savefig(p, dpi=120); plt.close(fig)
+            written.append(str(p))
+
+        # --- 8. axial MNI T1 at z = -11 (mid-midbrain), before and after
+        k = int(round(-11.0 - aff[2, 3]))
+        sla = vol[:, :, k].T
+        exta = [aff[0, 3], aff[0, 3] + vol.shape[0], aff[1, 3], aff[1, 3] + vol.shape[1]]
+        Wa = W[np.abs(W[:, 2] + 11.0) < 1.0]
+        fig, ax = plt.subplots(1, 2, figsize=(11, 6), sharey=True)
+        for a2, use_pc, ttl in ((ax[0], None, "before"), (ax[1], pc, "after")):
+            a2.imshow(sla, cmap="gray", origin="lower", extent=exta, aspect="equal",
+                      vmax=np.percentile(sla, 99.5))
+            a2.scatter(Wa[:, 0], Wa[:, 1], s=6, c="#2F4C8F", alpha=0.3, linewidths=0, label="MNI aseg brainstem")
+            if "Midbrain.l" in D:
+                V = np.vstack([D["Midbrain.l"], D["Midbrain.r"]])
+                P = transform(V, T, use_pc)
+                m = np.abs(P[:, 2] + 11.0) < 1.5
+                a2.scatter(P[m, 0], P[m, 1], s=4, c="#B4553F", alpha=0.8, linewidths=0, label="Z-Anatomy midbrain")
+            for name, col, lab in (("cn-03-oculomotor", "#3A7D44", "CN III"), ("cn-04-trochlear", "#7A5C3E", "CN IV")):
+                V = [load_src(f"{name}-{sd}") for sd in ("l", "r")]
+                V = [v for v in V if v is not None]
+                if not V:
+                    continue
+                P = transform(np.vstack(V), T, use_pc)
+                m = np.abs(P[:, 2] + 11.0) < 3.0
+                a2.scatter(P[m, 0], P[m, 1], s=5, c=col, alpha=0.9, linewidths=0, label=lab)
+            a2.axvline(0, color="#3A7D44", lw=0.6, ls="--")
+            a2.set_xlim(-45, 45); a2.set_ylim(-60, 10); a2.set_title(ttl); a2.set_xlabel("MNI x (mm)")
+        ax[0].set_ylabel("MNI y (mm)"); ax[1].legend(loc="lower left", fontsize=7, markerscale=3)
+        fig.suptitle("Axial MNI T1 at z = -11 mm (mid-midbrain): the Z-Anatomy midbrain and CN III/IV\n"
+                     "against the MNI aseg brainstem, before and after the AP ramp", fontsize=10)
+        fig.tight_layout(); p = MID / "midbrain_axial_z-11.png"; fig.savefig(p, dpi=120); plt.close(fig)
         written.append(str(p))
     return written
 
@@ -716,8 +980,9 @@ def main(argv=None) -> None:
 
     # --- anteroposterior: measure the brainstem/cord profile against the MNI aseg brainstem and fit the ramp
     profile = measure_ap(T)
+    midbrain = measure_ap_midbrain(T)
     if profile:
-        knots, apfit = fit_ap(profile)
+        knots, apfit = fit_ap(profile, midbrain)
         pc["ap"] = {
             "enabled": True,
             "model": "monotone-cubic-ramp",
@@ -728,15 +993,23 @@ def main(argv=None) -> None:
             "anchor_zero_m": knots[-1][0],
             "anchor_full_m": knots[0][0],
             "full_dy_mm": knots[0][1],
+            "midbrain_min_dy_mm": round(min(v for _, v in knots), 2),
             "fit": apfit,
             "notes": ("dy = ramp(z_src), added to MNI y (positive = anterior) after the affine. ramp is a "
                       "Fritsch-Carlson monotone cubic Hermite through the knots with clamped zero end "
-                      "tangents, exactly 0.0 at and above anchor_zero_m (the pontomesencephalic junction, so "
-                      "the midbrain and everything above it is bit-identical) and exactly full_dy_mm at and "
-                      "below anchor_full_m (the cervicomedullary junction, so the cord's own shape and its "
-                      "~21 deg slope are preserved). Knot heights are anatomy read off the Z-Anatomy objects; "
-                      "knot values are least-squares-fitted to the measured per-slab AP profile of the "
-                      "Z-Anatomy brainstem silhouette against the MNI aseg brainstem (label 16)."),
+                      "tangents, exactly 0.0 at and above anchor_zero_m (the mesencephalic-diencephalic "
+                      "junction, the rostral end of the cerebral aqueduct, which is above the top of the "
+                      "Z-Anatomy Midbrain object, so the diencephalon and the whole forebrain are "
+                      "bit-identical) and exactly full_dy_mm at and below anchor_full_m (the "
+                      "cervicomedullary junction, so the cord's own shape and its ~21 deg slope are "
+                      "preserved). It has one interior extremum, midbrain_min_dy_mm at the intercollicular "
+                      "knot, and is monotone on either side of it. Knot heights are anatomy read off the "
+                      "Z-Anatomy objects; knot values are least-squares-fitted -- below the pontomesencephalic "
+                      "junction to the measured per-slab AP profile of the Z-Anatomy brainstem silhouette "
+                      "against the MNI aseg brainstem (label 16), above it to five corresponding-structure "
+                      "centroids (inferior colliculus, red nucleus, superior colliculus and posterior "
+                      "commissure from MASSP, plus the pineal reference point), because the aseg Brain-Stem "
+                      "label stops at the cerebral peduncle and its silhouette is not comparable there."),
         }
     else:
         old_ap = (cfg.get("post_correction") or {}).get("ap")
@@ -791,10 +1064,16 @@ def main(argv=None) -> None:
     }
     if pc.get("ap"):
         prof_rows, cmj = ap_residuals(profile, pc["ap"]) if profile else ([], {})
+        mb_rows, _ = ap_residuals(midbrain, pc["ap"]) if midbrain else ([], {})
+        levels_ap = ap_per_level(prof_rows + mb_rows)
         disp, worst_above = mesh_ap_displacements(T, pc)
         report["ap"] = {
             "knots": pc["ap"]["knots"], "knot_labels": list(AP_KNOT_LABEL), "fit": pc["ap"]["fit"],
-            "profile": prof_rows, "cmj_residual": cmj,
+            "anchor_zero_m": pc["ap"]["anchor_zero_m"],
+            "profile": prof_rows, "midbrain": mb_rows, "per_level": levels_ap,
+            "per_level_gate_mm": AP_LEVEL_GATE_MM,
+            "per_level_max_abs_mm": round(max((abs(L["after_mm"]) for L in levels_ap), default=0.0), 2),
+            "cmj_residual": cmj,
             "above_anchor_max_abs_dy_mm": round(worst_above, 6),
             "meshes_moved": disp,
             "landmarks": ap_landmarks(T, pc),
@@ -821,19 +1100,31 @@ def main(argv=None) -> None:
         f = apr["fit"]
         print(f"  fit to {f['samples']} measured slabs: rms {f['rms_mm']} mm, mean |r| {f['mean_abs_mm']}, "
               f"max |r| {f['max_abs_mm']}")
+        if f.get("midbrain"):
+            m = f["midbrain"]
+            print(f"  fit to {m['samples']} midbrain correspondences: rms {m['rms_mm']} mm, "
+                  f"mean |r| {m['mean_abs_mm']}, max |r| {m['max_abs_mm']}")
         c = apr["cmj_residual"]
         if c.get("max_abs_mm") is not None:
             print(f"  residual over {c['band']}: mean {c['mean_abs_mm']} max {c['max_abs_mm']} mm "
                   f"(gate 1.5, n={c['n']})")
-        print(f"  displacement above the upper anchor: {apr['above_anchor_max_abs_dy_mm']} mm "
-              f"({len(apr['meshes_moved'])} of the exported objects move)")
-        print(f"  {'z_src':>8} {'z_MNI':>7} {'ZA y':>8} {'MNI y':>8} {'need':>7} {'ramp':>7} {'resid':>7}  ref")
-        for r in apr["profile"]:
+        print(f"  displacement above the upper anchor ({apr['anchor_zero_m']} m): "
+              f"{apr['above_anchor_max_abs_dy_mm']} mm ({len(apr['meshes_moved'])} of the exported objects move)")
+        print(f"\n  per level (before = affine only, after = residual after the ramp; "
+              f"gate {apr['per_level_gate_mm']} mm)")
+        print(f"  {'level':30s} {'z_src':>8} {'z_MNI':>7} {'before':>8} {'after':>8} {'max|r|':>8}  reference")
+        for L in apr["per_level"]:
+            print(f"  {L['level']:30s} {L['z_src_m']:8.4f} {L['z_mni_mm']:7.1f} {L['before_mm']:8.2f} "
+                  f"{L['after_mm']:+8.2f} {L['max_abs_after_mm']:8.2f}  {L['reference']}")
+        print(f"\n  {'z_src':>8} {'z_MNI':>7} {'ZA y':>8} {'MNI y':>8} {'need':>7} {'ramp':>7} {'resid':>7}  ref")
+        for r in apr.get("midbrain", []) + apr["profile"]:
             print(f"  {r['z_src_m']:8.4f} {r['z_mni_mm']:7.1f} {r['zanatomy_y_mm']:8.2f} {r['mni_y_mm']:8.2f}"
-                  f" {r['dy_mm']:7.2f} {r['fit_mm']:7.2f} {r['residual_mm']:+7.2f}  {r['ref']}")
-        print(f"  {'mesh':44s} {'max dy':>8} {'mean dy':>8}")
-        for r in apr["meshes_moved"][:200]:
-            print(f"  {r['mesh']:44s} {r['max_dy_mm']:8.2f} {r['mean_dy_mm']:8.2f}")
+                  f" {r['dy_mm']:7.2f} {r['fit_mm']:7.2f} {r['residual_mm']:+7.2f}  {r['ref']}"
+                  f"{'' if r.get('in_fit') else '  [not fitted]'}")
+        print(f"\n  {'mesh':44s} {'max|dy|':>8} {'max dy':>8} {'min dy':>8} {'mean dy':>8}  band")
+        for r in apr["meshes_moved"][:250]:
+            print(f"  {r['mesh']:44s} {r['max_abs_dy_mm']:8.2f} {r['max_dy_mm']:8.2f} {r['min_dy_mm']:8.2f} "
+                  f"{r['mean_dy_mm']:8.2f}  {r['band']}")
         if apr.get("cranial_nerve_roots"):
             print(f"\n  cranial-nerve roots: gap to the Z-Anatomy parent (must not change) and to the MNI "
                   f"aseg brainstem, averaged over the root zone"
@@ -843,6 +1134,7 @@ def main(argv=None) -> None:
                 if "gap_to_mni_brainstem_after_mm" not in r:
                     print(f"  {r['mesh']:34s} {r['parent']:8s}  {r['note']}")
                     continue
+
                 print(f"  {r['mesh']:34s} {r['parent']:8s} {r['gap_to_zanatomy_parent_before_mm']:10.2f} "
                       f"{r['gap_to_zanatomy_parent_after_mm']:9.2f} {r['gap_to_mni_brainstem_before_mm']:11.2f} "
                       f"{r['gap_to_mni_brainstem_after_mm']:10.2f}")

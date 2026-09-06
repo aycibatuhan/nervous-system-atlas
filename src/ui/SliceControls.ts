@@ -32,7 +32,7 @@ export class SliceControls {
       h('option', { value: 't1w' }, 'T1'), h('option', { value: 't2w' }, 'T2'));
     const opacity = h('input', { type: 'range', min: 0, max: 1, step: 0.05, value: app.store.get().overlay.opacity, title: 'Overlay opacity',
       oninput: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, opacity: Number((e.target as HTMLInputElement).value) } }) });
-    const all = h('input', { type: 'checkbox', title: 'Colour every visible structure on the slices', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, showAllLabels: (e.target as HTMLInputElement).checked } }) });
+    const all = h('input', { type: 'checkbox', title: 'Colour every visible structure on the slices, and every spinal level on the cord slices', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, showAllLabels: (e.target as HTMLInputElement).checked } }) });
     const terr = h('input', { type: 'checkbox', title: 'Tint arterial territories', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, territory: (e.target as HTMLInputElement).checked } }) });
     const pin = h('input', { type: 'checkbox', title: 'Keep slices where they are when selecting', onchange: (e: Event) => app.store.set({ slices: { ...app.store.get().slices, pinned: (e.target as HTMLInputElement).checked } }) });
     const cord = h('input', { type: 'checkbox', title: 'Continue the MRI below the foramen magnum with the PAM50 spinal cord template (loaded on demand)',

@@ -11,6 +11,9 @@ export interface AppState {
   hiddenStructures: ReadonlySet<string>;     // per-mesh overrides (hidden although its system is visible)
   shownStructures: ReadonlySet<string>;      // per-mesh overrides (shown although its system is hidden)
   selectedId: string | null;                 // mesh id
+  // a structure opened by id with no mesh in this edition (the public edition drops the non-redistributable
+  // atlases, so its content still exists while its geometry does not); null whenever selectedId is set
+  selectedStructureId: string | null;
   hoverId: string | null;
   contentTab: ContentTab;
   slices: { axial: number; coronal: number; sagittal: number; visible: Record<Axis, boolean>; pinned: boolean };
@@ -22,11 +25,12 @@ export interface AppState {
   involved: ReadonlySet<string>;             // meshes involved in the active syndrome
   stepHighlight: ReadonlySet<string>;        // meshes spotlighted for the current deficit step
   lesionSide: 'l' | 'r' | null;              // demo side for lateralised syndromes
-  panel: { kind: 'quiz'; index: number } | { kind: 'glossary'; id: string | null } | { kind: 'topic'; id: string | null } | null;
+  panel: { kind: 'quiz'; index: number } | { kind: 'glossary'; id: string | null } | { kind: 'topic'; id: string | null } | { kind: 'about' } | null;
   camera: PresetName | 'custom';
   showNc: boolean;
   quality: 'low' | 'high';
   cordMri: boolean;              // show the PAM50 cord MRI on the slices (loads it on demand)
+  cordLevel: number | null;      // PAM50 spinal level id (1 = C1 ... 30 = S5) under the cursor on a cord slice
 }
 
 export function initialState(): AppState {
@@ -36,6 +40,7 @@ export function initialState(): AppState {
     hiddenStructures: new Set(),
     shownStructures: new Set(),
     selectedId: null,
+    selectedStructureId: null,
     hoverId: null,
     contentTab: 'overview',
     slices: { axial: 10, coronal: -18, sagittal: 0, visible: { axial: true, coronal: false, sagittal: false }, pinned: false },
@@ -52,5 +57,6 @@ export function initialState(): AppState {
     showNc: true,
     quality: 'low',
     cordMri: false,
+    cordLevel: null,
   };
 }

@@ -41,21 +41,33 @@ def concept_names() -> dict[str, str]:
     return names
 
 
-def load_concept(fma: str, emap: dict) -> trimesh.Trimesh | None:
+def load_element(fid: str, tree: str = "isa") -> trimesh.Trimesh | None:
+    p = BP / f"{tree}_BP3D_4.0_obj_99" / f"{fid}.obj"
+    if not p.exists():
+        p = BP / ("partof_BP3D_4.0_obj_99" if tree == "isa" else "isa_BP3D_4.0_obj_99") / f"{fid}.obj"
+        if not p.exists():
+            return None
+    m = trimesh.load(str(p), force="mesh", process=False)
+    return m if isinstance(m, trimesh.Trimesh) and len(m.faces) else None
+
+
+def load_concept(fma: str, emap: dict, trees: tuple[str, ...] = ("isa", "partof")) -> trimesh.Trimesh | None:
+    """Union of the element files BodyParts3D lists for a concept.
+
+    `trees` selects which of the two element maps is used.  Both is the default and is right for concepts
+    whose `partof` list is genuinely the concept plus its own branches (the carotid with its branches, PICA).
+    It is wrong for the vertebrobasilar concepts, whose `partof` list is the whole vertebrobasilar tree
+    repeated for every member of it -- 43 element files for each vertebral artery, 29 of them shared, so the
+    left and the right concept produce byte-identical whole-tree meshes.  Those entries set `tree: isa`,
+    where each concept lists exactly the one element file that is that vessel."""
     meshes = []
     seen = set()
     for fid, tree in emap.get(fma, []):
-        if fid in seen:
+        if tree not in trees or fid in seen:
             continue
         seen.add(fid)
-        p = BP / f"{tree}_BP3D_4.0_obj_99" / f"{fid}.obj"
-        if not p.exists():
-            other = BP / ("partof_BP3D_4.0_obj_99" if tree == "isa" else "isa_BP3D_4.0_obj_99") / f"{fid}.obj"
-            if not other.exists():
-                continue
-            p = other
-        m = trimesh.load(str(p), force="mesh", process=False)
-        if isinstance(m, trimesh.Trimesh) and len(m.faces):
+        m = load_element(fid, tree)
+        if m is not None:
             meshes.append(m)
     if not meshes:
         return None
@@ -68,6 +80,56 @@ def load_concept(fma: str, emap: dict) -> trimesh.Trimesh | None:
 
 def selection() -> list[dict]:
     return yaml.safe_load((CONFIG / "bp3d_selection.yaml").read_text())["meshes"]
+
+
+# --------------------------------------------------------------- per-entry geometry restrictions
+# BodyParts3D world: +x = the subject's left, +y = posterior, +z = up, millimetres, midline at x = 0.
+def restrict(m: trimesh.Trimesh, sel: dict) -> trimesh.Trimesh:
+    """Apply an entry's `sideClip` / `srcZMin` / `srcZMax` / `minComponentFaces` restrictions.
+
+    Faces are kept or dropped whole, by their centroid, so the cut is clean at the mesh's own resolution;
+    the clip planes are stated in the BodyParts3D source frame (millimetres), which is where the anatomy
+    the entry is talking about -- a side of the midline, a level of the vertebrobasilar junction -- is
+    axis-aligned.  The registration to MNI rotates that frame by ~23 degrees, so an MNI-frame clip would cut
+    a slanted plane through the body."""
+    side, zmin, zmax = sel.get("sideClip"), sel.get("srcZMin"), sel.get("srcZMax")
+    if side or zmin is not None or zmax is not None:
+        c = m.triangles_center
+        keep = np.ones(len(m.faces), bool)
+        if side == "left":
+            keep &= c[:, 0] >= 0.0
+        elif side == "right":
+            keep &= c[:, 0] <= 0.0
+        elif side:
+            raise SystemExit(f"{sel['id']}: sideClip must be 'left' or 'right', got {side!r}")
+        if zmin is not None:
+            keep &= c[:, 2] >= float(zmin)
+        if zmax is not None:
+            keep &= c[:, 2] <= float(zmax)
+        m.update_faces(keep)
+        m.remove_unreferenced_vertices()
+    return m
+
+
+# --------------------------------------------------------------- sub-cranial anteroposterior correction
+def post_correction() -> dict | None:
+    """The `post_correction` block of config/bp3d_to_mni.json (fitted by `atlas-register --post-correction`)."""
+    pc = json.loads((CONFIG / "bp3d_to_mni.json").read_text()).get("post_correction")
+    return pc if pc and pc.get("enabled", True) else None
+
+
+def ap_shift(z_src: np.ndarray, pc: dict | None) -> np.ndarray:
+    """+y (anterior) shift in MNI mm for each BodyParts3D source height, from the post-correction knots.
+
+    A Fritsch-Carlson monotone cubic Hermite through the knots, clamped outside them, so it is exactly the
+    top knot's value (0.0) at and above the vertebrobasilar junction and exactly the bottom knot's value
+    below C6.  Same curve and the same helper as the Z-Anatomy anteroposterior ramp."""
+    from .midline import mono_cubic
+    z_src = np.asarray(z_src, float)
+    if not pc:
+        return np.zeros(z_src.shape)
+    k = np.asarray(pc["knots"], float)
+    return mono_cubic(k[:, 0], k[:, 1], z_src)
 
 
 def main_select(argv=None) -> None:
@@ -83,15 +145,27 @@ def main_select(argv=None) -> None:
         if a.only and sel["id"] not in a.only.split(","):
             continue
         fmas = sel["fma"] if isinstance(sel["fma"], list) else [sel["fma"]]
-        parts = [load_concept(f"FMA{f}", emap) for f in fmas]
+        trees = (sel["tree"],) if sel.get("tree") else ("isa", "partof")
+        if sel.get("elements"):
+            parts = [load_element(e, trees[0]) for e in sel["elements"]]
+        else:
+            parts = [load_concept(f"FMA{f}", emap, trees) for f in fmas]
         parts = [p for p in parts if p is not None]
         if not parts:
             missing.append((sel["id"], fmas)); continue
         m = trimesh.util.concatenate(parts) if len(parts) > 1 else parts[0]
+        m = restrict(m, sel)
+        if not len(m.faces):
+            missing.append((sel["id"], fmas)); continue
         m.export(out_dir / f"{sel['id']}.ply")
-        index.append({"id": sel["id"], "fma": fmas, "names": [names.get(f"FMA{f}", "?") for f in fmas], "faces": int(len(m.faces)),
-                      "bounds": m.bounds.tolist()})
-        print(f"  {sel['id']:44s} {len(m.faces):8d} faces  {[names.get(f'FMA{f}', '?') for f in fmas]}")
+        entry = {"id": sel["id"], "fma": fmas, "names": [names.get(f"FMA{f}", "?") for f in fmas], "faces": int(len(m.faces)),
+                 "bounds": m.bounds.tolist()}
+        for k in ("tree", "elements", "sideClip", "srcZMin", "srcZMax"):
+            if sel.get(k) is not None:
+                entry[k] = sel[k]
+        index.append(entry)
+        print(f"  {sel['id']:44s} {len(m.faces):8d} faces  {[names.get(f'FMA{f}', '?') for f in fmas]}"
+              f"{'  [' + ' '.join(f'{k}={sel[k]}' for k in ('tree', 'sideClip', 'srcZMin', 'srcZMax') if sel.get(k) is not None) + ']' if any(sel.get(k) is not None for k in ('tree', 'sideClip', 'srcZMin', 'srcZMax')) else ''}")
     for e in index:
         prev[e["id"]] = e
     idx_path.write_text(json.dumps(list(prev.values()), indent=1))
@@ -104,6 +178,7 @@ def main_meshes(argv=None) -> None:
     """Apply the BP3D->MNI transform, clean, decimate and export glb + records."""
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); a = ap.parse_args(argv)
     T = np.array(json.loads((CONFIG / "bp3d_to_mni.json").read_text())["matrix"])
+    pc = post_correction()
     index = {e["id"]: e for e in json.loads((WORK / "bp3d" / "index.json").read_text())}
     from .atlas_meshes import record
     meshes_json = WORK / "meshes.json"
@@ -115,7 +190,13 @@ def main_meshes(argv=None) -> None:
         if not p.exists():
             continue
         m = trimesh.load(str(p), force="mesh", process=True)
+        z_src = np.asarray(m.vertices)[:, 2].copy()      # BodyParts3D source height, before the affine
         m.apply_transform(T)
+        dy = 0.0
+        if pc is not None and sel.get("postCorrection"):
+            shift = ap_shift(z_src, pc)
+            m.vertices[:, 1] += shift
+            dy = float(np.abs(shift).max())
         m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
         if len(m.faces) > 200:
             trimesh.smoothing.filter_taubin(m, lamb=0.5, nu=0.53, iterations=8)
@@ -134,8 +215,15 @@ def main_meshes(argv=None) -> None:
                         colour=sel.get("colour"), visible=sel.get("visible", False), budget=sel.get("budget", "medium"), structure_id=sel.get("structureId"))
         path = MESHES / spec.system / f"{spec.id}.glb"
         nbytes, lod = export_with_lod(m, path, spec.id, LOD_FACES, LOD_MIN_FACES)
-        rec = record(spec, "bodyparts3d", None, "registered-affine", m, path, nbytes, 0, {"fma": index[sel["id"]]["fma"], "labelVolume": None, "lod": lod})
+        # like the Z-Anatomy meshes, a post-corrected mesh keeps the `registered-affine` alignment string
+        # (the manifest's alignment vocabulary is a closed set in src/types/manifest.ts); the correction is
+        # recorded per mesh instead.
+        extra = {"fma": index[sel["id"]]["fma"], "labelVolume": None, "lod": lod}
+        if dy:
+            extra["postCorrectionMaxMm"] = round(dy, 2)
+        rec = record(spec, "bodyparts3d", None, "registered-affine", m, path, nbytes, 0, extra)
         existing[rec["id"]] = rec
-        print(f"  {spec.id:44s} {len(m.faces):6d} tris {nbytes/1024:7.1f} KB  bbox {np.round(m.bounds, 0).tolist()}")
+        print(f"  {spec.id:44s} {len(m.faces):6d} tris {nbytes/1024:7.1f} KB  bbox {np.round(m.bounds, 0).tolist()}"
+              f"{f'  +ap<={dy:.1f}mm' if dy else ''}")
     meshes_json.write_text(json.dumps(list(existing.values()), indent=1))
     print("updated", meshes_json)

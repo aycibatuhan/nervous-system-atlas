@@ -19,6 +19,11 @@ export interface SliceUniforms {
   uCordWorldToVoxel: { value: THREE.Matrix4 };
   uCordDims: { value: THREE.Vector3 };
   uHasCord: { value: number };
+  uSpine: { value: THREE.Texture | null };
+  uSpineLut: { value: THREE.Texture };
+  uHasSpine: { value: number };
+  uSpineSel: { value: number };
+  uSpineHover: { value: number };
   uWindow: { value: number };
   uLevel: { value: number };
   uOverlayOpacity: { value: number };
@@ -35,7 +40,7 @@ const dummy3d = (): THREE.Data3DTexture => {
   t.format = THREE.RedIntegerFormat; t.type = THREE.UnsignedByteType; t.internalFormat = 'R8UI'; t.needsUpdate = true; return t;
 };
 
-export function createSliceUniforms(grid: VolumeGrid, cordGrid: VolumeGrid | null, luts: { struct: THREE.Texture; tract: THREE.Texture; terr: THREE.Texture; flags: THREE.Texture }): SliceUniforms {
+export function createSliceUniforms(grid: VolumeGrid, cordGrid: VolumeGrid | null, luts: { struct: THREE.Texture; tract: THREE.Texture; terr: THREE.Texture; flags: THREE.Texture; spine: THREE.Texture }): SliceUniforms {
   const dummyI = new THREE.Data3DTexture(new Uint8Array(1), 1, 1, 1); dummyI.format = THREE.RedFormat; dummyI.internalFormat = 'R8'; dummyI.needsUpdate = true;
   return {
     uIntensity: { value: dummyI }, uLabels: { value: dummy3d() }, uTracts: { value: dummy3d() }, uTerritories: { value: dummy3d() },
@@ -43,6 +48,8 @@ export function createSliceUniforms(grid: VolumeGrid, cordGrid: VolumeGrid | nul
     uWorldToVoxel: { value: grid.inverse.clone() }, uDims: { value: new THREE.Vector3(...grid.dims) },
     uCord: { value: dummyI }, uCordWorldToVoxel: { value: (cordGrid ?? grid).inverse.clone() },
     uCordDims: { value: new THREE.Vector3(...(cordGrid ?? grid).dims) }, uHasCord: { value: 0 },
+    uSpine: { value: dummy3d() }, uSpineLut: { value: luts.spine }, uHasSpine: { value: 0 },
+    uSpineSel: { value: 0 }, uSpineHover: { value: 0 },
     uWindow: { value: 255 }, uLevel: { value: 127 }, uOverlayOpacity: { value: 0.75 }, uShowAllLabels: { value: 0 },
     uHasLabels: { value: 0 }, uHasTracts: { value: 0 }, uHasTerritories: { value: 0 }, uOutlineColor: { value: new THREE.Color(0xffe066) }, uLinearOut: { value: 0 },
   };

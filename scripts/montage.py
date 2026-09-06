@@ -5,6 +5,12 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 tags = sys.argv[1:]
 names = ['lateral-l', 'inferior', 'medial-l-brainstem', 'syndrome-wallenberg']
+# fall back to whatever the tags actually hold, in common, when the default set is not there
+if not all((Path(f'qa/shots/{t}/{n}.png').exists() for t in tags for n in names)):
+    common = set.intersection(*[{p.stem for p in Path(f'qa/shots/{t}').glob('*.png')} for t in tags])
+    names = sorted(common)
+    if not names:
+        raise SystemExit(f"no shot names in common between {tags}")
 rows = []
 for t in tags:
     rows.append([Image.open(f'qa/shots/{t}/{n}.png').convert('RGB') for n in names])
@@ -17,4 +23,5 @@ for r, (t, imgs) in enumerate(zip(tags, rows)):
     for c, (n, im) in enumerate(zip(names, imgs)):
         out.paste(im.resize((tw, th)), (c * tw, r * (th + 24) + 24))
         d.text((c * tw + 6, r * (th + 24) + 6), f'{t} / {n}', fill='white')
-p = f"qa/shots/{'-vs-'.join(tags)}.png"; out.save(p); print(p)
+p = f"qa/shots/{'-vs-'.join(tags).replace('/', '-')}.png"
+Path(p).parent.mkdir(parents=True, exist_ok=True); out.save(p); print(p)

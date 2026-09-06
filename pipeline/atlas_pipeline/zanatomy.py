@@ -4,13 +4,15 @@ atlas-zanatomy-register : landmark affine (Z-Anatomy meters, +x left, +y posteri
 atlas-zanatomy-midline  : fit the sub-cranial midline correction (see midline.py) into the same config
 atlas-zanatomy-meshes   : apply the transform + correction, decimate, export glb, merge records into work/meshes.json
 
-The affine is fitted on brain landmarks only, so below the skull base it is unconstrained in two ways: its
-x-from-z shear leaves the mapped midline drifting off MNI x = 0 (-1.2 mm at C7, -4.2 mm at the conus, -12 mm
-at the ankle), and its pitch leaves the brainstem falling behind the MNI one from the pons downwards (-8 mm at
-the pontomedullary junction, -23 mm at the cervicomedullary junction, where the cord used to emerge behind the
-occiput).  Every vertex therefore goes through `midline.correct` after the affine.  The x weight is exactly
-zero at and above the foramen magnum and the y ramp is exactly zero at and above the pontomesencephalic
-junction, so the midbrain, diencephalon and forebrain are bit-identical to the pure-affine result.
+The affine is fitted on brain landmarks spread through a 12 cm band around the diencephalon, so it is
+unconstrained in two ways: its x-from-z shear leaves the mapped midline drifting off MNI x = 0 below the skull
+base (-1.2 mm at C7, -4.2 mm at the conus, -12 mm at the ankle), and its pitch leaves the brainstem off the
+MNI one along its whole length -- 5 mm anterior at the collicular plate, then falling behind from the pons
+downwards (-8 mm at the pontomedullary junction, -23 mm at the cervicomedullary junction, where the cord used
+to emerge behind the occiput).  Every vertex therefore goes through `midline.correct` after the affine.  The x
+weight is exactly zero at and above the foramen magnum and the y ramp is exactly zero at and above the
+mesencephalic-diencephalic junction (the rostral end of the cerebral aqueduct, above the top of the Z-Anatomy
+`Midbrain` object), so the diencephalon and the whole forebrain are bit-identical to the pure-affine result.
 """
 from __future__ import annotations
 
