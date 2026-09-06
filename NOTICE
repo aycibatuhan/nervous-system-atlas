@@ -159,6 +159,31 @@ public edition of the atlas.
   Download:    https://ndownloader.figshare.com/files/13267316
                https://ndownloader.figshare.com/files/13267301
 
+--- cerebra ---
+  Dataset:     CerebrA: Mindboggle-101 DKT labels registered and hand-corrected on MNI-ICBM152 2009c Symmetric
+  Citation:    "Manera AL, Dadar M, Fonov V, Collins DL. CerebrA,
+               registration and manual label correction of Mindboggle-101
+               atlas for MNI-ICBM152 template. Sci Data 2020;7:237.
+               doi:10.1038/s41597-020-0557-9.
+  Licence:     CC0 1.0 Universal (public domain dedication)
+               https://creativecommons.org/publicdomain/zero/1.0/
+  Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_res-1_atlas-CerebrA_dseg.nii.gz
+               https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_atlas-CerebA_dseg.tsv
+               https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_res-1_T1w.nii.gz
+               https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/LICENSE
+
+--- dkt31_2009casym ---
+  Dataset:     Mindboggle DKT31 cortical parcellation resampled to MNI152NLin2009cAsym (2 mm)
+  Citation:    Klein A, Tourville J. 101 labeled brain images and a
+               consistent human cortical labeling protocol. Front Neurosci
+               2012;6:171 (Mindboggle-101 / OASIS-TRT-20, CC BY 4.0); DKT31
+               labels carried into MNI152NLin2009cAsym by TemplateFlow
+               (tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg).
+  Licence:     Creative Commons Attribution 4.0 International
+               https://creativecommons.org/licenses/by/4.0/
+  Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg.nii.gz
+               https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_from-OASISTRT20_mode-image_xfm.mat
+
 --- bodyparts3d ---
   Dataset:     BodyParts3D anatomical model database
   Citation:    Mitsuhashi N et al. BodyParts3D: 3D structure database for

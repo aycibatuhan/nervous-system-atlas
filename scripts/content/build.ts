@@ -1,6 +1,10 @@
 // Content build: validate every entry (zod), check cross-links against the manifest, run quality rules,
 // render Markdown fields to HTML and emit public/data/content.json + search-index.json.
-//   node scripts/content/build.ts [--validate-only] [--report] [--strict]
+//   node scripts/content/build.ts [--validate-only] [--report] [--strict] [--public]
+// --public (or ATLAS_EDITION=public) bundles the same authored JSON against public/data/manifest.public.json and
+// writes content.public.json + search-index.public.json: mesh ids that are not in the public edition are dropped
+// from meshIds / meshToStructure, and MniRefs that pointed at them keep their MNI coordinate but lose the mesh id.
+// The authored files under content/ are never touched.
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { marked } from 'marked';
@@ -12,6 +16,7 @@ const DATA_DIR = join(ROOT, 'content/data');
 const OUT = join(ROOT, 'public/data');
 const args = new Set(process.argv.slice(2));
 const strict = args.has('--strict');
+const publicEdition = args.has('--public') || process.env['ATLAS_EDITION'] === 'public';
 
 interface Problem { file: string; msg: string; level: 'error' | 'warn' }
 const problems: Problem[] = [];
@@ -30,11 +35,26 @@ if (existsSync(BIB_DIR)) for (const f of readdirSync(BIB_DIR).filter((x) => x.en
     bibliography[parsed.data.id] = parsed.data;
   } catch (e) { problems.push({ file, msg: `invalid JSON: ${(e as Error).message}`, level: 'error' }); }
 }
-const manifestPath = join(OUT, 'manifest.json');
-const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) as { meshes: { id: string; structureId: string; centroid: number[] }[] } : { meshes: [] };
-const meshIds = new Set(manifest.meshes.map((m) => m.id));
-const meshCentroid = new Map(manifest.meshes.map((m) => [m.id, m.centroid] as const));
-const meshStructure = new Map(manifest.meshes.map((m) => [m.id, m.structureId] as const));
+type MiniManifest = { meshes: { id: string; structureId: string; centroid: number[] }[] };
+const readManifest = (name: string): MiniManifest | null => {
+  const p = join(OUT, name);
+  return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) as MiniManifest : null;
+};
+// Validation runs against the UNION of the two manifests, so the authored JSON is judged on its own terms and
+// an entry never becomes "wrong" just because one edition drops its mesh. The editions do not ship the same
+// cortex — the private one has the Harvard-Oxford gyri, the public one the CerebrA/DKT parcels standing in for
+// them — so a gyrus entry legitimately names mesh ids from both.
+const privateManifest = readManifest('manifest.json') ?? { meshes: [] };
+const publicManifest = readManifest('manifest.public.json');
+if (publicEdition && !publicManifest) { console.error('--public: public/data/manifest.public.json is missing — run `atlas-manifest --public` first'); process.exit(1); }
+const allMeshes = [...privateManifest.meshes, ...(publicManifest?.meshes ?? [])];
+const meshIds = new Set(allMeshes.map((m) => m.id));
+const meshCentroid = new Map(allMeshes.map((m) => [m.id, m.centroid] as const));
+const meshStructure = new Map(allMeshes.map((m) => [m.id, m.structureId] as const));
+// The bundle, though, may only mention meshes that ship in THIS edition.
+const shippedIds = new Set((publicEdition ? publicManifest!.meshes : privateManifest.meshes).map((m) => m.id));
+const droppedIds = new Set(Array.from(meshIds).filter((id) => !shippedIds.has(id)));
+const ships = (id: string): boolean => !droppedIds.has(id);
 
 
 // ---- load
@@ -154,6 +174,34 @@ const htmlFields: Record<string, string[]> = {
   topic: ['summary', 'imaging.normalAppearance'],
 };
 const get = (o: Record<string, unknown>, path: string): unknown => path.split('.').reduce<unknown>((v, k) => (v && typeof v === 'object' ? (v as Record<string, unknown>)[k] : undefined), o);
+let mniRefsStripped = 0, meshIdsDropped = 0;
+const emptied: string[] = [];
+/** Every field that holds manifest mesh ids: arrays of them, and the single-id form on waypoints / MniRefs. */
+const MESH_ID_ARRAYS = ['meshIds', 'highlightOnReveal'] as const;
+/** Drop mesh ids that name a mesh this edition does not ship (pathway waypoints, quiz reveals, lesion markers). */
+function walkMeshIdKeys(v: unknown, drop: (id: string) => void): void {
+  if (Array.isArray(v)) { for (const x of v) walkMeshIdKeys(x, drop); return; }
+  if (!v || typeof v !== 'object') return;
+  const o = v as Record<string, unknown>;
+  if (typeof o['meshId'] === 'string' && !ships(o['meshId'])) { drop(o['meshId']); delete o['meshId']; }
+  for (const key of MESH_ID_ARRAYS) {
+    if (!Array.isArray(o[key])) continue;
+    const before = o[key] as string[];
+    const after = before.filter((x) => typeof x !== 'string' || ships(x));
+    for (const x of before) if (typeof x === 'string' && !ships(x)) drop(x);
+    o[key] = after;
+  }
+  for (const x of Object.values(o)) walkMeshIdKeys(x, drop);
+}
+/** Collect every mesh id the bundle still names, so the gate below can be structural and not just a text search. */
+function collectMeshIds(v: unknown, out: Set<string>): void {
+  if (Array.isArray(v)) { for (const x of v) collectMeshIds(x, out); return; }
+  if (!v || typeof v !== 'object') return;
+  const o = v as Record<string, unknown>;
+  if (typeof o['meshId'] === 'string') out.add(o['meshId']);
+  for (const key of MESH_ID_ARRAYS) if (Array.isArray(o[key])) for (const x of o[key] as unknown[]) if (typeof x === 'string') out.add(x);
+  for (const x of Object.values(o)) collectMeshIds(x, out);
+}
 const bundle = { generated: new Date().toISOString(), bibliography, structures: {} as Record<string, unknown>, pathways: {} as Record<string, unknown>, syndromes: {} as Record<string, unknown>, glossary: {} as Record<string, unknown>, quiz: {} as Record<string, unknown>, topics: {} as Record<string, unknown>, meshToStructure: {} as Record<string, string>, wordCounts: wc };
 const searchDocs: { id: string; kind: string; name: string; aliases: string[]; summary: string }[] = [];
 for (const { e } of entries) {
@@ -161,12 +209,25 @@ for (const { e } of entries) {
   for (const f of htmlFields[e.kind] ?? []) { const v = get(e as unknown as Record<string, unknown>, f); if (typeof v === 'string') html[f] = render(v); }
   // resolve MniRef.meshId → centroid
   const resolved = JSON.parse(JSON.stringify(e), (k, v) => (k === 'mni' && v && typeof v === 'object' && 'meshId' in v && !('x' in v) && meshCentroid.has(String((v as { meshId: string }).meshId)))
-    ? (() => { const c = meshCentroid.get(String((v as { meshId: string }).meshId))!; const o = (v as { offset?: { x: number; y: number; z: number } }).offset ?? { x: 0, y: 0, z: 0 }; return { x: c[0]! + o.x, y: c[1]! + o.y, z: c[2]! + o.z, meshId: (v as { meshId: string }).meshId }; })() : v);
+    ? (() => {
+        const meshId = String((v as { meshId: string }).meshId);
+        const c = meshCentroid.get(meshId)!; const o = (v as { offset?: { x: number; y: number; z: number } }).offset ?? { x: 0, y: 0, z: 0 };
+        const p = { x: c[0]! + o.x, y: c[1]! + o.y, z: c[2]! + o.z };
+        // a ref through a mesh this edition does not ship keeps the MNI point (a coordinate, not atlas data) and
+        // loses the id, so "where to look" still works and nothing names a mesh that is not there
+        if (!ships(meshId)) { mniRefsStripped++; return p; }
+        return { ...p, meshId };
+      })() : v);
   if (e.kind === 'topic') html['sections'] = JSON.stringify(e.sections.map((sec) => render(sec.body)));
+  if (droppedIds.size) {
+    const had = Array.isArray((resolved as { meshIds?: unknown }).meshIds) && (resolved as { meshIds: string[] }).meshIds.length > 0;
+    walkMeshIdKeys(resolved, () => { meshIdsDropped++; });
+    if (had && !(resolved as { meshIds: string[] }).meshIds.length) emptied.push(e.id);
+  }
   const entry = { ...resolved, html };
   const target = e.kind === 'structure' || e.kind === 'cranial-nerve' ? bundle.structures : e.kind === 'pathway' ? bundle.pathways : e.kind === 'syndrome' ? bundle.syndromes : e.kind === 'glossary' ? bundle.glossary : e.kind === 'topic' ? bundle.topics : bundle.quiz;
   target[e.id] = entry;
-  if (e.kind === 'structure' || e.kind === 'cranial-nerve') for (const m of e.meshIds) bundle.meshToStructure[m] = e.id;
+  if (e.kind === 'structure' || e.kind === 'cranial-nerve') for (const m of e.meshIds) if (ships(m)) bundle.meshToStructure[m] = e.id;
   const name = 'name' in e ? e.name : (e as { term?: string }).term ?? e.id;
   const aliases = 'synonyms' in e ? e.synonyms : 'eponyms' in e ? e.eponyms : [];
   const summary = 'summary' in e ? e.summary : 'presentation' in e ? (e as { presentation: string }).presentation : 'definition' in e ? (e as { definition: string }).definition : '';
@@ -177,6 +238,26 @@ for (const s of Object.values(bundle.syndromes) as { id: string; localisation: {
   for (const sid of s.localisation.structures) { const st = bundle.structures[sid] as { clinical?: { syndromes: string[] } } | undefined; if (st?.clinical && !st.clinical.syndromes.includes(s.id)) st.clinical.syndromes.push(s.id); }
 }
 mkdirSync(OUT, { recursive: true });
-writeFileSync(join(OUT, 'content.json'), JSON.stringify(bundle));
-writeFileSync(join(OUT, 'search-index.json'), JSON.stringify(searchDocs));
-console.log(`wrote public/data/content.json (${(JSON.stringify(bundle).length / 1024).toFixed(0)} KB) and search-index.json (${searchDocs.length} docs)`);
+const contentName = publicEdition ? 'content.public.json' : 'content.json';
+const searchName = publicEdition ? 'search-index.public.json' : 'search-index.json';
+const bundleText = JSON.stringify(bundle);
+const searchText = JSON.stringify(searchDocs);
+if (publicEdition) {
+  // hard gate, structural first: no field that holds a mesh id may name one this edition does not ship
+  const named = new Set<string>();
+  collectMeshIds(bundle, named);
+  for (const id of Object.keys(bundle.meshToStructure)) named.add(id);
+  const structural = Array.from(named).filter((id) => !ships(id));
+  if (structural.length) { console.error(`--public: ${structural.length} excluded mesh id(s) still named by the bundle: ${structural.slice(0, 12).join(', ')}`); process.exit(1); }
+  // then as text, so a stray mention in prose or a rendered link is caught too. A handful of ids are shared by a
+  // mesh and the content entry that describes it (filum-terminale, the cord segment blocks); those entries keep
+  // their own id — the structural pass above already proved no mesh field points at them.
+  const alsoAnEntryId = new Set(Array.from(droppedIds).filter((id) => byId.has(id)));
+  const leaked = Array.from(droppedIds).filter((id) => !alsoAnEntryId.has(id) && (bundleText.includes(`"${id}"`) || bundleText.includes(`/${id}`) || searchText.includes(`"${id}"`)));
+  if (leaked.length) { console.error(`--public: ${leaked.length} excluded mesh id(s) survive in the bundle text: ${leaked.slice(0, 12).join(', ')}`); process.exit(1); }
+  if (alsoAnEntryId.size) console.log(`public edition: ${alsoAnEntryId.size} ids are both an excluded mesh and an authored entry, kept as entry ids: ${Array.from(alsoAnEntryId).sort().join(', ')}`);
+}
+writeFileSync(join(OUT, contentName), bundleText);
+writeFileSync(join(OUT, searchName), searchText);
+console.log(`wrote public/data/${contentName} (${(bundleText.length / 1024).toFixed(0)} KB) and ${searchName} (${searchDocs.length} docs)`);
+if (droppedIds.size) console.log(`${publicEdition ? 'public' : 'private'} edition: ${droppedIds.size} meshes not shipped; ${meshIdsDropped} mesh references dropped from the bundle, ${mniRefsStripped} MNI refs kept their coordinate without a mesh id, ${emptied.length} entries left with no mesh`);

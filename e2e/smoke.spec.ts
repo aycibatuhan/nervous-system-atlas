@@ -226,3 +226,188 @@ test('interaction budget: a drag runs no hover raycasts, the view settles and th
     expect(idle1 - idle0).toBeLessThanOrEqual(10);
   }
 });
+
+// ---- PAM50 spinal levels on the cord slices ------------------------------------
+type SpineWin = { atlas: {
+  store: { get(): { loaded: { cord: boolean }; selectedId: string | null; cordLevel: number | null }; set(p: Record<string, unknown>): void };
+  spine: { byId: Map<number, { name: string; meshId: string; region: string }> } | null;
+  uniforms: { uHasSpine: { value: number }; uSpineSel: { value: number }; uSpineHover: { value: number } };
+  sm: { camera: { fov: number; up: { set(x: number, y: number, z: number): void }; near: number; far: number; updateProjectionMatrix(): void };
+        controls: { target: { set(x: number, y: number, z: number): void }; update(): void };
+        moveCamera(p: { x: number; y: number; z: number }, t: { x: number; y: number; z: number }, ms: number): void; requestRender(): void };
+} };
+
+/** Point the camera straight down the cord at a world point, near-orthographically (see scripts/shots-cord.mjs). */
+async function lookDownCord(page: Page, at: { x: number; y: number; z: number }, half = 22): Promise<void> {
+  await page.evaluate(([at, half]) => {
+    const a = (window as unknown as SpineWin).atlas;
+    a.sm.controls.target.set(at.x, at.y, at.z);
+    a.sm.camera.up.set(0, 1, 0);
+    a.sm.camera.fov = 6;
+    const dist = (half / Math.tan((a.sm.camera.fov * Math.PI) / 360)) * 1.05;
+    a.sm.moveCamera({ x: at.x, y: at.y, z: at.z + dist }, at, 0);
+    a.sm.camera.near = 1; a.sm.camera.far = 4000; a.sm.camera.updateProjectionMatrix();
+    a.sm.controls.update(); a.sm.requestRender();
+  }, [at, half] as const);
+  await page.waitForTimeout(1200);
+}
+
+test('cord slices: the spinal level under the cursor is named, and clicking it selects the cord segment', async ({ page }) => {
+  test.setTimeout(180_000);
+  const errorsBefore = errors.length;
+  await boot(page);
+  await page.waitForFunction(() => (window as unknown as { atlas: { store: { get(): { loaded: { volume: boolean } } } } }).atlas.store.get().loaded.volume === true, null, { timeout: 120_000 });
+  // the C5 segment on our own centreline, as atlas-pam50 measured it
+  const c5 = await page.evaluate(async () => {
+    const r = await fetch('data/volumes/cord_levels.json');
+    const j = (await r.json()) as { spinalLevels: { name: string; top: number[]; bottom: number[] }[] };
+    const l = j.spinalLevels.find((x) => x.name === 'C5')!;
+    return { x: (l.top[0]! + l.bottom[0]!) / 2, y: (l.top[1]! + l.bottom[1]!) / 2, z: (l.top[2]! + l.bottom[2]!) / 2 };
+  });
+  expect(c5.z).toBeLessThan(-110);
+  // cord MRI on, only the axial slice, no meshes at all so the raycast can only land on the slice plane
+  await page.evaluate((c5) => {
+    const a = (window as unknown as SpineWin).atlas;
+    a.store.set({ cordMri: true, contrast: 't2w', visibleSystems: new Set(), shownStructures: new Set(), hiddenStructures: new Set(),
+      overlay: { opacity: 0.75, showAllLabels: true, territory: false, tracts: false },
+      slices: { axial: Math.round(c5.z), coronal: Math.round(c5.y), sagittal: Math.round(c5.x), visible: { axial: true, coronal: false, sagittal: false }, pinned: true } });
+  }, c5);
+  await page.waitForFunction(() => (window as unknown as SpineWin).atlas.store.get().loaded.cord === true, null, { timeout: 120_000 });
+  await page.waitForFunction(() => (window as unknown as SpineWin).atlas.spine !== null, null, { timeout: 60_000 });
+  // the level volume and its LUT reached the shader
+  expect(await page.evaluate(() => (window as unknown as SpineWin).atlas.uniforms.uHasSpine.value)).toBe(1);
+  expect(await page.evaluate(() => (window as unknown as SpineWin).atlas.spine!.byId.size)).toBe(30);
+
+  await lookDownCord(page, c5);
+  const box = (await page.locator('#gl').boundingBox())!;
+  const cx = box.x + box.width / 2, cy = box.y + box.height / 2;
+  await page.mouse.move(cx - 30, cy - 30);
+  await page.mouse.move(cx, cy);
+  // hovering the cord slice names the level in the MNI readout and lights that level up on the slice
+  await expect.poll(() => page.locator('.hud').textContent(), { timeout: 30_000 }).toMatch(/C5 · cervical segment/);
+  expect(await page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().cordLevel)).toBe(5);
+  expect(await page.evaluate(() => (window as unknown as SpineWin).atlas.uniforms.uSpineHover.value)).toBe(1 << 5);
+
+  // clicking the level selects the cord segment that contains it, and the shader gets its outline mask
+  await page.mouse.click(cx, cy);
+  await expect.poll(() => page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().selectedId), { timeout: 20_000 }).toBe('spinal-segment-cervical');
+  expect(await page.evaluate(() => (window as unknown as SpineWin).atlas.uniforms.uSpineSel.value)).toBe(0b111111110);
+
+  // one level lower down the cord the readout follows the level, not the click
+  const t10 = await page.evaluate(async () => {
+    const r = await fetch('data/volumes/cord_levels.json');
+    const j = (await r.json()) as { spinalLevels: { name: string; top: number[]; bottom: number[] }[] };
+    const l = j.spinalLevels.find((x) => x.name === 'T10')!;
+    return { x: (l.top[0]! + l.bottom[0]!) / 2, y: (l.top[1]! + l.bottom[1]!) / 2, z: (l.top[2]! + l.bottom[2]!) / 2 };
+  });
+  await page.evaluate((t10) => {
+    const a = (window as unknown as SpineWin).atlas;
+    a.store.set({ slices: { axial: Math.round(t10.z), coronal: Math.round(t10.y), sagittal: Math.round(t10.x), visible: { axial: true, coronal: false, sagittal: false }, pinned: true } });
+  }, t10);
+  await lookDownCord(page, t10);
+  await page.mouse.move(cx - 30, cy - 30);
+  await page.mouse.move(cx, cy);
+  await expect.poll(() => page.locator('.hud').textContent(), { timeout: 30_000 }).toMatch(/T10 · thoracic segment/);
+  await page.mouse.click(cx, cy);
+  await expect.poll(() => page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().selectedId), { timeout: 20_000 }).toBe('spinal-segment-thoracic');
+  expect(errors.slice(errorsBefore).filter((e) => !/favicon/.test(e))).toEqual([]);
+});
+
+// ---- about and credits (#/about) -------------------------------------------------
+type AboutWin = { atlas: { manifest: { edition?: string; sources: Record<string, { license: string; citation: string }>; licenses: Record<string, unknown> } } };
+
+/** One round trip that reads the whole credits table out of the DOM (a per-row locator loop is far too slow here). */
+const auditAbout = (page: Page) => page.evaluate(() => {
+  const m = (window as unknown as AboutWin).atlas.manifest;
+  const rows = [...document.querySelectorAll('#right .content:not([hidden]) .about-sources tbody tr')];
+  return {
+    manifestSources: Object.keys(m.sources).sort(),
+    manifestLicences: Object.keys(m.licenses).length,
+    edition: m.edition ?? 'private',
+    rows: rows.map((r) => ({
+      id: (r as HTMLElement).dataset['source'] ?? '',
+      licenceHref: r.querySelector('.about-lic a')?.getAttribute('href') ?? '',
+      licenceName: r.querySelector('.about-lic a')?.textContent ?? '',
+      citation: r.querySelector('.cite-text')?.textContent ?? '',
+      sourceHref: r.querySelector('.src-link')?.getAttribute('href') ?? '',
+      meshes: r.querySelector('.num')?.textContent ?? '',
+      badge: !!r.querySelector('.badge-nc'),
+    })),
+    licenceSections: document.querySelectorAll('#right .content:not([hidden]) .licence-details').length,
+    editionTag: document.querySelector('#about-edition')?.textContent ?? '',
+    codeLicence: document.querySelector('#about-code-licence')?.getAttribute('href') ?? '',
+    dataLicence: document.querySelector('#about-data-licence')?.getAttribute('href') ?? '',
+  };
+});
+
+test('the About panel credits every data source in the manifest, each with a licence link', async ({ page }) => {
+  test.setTimeout(240_000);
+  const errorsBefore = errors.length;
+  await boot(page, '#/about');
+  const panel = page.locator('#right .content:not([hidden])');
+  await expect(panel.locator('h2').first()).toContainText('About and credits', { timeout: 60_000 });
+  await expect.poll(() => auditAbout(page).then((a) => a.rows.length), { timeout: 30_000 }).toBeGreaterThan(5);
+
+  const a = await auditAbout(page);
+  // one row per manifest source, with the same ids
+  expect(a.rows.map((r) => r.id).sort()).toEqual(a.manifestSources);
+  for (const r of a.rows) {
+    expect(r.licenceHref, `licence link of ${r.id}`).toMatch(/^https?:\/\//);
+    expect(r.licenceName.length, `licence name of ${r.id}`).toBeGreaterThan(3);
+    expect(r.citation.length, `citation of ${r.id}`).toBeGreaterThan(20);
+    expect(r.sourceHref, `download link of ${r.id}`).toMatch(/^https?:\/\//);
+    expect(Number(r.meshes), `mesh count of ${r.id}`).toBeGreaterThanOrEqual(0);
+  }
+  expect(a.rows.some((r) => r.badge), 'a restricted source is badged').toBe(a.edition === 'private');
+  expect(a.editionTag).toContain(a.edition);
+  expect(a.codeLicence).toMatch(/apache\.org\/licenses\/LICENSE-2\.0/);
+  expect(a.dataLicence).toMatch(/creativecommons\.org\/licenses\/by-sa\/4\.0/);
+  expect(a.licenceSections).toBe(a.manifestLicences);   // one expandable text per licence
+
+  await page.evaluate(() => { document.getElementById('right')!.scrollTop = 0; });
+  await page.screenshot({ path: 'qa/shots/about/about-panel.png' });
+  await panel.locator('.about-sources').scrollIntoViewIfNeeded();
+  await page.screenshot({ path: 'qa/shots/about/about-sources.png' });
+
+  // the verbatim licence text really loads out of public/data/licenses/
+  const cc = panel.locator('.licence-details', { hasText: 'Attribution-ShareAlike 4.0' }).first();
+  await cc.locator('summary').click();
+  await expect(cc.locator('.licence-text')).toContainText(/Creative Commons/i, { timeout: 30_000 });
+  await page.screenshot({ path: 'qa/shots/about/about-licence-text.png' });
+  expect(errors.slice(errorsBefore).filter((e) => !/favicon/.test(e))).toEqual([]);
+});
+
+test('every structure panel shows a Source line that opens the credits', async ({ page }) => {
+  test.setTimeout(240_000);
+  await boot(page, '#/structure/putamen');
+  const panel = page.locator('#right .content:not([hidden])');
+  await expect(panel.locator('h2').first()).toContainText(/Putamen/i, { timeout: 60_000 });
+  const line = panel.locator('.source-line').first();
+  await expect(line).toContainText('Source:', { timeout: 30_000 });
+  await expect(line.locator('a.src-credit').first()).toHaveAttribute('href', '#/about');
+  await expect(line.locator('.src-lic').first()).toContainText(/\(.+\)/);
+  await page.screenshot({ path: 'qa/shots/about/structure-source-line.png' });
+
+  const hash = (h: string) => page.evaluate((x) => { location.hash = x; }, h);
+  const sourceText = () => page.evaluate(() => document.querySelector('#right .content:not([hidden]) .source-line')?.textContent ?? '');
+
+  // a derived mesh says so, with the construction method in the tooltip
+  await hash('#/structure/spinal-segment-cervical');
+  await expect.poll(sourceText, { timeout: 60_000 }).toMatch(/Source:.*derived:/s);
+  expect((await page.getAttribute('#right .content:not([hidden]) .derived-tag', 'title'))!.length).toBeGreaterThan(40);
+
+  // a pathway credits its stations' sources too
+  await hash('#/pathway/pathway-lateral-corticospinal');
+  await expect.poll(sourceText, { timeout: 60_000 }).toContain('Source:');
+
+  // the credit link and the toolbar button both reach the About panel
+  await hash('#/structure/putamen');
+  await expect.poll(sourceText, { timeout: 60_000 }).toContain('Source:');
+  await panel.locator('.source-line a.src-credit').first().click();
+  await expect.poll(() => page.evaluate(() => location.hash), { timeout: 30_000 }).toBe('#/about');
+  await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText('About and credits', { timeout: 30_000 });
+  await hash('#/slice');
+  await page.locator('.about-btn').click();
+  await expect.poll(() => page.evaluate(() => location.hash), { timeout: 30_000 }).toBe('#/about');
+  await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText('About and credits', { timeout: 30_000 });
+});

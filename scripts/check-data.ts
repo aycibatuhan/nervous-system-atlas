@@ -1,13 +1,18 @@
 // Verifies public/data: every manifest mesh decodes (meshopt), triangle counts, bbox/centroid sanity, label ids exist.
-// usage: node scripts/check-data.ts [--deep] [glb paths...]
+// usage: node scripts/check-data.ts [--deep] [--manifest <file>] [--all] [glb paths...]
+//   --manifest  check this manifest instead of public/data/manifest.json. A bare name resolves inside
+//               public/data (manifest.public.json), a path anywhere (dist-public/data/manifest.json); the data
+//               directory is taken from wherever the manifest sits.
+//   --all       check every manifest in public/data (private, then public if it has been built).
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
-import { resolve } from 'node:path';
+import { resolve, dirname } from 'node:path';
 import { NodeIO } from '@gltf-transform/core';
 import { ALL_EXTENSIONS } from '@gltf-transform/extensions';
 import { MeshoptDecoder } from 'meshoptimizer';
 
-const DATA = resolve(process.cwd(), 'public/data');
+const DATA_DEFAULT = resolve(process.cwd(), 'public/data');
+let DATA = DATA_DEFAULT;
 const io = new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({ 'meshopt.decoder': MeshoptDecoder });
 
 interface GlbInfo { name: string; verts: number; tris: number; normals: boolean; min: number[]; max: number[]; ext: string[] }
@@ -38,20 +43,15 @@ async function inspect(file: string): Promise<GlbInfo> {
   return { name: meshes[0]!.getName(), verts: pos.getCount(), tris: idx ? idx.getCount() / 3 : 0, normals: !!prim.getAttribute('NORMAL'), min, max, ext };
 }
 
-async function main() {
-  const args = process.argv.slice(2);
-  const files = args.filter((a) => a.endsWith('.glb'));
-  if (files.length) {
-    for (const f of files) { const i = await inspect(f); console.log(f, JSON.stringify(i)); }
-    return;
-  }
-  const manifest = JSON.parse(readFileSync(resolve(DATA, 'manifest.json'), 'utf8'));
+async function check(manifestPath: string): Promise<number> {
+  DATA = dirname(manifestPath);
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
   const labels = JSON.parse(readFileSync(resolve(DATA, 'volumes/labels.json'), 'utf8'));
   let errors = 0; let bytes = 0; let tris = 0;
-  const ids = new Set<string>();
+  const meshIds = new Set<string>();
   for (const m of manifest.meshes) {
-    if (ids.has(m.id)) { console.error(`duplicate id ${m.id}`); errors++; }
-    ids.add(m.id);
+    if (meshIds.has(m.id)) { console.error(`duplicate id ${m.id}`); errors++; }
+    meshIds.add(m.id);
     const f = resolve(DATA, m.file);
     if (!existsSync(f)) { console.error(`missing file ${m.file}`); errors++; continue; }
     bytes += statSync(f).size; tris += m.triangles;
@@ -68,8 +68,9 @@ async function main() {
     if (!manifest.licenses[m.license]) { console.error(`${m.id}: unknown licence ${m.license}`); errors++; }
   }
   // volumes: the payload must gunzip to exactly shape[0]*shape[1]*shape[2] samples of the declared dtype
-  type Vol = { file: string; dtype: string; shape: number[]; bytes_raw?: number; space?: string; spacing?: number[]; affine_ras?: number[][] };
+  type Vol = { file: string; dtype: string; shape: number[]; bytes_raw?: number; space?: string; spacing?: number[]; affine_ras?: number[][]; lut?: string };
   let volBytes = 0;
+  const spineIdsInVolume = new Set<number>();
   for (const [k, v] of Object.entries(manifest.volumes as Record<string, Vol>)) {
     const f = resolve(DATA, v.file);
     if (!existsSync(f)) { console.error(`volume ${k} missing ${v.file}`); errors++; continue; }
@@ -79,6 +80,7 @@ async function main() {
     const expect = v.shape[0]! * v.shape[1]! * v.shape[2]! * (v.dtype === 'uint16' ? 2 : 1);
     if (raw.length !== expect) { console.error(`volume ${k}: ${raw.length} bytes, expected ${expect} for ${v.shape} ${v.dtype}`); errors++; }
     if (v.bytes_raw !== undefined && v.bytes_raw !== expect) { console.error(`volume ${k}: bytes_raw ${v.bytes_raw} != ${expect}`); errors++; }
+    if (k === 'labels_spine') for (const b of raw) if (b) spineIdsInVolume.add(b);
     // volumes off the brain grid must carry their own affine and match the grid they name
     const cordGrid = manifest.grids?.cord;
     if (v.space === 'cord') {
@@ -89,6 +91,39 @@ async function main() {
       }
     } else if (JSON.stringify(v.shape) !== JSON.stringify(manifest.grid.shape) && !v.spacing) {
       console.error(`volume ${k}: shape ${v.shape} is neither the brain grid nor a declared second grid`); errors++;
+    }
+  }
+  // the PAM50 spinal-level LUT (atlas-pam50): every id in labels_spine.u8.bin must resolve to a level whose
+  // cord segment block is a real mesh, so a level painted on a slice can be clicked into a selection
+  const spineVol = (manifest.volumes as Record<string, Vol>)['labels_spine'];
+  if (spineVol) {
+    if (spineVol.lut !== 'volumes/labels_spine.json') { console.error(`volume labels_spine: lut is ${spineVol.lut}, expected volumes/labels_spine.json`); errors++; }
+    const f = resolve(DATA, spineVol.lut ?? 'volumes/labels_spine.json');
+    if (!existsSync(f)) { console.error(`labels_spine.json missing (${spineVol.lut})`); errors++; }
+    else {
+      type Level = { name: string; region: string; regionName: string; meshId: string; structureId: string; colour: string; zMm?: number[] };
+      const sj = JSON.parse(readFileSync(f, 'utf8')) as { regions: Record<string, { name: string; meshId: string; levels: string[] }>; lut: Record<string, Level> };
+      const ids = Object.keys(sj.lut).map(Number).sort((a, b) => a - b);
+      if (ids.length !== 30 || ids[0] !== 1 || ids[29] !== 30) { console.error(`labels_spine.json: expected ids 1..30, got ${ids.length} (${ids[0]}..${ids[ids.length - 1]})`); errors++; }
+      for (let n = 1; n < ids.length; n++) if (ids[n] !== ids[n - 1]! + 1) { console.error(`labels_spine.json: id gap at ${ids[n - 1]} -> ${ids[n]}`); errors++; break; }
+      const names = new Set<string>(); const colours = new Set<string>();
+      let prevTop = Infinity;
+      for (const id of ids) {
+        const e = sj.lut[String(id)]!;
+        if (!/^[CTLS]\d+$/.test(e.name)) { console.error(`labels_spine.json ${id}: odd level name ${e.name}`); errors++; }
+        if (names.has(e.name)) { console.error(`labels_spine.json: duplicate level ${e.name}`); errors++; }
+        names.add(e.name);
+        if (!/^#[0-9A-Fa-f]{6}$/.test(e.colour)) { console.error(`labels_spine.json ${e.name}: bad colour ${e.colour}`); errors++; }
+        if (colours.has(e.colour)) { console.error(`labels_spine.json ${e.name}: colour ${e.colour} repeats`); errors++; }
+        colours.add(e.colour);
+        if (!sj.regions[e.region]) { console.error(`labels_spine.json ${e.name}: unknown region ${e.region}`); errors++; }
+        else if (sj.regions[e.region]!.meshId !== e.meshId) { console.error(`labels_spine.json ${e.name}: meshId ${e.meshId} != region ${e.region}`); errors++; }
+        if (!meshIds.has(e.meshId)) { console.error(`labels_spine.json ${e.name}: meshId ${e.meshId} is not a manifest mesh`); errors++; }
+        // levels run rostral -> caudal, so each level's top must sit at or below the previous one's
+        if (e.zMm) { if (e.zMm[1]! > prevTop + 0.5) { console.error(`labels_spine.json ${e.name}: z ${e.zMm} is above the level before it`); errors++; } prevTop = e.zMm[1]!; }
+      }
+      for (const id of spineIdsInVolume) if (!sj.lut[String(id)]) { console.error(`labels_spine.u8.bin: id ${id} has no LUT entry`); errors++; }
+      console.log(`spinal levels: ${ids.length} in ${Object.keys(sj.regions).length} regions, ${spineIdsInVolume.size} present in the volume`);
     }
   }
   if (manifest.grids?.cord) {
@@ -102,7 +137,28 @@ async function main() {
     console.log(`cord grid ${g.shape.join('x')} at ${g.spacing[0]} mm, z ${zmin.toFixed(1)}..${zmax.toFixed(1)} mm, source ${g.source}`);
   }
   console.log(`volumes: ${(volBytes / 1e6).toFixed(2)} MB shipped`);
-  console.log(`${manifest.meshes.length} meshes, ${(bytes / 1e6).toFixed(1)} MB, ${(tris / 1e6).toFixed(2)} M triangles, ${errors} error(s)`);
+  console.log(`${manifestPath.replace(process.cwd() + '/', '')} (${manifest.edition ?? 'private'} edition): ${manifest.meshes.length} meshes, ${(bytes / 1e6).toFixed(1)} MB, ${(tris / 1e6).toFixed(2)} M triangles, ${errors} error(s)`);
+  return errors;
+}
+
+async function main() {
+  const args = process.argv.slice(2);
+  const files = args.filter((a) => a.endsWith('.glb'));
+  if (files.length) {
+    for (const f of files) { const i = await inspect(f); console.log(f, JSON.stringify(i)); }
+    return;
+  }
+  const at = args.indexOf('--manifest');
+  const wanted = at >= 0 && args[at + 1] ? [args[at + 1]!] : args.includes('--all') ? ['manifest.json', 'manifest.public.json'] : ['manifest.json'];
+  let errors = 0;
+  for (const w of wanted) {
+    const p = w.includes('/') ? resolve(process.cwd(), w) : resolve(DATA_DEFAULT, w);
+    if (!existsSync(p)) {
+      if (args.includes('--all')) { console.log(`skipping ${w}: not built`); continue; }
+      console.error(`missing manifest ${p}`); process.exit(1);
+    }
+    errors += await check(p);
+  }
   if (errors) process.exit(1);
 }
 main();
