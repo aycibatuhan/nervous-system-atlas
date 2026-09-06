@@ -1,0 +1,148 @@
+{
+ "kind": "syndrome",
+ "id": "syn-top-of-basilar",
+ "name": "Top of the basilar syndrome",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "artery-basilar",
+   "artery-pca",
+   "thalamus",
+   "level-midbrain-superior-colliculus",
+   "rimlf",
+   "lobe-occipital"
+  ],
+  "side": "bilateral",
+  "arteryId": "artery-basilar"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -20,
+   "z": -5
+  },
+  "radiusMm": 12
+ },
+ "presentation": "A patient suddenly becomes drowsy or briefly unresponsive and, on waking, has vertical gaze palsy, pupils that are small or unequal and react poorly, sometimes skew deviation, and visual field loss that can amount to cortical blindness. Some report vivid formed hallucinations or confabulate cheerfully. Limb weakness is often surprisingly mild for such a dramatic picture, because the embolus lodged at the basilar bifurcation and spared the pons.",
+ "deficits": [
+  {
+   "modality": "consciousness",
+   "side": "bilateral",
+   "distribution": "rostral brainstem",
+   "sign": "Somnolence or coma from the paramedian midbrain and thalamic reticular projections",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "vertical",
+   "sign": "Vertical gaze palsy, convergence-retraction nystagmus, skew deviation",
+   "substrate": "pathway-vertical-gaze"
+  },
+  {
+   "modality": "pupil",
+   "side": "bilateral",
+   "distribution": "both pupils",
+   "sign": "Small, unequal or poorly reactive pupils from pretectal and third nerve nuclear involvement",
+   "substrate": "pathway-pupillary-light-reflex"
+  },
+  {
+   "modality": "visual-field",
+   "side": "bilateral",
+   "distribution": "both hemifields",
+   "sign": "Hemianopia or cortical blindness from bilateral PCA infarcts",
+   "substrate": "pathway-visual"
+  },
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "thalamus and medial temporal",
+   "sign": "Amnesia, confusion, peduncular hallucinosis",
+   "substrate": "thalamus-mediodorsal"
+  }
+ ],
+ "reasoning": "An embolus arriving up the basilar artery stops at its bifurcation, where it obstructs the thalamoperforating and mesencephalic perforators and one or both posterior cerebral arteries. The paramedian midbrain contains the rostral interstitial nucleus of the MLF and the posterior commissure, which generate and cross the vertical gaze commands, the oculomotor nuclei with their Edinger–Westphal components, and the ascending reticular activating system, so vertical gaze, pupils and arousal are all affected bilaterally. The thalamoperforators supply the medial thalamus, adding amnesia and confusion, and the posterior cerebral arteries carry the crossed visual pathways to both occipital lobes, so bilateral occlusion causes cortical blindness with preserved pupils when the pretectum is spared. The corticospinal tracts pass through the crus and pons below the level of the embolus and cross far below in the medulla, so the classic case has little weakness. When the clot extends back into the basilar trunk the syndrome merges with a basilar occlusion and the outcome becomes far worse.",
+ "imagingFindings": [
+  {
+   "pathology": "Basilar tip occlusion",
+   "modality": "CTA",
+   "finding": "Filling defect at the basilar bifurcation with absent flow in one or both P1 segments and the thalamoperforators."
+  },
+  {
+   "pathology": "Acute infarcts",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the paramedian midbrain, medial thalami and occipital lobes, frequently bilateral.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Hyperdense basilar",
+   "modality": "CT",
+   "finding": "Dense basilar artery on non-contrast CT; check when a patient presents with unexplained coma.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Cardioembolism",
+  "Vertebrobasilar atherosclerosis",
+  "Vertebral artery dissection"
+ ],
+ "mimics": [
+  {
+   "name": "Metabolic coma",
+   "howToDistinguish": "No vertical gaze palsy or pupillary asymmetry; symmetric brainstem reflexes"
+  },
+  {
+   "name": "Non-convulsive status epilepticus",
+   "howToDistinguish": "EEG; fluctuating awareness without the ocular signs"
+  },
+  {
+   "name": "Artery of Percheron infarct",
+   "howToDistinguish": "Bilateral medial thalamic infarcts without occipital involvement"
+  }
+ ],
+ "management": [
+  "Emergency thrombectomy for basilar occlusion",
+  "Airway protection when drowsy",
+  "Look for a cardiac source of embolism"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    100,
+    100
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -22,
+   "z": -5
+  },
+  "label": "paramedian midbrain and medial thalami"
+ },
+ "cameraPreset": "anterior"
+}

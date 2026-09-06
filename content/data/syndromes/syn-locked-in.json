@@ -1,0 +1,130 @@
+{
+ "kind": "syndrome",
+ "id": "syn-locked-in",
+ "name": "Locked-in syndrome",
+ "eponyms": [
+  "de-efferented state"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "level-pons-caudal",
+   "pyramid",
+   "pontine-nuclei",
+   "abducens-nucleus",
+   "artery-basilar"
+  ],
+  "side": "bilateral",
+  "arteryId": "artery-basilar"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -28,
+   "z": -35
+  },
+  "radiusMm": 12
+ },
+ "presentation": "A patient lies motionless and mute after a brainstem stroke and is assumed to be comatose, until a nurse notices that they blink on request and can look up and down. They cannot move any limb, cannot speak or swallow, and cannot look to either side, but they hear, see, feel and understand everything. Ask for eye movements before concluding that a patient with bilateral pontine signs is unconscious.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "all four limbs",
+   "sign": "Quadriplegia with bilateral extensor plantars",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "bulbar",
+   "side": "bilateral",
+   "distribution": "face, jaw, tongue, pharynx, larynx",
+   "sign": "Anarthria and aphagia; the face is paralyzed bilaterally",
+   "substrate": "pathway-corticobulbar"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "horizontal",
+   "sign": "Loss of horizontal gaze with preserved vertical movement and blinking",
+   "substrate": "pathway-horizontal-gaze"
+  },
+  {
+   "modality": "consciousness",
+   "side": "n/a",
+   "distribution": "preserved",
+   "sign": "Full awareness; EEG normal; sleep-wake cycles intact",
+   "substrate": "reticular-formation"
+  }
+ ],
+ "reasoning": "A lesion of the ventral pons destroys the corticospinal and corticobulbar fibers of both sides as they pass through the basis pontis on their way to the pyramidal decussation in the medulla, so every voluntary movement below the midbrain is lost bilaterally: limbs, face, tongue, palate and larynx. The horizontal gaze machinery, the abducens nuclei and the paramedian pontine reticular formation, sits in the caudal pontine tegmentum and is usually caught as well, whereas the vertical gaze center in the rostral midbrain, the oculomotor nuclei and the levator palpebrae are supplied from above the occlusion and survive, leaving vertical gaze and blinking as the only channels of output. The reticular activating system in the pontine and midbrain tegmentum is spared in the classic ventral lesion, so consciousness, sensation via the intact lemniscal and spinothalamic pathways in the tegmentum, and hearing are all preserved. The dissociation between an intact mind and a paralyzed body is the syndrome; when the tegmentum is also infarcted the patient is comatose instead.",
+ "imagingFindings": [
+  {
+   "pathology": "Ventral pontine infarct",
+   "modality": "MRI",
+   "finding": "Bilateral restricted diffusion in the basis pontis with relative sparing of the tegmentum; basilar occlusion on angiography.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Pontine hemorrhage or myelinolysis",
+   "modality": "MRI",
+   "finding": "Central pontine T2 hyperintensity (osmotic demyelination) or hematoma producing the same syndrome.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Basilar artery thrombosis or embolism",
+  "Pontine hemorrhage",
+  "Central pontine myelinolysis",
+  "Trauma or tumor of the ventral pons"
+ ],
+ "mimics": [
+  {
+   "name": "Coma",
+   "howToDistinguish": "Locked-in patients blink and look vertically on command; EEG shows a normal awake rhythm"
+  },
+  {
+   "name": "Severe Guillain–Barré syndrome",
+   "howToDistinguish": "Peripheral, areflexic, ophthalmoplegia complete including vertical movements, normal brain MRI"
+  },
+  {
+   "name": "Akinetic mutism",
+   "howToDistinguish": "Patient can move but does not; lesion is frontal or thalamic"
+  }
+ ],
+ "management": [
+  "Establish yes/no communication with eye movements or blinks immediately and inform the team",
+  "Airway, nutrition and pressure care as for quadriplegia",
+  "Consider thrombectomy when presenting within the window with a basilar occlusion"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    75
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    78,
+    79
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -28,
+   "z": -35
+  },
+  "label": "ventral pons"
+ },
+ "cameraPreset": "lateral-l"
+}

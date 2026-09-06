@@ -1,0 +1,131 @@
+{
+ "kind": "syndrome",
+ "id": "syn-dejerine-medial-medullary",
+ "name": "Medial medullary syndrome (Dejerine)",
+ "eponyms": [
+  "Dejerine syndrome",
+  "alternating hypoglossal hemiplegia"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "pyramid",
+   "medial-lemniscus",
+   "hypoglossal-nucleus",
+   "level-medulla-olive",
+   "anterior-spinal-artery",
+   "artery-vertebral"
+  ],
+  "side": "ipsilateral",
+  "level": "medulla-olive",
+  "arteryId": "anterior-spinal-artery"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -3,
+   "y": -40,
+   "z": -50
+  },
+  "radiusMm": 6
+ },
+ "presentation": "A patient develops weakness of one arm and leg with the face spared, loses vibration and position sense on the same weak side, and on protruding the tongue it deviates to the other side, the side opposite the weakness. Pain and temperature sensation are normal. This contralateral limb weakness with ipsilateral tongue palsy is one of the classic crossed brainstem syndromes.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm and leg, face spared",
+   "sign": "Hemiparesis with upper motor neuron signs (pyramid)",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "sensory-vibration-proprioception",
+   "side": "contralateral",
+   "distribution": "arm and leg",
+   "sign": "Loss of vibration and position sense (medial lemniscus)",
+   "substrate": "pathway-dcml"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "tongue",
+   "sign": "Lower motor neuron tongue weakness: deviation toward the lesion, later atrophy and fasciculation",
+   "substrate": "hypoglossal-nucleus"
+  },
+  {
+   "modality": "sensory-pain-temp",
+   "side": "n/a",
+   "distribution": "spared",
+   "sign": "Pain and temperature intact (spinothalamic tract lies laterally)",
+   "substrate": "pathway-lateral-spinothalamic"
+  }
+ ],
+ "reasoning": "The paramedian medulla is fed by the anterior spinal artery and paramedian vertebral branches and contains three structures in a vertical row: the pyramid ventrally, the medial lemniscus behind it, and the hypoglossal nucleus and nerve dorsally. The pyramid carries corticospinal fibers that have not yet crossed, because the pyramidal decussation lies just below, so the weakness is contralateral and spares the face, whose corticobulbar fibers have already left the tract above this level. The medial lemniscus, formed by the internal arcuate fibers that crossed at the sensory decussation, carries contralateral vibration and proprioception, so those modalities are lost on the same side as the weakness. The hypoglossal nucleus and its emerging root are ipsilateral structures, so the tongue is paralyzed on the side of the lesion and pushes toward it when protruded, because the intact genioglossus pushes across. The spinothalamic tract lies far laterally, out of the anterior spinal territory, which is why pain and temperature are preserved and why the picture is the mirror image of the lateral medullary syndrome.",
+ "imagingFindings": [
+  {
+   "pathology": "Medial medullary infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the paramedian ventral medulla, sometimes bilateral, adjacent to the anterior median fissure.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Vertebral artery disease",
+   "modality": "MRA",
+   "finding": "Vertebral artery stenosis, occlusion or dissection on the side of the tongue palsy."
+  }
+ ],
+ "commonCauses": [
+  "Vertebral artery atherosclerosis involving the paramedian branches",
+  "Anterior spinal artery occlusion",
+  "Vertebral dissection"
+ ],
+ "mimics": [
+  {
+   "name": "Capsular lacune",
+   "howToDistinguish": "Face involved, no tongue lower motor neuron signs, no proprioceptive loss"
+  },
+  {
+   "name": "Lateral medullary syndrome",
+   "howToDistinguish": "No weakness; crossed pain-temperature loss; bulbar palsy"
+  },
+  {
+   "name": "Cervical cord lesion",
+   "howToDistinguish": "Ipsilateral weakness and proprioceptive loss, no tongue signs"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment",
+  "Antithrombotic therapy and vertebral artery evaluation",
+  "Speech therapy for the dysarthria"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    215,
+    216
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    78
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -3,
+   "y": -40,
+   "z": -50
+  },
+  "label": "paramedian medulla: pyramid, medial lemniscus, hypoglossal nucleus"
+ },
+ "cameraPreset": "anterior"
+}

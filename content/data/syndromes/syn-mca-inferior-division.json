@@ -1,0 +1,126 @@
+{
+ "kind": "syndrome",
+ "id": "syn-mca-inferior-division",
+ "name": "Middle cerebral artery inferior division infarction",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "territory-mca",
+   "artery-mca-inferior-division",
+   "area-wernicke",
+   "gyrus-angular",
+   "gyrus-supramarginal",
+   "lobe-temporal"
+  ],
+  "side": "contralateral",
+  "arteryId": "artery-mca-inferior-division",
+  "territoryId": "territory-mca"
+ },
+ "lesionMarker": {
+  "kind": "territory",
+  "meshIds": [
+   "territory-mca-temporal-l",
+   "territory-mca-parietal-l"
+  ]
+ },
+ "presentation": "The patient is brought in speaking fluently but nonsensically, unaware that anything is wrong, and is sometimes mistaken for being confused or psychotic. Examination shows a superior quadrantanopia or hemianopia and, in the dominant hemisphere, poor comprehension and repetition with paraphasic speech; in the non-dominant hemisphere there is neglect, constructional apraxia and flat prosody. Weakness is absent or minimal, which makes the stroke easy to miss.",
+ "deficits": [
+  {
+   "modality": "language",
+   "side": "n/a",
+   "distribution": "dominant hemisphere",
+   "sign": "Fluent (Wernicke) aphasia with impaired comprehension and repetition",
+   "substrate": "area-wernicke"
+  },
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "superior quadrant or hemianopia",
+   "sign": "Field defect from the temporal optic radiation (Meyer's loop)",
+   "substrate": "pathway-visual"
+  },
+  {
+   "modality": "neglect",
+   "side": "contralateral",
+   "distribution": "non-dominant hemisphere",
+   "sign": "Hemispatial neglect, anosognosia, aprosodia",
+   "substrate": "gyrus-angular"
+  },
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "dominant parietal",
+   "sign": "Gerstmann features (acalculia, agraphia, finger agnosia, right-left confusion)",
+   "substrate": "gyrus-angular"
+  }
+ ],
+ "reasoning": "The inferior division supplies the temporal lobe and the inferior parietal lobule: the superior temporal gyrus with Wernicke's area, the angular and supramarginal gyri, and the deep temporal white matter through which Meyer's loop of the optic radiation runs. The motor and somatosensory cortices belong to the superior division, so strength and primary sensation are preserved. The optic radiation carries the contralateral visual field: fibers for the upper field pass through the temporal lobe, so the defect is a contralateral superior quadrantanopia, becoming a full hemianopia when the parietal fibers are also involved. Language comprehension depends on the dominant posterior superior temporal gyrus, hence fluent aphasia with poor comprehension. The corresponding non-dominant parietal cortex builds the map of contralateral space, so its loss gives neglect of the left side and lack of awareness of the deficit. Because the corticospinal tract is untouched there is no crossed weakness to draw attention to the stroke, and the agitation of a Wernicke aphasic is often misread as a psychiatric emergency.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute inferior-division infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the posterior superior temporal gyrus and inferior parietal lobule with preserved frontal cortex and deep nuclei.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Chronic infarct",
+   "modality": "MRI",
+   "finding": "Encephalomalacia of the posterior Sylvian region with ex-vacuo dilatation of the temporal horn.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Cardioembolism",
+  "Carotid atheroembolism"
+ ],
+ "mimics": [
+  {
+   "name": "Acute psychosis or delirium",
+   "howToDistinguish": "Field defect, paraphasias and neglect point to a focal lesion; DWI positive"
+  },
+  {
+   "name": "Herpes encephalitis",
+   "howToDistinguish": "Fever, seizures, temporal T2 change crossing vascular boundaries"
+  },
+  {
+   "name": "Transcortical sensory aphasia",
+   "howToDistinguish": "Repetition preserved; watershed location"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment as for any MCA occlusion",
+  "Formal language and neglect assessment; neglect predicts poor rehabilitation outcome",
+  "Driving restriction because of the field defect"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    473,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    55,
+    59
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -55,
+   "y": -40,
+   "z": 15
+  },
+  "label": "posterior superior temporal gyrus"
+ },
+ "cameraPreset": "lateral-l"
+}

@@ -1,0 +1,126 @@
+{
+ "kind": "syndrome",
+ "id": "syn-aphasia-conduction-global",
+ "name": "Conduction and global aphasia",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "gyrus-supramarginal",
+   "area-broca",
+   "area-wernicke",
+   "insula",
+   "artery-mca"
+  ],
+  "side": "left"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -50,
+   "y": -35,
+   "z": 30
+  },
+  "radiusMm": 10
+ },
+ "presentation": "In conduction aphasia the patient speaks fluently with frequent phonemic slips that they notice and try to correct, understands well, but cannot repeat even short phrases, which is the giveaway. In global aphasia, after a large left middle cerebral artery infarct, speech is reduced to a few stereotyped syllables, comprehension is nearly absent, repetition is impossible, and there is a dense right hemiplegia with hemianopia.",
+ "deficits": [
+  {
+   "modality": "language",
+   "side": "n/a",
+   "distribution": "dominant perisylvian",
+   "sign": "Conduction: fluent speech, good comprehension, repetition disproportionately impaired, phonemic paraphasias with self-correction",
+   "substrate": "gyrus-supramarginal"
+  },
+  {
+   "modality": "language",
+   "side": "n/a",
+   "distribution": "dominant hemisphere",
+   "sign": "Global: non-fluent output, poor comprehension, no repetition",
+   "substrate": "area-broca"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "face, arm and leg",
+   "sign": "Right hemiplegia in global aphasia",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "homonymous",
+   "sign": "Right hemianopia in global aphasia",
+   "substrate": "pathway-visual"
+  }
+ ],
+ "reasoning": "Repetition requires that the sound pattern decoded in Wernicke's area be passed forward to Broca's area for articulation, a route that runs through the arcuate fasciculus beneath the supramarginal gyrus and the insula. A lesion of the supramarginal gyrus or the underlying white matter disconnects the two intact language areas: comprehension and fluent production survive, but the transfer fails, so repetition collapses and the patient produces phonemic errors that their intact monitoring detects. Global aphasia is the sum of Broca and Wernicke aphasias, produced when the middle cerebral artery stem is occluded and the whole perisylvian region infarcts; because the infarct also takes the internal capsule and optic radiation, whose fibers serve the opposite side of the body and visual field after crossing in the brainstem and chiasm, the language loss is accompanied by contralateral hemiplegia and hemianopia. Both syndromes are uncrossed at the cortical level and reflect left hemisphere dominance for language. Global aphasia without hemiparesis is a clue to two separate emboli, one anterior and one posterior, sparing the motor strip.",
+ "imagingFindings": [
+  {
+   "pathology": "Supramarginal gyrus infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the left supramarginal gyrus and underlying arcuate fasciculus, sparing Broca's and Wernicke's areas.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Complete MCA infarct",
+   "modality": "MRI",
+   "finding": "Extensive left perisylvian infarct involving frontal, temporal and parietal opercula and the deep nuclei.",
+   "sequence": "DWI"
+  }
+ ],
+ "commonCauses": [
+  "Left MCA branch embolus (conduction)",
+  "Left MCA stem occlusion (global)",
+  "Left perisylvian hemorrhage"
+ ],
+ "mimics": [
+  {
+   "name": "Wernicke aphasia",
+   "howToDistinguish": "Comprehension poor in Wernicke, good in conduction aphasia"
+  },
+  {
+   "name": "Anarthria or mutism",
+   "howToDistinguish": "Comprehension and writing preserved in pure anarthria"
+  },
+  {
+   "name": "Transcortical aphasias",
+   "howToDistinguish": "Repetition preserved"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment; global aphasia with M1 occlusion is a thrombectomy indication",
+  "Speech therapy; prognosis of conduction aphasia is good, of global aphasia poor unless it evolves to Broca type",
+  "Assess and support communication with gesture and picture boards"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    290,
+    291
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    54,
+    56
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -50,
+   "y": -35,
+   "z": 30
+  },
+  "label": "left supramarginal gyrus over the arcuate fasciculus"
+ },
+ "cameraPreset": "lateral-l"
+}

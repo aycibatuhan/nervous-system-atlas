@@ -1,0 +1,133 @@
+{
+ "kind": "syndrome",
+ "id": "syn-lacunar-sensorimotor",
+ "name": "Sensorimotor lacunar stroke",
+ "eponyms": [],
+ "category": "lacunar",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "internal-capsule",
+   "thalamus-vpl",
+   "arteries-thalamoperforating",
+   "arteries-lenticulostriate"
+  ],
+  "side": "contralateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -19,
+   "y": -16,
+   "z": 7
+  },
+  "radiusMm": 7
+ },
+ "presentation": "Weakness and numbness of the face, arm and leg on one side develop together in an alert patient who speaks and sees normally. The pattern resembles a large hemispheric stroke but the patient has none of the cortical features and CT is normal or shows only a small deep lesion. It is the commonest of the lacunar syndromes to be over-investigated for a cortical cause.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "face, arm and leg",
+   "sign": "Hemiparesis with upper motor neuron signs",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "contralateral",
+   "distribution": "hemibody",
+   "sign": "Hemihypesthesia to all modalities",
+   "substrate": "thalamus-vpl"
+  },
+  {
+   "modality": "language",
+   "side": "n/a",
+   "distribution": "none",
+   "sign": "No aphasia, neglect or field defect",
+   "substrate": "area-broca"
+  }
+ ],
+ "reasoning": "The lesion sits at the boundary between the posterior limb of the internal capsule and the lateral thalamus, which is where the descending corticospinal tract and the ascending thalamocortical sensory radiation lie within a few millimeters of one another. It is supplied either by a lateral lenticulostriate branch of the middle cerebral artery or by a thalamogeniculate branch of the posterior cerebral artery, and an infarct slightly larger than the usual lacune spans both. The corticospinal tract has not yet crossed, and the sensory pathways have already crossed below, so both deficits appear on the contralateral side, together. What proves the lesion is deep rather than cortical is the absence of all cortical functions: the language areas, the parietal spatial cortex and the optic radiation are untouched, and the patient is alert with normal gaze. The differential from a small cortical infarct rests on this absence plus imaging, since a pure hemiparesis with hemianesthesia can also follow a striatocapsular infarct or an anterior choroidal artery infarct, the latter usually adding a field defect.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute lacune",
+   "modality": "MRI",
+   "finding": "Small (under 15 mm) focus of restricted diffusion in the posterior limb of the internal capsule and adjacent thalamus; CT is often normal in the first day.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Chronic lacune",
+   "modality": "MRI",
+   "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Hypertensive lipohyalinosis of a single perforating artery",
+  "Microatheroma at the perforator origin"
+ ],
+ "mimics": [
+  {
+   "name": "Cortical branch infarct",
+   "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
+  },
+  {
+   "name": "Small hemorrhage",
+   "howToDistinguish": "Hyperdense on CT; same sites"
+  },
+  {
+   "name": "Anterior choroidal artery infarct",
+   "howToDistinguish": "Adds a homonymous hemianopia"
+  }
+ ],
+ "management": [
+  "Antiplatelet therapy, statin and blood pressure control",
+  "Thrombolysis when presenting within the window and disabling",
+  "Early mobilization; prognosis for recovery is good"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    474,
+    474
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    482,
+    482
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    60
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -19,
+   "y": -16,
+   "z": 7
+  },
+  "label": "capsulothalamic junction"
+ },
+ "cameraPreset": "superior"
+}

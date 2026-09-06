@@ -1,0 +1,137 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cerebellar-hemispheric",
+ "name": "Cerebellar hemisphere syndrome",
+ "eponyms": [],
+ "category": "functional-pattern",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cerebellar-hemisphere",
+   "dentate-nucleus",
+   "superior-cerebellar-peduncle",
+   "cerebellum"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "cerebellar-hemisphere-l"
+  ]
+ },
+ "presentation": "The patient's arm and leg on one side are clumsy: the finger overshoots the target and wobbles as it approaches, rapid alternating movements are irregular, the heel slides off the shin, and the outstretched arm rebounds when released. Speech is slurred and scanning, the eyes show nystagmus that is coarser on looking toward the affected side, and the gait veers toward that side. Strength and sensation are normal and reflexes are pendular.",
+ "deficits": [
+  {
+   "modality": "cerebellar",
+   "side": "ipsilateral",
+   "distribution": "arm and leg",
+   "sign": "Dysmetria, intention tremor, dysdiadochokinesia, rebound, hypotonia",
+   "substrate": "pathway-cerebellar-circuits"
+  },
+  {
+   "modality": "cerebellar",
+   "side": "n/a",
+   "distribution": "speech",
+   "sign": "Scanning, slurred dysarthria",
+   "substrate": "cerebellar-hemisphere"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "gaze holding",
+   "sign": "Gaze-evoked nystagmus, coarser toward the lesion; saccadic dysmetria",
+   "substrate": "flocculonodular-lobe"
+  },
+  {
+   "modality": "gait",
+   "side": "ipsilateral",
+   "distribution": "gait",
+   "sign": "Veering and falling toward the side of the lesion",
+   "substrate": "cerebellar-hemisphere"
+  }
+ ],
+ "reasoning": "Each cerebellar hemisphere coordinates the limbs of its own side, a consequence of double crossing: its output through the dentate nucleus and superior cerebellar peduncle decussates in the midbrain to reach the contralateral thalamus and motor cortex, and the motor cortex then acts on the body through the corticospinal tract, which crosses back in the medulla. Signs of a hemispheric lesion are therefore ipsilateral, and any 'crossed' cerebellar sign means the lesion has moved above the decussation into the midbrain, thalamus or cortex. The lateral hemisphere and dentate plan and time skilled multi-joint movements, so their loss produces dysmetria, intention tremor and the decomposition of movement, while hypotonia and pendular reflexes reflect the loss of cerebellar facilitation of the motor cortex and gamma motor neurons. The cerebellum does not initiate movement or carry sensation, so power, reflex grading and sensation are normal and the deficit is one of accuracy. Nystagmus and the slow saccades reflect involvement of the flocculus and vermis or the outflow to the ocular motor nuclei. Acute unilateral causes are vascular; chronic unilateral causes are tumors, abscess and demyelination.",
+ "imagingFindings": [
+  {
+   "pathology": "Cerebellar infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the PICA, AICA or SCA territory of the hemisphere; watch for swelling.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Cerebellar tumor",
+   "modality": "MRI",
+   "finding": "Enhancing hemispheric mass (metastasis, hemangioblastoma with a cyst and mural nodule, pilocytic astrocytoma in children).",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Cerebellar abscess",
+   "modality": "MRI",
+   "finding": "Ring-enhancing lesion with central restricted diffusion, often from otitis or mastoiditis.",
+   "sequence": "DWI"
+  }
+ ],
+ "commonCauses": [
+  "Cerebellar infarct or hemorrhage",
+  "Metastasis or primary tumor",
+  "Abscess",
+  "Multiple sclerosis"
+ ],
+ "mimics": [
+  {
+   "name": "Sensory ataxia",
+   "howToDistinguish": "Worse with the eyes closed (Romberg), reduced vibration and position sense, absent reflexes"
+  },
+  {
+   "name": "Contralateral thalamic or frontal lesion",
+   "howToDistinguish": "Ataxia contralateral to the lesion, other cortical or thalamic signs"
+  },
+  {
+   "name": "Vestibular lesion",
+   "howToDistinguish": "Vertigo, no limb dysmetria"
+  }
+ ],
+ "management": [
+  "Treat the cause; monitor acute lesions for posterior fossa swelling",
+  "Physiotherapy with weighted tools and gait aids",
+  "Avoid sedatives and alcohol, which unmask cerebellar dysfunction"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    241,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -35,
+   "y": -60,
+   "z": -35
+  },
+  "label": "cerebellar hemisphere"
+ },
+ "examSequence": [
+  "Finger-nose with the target moved; look for terminal tremor and overshoot",
+  "Rapid alternating hand movements",
+  "Heel-shin",
+  "Rebound of the outstretched arms",
+  "Tandem gait and direction of veering",
+  "Gaze-evoked nystagmus in each direction"
+ ],
+ "cameraPreset": "posterior"
+}

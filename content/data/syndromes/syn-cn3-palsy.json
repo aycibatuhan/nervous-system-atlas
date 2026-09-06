@@ -1,0 +1,133 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cn3-palsy",
+ "name": "Oculomotor nerve palsy: pupil-involving versus pupil-sparing",
+ "eponyms": [],
+ "category": "compressive",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-03-oculomotor",
+   "oculomotor-nucleus",
+   "artery-pcom",
+   "sinus-cavernous"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-03-oculomotor-l"
+  ]
+ },
+ "presentation": "A patient presents with a drooping eyelid; when it is lifted, the eye is turned down and out and cannot look up, down or in, and the patient sees double. In one version the pupil on that side is large and does not react to light and the patient has a severe headache: this is an aneurysm until proven otherwise. In the other version, in a diabetic or hypertensive patient with periorbital ache, the pupil is normal and the palsy resolves in weeks.",
+ "deficits": [
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "medial, superior, inferior rectus and inferior oblique",
+   "sign": "Eye down and out with loss of adduction, elevation and depression; diplopia",
+   "substrate": "cn-03-oculomotor"
+  },
+  {
+   "modality": "other",
+   "side": "ipsilateral",
+   "distribution": "levator palpebrae",
+   "sign": "Complete ptosis",
+   "substrate": "cn-03-oculomotor"
+  },
+  {
+   "modality": "pupil",
+   "side": "ipsilateral",
+   "distribution": "one pupil",
+   "sign": "Fixed dilated pupil (compressive) or spared pupil (ischemic)",
+   "substrate": "pathway-pupillary-light-reflex"
+  }
+ ],
+ "reasoning": "The oculomotor nerve is the final, uncrossed motor pathway to four extraocular muscles, the levator and the pupillary sphincter, so all signs are on the side of the nerve. The parasympathetic pupillary fibers travel on the surface of the nerve, superomedially, immediately beneath the posterior communicating artery as the nerve passes forward from the interpeduncular fossa toward the cavernous sinus; an enlarging aneurysm at the junction of the internal carotid and posterior communicating arteries, an expanding uncus during herniation, or a tumor presses on these outer fibers first, so the pupil dilates early and sometimes before the muscles are affected. The vasa nervorum that fail in diabetes and hypertension supply the core of the nerve, where the somatic motor fibers run, while the surface pupillary fibers are nourished by the surrounding CSF and pial vessels and survive, hence a complete external palsy with a normal pupil. The rule is not absolute: partial or early compression can spare the pupil for a time, and ischemia occasionally involves it slightly, so a pupil-sparing but incomplete palsy, or a spared pupil that later dilates, still requires imaging of the posterior communicating artery. A nuclear lesion produces a different pattern with bilateral ptosis and contralateral superior rectus weakness, because those subnuclei are shared or crossed.",
+ "imagingFindings": [
+  {
+   "pathology": "Posterior communicating artery aneurysm",
+   "modality": "CTA",
+   "finding": "Saccular aneurysm at the ICA–PComm junction abutting the third nerve; CTA is the first test, catheter angiography if negative with high suspicion.",
+   "sequence": "CT contrast",
+   "timing": "Emergency"
+  },
+  {
+   "pathology": "Ischemic (microvascular) palsy",
+   "modality": "MRI",
+   "finding": "Normal nerve; imaging is done to exclude other causes and shows small vessel disease at most. Recovery in 6–12 weeks.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Uncal herniation",
+   "modality": "CT",
+   "finding": "Supratentorial mass with medial temporal displacement into the tentorial notch, effaced suprasellar cistern.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Posterior communicating artery aneurysm (pupil involved)",
+  "Diabetic or hypertensive microvascular ischemia (pupil spared)",
+  "Uncal herniation",
+  "Cavernous sinus lesion",
+  "Midbrain infarct or tumor",
+  "Giant cell arteritis in the elderly"
+ ],
+ "mimics": [
+  {
+   "name": "Myasthenia gravis",
+   "howToDistinguish": "Ptosis and ophthalmoplegia that fluctuate; pupil never involved; ice test"
+  },
+  {
+   "name": "Horner syndrome",
+   "howToDistinguish": "Ptosis mild with a small, not large, pupil"
+  },
+  {
+   "name": "Thyroid eye disease",
+   "howToDistinguish": "Restrictive limitation with proptosis and lid retraction rather than ptosis"
+  }
+ ],
+ "management": [
+  "Pupil-involving or incomplete third nerve palsy: emergency CTA or MRA for an aneurysm the same day",
+  "Complete pupil-sparing palsy in a vasculopath over 50: observe with repeat pupil checks and imaging if not improving by 3 months",
+  "Patch the eye for diplopia; check ESR/CRP in the elderly"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    350,
+    351
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    87,
+    90
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    93,
+    95
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -12,
+   "y": -5,
+   "z": -15
+  },
+  "label": "third nerve beneath the posterior communicating artery"
+ },
+ "cameraPreset": "inferior"
+}

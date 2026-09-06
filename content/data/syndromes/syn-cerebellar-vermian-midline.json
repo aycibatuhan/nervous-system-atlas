@@ -1,0 +1,130 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cerebellar-vermian-midline",
+ "name": "Midline (vermian) cerebellar syndrome",
+ "eponyms": [],
+ "category": "functional-pattern",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cerebellar-vermis",
+   "flocculonodular-lobe",
+   "fastigial-nucleus",
+   "cerebellum"
+  ],
+  "side": "midline"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "cerebellar-vermis-vi"
+  ]
+ },
+ "presentation": "The patient cannot stand or walk without a wide base and falls in any direction, yet when lying in bed the finger-nose and heel-shin tests are almost normal. A child with a midline tumor presents with morning headache, vomiting and a stumbling gait; an alcoholic with anterior vermian degeneration presents with a gait ataxia that has developed over years while the arms remain coordinated. Head titubation and truncal sway when sitting are common.",
+ "deficits": [
+  {
+   "modality": "gait",
+   "side": "bilateral",
+   "distribution": "trunk and gait",
+   "sign": "Truncal and gait ataxia with a wide base, inability to tandem walk, falls in all directions",
+   "substrate": "cerebellar-vermis"
+  },
+  {
+   "modality": "cerebellar",
+   "side": "bilateral",
+   "distribution": "trunk",
+   "sign": "Titubation and truncal sway on sitting; limbs relatively spared",
+   "substrate": "fastigial-nucleus"
+  },
+  {
+   "modality": "vestibular",
+   "side": "bilateral",
+   "distribution": "vestibulocerebellum",
+   "sign": "Positional vertigo, downbeat or periodic alternating nystagmus, impaired VOR suppression",
+   "substrate": "flocculonodular-lobe"
+  },
+  {
+   "modality": "other",
+   "side": "n/a",
+   "distribution": "fourth ventricle",
+   "sign": "Headache and vomiting from hydrocephalus in mass lesions",
+   "substrate": "ventricle-fourth"
+  }
+ ],
+ "reasoning": "The vermis and the flocculonodular lobe receive spinocerebellar and vestibular input that is uncrossed and bilateral, and send their output through the fastigial nuclei to the vestibular and reticular nuclei of both sides, which drive the vestibulospinal and reticulospinal tracts that keep the trunk upright. A midline lesion therefore produces a symmetric disorder of balance and gait without lateralization, and because the lateral hemispheres and dentate nuclei that coordinate the limbs are spared, the limbs test surprisingly well when the trunk is supported: this dissociation between severe truncal ataxia and mild limb ataxia is the signature of a vermian lesion. There is no ipsilateral or contralateral rule to apply, because the affected structures are midline and project bilaterally. The nodulus and flocculus calibrate the vestibulo-ocular reflex and hold gaze, so their involvement produces positional nystagmus and vertigo that mimic a peripheral vestibular disorder, and the vermis lies over the fourth ventricle, so midline tumors in children obstruct CSF flow early. The anterior vermis degenerates selectively in chronic alcohol exposure, producing a leg-and-gait syndrome with spared arms.",
+ "imagingFindings": [
+  {
+   "pathology": "Medulloblastoma",
+   "modality": "MRI",
+   "finding": "Enhancing midline mass arising from the vermis filling the fourth ventricle with hydrocephalus in a child; restricted diffusion because it is cellular.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Alcoholic cerebellar degeneration",
+   "modality": "MRI",
+   "finding": "Atrophy of the anterior superior vermis with widened folia on sagittal images.",
+   "sequence": "T1"
+  },
+  {
+   "pathology": "Vermian infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the vermis (SCA or PICA medial branches).",
+   "sequence": "DWI"
+  }
+ ],
+ "commonCauses": [
+  "Medulloblastoma or ependymoma in children",
+  "Alcoholic cerebellar degeneration",
+  "Paraneoplastic cerebellar degeneration",
+  "Vermian infarct or hemorrhage",
+  "Phenytoin toxicity"
+ ],
+ "mimics": [
+  {
+   "name": "Sensory ataxia",
+   "howToDistinguish": "Romberg markedly positive; vibration and position sense lost"
+  },
+  {
+   "name": "Bilateral vestibular loss",
+   "howToDistinguish": "Oscillopsia with head movement; no titubation"
+  },
+  {
+   "name": "Normal pressure hydrocephalus",
+   "howToDistinguish": "Magnetic gait with cognitive change and incontinence, ventriculomegaly without atrophy"
+  }
+ ],
+ "management": [
+  "Urgent imaging in a child with gait ataxia and headache; neurosurgical management of posterior fossa tumors",
+  "Thiamine and abstinence in alcohol-related degeneration",
+  "Gait and balance rehabilitation"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    241,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -60,
+   "z": -30
+  },
+  "label": "cerebellar vermis over the fourth ventricle"
+ },
+ "cameraPreset": "lateral-l"
+}

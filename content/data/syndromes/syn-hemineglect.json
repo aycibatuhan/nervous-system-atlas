@@ -1,0 +1,129 @@
+{
+ "kind": "syndrome",
+ "id": "syn-hemineglect",
+ "name": "Hemispatial neglect",
+ "eponyms": [
+  "hemi-inattention"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "gyrus-supramarginal",
+   "gyrus-angular",
+   "lobe-parietal",
+   "lobule-superior-parietal",
+   "artery-mca-inferior-division"
+  ],
+  "side": "contralateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 50,
+   "y": -45,
+   "z": 35
+  },
+  "radiusMm": 12
+ },
+ "presentation": "After a right hemisphere stroke, the patient ignores the left side of space: they eat from the right half of the plate, shave the right side of the face, bisect lines far to the right, and when asked to draw a clock crowd all the numbers on the right. They may deny that the left arm belongs to them, insist they are not weak, and, when touched on both sides, feel only the right. The head and eyes are turned to the right.",
+ "deficits": [
+  {
+   "modality": "neglect",
+   "side": "contralateral",
+   "distribution": "left hemispace and left body",
+   "sign": "Visual, tactile and motor neglect with extinction on double simultaneous stimulation",
+   "substrate": "gyrus-supramarginal"
+  },
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "right parietal",
+   "sign": "Anosognosia and asomatognosia; constructional apraxia; dressing apraxia",
+   "substrate": "gyrus-angular"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "conjugate",
+   "sign": "Gaze and head deviation toward the lesion",
+   "substrate": "frontal-eye-field"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm and face",
+   "sign": "Left hemiparesis when the infarct extends anteriorly",
+   "substrate": "pathway-lateral-corticospinal"
+  }
+ ],
+ "reasoning": "The right inferior parietal lobule and the adjacent temporoparietal junction direct spatial attention to both halves of space, whereas the left parietal lobe attends mainly to the right; a right lesion therefore leaves nothing to attend to the left, while a left lesion is compensated by the right hemisphere and causes only mild, transient right neglect. This asymmetry, not any decussation, is why neglect is overwhelmingly a right hemisphere sign affecting the contralateral left side. Neglect is not a sensory loss: the visual pathways and somatosensory cortex may be intact, and the deficit is in awareness and orienting, which is why stimuli are perceived when presented alone but extinguished when a competing stimulus is presented on the right. Right frontal and thalamic lesions produce milder versions through the same network. The gaze deviation reflects the unopposed drive of the intact left frontal eye field, which pushes the eyes to the right, and the anosognosia and denial of the left arm belong to the same failure to represent the left side of the body and its state.",
+ "imagingFindings": [
+  {
+   "pathology": "Right MCA infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the right supramarginal and angular gyri or the temporoparietal junction, often part of a larger MCA infarct.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Right hemispheric hemorrhage or tumor",
+   "modality": "CT",
+   "finding": "Any right parietal mass lesion produces neglect; look for midline shift.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Right MCA infarct (stem or inferior division)",
+  "Right parietal hemorrhage",
+  "Right frontal or thalamic infarct (milder)",
+  "Tumor of the right parietal lobe"
+ ],
+ "mimics": [
+  {
+   "name": "Left homonymous hemianopia",
+   "howToDistinguish": "Hemianopic patients turn to compensate and are aware; neglect patients do not search and deny"
+  },
+  {
+   "name": "Left hemisensory loss",
+   "howToDistinguish": "Sensation is present when tested alone; extinction only with bilateral stimulation"
+  },
+  {
+   "name": "Global inattention or delirium",
+   "howToDistinguish": "No lateralized pattern"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment",
+  "Neglect rehabilitation: prism adaptation, visual scanning training, approaching from the neglected side",
+  "Fall prevention; neglect is a strong predictor of poor functional recovery"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    53
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    56,
+    56
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 50,
+   "y": -45,
+   "z": 35
+  },
+  "label": "right inferior parietal lobule"
+ },
+ "cameraPreset": "lateral-r"
+}

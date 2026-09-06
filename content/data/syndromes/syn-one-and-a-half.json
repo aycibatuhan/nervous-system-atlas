@@ -1,0 +1,118 @@
+{
+ "kind": "syndrome",
+ "id": "syn-one-and-a-half",
+ "name": "One-and-a-half syndrome",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "abducens-nucleus",
+   "pprf",
+   "medial-longitudinal-fasciculus",
+   "level-pons-caudal"
+  ],
+  "side": "ipsilateral",
+  "level": "pons-caudal"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -4,
+   "y": -38,
+   "z": -28
+  },
+  "radiusMm": 6
+ },
+ "presentation": "The patient's eyes are fixed in the horizontal plane except for one movement: the eye opposite the lesion can still abduct, and it does so with nystagmus. Looking toward the side of the lesion is impossible with either eye, and looking away, the eye on the side of the lesion cannot adduct. Vertical movements and convergence are preserved. Often there is also a facial palsy on the side of the lesion.",
+ "deficits": [
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "conjugate gaze toward the lesion",
+   "sign": "Horizontal gaze palsy toward the lesion (the 'one')",
+   "substrate": "pathway-horizontal-gaze"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "adduction on contralateral gaze",
+   "sign": "Internuclear ophthalmoplegia (the 'half')",
+   "substrate": "medial-longitudinal-fasciculus"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "contralateral",
+   "distribution": "abduction",
+   "sign": "Only surviving horizontal movement: abduction of the contralateral eye with nystagmus",
+   "substrate": "abducens-nucleus"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "face",
+   "sign": "Facial palsy when the facial colliculus is involved (eight-and-a-half syndrome)",
+   "substrate": "facial-motor-nucleus"
+  }
+ ],
+ "reasoning": "A single lesion of the dorsal paramedian pons can destroy both the abducens nucleus or paramedian pontine reticular formation on one side and the adjacent MLF on the same side. Loss of the abducens nucleus paralyzes gaze toward the lesion in both eyes, because the nucleus contains the lateral rectus motor neurons for its own eye and the interneurons that cross to the opposite medial rectus; this is the 'one', a complete conjugate gaze palsy to the side of the lesion. The MLF on the side of the lesion carries the already-crossed interneuron axons from the opposite abducens nucleus up to the ipsilateral medial rectus subnucleus, so gaze away from the lesion fails in the ipsilateral eye; this is the 'half', an internuclear ophthalmoplegia. What survives is abduction of the contralateral eye, driven by the intact contralateral abducens nucleus, and it shows the dissociated nystagmus of any INO. Vertical gaze and convergence use midbrain pathways and are spared. The facial nerve loops over the abducens nucleus, so its involvement adds an ipsilateral peripheral facial palsy. The two lesion sites are within a few millimeters, which is why one small infarct or plaque produces the combination.",
+ "imagingFindings": [
+  {
+   "pathology": "Dorsal pontine infarct",
+   "modality": "MRI",
+   "finding": "Small restricted diffusion focus in the paramedian dorsal pontine tegmentum at the level of the abducens nucleus.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Multiple sclerosis",
+   "modality": "MRI",
+   "finding": "FLAIR lesion at the floor of the fourth ventricle in the caudal pons with other demyelinating lesions.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Paramedian pontine infarct",
+  "Multiple sclerosis",
+  "Pontine hemorrhage or tumor"
+ ],
+ "mimics": [
+  {
+   "name": "Bilateral INO",
+   "howToDistinguish": "Both eyes fail to adduct, both abduct: gaze to each side is partially possible"
+  },
+  {
+   "name": "Bilateral sixth nerve palsies",
+   "howToDistinguish": "Adduction is normal; abduction fails on both sides"
+  },
+  {
+   "name": "Ocular myasthenia",
+   "howToDistinguish": "Variable, fatigable, no nystagmus, ptosis"
+  }
+ ],
+ "management": [
+  "Stroke or demyelination workup depending on age",
+  "Occlusion or prism for diplopia; recovery is common",
+  "Corneal care if facial palsy coexists"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    100,
+    101
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -4,
+   "y": -38,
+   "z": -28
+  },
+  "label": "abducens nucleus and adjacent MLF"
+ },
+ "cameraPreset": "posterior"
+}

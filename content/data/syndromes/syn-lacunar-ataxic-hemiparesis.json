@@ -1,0 +1,133 @@
+{
+ "kind": "syndrome",
+ "id": "syn-lacunar-ataxic-hemiparesis",
+ "name": "Ataxic hemiparesis",
+ "eponyms": [],
+ "category": "lacunar",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "internal-capsule",
+   "pontine-nuclei",
+   "corona-radiata",
+   "level-pons-caudal"
+  ],
+  "side": "contralateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -6,
+   "y": -28,
+   "z": -28
+  },
+  "radiusMm": 6
+ },
+ "presentation": "The patient has a mild hemiparesis, usually worse in the leg, but the striking feature is an incoordination on the same side that is out of proportion to the weakness: the heel-shin test is clumsy, the arm overshoots, and gait is unsteady toward the weak side. Sensation and speech are normal. The combination of pyramidal and cerebellar signs on one side of the body points to a small deep lesion.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "leg more than arm",
+   "sign": "Mild upper motor neuron hemiparesis",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "cerebellar",
+   "side": "contralateral",
+   "distribution": "same limbs as the weakness",
+   "sign": "Limb ataxia disproportionate to the weakness",
+   "substrate": "pathway-cerebellar-circuits"
+  },
+  {
+   "modality": "gait",
+   "side": "contralateral",
+   "distribution": "leg",
+   "sign": "Unsteady gait veering toward the weak side",
+   "substrate": "pathway-cerebellar-circuits"
+  }
+ ],
+ "reasoning": "A single perforator infarct in the posterior limb of the internal capsule, the corona radiata or the basis pontis interrupts two systems that run side by side there: the corticospinal tract and the corticopontocerebellar connections. The corticospinal fibers have not yet crossed, so the weakness is contralateral. The cerebellar signs are on the same side as the weakness because the cerebellar loop crosses twice: corticopontine fibers cross in the pons to the opposite cerebellar hemisphere, and the dentatothalamic output crosses back in the midbrain to the original hemisphere and its motor cortex. Cutting the loop at the capsule or pons on one side therefore produces ataxia of the contralateral limbs, the same limbs weakened by the corticospinal lesion. The lesion is small, so there is no sensory loss or cortical sign. The pontine site is the commoner; leg-predominant weakness is characteriztic because the leg fibers lie posteriorly in the capsule and dorsolaterally in the pons.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute lacune",
+   "modality": "MRI",
+   "finding": "Small (under 15 mm) focus of restricted diffusion in the posterior limb of the internal capsule, corona radiata or basis pontis; CT is often normal in the first day.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Chronic lacune",
+   "modality": "MRI",
+   "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Hypertensive lipohyalinosis of a single perforating artery",
+  "Microatheroma at the perforator origin"
+ ],
+ "mimics": [
+  {
+   "name": "Cortical branch infarct",
+   "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
+  },
+  {
+   "name": "Small hemorrhage",
+   "howToDistinguish": "Hyperdense on CT; same sites"
+  },
+  {
+   "name": "Cerebellar infarct with mass effect",
+   "howToDistinguish": "Ataxia ipsilateral to the cerebellar lesion without pyramidal weakness; headache and vomiting"
+  }
+ ],
+ "management": [
+  "Antiplatelet therapy, statin and blood pressure control",
+  "Thrombolysis when presenting within the window and disabling",
+  "Early mobilization; prognosis for recovery is good"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    474,
+    474
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    482,
+    482
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    60
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -6,
+   "y": -28,
+   "z": -28
+  },
+  "label": "paramedian basis pontis"
+ },
+ "cameraPreset": "anterior"
+}

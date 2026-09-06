@@ -1,0 +1,136 @@
+{
+ "kind": "syndrome",
+ "id": "syn-basilar-occlusion",
+ "name": "Basilar artery occlusion",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "artery-basilar",
+   "level-pons-caudal",
+   "level-pons-rostral",
+   "territory-basilar-paramedian",
+   "pontine-nuclei"
+  ],
+  "side": "bilateral",
+  "arteryId": "artery-basilar",
+  "territoryId": "territory-basilar-paramedian"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -30,
+   "z": -30
+  },
+  "radiusMm": 12
+ },
+ "presentation": "The story begins hours or days earlier with vertigo, double vision, slurred speech or transient weakness switching sides, then the patient becomes quadriparetic and drowsy or comatose. Examination reveals bilateral extensor plantars, pinpoint reactive pupils, absent horizontal eye movements, facial weakness and often ocular bobbing. Some patients remain fully aware but can move nothing except their eyes vertically: the locked-in state.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "all four limbs and face",
+   "sign": "Quadriparesis with bilateral upper motor neuron signs and bulbar weakness",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "horizontal",
+   "sign": "Bilateral horizontal gaze palsy, internuclear ophthalmoplegia, ocular bobbing",
+   "substrate": "pathway-horizontal-gaze"
+  },
+  {
+   "modality": "pupil",
+   "side": "bilateral",
+   "distribution": "both",
+   "sign": "Pinpoint but reactive pupils from bilateral sympathetic interruption",
+   "substrate": "pathway-oculosympathetic"
+  },
+  {
+   "modality": "consciousness",
+   "side": "bilateral",
+   "distribution": "reticular formation",
+   "sign": "Coma when the pontine and midbrain tegmentum are infarcted",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "bulbar",
+   "side": "bilateral",
+   "distribution": "face, tongue, pharynx",
+   "sign": "Dysarthria, dysphagia, bilateral facial weakness",
+   "substrate": "pathway-corticobulbar"
+  }
+ ],
+ "reasoning": "The basilar artery is a single midline vessel formed by the two vertebral arteries, so its occlusion removes the supply of both sides of the pons at once through the paramedian and short circumferential branches. The corticospinal tracts descend through the basis pontis as scattered bundles before they cross in the medulla, so bilateral pontine infarction paralyzes all four limbs, and the corticobulbar fibers to the facial, ambiguus and hypoglossal nuclei are lost with them, paralyzing the face and bulbar muscles. The abducens nuclei, paramedian pontine reticular formation and both MLFs occupy the dorsal pontine tegmentum, so horizontal gaze fails bilaterally, while the vertical gaze center in the midbrain is spared, which is why a locked-in patient can still look up and down. The descending sympathetic fibers run through the pontine tegmentum bilaterally, giving small pupils that still react because the parasympathetic pathway in the midbrain is intact. Whether the patient is comatose or locked in depends on whether the tegmental reticular formation infarcts along with the base.",
+ "imagingFindings": [
+  {
+   "pathology": "Basilar occlusion",
+   "modality": "CTA",
+   "finding": "Absent contrast in the basilar trunk; the hyperdense basilar sign on plain CT is an early clue.",
+   "sequence": "CT contrast"
+  },
+  {
+   "pathology": "Pontine infarction",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the paramedian pons bilaterally, with variable cerebellar and occipital involvement.",
+   "sequence": "DWI",
+   "timing": "May be negative in the first hours; repeat if suspicion is high"
+  }
+ ],
+ "commonCauses": [
+  "Vertebrobasilar atherosclerosis with in-situ thrombosis",
+  "Cardioembolism",
+  "Vertebral artery dissection"
+ ],
+ "mimics": [
+  {
+   "name": "Central pontine myelinolysis",
+   "howToDistinguish": "History of rapid sodium correction; symmetric central pontine T2 change without diffusion restriction pattern of infarct"
+  },
+  {
+   "name": "Pontine hemorrhage",
+   "howToDistinguish": "Hyperdense blood on CT; hyperthermia, pinpoint pupils, rapid coma"
+  },
+  {
+   "name": "Guillain–Barré syndrome",
+   "howToDistinguish": "Areflexic flaccid paralysis, preserved consciousness, ascending course"
+  }
+ ],
+ "management": [
+  "Emergency CTA in any patient with fluctuating brainstem symptoms; thrombectomy for basilar occlusion",
+  "Airway protection",
+  "Establish communication with locked-in patients through vertical eye movements"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    78,
+    79
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -30,
+   "z": -30
+  },
+  "label": "basis pontis and tegmentum"
+ },
+ "cameraPreset": "anterior"
+}

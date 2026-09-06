@@ -1,0 +1,134 @@
+{
+ "kind": "syndrome",
+ "id": "syn-pca-infarct",
+ "name": "Posterior cerebral artery infarction",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "artery-pca",
+   "territory-pca",
+   "cortex-calcarine",
+   "lobe-occipital",
+   "thalamus",
+   "hippocampus"
+  ],
+  "side": "contralateral",
+  "arteryId": "artery-pca",
+  "territoryId": "territory-pca"
+ },
+ "lesionMarker": {
+  "kind": "territory",
+  "meshIds": [
+   "territory-pca-major-l"
+  ]
+ },
+ "presentation": "The patient notices that half the world has disappeared, often bumping into things on one side, sometimes with a headache. Examination shows a congruous homonymous hemianopia with macular sparing and intact pupils; strength is normal. Dominant-side infarcts may add alexia without agraphia and color anomia, and medial temporal involvement produces a transient amnesia. If the proximal artery is occluded, thalamic infarction adds hemisensory loss and, later, thalamic pain.",
+ "deficits": [
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "homonymous, congruous",
+   "sign": "Hemianopia with macular sparing",
+   "substrate": "pathway-visual"
+  },
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "dominant occipitotemporal",
+   "sign": "Alexia without agraphia, color anomia, visual agnosia",
+   "substrate": "cortex-calcarine"
+  },
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "medial temporal",
+   "sign": "Transient anterograde amnesia",
+   "substrate": "hippocampus"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "contralateral",
+   "distribution": "hemibody (proximal occlusion)",
+   "sign": "Thalamic hemisensory loss",
+   "substrate": "thalamus-vpl"
+  }
+ ],
+ "reasoning": "The posterior cerebral artery arises from the top of the basilar artery, curves around the midbrain and supplies the occipital lobe, the inferomedial temporal lobe, and through its proximal perforators the thalamus and midbrain. The calcarine cortex receives the contralateral visual hemifield: nasal retinal fibers cross in the chiasm, so each occipital lobe sees the opposite half of space from both eyes. The macular representation at the occipital pole often survives because it receives collateral flow from the middle cerebral artery, giving macular sparing, and the pupillary light fibers leave the optic tract before the geniculate, so the pupils react normally. Corticospinal fibers lie in middle cerebral territory, hence no weakness. In the dominant hemisphere, a lesion of the left occipital lobe plus the splenium of the corpus callosum disconnects the intact right visual cortex from the left angular gyrus, so the patient can write but cannot read what has been written. The hippocampus lies in the temporal branch territory and explains the amnesia, while proximal P1 occlusion involves the thalamoperforating branches and produces the sensory and midbrain signs.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute PCA infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the calcarine cortex, lingual gyrus and cuneus, often extending to the medial temporal lobe and splenium; thalamus involved in proximal occlusions.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "PCA occlusion",
+   "modality": "CTA",
+   "finding": "Absent flow in the P2 segment; check the basilar tip for a proximal embolus."
+  }
+ ],
+ "commonCauses": [
+  "Cardioembolism",
+  "Vertebrobasilar atheroembolism",
+  "Vertebral artery dissection",
+  "Compression during transtentorial herniation"
+ ],
+ "mimics": [
+  {
+   "name": "Occipital hemorrhage",
+   "howToDistinguish": "Hyperdense blood on CT, headache prominent"
+  },
+  {
+   "name": "Migraine with aura",
+   "howToDistinguish": "Positive scintillations that march and resolve within an hour"
+  },
+  {
+   "name": "Posterior reversible encephalopathy",
+   "howToDistinguish": "Bilateral, vasogenic edema, hypertension or immunosuppression"
+  }
+ ],
+ "management": [
+  "Acute stroke pathway",
+  "Field testing and reading assessment; driving restriction",
+  "Anticoagulation when cardioembolic"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    482,
+    483
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    49,
+    51
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    59
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -10,
+   "y": -85,
+   "z": 5
+  },
+  "label": "calcarine cortex"
+ },
+ "cameraPreset": "medial-l"
+}

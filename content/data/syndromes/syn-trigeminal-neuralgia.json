@@ -1,0 +1,144 @@
+{
+ "kind": "syndrome",
+ "id": "syn-trigeminal-neuralgia",
+ "name": "Trigeminal neuralgia",
+ "eponyms": [
+  "tic douloureux"
+ ],
+ "category": "compressive",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-05-trigeminal",
+   "ganglion-trigeminal",
+   "artery-sca",
+   "spinal-trigeminal-nucleus-tract"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-05-trigeminal-l"
+  ]
+ },
+ "presentation": "An older patient describes electric shocks in the cheek and jaw that last a second or two, come in volleys, and are set off by chewing, brushing the teeth, a breath of cold air or a light touch to a particular spot on the face. Between attacks there is no pain and the examination is normal. In a young woman with bilateral or persistent pain, sensory loss or other cranial nerve signs, multiple sclerosis or a tumor must be sought.",
+ "deficits": [
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "V2 and/or V3 divisions, rarely V1",
+   "sign": "Paroxysmal lancinating pain with trigger zones; no pain between attacks",
+   "substrate": "cn-05-trigeminal"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "n/a",
+   "distribution": "face",
+   "sign": "Normal sensation and corneal reflex in classic cases; any deficit suggests a structural cause",
+   "substrate": "trigeminal-nuclei"
+  },
+  {
+   "modality": "other",
+   "side": "ipsilateral",
+   "distribution": "face",
+   "sign": "Facial spasm with the pain (tic douloureux)",
+   "substrate": "cn-05-trigeminal"
+  }
+ ],
+ "reasoning": "In most patients the trigeminal root is compressed and indented at its entry into the pons by a loop of the superior cerebellar artery, occasionally a vein, which demyelinates the large touch fibers at the root entry zone where central myelin gives way to peripheral myelin. The demyelinated fibers become hyperexcitable and generate ectopic bursts, and cross-talk between light-touch fibers and neighboring pain fibers means that a trivial touch stimulus is felt as an explosion of pain, which explains the trigger zones and the sparing of sensation between attacks. The nerve is the uncrossed sensory supply of the ipsilateral face, so the pain is strictly unilateral and confined to one or two divisions, most often the maxillary and mandibular. Because the second-order neurons for facial pain lie in the spinal trigeminal nucleus in the medulla, a demyelinating plaque along the root fibers as they enter the pons or descend in the spinal tract can produce the same pain, which is why multiple sclerosis is the commonest cause in the young and is the explanation for bilateral cases. A cerebellopontine angle tumor compresses the root from outside and adds sensory loss, a depressed corneal reflex or other cranial nerve signs.",
+ "imagingFindings": [
+  {
+   "pathology": "Neurovascular compression",
+   "modality": "MRI",
+   "finding": "Superior cerebellar artery loop contacting and distorting the trigeminal root at the pontine entry zone on thin-section heavily T2-weighted images (CISS/FIESTA) with MRA.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Multiple sclerosis",
+   "modality": "MRI",
+   "finding": "FLAIR-bright plaque in the pontine trigeminal root entry zone or along the spinal tract.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Cerebellopontine angle tumor",
+   "modality": "MRI",
+   "finding": "Meningioma, epidermoid or schwannoma compressing the nerve; epidermoids restrict diffusion.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Neurovascular compression by the superior cerebellar artery",
+  "Multiple sclerosis",
+  "Cerebellopontine angle tumor",
+  "Herpes zoster (postherpetic, continuous rather than paroxysmal)"
+ ],
+ "mimics": [
+  {
+   "name": "Dental pain",
+   "howToDistinguish": "Continuous, localized to a tooth, tender to percussion"
+  },
+  {
+   "name": "Cluster headache",
+   "howToDistinguish": "Orbital pain lasting 15–180 minutes with autonomic features"
+  },
+  {
+   "name": "Glossopharyngeal neuralgia",
+   "howToDistinguish": "Pain in the throat and ear triggered by swallowing"
+  },
+  {
+   "name": "Postherpetic neuralgia",
+   "howToDistinguish": "Constant burning with allodynia after a rash, usually V1"
+  }
+ ],
+ "management": [
+  "Carbamazepine or oxcarbazepine is first-line and its response supports the diagnosis",
+  "MRI with thin brainstem sequences in every patient to exclude MS and tumor and to show vascular contact",
+  "Microvascular decompression or ablative procedures (radiofrequency, gamma knife) for drug-resistant cases"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    351,
+    351
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    358,
+    358
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    120
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    126,
+    126
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -20,
+   "y": -30,
+   "z": -25
+  },
+  "label": "trigeminal root entry zone at the lateral pons"
+ },
+ "cameraPreset": "inferior"
+}

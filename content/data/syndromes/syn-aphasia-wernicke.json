@@ -1,0 +1,122 @@
+{
+ "kind": "syndrome",
+ "id": "syn-aphasia-wernicke",
+ "name": "Wernicke (receptive, fluent) aphasia",
+ "eponyms": [
+  "sensory aphasia"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "area-wernicke",
+   "lobe-temporal",
+   "artery-mca-inferior-division",
+   "gyrus-heschl"
+  ],
+  "side": "left"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -55,
+   "y": -45,
+   "z": 15
+  },
+  "radiusMm": 10
+ },
+ "presentation": "The patient speaks in long, well-articulated but empty sentences peppered with wrong words and invented words, does not follow commands, cannot repeat, and seems unaware that anything is wrong, sometimes becoming angry when not understood. Strength is normal. A right superior quadrantanopia may be found if the examiner thinks to test the fields. The initial diagnosis is frequently confusion or psychosis.",
+ "deficits": [
+  {
+   "modality": "language",
+   "side": "n/a",
+   "distribution": "dominant temporal",
+   "sign": "Fluent paraphasic speech with impaired comprehension and repetition; anosognosia",
+   "substrate": "area-wernicke"
+  },
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "superior quadrant",
+   "sign": "Right superior quadrantanopia from Meyer's loop",
+   "substrate": "pathway-visual"
+  },
+  {
+   "modality": "motor",
+   "side": "n/a",
+   "distribution": "none",
+   "sign": "No weakness; the motor cortex is not involved",
+   "substrate": "pathway-lateral-corticospinal"
+  }
+ ],
+ "reasoning": "Wernicke's area, the posterior part of the superior temporal gyrus of the dominant hemisphere behind Heschl's gyrus, holds the sound representations of words that both comprehension and word selection depend on. When it is destroyed, the incoming speech signal cannot be decoded, and the outgoing speech, produced by an intact Broca's area, is fluent but unmonitored and full of phonemic and semantic errors. Repetition fails because the input side of the arcuate loop is gone. The lesion lies in the inferior division territory of the left middle cerebral artery, far from the motor cortex, so there is no weakness to alert the examiner, while Meyer's loop of the optic radiation runs through the underlying temporal white matter carrying the contralateral upper visual field, giving the right upper quadrantanopia. Like all cortical language disorders the aphasia is uncrossed and simply reflects left hemisphere dominance; only the field defect obeys crossing logic. The anosognosia is intrinsic to the loss of self-monitoring and, together with the absence of weakness, explains why these patients are so often sent to psychiatry.",
+ "imagingFindings": [
+  {
+   "pathology": "Inferior-division infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the left posterior superior temporal gyrus, often extending to the supramarginal gyrus.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Temporal lobe tumor or encephalitis",
+   "modality": "MRI",
+   "finding": "Left temporal mass or T2 change producing a subacute fluent aphasia.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Left MCA inferior division embolic infarct",
+  "Left temporal hemorrhage",
+  "Herpes simplex encephalitis",
+  "Temporal lobe tumor",
+  "Logopenic or semantic primary progressive aphasia"
+ ],
+ "mimics": [
+  {
+   "name": "Delirium or psychosis",
+   "howToDistinguish": "Language testing shows paraphasias and failed repetition with a field defect; DWI positive"
+  },
+  {
+   "name": "Transcortical sensory aphasia",
+   "howToDistinguish": "Repetition intact; watershed lesion behind Wernicke's area"
+  },
+  {
+   "name": "Pure word deafness",
+   "howToDistinguish": "Reading and writing preserved; bilateral or deep temporal lesions"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment; the deficit is disabling even without weakness",
+  "Speech therapy focused on comprehension strategies",
+  "Cardiac source evaluation, since the branch occlusion is usually embolic"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    290,
+    291
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    54,
+    56
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -55,
+   "y": -45,
+   "z": 15
+  },
+  "label": "left posterior superior temporal gyrus"
+ },
+ "cameraPreset": "lateral-l"
+}

@@ -1,0 +1,129 @@
+{
+ "kind": "syndrome",
+ "id": "syn-lacunar-pure-motor",
+ "name": "Pure motor lacunar stroke",
+ "eponyms": [],
+ "category": "lacunar",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "internal-capsule",
+   "arteries-lenticulostriate",
+   "pontine-nuclei",
+   "corona-radiata"
+  ],
+  "side": "contralateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -22,
+   "y": -12,
+   "z": 8
+  },
+  "radiusMm": 6
+ },
+ "presentation": "A hypertensive patient wakes with weakness of the face, arm and leg on one side, all roughly equally affected, and nothing else: sensation, vision, speech content and awareness are normal, though speech may be slurred by the facial weakness. There is no headache and the patient is fully alert. The weakness may stutter over hours before settling.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "face, arm and leg equally",
+   "sign": "Hemiparesis with hyperreflexia and extensor plantar",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "bulbar",
+   "side": "contralateral",
+   "distribution": "lower face and tongue",
+   "sign": "Dysarthria from corticobulbar involvement",
+   "substrate": "pathway-corticobulbar"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "n/a",
+   "distribution": "none",
+   "sign": "Sensation preserved: the hallmark of a pure motor lacune",
+   "substrate": "pathway-dcml"
+  }
+ ],
+ "reasoning": "The corticospinal and corticobulbar fibers for face, arm and leg are packed into a few square millimeters in the posterior limb and genu of the internal capsule and again in the basis pontis, so a single small perforator infarct removes all of them together, producing a hemiparesis that is proportional across the body rather than following the cortical homunculus. The fibers have not yet crossed at either site, so the paralysis is contralateral, as after a cortical lesion. What distinguishes the lacune is what is missing: the thalamocortical sensory fibers lie a few millimeters posterior in the capsule and in the tegmentum of the pons, the optic radiation is far lateral and the cortex is intact, so there is no sensory loss, no field defect and no aphasia or neglect. A capsular lacune and a pontine lacune are clinically identical; imaging decides. Because the lenticulostriate and paramedian pontine perforators are end arteries damaged by hypertension, the infarct is small and recovery is often good.",
+ "imagingFindings": [
+  {
+   "pathology": "Acute lacune",
+   "modality": "MRI",
+   "finding": "Small (under 15 mm) focus of restricted diffusion in the posterior limb of the internal capsule or the basis pontis; CT is often normal in the first day.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Chronic lacune",
+   "modality": "MRI",
+   "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Hypertensive lipohyalinosis of a single perforating artery",
+  "Microatheroma at the perforator origin"
+ ],
+ "mimics": [
+  {
+   "name": "Cortical branch infarct",
+   "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
+  },
+  {
+   "name": "Small hemorrhage",
+   "howToDistinguish": "Hyperdense on CT; same sites"
+  }
+ ],
+ "management": [
+  "Antiplatelet therapy, statin and blood pressure control",
+  "Thrombolysis when presenting within the window and disabling",
+  "Early mobilization; prognosis for recovery is good"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    474,
+    474
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    482,
+    482
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    60
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -22,
+   "y": -12,
+   "z": 8
+  },
+  "label": "posterior limb of the internal capsule"
+ },
+ "cameraPreset": "superior"
+}

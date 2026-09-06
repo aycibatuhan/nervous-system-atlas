@@ -1,0 +1,118 @@
+{
+ "kind": "syndrome",
+ "id": "syn-pica-cerebellar-infarct",
+ "name": "PICA cerebellar infarction with mass effect",
+ "eponyms": [],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "artery-pica",
+   "cerebellar-hemisphere",
+   "cerebellar-tonsil",
+   "cerebellar-vermis",
+   "ventricle-fourth",
+   "territory-pica-lateral-medulla"
+  ],
+  "side": "ipsilateral",
+  "arteryId": "artery-pica",
+  "territoryId": "territory-pica-lateral-medulla"
+ },
+ "lesionMarker": {
+  "kind": "territory",
+  "meshIds": [
+   "territory-inferior-cerebellar-l"
+  ]
+ },
+ "presentation": "A patient develops vertigo, vomiting, headache and an unsteady gait, veering to one side, with nystagmus and dysmetria of the limbs on that side, and is initially labeled as having labyrinthitis. Within one to three days they become drowsy, with a sixth nerve palsy and then a rising blood pressure and irregular breathing, as the swollen inferior cerebellum compresses the medulla and obstructs the fourth ventricle.",
+ "deficits": [
+  {
+   "modality": "cerebellar",
+   "side": "ipsilateral",
+   "distribution": "limbs and gait",
+   "sign": "Limb ataxia, gait ataxia with lateropulsion, gaze-evoked nystagmus",
+   "substrate": "pathway-cerebellar-circuits"
+  },
+  {
+   "modality": "vestibular",
+   "side": "ipsilateral",
+   "distribution": "vestibulocerebellum",
+   "sign": "Vertigo and vomiting from the nodulus and flocculus",
+   "substrate": "flocculonodular-lobe"
+  },
+  {
+   "modality": "consciousness",
+   "side": "n/a",
+   "distribution": "brainstem compression",
+   "sign": "Drowsiness progressing to coma with obstructive hydrocephalus",
+   "substrate": "ventricle-fourth"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "abducens, facial",
+   "sign": "False-localizing sixth nerve palsy and facial weakness from brainstem compression",
+   "substrate": "abducens-nucleus"
+  }
+ ],
+ "reasoning": "The posterior inferior cerebellar artery supplies the inferior surface of the cerebellar hemisphere, the tonsil and the inferior vermis in addition to the lateral medulla, and an embolus or thrombus lodging beyond the medullary branches produces a purely cerebellar infarct. Cerebellar signs are ipsilateral to the lesion because the hemisphere's output crosses in the midbrain and is crossed back by the corticospinal tract to reach its own side of the body, and the inferior vermis and flocculonodular lobe give the vertigo, nystagmus and truncal imbalance. The danger of the syndrome lies not in the deficit but in the anatomy of the posterior fossa: the inferior cerebellum lies against the medulla and fourth ventricle, and as the infarct swells over the following days it pushes the tonsils into the foramen magnum and the brainstem forward, obstructing CSF outflow. The resulting hydrocephalus and medullary compression cause a stepwise decline in consciousness, cranial nerve palsies and finally cardiorespiratory arrest, which decompression can prevent. The initial similarity to vestibular neuritis, which never causes limb ataxia or a positive HINTS pattern of central type, is the diagnostic trap.",
+ "imagingFindings": [
+  {
+   "pathology": "PICA territory infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the inferior cerebellar hemisphere and tonsil, sometimes with the lateral medulla.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Malignant cerebellar edema",
+   "modality": "CT",
+   "finding": "Compressed or obliterated fourth ventricle, effaced basal cisterns, dilated temporal horns, tonsillar descent.",
+   "sequence": "CT non-contrast",
+   "timing": "Days 1–4"
+  }
+ ],
+ "commonCauses": [
+  "Vertebral artery atherothrombosis or dissection",
+  "Cardioembolism"
+ ],
+ "mimics": [
+  {
+   "name": "Vestibular neuritis",
+   "howToDistinguish": "Normal limb coordination, positive head impulse test, unidirectional nystagmus"
+  },
+  {
+   "name": "Cerebellar hemorrhage",
+   "howToDistinguish": "Hyperdense on CT from the outset"
+  },
+  {
+   "name": "Lateral medullary syndrome",
+   "howToDistinguish": "Bulbar signs and crossed sensory loss without significant hemispheric swelling"
+  }
+ ],
+ "management": [
+  "Admit to a monitored bed; repeat CT at any decline in consciousness",
+  "Suboccipital decompressive craniectomy and external ventricular drainage for deterioration from mass effect",
+  "Antithrombotic therapy and vertebral artery imaging"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    70,
+    70
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -30,
+   "y": -60,
+   "z": -45
+  },
+  "label": "inferior cerebellar hemisphere and tonsil"
+ },
+ "cameraPreset": "posterior"
+}

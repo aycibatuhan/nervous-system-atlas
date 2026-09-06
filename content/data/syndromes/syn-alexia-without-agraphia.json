@@ -1,0 +1,122 @@
+{
+ "kind": "syndrome",
+ "id": "syn-alexia-without-agraphia",
+ "name": "Alexia without agraphia",
+ "eponyms": [
+  "pure alexia",
+  "pure word blindness"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cortex-calcarine",
+   "corpus-callosum",
+   "lobe-occipital",
+   "artery-pca",
+   "gyrus-angular"
+  ],
+  "side": "left"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -12,
+   "y": -75,
+   "z": 10
+  },
+  "radiusMm": 14
+ },
+ "presentation": "A patient writes a sentence at the examiner's request and then, a minute later, cannot read what they have written, although they can spell words aloud, understand spoken language and copy letters slowly stroke by stroke. They have a right homonymous hemianopia and often cannot name colors. The combination follows a left posterior cerebral artery infarct that included the splenium of the corpus callosum.",
+ "deficits": [
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "left occipital plus splenium",
+   "sign": "Pure alexia: cannot read words, may read letter by letter; writing and spelling intact",
+   "substrate": "corpus-callosum"
+  },
+  {
+   "modality": "visual-field",
+   "side": "contralateral",
+   "distribution": "homonymous",
+   "sign": "Right homonymous hemianopia",
+   "substrate": "pathway-visual"
+  },
+  {
+   "modality": "cognitive",
+   "side": "n/a",
+   "distribution": "left occipitotemporal",
+   "sign": "Color anomia; sometimes object agnosia",
+   "substrate": "cortex-calcarine"
+  }
+ ],
+ "reasoning": "Reading requires that visual word forms reach the language areas of the left hemisphere. After a left occipital infarct the left visual cortex is gone, so the right visual field is blind (the fibers from each retina's nasal half cross in the chiasm, so the left calcarine cortex sees the right hemifield). Words can still be seen in the left visual field by the right occipital lobe, but for them to be read the information must cross to the left angular gyrus through the splenium of the corpus callosum. When the same infarct, supplied by the posterior cerebral artery, also destroys the splenium, the intact right visual cortex is disconnected from the language hemisphere: the patient sees the word but cannot read it. Writing, which arises in the left angular gyrus and frontal cortex without needing visual input, is preserved, as is spelling aloud and recognizing words spelled to them. Color anomia has the same disconnection basis, since color perception in the right occipital lobe cannot reach the left naming areas. The syndrome is a disconnection, not a cortical language deficit, and the crossing structure involved is the callosum rather than any brainstem decussation.",
+ "imagingFindings": [
+  {
+   "pathology": "Left PCA infarct with splenial extension",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the left calcarine cortex and lingual gyrus extending into the splenium of the corpus callosum.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Splenial tumor",
+   "modality": "MRI",
+   "finding": "Enhancing mass of the splenium and left occipital lobe (glioma, lymphoma) producing progressive alexia.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Left posterior cerebral artery infarct",
+  "Splenial hemorrhage or tumor",
+  "Posterior cortical atrophy"
+ ],
+ "mimics": [
+  {
+   "name": "Alexia with agraphia",
+   "howToDistinguish": "Writing also impaired; lesion in the left angular gyrus"
+  },
+  {
+   "name": "Hemianopic dyslexia",
+   "howToDistinguish": "Reads slowly because of the field defect but can read when text is placed in the intact field"
+  },
+  {
+   "name": "Aphasic alexia",
+   "howToDistinguish": "Reading loss is part of a broader aphasia"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment",
+  "Reading rehabilitation: letter-by-letter and tactile letter-tracing strategies",
+  "Field defect counseling and driving restriction"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    50,
+    50
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    54,
+    54
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -12,
+   "y": -75,
+   "z": 10
+  },
+  "label": "left calcarine cortex and splenium"
+ },
+ "cameraPreset": "medial-l"
+}

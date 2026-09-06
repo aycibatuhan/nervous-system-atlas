@@ -1,0 +1,142 @@
+{
+ "kind": "syndrome",
+ "id": "syn-facial-palsy-peripheral-vs-central",
+ "name": "Facial palsy: peripheral (Bell) versus central",
+ "eponyms": [
+  "Bell palsy"
+ ],
+ "category": "functional-pattern",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "cn-07-facial",
+   "facial-motor-nucleus",
+   "gyrus-precentral",
+   "internal-capsule",
+   "ganglion-geniculate"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "cn-07-facial-l"
+  ]
+ },
+ "presentation": "A patient wakes with one side of the face drooping. If the forehead is smooth and the eye will not close, taste is odd and sounds are loud in that ear, the whole nerve has failed from its nucleus onward: Bell palsy. If the forehead wrinkles symmetrically and the eye closes while the mouth droops, and the arm on the same side is weak, the lesion is in the opposite hemisphere: a stroke. The forehead decides.",
+ "deficits": [
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "whole face including the forehead (peripheral)",
+   "sign": "Lower motor neuron facial palsy: cannot wrinkle the forehead, close the eye or smile; Bell phenomenon",
+   "substrate": "cn-07-facial"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "contralateral",
+   "distribution": "lower face, forehead spared (central)",
+   "sign": "Upper motor neuron facial weakness with preserved forehead and emotional smile",
+   "substrate": "pathway-corticobulbar"
+  },
+  {
+   "modality": "other",
+   "side": "ipsilateral",
+   "distribution": "taste, hearing, tears (peripheral, proximal lesions)",
+   "sign": "Loss of taste on the anterior tongue, hyperacusis, reduced tearing depending on the level in the canal",
+   "substrate": "ganglion-geniculate"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm (central)",
+   "sign": "Associated hemiparesis or dysarthria when central",
+   "substrate": "pathway-lateral-corticospinal"
+  }
+ ],
+ "reasoning": "The facial motor nucleus in the caudal pons has two functional halves. The part supplying the upper face receives corticobulbar input from both hemispheres, whereas the part supplying the lower face receives input mainly from the contralateral motor cortex, crossing at the level of the nucleus. A lesion of the corticobulbar fibers on one side, in the cortex, corona radiata, internal capsule or crus, therefore leaves the forehead moving, because the other hemisphere still drives it, and weakens the contralateral lower face; the accompanying arm weakness is on the same side as the facial weakness, since the corticospinal fibers cross further down in the medulla. A lesion of the nucleus or the nerve itself, in the pons, cerebellopontine angle, facial canal or parotid, removes the final common pathway to all the ipsilateral facial muscles, including the frontalis, and the paralysis is complete and on the side of the lesion. Emotional smiling uses a separate limbic route to the nucleus and often survives a central lesion, a further clue. The level of a peripheral lesion within the temporal bone is read from the branches: loss of tearing places it at or proximal to the geniculate ganglion, hyperacusis proximal to the stapedius branch, loss of taste proximal to the chorda tympani, and none of these means a lesion at or beyond the stylomastoid foramen. Bell palsy is a presumed viral inflammation of the nerve within the narrow labyrinthine segment of the canal.",
+ "imagingFindings": [
+  {
+   "pathology": "Bell palsy",
+   "modality": "MRI",
+   "finding": "Enhancement of the labyrinthine segment and geniculate ganglion of the facial nerve; imaging is reserved for atypical or non-recovering cases.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Central facial palsy",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the contralateral motor cortex, corona radiata, capsule or pons above the facial nucleus.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Parotid or temporal bone lesion",
+   "modality": "CT",
+   "finding": "Parotid tumor, temporal bone fracture through the facial canal, or cholesteatoma eroding the canal.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Bell palsy (idiopathic, presumed herpes simplex)",
+  "Ramsay Hunt syndrome (zoster)",
+  "Lyme disease (bilateral in endemic areas)",
+  "Stroke (central)",
+  "Parotid malignancy, temporal bone fracture",
+  "Sarcoidosis, Guillain–Barré (bilateral)"
+ ],
+ "mimics": [
+  {
+   "name": "Pontine lesion involving the nucleus",
+   "howToDistinguish": "Peripheral-type palsy with an ipsilateral gaze palsy and contralateral hemiparesis"
+  },
+  {
+   "name": "Cerebellopontine angle tumor",
+   "howToDistinguish": "Slowly progressive, with deafness and facial numbness"
+  },
+  {
+   "name": "Myasthenia gravis",
+   "howToDistinguish": "Bilateral fatigable weakness"
+  }
+ ],
+ "management": [
+  "Peripheral palsy: prednisolone within 72 hours; eye protection with lubricants and taping at night",
+  "Forehead-sparing weakness or any limb sign: stroke pathway",
+  "Check the ear for vesicles (Ramsay Hunt) and ask about tick exposure; bilateral palsies need systemic workup"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    352,
+    352
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    124
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -35,
+   "y": -30,
+   "z": -30
+  },
+  "label": "facial nerve in the internal acoustic meatus and labyrinthine segment"
+ },
+ "examSequence": [
+  "Raise the eyebrows: symmetric forehead means central",
+  "Close the eyes tightly: Bell phenomenon and incomplete closure in peripheral",
+  "Show the teeth and puff the cheeks",
+  "Ask about taste, hearing and tearing on that side",
+  "Look in the ear and on the palate for vesicles",
+  "Test the limbs on the same side"
+ ],
+ "cameraPreset": "inferior"
+}

@@ -1,0 +1,158 @@
+{
+ "kind": "syndrome",
+ "id": "syn-cavernous-sinus",
+ "name": "Cavernous sinus syndrome",
+ "eponyms": [],
+ "category": "compressive",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "sinus-cavernous",
+   "cn-03-oculomotor",
+   "cn-04-trochlear",
+   "cn-06-abducens",
+   "artery-internal-carotid",
+   "pituitary-infundibulum"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -15,
+   "y": 5,
+   "z": -20
+  },
+  "radiusMm": 10
+ },
+ "presentation": "The patient has a painful, swollen, red eye with a drooping lid that is fixed in all directions, numbness of the forehead and cheek on the same side, and sometimes a small pupil. A diabetic with a fever and a black eschar in the nose is a surgical emergency; a patient with a pituitary tumor develops the same signs slowly; a young person after a head injury may have a pulsating, bruit-bearing eye from a fistula.",
+ "deficits": [
+  {
+   "modality": "oculomotor",
+   "side": "ipsilateral",
+   "distribution": "III, IV and VI",
+   "sign": "Complete external ophthalmoplegia with ptosis; VI often first",
+   "substrate": "sinus-cavernous"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "V1 (and V2)",
+   "sign": "Numbness of the forehead, cornea and cheek; loss of corneal reflex",
+   "substrate": "cn-05-trigeminal"
+  },
+  {
+   "modality": "pupil",
+   "side": "ipsilateral",
+   "distribution": "one pupil",
+   "sign": "Variable: dilated (III), small (sympathetic plexus) or mid-position and fixed (both)",
+   "substrate": "pathway-oculosympathetic"
+  },
+  {
+   "modality": "other",
+   "side": "ipsilateral",
+   "distribution": "orbit",
+   "sign": "Proptosis, chemosis, orbital venous congestion, bruit in fistulas",
+   "substrate": "sinus-cavernous"
+  }
+ ],
+ "reasoning": "The cavernous sinus is a venous channel beside the sella through which the internal carotid artery runs with the sympathetic plexus on its wall, the abducens nerve floating beside the artery, and the oculomotor, trochlear, ophthalmic and maxillary nerves stacked in the lateral wall. Every one of these is an uncrossed structure serving the ipsilateral eye and face, so a mass, thrombus or inflammation in the sinus produces a purely ipsilateral collection of signs: paralysis of all three ocular motor nerves, sensory loss in the first and sometimes second trigeminal divisions and, from the sympathetic plexus, a Horner syndrome that can combine with the third nerve palsy to leave a mid-sized fixed pupil. The abducens nerve, lying free in the sinus rather than in its wall, is usually affected first. Venous obstruction of the ophthalmic veins, which drain into the sinus, causes the proptosis and chemosis, and in a carotid-cavernous fistula arterial blood flows retrograde into the same veins, producing a pulsating eye with a bruit. The optic nerve lies outside the sinus, in the optic canal above it, so vision is preserved unless the orbital apex is involved, which is the distinction between a cavernous sinus and an orbital apex syndrome. Because the two sinuses connect through the intercavernous sinuses, septic thrombosis often spreads to the other side within days.",
+ "imagingFindings": [
+  {
+   "pathology": "Cavernous sinus thrombosis",
+   "modality": "MRV",
+   "finding": "Filling defect and expansion of the sinus with convex lateral walls, dilated superior ophthalmic vein and proptosis; enhancement of the sinus wall.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Tumor or invasive fungal infection",
+   "modality": "MRI",
+   "finding": "Enhancing soft tissue replacing the sinus, narrowing or encasing the carotid, extending from the sphenoid sinus in mucormycosis or from the sella in pituitary adenoma.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Carotid-cavernous fistula",
+   "modality": "DSA",
+   "finding": "Early opacification of the cavernous sinus and superior ophthalmic vein during the arterial phase; CTA shows the dilated vein."
+  }
+ ],
+ "commonCauses": [
+  "Septic thrombosis from facial, sinus or dental infection",
+  "Invasive fungal sinusitis (mucormycosis) in diabetics and the immunosuppressed",
+  "Pituitary adenoma or apoplexy, meningioma, nasopharyngeal carcinoma, metastasis",
+  "Carotid-cavernous fistula after trauma or aneurysm rupture",
+  "Tolosa–Hunt idiopathic granulomatous inflammation"
+ ],
+ "mimics": [
+  {
+   "name": "Orbital apex syndrome",
+   "howToDistinguish": "Adds optic neuropathy with visual loss and an afferent pupillary defect"
+  },
+  {
+   "name": "Orbital cellulitis",
+   "howToDistinguish": "Fever and proptosis with normal cranial nerves early; CT shows orbital fat stranding"
+  },
+  {
+   "name": "Ocular myasthenia",
+   "howToDistinguish": "Painless, variable, no sensory loss"
+  }
+ ],
+ "management": [
+  "Urgent contrast MRI/MRV; blood cultures and intravenous antibiotics with anticoagulation for septic thrombosis",
+  "Emergency ENT assessment and surgical debridement plus amphotericin for suspected mucormycosis",
+  "Endovascular closure of fistulas; steroids for Tolosa–Hunt after excluding infection and tumor"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    432,
+    433
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    351,
+    351
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    84,
+    86
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    93,
+    93
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    95,
+    96
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -15,
+   "y": 5,
+   "z": -20
+  },
+  "label": "cavernous sinus lateral to the sella"
+ },
+ "cameraPreset": "anterior"
+}

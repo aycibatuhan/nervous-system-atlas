@@ -1,0 +1,139 @@
+{
+ "kind": "syndrome",
+ "id": "syn-millard-gubler",
+ "name": "Millard–Gubler syndrome (ventral pontine)",
+ "eponyms": [
+  "Millard–Gubler syndrome",
+  "ventral pontine syndrome"
+ ],
+ "category": "vascular",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "level-pons-caudal",
+   "facial-motor-nucleus",
+   "pontine-nuclei",
+   "artery-basilar",
+   "arteries-pontine"
+  ],
+  "side": "ipsilateral",
+  "level": "pons-caudal",
+  "arteryId": "artery-basilar"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -8,
+   "y": -32,
+   "z": -32
+  },
+  "radiusMm": 7
+ },
+ "presentation": "A patient has a complete facial palsy on one side, including the forehead, and a hemiparesis of the arm and leg on the opposite side. Often the eye on the side of the facial palsy cannot abduct, adding horizontal diplopia. Sensation may be preserved or reduced on the weak side. The crossed facial and limb weakness locates the lesion to the ventral pons.",
+ "deficits": [
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "whole face",
+   "sign": "Lower motor neuron facial palsy from the facial nerve fascicle",
+   "substrate": "facial-motor-nucleus"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm and leg",
+   "sign": "Hemiparesis from the corticospinal fibers in the basis pontis",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "lateral rectus",
+   "sign": "Abducens palsy when the sixth nerve fascicle is included",
+   "substrate": "abducens-nucleus"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "contralateral",
+   "distribution": "hemibody (variable)",
+   "sign": "Hemisensory loss if the lesion extends to the medial lemniscus",
+   "substrate": "pathway-dcml"
+  }
+ ],
+ "reasoning": "The facial nerve fascicle leaves the facial motor nucleus in the caudal pontine tegmentum, loops around the abducens nucleus and then runs ventrolaterally through the basis pontis to emerge at the pontomedullary junction; on its way it passes right through the field of corticospinal bundles descending in the basis pontis. A lesion of the ventrocaudal pons therefore hits the uncrossed corticospinal fibers, which will cross in the medulla and so paralyze the contralateral limbs, together with the facial nerve fibers, which are already the final lower motor neuron for the ipsilateral face and so paralyze the whole ipsilateral face including the forehead. The abducens fascicle runs a similar ventral course from its nucleus and is frequently caught, adding ipsilateral abduction failure. This 'alternating' pattern, cranial nerve on one side and limbs on the other, is the signature of a brainstem lesion, and the specific nerve names the level: facial and abducens for the caudal pons, oculomotor for the midbrain, hypoglossal for the medulla. The forehead involvement separates the pontine facial palsy from the forehead-sparing central weakness of a capsular lesion, where the face and limbs are weak on the same side.",
+ "imagingFindings": [
+  {
+   "pathology": "Ventral pontine infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the ventrolateral caudal pons on the side of the facial palsy.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Pontine hemorrhage or cavernoma",
+   "modality": "MRI",
+   "finding": "Hematoma or a 'popcorn' cavernoma with a hemosiderin rim in the ventral pons.",
+   "sequence": "SWI"
+  },
+  {
+   "pathology": "Pontine tumor",
+   "modality": "MRI",
+   "finding": "Expansile glioma of the pons in a child.",
+   "sequence": "T1+Gd"
+  }
+ ],
+ "commonCauses": [
+  "Paramedian pontine branch infarct (basilar)",
+  "Pontine hemorrhage",
+  "Cavernous malformation",
+  "Pontine glioma",
+  "Multiple sclerosis plaque"
+ ],
+ "mimics": [
+  {
+   "name": "Bell palsy with an unrelated capsular stroke",
+   "howToDistinguish": "Two lesions; the hemiparesis is on the same side as the facial palsy in a capsular lesion"
+  },
+  {
+   "name": "Foville syndrome",
+   "howToDistinguish": "Adds a conjugate gaze palsy from the abducens nucleus or PPRF (dorsal pons)"
+  },
+  {
+   "name": "Cerebellopontine angle mass",
+   "howToDistinguish": "Facial and eighth nerve signs without contralateral limb weakness"
+  }
+ ],
+ "management": [
+  "Acute stroke treatment when vascular",
+  "Eye protection for the paralyzed lid",
+  "Investigate for cavernoma or demyelination in young patients"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    217,
+    217
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    78,
+    79
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -8,
+   "y": -32,
+   "z": -32
+  },
+  "label": "ventrolateral caudal pons"
+ },
+ "cameraPreset": "anterior"
+}

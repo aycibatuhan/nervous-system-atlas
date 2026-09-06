@@ -1,0 +1,139 @@
+{
+ "kind": "syndrome",
+ "id": "syn-parinaud-dorsal-midbrain",
+ "name": "Parinaud (dorsal midbrain) syndrome",
+ "eponyms": [
+  "Parinaud syndrome",
+  "pretectal syndrome",
+  "Sylvian aqueduct syndrome"
+ ],
+ "category": "compressive",
+ "tier": "core",
+ "localisation": {
+  "structures": [
+   "pretectal-area",
+   "superior-colliculus",
+   "rimlf",
+   "level-midbrain-superior-colliculus",
+   "cerebral-aqueduct",
+   "pineal-gland"
+  ],
+  "side": "bilateral",
+  "level": "midbrain-superior-colliculus"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -28,
+   "z": -2
+  },
+  "radiusMm": 8
+ },
+ "presentation": "A young patient complains of double vision and blurred vision on looking up, and headache. Examination shows that neither eye can look up, the lids are retracted so the eyes look startled, the pupils are large and react to a near target but not to light, and when the patient tries to look up the eyes jerk inward and retract into the orbit. Downward gaze may follow. Papilledema is common because the aqueduct is compressed.",
+ "deficits": [
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "vertical",
+   "sign": "Supranuclear up-gaze palsy, often overcome by the oculocephalic reflex early on",
+   "substrate": "pathway-vertical-gaze"
+  },
+  {
+   "modality": "pupil",
+   "side": "bilateral",
+   "distribution": "both",
+   "sign": "Light-near dissociation: mid-dilated pupils reacting to near but not to light",
+   "substrate": "pathway-pupillary-light-reflex"
+  },
+  {
+   "modality": "oculomotor",
+   "side": "bilateral",
+   "distribution": "lids and convergence",
+   "sign": "Lid retraction (Collier sign) and convergence-retraction nystagmus on attempted up-gaze",
+   "substrate": "pretectal-area"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "aqueduct",
+   "sign": "Headache and papilledema from obstructive hydrocephalus",
+   "substrate": "cerebral-aqueduct"
+  }
+ ],
+ "reasoning": "The pretectal area and posterior commissure lie just in front of the superior colliculi, beneath the pineal gland and above the aqueduct. Up-gaze commands from the rostral interstitial nucleus of the MLF cross through the posterior commissure to reach the oculomotor subnuclei of both sides, so compression of this small region abolishes up-gaze bilaterally while leaving the oculomotor nuclei, and therefore individual eye movements and the near response, intact. The pretectal nuclei that receive the light reflex afferents from both optic tracts are damaged, so the light reflex fails in both eyes, whereas the near reflex, which reaches the Edinger–Westphal nuclei from the cortex by a more ventral route, survives: light-near dissociation. Lid retraction and convergence-retraction nystagmus result from disinhibition of the levator and from co-contraction of all the extraocular muscles when the pretectum misfires. The aqueduct runs directly beneath, so a pineal tumor or a dilated third ventricle produces both the eye signs and hydrocephalus. Because the whole structure is midline and receives bilateral input, there is no ipsilateral or contralateral pattern; the syndrome is symmetric.",
+ "imagingFindings": [
+  {
+   "pathology": "Pineal region tumor",
+   "modality": "MRI",
+   "finding": "Enhancing mass in the pineal region compressing the tectum with dilatation of the lateral and third ventricles.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Hydrocephalus",
+   "modality": "CT",
+   "finding": "Dilated third and lateral ventricles with a normal fourth ventricle (aqueduct stenosis) and a distended suprapineal recess pressing on the tectum.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Dorsal midbrain infarct",
+   "modality": "MRI",
+   "finding": "Restricted diffusion in the pretectum after a top-of-the-basilar embolus.",
+   "sequence": "DWI"
+  }
+ ],
+ "commonCauses": [
+  "Pineal tumor (germinoma, pineoblastoma) in the young",
+  "Obstructive hydrocephalus",
+  "Top of the basilar infarct or midbrain hemorrhage in the elderly",
+  "Multiple sclerosis"
+ ],
+ "mimics": [
+  {
+   "name": "Progressive supranuclear palsy",
+   "howToDistinguish": "Down-gaze affected first, slow progression, no hydrocephalus, older patient"
+  },
+  {
+   "name": "Thyroid eye disease",
+   "howToDistinguish": "Up-gaze restriction from a tight inferior rectus, forced duction abnormal, normal pupils"
+  },
+  {
+   "name": "Bilateral third nerve nuclear lesion",
+   "howToDistinguish": "Ptosis and other muscles involved"
+  }
+ ],
+ "management": [
+  "Urgent MRI and neurosurgical assessment; CSF diversion for hydrocephalus",
+  "Tumor markers (AFP, beta-hCG) in serum and CSF for germ cell tumors",
+  "Prisms or occlusion for diplopia"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    100,
+    100
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    214
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -28,
+   "z": -2
+  },
+  "label": "pretectum beneath the pineal, above the aqueduct"
+ },
+ "cameraPreset": "lateral-l"
+}
