@@ -1,0 +1,38 @@
+{
+  "name": "nervous-system-atlas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "3D clinical neuroanatomy atlas with MRI correlates (local web app)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --port 5173 --strictPort",
+    "build": "npm run content && vite build",
+    "preview": "vite preview --port 5173 --strictPort",
+    "content": "node scripts/content/build.ts",
+    "content:validate": "node scripts/content/build.ts --validate-only",
+    "content:report": "node scripts/content/build.ts --report",
+    "check-data": "node scripts/check-data.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fuse.js": "7.5.0",
+    "three": "0.185.1",
+    "three-mesh-bvh": "0.9.14"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.5.0",
+    "@gltf-transform/core": "4.5.0",
+    "@gltf-transform/extensions": "4.5.0",
+    "@types/node": "^22",
+    "@types/three": "0.185.4",
+    "lil-gui": "0.21.0",
+    "marked": "18.0.11",
+    "meshoptimizer": "^0.22",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0",
+    "zod": "4.5.4"
+  }
+}

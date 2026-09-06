@@ -1,0 +1,31 @@
+{
+  "dropLinePatterns": [
+    "^\\s*mebooksfree\\.com\\s*$",
+    "^\\s*\\d{1,3}\\s+CHAPTER\\s+\\d+\\b.*$",
+    "^\\s*CHAPTER\\s+\\d+\\b.*\\s\\d{1,3}\\s*$",
+    "^\\s*[\\-_.'`‘’\"“”·•|\\s]{3,}\\s*$"
+  ],
+  "figureCaption": "^(Figure|Table)\\s+(CA-)?\\d+[-–]\\d+",
+  "substitutions": [
+    ["ﬁ", "fi"], ["ﬂ", "fl"], ["ﬀ", "ff"], ["ﬃ", "ffi"], ["ﬄ", "ffl"],
+    ["([a-z])[—–]([a-z])", "\\1-\\2"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+Vlll\\b", "\\1 VIII"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+Vll\\b", "\\1 VII"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+Xll\\b", "\\1 XII"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+Xl\\b", "\\1 XI"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+Ill\\b", "\\1 III"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+ll\\b", "\\1 II"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+lV\\b", "\\1 IV"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+lX\\b", "\\1 IX"],
+    ["(?<=\\b)(Cranial Nerves?|CN|nerves?)\\s+l\\b", "\\1 I"],
+    ["(?<=\\b)(Cranial Nerves?|CN)\\s+111\\b", "\\1 III"],
+    ["(?<=\\b)(Cranial Nerves?|CN)\\s+11\\b", "\\1 II"],
+    ["(?<=\\b)(Cranial Nerves?|CN)\\s+1\\b(?=\\)|\\s|,|\\.)", "\\1 I"],
+    ["(?<=\\b)(Cranial Nerves?|CN)\\s+X1\\b", "\\1 XI"],
+    ["(?<=\\b)(Cranial Nerves?|CN)\\s+V1\\b", "\\1 VI"],
+    ["\\bMRls\\b", "MRIs"], ["\\bMRl\\b", "MRI"], ["\\bCTs?\\b", "CT"],
+    ["(?<=[a-z])0(?=[a-z])", "o"],
+    ["\\bN0\\b", "No"]
+  ],
+  "ocrConfusions": [["rn", "m"], ["m", "rn"], ["0", "o"], ["1", "l"], ["l", "1"], ["c", "e"], ["e", "c"]]
+}

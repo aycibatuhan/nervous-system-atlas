@@ -1,0 +1,166 @@
+# Every external dataset the pipeline uses. `atlas-download` streams each file into raw/<id>/,
+# verifies/records sha256 in sources.lock.yaml, and copies the licence text alongside.
+# groups: core (always), bp3d, tracts, vessels, warp, zanatomy, manual
+templateflow_base: &tf https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/
+templateflow_nlin6: &tf6 https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/
+
+licenses:
+  MNI:
+    name: MNI/McGill template licence (permissive)
+    url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/LICENSE
+    attribution: "MNI152NLin2009cAsym template, (c) Louis Collins, McGill University (Fonov et al. 2011)"
+  CC-BY-SA-4.0:
+    name: Creative Commons Attribution-ShareAlike 4.0 International
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+  CC-BY-SA-2.1-JP:
+    name: Creative Commons Attribution-ShareAlike 2.1 Japan
+    url: https://creativecommons.org/licenses/by-sa/2.1/jp/
+    attribution: "BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan"
+  CC-BY-4.0:
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+  CC0-1.0:
+    name: CC0 1.0 Universal (public domain dedication)
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  FSL-NC:
+    name: Harvard-Oxford atlas (FSL, non-commercial)
+    url: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases
+    nc: true
+  CC-BY-NC-3.0:
+    name: Creative Commons Attribution-NonCommercial 3.0 (Diedrichsen cerebellar atlas)
+    url: https://creativecommons.org/licenses/by-nc/3.0/
+    nc: true
+
+sources:
+  # ---------------- MNI152NLin2009cAsym native ----------------
+  - id: mni_t1w
+    group: core
+    license: MNI
+    citation: "Fonov V et al. Unbiased average age-appropriate atlases for pediatric studies. NeuroImage 2011."
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_T2w.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_desc-brain_mask.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_desc-brain_T1w.nii.gz]
+      - url: !join [*tf, LICENSE]
+        dest: LICENSE.txt
+  - id: mni_aseg
+    group: core
+    license: MNI
+    citation: "FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template (TemplateFlow)."
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz]
+  - id: harvard_oxford
+    group: core
+    license: FSL-NC
+    citation: "Desikan RS et al. 2006; Makris N et al. 2006; Frazier JA et al. 2005; Goldstein JM et al. 2007 (Harvard-Oxford atlases, FSL)."
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-HOCPAL_desc-th25_dseg.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-HOSPA_desc-th25_dseg.nii.gz]
+      - url: !join [*tf6, tpl-MNI152NLin6Asym_atlas-HOCPAL_dseg.tsv]
+      - url: !join [*tf6, tpl-MNI152NLin6Asym_atlas-HOCPA_dseg.tsv]
+      - url: !join [*tf6, tpl-MNI152NLin6Asym_atlas-HOSPA_dseg.tsv]
+  - id: mial_thalamus
+    group: core
+    license: MNI
+    citation: "Najdenovska E et al. In-vivo probabilistic atlas of human thalamic nuclei based on diffusion-weighted MRI. Sci Data 2018."
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MIAL67ThalamicNuclei_dseg.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_atlas-MIAL67ThalamicNuclei_dseg.tsv]
+  - id: massp
+    group: core
+    license: MNI
+    citation: "Bazin PL et al. Multi-contrast anatomical subcortical structures parcellation (MASSP). eLife 2020."
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.tsv]
+  - id: hcp1065_tracts
+    group: core
+    license: CC-BY-SA-4.0
+    citation: "Yeh FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun 2022 (HCP1065 averaged tractography atlas)."
+    files:
+      - url: https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_avg_tracts_nifti.zip
+        unzip: true
+  - id: hypothalamus_neudorfer
+    group: core
+    license: CC-BY-4.0
+    citation: "Neudorfer C et al. A high-resolution in vivo magnetic resonance imaging atlas of the human hypothalamic region. Sci Data 2020."
+    files:
+      - url: https://zenodo.org/api/records/3942115/files/MNI152b_atlas_labels_0.5mm.nii.gz/content
+        dest: MNI152b_atlas_labels_0.5mm.nii.gz
+      - url: https://zenodo.org/api/records/3942115/files/Volumes_names-labels.csv/content
+        dest: Volumes_names-labels.csv
+  - id: cit168
+    group: core
+    license: CC-BY-4.0
+    citation: "Pauli WM, Nili AN, Tyszka JM. A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei. Sci Data 2018."
+    files:
+      - url: https://osf.io/download/vak6p/
+        dest: CIT168toMNI152-2009c_det.nii.gz
+      - url: https://osf.io/download/w8zq2/
+        dest: CIT168toMNI152-2009c_prob.nii.gz
+      - url: https://osf.io/download/6qrcb/
+        dest: labels.txt
+  - id: arterial_territories
+    group: core
+    license: CC-BY-SA-4.0
+    citation: "Liu CF et al. Digital 3D Brain MRI Arterial Territories Atlas. Sci Data 2023."
+    files:
+      - url: https://raw.githubusercontent.com/Chin-Fu-Liu/Arterial_Atlas/main/data/Atlas_182/ArterialAtlas.nii
+      - url: https://raw.githubusercontent.com/Chin-Fu-Liu/Arterial_Atlas/main/data/Atlas_182/ArterialAtlas_level2.nii
+      - url: https://raw.githubusercontent.com/Chin-Fu-Liu/Arterial_Atlas/main/data/ArterialAtlasLables.txt
+        dest: ArterialAtlasLabels.txt
+  - id: diedrichsen_cerebellum
+    group: core
+    license: CC-BY-NC-3.0
+    citation: "Diedrichsen J et al. A probabilistic MR atlas of the human cerebellum. NeuroImage 2009."
+    files:
+      - url: https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom_space-MNI_dseg.nii
+      - url: https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom.tsv
+  - id: mouches_arteries
+    group: vessels
+    license: CC0-1.0
+    citation: "Mouches P, Forkert ND. A statistical atlas of cerebral arteries generated using multi-center MRA datasets. Sci Data 2019."
+    files:
+      - url: https://ndownloader.figshare.com/files/14460467
+        dest: vesselProbabilities.nii.gz
+      - url: https://ndownloader.figshare.com/files/14475920
+        dest: vesselRadius.nii.gz
+  # ---------------- BodyParts3D ----------------
+  - id: bodyparts3d
+    group: bp3d
+    license: CC-BY-SA-2.1-JP
+    citation: "Mitsuhashi N et al. BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Res 2009."
+    files:
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip
+        unzip: true
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_BP3D_4.0_obj_99.zip
+        unzip: true
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_element_parts.txt
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_parts_list_e.txt
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_parts_list_e.txt
+      - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html
+  # ---------------- optional ----------------
+  - id: templateflow_warp
+    group: warp
+    license: MNI
+    citation: "TemplateFlow composite transform MNI152NLin6Asym -> MNI152NLin2009cAsym."
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_from-MNI152NLin6Asym_mode-image_xfm.h5]
+  - id: zanatomy
+    group: zanatomy
+    license: CC-BY-SA-4.0
+    citation: "Z-Anatomy, an open 3D atlas of human anatomy (BodyParts3D-derived)."
+    files:
+      - url: https://raw.githubusercontent.com/Z-Anatomy/Models-of-human-anatomy/master/Z-Anatomy.zip
+        unzip: true
+  - id: brainstem_navigator
+    group: manual
+    license: MNI
+    citation: "Bianciardi M et al. Brainstem Navigator (NITRC). Manual download required (click-through agreement)."
+    manual: true
+    files:
+      - url: https://www.nitrc.org/frs/download.php/17380/BrainstemNavigatorv1.0.zip
+        dest: BrainstemNavigatorv1.0.zip
+        unzip: true

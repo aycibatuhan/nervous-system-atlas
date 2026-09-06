@@ -1,0 +1,50 @@
+import * as THREE from 'three';
+import { SceneManager } from './scene/SceneManager.ts';
+import { MeshRegistry } from './loader/MeshRegistry.ts';
+import { Picker } from './picking/Picker.ts';
+import { installBvh } from './picking/bvh.ts';
+import { createStore, type Store } from './state/store.ts';
+import { initialState, type AppState, type Axis } from './types/state.ts';
+import type { LabelsJson, Manifest, ManifestMesh } from './types/manifest.ts';
+import { makeGrid, type VolumeGrid } from './volume/coords.ts';
+import { Flags, Lut } from './volume/textures.ts';
+import { createSliceUniforms, SlicePlane, type SliceUniforms } from './volume/SlicePlane.ts';
+import type { ContentBundle } from './types/content.ts';
+
+/** Everything the actions and UI need to reach. Created once in main.ts. */
+export interface App {
+  store: Store<AppState>;
+  sm: SceneManager;
+  manifest: Manifest;
+  labels: LabelsJson | null;
+  registry: MeshRegistry;
+  picker: Picker;
+  grid: VolumeGrid;
+  uniforms: SliceUniforms;
+  slices: Record<Axis, SlicePlane>;
+  luts: { struct: Lut; tract: Lut; terr: Lut; flags: Flags };
+  content: ContentBundle | null;
+  lesion: THREE.Mesh;
+}
+
+export function createApp(canvas: HTMLCanvasElement, manifest: Manifest): App {
+  installBvh();
+  const store = createStore(initialState());
+  const sm = new SceneManager(canvas);
+  const registry = new MeshRegistry(manifest, sm.meshRoot, () => { sm.requestRender(); });
+  const grid = makeGrid(manifest.grid.shape, manifest.grid.affine_ras);
+  const luts = { struct: new Lut(65536), tract: new Lut(256), terr: new Lut(256), flags: new Flags() };
+  const uniforms = createSliceUniforms(grid, { struct: luts.struct.tex, tract: luts.tract.tex, terr: luts.terr.tex, flags: luts.flags.tex });
+  const slices = {
+    axial: new SlicePlane('axial', grid, uniforms), coronal: new SlicePlane('coronal', grid, uniforms), sagittal: new SlicePlane('sagittal', grid, uniforms),
+  };
+  for (const s of Object.values(slices)) { sm.sliceRoot.add(s.mesh); s.setVisible(false); }
+  const lesion = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 24), new THREE.MeshStandardMaterial({ color: 0xff3030, transparent: true, opacity: 0.45, depthWrite: false, emissive: 0x550000 }));
+  lesion.visible = false; lesion.renderOrder = 20; sm.overlayRoot.add(lesion);
+  const app: App = { store, sm, manifest, labels: null, registry, picker: null as unknown as Picker, grid, uniforms, slices, luts, content: null, lesion };
+  return app;
+}
+
+export function meshEntry(app: App, id: string | null): ManifestMesh | undefined {
+  return id ? app.registry.byId.get(id) : undefined;
+}
