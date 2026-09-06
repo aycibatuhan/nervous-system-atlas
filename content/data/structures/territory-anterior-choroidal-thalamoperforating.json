@@ -1,0 +1,177 @@
+{
+ "kind": "structure",
+ "id": "territory-anterior-choroidal-thalamoperforating",
+ "name": "Anterior choroidal and thalamoperforating territory",
+ "synonyms": [
+  "anterior choroidal territory",
+  "tuberothalamic territory"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-anterior-choroidal-thalamoperforating-l",
+  "territory-anterior-choroidal-thalamoperforating-r"
+ ],
+ "summary": "This combined territory groups the deep region supplied by the anterior choroidal artery from the internal carotid with the anterior thalamoperforating (tuberothalamic) domain of the posterior communicating artery: the lower posterior limb of the internal capsule, the medial pallidum, the optic tract and lateral geniculate body, the cerebral peduncle, the hippocampal head, the uncus and the anterior thalamus. It is the territory of the anterior choroidal syndrome (hemiparesis, hemisensory loss and hemianopia without cortical signs) and of the tuberothalamic infarct (amnesia, apathy and facial paresis for emotional movement), two of the most instructive deep strokes because a single small vessel produces three long-tract signs or a frontal-limbic syndrome.",
+ "anatomy": {
+  "location": "The lower posterior limb and retrolenticular internal capsule, the medial globus pallidus, the optic tract and lateral geniculate body, the medial temporal lobe (uncus, amygdala, hippocampal head), the cerebral peduncle and the choroid plexus of the temporal horn (anterior choroidal), and the anterior and ventral anterior thalamus (tuberothalamic), between the lateral lenticulostriate territory above, the PCA temporal territory behind and the posterior choroidal-thalamoperforating territory medially.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Anterior choroidal artery from the internal carotid; tuberothalamic artery from the posterior communicating artery",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Basal vein of Rosenthal",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The anterior choroidal artery runs from the carotid along the optic tract to the choroidal fissure, giving perforators to the posterior limb (corticospinal, thalamocortical and optic radiation fibers), the pallidum, the optic tract and geniculate, the medial temporal lobe and the peduncle; the tuberothalamic artery from the posterior communicating supplies the anterior thalamic nuclei and the ventral anterior nucleus that carry the Papez memory circuit and the frontal-thalamic loops. Occlusion of the former produces the triad of hemiparesis, hemianesthesia and hemianopia; of the latter, amnesia, abulia and a facial paresis of emotional expression, with hypophonia and, on the left, thalamic aphasia.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-anterior-choroidal",
+   "arteries-thalamoperforating",
+   "artery-pcom",
+   "artery-internal-carotid"
+  ],
+  "territories": [
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "territory-anterior-choroidal-thalamoperforating-l"
+    },
+    "label": "anterior choroidal and tuberothalamic territory of the lower posterior limb and anterior thalamus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-anterior-choroidal-thalamoperforating-r"
+    },
+    "label": "deep domain along the optic tract and medial temporal lobe"
+   }
+  ],
+  "normalAppearance": "On the overlay this domain wraps around the lower posterior limb, the optic tract and the medial temporal lobe and includes the anterior thalamus; on imaging an anterior choroidal infarct is a linear diffusion lesion in the posterior limb extending to the medial temporal region.",
+  "pathology": [
+   {
+    "pathology": "Anterior choroidal artery infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the lower posterior limb and medial pallidum, sometimes the optic tract and hippocampal head, with hemiparesis, hemisensory loss and hemianopia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Tuberothalamic (polar) infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the anterior thalamus with apathy, amnesia, emotional facial paresis and left-sided thalamic aphasia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Anterior choroidal injury during aneurysm or temporal lobe surgery",
+    "modality": "MRI",
+    "finding": "Postoperative posterior limb infarct after clipping of a carotid aneurysm or dissection of the choroidal fissure.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemiparesis, hemisensory loss and hemianopia without cortical signs",
+    "side": "contralateral",
+    "mechanism": "Posterior limb and optic tract infarction from anterior choroidal occlusion"
+   },
+   {
+    "deficit": "Amnesia, abulia and emotional facial paresis",
+    "side": "contralateral",
+    "mechanism": "Anterior thalamic infarction from tuberothalamic occlusion"
+   },
+   {
+    "deficit": "Thalamic aphasia (left)",
+    "side": "n/a",
+    "mechanism": "Left anterior thalamic disconnection from the language cortex"
+   }
+  ],
+  "examination": [
+   "Strength, sensation and visual fields together: the triad names the artery",
+   "Delayed recall and spontaneous emotional facial movement",
+   "Language when the left anterior thalamus is involved"
+  ],
+  "syndromes": [
+   "syn-anterior-choroidal-infarct",
+   "syn-thalamic-dejerine-roussy",
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Three long-tract signs from one tiny artery: that is the anterior choroidal",
+   "The anterior thalamus makes the patient forget and stop caring; the face smiles only on command",
+   "The anterior choroidal artery is the price of a carotid aneurysm clip placed too far back"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    238,
+    239
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-anterior-choroidal"
+}

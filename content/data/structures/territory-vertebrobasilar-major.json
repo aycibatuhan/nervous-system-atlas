@@ -1,0 +1,187 @@
+{
+ "kind": "structure",
+ "id": "territory-vertebrobasilar-major",
+ "name": "Vertebrobasilar major territory",
+ "synonyms": [
+  "posterior circulation territory",
+  "vertebrobasilar domain (level 2)"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-vertebrobasilar-major-l",
+  "territory-vertebrobasilar-major-r"
+ ],
+ "summary": "The vertebrobasilar major territory is the whole posterior fossa supply of the vertebral and basilar arteries and their branches: the medulla, the pons, the midbrain, the cerebellum and, at the top, the thalamic and occipital territories of the posterior cerebral arteries when they are included. This level-2 map merges the basilar (pontine), superior cerebellar and inferior cerebellar (PICA and AICA) domains, and it is the territory of the posterior circulation stroke, whose warning symptoms (vertigo, diplopia, dysarthria, ataxia, crossed signs) are missed more often than those of the anterior circulation. Basilar occlusion infarcts the pons and midbrain and is fatal or leaves the patient locked in unless the artery is opened.",
+ "anatomy": {
+  "location": "Medulla, pons and midbrain (paramedian and lateral territories), the cerebellum (superior surface from the SCA, anterior inferior from AICA, posterior inferior from PICA), the inner ear (labyrinthine artery) and, via the PCAs, the thalamus and occipital lobes; bounded above by the tentorium and the PCA-MCA border and below by the spinal territory of the anterior spinal artery.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Vertebral and basilar arteries and their branches",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Petrosal, transverse and sigmoid sinuses via posterior fossa veins",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "It supplies the cranial nerve nuclei, the ascending and descending long tracts, the reticular activating system, the respiratory and cardiovascular centers, the cerebellar circuits and the vestibular system, so ischemia produces combinations of cranial nerve, cerebellar, long-tract and consciousness disturbance that name the level. The two vertebral arteries and the circle of Willis provide collaterals, and paramedian perforators from the basilar have none, which is why pontine lacunes are common; occlusion of the basilar trunk is a thrombotic disease of the elderly and a dissection of the young.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "artery-basilar",
+   "artery-pica",
+   "artery-aica",
+   "artery-sca",
+   "arteries-pontine"
+  ],
+  "territories": [
+   "territory-vertebrobasilar-major"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "territory-vertebrobasilar-major-l"
+    },
+    "label": "vertebrobasilar territory of the brainstem and cerebellum"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-vertebrobasilar-major-r"
+    },
+    "label": "posterior circulation domain of the pons and cerebellum"
+   }
+  ],
+  "normalAppearance": "On the overlay the vertebrobasilar domain covers the brainstem and cerebellum; on imaging the basilar artery is a flow void in front of the pons and a hyperdense basilar on CT is the sign of its thrombosis.",
+  "pathology": [
+   {
+    "pathology": "Basilar artery occlusion",
+    "modality": "CTA",
+    "finding": "Absent basilar opacification with hyperdense basilar sign on plain CT; DWI shows paramedian pontine and midbrain infarcts, often with cerebellar and occipital lesions.",
+    "sequence": "n/a",
+    "timing": "Thrombectomy improves outcome up to 24 hours in selected patients"
+   },
+   {
+    "pathology": "Vertebral artery dissection",
+    "modality": "MRA",
+    "finding": "Tapered stenosis or intramural hematoma of the V2-V3 segments in a young patient with neck pain and a PICA-territory infarct.",
+    "sequence": "TOF"
+   },
+   {
+    "pathology": "Pontine and cerebellar infarcts",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in paramedian pontine, lateral medullary or cerebellar territories; early DWI can be negative in small brainstem lesions.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Crossed brainstem syndromes: cranial nerve palsy with contralateral long-tract signs",
+    "side": "ipsilateral",
+    "mechanism": "Ischemia of one brainstem level"
+   },
+   {
+    "deficit": "Vertigo, ataxia, nystagmus and dysarthria",
+    "side": "ipsilateral",
+    "mechanism": "Cerebellar and vestibular ischemia"
+   },
+   {
+    "deficit": "Coma, locked-in state or quadriplegia",
+    "side": "bilateral",
+    "mechanism": "Basilar trunk occlusion infarcting the pons"
+   },
+   {
+    "deficit": "Cortical blindness and amnesia at the top",
+    "side": "bilateral",
+    "mechanism": "Bilateral PCA involvement"
+   }
+  ],
+  "examination": [
+   "Cranial nerve examination, HINTS testing and gait in any patient with vertigo or diplopia",
+   "Level of consciousness and pupils in suspected basilar occlusion",
+   "Neck pain history and vascular imaging of the vertebral arteries"
+  ],
+  "syndromes": [
+   "syn-basilar-occlusion",
+   "syn-locked-in",
+   "syn-wallenberg-lateral-medullary",
+   "syn-pica-cerebellar-infarct",
+   "syn-top-of-basilar"
+  ],
+  "pearls": [
+   "The posterior circulation announces itself with the five Ds: dizziness, diplopia, dysarthria, dysphagia, dystaxia",
+   "A hyperdense basilar on CT is an emergency of the same weight as a hyperdense MCA",
+   "Isolated vertigo can be a vertebrobasilar stroke; the HINTS examination beats the early MRI"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    185,
+    228
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    82
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level2",
+ "parent": "territory-basilar-paramedian"
+}

@@ -1,0 +1,175 @@
+{
+ "kind": "structure",
+ "id": "territory-pca-major",
+ "name": "PCA major territory",
+ "synonyms": [
+  "PCA territory (level 2)",
+  "posterior cerebral artery domain"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-pca-major-l",
+  "territory-pca-major-r"
+ ],
+ "summary": "The posterior cerebral artery major territory is the occipital lobe, the inferomedial temporal lobe (parahippocampal and fusiform gyri, hippocampus), the splenium and, through the thalamoperforating, thalamogeniculate and posterior choroidal arteries, most of the thalamus and part of the midbrain. This level-2 map merges the occipital and temporal PCA cortical domains with the thalamic and midbrain perforator territories, and it is the territory infarcted in a P1 or P2 occlusion, most often embolic from the heart or the vertebrobasilar system. Its signature is a contralateral homonymous hemianopia, with memory loss, alexia, visual agnosia and thalamic sensory loss according to the extent, and bilateral infarction produces cortical blindness.",
+ "anatomy": {
+  "location": "Medial and inferior occipital lobe (calcarine cortex, cuneus, lingual gyrus), the occipital pole, the inferomedial temporal lobe (parahippocampal, fusiform and inferior temporal gyri, hippocampus), the splenium, and the deep territory of the thalamus (except the tuberothalamic part when the PComm supplies it), the subthalamus and the medial midbrain; bounded by the MCA territory laterally and the ACA territory at the parieto-occipital sulcus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior cerebral artery P1-P4 segments and perforators",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Basal vein of Rosenthal and the great cerebral vein, transverse sinus",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory contains the primary and association visual cortex, the ventral visual stream of object and face recognition, the medial temporal memory system, the splenial fibers that join the two visual cortices and the thalamic relays of sensation, arousal and memory, so its infarction produces visual, memory and sensory syndromes rather than weakness, unless the midbrain peduncle is involved. Leptomeningeal collaterals from the MCA spare the occipital pole (macular sparing) in many cases; the perforator territories have none. Embolic occlusion of the basilar tip involves both PCAs and the thalami at once.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-pcom"
+  ],
+  "territories": [
+   "territory-pca-major"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-pca-major-l"
+    },
+    "label": "PCA territory over the occipital and medial temporal lobes"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "territory-pca-major-r"
+    },
+    "label": "PCA domain from the splenium to the occipital pole"
+   }
+  ],
+  "normalAppearance": "On the overlay the PCA domain covers the medial occipital and inferomedial temporal surfaces and the thalamus; the calcarine cortex and hippocampus are its core.",
+  "pathology": [
+   {
+    "pathology": "PCA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the medial occipital lobe with or without the medial temporal lobe and thalamus; homonymous hemianopia with macular sparing when the pole survives.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Top of the basilar syndrome",
+    "modality": "MRI",
+    "finding": "Bilateral PCA, thalamic and midbrain infarcts with cortical blindness, somnolence, vertical gaze palsy and amnesia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Posterior reversible encephalopathy syndrome (mimic)",
+    "modality": "MRI",
+    "finding": "Bilateral parieto-occipital vasogenic edema in the PCA-MCA border region with visual symptoms; reversible, not infarction.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral homonymous hemianopia",
+    "side": "contralateral",
+    "mechanism": "Calcarine cortex or optic radiation infarction"
+   },
+   {
+    "deficit": "Alexia without agraphia, visual agnosia (left), prosopagnosia (right)",
+    "side": "n/a",
+    "mechanism": "Ventral temporo-occipital and splenial infarction"
+   },
+   {
+    "deficit": "Amnesia and thalamic sensory loss",
+    "side": "contralateral",
+    "mechanism": "Medial temporal and thalamic perforator infarction"
+   },
+   {
+    "deficit": "Cortical blindness with denial when bilateral",
+    "side": "bilateral",
+    "mechanism": "Bilateral calcarine infarction (Anton syndrome)"
+   }
+  ],
+  "examination": [
+   "Confrontation fields and reading",
+   "Face recognition and delayed recall",
+   "Sensation on the contralateral body when the thalamus is involved"
+  ],
+  "syndromes": [
+   "syn-pca-infarct",
+   "syn-homonymous-hemianopia",
+   "syn-top-of-basilar",
+   "syn-anton",
+   "syn-alexia-without-agraphia"
+  ],
+  "pearls": [
+   "A stroke with a hemianopia and no weakness is a PCA stroke until the CT says otherwise",
+   "Macular sparing means the MCA fed the pole, not that the stroke was small",
+   "PCA infarcts are embolic more often than any other territory: look at the heart and the vertebral arteries"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    336
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level2",
+ "parent": "territory-pca"
+}

@@ -1,0 +1,181 @@
+{
+ "kind": "structure",
+ "id": "tract-thalamic-radiation-anterior",
+ "name": "Anterior thalamic radiation",
+ "synonyms": [
+  "frontothalamic radiation",
+  "anterior limb fibers"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-thalamic-radiation-anterior-l",
+  "tract-thalamic-radiation-anterior-r"
+ ],
+ "summary": "The anterior thalamic radiation is the bundle of fibers between the anterior and mediodorsal thalamic nuclei and the prefrontal cortex, running through the anterior limb of the internal capsule between the caudate head and the lentiform nucleus. It carries the limbic and executive traffic of the frontal lobe: the anterior nuclei's contribution to the Papez memory circuit, the mediodorsal nucleus's link with the dorsolateral and orbitofrontal cortex, and the corticothalamic feedback that shapes attention and working memory. Lesions of the anterior limb produce apathy, executive dysfunction and memory impairment without weakness, and the radiation is the target of the anterior capsulotomy used for obsessive-compulsive disorder and of anterior thalamic stimulation for epilepsy.",
+ "anatomy": {
+  "location": "From the anterior and mediodorsal thalamic nuclei forward through the anterior limb of the internal capsule, between the head of the caudate medially and the lentiform nucleus laterally, fanning into the corona radiata to the prefrontal cortex, the anterior cingulate and the orbitofrontal cortex; it runs with the frontopontine fibers.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Anterior and mediodorsal thalamic nuclei",
+    "via": "thalamocortical fibers"
+   },
+   {
+    "from": "Prefrontal cortex",
+    "via": "corticothalamic fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Prefrontal, orbitofrontal and anterior cingulate cortex",
+    "via": "thalamocortical termination"
+   },
+   {
+    "to": "Anterior and mediodorsal thalamus",
+    "via": "corticothalamic termination"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic",
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "It is the two-way channel between the thalamus and the prefrontal cortex: the anterior nuclei relay mammillary and hippocampal memory signals to the cingulate and prefrontal cortex, the mediodorsal nucleus relays amygdalar, olfactory and pallidal signals to the orbitofrontal and dorsolateral cortex and mediates working memory and reward-guided decisions, and prefrontal corticothalamic fibers return through it to tune thalamic gating. Interruption disconnects the frontal lobe from the limbic thalamus, producing abulia, poor planning, disinhibition and a diencephalic-type amnesia, the picture of anterior capsular, caudate and anterior thalamic strokes and of the anterior limb lesions seen in schizophrenia research.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-lenticulostriate",
+   "artery-mca",
+   "artery-aca",
+   "arteries-thalamoperforating"
+  ],
+  "territories": [
+   "territory-medial-lenticulostriate",
+   "territory-lateral-lenticulostriate",
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "tract-thalamic-radiation-anterior-l"
+    },
+    "label": "anterior thalamic radiation in the anterior limb of the internal capsule"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-thalamic-radiation-anterior-r"
+    },
+    "label": "fibers from the anterior thalamus to the prefrontal cortex"
+   }
+  ],
+  "normalAppearance": "Tractography shows a green (anteroposterior) bundle from the anterior thalamus through the anterior limb to the frontal lobe; on FLAIR the anterior limb is a thin dark band between the caudate and the putamen.",
+  "pathology": [
+   {
+    "pathology": "Anterior limb or caudate infarct (recurrent artery of Heubner or lenticulostriate)",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the anterior limb and caudate head with abulia, executive dysfunction and confusion, no weakness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Anterior capsulotomy",
+    "modality": "MRI",
+    "finding": "Bilateral small lesions of the anterior limb from radiofrequency or focused ultrasound for refractory obsessive-compulsive disorder.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Anterior thalamic nucleus stimulation for epilepsy",
+    "modality": "MRI",
+    "finding": "Electrodes in the anterior thalamic nuclei at the termination of the mammillothalamic tract; the radiation is the route to the cingulate that spreads the effect.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Abulia, apathy and executive dysfunction",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the prefrontal cortex from the mediodorsal and anterior thalamus"
+   },
+   {
+    "deficit": "Memory impairment",
+    "side": "bilateral",
+    "mechanism": "Interruption of the anterior nucleus limb of the Papez circuit"
+   },
+   {
+    "deficit": "Disinhibition and personality change",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the orbitofrontal cortex from the mediodorsal thalamus"
+   }
+  ],
+  "examination": [
+   "Initiative and spontaneous behavior during the interview",
+   "Verbal fluency, working memory and set shifting",
+   "Delayed recall"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff",
+   "syn-aca-infarct"
+  ],
+  "pearls": [
+   "An anterior limb stroke looks like a frontal lobe stroke: no weakness, no drive",
+   "The anterior thalamic radiation is the anatomy of capsulotomy for obsessive-compulsive disorder",
+   "Anterior limb means thinking and remembering; posterior limb means moving and feeling"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    238,
+    239
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "projection",
+ "parent": "internal-capsule"
+}

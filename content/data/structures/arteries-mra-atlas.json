@@ -1,0 +1,147 @@
+{
+ "kind": "structure",
+ "id": "arteries-mra-atlas",
+ "name": "Cerebral arteries (MRA atlas iso-surface)",
+ "synonyms": [
+  "intracranial arterial tree",
+  "MRA average vessel map"
+ ],
+ "system": "arteries",
+ "meshIds": [
+  "arteries-mra-atlas"
+ ],
+ "summary": "This mesh is the intracranial arterial tree extracted from a population magnetic resonance angiography atlas: the iso-surface of the average vessel probability map, thresholded within the brain, so it shows the vessels that are constant across people, the internal carotid siphons, the circle of Willis, the proximal anterior, middle and posterior cerebral arteries with their first cortical branches, the basilar and vertebral arteries and the cerebellar arteries. It is the atlas's imaging-derived counterpart to the named artery meshes registered from the whole-body model: it sits exactly on the MNI template so that it overlays the MRI slices without registration error, and it shows where the arteries really run relative to the brain surface and the cisterns.",
+ "anatomy": {
+  "location": "Intracranial arteries from the petrous carotid and the vertebrobasilar junction up to the second- and third-order cortical branches, following the basal cisterns, the Sylvian fissures, the interhemispheric fissure and the ambient cisterns, in MNI space with the brain mask as the limit.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Internal carotid and vertebral arteries",
+    "via": "inflow"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Cortical, perforating and cerebellar branches",
+    "via": "outflow"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The tree gives the spatial relation of each artery to the parenchyma it supplies and to the cranial nerves and cisterns it crosses: the M1 segment along the anterior perforated substance where the lenticulostriates leave it, the A1 and anterior communicating complex above the chiasm, the P2 segment around the peduncle beside the third nerve, the basilar trunk in front of the pons, and the vertebral arteries at the medulla. Because it is an average, it is thicker and smoother than any individual's vessels and it omits variants (fetal PCA, hypoplastic A1), but it is the correct reference for locating aneurysm sites, thrombectomy targets and perforator origins on the atlas MRI.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid",
+   "artery-basilar",
+   "artery-vertebral",
+   "artery-mca",
+   "artery-aca",
+   "artery-pca"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "arteries-mra-atlas"
+    },
+    "label": "circle of Willis in the suprasellar cistern"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "arteries-mra-atlas"
+    },
+    "label": "carotid siphons and the basilar artery in front of the brainstem"
+   }
+  ],
+  "normalAppearance": "On time-of-flight MRA the intracranial arteries are bright flow signal; the atlas iso-surface reproduces the average of many such angiograms, with vessel caliber proportional to how consistently the vessel is present.",
+  "pathology": [
+   {
+    "pathology": "Aneurysm at a circle of Willis branch point",
+    "modality": "CTA",
+    "finding": "Saccular outpouching at the anterior communicating, posterior communicating or MCA bifurcation, the three commonest sites, each visible on the atlas tree.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Large vessel occlusion",
+    "modality": "CTA",
+    "finding": "Abrupt cut-off of the M1, basilar or carotid terminus with absent distal opacification; the atlas tree shows the expected course of the missing segment.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Moyamoya disease",
+    "modality": "MRA",
+    "finding": "Progressive stenosis of the terminal carotid and proximal ACA and MCA with a puff-of-smoke network of collaterals.",
+    "sequence": "TOF"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "No deficit: reference mesh",
+    "side": "n/a",
+    "mechanism": "This is an imaging-derived reference, not a structure with a lesion syndrome"
+   },
+   {
+    "deficit": "Localizes aneurysm and occlusion sites",
+    "side": "n/a",
+    "mechanism": "The tree marks branch points and segments used in vascular localization"
+   }
+  ],
+  "examination": [
+   "Compare a patient's angiogram with the atlas tree to name segments and branch points",
+   "Use the tree with the territory overlays to relate an occlusion to its expected infarct"
+  ],
+  "syndromes": [
+   "syn-subarachnoid-hemorrhage",
+   "syn-basilar-occlusion",
+   "syn-mca-stem-infarct"
+  ],
+  "pearls": [
+   "The MRA tree lies exactly on the atlas MRI; the registered whole-body arteries carry a few millimeters of error",
+   "Aneurysms grow at branch points: the atlas tree shows the three commonest",
+   "An average artery is thicker than a real one; use the tree for course, not caliber"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 2,
+   "pages": [
+    11,
+    20
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    190
+   ]
+  }
+ ],
+ "tags": [
+  "reference",
+  "MRA",
+  "atlas"
+ ],
+ "status": "draft",
+ "subsystem": "mra",
+ "parent": "circle-of-willis"
+}

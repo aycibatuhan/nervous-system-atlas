@@ -1,0 +1,176 @@
+{
+ "kind": "structure",
+ "id": "tract-corticopontine-frontal",
+ "name": "Frontopontine tract",
+ "synonyms": [
+  "frontopontine fibers",
+  "corticopontine tract (frontal)"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-corticopontine-frontal-l",
+  "tract-corticopontine-frontal-r"
+ ],
+ "summary": "The frontopontine tract carries fibers from the prefrontal, premotor and supplementary motor cortex to the pontine nuclei of the same side, traveling through the anterior limb of the internal capsule and the medial fifth of the crus cerebri to end in the basis pontis, from which the pontocerebellar fibers cross into the contralateral cerebellar hemisphere. It is the largest of the corticopontine projections and the frontal lobe's route to the cerebellum, carrying the intended motor plan and the cognitive signals that the posterior cerebellum processes. Its interruption contributes to the ataxia of capsular and midbrain lesions on the side opposite the cerebellar signs (ataxic hemiparesis) and to the cognitive changes of frontal-cerebellar disconnection.",
+ "anatomy": {
+  "location": "From the prefrontal, premotor and supplementary motor cortex through the corona radiata and the anterior limb of the internal capsule, descending in the medial part of the crus cerebri (medial to the corticospinal fibers) and ending in the ipsilateral pontine nuclei of the basis pontis at all levels.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal, premotor and supplementary motor cortex",
+    "via": "origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Ipsilateral pontine nuclei",
+    "via": "termination"
+   },
+   {
+    "to": "Contralateral cerebellar cortex (via pontocerebellar fibers)",
+    "via": "middle cerebellar peduncle"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "The tract sends the frontal cortex's motor plans and cognitive commands to the pontine nuclei, whose axons cross in the middle cerebellar peduncle to the contralateral cerebellar cortex, particularly the posterior lobe and Crus I-II, which return a corrected signal through the dentate nucleus and the thalamus; it is the input limb of the cerebrocerebellar loop that lets the cerebellum predict and time both movement and thought. Because the pathway crosses at the pons and the cerebellar outflow crosses again at the superior cerebellar peduncle, a frontopontine lesion produces ataxia on the side of the hemiparesis, the mechanism of the ataxic hemiparesis of capsular and pontine lacunes.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-lenticulostriate",
+   "artery-mca",
+   "artery-pca",
+   "arteries-pontine",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-lateral-lenticulostriate",
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-corticopontine-frontal-l"
+    },
+    "label": "frontopontine fibers from the frontal lobe to the basis pontis"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "tract-corticopontine-frontal-r"
+    },
+    "label": "frontopontine tract in the medial crus cerebri"
+   }
+  ],
+  "normalAppearance": "Tractography shows a bundle from the frontal lobe through the anterior limb and the medial crus into the pons, lying medial to the corticospinal tract in the peduncle; not separable on conventional MRI.",
+  "pathology": [
+   {
+    "pathology": "Ataxic hemiparesis (capsular or pontine lacune)",
+    "modality": "MRI",
+    "finding": "Small infarct of the posterior limb, corona radiata or basis pontis interrupting corticopontine and corticospinal fibers together, with weakness and ataxia in the same limbs.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Crossed cerebellar diaschisis",
+    "modality": "PET",
+    "finding": "Hypometabolism of the cerebellar hemisphere opposite a large frontal or capsular lesion from loss of corticopontocerebellar input; MRI may show later cerebellar atrophy.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Pontine glioma",
+    "modality": "MRI",
+    "finding": "Diffuse pontine expansion infiltrating the corticopontine terminations with ataxia, cranial nerve palsies and long-tract signs.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ataxia of the limbs on the side of the hemiparesis",
+    "side": "contralateral",
+    "mechanism": "Interruption of the corticopontine input before its crossing, with the cerebellar output crossing back"
+   },
+   {
+    "deficit": "Impaired motor planning and sequencing",
+    "side": "contralateral",
+    "mechanism": "Loss of premotor and supplementary motor input to the cerebellum"
+   },
+   {
+    "deficit": "Frontal-cerebellar cognitive changes",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the prefrontal cortex from the posterior cerebellum"
+   }
+  ],
+  "examination": [
+   "Finger-nose and heel-shin testing on the weak side; ataxia out of proportion to weakness",
+   "Strength and reflexes",
+   "Executive testing in bilateral or extensive lesions"
+  ],
+  "syndromes": [
+   "syn-lacunar-ataxic-hemiparesis",
+   "syn-cerebellar-hemispheric"
+  ],
+  "pearls": [
+   "Ataxic hemiparesis is a corticopontine lesion: the ataxia and the weakness sit on the same side because both cross",
+   "The frontal lobe talks to the cerebellum through the pons; the cerebellum answers through the thalamus",
+   "Crossed cerebellar diaschisis is the cerebellum going quiet when its frontopontine input stops"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    242
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    205,
+    212
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    63
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "projection",
+ "parent": "internal-capsule"
+}

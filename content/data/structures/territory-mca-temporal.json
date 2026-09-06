@@ -1,0 +1,165 @@
+{
+ "kind": "structure",
+ "id": "territory-mca-temporal",
+ "name": "MCA territory, temporal",
+ "synonyms": [
+  "inferior division MCA territory",
+  "temporal MCA domain"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-mca-temporal-l",
+  "territory-mca-temporal-r"
+ ],
+ "summary": "The temporal MCA territory is the lateral temporal lobe supplied by the inferior division of the middle cerebral artery: the superior, middle and part of the inferior temporal gyri, the temporal pole, Heschl's gyrus and the planum temporale, with the underlying temporal stem and Meyer's loop of the optic radiation. It is the territory of Wernicke aphasia on the left and of auditory neglect and aprosodia on the right, both with a superior quadrantanopia and no weakness, the pattern of the inferior division stroke that is often mistaken for confusion or psychiatric illness. Its inferior edge with the PCA territory on the inferior temporal gyrus is a watershed.",
+ "anatomy": {
+  "location": "Lateral temporal convexity from the temporal pole to the temporo-occipital junction, including the superior and middle temporal gyri, the upper inferior temporal gyrus, the transverse temporal gyri and the planum temporale, and the underlying white matter including the temporal stem and Meyer's loop; bounded above by the Sylvian fissure and the parietal territory, below by the PCA territory and medially by the anterior choroidal territory.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Inferior division of the MCA: anterior, middle and posterior temporal and temporo-occipital arteries",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Inferior anastomotic vein of Labbe and the transverse sinus",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory contains the primary and association auditory cortex, the posterior language cortex of the dominant hemisphere, the ventral semantic and auditory identification streams, the temporal pole and the anterior part of the optic radiation, so its infarction produces fluent aphasia with impaired comprehension and repetition on the left, impaired prosody and auditory attention on the right, and a superior quadrantanopia on either side; it is supplied by the anterior, middle and posterior temporal arteries and the temporo-occipital artery of the inferior division, and collateral flow from the PCA along the inferior temporal gyrus limits the infarct in many cases.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-mca-temporal-l"
+    },
+    "label": "temporal MCA territory on the lateral temporal lobe"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "territory-mca-temporal-r"
+    },
+    "label": "inferior division domain below the Sylvian fissure"
+   }
+  ],
+  "normalAppearance": "On the overlay the temporal MCA domain covers the lateral temporal convexity below the Sylvian fissure; the temporal stem and the superior temporal plane are its deep and upper parts.",
+  "pathology": [
+   {
+    "pathology": "Inferior division MCA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the lateral temporal cortex with Wernicke aphasia (left) and a superior quadrantanopia; no weakness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Herpes simplex encephalitis (mimic)",
+    "modality": "MRI",
+    "finding": "Medial and anterior temporal FLAIR change that crosses arterial boundaries and spares the putamen; fever and CSF pleocytosis.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Temporal MCA-PCA watershed infarct",
+    "modality": "MRI",
+    "finding": "Linear restricted diffusion along the inferior temporal gyrus at the border of the two territories after hypotension.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Wernicke aphasia (left)",
+    "side": "n/a",
+    "mechanism": "Posterior superior temporal gyrus and planum temporale infarction"
+   },
+   {
+    "deficit": "Auditory neglect, aprosodia and agitation (right)",
+    "side": "contralateral",
+    "mechanism": "Right temporal attention and prosody cortex infarction"
+   },
+   {
+    "deficit": "Contralateral superior quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Meyer's loop in the temporal stem"
+   },
+   {
+    "deficit": "No weakness",
+    "side": "n/a",
+    "mechanism": "Motor cortex lies in the superior division territory"
+   }
+  ],
+  "examination": [
+   "Comprehension and repetition before assuming confusion",
+   "Upper quadrant fields",
+   "Listen for paraphasias and neologisms"
+  ],
+  "syndromes": [
+   "syn-mca-inferior-division",
+   "syn-aphasia-wernicke",
+   "syn-homonymous-hemianopia",
+   "syn-watershed-infarct"
+  ],
+  "pearls": [
+   "A fluent, confused-sounding patient with a normal arm and an upper field cut has an inferior division MCA stroke",
+   "The temporal territory is the one most often mislabeled as delirium in the emergency department",
+   "Herpes encephalitis in the temporal lobe ignores arterial boundaries; stroke respects them"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    105,
+    108
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-mca"
+}

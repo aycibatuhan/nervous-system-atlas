@@ -296,12 +296,12 @@ HCP = {
     "cranial nerve/CNVIII": ("cn-08-vestibulocochlear", "Vestibulocochlear nerve (CN VIII), cisternal", "cranial-nerves", None, True),
     "projection/CST": ("tract-corticospinal", "Corticospinal tract", "tracts", "projection", False),
     "projection/CBT": ("tract-corticobulbar", "Corticobulbar tract", "tracts", "projection", False),
-    "projection/ML": ("tract-medial-lemniscus", "Medial lemniscus", "tracts", "projection", False),
+    "projection/ML": ("tract-medial-lemniscus", "Medial lemniscus", "tracts", "projection", False, "medial-lemniscus"),
     "projection/DRTT": ("tract-dentatorubrothalamic", "Dentatorubrothalamic tract", "tracts", "cerebellar", False),
     "projection/RST": ("tract-reticulospinal", "Reticulospinal tract", "tracts", "projection", False),
     "projection/OR": ("tract-optic-radiation", "Optic radiation", "tracts", "projection", False),
     "projection/AR": ("tract-acoustic-radiation", "Acoustic radiation", "tracts", "projection", False),
-    "projection/F": ("tract-fornix", "Fornix (HCP)", "tracts", "limbic", False),
+    "projection/F": ("tract-fornix", "Fornix (HCP)", "tracts", "limbic", False, "fornix"),
     "projection/TR_A": ("tract-thalamic-radiation-anterior", "Anterior thalamic radiation", "tracts", "projection", False),
     "projection/TR_P": ("tract-thalamic-radiation-posterior", "Posterior thalamic radiation", "tracts", "projection", False),
     "projection/TR_S": ("tract-thalamic-radiation-superior", "Superior thalamic radiation", "tracts", "projection", False),
@@ -314,8 +314,8 @@ HCP = {
     "cerebellum/ICP": ("inferior-cerebellar-peduncle", "Inferior cerebellar peduncle", "cerebellum", "peduncles", False),
     "cerebellum/MCP": ("middle-cerebellar-peduncle", "Middle cerebellar peduncle", "cerebellum", "peduncles", False),
     "cerebellum/SCP": ("superior-cerebellar-peduncle", "Superior cerebellar peduncle", "cerebellum", "peduncles", False),
-    "commissural/AC": ("tract-anterior-commissure", "Anterior commissure (HCP)", "tracts", "commissural", False),
-    "commissural/CC": ("tract-corpus-callosum", "Corpus callosum fibres (HCP)", "tracts", "commissural", False),
+    "commissural/AC": ("tract-anterior-commissure", "Anterior commissure (HCP)", "tracts", "commissural", False, "anterior-commissure"),
+    "commissural/CC": ("tract-corpus-callosum", "Corpus callosum fibres (HCP)", "tracts", "commissural", False, "corpus-callosum"),
     "association/AF": ("tract-arcuate-fasciculus", "Arcuate fasciculus", "tracts", "association", False),
     "association/IFOF": ("tract-inferior-fronto-occipital-fasciculus", "Inferior fronto-occipital fasciculus", "tracts", "association", False),
     "association/ILF": ("tract-inferior-longitudinal-fasciculus", "Inferior longitudinal fasciculus", "tracts", "association", False),
@@ -332,15 +332,17 @@ HCP = {
 
 def hcp_entries() -> dict[str, MeshSpec]:
     e = {}
-    for key, (sid, name, system, sub, vis) in HCP.items():
+    for key, row in HCP.items():
+        sid, name, system, sub, vis = row[:5]
+        structure_id = row[5] if len(row) > 5 else sid   # some tract meshes belong to an already-authored structure
         colour = "#EFE3A8" if system == "cranial-nerves" else jitter("#EDE3D2", sid, 0.35)
         if key.startswith("commissural/") or key in ("cerebellum/MCP", "cerebellum/SCP"):
-            e[key] = MeshSpec(sid, name, system, subsystem=sub, side="midline", visible=vis, budget="tract", colour=colour, opacity=0.9)
+            e[key] = MeshSpec(sid, name, system, subsystem=sub, side="midline", visible=vis, budget="tract", colour=colour, opacity=0.9, structure_id=structure_id)
             continue
         for side, sfx in (("left", "_L"), ("right", "_R")):
             f = key + sfx
             e[f] = MeshSpec(f"{sid}-{sfx[1].lower()}", f"{name} ({sfx[1]})", system, subsystem=sub, side=side, visible=vis,
-                            budget="tract" if system == "tracts" or "peduncle" in sid else "small", colour=colour, structure_id=sid, opacity=0.9)
+                            budget="tract" if system == "tracts" or "peduncle" in sid else "small", colour=colour, structure_id=structure_id, opacity=0.9)
     return e
 
 

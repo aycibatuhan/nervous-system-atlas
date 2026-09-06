@@ -1,0 +1,164 @@
+{
+ "kind": "structure",
+ "id": "tract-arcuate-fasciculus",
+ "name": "Arcuate fasciculus",
+ "synonyms": [
+  "dorsal language pathway",
+  "long segment of the superior longitudinal fasciculus"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-arcuate-fasciculus-l",
+  "tract-arcuate-fasciculus-r"
+ ],
+ "summary": "The arcuate fasciculus is the curved bundle that arches around the posterior end of the Sylvian fissure to connect the posterior superior and middle temporal gyri with the inferior frontal gyrus and the ventral premotor cortex, the dorsal language pathway of the dominant hemisphere. It carries the phonological form of words from the temporal to the frontal speech areas, so its interruption produces conduction aphasia, fluent speech with good comprehension but failed repetition and phonemic paraphasias. It is larger on the left in most people, it is the bundle awake mapping protects during perisylvian surgery, and in the right hemisphere it serves prosody, visuospatial processing and tone in music.",
+ "anatomy": {
+  "location": "From the posterior superior and middle temporal gyri and the planum temporale, upward and forward through the white matter of the supramarginal gyrus, arching over the posterior insula deep to the parietal and frontal opercula, to end in the pars opercularis, the ventral precentral gyrus and the middle frontal gyrus; it forms the deep, long segment of the superior longitudinal fasciculus system.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior superior and middle temporal gyri, planum temporale",
+    "via": "temporal origin"
+   },
+   {
+    "from": "Supramarginal gyrus (indirect segments)",
+    "via": "parietal relay"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Pars opercularis and ventral premotor cortex",
+    "via": "frontal termination"
+   },
+   {
+    "to": "Middle frontal gyrus",
+    "via": "frontal termination"
+   }
+  ],
+  "pathways": [
+   "pathway-auditory"
+  ]
+ },
+ "function": "The bundle links the auditory word-form and phonological processing of the posterior temporal cortex with the articulatory planning of the frontal operculum, making repetition, reading aloud, verbal working memory rehearsal and the learning of new words possible; its temporo-parietal and fronto-parietal indirect segments through the supramarginal gyrus add a sensorimotor interface for speech. Damage anywhere along it produces phonemic paraphasias that the patient notices and tries to correct, disproportionate repetition failure and difficulty with unfamiliar words, the core of conduction aphasia, and partial lesions during surgery produce transient phonological errors. On the right it contributes to the melody and emotional tone of speech and to spatial attention.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-superior-division",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-parietal",
+   "territory-mca-temporal",
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "tract-arcuate-fasciculus-l"
+    },
+    "label": "arcuate fasciculus arching around the Sylvian fissure"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-arcuate-fasciculus-r"
+    },
+    "label": "arcuate fibers deep to the supramarginal gyrus"
+   }
+  ],
+  "normalAppearance": "On tractography a C-shaped bundle from the temporal to the frontal lobe around the posterior Sylvian fissure, usually larger on the left; on T2 it is part of the dense white matter of the supramarginal gyrus and cannot be identified.",
+  "pathology": [
+   {
+    "pathology": "Conduction aphasia (MCA branch infarct)",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the supramarginal white matter or the posterior superior temporal region of the dominant hemisphere; repetition is lost with preserved comprehension.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Perisylvian glioma",
+    "modality": "MRI",
+    "finding": "Tumor displacing or infiltrating the arcuate fasciculus on tractography; intraoperative subcortical stimulation elicits phonemic paraphasias at the bundle.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Logopenic primary progressive aphasia",
+    "modality": "MRI",
+    "finding": "Left temporo-parietal atrophy affecting the arcuate termination with impaired repetition and word retrieval.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Conduction aphasia: impaired repetition with phonemic paraphasias",
+    "side": "n/a",
+    "mechanism": "Disconnection of the temporal phonological store from the frontal articulatory planner"
+   },
+   {
+    "deficit": "Impaired verbal working memory and new-word learning",
+    "side": "n/a",
+    "mechanism": "Loss of the rehearsal loop between the temporal and frontal cortex"
+   },
+   {
+    "deficit": "Aprosodia with right-sided lesions",
+    "side": "n/a",
+    "mechanism": "Disruption of the right dorsal pathway for the melody of speech"
+   }
+  ],
+  "examination": [
+   "Repetition of sentences with several content words and of non-words",
+   "Naming and the patient's reaction to errors (self-correction in conduction aphasia)",
+   "Comprehension, which is preserved"
+  ],
+  "syndromes": [
+   "syn-aphasia-conduction-global",
+   "syn-aphasia-wernicke",
+   "syn-aphasia-broca"
+  ],
+  "pearls": [
+   "Conduction aphasia is a cable fault: the frontal and temporal stations work but cannot talk to each other",
+   "Awake surgery follows the arcuate fasciculus by listening for phonemic errors under stimulation",
+   "The left arcuate is bigger than the right in most brains; a symmetric one hints at atypical language dominance"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    58
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "association",
+ "parent": "cerebral-white-matter"
+}

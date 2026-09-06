@@ -1,0 +1,180 @@
+{
+ "kind": "structure",
+ "id": "territory-pca-occipital",
+ "name": "PCA territory, occipital",
+ "synonyms": [
+  "calcarine and parieto-occipital artery territory",
+  "occipital PCA domain"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-pca-occipital-l",
+  "territory-pca-occipital-r"
+ ],
+ "summary": "The occipital PCA territory is the medial and inferior occipital lobe supplied by the calcarine and parieto-occipital arteries, the terminal branches of the posterior cerebral artery: the calcarine cortex, the cuneus, the lingual gyrus, the occipital fusiform gyrus and the medial occipital pole. It is the territory of the homonymous hemianopia, congruous and often macular-sparing, and of the visual agnosias, achromatopsia and alexia that follow ventral occipital infarction; bilateral infarction produces cortical blindness. It is supplied through a single P2-P3 trunk that embolism from the vertebrobasilar system or the heart blocks, and its cortex is exposed to the posterior watershed on its lateral edge.",
+ "anatomy": {
+  "location": "Medial occipital surface (cuneus, calcarine cortex, lingual gyrus) and the inferior occipital surface (occipital fusiform gyrus), the medial part of the occipital pole and the parieto-occipital sulcus region, with the underlying white matter of the optic radiation's posterior part and the forceps major; bounded laterally by the MCA occipital territory and in front by the temporal PCA territory and the ACA territory at the precuneus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Calcarine and parieto-occipital arteries (P3-P4)",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Internal occipital veins to the great cerebral vein and the transverse sinus",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory contains the primary visual cortex and the ventral extrastriate areas of color, form and reading, so its infarction produces a contralateral hemianopia or quadrantanopia (depending on which calcarine bank is involved), hemiachromatopsia, and, in the dominant hemisphere with the splenium, alexia without agraphia; the occipital pole receives collateral MCA supply and survives in many occlusions, and leptomeningeal anastomoses with the MCA along the lateral occipital surface determine the size of the infarct. It is also the region affected in posterior reversible encephalopathy, migraine aura and occipital epilepsy, all of which mimic transient ischemia.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca-occipital"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "territory-pca-occipital-l"
+    },
+    "label": "occipital PCA territory on the medial occipital lobe"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-pca-occipital-r"
+    },
+    "label": "calcarine and parieto-occipital artery domain"
+   }
+  ],
+  "normalAppearance": "On the overlay the occipital PCA domain covers the medial and inferior occipital lobe; the calcarine sulcus lies at its center and the pole at its posterior edge.",
+  "pathology": [
+   {
+    "pathology": "Calcarine artery infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the medial occipital cortex with a congruous homonymous hemianopia, macula spared when the pole is MCA-supplied.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Bilateral occipital infarcts (basilar tip embolism)",
+    "modality": "MRI",
+    "finding": "Bilateral calcarine restricted diffusion with cortical blindness and Anton denial.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Migraine with aura (mimic)",
+    "modality": "MRI",
+    "finding": "Normal diffusion during a scintillating scotoma; transient perfusion asymmetry only.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral homonymous hemianopia or quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Calcarine cortex infarction"
+   },
+   {
+    "deficit": "Hemiachromatopsia and visual agnosia",
+    "side": "contralateral",
+    "mechanism": "Ventral occipital infarction"
+   },
+   {
+    "deficit": "Alexia without agraphia (left with splenium)",
+    "side": "n/a",
+    "mechanism": "Left occipital and splenial infarction"
+   },
+   {
+    "deficit": "Cortical blindness when bilateral",
+    "side": "bilateral",
+    "mechanism": "Bilateral calcarine infarction"
+   }
+  ],
+  "examination": [
+   "Confrontation fields and perimetry",
+   "Reading and color naming by hemifield",
+   "Pupillary reactions, normal in cortical visual loss"
+  ],
+  "syndromes": [
+   "syn-homonymous-hemianopia",
+   "syn-pca-infarct",
+   "syn-anton",
+   "syn-alexia-without-agraphia"
+  ],
+  "pearls": [
+   "A congruous hemianopia with normal pupils is occipital",
+   "The occipital PCA territory is embolic territory: find the source",
+   "Migraine, PRES, seizure and stroke all live in the occipital lobe; time course and DWI separate them"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    336
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 26,
+   "pages": [
+    275,
+    278
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-pca"
+}

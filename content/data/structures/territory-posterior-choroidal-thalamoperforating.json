@@ -1,0 +1,178 @@
+{
+ "kind": "structure",
+ "id": "territory-posterior-choroidal-thalamoperforating",
+ "name": "Posterior choroidal and thalamoperforating territory",
+ "synonyms": [
+  "paramedian thalamic territory",
+  "thalamogeniculate territory",
+  "posterior choroidal territory"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-posterior-choroidal-thalamoperforating-l",
+  "territory-posterior-choroidal-thalamoperforating-r"
+ ],
+ "summary": "This combined deep territory groups the paramedian (posterior thalamoperforating) domain of the P1 segment with the thalamogeniculate and posterior choroidal domains of the P2 segment: the medial and paramedian thalamus, the intralaminar nuclei, the ventrolateral and ventral posterior nuclei, the pulvinar and geniculate bodies, the posterior thalamus and the medial midbrain. It is the territory of the paramedian thalamic infarct with its somnolence, vertical gaze palsy and amnesia, bilateral when a single artery of Percheron supplies both sides, and of the thalamogeniculate pure sensory stroke that becomes the Dejerine-Roussy pain syndrome; it is also where hypertensive thalamic hemorrhage occurs.",
+ "anatomy": {
+  "location": "The medial, paramedian, ventral, posterior and lateral thalamus except the anterior tuberothalamic domain, the subthalamus, the medial midbrain and the posterior choroid plexus, between the anterior choroidal-tuberothalamic territory in front, the PCA cortical territories behind and the basilar territory below in the midbrain.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior thalamoperforating (paramedian) arteries from P1, thalamogeniculate and posterior choroidal arteries from P2",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Internal cerebral veins and the great cerebral vein",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The paramedian arteries from P1 supply the intralaminar and mediodorsal nuclei that sustain arousal and memory and the medial midbrain with the rostral interstitial nucleus of the MLF for vertical gaze; the thalamogeniculate arteries from P2 supply the ventral posterior sensory relay and the ventrolateral motor relay; the posterior choroidal arteries supply the pulvinar, the geniculate bodies and the posterior thalamus. Infarction produces, respectively, hypersomnolence with vertical gaze palsy and amnesia, hemisensory loss with delayed central pain and ataxia, and visual field and attention deficits; the paramedian vessels have no collateral and are occluded by basilar tip embolism, so a top-of-the-basilar stroke involves this territory on both sides.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-posterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-posterior-choroidal-thalamoperforating-l"
+    },
+    "label": "paramedian, thalamogeniculate and posterior choroidal territory of the thalamus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "territory-posterior-choroidal-thalamoperforating-r"
+    },
+    "label": "deep PCA domain of the thalamus and medial midbrain"
+   }
+  ],
+  "normalAppearance": "On the overlay this domain covers most of the thalamus behind the anterior nuclei and the medial midbrain; on imaging a paramedian infarct is a symmetric medial thalamic diffusion lesion and a thalamogeniculate infarct a small posterolateral one.",
+  "pathology": [
+   {
+    "pathology": "Artery of Percheron infarct",
+    "modality": "MRI",
+    "finding": "Bilateral symmetric paramedian thalamic restricted diffusion with or without a V-shaped midbrain lesion, presenting with coma or hypersomnolence, vertical gaze palsy and amnesia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Thalamogeniculate infarct (pure sensory stroke)",
+    "modality": "MRI",
+    "finding": "Small posterolateral thalamic diffusion lesion with contralateral hemisensory loss; central pain develops in a third.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Thalamic hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense thalamic hematoma with hemisensory loss, hemiparesis and, when medial, drowsiness and downward gaze deviation with small pupils.",
+    "sequence": "CT non-contrast"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hypersomnolence, vertical gaze palsy and amnesia",
+    "side": "bilateral",
+    "mechanism": "Paramedian thalamic and medial midbrain infarction"
+   },
+   {
+    "deficit": "Contralateral hemisensory loss and delayed thalamic pain",
+    "side": "contralateral",
+    "mechanism": "Thalamogeniculate infarction of the ventral posterior nuclei"
+   },
+   {
+    "deficit": "Contralateral hemianopia, ataxia and inattention",
+    "side": "contralateral",
+    "mechanism": "Posterior choroidal infarction of the geniculate and pulvinar"
+   }
+  ],
+  "examination": [
+   "Level of consciousness and vertical eye movements",
+   "Sensation on the face, arm and leg",
+   "Visual fields and delayed recall"
+  ],
+  "syndromes": [
+   "syn-top-of-basilar",
+   "syn-thalamic-dejerine-roussy",
+   "syn-lacunar-pure-sensory",
+   "syn-parinaud-dorsal-midbrain"
+  ],
+  "pearls": [
+   "A sleepy patient with bilateral thalamic lesions has one artery to blame: Percheron's",
+   "Pure sensory stroke is thalamogeniculate; the pain comes later",
+   "The thalamus is PCA territory: a stroke there is a posterior circulation stroke"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    78,
+    80
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-pca"
+}

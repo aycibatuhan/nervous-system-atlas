@@ -1,0 +1,160 @@
+{
+ "kind": "structure",
+ "id": "tract-cingulum-parahippocampal",
+ "name": "Cingulum, parahippocampal",
+ "synonyms": [
+  "ventral cingulum",
+  "parahippocampal white matter bundle"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-cingulum-parahippocampal-l",
+  "tract-cingulum-parahippocampal-r"
+ ],
+ "summary": "The parahippocampal cingulum is the ventral continuation of the cingulum bundle below the splenium, running through the isthmus into the white matter of the parahippocampal gyrus toward the entorhinal cortex and the temporal pole. It closes the Papez circuit by carrying the anterior thalamic and posterior cingulate output to the entorhinal cortex, and it links the retrosplenial navigation cortex with the parahippocampal place area, so it serves both memory and spatial orientation. It is the medial temporal white matter that atrophies with the hippocampus in Alzheimer disease and mesial temporal sclerosis, and it is interrupted by PCA infarcts, temporal lobectomy and posterior medial temporal tumors, producing amnesia and topographical disorientation.",
+ "anatomy": {
+  "location": "From the retrosplenial cortex behind and below the splenium, through the isthmus of the cingulate gyrus, downward and forward in the white matter of the parahippocampal gyrus medial to the collateral sulcus and lateral to the hippocampus, to the entorhinal cortex, the perirhinal cortex and the temporal pole.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Retrosplenial and posterior cingulate cortex, anterior thalamus",
+    "via": "posterior origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Entorhinal and perirhinal cortex, temporal pole",
+    "via": "anterior termination"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "It conveys the posterior cingulate and retrosplenial cortex's spatial and self-referential signals and the anterior thalamic memory signal to the entorhinal cortex, the gateway of the hippocampus, and returns hippocampal-entorhinal output to the posterior cingulate, forming the loop through which episodes are encoded with their spatial context and retrieved; the retrosplenial-parahippocampal link converts the allocentric map into the egocentric view used for navigation. Interruption produces anterograde amnesia with prominent disorientation in space, and reduced integrity of the bundle is a marker of medial temporal degeneration that correlates with memory scores in mild cognitive impairment and Alzheimer disease.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-pca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "tract-cingulum-parahippocampal-l"
+    },
+    "label": "parahippocampal cingulum from the isthmus into the parahippocampal gyrus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-cingulum-parahippocampal-r"
+    },
+    "label": "cingulum in the white matter of the parahippocampal gyrus"
+   }
+  ],
+  "normalAppearance": "Tractography shows the cingulum curving down behind the splenium and forward in the parahippocampal gyrus; on coronal T2 it is the white matter of the parahippocampal gyrus beneath the hippocampus.",
+  "pathology": [
+   {
+    "pathology": "Alzheimer disease",
+    "modality": "MRI",
+    "finding": "Medial temporal atrophy with reduced parahippocampal white matter and cingulum integrity, correlating with memory impairment.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "PCA infarct with amnesia",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the medial temporal lobe and parahippocampal white matter, often with a hemianopia; bilateral lesions leave permanent amnesia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Mesial temporal sclerosis",
+    "modality": "MRI",
+    "finding": "Hippocampal atrophy with ipsilateral parahippocampal white-matter loss and reduced cingulum anisotropy.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anterograde amnesia",
+    "side": "bilateral",
+    "mechanism": "Interruption of the Papez circuit at its entorhinal limb"
+   },
+   {
+    "deficit": "Topographical disorientation",
+    "side": "n/a",
+    "mechanism": "Disconnection of the retrosplenial navigation cortex from the parahippocampal place system"
+   },
+   {
+    "deficit": "Impaired contextual memory",
+    "side": "bilateral",
+    "mechanism": "Loss of the posterior cingulate-entorhinal link that binds events to places"
+   }
+  ],
+  "examination": [
+   "Delayed recall and recognition",
+   "Route finding and map drawing",
+   "Visual fields when a PCA lesion is suspected"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff",
+   "syn-pca-infarct"
+  ],
+  "pearls": [
+   "The Papez circuit exits the cingulate through this bundle to reach the hippocampus",
+   "Getting lost precedes forgetting in some patients with early Alzheimer disease: the parahippocampal cingulum goes first",
+   "A posterior medial temporal lesion that spares the hippocampus can still cause amnesia by cutting this bundle"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    236
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "limbic",
+ "parent": "gyrus-parahippocampal-uncus"
+}

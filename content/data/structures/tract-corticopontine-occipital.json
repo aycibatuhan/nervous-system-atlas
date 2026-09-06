@@ -1,0 +1,177 @@
+{
+ "kind": "structure",
+ "id": "tract-corticopontine-occipital",
+ "name": "Occipitopontine tract",
+ "synonyms": [
+  "occipito-temporopontine tract",
+  "bundle of Turck (temporopontine)"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-corticopontine-occipital-l",
+  "tract-corticopontine-occipital-r"
+ ],
+ "summary": "The occipitopontine tract, with the temporopontine fibers (the bundle of Turck), carries fibers from the occipital and posterior temporal visual cortex to the pontine nuclei through the retrolenticular internal capsule and the lateral edge of the crus cerebri. It brings the cerebellum the visual motion and target signals needed for smooth pursuit, the visual guidance of locomotion and the visual calibration of the vestibulo-ocular reflex, ending in the dorsolateral pontine nuclei that project to the flocculus, the paraflocculus and the vermis. Its interruption impairs smooth pursuit toward the side of the lesion and the visual control of balance, and it is part of the crossed cerebellar diaschisis that follows occipital and temporal strokes.",
+ "anatomy": {
+  "location": "From the extrastriate occipital cortex, the temporo-occipital motion area and the posterior temporal cortex through the stratum sagittale and the retrolenticular internal capsule, descending along the lateral border of the crus cerebri to the dorsolateral pontine nuclei and the nucleus reticularis tegmenti pontis.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Extrastriate occipital cortex and the temporo-occipital motion area",
+    "via": "origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Dorsolateral pontine nuclei and nucleus reticularis tegmenti pontis",
+    "via": "termination"
+   },
+   {
+    "to": "Flocculus, paraflocculus and oculomotor vermis (via pontocerebellar fibers)",
+    "via": "middle cerebellar peduncle"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-visual",
+   "pathway-vestibular-vor"
+  ]
+ },
+ "function": "Visual motion signals from the temporo-occipital motion complex and the visual cortex reach the dorsolateral pontine nuclei through this tract, and the pontine neurons relay them across the middle cerebellar peduncle to the flocculus, the ventral paraflocculus and the oculomotor vermis, which generate the pursuit command and adapt the vestibulo-ocular reflex to visual error; the tract also carries the optic flow information that the cerebellum uses to control walking and posture. Lesions of the pathway produce ipsiversive pursuit deficits (pursuit toward the side of the lesion is impaired, because the cerebellar pursuit signal crosses twice), impaired optokinetic responses and difficulty using vision for balance.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-mca",
+   "artery-basilar",
+   "arteries-pontine"
+  ],
+  "territories": [
+   "territory-pca-occipital",
+   "territory-mca-temporal",
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "tract-corticopontine-occipital-l"
+    },
+    "label": "occipitopontine fibers from the visual cortex to the lateral crus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-corticopontine-occipital-r"
+    },
+    "label": "occipito-temporopontine tract in the lateral cerebral peduncle"
+   }
+  ],
+  "normalAppearance": "Tractography shows a lateral bundle from the occipital and posterior temporal lobes along the stratum sagittale and the lateral peduncle into the dorsolateral pons; not visible on conventional MRI.",
+  "pathology": [
+   {
+    "pathology": "Posterior temporal or occipital infarct with pursuit deficit",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the temporo-occipital region with impaired smooth pursuit toward the lesion side and a field defect.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Lateral midbrain infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion at the lateral edge of the crus cerebri with pursuit and optokinetic asymmetry and mild contralateral ataxia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Dorsolateral pontine lesion",
+    "modality": "MRI",
+    "finding": "Small lesion of the dorsolateral pons (infarct, demyelination) with ipsilateral pursuit impairment and gaze-evoked nystagmus.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Impaired smooth pursuit toward the side of the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Interruption of the double-crossing cortico-ponto-cerebellar pursuit pathway"
+   },
+   {
+    "deficit": "Asymmetric optokinetic nystagmus",
+    "side": "ipsilateral",
+    "mechanism": "Loss of visual motion input to the cerebellum"
+   },
+   {
+    "deficit": "Impaired visual guidance of balance and gait",
+    "side": "bilateral",
+    "mechanism": "Loss of optic flow information to the vermis"
+   }
+  ],
+  "examination": [
+   "Smooth pursuit of a slowly moving target in each direction",
+   "Optokinetic drum or tape in each direction",
+   "Romberg and tandem gait with eyes open"
+  ],
+  "syndromes": [
+   "syn-central-vs-peripheral-vertigo"
+  ],
+  "pearls": [
+   "Pursuit is a cortex-pons-cerebellum loop that crosses twice, so the deficit is toward the side of the lesion",
+   "A posterior temporal stroke that impairs pursuit toward itself has cut the occipitopontine tract",
+   "The dorsolateral pontine nuclei are the pursuit relay; the lateral crus is their entrance"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    242
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    218
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    336
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    96,
+    100
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "projection",
+ "parent": "internal-capsule"
+}

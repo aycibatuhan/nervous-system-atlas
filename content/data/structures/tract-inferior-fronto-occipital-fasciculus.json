@@ -1,0 +1,165 @@
+{
+ "kind": "structure",
+ "id": "tract-inferior-fronto-occipital-fasciculus",
+ "name": "Inferior fronto-occipital fasciculus",
+ "synonyms": [
+  "IFOF",
+  "ventral semantic pathway"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-inferior-fronto-occipital-fasciculus-l",
+  "tract-inferior-fronto-occipital-fasciculus-r"
+ ],
+ "summary": "The inferior fronto-occipital fasciculus is the longest association bundle of the hemisphere, running from the occipital and posterior temporal cortex forward through the temporal stem and the extreme capsule, beneath the insula, to the inferior frontal gyrus, the orbitofrontal cortex and the dorsolateral prefrontal cortex. It is the ventral semantic pathway that carries visual and lexical meaning directly to the frontal lobe, bypassing the temporal pole, and it is the bundle whose stimulation during awake surgery produces semantic paraphasias; it also carries visual information to the frontal eye field and the prefrontal cortex for attention and reading. It is spared in most strokes because it lies deep, but it is infiltrated by insular and temporal gliomas and damaged in the temporal stem.",
+ "anatomy": {
+  "location": "From the extrastriate occipital cortex and the posterior temporal and parietal cortex, converging into the stratum sagittale and the temporal stem, passing through the ventral extreme and external capsule beneath the insula (the narrow part of the bundle), and fanning out in the frontal lobe to the inferior frontal gyrus, the orbitofrontal cortex and the middle frontal gyrus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Extrastriate occipital and posterior temporal-parietal cortex",
+    "via": "posterior origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Inferior frontal gyrus, orbitofrontal and dorsolateral prefrontal cortex",
+    "via": "frontal termination"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "The bundle links visual object and word forms and the temporal semantic cortex with the frontal areas that select meaning, plan speech and direct attention, forming, with the uncinate and inferior longitudinal fasciculi, the ventral stream of language; stimulation of it interrupts naming with semantic errors (saying cat for dog), which is why it is the boundary that limits insular and temporal resection in the dominant hemisphere. It also participates in reading, in visual attention and in the transfer of emotional visual information to the orbitofrontal cortex. Damage produces semantic paraphasias, impaired comprehension of complex material and, on the right, visuospatial and social-perceptual deficits; its ventral route is the reason semantic function survives many perisylvian strokes.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-anterior-choroidal",
+   "artery-pca",
+   "arteries-lenticulostriate"
+  ],
+  "territories": [
+   "territory-mca-insular",
+   "territory-mca-temporal",
+   "territory-pca-occipital",
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "tract-inferior-fronto-occipital-fasciculus-l"
+    },
+    "label": "inferior fronto-occipital fasciculus from the occipital lobe through the temporal stem to the frontal lobe"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-inferior-fronto-occipital-fasciculus-r"
+    },
+    "label": "IFOF in the extreme capsule beneath the insula"
+   }
+  ],
+  "normalAppearance": "Tractography shows a long green-red bundle from the occipital lobe through the temporal stem and extreme capsule to the frontal lobe; on coronal T2 the temporal stem and the extreme capsule are its visible corridors.",
+  "pathology": [
+   {
+    "pathology": "Insular or temporal glioma",
+    "modality": "MRI",
+    "finding": "Tumor infiltrating the temporal stem and extreme capsule around the IFOF; stimulation produces semantic paraphasias and defines the resection limit.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Anterior choroidal or deep MCA infarct involving the temporal stem",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the temporal stem with hemianopia and semantic comprehension deficits.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Semantic dementia (indirect)",
+    "modality": "MRI",
+    "finding": "Anterior temporal atrophy with degeneration of the IFOF's temporal fibers on diffusion imaging.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Semantic paraphasias and impaired semantic comprehension",
+    "side": "n/a",
+    "mechanism": "Disconnection of the ventral semantic stream"
+   },
+   {
+    "deficit": "Impaired reading and visual naming",
+    "side": "n/a",
+    "mechanism": "Loss of the direct visual-to-frontal route"
+   },
+   {
+    "deficit": "Visuospatial and social-perception deficits (right)",
+    "side": "contralateral",
+    "mechanism": "Disruption of the right ventral visual-frontal connections"
+   }
+  ],
+  "examination": [
+   "Naming with attention to semantic errors",
+   "Comprehension of complex sentences and word-picture matching",
+   "Reading"
+  ],
+  "syndromes": [
+   "syn-aphasia-wernicke",
+   "syn-anterior-choroidal-infarct"
+  ],
+  "pearls": [
+   "Semantic errors under stimulation mark the IFOF; phonemic errors mark the arcuate",
+   "The temporal stem is the crossroads: the IFOF, the uncinate, the optic radiation and the anterior commissure all pass through it",
+   "The ventral language stream can carry meaning even when the dorsal stream is destroyed"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    291
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    257,
+    262
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "association",
+ "parent": "cerebral-white-matter"
+}

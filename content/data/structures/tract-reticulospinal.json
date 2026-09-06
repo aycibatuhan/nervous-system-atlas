@@ -1,0 +1,181 @@
+{
+ "kind": "structure",
+ "id": "tract-reticulospinal",
+ "name": "Reticulospinal tract",
+ "synonyms": [
+  "medial and lateral reticulospinal tracts",
+  "pontine and medullary reticulospinal tracts"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-reticulospinal-l",
+  "tract-reticulospinal-r"
+ ],
+ "summary": "The reticulospinal tract descends from the pontine and medullary reticular formation to the spinal cord, bilaterally with an ipsilateral predominance, in the anterior and lateral funiculi, reconstructed here from its brainstem origin down to the cervicomedullary junction. It is the main non-pyramidal motor pathway for posture, locomotion and axial and proximal movement: the pontine (medial) component facilitates extensor tone and the medullary (lateral) component inhibits it and gates reflexes, and both carry the cortex's commands for gross movement, the startle response and the autonomic outflow to the intermediolateral column. It is what keeps a patient with a corticospinal lesion able to stand and walk, and its imbalance after such lesions produces spasticity; its loss below the lesion in a complete cord injury produces flaccidity and autonomic failure.",
+ "anatomy": {
+  "location": "From the pontine reticular formation (nucleus reticularis pontis oralis and caudalis) mainly ipsilaterally in the anterior funiculus (medial reticulospinal tract) and from the medullary gigantocellular reticular formation bilaterally in the lateral funiculus (lateral reticulospinal tract), descending the whole length of the cord to the ventromedial gray of the ventral horn and the intermediolateral column.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Pontine and medullary reticular formation",
+    "via": "origin"
+   },
+   {
+    "from": "Motor and premotor cortex (corticoreticular fibers)",
+    "via": "input to the reticular formation"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Ventral horn interneurons and axial motor neurons",
+    "via": "termination"
+   },
+   {
+    "to": "Intermediolateral column (sympathetic)",
+    "via": "termination"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal",
+   "pathway-vestibulospinal"
+  ]
+ },
+ "function": "The pontine reticulospinal fibers excite axial and proximal extensor motor neurons and set the postural tone that supports the body against gravity, and the medullary fibers inhibit them and dampen stretch reflexes; the cortex controls both through corticoreticular fibers that run with the corticospinal tract, so a capsular lesion removes cortical drive to the inhibitory medullary system and leaves the pontine facilitatory system unopposed, producing spasticity. The tract also carries the locomotor commands from the mesencephalic locomotor region and the pedunculopontine nucleus that generate stepping, the startle reflex, and descending sympathetic and respiratory control. It underlies the recovery of gross movement and gait after stroke and the abnormal postures of decerebrate rigidity.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "arteries-pontine",
+   "artery-vertebral",
+   "anterior-spinal-artery"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "tract-reticulospinal-l"
+    },
+    "label": "reticulospinal fibers descending from the pontomedullary reticular formation"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "tract-reticulospinal-r"
+    },
+    "label": "reticulospinal tract in the ventral brainstem tegmentum"
+   }
+  ],
+  "normalAppearance": "Tractography shows fibers from the pontomedullary tegmentum descending to the cervicomedullary junction, medial and ventral to the corticospinal bundle; they are not visible on conventional MRI.",
+  "pathology": [
+   {
+    "pathology": "Spasticity after capsular stroke (functional)",
+    "modality": "MRI",
+    "finding": "The corticospinal and corticoreticular lesion in the posterior limb; spasticity develops over weeks as the unopposed pontine reticulospinal drive reorganizes.",
+    "sequence": "FLAIR",
+    "timing": "Spasticity emerges 1-6 weeks after the lesion"
+   },
+   {
+    "pathology": "Decerebrate posturing from midbrain-pontine damage",
+    "modality": "CT",
+    "finding": "Central herniation or pontine hemorrhage disconnecting the pontine reticulospinal system from higher control, with extensor posturing of all limbs.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Hereditary hyperekplexia and exaggerated startle",
+    "modality": "EEG",
+    "finding": "Excessive startle from reticulospinal hyperexcitability without a structural lesion; glycine receptor mutations.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Spasticity and hyperreflexia after upper motor neuron lesions",
+    "side": "contralateral",
+    "mechanism": "Loss of cortical drive to the inhibitory medullary reticulospinal system"
+   },
+   {
+    "deficit": "Decerebrate rigidity",
+    "side": "bilateral",
+    "mechanism": "Unopposed pontine reticulospinal and vestibulospinal facilitation after midbrain transection"
+   },
+   {
+    "deficit": "Loss of postural tone, gait and autonomic control in cord transection",
+    "side": "bilateral",
+    "mechanism": "Interruption of both reticulospinal components below the lesion"
+   }
+  ],
+  "examination": [
+   "Tone in the limbs and its velocity dependence",
+   "Posturing pattern in coma: flexor (decorticate) versus extensor (decerebrate)",
+   "Gait and trunk control in patients with corticospinal lesions"
+  ],
+  "syndromes": [
+   "syn-complete-transection-spinal-shock",
+   "syn-central-transtentorial-herniation",
+   "syn-lacunar-pure-motor"
+  ],
+  "pearls": [
+   "The corticospinal tract makes fingers move; the reticulospinal tract makes the body stand up",
+   "Spasticity is not a corticospinal sign but a corticoreticular one",
+   "Stroke patients walk again because the reticulospinal tract, not the pyramidal tract, carries the legs"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    152,
+    166
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    299,
+    301
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    212
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    33,
+    38
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    82
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "projection",
+ "parent": "reticular-formation"
+}

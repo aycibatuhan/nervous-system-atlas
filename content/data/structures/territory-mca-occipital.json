@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "territory-mca-occipital",
+ "name": "MCA territory, occipital",
+ "synonyms": [
+  "lateral occipital MCA domain",
+  "temporo-occipital artery territory"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-mca-occipital-l",
+  "territory-mca-occipital-r"
+ ],
+ "summary": "The occipital MCA territory is the small lateral occipital domain supplied by the temporo-occipital and angular branches of the middle cerebral artery: the lateral occipital gyri and the occipital pole convexity, where the MCA shares the macular cortex with the posterior cerebral artery. It explains macular sparing after PCA occlusion and it is the cortex most exposed to border-zone ischemia between the MCA and PCA; its infarction contributes to the visual perceptual deficits of posterior MCA strokes and the bilateral posterior watershed syndrome of hypotension with Balint features. Its boundary with the PCA territory is variable, and the lateral occipital cortex may be PCA-supplied in some individuals.",
+ "anatomy": {
+  "location": "Lateral surface of the occipital lobe (superior and inferior lateral occipital gyri) and the lateral part of the occipital pole, with the underlying white matter continuous with the stratum sagittale; bounded medially and inferiorly by the PCA territory at the lateral occipital sulcus region and in front by the parietal and temporal MCA territories.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Temporo-occipital and angular branches of the MCA",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Vein of Labbe and superficial occipital veins to the transverse sinus",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory contains dorsal and ventral extrastriate visual areas (motion, shape and part of the lateral occipital complex) and, at the pole, part of the macular primary visual cortex, so its infarction impairs motion perception, visual attention and shape recognition in the contralateral field and, combined with the parietal territory, produces the optic ataxia and simultanagnosia of the parieto-occipital watershed; its dual supply is the anatomical basis of macular sparing in PCA strokes and of the occipital pole infarct of hypotension. The temporo-occipital artery reaches it from the inferior division and the angular artery from above.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-occipital"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-mca-occipital-l"
+    },
+    "label": "occipital MCA territory on the lateral occipital lobe"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "territory-mca-occipital-r"
+    },
+    "label": "lateral occipital MCA domain at the pole"
+   }
+  ],
+  "normalAppearance": "On the overlay the occipital MCA domain is a narrow lateral occipital strip reaching the pole; its border with the PCA domain runs near the lateral occipital sulcus.",
+  "pathology": [
+   {
+    "pathology": "Posterior MCA-PCA watershed infarct",
+    "modality": "MRI",
+    "finding": "Bilateral or unilateral wedge-shaped restricted diffusion at the lateral occipital border zone after hypotension, with visual perceptual and attentional deficits.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Occipital pole infarct in carotid disease",
+    "modality": "MRI",
+    "finding": "Small restricted diffusion at the lateral occipital pole in severe carotid stenosis with a central field defect.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "PCA infarct with macular sparing",
+    "modality": "MRI",
+    "finding": "Medial occipital infarct sparing the pole, the lateral MCA-supplied macular cortex intact.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Impaired motion perception and visual attention in the contralateral field",
+    "side": "contralateral",
+    "mechanism": "Lateral extrastriate cortex infarction"
+   },
+   {
+    "deficit": "Central scotoma with pole involvement",
+    "side": "contralateral",
+    "mechanism": "Macular cortex infarction"
+   },
+   {
+    "deficit": "Balint features when bilateral with the parietal territory",
+    "side": "bilateral",
+    "mechanism": "Bilateral parieto-occipital watershed infarction"
+   }
+  ],
+  "examination": [
+   "Central and peripheral fields with an Amsler grid",
+   "Perception of moving targets and description of a complex scene",
+   "Blood pressure history and carotid imaging"
+  ],
+  "syndromes": [
+   "syn-watershed-infarct",
+   "syn-balint",
+   "syn-pca-infarct"
+  ],
+  "pearls": [
+   "Macular sparing is the MCA's gift to the PCA stroke patient",
+   "The lateral occipital pole is the last stop of the MCA and the first to fail when the pressure drops",
+   "Bilateral posterior watershed infarcts after cardiac arrest produce a patient who sees and cannot look"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-mca"
+}

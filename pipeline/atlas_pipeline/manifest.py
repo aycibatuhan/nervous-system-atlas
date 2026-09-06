@@ -15,12 +15,12 @@ def palette() -> dict[str, dict]:
     """mesh id -> {colour, opacity} from the current catalogue and selection files, so colour edits never need a re-mesh."""
     look: dict[str, dict] = {}
 
-    def put(mid, colour, opacity):
+    def put(mid, colour, opacity, structure_id=None):
         if colour:
-            look[mid] = {"colour": colour, "opacity": opacity}
+            look[mid] = {"colour": colour, "opacity": opacity, **({"structureId": structure_id} if structure_id else {})}
     for a in catalog.atlases():
         for spec in list(a.entries.values()) + list(a.files.values()):
-            put(spec.id, spec.colour, spec.opacity)
+            put(spec.id, spec.colour, spec.opacity, spec.structure_id)
             if spec.side == "bilateral":
                 put(spec.id + "-l", spec.colour, spec.opacity); put(spec.id + "-r", spec.colour, spec.opacity)
     for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA):
@@ -52,7 +52,7 @@ def main(argv=None) -> None:
         lic = cfg["sources"] and next((s["license"] for s in cfg["sources"] if s["id"] == m["source"]), "MNI")
         look = pal.get(m["id"], {"colour": m["colour"], "opacity": m["opacity"]})
         out_meshes.append({
-            "id": m["id"], "structureId": m["structureId"], "name": m["name"], "system": m["system"], "subsystem": m["subsystem"],
+            "id": m["id"], "structureId": look.get("structureId", m["structureId"]), "name": m["name"], "system": m["system"], "subsystem": m["subsystem"],
             "side": m["side"], "source": m["source"], "license": lic, "nc": bool(cfg["licenses"][lic].get("nc", False)),
             "alignment": m["alignment"], "file": m["file"], "bytes": m["bytes"], "triangles": m["triangles"], "compression": "meshopt",
             "colour": look["colour"], "opacity": look["opacity"], "visible": m["visible"], "bbox": m["bbox"], "centroid": m["centroid"],

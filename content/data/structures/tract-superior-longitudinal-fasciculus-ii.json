@@ -1,0 +1,155 @@
+{
+ "kind": "structure",
+ "id": "tract-superior-longitudinal-fasciculus-ii",
+ "name": "Superior longitudinal fasciculus II",
+ "synonyms": [
+  "SLF II",
+  "fronto-parietal attention bundle"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-superior-longitudinal-fasciculus-ii-l",
+  "tract-superior-longitudinal-fasciculus-ii-r"
+ ],
+ "summary": "The middle branch of the superior longitudinal fasciculus is the main lateral association bundle of the hemisphere, running in the white matter of the middle frontal gyrus and the inferior parietal lobule, lateral to the corona radiata and above the insula, connecting the angular gyrus and the posterior inferior parietal cortex with the dorsolateral prefrontal cortex and the frontal eye field. It is the fronto-parietal wiring of spatial attention and working memory, larger on the right, and its damage is the strongest white-matter predictor of persistent neglect after right-hemisphere stroke; on the left it contributes to the phonological loop and to the indirect language pathways.",
+ "anatomy": {
+  "location": "From the angular gyrus and the posterior part of the inferior parietal lobule forward through the white matter lateral to the corona radiata and above the arcuate fasciculus, beneath the middle frontal gyrus, to the dorsolateral prefrontal cortex, the frontal eye field and the posterior middle frontal gyrus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Angular gyrus and posterior inferior parietal lobule",
+    "via": "parietal origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Dorsolateral prefrontal cortex and frontal eye field",
+    "via": "frontal termination"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "It carries the parietal salience and spatial maps to the frontal eye field and the prefrontal cortex and returns the top-down attentional commands, so that attention can be shifted voluntarily and maintained on the contralateral hemispace; its right-hemisphere dominance underlies the right hemisphere's control of attention to both sides, which is why right lesions produce left neglect and left lesions rarely produce right neglect. It also carries working memory information between the parietal and dorsolateral prefrontal cortex. Interruption produces neglect and extinction, impaired visual search and reduced spatial working memory, and disconnection of the SLF II is as important as cortical damage in the persistence of neglect.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-superior-division",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-parietal",
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "tract-superior-longitudinal-fasciculus-ii-l"
+    },
+    "label": "SLF II beneath the middle frontal gyrus and the inferior parietal lobule"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-superior-longitudinal-fasciculus-ii-r"
+    },
+    "label": "middle branch of the SLF lateral to the corona radiata"
+   }
+  ],
+  "normalAppearance": "Tractography shows a long lateral bundle from the angular gyrus to the middle frontal gyrus, usually larger on the right; it lies in the centrum semiovale lateral to the corticospinal fibers on coronal images.",
+  "pathology": [
+   {
+    "pathology": "Right MCA infarct with persistent neglect",
+    "modality": "MRI",
+    "finding": "Cortical and subcortical infarct involving the fronto-parietal white matter; lesion of the SLF II on tractography predicts chronic neglect.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Fronto-parietal glioma",
+    "modality": "MRI",
+    "finding": "Tumor in the centrum semiovale displacing the SLF; stimulation of the right bundle during awake surgery produces transient neglect.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Diffuse axonal injury",
+    "modality": "MRI",
+    "finding": "Microbleeds and diffusion change in the fronto-parietal white matter with attentional and working memory deficits.",
+    "sequence": "SWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral neglect and extinction (right)",
+    "side": "contralateral",
+    "mechanism": "Disconnection of the fronto-parietal attention network"
+   },
+   {
+    "deficit": "Impaired spatial working memory and visual search",
+    "side": "contralateral",
+    "mechanism": "Loss of parietal-prefrontal communication"
+   },
+   {
+    "deficit": "Impaired voluntary orienting of gaze",
+    "side": "contralateral",
+    "mechanism": "Disconnection of the parietal cortex from the frontal eye field"
+   }
+  ],
+  "examination": [
+   "Cancellation tasks, line bisection and clock drawing",
+   "Extinction to double simultaneous stimulation",
+   "Spatial span (Corsi blocks)"
+  ],
+  "syndromes": [
+   "syn-hemineglect",
+   "syn-mca-stem-infarct",
+   "syn-balint"
+  ],
+  "pearls": [
+   "Neglect is a network disease: the SLF II is the cable, and cutting it is as bad as removing the cortex",
+   "The right SLF II is larger, and that asymmetry is why neglect is a right-hemisphere syndrome",
+   "Awake stimulation of the right SLF II produces neglect on the operating table"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    291
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    60
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "association",
+ "parent": "cerebral-white-matter"
+}

@@ -1,0 +1,169 @@
+{
+ "kind": "structure",
+ "id": "territory-medial-lenticulostriate",
+ "name": "Medial lenticulostriate territory",
+ "synonyms": [
+  "medial striate artery territory",
+  "recurrent artery of Heubner territory"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-medial-lenticulostriate-l",
+  "territory-medial-lenticulostriate-r"
+ ],
+ "summary": "The medial lenticulostriate territory is the deep region supplied by the medial striate arteries that arise from the proximal M1 and the A1 segment, including the recurrent artery of Heubner: the head of the caudate, the anterior limb of the internal capsule and the anterior part of the putamen and pallidum. It is a perforator territory without collaterals, infarcted by small vessel disease, by proximal MCA or ACA embolism and by vasospasm after anterior communicating aneurysm rupture, and its strokes produce frontal-subcortical signs, abulia, confusion, executive dysfunction, with mild face-arm weakness and dysarthria rather than the dense hemiplegia of the lateral lenticulostriate territory.",
+ "anatomy": {
+  "location": "Head of the caudate nucleus, the anterior limb and genu of the internal capsule, the anterior third of the putamen and the anterior globus pallidus, and the adjacent anterior perforated substance, between the medial ACA territory of the septal region and the lateral lenticulostriate territory of the posterior putamen and posterior limb.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Medial lenticulostriate arteries from M1 and the recurrent artery of Heubner from A1-A2",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Thalamostriate and septal veins to the internal cerebral vein",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory contains the anterior thalamic radiation and the frontopontine and corticostriatal fibers of the anterior limb, the caudate head of the prefrontal basal ganglia loops and the anterior putamen, so ischemia produces the picture of a frontal lobe lesion without cortical involvement: abulia, inattention, executive dysfunction, disinhibition or agitation and, on the left, transcortical motor aphasia, with mild contralateral weakness of the face and arm from the genu. The recurrent artery of Heubner is the single largest vessel of the territory and is at risk during anterior communicating aneurysm surgery; the other medial striate arteries arise from the M1 segment and are occluded by the same emboli that block the MCA.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-lenticulostriate",
+   "artery-mca",
+   "artery-aca"
+  ],
+  "territories": [
+   "territory-medial-lenticulostriate"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "territory-medial-lenticulostriate-l"
+    },
+    "label": "medial lenticulostriate territory of the caudate head and anterior limb"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-medial-lenticulostriate-r"
+    },
+    "label": "medial striate domain of the anterior striatum"
+   }
+  ],
+  "normalAppearance": "On the overlay the medial lenticulostriate domain covers the caudate head, the anterior limb and the anterior putamen; on imaging a Heubner infarct is a comma of restricted diffusion in the caudate head and anterior limb.",
+  "pathology": [
+   {
+    "pathology": "Caudate head infarct (recurrent artery of Heubner)",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the caudate head and anterior limb with abulia, confusion and mild face-arm weakness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Vasospasm after anterior communicating aneurysm rupture",
+    "modality": "MRI",
+    "finding": "Delayed infarcts of the caudate heads and anterior limbs, often bilateral, with amnesia and apathy.",
+    "sequence": "DWI",
+    "timing": "Days 4-14 after the hemorrhage"
+   },
+   {
+    "pathology": "Lacune of the anterior limb",
+    "modality": "MRI",
+    "finding": "Small deep infarct in the anterior limb with executive change and dysarthria.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Abulia, inattention and executive dysfunction",
+    "side": "bilateral",
+    "mechanism": "Caudate head and anterior limb infarction"
+   },
+   {
+    "deficit": "Mild contralateral face-arm weakness and dysarthria",
+    "side": "contralateral",
+    "mechanism": "Genu of the internal capsule involvement"
+   },
+   {
+    "deficit": "Transcortical motor aphasia (left)",
+    "side": "n/a",
+    "mechanism": "Disconnection of the medial and dorsolateral frontal cortex from the striatum"
+   }
+  ],
+  "examination": [
+   "Initiative and attention during the interview",
+   "Verbal fluency and set shifting",
+   "Face and arm strength and speech"
+  ],
+  "syndromes": [
+   "syn-aca-infarct",
+   "syn-lacunar-pure-motor",
+   "syn-subarachnoid-hemorrhage"
+  ],
+  "pearls": [
+   "A caudate stroke is a frontal lobe stroke that the CT places in the basal ganglia",
+   "Heubner's artery is the vessel neurosurgeons protect when clipping anterior communicating aneurysms",
+   "Medial lenticulostriate infarcts confuse more than they weaken; lateral ones weaken more than they confuse"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    309,
+    318
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-lenticulostriate"
+}

@@ -1,0 +1,201 @@
+{
+ "kind": "structure",
+ "id": "territory-inferior-cerebellar",
+ "name": "Inferior cerebellar (PICA/AICA) territory",
+ "synonyms": [
+  "PICA/AICA territory",
+  "inferior cerebellar domain"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-inferior-cerebellar-l",
+  "territory-inferior-cerebellar-r"
+ ],
+ "summary": "The inferior cerebellar territory combines the domains of the posterior inferior and anterior inferior cerebellar arteries: the inferior and posterior cerebellar surface, the tonsils, the inferior vermis with the nodulus, the flocculus, and the lateral medulla and lateral caudal pons. It is the territory of the lateral medullary (Wallenberg) syndrome and the lateral pontine (AICA) syndrome, of the isolated vertigo of medial PICA infarction that mimics vestibular neuritis, and of the large PICA infarct that swells against the fourth ventricle and herniates the tonsils. Its arteries arise from the vertebral (PICA) and basilar (AICA) trunks and are occluded by vertebral dissection, atherosclerosis and embolism.",
+ "anatomy": {
+  "location": "Posterior and inferior cerebellar surface (Crus II, lobules VII-X, the tonsils and inferior vermis) from PICA, the anterior inferior surface with the flocculus and the middle cerebellar peduncle region from AICA, the lateral medulla (PICA and vertebral perforators) and the lateral caudal pontine tegmentum and inner ear (AICA and labyrinthine artery); bounded above by the SCA territory and medially by the medullary and pontine paramedian territories.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior inferior cerebellar artery from the vertebral artery; anterior inferior cerebellar artery from the basilar artery",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Inferior cerebellar veins to the transverse and sigmoid sinuses",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory holds the vestibulocerebellum and the vestibular nuclei, the lateral medullary tegmentum with the spinal trigeminal tract, the spinothalamic tract, the nucleus ambiguus and the descending sympathetic fibers, the lateral pontine tegmentum with the facial and cochlear nuclei, and the inner ear, so ischemia produces vertigo, nystagmus and truncal ataxia, the crossed sensory loss and bulbar palsy of Wallenberg syndrome, or the facial palsy and deafness of the AICA syndrome; the PICA domain of the inferior cerebellum swells dangerously because the posterior fossa has no room. Collaterals between PICA, AICA and SCA over the surface vary and determine the infarct's size.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-aica",
+   "artery-vertebral",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-inferior-cerebellar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "territory-inferior-cerebellar-l"
+    },
+    "label": "inferior cerebellar territory of PICA and AICA"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "territory-inferior-cerebellar-r"
+    },
+    "label": "posteroinferior cerebellar domain and lateral medulla"
+   }
+  ],
+  "normalAppearance": "On the overlay the inferior cerebellar domain covers the posteroinferior cerebellum, the tonsils, the flocculus and the lateral medulla; on imaging a PICA infarct is a wedge of the posteroinferior hemisphere and an AICA infarct a small anterolateral lesion near the middle cerebellar peduncle.",
+  "pathology": [
+   {
+    "pathology": "PICA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the posteroinferior cerebellum, sometimes with the lateral medulla; vertigo, ataxia and risk of swelling at 2-4 days.",
+    "sequence": "DWI",
+    "timing": "Swelling peaks on day 3; watch the fourth ventricle and tonsils"
+   },
+   {
+    "pathology": "AICA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the anterior inferior cerebellum and middle cerebellar peduncle with vertigo, ipsilateral deafness and facial palsy.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Vertebral artery dissection",
+    "modality": "MRA",
+    "finding": "Tapered V2-V3 stenosis with intramural hematoma in a young patient with neck pain; PICA territory infarcts.",
+    "sequence": "TOF"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Vertigo, nystagmus and truncal ataxia",
+    "side": "ipsilateral",
+    "mechanism": "Vestibulocerebellar and vestibular nuclear ischemia"
+   },
+   {
+    "deficit": "Wallenberg syndrome: crossed sensory loss, dysphagia, Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Lateral medullary infarction"
+   },
+   {
+    "deficit": "Ipsilateral deafness and facial palsy (AICA)",
+    "side": "ipsilateral",
+    "mechanism": "Labyrinthine artery and lateral pontine infarction"
+   },
+   {
+    "deficit": "Tonsillar herniation and hydrocephalus",
+    "side": "bilateral",
+    "mechanism": "Swelling of a large inferior cerebellar infarct"
+   }
+  ],
+  "examination": [
+   "HINTS examination and ability to stand",
+   "Facial sensation, palate, Horner syndrome and hearing",
+   "Serial consciousness and gaze for 72 hours"
+  ],
+  "syndromes": [
+   "syn-pica-cerebellar-infarct",
+   "syn-wallenberg-lateral-medullary",
+   "syn-aica-lateral-pontine",
+   "syn-central-vs-peripheral-vertigo",
+   "syn-tonsillar-herniation"
+  ],
+  "pearls": [
+   "Vertigo with a normal head impulse is PICA territory until proved otherwise",
+   "Deafness with vertigo is AICA; vertigo alone is PICA",
+   "The posterior fossa has no spare room: a swollen PICA infarct needs a surgeon on day two, not day four"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    244,
+    246
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    205
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    70,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    108,
+    114
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-pica-lateral-medulla"
+}

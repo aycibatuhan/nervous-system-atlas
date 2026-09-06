@@ -1,0 +1,173 @@
+{
+ "kind": "structure",
+ "id": "territory-superior-cerebellar",
+ "name": "Superior cerebellar artery territory",
+ "synonyms": [
+  "SCA territory",
+  "superior cerebellar domain"
+ ],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-superior-cerebellar-l",
+  "territory-superior-cerebellar-r"
+ ],
+ "summary": "The superior cerebellar artery territory is the superior surface of the cerebellum, the anterior lobe and upper posterior lobe with the superior vermis, together with the dentate nucleus, the superior cerebellar peduncle and the dorsolateral upper pons and lower midbrain. It is the territory of the SCA syndrome: ipsilateral limb ataxia and dysarthria, contralateral loss of pain and temperature from the lateral tegmentum, and, in large infarcts, cerebellar swelling with upward transtentorial herniation. It borders the AICA and PICA territories on the cerebellar surface in a variable watershed, and its cortical branches receive collaterals from those arteries, so its infarcts are often smaller than the full domain.",
+ "anatomy": {
+  "location": "Superior surface of both cerebellar hemispheres and the superior vermis (lobules I-VI, upper Crus I), the deep white matter with the dentate nucleus, the superior cerebellar peduncle and the dorsolateral tegmentum of the rostral pons and caudal midbrain; bounded below by the AICA and PICA territories at the horizontal fissure region and medially by the basilar territory of the pons.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Superior cerebellar artery (medial and lateral branches)",
+    "via": "arterial supply"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Superior cerebellar veins to the great cerebral vein and the straight sinus",
+    "via": "venous drainage"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The territory contains the anterior lobe's sensorimotor cortex for the limbs and trunk, the cerebellar outflow through the dentate nucleus and superior peduncle, the spinothalamic tract and the lateral lemniscus in the upper pontine tegmentum, the superior cerebellar peduncle's decussation and the trochlear nucleus region, so its infarction produces ipsilateral ataxia and intention tremor, dysarthria, contralateral spinothalamic sensory loss, and sometimes a contralateral trochlear palsy or Horner syndrome; its infarcts are usually embolic and often accompany PCA infarcts from the basilar tip. Swelling of a large SCA infarct compresses the midbrain and the aqueduct from above.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-superior-cerebellar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "territory-superior-cerebellar-l"
+    },
+    "label": "superior cerebellar artery territory on the upper cerebellum"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "territory-superior-cerebellar-r"
+    },
+    "label": "SCA domain of the superior vermis and anterior lobe"
+   }
+  ],
+  "normalAppearance": "On the overlay the SCA domain covers the superior cerebellar surface beneath the tentorium and the upper pontine tegmentum; on imaging an SCA infarct is a wedge of the superior cerebellum reaching the tentorial surface.",
+  "pathology": [
+   {
+    "pathology": "SCA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the superior cerebellar hemisphere and vermis with ipsilateral ataxia, dysarthria and contralateral pain-temperature loss; often with PCA infarcts.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Upward transtentorial herniation",
+    "modality": "CT",
+    "finding": "Superior cerebellar swelling effacing the quadrigeminal cistern and flattening the tectum, with hydrocephalus and coma.",
+    "sequence": "CT non-contrast",
+    "timing": "Days 2-4 after a large infarct"
+   },
+   {
+    "pathology": "Cerebellar hemorrhage of the superior hemisphere",
+    "modality": "CT",
+    "finding": "Hyperdense superior cerebellar hematoma with acute ataxia, vomiting and headache.",
+    "sequence": "CT non-contrast"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia and intention tremor",
+    "side": "ipsilateral",
+    "mechanism": "Anterior lobe, dentate and superior peduncle infarction"
+   },
+   {
+    "deficit": "Dysarthria",
+    "side": "ipsilateral",
+    "mechanism": "Paravermian and dentate outflow infarction"
+   },
+   {
+    "deficit": "Contralateral loss of pain and temperature",
+    "side": "contralateral",
+    "mechanism": "Spinothalamic tract in the lateral upper pontine tegmentum"
+   },
+   {
+    "deficit": "Coma from upward herniation",
+    "side": "bilateral",
+    "mechanism": "Swelling of the superior cerebellum against the midbrain"
+   }
+  ],
+  "examination": [
+   "Finger-nose, heel-shin and speech",
+   "Pin-prick on the side opposite the ataxia",
+   "Serial level of consciousness for three days after a large infarct"
+  ],
+  "syndromes": [
+   "syn-sca-infarct",
+   "syn-cerebellar-hemispheric",
+   "syn-top-of-basilar"
+  ],
+  "pearls": [
+   "The SCA is the cerebellar artery of the arms and speech; PICA is the artery of vertigo and falls",
+   "Superior cerebellar swelling herniates upward: the tectum, not the tonsils, is flattened",
+   "An SCA infarct without a PCA infarct is unusual; look for the basilar tip embolus"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    475
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    66
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    179,
+    194
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    244,
+    246
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    70,
+    73
+   ]
+  }
+ ],
+ "tags": [
+  "arterial territory",
+  "stroke"
+ ],
+ "status": "draft",
+ "subsystem": "level1",
+ "parent": "territory-sca"
+}

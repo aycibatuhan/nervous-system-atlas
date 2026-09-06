@@ -1,0 +1,162 @@
+{
+ "kind": "structure",
+ "id": "tract-corticostriatal-anterior",
+ "name": "Corticostriatal tract, anterior",
+ "synonyms": [
+  "prefrontal corticostriatal fibers",
+  "associative-limbic corticostriatal projection"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-corticostriatal-anterior-l",
+  "tract-corticostriatal-anterior-r"
+ ],
+ "summary": "The anterior corticostriatal bundle groups the fibers from the prefrontal and orbitofrontal cortex to the head of the caudate and the anterior putamen and the ventral striatum, the cortical input of the associative and limbic loops of the basal ganglia. These projections carry the goals, rules and reward expectations that the striatum uses to select behavior, and their targets are the parts of the striatum most affected in obsessive-compulsive disorder, addiction and Huntington disease. The bundle runs through the anterior corona radiata and the external and anterior internal capsule to the striatum, and its interruption or dysfunction produces apathy, disinhibition and impaired habit and reward learning rather than motor signs.",
+ "anatomy": {
+  "location": "From the dorsolateral, ventrolateral and orbitofrontal prefrontal cortex and the anterior cingulate through the anterior corona radiata, converging on the head of the caudate nucleus, the anterior putamen and the nucleus accumbens through the anterior limb of the internal capsule and the external capsule; the fibers are glutamatergic and topographically organized.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal, orbitofrontal and anterior cingulate cortex",
+    "via": "origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Caudate head, anterior putamen and nucleus accumbens",
+    "via": "glutamatergic termination on medium spiny neurons"
+   }
+  ],
+  "pathways": [
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "Prefrontal corticostriatal axons synapse on the striatal medium spiny neurons of the direct and indirect pathways in the associative (caudate) and limbic (ventral) striatum, where dopamine from the ventral tegmental area and the medial substantia nigra gates their effect; through the pallidum and the mediodorsal and ventral anterior thalamus the loop returns to the same prefrontal areas, allowing the cortex to learn which actions and strategies are rewarded and to switch between them. The anterior cingulate and orbitofrontal components pass motivation and value; the dorsolateral components pass working memory and rules. Dysfunction of the loop underlies compulsions, apathy and impulse disorders, and its striatal targets degenerate first in Huntington disease.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-lenticulostriate",
+   "artery-aca",
+   "artery-mca"
+  ],
+  "territories": [
+   "territory-medial-lenticulostriate",
+   "territory-lateral-lenticulostriate"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-corticostriatal-anterior-l"
+    },
+    "label": "anterior corticostriatal fibers from the prefrontal cortex to the caudate head"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "tract-corticostriatal-anterior-r"
+    },
+    "label": "prefrontal fibers converging on the anterior striatum"
+   }
+  ],
+  "normalAppearance": "Tractography shows a fan from the frontal lobe converging on the caudate head and anterior putamen through the anterior limb and external capsule; not visible on conventional MRI.",
+  "pathology": [
+   {
+    "pathology": "Huntington disease",
+    "modality": "MRI",
+    "finding": "Caudate head atrophy with enlarged frontal horns and loss of the corticostriatal terminal field; frontal atrophy follows.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Caudate infarct (Heubner or lenticulostriate)",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the caudate head and anterior limb with abulia, disinhibition and confusion.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Obsessive-compulsive disorder (functional)",
+    "modality": "PET",
+    "finding": "Hypermetabolism of the orbitofrontal cortex, caudate and thalamus in the anterior loop; structural imaging normal; the anterior limb is the capsulotomy target.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Apathy and abulia",
+    "side": "bilateral",
+    "mechanism": "Loss of prefrontal drive to the associative striatum"
+   },
+   {
+    "deficit": "Disinhibition and compulsive behavior",
+    "side": "bilateral",
+    "mechanism": "Dysregulation of the orbitofrontal-ventral striatal loop"
+   },
+   {
+    "deficit": "Impaired reward and habit learning",
+    "side": "bilateral",
+    "mechanism": "Loss of the corticostriatal substrate of reinforcement learning"
+   }
+  ],
+  "examination": [
+   "Initiative, planning and rule shifting",
+   "Impulse control and compulsions history",
+   "Chorea and eye movement testing when Huntington disease is a consideration"
+  ],
+  "syndromes": [
+   "syn-huntington-chorea",
+   "syn-aca-infarct"
+  ],
+  "pearls": [
+   "The anterior striatum is the frontal lobe's habit machine; cut its input and the patient neither starts nor stops",
+   "Huntington disease begins where the prefrontal cortex projects: the caudate head",
+   "Capsulotomy for obsessive-compulsive disorder cuts this bundle in the anterior limb"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    309,
+    318
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    250,
+    252
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "projection",
+ "parent": "internal-capsule"
+}

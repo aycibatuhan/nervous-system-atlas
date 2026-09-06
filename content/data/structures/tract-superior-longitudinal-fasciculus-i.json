@@ -1,0 +1,163 @@
+{
+ "kind": "structure",
+ "id": "tract-superior-longitudinal-fasciculus-i",
+ "name": "Superior longitudinal fasciculus I",
+ "synonyms": [
+  "dorsal SLF",
+  "SLF I"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-superior-longitudinal-fasciculus-i-l",
+  "tract-superior-longitudinal-fasciculus-i-r"
+ ],
+ "summary": "The dorsal branch of the superior longitudinal fasciculus runs in the white matter of the superior frontal and superior parietal gyri, above the cingulum and medial to the corona radiata, connecting the superior parietal lobule and the precuneus with the supplementary motor area, the dorsal premotor cortex and the superior frontal gyrus. It is the wiring of the dorsal attention and reaching network: it carries the spatial location of targets and the state of the limbs from the parietal cortex to the premotor areas that plan reaching, and it contributes to the voluntary orienting of attention. Lesions produce optic ataxia and impaired reaching and contribute to neglect, and it is involved in parasagittal lesions and in the border zone between the anterior and middle cerebral arteries.",
+ "anatomy": {
+  "location": "From the superior parietal lobule and the precuneus forward in the dorsomedial white matter beneath the superior frontal gyrus and above the cingulate sulcus, lateral to the cingulum, to the supplementary motor area, the dorsal premotor cortex and the superior frontal gyrus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Superior parietal lobule and precuneus",
+    "via": "parietal origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Supplementary motor area, dorsal premotor cortex and superior frontal gyrus",
+    "via": "frontal termination"
+   }
+  ],
+  "pathways": [
+   "pathway-dcml"
+  ]
+ },
+ "function": "It links the parietal representation of visual space and limb position with the frontal areas that plan arm movements and gaze shifts, so that a reach is aimed and updated; it also carries the top-down signals of the dorsal attention network from the frontal eye field and premotor cortex to the parietal cortex, directing attention voluntarily to a location. The right SLF I contributes more to spatial attention and the left to bimanual coordination and sequencing. Interruption produces optic ataxia (misreaching in the peripheral field), difficulty in bimanual tasks and, with the other SLF branches, neglect; it is one of the bundles injured in the parieto-frontal watershed and in ACA-MCA border-zone infarcts.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca-parietal",
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "tract-superior-longitudinal-fasciculus-i-l"
+    },
+    "label": "SLF I in the dorsomedial white matter above the cingulum"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-superior-longitudinal-fasciculus-i-r"
+    },
+    "label": "dorsal branch of the SLF beneath the superior frontal gyrus"
+   }
+  ],
+  "normalAppearance": "Tractography shows a long dorsomedial bundle from the superior parietal lobule to the superior frontal gyrus, lateral and superior to the cingulum; not identifiable on conventional MRI.",
+  "pathology": [
+   {
+    "pathology": "ACA-MCA watershed infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion along the parasagittal border zone in the superior frontal and parietal white matter with bilateral proximal weakness and misreaching.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Parasagittal meningioma",
+    "modality": "MRI",
+    "finding": "Dural mass compressing the superior frontal and parietal cortex with reaching and leg symptoms.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Posterior cortical atrophy or corticobasal syndrome",
+    "modality": "MRI",
+    "finding": "Dorsal parietal and premotor atrophy with optic ataxia and limb apraxia; the SLF I terminals degenerate.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Optic ataxia: misreaching to peripheral targets",
+    "side": "contralateral",
+    "mechanism": "Disconnection of the superior parietal lobule from the dorsal premotor cortex"
+   },
+   {
+    "deficit": "Impaired bimanual coordination and sequencing",
+    "side": "bilateral",
+    "mechanism": "Loss of parietal-supplementary motor communication"
+   },
+   {
+    "deficit": "Contribution to spatial neglect (right)",
+    "side": "contralateral",
+    "mechanism": "Interruption of the dorsal attention network"
+   }
+  ],
+  "examination": [
+   "Reach to a target in the periphery while fixating the examiner's nose",
+   "Bimanual alternating tasks",
+   "Cancellation and line bisection"
+  ],
+  "syndromes": [
+   "syn-balint",
+   "syn-watershed-infarct",
+   "syn-hemineglect"
+  ],
+  "pearls": [
+   "SLF I is the dorsal reaching wire; cut it and the hand misses what the eye sees",
+   "The parasagittal watershed runs through this bundle: hypotension produces bilateral proximal weakness and misreaching",
+   "Three branches of the SLF, three functions: I reaches, II attends, III speaks and imitates"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    268
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    291
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    60
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    190,
+    194
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "association",
+ "parent": "cerebral-white-matter"
+}

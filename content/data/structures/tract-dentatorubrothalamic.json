@@ -1,0 +1,180 @@
+{
+ "kind": "structure",
+ "id": "tract-dentatorubrothalamic",
+ "name": "Dentatorubrothalamic tract",
+ "synonyms": [
+  "cerebellothalamic tract",
+  "superior cerebellar peduncle outflow"
+ ],
+ "system": "tracts",
+ "meshIds": [
+  "tract-dentatorubrothalamic-l",
+  "tract-dentatorubrothalamic-r"
+ ],
+ "summary": "The dentatorubrothalamic tract is the main outflow of the cerebellum, from the dentate nucleus through the superior cerebellar peduncle, crossing in the decussation of the peduncles in the caudal midbrain, passing through and around the contralateral red nucleus, and ending in the ventrolateral thalamus, from which the motor cortex is reached. It is the pathway through which the cerebellum times and coordinates voluntary movement, and it is the reason cerebellar signs are ipsilateral: it crosses once here and the corticospinal tract crosses back. Its interruption produces contralateral (after the decussation) or ipsilateral (before it) ataxia and tremor, its lesion in the midbrain gives the Holmes rubral tremor, and it is the bundle that tremor surgery targets in the thalamus and the posterior subthalamic area.",
+ "anatomy": {
+  "location": "From the dentate nucleus in the cerebellar white matter, forward and upward in the superior cerebellar peduncle along the roof of the fourth ventricle, decussating in the tegmentum at the level of the inferior colliculus, ascending through and around the red nucleus and the prerubral field, through the zona incerta and field H of Forel, to the ventral intermediate and ventrolateral nuclei of the thalamus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Dentate and interposed nuclei",
+    "via": "origin"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Contralateral red nucleus",
+    "via": "collateral termination"
+   },
+   {
+    "to": "Contralateral ventrolateral thalamus (ventral intermediate nucleus)",
+    "via": "termination"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-rubrospinal"
+  ]
+ },
+ "function": "The tract carries the dentate nucleus's prediction-corrected motor signal, derived from the cerebellar hemisphere's comparison of intended and actual movement, to the motor and premotor cortex through the ventrolateral thalamus, giving movements their timing, smoothness and end-point accuracy; collaterals to the red nucleus feed the rubrospinal and the rubro-olivary loop for motor learning, and its rhythmic activity is what drives cerebellar and Holmes tremor. Because it crosses in the midbrain, a lesion of the peduncle or the dentate produces ipsilateral ataxia, a lesion above the decussation contralateral ataxia; combined damage to the tract and the nigrostriatal fibers in the midbrain produces the slow, coarse rest-postural-intention tremor of Holmes.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-superior-cerebellar",
+   "territory-basilar",
+   "territory-posterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "tract-dentatorubrothalamic-l"
+    },
+    "label": "dentatorubrothalamic tract from the dentate nucleus through the red nucleus to the thalamus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "tract-dentatorubrothalamic-r"
+    },
+    "label": "superior cerebellar peduncle decussation in the caudal midbrain"
+   }
+  ],
+  "normalAppearance": "Tractography shows a bundle from the dentate through the superior cerebellar peduncle, crossing in the midbrain to the contralateral thalamus; the decussation is a dark midline structure on axial T2 at the inferior colliculus level, and the tract is used to plan tremor stimulation.",
+  "pathology": [
+   {
+    "pathology": "Holmes (rubral) tremor after midbrain lesion",
+    "modality": "MRI",
+    "finding": "Infarct, hemorrhage or demyelination of the midbrain tegmentum involving the red nucleus and the tract, with delayed coarse tremor at rest, posture and action.",
+    "sequence": "FLAIR",
+    "timing": "Tremor appears weeks to months after the lesion"
+   },
+   {
+    "pathology": "Superior cerebellar peduncle lesion (SCA infarct, MS)",
+    "modality": "MRI",
+    "finding": "Lesion of the peduncle with ipsilateral limb ataxia and intention tremor.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Ventral intermediate thalamic stimulation",
+    "modality": "MRI",
+    "finding": "Electrode at the thalamic termination of the tract, planned by tractography, for essential and parkinsonian tremor.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral ataxia and intention tremor (lesion below the decussation)",
+    "side": "ipsilateral",
+    "mechanism": "Interruption before the crossing"
+   },
+   {
+    "deficit": "Contralateral ataxia and tremor (lesion above the decussation)",
+    "side": "contralateral",
+    "mechanism": "Interruption after the crossing"
+   },
+   {
+    "deficit": "Holmes tremor",
+    "side": "contralateral",
+    "mechanism": "Combined damage of the cerebellothalamic and nigrostriatal pathways in the midbrain"
+   }
+  ],
+  "examination": [
+   "Finger-nose test with attention to tremor at the end of movement",
+   "Compare rest, postural and intention components",
+   "Side of ataxia relative to the lesion level on imaging"
+  ],
+  "syndromes": [
+   "syn-claude",
+   "syn-benedikt",
+   "syn-cerebellar-hemispheric",
+   "syn-sca-infarct"
+  ],
+  "pearls": [
+   "Cerebellar signs are ipsilateral because this tract crosses once and the corticospinal tract crosses back",
+   "A tremor that is present at rest, on posture and on action after a midbrain stroke is Holmes tremor",
+   "Tremor surgery follows this bundle: the target is where it enters the thalamus"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    242
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    218
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    246,
+    250
+   ]
+  }
+ ],
+ "tags": [
+  "white matter",
+  "tractography"
+ ],
+ "status": "draft",
+ "subsystem": "cerebellar",
+ "parent": "superior-cerebellar-peduncle"
+}
