@@ -1,0 +1,133 @@
+{
+ "kind": "structure",
+ "id": "nerves-dorsal-cutaneous-foot",
+ "name": "Dorsal cutaneous nerves of the foot",
+ "synonyms": [
+  "medial dorsal cutaneous nerve of the foot",
+  "intermediate dorsal cutaneous nerve of the foot"
+ ],
+ "system": "peripheral",
+ "meshIds": [
+  "dorsal-cutaneous-nerves-foot-l",
+  "dorsal-cutaneous-nerves-foot-r"
+ ],
+ "summary": "The medial and intermediate dorsal cutaneous nerves of the foot are the terminal branches of the superficial peroneal nerve, emerging through the deep fascia of the lower lateral leg and crossing the ankle to supply the skin of the dorsum of the foot and toes, except the first web space (deep peroneal), the lateral border of the foot (sural) and the medial border (saphenous). They are the sensory map of the superficial peroneal nerve and of the L5 dermatome on the dorsum of the foot, they are compressed where they pierce the fascia and at the ankle by tight boots, and they are injured in ankle arthroscopy and surgery, producing numbness and neuroma pain on the top of the foot.",
+ "anatomy": {
+  "location": "The superficial peroneal nerve pierces the deep fascia in the lower third of the lateral leg and divides into the medial dorsal cutaneous nerve, which crosses the ankle anterior to the lateral malleolus to the medial dorsum, the great toe and the second and third toes, and the intermediate dorsal cutaneous nerve, which runs more laterally to the lateral dorsum and the third to fifth toes; both lie subcutaneously over the extensor retinaculum.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Purely sensory, they carry sensation from the dorsum of the foot and toes through the superficial peroneal nerve to the L5 (medial) and S1 (lateral) dorsal root ganglia; their sparing of the first web space (deep peroneal), the lateral foot (sural) and the medial foot (saphenous) allows the examiner to assign dorsal foot numbness to the superficial peroneal nerve or the L5 root, and the superficial peroneal sensory potential separates the two (normal in a root lesion). They are entrapped where the superficial peroneal nerve pierces the fascia (with pain on plantar flexion and inversion) and compressed by boots at the ankle, and they are cut in anterolateral ankle portals and bunion surgery, leaving a numb dorsum or a painful neuroma.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum (regional arteries)"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "dorsal-cutaneous-nerves-foot-l"
+    },
+    "label": "medial and intermediate dorsal cutaneous nerves crossing the ankle to the dorsum of the foot"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "dorsal-cutaneous-nerves-foot-r"
+    },
+    "label": "terminal branches of the superficial peroneal nerve over the extensor retinaculum"
+   }
+  ],
+  "normalAppearance": "Subcutaneous nerves over the anterior ankle on ultrasound, seen with the foot plantar-flexed and inverted; not resolved on routine MRI. Territory: dorsum of the foot except the first web space and the borders.",
+  "pathology": [
+   {
+    "pathology": "Superficial peroneal nerve entrapment",
+    "modality": "US",
+    "finding": "Focal swelling of the nerve where it pierces the crural fascia in the lower lateral leg, with dorsal foot paresthesias on inversion.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Iatrogenic injury at ankle arthroscopy",
+    "modality": "US",
+    "finding": "Neuroma of a dorsal cutaneous branch beneath an anterolateral portal scar with a painful Tinel sign.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "L5 radiculopathy (for comparison)",
+    "modality": "EMG/NCS",
+    "finding": "Normal superficial peroneal sensory potential despite a numb dorsum of the foot, placing the lesion at the root.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Numbness of the dorsum of the foot sparing the first web space",
+    "side": "ipsilateral",
+    "mechanism": "Superficial peroneal nerve or its dorsal cutaneous branches"
+   },
+   {
+    "deficit": "Painful neuroma on the dorsum after ankle surgery",
+    "side": "ipsilateral",
+    "mechanism": "Section of a dorsal cutaneous branch"
+   },
+   {
+    "deficit": "Numb dorsum with a normal sensory potential",
+    "side": "ipsilateral",
+    "mechanism": "L5 radiculopathy proximal to the ganglion"
+   }
+  ],
+  "examination": [
+   "Test the first web space (deep peroneal) separately from the rest of the dorsum (superficial peroneal)",
+   "Tinel sign over the lower lateral leg where the nerve pierces the fascia and over ankle scars",
+   "Superficial peroneal sensory conduction study"
+  ],
+  "syndromes": [
+   "syn-peroneal-palsy-foot-drop",
+   "syn-radiculopathy-lumbosacral"
+  ],
+  "pearls": [
+   "Numb top of the foot with a normal first web space is the superficial peroneal nerve; a numb web space alone is the deep peroneal",
+   "Mark the dorsal cutaneous nerves before ankle arthroscopy: they lie under the anterolateral portal",
+   "A normal superficial peroneal sensory response in a numb foot means the L5 root"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    111,
+    120
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    166
+   ]
+  }
+ ],
+ "tags": [
+  "peripheral nerve",
+  "cutaneous"
+ ],
+ "status": "draft",
+ "subsystem": "lower-limb",
+ "parent": "plexus-lumbosacral",
+ "level": {
+  "region": "peripheral",
+  "sub": "L4-S1"
+ }
+}

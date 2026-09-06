@@ -1,0 +1,167 @@
+{
+ "kind": "topic",
+ "id": "topic-dementia-patterns",
+ "name": "Dementia: anatomical patterns of cognitive decline",
+ "synonyms": [],
+ "category": "disease-pattern",
+ "summary": "Each degenerative dementia attacks a network in a characteriztic order, so the first symptoms and the pattern of atrophy on MRI localize the disease before any biomarker: Alzheimer disease begins in the entorhinal cortex and hippocampus and spreads to the posterior cingulate and parietal association cortex, producing amnesia first; frontotemporal degeneration begins in the orbitofrontal and anterior temporal cortex, producing behavioral change or semantic loss; Lewy body disease affects the brainstem, the basal forebrain and the visual association cortex, producing fluctuations, visual hallucinations and parkinsonism; and vascular cognitive impairment reflects the frontal-subcortical circuits disconnected by small vessel disease. The examination should therefore ask which cognitive domain failed first and map it onto the atlas.",
+ "sections": [
+  {
+   "heading": "Alzheimer disease: the medial temporal and parietal pattern",
+   "body": "Tau tangles appear first in the transentorhinal and entorhinal cortex, spread to the hippocampus and then to the temporal, parietal and frontal association cortex, while amyloid accumulates diffusely in the neocortex years before symptoms; the earliest deficit is therefore anterograde episodic memory (rapid forgetting, repeated questions, failure of delayed recall that cueing does not rescue), followed by word finding, visuospatial disorientation and executive decline. MRI shows medial temporal atrophy graded on coronal images, then parietal atrophy, and FDG-PET shows posterior cingulate and precuneus hypometabolism; CSF shows low amyloid-beta 42 and high phosphorylated tau, and amyloid and tau PET confirm the pathology. Atypical variants attack the same pathology to different networks: posterior cortical atrophy (visual), logopenic aphasia (left temporo-parietal) and the frontal variant. Cholinesterase inhibitors address the basal forebrain cholinergic loss."
+  },
+  {
+   "heading": "Frontotemporal lobar degeneration: the anterior pattern",
+   "body": "The behavioral variant begins with disinhibition, apathy, loss of empathy, compulsive or ritualistic behavior, hyperorality and dietary change and executive failure with relatively preserved memory and visuospatial function, reflecting orbitofrontal, anterior cingulate, insular and anterior temporal degeneration (tau or TDP-43); MRI shows frontal and anterior temporal atrophy, often asymmetric, with knife-edge gyri. Semantic dementia is asymmetric anterior temporal atrophy with fluent speech empty of meaning, loss of word comprehension and of knowledge about objects and people; progressive non-fluent aphasia is left inferior frontal and insular atrophy with effortful, agrammatic speech and apraxia of speech. Motor neuron disease, progressive supranuclear palsy and corticobasal degeneration overlap with these syndromes, and onset before 65 with a family history suggests a genetic cause."
+  },
+  {
+   "heading": "Lewy body disease and vascular cognitive impairment",
+   "body": "Dementia with Lewy bodies produces fluctuating attention and alertness, recurrent well-formed visual hallucinations, REM sleep behavior disorder and parkinsonism, with visuospatial and executive deficits more than amnesia early on; alpha-synuclein spreads from the brainstem and olfactory bulb to the limbic and neocortical regions, the basal forebrain cholinergic loss is severe, and MRI shows relative preservation of the medial temporal lobes while dopamine transporter imaging shows nigrostriatal loss. Neuroleptic sensitivity is dangerous. Vascular cognitive impairment presents with slowed processing, executive dysfunction, gait apraxia, urinary urgency and emotional lability from confluent white-matter disease, lacunes and microbleeds disconnecting the frontal-subcortical circuits, or with a stepwise course after strategic infarcts of the thalamus, caudate or angular gyrus; it coexists with Alzheimer pathology in most elderly patients."
+  },
+  {
+   "heading": "Rapidly progressive and treatable dementias",
+   "body": "A dementia evolving over weeks to months is a different disease: Creutzfeldt-Jakob disease (myoclonus, cortical ribboning and basal ganglia restricted diffusion on MRI, periodic sharp waves on EEG, positive real-time quaking-induced conversion in CSF), autoimmune encephalitis (limbic seizures and psychiatric change with antibodies against neuronal surface antigens), Wernicke encephalopathy, and infections such as HIV, syphilis and Whipple disease. Treatable contributors to any dementia include normal-pressure hydrocephalus (gait first, then incontinence, then cognition), hypothyroidism, vitamin B12 deficiency, depression, sleep apnea, subdural hematoma and, above all, drugs with anticholinergic and sedative action. The workup of every dementia therefore includes imaging, thyroid function, B12, a drug review and a mood assessment, and a rapidly progressive course adds CSF, EEG and autoimmune serology."
+  }
+ ],
+ "keyPoints": [
+  "Ask which domain failed first: memory (Alzheimer), behavior or language (frontotemporal), attention and vision with hallucinations (Lewy), speed and gait (vascular)",
+  "Medial temporal atrophy on coronal MRI is the structural signature of Alzheimer disease; frontal and anterior temporal atrophy of frontotemporal degeneration",
+  "Cueing rescues retrieval in subcortical and frontal dementias but not the storage failure of Alzheimer disease",
+  "Dementia with Lewy bodies fluctuates, hallucinates and moves badly; do not give it a neuroleptic",
+  "Weeks-to-months dementia is prion, autoimmune or metabolic until proved otherwise"
+ ],
+ "meshIds": [
+  "hippocampus-l",
+  "hippocampus-r",
+  "gyrus-parahippocampal-anterior-l",
+  "gyrus-parahippocampal-anterior-r",
+  "gyrus-cingulate-posterior-l",
+  "gyrus-cingulate-posterior-r",
+  "precuneus-l",
+  "precuneus-r",
+  "cortex-orbitofrontal-l",
+  "cortex-orbitofrontal-r",
+  "temporal-pole-l",
+  "temporal-pole-r",
+  "nucleus-basalis-meynert-l",
+  "nucleus-basalis-meynert-r"
+ ],
+ "related": {
+  "structureIds": [
+   "hippocampus",
+   "gyrus-parahippocampal-anterior",
+   "gyrus-cingulate-posterior",
+   "precuneus",
+   "cortex-orbitofrontal",
+   "temporal-pole",
+   "nucleus-basalis-meynert",
+   "cerebral-white-matter",
+   "thalamus"
+  ],
+  "pathwayIds": [],
+  "syndromeIds": [
+   "syn-normal-pressure-hydrocephalus",
+   "syn-wernicke-korsakoff",
+   "syn-parkinsonism",
+   "syn-subdural-hematoma"
+  ],
+  "topicIds": [
+   "topic-neurotransmitter-systems",
+   "topic-movement-disorder-circuits",
+   "topic-sleep-eeg-basics"
+  ]
+ },
+ "pearls": [
+  "A dementia workup that omits the drug list misses the commonest reversible cause",
+  "Gait before memory means normal-pressure hydrocephalus; test with a large-volume tap",
+  "Semantic dementia patients ask what a word means; Alzheimer patients ask the same question twice"
+ ],
+ "pitfalls": [
+  "Depression in the elderly impairs attention and retrieval and mimics dementia; treat it and retest before labeling",
+  "Anticholinergic burden from bladder, sleep and allergy drugs produces a reversible dementia that no scan will show"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    231,
+    240
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    246,
+    250
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    285,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    456,
+    458
+   ]
+  }
+ ],
+ "tags": [
+  "dementia",
+  "Alzheimer",
+  "frontotemporal",
+  "Lewy body"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Volumetric T1 for regional atrophy (medial temporal, parietal, frontal, anterior temporal), FLAIR for vascular burden, SWI for microbleeds, DWI for prion disease, FDG-PET for the metabolic pattern and amyloid or tau PET and CSF biomarkers for Alzheimer pathology; dopamine transporter SPECT for Lewy body disease.",
+  "pathology": [
+   {
+    "pathology": "Alzheimer disease",
+    "modality": "MRI",
+    "finding": "Bilateral hippocampal and entorhinal atrophy with widened temporal horns and parietal atrophy; FDG-PET hypometabolism of the posterior cingulate, precuneus and temporo-parietal cortex.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Behavioral variant frontotemporal dementia",
+    "modality": "MRI",
+    "finding": "Frontal and anterior temporal atrophy, often asymmetric, with relative sparing of the posterior cortex; FDG-PET frontal hypometabolism.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Dementia with Lewy bodies",
+    "modality": "SPECT",
+    "finding": "Reduced striatal dopamine transporter uptake with relatively preserved medial temporal volume; FDG-PET occipital hypometabolism with the cingulate island sign.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Creutzfeldt-Jakob disease",
+    "modality": "MRI",
+    "finding": "Cortical ribbon and striatal restricted diffusion, sometimes thalamic (pulvinar sign in variant disease), with periodic sharp-wave complexes on EEG.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Vascular cognitive impairment",
+    "modality": "MRI",
+    "finding": "Confluent periventricular and deep white-matter hyperintensities, lacunes, microbleeds and strategic infarcts of the thalamus or caudate.",
+    "sequence": "FLAIR"
+   }
+  ]
+ }
+}

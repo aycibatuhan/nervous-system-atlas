@@ -1,0 +1,185 @@
+{
+ "kind": "topic",
+ "id": "topic-pediatric-neurological-syndromes",
+ "name": "Pediatric neurological syndromes",
+ "synonyms": [],
+ "category": "pediatric",
+ "summary": "The child's nervous system differs from the adult's in its unfinished myelination, its open sutures, its immature reflexes and its dependence on developmental milestones as the measure of function, so the same anatomy produces different clinical pictures: a hemispheric lesion produces hemiplegic cerebral palsy rather than a stroke syndrome, raised pressure produces a bulging fontanelle and a big head rather than papilledema, and a metabolic disease produces regression of milestones rather than dementia. The commonest pediatric syndromes, cerebral palsy, hydrocephalus and Chiari, febrile and epileptic seizures, neurocutaneous disorders, posterior fossa tumors, floppy infant syndromes and the leukodystrophies, are each anchored to atlas structures and a developmental timetable.",
+ "sections": [
+  {
+   "heading": "The developing examination",
+   "body": "Primitive reflexes (Moro, grasp, asymmetric tonic neck, stepping) are present at birth and disappear by six months as the corticospinal tract myelinates; their persistence or asymmetry is the earliest sign of an upper motor neuron lesion, and the Babinski sign is normal until walking begins. Tone evolves from the flexor hypertonia of the newborn to the hypotonia of early infancy and then to adult tone; a floppy infant with weakness has a lower motor neuron disorder (spinal muscular atrophy with tongue fasciculation and absent reflexes, congenital myopathy, myasthenia, botulism), whereas a floppy infant with preserved strength and brisk reflexes has a central cause (hypoxic injury, chromosomal disorder, metabolic disease). Milestones (social smile at 6 weeks, sitting at 6 to 8 months, walking at 12 to 18 months, words at 12 months, sentences at 2 years) are the functional examination, and their loss, regression, is the hallmark of a degenerative or metabolic disease and must never be attributed to behavior."
+  },
+  {
+   "heading": "Cerebral palsy, hydrocephalus and the posterior fossa",
+   "body": "Cerebral palsy is a non-progressive motor disorder from injury to the developing brain: spastic diplegia from periventricular leukomalacia of prematurity (the leg fibers of the corticospinal tract lie closest to the ventricle), spastic hemiplegia from perinatal middle cerebral artery stroke, spastic quadriplegia from diffuse hypoxic-ischemic injury, dyskinetic palsy from basal ganglia and thalamic injury in term asphyxia or kernicterus, and ataxic palsy from cerebellar malformation. Infant hydrocephalus presents with an enlarging head, a tense fontanelle, splayed sutures, sunsetting eyes from posterior commissure compression and irritability; aqueductal stenosis, Chiari II with myelomeningocele, post-hemorrhagic hydrocephalus of prematurity and posterior fossa tumors are the causes. Posterior fossa tumors (medulloblastoma of the vermis, pilocytic astrocytoma of the hemisphere, ependymoma of the fourth ventricle, diffuse pontine glioma) present with morning vomiting, ataxia, head tilt and cranial nerve palsies."
+  },
+  {
+   "heading": "Seizures and neurocutaneous syndromes",
+   "body": "Febrile seizures are brief generalized seizures with fever between six months and five years in a neurologically normal child and carry a small risk of later epilepsy; complex febrile seizures (focal, prolonged, repeated) and a first afebrile seizure need more evaluation. Infantile spasms (flexor jerks in clusters with hypsarrhythmia on EEG) signal a serious cause such as tuberous sclerosis or a malformation and regress development unless treated; childhood absence epilepsy, benign epilepsy with centrotemporal spikes and juvenile myoclonic epilepsy are the common age-related syndromes with characteriztic EEGs. The neurocutaneous disorders link skin to brain: neurofibromatosis type 1 (cafe-au-lait spots, optic pathway gliomas, learning difficulty), tuberous sclerosis (hypomelanotic macules, cortical tubers, subependymal nodules and giant cell astrocytomas, infantile spasms), Sturge-Weber (facial port-wine stain with leptomeningeal angioma, seizures and hemiparesis) and neurofibromatosis type 2 (bilateral vestibular schwannomas)."
+  },
+  {
+   "heading": "Metabolic, degenerative and acquired disorders",
+   "body": "Inborn errors present with encephalopathy, seizures and regression, often precipitated by fasting or illness: urea cycle and organic acid disorders in the newborn, mitochondrial disorders with stroke-like episodes and lactic acidosis (MELAS), lysosomal storage diseases with hepatosplenomegaly and cherry-red spots, and the leukodystrophies (metachromatic, Krabbe, adrenoleukodystrophy) with progressive spasticity and white-matter change on MRI. Acquired disorders include bacterial meningitis (group B streptococcus and E. coli in neonates, pneumococcus and meningococcus later), herpes encephalitis, acute disseminated encephalomyelitis after infection, Guillain-Barre syndrome, and non-accidental injury, which must be considered in any infant with subdural hemorrhage, retinal hemorrhages and fractures. Neonatal hypoxic-ischemic encephalopathy affects the watershed cortex in mild and the deep gray matter in severe insults, and its grading determines cooling and prognosis."
+  }
+ ],
+ "keyPoints": [
+  "Regression of milestones is never behavioral: it is metabolic, degenerative or epileptic until proved otherwise",
+  "A floppy infant who is weak has a lower motor neuron disease; a floppy infant who is strong has a brain disease",
+  "Spastic diplegia is the signature of prematurity because the leg fibers run beside the ventricles",
+  "Sunset eyes in an infant are Parinaud syndrome from hydrocephalus stretching the posterior commissure",
+  "Infantile spasms need an EEG and a skin examination under Wood's lamp today, not next month"
+ ],
+ "meshIds": [
+  "ventricle-lateral-l",
+  "ventricle-lateral-r",
+  "cerebellar-vermis-vi",
+  "cerebellar-lobule-x-l",
+  "cerebellar-lobule-x-r",
+  "brainstem",
+  "posterior-commissure",
+  "spinal-grey-anterior-horn"
+ ],
+ "related": {
+  "structureIds": [
+   "ventricle-lateral",
+   "cerebral-aqueduct",
+   "posterior-commissure",
+   "cerebellar-vermis",
+   "cerebellar-lobule-x",
+   "brainstem",
+   "corona-radiata",
+   "spinal-grey-anterior-horn"
+  ],
+  "pathwayIds": [],
+  "syndromeIds": [
+   "syn-hydrocephalus",
+   "syn-chiari-tonsillar-ectopia",
+   "syn-parinaud-dorsal-midbrain",
+   "syn-cerebellar-vermian-midline",
+   "syn-guillain-barre"
+  ],
+  "topicIds": [
+   "topic-neural-development-malformations",
+   "topic-leukodystrophies-mitochondrial",
+   "topic-epilepsy-localization",
+   "topic-cns-infections-localization"
+  ]
+ },
+ "pearls": [
+  "Measure the head circumference at every visit; the curve is the child's intracranial pressure record",
+  "Morning vomiting with a head tilt in a child is a posterior fossa tumor until the MRI is done",
+  "Retinal hemorrhages plus subdural blood in an infant means abuse until a rigorous alternative is proven"
+ ],
+ "pitfalls": [
+  "Unmyelinated white matter in an infant is bright on T2 and must not be called edema or leukodystrophy; compare with the myelination expected for age"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 18,
+   "pages": [
+    486,
+    506
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    160,
+    167
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    442,
+    452
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    269,
+    274
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    167,
+    172
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    257,
+    262
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 31,
+   "pages": [
+    309,
+    312
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    207,
+    216
+   ]
+  }
+ ],
+ "tags": [
+  "pediatric",
+  "development",
+  "cerebral palsy"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Cranial ultrasound through the fontanelle for hemorrhage and ventricular size in infants, MRI for malformations, injury patterns and white-matter disease staged against the myelination timetable, and CT only for acute trauma or shunt failure.",
+  "pathology": [
+   {
+    "pathology": "Periventricular leukomalacia",
+    "modality": "MRI",
+    "finding": "Loss of periventricular white matter with irregular ventricular margins and thinning of the posterior corpus callosum in an ex-premature child with spastic diplegia.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Hypoxic-ischemic encephalopathy (term)",
+    "modality": "MRI",
+    "finding": "Restricted diffusion and T1 hyperintensity of the posterior putamen, ventrolateral thalamus and perirolandic cortex in severe insults; watershed cortex in partial prolonged insults.",
+    "sequence": "DWI",
+    "timing": "DWI peaks at 3-5 days; T1 changes appear after a week"
+   },
+   {
+    "pathology": "Medulloblastoma",
+    "modality": "MRI",
+    "finding": "Enhancing midline vermian mass filling the fourth ventricle with restricted diffusion and hydrocephalus; spine imaging for drop metastases.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Tuberous sclerosis",
+    "modality": "MRI",
+    "finding": "Cortical tubers (FLAIR-bright expanded gyri), subependymal nodules along the ventricles and a subependymal giant cell astrocytoma at the foramen of Monro.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Non-accidental injury",
+    "modality": "CT",
+    "finding": "Subdural hematomas of different ages, interhemispheric blood and hypoxic injury with retinal hemorrhages and skeletal fractures.",
+    "sequence": "CT non-contrast"
+   }
+  ]
+ }
+}

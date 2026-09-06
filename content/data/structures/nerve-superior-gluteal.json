@@ -1,0 +1,133 @@
+{
+ "kind": "structure",
+ "id": "nerve-superior-gluteal",
+ "name": "Superior gluteal nerve",
+ "synonyms": [
+  "superior gluteal nerve (L4-S1)"
+ ],
+ "system": "peripheral",
+ "meshIds": [
+  "superior-gluteal-nerve-l",
+  "superior-gluteal-nerve-r"
+ ],
+ "summary": "The superior gluteal nerve (L4, L5, S1) leaves the pelvis through the greater sciatic foramen above the piriformis, the only nerve to do so, and runs between the gluteus medius and minimus with the superior gluteal artery to supply those two muscles and the tensor fasciae latae, the abductors and medial rotators of the hip that hold the pelvis level in single-leg stance. Its loss produces the Trendelenburg sign and a waddling gait, and it is injured by hip replacement through a lateral approach, by intramuscular injections in the wrong quadrant and by L5 radiculopathy; abductor weakness in an L5 lesion is the sign that separates the root from a peroneal neuropathy, which spares the gluteus medius.",
+ "anatomy": {
+  "location": "From the sacral plexus in the pelvis, through the suprapiriform part of the greater sciatic foramen with the superior gluteal vessels, then laterally between the gluteus medius and minimus, supplying both, and forward to end in the tensor fasciae latae.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Motor to the gluteus medius, gluteus minimus and tensor fasciae latae, which abduct and medially rotate the thigh and, more importantly, stabilize the pelvis on the stance leg during walking; when they are weak the pelvis drops toward the swing side (the Trendelenburg sign) and the trunk lurches over the stance leg, producing a waddling gait when bilateral. The nerve carries L5 fibers predominantly, so abductor weakness is part of the L5 radiculopathy and lumbosacral plexopathy pictures and is absent in a common peroneal palsy at the fibular neck, the key bedside distinction in foot drop; it is also at risk in the lateral and anterolateral approaches to the hip, where the muscle split is limited to protect it, and in gluteal injections given too medially or too high.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum (regional arteries)"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "superior-gluteal-nerve-l"
+    },
+    "label": "superior gluteal nerve leaving the greater sciatic foramen above the piriformis"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "superior-gluteal-nerve-r"
+    },
+    "label": "nerve between the gluteus medius and minimus"
+   }
+  ],
+  "normalAppearance": "A nerve with the superior gluteal artery above the piriformis and between the gluteal muscles on MR neurography; denervation shows as STIR change and fatty atrophy of the gluteus medius, minimus and tensor fasciae latae.",
+  "pathology": [
+   {
+    "pathology": "Iatrogenic injury at hip arthroplasty",
+    "modality": "MRI",
+    "finding": "Denervation edema and later fatty atrophy of the gluteus medius and minimus after a lateral approach, with a Trendelenburg gait.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "L5 radiculopathy",
+    "modality": "MRI",
+    "finding": "L4-5 disc or foraminal lesion; EMG shows denervation of the gluteus medius and tensor fasciae latae as well as the tibialis anterior, placing the lesion at the root rather than the peroneal nerve.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Injection injury in the gluteal region",
+    "modality": "US",
+    "finding": "Nerve injury after a superomedial injection with hip abductor weakness; the safe upper outer quadrant avoids it.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Trendelenburg sign and waddling gait",
+    "side": "ipsilateral",
+    "mechanism": "Weakness of the gluteus medius and minimus"
+   },
+   {
+    "deficit": "Weak hip abduction and medial rotation",
+    "side": "ipsilateral",
+    "mechanism": "Denervation of the abductors and tensor fasciae latae"
+   },
+   {
+    "deficit": "Marker of L5 root or plexus involvement in foot drop",
+    "side": "ipsilateral",
+    "mechanism": "The nerve carries L5 fibers that the peroneal nerve does not test"
+   }
+  ],
+  "examination": [
+   "Single-leg stance: watch the opposite hip drop",
+   "Hip abduction strength lying on the side",
+   "Compare abductor strength with dorsiflexion in every foot drop"
+  ],
+  "syndromes": [
+   "syn-radiculopathy-lumbosacral",
+   "syn-peroneal-palsy-foot-drop",
+   "syn-lumbosacral-plexopathy"
+  ],
+  "pearls": [
+   "Foot drop with weak hip abduction is an L5 root, not the peroneal nerve",
+   "The Trendelenburg sign is the superior gluteal nerve's signature",
+   "Inject in the upper outer quadrant: the superior gluteal nerve lives above the piriformis"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    111,
+    120
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    166
+   ]
+  }
+ ],
+ "tags": [
+  "peripheral nerve",
+  "cutaneous"
+ ],
+ "status": "draft",
+ "subsystem": "lower-limb",
+ "parent": "plexus-lumbosacral",
+ "level": {
+  "region": "peripheral",
+  "sub": "L4-S1"
+ }
+}

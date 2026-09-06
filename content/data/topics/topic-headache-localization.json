@@ -1,0 +1,158 @@
+{
+ "kind": "topic",
+ "id": "topic-headache-localization",
+ "name": "Headache: pain-sensitive structures and localization",
+ "synonyms": [],
+ "category": "disease-pattern",
+ "summary": "The brain itself has no pain receptors; headache arises from the dura and its arteries, the venous sinuses, the large arteries at the base, the periosteum, the scalp and the cervical structures, all innervated by the trigeminal nerve above the tentorium and the upper cervical roots below it, converging on the trigeminocervical complex in the caudal medulla and upper cord. Primary headaches (migraine, tension-type, cluster and the other trigeminal autonomic cephalalgias) are disorders of this system's activation and modulation by the brainstem and hypothalamus; secondary headaches are its irritation by hemorrhage, meningitis, raised or low pressure, dissection, venous thrombosis, giant cell arteritis or mass, and recognizing the red flags that point to them is the main clinical task.",
+ "sections": [
+  {
+   "heading": "Anatomy of head pain",
+   "body": "The supratentorial dura, the falx and the cerebral arteries are supplied by the ophthalmic division of the trigeminal nerve (with maxillary and mandibular contributions to the middle meningeal region), so supratentorial pain is referred to the eye, forehead and temple; the posterior fossa dura and the tentorium are supplied by the upper cervical roots and the recurrent tentorial branch, so infratentorial pain is referred to the occiput and neck. Both inputs converge in the trigeminocervical complex (the spinal trigeminal nucleus and the C1-C3 dorsal horns), which explains why occipital pain accompanies migraine and why neck disease causes frontal pain. The trigeminovascular reflex releases calcitonin gene-related peptide from trigeminal terminals around the meningeal vessels, the target of modern migraine drugs, and the pain is modulated by the periaqueductal gray, the raphe and the locus coeruleus, the reason serotonergic and noradrenergic drugs prevent headache."
+  },
+  {
+   "heading": "Primary headaches and their generators",
+   "body": "Migraine begins with hypothalamic and brainstem activation (premonitory yawning, hunger, mood change), sometimes an aura of cortical spreading depression that marches across the visual cortex over twenty minutes, then a throbbing unilateral headache with nausea, photophobia and phonophobia from sensitization of the trigeminovascular system and the thalamus, lasting hours to days. Cluster headache is a strictly unilateral orbital pain of 15 to 180 minutes with ipsilateral lacrimation, nasal congestion, ptosis and miosis from parasympathetic activation through the superior salivatory nucleus and sympathetic deficit, recurring at the same time of day in bouts and timed by the posterior hypothalamus; paroxysmal hemicrania and SUNCT are shorter versions with distinct treatment responses. Tension-type headache is bilateral, pressing and without autonomic features, and medication-overuse headache follows frequent analgesic use in any primary headache."
+  },
+  {
+   "heading": "Secondary headaches and the red flags",
+   "body": "A thunderclap headache reaching maximum within a minute is subarachnoid hemorrhage until CT and, if negative after six hours, lumbar puncture prove otherwise, and its mimics (reversible cerebral vasoconstriction, dissection, pituitary apoplexy, venous thrombosis) need vascular imaging. A headache worse on lying, waking the patient, with vomiting, papilledema or a sixth nerve palsy means raised pressure from a mass, hydrocephalus, venous thrombosis or idiopathic intracranial hypertension; a headache that appears on standing and resolves lying down means low pressure from a CSF leak. Fever with neck stiffness means meningitis; a new headache after 50 with jaw claudication and a high sedimentation rate means giant cell arteritis and demands steroids before the biopsy; neck pain with Horner syndrome means carotid dissection; and any headache with a new focal sign, seizure or change in pattern needs imaging."
+  },
+  {
+   "heading": "Localizing pain to a structure",
+   "body": "Pain around the eye with a sixth nerve palsy or ophthalmoplegia points to the cavernous sinus, the superior orbital fissure or the orbit; pain at the vertex or behind the eye with visual loss points to the pituitary region; occipital pain with neck stiffness points to the posterior fossa or the meninges; unilateral neck pain radiating to the face with a small pupil points to the carotid; trigeminal neuralgia is a brief electric pain in one division triggered by touch, usually from vascular compression at the root entry zone; occipital neuralgia is a shooting pain in the C2 distribution. Post-traumatic and cervicogenic headaches reflect the trigeminocervical convergence, and the location of a mass rarely matches the site of the pain except when it involves the dura directly."
+  }
+ ],
+ "keyPoints": [
+  "The brain does not hurt; the dura, the vessels and the neck do, all through the trigeminocervical complex",
+  "Supratentorial pain is referred to the eye and forehead, infratentorial pain to the occiput and neck",
+  "Thunderclap means subarachnoid hemorrhage until proved otherwise; the six-hour CT rule applies",
+  "Cluster headache keeps hypothalamic time and comes with a wet, red eye and a droopy lid",
+  "A new headache after 50 with a high sedimentation rate is giant cell arteritis; treat before the biopsy"
+ ],
+ "meshIds": [
+  "cn-05-trigeminal-l",
+  "cn-05-trigeminal-r",
+  "periaqueductal-grey-l",
+  "periaqueductal-grey-r",
+  "hypothalamus-posterior-l",
+  "hypothalamus-posterior-r",
+  "sinus-cavernous-l",
+  "sinus-cavernous-r",
+  "falx-cerebri"
+ ],
+ "related": {
+  "structureIds": [
+   "spinal-trigeminal-nucleus-tract",
+   "dura-mater",
+   "tentorium-cerebelli",
+   "sinus-cavernous",
+   "periaqueductal-grey",
+   "hypothalamus-posterior",
+   "ganglion-trigeminal",
+   "artery-internal-carotid"
+  ],
+  "pathwayIds": [
+   "pathway-trigeminothalamic"
+  ],
+  "syndromeIds": [
+   "syn-subarachnoid-hemorrhage",
+   "syn-cerebral-venous-sinus-thrombosis",
+   "syn-idiopathic-intracranial-hypertension",
+   "syn-trigeminal-neuralgia",
+   "syn-cavernous-sinus",
+   "syn-horner"
+  ],
+  "topicIds": [
+   "topic-csf-physiology-blood-brain-barrier",
+   "topic-stroke-mechanisms-hemorrhage"
+  ]
+ },
+ "pearls": [
+  "Ask how fast the headache reached its peak before asking where it hurts",
+  "Positional headache means pressure: worse lying means high, worse standing means low",
+  "Migraine with aura is a cortical event; the aura marches, the visual disturbance of a TIA does not"
+ ],
+ "pitfalls": [
+  "A normal CT does not exclude subarachnoid hemorrhage after six hours; the lumbar puncture does",
+  "The worst headache of a chronic migraineur can still be a hemorrhage: judge the onset, not the patient"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 26,
+   "pages": [
+    275,
+    280
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    194,
+    200
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    417,
+    435
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    329,
+    333
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    205
+   ]
+  }
+ ],
+ "tags": [
+  "headache",
+  "migraine",
+  "trigeminovascular"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Primary headaches have normal imaging; imaging is for red flags: non-contrast CT for hemorrhage, CTA or MRA for aneurysm, dissection and vasoconstriction, MRV for venous thrombosis, MRI with contrast for meningeal disease, low pressure and masses.",
+  "pathology": [
+   {
+    "pathology": "Subarachnoid hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense blood in the basal cisterns and Sylvian fissures within six hours of a thunderclap headache; CTA finds the aneurysm.",
+    "sequence": "CT non-contrast",
+    "timing": "CT sensitivity falls after 6 hours; lumbar puncture for xanthochromia beyond 12 hours"
+   },
+   {
+    "pathology": "Spontaneous intracranial hypotension",
+    "modality": "MRI",
+    "finding": "Diffuse smooth pachymeningeal enhancement, brain sagging with a low-lying brainstem and tonsils, subdural collections and pituitary enlargement in a patient with orthostatic headache.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Cerebral venous sinus thrombosis",
+    "modality": "MRV",
+    "finding": "Absent flow in a sinus with the empty delta sign on contrast CT or MRI and venous infarcts that do not respect arterial territories.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Cervical artery dissection",
+    "modality": "MRA",
+    "finding": "Intramural hematoma crescent on fat-saturated T1 and tapered stenosis of the internal carotid or vertebral artery in a patient with neck pain and headache.",
+    "sequence": "T1"
+   }
+  ]
+ }
+}

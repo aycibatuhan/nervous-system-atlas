@@ -1,0 +1,137 @@
+{
+ "kind": "topic",
+ "id": "topic-csf-physiology-blood-brain-barrier",
+ "name": "CSF physiology and the blood–brain barrier",
+ "synonyms": [],
+ "category": "physiology",
+ "summary": "Cerebrospinal fluid is secreted by the choroid plexus of the ventricles at about half a milliliter a minute, flows through the ventricular system into the subarachnoid space by the foramina of the fourth ventricle, and is absorbed into the venous sinuses through the arachnoid granulations and along the cranial and spinal nerve sheaths; the whole volume of about 150 ml turns over three or four times a day. The blood–brain barrier of tight-junctioned capillary endothelium and the blood–CSF barrier of the choroid epithelium keep the extracellular fluid of the brain constant and exclude most drugs and proteins, and both are breached by inflammation, tumor and infarction. These systems explain hydrocephalus, intracranial hypertension, the composition of a normal and an abnormal spinal fluid, and why contrast enhancement means disease.",
+ "sections": [
+  {
+   "heading": "Production, circulation and absorption",
+   "body": "The choroid plexus in the lateral, third and fourth ventricles secretes CSF actively, driven by carbonic anhydrase and the sodium pump of the choroid epithelium (the target of acetazolamide), at a rate that is largely independent of pressure; the fluid passes through the interventricular foramina, the third ventricle, the aqueduct and the fourth ventricle, and leaves through the median foramen of Magendie and the lateral foramina of Luschka into the cisterna magna and the basal cisterns. It flows over the convexity to the arachnoid granulations, where a pressure gradient of a few centimeters of water moves it into the superior sagittal sinus, and along the olfactory and spinal nerve roots to lymphatics; a glymphatic route along perivascular spaces clears interstitial solutes during sleep. Absorption rises with pressure, so a fixed increase in production produces only a modest rise in pressure; obstruction of flow or absorption produces hydrocephalus."
+  },
+  {
+   "heading": "Hydrocephalus and intracranial pressure",
+   "body": "Obstruction within the ventricles or at the fourth ventricular outlets (tumor, aqueductal stenosis, hemorrhage, Chiari) produces non-communicating hydrocephalus with enlargement of the ventricles above the block; impaired absorption at the granulations after subarachnoid hemorrhage, meningitis or venous sinus thrombosis produces communicating hydrocephalus in which all ventricles dilate. Normal-pressure hydrocephalus of the elderly combines ventriculomegaly with a triad of gait apraxia, incontinence and dementia and improves with shunting when a large-volume tap improves the gait. Intracranial pressure is normally below 15 mmHg; because the skull is closed, the Monro-Kellie principle means that any added volume of blood, CSF, edema or mass must displace another, and when compensation fails pressure rises steeply and herniation follows. Idiopathic intracranial hypertension raises CSF pressure without a mass or ventricular enlargement and threatens vision through papilledema."
+  },
+  {
+   "heading": "Composition and lumbar puncture",
+   "body": "Normal CSF is clear, with fewer than five lymphocytes per microliter, protein below 0.45 g/L, glucose about two-thirds of the plasma value and an opening pressure of 10 to 20 cm of water in the lateral position. Neutrophils, low glucose and high protein mean bacterial meningitis; lymphocytes with normal glucose mean viral meningitis or encephalitis; lymphocytes with low glucose mean tuberculosis, fungi or carcinomatosis; red cells that do not clear between the first and last tube, with xanthochromia after twelve hours, mean subarachnoid hemorrhage; and oligoclonal bands present in CSF but not serum mean intrathecal immunoglobulin synthesis, the laboratory signature of multiple sclerosis. The puncture is made below the conus, at L3-L4 or L4-L5, and is dangerous when a mass or obstructive hydrocephalus creates a pressure gradient across the tentorium or the foramen magnum."
+  },
+  {
+   "heading": "The barriers and their failure",
+   "body": "Brain capillaries have continuous tight junctions, few vesicles and a sheath of astrocyte end-feet and pericytes, so lipid-soluble molecules, gases and substances with transporters (glucose, amino acids, levodopa) enter while proteins, most antibiotics, dopamine and many drugs do not; the choroid plexus epithelium forms the blood–CSF barrier with the same selectivity. The circumventricular organs (area postrema, median eminence, organum vasculosum, subfornical organ, pineal and posterior pituitary) have fenestrated capillaries and sense or secrete into the blood. The barrier opens in inflammation, tumor, infarction and hypertensive crisis, which is why gadolinium and iodinated contrast enhance those lesions, why vasogenic edema spreads through the white matter around them, why antibiotics reach the CSF only when the meninges are inflamed and why osmotic agents such as mannitol shrink the normal brain more than the injured part. Immature barriers in the neonate let bilirubin reach the basal ganglia in kernicterus."
+  }
+ ],
+ "keyPoints": [
+  "CSF is made at 0.5 ml per minute and turned over three to four times a day; absorption, not production, sets the pressure",
+  "Non-communicating hydrocephalus blocks the ventricles; communicating hydrocephalus blocks the granulations; both enlarge the temporal horns first",
+  "Contrast enhancement means the blood–brain barrier is open: tumor, inflammation, infection or subacute infarction",
+  "Neutrophils and low glucose in CSF mean bacterial meningitis; lymphocytes with low glucose mean tuberculosis, fungus or cancer",
+  "The Monro-Kellie doctrine makes every added milliliter in the skull someone else's problem"
+ ],
+ "meshIds": [
+  "ventricle-lateral-l",
+  "ventricle-lateral-r",
+  "ventricle-third",
+  "ventricle-fourth"
+ ],
+ "related": {
+  "structureIds": [
+   "choroid-plexus",
+   "arachnoid-granulations",
+   "ventricle-lateral",
+   "cerebral-aqueduct",
+   "area-postrema",
+   "subarachnoid-space-cisterns"
+  ],
+  "pathwayIds": [],
+  "syndromeIds": [
+   "syn-hydrocephalus",
+   "syn-normal-pressure-hydrocephalus",
+   "syn-idiopathic-intracranial-hypertension",
+   "syn-subarachnoid-hemorrhage"
+  ],
+  "topicIds": [
+   "topic-neuroimaging-basics",
+   "topic-cns-infections-localization"
+  ]
+ },
+ "pearls": [
+  "Measure the opening pressure at every lumbar puncture; a normal CSF with high pressure is idiopathic intracranial hypertension or venous thrombosis",
+  "Never puncture below an obstruction you have not imaged",
+  "Acetazolamide works on the choroid plexus, which is why it treats intracranial hypertension"
+ ],
+ "pitfalls": [
+  "Ventricles enlarge with atrophy too; hydrocephalus needs the temporal horns rounded and the sulci tight, not just big ventricles"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    436,
+    462
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    417,
+    435
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 2,
+   "pages": [
+    20,
+    24
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    269,
+    274
+   ]
+  }
+ ],
+ "tags": [
+  "CSF",
+  "blood-brain barrier",
+  "hydrocephalus"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Ventricular size relative to the sulci and the temporal horns distinguishes hydrocephalus from atrophy; CSF flow studies show aqueductal flow; contrast enhancement maps barrier breakdown.",
+  "pathology": [
+   {
+    "pathology": "Obstructive hydrocephalus",
+    "modality": "MRI",
+    "finding": "Dilated lateral and third ventricles with a normal fourth ventricle in aqueductal stenosis; periventricular FLAIR halo of transependymal CSF in acute cases.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Normal-pressure hydrocephalus",
+    "modality": "MRI",
+    "finding": "Ventriculomegaly out of proportion to sulcal atrophy with tight high-convexity sulci and an enlarged Sylvian fissure (DESH pattern).",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Idiopathic intracranial hypertension",
+    "modality": "MRV",
+    "finding": "Empty sella, flattened posterior globes, distended optic nerve sheaths and transverse sinus stenosis on MRV, with normal ventricles.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Barrier breakdown with vasogenic edema",
+    "modality": "MRI",
+    "finding": "Ring or solid enhancement after gadolinium with finger-like FLAIR edema spreading through the white matter around a tumor or abscess.",
+    "sequence": "T1+Gd"
+   }
+  ]
+ }
+}

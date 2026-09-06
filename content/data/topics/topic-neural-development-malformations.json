@@ -1,0 +1,135 @@
+{
+ "kind": "topic",
+ "id": "topic-neural-development-malformations",
+ "name": "Neural development and malformations",
+ "synonyms": [],
+ "category": "development",
+ "summary": "The nervous system forms from the neural plate by neurulation, segmentation of the neural tube into the primary and secondary brain vesicles, proliferation of neurons in the ventricular zone, radial migration to build the cortex, and the late events of synapse formation and myelination that continue into adult life. Each step has a characteriztic failure: a defect of closure gives spina bifida or anencephaly, a defect of prosencephalic cleavage gives holoprosencephaly, a defect of proliferation gives microcephaly, a defect of migration gives lissencephaly, heterotopia and polymicrogyria, and a defect of the posterior fossa gives Chiari and Dandy-Walker malformations. Knowing the timetable turns a malformation into a date of injury.",
+ "sections": [
+  {
+   "heading": "Neurulation and the neural tube",
+   "body": "The neural plate folds during the third and fourth weeks and closes first in the cervical region, then zips toward the anterior neuropore (closing around day 25) and the posterior neuropore (day 27). Failure at the anterior end produces anencephaly and encephalocele; failure at the posterior end produces the spectrum of spina bifida from occulta to myelomeningocele, in which the open cord is exposed on the back and almost always accompanied by a Chiari II malformation and hydrocephalus. Folate before conception reduces the risk, and maternal serum alpha-fetoprotein and second-trimester ultrasound detect the open defects. The neural crest, which separates from the closing tube, gives rise to the dorsal root and autonomic ganglia, Schwann cells, the adrenal medulla and the meninges of the cord, so crest disorders combine peripheral nerve, pigment and craniofacial findings."
+  },
+  {
+   "heading": "Vesicles, flexures and the ventricular system",
+   "body": "The rostral tube expands into the prosencephalon, mesencephalon and rhombencephalon, then into the telencephalon and diencephalon, the midbrain, and the metencephalon (pons and cerebellum) and myelencephalon (medulla); the lumen of the tube becomes the ventricles and the aqueduct, and the flexures bend the axis so that the cerebral hemispheres come to lie above the brainstem. Failure of the prosencephalon to divide into two hemispheres is holoprosencephaly, ranging from a single ventricle with cyclopia to a mild form with only a missing septum pellucidum and midline facial change, associated with sonic hedgehog pathway defects and trisomy 13. Aqueductal stenosis, from malformation or infection, is the commonest cause of congenital hydrocephalus."
+  },
+  {
+   "heading": "Proliferation and migration of cortical neurons",
+   "body": "Neurons are born in the ventricular and subventricular zones between the seventh and sixteenth weeks and migrate along radial glia to the cortical plate, the later-born neurons passing the earlier ones to form the six layers inside-out; interneurons arrive tangentially from the ganglionic eminences. Reduced proliferation yields microcephaly (genetic, or from congenital infection, alcohol or radiation); arrested migration yields lissencephaly with a thick, smooth four-layered cortex (LIS1, DCX), band and periventricular nodular heterotopia in which neurons stop in the white matter or beside the ventricle (FLNA), and abnormal late organization yields polymicrogyria and focal cortical dysplasia, the commonest structural causes of childhood epilepsy. The timing of the insult, not its nature, decides the pattern."
+  },
+  {
+   "heading": "Posterior fossa, spinal cord and myelination",
+   "body": "The cerebellum forms from the rhombic lips of the metencephalon and the vermis fuses in the midline late in the first trimester; failure gives the Dandy-Walker malformation with a cystic fourth ventricle and vermian hypoplasia, and a small posterior fossa crowds the tonsils downward as the Chiari malformations. The spinal cord ends at the level of the third lumbar vertebra at birth and rises to L1-L2 by adulthood because the vertebral column grows faster; failure of the filum to lengthen tethers the cord and produces progressive leg and bladder symptoms in childhood. Myelination proceeds from the brainstem outward and from sensory to motor systems, finishing in the frontal association areas in the third decade, which is why an infant's Babinski sign is normal and why white-matter diseases of childhood are staged by the myelination that should have occurred."
+  }
+ ],
+ "keyPoints": [
+  "Neural tube closure fails in the fourth week: anencephaly at the front, spina bifida at the back, both reduced by preconception folate",
+  "The pattern of a malformation dates the insult: proliferation (microcephaly) before migration (lissencephaly, heterotopia) before organization (polymicrogyria)",
+  "Holoprosencephaly is a failure of midline cleavage and is often paired with midline facial defects",
+  "Chiari II accompanies myelomeningocele; Chiari I is an adult finding with a small posterior fossa",
+  "Tethered cord presents with growth: leg weakness, foot deformity and bladder symptoms appear as the child lengthens"
+ ],
+ "meshIds": [
+  "ventricle-lateral-l",
+  "ventricle-lateral-r",
+  "ventricle-fourth",
+  "cerebellar-vermis-vi",
+  "brainstem"
+ ],
+ "related": {
+  "structureIds": [
+   "ventricle-lateral",
+   "ventricle-fourth",
+   "cerebellar-vermis",
+   "conus-medullaris",
+   "corpus-callosum"
+  ],
+  "pathwayIds": [],
+  "syndromeIds": [
+   "syn-chiari-tonsillar-ectopia",
+   "syn-hydrocephalus"
+  ],
+  "topicIds": [
+   "topic-pediatric-neurological-syndromes",
+   "topic-csf-physiology-blood-brain-barrier"
+  ]
+ },
+ "pearls": [
+  "A newborn with an open back has a brain problem too: hydrocephalus and Chiari II are part of the package",
+  "Migration disorders are epilepsy disorders; look for them on the MRI of every child with refractory seizures",
+  "The cord ends at L1-L2 in the adult and L3 in the newborn: choose the puncture level accordingly"
+ ],
+ "pitfalls": [
+  "Gray matter in the white matter on MRI is heterotopia, not tumor; it follows gray matter signal on every sequence and does not enhance"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 18,
+   "pages": [
+    486,
+    506
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 1,
+   "pages": [
+    1,
+    32
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    436,
+    442
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    269,
+    274
+   ]
+  }
+ ],
+ "tags": [
+  "development",
+  "malformation",
+  "neurulation"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Fetal and neonatal ultrasound and MRI stage the malformation; in children and adults T1 and T2 volumetric MRI show gyral pattern, cortical thickness, gray matter in the wrong place (heterotopia) and posterior fossa anatomy.",
+  "pathology": [
+   {
+    "pathology": "Lissencephaly",
+    "modality": "MRI",
+    "finding": "Smooth cortex with few shallow sulci, thick cortical band and a figure-of-eight hemispheric shape; band heterotopia shows a second layer of gray matter beneath a thin cortex.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Periventricular nodular heterotopia",
+    "modality": "MRI",
+    "finding": "Nodules isointense to gray matter lining the lateral ventricles, often bilateral, in a patient with seizures beginning in adolescence.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Chiari II with myelomeningocele",
+    "modality": "MRI",
+    "finding": "Small posterior fossa with the vermis and medulla displaced below the foramen magnum, tectal beaking, hydrocephalus and a lumbosacral spinal defect.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Dandy-Walker malformation",
+    "modality": "MRI",
+    "finding": "Cystic dilatation of the fourth ventricle with hypoplasia and upward rotation of the vermis and an enlarged posterior fossa.",
+    "sequence": "T2"
+   }
+  ]
+ }
+}

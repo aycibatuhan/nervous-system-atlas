@@ -1,0 +1,147 @@
+{
+ "kind": "topic",
+ "id": "topic-epilepsy-localization",
+ "name": "Epilepsy: seizure semiology and localization",
+ "synonyms": [],
+ "category": "disease-pattern",
+ "summary": "A seizure is a transient burst of abnormally synchronized cortical activity, and its clinical expression is a map of the cortex it passes through: the first symptom (the aura) names the site of onset, the sequence of later symptoms traces the spread, and the postictal deficits mark the cortex that was exhausted. Focal seizures arise in one region and may spread to both hemispheres; generalized seizures begin in bilateral thalamocortical networks. The atlas structures involved, the medial temporal lobe, the frontal motor and supplementary motor areas, the insula, the occipital lobe and the thalamus, each produce a recognizable semiology, and the interictal and ictal EEG, the MRI and the neuropsychology converge on the epileptogenic zone that surgery can remove.",
+ "sections": [
+  {
+   "heading": "Temporal lobe seizures",
+   "body": "Medial temporal seizures, the commonest focal epilepsy of adults, begin with a rising epigastric sensation, fear, deja vu or an olfactory or gustatory hallucination from the amygdala, hippocampus and uncus, then impair awareness with a motionless stare, oral automatisms (lip smacking, chewing) and hand automatisms ipsilateral to the focus with dystonic posturing of the contralateral hand; they last one to three minutes and are followed by confusion and, with dominant-side onset, postictal aphasia. Lateral temporal seizures begin with auditory hallucinations, vertigo or complex visual scenes. The substrate is usually hippocampal sclerosis, a dysembryoplastic tumor, a cavernoma or a dysplasia, and anterior temporal lobectomy renders most patients seizure-free when MRI, EEG and neuropsychology agree."
+  },
+  {
+   "heading": "Frontal lobe seizures",
+   "body": "Frontal seizures are brief, frequent, nocturnal and often bizarre: supplementary motor area seizures produce sudden asymmetric tonic posturing with the contralateral arm abducted and the head turned toward it (the fencing posture) and vocalization with preserved awareness; primary motor cortex seizures produce clonic jerking that marches along the homunculus (the Jacksonian march) and leave a Todd paresis; frontal eye field seizures turn the head and eyes away from the focus; prefrontal and cingulate seizures produce hypermotor thrashing, pedaling, screaming and fear; opercular seizures produce salivation, throat sensations and speech arrest. Scalp EEG is often normal or obscured by movement, and these seizures are frequently misdiagnosed as parasomnias or psychogenic attacks until video-EEG shows their stereotypy."
+  },
+  {
+   "heading": "Parietal, occipital and insular seizures, and generalized epilepsies",
+   "body": "Parietal seizures begin with contralateral tingling, pain, a sense of a missing or moving limb or vertigo; occipital seizures begin with elementary colored visual hallucinations in the contralateral field, ictal blindness or eye deviation, and spread forward to temporal or parietal semiology; insular seizures produce laryngeal constriction, paresthesias and autonomic changes and mimic temporal seizures. Generalized epilepsies (absence, myoclonic, generalized tonic-clonic) begin in thalamocortical circuits with generalized spike-wave discharges: absence seizures are brief stares with 3 Hz spike-wave, juvenile myoclonic epilepsy adds morning jerks and photosensitivity, and the choice of drug differs from focal epilepsy, some sodium channel blockers worsening absence and myoclonus. Status epilepticus, a seizure over five minutes or repeated without recovery, is a medical emergency treated with benzodiazepines then a loading antiepileptic."
+  },
+  {
+   "heading": "Localizing the focus for treatment",
+   "body": "The history establishes the aura and the spread; interictal EEG shows spikes over the focus (anterior temporal spikes in medial temporal epilepsy, obscured or midline spikes in frontal epilepsy); MRI with thin coronal FLAIR and T1 through the hippocampi finds sclerosis, dysplasia and tumors; FDG-PET shows interictal hypometabolism of the focus, and ictal SPECT shows hyperperfusion; neuropsychology lateralizes memory and language; and when these disagree, intracranial recording with depth electrodes maps the onset. Lateralizing signs during the seizure include ipsilateral automatisms with contralateral dystonia, head version away from the focus at the start of a bilateral tonic-clonic seizure, postictal aphasia (dominant) and postictal nose wiping with the ipsilateral hand. The treatment ladder runs from drugs to resective surgery, laser ablation, vagus nerve or responsive stimulation and thalamic stimulation."
+  }
+ ],
+ "keyPoints": [
+  "The aura is the address: epigastric and fear for the medial temporal lobe, colored shapes for the occipital lobe, a tonic fencing posture for the supplementary motor area",
+  "Dystonic posturing of a hand during a seizure points to the opposite hemisphere; automatisms with it point to the same side",
+  "Frontal seizures are short, nocturnal and strange, and the EEG is often normal",
+  "Hippocampal sclerosis is the commonest surgically curable epilepsy; look at the hippocampi on coronal FLAIR",
+  "Absence and myoclonic epilepsies are generalized and are worsened by some drugs that help focal seizures"
+ ],
+ "meshIds": [
+  "hippocampus-l",
+  "hippocampus-r",
+  "amygdala-l",
+  "amygdala-r",
+  "cortex-supplementary-motor-l",
+  "cortex-supplementary-motor-r",
+  "gyrus-precentral-l",
+  "gyrus-precentral-r",
+  "insula-l",
+  "insula-r",
+  "cortex-intracalcarine-l",
+  "cortex-intracalcarine-r"
+ ],
+ "related": {
+  "structureIds": [
+   "hippocampus",
+   "amygdala",
+   "uncus",
+   "cortex-supplementary-motor",
+   "gyrus-precentral",
+   "frontal-eye-field",
+   "insula",
+   "cortex-intracalcarine",
+   "thalamus"
+  ],
+  "pathwayIds": [],
+  "syndromeIds": [
+   "syn-uncal-herniation"
+  ],
+  "topicIds": [
+   "topic-sleep-eeg-basics",
+   "topic-neural-development-malformations",
+   "topic-brain-tumor-localization"
+  ]
+ },
+ "pearls": [
+  "A first seizure after 25 is focal until proved otherwise: image the brain",
+  "Ask the witness what happened first, not what happened most",
+  "Todd paresis after a seizure localizes the motor cortex and can mimic a stroke for hours"
+ ],
+ "pitfalls": [
+  "Convulsive syncope with a few jerks is not epilepsy; the setting, the prodrome and the rapid recovery separate them",
+  "Psychogenic attacks coexist with epilepsy in a fifth of patients; video-EEG, not the story, decides"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    167,
+    178
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    292,
+    296
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    255,
+    262
+   ]
+  }
+ ],
+ "tags": [
+  "epilepsy",
+  "seizure",
+  "semiology"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "An epilepsy MRI protocol includes thin coronal T2/FLAIR and volumetric T1 perpendicular to the hippocampal axis, T2* or SWI for cavernomas and hemosiderin, and post-contrast images when a tumor is possible; FDG-PET and ictal SPECT add localizing evidence.",
+  "pathology": [
+   {
+    "pathology": "Mesial temporal sclerosis",
+    "modality": "MRI",
+    "finding": "Small hippocampus with loss of internal architecture and increased FLAIR signal, often with ipsilateral fornix and mammillary body atrophy and a dilated temporal horn.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Focal cortical dysplasia",
+    "modality": "MRI",
+    "finding": "Cortical thickening, blurred gray-white junction and a transmantle band of FLAIR signal tapering toward the ventricle; often subtle and missed without thin slices.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Dysembryoplastic neuroepithelial tumor or ganglioglioma",
+    "modality": "MRI",
+    "finding": "Cortically based multicystic or bubbly T2-bright lesion of the temporal lobe with little edema and little or no enhancement.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Cavernoma",
+    "modality": "MRI",
+    "finding": "Popcorn-like lesion with a hemosiderin rim on T2 and blooming on SWI, without edema unless recently bled.",
+    "sequence": "SWI"
+   }
+  ]
+ }
+}

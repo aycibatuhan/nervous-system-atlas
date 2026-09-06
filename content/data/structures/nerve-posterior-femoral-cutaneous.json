@@ -1,0 +1,133 @@
+{
+ "kind": "structure",
+ "id": "nerve-posterior-femoral-cutaneous",
+ "name": "Posterior femoral cutaneous nerve",
+ "synonyms": [
+  "posterior cutaneous nerve of the thigh"
+ ],
+ "system": "peripheral",
+ "meshIds": [
+  "posterior-femoral-cutaneous-nerve-l",
+  "posterior-femoral-cutaneous-nerve-r"
+ ],
+ "summary": "The posterior femoral cutaneous nerve arises from the sacral plexus (S1, S2, S3), leaves the pelvis through the greater sciatic foramen below the piriformis with the sciatic and inferior gluteal nerves and descends under the gluteus maximus and along the back of the thigh deep to the fascia, supplying the skin of the lower buttock, the perineum, the posterior thigh and the upper calf. It is the sensory nerve that separates a sciatic neuropathy from a sacral plexopathy or radiculopathy: numbness of the posterior thigh with a foot drop means the plexus or the roots, because the sciatic nerve itself supplies no thigh skin; it is injured with the sciatic nerve in hip surgery and injections and is compressed by prolonged sitting and by the hamstring origin.",
+ "anatomy": {
+  "location": "From the sacral plexus through the infrapiriform part of the greater sciatic foramen, medial to the sciatic nerve, under the gluteus maximus, giving inferior cluneal branches to the buttock and a perineal branch, then descending in the midline of the posterior thigh beneath the fascia lata to the popliteal fossa, where it pierces the fascia and continues to the upper calf.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Purely sensory, it carries sensation from the lower buttock, the perineum and posterior scrotum or labium, the posterior thigh and the upper posterior calf through the sacral plexus to the S1-S3 dorsal root ganglia; its territory is spared in sciatic neuropathy at the thigh, which is why posterior thigh numbness with sciatic-type weakness places the lesion at the sciatic notch, the plexus or the roots (piriformis region, pelvic tumor, sacral fracture, radiation). Its perineal branch explains perineal numbness in sacral plexopathy, and the inferior cluneal branches explain the buttock pain of ischial bursitis and of sitting on a hard seat, sometimes called wallet neuritis when the nerve is compressed against the ischial tuberosity.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum (regional arteries)"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "posterior-femoral-cutaneous-nerve-l"
+    },
+    "label": "posterior femoral cutaneous nerve under the gluteus maximus and along the posterior thigh"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "posterior-femoral-cutaneous-nerve-r"
+    },
+    "label": "nerve medial to the sciatic nerve below the piriformis"
+   }
+  ],
+  "normalAppearance": "A nerve medial to the sciatic nerve at the infrapiriform foramen and in the posterior thigh on MR neurography and ultrasound; its territory is the posterior thigh and lower buttock.",
+  "pathology": [
+   {
+    "pathology": "Sacral plexopathy",
+    "modality": "MRI",
+    "finding": "Thickening or enhancement of the sacral plexus from tumor, radiation or inflammation with posterior thigh numbness, foot drop and gluteal weakness; the posterior femoral cutaneous involvement places the lesion proximal to the sciatic nerve.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Injury at the sciatic notch (hip surgery, injection)",
+    "modality": "MRI",
+    "finding": "Signal change of the sciatic and posterior femoral cutaneous nerves at the infrapiriform foramen with posterior thigh sensory loss.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "Entrapment at the ischial tuberosity",
+    "modality": "US",
+    "finding": "Compression of the nerve and its cluneal branches at the hamstring origin with buttock and posterior thigh pain on sitting.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Numbness of the posterior thigh, lower buttock and perineum",
+    "side": "ipsilateral",
+    "mechanism": "Lesion of the nerve, the sacral plexus or the S1-S3 roots"
+   },
+   {
+    "deficit": "Marker of a proximal (plexus or root) lesion in sciatic-pattern weakness",
+    "side": "ipsilateral",
+    "mechanism": "The sciatic nerve does not supply thigh skin"
+   },
+   {
+    "deficit": "Pain on sitting",
+    "side": "ipsilateral",
+    "mechanism": "Entrapment against the ischial tuberosity"
+   }
+  ],
+  "examination": [
+   "Test sensation on the posterior thigh in every foot drop with sciatic-pattern weakness",
+   "Gluteal strength and hip extension to detect plexus involvement",
+   "Perineal sensation and sphincter function when the S2-S3 territory is numb"
+  ],
+  "syndromes": [
+   "syn-sciatic-neuropathy",
+   "syn-lumbosacral-plexopathy",
+   "syn-radiculopathy-lumbosacral"
+  ],
+  "pearls": [
+   "Numb posterior thigh with a foot drop means the lesion is above the sciatic nerve, in the plexus or the roots",
+   "The sciatic nerve gives no skin in the thigh; that is what makes this nerve useful",
+   "Buttock pain on sitting can be this nerve against the ischium, not a disc"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    111,
+    120
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    166
+   ]
+  }
+ ],
+ "tags": [
+  "peripheral nerve",
+  "cutaneous"
+ ],
+ "status": "draft",
+ "subsystem": "lower-limb",
+ "parent": "plexus-lumbosacral",
+ "level": {
+  "region": "peripheral",
+  "sub": "S1-S3"
+ }
+}

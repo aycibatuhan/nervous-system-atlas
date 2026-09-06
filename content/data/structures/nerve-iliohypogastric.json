@@ -1,0 +1,131 @@
+{
+ "kind": "structure",
+ "id": "nerve-iliohypogastric",
+ "name": "Iliohypogastric nerve",
+ "synonyms": [
+  "iliohypogastric nerve (L1)"
+ ],
+ "system": "peripheral",
+ "meshIds": [
+  "iliohypogastric-nerve-l",
+  "iliohypogastric-nerve-r"
+ ],
+ "summary": "The iliohypogastric nerve is the first branch of the lumbar plexus (L1 with a T12 contribution), emerging from the lateral border of the psoas, crossing the quadratus lumborum and the iliac crest region between the transversus abdominis and the internal oblique, and dividing into a lateral cutaneous branch to the skin of the upper buttock and an anterior cutaneous branch to the skin above the pubis. It supplies the lower abdominal wall muscles with the ilioinguinal nerve, it is injured in appendectomy, hernia repair, iliac crest bone harvest and Pfannenstiel incisions, and its entrapment produces the lower abdominal wall pain that is mistaken for a visceral or spinal cause.",
+ "anatomy": {
+  "location": "Leaves the upper lateral border of the psoas, crosses the quadratus lumborum behind the kidney, pierces the transversus abdominis above the iliac crest, runs between it and the internal oblique, gives the lateral cutaneous branch over the iliac crest to the gluteal skin and continues forward to pierce the internal and external obliques above the superficial inguinal ring as the anterior cutaneous branch to the suprapubic skin.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Mixed, it supplies the lower fibers of the transversus abdominis and internal oblique that form the conjoint tendon and protect the inguinal region, and sensation to the upper lateral buttock and the hypogastric skin above the pubis; its loss weakens the lower abdominal wall (a factor in direct inguinal hernia) and produces a band of numbness or burning above the groin, and entrapment by sutures, mesh or scar in the abdominal wall produces a chronic pain aggravated by trunk extension and hip extension with a trigger point medial to the anterior superior iliac spine. It shares roots and territory with the ilioinguinal nerve and is blocked together with it for hernia and lower abdominal surgery.",
+ "bloodSupply": {
+  "arteries": [
+   "vasa nervorum (regional arteries)"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "iliohypogastric-nerve-l"
+    },
+    "label": "iliohypogastric nerve crossing the quadratus lumborum to the abdominal wall"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "iliohypogastric-nerve-r"
+    },
+    "label": "nerve between the transversus abdominis and internal oblique above the iliac crest"
+   }
+  ],
+  "normalAppearance": "A nerve between the transversus abdominis and internal oblique above the anterior superior iliac spine on ultrasound; not seen on routine MRI. Territory: upper buttock and suprapubic skin.",
+  "pathology": [
+   {
+    "pathology": "Abdominal wall nerve entrapment after surgery",
+    "modality": "US",
+    "finding": "Neuroma or scar around the nerve near the anterior superior iliac spine after appendectomy, hernia repair or Pfannenstiel incision; a block relieves the pain.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Iliac crest bone graft injury",
+    "modality": "US",
+    "finding": "Injury to the lateral cutaneous branch over the iliac crest with numbness of the upper buttock.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "T12-L1 radiculopathy or retroperitoneal disease",
+    "modality": "CT",
+    "finding": "Lesion of the upper lumbar roots or the retroperitoneum at the psoas border with lower abdominal wall pain and a bulging flank from muscle weakness.",
+    "sequence": "CT contrast"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Numbness or burning pain above the pubis and over the upper buttock",
+    "side": "ipsilateral",
+    "mechanism": "Entrapment or injury of the nerve"
+   },
+   {
+    "deficit": "Weakness of the lower abdominal wall",
+    "side": "ipsilateral",
+    "mechanism": "Denervation of the lower transversus and internal oblique"
+   },
+   {
+    "deficit": "Contribution to direct inguinal hernia",
+    "side": "ipsilateral",
+    "mechanism": "Weakened conjoint tendon region"
+   }
+  ],
+  "examination": [
+   "Sensation over the suprapubic and upper gluteal skin",
+   "Tenderness and Tinel sign medial to the anterior superior iliac spine",
+   "Diagnostic nerve block for chronic post-surgical groin and abdominal wall pain"
+  ],
+  "syndromes": [
+   "syn-lumbosacral-plexopathy"
+  ],
+  "pearls": [
+   "Chronic pain at the edge of a lower abdominal scar is a nerve, not the bowel",
+   "The iliohypogastric and ilioinguinal nerves are blocked together for hernia repair and injured together by it",
+   "A bulging flank with a numb band above the groin is a T12-L1 lesion"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    111,
+    120
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    166
+   ]
+  }
+ ],
+ "tags": [
+  "peripheral nerve",
+  "cutaneous"
+ ],
+ "status": "draft",
+ "subsystem": "lower-limb",
+ "parent": "plexus-lumbosacral",
+ "level": {
+  "region": "peripheral",
+  "sub": "T12-L1"
+ }
+}

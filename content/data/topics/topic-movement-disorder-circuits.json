@@ -1,0 +1,157 @@
+{
+ "kind": "topic",
+ "id": "topic-movement-disorder-circuits",
+ "name": "Movement disorders and the basal ganglia circuits",
+ "synonyms": [],
+ "category": "disease-pattern",
+ "summary": "Movement disorders are disorders of the basal ganglia and cerebellar circuits rather than of the corticospinal tract, so they produce too little movement (parkinsonism) or too much (tremor, chorea, ballism, dystonia, myoclonus, tics) without weakness. The basal ganglia loops from cortex through striatum, pallidum, subthalamic nucleus and substantia nigra to the thalamus and back select and scale movement under dopaminergic control; their pathology maps onto the phenomenology, nigral dopamine loss to parkinsonism, striatal degeneration to chorea, subthalamic damage to ballism, pallidal and striatal dysfunction to dystonia, and the cerebellothalamic outflow to action tremor. This entry ties the phenomenology to the circuits and to the treatments that act on them.",
+ "sections": [
+  {
+   "heading": "The loops and their pharmacology",
+   "body": "The motor loop runs from the sensorimotor cortex to the putamen, where medium spiny neurons of the direct pathway (D1 receptors) inhibit the internal pallidum and substantia nigra pars reticulata to release movement, and neurons of the indirect pathway (D2 receptors) inhibit the external pallidum, disinhibiting the subthalamic nucleus, which excites the output nuclei to suppress competing movements; dopamine from the pars compacta facilitates the direct and inhibits the indirect pathway, so its loss tilts the balance toward inhibition and akinesia, and its excess or receptor supersensitivity toward involuntary movement. Parallel oculomotor, associative and limbic loops explain the saccadic, cognitive and psychiatric features of basal ganglia disease. Acetylcholine from striatal interneurons opposes dopamine (the basis of anticholinergic treatment of tremor), glutamate from the subthalamic nucleus drives the output nuclei (the target of subthalamic stimulation), and GABA is the transmitter of every projection neuron in the loop."
+  },
+  {
+   "heading": "Hypokinetic disorders",
+   "body": "Parkinson disease is asymmetric bradykinesia with rest tremor and rigidity, beginning after alpha-synuclein has spread from the olfactory bulb and the dorsal motor nucleus of the vagus (hyposmia, constipation, REM sleep behavior disorder) to the substantia nigra, and later to the cortex (dementia); levodopa restores striatal dopamine, dopamine agonists act on the receptors, and subthalamic or pallidal stimulation corrects the abnormal output when fluctuations and dyskinesias appear. Atypical parkinsonism is symmetric and levodopa-resistant: progressive supranuclear palsy adds early falls, vertical gaze palsy and midbrain atrophy; multiple system atrophy adds autonomic failure and cerebellar signs with pontine and putaminal change; corticobasal syndrome adds asymmetric apraxia, dystonia and alien limb with parietal atrophy; and dementia with Lewy bodies puts cognition first. Drug-induced parkinsonism from dopamine antagonists, vascular parkinsonism of the legs from small vessel disease, and normal-pressure hydrocephalus are the mimics with a normal dopamine transporter scan."
+  },
+  {
+   "heading": "Hyperkinetic disorders",
+   "body": "Tremor is classified by when it occurs: rest tremor is nigrostriatal (parkinsonism), postural and kinetic tremor of the hands and head is essential tremor arising in the cerebellothalamic circuit and treated with propranolol, primidone or thalamic stimulation, and intention tremor is cerebellar. Chorea is a random flowing movement from striatal indirect-pathway loss (Huntington disease with caudate atrophy, Sydenham chorea, levodopa dyskinesia, tardive dyskinesia); hemiballism is violent proximal flinging from a contralateral subthalamic lesion; dystonia is sustained co-contraction producing twisting postures, generalized in genetic childhood forms (DYT1), focal in adults (cervical dystonia, blepharospasm, writer's cramp) and treated with botulinum toxin or pallidal stimulation; myoclonus is a brief shock-like jerk of cortical, subcortical, brainstem or spinal origin (post-anoxic, metabolic, epileptic, prion); tics are suppressible stereotyped movements and sounds of Tourette syndrome, a disorder of the limbic and motor loops. Wilson disease (copper, Kayser-Fleischer rings, liver disease) can produce any of these in the young and is treatable."
+  },
+  {
+   "heading": "Examination and localization of movement disorders",
+   "body": "Observe at rest, on posture and on action; look for slowness with decrement on finger tapping (bradykinesia), lead-pipe or cogwheel rigidity, and asymmetry (Parkinson disease); test vertical saccades and the pull test (progressive supranuclear palsy); check orthostatic pressure (multiple system atrophy); look at the eyes for Kayser-Fleischer rings and the tongue for chorea; test praxis and cortical sensation (corticobasal syndrome); and ask about drugs, family history and psychiatric symptoms. The site follows the phenomenology: unilateral chorea or ballism is a contralateral striatal or subthalamic lesion; hemidystonia is a contralateral striatal, pallidal or thalamic lesion; unilateral action tremor is an ipsilateral cerebellar or contralateral thalamic-midbrain lesion (Holmes tremor); and bilateral, symmetric disorders are degenerative, metabolic or drug-induced. Imaging shows the caudate atrophy of Huntington disease, the hummingbird midbrain of progressive supranuclear palsy, the hot-cross-bun pons of multiple system atrophy, the eye-of-the-tiger pallidum of iron disease and the symmetric basal ganglia change of Wilson disease."
+  }
+ ],
+ "keyPoints": [
+  "Too little movement is nigral dopamine loss; too much is striatal, subthalamic or pallidal disinhibition; weakness is neither",
+  "Asymmetric onset with rest tremor and a levodopa response is Parkinson disease; symmetric, falls, gaze palsy or autonomic failure means an atypical syndrome",
+  "Hemiballism is a contralateral subthalamic lesion; hemichorea and hemidystonia are contralateral striatal or pallidal lesions",
+  "Essential tremor is a cerebellothalamic disorder and the ventral intermediate thalamus is its surgical target",
+  "Any movement disorder under 40 with liver disease is Wilson disease until the copper is measured"
+ ],
+ "meshIds": [
+  "putamen-l",
+  "putamen-r",
+  "caudate-nucleus-l",
+  "caudate-nucleus-r",
+  "globus-pallidus-internus-l",
+  "globus-pallidus-internus-r",
+  "subthalamic-nucleus-l",
+  "subthalamic-nucleus-r",
+  "substantia-nigra-pars-compacta-l",
+  "substantia-nigra-pars-compacta-r",
+  "thalamus-ventrolateral-l",
+  "thalamus-ventrolateral-r"
+ ],
+ "related": {
+  "structureIds": [
+   "putamen",
+   "caudate-nucleus",
+   "globus-pallidus-internus",
+   "globus-pallidus-externus",
+   "subthalamic-nucleus",
+   "substantia-nigra-pars-compacta",
+   "substantia-nigra-pars-reticulata",
+   "thalamus-ventrolateral",
+   "pedunculopontine-nucleus"
+  ],
+  "pathwayIds": [
+   "pathway-basal-ganglia-loops",
+   "pathway-cerebellar-circuits"
+  ],
+  "syndromeIds": [
+   "syn-parkinsonism",
+   "syn-hemiballismus",
+   "syn-huntington-chorea"
+  ],
+  "topicIds": [
+   "topic-neurotransmitter-systems",
+   "topic-dementia-patterns"
+  ]
+ },
+ "pearls": [
+  "Watch the patient walk into the room: arm swing, stride and turning make the diagnosis before the handshake",
+  "Dopamine blockers cause parkinsonism, akathisia, dystonia and tardive dyskinesia: read the drug list first",
+  "REM sleep behavior disorder, hyposmia and constipation precede the tremor by years"
+ ],
+ "pitfalls": [
+  "Bradykinesia is slowness with decrement, not simple slowness; without decrement, think of depression, hypothyroidism or vascular slowing"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    241,
+    254
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    309,
+    322
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    244,
+    248
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  }
+ ],
+ "tags": [
+  "movement disorders",
+  "basal ganglia",
+  "parkinsonism",
+  "chorea"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Structural MRI is normal in Parkinson disease and essential tremor and is used to find mimics and atypical patterns; dopamine transporter SPECT confirms nigrostriatal loss; SWI and neuromelanin imaging show nigral change; copper studies and slit-lamp examination find Wilson disease.",
+  "pathology": [
+   {
+    "pathology": "Huntington disease",
+    "modality": "MRI",
+    "finding": "Caudate head atrophy with boxcar frontal horns and putaminal atrophy; frontal atrophy later.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Progressive supranuclear palsy",
+    "modality": "MRI",
+    "finding": "Midbrain atrophy with a concave upper border (hummingbird sign on sagittal images, Mickey Mouse on axial) and a low midbrain-to-pons ratio.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Multiple system atrophy",
+    "modality": "MRI",
+    "finding": "Pontine and cerebellar atrophy with the hot-cross-bun sign (MSA-C) or putaminal atrophy with a lateral hyperintense rim (MSA-P).",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Wilson disease",
+    "modality": "MRI",
+    "finding": "Symmetric T2 hyperintensity of the putamen, caudate, thalamus and midbrain (face of the giant panda) with Kayser-Fleischer rings on slit lamp.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Parkinson disease (dopamine transporter imaging)",
+    "modality": "SPECT",
+    "finding": "Asymmetric loss of putaminal uptake (comma to dot) with preserved caudate early; normal in essential tremor and drug-induced parkinsonism.",
+    "sequence": "n/a"
+   }
+  ]
+ }
+}

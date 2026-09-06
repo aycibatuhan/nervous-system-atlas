@@ -1,0 +1,153 @@
+{
+ "kind": "topic",
+ "id": "topic-cns-infections-localization",
+ "name": "CNS infections by compartment",
+ "synonyms": [],
+ "category": "infection",
+ "summary": "Infections of the nervous system are localized by the compartment they occupy: the subarachnoid space and meninges (meningitis), the brain parenchyma (encephalitis and abscess), the epidural and subdural spaces (empyema and spinal epidural abscess), the ventricles (ventriculitis), the cord (myelitis) and the roots and nerves (radiculitis, neuritis). Each compartment has a clinical signature (meningism, altered consciousness with seizures and focal signs, a mass syndrome, back pain with a cord level), a route of entry (blood, contiguous sinus or ear, direct inoculation, retrograde along nerves) and an imaging and CSF pattern, and the pathogen is predicted by age, immune status, exposure and the compartment. Time matters most in bacterial meningitis and herpes encephalitis, where treatment precedes the confirmation.",
+ "sections": [
+  {
+   "heading": "Meningitis: the subarachnoid compartment",
+   "body": "Bacterial meningitis (pneumococcus, meningococcus, Listeria in the elderly and immunosuppressed, group B streptococcus and E. coli in neonates) produces fever, headache, neck stiffness, photophobia and declining consciousness within hours, with a purulent CSF (neutrophils, low glucose, high protein) and complications from the inflamed basal cisterns: cranial nerve palsies, hydrocephalus, vasculitic infarcts and cerebral edema; antibiotics and dexamethasone are given before the lumbar puncture when the puncture will be delayed, and a CT precedes the puncture when there is a focal deficit, papilledema, seizures or coma. Viral meningitis (enteroviruses, herpes simplex type 2, mumps) is self-limited with a lymphocytic CSF and normal glucose. Tuberculous and fungal (cryptococcal) meningitis are subacute basal meningitides with lymphocytes, low glucose and high protein, cranial nerve palsies, hydrocephalus and infarcts, and neoplastic meningitis mimics them. Rash and shock point to meningococcus; a recent sinus or ear infection points to pneumococcus and to a contiguous abscess."
+  },
+  {
+   "heading": "Encephalitis and abscess: the parenchymal compartment",
+   "body": "Herpes simplex encephalitis attacks the medial temporal lobes, the insula and the orbitofrontal cortex, usually asymmetrically, producing fever, confusion, aphasia, seizures and memory loss, with a lymphocytic CSF, a positive PCR, temporal FLAIR change and periodic lateralized discharges on EEG; acyclovir is started at suspicion. Arboviral and enteroviral encephalitides involve the thalamus, basal ganglia and brainstem (Japanese and West Nile), rabies ascends the nerves to the brainstem and limbic system, and autoimmune encephalitis mimics all of these. A brain abscess follows contiguous spread from the sinuses (frontal lobe), the ear (temporal lobe and cerebellum) or hematogenous seeding (gray-white junction, multiple), producing a mass syndrome with headache, focal signs and seizures, often without fever; it enhances in a ring with central restricted diffusion and needs drainage and antibiotics. Toxoplasmosis (multiple ring lesions in the basal ganglia), progressive multifocal leukoencephalopathy (non-enhancing white-matter lesions) and cryptococcoma are the lesions of the immunosuppressed, and neurocysticercosis is the commonest cause of seizures worldwide."
+  },
+  {
+   "heading": "Empyema, spinal infections and the roots",
+   "body": "Subdural empyema, usually from frontal sinusitis, is a surgical emergency with headache, fever, seizures and rapid deterioration and a thin enhancing collection over the convexity or along the falx; epidural abscess is slower. Spinal epidural abscess (staphylococcus from bacteremia, injection or surgery) produces back pain, fever, a radicular then a cord syndrome, and an enhancing epidural collection on MRI that compresses the cord and must be decompressed before paralysis; vertebral osteomyelitis and discitis accompany it. Infectious myelitis (enteroviruses, herpes viruses, HIV, syphilis, tuberculosis) produces a cord syndrome with CSF pleocytosis; poliomyelitis and its modern mimics attack the anterior horn with flaccid asymmetric paralysis. Radiculitis and neuritis follow herpes zoster (dermatomal pain and vesicles, with facial palsy in Ramsay Hunt), Lyme disease (facial palsy, painful radiculitis, meningitis), leprosy (thickened nerves with anesthetic patches), HIV and cytomegalovirus."
+  },
+  {
+   "heading": "Chronic and treatable mimics",
+   "body": "Neurosyphilis (meningovascular stroke in the young, tabes dorsalis with lightning pains and Argyll Robertson pupils, general paresis with dementia) and tuberculosis are the great imitators and are treatable; HIV produces a meningitis at seroconversion, a subcortical dementia, a vacuolar myelopathy, neuropathies and the opportunistic infections; prion disease is a transmissible but not infectious mimic of rapid dementia; and Whipple disease, Lyme neuroborreliosis and fungal infections present as chronic meningitis or encephalopathy. Every chronic meningitis therefore has a CSF sent for mycobacterial culture, cryptococcal antigen, syphilis serology and cytology, and every unexplained encephalopathy has an HIV test. The compartmental logic, meninges versus parenchyma versus epidural space versus roots, remains the fastest route to the right test and the right drug."
+  }
+ ],
+ "keyPoints": [
+  "Meningism means the subarachnoid space; confusion with seizures and focal signs means the parenchyma; back pain with a cord level means the epidural space",
+  "Neutrophils and low glucose is bacterial; lymphocytes with low glucose is tuberculosis, fungus or cancer; lymphocytes with normal glucose is viral",
+  "Herpes encephalitis lives in the medial temporal lobe and the insula and spares the putamen; start acyclovir before the PCR returns",
+  "An abscess enhances in a ring with restricted diffusion in the center and is drained, not biopsied",
+  "Spinal epidural abscess is back pain, fever and a rising deficit: MRI and surgery the same day"
+ ],
+ "meshIds": [
+  "hippocampus-l",
+  "hippocampus-r",
+  "insula-l",
+  "insula-r",
+  "spinal-dura",
+  "cn-07-facial-l",
+  "cn-07-facial-r"
+ ],
+ "related": {
+  "structureIds": [
+   "subarachnoid-space-cisterns",
+   "hippocampus",
+   "insula",
+   "temporal-pole",
+   "spinal-dura",
+   "meningeal-spaces",
+   "dorsal-root-ganglion"
+  ],
+  "pathwayIds": [],
+  "syndromeIds": [
+   "syn-hydrocephalus",
+   "syn-ramsay-hunt",
+   "syn-facial-palsy-peripheral-vs-central",
+   "syn-poliomyelitis",
+   "syn-transverse-myelitis",
+   "syn-argyll-robertson"
+  ],
+  "topicIds": [
+   "topic-csf-physiology-blood-brain-barrier",
+   "topic-neuroimaging-basics",
+   "topic-brain-tumor-localization"
+  ]
+ },
+ "pearls": [
+  "Give the antibiotic before the scan when meningitis is likely and the scan will take an hour",
+  "A ring lesion in an immunosuppressed patient is toxoplasmosis, lymphoma or abscess; the diffusion and the response to treatment separate them",
+  "Facial palsy with a rash in the ear or a summer tick bite is not Bell palsy"
+ ],
+ "pitfalls": [
+  "A normal CSF glucose does not exclude bacterial meningitis early or after antibiotics; treat the picture",
+  "Temporal lobe signal change with fever is herpes until the PCR says otherwise; autoimmune encephalitis is the next thought"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    207,
+    222
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 2,
+   "pages": [
+    20,
+    24
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    417,
+    435
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    456,
+    462
+   ]
+  }
+ ],
+ "tags": [
+  "infection",
+  "meningitis",
+  "encephalitis",
+  "abscess"
+ ],
+ "status": "draft",
+ "imaging": {
+  "normalAppearance": "Contrast MRI is the study for every compartment: leptomeningeal enhancement and cisternal exudate in meningitis, temporal and insular FLAIR change in herpes, ring enhancement with restricted diffusion in abscess, extra-axial enhancing collections in empyema, and epidural enhancing collections with cord compression in the spine; CT precedes lumbar puncture when mass effect is possible.",
+  "pathology": [
+   {
+    "pathology": "Bacterial meningitis",
+    "modality": "MRI",
+    "finding": "Leptomeningeal enhancement over the convexity and in the basal cisterns with FLAIR-bright sulcal exudate; hydrocephalus and infarcts in complicated cases.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Herpes simplex encephalitis",
+    "modality": "MRI",
+    "finding": "Asymmetric medial temporal, insular and orbitofrontal FLAIR hyperintensity with cortical restricted diffusion and petechial hemorrhage; the putamen is spared.",
+    "sequence": "FLAIR",
+    "timing": "Changes are present within 48 hours; CT is often normal"
+   },
+   {
+    "pathology": "Brain abscess",
+    "modality": "MRI",
+    "finding": "Ring-enhancing lesion with a thin, smooth capsule and central restricted diffusion; satellite lesions and surrounding edema.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Tuberculous meningitis",
+    "modality": "MRI",
+    "finding": "Thick basal cisternal enhancement, hydrocephalus, infarcts of the perforator territories and tuberculomas.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Spinal epidural abscess",
+    "modality": "MRI",
+    "finding": "Enhancing epidural collection with cord compression, adjacent discitis and vertebral marrow edema on STIR.",
+    "sequence": "T1+Gd"
+   }
+  ]
+ }
+}
