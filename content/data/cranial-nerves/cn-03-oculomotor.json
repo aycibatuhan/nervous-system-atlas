@@ -1,0 +1,302 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-03-oculomotor",
+ "name": "Oculomotor nerve (CN III)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [
+  "cn-03-oculomotor-l",
+  "cn-03-oculomotor-r",
+  "oculomotor-nerve-orbital-l",
+  "oculomotor-nerve-orbital-r"
+ ],
+ "summary": "The oculomotor nerve carries motor fibers from the oculomotor nucleus to four of the six extraocular muscles (medial, superior and inferior recti, inferior oblique) and the levator palpebrae, and parasympathetic fibers from the Edinger–Westphal nucleus to the ciliary ganglion for the pupil and lens. It leaves the midbrain into the interpeduncular fossa between the posterior cerebral and superior cerebellar arteries, runs beside the posterior communicating artery and the uncus, enters the lateral wall of the cavernous sinus and passes through the superior orbital fissure. Because the pupillary fibers lie on its surface, compression (aneurysm, herniation) involves the pupil early while microvascular ischemia of the core spares it, the single most important distinction in third nerve palsies.",
+ "anatomy": {
+  "location": "Nucleus in the periaqueductal gray at the superior colliculus → fascicles through the red nucleus and medial crus → interpeduncular cistern lateral to the PComm and medial to the uncus → roof then lateral wall of the cavernous sinus (uppermost nerve) → superior orbital fissure within the annulus of Zinn, dividing into superior (levator, superior rectus) and inferior (medial and inferior recti, inferior oblique, parasympathetic root to the ciliary ganglion) divisions.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-pupillary-light-reflex",
+   "pathway-horizontal-gaze",
+   "pathway-vertical-gaze"
+  ]
+ },
+ "function": "Elevation, depression and adduction of the eye, elevation of the upper lid, pupillary constriction and accommodation.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-basilar",
+   "artery-internal-carotid"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -14,
+     "z": -12
+    },
+    "label": "nerves emerging in the interpeduncular fossa between PCA and SCA"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 14,
+     "y": 5,
+     "z": -18
+    },
+    "label": "third nerve in the roof and lateral wall of the cavernous sinus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -24,
+     "z": -6
+    },
+    "label": "oculomotor nuclear complex in the ventral periaqueductal gray"
+   }
+  ],
+  "normalAppearance": "The cisternal nerve is a fine line on thin T2 (CISS) between the PCA above and the SCA below, passing close to the PComm; enhancement of the nerve is abnormal (inflammation, lymphoma, sarcoid). CTA is mandatory when the pupil is involved. The HCP1065 mesh in this atlas shows the cisternal course.",
+  "pathology": [
+   {
+    "pathology": "Posterior communicating artery aneurysm",
+    "modality": "CTA",
+    "finding": "Saccular aneurysm at the ICA–PComm junction compressing the nerve; subarachnoid blood if ruptured.",
+    "sequence": "CT contrast"
+   },
+   {
+    "pathology": "Microvascular (diabetic) third nerve palsy",
+    "modality": "MRI",
+    "finding": "Normal imaging; pupil-sparing palsy in a patient with vascular risk factors that recovers in weeks to months.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Uncal herniation",
+    "modality": "CT",
+    "finding": "Medial temporal lobe through the tentorial notch compressing the nerve.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Midbrain infarct (Weber, Claude, Benedikt)",
+    "modality": "MRI",
+    "finding": "Paramedian midbrain restriction involving the fascicles.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Cavernous sinus lesion",
+    "modality": "MRI",
+    "finding": "Mass or thrombosis involving III with IV, V1, V2 and VI.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "CTA or MRA immediately for pupil-involving palsies; MRI with contrast for nuclear, fascicular and cavernous lesions"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ptosis, eye down and out, diplopia",
+    "side": "ipsilateral",
+    "mechanism": "Loss of levator and of all recti except lateral; unopposed lateral rectus and superior oblique"
+   },
+   {
+    "deficit": "Dilated, unreactive pupil with loss of accommodation",
+    "side": "ipsilateral",
+    "mechanism": "Parasympathetic fibers on the nerve surface (compressive lesions)"
+   },
+   {
+    "deficit": "Pupil-sparing complete palsy",
+    "side": "ipsilateral",
+    "mechanism": "Ischemia of the nerve core (diabetes, hypertension)"
+   },
+   {
+    "deficit": "Bilateral ptosis and contralateral superior rectus weakness",
+    "side": "n/a",
+    "mechanism": "Nuclear lesion"
+   },
+   {
+    "deficit": "Aberrant regeneration: lid elevation on down-gaze, pupil constriction on adduction",
+    "side": "ipsilateral",
+    "mechanism": "Misdirected regrowth after compressive injury, never after ischemia"
+   }
+  ],
+  "examination": [
+   "Lid position and levator function",
+   "Ductions in all directions; note the resting position",
+   "Pupil size and reaction to light and near",
+   "Ask about pain (aneurysm and ischemia both hurt; pain does not discriminate)",
+   "Examine IV, V1, V2 and VI for cavernous sinus involvement and the contralateral limbs for midbrain signs"
+  ],
+  "syndromes": [
+   "syn-cn3-palsy",
+   "syn-weber",
+   "syn-claude",
+   "syn-benedikt",
+   "syn-uncal-herniation",
+   "syn-cavernous-sinus",
+   "syn-ino"
+  ],
+  "pearls": [
+   "A complete third nerve palsy with a normal pupil in a diabetic is ischemic; any pupil involvement or partial palsy needs urgent vascular imaging",
+   "A dilated pupil alone without ptosis or ophthalmoplegia is almost never a third nerve palsy: think Adie, pharmacological or trauma to the iris"
+  ]
+ },
+ "pitfalls": [
+  "Myasthenia gravis mimics a pupil-sparing third nerve palsy with fatigable ptosis; the pupil is always normal in myasthenia"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    329,
+    332
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    350,
+    351
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    83,
+    90
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    91,
+    96
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus oculomotorius",
+ "cranial": {
+  "number": 3,
+  "roman": "III",
+  "components": [
+   "GSE",
+   "GVE"
+  ],
+  "nuclei": [
+   {
+    "structureId": "oculomotor-nucleus",
+    "component": "GSE to extraocular muscles and levator; GVE (Edinger–Westphal) to the ciliary ganglion",
+    "level": "midbrain-superior-colliculus"
+   }
+  ],
+  "ganglia": [
+   {
+    "name": "Ciliary ganglion",
+    "type": "parasympathetic",
+    "structureId": "ganglion-ciliary"
+   }
+  ],
+  "exit": {
+   "brainstemExit": "Medial surface of the cerebral peduncle in the interpeduncular fossa",
+   "cisternalCourse": "Between the PCA and SCA, lateral to the PComm, medial to the uncus and the tentorial edge, to the roof of the cavernous sinus",
+   "foramen": "Superior orbital fissure (within the annulus of Zinn)",
+   "extracranialCourse": "Superior division to levator and superior rectus; inferior division to medial and inferior recti, inferior oblique and the ciliary ganglion"
+  },
+  "branches": [
+   {
+    "name": "Superior division",
+    "supplies": "levator palpebrae superioris, superior rectus"
+   },
+   {
+    "name": "Inferior division",
+    "supplies": "medial rectus, inferior rectus, inferior oblique; parasympathetic root to the ciliary ganglion"
+   }
+  ],
+  "reflexes": [
+   {
+    "name": "Pupillary light reflex (efferent)",
+    "afferent": "optic nerve",
+    "center": "pretectum → Edinger–Westphal",
+    "efferent": "oculomotor nerve → ciliary ganglion → sphincter pupillae"
+   },
+   {
+    "name": "Accommodation",
+    "afferent": "visual pathway",
+    "center": "cortex → Edinger–Westphal and medial rectus subnuclei",
+    "efferent": "oculomotor nerve to ciliary muscle, sphincter and medial recti"
+   }
+  ],
+  "tests": [
+   {
+    "name": "Ductions and versions",
+    "how": "Follow a target in an H pattern; ask about diplopia in each direction",
+    "normal": "Full movements without diplopia",
+    "abnormal": "Limited elevation, depression and adduction; eye rests down and out"
+   },
+   {
+    "name": "Lid",
+    "how": "Measure palpebral fissure and levator excursion",
+    "normal": "Symmetric lids",
+    "abnormal": "Ptosis, complete in severe palsies"
+   },
+   {
+    "name": "Pupil",
+    "how": "Compare size in light and dark; test light and near reactions",
+    "normal": "Equal reactive pupils",
+    "abnormal": "Dilated, poorly reactive pupil on the affected side"
+   },
+   {
+    "name": "Cover test",
+    "how": "Cover-uncover in primary and other positions",
+    "normal": "No deviation",
+    "abnormal": "Exotropia and hypotropia"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Pupil-involving palsy",
+    "localisingValue": "compression: PComm aneurysm, uncal herniation, tumor; imaging today"
+   },
+   {
+    "sign": "Pupil-sparing complete palsy",
+    "localisingValue": "microvascular ischemia; observe with follow-up"
+   },
+   {
+    "sign": "Bilateral ptosis with unilateral palsy",
+    "localisingValue": "nucleus"
+   },
+   {
+    "sign": "Palsy with contralateral hemiparesis, ataxia or tremor",
+    "localisingValue": "midbrain fascicles (Weber, Claude, Benedikt)"
+   },
+   {
+    "sign": "Palsy with IV, VI and V1 signs",
+    "localisingValue": "cavernous sinus or superior orbital fissure"
+   },
+   {
+    "sign": "Divisional palsy (superior or inferior only)",
+    "localisingValue": "orbital apex or fissure (though nuclear and fascicular lesions can mimic)"
+   }
+  ],
+  "nuclearVsPeripheral": "Nuclear lesions differ from nerve lesions in two ways set by the wiring of the complex: the levator is supplied by a single midline caudal nucleus, so nuclear lesions cause bilateral ptosis, and each superior rectus subnucleus supplies the opposite eye, so a nuclear lesion weakens elevation of the contralateral eye. Fascicular lesions in the midbrain add contralateral signs from the red nucleus, superior cerebellar peduncle or crus.",
+  "supranuclear": "Conjugate gaze commands reach the nucleus through the MLF (horizontal, from the contralateral abducens nucleus) and the riMLF and posterior commissure (vertical). A supranuclear gaze palsy spares the vestibulo-ocular reflex and never causes ptosis, pupil change or diplopia, which separates it from a nuclear or nerve lesion."
+ }
+}

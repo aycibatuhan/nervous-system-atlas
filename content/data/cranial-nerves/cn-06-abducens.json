@@ -1,0 +1,262 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-06-abducens",
+ "name": "Abducens nerve (CN VI)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "A purely motor nerve from the abducens nucleus in the caudal pons to the lateral rectus. It leaves the pontomedullary junction, climbs the clivus in the prepontine cistern, pierces the dura and bends sharply over the petrous apex through Dorello's canal under the petroclinoid ligament, runs inside the cavernous sinus beside the carotid artery and enters the orbit through the superior orbital fissure within the annulus. Its long intracranial course, its tethering at the petrous apex and its position next to the carotid make it the nerve most often affected by raised intracranial pressure (a false localizing sign), by skull base disease and by cavernous sinus lesions; the result is horizontal diplopia worse at distance and on gaze to the affected side.",
+ "anatomy": {
+  "location": "Nucleus under the facial colliculus in the caudal pons → fascicle through the pontine tegmentum and basis pontis → exit in the pontomedullary sulcus → ascends on the clivus in the prepontine cistern → Dorello's canal at the petrous apex → within the cavernous sinus lateral to the internal carotid → superior orbital fissure inside the annulus of Zinn → lateral rectus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-horizontal-gaze"
+  ]
+ },
+ "function": "Abduction of the eye; through the nucleus, conjugate horizontal gaze.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-basilar",
+   "artery-internal-carotid"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -34,
+     "z": -36
+    },
+    "label": "abducens nucleus at the facial colliculus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 3,
+     "y": -30,
+     "z": -35
+    },
+    "label": "nerve leaving the pontomedullary junction and climbing the clivus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 14,
+     "y": 5,
+     "z": -20
+    },
+    "label": "abducens nerve inside the cavernous sinus lateral to the carotid"
+   }
+  ],
+  "normalAppearance": "Seen on thin axial or sagittal T2 (CISS) as a thread leaving the pontomedullary junction and running up the clivus; Dorello's canal and the cavernous segment are seen on contrast T1. Imaging is often normal in microvascular palsies; look for raised pressure signs, clival and petrous apex lesions and cavernous sinus disease.",
+  "pathology": [
+   {
+    "pathology": "Raised intracranial pressure (false localizing palsy)",
+    "modality": "MRI",
+    "finding": "Signs of intracranial hypertension (distended nerve sheaths, empty sella, flattened globes, transverse sinus stenosis) with a normal nerve.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Clival chordoma or petrous apex lesion",
+    "modality": "MRI",
+    "finding": "Destructive midline clival mass (chordoma) or petrous apicitis involving Dorello's canal.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Pontine infarct or demyelination",
+    "modality": "MRI",
+    "finding": "Paramedian caudal pontine lesion at the nucleus or fascicle, with gaze palsy or facial palsy.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Cavernous sinus lesion",
+    "modality": "MRI",
+    "finding": "Mass or thrombosis with a sixth nerve palsy plus Horner syndrome or other cavernous nerves.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Microvascular sixth nerve palsy",
+    "modality": "MRI",
+    "finding": "Normal imaging in a patient with diabetes or hypertension; recovers in 2–3 months.",
+    "sequence": "n/a"
+   }
+  ],
+  "sequenceOfChoice": "MRI with thin brainstem/skull base sequences and contrast; fundoscopy for papilledema; CT for the skull base"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Horizontal diplopia worse at distance and on looking toward the affected side, esotropia",
+    "side": "ipsilateral",
+    "mechanism": "Lateral rectus weakness"
+   },
+   {
+    "deficit": "Conjugate gaze palsy toward the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Nucleus (motor and internuclear neurons)"
+   },
+   {
+    "deficit": "Bilateral sixth nerve palsies with headache and papilledema",
+    "side": "bilateral",
+    "mechanism": "Raised intracranial pressure stretching the nerves over the petrous apex"
+   },
+   {
+    "deficit": "Sixth nerve palsy with Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Cavernous sinus: sympathetic fibers join the nerve briefly"
+   },
+   {
+    "deficit": "Sixth nerve palsy with deafness and facial pain",
+    "side": "ipsilateral",
+    "mechanism": "Petrous apex (Gradenigo syndrome)"
+   }
+  ],
+  "examination": [
+   "Abduction of each eye; note nystagmus and incomplete abduction",
+   "Cover test for esotropia greater at distance",
+   "Ask about diplopia direction: horizontal, worse for far objects and to the side of the lesion",
+   "Fundoscopy for papilledema",
+   "Check VII (nuclear), V and the pupil/Horner (cavernous), hearing (petrous apex)"
+  ],
+  "syndromes": [
+   "syn-cn6-palsy",
+   "syn-horizontal-gaze-palsy-pontine",
+   "syn-millard-gubler",
+   "syn-foville",
+   "syn-cavernous-sinus",
+   "syn-idiopathic-intracranial-hypertension"
+  ],
+  "pearls": [
+   "A sixth nerve palsy tells you little about where; look for the company it keeps and for papilledema",
+   "In children an isolated sixth nerve palsy is a tumor (pontine glioma) until proven otherwise; in a diabetic adult it is usually microvascular"
+  ]
+ },
+ "pitfalls": [
+  "Myasthenia, thyroid eye disease and a medial orbital wall fracture with entrapment all mimic a sixth nerve palsy"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    335,
+    337
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    351,
+    351
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    358,
+    358
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    91,
+    98
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus abducens",
+ "cranial": {
+  "number": 6,
+  "roman": "VI",
+  "components": [
+   "GSE"
+  ],
+  "nuclei": [
+   {
+    "structureId": "abducens-nucleus",
+    "component": "GSE to the lateral rectus; internuclear neurons to the contralateral medial rectus",
+    "level": "pons-caudal"
+   }
+  ],
+  "ganglia": [],
+  "exit": {
+   "brainstemExit": "Pontomedullary sulcus, medial, above the pyramid",
+   "cisternalCourse": "Prepontine cistern along the clivus between the pons and the basilar artery, then through the dura and Dorello's canal beneath the petroclinoid (Gruber's) ligament at the petrous apex",
+   "foramen": "Superior orbital fissure (within the annulus of Zinn), after passing through the cavernous sinus lateral to the carotid",
+   "extracranialCourse": "To the medial surface of the lateral rectus"
+  },
+  "branches": [
+   {
+    "name": "Muscular branch",
+    "supplies": "lateral rectus"
+   }
+  ],
+  "reflexes": [],
+  "tests": [
+   {
+    "name": "Abduction",
+    "how": "Follow a target laterally with each eye",
+    "normal": "Full abduction, lateral limbus reaches the canthus",
+    "abnormal": "Incomplete abduction with diplopia; esotropia in primary position"
+   },
+   {
+    "name": "Distance versus near diplopia",
+    "how": "Ask which is worse",
+    "normal": "n/a",
+    "abnormal": "Worse at distance and on lateral gaze (sixth nerve); near diplopia suggests convergence or medial rectus problems"
+   },
+   {
+    "name": "Oculocephalic test",
+    "how": "Turn the head while the patient fixates",
+    "normal": "Eyes move fully",
+    "abnormal": "Nuclear lesions: gaze palsy not overcome; PPRF lesions: overcome"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Isolated palsy with vascular risk factors",
+    "localisingValue": "microvascular; observe 3 months"
+   },
+   {
+    "sign": "Bilateral palsies with papilledema",
+    "localisingValue": "raised intracranial pressure (false localizing)"
+   },
+   {
+    "sign": "Palsy with ipsilateral facial palsy and contralateral hemiparesis",
+    "localisingValue": "caudal pons (Millard–Gubler / Foville)"
+   },
+   {
+    "sign": "Gaze palsy rather than isolated abduction weakness",
+    "localisingValue": "abducens nucleus or PPRF"
+   },
+   {
+    "sign": "Palsy with Horner syndrome or other cavernous nerves",
+    "localisingValue": "cavernous sinus"
+   },
+   {
+    "sign": "Palsy with deafness and facial pain",
+    "localisingValue": "petrous apex (Gradenigo)"
+   }
+  ],
+  "nuclearVsPeripheral": "The nucleus contains both lateral rectus motor neurons and the interneurons that drive the opposite medial rectus, so a nuclear lesion causes a conjugate gaze palsy to the same side, usually with an ipsilateral facial palsy from the overlying facial genu; a peripheral lesion causes an isolated abduction deficit.",
+  "supranuclear": "Horizontal saccade commands from the contralateral frontal eye field reach the nucleus via the PPRF; a PPRF lesion abolishes ipsilateral saccades but the vestibulo-ocular reflex still drives the eyes, unlike a nuclear lesion."
+ }
+}

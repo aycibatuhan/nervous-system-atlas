@@ -1,0 +1,319 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-10-vagus",
+ "name": "Vagus nerve (CN X)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "The wanderer: the longest cranial nerve, leaving the medulla behind the olive, passing through the jugular foramen and descending in the carotid sheath through the neck into the thorax and abdomen. It carries motor fibers from nucleus ambiguus to the palate, pharynx and larynx (including the recurrent laryngeal nerve to all intrinsic laryngeal muscles except cricothyroid), parasympathetic fibers from the dorsal motor nucleus to the heart, lungs and gut as far as the splenic flexure, visceral afferents from the same organs to the solitary nucleus, taste from the epiglottis, and a little skin sensation from the ear. Its lesions cause dysphagia, nasal speech, hoarseness and loss of the gag and cough reflexes; the palate rises to the intact side and the vocal cord lies paralyzed.",
+ "anatomy": {
+  "location": "Rootlets from the posterolateral sulcus of the medulla below IX → cerebellomedullary cistern → jugular foramen (pars vascularis, with XI) → superior and inferior ganglia → carotid sheath between the internal jugular vein and the carotid artery → thoracic inlet (the right recurrent laryngeal nerve loops under the subclavian artery, the left under the aortic arch) → esophageal plexus → anterior and posterior vagal trunks through the esophageal hiatus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-gustatory"
+  ]
+ },
+ "function": "Swallowing, phonation and palatal elevation; cough and gag reflexes; cardiac slowing, bronchoconstriction, gastric secretion and gut motility; visceral sensation from the thorax and abdomen including the baroreceptor input of the aortic arch; taste from the epiglottis.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-vertebral",
+   "ascending pharyngeal artery"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 12,
+     "y": -44,
+     "z": -46
+    },
+    "label": "nucleus ambiguus and dorsal vagal nucleus in the medulla; rootlets behind the olive"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 22,
+     "y": -40,
+     "z": -48
+    },
+    "label": "jugular foramen, pars vascularis with X and XI"
+   }
+  ],
+  "normalAppearance": "The intracranial course is imaged with IX at the medulla and jugular foramen; the cervical vagus lies in the carotid sheath on neck CT/MRI. A unilateral vocal cord palsy on CT (dilated piriform sinus, medialized cord) prompts imaging from the skull base to the aortic arch on the left and to the subclavian artery on the right to cover the recurrent laryngeal nerve.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary infarct",
+    "modality": "MRI",
+    "finding": "Dorsolateral medullary restriction involving nucleus ambiguus: dysphagia and hoarseness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Jugular foramen tumor",
+    "modality": "MRI",
+    "finding": "Glomus, schwannoma or meningioma with IX, X, XI palsies.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Recurrent laryngeal nerve palsy",
+    "modality": "CT",
+    "finding": "Left vocal cord palsy from a lung apex, mediastinal or aortic lesion; right from thyroid or subclavian disease.",
+    "sequence": "CT contrast"
+   },
+   {
+    "pathology": "Vagal schwannoma of the neck",
+    "modality": "MRI",
+    "finding": "Fusiform enhancing mass in the carotid sheath displacing the carotid and jugular apart.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Skull base to aortic arch CT with contrast for vocal cord palsy; MRI of the medulla and jugular foramen; laryngoscopy"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Nasal regurgitation, nasal speech, palate droops on the affected side and deviates to the healthy side on phonation",
+    "side": "ipsilateral",
+    "mechanism": "Pharyngeal branches to the levator veli palatini"
+   },
+   {
+    "deficit": "Hoarse, breathy voice with a weak (bovine) cough",
+    "side": "ipsilateral",
+    "mechanism": "Recurrent laryngeal nerve: vocal cord paralysis"
+   },
+   {
+    "deficit": "Dysphagia with aspiration",
+    "side": "ipsilateral",
+    "mechanism": "Pharyngeal constrictors and laryngeal closure"
+   },
+   {
+    "deficit": "Loss of the gag reflex (efferent) and cough reflex",
+    "side": "ipsilateral",
+    "mechanism": "Motor limb"
+   },
+   {
+    "deficit": "Tachycardia and gastroparesis",
+    "side": "n/a",
+    "mechanism": "Parasympathetic fibers (bilateral lesions, vagotomy, diabetes)"
+   },
+   {
+    "deficit": "Stridor",
+    "side": "bilateral",
+    "mechanism": "Bilateral recurrent laryngeal palsy: cords in the paramedian position"
+   }
+  ],
+  "examination": [
+   "Say 'ah': watch palatal elevation and uvular deviation (toward the intact side)",
+   "Listen to the voice and ask for a cough",
+   "Gag reflex efferent response",
+   "Water swallow test",
+   "Laryngoscopy for cord position"
+  ],
+  "syndromes": [
+   "syn-vagal-palsy",
+   "syn-jugular-foramen-vernet",
+   "syn-wallenberg-lateral-medullary",
+   "syn-bulbar-vs-pseudobulbar"
+  ],
+  "pearls": [
+   "Uvula deviates away from the vagal lesion; tongue deviates toward the hypoglossal lesion",
+   "Hoarseness with a normal palate means the recurrent laryngeal nerve, a lesion below the skull base: image the neck and chest"
+  ]
+ },
+ "pitfalls": [
+  "Aspiration is silent in many vagal lesions: assess swallowing formally before oral feeding"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    343,
+    345
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    353,
+    353
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    387,
+    395
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    125,
+    126
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus vagus",
+ "cranial": {
+  "number": 10,
+  "roman": "X",
+  "components": [
+   "SVE",
+   "GVE",
+   "GVA",
+   "SVA",
+   "GSA"
+  ],
+  "nuclei": [
+   {
+    "structureId": "nucleus-ambiguus",
+    "component": "SVE: palate, pharynx, larynx, upper esophagus; also cardioinhibitory parasympathetic neurons",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "dorsal-motor-nucleus-vagus",
+    "component": "GVE: thoracic and abdominal viscera",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "nucleus-solitarius",
+    "component": "GVA and SVA: visceral afferents and epiglottic taste",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "spinal-trigeminal-nucleus-tract",
+    "component": "GSA: ear and dura",
+    "level": "medulla-olive"
+   }
+  ],
+  "ganglia": [
+   {
+    "name": "Superior (jugular) and inferior (nodose) ganglia",
+    "type": "sensory"
+   },
+   {
+    "name": "Intramural and plexus ganglia of the viscera",
+    "type": "parasympathetic"
+   }
+  ],
+  "exit": {
+   "brainstemExit": "Posterolateral sulcus of the medulla behind the olive, below the IX rootlets and above the cranial root of XI",
+   "cisternalCourse": "Cerebellomedullary cistern with IX and XI toward the jugular foramen",
+   "foramen": "Jugular foramen (pars vascularis, with XI and the jugular bulb)",
+   "extracranialCourse": "Down the neck in the carotid sheath behind the internal jugular vein and carotid arteries; through the thoracic inlet, past the lung roots and along the esophagus into the abdomen"
+  },
+  "branches": [
+   {
+    "name": "Auricular branch (Arnold's nerve)",
+    "supplies": "skin of the external auditory meatus and concha; cough on ear examination"
+   },
+   {
+    "name": "Pharyngeal branches",
+    "supplies": "pharyngeal plexus: all muscles of the pharynx and palate except stylopharyngeus and tensor veli palatini"
+   },
+   {
+    "name": "Superior laryngeal nerve",
+    "supplies": "internal branch: laryngeal sensation above the cords; external branch: cricothyroid"
+   },
+   {
+    "name": "Recurrent laryngeal nerve",
+    "supplies": "all intrinsic laryngeal muscles except cricothyroid; sensation below the cords; loops under the right subclavian artery or the aortic arch"
+   },
+   {
+    "name": "Cardiac, pulmonary and esophageal branches",
+    "supplies": "parasympathetic and afferent supply"
+   },
+   {
+    "name": "Anterior and posterior vagal trunks",
+    "supplies": "stomach, liver, gut to the splenic flexure (celiac branches)"
+   }
+  ],
+  "reflexes": [
+   {
+    "name": "Gag reflex (efferent)",
+    "afferent": "IX",
+    "center": "nucleus ambiguus",
+    "efferent": "X to the palate and pharynx"
+   },
+   {
+    "name": "Cough reflex",
+    "afferent": "X (superior and recurrent laryngeal nerves, bronchial afferents)",
+    "center": "medullary respiratory centers",
+    "efferent": "X to the larynx, phrenic and intercostal nerves"
+   },
+   {
+    "name": "Baroreceptor reflex",
+    "afferent": "IX (carotid sinus) and X (aortic arch)",
+    "center": "solitary nucleus → ambiguus and dorsal vagal nucleus",
+    "efferent": "X to the sinoatrial node"
+   }
+  ],
+  "tests": [
+   {
+    "name": "Palatal movement",
+    "how": "Observe the palate at rest and on saying 'ah'",
+    "normal": "Symmetric elevation, midline uvula",
+    "abnormal": "Droop on the affected side, uvula pulled to the intact side"
+   },
+   {
+    "name": "Voice and cough",
+    "how": "Listen to a sustained vowel and a voluntary cough",
+    "normal": "Clear voice, explosive cough",
+    "abnormal": "Breathy hoarseness and a bovine cough"
+   },
+   {
+    "name": "Swallow",
+    "how": "Observe swallowing water; check for cough or wet voice",
+    "normal": "Normal",
+    "abnormal": "Coughing, wet voice, nasal regurgitation"
+   },
+   {
+    "name": "Gag",
+    "how": "Stroke the posterior pharynx",
+    "normal": "Symmetric constriction",
+    "abnormal": "Absent or asymmetric elevation (efferent side)"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Palatal, pharyngeal and laryngeal weakness together",
+    "localisingValue": "proximal vagus (medulla, jugular foramen, upper neck)"
+   },
+   {
+    "sign": "Hoarseness alone with a normal palate",
+    "localisingValue": "recurrent laryngeal nerve (neck, thorax)"
+   },
+   {
+    "sign": "With IX and XI",
+    "localisingValue": "jugular foramen"
+   },
+   {
+    "sign": "With crossed sensory loss and Horner",
+    "localisingValue": "lateral medulla"
+   },
+   {
+    "sign": "Bilateral with brisk jaw jerk and emotional lability",
+    "localisingValue": "pseudobulbar (bilateral corticobulbar)"
+   }
+  ],
+  "nuclearVsPeripheral": "Nuclear (medullary) lesions involve nucleus ambiguus with its neighbors and give the lateral medullary syndrome; peripheral lesions give an isolated vagal palsy or a jugular foramen syndrome. Laryngeal weakness with a normal palate is always distal.",
+  "supranuclear": "Bilateral corticobulbar input means unilateral hemispheric strokes rarely cause dysphagia, but bilateral lesions (multiple lacunes, motor neuron disease) produce pseudobulbar palsy: spastic dysarthria, dysphagia, a brisk gag and jaw jerk and emotional incontinence."
+ }
+}

@@ -1,0 +1,204 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-01-olfactory",
+ "name": "Olfactory nerve (CN I)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "Smell is carried by about twenty bundles of unmyelinated axons from the olfactory receptor neurons in the roof of the nasal cavity through the cribriform plate to the olfactory bulb, which relays through the olfactory tract directly to the primary olfactory (piriform) cortex of the uncus and to the amygdala and entorhinal cortex, bypassing the thalamus. It is the only sensory system that reaches the cortex without a thalamic relay and the only one with continuously regenerating receptor neurons. Its bundles shear on the cribriform plate in head injury, its bulb and tract are compressed by subfrontal meningiomas, and loss of smell is an early feature of Parkinson and Alzheimer disease and of viral infection.",
+ "anatomy": {
+  "location": "Receptor neurons in the olfactory epithelium of the superior nasal cavity; axons through the cribriform plate of the ethmoid; olfactory bulb and tract on the orbital surface of the frontal lobe in the olfactory sulcus, dividing at the anterior perforated substance into medial and lateral olfactory striae; lateral stria to the uncus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-olfactory"
+  ]
+ },
+ "function": "Sense of smell and much of flavour; olfactory-limbic connections for memory and emotion; warning of smoke, gas and spoiled food.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-ophthalmic"
+  ],
+  "territories": [
+   "territory-aca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 30,
+     "z": -25
+    },
+    "label": "olfactory bulbs beneath the frontal lobes above the cribriform plate"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": 30,
+     "z": -25
+    },
+    "label": "olfactory tracts in the olfactory sulci on the orbital surface"
+   }
+  ],
+  "normalAppearance": "Thin coronal T2 through the anterior cranial fossa shows the olfactory bulbs as small ovoid structures beneath the gyri recti, above the cribriform plate; they are absent in Kallmann syndrome and atrophic after trauma or viral infection. Subfrontal masses and cribriform plate fractures are seen on coronal CT and MRI.",
+  "pathology": [
+   {
+    "pathology": "Olfactory groove meningioma",
+    "modality": "MRI",
+    "finding": "Dural-based enhancing subfrontal mass compressing the olfactory tracts and orbitofrontal cortex, with anosmia and personality change.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Post-traumatic anosmia",
+    "modality": "MRI",
+    "finding": "Contusion of the orbitofrontal cortex and gliosis or atrophy of the bulbs after cribriform plate injury.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Kallmann syndrome",
+    "modality": "MRI",
+    "finding": "Absent or hypoplastic olfactory bulbs and sulci with hypogonadotropic hypogonadism.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Esthesioneuroblastoma",
+    "modality": "MRI",
+    "finding": "Dumbbell mass across the cribriform plate from the nasal vault into the anterior cranial fossa.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Coronal thin T2 and T1+Gd of the anterior skull base; CT for the cribriform plate"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anosmia or hyposmia",
+    "side": "ipsilateral",
+    "mechanism": "Shearing of the filaments, compression of the bulb or tract"
+   },
+   {
+    "deficit": "Parosmia and olfactory hallucinations",
+    "side": "n/a",
+    "mechanism": "Regeneration after injury or seizures of the uncus"
+   },
+   {
+    "deficit": "Personality change and optic atrophy with anosmia (Foster Kennedy)",
+    "side": "ipsilateral",
+    "mechanism": "Subfrontal mass compressing the olfactory tract and optic nerve with contralateral papilledema"
+   }
+  ],
+  "examination": [
+   "Test each nostril separately with a non-irritant odour (coffee, vanilla); ammonia stimulates the trigeminal nerve and is not a smell test",
+   "Ask about flavour of food, smoke detection and safety",
+   "Examine the nose for obstruction"
+  ],
+  "syndromes": [
+   "syn-anosmia"
+  ],
+  "pearls": [
+   "Anosmia after a fall onto the back of the head means the frontal lobes hit the front of the skull: check for orbitofrontal contusion",
+   "Loss of smell precedes motor symptoms in Parkinson disease by years"
+  ]
+ },
+ "pitfalls": [
+  "Most anosmia is nasal (rhinitis, polyps) or post-viral, not neurological"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    323,
+    324
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    349,
+    349
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    125,
+    125
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus olfactorius",
+ "cranial": {
+  "number": 1,
+  "roman": "I",
+  "components": [
+   "SVA"
+  ],
+  "nuclei": [
+   {
+    "structureId": "gyrus-parahippocampal-uncus",
+    "component": "SVA (primary olfactory cortex, no brainstem nucleus)",
+    "level": "supratentorial"
+   }
+  ],
+  "ganglia": [
+   {
+    "name": "(none; receptor neurons are the first-order cells)",
+    "type": "sensory"
+   }
+  ],
+  "exit": {
+   "brainstemExit": "No brainstem exit: the olfactory tract is a projection of the forebrain",
+   "cisternalCourse": "Olfactory bulb and tract on the orbital surface of the frontal lobe in the olfactory sulcus",
+   "foramen": "Cribriform plate of the ethmoid (about 20 foramina per side)",
+   "extracranialCourse": "Olfactory filaments in the mucosa of the superior nasal concha and septum"
+  },
+  "branches": [
+   {
+    "name": "Medial olfactory stria",
+    "supplies": "septal area and contralateral bulb via the anterior commissure"
+   },
+   {
+    "name": "Lateral olfactory stria",
+    "supplies": "piriform cortex of the uncus, amygdala, entorhinal cortex"
+   }
+  ],
+  "reflexes": [],
+  "tests": [
+   {
+    "name": "Odour identification",
+    "how": "Occlude one nostril, present a familiar odour to the other with eyes closed",
+    "normal": "Detects and names the odour",
+    "abnormal": "Cannot detect (anosmia) or misidentifies (parosmia)"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Unilateral anosmia",
+    "localisingValue": "peripheral lesion of the bulb, tract or filaments on that side; cortical lesions rarely cause anosmia because of bilateral connections"
+   },
+   {
+    "sign": "Anosmia with ipsilateral optic atrophy and contralateral papilledema",
+    "localisingValue": "subfrontal mass (Foster Kennedy syndrome)"
+   },
+   {
+    "sign": "Olfactory aura before a seizure",
+    "localisingValue": "medial temporal lobe (uncinate fits)"
+   }
+  ]
+ }
+}

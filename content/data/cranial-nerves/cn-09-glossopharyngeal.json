@@ -1,0 +1,280 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-09-glossopharyngeal",
+ "name": "Glossopharyngeal nerve (CN IX)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "A mixed nerve of the medulla with five components: taste and general sensation from the posterior third of the tongue, the pharynx, tonsils and middle ear; visceral afferents from the carotid sinus and carotid body; parasympathetic secretomotor fibers to the parotid gland through the otic ganglion; and motor supply to the stylopharyngeus. It leaves the medulla as rootlets behind the olive with the vagus and accessory nerves, passes through the jugular foramen with them, and descends between the internal jugular vein and carotid to the tongue and pharynx. It is the afferent limb of the gag reflex and of the carotid sinus reflex, and it is rarely injured alone; skull base lesions involve it with X and XI in the jugular foramen syndrome.",
+ "anatomy": {
+  "location": "Rootlets from the posterolateral sulcus of the upper medulla behind the olive → cerebellomedullary cistern with X and XI → anterior part of the jugular foramen (with the inferior petrosal sinus) → between the internal jugular vein and internal carotid artery, curving forward over stylopharyngeus to the base of the tongue and the pharyngeal wall.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-gustatory"
+  ]
+ },
+ "function": "Taste and sensation of the posterior tongue and oropharynx, sensation of the middle ear, carotid baroreceptor and chemoreceptor afferents, parotid secretion, elevation of the pharynx (stylopharyngeus), afferent limb of the gag reflex.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-vertebral",
+   "ascending pharyngeal artery"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 12,
+     "y": -44,
+     "z": -46
+    },
+    "label": "nucleus ambiguus and solitary nucleus in the lateral medulla; rootlets behind the olive"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 22,
+     "y": -40,
+     "z": -48
+    },
+    "label": "jugular foramen with IX, X and XI"
+   }
+  ],
+  "normalAppearance": "The rootlets are seen on thin T2 leaving the medulla behind the olive; the jugular foramen (pars nervosa with IX and the inferior petrosal sinus anteriorly, pars vascularis with X, XI and the jugular bulb posteriorly) is assessed on skull base CT and contrast MRI. Glomus tumors, schwannomas, meningiomas and metastases are the foramen lesions.",
+  "pathology": [
+   {
+    "pathology": "Glomus jugulare paraganglioma",
+    "modality": "MRI",
+    "finding": "Salt-and-pepper enhancing mass at the jugular foramen eroding bone with pulsatile tinnitus and lower cranial nerve palsies.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Jugular foramen schwannoma or meningioma",
+    "modality": "MRI",
+    "finding": "Smooth enhancing mass expanding the foramen (schwannoma) or with a dural tail and hyperostosis (meningioma).",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Lateral medullary infarct",
+    "modality": "MRI",
+    "finding": "Dorsolateral medullary restriction involving nucleus ambiguus and the solitary nucleus.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Neurovascular compression (glossopharyngeal neuralgia)",
+    "modality": "MRI",
+    "finding": "Vessel (PICA or vertebral) contacting the root entry zone on CISS.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "Skull base CT and fat-saturated T1+Gd; thin T2 of the medulla; DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of taste and sensation on the posterior third of the tongue and pharynx",
+    "side": "ipsilateral",
+    "mechanism": "Sensory fibers"
+   },
+   {
+    "deficit": "Reduced gag reflex on the affected side",
+    "side": "ipsilateral",
+    "mechanism": "Afferent limb (with vagal efferent involvement in most lesions)"
+   },
+   {
+    "deficit": "Paroxysmal stabbing pain in the throat and ear triggered by swallowing, sometimes with syncope",
+    "side": "ipsilateral",
+    "mechanism": "Glossopharyngeal neuralgia with carotid sinus activation"
+   },
+   {
+    "deficit": "Dysphagia",
+    "side": "ipsilateral",
+    "mechanism": "Combined with vagal involvement in jugular foramen lesions"
+   }
+  ],
+  "examination": [
+   "Touch the posterior pharyngeal wall on each side and compare the gag and the sensation",
+   "Taste on the posterior tongue (rarely practical)",
+   "Observe palatal elevation and voice (vagus) and sternocleidomastoid and trapezius (accessory) to define a jugular foramen syndrome",
+   "Ask about swallow-triggered throat pain and syncope"
+  ],
+  "syndromes": [
+   "syn-jugular-foramen-vernet",
+   "syn-wallenberg-lateral-medullary",
+   "syn-bulbar-vs-pseudobulbar"
+  ],
+  "pearls": [
+   "Isolated ninth nerve lesions are almost never seen; its involvement means the jugular foramen or the lateral medulla",
+   "Throat pain on swallowing that causes fainting is glossopharyngeal neuralgia via the carotid sinus"
+  ]
+ },
+ "pitfalls": [
+  "An absent gag reflex is common in normal people; asymmetry matters more than absence"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    341,
+    343
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    353,
+    353
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    125,
+    126
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus glossopharyngeus",
+ "cranial": {
+  "number": 9,
+  "roman": "IX",
+  "components": [
+   "SVE",
+   "GVE",
+   "GVA",
+   "SVA",
+   "GSA"
+  ],
+  "nuclei": [
+   {
+    "structureId": "nucleus-ambiguus",
+    "component": "SVE: stylopharyngeus",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "nucleus-solitarius",
+    "component": "SVA and GVA: taste and visceral afferents from the carotid sinus and body",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "spinal-trigeminal-nucleus-tract",
+    "component": "GSA: middle ear, pharynx",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "dorsal-motor-nucleus-vagus",
+    "component": "GVE: inferior salivatory nucleus (adjacent) to the otic ganglion for the parotid",
+    "level": "medulla-olive"
+   }
+  ],
+  "ganglia": [
+   {
+    "name": "Superior and inferior (petrosal) ganglia",
+    "type": "sensory"
+   },
+   {
+    "name": "Otic ganglion",
+    "type": "parasympathetic",
+    "structureId": "ganglion-otic"
+   }
+  ],
+  "exit": {
+   "brainstemExit": "Posterolateral sulcus of the medulla behind the olive, uppermost of the IX–X–XI rootlet series",
+   "cisternalCourse": "Cerebellomedullary cistern in front of the flocculus with X and XI, past the PICA loop",
+   "foramen": "Jugular foramen (pars nervosa, anterior compartment) with the inferior petrosal sinus",
+   "extracranialCourse": "Between the internal jugular vein and internal carotid, deep to the styloid process, forward on stylopharyngeus through the pharyngeal wall to the tonsil and posterior tongue"
+  },
+  "branches": [
+   {
+    "name": "Tympanic nerve (Jacobson)",
+    "supplies": "middle ear sensation; lesser petrosal nerve → otic ganglion → parotid"
+   },
+   {
+    "name": "Carotid sinus nerve",
+    "supplies": "baroreceptor and chemoreceptor afferents"
+   },
+   {
+    "name": "Pharyngeal branches",
+    "supplies": "pharyngeal plexus sensation"
+   },
+   {
+    "name": "Nerve to stylopharyngeus",
+    "supplies": "stylopharyngeus"
+   },
+   {
+    "name": "Tonsillar and lingual branches",
+    "supplies": "tonsil, posterior third of the tongue: taste and general sensation"
+   }
+  ],
+  "reflexes": [
+   {
+    "name": "Gag (pharyngeal) reflex",
+    "afferent": "IX",
+    "center": "solitary and spinal trigeminal nuclei → nucleus ambiguus bilaterally",
+    "efferent": "X to the pharyngeal constrictors and palate"
+   },
+   {
+    "name": "Carotid sinus reflex",
+    "afferent": "IX (carotid sinus nerve)",
+    "center": "solitary nucleus → dorsal vagal nucleus and ambiguus, vasomotor center",
+    "efferent": "X to the heart; sympathetic inhibition"
+   }
+  ],
+  "tests": [
+   {
+    "name": "Gag reflex",
+    "how": "Touch each side of the posterior pharyngeal wall",
+    "normal": "Symmetric gag and elevation",
+    "abnormal": "Absent or asymmetric gag; the afferent side is judged by asking the patient which side felt the touch"
+   },
+   {
+    "name": "Pharyngeal sensation",
+    "how": "Ask which side feels the touch",
+    "normal": "Symmetric",
+    "abnormal": "Reduced on the affected side"
+   },
+   {
+    "name": "Swallowing",
+    "how": "Watch a water swallow",
+    "normal": "Prompt without cough",
+    "abnormal": "Delayed, cough, nasal regurgitation (mainly vagal)"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Reduced pharyngeal sensation with palatal and vocal cord weakness and sternocleidomastoid weakness",
+    "localisingValue": "jugular foramen (Vernet syndrome)"
+   },
+   {
+    "sign": "Add tongue weakness",
+    "localisingValue": "retroparotid space (Collet–Sicard) or skull base infiltration"
+   },
+   {
+    "sign": "Add Horner syndrome",
+    "localisingValue": "Villaret syndrome (retroparotid with sympathetic involvement)"
+   },
+   {
+    "sign": "Dysphagia and crossed sensory loss",
+    "localisingValue": "lateral medulla"
+   }
+  ],
+  "nuclearVsPeripheral": "Nuclear lesions in the lateral medulla involve nucleus ambiguus and the solitary nucleus together and always come with the other lateral medullary signs; peripheral lesions in the jugular foramen involve IX with X and XI and spare the medulla.",
+  "supranuclear": "Nucleus ambiguus receives bilateral corticobulbar input, so unilateral supranuclear lesions do not cause dysphagia; bilateral lesions cause pseudobulbar palsy with a brisk gag."
+ }
+}

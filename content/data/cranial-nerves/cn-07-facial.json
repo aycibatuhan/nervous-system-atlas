@@ -1,0 +1,375 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-07-facial",
+ "name": "Facial nerve (CN VII)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [
+  "cn-07-facial-l",
+  "cn-07-facial-r"
+ ],
+ "summary": "The facial nerve is really two nerves travelling together: the motor root to the muscles of facial expression, stapedius, stylohyoid and posterior digastric, and the nervus intermedius carrying taste from the anterior two-thirds of the tongue, parasympathetic fibers to the lacrimal, nasal, submandibular and sublingual glands, and a little skin sensation from the ear. After looping over the abducens nucleus it leaves the pontomedullary junction, crosses the cerebellopontine angle with the eighth nerve into the internal acoustic meatus, and follows a long tortuous canal through the temporal bone (labyrinthine, tympanic and mastoid segments) to the stylomastoid foramen and the parotid gland. Its lesion produces the peripheral facial palsy that involves the forehead, whereas a corticobulbar lesion spares it; the accompanying loss of taste, tearing or stapedius reflex tells you how far up the canal the lesion sits.",
+ "anatomy": {
+  "location": "Motor nucleus in the caudal pontine tegmentum → internal genu around the abducens nucleus → exit at the lateral pontomedullary junction (cerebellopontine angle) with the nervus intermedius and VIII → internal acoustic meatus (anterosuperior quadrant) → labyrinthine segment to the geniculate ganglion (greater petrosal nerve leaves) → tympanic segment along the medial wall of the middle ear (nerve to stapedius leaves) → mastoid segment (chorda tympani leaves) → stylomastoid foramen → through the parotid gland dividing into temporal, zygomatic, buccal, marginal mandibular and cervical branches.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-corticobulbar",
+   "pathway-gustatory"
+  ]
+ },
+ "function": "Facial expression and eye closure, stapedius reflex, taste from the anterior tongue and palate, lacrimation and salivation (except parotid), sensation of part of the external ear.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aica",
+   "arteries-pontine",
+   "artery-labyrinthine",
+   "stylomastoid and petrosal branches of the external carotid"
+  ],
+  "territories": [
+   "territory-aica",
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 14,
+     "y": -34,
+     "z": -38
+    },
+    "label": "facial motor nucleus in the caudal pontine tegmentum and the genu over the abducens nucleus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -38,
+     "z": -36
+    },
+    "label": "nerve crossing the cerebellopontine angle into the internal acoustic meatus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 32,
+     "y": -25,
+     "z": -30
+    },
+    "label": "geniculate ganglion and tympanic segment in the temporal bone"
+   }
+  ],
+  "normalAppearance": "The cisternal and canalicular segments are seen with the eighth nerve on thin T2 (CISS), the facial nerve anterosuperior in the meatus; the intratemporal course is mapped on temporal bone CT. Normal mild enhancement of the geniculate and tympanic segments exists; intense labyrinthine segment enhancement indicates Bell palsy or zoster, a mass indicates schwannoma or hemangioma. The HCP1065 mesh in this atlas shows the cisternal segment.",
+  "pathology": [
+   {
+    "pathology": "Bell palsy",
+    "modality": "MRI",
+    "finding": "Enhancement of the labyrinthine segment, geniculate ganglion and proximal tympanic segment without expansion.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Ramsay Hunt syndrome",
+    "modality": "MRI",
+    "finding": "Similar enhancement, often involving the eighth nerve and labyrinth, with vesicles in the ear.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Vestibular schwannoma / CPA mass",
+    "modality": "MRI",
+    "finding": "Enhancing mass in the cerebellopontine angle and meatus compressing VII with VIII (and later V).",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Pontine lesion at the facial nucleus or fascicle",
+    "modality": "MRI",
+    "finding": "Caudal pontine infarct or plaque with peripheral-type facial palsy plus gaze palsy or contralateral hemiparesis.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Parotid malignancy",
+    "modality": "MRI",
+    "finding": "Parotid mass with facial palsy: malignancy until proven otherwise (benign tumors do not paralyze the nerve).",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Temporal bone fracture",
+    "modality": "CT",
+    "finding": "Transverse fracture through the labyrinthine segment with immediate complete palsy.",
+    "sequence": "CT non-contrast"
+   }
+  ],
+  "sequenceOfChoice": "MRI with contrast of the brainstem, cerebellopontine angle, temporal bone and parotid; temporal bone CT in trauma"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weakness of the whole hemiface including the forehead, incomplete eye closure, drooping mouth",
+    "side": "ipsilateral",
+    "mechanism": "Nucleus, nerve or branches (lower motor neuron)"
+   },
+   {
+    "deficit": "Weakness of the lower face only with preserved forehead",
+    "side": "contralateral",
+    "mechanism": "Corticobulbar (upper motor neuron) lesion: bilateral cortical input to the upper face"
+   },
+   {
+    "deficit": "Loss of taste on the anterior tongue",
+    "side": "ipsilateral",
+    "mechanism": "Lesion proximal to the chorda tympani (mastoid segment or above)"
+   },
+   {
+    "deficit": "Hyperacusis",
+    "side": "ipsilateral",
+    "mechanism": "Lesion proximal to the nerve to stapedius (tympanic segment or above)"
+   },
+   {
+    "deficit": "Dry eye",
+    "side": "ipsilateral",
+    "mechanism": "Lesion at or proximal to the geniculate ganglion (greater petrosal nerve)"
+   },
+   {
+    "deficit": "Synkinesis, crocodile tears, hemifacial spasm after recovery",
+    "side": "ipsilateral",
+    "mechanism": "Aberrant regeneration or ephaptic transmission"
+   },
+   {
+    "deficit": "Emotional facial movement preserved with voluntary weakness (or the reverse)",
+    "side": "contralateral",
+    "mechanism": "Dissociation between voluntary corticobulbar and emotional (limbic/thalamic) pathways"
+   }
+  ],
+  "examination": [
+   "Raise eyebrows, close eyes tightly (look for the Bell phenomenon and lash sign), show teeth, puff cheeks, whistle",
+   "Compare forehead with lower face: the key to central versus peripheral",
+   "Taste on the anterior tongue with sugar and salt",
+   "Ask about hyperacusis and dry eye; inspect the ear for vesicles",
+   "Examine VIII, V and VI for cerebellopontine angle and pontine lesions; palpate the parotid"
+  ],
+  "syndromes": [
+   "syn-facial-palsy-peripheral-vs-central",
+   "syn-ramsay-hunt",
+   "syn-millard-gubler",
+   "syn-cerebellopontine-angle",
+   "syn-aica-lateral-pontine",
+   "syn-guillain-barre"
+  ],
+  "pearls": [
+   "Forehead spared: cortex or corticobulbar tract. Forehead involved: nucleus, nerve or muscle",
+   "Bell palsy is a diagnosis of exclusion: any palsy that is bilateral, recurrent, progressive over weeks, or accompanied by other cranial nerve signs needs imaging and serology (Lyme, HIV, sarcoid)"
+  ]
+ },
+ "pitfalls": [
+  "Eye protection is the urgent treatment of any peripheral facial palsy: lubricants and taping at night"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    337,
+    339
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    352,
+    352
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    119,
+    119
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    122,
+    122
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    124
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus facialis",
+ "cranial": {
+  "number": 7,
+  "roman": "VII",
+  "components": [
+   "SVE",
+   "GVE",
+   "SVA",
+   "GSA"
+  ],
+  "nuclei": [
+   {
+    "structureId": "facial-motor-nucleus",
+    "component": "SVE: muscles of facial expression, stapedius",
+    "level": "pons-caudal"
+   },
+   {
+    "structureId": "nucleus-solitarius",
+    "component": "SVA: taste from the anterior two-thirds of the tongue (rostral solitary nucleus)",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "spinal-trigeminal-nucleus-tract",
+    "component": "GSA: ear sensation",
+    "level": "medulla-olive"
+   },
+   {
+    "structureId": "pontine-nuclei",
+    "component": "GVE: superior salivatory nucleus (near the facial nucleus) for lacrimal, nasal, submandibular and sublingual glands",
+    "level": "pons-caudal"
+   }
+  ],
+  "ganglia": [
+   {
+    "name": "Geniculate ganglion",
+    "type": "sensory",
+    "structureId": "ganglion-geniculate"
+   },
+   {
+    "name": "Pterygopalatine ganglion",
+    "type": "parasympathetic",
+    "structureId": "ganglion-pterygopalatine"
+   },
+   {
+    "name": "Submandibular ganglion",
+    "type": "parasympathetic",
+    "structureId": "ganglion-submandibular"
+   }
+  ],
+  "exit": {
+   "brainstemExit": "Lateral pontomedullary junction (cerebellopontine angle), motor root medial and nervus intermedius between it and VIII",
+   "cisternalCourse": "Cerebellopontine angle cistern with VIII and the AICA loop to the porus of the internal acoustic meatus",
+   "foramen": "Internal acoustic meatus (with VIII) → facial canal (fallopian canal) → stylomastoid foramen",
+   "extracranialCourse": "Through the parotid gland, dividing into temporal, zygomatic, buccal, marginal mandibular and cervical branches to the muscles of facial expression and platysma"
+  },
+  "branches": [
+   {
+    "name": "Greater petrosal nerve",
+    "supplies": "parasympathetic to the lacrimal, nasal and palatine glands via the pterygopalatine ganglion; taste from the palate"
+   },
+   {
+    "name": "Nerve to stapedius",
+    "supplies": "stapedius muscle (dampens loud sounds)"
+   },
+   {
+    "name": "Chorda tympani",
+    "supplies": "taste from the anterior two-thirds of the tongue; parasympathetic to the submandibular and sublingual glands via the lingual nerve"
+   },
+   {
+    "name": "Posterior auricular nerve",
+    "supplies": "occipitalis and auricular muscles; skin of the ear"
+   },
+   {
+    "name": "Nerves to stylohyoid and posterior digastric",
+    "supplies": "hyoid elevation"
+   },
+   {
+    "name": "Terminal branches (temporal, zygomatic, buccal, marginal mandibular, cervical)",
+    "supplies": "muscles of facial expression, buccinator, platysma"
+   }
+  ],
+  "reflexes": [
+   {
+    "name": "Corneal (blink) reflex",
+    "afferent": "V1",
+    "center": "spinal trigeminal nucleus → both facial nuclei",
+    "efferent": "facial nerve to orbicularis oculi"
+   },
+   {
+    "name": "Stapedius (acoustic) reflex",
+    "afferent": "VIII",
+    "center": "superior olivary complex → facial nucleus",
+    "efferent": "nerve to stapedius"
+   },
+   {
+    "name": "Glabellar tap",
+    "afferent": "V1",
+    "center": "facial nucleus",
+    "efferent": "orbicularis oculi (fails to habituate in Parkinson disease)"
+   }
+  ],
+  "tests": [
+   {
+    "name": "Upper face",
+    "how": "Raise eyebrows, frown, close eyes tightly",
+    "normal": "Symmetric forehead wrinkling and eye closure",
+    "abnormal": "Weak forehead and incomplete closure in peripheral lesions; normal in central lesions"
+   },
+   {
+    "name": "Lower face",
+    "how": "Show teeth, puff cheeks, purse lips",
+    "normal": "Symmetric",
+    "abnormal": "Drooping angle, flattened nasolabial fold, cannot hold air"
+   },
+   {
+    "name": "Taste",
+    "how": "Sugar and salt on each side of the protruded anterior tongue",
+    "normal": "Identifies both",
+    "abnormal": "Loss on the affected side with lesions proximal to the chorda tympani"
+   },
+   {
+    "name": "Grading",
+    "how": "House–Brackmann scale I–VI",
+    "normal": "I",
+    "abnormal": "Higher grades; complete palsy (VI) has a worse prognosis"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Forehead spared",
+    "localisingValue": "supranuclear (cortex, internal capsule, upper pons above the nucleus)"
+   },
+   {
+    "sign": "Forehead involved with ipsilateral gaze palsy or contralateral hemiparesis",
+    "localisingValue": "pontine nucleus or fascicle"
+   },
+   {
+    "sign": "Forehead involved with deafness, tinnitus or vertigo",
+    "localisingValue": "cerebellopontine angle or internal acoustic meatus"
+   },
+   {
+    "sign": "Forehead involved with dry eye, loss of taste and hyperacusis",
+    "localisingValue": "labyrinthine segment or geniculate ganglion"
+   },
+   {
+    "sign": "Forehead involved with loss of taste but normal tearing",
+    "localisingValue": "tympanic or upper mastoid segment (below the geniculate, above the chorda)"
+   },
+   {
+    "sign": "Forehead involved with normal taste and tearing",
+    "localisingValue": "at or below the stylomastoid foramen (parotid, trauma)"
+   },
+   {
+    "sign": "Bilateral facial palsy",
+    "localisingValue": "Guillain–Barré, Lyme disease, sarcoidosis, HIV, leptomeningeal disease"
+   }
+  ],
+  "nuclearVsPeripheral": "Nuclear and fascicular lesions in the pons produce the same complete hemifacial weakness as nerve lesions but come with neighbors: an ipsilateral abducens palsy or gaze palsy (facial colliculus), contralateral hemiparesis (Millard–Gubler), and usually no taste or lacrimal change because those fibers join the nerve only at the cerebellopontine angle.",
+  "supranuclear": "The upper facial subnucleus receives corticobulbar input from both hemispheres and the lower subnucleus mainly from the contralateral hemisphere, so a stroke spares the forehead. Emotional smiling uses a separate limbic pathway, which explains the patient whose voluntary smile is weak but who smiles symmetrically at a joke (or vice versa)."
+ }
+}

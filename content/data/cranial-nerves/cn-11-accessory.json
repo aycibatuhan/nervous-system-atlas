@@ -1,0 +1,220 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-11-accessory",
+ "name": "Accessory nerve (CN XI)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "The spinal accessory nerve arises from a column of motor neurons in the upper five cervical segments, climbs through the foramen magnum to join briefly with the cranial root (which really belongs to the vagus and is distributed with it), leaves through the jugular foramen and descends across the posterior triangle of the neck to supply sternocleidomastoid and trapezius. Its superficial course in the posterior triangle makes it the cranial nerve most often injured by surgery (lymph node biopsy, neck dissection), producing a dropped shoulder, weak shrug and difficulty abducting the arm above the horizontal with lateral winging of the scapula.",
+ "anatomy": {
+  "location": "Spinal nucleus in the lateral anterior horn of C1–C5 → rootlets between the dorsal and ventral roots, uniting into a trunk that ascends through the foramen magnum → joins the cranial root in the posterior fossa → jugular foramen → descends behind the internal jugular vein, through or deep to sternocleidomastoid, across the posterior triangle to the anterior border of trapezius.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Head turning to the opposite side and head flexion (sternocleidomastoid); shoulder elevation, scapular retraction and upward rotation for arm abduction above 90 degrees (trapezius).",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "occipital and transverse cervical arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": -46,
+     "z": -56
+    },
+    "label": "spinal accessory rootlets ascending beside the upper cervical cord and medulla"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 22,
+     "y": -40,
+     "z": -48
+    },
+    "label": "jugular foramen, pars vascularis"
+   }
+  ],
+  "normalAppearance": "The ascending spinal root is seen on thin T2 beside the upper cervical cord and through the foramen magnum; it is included in jugular foramen lesions. In the neck, ultrasound follows it through the posterior triangle, and MRI shows trapezius denervation.",
+  "pathology": [
+   {
+    "pathology": "Iatrogenic accessory neuropathy",
+    "modality": "US",
+    "finding": "Discontinuity or neuroma of the nerve in the posterior triangle after lymph node biopsy, with trapezius atrophy.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Jugular foramen lesion",
+    "modality": "MRI",
+    "finding": "Enhancing mass in the jugular foramen (glomus tumor, schwannoma, meningioma, metastasis) involving IX, X and XI together.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Foramen magnum lesion",
+    "modality": "MRI",
+    "finding": "Meningioma or Chiari with involvement of the ascending spinal root.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Neck ultrasound; MRI of the skull base; EMG of trapezius"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weak shoulder shrug, dropped shoulder, lateral scapular winging on abduction",
+    "side": "ipsilateral",
+    "mechanism": "Trapezius paralysis"
+   },
+   {
+    "deficit": "Weak turning of the head to the opposite side",
+    "side": "ipsilateral",
+    "mechanism": "Sternocleidomastoid paralysis"
+   },
+   {
+    "deficit": "Shoulder pain and difficulty abducting above the horizontal",
+    "side": "ipsilateral",
+    "mechanism": "Loss of scapular upward rotation"
+   },
+   {
+    "deficit": "Head turns toward the weak side and shoulder droop with palatal and laryngeal weakness",
+    "side": "ipsilateral",
+    "mechanism": "Jugular foramen syndrome"
+   }
+  ],
+  "examination": [
+   "Shrug against resistance and compare trapezius bulk",
+   "Turn the head against resistance: the sternocleidomastoid on the opposite side of the turn is tested",
+   "Abduct the arm and watch for winging of the scapula (lateral, on abduction)",
+   "Inspect the neck for a surgical scar in the posterior triangle"
+  ],
+  "syndromes": [
+   "syn-accessory-palsy",
+   "syn-jugular-foramen-vernet"
+  ],
+  "pearls": [
+   "Left sternocleidomastoid turns the head to the right: a weak turn to the right is a left accessory nerve lesion",
+   "Shoulder pain and a dropped shoulder after a lymph node biopsy in the neck is the accessory nerve until proven otherwise"
+  ]
+ },
+ "pitfalls": [
+  "Trapezius winging (lateral, on abduction) is distinguished from serratus anterior winging (medial, on pushing forward)"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    345,
+    347
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    353,
+    353
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    126,
+    126
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus accessorius",
+ "cranial": {
+  "number": 11,
+  "roman": "XI",
+  "components": [
+   "SVE"
+  ],
+  "nuclei": [
+   {
+    "structureId": "spinal-grey-anterior-horn",
+    "component": "SVE (spinal accessory nucleus): sternocleidomastoid and trapezius",
+    "level": "spinal C1–C5"
+   },
+   {
+    "structureId": "nucleus-ambiguus",
+    "component": "cranial root (distributed with the vagus to the larynx and pharynx)",
+    "level": "medulla-olive"
+   }
+  ],
+  "ganglia": [],
+  "exit": {
+   "brainstemExit": "Spinal root: lateral surface of the cervical cord between the dorsal and ventral roots, ascending through the foramen magnum; cranial root: posterolateral medulla below the vagal rootlets",
+   "cisternalCourse": "Cerebellomedullary cistern with IX and X, the spinal root joining the cranial root briefly",
+   "foramen": "Jugular foramen (pars vascularis)",
+   "extracranialCourse": "Behind the internal jugular vein, through the upper part of sternocleidomastoid, across the posterior triangle superficially to the trapezius"
+  },
+  "branches": [
+   {
+    "name": "Cranial root (internal ramus)",
+    "supplies": "joins the vagus: muscles of the palate and larynx via the pharyngeal plexus and recurrent laryngeal nerve"
+   },
+   {
+    "name": "Spinal root (external ramus)",
+    "supplies": "sternocleidomastoid and trapezius"
+   }
+  ],
+  "reflexes": [],
+  "tests": [
+   {
+    "name": "Shrug",
+    "how": "Elevate the shoulders against resistance",
+    "normal": "Symmetric powerful shrug",
+    "abnormal": "Weak shrug, dropped shoulder, wasted upper trapezius"
+   },
+   {
+    "name": "Head turn",
+    "how": "Turn the chin against your hand",
+    "normal": "Strong; sternocleidomastoid contracts visibly on the opposite side to the turn",
+    "abnormal": "Weak turn away from the lesion"
+   },
+   {
+    "name": "Arm abduction",
+    "how": "Abduct the arm above 90 degrees",
+    "normal": "Smooth elevation",
+    "abnormal": "Lateral winging of the scapula and difficulty above the horizontal"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Isolated trapezius weakness with normal sternocleidomastoid",
+    "localisingValue": "posterior triangle (distal to the sternocleidomastoid branch): surgical injury"
+   },
+   {
+    "sign": "Both muscles weak",
+    "localisingValue": "proximal (jugular foramen or above)"
+   },
+   {
+    "sign": "With IX and X palsies",
+    "localisingValue": "jugular foramen (Vernet)"
+   },
+   {
+    "sign": "Bilateral weakness with tongue and palate involvement",
+    "localisingValue": "motor neuron disease or myopathy rather than a nerve lesion"
+   }
+  ],
+  "nuclearVsPeripheral": "The spinal nucleus in C1–C5 is involved in motor neuron disease, syringomyelia and high cervical cord lesions (with other cord signs); peripheral lesions are nearly always in the neck or the jugular foramen.",
+  "supranuclear": "Sternocleidomastoid receives corticobulbar input mainly from the ipsilateral hemisphere (it turns the head to the opposite side, toward the contralateral limbs that the hemisphere controls), so a hemispheric stroke weakens head turning away from the hemiparetic side."
+ }
+}

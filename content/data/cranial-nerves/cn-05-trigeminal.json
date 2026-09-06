@@ -1,0 +1,313 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-05-trigeminal",
+ "name": "Trigeminal nerve (CN V)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [
+  "cn-05-trigeminal-l",
+  "cn-05-trigeminal-r",
+  "ophthalmic-nerve-l",
+  "ophthalmic-nerve-r"
+ ],
+ "summary": "The largest cranial nerve carries all somatic sensation from the face, scalp, cornea, oral and nasal cavities, teeth and dura, and motor supply to the muscles of mastication. Its sensory root leaves the lateral pons, crosses the prepontine cistern to the trigeminal ganglion in Meckel's cave, and splits into the ophthalmic (V1, superior orbital fissure), maxillary (V2, foramen rotundum) and mandibular (V3, foramen ovale) divisions; the smaller motor root passes beneath the ganglion into V3. Its brainstem nuclei span from the midbrain to the upper cervical cord, which is why facial sensory loss can point to lesions at almost any brainstem level and why a lateral medullary infarct numbs the face.",
+ "anatomy": {
+  "location": "Root entry zone on the lateral mid-pons at the junction with the middle cerebellar peduncle → prepontine cistern over the petrous apex (compressed here by the SCA in trigeminal neuralgia) → Meckel's cave with the ganglion → V1 in the lateral wall of the cavernous sinus to the superior orbital fissure, V2 through the foramen rotundum to the pterygopalatine fossa and infraorbital canal, V3 through the foramen ovale to the infratemporal fossa.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-trigeminothalamic"
+  ]
+ },
+ "function": "Sensation of the face, cornea, mouth, teeth, anterior two-thirds of the tongue (touch), nasal cavity and supratentorial dura; mastication; proprioception of the jaw; tensor tympani and tensor veli palatini.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "arteries-pontine",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-sca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 28,
+     "y": -28,
+     "z": -30
+    },
+    "label": "root leaving the lateral pons across the prepontine cistern to Meckel's cave"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 20,
+     "y": -10,
+     "z": -25
+    },
+    "label": "trigeminal ganglion in Meckel's cave lateral to the cavernous sinus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 22,
+     "y": -30,
+     "z": -28
+    },
+    "label": "principal sensory and motor nuclei in the lateral pontine tegmentum"
+   }
+  ],
+  "normalAppearance": "The cisternal root is the most visible cranial nerve on thin axial T2, running obliquely forward from the pons to Meckel's cave; a vascular loop (usually the SCA) indenting the root entry zone is seen on CISS with MRA. Enhancement of the root or ganglion, a mass in Meckel's cave or perineural spread along a division are the key abnormalities. The HCP1065 mesh in this atlas shows the cisternal segment.",
+  "pathology": [
+   {
+    "pathology": "Neurovascular compression (trigeminal neuralgia)",
+    "modality": "MRI",
+    "finding": "SCA or another vessel contacting and distorting the root entry zone on CISS/FIESTA with TOF MRA.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Pontine plaque at the root entry zone",
+    "modality": "MRI",
+    "finding": "FLAIR-bright lesion in the lateral pons; the commonest cause of trigeminal neuralgia in the young.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Trigeminal schwannoma",
+    "modality": "MRI",
+    "finding": "Enhancing mass along the root, in Meckel's cave or in a division, often dumbbell-shaped.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Perineural tumor spread",
+    "modality": "MRI",
+    "finding": "Thickened enhancing V2 or V3 with widening of the foramen and denervation atrophy of the masticator muscles.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Lateral medullary infarct",
+    "modality": "MRI",
+    "finding": "Dorsolateral medullary restriction with ipsilateral facial pain and temperature loss.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Thin T2 (CISS) and fat-saturated T1+Gd from the pons to the skull base; MRA for vascular loops; DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Numbness of one side of the face in one or all divisions",
+    "side": "ipsilateral",
+    "mechanism": "Root, ganglion or divisions"
+   },
+   {
+    "deficit": "Loss of pain and temperature with preserved touch on the face",
+    "side": "ipsilateral",
+    "mechanism": "Spinal trigeminal tract and nucleus (medulla)"
+   },
+   {
+    "deficit": "Absent corneal reflex",
+    "side": "ipsilateral",
+    "mechanism": "V1 afferent (or VII efferent)"
+   },
+   {
+    "deficit": "Jaw deviates to the weak side, masseter wasting",
+    "side": "ipsilateral",
+    "mechanism": "Motor root or nucleus"
+   },
+   {
+    "deficit": "Lancinating paroxysmal facial pain triggered by touch",
+    "side": "ipsilateral",
+    "mechanism": "Trigeminal neuralgia: root compression or demyelination"
+   },
+   {
+    "deficit": "Numb chin",
+    "side": "ipsilateral",
+    "mechanism": "Mental nerve infiltration by malignancy"
+   }
+  ],
+  "examination": [
+   "Light touch and pin-prick in V1 (forehead), V2 (cheek), V3 (chin, sparing the jaw angle which is C2–C3)",
+   "Corneal reflex with a wisp of cotton, watching both eyes",
+   "Clench the jaw and palpate masseters; open the jaw against resistance and watch for deviation",
+   "Jaw jerk",
+   "Taste is not trigeminal: loss of taste points to VII"
+  ],
+  "syndromes": [
+   "syn-trigeminal-neuralgia",
+   "syn-wallenberg-lateral-medullary",
+   "syn-cavernous-sinus",
+   "syn-cerebellopontine-angle",
+   "syn-aica-lateral-pontine"
+  ],
+  "pearls": [
+   "Numbness that spares the angle of the jaw is trigeminal; numbness that includes it is cervical or non-organic",
+   "Trigeminal neuralgia in someone under 40, bilateral, or with any sensory loss needs an MRI for multiple sclerosis or a mass"
+  ]
+ },
+ "pitfalls": [
+  "Herpes zoster ophthalmicus threatens the eye when the nasociliary branch (nose tip) is involved"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    335
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    351,
+    351
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    117,
+    120
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus trigeminus",
+ "cranial": {
+  "number": 5,
+  "roman": "V",
+  "components": [
+   "GSA",
+   "SVE"
+  ],
+  "nuclei": [
+   {
+    "structureId": "trigeminal-nuclei",
+    "component": "GSA: principal sensory (touch), mesencephalic (proprioception); SVE: motor nucleus (mastication)",
+    "level": "pons-rostral"
+   },
+   {
+    "structureId": "spinal-trigeminal-nucleus-tract",
+    "component": "GSA: pain and temperature",
+    "level": "medulla-olive"
+   }
+  ],
+  "ganglia": [
+   {
+    "name": "Trigeminal (Gasserian) ganglion",
+    "type": "sensory",
+    "structureId": "ganglion-trigeminal"
+   }
+  ],
+  "exit": {
+   "brainstemExit": "Lateral surface of the mid-pons at the junction with the middle cerebellar peduncle (large sensory root, small motor root)",
+   "cisternalCourse": "Prepontine cistern over the petrous apex, beneath the tentorial edge, to the porus trigeminus and Meckel's cave",
+   "foramen": "V1: superior orbital fissure; V2: foramen rotundum; V3: foramen ovale",
+   "extracranialCourse": "V1 to the orbit and forehead (frontal, lacrimal, nasociliary); V2 to the pterygopalatine fossa, infraorbital canal and cheek; V3 to the infratemporal fossa, muscles of mastication, tongue (lingual), lower teeth and chin (inferior alveolar, mental), ear and temple (auriculotemporal)"
+  },
+  "branches": [
+   {
+    "name": "Ophthalmic (V1)",
+    "supplies": "forehead, upper lid, cornea, nose tip (nasociliary), frontal sinus, tentorium; carries sympathetic fibers to the pupil"
+   },
+   {
+    "name": "Maxillary (V2)",
+    "supplies": "cheek, lower lid, upper lip, upper teeth, palate, nasal cavity, maxillary sinus; carries parasympathetic fibers from the pterygopalatine ganglion"
+   },
+   {
+    "name": "Mandibular (V3)",
+    "supplies": "lower lip, chin, lower teeth, anterior tongue (touch), external ear and temple; motor to masseter, temporalis, pterygoids, mylohyoid, anterior digastric, tensor tympani, tensor veli palatini"
+   }
+  ],
+  "reflexes": [
+   {
+    "name": "Corneal reflex",
+    "afferent": "V1 (nasociliary)",
+    "center": "spinal trigeminal nucleus → facial nuclei bilaterally",
+    "efferent": "facial nerve to orbicularis oculi both sides"
+   },
+   {
+    "name": "Jaw jerk",
+    "afferent": "mesencephalic nucleus of V (spindle afferents)",
+    "center": "trigeminal motor nucleus",
+    "efferent": "motor root of V to masseter and temporalis"
+   },
+   {
+    "name": "Sneeze and lacrimation reflexes",
+    "afferent": "V1 and V2",
+    "center": "brainstem",
+    "efferent": "respiratory muscles / facial parasympathetics"
+   }
+  ],
+  "tests": [
+   {
+    "name": "Facial sensation",
+    "how": "Light touch and pin-prick in each division bilaterally",
+    "normal": "Symmetric",
+    "abnormal": "Loss in one, two or all divisions; dissociated loss (pain lost, touch kept) in medullary lesions"
+   },
+   {
+    "name": "Corneal reflex",
+    "how": "Touch the cornea from the side with cotton",
+    "normal": "Bilateral blink",
+    "abnormal": "Absent or reduced blink: afferent V1 (both eyes fail to blink) versus efferent VII (only the affected eye fails)"
+   },
+   {
+    "name": "Masticatory power",
+    "how": "Clench and palpate; open against resistance; move the jaw side to side",
+    "normal": "Symmetric bulk and power, midline opening",
+    "abnormal": "Wasting, weak clench, deviation toward the weak side"
+   },
+   {
+    "name": "Jaw jerk",
+    "how": "Tap the relaxed chin",
+    "normal": "Absent or slight",
+    "abnormal": "Brisk in bilateral upper motor neuron lesions (pseudobulbar palsy)"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "All three divisions with motor weakness",
+    "localisingValue": "root or ganglion (Meckel's cave)"
+   },
+   {
+    "sign": "V1 and V2 only",
+    "localisingValue": "cavernous sinus"
+   },
+   {
+    "sign": "V1 only with ocular motor palsies",
+    "localisingValue": "superior orbital fissure or orbital apex"
+   },
+   {
+    "sign": "V2 or V3 alone",
+    "localisingValue": "foramen rotundum/ovale or perineural spread"
+   },
+   {
+    "sign": "Dissociated (pain and temperature) facial loss with crossed body loss",
+    "localisingValue": "lateral medulla"
+   },
+   {
+    "sign": "Onion-skin pattern",
+    "localisingValue": "spinal trigeminal nucleus (syrinx, demyelination)"
+   },
+   {
+    "sign": "Numb chin",
+    "localisingValue": "mental nerve: cancer until proven otherwise"
+   }
+  ],
+  "nuclearVsPeripheral": "The nuclear column is so long that the modality lost tells the level: touch is lost with rostral pontine lesions of the principal nucleus, pain and temperature with medullary lesions of the spinal nucleus, and everything with root or ganglion lesions. Peripheral lesions follow the divisional map on the face; nuclear lesions follow the onion-skin map of the spinal nucleus.",
+  "supranuclear": "The motor nucleus receives bilateral corticobulbar input, so a unilateral hemispheric lesion does not weaken the jaw; bilateral lesions produce a brisk jaw jerk and pseudobulbar dysarthria and dysphagia."
+ }
+}

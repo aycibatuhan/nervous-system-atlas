@@ -1,0 +1,237 @@
+{
+ "kind": "cranial-nerve",
+ "id": "cn-12-hypoglossal",
+ "name": "Hypoglossal nerve (CN XII)",
+ "synonyms": [],
+ "system": "cranial-nerves",
+ "meshIds": [],
+ "summary": "A purely motor nerve to the tongue. From the hypoglossal nucleus beneath the floor of the fourth ventricle the fibers pass ventrally between the medial lemniscus and the inferior olive and emerge as rootlets in the preolivary sulcus, leave the skull through the hypoglossal canal and curve down and forward between the carotid and jugular vessels to enter the tongue, supplying all its intrinsic muscles and the genioglossus, hyoglossus and styloglossus (the palatoglossus belongs to the vagus). A lower motor neuron lesion wastes half the tongue and deviates it toward the weak side; because its intramedullary fibers run through the medial medulla it is part of the medial medullary syndrome, and skull base tumors, carotid dissection and neck surgery injure it peripherally.",
+ "anatomy": {
+  "location": "Nucleus in the dorsal paramedian medulla beneath the hypoglossal trigone → fibers ventrally through the medulla lateral to the medial lemniscus → rootlets in the preolivary sulcus between the pyramid and olive → hypoglossal canal in the occipital condyle → descends between the internal carotid artery and internal jugular vein, crosses the carotid bifurcation and the loop of the lingual artery, and enters the tongue above the hyoid.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-corticobulbar"
+  ]
+ },
+ "function": "Movement of the tongue for speech, chewing and swallowing: protrusion (genioglossus), retraction (styloglossus), depression (hyoglossus) and shape changes (intrinsic muscles).",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery",
+   "artery-vertebral",
+   "ascending pharyngeal and occipital arteries"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -46,
+     "z": -46
+    },
+    "label": "hypoglossal nucleus in the paramedian dorsal medulla; fibers to the preolivary sulcus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 14,
+     "y": -46,
+     "z": -52
+    },
+    "label": "hypoglossal canal in the occipital condyle"
+   }
+  ],
+  "normalAppearance": "The rootlets are seen leaving the preolivary sulcus on thin T2; the hypoglossal canal is assessed on skull base CT and contrast MRI. Denervation of half the tongue appears as fatty, atrophic hemitongue on T1 and CT, a sign that may reveal the lesion before the patient notices.",
+  "pathology": [
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Paramedian ventral medullary restriction with ipsilateral tongue weakness and contralateral hemiparesis.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Hypoglossal canal lesion",
+    "modality": "MRI",
+    "finding": "Metastasis, chordoma, glomus tumor or schwannoma in the canal or condyle with denervation of the hemitongue.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Carotid dissection or aneurysm",
+    "modality": "MRI",
+    "finding": "Mural hematoma of the internal carotid near the skull base with an isolated twelfth nerve palsy.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Hemitongue atrophy",
+    "modality": "CT",
+    "finding": "Fatty replacement and shrinkage of one half of the tongue on CT or T1.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "Skull base MRI with contrast and CT; carotid imaging; DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Tongue deviates toward the weak side on protrusion, with wasting and fasciculations",
+    "side": "ipsilateral",
+    "mechanism": "Lower motor neuron: nucleus, rootlets, canal or neck"
+   },
+   {
+    "deficit": "Tongue deviates away from a hemispheric lesion without wasting",
+    "side": "contralateral",
+    "mechanism": "Supranuclear corticobulbar lesion (genioglossus mainly contralateral input)"
+   },
+   {
+    "deficit": "Dysarthria for lingual consonants and difficulty moving food in the mouth",
+    "side": "ipsilateral",
+    "mechanism": "Tongue weakness"
+   },
+   {
+    "deficit": "Bilateral wasting and fasciculations with a spastic component",
+    "side": "bilateral",
+    "mechanism": "Motor neuron disease (mixed bulbar and pseudobulbar)"
+   }
+  ],
+  "examination": [
+   "Inspect the tongue at rest in the mouth for atrophy and fasciculations (protruding the tongue causes false fasciculations)",
+   "Protrude the tongue: deviation is toward the weak side; push against the cheek",
+   "Rapid 'la-la-la' and lingual speech",
+   "Check the palate, voice, sternocleidomastoid (jugular foramen) and the limbs (medial medulla)"
+  ],
+  "syndromes": [
+   "syn-hypoglossal-palsy",
+   "syn-dejerine-medial-medullary",
+   "syn-als-pattern",
+   "syn-jugular-foramen-vernet"
+  ],
+  "pearls": [
+   "Tongue to the weak side: with wasting it is the nerve or nucleus; without wasting it is the opposite hemisphere",
+   "An isolated twelfth nerve palsy is a skull base or carotid lesion until imaged: metastasis, chordoma, dissection"
+  ]
+ },
+ "pitfalls": [
+  "Fasciculations of the protruded tongue are normal; look at the tongue at rest"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    347,
+    348
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    353,
+    353
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    128,
+    128
+   ]
+  }
+ ],
+ "tags": [
+  "cranial-nerve"
+ ],
+ "status": "draft",
+ "latin": "Nervus hypoglossus",
+ "cranial": {
+  "number": 12,
+  "roman": "XII",
+  "components": [
+   "GSE"
+  ],
+  "nuclei": [
+   {
+    "structureId": "hypoglossal-nucleus",
+    "component": "GSE: intrinsic and extrinsic tongue muscles",
+    "level": "medulla-olive"
+   }
+  ],
+  "ganglia": [],
+  "exit": {
+   "brainstemExit": "Preolivary sulcus of the medulla between the pyramid and the olive, as 10–15 rootlets",
+   "cisternalCourse": "Cerebellomedullary cistern in front of the vertebral artery and PICA, converging on the hypoglossal canal",
+   "foramen": "Hypoglossal (anterior condylar) canal in the occipital condyle",
+   "extracranialCourse": "Between the internal carotid artery and internal jugular vein deep to the posterior belly of digastric, across the carotid bifurcation and the lingual artery, into the tongue above the hyoid"
+  },
+  "branches": [
+   {
+    "name": "Muscular branches",
+    "supplies": "genioglossus, hyoglossus, styloglossus, intrinsic muscles of the tongue"
+   },
+   {
+    "name": "Fibers from C1 travelling with the nerve",
+    "supplies": "geniohyoid and thyrohyoid; superior root of the ansa cervicalis (not truly hypoglossal)"
+   }
+  ],
+  "reflexes": [],
+  "tests": [
+   {
+    "name": "Inspection",
+    "how": "Tongue at rest in the floor of the mouth",
+    "normal": "Symmetric, no fasciculations",
+    "abnormal": "Wasting, furrowing and fasciculations on the affected side (lower motor neuron)"
+   },
+   {
+    "name": "Protrusion",
+    "how": "Stick the tongue straight out",
+    "normal": "Midline",
+    "abnormal": "Deviation toward the weak side"
+   },
+   {
+    "name": "Lateral push",
+    "how": "Push the tongue into each cheek against your finger",
+    "normal": "Equal force",
+    "abnormal": "Weak push toward the opposite side (the weak genioglossus cannot push across)"
+   },
+   {
+    "name": "Speech",
+    "how": "Rapid lingual syllables",
+    "normal": "Crisp",
+    "abnormal": "Slurred lingual consonants"
+   }
+  ],
+  "lesionSigns": [
+   {
+    "sign": "Unilateral wasting with contralateral hemiparesis and proprioceptive loss",
+    "localisingValue": "medial medulla (Dejerine)"
+   },
+   {
+    "sign": "Unilateral wasting with IX, X, XI palsies",
+    "localisingValue": "skull base (Collet–Sicard, hypoglossal canal and jugular foramen)"
+   },
+   {
+    "sign": "Isolated unilateral wasting",
+    "localisingValue": "hypoglossal canal or upper neck: tumor, carotid dissection, surgery"
+   },
+   {
+    "sign": "Bilateral wasting and fasciculations",
+    "localisingValue": "motor neuron disease"
+   },
+   {
+    "sign": "Deviation without wasting",
+    "localisingValue": "supranuclear (opposite hemisphere)"
+   }
+  ],
+  "nuclearVsPeripheral": "Nuclear lesions are medial medullary and are accompanied by contralateral hemiparesis and lemniscal loss; the nucleus is also a favorite of motor neuron disease, where bilateral wasting and fasciculations are the rule. Peripheral lesions are isolated or come with the other lower cranial nerves at the skull base.",
+  "supranuclear": "The genioglossus receives mainly contralateral corticobulbar input, so a hemispheric stroke deviates the tongue toward the hemiparetic side (away from the lesion), without wasting; bilateral lesions make the tongue small, stiff and slow (pseudobulbar)."
+ }
+}
