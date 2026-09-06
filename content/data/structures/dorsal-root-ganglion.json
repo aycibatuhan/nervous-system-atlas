@@ -1,0 +1,157 @@
+{
+ "kind": "structure",
+ "id": "dorsal-root-ganglion",
+ "name": "Dorsal root ganglion",
+ "synonyms": [
+  "spinal ganglion",
+  "DRG"
+ ],
+ "system": "spinal-cord",
+ "meshIds": [
+  "spinal-cord"
+ ],
+ "summary": "A swelling on each dorsal root within the intervertebral foramen containing the pseudounipolar cell bodies of all somatic and visceral sensory neurons of that segment. Each neuron sends one process to the periphery in the spinal nerve and one into the cord through the dorsal root. The ganglion lies outside the blood–nerve barrier, which makes it vulnerable to toxins, autoimmune attack and viral latency: herpes zoster reactivates here, and sensory neuronopathies (paraneoplastic, Sjögren, platinum drugs, B6 excess) destroy its cells to produce a non-length-dependent, ataxic sensory loss.",
+ "anatomy": {
+  "location": "In the intervertebral foramen (or, for the sacral roots, inside the spinal canal), on the dorsal root just proximal to its union with the ventral root to form the spinal nerve; the trigeminal, geniculate and other cranial sensory ganglia are its cranial equivalents.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "spinal-gray-posterior-horn and posterior columns",
+    "via": "dorsal root"
+   }
+  ],
+  "pathways": [
+   "pathway-dcml",
+   "pathway-lateral-spinothalamic"
+  ]
+ },
+ "function": "Houses the first-order sensory neurons for touch, proprioception, pain, temperature and visceral sensation; their central processes form the dorsal root and the posterior columns.",
+ "bloodSupply": {
+  "arteries": [
+   "radicular arteries from segmental vessels"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cervicomedullary junction; the ganglia lie in the intervertebral foramina outside the MNI volume"
+   }
+  ],
+  "normalAppearance": "Ganglia are seen on axial and coronal T2/T1+Gd of the spine as ovoid enhancing structures in the foramina (normal enhancement, no blood–nerve barrier); enlargement and marked enhancement occur in ganglionopathies and infiltration.",
+  "pathology": [
+   {
+    "pathology": "Sensory ganglionopathy",
+    "modality": "MRI",
+    "finding": "Posterior column T2 hyperintensity from degeneration of central processes, with normal or enlarged ganglia.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Herpes zoster",
+    "modality": "MRI",
+    "finding": "Enhancement of the affected ganglion and root, sometimes with dorsal horn signal change.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Axial/coronal spine T2 and T1+Gd; nerve conduction studies (absent sensory responses with normal motor)"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Non-length-dependent sensory loss with severe proprioceptive loss and pseudoathetosis",
+    "side": "bilateral",
+    "mechanism": "Loss of large sensory neurons throughout the ganglia"
+   },
+   {
+    "deficit": "Sensory ataxia with normal strength",
+    "side": "bilateral",
+    "mechanism": "Proprioceptive deafferentation"
+   },
+   {
+    "deficit": "Dermatomal pain and vesicles (shingles)",
+    "side": "ipsilateral",
+    "mechanism": "Reactivation of varicella zoster in one ganglion"
+   },
+   {
+    "deficit": "Absent sensory nerve action potentials with preserved motor studies",
+    "side": "bilateral",
+    "mechanism": "Selective sensory neuron loss"
+   }
+  ],
+  "examination": [
+   "Vibration and joint position sense in the arms as well as the legs (non-length-dependent)",
+   "Romberg and pseudoathetosis of outstretched fingers",
+   "Reflexes (absent)",
+   "Look for a dermatomal rash"
+  ],
+  "syndromes": [
+   "syn-length-dependent-polyneuropathy",
+   "syn-radiculopathy-cervical"
+  ],
+  "pearls": [
+   "Sensory loss that starts in the face, trunk or arms and is worse for proprioception is a ganglionopathy, not a neuropathy: look for cancer (anti-Hu), Sjögren syndrome or drugs",
+   "Shingles pain can precede the rash by days: a dermatomal pain with no explanation deserves a second look"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    82,
+    82
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 3,
+   "pages": [
+    118,
+    118
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    138,
+    140
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    129,
+    134
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 27,
+   "pages": [
+    281,
+    283
+   ]
+  }
+ ],
+ "tags": [
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Ganglion sensorium nervi spinalis",
+ "subsystem": "roots",
+ "level": {
+  "region": "spinal"
+ }
+}

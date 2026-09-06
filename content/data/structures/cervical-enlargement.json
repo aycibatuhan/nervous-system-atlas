@@ -1,0 +1,137 @@
+{
+ "kind": "structure",
+ "id": "cervical-enlargement",
+ "name": "Cervical and lumbosacral enlargements",
+ "synonyms": [],
+ "system": "spinal-cord",
+ "meshIds": [
+  "spinal-cord"
+ ],
+ "summary": "The cord is thickest where it supplies the limbs: the cervical enlargement (C5–T1, the brachial plexus segments) and the lumbosacral enlargement (L2–S3, the lumbosacral plexus segments), where the lateral motor columns and the sensory relay for the limbs swell the gray matter. Lesions here combine lower motor neuron signs in the limb at the level with upper motor neuron signs below, and their arterial supply depends on the largest radicular feeders, the C5–C6 radicular arteries above and the artery of Adamkiewicz below.",
+ "anatomy": {
+  "location": "Cervical enlargement from C4 to T1 segments, lying opposite the C3–T1 vertebrae; lumbosacral enlargement from L1 to S3 segments, lying opposite the T10–L1 vertebrae just above the conus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-lateral-corticospinal"
+  ]
+ },
+ "function": "Motor and sensory integration for the upper and lower limbs: the largest motor neuron pools and the widest dorsal horns of the cord.",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery",
+   "artery-adamkiewicz",
+   "artery-vertebral"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "upper cervical cord above the cervical enlargement; the enlargements lie below the MNI volume"
+   }
+  ],
+  "normalAppearance": "On sagittal spine MRI the cord widens at C4–T1 and again at T10–L1; a lesion at the cervical enlargement is the commonest site of cervical spondylotic myelopathy, and the lumbosacral enlargement is the target of the anterior spinal artery syndrome after aortic surgery.",
+  "pathology": [
+   {
+    "pathology": "Cervical spondylotic myelopathy",
+    "modality": "MRI",
+    "finding": "Cord compression at C4–C6 by disc-osteophyte bars and ligamentum flavum with T2 signal change in the cord.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Central cord syndrome after hyperextension injury",
+    "modality": "MRI",
+    "finding": "Central T2 hyperintensity of the cervical enlargement, arms weaker than legs.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal and axial cervical and thoracolumbar T2"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Lower motor neuron weakness and wasting of the hand or arm with upper motor neuron signs in the legs",
+    "side": "bilateral",
+    "mechanism": "Cervical enlargement lesion"
+   },
+   {
+    "deficit": "Arms weaker than legs (central cord syndrome)",
+    "side": "bilateral",
+    "mechanism": "Central gray and medial corticospinal fibers of the cervical enlargement"
+   },
+   {
+    "deficit": "Lower motor neuron leg weakness with sphincter failure",
+    "side": "bilateral",
+    "mechanism": "Lumbosacral enlargement and conus"
+   }
+  ],
+  "examination": [
+   "Compare hand intrinsic muscle bulk and power with leg tone and reflexes",
+   "Reflexes: inverted supinator reflex at C5–C6",
+   "Sensory level and sphincters"
+  ],
+  "syndromes": [
+   "syn-cervical-spondylotic-myelopathy",
+   "syn-central-cord-syringomyelia",
+   "syn-anterior-cord"
+  ],
+  "pearls": [
+   "Wasted hands with spastic legs: cervical cord at the enlargement (spondylosis, syrinx, MND)",
+   "An inverted brachioradialis reflex localizes a cervical lesion to C5–C6"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    136,
+    137
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 19,
+   "pages": [
+    507,
+    512
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    41,
+    45
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    145,
+    147
+   ]
+  }
+ ],
+ "tags": [
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Intumescentia cervicalis et lumbosacralis",
+ "subsystem": "cord",
+ "level": {
+  "region": "spinal"
+ }
+}

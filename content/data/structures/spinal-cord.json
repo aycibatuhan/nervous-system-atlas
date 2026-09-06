@@ -1,0 +1,225 @@
+{
+ "kind": "structure",
+ "id": "spinal-cord",
+ "name": "Spinal cord",
+ "synonyms": [],
+ "system": "spinal-cord",
+ "meshIds": [
+  "spinal-cord"
+ ],
+ "summary": "A cylinder of nervous tissue about 45 cm long in the adult, running from the foramen magnum to the conus medullaris at the L1–L2 disc, enclosed by the three meninges inside the vertebral canal. Its central H-shaped gray matter contains the motor neurons, sensory relay neurons and autonomic neurons of 31 segments; the surrounding white matter carries the long tracts in three funiculi. Two rules make cord lesions localizable: tracts have a fixed cross-sectional position (motor lateral, pain anterolateral, proprioception posterior), and the sensory level and reflex pattern mark the segment. Because the cord ends at L1–L2, lumbar puncture below L3 is safe and cauda equina lesions below the conus are lower motor neuron lesions.",
+ "anatomy": {
+  "location": "Vertebral canal from the cervicomedullary junction at the foramen magnum to the conus medullaris at the lower border of L1 (range T12–L3), with cervical and lumbosacral enlargements for the limbs, suspended by the denticulate ligaments and anchored below by the filum terminale; the cord segments lie progressively higher than the vertebrae of the same number.",
+  "subdivisions": [
+   {
+    "name": "Gray matter",
+    "note": "anterior horn (motor), posterior horn (sensory), lateral horn T1–L2 (sympathetic) and S2–S4 (parasympathetic), central canal"
+   },
+   {
+    "name": "White matter",
+    "note": "posterior, lateral and anterior funiculi carrying the ascending and descending tracts"
+   },
+   {
+    "name": "Segments",
+    "note": "8 cervical, 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal, each with a pair of roots"
+   },
+   {
+    "name": "Enlargements",
+    "note": "cervical C5–T1 for the arm, lumbosacral L2–S3 for the leg"
+   }
+  ],
+  "relations": {
+   "anterior": "vertebral bodies, posterior longitudinal ligament, discs",
+   "posterior": "laminae and ligamenta flava",
+   "lateral": "pedicles and intervertebral foramina with the roots"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-lateral-corticospinal",
+   "pathway-dcml",
+   "pathway-lateral-spinothalamic"
+  ]
+ },
+ "function": "Conducts all sensory information from the body to the brain and all motor commands from the brain to the body, and contains the segmental reflex circuits (stretch, withdrawal), the central pattern generators for locomotion and the autonomic outflow for the trunk, limbs, bladder, bowel and sexual function.",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery",
+   "posterior-spinal-arteries",
+   "artery-adamkiewicz"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -60
+    },
+    "label": "cervicomedullary junction and upper cervical cord (the only part within the MNI volume)"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cross-section of the upper cervical cord"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cord descending through the foramen magnum"
+   }
+  ],
+  "normalAppearance": "The upper cervical cord is in the MNI volume; the rest needs a dedicated spine MRI. Sagittal T2 shows the cord as intermediate signal within bright CSF; axial T2 at 3 T shows the butterfly of gray matter. Cord signal change, swelling, atrophy, compression and the level of a lesion relative to the vertebrae are the key observations.",
+  "pathology": [
+   {
+    "pathology": "Spinal cord compression (metastasis, disc, epidural abscess)",
+    "modality": "MRI",
+    "finding": "Extradural mass displacing and flattening the cord with T2 signal change in the compressed segment; an emergency.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Transverse myelitis / MS",
+    "modality": "MRI",
+    "finding": "T2-bright intramedullary lesion: short (under 2 segments, peripheral) in MS, long (3 or more segments, central, swollen) in neuromyelitis optica and other longitudinally extensive myelitis.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Cord infarct",
+    "modality": "MRI",
+    "finding": "Anterior two-thirds T2 hyperintensity with owl's eye anterior horns on axial images and restricted diffusion.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Syringomyelia",
+    "modality": "MRI",
+    "finding": "Central CSF-signal cavity within the cord, often with a Chiari malformation.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Subacute combined degeneration",
+    "modality": "MRI",
+    "finding": "Inverted V T2 hyperintensity of the posterior columns over several cervical segments.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal and axial T2 with T1 and contrast; DWI for infarct; CT for bone"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weakness below the level with upper motor neuron signs, lower motor neuron signs at the level",
+    "side": "bilateral",
+    "mechanism": "Descending tracts interrupted and anterior horn cells destroyed at the segment"
+   },
+   {
+    "deficit": "Sensory level",
+    "side": "bilateral",
+    "mechanism": "Ascending tracts interrupted; the level is one to two segments below the lesion for spinothalamic modalities"
+   },
+   {
+    "deficit": "Bladder, bowel and sexual dysfunction",
+    "side": "bilateral",
+    "mechanism": "Descending autonomic pathways"
+   },
+   {
+    "deficit": "Spinal shock: flaccidity and areflexia after acute complete lesions",
+    "side": "bilateral",
+    "mechanism": "Transient loss of segmental excitability below the lesion"
+   },
+   {
+    "deficit": "Autonomic dysreflexia and orthostatic hypotension in lesions above T6",
+    "side": "bilateral",
+    "mechanism": "Loss of supraspinal control of the sympathetic outflow"
+   }
+  ],
+  "examination": [
+   "Sensory level to pin-prick and vibration, checked front and back",
+   "Power by myotome and the pattern of reflexes: absent at the level, brisk below",
+   "Plantar responses, clonus, tone",
+   "Anal tone, perianal sensation, bladder scan",
+   "Look for a Lhermitte sign, spinal tenderness and a girdle pain"
+  ],
+  "syndromes": [
+   "syn-brown-sequard",
+   "syn-anterior-cord",
+   "syn-central-cord-syringomyelia",
+   "syn-posterior-cord-subacute-combined",
+   "syn-complete-transection-spinal-shock",
+   "syn-conus-vs-cauda-equina",
+   "syn-cervical-spondylotic-myelopathy"
+  ],
+  "pearls": [
+   "Bilateral limb signs with a sensory level and sphincter disturbance and a normal face is the spinal cord",
+   "Spinal cord compression is the neurological emergency where hours matter: image the whole spine the same day",
+   "The sensory level on the trunk marks the lesion; the cord segment lies about one vertebra higher in the cervical region and two in the thoracic"
+  ]
+ },
+ "pitfalls": [
+  "A normal cervical MRI does not exclude a thoracic lesion; image the whole cord when the level is unclear",
+  "Early cord compression can present with pain alone"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    131,
+    142
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    163,
+    175
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 19,
+   "pages": [
+    507,
+    512
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    41,
+    45
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    33,
+    38
+   ]
+  }
+ ],
+ "tags": [
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Medulla spinalis",
+ "subsystem": "cord",
+ "level": {
+  "region": "spinal"
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "kind": "structure",
+ "id": "veins-superficial-cerebral",
+ "name": "Superficial cerebral (bridging) veins",
+ "synonyms": [
+  "cortical veins",
+  "vein of Trolard",
+  "vein of Labbé",
+  "superficial middle cerebral vein"
+ ],
+ "system": "venous",
+ "meshIds": [
+  "dura-mater-cranial"
+ ],
+ "summary": "The cortex drains through superficial veins that run in the subarachnoid space and cross the subdural space as bridging veins to enter the dural sinuses: the superior cerebral veins into the superior sagittal sinus, the superficial middle cerebral vein along the Sylvian fissure into the cavernous or sphenoparietal sinus, and the two large anastomotic veins, Trolard (to the superior sagittal sinus) and Labbé (to the transverse sinus). The bridging veins tear with acceleration of the brain relative to the skull, producing subdural hematoma, especially in atrophic elderly and anticoagulated patients; cortical vein thrombosis causes focal seizures and lobar hemorrhage.",
+ "anatomy": {
+  "location": "Over the convexity in the sulci and on the gyri beneath the arachnoid, converging on the sinuses; the bridging segments cross the subdural space near the vertex, the vein of Labbé runs over the posterior temporal lobe to the transverse sinus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "sinus-superior-sagittal",
+    "via": "bridging veins"
+   },
+   {
+    "to": "sinus-transverse-sigmoid",
+    "via": "vein of Labbé"
+   },
+   {
+    "to": "sinus-cavernous",
+    "via": "superficial middle cerebral vein"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Venous drainage of the cerebral cortex and subcortical white matter into the dural sinuses; the anastomotic veins provide alternative routes when a sinus is occluded.",
+ "bloodSupply": {
+  "arteries": [
+   "(venous structure) drains territories of the cerebral arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -20,
+     "z": 55
+    },
+    "label": "bridging veins entering the superior sagittal sinus at the vertex"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 50,
+     "y": -50,
+     "z": 10
+    },
+    "label": "vein of Labbé crossing the posterior temporal lobe to the transverse sinus"
+   }
+  ],
+  "normalAppearance": "Cortical veins are dark on T2 and SWI and enhance on contrast images; a thrombosed cortical vein is a dense cord on CT, bright on T1 and blooming on SWI, with adjacent edema or hemorrhage. Subdural hematoma is the imaging footprint of torn bridging veins.",
+  "pathology": [
+   {
+    "pathology": "Cortical vein thrombosis",
+    "modality": "MRI",
+    "finding": "Tubular SWI hypointensity and T1 hyperintensity of a cortical vein with adjacent edema, hemorrhage or infarct; seizures and focal deficits.",
+    "sequence": "SWI"
+   },
+   {
+    "pathology": "Subdural hematoma",
+    "modality": "CT",
+    "finding": "Crescentic collection from bridging vein rupture.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Vein of Labbé infarct",
+    "modality": "MRI",
+    "finding": "Temporal lobe venous hemorrhagic infarct with transverse sinus thrombosis.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "SWI and T1 with venography; CT for hematoma"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Subdural hematoma with headache, confusion, hemiparesis",
+    "side": "contralateral",
+    "mechanism": "Bridging vein rupture"
+   },
+   {
+    "deficit": "Focal seizures and cortical deficits",
+    "side": "contralateral",
+    "mechanism": "Cortical vein thrombosis"
+   },
+   {
+    "deficit": "Aphasia with a temporal venous infarct",
+    "side": "n/a",
+    "mechanism": "Vein of Labbé occlusion on the dominant side"
+   }
+  ],
+  "examination": [
+   "Level of consciousness and lateralizing signs",
+   "Seizure history",
+   "Anticoagulant use and fall history"
+  ],
+  "syndromes": [
+   "syn-subdural-hematoma",
+   "syn-cerebral-venous-sinus-thrombosis"
+  ],
+  "pearls": [
+   "Atrophy stretches the bridging veins: minor trauma in the elderly is enough for a subdural",
+   "A hemorrhagic infarct that ignores arterial territories and sits under a sinus is venous"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    419,
+    423
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    429,
+    430
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    469,
+    469
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    199,
+    201
+   ]
+  }
+ ],
+ "tags": [
+  "venous"
+ ],
+ "status": "draft",
+ "latin": "Venae superficiales cerebri"
+}

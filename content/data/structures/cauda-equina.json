@@ -1,0 +1,161 @@
+{
+ "kind": "structure",
+ "id": "cauda-equina",
+ "name": "Cauda equina",
+ "synonyms": [],
+ "system": "spinal-cord",
+ "meshIds": [
+  "spinal-cord"
+ ],
+ "summary": "The bundle of lumbar, sacral and coccygeal nerve roots that descends below the conus medullaris inside the lumbar cistern to reach their intervertebral foramina, produced by the differential growth of the vertebral column over the cord. They are peripheral nerve roots, so their compression by a large central disc, tumor or hematoma causes a lower motor neuron syndrome: asymmetric leg weakness, radicular pain, saddle sensory loss and late sphincter failure. It is a surgical emergency, and the roots float in CSF, which is what makes lumbar puncture below L2 safe.",
+ "anatomy": {
+  "location": "Lumbar cistern of the subarachnoid space from the conus at L1–L2 down to the end of the dural sac at S2, surrounding the filum terminale; the roots arrange themselves with the lower sacral roots central and the higher lumbar roots lateral.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Conveys motor, sensory and autonomic fibers of the L2–S5 roots to and from the lower limbs, perineum and pelvic organs.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-adamkiewicz"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cord (the cauda equina lies in the lumbar canal, below the MNI volume)"
+   }
+  ],
+  "normalAppearance": "On sagittal and axial lumbar T2 the roots are dark linear structures within bright CSF, normally lying dependent; clumping, enhancement or compression by a disc or mass are abnormal. Lumbar MRI is the emergency investigation for suspected cauda equina syndrome.",
+  "pathology": [
+   {
+    "pathology": "Cauda equina syndrome from central disc herniation",
+    "modality": "MRI",
+    "finding": "Large L4–L5 or L5–S1 disc filling the canal and compressing the roots.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Leptomeningeal metastases / Guillain–Barré",
+    "modality": "MRI",
+    "finding": "Enhancement and thickening of the roots after contrast.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Arachnoiditis",
+    "modality": "MRI",
+    "finding": "Clumped, peripherally displaced roots after surgery or infection.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "Urgent sagittal and axial lumbosacral MRI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Asymmetric flaccid leg weakness with absent reflexes",
+    "side": "bilateral",
+    "mechanism": "Lower motor neuron roots"
+   },
+   {
+    "deficit": "Radicular (sciatic) pain and asymmetric saddle numbness",
+    "side": "bilateral",
+    "mechanism": "Sensory roots"
+   },
+   {
+    "deficit": "Urinary retention with overflow, fecal incontinence, impotence (later and less symmetric than conus lesions)",
+    "side": "bilateral",
+    "mechanism": "Sacral roots S2–S4"
+   },
+   {
+    "deficit": "Absent ankle jerks with preserved plantars",
+    "side": "bilateral",
+    "mechanism": "Peripheral (root) lesion"
+   }
+  ],
+  "examination": [
+   "Straight-leg raise and dermatomal sensation of the legs",
+   "Perianal sensation and anal tone",
+   "Ankle and knee reflexes",
+   "Post-void residual bladder volume"
+  ],
+  "syndromes": [
+   "syn-conus-vs-cauda-equina",
+   "syn-radiculopathy-lumbosacral",
+   "syn-guillain-barre"
+  ],
+  "pearls": [
+   "Bilateral sciatica with any bladder symptom or perineal numbness needs an MRI the same day",
+   "Cauda equina lesions are painful and asymmetric; conus lesions are quiet and symmetric"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    134,
+    134
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    168,
+    168
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    41,
+    41
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    45,
+    45
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    130,
+    130
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    162,
+    163
+   ]
+  }
+ ],
+ "tags": [
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Cauda equina",
+ "subsystem": "roots",
+ "level": {
+  "region": "spinal"
+ }
+}

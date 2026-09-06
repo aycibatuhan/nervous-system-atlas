@@ -1,0 +1,165 @@
+{
+ "kind": "structure",
+ "id": "tentorium-cerebelli",
+ "name": "Tentorium cerebelli and incisura",
+ "synonyms": [],
+ "system": "meninges",
+ "meshIds": [
+  "tentorium-cerebelli"
+ ],
+ "summary": "A tent-shaped dural fold that roofs the posterior cranial fossa, separating the cerebellum from the occipital lobes and dividing the cranial cavity into supratentorial and infratentorial compartments. Its free anterior edge forms the tentorial incisura (notch) through which the midbrain passes, accompanied by the oculomotor nerves, the posterior cerebral and superior cerebellar arteries and the basal veins. This notch is the site of the herniation syndromes: the uncus herniates down through it and the cerebellar vermis herniates up through it. The transverse sinuses run in its attached margin and the straight sinus along its junction with the falx.",
+ "anatomy": {
+  "location": "Attached posteriorly to the transverse sulci of the occipital bone, laterally to the petrous ridges and anteriorly to the clinoid processes; the falx cerebri is attached to its upper surface in the midline; the free edge surrounds the midbrain.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Support of the occipital lobes, compartmentalization of pressure between the supratentorial and infratentorial spaces, and housing of the transverse and straight sinuses.",
+ "bloodSupply": {
+  "arteries": [
+   "tentorial branches of the internal carotid (meningohypophyseal trunk)",
+   "middle meningeal artery"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 20,
+     "y": -50,
+     "z": -5
+    },
+    "label": "tentorium separating occipital lobe from cerebellum"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -50,
+     "z": -5
+    },
+    "label": "tentorium from the straight sinus to the occipital bone; the incisura in front"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -25,
+     "z": -10
+    },
+    "label": "incisura around the midbrain with the ambient cisterns"
+   }
+  ],
+  "normalAppearance": "A dense line sloping from the vertex of the posterior fossa to the petrous ridges on coronal images; on axial CT its edge appears as a V or Y shape and blood along it (tentorial subdural) is common after trauma. The perimesencephalic cisterns at the incisura should be open; their effacement means transtentorial herniation.",
+  "pathology": [
+   {
+    "pathology": "Uncal (transtentorial) herniation",
+    "modality": "CT",
+    "finding": "Medial temporal lobe displaced through the incisura with effaced ambient cistern, midbrain compression and a dilated ipsilateral pupil.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Upward cerebellar herniation",
+    "modality": "CT",
+    "finding": "Superior vermis pushed through the incisura by a posterior fossa mass, flattening the quadrigeminal cistern.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Tentorial meningioma",
+    "modality": "MRI",
+    "finding": "Dural-based enhancing mass on either surface of the tentorium.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Tentorial subdural hematoma",
+    "modality": "CT",
+    "finding": "Dense blood along the tentorium after trauma.",
+    "sequence": "CT non-contrast"
+   }
+  ],
+  "sequenceOfChoice": "CT for herniation and blood; MRI with contrast for masses"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Third nerve palsy with a dilated pupil",
+    "side": "ipsilateral",
+    "mechanism": "Uncus compressing the oculomotor nerve at the incisura"
+   },
+   {
+    "deficit": "Contralateral hemiparesis, or ipsilateral via Kernohan notch",
+    "side": "contralateral",
+    "mechanism": "Cerebral peduncle compressed against the tentorial edge"
+   },
+   {
+    "deficit": "Homonymous hemianopia after herniation",
+    "side": "contralateral",
+    "mechanism": "PCA compressed against the tentorial edge"
+   },
+   {
+    "deficit": "Fourth nerve palsy",
+    "side": "contralateral",
+    "mechanism": "Trochlear nerve running along the free edge"
+   }
+  ],
+  "examination": [
+   "Pupils, level of consciousness, posturing",
+   "Visual fields after recovery from herniation",
+   "Eye movements"
+  ],
+  "syndromes": [
+   "syn-uncal-herniation",
+   "syn-central-transtentorial-herniation",
+   "syn-tonsillar-herniation"
+  ],
+  "pearls": [
+   "The tentorial notch is where supratentorial pressure meets the brainstem; the blown pupil is its alarm",
+   "A patient who survives uncal herniation often wakes with a hemianopia from PCA compression"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    418,
+    420
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    428,
+    431
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    26,
+    29
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    270,
+    270
+   ]
+  }
+ ],
+ "tags": [
+  "meninges"
+ ],
+ "status": "draft",
+ "latin": "Tentorium cerebelli"
+}

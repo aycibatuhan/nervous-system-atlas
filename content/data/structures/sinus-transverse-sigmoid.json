@@ -1,0 +1,183 @@
+{
+ "kind": "structure",
+ "id": "sinus-transverse-sigmoid",
+ "name": "Transverse and sigmoid sinuses",
+ "synonyms": [
+  "lateral sinuses"
+ ],
+ "system": "venous",
+ "meshIds": [
+  "dura-mater-cranial",
+  "tentorium-cerebelli"
+ ],
+ "summary": "From the confluence of sinuses each transverse sinus runs laterally in the attached margin of the tentorium along the occipital bone, receives the superior petrosal sinus and inferior cerebral and cerebellar veins, and then curves down as the sigmoid sinus in an S-shaped groove of the mastoid to leave the skull through the jugular foramen as the internal jugular vein. The right side is usually dominant. Their proximity to the mastoid air cells and middle ear made septic thrombosis a classic complication of otitis (lateral sinus thrombosis), and thrombosis or stenosis here is the venous lesion most closely linked with idiopathic intracranial hypertension.",
+ "anatomy": {
+  "location": "Transverse sinus in the posterior attached edge of the tentorium from the internal occipital protuberance to the petrous bone; sigmoid sinus in the sigmoid sulcus of the temporal bone behind the mastoid, ending at the jugular bulb.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "sinus-superior-sagittal and sinus-straight",
+    "via": "confluence"
+   },
+   {
+    "from": "sinus-petrosal"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "internal jugular vein",
+    "via": "jugular foramen"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Main outflow of the brain's venous blood from the confluence to the internal jugular veins; drainage of the inferior cerebral, cerebellar and petrosal veins.",
+ "bloodSupply": {
+  "arteries": [
+   "(venous structure) drains territories of the cerebral arteries"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 40,
+     "y": -70,
+     "z": -10
+    },
+    "label": "transverse sinus along the occipital bone at the tentorial attachment"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 45,
+     "y": -50,
+     "z": -30
+    },
+    "label": "sigmoid sinus curving behind the mastoid to the jugular foramen"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 40,
+     "y": -60,
+     "z": -10
+    },
+    "label": "transverse sinus in the tentorial margin"
+   }
+  ],
+  "normalAppearance": "Broad flow voids along the occipital bone and behind the mastoids; asymmetry of calibre is normal (usually right dominant) and arachnoid granulations cause smooth filling defects. Thrombosis shows a dense sinus on CT, absent flow on venography and temporal or cerebellar venous infarcts; bilateral distal transverse sinus stenosis is typical of idiopathic intracranial hypertension.",
+  "pathology": [
+   {
+    "pathology": "Transverse/sigmoid sinus thrombosis",
+    "modality": "MRV",
+    "finding": "Absent flow with clot signal, often with mastoiditis or otitis (septic thrombosis), temporal lobe venous infarct or hemorrhage.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Transverse sinus stenosis in IIH",
+    "modality": "MRV",
+    "finding": "Bilateral smooth narrowing of the distal transverse sinuses with an empty sella and flattened globes.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Glomus jugulare tumor",
+    "modality": "MRI",
+    "finding": "Salt-and-pepper enhancing mass at the jugular foramen invading the sigmoid sinus.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "CT/MR venography; temporal bone CT for mastoid disease"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Headache, papilledema, pulsatile tinnitus",
+    "side": "n/a",
+    "mechanism": "Venous hypertension"
+   },
+   {
+    "deficit": "Temporal lobe venous infarction with aphasia or seizures",
+    "side": "contralateral",
+    "mechanism": "Vein of Labbé congestion"
+   },
+   {
+    "deficit": "Lower cranial nerve palsies with jugular foramen involvement",
+    "side": "ipsilateral",
+    "mechanism": "Adjacent IX, X, XI at the jugular foramen"
+   },
+   {
+    "deficit": "Otitis with fever and headache (septic lateral sinus thrombosis)",
+    "side": "n/a",
+    "mechanism": "Spread from the mastoid"
+   }
+  ],
+  "examination": [
+   "Fundoscopy and visual fields",
+   "Ear examination and mastoid tenderness",
+   "Palate, gag, sternocleidomastoid for the jugular foramen nerves",
+   "Auscultate for a venous hum"
+  ],
+  "syndromes": [
+   "syn-cerebral-venous-sinus-thrombosis",
+   "syn-idiopathic-intracranial-hypertension",
+   "syn-jugular-foramen-vernet"
+  ],
+  "pearls": [
+   "Unilateral hypoplasia of a transverse sinus is a normal variant; do not call it thrombosis without clot signal",
+   "Otitis media with headache and a sixth nerve palsy: think petrous apicitis and sigmoid sinus thrombosis"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    420,
+    423
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    469,
+    469
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    29,
+    29
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    200,
+    201
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    272,
+    276
+   ]
+  }
+ ],
+ "tags": [
+  "venous"
+ ],
+ "status": "draft",
+ "latin": "Sinus transversus; sinus sigmoideus"
+}
