@@ -1,0 +1,75 @@
+# Z-Anatomy (CC BY-SA 4.0) objects to export. `objects` are base names in Startup.blend; paired objects carry .l/.r suffixes
+# and produce <id>-l / <id>-r meshes; `paired: false` exports a single midline mesh (all listed objects merged).
+# system/subsystem/structureId follow the atlas conventions; budget: small 1500, medium 4000, large 10000 faces.
+defaults: {alignment: registered-affine, source: zanatomy}
+entries:
+  # ---- cranial nerves (peripheral courses)
+  - {id: cn-01-olfactory, name: Olfactory nerve (I), system: cranial-nerves, subsystem: I, structureId: cn-01-olfactory, objects: ["Olfactory nerve (I)"], budget: small, colour: "#f4d35e"}
+  - {id: cn-03-oculomotor-course, name: Oculomotor nerve (III), orbital course, system: cranial-nerves, subsystem: III, structureId: cn-03-oculomotor, objects: ["Oculomotor nerve (III)"], budget: small, colour: "#f4a261"}
+  - {id: cn-04-trochlear, name: Trochlear nerve (IV), system: cranial-nerves, subsystem: IV, structureId: cn-04-trochlear, objects: ["Trochlear nerve (IV)"], budget: small, colour: "#e9c46a"}
+  - {id: cn-05-trigeminal-course, name: Trigeminal nerve (V), roots and ganglion, system: cranial-nerves, subsystem: V, structureId: cn-05-trigeminal, objects: ["Trigeminal nerve (V)", "Motor root of trigeminal nerve", "Sensory root of trigeminal nerve"], budget: medium, colour: "#e76f51"}
+  - {id: maxillary-nerve, name: Maxillary nerve (V2), system: cranial-nerves, subsystem: V, structureId: cn-05-trigeminal, objects: ["Maxillary nerve", "Meningeal branch of maxillary nerve"], budget: small, colour: "#e98a6a"}
+  - {id: mandibular-nerve, name: Mandibular nerve (V3) and branches, system: cranial-nerves, subsystem: V, structureId: cn-05-trigeminal, objects: ["Anterior division of mandibular nerve", "Posterior division of mandibular nerve", "Inferior alveolar nerve", "Lingual nerve", "Buccal nerve", "Mental nerve", "Nerve to mylohyoid muscle"], budget: medium, colour: "#ec9f80"}
+  - {id: cn-06-abducens, name: Abducens nerve (VI), system: cranial-nerves, subsystem: VI, structureId: cn-06-abducens, objects: ["Abducens nerve (VI)"], budget: small, colour: "#f6bd60"}
+  - {id: cn-07-facial-course, name: Facial nerve (VII), temporal and extracranial course, system: cranial-nerves, subsystem: VII, structureId: cn-07-facial, objects: ["Facial nerve (VII)"], budget: medium, colour: "#f28482"}
+  - {id: cn-07-chorda-tympani, name: Chorda tympani, system: cranial-nerves, subsystem: VII, structureId: cn-07-facial, objects: ["Chorda tympani"], budget: small, colour: "#f5a3a1"}
+  - {id: cn-08-vestibulocochlear-course, name: Vestibulocochlear nerve (VIII), meatal course, system: cranial-nerves, subsystem: VIII, structureId: cn-08-vestibulocochlear, objects: ["Vestibulocochlear nerve (VIII)", "Vestibular nerve"], budget: small, colour: "#84a59d"}
+  - {id: cn-09-glossopharyngeal, name: Glossopharyngeal nerve (IX), system: cranial-nerves, subsystem: IX, structureId: cn-09-glossopharyngeal, objects: ["Glossopharyngeal nerve (IX)"], budget: small, colour: "#b5c99a"}
+  - {id: cn-10-vagus, name: Vagus nerve (X), system: cranial-nerves, subsystem: X, structureId: cn-10-vagus, objects: ["Vagus nerve (X)"], budget: medium, colour: "#a3b18a"}
+  - {id: cn-11-accessory, name: Accessory nerve (XI), system: cranial-nerves, subsystem: XI, structureId: cn-11-accessory, objects: ["Accessory nerve (XI)"], budget: small, colour: "#8fb996"}
+  - {id: cn-12-hypoglossal, name: Hypoglossal nerve (XII), system: cranial-nerves, subsystem: XII, structureId: cn-12-hypoglossal, objects: ["Hypoglossal nerve (XII)"], budget: small, colour: "#c9cba3"}
+  # ---- brainstem nuclei
+  - {id: abducens-nucleus, name: Abducens nucleus, system: brainstem, subsystem: pons, structureId: abducens-nucleus, objects: ["Nucleus of abducens nerve"], budget: small, colour: "#f6bd60"}
+  - {id: facial-motor-nucleus, name: Facial motor nucleus, system: brainstem, subsystem: pons, structureId: facial-motor-nucleus, objects: ["Motor nucleus of facial nerve"], budget: small, colour: "#f28482"}
+  - {id: oculomotor-nucleus, name: Oculomotor nucleus, system: brainstem, subsystem: midbrain, structureId: oculomotor-nucleus, objects: ["Nucleus of oculomotor nerve", "Accessory nucleus of oculomotor nerve"], budget: small, colour: "#f4a261"}
+  - {id: vestibular-nuclei, name: Vestibular nuclei, system: brainstem, subsystem: pons, structureId: vestibular-nuclei, objects: ["Vestibular nuclei"], budget: small, colour: "#84a59d"}
+  - {id: cochlear-nuclei, name: Cochlear nuclei, system: brainstem, subsystem: medulla, structureId: cochlear-nuclei, objects: ["Anterior cochlear nucleus"], budget: small, colour: "#6d9b93"}
+  - {id: superior-salivatory-nucleus, name: Superior salivatory nucleus, system: brainstem, subsystem: pons, structureId: facial-motor-nucleus, objects: ["Superior salivatory nucleus"], budget: small, colour: "#f5a3a1"}
+  - {id: accessory-nucleus, name: Spinal accessory nucleus, system: brainstem, subsystem: medulla, structureId: cn-11-accessory, objects: ["Nucleus of accessory nerve"], budget: small, colour: "#8fb996"}
+  - {id: pyramid, name: Pyramid of the medulla, system: brainstem, subsystem: medulla, structureId: pyramid, objects: ["Pyramid of medulla oblongata"], budget: small, colour: "#d9a066"}
+  - {id: inferior-olivary-nucleus, name: Inferior olive, system: brainstem, subsystem: medulla, structureId: inferior-olivary-nucleus, objects: ["Olive"], budget: small, colour: "#c58c4f"}
+  - {id: cerebral-peduncle-crus, name: Crus cerebri (base of peduncle), system: brainstem, subsystem: midbrain, structureId: cerebral-peduncle-crus, objects: ["Base of peduncle"], budget: small, colour: "#b57f4d"}
+  # ---- CNS extras
+  - {id: falx-cerebri, name: Falx cerebri, system: meninges, subsystem: dura, structureId: falx-cerebri, objects: ["Falx cerebri"], budget: medium, colour: "#9a8c98", opacity: 0.35, paired: false}
+  - {id: cauda-equina, name: Cauda equina, system: spinal-cord, subsystem: roots, structureId: cauda-equina, objects: ["Cauda equina"], budget: medium, colour: "#e0c097", paired: false}
+  - {id: spinal-roots-anterior, name: Anterior (ventral) roots, system: spinal-cord, subsystem: roots, structureId: spinal-nerve-root-dermatome, objects: ["Anterior root of spinal nerve"], budget: medium, colour: "#e9b384"}
+  - {id: spinal-roots-posterior, name: Posterior (dorsal) roots, system: spinal-cord, subsystem: roots, structureId: spinal-nerve-root-dermatome, objects: ["Posterior root of spinal nerve"], budget: medium, colour: "#d4a276"}
+  - {id: spinal-dura, name: Spinal dura mater, system: meninges, subsystem: dura, structureId: dura-mater, objects: ["Spinal dura"], budget: medium, colour: "#9a8c98", opacity: 0.3, paired: false}
+  - {id: choroid-plexus, name: Choroid plexus, system: ventricles-csf, subsystem: csf, structureId: choroid-plexus, objects: ["Choroid plexus"], budget: small, colour: "#c77dff"}
+  - {id: septal-area, name: Septal nuclei, system: cerebrum, subsystem: limbic, structureId: septal-area, objects: ["Septal nuclei"], budget: small, colour: "#b8c0ff"}
+  - {id: stria-terminalis, name: Stria terminalis, system: tracts, subsystem: limbic, structureId: amygdala, objects: ["Stria terminalis"], budget: small, colour: "#c8b6ff"}
+  # ---- dural venous sinuses and jugular veins
+  - {id: sinus-superior-sagittal, name: Superior sagittal sinus, system: venous, subsystem: dural sinuses, structureId: sinus-superior-sagittal, objects: ["Superior sagittal sinus"], budget: medium, colour: "#4361ee", paired: false}
+  - {id: sinus-inferior-sagittal, name: Inferior sagittal sinus, system: venous, subsystem: dural sinuses, structureId: sinus-superior-sagittal, objects: ["Inferior sagittal sinus"], budget: small, colour: "#4895ef", paired: false}
+  - {id: sinus-straight, name: Straight sinus, system: venous, subsystem: dural sinuses, structureId: sinus-straight, objects: ["Straight sinus"], budget: small, colour: "#3f37c9", paired: false}
+  - {id: sinus-occipital, name: Occipital sinus, system: venous, subsystem: dural sinuses, structureId: sinus-straight, objects: ["Occipital sinus"], budget: small, colour: "#3a0ca3", paired: false}
+  - {id: sinus-transverse, name: Transverse sinus, system: venous, subsystem: dural sinuses, structureId: sinus-transverse-sigmoid, objects: ["Transverse sinus"], budget: medium, colour: "#4cc9f0"}
+  - {id: sinus-sigmoid, name: Sigmoid sinus, system: venous, subsystem: dural sinuses, structureId: sinus-transverse-sigmoid, objects: ["Sigmoid sinus"], budget: small, colour: "#4ea8de"}
+  - {id: sinus-cavernous, name: Cavernous sinus, system: venous, subsystem: dural sinuses, structureId: sinus-cavernous, objects: ["Cavernous sinus"], budget: small, colour: "#5e60ce"}
+  - {id: sinus-intercavernous, name: Intercavernous sinuses, system: venous, subsystem: dural sinuses, structureId: sinus-cavernous, objects: ["Anterior intercavernous sinus", "Posterior intercavernous sinus"], budget: small, colour: "#6930c3", paired: false}
+  - {id: sinus-superior-petrosal, name: Superior petrosal sinus, system: venous, subsystem: dural sinuses, structureId: sinus-petrosal, objects: ["Superior petrosal sinus"], budget: small, colour: "#7400b8"}
+  - {id: sinus-inferior-petrosal, name: Inferior petrosal sinus, system: venous, subsystem: dural sinuses, structureId: sinus-petrosal, objects: ["Inferior petrosal sinus"], budget: small, colour: "#5a189a"}
+  - {id: vein-internal-jugular, name: Internal jugular vein, system: venous, subsystem: veins, structureId: sinus-transverse-sigmoid, objects: ["Internal jugular vein"], budget: medium, colour: "#3c6e71"}
+  # ---- brachial plexus and upper limb nerves
+  - {id: brachial-plexus, name: Brachial plexus, system: peripheral, subsystem: upper-limb, structureId: plexus-brachial, objects: ["Roots of brachial plexus", "Superior trunk of brachial plexus", "Middle trunk of brachial plexus", "Inferior trunk of brachial plexus", "Anterior division of superior trunk of brachial plexus", "Anterior division of middle trunk of brachial plexus", "Anterior division of inferior trunk of brachial plexus", "Posterior division of superior trunk of brachial plexus", "Posterior division of middle trunk of brachial plexus", "Posterior division of inferior trunk of brachial plexus", "Posterior cord of brachial plexus"], budget: large, colour: "#ffd166"}
+  - {id: median-nerve, name: Median nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-median, objects: ["Median nerve"], budget: large, colour: "#ef476f"}
+  - {id: ulnar-nerve, name: Ulnar nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-ulnar, objects: ["Ulnar nerve"], budget: large, colour: "#06d6a0"}
+  - {id: radial-nerve, name: Radial nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-radial, objects: ["Radial nerve"], budget: large, colour: "#118ab2"}
+  - {id: axillary-nerve, name: Axillary nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-axillary, objects: ["Axillary nerve"], budget: medium, colour: "#073b4c"}
+  - {id: musculocutaneous-nerve, name: Musculocutaneous nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-musculocutaneous, objects: ["Musculocutaneous nerve"], budget: medium, colour: "#f78c6b"}
+  - {id: long-thoracic-nerve, name: Long thoracic nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-long-thoracic, objects: ["Long thoracic nerve"], budget: small, colour: "#ffd166"}
+  - {id: suprascapular-nerve, name: Suprascapular nerve, system: peripheral, subsystem: upper-limb, structureId: nerve-suprascapular, objects: ["Suprascapular nerve"], budget: small, colour: "#83c5be"}
+  # ---- lower limb nerves
+  - {id: femoral-nerve, name: Femoral nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-femoral, objects: ["Femoral nerve"], budget: large, colour: "#e63946"}
+  - {id: obturator-nerve, name: Obturator nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-obturator, objects: ["Obturator nerve"], budget: medium, colour: "#f1faee"}
+  - {id: lateral-femoral-cutaneous-nerve, name: Lateral femoral cutaneous nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-lateral-femoral-cutaneous, objects: ["Lateral femoral cutaneous nerve"], budget: small, colour: "#a8dadc"}
+  - {id: saphenous-nerve, name: Saphenous nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-femoral, objects: ["Saphenous nerve"], budget: medium, colour: "#457b9d"}
+  - {id: sciatic-nerve, name: Sciatic nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-sciatic, objects: ["Sciatic nerve"], budget: large, colour: "#1d3557"}
+  - {id: tibial-nerve, name: Tibial nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-tibial, objects: ["Tibial nerve"], budget: large, colour: "#2a9d8f"}
+  - {id: common-peroneal-nerve, name: Common peroneal (fibular) nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-common-peroneal, objects: ["Common fibular nerve"], budget: medium, colour: "#e9c46a"}
+  - {id: superficial-peroneal-nerve, name: Superficial peroneal (fibular) nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-common-peroneal, objects: ["Superficial fibular nerve"], budget: medium, colour: "#f4a261"}
+  - {id: deep-peroneal-nerve, name: Deep peroneal (fibular) nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-common-peroneal, objects: ["Deep fibular nerve"], budget: medium, colour: "#e76f51"}
+  - {id: sural-nerve, name: Sural nerve, system: peripheral, subsystem: lower-limb, structureId: nerve-sural, objects: ["Sural nerve", "Sural communicating branch of common fibular nerve"], budget: medium, colour: "#264653"}
+  # ---- autonomic and trunk
+  - {id: sympathetic-trunk, name: Sympathetic trunk and ganglia, system: autonomic, subsystem: sympathetic, structureId: sympathetic-trunk, objects: ["Sympathetic trunk", "Ganglia of sympathetic trunk"], budget: large, colour: "#ff9f1c"}
+  - {id: intercostal-nerves, name: Intercostal nerves, system: peripheral, subsystem: trunk, structureId: spinal-nerve-root-dermatome, objects: ["Intercostal nerves"], budget: large, colour: "#ffbf69"}

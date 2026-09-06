@@ -31,3 +31,9 @@ def qa():
 
 def build_all():
     from .build_all import main; main()
+
+def zanatomy_register():
+    from .zanatomy import main_register; main_register()
+
+def zanatomy_meshes():
+    from .zanatomy import main_meshes; main_meshes()

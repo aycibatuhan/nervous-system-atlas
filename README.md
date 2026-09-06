@@ -14,7 +14,7 @@ The text is original prose written from two clinical neuroanatomy textbooks (Sne
 | Syndromes | 125 | localization, deficits with substrates, crossing logic, imaging, mimics, management pearls |
 | Glossary | 67 | |
 | Quiz | 30 | original vignettes; the answer spotlights the structures in 3D |
-| Meshes | 423 | MNI atlases (marching cubes) + BodyParts3D (registered) |
+| Meshes | 540 | MNI atlases (marching cubes) + BodyParts3D and Z-Anatomy (landmark-registered): cranial nerves, plexuses, limb nerves, dural sinuses, brainstem nuclei |
 
 Data sources and licences are listed in `public/data/manifest.json` and `pipeline/config/sources.yaml`. Some atlases are non-commercial (flagged `nc` in the manifest and switchable in the tree).
 
@@ -34,7 +34,7 @@ uv run --project pipeline atlas-build      # download → volumes → BP3D selec
 node scripts/check-data.ts                 # integrity check of the generated data
 ```
 
-Individual steps: `atlas-download`, `atlas-volumes`, `atlas-bp3d-select`, `atlas-register`, `atlas-bp3d-meshes`, `atlas-atlas-meshes`, `atlas-labels`, `atlas-manifest`, `atlas-qa`.
+Individual steps: `atlas-download`, `atlas-volumes`, `atlas-bp3d-select`, `atlas-register`, `atlas-bp3d-meshes`, `atlas-atlas-meshes`, `atlas-labels`, `atlas-manifest`, `atlas-qa`. Z-Anatomy (needs the `blender/` venv with `bpy`): `blender/.venv/bin/python blender/export_zanatomy.py`, then `atlas-zanatomy-register`, `atlas-zanatomy-meshes`, `atlas-manifest`.
 
 ## Using the atlas
 

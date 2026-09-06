@@ -1,0 +1,166 @@
+{
+ "method": "landmark-affine",
+ "matrix": [
+  [
+   -975.222813,
+   0.400088,
+   7.525721,
+   -12.192543
+  ],
+  [
+   -16.24614,
+   -917.749053,
+   410.652339,
+   -676.309074
+  ],
+  [
+   -4.690467,
+   440.539259,
+   1047.816434,
+   -1702.084709
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "metrics": {
+  "landmark_mean_mm": 3.61,
+  "landmark_max_mm": 7.4,
+  "n": 31,
+  "scale": 1.0367
+ },
+ "landmarks": {
+  "brainstem": {
+   "residual_mm": 3.6,
+   "used": true
+  },
+  "putamen-l": {
+   "residual_mm": 2.9,
+   "used": true
+  },
+  "putamen-r": {
+   "residual_mm": 3.3,
+   "used": true
+  },
+  "thalamus-l": {
+   "residual_mm": 1.2,
+   "used": true
+  },
+  "thalamus-r": {
+   "residual_mm": 1.7,
+   "used": true
+  },
+  "hippocampus-l": {
+   "residual_mm": 2.5,
+   "used": true
+  },
+  "hippocampus-r": {
+   "residual_mm": 1.7,
+   "used": true
+  },
+  "amygdala-l": {
+   "residual_mm": 2.4,
+   "used": true
+  },
+  "amygdala-r": {
+   "residual_mm": 2.7,
+   "used": true
+  },
+  "ventricle-lateral-l": {
+   "residual_mm": 5.9,
+   "used": true
+  },
+  "ventricle-lateral-r": {
+   "residual_mm": 6.0,
+   "used": true
+  },
+  "superior-colliculus-l": {
+   "residual_mm": 3.3,
+   "used": true
+  },
+  "superior-colliculus-r": {
+   "residual_mm": 3.6,
+   "used": true
+  },
+  "inferior-colliculus-l": {
+   "residual_mm": 5.4,
+   "used": true
+  },
+  "inferior-colliculus-r": {
+   "residual_mm": 5.6,
+   "used": true
+  },
+  "ventricle-third": {
+   "residual_mm": 2.1,
+   "used": true
+  },
+  "ventricle-fourth": {
+   "residual_mm": 4.9,
+   "used": true
+  },
+  "corpus-callosum": {
+   "residual_mm": 6.1,
+   "used": true
+  },
+  "Pineal gland": {
+   "residual_mm": 1.9,
+   "used": true
+  },
+  "Optic chiasm": {
+   "residual_mm": 4.5,
+   "used": true
+  },
+  "globus-pallidus-l": {
+   "residual_mm": 2.5,
+   "used": true
+  },
+  "globus-pallidus-r": {
+   "residual_mm": 2.6,
+   "used": true
+  },
+  "caudate-nucleus-l": {
+   "residual_mm": 12.6,
+   "used": false
+  },
+  "caudate-nucleus-r": {
+   "residual_mm": 13.7,
+   "used": false
+  },
+  "red-nucleus-l": {
+   "residual_mm": 7.4,
+   "used": true
+  },
+  "red-nucleus-r": {
+   "residual_mm": 7.4,
+   "used": true
+  },
+  "mammillary-body-l": {
+   "residual_mm": 1.2,
+   "used": true
+  },
+  "mammillary-body-r": {
+   "residual_mm": 1.1,
+   "used": true
+  },
+  "lateral-geniculate-nucleus-l": {
+   "residual_mm": 6.1,
+   "used": true
+  },
+  "lateral-geniculate-nucleus-r": {
+   "residual_mm": 5.5,
+   "used": true
+  },
+  "medial-geniculate-nucleus-l": {
+   "residual_mm": 1.6,
+   "used": true
+  },
+  "medial-geniculate-nucleus-r": {
+   "residual_mm": 1.0,
+   "used": true
+  }
+ },
+ "notes": "Z-Anatomy world meters (+x subject left, +y posterior, +z up) -> MNI152NLin2009cAsym RAS mm; 12-dof affine from landmark centroids."
+}

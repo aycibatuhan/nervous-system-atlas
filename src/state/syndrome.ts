@@ -14,7 +14,7 @@ export function meshesFor(app: App, id: string, side: LesionSide | 'both'): stri
   const pw = c?.pathways[id] as Rec | undefined;
   if (st) ids = (st['meshIds'] as string[] | undefined) ?? [];
   else if (pw) ids = [...((pw['meshIds'] as string[]) ?? []), ...((pw['waypoints'] as Rec[]) ?? []).map((w) => w['meshId'] as string | undefined).filter((x): x is string => !!x)];
-  if (!ids.length) ids = app.manifest.meshes.filter((m) => m.structureId === id).map((m) => m.id);
+  for (const m of app.manifest.meshes) if (m.structureId === id && !ids.includes(m.id)) ids.push(m.id);
   ids = ids.filter((m) => app.registry.byId.has(m));
   if (side === 'both') return ids;
   const paired = ids.filter((m) => /-[lr]$/.test(m));

@@ -1,0 +1,8 @@
+[project]
+name = "atlas-blender"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = ["bpy", "numpy>=1.26", "trimesh>=4.4", "pyyaml", "fast-simplification"]
+
+[tool.uv]
+package = false
