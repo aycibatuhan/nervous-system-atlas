@@ -1,0 +1,152 @@
+{
+ "kind": "structure",
+ "id": "artery-anterior-choroidal",
+ "name": "Anterior choroidal artery",
+ "synonyms": [
+  "AChA"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "A slender but strategically important branch of the internal carotid that arises just before the terminal bifurcation, runs backwards along the optic tract, and ends in the choroid plexus of the temporal horn. On the way it supplies the posterior limb of the internal capsule, the optic tract and lateral geniculate body, the medial temporal lobe and part of the cerebral peduncle, so a tiny vessel can produce a dense hemiplegia with hemianopia.",
+ "anatomy": {
+  "location": "Leaves the posterolateral wall of the supraclinoid internal carotid distal to the posterior communicating origin, passes posteromedially beneath the optic tract, then curves laterally around the cerebral peduncle to enter the choroidal fissure and the inferior horn of the lateral ventricle.",
+  "subdivisions": [
+   {
+    "name": "Cisternal segment",
+    "note": "runs along the optic tract in the crural and ambient cisterns; branches to the tract, peduncle, uncus and amygdala"
+   },
+   {
+    "name": "Plexal segment",
+    "note": "inside the temporal horn, supplying the choroid plexus and anastomosing with the lateral posterior choroidal artery"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Supplies the posterior limb of the internal capsule (corticospinal and thalamocortical fibers), the retrolenticular fibers of the optic radiation, the lateral geniculate nucleus, the optic tract, the crus cerebri, the uncus, part of the hippocampus and amygdala, and the globus pallidus.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid"
+  ],
+  "territories": [
+   "territory-anterior-choroidal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 20,
+     "y": -8,
+     "z": -12
+    },
+    "label": "origin lateral to the optic tract, running back toward the temporal horn"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 22,
+     "y": -12,
+     "z": 6
+    },
+    "label": "posterior limb of the internal capsule, the classic infarct site"
+   }
+  ],
+  "normalAppearance": "Not resolved on routine MRI; on CTA it is a thread-like vessel hugging the optic tract between the carotid terminus and the temporal horn. Its territory appears on axial slices as the posterior limb of the internal capsule and the adjacent medial temporal structures.",
+  "pathology": [
+   {
+    "pathology": "Anterior choroidal artery infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the posterior limb of the internal capsule extending down toward the cerebral peduncle and into the lateral geniculate region, with a variable medial temporal component; usually small-vessel or embolic.",
+    "sequence": "DWI",
+    "timing": "DWI positive within minutes to hours; ADC pseudonormalizes after ~1–2 weeks"
+   }
+  ],
+  "sequenceOfChoice": "DWI with ADC; CTA to exclude a carotid terminus lesion"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hemiparesis of face, arm and leg",
+    "side": "contralateral",
+    "mechanism": "Corticospinal fibers in the posterior limb of the internal capsule"
+   },
+   {
+    "deficit": "Hemisensory loss",
+    "side": "contralateral",
+    "mechanism": "Thalamocortical fibers passing through the posterior limb"
+   },
+   {
+    "deficit": "Homonymous hemianopia, sometimes sparing a horizontal sector",
+    "side": "contralateral",
+    "mechanism": "Optic tract, lateral geniculate body and the origin of the optic radiation"
+   }
+  ],
+  "examination": [
+   "Test face, arm and leg power for a uniform hemiparesis",
+   "Visual fields by confrontation for a homonymous defect",
+   "Compare pin-prick and vibration on both sides"
+  ],
+  "syndromes": [
+   "syn-anterior-choroidal-infarct"
+  ],
+  "pearls": [
+   "The triad hemiplegia, hemianesthesia and hemianopia without cortical signs (no aphasia, no neglect) suggests the anterior choroidal artery",
+   "Wedge-shaped sector sparing of the hemianopia reflects the dual supply of the lateral geniculate body by the anterior and lateral posterior choroidal arteries"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    464,
+    465
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    476,
+    476
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    50,
+    50
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    53
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    60
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "internal-capsule"
+ ],
+ "status": "draft",
+ "latin": "Arteria choroidea anterior",
+ "subsystem": "anterior-circulation"
+}

@@ -1,0 +1,128 @@
+{
+ "kind": "structure",
+ "id": "territory-sca",
+ "name": "SCA territory",
+ "synonyms": [],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-superior-cerebellar-l",
+  "territory-superior-cerebellar-r"
+ ],
+ "summary": "The superior cerebellum, dentate nucleus, superior cerebellar peduncle and dorsolateral rostral pons perfused by the superior cerebellar artery. It is the cerebellar territory that produces the purest limb ataxia, because the dentate nucleus and its outflow through the superior peduncle sit inside it, and the one whose infarcts most often come from cardiac emboli lodging at the basilar tip.",
+ "anatomy": {
+  "location": "Cerebellar hemisphere and vermis above the horizontal fissure (anterior lobe and the upper part of the posterior lobe), the dentate nucleus and the other deep nuclei, the superior cerebellar peduncle as it climbs toward the midbrain, and the dorsolateral tegmentum of the upper pons where the spinothalamic tract and descending sympathetic fibers run.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Coordination of the ipsilateral limbs through the dentate nucleus and the dentatorubrothalamic outflow in the superior peduncle; relay of pain and temperature (spinothalamic tract) and sympathetic outflow to the head in the rostral pontine tegmentum.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-basilar"
+  ],
+  "territories": [],
+  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -60,
+     "z": -20
+    },
+    "label": "superior cerebellar hemisphere under the tentorium"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 20,
+     "y": -55,
+     "z": -20
+    },
+    "label": "territory above the horizontal fissure"
+   }
+  ],
+  "normalAppearance": "The upper cerebellum on axial slices just below the tentorium; the boundary with the PICA territory runs along the horizontal fissure.",
+  "pathology": [
+   {
+    "pathology": "SCA infarct",
+    "modality": "MRI",
+    "finding": "Wedge of restricted diffusion in the superior cerebellum reaching the tentorial surface, with variable rostral pontine involvement.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI; CTA"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia and intention tremor",
+    "side": "ipsilateral",
+    "mechanism": "Dentate nucleus and superior peduncle"
+   },
+   {
+    "deficit": "Contralateral pain and temperature loss",
+    "side": "contralateral",
+    "mechanism": "Spinothalamic tract in the rostral pons"
+   },
+   {
+    "deficit": "Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Sympathetic fibers in the tegmentum"
+   }
+  ],
+  "examination": [
+   "Finger-nose and heel-shin",
+   "Pin-prick on the body",
+   "Pupils"
+  ],
+  "syndromes": [
+   "syn-sca-infarct"
+  ],
+  "pearls": [
+   "Vertigo is mild or absent with SCA infarcts because the vestibular nuclei lie lower",
+   "Large SCA infarcts swell upward against the tentorium and downward on the fourth ventricle, so a drowsy patient on day 2–3 needs a repeat CT",
+   "Superior cerebellar infarcts are more often embolic than PICA infarcts, which are more often from vertebral artery disease"
+  ]
+ },
+ "pitfalls": [
+  "Ataxia with a contralateral sensory loss can be mistaken for a thalamic or capsular lesion; the ipsilateral Horner and the cerebellar signs point to the pons and cerebellum"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    241,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    79
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    70,
+    70
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "territory"
+ ],
+ "status": "draft"
+}

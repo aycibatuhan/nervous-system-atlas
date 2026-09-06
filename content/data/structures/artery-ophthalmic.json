@@ -1,0 +1,145 @@
+{
+ "kind": "structure",
+ "id": "artery-ophthalmic",
+ "name": "Ophthalmic artery",
+ "synonyms": [],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "The ophthalmic artery is the first branch of the intracranial internal carotid, arising as the parent vessel leaves the cavernous sinus. It enters the orbit through the optic canal beneath the optic nerve and supplies the globe, including the central retinal artery, and the extraocular muscles, lacrimal gland, ethmoid sinuses and forehead skin. Because it is the carotid's first branch, retinal ischemia is the classic warning sign of carotid disease.",
+ "anatomy": {
+  "location": "Originates from the supraclinoid internal carotid immediately after the artery pierces the dural roof of the cavernous sinus, medial to the anterior clinoid process. It runs anteriorly through the optic canal inferolateral to the optic nerve, crosses over the nerve inside the orbit and ends as supratrochlear and dorsal nasal branches at the medial orbital margin.",
+  "subdivisions": [
+   {
+    "name": "Central retinal artery",
+    "note": "enters the optic nerve about 1 cm behind the globe; an end artery for the inner retina"
+   },
+   {
+    "name": "Posterior ciliary arteries",
+    "note": "supply the choroid and the optic nerve head"
+   },
+   {
+    "name": "Lacrimal, ethmoidal, supraorbital, supratrochlear, dorsal nasal branches",
+    "note": "orbit walls, sinuses, forehead and nose; anastomose with external carotid branches"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Sole arterial supply of the retina and optic nerve head and the main supply of the orbit. Its anastomoses with the facial and maxillary arteries (external carotid) provide a collateral route into the carotid siphon when the cervical internal carotid is occluded, which is why reversed flow in the ophthalmic artery on Doppler indicates carotid occlusion.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 15,
+     "y": 22,
+     "z": -18
+    },
+    "label": "orbital apex: ophthalmic artery crossing the optic nerve"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 12,
+     "y": 5,
+     "z": -18
+    },
+    "label": "origin from the supraclinoid carotid"
+   }
+  ],
+  "normalAppearance": "Too small to be seen on routine MRI; on CTA or MRA a fine vessel accompanies the optic nerve through the optic canal. Orbital fat gives bright T1 signal around the nerve sheath, which is dark.",
+  "pathology": [
+   {
+    "pathology": "Central retinal artery occlusion",
+    "modality": "US",
+    "finding": "Retinal examination (not imaging) shows a pale retina with a cherry-red macula; the imaging task is finding the embolic source with carotid Doppler or CTA and screening for temporal arteritis.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Ophthalmic-segment carotid aneurysm",
+    "modality": "CTA",
+    "finding": "A saccular outpouching at the ophthalmic origin projecting medially or superiorly under the optic nerve, causing a unilateral nasal or altitudinal field defect from nerve compression.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "Carotid Doppler plus CTA/MRA for embolic sources; fundoscopy is the diagnostic test for the retina itself"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Transient or permanent monocular visual loss",
+    "side": "ipsilateral",
+    "mechanism": "Embolus or hypoperfusion in the central retinal artery, a functional end artery"
+   },
+   {
+    "deficit": "Altitudinal field loss (upper or lower half)",
+    "side": "ipsilateral",
+    "mechanism": "Ischemia of the optic nerve head supplied by the posterior ciliary arteries (anterior ischemic optic neuropathy)"
+   }
+  ],
+  "examination": [
+   "Confrontation fields and visual acuity in each eye separately",
+   "Swinging flashlight test for a relative afferent pupillary defect",
+   "Fundoscopy for retinal pallor, emboli or a swollen pale disc"
+  ],
+  "syndromes": [
+   "syn-rapd"
+  ],
+  "pearls": [
+   "Monocular visual loss is a retinal or optic nerve problem; binocular homonymous loss is retrochiasmal",
+   "Amaurosis fugax lasting minutes with complete recovery is a carotid TIA and warrants urgent carotid imaging",
+   "In a patient over 50 with sudden monocular loss and headache, check the ESR for giant cell arteritis before assuming embolism"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    464,
+    464
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    473,
+    473
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    48,
+    49
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    180,
+    181
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "vision"
+ ],
+ "status": "draft",
+ "latin": "Arteria ophthalmica",
+ "subsystem": "anterior-circulation"
+}

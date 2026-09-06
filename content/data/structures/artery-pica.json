@@ -1,0 +1,198 @@
+{
+ "kind": "structure",
+ "id": "artery-pica",
+ "name": "Posterior inferior cerebellar artery",
+ "synonyms": [
+  "PICA"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "The largest branch of the vertebral artery. It takes a tortuous course between the medulla and the cerebellum, supplying the dorsolateral medulla, the inferior surface of the cerebellar hemisphere and vermis, the cerebellar tonsil and the choroid plexus of the fourth ventricle. Its occlusion (or, more often, occlusion of the parent vertebral artery) produces the lateral medullary syndrome, and a large cerebellar infarct in its territory can swell and compress the brainstem.",
+ "anatomy": {
+  "location": "Arises from the intracranial vertebral artery 1–2 cm below the vertebrobasilar junction, loops caudally around the medulla between the rootlets of the glossopharyngeal, vagus and accessory nerves, curves over the cerebellar tonsil (the caudal loop) and then ascends onto the inferior cerebellar surface.",
+  "subdivisions": [
+   {
+    "name": "Anterior and lateral medullary segments",
+    "note": "perforators to the dorsolateral medulla: spinothalamic tract, spinal trigeminal nucleus, nucleus ambiguus, vestibular nuclei"
+   },
+   {
+    "name": "Tonsillomedullary and telovelotonsillar segments",
+    "note": "cerebellar tonsil, choroid plexus of the fourth ventricle"
+   },
+   {
+    "name": "Cortical segment",
+    "note": "inferior vermis and inferior hemispheric surface"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Supplies the dorsolateral medulla and the inferior cerebellum (posterior lobe inferior surface, tonsil, inferior vermis) plus the fourth ventricular choroid plexus.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 10,
+     "y": -46,
+     "z": -46
+    },
+    "label": "PICA loop beside the medulla and tonsil"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 12,
+     "y": -42,
+     "z": -44
+    },
+    "label": "dorsolateral medulla, the Wallenberg site"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -60,
+     "z": -40
+    },
+    "label": "inferior cerebellar hemisphere"
+   }
+  ],
+  "normalAppearance": "A small tortuous flow void beside the medulla on axial T2, seen more consistently on CTA/MRA as a loop around the tonsil. Its cerebellar territory is the inferior and posterior hemispheric surface below the horizontal fissure.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the dorsolateral medulla at the level of the inferior olive, sometimes extending to the inferior cerebellum; CT is usually normal.",
+    "sequence": "DWI",
+    "pitfalls": "Lesions are small: use thin-slice DWI and look on coronal reformats; a normal DWI in the first hours does not exclude it"
+   },
+   {
+    "pathology": "PICA cerebellar infarct with mass effect",
+    "modality": "CT",
+    "finding": "Hypodensity of the inferior cerebellar hemisphere; over 2–4 days swelling compresses the fourth ventricle causing obstructive hydrocephalus and tonsillar descent.",
+    "sequence": "CT non-contrast",
+    "timing": "Maximal swelling day 2–4; monitor closely for hydrocephalus"
+   }
+  ],
+  "sequenceOfChoice": "DWI with thin slices; CTA of the vertebral arteries; repeat CT if drowsiness develops after a cerebellar infarct"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of pain and temperature on the face with loss on the opposite body",
+    "side": "ipsilateral",
+    "mechanism": "Spinal trigeminal tract ipsilaterally and the already-crossed spinothalamic tract"
+   },
+   {
+    "deficit": "Dysphagia, hoarseness, absent gag",
+    "side": "ipsilateral",
+    "mechanism": "Nucleus ambiguus"
+   },
+   {
+    "deficit": "Vertigo, nystagmus, nausea",
+    "side": "ipsilateral",
+    "mechanism": "Vestibular nuclei"
+   },
+   {
+    "deficit": "Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Descending sympathetic fibers in the lateral medulla"
+   },
+   {
+    "deficit": "Limb and gait ataxia",
+    "side": "ipsilateral",
+    "mechanism": "Inferior cerebellar peduncle and cerebellum"
+   },
+   {
+    "deficit": "Hiccups",
+    "side": "n/a",
+    "mechanism": "Medullary respiratory centers"
+   }
+  ],
+  "examination": [
+   "Pin-prick on the face compared with the trunk and limbs on each side",
+   "Palatal elevation, voice quality and swallowing",
+   "Pupil size and ptosis",
+   "Finger-nose, heel-shin and gait; observe nystagmus direction"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-pica-cerebellar-infarct"
+  ],
+  "pearls": [
+   "Crossed pain and temperature loss (face one side, body the other) with no weakness is the lateral medulla",
+   "Most Wallenberg strokes are from vertebral artery occlusion or dissection rather than PICA itself",
+   "A drowsy patient two days after a cerebellar infarct needs an urgent CT for hydrocephalus"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    466,
+    468
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    216,
+    216
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    477,
+    477
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    78
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    70,
+    70
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    110,
+    112
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "posterior-circulation"
+ ],
+ "status": "draft",
+ "latin": "Arteria cerebelli inferior posterior",
+ "subsystem": "posterior-circulation"
+}

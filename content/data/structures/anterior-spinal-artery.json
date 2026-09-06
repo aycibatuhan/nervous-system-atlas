@@ -1,0 +1,177 @@
+{
+ "kind": "structure",
+ "id": "anterior-spinal-artery",
+ "name": "Anterior spinal artery",
+ "synonyms": [
+  "ASA"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "A single midline artery formed by the union of a branch from each vertebral artery that descends along the whole length of the cord in the anterior median fissure. Its sulcal branches feed the anterior two-thirds of the cord: anterior horns, corticospinal and spinothalamic tracts. It depends on segmental radicular feeders, especially the artery of Adamkiewicz, so aortic disease or surgery can infarct the mid-thoracic cord while sparing the posterior columns.",
+ "anatomy": {
+  "location": "Formed on the ventral medulla by two contributory branches from the intracranial vertebral arteries, runs caudally in the pia of the anterior median fissure to the conus, reinforced at intervals by anterior radicular arteries entering with the ventral roots, chiefly at C5–C6, T4–T6 and T9–L2.",
+  "subdivisions": [
+   {
+    "name": "Cervical segment",
+    "note": "reinforced by radicular branches from the vertebral, deep cervical and ascending cervical arteries"
+   },
+   {
+    "name": "Mid-thoracic watershed (about T4–T8)",
+    "note": "the least reinforced, most vulnerable segment"
+   },
+   {
+    "name": "Thoracolumbar segment",
+    "note": "reinforced by the artery of Adamkiewicz, usually from a left T9–T12 intercostal artery"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Perfuses the anterior two-thirds of the spinal cord through sulcal (central) branches: anterior and lateral gray horns, the lateral and anterior corticospinal tracts, the spinothalamic tracts and the autonomic pathways; the posterior columns are supplied separately.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "artery-adamkiewicz"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -45,
+     "z": -55
+    },
+    "label": "ventral medulla where the two contributory branches unite"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -45,
+     "z": -60
+    },
+    "label": "descending on the anterior surface of the medulla and cervical cord"
+   }
+  ],
+  "normalAppearance": "A fine midline flow void on the anterior surface of the cord on high-resolution axial T2; better shown on spinal CTA or MRA with contrast. The intracranial origin is seen anterior to the medulla just below the vertebrobasilar junction.",
+  "pathology": [
+   {
+    "pathology": "Anterior spinal artery (anterior cord) infarct",
+    "modality": "MRI",
+    "finding": "T2 hyperintensity of the anterior two-thirds of the cord over several segments with 'owl's eye' bright anterior horns on axial images and restricted diffusion acutely; the posterior columns are spared.",
+    "sequence": "DWI",
+    "timing": "T2 change may take 12–24 h to appear; DWI is positive earlier"
+   },
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the paramedian ventral medulla involving the pyramid, medial lemniscus and hypoglossal fibers.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal and axial T2 plus DWI of the cord; CTA/aortic imaging to find dissection or aneurysm"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Flaccid then spastic paraparesis or quadriparesis",
+    "side": "bilateral",
+    "mechanism": "Anterior horns and corticospinal tracts"
+   },
+   {
+    "deficit": "Loss of pain and temperature below the level with preserved vibration and proprioception",
+    "side": "bilateral",
+    "mechanism": "Spinothalamic tracts infarcted, posterior columns spared"
+   },
+   {
+    "deficit": "Urinary retention and autonomic dysfunction",
+    "side": "bilateral",
+    "mechanism": "Descending autonomic pathways and intermediolateral column"
+   },
+   {
+    "deficit": "Medial medullary syndrome",
+    "side": "contralateral",
+    "mechanism": "Occlusion of the rostral anterior spinal artery"
+   }
+  ],
+  "examination": [
+   "Sensory level to pin-prick with preserved vibration at the same dermatomes",
+   "Reflexes: initially absent (spinal shock), later brisk with extensor plantars",
+   "Bladder scan for retention"
+  ],
+  "syndromes": [
+   "syn-anterior-cord",
+   "syn-dejerine-medial-medullary"
+  ],
+  "pearls": [
+   "Dissociated sensory loss below a level (pain and temperature gone, vibration kept) with weakness is the anterior spinal artery syndrome",
+   "Sudden painful paraplegia after aortic surgery or dissection is a cord infarct until proven otherwise"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    466,
+    466
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    471,
+    472
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    168,
+    168
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    44,
+    44
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    78
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    203,
+    205
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Arteria spinalis anterior",
+ "subsystem": "spinal"
+}

@@ -1,0 +1,121 @@
+{
+ "kind": "structure",
+ "id": "posterior-spinal-arteries",
+ "name": "Posterior spinal arteries",
+ "synonyms": [],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "Two small arteries, one on each side, that descend on the posterolateral surface of the cord near the entry of the dorsal roots. They arise from the vertebral or posterior inferior cerebellar arteries, form a plexiform chain reinforced by posterior radicular arteries, and supply the posterior third of the cord: the posterior columns and the tips of the dorsal horns. Because the paired vessels interconnect richly, isolated posterior spinal artery infarcts are rare.",
+ "anatomy": {
+  "location": "Originate from the intracranial vertebral artery or from PICA, descend along the posterolateral sulcus of the medulla and spinal cord medial to the dorsal roots, and receive posterior radicular branches at many levels.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Supply the posterior white columns (gracile and cuneate fasciculi) and the posterior gray horns, that is, proprioception, vibration and fine touch pathways for the whole cord below the level.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 5,
+     "y": -52,
+     "z": -50
+    },
+    "label": "posterolateral medulla at the origin of the posterior spinal arteries"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -50,
+     "z": -60
+    },
+    "label": "posterior surface of the medulla and cervical cord"
+   }
+  ],
+  "normalAppearance": "Rarely resolved on routine MRI; seen on high-resolution axial T2 as tiny dots on the posterolateral surface of the cord. The territory is the posterior third of the cord on axial images.",
+  "pathology": [
+   {
+    "pathology": "Posterior cord infarct",
+    "modality": "MRI",
+    "finding": "T2 hyperintensity and restricted diffusion confined to the posterior columns over one or more segments, with preserved motor function and pain sensation.",
+    "sequence": "DWI",
+    "pitfalls": "The pattern overlaps with subacute combined degeneration and tabes; the acute onset and diffusion restriction distinguish infarction"
+   }
+  ],
+  "sequenceOfChoice": "Axial and sagittal T2 with DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of vibration and proprioception below the level with sensory ataxia",
+    "side": "bilateral",
+    "mechanism": "Posterior columns"
+   },
+   {
+    "deficit": "Loss of segmental deep tendon reflexes",
+    "side": "bilateral",
+    "mechanism": "Dorsal horn and afferent limb of the reflex at the infarcted level"
+   }
+  ],
+  "examination": [
+   "Vibration at the malleoli and joint position sense at the toes",
+   "Romberg test",
+   "Compare pin-prick (should be preserved) with vibration (lost)"
+  ],
+  "syndromes": [
+   "syn-posterior-cord-subacute-combined"
+  ],
+  "pearls": [
+   "Posterior column loss with preserved pain and power after a vascular event points to the posterior spinal arteries",
+   "The rich posterior anastomotic chain explains why posterior cord infarcts are far rarer than anterior ones"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    466,
+    466
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    471,
+    472
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    44,
+    44
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Arteriae spinales posteriores",
+ "subsystem": "spinal"
+}

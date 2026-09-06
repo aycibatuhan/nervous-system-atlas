@@ -1,0 +1,173 @@
+{
+ "kind": "structure",
+ "id": "territory-mca",
+ "name": "MCA territory",
+ "synonyms": [],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-mca-major-l",
+  "territory-mca-major-r",
+  "territory-mca-frontal-l",
+  "territory-mca-frontal-r",
+  "territory-mca-parietal-l",
+  "territory-mca-parietal-r",
+  "territory-mca-temporal-l",
+  "territory-mca-temporal-r",
+  "territory-mca-occipital-l",
+  "territory-mca-occipital-r",
+  "territory-mca-insular-l",
+  "territory-mca-insular-r"
+ ],
+ "summary": "The largest cortical territory: almost the entire lateral convexity of the hemisphere, the insula and the underlying white matter, plus the deep territory of the lenticulostriate arteries. It holds the face, hand and arm areas of the motor and sensory cortices, both language areas in the dominant hemisphere, the frontal eye field, the auditory cortex and the parietal association cortex, so an MCA stroke is the prototype of the 'cortical' syndrome.",
+ "anatomy": {
+  "location": "Lateral surface of the frontal, parietal and temporal lobes from the superior frontal sulcus down to the inferior temporal gyrus and back to the lateral occipital cortex; the insula and opercula; the corona radiata; deep territory in the putamen, caudate body, globus pallidus and internal capsule (lenticulostriates).",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Motor and sensory control of the contralateral face, hand and arm; language (dominant); spatial attention and body schema (non-dominant); saccadic gaze control; hearing; the optic radiation passing through the parietotemporal white matter.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "arteries-lenticulostriate"
+  ],
+  "territories": [],
+  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 45,
+     "y": -10,
+     "z": 30
+    },
+    "label": "frontoparietal convexity at the level of the lateral ventricles"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 40,
+     "y": 0,
+     "z": 0
+    },
+    "label": "insula, opercula and lentiform nucleus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 45,
+     "y": -5,
+     "z": 20
+    },
+    "label": "the whole territory from vertex to temporal lobe"
+   }
+  ],
+  "normalAppearance": "On axial slices the territory forms a broad lateral wedge from the Sylvian fissure outward, bounded above by the ACA strip and behind and below by the PCA. The insular ribbon and lentiform nucleus at the center are the first structures to lose gray–white differentiation on CT in acute ischemia.",
+  "pathology": [
+   {
+    "pathology": "Complete MCA infarct",
+    "modality": "CT",
+    "finding": "Hypodensity of the whole lateral convexity, insula and basal ganglia with midline shift; the hyperdense M1 sign may be present early.",
+    "sequence": "CT non-contrast",
+    "timing": "Loss of the insular ribbon at 1–3 h; frank hypodensity by 6–12 h; maximal edema day 3–5"
+   },
+   {
+    "pathology": "Branch MCA infarct",
+    "modality": "MRI",
+    "finding": "Cortical ribbon and subcortical diffusion restriction limited to the superior or inferior division territory, sparing the deep nuclei.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Embolic MCA occlusion",
+    "modality": "CTA",
+    "finding": "Abrupt cut-off of M1 or M2 with distal collateral filling from ACA and PCA leptomeningeal branches; the extent of collaterals predicts the final infarct.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "Non-contrast CT and CTA within minutes of arrival; DWI/FLAIR for tissue timing"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Face and arm-predominant hemiparesis and hemisensory loss",
+    "side": "contralateral",
+    "mechanism": "Precentral and postcentral gyri"
+   },
+   {
+    "deficit": "Aphasia (dominant) or neglect (non-dominant)",
+    "side": "contralateral",
+    "mechanism": "Perisylvian language cortex or parietal association cortex"
+   },
+   {
+    "deficit": "Gaze deviation toward the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Frontal eye field"
+   },
+   {
+    "deficit": "Homonymous hemianopia",
+    "side": "contralateral",
+    "mechanism": "Optic radiation"
+   }
+  ],
+  "examination": [
+   "Arm drift versus leg drift",
+   "Speech fluency, comprehension, repetition, naming",
+   "Extinction to double simultaneous stimulation",
+   "Visual fields"
+  ],
+  "syndromes": [
+   "syn-mca-stem-infarct",
+   "syn-mca-superior-division",
+   "syn-mca-inferior-division"
+  ],
+  "pearls": [
+   "Face plus arm plus cortical sign (aphasia or neglect) is the MCA",
+   "The territory has a deep part: capsular involvement means the occlusion is proximal to the lenticulostriates"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    472,
+    476
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    482,
+    482
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    55,
+    59
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    180,
+    184
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "territory"
+ ],
+ "status": "draft"
+}

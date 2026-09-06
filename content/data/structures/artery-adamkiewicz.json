@@ -1,0 +1,133 @@
+{
+ "kind": "structure",
+ "id": "artery-adamkiewicz",
+ "name": "Artery of Adamkiewicz",
+ "synonyms": [
+  "arteria radicularis magna",
+  "great anterior radiculomedullary artery"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "The largest of the anterior radicular arteries that reinforce the anterior spinal artery. It usually arises from a left intercostal or lumbar artery between T9 and T12, enters with a nerve root, and makes a characteriztic hairpin turn as it joins the anterior spinal artery. It is the main supply of the lower thoracic cord, the lumbar enlargement and the conus, so its loss during aortic surgery, dissection or embolization causes paraplegia.",
+ "anatomy": {
+  "location": "Arises from a posterior intercostal or lumbar artery (left side in about three-quarters of people, T9–T12 in most), passes through the intervertebral foramen with the ventral root, ascends briefly and then descends in a hairpin loop to join the anterior spinal artery in the anterior median fissure.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Chief feeder of the anterior spinal artery for the lower two-thirds of the cord; perfuses the anterior horns and lateral tracts of the thoracolumbar cord and the conus medullaris.",
+ "bloodSupply": {
+  "arteries": [
+   "aorta (posterior intercostal or lumbar artery)"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -70
+    },
+    "label": "not within the MNI brain volume: the artery joins the cord at the lower thoracic level"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -70
+    },
+    "label": "hairpin loop entering with a left T9–T12 root on spinal CTA"
+   }
+  ],
+  "normalAppearance": "Not present in the brain volume. On spinal CTA or contrast MRA the artery is a small vessel with a hairpin configuration on the anterior surface of the lower thoracic cord, mapped before thoracoabdominal aortic surgery.",
+  "pathology": [
+   {
+    "pathology": "Cord infarct from loss of the Adamkiewicz supply",
+    "modality": "MRI",
+    "finding": "Anterior cord T2 hyperintensity from the mid-thoracic level to the conus with acute diffusion restriction after aortic surgery, dissection or hypotension; the posterior columns are spared.",
+    "sequence": "DWI",
+    "timing": "T2 changes appear over the first day; DWI earlier"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal T2 and DWI of the thoracolumbar cord; CTA of the aorta"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Paraplegia with a thoracic sensory level for pain and temperature",
+    "side": "bilateral",
+    "mechanism": "Anterior two-thirds of the thoracolumbar cord"
+   },
+   {
+    "deficit": "Retention of urine, loss of bowel control",
+    "side": "bilateral",
+    "mechanism": "Conus and descending autonomic pathways"
+   },
+   {
+    "deficit": "Preserved vibration and position sense",
+    "side": "bilateral",
+    "mechanism": "Posterior columns perfused by the posterior spinal arteries"
+   }
+  ],
+  "examination": [
+   "Sensory level to pin-prick on the trunk",
+   "Vibration sense at the malleoli to show sparing",
+   "Bladder scan; check anal tone"
+  ],
+  "syndromes": [
+   "syn-anterior-cord"
+  ],
+  "pearls": [
+   "Postoperative paraplegia after aortic repair is cord ischemia in the Adamkiewicz territory; a lumbar drain to lower CSF pressure is part of the response",
+   "The mid-thoracic cord (T4–T8) is the watershed between the cervical and Adamkiewicz supplies and the commonest site of hypotensive cord infarcts"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    471,
+    472
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    485,
+    485
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    44,
+    44
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    203,
+    205
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "spinal"
+ ],
+ "status": "draft",
+ "subsystem": "spinal"
+}

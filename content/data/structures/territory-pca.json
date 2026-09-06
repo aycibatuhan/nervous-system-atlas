@@ -1,0 +1,160 @@
+{
+ "kind": "structure",
+ "id": "territory-pca",
+ "name": "PCA territory",
+ "synonyms": [],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-pca-major-l",
+  "territory-pca-major-r",
+  "territory-pca-temporal-l",
+  "territory-pca-temporal-r",
+  "territory-pca-occipital-l",
+  "territory-pca-occipital-r"
+ ],
+ "summary": "The occipital lobe, the inferomedial temporal lobe and, through the perforating branches of the P1 and P2 segments, the thalamus and midbrain. It is the territory of vision and of memory, and proximal occlusion adds the thalamic and midbrain syndromes.",
+ "anatomy": {
+  "location": "Medial and inferior occipital surface including the calcarine cortex, cuneus and lingual gyrus; the inferomedial temporal lobe (parahippocampal, fusiform and inferior temporal gyri, hippocampus); the splenium; the thalamus and the cerebral peduncle and tegmentum of the midbrain through perforators.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Primary and association visual cortex; visual memory and face and color processing in the ventral occipitotemporal cortex; the hippocampal memory circuit; thalamic sensory relay and the midbrain oculomotor and reticular systems.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating"
+  ],
+  "territories": [],
+  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 15,
+     "y": -75,
+     "z": 5
+    },
+    "label": "calcarine and medial occipital cortex"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -30,
+     "z": -18
+    },
+    "label": "inferomedial temporal lobe and hippocampus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 10,
+     "y": -60,
+     "z": 5
+    },
+    "label": "occipital lobe and splenium"
+   }
+  ],
+  "normalAppearance": "The posterior and inferomedial wedge of the hemisphere on axial slices, bounded laterally by the MCA territory along the lateral occipital sulcus; on sagittal slices it covers the whole medial occipital surface.",
+  "pathology": [
+   {
+    "pathology": "PCA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the calcarine cortex and lingual/fusiform gyri, extending into the hippocampus and thalamus with proximal occlusion.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Bilateral PCA infarcts",
+    "modality": "MRI",
+    "finding": "Symmetrical occipital lesions after a basilar tip embolus or after prolonged hypotension, causing cortical blindness.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI; CTA of the basilar and PCAs; cardiac source workup"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Homonymous hemianopia with macular sparing",
+    "side": "contralateral",
+    "mechanism": "Calcarine cortex with collateral supply to the occipital pole"
+   },
+   {
+    "deficit": "Memory loss",
+    "side": "contralateral",
+    "mechanism": "Hippocampus and parahippocampal gyrus"
+   },
+   {
+    "deficit": "Alexia without agraphia (dominant)",
+    "side": "n/a",
+    "mechanism": "Left occipital cortex plus splenium"
+   },
+   {
+    "deficit": "Thalamic sensory syndrome",
+    "side": "contralateral",
+    "mechanism": "Thalamogeniculate perforators"
+   }
+  ],
+  "examination": [
+   "Confrontation fields",
+   "Reading, color naming, face recognition",
+   "Delayed recall",
+   "Pin-prick and vibration on the opposite side"
+  ],
+  "syndromes": [
+   "syn-pca-infarct",
+   "syn-anton",
+   "syn-alexia-without-agraphia"
+  ],
+  "pearls": [
+   "A field cut without weakness is the PCA territory",
+   "Macular sparing distinguishes an occipital lesion from an optic tract lesion"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    472,
+    476
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    482,
+    483
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    57,
+    59
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    49,
+    51
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "territory"
+ ],
+ "status": "draft"
+}

@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "artery-aica",
+ "name": "Anterior inferior cerebellar artery",
+ "synonyms": [
+  "AICA"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "A branch of the lower basilar artery that runs laterally across the pontomedullary junction toward the cerebellopontine angle, usually giving rise to the labyrinthine (internal auditory) artery, and supplies the lateral caudal pons, the middle cerebellar peduncle, the flocculus and the anterior inferior cerebellum. Its occlusion combines a lateral pontine syndrome with ipsilateral deafness, facial palsy and facial sensory loss.",
+ "anatomy": {
+  "location": "Leaves the basilar in its lower third, runs posterolaterally near the abducens rootlet, passes in close relation to the facial and vestibulocochlear nerves at the internal acoustic meatus (often looping into it), and reaches the petrosal surface of the cerebellum.",
+  "subdivisions": [
+   {
+    "name": "Labyrinthine (internal auditory) artery",
+    "note": "cochlea and vestibular labyrinth; end artery"
+   },
+   {
+    "name": "Lateral pontine perforators",
+    "note": "spinal trigeminal nucleus, facial nucleus, vestibular and cochlear nuclei, spinothalamic tract, middle cerebellar peduncle"
+   },
+   {
+    "name": "Cerebellar branches",
+    "note": "flocculus and anterior inferior hemisphere"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Supplies the lateral caudal pons, the inner ear, the middle cerebellar peduncle and the anterior inferior cerebellar surface.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-aica"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 20,
+     "y": -40,
+     "z": -36
+    },
+    "label": "cerebellopontine angle with the AICA loop near the internal acoustic meatus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -40,
+     "z": -35
+    },
+    "label": "lateral caudal pons and middle cerebellar peduncle, the infarct site"
+   }
+  ],
+  "normalAppearance": "Seen on thin axial T2 through the cerebellopontine angle as a loop near the seventh and eighth nerves; on CTA/MRA it is the lateral branch from the lower basilar. Its territory is the lateral inferior pons, the peduncle and the anterior inferior cerebellum.",
+  "pathology": [
+   {
+    "pathology": "AICA territory infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the lateral caudal pons, the middle cerebellar peduncle and the anterior inferior cerebellar hemisphere; often with sudden unilateral hearing loss because the labyrinthine artery is an end artery.",
+    "sequence": "DWI",
+    "pitfalls": "Acute vertigo plus hearing loss is easily labeled labyrinthitis; check for facial weakness, crossed sensory loss and ataxia"
+   }
+  ],
+  "sequenceOfChoice": "DWI with attention to the pons and peduncle; audiometry; CTA of the basilar"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Sudden sensorineural deafness and vertigo",
+    "side": "ipsilateral",
+    "mechanism": "Labyrinthine artery to the inner ear and the cochlear/vestibular nuclei"
+   },
+   {
+    "deficit": "Lower motor neuron facial weakness",
+    "side": "ipsilateral",
+    "mechanism": "Facial nucleus or fascicle in the caudal pons"
+   },
+   {
+    "deficit": "Facial pain and temperature loss with contralateral body loss",
+    "side": "ipsilateral",
+    "mechanism": "Spinal trigeminal nucleus and the crossed spinothalamic tract"
+   },
+   {
+    "deficit": "Limb ataxia",
+    "side": "ipsilateral",
+    "mechanism": "Middle cerebellar peduncle and cerebellum"
+   },
+   {
+    "deficit": "Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Descending sympathetic fibers in the lateral tegmentum"
+   }
+  ],
+  "examination": [
+   "Whisper test or tuning-fork tests for unilateral hearing loss",
+   "Facial movement including forehead",
+   "Corneal reflex and facial pin-prick",
+   "Finger-nose and heel-shin testing"
+  ],
+  "syndromes": [
+   "syn-aica-lateral-pontine"
+  ],
+  "pearls": [
+   "Wallenberg plus deafness and facial palsy means AICA (lateral pons) rather than PICA (lateral medulla)",
+   "Isolated sudden deafness with vertigo in a patient with vascular risk factors can be an AICA infarct"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    466,
+    468
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    79
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    106,
+    106
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    112,
+    112
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "posterior-circulation"
+ ],
+ "status": "draft",
+ "latin": "Arteria cerebelli inferior anterior",
+ "subsystem": "posterior-circulation"
+}

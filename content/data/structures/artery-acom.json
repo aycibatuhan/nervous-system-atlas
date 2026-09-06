@@ -1,0 +1,142 @@
+{
+ "kind": "structure",
+ "id": "artery-acom",
+ "name": "Anterior communicating artery",
+ "synonyms": [
+  "AComm",
+  "ACoA"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "A short midline vessel joining the two anterior cerebral arteries in front of the optic chiasm. It completes the front of the circle of Willis and lets one carotid supply both medial hemispheres. It is the single most common site of intracranial saccular aneurysm, and its small perforators supply the optic chiasm, the hypothalamus, the fornix and the septal region, which explains the amnesia and personality change that can follow aneurysm rupture or repair.",
+ "anatomy": {
+  "location": "Lies in the lamina terminalis cistern above the optic chiasm and below the rostrum of the corpus callosum, connecting the A1–A2 junctions of the two anterior cerebral arteries; typically only 2–3 mm long and often fenestrated or duplicated.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Collateral channel between the two internal carotid systems; its perforators supply the anterior hypothalamus, the columns of the fornix, the septal nuclei and the optic chiasm.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca"
+  ],
+  "territories": [
+   "territory-aca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": 25,
+     "z": 2
+    },
+    "label": "midline between the A1–A2 junctions above the chiasm"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 25,
+     "z": 2
+    },
+    "label": "AComm complex in the interhemispheric fissure"
+   }
+  ],
+  "normalAppearance": "Not reliably seen on routine MRI; on CTA and MRA it is the short transverse vessel joining the A1–A2 junctions, best appreciated on an anteroposterior projection. Asymmetric A1 segments are common and make one side dominant.",
+  "pathology": [
+   {
+    "pathology": "Ruptured AComm aneurysm",
+    "modality": "CT",
+    "finding": "Subarachnoid blood concentrated in the interhemispheric fissure, suprasellar cistern and frontal horns, often with a gyrus rectus hematoma; CTA shows the sac pointing anteriorly, superiorly or posteriorly.",
+    "sequence": "CT non-contrast",
+    "timing": "Non-contrast CT is most sensitive in the first 6–12 hours; sensitivity falls after a few days as blood is cleared"
+   },
+   {
+    "pathology": "Basal forebrain infarct after clipping or vasospasm",
+    "modality": "MRI",
+    "finding": "Small diffusion-restricting lesions in the septal region, columns of the fornix or anterior hypothalamus, presenting as anterograde amnesia and confabulation.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Non-contrast CT then CTA for suspected subarachnoid hemorrhage; lumbar puncture if CT is negative and suspicion remains"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anterograde amnesia with confabulation",
+    "side": "bilateral",
+    "mechanism": "Perforators to the basal forebrain and fornix are lost after rupture, vasospasm or surgery"
+   },
+   {
+    "deficit": "Bilateral leg weakness and abulia",
+    "side": "bilateral",
+    "mechanism": "Vasospasm of both A2 segments after aneurysmal subarachnoid hemorrhage"
+   },
+   {
+    "deficit": "Bitemporal or junctional field defect",
+    "side": "bilateral",
+    "mechanism": "Direct compression of the chiasm by a large downward-pointing aneurysm"
+   }
+  ],
+  "examination": [
+   "Bedside memory testing with delayed recall after subarachnoid hemorrhage",
+   "Leg power and gait once the patient is mobilized",
+   "Confrontation visual fields"
+  ],
+  "syndromes": [
+   "syn-subarachnoid-hemorrhage"
+  ],
+  "pearls": [
+   "Thunderclap headache with blood in the interhemispheric fissure points to an AComm aneurysm",
+   "Amnesia and personality change are the signature deficits of AComm aneurysm complications, not hemiparesis"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    465,
+    468
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    474,
+    474
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    57,
+    57
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    196,
+    198
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "circle-of-willis"
+ ],
+ "status": "draft",
+ "latin": "Arteria communicans anterior",
+ "subsystem": "anterior-circulation"
+}

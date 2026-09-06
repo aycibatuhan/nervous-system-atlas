@@ -1,0 +1,114 @@
+{
+ "kind": "structure",
+ "id": "territory-anterior-choroidal",
+ "name": "Anterior choroidal territory",
+ "synonyms": [],
+ "system": "arterial-territories",
+ "meshIds": [
+  "territory-anterior-choroidal-thalamoperforating-l",
+  "territory-anterior-choroidal-thalamoperforating-r"
+ ],
+ "summary": "The narrow strip supplied by the anterior choroidal artery and the neighboring anterior thalamoperforators from the posterior communicating artery: the posterior limb of the internal capsule, the lateral geniculate body and optic tract, the medial temporal lobe and part of the cerebral peduncle and thalamus. Small in volume, large in consequence because the corticospinal tract, the thalamocortical sensory fibers and the visual pathway all pass through it.",
+ "anatomy": {
+  "location": "Posterior limb and retrolenticular part of the internal capsule, the globus pallidus medial segment, the lateral geniculate body, the optic tract, the uncus, amygdala and anterior hippocampus, the choroid plexus of the temporal horn, and the medial cerebral peduncle.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Transmits the corticospinal fibers of the posterior limb and the somatosensory thalamocortical fibers, and carries visual information through the optic tract and lateral geniculate body.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-anterior-choroidal",
+   "artery-pcom"
+  ],
+  "territories": [],
+  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 22,
+     "y": -14,
+     "z": 4
+    },
+    "label": "posterior limb of the internal capsule beside the thalamus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 24,
+     "y": -22,
+     "z": -6
+    },
+    "label": "lateral geniculate body and temporal horn"
+   }
+  ],
+  "normalAppearance": "A thin band on axial slices between the lentiform nucleus and the thalamus, continuing downward and backward toward the temporal horn.",
+  "pathology": [
+   {
+    "pathology": "Anterior choroidal infarct",
+    "modality": "MRI",
+    "finding": "Diffusion restriction in the posterior limb of the capsule extending to the geniculate region and medial temporal lobe.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI; CTA to exclude a carotid terminus lesion"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hemiparesis, hemisensory loss and hemianopia (the triad)",
+    "side": "contralateral",
+    "mechanism": "Posterior limb of the capsule, thalamocortical fibers and lateral geniculate body"
+   }
+  ],
+  "examination": [
+   "Power and sensation of face, arm and leg",
+   "Confrontation fields"
+  ],
+  "syndromes": [
+   "syn-anterior-choroidal-infarct"
+  ],
+  "pearls": [
+   "The full triad without aphasia or neglect points to the anterior choroidal artery",
+   "Sector-sparing hemianopia reflects the dual supply of the lateral geniculate body"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    476,
+    476
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    60
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    50,
+    50
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "territory"
+ ],
+ "status": "draft"
+}

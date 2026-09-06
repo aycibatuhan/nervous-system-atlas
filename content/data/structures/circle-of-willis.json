@@ -1,0 +1,178 @@
+{
+ "kind": "structure",
+ "id": "circle-of-willis",
+ "name": "Circle of Willis",
+ "synonyms": [
+  "circulus arteriosus cerebri",
+  "arterial circle"
+ ],
+ "system": "arteries",
+ "meshIds": [
+  "arteries-mra-atlas"
+ ],
+ "summary": "A polygon of arteries on the base of the brain, lying in the subarachnoid space around the optic chiasm, infundibulum and interpeduncular fossa. It is formed by the two internal carotid arteries, the anterior cerebral arteries joined by the anterior communicating artery, and the posterior cerebral arteries joined to the carotids by the posterior communicating arteries. It equalizes pressure and provides collateral flow when one feeding vessel narrows, but it is complete in only a minority of people, which is why the same occlusion causes very different strokes in different patients.",
+ "anatomy": {
+  "location": "Lies in the suprasellar, interpeduncular and chiasmatic cisterns around the optic chiasm, the tuber cinereum and the mammillary bodies, above the sella turcica and below the hypothalamus.",
+  "subdivisions": [
+   {
+    "name": "Anterior part",
+    "note": "A1 segments and the anterior communicating artery in front of the chiasm"
+   },
+   {
+    "name": "Lateral part",
+    "note": "supraclinoid internal carotids and the posterior communicating arteries"
+   },
+   {
+    "name": "Posterior part",
+    "note": "P1 segments and the basilar bifurcation behind the mammillary bodies"
+   }
+  ],
+  "relations": {
+   "anterior": "optic chiasm and optic nerves",
+   "posterior": "mammillary bodies and the interpeduncular fossa",
+   "inferior": "sella turcica and pituitary",
+   "superior": "hypothalamus and anterior perforated substance"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Connects the two carotid systems with each other and with the vertebrobasilar system so that blood can be redistributed across the midline or between the anterior and posterior circulations. Central perforating branches from the circle (medial and lateral striate, anterior and posterior thalamoperforating groups) supply the hypothalamus, optic tract, basal ganglia, internal capsule and thalamus.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": 2,
+     "z": -14
+    },
+    "label": "suprasellar cistern: the whole circle in one slice on CTA/MRA"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 0,
+     "z": -14
+    },
+    "label": "carotid termini and A1 segments above the sella"
+   }
+  ],
+  "normalAppearance": "On axial T2 through the suprasellar cistern the circle appears as a ring of flow voids around the chiasm and infundibulum. Time-of-flight MRA or CTA displays the complete polygon; asymmetric A1 segments, absent or fetal PComms and duplications are normal variants.",
+  "pathology": [
+   {
+    "pathology": "Saccular (berry) aneurysm",
+    "modality": "CTA",
+    "finding": "A round or lobulated outpouching at a branch point of the circle, most often the anterior communicating, posterior communicating and MCA bifurcation sites; a daughter sac and irregular contour suggest rupture risk.",
+    "sequence": "CT contrast"
+   },
+   {
+    "pathology": "Moyamoya arteriopathy",
+    "modality": "MRA",
+    "finding": "Progressive stenosis of the distal carotids and proximal circle with a 'puff of smoke' cloud of basal collaterals; multiple flow voids in the basal ganglia on T2.",
+    "sequence": "TOF"
+   },
+   {
+    "pathology": "Vasospasm after subarachnoid hemorrhage",
+    "modality": "CTA",
+    "finding": "Smooth narrowing of the circle and its branches days 4–14 after aneurysm rupture, with delayed infarcts in the affected territories.",
+    "sequence": "CT contrast",
+    "timing": "Peaks around day 7–10"
+   }
+  ],
+  "sequenceOfChoice": "CTA or TOF MRA; DSA remains the reference for aneurysm anatomy"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Variable stroke severity for a given occlusion",
+    "side": "n/a",
+    "mechanism": "Presence or absence of communicating arteries determines collateral flow"
+   },
+   {
+    "deficit": "Subarachnoid hemorrhage",
+    "side": "n/a",
+    "mechanism": "Rupture of a saccular aneurysm at a branch point of the circle"
+   },
+   {
+    "deficit": "Chiasmal visual field defects",
+    "side": "bilateral",
+    "mechanism": "Aneurysm compressing the optic chiasm from below or laterally"
+   },
+   {
+    "deficit": "Third nerve palsy",
+    "side": "ipsilateral",
+    "mechanism": "PComm or basilar tip aneurysm"
+   }
+  ],
+  "examination": [
+   "Visual fields and pupils in every patient with a sudden severe headache",
+   "Neck stiffness and Kernig sign",
+   "Serial neurological examination after subarachnoid hemorrhage for delayed ischemia"
+  ],
+  "syndromes": [
+   "syn-subarachnoid-hemorrhage",
+   "syn-chiasmal-bitemporal"
+  ],
+  "pearls": [
+   "Roughly one person in four has a complete, symmetrical circle; most have at least one hypoplastic segment",
+   "A carotid occlusion with a good circle may cause no symptoms; with a poor circle it may infarct the whole hemisphere"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    468,
+    470
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    474,
+    474
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    57,
+    57
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    196,
+    198
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "circle-of-willis"
+ ],
+ "status": "draft",
+ "latin": "Circulus arteriosus cerebri",
+ "subsystem": "circle-of-willis"
+}

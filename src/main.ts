@@ -17,6 +17,8 @@ import type { Axis } from './types/state.ts';
 import { PRESETS } from './scene/cameraPresets.ts';
 import { applyCameraPreset, setContrast, setSliceVisible, setPeel } from './state/actions.ts';
 import { sameSet } from './state/actions.ts';
+import { bindRouter } from './router/hashRouter.ts';
+import type { ContentBundle } from './types/content.ts';
 
 const msg = document.getElementById('overlay-msg')!;
 function showMsg(text: string | null): void { msg.hidden = !text; msg.textContent = text ?? ''; }
@@ -77,6 +79,23 @@ async function boot(): Promise<void> {
   showMsg(null);
   applyCameraPreset(app, 'lateral-l');
   toolbar.status.textContent = `${manifest.meshes.length} structures`;
+
+  // ---- content bundle (optional until authored) then router
+  try {
+    const r = await fetch('data/content.json');
+    if (r.ok) { app.content = (await r.json()) as ContentBundle; app.store.set({ loaded: { ...app.store.get().loaded, content: true } }); toolbar.status.textContent += ` · ${Object.keys(app.content.structures).length} authored`; }
+  } catch (e) { console.warn('no content bundle', e); }
+  bindRouter(app.store, {
+    onRoute(route, params) {
+      if (params.ax !== undefined || params.cor !== undefined || params.sag !== undefined) setSlices(app, { ...(params.ax !== undefined ? { axial: params.ax } : {}), ...(params.cor !== undefined ? { coronal: params.cor } : {}), ...(params.sag !== undefined ? { sagittal: params.sag } : {}) });
+      if (params.c) setContrast(app, params.c);
+      if (route.kind === 'structure') {
+        // route ids may be structure ids or mesh ids
+        const meshId = app.registry.byId.has(route.id) ? route.id : (app.manifest.meshes.find((m) => m.structureId === route.id)?.id ?? null);
+        if (meshId && app.store.get().selectedId !== meshId) selectStructure(app, meshId, { moveSlices: params.ax === undefined, fit: true });
+      } else if (route.kind === 'home') { /* keep state */ }
+    },
+  });
 
   // ---- volumes (T1 first, then labels) in the background
   void (async () => {

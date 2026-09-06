@@ -1,0 +1,83 @@
+{
+ "method": "icp-similarity",
+ "matrix": [
+  [
+   -1.198744,
+   0.009419,
+   -0.013524,
+   20.919662
+  ],
+  [
+   -0.012613,
+   -1.157518,
+   0.311854,
+   -593.174238
+  ],
+  [
+   -0.010608,
+   0.311966,
+   1.157507,
+   -1777.739861
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "metrics": {
+  "surface_rms_mm": 12.26,
+  "surface_p95_mm": 24.94,
+  "scale": 1.1989,
+  "ventricle_dice": 0.294
+ },
+ "landmarks": {
+  "optic-chiasm": {
+   "registered": [
+    -0.1,
+    8.9,
+    -28.1
+   ],
+   "expected": [
+    0,
+    2,
+    -18
+   ],
+   "distance_mm": 12.3
+  },
+  "pituitary-gland": {
+   "registered": [
+    -0.0,
+    5.4,
+    -41.7
+   ],
+   "expected": [
+    0,
+    2,
+    -32
+   ],
+   "distance_mm": 10.3
+  },
+  "pineal-gland": {
+   "registered": [
+    0.2,
+    -37.1,
+    -10.6
+   ],
+   "expected": [
+    0,
+    -33,
+    3
+   ],
+   "distance_mm": 14.2
+  }
+ },
+ "gates": {
+  "surface_rms_mm": false,
+  "surface_p95_mm": false,
+  "landmarks": false,
+  "ventricle_dice": false
+ },
+ "notes": "BodyParts3D v4.0 whole-brain surface (FMA50801) registered to the MNI152NLin2009cAsym brain mask by trimmed point-to-point ICP with similarity transform. Edit 'matrix' to override; rerun with --manual."
+}

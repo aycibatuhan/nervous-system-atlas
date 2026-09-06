@@ -1,0 +1,199 @@
+{
+ "kind": "structure",
+ "id": "artery-basilar",
+ "name": "Basilar artery",
+ "synonyms": [],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "Formed by the union of the vertebral arteries at the lower border of the pons, the basilar artery runs in the midline groove of the pons to its upper border, where it divides into the two posterior cerebral arteries. Along the way it gives the anterior inferior cerebellar, labyrinthine, pontine and superior cerebellar arteries. Because it feeds the whole pons and the midbrain, occlusion is one of the most devastating strokes, ranging from crossed brainstem syndromes to the locked-in state or coma.",
+ "anatomy": {
+  "location": "Lies in the prepontine cistern on the anterior surface of the pons, in the basilar sulcus, between the two abducens nerves at its origin and the two oculomotor nerves at its termination in the interpeduncular cistern.",
+  "subdivisions": [
+   {
+    "name": "Paramedian branches",
+    "note": "medial pons: corticospinal fibers, pontine nuclei, medial lemniscus, abducens and facial nuclei"
+   },
+   {
+    "name": "Short circumferential branches",
+    "note": "anterolateral pons"
+   },
+   {
+    "name": "Long circumferential branches (AICA, SCA)",
+    "note": "lateral pons and cerebellum"
+   },
+   {
+    "name": "Basilar tip",
+    "note": "P1 segments, thalamoperforators, superior cerebellar arteries"
+   }
+  ],
+  "relations": {
+   "anterior": "clivus and the prepontine cistern",
+   "posterior": "pons",
+   "lateral": "abducens nerves inferiorly and oculomotor nerves superiorly"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Supplies the entire pons, the superior cerebellum, the inner ear (via the labyrinthine artery), and through its terminal branches the midbrain, thalamus and occipital lobes.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-aica",
+   "territory-sca",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -26,
+     "z": -28
+    },
+    "label": "basilar trunk on the clivus in front of the pons"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -26,
+     "z": -28
+    },
+    "label": "midline flow void in the prepontine cistern"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -20,
+     "z": -10
+    },
+    "label": "basilar tip in the interpeduncular cistern"
+   }
+  ],
+  "normalAppearance": "A single midline flow void in front of the pons on every axial T2 slice through the pons and a smooth tube on sagittal T1. On non-contrast CT the artery lies on the clivus; a dense basilar suggests acute thrombus. CTA shows the whole vessel from the vertebral confluence to the tip.",
+  "pathology": [
+   {
+    "pathology": "Basilar artery occlusion",
+    "modality": "CTA",
+    "finding": "Absent contrast in a segment of the basilar with bilateral pontine, cerebellar, thalamic and occipital infarcts on DWI depending on the level; the hyperdense basilar sign on plain CT is an early clue.",
+    "sequence": "CT contrast",
+    "timing": "Hyperdense basilar visible at once; DWI lesions evolve over hours; recanalisation therapy is time-critical"
+   },
+   {
+    "pathology": "Pontine paramedian infarct",
+    "modality": "MRI",
+    "finding": "A wedge of restricted diffusion in one paramedian half of the pons reaching the ventral surface, from branch atheromatous disease of a paramedian perforator.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Basilar tip aneurysm",
+    "modality": "CTA",
+    "finding": "Saccular aneurysm at the bifurcation projecting upward into the interpeduncular cistern; may compress the oculomotor nerves or the midbrain.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "CTA immediately when a brainstem stroke is suspected; DWI for extent; DSA for treatment planning"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Quadriparesis with preserved consciousness and vertical eye movements (locked-in)",
+    "side": "bilateral",
+    "mechanism": "Bilateral ventral pontine infarction sparing the tegmentum and midbrain"
+   },
+   {
+    "deficit": "Crossed syndromes: ipsilateral cranial nerve palsy with contralateral hemiparesis",
+    "side": "contralateral",
+    "mechanism": "Unilateral paramedian pontine infarct catching the abducens or facial nucleus/fascicle and the corticospinal tract"
+   },
+   {
+    "deficit": "Coma, pinpoint pupils, ophthalmoplegia",
+    "side": "bilateral",
+    "mechanism": "Pontine tegmentum and reticular activating system"
+   },
+   {
+    "deficit": "Top-of-the-basilar syndrome: somnolence, vertical gaze palsy, hallucinations, hemianopia",
+    "side": "bilateral",
+    "mechanism": "Embolus at the bifurcation involving thalamus, midbrain and occipital lobes"
+   }
+  ],
+  "examination": [
+   "Assess consciousness, pupils, corneal reflexes and eye movements in every stuporous patient",
+   "Look for bilateral long-tract signs",
+   "Ask about preceding vertigo, diplopia, dysarthria and drop attacks (basilar TIAs)"
+  ],
+  "syndromes": [
+   "syn-basilar-occlusion",
+   "syn-locked-in",
+   "syn-top-of-basilar",
+   "syn-millard-gubler",
+   "syn-foville"
+  ],
+  "pearls": [
+   "Bilateral or crossed signs with altered consciousness mean the basilar artery until proven otherwise; call for CTA",
+   "Locked-in patients are awake: examine vertical eye movements and blinking before assuming coma"
+  ]
+ },
+ "pitfalls": [
+  "Basilar occlusion may present with fluctuating symptoms or apparent psychiatric change over hours before collapse",
+  "A dolichoectatic basilar can compress cranial nerves or cause perforator strokes without occlusion"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    466,
+    467
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    215,
+    218
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    79
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    57,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    180,
+    184
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "posterior-circulation"
+ ],
+ "status": "draft",
+ "latin": "Arteria basilaris",
+ "subsystem": "posterior-circulation"
+}

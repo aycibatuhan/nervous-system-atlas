@@ -1,0 +1,140 @@
+{
+ "kind": "structure",
+ "id": "territory-watershed",
+ "name": "Watershed (borderzone) territories",
+ "synonyms": [],
+ "system": "arterial-territories",
+ "meshIds": [],
+ "summary": "Borderzones between adjacent arterial territories are the last parts of the brain to be perfused and the first to fail when perfusion pressure drops. The cortical (external) watersheds lie between the ACA and MCA and between the MCA and PCA on the convexity; the internal (subcortical) watershed lies in the corona radiata and centrum semiovale between the deep lenticulostriate perforators and the superficial MCA branches. Watershed infarcts point to hypotension or a proximal stenosis rather than embolism.",
+ "anatomy": {
+  "location": "Anterior cortical watershed: a strip along the superior frontal sulcus from the frontal pole to the vertex; posterior cortical watershed: the parieto-occipital region where MCA, ACA and PCA meet; internal watershed: the deep white matter of the corona radiata and centrum semiovale lateral to the lateral ventricles.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Not a functional unit; these zones contain the motor and sensory cortex for the proximal arm and shoulder (anterior watershed), the parietal visual association cortex (posterior watershed) and the descending motor fibers in the corona radiata (internal watershed).",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca",
+   "artery-pca"
+  ],
+  "territories": [],
+  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": 20,
+     "z": 45
+    },
+    "label": "anterior cortical watershed along the superior frontal sulcus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 35,
+     "y": -60,
+     "z": 35
+    },
+    "label": "posterior parieto-occipital watershed"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -15,
+     "z": 30
+    },
+    "label": "internal watershed in the corona radiata"
+   }
+  ],
+  "normalAppearance": "Not a visible structure on normal MRI; recognized by infarct pattern. Internal watershed infarcts form a chain of small lesions ('string of pearls') parallel to the lateral ventricle; cortical watershed infarcts form wedges at the territory boundaries.",
+  "pathology": [
+   {
+    "pathology": "Cortical watershed infarct",
+    "modality": "MRI",
+    "finding": "Wedge-shaped diffusion restriction between the ACA and MCA or MCA and PCA territories, often bilateral after global hypotension or unilateral distal to a tight carotid stenosis.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Internal watershed infarct",
+    "modality": "MRI",
+    "finding": "Linear row of small diffusion-bright lesions in the centrum semiovale and corona radiata on the side of a carotid stenosis.",
+    "sequence": "DWI",
+    "pitfalls": "A string of subcortical lesions is often mislabeled as multiple emboli; look at the carotid"
+   }
+  ],
+  "sequenceOfChoice": "DWI; CTA of the neck for stenosis; blood pressure history"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "'Man-in-a-barrel': bilateral proximal arm and shoulder weakness with spared face and legs",
+    "side": "bilateral",
+    "mechanism": "Bilateral anterior cortical watershed between ACA and MCA"
+   },
+   {
+    "deficit": "Cortical visual disturbance, Bálint features",
+    "side": "bilateral",
+    "mechanism": "Posterior parieto-occipital watershed"
+   },
+   {
+    "deficit": "Hemiparesis with subcortical lesions",
+    "side": "contralateral",
+    "mechanism": "Internal watershed in the corona radiata"
+   }
+  ],
+  "examination": [
+   "Proximal versus distal arm power",
+   "Visual fields and visual attention",
+   "Carotid bruits and blood pressure"
+  ],
+  "syndromes": [
+   "syn-watershed-infarct",
+   "syn-balint"
+  ],
+  "pearls": [
+   "Bilateral watershed infarcts after cardiac arrest or surgery mean hypotension; unilateral ones mean a proximal stenosis",
+   "The internal watershed is more sensitive to carotid stenosis than the cortical one"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    50,
+    53
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    63
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    180,
+    184
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "territory"
+ ],
+ "status": "draft"
+}

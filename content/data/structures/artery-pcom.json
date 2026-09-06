@@ -1,0 +1,139 @@
+{
+ "kind": "structure",
+ "id": "artery-pcom",
+ "name": "Posterior communicating artery",
+ "synonyms": [
+  "PComm",
+  "PCoA"
+ ],
+ "system": "arteries",
+ "meshIds": [],
+ "summary": "A short vessel running backwards from the supraclinoid internal carotid to join the posterior cerebral artery, linking the anterior and posterior circulations on each side. It runs directly above the oculomotor nerve, which is why an aneurysm at its origin produces a painful third nerve palsy with a dilated pupil. Its perforators supply the anterior thalamus, hypothalamus and part of the internal capsule.",
+ "anatomy": {
+  "location": "Leaves the posterior wall of the supraclinoid carotid, passes posteromedially in the interpeduncular cistern above the oculomotor nerve and lateral to the mammillary body, and joins the posterior cerebral artery at the P1–P2 junction.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Collateral channel between the carotid and vertebrobasilar systems; in the fetal variant it is the main supply of the posterior cerebral artery. Its thalamic perforators (anterior thalamoperforating branches) supply the anterior thalamus, the hypothalamus and the posterior limb of the internal capsule.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-anterior-choroidal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 10,
+     "y": -6,
+     "z": -14
+    },
+    "label": "running back from the carotid toward the P1–P2 junction above the oculomotor nerve"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 10,
+     "y": -6,
+     "z": -14
+    },
+    "label": "relationship to the oculomotor nerve in the interpeduncular cistern"
+   }
+  ],
+  "normalAppearance": "Often seen as a small flow void behind the carotid on axial T2 through the suprasellar cistern. On CTA/MRA it is the short vessel between the carotid and the PCA; a fetal-type PComm is as large as the PCA it feeds and the ipsilateral P1 is small.",
+  "pathology": [
+   {
+    "pathology": "PComm aneurysm with third nerve palsy",
+    "modality": "CTA",
+    "finding": "Saccular aneurysm at the carotid–PComm junction projecting posterolaterally toward the oculomotor nerve; subarachnoid blood in the suprasellar and ambient cisterns if ruptured.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "CTA (or catheter angiography) urgently for any painful third nerve palsy with pupil involvement"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Painful third nerve palsy with a dilated pupil",
+    "side": "ipsilateral",
+    "mechanism": "Compression of the pial surface of the oculomotor nerve, where the parasympathetic pupillary fibers lie superficially"
+   },
+   {
+    "deficit": "Contralateral hemiparesis with amnesia after aneurysm treatment",
+    "side": "contralateral",
+    "mechanism": "Loss of anterior thalamoperforating branches to the thalamus and capsule"
+   }
+  ],
+  "examination": [
+   "Examine the pupil size and reaction alongside ptosis and extraocular movements",
+   "Ask about a sudden severe headache accompanying the palsy"
+  ],
+  "syndromes": [
+   "syn-cn3-palsy",
+   "syn-subarachnoid-hemorrhage"
+  ],
+  "pearls": [
+   "A third nerve palsy that involves the pupil is a compressive lesion, and the PComm aneurysm is the one you must not miss",
+   "A fetal PComm means a carotid occlusion can also infarct the occipital lobe"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    464,
+    468
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    350,
+    351
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    57,
+    57
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    87,
+    90
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    93,
+    95
+   ]
+  }
+ ],
+ "tags": [
+  "vascular",
+  "circle-of-willis"
+ ],
+ "status": "draft",
+ "latin": "Arteria communicans posterior",
+ "subsystem": "circle-of-willis"
+}
