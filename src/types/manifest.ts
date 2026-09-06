@@ -27,6 +27,8 @@ export interface ManifestMesh {
   centroid: [number, number, number];
   labels: Partial<Record<LabelVolumeKey, number[]>>;
   ontology: Record<string, unknown>;
+  /** low-detail stand-in loaded first; the full mesh replaces it in idle time */
+  lod?: { file: string; bytes: number; triangles: number };
 }
 
 export interface VolumeFile {

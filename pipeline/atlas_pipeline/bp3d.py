@@ -10,8 +10,8 @@ import trimesh
 import yaml
 
 from . import catalog
-from .catalog import BUDGET, MeshSpec
-from .meshing import export_glb, mesh_stats
+from .catalog import BUDGET, BUDGET_BUMP, LOD_FACES, LOD_MIN_FACES, MeshSpec
+from .meshing import export_glb, export_with_lod, mesh_stats
 from .paths import CONFIG, MESHES, RAW, WORK
 
 BP = RAW / "bodyparts3d"
@@ -118,10 +118,14 @@ def main_meshes(argv=None) -> None:
         m.apply_transform(T)
         m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
         if len(m.faces) > 200:
-            trimesh.smoothing.filter_taubin(m, lamb=0.5, nu=0.53, iterations=5)
-        target = BUDGET[sel.get("budget", "medium")]
+            trimesh.smoothing.filter_taubin(m, lamb=0.5, nu=0.53, iterations=8)
+        budget = sel.get("budget", "medium")
+        if sel["system"] in ("arteries", "venous", "cranial-nerves", "peripheral", "autonomic"):
+            budget = BUDGET_BUMP.get(budget, budget)
+        target = BUDGET[budget]
         if len(m.faces) > target:
             m = m.simplify_quadric_decimation(face_count=target)
+            m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
         try:
             m.fix_normals()
         except Exception:  # noqa: BLE001
@@ -129,8 +133,8 @@ def main_meshes(argv=None) -> None:
         spec = MeshSpec(id=sel["id"], name=sel["name"], system=sel["system"], subsystem=sel.get("subsystem"), side=sel.get("side", "midline"),
                         colour=sel.get("colour"), visible=sel.get("visible", False), budget=sel.get("budget", "medium"), structure_id=sel.get("structureId"))
         path = MESHES / spec.system / f"{spec.id}.glb"
-        nbytes = export_glb(m, path, spec.id)
-        rec = record(spec, "bodyparts3d", None, "registered-affine", m, path, nbytes, 0, {"fma": index[sel["id"]]["fma"], "labelVolume": None})
+        nbytes, lod = export_with_lod(m, path, spec.id, LOD_FACES, LOD_MIN_FACES)
+        rec = record(spec, "bodyparts3d", None, "registered-affine", m, path, nbytes, 0, {"fma": index[sel["id"]]["fma"], "labelVolume": None, "lod": lod})
         existing[rec["id"]] = rec
         print(f"  {spec.id:44s} {len(m.faces):6d} tris {nbytes/1024:7.1f} KB  bbox {np.round(m.bounds, 0).tolist()}")
     meshes_json.write_text(json.dumps(list(existing.values()), indent=1))

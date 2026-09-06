@@ -11,8 +11,8 @@ import numpy as np
 from scipy import ndimage
 
 from . import catalog
-from .catalog import BUDGET, MeshSpec
-from .meshing import export_glb, mesh_from_mask, mesh_stats
+from .catalog import BUDGET, LOD_FACES, LOD_MIN_FACES, MeshSpec
+from .meshing import export_glb, export_with_lod, mesh_from_mask, mesh_stats, weld_group
 from .paths import MESHES, RAW, WORK
 from .spaces import arterial_atlas_affine, load_ras
 
@@ -68,6 +68,7 @@ def build_label_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool =
     for lab, spec in a.entries.items():
         by_id.setdefault(spec.id, []).append((lab, spec))
     out = []
+    built: list[tuple[MeshSpec, list[int], object, Path, int]] = []
     for mid, items in by_id.items():
         spec = items[0][1]
         labels = [lab for lab, _ in items]
@@ -93,9 +94,16 @@ def build_label_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool =
             mesh = mesh_from_mask(mask, aff, BUDGET[spec.budget], sigma=0.6 if abs(aff[0, 0]) >= 0.9 else 1.0)
             if mesh is None:
                 print(f"  [skip] {out_id}: empty"); continue
-            nbytes = export_glb(mesh, path, out_id)
-            out.append(record(spec_side, a.id, labels, alignment, mesh, path, nbytes, mask.sum(), {"labelVolume": a.label_volume}))
-            print(f"  {out_id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB")
+            built.append((spec_side, labels, mesh, path, int(mask.sum())))
+    # weld shared borders between the parcels of this atlas, then export
+    if len(built) > 1 and a.label_volume in ("anat", "vascular", "vascular2"):
+        n = weld_group([b[2] for b in built], tol_mm=0.35)
+        print(f"  welded {n} border vertices across {len(built)} parcels")
+    for spec_side, labels, mesh, path, voxels in built:
+        mesh.fix_normals()
+        nbytes, lod = export_with_lod(mesh, path, spec_side.id, LOD_FACES, LOD_MIN_FACES)
+        out.append(record(spec_side, a.id, labels, alignment, mesh, path, nbytes, voxels, {"labelVolume": a.label_volume, "lod": lod}))
+        print(f"  {spec_side.id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB" + (f"  (lod {lod['triangles']} tris)" if lod else ""))
     return out
 
 
@@ -115,8 +123,8 @@ def build_binary_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool 
         if mesh is None:
             print(f"  [skip] {spec.id}: empty"); continue
         path = MESHES / spec.system / f"{spec.id}.glb"
-        nbytes = export_glb(mesh, path, spec.id)
-        out.append(record(spec, a.id, None, "native-mni", mesh, path, nbytes, mask.sum(), {"labelVolume": "tract", "file_key": rel}))
+        nbytes, lod = export_with_lod(mesh, path, spec.id, LOD_FACES, LOD_MIN_FACES)
+        out.append(record(spec, a.id, None, "native-mni", mesh, path, nbytes, mask.sum(), {"labelVolume": "tract", "file_key": rel, "lod": lod}))
         print(f"  {spec.id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB")
     return out
 
@@ -126,11 +134,11 @@ def build_envelope() -> dict:
     mask = np.asanyarray(img.dataobj) > 0
     mask = ndimage.binary_closing(mask, iterations=2)
     spec = catalog.ENVELOPE
-    mesh = mesh_from_mask(mask, img.affine, BUDGET[spec.budget], sigma=1.2)
+    mesh = mesh_from_mask(mask, img.affine, BUDGET[spec.budget], sigma=1.0, taubin_iterations=30)
     path = MESHES / spec.system / f"{spec.id}.glb"
-    nbytes = export_glb(mesh, path, spec.id)
+    nbytes, lod = export_with_lod(mesh, path, spec.id, 6000, LOD_MIN_FACES)
     print(f"  {spec.id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB")
-    return record(spec, "mni_t1w", None, "native-mni", mesh, path, nbytes, mask.sum())
+    return record(spec, "mni_t1w", None, "native-mni", mesh, path, nbytes, mask.sum(), {"lod": lod})
 
 
 def build_mra(threshold: float) -> dict | None:
@@ -147,11 +155,11 @@ def build_mra(threshold: float) -> dict | None:
     mask = (prob >= threshold) & bmask
     print(f"  MRA voxels >= {threshold}: {mask.sum()} ({mask.sum() * 0.125 / 1000:.1f} mL)")
     spec = catalog.ARTERIES_MRA
-    mesh = mesh_from_mask(mask, img.affine, BUDGET[spec.budget], sigma=0.7, min_component_frac=0.01)
+    mesh = mesh_from_mask(mask, img.affine, BUDGET[spec.budget], sigma=0.7, min_component_frac=0.01, taubin_iterations=10)
     path = MESHES / spec.system / f"{spec.id}.glb"
-    nbytes = export_glb(mesh, path, spec.id)
+    nbytes, lod = export_with_lod(mesh, path, spec.id, 8000, LOD_MIN_FACES)
     print(f"  {spec.id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB")
-    return record(spec, "mouches_arteries", None, "nlin6-identity", mesh, path, nbytes, mask.sum(), {"threshold": threshold})
+    return record(spec, "mouches_arteries", None, "nlin6-identity", mesh, path, nbytes, mask.sum(), {"threshold": threshold, "lod": lod})
 
 
 def main(argv=None) -> None:

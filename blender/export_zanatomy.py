@@ -19,14 +19,21 @@ for o in bpy.data.objects:
     if o.type in ("MESH", "CURVE"):
         base = re.sub(r"\.(l|r)$", "", o.name); by_base.setdefault(base, []).append(o)
 
-MIN_BEVEL = 0.0006  # 0.6 mm radius for zero-width nerve curves
+MIN_BEVEL = 0.0006  # default 0.6 mm radius for zero-width curves (metres)
+# minimum tube radius per system: cranial nerves 1.0 mm, peripheral/autonomic nerves and roots 1.5 mm
+MIN_BEVEL_BY_SYSTEM = {"cranial-nerves": 0.0010, "peripheral": 0.0015, "autonomic": 0.0015, "spinal-cord": 0.0012}
 
-def world_mesh(o):
+def world_mesh(o, min_bevel=MIN_BEVEL):
     """Evaluated world-space triangles of a mesh or curve object -> (verts Nx3, faces Mx3)."""
-    if o.type == "CURVE" and o.data.bevel_depth == 0 and not o.data.bevel_object:
-        o.data.bevel_depth = MIN_BEVEL; o.data.bevel_resolution = 2
-    if o.type == "CURVE" and o.data.bevel_depth > 0 and o.data.bevel_depth < MIN_BEVEL:
-        o.data.bevel_depth = MIN_BEVEL
+    if o.type == "CURVE":
+        d = o.data
+        if d.bevel_object is None and d.bevel_depth < min_bevel:
+            d.bevel_depth = min_bevel
+        if d.bevel_object is None:
+            d.bevel_resolution = max(d.bevel_resolution, 6)   # round cross-section
+            d.use_fill_caps = True                           # closed (round-ish) ends
+            d.resolution_u = max(d.resolution_u, 24)         # smooth sampling along the curve
+            d.bevel_mode = "ROUND"
     dg = bpy.context.evaluated_depsgraph_get(); ev = o.evaluated_get(dg)
     me = ev.to_mesh()
     if me is None or len(me.polygons) == 0:
@@ -71,7 +78,7 @@ for e in sel:
     for side, objs in groups.items():
         vs, fs, off = [], [], 0
         for o in objs:
-            v, f = world_mesh(o)
+            v, f = world_mesh(o, MIN_BEVEL_BY_SYSTEM.get(e.get("system"), MIN_BEVEL))
             if v is None: print("  [empty]", o.name); continue
             vs.append(v); fs.append(f + off); off += len(v)
         if not vs: continue

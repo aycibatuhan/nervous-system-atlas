@@ -33,6 +33,23 @@ uint flagsAt(ivec3 p) {
   return texelFetch(uFlags, ivec2(int(id & 255u), int(id >> 8u)), 0).r;
 }
 
+uniform float uLinearOut;
+
+vec3 srgbToLinear(vec3 c) {
+  return mix(c / 12.92, pow((c + 0.055) / 1.055, vec3(2.4)), step(vec3(0.04045), c));
+}
+// exact inverse of three.js ACESFilmicToneMapping (exposure 1)
+vec3 inverseAces(vec3 y) {
+  const mat3 invOut = mat3(vec3(0.643038, 0.059269, 0.005962), vec3(0.311187, 0.931436, 0.063929), vec3(0.045775, 0.009295, 0.930118));
+  const mat3 invIn = mat3(vec3(1.764741, -0.147028, -0.036337), vec3(-0.675778, 1.160252, -0.162436), vec3(-0.088963, -0.013224, 1.198773));
+  vec3 v = invOut * clamp(y, 0.0, 0.985);
+  vec3 a = 1.0 - 0.983729 * v;
+  vec3 b = 0.0245786 - 0.4329510 * v;
+  vec3 c = -0.000090537 - 0.238081 * v;
+  vec3 x = (-b + sqrt(max(b * b - 4.0 * a * c, 0.0))) / (2.0 * a);
+  return max(invIn * x, 0.0) * 0.6;
+}
+
 void main() {
   vec3 vox = (uWorldToVoxel * vec4(vWorldPos, 1.0)).xyz;
   if (any(lessThan(vox, vec3(-0.5))) || any(greaterThan(vox, uDims - 0.5))) discard;
@@ -69,6 +86,10 @@ void main() {
       bool sel = ((me | nb0 | nb1 | nb2 | nb3) & 1u) != 0u;
       color = sel ? uOutlineColor : vec3(1.0, 0.55, 0.15);
     }
+  }
+  if (uLinearOut > 0.5) {
+    // the composer's OutputPass will apply ACES + sRGB; pre-invert both so the MRI window/level is reproduced exactly
+    color = inverseAces(srgbToLinear(color));
   }
   fragColor = vec4(color, 1.0);
 }

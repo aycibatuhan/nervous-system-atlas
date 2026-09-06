@@ -23,6 +23,7 @@ export interface SliceUniforms {
   uHasTracts: { value: number };
   uHasTerritories: { value: number };
   uOutlineColor: { value: THREE.Color };
+  uLinearOut: { value: number };
 }
 
 const dummy3d = (): THREE.Data3DTexture => {
@@ -37,7 +38,7 @@ export function createSliceUniforms(grid: VolumeGrid, luts: { struct: THREE.Text
     uStructLut: { value: luts.struct }, uTractLut: { value: luts.tract }, uTerrLut: { value: luts.terr }, uFlags: { value: luts.flags },
     uWorldToVoxel: { value: grid.inverse.clone() }, uDims: { value: new THREE.Vector3(...grid.dims) },
     uWindow: { value: 255 }, uLevel: { value: 127 }, uOverlayOpacity: { value: 0.75 }, uShowAllLabels: { value: 0 },
-    uHasLabels: { value: 0 }, uHasTracts: { value: 0 }, uHasTerritories: { value: 0 }, uOutlineColor: { value: new THREE.Color(0xffe066) },
+    uHasLabels: { value: 0 }, uHasTracts: { value: 0 }, uHasTerritories: { value: 0 }, uOutlineColor: { value: new THREE.Color(0xffe066) }, uLinearOut: { value: 0 },
   };
 }
 

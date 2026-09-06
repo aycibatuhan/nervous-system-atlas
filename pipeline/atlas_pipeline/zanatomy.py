@@ -12,13 +12,13 @@ import numpy as np
 import trimesh
 import yaml
 
-from .catalog import MeshSpec
-from .meshing import export_glb
+from .catalog import LOD_FACES, LOD_MIN_FACES, MeshSpec
+from .meshing import export_glb, export_with_lod
 from .paths import CONFIG, MESHES, WORK
 from .register import affine_lsq, mni_reference_centroids
 
 ZW = WORK / "zanatomy"
-BUDGET = {"small": 1500, "medium": 4000, "large": 10000}
+BUDGET = {"small": 3000, "medium": 8000, "large": 16000}
 # Z-Anatomy base object name -> MNI reference (mesh id base for paired, mesh id for midline, or explicit RAS mm)
 LANDMARKS = {
     "Putamen": "putamen", "Thalamus": "thalamus", "Hippocampus": "hippocampus", "Amygdaloid body": "amygdala", "Lateral ventricle": "ventricle-lateral",
@@ -101,17 +101,20 @@ def main_meshes(argv=None) -> None:
             m = trimesh.load(str(p), force="mesh", process=True)
             m.apply_transform(T)
             m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
+            if len(m.faces) > 200:
+                trimesh.smoothing.filter_taubin(m, lamb=0.5, nu=0.53, iterations=6)
             target = BUDGET[e.get("budget", "medium")]
             if len(m.faces) > target:
                 m = m.simplify_quadric_decimation(face_count=target)
+                m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
             try: m.fix_normals()
             except Exception: pass  # noqa: BLE001
             side_name = {"l": "left", "r": "right"}.get(side, "midline")
             spec = MeshSpec(id=mid, name=e["name"] + (f" ({side_name})" if side != "midline" else ""), system=e["system"], subsystem=e.get("subsystem"), side=side_name,
                             colour=e.get("colour"), visible=e.get("visible", False), budget=e.get("budget", "medium"), structure_id=e.get("structureId"), opacity=e.get("opacity", 1.0))
             path = MESHES / spec.system / f"{spec.id}.glb"
-            nbytes = export_glb(m, path, spec.id)
-            rec = record(spec, "zanatomy", None, "registered-affine", m, path, nbytes, 0, {"zanatomyObjects": rep["objects"], "labelVolume": None})
+            nbytes, lod = export_with_lod(m, path, spec.id, LOD_FACES, LOD_MIN_FACES)
+            rec = record(spec, "zanatomy", None, "registered-affine", m, path, nbytes, 0, {"zanatomyObjects": rep["objects"], "labelVolume": None, "lod": lod})
             existing[rec["id"]] = rec; n += 1
             print(f"  {spec.id:44s} {len(m.faces):6d} tris {nbytes/1024:7.1f} KB  bbox {np.round(m.bounds, 0).tolist()}")
     meshes_json.write_text(json.dumps(list(existing.values()), indent=1))

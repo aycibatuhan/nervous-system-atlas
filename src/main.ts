@@ -94,7 +94,12 @@ async function boot(): Promise<void> {
   app.store.subscribe((s) => s.showNc, () => { syncVisibility(app); tree.render(); });
   app.store.subscribe((s) => [s.selectedId, s.hoverId, s.syndrome, s.involved, s.stepHighlight] as const, () => { applyStates(app); updateLuts(app); }, (a, b) => a[0] === b[0] && a[1] === b[1] && a[2] === b[2] && a[3] === b[3] && a[4] === b[4]);
   app.store.subscribe((s) => s.slices, (sl) => { for (const ax of ['axial', 'coronal', 'sagittal'] as Axis[]) { app.slices[ax].setPosition(sl[ax]); app.slices[ax].setVisible(sl.visible[ax] && app.store.get().loaded.volume); } applyPeel(app); app.sm.requestRender(); });
-  app.store.subscribe((s) => s.peel, () => { applyPeel(app); app.sm.requestRender(); });
+  app.store.subscribe((s) => s.peel, (peel) => { applyPeel(app); app.sm.aoSuppressed = Object.keys(peel).length > 0; app.sm.requestRender(); });
+  // render quality (persisted): composer + AO + shadows in 'high'; the slice shader switches to linear output there
+  app.sm.onOutputModeChange.add((linear) => { app.uniforms.uLinearOut.value = linear ? 1 : 0; });
+  app.store.subscribe((s) => s.quality, (q) => { app.sm.setQuality(q); toolbar.setQuality(q); try { localStorage.setItem('atlas.quality', q); } catch { /* private mode */ } });
+  try { const q = localStorage.getItem('atlas.quality'); app.store.set({ quality: q === 'high' ? 'high' : 'low' }); } catch { /* ignore */ }
+  toolbar.setQuality(app.store.get().quality);
   app.store.subscribe((s) => s.overlay, (o) => { app.uniforms.uOverlayOpacity.value = o.opacity; app.uniforms.uShowAllLabels.value = o.showAllLabels ? 1 : 0; updateLuts(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.windowLevel, (w) => { app.uniforms.uWindow.value = w.window; app.uniforms.uLevel.value = w.level; app.sm.requestRender(); });
   app.store.subscribe((s) => s.contrast, (c) => void loadContrast(app, c, progress));

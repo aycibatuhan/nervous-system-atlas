@@ -25,6 +25,7 @@ export interface AppState {
   panel: { kind: 'quiz'; index: number } | { kind: 'glossary'; id: string | null } | null;
   camera: PresetName | 'custom';
   showNc: boolean;
+  quality: 'low' | 'high';
 }
 
 export function initialState(): AppState {
@@ -48,5 +49,6 @@ export function initialState(): AppState {
     panel: null,
     camera: 'lateral-l',
     showNc: true,
+    quality: 'low',
   };
 }

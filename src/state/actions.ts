@@ -61,7 +61,7 @@ export function selectStructure(app: App, id: string | null, opts: { moveSlices?
   if (id && opts.ensureVisible !== false && !meshShouldBeVisible(app, id)) setStructureVisible(app, id, true);
   app.store.set({ selectedId: id });
   if (id) {
-    void app.registry.load(id).then((mesh) => {
+    void app.registry.ensureFull(id).then((mesh) => {
       if (!mesh) return;
       const entry = app.registry.byId.get(id)!;
       if (opts.moveSlices !== false && !app.store.get().slices.pinned) {

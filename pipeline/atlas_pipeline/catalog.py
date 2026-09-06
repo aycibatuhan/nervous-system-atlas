@@ -9,32 +9,40 @@ import hashlib
 from dataclasses import dataclass, field
 
 # ---------------------------------------------------------------- systems (shared with content + UI)
+# Anatomical palette (fresh-tissue tones): cortex pinkish-grey, white matter cream, deep nuclei muted tan/rose,
+# brainstem/cord pale tan, cerebellum a shade darker, arteries saturated red, veins deep blue, nerves pale yellow,
+# CSF light blue, dura grey. Per-mesh overrides live in the entries below and in the BP3D/Z-Anatomy selection yaml.
 SYSTEMS = [
-    ("cerebrum", "Cerebrum", "#E8B89D", True),
-    ("basal-ganglia", "Basal ganglia", "#C97B84", True),
-    ("diencephalon", "Diencephalon", "#D9A066", True),
-    ("brainstem", "Brainstem", "#B9A0C9", True),
-    ("cerebellum", "Cerebellum", "#9BC49B", True),
-    ("cranial-nerves", "Cranial nerves", "#F2E394", True),
-    ("spinal-cord", "Spinal cord", "#C7B299", False),
-    ("peripheral", "Peripheral nerves", "#D8C27A", False),
-    ("autonomic", "Autonomic", "#E0B070", False),
-    ("ventricles-csf", "Ventricles & CSF", "#7FB3D5", True),
-    ("meninges", "Meninges", "#D0D0D0", False),
-    ("arteries", "Arteries", "#C0392B", True),
+    ("cerebrum", "Cerebrum", "#D0AB9E", True),
+    ("basal-ganglia", "Basal ganglia", "#C4948C", True),
+    ("diencephalon", "Diencephalon", "#C9A27E", True),
+    ("brainstem", "Brainstem", "#D2B79A", True),
+    ("cerebellum", "Cerebellum", "#B89C86", True),
+    ("cranial-nerves", "Cranial nerves", "#EFE3A8", True),
+    ("spinal-cord", "Spinal cord", "#D6BFA2", False),
+    ("peripheral", "Peripheral nerves", "#F0E4B0", False),
+    ("autonomic", "Autonomic", "#E8D9A0", False),
+    ("ventricles-csf", "Ventricles & CSF", "#9CC8E6", True),
+    ("meninges", "Meninges", "#B9BCC2", False),
+    ("arteries", "Arteries", "#C42B2B", True),
     ("arterial-territories", "Arterial territories", "#E07B5A", False),
-    ("venous", "Venous sinuses", "#4A69BD", False),
+    ("venous", "Venous sinuses", "#2F4C8F", False),
     ("tracts", "White-matter tracts", "#EDE3D2", False),
-    ("envelope", "Brain surface", "#E6D5C3", True),
+    ("envelope", "Brain surface", "#DCBFAE", True),
 ]
 SYSTEM_COLOUR = {s[0]: s[2] for s in SYSTEMS}
 
-LOBE_COLOUR = {"frontal": "#F2C1A0", "parietal": "#C9D8F0", "temporal": "#F0D9A0", "occipital": "#D6C2F0",
-               "insula": "#E0A8A8", "limbic": "#F0C8D8"}
+# subtle per-lobe tints on a pinkish-grey cortex so lobes stay tellable without looking painted
+LOBE_COLOUR = {"frontal": "#D4AA9C", "parietal": "#CBA8A8", "temporal": "#D6B29A", "occipital": "#C7A3A9",
+               "insula": "#D09E97", "limbic": "#D2A6A3"}
 
 # triangle budgets per size class
-BUDGET = {"huge": 60000, "large": 25000, "cortical": 10000, "medium": 6000, "small": 3000, "tiny": 1500,
-          "tract": 15000, "territory": 12000, "vessel": 40000}
+BUDGET = {"huge": 60000, "large": 40000, "cortical": 20000, "medium": 8000, "small": 4000, "tiny": 2000,
+          "tract": 20000, "territory": 16000, "vessel": 60000}
+# one class up for vessels and nerves (bifurcations and thin tubes lose shape first under decimation)
+BUDGET_BUMP = {"tiny": "small", "small": "medium", "medium": "large", "large": "huge"}
+LOD_FACES = 3000          # stand-in size for the first paint
+LOD_MIN_FACES = 12000     # meshes at or above this get a stand-in
 
 
 def jitter(colour: str, key: str, amount: float = 0.06) -> str:
@@ -149,56 +157,56 @@ def hocpal_entries() -> dict[int, MeshSpec]:
 # ---------------------------------------------------------------- FreeSurfer aseg
 def aseg_entries() -> dict[int, MeshSpec]:
     e = {}
-    e.update(LR("ventricle-lateral", "Lateral ventricle", "ventricles-csf", 4, 43, visible=True, budget="large", colour="#7FB3D5"))
-    e.update(LR("ventricle-lateral-inferior-horn", "Lateral ventricle, inferior (temporal) horn", "ventricles-csf", 5, 44, budget="small", colour="#8CC0E0"))
-    e[14] = MeshSpec("ventricle-third", "Third ventricle", "ventricles-csf", visible=True, budget="small", colour="#6FA8D0")
-    e[15] = MeshSpec("ventricle-fourth", "Fourth ventricle", "ventricles-csf", visible=True, budget="small", colour="#5F9CC8")
-    e[16] = MeshSpec("brainstem", "Brainstem", "brainstem", visible=True, budget="large", colour="#B9A0C9")
-    e.update(LR("cerebellar-hemisphere", "Cerebellar hemisphere (cortex)", "cerebellum", 8, 47, visible=True, budget="large", colour="#9BC49B"))
-    e.update(LR("cerebellar-white-matter", "Cerebellar white matter", "cerebellum", 7, 46, budget="large", colour="#D5E8D0"))
-    e.update(LR("hippocampus", "Hippocampus", "cerebrum", 17, 53, subsystem="limbic", visible=True, budget="medium", colour="#E8A0B8"))
-    e.update(LR("cerebral-white-matter", "Cerebral white matter", "cerebrum", 2, 41, subsystem="white-matter", budget="huge", colour="#F3EEE6", opacity=0.9))
+    e.update(LR("ventricle-lateral", "Lateral ventricle", "ventricles-csf", 4, 43, visible=True, budget="large", colour="#9CC8E6", opacity=0.6))
+    e.update(LR("ventricle-lateral-inferior-horn", "Lateral ventricle, inferior (temporal) horn", "ventricles-csf", 5, 44, budget="small", colour="#A6CFEA", opacity=0.6))
+    e[14] = MeshSpec("ventricle-third", "Third ventricle", "ventricles-csf", visible=True, budget="small", colour="#8FC0E2", opacity=0.6)
+    e[15] = MeshSpec("ventricle-fourth", "Fourth ventricle", "ventricles-csf", visible=True, budget="small", colour="#86B9DE", opacity=0.6)
+    e[16] = MeshSpec("brainstem", "Brainstem", "brainstem", visible=True, budget="large", colour="#D2B79A")
+    e.update(LR("cerebellar-hemisphere", "Cerebellar hemisphere (cortex)", "cerebellum", 8, 47, visible=True, budget="large", colour="#B5978A"))
+    e.update(LR("cerebellar-white-matter", "Cerebellar white matter", "cerebellum", 7, 46, budget="large", colour="#EDE3D3"))
+    e.update(LR("hippocampus", "Hippocampus", "cerebrum", 17, 53, subsystem="limbic", visible=True, budget="medium", colour="#CFA095"))
+    e.update(LR("cerebral-white-matter", "Cerebral white matter", "cerebrum", 2, 41, subsystem="white-matter", budget="huge", colour="#F1E9DA", opacity=0.9))
     for lab in (251, 252, 253, 254, 255):
-        e[lab] = MeshSpec("corpus-callosum", "Corpus callosum", "cerebrum", subsystem="white-matter", visible=True, budget="medium", colour="#F5F0E8")
-    e.update(LR("ventral-diencephalon", "Ventral diencephalon (FreeSurfer)", "diencephalon", 28, 60, budget="medium", colour="#D9A066"))
+        e[lab] = MeshSpec("corpus-callosum", "Corpus callosum", "cerebrum", subsystem="white-matter", visible=True, budget="medium", colour="#F4EEE2")
+    e.update(LR("ventral-diencephalon", "Ventral diencephalon (FreeSurfer)", "diencephalon", 28, 60, budget="medium", colour="#C9A27E"))
     return e
 
 
 # ---------------------------------------------------------------- MASSP (63)
 def massp_entries() -> dict[int, MeshSpec]:
     e = {}
-    e.update(LR("caudate-nucleus", "Caudate nucleus", "basal-ganglia", 1, 2, visible=True, budget="medium", colour="#C97B84"))
-    e.update(LR("subthalamic-nucleus", "Subthalamic nucleus", "basal-ganglia", 3, 4, visible=True, budget="tiny", colour="#B05A7A"))
-    e.update(LR("substantia-nigra", "Substantia nigra", "brainstem", 5, 6, subsystem="midbrain", visible=True, budget="small", colour="#5A3E5A"))
-    e.update(LR("red-nucleus", "Red nucleus", "brainstem", 7, 8, subsystem="midbrain", visible=True, budget="tiny", colour="#D04040"))
-    e.update(LR("globus-pallidus-internus", "Globus pallidus, internal segment", "basal-ganglia", 9, 10, visible=True, budget="small", colour="#A86070"))
-    e.update(LR("globus-pallidus-externus", "Globus pallidus, external segment", "basal-ganglia", 11, 12, visible=True, budget="small", colour="#BF7A8A"))
-    e.update(LR("thalamus", "Thalamus", "diencephalon", 13, 14, visible=True, budget="medium", colour="#D9A066"))
-    e.update(LR("amygdala", "Amygdala", "cerebrum", 19, 20, subsystem="limbic", visible=True, budget="small", colour="#D08090"))
-    e.update(LR("internal-capsule", "Internal capsule", "cerebrum", 21, 22, subsystem="white-matter", visible=True, budget="medium", colour="#EFE6D8"))
-    e.update(LR("ventral-tegmental-area", "Ventral tegmental area", "brainstem", 23, 24, subsystem="midbrain", budget="tiny", colour="#7A5A8A"))
-    e[25] = MeshSpec("fornix", "Fornix", "cerebrum", subsystem="limbic", visible=True, budget="small", colour="#F0DCC0")
-    e.update(LR("periaqueductal-grey", "Periaqueductal grey", "brainstem", 26, 27, subsystem="midbrain", budget="tiny", colour="#8A7A9A"))
-    e.update(LR("pedunculopontine-nucleus", "Pedunculopontine nucleus", "brainstem", 28, 29, subsystem="pons", budget="tiny", colour="#9A8AAA"))
-    e.update(LR("claustrum", "Claustrum", "basal-ganglia", 30, 31, budget="small", colour="#D8A0A8"))
-    e.update(LR("inferior-colliculus", "Inferior colliculus", "brainstem", 32, 33, subsystem="midbrain", visible=True, budget="tiny", colour="#A080B0"))
-    e.update(LR("superior-colliculus", "Superior colliculus", "brainstem", 34, 35, subsystem="midbrain", visible=True, budget="tiny", colour="#B090C0"))
-    e.update(LR("habenula", "Lateral habenula", "diencephalon", 36, 37, budget="tiny", colour="#C8A070"))
-    e.update(LR("putamen", "Putamen", "basal-ganglia", 38, 39, visible=True, budget="medium", colour="#D48C8C"))
-    e.update(LR("nucleus-accumbens", "Nucleus accumbens", "basal-ganglia", 40, 41, budget="tiny", colour="#E0A0A0"))
-    e.update(LR("hippocampus-ca1", "Hippocampus CA1", "cerebrum", 42, 43, subsystem="limbic", budget="small", colour="#E8A8C0"))
-    e.update(LR("hippocampus-ca23", "Hippocampus CA2/CA3", "cerebrum", 44, 45, subsystem="limbic", budget="tiny", colour="#E098B8"))
-    e.update(LR("dentate-gyrus", "Dentate gyrus", "cerebrum", 46, 47, subsystem="limbic", budget="tiny", colour="#D888B0"))
-    e.update(LR("presubiculum", "Presubiculum", "cerebrum", 48, 49, subsystem="limbic", budget="tiny", colour="#F0B8C8"))
-    e.update(LR("subiculum", "Subiculum", "cerebrum", 50, 51, subsystem="limbic", budget="tiny", colour="#F0C0D0"))
-    e.update(LR("uncus", "Uncus", "cerebrum", 52, 53, subsystem="limbic", visible=True, budget="small", colour="#E8B0B8"))
-    e[54] = MeshSpec("anterior-commissure", "Anterior commissure", "cerebrum", subsystem="white-matter", budget="tiny", colour="#F5EAD8")
-    e[55] = MeshSpec("posterior-commissure", "Posterior commissure", "brainstem", subsystem="midbrain", budget="tiny", colour="#F5EAD8")
-    e.update(LR("basal-forebrain-cholinergic", "Basal forebrain cholinergic nuclei", "cerebrum", 56, 57, subsystem="limbic", budget="tiny", colour="#D8B890"))
-    e[58] = MeshSpec("raphe-dorsal", "Dorsal raphe nucleus", "brainstem", subsystem="midbrain", budget="tiny", colour="#8A6A9A")
-    e[59] = MeshSpec("raphe-median", "Median raphe nucleus", "brainstem", subsystem="pons", budget="tiny", colour="#9A7AAA")
-    e.update(LR("lateral-geniculate-nucleus", "Lateral geniculate nucleus", "diencephalon", 60, 61, visible=True, budget="tiny", colour="#E0B070"))
-    e.update(LR("medial-geniculate-nucleus", "Medial geniculate nucleus", "diencephalon", 62, 63, visible=True, budget="tiny", colour="#D0A060"))
+    e.update(LR("caudate-nucleus", "Caudate nucleus", "basal-ganglia", 1, 2, visible=True, budget="medium", colour="#C99089"))
+    e.update(LR("subthalamic-nucleus", "Subthalamic nucleus", "basal-ganglia", 3, 4, visible=True, budget="tiny", colour="#B27A78"))
+    e.update(LR("substantia-nigra", "Substantia nigra", "brainstem", 5, 6, subsystem="midbrain", visible=True, budget="small", colour="#5A4450"))
+    e.update(LR("red-nucleus", "Red nucleus", "brainstem", 7, 8, subsystem="midbrain", visible=True, budget="tiny", colour="#C4665A"))
+    e.update(LR("globus-pallidus-internus", "Globus pallidus, internal segment", "basal-ganglia", 9, 10, visible=True, budget="small", colour="#B8857F"))
+    e.update(LR("globus-pallidus-externus", "Globus pallidus, external segment", "basal-ganglia", 11, 12, visible=True, budget="small", colour="#C08C86"))
+    e.update(LR("thalamus", "Thalamus", "diencephalon", 13, 14, visible=True, budget="medium", colour="#C9A27E"))
+    e.update(LR("amygdala", "Amygdala", "cerebrum", 19, 20, subsystem="limbic", visible=True, budget="small", colour="#C69A8E"))
+    e.update(LR("internal-capsule", "Internal capsule", "cerebrum", 21, 22, subsystem="white-matter", visible=True, budget="medium", colour="#EEE6D6"))
+    e.update(LR("ventral-tegmental-area", "Ventral tegmental area", "brainstem", 23, 24, subsystem="midbrain", budget="tiny", colour="#8E6E7E"))
+    e[25] = MeshSpec("fornix", "Fornix", "cerebrum", subsystem="limbic", visible=True, budget="small", colour="#EFE2CC")
+    e.update(LR("periaqueductal-grey", "Periaqueductal grey", "brainstem", 26, 27, subsystem="midbrain", budget="tiny", colour="#A08A96"))
+    e.update(LR("pedunculopontine-nucleus", "Pedunculopontine nucleus", "brainstem", 28, 29, subsystem="pons", budget="tiny", colour="#AC9AA4"))
+    e.update(LR("claustrum", "Claustrum", "basal-ganglia", 30, 31, budget="small", colour="#CDA098"))
+    e.update(LR("inferior-colliculus", "Inferior colliculus", "brainstem", 32, 33, subsystem="midbrain", visible=True, budget="tiny", colour="#C4A6A0"))
+    e.update(LR("superior-colliculus", "Superior colliculus", "brainstem", 34, 35, subsystem="midbrain", visible=True, budget="tiny", colour="#CCB0A8"))
+    e.update(LR("habenula", "Lateral habenula", "diencephalon", 36, 37, budget="tiny", colour="#C8A882"))
+    e.update(LR("putamen", "Putamen", "basal-ganglia", 38, 39, visible=True, budget="medium", colour="#C98E86"))
+    e.update(LR("nucleus-accumbens", "Nucleus accumbens", "basal-ganglia", 40, 41, budget="tiny", colour="#CFA09A"))
+    e.update(LR("hippocampus-ca1", "Hippocampus CA1", "cerebrum", 42, 43, subsystem="limbic", budget="small", colour="#D2A69B"))
+    e.update(LR("hippocampus-ca23", "Hippocampus CA2/CA3", "cerebrum", 44, 45, subsystem="limbic", budget="tiny", colour="#CC9E93"))
+    e.update(LR("dentate-gyrus", "Dentate gyrus", "cerebrum", 46, 47, subsystem="limbic", budget="tiny", colour="#C6968C"))
+    e.update(LR("presubiculum", "Presubiculum", "cerebrum", 48, 49, subsystem="limbic", budget="tiny", colour="#DAB3A8"))
+    e.update(LR("subiculum", "Subiculum", "cerebrum", 50, 51, subsystem="limbic", budget="tiny", colour="#DDB8AE"))
+    e.update(LR("uncus", "Uncus", "cerebrum", 52, 53, subsystem="limbic", visible=True, budget="small", colour="#D3ACA2"))
+    e[54] = MeshSpec("anterior-commissure", "Anterior commissure", "cerebrum", subsystem="white-matter", budget="tiny", colour="#F0E6D6")
+    e[55] = MeshSpec("posterior-commissure", "Posterior commissure", "brainstem", subsystem="midbrain", budget="tiny", colour="#F0E6D6")
+    e.update(LR("basal-forebrain-cholinergic", "Basal forebrain cholinergic nuclei", "cerebrum", 56, 57, subsystem="limbic", budget="tiny", colour="#CDB090"))
+    e[58] = MeshSpec("raphe-dorsal", "Dorsal raphe nucleus", "brainstem", subsystem="midbrain", budget="tiny", colour="#A48C90")
+    e[59] = MeshSpec("raphe-median", "Median raphe nucleus", "brainstem", subsystem="pons", budget="tiny", colour="#AE979C")
+    e.update(LR("lateral-geniculate-nucleus", "Lateral geniculate nucleus", "diencephalon", 60, 61, visible=True, budget="tiny", colour="#C9A27E"))
+    e.update(LR("medial-geniculate-nucleus", "Medial geniculate nucleus", "diencephalon", 62, 63, visible=True, budget="tiny", colour="#C29A78"))
     return e
 
 
@@ -210,13 +218,13 @@ def mial_entries() -> dict[int, MeshSpec]:
               ("thalamus-ventral-posterior-ventrolateral", "Ventral posterior / ventrolateral group (VPL/VPM)")]
     e = {}
     for k, (sid, name) in enumerate(groups):
-        e.update(LR(sid, name, "diencephalon", k + 1, k + 8, subsystem="thalamic-nuclei", budget="tiny", colour=jitter("#E0A860", sid, 0.25)))
+        e.update(LR(sid, name, "diencephalon", k + 1, k + 8, subsystem="thalamic-nuclei", budget="tiny", colour=jitter("#C9A27E", sid, 0.18)))
     return e
 
 
 # ---------------------------------------------------------------- CIT168 (unlateralised labels; split by x sign)
-CIT168 = {6: ("substantia-nigra-pars-compacta", "Substantia nigra, pars compacta", "brainstem", "midbrain", "#4A2E4A"),
-          8: ("substantia-nigra-pars-reticulata", "Substantia nigra, pars reticulata", "brainstem", "midbrain", "#6A4E6A")}
+CIT168 = {6: ("substantia-nigra-pars-compacta", "Substantia nigra, pars compacta", "brainstem", "midbrain", "#4E3A48"),
+          8: ("substantia-nigra-pars-reticulata", "Substantia nigra, pars reticulata", "brainstem", "midbrain", "#6E5A66")}
 
 
 # ---------------------------------------------------------------- Neudorfer hypothalamus (lateralised, 0.5 mm)
@@ -232,7 +240,7 @@ def hypothalamus_entries() -> dict[int, MeshSpec]:
     e = {}
     for r, l, sid, name in rows:
         sys_ = "cerebrum" if sid in ("bed-nucleus-stria-terminalis", "nucleus-basalis-meynert") else "diencephalon"
-        e.update(LR(sid, name, sys_, l, r, subsystem="hypothalamus", budget="tiny", colour=jitter("#E6C27A", sid, 0.2)))
+        e.update(LR(sid, name, sys_, l, r, subsystem="hypothalamus", budget="tiny", colour=jitter("#CDA880", sid, 0.16)))
     return e
 
 
@@ -245,13 +253,13 @@ def diedrichsen_entries() -> dict[int, MeshSpec]:
     e = {}
     for key, name, l, r, v in lob:
         sid = "cerebellar-lobule-" + key.lower().replace("–", "-")
-        e.update(LR(sid, name, "cerebellum", l, r, subsystem="lobules", budget="medium", colour=jitter("#9BC49B", sid, 0.3)))
+        e.update(LR(sid, name, "cerebellum", l, r, subsystem="lobules", budget="medium", colour=jitter("#B5978A", sid, 0.16)))
         if v:
             e[v] = MeshSpec(f"cerebellar-vermis-{key.lower()}", f"Vermis {name.replace('Lobule ', '')}", "cerebellum", subsystem="vermis",
-                            budget="small", colour=jitter("#78B078", sid, 0.3), structure_id="cerebellar-vermis")
-    e.update(LR("dentate-nucleus", "Dentate nucleus", "cerebellum", 29, 30, subsystem="deep-nuclei", visible=True, budget="small", colour="#4C6E4C"))
-    e.update(LR("interposed-nucleus", "Interposed nuclei (emboliform + globose)", "cerebellum", 31, 32, subsystem="deep-nuclei", budget="tiny", colour="#5E805E"))
-    e.update(LR("fastigial-nucleus", "Fastigial nucleus", "cerebellum", 33, 34, subsystem="deep-nuclei", budget="tiny", colour="#709270"))
+                            budget="small", colour=jitter("#A88B7E", sid, 0.16), structure_id="cerebellar-vermis")
+    e.update(LR("dentate-nucleus", "Dentate nucleus", "cerebellum", 29, 30, subsystem="deep-nuclei", visible=True, budget="small", colour="#8A6E64"))
+    e.update(LR("interposed-nucleus", "Interposed nuclei (emboliform + globose)", "cerebellum", 31, 32, subsystem="deep-nuclei", budget="tiny", colour="#957A70"))
+    e.update(LR("fastigial-nucleus", "Fastigial nucleus", "cerebellum", 33, 34, subsystem="deep-nuclei", budget="tiny", colour="#9F857B"))
     return e
 
 
@@ -325,7 +333,7 @@ HCP = {
 def hcp_entries() -> dict[str, MeshSpec]:
     e = {}
     for key, (sid, name, system, sub, vis) in HCP.items():
-        colour = "#F2E394" if system == "cranial-nerves" else jitter("#EDE3D2", sid, 0.35)
+        colour = "#EFE3A8" if system == "cranial-nerves" else jitter("#EDE3D2", sid, 0.35)
         if key.startswith("commissural/") or key in ("cerebellum/MCP", "cerebellum/SCP"):
             e[key] = MeshSpec(sid, name, system, subsystem=sub, side="midline", visible=vis, budget="tract", colour=colour, opacity=0.9)
             continue
@@ -353,5 +361,5 @@ def atlases() -> list[AtlasSpec]:
     ]
 
 
-ENVELOPE = MeshSpec("brain-envelope", "Brain surface (mask)", "envelope", visible=True, budget="large", colour="#E6D5C3", opacity=0.18)
-ARTERIES_MRA = MeshSpec("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)", "arteries", subsystem="mra", visible=True, budget="vessel", colour="#C0392B")
+ENVELOPE = MeshSpec("brain-envelope", "Brain surface (mask)", "envelope", visible=True, budget="huge", colour="#DCBFAE", opacity=0.12)
+ARTERIES_MRA = MeshSpec("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)", "arteries", subsystem="mra", visible=True, budget="vessel", colour="#C42B2B")
