@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-16",
+ "type": "localize",
+ "vignette": "A 66-year-old man describes electric shocks in his right cheek and jaw lasting a second, set off by chewing and by touching a spot beside his nose. Between attacks he has no pain and the examination, including the corneal reflex, is normal.",
+ "stem": "Which nerve divisions are involved and what is the usual cause?",
+ "options": [
+  {
+   "key": "A",
+   "text": "V1; herpes zoster"
+  },
+  {
+   "key": "B",
+   "text": "V2 and V3; vascular compression of the trigeminal root"
+  },
+  {
+   "key": "C",
+   "text": "V3 only; dental abscess"
+  },
+  {
+   "key": "D",
+   "text": "VII; Bell palsy"
+  },
+  {
+   "key": "E",
+   "text": "IX; glossopharyngeal neuralgia"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Paroxysmal lancinating pain with trigger zones in the maxillary and mandibular territories and a normal examination is classic trigeminal neuralgia, usually from compression of the root entry zone by a loop of the superior cerebellar artery.",
+ "targets": {
+  "structureIds": [
+   "cn-05-trigeminal",
+   "artery-sca"
+  ],
+  "syndromeIds": [
+   "syn-trigeminal-neuralgia"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cn-05-trigeminal-r",
+  "artery-sca-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    120
+   ]
+  }
+ ],
+ "original": true
+}

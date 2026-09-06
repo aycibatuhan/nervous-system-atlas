@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-25",
+ "type": "mechanism",
+ "vignette": "A 22-year-old man is quadriplegic after a diving injury at C5. On the third day a nurse finds him flushed and sweating above the neck with a headache and a blood pressure of 220/120 and a pulse of 48. His bladder is distended.",
+ "stem": "What is happening?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Pulmonary embolism"
+  },
+  {
+   "key": "B",
+   "text": "Autonomic dysreflexia from bladder distension"
+  },
+  {
+   "key": "C",
+   "text": "Neurogenic shock"
+  },
+  {
+   "key": "D",
+   "text": "Hemorrhagic stroke"
+  },
+  {
+   "key": "E",
+   "text": "Spinal shock"
+  }
+ ],
+ "answer": "B",
+ "explanation": "A noxious stimulus below a lesion above T6 triggers massive sympathetic discharge from the disconnected splanchnic outflow, producing hypertension with reflex bradycardia and flushing above the lesion: autonomic dysreflexia. Emptying the bladder is the treatment.",
+ "targets": {
+  "structureIds": [
+   "intermediolateral-column",
+   "splanchnic-nerves"
+  ],
+  "syndromeIds": [
+   "syn-complete-transection-spinal-shock"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "spinal-cord"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    167,
+    168
+   ]
+  }
+ ],
+ "original": true
+}

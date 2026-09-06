@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-23",
+ "type": "localize",
+ "vignette": "A 70-year-old woman with a spinning sensation and vomiting for six hours has nystagmus that beats to the right when she looks right and to the left when she looks left. Rapid head turning to either side produces no corrective eye movement. She cannot stand without support.",
+ "stem": "What does the examination indicate?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right vestibular neuritis"
+  },
+  {
+   "key": "B",
+   "text": "Left vestibular neuritis"
+  },
+  {
+   "key": "C",
+   "text": "Benign paroxysmal positional vertigo"
+  },
+  {
+   "key": "D",
+   "text": "A central (brainstem or cerebellar) lesion"
+  },
+  {
+   "key": "E",
+   "text": "Ménière disease"
+  }
+ ],
+ "answer": "D",
+ "explanation": "Direction-changing (gaze-evoked) nystagmus, a normal head impulse test and inability to stand are central features of the HINTS examination; a peripheral lesion gives unidirectional nystagmus with an abnormal head impulse toward the affected ear.",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-central-vs-peripheral-vertigo",
+   "syn-pica-cerebellar-infarct"
+  ],
+  "pathwayIds": [
+   "pathway-vestibular-vor"
+  ]
+ },
+ "highlightOnReveal": [
+  "brainstem",
+  "cerebellar-hemisphere-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    110,
+    112
+   ]
+  }
+ ],
+ "original": true
+}

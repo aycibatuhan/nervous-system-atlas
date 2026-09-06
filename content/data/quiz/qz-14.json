@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-14",
+ "type": "localize",
+ "vignette": "A 58-year-old woman trips over her right foot. She cannot dorsiflex or evert the right foot, but inversion and plantar flexion are strong and the ankle jerk is normal. Sensation is reduced over the dorsum of the foot. She recently lost 15 kg.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "L5 root"
+  },
+  {
+   "key": "B",
+   "text": "Sciatic nerve at the hip"
+  },
+  {
+   "key": "C",
+   "text": "Common peroneal nerve at the fibular neck"
+  },
+  {
+   "key": "D",
+   "text": "Tibial nerve"
+  },
+  {
+   "key": "E",
+   "text": "Anterior horn cells"
+  }
+ ],
+ "answer": "C",
+ "explanation": "Foot drop with weak eversion but preserved inversion (tibialis posterior, L5 via the tibial nerve) and a normal ankle reflex is a common peroneal neuropathy; an L5 radiculopathy would weaken inversion and hip abduction as well. Weight loss removes the fat protecting the nerve at the fibular neck.",
+ "targets": {
+  "structureIds": [
+   "nerve-common-peroneal"
+  ],
+  "syndromeIds": [
+   "syn-peroneal-palsy-foot-drop",
+   "syn-radiculopathy-lumbosacral"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "common-peroneal-nerve-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    163,
+    166
+   ]
+  }
+ ],
+ "original": true
+}

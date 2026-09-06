@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-07",
+ "type": "localize",
+ "vignette": "A 25-year-old woman has had blurred vision in the left eye for three days with pain on moving the eye. Acuity is 6/36 on the left, colors look washed out, and the left pupil dilates when the light is swung onto it from the right eye. The fundus is normal.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left retina"
+  },
+  {
+   "key": "B",
+   "text": "Left optic nerve"
+  },
+  {
+   "key": "C",
+   "text": "Optic chiasm"
+  },
+  {
+   "key": "D",
+   "text": "Right optic tract"
+  },
+  {
+   "key": "E",
+   "text": "Left occipital cortex"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Monocular visual loss with color desaturation, pain on eye movement, a relative afferent pupillary defect and a normal disc is retrobulbar optic neuritis of that nerve. Chiasmal and retrochiasmal lesions produce bilateral or homonymous field defects.",
+ "targets": {
+  "structureIds": [
+   "cn-02-optic"
+  ],
+  "syndromeIds": [
+   "syn-optic-neuritis",
+   "syn-rapd"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "optic-nerve-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    48,
+    49
+   ]
+  }
+ ],
+ "original": true
+}

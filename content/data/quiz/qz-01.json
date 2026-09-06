@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-01",
+ "type": "localize",
+ "vignette": "A 68-year-old man with atrial fibrillation is found slumped at breakfast. He does not speak or follow commands, his eyes are turned to the left, the right side of his face droops below the eye and his right arm and leg do not move. He does not blink to a threat from the right.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left internal capsule (lacune)"
+  },
+  {
+   "key": "B",
+   "text": "Left middle cerebral artery stem territory"
+  },
+  {
+   "key": "C",
+   "text": "Left pons"
+  },
+  {
+   "key": "D",
+   "text": "Left thalamus"
+  },
+  {
+   "key": "E",
+   "text": "Right frontal lobe"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Global aphasia, gaze deviation toward the lesion, right hemianopia and a face-arm-leg hemiplegia together require the whole left MCA territory: the language cortex, the frontal eye field, the optic radiation and the capsule. A capsular lacune gives no aphasia or field defect; a pontine lesion would turn the eyes away from the lesion and add a peripheral facial palsy.",
+ "targets": {
+  "structureIds": [
+   "artery-mca"
+  ],
+  "syndromeIds": [
+   "syn-mca-stem-infarct"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "territory-mca-major-l",
+  "artery-mca-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    55,
+    59
+   ]
+  }
+ ],
+ "original": true
+}

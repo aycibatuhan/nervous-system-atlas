@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-28",
+ "type": "localize",
+ "vignette": "A 35-year-old woman reports numb, tingling hands that wake her at night and that she shakes to relieve. The thumb, index and middle fingers are affected, the little finger is spared, and the thenar muscles are slightly wasted. Sensation over the base of the thumb on the palm is normal.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "C6 root"
+  },
+  {
+   "key": "B",
+   "text": "Median nerve in the carpal tunnel"
+  },
+  {
+   "key": "C",
+   "text": "Median nerve at the elbow"
+  },
+  {
+   "key": "D",
+   "text": "Ulnar nerve at the wrist"
+  },
+  {
+   "key": "E",
+   "text": "Lower trunk of the brachial plexus"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Nocturnal paresthesias in the lateral three and a half digits with thenar weakness and sparing of the thenar palm (palmar cutaneous branch leaves above the tunnel) is carpal tunnel syndrome; a C6 root lesion would involve the forearm and reflexes.",
+ "targets": {
+  "structureIds": [
+   "nerve-median"
+  ],
+  "syndromeIds": [
+   "syn-carpal-tunnel"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "median-nerve-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    148,
+    150
+   ]
+  }
+ ],
+ "original": true
+}

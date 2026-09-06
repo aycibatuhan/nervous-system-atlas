@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-17",
+ "type": "identify",
+ "vignette": "A 55-year-old woman has a spastic gait, a small stiff tongue that she cannot protrude, slow strangled speech and cries uncontrollably when asked about her family. Her jaw jerk is very brisk. There is no wasting or fasciculation of the tongue.",
+ "stem": "The lesion pattern is:",
+ "options": [
+  {
+   "key": "A",
+   "text": "Bilateral lower motor neuron lesions of IX–XII (bulbar palsy)"
+  },
+  {
+   "key": "B",
+   "text": "Bilateral corticobulbar tract lesions (pseudobulbar palsy)"
+  },
+  {
+   "key": "C",
+   "text": "Unilateral capsular infarct"
+  },
+  {
+   "key": "D",
+   "text": "Myasthenia gravis"
+  },
+  {
+   "key": "E",
+   "text": "Cerebellar degeneration"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Spastic dysarthria, a spastic tongue without wasting, a brisk jaw jerk and emotional lability are the features of pseudobulbar palsy from bilateral upper motor neuron (corticobulbar) lesions; bulbar palsy would show a wasted, fasciculating tongue and an absent jaw jerk.",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-bulbar-vs-pseudobulbar"
+  ],
+  "pathwayIds": [
+   "pathway-corticobulbar"
+  ]
+ },
+ "highlightOnReveal": [
+  "tract-corticobulbar-l",
+  "tract-corticobulbar-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    119,
+    121
+   ]
+  }
+ ],
+ "original": true
+}

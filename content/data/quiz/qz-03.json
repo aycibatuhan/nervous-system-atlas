@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-03",
+ "type": "localize",
+ "vignette": "A 30-year-old man is stabbed in the back at the level of the lower thoracic spine. He has weakness of the right leg with a brisk knee jerk and an upgoing toe, cannot feel a tuning fork on the right ankle, and cannot feel a pin on the left leg below the groin.",
+ "stem": "Which pathway accounts for the left-sided finding?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right lateral corticospinal tract"
+  },
+  {
+   "key": "B",
+   "text": "Right posterior column"
+  },
+  {
+   "key": "C",
+   "text": "Right spinothalamic tract"
+  },
+  {
+   "key": "D",
+   "text": "Left spinothalamic tract"
+  },
+  {
+   "key": "E",
+   "text": "Left posterior column"
+  }
+ ],
+ "answer": "C",
+ "explanation": "Pain and temperature fibers cross in the anterior white commissure within a segment or two of entry, so the right spinothalamic tract carries pain from the left leg; a right hemicord lesion therefore gives left pain loss with right weakness and right proprioceptive loss (Brown-Séquard).",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-brown-sequard"
+  ],
+  "pathwayIds": [
+   "pathway-lateral-spinothalamic",
+   "pathway-dcml"
+  ]
+ },
+ "highlightOnReveal": [
+  "spinal-cord"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    168,
+    170
+   ]
+  }
+ ],
+ "original": true
+}

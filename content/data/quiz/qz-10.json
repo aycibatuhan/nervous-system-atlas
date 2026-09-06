@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-10",
+ "type": "mechanism",
+ "vignette": "A 50-year-old woman with a large right frontal tumor becomes drowsy over an hour. Her right pupil is dilated and unreactive. Her right arm and leg are weak with an upgoing toe.",
+ "stem": "Why is the weakness on the same side as the tumor?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The tumor has spread to the left hemisphere"
+  },
+  {
+   "key": "B",
+   "text": "The right cerebral peduncle is compressed by the uncus"
+  },
+  {
+   "key": "C",
+   "text": "The left cerebral peduncle is compressed against the tentorial edge"
+  },
+  {
+   "key": "D",
+   "text": "The corticospinal tract has not crossed at this level"
+  },
+  {
+   "key": "E",
+   "text": "Post-ictal Todd paresis"
+  }
+ ],
+ "answer": "C",
+ "explanation": "Uncal herniation normally compresses the ipsilateral peduncle and weakens the contralateral limbs; when the midbrain is pushed across so that the opposite peduncle is notched against the tentorium (Kernohan notch), the weakness appears on the side of the mass. The dilated pupil, not the weakness, indicates the side of the lesion.",
+ "targets": {
+  "structureIds": [
+   "cerebral-peduncle-crus"
+  ],
+  "syndromeIds": [
+   "syn-uncal-herniation"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "uncus-r",
+  "brainstem"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 30,
+   "pages": [
+    270,
+    270
+   ]
+  }
+ ],
+ "original": true
+}

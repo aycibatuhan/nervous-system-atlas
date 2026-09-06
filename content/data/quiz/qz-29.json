@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-29",
+ "type": "localize",
+ "vignette": "A 58-year-old man cannot look up. His pupils are large and do not react to light but constrict when he looks at his nose, and when he tries to look up his eyes jerk inward and retract. He has had headaches for a month.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Bilateral oculomotor nerves"
+  },
+  {
+   "key": "B",
+   "text": "Dorsal midbrain (pretectum and posterior commissure)"
+  },
+  {
+   "key": "C",
+   "text": "Pons"
+  },
+  {
+   "key": "D",
+   "text": "Cavernous sinus"
+  },
+  {
+   "key": "E",
+   "text": "Frontal eye fields"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Up-gaze palsy, light-near dissociation, lid retraction and convergence-retraction nystagmus form the dorsal midbrain (Parinaud) syndrome, from compression of the pretectum and posterior commissure, typically by a pineal tumor or hydrocephalus.",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-parinaud-dorsal-midbrain"
+  ],
+  "pathwayIds": [
+   "pathway-vertical-gaze",
+   "pathway-pupillary-light-reflex"
+  ]
+ },
+ "highlightOnReveal": [
+  "brainstem",
+  "pineal-gland"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    100,
+    100
+   ]
+  }
+ ],
+ "original": true
+}

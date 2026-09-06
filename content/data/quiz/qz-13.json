@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-13",
+ "type": "identify",
+ "vignette": "A 20-year-old motorcyclist has an arm that hangs at his side, rotated inward with the elbow straight, after a crash in which his shoulder hit the road. He can move his fingers normally. Sensation is reduced over the outer shoulder and forearm.",
+ "stem": "Which roots have been injured?",
+ "options": [
+  {
+   "key": "A",
+   "text": "C5–C6"
+  },
+  {
+   "key": "B",
+   "text": "C7"
+  },
+  {
+   "key": "C",
+   "text": "C8–T1"
+  },
+  {
+   "key": "D",
+   "text": "T1 only"
+  },
+  {
+   "key": "E",
+   "text": "C4"
+  }
+ ],
+ "answer": "A",
+ "explanation": "The waiter's tip posture with preserved hand function and lateral arm sensory loss is an upper brachial plexus (Erb) palsy from traction on C5–C6: shoulder abductors, external rotators, elbow flexors and supinator are lost.",
+ "targets": {
+  "structureIds": [
+   "plexus-brachial"
+  ],
+  "syndromeIds": [
+   "syn-erb-duchenne"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "brachial-plexus-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    412,
+    413
+   ]
+  }
+ ],
+ "original": true
+}

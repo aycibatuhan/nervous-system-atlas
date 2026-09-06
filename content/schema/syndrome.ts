@@ -47,7 +47,7 @@ export const GlossaryTerm = z.object({
   related: z.array(z.string()).default([]), citations: z.array(Citation).default([]),
 });
 export const QuizItem = z.object({
-  kind: z.literal('quiz'), id: Id, type: z.enum(['localise', 'identify', 'imaging', 'mechanism']),
+  kind: z.literal('quiz'), id: Id, type: z.enum(['localize', 'identify', 'imaging', 'mechanism']),
   vignette: z.string().min(80), stem: z.string(),
   options: z.array(z.object({ key: z.enum(['A', 'B', 'C', 'D', 'E']), text: z.string() })).min(4),
   answer: z.enum(['A', 'B', 'C', 'D', 'E']), explanation: z.string().min(80),

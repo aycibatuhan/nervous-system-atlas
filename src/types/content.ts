@@ -8,5 +8,6 @@ export interface ContentBundle {
   pathways: Record<string, ContentEntryBase & Record<string, unknown>>;
   syndromes: Record<string, ContentEntryBase & Record<string, unknown>>;
   glossary: Record<string, ContentEntryBase & Record<string, unknown>>;
+  quiz: Record<string, ContentEntryBase & Record<string, unknown>>;
   meshToStructure: Record<string, string>;
 }

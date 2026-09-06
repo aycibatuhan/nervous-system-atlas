@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-11",
+ "type": "localize",
+ "vignette": "A 35-year-old woman has a drooping right eyelid that is only 1–2 mm lower than the left, a right pupil that is smaller than the left, and the difference is greater when the lights are dimmed. She has had right-sided neck pain since a yoga class two days ago.",
+ "stem": "What is the most important next step?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Reassure: physiologic anisocoria"
+  },
+  {
+   "key": "B",
+   "text": "MRI of the brain for a pituitary tumor"
+  },
+  {
+   "key": "C",
+   "text": "CT angiography of the neck for carotid dissection"
+  },
+  {
+   "key": "D",
+   "text": "Chest X-ray for an apical tumor"
+  },
+  {
+   "key": "E",
+   "text": "Edrophonium test"
+  }
+ ],
+ "answer": "C",
+ "explanation": "A Horner syndrome (anisocoria greater in the dark, mild ptosis) with new neck pain is an internal carotid dissection until proven otherwise; the sympathetic plexus runs on the carotid wall. Vessel imaging of the neck is urgent because of the stroke risk.",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-horner"
+  ],
+  "pathwayIds": [
+   "pathway-oculosympathetic"
+  ]
+ },
+ "highlightOnReveal": [
+  "artery-internal-carotid-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    85,
+    87
+   ]
+  }
+ ],
+ "original": true
+}

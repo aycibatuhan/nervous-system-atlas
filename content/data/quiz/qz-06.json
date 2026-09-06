@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-06",
+ "type": "mechanism",
+ "vignette": "A 60-year-old man has a complete ptosis of the right eye. When the lid is lifted the eye is turned down and out, and the pupil is 7 mm and unreactive. He has a severe headache.",
+ "stem": "What is the most urgent diagnosis to exclude?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Diabetic microvascular third nerve palsy"
+  },
+  {
+   "key": "B",
+   "text": "Posterior communicating artery aneurysm"
+  },
+  {
+   "key": "C",
+   "text": "Myasthenia gravis"
+  },
+  {
+   "key": "D",
+   "text": "Midbrain infarct"
+  },
+  {
+   "key": "E",
+   "text": "Horner syndrome"
+  }
+ ],
+ "answer": "B",
+ "explanation": "A painful third nerve palsy with a dilated fixed pupil means compression of the superficially placed pupillary fibers, classically by a posterior communicating aneurysm; a microvascular palsy usually spares the pupil. Emergency CTA is required.",
+ "targets": {
+  "structureIds": [
+   "artery-pcom"
+  ],
+  "syndromeIds": [
+   "syn-cn3-palsy",
+   "syn-subarachnoid-hemorrhage"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cn-03-oculomotor-r",
+  "artery-pcom-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    93,
+    95
+   ]
+  }
+ ],
+ "original": true
+}

@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-21",
+ "type": "identify",
+ "vignette": "A 28-year-old woman notices double vision and drooping eyelids by evening that are better in the morning. Her pupils are normal. Chewing tires her halfway through a meal. Reflexes and sensation are normal.",
+ "stem": "What is the site of the disorder?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Oculomotor nerve"
+  },
+  {
+   "key": "B",
+   "text": "Neuromuscular junction (postsynaptic)"
+  },
+  {
+   "key": "C",
+   "text": "Neuromuscular junction (presynaptic)"
+  },
+  {
+   "key": "D",
+   "text": "Extraocular muscles"
+  },
+  {
+   "key": "E",
+   "text": "Midbrain nuclei"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Fatigable ptosis, diplopia that fits no nerve and bulbar fatigue with spared pupils, reflexes and sensation is myasthenia gravis, a postsynaptic acetylcholine receptor disorder; Lambert–Eaton (presynaptic) causes proximal leg weakness with areflexia and autonomic symptoms.",
+ "targets": {
+  "structureIds": [
+   "neuromuscular-junction"
+  ],
+  "syndromeIds": [
+   "syn-myasthenia-gravis",
+   "syn-lambert-eaton"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cn-03-oculomotor-l",
+  "cn-03-oculomotor-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 30,
+   "pages": [
+    293,
+    297
+   ]
+  }
+ ],
+ "original": true
+}

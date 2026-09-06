@@ -16,6 +16,8 @@ export class Toolbar {
       this.searchHost,
       h('div', { class: 'tools' },
         h('button', { title: 'Filter tree', onclick: () => opts.onSearchFocus() }, 'Tree filter'),
+        h('button', { title: 'Clinical vignette quiz', onclick: () => { location.hash = '#/quiz'; } }, 'Quiz'),
+        h('button', { title: 'Glossary', onclick: () => { location.hash = '#/glossary'; } }, 'Glossary'),
         h('button', { title: 'Screenshot [Shift+S]', onclick: () => this.shot() }, 'Screenshot'),
         h('button', { title: 'Keyboard shortcuts [?]', onclick: () => opts.onHelp() }, '?'),
         this.status),

@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-24",
+ "type": "identify",
+ "vignette": "A 45-year-old woman has developed a slowly worsening hearing loss in the left ear over two years with tinnitus. Speech discrimination in that ear is much worse than the pure-tone loss predicts. The left corneal reflex is absent and there is mild left facial weakness.",
+ "stem": "The most likely lesion is a:",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left cochlear otosclerosis"
+  },
+  {
+   "key": "B",
+   "text": "Left cerebellopontine angle tumor"
+  },
+  {
+   "key": "C",
+   "text": "Left lateral pontine infarct"
+  },
+  {
+   "key": "D",
+   "text": "Ménière disease"
+  },
+  {
+   "key": "E",
+   "text": "Left temporal lobe glioma"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Progressive retrocochlear unilateral hearing loss followed by trigeminal and then facial involvement is the sequence of a cerebellopontine angle mass, usually a vestibular schwannoma, stretching the neighboring nerves as it grows.",
+ "targets": {
+  "structureIds": [
+   "cn-08-vestibulocochlear"
+  ],
+  "syndromeIds": [
+   "syn-cerebellopontine-angle"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cn-08-vestibulocochlear-l",
+  "cn-07-facial-l",
+  "cn-05-trigeminal-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    106,
+    106
+   ]
+  }
+ ],
+ "original": true
+}

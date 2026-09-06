@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-15",
+ "type": "mechanism",
+ "vignette": "A 45-year-old alcoholic is admitted confused and unsteady. He cannot abduct either eye and has coarse nystagmus. A junior doctor gives intravenous glucose and he becomes more drowsy.",
+ "stem": "What should have been given first, and which structures are being damaged?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Naloxone; the pons"
+  },
+  {
+   "key": "B",
+   "text": "Thiamine; the mammillary bodies and periaqueductal region"
+  },
+  {
+   "key": "C",
+   "text": "Glucose is correct; the cerebellum"
+  },
+  {
+   "key": "D",
+   "text": "Antibiotics; the meninges"
+  },
+  {
+   "key": "E",
+   "text": "Lorazepam; the hippocampus"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Confusion, ophthalmoplegia and ataxia in a malnourished alcoholic is Wernicke encephalopathy, a thiamine-dependent injury of the periventricular structures around the third and fourth ventricles and aqueduct; glucose without thiamine precipitates or worsens it, and the mammillary body damage leaves Korsakoff amnesia.",
+ "targets": {
+  "structureIds": [
+   "mammillary-body"
+  ],
+  "syndromeIds": [
+   "syn-wernicke-korsakoff"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "mammillary-body-l",
+  "mammillary-body-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    233
+   ]
+  }
+ ],
+ "original": true
+}

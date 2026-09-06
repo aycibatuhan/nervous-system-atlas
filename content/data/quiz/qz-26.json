@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-26",
+ "type": "localize",
+ "vignette": "A 60-year-old man develops a resting tremor of the right hand that disappears when he reaches for a cup, with small handwriting and reduced arm swing on the right. His face is expressionless.",
+ "stem": "Which structure has degenerated, and on which side?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right substantia nigra"
+  },
+  {
+   "key": "B",
+   "text": "Left substantia nigra"
+  },
+  {
+   "key": "C",
+   "text": "Right cerebellum"
+  },
+  {
+   "key": "D",
+   "text": "Left subthalamic nucleus"
+  },
+  {
+   "key": "E",
+   "text": "Bilateral caudate nuclei"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Asymmetric parkinsonism reflects dopamine loss in the substantia nigra contralateral to the affected limbs, because each basal ganglia loop acts on the opposite body through the crossed corticospinal projection.",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-parkinsonism"
+  ],
+  "pathwayIds": [
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "highlightOnReveal": [
+  "substantia-nigra-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    243,
+    250
+   ]
+  }
+ ],
+ "original": true
+}

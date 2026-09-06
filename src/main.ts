@@ -11,6 +11,8 @@ import { PathwayPanel } from './ui/PathwayPanel.ts';
 import { SyndromeBar } from './ui/SyndromeBar.ts';
 import { SyndromePanel } from './ui/SyndromePanel.ts';
 import { SearchBox } from './ui/SearchBox.ts';
+import { QuizPanel } from './ui/QuizPanel.ts';
+import { GlossaryPanel } from './ui/GlossaryPanel.ts';
 import { enterSyndrome, exitSyndrome } from './state/syndrome.ts';
 import { h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
@@ -55,8 +57,10 @@ async function boot(): Promise<void> {
   const syndromeHost = h('div', { class: 'content', hidden: true }); right.append(syndromeHost);
   const syndromePanel = new SyndromePanel(app, syndromeHost);
   new SyndromeBar(app, document.getElementById('syndrome-bar')!);
+  const quizHost = h('div', { class: 'content', hidden: true }); right.append(quizHost); const quizPanel = new QuizPanel(app, quizHost);
+  const glossaryHost = h('div', { class: 'content', hidden: true }); right.append(glossaryHost); const glossaryPanel = new GlossaryPanel(app, glossaryHost);
   const mainPanel = right.firstElementChild as HTMLElement;
-  const showPanel = (which: 'main' | 'pathway' | 'syndrome') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; };
+  const showPanel = (which: 'main' | 'pathway' | 'syndrome' | 'quiz' | 'glossary') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; quizHost.hidden = which !== 'quiz'; glossaryHost.hidden = which !== 'glossary'; if (which !== 'quiz') quizPanel.exit(); if (which !== 'quiz' && which !== 'glossary' && app.store.get().panel) app.store.set({ panel: null }); };
   const showPathway = (id: string | null) => { if (id) { pathwayPanel.show(id); showPanel('pathway'); } else { pathwayPanel.exit(); if (!pathwayHost.hidden) showPanel('main'); } };
   void contentPanel;
   const help = h('div', { class: 'help', hidden: true }, h('b', {}, 'Shortcuts'), h('br'),
@@ -64,7 +68,7 @@ async function boot(): Promise<void> {
     h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' toggle axial / coronal / sagittal slice'),
     h('div', {}, h('kbd', {}, '↑'), h('kbd', {}, '↓'), ' move the last touched slice'), h('div', {}, h('kbd', {}, 't'), ' T1 / T2'),
     h('div', {}, h('kbd', {}, 'p'), ' peel at the axial slice'), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' toggle panels'),
-    h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'));
+    h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'A'), '–', h('kbd', {}, 'E'), ' answer quiz'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'));
   document.getElementById('viewport')!.append(help);
   const toolbar = new Toolbar(app, top, { onSearchFocus: () => (left.querySelector('.tree-filter') as HTMLInputElement)?.focus(), onHelp: () => { help.hidden = !help.hidden; } });
   const search = new SearchBox(toolbar.searchHost, (doc) => {
@@ -110,6 +114,8 @@ async function boot(): Promise<void> {
     onRoute(route, params) {
       if (params.ax !== undefined || params.cor !== undefined || params.sag !== undefined) setSlices(app, { ...(params.ax !== undefined ? { axial: params.ax } : {}), ...(params.cor !== undefined ? { coronal: params.cor } : {}), ...(params.sag !== undefined ? { sagittal: params.sag } : {}) });
       if (params.c) setContrast(app, params.c);
+      if (route.kind === 'quiz') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('quiz'); app.store.set({ panel: { kind: 'quiz', index: route.index ?? 0 } }); quizPanel.show(route.index ?? 0); return; }
+      if (route.kind === 'glossary') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('glossary'); app.store.set({ panel: { kind: 'glossary', id: route.id ?? null } }); glossaryPanel.show(route.id); return; }
       if (route.kind === 'syndrome') { showPathway(null); enterSyndrome(app, route.id, route.step ?? 0, params.side); if (params.side) app.store.set({ lesionSide: params.side }); syndromePanel.show(route.id); showPanel('syndrome'); return; }
       if (app.store.get().syndrome) { exitSyndrome(app); showPanel('main'); }
       if (route.kind === 'pathway') { showPathway(route.id); return; }
@@ -147,6 +153,7 @@ async function boot(): Promise<void> {
   let lastAxis: Axis = 'axial';
   window.addEventListener('keydown', (e) => {
     if ((e.target as HTMLElement).tagName === 'INPUT' || (e.target as HTMLElement).tagName === 'SELECT') return;
+    if (app.store.get().panel?.kind === 'quiz' && /^([a-eA-E]|ArrowLeft|ArrowRight)$/.test(e.key)) { quizPanel.key(e.key); e.preventDefault(); return; }
     const preset = PRESETS.find((p) => p.key === e.key);
     if (preset) { applyCameraPreset(app, preset.id); return; }
     const s = app.store.get();

@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-05",
+ "type": "localize",
+ "vignette": "A 45-year-old woman notices that when she looks to the right, her left eye stays in the middle while the right eye moves fully and jerks. When a pencil is brought toward her nose both eyes converge normally.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left medial longitudinal fasciculus"
+  },
+  {
+   "key": "B",
+   "text": "Right medial longitudinal fasciculus"
+  },
+  {
+   "key": "C",
+   "text": "Left oculomotor nerve"
+  },
+  {
+   "key": "D",
+   "text": "Right abducens nucleus"
+  },
+  {
+   "key": "E",
+   "text": "Left frontal eye field"
+  }
+ ],
+ "answer": "A",
+ "explanation": "Failure of adduction of the left eye on right gaze with abducting nystagmus of the right eye and preserved convergence is a left internuclear ophthalmoplegia: the left MLF carries the crossed interneuron axons from the right abducens nucleus to the left medial rectus subnucleus.",
+ "targets": {
+  "structureIds": [],
+  "syndromeIds": [
+   "syn-ino"
+  ],
+  "pathwayIds": [
+   "pathway-horizontal-gaze"
+  ]
+ },
+ "highlightOnReveal": [
+  "brainstem"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    99,
+    100
+   ]
+  }
+ ],
+ "original": true
+}

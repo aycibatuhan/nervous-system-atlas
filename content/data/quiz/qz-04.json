@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-04",
+ "type": "identify",
+ "vignette": "A 72-year-old hypertensive woman wakes with weakness of the left face, arm and leg that are all equally affected. Sensation, visual fields, speech and awareness are normal. CT is normal.",
+ "stem": "The most likely site of the lesion is:",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right precentral gyrus"
+  },
+  {
+   "key": "B",
+   "text": "Right posterior limb of the internal capsule"
+  },
+  {
+   "key": "C",
+   "text": "Right thalamus"
+  },
+  {
+   "key": "D",
+   "text": "Right lateral medulla"
+  },
+  {
+   "key": "E",
+   "text": "Left cerebellum"
+  }
+ ],
+ "answer": "B",
+ "explanation": "A pure motor hemiparesis involving face, arm and leg equally without any cortical or sensory sign is a lacunar infarct in the posterior limb of the internal capsule (or basis pontis), where the corticospinal and corticobulbar fibers are packed together and the sensory fibers lie just behind.",
+ "targets": {
+  "structureIds": [
+   "internal-capsule"
+  ],
+  "syndromeIds": [
+   "syn-lacunar-pure-motor"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "internal-capsule-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    63
+   ]
+  }
+ ],
+ "original": true
+}

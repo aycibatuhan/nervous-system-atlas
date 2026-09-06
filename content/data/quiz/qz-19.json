@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-19",
+ "type": "localize",
+ "vignette": "A 30-year-old woman has an unsteady gait with a wide base and cannot tandem walk, but the finger-nose and heel-shin tests are almost normal when she is lying down. She has headaches in the morning and vomits. Her discs are swollen.",
+ "stem": "Which part of the cerebellum is most likely involved?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left cerebellar hemisphere"
+  },
+  {
+   "key": "B",
+   "text": "Right cerebellar hemisphere"
+  },
+  {
+   "key": "C",
+   "text": "Vermis"
+  },
+  {
+   "key": "D",
+   "text": "Dentate nucleus"
+  },
+  {
+   "key": "E",
+   "text": "Superior cerebellar peduncle"
+  }
+ ],
+ "answer": "C",
+ "explanation": "Severe truncal and gait ataxia with relatively spared limb coordination is a midline (vermian) syndrome; a midline mass over the fourth ventricle also obstructs CSF flow, explaining the headache, vomiting and papilledema.",
+ "targets": {
+  "structureIds": [
+   "cerebellar-vermis"
+  ],
+  "syndromeIds": [
+   "syn-cerebellar-vermian-midline",
+   "syn-hydrocephalus"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cerebellar-vermis-vi"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "original": true
+}
