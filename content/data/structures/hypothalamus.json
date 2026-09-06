@@ -1,0 +1,239 @@
+{
+ "kind": "structure",
+ "id": "hypothalamus",
+ "name": "Hypothalamus",
+ "synonyms": [],
+ "system": "diencephalon",
+ "meshIds": [
+  "hypothalamus-lateral-l",
+  "hypothalamus-lateral-r",
+  "hypothalamus-paraventricular-l",
+  "hypothalamus-paraventricular-r",
+  "hypothalamus-ventromedial-l",
+  "hypothalamus-ventromedial-r",
+  "hypothalamus-dorsomedial-l",
+  "hypothalamus-dorsomedial-r",
+  "hypothalamus-arcuate-l",
+  "hypothalamus-arcuate-r",
+  "hypothalamus-supraoptic-l",
+  "hypothalamus-supraoptic-r",
+  "hypothalamus-suprachiasmatic-l",
+  "hypothalamus-suprachiasmatic-r",
+  "hypothalamus-medial-preoptic-l",
+  "hypothalamus-medial-preoptic-r",
+  "hypothalamus-anterior-area-l",
+  "hypothalamus-anterior-area-r",
+  "hypothalamus-posterior-l",
+  "hypothalamus-posterior-r",
+  "hypothalamus-tuberomammillary-l",
+  "hypothalamus-tuberomammillary-r"
+ ],
+ "summary": "A few grams of tissue forming the floor and lower walls of the third ventricle, from the optic chiasm to the mammillary bodies, that runs the body's internal environment. Its nuclei control the pituitary (releasing hormones to the anterior lobe through the portal vessels; vasopressin and oxytocin from the supraoptic and paraventricular nuclei to the posterior lobe), temperature, thirst, hunger, circadian rhythm, sleep–wake state, sexual behavior and the autonomic outflow. Tumors, inflammation, trauma and surgery in this region produce diabetes insipidus, obesity or emaciation, temperature dysregulation, somnolence and endocrine failure.",
+ "anatomy": {
+  "location": "Below the hypothalamic sulcus of the third ventricle, above the pituitary; bounded in front by the lamina terminalis and anterior commissure, behind by the mammillary bodies and midbrain tegmentum, laterally by the internal capsule and subthalamus; the tuber cinereum and infundibulum descend from its floor.",
+  "subdivisions": [
+   {
+    "name": "Preoptic and anterior region",
+    "note": "supraoptic and paraventricular nuclei (vasopressin, oxytocin), suprachiasmatic nucleus (circadian clock), anterior nucleus (heat loss, parasympathetic), preoptic area (sleep, sexual behavior, GnRH)"
+   },
+   {
+    "name": "Tuberal (middle) region",
+    "note": "arcuate nucleus (releasing hormones, appetite), ventromedial (satiety) and dorsomedial nuclei, lateral hypothalamic area (hunger, orexin arousal)"
+   },
+   {
+    "name": "Mammillary (posterior) region",
+    "note": "posterior nucleus (heat conservation, sympathetic), tuberomammillary nucleus (histamine, wakefulness), mammillary bodies (memory)"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Neuroendocrine control of the pituitary, autonomic integration, thermoregulation, osmoregulation and thirst, energy balance, circadian timing, sleep and arousal, and emotional and reproductive behavior.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-acom",
+   "artery-aca",
+   "artery-pcom",
+   "arteries-thalamoperforating",
+   "artery-internal-carotid"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -4,
+     "z": -12
+    },
+    "label": "hypothalamus in the lateral walls and floor of the third ventricle above the chiasm"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -4,
+     "z": -12
+    },
+    "label": "from the lamina terminalis to the mammillary bodies, infundibulum descending"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -4,
+     "z": -12
+    },
+    "label": "hypothalamus flanking the third ventricle at the level of the chiasm"
+   }
+  ],
+  "normalAppearance": "Gray matter of the third ventricular floor and walls on coronal T1/T2, best surveyed on thin coronal images through the sella; the infundibulum should be a thin midline stalk and the posterior pituitary a T1-bright spot behind the adenohypophysis. Individual nuclei are not resolved on routine MRI; the Neudorfer atlas meshes in this atlas show their positions.",
+  "pathology": [
+   {
+    "pathology": "Craniopharyngioma",
+    "modality": "MRI",
+    "finding": "Suprasellar cystic mass with calcification on CT and enhancing solid parts, elevating the chiasm and invading the third ventricle floor.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Hypothalamic glioma / optic pathway glioma",
+    "modality": "MRI",
+    "finding": "T2-bright enlargement of the chiasm and hypothalamus in a child (often with neurofibromatosis 1).",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Infundibulo-hypophysitis, sarcoidosis, Langerhans histiocytosis",
+    "modality": "MRI",
+    "finding": "Thickened enhancing stalk with loss of the posterior pituitary bright spot and diabetes insipidus.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "FLAIR change of the mammillary bodies and periventricular hypothalamus.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Hypothalamic hamartoma",
+    "modality": "MRI",
+    "finding": "Non-enhancing gray-matter-signal mass of the tuber cinereum with gelastic seizures and precocious puberty.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Thin coronal and sagittal T1 (pre and post contrast) through the sella; FLAIR"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Diabetes insipidus",
+    "side": "n/a",
+    "mechanism": "Supraoptic and paraventricular nuclei or the stalk carrying their axons"
+   },
+   {
+    "deficit": "Hyperphagia and obesity",
+    "side": "bilateral",
+    "mechanism": "Ventromedial nucleus destruction"
+   },
+   {
+    "deficit": "Anorexia and emaciation",
+    "side": "bilateral",
+    "mechanism": "Lateral hypothalamic area"
+   },
+   {
+    "deficit": "Hyperthermia or poikilothermia",
+    "side": "n/a",
+    "mechanism": "Anterior (heat loss) or posterior (heat conservation) regions"
+   },
+   {
+    "deficit": "Somnolence, narcolepsy-like states",
+    "side": "bilateral",
+    "mechanism": "Posterior hypothalamus, orexin neurons of the lateral area"
+   },
+   {
+    "deficit": "Hypopituitarism, amenorrhea, growth failure",
+    "side": "n/a",
+    "mechanism": "Arcuate nucleus releasing hormones or portal vessels"
+   },
+   {
+    "deficit": "Amnesia",
+    "side": "bilateral",
+    "mechanism": "Mammillary bodies"
+   },
+   {
+    "deficit": "Bitemporal hemianopia",
+    "side": "bilateral",
+    "mechanism": "Adjacent chiasm compressed by the same mass"
+   }
+  ],
+  "examination": [
+   "Weight, temperature, fluid intake and urine output, blood pressure",
+   "Visual fields and acuity",
+   "Sleep history and daytime somnolence",
+   "Endocrine review: menses, libido, growth, cortisol and thyroid symptoms",
+   "Memory testing"
+  ],
+  "syndromes": [
+   "syn-pituitary-mass",
+   "syn-chiasmal-bitemporal",
+   "syn-wernicke-korsakoff",
+   "syn-hypothalamic-syndromes"
+  ],
+  "pearls": [
+   "Polyuria with a thickened enhancing stalk and a missing posterior pituitary bright spot is central diabetes insipidus from stalk disease",
+   "Hypothalamic lesions rarely occur without disturbing neighbors: expect visual field defects and pituitary failure together"
+  ]
+ },
+ "pitfalls": [
+  "Hypothalamic obesity after craniopharyngioma surgery is not a failure of willpower; counsel families"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    373,
+    383
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    394,
+    394
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    25,
+    26
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    256,
+    260
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Hypothalamus",
+ "subsystem": "hypothalamus"
+}

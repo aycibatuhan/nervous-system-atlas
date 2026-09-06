@@ -1,0 +1,132 @@
+{
+ "kind": "structure",
+ "id": "choroid-plexus",
+ "name": "Choroid plexus and CSF production",
+ "synonyms": [],
+ "system": "ventricles-csf",
+ "meshIds": [
+  "ventricle-lateral-l",
+  "ventricle-lateral-r"
+ ],
+ "summary": "Choroid plexus is a frond-like vascular tissue covered by a specialized ependyma that hangs into the lateral, third and fourth ventricles and produces most of the roughly 500 mL of CSF made each day. Its capillaries are fenestrated, but the tight junctions between choroid epithelial cells form the blood–CSF barrier. The plexus of the lateral ventricles is supplied by the anterior and posterior choroidal arteries and is continuous through the foramina of Monro with the roof of the third ventricle; the fourth ventricular plexus protrudes through the foramina of Luschka. It calcifies with age, enhances avidly, and is the seat of choroid plexus papillomas and of xanthogranulomas.",
+ "anatomy": {
+  "location": "Body, atrium (glomus) and temporal horn of each lateral ventricle, the roof of the third ventricle, and the lower half of the roof of the fourth ventricle extending into the lateral recesses; absent from the frontal and occipital horns and the aqueduct.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Secretion of CSF by active transport, maintenance of the blood–CSF barrier, clearance of metabolites, and secretion of growth factors and transthyretin into the CSF.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-anterior-choroidal",
+   "artery-pca",
+   "artery-pica"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -45,
+     "z": 15
+    },
+    "label": "glomus of the choroid plexus in the atrium"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 5,
+     "y": -10,
+     "z": 5
+    },
+    "label": "plexus in the roof of the third ventricle and the bodies of the lateral ventricles"
+   }
+  ],
+  "normalAppearance": "Enhances strongly after contrast on CT and MRI; the glomus in the atrium is frequently calcified in adults. Cysts (xanthogranulomas) in the glomus are benign and common in the elderly.",
+  "pathology": [
+   {
+    "pathology": "Choroid plexus papilloma / carcinoma",
+    "modality": "MRI",
+    "finding": "Lobulated, intensely enhancing intraventricular mass, in the atrium in children and the fourth ventricle in adults, with hydrocephalus from CSF overproduction and obstruction.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Choroid plexitis",
+    "modality": "MRI",
+    "finding": "Enhancing enlarged plexus in cryptococcal or tuberculous infection.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Communicating hydrocephalus from overproduction",
+    "modality": "MRI",
+    "finding": "Generalized ventriculomegaly with a papilloma and no obstruction.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "T1+Gd MRI; CT for calcification"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hydrocephalus from overproduction or obstruction",
+    "side": "bilateral",
+    "mechanism": "Plexus tumor"
+   },
+   {
+    "deficit": "Meningeal signs and altered CSF composition",
+    "side": "n/a",
+    "mechanism": "Inflammation of the plexus in meningitis"
+   }
+  ],
+  "examination": [
+   "Signs of raised intracranial pressure",
+   "CSF analysis (protein, cells, glucose) when infection or malignancy is suspected"
+  ],
+  "syndromes": [
+   "syn-hydrocephalus"
+  ],
+  "pearls": [
+   "Choroid plexus enhancement and calcification are normal; asymmetric enlargement or a mass is not",
+   "CSF is produced at about 20 mL per hour, so the whole volume turns over three to four times a day"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    441,
+    451
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    29,
+    31
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 2,
+   "pages": [
+    21,
+    23
+   ]
+  }
+ ],
+ "tags": [
+  "csf"
+ ],
+ "status": "draft",
+ "latin": "Plexus choroideus",
+ "subsystem": "csf"
+}

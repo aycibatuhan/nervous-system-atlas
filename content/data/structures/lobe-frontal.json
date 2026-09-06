@@ -1,0 +1,262 @@
+{
+ "kind": "structure",
+ "id": "lobe-frontal",
+ "name": "Frontal lobe",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-superior-frontal-l",
+  "gyrus-superior-frontal-r",
+  "gyrus-middle-frontal-l",
+  "gyrus-middle-frontal-r",
+  "gyrus-inferior-frontal-triangularis-l",
+  "gyrus-inferior-frontal-triangularis-r",
+  "gyrus-inferior-frontal-opercularis-l",
+  "gyrus-inferior-frontal-opercularis-r",
+  "frontal-pole-l",
+  "frontal-pole-r",
+  "cortex-frontal-medial-l",
+  "cortex-frontal-medial-r",
+  "cortex-orbitofrontal-l",
+  "cortex-orbitofrontal-r",
+  "cortex-frontal-operculum-l",
+  "cortex-frontal-operculum-r",
+  "gyrus-paracingulate-l",
+  "gyrus-paracingulate-r",
+  "cortex-subcallosal-l",
+  "cortex-subcallosal-r"
+ ],
+ "summary": "The largest lobe, everything in front of the central sulcus and above the lateral sulcus. From back to front it contains the primary motor cortex on the precentral gyrus, the premotor and supplementary motor areas, the frontal eye field, Broca's area in the dominant inferior frontal gyrus, and the vast prefrontal cortex (dorsolateral, orbitofrontal and medial) that plans, sequences, inhibits and motivates behavior. Its medial surface belongs to the ACA and its lateral surface to the MCA, and its lesions range from contralateral weakness to the personality change, apathy and disinhibition that families notice before doctors do.",
+ "anatomy": {
+  "location": "Anterior to the central sulcus and superior to the lateral sulcus on the convexity; the medial surface extends to the cingulate sulcus and the paracentral lobule; the orbital surface rests on the orbital roofs. The superior, middle and inferior frontal gyri are separated by the superior and inferior frontal sulci; the inferior frontal gyrus is divided into orbital, triangular and opercular parts.",
+  "subdivisions": [
+   {
+    "name": "Precentral gyrus (area 4)",
+    "note": "primary motor cortex"
+   },
+   {
+    "name": "Premotor cortex and supplementary motor area (area 6)",
+    "note": "movement planning and initiation"
+   },
+   {
+    "name": "Frontal eye field (area 8)",
+    "note": "contralateral saccades"
+   },
+   {
+    "name": "Broca's area (areas 44, 45)",
+    "note": "speech production, dominant side"
+   },
+   {
+    "name": "Dorsolateral prefrontal cortex",
+    "note": "working memory, planning, set shifting"
+   },
+   {
+    "name": "Orbitofrontal cortex",
+    "note": "social behavior, inhibition, reward"
+   },
+   {
+    "name": "Medial prefrontal and anterior cingulate",
+    "note": "motivation, initiative, continence"
+   },
+   {
+    "name": "Paracentral lobule (medial)",
+    "note": "motor and sensory cortex for the leg and perineum"
+   }
+  ],
+  "relations": {
+   "posterior": "central sulcus and parietal lobe",
+   "inferior": "lateral sulcus, temporal lobe and orbital roof",
+   "medial": "falx cerebri and the opposite frontal lobe"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-lateral-corticospinal",
+   "pathway-corticobulbar"
+  ]
+ },
+ "function": "Voluntary movement, speech production, gaze control, executive function, working memory, judgement, motivation, social behavior, and control of micturition.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 30,
+     "y": 30,
+     "z": 30
+    },
+    "label": "frontal convexity at the level of the lateral ventricles"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 5,
+     "y": 40,
+     "z": 20
+    },
+    "label": "medial frontal surface and the orbital surface"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 30,
+     "z": 20
+    },
+    "label": "superior, middle and inferior frontal gyri"
+   }
+  ],
+  "normalAppearance": "On axial slices the frontal lobes lie in front of the central sulcus, identified by the omega-shaped hand knob of the precentral gyrus; on sagittal images the medial surface shows the cingulate sulcus and the paracentral lobule. Frontal atrophy with a knife-edge pattern is characteriztic of frontotemporal dementia.",
+  "pathology": [
+   {
+    "pathology": "Frontal contusion",
+    "modality": "CT",
+    "finding": "Hemorrhagic contusions of the orbital and frontal poles after deceleration injury, with edema and later encephalomalacia.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Frontal glioma or meningioma",
+    "modality": "MRI",
+    "finding": "Infiltrating T2-bright mass (glioma) or extra-axial enhancing dural mass (olfactory groove or parasagittal meningioma) with personality change and, if parasagittal, leg weakness.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Frontotemporal dementia",
+    "modality": "MRI",
+    "finding": "Asymmetric frontal and anterior temporal atrophy sparing the posterior brain.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "ACA / MCA superior division infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the medial (ACA) or lateral (MCA) frontal cortex.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "MRI with T1, FLAIR and contrast; CT in trauma"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral weakness",
+    "side": "contralateral",
+    "mechanism": "Precentral gyrus and underlying corona radiata"
+   },
+   {
+    "deficit": "Broca aphasia (dominant)",
+    "side": "n/a",
+    "mechanism": "Inferior frontal gyrus"
+   },
+   {
+    "deficit": "Gaze deviation toward the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Frontal eye field"
+   },
+   {
+    "deficit": "Apathy, abulia, loss of initiative",
+    "side": "bilateral",
+    "mechanism": "Medial prefrontal and anterior cingulate cortex"
+   },
+   {
+    "deficit": "Disinhibition, impulsivity, social inappropriateness",
+    "side": "bilateral",
+    "mechanism": "Orbitofrontal cortex"
+   },
+   {
+    "deficit": "Executive dysfunction, perseveration, poor planning",
+    "side": "bilateral",
+    "mechanism": "Dorsolateral prefrontal cortex"
+   },
+   {
+    "deficit": "Grasp, palmomental and rooting reflexes",
+    "side": "contralateral",
+    "mechanism": "Release of primitive reflexes"
+   },
+   {
+    "deficit": "Urinary incontinence and gait apraxia",
+    "side": "bilateral",
+    "mechanism": "Medial frontal cortex and its connections"
+   },
+   {
+    "deficit": "Anosmia",
+    "side": "ipsilateral",
+    "mechanism": "Olfactory tract on the orbital surface compressed by a subfrontal mass"
+   }
+  ],
+  "examination": [
+   "Power, drift and fine finger movements",
+   "Speech output and naming",
+   "Saccades to each side",
+   "Frontal assessment: verbal fluency, Luria sequence, go/no-go, similarities",
+   "Primitive reflexes: grasp, palmomental, glabellar tap",
+   "Gait; ask about continence and personality change",
+   "Smell testing"
+  ],
+  "syndromes": [
+   "syn-aca-infarct",
+   "syn-mca-superior-division",
+   "syn-aphasia-broca"
+  ],
+  "pearls": [
+   "Personality change with preserved memory is frontal until proven otherwise",
+   "A slowly growing frontal tumor can be silent for years; new-onset apathy or disinhibition in middle age deserves imaging"
+  ]
+ },
+ "pitfalls": [
+  "Frontal signs are easily mistaken for depression or dementia of other types"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    255,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    283,
+    289
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    55
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    235,
+    237
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "frontal"
+ ],
+ "status": "draft",
+ "latin": "Lobus frontalis",
+ "subsystem": "lobe-frontal"
+}

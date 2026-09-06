@@ -1,0 +1,146 @@
+{
+ "kind": "structure",
+ "id": "arachnoid-granulations",
+ "name": "Arachnoid granulations",
+ "synonyms": [
+  "Pacchionian granulations",
+  "arachnoid villi"
+ ],
+ "system": "ventricles-csf",
+ "meshIds": [
+  "brain-envelope"
+ ],
+ "summary": "Tufts of arachnoid that push through the dura into the venous sinuses, chiefly the superior sagittal sinus and its lateral lacunae, and act as one-way valves returning CSF to the blood when CSF pressure exceeds venous pressure by a few centimetres of water. Their scarring after subarachnoid hemorrhage or meningitis is the classical cause of communicating hydrocephalus, and raised venous pressure from sinus thrombosis backs up CSF absorption to produce intracranial hypertension. Large granulations are a common incidental finding that can mimic sinus thrombosis or a mass on imaging.",
+ "anatomy": {
+  "location": "Along the superior sagittal sinus and its lateral lacunae in the parasagittal dura, also in the transverse and sigmoid sinuses and around spinal nerve roots; they enlarge and calcify with age and can erode the inner table of the skull.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Bulk resorption of CSF into the venous system, pressure-dependent and valve-like; supplemented by lymphatic and perineural drainage routes.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -20,
+     "z": 70
+    },
+    "label": "superior sagittal sinus and lateral lacunae at the vertex"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -70,
+     "z": 5
+    },
+    "label": "granulations projecting into the transverse sinus"
+   }
+  ],
+  "normalAppearance": "Round CSF-signal filling defects within the dural sinuses on contrast MR venography or CTV, following CSF on all sequences, often with a small vessel entering them; they should not be mistaken for thrombus, which is denser on CT and has a different signal on T1/T2.",
+  "pathology": [
+   {
+    "pathology": "Communicating hydrocephalus",
+    "modality": "MRI",
+    "finding": "Dilatation of all four ventricles including the fourth, with transependymal edema, after subarachnoid hemorrhage, meningitis or carcinomatosis.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Giant arachnoid granulation",
+    "modality": "MRI",
+    "finding": "Well-defined CSF-signal filling defect in the transverse sinus, with no restriction and no expansion of the sinus.",
+    "sequence": "T2",
+    "pitfalls": "Do not diagnose sinus thrombosis from a granulation: check T1 signal and the shape on MR venography"
+   }
+  ],
+  "sequenceOfChoice": "MR venography or CT venography"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Communicating hydrocephalus after subarachnoid hemorrhage or meningitis",
+    "side": "bilateral",
+    "mechanism": "Blocked absorption at the granulations"
+   },
+   {
+    "deficit": "Raised intracranial pressure with sinus thrombosis",
+    "side": "n/a",
+    "mechanism": "Venous hypertension impeding CSF absorption"
+   }
+  ],
+  "examination": [
+   "Papilledema",
+   "Gait and cognition in the weeks after subarachnoid hemorrhage",
+   "Headache features and visual obscurations"
+  ],
+  "syndromes": [
+   "syn-hydrocephalus",
+   "syn-cerebral-venous-sinus-thrombosis",
+   "syn-idiopathic-intracranial-hypertension"
+  ],
+  "pearls": [
+   "Hydrocephalus in which all four ventricles are enlarged is communicating: the problem is absorption, not obstruction",
+   "Sinus thrombosis raises intracranial pressure by blocking CSF resorption, so it can present as idiopathic intracranial hypertension"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 15,
+   "pages": [
+    422,
+    425
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    450,
+    451
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    455,
+    459
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    29,
+    31
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    269,
+    276
+   ]
+  }
+ ],
+ "tags": [
+  "csf"
+ ],
+ "status": "draft",
+ "latin": "Granulationes arachnoideae",
+ "subsystem": "csf"
+}

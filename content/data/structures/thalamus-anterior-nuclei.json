@@ -1,0 +1,158 @@
+{
+ "kind": "structure",
+ "id": "thalamus-anterior-nuclei",
+ "name": "Anterior thalamic nuclei",
+ "synonyms": [],
+ "system": "diencephalon",
+ "meshIds": [
+  "thalamus-ventral-anterior-l",
+  "thalamus-ventral-anterior-r"
+ ],
+ "summary": "The anterior nuclear group forms the tubercle at the front of the thalamus and is a station on the Papez circuit of memory: it receives the mammillothalamic tract from the mammillary bodies (and direct fibers from the hippocampal formation via the fornix) and projects to the cingulate gyrus. Lesions of the nuclei or of the mammillothalamic tract, as in tuberothalamic and paramedian infarcts, produce amnesia, and the nucleus is a target for deep brain stimulation in epilepsy.",
+ "anatomy": {
+  "location": "Anterosuperior pole of the thalamus, bulging into the floor of the lateral ventricle behind the foramen of Monro, enclosed by the anterior limb of the internal medullary lamina.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "mammillary-body",
+    "via": "mammillothalamic tract"
+   },
+   {
+    "from": "hippocampus",
+    "via": "fornix"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "gyrus-cingulate",
+    "via": "anterior limb of the internal capsule"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Relay of hippocampal–mammillary memory information to the cingulate cortex; contributes to spatial memory and to the propagation of seizures through the limbic circuit.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pcom"
+  ],
+  "territories": [
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": -6,
+     "z": 8
+    },
+    "label": "anterior thalamic tubercle behind the foramen of Monro"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 8,
+     "y": -6,
+     "z": 8
+    },
+    "label": "anterior pole of the thalamus below the fornix"
+   }
+  ],
+  "normalAppearance": "The anterior tubercle is identifiable on axial T1 as the anterior tip of the thalamus; individual nuclei are not resolved. The mammillothalamic tract is visible on 7 T and on the Neudorfer atlas mesh in this atlas.",
+  "pathology": [
+   {
+    "pathology": "Tuberothalamic (polar) infarct",
+    "modality": "MRI",
+    "finding": "Anterior thalamic restriction from the polar artery (a PComm branch) with amnesia, apathy and language change on the left.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Wernicke–Korsakoff",
+    "modality": "MRI",
+    "finding": "Mammillary body atrophy with medial thalamic signal change.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "DWI; coronal T1 for mammillary bodies"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anterograde amnesia with confabulation",
+    "side": "contralateral",
+    "mechanism": "Interruption of the Papez circuit at the anterior nucleus or mammillothalamic tract"
+   },
+   {
+    "deficit": "Apathy and reduced spontaneous speech",
+    "side": "contralateral",
+    "mechanism": "Anterior thalamic connections to the cingulate and frontal cortex"
+   },
+   {
+    "deficit": "Disorientation and perseveration",
+    "side": "bilateral",
+    "mechanism": "Bilateral anterior thalamic lesions"
+   }
+  ],
+  "examination": [
+   "Registration and delayed recall of three words; recognition versus recall",
+   "Orientation and confabulation",
+   "Verbal fluency"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Amnesia after a thalamic stroke means the anterior or mediodorsal nuclei or the mammillothalamic tract",
+   "Thiamine deficiency and thalamic stroke share the same memory circuit; both produce Korsakoff-type amnesia"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    366
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    54,
+    54
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    233
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Nuclei anteriores thalami",
+ "subsystem": "thalamus",
+ "parent": "thalamus"
+}

@@ -1,0 +1,195 @@
+{
+ "kind": "structure",
+ "id": "optic-chiasm",
+ "name": "Optic chiasm",
+ "synonyms": [],
+ "system": "diencephalon",
+ "meshIds": [
+  "optic-chiasm"
+ ],
+ "summary": "The X-shaped junction where the two optic nerves meet above the pituitary and exchange fibers: axons from the nasal retina of each eye (which see the temporal visual field) cross to the opposite optic tract, while temporal retinal fibers stay uncrossed. This partial decussation converts an eye-based map into a hemifield-based map. Because the crossing fibers occupy the middle of the chiasm, a pituitary tumor pushing up from below or a craniopharyngioma pressing down produces the bitemporal hemianopia that is the signature of chiasmal disease.",
+ "anatomy": {
+  "location": "Suprasellar cistern above the diaphragma sellae and pituitary, in front of the infundibulum and the floor of the third ventricle, below the anterior cerebral and anterior communicating arteries, and between the supraclinoid internal carotid arteries; usually centered over the sella but pre- or post-fixed in some people.",
+  "subdivisions": [
+   {
+    "name": "Crossing (nasal) fibers",
+    "note": "central and inferior part; inferonasal fibers loop forward into the opposite nerve (Wilbrand's knee)"
+   },
+   {
+    "name": "Uncrossed (temporal) fibers",
+    "note": "lateral parts of the chiasm"
+   },
+   {
+    "name": "Macular fibers",
+    "note": "posterior and superior, crossing near the posterior chiasm"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "optic nerves",
+    "via": "cn-02-optic"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "optic tracts",
+    "note": "to the LGN, pretectum and superior colliculus"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "Redistribution of retinal fibers so that each optic tract carries the contralateral half of the visual field from both eyes; conveys pupillary afferents onward to the pretectum.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid",
+   "artery-aca",
+   "artery-acom",
+   "artery-pcom"
+  ],
+  "territories": [
+   "territory-aca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 2,
+     "z": -18
+    },
+    "label": "chiasm above the pituitary between the carotids"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": 2,
+     "z": -18
+    },
+    "label": "chiasm in the suprasellar cistern in front of the infundibulum"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": 2,
+     "z": -18
+    },
+    "label": "X-shaped chiasm with the optic nerves in front and tracts behind"
+   }
+  ],
+  "normalAppearance": "A flat band of white matter crossing the suprasellar cistern on coronal T1, about 3–4 mm thick; on sagittal images it lies just above the diaphragma. Elevation or thinning by a mass, T2 brightness (glioma, demyelination) and enhancement are the key findings.",
+  "pathology": [
+   {
+    "pathology": "Pituitary macroadenoma compressing the chiasm",
+    "modality": "MRI",
+    "finding": "Suprasellar extension of a sellar mass stretching the chiasm upward; bitemporal hemianopia, superior quadrants first.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Craniopharyngioma",
+    "modality": "MRI",
+    "finding": "Cystic calcified suprasellar mass compressing the chiasm from above/behind; inferior quadrants may go first.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Optic pathway glioma",
+    "modality": "MRI",
+    "finding": "Fusiform T2-bright enlargement of the chiasm and nerves in a child with neurofibromatosis 1.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Chiasmal neuritis / neuromyelitis optica",
+    "modality": "MRI",
+    "finding": "Swollen enhancing chiasm with bilateral visual loss.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Coronal and sagittal T1 (pre/post contrast) and T2 through the sella; formal perimetry"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Bitemporal hemianopia",
+    "side": "bilateral",
+    "mechanism": "Crossing nasal fibers in the middle of the chiasm"
+   },
+   {
+    "deficit": "Junctional scotoma: central loss in one eye with superotemporal loss in the other",
+    "side": "n/a",
+    "mechanism": "Lesion at the junction of the optic nerve and chiasm (Wilbrand's knee)"
+   },
+   {
+    "deficit": "Binasal hemianopia (rare)",
+    "side": "bilateral",
+    "mechanism": "Lateral compression of the uncrossed fibers, e.g. by calcified carotids"
+   },
+   {
+    "deficit": "Reduced acuity and optic atrophy",
+    "side": "bilateral",
+    "mechanism": "Long-standing compression"
+   }
+  ],
+  "examination": [
+   "Confrontation fields testing each eye separately with a red target for temporal desaturation",
+   "Acuity and color vision",
+   "Fundoscopy for band (bow-tie) atrophy of the discs",
+   "Endocrine symptoms"
+  ],
+  "syndromes": [
+   "syn-chiasmal-bitemporal",
+   "syn-pituitary-mass"
+  ],
+  "pearls": [
+   "A field defect that respects the vertical midline in both eyes and is temporal on both sides is the chiasm",
+   "Patients with bitemporal hemianopia bump into things and misjudge distances because the two remaining nasal fields do not overlap"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    327,
+    329
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    349,
+    350
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    49
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    256,
+    260
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Chiasma opticum",
+ "subsystem": "visual"
+}

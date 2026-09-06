@@ -1,0 +1,272 @@
+{
+ "kind": "structure",
+ "id": "lobe-temporal",
+ "name": "Temporal lobe",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-superior-temporal-anterior-l",
+  "gyrus-superior-temporal-anterior-r",
+  "gyrus-superior-temporal-posterior-l",
+  "gyrus-superior-temporal-posterior-r",
+  "gyrus-middle-temporal-anterior-l",
+  "gyrus-middle-temporal-anterior-r",
+  "gyrus-middle-temporal-posterior-l",
+  "gyrus-middle-temporal-posterior-r",
+  "gyrus-middle-temporal-temporooccipital-l",
+  "gyrus-middle-temporal-temporooccipital-r",
+  "gyrus-inferior-temporal-anterior-l",
+  "gyrus-inferior-temporal-anterior-r",
+  "gyrus-inferior-temporal-posterior-l",
+  "gyrus-inferior-temporal-posterior-r",
+  "gyrus-inferior-temporal-temporooccipital-l",
+  "gyrus-inferior-temporal-temporooccipital-r",
+  "temporal-pole-l",
+  "temporal-pole-r",
+  "planum-polare-l",
+  "planum-polare-r",
+  "planum-temporale-l",
+  "planum-temporale-r",
+  "cortex-temporal-fusiform-anterior-l",
+  "cortex-temporal-fusiform-anterior-r",
+  "cortex-temporal-fusiform-posterior-l",
+  "cortex-temporal-fusiform-posterior-r"
+ ],
+ "summary": "Below the lateral sulcus and in front of the occipital lobe, the temporal lobe carries three quite different functions stacked on top of each other. The superior temporal gyrus holds the primary auditory cortex on Heschl's gyrus and, on the dominant side, Wernicke's area for language comprehension; the middle and inferior temporal and fusiform gyri form the ventral visual stream that recognizes objects, faces and words; and the medial temporal lobe (hippocampus, parahippocampal gyrus, amygdala) makes new memories and colors experience with emotion. The optic radiation loops through its white matter, so temporal lesions cause superior quadrantanopias, and its cortex is the commonest source of focal epilepsy.",
+ "anatomy": {
+  "location": "Lateral surface below the lateral sulcus with the superior, middle and inferior temporal gyri; inferior surface with the fusiform and parahippocampal gyri; medial surface with the uncus and hippocampus; the temporal pole lies against the lesser wing of the sphenoid and the temporal horn runs through it.",
+  "subdivisions": [
+   {
+    "name": "Superior temporal gyrus with Heschl's gyrus and the planum temporale",
+    "note": "hearing and language comprehension"
+   },
+   {
+    "name": "Middle and inferior temporal gyri",
+    "note": "semantic knowledge, ventral visual stream"
+   },
+   {
+    "name": "Fusiform gyrus",
+    "note": "face and word recognition"
+   },
+   {
+    "name": "Parahippocampal gyrus and hippocampus",
+    "note": "declarative memory"
+   },
+   {
+    "name": "Amygdala and uncus",
+    "note": "emotion, olfaction, fear"
+   },
+   {
+    "name": "Temporal pole",
+    "note": "social and semantic memory"
+   }
+  ],
+  "relations": {
+   "superior": "lateral sulcus and the frontal and parietal opercula",
+   "posterior": "occipital lobe (no sharp boundary on the lateral surface)",
+   "medial": "tentorial edge, midbrain and posterior cerebral artery"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-auditory",
+   "pathway-visual",
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Hearing, language comprehension (dominant), music and prosody (non-dominant), object and face recognition, semantic memory, episodic memory formation, emotion and olfaction.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca-inferior-division",
+   "artery-pca",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-mca",
+   "territory-pca",
+   "territory-anterior-choroidal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 45,
+     "y": -20,
+     "z": -15
+    },
+    "label": "temporal lobe below the Sylvian fissure with the hippocampus medially"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 50,
+     "y": -20,
+     "z": -10
+    },
+    "label": "superior, middle and inferior temporal gyri"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 50,
+     "y": -20,
+     "z": -10
+    },
+    "label": "temporal lobe from pole to occipital junction"
+   }
+  ],
+  "normalAppearance": "Coronal images through the temporal lobes perpendicular to the hippocampal axis are the key sequence for epilepsy and dementia: look at hippocampal size and signal, the temporal horns and the cortical thickness. Herpes encephalitis and limbic encephalitis light up the medial temporal lobe on FLAIR.",
+  "pathology": [
+   {
+    "pathology": "Mesial temporal sclerosis",
+    "modality": "MRI",
+    "finding": "Small, FLAIR-bright hippocampus with loss of internal structure and a dilated temporal horn on coronal images.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Herpes simplex encephalitis",
+    "modality": "MRI",
+    "finding": "Asymmetric FLAIR hyperintensity and restriction of the medial temporal lobe, insula and inferior frontal lobe, sparing the basal ganglia, with hemorrhage.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Inferior division MCA infarct",
+    "modality": "MRI",
+    "finding": "Lateral temporal cortical restriction with Wernicke aphasia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Temporal glioma",
+    "modality": "MRI",
+    "finding": "Infiltrating T2-bright mass presenting with seizures or aphasia.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Semantic dementia",
+    "modality": "MRI",
+    "finding": "Asymmetric anterior temporal atrophy, left more than right.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Coronal FLAIR and T2 through the hippocampi; DWI; contrast for tumors and encephalitis"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Wernicke aphasia (dominant)",
+    "side": "n/a",
+    "mechanism": "Posterior superior temporal gyrus"
+   },
+   {
+    "deficit": "Superior homonymous quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Meyer's loop of the optic radiation"
+   },
+   {
+    "deficit": "Anterograde amnesia (bilateral) or material-specific memory loss (verbal left, visual right)",
+    "side": "bilateral",
+    "mechanism": "Hippocampus and parahippocampal gyrus"
+   },
+   {
+    "deficit": "Focal seizures with auras of déjà vu, fear, epigastric rising or olfactory hallucinations",
+    "side": "n/a",
+    "mechanism": "Medial temporal epileptogenic cortex"
+   },
+   {
+    "deficit": "Prosopagnosia and visual agnosia",
+    "side": "bilateral",
+    "mechanism": "Fusiform and inferior temporal gyri"
+   },
+   {
+    "deficit": "Cortical deafness (bilateral) or amusia",
+    "side": "bilateral",
+    "mechanism": "Heschl's gyri"
+   },
+   {
+    "deficit": "Klüver–Bucy syndrome",
+    "side": "bilateral",
+    "mechanism": "Bilateral amygdala and anterior temporal damage"
+   }
+  ],
+  "examination": [
+   "Comprehension of commands and conversation",
+   "Visual fields by quadrant",
+   "Delayed recall of words and of a drawing",
+   "Ask about auras, déjà vu, unexplained smells",
+   "Face recognition of famous or familiar people",
+   "Hearing"
+  ],
+  "syndromes": [
+   "syn-aphasia-wernicke",
+   "syn-mca-inferior-division",
+   "syn-homonymous-hemianopia",
+   "syn-kluver-bucy"
+  ],
+  "pearls": [
+   "A superior quadrantanopia points to the temporal lobe ('pie in the sky'); an inferior one to the parietal",
+   "Fever plus behavior change plus temporal FLAIR change: give aciclovir before the PCR result"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    287,
+    288
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    55
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    169,
+    171
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    212,
+    214
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "temporal"
+ ],
+ "status": "draft",
+ "latin": "Lobus temporalis",
+ "subsystem": "lobe-temporal"
+}

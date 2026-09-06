@@ -1,0 +1,128 @@
+{
+ "kind": "structure",
+ "id": "interposed-nucleus",
+ "name": "Interposed nuclei (emboliform and globose)",
+ "synonyms": [],
+ "system": "cerebellum",
+ "meshIds": [
+  "interposed-nucleus-l",
+  "interposed-nucleus-r"
+ ],
+ "summary": "The globose and emboliform nuclei lie between the dentate and fastigial nuclei and together form the interposed nucleus, the output of the paravermal (intermediate) zone. They receive Purkinje input from the paravermis and spinocerebellar collaterals and project through the superior cerebellar peduncle to the contralateral red nucleus (rubrospinal tract) and thalamus. They adjust ongoing limb movements and the tone of limb muscles, so their lesions give limb ataxia intermediate in character between the truncal ataxia of fastigial lesions and the dysmetria of dentate lesions.",
+ "anatomy": {
+  "location": "In the white matter of each hemisphere medial to the hilum of the dentate nucleus and lateral to the fastigial nucleus, above the roof of the fourth ventricle.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "paravermal cortex",
+    "note": "Purkinje cell axons"
+   },
+   {
+    "from": "spinal-cord",
+    "via": "spinocerebellar collaterals"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "red-nucleus (contralateral)",
+    "via": "superior-cerebellar-peduncle"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-rubrospinal"
+  ]
+ },
+ "function": "Correction of ongoing limb movement and control of agonist-antagonist balance and limb tone through the rubrospinal and thalamocortical pathways.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-sca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": -56,
+     "z": -32
+    },
+    "label": "medial to the dentate hilum in the deep white matter"
+   }
+  ],
+  "normalAppearance": "Not separately resolved from the dentate on routine MRI; the group appears as the medial extension of the dentate band on SWI.",
+  "pathology": [
+   {
+    "pathology": "Deep cerebellar nuclear infarct",
+    "modality": "MRI",
+    "finding": "SCA territory restricted diffusion reaching the deep white matter and nuclei.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI and SWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia and action tremor",
+    "side": "ipsilateral",
+    "mechanism": "Paravermal outflow"
+   },
+   {
+    "deficit": "Hypotonia",
+    "side": "ipsilateral",
+    "mechanism": "Loss of facilitation of stretch reflexes"
+   }
+  ],
+  "examination": [
+   "Heel-shin and finger-nose",
+   "Tone and pendular reflexes"
+  ],
+  "syndromes": [],
+  "pearls": [
+   "The intermediate zone is where the cerebellum compares the corticospinal command (via pontine collaterals) with spinocerebellar feedback",
+   "Interposed nuclear lesions are rarely isolated; in practice they contribute the limb component of superior cerebellar artery infarcts and of midline tumors that spread laterally"
+  ]
+ },
+ "pitfalls": [
+  "Ataxia from the deep nuclei and from the superior peduncle is indistinguishable at the bedside; imaging decides whether the nuclei, the peduncle or the pontine input is responsible"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    233,
+    234
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    239,
+    240
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "tags": [
+  "cerebellum"
+ ],
+ "status": "draft",
+ "latin": "Nucleus emboliformis; nucleus globosus",
+ "subsystem": "deep-nuclei"
+}

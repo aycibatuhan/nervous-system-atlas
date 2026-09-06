@@ -1,0 +1,174 @@
+{
+ "kind": "structure",
+ "id": "cortex-premotor-sma",
+ "name": "Premotor cortex and supplementary motor area",
+ "synonyms": [
+  "Brodmann area 6",
+  "SMA"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-supplementary-motor-l",
+  "cortex-supplementary-motor-r",
+  "gyrus-superior-frontal-l",
+  "gyrus-superior-frontal-r"
+ ],
+ "summary": "Brodmann area 6 in front of the primary motor cortex: the lateral premotor cortex on the convexity and the supplementary motor area on the medial surface of the superior frontal gyrus in front of the paracentral lobule. Both plan and sequence movements and feed the primary motor cortex, the premotor cortex guiding externally cued movements (reaching for what you see) and the SMA organizing internally generated and bimanual sequences. SMA lesions and surgery produce the transient SMA syndrome of contralateral akinesia and mutism, and SMA seizures produce the dramatic fencing posture.",
+ "anatomy": {
+  "location": "Convexity in front of the precentral gyrus (premotor) and the medial surface of the superior frontal gyrus above the cingulate sulcus, in front of the paracentral lobule (SMA), both supplied by ACA and MCA branches at the anterior watershed.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "thalamus-va-vl",
+    "note": "basal ganglia and cerebellar loops"
+   },
+   {
+    "from": "parietal association cortex"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "gyrus-precentral"
+   },
+   {
+    "to": "spinal-cord",
+    "via": "pathway-lateral-corticospinal",
+    "note": "direct component"
+   }
+  ],
+  "pathways": [
+   "pathway-lateral-corticospinal",
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "Motor planning, sequencing and initiation; bimanual coordination and postural preparation; contribution to speech initiation on the dominant side.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca",
+   "territory-watershed"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 5,
+     "y": 5,
+     "z": 60
+    },
+    "label": "SMA on the medial superior frontal gyrus in front of the paracentral lobule"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": 5,
+     "z": 55
+    },
+    "label": "premotor cortex in front of the precentral gyrus"
+   }
+  ],
+  "normalAppearance": "The SMA occupies the medial superior frontal gyrus between the paracentral lobule and a line dropped from the anterior commissure; it is a classic fMRI landmark for surgical planning. Anterior watershed infarcts involve this region.",
+  "pathology": [
+   {
+    "pathology": "SMA infarct or resection",
+    "modality": "MRI",
+    "finding": "Medial superior frontal lesion with contralateral akinesia and reduced speech that recovers over weeks.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Anterior watershed infarct",
+    "modality": "MRI",
+    "finding": "Linear infarct along the superior frontal sulcus between ACA and MCA territories.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI and FLAIR; fMRI before resection"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral akinesia and hesitancy with preserved strength (SMA syndrome)",
+    "side": "contralateral",
+    "mechanism": "Loss of movement initiation, usually transient"
+   },
+   {
+    "deficit": "Mutism or transcortical motor aphasia (dominant)",
+    "side": "n/a",
+    "mechanism": "SMA connections to Broca's area"
+   },
+   {
+    "deficit": "Apraxia and difficulty with sequences and bimanual tasks",
+    "side": "contralateral",
+    "mechanism": "Premotor and SMA planning"
+   },
+   {
+    "deficit": "Fencing posture seizures",
+    "side": "contralateral",
+    "mechanism": "SMA ictal activation"
+   },
+   {
+    "deficit": "Grasp reflex and alien limb",
+    "side": "contralateral",
+    "mechanism": "Medial frontal release"
+   }
+  ],
+  "examination": [
+   "Observe spontaneous movement and speech initiation",
+   "Luria three-step sequence and alternating hand movements",
+   "Grasp reflex",
+   "Ask about nocturnal seizures with posturing"
+  ],
+  "syndromes": [
+   "syn-aca-infarct",
+   "syn-watershed-infarct"
+  ],
+  "pearls": [
+   "Profound weakness-free immobility after a medial frontal stroke or surgery is the SMA syndrome and usually recovers",
+   "Bilateral SMA lesions can produce akinetic mutism"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    284,
+    285
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    54
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    39,
+    40
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "frontal"
+ ],
+ "status": "draft",
+ "latin": "Area premotoria; area motoria supplementaria",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

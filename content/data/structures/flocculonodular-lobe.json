@@ -1,0 +1,165 @@
+{
+ "kind": "structure",
+ "id": "flocculonodular-lobe",
+ "name": "Flocculonodular lobe",
+ "synonyms": [
+  "vestibulocerebellum",
+  "archicerebellum"
+ ],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-lobule-x-l",
+  "cerebellar-lobule-x-r",
+  "cerebellar-vermis-x"
+ ],
+ "summary": "The oldest part of the cerebellum: the nodule of the vermis and the two flocculi that hang beneath the middle cerebellar peduncles at the cerebellopontine angles. It receives primary vestibular fibers directly from the vestibular nerve and secondary fibers from the vestibular nuclei, plus visual input from the accessory optic system, and projects back to the vestibular nuclei both directly and via the fastigial nucleus. It calibrates the vestibulo-ocular reflex, holds gaze eccentrically and stabilizes balance; lesions produce nystagmus and truncal imbalance without limb ataxia.",
+ "anatomy": {
+  "location": "Nodule in the midline in front of the uvula at the caudal end of the vermis, and the flocculus on each side in the cerebellopontine angle behind the cochlear nerve, connected to the nodule by a thin peduncle.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "cn-08-vestibulocochlear and vestibular-nuclei",
+    "via": "inferior-cerebellar-peduncle (juxtarestiform body)"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "vestibular-nuclei",
+    "note": "direct and via fastigial nucleus"
+   }
+  ],
+  "pathways": [
+   "pathway-vestibular-vor"
+  ]
+ },
+ "function": "Vestibulo-ocular reflex gain adaptation, gaze holding, smooth pursuit, and vestibular control of posture and balance.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aica",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-aica",
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 25,
+     "y": -50,
+     "z": -38
+    },
+    "label": "flocculus in the cerebellopontine angle behind the eighth nerve"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -55,
+     "z": -35
+    },
+    "label": "nodule at the caudal vermis in front of the uvula"
+   }
+  ],
+  "normalAppearance": "The flocculus is a small lobulated structure in the cerebellopontine angle on axial T2 that can be mistaken for a mass; the nodule is seen at the caudal end of the vermis on sagittal images.",
+  "pathology": [
+   {
+    "pathology": "Flocculus mistaken for a CPA tumor",
+    "modality": "MRI",
+    "finding": "Normal folia of the flocculus protruding into the cerebellopontine angle cistern; no enhancement, symmetric with the other side.",
+    "sequence": "T2",
+    "pitfalls": "Compare with the opposite side before calling a cerebellopontine angle mass"
+   },
+   {
+    "pathology": "Nodular lesion (infarct, demyelination)",
+    "modality": "MRI",
+    "finding": "Small caudal vermian lesion with positional vertigo and downbeat nystagmus mimicking BPPV.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "Axial and coronal T2; DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Nystagmus: gaze-evoked, downbeat or periodic alternating",
+    "side": "n/a",
+    "mechanism": "Loss of gaze holding and VOR calibration"
+   },
+   {
+    "deficit": "Truncal imbalance and unsteady gait",
+    "side": "bilateral",
+    "mechanism": "Vestibulocerebellar control of posture"
+   },
+   {
+    "deficit": "Impaired smooth pursuit",
+    "side": "n/a",
+    "mechanism": "Flocculus"
+   },
+   {
+    "deficit": "Central positional vertigo",
+    "side": "n/a",
+    "mechanism": "Nodulus"
+   }
+  ],
+  "examination": [
+   "Eccentric gaze holding and nystagmus in all directions",
+   "Smooth pursuit of a slowly moving target",
+   "Romberg and gait; Dix–Hallpike showing atypical (downbeat, non-fatiguing) nystagmus"
+  ],
+  "syndromes": [
+   "syn-central-vs-peripheral-vertigo",
+   "syn-bppv"
+  ],
+  "pearls": [
+   "Downbeat nystagmus points to the craniocervical junction or the flocculus",
+   "Positional vertigo that does not fatigue and is downbeating is central until proven otherwise"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    231,
+    234
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    243,
+    243
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    110,
+    114
+   ]
+  }
+ ],
+ "tags": [
+  "cerebellum"
+ ],
+ "status": "draft",
+ "latin": "Lobus flocculonodularis",
+ "subsystem": "lobes"
+}

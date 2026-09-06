@@ -1,0 +1,156 @@
+{
+ "kind": "structure",
+ "id": "fastigial-nucleus",
+ "name": "Fastigial nucleus",
+ "synonyms": [],
+ "system": "cerebellum",
+ "meshIds": [
+  "fastigial-nucleus-l",
+  "fastigial-nucleus-r"
+ ],
+ "summary": "The most medial deep nucleus, lying in the roof of the fourth ventricle on either side of the midline, is the output of the vermis and flocculonodular lobe. It projects bilaterally to the vestibular nuclei and reticular formation through the juxtarestiform body (partly via the crossed uncinate fasciculus), and to the thalamus, controlling axial and proximal muscles, gait, balance and eye movements. Its rostral part also influences blood pressure and respiration through the medullary reticular formation.",
+ "anatomy": {
+  "location": "In the vermian white matter immediately above the fastigium, the apex of the fourth ventricular roof, medial to the globose nucleus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "cerebellar-vermis",
+    "note": "Purkinje cell axons"
+   },
+   {
+    "from": "flocculonodular-lobe"
+   },
+   {
+    "from": "vestibular-nuclei",
+    "via": "juxtarestiform body"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "vestibular-nuclei",
+    "via": "juxtarestiform body and crossed uncinate fasciculus",
+    "note": "bilateral"
+   },
+   {
+    "to": "reticular-formation",
+    "note": "posture and cardiovascular control"
+   },
+   {
+    "to": "thalamus-va-vl"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-vestibulospinal"
+  ]
+ },
+ "function": "Postural and gait control through vestibulospinal and reticulospinal tracts, saccade timing and accuracy (caudal fastigial oculomotor region), and cardiovascular regulation.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-sca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -56,
+     "z": -30
+    },
+    "label": "midline roof of the fourth ventricle"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 3,
+     "y": -56,
+     "z": -30
+    },
+    "label": "above the fastigium"
+   }
+  ],
+  "normalAppearance": "Not resolved on routine MRI; localized to the vermian white matter just above the peak of the fourth ventricle.",
+  "pathology": [
+   {
+    "pathology": "Midline cerebellar lesion",
+    "modality": "MRI",
+    "finding": "Vermian mass, infarct or plaque involving the roof of the fourth ventricle with truncal ataxia and saccadic dysmetria.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal T2 and FLAIR"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Truncal ataxia and inability to stand",
+    "side": "bilateral",
+    "mechanism": "Loss of vestibulospinal and reticulospinal modulation"
+   },
+   {
+    "deficit": "Saccadic hypermetria or hypometria",
+    "side": "n/a",
+    "mechanism": "Fastigial oculomotor region"
+   },
+   {
+    "deficit": "Gait ataxia with relatively preserved limb coordination",
+    "side": "bilateral",
+    "mechanism": "Axial control"
+   }
+  ],
+  "examination": [
+   "Sitting balance, standing and gait",
+   "Saccade accuracy to targets",
+   "Blood pressure and heart rate variability in bilateral lesions"
+  ],
+  "syndromes": [],
+  "pearls": [
+   "Fastigial and vermian lesions cannot sit unsupported: this is the picture of a midline tumor or alcohol",
+   "Saccades that overshoot point to the fastigial oculomotor region or the dorsal vermis",
+   "Because fastigial output is bilateral, unilateral lesions produce milder, less lateralized deficits than dentate lesions"
+  ]
+ },
+ "pitfalls": [
+  "The fastigial nuclei sit so close to the midline that a single small vermian lesion often damages both, mimicking a diffuse cerebellar disorder"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    233,
+    234
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    239,
+    240
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "tags": [
+  "cerebellum"
+ ],
+ "status": "draft",
+ "latin": "Nucleus fastigii",
+ "subsystem": "deep-nuclei"
+}

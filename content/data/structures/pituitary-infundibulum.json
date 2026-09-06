@@ -1,0 +1,207 @@
+{
+ "kind": "structure",
+ "id": "pituitary-infundibulum",
+ "name": "Pituitary gland and infundibulum",
+ "synonyms": [
+  "hypophysis",
+  "pituitary stalk"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "pituitary-gland"
+ ],
+ "summary": "The pituitary sits in the sella turcica under the diaphragma sellae, connected to the hypothalamus by the infundibulum, and is flanked by the cavernous sinuses with their carotid arteries and cranial nerves III, IV, V1, V2 and VI, and overlain by the optic chiasm. The anterior lobe (adenohypophysis) makes growth hormone, prolactin, ACTH, TSH, LH and FSH under hypothalamic releasing hormones delivered by the portal veins; the posterior lobe (neurohypophysis) stores vasopressin and oxytocin made in the hypothalamus. Its tumors present with hormone excess, hypopituitarism, bitemporal hemianopia or, in apoplexy, sudden headache and ophthalmoplegia.",
+ "anatomy": {
+  "location": "Sella turcica of the sphenoid bone, roofed by the diaphragma sellae through which the stalk passes; the optic chiasm lies above and slightly in front, the cavernous sinuses lateral, the sphenoid sinus below.",
+  "subdivisions": [
+   {
+    "name": "Adenohypophysis (anterior lobe)",
+    "note": "pars distalis, pars tuberalis, pars intermedia; hormone-producing cells fed by the hypophyseal portal system"
+   },
+   {
+    "name": "Neurohypophysis (posterior lobe)",
+    "note": "axon terminals of supraoptic and paraventricular neurons; T1-bright on MRI because of neurosecretory granules"
+   },
+   {
+    "name": "Infundibulum (stalk)",
+    "note": "portal vessels and hypothalamo-hypophyseal tract; normally 2–3 mm thick"
+   }
+  ],
+  "relations": {
+   "superior": "diaphragma sellae, suprasellar cistern, optic chiasm",
+   "lateral": "cavernous sinus with the internal carotid artery and cranial nerves III, IV, V1, V2, VI",
+   "inferior": "sphenoid sinus",
+   "anterior": "tuberculum sellae and anterior clinoid processes",
+   "posterior": "dorsum sellae and basilar artery"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Master endocrine gland: growth, lactation, adrenal and thyroid drive, gonadal function; water balance and uterine contraction through the posterior lobe.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-internal-carotid",
+   "artery-ophthalmic"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 2,
+     "z": -32
+    },
+    "label": "pituitary in the sella between the cavernous sinuses, chiasm above"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": 2,
+     "z": -32
+    },
+    "label": "gland, stalk and the posterior pituitary bright spot"
+   }
+  ],
+  "normalAppearance": "On sagittal T1 the anterior lobe is isointense and the posterior lobe is a bright spot; the stalk is a thin midline structure enhancing strongly, as does the gland (no blood–brain barrier). Height up to about 8 mm in adults, larger in adolescence and pregnancy. Dynamic contrast imaging shows microadenomas as slow-enhancing foci.",
+  "pathology": [
+   {
+    "pathology": "Pituitary macroadenoma",
+    "modality": "MRI",
+    "finding": "Sellar mass more than 10 mm extending up into the suprasellar cistern with a snowman (figure-of-eight) shape at the diaphragm, compressing the chiasm, and laterally into the cavernous sinus.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Microadenoma",
+    "modality": "MRI",
+    "finding": "Focal hypoenhancing lesion under 10 mm on dynamic contrast T1, often with stalk deviation.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Pituitary apoplexy",
+    "modality": "MRI",
+    "finding": "Hemorrhage or infarction within an adenoma: T1-bright or heterogeneous mass with sudden headache, visual loss and ophthalmoplegia.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Empty sella",
+    "modality": "MRI",
+    "finding": "CSF filling the sella with a flattened gland, often with intracranial hypertension.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Rathke cleft cyst",
+    "modality": "MRI",
+    "finding": "Non-enhancing cyst between the anterior and posterior lobes, often T1-bright from proteinaceous content, with a characteriztic intracystic nodule; usually incidental.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Dedicated sella MRI: thin coronal and sagittal T1 with dynamic contrast; CT for bone and calcification"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Bitemporal hemianopia",
+    "side": "bilateral",
+    "mechanism": "Chiasm compressed from below by a suprasellar extension"
+   },
+   {
+    "deficit": "Hypopituitarism (fatigue, hypogonadism, hypothyroidism, adrenal insufficiency)",
+    "side": "n/a",
+    "mechanism": "Destruction or compression of the anterior lobe"
+   },
+   {
+    "deficit": "Diabetes insipidus",
+    "side": "n/a",
+    "mechanism": "Stalk or posterior lobe disease (rare with adenomas, common with infiltration or surgery)"
+   },
+   {
+    "deficit": "Cavernous sinus syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Lateral invasion compressing III, IV, V1, V2, VI"
+   },
+   {
+    "deficit": "Sudden headache, visual loss and ophthalmoplegia",
+    "side": "bilateral",
+    "mechanism": "Pituitary apoplexy"
+   },
+   {
+    "deficit": "Hormone excess: acromegaly, Cushing disease, galactorrhea",
+    "side": "n/a",
+    "mechanism": "Functioning adenoma"
+   }
+  ],
+  "examination": [
+   "Visual fields to confrontation (temporal fields), acuity and fundi",
+   "Eye movements and facial sensation for cavernous sinus involvement",
+   "Look for acromegalic or cushingoid features, galactorrhea",
+   "Postural blood pressure and hydration"
+  ],
+  "syndromes": [
+   "syn-pituitary-mass",
+   "syn-chiasmal-bitemporal",
+   "syn-cavernous-sinus"
+  ],
+  "pearls": [
+   "Bitemporal hemianopia is the pituitary until proven otherwise; check prolactin before surgery because prolactinomas shrink with dopamine agonists",
+   "A sudden severe headache with a third nerve palsy and a sellar mass is apoplexy: give steroids and involve neurosurgery"
+  ]
+ },
+ "pitfalls": [
+  "Physiological enlargement in pregnancy and adolescence must not be called a tumor"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    377,
+    383
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    349,
+    349
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    49
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    256,
+    260
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    93,
+    93
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Hypophysis; infundibulum",
+ "subsystem": "hypothalamus"
+}

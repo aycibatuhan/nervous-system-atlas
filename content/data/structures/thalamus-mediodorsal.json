@@ -1,0 +1,174 @@
+{
+ "kind": "structure",
+ "id": "thalamus-mediodorsal",
+ "name": "Mediodorsal nucleus",
+ "synonyms": [
+  "dorsomedial nucleus"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "thalamus-mediodorsal-l",
+  "thalamus-mediodorsal-r"
+ ],
+ "summary": "The largest medial nucleus, reciprocally connected with the prefrontal cortex and receiving input from the amygdala, olfactory cortex, basal ganglia and hypothalamus. It supports executive function, emotional tone, working memory and, with the anterior nuclei, declarative memory. Bilateral damage (paramedian thalamic infarction, thiamine deficiency, prion disease) produces a syndrome of amnesia, apathy and altered arousal; its paramedian perforators come from the P1 segment, sometimes as a single artery of Percheron.",
+ "anatomy": {
+  "location": "Medial thalamus between the internal medullary lamina and the midline nuclei of the third ventricular wall, behind the anterior nuclei and above the hypothalamus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "amygdala"
+   },
+   {
+    "from": "cortex-prefrontal"
+   },
+   {
+    "from": "globus-pallidus"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "cortex-prefrontal",
+    "via": "anterior thalamic radiation"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic",
+   "pathway-olfactory"
+  ]
+ },
+ "function": "Prefrontal relay for executive function, emotional regulation, working memory and attention; contributes to the limbic memory circuit and to olfactory processing.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 6,
+     "y": -16,
+     "z": 6
+    },
+    "label": "medial thalamus flanking the third ventricle"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 6,
+     "y": -16,
+     "z": 6
+    },
+    "label": "mediodorsal nucleus medial to the internal medullary lamina"
+   }
+  ],
+  "normalAppearance": "The medial thalamus beside the third ventricle on axial and coronal images; the MIAL mediodorsal mesh in this atlas outlines it. Bilateral symmetric restriction here is the classic Percheron pattern.",
+  "pathology": [
+   {
+    "pathology": "Bilateral paramedian thalamic infarct",
+    "modality": "MRI",
+    "finding": "Symmetrical restriction of the medial thalami with somnolence, amnesia and vertical gaze palsy.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Symmetrical FLAIR change of the medial thalami with mammillary and periaqueductal involvement.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Prion disease (variant CJD)",
+    "modality": "MRI",
+    "finding": "Dorsomedial and pulvinar restriction (hockey-stick sign).",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI and FLAIR through the thalamus"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Amnesia and confabulation",
+    "side": "bilateral",
+    "mechanism": "Limbic-prefrontal relay"
+   },
+   {
+    "deficit": "Apathy, abulia, executive dysfunction",
+    "side": "bilateral",
+    "mechanism": "Prefrontal disconnection"
+   },
+   {
+    "deficit": "Hypersomnolence",
+    "side": "bilateral",
+    "mechanism": "Adjacent intralaminar nuclei and midbrain reticular formation"
+   },
+   {
+    "deficit": "Personality change and disinhibition",
+    "side": "bilateral",
+    "mechanism": "Orbitofrontal connections"
+   }
+  ],
+  "examination": [
+   "Level of alertness over the day",
+   "Memory and executive testing",
+   "Behavioral observation and collateral history"
+  ],
+  "syndromes": [
+   "syn-top-of-basilar",
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Bilateral medial thalamic infarcts are a great imitator of encephalitis or psychiatric illness",
+   "A single perforator (artery of Percheron) can infarct both medial thalami at once"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    366
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    233
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Nucleus medialis dorsalis thalami",
+ "subsystem": "thalamus",
+ "parent": "thalamus"
+}

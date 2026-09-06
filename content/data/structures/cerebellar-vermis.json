@@ -1,0 +1,179 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-vermis",
+ "name": "Vermis",
+ "synonyms": [],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-vermis-vi",
+  "cerebellar-vermis-crus-i",
+  "cerebellar-vermis-crus-ii",
+  "cerebellar-vermis-viib",
+  "cerebellar-vermis-viiia",
+  "cerebellar-vermis-viiib",
+  "cerebellar-vermis-ix",
+  "cerebellar-vermis-x"
+ ],
+ "summary": "The narrow midline ridge joining the two hemispheres, folded into ten lobules from the lingula at the top to the nodule at the bottom. Together with the adjacent paravermis it forms the spinocerebellum, receiving proprioceptive information from the trunk and limbs and vestibular input, and projecting through the fastigial nuclei to the vestibular nuclei and reticular formation. It governs posture, gait, trunk stability and eye movements, which is why midline disease presents with truncal ataxia and nystagmus rather than limb dysmetria. It is also the part most damaged by alcohol and the usual seat of childhood medulloblastoma.",
+ "anatomy": {
+  "location": "Midline of the cerebellum between the hemispheres, forming the roof of the fourth ventricle inferiorly; its lobules (I–X) are numbered from the superior surface (lingula) around the posterior surface to the nodule in front of the uvula.",
+  "subdivisions": [
+   {
+    "name": "Superior vermis (I–V)",
+    "note": "anterior lobe; trunk and leg proprioception; alcohol-related degeneration"
+   },
+   {
+    "name": "Posterior vermis (VI–VIII)",
+    "note": "declive, folium, tuber, pyramid; ocular motor vermis (VI–VII) controls saccade accuracy"
+   },
+   {
+    "name": "Uvula and nodule (IX–X)",
+    "note": "vestibulocerebellum with the flocculus; balance and vestibulo-ocular reflex adaptation"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "fastigial-nucleus"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-vestibulospinal"
+  ]
+ },
+ "function": "Postural and gait control, trunk stability, muscle tone of axial muscles, saccade accuracy and pursuit; relays through the fastigial nucleus.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-sca",
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -25
+    },
+    "label": "midline vermis: all lobules on one sagittal slice"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -62,
+     "z": -35
+    },
+    "label": "inferior vermis between the hemispheres"
+   }
+  ],
+  "normalAppearance": "Best seen on the midline sagittal T1, where the primary fissure separates the anterior from the posterior lobe and the folia of each lobule can be counted. Superior vermian atrophy is the hallmark of alcoholic cerebellar degeneration.",
+  "pathology": [
+   {
+    "pathology": "Alcoholic cerebellar degeneration",
+    "modality": "MRI",
+    "finding": "Atrophy of the superior vermis with widened interfolial spaces on sagittal T1.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Medulloblastoma",
+    "modality": "MRI",
+    "finding": "Midline mass of the inferior vermis bulging into the fourth ventricle with restricted diffusion (dense cells) and hydrocephalus, typically in a child.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Vermian infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the superior (SCA) or inferior (PICA) vermis.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal T1 and T2; DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Truncal ataxia: unable to sit unsupported, wide-based gait",
+    "side": "bilateral",
+    "mechanism": "Vermis and fastigial nuclei"
+   },
+   {
+    "deficit": "Gaze-evoked and downbeat nystagmus, inaccurate saccades",
+    "side": "n/a",
+    "mechanism": "Ocular motor vermis and nodulus"
+   },
+   {
+    "deficit": "Titubation of the head and trunk",
+    "side": "n/a",
+    "mechanism": "Anterior vermis"
+   },
+   {
+    "deficit": "Limb testing relatively normal",
+    "side": "n/a",
+    "mechanism": "Hemispheres spared"
+   }
+  ],
+  "examination": [
+   "Watch the patient sit unsupported and walk heel-to-toe",
+   "Romberg: cerebellar patients cannot stand feet together even with eyes open",
+   "Saccade accuracy and nystagmus"
+  ],
+  "syndromes": [
+   "syn-cerebellar-vermian-midline"
+  ],
+  "pearls": [
+   "Alcohol spares the hands and ruins the gait because it attacks the superior vermis",
+   "A child with morning headache, vomiting and truncal ataxia has a midline posterior fossa tumor until proven otherwise"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    234
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    241,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    255,
+    258
+   ]
+  }
+ ],
+ "tags": [
+  "cerebellum"
+ ],
+ "status": "draft",
+ "latin": "Vermis cerebelli",
+ "subsystem": "vermis"
+}

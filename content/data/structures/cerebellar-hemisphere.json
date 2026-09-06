@@ -1,0 +1,161 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-hemisphere",
+ "name": "Cerebellar hemispheres (lateral zone)",
+ "synonyms": [],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-hemisphere-l",
+  "cerebellar-hemisphere-r"
+ ],
+ "summary": "The lateral zones of the cerebellum, the neocerebellum, expanded enormously with the cerebral cortex and are wired to it: the contralateral motor and association cortices project through the pontine nuclei and middle cerebellar peduncle, and the hemispheres reply through the dentate nucleus, superior cerebellar peduncle and thalamus to the same cortex. They plan and time skilled limb movements, particularly of the hand and of speech, and lesions produce the classic ipsilateral limb signs: dysmetria, intention tremor, dysdiadochokinesia and rebound.",
+ "anatomy": {
+  "location": "Lateral to the paravermis on each side, the largest part of the posterior lobe, resting on the occipital bone and the petrous surface; the tonsil is their most medial inferior lobule.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "cerebral cortex (contralateral)",
+    "via": "pontine-nuclei / middle-cerebellar-peduncle"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "dentate-nucleus"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "Planning and coordination of skilled voluntary movement of the ipsilateral limbs, timing of complex sequences, motor learning, and cognitive-affective functions in the posterior lobe.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-pica",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-sca",
+   "territory-pica-lateral-medulla",
+   "territory-aica"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 35,
+     "y": -60,
+     "z": -35
+    },
+    "label": "lateral hemisphere folia"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 35,
+     "y": -60,
+     "z": -35
+    },
+    "label": "hemisphere lateral to the vermis"
+   }
+  ],
+  "normalAppearance": "Striped folia lateral to the vermis; the SCA territory lies above and the PICA territory below the horizontal fissure. Focal lesions are easily missed on axial slices alone; use coronal images.",
+  "pathology": [
+   {
+    "pathology": "Hemispheric infarct",
+    "modality": "MRI",
+    "finding": "Wedge of restricted diffusion in the hemisphere respecting a vascular territory.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Metastasis or hemangioblastoma",
+    "modality": "MRI",
+    "finding": "Enhancing hemispheric mass with edema; hemangioblastoma is a cyst with an enhancing mural nodule in an adult.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Demyelination",
+    "modality": "MRI",
+    "finding": "FLAIR-bright plaques in the hemispheric white matter or peduncles.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "DWI, FLAIR and T1+Gd"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb dysmetria and intention tremor",
+    "side": "ipsilateral",
+    "mechanism": "Lateral zone and dentate nucleus"
+   },
+   {
+    "deficit": "Dysdiadochokinesia and rebound",
+    "side": "ipsilateral",
+    "mechanism": "Loss of timed agonist-antagonist switching"
+   },
+   {
+    "deficit": "Scanning dysarthria",
+    "side": "n/a",
+    "mechanism": "Paravermal and hemispheric speech regions"
+   },
+   {
+    "deficit": "Cerebellar cognitive affective syndrome",
+    "side": "n/a",
+    "mechanism": "Posterior lobe lesions: executive, visuospatial and affective changes"
+   }
+  ],
+  "examination": [
+   "Finger-nose past-pointing and terminal tremor",
+   "Rapid alternating hand movements and heel-shin",
+   "Rebound (Holmes) test with the patient's arm outstretched",
+   "Speech rhythm"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-sca-infarct",
+   "syn-pica-cerebellar-infarct"
+  ],
+  "pearls": [
+   "Limb ataxia without gait ataxia points to the hemisphere; gait ataxia without limb ataxia points to the vermis",
+   "Because of the double crossing, hemispheric lesions produce signs on the same side of the body"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    234
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    241,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "tags": [
+  "cerebellum"
+ ],
+ "status": "draft",
+ "latin": "Hemispherium cerebelli",
+ "subsystem": "hemispheres"
+}

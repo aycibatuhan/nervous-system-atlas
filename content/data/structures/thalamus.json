@@ -1,0 +1,255 @@
+{
+ "kind": "structure",
+ "id": "thalamus",
+ "name": "Thalamus",
+ "synonyms": [],
+ "system": "diencephalon",
+ "meshIds": [
+  "thalamus-l",
+  "thalamus-r"
+ ],
+ "summary": "Two egg-shaped masses of gray matter forming the walls of the third ventricle and the floor of the lateral ventricles, the thalamus is the gateway to the cortex: every sensory modality except smell, the outflow of the cerebellum and basal ganglia, and the limbic circuits are relayed here before reaching their cortical targets, and the cortex projects back to every nucleus. Its nuclei are grouped by the internal medullary lamina into anterior, medial and lateral tiers plus intralaminar, midline and reticular nuclei. Clinically the lateral group is the somatosensory relay (pure sensory stroke, thalamic pain), the anterior and medial groups serve memory and attention (amnesia, apathy, coma with bilateral lesions), and the posterior pulvinar and geniculate bodies serve vision and hearing.",
+ "anatomy": {
+  "location": "Diencephalon on each side of the third ventricle, bounded laterally by the posterior limb of the internal capsule, superiorly by the floor of the lateral ventricle and the fornix, inferiorly by the hypothalamus and subthalamus, and posteriorly by the pulvinar overhanging the midbrain; the anterior tubercle forms the posterior wall of the foramen of Monro.",
+  "subdivisions": [
+   {
+    "name": "Anterior nuclear group",
+    "note": "Papez circuit: mammillothalamic tract to the cingulate gyrus; memory"
+   },
+   {
+    "name": "Medial group (mediodorsal)",
+    "note": "prefrontal cortex, amygdala and olfactory input; executive function, emotion"
+   },
+   {
+    "name": "Lateral group, ventral tier",
+    "note": "VA and VL (motor relay from basal ganglia and cerebellum), VPL and VPM (somatosensory relay from body and face)"
+   },
+   {
+    "name": "Lateral group, dorsal tier",
+    "note": "lateral dorsal, lateral posterior, pulvinar: association with parietal, temporal and occipital cortex"
+   },
+   {
+    "name": "Metathalamus",
+    "note": "lateral geniculate (vision) and medial geniculate (hearing)"
+   },
+   {
+    "name": "Intralaminar and midline nuclei",
+    "note": "arousal and attention from the reticular formation; centromedian to the striatum"
+   },
+   {
+    "name": "Reticular nucleus",
+    "note": "a GABAergic shell that gates thalamocortical traffic"
+   }
+  ],
+  "relations": {
+   "medial": "third ventricle",
+   "lateral": "posterior limb of the internal capsule",
+   "superior": "lateral ventricle, fornix, caudate body",
+   "inferior": "hypothalamus and subthalamus",
+   "posterior": "pulvinar over the superior colliculus and geniculate bodies"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-dcml",
+   "pathway-lateral-spinothalamic",
+   "pathway-trigeminothalamic",
+   "pathway-visual",
+   "pathway-auditory",
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Relay and gating of sensory, motor and limbic information to the cortex; regulation of arousal, attention and sleep through intralaminar and reticular nuclei; part of the memory and emotional circuits.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-pcom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-anterior-choroidal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 12,
+     "y": -18,
+     "z": 6
+    },
+    "label": "thalami flanking the third ventricle at the level of the foramen of Monro"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 12,
+     "y": -18,
+     "z": 6
+    },
+    "label": "thalamus below the lateral ventricle and medial to the internal capsule"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 12,
+     "y": -18,
+     "z": 6
+    },
+    "label": "thalamus above the midbrain with the pulvinar posteriorly"
+   }
+  ],
+  "normalAppearance": "Homogeneous gray matter medial to the internal capsule on axial T1/T2, slightly brighter than white matter on T2; the internal medullary lamina is a faint dark line. Symmetrical thalamic signal change is a clue to metabolic, toxic, venous or prion disease.",
+  "pathology": [
+   {
+    "pathology": "Thalamic lacune",
+    "modality": "MRI",
+    "finding": "Small restricted-diffusion lesion in the ventral posterior thalamus with a contralateral pure hemisensory syndrome.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Bilateral paramedian thalamic infarct (artery of Percheron)",
+    "modality": "MRI",
+    "finding": "Symmetrical medial thalamic restriction with a V-shaped midbrain lesion; somnolence and vertical gaze palsy.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Thalamic hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense thalamic hematoma, often extending into the third ventricle or posterior limb; hypertension is the usual cause.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Deep cerebral venous thrombosis",
+    "modality": "MRI",
+    "finding": "Bilateral thalamic edema with absent flow in the internal cerebral veins and straight sinus on MRV.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Sporadic Creutzfeldt–Jakob disease and variant CJD",
+    "modality": "MRI",
+    "finding": "Pulvinar and dorsomedial restriction (hockey-stick sign in variant CJD; cortical ribboning in sporadic disease).",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Symmetrical medial thalamic and periaqueductal FLAIR hyperintensity.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "DWI for infarct, CT for hemorrhage, MRV for symmetric thalamic edema"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemisensory loss of all modalities including the face",
+    "side": "contralateral",
+    "mechanism": "Ventral posterior nuclei (VPL and VPM)"
+   },
+   {
+    "deficit": "Thalamic pain (Dejerine–Roussy)",
+    "side": "contralateral",
+    "mechanism": "Ventral posterior nuclei; delayed onset over weeks"
+   },
+   {
+    "deficit": "Hemiparesis and hemiataxia",
+    "side": "contralateral",
+    "mechanism": "Adjacent posterior limb of the internal capsule and cerebellar relay in VL"
+   },
+   {
+    "deficit": "Somnolence, coma",
+    "side": "bilateral",
+    "mechanism": "Paramedian intralaminar nuclei and midbrain reticular formation"
+   },
+   {
+    "deficit": "Amnesia, apathy, confabulation",
+    "side": "bilateral",
+    "mechanism": "Anterior and mediodorsal nuclei and the mammillothalamic tract"
+   },
+   {
+    "deficit": "Thalamic aphasia and neglect",
+    "side": "contralateral",
+    "mechanism": "Left pulvinar/ventral lateral (language) or right pulvinar (attention)"
+   },
+   {
+    "deficit": "Vertical gaze palsy",
+    "side": "bilateral",
+    "mechanism": "Adjacent rostral midbrain"
+   }
+  ],
+  "examination": [
+   "Pin-prick, temperature, vibration and position sense on face, arm and leg",
+   "Level of consciousness and vertical eye movements",
+   "Delayed recall and orientation",
+   "Language and neglect screening"
+  ],
+  "syndromes": [
+   "syn-thalamic-dejerine-roussy",
+   "syn-lacunar-pure-sensory",
+   "syn-top-of-basilar",
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Loss of every sensory modality on one side including the face with no weakness is the thalamus",
+   "Sudden coma with normal pupils and a normal CT can be bilateral thalamic infarction: do a DWI",
+   "Symmetrical thalamic lesions: think venous thrombosis, Wernicke, prion disease or toxins before tumor"
+  ]
+ },
+ "pitfalls": [
+  "Thalamic strokes can present with confusion or a psychiatric picture without lateralizing signs"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    363,
+    369
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    249,
+    255
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    37,
+    38
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    55,
+    57
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Thalamus",
+ "subsystem": "thalamus"
+}

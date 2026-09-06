@@ -1,0 +1,232 @@
+{
+ "kind": "structure",
+ "id": "lobe-parietal",
+ "name": "Parietal lobe",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-postcentral-l",
+  "gyrus-postcentral-r",
+  "lobule-superior-parietal-l",
+  "lobule-superior-parietal-r",
+  "gyrus-supramarginal-anterior-l",
+  "gyrus-supramarginal-anterior-r",
+  "gyrus-supramarginal-posterior-l",
+  "gyrus-supramarginal-posterior-r",
+  "gyrus-angular-l",
+  "gyrus-angular-r",
+  "precuneus-l",
+  "precuneus-r",
+  "cortex-parietal-operculum-l",
+  "cortex-parietal-operculum-r"
+ ],
+ "summary": "Behind the central sulcus and above the lateral sulcus, bounded behind by the parieto-occipital sulcus. It receives somatic sensation on the postcentral gyrus and integrates it with vision and hearing in the superior and inferior parietal lobules to build a map of the body and of space. The dominant inferior parietal lobule (supramarginal and angular gyri) supports language, calculation, praxis and reading; the non-dominant lobule supports spatial attention. Lesions produce cortical sensory loss, apraxia, neglect, Gerstmann syndrome and inferior quadrantic field defects from the optic radiation passing beneath.",
+ "anatomy": {
+  "location": "From the central sulcus to the parieto-occipital sulcus on the lateral and medial surfaces; the intraparietal sulcus separates the superior parietal lobule from the inferior parietal lobule (supramarginal and angular gyri); the precuneus lies on the medial surface.",
+  "subdivisions": [
+   {
+    "name": "Postcentral gyrus (areas 3, 1, 2)",
+    "note": "primary somatosensory cortex"
+   },
+   {
+    "name": "Superior parietal lobule (areas 5, 7)",
+    "note": "somatosensory association, visuomotor guidance of reaching"
+   },
+   {
+    "name": "Supramarginal gyrus (area 40)",
+    "note": "phonological processing, praxis, tactile recognition"
+   },
+   {
+    "name": "Angular gyrus (area 39)",
+    "note": "reading, calculation, finger recognition, semantic integration"
+   },
+   {
+    "name": "Precuneus",
+    "note": "self-referential and visuospatial processing, episodic memory retrieval"
+   },
+   {
+    "name": "Parietal operculum",
+    "note": "secondary somatosensory cortex, vestibular cortex"
+   }
+  ],
+  "relations": {
+   "anterior": "central sulcus and frontal lobe",
+   "posterior": "parieto-occipital sulcus and occipital lobe",
+   "inferior": "lateral sulcus and temporal lobe"
+  }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-dcml",
+   "pathway-visual"
+  ]
+ },
+ "function": "Somatic sensation and its interpretation, body schema, spatial attention and awareness, visuomotor integration, praxis, and the dominant-side skills of reading, writing and calculation.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca-superior-division",
+   "artery-mca-inferior-division",
+   "artery-aca",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-mca",
+   "territory-aca",
+   "territory-pca",
+   "territory-watershed"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 40,
+     "y": -45,
+     "z": 45
+    },
+    "label": "superior and inferior parietal lobules behind the postcentral gyrus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 5,
+     "y": -60,
+     "z": 40
+    },
+    "label": "precuneus on the medial surface in front of the parieto-occipital sulcus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -50,
+     "z": 45
+    },
+    "label": "parietal lobes above the Sylvian fissure"
+   }
+  ],
+  "normalAppearance": "Identified behind the central sulcus and in front of the parieto-occipital sulcus on sagittal images; the posterior watershed lies at its junction with the occipital and temporal lobes. Posterior cortical atrophy shows disproportionate parietal and occipital volume loss.",
+  "pathology": [
+   {
+    "pathology": "Inferior division MCA infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the supramarginal and angular gyri and the posterior temporal lobe.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Posterior cortical atrophy (Alzheimer variant)",
+    "modality": "MRI",
+    "finding": "Biparietal and occipital atrophy with Bálint or Gerstmann features and relative hippocampal sparing.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Parietal tumor",
+    "modality": "MRI",
+    "finding": "Mass with edema causing cortical sensory loss, apraxia or neglect; a lower quadrantanopia if the radiation is involved.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "DWI and FLAIR; T1 volumetry for atrophy"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Cortical sensory loss: astereognosis, agraphesthesia, impaired two-point discrimination, extinction",
+    "side": "contralateral",
+    "mechanism": "Postcentral gyrus and superior parietal lobule"
+   },
+   {
+    "deficit": "Hemispatial neglect and anosognosia (non-dominant)",
+    "side": "contralateral",
+    "mechanism": "Right inferior parietal lobule"
+   },
+   {
+    "deficit": "Gerstmann syndrome: acalculia, agraphia, finger agnosia, right-left disorientation (dominant)",
+    "side": "n/a",
+    "mechanism": "Left angular gyrus"
+   },
+   {
+    "deficit": "Ideomotor apraxia (dominant)",
+    "side": "bilateral",
+    "mechanism": "Left supramarginal gyrus and its connections"
+   },
+   {
+    "deficit": "Inferior homonymous quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Superior fibers of the optic radiation in the parietal white matter"
+   },
+   {
+    "deficit": "Optic ataxia and simultanagnosia (bilateral)",
+    "side": "bilateral",
+    "mechanism": "Superior parietal lobules (Bálint syndrome)"
+   },
+   {
+    "deficit": "Constructional apraxia and dressing apraxia",
+    "side": "contralateral",
+    "mechanism": "Right parietal lobe"
+   }
+  ],
+  "examination": [
+   "Stereognosis, graphesthesia, two-point discrimination, double simultaneous stimulation",
+   "Line bisection, clock drawing, copying a cube",
+   "Pantomime tool use and imitate gestures",
+   "Finger naming, calculation, writing, right-left",
+   "Visual fields by quadrant"
+  ],
+  "syndromes": [
+   "syn-mca-inferior-division",
+   "syn-hemineglect",
+   "syn-gerstmann",
+   "syn-balint"
+  ],
+  "pearls": [
+   "Sensory loss you can only find with a coin in the palm or a number drawn on the skin is cortical (parietal)",
+   "The patient who denies a paralyzed left arm has a right parietal lesion"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    286,
+    287
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    54
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    36,
+    38
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "parietal"
+ ],
+ "status": "draft",
+ "latin": "Lobus parietalis",
+ "subsystem": "lobe-parietal"
+}

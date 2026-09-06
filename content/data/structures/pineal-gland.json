@@ -1,0 +1,155 @@
+{
+ "kind": "structure",
+ "id": "pineal-gland",
+ "name": "Pineal gland",
+ "synonyms": [
+  "epiphysis cerebri"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "pineal-gland"
+ ],
+ "summary": "A small midline endocrine gland attached to the posterior wall of the third ventricle by a stalk containing the habenular and posterior commissures, lying in the quadrigeminal cistern above the superior colliculi and below the splenium. It secretes melatonin in the dark under sympathetic control from the superior cervical ganglion, calcifies with age (a useful midline marker on CT), and is the site of germ cell and pineal parenchymal tumors that compress the dorsal midbrain and the aqueduct.",
+ "anatomy": {
+  "location": "Midline in the quadrigeminal cistern between the splenium of the corpus callosum above and the superior colliculi below, behind the third ventricle, attached by the pineal stalk whose laminae contain the habenular and posterior commissures; the internal cerebral veins pass above it to the vein of Galen.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "ganglion-superior-cervical",
+    "via": "nervi conarii",
+    "note": "sympathetic"
+   }
+  ],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Melatonin synthesis and circadian and seasonal signaling; the calcified pineal is an anatomical midline landmark.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -33,
+     "z": 3
+    },
+    "label": "pineal gland below the splenium and above the tectum"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -33,
+     "z": 3
+    },
+    "label": "midline calcified gland in the quadrigeminal cistern"
+   }
+  ],
+  "normalAppearance": "Calcified in most adults on CT (a shift indicates mass effect); on MRI it is a small enhancing midline structure with frequent benign cysts under 1 cm. A pineal cyst with a thin wall and no nodularity is normal.",
+  "pathology": [
+   {
+    "pathology": "Germinoma",
+    "modality": "MRI",
+    "finding": "Solid, homogeneously enhancing pineal mass engulfing the calcified gland in an adolescent male, with hydrocephalus and Parinaud syndrome; often a synchronous suprasellar lesion.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Pineoblastoma / pineocytoma",
+    "modality": "MRI",
+    "finding": "Parenchymal tumor expanding the gland with exploded peripheral calcification.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Pineal cyst",
+    "modality": "MRI",
+    "finding": "Thin-walled CSF-like cyst, sometimes with rim enhancement; usually incidental.",
+    "sequence": "T2",
+    "pitfalls": "Large cysts can compress the tectum, but most need no follow-up"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal T1+Gd; CT for calcification pattern; tumor markers (AFP, beta-hCG) in CSF and serum"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Parinaud syndrome: up-gaze palsy, light-near dissociation, lid retraction, convergence-retraction nystagmus",
+    "side": "bilateral",
+    "mechanism": "Compression of the posterior commissure and pretectum"
+   },
+   {
+    "deficit": "Obstructive hydrocephalus",
+    "side": "bilateral",
+    "mechanism": "Compression of the aqueduct"
+   },
+   {
+    "deficit": "Precocious puberty in boys",
+    "side": "n/a",
+    "mechanism": "Beta-hCG secretion by germ cell tumors"
+   }
+  ],
+  "examination": [
+   "Up-gaze, pupillary light and near reactions, lid position",
+   "Papilledema",
+   "Pubertal staging in children"
+  ],
+  "syndromes": [
+   "syn-parinaud-dorsal-midbrain",
+   "syn-hydrocephalus"
+  ],
+  "pearls": [
+   "A teenage boy with headache and inability to look up has a pineal tumor until proven otherwise",
+   "A displaced pineal calcification on CT is a quick clue to mass effect"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    253,
+    254
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    331,
+    331
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    255,
+    258
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    98,
+    100
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Glandula pinealis",
+ "subsystem": "epithalamus"
+}

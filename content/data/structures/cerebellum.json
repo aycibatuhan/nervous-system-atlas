@@ -1,0 +1,209 @@
+{
+ "kind": "structure",
+ "id": "cerebellum",
+ "name": "Cerebellum",
+ "synonyms": [],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-hemisphere-l",
+  "cerebellar-hemisphere-r",
+  "cerebellar-white-matter-l",
+  "cerebellar-white-matter-r",
+  "bp3d-cerebellum"
+ ],
+ "summary": "The cerebellum occupies the posterior cranial fossa beneath the tentorium and behind the pons and medulla, attached to the brainstem by three peduncles. It does not initiate movement but calibrates it: it compares intended with actual movement using proprioceptive, vestibular and cortical inputs and corrects timing, force and coordination through the deep nuclei and their projections to the thalamus and brainstem. Because its outflow crosses in the midbrain and the corticospinal tract crosses again in the medulla, each cerebellar hemisphere controls the limbs on its own side, so cerebellar signs are ipsilateral. Midline (vermis) disease affects gait, trunk and eye movements; lateral disease affects limb coordination.",
+ "anatomy": {
+  "location": "Posterior cranial fossa below the tentorium cerebelli, separated from the occipital lobes by it; ventrally it forms the roof of the fourth ventricle and is connected to the medulla, pons and midbrain by the inferior, middle and superior cerebellar peduncles.",
+  "subdivisions": [
+   {
+    "name": "Anterior lobe",
+    "note": "in front of the primary fissure; spinocerebellar input, limb and trunk tone"
+   },
+   {
+    "name": "Posterior lobe",
+    "note": "behind the primary fissure, the bulk of the hemispheres; cortical input, skilled movement and cognition"
+   },
+   {
+    "name": "Flocculonodular lobe",
+    "note": "the oldest part; vestibular input, balance and eye movements"
+   },
+   {
+    "name": "Vermis and hemispheres",
+    "note": "medial (vermis and paravermis) for axial control, lateral hemispheres for limb planning"
+   },
+   {
+    "name": "Deep nuclei",
+    "note": "fastigial, interposed (globose and emboliform) and dentate: the sole output"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "Coordination, timing and scaling of voluntary movement; maintenance of posture, gait and muscle tone; control of eye movements; motor learning; and a contribution to language, executive and affective processing (cerebellar cognitive affective syndrome).",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-aica",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-sca",
+   "territory-aica",
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -30
+    },
+    "label": "cerebellar hemispheres and vermis behind the fourth ventricle"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -30
+    },
+    "label": "vermis with its lobules and the fourth ventricle in front"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -30
+    },
+    "label": "hemispheres, vermis and the tonsils below"
+   }
+  ],
+  "normalAppearance": "On T1 the folia give the cerebellum a finely striped appearance; the dentate nuclei are visible as wavy dark lines within the hemispheric white matter on T2/SWI. The vermis is best assessed on midline sagittal images and the tonsils on sagittal and coronal images.",
+  "pathology": [
+   {
+    "pathology": "Cerebellar infarct",
+    "modality": "MRI",
+    "finding": "Wedge-shaped restricted diffusion in a PICA, AICA or SCA territory; large infarcts swell over 2–4 days and compress the fourth ventricle and brainstem.",
+    "sequence": "DWI",
+    "timing": "Peak swelling day 2–4"
+   },
+   {
+    "pathology": "Cerebellar hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense hematoma in the hemisphere (hypertensive) with early fourth ventricular compression and hydrocephalus; urgent surgical candidate if over 3 cm.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Cerebellar atrophy",
+    "modality": "MRI",
+    "finding": "Widened folia and shrunken vermis in alcohol, phenytoin, paraneoplastic and hereditary degenerations; vermis-predominant in alcohol.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Medulloblastoma / pilocytic astrocytoma (children)",
+    "modality": "MRI",
+    "finding": "Midline fourth ventricular mass (medulloblastoma) or cystic hemispheric mass with an enhancing nodule (pilocytic astrocytoma) with obstructive hydrocephalus.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "DWI and CT for acute presentations; sagittal T1 for atrophy and tonsillar position"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia, dysmetria, intention tremor, dysdiadochokinesia",
+    "side": "ipsilateral",
+    "mechanism": "Lateral hemisphere and dentate nucleus"
+   },
+   {
+    "deficit": "Truncal and gait ataxia with a wide-based gait",
+    "side": "bilateral",
+    "mechanism": "Vermis and fastigial nuclei"
+   },
+   {
+    "deficit": "Nystagmus, saccadic dysmetria, impaired smooth pursuit",
+    "side": "n/a",
+    "mechanism": "Flocculonodular lobe and vermis"
+   },
+   {
+    "deficit": "Scanning dysarthria",
+    "side": "n/a",
+    "mechanism": "Paravermal region"
+   },
+   {
+    "deficit": "Hypotonia and pendular reflexes",
+    "side": "ipsilateral",
+    "mechanism": "Loss of cerebellar facilitation of tone"
+   },
+   {
+    "deficit": "Headache, vomiting and drowsiness after a cerebellar stroke",
+    "side": "n/a",
+    "mechanism": "Swelling compressing the fourth ventricle and brainstem"
+   }
+  ],
+  "examination": [
+   "Finger-nose, heel-shin, rapid alternating movements on each side",
+   "Gait, tandem gait and Romberg (cerebellar patients sway with eyes open too)",
+   "Eye movements: nystagmus, saccadic pursuit, overshooting saccades",
+   "Speech: ask for 'British constitution' or count rapidly",
+   "Tone and reflexes"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-cerebellar-vermian-midline",
+   "syn-pica-cerebellar-infarct",
+   "syn-sca-infarct",
+   "syn-tonsillar-herniation"
+  ],
+  "pearls": [
+   "Cerebellar signs are on the same side as the lesion",
+   "Gait ataxia with normal limb testing is a midline (vermis) lesion, as in alcohol or a medulloblastoma",
+   "A cerebellar stroke can look like labyrinthitis on day one and become a neurosurgical emergency on day three"
+  ]
+ },
+ "pitfalls": [
+  "Acute vertigo with inability to stand is a cerebellar stroke until proven otherwise, even if the head impulse test is not clearly central",
+  "Sensory ataxia (posterior columns) mimics cerebellar ataxia but worsens dramatically with eyes closed"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    110,
+    112
+   ]
+  }
+ ],
+ "tags": [
+  "cerebellum"
+ ],
+ "status": "draft",
+ "latin": "Cerebellum",
+ "subsystem": "cerebellum"
+}

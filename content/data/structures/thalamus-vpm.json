@@ -1,0 +1,155 @@
+{
+ "kind": "structure",
+ "id": "thalamus-vpm",
+ "name": "Ventral posteromedial nucleus (VPM)",
+ "synonyms": [],
+ "system": "diencephalon",
+ "meshIds": [
+  "thalamus-ventral-posterior-ventrolateral-l",
+  "thalamus-ventral-posterior-ventrolateral-r"
+ ],
+ "summary": "The somatosensory and gustatory relay for the face. The trigeminal lemniscus (crossed fibers from the principal sensory and spinal trigeminal nuclei) and the uncrossed taste fibers from the solitary nucleus end here, and projections go to the lower part of the postcentral gyrus and to the insular and opercular taste cortex. Together with VPL it is the target of the thalamogeniculate arteries.",
+ "anatomy": {
+  "location": "Medial to the VPL in the ventral tier of the lateral thalamus, adjoining the centromedian nucleus of the internal medullary lamina; its parvocellular part carries taste.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "trigeminal-nuclei",
+    "via": "trigeminal lemniscus",
+    "note": "crossed"
+   },
+   {
+    "from": "nucleus-solitarius",
+    "via": "central tegmental tract",
+    "note": "taste"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "gyrus-postcentral (face area) and insula"
+   }
+  ],
+  "pathways": [
+   "pathway-trigeminothalamic",
+   "pathway-gustatory"
+  ]
+ },
+ "function": "Relay of touch, pain, temperature and proprioception from the contralateral face and of taste (mainly ipsilateral) to the cortex.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 10,
+     "y": -20,
+     "z": 4
+    },
+    "label": "ventral posterior thalamus medial to VPL"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 10,
+     "y": -20,
+     "z": 4
+    },
+    "label": "VPM medial to VPL, lateral to the centromedian nucleus"
+   }
+  ],
+  "normalAppearance": "Not separately resolved on routine MRI; the MIAL ventral posterior group mesh covers it. Lesions are small posteromedial thalamic infarcts.",
+  "pathology": [
+   {
+    "pathology": "Thalamic infarct with facial sensory loss",
+    "modality": "MRI",
+    "finding": "Small restriction in the ventral posterior thalamus giving contralateral facial numbness with or without body involvement.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral facial numbness (all modalities)",
+    "side": "contralateral",
+    "mechanism": "Trigeminal lemniscus relay"
+   },
+   {
+    "deficit": "Taste disturbance",
+    "side": "ipsilateral",
+    "mechanism": "Gustatory relay from the solitary nucleus"
+   },
+   {
+    "deficit": "Facial component of the thalamic pain syndrome",
+    "side": "contralateral",
+    "mechanism": "Deafferentation"
+   }
+  ],
+  "examination": [
+   "Facial light touch, pin-prick and temperature in all three divisions on both sides",
+   "Taste on each side of the tongue"
+  ],
+  "syndromes": [
+   "syn-lacunar-pure-sensory",
+   "syn-thalamic-dejerine-roussy"
+  ],
+  "pearls": [
+   "Facial sensory loss with body sensory loss on the same side and no brainstem signs points above the pons: thalamus or cortex",
+   "Unlike brainstem lesions, thalamic lesions never give crossed face-body findings",
+   "Taste is relayed mostly uncrossed, so a unilateral thalamic lesion rarely produces a noticeable taste complaint"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    367
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    334,
+    335
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    37,
+    38
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    119,
+    119
+   ]
+  }
+ ],
+ "tags": [
+  "diencephalon"
+ ],
+ "status": "draft",
+ "latin": "Nucleus ventralis posteromedialis thalami",
+ "subsystem": "thalamus",
+ "parent": "thalamus"
+}

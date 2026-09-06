@@ -1,0 +1,185 @@
+{
+ "kind": "structure",
+ "id": "cortex-prefrontal",
+ "name": "Prefrontal cortex",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-middle-frontal-l",
+  "gyrus-middle-frontal-r",
+  "frontal-pole-l",
+  "frontal-pole-r",
+  "cortex-orbitofrontal-l",
+  "cortex-orbitofrontal-r",
+  "cortex-frontal-medial-l",
+  "cortex-frontal-medial-r"
+ ],
+ "summary": "The large anterior part of the frontal lobe in front of the premotor areas, comprising dorsolateral, orbitofrontal (ventral) and medial regions. It is the seat of executive function: planning, working memory, cognitive flexibility, judgement, inhibition of inappropriate responses, and the motivation and social calibration of behavior. Its three regions fail in three recognizable ways: the dorsolateral patient cannot plan or shift, the orbitofrontal patient is disinhibited and tactless, and the medial patient is apathetic and mute.",
+ "anatomy": {
+  "location": "Frontal pole, superior and middle frontal gyri anterior to the premotor cortex, the orbital surface above the orbital roofs, and the medial surface in front of the cingulate gyrus.",
+  "subdivisions": [
+   {
+    "name": "Dorsolateral prefrontal cortex",
+    "note": "working memory, planning, set shifting; connected with the mediodorsal thalamus and dorsal striatum"
+   },
+   {
+    "name": "Orbitofrontal cortex",
+    "note": "reward valuation, impulse control, social behavior; connected with the amygdala and olfactory cortex"
+   },
+   {
+    "name": "Ventromedial and medial prefrontal cortex",
+    "note": "motivation, emotional regulation, decision making"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "thalamus-mediodorsal"
+   },
+   {
+    "from": "amygdala"
+   },
+   {
+    "from": "parietal and temporal association cortex"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "caudate-nucleus",
+    "note": "prefrontal loop"
+   },
+   {
+    "to": "cortex-premotor-sma"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Executive control of thought and action, working memory, emotional and social regulation, and personality.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 30,
+     "y": 45,
+     "z": 25
+    },
+    "label": "middle frontal gyrus and frontal pole"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 10,
+     "y": 45,
+     "z": -10
+    },
+    "label": "orbitofrontal cortex over the orbital roof"
+   }
+  ],
+  "normalAppearance": "The frontal poles and orbital surfaces are prone to susceptibility artifact near the sinuses on MRI and to contusion in trauma; disproportionate frontal atrophy points to frontotemporal dementia.",
+  "pathology": [
+   {
+    "pathology": "Frontotemporal dementia (behavioral variant)",
+    "modality": "MRI",
+    "finding": "Frontal and anterior temporal atrophy, often asymmetric, with hypometabolism on FDG-PET.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Orbitofrontal contusion",
+    "modality": "CT",
+    "finding": "Hemorrhagic contusions of the gyri recti and orbital gyri after a fall on the occiput (contrecoup).",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Butterfly glioma",
+    "modality": "MRI",
+    "finding": "Glioblastoma crossing the genu of the corpus callosum to involve both frontal lobes.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "MRI with T1 and FLAIR; FDG-PET for dementia"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Executive dysfunction: poor planning, perseveration, impaired set shifting",
+    "side": "bilateral",
+    "mechanism": "Dorsolateral prefrontal cortex"
+   },
+   {
+    "deficit": "Disinhibition, impulsivity, poor judgement",
+    "side": "bilateral",
+    "mechanism": "Orbitofrontal cortex"
+   },
+   {
+    "deficit": "Apathy, abulia, akinetic mutism",
+    "side": "bilateral",
+    "mechanism": "Medial prefrontal and anterior cingulate cortex"
+   },
+   {
+    "deficit": "Utilization behavior and environmental dependency",
+    "side": "bilateral",
+    "mechanism": "Loss of prefrontal inhibition over parietal-driven actions"
+   }
+  ],
+  "examination": [
+   "Frontal assessment battery: fluency, similarities, Luria sequence, conflicting instructions, go/no-go, grasp",
+   "Trail-making or clock drawing",
+   "Collateral history of personality change",
+   "Observe for utilization and imitation behavior"
+  ],
+  "syndromes": [
+   "syn-aca-infarct"
+  ],
+  "pearls": [
+   "Bedside cognition can be normal in devastating orbitofrontal disease; ask the family",
+   "Bilateral medial frontal lesions produce a patient who is awake but does not speak or move (akinetic mutism)"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    289
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    54
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    235,
+    237
+   ]
+  }
+ ],
+ "tags": [
+  "cortex",
+  "frontal"
+ ],
+ "status": "draft",
+ "latin": "Cortex praefrontalis",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}
