@@ -54,8 +54,10 @@ await shot('01-home');
 const cordVisible = await page.locator('label.cord-mri').isVisible().catch(() => false);
 check(!cordVisible, 'the cord MRI toggle is hidden');
 
-// ---- 3. a Harvard-Oxford gyrus: content opens, no mesh
-for (const [id, label] of [['gyrus-precentral', '02-gyrus-precentral'], ['locus-coeruleus', '03-locus-coeruleus']]) {
+// ---- 3. a Harvard-Oxford gyrus and a Brainstem Navigator nucleus: content opens, no mesh.
+// NOT the locus coeruleus: the public edition ships an LC of its own (the CC BY 4.0 Dahl meta mask,
+// `locus-coeruleus-meta-l/-r`), so that entry does have a mesh here.
+for (const [id, label] of [['gyrus-precentral', '02-gyrus-precentral'], ['nucleus-parabrachial-lateral', '03-nucleus-parabrachial-lateral']]) {
   await page.goto(`${base}/#/structure/${id}`);
   await ready();
   await page.waitForTimeout(800);

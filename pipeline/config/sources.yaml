@@ -1,8 +1,9 @@
 # Every external dataset the pipeline uses. `atlas-download` streams each file into raw/<id>/,
 # verifies/records sha256 in sources.lock.yaml, and copies the licence text alongside.
-# groups: core (always), bp3d, tracts, vessels, warp, zanatomy, spine, manual
+# groups: core (always), bp3d, tracts, vessels, warp, zanatomy, spine, public-parcellations, manual
 templateflow_base: &tf https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/
 templateflow_nlin6: &tf6 https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/
+templateflow_sym: &tfsym https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/
 
 licenses:
   MNI:
@@ -162,6 +163,39 @@ sources:
         dest: VENAT_PartialVolume.nii.gz
       - url: https://ndownloader.figshare.com/files/13267301
         dest: VENAT_diameter.nii.gz
+  # ---------------- permissively licensed parcellations (public edition cortex) ----------------
+  # Replacements for the two non-commercial parcellations. CerebrA is the Mindboggle-101 DKT labelling
+  # non-linearly registered and hand-corrected onto MNI-ICBM152 2009c *Symmetric*; the G-Node dataset page
+  # states "License Creative Commons CC0 1.0 Public Domain Dedication". The TemplateFlow mirror of the
+  # symmetric template ships the MNI/McGill LICENSE ("Permission to use, copy, modify, and distribute this
+  # software and its documentation for any purpose and without fee is hereby granted..."), which is what
+  # LICENSE.txt below records for the T1w that comes with it.
+  - id: cerebra
+    name: "CerebrA: Mindboggle-101 DKT labels registered and hand-corrected on MNI-ICBM152 2009c Symmetric"
+    group: public-parcellations
+    license: CC0-1.0
+    citation: Manera AL, Dadar M, Fonov V, Collins DL. CerebrA, registration and manual label correction of
+      Mindboggle-101 atlas for MNI-ICBM152 template. Sci Data 2020;7:237. doi:10.1038/s41597-020-0557-9
+      (dataset G-Node doi:10.12751/g-node.be5e62, released under CC0 1.0 Public Domain Dedication; files taken
+      from the TemplateFlow mirror tpl-MNI152NLin2009cSym, whose template carries the MNI/McGill licence).
+    files:
+      - url: !join [*tfsym, tpl-MNI152NLin2009cSym_res-1_atlas-CerebrA_dseg.nii.gz]
+      - url: !join [*tfsym, tpl-MNI152NLin2009cSym_atlas-CerebA_dseg.tsv]
+      - url: !join [*tfsym, tpl-MNI152NLin2009cSym_res-1_T1w.nii.gz]
+      - url: !join [*tfsym, LICENSE]
+        dest: LICENSE.txt
+  # DKT31 in our own asymmetric space, used to measure how far the symmetric CerebrA labels sit from this grid.
+  # Mindboggle-101 states "all data are licensed under a Creative Commons License", linking CC BY 4.0.
+  - id: dkt31_2009casym
+    name: "Mindboggle DKT31 cortical parcellation resampled to MNI152NLin2009cAsym (2 mm)"
+    group: public-parcellations
+    license: CC-BY-4.0
+    citation: Klein A, Tourville J. 101 labeled brain images and a consistent human cortical labeling protocol.
+      Front Neurosci 2012;6:171 (Mindboggle-101 / OASIS-TRT-20, CC BY 4.0); DKT31 labels carried into
+      MNI152NLin2009cAsym by TemplateFlow (tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg).
+    files:
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg.nii.gz]
+      - url: !join [*tf, tpl-MNI152NLin2009cAsym_from-OASISTRT20_mode-image_xfm.mat]
   # ---------------- BodyParts3D ----------------
   - id: bodyparts3d
     name: "BodyParts3D anatomical model database"
@@ -205,6 +239,29 @@ sources:
     files:
       - url: https://github.com/spinalcordtoolbox/PAM50/releases/download/r20250730/PAM50-r20250730.zip
         unzip: true
+  # ---------------- open locus coeruleus mask (public edition) ----------------
+  # The Brainstem Navigator LC label may not be redistributed, so the public edition uses the openly
+  # licensed Dahl et al. LC "meta mask" instead: a consensus volume of interest aggregated across six
+  # previously published LC maps, shared in OSF project sf2ky under that project's CC BY 4.0 licence
+  # (verified live: https://api.osf.io/v2/nodes/sf2ky/?embed=license reports "CC-By Attribution 4.0
+  # International"). The masks are 364x218x364 at 0.5 mm on the FSL MNI152 box (affine
+  # [[-0.5,0,0,90],[0,0.5,0,-126],[0,0,0.5,-72]]) -- the reference brain shipped beside them is FSL's
+  # avg152T1 -- so they are treated "nlin6-identity" like every other FSL-box atlas here.
+  - id: lc_metamask
+    name: "Locus coeruleus meta mask (Dahl et al.)"
+    group: brainstem-open
+    license: CC-BY-4.0
+    citation: "Dahl MJ, Mather M, Werkle-Bergner M, Kennedy BL, Guzman S, Hurth K, Miller CA, Qiao Y, Shi Y,
+      Chui HC, Ringman JM. Locus coeruleus integrity is related to tau burden and memory loss in
+      autosomal-dominant Alzheimer's disease. Neurobiology of Aging 2022;112:39-54.
+      doi:10.1016/j.neurobiolaging.2021.11.006 (locus coeruleus meta mask, OSF https://osf.io/sf2ky/, CC BY 4.0)."
+    files:
+      - url: https://osf.io/download/k6zyr/
+        dest: LCmetaMask_MNI05_s01f_plus50.nii.gz
+      - url: https://osf.io/download/tjwbh/
+        dest: LCmetaMask_left_MNI05_s01f_plus50.nii.gz
+      - url: https://osf.io/download/zcrxe/
+        dest: LCmetaMask_right_MNI05_s01f_plus50.nii.gz
   - id: brainstem_navigator
     name: "Brainstem Navigator v1.0 (in vivo 7 T brainstem nuclei)"
     group: manual

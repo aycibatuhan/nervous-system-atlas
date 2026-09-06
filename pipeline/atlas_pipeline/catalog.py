@@ -90,6 +90,8 @@ class AtlasSpec:
     threshold: float | None = None
     entries: dict[int, MeshSpec] = field(default_factory=dict)   # atlas label -> mesh
     files: dict[str, MeshSpec] = field(default_factory=dict)     # per-file binary masks (HCP1065)
+    alignment: str | None = None   # overrides the alignment string recorded per mesh (see atlas_meshes)
+    edition: str | None = None     # "public" -> the mesh exists only in the public edition (see manifest.py)
 
 
 def LR(base_id: str, name: str, system: str, lab_l: int, lab_r: int, **kw) -> dict[int, MeshSpec]:
@@ -346,6 +348,76 @@ def hcp_entries() -> dict[str, MeshSpec]:
     return e
 
 
+# ================================================================ CerebrA / DKT31 cortex (PUBLIC edition only)
+# Harvard-Oxford is FSL non-commercial, so the public edition cannot ship the 48 HO gyri. CerebrA
+# (Manera et al., Sci Data 2020; G-Node doi:10.12751/g-node.be5e62, CC0 1.0) is the Mindboggle-101 DKT
+# labelling non-linearly registered and hand-corrected onto MNI-ICBM152 2009c, and is free to redistribute.
+# It is defined on the *symmetric* 2009c template on the same 193x229x193 1 mm grid as ours; atlas_meshes
+# warps it onto our asymmetric grid when antspyx is installed and otherwise takes it as-is (see
+# atlas_meshes.cerebra_source), which is what `alignment` on each record then says.
+#
+# Only the 62 cortical parcels are meshed here: CerebrA's subcortical and cerebellar labels are already
+# covered, in our own space, by the FreeSurfer aseg meshes (MNI licence, so they ship in both editions).
+#
+# label ints = the `label` column of raw/cerebra/tpl-MNI152NLin2009cSym_atlas-CerebA_dseg.tsv; the tsv's
+# "mindboggle mapping" column is the FreeSurfer aparc.DKTatlas id of the right-hemisphere region.
+# structure id = the content entry this parcel belongs to, so both editions keep every mesh described
+# (the same entries the HO gyri point at; see pipeline/config/ho_to_dkt.yaml for the full mapping).
+DKT31 = [
+    # key, name, lobe (LOBE_COLOUR), content structure id, CerebrA label L, CerebrA label R
+    ("caudal-anterior-cingulate", "Caudal anterior cingulate cortex", "limbic", "gyrus-cingulate-anterior", 81, 30),
+    ("caudal-middle-frontal", "Caudal middle frontal gyrus", "frontal", "gyrus-middle-frontal", 93, 42),
+    ("cuneus", "Cuneus", "occipital", "cuneus", 94, 43),
+    ("entorhinal", "Entorhinal cortex", "limbic", "gyrus-parahippocampal-anterior", 87, 36),
+    ("fusiform", "Fusiform gyrus", "temporal", "cortex-temporal-fusiform-posterior", 75, 24),
+    ("inferior-parietal", "Inferior parietal lobule (angular gyrus)", "parietal", "gyrus-angular", 61, 10),
+    ("inferior-temporal", "Inferior temporal gyrus", "temporal", "gyrus-inferior-temporal-posterior", 54, 3),
+    ("isthmus-cingulate", "Isthmus of the cingulate gyrus", "limbic", "gyrus-cingulate-posterior", 84, 33),
+    ("lateral-occipital", "Lateral occipital cortex", "occipital", "cortex-lateral-occipital-superior", 85, 34),
+    ("lateral-orbitofrontal", "Lateral orbitofrontal cortex", "frontal", "cortex-orbitofrontal", 58, 7),
+    ("lingual", "Lingual gyrus", "occipital", "gyrus-lingual", 63, 12),
+    ("medial-orbitofrontal", "Medial orbitofrontal cortex", "frontal", "cortex-frontal-medial", 66, 15),
+    ("middle-temporal", "Middle temporal gyrus", "temporal", "gyrus-middle-temporal-posterior", 79, 28),
+    ("paracentral", "Paracentral lobule", "frontal", "cortex-supplementary-motor", 67, 16),
+    ("parahippocampal", "Parahippocampal gyrus", "limbic", "gyrus-parahippocampal-posterior", 69, 18),
+    ("pars-opercularis", "Inferior frontal gyrus, pars opercularis", "frontal", "gyrus-inferior-frontal-opercularis", 83, 32),
+    ("pars-orbitalis", "Inferior frontal gyrus, pars orbitalis", "frontal", "cortex-orbitofrontal", 95, 44),
+    ("pars-triangularis", "Inferior frontal gyrus, pars triangularis", "frontal", "gyrus-inferior-frontal-triangularis", 73, 22),
+    ("pericalcarine", "Pericalcarine cortex", "occipital", "cortex-intracalcarine", 57, 6),
+    ("postcentral", "Postcentral gyrus", "parietal", "gyrus-postcentral", 64, 13),
+    ("posterior-cingulate", "Posterior cingulate cortex", "limbic", "gyrus-cingulate-posterior", 98, 47),
+    ("precentral", "Precentral gyrus", "frontal", "gyrus-precentral", 86, 35),
+    ("precuneus", "Precuneus", "parietal", "precuneus", 82, 31),
+    ("rostral-anterior-cingulate", "Rostral anterior cingulate cortex", "limbic", "gyrus-cingulate-anterior", 59, 8),
+    ("rostral-middle-frontal", "Rostral middle frontal gyrus", "frontal", "gyrus-middle-frontal", 52, 1),
+    ("superior-frontal", "Superior frontal gyrus", "frontal", "gyrus-superior-frontal", 89, 38),
+    ("superior-parietal", "Superior parietal lobule", "parietal", "lobule-superior-parietal", 60, 9),
+    ("superior-temporal", "Superior temporal gyrus", "temporal", "gyrus-superior-temporal-posterior", 96, 45),
+    ("supramarginal", "Supramarginal gyrus", "parietal", "gyrus-supramarginal", 102, 51),
+    ("transverse-temporal", "Transverse temporal gyrus (Heschl)", "temporal", "gyrus-heschl", 65, 14),
+    ("insula", "Insular cortex", "insula", "insula", 74, 23),
+]
+CEREBRA_FILE = "cerebra/tpl-MNI152NLin2009cSym_res-1_atlas-CerebrA_dseg.nii.gz"
+
+
+def cerebra_entries() -> dict[int, MeshSpec]:
+    """CerebrA label -> mesh. Not LR(), because the content structure id is not the mesh id here."""
+    e = {}
+    for key, name, lobe, sid, lab_l, lab_r in DKT31:
+        for lab, side, sfx in ((lab_l, "left", "-l"), (lab_r, "right", "-r")):
+            e[lab] = MeshSpec(id=f"dkt-{key}{sfx}", name=f"{name} ({'L' if side == 'left' else 'R'})",
+                              system="cerebrum", subsystem=f"lobe-{lobe}", side=side, visible=True,
+                              budget="cortical", colour=jitter(LOBE_COLOUR[lobe], f"dkt-{key}"),
+                              opacity=1.0, structure_id=sid)
+    return e
+
+
+def cerebra_atlas(file: str | None = None, alignment: str = "nlin2009csym-identity") -> AtlasSpec:
+    """The CerebrA cortex as an atlas spec. `file` overrides the raw path (used for the warped copy)."""
+    return AtlasSpec("cerebra", file or CEREBRA_FILE, "mni2009", priority=2, alignment=alignment,
+                     edition="public", entries=cerebra_entries())
+
+
 # ---------------------------------------------------------------- atlases in build order
 def atlases() -> list[AtlasSpec]:
     return [
@@ -393,4 +465,28 @@ def venat_entries() -> dict[str, MeshSpec]:
     e["sinus-straight-venat"] = MeshSpec("sinus-straight-venat", "Straight sinus (VENAT atlas)", "venous",
                                          subsystem="dural sinuses", side="midline", budget="medium",
                                          colour="#2A4480", structure_id="sinus-straight")
+    return e
+
+
+# ================================================================ locus coeruleus meta mask (PUBLIC edition only)
+# The Brainstem Navigator LC label may not be redistributed, so the public edition carries the openly
+# licensed Dahl et al. 2022 LC "meta mask" instead (source id `lc_metamask`, CC BY 4.0; OSF sf2ky).
+# It is a *consensus* volume of interest aggregated across six published LC maps, not a delineation of
+# one nucleus in one template, so it is deliberately a little larger than the LC itself -- the content
+# entry says so. Colour is the same #6E7FA0 the private LC uses, so the two editions look alike, and
+# the structure id is `locus-coeruleus` so both hang off the same content entry.
+# Built by atlas_pipeline.lc_metamask (`atlas-lc-metamask`).
+LC_METAMASK_COLOUR = "#6E7FA0"
+
+
+def lc_metamask_entries() -> dict[str, MeshSpec]:
+    """mesh id -> spec for the two sides of the open locus coeruleus meta mask."""
+    e: dict[str, MeshSpec] = {}
+    for side, sfx in (("left", "-l"), ("right", "-r")):
+        # NOT "locus-coeruleus-lc<side>": scripts/check-public.ts rejects any text containing an excluded
+        # mesh id, and "locus-coeruleus-lc-l" has the private edition's "locus-coeruleus-l" inside it.
+        mid = "locus-coeruleus-meta" + sfx
+        e[mid] = MeshSpec(id=mid, name=f"Locus coeruleus ({'L' if side == 'left' else 'R'})", system="brainstem",
+                          subsystem="pons", side=side, budget="tiny", colour=LC_METAMASK_COLOUR,
+                          visible=False, structure_id="locus-coeruleus")
     return e

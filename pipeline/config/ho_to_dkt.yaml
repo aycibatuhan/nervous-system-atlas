@@ -1,0 +1,253 @@
+# Harvard-Oxford gyrus -> CerebrA/DKT31 parcel mapping (public edition cortex).
+#
+# The private edition spotlights the 48 Harvard-Oxford gyri per side (FSL, non-commercial). The public
+# edition may not ship those, so it spotlights the CerebrA parcels instead (Manera et al. 2020, CC0) --
+# the Mindboggle DKT31 protocol, 31 cortical regions per side. The two parcellations do not agree
+# region-for-region: HO splits several gyri into anterior/posterior divisions that DKT keeps whole, and
+# DKT has regions (paracentral lobule, pars orbitalis, entorhinal cortex) that HO does not name at all.
+#
+# This file is the authored bridge. For every HO content entry it lists the DKT parcels that cover the
+# same cortex, with one line saying why. `scripts` in the pipeline append `dkt-<parcel>-l` / `-r` to that
+# entry's meshIds (the HO ids stay), so every gyrus entry still lights up a surface in both editions.
+#
+# `primary:` marks, for each DKT parcel, the single content entry its meshes carry as `structureId`
+# (catalog.DKT31 holds the same value). Each parcel appears as `primary` exactly once, and that entry
+# always lists the parcel below, so `0 manifest structures without content` holds in both editions.
+
+entries:
+  frontal-pole:
+    dkt: [superior-frontal, rostral-middle-frontal]
+    why: "DKT has no frontal pole; the polar cortex is split between the superior frontal gyrus and the rostral middle frontal gyrus."
+  insula:
+    dkt: [insula]
+    primary: [insula]
+    why: "Same region under both protocols."
+  gyrus-superior-frontal:
+    dkt: [superior-frontal]
+    primary: [superior-frontal]
+    why: "Direct equivalent; DKT superior frontal also carries the medial surface HO splits off as the juxtapositional lobule."
+  gyrus-middle-frontal:
+    dkt: [rostral-middle-frontal, caudal-middle-frontal]
+    primary: [rostral-middle-frontal, caudal-middle-frontal]
+    why: "DKT cuts the middle frontal gyrus into rostral and caudal halves at the level of the superior frontal sulcus."
+  gyrus-inferior-frontal-triangularis:
+    dkt: [pars-triangularis]
+    primary: [pars-triangularis]
+    why: "Same pars triangularis of the inferior frontal gyrus."
+  gyrus-inferior-frontal-opercularis:
+    dkt: [pars-opercularis]
+    primary: [pars-opercularis]
+    why: "Same pars opercularis of the inferior frontal gyrus."
+  gyrus-precentral:
+    dkt: [precentral]
+    primary: [precentral]
+    why: "Direct equivalent."
+  temporal-pole:
+    dkt: [superior-temporal, middle-temporal]
+    why: "DKT has no temporal pole; the polar cortex is absorbed into the anterior superior and middle temporal gyri."
+  gyrus-superior-temporal-anterior:
+    dkt: [superior-temporal]
+    why: "DKT keeps the superior temporal gyrus whole, so both HO divisions map to it."
+  gyrus-superior-temporal-posterior:
+    dkt: [superior-temporal]
+    primary: [superior-temporal]
+    why: "DKT superior temporal, whose posterior part carries the planum temporale HO splits off."
+  gyrus-middle-temporal-anterior:
+    dkt: [middle-temporal]
+    why: "DKT keeps the middle temporal gyrus whole."
+  gyrus-middle-temporal-posterior:
+    dkt: [middle-temporal]
+    primary: [middle-temporal]
+    why: "DKT middle temporal; CerebrA explicitly added its dorsal part back after the Mindboggle registration."
+  gyrus-middle-temporal-temporooccipital:
+    dkt: [middle-temporal]
+    why: "The temporo-occipital part of the middle temporal gyrus sits inside undivided DKT middle temporal."
+  gyrus-inferior-temporal-anterior:
+    dkt: [inferior-temporal]
+    why: "DKT keeps the inferior temporal gyrus whole."
+  gyrus-inferior-temporal-posterior:
+    dkt: [inferior-temporal]
+    primary: [inferior-temporal]
+    why: "DKT inferior temporal."
+  gyrus-inferior-temporal-temporooccipital:
+    dkt: [inferior-temporal]
+    why: "The temporo-occipital part lies within undivided DKT inferior temporal."
+  gyrus-postcentral:
+    dkt: [postcentral]
+    primary: [postcentral]
+    why: "Direct equivalent."
+  lobule-superior-parietal:
+    dkt: [superior-parietal]
+    primary: [superior-parietal]
+    why: "Direct equivalent; CerebrA improved its border with the precuneus and inferior parietal lobule."
+  gyrus-supramarginal-anterior:
+    dkt: [supramarginal]
+    why: "DKT keeps the supramarginal gyrus whole, so both HO divisions map to it."
+  gyrus-supramarginal-posterior:
+    dkt: [supramarginal]
+    why: "DKT supramarginal, undivided."
+  gyrus-supramarginal:
+    dkt: [supramarginal]
+    primary: [supramarginal]
+    why: "The umbrella supramarginal entry is the one DKT's undivided supramarginal parcel belongs to."
+  gyrus-angular:
+    dkt: [inferior-parietal]
+    primary: [inferior-parietal]
+    why: "DKT has no angular gyrus: it is the bulk of the inferior parietal lobule parcel."
+  cortex-lateral-occipital-superior:
+    dkt: [lateral-occipital]
+    primary: [lateral-occipital]
+    why: "DKT keeps the lateral occipital cortex whole, so both HO divisions map to it."
+  cortex-lateral-occipital-inferior:
+    dkt: [lateral-occipital]
+    why: "Same undivided DKT lateral occipital parcel."
+  cortex-intracalcarine:
+    dkt: [pericalcarine]
+    primary: [pericalcarine]
+    why: "The banks of the calcarine sulcus are DKT pericalcarine cortex (primary visual cortex)."
+  cortex-frontal-medial:
+    dkt: [medial-orbitofrontal]
+    primary: [medial-orbitofrontal]
+    why: "HO frontal medial cortex is the ventromedial prefrontal cortex, which DKT calls medial orbitofrontal."
+  cortex-supplementary-motor:
+    dkt: [superior-frontal, paracentral]
+    primary: [paracentral]
+    why: "The juxtapositional lobule (SMA) is the medial superior frontal gyrus in front of the paracentral lobule; DKT splits it between the two."
+  cortex-subcallosal:
+    dkt: [rostral-anterior-cingulate, medial-orbitofrontal]
+    why: "The subcallosal area is shared between the subgenual (rostral anterior) cingulate and the medial orbitofrontal cortex in DKT."
+  gyrus-paracingulate:
+    dkt: [rostral-anterior-cingulate, caudal-anterior-cingulate, superior-frontal]
+    why: "DKT has no paracingulate gyrus; the cortex above the cingulate sulcus goes to the anterior cingulate parcels and the medial superior frontal gyrus."
+  gyrus-cingulate-anterior:
+    dkt: [rostral-anterior-cingulate, caudal-anterior-cingulate]
+    primary: [rostral-anterior-cingulate, caudal-anterior-cingulate]
+    why: "DKT splits the anterior cingulate at the genu into rostral and caudal parcels."
+  gyrus-cingulate-posterior:
+    dkt: [posterior-cingulate, isthmus-cingulate]
+    primary: [posterior-cingulate, isthmus-cingulate]
+    why: "DKT splits the posterior cingulate from the retrosplenial isthmus that continues into the parahippocampal gyrus."
+  precuneus:
+    dkt: [precuneus]
+    primary: [precuneus]
+    why: "Direct equivalent."
+  cuneus:
+    dkt: [cuneus]
+    primary: [cuneus]
+    why: "Direct equivalent."
+  cortex-orbitofrontal:
+    dkt: [lateral-orbitofrontal, pars-orbitalis]
+    primary: [lateral-orbitofrontal, pars-orbitalis]
+    why: "HO frontal orbital cortex covers the lateral orbital surface plus the pars orbitalis DKT names separately."
+  gyrus-parahippocampal-anterior:
+    dkt: [entorhinal, parahippocampal]
+    primary: [entorhinal]
+    why: "The anterior parahippocampal gyrus is entorhinal cortex, which DKT labels in its own right."
+  gyrus-parahippocampal-posterior:
+    dkt: [parahippocampal]
+    primary: [parahippocampal]
+    why: "DKT parahippocampal is the posterior (post-entorhinal) parahippocampal gyrus."
+  gyrus-lingual:
+    dkt: [lingual]
+    primary: [lingual]
+    why: "Direct equivalent."
+  cortex-temporal-fusiform-anterior:
+    dkt: [fusiform]
+    why: "DKT keeps the fusiform gyrus whole, so all three HO fusiform divisions map to it."
+  cortex-temporal-fusiform-posterior:
+    dkt: [fusiform]
+    primary: [fusiform]
+    why: "DKT fusiform, undivided."
+  cortex-temporo-occipital-fusiform:
+    dkt: [fusiform]
+    why: "The temporo-occipital fusiform cortex lies within undivided DKT fusiform."
+  gyrus-occipital-fusiform:
+    dkt: [fusiform, lingual]
+    why: "The occipital fusiform gyrus straddles the DKT fusiform/lingual border at the collateral sulcus."
+  cortex-frontal-operculum:
+    dkt: [pars-opercularis, insula]
+    why: "DKT has no separate frontal operculum: it is shared between pars opercularis and the anterior insula."
+  cortex-central-operculum:
+    dkt: [precentral, postcentral]
+    why: "The central operculum is the inferior end of the pre- and postcentral gyri in DKT."
+  cortex-parietal-operculum:
+    dkt: [supramarginal]
+    why: "The parietal operculum (secondary somatosensory cortex) sits inside DKT supramarginal."
+  planum-polare:
+    dkt: [superior-temporal]
+    why: "The planum polare is the anterior supratemporal plane, inside DKT superior temporal."
+  gyrus-heschl:
+    dkt: [transverse-temporal]
+    primary: [transverse-temporal]
+    why: "Heschl's gyrus is the DKT transverse temporal gyrus (primary auditory cortex)."
+  planum-temporale:
+    dkt: [superior-temporal]
+    why: "The planum temporale is the posterior supratemporal plane, inside DKT superior temporal."
+  cortex-supracalcarine:
+    dkt: [cuneus, pericalcarine]
+    why: "The supracalcarine cortex is the upper calcarine bank, split between DKT pericalcarine and the cuneus above it."
+  occipital-pole:
+    dkt: [lateral-occipital]
+    why: "DKT has no occipital pole; the polar cortex is the posterior end of lateral occipital."
+
+# Umbrella and functional-area entries that name only Harvard-Oxford meshes, so they too would light up
+# nothing in the public edition.
+umbrella:
+  area-broca:
+    dkt: [pars-opercularis, pars-triangularis]
+    side: l
+    why: "Broca's area is the opercular and triangular parts of the left inferior frontal gyrus in both protocols."
+  area-wernicke:
+    dkt: [superior-temporal]
+    side: l
+    why: "Wernicke's area is the posterior left superior temporal gyrus, including the planum temporale DKT keeps inside it."
+  cortex-calcarine:
+    dkt: [pericalcarine, cuneus, lingual]
+    why: "The calcarine cortex is DKT pericalcarine, with the cuneus above and the lingual gyrus below the sulcus."
+  cortex-prefrontal:
+    dkt: [superior-frontal, rostral-middle-frontal, caudal-middle-frontal, lateral-orbitofrontal,
+          medial-orbitofrontal, pars-orbitalis, pars-triangularis]
+    why: "The prefrontal cortex as DKT parcels it: everything frontal in front of the premotor strip."
+  cortex-premotor-sma:
+    dkt: [caudal-middle-frontal, superior-frontal, paracentral]
+    why: "Lateral premotor cortex is caudal middle frontal; the SMA is the medial superior frontal gyrus in front of the paracentral lobule."
+  frontal-eye-field:
+    dkt: [caudal-middle-frontal]
+    why: "The frontal eye field sits at the caudal end of the middle frontal gyrus, which is the DKT caudal middle frontal parcel."
+  gyrus-cingulate:
+    dkt: [rostral-anterior-cingulate, caudal-anterior-cingulate, posterior-cingulate, isthmus-cingulate]
+    why: "The whole cingulate gyrus as DKT's four parcels."
+
+# The cerebellar deep nuclei are Diedrichsen-only too, and no permissively licensed atlas of them exists.
+# They sit inside the cerebellar white matter, so that aseg surface (labels 7/46) is their fallback.
+cerebellum_nuclei:
+  meshes: [cerebellar-white-matter-l, cerebellar-white-matter-r]
+  entries: [dentate-nucleus, interposed-nucleus, fastigial-nucleus]
+  why: "The deep nuclei are embedded in the cerebellar white matter; the aseg white-matter surface is the
+    redistributable structure that contains them."
+
+# Lobe overview entries: every DKT parcel of that lobe, so the lobe view is populated in the public edition too.
+lobes:
+  lobe-frontal:
+    dkt: [superior-frontal, rostral-middle-frontal, caudal-middle-frontal, pars-opercularis, pars-triangularis,
+          pars-orbitalis, lateral-orbitofrontal, medial-orbitofrontal, precentral, paracentral]
+    why: "Every DKT frontal parcel, matching the HO gyri this entry already lists."
+  lobe-parietal:
+    dkt: [postcentral, superior-parietal, supramarginal, inferior-parietal, precuneus]
+    why: "Every DKT parietal parcel."
+  lobe-temporal:
+    dkt: [superior-temporal, middle-temporal, inferior-temporal, transverse-temporal, fusiform]
+    why: "Every DKT temporal parcel (the entorhinal and parahippocampal parcels stay with the limbic entries)."
+  lobe-occipital:
+    dkt: [lateral-occipital, lingual, cuneus, pericalcarine]
+    why: "Every DKT occipital parcel."
+
+# The cerebellar lobule entries come from the Diedrichsen atlas (CC BY-NC), which the public edition cannot
+# ship either. No permissively licensed lobule parcellation exists, so the fallback is the FreeSurfer aseg
+# cerebellum already in the atlas (MNI licence, both editions): the lobule text stays and points at the
+# cerebellar cortex of its own side, both sides for the vermis. Mesh ids, not DKT keys.
+cerebellum:
+  meshes: [cerebellar-hemisphere-l, cerebellar-hemisphere-r]
+  why: "aseg cerebellar cortex (labels 8/47) is the only redistributable cerebellar grey-matter surface; the
+    Diedrichsen lobule meshes are CC BY-NC and leave in the public edition, so each lobule entry falls back
+    to the hemisphere it belongs to."

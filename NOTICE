@@ -161,10 +161,14 @@ public edition of the atlas.
 
 --- cerebra ---
   Dataset:     CerebrA: Mindboggle-101 DKT labels registered and hand-corrected on MNI-ICBM152 2009c Symmetric
-  Citation:    "Manera AL, Dadar M, Fonov V, Collins DL. CerebrA,
-               registration and manual label correction of Mindboggle-101
-               atlas for MNI-ICBM152 template. Sci Data 2020;7:237.
-               doi:10.1038/s41597-020-0557-9.
+  Citation:    Manera AL, Dadar M, Fonov V, Collins DL. CerebrA, registration
+               and manual label correction of Mindboggle-101 atlas for
+               MNI-ICBM152 template. Sci Data 2020;7:237.
+               doi:10.1038/s41597-020-0557-9 (dataset G-Node
+               doi:10.12751/g-node.be5e62, released under CC0 1.0 Public
+               Domain Dedication; files taken from the TemplateFlow mirror
+               tpl-MNI152NLin2009cSym, whose template carries the MNI/McGill
+               licence).
   Licence:     CC0 1.0 Universal (public domain dedication)
                https://creativecommons.org/publicdomain/zero/1.0/
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_res-1_atlas-CerebrA_dseg.nii.gz
@@ -233,6 +237,21 @@ public edition of the atlas.
                redistributed
   Download:    https://github.com/spinalcordtoolbox/PAM50/releases/download/r20250730/PAM50-r20250730.zip
   *** NON-COMMERCIAL, NO REDISTRIBUTION OF DERIVED FILES - EXCLUDED FROM THE PUBLIC EDITION ***
+
+--- lc_metamask ---
+  Dataset:     Locus coeruleus meta mask (Dahl et al.)
+  Citation:    Dahl MJ, Mather M, Werkle-Bergner M, Kennedy BL, Guzman S,
+               Hurth K, Miller CA, Qiao Y, Shi Y, Chui HC, Ringman JM. Locus
+               coeruleus integrity is related to tau burden and memory loss
+               in autosomal-dominant Alzheimer's disease. Neurobiology of
+               Aging 2022;112:39-54. doi:10.1016/j.neurobiolaging.2021.11.006
+               (locus coeruleus meta mask, OSF https://osf.io/sf2ky/, CC BY
+               4.0).
+  Licence:     Creative Commons Attribution 4.0 International
+               https://creativecommons.org/licenses/by/4.0/
+  Download:    https://osf.io/download/k6zyr/
+               https://osf.io/download/tjwbh/
+               https://osf.io/download/zcrxe/
 
 --- brainstem_navigator ---
   Dataset:     Brainstem Navigator v1.0 (in vivo 7 T brainstem nuclei)

@@ -61,7 +61,7 @@ def build_label_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool =
     img = load_atlas(a)
     data = np.rint(np.asanyarray(img.dataobj)).astype(np.int32)
     aff = img.affine
-    alignment = "native-mni" if a.space == "mni2009" else "nlin6-identity"
+    alignment = a.alignment or ("native-mni" if a.space == "mni2009" else "nlin6-identity")
     # x coordinate of every voxel (for side splitting of unlateralised atlases)
     xs = None
     by_id: dict[str, list[tuple[int, MeshSpec]]] = {}
@@ -102,7 +102,8 @@ def build_label_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool =
     for spec_side, labels, mesh, path, voxels in built:
         mesh.fix_normals()
         nbytes, lod = export_with_lod(mesh, path, spec_side.id, LOD_FACES, LOD_MIN_FACES)
-        out.append(record(spec_side, a.id, labels, alignment, mesh, path, nbytes, voxels, {"labelVolume": a.label_volume, "lod": lod}))
+        out.append(record(spec_side, a.id, labels, alignment, mesh, path, nbytes, voxels,
+                          {"labelVolume": a.label_volume, "lod": lod, **({"edition": a.edition} if a.edition else {})}))
         print(f"  {spec_side.id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB" + (f"  (lod {lod['triangles']} tris)" if lod else ""))
     return out
 
@@ -127,6 +128,46 @@ def build_binary_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool 
         out.append(record(spec, a.id, None, "native-mni", mesh, path, nbytes, mask.sum(), {"labelVolume": "tract", "file_key": rel, "lod": lod}))
         print(f"  {spec.id:48s} {len(mesh.faces):6d} tris {nbytes/1024:7.1f} KB")
     return out
+
+
+# ---------------------------------------------------------------- CerebrA (public-edition cortex)
+# CerebrA is defined on the 2009c *symmetric* template. Its grid is identical to ours (193x229x193, 1 mm,
+# origin -96/-132/-78), so the labels can simply be read as they are ("nlin2009csym-identity"); the anatomy
+# underneath is the symmetric average, though, so a quick SyN of the symmetric T1w onto our asymmetric T1w
+# and a genericLabel resampling of the labels ("warped-sym-to-asym") sits them a little better -- measured on
+# this data: cortical Dice against DKT31-in-2009cAsym 0.587 -> 0.610, subcortical Dice against aseg
+# 0.760 -> 0.770, region centroids 2.48 -> 2.24 mm, label voxels outside our brain mask 8147 -> 5499.
+# antspyx is the pipeline's optional [warp] extra, so this is best-effort: the warped volume is cached in
+# work/ and used when it is there, and the identity labels are the fallback. Each mesh record says which.
+CEREBRA_WARPED = WORK / "cerebra_space-MNI152NLin2009cAsym_dseg.nii.gz"
+
+
+def cerebra_warp() -> bool:
+    """SyN the 2009cSym T1w onto our 2009cAsym T1w and carry the CerebrA labels over. False without antspyx."""
+    try:
+        import ants  # noqa: PLC0415
+    except ImportError:
+        return False
+    fixed = ants.image_read(str(RAW / "mni_t1w" / "tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz"))
+    moving = ants.image_read(str(RAW / "cerebra" / "tpl-MNI152NLin2009cSym_res-1_T1w.nii.gz"))
+    reg = ants.registration(fixed=fixed, moving=moving, type_of_transform="SyN")
+    lab = ants.image_read(str(RAW / catalog.CEREBRA_FILE))
+    out = ants.apply_transforms(fixed=fixed, moving=lab, transformlist=reg["fwdtransforms"], interpolator="genericLabel")
+    CEREBRA_WARPED.parent.mkdir(parents=True, exist_ok=True)
+    ants.image_write(out, str(CEREBRA_WARPED))
+    return True
+
+
+def cerebra_spec() -> catalog.AtlasSpec | None:
+    """None when the CerebrA download is missing (`atlas-download --with public-parcellations`)."""
+    if not (RAW / catalog.CEREBRA_FILE).exists():
+        return None
+    if not CEREBRA_WARPED.exists() and not cerebra_warp():
+        print("  [cerebra] antspyx not installed (pipeline[warp]) -- using the symmetric labels as they are")
+        return catalog.cerebra_atlas()
+    # load_atlas() joins the spec path onto RAW; an absolute path wins that join, which is what we want here
+    # because the warped copy is a build product and lives in work/, not in raw/.
+    return catalog.cerebra_atlas(str(CEREBRA_WARPED), alignment="warped-sym-to-asym")
 
 
 def build_envelope() -> dict:
@@ -177,6 +218,15 @@ def main(argv=None) -> None:
             continue
         print(f"[{atlas.id}]")
         results += build_label_atlas(atlas, only, a.force) if atlas.kind == "labels" else build_binary_atlas(atlas, only, a.force)
+        for r in results:
+            existing[r["id"]] = r
+        out_path.write_text(json.dumps(list(existing.values()), indent=1))
+    ce = cerebra_spec()
+    if ce is None:
+        print("[cerebra] skipped: run `atlas-download --with public-parcellations` for the public-edition cortex")
+    elif not only or ce.id in only or any(s.id in only or s.structure_id in only for s in ce.entries.values()):
+        print(f"[{ce.id}]")
+        results += build_label_atlas(ce, only, a.force)
         for r in results:
             existing[r["id"]] = r
         out_path.write_text(json.dumps(list(existing.values()), indent=1))

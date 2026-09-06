@@ -27,7 +27,8 @@ def palette() -> dict[str, dict]:
             put(spec.id, spec.colour, spec.opacity, spec.structure_id)
             if spec.side == "bilateral":
                 put(spec.id + "-l", spec.colour, spec.opacity); put(spec.id + "-r", spec.colour, spec.opacity)
-    for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA, *catalog.venat_entries().values()):
+    for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA, *catalog.venat_entries().values(),
+                 *catalog.lc_metamask_entries().values()):
         put(spec.id, spec.colour, spec.opacity, spec.structure_id)
     try:
         from .brainstem_nav import palette_specs

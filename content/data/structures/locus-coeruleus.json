@@ -10,7 +10,9 @@
  "meshIds": [
   "brainstem",
   "locus-coeruleus-l",
-  "locus-coeruleus-r"
+  "locus-coeruleus-r",
+  "locus-coeruleus-meta-l",
+  "locus-coeruleus-meta-r"
  ],
  "summary": "The locus coeruleus is a compact column of pigmented noradrenergic neurons in the upper pontine tegmentum beneath the floor of the fourth ventricle, at the lateral edge of the periaqueductal gray, whose axons reach almost the entire brain and spinal cord. With only a few tens of thousands of cells it supplies most of the noradrenaline of the cerebral cortex, hippocampus, cerebellum and thalamus and is the engine of arousal, vigilance and the response to novelty and stress. It regulates the sleep–wake cycle, is silent in REM sleep, and modulates pain in the spinal dorsal horn. It degenerates early in Parkinson disease and Alzheimer disease, contributing to the sleep, autonomic and cognitive symptoms that precede the classical signs, and it is the site of the neuromelanin signal that can now be imaged.",
  "anatomy": {
@@ -133,7 +135,8 @@
   ]
  },
  "pitfalls": [
-  "Isolated lesions of the locus coeruleus are not clinically recognized; its disorders are pharmacological and degenerative"
+  "Isolated lesions of the locus coeruleus are not clinically recognized; its disorders are pharmacological and degenerative",
+  "PUBLIC EDITION: the locus coeruleus surface shipped in the public edition is the Dahl et al. 2022 meta mask (Neurobiology of Aging 112:39-54; OSF sf2ky, CC BY 4.0), a consensus volume of interest pooled across six published locus coeruleus maps rather than a delineation of the nucleus in one brain. It marks where the nucleus lies, not its edge: at about 40 mm3 on the left and 34 mm3 on the right it is deliberately larger than the locus coeruleus itself, and no clinical sequence resolves it."
  ],
  "citations": [
   {
@@ -150,6 +153,10 @@
   },
   {
    "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
+  },
+  {
+   "ref": "oa-dahl-lc-meta-mask",
+   "note": "locus coeruleus meta mask; source of the public-edition mesh"
   }
  ],
  "tags": [

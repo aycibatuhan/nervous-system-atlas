@@ -227,7 +227,13 @@ for (const { e } of entries) {
   const entry = { ...resolved, html };
   const target = e.kind === 'structure' || e.kind === 'cranial-nerve' ? bundle.structures : e.kind === 'pathway' ? bundle.pathways : e.kind === 'syndrome' ? bundle.syndromes : e.kind === 'glossary' ? bundle.glossary : e.kind === 'topic' ? bundle.topics : bundle.quiz;
   target[e.id] = entry;
-  if (e.kind === 'structure' || e.kind === 'cranial-nerve') for (const m of e.meshIds) if (ships(m)) bundle.meshToStructure[m] = e.id;
+  // mesh -> entry: the manifest's own structureId wins when that entry exists (a mesh may be listed by several
+  // entries, e.g. an aseg cerebellar hemisphere by every lobule entry); otherwise the first entry listing it
+  if (e.kind === 'structure' || e.kind === 'cranial-nerve') for (const m of e.meshIds) if (ships(m)) {
+    const owner = meshStructure.get(m);
+    if (owner && byId.has(owner)) bundle.meshToStructure[m] = owner;
+    else if (!(m in bundle.meshToStructure)) bundle.meshToStructure[m] = e.id;
+  }
   const name = 'name' in e ? e.name : (e as { term?: string }).term ?? e.id;
   const aliases = 'synonyms' in e ? e.synonyms : 'eponyms' in e ? e.eponyms : [];
   const summary = 'summary' in e ? e.summary : 'presentation' in e ? (e as { presentation: string }).presentation : 'definition' in e ? (e as { definition: string }).definition : '';

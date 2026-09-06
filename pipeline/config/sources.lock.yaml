@@ -48,6 +48,26 @@ bodyparts3d/partof_parts_list_e.txt:
   fetched: '2026-09-06T00:34:59+00:00'
   sha256: 9224080557053e6f1322f1e13ab27f0ecde0db19bb3b505f0631afad230eeebd
   url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_parts_list_e.txt
+cerebra/LICENSE.txt:
+  bytes: 676
+  fetched: '2026-09-06T23:07:32+00:00'
+  sha256: 5915d16f84d99c3cedc8290b09da72f6f92e5dde1ba1c9859ee186aa952b66a4
+  url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/LICENSE
+cerebra/tpl-MNI152NLin2009cSym_atlas-CerebA_dseg.tsv:
+  bytes: 5614
+  fetched: '2026-09-06T23:07:31+00:00'
+  sha256: cf0332a1c2601b5dd97b2f70423b064c762630d02052629f7112789f2fb6d2f7
+  url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_atlas-CerebA_dseg.tsv
+cerebra/tpl-MNI152NLin2009cSym_res-1_T1w.nii.gz:
+  bytes: 4589929
+  fetched: '2026-09-06T23:07:32+00:00'
+  sha256: 317e112c49d086b971e4a26cba853b041ee210faf750a6fe02e04f15909b6b6b
+  url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_res-1_T1w.nii.gz
+cerebra/tpl-MNI152NLin2009cSym_res-1_atlas-CerebrA_dseg.nii.gz:
+  bytes: 564070
+  fetched: '2026-09-06T23:07:31+00:00'
+  sha256: c05df93e85b8f1c1446e56f45f0b6a28fdf6e5c8263ea8f365617254bf79ecbf
+  url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/tpl-MNI152NLin2009cSym_res-1_atlas-CerebrA_dseg.nii.gz
 cit168/CIT168toMNI152-2009c_det.nii.gz:
   bytes: 51026
   fetched: '2026-09-06T00:11:22+00:00'
@@ -73,6 +93,16 @@ diedrichsen_cerebellum/atl-Anatom_space-MNI_dseg.nii:
   fetched: '2026-09-06T00:11:38+00:00'
   sha256: 434471d89ff329e6e14cdecb66998018fe0dcadbbe47781429148d0017598b72
   url: https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom_space-MNI_dseg.nii
+dkt31_2009casym/tpl-MNI152NLin2009cAsym_from-OASISTRT20_mode-image_xfm.mat:
+  bytes: 193
+  fetched: '2026-09-06T23:07:32+00:00'
+  sha256: 37a56d7ceca8538cf47c32b17d2d12223641666fc7796e64aec71c1d3c1feed5
+  url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_from-OASISTRT20_mode-image_xfm.mat
+dkt31_2009casym/tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg.nii.gz:
+  bytes: 91359
+  fetched: '2026-09-06T23:07:32+00:00'
+  sha256: 866defe588d565ad74a52ec31a6f84d10a6592a3082be62c4884d326e13b6fe7
+  url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg.nii.gz
 harvard_oxford/tpl-MNI152NLin2009cAsym_res-01_atlas-HOCPAL_desc-th25_dseg.nii.gz:
   bytes: 279888
   fetched: '2026-09-06T00:11:17+00:00'
@@ -113,6 +143,21 @@ hypothalamus_neudorfer/Volumes_names-labels.csv:
   fetched: '2026-09-06T00:11:20+00:00'
   sha256: 31ce37c47edb7aafc0c69661289f2b6e7c12a7c3b6c36c063432333b9ac8a201
   url: https://zenodo.org/api/records/3942115/files/Volumes_names-labels.csv/content
+lc_metamask/LCmetaMask_MNI05_s01f_plus50.nii.gz:
+  bytes: 774743
+  fetched: '2026-09-06T23:21:14+00:00'
+  sha256: 42dc1d49a5d32723db51248895b6e846057f9768b793f5391a3c0e0b968e7d21
+  url: https://osf.io/download/k6zyr/
+lc_metamask/LCmetaMask_left_MNI05_s01f_plus50.nii.gz:
+  bytes: 56599
+  fetched: '2026-09-06T23:21:19+00:00'
+  sha256: a980abf987da6262b1772f879b391d9db8c61639028491ee76f498e43c530783
+  url: https://osf.io/download/tjwbh/
+lc_metamask/LCmetaMask_right_MNI05_s01f_plus50.nii.gz:
+  bytes: 56557
+  fetched: '2026-09-06T23:21:21+00:00'
+  sha256: 4d3ca0500345bdf138e8476a04dacc5adafd3ba3e7d0df91bc63bd1287406327
+  url: https://osf.io/download/zcrxe/
 massp/tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz:
   bytes: 73686
   fetched: '2026-09-06T00:11:17+00:00'

@@ -35,6 +35,7 @@ def build_all():
     from pathlib import Path
     steps = ["atlas-download", "atlas-volumes", "atlas-atlas-meshes", "atlas-venat", "atlas-bp3d-select", "atlas-bp3d-meshes",
              "atlas-zanatomy-midline", "atlas-zanatomy-meshes", "atlas-pam50", "atlas-derived", "atlas-brainstem-nav",
+             "atlas-lc-metamask",
              "atlas-labels", "atlas-manifest", "atlas-qa"]
     bindir = Path(sys.executable).parent
     for step in steps:
@@ -60,6 +61,9 @@ def venat():
 
 def brainstem_nav():
     from .brainstem_nav import main; main()
+
+def lc_metamask():
+    from .lc_metamask import main; main()
 
 def derived():
     from .derived import main; main()
