@@ -27,8 +27,8 @@ export function applyVisualState(mesh: THREE.Mesh, state: VisualState): void {
   switch (state) {
     case 'hover': mat.emissive.copy(base).multiplyScalar(0.28); break;
     case 'selected': mat.emissive.copy(base).multiplyScalar(0.45).add(new THREE.Color(0.12, 0.12, 0.08)); mat.opacity = Math.max(op, 0.95); mat.transparent = mat.opacity < 1; mat.depthWrite = true; mesh.renderOrder = 1; break;
-    case 'dimmed': mat.opacity = Math.min(op, 0.08); mat.transparent = true; mat.depthWrite = false; mesh.renderOrder = 5; break;
-    case 'involved': mat.emissive.set(0x5a2a00); mat.opacity = Math.max(op, 0.98); mat.transparent = mat.opacity < 1; mat.depthWrite = true; mesh.renderOrder = 1; break;
+    case 'dimmed': mat.opacity = Math.min(op, 0.035); mat.transparent = true; mat.depthWrite = false; mesh.renderOrder = 5; break;
+    case 'involved': mat.emissive.copy(base).multiplyScalar(0.35).add(new THREE.Color(0.35, 0.14, 0.0)); mat.opacity = 1; mat.transparent = false; mat.depthWrite = true; mesh.renderOrder = 1; break;
   }
   mat.needsUpdate = false;
 }

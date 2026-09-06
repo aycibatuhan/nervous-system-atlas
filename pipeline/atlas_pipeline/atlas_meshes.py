@@ -31,6 +31,8 @@ def load_atlas(a: catalog.AtlasSpec) -> nib.Nifti1Image:
 
 
 RECORDS = WORK / "records"
+# atlas ids that share one download/licence entry in sources.yaml
+SOURCE_ALIAS = {"arterial_l1": "arterial_territories", "arterial_l2": "arterial_territories"}
 
 
 def cached(out_id: str, path: Path, force: bool) -> dict | None:
@@ -50,7 +52,7 @@ def record(spec: MeshSpec, atlas_id: str, atlas_labels, alignment: str, mesh, pa
 
 def _record(spec, atlas_id, atlas_labels, alignment, st, path, nbytes, voxels, extra=None) -> dict:
     return {"id": spec.id, "structureId": spec.structure_id, "name": spec.name, "system": spec.system, "subsystem": spec.subsystem,
-            "side": spec.side, "source": atlas_id, "alignment": alignment, "file": str(path.relative_to(MESHES.parent)).replace("\\", "/"),
+            "side": spec.side, "source": SOURCE_ALIAS.get(atlas_id, atlas_id), "alignment": alignment, "file": str(path.relative_to(MESHES.parent)).replace("\\", "/"),
             "bytes": nbytes, "colour": spec.colour, "opacity": spec.opacity, "visible": spec.visible,
             "atlasLabels": list(atlas_labels) if atlas_labels is not None else None, "voxels": int(voxels), **st, **(extra or {})}
 
