@@ -1,0 +1,166 @@
+{
+ "kind": "structure",
+ "id": "abducens-nucleus",
+ "name": "Abducens nucleus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The abducens nucleus lies under the facial colliculus in the caudal pons and is the horizontal gaze center's output stage: its motor neurons supply the ipsilateral lateral rectus, and its internuclear neurons cross in the MLF to drive the contralateral medial rectus. Because both cell types live together, a nuclear lesion causes a conjugate gaze palsy toward the side of the lesion, not an isolated lateral rectus palsy. The facial nerve fibers loop around it, so a nuclear lesion often adds an ipsilateral facial palsy.",
+ "anatomy": {
+  "location": "Dorsal caudal pons beneath the facial colliculus of the fourth ventricular floor, paramedian, with the PPRF just anterior and lateral to it and the MLF medial to it.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "pprf",
+    "note": "saccadic burst"
+   },
+   {
+    "from": "vestibular-nuclei",
+    "note": "vestibulo-ocular reflex"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "lateral rectus",
+    "via": "cn-06-abducens"
+   },
+   {
+    "to": "oculomotor-nucleus (contralateral medial rectus subnucleus)",
+    "via": "medial-longitudinal-fasciculus"
+   }
+  ],
+  "pathways": [
+   "pathway-horizontal-gaze"
+  ]
+ },
+ "function": "Abduction of the ipsilateral eye and, through internuclear neurons, conjugate horizontal gaze to the ipsilateral side; final common pathway for saccades, pursuit and the vestibulo-ocular reflex in the horizontal plane.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -34,
+     "z": -36
+    },
+    "label": "facial colliculus level of the caudal pons"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 3,
+     "y": -34,
+     "z": -36
+    },
+    "label": "floor of the fourth ventricle at the facial colliculus"
+   }
+  ],
+  "normalAppearance": "Not resolved on routine MRI; the facial colliculus is the paramedian bump on the floor of the fourth ventricle at the caudal pons. Small lesions here are best seen on thin axial FLAIR or DWI.",
+  "pathology": [
+   {
+    "pathology": "Pontine tegmental infarct or demyelination at the facial colliculus",
+    "modality": "MRI",
+    "finding": "Small paramedian dorsal pontine lesion with ipsilateral gaze palsy and lower motor neuron facial weakness.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Pontine glioma or cavernoma",
+    "modality": "MRI",
+    "finding": "Mass in the dorsal pons displacing the ventricular floor; sixth nerve and gaze palsies are early signs.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "Thin FLAIR/DWI through the pons"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Conjugate horizontal gaze palsy toward the side of the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Loss of both motor and internuclear neurons"
+   },
+   {
+    "deficit": "Ipsilateral lower motor neuron facial palsy",
+    "side": "ipsilateral",
+    "mechanism": "Facial nerve genu looping over the nucleus"
+   },
+   {
+    "deficit": "Isolated lateral rectus palsy",
+    "side": "ipsilateral",
+    "mechanism": "Abducens fascicle or nerve, not the nucleus"
+   }
+  ],
+  "examination": [
+   "Ask the patient to follow a target to each side: nuclear lesions stop both eyes at the midline",
+   "Test the vestibulo-ocular reflex (doll's eyes) — absent toward the lesion side in nuclear lesions, preserved in PPRF lesions",
+   "Facial movement including the forehead"
+  ],
+  "syndromes": [
+   "syn-horizontal-gaze-palsy-pontine",
+   "syn-foville",
+   "syn-one-and-a-half",
+   "syn-cn6-palsy"
+  ],
+  "pearls": [
+   "A gaze palsy that cannot be overcome by the oculocephalic reflex is nuclear; one that can is supranuclear (PPRF or cortex)",
+   "Gaze palsy plus peripheral facial palsy equals the facial colliculus"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    205,
+    207
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    335,
+    337
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    93,
+    98
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus nervi abducentis",
+ "subsystem": "pons",
+ "level": {
+  "region": "pons"
+ }
+}

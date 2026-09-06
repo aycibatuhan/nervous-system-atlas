@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "nucleus-solitarius",
+ "name": "Nucleus of the solitary tract",
+ "synonyms": [
+  "solitary nucleus",
+  "NTS"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The visceral sensory nucleus of the brainstem. It surrounds the solitary tract in the dorsolateral medulla and receives taste from the anterior tongue (via the facial nerve), the posterior tongue (glossopharyngeal) and the epiglottis (vagus) in its rostral part, and general visceral afferents from the carotid sinus and body, the aortic arch, the heart, lungs and gut in its caudal part. It is the sensory hub for the baroreceptor, chemoreceptor, cough, gag and vomiting reflexes.",
+ "anatomy": {
+  "location": "Dorsolateral medulla lateral to the dorsal motor nucleus of the vagus and ventral to the vestibular nuclei, running from the caudal pons to the obex where the two sides fuse into the commissural nucleus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "taste buds and viscera",
+    "via": "cn-07-facial / cn-09-glossopharyngeal / cn-10-vagus"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "thalamus-vpm",
+    "via": "central tegmental tract",
+    "note": "taste"
+   },
+   {
+    "to": "dorsal-motor-nucleus-vagus",
+    "note": "reflex arcs"
+   },
+   {
+    "to": "nucleus-ambiguus",
+    "note": "reflex arcs"
+   }
+  ],
+  "pathways": [
+   "pathway-gustatory"
+  ]
+ },
+ "function": "First central relay for taste and for visceral afferent information; drives cardiovascular and respiratory reflexes through projections to the ventrolateral medulla, the dorsal vagal nucleus and the nucleus ambiguus, and sends taste to the ventral posteromedial thalamus.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-vertebral"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": -44,
+     "z": -44
+    },
+    "label": "dorsolateral medulla medial to the inferior cerebellar peduncle"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 6,
+     "y": -44,
+     "z": -44
+    },
+    "label": "dorsal medulla beneath the vestibular area"
+   }
+  ],
+  "normalAppearance": "Not visible on routine MRI; its position is the dorsolateral medulla just beneath the floor of the fourth ventricle. Lesions here belong to the dorsolateral medullary infarct pattern.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary infarct with dysautonomia",
+    "modality": "MRI",
+    "finding": "Dorsolateral medullary restricted diffusion; baroreflex failure and labile blood pressure may accompany the classical signs.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI; autonomic testing when blood pressure is unstable"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of taste on the ipsilateral tongue",
+    "side": "ipsilateral",
+    "mechanism": "Gustatory part of the nucleus or the solitary tract"
+   },
+   {
+    "deficit": "Baroreflex failure with labile hypertension and tachycardia",
+    "side": "n/a",
+    "mechanism": "Loss of carotid sinus and aortic arch afferent processing"
+   },
+   {
+    "deficit": "Impaired gag, cough and swallowing reflexes",
+    "side": "ipsilateral",
+    "mechanism": "Afferent limb of pharyngeal reflexes"
+   }
+  ],
+  "examination": [
+   "Taste testing with sugar and salt on each side of the tongue",
+   "Orthostatic blood pressure and heart rate",
+   "Gag and cough on request"
+  ],
+  "syndromes": [],
+  "pearls": [
+   "Taste from all three cranial nerves converges here, so a single medullary lesion can abolish taste on the whole ipsilateral tongue",
+   "Baroreflex failure after brainstem stroke or radiotherapy presents with wild blood pressure swings"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    204
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    338,
+    343
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    79,
+    82
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    125,
+    126
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus tractus solitarii",
+ "subsystem": "medulla",
+ "level": {
+  "region": "medulla"
+ }
+}

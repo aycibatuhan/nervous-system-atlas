@@ -1,0 +1,149 @@
+{
+ "kind": "structure",
+ "id": "trochlear-nucleus",
+ "name": "Trochlear nucleus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A small motor nucleus in the ventral periaqueductal gray at the level of the inferior colliculus, just below the oculomotor complex. Its axons do something no other cranial nerve does: they run dorsally around the aqueduct, cross in the superior medullary velum and exit from the dorsal surface of the brainstem below the inferior colliculi. The nerve therefore supplies the contralateral superior oblique, and a nuclear or fascicular lesion causes a palsy on the opposite side while a lesion of the emerged nerve causes an ipsilateral palsy.",
+ "anatomy": {
+  "location": "Ventral periaqueductal gray at the inferior colliculus level, dorsal to the MLF, in line with the oculomotor nucleus above it.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "superior oblique (contralateral)",
+    "via": "cn-04-trochlear"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Motor supply to the superior oblique muscle, which depresses the adducted eye and intorts the abducted eye; keeps the eyes level during head tilt.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "arteries-thalamoperforating",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -30,
+     "z": -16
+    },
+    "label": "ventral periaqueductal gray at the inferior colliculus level"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -32,
+     "z": -16
+    },
+    "label": "dorsal exit of the nerve below the inferior colliculus"
+   }
+  ],
+  "normalAppearance": "Not resolved; the nerve itself is the thinnest cranial nerve and is only occasionally seen on high-resolution T2 as it curves around the midbrain in the ambient cistern.",
+  "pathology": [
+   {
+    "pathology": "Dorsal midbrain infarct or hemorrhage",
+    "modality": "MRI",
+    "finding": "Small lesion of the caudal periaqueductal gray or the superior medullary velum with contralateral superior oblique palsy.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Traumatic trochlear palsy",
+    "modality": "MRI",
+    "finding": "Usually normal imaging; the long thin nerve is torn at its dorsal exit by closed head injury.",
+    "sequence": "n/a"
+   }
+  ],
+  "sequenceOfChoice": "Thin axial DWI/T2 through the caudal midbrain; imaging is often normal in isolated palsies"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Vertical diplopia worse looking down and in, with the eye extorted",
+    "side": "contralateral",
+    "mechanism": "Nucleus or fascicle before the decussation"
+   },
+   {
+    "deficit": "The same palsy on the same side",
+    "side": "ipsilateral",
+    "mechanism": "Nerve after it has crossed and exited"
+   },
+   {
+    "deficit": "Compensatory head tilt away from the affected eye",
+    "side": "n/a",
+    "mechanism": "Reduces the vertical and torsional misalignment"
+   }
+  ],
+  "examination": [
+   "Cover-uncover test in the nine positions of gaze",
+   "Park's three-step test: hypertropia worse on contralateral gaze and on ipsilateral head tilt",
+   "Look at old photographs for a long-standing head tilt"
+  ],
+  "syndromes": [
+   "syn-cn4-palsy"
+  ],
+  "pearls": [
+   "Trochlear nucleus lesions cause a contralateral palsy; every other cranial motor nucleus supplies its own side",
+   "Bilateral fourth nerve palsies after head trauma cause difficulty reading and going down stairs with a chin-down posture"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    210,
+    212
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    331,
+    333
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    95,
+    96
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus nervi trochlearis",
+ "subsystem": "midbrain",
+ "level": {
+  "region": "midbrain"
+ }
+}

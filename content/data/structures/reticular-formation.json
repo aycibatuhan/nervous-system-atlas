@@ -1,0 +1,167 @@
+{
+ "kind": "structure",
+ "id": "reticular-formation",
+ "name": "Reticular formation",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A diffuse network of neurons and interlacing fibers occupying the core of the tegmentum from the medulla to the midbrain. It contains the vital centers for breathing, blood pressure and heart rate in the medulla, the pontine gaze and micturition centers, and the ascending reticular activating system that keeps the cortex awake through cholinergic, noradrenergic, serotonergic and histaminergic projections relayed by the thalamus and hypothalamus. Reticulospinal tracts from the pons and medulla set muscle tone and posture. Damage above the pons causes coma; damage in the medulla stops breathing.",
+ "anatomy": {
+  "location": "Central tegmentum throughout the brainstem, medial to the cranial nerve nuclei and lateral to the raphe, extending rostrally into the intralaminar thalamus and caudally into the spinal cord intermediate gray.",
+  "subdivisions": [
+   {
+    "name": "Median (raphe) column",
+    "note": "serotonergic nuclei: mood, pain modulation, sleep"
+   },
+   {
+    "name": "Medial (magnocellular) column",
+    "note": "reticulospinal tracts and the ascending activating system; pontine and medullary reticular nuclei"
+   },
+   {
+    "name": "Lateral (parvocellular) column",
+    "note": "cranial nerve reflex integration, respiratory and cardiovascular centers, area postrema connections"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-reticulospinal"
+  ]
+ },
+ "function": "Arousal and consciousness, respiratory and cardiovascular control, coordination of brainstem reflexes (cough, gag, vomiting, swallowing), modulation of pain and of spinal motor tone.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-basilar",
+   "artery-vertebral",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -30,
+     "z": -30
+    },
+    "label": "central pontine tegmentum"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -32,
+     "z": -25
+    },
+    "label": "tegmental core from medulla to midbrain"
+   }
+  ],
+  "normalAppearance": "No discrete boundary on MRI; it is the tegmental core behind the basis pontis and crura. Lesions that cause coma are those involving the paramedian tegmentum of the upper pons and midbrain on both sides.",
+  "pathology": [
+   {
+    "pathology": "Pontine or midbrain tegmental infarct or hemorrhage with coma",
+    "modality": "MRI",
+    "finding": "Bilateral or midline tegmental lesion of the rostral pons/midbrain; small lesions here cause coma while much larger basis pontis lesions do not.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Central pontine or medullary compression",
+    "modality": "MRI",
+    "finding": "Tonsillar herniation or a posterior fossa mass compressing the medulla, with respiratory irregularity.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "DWI and T2 through the brainstem; examine for herniation"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Coma",
+    "side": "bilateral",
+    "mechanism": "Ascending reticular activating system in the rostral pons and midbrain"
+   },
+   {
+    "deficit": "Respiratory failure or ataxic breathing",
+    "side": "n/a",
+    "mechanism": "Medullary respiratory centers"
+   },
+   {
+    "deficit": "Loss of brainstem reflexes",
+    "side": "n/a",
+    "mechanism": "Reflex integration in the lateral reticular formation"
+   },
+   {
+    "deficit": "Changes in muscle tone and posture",
+    "side": "n/a",
+    "mechanism": "Reticulospinal tracts"
+   }
+  ],
+  "examination": [
+   "Level of consciousness (GCS), breathing pattern, pupils, corneal and oculocephalic reflexes",
+   "Cough and gag",
+   "Posturing to painful stimuli"
+  ],
+  "syndromes": [
+   "syn-basilar-occlusion",
+   "syn-tonsillar-herniation"
+  ],
+  "pearls": [
+   "A small bilateral lesion in the upper pontine or midbrain tegmentum is enough for coma; the cortex must be widely damaged to do the same",
+   "Preserved brainstem reflexes in a comatose patient point to a hemispheric or metabolic cause, absent ones to the brainstem"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    299,
+    301
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    214
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    231,
+    233
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Formatio reticularis",
+ "subsystem": "tegmentum",
+ "level": {
+  "region": "pons"
+ }
+}

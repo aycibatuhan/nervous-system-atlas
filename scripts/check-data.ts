@@ -59,7 +59,7 @@ async function main() {
       if (Math.abs(info.tris - m.triangles) > 2) { console.error(`${m.id}: triangles ${info.tris} != manifest ${m.triangles}`); errors++; }
       const c = m.centroid as number[];
       for (let k = 0; k < 3; k++) if (c[k]! < info.min[k]! - 1 || c[k]! > info.max[k]! + 1) { console.error(`${m.id}: centroid outside bbox`); errors++; break; }
-      if (info.min[0]! < -110 || info.max[0]! > 110 || info.min[1]! < -150 || info.max[1]! > 110 || info.min[2]! < -100 || info.max[2]! > 130) { console.error(`${m.id}: outside MNI FOV ${info.min} ${info.max}`); errors++; }
+      if (info.min[0]! < -110 || info.max[0]! > 110 || info.min[1]! < -150 || info.max[1]! > 110 || info.min[2]! < -100 || info.max[2]! > 130) { if (m.alignment === 'native-mni' || m.alignment === 'nlin6-identity') { console.error(`${m.id}: outside MNI FOV ${info.min} ${info.max}`); errors++; } else console.warn(`${m.id}: extends beyond the MNI volume (registered source)`); }
     } catch (e) { console.error(`${m.id}: ${(e as Error).message}`); errors++; }
     for (const [vol, list] of Object.entries(m.labels as Record<string, number[]>)) {
       for (const id of list) if (!labels.lut[vol]?.[String(id)]) { console.error(`${m.id}: label ${vol}:${id} missing in labels.json`); errors++; }

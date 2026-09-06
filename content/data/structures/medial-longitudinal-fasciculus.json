@@ -1,0 +1,163 @@
+{
+ "kind": "structure",
+ "id": "medial-longitudinal-fasciculus",
+ "name": "Medial longitudinal fasciculus",
+ "synonyms": [
+  "MLF"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A paired paramedian bundle running the length of the brainstem just beneath the aqueduct and the floor of the fourth ventricle. Its clinically decisive contents are the axons of abducens internuclear neurons crossing to the contralateral oculomotor nucleus, which yoke the medial rectus to the opposite lateral rectus for conjugate horizontal gaze; it also carries vestibular fibers to the eye movement nuclei and descends as the medial vestibulospinal tract. A lesion produces internuclear ophthalmoplegia: the eye on the side of the lesion fails to adduct while the other eye abducts with nystagmus.",
+ "anatomy": {
+  "location": "Dorsal paramedian tegmentum from the rostral midbrain (interstitial nucleus of Cajal) down through the pons and medulla into the cervical cord, ventral to the periaqueductal gray and the hypoglossal and abducens nuclei.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-horizontal-gaze",
+   "pathway-vestibular-vor"
+  ]
+ },
+ "function": "Coordinates conjugate horizontal and vertical eye movements between the III, IV and VI nuclei and links them to the vestibular nuclei; carries the medial vestibulospinal tract for head-eye coordination.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -32,
+     "z": -34
+    },
+    "label": "paramedian dorsal pontine tegmentum in front of the fourth ventricle"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 2,
+     "y": -30,
+     "z": -25
+    },
+    "label": "dorsal paramedian bundle from midbrain to medulla"
+   }
+  ],
+  "normalAppearance": "Not resolved on routine MRI; lesions show as small paramedian dorsal tegmental spots. In multiple sclerosis a bilateral INO usually comes with a small FLAIR-bright lesion straddling the midline under the ventricular floor.",
+  "pathology": [
+   {
+    "pathology": "Demyelinating INO",
+    "modality": "MRI",
+    "finding": "Small T2/FLAIR-bright lesion in the dorsal paramedian pontine tegmentum, often bilateral in multiple sclerosis; may be invisible on 5 mm slices.",
+    "sequence": "FLAIR",
+    "pitfalls": "Use thin axial FLAIR or sagittal 3D FLAIR; a normal routine MRI does not exclude a demyelinating INO"
+   },
+   {
+    "pathology": "Ischemic INO",
+    "modality": "MRI",
+    "finding": "Unilateral paramedian tegmental restricted diffusion from a small perforator in older patients with vascular risk factors.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Thin FLAIR and DWI through the pons and midbrain"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Failure of adduction of the eye on the side of the lesion with abducting nystagmus of the other eye (INO)",
+    "side": "ipsilateral",
+    "mechanism": "Interneuron axons from the contralateral abducens nucleus to the ipsilateral medial rectus subnucleus"
+   },
+   {
+    "deficit": "Convergence preserved",
+    "side": "n/a",
+    "mechanism": "Convergence uses a separate midbrain pathway"
+   },
+   {
+    "deficit": "Skew deviation and vertical nystagmus",
+    "side": "n/a",
+    "mechanism": "Vestibular fibers in the MLF"
+   },
+   {
+    "deficit": "One-and-a-half syndrome when combined with an abducens nucleus or PPRF lesion",
+    "side": "ipsilateral",
+    "mechanism": "Ipsilateral gaze palsy plus INO"
+   }
+  ],
+  "examination": [
+   "Ask the patient to look far to each side and watch the adducting eye for slowing or failure; look for nystagmus in the abducting eye",
+   "Test convergence to show that the medial rectus itself works",
+   "Check vertical gaze and for skew"
+  ],
+  "syndromes": [
+   "syn-ino",
+   "syn-one-and-a-half"
+  ],
+  "pearls": [
+   "INO in a young adult is multiple sclerosis until proven otherwise; in an older patient it is usually a small stroke",
+   "The lesion side is the side of the eye that cannot adduct"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    203,
+    213
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    157,
+    157
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    331,
+    331
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    96,
+    101
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Fasciculus longitudinalis medialis",
+ "subsystem": "pons",
+ "level": {
+  "region": "pons"
+ }
+}

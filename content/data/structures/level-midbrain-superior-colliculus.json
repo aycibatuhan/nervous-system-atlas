@@ -1,0 +1,251 @@
+{
+ "kind": "structure",
+ "id": "level-midbrain-superior-colliculus",
+ "name": "Midbrain: superior colliculus level",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem",
+  "superior-colliculus-l",
+  "superior-colliculus-r",
+  "red-nucleus-l",
+  "red-nucleus-r",
+  "substantia-nigra-l",
+  "substantia-nigra-r",
+  "periaqueductal-grey-l",
+  "periaqueductal-grey-r"
+ ],
+ "summary": "The upper midbrain, cut through the superior colliculi, contains the oculomotor nuclear complex, the red nucleus and the substantia nigra, and its named syndromes (Weber, Claude, Benedikt, Parinaud) are built from these. The oculomotor fibers descend from the periaqueductal gray through the red nucleus and the medial crus, so a single paramedian lesion combines a third nerve palsy with contralateral hemiparesis (Weber, crus) or contralateral tremor and ataxia (Claude/Benedikt, red nucleus). The pretectal area and the posterior commissure just above control the pupillary light reflex and vertical gaze.",
+ "anatomy": {
+  "location": "From the level of the superior colliculi up to the posterior commissure and the junction with the diencephalon; MNI z ≈ −4 to −12.",
+  "subdivisions": [
+   {
+    "name": "Superior colliculus",
+    "note": "visual reflex center receiving retinal and cortical input; drives saccades through the tectospinal and tectobulbar tracts"
+   },
+   {
+    "name": "Pretectal area and posterior commissure",
+    "note": "just rostral: pupillary light reflex relay and vertical gaze pathways"
+   },
+   {
+    "name": "Oculomotor nucleus and Edinger–Westphal nucleus",
+    "note": "ventral periaqueductal gray; motor to four extraocular muscles and levator, parasympathetic to the sphincter pupillae and ciliary muscle"
+   },
+   {
+    "name": "Oculomotor nerve fibers",
+    "note": "pass ventrally through the red nucleus and medial substantia nigra to exit in the interpeduncular fossa"
+   },
+   {
+    "name": "Red nucleus",
+    "note": "large round nucleus in the tegmentum receiving the crossed superior cerebellar peduncle; origin of the rubrospinal tract and relay to the thalamus"
+   },
+   {
+    "name": "Medial longitudinal fasciculus",
+    "note": "dorsal paramedian; ends in the oculomotor nucleus"
+   },
+   {
+    "name": "Medial lemniscus, spinothalamic and trigeminothalamic tracts",
+    "note": "lateral tegmentum en route to the thalamus"
+   },
+   {
+    "name": "Substantia nigra",
+    "note": "dopaminergic pars compacta and GABAergic pars reticulata between crus and tegmentum"
+   },
+   {
+    "name": "Crus cerebri",
+    "note": "corticospinal and corticobulbar fibers centrally, corticopontine fibers at the edges"
+   },
+   {
+    "name": "Periaqueductal gray",
+    "note": "endogenous analgesia and autonomic regulation"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Vertical gaze, pupillary constriction, eye movement (oculomotor nucleus), cerebellar-thalamic relay (red nucleus), dopamine supply to the striatum (substantia nigra), and passage of descending motor and ascending sensory tracts.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -24,
+     "z": -8
+    },
+    "label": "upper midbrain: red nuclei and substantia nigra behind the crura, superior colliculi behind the aqueduct"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -14,
+     "z": -10
+    },
+    "label": "interpeduncular fossa where the oculomotor nerves emerge"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -28,
+     "z": -6
+    },
+    "label": "superior colliculus and the posterior commissure region"
+   }
+  ],
+  "normalAppearance": "On axial T2 the red nuclei are round dark spots either side of the midline and the substantia nigra is a curved dark band behind each crus, both dark because of iron; the superior colliculi form the dorsal surface and the aqueduct is central.",
+  "pathology": [
+   {
+    "pathology": "Weber / Claude / Benedikt infarct",
+    "modality": "MRI",
+    "finding": "Paramedian restricted diffusion in the crus (Weber) or tegmentum around the red nucleus (Claude, Benedikt) from PCA or basilar tip perforators.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Dorsal midbrain (Parinaud) lesion",
+    "modality": "MRI",
+    "finding": "Pineal region tumor, tectal glioma or hydrocephalus compressing the posterior commissure and superior colliculi; sagittal T1/T2 show the mass and the flattened tectum.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Parkinson disease",
+    "modality": "MRI",
+    "finding": "Loss of the dorsal nigral hyperintensity ('swallow tail') on high-resolution SWI; routine sequences are normal.",
+    "sequence": "SWI"
+   }
+  ],
+  "sequenceOfChoice": "Axial DWI and T2/SWI through the midbrain; sagittal T2 for the tectum and pineal region"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral third nerve palsy with contralateral hemiparesis (Weber)",
+    "side": "ipsilateral",
+    "mechanism": "Oculomotor fibers in the crus and the corticospinal tract"
+   },
+   {
+    "deficit": "Ipsilateral third nerve palsy with contralateral ataxia (Claude) or tremor and chorea (Benedikt)",
+    "side": "ipsilateral",
+    "mechanism": "Oculomotor fibers passing through the red nucleus and the crossed superior cerebellar peduncle"
+   },
+   {
+    "deficit": "Vertical gaze palsy, light-near dissociation, lid retraction, convergence-retraction nystagmus (Parinaud)",
+    "side": "bilateral",
+    "mechanism": "Posterior commissure and pretectal area"
+   },
+   {
+    "deficit": "Contralateral hemisensory loss",
+    "side": "contralateral",
+    "mechanism": "Medial lemniscus and spinothalamic tract"
+   },
+   {
+    "deficit": "Parkinsonism",
+    "side": "contralateral",
+    "mechanism": "Substantia nigra pars compacta"
+   }
+  ],
+  "examination": [
+   "Ptosis, pupil size and reaction, and eye position in all directions",
+   "Up-gaze and down-gaze saccades; look for lid retraction",
+   "Limb power, coordination and tremor at rest and with action",
+   "Sensation on the opposite side"
+  ],
+  "syndromes": [
+   "syn-weber",
+   "syn-claude",
+   "syn-benedikt",
+   "syn-parinaud-dorsal-midbrain",
+   "syn-cn3-palsy",
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "Third nerve palsy plus a contralateral limb sign is the midbrain: hemiparesis means the crus (Weber), ataxia or tremor means the red nucleus (Claude, Benedikt)",
+   "Failure of up-gaze with light-near dissociation points to the dorsal midbrain and should prompt a search for hydrocephalus or a pineal mass"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    214
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    217,
+    218
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    329,
+    332
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    83,
+    85
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    94,
+    95
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    98,
+    100
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem",
+  "cross-section"
+ ],
+ "status": "draft",
+ "subsystem": "levels",
+ "level": {
+  "region": "midbrain",
+  "sub": "midbrain-superior-colliculus"
+ }
+}

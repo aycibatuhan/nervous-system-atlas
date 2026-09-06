@@ -1,0 +1,204 @@
+{
+ "kind": "structure",
+ "id": "oculomotor-nucleus",
+ "name": "Oculomotor and Edinger–Westphal nuclei",
+ "synonyms": [
+  "third nerve nucleus",
+  "oculomotor nuclear complex"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A cluster of subnuclei in the ventral periaqueductal gray of the rostral midbrain at the level of the superior colliculus. The somatic subnuclei supply the medial, superior and inferior recti, the inferior oblique and the levator palpebrae; the Edinger–Westphal nucleus supplies preganglionic parasympathetic fibers to the ciliary ganglion for pupil constriction and accommodation. Two anatomical quirks matter clinically: the superior rectus subnucleus projects to the opposite eye and the single central caudal nucleus supplies both levators, so a nuclear lesion causes bilateral ptosis and contralateral superior rectus weakness, unlike a nerve lesion.",
+ "anatomy": {
+  "location": "Ventral part of the periaqueductal gray on either side of the midline at the superior colliculus level, dorsal to the MLF; the fascicles run ventrally through the tegmentum, red nucleus and medial crus to exit in the interpeduncular fossa.",
+  "subdivisions": [
+   {
+    "name": "Somatic subnuclei",
+    "note": "medial rectus, inferior rectus, inferior oblique (ipsilateral); superior rectus (contralateral); levator palpebrae (bilateral, central caudal nucleus)"
+   },
+   {
+    "name": "Edinger–Westphal nucleus",
+    "note": "preganglionic parasympathetic for the sphincter pupillae and ciliary muscle; also the efferent relay of the light and near reflexes"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "pretectal-area",
+    "note": "light reflex, bilateral"
+   },
+   {
+    "from": "abducens-nucleus (contralateral)",
+    "via": "medial-longitudinal-fasciculus",
+    "note": "conjugate gaze"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "extraocular muscles and levator",
+    "via": "cn-03-oculomotor"
+   },
+   {
+    "to": "ganglion-ciliary",
+    "via": "cn-03-oculomotor",
+    "note": "parasympathetic"
+   }
+  ],
+  "pathways": [
+   "pathway-pupillary-light-reflex",
+   "pathway-horizontal-gaze",
+   "pathway-vertical-gaze"
+  ]
+ },
+ "function": "Moves the eye in most directions, raises the lid, constricts the pupil and accommodates the lens; receives the MLF for conjugate gaze and pretectal input for the light reflex.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -24,
+     "z": -6
+    },
+    "label": "ventral periaqueductal gray at the superior colliculus level"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -14,
+     "z": -12
+    },
+    "label": "oculomotor nerve emerging in the interpeduncular fossa"
+   }
+  ],
+  "normalAppearance": "The nuclear complex is not resolved; the nerve is visible on thin T2 leaving the interpeduncular fossa between the posterior cerebral and superior cerebellar arteries. Nuclear lesions appear as small paramedian dorsal midbrain spots.",
+  "pathology": [
+   {
+    "pathology": "Nuclear third nerve lesion",
+    "modality": "MRI",
+    "finding": "Small paramedian dorsal midbrain infarct or plaque in the periaqueductal gray with bilateral ptosis and contralateral superior rectus weakness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Fascicular third nerve lesion",
+    "modality": "MRI",
+    "finding": "Paramedian tegmental or crus lesion combining the palsy with contralateral ataxia (Claude), tremor (Benedikt) or hemiparesis (Weber).",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Compressive third nerve palsy",
+    "modality": "CTA",
+    "finding": "PComm aneurysm or uncal herniation compressing the nerve; the pupil is involved early.",
+    "sequence": "CT contrast"
+   }
+  ],
+  "sequenceOfChoice": "DWI and thin T2 for nuclear/fascicular lesions; CTA when the pupil is involved"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ptosis, eye down and out, dilated fixed pupil",
+    "side": "ipsilateral",
+    "mechanism": "Complete third nerve palsy (nerve)"
+   },
+   {
+    "deficit": "Bilateral ptosis",
+    "side": "bilateral",
+    "mechanism": "Nuclear lesion: single central caudal levator nucleus"
+   },
+   {
+    "deficit": "Weak superior rectus of the opposite eye",
+    "side": "contralateral",
+    "mechanism": "Nuclear lesion: crossed superior rectus subnucleus"
+   },
+   {
+    "deficit": "Light-near dissociation",
+    "side": "bilateral",
+    "mechanism": "Pretectal input to Edinger–Westphal spared for near but lost for light (dorsal midbrain)"
+   }
+  ],
+  "examination": [
+   "Compare ptosis in both eyes; bilateral ptosis suggests a nuclear lesion",
+   "Test elevation of each eye separately",
+   "Pupil size and reaction to light and near"
+  ],
+  "syndromes": [
+   "syn-cn3-palsy",
+   "syn-weber",
+   "syn-claude",
+   "syn-benedikt",
+   "syn-parinaud-dorsal-midbrain"
+  ],
+  "pearls": [
+   "A third nerve palsy with bilateral ptosis or contralateral up-gaze weakness is nuclear",
+   "Pupil involvement means compression until proven otherwise; pupil sparing suggests microvascular ischemia of the nerve"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    214
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    329,
+    332
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    83,
+    87
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    91,
+    95
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus nervi oculomotorii; nucleus accessorius nervi oculomotorii",
+ "subsystem": "midbrain",
+ "level": {
+  "region": "midbrain"
+ }
+}

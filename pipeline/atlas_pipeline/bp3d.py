@@ -75,6 +75,8 @@ def main_select(argv=None) -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); a = ap.parse_args(argv)
     emap = element_map(); names = concept_names()
     out_dir = WORK / "bp3d"; out_dir.mkdir(parents=True, exist_ok=True)
+    idx_path = out_dir / "index.json"
+    prev = {e["id"]: e for e in json.loads(idx_path.read_text())} if idx_path.exists() else {}
     index = []
     missing = []
     for sel in selection():
@@ -90,7 +92,9 @@ def main_select(argv=None) -> None:
         index.append({"id": sel["id"], "fma": fmas, "names": [names.get(f"FMA{f}", "?") for f in fmas], "faces": int(len(m.faces)),
                       "bounds": m.bounds.tolist()})
         print(f"  {sel['id']:44s} {len(m.faces):8d} faces  {[names.get(f'FMA{f}', '?') for f in fmas]}")
-    (out_dir / "index.json").write_text(json.dumps(index, indent=1))
+    for e in index:
+        prev[e["id"]] = e
+    idx_path.write_text(json.dumps(list(prev.values()), indent=1))
     for mid, fmas in missing:
         print(f"  [missing] {mid}: FMA {fmas} not found in v4.0 element maps")
     print(f"selected {len(index)} concept meshes -> {out_dir}")
@@ -126,7 +130,7 @@ def main_meshes(argv=None) -> None:
                         colour=sel.get("colour"), visible=sel.get("visible", False), budget=sel.get("budget", "medium"), structure_id=sel.get("structureId"))
         path = MESHES / spec.system / f"{spec.id}.glb"
         nbytes = export_glb(m, path, spec.id)
-        rec = record(spec, "bodyparts3d", None, "registered-similarity", m, path, nbytes, 0, {"fma": index[sel["id"]]["fma"], "labelVolume": None})
+        rec = record(spec, "bodyparts3d", None, "registered-affine", m, path, nbytes, 0, {"fma": index[sel["id"]]["fma"], "labelVolume": None})
         existing[rec["id"]] = rec
         print(f"  {spec.id:44s} {len(m.faces):6d} tris {nbytes/1024:7.1f} KB  bbox {np.round(m.bounds, 0).tolist()}")
     meshes_json.write_text(json.dumps(list(existing.values()), indent=1))

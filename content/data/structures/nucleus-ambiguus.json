@@ -1,0 +1,156 @@
+{
+ "kind": "structure",
+ "id": "nucleus-ambiguus",
+ "name": "Nucleus ambiguus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A column of large motor neurons buried in the reticular formation of the lateral medulla, ventromedial to the spinal trigeminal nucleus and dorsal to the olive. It supplies the striated muscles of the pharynx, larynx and upper esophagus through the glossopharyngeal and vagus nerves and the cranial part of the accessory nerve, and its most rostral part gives the stylopharyngeus its motor supply. Because it sits in the lateral medullary wedge supplied by PICA, dysphagia and hoarseness are cardinal signs of the Wallenberg syndrome.",
+ "anatomy": {
+  "location": "Lateral tegmentum of the open medulla, deep to the surface, forming a longitudinal column from the level of the cochlear nuclei down to the pyramidal decussation; ventromedial to the spinal trigeminal complex and lateral to the hypoglossal nucleus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "pharynx and larynx",
+    "via": "cn-09-glossopharyngeal / cn-10-vagus / cn-11-accessory (cranial root)"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Lower motor neurons for swallowing, phonation and elevation of the palate; its neurons also drive the cardioinhibitory vagal outflow to the heart in the caudal part.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-vertebral"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 10,
+     "y": -44,
+     "z": -45
+    },
+    "label": "lateral medullary tegmentum dorsal to the olive"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 10,
+     "y": -44,
+     "z": -45
+    },
+    "label": "column of the nucleus in the lateral medulla"
+   }
+  ],
+  "normalAppearance": "Not visible on routine MRI; localized by its position in the lateral tegmentum behind the olive. Lateral medullary infarcts that involve it show diffusion restriction in this region.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary infarct with dysphagia",
+    "modality": "MRI",
+    "finding": "Dorsolateral medullary restricted diffusion at the level of the olive.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Bulbar motor neuron disease",
+    "modality": "MRI",
+    "finding": "Normal imaging; the diagnosis is clinical and electromyographic, with tongue and palatal wasting.",
+    "sequence": "n/a"
+   }
+  ],
+  "sequenceOfChoice": "DWI through the medulla; videofluoroscopic swallow study for aspiration risk"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Dysphagia with nasal regurgitation and aspiration",
+    "side": "ipsilateral",
+    "mechanism": "Loss of pharyngeal constrictor and palatal motor neurons"
+   },
+   {
+    "deficit": "Hoarseness and reduced cough",
+    "side": "ipsilateral",
+    "mechanism": "Vocal cord paralysis from loss of laryngeal motor neurons"
+   },
+   {
+    "deficit": "Palate deviates away from the lesion, uvula pulled to the intact side",
+    "side": "ipsilateral",
+    "mechanism": "Unopposed levator veli palatini on the normal side"
+   },
+   {
+    "deficit": "Absent gag reflex on the affected side",
+    "side": "ipsilateral",
+    "mechanism": "Efferent limb of the reflex"
+   }
+  ],
+  "examination": [
+   "Ask the patient to say 'ah' and watch the palate and uvula",
+   "Listen to voice quality and cough strength",
+   "Bedside water swallow test before allowing oral intake",
+   "Gag reflex on each side"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-vagal-palsy",
+   "syn-jugular-foramen-vernet"
+  ],
+  "pearls": [
+   "Dysphagia plus crossed sensory loss and Horner syndrome is the lateral medulla",
+   "Keep Wallenberg patients nil by mouth until swallowing is assessed: aspiration is the main early cause of death"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    204
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    341,
+    346
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    82
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    125,
+    126
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus ambiguus",
+ "subsystem": "medulla",
+ "level": {
+  "region": "medulla"
+ }
+}

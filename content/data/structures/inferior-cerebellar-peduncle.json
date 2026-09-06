@@ -1,0 +1,149 @@
+{
+ "kind": "structure",
+ "id": "inferior-cerebellar-peduncle",
+ "name": "Inferior cerebellar peduncle",
+ "synonyms": [
+  "restiform body"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "inferior-cerebellar-peduncle-l",
+  "inferior-cerebellar-peduncle-r"
+ ],
+ "summary": "The thick bundle that connects the medulla to the cerebellum, forming the posterolateral border of the upper medulla and the lower lateral wall of the fourth ventricle. It carries mostly afferent fibers: the posterior spinocerebellar and cuneocerebellar tracts (unconscious proprioception from the ipsilateral body), the olivocerebellar climbing fibers (from the contralateral inferior olive) and vestibular and reticular inputs; its smaller juxtarestiform part carries fibers between the vestibular nuclei and the cerebellum in both directions.",
+ "anatomy": {
+  "location": "Posterolateral medulla behind the olive and the spinal trigeminal complex, sweeping upward and backward into the cerebellum medial to the middle peduncle.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-posterior-spinocerebellar"
+  ]
+ },
+ "function": "Brings proprioceptive, olivary and vestibular information into the cerebellum and returns fastigial output to the vestibular nuclei; its lesion produces ipsilateral limb ataxia because the cerebellum controls the same side of the body.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-vertebral"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 14,
+     "y": -44,
+     "z": -42
+    },
+    "label": "posterolateral medulla, the peduncle entering the cerebellum"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 14,
+     "y": -46,
+     "z": -40
+    },
+    "label": "course from the medulla to the cerebellar white matter"
+   }
+  ],
+  "normalAppearance": "Compact white matter at the posterolateral corner of the upper medulla on axial T2 and the tract mesh in this atlas; on diffusion tractography it is the main medullary input to the cerebellum.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary infarct with ataxia",
+    "modality": "MRI",
+    "finding": "Dorsolateral medullary restricted diffusion including the peduncle.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Multiple sclerosis lesion of the peduncle",
+    "modality": "MRI",
+    "finding": "T2/FLAIR-bright plaque in the posterolateral medulla or peduncle with ipsilateral limb ataxia.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "DWI and FLAIR through the medulla and cerebellum"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia and dysmetria",
+    "side": "ipsilateral",
+    "mechanism": "Interruption of proprioceptive and olivary input to the ipsilateral cerebellum"
+   },
+   {
+    "deficit": "Lateropulsion and gait ataxia",
+    "side": "ipsilateral",
+    "mechanism": "Vestibulocerebellar fibers in the juxtarestiform body"
+   },
+   {
+    "deficit": "Nystagmus",
+    "side": "n/a",
+    "mechanism": "Vestibulocerebellar connections"
+   }
+  ],
+  "examination": [
+   "Finger-nose and heel-shin on each side",
+   "Tandem gait and Romberg",
+   "Observe nystagmus and the direction of falling"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary"
+  ],
+  "pearls": [
+   "Ataxia in the lateral medullary syndrome comes from this peduncle and the cerebellum, not from the cortex",
+   "Ipsilateral ataxia with contralateral body pain loss and ipsilateral facial pain loss is the lateral medulla"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    204
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    239
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    77,
+    78
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Pedunculus cerebellaris inferior",
+ "subsystem": "peduncles",
+ "level": {
+  "region": "medulla"
+ }
+}

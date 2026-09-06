@@ -1,0 +1,190 @@
+{
+ "kind": "structure",
+ "id": "cerebral-peduncle-crus",
+ "name": "Crus cerebri (cerebral peduncle)",
+ "synonyms": [
+  "basis pedunculi",
+  "cerebral peduncle"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The paired ventral pillars of the midbrain, made entirely of descending fibers: corticospinal and corticobulbar fibers occupy the middle three-fifths, flanked by frontopontine fibers medially and parieto-temporo-occipitopontine fibers laterally. The oculomotor nerve emerges from the medial edge into the interpeduncular fossa, and the uncus of the temporal lobe lies against the lateral edge, so a crus lesion produces the Weber syndrome and a herniating uncus produces contralateral hemiparesis or, when it pushes the opposite crus against the tentorium, a falsely localizing ipsilateral hemiparesis (Kernohan notch).",
+ "anatomy": {
+  "location": "Ventral midbrain on each side of the interpeduncular fossa, separated from the tegmentum by the substantia nigra, continuous below with the basis pontis and above with the posterior limb of the internal capsule.",
+  "subdivisions": [
+   {
+    "name": "Medial fifth",
+    "note": "frontopontine fibers"
+   },
+   {
+    "name": "Middle three-fifths",
+    "note": "corticobulbar (medial) and corticospinal (lateral) fibers, arm medial to leg"
+   },
+   {
+    "name": "Lateral fifth",
+    "note": "parieto-temporo-occipitopontine fibers"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": [
+   "pathway-lateral-corticospinal",
+   "pathway-corticobulbar"
+  ]
+ },
+ "function": "Conducts all corticofugal motor traffic from the internal capsule to the pons and spinal cord.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-anterior-choroidal",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-anterior-choroidal",
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 10,
+     "y": -18,
+     "z": -12
+    },
+    "label": "crura as the two anterior bulges of the midbrain flanking the interpeduncular fossa"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 10,
+     "y": -18,
+     "z": -12
+    },
+    "label": "crus continuing up into the internal capsule"
+   }
+  ],
+  "normalAppearance": "The crura are dark compact white matter on T2 forming the anterior contour of the midbrain; the substantia nigra behind them is darker still on T2*. Wallerian degeneration after a hemispheric stroke thins and brightens the ipsilateral crus.",
+  "pathology": [
+   {
+    "pathology": "Weber syndrome infarct",
+    "modality": "MRI",
+    "finding": "Paramedian restricted diffusion in the medial crus including the emerging oculomotor fibers.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Uncal herniation with Kernohan notch",
+    "modality": "MRI",
+    "finding": "Medial temporal lobe displaced over the tentorial edge compressing the ipsilateral crus and pushing the midbrain so the contralateral crus is notched by the tentorium; T2 signal in the compressed peduncle.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Wallerian degeneration",
+    "modality": "MRI",
+    "finding": "Atrophy and T2 hyperintensity of the crus months after a large MCA infarct.",
+    "sequence": "T2",
+    "timing": "From about 4–10 weeks after the stroke"
+   }
+  ],
+  "sequenceOfChoice": "DWI and T2 through the midbrain"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemiparesis including the lower face and tongue",
+    "side": "contralateral",
+    "mechanism": "Corticospinal and corticobulbar fibers in the middle of the crus"
+   },
+   {
+    "deficit": "Ipsilateral third nerve palsy with the hemiparesis (Weber)",
+    "side": "ipsilateral",
+    "mechanism": "Oculomotor fascicle exiting through the medial crus"
+   },
+   {
+    "deficit": "Ipsilateral hemiparesis in uncal herniation",
+    "side": "ipsilateral",
+    "mechanism": "Contralateral crus compressed against the tentorial edge (Kernohan notch, false localizing)"
+   }
+  ],
+  "examination": [
+   "Limb power, facial and tongue movement on the side opposite the lesion",
+   "Pupils and eye movements",
+   "In a comatose patient with a dilated pupil, remember the hemiparesis may be on the same side as the pupil"
+  ],
+  "syndromes": [
+   "syn-weber",
+   "syn-uncal-herniation"
+  ],
+  "pearls": [
+   "Third nerve palsy plus contralateral hemiparesis is the crus (Weber)",
+   "A dilated pupil with ipsilateral hemiparesis means the herniation is on the side of the pupil, not the weakness"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    209,
+    214
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    217,
+    218
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    34,
+    34
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    94,
+    94
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    270,
+    270
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Crus cerebri",
+ "subsystem": "midbrain",
+ "level": {
+  "region": "midbrain"
+ }
+}

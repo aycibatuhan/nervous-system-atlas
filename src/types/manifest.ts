@@ -15,7 +15,7 @@ export interface ManifestMesh {
   source: string;
   license: string;
   nc: boolean;
-  alignment: 'native-mni' | 'nlin6-identity' | 'registered-similarity';
+  alignment: 'native-mni' | 'nlin6-identity' | 'registered-similarity' | 'registered-affine';
   file: string;
   bytes: number;
   triangles: number;

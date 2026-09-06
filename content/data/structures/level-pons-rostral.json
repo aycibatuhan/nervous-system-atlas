@@ -1,0 +1,218 @@
+{
+ "kind": "structure",
+ "id": "level-pons-rostral",
+ "name": "Rostral pons",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem",
+  "cn-05-trigeminal-l",
+  "cn-05-trigeminal-r",
+  "raphe-median"
+ ],
+ "summary": "The upper pons is the level of the trigeminal nerve: its motor and principal sensory nuclei sit in the lateral tegmentum and the root leaves the lateral surface between the basis and the middle cerebellar peduncle. The basis pontis is at its widest, the superior cerebellar peduncles form the lateral walls of the narrowing fourth ventricle, and the lateral lemniscus carries auditory fibers up toward the inferior colliculus. The locus coeruleus lies in the floor of the ventricle near the upper end of this level.",
+ "anatomy": {
+  "location": "From the trigeminal root entry zone up to the isthmus where the pons meets the midbrain; MNI z ≈ −24 to −32.",
+  "subdivisions": [
+   {
+    "name": "Basis pontis",
+    "note": "corticospinal, corticobulbar and corticopontine fibers among the pontine nuclei; transverse fibers to the middle cerebellar peduncle"
+   },
+   {
+    "name": "Trigeminal motor nucleus",
+    "note": "medial to the principal sensory nucleus; motor root to the muscles of mastication"
+   },
+   {
+    "name": "Principal (chief) sensory nucleus of V",
+    "note": "discriminative touch from the face; lateral tegmentum at the root entry"
+   },
+   {
+    "name": "Mesencephalic nucleus of V",
+    "note": "proprioception from the jaw muscles; extends into the midbrain"
+   },
+   {
+    "name": "Medial lemniscus, trigeminal lemniscus and spinothalamic tract",
+    "note": "a horizontal band of ascending sensory fibers across the ventral tegmentum"
+   },
+   {
+    "name": "Lateral lemniscus",
+    "note": "ascending auditory fibers on the lateral edge of the tegmentum"
+   },
+   {
+    "name": "Superior cerebellar peduncle",
+    "note": "dorsolateral, forming the wall of the fourth ventricle, carrying dentate outflow toward the red nucleus and thalamus"
+   },
+   {
+    "name": "Medial longitudinal fasciculus",
+    "note": "dorsal paramedian"
+   },
+   {
+    "name": "Locus coeruleus",
+    "note": "pigmented noradrenergic nucleus in the lateral floor of the upper fourth ventricle"
+   },
+   {
+    "name": "Pontine reticular formation",
+    "note": "central tegmentum; arousal and motor modulation"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Relays facial touch and controls chewing through the trigeminal system, carries the auditory pathway toward the midbrain, transmits cerebellar outflow in the superior peduncle, and houses part of the ascending reticular activating system.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "arteries-pontine",
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-sca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -28,
+     "z": -28
+    },
+    "label": "mid-to-upper pons at the trigeminal root entry"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 28,
+     "y": -30,
+     "z": -30
+    },
+    "label": "trigeminal root leaving the lateral pons"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -30,
+     "z": -28
+    },
+    "label": "superior cerebellar peduncles flanking the upper fourth ventricle"
+   }
+  ],
+  "normalAppearance": "On axial T2 the trigeminal roots are seen as paired oblique dark bands crossing the prepontine cistern from the lateral pons toward Meckel's cave; the superior cerebellar peduncles border the ventricle posterolaterally.",
+  "pathology": [
+   {
+    "pathology": "Trigeminal root entry zone lesion",
+    "modality": "MRI",
+    "finding": "T2/FLAIR-bright plaque at the root entry zone (multiple sclerosis) or neurovascular contact with the SCA on high-resolution T2, presenting as trigeminal neuralgia or facial numbness.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Rostral paramedian pontine infarct",
+    "modality": "MRI",
+    "finding": "Wedge of restricted diffusion in the upper basis pontis; ataxic hemiparesis or dysarthria–clumsy hand.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Pontine glioma",
+    "modality": "MRI",
+    "finding": "Diffuse expansion of the pons with T2 hyperintensity engulfing the basilar artery, mostly in children.",
+    "sequence": "T2"
+   }
+  ],
+  "sequenceOfChoice": "Thin axial T2/FLAIR and DWI; CISS/FIESTA for the trigeminal root"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral facial numbness and weak jaw deviating toward the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Principal sensory and motor trigeminal nuclei or the root"
+   },
+   {
+    "deficit": "Contralateral hemiparesis",
+    "side": "contralateral",
+    "mechanism": "Corticospinal fibers in the basis pontis"
+   },
+   {
+    "deficit": "Contralateral loss of all sensory modalities on the body",
+    "side": "contralateral",
+    "mechanism": "Medial lemniscus and spinothalamic tract lying together in the tegmentum"
+   },
+   {
+    "deficit": "Ipsilateral limb ataxia",
+    "side": "ipsilateral",
+    "mechanism": "Superior cerebellar peduncle before its decussation, or pontocerebellar fibers"
+   },
+   {
+    "deficit": "Ipsilateral Horner syndrome",
+    "side": "ipsilateral",
+    "mechanism": "Descending sympathetic fibers in the lateral tegmentum"
+   }
+  ],
+  "examination": [
+   "Corneal reflex, facial light touch and pin-prick in all three divisions",
+   "Jaw opening and masseter bulk",
+   "Limb power and coordination",
+   "Hearing by whisper test"
+  ],
+  "syndromes": [
+   "syn-trigeminal-neuralgia",
+   "syn-lacunar-ataxic-hemiparesis",
+   "syn-lacunar-dysarthria-clumsy-hand"
+  ],
+  "pearls": [
+   "Trigeminal signs with contralateral hemiparesis or hemisensory loss localize to the rostral pons",
+   "At this level the two sensory systems lie side by side, so a single lesion can abolish all modalities on the contralateral body while the ipsilateral face is affected"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    207,
+    208
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    335
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    117,
+    120
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem",
+  "cross-section"
+ ],
+ "status": "draft",
+ "subsystem": "levels",
+ "level": {
+  "region": "pons",
+  "sub": "pons-rostral"
+ }
+}

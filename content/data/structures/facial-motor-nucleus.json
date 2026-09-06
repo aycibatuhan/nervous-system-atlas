@@ -1,0 +1,177 @@
+{
+ "kind": "structure",
+ "id": "facial-motor-nucleus",
+ "name": "Facial motor nucleus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The facial motor nucleus sits in the ventrolateral tegmentum of the caudal pons. Its axons take a remarkable detour: they run dorsomedially, loop over the abducens nucleus as the internal genu (raising the facial colliculus), and then pass ventrolaterally to leave the pontomedullary junction. The nucleus supplies all muscles of facial expression plus the stapedius, stylohyoid and posterior belly of the digastric. Its corticobulbar input is bilateral for the upper face but mainly contralateral for the lower face, which is the anatomical basis for distinguishing central from peripheral facial weakness.",
+ "anatomy": {
+  "location": "Ventrolateral pontine tegmentum at the level of the facial colliculus, dorsal to the superior olivary complex and ventrolateral to the abducens nucleus; the internal genu lies dorsal to the abducens nucleus.",
+  "subdivisions": [
+   {
+    "name": "Dorsal (upper face) part",
+    "note": "frontalis and orbicularis oculi; bilateral cortical input"
+   },
+   {
+    "name": "Ventral (lower face) part",
+    "note": "perioral muscles; contralateral cortical input"
+   },
+   {
+    "name": "Medial and intermediate groups",
+    "note": "stapedius, stylohyoid, posterior digastric, platysma"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "gyrus-precentral",
+    "via": "pathway-corticobulbar",
+    "note": "bilateral to upper face, contralateral to lower face"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "muscles of facial expression",
+    "via": "cn-07-facial"
+   }
+  ],
+  "pathways": [
+   "pathway-corticobulbar"
+  ]
+ },
+ "function": "Lower motor neurons for facial expression, eye closure, and the stapedius reflex that dampens loud sounds; efferent limb of the corneal and blink reflexes.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-aica"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 14,
+     "y": -34,
+     "z": -38
+    },
+    "label": "ventrolateral caudal pontine tegmentum"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -34,
+     "z": -36
+    },
+    "label": "internal genu over the abducens nucleus"
+   }
+  ],
+  "normalAppearance": "Not resolved on routine MRI. The intrapontine facial fibers and the nerve in the cerebellopontine angle and internal acoustic meatus are seen on high-resolution T2; enhancement of the nerve in the canal is seen in Bell palsy.",
+  "pathology": [
+   {
+    "pathology": "Pontine infarct with facial palsy",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the ventrolateral or paramedian caudal pons; peripheral-type facial weakness with contralateral hemiparesis (Millard–Gubler).",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Bell palsy",
+    "modality": "MRI",
+    "finding": "Enhancement of the labyrinthine and geniculate segments of the facial nerve on contrast T1 in the temporal bone; the pons is normal.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "DWI for pontine lesions; T1+Gd of the temporal bone when a peripheral cause is suspected"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Weakness of the whole ipsilateral face including the forehead",
+    "side": "ipsilateral",
+    "mechanism": "Nucleus or nerve: lower motor neuron lesion"
+   },
+   {
+    "deficit": "Weakness of the lower face only, forehead spared",
+    "side": "contralateral",
+    "mechanism": "Supranuclear corticobulbar lesion: the upper face has bilateral cortical input"
+   },
+   {
+    "deficit": "Hyperacusis",
+    "side": "ipsilateral",
+    "mechanism": "Loss of stapedius motor neurons"
+   },
+   {
+    "deficit": "Incomplete eye closure with Bell phenomenon",
+    "side": "ipsilateral",
+    "mechanism": "Orbicularis oculi weakness"
+   }
+  ],
+  "examination": [
+   "Raise eyebrows, close eyes tightly, show teeth, puff cheeks; compare the forehead with the mouth",
+   "Corneal reflex and blink to threat",
+   "Ask about loud-sound intolerance and taste change (taste points to the nerve distal to the pons)"
+  ],
+  "syndromes": [
+   "syn-facial-palsy-peripheral-vs-central",
+   "syn-millard-gubler",
+   "syn-aica-lateral-pontine"
+  ],
+  "pearls": [
+   "Forehead involved: nucleus or nerve. Forehead spared: cortex or corticobulbar tract",
+   "A peripheral facial palsy with hemiparesis of the opposite limbs is a pontine lesion, not Bell palsy"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    205,
+    207
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    337,
+    339
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    120,
+    124
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus nervi facialis",
+ "subsystem": "pons",
+ "level": {
+  "region": "pons"
+ }
+}

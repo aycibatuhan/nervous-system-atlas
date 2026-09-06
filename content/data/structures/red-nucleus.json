@@ -1,0 +1,202 @@
+{
+ "kind": "structure",
+ "id": "red-nucleus",
+ "name": "Red nucleus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "red-nucleus-l",
+  "red-nucleus-r"
+ ],
+ "summary": "A large, iron-rich, ovoid nucleus in the midbrain tegmentum at the level of the superior colliculus, pink in fresh specimens and dark on T2-weighted MRI. It receives the crossed outflow of the cerebellar dentate and interposed nuclei through the superior cerebellar peduncle and input from the motor cortex, and it sends the rubrospinal tract (crossed, to flexor motor neurons) and the central tegmental tract (uncrossed, to the inferior olive). The oculomotor fascicles pass straight through it, which is why red nucleus lesions come packaged with a third nerve palsy as the Claude and Benedikt syndromes.",
+ "anatomy": {
+  "location": "Central tegmentum of the rostral midbrain, dorsomedial to the substantia nigra and ventrolateral to the periaqueductal gray, extending up into the caudal diencephalon; the two nuclei flank the midline about 6–8 mm apart.",
+  "subdivisions": [
+   {
+    "name": "Magnocellular part",
+    "note": "caudal; origin of the rubrospinal tract, small in humans"
+   },
+   {
+    "name": "Parvocellular part",
+    "note": "rostral, the bulk of the nucleus in humans; relays cerebellar and cortical input to the inferior olive through the central tegmental tract"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "dentate-nucleus and interposed nuclei (contralateral)",
+    "via": "superior-cerebellar-peduncle"
+   },
+   {
+    "from": "gyrus-precentral",
+    "via": "corticorubral fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "spinal-cord (contralateral)",
+    "via": "rubrospinal tract"
+   },
+   {
+    "to": "inferior-olivary-nucleus (ipsilateral)",
+    "via": "central tegmental tract"
+   },
+   {
+    "to": "thalamus-va-vl"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-rubrospinal"
+  ]
+ },
+ "function": "Node of the cerebello-rubro-thalamic and rubro-olivary loops that refine limb movement; a minor descending motor pathway (rubrospinal) favoring upper limb flexors, which becomes relevant in decorticate posturing.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 6,
+     "y": -22,
+     "z": -8
+    },
+    "label": "paired dark round nuclei in the midbrain tegmentum at the superior colliculus level"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 6,
+     "y": -22,
+     "z": -8
+    },
+    "label": "red nuclei above the substantia nigra"
+   }
+  ],
+  "normalAppearance": "Distinctly dark round nuclei on T2 and SWI because of iron, easily identified on axial slices through the upper midbrain behind the substantia nigra; on T1 they are nearly isointense.",
+  "pathology": [
+   {
+    "pathology": "Claude / Benedikt infarct",
+    "modality": "MRI",
+    "finding": "Paramedian midbrain tegmental restricted diffusion involving the red nucleus and the adjacent oculomotor fascicles.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Holmes tremor",
+    "modality": "MRI",
+    "finding": "Lesion (infarct, hemorrhage, demyelination) of the red nucleus region or the dentatorubrothalamic fibers, appearing weeks to months before a slow rest-postural-intention tremor.",
+    "sequence": "T2",
+    "timing": "Tremor emerges 1–24 months after the lesion"
+   }
+  ],
+  "sequenceOfChoice": "Axial DWI and T2/SWI through the midbrain"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral ataxia and intention tremor (Claude)",
+    "side": "contralateral",
+    "mechanism": "Crossed dentatothalamic fibers passing through and around the nucleus"
+   },
+   {
+    "deficit": "Contralateral coarse tremor, chorea and athetosis (Benedikt)",
+    "side": "contralateral",
+    "mechanism": "Red nucleus plus the adjacent substantia nigra and cerebellothalamic fibers"
+   },
+   {
+    "deficit": "Ipsilateral third nerve palsy",
+    "side": "ipsilateral",
+    "mechanism": "Oculomotor fascicles traversing the nucleus"
+   },
+   {
+    "deficit": "Decorticate posturing (arms flexed)",
+    "side": "bilateral",
+    "mechanism": "Lesions above the red nucleus leave the rubrospinal flexor drive to the arms unopposed"
+   }
+  ],
+  "examination": [
+   "Finger-nose for terminal tremor and past-pointing",
+   "Observe the arm at rest, with posture and with action for a Holmes tremor",
+   "Ptosis, pupil and eye movements"
+  ],
+  "syndromes": [
+   "syn-claude",
+   "syn-benedikt"
+  ],
+  "pearls": [
+   "Third nerve palsy plus contralateral tremor or ataxia localizes to the red nucleus region",
+   "Decorticate posture means the lesion is above the red nucleus; decerebrate posture means it is below"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    211,
+    214
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    217,
+    218
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    157,
+    157
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    94,
+    95
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    242,
+    245
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus ruber",
+ "subsystem": "midbrain",
+ "level": {
+  "region": "midbrain"
+ }
+}

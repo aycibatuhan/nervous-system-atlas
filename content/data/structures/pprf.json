@@ -1,0 +1,139 @@
+{
+ "kind": "structure",
+ "id": "pprf",
+ "name": "Paramedian pontine reticular formation",
+ "synonyms": [
+  "PPRF",
+  "pontine horizontal gaze center"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A cluster of burst neurons in the pontine reticular formation adjacent to the abducens nucleus that generates horizontal saccades. It receives commands from the contralateral frontal eye field and the ipsilateral superior colliculus and fires the abducens nucleus on its own side, so the eyes jump toward the side of the active PPRF. A unilateral lesion abolishes voluntary and reflex saccades toward the lesion, but because the vestibular pathways bypass it, the oculocephalic reflex can still drive the eyes there.",
+ "anatomy": {
+  "location": "Ventral and lateral to the abducens nucleus in the paramedian tegmentum of the caudal pons, extending rostrally toward the trochlear level.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "frontal-eye-field",
+    "note": "contralateral"
+   },
+   {
+    "from": "superior-colliculus",
+    "note": "ipsilateral"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "abducens-nucleus",
+    "note": "ipsilateral"
+   }
+  ],
+  "pathways": [
+   "pathway-horizontal-gaze"
+  ]
+ },
+ "function": "Saccade generation in the horizontal plane; integrates cortical, collicular and cerebellar commands and feeds the abducens nucleus.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 5,
+     "y": -32,
+     "z": -35
+    },
+    "label": "paramedian caudal pontine tegmentum anterior to the abducens nucleus"
+   }
+  ],
+  "normalAppearance": "Not resolved on routine MRI; localized to the paramedian tegmentum of the caudal pons. Lesions here produce the same imaging as abducens nuclear lesions: small paramedian tegmental spots on FLAIR or DWI.",
+  "pathology": [
+   {
+    "pathology": "Paramedian pontine tegmental infarct",
+    "modality": "MRI",
+    "finding": "Small restricted-diffusion lesion in the paramedian tegmentum with ipsilateral saccadic gaze palsy.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Thin FLAIR/DWI"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of horizontal saccades toward the side of the lesion, with the eyes deviated away",
+    "side": "ipsilateral",
+    "mechanism": "Burst neurons for ipsilateral gaze"
+   },
+   {
+    "deficit": "Preserved vestibulo-ocular reflex toward the lesion",
+    "side": "ipsilateral",
+    "mechanism": "Vestibular input reaches the abducens nucleus directly"
+   },
+   {
+    "deficit": "Wrong-way gaze deviation compared with a hemispheric lesion",
+    "side": "contralateral",
+    "mechanism": "Pontine lesion: eyes look away from the lesion and toward the hemiparesis"
+   }
+  ],
+  "examination": [
+   "Voluntary saccades and pursuit to each side",
+   "Oculocephalic (doll's eye) maneuver to separate PPRF from nuclear lesions",
+   "Note the direction of resting gaze deviation relative to the hemiparesis"
+  ],
+  "syndromes": [
+   "syn-horizontal-gaze-palsy-pontine",
+   "syn-one-and-a-half"
+  ],
+  "pearls": [
+   "Hemispheric lesion: eyes look toward the lesion, away from the weak limbs. Pontine lesion: eyes look away from the lesion, toward the weak limbs",
+   "A gaze palsy overcome by head turning is supranuclear (PPRF); one that is not is nuclear (abducens)"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    331,
+    331
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    79,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    96,
+    98
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "subsystem": "pons",
+ "level": {
+  "region": "pons"
+ }
+}

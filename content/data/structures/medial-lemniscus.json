@@ -1,0 +1,167 @@
+{
+ "kind": "structure",
+ "id": "medial-lemniscus",
+ "name": "Medial lemniscus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "tract-medial-lemniscus-l",
+  "tract-medial-lemniscus-r"
+ ],
+ "summary": "The medial lemniscus is the second-order bundle of the dorsal column pathway. It forms in the lower medulla from the internal arcuate fibers of the gracile and cuneate nuclei, crosses immediately in the sensory decussation, and climbs through the medulla, pons and midbrain to the ventral posterolateral nucleus of the thalamus, carrying discriminative touch, vibration and conscious proprioception from the opposite half of the body. Its position rotates as it ascends, which is worth remembering when localizing brainstem infarcts.",
+ "anatomy": {
+  "location": "Medulla: a vertical band dorsal to the pyramid on each side of the midline, leg fibers ventral and arm fibers dorsal. Pons: rotated to a horizontal band across the ventral tegmentum behind the trapezoid body, arm medial and leg lateral. Midbrain: the lateral tegmentum, curving dorsolaterally toward the thalamus alongside the spinothalamic tract.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "nucleus-gracilis-cuneatus",
+    "via": "internal arcuate fibers",
+    "note": "second-order neurons"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "thalamus-vpl",
+    "note": "third-order relay to the postcentral gyrus"
+   }
+  ],
+  "pathways": [
+   "pathway-dcml"
+  ]
+ },
+ "function": "Conveys fine touch, two-point discrimination, vibration and joint position sense from the contralateral body to the thalamus; the trigeminal lemniscus joins it in the pons carrying the same modalities from the face.",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery",
+   "arteries-pontine",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 4,
+     "y": -44,
+     "z": -50
+    },
+    "label": "medulla: forming behind the pyramids"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 6,
+     "y": -30,
+     "z": -30
+    },
+    "label": "pons: horizontal band in the ventral tegmentum"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": -24,
+     "z": -10
+    },
+    "label": "midbrain: lateral tegmentum"
+   }
+  ],
+  "normalAppearance": "Not distinguishable from surrounding tegmentum on routine MRI; the HCP tract mesh in this atlas shows its course from the medulla to the thalamus. On diffusion tractography it is a paramedian ascending bundle that fans laterally in the midbrain.",
+  "pathology": [
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Paramedian ventral medullary restriction that includes the lemniscus, giving contralateral loss of vibration and position sense with hemiparesis.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Pontine tegmental infarct or demyelination",
+    "modality": "MRI",
+    "finding": "Small tegmental lesion behind the basis pontis causing contralateral hemisensory loss (pure sensory stroke of brainstem origin).",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "DWI and thin T2 through the brainstem"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of vibration, position sense and discriminative touch on the opposite side of the body",
+    "side": "contralateral",
+    "mechanism": "The tract has already crossed in the lower medulla"
+   },
+   {
+    "deficit": "Sensory ataxia",
+    "side": "contralateral",
+    "mechanism": "Loss of proprioceptive feedback to the thalamus and cortex"
+   },
+   {
+    "deficit": "Tingling paresthesias of the opposite face and body",
+    "side": "contralateral",
+    "mechanism": "Pontine lesion involving both the medial and trigeminal lemnisci"
+   }
+  ],
+  "examination": [
+   "Vibration at the malleoli and fingers, joint position sense at the toes",
+   "Two-point discrimination and stereognosis",
+   "Romberg test and heel-shin with eyes closed"
+  ],
+  "syndromes": [
+   "syn-dejerine-medial-medullary"
+  ],
+  "pearls": [
+   "Proprioceptive loss with weakness on the same side of the body (both contralateral to the lesion) plus an ipsilateral cranial nerve sign means the lesion is in the brainstem above the sensory decussation",
+   "In the medulla the medial lemniscus is medial and the spinothalamic tract is lateral, so medial and lateral medullary infarcts split the two sensory modalities"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    213
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    147,
+    149
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    77
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    36,
+    38
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Lemniscus medialis",
+ "subsystem": "ascending-tracts",
+ "level": {
+  "region": "medulla"
+ }
+}

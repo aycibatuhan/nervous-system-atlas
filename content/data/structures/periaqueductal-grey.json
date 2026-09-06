@@ -1,0 +1,158 @@
+{
+ "kind": "structure",
+ "id": "periaqueductal-grey",
+ "name": "Periaqueductal gray",
+ "synonyms": [
+  "PAG",
+  "central gray"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "periaqueductal-grey-l",
+  "periaqueductal-grey-r"
+ ],
+ "summary": "The sleeve of gray matter around the cerebral aqueduct throughout the midbrain. It is the brain's descending pain-control center: opioid-sensitive neurons here drive the raphe nuclei and locus coeruleus, which in turn suppress pain transmission in the dorsal horn. It also coordinates defensive behaviors, vocalization, micturition and autonomic responses to threat. It surrounds the oculomotor and trochlear nuclei and the MLF, and it is one of the classic sites of Wernicke encephalopathy.",
+ "anatomy": {
+  "location": "Concentric gray matter around the aqueduct from the posterior commissure down to the upper fourth ventricle, bordered ventrally by the oculomotor and trochlear nuclei and the MLF and dorsally by the tectum.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "raphe-nuclei",
+    "note": "descending analgesia"
+   },
+   {
+    "to": "locus-coeruleus"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Endogenous analgesia (opioid and stimulation-produced), fight-or-flight and freezing responses, vocalization, and control of micturition through the pontine micturition center.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -28,
+     "z": -8
+    },
+    "label": "gray matter ring around the aqueduct"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -28,
+     "z": -8
+    },
+    "label": "periaqueductal gray along the aqueduct"
+   }
+  ],
+  "normalAppearance": "Slightly brighter than the surrounding tegmentum on T2 as a ring around the aqueduct; symmetrical FLAIR hyperintensity here is abnormal.",
+  "pathology": [
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Symmetrical FLAIR hyperintensity of the periaqueductal gray, medial thalami, mammillary bodies and tectum; may enhance acutely.",
+    "sequence": "FLAIR",
+    "timing": "Changes can resolve within days of thiamine"
+   },
+   {
+    "pathology": "Periaqueductal demyelination or infarct",
+    "modality": "MRI",
+    "finding": "Small lesion around the aqueduct causing vertical gaze abnormalities, INO or pupil changes.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "Axial FLAIR and DWI through the midbrain; give thiamine before confirming"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of descending pain inhibition, allodynia",
+    "side": "n/a",
+    "mechanism": "Periaqueductal analgesia circuitry"
+   },
+   {
+    "deficit": "Ophthalmoplegia and gaze palsies in Wernicke encephalopathy",
+    "side": "bilateral",
+    "mechanism": "Adjacent oculomotor, trochlear and MLF structures"
+   },
+   {
+    "deficit": "Aqueductal obstruction with hydrocephalus",
+    "side": "n/a",
+    "mechanism": "Swelling or mass in the surrounding gray"
+   }
+  ],
+  "examination": [
+   "Eye movements and pupils in any confused, ataxic patient with nutritional risk",
+   "Gait and nystagmus",
+   "Ask about deep brain stimulation history in chronic pain patients"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Confusion, ataxia and ophthalmoplegia with periaqueductal FLAIR change is Wernicke encephalopathy: thiamine first, imaging second",
+   "Periaqueductal stimulation is a target for intractable pain because of the opioid analgesia system here"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    211,
+    213
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    299,
+    301
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    233
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Substantia grisea centralis",
+ "subsystem": "midbrain",
+ "level": {
+  "region": "midbrain"
+ }
+}

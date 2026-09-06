@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "inferior-olivary-nucleus",
+ "name": "Inferior olivary nucleus",
+ "synonyms": [
+  "inferior olive"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A crumpled bag of gray matter that produces the olive, the oval bulge on the anterolateral medulla behind the pyramid. It receives input from the cerebral cortex, red nucleus (central tegmental tract) and spinal cord and sends climbing fibers through the contralateral inferior cerebellar peduncle to the cerebellar cortex, where they teach the Purkinje cells during motor learning. Clinically it matters for two reasons: its location defines the level of the lateral medullary syndrome, and interruption of its inputs causes hypertrophic olivary degeneration with palatal tremor.",
+ "anatomy": {
+  "location": "Ventrolateral medulla at the level of the open medulla, dorsolateral to the pyramid and ventral to the inferior cerebellar peduncle; the hypoglossal rootlets emerge between the pyramid and the olive, and the IX–X–XI rootlets behind the olive.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "red-nucleus",
+    "via": "central tegmental tract"
+   },
+   {
+    "from": "spinal-cord",
+    "via": "spino-olivary tract"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "cerebellum",
+    "via": "inferior-cerebellar-peduncle",
+    "note": "climbing fibers, crossed"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "Source of all climbing fibers to the cerebellum; compares intended and actual movement signals and drives cerebellar motor learning; part of the Guillain–Mollaret triangle with the dentate and red nuclei.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "artery-pica",
+   "anterior-spinal-artery"
+  ],
+  "territories": [
+   "territory-pica-lateral-medulla",
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 8,
+     "y": -44,
+     "z": -46
+    },
+    "label": "olive bulging from the anterolateral medulla behind the pyramid"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 8,
+     "y": -44,
+     "z": -46
+    },
+    "label": "olive along the lateral medulla"
+   }
+  ],
+  "normalAppearance": "The olive is the anterolateral bulge of the medulla on axial T2, faintly darker than white matter on T1. In hypertrophic olivary degeneration it becomes enlarged and T2-bright without enhancement.",
+  "pathology": [
+   {
+    "pathology": "Hypertrophic olivary degeneration",
+    "modality": "MRI",
+    "finding": "Enlarged, T2/FLAIR-hyperintense olive months after a lesion of the contralateral dentate or ipsilateral central tegmental tract; presents with palatal tremor and oscillopsia.",
+    "sequence": "T2",
+    "timing": "Hypertrophy from ~4–6 months, may persist for years",
+    "pitfalls": "Do not mistake the swollen bright olive for a tumor or new infarct: no restriction, no enhancement, a matching remote lesion in the triangle"
+   },
+   {
+    "pathology": "Lateral medullary infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion dorsal and lateral to the olive.",
+    "sequence": "DWI"
+   }
+  ],
+  "sequenceOfChoice": "Axial T2/FLAIR through the medulla"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia (rare in isolation)",
+    "side": "contralateral",
+    "mechanism": "Loss of climbing fiber input to the contralateral cerebellar hemisphere, which controls the ipsilateral limbs relative to the olive lesion"
+   },
+   {
+    "deficit": "Palatal tremor (myoclonus) after degeneration",
+    "side": "n/a",
+    "mechanism": "Disinhibition of the olive following a lesion in the dentato-rubro-olivary triangle"
+   }
+  ],
+  "examination": [
+   "Look at the soft palate at rest for rhythmic movement",
+   "Coordination of the limbs",
+   "Ask about an ear click or oscillopsia"
+  ],
+  "syndromes": [],
+  "pearls": [
+   "The level of the olive is the level of the Wallenberg syndrome",
+   "Palatal tremor months after a pontine hemorrhage is olivary degeneration, not a new stroke"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    204
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    239
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    78
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus olivaris inferior",
+ "subsystem": "medulla",
+ "level": {
+  "region": "medulla"
+ }
+}

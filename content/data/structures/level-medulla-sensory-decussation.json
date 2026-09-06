@@ -1,0 +1,184 @@
+{
+ "kind": "structure",
+ "id": "level-medulla-sensory-decussation",
+ "name": "Medulla: level of the sensory (lemniscal) decussation",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A few millimetres above the motor decussation the posterior columns end in the gracile and cuneate nuclei, whose axons sweep forward around the central gray as internal arcuate fibers and cross the midline to form the medial lemniscus. From here upward, fine touch, vibration and proprioception from the body travel on the contralateral side. The pyramids are now large and intact in front, and the spinal trigeminal nucleus, spinothalamic tract and the beginnings of the inferior olive occupy the lateral part.",
+ "anatomy": {
+  "location": "Closed medulla just above the pyramidal decussation, below the opening of the fourth ventricle; MNI z ≈ −50 to −54.",
+  "subdivisions": [
+   {
+    "name": "Nucleus gracilis and nucleus cuneatus",
+    "note": "second-order neurons of the posterior column pathway"
+   },
+   {
+    "name": "Internal arcuate fibers and sensory decussation",
+    "note": "axons of the gracile and cuneate nuclei crossing to form the medial lemniscus"
+   },
+   {
+    "name": "Medial lemniscus",
+    "note": "just forming, dorsal to the pyramids on each side of the midline, arranged with leg fibers ventral and arm fibers dorsal"
+   },
+   {
+    "name": "Pyramids",
+    "note": "uncrossed corticospinal fibers in the anterior part"
+   },
+   {
+    "name": "Spinal trigeminal nucleus and tract",
+    "note": "lateral, with the spinothalamic tract in front of it"
+   },
+   {
+    "name": "Accessory cuneate nucleus",
+    "note": "unconscious proprioception from the arm to the cerebellum"
+   },
+   {
+    "name": "Medial longitudinal fasciculus and tectospinal tract",
+    "note": "near the midline behind the medial lemniscus"
+   },
+   {
+    "name": "Central canal with the beginning of the hypoglossal and dorsal vagal nuclei",
+    "note": "in the central gray"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Relay and crossing point of discriminative touch, vibration and proprioception for the body; passage of the corticospinal tract before it crosses; entry of the spinal trigeminal system for facial pain and temperature.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar-paramedian",
+   "territory-pica-lateral-medulla"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -44,
+     "z": -52
+    },
+    "label": "closed medulla: pyramids anteriorly, gracile and cuneate tubercles posteriorly"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -44,
+     "z": -52
+    },
+    "label": "medial lemniscus forming between the pyramids and the central gray"
+   }
+  ],
+  "normalAppearance": "On axial T2 at this level the medulla is still closed (no fourth ventricle), with the pyramids in front and the gracile and cuneate tubercles as posterior bumps; the olives are only just beginning to widen the lateral profile.",
+  "pathology": [
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Paramedian restricted diffusion in the ventral medulla involving the pyramid and medial lemniscus, with or without the hypoglossal fibers.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Demyelinating lesion of the dorsal medulla",
+    "modality": "MRI",
+    "finding": "T2/FLAIR-bright plaque in the posterior columns or nuclei of the lower medulla, often the cause of isolated vibration loss or Lhermitte-like symptoms in multiple sclerosis.",
+    "sequence": "FLAIR"
+   }
+  ],
+  "sequenceOfChoice": "Thin axial DWI and T2 through the medulla; sagittal T2 for the craniocervical junction"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of vibration and proprioception on the opposite side of the body",
+    "side": "contralateral",
+    "mechanism": "Medial lemniscus after the decussation"
+   },
+   {
+    "deficit": "Loss of vibration and proprioception on the same side of the body",
+    "side": "ipsilateral",
+    "mechanism": "Gracile and cuneate nuclei or fasciculi before the decussation"
+   },
+   {
+    "deficit": "Hemiparesis of the opposite limbs",
+    "side": "contralateral",
+    "mechanism": "Pyramid, whose fibers cross below"
+   },
+   {
+    "deficit": "Loss of pain and temperature on the face",
+    "side": "ipsilateral",
+    "mechanism": "Spinal trigeminal tract and nucleus"
+   }
+  ],
+  "examination": [
+   "Vibration at the malleoli and joint position at the toes on each side",
+   "Romberg test",
+   "Pin-prick on the face compared with the body"
+  ],
+  "syndromes": [
+   "syn-dejerine-medial-medullary"
+  ],
+  "pearls": [
+   "Above this level a single lesion produces contralateral loss of both pain and proprioception; below it the two modalities are lost on opposite sides",
+   "The medial lemniscus is somatotopically stacked here (leg ventral, arm dorsal), then rotates to lie horizontally in the pons and midbrain"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    200
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    147,
+    149
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    77
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    36,
+    38
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem",
+  "cross-section"
+ ],
+ "status": "draft",
+ "subsystem": "levels",
+ "level": {
+  "region": "medulla",
+  "sub": "medulla-sensory-decussation"
+ }
+}

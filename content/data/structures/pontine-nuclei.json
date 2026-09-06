@@ -1,0 +1,158 @@
+{
+ "kind": "structure",
+ "id": "pontine-nuclei",
+ "name": "Pontine nuclei and transverse pontine fibers",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The basis pontis is packed with pontine nuclei, the relay through which the cerebral cortex talks to the cerebellum. Corticopontine fibers from the frontal, parietal, temporal and occipital lobes descend in the crus cerebri and end here; the pontine neurons send their axons across the midline as the transverse pontine fibers into the contralateral middle cerebellar peduncle. Scattered among them run the corticospinal and corticobulbar bundles, which is why basis pontis lesions combine hemiparesis with ataxia.",
+ "anatomy": {
+  "location": "Ventral pons (basis pontis) on both sides of the midline, between the corticospinal bundles, from the pontomedullary junction to the pontomesencephalic junction; the transverse fibers form the bulk of the ventral pontine surface.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "cerebral cortex",
+    "via": "corticopontine fibers in the crus cerebri"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "cerebellum (contralateral)",
+    "via": "middle-cerebellar-peduncle"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "Cortico-ponto-cerebellar relay: transmits motor plans and sensory context from the cortex to the cerebellum for coordination of skilled movement and, through the crossed projection, gives the cerebellum its contralateral cortical connection.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-pontine",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 6,
+     "y": -26,
+     "z": -30
+    },
+    "label": "basis pontis in front of the tegmentum"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -26,
+     "z": -28
+    },
+    "label": "ventral bulge of the pons over the basilar artery"
+   }
+  ],
+  "normalAppearance": "The basis pontis is homogeneous white matter with slightly grayer punctate nuclei on T1; the transverse fibers give the ventral pons a striated look on high-resolution axial images. Central pontine myelinolysis spares the peripheral rim and the corticospinal bundles.",
+  "pathology": [
+   {
+    "pathology": "Paramedian basis pontis infarct",
+    "modality": "MRI",
+    "finding": "Wedge-shaped restricted diffusion in one half of the basis pontis: pure motor hemiparesis, ataxic hemiparesis or dysarthria–clumsy hand.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Osmotic demyelination",
+    "modality": "MRI",
+    "finding": "Central symmetric T2 hyperintensity of the basis pontis with a trident or bat-wing shape sparing the periphery, after rapid correction of hyponatremia.",
+    "sequence": "T2",
+    "timing": "Lesion appears 1–2 weeks after the osmotic shift"
+   }
+  ],
+  "sequenceOfChoice": "DWI and T2 through the pons"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral ataxic hemiparesis",
+    "side": "contralateral",
+    "mechanism": "Corticospinal bundles plus corticopontine and pontocerebellar fibers"
+   },
+   {
+    "deficit": "Dysarthria and clumsy hand",
+    "side": "contralateral",
+    "mechanism": "Basis pontis at the level of facial and hand corticobulbar/corticospinal projections"
+   },
+   {
+    "deficit": "Bilateral ataxia and pseudobulbar signs",
+    "side": "bilateral",
+    "mechanism": "Bilateral basis pontis disease, e.g. osmotic demyelination"
+   }
+  ],
+  "examination": [
+   "Compare limb weakness with coordination: ataxia out of proportion to weakness suggests the pons",
+   "Speech and fine hand movements",
+   "Look for pseudobulbar affect and dysphagia in bilateral disease"
+  ],
+  "syndromes": [
+   "syn-lacunar-ataxic-hemiparesis",
+   "syn-lacunar-dysarthria-clumsy-hand",
+   "syn-locked-in"
+  ],
+  "pearls": [
+   "Ataxic hemiparesis localizes to the contralateral basis pontis (or the internal capsule/corona radiata)",
+   "Pontine crossing fibers explain why each cerebellar hemisphere works with the opposite cerebral cortex but the same-side limbs"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    204,
+    208
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    239
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    79
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    60
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nuclei pontis",
+ "subsystem": "pons",
+ "level": {
+  "region": "pons"
+ }
+}

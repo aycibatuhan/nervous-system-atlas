@@ -1,0 +1,157 @@
+{
+ "kind": "structure",
+ "id": "rimlf",
+ "name": "Rostral interstitial nucleus of the MLF (vertical gaze center)",
+ "synonyms": [
+  "riMLF",
+  "vertical saccade generator"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The vertical counterpart of the PPRF. The riMLF lies in the rostral midbrain tegmentum near the junction with the thalamus, just above the oculomotor nucleus, and its burst neurons generate vertical and torsional saccades. It receives cortical and collicular commands and projects to the oculomotor and trochlear nuclei of both sides, the up-gaze fibers crossing in the posterior commissure. Nearby, the interstitial nucleus of Cajal integrates vertical gaze holding. Lesions of the riMLF or the posterior commissure produce the vertical gaze palsies of the dorsal midbrain syndrome and of top-of-the-basilar strokes.",
+ "anatomy": {
+  "location": "Rostral midbrain tegmentum at the mesodiencephalic junction, dorsomedial to the red nucleus and rostral to the oculomotor nuclei, near the posterior commissure and the interstitial nucleus of Cajal.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "oculomotor-nucleus",
+    "note": "bilateral, up-gaze via posterior commissure"
+   },
+   {
+    "to": "trochlear-nucleus"
+   }
+  ],
+  "pathways": [
+   "pathway-vertical-gaze"
+  ]
+ },
+ "function": "Generates vertical (up and down) and torsional saccades and, with the interstitial nucleus of Cajal, holds vertical gaze position.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 3,
+     "y": -18,
+     "z": -2
+    },
+    "label": "mesodiencephalic junction dorsomedial to the red nucleus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 2,
+     "y": -20,
+     "z": 0
+    },
+    "label": "rostral midbrain tegmentum below the posterior commissure"
+   }
+  ],
+  "normalAppearance": "Not resolved; the lesions that cause vertical gaze palsy are paramedian rostral midbrain or bilateral thalamomesencephalic infarcts, best seen on DWI, or dorsal midbrain compression on sagittal T2.",
+  "pathology": [
+   {
+    "pathology": "Artery of Percheron / top-of-the-basilar infarct",
+    "modality": "MRI",
+    "finding": "Bilateral paramedian thalamic and rostral midbrain restricted diffusion with vertical gaze palsy and somnolence.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Progressive supranuclear palsy",
+    "modality": "MRI",
+    "finding": "Midbrain atrophy with the hummingbird sign on sagittal T1; vertical saccades slow long before the palsy is complete.",
+    "sequence": "T1",
+    "timing": "Atrophy is visible by the time down-gaze is clearly impaired"
+   }
+  ],
+  "sequenceOfChoice": "DWI for infarcts; sagittal T1 for midbrain atrophy"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of down-gaze (and up-gaze) saccades",
+    "side": "bilateral",
+    "mechanism": "riMLF burst neurons; a unilateral lesion mainly impairs down-gaze"
+   },
+   {
+    "deficit": "Up-gaze palsy with preserved down-gaze",
+    "side": "bilateral",
+    "mechanism": "Posterior commissure carrying crossed up-gaze fibers (Parinaud)"
+   },
+   {
+    "deficit": "Preserved vertical vestibulo-ocular reflex",
+    "side": "bilateral",
+    "mechanism": "Vestibular pathways reach the nuclei directly: the palsy is supranuclear"
+   }
+  ],
+  "examination": [
+   "Vertical saccades and pursuit separately for up and down",
+   "Vertical oculocephalic reflex to show a supranuclear palsy",
+   "Look for lid retraction and convergence-retraction nystagmus"
+  ],
+  "syndromes": [
+   "syn-parinaud-dorsal-midbrain",
+   "syn-top-of-basilar"
+  ],
+  "pearls": [
+   "Down-gaze palsy points to the riMLF, up-gaze palsy to the posterior commissure",
+   "A supranuclear vertical gaze palsy (overcome by head movement) in a falling elderly patient suggests progressive supranuclear palsy"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    98,
+    100
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    80
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    63,
+    63
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    250,
+    252
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "level": {
+  "region": "midbrain"
+ }
+}

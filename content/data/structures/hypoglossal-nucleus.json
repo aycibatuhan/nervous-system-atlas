@@ -1,0 +1,149 @@
+{
+ "kind": "structure",
+ "id": "hypoglossal-nucleus",
+ "name": "Hypoglossal nucleus",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "A long column of motor neurons in the dorsal paramedian medulla beneath the hypoglossal trigone of the fourth ventricular floor. Its axons run ventrally between the medial lemniscus and the inferior olive and emerge in the preolivary sulcus as the hypoglossal rootlets. It innervates all intrinsic and most extrinsic tongue muscles, and its intramedullary fibers are the reason a medial medullary infarct includes an ipsilateral tongue palsy.",
+ "anatomy": {
+  "location": "Dorsal medulla next to the midline, under the floor of the fourth ventricle (hypoglossal trigone) and continuing caudally beside the central canal to the pyramidal decussation; medial to the dorsal vagal nucleus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [
+   {
+    "to": "tongue muscles",
+    "via": "cn-12-hypoglossal"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Lower motor neurons of the tongue for speech, chewing and swallowing; receives bilateral corticobulbar input with a contralateral predominance for the genioglossus.",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery",
+   "artery-vertebral"
+  ],
+  "territories": [
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 2,
+     "y": -46,
+     "z": -46
+    },
+    "label": "paramedian dorsal medulla; fibers cross ventrally to the preolivary sulcus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 2,
+     "y": -46,
+     "z": -46
+    },
+    "label": "hypoglossal trigone in the caudal fourth ventricle floor"
+   }
+  ],
+  "normalAppearance": "Not resolved on MRI. The nerve can be followed on thin T2 through the hypoglossal canal; the nucleus is inferred from the paramedian dorsal medulla.",
+  "pathology": [
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Paramedian ventral medullary restriction including the hypoglossal fascicle.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Hypoglossal canal lesion (metastasis, glomus tumor, dissection)",
+    "modality": "MRI",
+    "finding": "Enhancing mass or thickened nerve in the hypoglossal canal with denervation atrophy and fatty change of the hemitongue.",
+    "sequence": "T1+Gd"
+   }
+  ],
+  "sequenceOfChoice": "Thin axial T2/T1+Gd through the skull base; DWI for infarct"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Tongue deviates toward the weak side on protrusion with atrophy and fasciculations",
+    "side": "ipsilateral",
+    "mechanism": "Lower motor neuron loss: the intact genioglossus pushes the tongue to the paralyzed side"
+   },
+   {
+    "deficit": "Dysarthria for lingual sounds",
+    "side": "ipsilateral",
+    "mechanism": "Weak tongue"
+   },
+   {
+    "deficit": "Tongue deviation without atrophy, toward the side opposite a hemispheric lesion",
+    "side": "contralateral",
+    "mechanism": "Supranuclear corticobulbar lesion"
+   }
+  ],
+  "examination": [
+   "Inspect the tongue at rest in the mouth for atrophy and fasciculations",
+   "Protrusion for deviation and side-to-side movement against the cheek",
+   "Rapid 'la-la-la' repetition"
+  ],
+  "syndromes": [
+   "syn-dejerine-medial-medullary",
+   "syn-hypoglossal-palsy"
+  ],
+  "pearls": [
+   "Tongue toward the lesion with wasting: nucleus or nerve. Tongue away from the lesion without wasting: cortex or corticobulbar tract",
+   "Tongue palsy plus contralateral hemiparesis and proprioceptive loss is the medial medulla"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    200,
+    204
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    347,
+    348
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    75,
+    79
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 14,
+   "pages": [
+    128,
+    128
+   ]
+  }
+ ],
+ "tags": [
+  "brainstem"
+ ],
+ "status": "draft",
+ "latin": "Nucleus nervi hypoglossi",
+ "subsystem": "medulla",
+ "level": {
+  "region": "medulla"
+ }
+}
