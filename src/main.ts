@@ -8,6 +8,10 @@ import { SliceControls } from './ui/SliceControls.ts';
 import { ContentPanel } from './ui/ContentPanel.ts';
 import { Toolbar } from './ui/Toolbar.ts';
 import { PathwayPanel } from './ui/PathwayPanel.ts';
+import { SyndromeBar } from './ui/SyndromeBar.ts';
+import { SyndromePanel } from './ui/SyndromePanel.ts';
+import { SearchBox } from './ui/SearchBox.ts';
+import { enterSyndrome, exitSyndrome } from './state/syndrome.ts';
 import { h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
 import { loadRawVolume } from './volume/VolumeSource.ts';
@@ -48,15 +52,27 @@ async function boot(): Promise<void> {
   const contentPanel = new ContentPanel(app, right);
   const pathwayHost = h('div', { class: 'content', hidden: true }); right.append(pathwayHost);
   const pathwayPanel = new PathwayPanel(app, pathwayHost);
-  const showPathway = (id: string | null) => { const cp = right.querySelector('.content:not([hidden])'); if (id) { pathwayPanel.show(id); pathwayHost.hidden = false; (right.firstElementChild as HTMLElement).hidden = true; } else { pathwayPanel.exit(); pathwayHost.hidden = true; (right.firstElementChild as HTMLElement).hidden = false; } void cp; };
+  const syndromeHost = h('div', { class: 'content', hidden: true }); right.append(syndromeHost);
+  const syndromePanel = new SyndromePanel(app, syndromeHost);
+  new SyndromeBar(app, document.getElementById('syndrome-bar')!);
+  const mainPanel = right.firstElementChild as HTMLElement;
+  const showPanel = (which: 'main' | 'pathway' | 'syndrome') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; };
+  const showPathway = (id: string | null) => { if (id) { pathwayPanel.show(id); showPanel('pathway'); } else { pathwayPanel.exit(); if (!pathwayHost.hidden) showPanel('main'); } };
+  void contentPanel;
   const help = h('div', { class: 'help', hidden: true }, h('b', {}, 'Shortcuts'), h('br'),
     ...PRESETS.map((p) => h('div', {}, h('kbd', {}, p.key), ' ', p.label)),
     h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' toggle axial / coronal / sagittal slice'),
     h('div', {}, h('kbd', {}, '↑'), h('kbd', {}, '↓'), ' move the last touched slice'), h('div', {}, h('kbd', {}, 't'), ' T1 / T2'),
     h('div', {}, h('kbd', {}, 'p'), ' peel at the axial slice'), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' toggle panels'),
-    h('div', {}, h('kbd', {}, 'Esc'), ' clear selection'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'));
+    h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'));
   document.getElementById('viewport')!.append(help);
   const toolbar = new Toolbar(app, top, { onSearchFocus: () => (left.querySelector('.tree-filter') as HTMLInputElement)?.focus(), onHelp: () => { help.hidden = !help.hidden; } });
+  const search = new SearchBox(toolbar.searchHost, (doc) => {
+    if (doc.kind === 'syndrome') location.hash = `#/syndrome/${doc.id}`;
+    else if (doc.kind === 'pathway') location.hash = `#/pathway/${doc.id}`;
+    else if (doc.kind === 'mesh') selectStructure(app, doc.id, { moveSlices: true, fit: true });
+    else location.hash = `#/structure/${doc.id}`;
+  });
   const hudEl = h('div', { class: 'hud' }); document.getElementById('viewport')!.append(hudEl);
   const progress = h('div', { class: 'progress' }); document.getElementById('viewport')!.append(progress);
   function hud(p: THREE.Vector3 | null): void { hudEl.textContent = p ? `MNI ${p.x.toFixed(0)}, ${p.y.toFixed(0)}, ${p.z.toFixed(0)} mm` : ''; }
@@ -66,7 +82,7 @@ async function boot(): Promise<void> {
   app.store.subscribe((s) => s.hiddenStructures, () => syncVisibility(app), sameSet);
   app.store.subscribe((s) => s.shownStructures, () => syncVisibility(app), sameSet);
   app.store.subscribe((s) => s.showNc, () => { syncVisibility(app); tree.render(); });
-  app.store.subscribe((s) => [s.selectedId, s.hoverId, s.syndrome] as const, () => { applyStates(app); updateLuts(app); }, (a, b) => a[0] === b[0] && a[1] === b[1] && a[2] === b[2]);
+  app.store.subscribe((s) => [s.selectedId, s.hoverId, s.syndrome, s.involved, s.stepHighlight] as const, () => { applyStates(app); updateLuts(app); }, (a, b) => a[0] === b[0] && a[1] === b[1] && a[2] === b[2] && a[3] === b[3] && a[4] === b[4]);
   app.store.subscribe((s) => s.slices, (sl) => { for (const ax of ['axial', 'coronal', 'sagittal'] as Axis[]) { app.slices[ax].setPosition(sl[ax]); app.slices[ax].setVisible(sl.visible[ax] && app.store.get().loaded.volume); } applyPeel(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.peel, () => { applyPeel(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.overlay, (o) => { app.uniforms.uOverlayOpacity.value = o.opacity; app.uniforms.uShowAllLabels.value = o.showAllLabels ? 1 : 0; updateLuts(app); app.sm.requestRender(); });
@@ -89,10 +105,13 @@ async function boot(): Promise<void> {
     const r = await fetch('data/content.json');
     if (r.ok) { app.content = (await r.json()) as ContentBundle; app.store.set({ loaded: { ...app.store.get().loaded, content: true } }); toolbar.status.textContent += ` · ${Object.keys(app.content.structures).length} authored`; }
   } catch (e) { console.warn('no content bundle', e); }
+  void search.load('data/search-index.json', manifest.meshes.filter((m) => !app.content?.structures[m.structureId]).map((m) => ({ id: m.id, kind: 'mesh', name: m.name, aliases: [], summary: `${m.system} · ${m.side} · unauthored mesh` })));
   bindRouter(app.store, {
     onRoute(route, params) {
       if (params.ax !== undefined || params.cor !== undefined || params.sag !== undefined) setSlices(app, { ...(params.ax !== undefined ? { axial: params.ax } : {}), ...(params.cor !== undefined ? { coronal: params.cor } : {}), ...(params.sag !== undefined ? { sagittal: params.sag } : {}) });
       if (params.c) setContrast(app, params.c);
+      if (route.kind === 'syndrome') { showPathway(null); enterSyndrome(app, route.id, route.step ?? 0, params.side); if (params.side) app.store.set({ lesionSide: params.side }); syndromePanel.show(route.id); showPanel('syndrome'); return; }
+      if (app.store.get().syndrome) { exitSyndrome(app); showPanel('main'); }
       if (route.kind === 'pathway') { showPathway(route.id); return; }
       showPathway(null);
       if (route.kind === 'structure') {
@@ -141,7 +160,8 @@ async function boot(): Promise<void> {
       case 'p': setPeel(app, 'axial', s.peel.axial ? null : 'positive'); break;
       case '[': document.getElementById('app')!.classList.toggle('no-left'); app.sm.resize(); break;
       case ']': document.getElementById('app')!.classList.toggle('no-right'); app.sm.resize(); break;
-      case 'Escape': selectStructure(app, null); break;
+      case 'Escape': if (s.syndrome) location.hash = '#/slice'; else selectStructure(app, null); break;
+      case 'f': search.input.focus(); e.preventDefault(); break;
       case '?': help.hidden = !help.hidden; break;
       case 'S': if (e.shiftKey) void toolbar.shot(); break;
     }
@@ -194,8 +214,9 @@ function updateLuts(app: App): void {
     for (const id of l.tract ?? []) { const e = lut.tract[String(id)]!; tract.set(id, e.colour, alpha); }
     for (const id of l.vascular ?? []) { const e = lut.vascular[String(id)]!; terr.set(id, e.colour, alpha); }
   };
-  if (s.hoverId && s.hoverId !== s.selectedId) mark(s.hoverId, 4, 0.35);
+  if (s.hoverId && s.hoverId !== s.selectedId && !s.syndrome) mark(s.hoverId, 4, 0.35);
   if (s.selectedId) mark(s.selectedId, 1, 0.6);
+  if (s.syndrome) { for (const id of s.involved) mark(id, 2, 0.45); for (const id of s.stepHighlight) mark(id, 1, 0.65); }
   if (s.overlay.territory) for (const [id, e] of Object.entries(lut.vascular)) terr.set(Number(id), e.colour, 0.5);
   if (s.overlay.tracts) for (const [id, e] of Object.entries(lut.tract)) tract.set(Number(id), e.colour, 0.5);
   app.sm.requestRender();

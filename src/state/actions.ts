@@ -33,8 +33,8 @@ export function applyStates(app: App): void {
   for (const mesh of app.registry.loaded()) {
     const id = mesh.userData.id;
     let st: VisualState = 'normal';
-    if (s.syndrome) st = 'dimmed';
-    if (id === s.hoverId) st = 'hover';
+    if (s.syndrome) st = s.stepHighlight.has(id) ? 'selected' : s.involved.has(id) ? 'involved' : 'dimmed';
+    if (id === s.hoverId && !s.syndrome) st = 'hover';
     if (id === s.selectedId) st = 'selected';
     applyVisualState(mesh, st);
   }

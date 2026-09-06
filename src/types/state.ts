@@ -19,6 +19,9 @@ export interface AppState {
   overlay: { opacity: number; showAllLabels: boolean; territory: boolean; tracts: boolean };
   peel: Partial<Record<Axis, 'positive' | 'negative'>>;
   syndrome: { id: string; step: number } | null;
+  involved: ReadonlySet<string>;             // meshes involved in the active syndrome
+  stepHighlight: ReadonlySet<string>;        // meshes spotlighted for the current deficit step
+  lesionSide: 'l' | 'r' | null;              // demo side for lateralised syndromes
   camera: PresetName | 'custom';
   showNc: boolean;
 }
@@ -38,6 +41,9 @@ export function initialState(): AppState {
     overlay: { opacity: 0.75, showAllLabels: false, territory: false, tracts: false },
     peel: {},
     syndrome: null,
+    involved: new Set(),
+    stepHighlight: new Set(),
+    lesionSide: null,
     camera: 'lateral-l',
     showNc: true,
   };

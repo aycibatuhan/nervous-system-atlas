@@ -52,3 +52,18 @@ code { background: var(--panel2); padding: 0 4px; border-radius: 3px; }
 .waypoints { padding-left: 0; list-style: none; } .wp { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; padding: 4px 6px; border-left: 3px solid var(--border); margin-bottom: 4px; cursor: pointer; }
 .wp:hover { background: var(--panel2); } .wp-n { display: inline-block; min-width: 18px; text-align: center; background: var(--panel2); border-radius: 9px; font-size: 11px; }
 .wp.side-contralateral { border-left-color: #e15759; } .wp.side-ipsilateral { border-left-color: #59a14f; } .wp.side-bilateral { border-left-color: #f28e2b; } .wp .small { flex-basis: 100%; }
+/* syndrome mode + search */
+#syndrome-bar .sep { width: 1px; height: 18px; background: var(--border); }
+#syndrome-bar .syn-step { max-width: 46vw; font-size: 12px; }
+#syndrome-bar button.mini, .mini { font-size: 11px; padding: 2px 8px; }
+.tbl.deficits tr { cursor: pointer; } .tbl.deficits tr.active td { background: rgba(255,120,60,.18); }
+.loc { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin: 6px 0; }
+.search-wrap { position: relative; flex: 1; max-width: 420px; }
+.search { width: 100%; box-sizing: border-box; padding: 4px 8px; background: var(--panel2); color: inherit; border: 1px solid var(--border); border-radius: 4px; font-size: 12px; }
+.search-results { position: absolute; top: 100%; left: 0; right: 0; z-index: 30; background: var(--panel); border: 1px solid var(--border); border-radius: 4px; max-height: 60vh; overflow: auto; box-shadow: 0 6px 20px rgba(0,0,0,.4); }
+.sr { padding: 6px 8px; cursor: pointer; border-bottom: 1px solid var(--border); font-size: 12px; } .sr.active, .sr:hover { background: var(--panel2); }
+.sr .kind { display: inline-block; font-size: 10px; text-transform: uppercase; padding: 0 4px; border-radius: 3px; background: #444; margin-right: 4px; }
+.sr .kind-syndrome { background: #7a2c2c; } .sr .kind-pathway { background: #2c5a7a; } .sr .kind-cranial-nerve { background: #5a4a1a; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; } .chip, a.xref { cursor: pointer; }
+.search-host { flex: 1; display: flex; justify-content: center; min-width: 0; }
+.syn-inner { display: flex; gap: 10px; align-items: center; }
