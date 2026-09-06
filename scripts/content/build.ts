@@ -150,7 +150,7 @@ for (const { e } of entries) {
   const html: Record<string, string> = {};
   for (const f of htmlFields[e.kind] ?? []) { const v = get(e as unknown as Record<string, unknown>, f); if (typeof v === 'string') html[f] = render(v); }
   // resolve MniRef.meshId → centroid
-  const resolved = JSON.parse(JSON.stringify(e), (_k, v) => (v && typeof v === 'object' && 'meshId' in v && !('x' in v) && meshCentroid.has(String((v as { meshId: string }).meshId)))
+  const resolved = JSON.parse(JSON.stringify(e), (k, v) => (k === 'mni' && v && typeof v === 'object' && 'meshId' in v && !('x' in v) && meshCentroid.has(String((v as { meshId: string }).meshId)))
     ? (() => { const c = meshCentroid.get(String((v as { meshId: string }).meshId))!; const o = (v as { offset?: { x: number; y: number; z: number } }).offset ?? { x: 0, y: 0, z: 0 }; return { x: c[0]! + o.x, y: c[1]! + o.y, z: c[2]! + o.z, meshId: (v as { meshId: string }).meshId }; })() : v);
   const entry = { ...resolved, html };
   const target = e.kind === 'structure' || e.kind === 'cranial-nerve' ? bundle.structures : e.kind === 'pathway' ? bundle.pathways : e.kind === 'syndrome' ? bundle.syndromes : e.kind === 'glossary' ? bundle.glossary : bundle.quiz;

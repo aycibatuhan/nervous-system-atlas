@@ -82,7 +82,7 @@ def americanize(v):
     if isinstance(v, list):
         return [americanize(x) for x in v]
     if isinstance(v, dict):
-        return {k: (v2 if k in ("id", "kind", "meshIds", "book", "structureId", "meshId", "parent", "system", "subsystem", "arteries", "territories", "pathways", "syndromes", "tags") else americanize(v2)) for k, v2 in v.items()}
+        return {k: (v2 if k in ("id", "kind", "meshIds", "book", "structureId", "meshId", "parent", "system", "subsystem", "arteries", "territories", "pathways", "syndromes", "tags", "substrate", "structures", "related", "structureIds", "syndromeIds", "pathwayIds", "highlightOnReveal", "arteryId", "territoryId", "sequence", "modality") else americanize(v2)) for k, v2 in v.items()}
     return v
 
 def write(entries):
