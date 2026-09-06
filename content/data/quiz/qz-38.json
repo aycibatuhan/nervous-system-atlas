@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-38",
+ "type": "identify",
+ "vignette": "A 30-year-old woman with epilepsy describes each seizure beginning with a rising feeling in her stomach and a sense that everything has happened before, followed by lip smacking and fumbling with her right hand while her left hand assumes a fixed clawed posture. She is confused for ten minutes afterward and has difficulty speaking.",
+ "stem": "Which side and structure?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left hippocampus and amygdala"
+  },
+  {
+   "key": "B",
+   "text": "Right hippocampus and amygdala"
+  },
+  {
+   "key": "C",
+   "text": "Left frontal operculum"
+  },
+  {
+   "key": "D",
+   "text": "Right superior temporal gyrus"
+  },
+  {
+   "key": "E",
+   "text": "Left cingulate gyrus"
+  }
+ ],
+ "answer": "A",
+ "explanation": "The epigastric aura and deja vu come from the medial temporal lobe; the dystonic posture of the left hand points to the contralateral (left) hemisphere, the automatisms are ipsilateral to the focus, and postictal aphasia marks the language-dominant side. Left mesial temporal epilepsy is the answer.",
+ "targets": {
+  "structureIds": [
+   "hippocampus",
+   "amygdala",
+   "uncus"
+  ],
+  "syndromeIds": [],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "hippocampus-l",
+  "amygdala-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    167,
+    172
+   ]
+  }
+ ],
+ "original": true
+}

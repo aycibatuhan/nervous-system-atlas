@@ -96,6 +96,8 @@ async function boot(): Promise<void> {
   app.store.subscribe((s) => s.hiddenStructures, () => syncVisibility(app), sameSet);
   app.store.subscribe((s) => s.shownStructures, () => syncVisibility(app), sameSet);
   app.store.subscribe((s) => s.showNc, () => { syncVisibility(app); tree.render(); });
+  // picking a structure while a quiz / glossary / topic panel is open returns to the structure panel
+  app.store.subscribe((s) => s.selectedId, (id) => { if (id && app.store.get().panel && !app.store.get().syndrome) { app.store.set({ panel: null }); showPanel('main'); } });
   app.store.subscribe((s) => [s.selectedId, s.hoverId, s.syndrome, s.involved, s.stepHighlight] as const, () => { applyStates(app); updateLuts(app); }, (a, b) => a[0] === b[0] && a[1] === b[1] && a[2] === b[2] && a[3] === b[3] && a[4] === b[4]);
   app.store.subscribe((s) => s.slices, (sl) => { for (const ax of ['axial', 'coronal', 'sagittal'] as Axis[]) { app.slices[ax].setPosition(sl[ax]); app.slices[ax].setVisible(sl.visible[ax] && app.store.get().loaded.volume); } applyPeel(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.peel, (peel) => { applyPeel(app); app.sm.aoSuppressed = Object.keys(peel).length > 0; app.sm.requestRender(); });

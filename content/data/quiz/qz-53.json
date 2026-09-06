@@ -1,0 +1,61 @@
+{
+ "kind": "quiz",
+ "id": "qz-53",
+ "type": "localize",
+ "vignette": "A 25-year-old woman has a slow, coarse tremor of the right arm that is present at rest, worsens when she holds the arm out and becomes wild when she reaches for a cup. It began three months after a midbrain hemorrhage.",
+ "stem": "Which pathway is responsible?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right corticospinal tract"
+  },
+  {
+   "key": "B",
+   "text": "Left dentatorubrothalamic tract with the nigrostriatal fibers in the midbrain"
+  },
+  {
+   "key": "C",
+   "text": "Right medial lemniscus"
+  },
+  {
+   "key": "D",
+   "text": "Right dentate nucleus"
+  },
+  {
+   "key": "E",
+   "text": "Left corticospinal tract"
+  }
+ ],
+ "answer": "B",
+ "explanation": "A delayed rest-postural-intention tremor after a midbrain lesion is Holmes (rubral) tremor, from combined damage to the cerebellothalamic fibers passing through the red nucleus and to the nigrostriatal fibers; the lesion is contralateral (left midbrain) because the dentatorubrothalamic tract has already crossed.",
+ "targets": {
+  "structureIds": [
+   "tract-dentatorubrothalamic",
+   "red-nucleus",
+   "substantia-nigra-pars-compacta"
+  ],
+  "syndromeIds": [
+   "syn-benedikt",
+   "syn-claude"
+  ],
+  "pathwayIds": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "highlightOnReveal": [
+  "tract-dentatorubrothalamic-l",
+  "red-nucleus-l"
+ ],
+ "difficulty": "3",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    246,
+    250
+   ]
+  }
+ ],
+ "original": true
+}

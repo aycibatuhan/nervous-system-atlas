@@ -1,0 +1,53 @@
+{
+ "kind": "quiz",
+ "id": "qz-37",
+ "type": "localize",
+ "vignette": "A 48-year-old woman has had brief nocturnal attacks for years: she sits up suddenly, her right arm rises abducted and her head turns toward it, she makes a loud noise, and it is over in twenty seconds. She remembers the attacks. Two EEGs have been normal and she was told the attacks are psychological.",
+ "stem": "Where do these seizures arise?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left medial temporal lobe"
+  },
+  {
+   "key": "B",
+   "text": "Left supplementary motor area"
+  },
+  {
+   "key": "C",
+   "text": "Right supplementary motor area"
+  },
+  {
+   "key": "D",
+   "text": "Left occipital lobe"
+  },
+  {
+   "key": "E",
+   "text": "Left insula"
+  }
+ ],
+ "answer": "B",
+ "explanation": "A brief nocturnal tonic seizure with a fencing posture (contralateral arm abducted, head turned toward it), vocalization and preserved awareness is the signature of the supplementary motor area; the focus is interhemispheric, so the scalp EEG is often normal, and the posture points to the left SMA. Medial temporal seizures begin with an epigastric aura and impair awareness.",
+ "targets": {
+  "structureIds": [
+   "cortex-supplementary-motor"
+  ],
+  "syndromeIds": [],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cortex-supplementary-motor-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    167,
+    172
+   ]
+  }
+ ],
+ "original": true
+}

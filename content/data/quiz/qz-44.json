@@ -1,0 +1,65 @@
+{
+ "kind": "quiz",
+ "id": "qz-44",
+ "type": "localize",
+ "vignette": "A 54-year-old woman has a fall and afterward cannot smell coffee. Over months her family notes that she has become tactless, makes crude jokes and spends impulsively. She scores normally on a memory test.",
+ "stem": "Which region should be imaged first?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Bilateral hippocampi"
+  },
+  {
+   "key": "B",
+   "text": "Orbitofrontal cortex and olfactory tracts"
+  },
+  {
+   "key": "C",
+   "text": "Left temporal pole"
+  },
+  {
+   "key": "D",
+   "text": "Dorsolateral prefrontal cortex"
+  },
+  {
+   "key": "E",
+   "text": "Anterior cingulate gyri"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Anosmia with disinhibition and preserved memory is the orbitofrontal syndrome: the gyri recti and orbital cortex sit on the anterior fossa floor beside the olfactory tracts and are bruised in falls (or compressed by an olfactory groove meningioma). The dorsolateral cortex would give a dysexecutive picture without anosmia.",
+ "targets": {
+  "structureIds": [
+   "cortex-orbitofrontal",
+   "frontal-pole"
+  ],
+  "syndromeIds": [
+   "syn-anosmia"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cortex-orbitofrontal-l",
+  "cortex-orbitofrontal-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    327,
+    328
+   ]
+  }
+ ],
+ "original": true
+}

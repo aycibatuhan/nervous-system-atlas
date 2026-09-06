@@ -1,0 +1,56 @@
+{
+ "kind": "quiz",
+ "id": "qz-45",
+ "type": "localize",
+ "vignette": "A 63-year-old man is brought by his daughter because he has become apathetic, sits all day and answers in monosyllables since a stroke two weeks ago. He is fully oriented and has no weakness. MRI shows a small infarct in the head of the caudate nucleus and the anterior limb of the internal capsule.",
+ "stem": "Which connection is interrupted?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Corticospinal tract"
+  },
+  {
+   "key": "B",
+   "text": "Anterior thalamic radiation and prefrontal-striatal loop"
+  },
+  {
+   "key": "C",
+   "text": "Optic radiation"
+  },
+  {
+   "key": "D",
+   "text": "Arcuate fasciculus"
+  },
+  {
+   "key": "E",
+   "text": "Dentatorubrothalamic tract"
+  }
+ ],
+ "answer": "B",
+ "explanation": "The anterior limb carries the anterior thalamic radiation between the mediodorsal and anterior thalamus and the prefrontal cortex, and the caudate head is the striatal station of the prefrontal loop; their interruption produces abulia without weakness, the frontal picture of a medial lenticulostriate (Heubner) infarct.",
+ "targets": {
+  "structureIds": [
+   "tract-thalamic-radiation-anterior",
+   "tract-corticostriatal-anterior",
+   "territory-medial-lenticulostriate"
+  ],
+  "syndromeIds": [],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "tract-thalamic-radiation-anterior-l",
+  "territory-medial-lenticulostriate-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  }
+ ],
+ "original": true
+}

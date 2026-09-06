@@ -1,0 +1,58 @@
+{
+ "kind": "quiz",
+ "id": "qz-42",
+ "type": "localize",
+ "vignette": "A 72-year-old hypertensive man has sudden weakness of the left arm and leg with ataxia of the same limbs out of proportion to the weakness; sensation, speech and vision are normal.",
+ "stem": "Which structure best explains the combination?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Left cerebellar hemisphere"
+  },
+  {
+   "key": "B",
+   "text": "Right posterior limb of the internal capsule with corticopontine fibers"
+  },
+  {
+   "key": "C",
+   "text": "Right thalamus"
+  },
+  {
+   "key": "D",
+   "text": "Left pons"
+  },
+  {
+   "key": "E",
+   "text": "Right cerebellar hemisphere"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Ataxic hemiparesis is a lacune of the posterior limb (or basis pontis) interrupting the corticospinal tract and the corticopontine fibers together; the corticopontine input crosses in the pons and the cerebellar output crosses back, so ataxia lands on the weak side. A cerebellar lesion would give ipsilateral ataxia without weakness.",
+ "targets": {
+  "structureIds": [
+   "tract-corticopontine-frontal",
+   "tract-corticospinal",
+   "internal-capsule"
+  ],
+  "syndromeIds": [
+   "syn-lacunar-ataxic-hemiparesis"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "tract-corticopontine-frontal-r",
+  "internal-capsule-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    60,
+    63
+   ]
+  }
+ ],
+ "original": true
+}

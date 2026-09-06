@@ -1,0 +1,59 @@
+{
+ "kind": "quiz",
+ "id": "qz-50",
+ "type": "localize",
+ "vignette": "A 45-year-old man has progressive right-sided hearing loss and tinnitus, then numbness of the right face and, later, unsteadiness with a right-sided intention tremor. MRI shows a mass in the right cerebellopontine angle extending into the internal auditory canal.",
+ "stem": "Which cerebellar structure accounts for the last symptoms?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right flocculus and cerebellar hemisphere (lobule VI, Crus I)"
+  },
+  {
+   "key": "B",
+   "text": "Left dentate nucleus"
+  },
+  {
+   "key": "C",
+   "text": "Vermis lobule VII"
+  },
+  {
+   "key": "D",
+   "text": "Right lobule X only"
+  },
+  {
+   "key": "E",
+   "text": "Left flocculus"
+  }
+ ],
+ "answer": "A",
+ "explanation": "A vestibular schwannoma compresses the eighth nerve first, then the trigeminal nerve, then the flocculus and the anterior cerebellar hemisphere beside the middle cerebellar peduncle, producing ipsilateral limb ataxia and gaze-evoked nystagmus; cerebellar signs are ipsilateral because the outflow crosses twice.",
+ "targets": {
+  "structureIds": [
+   "cerebellar-lobule-x",
+   "cerebellar-lobule-crus-i",
+   "middle-cerebellar-peduncle"
+  ],
+  "syndromeIds": [
+   "syn-cerebellopontine-angle"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cerebellar-lobule-x-r",
+  "cerebellar-lobule-crus-i-r",
+  "cn-08-vestibulocochlear-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    108,
+    114
+   ]
+  }
+ ],
+ "original": true
+}

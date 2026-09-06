@@ -1,0 +1,55 @@
+{
+ "kind": "quiz",
+ "id": "qz-39",
+ "type": "imaging",
+ "vignette": "A 45-year-old man has drug-resistant seizures of the type described above. Coronal FLAIR MRI shows a small bright left hippocampus with loss of its internal architecture and a dilated left temporal horn.",
+ "stem": "What is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Low-grade glioma"
+  },
+  {
+   "key": "B",
+   "text": "Mesial temporal sclerosis"
+  },
+  {
+   "key": "C",
+   "text": "Herpes encephalitis"
+  },
+  {
+   "key": "D",
+   "text": "Cavernoma"
+  },
+  {
+   "key": "E",
+   "text": "Focal cortical dysplasia"
+  }
+ ],
+ "answer": "B",
+ "explanation": "A small hippocampus with increased FLAIR signal, loss of the internal digitations and an enlarged temporal horn is mesial temporal sclerosis, the commonest surgically curable epilepsy; a tumor would expand rather than shrink the hippocampus and herpes would be acute with fever.",
+ "targets": {
+  "structureIds": [
+   "hippocampus",
+   "ventricle-lateral-inferior-horn"
+  ],
+  "syndromeIds": [],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "hippocampus-l",
+  "ventricle-lateral-inferior-horn-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    167,
+    172
+   ]
+  }
+ ],
+ "original": true
+}

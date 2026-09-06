@@ -75,3 +75,13 @@ test('real mouse input: click selects, drag orbits, nothing hidden covers the ca
   const sel = await page.evaluate(() => (window as unknown as { atlas: { store: { get(): { selectedId: string | null } } } }).atlas.store.get().selectedId);
   expect(sel).not.toBeNull();
 });
+
+test('topic route spotlights its meshes and selecting a structure returns to the structure panel', async ({ page }) => {
+  await boot(page, '#/topic/topic-epilepsy-localization');
+  await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText(/Epilepsy/i, { timeout: 30_000 });
+  await expect.poll(() => page.evaluate(() => [...(window as unknown as { atlas: { store: { get(): { involved: Set<string> } } } }).atlas.store.get().involved].length), { timeout: 30_000 }).toBeGreaterThan(3);
+  await page.fill('.tree-filter', 'putamen');
+  await page.locator('#left').getByText('Putamen', { exact: false }).first().click();
+  await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText(/Putamen/i, { timeout: 20_000 });
+  await expect.poll(() => page.evaluate(() => location.hash)).toMatch(/#\/structure\/putamen/);
+});

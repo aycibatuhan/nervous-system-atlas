@@ -1,0 +1,58 @@
+{
+ "kind": "quiz",
+ "id": "qz-54",
+ "type": "mechanism",
+ "vignette": "A 78-year-old woman with a recent large left putaminal hemorrhage has a transient right hemiparesis. Which anatomical fact explains why hypertensive hemorrhages favor this site?",
+ "stem": "Choose the best answer.",
+ "options": [
+  {
+   "key": "A",
+   "text": "The putamen has the richest cortical blood supply"
+  },
+  {
+   "key": "B",
+   "text": "The lateral lenticulostriate arteries are end-arteries arising directly from the high-pressure M1 segment"
+  },
+  {
+   "key": "C",
+   "text": "The putamen lies in a watershed between two territories"
+  },
+  {
+   "key": "D",
+   "text": "The internal capsule has no blood-brain barrier"
+  },
+  {
+   "key": "E",
+   "text": "The putamen is drained by the great cerebral vein"
+  }
+ ],
+ "answer": "B",
+ "explanation": "The lateral lenticulostriate perforators leave the M1 segment at right angles and take its full pressure without collateral support, so chronic hypertension produces lipohyalinosis and Charcot-Bouchard microaneurysms there; their rupture is the putaminal hemorrhage and their occlusion the capsular lacune.",
+ "targets": {
+  "structureIds": [
+   "territory-lateral-lenticulostriate",
+   "arteries-lenticulostriate",
+   "putamen"
+  ],
+  "syndromeIds": [
+   "syn-lacunar-pure-motor"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "territory-lateral-lenticulostriate-l",
+  "putamen-l"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    194,
+    200
+   ]
+  }
+ ],
+ "original": true
+}

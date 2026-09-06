@@ -1,6 +1,6 @@
 # Clinical Neuroanatomy Atlas
 
-A local, browser-based 3D atlas of clinical neuroanatomy with synchronized MRI slices, arterial territory maps, pathway tracing, a syndrome/lesion mode, a glossary and a quiz. Everything is expressed in one coordinate frame, MNI152NLin2009cAsym RAS millimeters, so the 3D meshes, the T1/T2 slices and the label overlays line up exactly.
+A local, browser-based 3D atlas of clinical neuroanatomy with synchronized MRI slices, arterial territory maps, pathway tracing, a syndrome/lesion mode, clinical topics, a glossary and a quiz. Everything is expressed in one coordinate frame, MNI152NLin2009cAsym RAS millimeters, so the 3D meshes, the T1/T2 slices and the label overlays line up exactly.
 
 The text is original prose written from two clinical neuroanatomy textbooks (Snell's Clinical Neuroanatomy, 8th ed.; Berkowitz, Clinical Neurology and Neuroanatomy, Lange 2017), cited by printed page. No book figures or text are shipped; the books live in the private `source/` folder and are not part of the repository.
 
@@ -8,13 +8,14 @@ The text is original prose written from two clinical neuroanatomy textbooks (Sne
 
 | Kind | Count | Notes |
 |---|---|---|
-| Structures | 197 | cortex, basal ganglia, diencephalon, brainstem levels and nuclei, cerebellum, ventricles, meninges, arteries and territories, spinal cord, peripheral nerves, autonomic |
+| Structures | 352 | every mesh in the manifest has an entry: lobes and all 48 Harvard-Oxford gyri per side, hippocampal subfields, basal forebrain, thalamic and hypothalamic nuclei, brainstem nuclei, cerebellar lobules, white-matter tracts, arterial territories, ventricles, meninges, arteries, spinal cord, peripheral and cutaneous nerves, autonomic |
 | Cranial nerves | 12 | nuclei, course, branches, reflexes, bedside tests, localizing signs |
 | Pathways | 25 | neuron chain, decussation, clickable waypoints, lesion effects by level |
 | Syndromes | 125 | localization, deficits with substrates, crossing logic, imaging, mimics, management pearls |
-| Glossary | 67 | |
-| Quiz | 30 | original vignettes; the answer spotlights the structures in 3D |
-| Meshes | 540 | MNI atlases (marching cubes) + BodyParts3D and Z-Anatomy (landmark-registered): cranial nerves, plexuses, limb nerves, dural sinuses, brainstem nuclei |
+| Topics | 19 | development and malformations, CSF and the blood–brain barrier, neurotransmitters, sleep and EEG, epilepsy, headache, dementia, movement disorders, neuromuscular patterns, pediatric syndromes, localization approach, imaging basics, stroke mechanisms, CNS infections, tumors, leukodystrophies and mitochondrial disease, nerve injury, cortical layers, coma and brain death |
+| Glossary | 205 | |
+| Quiz | 60 | original vignettes; the answer spotlights the structures in 3D |
+| Meshes | 573 | MNI atlases (2× signed-distance marching cubes, welded parcels) + BodyParts3D and Z-Anatomy (landmark-registered): cranial nerves, plexuses, limb and cutaneous nerves, dural sinuses, brainstem nuclei, spinal gray and white matter; 38.9 MB full detail + 5.1 MB stand-ins, first paint about 4.6 MB |
 
 Data sources and licences are listed in `public/data/manifest.json` and `pipeline/config/sources.yaml`. Some atlases are non-commercial (flagged `nc` in the manifest and switchable in the tree).
 
@@ -34,23 +35,29 @@ uv run --project pipeline atlas-build      # download → volumes → BP3D selec
 node scripts/check-data.ts                 # integrity check of the generated data
 ```
 
-Individual steps: `atlas-download`, `atlas-volumes`, `atlas-bp3d-select`, `atlas-register`, `atlas-bp3d-meshes`, `atlas-atlas-meshes`, `atlas-labels`, `atlas-manifest`, `atlas-qa`. Z-Anatomy (needs the `blender/` venv with `bpy`): `blender/.venv/bin/python blender/export_zanatomy.py`, then `atlas-zanatomy-register`, `atlas-zanatomy-meshes`, `atlas-manifest`.
+Individual steps: `atlas-download`, `atlas-volumes`, `atlas-bp3d-select`, `atlas-register`, `atlas-bp3d-meshes`, `atlas-atlas-meshes`, `atlas-labels`, `atlas-manifest`, `atlas-qa`. Z-Anatomy (needs the `blender/` venv with `bpy`): `blender/.venv/bin/python blender/export_zanatomy.py`, then `atlas-zanatomy-register`, `atlas-zanatomy-meshes`, `atlas-manifest`. `pipeline/rebuild.sh` runs the full mesh rebuild; `pipeline/add_zanatomy.sh` adds the Z-Anatomy entries listed in it.
+
+Meshing (`pipeline/atlas_pipeline/meshing.py`): label masks are converted to a signed-distance field, upsampled 2× trilinearly, smoothed, meshed at the zero level, Taubin-smoothed (20 iterations, λ 0.5 / μ −0.53), quadric-decimated to per-class budgets (`catalog.BUDGET`: cortical parcels 20k, subcortical 8k, brainstem/cerebellum 40k, envelope 60k) and welded across neighbouring parcels of one atlas; meshes above 12k triangles also get a 3k-triangle `*.lod.glb` stand-in. Colours and opacities are refreshed from `catalog.py` and the selection YAML files by `atlas-manifest`, so palette edits never need a re-mesh. Nerve tubes exported from Z-Anatomy get a minimum radius of 1 mm (cranial) or 1.5 mm (peripheral) with round caps.
+
+Reference views: `node scripts/shots.mjs <tag>` (set `QUALITY=high` for the composer path) captures four standard views from the running dev server into `qa/shots/<tag>/`, and `pipeline/.venv/bin/python scripts/montage.py before after` tiles them.
 
 ## Using the atlas
 
 - **Tree (left):** toggle systems and structures; filter by name.
 - **Search (toolbar):** structures, pathways, syndromes; prefix `>` for syndromes only.
-- **3D view:** orbit with the mouse, click a mesh or the MRI slice to select; `Shift`+click selects without moving the slices. Presets `1`–`8`.
+- **3D view:** left-drag orbits, right-drag pans, wheel zooms toward the cursor, one finger orbits and two fingers zoom/pan on touch; click a mesh or the MRI slice to select, double-click to frame a structure; `Shift`+click selects without moving the slices. Presets `1`–`8`.
+- **Rendering:** physically based materials with an anatomical palette (cortex pinkish-grey, white matter cream, vessels red and blue, nerves pale yellow, CSF and dura translucent); the **Quality** button switches on ambient occlusion, a soft key-light shadow and anti-aliasing (persisted). High-detail meshes load lazily behind small stand-ins.
 - **Slices (bottom):** axial / coronal / sagittal position, T1/T2, peel mode, territory tint, label outlines, "all labels".
 - **Content (right):** tabs for overview, anatomy, connections, function, blood supply, imaging (click a view to jump the slices), clinical, pitfalls and sources.
 - **Pathways:** `#/pathway/<id>` lists the stations; click one to select it.
 - **Syndrome mode:** `#/syndrome/<id>?step=n&side=l|r` dims the scene, highlights the involved structures, places the lesion marker, and steps through the deficits (◀ ▶ in the bar; click a row in the table). "Mirror" moves the lesion to the other side. `Esc` exits.
+- **Topics:** `#/topic` lists the clinical topics by category; `#/topic/<id>` opens one and spotlights its meshes.
 - **Quiz:** `#/quiz` (answer with `A`–`E`, arrows to move). **Glossary:** `#/glossary`.
 - `?` shows all shortcuts; `Shift+S` saves a screenshot.
 
 ## Authoring content
 
-Content lives as JSON in `content/data/<kind>/<id>.json`, validated by the zod schemas in `content/schema/`. Entries are written with the Python helpers in `tools/author/` (`lib.py` for structures, `synlib.py` for syndromes) and the batch scripts `batchNN_*.py`; `node scripts/content/build.ts` validates, checks cross-links, word minimums, spelling, an 11-word-shingle overlap check against the private reference corpus, and bundles.
+Content lives as JSON in `content/data/<kind>/<id>.json`, validated by the zod schemas in `content/schema/` (`structure`, `cranial-nerve`, `pathway`, `syndrome`, `topic`, `glossary`, `quiz`). Entries are written with the Python helpers in `tools/author/` (`lib.py` for structures and topics, `synlib.py` for syndromes, `corlib.py`/`tractlib.py` for mesh-backed parcels and tracts) and the batch scripts `batchNN_*.py`; `node scripts/content/build.ts` validates, checks cross-links, word minimums, spelling, an 11-word-shingle overlap check against the private reference corpus, and bundles.
 
 Rules: American spelling; every entry cites printed pages; syndromes must state the crossing/side logic; imaging block mandatory; no figure or table references; no reused book vignettes.
 
@@ -64,6 +71,12 @@ node scripts/check-data.ts
 uv run --project pipeline atlas-qa       # data gates
 npx playwright install chromium && npm run e2e   # browser smoke tests against the dev server
 ```
+
+## Not covered
+
+- No mesh exists in the sources for the phrenic nerve, the deep cerebral veins (internal cerebral, basal, great cerebral vein), the choroid plexus of the fourth ventricle or individual spinal cord segments; the lumbosacral plexus mesh is assembled from its proximal branches because Z-Anatomy has no roots or trunks for it. These remain content-only ("virtual") structures.
+- Brainstem Navigator nuclei need a manual NITRC download and are not included.
+- Snell chapters 1–2 (general organization, neuron and glial cell biology) are covered only where they touch a topic (transmitters, nerve injury, cortical layers); Berkowitz chapters 20 and 24 are summarized as topics rather than entry by entry.
 
 ## Licence
 

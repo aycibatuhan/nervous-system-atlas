@@ -1,0 +1,67 @@
+{
+ "kind": "quiz",
+ "id": "qz-60",
+ "type": "imaging",
+ "vignette": "A 24-year-old woman with a two-week history of headache worse on lying down and transient visual obscurations has papilledema and a sixth nerve palsy. CT of the brain is normal. MR venography shows an absent flow signal in the right transverse sinus.",
+ "stem": "What is the diagnosis and the mechanism of the sixth nerve palsy?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Idiopathic intracranial hypertension; the nerve is compressed in the cavernous sinus"
+  },
+  {
+   "key": "B",
+   "text": "Cerebral venous sinus thrombosis with raised pressure; the sixth nerve is stretched over the petrous ridge as a false localizing sign"
+  },
+  {
+   "key": "C",
+   "text": "Pontine glioma; the abducens nucleus is infiltrated"
+  },
+  {
+   "key": "D",
+   "text": "Migraine; the palsy is ophthalmoplegic migraine"
+  },
+  {
+   "key": "E",
+   "text": "Meningitis; the nerve is inflamed in the subarachnoid space"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Headache, papilledema and a sixth nerve palsy with a normal CT mean raised intracranial pressure, and the absent transverse sinus flow makes the cause venous sinus thrombosis; the long intracranial course of the abducens nerve over the petrous apex makes it the nerve stretched by pressure, a false localizing sign that does not indicate a pontine lesion.",
+ "targets": {
+  "structureIds": [
+   "sinus-transverse-sigmoid",
+   "cn-06-abducens"
+  ],
+  "syndromeIds": [
+   "syn-cerebral-venous-sinus-thrombosis",
+   "syn-cn6-palsy",
+   "syn-idiopathic-intracranial-hypertension"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "sinus-transverse-r",
+  "cn-06-abducens-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    200,
+    206
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    91,
+    96
+   ]
+  }
+ ],
+ "original": true
+}

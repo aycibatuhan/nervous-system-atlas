@@ -1,0 +1,64 @@
+{
+ "kind": "quiz",
+ "id": "qz-59",
+ "type": "mechanism",
+ "vignette": "A 4-month-old ex-premature infant has stiff legs that scissor when held upright, with relatively normal arms. Cranial ultrasound in the neonatal period showed periventricular cysts.",
+ "stem": "Why are the legs affected more than the arms?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The leg area of the motor cortex is supplied by the anterior cerebral artery"
+  },
+  {
+   "key": "B",
+   "text": "The corticospinal fibers for the legs run closest to the lateral ventricles and are injured by periventricular leukomalacia"
+  },
+  {
+   "key": "C",
+   "text": "The spinal cord is more vulnerable in prematurity"
+  },
+  {
+   "key": "D",
+   "text": "The arm fibers cross earlier in the medulla"
+  },
+  {
+   "key": "E",
+   "text": "The cerebellum controls the arms"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Spastic diplegia of prematurity is periventricular leukomalacia: the corticospinal fibers for the legs descend through the periventricular white matter nearest the ventricles, in the border zone of the immature brain's perfusion, while the arm and face fibers run more laterally and are spared.",
+ "targets": {
+  "structureIds": [
+   "tract-corticospinal",
+   "cerebral-white-matter",
+   "ventricle-lateral"
+  ],
+  "syndromeIds": [],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "tract-corticospinal-l",
+  "tract-corticospinal-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 18,
+   "pages": [
+    486,
+    506
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    33,
+    38
+   ]
+  }
+ ],
+ "original": true
+}

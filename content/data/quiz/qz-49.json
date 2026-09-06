@@ -1,0 +1,57 @@
+{
+ "kind": "quiz",
+ "id": "qz-49",
+ "type": "localize",
+ "vignette": "A 52-year-old woman notices that the left half of the room looks washed out, as if in black and white, while the right half is colored. Acuity is normal and she has a subtle left upper quadrant defect.",
+ "stem": "Which cortical region is affected?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right ventral occipito-temporal cortex (lingual and fusiform gyri)"
+  },
+  {
+   "key": "B",
+   "text": "Right cuneus"
+  },
+  {
+   "key": "C",
+   "text": "Left cuneus"
+  },
+  {
+   "key": "D",
+   "text": "Right lateral geniculate nucleus"
+  },
+  {
+   "key": "E",
+   "text": "Left fusiform gyrus"
+  }
+ ],
+ "answer": "A",
+ "explanation": "Hemiachromatopsia in the left hemifield with an upper quadrant defect places the lesion in the right ventral occipito-temporal cortex below the calcarine sulcus, where the color-processing V4 region on the lingual and fusiform gyri lies next to the lower calcarine bank that represents the upper field.",
+ "targets": {
+  "structureIds": [
+   "cortex-temporo-occipital-fusiform",
+   "gyrus-lingual"
+  ],
+  "syndromeIds": [
+   "syn-pca-infarct"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "cortex-temporo-occipital-fusiform-r",
+  "gyrus-lingual-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  }
+ ],
+ "original": true
+}

@@ -1,0 +1,58 @@
+{
+ "kind": "quiz",
+ "id": "qz-36",
+ "type": "localize",
+ "vignette": "A 55-year-old man has sudden weakness of the left leg with a normal arm and face. He is apathetic and answers slowly, and his wife says he has been incontinent since the event. A grasp reflex is present on the left.",
+ "stem": "Which artery is occluded?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Right middle cerebral artery, superior division"
+  },
+  {
+   "key": "B",
+   "text": "Right anterior cerebral artery"
+  },
+  {
+   "key": "C",
+   "text": "Right posterior cerebral artery"
+  },
+  {
+   "key": "D",
+   "text": "Right lenticulostriate artery"
+  },
+  {
+   "key": "E",
+   "text": "Basilar artery"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Leg-predominant weakness with abulia, incontinence and a grasp reflex is the anterior cerebral artery territory: the paracentral lobule (leg), the medial frontal micturition and motivation areas and the cingulate cortex. An MCA lesion would weaken the face and arm.",
+ "targets": {
+  "structureIds": [
+   "territory-aca-major",
+   "gyrus-superior-frontal",
+   "cortex-supplementary-motor"
+  ],
+  "syndromeIds": [
+   "syn-aca-infarct"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "territory-aca-major-r",
+  "gyrus-superior-frontal-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    55,
+    57
+   ]
+  }
+ ],
+ "original": true
+}

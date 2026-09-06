@@ -1,0 +1,60 @@
+{
+ "kind": "quiz",
+ "id": "qz-55",
+ "type": "localize",
+ "vignette": "A 33-year-old woman develops weakness of hip abduction and foot dorsiflexion on the right with numbness of the dorsum of the foot after a prolonged labor. The ankle jerk is preserved. Nerve conduction studies show a normal superficial peroneal sensory response.",
+ "stem": "Where is the lesion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Common peroneal nerve at the fibular neck"
+  },
+  {
+   "key": "B",
+   "text": "L5 root or lumbosacral plexus"
+  },
+  {
+   "key": "C",
+   "text": "Sciatic nerve in the thigh"
+  },
+  {
+   "key": "D",
+   "text": "Superficial peroneal nerve"
+  },
+  {
+   "key": "E",
+   "text": "Tibial nerve"
+  }
+ ],
+ "answer": "B",
+ "explanation": "Foot drop with weak hip abduction (superior gluteal nerve) cannot be a peroneal palsy, and a normal superficial peroneal sensory potential despite a numb dorsum means the lesion is proximal to the dorsal root ganglion or in the plexus close to it: the L5 root or lumbosacral trunk compressed by the fetal head. The sciatic nerve would reduce the sensory potential and spare hip abduction.",
+ "targets": {
+  "structureIds": [
+   "nerve-superior-gluteal",
+   "plexus-lumbosacral",
+   "nerves-dorsal-cutaneous-foot"
+  ],
+  "syndromeIds": [
+   "syn-lumbosacral-plexopathy",
+   "syn-peroneal-palsy-foot-drop",
+   "syn-radiculopathy-lumbosacral"
+  ],
+  "pathwayIds": []
+ },
+ "highlightOnReveal": [
+  "superior-gluteal-nerve-r",
+  "lumbosacral-plexus-r"
+ ],
+ "difficulty": "2",
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    166
+   ]
+  }
+ ],
+ "original": true
+}
