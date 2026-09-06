@@ -1,0 +1,181 @@
+{
+ "kind": "structure",
+ "id": "cortex-central-operculum",
+ "name": "Central opercular cortex",
+ "synonyms": [
+  "central operculum",
+  "rolandic operculum"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-central-operculum-l",
+  "cortex-central-operculum-r"
+ ],
+ "summary": "The central operculum is the part of the precentral and postcentral gyri that folds under to form the roof of the middle portion of the lateral sulcus, immediately above the insula. It contains the ventral end of the primary motor and sensory maps, the face, tongue, larynx and pharynx representations, and the secondary somatosensory cortex lies just behind it in the parietal operculum. Lesions produce contralateral lower facial weakness, dysarthria and dysphagia and loss of sensation on the face, and bilateral lesions cause the anarthric opercular syndrome; middle cerebral artery branch infarcts and perisylvian polymicrogyria are the common causes.",
+ "anatomy": {
+  "location": "The buried inferior ends of the precentral and postcentral gyri above the insula, between the frontal operculum in front and the parietal operculum behind, forming the upper bank of the posterior Sylvian fissure.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Ventral posteromedial thalamus (face)",
+    "via": "thalamocortical fibers"
+   },
+   {
+    "from": "Premotor and frontal opercular cortex",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Contralateral central operculum",
+    "via": "corpus callosum"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Facial, hypoglossal, ambiguus and trigeminal motor nuclei",
+    "via": "corticobulbar tract"
+   },
+   {
+    "to": "Putamen",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Parietal operculum (SII)",
+    "via": "short association fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-corticobulbar",
+   "pathway-trigeminothalamic"
+  ]
+ },
+ "function": "The lower end of the motor homunculus here drives the muscles of the face, jaw, tongue, larynx and pharynx through the corticobulbar tract, mostly bilaterally except for the lower face, and the adjacent sensory strip receives touch and proprioception from the face and mouth through the ventral posteromedial thalamus. The region controls the fine sequencing of speech and swallowing, and its secondary somatosensory field integrates pain and touch from both sides of the body. Focal seizures here produce contralateral facial clonic jerking, tongue tingling and drooling that may march to the arm.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-mca-frontal",
+   "territory-mca-parietal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-central-operculum-l"
+    },
+    "label": "central operculum above the posterior insula"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cortex-central-operculum-r"
+    },
+    "label": "buried ends of the central gyri at the Sylvian fissure"
+   }
+  ],
+  "normalAppearance": "The lower ends of the precentral and postcentral gyri as they curve into the Sylvian fissure, best seen on coronal images through the posterior insula; the face motor area is at the lateral convexity above the fissure.",
+  "pathology": [
+   {
+    "pathology": "MCA branch infarct with facial weakness and dysarthria",
+    "modality": "MRI",
+    "finding": "Small cortical restricted diffusion at the inferior end of the central gyri; often mistaken clinically for a brainstem or peripheral facial lesion.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Perisylvian polymicrogyria",
+    "modality": "MRI",
+    "finding": "Thickened irregular cortex with shallow sulci around the Sylvian fissures, often bilateral, with pseudobulbar palsy and epilepsy from childhood.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Focal motor seizure of the face",
+    "modality": "EEG",
+    "finding": "Clonic jerking of the contralateral face with drooling and speech arrest; EEG shows a fronto-central focus.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral lower facial weakness sparing the forehead",
+    "side": "contralateral",
+    "mechanism": "Loss of the crossed corticobulbar projection to the lower facial motor nucleus"
+   },
+   {
+    "deficit": "Dysarthria and dysphagia",
+    "side": "contralateral",
+    "mechanism": "Weakness and incoordination of the tongue, palate and pharynx from the ventral motor cortex"
+   },
+   {
+    "deficit": "Loss of touch and position sense on the face and in the mouth",
+    "side": "contralateral",
+    "mechanism": "Damage to the ventral postcentral gyrus receiving the VPM thalamic projection"
+   }
+  ],
+  "examination": [
+   "Test the lower face: show the teeth, puff the cheeks; forehead sparing points to a supranuclear lesion",
+   "Palatal movement, gag, swallowing and tongue power and speed",
+   "Facial two-point discrimination and stereognosis of objects in the mouth"
+  ],
+  "syndromes": [
+   "syn-facial-palsy-peripheral-vs-central",
+   "syn-bulbar-vs-pseudobulbar"
+  ],
+  "pearls": [
+   "A central facial palsy with dysarthria and a normal arm can be a tiny opercular cortical stroke",
+   "Bilateral opercular damage causes pseudobulbar palsy of cortical origin with intact emotional facial movement",
+   "The face area lies low on the convexity, just above the Sylvian fissure, in the inferior division of the MCA"
+  ]
+ },
+ "pitfalls": [
+  "Forehead sparing distinguishes a cortical facial palsy from a Bell palsy, but a partial peripheral palsy can mimic it; check taste and hyperacusis"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    283,
+    288
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    258
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    57
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 13,
+   "pages": [
+    121,
+    123
+   ]
+  }
+ ],
+ "tags": [
+  "face area",
+  "homunculus",
+  "operculum"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

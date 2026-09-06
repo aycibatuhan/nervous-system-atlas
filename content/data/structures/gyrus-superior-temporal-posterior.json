@@ -1,0 +1,181 @@
+{
+ "kind": "structure",
+ "id": "gyrus-superior-temporal-posterior",
+ "name": "Superior temporal gyrus, posterior division",
+ "synonyms": [
+  "Wernicke area (posterior STG)",
+  "area 22"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-superior-temporal-posterior-l",
+  "gyrus-superior-temporal-posterior-r"
+ ],
+ "summary": "The posterior superior temporal gyrus, behind Heschl's gyrus and beneath the planum temporale, is the core of Wernicke's area in the dominant hemisphere (Brodmann area 22 and the adjoining supramarginal cortex). It maps the sounds of speech onto words and sentences, and through the arcuate fasciculus it feeds the frontal speech area so that heard words can be repeated. Infarction of the inferior division of the middle cerebral artery here produces the fluent, paraphasic, poorly comprehended speech of Wernicke aphasia with a superior quadrantanopia from the adjacent optic radiation, and the right homologue supports the perception of prosody and the spatial localization of sound.",
+ "anatomy": {
+  "location": "Posterior half of the superior temporal gyrus, below the posterior Sylvian fissure and above the superior temporal sulcus, from the transverse temporal gyrus back to the point where the gyrus turns up into the supramarginal gyrus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Primary auditory cortex and planum temporale",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Inferior parietal lobule",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Contralateral posterior temporal cortex",
+    "via": "corpus callosum"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Inferior frontal gyrus and premotor cortex",
+    "via": "arcuate fasciculus"
+   },
+   {
+    "to": "Angular and supramarginal gyri",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Middle and inferior temporal cortex (semantics)",
+    "via": "short association fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-auditory",
+   "pathway-visual"
+  ]
+ },
+ "function": "In the dominant hemisphere this cortex converts the acoustic pattern of speech into phonological word forms and matches them against the lexicon, supporting comprehension, and holds the phonological trace needed for repetition and for monitoring one's own output; damage lets the patient speak fluently but with wrong sounds and words they cannot detect. It is the start of the dorsal auditory stream that runs through the arcuate fasciculus to the inferior frontal gyrus and premotor cortex. In the right hemisphere the same region decodes the emotional intonation of speech and the location and movement of sounds, and both sides process the intelligibility of degraded speech.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "gyrus-superior-temporal-posterior-l"
+    },
+    "label": "posterior superior temporal gyrus, Wernicke area of the dominant hemisphere"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "gyrus-superior-temporal-posterior-r"
+    },
+    "label": "posterior superior temporal gyrus behind Heschl's gyrus"
+   }
+  ],
+  "normalAppearance": "Cortex below the posterior Sylvian fissure behind the transverse temporal gyrus on axial images through the level of the thalamus; the planum temporale on its upper surface is usually larger on the left.",
+  "pathology": [
+   {
+    "pathology": "Wernicke aphasia from MCA inferior division infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the posterior superior temporal gyrus and adjacent supramarginal cortex on the left, often with the optic radiation in the temporal stem.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Temporal lobe glioma",
+    "modality": "MRI",
+    "finding": "T2/FLAIR infiltration of the posterior superior temporal gyrus with progressive word-finding and comprehension difficulty and seizures.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Logopenic primary progressive aphasia",
+    "modality": "MRI",
+    "finding": "Left posterior temporal and inferior parietal atrophy with impaired repetition and word retrieval, typically Alzheimer pathology.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Fluent paraphasic speech with impaired comprehension and repetition",
+    "side": "n/a",
+    "mechanism": "Loss of the phonological word-form system of the dominant posterior temporal cortex"
+   },
+   {
+    "deficit": "Contralateral superior quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Involvement of the lower optic radiation fibers in the adjacent temporal white matter"
+   },
+   {
+    "deficit": "Impaired sound localization and prosody perception (right)",
+    "side": "n/a",
+    "mechanism": "Right posterior superior temporal cortex no longer processes the spatial and emotional dimensions of sound"
+   }
+  ],
+  "examination": [
+   "Comprehension of commands of increasing complexity, repetition of phrases, naming",
+   "Listen for paraphasias and neologisms and for the patient's unawareness of them",
+   "Visual fields by confrontation in all four quadrants"
+  ],
+  "syndromes": [
+   "syn-aphasia-wernicke",
+   "syn-mca-inferior-division",
+   "syn-aphasia-conduction-global"
+  ],
+  "pearls": [
+   "A fluent aphasic who does not understand and is unaware of errors has a posterior lesion; agitation is common because they cannot understand why nobody understands them",
+   "Wernicke aphasia plus a superior quadrantanopia and no weakness is the inferior division of the MCA",
+   "The right posterior temporal lobe hears the tone of voice; its loss makes the patient miss sarcasm and anger"
+  ]
+ },
+ "pitfalls": [
+  "Acute Wernicke aphasia is often mistaken for confusion or psychosis; test comprehension and repetition before calling psychiatry"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    287,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    258
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    105,
+    108
+   ]
+  }
+ ],
+ "tags": [
+  "language",
+  "Wernicke",
+  "dorsal stream"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-temporal",
+ "parent": "lobe-temporal"
+}

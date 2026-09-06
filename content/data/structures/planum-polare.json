@@ -1,0 +1,187 @@
+{
+ "kind": "structure",
+ "id": "planum-polare",
+ "name": "Planum polare",
+ "synonyms": [
+  "anterior superior temporal plane"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "planum-polare-l",
+  "planum-polare-r"
+ ],
+ "summary": "The planum polare is the smooth superior surface of the anterior temporal lobe in front of Heschl's gyrus, forming the floor of the anterior part of the lateral sulcus beneath the frontal operculum and facing the anterior insula. It is auditory association cortex of the anterior belt and parabelt (part of area 22) and it processes the temporal structure of sounds, melody and the prosody of voices, feeding the anterior stream of sound identification. It is a middle cerebral artery inferior division territory, is involved with the insula in operculo-insular seizures, and is part of the auditory cortex that is spared in cortical deafness only when both Heschl's gyri survive.",
+ "anatomy": {
+  "location": "Anterior part of the upper surface of the superior temporal gyrus, hidden within the lateral sulcus between the temporal pole in front, Heschl's gyrus behind, the insula medially and the frontal operculum above.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Heschl's gyrus (core auditory cortex)",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Medial geniculate nucleus (belt projection)",
+    "via": "acoustic radiation"
+   },
+   {
+    "from": "Anterior insula",
+    "via": "short association fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Temporal pole and anterior superior temporal gyrus",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Inferior frontal gyrus",
+    "via": "uncinate and extreme capsule fibers"
+   },
+   {
+    "to": "Amygdala",
+    "via": "temporo-amygdalar fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-auditory"
+  ]
+ },
+ "function": "The planum polare contains the anterior auditory belt fields that respond to the pitch contour and rhythm of sounds, to melodies and to the emotional tone of the voice, particularly on the right, and it feeds the anterior stream of sound identification that runs to the temporal pole and the inferior frontal gyrus. It also receives visceral and gustatory information from the adjacent insula and participates in the integration of hearing with emotion through its amygdala connections. Seizures involving it produce auditory auras of distorted sound or music, and lesions produce amusia and impaired recognition of the emotional intonation of speech.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-temporal",
+   "territory-mca-insular"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "planum-polare-l"
+    },
+    "label": "planum polare in the floor of the anterior Sylvian fissure"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "planum-polare-r"
+    },
+    "label": "upper surface of the anterior temporal lobe facing the insula"
+   }
+  ],
+  "normalAppearance": "The flat upper surface of the anterior temporal lobe seen on coronal images through the anterior insula, beneath the Sylvian cistern; it slopes upward toward Heschl's gyrus posteriorly.",
+  "pathology": [
+   {
+    "pathology": "MCA inferior division infarct",
+    "modality": "MRI",
+    "finding": "Cortical restricted diffusion on the superior temporal surface and the adjacent insula with impaired recognition of prosody and music.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Operculo-insular seizures",
+    "modality": "EEG",
+    "finding": "Auditory distortion, music or voices at onset with fear or a throat sensation; scalp EEG is often equivocal.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Sylvian arachnoid cyst",
+    "modality": "MRI",
+    "finding": "CSF-signal cyst in the anterior Sylvian fissure flattening the planum polare and displacing the temporal pole, usually incidental.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Amusia and impaired recognition of emotional prosody (right)",
+    "side": "n/a",
+    "mechanism": "Loss of the anterior belt cortex processing pitch contour and melody"
+   },
+   {
+    "deficit": "Impaired identification of voices and complex sounds",
+    "side": "n/a",
+    "mechanism": "Disruption of the anterior auditory identification stream"
+   },
+   {
+    "deficit": "Auditory illusions and hallucinations during seizures",
+    "side": "n/a",
+    "mechanism": "Ictal activation of anterior auditory association cortex"
+   }
+  ],
+  "examination": [
+   "Ask the patient to hum a familiar tune and to recognize melodies",
+   "Identify the emotion in sentences spoken with varied intonation",
+   "Seizure history of distorted sounds or music"
+  ],
+  "syndromes": [
+   "syn-mca-inferior-division",
+   "syn-hearing-loss"
+  ],
+  "pearls": [
+   "Music and the melody of speech are right anterior temporal; words are left posterior temporal",
+   "A Sylvian arachnoid cyst compressing the planum polare is usually silent and needs no surgery",
+   "Operculo-insular seizures with auditory and throat symptoms are among the most misdiagnosed focal seizures"
+  ]
+ },
+ "pitfalls": [
+  "Aprosodia can be mistaken for depression or flat affect; test recognition of intonation separately from mood"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    287,
+    288
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    258
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    341,
+    341
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    105,
+    108
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    168,
+    170
+   ]
+  }
+ ],
+ "tags": [
+  "auditory belt",
+  "prosody",
+  "music"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-temporal",
+ "parent": "lobe-temporal"
+}

@@ -9,5 +9,6 @@ export interface ContentBundle {
   syndromes: Record<string, ContentEntryBase & Record<string, unknown>>;
   glossary: Record<string, ContentEntryBase & Record<string, unknown>>;
   quiz: Record<string, ContentEntryBase & Record<string, unknown>>;
+  topics: Record<string, ContentEntryBase & Record<string, unknown>>;
   meshToStructure: Record<string, string>;
 }

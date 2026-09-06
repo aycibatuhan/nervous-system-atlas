@@ -1,0 +1,178 @@
+{
+ "kind": "structure",
+ "id": "gyrus-cingulate-anterior",
+ "name": "Cingulate gyrus, anterior division",
+ "synonyms": [
+  "anterior cingulate cortex",
+  "areas 24 and 32"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-cingulate-anterior-l",
+  "gyrus-cingulate-anterior-r"
+ ],
+ "summary": "The anterior cingulate gyrus arches over the genu and the anterior body of the corpus callosum on the medial surface, between the callosal sulcus below and the cingulate sulcus above, Brodmann areas 24, 32 and 33. It is limbic cortex with a motor and a cognitive face: its dorsal part monitors conflict and error and drives effort and vocalization, its ventral (pregenual) part regulates emotion and autonomic tone, and both connect the prefrontal cortex with the amygdala, hypothalamus and striatum. It is supplied by the anterior cerebral artery, and bilateral damage produces apathy and akinetic mutism, whereas seizures beginning here produce fear, hypermotor behavior and autonomic storms.",
+ "anatomy": {
+  "location": "Medial frontal surface above the genu and anterior body of the corpus callosum, from the subcallosal region in front to about the level of the central sulcus behind, where the posterior division begins; the cingulum bundle runs in its white matter.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Anterior thalamic nuclei",
+    "via": "anterior thalamic radiation"
+   },
+   {
+    "from": "Amygdala",
+    "via": "cingulum and ventral amygdalofugal fibers"
+   },
+   {
+    "from": "Prefrontal cortex",
+    "via": "cingulum"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Dorsolateral prefrontal cortex and SMA",
+    "via": "cingulum"
+   },
+   {
+    "to": "Striatum and accumbens",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Hypothalamus, periaqueductal gray and facial nucleus",
+    "via": "descending cingulate projections"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "The anterior cingulate cortex assesses whether the outcome of an action matches its expected value and signals errors and conflicts to the dorsolateral prefrontal cortex, weighs the effort a task will cost against its reward and initiates action and speech; it houses cingulate motor areas that project to the spinal cord and the facial nucleus for emotional expression and vocalization. The ventral part integrates emotion with visceral state and inhibits the amygdala, and its projections to the hypothalamus and brainstem change heart rate, blood pressure and respiration with mental effort and pain. It also carries the affective, unpleasant dimension of pain, which is why cingulotomy relieves suffering without removing sensation.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca"
+  ],
+  "territories": [
+   "territory-aca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "gyrus-cingulate-anterior-l"
+    },
+    "label": "anterior cingulate gyrus above the genu"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "gyrus-cingulate-anterior-r"
+    },
+    "label": "cingulate gyrus between the callosal and cingulate sulci"
+   }
+  ],
+  "normalAppearance": "Gyrus immediately above the corpus callosum on midline sagittal images, separated from it by the callosal sulcus and from the superior frontal gyrus by the cingulate sulcus; the cingulum shows as white matter in its core.",
+  "pathology": [
+   {
+    "pathology": "Anterior cerebral artery infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the anterior cingulate and medial frontal cortex with abulia, mutism and contralateral leg weakness; bilateral when both ACAs arise from one A1.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Cingulate seizures",
+    "modality": "EEG",
+    "finding": "Fearful vocalization, hypermotor thrashing, autonomic change and gestural automatisms from sleep; scalp EEG often non-localizing.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Cingulate glioma",
+    "modality": "MRI",
+    "finding": "FLAIR-bright infiltration of the cingulate gyrus that crosses through the corpus callosum in a butterfly pattern, presenting with apathy or seizures.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Apathy, abulia and akinetic mutism when bilateral",
+    "side": "bilateral",
+    "mechanism": "Loss of the cingulate drive to action and speech"
+   },
+   {
+    "deficit": "Impaired error monitoring and attention",
+    "side": "bilateral",
+    "mechanism": "Loss of the cingulate performance-monitoring signal to prefrontal cortex"
+   },
+   {
+    "deficit": "Autonomic instability and altered pain affect",
+    "side": "bilateral",
+    "mechanism": "Interruption of cingulate projections to the insula, hypothalamus and brainstem"
+   }
+  ],
+  "examination": [
+   "Spontaneous speech and movement over the course of the interview; does the patient initiate anything?",
+   "Stroop and go/no-go tasks",
+   "Heart rate and blood pressure response to a mental arithmetic task in suspected autonomic involvement"
+  ],
+  "syndromes": [
+   "syn-aca-infarct",
+   "syn-subfalcine-herniation"
+  ],
+  "pearls": [
+   "Akinetic mutism from bilateral anterior cingulate damage looks like coma with open eyes; the patient tracks but does not respond",
+   "Cingulotomy for pain leaves the sensation and removes the suffering",
+   "Hypermotor nocturnal seizures with fear are anterior cingulate until proved otherwise"
+  ]
+ },
+ "pitfalls": [
+  "Post-stroke apathy from an anterior cingulate lesion is under-treated because it is mistaken for depression; the patient is not sad, just unmotivated"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    259,
+    259
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    168,
+    170
+   ]
+  }
+ ],
+ "tags": [
+  "anterior cingulate",
+  "limbic",
+  "effort"
+ ],
+ "status": "draft",
+ "subsystem": "limbic",
+ "parent": "gyrus-cingulate"
+}

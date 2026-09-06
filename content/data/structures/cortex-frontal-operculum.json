@@ -1,0 +1,180 @@
+{
+ "kind": "structure",
+ "id": "cortex-frontal-operculum",
+ "name": "Frontal operculum cortex",
+ "synonyms": [
+  "frontal operculum"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-frontal-operculum-l",
+  "cortex-frontal-operculum-r"
+ ],
+ "summary": "The frontal operculum is the lip of frontal cortex that hangs over the anterior part of the insula and forms the upper anterior wall of the lateral sulcus, below the inferior frontal gyrus and in front of the central operculum. It houses ventral premotor cortex, the anterior part of the gustatory cortex and the frontal extension of the language cortex, and it is tightly bound to the insula in function and in disease: middle cerebral artery infarcts, operculo-insular seizures and the opercular (Foix-Chavany-Marie) syndrome all involve it. It is one of the regions where a lesion in either hemisphere produces speech articulation problems.",
+ "anatomy": {
+  "location": "Cortex of the lateral frontal surface that folds under to form the roof of the anterior Sylvian fissure, medial to the pars opercularis and triangularis, in contact with the anterior insula; it continues posteriorly as the central operculum.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Ventral posteromedial thalamus (taste)",
+    "via": "thalamocortical fibers"
+   },
+   {
+    "from": "Anterior insula",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Pars opercularis",
+    "via": "short association fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Cranial nerve motor nuclei (V, VII, IX, X, XII)",
+    "via": "corticobulbar tract"
+   },
+   {
+    "to": "Putamen",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Contralateral operculum",
+    "via": "corpus callosum"
+   }
+  ],
+  "pathways": [
+   "pathway-corticobulbar",
+   "pathway-gustatory"
+  ]
+ },
+ "function": "The frontal operculum coordinates the muscles of the mouth, pharynx and larynx for speech, chewing and swallowing through its projection to the corticobulbar tract, contributes to speech initiation and articulation, and contains part of the gustatory cortex that gives taste its conscious quality. Bilateral damage disconnects the cranial nerve nuclei from voluntary control while automatic emotional movements survive: the patient cannot open the mouth on command but yawns and laughs normally. Seizures beginning here produce salivation, throat sensations, gustatory auras and speech arrest.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-mca-frontal",
+   "territory-mca-insular"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-frontal-operculum-l"
+    },
+    "label": "frontal operculum over the anterior insula"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cortex-frontal-operculum-r"
+    },
+    "label": "roof of the anterior Sylvian fissure"
+   }
+  ],
+  "normalAppearance": "The frontal operculum is the cortex covering the anterior insula on coronal images, seen as the upper lip of the Sylvian fissure; its gyri are short and curved and continuous with the pars opercularis laterally.",
+  "pathology": [
+   {
+    "pathology": "Opercular (Foix-Chavany-Marie) syndrome",
+    "modality": "MRI",
+    "finding": "Bilateral opercular infarcts or perinatal polymicrogyria of the perisylvian cortex in a patient with anarthria and dysphagia but preserved emotional facial movement.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Operculo-insular epilepsy",
+    "modality": "EEG",
+    "finding": "Seizures with throat constriction, salivation, gustatory aura and speech arrest; scalp EEG shows fronto-temporal discharges that are poorly localized.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "MCA branch infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the frontal operculum and adjacent insula with dysarthria, dysphagia and contralateral lower facial weakness.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anarthria and dysphagia with preserved emotional facial movement",
+    "side": "bilateral",
+    "mechanism": "Bilateral loss of voluntary corticobulbar control of the face, tongue and pharynx from the opercular cortex"
+   },
+   {
+    "deficit": "Dysarthria and contralateral lower facial weakness",
+    "side": "contralateral",
+    "mechanism": "Unilateral opercular damage to the ventral motor and premotor cortex"
+   },
+   {
+    "deficit": "Gustatory hallucinations and salivation during seizures",
+    "side": "n/a",
+    "mechanism": "Ictal activation of the opercular gustatory cortex"
+   }
+  ],
+  "examination": [
+   "Ask the patient to open the mouth, protrude the tongue and swallow on command, then watch them yawn or smile spontaneously",
+   "Assess articulation with repeated syllables (pa-ta-ka)",
+   "Taste testing and a seizure history with throat or taste auras"
+  ],
+  "syndromes": [
+   "syn-bulbar-vs-pseudobulbar",
+   "syn-mca-superior-division"
+  ],
+  "pearls": [
+   "Automatic-voluntary dissociation of the face means bilateral opercular cortex, not brainstem",
+   "Opercular seizures look like panic attacks with a throat sensation and drooling",
+   "Both hemispheres contribute to speech articulation; a right opercular stroke can cause dysarthria"
+  ]
+ },
+ "pitfalls": [
+  "Sudden anarthria with a normal brainstem examination should prompt imaging of both opercula, not a diagnosis of conversion"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    258
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    284,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    349,
+    350
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    57
+   ]
+  }
+ ],
+ "tags": [
+  "operculum",
+  "speech",
+  "taste"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

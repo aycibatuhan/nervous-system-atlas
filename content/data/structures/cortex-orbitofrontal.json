@@ -1,0 +1,190 @@
+{
+ "kind": "structure",
+ "id": "cortex-orbitofrontal",
+ "name": "Frontal orbital cortex",
+ "synonyms": [
+  "orbitofrontal cortex",
+  "gyrus rectus and orbital gyri"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-orbitofrontal-l",
+  "cortex-orbitofrontal-r"
+ ],
+ "summary": "The orbital frontal cortex is the inferior surface of the frontal lobe resting on the orbital roof and the cribriform plate, made of the gyrus rectus medially and the orbital gyri around the H-shaped orbital sulcus laterally (Brodmann areas 11, 12, 13 and 47). It is the cortex of reward, taste and smell integration and of social and emotional behavior, and the region most vulnerable to contusion when the brain slides over the rough anterior fossa floor. Its damage produces the disinhibited, jocular, impulsive patient of the Phineas Gage type, and it atrophies early in behavioral variant frontotemporal dementia.",
+ "anatomy": {
+  "location": "Inferior surface of the frontal lobe from the frontal pole back to the anterior perforated substance, with the olfactory sulcus and the olfactory bulb and tract running along the gyrus rectus medially and the orbital gyri lateral to it.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Piriform cortex and olfactory tract",
+    "via": "direct olfactory projection"
+   },
+   {
+    "from": "Amygdala",
+    "via": "uncinate fasciculus"
+   },
+   {
+    "from": "Insular gustatory and visceral cortex",
+    "via": "short association fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Ventral striatum",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Hypothalamus",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Amygdala and periaqueductal gray",
+    "via": "uncinate fasciculus and descending fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-olfactory",
+   "pathway-gustatory"
+  ]
+ },
+ "function": "The orbitofrontal cortex assigns and updates the reward value of stimuli: it receives taste from the insular gustatory cortex, smell directly from the piriform cortex, and visceral and emotional information from the amygdala and the hypothalamus, and it signals when an expected reward changes so that behavior is reversed. Lateral orbital cortex inhibits inappropriate responses and processes punishment; medial orbital cortex encodes reward and is part of the ventral prefrontal loop with the ventral striatum. It also contributes to olfactory identification and hedonic evaluation, which is why anosmia and altered food preference accompany orbital damage.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-orbitofrontal-l"
+    },
+    "label": "orbital gyri on the roof of the orbit"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cortex-orbitofrontal-r"
+    },
+    "label": "orbital surface of the frontal lobe with the olfactory sulcus"
+   }
+  ],
+  "normalAppearance": "Flat gyri on the floor of the anterior cranial fossa above the orbital roofs; the gyrus rectus is the straight medial gyrus beside the olfactory tract, seen best on coronal images through the frontal horns.",
+  "pathology": [
+   {
+    "pathology": "Orbitofrontal contusion",
+    "modality": "MRI",
+    "finding": "Hemosiderin and gliosis of the inferior frontal surfaces on susceptibility and FLAIR images, often bilateral, months after a head injury.",
+    "sequence": "SWI"
+   },
+   {
+    "pathology": "Olfactory groove meningioma",
+    "modality": "MRI",
+    "finding": "Extra-axial enhancing midline mass indenting the gyri recti and displacing the olfactory tracts, with anosmia and frontal behavior.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Behavioral variant frontotemporal dementia",
+    "modality": "MRI",
+    "finding": "Orbitofrontal and anterior temporal atrophy, often asymmetric, with relative sparing of the posterior cortex.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Disinhibition, impulsivity and inappropriate jocularity",
+    "side": "bilateral",
+    "mechanism": "Loss of orbitofrontal inhibition of limbic and striatal drives"
+   },
+   {
+    "deficit": "Impaired reversal learning and poor judgement",
+    "side": "bilateral",
+    "mechanism": "Loss of the value-updating signal from the orbitofrontal cortex to the striatum"
+   },
+   {
+    "deficit": "Anosmia and altered food preference",
+    "side": "ipsilateral",
+    "mechanism": "Damage to the olfactory tract along the gyrus rectus and to the orbital olfactory cortex"
+   }
+  ],
+  "examination": [
+   "Smell testing with a familiar odor in each nostril",
+   "Ask about tact, jokes, spending and eating habits",
+   "Go/no-go and Stroop-type tasks for response inhibition"
+  ],
+  "syndromes": [
+   "syn-anosmia",
+   "syn-kluver-bucy"
+  ],
+  "pearls": [
+   "Orbitofrontal patients pass most cognitive tests and fail at life",
+   "The orbital surface is the site of contusion in a fall on the back of the head",
+   "Olfactory groove meningioma is the classic subfrontal tumor and presents with personality change and anosmia"
+  ]
+ },
+ "pitfalls": [
+  "Orbitofrontal contusions are invisible on early CT under the bony orbital roof; MRI with susceptibility imaging shows them"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    259,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    285,
+    286
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    327,
+    328
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    236,
+    238
+   ]
+  }
+ ],
+ "tags": [
+  "prefrontal",
+  "reward",
+  "olfaction"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

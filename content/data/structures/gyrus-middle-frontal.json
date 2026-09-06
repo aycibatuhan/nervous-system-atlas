@@ -1,0 +1,177 @@
+{
+ "kind": "structure",
+ "id": "gyrus-middle-frontal",
+ "name": "Middle frontal gyrus",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-middle-frontal-l",
+  "gyrus-middle-frontal-r"
+ ],
+ "summary": "The middle frontal gyrus lies between the superior and inferior frontal sulci on the lateral convexity and is the largest territory of dorsolateral prefrontal cortex (Brodmann areas 9 and 46 anteriorly, 8 and 6 posteriorly). Its posterior end holds the frontal eye field, so a destructive lesion turns the eyes toward the lesion and a seizure turns them away. Its anterior two-thirds support working memory, set shifting, planning and the executive functions tested at the bedside by fluency, trail making and the Wisconsin card sort. It is a middle cerebral artery superior division territory and one of the areas that atrophy earliest in behavioral variant frontotemporal dementia.",
+ "anatomy": {
+  "location": "Middle of the three frontal convexity gyri, bounded above by the superior frontal sulcus, below by the inferior frontal sulcus and behind by the precentral sulcus; often subdivided by a shallow middle frontal sulcus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior parietal cortex",
+    "via": "superior longitudinal fasciculus II"
+   },
+   {
+    "from": "Mediodorsal thalamus",
+    "via": "anterior thalamic radiation"
+   },
+   {
+    "from": "Ventral tegmental area (dopamine)",
+    "via": "mesocortical projection"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Caudate nucleus (prefrontal loop)",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Paramedian pontine reticular formation (saccades)",
+    "via": "frontal eye field projection via the superior colliculus"
+   },
+   {
+    "to": "Contralateral middle frontal gyrus",
+    "via": "corpus callosum"
+   }
+  ],
+  "pathways": [
+   "pathway-horizontal-gaze",
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "The dorsolateral prefrontal cortex here holds and manipulates information over seconds (working memory), selects rules and switches them when they fail, and inhibits prepotent responses; it is heavily connected with the parietal attention areas by the superior longitudinal fasciculus and with the mediodorsal thalamus and the caudate in the prefrontal loop of the basal ganglia. The posterior part, the frontal eye field, generates voluntary saccades to the contralateral side and contributes to smooth pursuit. Damage produces the dysexecutive syndrome: poor planning, perseveration, loss of set and impaired fluency with preserved basic language.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "gyrus-middle-frontal-l"
+    },
+    "label": "middle frontal gyrus between the superior and inferior frontal sulci"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "gyrus-middle-frontal-r"
+    },
+    "label": "dorsolateral frontal convexity"
+   }
+  ],
+  "normalAppearance": "Broad gyrus on the lateral frontal convexity, often the largest cross-sectional gyrus on axial slices above the lateral ventricles; its posterior end abuts the precentral sulcus just in front of the hand knob.",
+  "pathology": [
+   {
+    "pathology": "Superior division MCA infarct",
+    "modality": "MRI",
+    "finding": "Cortical restricted diffusion of the dorsolateral frontal convexity with gaze deviation toward the lesion and contralateral face-arm weakness when the precentral gyrus is included.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Behavioral variant frontotemporal dementia",
+    "modality": "MRI",
+    "finding": "Asymmetric dorsolateral and orbital frontal atrophy with widened sulci and ex vacuo dilatation of the frontal horns.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Frontal glioma",
+    "modality": "MRI",
+    "finding": "Infiltrating non-enhancing T2/FLAIR expansion of the middle frontal gyrus with subtle executive change or a first seizure.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Dysexecutive syndrome: poor planning, perseveration, impaired fluency",
+    "side": "bilateral",
+    "mechanism": "Loss of dorsolateral prefrontal working memory and set-shifting circuits"
+   },
+   {
+    "deficit": "Eyes deviated toward the lesion; cannot look away voluntarily",
+    "side": "ipsilateral",
+    "mechanism": "Destruction of the frontal eye field removes the drive for contralateral saccades"
+   },
+   {
+    "deficit": "Contralateral head and eye turning during a seizure",
+    "side": "contralateral",
+    "mechanism": "Ictal activation of the frontal eye field"
+   }
+  ],
+  "examination": [
+   "Verbal fluency (F-A-S), Luria sequence, antisaccade task and clock drawing",
+   "Watch for gaze deviation in an acute presentation and for the direction of eye turning in a seizure",
+   "Ask about apathy, loss of planning and disorganized daily activities"
+  ],
+  "syndromes": [
+   "syn-mca-superior-division",
+   "syn-hemineglect"
+  ],
+  "pearls": [
+   "Eyes look toward a destructive frontal lesion and away from an irritative one",
+   "Executive dysfunction with normal memory and language points to the dorsolateral frontal lobe",
+   "The frontal eye field sits at the back of this gyrus, just in front of the hand area"
+  ]
+ },
+ "pitfalls": [
+  "Executive deficits are missed by a mini-mental examination; use a frontal assessment battery"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    255,
+    258
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    285,
+    288
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    57
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    237,
+    238
+   ]
+  }
+ ],
+ "tags": [
+  "dorsolateral prefrontal",
+  "frontal eye field",
+  "areas 9 and 46"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

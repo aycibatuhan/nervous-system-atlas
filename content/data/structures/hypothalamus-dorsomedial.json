@@ -1,0 +1,137 @@
+{
+ "kind": "structure",
+ "id": "hypothalamus-dorsomedial",
+ "name": "Dorsomedial nucleus",
+ "synonyms": [
+  "DMH"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "hypothalamus-dorsomedial-l",
+  "hypothalamus-dorsomedial-r"
+ ],
+ "summary": "The dorsomedial nucleus lies in the tuberal hypothalamus above the ventromedial nucleus and beside the third ventricle, below the paraventricular nucleus and medial to the fornix and the lateral hypothalamic area. It is a coordinating nucleus that relays circadian information from the suprachiasmatic nucleus to the systems that control sleep and waking, feeding, temperature and corticosteroid secretion, and it drives the cardiovascular and thermogenic components of the stress and fever responses through the sympathetic premotor neurons of the brainstem. It contributes to the food-anticipatory rhythm that wakes animals before an expected meal, and its damage blunts circadian rhythms of activity and feeding and the cardiovascular response to stress.",
+ "anatomy": {
+  "location": "Medial tuberal hypothalamus between the paraventricular nucleus above and the ventromedial nucleus below, lateral to the third ventricle and medial to the lateral hypothalamus and the descending column of the fornix, behind the anterior hypothalamic area and in front of the posterior hypothalamus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "The dorsomedial nucleus receives the subparaventricular zone output of the suprachiasmatic clock and distributes it: to the ventrolateral preoptic and orexin neurons to time sleep and waking, to the paraventricular nucleus to time corticotropin-releasing hormone release, and to the raphe pallidus and the rostral ventrolateral medulla to time thermogenesis and blood pressure. Its excitation by stress produces tachycardia, hypertension and hyperthermia through these same brainstem projections, and it mediates the fever of infection by driving brown fat thermogenesis and cutaneous vasoconstriction when prostaglandin acts on the preoptic area. It also participates in the timing of feeding through leptin-sensitive and ghrelin-sensitive neurons.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-acom",
+   "artery-aca",
+   "artery-pcom",
+   "arteries-thalamoperforating"
+  ],
+  "territories": [
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "hypothalamus-dorsomedial-l"
+    },
+    "label": "dorsomedial nucleus above the ventromedial nucleus beside the third ventricle"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "hypothalamus-dorsomedial-r"
+    },
+    "label": "medial tuberal hypothalamus below the paraventricular nucleus"
+   }
+  ],
+  "normalAppearance": "Gray matter of the medial tuberal hypothalamus above the level of the infundibulum on coronal images; indistinguishable from neighboring nuclei without an atlas.",
+  "pathology": [
+   {
+    "pathology": "Hypothalamic tumor with circadian disruption",
+    "modality": "MRI",
+    "finding": "Tuberal hypothalamic mass (glioma, germinoma, hamartoma) with disorganized sleep-wake and feeding rhythms and abnormal stress responses.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Symmetric periventricular hypothalamic and medial thalamic FLAIR change with autonomic instability and hypothermia.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Paroxysmal sympathetic hyperactivity after brain injury",
+    "modality": "MRI",
+    "finding": "Diffuse axonal injury or hypothalamic damage with episodic tachycardia, hypertension, hyperthermia and posturing; the dorsomedial-brainstem sympathetic pathway is disinhibited.",
+    "sequence": "SWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of circadian rhythms of activity, feeding and corticosteroid secretion",
+    "side": "bilateral",
+    "mechanism": "Interruption of the clock output relay through the dorsomedial nucleus"
+   },
+   {
+    "deficit": "Blunted cardiovascular and thermal stress responses",
+    "side": "bilateral",
+    "mechanism": "Loss of dorsomedial drive to sympathetic premotor neurons"
+   },
+   {
+    "deficit": "Paroxysmal sympathetic storms with irritative lesions",
+    "side": "bilateral",
+    "mechanism": "Unopposed dorsomedial activation of the brainstem sympathetic pathway"
+   }
+  ],
+  "examination": [
+   "Actigraphy and sleep-wake diary",
+   "Blood pressure and heart rate response to stressors",
+   "Temperature pattern and its relation to time of day"
+  ],
+  "syndromes": [
+   "syn-hypothalamic-syndromes"
+  ],
+  "pearls": [
+   "The suprachiasmatic nucleus keeps time; the dorsomedial nucleus tells the rest of the hypothalamus what time it is",
+   "Sympathetic storms after severe brain injury are a hypothalamic-brainstem release phenomenon, not seizures",
+   "Fever needs both the preoptic thermostat and the dorsomedial-raphe thermogenic pathway"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    374,
+    384
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    299,
+    301
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    29,
+    30
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "hypothalamus",
+ "parent": "hypothalamus"
+}

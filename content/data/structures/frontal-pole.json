@@ -1,0 +1,175 @@
+{
+ "kind": "structure",
+ "id": "frontal-pole",
+ "name": "Frontal pole",
+ "synonyms": [],
+ "system": "cerebrum",
+ "meshIds": [
+  "frontal-pole-l",
+  "frontal-pole-r"
+ ],
+ "summary": "The frontal pole is the rounded anterior tip of the frontal lobe, the most rostral cortex of the hemisphere, lying against the anterior cranial fossa and the frontal bone. It is granular prefrontal cortex (Brodmann area 10) and belongs to the lateral and medial prefrontal networks that support planning across time, multitasking, prospective memory and the balance between reward and long-term goals. It is the part of the brain most often bruised in head injury, because the anterior fossa floor and the frontal bone stop the moving brain, and bilateral frontopolar contusion produces the apathy, disinhibition and poor judgement that families describe long after the fracture has healed.",
+ "anatomy": {
+  "location": "Anterior extremity of the hemisphere, in front of the superior, middle and inferior frontal gyri, curving onto the medial surface above the gyrus rectus and resting on the orbital plate of the frontal bone.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Dorsolateral and orbitofrontal prefrontal cortex",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Mediodorsal thalamus",
+    "via": "anterior thalamic radiation"
+   },
+   {
+    "from": "Temporal pole and amygdala",
+    "via": "uncinate fasciculus"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Anterior cingulate and supplementary motor area",
+    "via": "cingulum and frontal aslant tract"
+   },
+   {
+    "to": "Caudate head",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Contralateral frontal pole",
+    "via": "genu of the corpus callosum"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Frontopolar cortex sits at the top of the prefrontal hierarchy: it holds a main goal in mind while a subgoal is pursued, chooses between exploring new options and exploiting known ones, and integrates emotional value from the orbitofrontal cortex with the abstract plans of the dorsolateral cortex. It is connected through the frontal aslant, uncinate and cingulum bundles to the anterior cingulate, the temporal pole and the amygdala, and its slow maturation into the third decade explains the immaturity of adolescent judgement. Lesions rarely produce a focal sign; they change the person.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "frontal-pole-l"
+    },
+    "label": "frontal pole against the anterior cranial fossa"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "frontal-pole-r"
+    },
+    "label": "anterior tips of both frontal lobes"
+   }
+  ],
+  "normalAppearance": "Smooth convex tip of the frontal lobe on all planes; on sagittal images it projects above the orbital roof and in front of the frontal horn. The gyri here are thinner and more variable than the central gyri, so asymmetry of the poles is common and normal.",
+  "pathology": [
+   {
+    "pathology": "Contusion after head injury",
+    "modality": "CT",
+    "finding": "Patchy hyperdense hemorrhage and low-density edema at the anterior tips of the frontal lobes, often bilateral and worse on the side opposite the impact; blossoms over the first days.",
+    "sequence": "CT non-contrast",
+    "timing": "Repeat CT at 6-12 hours because contusions enlarge"
+   },
+   {
+    "pathology": "Olfactory groove meningioma",
+    "modality": "MRI",
+    "finding": "Extra-axial enhancing mass on the floor of the anterior fossa displacing both frontal poles upward with edema, presenting late with anosmia and personality change.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Frontotemporal dementia",
+    "modality": "MRI",
+    "finding": "Symmetric or asymmetric atrophy of the frontal poles and orbital cortex with knife-edge gyri, out of proportion to the parietal lobes.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Apathy, loss of initiative and poor planning",
+    "side": "bilateral",
+    "mechanism": "Loss of the frontopolar goal-maintenance and prospective memory network"
+   },
+   {
+    "deficit": "Disinhibition and impaired social judgement",
+    "side": "bilateral",
+    "mechanism": "Disconnection of frontopolar and orbitofrontal cortex from the amygdala and anterior cingulate"
+   },
+   {
+    "deficit": "No focal motor or sensory sign",
+    "side": "n/a",
+    "mechanism": "The pole is prefrontal association cortex remote from the primary areas"
+   }
+  ],
+  "examination": [
+   "Ask the family about change in personality, initiative and social conduct rather than testing strength",
+   "Bedside frontal tests: verbal fluency, Luria three-step sequence, go/no-go, and proverb interpretation",
+   "Smell testing: anosmia points to a subfrontal mass or contusion under the poles"
+  ],
+  "syndromes": [
+   "syn-aca-infarct"
+  ],
+  "pearls": [
+   "Bilateral frontopolar contusions are the classic lesion of the fall onto the back of the head: the brain is injured where it strikes the anterior fossa",
+   "A large frontal pole tumor can be silent until it is huge because the pole has no primary cortex",
+   "Anosmia plus personality change means look under the frontal poles"
+  ]
+ },
+ "pitfalls": [
+  "Frontal signs from a frontopolar lesion are easy to attribute to depression or dementia; image before labeling"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    255,
+    258
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    285,
+    285
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    236,
+    238
+   ]
+  }
+ ],
+ "tags": [
+  "prefrontal",
+  "area 10"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

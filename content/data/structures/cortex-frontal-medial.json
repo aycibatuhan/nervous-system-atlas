@@ -1,0 +1,177 @@
+{
+ "kind": "structure",
+ "id": "cortex-frontal-medial",
+ "name": "Frontal medial cortex",
+ "synonyms": [
+  "ventromedial prefrontal cortex",
+  "medial prefrontal cortex"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-frontal-medial-l",
+  "cortex-frontal-medial-r"
+ ],
+ "summary": "The frontal medial cortex is the medial prefrontal cortex below the anterior cingulate and in front of the subcallosal area, corresponding to the medial part of Brodmann areas 10, 11 and 32 (the ventromedial prefrontal cortex). It integrates the value of choices, regulates emotion through its dense connections with the amygdala and hypothalamus, and forms the anterior hub of the default mode network with the posterior cingulate. It is damaged by anterior cerebral and anterior communicating artery pathology, by subfrontal tumors and by head injury, producing the impulsive, socially inappropriate and poorly regulated behavior classically described after orbitomedial frontal damage.",
+ "anatomy": {
+  "location": "Medial surface of the frontal lobe below the cingulate gyrus and anterior to the paraterminal gyrus and the subcallosal area, continuous below with the gyrus rectus and the medial orbital cortex; it faces the falx and the contralateral cortex across the interhemispheric fissure.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Amygdala",
+    "via": "uncinate fasciculus and ventral amygdalofugal pathway"
+   },
+   {
+    "from": "Mediodorsal thalamus",
+    "via": "anterior thalamic radiation"
+   },
+   {
+    "from": "Hippocampus and posterior cingulate",
+    "via": "cingulum"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Ventral striatum and accumbens",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Hypothalamus and periaqueductal gray",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Amygdala (inhibitory during extinction)",
+    "via": "uncinate fasciculus"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Ventromedial prefrontal neurons encode the expected value and the emotional consequence of an option and pass this to the anterior cingulate, the striatum and the amygdala, so that decisions are guided by anticipated feelings; without it patients choose immediate gains over long-term benefit and cannot learn from social punishment. The region is also the front of the default mode network active in self-reflection and thinking about other minds, it suppresses the amygdala during extinction of fear, and it modulates autonomic tone through the hypothalamus and the periaqueductal gray. Bilateral loss produces apathy, whereas orbital-medial damage sparing the anterior cingulate produces disinhibition.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca"
+  ],
+  "territories": [
+   "territory-aca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cortex-frontal-medial-l"
+    },
+    "label": "medial prefrontal cortex below the cingulate gyrus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-frontal-medial-r"
+    },
+    "label": "ventromedial frontal cortex above the gyrus rectus"
+   }
+  ],
+  "normalAppearance": "Cortex on the medial surface of the frontal lobe in front of the genu and below the cingulate sulcus; thin, with variable sulcation, best seen on sagittal images a few millimeters off the midline.",
+  "pathology": [
+   {
+    "pathology": "Anterior communicating artery aneurysm rupture",
+    "modality": "CT",
+    "finding": "Subarachnoid blood in the interhemispheric fissure and a hematoma in the medial frontal cortex or gyrus rectus; later infarcts of the basal forebrain.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Subfrontal meningioma",
+    "modality": "MRI",
+    "finding": "Enhancing dural mass under the medial frontal lobes with edema tracking along the cingulum and personality change.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Behavioral variant frontotemporal dementia",
+    "modality": "MRI",
+    "finding": "Medial and orbital frontal atrophy with a widened interhemispheric fissure anterior to the genu.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Impulsivity, poor decision making and social disinhibition",
+    "side": "bilateral",
+    "mechanism": "Loss of value-based decision signals from the ventromedial prefrontal cortex to the striatum and amygdala"
+   },
+   {
+    "deficit": "Apathy and emotional blunting",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the medial prefrontal cortex from the anterior cingulate and hypothalamus"
+   },
+   {
+    "deficit": "Autonomic dysregulation and altered fear extinction",
+    "side": "bilateral",
+    "mechanism": "Loss of prefrontal inhibition of the amygdala and the hypothalamic autonomic outflow"
+   }
+  ],
+  "examination": [
+   "Collateral history of personality change, gambling, tactlessness or new indifference",
+   "Bedside social cognition: reading emotion in faces, understanding faux pas",
+   "Look for coexisting anosmia and visual field defects when a subfrontal mass is suspected"
+  ],
+  "syndromes": [
+   "syn-aca-infarct"
+  ],
+  "pearls": [
+   "The patient with ventromedial frontal damage knows the rules but does not use them; intelligence tests can be normal",
+   "Frontal personality change plus anosmia is a subfrontal mass until imaged",
+   "Anterior communicating aneurysm patients combine amnesia (basal forebrain) with medial frontal disinhibition"
+  ]
+ },
+ "pitfalls": [
+  "Lesions here can produce a picture indistinguishable from a primary psychiatric illness; a first psychiatric presentation after 40 deserves imaging"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    259,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    285,
+    286
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    236,
+    238
+   ]
+  }
+ ],
+ "tags": [
+  "prefrontal",
+  "default mode",
+  "decision making"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

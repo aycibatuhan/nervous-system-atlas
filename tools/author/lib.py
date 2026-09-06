@@ -1,7 +1,7 @@
 """Tiny helpers for writing content JSON from Python dicts (keeps authoring terse)."""
 import json, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-DIRS = {"structure": "structures", "cranial-nerve": "cranial-nerves", "pathway": "pathways", "syndrome": "syndromes", "glossary": "glossary", "quiz": "quiz"}
+DIRS = {"structure": "structures", "cranial-nerve": "cranial-nerves", "pathway": "pathways", "syndrome": "syndromes", "glossary": "glossary", "quiz": "quiz", "topic": "topics"}
 
 def C(book, ch, a, b=None, section=None):
     d = {"book": book, "chapter": ch, "pages": [a, b or a]}
@@ -82,8 +82,19 @@ def americanize(v):
     if isinstance(v, list):
         return [americanize(x) for x in v]
     if isinstance(v, dict):
-        return {k: (v2 if k in ("id", "kind", "meshIds", "book", "structureId", "meshId", "parent", "system", "subsystem", "arteries", "territories", "pathways", "syndromes", "tags", "substrate", "structures", "related", "structureIds", "syndromeIds", "pathwayIds", "highlightOnReveal", "arteryId", "territoryId", "sequence", "modality") else americanize(v2)) for k, v2 in v.items()}
+        return {k: (v2 if k in ("id", "kind", "meshIds", "book", "structureId", "meshId", "parent", "system", "subsystem", "arteries", "territories", "pathways", "syndromes", "tags", "substrate", "structures", "related", "structureIds", "syndromeIds", "pathwayIds", "highlightOnReveal", "arteryId", "territoryId", "sequence", "modality", "topicIds", "category") else americanize(v2)) for k, v2 in v.items()}
     return v
+
+def topic(id, name, category, summary, sections, key_points, pearls, citations, *, synonyms=(), meshIds=(), imaging=None,
+          structures=(), pathways=(), syndromes=(), topics=(), pitfalls=(), tags=()):
+    """Clinical topic entry. sections = [(heading, body markdown), ...]; imaging = (normalAppearance|None, [pathol(...)])."""
+    d = {"kind": "topic", "id": id, "name": name, "synonyms": list(synonyms), "category": category, "summary": summary,
+         "sections": [{"heading": h, "body": b} for h, b in sections], "keyPoints": list(key_points), "meshIds": list(meshIds),
+         "related": {"structureIds": list(structures), "pathwayIds": list(pathways), "syndromeIds": list(syndromes), "topicIds": list(topics)},
+         "pearls": list(pearls), "pitfalls": list(pitfalls), "citations": citations, "tags": list(tags), "status": "draft"}
+    if imaging:
+        d["imaging"] = {**({"normalAppearance": imaging[0]} if imaging[0] else {}), "pathology": list(imaging[1])}
+    return d
 
 def write(entries):
     entries = [americanize(e) for e in entries]

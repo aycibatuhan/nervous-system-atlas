@@ -1,0 +1,193 @@
+{
+ "kind": "structure",
+ "id": "cortex-intracalcarine",
+ "name": "Intracalcarine cortex",
+ "synonyms": [
+  "primary visual cortex",
+  "striate cortex",
+  "area 17",
+  "V1"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-intracalcarine-l",
+  "cortex-intracalcarine-r"
+ ],
+ "summary": "The intracalcarine cortex is the primary visual cortex buried in the walls of the calcarine sulcus on the medial occipital surface, the striate cortex of Brodmann area 17 named for the stria of Gennari visible to the naked eye. The upper wall receives the contralateral lower visual field and the lower wall the upper field, with the macula represented at the occipital pole and the far periphery at the anterior end near the parieto-occipital junction. It is supplied by the calcarine branch of the posterior cerebral artery, so a PCA occlusion produces a congruous contralateral homonymous hemianopia, often with macular sparing; bilateral destruction causes cortical blindness and, with unawareness, Anton syndrome.",
+ "anatomy": {
+  "location": "Cortex lining the calcarine sulcus from the occipital pole forward to its junction with the parieto-occipital sulcus, between the cuneus above and the lingual gyrus below, facing the falx and the contralateral calcarine cortex.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Lateral geniculate nucleus",
+    "via": "optic radiation (geniculocalcarine tract)"
+   },
+   {
+    "from": "Pulvinar",
+    "via": "thalamocortical fibers"
+   },
+   {
+    "from": "Contralateral calcarine cortex (vertical meridian)",
+    "via": "splenium"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Cuneus, lingual gyrus and lateral occipital cortex (V2-V5)",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Lateral geniculate nucleus and pulvinar",
+    "via": "corticothalamic fibers"
+   },
+   {
+    "to": "Superior colliculus and pretectum",
+    "via": "corticotectal fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-visual",
+   "pathway-pupillary-light-reflex"
+  ]
+ },
+ "function": "Striate cortex receives the geniculocalcarine radiation in layer IV, where the stria of Gennari marks the dense myelinated input, and analyzes the retinal image into oriented edges, spatial frequencies, binocular disparity and color contrast within a precise retinotopic map in which the central few degrees occupy the posterior half. It sends its output to the surrounding extrastriate areas on the cuneus and lingual gyrus and to the dorsal and ventral streams, and it projects back to the lateral geniculate nucleus and to the superior colliculus. Destructive lesions cause a congruous field defect in the contralateral hemifield, and irritative lesions cause elementary hallucinations of flashes and colored shapes in the corresponding location.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-pca-occipital"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cortex-intracalcarine-l"
+    },
+    "label": "calcarine sulcus on the medial occipital surface"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cortex-intracalcarine-r"
+    },
+    "label": "striate cortex within the calcarine fissure"
+   }
+  ],
+  "normalAppearance": "The deep horizontal calcarine sulcus on medial sagittal images, running from the occipital pole to the parieto-occipital sulcus; on high-resolution T1 images the stria of Gennari appears as a thin dark line within the gray matter.",
+  "pathology": [
+   {
+    "pathology": "PCA infarct with homonymous hemianopia",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the calcarine cortex and adjacent cuneus and lingual gyrus; the occipital pole is often spared through MCA collaterals.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Cortical blindness / Anton syndrome",
+    "modality": "MRI",
+    "finding": "Bilateral calcarine infarcts, typically from basilar or bilateral PCA occlusion, with blindness that the patient denies.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Occipital epilepsy",
+    "modality": "EEG",
+    "finding": "Elementary visual hallucinations in the contralateral field followed by ictal blindness or eye deviation; occipital spikes accentuated by eye closure.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral congruous homonymous hemianopia",
+    "side": "contralateral",
+    "mechanism": "Destruction of the whole calcarine cortex of one side"
+   },
+   {
+    "deficit": "Contralateral quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Lesion confined to the upper (lower field) or lower (upper field) calcarine bank"
+   },
+   {
+    "deficit": "Cortical blindness with preserved pupils",
+    "side": "bilateral",
+    "mechanism": "Bilateral striate destruction; the pupillary pathway leaves the visual pathway before the cortex"
+   }
+  ],
+  "examination": [
+   "Confrontation fields in all quadrants and formal perimetry",
+   "Pupillary light reflexes, which are normal in cortical visual loss",
+   "Ask about awareness of the deficit and check for confabulation about what is seen"
+  ],
+  "syndromes": [
+   "syn-homonymous-hemianopia",
+   "syn-anton",
+   "syn-pca-infarct",
+   "syn-top-of-basilar"
+  ],
+  "pearls": [
+   "A hemianopia with normal pupils and macular sparing is calcarine cortex, not optic tract",
+   "Cortical blindness with denial is Anton syndrome; the patient walks into furniture and blames the light",
+   "The macula sits at the occipital pole where MCA and PCA branches overlap, which is why it survives a PCA occlusion"
+  ]
+ },
+ "pitfalls": [
+  "Cortical visual loss with a normal fundus and normal pupils is often called functional; perimetry and MRI settle it"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    289
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    259,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    336
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    468,
+    470
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  }
+ ],
+ "tags": [
+  "V1",
+  "striate",
+  "calcarine"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-occipital",
+ "parent": "lobe-occipital"
+}

@@ -1,0 +1,186 @@
+{
+ "kind": "structure",
+ "id": "cortex-temporal-fusiform-anterior",
+ "name": "Temporal fusiform cortex, anterior division",
+ "synonyms": [
+  "anterior fusiform gyrus",
+  "lateral occipitotemporal gyrus (anterior)"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-temporal-fusiform-anterior-l",
+  "cortex-temporal-fusiform-anterior-r"
+ ],
+ "summary": "The anterior fusiform cortex is the front part of the fusiform (lateral occipitotemporal) gyrus on the inferior surface of the temporal lobe, between the collateral sulcus medially and the occipitotemporal sulcus laterally, beneath the hippocampus and lateral to the parahippocampal gyrus. It is high-order ventral visual cortex that hands object and face identity to the perirhinal cortex and the anterior temporal semantic system, and it is supplied by the posterior cerebral artery through its temporal branches. It atrophies with the temporal pole in semantic dementia, it is the fusiform cortex most often removed in temporal lobectomy, and its lesions contribute to prosopagnosia, associative agnosia and anomia.",
+ "anatomy": {
+  "location": "Anterior portion of the fusiform gyrus on the basal temporal surface, medial to the inferior temporal gyrus, lateral to the parahippocampal gyrus and the collateral sulcus, under the anterior hippocampus and amygdala.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior fusiform and inferior temporal cortex",
+    "via": "inferior longitudinal fasciculus"
+   },
+   {
+    "from": "Amygdala",
+    "via": "amygdalotemporal fibers"
+   },
+   {
+    "from": "Pulvinar",
+    "via": "thalamocortical fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Perirhinal and entorhinal cortex",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Temporal pole",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Orbitofrontal cortex",
+    "via": "uncinate fasciculus"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "Anterior fusiform neurons respond to specific familiar objects, faces and written words in a form independent of the image, and their output to the perirhinal and entorhinal cortex allows a seen object to be matched with its memory and its meaning; in the dominant hemisphere it is part of the basal temporal language area that supports naming and reading, and in the right it links a face to the person's identity. It receives the posterior fusiform and inferior temporal cortex through the inferior longitudinal fasciculus and the amygdala, and it projects to the temporal pole and the orbitofrontal cortex. Electrical stimulation here disrupts naming and reading.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-temporal-fusiform-anterior-l"
+    },
+    "label": "anterior fusiform gyrus between the collateral and occipitotemporal sulci"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cortex-temporal-fusiform-anterior-r"
+    },
+    "label": "basal temporal surface under the anterior hippocampus"
+   }
+  ],
+  "normalAppearance": "The gyrus between the collateral sulcus and the occipitotemporal sulcus on the inferior temporal surface, seen on coronal images through the amygdala and the head of the hippocampus.",
+  "pathology": [
+   {
+    "pathology": "PCA temporal branch infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the basal temporal cortex with associative agnosia, anomia or prosopagnosia and often a hemianopia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Semantic dementia",
+    "modality": "MRI",
+    "finding": "Anterior fusiform and inferior temporal atrophy with the temporal pole, asymmetric and progressive, with loss of the meaning of objects and words.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Temporal lobe epilepsy (basal temporal onset)",
+    "modality": "EEG",
+    "finding": "Seizures with ictal anomia, reading arrest or complex visual auras; scalp EEG shows anterior temporal discharges.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Associative visual agnosia and anomia for seen objects (left)",
+    "side": "n/a",
+    "mechanism": "Disconnection of fusiform object representations from the semantic and lexical systems"
+   },
+   {
+    "deficit": "Prosopagnosia (right or bilateral)",
+    "side": "n/a",
+    "mechanism": "Loss of the face-identity link between the fusiform cortex and the anterior temporal person nodes"
+   },
+   {
+    "deficit": "Loss of object knowledge when combined with polar atrophy",
+    "side": "bilateral",
+    "mechanism": "Degeneration of the anterior temporal semantic hub"
+   }
+  ],
+  "examination": [
+   "Naming and identification of objects and famous faces",
+   "Reading of words and letters",
+   "Recognition by other modalities to prove the deficit is visual"
+  ],
+  "syndromes": [
+   "syn-pca-infarct",
+   "syn-kluver-bucy"
+  ],
+  "pearls": [
+   "The basal temporal language area lies on the underside of the dominant temporal lobe; stimulation here stops naming during awake surgery",
+   "The anterior fusiform gyrus bridges seeing and knowing: its loss leaves the patient describing an object without recognizing it",
+   "Prosopagnosia from a unilateral lesion is right-sided; left fusiform lesions cause reading and naming problems instead"
+  ]
+ },
+ "pitfalls": [
+  "Basal temporal cortex is poorly seen on axial images because it is cut tangentially; coronal slices through the hippocampus show it properly"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    51
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    236,
+    238
+   ]
+  }
+ ],
+ "tags": [
+  "fusiform",
+  "ventral stream",
+  "basal temporal language area"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-temporal",
+ "parent": "lobe-temporal"
+}

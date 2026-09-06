@@ -19,6 +19,7 @@ export class Toolbar {
       h('div', { class: 'tools' },
         h('button', { title: 'Filter tree', onclick: () => opts.onSearchFocus() }, 'Tree filter'),
         h('button', { title: 'Clinical vignette quiz', onclick: () => { location.hash = '#/quiz'; } }, 'Quiz'),
+        h('button', { title: 'Clinical topics (development, CSF, transmitters, EEG, epilepsy, dementia, neuromuscular …)', onclick: () => { location.hash = '#/topic'; } }, 'Topics'),
         h('button', { title: 'Glossary', onclick: () => { location.hash = '#/glossary'; } }, 'Glossary'),
         this.qualityBtn,
         h('button', { title: 'Screenshot [Shift+S]', onclick: () => this.shot() }, 'Screenshot'),

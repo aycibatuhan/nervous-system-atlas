@@ -1,0 +1,188 @@
+{
+ "kind": "structure",
+ "id": "raphe-dorsal",
+ "name": "Dorsal raphe nucleus",
+ "synonyms": [
+  "nucleus raphes dorsalis",
+  "B7 group"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "raphe-dorsal"
+ ],
+ "summary": "The dorsal raphe nucleus is the largest serotonergic nucleus of the brain, a midline column in the ventral periaqueductal gray of the caudal midbrain and rostral pons, beneath the aqueduct and between the trochlear nuclei and the medial longitudinal fasciculi. Its neurons send serotonin to the cortex, striatum, thalamus, amygdala and hippocampus and regulate mood, anxiety, impulsivity, appetite, sleep and pain, forming the anatomical target of selective serotonin reuptake inhibitors. It fires during waking and falls silent in REM sleep, it inhibits the trigeminovascular system in migraine, and it degenerates early in Parkinson disease, contributing to the depression and sleep disturbance that precede the motor signs.",
+ "anatomy": {
+  "location": "Ventral part of the periaqueductal gray in the midline of the caudal midbrain and upper pons, extending from the level of the oculomotor nucleus to the locus coeruleus, between the two medial longitudinal fasciculi and above the decussation of the superior cerebellar peduncles.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal cortex",
+    "via": "corticofugal fibers"
+   },
+   {
+    "from": "Lateral habenula",
+    "via": "fasciculus retroflexus and habenulo-raphe fibers"
+   },
+   {
+    "from": "Hypothalamus and locus coeruleus",
+    "via": "medial forebrain bundle and local fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Cerebral cortex, striatum, thalamus, amygdala and hippocampus",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Substantia nigra and ventral tegmental area",
+    "via": "local serotonergic fibers"
+   },
+   {
+    "to": "Spinal trigeminal nucleus and dorsal horn",
+    "via": "descending serotonergic fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Dorsal raphe serotonergic neurons project rostrally through the medial forebrain bundle to the whole forebrain, where serotonin acting through many receptor subtypes modulates cortical excitability, the emotional responses of the amygdala, the reward computations of the striatum and the stress reactivity of the hippocampus; they promote patience and behavioral inhibition, suppress feeding and pain, and their tonic activity is high in waking and absent in REM sleep, permitting the REM-on neurons of the pons to fire. The nucleus receives the prefrontal cortex, the lateral habenula, the hypothalamus and the locus coeruleus, and its neurons express autoreceptors whose desensitization underlies the delayed onset of antidepressant action. Descending projections modulate the trigeminal nucleus and dorsal horn.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-sca",
+   "artery-basilar",
+   "arteries-thalamoperforating"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "raphe-dorsal"
+    },
+    "label": "dorsal raphe nucleus in the ventral periaqueductal gray"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "raphe-dorsal"
+    },
+    "label": "midline caudal midbrain beneath the aqueduct"
+   }
+  ],
+  "normalAppearance": "The midline periaqueductal gray of the caudal midbrain on axial images at the level of the inferior colliculus; it is not distinguishable from the surrounding gray on clinical MRI.",
+  "pathology": [
+   {
+    "pathology": "Parkinson disease (non-motor)",
+    "modality": "PET",
+    "finding": "Reduced serotonin transporter binding in the raphe and its targets on PET, correlating with depression, fatigue and sleep disturbance; MRI normal.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Periaqueductal infarct or demyelination",
+    "modality": "MRI",
+    "finding": "Small lesion of the caudal midbrain periaqueductal gray with vertical gaze and pupillary signs and mood or sleep change.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Periaqueductal FLAIR hyperintensity involving the raphe region with ophthalmoplegia and altered consciousness.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Depression, anxiety and impulsivity",
+    "side": "bilateral",
+    "mechanism": "Loss of forebrain serotonin"
+   },
+   {
+    "deficit": "Sleep disturbance and REM dysregulation",
+    "side": "bilateral",
+    "mechanism": "Loss of the wake-active serotonergic tone that gates REM sleep"
+   },
+   {
+    "deficit": "Altered pain and migraine susceptibility",
+    "side": "bilateral",
+    "mechanism": "Loss of descending serotonergic modulation of the trigeminal and spinal dorsal horns"
+   }
+  ],
+  "examination": [
+   "Mood, anxiety and impulse control history",
+   "Sleep pattern and REM behavior disorder",
+   "Headache history, since the raphe modulates the trigeminovascular system"
+  ],
+  "syndromes": [
+   "syn-parkinsonism",
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "The dorsal raphe is where antidepressants act, and why they take weeks: the autoreceptors must desensitize",
+   "Serotonin is the neurotransmitter of patience; its loss makes waiting impossible",
+   "Depression before parkinsonism reflects raphe degeneration that precedes the substantia nigra"
+  ]
+ },
+ "pitfalls": [
+  "Serotonin syndrome from drug combinations is a raphe overdrive: clonus, hyperthermia and agitation, not a structural lesion"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    299,
+    301
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    218
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 2,
+   "pages": [
+    55,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    242,
+    246
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 26,
+   "pages": [
+    275,
+    280
+   ]
+  }
+ ],
+ "tags": [
+  "serotonin",
+  "mood",
+  "raphe"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

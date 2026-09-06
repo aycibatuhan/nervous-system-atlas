@@ -1,0 +1,190 @@
+{
+ "kind": "structure",
+ "id": "occipital-pole",
+ "name": "Occipital pole",
+ "synonyms": [
+  "macular cortex",
+  "posterior calcarine cortex"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "occipital-pole-l",
+  "occipital-pole-r"
+ ],
+ "summary": "The occipital pole is the posterior tip of the hemisphere where the calcarine sulcus reaches the surface and the primary visual cortex spreads onto the lateral convexity, representing the central visual field (the macula) with a huge cortical magnification. It receives a dual blood supply from the calcarine branch of the posterior cerebral artery and from the terminal branches of the middle cerebral artery, which is why the macula is spared in many PCA infarcts and why the pole is selectively damaged in watershed injury and in hypotension. Bilateral polar lesions cause central scotomas and loss of reading, and the pole is the site of the visual auras of occipital epilepsy and of the release hallucinations of visual loss.",
+ "anatomy": {
+  "location": "Posterior extremity of the hemisphere, behind the parieto-occipital sulcus and the preoccipital notch, where the medial, lateral and inferior surfaces of the occipital lobe converge; the calcarine sulcus ends here and the macular representation extends onto the lateral surface.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Lateral geniculate nucleus (foveal fibers)",
+    "via": "optic radiation"
+   },
+   {
+    "from": "Contralateral occipital pole (vertical meridian)",
+    "via": "splenium"
+   },
+   {
+    "from": "Pulvinar",
+    "via": "thalamocortical fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Fusiform and lateral occipital cortex",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Superior colliculus (fixation)",
+    "via": "corticotectal fibers"
+   },
+   {
+    "to": "Lateral geniculate nucleus",
+    "via": "corticogeniculate feedback"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "The posterior calcarine cortex at the pole receives the foveal projection, with the central few degrees occupying as much cortex as the whole peripheral field, and analyzes the fine detail, color and stereopsis needed for reading, face recognition and skilled hand work; it feeds the fusiform and lateral occipital areas that identify letters and objects. The vertical meridian is represented at the border with the opposite hemisphere through the splenium, and the pole contributes to the maintenance of fixation and to the smallest voluntary saccades. Its loss on one side produces a congruous contralateral paracentral scotoma or a hemianopia without macular sparing.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-pca-occipital",
+   "territory-mca-occipital"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "occipital-pole-l"
+    },
+    "label": "occipital pole with the macular representation"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "occipital-pole-r"
+    },
+    "label": "posterior tip of the hemisphere at the end of the calcarine sulcus"
+   }
+  ],
+  "normalAppearance": "Rounded posterior tip of the hemisphere on axial and sagittal images, where the calcarine sulcus reaches the surface; the poles are often asymmetric with one petalia projecting further back, a normal variant.",
+  "pathology": [
+   {
+    "pathology": "Occipital pole watershed infarct",
+    "modality": "MRI",
+    "finding": "Bilateral restricted diffusion of the occipital tips after hypotension or cardiac arrest with central scotomas and impaired reading despite preserved peripheral fields.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "PCA infarct with macular splitting",
+    "modality": "MRI",
+    "finding": "Calcarine infarct extending to the pole when the MCA collateral is poor, producing a complete hemianopia without macular sparing.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Occipital epilepsy",
+    "modality": "EEG",
+    "finding": "Central colored or flashing auras, ictal blindness or amaurosis, occipital spikes increased by eye closure.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral paracentral scotoma or hemianopia without macular sparing",
+    "side": "contralateral",
+    "mechanism": "Loss of the foveal representation at the occipital pole"
+   },
+   {
+    "deficit": "Bilateral central scotomas and impaired reading",
+    "side": "bilateral",
+    "mechanism": "Bilateral polar damage in border-zone injury"
+   },
+   {
+    "deficit": "Central elementary visual hallucinations",
+    "side": "n/a",
+    "mechanism": "Ictal activation of the macular cortex"
+   }
+  ],
+  "examination": [
+   "Central fields with a red target and the Amsler grid",
+   "Reading acuity in addition to distance acuity",
+   "Perimetry for paracentral and macular defects"
+  ],
+  "syndromes": [
+   "syn-watershed-infarct",
+   "syn-homonymous-hemianopia",
+   "syn-pca-infarct"
+  ],
+  "pearls": [
+   "The macula has two arteries; the occipital pole is spared by a PCA stroke and hit by a hypotensive one",
+   "Bilateral occipital pole infarcts give a patient who walks confidently but cannot read",
+   "Occipital petalia (one pole projecting further back) is a normal asymmetry seen on every MRI"
+  ]
+ },
+ "pitfalls": [
+  "Macular sparing is not a sign of a benign lesion; it only reflects the dual blood supply of the pole"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    289
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    256,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    468,
+    470
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    60
+   ]
+  }
+ ],
+ "tags": [
+  "macula",
+  "V1",
+  "watershed"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-occipital",
+ "parent": "lobe-occipital"
+}

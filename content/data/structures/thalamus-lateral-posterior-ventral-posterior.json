@@ -1,0 +1,179 @@
+{
+ "kind": "structure",
+ "id": "thalamus-lateral-posterior-ventral-posterior",
+ "name": "Lateral posterior / ventral posterior group",
+ "synonyms": [
+  "VPL/VPM (with LP)",
+  "somatosensory thalamus"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "thalamus-lateral-posterior-ventral-posterior-l",
+  "thalamus-lateral-posterior-ventral-posterior-r"
+ ],
+ "summary": "This thalamic group combines the lateral posterior nucleus of the dorsal tier with the adjacent ventral posterior nuclei, the somatosensory relay of the thalamus, as segmented by the MIAL thalamic atlas. The ventral posterolateral nucleus receives the medial lemniscus and spinothalamic tract from the body and the ventral posteromedial nucleus receives trigeminal and taste input from the face, both projecting to the postcentral gyrus; the lateral posterior nucleus is an associative nucleus linked with the superior parietal lobule for spatial attention and visually guided action. Infarction of this region by the thalamogeniculate arteries produces the pure sensory stroke and, later, the thalamic pain of the Dejerine-Roussy syndrome.",
+ "anatomy": {
+  "location": "Posterolateral thalamus behind the ventrolateral nucleus and in front of the pulvinar, lateral to the internal medullary lamina and the centromedian nucleus, above the medial geniculate body, with the lateral posterior nucleus dorsal and the ventral posterior nuclei ventral within the group.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Gracile and cuneate nuclei (contralateral)",
+    "via": "medial lemniscus"
+   },
+   {
+    "from": "Spinal dorsal horn (contralateral)",
+    "via": "spinothalamic tract"
+   },
+   {
+    "from": "Trigeminal sensory nuclei and nucleus solitarius",
+    "via": "trigeminothalamic and gustatory fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Postcentral gyrus (areas 3, 1, 2)",
+    "via": "superior thalamic radiation"
+   },
+   {
+    "to": "Insular and opercular cortex (taste, pain)",
+    "via": "thalamocortical fibers"
+   },
+   {
+    "to": "Superior parietal lobule (from the lateral posterior nucleus)",
+    "via": "posterior thalamic radiation"
+   }
+  ],
+  "pathways": [
+   "pathway-dcml",
+   "pathway-lateral-spinothalamic",
+   "pathway-trigeminothalamic",
+   "pathway-gustatory"
+  ]
+ },
+ "function": "The ventral posterolateral nucleus relays touch, vibration, proprioception, pain and temperature from the contralateral body to the primary somatosensory cortex with a precise somatotopy (leg lateral, arm medial), and the ventral posteromedial nucleus does the same for the face and relays taste to the insular-opercular cortex; both are gated by the reticular nucleus and by corticothalamic feedback. The lateral posterior nucleus receives the superior colliculus and the parietal cortex and participates in directing attention and reaching in space. Damage produces contralateral hemianesthesia of all modalities, with a characteriztic delayed central pain syndrome as the surviving spinothalamic input is reorganized.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-pcom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-posterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "thalamus-lateral-posterior-ventral-posterior-l"
+    },
+    "label": "ventral posterior and lateral posterior nuclei in the posterolateral thalamus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "thalamus-lateral-posterior-ventral-posterior-r"
+    },
+    "label": "somatosensory thalamus above the medial geniculate body"
+   }
+  ],
+  "normalAppearance": "The posterolateral thalamus in front of the pulvinar on axial images through the posterior commissure; the ventral posterior nuclei lie in its ventral half against the internal capsule, supplied by the thalamogeniculate arteries.",
+  "pathology": [
+   {
+    "pathology": "Pure sensory stroke (thalamogeniculate infarct)",
+    "modality": "MRI",
+    "finding": "Small restricted diffusion in the ventral posterolateral thalamus with contralateral hemisensory loss of face, arm and leg and no weakness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Dejerine-Roussy thalamic pain syndrome",
+    "modality": "MRI",
+    "finding": "Old infarct or hemorrhage of the posterolateral thalamus in a patient with delayed burning pain and allodynia of the contralateral side.",
+    "sequence": "FLAIR",
+    "timing": "Pain begins weeks to months after the stroke"
+   },
+   {
+    "pathology": "Thalamic hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense hematoma in the posterolateral thalamus with contralateral sensory loss, hemiparesis from capsular compression and upgaze palsy when it extends to the midbrain.",
+    "sequence": "CT non-contrast"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemianesthesia of all modalities including the face",
+    "side": "contralateral",
+    "mechanism": "Loss of the ventral posterior relay for the body and face"
+   },
+   {
+    "deficit": "Delayed central thalamic pain and allodynia",
+    "side": "contralateral",
+    "mechanism": "Reorganization after partial ventral posterior damage"
+   },
+   {
+    "deficit": "Contralateral inattention and misreaching",
+    "side": "contralateral",
+    "mechanism": "Loss of the lateral posterior nucleus's parietal connections"
+   }
+  ],
+  "examination": [
+   "Test all sensory modalities on the face, arm and leg; thalamic loss affects all and includes the face",
+   "Ask about burning or unpleasant sensation developing weeks after a stroke",
+   "Extinction and reaching accuracy"
+  ],
+  "syndromes": [
+   "syn-thalamic-dejerine-roussy",
+   "syn-lacunar-pure-sensory"
+  ],
+  "pearls": [
+   "A sensory loss that includes the face and spares strength is thalamic",
+   "Thalamic pain arrives late, when the patient thought they had recovered",
+   "The ventral posteromedial nucleus is why a thalamic stroke can distort taste"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    143,
+    149
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    33,
+    38
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "thalamic-nuclei",
+ "parent": "thalamus"
+}

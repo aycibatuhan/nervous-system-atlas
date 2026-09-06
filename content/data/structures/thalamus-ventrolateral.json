@@ -1,0 +1,176 @@
+{
+ "kind": "structure",
+ "id": "thalamus-ventrolateral",
+ "name": "Ventrolateral nucleus",
+ "synonyms": [
+  "VL nucleus",
+  "ventral intermediate nucleus (Vim)"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "thalamus-ventrolateral-l",
+  "thalamus-ventrolateral-r"
+ ],
+ "summary": "The ventrolateral nucleus lies in the ventral tier of the thalamus behind the ventral anterior nucleus and in front of the ventral posterior nuclei, lateral to the internal medullary lamina. It is the motor thalamus: its posterior part receives the dentatorubrothalamic tract from the contralateral cerebellum and projects to the primary motor cortex, while its anterior part receives the internal pallidum and projects to the premotor and supplementary motor cortex. It is the classical target of thalamotomy and deep brain stimulation for tremor (the ventral intermediate nucleus), and its infarction or hemorrhage produces contralateral ataxia and tremor with little weakness.",
+ "anatomy": {
+  "location": "Middle part of the ventral thalamus lateral to the internal medullary lamina and the mediodorsal nucleus, between the ventral anterior nucleus in front and the ventral posterolateral nucleus behind, bounded laterally by the reticular nucleus and the internal capsule.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Dentate and interposed nuclei (contralateral)",
+    "via": "dentatorubrothalamic tract via the superior cerebellar peduncle"
+   },
+   {
+    "from": "Globus pallidus internus",
+    "via": "thalamic fasciculus"
+   },
+   {
+    "from": "Motor cortex",
+    "via": "corticothalamic fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Primary motor cortex",
+    "via": "superior thalamic radiation"
+   },
+   {
+    "to": "Premotor and supplementary motor cortex",
+    "via": "superior thalamic radiation"
+   },
+   {
+    "to": "Striatum",
+    "via": "thalamostriatal fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "The cerebellar-receiving posterior part relays the dentate and interposed nuclei's output, which has crossed in the superior cerebellar peduncle, to the motor cortex, providing the timing and coordination signals for skilled movement; its rhythmic bursting in tremor is what stimulation or lesioning silences. The pallidal-receiving anterior part conveys the basal ganglia's motor output to the premotor and supplementary motor cortex, scaling and selecting movements. The nucleus also receives spinal and vestibular input and the motor cortex's corticothalamic feedback, and it projects back to the striatum. Its lesion combines cerebellar-outflow ataxia and tremor with mild bradykinesia.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-pcom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-posterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "thalamus-ventrolateral-l"
+    },
+    "label": "ventrolateral nucleus in the ventral tier of the thalamus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "thalamus-ventrolateral-r"
+    },
+    "label": "motor thalamus lateral to the internal medullary lamina"
+   }
+  ],
+  "normalAppearance": "The middle lateral thalamus on axial images through the level of the interventricular foramen and the anterior commissure, lateral to the mediodorsal nucleus; the ventral intermediate target is planned by AC-PC coordinates and tractography of the dentatorubrothalamic tract.",
+  "pathology": [
+   {
+    "pathology": "Thalamotomy or deep brain stimulation for tremor",
+    "modality": "MRI",
+    "finding": "Electrode or focused-ultrasound lesion in the ventral intermediate nucleus on the AC-PC plane, lateral to the third ventricle wall.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Thalamic hemorrhage",
+    "modality": "CT",
+    "finding": "Hyperdense hematoma in the lateral thalamus with contralateral hemisensory loss, ataxia and later tremor; extension into the ventricle is common.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Thalamoperforating infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the ventrolateral thalamus with contralateral ataxic hemiparesis or delayed tremor.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral ataxia and intention tremor",
+    "side": "contralateral",
+    "mechanism": "Interruption of the cerebellar relay to the motor cortex"
+   },
+   {
+    "deficit": "Contralateral bradykinesia and dystonia",
+    "side": "contralateral",
+    "mechanism": "Interruption of the pallidal relay to the premotor cortex"
+   },
+   {
+    "deficit": "Delayed rubral (Holmes) tremor",
+    "side": "contralateral",
+    "mechanism": "Reorganization after combined cerebellothalamic and nigral pathway damage"
+   }
+  ],
+  "examination": [
+   "Finger-nose and heel-shin testing on the side opposite the lesion",
+   "Tremor at rest, posture and action",
+   "Fine finger movements for bradykinesia"
+  ],
+  "syndromes": [
+   "syn-thalamic-dejerine-roussy",
+   "syn-lacunar-ataxic-hemiparesis"
+  ],
+  "pearls": [
+   "The cerebellum reaches the cortex through the ventrolateral thalamus after crossing: a thalamic lesion gives contralateral ataxia",
+   "The ventral intermediate nucleus is where a single lesion abolishes essential tremor",
+   "Delayed tremor weeks after a thalamic stroke is the Holmes tremor of the cerebellothalamic pathway"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    364,
+    370
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    240
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    246,
+    250
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    70,
+    72
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "thalamic-nuclei",
+ "parent": "thalamus"
+}

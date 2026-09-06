@@ -1,0 +1,190 @@
+{
+ "kind": "structure",
+ "id": "temporal-pole",
+ "name": "Temporal pole",
+ "synonyms": [
+  "area 38",
+  "anterior temporal lobe"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "temporal-pole-l",
+  "temporal-pole-r"
+ ],
+ "summary": "The temporal pole is the anterior tip of the temporal lobe, tucked into the middle cranial fossa behind the greater wing of the sphenoid and lateral to the cavernous sinus. It is paralimbic cortex (Brodmann area 38) linking the anterior temporal semantic hub to the amygdala and orbitofrontal cortex through the uncinate fasciculus, and it gives faces, voices and objects their personal and emotional meaning. It is contused in head injury when the brain strikes the sphenoid ridge, it is the epicenter of semantic dementia, it is resected in anterior temporal lobectomy for epilepsy, and it is one of the sites where herpes encephalitis begins.",
+ "anatomy": {
+  "location": "Rounded anterior end of the temporal lobe in the middle cranial fossa, in front of the anterior end of the superior, middle and inferior temporal gyri and lateral to the uncus, its medial surface facing the tentorial edge and the cavernous sinus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Inferior and superior temporal association cortex",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Amygdala",
+    "via": "direct amygdalotemporal fibers"
+   },
+   {
+    "from": "Orbitofrontal cortex",
+    "via": "uncinate fasciculus"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Orbitofrontal and inferior frontal cortex",
+    "via": "uncinate fasciculus"
+   },
+   {
+    "to": "Amygdala and hypothalamus",
+    "via": "ventral amygdalofugal fibers"
+   },
+   {
+    "to": "Contralateral temporal pole",
+    "via": "anterior commissure"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "The anterior temporal lobe binds the multimodal features of a concept, its appearance, sound, name and associations, into a single representation and links it with emotional value from the amygdala and orbitofrontal cortex; the right pole is critical for recognizing familiar people and the left for naming them and for the meaning of words. It also participates in social cognition and in the autonomic and emotional coloring of memories. Seizures arising here give the rising epigastric aura, fear, deja vu and olfactory hallucinations of medial temporal epilepsy, and bilateral loss produces the placid, hyperoral, visually agnosic Kluver-Bucy state.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-inferior-division",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-mca-temporal",
+   "territory-pca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "temporal-pole-l"
+    },
+    "label": "temporal pole in the middle cranial fossa lateral to the cavernous sinus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "temporal-pole-r"
+    },
+    "label": "anterior temporal tip behind the sphenoid wing"
+   }
+  ],
+  "normalAppearance": "Anterior tip of the temporal lobe on coronal images through the sella, with the middle cranial fossa floor below and the sphenoid wing in front; the polar cortex is thick and its gyri are short and variable.",
+  "pathology": [
+   {
+    "pathology": "Temporal pole contusion",
+    "modality": "MRI",
+    "finding": "Hemorrhagic contusion of the anterior temporal tip after head injury, often with an orbitofrontal contusion on the same or opposite side.",
+    "sequence": "SWI"
+   },
+   {
+    "pathology": "Semantic dementia (semantic variant PPA)",
+    "modality": "MRI",
+    "finding": "Severe asymmetric anterior temporal atrophy, usually left, with a knife-edge temporal pole and preserved posterior cortex.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Herpes simplex encephalitis",
+    "modality": "MRI",
+    "finding": "Asymmetric T2/FLAIR signal and restricted diffusion in the medial and anterior temporal lobe extending to the insula and orbital cortex, sparing the putamen.",
+    "sequence": "FLAIR",
+    "timing": "Changes are present within days; CT is often normal early"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of word meaning and of knowledge about objects (left)",
+    "side": "n/a",
+    "mechanism": "Degeneration of the anterior temporal semantic hub of the dominant hemisphere"
+   },
+   {
+    "deficit": "Inability to recognize familiar faces and people (right)",
+    "side": "n/a",
+    "mechanism": "Loss of the person-identity node in the right anterior temporal lobe"
+   },
+   {
+    "deficit": "Emotional blunting and Kluver-Bucy features when bilateral",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the temporal sensory hierarchy from the amygdala and orbitofrontal cortex"
+   }
+  ],
+  "examination": [
+   "Single-word comprehension and naming of low-frequency objects; ask what a word means",
+   "Famous face recognition and identification",
+   "Seizure history for auras of fear, deja vu, smell and epigastric rising"
+  ],
+  "syndromes": [
+   "syn-kluver-bucy",
+   "syn-uncal-herniation"
+  ],
+  "pearls": [
+   "Semantic dementia is an anterior temporal disease: fluent speech empty of nouns and loss of the meaning of words",
+   "The temporal pole is injured with the orbitofrontal cortex in the same fall; look at both",
+   "Herpes encephalitis attacks the anterior temporal lobe and insula but spares the putamen, a distinction from MCA infarct"
+  ]
+ },
+ "pitfalls": [
+  "Anterior temporal atrophy is often missed on axial images because the pole is cut obliquely; use coronal slices"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    236,
+    238
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    214,
+    216
+   ]
+  }
+ ],
+ "tags": [
+  "semantic hub",
+  "paralimbic",
+  "area 38"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-temporal",
+ "parent": "lobe-temporal"
+}

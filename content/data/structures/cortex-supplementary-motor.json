@@ -1,0 +1,179 @@
+{
+ "kind": "structure",
+ "id": "cortex-supplementary-motor",
+ "name": "Supplementary motor cortex (juxtapositional lobule)",
+ "synonyms": [
+  "SMA",
+  "medial area 6"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-supplementary-motor-l",
+  "cortex-supplementary-motor-r"
+ ],
+ "summary": "The supplementary motor area occupies the medial surface of the superior frontal gyrus in front of the paracentral lobule and above the cingulate sulcus, the medial part of Brodmann area 6. It prepares and initiates internally generated, sequenced and bimanual movements and speech, and it contains its own somatotopic map. Its unique clinical picture combines an acute contralateral akinesia with mutism after infarction, seizures that begin with a tonic posture of the arm and vocalization, and, when both sides are damaged, akinetic mutism; it is a territory of the anterior cerebral artery and a frequent site of parasagittal meningioma.",
+ "anatomy": {
+  "location": "Medial surface of the hemisphere above the cingulate sulcus and in front of the paracentral lobule, from roughly the level of the anterior commissure back to the precentral sulcus, extending a short way onto the superior convexity.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Ventrolateral thalamus (basal ganglia output)",
+    "via": "superior thalamic radiation"
+   },
+   {
+    "from": "Prefrontal and cingulate cortex",
+    "via": "cingulum and short association fibers"
+   },
+   {
+    "from": "Contralateral SMA",
+    "via": "corpus callosum"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Primary motor cortex",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Spinal cord and brainstem",
+    "via": "corticospinal and corticobulbar fibers"
+   },
+   {
+    "to": "Putamen",
+    "via": "corticostriatal fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-lateral-corticospinal",
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "The SMA proper plans movement sequences from memory and initiates them without an external cue, coordinates the two hands, and gates the start of speech; the pre-SMA in front of it selects between competing actions and inhibits unwanted ones. Both receive the ventrolateral thalamus, closing the motor loop of the basal ganglia, and project to the primary motor cortex, the striatum, the pontine nuclei and directly to the spinal cord. Its loss produces reduced spontaneous movement and speech that recover over weeks because the lateral premotor cortex takes over externally cued actions, whereas self-initiated actions remain slow.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca"
+  ],
+  "territories": [
+   "territory-aca"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cortex-supplementary-motor-l"
+    },
+    "label": "supplementary motor area on the medial superior frontal gyrus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-supplementary-motor-r"
+    },
+    "label": "medial frontal cortex above the cingulate sulcus"
+   }
+  ],
+  "normalAppearance": "Medial frontal cortex above the cingulate sulcus in front of the paracentral lobule on sagittal images; the vertical line through the anterior commissure marks the boundary between pre-SMA and SMA proper.",
+  "pathology": [
+   {
+    "pathology": "SMA syndrome after resection or infarct",
+    "modality": "MRI",
+    "finding": "Medial frontal lesion in front of the paracentral lobule; the patient has contralateral akinesia and mutism that resolve over weeks.",
+    "sequence": "T1",
+    "timing": "Deficit maximal in the first days, recovery over 2-6 weeks"
+   },
+   {
+    "pathology": "Supplementary motor seizures",
+    "modality": "EEG",
+    "finding": "Sudden asymmetric tonic posturing with the contralateral arm abducted and the head turned toward it, vocalization, short duration and clustering in sleep; interictal EEG often normal.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Parasagittal meningioma",
+    "modality": "MRI",
+    "finding": "Dural mass along the superior sagittal sinus compressing the medial frontal cortex with focal motor seizures or paraparesis.",
+    "sequence": "T1+Gd"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral akinesia and reduced spontaneous movement",
+    "side": "contralateral",
+    "mechanism": "Loss of internally generated movement initiation from the SMA"
+   },
+   {
+    "deficit": "Mutism or reduced spontaneous speech",
+    "side": "n/a",
+    "mechanism": "Loss of the SMA drive to speech initiation, especially with dominant-side lesions"
+   },
+   {
+    "deficit": "Alien hand and difficulty with bimanual tasks",
+    "side": "contralateral",
+    "mechanism": "Loss of intermanual coordination and inhibition provided by the SMA and callosal fibers"
+   }
+  ],
+  "examination": [
+   "Compare self-initiated with cued movement: ask the patient to start an action versus imitate it",
+   "Bimanual alternating tasks and the ability to start speaking spontaneously",
+   "Seizure history: brief nocturnal tonic posturing with preserved awareness"
+  ],
+  "syndromes": [
+   "syn-aca-infarct"
+  ],
+  "pearls": [
+   "SMA syndrome is transient: warn the family before medial frontal surgery",
+   "A fencing posture at seizure onset points to the supplementary motor area",
+   "Akinetic mutism from bilateral medial frontal damage is not coma: the eyes follow"
+  ]
+ },
+ "pitfalls": [
+  "SMA seizures are often labeled psychogenic because the EEG is normal and the movements are bizarre; video-EEG with an interhemispheric focus in mind is needed"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    284,
+    285
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    259
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    33,
+    34
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    168,
+    170
+   ]
+  }
+ ],
+ "tags": [
+  "premotor",
+  "SMA",
+  "area 6"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

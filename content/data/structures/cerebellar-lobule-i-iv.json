@@ -1,0 +1,152 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-lobule-i-iv",
+ "name": "Lobules I–IV",
+ "synonyms": [
+  "anterior lobe (rostral part)",
+  "lingula, central lobule and culmen"
+ ],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-lobule-i-iv-l",
+  "cerebellar-lobule-i-iv-r"
+ ],
+ "summary": "Lobules I to IV form the anterior part of the anterior lobe of the cerebellum, the lingula, central lobule and culmen of the vermis with their small hemispheric wings, tucked under the tentorium in front of the primary fissure and behind the superior medullary velum. They are spinocerebellar cortex receiving the spinocerebellar tracts from the legs and trunk and projecting through the fastigial and interposed nuclei to the vestibulospinal and reticulospinal systems, so they regulate muscle tone, posture and the gait of the lower limbs. Their degeneration in chronic alcoholism produces the classic anterior lobe syndrome of a wide-based ataxic gait with relatively preserved arm coordination, and they are compressed by superior vermian and tentorial masses.",
+ "anatomy": {
+  "location": "Anterior lobe of the cerebellum from the superior medullary velum back to the primary fissure, rostral and superior to lobule V, mostly vermian with small hemispheric extensions, lying beneath the tentorium and behind the midbrain and the superior cerebellar peduncles.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Spinal cord (legs and trunk)",
+    "via": "dorsal and ventral spinocerebellar tracts via the inferior and superior peduncles"
+   },
+   {
+    "from": "Pontine nuclei",
+    "via": "middle cerebellar peduncle"
+   },
+   {
+    "from": "Inferior olive",
+    "via": "climbing fibers via the inferior peduncle"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Fastigial and interposed nuclei",
+    "via": "Purkinje axons"
+   },
+   {
+    "to": "Vestibular nuclei (direct)",
+    "via": "juxtarestiform body"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "The anterior lobe cortex receives the dorsal and ventral spinocerebellar tracts (leg and trunk proprioception and copies of spinal interneuron activity) and the cuneocerebellar tract from the arm, together with pontine input from the sensorimotor cortex and olivary climbing fibers; its Purkinje cells inhibit the fastigial and interposed nuclei, which drive the vestibulospinal, reticulospinal and rubrospinal systems and the ventrolateral thalamus. The result is continuous adjustment of limb tone and of the timing of the leg muscles in walking and standing, with a somatotopic map in which the legs are represented anteriorly. Loss produces gait and stance ataxia and hypotonia of the legs.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-superior-cerebellar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cerebellar-lobule-i-iv-l"
+    },
+    "label": "anterior lobe of the vermis in front of the primary fissure"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cerebellar-lobule-i-iv-r"
+    },
+    "label": "anterior lobe beneath the tentorium"
+   }
+  ],
+  "normalAppearance": "The anterosuperior vermis on midline sagittal images between the fourth ventricle roof and the primary fissure, folded into narrow folia; atrophy widens its fissures before the rest of the cerebellum.",
+  "pathology": [
+   {
+    "pathology": "Alcoholic cerebellar degeneration",
+    "modality": "MRI",
+    "finding": "Selective atrophy of the anterior superior vermis with widened folia on sagittal images, in a patient with gait ataxia and relatively spared limbs.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Superior cerebellar artery infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the superior cerebellum including the anterior lobe with gait and limb ataxia and, when swollen, brainstem compression.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Superior vermian compression by a tentorial meningioma",
+    "modality": "MRI",
+    "finding": "Enhancing tentorial mass indenting the anterior lobe with progressive gait ataxia.",
+    "sequence": "T1+Gd"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Wide-based, unsteady gait and truncal instability",
+    "side": "bilateral",
+    "mechanism": "Loss of spinocerebellar regulation of leg and trunk muscles"
+   },
+   {
+    "deficit": "Hypotonia of the legs",
+    "side": "bilateral",
+    "mechanism": "Loss of anterior lobe facilitation of tone through the fastigial and vestibulospinal system"
+   },
+   {
+    "deficit": "Relatively preserved arm coordination",
+    "side": "n/a",
+    "mechanism": "The arm representation lies in more posterior lobules"
+   }
+  ],
+  "examination": [
+   "Tandem gait and Romberg with eyes open (cerebellar patients sway with eyes open)",
+   "Heel-shin test compared with finger-nose test",
+   "Alcohol and nutritional history"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-cerebellar-vermian-midline"
+  ],
+  "pearls": [
+   "Anterior lobe atrophy is the cerebellar signature of alcohol: the legs go before the arms",
+   "The anterior vermis on a sagittal MRI is the first place to look for cerebellar atrophy",
+   "Gait ataxia with normal finger-nose testing is anterior lobe, not hemisphere"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "lobules",
+ "parent": "cerebellar-hemisphere"
+}

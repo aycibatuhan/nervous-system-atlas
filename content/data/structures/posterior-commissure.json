@@ -1,0 +1,189 @@
+{
+ "kind": "structure",
+ "id": "posterior-commissure",
+ "name": "Posterior commissure",
+ "synonyms": [
+  "commissura posterior",
+  "epithalamic commissure"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "posterior-commissure"
+ ],
+ "summary": "The posterior commissure is a bundle of crossing fibers in the roof of the aqueduct at the junction of the third ventricle and the midbrain, beneath the pineal gland and above the superior colliculi. It connects the pretectal nuclei of the two sides and the nuclei of the posterior commissure, and it carries the crossed fibers of the pupillary light reflex and of the vertical gaze system, so it explains why each pupil constricts when the other is illuminated and why pineal region tumors that press on it cause the light-near dissociation and upgaze palsy of the dorsal midbrain (Parinaud) syndrome. With the anterior commissure it defines the AC-PC line of stereotactic space.",
+ "anatomy": {
+  "location": "Midline bundle in the dorsal wall of the aqueduct at its entry from the third ventricle, below the pineal recess and the habenular commissure, above the periaqueductal gray and the rostral interstitial nucleus of the medial longitudinal fasciculus, at the level of the superior colliculi.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Pretectal olivary nuclei",
+    "via": "crossing pretectal fibers"
+   },
+   {
+    "from": "Interstitial nucleus of Cajal and nucleus of the posterior commissure",
+    "via": "commissural fibers"
+   },
+   {
+    "from": "Rostral interstitial nucleus of the MLF",
+    "via": "vertical gaze fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Contralateral Edinger-Westphal nucleus",
+    "via": "pupillary light reflex fibers"
+   },
+   {
+    "to": "Contralateral oculomotor and trochlear nuclei (vertical gaze)",
+    "via": "commissural fibers"
+   },
+   {
+    "to": "Contralateral pretectum",
+    "via": "commissural fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-pupillary-light-reflex",
+   "pathway-vertical-gaze"
+  ]
+ },
+ "function": "Pretectal olivary nucleus neurons that receive retinal input project through the posterior commissure to the contralateral Edinger-Westphal nucleus as well as the ipsilateral one, giving the consensual light reflex; the interstitial nucleus of Cajal and the nucleus of the posterior commissure send fibers across it to coordinate the two eyes in vertical gaze and to relay upgaze commands from the rostral interstitial nucleus to the oculomotor nuclei, and lid-eye coordination uses the same route. Damage disconnects the pretectum from the oculomotor complex and interrupts upgaze and lid retraction control, producing Collier's sign and convergence-retraction nystagmus.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-sca"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "posterior-commissure"
+    },
+    "label": "posterior commissure in the roof of the aqueduct beneath the pineal"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "posterior-commissure"
+    },
+    "label": "crossing fibers above the superior colliculi"
+   }
+  ],
+  "normalAppearance": "A tiny dark bundle at the junction of the third ventricle and the aqueduct on midline sagittal T1 images, below the pineal gland and above the superior colliculi; the AC-PC line is drawn to its center.",
+  "pathology": [
+   {
+    "pathology": "Pineal region tumor with dorsal midbrain syndrome",
+    "modality": "MRI",
+    "finding": "Germinoma, pineoblastoma or pineocytoma compressing the posterior commissure and the tectum with hydrocephalus; upgaze palsy, light-near dissociation and convergence-retraction nystagmus.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Thalamic hemorrhage with midbrain extension",
+    "modality": "CT",
+    "finding": "Medial thalamic hematoma extending down to the posterior commissure region with forced downgaze and small pupils.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Hydrocephalus with dilated third ventricle",
+    "modality": "MRI",
+    "finding": "Stretching of the posterior commissure by the dilated third ventricle and aqueduct producing a sunset sign in children and upgaze palsy in adults.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Upgaze palsy with preserved downgaze",
+    "side": "bilateral",
+    "mechanism": "Interruption of crossing vertical gaze fibers from the rostral interstitial nucleus"
+   },
+   {
+    "deficit": "Light-near dissociation with mid-dilated pupils",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the pretectal nuclei from the Edinger-Westphal nuclei"
+   },
+   {
+    "deficit": "Lid retraction (Collier sign) and convergence-retraction nystagmus",
+    "side": "bilateral",
+    "mechanism": "Loss of the commissural lid and convergence control"
+   }
+  ],
+  "examination": [
+   "Upward saccades and pursuit; try an optokinetic drum moving downward to elicit convergence-retraction nystagmus",
+   "Pupillary light and near responses",
+   "Eyelid position at rest and on downgaze"
+  ],
+  "syndromes": [
+   "syn-parinaud-dorsal-midbrain",
+   "syn-hydrocephalus",
+   "syn-top-of-basilar"
+  ],
+  "pearls": [
+   "Parinaud syndrome is the posterior commissure under pressure: think pineal tumor, hydrocephalus or a top-of-the-basilar embolus",
+   "Light-near dissociation from a dorsal midbrain lesion has big pupils; Argyll Robertson pupils are small",
+   "The AC-PC line ends here, so a pineal mass that displaces the commissure also corrupts stereotactic coordinates"
+  ]
+ },
+ "pitfalls": [
+  "Isolated upgaze limitation in the elderly is common and benign; the full dorsal midbrain syndrome needs the pupils and the nystagmus"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    212,
+    218
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    363,
+    364
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    336,
+    338
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 11,
+   "pages": [
+    101,
+    102
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 10,
+   "pages": [
+    83,
+    86
+   ]
+  }
+ ],
+ "tags": [
+  "Parinaud",
+  "AC-PC",
+  "pupil"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

@@ -1,0 +1,178 @@
+{
+ "kind": "structure",
+ "id": "presubiculum",
+ "name": "Presubiculum",
+ "synonyms": [
+  "parasubiculum (with)",
+  "medial parahippocampal transition cortex"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "presubiculum-l",
+  "presubiculum-r"
+ ],
+ "summary": "The presubiculum is the strip of cortex between the subiculum and the entorhinal cortex on the medial surface of the parahippocampal gyrus, together with the parasubiculum forming the transition from the three-layered hippocampus to the six-layered cortex. It contains head-direction cells that signal which way the animal faces, receives the anterior thalamus and the retrosplenial cortex, and projects to the medial entorhinal cortex, so it supplies the compass that the entorhinal grid and the hippocampal place cells need. It is a small target but part of the medial temporal region injured in Alzheimer disease, in limbic encephalitis and in mesial temporal epilepsy, and it contributes to the spatial disorientation of those conditions.",
+ "anatomy": {
+  "location": "Narrow cortical zone on the upper medial surface of the parahippocampal gyrus, medial to the subiculum and lateral to the entorhinal cortex, running along the hippocampal formation from head to tail beside the hippocampal sulcus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Anterodorsal and anteroventral thalamic nuclei",
+    "via": "cingulum"
+   },
+   {
+    "from": "Retrosplenial cortex",
+    "via": "cingulum"
+   },
+   {
+    "from": "Subiculum and parahippocampal cortex",
+    "via": "short association fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Medial entorhinal cortex",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Anterior thalamic nuclei",
+    "via": "fornix and cingulum"
+   },
+   {
+    "to": "Retrosplenial cortex",
+    "via": "cingulum"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Presubicular neurons receive the anterodorsal thalamic nucleus, whose head-direction signal derives from vestibular input via the mammillary bodies, together with the retrosplenial cortex and the subiculum, and they project this heading information to the medial entorhinal cortex and back to the anterior thalamus; the result is a stable compass that anchors the grid cells and place cells of the hippocampal map to the visual landmarks of the environment. The presubiculum also carries hippocampal output back to the retrosplenial cortex and receives a strong visual input from the parahippocampal cortex. Its damage produces loss of directional sense with preserved recognition of places.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-pca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "presubiculum-l"
+    },
+    "label": "presubiculum between the subiculum and the entorhinal cortex"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "presubiculum-r"
+    },
+    "label": "medial parahippocampal transition cortex along the hippocampus"
+   }
+  ],
+  "normalAppearance": "Not separable from the subiculum and entorhinal cortex on clinical MRI; it occupies the medial lip of the parahippocampal gyrus beside the hippocampal sulcus on coronal images, identified by subfield atlases.",
+  "pathology": [
+   {
+    "pathology": "Alzheimer disease",
+    "modality": "MRI",
+    "finding": "Medial temporal atrophy involving the parahippocampal transition cortex with the entorhinal cortex; tau spreads through this zone from entorhinal to hippocampal fields.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Limbic encephalitis",
+    "modality": "MRI",
+    "finding": "Bilateral medial temporal FLAIR hyperintensity and swelling including the parahippocampal cortex, with amnesia and disorientation.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Wernicke encephalopathy (indirect)",
+    "modality": "MRI",
+    "finding": "Mammillary body and medial thalamic signal change disrupts the anterior thalamic input to the presubiculum, with loss of directional sense as part of the amnesia.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Loss of directional sense and heading",
+    "side": "bilateral",
+    "mechanism": "Loss of the presubicular head-direction network"
+   },
+   {
+    "deficit": "Contribution to topographical disorientation",
+    "side": "bilateral",
+    "mechanism": "Disconnection of the retrosplenial-presubicular-entorhinal navigation circuit"
+   },
+   {
+    "deficit": "Contribution to anterograde amnesia",
+    "side": "bilateral",
+    "mechanism": "Part of the entorhinal-hippocampal memory system"
+   }
+  ],
+  "examination": [
+   "Ask the patient to point toward home or toward a landmark from the clinic",
+   "Route learning and description of familiar routes",
+   "Delayed recall"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "The head-direction cells of the presubiculum are the brain's compass; the vestibular system feeds them through the mammillary bodies and anterior thalamus",
+   "Directional sense and place recognition are separable: retrosplenial-presubicular lesions lose the former",
+   "This transition cortex is the road along which Alzheimer tau travels from the entorhinal cortex into the hippocampus"
+  ]
+ },
+ "pitfalls": [
+  "Presubicular structures appear only in subfield atlases; a report that names them is describing atlas labels, not visible anatomy"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    365,
+    368
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    236
+   ]
+  }
+ ],
+ "tags": [
+  "head direction",
+  "navigation",
+  "hippocampus"
+ ],
+ "status": "draft",
+ "subsystem": "limbic",
+ "parent": "hippocampus"
+}

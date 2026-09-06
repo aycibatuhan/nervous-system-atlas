@@ -1,0 +1,174 @@
+{
+ "kind": "structure",
+ "id": "ventricle-lateral-inferior-horn",
+ "name": "Lateral ventricle, inferior (temporal) horn",
+ "synonyms": [
+  "temporal horn",
+  "cornu inferius"
+ ],
+ "system": "ventricles-csf",
+ "meshIds": [
+  "ventricle-lateral-inferior-horn-l",
+  "ventricle-lateral-inferior-horn-r"
+ ],
+ "summary": "The inferior horn of the lateral ventricle curves forward and downward from the atrium into the medial temporal lobe, ending behind the amygdala, with the hippocampus bulging into its floor and the tail of the caudate and the stria terminalis in its roof. It is the ventricular space that dilates first in obstructive hydrocephalus and in the trapped-ventricle syndrome, that widens with hippocampal atrophy in Alzheimer disease and mesial temporal sclerosis, and whose choroid plexus and fissure are the site of choroidal fissure cysts; its relation to the hippocampus makes it the approach corridor for temporal lobe surgery, and its dilatation on the opposite side is a sign of uncal herniation.",
+ "anatomy": {
+  "location": "Temporal horn of the lateral ventricle within the medial temporal lobe, running from the collateral trigone forward and inferiorly to a blind end just behind the amygdala; floor formed by the hippocampus and the collateral eminence, roof by the tapetum of the corpus callosum, the caudate tail and the stria terminalis, medial wall by the choroid fissure and the fimbria.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Choroid plexus of the atrium and inferior horn",
+    "via": "CSF production"
+   },
+   {
+    "from": "Body of the lateral ventricle",
+    "via": "CSF flow via the atrium"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Atrium and body of the lateral ventricle toward the foramen of Monro",
+    "via": "CSF flow"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "The inferior horn is part of the CSF pathway from the choroid plexus of the lateral ventricle to the foramen of Monro, though its own plexus (continuous with that of the atrium through the choroidal fissure) contributes to CSF production; its size reflects the volume of the surrounding medial temporal structures and the pressure in the ventricular system. It is bounded by the structures of memory, so its enlargement is a marker of hippocampal loss, and it lies next to the optic radiation in its lateral wall, which is why temporal horn surgery risks a superior quadrantanopia. Its anterior tip is the landmark for the amygdala on coronal images.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-anterior-choroidal",
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "ventricle-lateral-inferior-horn-l"
+    },
+    "label": "temporal horn above the hippocampus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "ventricle-lateral-inferior-horn-r"
+    },
+    "label": "inferior horn curving into the medial temporal lobe"
+   }
+  ],
+  "normalAppearance": "A thin CSF-signal slit above the hippocampus on coronal images, often barely visible in young adults; the choroid plexus within it enhances normally. Its anterior tip lies just behind the amygdala.",
+  "pathology": [
+   {
+    "pathology": "Obstructive hydrocephalus",
+    "modality": "CT",
+    "finding": "Rounding and dilatation of the temporal horns is the earliest and most sensitive sign of raised ventricular pressure, preceding frontal horn enlargement.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Mesial temporal sclerosis and Alzheimer disease",
+    "modality": "MRI",
+    "finding": "Asymmetric or bilateral widening of the temporal horn with hippocampal atrophy; rated with the medial temporal atrophy scale.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Trapped temporal horn",
+    "modality": "MRI",
+    "finding": "Isolated dilatation of one temporal horn from obstruction at the atrium by tumor, hemorrhage or adhesions, causing mass effect and herniation.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Choroidal fissure cyst",
+    "modality": "MRI",
+    "finding": "Small CSF-signal cyst in the choroidal fissure medial to the temporal horn, a normal variant that must not be called a tumor or a dilated horn.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Sign of raised intracranial pressure or hydrocephalus",
+    "side": "bilateral",
+    "mechanism": "Dilatation of the temporal horns with obstruction of CSF flow"
+   },
+   {
+    "deficit": "Marker of hippocampal atrophy",
+    "side": "ipsilateral",
+    "mechanism": "Ex vacuo widening as the medial temporal lobe shrinks"
+   },
+   {
+    "deficit": "Superior quadrantanopia after surgery or with lateral-wall lesions",
+    "side": "contralateral",
+    "mechanism": "Injury to the optic radiation in the lateral wall of the horn"
+   }
+  ],
+  "examination": [
+   "Measure temporal horn width on every CT read for hydrocephalus",
+   "Grade medial temporal atrophy on coronal T1 in cognitive complaints",
+   "Visual fields after temporal lobe surgery"
+  ],
+  "syndromes": [
+   "syn-hydrocephalus",
+   "syn-uncal-herniation",
+   "syn-normal-pressure-hydrocephalus"
+  ],
+  "pearls": [
+   "Round temporal horns on CT mean hydrocephalus; slit-like ones mean it has been treated or never was",
+   "The temporal horn widens as the hippocampus shrinks; the two are measured together",
+   "A trapped temporal horn is a surgical emergency that looks like a cyst"
+  ]
+ },
+ "pitfalls": [
+  "Asymmetry of the temporal horns is common in normal brains; it is the combination with hippocampal signal or size change that matters"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 16,
+   "pages": [
+    437,
+    442
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    269,
+    274
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    236
+   ]
+  }
+ ],
+ "tags": [
+  "ventricle",
+  "hydrocephalus",
+  "temporal horn"
+ ],
+ "status": "draft",
+ "subsystem": "lateral",
+ "parent": "ventricle-lateral"
+}

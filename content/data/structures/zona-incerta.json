@@ -1,0 +1,173 @@
+{
+ "kind": "structure",
+ "id": "zona-incerta",
+ "name": "Zona incerta",
+ "synonyms": [
+  "subthalamic zona incerta",
+  "posterior subthalamic area"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "zona-incerta-l",
+  "zona-incerta-r"
+ ],
+ "summary": "The zona incerta is a thin sheet of gray matter in the subthalamus between the thalamus above and the subthalamic nucleus and cerebral peduncle below, separated from them by the lenticular and thalamic fasciculi (fields H1 and H2 of Forel). It is a neglected hub that receives cortex, basal ganglia, brainstem and spinal input and sends inhibitory projections to the thalamus, the superior colliculus, the brainstem and the spinal cord, gating sensory transmission, arousal, feeding and posture. Clinically it matters because deep brain stimulation electrodes for tremor and Parkinson disease pass through or end in it, and stimulation of its caudal part relieves tremor at least as well as the ventral intermediate nucleus; hemorrhage or infarction here produces contralateral hemiballismus-like movements or ataxia.",
+ "anatomy": {
+  "location": "Subthalamic region between the thalamic fasciculus (H1) above and the lenticular fasciculus (H2) below, extending from the posterior hypothalamus in front to the pretectum and the midbrain reticular formation behind, lateral to the red nucleus and medial to the internal capsule, above the subthalamic nucleus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Motor and prefrontal cortex",
+    "via": "corticofugal fibers"
+   },
+   {
+    "from": "Cerebellar nuclei",
+    "via": "cerebellothalamic fibers passing through"
+   },
+   {
+    "from": "Brainstem reticular formation and spinal cord",
+    "via": "ascending fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Higher-order thalamic nuclei (inhibitory)",
+    "via": "incertothalamic fibers"
+   },
+   {
+    "to": "Superior colliculus and brainstem premotor nuclei",
+    "via": "descending fibers"
+   },
+   {
+    "to": "Spinal dorsal horn",
+    "via": "incertospinal fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-basal-ganglia-loops",
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "Zona incerta neurons are mostly GABAergic and inhibit the higher-order thalamic nuclei, so that attention and cortical state control which sensory signals reach the cortex; they also drive the superior colliculus and brainstem premotor centers for orienting and posture, modulate pain in the spinal dorsal horn, and influence feeding and drinking through hypothalamic connections. Its rostral part participates in the sleep-wake and arousal networks, and its caudal part, traversed by cerebellothalamic fibers, is the target of tremor surgery. Because the pallidothalamic fibers of the ansa lenticularis and lenticular fasciculus wrap around it, lesions here mimic pallidal or subthalamic damage.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pcom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-posterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "zona-incerta-l"
+    },
+    "label": "zona incerta between the thalamus and the subthalamic nucleus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "zona-incerta-r"
+    },
+    "label": "subthalamic region lateral to the red nucleus"
+   }
+  ],
+  "normalAppearance": "A thin gray band on coronal T2 images beneath the thalamus and above the subthalamic nucleus, separated by the dark fiber bundles of Forel's fields; visible on high-resolution or susceptibility-weighted images used for stimulation planning.",
+  "pathology": [
+   {
+    "pathology": "Deep brain stimulation for tremor (caudal zona incerta target)",
+    "modality": "CT",
+    "finding": "Electrode tip in the posterior subthalamic area on postoperative CT fused to preoperative MRI; the target lies posteromedial to the subthalamic nucleus.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Subthalamic hemorrhage",
+    "modality": "CT",
+    "finding": "Small hyperdense hemorrhage in the subthalamic region with contralateral hemiballismus or hemichorea.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Thalamoperforating infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the subthalamic and paramedian thalamic region with contralateral ataxia, tremor and sensory change.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemiballismus or dystonia",
+    "side": "contralateral",
+    "mechanism": "Involvement of the subthalamic nucleus and the pallidothalamic fibers passing beside the zona incerta"
+   },
+   {
+    "deficit": "Contralateral tremor and ataxia",
+    "side": "contralateral",
+    "mechanism": "Interruption of cerebellothalamic fibers traversing its caudal part"
+   },
+   {
+    "deficit": "Disturbed attention and sensory gating",
+    "side": "bilateral",
+    "mechanism": "Loss of incertal inhibition of higher-order thalamic nuclei"
+   }
+  ],
+  "examination": [
+   "Observe for ballistic or choreic movements of the contralateral limbs",
+   "Finger-nose testing for a cerebellar-outflow tremor",
+   "Sensory testing for a thalamic component"
+  ],
+  "syndromes": [
+   "syn-hemiballismus",
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "The zona incerta is the uncertain zone between thalamus and subthalamus: electrodes aimed at either end up here",
+   "Caudal zona incerta stimulation stops tremor by silencing the cerebellothalamic fibers that pass through it",
+   "Hemiballismus after a small subthalamic stroke usually resolves within weeks"
+  ]
+ },
+ "pitfalls": [
+  "Ballismus after a stroke is often called a seizure; it is a subthalamic release phenomenon and responds to dopamine blockers"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    363,
+    369
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    309,
+    318
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    241,
+    250
+   ]
+  }
+ ],
+ "tags": [
+  "subthalamus",
+  "DBS",
+  "Forel"
+ ],
+ "status": "draft",
+ "subsystem": "subthalamus",
+ "parent": "subthalamic-nucleus"
+}

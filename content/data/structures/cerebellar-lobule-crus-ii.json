@@ -1,0 +1,158 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-lobule-crus-ii",
+ "name": "Crus II",
+ "synonyms": [
+  "inferior semilunar lobule",
+  "Crus II of the ansiform lobule"
+ ],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-lobule-crus-ii-l",
+  "cerebellar-lobule-crus-ii-r"
+ ],
+ "summary": "Crus II is the lower of the two large posterior hemispheric lobules (the inferior semilunar lobule), between the horizontal fissure above and lobule VIIB below, on the posteroinferior surface of the cerebellum in the posterior inferior cerebellar artery territory. With Crus I it forms the non-motor cerebellum linked to the prefrontal and parietal association cortex, contributing to executive function, language and social cognition, with the tuber of the vermis as its midline part. It is the region most often involved in cerebellar cognitive-affective syndrome after PICA infarcts and tumor resection, and it swells against the medulla and the fourth ventricle in large infarcts, so its edema is a cause of the delayed deterioration that follows cerebellar stroke.",
+ "anatomy": {
+  "location": "Posterior lobe of the hemisphere below the horizontal fissure and above the ansoparamedian fissure that separates it from lobule VIIB, lateral to the vermian tuber, on the posteroinferior surface of the hemisphere against the occipital bone.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal and parietal association cortex via the pontine nuclei",
+    "via": "middle cerebellar peduncle"
+   },
+   {
+    "from": "Inferior olive",
+    "via": "climbing fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Dentate nucleus",
+    "via": "Purkinje axons"
+   },
+   {
+    "to": "Prefrontal and parietal cortex via the thalamus",
+    "via": "superior cerebellar peduncle"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "Crus II receives the same prefrontal and parietal association areas as Crus I through the pontine nuclei and returns its output through the dentate nucleus and the thalamus, participating in verbal working memory, planning, the timing of language and the processing of social and emotional information; it is part of the default mode representation in the cerebellum, and its right side is linked to the left language cortex. It contains no body map, so even large lesions produce little limb ataxia, but they disturb the fluency and organization of thought and behavior, and in children posterior lobe resection produces cerebellar mutism when the dentate outflow is also involved.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-inferior-cerebellar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cerebellar-lobule-crus-ii-l"
+    },
+    "label": "Crus II below the horizontal fissure"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cerebellar-lobule-crus-ii-r"
+    },
+    "label": "inferior semilunar lobule on the posteroinferior surface"
+   }
+  ],
+  "normalAppearance": "The posteroinferior hemispheric lobule below the horizontal fissure on axial images through the lower cerebellum, wrapping toward the vermian tuber; the PICA branches run over its surface.",
+  "pathology": [
+   {
+    "pathology": "PICA territory infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the posteroinferior hemisphere including Crus II and lobule VIIB, with vertigo, ataxia and risk of swelling at 2-4 days.",
+    "sequence": "DWI",
+    "timing": "Maximal edema at days 2-4; watch the fourth ventricle"
+   },
+   {
+    "pathology": "Cerebellar mutism after posterior fossa surgery",
+    "modality": "MRI",
+    "finding": "Postoperative defect of the posterior hemispheres and vermis with dentate or superior peduncle injury in a child who stops speaking one to two days after surgery.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Cerebellar hemorrhage",
+    "modality": "CT",
+    "finding": "Hemispheric hematoma in the posteroinferior cerebellum with headache, vomiting and ataxia; more than 3 cm or fourth ventricular compression needs surgery.",
+    "sequence": "CT non-contrast"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Cerebellar cognitive-affective syndrome",
+    "side": "n/a",
+    "mechanism": "Disruption of the cerebrocerebellar association loops"
+   },
+   {
+    "deficit": "Little or no limb ataxia",
+    "side": "n/a",
+    "mechanism": "Absence of a somatotopic body map in Crus II"
+   },
+   {
+    "deficit": "Delayed brainstem compression from swelling after infarction",
+    "side": "bilateral",
+    "mechanism": "Mass effect of the swollen posteroinferior hemisphere on the fourth ventricle and medulla"
+   }
+  ],
+  "examination": [
+   "Cognitive screening after a PICA stroke, not only gait testing",
+   "Serial level of consciousness and gaze for 72 hours after a large cerebellar infarct",
+   "Speech output in children after posterior fossa surgery"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-pica-cerebellar-infarct"
+  ],
+  "pearls": [
+   "A large Crus II infarct may walk normally and think badly",
+   "Cerebellar stroke deteriorates late: the swelling peaks on the third day",
+   "Posterior fossa mutism appears after a silent interval and is a dentate-outflow injury"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    244
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 19,
+   "pages": [
+    190,
+    194
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "lobules",
+ "parent": "cerebellar-hemisphere"
+}

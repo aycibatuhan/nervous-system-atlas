@@ -1,0 +1,169 @@
+{
+ "kind": "structure",
+ "id": "gyrus-inferior-frontal-triangularis",
+ "name": "Inferior frontal gyrus, pars triangularis",
+ "synonyms": [
+  "Broca area (anterior part)",
+  "area 45"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-inferior-frontal-triangularis-l",
+  "gyrus-inferior-frontal-triangularis-r"
+ ],
+ "summary": "The pars triangularis is the wedge of the inferior frontal gyrus between the anterior horizontal and the ascending rami of the lateral sulcus, Brodmann area 45. With the pars opercularis behind it, it makes up the Broca region of the dominant hemisphere, but its role is more semantic and selective than motor: it retrieves words among competitors, resolves ambiguity and supports the controlled search of verbal memory. Lesions restricted to it cause word-finding difficulty and reduced fluency without the severe agrammatism and apraxia of speech that follow damage to the pars opercularis, and it is the frontal region that best predicts recovery of naming after stroke.",
+ "anatomy": {
+  "location": "Triangular middle division of the inferior frontal gyrus, its apex pointing up toward the inferior frontal sulcus and its base on the lateral sulcus between the horizontal ramus in front and the ascending ramus behind.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Anterior and middle temporal cortex",
+    "via": "uncinate and inferior fronto-occipital fasciculi"
+   },
+   {
+    "from": "Pars opercularis and ventral premotor cortex",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Mediodorsal thalamus",
+    "via": "anterior thalamic radiation"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Pars opercularis",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Caudate head",
+    "via": "corticostriatal fibers"
+   },
+   {
+    "to": "Posterior temporal cortex",
+    "via": "arcuate and extreme capsule fibers"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Area 45 is the frontal end of the ventral language stream: it receives the anterior and middle temporal lobe through the uncinate and inferior fronto-occipital fasciculi and selects among semantic alternatives, generates verbs and category members in fluency tasks, and contributes to syntactic processing of complex sentences. In the right hemisphere its homologue handles emotional prosody and the inhibition of responses. It also participates in verbal working memory, keeping a phonological trace alive by silent rehearsal, and in reading, where it maps letters to sounds.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-superior-division"
+  ],
+  "territories": [
+   "territory-mca-frontal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "gyrus-inferior-frontal-triangularis-l"
+    },
+    "label": "pars triangularis between the horizontal and ascending rami of the Sylvian fissure"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "gyrus-inferior-frontal-triangularis-l"
+    },
+    "label": "anterior inferior frontal gyrus above the orbital surface"
+   }
+  ],
+  "normalAppearance": "Wedge-shaped cortex on sagittal images between the two anterior rami of the Sylvian fissure; on the dominant side it is often larger, one of the few structural asymmetries visible on routine MRI.",
+  "pathology": [
+   {
+    "pathology": "Anterior MCA superior division infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the anterior inferior frontal gyrus with reduced verbal fluency and anomia; comprehension and repetition largely spared.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Primary progressive aphasia (non-fluent/agrammatic)",
+    "modality": "MRI",
+    "finding": "Left inferior frontal atrophy involving the pars triangularis and opercularis with a widened anterior Sylvian fissure.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Focal cortical dysplasia",
+    "modality": "MRI",
+    "finding": "Blurred gray-white junction and a transmantle FLAIR-bright band in the inferior frontal gyrus in a patient with speech-arrest seizures.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Word-finding difficulty and reduced verbal fluency",
+    "side": "n/a",
+    "mechanism": "Loss of area 45 semantic selection in the dominant hemisphere"
+   },
+   {
+    "deficit": "Transcortical motor aphasia pattern with preserved repetition",
+    "side": "n/a",
+    "mechanism": "Disconnection of prefrontal language initiation from the intact perisylvian loop"
+   },
+   {
+    "deficit": "Loss of emotional prosody (right hemisphere)",
+    "side": "n/a",
+    "mechanism": "Right inferior frontal homologue no longer shapes the melody of speech"
+   }
+  ],
+  "examination": [
+   "Category and letter fluency (animals in one minute, words beginning with F)",
+   "Confrontation naming and sentence completion",
+   "Repetition: preserved repetition with reduced fluency points here rather than to the pars opercularis"
+  ],
+  "syndromes": [
+   "syn-aphasia-broca",
+   "syn-aphasia-conduction-global"
+  ],
+  "pearls": [
+   "Pars triangularis lesions give anomia and low fluency; pars opercularis lesions give agrammatism and speech apraxia",
+   "A right pars triangularis lesion makes speech flat and monotone though the words are correct",
+   "This is the frontal target of the ventral (meaning) language stream; the arcuate fasciculus targets the pars opercularis"
+  ]
+ },
+ "pitfalls": [
+  "Isolated anomia is not localizing on its own; it occurs with lesions anywhere in the dominant perisylvian region"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    284,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    258
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    56
+   ]
+  }
+ ],
+ "tags": [
+  "language",
+  "Broca",
+  "area 45"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-frontal",
+ "parent": "lobe-frontal"
+}

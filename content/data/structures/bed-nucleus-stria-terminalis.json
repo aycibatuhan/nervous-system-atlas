@@ -1,0 +1,172 @@
+{
+ "kind": "structure",
+ "id": "bed-nucleus-stria-terminalis",
+ "name": "Bed nucleus of the stria terminalis",
+ "synonyms": [
+  "BNST",
+  "extended amygdala (with the central amygdala)"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "bed-nucleus-stria-terminalis-l",
+  "bed-nucleus-stria-terminalis-r"
+ ],
+ "summary": "The bed nucleus of the stria terminalis is a cluster of small nuclei around the stria terminalis where it ends beside the anterior commissure, lateral to the septal area and the fornix column and medial to the head of the caudate and the internal capsule. With the central nucleus of the amygdala it forms the extended amygdala, and it translates sustained threat and stress into hypothalamic, autonomic and behavioral responses: it mediates anxiety to unpredictable threats, the stress response of the hypothalamic-pituitary-adrenal axis and aspects of social and sexual behavior, and it is sexually dimorphic. It is injured with the septal region in anterior communicating artery aneurysm rupture and is a research target in anxiety, addiction and stress disorders.",
+ "anatomy": {
+  "location": "Ventral forebrain beside the anterior commissure and the columns of the fornix, below the lateral ventricle and the caudate head, above the preoptic hypothalamus and lateral to the septal nuclei, where the stria terminalis arrives from the amygdala along the thalamostriate groove.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Amygdala (central and medial nuclei)",
+    "via": "stria terminalis and ventral amygdalofugal pathway"
+   },
+   {
+    "from": "Hippocampus and subiculum",
+    "via": "fornix"
+   },
+   {
+    "from": "Insular and prefrontal cortex",
+    "via": "corticofugal fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Paraventricular and lateral hypothalamus",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Ventral tegmental area and periaqueductal gray",
+    "via": "descending fibers"
+   },
+   {
+    "to": "Parabrachial nucleus and nucleus of the solitary tract",
+    "via": "descending autonomic fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "The bed nucleus receives the amygdala through the stria terminalis and the ventral amygdalofugal pathway, the hippocampus through the fornix and the prefrontal and insular cortex, and it projects to the paraventricular hypothalamus to drive corticotropin-releasing hormone and the stress axis, to the lateral hypothalamus and brainstem for autonomic and defensive responses, and to the ventral tegmental area for the motivational effects of stress; its own corticotropin-releasing hormone neurons sustain the long-lasting anxious state that follows a threat, in contrast to the brief fear of the amygdala. Its sexually dimorphic subnuclei participate in reproductive and parental behavior and are influenced by gonadal hormones.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-acom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "bed-nucleus-stria-terminalis-l"
+    },
+    "label": "bed nucleus beside the anterior commissure and the fornix column"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "bed-nucleus-stria-terminalis-r"
+    },
+    "label": "ventral forebrain lateral to the septal area"
+   }
+  ],
+  "normalAppearance": "Gray matter lateral to the fornix column and medial to the caudate head at the level of the anterior commissure on coronal images; a few millimeters across, identified with atlases rather than by eye.",
+  "pathology": [
+   {
+    "pathology": "Anterior communicating artery aneurysm rupture",
+    "modality": "MRI",
+    "finding": "Basal forebrain and septal infarcts extending to the bed nucleus region with amnesia and emotional dysregulation.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Anxiety and stress disorders (functional imaging)",
+    "modality": "PET",
+    "finding": "Increased activity of the bed nucleus during anticipation of unpredictable threat in research studies; no structural lesion.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Septal or ventral striatal tumor",
+    "modality": "MRI",
+    "finding": "Mass under the frontal horns involving the septal and bed nucleus region with mood, drive and memory change.",
+    "sequence": "T1+Gd"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Sustained anxiety and exaggerated stress response",
+    "side": "bilateral",
+    "mechanism": "Dysregulation of the extended amygdala corticotropin-releasing hormone circuit"
+   },
+   {
+    "deficit": "Blunted stress and autonomic responses after destruction",
+    "side": "bilateral",
+    "mechanism": "Loss of the bed nucleus drive to the paraventricular hypothalamus"
+   },
+   {
+    "deficit": "Altered social and sexual behavior",
+    "side": "bilateral",
+    "mechanism": "Damage to the sexually dimorphic subnuclei and their hypothalamic connections"
+   }
+  ],
+  "examination": [
+   "Anxiety and mood assessment after ventral forebrain injury",
+   "Autonomic history: sweating, palpitations, stress intolerance",
+   "Recent memory, because the septal area is usually involved with it"
+  ],
+  "syndromes": [
+   "syn-hypothalamic-syndromes"
+  ],
+  "pearls": [
+   "The amygdala handles fear of a present threat; the bed nucleus handles anxiety about an uncertain one",
+   "The extended amygdala is the anatomy of stress hormone release and of relapse in addiction",
+   "Anterior communicating aneurysm patients can be left anxious and disinhibited as well as amnestic"
+  ]
+ },
+ "pitfalls": [
+  "The bed nucleus is too small to see on routine MRI; lesion-symptom claims about it are inferential"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    376,
+    381
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  }
+ ],
+ "tags": [
+  "extended amygdala",
+  "stress",
+  "anxiety"
+ ],
+ "status": "draft",
+ "subsystem": "limbic",
+ "parent": "amygdala"
+}

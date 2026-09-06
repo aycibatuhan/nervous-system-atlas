@@ -1,0 +1,182 @@
+{
+ "kind": "structure",
+ "id": "globus-pallidus-externus",
+ "name": "Globus pallidus, external segment",
+ "synonyms": [
+  "GPe",
+  "lateral pallidum"
+ ],
+ "system": "basal-ganglia",
+ "meshIds": [
+  "globus-pallidus-externus-l",
+  "globus-pallidus-externus-r"
+ ],
+ "summary": "The external segment of the globus pallidus is the lateral part of the pallidum, between the putamen and the medial medullary lamina that separates it from the internal segment. It is the relay of the indirect pathway: striatal neurons carrying D2 receptors inhibit it, it in turn inhibits the subthalamic nucleus, and the subthalamic nucleus excites the output nuclei, so activity in this circuit suppresses unwanted movement. Its overactivity or underactivity shapes the balance between akinesia and chorea, and it is the origin of the ansa lenticularis fibers that surround the internal capsule; it is involved in lenticulostriate infarcts and hemorrhages and in the pallidal necrosis of carbon monoxide poisoning.",
+ "anatomy": {
+  "location": "Lateral segment of the lentiform nucleus medial to the putamen and the lateral medullary lamina, lateral to the internal segment and the medial medullary lamina, above the anterior commissure and the substantia innominata, medial to the external capsule and lateral to the posterior limb of the internal capsule.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Striatum (indirect pathway, D2 neurons)",
+    "via": "striatopallidal fibers"
+   },
+   {
+    "from": "Subthalamic nucleus",
+    "via": "subthalamopallidal fibers"
+   },
+   {
+    "from": "Substantia nigra pars compacta",
+    "via": "dopaminergic collaterals"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Subthalamic nucleus",
+    "via": "pallidosubthalamic fibers"
+   },
+   {
+    "to": "Globus pallidus internus and substantia nigra pars reticulata",
+    "via": "direct pallidal fibers"
+   },
+   {
+    "to": "Striatum (arkypallidal neurons)",
+    "via": "pallidostriatal fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "External pallidal neurons fire tonically and are inhibited by the striatal indirect-pathway neurons when dopamine acting on D2 receptors is low; their own inhibitory projection to the subthalamic nucleus then lets the subthalamus excite the internal pallidum and the pars reticulata, which shuts down the thalamus. Reciprocal subthalamo-pallidal connections form a pacemaker whose abnormal synchronization in the beta band underlies parkinsonian bradykinesia. Arkypallidal neurons project back to the striatum to cancel actions in progress, and prototypic neurons also reach the internal pallidum directly. Loss of striatal input to it in Huntington disease removes the brake and produces chorea.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-lenticulostriate",
+   "artery-mca",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-lateral-lenticulostriate",
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "globus-pallidus-externus-l"
+    },
+    "label": "external pallidum between the putamen and the internal segment"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "globus-pallidus-externus-r"
+    },
+    "label": "lateral pallidum medial to the putamen"
+   }
+  ],
+  "normalAppearance": "The lateral, larger part of the pallidum on axial T2 images, darker than the putamen because of its iron and myelin, separated from the internal segment by the thin bright medial medullary lamina.",
+  "pathology": [
+   {
+    "pathology": "Carbon monoxide poisoning",
+    "modality": "MRI",
+    "finding": "Bilateral symmetric restricted diffusion and later T2 hyperintensity of the globus pallidus with delayed white-matter change; parkinsonism and cognitive decline follow.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Huntington disease",
+    "modality": "MRI",
+    "finding": "Caudate and putaminal atrophy with enlarged frontal horns; pallidal volume loss follows striatal loss and correlates with chorea giving way to rigidity.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Lenticulostriate infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the lentiform nucleus involving both pallidal segments with contralateral dystonia, chorea or hemiparesis from capsular extension.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral chorea or ballism with striatal disconnection",
+    "side": "contralateral",
+    "mechanism": "Loss of indirect-pathway suppression through the external pallidum and subthalamic nucleus"
+   },
+   {
+    "deficit": "Contralateral dystonia",
+    "side": "contralateral",
+    "mechanism": "Abnormal pallidal output patterns after lenticular injury"
+   },
+   {
+    "deficit": "Contribution to parkinsonian bradykinesia",
+    "side": "bilateral",
+    "mechanism": "Excessive subthalamo-pallidal synchronization when dopamine is lost"
+   }
+  ],
+  "examination": [
+   "Observe for chorea, dystonia and bradykinesia on the side opposite a lentiform lesion",
+   "Carboxyhemoglobin and exposure history in bilateral pallidal lesions",
+   "Cognitive testing, because the pallidal loops include prefrontal circuits"
+  ],
+  "syndromes": [
+   "syn-hemiballismus",
+   "syn-huntington-chorea",
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "The external pallidum is the brake of the indirect pathway; remove its striatal input and the limbs dance",
+   "Bilateral pallidal lesions on MRI mean carbon monoxide, cyanide, hypoxia or a metabolic disease until proved otherwise",
+   "The beta rhythm of parkinsonism is a duet between the external pallidum and the subthalamic nucleus"
+  ]
+ },
+ "pitfalls": [
+  "Pallidal T2 hypointensity increases with age; only signal change on diffusion or T2 hyperintensity indicates injury"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    309,
+    318
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    264
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    241,
+    250
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    62,
+    63
+   ]
+  }
+ ],
+ "tags": [
+  "indirect pathway",
+  "pallidum",
+  "chorea"
+ ],
+ "status": "draft",
+ "subsystem": "pallidum",
+ "parent": "globus-pallidus"
+}

@@ -1,0 +1,179 @@
+{
+ "kind": "structure",
+ "id": "cortex-temporo-occipital-fusiform",
+ "name": "Temporal occipital fusiform cortex",
+ "synonyms": [
+  "posterior fusiform gyrus",
+  "V4 complex"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-temporo-occipital-fusiform-l",
+  "cortex-temporo-occipital-fusiform-r"
+ ],
+ "summary": "The temporo-occipital fusiform cortex is the posterior segment of the fusiform gyrus where the temporal lobe meets the occipital lobe on the inferior surface, between the collateral sulcus and the occipitotemporal sulcus behind the level of the atrium. It is ventral extrastriate cortex in which color, texture and shape are combined (the human V4 complex and the posterior parts of the face and word areas) and it feeds the fusiform recognition regions in front of it. It lies squarely in the posterior cerebral artery territory beneath the calcarine cortex, so its infarction accompanies a hemianopia and adds achromatopsia, apperceptive agnosia or alexia; bilateral damage produces cerebral achromatopsia.",
+ "anatomy": {
+  "location": "Posterior end of the fusiform gyrus at the temporo-occipital junction, medial to the inferior lateral occipital cortex and lateral to the lingual gyrus and collateral sulcus, on the inferior surface of the hemisphere above the tentorium.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Primary and secondary visual cortex (V1, V2)",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Pulvinar",
+    "via": "thalamocortical fibers"
+   },
+   {
+    "from": "Contralateral ventral occipital cortex",
+    "via": "splenium"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Posterior temporal fusiform cortex (face and word areas)",
+    "via": "inferior longitudinal fasciculus"
+   },
+   {
+    "to": "Inferior temporal gyrus",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Posterior parietal cortex",
+    "via": "vertical occipital fasciculus"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "This ventral occipito-temporal cortex computes the surface color and texture of objects independent of illumination, integrates contours into shapes and begins the category-specific organization that becomes face, word, body and place areas further forward; it is retinotopically organized with the contralateral upper field represented on the lower bank, and the right side dominates for global form and color. It receives the calcarine cortex and V2 through short fibers and projects along the inferior longitudinal fasciculus; the tentorium and the PCA branches lie directly beneath it. Lesions produce contralateral hemiachromatopsia and upper quadrant defects, and ictal activation gives colored visual auras.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca-occipital",
+   "territory-pca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-temporo-occipital-fusiform-l"
+    },
+    "label": "temporo-occipital fusiform gyrus above the tentorium"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cortex-temporo-occipital-fusiform-r"
+    },
+    "label": "ventral occipito-temporal cortex lateral to the lingual gyrus"
+   }
+  ],
+  "normalAppearance": "The fusiform gyrus behind the atrium on coronal images, below the lateral ventricle and above the tentorial surface, with the collateral sulcus separating it from the lingual gyrus medially.",
+  "pathology": [
+   {
+    "pathology": "PCA infarct with achromatopsia",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the ventral occipito-temporal cortex below the calcarine sulcus with loss of color perception in the contralateral hemifield and an upper quadrantanopia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Cerebral achromatopsia (bilateral)",
+    "modality": "MRI",
+    "finding": "Bilateral ventral occipito-temporal lesions, typically after sequential PCA strokes or hypotension, with the world seen in shades of gray.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Occipital seizures with colored auras",
+    "modality": "EEG",
+    "finding": "Colored spots or shapes at onset with a posterior temporo-occipital focus; migraine aura is the main mimic.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral hemiachromatopsia",
+    "side": "contralateral",
+    "mechanism": "Loss of the color-constancy cortex of the ventral occipito-temporal region"
+   },
+   {
+    "deficit": "Apperceptive agnosia and impaired shape perception",
+    "side": "contralateral",
+    "mechanism": "Loss of ventral extrastriate form processing"
+   },
+   {
+    "deficit": "Contralateral superior quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Involvement of the lower calcarine bank or the underlying optic radiation"
+   }
+  ],
+  "examination": [
+   "Color naming and matching in each hemifield separately (pseudoisochromatic plates presented to each side)",
+   "Copying and matching of shapes",
+   "Visual fields by quadrant"
+  ],
+  "syndromes": [
+   "syn-pca-infarct",
+   "syn-homonymous-hemianopia"
+  ],
+  "pearls": [
+   "Loss of color in one hemifield with preserved acuity is the ventral occipito-temporal cortex; the patient may say the left side of the room looks washed out",
+   "Colored auras are occipital, not migraine, when they last seconds and recur stereotypically",
+   "The temporo-occipital fusiform cortex lies on the tentorium: tentorial meningiomas and PCA aneurysm compression present with these deficits"
+  ]
+ },
+ "pitfalls": [
+  "Hemiachromatopsia is never found unless colors are tested in each hemifield; standard color plates presented centrally miss it"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    291
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    51
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    58,
+    60
+   ]
+  }
+ ],
+ "tags": [
+  "V4",
+  "color",
+  "ventral stream"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-temporal",
+ "parent": "lobe-temporal"
+}

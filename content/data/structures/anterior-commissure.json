@@ -1,0 +1,178 @@
+{
+ "kind": "structure",
+ "id": "anterior-commissure",
+ "name": "Anterior commissure",
+ "synonyms": [
+  "commissura anterior"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "anterior-commissure",
+  "tract-anterior-commissure"
+ ],
+ "summary": "The anterior commissure is a compact bundle of crossing fibers in the front wall of the third ventricle, in front of the columns of the fornix and below the rostrum of the corpus callosum, connecting the two temporal lobes, the amygdalae and the olfactory regions. It is the second largest forebrain commissure and the fixed landmark of stereotactic neurosurgery: the line from the anterior to the posterior commissure defines the axis of the Talairach and MNI coordinate systems used throughout this atlas. It is displaced by third ventricular and suprasellar masses, spared or enlarged in callosal agenesis, and it carries the interhemispheric transfer that persists after callosotomy, explaining why some information still crosses in split-brain patients.",
+ "anatomy": {
+  "location": "Midline bundle crossing the lamina terminalis at the front of the third ventricle just in front of the fornix columns, whose lateral limbs sweep back beneath the anterior limb of the internal capsule and the pallidum into the temporal lobes; the smaller anterior limb passes forward to the olfactory tracts.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Anterior and inferior temporal cortex, amygdala",
+    "via": "posterior limb"
+   },
+   {
+    "from": "Olfactory bulb and anterior olfactory nucleus",
+    "via": "anterior limb"
+   },
+   {
+    "from": "Nucleus accumbens and bed nucleus",
+    "via": "small contributions"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Contralateral temporal cortex and amygdala",
+    "via": "posterior limb"
+   },
+   {
+    "to": "Contralateral olfactory bulb",
+    "via": "anterior limb"
+   },
+   {
+    "to": "Contralateral accumbens",
+    "via": "small contribution"
+   }
+  ],
+  "pathways": [
+   "pathway-olfactory"
+  ]
+ },
+ "function": "The posterior limb connects the anterior and inferior temporal cortex, the amygdala and the temporal pole of the two sides and carries visual, auditory and olfactory memory representations between the hemispheres, complementing the corpus callosum; the anterior limb links the olfactory bulbs and the anterior olfactory nuclei so that odor information is shared. The commissure also contributes fibers from the nucleus accumbens and the bed nucleus. Its clinical use is anatomical: as the origin of the AC-PC coordinate system it locates thalamic and subthalamic targets for deep brain stimulation, and its position is a check on midline shift and third ventricular distortion.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-acom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-aca",
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "anterior-commissure"
+    },
+    "label": "anterior commissure in the front wall of the third ventricle"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "anterior-commissure"
+    },
+    "label": "commissural fibers crossing beneath the fornix columns"
+   }
+  ],
+  "normalAppearance": "A small round dark bundle on midline sagittal T1 images in front of the fornix columns and below the rostrum, marking the front of the third ventricle; on axial images its posterior limbs arc laterally beneath the pallidum into the temporal stems.",
+  "pathology": [
+   {
+    "pathology": "Third ventricular and suprasellar masses",
+    "modality": "MRI",
+    "finding": "Upward and forward displacement or thinning of the anterior commissure by a colloid cyst, craniopharyngioma or giant aneurysm; distortion of the AC-PC line invalidates stereotactic coordinates.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Callosal agenesis",
+    "modality": "MRI",
+    "finding": "Absent corpus callosum with a preserved or enlarged anterior commissure and Probst bundles running parallel to the interhemispheric fissure.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Anterior commissure demyelination",
+    "modality": "MRI",
+    "finding": "Focal FLAIR lesion in the commissure in multiple sclerosis, usually asymptomatic.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Reduced interhemispheric transfer of visual and olfactory information",
+    "side": "bilateral",
+    "mechanism": "Loss of temporal and olfactory commissural fibers, evident mainly after callosotomy"
+   },
+   {
+    "deficit": "Loss of the stereotactic reference",
+    "side": "n/a",
+    "mechanism": "Distortion of the anterior commissure shifts the AC-PC coordinate frame used for deep brain stimulation targeting"
+   },
+   {
+    "deficit": "Usually no deficit from an isolated lesion",
+    "side": "n/a",
+    "mechanism": "Function is duplicated by the corpus callosum"
+   }
+  ],
+  "examination": [
+   "Identify the commissure on the midline sagittal image and check the AC-PC line before any stereotactic planning",
+   "Interhemispheric transfer tests (cross-localization of touch, naming objects in the left hand) after callosal surgery",
+   "Smell testing when both olfactory pathways may be involved"
+  ],
+  "syndromes": [
+   "syn-callosal-disconnection"
+  ],
+  "pearls": [
+   "The AC-PC line is the equator of stereotactic space; MNI coordinates in this atlas are measured from the anterior commissure",
+   "In callosal agenesis the anterior commissure often grows to compensate",
+   "Split-brain patients still share smells and some emotions across the anterior commissure"
+  ]
+ },
+ "pitfalls": [
+  "A commissure displaced by a mass makes atlas-based coordinates wrong; always plan stereotactic targets on the patient's own AC-PC line"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    254,
+    264
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    327,
+    328
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    25,
+    28
+   ]
+  }
+ ],
+ "tags": [
+  "commissure",
+  "AC-PC",
+  "stereotaxis"
+ ],
+ "status": "draft",
+ "subsystem": "white-matter"
+}

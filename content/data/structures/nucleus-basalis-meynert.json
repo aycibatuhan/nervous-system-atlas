@@ -1,0 +1,188 @@
+{
+ "kind": "structure",
+ "id": "nucleus-basalis-meynert",
+ "name": "Nucleus basalis of Meynert",
+ "synonyms": [
+  "basal nucleus of Meynert",
+  "Ch4 cell group"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "nucleus-basalis-meynert-l",
+  "nucleus-basalis-meynert-r"
+ ],
+ "summary": "The nucleus basalis of Meynert is the largest of the basal forebrain cholinergic groups, a loose cluster of big neurons in the substantia innominata beneath the globus pallidus and the anterior commissure, extending from the diagonal band back to the level of the optic tract, medial to the amygdala. It is the principal source of acetylcholine for the neocortex and the amygdala and it modulates attention, arousal and cortical plasticity. Its neurons carry tau and Lewy pathology early and their loss underlies the cholinergic deficit of Alzheimer disease, Parkinson disease dementia and dementia with Lewy bodies; the nucleus is a target of deep brain stimulation trials and its volume on MRI predicts cognitive decline.",
+ "anatomy": {
+  "location": "Substantia innominata of the ventral forebrain, below the anterior commissure and the ventral pallidum, above the anterior perforated substance and the optic tract, lateral to the hypothalamus and medial to the amygdala and the temporal stem.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Amygdala",
+    "via": "ventral amygdalofugal pathway"
+   },
+   {
+    "from": "Hypothalamus",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "from": "Prefrontal, insular and limbic cortex",
+    "via": "corticofugal fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Neocortex (all areas)",
+    "via": "medial and lateral cholinergic pathways"
+   },
+   {
+    "to": "Amygdala",
+    "via": "ventral pathway"
+   },
+   {
+    "to": "Thalamic reticular nucleus",
+    "via": "cholinergic projection"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "Nucleus basalis neurons project topographically through the medial and lateral cholinergic pathways to every neocortical area and to the amygdala, and release acetylcholine that increases cortical excitability and signal-to-noise, holds attention on relevant stimuli, and permits the cortical map changes of learning; they fire to novel, rewarding or salient events driven by the amygdala, the hypothalamus and the brainstem, and pause during slow-wave sleep. They also modulate cerebral blood flow through cholinergic innervation of cortical vessels. Their degeneration, with reduced cortical choline acetyltransferase, precedes and predicts the cognitive decline of Alzheimer and Lewy body disease and explains why cholinergic drugs help attention more than memory.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-anterior-choroidal",
+   "artery-mca",
+   "arteries-lenticulostriate"
+  ],
+  "territories": [
+   "territory-anterior-choroidal-thalamoperforating",
+   "territory-lateral-lenticulostriate"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "nucleus-basalis-meynert-l"
+    },
+    "label": "nucleus basalis in the substantia innominata under the pallidum"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "nucleus-basalis-meynert-r"
+    },
+    "label": "basal forebrain lateral to the hypothalamus above the optic tract"
+   }
+  ],
+  "normalAppearance": "Part of the gray matter of the substantia innominata on coronal images through the anterior commissure, between the ventral pallidum above and the optic tract below; it is not a discrete nucleus on routine MRI and is measured with probabilistic atlases.",
+  "pathology": [
+   {
+    "pathology": "Alzheimer disease",
+    "modality": "MRI",
+    "finding": "Reduced nucleus basalis volume on atlas-based T1 measurements, detectable in the prodromal stage and predictive of cortical atrophy.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Dementia with Lewy bodies and Parkinson disease dementia",
+    "modality": "MRI",
+    "finding": "Basal forebrain atrophy even more marked than in Alzheimer disease, matching the severe cholinergic deficit and the good response to cholinesterase inhibitors.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Anterior choroidal or lenticulostriate infarct of the ventral forebrain",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the substantia innominata and ventral pallidum with attention and memory impairment.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Inattention, fluctuating cognition and visual hallucinations",
+    "side": "bilateral",
+    "mechanism": "Loss of cortical acetylcholine from the nucleus basalis"
+   },
+   {
+    "deficit": "Impaired encoding of new memories",
+    "side": "bilateral",
+    "mechanism": "Loss of cholinergic modulation of cortical and amygdalar plasticity"
+   },
+   {
+    "deficit": "Reduced arousal and delirium susceptibility",
+    "side": "bilateral",
+    "mechanism": "Loss of the cholinergic component of the ascending arousal system"
+   }
+  ],
+  "examination": [
+   "Sustained attention tasks and fluctuation history from the family",
+   "Delayed recall with encoding support",
+   "Careful anticholinergic drug review; even a bladder antimuscarinic can unmask the deficit"
+  ],
+  "syndromes": [
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "Meynert's nucleus is the cholinergic engine of the cortex; its loss is why dementia patients cannot attend before they cannot remember",
+   "Lewy body dementia has the worst cholinergic loss and the best response to cholinesterase inhibitors",
+   "Basal forebrain volume on MRI is an emerging biomarker of prodromal Alzheimer disease"
+  ]
+ },
+ "pitfalls": [
+  "Nucleus basalis measurements are atlas-derived and research-grade; do not diagnose dementia from a single volume"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 2,
+   "pages": [
+    55,
+    58
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 10,
+   "pages": [
+    311,
+    313
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 22,
+   "pages": [
+    233,
+    238
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 23,
+   "pages": [
+    245,
+    248
+   ]
+  }
+ ],
+ "tags": [
+  "acetylcholine",
+  "Ch4",
+  "dementia"
+ ],
+ "status": "draft",
+ "subsystem": "limbic",
+ "parent": "septal-area"
+}

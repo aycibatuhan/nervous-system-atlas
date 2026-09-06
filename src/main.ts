@@ -13,6 +13,7 @@ import { SyndromePanel } from './ui/SyndromePanel.ts';
 import { SearchBox } from './ui/SearchBox.ts';
 import { QuizPanel } from './ui/QuizPanel.ts';
 import { GlossaryPanel } from './ui/GlossaryPanel.ts';
+import { TopicPanel } from './ui/TopicPanel.ts';
 import { enterSyndrome, exitSyndrome } from './state/syndrome.ts';
 import { h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
@@ -65,8 +66,9 @@ async function boot(): Promise<void> {
   new SyndromeBar(app, document.getElementById('syndrome-bar')!);
   const quizHost = h('div', { class: 'content', hidden: true }); right.append(quizHost); const quizPanel = new QuizPanel(app, quizHost);
   const glossaryHost = h('div', { class: 'content', hidden: true }); right.append(glossaryHost); const glossaryPanel = new GlossaryPanel(app, glossaryHost);
+  const topicHost = h('div', { class: 'content', hidden: true }); right.append(topicHost); const topicPanel = new TopicPanel(app, topicHost);
   const mainPanel = right.firstElementChild as HTMLElement;
-  const showPanel = (which: 'main' | 'pathway' | 'syndrome' | 'quiz' | 'glossary') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; quizHost.hidden = which !== 'quiz'; glossaryHost.hidden = which !== 'glossary'; if (which !== 'quiz') quizPanel.exit(); if (which !== 'quiz' && which !== 'glossary' && app.store.get().panel) app.store.set({ panel: null }); };
+  const showPanel = (which: 'main' | 'pathway' | 'syndrome' | 'quiz' | 'glossary' | 'topic') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; quizHost.hidden = which !== 'quiz'; glossaryHost.hidden = which !== 'glossary'; topicHost.hidden = which !== 'topic'; if (which !== 'quiz') quizPanel.exit(); if (which !== 'topic') topicPanel.exit(); if (which !== 'quiz' && which !== 'glossary' && which !== 'topic' && app.store.get().panel) app.store.set({ panel: null }); };
   const showPathway = (id: string | null) => { if (id) { pathwayPanel.show(id); showPanel('pathway'); } else { pathwayPanel.exit(); if (!pathwayHost.hidden) showPanel('main'); } };
   void contentPanel;
   const help = h('div', { class: 'help', hidden: true }, h('b', {}, 'Shortcuts'), h('br'),
@@ -80,6 +82,8 @@ async function boot(): Promise<void> {
   const search = new SearchBox(toolbar.searchHost, (doc) => {
     if (doc.kind === 'syndrome') location.hash = `#/syndrome/${doc.id}`;
     else if (doc.kind === 'pathway') location.hash = `#/pathway/${doc.id}`;
+    else if (doc.kind === 'topic') location.hash = `#/topic/${doc.id}`;
+    else if (doc.kind === 'glossary') location.hash = `#/glossary/${doc.id}`;
     else if (doc.kind === 'mesh') selectStructure(app, doc.id, { moveSlices: true, fit: true });
     else location.hash = `#/structure/${doc.id}`;
   });
@@ -127,6 +131,7 @@ async function boot(): Promise<void> {
       if (params.c) setContrast(app, params.c);
       if (route.kind === 'quiz') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('quiz'); app.store.set({ panel: { kind: 'quiz', index: route.index ?? 0 } }); quizPanel.show(route.index ?? 0); return; }
       if (route.kind === 'glossary') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('glossary'); app.store.set({ panel: { kind: 'glossary', id: route.id ?? null } }); glossaryPanel.show(route.id); return; }
+      if (route.kind === 'topic') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('topic'); app.store.set({ panel: { kind: 'topic', id: route.id ?? null } }); topicPanel.show(route.id); return; }
       if (route.kind === 'syndrome') { showPathway(null); enterSyndrome(app, route.id, route.step ?? 0, params.side); if (params.side) app.store.set({ lesionSide: params.side }); syndromePanel.show(route.id); showPanel('syndrome'); return; }
       if (app.store.get().syndrome) { exitSyndrome(app); showPanel('main'); }
       if (route.kind === 'pathway') { showPathway(route.id); return; }

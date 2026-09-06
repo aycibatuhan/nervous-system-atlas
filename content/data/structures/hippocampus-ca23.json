@@ -1,0 +1,187 @@
+{
+ "kind": "structure",
+ "id": "hippocampus-ca23",
+ "name": "Hippocampus CA2/CA3",
+ "synonyms": [
+  "cornu ammonis fields 2 and 3",
+  "hilar hippocampus"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "hippocampus-ca23-l",
+  "hippocampus-ca23-r"
+ ],
+ "summary": "CA2 and CA3 are the inner cornu ammonis fields of the hippocampus, curving into the hilus of the dentate gyrus on the medial side of the hippocampal body. CA3 receives the mossy fibers of the dentate granule cells and, through its dense recurrent collaterals, acts as an autoassociative network that completes a partial cue into a whole memory before passing it to CA1 by the Schaffer collaterals; CA2, a narrow field between them, is specialized for social memory and is relatively resistant to injury. CA3 is the field most prone to generating epileptiform activity, and its mossy fiber synapses are among the largest in the brain.",
+ "anatomy": {
+  "location": "Pyramidal cell fields on the inner curve of the hippocampus, medial to CA1, with CA3 extending into the hilus of the dentate gyrus and CA2 forming the short transition to CA1; they lie in the hippocampal body and head under the temporal horn and medial to the parahippocampal gyrus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Dentate gyrus granule cells",
+    "via": "mossy fibers"
+   },
+   {
+    "from": "Entorhinal cortex layer II",
+    "via": "perforant path"
+   },
+   {
+    "from": "Contralateral CA3",
+    "via": "hippocampal commissure"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "CA1",
+    "via": "Schaffer collaterals"
+   },
+   {
+    "to": "Lateral septal nucleus",
+    "via": "fornix (precommissural)"
+   },
+   {
+    "to": "Contralateral hippocampus",
+    "via": "hippocampal commissure"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "CA3 pyramidal cells receive sparse but powerful mossy fiber input from the dentate gyrus, direct perforant path input from the entorhinal cortex and extensive recurrent excitation from each other; this architecture lets them store patterns rapidly and retrieve a complete memory from a fragment, the pattern completion that underlies recollection from a cue. Their recurrent collaterals also make CA3 the most seizure-prone hippocampal field. CA2 neurons receive supramammillary and septal input, resist plasticity at their Schaffer inputs and are necessary for remembering other individuals. Both fields send commissural fibers to the opposite hippocampus and are modulated by cholinergic and serotonergic input.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-pca-temporal",
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "hippocampus-ca23-l"
+    },
+    "label": "CA3 curving into the hilus of the dentate gyrus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "hippocampus-ca23-r"
+    },
+    "label": "inner hippocampal fields along the body"
+   }
+  ],
+  "normalAppearance": "On high-resolution coronal T2 images CA3 is the inner gray band of the hippocampal body that turns into the dentate hilus; CA2 is a short segment between CA3 and CA1 that cannot be distinguished without subfield atlases.",
+  "pathology": [
+   {
+    "pathology": "Mesial temporal sclerosis",
+    "modality": "MRI",
+    "finding": "Hippocampal atrophy and FLAIR signal change; pathology shows CA1, CA3 and hilar neuron loss with relative CA2 sparing.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Limbic encephalitis",
+    "modality": "MRI",
+    "finding": "Bilateral swelling and FLAIR hyperintensity of the hippocampi and amygdalae with subacute amnesia and seizures; later atrophy.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Hypoxic injury",
+    "modality": "MRI",
+    "finding": "Bilateral hippocampal restricted diffusion; CA3 and CA2 are more resistant than CA1 but involved in severe injury.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Impaired recollection from partial cues",
+    "side": "bilateral",
+    "mechanism": "Loss of the CA3 autoassociative pattern completion network"
+   },
+   {
+    "deficit": "Impaired social memory",
+    "side": "bilateral",
+    "mechanism": "CA2 dysfunction"
+   },
+   {
+    "deficit": "Temporal lobe seizures",
+    "side": "n/a",
+    "mechanism": "Recurrent excitation in CA3 and mossy fiber sprouting after injury"
+   }
+  ],
+  "examination": [
+   "Cued recall: give the first letter or category of an unrecalled word",
+   "Recognition of recently met people",
+   "Seizure semiology and interictal EEG"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "CA3 completes the pattern: a smell or a word retrieves the whole scene",
+   "CA2 is the resistant sector: it survives sclerosis and anoxia while its neighbors die",
+   "Mossy fiber sprouting after injury rewires the dentate-CA3 circuit into a seizure generator"
+  ]
+ },
+ "pitfalls": [
+  "Subfield labels on clinical reports come from atlases and are approximate; diagnostic decisions rest on whole-hippocampal volume and signal"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    259,
+    260
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    61,
+    62
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 18,
+   "pages": [
+    169,
+    172
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 24,
+   "pages": [
+    263,
+    266
+   ]
+  }
+ ],
+ "tags": [
+  "hippocampus",
+  "pattern completion",
+  "seizure"
+ ],
+ "status": "draft",
+ "subsystem": "limbic",
+ "parent": "hippocampus"
+}

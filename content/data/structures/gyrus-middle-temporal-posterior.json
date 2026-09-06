@@ -1,0 +1,180 @@
+{
+ "kind": "structure",
+ "id": "gyrus-middle-temporal-posterior",
+ "name": "Middle temporal gyrus, posterior division",
+ "synonyms": [
+  "posterior MTG",
+  "area 21/37"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "gyrus-middle-temporal-posterior-l",
+  "gyrus-middle-temporal-posterior-r"
+ ],
+ "summary": "The posterior middle temporal gyrus lies below the posterior superior temporal gyrus and in front of the temporo-occipital junction, at the level of the posterior insula and the atrium of the lateral ventricle. It is a convergence zone where heard, read and seen information meets: in the dominant hemisphere it holds the lexical interface between word forms and meaning and the knowledge of actions and tools, and bilaterally it contains the motion-sensitive cortex at its junction with the occipital lobe. Lesions contribute to fluent aphasia and to verb-naming and action-knowledge deficits, and the underlying white matter carries the optic radiation and the arcuate fasciculus so that infarcts here add a field defect and repetition failure.",
+ "anatomy": {
+  "location": "Posterior half of the middle temporal gyrus between the superior and inferior temporal sulci, from the level of the posterior insula back to the temporo-occipital part, above the inferior temporal gyrus and beneath the supramarginal gyrus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Posterior superior temporal gyrus",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Lateral occipital cortex (motion and form)",
+    "via": "inferior longitudinal and short fibers"
+   },
+   {
+    "from": "Angular gyrus",
+    "via": "middle longitudinal fasciculus"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Inferior frontal gyrus",
+    "via": "arcuate fasciculus"
+   },
+   {
+    "to": "Inferior parietal lobule",
+    "via": "middle longitudinal fasciculus"
+   },
+   {
+    "to": "Anterior temporal cortex",
+    "via": "inferior longitudinal fasciculus"
+   }
+  ],
+  "pathways": [
+   "pathway-visual",
+   "pathway-auditory"
+  ]
+ },
+ "function": "This cortex retrieves the meaning of words heard or read and is especially important for verbs, tools and actions, linking the visual form of an action to its motor program and its name; it is part of both the ventral semantic stream and the dorsal stream through the arcuate and middle longitudinal fasciculi. Its posterior end merges with the visual motion area that tracks moving objects and biological motion, and the right side reads intentions from body movement and gaze. Electrical stimulation produces anomia and comprehension failure in the dominant hemisphere, and the cortex is a common site of seizure onset with complex visual and auditory auras.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-mca",
+   "artery-mca-inferior-division"
+  ],
+  "territories": [
+   "territory-mca-temporal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "gyrus-middle-temporal-posterior-l"
+    },
+    "label": "posterior middle temporal gyrus at the level of the atrium"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "gyrus-middle-temporal-posterior-r"
+    },
+    "label": "lateral temporal cortex behind the posterior insula"
+   }
+  ],
+  "normalAppearance": "The middle lateral temporal gyrus on coronal images through the posterior hippocampus and the atrium of the lateral ventricle, with the optic radiation in the white matter beneath it.",
+  "pathology": [
+   {
+    "pathology": "MCA inferior division infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the posterior temporal cortex with fluent aphasia, impaired verb naming and a contralateral superior quadrantanopia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Temporal glioma involving the arcuate fasciculus",
+    "modality": "MRI",
+    "finding": "FLAIR-bright infiltration of the posterior middle temporal gyrus and its white matter; tractography shows the arcuate and the optic radiation displaced.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Alzheimer disease",
+    "modality": "MRI",
+    "finding": "Posterior lateral temporal and parietal atrophy on the temporal-parietal pattern; hypometabolism on FDG-PET precedes atrophy.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Fluent aphasia with impaired verb and action naming (left)",
+    "side": "n/a",
+    "mechanism": "Loss of the lexical-semantic interface for actions in the dominant posterior middle temporal gyrus"
+   },
+   {
+    "deficit": "Impaired perception of motion and of the meaning of gestures",
+    "side": "contralateral",
+    "mechanism": "Damage to the motion-sensitive temporo-occipital cortex and the right posterior temporal social-perception region"
+   },
+   {
+    "deficit": "Contralateral superior quadrantanopia",
+    "side": "contralateral",
+    "mechanism": "Involvement of the optic radiation in the white matter beneath the gyrus"
+   }
+  ],
+  "examination": [
+   "Naming of actions shown in pictures as well as objects",
+   "Reading comprehension and sentence-level understanding",
+   "Visual fields and perception of moving targets"
+  ],
+  "syndromes": [
+   "syn-aphasia-wernicke",
+   "syn-mca-inferior-division",
+   "syn-aphasia-conduction-global"
+  ],
+  "pearls": [
+   "Verb naming fails with posterior middle temporal lesions while object naming can be relatively preserved",
+   "The motion area sits at the back of this gyrus; a lesion there makes moving traffic look like a series of still frames",
+   "Fluent aphasia plus a quadrantanopia is the inferior MCA division: the optic radiation runs under the temporal cortex"
+  ]
+ },
+ "pitfalls": [
+  "A superior quadrantanopia with aphasia is easily missed at the bedside because the patient cannot report it; test by confrontation with finger counting in each quadrant"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    287,
+    291
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    258,
+    258
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 7,
+   "pages": [
+    53,
+    58
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    51
+   ]
+  }
+ ],
+ "tags": [
+  "semantic",
+  "motion perception"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-temporal",
+ "parent": "lobe-temporal"
+}

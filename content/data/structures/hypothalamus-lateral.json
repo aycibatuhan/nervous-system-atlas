@@ -1,0 +1,139 @@
+{
+ "kind": "structure",
+ "id": "hypothalamus-lateral",
+ "name": "Lateral hypothalamic area",
+ "synonyms": [
+  "LHA",
+  "feeding center",
+  "orexin field"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "hypothalamus-lateral-l",
+  "hypothalamus-lateral-r"
+ ],
+ "summary": "The lateral hypothalamic area is the broad zone lateral to the fornix and the medial nuclei, traversed by the medial forebrain bundle, extending the whole length of the hypothalamus from the preoptic area to the mammillary region. It is the feeding and arousal center: its orexin (hypocretin) neurons sustain wakefulness and drive motivated behavior, its melanin-concentrating hormone neurons promote sleep and feeding, and lesions produce aphagia, adipsia and somnolence. Loss of the orexin neurons causes narcolepsy with cataplexy, and the area is damaged by hypothalamic gliomas, which in infants produce the diencephalic syndrome of emaciation with paradoxical alertness.",
+ "anatomy": {
+  "location": "Lateral hypothalamus between the fornix and the medial hypothalamic nuclei medially and the internal capsule, the subthalamus and the cerebral peduncle laterally, from the lateral preoptic area in front to the lateral mammillary region behind; the medial forebrain bundle runs through it longitudinally.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Orexin neurons of the lateral hypothalamus project to the whole brain and especially to the locus coeruleus, the raphe, the tuberomammillary nucleus and the basal forebrain, stabilizing wakefulness and preventing inappropriate transitions into REM sleep; they are activated by hunger, stress and reward and drive food seeking and the motivation to act. Melanin-concentrating hormone neurons have the opposite effect, promoting sleep and energy conservation. The area integrates the medial forebrain bundle traffic between the septal-preoptic region and the brainstem, carrying reward signals from the ventral tegmental area to the accumbens, and it contains glucose-sensitive neurons that trigger feeding when glucose falls. Destruction abolishes eating and drinking and produces stupor.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-acom",
+   "artery-aca",
+   "artery-pcom",
+   "arteries-thalamoperforating"
+  ],
+  "territories": [
+   "territory-anterior-choroidal-thalamoperforating"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "hypothalamus-lateral-l"
+    },
+    "label": "lateral hypothalamic area lateral to the fornix"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "hypothalamus-lateral-r"
+    },
+    "label": "lateral hypothalamus between the fornix and the internal capsule"
+   }
+  ],
+  "normalAppearance": "The hypothalamic tissue lateral to the descending column of the fornix on coronal images through the tuber cinereum, bounded laterally by the optic tract and the internal capsule.",
+  "pathology": [
+   {
+    "pathology": "Narcolepsy type 1",
+    "modality": "MRI",
+    "finding": "Normal MRI; the diagnosis rests on low CSF hypocretin-1 or a multiple sleep latency test, reflecting selective loss of lateral hypothalamic orexin neurons.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Diencephalic syndrome of infancy",
+    "modality": "MRI",
+    "finding": "Hypothalamic-chiasmatic glioma with profound emaciation, alertness and hyperactivity despite normal intake.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Secondary narcolepsy from hypothalamic lesions",
+    "modality": "MRI",
+    "finding": "Tumor, demyelination, sarcoidosis or stroke of the lateral hypothalamus with hypersomnia and cataplexy.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Aphagia, adipsia and weight loss",
+    "side": "bilateral",
+    "mechanism": "Loss of the lateral hypothalamic feeding drive and glucose sensing"
+   },
+   {
+    "deficit": "Hypersomnia, cataplexy and REM intrusion (narcolepsy)",
+    "side": "bilateral",
+    "mechanism": "Loss of orexin neurons stabilizing the sleep-wake switch"
+   },
+   {
+    "deficit": "Apathy and loss of motivated behavior",
+    "side": "bilateral",
+    "mechanism": "Interruption of the medial forebrain bundle reward pathway"
+   }
+  ],
+  "examination": [
+   "Epworth sleepiness scale and a history of cataplexy, sleep paralysis and hypnagogic hallucinations",
+   "Weight and intake history",
+   "Multiple sleep latency test and CSF hypocretin when narcolepsy is suspected"
+  ],
+  "syndromes": [
+   "syn-hypothalamic-syndromes"
+  ],
+  "pearls": [
+   "Narcolepsy is a lateral hypothalamic disease: ninety thousand orexin neurons lost, and the wake switch flickers",
+   "An emaciated but bright and cheerful infant has a hypothalamic glioma until proved otherwise",
+   "Lateral means lean, ventromedial means obese"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    374,
+    384
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    299,
+    301
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 3,
+   "pages": [
+    29,
+    30
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "hypothalamus",
+ "parent": "hypothalamus"
+}

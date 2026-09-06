@@ -70,13 +70,14 @@ const refIds = (e: Entry): string[] => {
   if (e.kind === 'syndrome') { grab((r['localisation'] as Record<string, unknown>)['structures'], ''); for (const d of e.deficits) if (d.substrate) ids.push(d.substrate); }
   if (e.kind === 'pathway') { grab(e.clinical.syndromes, ''); for (const w of e.waypoints) ids.push(w.structureId); }
   if (e.kind === 'quiz') { ids.push(...e.targets.structureIds, ...e.targets.syndromeIds, ...e.targets.pathwayIds); }
+  if (e.kind === 'topic') { ids.push(...e.related.structureIds, ...e.related.pathwayIds, ...e.related.syndromeIds, ...e.related.topicIds); }
   return ids;
 };
 const isKnown = (id: string) => byId.has(id) || meshIds.has(id) || (meshStructure.size && Array.from(meshStructure.values()).includes(id));
 const structureIdsFromManifest = new Set(Array.from(meshStructure.values()));
 
 // ---- per-entry checks
-const minWords: Record<string, number> = { structure: 250, 'cranial-nerve': 350, pathway: 200, syndrome: 300, glossary: 0, quiz: 0 };
+const minWords: Record<string, number> = { structure: 250, 'cranial-nerve': 350, pathway: 200, syndrome: 300, glossary: 0, quiz: 0, topic: 300 };
 const wc: Record<string, number> = {};
 for (const { file, e } of entries) {
   const total = proseOf(e).reduce((n, s) => n + words(s), 0);
@@ -88,7 +89,7 @@ for (const { file, e } of entries) {
     if (c.pages[0] > c.pages[1] || c.pages[1] > src.lastPage) err(file, `bad page range ${c.pages.join('-')} for ${c.book}`);
   }
   for (const id of refIds(e)) if (!isKnown(id)) (strict ? err : warn)(file, `unresolved reference '${id}'`);
-  if (e.kind === 'structure' || e.kind === 'cranial-nerve') for (const m of e.meshIds) if (meshIds.size && !meshIds.has(m)) err(file, `meshId '${m}' not in manifest`);
+  if (e.kind === 'structure' || e.kind === 'cranial-nerve' || e.kind === 'topic') for (const m of e.meshIds) if (meshIds.size && !meshIds.has(m)) err(file, `meshId '${m}' not in manifest`);
   if (e.kind === 'syndrome') {
     if (!/\b(decussat|cross|uncrossed|ipsilateral|contralateral)/i.test(e.reasoning)) err(file, 'reasoning must state the crossing / side logic');
     if (!e.deficits.some((d) => d.substrate)) warn(file, 'no deficit names its substrate');
@@ -112,7 +113,7 @@ const coverage = existsSync(covPath) ? JSON.parse(readFileSync(covPath, 'utf8'))
 const authored = new Set(entries.map((x) => x.e.id));
 const missingCore = coverage.entries.filter((c) => c.tier === 'core' && !authored.has(c.id));
 const missingExt = coverage.entries.filter((c) => c.tier === 'extended' && !authored.has(c.id));
-const unplanned = entries.filter((x) => x.e.kind !== 'glossary' && x.e.kind !== 'quiz' && !coverage.entries.some((c) => c.id === x.e.id)).map((x) => x.e.id);
+const unplanned = entries.filter((x) => x.e.kind !== 'glossary' && x.e.kind !== 'quiz' && x.e.kind !== 'topic' && !coverage.entries.some((c) => c.id === x.e.id)).map((x) => x.e.id);
 const structuresWithoutMesh = entries.filter((x) => (x.e.kind === 'structure' || x.e.kind === 'cranial-nerve') && (x.e as { meshIds: string[] }).meshIds.length === 0).map((x) => x.e.id);
 const meshesWithoutContent = Array.from(structureIdsFromManifest).filter((sid) => !byId.has(sid));
 
@@ -142,9 +143,10 @@ const htmlFields: Record<string, string[]> = {
   pathway: ['summary', 'origin.note', 'termination', 'somatotopy', 'imaging.normalAppearance'],
   syndrome: ['presentation', 'reasoning'],
   glossary: ['definition'], quiz: ['vignette', 'explanation'],
+  topic: ['summary', 'imaging.normalAppearance'],
 };
 const get = (o: Record<string, unknown>, path: string): unknown => path.split('.').reduce<unknown>((v, k) => (v && typeof v === 'object' ? (v as Record<string, unknown>)[k] : undefined), o);
-const bundle = { generated: new Date().toISOString(), sources, structures: {} as Record<string, unknown>, pathways: {} as Record<string, unknown>, syndromes: {} as Record<string, unknown>, glossary: {} as Record<string, unknown>, quiz: {} as Record<string, unknown>, meshToStructure: {} as Record<string, string>, wordCounts: wc };
+const bundle = { generated: new Date().toISOString(), sources, structures: {} as Record<string, unknown>, pathways: {} as Record<string, unknown>, syndromes: {} as Record<string, unknown>, glossary: {} as Record<string, unknown>, quiz: {} as Record<string, unknown>, topics: {} as Record<string, unknown>, meshToStructure: {} as Record<string, string>, wordCounts: wc };
 const searchDocs: { id: string; kind: string; name: string; aliases: string[]; summary: string }[] = [];
 for (const { e } of entries) {
   const html: Record<string, string> = {};
@@ -152,8 +154,9 @@ for (const { e } of entries) {
   // resolve MniRef.meshId → centroid
   const resolved = JSON.parse(JSON.stringify(e), (k, v) => (k === 'mni' && v && typeof v === 'object' && 'meshId' in v && !('x' in v) && meshCentroid.has(String((v as { meshId: string }).meshId)))
     ? (() => { const c = meshCentroid.get(String((v as { meshId: string }).meshId))!; const o = (v as { offset?: { x: number; y: number; z: number } }).offset ?? { x: 0, y: 0, z: 0 }; return { x: c[0]! + o.x, y: c[1]! + o.y, z: c[2]! + o.z, meshId: (v as { meshId: string }).meshId }; })() : v);
+  if (e.kind === 'topic') html['sections'] = JSON.stringify(e.sections.map((sec) => render(sec.body)));
   const entry = { ...resolved, html };
-  const target = e.kind === 'structure' || e.kind === 'cranial-nerve' ? bundle.structures : e.kind === 'pathway' ? bundle.pathways : e.kind === 'syndrome' ? bundle.syndromes : e.kind === 'glossary' ? bundle.glossary : bundle.quiz;
+  const target = e.kind === 'structure' || e.kind === 'cranial-nerve' ? bundle.structures : e.kind === 'pathway' ? bundle.pathways : e.kind === 'syndrome' ? bundle.syndromes : e.kind === 'glossary' ? bundle.glossary : e.kind === 'topic' ? bundle.topics : bundle.quiz;
   target[e.id] = entry;
   if (e.kind === 'structure' || e.kind === 'cranial-nerve') for (const m of e.meshIds) bundle.meshToStructure[m] = e.id;
   const name = 'name' in e ? e.name : (e as { term?: string }).term ?? e.id;

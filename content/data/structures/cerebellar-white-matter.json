@@ -1,0 +1,195 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-white-matter",
+ "name": "Cerebellar white matter",
+ "synonyms": [
+  "arbor vitae",
+  "cerebellar medullary center"
+ ],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-white-matter-l",
+  "cerebellar-white-matter-r"
+ ],
+ "summary": "The cerebellar white matter is the branching core of the cerebellum, the arbor vitae, formed by the afferent fibers arriving through the three peduncles and fanning out to the cortex, the Purkinje cell axons converging on the deep nuclei, and the efferent fibers leaving the nuclei. It contains the dentate, interposed and fastigial nuclei and it is continuous with the peduncles at the hilus of the hemisphere. It is the substrate of the cerebellar signs in multiple sclerosis (the middle cerebellar peduncle and hemispheric white matter are favored sites), of leukodystrophies and of the cerebellar edema that follows infarction, and its atrophy accompanies cortical loss in the spinocerebellar ataxias; hemorrhage and tumors here compress the fourth ventricle.",
+ "anatomy": {
+  "location": "The central white matter of each hemisphere and of the vermis, between the folial cortex and the fourth ventricle, continuous laterally and anteriorly with the inferior, middle and superior cerebellar peduncles, and enclosing the dentate nucleus laterally and the interposed and fastigial nuclei near the midline.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Pontine nuclei",
+    "via": "middle cerebellar peduncle (mossy fibers)"
+   },
+   {
+    "from": "Inferior olive",
+    "via": "inferior cerebellar peduncle (climbing fibers)"
+   },
+   {
+    "from": "Spinal cord and vestibular nuclei",
+    "via": "inferior and superior cerebellar peduncles"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Red nucleus and thalamus (from the dentate and interposed nuclei)",
+    "via": "superior cerebellar peduncle"
+   },
+   {
+    "to": "Vestibular nuclei and reticular formation (from the fastigial nucleus)",
+    "via": "inferior cerebellar peduncle and juxtarestiform body"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-posterior-spinocerebellar",
+   "pathway-anterior-spinocerebellar"
+  ]
+ },
+ "function": "Mossy fibers from the pontine nuclei, the spinal cord, the vestibular system and the reticular nuclei and climbing fibers from the inferior olive travel through the white matter to the granular and molecular layers of the cortex, while Purkinje axons run inward to inhibit the deep nuclei, whose axons leave through the superior peduncle to the red nucleus and thalamus and through the inferior peduncle to the vestibular nuclei and reticular formation; corticonuclear and nucleocortical loops within the white matter regulate the gain of the circuit. The organization is somatotopic along the peduncles and the medullary laminae of each lobule. Its lesions disconnect cortex from nuclei and produce the same ipsilateral ataxia as cortical lesions, with more dysarthria and tremor when the outflow is involved.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-pica",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-superior-cerebellar",
+   "territory-inferior-cerebellar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "cerebellar-white-matter-l"
+    },
+    "label": "cerebellar white matter around the dentate nucleus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cerebellar-white-matter-r"
+    },
+    "label": "arbor vitae of the cerebellar hemisphere"
+   }
+  ],
+  "normalAppearance": "The branching bright white matter of the arbor vitae on sagittal T1 images, continuous with the middle cerebellar peduncle; the dentate nucleus appears as a crinkled dark ribbon within it on T2 and susceptibility images.",
+  "pathology": [
+   {
+    "pathology": "Multiple sclerosis",
+    "modality": "MRI",
+    "finding": "FLAIR-bright lesions of the middle cerebellar peduncle and hemispheric white matter, some enhancing when active, with ataxia, nystagmus and dysarthria.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Cerebellar infarct with edema",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of cortex and white matter followed by swelling that compresses the fourth ventricle at 2-4 days.",
+    "sequence": "DWI",
+    "timing": "Swelling peaks on the third day"
+   },
+   {
+    "pathology": "Pilocytic astrocytoma",
+    "modality": "MRI",
+    "finding": "Cystic mass with an enhancing mural nodule in the cerebellar hemisphere of a child, displacing the white matter and the fourth ventricle.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Leukodystrophy or metabolic disease with cerebellar white-matter involvement",
+    "modality": "MRI",
+    "finding": "Symmetric T2 hyperintensity of the cerebellar white matter and dentate nuclei in metachromatic leukodystrophy, cerebrotendinous xanthomatosis or maple syrup urine disease.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ipsilateral limb ataxia, dysarthria and tremor",
+    "side": "ipsilateral",
+    "mechanism": "Disconnection of the cortex from the deep nuclei and interruption of the outflow"
+   },
+   {
+    "deficit": "Nystagmus and gait ataxia",
+    "side": "bilateral",
+    "mechanism": "Interruption of vestibulocerebellar fibers"
+   },
+   {
+    "deficit": "Fourth ventricular compression and hydrocephalus",
+    "side": "bilateral",
+    "mechanism": "Mass effect from swelling, hemorrhage or tumor in the white matter"
+   }
+  ],
+  "examination": [
+   "Limb and gait coordination, speech and eye movements",
+   "Serial consciousness and gaze after a cerebellar infarct",
+   "Metabolic and genetic evaluation when the white-matter change is symmetric"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-multiple-sclerosis-pattern",
+   "syn-pica-cerebellar-infarct"
+  ],
+  "pearls": [
+   "Cerebellar white-matter lesions behave like cortical ones but add tremor when they catch the outflow",
+   "Symmetric dentate and white-matter signal change is metabolic until proved otherwise",
+   "The arbor vitae is the map of the peduncles: each branch carries one lobule's fibers"
+  ]
+ },
+ "pitfalls": [
+  "Cerebellar white-matter lesions in multiple sclerosis are often clinically silent; a normal examination does not exclude them"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    244
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    262,
+    264
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 21,
+   "pages": [
+    224,
+    228
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 31,
+   "pages": [
+    309,
+    312
+   ]
+  }
+ ],
+ "tags": [
+  "arbor vitae",
+  "peduncles",
+  "white matter"
+ ],
+ "status": "draft",
+ "subsystem": "white-matter",
+ "parent": "cerebellum"
+}

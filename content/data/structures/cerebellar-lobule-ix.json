@@ -1,0 +1,180 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-lobule-ix",
+ "name": "Lobule IX",
+ "synonyms": [
+  "uvula and tonsils",
+  "vestibulocerebellum (with the nodulus)"
+ ],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-lobule-ix-l",
+  "cerebellar-lobule-ix-r"
+ ],
+ "summary": "Lobule IX is the uvula of the vermis and the cerebellar tonsils of the hemispheres, the most inferior part of the posterior lobe, sitting above the foramen magnum on either side of the medulla. The uvula is vestibulocerebellar cortex with the nodulus, receiving the vestibular nerve and nuclei and controlling vestibulo-ocular and vestibulospinal reflexes and the perception of tilt and self-motion; the tonsils are the parts of the cerebellum that herniate through the foramen magnum in raised intracranial pressure and in Chiari malformation. It is supplied by the posterior inferior cerebellar artery, and its infarction mimics a peripheral vestibular lesion with isolated vertigo.",
+ "anatomy": {
+  "location": "Inferior vermis (uvula) and the tonsils of the hemispheres between the secondary fissure above and the posterolateral fissure below, above the foramen magnum and the cisterna magna, beside the medulla and behind the fourth ventricle's inferior medullary velum.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Vestibular nerve and nuclei",
+    "via": "juxtarestiform body"
+   },
+   {
+    "from": "Inferior olive (visual motion)",
+    "via": "climbing fibers"
+   },
+   {
+    "from": "Pontine nuclei",
+    "via": "middle cerebellar peduncle"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Vestibular nuclei (direct)",
+    "via": "juxtarestiform body"
+   },
+   {
+    "to": "Fastigial nucleus",
+    "via": "Purkinje axons"
+   }
+  ],
+  "pathways": [
+   "pathway-vestibular-vor",
+   "pathway-cerebellar-circuits"
+  ]
+ },
+ "function": "The uvula, with the nodulus, receives primary vestibular afferents and vestibular nuclear input together with visual motion signals from the inferior olive and the pontine nuclei, and its Purkinje cells project to the vestibular and fastigial nuclei to calibrate the vestibulo-ocular reflex, to distinguish tilt from translation and to hold gaze after head movements (velocity storage); it also contributes to the control of head and eye movements during locomotion. The tonsils are hemispheric cortex with sensorimotor and cognitive connections through the dentate nucleus, but their clinical importance is mechanical: their descent compresses the medulla and blocks CSF flow. Uvular and nodular damage produces vertigo, downbeat nystagmus and imbalance without limb ataxia.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-inferior-cerebellar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cerebellar-lobule-ix-l"
+    },
+    "label": "uvula of the vermis above the foramen magnum"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cerebellar-lobule-ix-r"
+    },
+    "label": "cerebellar tonsils beside the medulla"
+   }
+  ],
+  "normalAppearance": "The tonsils are the rounded inferior lobules on either side of the medulla on coronal images, normally above the foramen magnum by a few millimeters; the uvula is the inferior vermis in front of the cisterna magna on sagittal images.",
+  "pathology": [
+   {
+    "pathology": "Chiari I malformation",
+    "modality": "MRI",
+    "finding": "Peg-shaped tonsils more than 5 mm below the foramen magnum with effacement of the cisterna magna and, often, a cervical syrinx.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Tonsillar herniation",
+    "modality": "CT",
+    "finding": "Loss of the cisterna magna and tonsils in the foramen magnum from posterior fossa mass or diffuse swelling, with medullary compression and apnea.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Medial PICA infarct (isolated vertigo)",
+    "modality": "MRI",
+    "finding": "Restricted diffusion of the uvula, nodulus and tonsil presenting as acute vertigo mimicking vestibular neuritis; head-impulse test normal.",
+    "sequence": "DWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Vertigo, downbeat nystagmus and imbalance without limb ataxia",
+    "side": "bilateral",
+    "mechanism": "Loss of uvular-nodular calibration of the vestibular nuclei"
+   },
+   {
+    "deficit": "Impaired vestibulo-ocular reflex adaptation and tilt perception",
+    "side": "bilateral",
+    "mechanism": "Loss of vestibulocerebellar processing"
+   },
+   {
+    "deficit": "Medullary compression, apnea and death with herniation",
+    "side": "bilateral",
+    "mechanism": "Tonsils driven into the foramen magnum"
+   }
+  ],
+  "examination": [
+   "HINTS examination: a normal head impulse with direction-changing or vertical nystagmus is central",
+   "Ability to stand and walk: inferior cerebellar strokes cannot stand",
+   "Cough headache and lower cranial nerve signs for Chiari"
+  ],
+  "syndromes": [
+   "syn-tonsillar-herniation",
+   "syn-chiari-tonsillar-ectopia",
+   "syn-central-vs-peripheral-vertigo",
+   "syn-pica-cerebellar-infarct"
+  ],
+  "pearls": [
+   "Isolated vertigo with a normal head-impulse test is a nodulus-uvula stroke until MRI proves otherwise",
+   "Tonsils belong above the foramen magnum; five millimeters below is Chiari",
+   "Never do a lumbar puncture when the tonsils are already in the foramen"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    229,
+    244
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    220,
+    221
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    73
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 12,
+   "pages": [
+    108,
+    114
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 25,
+   "pages": [
+    271,
+    274
+   ]
+  }
+ ],
+ "tags": [],
+ "status": "draft",
+ "subsystem": "lobules",
+ "parent": "cerebellar-hemisphere"
+}

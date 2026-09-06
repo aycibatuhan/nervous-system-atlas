@@ -1,0 +1,178 @@
+{
+ "kind": "structure",
+ "id": "cortex-supracalcarine",
+ "name": "Supracalcarine cortex",
+ "synonyms": [
+  "upper calcarine lip",
+  "V1/V2 (superior)"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "cortex-supracalcarine-l",
+  "cortex-supracalcarine-r"
+ ],
+ "summary": "The supracalcarine cortex is the strip of medial occipital cortex immediately above the calcarine sulcus, on the lower edge of the cuneus, where the primary visual cortex emerges from the sulcus and merges with the surrounding secondary visual cortex (V2). It represents the contralateral lower visual field close to the horizontal meridian, and its retinotopic map continues that of the calcarine cortex. It is supplied by the calcarine branch of the posterior cerebral artery and shares the vulnerability of the cuneus to PCA infarction, posterior reversible encephalopathy and occipital seizures; its lesions produce a contralateral inferior quadrantic defect that respects the horizontal meridian.",
+ "anatomy": {
+  "location": "Medial occipital cortex along the upper lip of the calcarine sulcus, between the intracalcarine cortex below and the body of the cuneus above, from the occipital pole to the junction with the parieto-occipital sulcus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Lateral geniculate nucleus (lower field)",
+    "via": "optic radiation, upper bank"
+   },
+   {
+    "from": "Intracalcarine cortex (V1)",
+    "via": "short association fibers"
+   },
+   {
+    "from": "Contralateral supracalcarine cortex",
+    "via": "splenium"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Cuneus and superior lateral occipital cortex (dorsal stream)",
+    "via": "short association fibers"
+   },
+   {
+    "to": "Pulvinar",
+    "via": "corticothalamic fibers"
+   },
+   {
+    "to": "Superior colliculus",
+    "via": "corticotectal fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-visual"
+  ]
+ },
+ "function": "The supracalcarine strip contains the upper-bank continuation of V1 and the neighboring V2, which sharpens edges and combines the orientation, color and disparity signals of the striate cortex into border ownership and texture, feeding both dorsal and ventral streams; the horizontal meridian of the visual field maps to the border between V1 and V2 here, which is why lesions produce field defects with a sharp horizontal edge. The cortex receives callosal fibers from the opposite side that stitch the two hemifields together along the vertical meridian and projects to the parietal and lateral occipital cortex for localization of objects in the lower field.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": [
+   "territory-pca-occipital"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "cortex-supracalcarine-l"
+    },
+    "label": "supracalcarine cortex along the upper lip of the calcarine sulcus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "cortex-supracalcarine-r"
+    },
+    "label": "medial occipital cortex just above the calcarine fissure"
+   }
+  ],
+  "normalAppearance": "The medial cortex immediately above the calcarine sulcus on sagittal images, continuous with the cuneus; it is thin and follows the curve of the sulcus to the pole.",
+  "pathology": [
+   {
+    "pathology": "PCA infarct with inferior quadrantanopia",
+    "modality": "MRI",
+    "finding": "Restricted diffusion along the upper calcarine lip and cuneus with a contralateral lower quadrant defect that stops at the horizontal meridian.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Occipital arteriovenous malformation",
+    "modality": "MRI",
+    "finding": "Flow voids on the medial occipital surface with hemosiderin staining, presenting with visual seizures or hemorrhage.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Posterior reversible encephalopathy syndrome",
+    "modality": "MRI",
+    "finding": "Vasogenic edema of the medial occipital cortex with transient visual loss, headache and seizures.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Contralateral inferior quadrantanopia respecting the horizontal meridian",
+    "side": "contralateral",
+    "mechanism": "Loss of the upper calcarine bank and V2 representing the lower field"
+   },
+   {
+    "deficit": "Elementary visual hallucinations in the lower contralateral field",
+    "side": "contralateral",
+    "mechanism": "Ictal activation of the supracalcarine visual cortex"
+   },
+   {
+    "deficit": "Impaired localization of objects in the lower field",
+    "side": "contralateral",
+    "mechanism": "Loss of the projection from this cortex to the dorsal stream"
+   }
+  ],
+  "examination": [
+   "Quadrantic confrontation fields with attention to a horizontal edge of the defect",
+   "Perimetry to define the meridian and congruity",
+   "Seizure history for brief lower-field flashes"
+  ],
+  "syndromes": [
+   "syn-homonymous-hemianopia",
+   "syn-pca-infarct"
+  ],
+  "pearls": [
+   "A field defect with a straight horizontal edge is calcarine: the horizontal meridian is the V1-V2 border on the lips of the sulcus",
+   "Occipital AVMs present with seizures and headache and can mimic migraine with aura for years",
+   "The supracalcarine and cuneal cortex are one functional unit for the lower field"
+  ]
+ },
+ "pitfalls": [
+  "Small calcarine lesions produce field defects that patients do not notice; a routine field examination after any PCA event is needed"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 8,
+   "pages": [
+    288,
+    289
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    259,
+    260
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 11,
+   "pages": [
+    333,
+    336
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 6,
+   "pages": [
+    47,
+    52
+   ]
+  }
+ ],
+ "tags": [
+  "V1",
+  "V2",
+  "lower quadrant"
+ ],
+ "status": "draft",
+ "subsystem": "lobe-occipital",
+ "parent": "lobe-occipital"
+}
