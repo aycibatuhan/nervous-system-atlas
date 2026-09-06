@@ -128,9 +128,17 @@ def run(groups: set[str] | None = None, strict: bool = True) -> int:
                 "files": {dest_name(e): e["url"] for e in src["files"]},
             }, indent=2))
     save_lock(lock)
-    # licence texts for the manifest
+    # licence texts for the manifest (public/data/licenses/<id>.txt, shown in the app's About panel):
+    # the name/url/attribution header, followed by the verbatim legal code when config/license_texts/ has it.
+    # A licence whose verbatim terms another step wrote from the download itself (Brainstem Navigator) is left alone.
     for lid, lic in cfg["licenses"].items():
-        (LICENSES / f"{lid}.txt").write_text(f"{lic['name']}\n{lic['url']}\n{lic.get('attribution', '')}\n")
+        head = f"{lic['name']}\n{lic['url']}\n{lic.get('attribution', '')}\n"
+        body = CONFIG / "license_texts" / f"{lid}.txt"
+        out = LICENSES / f"{lid}.txt"
+        if body.exists():
+            out.write_text(head + "\n" + body.read_text())
+        elif not (out.exists() and len(out.read_text()) > len(head) + 32):
+            out.write_text(head)
     return failures
 
 

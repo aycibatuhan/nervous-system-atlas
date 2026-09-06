@@ -83,3 +83,22 @@ code { background: var(--panel2); padding: 0 4px; border-radius: 3px; }
 .cite-id { font-variant-numeric: tabular-nums; }
 ul.cites { padding-left: 18px; }
 ul.cites li { margin: 3px 0; line-height: 1.35; }
+/* about and credits (#/about) + the per-entry source line */
+.source-line { margin: 4px 0 8px; line-height: 1.5; }
+.source-line a.src-credit { color: var(--accent2); text-decoration: none; }
+.source-line a.src-credit:hover { text-decoration: underline; }
+.source-line .src-lic { color: var(--muted); }
+.tag.derived-tag { cursor: help; border-color: var(--accent); color: var(--accent); }
+.about-sources { table-layout: fixed; } .about-sources td { vertical-align: top; word-break: break-word; }
+.about-sources th:nth-child(2), .about-sources td:nth-child(2) { width: 34%; }
+.about-sources th:nth-child(3), .about-sources td:nth-child(3) { width: 3.5em; }
+.about-sources .num { text-align: right; font-variant-numeric: tabular-nums; }
+.about-sources .cite-text { line-height: 1.35; margin: 2px 0; }
+.about-sources .about-lic a { color: var(--accent2); text-decoration: none; } .about-sources .about-lic a:hover { text-decoration: underline; }
+.about-sources .src-link { color: var(--accent2); text-decoration: none; }
+.tag.badge-nc { display: inline-block; margin-top: 3px; border-color: #e15759; color: #e6a0a1; white-space: normal; }
+.tag.edition-private { border-color: var(--accent); color: var(--accent); } .tag.edition-public { border-color: #59a14f; color: #8fd08a; }
+.about-licences dd { margin-bottom: 2px; }
+.licence-details { border: 1px solid var(--border); border-radius: 4px; padding: 6px 8px; margin-bottom: 6px; }
+.licence-details summary { cursor: pointer; } .licence-details summary .tag { margin-left: 6px; }
+.licence-text { max-height: 320px; overflow: auto; white-space: pre-wrap; font-size: 11px; line-height: 1.35; background: var(--panel2); border-radius: 4px; padding: 8px; margin: 6px 0 0; }

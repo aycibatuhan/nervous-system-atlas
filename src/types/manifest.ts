@@ -60,22 +60,75 @@ export interface ExtraGrid {
   reformat?: Record<string, unknown>;
 }
 
+/** One licence in manifest.licenses (from the `licenses` table of pipeline/config/sources.yaml). */
+export interface ManifestLicense {
+  name: string;
+  url: string;
+  attribution: string;
+  nc: boolean;
+  /** the licence forbids passing derived files on, so they never ship in the public edition */
+  noRedistribution?: boolean;
+  /** path of the verbatim licence text, relative to public/data/ */
+  text: string;
+}
+
+/** One dataset in manifest.sources (from the `sources` list of pipeline/config/sources.yaml). */
+export interface ManifestSource {
+  /** human-readable dataset name; older manifests only carry the id */
+  name?: string;
+  license: string;
+  citation: string;
+  /** first download URL, i.e. where the dataset was fetched from */
+  url?: string;
+  urls?: string[];
+  /** the provider needs a click-through, so the pipeline cannot download it */
+  manual?: boolean;
+  files: Record<string, string | null>;
+}
+
 export interface Manifest {
   schema: 1;
   generated: string;
   space: 'MNI152NLin2009cAsym';
+  /** "private" while non-redistributable data is in the build, "public" for the shareable edition; absent = private */
+  edition?: 'private' | 'public';
   grid: { shape: [number, number, number]; spacing: [number, number, number]; origin_ras: [number, number, number]; affine_ras: number[][] };
   volumes: Record<string, VolumeFile>;
   /** extra volume grids; `cord` is the PAM50 curved-reformat cord MRI, absent until atlas-pam50 has run */
   grids?: { cord?: ExtraGrid };
   transforms: Record<string, unknown>;
   systems: { id: SystemId; name: string; colour: string; defaultVisible: boolean }[];
-  licenses: Record<string, { name: string; url: string; attribution: string; nc: boolean; text: string }>;
-  sources: Record<string, { license: string; citation: string; files: Record<string, string | null> }>;
+  licenses: Record<string, ManifestLicense>;
+  sources: Record<string, ManifestSource>;
   meshes: ManifestMesh[];
 }
 
 export interface LabelEntry { meshId: string; structureId: string; name: string; colour: string; system: SystemId; atlas?: string }
+
+/** One PAM50 spinal level in public/data/volumes/labels_spine.json (written by atlas-pam50). */
+export interface SpineLevelEntry {
+  name: string;                 // "C5"
+  region: 'cervical' | 'thoracic' | 'lumbar' | 'sacral';
+  regionName: string;           // "Cervical cord (C1-C8)"
+  meshId: string;               // the derived.py cord segment block that contains this level
+  structureId: string;
+  system: SystemId;
+  colour: string;               // per-region rostral -> caudal ramp
+  zMm?: [number, number];       // world z range of the level on our centreline
+  arcMm?: [number, number];     // arc length range along the centreline
+}
+
+export interface SpineRegionEntry { name: string; meshId: string; structureId: string; system: SystemId; levels: string[]; colour: string }
+
+/** Contract with pipeline/atlas_pipeline/pam50.py; referenced from manifest.volumes.labels_spine.lut. */
+export interface SpineLabelsJson {
+  space: string;
+  volume: 'labels_spine';
+  source: string;
+  note: string;
+  regions: Record<string, SpineRegionEntry>;
+  lut: Record<string, SpineLevelEntry>;
+}
 
 export interface LabelsJson {
   volumes: Record<string, VolumeFile>;

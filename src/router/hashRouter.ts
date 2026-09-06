@@ -9,6 +9,7 @@ export type Route =
   | { kind: 'quiz'; index?: number }
   | { kind: 'glossary'; id?: string }
   | { kind: 'topic'; id?: string }
+  | { kind: 'about' }
   | { kind: 'slice' };
 
 export interface RouteParams { ax?: number; cor?: number; sag?: number; c?: 't1w' | 't2w'; side?: 'l' | 'r' }
@@ -29,6 +30,7 @@ export function parseHash(hash: string): { route: Route; params: RouteParams } {
   else if (seg[0] === 'quiz') route = { kind: 'quiz', index: seg[1] ? Number(seg[1]) - 1 : undefined };
   else if (seg[0] === 'glossary') route = { kind: 'glossary', id: seg[1] };
   else if (seg[0] === 'topic') route = { kind: 'topic', id: seg[1] };
+  else if (seg[0] === 'about') route = { kind: 'about' };
   else if (seg[0] === 'slice') route = { kind: 'slice' };
   return { route, params };
 }
@@ -41,6 +43,7 @@ export function serialize(route: Route, params: RouteParams): string {
   else if (route.kind === 'quiz') path = route.index !== undefined ? `quiz/${route.index + 1}` : 'quiz';
   else if (route.kind === 'glossary') path = route.id ? `glossary/${route.id}` : 'glossary';
   else if (route.kind === 'topic') path = route.id ? `topic/${route.id}` : 'topic';
+  else if (route.kind === 'about') path = 'about';
   else if (route.kind === 'slice') path = 'slice';
   const q = new URLSearchParams();
   if (route.kind === 'syndrome' && route.step !== undefined) q.set('step', String(route.step));
@@ -59,12 +62,12 @@ export function bindRouter(store: Store<AppState>, handlers: { onRoute(route: Ro
   const apply = () => { applying = true; try { const { route, params } = parseHash(location.hash); handlers.onRoute(route, params); } finally { applying = false; } };
   window.addEventListener('hashchange', apply);
   let timer = 0;
-  const unsub = store.subscribe((s) => [s.selectedId, s.syndrome?.id ?? null, s.syndrome?.step ?? -1, s.slices.axial, s.slices.coronal, s.slices.sagittal, s.contrast, s.syndrome ? s.lesionSide : null, s.panel] as const, (v) => {
+  const unsub = store.subscribe((s) => [s.selectedId ?? s.selectedStructureId, s.syndrome?.id ?? null, s.syndrome?.step ?? -1, s.slices.axial, s.slices.coronal, s.slices.sagittal, s.contrast, s.syndrome ? s.lesionSide : null, s.panel] as const, (v) => {
     if (applying) return;
     clearTimeout(timer);
     timer = window.setTimeout(() => {
       const [sel, syn, step, ax, cor, sag, c, side, panel] = v;
-      const route: Route = syn ? { kind: 'syndrome', id: syn, step: step >= 0 ? step : undefined } : panel?.kind === 'quiz' ? { kind: 'quiz', index: panel.index } : panel?.kind === 'glossary' ? { kind: 'glossary', id: panel.id ?? undefined } : panel?.kind === 'topic' ? { kind: 'topic', id: panel.id ?? undefined } : sel ? { kind: 'structure', id: sel } : { kind: 'slice' };
+      const route: Route = syn ? { kind: 'syndrome', id: syn, step: step >= 0 ? step : undefined } : panel?.kind === 'quiz' ? { kind: 'quiz', index: panel.index } : panel?.kind === 'glossary' ? { kind: 'glossary', id: panel.id ?? undefined } : panel?.kind === 'topic' ? { kind: 'topic', id: panel.id ?? undefined } : panel?.kind === 'about' ? { kind: 'about' } : sel ? { kind: 'structure', id: sel } : { kind: 'slice' };
       const hash = serialize(route, { ax, cor, sag, c: c === 't2w' ? 't2w' : undefined, side: syn && side ? side : undefined });
       if (location.hash !== hash) history.replaceState(null, '', hash);
     }, 150);

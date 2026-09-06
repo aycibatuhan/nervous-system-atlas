@@ -4,6 +4,7 @@ import { citeNode } from './cite.ts';
 import type { Citation } from '../types/content.ts';
 import { selectStructure, setStructureVisible } from '../state/actions.ts';
 import { applyVisualState } from '../scene/materials.ts';
+import { sourceLine } from './sourceLine.ts';
 
 type Rec = Record<string, unknown>;
 
@@ -50,6 +51,7 @@ export class PathwayPanel {
     this.container.append(h('div', {},
       h('div', { class: 'content-head' }, h('span', { class: 'swatch big', style: 'background:#EDE3D2' }), h('div', {}, h('h2', {}, String(p['name'])), h('div', { class: 'crumbs' }, `pathway · ${p['type']} · ${p['modality']}`))),
       this.html(html['summary']),
+      sourceLine(this.app, meshIds),
       h('h3', {}, 'Neuron chain'), h('ol', {}, ...(p['neuronChain'] as Rec[]).map((n) => h('li', {}, h('b', {}, String(n['cellBody'])), ` → ${n['synapse']}`))),
       h('h3', {}, 'Decussation'), dec ? h('p', {}, h('b', {}, String(dec['level'])), `: ${dec['note']}`) : h('p', { class: 'muted' }, 'Uncrossed.'),
       h('h3', {}, 'Course (click a station to select it)'), stepList,

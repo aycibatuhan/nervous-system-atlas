@@ -4,6 +4,7 @@ import { selectStructure } from '../state/actions.ts';
 import { citeNode } from './cite.ts';
 import type { Citation } from '../types/content.ts';
 import type { ContentTab } from '../types/state.ts';
+import { sourceLine } from './sourceLine.ts';
 
 type Rec = Record<string, unknown>;
 const TABS: { id: ContentTab; label: string }[] = [
@@ -19,6 +20,7 @@ export class ContentPanel {
     container.append(this.body);
     this.render();
     app.store.subscribe((s) => s.selectedId, () => this.render());
+    app.store.subscribe((s) => s.selectedStructureId, () => this.render());
     app.store.subscribe((s) => s.contentTab, () => this.render());
     app.store.subscribe((s) => s.loaded.content, () => this.render());
     app.store.subscribe((s) => s.hoverId, (id) => { const el = this.body.querySelector('.hover-name'); if (el) el.textContent = id ? (app.registry.byId.get(id)?.name ?? '') : ''; });
@@ -40,22 +42,30 @@ export class ContentPanel {
     clear(this.body);
     const s = this.app.store.get();
     const mesh = s.selectedId ? this.app.registry.byId.get(s.selectedId) : undefined;
-    const sid = mesh ? (this.app.content?.meshToStructure[mesh.id] ?? mesh.structureId) : null;
+    const sid = mesh ? (this.app.content?.meshToStructure[mesh.id] ?? mesh.structureId) : s.selectedStructureId;
     const entry = sid ? (this.app.content?.structures[sid] as Rec | undefined) : undefined;
-    if (!mesh) {
+    if (!mesh && !entry) {
       this.body.append(h('div', { class: 'empty' }, h('h2', {}, 'Select a structure'),
         h('p', {}, 'Click a mesh in the 3D view, click the MRI slice, or pick a structure from the tree on the left.'),
         h('p', { class: 'muted' }, 'Hover: ', h('span', { class: 'hover-name' }))));
       return;
     }
-    const head = h('div', { class: 'content-head' }, h('span', { class: 'swatch big', style: `background:${mesh.colour}` }),
-      h('div', {}, h('h2', {}, (entry?.['name'] as string) ?? mesh.name), h('div', { class: 'crumbs' }, `${mesh.system}${mesh.subsystem ? ' › ' + mesh.subsystem : ''} · ${mesh.side}` + (entry?.['latin'] ? ` · ${entry['latin']}` : ''))));
+    const crumbs = mesh ? `${mesh.system}${mesh.subsystem ? ' › ' + mesh.subsystem : ''} · ${mesh.side}` : String(entry!['system'] ?? '');
+    const head = h('div', { class: 'content-head' }, h('span', { class: 'swatch big', style: `background:${mesh?.colour ?? '#6b7280'}` }),
+      h('div', {}, h('h2', {}, (entry?.['name'] as string) ?? mesh!.name), h('div', { class: 'crumbs' }, crumbs + (entry?.['latin'] ? ` · ${entry['latin']}` : ''))));
     this.body.append(head);
+    // this edition has the text but not the shape: the atlas the mesh came from may not be redistributed
+    if (!mesh) this.body.append(h('p', { class: 'muted no-mesh', 'data-testid': 'no-mesh' },
+      'No 3D mesh in this edition — the atlas this structure was segmented from may not be redistributed. The text, imaging notes and clinical links below are unchanged.'));
+    // where the geometry came from: every mesh of this entry, with its dataset and licence, linked to #/about
+    const meshIds = [...(mesh ? [mesh.id] : []), ...(((entry?.['meshIds'] as string[] | undefined) ?? []).filter((m) => m !== mesh?.id))];
+    const src = meshIds.length ? sourceLine(this.app, meshIds) : null;
+    if (src) this.body.append(src);
     if (!entry) {
-      const lic = this.app.manifest.licenses[mesh.license];
+      const lic = this.app.manifest.licenses[mesh!.license];
       this.body.append(h('p', { class: 'muted' }, 'No authored content yet for ', h('code', {}, sid ?? ''), '.'),
-        h('dl', { class: 'facts' }, h('dt', {}, 'Centroid (MNI mm)'), h('dd', {}, mesh.centroid.map((v) => v.toFixed(0)).join(', ')),
-          h('dt', {}, 'Source'), h('dd', {}, `${mesh.source} · ${mesh.alignment}`), h('dt', {}, 'Licence'), h('dd', {}, lic ? h('a', { href: lic.url, target: '_blank' }, lic.name) : mesh.license)),
+        h('dl', { class: 'facts' }, h('dt', {}, 'Centroid (MNI mm)'), h('dd', {}, mesh!.centroid.map((v) => v.toFixed(0)).join(', ')),
+          h('dt', {}, 'Source'), h('dd', {}, `${mesh!.source} · ${mesh!.alignment}`), h('dt', {}, 'Licence'), h('dd', {}, lic ? h('a', { href: lic.url, target: '_blank' }, lic.name) : mesh!.license)),
         h('p', { class: 'muted' }, 'Hover: ', h('span', { class: 'hover-name' })));
       return;
     }
@@ -72,7 +82,7 @@ export class ContentPanel {
           h('h4', {}, 'Nuclei'), this.list(cn['nuclei'] as unknown[], (n) => h('span', {}, this.structLink(String(n['structureId'])), ` — ${n['component']} (${n['level']})`)),
           h('h4', {}, 'Course'), h('dl', { class: 'facts' }, ...Object.entries(cn['exit'] as Rec).flatMap(([k, v]) => [h('dt', {}, k.replace(/([A-Z])/g, ' $1')), h('dd', {}, String(v))])));
         if (entry['level']) sec.append(h('p', { class: 'muted' }, `Level: ${(entry['level'] as Rec)['region']}${(entry['level'] as Rec)['sub'] ? ' · ' + (entry['level'] as Rec)['sub'] : ''}`));
-        sec.append(h('p', { class: 'muted small' }, `Centroid MNI ${mesh.centroid.map((v) => v.toFixed(0)).join(', ')} mm · ${mesh.source}`));
+        if (mesh) sec.append(h('p', { class: 'muted small' }, `Centroid MNI ${mesh.centroid.map((v) => v.toFixed(0)).join(', ')} mm · ${mesh.source}`));
         break;
       case 'anatomy':
         sec.append(h('h3', {}, 'Location'), this.html(html['anatomy.location']));
@@ -97,13 +107,22 @@ export class ContentPanel {
         if (blood['venous']) sec.append(h('h3', {}, 'Venous drainage'), h('p', {}, String(blood['venous'])));
         if (blood['note']) sec.append(this.html(html['bloodSupply.note'] ?? blood['note']));
         break;
-      case 'imaging':
-        sec.append(h('h3', {}, 'Where to look'), this.list(img['bestView'] as unknown[], (v) => { const m = v['mni'] as Rec; return h('span', {}, h('a', { href: '#', onclick: (e: Event) => { e.preventDefault(); this.app.store.set({ slices: { ...this.app.store.get().slices, [v['plane'] as string]: Math.round(Number(m[v['plane'] === 'axial' ? 'z' : v['plane'] === 'coronal' ? 'y' : 'x'])), visible: { ...this.app.store.get().slices.visible, [v['plane'] as string]: true } } }); } }, `${v['plane']} at ${Math.round(Number(m[v['plane'] === 'axial' ? 'z' : v['plane'] === 'coronal' ? 'y' : 'x']))} mm`), ` — ${v['label']}`); }),
+      case 'imaging': {
+        // an MniRef that pointed at a mesh dropped from this edition can arrive without a coordinate: show the
+        // note, drop the slice link, never render "axial at NaN mm"
+        const axisOf = (plane: unknown) => (plane === 'axial' ? 'z' : plane === 'coronal' ? 'y' : 'x');
+        const mmOf = (v: Rec): number => Number((v['mni'] as Rec | undefined)?.[axisOf(v['plane'])]);
+        sec.append(h('h3', {}, 'Where to look'), this.list(img['bestView'] as unknown[], (v) => {
+          const mm = mmOf(v);
+          if (!Number.isFinite(mm)) return h('span', { class: 'muted' }, `${v['plane']} — ${v['label']}`);
+          return h('span', {}, h('a', { href: '#', onclick: (e: Event) => { e.preventDefault(); this.app.store.set({ slices: { ...this.app.store.get().slices, [v['plane'] as string]: Math.round(mm), visible: { ...this.app.store.get().slices.visible, [v['plane'] as string]: true } } }); } }, `${v['plane']} at ${Math.round(mm)} mm`), ` — ${v['label']}`);
+        }),
           h('h3', {}, 'Normal appearance'), this.html(html['imaging.normalAppearance']));
         if (img['sequenceOfChoice']) sec.append(h('h3', {}, 'Sequence of choice'), this.html(html['imaging.sequenceOfChoice'] ?? img['sequenceOfChoice']));
         sec.append(h('h3', {}, 'Pathology'), ...(img['pathology'] as Rec[]).map((p) => h('div', { class: 'path' }, h('b', {}, `${p['pathology']} — ${p['modality']}${p['sequence'] && p['sequence'] !== 'n/a' ? ' ' + p['sequence'] : ''}`), h('p', {}, String(p['finding'])),
           p['timing'] ? h('p', { class: 'muted' }, 'Timing: ' + p['timing']) : null, p['pitfalls'] ? h('p', { class: 'muted' }, 'Pitfall: ' + p['pitfalls']) : null)));
         break;
+      }
       case 'clinical':
         sec.append(h('h3', {}, 'Lesion effects'), h('table', { class: 'tbl' }, h('tr', {}, h('th', {}, 'Deficit'), h('th', {}, 'Side'), h('th', {}, 'Mechanism')),
           ...(clin['lesionEffects'] as Rec[]).map((x) => h('tr', {}, h('td', {}, String(x['deficit'])), h('td', {}, String(x['side'])), h('td', {}, String(x['mechanism']))))),

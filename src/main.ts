@@ -14,12 +14,14 @@ import { SearchBox } from './ui/SearchBox.ts';
 import { QuizPanel } from './ui/QuizPanel.ts';
 import { GlossaryPanel } from './ui/GlossaryPanel.ts';
 import { TopicPanel } from './ui/TopicPanel.ts';
+import { AboutPanel } from './ui/AboutPanel.ts';
 import { enterSyndrome, exitSyndrome } from './state/syndrome.ts';
 import { h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
 import { loadRawVolume } from './volume/VolumeSource.ts';
 import { makeIntensityTexture, makeLabelTexture } from './volume/textures.ts';
 import { gridBoxMm, mmToVoxel } from './volume/coords.ts';
+import { indexSpineLut, loadSpineLut, spineLevelAt, spineLevelLabel, spineMask } from './volume/spineLabels.ts';
 import type { SystemId } from './types/manifest.ts';
 import type { Axis } from './types/state.ts';
 import { PRESETS } from './scene/cameraPresets.ts';
@@ -39,7 +41,7 @@ async function boot(): Promise<void> {
   const app = createApp(canvas, manifest);
   (window as unknown as { atlas: App }).atlas = app;
   app.picker = new Picker(app.sm, app.registry, {
-    onHover: (hit) => { setHover(app, hit.id); canvas.style.cursor = hit.id || hit.onSlice ? 'pointer' : ''; hud(hit.point); },
+    onHover: (hit) => { setHover(app, hit.id); canvas.style.cursor = hit.id || hit.onSlice ? 'pointer' : ''; hud(hit.onSlice ? hit.point : null, hit.point); },
     onSelect: (hit, ev) => {
       if (hit.onSlice && hit.point) { const id = structureAt(app, hit.point); if (id) { selectStructure(app, id, { moveSlices: false }); return; } }
       if (hit.id) selectStructure(app, hit.id, { moveSlices: !ev.shiftKey });
@@ -67,8 +69,9 @@ async function boot(): Promise<void> {
   const quizHost = h('div', { class: 'content', hidden: true }); right.append(quizHost); const quizPanel = new QuizPanel(app, quizHost);
   const glossaryHost = h('div', { class: 'content', hidden: true }); right.append(glossaryHost); const glossaryPanel = new GlossaryPanel(app, glossaryHost);
   const topicHost = h('div', { class: 'content', hidden: true }); right.append(topicHost); const topicPanel = new TopicPanel(app, topicHost);
+  const aboutHost = h('div', { class: 'content', hidden: true }); right.append(aboutHost); const aboutPanel = new AboutPanel(app, aboutHost);
   const mainPanel = right.firstElementChild as HTMLElement;
-  const showPanel = (which: 'main' | 'pathway' | 'syndrome' | 'quiz' | 'glossary' | 'topic') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; quizHost.hidden = which !== 'quiz'; glossaryHost.hidden = which !== 'glossary'; topicHost.hidden = which !== 'topic'; if (which !== 'quiz') quizPanel.exit(); if (which !== 'topic') topicPanel.exit(); if (which !== 'quiz' && which !== 'glossary' && which !== 'topic' && app.store.get().panel) app.store.set({ panel: null }); };
+  const showPanel = (which: 'main' | 'pathway' | 'syndrome' | 'quiz' | 'glossary' | 'topic' | 'about') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; quizHost.hidden = which !== 'quiz'; glossaryHost.hidden = which !== 'glossary'; topicHost.hidden = which !== 'topic'; aboutHost.hidden = which !== 'about'; if (which !== 'quiz') quizPanel.exit(); if (which !== 'topic') topicPanel.exit(); if (which !== 'quiz' && which !== 'glossary' && which !== 'topic' && which !== 'about' && app.store.get().panel) app.store.set({ panel: null }); };
   const showPathway = (id: string | null) => { if (id) { pathwayPanel.show(id); showPanel('pathway'); } else { pathwayPanel.exit(); if (!pathwayHost.hidden) showPanel('main'); } };
   void contentPanel;
   const help = h('div', { class: 'help', hidden: true }, h('b', {}, 'Shortcuts'), h('br'),
@@ -90,7 +93,12 @@ async function boot(): Promise<void> {
   });
   const hudEl = h('div', { class: 'hud' }); document.getElementById('viewport')!.append(hudEl);
   const progress = h('div', { class: 'progress' }); document.getElementById('viewport')!.append(progress);
-  function hud(p: THREE.Vector3 | null): void { hudEl.textContent = p ? `MNI ${p.x.toFixed(0)}, ${p.y.toFixed(0)}, ${p.z.toFixed(0)} mm` : ''; }
+  /** MNI readout; over a cord slice it also names the PAM50 spinal level under the cursor ("C5 · cervical segment"). */
+  function hud(onSlice: THREE.Vector3 | null, p: THREE.Vector3 | null): void {
+    const lvl = onSlice ? spineLevelAt(app.spine, app.cordGrid, onSlice) : null;
+    if (app.store.get().cordLevel !== (lvl?.id ?? null)) app.store.set({ cordLevel: lvl?.id ?? null });
+    hudEl.textContent = p ? `MNI ${p.x.toFixed(0)}, ${p.y.toFixed(0)}, ${p.z.toFixed(0)} mm` + (lvl ? ` · ${spineLevelLabel(lvl.entry)}` : '') : '';
+  }
 
   // ---- state → scene wiring
   app.store.subscribe((s) => s.visibleSystems, () => syncVisibility(app), sameSet);
@@ -114,7 +122,24 @@ async function boot(): Promise<void> {
   // ---- spinal cord MRI (PAM50 curved reformat, its own grid below the MNI box), loaded on demand
   const cordTex: Record<string, THREE.Data3DTexture> = {};
   let cordInflight: Promise<void> | null = null;
+  let spineInflight: Promise<void> | null = null;
   const mniFloorZ = gridBoxMm(app.grid).min.z;
+  /** The PAM50 spinal-level volume + LUT, fetched once, next to the cord MRI. */
+  async function ensureSpineLabels(): Promise<void> {
+    if (app.spine || spineInflight || !app.cordGrid) return spineInflight ?? undefined;
+    const meta = app.manifest.volumes['labels_spine'];
+    if (!meta) return;
+    const job = (async () => {
+      const [vol, json] = await Promise.all([loadRawVolume(meta), loadSpineLut(meta.lut)]);
+      app.spine = { vol, json, byId: indexSpineLut(json) };
+      app.uniforms.uSpine.value = makeLabelTexture(vol);
+      app.uniforms.uHasSpine.value = 1;
+      updateLuts(app);
+      app.sm.requestRender();
+    })();
+    spineInflight = job;
+    try { await job; } catch (e) { console.error('spine labels', e); } finally { if (spineInflight === job) spineInflight = null; }
+  }
   async function ensureCord(): Promise<void> {
     if (!app.cordGrid) return;
     if (!app.store.get().cordMri) { app.uniforms.uHasCord.value = 0; app.sm.requestRender(); return; }
@@ -133,9 +158,11 @@ async function boot(): Promise<void> {
     if (!app.store.get().cordMri) return;
     app.uniforms.uCord.value = cordTex[key]!;
     app.uniforms.uHasCord.value = 1;
+    void ensureSpineLabels();
     if (!app.store.get().loaded.cord) app.store.set({ loaded: { ...app.store.get().loaded, cord: true } });
     app.sm.requestRender();
   }
+  app.store.subscribe((s) => s.cordLevel, () => { updateSpineLut(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.cordMri, (on) => {
     for (const ax of ['axial', 'coronal', 'sagittal'] as Axis[]) app.slices[ax].setExtended(on && !!app.cordGrid);
     void ensureCord();
@@ -169,6 +196,7 @@ async function boot(): Promise<void> {
       if (route.kind === 'quiz') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('quiz'); app.store.set({ panel: { kind: 'quiz', index: route.index ?? 0 } }); quizPanel.show(route.index ?? 0); return; }
       if (route.kind === 'glossary') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('glossary'); app.store.set({ panel: { kind: 'glossary', id: route.id ?? null } }); glossaryPanel.show(route.id); return; }
       if (route.kind === 'topic') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('topic'); app.store.set({ panel: { kind: 'topic', id: route.id ?? null } }); topicPanel.show(route.id); return; }
+      if (route.kind === 'about') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('about'); app.store.set({ panel: { kind: 'about' } }); aboutPanel.show(); return; }
       if (route.kind === 'syndrome') { showPathway(null); enterSyndrome(app, route.id, route.step ?? 0, params.side); if (params.side) app.store.set({ lesionSide: params.side }); syndromePanel.show(route.id); showPanel('syndrome'); return; }
       if (app.store.get().syndrome) { exitSyndrome(app); showPanel('main'); }
       if (route.kind === 'pathway') { showPathway(route.id); return; }
@@ -176,7 +204,10 @@ async function boot(): Promise<void> {
       if (route.kind === 'structure') {
         // route ids may be structure ids or mesh ids
         const meshId = app.registry.byId.has(route.id) ? route.id : (app.manifest.meshes.find((m) => m.structureId === route.id)?.id ?? null);
-        if (meshId && app.store.get().selectedId !== meshId) selectStructure(app, meshId, { moveSlices: params.ax === undefined, fit: true });
+        if (meshId) { if (app.store.get().selectedId !== meshId) selectStructure(app, meshId, { moveSlices: params.ax === undefined, fit: true }); }
+        // no mesh: in the public edition the source atlas of this structure may not be redistributed, so the
+        // content is there and the geometry is not. Open the panel anyway rather than silently doing nothing.
+        else if (app.content?.structures[route.id]) app.store.set({ selectedId: null, selectedStructureId: route.id });
       } else if (route.kind === 'home') { /* keep state */ }
     },
   });
@@ -249,19 +280,22 @@ async function loadContrast(app: App, c: 't1w' | 't2w', progress: HTMLElement): 
   app.sm.requestRender();
 }
 
-/** anat label under a world point → mesh id */
+/** anat label under a world point → mesh id; below the MNI box, the PAM50 spinal level → its cord segment */
 function structureAt(app: App, p: THREE.Vector3): string | null {
   const vol = (app as unknown as { anatVolume?: { dims: number[]; data: Uint16Array } }).anatVolume;
-  if (!vol || !app.labels) return null;
-  const v = mmToVoxel(p, app.grid);
-  const i = Math.round(v.x), j = Math.round(v.y), k = Math.round(v.z);
-  if (i < 0 || j < 0 || k < 0 || i >= vol.dims[0]! || j >= vol.dims[1]! || k >= vol.dims[2]!) return null;
+  const v = vol && app.labels ? mmToVoxel(p, app.grid) : null;
+  const i = v ? Math.round(v.x) : -1, j = v ? Math.round(v.y) : -1, k = v ? Math.round(v.z) : -1;
+  if (!vol || !v || i < 0 || j < 0 || k < 0 || i >= vol.dims[0]! || j >= vol.dims[1]! || k >= vol.dims[2]!) {
+    // outside the MNI grid the slice is showing the cord volume: name the segment that owns this level
+    return spineLevelAt(app.spine, app.cordGrid, p)?.entry.meshId ?? null;
+  }
   const id = vol.data[i + vol.dims[0]! * (j + vol.dims[1]! * k)]!;
-  return id ? app.labels.lut.anat[String(id)]?.meshId ?? null : null;
+  return id ? app.labels!.lut.anat[String(id)]?.meshId ?? null : null;
 }
 
 /** Rebuild the colour/flag lookup textures from the current state. */
 function updateLuts(app: App): void {
+  updateSpineLut(app);              // independent of the anat labels: the cord volume can arrive first
   if (!app.labels) return;
   const s = app.store.get();
   const { struct, tract, terr, flags } = app.luts;
@@ -280,6 +314,21 @@ function updateLuts(app: App): void {
   if (s.overlay.territory) for (const [id, e] of Object.entries(lut.vascular)) terr.set(Number(id), e.colour, 0.5);
   if (s.overlay.tracts) for (const [id, e] of Object.entries(lut.tract)) tract.set(Number(id), e.colour, 0.5);
   app.sm.requestRender();
+}
+
+/** Spinal-level ramp colours plus the selected / hovered level masks the slice shader outlines with. */
+function updateSpineLut(app: App): void {
+  if (!app.spine) return;
+  const s = app.store.get();
+  const { spine } = app.luts;
+  spine.clear();
+  const selected = (e: { meshId: string }) => s.selectedId !== null && e.meshId === s.selectedId;
+  for (const [id, e] of app.spine.byId) {
+    const hovered = s.cordLevel === id;
+    spine.set(id, e.colour, selected(e) ? 0.6 : hovered ? 0.35 : s.overlay.showAllLabels ? 0.55 : 0);
+  }
+  app.uniforms.uSpineSel.value = spineMask(app.spine.byId, (_id, e) => selected(e));
+  app.uniforms.uSpineHover.value = spineMask(app.spine.byId, (id) => id === s.cordLevel);
 }
 
 function applyPeel(app: App): void {

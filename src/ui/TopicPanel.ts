@@ -3,6 +3,7 @@ import { h, clear } from './dom.ts';
 import { citeNode } from './cite.ts';
 import type { Citation } from '../types/content.ts';
 import { applyStates } from '../state/actions.ts';
+import { sourceLine } from './sourceLine.ts';
 
 type Rec = Record<string, unknown>;
 const CATEGORY_LABEL: Record<string, string> = {
@@ -53,7 +54,7 @@ export class TopicPanel {
           h('tbody', {}, ...imaging.pathology.map((p) => h('tr', {}, h('td', {}, p.pathology), h('td', {}, p.modality + (p.sequence ? ` · ${p.sequence}` : '')), h('td', {}, p.finding, p.timing ? h('div', { class: 'muted small' }, p.timing) : null, p.pitfalls ? h('div', { class: 'muted small' }, `Pitfall: ${p.pitfalls}`) : null)))))] : [])] : []),
       h('h3', {}, 'Pearls'), h('ul', {}, ...((t['pearls'] as string[]) ?? []).map((k) => h('li', {}, k))),
       ...(((t['pitfalls'] as string[]) ?? []).length ? [h('h3', {}, 'Pitfalls'), h('ul', {}, ...((t['pitfalls'] as string[]) ?? []).map((k) => h('li', {}, k)))] : []),
-      ...(meshIds.length ? [h('h3', {}, 'In the atlas'), h('div', { class: 'chips' }, ...meshIds.map((m) => h('a', { class: 'chip', href: `#/structure/${m}` }, this.app.registry.byId.get(m)!.name)))] : []),
+      ...(meshIds.length ? [h('h3', {}, 'In the atlas'), h('div', { class: 'chips' }, ...meshIds.map((m) => h('a', { class: 'chip', href: `#/structure/${m}` }, this.app.registry.byId.get(m)!.name))), sourceLine(this.app, meshIds)] : []),
       ...(['structureIds', 'pathwayIds', 'syndromeIds', 'topicIds'].some((k) => ((rel[k] as string[]) ?? []).length) ? [h('h3', {}, 'Related'),
         h('div', { class: 'chips' }, ...['structureIds', 'pathwayIds', 'syndromeIds', 'topicIds'].flatMap((k) => ((rel[k] as string[]) ?? []).map((r) => this.link(r))))] : []),
       h('h3', {}, 'Sources'), h('ul', { class: 'cites' }, ...cites.map((c) => h('li', {}, citeNode(bib, c)))),

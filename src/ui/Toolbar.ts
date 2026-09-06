@@ -21,6 +21,7 @@ export class Toolbar {
         h('button', { title: 'Clinical vignette quiz', onclick: () => { location.hash = '#/quiz'; } }, 'Quiz'),
         h('button', { title: 'Clinical topics (development, CSF, transmitters, EEG, epilepsy, dementia, neuromuscular …)', onclick: () => { location.hash = '#/topic'; } }, 'Topics'),
         h('button', { title: 'Glossary', onclick: () => { location.hash = '#/glossary'; } }, 'Glossary'),
+        h('button', { class: 'about-btn', title: 'About, licences and data source credits', onclick: () => { location.hash = '#/about'; } }, 'About'),
         this.qualityBtn,
         h('button', { title: 'Screenshot [Shift+S]', onclick: () => this.shot() }, 'Screenshot'),
         h('button', { title: 'Keyboard shortcuts [?]', onclick: () => opts.onHelp() }, '?'),

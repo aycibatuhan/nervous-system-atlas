@@ -49,6 +49,7 @@ licenses:
 sources:
   # ---------------- MNI152NLin2009cAsym native ----------------
   - id: mni_t1w
+    name: "MNI152NLin2009cAsym template (T1w, T2w, brain mask)"
     group: core
     license: MNI
     citation: "Fonov V et al. Unbiased average age-appropriate atlases for pediatric studies. NeuroImage 2011."
@@ -60,12 +61,14 @@ sources:
       - url: !join [*tf, LICENSE]
         dest: LICENSE.txt
   - id: mni_aseg
+    name: "FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template"
     group: core
     license: MNI
     citation: "FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template (TemplateFlow)."
     files:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz]
   - id: harvard_oxford
+    name: "Harvard-Oxford cortical and subcortical structural atlases"
     group: core
     license: FSL-NC
     citation: "Desikan RS et al. 2006; Makris N et al. 2006; Frazier JA et al. 2005; Goldstein JM et al. 2007 (Harvard-Oxford atlases, FSL)."
@@ -76,6 +79,7 @@ sources:
       - url: !join [*tf6, tpl-MNI152NLin6Asym_atlas-HOCPA_dseg.tsv]
       - url: !join [*tf6, tpl-MNI152NLin6Asym_atlas-HOSPA_dseg.tsv]
   - id: mial_thalamus
+    name: "MIAL probabilistic atlas of the thalamic nuclei"
     group: core
     license: MNI
     citation: "Najdenovska E et al. In-vivo probabilistic atlas of human thalamic nuclei based on diffusion-weighted MRI. Sci Data 2018."
@@ -83,6 +87,7 @@ sources:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MIAL67ThalamicNuclei_dseg.nii.gz]
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_atlas-MIAL67ThalamicNuclei_dseg.tsv]
   - id: massp
+    name: "MASSP multi-contrast subcortical parcellation"
     group: core
     license: MNI
     citation: "Bazin PL et al. Multi-contrast anatomical subcortical structures parcellation (MASSP). eLife 2020."
@@ -90,6 +95,7 @@ sources:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz]
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.tsv]
   - id: hcp1065_tracts
+    name: "HCP1065 averaged tractography atlas"
     group: core
     license: CC-BY-SA-4.0
     citation: "Yeh FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun 2022 (HCP1065 averaged tractography atlas)."
@@ -97,6 +103,7 @@ sources:
       - url: https://github.com/data-others/atlas/releases/download/hcp1065/hcp1065_avg_tracts_nifti.zip
         unzip: true
   - id: hypothalamus_neudorfer
+    name: "High-resolution atlas of the human hypothalamic region"
     group: core
     license: CC-BY-4.0
     citation: "Neudorfer C et al. A high-resolution in vivo magnetic resonance imaging atlas of the human hypothalamic region. Sci Data 2020."
@@ -106,6 +113,7 @@ sources:
       - url: https://zenodo.org/api/records/3942115/files/Volumes_names-labels.csv/content
         dest: Volumes_names-labels.csv
   - id: cit168
+    name: "CIT168 probabilistic atlas of the subcortical nuclei"
     group: core
     license: CC-BY-4.0
     citation: "Pauli WM, Nili AN, Tyszka JM. A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei. Sci Data 2018."
@@ -117,6 +125,7 @@ sources:
       - url: https://osf.io/download/6qrcb/
         dest: labels.txt
   - id: arterial_territories
+    name: "Digital 3D brain MRI arterial territories atlas"
     group: core
     license: CC-BY-SA-4.0
     citation: "Liu CF et al. Digital 3D Brain MRI Arterial Territories Atlas. Sci Data 2023."
@@ -126,6 +135,7 @@ sources:
       - url: https://raw.githubusercontent.com/Chin-Fu-Liu/Arterial_Atlas/main/data/ArterialAtlasLables.txt
         dest: ArterialAtlasLabels.txt
   - id: diedrichsen_cerebellum
+    name: "Probabilistic MR atlas of the human cerebellum"
     group: core
     license: CC-BY-NC-3.0
     citation: "Diedrichsen J et al. A probabilistic MR atlas of the human cerebellum. NeuroImage 2009."
@@ -133,6 +143,7 @@ sources:
       - url: https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom_space-MNI_dseg.nii
       - url: https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom.tsv
   - id: mouches_arteries
+    name: "Statistical atlas of the cerebral arteries"
     group: vessels
     license: CC0-1.0
     citation: "Mouches P, Forkert ND. A statistical atlas of cerebral arteries generated using multi-center MRA datasets. Sci Data 2019."
@@ -142,6 +153,7 @@ sources:
       - url: https://ndownloader.figshare.com/files/14475920
         dest: vesselRadius.nii.gz
   - id: venat
+    name: "VENAT atlas of the venous brain vasculature"
     group: vessels
     license: CC-BY-4.0
     citation: "Huck J, Wanner Y, Fan AP, Jager AT, Grahl S, Schneider U, Villringer A, Steele CJ, Tardif CL, Bazin PL, Gauthier CJ. High resolution atlas of the venous brain vasculature from 7 T quantitative susceptibility maps. Brain Struct Funct 2019;224(7):2467-2485. doi:10.1007/s00429-019-01919-4 (VENAT, figshare doi:10.6084/m9.figshare.7205960.v4)."
@@ -152,6 +164,7 @@ sources:
         dest: VENAT_diameter.nii.gz
   # ---------------- BodyParts3D ----------------
   - id: bodyparts3d
+    name: "BodyParts3D anatomical model database"
     group: bp3d
     license: CC-BY-SA-2.1-JP
     citation: "Mitsuhashi N et al. BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Res 2009."
@@ -167,12 +180,14 @@ sources:
       - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html
   # ---------------- optional ----------------
   - id: templateflow_warp
+    name: "TemplateFlow MNI152NLin6Asym to MNI152NLin2009cAsym transform"
     group: warp
     license: MNI
     citation: "TemplateFlow composite transform MNI152NLin6Asym -> MNI152NLin2009cAsym."
     files:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_from-MNI152NLin6Asym_mode-image_xfm.h5]
   - id: zanatomy
+    name: "Z-Anatomy open 3D atlas of human anatomy"
     group: zanatomy
     license: CC-BY-SA-4.0
     citation: "Z-Anatomy, an open 3D atlas of human anatomy (BodyParts3D-derived)."
@@ -181,6 +196,7 @@ sources:
         unzip: true
   # ---------------- spinal cord template ----------------
   - id: pam50
+    name: "PAM50 brainstem and spinal cord template"
     group: spine
     license: PAM50-unlicensed
     citation: "De Leener B, Fonov VS, Collins DL, Callot V, Stikov N, Cohen-Adad J. PAM50: Unbiased multimodal
@@ -190,6 +206,7 @@ sources:
       - url: https://github.com/spinalcordtoolbox/PAM50/releases/download/r20250730/PAM50-r20250730.zip
         unzip: true
   - id: brainstem_navigator
+    name: "Brainstem Navigator v1.0 (in vivo 7 T brainstem nuclei)"
     group: manual
     license: BrainstemNavigator-NC-ND
     citation: "Bianciardi M et al. Brainstem Navigator (NITRC). Manual download required (click-through agreement)."
