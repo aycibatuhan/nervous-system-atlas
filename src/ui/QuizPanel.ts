@@ -15,8 +15,9 @@ export class QuizPanel {
   private clearHighlight(): void {
     for (const m of this.shown) setStructureVisible(this.app, m, false);
     this.shown = [];
-    if (this.app.store.get().involved.size) this.app.store.set({ involved: new Set(), stepHighlight: new Set() });
-    applyStates(this.app);
+    const st = this.app.store.get();
+    if (!st.syndrome && st.involved.size) this.app.store.set({ involved: new Set(), stepHighlight: new Set() });
+    if (!st.syndrome) applyStates(this.app);
   }
   exit(): void { this.clearHighlight(); }
   private highlight(ids: string[]): void {
