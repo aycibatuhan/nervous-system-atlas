@@ -14,7 +14,8 @@
     "content:report": "node scripts/content/build.ts --report",
     "check-data": "node scripts/check-data.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "fuse.js": "7.5.0",
@@ -25,6 +26,7 @@
     "@gltf-transform/cli": "4.5.0",
     "@gltf-transform/core": "4.5.0",
     "@gltf-transform/extensions": "4.5.0",
+    "@playwright/test": "^1.63.0",
     "@types/node": "^22",
     "@types/three": "0.185.4",
     "lil-gui": "0.21.0",

@@ -61,6 +61,8 @@ npm run typecheck
 npm test
 npm run content:validate
 node scripts/check-data.ts
+uv run --project pipeline atlas-qa       # data gates
+npx playwright install chromium && npm run e2e   # browser smoke tests against the dev server
 ```
 
 ## Licence
