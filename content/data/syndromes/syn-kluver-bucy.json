@@ -1,0 +1,125 @@
+{
+ "kind": "syndrome",
+ "id": "syn-kluver-bucy",
+ "name": "Klüver–Bucy syndrome",
+ "eponyms": [],
+ "category": "infectious",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "amygdala",
+   "gyrus-parahippocampal-uncus",
+   "hippocampus",
+   "lobe-temporal"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "amygdala-l",
+   "amygdala-r",
+   "uncus-l",
+   "uncus-r"
+  ]
+ },
+ "presentation": "After recovering from herpes simplex encephalitis, or with a frontotemporal dementia or bilateral temporal injury, a patient becomes strangely placid, examines every object by putting it in the mouth, eats indiscriminately including inedible things, makes inappropriate sexual advances, cannot recognize familiar people or objects by sight, and is compulsively drawn to touch and inspect whatever comes into view. Memory is often severely impaired as well.",
+ "deficits": [
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "amygdala",
+   "sign": "Placidity, loss of fear and aggression, blunted emotional response",
+   "substrate": "amygdala"
+  },
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "temporal-limbic",
+   "sign": "Hyperorality, dietary changes and hyperphagia; hypersexuality",
+   "substrate": "gyrus-parahippocampal-uncus"
+  },
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "inferotemporal cortex",
+   "sign": "Visual agnosia (psychic blindness) and hypermetamorphosis (compulsive attention to visual stimuli)",
+   "substrate": "lobe-temporal"
+  },
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "hippocampus",
+   "sign": "Amnesia when the hippocampi are involved",
+   "substrate": "hippocampus"
+  }
+ ],
+ "reasoning": "The amygdala attaches emotional and motivational value to what is perceived: it receives highly processed visual, auditory and gustatory information from the temporal cortex and returns outputs to the hypothalamus and brainstem that generate fear, aggression, feeding and sexual responses. When both amygdalae and the surrounding anterior temporal cortex are destroyed, objects are seen but stripped of their meaning and their emotional tag, so the patient shows no fear of things that should frighten, no disgust at things that should be avoided and no restraint in eating or sexual behavior, and returns to exploring the world by mouth and hand like an infant because visual recognition no longer suffices. The inferotemporal visual association cortex, adjacent to the amygdala, accounts for the visual agnosia, and the hippocampi, further back, for the amnesia. The syndrome requires bilateral lesions because each amygdala is connected with both hemispheres' association cortex and one is enough to sustain emotional evaluation; unilateral temporal lesions produce only subtle changes, and there is no ipsilateral or contralateral pattern. Herpes simplex encephalitis targets the medial temporal lobes bilaterally, which is why it is the commonest cause in adults; frontotemporal dementia, bilateral temporal trauma, hypoxia, Pick disease and bilateral temporal lobectomy are the others. The full syndrome as described in monkeys is rare in humans; partial forms with placidity and hyperorality are more common.",
+ "imagingFindings": [
+  {
+   "pathology": "Herpes simplex encephalitis",
+   "modality": "MRI",
+   "finding": "Bilateral, asymmetric T2/FLAIR hyperintensity and restricted diffusion in the medial temporal lobes, insula and cingulate, with hemorrhage and later cystic encephalomalacia of both anterior temporal lobes.",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Frontotemporal dementia",
+   "modality": "MRI",
+   "finding": "Bilateral anterior temporal atrophy, often asymmetric, with hypometabolism on FDG-PET.",
+   "sequence": "T1"
+  },
+  {
+   "pathology": "Bilateral temporal injury",
+   "modality": "CT",
+   "finding": "Bilateral temporal contusions after trauma or hypoxic-ischemic injury of the hippocampi and amygdalae.",
+   "sequence": "CT non-contrast"
+  }
+ ],
+ "commonCauses": [
+  "Herpes simplex encephalitis",
+  "Frontotemporal dementia (semantic variant) and Pick disease",
+  "Bilateral temporal lobe trauma, hypoxia or surgery",
+  "Limbic encephalitis (paraneoplastic or autoimmune)",
+  "Late Alzheimer disease"
+ ],
+ "mimics": [
+  {
+   "name": "Frontal lobe disinhibition",
+   "howToDistinguish": "Disinhibition with intact recognition and without hyperorality or visual agnosia; orbitofrontal lesion"
+  },
+  {
+   "name": "Prosopagnosia",
+   "howToDistinguish": "Isolated failure to recognize faces from bilateral fusiform lesions, emotion intact"
+  },
+  {
+   "name": "Delirium",
+   "howToDistinguish": "Fluctuating attention with a metabolic cause"
+  }
+ ],
+ "management": [
+  "Treat the underlying cause (acyclovir for herpes encephalitis)",
+  "Behavioral management, supervision of eating and safety; selective serotonin reuptake inhibitors or carbamazepine may reduce hyperorality and hypersexuality",
+  "Support for caregivers; the syndrome partially improves after encephalitis"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    306,
+    306
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": 0,
+   "y": -5,
+   "z": -20
+  },
+  "label": "both amygdalae and unci"
+ },
+ "cameraPreset": "anterior"
+}

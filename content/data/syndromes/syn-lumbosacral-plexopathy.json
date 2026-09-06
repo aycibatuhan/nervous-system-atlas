@@ -1,0 +1,143 @@
+{
+ "kind": "syndrome",
+ "id": "syn-lumbosacral-plexopathy",
+ "name": "Lumbosacral plexopathy",
+ "eponyms": [
+  "diabetic amyotrophy (Bruns–Garland syndrome)"
+ ],
+ "category": "plexopathy",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "plexus-lumbosacral",
+   "roots-l2-s1",
+   "nerve-femoral",
+   "nerve-sciatic",
+   "nerve-obturator"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "lumbosacral-plexus-l"
+  ]
+ },
+ "presentation": "A diabetic patient in their sixties develops severe pain in one thigh followed over weeks by weakness and wasting of the quadriceps and hip muscles, with loss of the knee jerk and marked weight loss; the other leg may follow. In a patient with pelvic cancer or after pelvic radiotherapy, a similar painful or painless leg weakness involves both femoral and sciatic territories, a distribution too wide for one nerve and too patchy for the cord.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "hip flexors, quadriceps, adductors (lumbar plexus) and/or gluteal, hamstring and leg muscles (sacral plexus)",
+   "sign": "Weakness and wasting spanning several nerve and root territories",
+   "substrate": "plexus-lumbosacral"
+  },
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "thigh, buttock or leg",
+   "sign": "Severe pain at onset (diabetic, neoplastic); painless in radiation plexopathy",
+   "substrate": "plexus-lumbosacral"
+  },
+  {
+   "modality": "reflex",
+   "side": "ipsilateral",
+   "distribution": "knee and/or ankle",
+   "sign": "Reduced knee reflex (lumbar) or ankle reflex (sacral)",
+   "substrate": "roots-l2-s1"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "anterior thigh and medial leg, or posterior thigh, lateral leg and foot",
+   "sign": "Multiradicular sensory loss without a level; perineum spared",
+   "substrate": "plexus-lumbosacral"
+  },
+  {
+   "modality": "autonomic",
+   "side": "ipsilateral",
+   "distribution": "leg",
+   "sign": "Leg edema and sympathetic changes with pelvic tumor; sphincters spared",
+   "substrate": "sympathetic-trunk"
+  }
+ ],
+ "reasoning": "The lumbar plexus forms within the psoas from the L1–L4 roots and gives the femoral, obturator and lateral femoral cutaneous nerves; the sacral plexus forms on the piriformis from L4–S3 and gives the sciatic, gluteal and pudendal nerves. A lesion of the plexus, lying between the roots and the individual nerves, produces a deficit that is broader than any one nerve and does not follow one root: a lumbar plexopathy weakens hip flexion, knee extension and adduction together (femoral plus obturator territory), which a femoral neuropathy cannot do, and a sacral plexopathy weakens the glutei and the sciatic muscles together, which a sciatic lesion cannot do. The lesion is peripheral and ipsilateral, though the diabetic form often spreads to the other side after a delay. The perineum and sphincters are spared because the sacral roots to the pudendal nerve leave the plexus separately and the conus is intact, and there is no sensory level, which separates plexopathy from a conus or cauda equina lesion; sensory nerve action potentials are reduced because the lesion is distal to the dorsal root ganglia, which separates it from a radiculopathy, in which they are preserved, and paraspinal muscles are spared. Diabetic radiculoplexus neuropathy is an inflammatory microvasculitis of the roots and plexus; malignant plexopathy is infiltration from cervical, prostatic, colorectal or lymphomatous tumor, painful and progressive; radiation plexopathy appears years after treatment, is painless and shows myokymia on EMG; and a psoas hematoma or abscess compresses the lumbar plexus acutely.",
+ "imagingFindings": [
+  {
+   "pathology": "Plexus infiltration or compression",
+   "modality": "MRI",
+   "finding": "Enhancing tumor along the pelvic sidewall or in the psoas encasing the plexus; psoas hematoma or abscess displacing it; thickened enhancing plexus in diabetic and inflammatory forms on MR neurography.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Radiation plexopathy",
+   "modality": "MRI",
+   "finding": "Diffuse thickening and T2 change of the plexus within the radiation field without a discrete mass; myokymia on EMG.",
+   "sequence": "STIR"
+  },
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Denervation across several nerve territories of one limb sparing the paraspinal muscles, with reduced sensory responses (postganglionic); myokymic discharges in radiation plexopathy.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Lumbar spine (exclusion)",
+   "modality": "MRI",
+   "finding": "No root compression matching the deficit; excludes cauda equina lesion.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Diabetic lumbosacral radiculoplexus neuropathy (diabetic amyotrophy)",
+  "Pelvic malignancy (cervix, prostate, colorectal, lymphoma, sarcoma)",
+  "Radiation plexopathy",
+  "Retroperitoneal or psoas hematoma (anticoagulation) or abscess",
+  "Pelvic fracture or surgery, obstetric compression",
+  "Idiopathic (non-diabetic) inflammatory plexopathy"
+ ],
+ "mimics": [
+  {
+   "name": "Lumbosacral polyradiculopathy",
+   "howToDistinguish": "Paraspinal denervation, preserved sensory responses, root compression or leptomeningeal enhancement on MRI"
+  },
+  {
+   "name": "Femoral or sciatic mononeuropathy",
+   "howToDistinguish": "Deficit confined to one nerve"
+  },
+  {
+   "name": "Cauda equina or conus lesion",
+   "howToDistinguish": "Bilateral, saddle anesthesia, sphincter loss"
+  },
+  {
+   "name": "Hip disease",
+   "howToDistinguish": "Pain on joint movement without neurological deficit"
+  }
+ ],
+ "management": [
+  "MRI of the pelvis and lumbar spine with contrast; EMG to define the distribution and exclude radiculopathy; screen for diabetes and malignancy",
+  "Diabetic amyotrophy: glycemic control, pain management, physiotherapy; immunotherapy is debated; recovery over 1–2 years",
+  "Treat tumor or hematoma; radiation plexopathy is managed supportively"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    163,
+    163
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -40,
+   "y": -40,
+   "z": -180
+  },
+  "label": "lumbosacral plexus in the psoas and on the pelvic sidewall (virtual)"
+ },
+ "cameraPreset": "anterior"
+}

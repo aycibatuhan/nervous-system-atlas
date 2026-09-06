@@ -1,0 +1,136 @@
+{
+ "kind": "syndrome",
+ "id": "syn-parsonage-turner",
+ "name": "Neuralgic amyotrophy (Parsonage–Turner syndrome)",
+ "eponyms": [
+  "brachial neuritis",
+  "idiopathic brachial plexopathy"
+ ],
+ "category": "plexopathy",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "plexus-brachial",
+   "nerve-long-thoracic",
+   "nerve-suprascapular",
+   "nerve-axillary"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "brachial-plexus-l"
+  ]
+ },
+ "presentation": "A young adult wakes with excruciating pain in one shoulder that lasts for days to two weeks and is unrelieved by position or ordinary analgesics; as the pain subsides, weakness and rapid wasting appear in the shoulder girdle, most often the serratus anterior, supraspinatus, infraspinatus and deltoid, with winging of the scapula. Sensory loss is minor, often a patch over the deltoid. The pattern of weakness fits several nerves and roots at once. Recovery takes months to years.",
+ "deficits": [
+  {
+   "modality": "pain",
+   "side": "ipsilateral",
+   "distribution": "shoulder and upper arm",
+   "sign": "Severe neuropathic pain for days to weeks preceding the weakness",
+   "substrate": "plexus-brachial"
+  },
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "shoulder girdle: serratus anterior, spinati, deltoid, biceps, in patchy combinations",
+   "sign": "Weakness and rapid wasting appearing as the pain fades; scapular winging",
+   "substrate": "nerve-long-thoracic"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "lateral shoulder (axillary) or minor patches",
+   "sign": "Mild sensory loss out of proportion to the motor deficit",
+   "substrate": "nerve-axillary"
+  },
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "diaphragm, anterior interosseous (variants)",
+   "sign": "Orthopnea from phrenic involvement; pinch weakness from anterior interosseous involvement",
+   "substrate": "nerve-phrenic"
+  }
+ ],
+ "reasoning": "Neuralgic amyotrophy is an inflammatory, presumably immune-mediated attack on the brachial plexus and its branches, often following an infection, vaccination, surgery or childbirth, and in a hereditary form linked to SEPT9 mutations. The inflammation strikes individual nerves and fascicles rather than the plexus as a whole, which is why the deficits are patchy and fit several different nerves at once: the long thoracic nerve to the serratus anterior, the suprascapular nerve to the spinati, the axillary nerve to the deltoid, the anterior interosseous nerve to the long flexors of the thumb and index, and the phrenic nerve, in any combination, without matching any single root or trunk. The lesions are peripheral and uncrossed, so everything is ipsilateral, though a fifth of patients have bilateral, asymmetric involvement. Motor fascicles are affected far more than sensory ones, explaining the striking wasting with little sensory loss, and the pain reflects the acute inflammation of the nerve trunks. Nerve imaging shows focal constrictions and swelling of the affected nerves, sometimes with an hourglass appearance, which supports the diagnosis and separates it from a cervical radiculopathy, in which the pain and weakness follow a single root and paraspinal muscles are denervated, and from a rotator cuff injury, which has no neurogenic wasting.",
+ "imagingFindings": [
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Denervation in muscles of several different nerves and roots of one limb without paraspinal involvement; reduced sensory responses in the affected nerves (postganglionic).",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Nerve inflammation",
+   "modality": "MRI",
+   "finding": "T2 hyperintensity and enlargement of the affected plexus elements or individual nerves on MR neurography, with denervation edema of the shoulder girdle muscles on STIR; hourglass constrictions on high-resolution ultrasound.",
+   "sequence": "STIR"
+  },
+  {
+   "pathology": "Cervical spine (exclusion)",
+   "modality": "MRI",
+   "finding": "No compressive root lesion matching the deficit.",
+   "sequence": "T2"
+  }
+ ],
+ "commonCauses": [
+  "Idiopathic (post-infectious, post-surgical, postpartum)",
+  "Hereditary neuralgic amyotrophy (SEPT9)",
+  "Immunization",
+  "Strenuous exercise"
+ ],
+ "mimics": [
+  {
+   "name": "Cervical radiculopathy",
+   "howToDistinguish": "Pain and weakness confined to one root, paraspinal denervation, compression on MRI"
+  },
+  {
+   "name": "Rotator cuff tear",
+   "howToDistinguish": "Weakness limited by pain without wasting or denervation"
+  },
+  {
+   "name": "Traumatic plexopathy",
+   "howToDistinguish": "History of stretch injury; deficits follow trunks or cords"
+  },
+  {
+   "name": "Multifocal motor neuropathy",
+   "howToDistinguish": "Painless, slowly progressive, conduction block"
+  }
+ ],
+ "management": [
+  "Strong analgesia in the painful phase; corticosteroids in the first two weeks may shorten it",
+  "Physiotherapy to maintain range and prevent frozen shoulder; EMG at 3–4 weeks to define the extent",
+  "Reassurance about slow recovery over 1–3 years; nerve exploration only for persistent hourglass constrictions"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 15,
+   "pages": [
+    131,
+    131
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    147,
+    147
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -60,
+   "y": -20,
+   "z": -40
+  },
+  "label": "brachial plexus and its shoulder girdle branches"
+ },
+ "cameraPreset": "anterior"
+}

@@ -1,0 +1,146 @@
+{
+ "kind": "syndrome",
+ "id": "syn-transverse-myelitis",
+ "name": "Transverse myelitis",
+ "eponyms": [],
+ "category": "demyelinating",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "spinal-cord",
+   "spinal-white-columns",
+   "spinal-gray-anterior-horn",
+   "intermediolateral-column"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -100
+  },
+  "radiusMm": 10
+ },
+ "presentation": "Over hours to a few days a previously well adult develops back pain, numbness rising from the feet to a level on the trunk, weakness of both legs and difficulty passing urine. Examination shows a sensory level to pin-prick, bilateral leg weakness that is flaccid at first and later spastic, and urinary retention. MRI shows a swollen, T2-bright segment of the cord; the length of the lesion and the findings in the brain and optic nerves decide between multiple sclerosis, neuromyelitis optica and a post-infectious or systemic cause.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "below the lesion",
+   "sign": "Paraparesis or quadriparesis, flaccid then spastic with extensor plantars",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "bilateral",
+   "distribution": "below a sensory level",
+   "sign": "Loss of all modalities with a defined level, often with a band of pain or dysesthesia at the level",
+   "substrate": "pathway-dcml"
+  },
+  {
+   "modality": "sphincter",
+   "side": "bilateral",
+   "distribution": "bladder and bowel",
+   "sign": "Urinary retention then urgency; constipation",
+   "substrate": "intermediolateral-column"
+  },
+  {
+   "modality": "pain",
+   "side": "bilateral",
+   "distribution": "back, radicular",
+   "sign": "Back pain and Lhermitte sign",
+   "substrate": "spinal-white-columns"
+  },
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "below the lesion",
+   "sign": "Autonomic dysreflexia and sweating changes with cervical or upper thoracic lesions",
+   "substrate": "sympathetic-trunk"
+  }
+ ],
+ "reasoning": "Inflammation of one or a few segments of the cord, whether from a demyelinating attack, a post-infectious immune reaction or a systemic disease, damages the gray matter and all the white matter tracts crossing that level on both sides, so the picture is that of a partial or complete cord transection: the corticospinal tracts, which crossed in the medulla and serve the same-side limbs, are interrupted bilaterally, the posterior columns, uncrossed until the medulla, and the spinothalamic tracts, crossed within the cord, are all affected, giving bilateral loss of every modality below a level that corresponds to the inflamed segment, and the autonomic pathways to the bladder and bowel fail. The dorsal root entry zone at the lesion accounts for the band of pain, and involvement of the anterior horns at the level for any segmental flaccid weakness. Which disease is present is inferred from the shape of the lesion: multiple sclerosis produces short, eccentric, partial lesions of less than two segments, often dorsolateral and asymmetric, giving a partial myelitis; neuromyelitis optica produces longitudinally extensive, centrally located lesions spanning three or more segments with severe bilateral deficits; and acute disseminated encephalomyelitis, infections and connective tissue diseases produce variable patterns with brain or systemic clues. Spinal shock accounts for the initial flaccidity and areflexia. The main differential is a compressive or vascular lesion, which imaging separates within hours.",
+ "imagingFindings": [
+  {
+   "pathology": "Transverse myelitis",
+   "modality": "MRI",
+   "finding": "Intramedullary T2 hyperintensity with cord swelling and patchy enhancement over one to several segments; no extrinsic compression. Longitudinally extensive (three or more segments) lesions favor neuromyelitis optica or MOG antibody disease; short, eccentric lesions favor multiple sclerosis.",
+   "sequence": "T2"
+  },
+  {
+   "pathology": "Brain and optic nerve lesions",
+   "modality": "MRI",
+   "finding": "Periventricular and juxtacortical lesions (MS), optic nerve enhancement or diencephalic and area postrema lesions (NMOSD).",
+   "sequence": "FLAIR"
+  },
+  {
+   "pathology": "Inflammatory CSF",
+   "modality": "LP/CSF",
+   "finding": "Lymphocytic pleocytosis and raised protein; oligoclonal bands in MS, usually absent in NMOSD.",
+   "sequence": "n/a"
+  }
+ ],
+ "commonCauses": [
+  "Multiple sclerosis",
+  "Neuromyelitis optica spectrum disorder (aquaporin-4)",
+  "MOG antibody-associated disease",
+  "Post-infectious and post-vaccination myelitis",
+  "Systemic lupus, Sjögren syndrome, sarcoidosis, Behçet disease",
+  "Viral myelitis (enterovirus, herpes viruses, HIV), Lyme, syphilis",
+  "Idiopathic"
+ ],
+ "mimics": [
+  {
+   "name": "Compressive myelopathy (disc, tumor, abscess, hematoma)",
+   "howToDistinguish": "Extrinsic lesion on MRI; treatment is surgical"
+  },
+  {
+   "name": "Spinal cord infarct",
+   "howToDistinguish": "Onset within minutes, anterior cord pattern, restricted diffusion, aortic disease"
+  },
+  {
+   "name": "Guillain–Barré syndrome",
+   "howToDistinguish": "No sensory level, areflexia, cranial nerves, CSF protein high without cells"
+  },
+  {
+   "name": "Dural arteriovenous fistula",
+   "howToDistinguish": "Stepwise progressive myelopathy with flow voids on the cord surface"
+  }
+ ],
+ "management": [
+  "Urgent MRI of the whole spine with contrast and of the brain; lumbar puncture, aquaporin-4 and MOG antibodies, infectious and systemic serology",
+  "High-dose intravenous methylprednisolone; plasma exchange for poor responders; disease-modifying therapy according to the diagnosis",
+  "Bladder management, thromboprophylaxis and rehabilitation"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 5,
+   "pages": [
+    45,
+    45
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 21,
+   "pages": [
+    225,
+    227
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "sagittal",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -100
+  },
+  "label": "thoracic cord segment"
+ },
+ "cameraPreset": "posterior"
+}

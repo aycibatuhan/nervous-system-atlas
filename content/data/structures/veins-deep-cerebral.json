@@ -1,0 +1,160 @@
+{
+ "kind": "structure",
+ "id": "veins-deep-cerebral",
+ "name": "Deep cerebral veins",
+ "synonyms": [
+  "internal cerebral veins",
+  "basal veins of Rosenthal",
+  "vein of Galen system"
+ ],
+ "system": "venous",
+ "meshIds": [],
+ "summary": "The deep cerebral veins drain the white matter, basal ganglia, thalamus and ventricular walls into the great cerebral vein of Galen and so into the straight sinus. On each side the septal vein from the frontal horn and the thalamostriate vein from the groove between caudate and thalamus join behind the foramen of Monro to form the internal cerebral vein, which runs back in the roof of the third ventricle beside its partner; the basal vein of Rosenthal collects the insula, the anterior perforated substance and the medial temporal lobe and curves around the midbrain to join them. Thrombosis of this system swells both thalami and produces coma, and the veins are the landmarks of transcallosal and pineal region surgery and of the venous phase of angiography, where the venous angle marks the foramen of Monro.",
+ "anatomy": {
+  "location": "Internal cerebral veins in the velum interpositum in the roof of the third ventricle, from the foramen of Monro to the pineal region, joined by the basal veins beneath the splenium to form the great cerebral vein, which enters the straight sinus at the junction of the falx and tentorium.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Septal, thalamostriate, choroidal and subependymal veins",
+    "via": "internal cerebral vein"
+   },
+   {
+    "from": "Insular, anterior perforated substance and medial temporal veins",
+    "via": "basal vein of Rosenthal"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Great cerebral vein of Galen → straight sinus → confluence of sinuses"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "The deep veins have no valves and drain a large volume of the central white matter, the striatum and the thalamus through the subependymal and medullary veins into the internal cerebral veins, and the deep temporal lobe and diencephalon through the basal veins; the system is separate from the superficial cortical veins but connects with them through anastomotic medullary veins, which enlarge when either route is blocked. Their orientation and displacement on angiography and MR venography reveal masses of the deep structures.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -30,
+     "z": 12
+    },
+    "label": "internal cerebral veins in the roof of the third ventricle running to the great vein and straight sinus"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -30,
+     "z": 12
+    },
+    "label": "paired internal cerebral veins in the velum interpositum"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": -25,
+     "z": 5
+    },
+    "label": "thalamostriate veins in the caudothalamic groove"
+   }
+  ],
+  "normalAppearance": "Paired flow voids in the roof of the third ventricle on T2, enhancing on post-contrast T1 and bright on MR venography; the great vein curves up beneath the splenium into the straight sinus. The thalamostriate veins run in the caudothalamic groove and are seen on susceptibility imaging as they enter the venous angle.",
+  "pathology": [
+   {
+    "pathology": "Deep cerebral venous thrombosis",
+    "modality": "MRV",
+    "finding": "Absent flow in the internal cerebral veins, great vein and straight sinus with bilateral thalamic and basal ganglia edema and hemorrhage; hyperdense veins on plain CT.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Developmental venous anomaly",
+    "modality": "MRI",
+    "finding": "'Caput medusae' of radially converging medullary veins draining into a single enlarged transcerebral or subependymal vein; a normal variant that should not be resected, often with an associated cavernoma.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Vein of Galen malformation",
+    "modality": "MRI",
+    "finding": "Massively dilated venous pouch behind the third ventricle in a neonate with heart failure and hydrocephalus, fed by choroidal arteries.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Coma with bilateral thalamic swelling",
+    "side": "bilateral",
+    "mechanism": "Deep venous thrombosis producing venous congestion and infarction of both thalami and basal ganglia"
+   },
+   {
+    "deficit": "Hydrocephalus",
+    "side": "bilateral",
+    "mechanism": "Compression of the aqueduct and third ventricle by a dilated vein of Galen or by thalamic swelling"
+   },
+   {
+    "deficit": "Focal seizures and hemorrhage",
+    "side": "bilateral",
+    "mechanism": "Venous infarction of the deep white matter"
+   }
+  ],
+  "examination": [
+   "Fundoscopy for papilledema; level of consciousness and pupils in suspected deep venous thrombosis",
+   "Look at the thalami on CT in any obtunded patient with a prothrombotic state"
+  ],
+  "syndromes": [
+   "syn-cerebral-venous-sinus-thrombosis"
+  ],
+  "pearls": [
+   "Bilateral thalamic swelling in a young patient is deep venous thrombosis until proven otherwise; the artery of Percheron is the arterial mimic",
+   "A developmental venous anomaly drains normal brain; never resect it, but look for the cavernoma that often accompanies it",
+   "The venous angle where the thalamostriate vein joins the internal cerebral vein marks the foramen of Monro on the venous phase"
+  ]
+ },
+ "pitfalls": [
+  "Slow flow in the internal cerebral veins can look like thrombosis on time-of-flight MRV; confirm with contrast-enhanced venography"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    469,
+    469
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 17,
+   "pages": [
+    463,
+    486
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 20,
+   "pages": [
+    200,
+    201
+   ]
+  }
+ ],
+ "tags": [
+  "venous"
+ ],
+ "status": "draft",
+ "subsystem": "deep venous system"
+}

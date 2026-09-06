@@ -1,0 +1,132 @@
+{
+ "kind": "syndrome",
+ "id": "syn-mononeuritis-multiplex",
+ "name": "Mononeuritis multiplex",
+ "eponyms": [
+  "multiple mononeuropathy",
+  "vasculitic neuropathy"
+ ],
+ "category": "metabolic-toxic",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "nerve-common-peroneal",
+   "nerve-ulnar",
+   "nerve-radial",
+   "nerve-median",
+   "nerve-tibial"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "common-peroneal-nerve-l",
+   "ulnar-nerve-r"
+  ]
+ },
+ "presentation": "A patient with a systemic illness, weight loss, fever, rash or a known connective tissue disease develops a painful foot drop, then weeks later numbness and weakness in the ulnar territory of the opposite hand, then a wrist drop. Each episode is a sudden, painful lesion of one named nerve, and the accumulation of several such lesions in a random, asymmetric pattern is the signature of nerve infarction from vasculitis, which needs urgent immunosuppression.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "bilateral",
+   "distribution": "individual named nerves, asymmetric and stepwise (peroneal, ulnar, radial, median, tibial)",
+   "sign": "Acute painful weakness in one nerve's distribution, accumulating over weeks to months",
+   "substrate": "nerve-common-peroneal"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "bilateral",
+   "distribution": "same nerve territories",
+   "sign": "Sensory loss following named nerves rather than a stocking pattern",
+   "substrate": "nerve-ulnar"
+  },
+  {
+   "modality": "pain",
+   "side": "bilateral",
+   "distribution": "affected nerves",
+   "sign": "Deep aching and burning pain at the onset of each lesion",
+   "substrate": "nerve-radial"
+  },
+  {
+   "modality": "other",
+   "side": "n/a",
+   "distribution": "systemic",
+   "sign": "Fever, weight loss, purpura, arthralgia, renal or pulmonary involvement",
+   "substrate": "sympathetic-trunk"
+  }
+ ],
+ "reasoning": "Each peripheral nerve is supplied by small vasa nervorum, and when these vessels are inflamed and occluded by vasculitis, whether polyarteritis nodosa, ANCA-associated vasculitis, rheumatoid or cryoglobulinemic vasculitis or a non-systemic vasculitic neuropathy, the nerve infarcts at the watershed between its nutrient arteries, in the mid-thigh for the sciatic and peroneal fibers and the mid-arm for the ulnar and radial nerves. Because infarcts occur one nerve at a time and at random, the deficits are asymmetric, follow the anatomy of named nerves rather than roots or a stocking-glove length-dependent pattern, and accumulate stepwise; the lesions are peripheral and each is ipsilateral to its own nerve, with no crossing to reason about, and the process is 'multiplex' because both sides are eventually involved. Pain is prominent because ischemia inflames the nerve and its sheath. With time the many overlapping nerve infarcts merge into a confluent asymmetric polyneuropathy that can be mistaken for a length-dependent one, so the history of stepwise nerve-by-nerve onset is decisive. Nerve conduction shows axonal loss in the affected nerves with preserved conduction in their neighbors, and biopsy of an affected nerve with its accompanying muscle shows the vasculitis. Diabetes, leprosy, sarcoidosis, HIV, hepatitis B and C, lymphoma and hereditary neuropathy with liability to pressure palsies produce multiple mononeuropathies by other mechanisms.",
+ "imagingFindings": [
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Asymmetric axonal loss confined to individual nerves (reduced sensory and motor amplitudes) with normal neighboring nerves; later confluent asymmetric axonal polyneuropathy. Pseudo-conduction block early after an infarct.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Nerve and muscle biopsy",
+   "modality": "MRI",
+   "finding": "Imaging is normal; biopsy of the sural or superficial peroneal nerve with peroneus brevis shows transmural inflammation and fibrinoid necrosis of epineurial vessels with axonal loss. MR neurography may show focal nerve enlargement and enhancement.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Systemic vasculitis",
+   "modality": "CTA",
+   "finding": "Microaneurysms of the renal and mesenteric arteries in polyarteritis nodosa; pulmonary nodules or sinus disease in ANCA vasculitis.",
+   "sequence": "CT contrast"
+  }
+ ],
+ "commonCauses": [
+  "Polyarteritis nodosa",
+  "ANCA-associated vasculitis (granulomatosis with polyangiitis, eosinophilic granulomatosis, microscopic polyangiitis)",
+  "Rheumatoid, lupus and Sjögren vasculitis; cryoglobulinemia (hepatitis C)",
+  "Non-systemic vasculitic neuropathy",
+  "Diabetes, leprosy, sarcoidosis, HIV, lymphoma",
+  "Hereditary neuropathy with liability to pressure palsies (painless)"
+ ],
+ "mimics": [
+  {
+   "name": "Length-dependent polyneuropathy",
+   "howToDistinguish": "Symmetric, distal, gradual, painless onset"
+  },
+  {
+   "name": "Multiple entrapment neuropathies",
+   "howToDistinguish": "Common sites (carpal tunnel, elbow, fibular head), painless, conduction slowing at the site"
+  },
+  {
+   "name": "Multifocal motor neuropathy",
+   "howToDistinguish": "Pure motor, conduction block, no pain"
+  },
+  {
+   "name": "Leprosy",
+   "howToDistinguish": "Thickened nerves, skin lesions, endemic exposure"
+  }
+ ],
+ "management": [
+  "Urgent workup: ESR, CRP, ANCA, cryoglobulins, hepatitis serology, complement, urinalysis; EMG; nerve and muscle biopsy",
+  "Immunosuppression with corticosteroids and cyclophosphamide or rituximab for systemic vasculitis; do not wait for biopsy if the picture is clear",
+  "Neuropathic pain treatment and orthoses; monitor for renal and pulmonary involvement"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 27,
+   "pages": [
+    283,
+    287
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": 0,
+   "y": -45,
+   "z": -160
+  },
+  "label": "lumbosacral roots: the lesions themselves are in named peripheral nerves"
+ },
+ "cameraPreset": "anterior"
+}

@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "area-postrema",
+ "name": "Area postrema",
+ "synonyms": [
+  "chemoreceptor trigger zone"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem"
+ ],
+ "summary": "The area postrema is a small, highly vascular strip of tissue on each side of the caudal floor of the fourth ventricle, at the obex, lacking a blood–brain barrier so that its neurons sample the blood and CSF directly. It is the chemoreceptor trigger zone for vomiting: circulating toxins, drugs, hormones and metabolic signals excite it, and it drives the adjacent nucleus of the solitary tract and the medullary vomiting pattern generator. It also senses osmolality, glucose and gut peptides and participates in fluid balance and feeding. Clinically it is the target of antiemetic dopamine and serotonin antagonists, the site of the intractable hiccups and vomiting that herald neuromyelitis optica, and the reason that medullary lesions near the obex present with vomiting before any classical neurological sign.",
+ "anatomy": {
+  "location": "Paired circumventricular organs on the lateral walls of the caudal fourth ventricle at the obex, immediately dorsal to the nucleus of the solitary tract and the dorsal motor nucleus of the vagus, with fenestrated capillaries and specialized ependyma.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Blood and CSF (no barrier): toxins, drugs, hormones"
+   },
+   {
+    "from": "Vagal and glossopharyngeal visceral afferents",
+    "via": "nucleus solitarius"
+   },
+   {
+    "from": "Vestibular nuclei",
+    "note": "motion sickness"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Nucleus of the solitary tract and the ventrolateral medullary vomiting center"
+   },
+   {
+    "to": "Parabrachial nucleus and hypothalamus"
+   },
+   {
+    "to": "Dorsal motor nucleus of the vagus"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Its neurons carry receptors for dopamine, serotonin, substance P, opioids, glucagon-like peptide 1 and amylin, and are excited by emetic drugs such as apomorphine, chemotherapy agents and digoxin, by uremia and ketoacidosis, and by vestibular input in motion sickness. They project to the nucleus of the solitary tract, the parabrachial nucleus and the vomiting center in the ventrolateral medulla, which coordinates the retching sequence of gastric relaxation, retrograde intestinal contraction, glottic closure and abdominal contraction. Through solitary and hypothalamic connections the area postrema also mediates satiety from gut hormones, the pressor response to angiotensin and the aversion learned after nausea.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pica",
+   "artery-vertebral"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -44,
+     "z": -46
+    },
+    "label": "obex at the caudal tip of the fourth ventricle"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -44,
+     "z": -46
+    },
+    "label": "dorsal medulla at the obex, lateral to the midline"
+   }
+  ],
+  "normalAppearance": "Not resolved as a distinct structure on routine MRI; it lies at the posterior surface of the medulla at the obex, where the fourth ventricle narrows into the central canal. Because it lacks a barrier, it can enhance faintly after gadolinium as a normal finding.",
+  "pathology": [
+   {
+    "pathology": "Area postrema syndrome (neuromyelitis optica)",
+    "modality": "MRI",
+    "finding": "T2 and FLAIR hyperintensity of the dorsal medulla at the obex, often extending into the upper cervical cord, in a patient with intractable vomiting and hiccups; aquaporin-4 antibodies positive.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Dorsal medullary infarct or tumor",
+    "modality": "MRI",
+    "finding": "Lesion of the caudal floor of the fourth ventricle (PICA infarct, ependymoma, hemangioblastoma) presenting with vomiting and hiccups.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Intractable nausea, vomiting and hiccups",
+    "side": "bilateral",
+    "mechanism": "Direct excitation or irritation of the chemoreceptor trigger zone and its solitary connections"
+   },
+   {
+    "deficit": "Loss of the emetic response to toxins",
+    "side": "bilateral",
+    "mechanism": "Ablation of the trigger zone, as in experimental lesions"
+   },
+   {
+    "deficit": "Disturbed fluid balance and appetite",
+    "side": "bilateral",
+    "mechanism": "Loss of the sensing of osmolality, angiotensin and gut peptides"
+   }
+  ],
+  "examination": [
+   "Unexplained vomiting or hiccups lasting days without a gastrointestinal cause: examine the lower cranial nerves and image the medulla",
+   "Ask about optic neuritis and myelitis when an area postrema syndrome is suspected"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary"
+  ],
+  "pearls": [
+   "Weeks of unexplained hiccups or vomiting can be the first attack of neuromyelitis optica, weeks before the myelitis",
+   "The area postrema is why dopamine antagonists stop chemotherapy nausea and why levodopa causes it",
+   "It lies outside the blood–brain barrier, so drugs that do not enter the brain can still cause vomiting"
+  ]
+ },
+ "pitfalls": [
+  "Faint enhancement of the area postrema after gadolinium is normal because it has no blood–brain barrier"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    203,
+    203
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 5,
+   "pages": [
+    199,
+    208
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 21,
+   "pages": [
+    224,
+    227
+   ]
+  }
+ ],
+ "tags": [
+  "circumventricular",
+  "vomiting"
+ ],
+ "status": "draft",
+ "subsystem": "medulla",
+ "level": {
+  "region": "medulla",
+  "sub": "medulla-olive"
+ }
+}

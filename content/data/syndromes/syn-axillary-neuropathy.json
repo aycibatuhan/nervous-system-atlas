@@ -1,0 +1,114 @@
+{
+ "kind": "syndrome",
+ "id": "syn-axillary-neuropathy",
+ "name": "Axillary nerve palsy",
+ "eponyms": [],
+ "category": "traumatic",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "nerve-axillary",
+   "plexus-brachial"
+  ],
+  "side": "ipsilateral"
+ },
+ "lesionMarker": {
+  "kind": "nerve",
+  "meshIds": [
+   "axillary-nerve-l"
+  ]
+ },
+ "presentation": "After an anterior shoulder dislocation or a fracture of the surgical neck of the humerus, a patient cannot lift the arm sideways once the first few degrees are achieved by the supraspinatus, the rounded contour of the shoulder flattens as the deltoid wastes, and there is a patch of numbness over the outer upper arm. External rotation may be mildly weak from teres minor involvement. Sleeping with the arm over a chair back or crutch pressure can produce the same picture.",
+ "deficits": [
+  {
+   "modality": "motor",
+   "side": "ipsilateral",
+   "distribution": "deltoid and teres minor",
+   "sign": "Weak abduction beyond 15–30° and forward flexion; flattened shoulder contour with wasting",
+   "substrate": "nerve-axillary"
+  },
+  {
+   "modality": "sensory-light-touch",
+   "side": "ipsilateral",
+   "distribution": "'regimental badge' area over the lateral deltoid",
+   "sign": "Sensory loss over the upper lateral arm (upper lateral cutaneous nerve of the arm)",
+   "substrate": "nerve-axillary"
+  },
+  {
+   "modality": "motor",
+   "side": "n/a",
+   "distribution": "supraspinatus and other C5 muscles",
+   "sign": "Initial abduction and elbow flexion preserved, separating it from C5 root and upper trunk lesions",
+   "substrate": "nerve-suprascapular"
+  }
+ ],
+ "reasoning": "The axillary nerve is a terminal branch of the posterior cord carrying C5 and C6 fibers; it leaves the axilla backward through the quadrangular space beneath the shoulder joint capsule, curls around the surgical neck of the humerus with the posterior circumflex humeral vessels and supplies the deltoid and teres minor and a patch of skin over the deltoid. Its intimate relation to the inferior joint capsule and the surgical neck is why an anterior dislocation of the humeral head or a fracture at the surgical neck stretches or tears it, and why it is at risk during shoulder surgery and from crutches pressing into the axilla. It is an uncrossed peripheral nerve, so the deficit is on the side of the injury: the deltoid, the main abductor and flexor of the shoulder, is paralyzed, but the supraspinatus, supplied by the suprascapular nerve, still initiates abduction, so the first few degrees are possible and the patient compensates by hitching the shoulder. The sensory territory is small and constant, over the deltoid, and its loss confirms the nerve rather than a root: a C5 radiculopathy would weaken the supraspinatus, the biceps and the rhomboids as well and produce a broader sensory loss with neck pain. Most closed injuries are neurapraxic and recover within months, and the deltoid is examined after every shoulder dislocation and before its reduction.",
+ "imagingFindings": [
+  {
+   "pathology": "Nerve conduction and EMG",
+   "modality": "EMG/NCS",
+   "finding": "Denervation confined to the deltoid and teres minor with reduced axillary motor amplitude; normal supraspinatus, biceps and paraspinals.",
+   "sequence": "n/a"
+  },
+  {
+   "pathology": "Shoulder dislocation or humeral fracture",
+   "modality": "CT",
+   "finding": "Anterior glenohumeral dislocation, Hill–Sachs lesion or surgical neck fracture; the nerve is inferred rather than seen.",
+   "sequence": "CT non-contrast"
+  },
+  {
+   "pathology": "Quadrilateral space syndrome",
+   "modality": "MRI",
+   "finding": "Fatty atrophy of the teres minor and deltoid with a mass or fibrous band in the quadrangular space on MR.",
+   "sequence": "T1"
+  }
+ ],
+ "commonCauses": [
+  "Anterior shoulder dislocation",
+  "Fracture of the surgical neck of the humerus",
+  "Shoulder surgery and intramuscular injection",
+  "Crutch or sleep compression",
+  "Quadrilateral space syndrome (athletes)",
+  "Neuralgic amyotrophy"
+ ],
+ "mimics": [
+  {
+   "name": "C5 radiculopathy",
+   "howToDistinguish": "Supraspinatus, biceps and rhomboids also weak; neck pain; sensory loss broader"
+  },
+  {
+   "name": "Rotator cuff tear",
+   "howToDistinguish": "Painful weak abduction with normal sensation and no deltoid wasting"
+  },
+  {
+   "name": "Upper trunk plexopathy",
+   "howToDistinguish": "Elbow flexion and external rotation weak; biceps reflex lost"
+  }
+ ],
+ "management": [
+  "Document deltoid function and lateral arm sensation before and after reducing a shoulder dislocation",
+  "Physiotherapy to maintain range; EMG at 3–4 weeks if no recovery",
+  "Nerve exploration or grafting if there is no reinnervation by 3–6 months"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 16,
+   "pages": [
+    150,
+    150
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": -80,
+   "y": -30,
+   "z": -60
+  },
+  "label": "axillary nerve around the surgical neck of the humerus (virtual)"
+ },
+ "cameraPreset": "anterior"
+}

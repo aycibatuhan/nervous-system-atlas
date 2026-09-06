@@ -1,0 +1,156 @@
+{
+ "kind": "structure",
+ "id": "septal-area",
+ "name": "Septal area",
+ "synonyms": [
+  "septal nuclei",
+  "septum verum"
+ ],
+ "system": "cerebrum",
+ "meshIds": [
+  "bed-nucleus-stria-terminalis-l",
+  "bed-nucleus-stria-terminalis-r"
+ ],
+ "summary": "The septal area is a small region of gray matter on the medial surface of the frontal lobe beneath the rostrum of the corpus callosum and in front of the anterior commissure and the lamina terminalis, continuous below with the septum pellucidum. It contains the medial and lateral septal nuclei and the nucleus of the diagonal band, which form the main cholinergic input to the hippocampus through the fornix and connect the limbic system to the hypothalamus and the reward circuitry of the accumbens. It is one of the sites where lesions produce memory disturbance and where stimulation produces pleasure, and it is damaged by anterior communicating artery aneurysm rupture and its surgery, which is why those patients are often amnestic and disinhibited.",
+ "anatomy": {
+  "location": "Medial surface of the frontal lobe below the rostrum of the corpus callosum, anterior to the anterior commissure, medial to the head of the caudate and the accumbens, above the orbital cortex; the septum pellucidum extends up from it between the lateral ventricles.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Hippocampus",
+    "via": "fornix (precommissural)"
+   },
+   {
+    "from": "Amygdala",
+    "via": "stria terminalis and ventral amygdalofugal pathway"
+   },
+   {
+    "from": "Hypothalamus and midbrain reticular formation",
+    "via": "medial forebrain bundle"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Hippocampus (cholinergic theta drive)",
+    "via": "fornix"
+   },
+   {
+    "to": "Hypothalamus",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Habenula",
+    "via": "stria medullaris thalami"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "The medial septal nucleus and the vertical limb of the diagonal band send cholinergic and GABAergic fibers through the fornix to the hippocampus, where they pace the theta rhythm that underlies memory encoding and spatial navigation. The lateral septal nucleus receives the hippocampal output from the fornix and relays it to the hypothalamus and the brainstem, linking memory to emotional and autonomic responses, and it is part of the reward circuit that includes the accumbens, the ventral tegmental area and the medial forebrain bundle. The septal area also modulates aggression and social behavior through its projections to the hypothalamus and amygdala.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-aca",
+   "artery-acom"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": -2,
+     "y": 10,
+     "z": 0
+    },
+    "label": "septal area beneath the rostrum, in front of the anterior commissure"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 0,
+     "y": 8,
+     "z": 0
+    },
+    "label": "septal nuclei medial to the caudate head and accumbens"
+   }
+  ],
+  "normalAppearance": "A thin strip of gray matter beneath the rostrum of the corpus callosum, continuous with the septum pellucidum above and the paraterminal gyrus below; it is not resolved as a discrete nucleus on clinical MRI but its position medial to the accumbens and below the frontal horns is constant.",
+  "pathology": [
+   {
+    "pathology": "Anterior communicating aneurysm rupture",
+    "modality": "MRI",
+    "finding": "Basal forebrain and septal infarcts after vasospasm or surgical clipping, with restricted diffusion medial to the caudate heads and beneath the rostrum, bilateral in many.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Septal tumor or cyst",
+    "modality": "MRI",
+    "finding": "Cavum septi pellucidi or a subependymoma of the septum bulging into the frontal horns; central neurocytoma attached to the septum with calcification.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anterograde amnesia with confabulation",
+    "side": "bilateral",
+    "mechanism": "Loss of septohippocampal cholinergic drive and of the fornix pathway after basal forebrain infarction"
+   },
+   {
+    "deficit": "Disinhibition, irritability and rage",
+    "side": "bilateral",
+    "mechanism": "Loss of septal modulation of hypothalamic and amygdalar aggression circuits (septal rage in animals)"
+   },
+   {
+    "deficit": "Apathy and reduced motivation",
+    "side": "bilateral",
+    "mechanism": "Interruption of the reward circuit through the accumbens and medial forebrain bundle"
+   }
+  ],
+  "examination": [
+   "Test recent memory and confabulation in every patient after anterior communicating aneurysm surgery",
+   "Ask the family about personality change and irritability",
+   "Look for coexisting frontal signs (grasp, utilization behavior) from the neighboring orbital cortex"
+  ],
+  "syndromes": [
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Basal forebrain amnesia after anterior communicating aneurysm rupture is a septal and diagonal band lesion, not a hippocampal one",
+   "The septal nuclei are the pacemaker of hippocampal theta and one of the earliest cholinergic groups to degenerate in Alzheimer disease",
+   "A cavum septi pellucidi is a normal variant and not a septal lesion"
+  ]
+ },
+ "pitfalls": [
+  "Septal lesions are rarely isolated; most 'septal' syndromes are basal forebrain infarcts that also involve the diagonal band and the accumbens"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    305,
+    305
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 9,
+   "pages": [
+    301,
+    306
+   ]
+  }
+ ],
+ "tags": [
+  "limbic",
+  "basal forebrain"
+ ],
+ "status": "draft",
+ "subsystem": "limbic"
+}

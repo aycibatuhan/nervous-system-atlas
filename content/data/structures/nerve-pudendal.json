@@ -1,0 +1,151 @@
+{
+ "kind": "structure",
+ "id": "nerve-pudendal",
+ "name": "Pudendal nerve",
+ "synonyms": [],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "The pudendal nerve carries the S2–S4 fibers that supply the perineum: motor to the external anal and urethral sphincters and the muscles of the pelvic floor and erection, sensory to the perineal skin, the external genitalia and the anal canal below the pectinate line, and the afferent limb of the reflexes that control continence and sexual function. It leaves the pelvis through the greater sciatic foramen, hooks around the sacrospinous ligament beside the ischial spine and re-enters through the lesser sciatic foramen into the pudendal canal on the lateral wall of the ischiorectal fossa. It is stretched in childbirth and prolonged cycling, blocked at the ischial spine for obstetric anesthesia, and entrapped in Alcock's canal to produce perineal pain that is worse sitting; its S2–S4 origin makes it the peripheral counterpart of the conus and cauda equina in sphincter localization.",
+ "anatomy": {
+  "location": "Sacral plexus (S2–S4) → exits the pelvis below the piriformis through the greater sciatic foramen → crosses the sacrospinous ligament medial to the pudendal vessels at the ischial spine → re-enters through the lesser sciatic foramen → pudendal (Alcock's) canal in the obturator fascia of the ischiorectal fossa → inferior rectal nerve, perineal nerve and dorsal nerve of the penis or clitoris.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Perineal skin, external genitalia, lower anal canal",
+    "via": "inferior rectal, perineal and dorsal nerves"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "External anal and urethral sphincters, levator ani, bulbospongiosus, ischiocavernosus",
+    "via": "inferior rectal and perineal nerves"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Motor fibers from the Onuf nucleus of S2–S4 supply the external anal and urethral sphincters, the levator ani, the bulbospongiosus and ischiocavernosus, giving voluntary continence and the rigidity phase of erection and ejaculation; sensory fibers convey touch and pain from the perineum, scrotum or labia, penis or clitoris and the lower anal canal, which drives the bulbocavernosus and anal reflexes and the sensory component of sexual response. The parasympathetic pelvic splanchnic nerves from the same segments, though separate, run alongside for erection and bladder emptying.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": -60,
+     "y": -60,
+     "z": -220
+    },
+    "label": "pudendal nerve at the ischial spine and in Alcock's canal (virtual)"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -50,
+     "z": -160
+    },
+    "label": "S2–S4 segments of the conus, the origin of the pudendal nerve"
+   }
+  ],
+  "normalAppearance": "Not shown on neuraxis imaging; on pelvic MR neurography it is seen crossing the sacrospinous ligament medial to the ischial spine and running in the pudendal canal with the internal pudendal vessels. Its cord origin lies in the conus at T12–L1.",
+  "pathology": [
+   {
+    "pathology": "Pudendal nerve entrapment",
+    "modality": "MRI",
+    "finding": "Thickening and T2 hyperintensity of the nerve at the ischial spine or in Alcock's canal, sometimes with a compressing vessel or scar; diagnostic block confirms.",
+    "sequence": "STIR"
+   },
+   {
+    "pathology": "Conus or cauda equina lesion (central mimic)",
+    "modality": "MRI",
+    "finding": "Lesion at T12–L2 producing saddle anesthesia and sphincter loss that mimics bilateral pudendal neuropathy.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Pudendal terminal motor latency",
+    "modality": "EMG/NCS",
+    "finding": "Prolonged latency to the anal sphincter after stimulation at the ischial spine in obstetric or chronic stretch injury.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Perineal numbness and burning pain worse sitting, relieved standing",
+    "side": "ipsilateral",
+    "mechanism": "Entrapment between the sacrospinous and sacrotuberous ligaments or in Alcock's canal"
+   },
+   {
+    "deficit": "Fecal and urinary stress incontinence",
+    "side": "bilateral",
+    "mechanism": "Stretch injury of the pudendal nerve in childbirth denervating the external sphincters"
+   },
+   {
+    "deficit": "Erectile dysfunction and genital numbness",
+    "side": "bilateral",
+    "mechanism": "Compression of the dorsal nerve of the penis (cycling) or perineal branches"
+   },
+   {
+    "deficit": "Absent bulbocavernosus and anal reflexes",
+    "side": "bilateral",
+    "mechanism": "Interruption of the reflex arc: pudendal nerve or S2–S4 segments"
+   }
+  ],
+  "examination": [
+   "Perineal and perianal sensation, anal tone and voluntary squeeze",
+   "Bulbocavernosus and anal wink reflexes",
+   "Ask about the effect of sitting and cycling on the pain"
+  ],
+  "syndromes": [
+   "syn-conus-vs-cauda-equina"
+  ],
+  "pearls": [
+   "Perineal pain that disappears on standing and on the toilet seat is pudendal neuralgia (Nantes criteria)",
+   "Bilateral saddle anesthesia with sphincter loss is the conus or cauda equina, not the pudendal nerve, until imaging says otherwise",
+   "The pudendal nerve block at the ischial spine is the obstetric anesthetic of the perineum"
+  ]
+ },
+ "pitfalls": [
+  "Perineal sensory loss can be pudendal, sacral root or conus in origin; the presence of leg signs or a sensory level decides"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    159
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    405,
+    408
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 4,
+   "pages": [
+    168,
+    172
+   ]
+  }
+ ],
+ "tags": [
+  "sphincters",
+  "S2-S4"
+ ],
+ "status": "draft",
+ "subsystem": "lower-limb",
+ "parent": "plexus-lumbosacral"
+}

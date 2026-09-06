@@ -1,0 +1,194 @@
+{
+ "kind": "structure",
+ "id": "cerebellar-cortex-layers",
+ "name": "Cerebellar cortex: layers and circuit",
+ "synonyms": [
+  "cerebellar cortex",
+  "folia"
+ ],
+ "system": "cerebellum",
+ "meshIds": [
+  "cerebellar-hemisphere-l",
+  "cerebellar-hemisphere-r"
+ ],
+ "summary": "The cerebellar cortex is a uniform three-layered sheet folded into thousands of folia: an outer molecular layer of parallel fibers, stellate and basket cells; a single row of Purkinje cells; and an inner granular layer packed with granule cells and Golgi cells. Two afferent systems enter it. Mossy fibers from the pontine nuclei, spinal cord and vestibular nuclei excite granule cells, whose axons rise to the molecular layer and split into parallel fibers that run along the folium and excite the flat dendritic trees of thousands of Purkinje cells. Climbing fibers from the contralateral inferior olive each wrap around a single Purkinje cell and fire a complex spike that teaches it. Purkinje cells are the only output, inhibiting the deep nuclei. The uniformity of this circuit is why the cerebellum applies the same computation to movement, gaze and cognition, and its cell types are the targets of specific diseases: Purkinje cells in alcohol, paraneoplastic and hypoxic injury, granule cells in medulloblastoma.",
+ "anatomy": {
+  "location": "The gray matter covering the folia of the whole cerebellum, about 1 mm thick, with the same three layers everywhere; the Purkinje layer separates the outer molecular layer from the inner granular layer, and the white matter core carries the afferent and efferent fibers to the deep nuclei.",
+  "subdivisions": [
+   {
+    "name": "Molecular layer",
+    "note": "parallel fibers, Purkinje dendrites, stellate and basket cells"
+   },
+   {
+    "name": "Purkinje cell layer",
+    "note": "single row of large GABAergic output neurons"
+   },
+   {
+    "name": "Granular layer",
+    "note": "granule cells (the most numerous neurons in the brain), Golgi cells, mossy fiber glomeruli"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Pontine nuclei, spinal cord, vestibular nuclei, reticular formation",
+    "via": "mossy fibers via all three peduncles"
+   },
+   {
+    "from": "Contralateral inferior olive",
+    "via": "climbing fibers via the inferior cerebellar peduncle"
+   },
+   {
+    "from": "Locus coeruleus and raphe",
+    "via": "aminergic fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Deep cerebellar nuclei (dentate, interposed, fastigial)",
+    "via": "Purkinje cell axons"
+   },
+   {
+    "to": "Vestibular nuclei",
+    "via": "direct Purkinje projection from the flocculonodular lobe and vermis"
+   }
+  ],
+  "pathways": [
+   "pathway-cerebellar-circuits",
+   "pathway-posterior-spinocerebellar",
+   "pathway-vestibular-vor"
+  ]
+ },
+ "function": "Mossy fiber input is expanded by the granule cells into a sparse code carried by the parallel fibers, which Purkinje cells read through about 200,000 synapses each; climbing fiber input signals errors and induces long-term depression at the parallel fiber synapses that were active just before, so that the Purkinje cell learns to predict and correct the error, the basis of motor learning and of the adaptation of the vestibulo-ocular reflex. Basket and stellate cells sharpen the Purkinje output in space and Golgi cells in time. Purkinje cells inhibit the deep nuclei and the vestibular nuclei, sculpting the excitatory signal that collaterals of the mossy and climbing fibers have already delivered there, so that the cerebellum's output is a timed modulation rather than a command.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "artery-aica",
+   "artery-pica"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": -20,
+     "y": -60,
+     "z": -30
+    },
+    "label": "folia of the cerebellar hemisphere"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -60,
+     "z": -30
+    },
+    "label": "cerebellar cortex and white matter arbor vitae"
+   }
+  ],
+  "normalAppearance": "The cortex forms the gray rim of each folium with the white matter arbor vitae branching into it; the layers are below MRI resolution but the folial pattern is sharp on T1 and the cortex is slightly brighter than white matter on FLAIR. Cerebellar atrophy widens the fissures and thins the folia.",
+  "pathology": [
+   {
+    "pathology": "Cerebellar cortical atrophy",
+    "modality": "MRI",
+    "finding": "Widened cerebellar fissures with thin folia, diffuse in spinocerebellar ataxias, paraneoplastic degeneration and phenytoin toxicity, anterior vermian in alcohol.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Cerebellar cortical infarct or hypoxia",
+    "modality": "MRI",
+    "finding": "Restricted diffusion outlining the folia (gyriform) in the border zones or in the whole cortex after cardiac arrest, reflecting Purkinje cell vulnerability.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Medulloblastoma",
+    "modality": "MRI",
+    "finding": "Cellular tumor of granule cell lineage in the vermis and fourth ventricle with restricted diffusion and enhancement.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Lhermitte–Duclos disease",
+    "modality": "MRI",
+    "finding": "Striated 'tiger-stripe' thickening of the folia of one hemisphere (dysplastic gangliocytoma) in Cowden syndrome.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Ataxia, dysmetria and intention tremor",
+    "side": "ipsilateral",
+    "mechanism": "Loss of Purkinje cell timing of the deep nuclear output"
+   },
+   {
+    "deficit": "Gait ataxia and nystagmus",
+    "side": "bilateral",
+    "mechanism": "Diffuse Purkinje cell loss in toxic, paraneoplastic and hereditary degenerations"
+   },
+   {
+    "deficit": "Impaired motor learning and VOR adaptation",
+    "side": "bilateral",
+    "mechanism": "Loss of climbing fiber-dependent plasticity"
+   },
+   {
+    "deficit": "Cerebellar cognitive affective syndrome",
+    "side": "bilateral",
+    "mechanism": "Posterior lobe cortical involvement disturbing the cerebro-cerebellar cognitive loops"
+   }
+  ],
+  "examination": [
+   "Standard cerebellar examination: finger-nose, heel-shin, rapid alternating movements, tandem gait",
+   "Eye movements: gaze-evoked and downbeat nystagmus, saccadic pursuit",
+   "Cognitive screening in diffuse cerebellar disease"
+  ],
+  "syndromes": [
+   "syn-cerebellar-hemispheric",
+   "syn-cerebellar-vermian-midline"
+  ],
+  "pearls": [
+   "Purkinje cells are among the most vulnerable neurons in the brain: alcohol, hypoxia, hyperthermia, phenytoin and anti-Yo antibodies kill them selectively",
+   "Every part of the cerebellar cortex has the same circuit; what differs is where the input comes from and where the output goes",
+   "Anti-Yo paraneoplastic degeneration in a woman with ovarian or breast cancer produces a subacute pancerebellar syndrome with a normal MRI at first"
+  ]
+ },
+ "pitfalls": [
+  "Cerebellar cortical atrophy on MRI in the elderly may be asymptomatic; correlate with the examination"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    231,
+    234
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 6,
+   "pages": [
+    236,
+    240
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 8,
+   "pages": [
+    67,
+    70
+   ]
+  }
+ ],
+ "tags": [
+  "histology",
+  "circuit"
+ ],
+ "status": "draft",
+ "parent": "cerebellum"
+}

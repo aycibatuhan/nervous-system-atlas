@@ -1,0 +1,150 @@
+{
+ "kind": "structure",
+ "id": "splanchnic-nerves",
+ "name": "Splanchnic nerves",
+ "synonyms": [
+  "thoracic splanchnic nerves",
+  "lumbar splanchnic nerves"
+ ],
+ "system": "autonomic",
+ "meshIds": [
+  "spinal-cord"
+ ],
+ "summary": "The splanchnic nerves carry the sympathetic outflow from the thoracic and lumbar cord to the abdominal and pelvic viscera, bypassing the paravertebral chain to synapse in the prevertebral ganglia. The greater (T5–T9), lesser (T10–T11) and least (T12) splanchnic nerves pierce the diaphragm to reach the celiac, superior mesenteric and aorticorenal ganglia, and the lumbar splanchnic nerves (L1–L2) reach the inferior mesenteric and hypogastric plexuses. They also carry the visceral pain afferents from the gut, whose cell bodies lie in the thoracolumbar dorsal root ganglia, which is why visceral pain is referred to the dermatomes of those segments and why a celiac plexus block relieves pancreatic cancer pain. The pelvic splanchnic nerves, despite the name, are the parasympathetic outflow of S2–S4 and are described with the sacral parasympathetic system.",
+ "anatomy": {
+  "location": "Preganglionic sympathetic fibers leave the T5–L2 intermediolateral column through the white rami, pass through the sympathetic chain without synapsing, and form the greater, lesser and least thoracic splanchnic nerves on the vertebral bodies, which pierce the crura of the diaphragm, and the lumbar splanchnic nerves from the lumbar chain; they end in the prevertebral ganglia around the origins of the celiac, superior mesenteric and inferior mesenteric arteries and in the hypogastric plexus.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Visceral afferents from the abdominal viscera (pain, distension)",
+    "via": "run with the sympathetic fibers to the T5–L2 dorsal root ganglia"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Celiac, superior mesenteric, aorticorenal and inferior mesenteric ganglia; adrenal medulla",
+    "via": "greater, lesser, least and lumbar splanchnic nerves"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Postganglionic fibers from the prevertebral ganglia follow the arteries to the gut, liver, pancreas, spleen, kidneys and adrenal medulla, inhibiting peristalsis and secretion, constricting splanchnic vessels to redistribute blood in exercise and hemorrhage, and controlling the sphincters; the greater splanchnic nerve's preganglionic fibers synapse directly on adrenal medullary cells to release catecholamines. Afferent fibers running with them signal distension, ischemia and inflammation of the viscera and mediate referred pain, and the splanchnic bed is the largest reservoir controlled by sympathetic tone, so its loss in autonomic failure causes orthostatic hypotension and postprandial hypotension.",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -50,
+     "z": -120
+    },
+    "label": "T5–L2 segments of the cord: intermediolateral column and the origin of the splanchnic outflow"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -50,
+     "z": -120
+    },
+    "label": "thoracic cord: intermediolateral cell column at the lateral horn"
+   }
+  ],
+  "normalAppearance": "The nerves themselves are not seen on neuraxis imaging; their cord origin is the lateral horn of the thoracic and upper lumbar segments. On body CT the celiac ganglia lie beside the celiac trunk as small soft tissue nodules, the landmark for celiac plexus block.",
+  "pathology": [
+   {
+    "pathology": "Celiac plexus invasion",
+    "modality": "CT",
+    "finding": "Soft tissue encasing the celiac trunk and superior mesenteric origin from pancreatic carcinoma, the anatomical basis of intractable epigastric and back pain.",
+    "sequence": "CT contrast"
+   },
+   {
+    "pathology": "Thoracic cord lesion above T6",
+    "modality": "MRI",
+    "finding": "Cord injury or transverse myelitis at or above T6 disconnecting the splanchnic outflow, with autonomic dysreflexia and neurogenic shock.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Orthostatic and postprandial hypotension",
+    "side": "bilateral",
+    "mechanism": "Loss of splanchnic vasoconstriction in autonomic failure or high cord lesions"
+   },
+   {
+    "deficit": "Autonomic dysreflexia",
+    "side": "bilateral",
+    "mechanism": "Unopposed splanchnic sympathetic discharge below a cord lesion above T6 in response to bladder or bowel distension"
+   },
+   {
+    "deficit": "Ileus and constipation",
+    "side": "bilateral",
+    "mechanism": "Sympathetic overactivity or loss of coordinated control after cord injury or surgery"
+   },
+   {
+    "deficit": "Referred visceral pain",
+    "side": "bilateral",
+    "mechanism": "Convergence of splanchnic afferents on T5–L2 dorsal horn neurons shared with somatic dermatomes"
+   }
+  ],
+  "examination": [
+   "Lying and standing blood pressure, including after meals",
+   "Abdominal examination for distension in cord-injured patients with hypertension and headache",
+   "Map referred pain to dermatomes: epigastrium T5–T9, umbilicus T10, suprapubic T11–L1"
+  ],
+  "syndromes": [
+   "syn-complete-transection-spinal-shock",
+   "syn-horner"
+  ],
+  "pearls": [
+   "Autonomic dysreflexia needs a lesion above T6 because the splanchnic bed, the main sympathetic reservoir, is then beyond the reach of the brainstem",
+   "A celiac plexus block interrupts both the sympathetic efferents and the pain afferents of the upper abdomen",
+   "Referred pain follows the splanchnic afferents to the thoracolumbar dorsal horn, not the vagus"
+  ]
+ },
+ "pitfalls": [
+  "The pelvic splanchnic nerves are parasympathetic (S2–S4), not sympathetic, despite the shared name"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    390,
+    391
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 14,
+   "pages": [
+    387,
+    408
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 4,
+   "pages": [
+    41,
+    44
+   ]
+  }
+ ],
+ "tags": [
+  "sympathetic",
+  "viscera"
+ ],
+ "status": "draft",
+ "subsystem": "sympathetic"
+}

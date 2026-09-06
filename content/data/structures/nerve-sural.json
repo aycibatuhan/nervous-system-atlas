@@ -1,0 +1,124 @@
+{
+ "kind": "structure",
+ "id": "nerve-sural",
+ "name": "Sural nerve",
+ "synonyms": [
+  "short saphenous nerve (old)"
+ ],
+ "system": "peripheral",
+ "meshIds": [],
+ "summary": "The sural nerve is a purely sensory nerve of the calf formed by the medial sural cutaneous branch of the tibial nerve joined by the peroneal communicating branch of the common peroneal nerve; it descends between the heads of the gastrocnemius, pierces the deep fascia in the mid-calf, runs beside the small saphenous vein behind the lateral malleolus and supplies the skin of the posterolateral leg, the lateral heel and the lateral border of the foot to the fifth toe. It matters clinically far beyond its small territory: its sensory action potential is the standard measure of a length-dependent polyneuropathy, its preservation in a foot drop points to a root rather than a nerve lesion, and it is the nerve most often biopsied for vasculitis and amyloid, leaving a patch of numbness on the lateral foot.",
+ "anatomy": {
+  "location": "Formed in the popliteal fossa or upper calf from tibial and common peroneal contributions (the level of union varies), descends superficially in the posterior calf lateral to the Achilles tendon, passes behind the lateral malleolus with the small saphenous vein, and ends as the lateral dorsal cutaneous nerve of the foot.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Skin of the posterolateral leg, lateral heel and lateral foot"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Tibial nerve (medial sural cutaneous) and common peroneal nerve (communicating branch) → sciatic nerve → S1 (S2) roots"
+   }
+  ],
+  "pathways": []
+ },
+ "function": "Carries cutaneous sensation from the posterolateral calf, the lateral ankle and heel and the lateral border of the foot including the fifth toe, with S1 as its main root. Its accessibility and constant position make it the nerve of choice for sensory conduction studies and biopsy, and its composition of mixed large and small fibers allows histological assessment of both.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": -70,
+     "y": -50,
+     "z": -350
+    },
+    "label": "sural nerve beside the small saphenous vein in the posterolateral calf (virtual)"
+   }
+  ],
+  "normalAppearance": "Not shown on brain or spine imaging; on high-resolution ultrasound it is a small fascicular structure adjacent to the small saphenous vein in the posterior calf, and on MR neurography it is seen in the subcutaneous fat lateral to the Achilles tendon.",
+  "pathology": [
+   {
+    "pathology": "Sural nerve enlargement",
+    "modality": "US",
+    "finding": "Hypoechoic swelling of the nerve in demyelinating neuropathies (CIDP, Charcot–Marie–Tooth) or a focal neuroma after ankle surgery.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Nerve biopsy findings",
+    "modality": "EMG/NCS",
+    "finding": "Reduced or absent sural sensory action potential in length-dependent axonal neuropathy; biopsy shows vasculitis, amyloid or demyelination.",
+    "sequence": "n/a"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Numbness of the lateral foot and heel",
+    "side": "ipsilateral",
+    "mechanism": "Nerve section or biopsy"
+   },
+   {
+    "deficit": "Painful neuroma",
+    "side": "ipsilateral",
+    "mechanism": "Injury during Achilles or ankle surgery or after harvesting for grafting"
+   },
+   {
+    "deficit": "Absent sural response with normal superficial peroneal response",
+    "side": "n/a",
+    "mechanism": "Not a lesion of the nerve: a pattern that helps separate S1 radiculopathy (sural spared) from tibial or sciatic lesions"
+   }
+  ],
+  "examination": [
+   "Test pin-prick on the lateral border of the foot",
+   "Sural sensory conduction in any suspected polyneuropathy",
+   "Compare sural and superficial peroneal responses when localizing a foot drop"
+  ],
+  "syndromes": [
+   "syn-length-dependent-polyneuropathy",
+   "syn-radiculopathy-lumbosacral"
+  ],
+  "pearls": [
+   "A preserved sural sensory response with sensory loss on the lateral foot means the lesion is proximal to the dorsal root ganglion: an S1 radiculopathy",
+   "The sural nerve is the most biopsied nerve because it is expendable, superficial and representative",
+   "Absent sural responses in the elderly can be normal; interpret with the clinical picture"
+  ]
+ },
+ "pitfalls": [
+  "The union of the sural components varies; in some people the nerve is entirely tibial or entirely peroneal"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 17,
+   "pages": [
+    157,
+    166
+   ]
+  },
+  {
+   "book": "berkowitz",
+   "chapter": 27,
+   "pages": [
+    283,
+    287
+   ]
+  }
+ ],
+ "tags": [
+  "sensory",
+  "biopsy"
+ ],
+ "status": "draft",
+ "subsystem": "lower-limb",
+ "parent": "nerve-tibial"
+}

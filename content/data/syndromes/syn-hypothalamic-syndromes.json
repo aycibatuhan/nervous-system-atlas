@@ -1,0 +1,149 @@
+{
+ "kind": "syndrome",
+ "id": "syn-hypothalamic-syndromes",
+ "name": "Hypothalamic syndromes",
+ "eponyms": [],
+ "category": "neoplastic",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "hypothalamus",
+   "pituitary-infundibulum",
+   "mammillary-body",
+   "optic-chiasm"
+  ],
+  "side": "bilateral"
+ },
+ "lesionMarker": {
+  "kind": "structures",
+  "meshIds": [
+   "hypothalamus-anterior-l",
+   "hypothalamus-anterior-r",
+   "hypothalamus-posterior-l",
+   "hypothalamus-posterior-r"
+  ]
+ },
+ "presentation": "A child with a suprasellar tumor stops growing, drinks and passes enormous volumes of dilute urine, sleeps at odd hours and becomes either wasted or obese with an insatiable appetite. An adult with a lesion of the same region has a body temperature that swings without infection, faints on standing, has lost the ability to feel thirst and has become emotionally flat or explosively angry. Visual field loss from the neighboring chiasm and the endocrine failure of the pituitary are frequent companions.",
+ "deficits": [
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "water balance",
+   "sign": "Diabetes insipidus (supraoptic and paraventricular nuclei); adipsia or hypernatremia with anterior lesions; SIADH with irritative lesions",
+   "substrate": "hypothalamus"
+  },
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "temperature",
+   "sign": "Hyperthermia with anterior (preoptic) lesions, hypothermia or poikilothermia with posterior lesions",
+   "substrate": "hypothalamus"
+  },
+  {
+   "modality": "autonomic",
+   "side": "bilateral",
+   "distribution": "feeding",
+   "sign": "Hyperphagia and obesity with ventromedial lesions; anorexia and emaciation (diencephalic syndrome of infancy) with lateral lesions",
+   "substrate": "hypothalamus"
+  },
+  {
+   "modality": "consciousness",
+   "side": "bilateral",
+   "distribution": "sleep-wake",
+   "sign": "Hypersomnia with posterior lesions, insomnia with anterior lesions; disrupted circadian rhythm (suprachiasmatic nucleus)",
+   "substrate": "reticular-formation"
+  },
+  {
+   "modality": "other",
+   "side": "bilateral",
+   "distribution": "endocrine",
+   "sign": "Hypopituitarism, growth failure, precocious or delayed puberty, hyperprolactinemia from stalk compression",
+   "substrate": "pituitary-infundibulum"
+  },
+  {
+   "modality": "cognitive",
+   "side": "bilateral",
+   "distribution": "emotion and memory",
+   "sign": "Rage, apathy, emotional lability; amnesia with mammillary body involvement",
+   "substrate": "mammillary-body"
+  }
+ ],
+ "reasoning": "The hypothalamus is a few grams of tissue in the walls and floor of the third ventricle that regulates the internal environment through three routes: the pituitary, by releasing hormones into the portal vessels and by sending vasopressin and oxytocin down the stalk to the posterior lobe; the autonomic nervous system, through descending fibers to the brainstem and spinal preganglionic neurons; and behavior, through the limbic system. Its nuclei are arranged so that the anterior region houses the supraoptic and paraventricular nuclei that make vasopressin, the preoptic heat-loss center and the sleep-promoting neurons, while the posterior region contains the heat-conserving and arousal (orexin) neurons and the mammillary bodies of the memory circuit, and the medial tuberal region holds the ventromedial satiety and arcuate feeding nuclei beside the lateral feeding area. A lesion can therefore be localized by its combination of effects: anterior lesions cause hyperthermia, insomnia and diabetes insipidus, posterior lesions hypothermia, hypersomnia and amnesia, ventromedial lesions hyperphagia and rage, lateral lesions anorexia. Because the paired nuclei sit on either side of the narrow third ventricle and each projects bilaterally, most syndromes require bilateral or midline lesions and show no lateralization, with no ipsilateral or contralateral rule to apply, and the neighboring chiasm and pituitary stalk are almost always involved by the same mass, adding the bitemporal field defect and hypopituitarism. Craniopharyngiomas, hypothalamic gliomas, germinomas, sarcoidosis, Langerhans cell histiocytosis and surgery of the region are the usual causes.",
+ "imagingFindings": [
+  {
+   "pathology": "Hypothalamic or suprasellar mass",
+   "modality": "MRI",
+   "finding": "Craniopharyngioma (cystic, calcified), optic-hypothalamic glioma (T2-bright infiltrating mass), germinoma (enhancing, often with a pineal twin) or hamartoma of the tuber cinereum in the floor of the third ventricle; thickened enhancing stalk in histiocytosis, sarcoidosis and hypophysitis.",
+   "sequence": "T1+Gd"
+  },
+  {
+   "pathology": "Loss of the posterior pituitary bright spot",
+   "modality": "MRI",
+   "finding": "Absent T1 hyperintensity of the neurohypophysis in central diabetes insipidus.",
+   "sequence": "T1"
+  },
+  {
+   "pathology": "Wernicke encephalopathy and other symmetric lesions",
+   "modality": "MRI",
+   "finding": "Symmetric FLAIR change around the third ventricle and in the mammillary bodies.",
+   "sequence": "FLAIR"
+  }
+ ],
+ "commonCauses": [
+  "Craniopharyngioma",
+  "Hypothalamic or optic pathway glioma (neurofibromatosis 1)",
+  "Germ cell tumor",
+  "Sarcoidosis, Langerhans cell histiocytosis, lymphocytic hypophysitis",
+  "Surgery or radiotherapy of the region, subarachnoid hemorrhage, trauma",
+  "Wernicke encephalopathy",
+  "Hypothalamic hamartoma (gelastic seizures, precocious puberty)"
+ ],
+ "mimics": [
+  {
+   "name": "Primary endocrine disease",
+   "howToDistinguish": "Single hormone axis, no thirst, temperature or sleep disturbance"
+  },
+  {
+   "name": "Psychogenic polydipsia",
+   "howToDistinguish": "Water deprivation concentrates the urine; no lesion"
+  },
+  {
+   "name": "Pituitary adenoma",
+   "howToDistinguish": "Sellar origin, hypopituitarism and chiasmal compression without hypothalamic dysregulation until very large"
+  }
+ ],
+ "management": [
+  "MRI of the sella and hypothalamus with contrast; full pituitary hormone profile, paired serum and urine osmolality; tumor markers and CSF cytology for germ cell tumors",
+  "Replace deficient hormones, especially cortisol before thyroxine; desmopressin for diabetes insipidus with careful fluid balance in adipsic patients",
+  "Treat the lesion (surgery, radiotherapy, chemotherapy) with an awareness that hypothalamic damage from treatment causes obesity and sleep disturbance"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    382,
+    383
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 13,
+   "pages": [
+    373,
+    386
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "coronal",
+  "mni": {
+   "x": 0,
+   "y": -5,
+   "z": -12
+  },
+  "label": "hypothalamus in the walls of the third ventricle"
+ },
+ "cameraPreset": "anterior"
+}

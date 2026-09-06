@@ -1,0 +1,162 @@
+{
+ "kind": "structure",
+ "id": "habenula",
+ "name": "Habenula",
+ "synonyms": [
+  "habenular nuclei",
+  "epithalamus"
+ ],
+ "system": "diencephalon",
+ "meshIds": [
+  "habenula-l",
+  "habenula-r"
+ ],
+ "summary": "The habenular nuclei form a small swelling on the dorsomedial surface of the thalamus just in front of the pineal gland, at the caudal end of the stria medullaris thalami, and are joined across the midline by the habenular commissure. They are the epithalamic relay through which the limbic forebrain, the septal area, the lateral hypothalamus and the globus pallidus, reaches the midbrain monoamine nuclei by way of the fasciculus retroflexus to the interpeduncular nucleus, the ventral tegmental area and the raphe. The lateral habenula fires when a reward is smaller than expected and inhibits dopamine neurons, and its overactivity has been linked to depression; it is a target of deep brain stimulation research and a landmark in stereotactic and pineal region surgery.",
+ "anatomy": {
+  "location": "Dorsomedial thalamus at the posterior end of the stria medullaris, above and in front of the pineal, forming the habenular trigone on the wall of the third ventricle; the habenular commissure crosses in the pineal stalk.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Septal area, diagonal band, lateral preoptic and hypothalamic areas",
+    "via": "stria medullaris thalami"
+   },
+   {
+    "from": "Globus pallidus (internal segment, border cells)",
+    "via": "stria medullaris"
+   },
+   {
+    "from": "Prefrontal cortex",
+    "via": "stria medullaris"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Interpeduncular nucleus",
+    "via": "fasciculus retroflexus"
+   },
+   {
+    "to": "Ventral tegmental area and substantia nigra (via the rostromedial tegmental nucleus)",
+    "via": "fasciculus retroflexus"
+   },
+   {
+    "to": "Raphe nuclei",
+    "via": "fasciculus retroflexus"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic",
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "The medial habenula relays septal and diagonal band input to the interpeduncular nucleus and the raphe, using acetylcholine and substance P, and is involved in nicotine responses and aversion. The lateral habenula receives the pallidum, the lateral hypothalamus and the prefrontal cortex and inhibits the dopamine neurons of the ventral tegmental area and the serotonin neurons of the raphe through the rostromedial tegmental nucleus; it encodes negative reward prediction errors and disappointment and suppresses motor and motivational behavior, and it is a node in circadian and sleep regulation through its pineal connections.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating"
+  ],
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 0,
+     "y": -28,
+     "z": 4
+    },
+    "label": "habenulae on the dorsomedial thalamus in front of the pineal"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": -3,
+     "y": -28,
+     "z": 4
+    },
+    "label": "habenular trigone at the caudal end of the stria medullaris"
+   }
+  ],
+  "normalAppearance": "Small paired nodules at the posterior dorsomedial thalamus, each a few millimeters across, seen on high-resolution T1 as gray matter continuous with the stria medullaris, with the pineal immediately behind; the habenular commissure calcifies in adults and is a midline landmark on CT.",
+  "pathology": [
+   {
+    "pathology": "Habenular calcification",
+    "modality": "CT",
+    "finding": "Curvilinear calcification a few millimeters in front of the pineal, a normal finding used as a midline marker; displacement indicates mass effect.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Pineal region tumor",
+    "modality": "MRI",
+    "finding": "Mass in the pineal region compressing the habenulae and the posterior commissure, with the dorsal midbrain syndrome and hydrocephalus.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Symmetric FLAIR change in the periaqueductal and medial thalamic region can involve the habenular area.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anhedonia and depressive symptoms",
+    "side": "bilateral",
+    "mechanism": "Overactivity of the lateral habenula suppressing dopamine and serotonin release"
+   },
+   {
+    "deficit": "Reduced motivation and impaired reward learning",
+    "side": "bilateral",
+    "mechanism": "Loss of the negative reward prediction signal from the lateral habenula"
+   },
+   {
+    "deficit": "Sleep-wake disturbance",
+    "side": "bilateral",
+    "mechanism": "Interruption of habenulo-pineal and raphe connections"
+   }
+  ],
+  "examination": [
+   "Mood and motivation assessment in patients with pineal region or medial thalamic lesions",
+   "Sleep history"
+  ],
+  "syndromes": [
+   "syn-parinaud-dorsal-midbrain"
+  ],
+  "pearls": [
+   "The lateral habenula is the brain's disappointment detector, firing when a reward fails to arrive",
+   "The habenular commissure calcifies and shows as a small curve in front of the pineal on CT; do not report it as a lesion",
+   "The habenula reaches the midbrain through the fasciculus retroflexus, which is why pineal tumors can produce mood and sleep changes"
+  ]
+ },
+ "pitfalls": [
+  "Clinical lesions confined to the habenula are almost never identified; its clinical relevance is in mood circuitry and as a radiological landmark"
+ ],
+ "citations": [
+  {
+   "book": "snell",
+   "chapter": 7,
+   "pages": [
+    253,
+    254
+   ]
+  },
+  {
+   "book": "snell",
+   "chapter": 12,
+   "pages": [
+    363,
+    366
+   ]
+  }
+ ],
+ "tags": [
+  "epithalamus",
+  "reward"
+ ],
+ "status": "draft",
+ "subsystem": "epithalamus"
+}

@@ -1,0 +1,116 @@
+{
+ "kind": "syndrome",
+ "id": "syn-raymond",
+ "name": "Raymond syndrome (ventral pontine abducens)",
+ "eponyms": [
+  "Raymond syndrome"
+ ],
+ "category": "vascular",
+ "tier": "extended",
+ "localisation": {
+  "structures": [
+   "level-pons-caudal",
+   "abducens-nucleus",
+   "pontine-nuclei",
+   "artery-basilar"
+  ],
+  "side": "ipsilateral",
+  "level": "pons-caudal",
+  "arteryId": "artery-basilar"
+ },
+ "lesionMarker": {
+  "kind": "sphere",
+  "mni": {
+   "x": -4,
+   "y": -32,
+   "z": -33
+  },
+  "radiusMm": 6
+ },
+ "presentation": "A patient has an isolated inability to abduct one eye with horizontal diplopia, and a hemiparesis of the arm and leg on the opposite side, without facial weakness. The crossed pattern of a sixth nerve palsy and contralateral hemiplegia places the lesion in the ventral caudal pons where the abducens fascicle crosses the corticospinal bundles, medial to the site of the Millard–Gubler lesion.",
+ "deficits": [
+  {
+   "modality": "cranial-nerve",
+   "side": "ipsilateral",
+   "distribution": "lateral rectus",
+   "sign": "Abducens palsy: abduction deficit with esotropia",
+   "substrate": "cn-06-abducens"
+  },
+  {
+   "modality": "motor",
+   "side": "contralateral",
+   "distribution": "arm and leg",
+   "sign": "Hemiparesis with upper motor neuron signs",
+   "substrate": "pathway-lateral-corticospinal"
+  },
+  {
+   "modality": "cranial-nerve",
+   "side": "n/a",
+   "distribution": "face spared",
+   "sign": "No facial palsy (distinguishes it from Millard–Gubler)",
+   "substrate": "facial-motor-nucleus"
+  }
+ ],
+ "reasoning": "The abducens nerve fascicle leaves its nucleus in the dorsal pontine tegmentum and runs ventrally and slightly caudally through the paramedian basis pontis to emerge at the pontomedullary sulcus; on its way it passes between the corticospinal bundles descending in the basis pontis. A small paramedian ventral lesion cuts the fascicle, which is the final uncrossed motor pathway to the ipsilateral lateral rectus, together with the corticospinal fibers, which have not yet crossed and will decussate in the medulla to serve the contralateral limbs, producing the classical alternating pattern. The facial nerve fascicle emerges more laterally, so a strictly paramedian lesion spares the face, whereas a slightly more lateral lesion adds the facial palsy of the Millard–Gubler syndrome; a lesion extending dorsally to the abducens nucleus converts the palsy into a conjugate gaze palsy (Foville). The corticobulbar fibers to the lower face travel with the corticospinal tract, so a mild contralateral central facial weakness may occur, but a complete ipsilateral peripheral facial palsy is absent by definition. The syndrome is rare in pure form and is usually a paramedian pontine infarct from basilar perforator disease.",
+ "imagingFindings": [
+  {
+   "pathology": "Paramedian ventral pontine infarct",
+   "modality": "MRI",
+   "finding": "Small restricted diffusion focus in the paramedian caudal basis pontis on the side of the abducens palsy.",
+   "sequence": "DWI"
+  },
+  {
+   "pathology": "Pontine hemorrhage or cavernoma",
+   "modality": "MRI",
+   "finding": "Hemorrhagic lesion in the ventral caudal pons on SWI.",
+   "sequence": "SWI"
+  }
+ ],
+ "commonCauses": [
+  "Basilar perforator infarct",
+  "Pontine hemorrhage",
+  "Cavernoma",
+  "Demyelination",
+  "Pontine glioma"
+ ],
+ "mimics": [
+  {
+   "name": "Millard–Gubler syndrome",
+   "howToDistinguish": "Adds an ipsilateral peripheral facial palsy"
+  },
+  {
+   "name": "Foville syndrome",
+   "howToDistinguish": "Conjugate gaze palsy instead of a single sixth nerve palsy"
+  },
+  {
+   "name": "Sixth nerve palsy with a coincidental capsular stroke",
+   "howToDistinguish": "Two lesions; hemiparesis would include the face"
+  }
+ ],
+ "management": [
+  "Acute stroke pathway",
+  "Occlusion for diplopia; abducens palsies from small infarcts usually recover",
+  "MRI with contrast in younger patients to exclude demyelination or cavernoma"
+ ],
+ "citations": [
+  {
+   "book": "berkowitz",
+   "chapter": 9,
+   "pages": [
+    78,
+    78
+   ]
+  }
+ ],
+ "status": "draft",
+ "imagingHint": {
+  "plane": "axial",
+  "mni": {
+   "x": -4,
+   "y": -32,
+   "z": -33
+  },
+  "label": "paramedian caudal basis pontis"
+ },
+ "cameraPreset": "anterior"
+}
