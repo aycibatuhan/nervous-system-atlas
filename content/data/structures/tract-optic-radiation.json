@@ -1,164 +1,144 @@
 {
- "kind": "structure",
- "id": "tract-optic-radiation",
- "name": "Optic radiation",
- "synonyms": [
-  "geniculocalcarine tract",
-  "Meyer's loop (anterior part)"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-optic-radiation-l",
-  "tract-optic-radiation-r"
- ],
- "summary": "The optic radiation carries visual information from the lateral geniculate nucleus to the calcarine cortex, sweeping around the lateral ventricle in the temporal and parietal white matter: the lower-field fibers run directly back through the parietal lobe, while the upper-field fibers loop forward over the temporal horn as Meyer's loop before turning back. The reconstruction shows the whole geniculocalcarine tract from the geniculate body to the occipital pole. Lesions produce homonymous field defects whose shape names the location, a pie-in-the-sky superior quadrantanopia for the temporal loop and an inferior quadrantanopia for the parietal fibers, and the loop is the reason temporal lobectomy risks a field defect.",
- "anatomy": {
-  "location": "From the lateral geniculate nucleus through the retrolenticular part of the internal capsule, fanning out as Meyer's loop over the temporal horn (upper field, inferior fibers) and as the direct bundle through the parietal white matter lateral to the atrium (lower field, superior fibers), converging on the calcarine cortex above and below the sulcus, with macular fibers in the middle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lateral geniculate nucleus",
-    "via": "origin"
-   }
+  "kind": "structure",
+  "id": "tract-optic-radiation",
+  "name": "Optic radiation",
+  "synonyms": [
+    "geniculocalcarine tract",
+    "Meyer's loop (anterior part)"
   ],
-  "efferents": [
-   {
-    "to": "Calcarine cortex (area 17)",
-    "via": "termination in layer IV"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-optic-radiation-l",
+    "tract-optic-radiation-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "It relays the retinotopically ordered output of the geniculate to the primary visual cortex, keeping the upper and lower fields separate so that partial lesions produce quadrantic defects; fibers from the two eyes are mixed, so radiation lesions produce congruous homonymous defects, and the macular fibers travel centrally to the occipital pole. The sapphire-blue tractography bundle is used to plan temporal lobe surgery, because Meyer's loop reaches within a centimeter or two of the temporal pole, and the radiation is injured in MCA and PCA infarcts, in periventricular leukomalacia and in temporal and parietal tumors, adding a field defect that patients rarely notice until they are tested.",
- "bloodSupply": {
-  "arteries": [
-   "artery-anterior-choroidal",
-   "artery-mca",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-mca-temporal",
-   "territory-pca-occipital",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-optic-radiation-l"
+  "summary": "The optic radiation carries visual information from the lateral geniculate nucleus to the calcarine cortex, sweeping around the lateral ventricle in the temporal and parietal white matter: the lower-field fibers run directly back through the parietal lobe, while the upper-field fibers loop forward over the temporal horn as Meyer's loop before turning back. The reconstruction shows the whole geniculocalcarine tract from the geniculate body to the occipital pole. Lesions produce homonymous field defects whose shape names the location, a pie-in-the-sky superior quadrantanopia for the temporal loop and an inferior quadrantanopia for the parietal fibers, and the loop is the reason temporal lobectomy risks a field defect.",
+  "anatomy": {
+    "location": "From the lateral geniculate nucleus through the retrolenticular part of the internal capsule, fanning out as Meyer's loop over the temporal horn (upper field, inferior fibers) and as the direct bundle through the parietal white matter lateral to the atrium (lower field, superior fibers), converging on the calcarine cortex above and below the sulcus, with macular fibers in the middle.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lateral geniculate nucleus",
+        "via": "origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Calcarine cortex (area 17)",
+        "via": "termination in layer IV"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "It relays the retinotopically ordered output of the geniculate to the primary visual cortex, keeping the upper and lower fields separate so that partial lesions produce quadrantic defects; fibers from the two eyes are mixed, so radiation lesions produce congruous homonymous defects, and the macular fibers travel centrally to the occipital pole. The sapphire-blue tractography bundle is used to plan temporal lobe surgery, because Meyer's loop reaches within a centimeter or two of the temporal pole, and the radiation is injured in MCA and PCA infarcts, in periventricular leukomalacia and in temporal and parietal tumors, adding a field defect that patients rarely notice until they are tested.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-anterior-choroidal",
+      "artery-mca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-mca-temporal",
+      "territory-pca-occipital",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-optic-radiation-l"
+        },
+        "label": "optic radiation sweeping around the lateral ventricle to the calcarine cortex"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-optic-radiation-r"
+        },
+        "label": "Meyer's loop over the temporal horn"
+      }
+    ],
+    "normalAppearance": "On tractography a fan of fibers from the geniculate body around the atrium and temporal horn to the occipital lobe; on T2 the stratum sagittale is a thin dark band lateral to the atrium; it is not directly visible on routine sequences.",
+    "pathology": [
+      {
+        "pathology": "Temporal lobe resection or MCA inferior division infarct",
+        "modality": "MRI",
+        "finding": "Lesion of the anterior temporal white matter interrupting Meyer's loop with a contralateral superior quadrantanopia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Parietal infarct or tumor",
+        "modality": "MRI",
+        "finding": "Lesion lateral to the atrium in the parietal white matter with a contralateral inferior quadrantanopia and often neglect or sensory signs.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Periventricular leukomalacia",
+        "modality": "MRI",
+        "finding": "Symmetric periventricular white-matter loss around the atria in premature infants, with cerebral visual impairment from radiation damage.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Interruption of Meyer's loop in the temporal lobe"
+      },
+      {
+        "deficit": "Contralateral inferior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Interruption of the parietal (superior) fibers"
+      },
+      {
+        "deficit": "Complete congruous homonymous hemianopia",
+        "side": "contralateral",
+        "mechanism": "Interruption of the whole radiation in the retrolenticular capsule or the stratum sagittale"
+      }
+    ],
+    "examination": [
+      "Confrontation fields in all four quadrants",
+      "Formal perimetry before and after temporal lobe surgery",
+      "Check the fields in every patient with a posterior MCA or PCA stroke"
+    ],
+    "syndromes": [
+      "syn-homonymous-hemianopia",
+      "syn-mca-inferior-division",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Temporal is superior, parietal is inferior: the loop carries the upper field",
+      "Radiation defects are congruous; tract defects are not",
+      "A temporal lobectomy that reaches too far back cuts Meyer's loop and the patient loses the upper quadrant"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-optic-tract",
+      "section": "Structure and Function"
     },
-    "label": "optic radiation sweeping around the lateral ventricle to the calcarine cortex"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-optic-radiation-r"
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
     },
-    "label": "Meyer's loop over the temporal horn"
-   }
+    {
+      "ref": "sp-thalamocortical-radiations",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On tractography a fan of fibers from the geniculate body around the atrium and temporal horn to the occipital lobe; on T2 the stratum sagittale is a thin dark band lateral to the atrium; it is not directly visible on routine sequences.",
-  "pathology": [
-   {
-    "pathology": "Temporal lobe resection or MCA inferior division infarct",
-    "modality": "MRI",
-    "finding": "Lesion of the anterior temporal white matter interrupting Meyer's loop with a contralateral superior quadrantanopia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Parietal infarct or tumor",
-    "modality": "MRI",
-    "finding": "Lesion lateral to the atrium in the parietal white matter with a contralateral inferior quadrantanopia and often neglect or sensory signs.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Periventricular leukomalacia",
-    "modality": "MRI",
-    "finding": "Symmetric periventricular white-matter loss around the atria in premature infants, with cerebral visual impairment from radiation damage.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Interruption of Meyer's loop in the temporal lobe"
-   },
-   {
-    "deficit": "Contralateral inferior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Interruption of the parietal (superior) fibers"
-   },
-   {
-    "deficit": "Complete congruous homonymous hemianopia",
-    "side": "contralateral",
-    "mechanism": "Interruption of the whole radiation in the retrolenticular capsule or the stratum sagittale"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Confrontation fields in all four quadrants",
-   "Formal perimetry before and after temporal lobe surgery",
-   "Check the fields in every patient with a posterior MCA or PCA stroke"
-  ],
-  "syndromes": [
-   "syn-homonymous-hemianopia",
-   "syn-mca-inferior-division",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Temporal is superior, parietal is inferior: the loop carries the upper field",
-   "Radiation defects are congruous; tract defects are not",
-   "A temporal lobectomy that reaches too far back cuts Meyer's loop and the patient loses the upper quadrant"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    336
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    368,
-    370
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "cerebral-white-matter"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "cerebral-white-matter"
 }

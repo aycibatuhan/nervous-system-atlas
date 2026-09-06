@@ -1,149 +1,129 @@
 {
- "kind": "structure",
- "id": "pyramid",
- "name": "Medullary pyramid and pyramidal decussation",
- "synonyms": [
-  "pyramis medullae oblongatae",
-  "corticospinal tract in the medulla"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The pyramids are the two longitudinal ridges on the ventral medulla, one on each side of the anterior median fissure, each carrying about a million corticospinal axons from the ipsilateral motor cortex. At the lower end of the medulla most of these fibers cross in the pyramidal decussation to form the lateral corticospinal tract; the minority that stay uncrossed form the anterior corticospinal tract. Because the pyramid is fed by the anterior spinal artery and paramedian vertebral perforators, it is the motor component of the medial medullary syndrome.",
- "anatomy": {
-  "location": "Ventral surface of the medulla from the pontomedullary junction to the cervicomedullary junction, lateral to the anterior median fissure and medial to the preolivary sulcus from which the hypoglossal rootlets emerge; the decussation lies at the level of the foramen magnum.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-anterior-corticospinal"
-  ]
- },
- "function": "Conducts the corticospinal tract, the main pathway for voluntary skilled movement of the contralateral limbs, and marks the point where that control crosses the midline.",
- "bloodSupply": {
-  "arteries": [
-   "anterior-spinal-artery",
-   "artery-vertebral"
+  "kind": "structure",
+  "id": "pyramid",
+  "name": "Medullary pyramid and pyramidal decussation",
+  "synonyms": [
+    "pyramis medullae oblongatae",
+    "corticospinal tract in the medulla"
   ],
-  "territories": [
-   "territory-basilar-paramedian"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 4,
-     "y": -46,
-     "z": -48
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
+  ],
+  "summary": "The pyramids are the two longitudinal ridges on the ventral medulla, one on each side of the anterior median fissure, each carrying about a million corticospinal axons from the ipsilateral motor cortex. At the lower end of the medulla most of these fibers cross in the pyramidal decussation to form the lateral corticospinal tract; the minority that stay uncrossed form the anterior corticospinal tract. Because the pyramid is fed by the anterior spinal artery and paramedian vertebral perforators, it is the motor component of the medial medullary syndrome.",
+  "anatomy": {
+    "location": "Ventral surface of the medulla from the pontomedullary junction to the cervicomedullary junction, lateral to the anterior median fissure and medial to the preolivary sulcus from which the hypoglossal rootlets emerge; the decussation lies at the level of the foramen magnum.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-anterior-corticospinal"
+    ]
+  },
+  "function": "Conducts the corticospinal tract, the main pathway for voluntary skilled movement of the contralateral limbs, and marks the point where that control crosses the midline.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "artery-vertebral"
+    ],
+    "territories": [
+      "territory-basilar-paramedian"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 4,
+          "y": -46,
+          "z": -48
+        },
+        "label": "pyramids as paired anterior bulges on the ventral medulla"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 3,
+          "y": -46,
+          "z": -50
+        },
+        "label": "pyramid from pontomedullary junction to the decussation"
+      }
+    ],
+    "normalAppearance": "The pyramids give the ventral medulla its paired bulging contour on axial T2 and are slightly brighter than the adjacent tegmentum on T1 because they are compact white matter; the decussation is not resolved.",
+    "pathology": [
+      {
+        "pathology": "Medial medullary infarct",
+        "modality": "MRI",
+        "finding": "Paramedian ventral medullary restricted diffusion including the pyramid, producing contralateral hemiparesis that spares the face.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Wallerian degeneration of the pyramid",
+        "modality": "MRI",
+        "finding": "Months after a large hemispheric infarct the ipsilateral pyramid and crus become atrophic and T2-bright.",
+        "sequence": "T2",
+        "timing": "Visible from about 4–10 weeks, permanent thereafter"
+      }
+    ],
+    "sequenceOfChoice": "DWI; sagittal and axial T2"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemiparesis sparing the face (upper motor neuron pattern)",
+        "side": "contralateral",
+        "mechanism": "Corticospinal fibers above the decussation"
+      },
+      {
+        "deficit": "Ipsilateral hemiparesis",
+        "side": "ipsilateral",
+        "mechanism": "Lesion below the decussation in the lateral corticospinal tract"
+      },
+      {
+        "deficit": "Babinski sign and spasticity",
+        "side": "contralateral",
+        "mechanism": "Loss of corticospinal facilitation of flexor withdrawal inhibition"
+      }
+    ],
+    "examination": [
+      "Pronator drift, fine finger movements and rapid alternating movements",
+      "Reflexes and plantar responses",
+      "Check the face: sparing of the face with limb weakness suggests a medullary or spinal lesion"
+    ],
+    "syndromes": [
+      "syn-dejerine-medial-medullary"
+    ],
+    "pearls": [
+      "Face-sparing hemiparesis with a contralateral tongue palsy is the medial medulla",
+      "Corticospinal lesions in the medulla produce weakness without cortical signs and without hemianopia"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pyramidal-tract",
+      "section": "Structure and Function"
     },
-    "label": "pyramids as paired anterior bulges on the ventral medulla"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 3,
-     "y": -46,
-     "z": -50
+    {
+      "ref": "sp-lateral-corticospinal-tract",
+      "section": "Structure and Function"
     },
-    "label": "pyramid from pontomedullary junction to the decussation"
-   }
+    {
+      "ref": "sp-medial-medullary-syndrome",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "The pyramids give the ventral medulla its paired bulging contour on axial T2 and are slightly brighter than the adjacent tegmentum on T1 because they are compact white matter; the decussation is not resolved.",
-  "pathology": [
-   {
-    "pathology": "Medial medullary infarct",
-    "modality": "MRI",
-    "finding": "Paramedian ventral medullary restricted diffusion including the pyramid, producing contralateral hemiparesis that spares the face.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Wallerian degeneration of the pyramid",
-    "modality": "MRI",
-    "finding": "Months after a large hemispheric infarct the ipsilateral pyramid and crus become atrophic and T2-bright.",
-    "sequence": "T2",
-    "timing": "Visible from about 4–10 weeks, permanent thereafter"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "DWI; sagittal and axial T2"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemiparesis sparing the face (upper motor neuron pattern)",
-    "side": "contralateral",
-    "mechanism": "Corticospinal fibers above the decussation"
-   },
-   {
-    "deficit": "Ipsilateral hemiparesis",
-    "side": "ipsilateral",
-    "mechanism": "Lesion below the decussation in the lateral corticospinal tract"
-   },
-   {
-    "deficit": "Babinski sign and spasticity",
-    "side": "contralateral",
-    "mechanism": "Loss of corticospinal facilitation of flexor withdrawal inhibition"
-   }
-  ],
-  "examination": [
-   "Pronator drift, fine finger movements and rapid alternating movements",
-   "Reflexes and plantar responses",
-   "Check the face: sparing of the face with limb weakness suggests a medullary or spinal lesion"
-  ],
-  "syndromes": [
-   "syn-dejerine-medial-medullary"
-  ],
-  "pearls": [
-   "Face-sparing hemiparesis with a contralateral tongue palsy is the medial medulla",
-   "Corticospinal lesions in the medulla produce weakness without cortical signs and without hemianopia"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    196,
-    199
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    156
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    78
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    35
-   ]
+  "status": "draft",
+  "subsystem": "medulla",
+  "level": {
+    "region": "medulla"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "subsystem": "medulla",
- "level": {
-  "region": "medulla"
- }
 }

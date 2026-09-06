@@ -1,202 +1,182 @@
 {
- "kind": "structure",
- "id": "internal-capsule",
- "name": "Internal capsule",
- "synonyms": [],
- "system": "cerebrum",
- "meshIds": [
-  "internal-capsule-l",
-  "internal-capsule-r"
- ],
- "summary": "A thick V-shaped band of white matter between the caudate and thalamus medially and the lentiform nucleus laterally, through which almost every fiber connecting the cortex with the brainstem, spinal cord and thalamus must pass. The anterior limb carries frontopontine and anterior thalamic fibers, the genu the corticobulbar fibers, and the posterior limb the corticospinal tract (face to leg, anterior to posterior) with the thalamocortical sensory fibers behind them and the optic and auditory radiations in its retro- and sublenticular parts. Fed by the lenticulostriate and anterior choroidal perforators, it is the classic site of the lacunar pure motor stroke and of hypertensive hemorrhage.",
- "anatomy": {
-  "location": "Between the head of the caudate and the thalamus (medial) and the lentiform nucleus (lateral), continuous above with the corona radiata and below with the crus cerebri; on axial sections the anterior limb lies between caudate head and putamen, the posterior limb between thalamus and lentiform nucleus, and the genu at the angle beside the foramen of Monro.",
-  "subdivisions": [
-   {
-    "name": "Anterior limb",
-    "note": "anterior thalamic radiation, frontopontine fibers; prefrontal-caudate loops"
-   },
-   {
-    "name": "Genu",
-    "note": "corticobulbar fibers to the cranial nerve nuclei"
-   },
-   {
-    "name": "Posterior limb",
-    "note": "corticospinal tract (arm anterior, leg posterior), superior thalamic radiation (sensory), corticorubral fibers"
-   },
-   {
-    "name": "Retrolenticular part",
-    "note": "optic radiation and posterior thalamic radiation"
-   },
-   {
-    "name": "Sublenticular part",
-    "note": "auditory radiation and temporopontine fibers"
-   }
+  "kind": "structure",
+  "id": "internal-capsule",
+  "name": "Internal capsule",
+  "synonyms": [],
+  "system": "cerebrum",
+  "meshIds": [
+    "internal-capsule-l",
+    "internal-capsule-r"
   ],
-  "relations": {
-   "medial": "caudate head and thalamus",
-   "lateral": "globus pallidus and putamen",
-   "superior": "corona radiata",
-   "inferior": "crus cerebri"
-  }
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-corticobulbar",
-   "pathway-dcml",
-   "pathway-visual",
-   "pathway-auditory"
-  ]
- },
- "function": "Conduction of all corticofugal (motor) and thalamocortical (sensory and association) fibers between the cerebral cortex and the diencephalon, brainstem and spinal cord.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal",
-   "artery-internal-carotid"
-  ],
-  "territories": [
-   "territory-lenticulostriate",
-   "territory-anterior-choroidal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 20,
-     "y": -2,
-     "z": 8
+  "summary": "A thick V-shaped band of white matter between the caudate and thalamus medially and the lentiform nucleus laterally, through which almost every fiber connecting the cortex with the brainstem, spinal cord and thalamus must pass. The anterior limb carries frontopontine and anterior thalamic fibers, the genu the corticobulbar fibers, and the posterior limb the corticospinal tract (face to leg, anterior to posterior) with the thalamocortical sensory fibers behind them and the optic and auditory radiations in its retro- and sublenticular parts. Fed by the lenticulostriate and anterior choroidal perforators, it is the classic site of the lacunar pure motor stroke and of hypertensive hemorrhage.",
+  "anatomy": {
+    "location": "Between the head of the caudate and the thalamus (medial) and the lentiform nucleus (lateral), continuous above with the corona radiata and below with the crus cerebri; on axial sections the anterior limb lies between caudate head and putamen, the posterior limb between thalamus and lentiform nucleus, and the genu at the angle beside the foramen of Monro.",
+    "subdivisions": [
+      {
+        "name": "Anterior limb",
+        "note": "anterior thalamic radiation, frontopontine fibers; prefrontal-caudate loops"
+      },
+      {
+        "name": "Genu",
+        "note": "corticobulbar fibers to the cranial nerve nuclei"
+      },
+      {
+        "name": "Posterior limb",
+        "note": "corticospinal tract (arm anterior, leg posterior), superior thalamic radiation (sensory), corticorubral fibers"
+      },
+      {
+        "name": "Retrolenticular part",
+        "note": "optic radiation and posterior thalamic radiation"
+      },
+      {
+        "name": "Sublenticular part",
+        "note": "auditory radiation and temporopontine fibers"
+      }
+    ],
+    "relations": {
+      "medial": "caudate head and thalamus",
+      "lateral": "globus pallidus and putamen",
+      "superior": "corona radiata",
+      "inferior": "crus cerebri"
+    }
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-corticobulbar",
+      "pathway-dcml",
+      "pathway-visual",
+      "pathway-auditory"
+    ]
+  },
+  "function": "Conduction of all corticofugal (motor) and thalamocortical (sensory and association) fibers between the cerebral cortex and the diencephalon, brainstem and spinal cord.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal",
+      "artery-internal-carotid"
+    ],
+    "territories": [
+      "territory-lenticulostriate",
+      "territory-anterior-choroidal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 20,
+          "y": -2,
+          "z": 8
+        },
+        "label": "anterior limb, genu and posterior limb between the lentiform nucleus and the thalamus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 20,
+          "y": -10,
+          "z": 8
+        },
+        "label": "posterior limb between thalamus and lentiform nucleus continuing into the crus"
+      }
+    ],
+    "normalAppearance": "The V-shaped white matter band around the lentiform nucleus on axial T1/T2; the posterior limb is slightly T2-dark because of dense myelin. Small acute infarcts here appear as bright DWI dots; hypertensive putaminal hemorrhage often spreads into it.",
+    "pathology": [
+      {
+        "pathology": "Pure motor lacunar infarct",
+        "modality": "MRI",
+        "finding": "Small restriction in the posterior limb.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Anterior choroidal infarct",
+        "modality": "MRI",
+        "finding": "Restriction in the posterior limb extending to the geniculate region and medial temporal lobe.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Putaminal hemorrhage extending into the capsule",
+        "modality": "CT",
+        "finding": "Hyperdense hematoma of the lentiform nucleus with capsular involvement.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Wallerian degeneration",
+        "modality": "MRI",
+        "finding": "T2 hyperintensity and atrophy along the posterior limb and crus after a large cortical infarct.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CT for hemorrhage"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Pure motor hemiparesis of face, arm and leg",
+        "side": "contralateral",
+        "mechanism": "Corticospinal and corticobulbar fibers in the genu and posterior limb"
+      },
+      {
+        "deficit": "Sensorimotor stroke",
+        "side": "contralateral",
+        "mechanism": "Posterior limb with the adjacent thalamocortical fibers or thalamus"
+      },
+      {
+        "deficit": "Homonymous hemianopia",
+        "side": "contralateral",
+        "mechanism": "Retrolenticular optic radiation"
+      },
+      {
+        "deficit": "Dysarthria and dysphagia",
+        "side": "contralateral",
+        "mechanism": "Corticobulbar fibers in the genu"
+      },
+      {
+        "deficit": "Abulia and cognitive slowing",
+        "side": "contralateral",
+        "mechanism": "Anterior limb disconnecting prefrontal-thalamic loops"
+      }
+    ],
+    "examination": [
+      "Power in face, arm and leg; note their similar involvement",
+      "Absence of aphasia, neglect and cortical sensory signs",
+      "Visual fields for retrolenticular involvement",
+      "Speech and swallowing"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-motor",
+      "syn-lacunar-sensorimotor",
+      "syn-anterior-choroidal-infarct"
+    ],
+    "pearls": [
+      "Face, arm and leg equally weak with nothing cortical: the capsule",
+      "The dense hemiplegia of an internal capsule lesion comes from a tiny lesion because the fibers are packed so tightly"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
     },
-    "label": "anterior limb, genu and posterior limb between the lentiform nucleus and the thalamus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 20,
-     "y": -10,
-     "z": 8
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
     },
-    "label": "posterior limb between thalamus and lentiform nucleus continuing into the crus"
-   }
+    {
+      "ref": "sp-cerebral-hemisphere",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The V-shaped white matter band around the lentiform nucleus on axial T1/T2; the posterior limb is slightly T2-dark because of dense myelin. Small acute infarcts here appear as bright DWI dots; hypertensive putaminal hemorrhage often spreads into it.",
-  "pathology": [
-   {
-    "pathology": "Pure motor lacunar infarct",
-    "modality": "MRI",
-    "finding": "Small restriction in the posterior limb.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Anterior choroidal infarct",
-    "modality": "MRI",
-    "finding": "Restriction in the posterior limb extending to the geniculate region and medial temporal lobe.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Putaminal hemorrhage extending into the capsule",
-    "modality": "CT",
-    "finding": "Hyperdense hematoma of the lentiform nucleus with capsular involvement.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Wallerian degeneration",
-    "modality": "MRI",
-    "finding": "T2 hyperintensity and atrophy along the posterior limb and crus after a large cortical infarct.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "cortex",
+    "white-matter"
   ],
-  "sequenceOfChoice": "DWI; CT for hemorrhage"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Pure motor hemiparesis of face, arm and leg",
-    "side": "contralateral",
-    "mechanism": "Corticospinal and corticobulbar fibers in the genu and posterior limb"
-   },
-   {
-    "deficit": "Sensorimotor stroke",
-    "side": "contralateral",
-    "mechanism": "Posterior limb with the adjacent thalamocortical fibers or thalamus"
-   },
-   {
-    "deficit": "Homonymous hemianopia",
-    "side": "contralateral",
-    "mechanism": "Retrolenticular optic radiation"
-   },
-   {
-    "deficit": "Dysarthria and dysphagia",
-    "side": "contralateral",
-    "mechanism": "Corticobulbar fibers in the genu"
-   },
-   {
-    "deficit": "Abulia and cognitive slowing",
-    "side": "contralateral",
-    "mechanism": "Anterior limb disconnecting prefrontal-thalamic loops"
-   }
-  ],
-  "examination": [
-   "Power in face, arm and leg; note their similar involvement",
-   "Absence of aphasia, neglect and cortical sensory signs",
-   "Visual fields for retrolenticular involvement",
-   "Speech and swallowing"
-  ],
-  "syndromes": [
-   "syn-lacunar-pure-motor",
-   "syn-lacunar-sensorimotor",
-   "syn-anterior-choroidal-infarct"
-  ],
-  "pearls": [
-   "Face, arm and leg equally weak with nothing cortical: the capsule",
-   "The dense hemiplegia of an internal capsule lesion comes from a tiny lesion because the fibers are packed so tightly"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    264,
-    266
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    370,
-    370
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    34,
-    35
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    56,
-    60
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "white-matter"
- ],
- "status": "draft",
- "latin": "Capsula interna",
- "subsystem": "lobe-white-matter"
+  "status": "draft",
+  "latin": "Capsula interna",
+  "subsystem": "lobe-white-matter"
 }

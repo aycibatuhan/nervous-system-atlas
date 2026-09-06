@@ -1,19 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-amyloid-plaque",
- "term": "Amyloid plaque",
- "definition": "Extracellular deposit of amyloid-beta in the neocortex, accumulating years before symptoms in Alzheimer disease; detected by amyloid PET and by low CSF amyloid-beta 42.",
- "related": [
-  "g-neurofibrillary-tangle"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-amyloid-plaque",
+  "term": "Amyloid plaque",
+  "definition": "Extracellular deposit of amyloid-beta in the neocortex, accumulating years before symptoms in Alzheimer disease; detected by amyloid PET and by low CSF amyloid-beta 42.",
+  "related": [
+    "g-neurofibrillary-tangle"
+  ],
+  "citations": [
+    {
+      "ref": "sp-amyloid-beta-peptide",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-alzheimer-disease",
+      "section": "Pathophysiology"
+    }
+  ]
 }

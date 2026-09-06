@@ -1,124 +1,112 @@
 {
- "kind": "pathway",
- "id": "pathway-anterior-spinocerebellar",
- "name": "Anterior spinocerebellar tract",
- "synonyms": [
-  "ventral spinocerebellar tract",
-  "Gowers' tract"
- ],
- "type": "ascending",
- "modality": "proprioceptive and interneuronal feedback from the lower limb",
- "summary": "Neurons at the base of the dorsal horn and in the intermediate gray of the lumbosacral cord send axons that mostly cross in the anterior white commissure, ascend in the anterolateral funiculus in front of the posterior spinocerebellar tract, pass through the medulla and pons, and enter the cerebellum through the superior cerebellar peduncle, where most cross back so that each side of the cerebellum still receives information from its own side of the body. It carries less pure proprioception and more information about the activity of spinal interneurons, telling the cerebellum what the spinal circuits are doing with the descending commands.",
- "origin": {
-  "structures": [
-   "spinal-gray-posterior-horn"
+  "kind": "pathway",
+  "id": "pathway-anterior-spinocerebellar",
+  "name": "Anterior spinocerebellar tract",
+  "synonyms": [
+    "ventral spinocerebellar tract",
+    "Gowers' tract"
   ],
-  "note": "Spinal border cells and intermediate gray of the lumbosacral segments; input from Golgi tendon organs, flexor reflex afferents and descending tracts."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Dorsal root ganglion cell",
-   "synapse": "spinal border cells"
+  "type": "ascending",
+  "modality": "proprioceptive and interneuronal feedback from the lower limb",
+  "summary": "Neurons at the base of the dorsal horn and in the intermediate gray of the lumbosacral cord send axons that mostly cross in the anterior white commissure, ascend in the anterolateral funiculus in front of the posterior spinocerebellar tract, pass through the medulla and pons, and enter the cerebellum through the superior cerebellar peduncle, where most cross back so that each side of the cerebellum still receives information from its own side of the body. It carries less pure proprioception and more information about the activity of spinal interneurons, telling the cerebellum what the spinal circuits are doing with the descending commands.",
+  "origin": {
+    "structures": [
+      "spinal-gray-posterior-horn"
+    ],
+    "note": "Spinal border cells and intermediate gray of the lumbosacral segments; input from Golgi tendon organs, flexor reflex afferents and descending tracts."
   },
-  {
-   "order": 2,
-   "cellBody": "Spinal border cell",
-   "synapse": "cerebellar cortex of the anterior lobe (vermis and paravermis) via the superior cerebellar peduncle, crossing twice"
-  }
- ],
- "decussation": {
-  "level": "Anterior white commissure (crosses) and superior cerebellar peduncle (crosses back)",
-  "structureId": "spinal-white-columns",
-  "note": "Double crossing makes the net projection ipsilateral."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "spinal-grey-posterior-horn",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "spinal border cells, L1–S2"
-  },
-  {
-   "order": 2,
-   "structureId": "spinal-white-columns",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "anterolateral funiculus, anterior to the posterior spinocerebellar tract"
-  },
-  {
-   "order": 3,
-   "structureId": "level-medulla-olive",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "lateral medulla"
-  },
-  {
-   "order": 4,
-   "structureId": "superior-cerebellar-peduncle",
-   "meshId": "superior-cerebellar-peduncle",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "enters through the superior peduncle at the upper pons"
-  },
-  {
-   "order": 5,
-   "structureId": "cerebellar-vermis",
-   "meshId": "cerebellar-vermis-vi",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "anterior lobe, after recrossing"
-  }
- ],
- "termination": "Cerebellar anterior lobe vermis and intermediate zone, ipsilateral to the origin after the second crossing.",
- "meshIds": [
-  "superior-cerebellar-peduncle"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Spinal cord anterolateral funiculus",
-   "effects": "Ipsilateral leg ataxia (net effect after double crossing), usually mixed with spinothalamic signs",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Superior cerebellar peduncle",
-   "effects": "Ataxia with the cerebellar outflow signs dominating",
-   "side": "ipsilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "This is the only spinocerebellar tract that enters through the superior peduncle",
-   "It monitors spinal interneurons rather than joints: a copy of what the cord is doing"
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Dorsal root ganglion cell",
+      "synapse": "spinal border cells"
+    },
+    {
+      "order": 2,
+      "cellBody": "Spinal border cell",
+      "synapse": "cerebellar cortex of the anterior lobe (vermis and paravermis) via the superior cerebellar peduncle, crossing twice"
+    }
   ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    150,
-    150
-   ]
+  "decussation": {
+    "level": "Anterior white commissure (crosses) and superior cerebellar peduncle (crosses back)",
+    "structureId": "spinal-white-columns",
+    "note": "Double crossing makes the net projection ipsilateral."
   },
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    236,
-    240
-   ]
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "spinal-grey-posterior-horn",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "spinal border cells, L1–S2"
+    },
+    {
+      "order": 2,
+      "structureId": "spinal-white-columns",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "anterolateral funiculus, anterior to the posterior spinocerebellar tract"
+    },
+    {
+      "order": 3,
+      "structureId": "level-medulla-olive",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "lateral medulla"
+    },
+    {
+      "order": 4,
+      "structureId": "superior-cerebellar-peduncle",
+      "meshId": "superior-cerebellar-peduncle",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "enters through the superior peduncle at the upper pons"
+    },
+    {
+      "order": 5,
+      "structureId": "cerebellar-vermis",
+      "meshId": "cerebellar-vermis-vi",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "anterior lobe, after recrossing"
+    }
+  ],
+  "termination": "Cerebellar anterior lobe vermis and intermediate zone, ipsilateral to the origin after the second crossing.",
+  "meshIds": [
+    "superior-cerebellar-peduncle"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Spinal cord anterolateral funiculus",
+      "effects": "Ipsilateral leg ataxia (net effect after double crossing), usually mixed with spinothalamic signs",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Superior cerebellar peduncle",
+      "effects": "Ataxia with the cerebellar outflow signs dominating",
+      "side": "ipsilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "This is the only spinocerebellar tract that enters through the superior peduncle",
+      "It monitors spinal interneurons rather than joints: a copy of what the cord is doing"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    70
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-spinocerebellar-dorsal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellum",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-morphology",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

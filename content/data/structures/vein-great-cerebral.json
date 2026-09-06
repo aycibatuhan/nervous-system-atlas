@@ -1,176 +1,152 @@
 {
- "kind": "structure",
- "id": "vein-great-cerebral",
- "name": "Great cerebral vein and deep venous system",
- "synonyms": [
-  "vein of Galen",
-  "internal cerebral veins",
-  "basal vein of Rosenthal"
- ],
- "system": "venous",
- "meshIds": [
-  "dura-mater-cranial"
- ],
- "summary": "The deep structures drain through a system of veins that converge on the great cerebral vein of Galen beneath the splenium. The internal cerebral veins form at the foramen of Monro from the thalamostriate and septal veins, run back in the roof of the third ventricle (velum interpositum) and unite as the vein of Galen, which is joined by the basal veins of Rosenthal (draining the insula, medial temporal lobe and midbrain) and empties into the straight sinus. Thrombosis of this system produces bilateral thalamic infarction, and vein of Galen malformations in infants cause heart failure and hydrocephalus.",
- "anatomy": {
-  "location": "Internal cerebral veins in the velum interpositum above the third ventricle, curving around the pulvinar; vein of Galen in the quadrigeminal cistern below the splenium, ending at the anterior end of the straight sinus; basal veins around the midbrain in the ambient cisterns.",
-  "subdivisions": [
-   {
-    "name": "Thalamostriate and septal veins",
-    "note": "caudate, internal capsule, septal region; meet at the venous angle at the foramen of Monro"
-   },
-   {
-    "name": "Internal cerebral veins",
-    "note": "thalamus, choroid plexus, deep white matter"
-   },
-   {
-    "name": "Basal veins of Rosenthal",
-    "note": "insula, anterior perforated substance, medial temporal lobe, midbrain"
-   },
-   {
-    "name": "Great cerebral vein of Galen",
-    "note": "short midline trunk under the splenium"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "thalamus and basal ganglia",
-    "via": "internal cerebral veins"
-   },
-   {
-    "from": "insula and medial temporal lobe",
-    "via": "basal veins of Rosenthal"
-   }
+  "kind": "structure",
+  "id": "vein-great-cerebral",
+  "name": "Great cerebral vein and deep venous system",
+  "synonyms": [
+    "vein of Galen",
+    "internal cerebral veins",
+    "basal vein of Rosenthal"
   ],
-  "efferents": [
-   {
-    "to": "sinus-straight"
-   }
+  "system": "venous",
+  "meshIds": [
+    "vein-great-cerebral"
   ],
-  "pathways": []
- },
- "function": "Drainage of the thalamus, basal ganglia, deep white matter, choroid plexus, medial temporal lobes and midbrain into the straight sinus.",
- "bloodSupply": {
-  "arteries": [
-   "(venous structure) drains territories of the cerebral arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -40,
-     "z": 15
+  "summary": "The deep structures drain through a system of veins that converge on the great cerebral vein of Galen beneath the splenium. The internal cerebral veins form at the foramen of Monro from the thalamostriate and septal veins, run back in the roof of the third ventricle (velum interpositum) and unite as the vein of Galen, which is joined by the basal veins of Rosenthal (draining the insula, medial temporal lobe and midbrain) and empties into the straight sinus. Thrombosis of this system produces bilateral thalamic infarction, and vein of Galen malformations in infants cause heart failure and hydrocephalus.",
+  "anatomy": {
+    "location": "Internal cerebral veins in the velum interpositum above the third ventricle, curving around the pulvinar; vein of Galen in the quadrigeminal cistern below the splenium, ending at the anterior end of the straight sinus; basal veins around the midbrain in the ambient cisterns.",
+    "subdivisions": [
+      {
+        "name": "Thalamostriate and septal veins",
+        "note": "caudate, internal capsule, septal region; meet at the venous angle at the foramen of Monro"
+      },
+      {
+        "name": "Internal cerebral veins",
+        "note": "thalamus, choroid plexus, deep white matter"
+      },
+      {
+        "name": "Basal veins of Rosenthal",
+        "note": "insula, anterior perforated substance, medial temporal lobe, midbrain"
+      },
+      {
+        "name": "Great cerebral vein of Galen",
+        "note": "short midline trunk under the splenium"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "thalamus and basal ganglia",
+        "via": "internal cerebral veins"
+      },
+      {
+        "from": "insula and medial temporal lobe",
+        "via": "basal veins of Rosenthal"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "sinus-straight"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Drainage of the thalamus, basal ganglia, deep white matter, choroid plexus, medial temporal lobes and midbrain into the straight sinus.",
+  "bloodSupply": {
+    "arteries": [
+      "(venous structure) drains territories of the cerebral arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -40,
+          "z": 15
+        },
+        "label": "internal cerebral veins over the third ventricle joining the vein of Galen under the splenium"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -40,
+          "z": 15
+        },
+        "label": "paired internal cerebral veins in the roof of the third ventricle"
+      }
+    ],
+    "normalAppearance": "Paired flow voids in the roof of the third ventricle on axial T2 and a short midline vessel beneath the splenium on sagittal images; on venography the deep system is a constant landmark. Loss of flow with bilateral thalamic edema is deep venous thrombosis; a giant midline venous pouch in an infant is a vein of Galen malformation.",
+    "pathology": [
+      {
+        "pathology": "Deep cerebral venous thrombosis",
+        "modality": "MRV",
+        "finding": "Absent flow in the internal cerebral veins and vein of Galen with bilateral thalamic and basal ganglia edema and hemorrhage.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Vein of Galen aneurysmal malformation",
+        "modality": "MRI",
+        "finding": "Massively dilated midline venous pouch fed by choroidal arteries in a neonate with heart failure and hydrocephalus.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Pineal region tumor displacing the deep veins",
+        "modality": "MRI",
+        "finding": "Mass elevating the internal cerebral veins and compressing the vein of Galen.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "MR venography with T1 and SWI; cardiac assessment in neonates"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Coma, bilateral thalamic dysfunction, vertical gaze palsy",
+        "side": "bilateral",
+        "mechanism": "Deep venous infarction"
+      },
+      {
+        "deficit": "Hydrocephalus and heart failure in infancy",
+        "side": "n/a",
+        "mechanism": "Vein of Galen malformation compressing the aqueduct and shunting cardiac output"
+      },
+      {
+        "deficit": "Amnesia after recovery",
+        "side": "bilateral",
+        "mechanism": "Thalamic damage"
+      }
+    ],
+    "examination": [
+      "Consciousness, vertical eye movements, memory",
+      "Cranial bruit in an infant",
+      "Fundoscopy"
+    ],
+    "syndromes": [
+      "syn-cerebral-venous-sinus-thrombosis"
+    ],
+    "pearls": [
+      "The internal cerebral veins mark the roof of the third ventricle: a mass that displaces them is pineal or thalamic",
+      "Bilateral thalamic lesions with hemorrhage: the venogram decides"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
     },
-    "label": "internal cerebral veins over the third ventricle joining the vein of Galen under the splenium"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -40,
-     "z": 15
-    },
-    "label": "paired internal cerebral veins in the roof of the third ventricle"
-   }
+    {
+      "ref": "sp-dural-venous-sinuses",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Paired flow voids in the roof of the third ventricle on axial T2 and a short midline vessel beneath the splenium on sagittal images; on venography the deep system is a constant landmark. Loss of flow with bilateral thalamic edema is deep venous thrombosis; a giant midline venous pouch in an infant is a vein of Galen malformation.",
-  "pathology": [
-   {
-    "pathology": "Deep cerebral venous thrombosis",
-    "modality": "MRV",
-    "finding": "Absent flow in the internal cerebral veins and vein of Galen with bilateral thalamic and basal ganglia edema and hemorrhage.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Vein of Galen aneurysmal malformation",
-    "modality": "MRI",
-    "finding": "Massively dilated midline venous pouch fed by choroidal arteries in a neonate with heart failure and hydrocephalus.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Pineal region tumor displacing the deep veins",
-    "modality": "MRI",
-    "finding": "Mass elevating the internal cerebral veins and compressing the vein of Galen.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "venous"
   ],
-  "sequenceOfChoice": "MR venography with T1 and SWI; cardiac assessment in neonates"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Coma, bilateral thalamic dysfunction, vertical gaze palsy",
-    "side": "bilateral",
-    "mechanism": "Deep venous infarction"
-   },
-   {
-    "deficit": "Hydrocephalus and heart failure in infancy",
-    "side": "n/a",
-    "mechanism": "Vein of Galen malformation compressing the aqueduct and shunting cardiac output"
-   },
-   {
-    "deficit": "Amnesia after recovery",
-    "side": "bilateral",
-    "mechanism": "Thalamic damage"
-   }
-  ],
-  "examination": [
-   "Consciousness, vertical eye movements, memory",
-   "Cranial bruit in an infant",
-   "Fundoscopy"
-  ],
-  "syndromes": [
-   "syn-cerebral-venous-sinus-thrombosis"
-  ],
-  "pearls": [
-   "The internal cerebral veins mark the roof of the third ventricle: a mass that displaces them is pineal or thalamic",
-   "Bilateral thalamic lesions with hemorrhage: the venogram decides"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    419,
-    423
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    469,
-    469
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    200,
-    201
-   ]
-  }
- ],
- "tags": [
-  "venous"
- ],
- "status": "draft",
- "latin": "Vena magna cerebri (Galeni); venae cerebri internae"
+  "status": "draft",
+  "latin": "Vena magna cerebri (Galeni); venae cerebri internae"
 }

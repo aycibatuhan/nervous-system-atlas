@@ -1,116 +1,108 @@
 {
- "kind": "syndrome",
- "id": "syn-cn4-palsy",
- "name": "Trochlear nerve palsy",
- "eponyms": [],
- "category": "traumatic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-04-trochlear",
-   "trochlear-nucleus",
-   "level-midbrain-inferior-colliculus"
+  "kind": "syndrome",
+  "id": "syn-cn4-palsy",
+  "name": "Trochlear nerve palsy",
+  "eponyms": [],
+  "category": "traumatic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-04-trochlear",
+      "trochlear-nucleus",
+      "level-midbrain-inferior-colliculus"
+    ],
+    "side": "contralateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "trochlear-nerve-l"
+    ]
+  },
+  "presentation": "After a minor head injury, or with no history at all, a patient complains of vertical double vision that is worst reading or going down stairs, and tilts the head away from the affected eye to fuse the images. The affected eye sits slightly higher, the hypertropia increases when they look toward the nose and when the head is tilted toward the affected shoulder. Old photographs may show that the head tilt has been present for years.",
+  "deficits": [
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "superior oblique",
+      "sign": "Hypertropia worse on contralateral gaze and ipsilateral head tilt (three-step test); excyclotorsion",
+      "substrate": "cn-04-trochlear"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "head posture",
+      "sign": "Compensatory head tilt away from the affected eye, chin down",
+      "substrate": "cn-04-trochlear"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "vertical fusion",
+      "sign": "Vertical diplopia worst in downgaze and reading",
+      "substrate": "cn-04-trochlear"
+    }
   ],
-  "side": "contralateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "trochlear-nerve-l"
-  ]
- },
- "presentation": "After a minor head injury, or with no history at all, a patient complains of vertical double vision that is worst reading or going down stairs, and tilts the head away from the affected eye to fuse the images. The affected eye sits slightly higher, the hypertropia increases when they look toward the nose and when the head is tilted toward the affected shoulder. Old photographs may show that the head tilt has been present for years.",
- "deficits": [
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "superior oblique",
-   "sign": "Hypertropia worse on contralateral gaze and ipsilateral head tilt (three-step test); excyclotorsion",
-   "substrate": "cn-04-trochlear"
+  "reasoning": "The trochlear nucleus lies in the caudal midbrain at the level of the inferior colliculus, and its axons run dorsally, cross in the superior medullary velum and exit from the dorsal surface of the brainstem, the only cranial nerve to do either; the nerve then supplies the contralateral superior oblique after its long course around the midbrain and through the cavernous sinus. A nuclear or fascicular lesion in the midbrain therefore paralyzes the superior oblique of the opposite eye, whereas a lesion of the nerve after it has crossed, which is the usual situation, paralyzes the eye on the same side. The superior oblique depresses the adducted eye and intorts it, so its loss leaves the eye slightly elevated and extorted, with the diplopia greatest in downgaze and adduction, and the patient tilts the head toward the opposite shoulder to intort the eye by using the intact muscles; tilting toward the affected side calls on the paralyzed muscle and increases the deviation, the basis of the Bielschowsky head tilt test. The thin nerve is vulnerable to shearing at the tentorial edge in closed head injury, and bilateral palsies after trauma are common because both nerves cross in the same small velum. Decompensation of a congenital palsy, recognized by a large vertical fusional range and a lifelong head tilt, is the other common presentation.",
+  "imagingFindings": [
+    {
+      "pathology": "Traumatic or microvascular palsy",
+      "modality": "MRI",
+      "finding": "Imaging is usually normal; look at the dorsal midbrain and the tentorial edge for contusion or hemorrhage.",
+      "sequence": "SWI"
+    },
+    {
+      "pathology": "Dorsal midbrain lesion",
+      "modality": "MRI",
+      "finding": "Lesion at the level of the inferior colliculus producing a contralateral palsy, sometimes with a Horner on the side of the lesion.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Closed head trauma (often bilateral)",
+    "Congenital palsy decompensating in adult life",
+    "Microvascular ischemia in diabetes and hypertension",
+    "Dorsal midbrain lesion",
+    "Cavernous sinus disease"
+  ],
+  "mimics": [
+    {
+      "name": "Skew deviation",
+      "howToDistinguish": "Vertical misalignment with intorsion of the higher eye and central signs; head tilt test negative or reversed"
+    },
+    {
+      "name": "Ocular myasthenia",
+      "howToDistinguish": "Variable and fatigable"
+    },
+    {
+      "name": "Thyroid eye disease (inferior rectus restriction)",
+      "howToDistinguish": "Hypotropia of the affected eye, restricted elevation, proptosis"
+    }
+  ],
+  "management": [
+    "Three-step test to confirm; check old photographs for a long-standing head tilt",
+    "Observe microvascular and traumatic palsies for spontaneous recovery over months; prisms meanwhile",
+    "Strabismus surgery for persistent decompensated palsies"
+  ],
+  "citations": [
+    {
+      "ref": "sp-trochlear-nerve-palsy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -30,
+      "z": -8
+    },
+    "label": "dorsal midbrain at the inferior colliculus where the nerves cross"
   },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "head posture",
-   "sign": "Compensatory head tilt away from the affected eye, chin down",
-   "substrate": "cn-04-trochlear"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "vertical fusion",
-   "sign": "Vertical diplopia worst in downgaze and reading",
-   "substrate": "cn-04-trochlear"
-  }
- ],
- "reasoning": "The trochlear nucleus lies in the caudal midbrain at the level of the inferior colliculus, and its axons run dorsally, cross in the superior medullary velum and exit from the dorsal surface of the brainstem, the only cranial nerve to do either; the nerve then supplies the contralateral superior oblique after its long course around the midbrain and through the cavernous sinus. A nuclear or fascicular lesion in the midbrain therefore paralyzes the superior oblique of the opposite eye, whereas a lesion of the nerve after it has crossed, which is the usual situation, paralyzes the eye on the same side. The superior oblique depresses the adducted eye and intorts it, so its loss leaves the eye slightly elevated and extorted, with the diplopia greatest in downgaze and adduction, and the patient tilts the head toward the opposite shoulder to intort the eye by using the intact muscles; tilting toward the affected side calls on the paralyzed muscle and increases the deviation, the basis of the Bielschowsky head tilt test. The thin nerve is vulnerable to shearing at the tentorial edge in closed head injury, and bilateral palsies after trauma are common because both nerves cross in the same small velum. Decompensation of a congenital palsy, recognized by a large vertical fusional range and a lifelong head tilt, is the other common presentation.",
- "imagingFindings": [
-  {
-   "pathology": "Traumatic or microvascular palsy",
-   "modality": "MRI",
-   "finding": "Imaging is usually normal; look at the dorsal midbrain and the tentorial edge for contusion or hemorrhage.",
-   "sequence": "SWI"
-  },
-  {
-   "pathology": "Dorsal midbrain lesion",
-   "modality": "MRI",
-   "finding": "Lesion at the level of the inferior colliculus producing a contralateral palsy, sometimes with a Horner on the side of the lesion.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Closed head trauma (often bilateral)",
-  "Congenital palsy decompensating in adult life",
-  "Microvascular ischemia in diabetes and hypertension",
-  "Dorsal midbrain lesion",
-  "Cavernous sinus disease"
- ],
- "mimics": [
-  {
-   "name": "Skew deviation",
-   "howToDistinguish": "Vertical misalignment with intorsion of the higher eye and central signs; head tilt test negative or reversed"
-  },
-  {
-   "name": "Ocular myasthenia",
-   "howToDistinguish": "Variable and fatigable"
-  },
-  {
-   "name": "Thyroid eye disease (inferior rectus restriction)",
-   "howToDistinguish": "Hypotropia of the affected eye, restricted elevation, proptosis"
-  }
- ],
- "management": [
-  "Three-step test to confirm; check old photographs for a long-standing head tilt",
-  "Observe microvascular and traumatic palsies for spontaneous recovery over months; prisms meanwhile",
-  "Strabismus surgery for persistent decompensated palsies"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    351,
-    351
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    95,
-    96
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -30,
-   "z": -8
-  },
-  "label": "dorsal midbrain at the inferior colliculus where the nerves cross"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

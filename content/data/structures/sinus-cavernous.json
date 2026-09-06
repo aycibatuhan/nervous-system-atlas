@@ -1,216 +1,180 @@
 {
- "kind": "structure",
- "id": "sinus-cavernous",
- "name": "Cavernous sinus",
- "synonyms": [],
- "system": "venous",
- "meshIds": [
-  "dura-mater-cranial"
- ],
- "summary": "A plexus of venous channels within the dura on each side of the sella and sphenoid body, more important for what passes through it than for the blood it drains. The internal carotid artery and the abducens nerve run inside it; the oculomotor, trochlear, ophthalmic and maxillary nerves lie in its lateral wall. It receives the ophthalmic veins from the orbit and the sphenoparietal sinus and drains to the petrosal sinuses, and the two sides communicate around the pituitary. Its lesions, whether thrombosis from facial infection, a carotid-cavernous fistula, a pituitary tumor or a meningioma, all produce the cavernous sinus syndrome of ophthalmoplegia, facial numbness in V1/V2, proptosis and chemosis, with a Horner syndrome from the carotid sympathetic plexus.",
- "anatomy": {
-  "location": "Lateral to the sella turcica and sphenoid body from the superior orbital fissure to the petrous apex, medial to the temporal lobe and uncus; roofed by dura carrying the anterior clinoid process and bounded medially by the pituitary and sphenoid sinus.",
-  "subdivisions": [
-   {
-    "name": "Contents (within the sinus)",
-    "note": "internal carotid artery (cavernous segment) with its sympathetic plexus, abducens nerve"
-   },
-   {
-    "name": "Lateral wall (from above down)",
-    "note": "oculomotor nerve, trochlear nerve, ophthalmic nerve V1, maxillary nerve V2"
-   },
-   {
-    "name": "Tributaries",
-    "note": "superior and inferior ophthalmic veins, sphenoparietal sinus, superficial middle cerebral vein"
-   },
-   {
-    "name": "Drainage",
-    "note": "superior and inferior petrosal sinuses, intercavernous sinuses, emissary veins to the pterygoid plexus"
-   }
+  "kind": "structure",
+  "id": "sinus-cavernous",
+  "name": "Cavernous sinus",
+  "synonyms": [],
+  "system": "venous",
+  "meshIds": [
+    "dura-mater-cranial"
   ],
-  "relations": {
-   "medial": "pituitary gland and sphenoid sinus",
-   "lateral": "temporal lobe and uncus",
-   "anterior": "superior orbital fissure",
-   "posterior": "petrous apex and Dorello's canal"
-  }
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "ophthalmic veins"
-   },
-   {
-    "from": "superficial middle cerebral vein"
-   }
-  ],
-  "efferents": [
-   {
-    "to": "sinus-petrosal"
-   },
-   {
-    "to": "pterygoid plexus",
-    "via": "emissary veins"
-   }
-  ],
-  "pathways": []
- },
- "function": "Venous drainage of the orbit and anterior cranial base; conduit for the internal carotid artery and the nerves of eye movement and facial sensation.",
- "bloodSupply": {
-  "arteries": [
-   "(venous structure) drains territories of the cerebral arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 15,
-     "y": 5,
-     "z": -20
+  "summary": "A plexus of venous channels within the dura on each side of the sella and sphenoid body, more important for what passes through it than for the blood it drains. The internal carotid artery and the abducens nerve run inside it; the oculomotor, trochlear, ophthalmic and maxillary nerves lie in its lateral wall. It receives the ophthalmic veins from the orbit and the sphenoparietal sinus and drains to the petrosal sinuses, and the two sides communicate around the pituitary. Its lesions, whether thrombosis from facial infection, a carotid-cavernous fistula, a pituitary tumor or a meningioma, all produce the cavernous sinus syndrome of ophthalmoplegia, facial numbness in V1/V2, proptosis and chemosis, with a Horner syndrome from the carotid sympathetic plexus.",
+  "anatomy": {
+    "location": "Lateral to the sella turcica and sphenoid body from the superior orbital fissure to the petrous apex, medial to the temporal lobe and uncus; roofed by dura carrying the anterior clinoid process and bounded medially by the pituitary and sphenoid sinus.",
+    "subdivisions": [
+      {
+        "name": "Contents (within the sinus)",
+        "note": "internal carotid artery (cavernous segment) with its sympathetic plexus, abducens nerve"
+      },
+      {
+        "name": "Lateral wall (from above down)",
+        "note": "oculomotor nerve, trochlear nerve, ophthalmic nerve V1, maxillary nerve V2"
+      },
+      {
+        "name": "Tributaries",
+        "note": "superior and inferior ophthalmic veins, sphenoparietal sinus, superficial middle cerebral vein"
+      },
+      {
+        "name": "Drainage",
+        "note": "superior and inferior petrosal sinuses, intercavernous sinuses, emissary veins to the pterygoid plexus"
+      }
+    ],
+    "relations": {
+      "medial": "pituitary gland and sphenoid sinus",
+      "lateral": "temporal lobe and uncus",
+      "anterior": "superior orbital fissure",
+      "posterior": "petrous apex and Dorello's canal"
+    }
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "ophthalmic veins"
+      },
+      {
+        "from": "superficial middle cerebral vein"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "sinus-petrosal"
+      },
+      {
+        "to": "pterygoid plexus",
+        "via": "emissary veins"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Venous drainage of the orbit and anterior cranial base; conduit for the internal carotid artery and the nerves of eye movement and facial sensation.",
+  "bloodSupply": {
+    "arteries": [
+      "(venous structure) drains territories of the cerebral arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 15,
+          "y": 5,
+          "z": -20
+        },
+        "label": "cavernous sinuses either side of the pituitary with the carotid flow voids inside"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 15,
+          "y": 5,
+          "z": -20
+        },
+        "label": "cavernous sinus lateral to the sella from the orbital fissure to the petrous apex"
+      }
+    ],
+    "normalAppearance": "On coronal T1+Gd the sinus enhances homogeneously around the dark carotid flow void, with a flat or concave lateral wall; a convex, bulging, asymmetric or non-enhancing sinus is abnormal. Cranial nerves III, IV, V1 and V2 are seen as dots in the lateral wall on high-resolution T2.",
+    "pathology": [
+      {
+        "pathology": "Cavernous sinus thrombosis",
+        "modality": "MRI",
+        "finding": "Expanded sinus with filling defects on contrast, engorged superior ophthalmic vein, proptosis, usually from facial or sphenoid infection.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Carotid-cavernous fistula",
+        "modality": "MRI",
+        "finding": "Enlarged sinus and superior ophthalmic vein with arterialized flow; DSA confirms.",
+        "sequence": "TOF"
+      },
+      {
+        "pathology": "Cavernous sinus meningioma or pituitary adenoma extension",
+        "modality": "MRI",
+        "finding": "Enhancing tissue encasing the carotid with a convex lateral wall.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Tolosa–Hunt syndrome",
+        "modality": "MRI",
+        "finding": "Enhancing inflammatory tissue in the sinus and orbital apex responding to steroids.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Coronal T1+Gd and thin T2 through the sella; CT/MR venography; DSA for fistula"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ophthalmoplegia of III, IV and VI, sometimes complete",
+        "side": "ipsilateral",
+        "mechanism": "Nerves in and beside the sinus"
+      },
+      {
+        "deficit": "Numbness of the forehead and cheek (V1, V2), sparing the jaw (V3)",
+        "side": "ipsilateral",
+        "mechanism": "Lateral wall nerves; V3 leaves through the foramen ovale below the sinus"
+      },
+      {
+        "deficit": "Proptosis, chemosis, periorbital edema",
+        "side": "ipsilateral",
+        "mechanism": "Obstruction of the ophthalmic veins"
+      },
+      {
+        "deficit": "Horner syndrome with a sixth nerve palsy",
+        "side": "ipsilateral",
+        "mechanism": "Sympathetic plexus on the cavernous carotid next to the abducens nerve"
+      },
+      {
+        "deficit": "Pulsatile exophthalmos with a bruit",
+        "side": "ipsilateral",
+        "mechanism": "Carotid-cavernous fistula"
+      }
+    ],
+    "examination": [
+      "Eye movements in all directions, ptosis, pupil",
+      "Corneal reflex and sensation in V1, V2 and V3",
+      "Proptosis, conjunctival injection, listen for an orbital bruit",
+      "Visual acuity and fundoscopy (venous congestion)"
+    ],
+    "syndromes": [
+      "syn-cavernous-sinus",
+      "syn-cavernous-sinus-thrombosis",
+      "syn-pituitary-mass",
+      "syn-cn6-palsy"
+    ],
+    "pearls": [
+      "Multiple ocular motor palsies with V1/V2 numbness on one side is the cavernous sinus or superior orbital fissure; add optic nerve involvement and it is the orbital apex",
+      "Horner syndrome plus abducens palsy is almost pathognomonic of a cavernous sinus lesion"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cavernous-sinus",
+      "section": "Structure and Function"
     },
-    "label": "cavernous sinuses either side of the pituitary with the carotid flow voids inside"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 15,
-     "y": 5,
-     "z": -20
+    {
+      "ref": "sp-cavernous-sinus-aneurysm",
+      "section": "Pathophysiology"
     },
-    "label": "cavernous sinus lateral to the sella from the orbital fissure to the petrous apex"
-   }
+    {
+      "ref": "sp-cavernous-sinus-syndromes",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "On coronal T1+Gd the sinus enhances homogeneously around the dark carotid flow void, with a flat or concave lateral wall; a convex, bulging, asymmetric or non-enhancing sinus is abnormal. Cranial nerves III, IV, V1 and V2 are seen as dots in the lateral wall on high-resolution T2.",
-  "pathology": [
-   {
-    "pathology": "Cavernous sinus thrombosis",
-    "modality": "MRI",
-    "finding": "Expanded sinus with filling defects on contrast, engorged superior ophthalmic vein, proptosis, usually from facial or sphenoid infection.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Carotid-cavernous fistula",
-    "modality": "MRI",
-    "finding": "Enlarged sinus and superior ophthalmic vein with arterialized flow; DSA confirms.",
-    "sequence": "TOF"
-   },
-   {
-    "pathology": "Cavernous sinus meningioma or pituitary adenoma extension",
-    "modality": "MRI",
-    "finding": "Enhancing tissue encasing the carotid with a convex lateral wall.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Tolosa–Hunt syndrome",
-    "modality": "MRI",
-    "finding": "Enhancing inflammatory tissue in the sinus and orbital apex responding to steroids.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "venous"
   ],
-  "sequenceOfChoice": "Coronal T1+Gd and thin T2 through the sella; CT/MR venography; DSA for fistula"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ophthalmoplegia of III, IV and VI, sometimes complete",
-    "side": "ipsilateral",
-    "mechanism": "Nerves in and beside the sinus"
-   },
-   {
-    "deficit": "Numbness of the forehead and cheek (V1, V2), sparing the jaw (V3)",
-    "side": "ipsilateral",
-    "mechanism": "Lateral wall nerves; V3 leaves through the foramen ovale below the sinus"
-   },
-   {
-    "deficit": "Proptosis, chemosis, periorbital edema",
-    "side": "ipsilateral",
-    "mechanism": "Obstruction of the ophthalmic veins"
-   },
-   {
-    "deficit": "Horner syndrome with a sixth nerve palsy",
-    "side": "ipsilateral",
-    "mechanism": "Sympathetic plexus on the cavernous carotid next to the abducens nerve"
-   },
-   {
-    "deficit": "Pulsatile exophthalmos with a bruit",
-    "side": "ipsilateral",
-    "mechanism": "Carotid-cavernous fistula"
-   }
-  ],
-  "examination": [
-   "Eye movements in all directions, ptosis, pupil",
-   "Corneal reflex and sensation in V1, V2 and V3",
-   "Proptosis, conjunctival injection, listen for an orbital bruit",
-   "Visual acuity and fundoscopy (venous congestion)"
-  ],
-  "syndromes": [
-   "syn-cavernous-sinus",
-   "syn-cavernous-sinus-thrombosis",
-   "syn-pituitary-mass",
-   "syn-cn6-palsy"
-  ],
-  "pearls": [
-   "Multiple ocular motor palsies with V1/V2 numbness on one side is the cavernous sinus or superior orbital fissure; add optic nerve involvement and it is the orbital apex",
-   "Horner syndrome plus abducens palsy is almost pathognomonic of a cavernous sinus lesion"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    421,
-    424
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    432,
-    433
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    351,
-    351
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    84,
-    86
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    93,
-    93
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    95,
-    96
-   ]
-  }
- ],
- "tags": [
-  "venous"
- ],
- "status": "draft",
- "latin": "Sinus cavernosus"
+  "status": "draft",
+  "latin": "Sinus cavernosus"
 }

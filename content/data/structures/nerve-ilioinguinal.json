@@ -1,132 +1,128 @@
 {
- "kind": "structure",
- "id": "nerve-ilioinguinal",
- "name": "Ilioinguinal nerve",
- "synonyms": [
-  "ilioinguinal nerve (L1)"
- ],
- "system": "peripheral",
- "meshIds": [
-  "ilioinguinal-nerve-l",
-  "ilioinguinal-nerve-r"
- ],
- "summary": "The ilioinguinal nerve (L1) runs just below the iliohypogastric nerve, emerging from the lateral border of the psoas, crossing the quadratus lumborum and the iliacus, piercing the transversus abdominis near the iliac crest and passing through the inguinal canal with the spermatic cord or round ligament to emerge through the superficial ring and supply the skin of the upper medial thigh, the root of the penis and anterior scrotum or the mons and labium majus. It is the nerve most often injured in inguinal hernia repair and the commonest cause of chronic postoperative groin pain, and its territory distinguishes it from the genitofemoral nerve (which supplies the femoral triangle and the cremaster) and the lateral femoral cutaneous nerve.",
- "anatomy": {
-  "location": "From the L1 root, along the lateral border of the psoas and across the quadratus lumborum and iliacus below the iliohypogastric nerve, piercing the transversus abdominis near the anterior part of the iliac crest, running between it and the internal oblique, then entering the inguinal canal below the spermatic cord to leave through the superficial inguinal ring to the skin of the upper medial thigh and the external genitalia.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Mainly sensory to the upper medial thigh, the root of the penis and anterior scrotum or the mons and labium majus, with motor fibers to the lowest fibers of the internal oblique and transversus abdominis; it provides the sensory afferent of the cremasteric reflex from the medial thigh (the efferent runs in the genitofemoral nerve), and its entrapment by suture, mesh or scar after hernia repair, or by the abdominal wall muscles in athletes, produces a burning groin pain radiating to the genitalia and the medial thigh that is aggravated by walking and hip extension and relieved by flexion, with a trigger point medial to the anterior superior iliac spine. Ilioinguinal block is used for hernia surgery, and neurectomy for refractory neuralgia.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-ilioinguinal",
+  "name": "Ilioinguinal nerve",
+  "synonyms": [
+    "ilioinguinal nerve (L1)"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "ilioinguinal-nerve-l"
-    },
-    "label": "ilioinguinal nerve crossing the iliacus to the inguinal canal"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "ilioinguinal-nerve-r"
-    },
-    "label": "nerve between the transversus abdominis and internal oblique near the iliac crest"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "ilioinguinal-nerve-l",
+    "ilioinguinal-nerve-r"
   ],
-  "normalAppearance": "A small nerve between the transversus abdominis and internal oblique near the anterior superior iliac spine and within the inguinal canal on ultrasound. Territory: upper medial thigh and anterior genitalia.",
-  "pathology": [
-   {
-    "pathology": "Post-herniorrhaphy ilioinguinal neuralgia",
-    "modality": "US",
-    "finding": "Nerve entrapped in mesh or scar in the inguinal canal with a Tinel sign at the superficial ring; ultrasound-guided block confirms.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Athletic groin pain (sportsman's hernia)",
-    "modality": "MRI",
-    "finding": "Rectus and adductor origin tendinopathy at the pubis with entrapment of the ilioinguinal or genital branch by the external oblique aponeurosis.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "L1 radiculopathy or plexus lesion",
-    "modality": "MRI",
-    "finding": "Upper lumbar root or retroperitoneal lesion with groin and genital numbness and a weak lower abdominal wall.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Burning pain and numbness of the groin, upper medial thigh and anterior genitalia",
-    "side": "ipsilateral",
-    "mechanism": "Entrapment or injury of the nerve, usually in the inguinal canal"
-   },
-   {
-    "deficit": "Reduced cremasteric reflex",
-    "side": "ipsilateral",
-    "mechanism": "Loss of the afferent limb from the medial thigh"
-   },
-   {
-    "deficit": "Mild lower abdominal wall weakness",
-    "side": "ipsilateral",
-    "mechanism": "Denervation of the lowest fibers of the oblique muscles"
-   }
-  ],
-  "examination": [
-   "Map the sensory loss and compare with the genitofemoral (femoral triangle) and lateral femoral cutaneous (lateral thigh) territories",
-   "Tinel sign medial to the anterior superior iliac spine and at the superficial inguinal ring",
-   "Diagnostic block; neurectomy if it fails"
-  ],
-  "syndromes": [
-   "syn-lumbosacral-plexopathy",
-   "syn-meralgia-paresthetica"
-  ],
-  "pearls": [
-   "Groin pain after hernia surgery is the ilioinguinal nerve until a block says otherwise",
-   "Three nerves supply the groin skin: ilioinguinal medially, genitofemoral in the triangle, lateral femoral cutaneous laterally",
-   "Hip flexion relieves it; walking provokes it"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The ilioinguinal nerve (L1) runs just below the iliohypogastric nerve, emerging from the lateral border of the psoas, crossing the quadratus lumborum and the iliacus, piercing the transversus abdominis near the iliac crest and passing through the inguinal canal with the spermatic cord or round ligament to emerge through the superficial ring and supply the skin of the upper medial thigh, the root of the penis and anterior scrotum or the mons and labium majus. It is the nerve most often injured in inguinal hernia repair and the commonest cause of chronic postoperative groin pain, and its territory distinguishes it from the genitofemoral nerve (which supplies the femoral triangle and the cremaster) and the lateral femoral cutaneous nerve.",
+  "anatomy": {
+    "location": "From the L1 root, along the lateral border of the psoas and across the quadratus lumborum and iliacus below the iliohypogastric nerve, piercing the transversus abdominis near the anterior part of the iliac crest, running between it and the internal oblique, then entering the inguinal canal below the spermatic cord to leave through the superficial inguinal ring to the skin of the upper medial thigh and the external genitalia.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    166
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Mainly sensory to the upper medial thigh, the root of the penis and anterior scrotum or the mons and labium majus, with motor fibers to the lowest fibers of the internal oblique and transversus abdominis; it provides the sensory afferent of the cremasteric reflex from the medial thigh (the efferent runs in the genitofemoral nerve), and its entrapment by suture, mesh or scar after hernia repair, or by the abdominal wall muscles in athletes, produces a burning groin pain radiating to the genitalia and the medial thigh that is aggravated by walking and hip extension and relieved by flexion, with a trigger point medial to the anterior superior iliac spine. Ilioinguinal block is used for hernia surgery, and neurectomy for refractory neuralgia.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "ilioinguinal-nerve-l"
+        },
+        "label": "ilioinguinal nerve crossing the iliacus to the inguinal canal"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "ilioinguinal-nerve-r"
+        },
+        "label": "nerve between the transversus abdominis and internal oblique near the iliac crest"
+      }
+    ],
+    "normalAppearance": "A small nerve between the transversus abdominis and internal oblique near the anterior superior iliac spine and within the inguinal canal on ultrasound. Territory: upper medial thigh and anterior genitalia.",
+    "pathology": [
+      {
+        "pathology": "Post-herniorrhaphy ilioinguinal neuralgia",
+        "modality": "US",
+        "finding": "Nerve entrapped in mesh or scar in the inguinal canal with a Tinel sign at the superficial ring; ultrasound-guided block confirms.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Athletic groin pain (sportsman's hernia)",
+        "modality": "MRI",
+        "finding": "Rectus and adductor origin tendinopathy at the pubis with entrapment of the ilioinguinal or genital branch by the external oblique aponeurosis.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "L1 radiculopathy or plexus lesion",
+        "modality": "MRI",
+        "finding": "Upper lumbar root or retroperitoneal lesion with groin and genital numbness and a weak lower abdominal wall.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Burning pain and numbness of the groin, upper medial thigh and anterior genitalia",
+        "side": "ipsilateral",
+        "mechanism": "Entrapment or injury of the nerve, usually in the inguinal canal"
+      },
+      {
+        "deficit": "Reduced cremasteric reflex",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the afferent limb from the medial thigh"
+      },
+      {
+        "deficit": "Mild lower abdominal wall weakness",
+        "side": "ipsilateral",
+        "mechanism": "Denervation of the lowest fibers of the oblique muscles"
+      }
+    ],
+    "examination": [
+      "Map the sensory loss and compare with the genitofemoral (femoral triangle) and lateral femoral cutaneous (lateral thigh) territories",
+      "Tinel sign medial to the anterior superior iliac spine and at the superficial inguinal ring",
+      "Diagnostic block; neurectomy if it fails"
+    ],
+    "syndromes": [
+      "syn-lumbosacral-plexopathy",
+      "syn-meralgia-paresthetica"
+    ],
+    "pearls": [
+      "Groin pain after hernia surgery is the ilioinguinal nerve until a block says otherwise",
+      "Three nerves supply the groin skin: ilioinguinal medially, genitofemoral in the triangle, lateral femoral cutaneous laterally",
+      "Hip flexion relieves it; walking provokes it"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-ilioinguinal-neuralgia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-posterior-abdominal-wall-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "lower-limb",
+  "parent": "plexus-lumbosacral",
+  "level": {
+    "region": "peripheral",
+    "sub": "L1"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "lower-limb",
- "parent": "plexus-lumbosacral",
- "level": {
-  "region": "peripheral",
-  "sub": "L1"
- }
 }

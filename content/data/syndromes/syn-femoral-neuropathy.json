@@ -1,121 +1,121 @@
 {
- "kind": "syndrome",
- "id": "syn-femoral-neuropathy",
- "name": "Femoral neuropathy",
- "eponyms": [],
- "category": "entrapment",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "nerve-femoral",
-   "plexus-lumbosacral",
-   "roots-l2-s1"
+  "kind": "syndrome",
+  "id": "syn-femoral-neuropathy",
+  "name": "Femoral neuropathy",
+  "eponyms": [],
+  "category": "entrapment",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "nerve-femoral",
+      "plexus-lumbosacral",
+      "roots-l2-s1"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "femoral-nerve-l"
+    ]
+  },
+  "presentation": "After a long operation in the lithotomy position, or with a retroperitoneal hematoma in an anticoagulated patient, a patient cannot straighten the knee and the leg buckles on stairs. The quadriceps is weak and later wasted, the knee jerk is absent, and sensation is reduced over the front of the thigh and the inner side of the leg down to the ankle. Hip adduction is normal, which separates the lesion from the L3–L4 roots or the lumbar plexus.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "quadriceps, iliopsoas (proximal lesions)",
+      "sign": "Weak knee extension with buckling; weak hip flexion if the lesion is above the inguinal ligament",
+      "substrate": "nerve-femoral"
+    },
+    {
+      "modality": "reflex",
+      "side": "ipsilateral",
+      "distribution": "knee",
+      "sign": "Absent patellar reflex",
+      "substrate": "nerve-femoral"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "anterior and medial thigh, medial leg to the ankle (saphenous)",
+      "sign": "Sensory loss in the femoral and saphenous distribution",
+      "substrate": "nerve-femoral"
+    },
+    {
+      "modality": "motor",
+      "side": "n/a",
+      "distribution": "hip adductors",
+      "sign": "Adduction spared (obturator nerve), distinguishing it from an L3–L4 root or plexus lesion",
+      "substrate": "nerve-obturator"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "femoral-nerve-l"
-  ]
- },
- "presentation": "After a long operation in the lithotomy position, or with a retroperitoneal hematoma in an anticoagulated patient, a patient cannot straighten the knee and the leg buckles on stairs. The quadriceps is weak and later wasted, the knee jerk is absent, and sensation is reduced over the front of the thigh and the inner side of the leg down to the ankle. Hip adduction is normal, which separates the lesion from the L3–L4 roots or the lumbar plexus.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "quadriceps, iliopsoas (proximal lesions)",
-   "sign": "Weak knee extension with buckling; weak hip flexion if the lesion is above the inguinal ligament",
-   "substrate": "nerve-femoral"
+  "reasoning": "The femoral nerve forms in the psoas from the L2–L4 roots, emerges at its lateral border, runs in the groove between the psoas and iliacus beneath the iliac fascia, and passes under the inguinal ligament to divide into branches for the quadriceps and sartorius and the saphenous nerve for the medial leg. Within the pelvis it is vulnerable to compression by a hematoma in the iliacus muscle in anticoagulated or hemophiliac patients, to stretching by prolonged hip flexion and abduction in the lithotomy position, to retractors in pelvic surgery and to diabetic ischemia. A lesion here paralyzes the quadriceps and, if proximal, the iliopsoas, abolishes the knee reflex whose arc runs through the nerve, and produces sensory loss over the anterior thigh and along the saphenous territory on the medial leg. The obturator nerve arises from the same roots but leaves the plexus separately through the obturator foramen, so hip adduction is preserved in a femoral neuropathy and lost in a lumbar plexus or L3–L4 root lesion, and the L4 root is further distinguished by its contribution to the tibialis anterior. Sensory loss in a femoral lesion extends to the ankle, well beyond the L2–L3 dermatomes that a root lesion would involve. The deficit is ipsilateral, being a peripheral nerve. Diabetic lumbosacral radiculoplexus neuropathy (diabetic amyotrophy) produces a painful, asymmetric picture that begins in femoral territory but spreads beyond it, with weight loss.",
+  "imagingFindings": [
+    {
+      "pathology": "Iliacus or psoas hematoma",
+      "modality": "CT",
+      "finding": "Hyperdense collection within the iliacus or psoas muscle displacing the nerve; urgent in anticoagulated patients.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Reduced femoral motor amplitude with denervation of the quadriceps and iliopsoas but not the adductors or paraspinals; saphenous sensory response reduced in postganglionic lesions.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Pelvic mass",
+      "modality": "MRI",
+      "finding": "Tumor or abscess along the psoas compressing the nerve; diabetic amyotrophy shows plexus and root enhancement.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Retroperitoneal or iliacus hematoma",
+    "Lithotomy position, hip surgery, pelvic surgery",
+    "Diabetic radiculoplexus neuropathy",
+    "Pelvic tumor or abscess",
+    "Femoral catheterization"
+  ],
+  "mimics": [
+    {
+      "name": "L3–L4 radiculopathy",
+      "howToDistinguish": "Back pain, adductor weakness, paraspinal denervation, sensory loss confined to the L3–L4 dermatomes"
+    },
+    {
+      "name": "Lumbar plexopathy",
+      "howToDistinguish": "Adductors and other nerves involved, often painful, with diabetes or malignancy"
+    },
+    {
+      "name": "Quadriceps myopathy or inclusion body myositis",
+      "howToDistinguish": "Bilateral, no sensory loss, reflexes preserved until late"
+    }
+  ],
+  "management": [
+    "Reverse anticoagulation and consider surgical decompression for a hematoma with progressive deficit",
+    "Knee brace and physiotherapy; most compressive lesions recover over months",
+    "Screen for diabetes and malignancy when no mechanical cause is evident"
+  ],
+  "citations": [
+    {
+      "ref": "sp-thigh-femoral-nerve",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-neuropathy",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -60,
+      "y": -10,
+      "z": -200
+    },
+    "label": "femoral nerve beneath the inguinal ligament (virtual)"
   },
-  {
-   "modality": "reflex",
-   "side": "ipsilateral",
-   "distribution": "knee",
-   "sign": "Absent patellar reflex",
-   "substrate": "nerve-femoral"
-  },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "anterior and medial thigh, medial leg to the ankle (saphenous)",
-   "sign": "Sensory loss in the femoral and saphenous distribution",
-   "substrate": "nerve-femoral"
-  },
-  {
-   "modality": "motor",
-   "side": "n/a",
-   "distribution": "hip adductors",
-   "sign": "Adduction spared (obturator nerve), distinguishing it from an L3–L4 root or plexus lesion",
-   "substrate": "nerve-obturator"
-  }
- ],
- "reasoning": "The femoral nerve forms in the psoas from the L2–L4 roots, emerges at its lateral border, runs in the groove between the psoas and iliacus beneath the iliac fascia, and passes under the inguinal ligament to divide into branches for the quadriceps and sartorius and the saphenous nerve for the medial leg. Within the pelvis it is vulnerable to compression by a hematoma in the iliacus muscle in anticoagulated or hemophiliac patients, to stretching by prolonged hip flexion and abduction in the lithotomy position, to retractors in pelvic surgery and to diabetic ischemia. A lesion here paralyzes the quadriceps and, if proximal, the iliopsoas, abolishes the knee reflex whose arc runs through the nerve, and produces sensory loss over the anterior thigh and along the saphenous territory on the medial leg. The obturator nerve arises from the same roots but leaves the plexus separately through the obturator foramen, so hip adduction is preserved in a femoral neuropathy and lost in a lumbar plexus or L3–L4 root lesion, and the L4 root is further distinguished by its contribution to the tibialis anterior. Sensory loss in a femoral lesion extends to the ankle, well beyond the L2–L3 dermatomes that a root lesion would involve. The deficit is ipsilateral, being a peripheral nerve. Diabetic lumbosacral radiculoplexus neuropathy (diabetic amyotrophy) produces a painful, asymmetric picture that begins in femoral territory but spreads beyond it, with weight loss.",
- "imagingFindings": [
-  {
-   "pathology": "Iliacus or psoas hematoma",
-   "modality": "CT",
-   "finding": "Hyperdense collection within the iliacus or psoas muscle displacing the nerve; urgent in anticoagulated patients.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Reduced femoral motor amplitude with denervation of the quadriceps and iliopsoas but not the adductors or paraspinals; saphenous sensory response reduced in postganglionic lesions.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Pelvic mass",
-   "modality": "MRI",
-   "finding": "Tumor or abscess along the psoas compressing the nerve; diabetic amyotrophy shows plexus and root enhancement.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Retroperitoneal or iliacus hematoma",
-  "Lithotomy position, hip surgery, pelvic surgery",
-  "Diabetic radiculoplexus neuropathy",
-  "Pelvic tumor or abscess",
-  "Femoral catheterization"
- ],
- "mimics": [
-  {
-   "name": "L3–L4 radiculopathy",
-   "howToDistinguish": "Back pain, adductor weakness, paraspinal denervation, sensory loss confined to the L3–L4 dermatomes"
-  },
-  {
-   "name": "Lumbar plexopathy",
-   "howToDistinguish": "Adductors and other nerves involved, often painful, with diabetes or malignancy"
-  },
-  {
-   "name": "Quadriceps myopathy or inclusion body myositis",
-   "howToDistinguish": "Bilateral, no sensory loss, reflexes preserved until late"
-  }
- ],
- "management": [
-  "Reverse anticoagulation and consider surgical decompression for a hematoma with progressive deficit",
-  "Knee brace and physiotherapy; most compressive lesions recover over months",
-  "Screen for diabetes and malignancy when no mechanical cause is evident"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    159,
-    164
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -60,
-   "y": -10,
-   "z": -200
-  },
-  "label": "femoral nerve beneath the inguinal ligament (virtual)"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

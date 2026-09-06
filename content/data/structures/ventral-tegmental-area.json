@@ -1,192 +1,163 @@
 {
- "kind": "structure",
- "id": "ventral-tegmental-area",
- "name": "Ventral tegmental area",
- "synonyms": [
-  "VTA",
-  "A10 dopaminergic group"
- ],
- "system": "brainstem",
- "meshIds": [
-  "ventral-tegmental-area-l",
-  "ventral-tegmental-area-r"
- ],
- "summary": "The ventral tegmental area is the group of dopamine neurons in the ventromedial midbrain tegmentum medial to the substantia nigra, above the interpeduncular nucleus and lateral to the midline, the source of the mesolimbic and mesocortical dopamine systems. Its axons run in the medial forebrain bundle to the nucleus accumbens, the amygdala, the hippocampus and the prefrontal cortex and signal reward prediction, motivation and salience; it is the substrate of addiction, of the reinforcing effects of every drug of abuse, of anhedonia and of the positive symptoms treated by dopamine antagonists. It is relatively spared in Parkinson disease but contributes to apathy and to the dopamine dysregulation syndrome, and it is damaged in Wernicke encephalopathy and paramedian midbrain infarcts.",
- "anatomy": {
-  "location": "Ventromedial midbrain tegmentum on each side of the midline, medial to the substantia nigra pars compacta and the medial lemniscus, dorsal to the interpeduncular nucleus and the fossa, ventral to the red nucleus and the oculomotor nerve fibers, extending from the mammillary bodies to the rostral pons.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Prefrontal cortex",
-    "via": "corticotegmental fibers"
-   },
-   {
-    "from": "Lateral hypothalamus (orexin) and pedunculopontine nucleus",
-    "via": "descending medial forebrain bundle and cholinergic fibers"
-   },
-   {
-    "from": "Lateral habenula (via the rostromedial tegmental nucleus)",
-    "via": "fasciculus retroflexus"
-   }
+  "kind": "structure",
+  "id": "ventral-tegmental-area",
+  "name": "Ventral tegmental area",
+  "synonyms": [
+    "VTA",
+    "A10 dopaminergic group"
   ],
-  "efferents": [
-   {
-    "to": "Nucleus accumbens and ventral striatum",
-    "via": "mesolimbic pathway in the medial forebrain bundle"
-   },
-   {
-    "to": "Prefrontal cortex",
-    "via": "mesocortical pathway"
-   },
-   {
-    "to": "Amygdala and hippocampus",
-    "via": "mesolimbic fibers"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "ventral-tegmental-area-l",
+    "ventral-tegmental-area-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops",
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Dopamine neurons of the ventral tegmental area burst when a reward is better than predicted and pause when it is worse, teaching the accumbens and the prefrontal cortex which cues and actions lead to reward; tonic activity sets motivation and effort. Mesocortical dopamine tunes prefrontal working memory in an inverted-U relation, and mesolimbic dopamine drives approach behavior and the incentive value of cues, which drugs of abuse hijack by raising accumbens dopamine directly or through the ventral tegmental area. GABAergic and glutamatergic neurons within the area modulate the dopamine cells and project to the same targets, and the area receives the prefrontal cortex, the lateral hypothalamus (orexin), the pedunculopontine and laterodorsal tegmental nuclei, the lateral habenula and the raphe.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-sca",
-   "artery-basilar",
-   "arteries-thalamoperforating",
-   "artery-pcom"
+  "summary": "The ventral tegmental area is the group of dopamine neurons in the ventromedial midbrain tegmentum medial to the substantia nigra, above the interpeduncular nucleus and lateral to the midline, the source of the mesolimbic and mesocortical dopamine systems. Its axons run in the medial forebrain bundle to the nucleus accumbens, the amygdala, the hippocampus and the prefrontal cortex and signal reward prediction, motivation and salience; it is the substrate of addiction, of the reinforcing effects of every drug of abuse, of anhedonia and of the positive symptoms treated by dopamine antagonists. It is relatively spared in Parkinson disease but contributes to apathy and to the dopamine dysregulation syndrome, and it is damaged in Wernicke encephalopathy and paramedian midbrain infarcts.",
+  "anatomy": {
+    "location": "Ventromedial midbrain tegmentum on each side of the midline, medial to the substantia nigra pars compacta and the medial lemniscus, dorsal to the interpeduncular nucleus and the fossa, ventral to the red nucleus and the oculomotor nerve fibers, extending from the mammillary bodies to the rostral pons.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Prefrontal cortex",
+        "via": "corticotegmental fibers"
+      },
+      {
+        "from": "Lateral hypothalamus (orexin) and pedunculopontine nucleus",
+        "via": "descending medial forebrain bundle and cholinergic fibers"
+      },
+      {
+        "from": "Lateral habenula (via the rostromedial tegmental nucleus)",
+        "via": "fasciculus retroflexus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Nucleus accumbens and ventral striatum",
+        "via": "mesolimbic pathway in the medial forebrain bundle"
+      },
+      {
+        "to": "Prefrontal cortex",
+        "via": "mesocortical pathway"
+      },
+      {
+        "to": "Amygdala and hippocampus",
+        "via": "mesolimbic fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops",
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Dopamine neurons of the ventral tegmental area burst when a reward is better than predicted and pause when it is worse, teaching the accumbens and the prefrontal cortex which cues and actions lead to reward; tonic activity sets motivation and effort. Mesocortical dopamine tunes prefrontal working memory in an inverted-U relation, and mesolimbic dopamine drives approach behavior and the incentive value of cues, which drugs of abuse hijack by raising accumbens dopamine directly or through the ventral tegmental area. GABAergic and glutamatergic neurons within the area modulate the dopamine cells and project to the same targets, and the area receives the prefrontal cortex, the lateral hypothalamus (orexin), the pedunculopontine and laterodorsal tegmental nuclei, the lateral habenula and the raphe.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-sca",
+      "artery-basilar",
+      "arteries-thalamoperforating",
+      "artery-pcom"
+    ],
+    "territories": [
+      "territory-basilar",
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "ventral-tegmental-area-l"
+        },
+        "label": "ventral tegmental area medial to the substantia nigra"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "ventral-tegmental-area-r"
+        },
+        "label": "ventromedial midbrain tegmentum above the interpeduncular fossa"
+      }
+    ],
+    "normalAppearance": "The paramedian ventral midbrain tegmentum between the red nuclei and the interpeduncular fossa on axial images; on neuromelanin-sensitive images it is continuous with the medial pars compacta.",
+    "pathology": [
+      {
+        "pathology": "Paramedian midbrain infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the ventromedial midbrain with third nerve palsy, contralateral ataxia or hemiparesis and apathy or hypersomnia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "FLAIR hyperintensity of the periaqueductal gray and the medial midbrain tegmentum including the ventral tegmental area, with the mammillary bodies.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Addiction and psychosis (functional)",
+        "modality": "PET",
+        "finding": "Increased striatal dopamine release to drugs and cues and elevated presynaptic dopamine synthesis in psychosis on PET; structural MRI normal.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apathy, anhedonia and loss of motivation",
+        "side": "bilateral",
+        "mechanism": "Loss of mesolimbic dopamine reward signaling"
+      },
+      {
+        "deficit": "Impaired working memory and attention",
+        "side": "bilateral",
+        "mechanism": "Loss of mesocortical dopamine to the prefrontal cortex"
+      },
+      {
+        "deficit": "Contribution to hypersomnia after midbrain lesions",
+        "side": "bilateral",
+        "mechanism": "Loss of the arousal-promoting dopaminergic component of the ascending systems"
+      }
+    ],
+    "examination": [
+      "Apathy and reward responsiveness history",
+      "Working memory and attention testing",
+      "Substance use history, because this system is the target of every addictive drug"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff",
+      "syn-parkinsonism"
+    ],
+    "pearls": [
+      "The ventral tegmental area is where wanting is made; every drug of abuse raises its dopamine in the accumbens",
+      "Antipsychotics treat delusions by blocking the receptors that mesolimbic dopamine drives, and cause parkinsonism by blocking the nigrostriatal ones",
+      "Thiamine deficiency injures this region along with the mammillary bodies; apathy is part of Wernicke encephalopathy"
+    ]
+  },
+  "pitfalls": [
+    "Apathy after a midbrain or thalamic stroke is often labeled depression; it lacks the sadness and reflects dopaminergic disconnection"
   ],
-  "territories": [
-   "territory-basilar",
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "ventral-tegmental-area-l"
+  "citations": [
+    {
+      "ref": "sp-substantia-nigra",
+      "section": "Structure and Function"
     },
-    "label": "ventral tegmental area medial to the substantia nigra"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "ventral-tegmental-area-r"
+    {
+      "ref": "sp-dopamine"
     },
-    "label": "ventromedial midbrain tegmentum above the interpeduncular fossa"
-   }
+    {
+      "ref": "sp-mesencephalon-midbrain",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The paramedian ventral midbrain tegmentum between the red nuclei and the interpeduncular fossa on axial images; on neuromelanin-sensitive images it is continuous with the medial pars compacta.",
-  "pathology": [
-   {
-    "pathology": "Paramedian midbrain infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the ventromedial midbrain with third nerve palsy, contralateral ataxia or hemiparesis and apathy or hypersomnia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "FLAIR hyperintensity of the periaqueductal gray and the medial midbrain tegmentum including the ventral tegmental area, with the mammillary bodies.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Addiction and psychosis (functional)",
-    "modality": "PET",
-    "finding": "Increased striatal dopamine release to drugs and cues and elevated presynaptic dopamine synthesis in psychosis on PET; structural MRI normal.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apathy, anhedonia and loss of motivation",
-    "side": "bilateral",
-    "mechanism": "Loss of mesolimbic dopamine reward signaling"
-   },
-   {
-    "deficit": "Impaired working memory and attention",
-    "side": "bilateral",
-    "mechanism": "Loss of mesocortical dopamine to the prefrontal cortex"
-   },
-   {
-    "deficit": "Contribution to hypersomnia after midbrain lesions",
-    "side": "bilateral",
-    "mechanism": "Loss of the arousal-promoting dopaminergic component of the ascending systems"
-   }
+  "tags": [
+    "dopamine",
+    "reward",
+    "mesolimbic"
   ],
-  "examination": [
-   "Apathy and reward responsiveness history",
-   "Working memory and attention testing",
-   "Substance use history, because this system is the target of every addictive drug"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff",
-   "syn-parkinsonism"
-  ],
-  "pearls": [
-   "The ventral tegmental area is where wanting is made; every drug of abuse raises its dopamine in the accumbens",
-   "Antipsychotics treat delusions by blocking the receptors that mesolimbic dopamine drives, and cause parkinsonism by blocking the nigrostriatal ones",
-   "Thiamine deficiency injures this region along with the mammillary bodies; apathy is part of Wernicke encephalopathy"
-  ]
- },
- "pitfalls": [
-  "Apathy after a midbrain or thalamic stroke is often labeled depression; it lacks the sadness and reflects dopaminergic disconnection"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    218
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    55,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    248
-   ]
-  }
- ],
- "tags": [
-  "dopamine",
-  "reward",
-  "mesolimbic"
- ],
- "status": "draft",
- "subsystem": "midbrain",
- "parent": "brainstem"
+  "status": "draft",
+  "subsystem": "midbrain",
+  "parent": "brainstem"
 }

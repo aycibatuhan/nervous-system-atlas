@@ -1,120 +1,116 @@
 {
- "kind": "syndrome",
- "id": "syn-anton",
- "name": "Anton syndrome (cortical blindness with denial)",
- "eponyms": [
-  "Anton–Babinski syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cortex-calcarine",
-   "lobe-occipital",
-   "artery-pca"
+  "kind": "syndrome",
+  "id": "syn-anton",
+  "name": "Anton syndrome (cortical blindness with denial)",
+  "eponyms": [
+    "Anton–Babinski syndrome"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -85,
-   "z": 5
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cortex-calcarine",
+      "lobe-occipital",
+      "artery-pca"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 20
- },
- "presentation": "A patient who has suffered bilateral occipital infarcts, often after a basilar embolus or a cardiac arrest, walks into furniture and describes objects that are not there, yet insists that they can see, blaming the light or their glasses. The pupils react normally to light, the fundi are normal, and there is no blink to threat. The confabulated descriptions are the clue that the patient is unaware of the blindness.",
- "deficits": [
-  {
-   "modality": "visual-acuity",
-   "side": "bilateral",
-   "distribution": "entire field",
-   "sign": "Cortical blindness: no perception of light, normal pupils, absent blink to threat, preserved optokinetic response absent",
-   "substrate": "pathway-visual"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -85,
+      "z": 5
+    },
+    "radiusMm": 20
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "bilateral occipital and parietal",
-   "sign": "Anosognosia for blindness with visual confabulation",
-   "substrate": "cortex-calcarine"
+  "presentation": "A patient who has suffered bilateral occipital infarcts, often after a basilar embolus or a cardiac arrest, walks into furniture and describes objects that are not there, yet insists that they can see, blaming the light or their glasses. The pupils react normally to light, the fundi are normal, and there is no blink to threat. The confabulated descriptions are the clue that the patient is unaware of the blindness.",
+  "deficits": [
+    {
+      "modality": "visual-acuity",
+      "side": "bilateral",
+      "distribution": "entire field",
+      "sign": "Cortical blindness: no perception of light, normal pupils, absent blink to threat, preserved optokinetic response absent",
+      "substrate": "pathway-visual"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "bilateral occipital and parietal",
+      "sign": "Anosognosia for blindness with visual confabulation",
+      "substrate": "cortex-calcarine"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "medial temporal",
+      "sign": "Amnesia and agitation when the temporal branches are also involved",
+      "substrate": "hippocampus"
+    }
+  ],
+  "reasoning": "Both calcarine cortices receive the crossed visual input from the contralateral hemifields, so bilateral destruction abolishes all conscious vision while the retina, optic nerves, chiasm, tracts and pretectal pupillary pathway remain intact; the pupils react because the pupillary light fibers leave the optic tract for the pretectum before reaching the geniculate and cortex. Both occipital lobes are supplied by the posterior cerebral arteries, which arise together from the basilar tip, so an embolus there or a period of profound hypotension affects both at once. The denial is thought to arise when the visual association cortex and its connections to the parietal and frontal monitoring systems are involved along with the primary cortex, so that the absence of visual input is not registered and the patient fills the gap with plausible confabulated scenes, much as a patient with neglect denies the left side. Preserved blink to threat or a startle to a bright light argues for some surviving cortex and a better prognosis.",
+  "imagingFindings": [
+    {
+      "pathology": "Bilateral occipital infarcts",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in both calcarine cortices and lingual gyri, typically after a basilar tip embolus.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Posterior reversible encephalopathy",
+      "modality": "MRI",
+      "finding": "Bilateral parieto-occipital vasogenic edema in hypertension or eclampsia, reversible cortical blindness.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Basilar tip embolism with bilateral PCA occlusion",
+    "Hypoperfusion after cardiac arrest",
+    "Posterior reversible encephalopathy syndrome",
+    "Bilateral occipital trauma"
+  ],
+  "mimics": [
+    {
+      "name": "Functional (non-organic) visual loss",
+      "howToDistinguish": "Normal imaging; optokinetic nystagmus present; patient is distressed, not indifferent"
+    },
+    {
+      "name": "Bilateral optic neuropathy",
+      "howToDistinguish": "Pupils sluggish or absent light reaction, abnormal fundi"
+    },
+    {
+      "name": "Balint syndrome",
+      "howToDistinguish": "Sees objects but cannot integrate a scene; visual acuity preserved"
+    }
+  ],
+  "management": [
+    "Treat the cause (thrombectomy for basilar occlusion, blood pressure control in PRES)",
+    "Safety measures for a patient who does not know they are blind",
+    "Explain the denial to the family"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anton-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -85,
+      "z": 5
+    },
+    "label": "both calcarine cortices"
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "medial temporal",
-   "sign": "Amnesia and agitation when the temporal branches are also involved",
-   "substrate": "hippocampus"
-  }
- ],
- "reasoning": "Both calcarine cortices receive the crossed visual input from the contralateral hemifields, so bilateral destruction abolishes all conscious vision while the retina, optic nerves, chiasm, tracts and pretectal pupillary pathway remain intact; the pupils react because the pupillary light fibers leave the optic tract for the pretectum before reaching the geniculate and cortex. Both occipital lobes are supplied by the posterior cerebral arteries, which arise together from the basilar tip, so an embolus there or a period of profound hypotension affects both at once. The denial is thought to arise when the visual association cortex and its connections to the parietal and frontal monitoring systems are involved along with the primary cortex, so that the absence of visual input is not registered and the patient fills the gap with plausible confabulated scenes, much as a patient with neglect denies the left side. Preserved blink to threat or a startle to a bright light argues for some surviving cortex and a better prognosis.",
- "imagingFindings": [
-  {
-   "pathology": "Bilateral occipital infarcts",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in both calcarine cortices and lingual gyri, typically after a basilar tip embolus.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Posterior reversible encephalopathy",
-   "modality": "MRI",
-   "finding": "Bilateral parieto-occipital vasogenic edema in hypertension or eclampsia, reversible cortical blindness.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Basilar tip embolism with bilateral PCA occlusion",
-  "Hypoperfusion after cardiac arrest",
-  "Posterior reversible encephalopathy syndrome",
-  "Bilateral occipital trauma"
- ],
- "mimics": [
-  {
-   "name": "Functional (non-organic) visual loss",
-   "howToDistinguish": "Normal imaging; optokinetic nystagmus present; patient is distressed, not indifferent"
-  },
-  {
-   "name": "Bilateral optic neuropathy",
-   "howToDistinguish": "Pupils sluggish or absent light reaction, abnormal fundi"
-  },
-  {
-   "name": "Balint syndrome",
-   "howToDistinguish": "Sees objects but cannot integrate a scene; visual acuity preserved"
-  }
- ],
- "management": [
-  "Treat the cause (thrombectomy for basilar occlusion, blood pressure control in PRES)",
-  "Safety measures for a patient who does not know they are blind",
-  "Explain the denial to the family"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    47
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    51,
-    51
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -85,
-   "z": 5
-  },
-  "label": "both calcarine cortices"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

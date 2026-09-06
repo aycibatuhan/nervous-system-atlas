@@ -1,5 +1,7 @@
 import type { App } from '../app.ts';
 import { h, clear } from './dom.ts';
+import { citeNode } from './cite.ts';
+import type { Citation } from '../types/content.ts';
 import { selectStructure, setStructureVisible } from '../state/actions.ts';
 import { applyVisualState } from '../scene/materials.ts';
 
@@ -11,10 +13,7 @@ export class PathwayPanel {
   constructor(private app: App, private container: HTMLElement) {}
 
   private html(s: unknown): HTMLElement { const d = h('div', { class: 'prose' }); d.innerHTML = String(s ?? ''); return d; }
-  private cite(c: { book: string; chapter: number; pages: [number, number]; section?: string }): string {
-    const src = this.app.content?.sources[c.book]; const p = c.pages[0] === c.pages[1] ? `p. ${c.pages[0]}` : `pp. ${c.pages[0]}–${c.pages[1]}`;
-    return `${src?.cite ?? c.book} ch. ${c.chapter}, ${p}`;
-  }
+  private cite(c: Citation): HTMLElement { return citeNode(this.app.content?.bibliography, c); }
   private meshForStructure(sid: string, preferred?: string): string | null {
     if (preferred && this.app.registry.byId.has(preferred)) return preferred;
     const st = this.app.content?.structures[sid] as Rec | undefined;
@@ -60,7 +59,7 @@ export class PathwayPanel {
         ...(p['lesionEffectsByLevel'] as Rec[]).map((x) => h('tr', {}, h('td', {}, String(x['level'])), h('td', {}, String(x['effects'])), h('td', {}, String(x['side']))))),
       h('h3', {}, 'Pearls'), h('ul', {}, ...((p['clinical'] as Rec)['pearls'] as string[]).map((x) => h('li', {}, x))),
       ((p['clinical'] as Rec)['syndromes'] as string[]).length ? h('div', {}, h('h3', {}, 'Syndromes'), h('div', { class: 'chips' }, ...((p['clinical'] as Rec)['syndromes'] as string[]).map((sid) => h('a', { class: 'chip', href: `#/syndrome/${sid}` }, String((this.app.content?.syndromes[sid] as Rec | undefined)?.['name'] ?? sid))))) : null,
-      h('h3', {}, 'Sources'), h('ul', {}, ...(p['citations'] as Rec[]).map((c) => h('li', {}, this.cite(c as { book: string; chapter: number; pages: [number, number] })))),
+      h('h3', {}, 'Sources'), h('ul', {}, ...(p['citations'] as Rec[]).map((c) => h('li', {}, this.cite(c as unknown as Citation)))),
     ));
   }
 }

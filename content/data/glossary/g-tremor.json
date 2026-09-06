@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-tremor",
- "term": "Tremor",
- "definition": "Rhythmic oscillation of a body part. Rest tremor (parkinsonism), postural and action tremor (essential tremor, physiological, thyrotoxic), intention tremor (cerebellar outflow) and Holmes tremor (rest, postural and intention combined, midbrain).",
- "related": [
-  "g-dysmetria"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-tremor",
+  "term": "Tremor",
+  "definition": "Rhythmic oscillation of a body part. Rest tremor (parkinsonism), postural and action tremor (essential tremor, physiological, thyrotoxic), intention tremor (cerebellar outflow) and Holmes tremor (rest, postural and intention combined, midbrain).",
+  "related": [
+    "g-dysmetria"
+  ],
+  "citations": [
+    {
+      "ref": "sp-essential-tremor",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-holmes-tremor",
+      "section": "Pathophysiology"
+    }
+  ]
 }

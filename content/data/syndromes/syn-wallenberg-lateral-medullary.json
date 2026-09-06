@@ -1,186 +1,166 @@
 {
- "kind": "syndrome",
- "id": "syn-wallenberg-lateral-medullary",
- "name": "Lateral medullary syndrome (Wallenberg)",
- "eponyms": [
-  "Wallenberg syndrome",
-  "PICA syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "level-medulla-olive",
-   "spinal-trigeminal-nucleus-tract",
-   "nucleus-ambiguus",
-   "vestibular-nuclei",
-   "inferior-cerebellar-peduncle",
-   "artery-pica",
-   "artery-vertebral",
-   "territory-pica-lateral-medulla"
+  "kind": "syndrome",
+  "id": "syn-wallenberg-lateral-medullary",
+  "name": "Lateral medullary syndrome (Wallenberg)",
+  "eponyms": [
+    "Wallenberg syndrome",
+    "PICA syndrome"
   ],
-  "side": "ipsilateral",
-  "level": "medulla-olive",
-  "arteryId": "artery-pica",
-  "territoryId": "territory-pica-lateral-medulla"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -10,
-   "y": -42,
-   "z": -46
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "level-medulla-olive",
+      "spinal-trigeminal-nucleus-tract",
+      "nucleus-ambiguus",
+      "vestibular-nuclei",
+      "inferior-cerebellar-peduncle",
+      "artery-pica",
+      "artery-vertebral",
+      "territory-pica-lateral-medulla"
+    ],
+    "side": "ipsilateral",
+    "level": "medulla-olive",
+    "arteryId": "artery-pica",
+    "territoryId": "territory-pica-lateral-medulla"
   },
-  "radiusMm": 8
- },
- "presentation": "Sudden vertigo, vomiting and violent hiccups are followed by hoarseness and difficulty swallowing. The patient falls toward one side and has a drooping eyelid and small pupil on that side, with loss of pain and temperature sensation on that side of the face and on the opposite side of the body. Strength is normal, which surprises everyone. Neck pain in a young patient means vertebral dissection.",
- "deficits": [
-  {
-   "modality": "sensory-pain-temp",
-   "side": "ipsilateral",
-   "distribution": "face",
-   "sign": "Loss of facial pain and temperature (spinal trigeminal tract and nucleus)",
-   "substrate": "spinal-trigeminal-nucleus-tract"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -10,
+      "y": -42,
+      "z": -46
+    },
+    "radiusMm": 8
   },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "contralateral",
-   "distribution": "arm, trunk and leg",
-   "sign": "Loss of body pain and temperature (spinothalamic tract)",
-   "substrate": "pathway-lateral-spinothalamic"
+  "presentation": "Sudden vertigo, vomiting and violent hiccups are followed by hoarseness and difficulty swallowing. The patient falls toward one side and has a drooping eyelid and small pupil on that side, with loss of pain and temperature sensation on that side of the face and on the opposite side of the body. Strength is normal, which surprises everyone. Neck pain in a young patient means vertebral dissection.",
+  "deficits": [
+    {
+      "modality": "sensory-pain-temp",
+      "side": "ipsilateral",
+      "distribution": "face",
+      "sign": "Loss of facial pain and temperature (spinal trigeminal tract and nucleus)",
+      "substrate": "spinal-trigeminal-nucleus-tract"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "contralateral",
+      "distribution": "arm, trunk and leg",
+      "sign": "Loss of body pain and temperature (spinothalamic tract)",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "bulbar",
+      "side": "ipsilateral",
+      "distribution": "palate, pharynx, larynx",
+      "sign": "Dysphagia, hoarseness, absent gag, palate droops to the intact side (nucleus ambiguus)",
+      "substrate": "nucleus-ambiguus"
+    },
+    {
+      "modality": "vestibular",
+      "side": "ipsilateral",
+      "distribution": "vestibular nuclei",
+      "sign": "Vertigo, nystagmus, nausea, lateropulsion toward the lesion",
+      "substrate": "vestibular-nuclei"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "ipsilateral",
+      "distribution": "limbs",
+      "sign": "Limb ataxia from the inferior cerebellar peduncle",
+      "substrate": "inferior-cerebellar-peduncle"
+    },
+    {
+      "modality": "autonomic",
+      "side": "ipsilateral",
+      "distribution": "eye and face",
+      "sign": "Horner syndrome from the descending sympathetic fibers",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "medulla",
+      "sign": "Hiccups from the respiratory centers; sometimes central hypoventilation",
+      "substrate": "reticular-formation"
+    }
+  ],
+  "reasoning": "The lateral medulla is supplied by the vertebral artery and its posterior inferior cerebellar branch, and a wedge-shaped infarct here cuts a characteriztic set of structures. The spinothalamic tract has already crossed in the spinal cord, so body pain and temperature loss is contralateral, while the descending spinal trigeminal tract carries uncrossed facial pain fibers from the same side to the spinal nucleus, so facial loss is ipsilateral: this crossed sensory pattern is the fingerprint of a lateral brainstem lesion. The nucleus ambiguus, vestibular nuclei and inferior cerebellar peduncle are all ipsilateral structures, giving same-side bulbar palsy, vertigo and ataxia, and the descending sympathetic fibers from the hypothalamus run uncrossed through the lateral tegmentum, giving an ipsilateral Horner syndrome. The pyramid and the medial lemniscus lie medially, in the anterior spinal artery territory, and escape, so there is no weakness and vibration and position sense are preserved. This dissociation, with dramatic bulbar, cerebellar and pain-temperature signs but normal strength, is what distinguishes the syndrome from the medial medullary syndrome and from a pontine stroke, where the facial and abducens nuclei would be involved.",
+  "imagingFindings": [
+    {
+      "pathology": "Lateral medullary infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the dorsolateral medulla, often small and missed on early CT; thin-section DWI needed.",
+      "sequence": "DWI",
+      "pitfalls": "Early DWI can be negative in the brainstem; repeat at 24–48 h if the clinical picture is clear"
+    },
+    {
+      "pathology": "Vertebral artery dissection",
+      "modality": "MRA",
+      "finding": "Tapered stenosis or intramural hematoma of the V3–V4 vertebral segment on fat-saturated T1 and MRA.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "PICA occlusion",
+      "modality": "CTA",
+      "finding": "Absent PICA or vertebral artery filling; cerebellar hemisphere infarct may coexist and swell."
+    }
+  ],
+  "commonCauses": [
+    "Vertebral artery atherothrombosis",
+    "Vertebral artery dissection (younger patients, neck pain)",
+    "Posterior inferior cerebellar artery embolism"
+  ],
+  "mimics": [
+    {
+      "name": "Vestibular neuritis",
+      "howToDistinguish": "No dysphagia, Horner or crossed sensory loss; head impulse test positive"
+    },
+    {
+      "name": "Medial medullary syndrome",
+      "howToDistinguish": "Contralateral weakness and proprioceptive loss with tongue palsy; no facial sensory loss"
+    },
+    {
+      "name": "Lateral pontine (AICA) infarct",
+      "howToDistinguish": "Adds facial palsy and deafness; vertigo similar"
+    }
+  ],
+  "management": [
+    "Swallow assessment before any oral intake; aspiration is the main early danger",
+    "Antithrombotic therapy; anticoagulation or antiplatelet for dissection",
+    "Monitor breathing overnight in the first days (central hypoventilation)",
+    "Vestibular rehabilitation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lateral-medullary-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-pica",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-medial-medullary-syndrome",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -10,
+      "y": -42,
+      "z": -46
+    },
+    "label": "dorsolateral medulla at the level of the olive"
   },
-  {
-   "modality": "bulbar",
-   "side": "ipsilateral",
-   "distribution": "palate, pharynx, larynx",
-   "sign": "Dysphagia, hoarseness, absent gag, palate droops to the intact side (nucleus ambiguus)",
-   "substrate": "nucleus-ambiguus"
-  },
-  {
-   "modality": "vestibular",
-   "side": "ipsilateral",
-   "distribution": "vestibular nuclei",
-   "sign": "Vertigo, nystagmus, nausea, lateropulsion toward the lesion",
-   "substrate": "vestibular-nuclei"
-  },
-  {
-   "modality": "cerebellar",
-   "side": "ipsilateral",
-   "distribution": "limbs",
-   "sign": "Limb ataxia from the inferior cerebellar peduncle",
-   "substrate": "inferior-cerebellar-peduncle"
-  },
-  {
-   "modality": "autonomic",
-   "side": "ipsilateral",
-   "distribution": "eye and face",
-   "sign": "Horner syndrome from the descending sympathetic fibers",
-   "substrate": "pathway-oculosympathetic"
-  },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "medulla",
-   "sign": "Hiccups from the respiratory centers; sometimes central hypoventilation",
-   "substrate": "reticular-formation"
-  }
- ],
- "reasoning": "The lateral medulla is supplied by the vertebral artery and its posterior inferior cerebellar branch, and a wedge-shaped infarct here cuts a characteriztic set of structures. The spinothalamic tract has already crossed in the spinal cord, so body pain and temperature loss is contralateral, while the descending spinal trigeminal tract carries uncrossed facial pain fibers from the same side to the spinal nucleus, so facial loss is ipsilateral: this crossed sensory pattern is the fingerprint of a lateral brainstem lesion. The nucleus ambiguus, vestibular nuclei and inferior cerebellar peduncle are all ipsilateral structures, giving same-side bulbar palsy, vertigo and ataxia, and the descending sympathetic fibers from the hypothalamus run uncrossed through the lateral tegmentum, giving an ipsilateral Horner syndrome. The pyramid and the medial lemniscus lie medially, in the anterior spinal artery territory, and escape, so there is no weakness and vibration and position sense are preserved. This dissociation, with dramatic bulbar, cerebellar and pain-temperature signs but normal strength, is what distinguishes the syndrome from the medial medullary syndrome and from a pontine stroke, where the facial and abducens nuclei would be involved.",
- "imagingFindings": [
-  {
-   "pathology": "Lateral medullary infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the dorsolateral medulla, often small and missed on early CT; thin-section DWI needed.",
-   "sequence": "DWI",
-   "pitfalls": "Early DWI can be negative in the brainstem; repeat at 24–48 h if the clinical picture is clear"
-  },
-  {
-   "pathology": "Vertebral artery dissection",
-   "modality": "MRA",
-   "finding": "Tapered stenosis or intramural hematoma of the V3–V4 vertebral segment on fat-saturated T1 and MRA.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "PICA occlusion",
-   "modality": "CTA",
-   "finding": "Absent PICA or vertebral artery filling; cerebellar hemisphere infarct may coexist and swell."
-  }
- ],
- "commonCauses": [
-  "Vertebral artery atherothrombosis",
-  "Vertebral artery dissection (younger patients, neck pain)",
-  "Posterior inferior cerebellar artery embolism"
- ],
- "mimics": [
-  {
-   "name": "Vestibular neuritis",
-   "howToDistinguish": "No dysphagia, Horner or crossed sensory loss; head impulse test positive"
-  },
-  {
-   "name": "Medial medullary syndrome",
-   "howToDistinguish": "Contralateral weakness and proprioceptive loss with tongue palsy; no facial sensory loss"
-  },
-  {
-   "name": "Lateral pontine (AICA) infarct",
-   "howToDistinguish": "Adds facial palsy and deafness; vertigo similar"
-  }
- ],
- "management": [
-  "Swallow assessment before any oral intake; aspiration is the main early danger",
-  "Antithrombotic therapy; anticoagulation or antiplatelet for dissection",
-  "Monitor breathing overnight in the first days (central hypoventilation)",
-  "Vestibular rehabilitation"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    216,
-    216
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    223,
-    223
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    78
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    85
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -10,
-   "y": -42,
-   "z": -46
-  },
-  "label": "dorsolateral medulla at the level of the olive"
- },
- "examSequence": [
-  "Swinging pin from one side of the face to the other and down the body: find the crossed pattern",
-  "Look at the pupils in dim light for Horner",
-  "Say 'ah' and watch the palate; test the gag",
-  "Finger-nose and heel-shin on the side of the lesion",
-  "Head impulse test and observe nystagmus direction"
- ],
- "cameraPreset": "posterior"
+  "examSequence": [
+    "Swinging pin from one side of the face to the other and down the body: find the crossed pattern",
+    "Look at the pupils in dim light for Horner",
+    "Say 'ah' and watch the palate; test the gag",
+    "Finger-nose and heel-shin on the side of the lesion",
+    "Head impulse test and observe nystagmus direction"
+  ],
+  "cameraPreset": "posterior"
 }

@@ -1,56 +1,64 @@
 {
- "kind": "quiz",
- "id": "qz-27",
- "type": "imaging",
- "vignette": "A 50-year-old woman has the worst headache of her life, reaching its peak within seconds, with vomiting and neck stiffness. CT within two hours is reported as normal.",
- "stem": "What is the next step?",
- "options": [
-  {
-   "key": "A",
-   "text": "Discharge with analgesia"
-  },
-  {
-   "key": "B",
-   "text": "Lumbar puncture at 12 hours looking for xanthochromia"
-  },
-  {
-   "key": "C",
-   "text": "MRI brain routine"
-  },
-  {
-   "key": "D",
-   "text": "Start migraine prophylaxis"
-  },
-  {
-   "key": "E",
-   "text": "Repeat CT in one week"
-  }
- ],
- "answer": "B",
- "explanation": "A thunderclap headache requires exclusion of subarachnoid hemorrhage; CT is very sensitive within six hours, but a negative early CT in a typical history is followed by lumbar puncture at 12 hours to detect the bilirubin of xanthochromia, and then vessel imaging if positive.",
- "targets": {
-  "structureIds": [
-   "subarachnoid-space-cisterns",
-   "circle-of-willis"
+  "kind": "quiz",
+  "id": "qz-27",
+  "type": "imaging",
+  "vignette": "A 50-year-old woman has the worst headache of her life, reaching its peak within seconds, with vomiting and neck stiffness. CT within two hours is reported as normal.",
+  "stem": "What is the next step?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Discharge with analgesia"
+    },
+    {
+      "key": "B",
+      "text": "Lumbar puncture at 12 hours looking for xanthochromia"
+    },
+    {
+      "key": "C",
+      "text": "MRI brain routine"
+    },
+    {
+      "key": "D",
+      "text": "Start migraine prophylaxis"
+    },
+    {
+      "key": "E",
+      "text": "Repeat CT in one week"
+    }
   ],
-  "syndromeIds": [
-   "syn-subarachnoid-hemorrhage"
+  "answer": "B",
+  "explanation": "A thunderclap headache requires exclusion of subarachnoid hemorrhage; CT is very sensitive within six hours, but a negative early CT in a typical history is followed by lumbar puncture at 12 hours to detect the bilirubin of xanthochromia, and then vessel imaging if positive.",
+  "targets": {
+    "structureIds": [
+      "subarachnoid-space-cisterns",
+      "circle-of-willis"
+    ],
+    "syndromeIds": [
+      "syn-subarachnoid-hemorrhage"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "artery-acom"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "artery-acom"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    196,
-    198
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-subarachnoid-hemorrhage",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-subarachnoid-space",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

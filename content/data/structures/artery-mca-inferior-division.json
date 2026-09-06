@@ -1,160 +1,140 @@
 {
- "kind": "structure",
- "id": "artery-mca-inferior-division",
- "name": "Middle cerebral artery, inferior division",
- "synonyms": [
-  "lower division of the MCA",
-  "M2 inferior trunk"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "The inferior trunk of the middle cerebral artery runs backwards across the insula beneath the Sylvian fissure and supplies the lateral temporal lobe, the posterior parietal cortex and the angular region. On the dominant side this is the territory of Wernicke's area, so occlusion causes a fluent aphasia with poor comprehension; on either side it interrupts the optic radiation and produces a contralateral visual field defect, usually with little or no weakness.",
- "anatomy": {
-  "location": "Courses posteroinferiorly over the insula and out of the posterior Sylvian fissure, dividing into temporal (anterior, middle, posterior), temporo-occipital, angular and posterior parietal branches.",
-  "subdivisions": [
-   {
-    "name": "Temporal branches",
-    "note": "superior and middle temporal gyri including Heschl's gyrus and Wernicke's area"
-   },
-   {
-    "name": "Angular artery",
-    "note": "angular and supramarginal gyri; often the terminal branch of the MCA"
-   },
-   {
-    "name": "Posterior parietal artery",
-    "note": "posterior supramarginal region and parietal association cortex"
-   },
-   {
-    "name": "Temporo-occipital artery",
-    "note": "posterior temporal cortex bordering the PCA territory"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Perfuses the lateral temporal cortex including the primary auditory cortex and Wernicke's area, the inferior parietal lobule (supramarginal and angular gyri) and the white matter carrying the optic radiation.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca"
+  "kind": "structure",
+  "id": "artery-mca-inferior-division",
+  "name": "Middle cerebral artery, inferior division",
+  "synonyms": [
+    "lower division of the MCA",
+    "M2 inferior trunk"
   ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 52,
-     "y": -30,
-     "z": 10
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The inferior trunk of the middle cerebral artery runs backwards across the insula beneath the Sylvian fissure and supplies the lateral temporal lobe, the posterior parietal cortex and the angular region. On the dominant side this is the territory of Wernicke's area, so occlusion causes a fluent aphasia with poor comprehension; on either side it interrupts the optic radiation and produces a contralateral visual field defect, usually with little or no weakness.",
+  "anatomy": {
+    "location": "Courses posteroinferiorly over the insula and out of the posterior Sylvian fissure, dividing into temporal (anterior, middle, posterior), temporo-occipital, angular and posterior parietal branches.",
+    "subdivisions": [
+      {
+        "name": "Temporal branches",
+        "note": "superior and middle temporal gyri including Heschl's gyrus and Wernicke's area"
+      },
+      {
+        "name": "Angular artery",
+        "note": "angular and supramarginal gyri; often the terminal branch of the MCA"
+      },
+      {
+        "name": "Posterior parietal artery",
+        "note": "posterior supramarginal region and parietal association cortex"
+      },
+      {
+        "name": "Temporo-occipital artery",
+        "note": "posterior temporal cortex bordering the PCA territory"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Perfuses the lateral temporal cortex including the primary auditory cortex and Wernicke's area, the inferior parietal lobule (supramarginal and angular gyri) and the white matter carrying the optic radiation.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 52,
+          "y": -30,
+          "z": 10
+        },
+        "label": "posterior Sylvian region and superior temporal gyrus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 45,
+          "y": -55,
+          "z": 30
+        },
+        "label": "angular gyrus and inferior parietal lobule"
+      }
+    ],
+    "normalAppearance": "On CTA the inferior trunk is the branch running back and down from the M1 bifurcation; its territory is the cortex behind and below the posterior end of the Sylvian fissure.",
+    "pathology": [
+      {
+        "pathology": "Inferior division MCA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the superior and middle temporal gyri, the angular and supramarginal gyri and the underlying white matter, sparing the frontal lobe; the deep temporal component may cut the optic radiation.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CTA of the intracranial circulation"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Wernicke (fluent) aphasia with impaired comprehension and repetition",
+        "side": "n/a",
+        "mechanism": "Posterior superior temporal gyrus of the dominant hemisphere"
+      },
+      {
+        "deficit": "Contralateral homonymous hemianopia or superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Optic radiation fibers in the temporal and parietal white matter"
+      },
+      {
+        "deficit": "Hemispatial neglect and constructional apraxia (non-dominant)",
+        "side": "contralateral",
+        "mechanism": "Right inferior parietal lobule"
+      },
+      {
+        "deficit": "Gerstmann syndrome (dominant)",
+        "side": "n/a",
+        "mechanism": "Angular gyrus"
+      }
+    ],
+    "examination": [
+      "Ask the patient to follow multi-step commands and to repeat phrases; note paraphasias and jargon",
+      "Visual fields by confrontation in each quadrant",
+      "Line bisection and clock drawing for neglect",
+      "Finger naming, left-right orientation, calculation and writing"
+    ],
+    "syndromes": [
+      "syn-mca-inferior-division",
+      "syn-aphasia-wernicke",
+      "syn-hemineglect",
+      "syn-gerstmann"
+    ],
+    "pearls": [
+      "Fluent nonsense speech without weakness is an inferior division stroke, easily mistaken for delirium or psychosis",
+      "A superior quadrantanopia points to the temporal loop of the optic radiation (Meyer's loop)"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-middle-cerebral-artery",
+      "section": "Structure and Function"
     },
-    "label": "posterior Sylvian region and superior temporal gyrus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 45,
-     "y": -55,
-     "z": 30
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
     },
-    "label": "angular gyrus and inferior parietal lobule"
-   }
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On CTA the inferior trunk is the branch running back and down from the M1 bifurcation; its territory is the cortex behind and below the posterior end of the Sylvian fissure.",
-  "pathology": [
-   {
-    "pathology": "Inferior division MCA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the superior and middle temporal gyri, the angular and supramarginal gyri and the underlying white matter, sparing the frontal lobe; the deep temporal component may cut the optic radiation.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "vascular"
   ],
-  "sequenceOfChoice": "DWI; CTA of the intracranial circulation"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Wernicke (fluent) aphasia with impaired comprehension and repetition",
-    "side": "n/a",
-    "mechanism": "Posterior superior temporal gyrus of the dominant hemisphere"
-   },
-   {
-    "deficit": "Contralateral homonymous hemianopia or superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Optic radiation fibers in the temporal and parietal white matter"
-   },
-   {
-    "deficit": "Hemispatial neglect and constructional apraxia (non-dominant)",
-    "side": "contralateral",
-    "mechanism": "Right inferior parietal lobule"
-   },
-   {
-    "deficit": "Gerstmann syndrome (dominant)",
-    "side": "n/a",
-    "mechanism": "Angular gyrus"
-   }
-  ],
-  "examination": [
-   "Ask the patient to follow multi-step commands and to repeat phrases; note paraphasias and jargon",
-   "Visual fields by confrontation in each quadrant",
-   "Line bisection and clock drawing for neglect",
-   "Finger naming, left-right orientation, calculation and writing"
-  ],
-  "syndromes": [
-   "syn-mca-inferior-division",
-   "syn-aphasia-wernicke",
-   "syn-hemineglect",
-   "syn-gerstmann"
-  ],
-  "pearls": [
-   "Fluent nonsense speech without weakness is an inferior division stroke, easily mistaken for delirium or psychosis",
-   "A superior quadrantanopia points to the temporal loop of the optic radiation (Meyer's loop)"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    465,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    285,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    59
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    49,
-    51
-   ]
-  }
- ],
- "tags": [
-  "vascular"
- ],
- "status": "draft",
- "subsystem": "anterior-circulation",
- "parent": "artery-mca"
+  "status": "draft",
+  "subsystem": "anterior-circulation",
+  "parent": "artery-mca"
 }

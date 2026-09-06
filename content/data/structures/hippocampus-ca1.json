@@ -1,189 +1,161 @@
 {
- "kind": "structure",
- "id": "hippocampus-ca1",
- "name": "Hippocampus CA1",
- "synonyms": [
-  "Sommer's sector",
-  "cornu ammonis field 1"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "hippocampus-ca1-l",
-  "hippocampus-ca1-r"
- ],
- "summary": "CA1 is the largest cornu ammonis field of the hippocampus, forming the outer curve of the hippocampal body between CA2 and the subiculum, along the superolateral surface facing the temporal horn. It is the output stage of the trisynaptic circuit: it receives the Schaffer collaterals from CA3 and a direct projection from the entorhinal cortex, compares the two, and sends the result to the subiculum and back to the entorhinal cortex. It is the most vulnerable hippocampal field to anoxia and to seizures (Sommer's sector) and the first to lose neurons in Alzheimer disease, so it is the anatomical substrate of the amnesia after cardiac arrest, of mesial temporal sclerosis and of the earliest Alzheimer memory loss.",
- "anatomy": {
-  "location": "Pyramidal cell field of the hippocampus lying between CA2 near the dentate hilus and the subiculum on the parahippocampal side, occupying the lateral and superior part of the hippocampal body and head under the temporal horn, in front of the tail near the splenium.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "CA3 pyramidal cells",
-    "via": "Schaffer collaterals"
-   },
-   {
-    "from": "Entorhinal cortex layer III",
-    "via": "temporoammonic (direct perforant) path"
-   },
-   {
-    "from": "Septal nuclei (cholinergic)",
-    "via": "fornix"
-   }
+  "kind": "structure",
+  "id": "hippocampus-ca1",
+  "name": "Hippocampus CA1",
+  "synonyms": [
+    "Sommer's sector",
+    "cornu ammonis field 1"
   ],
-  "efferents": [
-   {
-    "to": "Subiculum",
-    "via": "short intrahippocampal fibers"
-   },
-   {
-    "to": "Entorhinal cortex layer V",
-    "via": "return projection"
-   },
-   {
-    "to": "Septal area and hypothalamus",
-    "via": "fornix"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "hippocampus-ca1-l",
+    "hippocampus-ca1-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "CA1 pyramidal cells integrate the pattern-completed memory signal arriving from CA3 through the Schaffer collaterals with the current sensory input arriving directly from entorhinal layer III, and their output through the subiculum and the entorhinal cortex allows a new episode to be stored and a familiar one to be retrieved; their place cells mark the location of the animal in space, and long-term potentiation at the Schaffer synapse is the best-studied cellular model of memory. CA1 neurons have a high metabolic demand and glutamate receptor density, which makes them the first to die in ischemia and in prolonged seizures, and tau pathology spreads into them from the entorhinal cortex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
+  "summary": "CA1 is the largest cornu ammonis field of the hippocampus, forming the outer curve of the hippocampal body between CA2 and the subiculum, along the superolateral surface facing the temporal horn. It is the output stage of the trisynaptic circuit: it receives the Schaffer collaterals from CA3 and a direct projection from the entorhinal cortex, compares the two, and sends the result to the subiculum and back to the entorhinal cortex. It is the most vulnerable hippocampal field to anoxia and to seizures (Sommer's sector) and the first to lose neurons in Alzheimer disease, so it is the anatomical substrate of the amnesia after cardiac arrest, of mesial temporal sclerosis and of the earliest Alzheimer memory loss.",
+  "anatomy": {
+    "location": "Pyramidal cell field of the hippocampus lying between CA2 near the dentate hilus and the subiculum on the parahippocampal side, occupying the lateral and superior part of the hippocampal body and head under the temporal horn, in front of the tail near the splenium.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "CA3 pyramidal cells",
+        "via": "Schaffer collaterals"
+      },
+      {
+        "from": "Entorhinal cortex layer III",
+        "via": "temporoammonic (direct perforant) path"
+      },
+      {
+        "from": "Septal nuclei (cholinergic)",
+        "via": "fornix"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Subiculum",
+        "via": "short intrahippocampal fibers"
+      },
+      {
+        "to": "Entorhinal cortex layer V",
+        "via": "return projection"
+      },
+      {
+        "to": "Septal area and hypothalamus",
+        "via": "fornix"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "CA1 pyramidal cells integrate the pattern-completed memory signal arriving from CA3 through the Schaffer collaterals with the current sensory input arriving directly from entorhinal layer III, and their output through the subiculum and the entorhinal cortex allows a new episode to be stored and a familiar one to be retrieved; their place cells mark the location of the animal in space, and long-term potentiation at the Schaffer synapse is the best-studied cellular model of memory. CA1 neurons have a high metabolic demand and glutamate receptor density, which makes them the first to die in ischemia and in prolonged seizures, and tau pathology spreads into them from the entorhinal cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hippocampus-ca1-l"
+        },
+        "label": "CA1 on the outer curve of the hippocampal body under the temporal horn"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hippocampus-ca1-r"
+        },
+        "label": "hippocampal body from head to tail"
+      }
+    ],
+    "normalAppearance": "On high-resolution coronal T2 images CA1 is the thin band of gray matter on the outer (superolateral) curve of the hippocampus beneath the temporal horn, continuous medially with the subiculum; it is not separable from the other fields on routine sequences.",
+    "pathology": [
+      {
+        "pathology": "Hypoxic-ischemic injury after cardiac arrest",
+        "modality": "MRI",
+        "finding": "Bilateral hippocampal restricted diffusion and later atrophy, worst in CA1, with dense anterograde amnesia in survivors.",
+        "sequence": "DWI",
+        "timing": "Diffusion change appears within 1-3 days; atrophy follows over months"
+      },
+      {
+        "pathology": "Mesial temporal sclerosis",
+        "modality": "MRI",
+        "finding": "Hippocampal atrophy with loss of the internal digitations and FLAIR hyperintensity; CA1 and the hilus show the greatest neuronal loss on pathology.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "MRI",
+        "finding": "Hippocampal atrophy with an enlarged temporal horn; subfield imaging shows early CA1 and subiculum loss.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia for episodes",
+        "side": "bilateral",
+        "mechanism": "Loss of the CA1 comparator and output stage of the trisynaptic circuit"
+      },
+      {
+        "deficit": "Impaired spatial memory",
+        "side": "bilateral",
+        "mechanism": "Loss of CA1 place cell representation"
+      },
+      {
+        "deficit": "Temporal lobe seizures",
+        "side": "n/a",
+        "mechanism": "Sclerosis and synaptic reorganization in CA1 and the dentate gyrus"
+      }
+    ],
+    "examination": [
+      "Delayed recall of three words and of a short story after 5-10 minutes",
+      "Orientation and recall of the events of the day",
+      "Seizure history in any patient with hippocampal signal change"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Sommer's sector (CA1) dies first in anoxia: cardiac arrest survivors with amnesia have bilateral CA1 loss",
+      "Long-term potentiation was discovered at the CA3-CA1 synapse; the synapse of memory has an address",
+      "Bilateral hippocampal lesions abolish new memory but spare old memories and skills"
+    ]
+  },
+  "pitfalls": [
+    "Hippocampal diffusion change after status epilepticus can mimic infarction; it is bilateral, reversible and follows the seizures"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hippocampus-ca1-l"
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "CA1 on the outer curve of the hippocampal body under the temporal horn"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hippocampus-ca1-r"
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "hippocampal body from head to tail"
-   }
+    {
+      "ref": "sp-mesial-temporal-lobe-epilepsy",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "On high-resolution coronal T2 images CA1 is the thin band of gray matter on the outer (superolateral) curve of the hippocampus beneath the temporal horn, continuous medially with the subiculum; it is not separable from the other fields on routine sequences.",
-  "pathology": [
-   {
-    "pathology": "Hypoxic-ischemic injury after cardiac arrest",
-    "modality": "MRI",
-    "finding": "Bilateral hippocampal restricted diffusion and later atrophy, worst in CA1, with dense anterograde amnesia in survivors.",
-    "sequence": "DWI",
-    "timing": "Diffusion change appears within 1-3 days; atrophy follows over months"
-   },
-   {
-    "pathology": "Mesial temporal sclerosis",
-    "modality": "MRI",
-    "finding": "Hippocampal atrophy with loss of the internal digitations and FLAIR hyperintensity; CA1 and the hilus show the greatest neuronal loss on pathology.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "MRI",
-    "finding": "Hippocampal atrophy with an enlarged temporal horn; subfield imaging shows early CA1 and subiculum loss.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia for episodes",
-    "side": "bilateral",
-    "mechanism": "Loss of the CA1 comparator and output stage of the trisynaptic circuit"
-   },
-   {
-    "deficit": "Impaired spatial memory",
-    "side": "bilateral",
-    "mechanism": "Loss of CA1 place cell representation"
-   },
-   {
-    "deficit": "Temporal lobe seizures",
-    "side": "n/a",
-    "mechanism": "Sclerosis and synaptic reorganization in CA1 and the dentate gyrus"
-   }
+  "tags": [
+    "hippocampus",
+    "memory",
+    "anoxia"
   ],
-  "examination": [
-   "Delayed recall of three words and of a short story after 5-10 minutes",
-   "Orientation and recall of the events of the day",
-   "Seizure history in any patient with hippocampal signal change"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Sommer's sector (CA1) dies first in anoxia: cardiac arrest survivors with amnesia have bilateral CA1 loss",
-   "Long-term potentiation was discovered at the CA3-CA1 synapse; the synapse of memory has an address",
-   "Bilateral hippocampal lesions abolish new memory but spare old memories and skills"
-  ]
- },
- "pitfalls": [
-  "Hippocampal diffusion change after status epilepticus can mimic infarction; it is bilateral, reversible and follows the seizures"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    169,
-    172
-   ]
-  }
- ],
- "tags": [
-  "hippocampus",
-  "memory",
-  "anoxia"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "hippocampus"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "hippocampus"
 }

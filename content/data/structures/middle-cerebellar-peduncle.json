@@ -1,160 +1,140 @@
 {
- "kind": "structure",
- "id": "middle-cerebellar-peduncle",
- "name": "Middle cerebellar peduncle",
- "synonyms": [
-  "brachium pontis"
- ],
- "system": "brainstem",
- "meshIds": [
-  "middle-cerebellar-peduncle"
- ],
- "summary": "The largest of the three peduncles, a massive purely afferent bundle carrying the transverse pontine fibers from the contralateral pontine nuclei into the cerebellar hemisphere. It forms the lateral surface of the pons, with the trigeminal root emerging at its junction with the basis pontis. Infarcts here (AICA territory) or demyelination give ipsilateral limb ataxia, and bilateral lesions of the peduncles are a recognized pattern in multiple system atrophy and fragile X-associated tremor/ataxia syndrome.",
- "anatomy": {
-  "location": "Lateral pons, sweeping backward and laterally from the basis pontis into the white matter of the cerebellar hemisphere, lateral to the superior and inferior peduncles.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "pontine-nuclei",
-    "via": "transverse pontine fibers",
-    "note": "crossed"
-   }
+  "kind": "structure",
+  "id": "middle-cerebellar-peduncle",
+  "name": "Middle cerebellar peduncle",
+  "synonyms": [
+    "brachium pontis"
   ],
-  "efferents": [],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Delivers the cortico-ponto-cerebellar input that lets the cerebellar hemispheres coordinate skilled limb movement planned by the contralateral cortex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aica",
-   "arteries-pontine",
-   "artery-sca"
+  "system": "brainstem",
+  "meshIds": [
+    "middle-cerebellar-peduncle"
   ],
-  "territories": [
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -38,
-     "z": -32
+  "summary": "The largest of the three peduncles, a massive purely afferent bundle carrying the transverse pontine fibers from the contralateral pontine nuclei into the cerebellar hemisphere. It forms the lateral surface of the pons, with the trigeminal root emerging at its junction with the basis pontis. Infarcts here (AICA territory) or demyelination give ipsilateral limb ataxia, and bilateral lesions of the peduncles are a recognized pattern in multiple system atrophy and fragile X-associated tremor/ataxia syndrome.",
+  "anatomy": {
+    "location": "Lateral pons, sweeping backward and laterally from the basis pontis into the white matter of the cerebellar hemisphere, lateral to the superior and inferior peduncles.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "pontine-nuclei",
+        "via": "transverse pontine fibers",
+        "note": "crossed"
+      }
+    ],
+    "efferents": [],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "Delivers the cortico-ponto-cerebellar input that lets the cerebellar hemispheres coordinate skilled limb movement planned by the contralateral cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aica",
+      "arteries-pontine",
+      "artery-sca"
+    ],
+    "territories": [
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -38,
+          "z": -32
+        },
+        "label": "lateral pons at the trigeminal root entry, peduncle entering the cerebellum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 25,
+          "y": -40,
+          "z": -30
+        },
+        "label": "middle peduncle from pons to hemisphere"
+      }
+    ],
+    "normalAppearance": "A thick band of white matter on the lateral pons on axial T2 and FLAIR; symmetrical T2 hyperintensity of both peduncles is a clue to multiple system atrophy (with the pontine 'hot cross bun') or FXTAS.",
+    "pathology": [
+      {
+        "pathology": "AICA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the middle cerebellar peduncle and adjacent lateral pons and cerebellum.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Bilateral MCP sign",
+        "modality": "MRI",
+        "finding": "Symmetrical T2/FLAIR hyperintensity of both peduncles in multiple system atrophy (cerebellar type) or fragile X tremor/ataxia syndrome.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Demyelination",
+        "modality": "MRI",
+        "finding": "Peduncular plaque with ipsilateral ataxia, a common multiple sclerosis site.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "FLAIR and DWI through the pons and cerebellum"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia and dysmetria",
+        "side": "ipsilateral",
+        "mechanism": "Loss of pontocerebellar input to the ipsilateral hemisphere"
+      },
+      {
+        "deficit": "Gait ataxia",
+        "side": "bilateral",
+        "mechanism": "Bilateral peduncular disease"
+      },
+      {
+        "deficit": "Facial numbness or trigeminal signs",
+        "side": "ipsilateral",
+        "mechanism": "Trigeminal root at the entry zone next to the peduncle"
+      }
+    ],
+    "examination": [
+      "Finger-nose, heel-shin, rapid alternating movements",
+      "Tandem gait",
+      "Corneal reflex and facial sensation"
+    ],
+    "syndromes": [
+      "syn-aica-lateral-pontine"
+    ],
+    "pearls": [
+      "Bilateral symmetric bright middle peduncles in an older man with tremor and ataxia: think FXTAS",
+      "AICA infarcts typically cut the peduncle, so ataxia accompanies the deafness and facial palsy"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pons",
+      "section": "Structure and Function"
     },
-    "label": "lateral pons at the trigeminal root entry, peduncle entering the cerebellum"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 25,
-     "y": -40,
-     "z": -30
+    {
+      "ref": "sp-cerebellum",
+      "section": "Structure and Function"
     },
-    "label": "middle peduncle from pons to hemisphere"
-   }
+    {
+      "ref": "sp-anterior-inferior-cerebellar-arteries",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A thick band of white matter on the lateral pons on axial T2 and FLAIR; symmetrical T2 hyperintensity of both peduncles is a clue to multiple system atrophy (with the pontine 'hot cross bun') or FXTAS.",
-  "pathology": [
-   {
-    "pathology": "AICA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the middle cerebellar peduncle and adjacent lateral pons and cerebellum.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Bilateral MCP sign",
-    "modality": "MRI",
-    "finding": "Symmetrical T2/FLAIR hyperintensity of both peduncles in multiple system atrophy (cerebellar type) or fragile X tremor/ataxia syndrome.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Demyelination",
-    "modality": "MRI",
-    "finding": "Peduncular plaque with ipsilateral ataxia, a common multiple sclerosis site.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "FLAIR and DWI through the pons and cerebellum"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia and dysmetria",
-    "side": "ipsilateral",
-    "mechanism": "Loss of pontocerebellar input to the ipsilateral hemisphere"
-   },
-   {
-    "deficit": "Gait ataxia",
-    "side": "bilateral",
-    "mechanism": "Bilateral peduncular disease"
-   },
-   {
-    "deficit": "Facial numbness or trigeminal signs",
-    "side": "ipsilateral",
-    "mechanism": "Trigeminal root at the entry zone next to the peduncle"
-   }
-  ],
-  "examination": [
-   "Finger-nose, heel-shin, rapid alternating movements",
-   "Tandem gait",
-   "Corneal reflex and facial sensation"
-  ],
-  "syndromes": [
-   "syn-aica-lateral-pontine"
-  ],
-  "pearls": [
-   "Bilateral symmetric bright middle peduncles in an older man with tremor and ataxia: think FXTAS",
-   "AICA infarcts typically cut the peduncle, so ataxia accompanies the deafness and facial palsy"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    205,
-    207
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    236,
-    236
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    77
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    70
-   ]
+  "status": "draft",
+  "latin": "Pedunculus cerebellaris medius",
+  "subsystem": "peduncles",
+  "level": {
+    "region": "pons"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Pedunculus cerebellaris medius",
- "subsystem": "peduncles",
- "level": {
-  "region": "pons"
- }
 }

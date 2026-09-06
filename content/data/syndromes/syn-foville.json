@@ -1,132 +1,128 @@
 {
- "kind": "syndrome",
- "id": "syn-foville",
- "name": "Foville syndrome (dorsal caudal pontine)",
- "eponyms": [
-  "Foville syndrome",
-  "inferior medial pontine syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "level-pons-caudal",
-   "abducens-nucleus",
-   "pprf",
-   "facial-motor-nucleus",
-   "medial-longitudinal-fasciculus"
+  "kind": "syndrome",
+  "id": "syn-foville",
+  "name": "Foville syndrome (dorsal caudal pontine)",
+  "eponyms": [
+    "Foville syndrome",
+    "inferior medial pontine syndrome"
   ],
-  "side": "ipsilateral",
-  "level": "pons-caudal",
-  "arteryId": "artery-basilar"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -5,
-   "y": -38,
-   "z": -28
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "level-pons-caudal",
+      "abducens-nucleus",
+      "pprf",
+      "facial-motor-nucleus",
+      "medial-longitudinal-fasciculus"
+    ],
+    "side": "ipsilateral",
+    "level": "pons-caudal",
+    "arteryId": "artery-basilar"
   },
-  "radiusMm": 6
- },
- "presentation": "The patient cannot look toward one side with either eye, has a complete facial palsy on that same side, and a hemiparesis on the opposite side. Unlike a sixth nerve palsy, both eyes fail to move toward the lesion, and the gaze palsy cannot be overcome by turning the head. There may be a contralateral hemisensory loss.",
- "deficits": [
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "conjugate horizontal gaze",
-   "sign": "Gaze palsy toward the lesion (abducens nucleus or PPRF), not overcome by the oculocephalic reflex when nuclear",
-   "substrate": "pathway-horizontal-gaze"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -5,
+      "y": -38,
+      "z": -28
+    },
+    "radiusMm": 6
   },
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "whole face",
-   "sign": "Peripheral-type facial palsy",
-   "substrate": "facial-motor-nucleus"
+  "presentation": "The patient cannot look toward one side with either eye, has a complete facial palsy on that same side, and a hemiparesis on the opposite side. Unlike a sixth nerve palsy, both eyes fail to move toward the lesion, and the gaze palsy cannot be overcome by turning the head. There may be a contralateral hemisensory loss.",
+  "deficits": [
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "conjugate horizontal gaze",
+      "sign": "Gaze palsy toward the lesion (abducens nucleus or PPRF), not overcome by the oculocephalic reflex when nuclear",
+      "substrate": "pathway-horizontal-gaze"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "whole face",
+      "sign": "Peripheral-type facial palsy",
+      "substrate": "facial-motor-nucleus"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "arm and leg",
+      "sign": "Hemiparesis from the corticospinal tract",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "hemibody (variable)",
+      "sign": "Hemisensory loss from the medial lemniscus",
+      "substrate": "pathway-dcml"
+    }
+  ],
+  "reasoning": "The dorsal caudal pons contains the abducens nucleus and the paramedian pontine reticular formation, which together generate conjugate horizontal gaze toward the same side: the abducens nucleus contains the motor neurons for the ipsilateral lateral rectus and the interneurons that cross into the contralateral MLF to drive the opposite medial rectus. Destroying it therefore paralyzes gaze toward the lesion in both eyes, and because the nucleus is the final common pathway, vestibular input cannot overcome the palsy, unlike a lesion of the PPRF or the frontal eye field. The facial nerve fibers loop around the abducens nucleus (the facial colliculus) and are caught with it, so the ipsilateral face is completely paralyzed. The corticospinal fibers in the basis pontis, still uncrossed above the pyramidal decussation, are involved when the lesion extends ventrally, producing contralateral hemiparesis. The syndrome is thus Millard–Gubler with a gaze palsy in place of, or in addition to, the sixth nerve palsy, and the gaze palsy is what proves that the lesion is dorsal and involves the nucleus rather than the fascicle.",
+  "imagingFindings": [
+    {
+      "pathology": "Dorsal pontine infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the paramedian dorsal tegmentum of the caudal pons at the level of the facial colliculus.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Pontine demyelination or tumor",
+      "modality": "MRI",
+      "finding": "FLAIR-bright plaque or enhancing mass at the floor of the fourth ventricle.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Paramedian pontine infarct",
+    "Pontine hemorrhage",
+    "Multiple sclerosis",
+    "Pontine glioma"
+  ],
+  "mimics": [
+    {
+      "name": "Millard–Gubler syndrome",
+      "howToDistinguish": "Sixth nerve palsy (one eye) rather than a conjugate gaze palsy"
+    },
+    {
+      "name": "Frontal eye field lesion",
+      "howToDistinguish": "Gaze deviates toward the lesion and the palsy is overcome by the oculocephalic maneuver; hemiparesis is on the same side as the gaze palsy... i.e., the eyes look away from the weak limbs"
+    },
+    {
+      "name": "One-and-a-half syndrome",
+      "howToDistinguish": "Adds an internuclear ophthalmoplegia on the same side"
+    }
+  ],
+  "management": [
+    "Acute stroke treatment",
+    "Corneal protection",
+    "MRI with contrast to exclude demyelination or tumor in the young"
+  ],
+  "citations": [
+    {
+      "ref": "sp-foville-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -5,
+      "y": -38,
+      "z": -28
+    },
+    "label": "facial colliculus and abducens nucleus"
   },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "arm and leg",
-   "sign": "Hemiparesis from the corticospinal tract",
-   "substrate": "pathway-lateral-corticospinal"
-  },
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "hemibody (variable)",
-   "sign": "Hemisensory loss from the medial lemniscus",
-   "substrate": "pathway-dcml"
-  }
- ],
- "reasoning": "The dorsal caudal pons contains the abducens nucleus and the paramedian pontine reticular formation, which together generate conjugate horizontal gaze toward the same side: the abducens nucleus contains the motor neurons for the ipsilateral lateral rectus and the interneurons that cross into the contralateral MLF to drive the opposite medial rectus. Destroying it therefore paralyzes gaze toward the lesion in both eyes, and because the nucleus is the final common pathway, vestibular input cannot overcome the palsy, unlike a lesion of the PPRF or the frontal eye field. The facial nerve fibers loop around the abducens nucleus (the facial colliculus) and are caught with it, so the ipsilateral face is completely paralyzed. The corticospinal fibers in the basis pontis, still uncrossed above the pyramidal decussation, are involved when the lesion extends ventrally, producing contralateral hemiparesis. The syndrome is thus Millard–Gubler with a gaze palsy in place of, or in addition to, the sixth nerve palsy, and the gaze palsy is what proves that the lesion is dorsal and involves the nucleus rather than the fascicle.",
- "imagingFindings": [
-  {
-   "pathology": "Dorsal pontine infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the paramedian dorsal tegmentum of the caudal pons at the level of the facial colliculus.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Pontine demyelination or tumor",
-   "modality": "MRI",
-   "finding": "FLAIR-bright plaque or enhancing mass at the floor of the fourth ventricle.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Paramedian pontine infarct",
-  "Pontine hemorrhage",
-  "Multiple sclerosis",
-  "Pontine glioma"
- ],
- "mimics": [
-  {
-   "name": "Millard–Gubler syndrome",
-   "howToDistinguish": "Sixth nerve palsy (one eye) rather than a conjugate gaze palsy"
-  },
-  {
-   "name": "Frontal eye field lesion",
-   "howToDistinguish": "Gaze deviates toward the lesion and the palsy is overcome by the oculocephalic maneuver; hemiparesis is on the same side as the gaze palsy... i.e., the eyes look away from the weak limbs"
-  },
-  {
-   "name": "One-and-a-half syndrome",
-   "howToDistinguish": "Adds an internuclear ophthalmoplegia on the same side"
-  }
- ],
- "management": [
-  "Acute stroke treatment",
-  "Corneal protection",
-  "MRI with contrast to exclude demyelination or tumor in the young"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    78,
-    79
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    97,
-    98
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -5,
-   "y": -38,
-   "z": -28
-  },
-  "label": "facial colliculus and abducens nucleus"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

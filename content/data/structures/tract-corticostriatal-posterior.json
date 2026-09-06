@@ -1,165 +1,145 @@
 {
- "kind": "structure",
- "id": "tract-corticostriatal-posterior",
- "name": "Corticostriatal tract, posterior",
- "synonyms": [
-  "parieto-temporo-occipital corticostriatal fibers",
-  "visual loop input"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-corticostriatal-posterior-l",
-  "tract-corticostriatal-posterior-r"
- ],
- "summary": "The posterior corticostriatal bundle carries fibers from the parietal, temporal and occipital association cortex to the body and tail of the caudate and the posterior putamen, the cortical input of the visual and associative loops of the basal ganglia. These projections bring the striatum the visuospatial, auditory and object information it needs for attention, eye movement selection and the learning of stimulus-response habits, and their targets include the tail of the caudate that curves into the temporal lobe beside the amygdala. The bundle is less familiar than its frontal counterpart but explains the neglect, visual attention deficits and altered saccade selection that accompany posterior striatal and parietal lesions.",
- "anatomy": {
-  "location": "From the posterior parietal cortex, the superior and inferior temporal gyri and the extrastriate occipital cortex through the posterior corona radiata and the stratum sagittale, entering the body and tail of the caudate along the lateral ventricle and the posterior putamen through the retrolenticular and external capsules.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Posterior parietal, temporal and extrastriate occipital cortex",
-    "via": "origin"
-   }
+  "kind": "structure",
+  "id": "tract-corticostriatal-posterior",
+  "name": "Corticostriatal tract, posterior",
+  "synonyms": [
+    "parieto-temporo-occipital corticostriatal fibers",
+    "visual loop input"
   ],
-  "efferents": [
-   {
-    "to": "Body and tail of the caudate and the posterior putamen",
-    "via": "glutamatergic termination on medium spiny neurons"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-corticostriatal-posterior-l",
+    "tract-corticostriatal-posterior-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops",
-   "pathway-visual"
-  ]
- },
- "function": "Posterior association cortex projects topographically to the caudate body and tail and the posterior putamen, where the striatum learns to associate visual and auditory stimuli with valuable actions and eye movements; through the substantia nigra pars reticulata and the superior colliculus the loop selects the saccade targets that experience has rewarded, and through the pallidum and the thalamus it returns to the parietal and temporal cortex to bias attention toward learned salient objects. The tail of the caudate receives the inferior temporal cortex and holds long-term object values. Interruption impairs visual habit learning, produces subtle neglect and reduces the efficiency of visual search, and the caudate tail is affected in Huntington disease and in temporal lobe pathology.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-mca",
-   "artery-anterior-choroidal",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-lateral-lenticulostriate",
-   "territory-mca-parietal",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-corticostriatal-posterior-l"
+  "summary": "The posterior corticostriatal bundle carries fibers from the parietal, temporal and occipital association cortex to the body and tail of the caudate and the posterior putamen, the cortical input of the visual and associative loops of the basal ganglia. These projections bring the striatum the visuospatial, auditory and object information it needs for attention, eye movement selection and the learning of stimulus-response habits, and their targets include the tail of the caudate that curves into the temporal lobe beside the amygdala. The bundle is less familiar than its frontal counterpart but explains the neglect, visual attention deficits and altered saccade selection that accompany posterior striatal and parietal lesions.",
+  "anatomy": {
+    "location": "From the posterior parietal cortex, the superior and inferior temporal gyri and the extrastriate occipital cortex through the posterior corona radiata and the stratum sagittale, entering the body and tail of the caudate along the lateral ventricle and the posterior putamen through the retrolenticular and external capsules.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Posterior parietal, temporal and extrastriate occipital cortex",
+        "via": "origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Body and tail of the caudate and the posterior putamen",
+        "via": "glutamatergic termination on medium spiny neurons"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops",
+      "pathway-visual"
+    ]
+  },
+  "function": "Posterior association cortex projects topographically to the caudate body and tail and the posterior putamen, where the striatum learns to associate visual and auditory stimuli with valuable actions and eye movements; through the substantia nigra pars reticulata and the superior colliculus the loop selects the saccade targets that experience has rewarded, and through the pallidum and the thalamus it returns to the parietal and temporal cortex to bias attention toward learned salient objects. The tail of the caudate receives the inferior temporal cortex and holds long-term object values. Interruption impairs visual habit learning, produces subtle neglect and reduces the efficiency of visual search, and the caudate tail is affected in Huntington disease and in temporal lobe pathology.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-mca",
+      "artery-anterior-choroidal",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-lateral-lenticulostriate",
+      "territory-mca-parietal",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-corticostriatal-posterior-l"
+        },
+        "label": "posterior corticostriatal fibers from the parieto-temporal cortex to the caudate body and tail"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-corticostriatal-posterior-r"
+        },
+        "label": "association cortex fibers entering the posterior striatum"
+      }
+    ],
+    "normalAppearance": "Tractography shows fibers from the parietal and temporal lobes converging on the caudate body and tail and the posterior putamen; the caudate tail itself is a thin gray band in the roof of the temporal horn on coronal T2 images.",
+    "pathology": [
+      {
+        "pathology": "Posterior striatocapsular infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the posterior putamen and caudate body with contralateral hemiparesis and attentional deficits.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Huntington disease",
+        "modality": "MRI",
+        "finding": "Atrophy of the caudate body and tail with flattening of the ventricular wall on coronal images.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Temporal lobe pathology involving the caudate tail",
+        "modality": "MRI",
+        "finding": "Medial temporal tumor or sclerosis distorting the caudate tail in the roof of the temporal horn.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired visual attention and search",
+        "side": "contralateral",
+        "mechanism": "Loss of association cortex input to the visual striatal loop"
+      },
+      {
+        "deficit": "Altered saccade selection and visual habit learning",
+        "side": "contralateral",
+        "mechanism": "Loss of the caudate-nigra-collicular loop input"
+      },
+      {
+        "deficit": "Contribution to neglect with parietal lesions",
+        "side": "contralateral",
+        "mechanism": "Disconnection of the parietal attention cortex from the striatum"
+      }
+    ],
+    "examination": [
+      "Visual search and cancellation tasks",
+      "Saccade latency to targets in each hemifield",
+      "Extinction testing"
+    ],
+    "syndromes": [
+      "syn-hemineglect",
+      "syn-huntington-chorea"
+    ],
+    "pearls": [
+      "The caudate tail is where the temporal lobe teaches the basal ganglia which objects are worth looking at",
+      "Posterior corticostriatal fibers are the visual half of the basal ganglia loops",
+      "Neglect has a striatal component: the putamen and caudate are part of the attention network"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "posterior corticostriatal fibers from the parieto-temporal cortex to the caudate body and tail"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-corticostriatal-posterior-r"
+    {
+      "ref": "sp-nucleus-caudate",
+      "section": "Structure and Function"
     },
-    "label": "association cortex fibers entering the posterior striatum"
-   }
+    {
+      "ref": "sp-putamen",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows fibers from the parietal and temporal lobes converging on the caudate body and tail and the posterior putamen; the caudate tail itself is a thin gray band in the roof of the temporal horn on coronal T2 images.",
-  "pathology": [
-   {
-    "pathology": "Posterior striatocapsular infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the posterior putamen and caudate body with contralateral hemiparesis and attentional deficits.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Huntington disease",
-    "modality": "MRI",
-    "finding": "Atrophy of the caudate body and tail with flattening of the ventricular wall on coronal images.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Temporal lobe pathology involving the caudate tail",
-    "modality": "MRI",
-    "finding": "Medial temporal tumor or sclerosis distorting the caudate tail in the roof of the temporal horn.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired visual attention and search",
-    "side": "contralateral",
-    "mechanism": "Loss of association cortex input to the visual striatal loop"
-   },
-   {
-    "deficit": "Altered saccade selection and visual habit learning",
-    "side": "contralateral",
-    "mechanism": "Loss of the caudate-nigra-collicular loop input"
-   },
-   {
-    "deficit": "Contribution to neglect with parietal lesions",
-    "side": "contralateral",
-    "mechanism": "Disconnection of the parietal attention cortex from the striatum"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Visual search and cancellation tasks",
-   "Saccade latency to targets in each hemifield",
-   "Extinction testing"
-  ],
-  "syndromes": [
-   "syn-hemineglect",
-   "syn-huntington-chorea"
-  ],
-  "pearls": [
-   "The caudate tail is where the temporal lobe teaches the basal ganglia which objects are worth looking at",
-   "Posterior corticostriatal fibers are the visual half of the basal ganglia loops",
-   "Neglect has a striatal component: the putamen and caudate are part of the attention network"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    250
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "internal-capsule"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "internal-capsule"
 }

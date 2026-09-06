@@ -1,174 +1,162 @@
 {
- "kind": "structure",
- "id": "gyrus-supramarginal-anterior",
- "name": "Supramarginal gyrus, anterior division",
- "synonyms": [
-  "anterior inferior parietal lobule",
-  "area 40"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-supramarginal-anterior-l",
-  "gyrus-supramarginal-anterior-r"
- ],
- "summary": "The anterior supramarginal gyrus caps the upturned end of the lateral sulcus behind the postcentral gyrus, the front part of the inferior parietal lobule (Brodmann area 40). It is where touch, proprioception and hearing meet the motor plans of the frontal lobe: in the dominant hemisphere it stores the spatiotemporal programs of learned skilled movements and the phonological loop used to repeat and to hold speech in mind, and in the right hemisphere it directs attention to the contralateral side of space. It is a middle cerebral artery territory at the junction of the superior and inferior divisions, and its lesions produce ideomotor apraxia, conduction aphasia and neglect.",
- "anatomy": {
-  "location": "Anterior part of the inferior parietal lobule, arching over the posterior end of the lateral sulcus, behind the postcentral sulcus, in front of the posterior division and the angular gyrus, above the planum temporale.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Postcentral gyrus and secondary somatosensory cortex",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Planum temporale and posterior superior temporal gyrus",
-    "via": "arcuate fasciculus"
-   },
-   {
-    "from": "Pulvinar and lateral posterior thalamus",
-    "via": "posterior thalamic radiation"
-   }
+  "kind": "structure",
+  "id": "gyrus-supramarginal-anterior",
+  "name": "Supramarginal gyrus, anterior division",
+  "synonyms": [
+    "anterior inferior parietal lobule",
+    "area 40"
   ],
-  "efferents": [
-   {
-    "to": "Premotor cortex and inferior frontal gyrus",
-    "via": "superior longitudinal fasciculus III / arcuate fasciculus"
-   },
-   {
-    "to": "Contralateral supramarginal gyrus",
-    "via": "corpus callosum"
-   },
-   {
-    "to": "Superior colliculus and pulvinar (attention)",
-    "via": "corticofugal fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-supramarginal-anterior-l",
+    "gyrus-supramarginal-anterior-r"
   ],
-  "pathways": [
-   "pathway-dcml"
-  ]
- },
- "function": "The anterior supramarginal cortex integrates somatosensory and auditory information with body schema and stores, in the left hemisphere, the representations of gestures and tool use that the premotor cortex executes; its loss produces ideomotor apraxia in which the patient knows what to do but cannot perform it to command, on both sides of the body because the right premotor cortex depends on it through the corpus callosum. It also holds the phonological store of verbal working memory and takes part in repetition through the arcuate fasciculus, and on the right it is part of the ventral attention network that reorients attention to unexpected stimuli, whose loss produces neglect and extinction.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-superior-division",
-   "artery-mca",
-   "artery-mca-inferior-division"
-  ],
-  "territories": [
-   "territory-mca-parietal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-supramarginal-anterior-l"
-    },
-    "label": "anterior supramarginal gyrus capping the Sylvian fissure"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-supramarginal-anterior-r"
-    },
-    "label": "inferior parietal lobule above the posterior Sylvian fissure"
-   }
-  ],
-  "normalAppearance": "The gyrus that wraps around the posterior end of the Sylvian fissure on axial images above the posterior insula, behind the postcentral gyrus and in front of the angular gyrus.",
-  "pathology": [
-   {
-    "pathology": "MCA infarct with apraxia or conduction aphasia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the left inferior parietal cortex and the underlying arcuate fibers; the patient cannot pantomime tool use and cannot repeat.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Right parietal infarct with neglect",
-    "modality": "MRI",
-    "finding": "Right inferior parietal cortical infarct with left neglect, extinction and anosognosia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Corticobasal syndrome",
-    "modality": "MRI",
-    "finding": "Asymmetric parietal atrophy including the supramarginal gyrus in a patient with limb apraxia, dystonia and alien limb.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ideomotor apraxia of both hands (left)",
-    "side": "bilateral",
-    "mechanism": "Loss of stored movement representations in the dominant inferior parietal lobule"
-   },
-   {
-    "deficit": "Conduction aphasia: impaired repetition with phonemic errors (left)",
-    "side": "n/a",
-    "mechanism": "Damage to the phonological store and the arcuate fasciculus beneath it"
-   },
-   {
-    "deficit": "Contralateral neglect and extinction (right)",
-    "side": "contralateral",
-    "mechanism": "Loss of the ventral attention network node of the right inferior parietal lobule"
-   }
-  ],
-  "examination": [
-   "Pantomime tool use to command and imitation of meaningless gestures with either hand",
-   "Repetition of multisyllabic words and sentences",
-   "Double simultaneous stimulation and line bisection for neglect"
-  ],
-  "syndromes": [
-   "syn-aphasia-conduction-global",
-   "syn-hemineglect",
-   "syn-mca-inferior-division"
-  ],
-  "pearls": [
-   "Apraxia from a left parietal lesion affects the left hand too: the right hemisphere gets its movement formulas through the callosum",
-   "Conduction aphasia is a supramarginal-arcuate lesion: fluent, comprehending, unable to repeat",
-   "Neglect is a right inferior parietal sign; test extinction, not just fields"
-  ]
- },
- "pitfalls": [
-  "Apraxia is missed unless tested: ask the patient to show how they would use a comb, a key and scissors without the object"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
+  "summary": "The anterior supramarginal gyrus caps the upturned end of the lateral sulcus behind the postcentral gyrus, the front part of the inferior parietal lobule (Brodmann area 40). It is where touch, proprioception and hearing meet the motor plans of the frontal lobe: in the dominant hemisphere it stores the spatiotemporal programs of learned skilled movements and the phonological loop used to repeat and to hold speech in mind, and in the right hemisphere it directs attention to the contralateral side of space. It is a middle cerebral artery territory at the junction of the superior and inferior divisions, and its lesions produce ideomotor apraxia, conduction aphasia and neglect.",
+  "anatomy": {
+    "location": "Anterior part of the inferior parietal lobule, arching over the posterior end of the lateral sulcus, behind the postcentral sulcus, in front of the posterior division and the angular gyrus, above the planum temporale.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Postcentral gyrus and secondary somatosensory cortex",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Planum temporale and posterior superior temporal gyrus",
+        "via": "arcuate fasciculus"
+      },
+      {
+        "from": "Pulvinar and lateral posterior thalamus",
+        "via": "posterior thalamic radiation"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Premotor cortex and inferior frontal gyrus",
+        "via": "superior longitudinal fasciculus III / arcuate fasciculus"
+      },
+      {
+        "to": "Contralateral supramarginal gyrus",
+        "via": "corpus callosum"
+      },
+      {
+        "to": "Superior colliculus and pulvinar (attention)",
+        "via": "corticofugal fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    60
-   ]
-  }
- ],
- "tags": [
-  "inferior parietal lobule",
-  "praxis",
-  "phonological loop"
- ],
- "status": "draft",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "function": "The anterior supramarginal cortex integrates somatosensory and auditory information with body schema and stores, in the left hemisphere, the representations of gestures and tool use that the premotor cortex executes; its loss produces ideomotor apraxia in which the patient knows what to do but cannot perform it to command, on both sides of the body because the right premotor cortex depends on it through the corpus callosum. It also holds the phonological store of verbal working memory and takes part in repetition through the arcuate fasciculus, and on the right it is part of the ventral attention network that reorients attention to unexpected stimuli, whose loss produces neglect and extinction.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-superior-division",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca-parietal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-supramarginal-anterior-l"
+        },
+        "label": "anterior supramarginal gyrus capping the Sylvian fissure"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-supramarginal-anterior-r"
+        },
+        "label": "inferior parietal lobule above the posterior Sylvian fissure"
+      }
+    ],
+    "normalAppearance": "The gyrus that wraps around the posterior end of the Sylvian fissure on axial images above the posterior insula, behind the postcentral gyrus and in front of the angular gyrus.",
+    "pathology": [
+      {
+        "pathology": "MCA infarct with apraxia or conduction aphasia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the left inferior parietal cortex and the underlying arcuate fibers; the patient cannot pantomime tool use and cannot repeat.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Right parietal infarct with neglect",
+        "modality": "MRI",
+        "finding": "Right inferior parietal cortical infarct with left neglect, extinction and anosognosia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Corticobasal syndrome",
+        "modality": "MRI",
+        "finding": "Asymmetric parietal atrophy including the supramarginal gyrus in a patient with limb apraxia, dystonia and alien limb.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ideomotor apraxia of both hands (left)",
+        "side": "bilateral",
+        "mechanism": "Loss of stored movement representations in the dominant inferior parietal lobule"
+      },
+      {
+        "deficit": "Conduction aphasia: impaired repetition with phonemic errors (left)",
+        "side": "n/a",
+        "mechanism": "Damage to the phonological store and the arcuate fasciculus beneath it"
+      },
+      {
+        "deficit": "Contralateral neglect and extinction (right)",
+        "side": "contralateral",
+        "mechanism": "Loss of the ventral attention network node of the right inferior parietal lobule"
+      }
+    ],
+    "examination": [
+      "Pantomime tool use to command and imitation of meaningless gestures with either hand",
+      "Repetition of multisyllabic words and sentences",
+      "Double simultaneous stimulation and line bisection for neglect"
+    ],
+    "syndromes": [
+      "syn-aphasia-conduction-global",
+      "syn-hemineglect",
+      "syn-mca-inferior-division"
+    ],
+    "pearls": [
+      "Apraxia from a left parietal lesion affects the left hand too: the right hemisphere gets its movement formulas through the callosum",
+      "Conduction aphasia is a supramarginal-arcuate lesion: fluent, comprehending, unable to repeat",
+      "Neglect is a right inferior parietal sign; test extinction, not just fields"
+    ]
+  },
+  "pitfalls": [
+    "Apraxia is missed unless tested: ask the patient to show how they would use a comb, a key and scissors without the object"
+  ],
+  "citations": [
+    {
+      "ref": "sp-apraxia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-postcentral-gyrus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "inferior parietal lobule",
+    "praxis",
+    "phonological loop"
+  ],
+  "status": "draft",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

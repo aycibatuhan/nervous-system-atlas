@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-polymicrogyria",
- "term": "Polymicrogyria",
- "definition": "An excess of small, fused gyri with a thick irregular cortex from abnormal late cortical organization, often perisylvian and bilateral, producing pseudobulbar palsy, epilepsy and developmental delay.",
- "related": [
-  "g-heterotopia",
-  "g-lissencephaly"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-polymicrogyria",
+  "term": "Polymicrogyria",
+  "definition": "An excess of small, fused gyri with a thick irregular cortex from abnormal late cortical organization, often perisylvian and bilateral, producing pseudobulbar palsy, epilepsy and developmental delay.",
+  "related": [
+    "g-heterotopia",
+    "g-lissencephaly"
+  ],
+  "citations": [
+    {
+      "ref": "sp-malformations",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-lissencephaly",
+      "section": "Pathophysiology"
+    }
+  ]
 }

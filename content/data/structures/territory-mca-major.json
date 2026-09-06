@@ -1,168 +1,148 @@
 {
- "kind": "structure",
- "id": "territory-mca-major",
- "name": "MCA major territory",
- "synonyms": [
-  "MCA territory (level 2)",
-  "middle cerebral artery domain"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-mca-major-l",
-  "territory-mca-major-r"
- ],
- "summary": "The middle cerebral artery major territory is the largest arterial domain of the hemisphere, the lateral convexity from the frontal pole to the occipital pole together with the insula, the temporal lobe convexity and, through the lenticulostriate arteries, the striatum and the internal capsule. This level-2 territory map merges the frontal, parietal, temporal, occipital and insular MCA subterritories with the lenticulostriate domains, and it is the region infarcted by an M1 occlusion: the malignant MCA infarct that swells to threaten herniation and the stroke that carries the whole textbook of hemispheric signs, contralateral face-arm-leg hemiplegia, hemianesthesia, hemianopia, gaze deviation and aphasia or neglect.",
- "anatomy": {
-  "location": "Lateral surface of the frontal, parietal and temporal lobes, the lateral occipital lobe, the insula and opercula, the claustrum and the extreme capsule, and the deep structures supplied by the lenticulostriates (putamen, caudate body, lateral pallidum, upper internal capsule), bounded by the ACA territory along the superior margin, the PCA territory on the inferomedial temporal and occipital surface, and the anterior choroidal territory in the posterior limb.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Middle cerebral artery M1-M4 segments and lenticulostriate arteries",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-mca-major",
+  "name": "MCA major territory",
+  "synonyms": [
+    "MCA territory (level 2)",
+    "middle cerebral artery domain"
   ],
-  "efferents": [
-   {
-    "to": "Superficial and deep middle cerebral veins",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-mca-major-l",
+    "territory-mca-major-r"
   ],
-  "pathways": []
- },
- "function": "It contains the primary motor and sensory cortex for the face and arm, the frontal eye field, the language areas of the dominant hemisphere and the attention network of the non-dominant one, the auditory cortex, the insula and the striatum, so that occlusion of the stem produces the most extensive single-artery syndrome in neurology. Perfusion depends on the circle of Willis and on leptomeningeal collaterals from the ACA and PCA, which define the penumbra that thrombectomy tries to save; the deep lenticulostriate territory has no collaterals and infarcts first. Complete territory infarction swells over three days and can herniate, especially in young patients with no room for edema.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-superior-division",
-   "artery-mca-inferior-division",
-   "arteries-lenticulostriate"
-  ],
-  "territories": [
-   "territory-mca-major"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-mca-major-l"
+  "summary": "The middle cerebral artery major territory is the largest arterial domain of the hemisphere, the lateral convexity from the frontal pole to the occipital pole together with the insula, the temporal lobe convexity and, through the lenticulostriate arteries, the striatum and the internal capsule. This level-2 territory map merges the frontal, parietal, temporal, occipital and insular MCA subterritories with the lenticulostriate domains, and it is the region infarcted by an M1 occlusion: the malignant MCA infarct that swells to threaten herniation and the stroke that carries the whole textbook of hemispheric signs, contralateral face-arm-leg hemiplegia, hemianesthesia, hemianopia, gaze deviation and aphasia or neglect.",
+  "anatomy": {
+    "location": "Lateral surface of the frontal, parietal and temporal lobes, the lateral occipital lobe, the insula and opercula, the claustrum and the extreme capsule, and the deep structures supplied by the lenticulostriates (putamen, caudate body, lateral pallidum, upper internal capsule), bounded by the ACA territory along the superior margin, the PCA territory on the inferomedial temporal and occipital surface, and the anterior choroidal territory in the posterior limb.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Middle cerebral artery M1-M4 segments and lenticulostriate arteries",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superficial and deep middle cerebral veins",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "It contains the primary motor and sensory cortex for the face and arm, the frontal eye field, the language areas of the dominant hemisphere and the attention network of the non-dominant one, the auditory cortex, the insula and the striatum, so that occlusion of the stem produces the most extensive single-artery syndrome in neurology. Perfusion depends on the circle of Willis and on leptomeningeal collaterals from the ACA and PCA, which define the penumbra that thrombectomy tries to save; the deep lenticulostriate territory has no collaterals and infarcts first. Complete territory infarction swells over three days and can herniate, especially in young patients with no room for edema.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-superior-division",
+      "artery-mca-inferior-division",
+      "arteries-lenticulostriate"
+    ],
+    "territories": [
+      "territory-mca-major"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-mca-major-l"
+        },
+        "label": "MCA major territory on the lateral hemisphere"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-mca-major-r"
+        },
+        "label": "MCA territory from the convexity to the striatum"
+      }
+    ],
+    "normalAppearance": "On the territory overlay the MCA domain covers the lateral convexity and the deep striatocapsular region; on CT and MRI the normal territory is the lateral cortex and the lentiform nucleus, with the insular ribbon as its most vulnerable early marker.",
+    "pathology": [
+      {
+        "pathology": "Malignant MCA infarct",
+        "modality": "CT",
+        "finding": "Loss of the insular ribbon and lentiform nucleus, hyperdense M1 sign, then hypodensity of more than two-thirds of the territory with swelling and midline shift by 48-72 hours.",
+        "sequence": "CT non-contrast",
+        "timing": "Decompressive craniectomy within 48 hours improves survival in patients under 60"
+      },
+      {
+        "pathology": "M1 occlusion (thrombectomy candidate)",
+        "modality": "CTA",
+        "finding": "Cut-off of the M1 segment with a small core on CT perfusion or DWI and a large penumbra; thrombectomy up to 24 hours in selected patients.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Striatocapsular infarct",
+        "modality": "MRI",
+        "finding": "Comma-shaped restricted diffusion of the lentiform nucleus and capsule from lenticulostriate occlusion with M1 recanalization.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral face-arm-leg hemiplegia and hemianesthesia",
+        "side": "contralateral",
+        "mechanism": "Infarction of the motor and sensory cortex and the internal capsule"
+      },
+      {
+        "deficit": "Global aphasia (dominant) or profound neglect and anosognosia (non-dominant)",
+        "side": "n/a",
+        "mechanism": "Infarction of the whole perisylvian language or attention network"
+      },
+      {
+        "deficit": "Gaze deviation toward the lesion and contralateral hemianopia",
+        "side": "contralateral",
+        "mechanism": "Frontal eye field and optic radiation infarction"
+      },
+      {
+        "deficit": "Progressive drowsiness and herniation",
+        "side": "bilateral",
+        "mechanism": "Cytotoxic edema of the whole territory"
+      }
+    ],
+    "examination": [
+      "NIH stroke scale with attention to gaze, fields, language and neglect",
+      "Serial level of consciousness and pupils for 72 hours",
+      "Swallow screen before oral intake"
+    ],
+    "syndromes": [
+      "syn-mca-stem-infarct",
+      "syn-mca-superior-division",
+      "syn-mca-inferior-division",
+      "syn-uncal-herniation"
+    ],
+    "pearls": [
+      "The insular ribbon is the first part of the MCA territory to lose its gray-white distinction on CT",
+      "A young patient with a whole-territory MCA infarct needs a craniectomy decision before day two",
+      "The lenticulostriate part of the territory has no collaterals: it is the core of every MCA stroke"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-middle-cerebral-artery",
+      "section": "Structure and Function"
     },
-    "label": "MCA major territory on the lateral hemisphere"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-mca-major-r"
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
     },
-    "label": "MCA territory from the convexity to the striatum"
-   }
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On the territory overlay the MCA domain covers the lateral convexity and the deep striatocapsular region; on CT and MRI the normal territory is the lateral cortex and the lentiform nucleus, with the insular ribbon as its most vulnerable early marker.",
-  "pathology": [
-   {
-    "pathology": "Malignant MCA infarct",
-    "modality": "CT",
-    "finding": "Loss of the insular ribbon and lentiform nucleus, hyperdense M1 sign, then hypodensity of more than two-thirds of the territory with swelling and midline shift by 48-72 hours.",
-    "sequence": "CT non-contrast",
-    "timing": "Decompressive craniectomy within 48 hours improves survival in patients under 60"
-   },
-   {
-    "pathology": "M1 occlusion (thrombectomy candidate)",
-    "modality": "CTA",
-    "finding": "Cut-off of the M1 segment with a small core on CT perfusion or DWI and a large penumbra; thrombectomy up to 24 hours in selected patients.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Striatocapsular infarct",
-    "modality": "MRI",
-    "finding": "Comma-shaped restricted diffusion of the lentiform nucleus and capsule from lenticulostriate occlusion with M1 recanalization.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral face-arm-leg hemiplegia and hemianesthesia",
-    "side": "contralateral",
-    "mechanism": "Infarction of the motor and sensory cortex and the internal capsule"
-   },
-   {
-    "deficit": "Global aphasia (dominant) or profound neglect and anosognosia (non-dominant)",
-    "side": "n/a",
-    "mechanism": "Infarction of the whole perisylvian language or attention network"
-   },
-   {
-    "deficit": "Gaze deviation toward the lesion and contralateral hemianopia",
-    "side": "contralateral",
-    "mechanism": "Frontal eye field and optic radiation infarction"
-   },
-   {
-    "deficit": "Progressive drowsiness and herniation",
-    "side": "bilateral",
-    "mechanism": "Cytotoxic edema of the whole territory"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "NIH stroke scale with attention to gaze, fields, language and neglect",
-   "Serial level of consciousness and pupils for 72 hours",
-   "Swallow screen before oral intake"
-  ],
-  "syndromes": [
-   "syn-mca-stem-infarct",
-   "syn-mca-superior-division",
-   "syn-mca-inferior-division",
-   "syn-uncal-herniation"
-  ],
-  "pearls": [
-   "The insular ribbon is the first part of the MCA territory to lose its gray-white distinction on CT",
-   "A young patient with a whole-territory MCA infarct needs a craniectomy decision before day two",
-   "The lenticulostriate part of the territory has no collaterals: it is the core of every MCA stroke"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    271,
-    274
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level2",
- "parent": "territory-mca"
+  "status": "draft",
+  "subsystem": "level2",
+  "parent": "territory-mca"
 }

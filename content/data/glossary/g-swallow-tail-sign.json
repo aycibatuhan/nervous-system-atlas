@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-swallow-tail-sign",
- "term": "Swallow tail sign",
- "definition": "The normal hyperintense nigrosome-1 in the dorsolateral substantia nigra on susceptibility-weighted MRI, shaped like a swallow's tail; its loss supports Parkinson disease and other nigral degenerations.",
- "related": [
-  "g-dopamine-transporter-imaging"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-swallow-tail-sign",
+  "term": "Swallow tail sign",
+  "definition": "The normal hyperintense nigrosome-1 in the dorsolateral substantia nigra on susceptibility-weighted MRI, shaped like a swallow's tail; its loss supports Parkinson disease and other nigral degenerations.",
+  "related": [
+    "g-dopamine-transporter-imaging"
+  ],
+  "citations": [
+    {
+      "ref": "sp-parkinson-disease",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-substantia-nigra",
+      "section": "Structure and Function"
+    }
+  ]
 }

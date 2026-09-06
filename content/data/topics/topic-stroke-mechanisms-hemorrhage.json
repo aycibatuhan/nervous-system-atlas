@@ -1,157 +1,137 @@
 {
- "kind": "topic",
- "id": "topic-stroke-mechanisms-hemorrhage",
- "name": "Stroke mechanisms and intracranial hemorrhage",
- "synonyms": [],
- "category": "disease-pattern",
- "summary": "A stroke is a sudden focal neurological deficit from a vascular cause, ischemic in about four-fifths and hemorrhagic in the rest, and its mechanism determines both the pattern of injury and the treatment: large artery atherosclerosis, cardioembolism, small vessel disease, dissection and rarer causes produce ischemic infarcts in the territories shown in this atlas, whereas hypertension, amyloid angiopathy, aneurysms, vascular malformations, venous thrombosis and anticoagulation produce hemorrhage into the parenchyma, the subarachnoid space or the subdural and epidural compartments. Localization gives the territory, the territory gives the artery, and the artery and the patient give the mechanism; recanalization within hours saves ischemic tissue, and the site and volume of a hemorrhage decide its danger.",
- "sections": [
-  {
-   "heading": "Ischemic mechanisms and their imaging signatures",
-   "body": "Cardioembolism (atrial fibrillation, valve disease, recent infarction, endocarditis) sends clots to the large intracranial arteries and produces cortical infarcts in several territories or ages, often with hemorrhagic transformation; large artery atherosclerosis of the carotid bifurcation or the intracranial vessels produces territorial infarcts by artery-to-artery embolism and border-zone infarcts by hypoperfusion; small vessel lipohyalinosis of the lenticulostriate, thalamoperforating and pontine perforators produces lacunes with the classic lacunar syndromes; dissection of the carotid or vertebral artery in young patients produces neck pain, Horner syndrome and embolic infarcts; and rarer mechanisms include vasculitis, reversible vasoconstriction, hypercoagulable states, sickle cell disease, moyamoya and paradoxical embolism through a patent foramen ovale. The evaluation therefore includes vascular imaging from the aortic arch to the circle of Willis, cardiac rhythm monitoring and echocardiography, and the lipid and glucose profile that drives secondary prevention with antiplatelets or anticoagulants, statins and blood pressure control."
-  },
-  {
-   "heading": "Acute ischemic stroke: time, core and penumbra",
-   "body": "Ischemic tissue dies at a rate that depends on collateral flow: the core is infarcted within minutes at the center of the territory, while the penumbra survives on leptomeningeal collaterals for hours and is the target of treatment. Intravenous thrombolysis within four and a half hours and mechanical thrombectomy for large vessel occlusion within six hours, or up to twenty-four hours when perfusion imaging shows a small core and a large penumbra, restore flow; the deficit, the NIH stroke scale, the CT ASPECTS score and the CTA occlusion site guide the decision, and hemorrhage, recent surgery and anticoagulation are the main contraindications. After reperfusion or without it, the infarct swells for three days, and malignant middle cerebral or cerebellar infarcts need decompressive surgery before herniation. Transient ischemic attacks carry a high early stroke risk and are investigated with the same urgency."
-  },
-  {
-   "heading": "Intracerebral and subarachnoid hemorrhage",
-   "body": "Hypertensive hemorrhage arises from Charcot-Bouchard microaneurysms of the perforating arteries and strikes the putamen, thalamus, pons and cerebellum; cerebral amyloid angiopathy of the elderly produces lobar hemorrhages at the cortical surface with microbleeds and superficial siderosis; arteriovenous malformations and cavernomas bleed in the young; anticoagulants, thrombolysis, tumors and venous thrombosis cause the rest. The hematoma expands in the first hours (the spot sign on CTA predicts it), and outcome depends on volume, location (brainstem and large deep hemorrhages are worst), ventricular extension and the level of consciousness; treatment is blood pressure lowering, reversal of anticoagulation and surgery for cerebellar hemorrhages over three centimeters or with brainstem compression. Aneurysmal subarachnoid hemorrhage presents with a thunderclap headache, meningism and often a third nerve palsy from a posterior communicating aneurysm; it is complicated by rebleeding, vasospasm and delayed ischemia between days four and fourteen, hydrocephalus and hyponatremia, and is treated by coiling or clipping the aneurysm within a day."
-  },
-  {
-   "heading": "Venous thrombosis and the extra-axial hemorrhages",
-   "body": "Cerebral venous sinus thrombosis, from hypercoagulable states, pregnancy, infection and dehydration, raises pressure and produces headache, seizures and venous infarcts that cross arterial boundaries and often bleed; the superior sagittal sinus gives bilateral parasagittal lesions and the transverse sinus temporal lesions; MRV shows the absent flow and anticoagulation is the treatment despite the hemorrhage. Epidural hematoma from a middle meningeal artery tear under a temporal fracture produces a lucid interval and a lens-shaped clot that does not cross sutures; subdural hematoma from torn bridging veins produces a crescent that crosses sutures, acute in trauma and chronic in the elderly and anticoagulated, with fluctuating confusion and headache; both are surgical when they compress the brain. The atlas's venous meshes and the dural layers show why each collection has its shape."
-  }
- ],
- "keyPoints": [
-  "The territory names the artery; the patient names the mechanism; the mechanism chooses the prevention",
-  "Cortical infarcts in more than one territory are embolic until proved otherwise; deep small infarcts are small vessel disease",
-  "The penumbra is a collateral phenomenon: good collaterals buy time for thrombectomy",
-  "Hypertension bleeds deep (putamen, thalamus, pons, cerebellum); amyloid bleeds lobar; aneurysms bleed into the cisterns",
-  "Venous infarcts cross arterial territories and bleed, and their treatment is anticoagulation"
- ],
- "meshIds": [
-  "arteries-mra-atlas",
-  "artery-mca-l",
-  "artery-mca-r",
-  "artery-basilar",
-  "putamen-l",
-  "putamen-r",
-  "sinus-superior-sagittal",
-  "sinus-transverse-l",
-  "sinus-transverse-r"
- ],
- "related": {
-  "structureIds": [
-   "artery-mca",
-   "artery-internal-carotid",
-   "artery-basilar",
-   "arteries-lenticulostriate",
-   "circle-of-willis",
-   "sinus-superior-sagittal",
-   "veins-superficial-cerebral",
-   "dura-mater"
+  "kind": "topic",
+  "id": "topic-stroke-mechanisms-hemorrhage",
+  "name": "Stroke mechanisms and intracranial hemorrhage",
+  "synonyms": [],
+  "category": "disease-pattern",
+  "summary": "A stroke is a sudden focal neurological deficit from a vascular cause, ischemic in about four-fifths and hemorrhagic in the rest, and its mechanism determines both the pattern of injury and the treatment: large artery atherosclerosis, cardioembolism, small vessel disease, dissection and rarer causes produce ischemic infarcts in the territories shown in this atlas, whereas hypertension, amyloid angiopathy, aneurysms, vascular malformations, venous thrombosis and anticoagulation produce hemorrhage into the parenchyma, the subarachnoid space or the subdural and epidural compartments. Localization gives the territory, the territory gives the artery, and the artery and the patient give the mechanism; recanalization within hours saves ischemic tissue, and the site and volume of a hemorrhage decide its danger.",
+  "sections": [
+    {
+      "heading": "Ischemic mechanisms and their imaging signatures",
+      "body": "Cardioembolism (atrial fibrillation, valve disease, recent infarction, endocarditis) sends clots to the large intracranial arteries and produces cortical infarcts in several territories or ages, often with hemorrhagic transformation; large artery atherosclerosis of the carotid bifurcation or the intracranial vessels produces territorial infarcts by artery-to-artery embolism and border-zone infarcts by hypoperfusion; small vessel lipohyalinosis of the lenticulostriate, thalamoperforating and pontine perforators produces lacunes with the classic lacunar syndromes; dissection of the carotid or vertebral artery in young patients produces neck pain, Horner syndrome and embolic infarcts; and rarer mechanisms include vasculitis, reversible vasoconstriction, hypercoagulable states, sickle cell disease, moyamoya and paradoxical embolism through a patent foramen ovale. The evaluation therefore includes vascular imaging from the aortic arch to the circle of Willis, cardiac rhythm monitoring and echocardiography, and the lipid and glucose profile that drives secondary prevention with antiplatelets or anticoagulants, statins and blood pressure control."
+    },
+    {
+      "heading": "Acute ischemic stroke: time, core and penumbra",
+      "body": "Ischemic tissue dies at a rate that depends on collateral flow: the core is infarcted within minutes at the center of the territory, while the penumbra survives on leptomeningeal collaterals for hours and is the target of treatment. Intravenous thrombolysis within four and a half hours and mechanical thrombectomy for large vessel occlusion within six hours, or up to twenty-four hours when perfusion imaging shows a small core and a large penumbra, restore flow; the deficit, the NIH stroke scale, the CT ASPECTS score and the CTA occlusion site guide the decision, and hemorrhage, recent surgery and anticoagulation are the main contraindications. After reperfusion or without it, the infarct swells for three days, and malignant middle cerebral or cerebellar infarcts need decompressive surgery before herniation. Transient ischemic attacks carry a high early stroke risk and are investigated with the same urgency."
+    },
+    {
+      "heading": "Intracerebral and subarachnoid hemorrhage",
+      "body": "Hypertensive hemorrhage arises from Charcot-Bouchard microaneurysms of the perforating arteries and strikes the putamen, thalamus, pons and cerebellum; cerebral amyloid angiopathy of the elderly produces lobar hemorrhages at the cortical surface with microbleeds and superficial siderosis; arteriovenous malformations and cavernomas bleed in the young; anticoagulants, thrombolysis, tumors and venous thrombosis cause the rest. The hematoma expands in the first hours (the spot sign on CTA predicts it), and outcome depends on volume, location (brainstem and large deep hemorrhages are worst), ventricular extension and the level of consciousness; treatment is blood pressure lowering, reversal of anticoagulation and surgery for cerebellar hemorrhages over three centimeters or with brainstem compression. Aneurysmal subarachnoid hemorrhage presents with a thunderclap headache, meningism and often a third nerve palsy from a posterior communicating aneurysm; it is complicated by rebleeding, vasospasm and delayed ischemia between days four and fourteen, hydrocephalus and hyponatremia, and is treated by coiling or clipping the aneurysm within a day."
+    },
+    {
+      "heading": "Venous thrombosis and the extra-axial hemorrhages",
+      "body": "Cerebral venous sinus thrombosis, from hypercoagulable states, pregnancy, infection and dehydration, raises pressure and produces headache, seizures and venous infarcts that cross arterial boundaries and often bleed; the superior sagittal sinus gives bilateral parasagittal lesions and the transverse sinus temporal lesions; MRV shows the absent flow and anticoagulation is the treatment despite the hemorrhage. Epidural hematoma from a middle meningeal artery tear under a temporal fracture produces a lucid interval and a lens-shaped clot that does not cross sutures; subdural hematoma from torn bridging veins produces a crescent that crosses sutures, acute in trauma and chronic in the elderly and anticoagulated, with fluctuating confusion and headache; both are surgical when they compress the brain. The atlas's venous meshes and the dural layers show why each collection has its shape."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-mca-stem-infarct",
-   "syn-lacunar-pure-motor",
-   "syn-basilar-occlusion",
-   "syn-subarachnoid-hemorrhage",
-   "syn-cerebral-venous-sinus-thrombosis",
-   "syn-epidural-hematoma",
-   "syn-subdural-hematoma",
-   "syn-pontine-hemorrhage",
-   "syn-watershed-infarct"
+  "keyPoints": [
+    "The territory names the artery; the patient names the mechanism; the mechanism chooses the prevention",
+    "Cortical infarcts in more than one territory are embolic until proved otherwise; deep small infarcts are small vessel disease",
+    "The penumbra is a collateral phenomenon: good collaterals buy time for thrombectomy",
+    "Hypertension bleeds deep (putamen, thalamus, pons, cerebellum); amyloid bleeds lobar; aneurysms bleed into the cisterns",
+    "Venous infarcts cross arterial territories and bleed, and their treatment is anticoagulation"
   ],
-  "topicIds": [
-   "topic-neuroimaging-basics",
-   "topic-headache-localization"
-  ]
- },
- "pearls": [
-  "Time is brain: every minute of a large vessel occlusion costs nearly two million neurons",
-  "A thunderclap headache with a third nerve palsy is a posterior communicating aneurysm until the CTA is done",
-  "A cerebellar hemorrhage over three centimeters goes to the operating theater, not the ward"
- ],
- "pitfalls": [
-  "A stroke in a young patient with neck pain is a dissection; do not attribute it to migraine",
-  "Lobar hemorrhage in the elderly needs SWI for microbleeds before anticoagulation is ever considered again"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    206
-   ]
+  "meshIds": [
+    "arteries-mra-atlas",
+    "artery-mca-l",
+    "artery-mca-r",
+    "artery-basilar",
+    "putamen-l",
+    "putamen-r",
+    "sinus-superior-sagittal",
+    "sinus-transverse-l",
+    "sinus-transverse-r"
+  ],
+  "related": {
+    "structureIds": [
+      "artery-mca",
+      "artery-internal-carotid",
+      "artery-basilar",
+      "arteries-lenticulostriate",
+      "circle-of-willis",
+      "sinus-superior-sagittal",
+      "veins-superficial-cerebral",
+      "dura-mater"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-mca-stem-infarct",
+      "syn-lacunar-pure-motor",
+      "syn-basilar-occlusion",
+      "syn-subarachnoid-hemorrhage",
+      "syn-cerebral-venous-sinus-thrombosis",
+      "syn-epidural-hematoma",
+      "syn-subdural-hematoma",
+      "syn-pontine-hemorrhage",
+      "syn-watershed-infarct"
+    ],
+    "topicIds": [
+      "topic-neuroimaging-basics",
+      "topic-headache-localization"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    485
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    422,
-    430
-   ]
+  "pearls": [
+    "Time is brain: every minute of a large vessel occlusion costs nearly two million neurons",
+    "A thunderclap headache with a third nerve palsy is a posterior communicating aneurysm until the CTA is done",
+    "A cerebellar hemorrhage over three centimeters goes to the operating theater, not the ward"
+  ],
+  "pitfalls": [
+    "A stroke in a young patient with neck pain is a dissection; do not attribute it to migraine",
+    "Lobar hemorrhage in the elderly needs SWI for microbleeds before anticoagulation is ever considered again"
+  ],
+  "citations": [
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-intracranial-hemorrhage-overview",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-hemorrhagic-stroke-overview",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "stroke",
+    "hemorrhage",
+    "vascular"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "Non-contrast CT first (hemorrhage, early ischemic signs, ASPECTS), then CTA of the arch-to-vertex vessels and CT perfusion or MRI with DWI for the core and penumbra; MRV for venous thrombosis; SWI for microbleeds and amyloid angiopathy; DSA for aneurysms and malformations.",
+    "pathology": [
+      {
+        "pathology": "Large vessel occlusion with penumbra",
+        "modality": "CT perfusion",
+        "finding": "Small core (low cerebral blood volume) with a larger area of prolonged time-to-peak; the mismatch is the tissue thrombectomy can save.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Hypertensive putaminal hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense hematoma in the putamen extending into the capsule and ventricle; a spot sign on CTA predicts expansion.",
+        "sequence": "CT non-contrast",
+        "timing": "Repeat CT at 6 hours for expansion"
+      },
+      {
+        "pathology": "Cerebral amyloid angiopathy",
+        "modality": "MRI",
+        "finding": "Lobar hemorrhage with multiple cortical microbleeds and cortical superficial siderosis on SWI in an elderly patient.",
+        "sequence": "SWI"
+      },
+      {
+        "pathology": "Aneurysmal subarachnoid hemorrhage with vasospasm",
+        "modality": "CTA",
+        "finding": "Cisternal blood on CT, an aneurysm on CTA, and on days 4-14 narrowing of the proximal arteries with new perfusion deficits.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Cerebral venous sinus thrombosis",
+        "modality": "MRV",
+        "finding": "Absent flow in the sagittal or transverse sinus with parasagittal or temporal hemorrhagic venous infarcts.",
+        "sequence": "n/a"
+      }
+    ]
   }
- ],
- "tags": [
-  "stroke",
-  "hemorrhage",
-  "vascular"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "Non-contrast CT first (hemorrhage, early ischemic signs, ASPECTS), then CTA of the arch-to-vertex vessels and CT perfusion or MRI with DWI for the core and penumbra; MRV for venous thrombosis; SWI for microbleeds and amyloid angiopathy; DSA for aneurysms and malformations.",
-  "pathology": [
-   {
-    "pathology": "Large vessel occlusion with penumbra",
-    "modality": "CT perfusion",
-    "finding": "Small core (low cerebral blood volume) with a larger area of prolonged time-to-peak; the mismatch is the tissue thrombectomy can save.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Hypertensive putaminal hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense hematoma in the putamen extending into the capsule and ventricle; a spot sign on CTA predicts expansion.",
-    "sequence": "CT non-contrast",
-    "timing": "Repeat CT at 6 hours for expansion"
-   },
-   {
-    "pathology": "Cerebral amyloid angiopathy",
-    "modality": "MRI",
-    "finding": "Lobar hemorrhage with multiple cortical microbleeds and cortical superficial siderosis on SWI in an elderly patient.",
-    "sequence": "SWI"
-   },
-   {
-    "pathology": "Aneurysmal subarachnoid hemorrhage with vasospasm",
-    "modality": "CTA",
-    "finding": "Cisternal blood on CT, an aneurysm on CTA, and on days 4-14 narrowing of the proximal arteries with new perfusion deficits.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Cerebral venous sinus thrombosis",
-    "modality": "MRV",
-    "finding": "Absent flow in the sagittal or transverse sinus with parasagittal or temporal hemorrhagic venous infarcts.",
-    "sequence": "n/a"
-   }
-  ]
- }
 }

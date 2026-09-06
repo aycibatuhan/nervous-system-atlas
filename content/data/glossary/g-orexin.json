@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-orexin",
- "term": "Orexin (hypocretin)",
- "definition": "A peptide made by lateral hypothalamic neurons that stabilizes wakefulness by exciting the arousal nuclei; loss of these neurons causes narcolepsy type 1 with cataplexy and low CSF hypocretin.",
- "related": [
-  "g-cataplexy",
-  "g-ascending-arousal-system"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-orexin",
+  "term": "Orexin (hypocretin)",
+  "definition": "A peptide made by lateral hypothalamic neurons that stabilizes wakefulness by exciting the arousal nuclei; loss of these neurons causes narcolepsy type 1 with cataplexy and low CSF hypocretin.",
+  "related": [
+    "g-cataplexy",
+    "g-ascending-arousal-system"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cataplexy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-pediatric-narcolepsy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    }
+  ]
 }

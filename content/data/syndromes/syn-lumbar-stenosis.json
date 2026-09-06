@@ -1,130 +1,134 @@
 {
- "kind": "syndrome",
- "id": "syn-lumbar-stenosis",
- "name": "Lumbar spinal stenosis (neurogenic claudication)",
- "eponyms": [
-  "neurogenic intermittent claudication"
- ],
- "category": "compressive",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cauda-equina",
-   "roots-l2-s1",
-   "spinal-nerve-root-dermatome"
+  "kind": "syndrome",
+  "id": "syn-lumbar-stenosis",
+  "name": "Lumbar spinal stenosis (neurogenic claudication)",
+  "eponyms": [
+    "neurogenic intermittent claudication"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -180
+  "category": "compressive",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cauda-equina",
+      "roots-l2-s1",
+      "spinal-nerve-root-dermatome"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 10
- },
- "presentation": "An older patient reports that walking brings on aching, heaviness and tingling in the buttocks and legs that force them to stop after a few hundred meters, and that the symptoms fade over minutes when they sit or lean forward on a shopping trolley; walking uphill and cycling are easier than walking downhill. At rest the examination is nearly normal, with mild reflex loss at most, and the pedal pulses are present. The distance walked before symptoms shrinks over years.",
- "deficits": [
-  {
-   "modality": "pain",
-   "side": "bilateral",
-   "distribution": "buttocks, thighs and calves, often asymmetric",
-   "sign": "Neurogenic claudication: pain and paresthesias on standing and walking, relieved by sitting and lumbar flexion",
-   "substrate": "cauda-equina"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -180
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "legs",
-   "sign": "Weakness or heaviness after walking; mild fixed weakness (foot drop) in advanced cases",
-   "substrate": "roots-l2-s1"
+  "presentation": "An older patient reports that walking brings on aching, heaviness and tingling in the buttocks and legs that force them to stop after a few hundred meters, and that the symptoms fade over minutes when they sit or lean forward on a shopping trolley; walking uphill and cycling are easier than walking downhill. At rest the examination is nearly normal, with mild reflex loss at most, and the pedal pulses are present. The distance walked before symptoms shrinks over years.",
+  "deficits": [
+    {
+      "modality": "pain",
+      "side": "bilateral",
+      "distribution": "buttocks, thighs and calves, often asymmetric",
+      "sign": "Neurogenic claudication: pain and paresthesias on standing and walking, relieved by sitting and lumbar flexion",
+      "substrate": "cauda-equina"
+    },
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "legs",
+      "sign": "Weakness or heaviness after walking; mild fixed weakness (foot drop) in advanced cases",
+      "substrate": "roots-l2-s1"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "ankles and knees",
+      "sign": "Reduced or absent ankle reflexes, sometimes after exercise only",
+      "substrate": "roots-l2-s1"
+    },
+    {
+      "modality": "sphincter",
+      "side": "bilateral",
+      "distribution": "bladder (late)",
+      "sign": "Urgency or retention with severe central stenosis",
+      "substrate": "cauda-equina"
+    }
+  ],
+  "reasoning": "Degenerative narrowing of the lumbar canal by disc bulging, facet joint hypertrophy and a thickened ligamentum flavum, usually at L4–L5 and L3–L4, compresses the cauda equina and its blood supply. The canal is narrowest in extension, when the ligamentum flavum buckles inward and the disc bulges, and widest in flexion, so standing and walking, which extend the spine, provoke the symptoms and sitting, bending forward and cycling relieve them, the opposite of the vascular claudication that depends only on muscle work and is relieved by standing still. The roots of the cauda equina are peripheral nerve roots, so the deficit when it appears is lower motor neuron and radicular, with areflexia and dermatomal or multiradicular sensory symptoms, bilateral because the stenosis is central but often asymmetric, and there is no crossing to reason about because the lesion is below the cord. The intermittent nature of the symptoms is attributed to venous congestion and ischemia of the compressed roots during standing, which resolve on flexion, so the resting examination is often normal and a walk down the corridor before re-examination is the most useful bedside test. Lateral recess and foraminal stenosis produce a single-root picture instead, and severe central stenosis can progress to a cauda equina syndrome.",
+  "imagingFindings": [
+    {
+      "pathology": "Central lumbar stenosis",
+      "modality": "MRI",
+      "finding": "Trefoil canal with obliteration of the CSF around the cauda equina, ligamentum flavum hypertrophy and facet arthropathy at one or more levels on axial T2; redundant, tortuous roots above the stenosis.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Degenerative spondylolisthesis",
+      "modality": "CT",
+      "finding": "Forward slip of L4 on L5 with facet arthropathy narrowing the canal; upright or flexion-extension views show instability.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Often normal at rest; multiradicular chronic denervation in advanced cases, useful to exclude polyneuropathy.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Degenerative spondylosis with facet and ligamentum flavum hypertrophy",
+    "Degenerative spondylolisthesis",
+    "Congenitally narrow canal",
+    "Epidural lipomatosis",
+    "Ankylosing spondylitis, Paget disease"
+  ],
+  "mimics": [
+    {
+      "name": "Vascular claudication",
+      "howToDistinguish": "Calf pain with a fixed walking distance, relieved by standing still, absent pulses; ABI reduced"
+    },
+    {
+      "name": "Hip osteoarthritis",
+      "howToDistinguish": "Groin pain with hip rotation, limited range"
+    },
+    {
+      "name": "Peripheral neuropathy",
+      "howToDistinguish": "Constant distal sensory loss unrelated to posture"
+    },
+    {
+      "name": "Cervical or thoracic myelopathy",
+      "howToDistinguish": "Spastic gait with upper motor neuron signs"
+    }
+  ],
+  "management": [
+    "MRI of the lumbar spine correlated with the symptoms; walking test before re-examination",
+    "Physiotherapy in flexion, analgesia, epidural steroid injection for temporary relief",
+    "Decompressive laminectomy, with fusion when there is spondylolisthesis, for disabling claudication"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lumbar-spinal-stenosis",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-intermittent-claudication",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinal-stenosis-and-neurogenic-claudication",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -180
+    },
+    "label": "lumbar canal at L3–L5"
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "ankles and knees",
-   "sign": "Reduced or absent ankle reflexes, sometimes after exercise only",
-   "substrate": "roots-l2-s1"
-  },
-  {
-   "modality": "sphincter",
-   "side": "bilateral",
-   "distribution": "bladder (late)",
-   "sign": "Urgency or retention with severe central stenosis",
-   "substrate": "cauda-equina"
-  }
- ],
- "reasoning": "Degenerative narrowing of the lumbar canal by disc bulging, facet joint hypertrophy and a thickened ligamentum flavum, usually at L4–L5 and L3–L4, compresses the cauda equina and its blood supply. The canal is narrowest in extension, when the ligamentum flavum buckles inward and the disc bulges, and widest in flexion, so standing and walking, which extend the spine, provoke the symptoms and sitting, bending forward and cycling relieve them, the opposite of the vascular claudication that depends only on muscle work and is relieved by standing still. The roots of the cauda equina are peripheral nerve roots, so the deficit when it appears is lower motor neuron and radicular, with areflexia and dermatomal or multiradicular sensory symptoms, bilateral because the stenosis is central but often asymmetric, and there is no crossing to reason about because the lesion is below the cord. The intermittent nature of the symptoms is attributed to venous congestion and ischemia of the compressed roots during standing, which resolve on flexion, so the resting examination is often normal and a walk down the corridor before re-examination is the most useful bedside test. Lateral recess and foraminal stenosis produce a single-root picture instead, and severe central stenosis can progress to a cauda equina syndrome.",
- "imagingFindings": [
-  {
-   "pathology": "Central lumbar stenosis",
-   "modality": "MRI",
-   "finding": "Trefoil canal with obliteration of the CSF around the cauda equina, ligamentum flavum hypertrophy and facet arthropathy at one or more levels on axial T2; redundant, tortuous roots above the stenosis.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Degenerative spondylolisthesis",
-   "modality": "CT",
-   "finding": "Forward slip of L4 on L5 with facet arthropathy narrowing the canal; upright or flexion-extension views show instability.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Often normal at rest; multiradicular chronic denervation in advanced cases, useful to exclude polyneuropathy.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Degenerative spondylosis with facet and ligamentum flavum hypertrophy",
-  "Degenerative spondylolisthesis",
-  "Congenitally narrow canal",
-  "Epidural lipomatosis",
-  "Ankylosing spondylitis, Paget disease"
- ],
- "mimics": [
-  {
-   "name": "Vascular claudication",
-   "howToDistinguish": "Calf pain with a fixed walking distance, relieved by standing still, absent pulses; ABI reduced"
-  },
-  {
-   "name": "Hip osteoarthritis",
-   "howToDistinguish": "Groin pain with hip rotation, limited range"
-  },
-  {
-   "name": "Peripheral neuropathy",
-   "howToDistinguish": "Constant distal sensory loss unrelated to posture"
-  },
-  {
-   "name": "Cervical or thoracic myelopathy",
-   "howToDistinguish": "Spastic gait with upper motor neuron signs"
-  }
- ],
- "management": [
-  "MRI of the lumbar spine correlated with the symptoms; walking test before re-examination",
-  "Physiotherapy in flexion, analgesia, epidural steroid injection for temporary relief",
-  "Decompressive laminectomy, with fusion when there is spondylolisthesis, for disabling claudication"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    159,
-    159
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -180
-  },
-  "label": "lumbar canal at L3–L5"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

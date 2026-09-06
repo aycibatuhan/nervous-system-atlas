@@ -1,116 +1,108 @@
 {
- "kind": "pathway",
- "id": "pathway-anterior-corticospinal",
- "name": "Anterior corticospinal tract",
- "synonyms": [
-  "ventral corticospinal tract",
-  "uncrossed pyramidal tract"
- ],
- "type": "descending",
- "modality": "axial and proximal muscle control",
- "summary": "The 10–15% of pyramidal fibers that do not cross in the medulla continue down the anterior funiculus beside the anterior median fissure as the anterior (ventral) corticospinal tract. Most of them cross at their segment of termination through the anterior white commissure to reach motor neurons of the trunk and proximal limb muscles, and some end bilaterally, so axial muscles have bilateral cortical control. This is why trunk and neck strength are relatively preserved in hemiplegia and why bilateral corticospinal lesions are needed to paralyze the trunk.",
- "origin": {
-  "structures": [
-   "gyrus-precentral",
-   "cortex-premotor-sma"
+  "kind": "pathway",
+  "id": "pathway-anterior-corticospinal",
+  "name": "Anterior corticospinal tract",
+  "synonyms": [
+    "ventral corticospinal tract",
+    "uncrossed pyramidal tract"
   ],
-  "note": "Mainly from the trunk and proximal limb areas of the motor cortex and the supplementary motor area."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Pyramidal cell in the motor cortex",
-   "synapse": "on spinal interneurons and medial motor neurons after crossing in the anterior white commissure"
+  "type": "descending",
+  "modality": "axial and proximal muscle control",
+  "summary": "The 10–15% of pyramidal fibers that do not cross in the medulla continue down the anterior funiculus beside the anterior median fissure as the anterior (ventral) corticospinal tract. Most of them cross at their segment of termination through the anterior white commissure to reach motor neurons of the trunk and proximal limb muscles, and some end bilaterally, so axial muscles have bilateral cortical control. This is why trunk and neck strength are relatively preserved in hemiplegia and why bilateral corticospinal lesions are needed to paralyze the trunk.",
+  "origin": {
+    "structures": [
+      "gyrus-precentral",
+      "cortex-premotor-sma"
+    ],
+    "note": "Mainly from the trunk and proximal limb areas of the motor cortex and the supplementary motor area."
   },
-  {
-   "order": 2,
-   "cellBody": "Anterior horn cell (medial motor column)",
-   "synapse": "neuromuscular junction"
-  }
- ],
- "decussation": {
-  "level": "Anterior white commissure at the segmental level",
-  "structureId": "spinal-white-columns",
-  "note": "Uncrossed in the medulla; crosses segmentally, some fibers remain uncrossed."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "gyrus-precentral",
-   "meshId": "gyrus-precentral-l",
-   "sideRelativeToOrigin": "ipsilateral"
-  },
-  {
-   "order": 2,
-   "structureId": "internal-capsule",
-   "meshId": "internal-capsule-l",
-   "sideRelativeToOrigin": "ipsilateral"
-  },
-  {
-   "order": 3,
-   "structureId": "pyramid",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "passes the decussation uncrossed"
-  },
-  {
-   "order": 4,
-   "structureId": "spinal-white-columns",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "anterior funiculus beside the anterior median fissure, cervical and upper thoracic segments mainly"
-  },
-  {
-   "order": 5,
-   "structureId": "spinal-grey-anterior-horn",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "medial motor column via the anterior white commissure"
-  }
- ],
- "termination": "Medial motor neurons and interneurons of the cervical and upper thoracic cord for the neck, trunk and proximal limb muscles, bilaterally.",
- "meshIds": [
-  "tract-corticospinal-l",
-  "tract-corticospinal-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Unilateral lesion anywhere",
-   "effects": "Little detectable deficit because of the bilateral projection",
-   "side": "bilateral"
-  },
-  {
-   "level": "Bilateral lesions (bilateral strokes, cervical myelopathy)",
-   "effects": "Loss of trunk control and postural stability with truncal weakness",
-   "side": "bilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Axial muscles have bilateral cortical control; unilateral strokes spare trunk and neck strength",
-   "The tract mostly ends in the cervical and upper thoracic cord and is often absent below"
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Pyramidal cell in the motor cortex",
+      "synapse": "on spinal interneurons and medial motor neurons after crossing in the anterior white commissure"
+    },
+    {
+      "order": 2,
+      "cellBody": "Anterior horn cell (medial motor column)",
+      "synapse": "neuromuscular junction"
+    }
   ],
-  "syndromes": [
-   "syn-complete-transection-spinal-shock"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    156
-   ]
+  "decussation": {
+    "level": "Anterior white commissure at the segmental level",
+    "structureId": "spinal-white-columns",
+    "note": "Uncrossed in the medulla; crosses segmentally, some fibers remain uncrossed."
   },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    36
-   ]
-  }
- ],
- "status": "draft"
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "gyrus-precentral",
+      "meshId": "gyrus-precentral-l",
+      "sideRelativeToOrigin": "ipsilateral"
+    },
+    {
+      "order": 2,
+      "structureId": "internal-capsule",
+      "meshId": "internal-capsule-l",
+      "sideRelativeToOrigin": "ipsilateral"
+    },
+    {
+      "order": 3,
+      "structureId": "pyramid",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "passes the decussation uncrossed"
+    },
+    {
+      "order": 4,
+      "structureId": "spinal-white-columns",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "anterior funiculus beside the anterior median fissure, cervical and upper thoracic segments mainly"
+    },
+    {
+      "order": 5,
+      "structureId": "spinal-grey-anterior-horn",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "medial motor column via the anterior white commissure"
+    }
+  ],
+  "termination": "Medial motor neurons and interneurons of the cervical and upper thoracic cord for the neck, trunk and proximal limb muscles, bilaterally.",
+  "meshIds": [
+    "tract-corticospinal-l",
+    "tract-corticospinal-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Unilateral lesion anywhere",
+      "effects": "Little detectable deficit because of the bilateral projection",
+      "side": "bilateral"
+    },
+    {
+      "level": "Bilateral lesions (bilateral strokes, cervical myelopathy)",
+      "effects": "Loss of trunk control and postural stability with truncal weakness",
+      "side": "bilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Axial muscles have bilateral cortical control; unilateral strokes spare trunk and neck strength",
+      "The tract mostly ends in the cervical and upper thoracic cord and is often absent below"
+    ],
+    "syndromes": [
+      "syn-complete-transection-spinal-shock"
+    ]
+  },
+  "citations": [
+    {
+      "ref": "sp-corticospinal-cord-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-pyramidal-tract",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

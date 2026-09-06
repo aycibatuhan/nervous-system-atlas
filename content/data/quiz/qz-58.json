@@ -1,59 +1,67 @@
 {
- "kind": "quiz",
- "id": "qz-58",
- "type": "localize",
- "vignette": "A 19-year-old man has a shoulder injury in rugby. Afterward he cannot abduct the shoulder or flex the elbow, sensation is reduced over the lateral arm and forearm, and the scapula wings laterally when he braces his shoulders back. EMG shows denervation of the rhomboids.",
- "stem": "Which is the most likely site of injury?",
- "options": [
-  {
-   "key": "A",
-   "text": "Upper trunk of the brachial plexus"
-  },
-  {
-   "key": "B",
-   "text": "C5 and C6 roots (preganglionic)"
-  },
-  {
-   "key": "C",
-   "text": "Musculocutaneous nerve"
-  },
-  {
-   "key": "D",
-   "text": "Axillary nerve"
-  },
-  {
-   "key": "E",
-   "text": "Lateral cord"
-  }
- ],
- "answer": "B",
- "explanation": "The pattern is an Erb-type upper plexus picture, but rhomboid denervation means the dorsal scapular nerve, which leaves the C5 root before the trunk forms, is involved, placing the lesion at the roots; a preganglionic root avulsion carries a poor prognosis and changes the surgical plan.",
- "targets": {
-  "structureIds": [
-   "nerve-dorsal-scapular",
-   "plexus-brachial",
-   "nerve-lateral-antebrachial-cutaneous"
+  "kind": "quiz",
+  "id": "qz-58",
+  "type": "localize",
+  "vignette": "A 19-year-old man has a shoulder injury in rugby. Afterward he cannot abduct the shoulder or flex the elbow, sensation is reduced over the lateral arm and forearm, and the scapula wings laterally when he braces his shoulders back. EMG shows denervation of the rhomboids.",
+  "stem": "Which is the most likely site of injury?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Upper trunk of the brachial plexus"
+    },
+    {
+      "key": "B",
+      "text": "C5 and C6 roots (preganglionic)"
+    },
+    {
+      "key": "C",
+      "text": "Musculocutaneous nerve"
+    },
+    {
+      "key": "D",
+      "text": "Axillary nerve"
+    },
+    {
+      "key": "E",
+      "text": "Lateral cord"
+    }
   ],
-  "syndromeIds": [
-   "syn-erb-duchenne",
-   "syn-radiculopathy-cervical"
+  "answer": "B",
+  "explanation": "The pattern is an Erb-type upper plexus picture, but rhomboid denervation means the dorsal scapular nerve, which leaves the C5 root before the trunk forms, is involved, placing the lesion at the roots; a preganglionic root avulsion carries a poor prognosis and changes the surgical plan.",
+  "targets": {
+    "structureIds": [
+      "nerve-dorsal-scapular",
+      "plexus-brachial",
+      "nerve-lateral-antebrachial-cutaneous"
+    ],
+    "syndromeIds": [
+      "syn-erb-duchenne",
+      "syn-radiculopathy-cervical"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "dorsal-scapular-nerve-l",
+    "brachial-plexus-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "dorsal-scapular-nerve-l",
-  "brachial-plexus-l"
- ],
- "difficulty": "3",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
-  }
- ],
- "original": true
+  "difficulty": "3",
+  "citations": [
+    {
+      "ref": "sp-erb-palsy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cervical-radiculopathy",
+      "section": "History and Physical"
+    }
+  ],
+  "original": true
 }

@@ -1,166 +1,146 @@
 {
- "kind": "structure",
- "id": "territory-mca-parietal",
- "name": "MCA territory, parietal",
- "synonyms": [
-  "parietal MCA domain",
-  "posterior parietal and angular artery territory"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-mca-parietal-l",
-  "territory-mca-parietal-r"
- ],
- "summary": "The parietal MCA territory is the lateral parietal lobe supplied by the anterior and posterior parietal and angular branches of the middle cerebral artery: the postcentral gyrus below the leg area, the supramarginal and angular gyri and the lateral superior parietal lobule. It is the domain of cortical sensory loss, of neglect and anosognosia on the right, of Gerstmann syndrome and conduction aphasia on the left, and of the optic radiation fibers that give an inferior quadrantanopia. Its posterior edge with the PCA territory is the parieto-occipital watershed, the classic site of border-zone infarction in hypotension and carotid disease.",
- "anatomy": {
-  "location": "Lateral parietal convexity behind the central sulcus, including the postcentral gyrus (except the medial leg area), the supramarginal and angular gyri and the lateral superior parietal lobule, with the underlying white matter of the parietal corona radiata and part of the stratum sagittale; bounded above by the ACA territory, behind by the PCA territory and below by the temporal MCA territory at the Sylvian fissure.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Anterior and posterior parietal and angular arteries of the MCA",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-mca-parietal",
+  "name": "MCA territory, parietal",
+  "synonyms": [
+    "parietal MCA domain",
+    "posterior parietal and angular artery territory"
   ],
-  "efferents": [
-   {
-    "to": "Superior anastomotic vein of Trolard and the superior sagittal sinus",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-mca-parietal-l",
+    "territory-mca-parietal-r"
   ],
-  "pathways": []
- },
- "function": "The territory holds the primary somatosensory cortex for the face and arm, the secondary somatosensory cortex, the inferior parietal association cortex of language, praxis, calculation and attention, and the superior parietal cortex of spatial and visuomotor function, so its infarction produces cortical sensory loss and astereognosis, ideomotor apraxia, neglect or Gerstmann syndrome, and a field defect from the parietal fibers of the optic radiation. It is supplied by the posterior parietal and angular arteries, which arise from either division of the MCA, and its convexity has leptomeningeal collaterals from the PCA and ACA that make it both the site of and the protection against watershed ischemia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division",
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-mca-parietal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-mca-parietal-l"
+  "summary": "The parietal MCA territory is the lateral parietal lobe supplied by the anterior and posterior parietal and angular branches of the middle cerebral artery: the postcentral gyrus below the leg area, the supramarginal and angular gyri and the lateral superior parietal lobule. It is the domain of cortical sensory loss, of neglect and anosognosia on the right, of Gerstmann syndrome and conduction aphasia on the left, and of the optic radiation fibers that give an inferior quadrantanopia. Its posterior edge with the PCA territory is the parieto-occipital watershed, the classic site of border-zone infarction in hypotension and carotid disease.",
+  "anatomy": {
+    "location": "Lateral parietal convexity behind the central sulcus, including the postcentral gyrus (except the medial leg area), the supramarginal and angular gyri and the lateral superior parietal lobule, with the underlying white matter of the parietal corona radiata and part of the stratum sagittale; bounded above by the ACA territory, behind by the PCA territory and below by the temporal MCA territory at the Sylvian fissure.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior and posterior parietal and angular arteries of the MCA",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superior anastomotic vein of Trolard and the superior sagittal sinus",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The territory holds the primary somatosensory cortex for the face and arm, the secondary somatosensory cortex, the inferior parietal association cortex of language, praxis, calculation and attention, and the superior parietal cortex of spatial and visuomotor function, so its infarction produces cortical sensory loss and astereognosis, ideomotor apraxia, neglect or Gerstmann syndrome, and a field defect from the parietal fibers of the optic radiation. It is supplied by the posterior parietal and angular arteries, which arise from either division of the MCA, and its convexity has leptomeningeal collaterals from the PCA and ACA that make it both the site of and the protection against watershed ischemia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division",
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-mca-parietal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-mca-parietal-l"
+        },
+        "label": "parietal MCA territory on the lateral parietal lobe"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-mca-parietal-r"
+        },
+        "label": "parietal MCA domain above the Sylvian fissure"
+      }
+    ],
+    "normalAppearance": "On the overlay the parietal MCA domain covers the lateral parietal convexity behind the central sulcus down to the Sylvian fissure; the angular gyrus marks its posterior limit.",
+    "pathology": [
+      {
+        "pathology": "Parietal MCA branch infarct",
+        "modality": "MRI",
+        "finding": "Cortical restricted diffusion of the inferior parietal lobule with neglect (right) or Gerstmann syndrome and conduction aphasia (left).",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Parieto-occipital watershed infarct",
+        "modality": "MRI",
+        "finding": "Wedge-shaped restricted diffusion at the MCA-PCA border zone after hypotension or with carotid occlusion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Bilateral parieto-occipital atrophy mimicking the distribution of the parietal territory; no diffusion change.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral cortical sensory loss and astereognosis",
+        "side": "contralateral",
+        "mechanism": "Postcentral and parietal opercular infarction"
+      },
+      {
+        "deficit": "Neglect, anosognosia and dressing apraxia (right)",
+        "side": "contralateral",
+        "mechanism": "Inferior parietal attention cortex infarction"
+      },
+      {
+        "deficit": "Gerstmann syndrome and conduction aphasia (left)",
+        "side": "n/a",
+        "mechanism": "Angular and supramarginal gyrus infarction"
+      },
+      {
+        "deficit": "Contralateral inferior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Parietal optic radiation fibers"
+      }
+    ],
+    "examination": [
+      "Two-point discrimination, graphesthesia and stereognosis",
+      "Line bisection, cancellation and extinction",
+      "Finger naming, right-left orientation, calculation and writing"
+    ],
+    "syndromes": [
+      "syn-hemineglect",
+      "syn-gerstmann",
+      "syn-aphasia-conduction-global",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "The parietal territory is where the two MCA divisions and the PCA meet: the border zone of the border zones",
+      "Right parietal strokes deny themselves; test extinction because the patient will not report it",
+      "A quadrantanopia with sensory loss is parietal, not occipital"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
     },
-    "label": "parietal MCA territory on the lateral parietal lobe"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-mca-parietal-r"
+    {
+      "ref": "sp-postcentral-gyrus",
+      "section": "Structure and Function"
     },
-    "label": "parietal MCA domain above the Sylvian fissure"
-   }
+    {
+      "ref": "sp-spatial-neglect",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "On the overlay the parietal MCA domain covers the lateral parietal convexity behind the central sulcus down to the Sylvian fissure; the angular gyrus marks its posterior limit.",
-  "pathology": [
-   {
-    "pathology": "Parietal MCA branch infarct",
-    "modality": "MRI",
-    "finding": "Cortical restricted diffusion of the inferior parietal lobule with neglect (right) or Gerstmann syndrome and conduction aphasia (left).",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Parieto-occipital watershed infarct",
-    "modality": "MRI",
-    "finding": "Wedge-shaped restricted diffusion at the MCA-PCA border zone after hypotension or with carotid occlusion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Bilateral parieto-occipital atrophy mimicking the distribution of the parietal territory; no diffusion change.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral cortical sensory loss and astereognosis",
-    "side": "contralateral",
-    "mechanism": "Postcentral and parietal opercular infarction"
-   },
-   {
-    "deficit": "Neglect, anosognosia and dressing apraxia (right)",
-    "side": "contralateral",
-    "mechanism": "Inferior parietal attention cortex infarction"
-   },
-   {
-    "deficit": "Gerstmann syndrome and conduction aphasia (left)",
-    "side": "n/a",
-    "mechanism": "Angular and supramarginal gyrus infarction"
-   },
-   {
-    "deficit": "Contralateral inferior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Parietal optic radiation fibers"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "Two-point discrimination, graphesthesia and stereognosis",
-   "Line bisection, cancellation and extinction",
-   "Finger naming, right-left orientation, calculation and writing"
-  ],
-  "syndromes": [
-   "syn-hemineglect",
-   "syn-gerstmann",
-   "syn-aphasia-conduction-global",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "The parietal territory is where the two MCA divisions and the PCA meet: the border zone of the border zones",
-   "Right parietal strokes deny themselves; test extinction because the patient will not report it",
-   "A quadrantanopia with sensory loss is parietal, not occipital"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level1",
- "parent": "territory-mca"
+  "status": "draft",
+  "subsystem": "level1",
+  "parent": "territory-mca"
 }

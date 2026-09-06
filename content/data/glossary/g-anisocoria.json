@@ -1,11 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-anisocoria",
- "term": "Anisocoria",
- "definition": "Unequal pupils. Anisocoria greater in the dark indicates a sympathetic (Horner) lesion on the side of the smaller pupil; greater in the light, a parasympathetic lesion on the side of the larger pupil; equal in both, physiologic.",
- "related": [
-  "g-rapd",
-  "g-horner-syndrome"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-anisocoria",
+  "term": "Anisocoria",
+  "definition": "Unequal pupils. Anisocoria greater in the dark indicates a sympathetic (Horner) lesion on the side of the smaller pupil; greater in the light, a parasympathetic lesion on the side of the larger pupil; equal in both, physiologic.",
+  "related": [
+    "g-rapd",
+    "g-horner-syndrome"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anisocoria",
+      "section": "Pathophysiology"
+    }
+  ]
 }

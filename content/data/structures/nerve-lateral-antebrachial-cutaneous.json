@@ -1,133 +1,125 @@
 {
- "kind": "structure",
- "id": "nerve-lateral-antebrachial-cutaneous",
- "name": "Lateral antebrachial cutaneous nerve",
- "synonyms": [
-  "lateral cutaneous nerve of the forearm"
- ],
- "system": "peripheral",
- "meshIds": [
-  "lateral-antebrachial-cutaneous-nerve-l",
-  "lateral-antebrachial-cutaneous-nerve-r"
- ],
- "summary": "The lateral antebrachial cutaneous nerve is the sensory termination of the musculocutaneous nerve (C5, C6) that emerges lateral to the biceps tendon at the elbow and supplies the skin of the lateral forearm from the elbow to the base of the thumb. Its loss accompanies musculocutaneous nerve injury and upper trunk plexus lesions (Erb palsy) and its sensory potential separates a C6 radiculopathy (normal potential) from an upper trunk plexopathy (reduced potential); it is compressed by the biceps aponeurosis in athletes and injured during venepuncture of the cephalic vein.",
- "anatomy": {
-  "location": "Continues the musculocutaneous nerve after it has supplied the coracobrachialis, biceps and brachialis, emerging between the biceps and brachialis lateral to the biceps tendon just above the elbow, piercing the deep fascia and dividing into anterior and posterior branches that run down the lateral forearm with the cephalic vein to the wrist and the thenar eminence.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Purely sensory, it carries sensation from the lateral forearm through the musculocutaneous nerve, the lateral cord and the upper trunk to the C6 dorsal root ganglion (with a C5 contribution); the dermatome overlap with C6 is close, so its sensory potential is preserved in a C6 root lesion (proximal to the ganglion) and lost in an upper trunk or lateral cord lesion, the electrophysiological basis of localizing lateral arm numbness. It is entrapped where it pierces the fascia beside the biceps tendon, producing lateral forearm pain and numbness with elbow extension and pronation, and it is at risk in cephalic vein cannulation and elbow surgery.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-lateral-antebrachial-cutaneous",
+  "name": "Lateral antebrachial cutaneous nerve",
+  "synonyms": [
+    "lateral cutaneous nerve of the forearm"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "lateral-antebrachial-cutaneous-nerve-l"
-    },
-    "label": "lateral antebrachial cutaneous nerve emerging beside the biceps tendon"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "lateral-antebrachial-cutaneous-nerve-r"
-    },
-    "label": "nerve with the cephalic vein in the lateral forearm"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "lateral-antebrachial-cutaneous-nerve-l",
+    "lateral-antebrachial-cutaneous-nerve-r"
   ],
-  "normalAppearance": "A small nerve emerging lateral to the biceps tendon at the elbow on ultrasound, running with the cephalic vein; not seen on routine MRI. Territory: lateral forearm skin.",
-  "pathology": [
-   {
-    "pathology": "Musculocutaneous neuropathy",
-    "modality": "EMG/NCS",
-    "finding": "Reduced lateral antebrachial cutaneous sensory potential with weakness and denervation of the biceps and brachialis; a plexus lesion adds deltoid and supraspinatus involvement.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Upper trunk plexopathy (Erb palsy or neuralgic amyotrophy)",
-    "modality": "MRI",
-    "finding": "Thickening and signal change of the upper trunk with a reduced lateral antebrachial cutaneous potential distinguishing it from a C5-6 radiculopathy.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Entrapment at the biceps aponeurosis",
-    "modality": "US",
-    "finding": "Focal swelling of the nerve where it pierces the fascia lateral to the biceps tendon in a patient with lateral forearm pain on pronation.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Numbness of the lateral forearm",
-    "side": "ipsilateral",
-    "mechanism": "Interruption of the nerve, the musculocutaneous nerve or the lateral cord and upper trunk"
-   },
-   {
-    "deficit": "Lateral forearm pain provoked by elbow extension and pronation",
-    "side": "ipsilateral",
-    "mechanism": "Entrapment beneath the biceps aponeurosis"
-   },
-   {
-    "deficit": "No motor deficit from the cutaneous branch itself",
-    "side": "n/a",
-    "mechanism": "The branch is purely sensory; weakness means the musculocutaneous trunk is involved"
-   }
-  ],
-  "examination": [
-   "Sensation over the lateral forearm compared with the C6 dermatome on the thumb",
-   "Biceps strength and reflex to detect musculocutaneous or upper trunk involvement",
-   "Sensory nerve conduction study to separate root from plexus"
-  ],
-  "syndromes": [
-   "syn-erb-duchenne",
-   "syn-parsonage-turner",
-   "syn-radiculopathy-cervical"
-  ],
-  "pearls": [
-   "A normal lateral antebrachial cutaneous potential with lateral forearm numbness means the lesion is at the C6 root",
-   "Weak biceps and numb lateral forearm is the musculocutaneous nerve; add a weak deltoid and it is the upper trunk",
-   "Lateral forearm pain in a weightlifter is this nerve under the biceps aponeurosis"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The lateral antebrachial cutaneous nerve is the sensory termination of the musculocutaneous nerve (C5, C6) that emerges lateral to the biceps tendon at the elbow and supplies the skin of the lateral forearm from the elbow to the base of the thumb. Its loss accompanies musculocutaneous nerve injury and upper trunk plexus lesions (Erb palsy) and its sensory potential separates a C6 radiculopathy (normal potential) from an upper trunk plexopathy (reduced potential); it is compressed by the biceps aponeurosis in athletes and injured during venepuncture of the cephalic vein.",
+  "anatomy": {
+    "location": "Continues the musculocutaneous nerve after it has supplied the coracobrachialis, biceps and brachialis, emerging between the biceps and brachialis lateral to the biceps tendon just above the elbow, piercing the deep fascia and dividing into anterior and posterior branches that run down the lateral forearm with the cephalic vein to the wrist and the thenar eminence.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Purely sensory, it carries sensation from the lateral forearm through the musculocutaneous nerve, the lateral cord and the upper trunk to the C6 dorsal root ganglion (with a C5 contribution); the dermatome overlap with C6 is close, so its sensory potential is preserved in a C6 root lesion (proximal to the ganglion) and lost in an upper trunk or lateral cord lesion, the electrophysiological basis of localizing lateral arm numbness. It is entrapped where it pierces the fascia beside the biceps tendon, producing lateral forearm pain and numbness with elbow extension and pronation, and it is at risk in cephalic vein cannulation and elbow surgery.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "lateral-antebrachial-cutaneous-nerve-l"
+        },
+        "label": "lateral antebrachial cutaneous nerve emerging beside the biceps tendon"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "lateral-antebrachial-cutaneous-nerve-r"
+        },
+        "label": "nerve with the cephalic vein in the lateral forearm"
+      }
+    ],
+    "normalAppearance": "A small nerve emerging lateral to the biceps tendon at the elbow on ultrasound, running with the cephalic vein; not seen on routine MRI. Territory: lateral forearm skin.",
+    "pathology": [
+      {
+        "pathology": "Musculocutaneous neuropathy",
+        "modality": "EMG/NCS",
+        "finding": "Reduced lateral antebrachial cutaneous sensory potential with weakness and denervation of the biceps and brachialis; a plexus lesion adds deltoid and supraspinatus involvement.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Upper trunk plexopathy (Erb palsy or neuralgic amyotrophy)",
+        "modality": "MRI",
+        "finding": "Thickening and signal change of the upper trunk with a reduced lateral antebrachial cutaneous potential distinguishing it from a C5-6 radiculopathy.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Entrapment at the biceps aponeurosis",
+        "modality": "US",
+        "finding": "Focal swelling of the nerve where it pierces the fascia lateral to the biceps tendon in a patient with lateral forearm pain on pronation.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Numbness of the lateral forearm",
+        "side": "ipsilateral",
+        "mechanism": "Interruption of the nerve, the musculocutaneous nerve or the lateral cord and upper trunk"
+      },
+      {
+        "deficit": "Lateral forearm pain provoked by elbow extension and pronation",
+        "side": "ipsilateral",
+        "mechanism": "Entrapment beneath the biceps aponeurosis"
+      },
+      {
+        "deficit": "No motor deficit from the cutaneous branch itself",
+        "side": "n/a",
+        "mechanism": "The branch is purely sensory; weakness means the musculocutaneous trunk is involved"
+      }
+    ],
+    "examination": [
+      "Sensation over the lateral forearm compared with the C6 dermatome on the thumb",
+      "Biceps strength and reflex to detect musculocutaneous or upper trunk involvement",
+      "Sensory nerve conduction study to separate root from plexus"
+    ],
+    "syndromes": [
+      "syn-erb-duchenne",
+      "syn-parsonage-turner",
+      "syn-radiculopathy-cervical"
+    ],
+    "pearls": [
+      "A normal lateral antebrachial cutaneous potential with lateral forearm numbness means the lesion is at the C6 root",
+      "Weak biceps and numb lateral forearm is the musculocutaneous nerve; add a weak deltoid and it is the upper trunk",
+      "Lateral forearm pain in a weightlifter is this nerve under the biceps aponeurosis"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-musculocutaneous-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-forearm-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C5-C6"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C5-C6"
- }
 }

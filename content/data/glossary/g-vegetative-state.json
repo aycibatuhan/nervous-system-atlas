@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-vegetative-state",
- "term": "Vegetative state (unresponsive wakefulness)",
- "definition": "Wakefulness with sleep-wake cycles, open eyes and reflex movements but no evidence of awareness, after diffuse cortical or thalamic damage with a preserved brainstem; the minimally conscious state shows inconsistent but reproducible signs of awareness.",
- "related": [
-  "g-locked-in-state",
-  "g-brain-death"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    274
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-vegetative-state",
+  "term": "Vegetative state (unresponsive wakefulness)",
+  "definition": "Wakefulness with sleep-wake cycles, open eyes and reflex movements but no evidence of awareness, after diffuse cortical or thalamic damage with a preserved brainstem; the minimally conscious state shows inconsistent but reproducible signs of awareness.",
+  "related": [
+    "g-locked-in-state",
+    "g-brain-death"
+  ],
+  "citations": [
+    {
+      "ref": "sp-coma",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-locked-in-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-brain-death",
+      "section": "Pathophysiology"
+    }
+  ]
 }

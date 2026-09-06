@@ -1,129 +1,121 @@
 {
- "kind": "syndrome",
- "id": "syn-watershed-infarct",
- "name": "Watershed (borderzone) infarction",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "territory-watershed",
-   "artery-internal-carotid",
-   "artery-mca",
-   "corona-radiata"
+  "kind": "syndrome",
+  "id": "syn-watershed-infarct",
+  "name": "Watershed (borderzone) infarction",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "territory-watershed",
+      "artery-internal-carotid",
+      "artery-mca",
+      "corona-radiata"
+    ],
+    "side": "contralateral",
+    "territoryId": "territory-watershed"
+  },
+  "lesionMarker": {
+    "kind": "territory",
+    "meshIds": [
+      "territory-mca-frontal-l",
+      "territory-aca-l"
+    ]
+  },
+  "presentation": "After an episode of hypotension, cardiac arrest or a tight carotid stenosis, a patient develops weakness that involves the proximal arm and thigh more than the hand and foot, a 'man in a barrel' pattern when bilateral. Dominant-hemisphere involvement produces transcortical aphasia in which repetition is strikingly preserved while spontaneous speech or comprehension fails; posterior lesions cause cortical visual problems such as Balint syndrome.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "proximal arm and leg (shoulder and hip)",
+      "sign": "Proximal weakness sparing the hand and foot",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "language",
+      "side": "n/a",
+      "distribution": "dominant hemisphere",
+      "sign": "Transcortical motor or sensory aphasia with preserved repetition",
+      "substrate": "area-broca"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "posterior borderzone",
+      "sign": "Cortical visual dysfunction, Balint features when bilateral",
+      "substrate": "lobule-superior-parietal"
+    },
+    {
+      "modality": "cognitive",
+      "side": "bilateral",
+      "distribution": "internal borderzone",
+      "sign": "Apathy and slowed cognition with bilateral deep white matter infarcts",
+      "substrate": "corona-radiata"
+    }
   ],
-  "side": "contralateral",
-  "territoryId": "territory-watershed"
- },
- "lesionMarker": {
-  "kind": "territory",
-  "meshIds": [
-   "territory-mca-frontal-l",
-   "territory-aca-l"
-  ]
- },
- "presentation": "After an episode of hypotension, cardiac arrest or a tight carotid stenosis, a patient develops weakness that involves the proximal arm and thigh more than the hand and foot, a 'man in a barrel' pattern when bilateral. Dominant-hemisphere involvement produces transcortical aphasia in which repetition is strikingly preserved while spontaneous speech or comprehension fails; posterior lesions cause cortical visual problems such as Balint syndrome.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "proximal arm and leg (shoulder and hip)",
-   "sign": "Proximal weakness sparing the hand and foot",
-   "substrate": "pathway-lateral-corticospinal"
+  "reasoning": "The borderzones are the strips of cortex and white matter at the far ends of two adjacent arterial territories, where perfusion pressure is lowest: the anterior borderzone between the anterior and middle cerebral arteries along the superior frontal convexity, the posterior borderzone between the middle and posterior cerebral arteries in the parieto-occipital region, and the internal borderzone in the corona radiata between the deep perforators and the cortical branches. When systemic pressure falls or a carotid stenosis limits inflow, these strips infarct first. The anterior borderzone sits on the motor homunculus between the leg area (medial) and the face and hand area (lateral), which is the shoulder and hip representation, so the weakness is proximal; corticospinal fibers cross in the medulla, so it is contralateral. The perisylvian language cortex has the richest supply and survives, while the surrounding cortex that feeds it dies, producing the transcortical aphasias with intact repetition. Bilateral posterior borderzone infarcts disconnect the dorsal visual stream and produce simultanagnosia, optic ataxia and ocular apraxia.",
+  "imagingFindings": [
+    {
+      "pathology": "Cortical borderzone infarcts",
+      "modality": "MRI",
+      "finding": "Wedge-shaped restricted diffusion along the ACA–MCA and MCA–PCA boundaries, often bilateral after global hypotension.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Internal borderzone infarcts",
+      "modality": "MRI",
+      "finding": "A chain of small deep white matter infarcts in the corona radiata ('rosary' or 'string of pearls') on the side of a carotid stenosis.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Carotid stenosis",
+      "modality": "CTA",
+      "finding": "High-grade stenosis or occlusion of the ipsilateral internal carotid artery."
+    }
+  ],
+  "commonCauses": [
+    "Cardiac arrest and global hypoperfusion",
+    "High-grade carotid stenosis with a hypotensive episode",
+    "Cardiac surgery and prolonged hypotension"
+  ],
+  "mimics": [
+    {
+      "name": "Embolic multi-territory infarcts",
+      "howToDistinguish": "Random cortical distribution, not confined to boundaries"
+    },
+    {
+      "name": "Hypoxic-ischemic encephalopathy",
+      "howToDistinguish": "Diffuse cortical and deep gray involvement after arrest, rather than strips"
+    },
+    {
+      "name": "Spinal cord lesion",
+      "howToDistinguish": "Bilateral proximal weakness can mimic, but a sensory level and reflex changes distinguish"
+    }
+  ],
+  "management": [
+    "Restore perfusion pressure; avoid aggressive blood pressure lowering",
+    "Evaluate and treat carotid stenosis (endarterectomy or stenting)",
+    "Cardiac and hemodynamic assessment"
+  ],
+  "citations": [
+    {
+      "ref": "sp-carotid-artery-stenosis",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-circle-of-willis",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -25,
+      "y": -10,
+      "z": 45
+    },
+    "label": "anterior borderzone on the superior frontal convexity"
   },
-  {
-   "modality": "language",
-   "side": "n/a",
-   "distribution": "dominant hemisphere",
-   "sign": "Transcortical motor or sensory aphasia with preserved repetition",
-   "substrate": "area-broca"
-  },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "posterior borderzone",
-   "sign": "Cortical visual dysfunction, Balint features when bilateral",
-   "substrate": "lobule-superior-parietal"
-  },
-  {
-   "modality": "cognitive",
-   "side": "bilateral",
-   "distribution": "internal borderzone",
-   "sign": "Apathy and slowed cognition with bilateral deep white matter infarcts",
-   "substrate": "corona-radiata"
-  }
- ],
- "reasoning": "The borderzones are the strips of cortex and white matter at the far ends of two adjacent arterial territories, where perfusion pressure is lowest: the anterior borderzone between the anterior and middle cerebral arteries along the superior frontal convexity, the posterior borderzone between the middle and posterior cerebral arteries in the parieto-occipital region, and the internal borderzone in the corona radiata between the deep perforators and the cortical branches. When systemic pressure falls or a carotid stenosis limits inflow, these strips infarct first. The anterior borderzone sits on the motor homunculus between the leg area (medial) and the face and hand area (lateral), which is the shoulder and hip representation, so the weakness is proximal; corticospinal fibers cross in the medulla, so it is contralateral. The perisylvian language cortex has the richest supply and survives, while the surrounding cortex that feeds it dies, producing the transcortical aphasias with intact repetition. Bilateral posterior borderzone infarcts disconnect the dorsal visual stream and produce simultanagnosia, optic ataxia and ocular apraxia.",
- "imagingFindings": [
-  {
-   "pathology": "Cortical borderzone infarcts",
-   "modality": "MRI",
-   "finding": "Wedge-shaped restricted diffusion along the ACA–MCA and MCA–PCA boundaries, often bilateral after global hypotension.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Internal borderzone infarcts",
-   "modality": "MRI",
-   "finding": "A chain of small deep white matter infarcts in the corona radiata ('rosary' or 'string of pearls') on the side of a carotid stenosis.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Carotid stenosis",
-   "modality": "CTA",
-   "finding": "High-grade stenosis or occlusion of the ipsilateral internal carotid artery."
-  }
- ],
- "commonCauses": [
-  "Cardiac arrest and global hypoperfusion",
-  "High-grade carotid stenosis with a hypotensive episode",
-  "Cardiac surgery and prolonged hypotension"
- ],
- "mimics": [
-  {
-   "name": "Embolic multi-territory infarcts",
-   "howToDistinguish": "Random cortical distribution, not confined to boundaries"
-  },
-  {
-   "name": "Hypoxic-ischemic encephalopathy",
-   "howToDistinguish": "Diffuse cortical and deep gray involvement after arrest, rather than strips"
-  },
-  {
-   "name": "Spinal cord lesion",
-   "howToDistinguish": "Bilateral proximal weakness can mimic, but a sensory level and reflex changes distinguish"
-  }
- ],
- "management": [
-  "Restore perfusion pressure; avoid aggressive blood pressure lowering",
-  "Evaluate and treat carotid stenosis (endarterectomy or stenting)",
-  "Cardiac and hemodynamic assessment"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    50,
-    53
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    63
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -25,
-   "y": -10,
-   "z": 45
-  },
-  "label": "anterior borderzone on the superior frontal convexity"
- },
- "cameraPreset": "superior"
+  "cameraPreset": "superior"
 }

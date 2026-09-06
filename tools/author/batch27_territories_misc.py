@@ -1,13 +1,11 @@
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from corlib import *
 E = []
-S = lambda ch, a, b=None: C("snell", ch, a, b)
-B = lambda ch, a, b=None: C("berkowitz", ch, a, b)
 def terr(id, name, parent, arteries, summary, extent, function, views, normal, paths, lesion, exam, pearls, cites, **kw):
     kw.setdefault("subsystem", "level1"); kw.setdefault("tags", ["arterial territory", "stroke"])
     kw.setdefault("territories", [id])
     return cortex(id, name, "x", summary, extent, function, arteries, views, normal, paths, lesion, exam, pearls, cites, system="arterial-territories", parent=parent, mesh_ids=[id + "-l", id + "-r"], **kw)
-VC = [S(17, 463, 475), B(7, 53, 66), B(19, 179, 194)]
+VC = [R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke"), R("sp-circle-of-willis")]
 
 E.append(terr("territory-mca-major", "MCA major territory", "territory-mca", ["artery-mca", "artery-mca-superior-division", "artery-mca-inferior-division", "arteries-lenticulostriate"],
  "The middle cerebral artery major territory is the largest arterial domain of the hemisphere, the lateral convexity from the frontal pole to the occipital pole together with the insula, the temporal lobe convexity and, through the lenticulostriate arteries, the striatum and the internal capsule. This level-2 territory map merges the frontal, parietal, temporal, occipital and insular MCA subterritories with the lenticulostriate domains, and it is the region infarcted by an M1 occlusion: the malignant MCA infarct that swells to threaten herniation and the stroke that carries the whole textbook of hemispheric signs, contralateral face-arm-leg hemiplegia, hemianesthesia, hemianopia, gaze deviation and aphasia or neglect.",
@@ -21,7 +19,7 @@ E.append(terr("territory-mca-major", "MCA major territory", "territory-mca", ["a
  [("Contralateral face-arm-leg hemiplegia and hemianesthesia", "contralateral", "Infarction of the motor and sensory cortex and the internal capsule"), ("Global aphasia (dominant) or profound neglect and anosognosia (non-dominant)", "n/a", "Infarction of the whole perisylvian language or attention network"), ("Gaze deviation toward the lesion and contralateral hemianopia", "contralateral", "Frontal eye field and optic radiation infarction"), ("Progressive drowsiness and herniation", "bilateral", "Cytotoxic edema of the whole territory")],
  ["NIH stroke scale with attention to gaze, fields, language and neglect", "Serial level of consciousness and pupils for 72 hours", "Swallow screen before oral intake"],
  ["The insular ribbon is the first part of the MCA territory to lose its gray-white distinction on CT", "A young patient with a whole-territory MCA infarct needs a craniectomy decision before day two", "The lenticulostriate part of the territory has no collaterals: it is the core of every MCA stroke"],
- VC + [B(25, 271, 274)], synonyms=["MCA territory (level 2)", "middle cerebral artery domain"], subsystem="level2", syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division", "syn-mca-inferior-division", "syn-uncal-herniation"],
+ VC + [R("sp-middle-cerebral-artery"), R("sp-middle-cerebral-artery-stroke"), R("sp-cerebral-blood-supply")], synonyms=["MCA territory (level 2)", "middle cerebral artery domain"], subsystem="level2", syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division", "syn-mca-inferior-division", "syn-uncal-herniation"],
  afferents=[("Middle cerebral artery M1-M4 segments and lenticulostriate arteries", "arterial supply")], efferents=[("Superficial and deep middle cerebral veins", "venous drainage")]))
 
 E.append(terr("territory-aca-major", "ACA major territory", "territory-aca", ["artery-aca", "artery-acom"],
@@ -36,7 +34,7 @@ E.append(terr("territory-aca-major", "ACA major territory", "territory-aca", ["a
  [("Contralateral leg-predominant weakness and sensory loss", "contralateral", "Paracentral lobule infarction"), ("Abulia, akinetic mutism when bilateral", "bilateral", "Medial frontal and anterior cingulate infarction"), ("Urinary incontinence and gait apraxia", "bilateral", "Medial frontal micturition and gait control areas"), ("Callosal disconnection: left-hand apraxia and agraphia", "n/a", "Infarction of the genu and body of the corpus callosum")],
  ["Leg strength and gait initiation", "Spontaneous speech and initiative", "Bladder control and grasp reflexes"],
  ["Leg weaker than arm means ACA; face and arm weaker than leg means MCA", "The anterior communicating artery is the collateral that makes ACA strokes rare", "Akinetic mutism after aneurysm surgery is bilateral ACA territory ischemia"],
- VC + [S(7, 262, 268)], synonyms=["ACA territory (level 2)", "anterior cerebral artery domain"], subsystem="level2", syndromes=["syn-aca-infarct", "syn-subfalcine-herniation", "syn-callosal-disconnection", "syn-watershed-infarct"],
+ VC + [R("sp-anterior-cerebral-artery-stroke"), R("sp-recurrent-artery-of-heubner"), R("sp-brain-arteries")], synonyms=["ACA territory (level 2)", "anterior cerebral artery domain"], subsystem="level2", syndromes=["syn-aca-infarct", "syn-subfalcine-herniation", "syn-callosal-disconnection", "syn-watershed-infarct"],
  afferents=[("Anterior cerebral artery A1-A5 segments, recurrent artery of Heubner", "arterial supply")], efferents=[("Superior sagittal sinus via superior cerebral veins", "venous drainage")]))
 
 E.append(terr("territory-pca-major", "PCA major territory", "territory-pca", ["artery-pca", "arteries-thalamoperforating", "artery-pcom"],
@@ -51,7 +49,7 @@ E.append(terr("territory-pca-major", "PCA major territory", "territory-pca", ["a
  [("Contralateral homonymous hemianopia", "contralateral", "Calcarine cortex or optic radiation infarction"), ("Alexia without agraphia, visual agnosia (left), prosopagnosia (right)", "n/a", "Ventral temporo-occipital and splenial infarction"), ("Amnesia and thalamic sensory loss", "contralateral", "Medial temporal and thalamic perforator infarction"), ("Cortical blindness with denial when bilateral", "bilateral", "Bilateral calcarine infarction (Anton syndrome)")],
  ["Confrontation fields and reading", "Face recognition and delayed recall", "Sensation on the contralateral body when the thalamus is involved"],
  ["A stroke with a hemianopia and no weakness is a PCA stroke until the CT says otherwise", "Macular sparing means the MCA fed the pole, not that the stroke was small", "PCA infarcts are embolic more often than any other territory: look at the heart and the vertebral arteries"],
- VC + [S(11, 333, 336), B(6, 47, 52)], synonyms=["PCA territory (level 2)", "posterior cerebral artery domain"], subsystem="level2", syndromes=["syn-pca-infarct", "syn-homonymous-hemianopia", "syn-top-of-basilar", "syn-anton", "syn-alexia-without-agraphia"],
+ VC + [R("sp-posterior-cerebral-arteries"), R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke")], synonyms=["PCA territory (level 2)", "posterior cerebral artery domain"], subsystem="level2", syndromes=["syn-pca-infarct", "syn-homonymous-hemianopia", "syn-top-of-basilar", "syn-anton", "syn-alexia-without-agraphia"],
  afferents=[("Posterior cerebral artery P1-P4 segments and perforators", "arterial supply")], efferents=[("Basal vein of Rosenthal and the great cerebral vein, transverse sinus", "venous drainage")]))
 
 E.append(terr("territory-vertebrobasilar-major", "Vertebrobasilar major territory", "territory-basilar-paramedian", ["artery-vertebral", "artery-basilar", "artery-pica", "artery-aica", "artery-sca", "arteries-pontine"],
@@ -66,7 +64,7 @@ E.append(terr("territory-vertebrobasilar-major", "Vertebrobasilar major territor
  [("Crossed brainstem syndromes: cranial nerve palsy with contralateral long-tract signs", "ipsilateral", "Ischemia of one brainstem level"), ("Vertigo, ataxia, nystagmus and dysarthria", "ipsilateral", "Cerebellar and vestibular ischemia"), ("Coma, locked-in state or quadriplegia", "bilateral", "Basilar trunk occlusion infarcting the pons"), ("Cortical blindness and amnesia at the top", "bilateral", "Bilateral PCA involvement")],
  ["Cranial nerve examination, HINTS testing and gait in any patient with vertigo or diplopia", "Level of consciousness and pupils in suspected basilar occlusion", "Neck pain history and vascular imaging of the vertebral arteries"],
  ["The posterior circulation announces itself with the five Ds: dizziness, diplopia, dysarthria, dysphagia, dystaxia", "A hyperdense basilar on CT is an emergency of the same weight as a hyperdense MCA", "Isolated vertigo can be a vertebrobasilar stroke; the HINTS examination beats the early MRI"],
- VC + [S(5, 185, 228), B(9, 75, 82), B(8, 67, 73)], synonyms=["posterior circulation territory", "vertebrobasilar domain (level 2)"], subsystem="level2", syndromes=["syn-basilar-occlusion", "syn-locked-in", "syn-wallenberg-lateral-medullary", "syn-pica-cerebellar-infarct", "syn-top-of-basilar"],
+ VC + [R("sp-vertebrobasilar-system"), R("sp-vertebrobasilar-stroke"), R("sp-basilar-artery")], synonyms=["posterior circulation territory", "vertebrobasilar domain (level 2)"], subsystem="level2", syndromes=["syn-basilar-occlusion", "syn-locked-in", "syn-wallenberg-lateral-medullary", "syn-pica-cerebellar-infarct", "syn-top-of-basilar"],
  afferents=[("Vertebral and basilar arteries and their branches", "arterial supply")], efferents=[("Petrosal, transverse and sigmoid sinuses via posterior fossa veins", "venous drainage")]))
 
 E.append(terr("territory-mca-frontal", "MCA territory, frontal", "territory-mca", ["artery-mca", "artery-mca-superior-division"],
@@ -96,7 +94,7 @@ E.append(terr("territory-mca-parietal", "MCA territory, parietal", "territory-mc
  [("Contralateral cortical sensory loss and astereognosis", "contralateral", "Postcentral and parietal opercular infarction"), ("Neglect, anosognosia and dressing apraxia (right)", "contralateral", "Inferior parietal attention cortex infarction"), ("Gerstmann syndrome and conduction aphasia (left)", "n/a", "Angular and supramarginal gyrus infarction"), ("Contralateral inferior quadrantanopia", "contralateral", "Parietal optic radiation fibers")],
  ["Two-point discrimination, graphesthesia and stereognosis", "Line bisection, cancellation and extinction", "Finger naming, right-left orientation, calculation and writing"],
  ["The parietal territory is where the two MCA divisions and the PCA meet: the border zone of the border zones", "Right parietal strokes deny themselves; test extinction because the patient will not report it", "A quadrantanopia with sensory loss is parietal, not occipital"],
- VC + [B(7, 58, 60)], synonyms=["parietal MCA domain", "posterior parietal and angular artery territory"], syndromes=["syn-hemineglect", "syn-gerstmann", "syn-aphasia-conduction-global", "syn-watershed-infarct"],
+ VC + [R("sp-middle-cerebral-artery-stroke"), R("sp-postcentral-gyrus"), R("sp-spatial-neglect")], synonyms=["parietal MCA domain", "posterior parietal and angular artery territory"], syndromes=["syn-hemineglect", "syn-gerstmann", "syn-aphasia-conduction-global", "syn-watershed-infarct"],
  afferents=[("Anterior and posterior parietal and angular arteries of the MCA", "arterial supply")], efferents=[("Superior anastomotic vein of Trolard and the superior sagittal sinus", "venous drainage")]))
 
 E.append(terr("territory-mca-temporal", "MCA territory, temporal", "territory-mca", ["artery-mca", "artery-mca-inferior-division"],
@@ -111,7 +109,7 @@ E.append(terr("territory-mca-temporal", "MCA territory, temporal", "territory-mc
  [("Wernicke aphasia (left)", "n/a", "Posterior superior temporal gyrus and planum temporale infarction"), ("Auditory neglect, aprosodia and agitation (right)", "contralateral", "Right temporal attention and prosody cortex infarction"), ("Contralateral superior quadrantanopia", "contralateral", "Meyer's loop in the temporal stem"), ("No weakness", "n/a", "Motor cortex lies in the superior division territory")],
  ["Comprehension and repetition before assuming confusion", "Upper quadrant fields", "Listen for paraphasias and neologisms"],
  ["A fluent, confused-sounding patient with a normal arm and an upper field cut has an inferior division MCA stroke", "The temporal territory is the one most often mislabeled as delirium in the emergency department", "Herpes encephalitis in the temporal lobe ignores arterial boundaries; stroke respects them"],
- VC + [B(12, 105, 108)], synonyms=["inferior division MCA territory", "temporal MCA domain"], syndromes=["syn-mca-inferior-division", "syn-aphasia-wernicke", "syn-homonymous-hemianopia", "syn-watershed-infarct"],
+ VC + [R("sp-middle-cerebral-artery-stroke"), R("sp-temporal-lobe"), R("sp-wernicke-area")], synonyms=["inferior division MCA territory", "temporal MCA domain"], syndromes=["syn-mca-inferior-division", "syn-aphasia-wernicke", "syn-homonymous-hemianopia", "syn-watershed-infarct"],
  afferents=[("Inferior division of the MCA: anterior, middle and posterior temporal and temporo-occipital arteries", "arterial supply")], efferents=[("Inferior anastomotic vein of Labbe and the transverse sinus", "venous drainage")]))
 
 E.append(terr("territory-mca-occipital", "MCA territory, occipital", "territory-mca", ["artery-mca", "artery-mca-inferior-division"],
@@ -126,7 +124,7 @@ E.append(terr("territory-mca-occipital", "MCA territory, occipital", "territory-
  [("Impaired motion perception and visual attention in the contralateral field", "contralateral", "Lateral extrastriate cortex infarction"), ("Central scotoma with pole involvement", "contralateral", "Macular cortex infarction"), ("Balint features when bilateral with the parietal territory", "bilateral", "Bilateral parieto-occipital watershed infarction")],
  ["Central and peripheral fields with an Amsler grid", "Perception of moving targets and description of a complex scene", "Blood pressure history and carotid imaging"],
  ["Macular sparing is the MCA's gift to the PCA stroke patient", "The lateral occipital pole is the last stop of the MCA and the first to fail when the pressure drops", "Bilateral posterior watershed infarcts after cardiac arrest produce a patient who sees and cannot look"],
- VC + [B(6, 47, 52)], synonyms=["lateral occipital MCA domain", "temporo-occipital artery territory"], syndromes=["syn-watershed-infarct", "syn-balint", "syn-pca-infarct"],
+ VC + [R("sp-occipital-lobe"), R("sp-middle-cerebral-artery-stroke"), R("sp-visual-cortex")], synonyms=["lateral occipital MCA domain", "temporo-occipital artery territory"], syndromes=["syn-watershed-infarct", "syn-balint", "syn-pca-infarct"],
  afferents=[("Temporo-occipital and angular branches of the MCA", "arterial supply")], efferents=[("Vein of Labbe and superficial occipital veins to the transverse sinus", "venous drainage")]))
 
 E.append(terr("territory-mca-insular", "MCA territory, insular", "territory-mca", ["artery-mca", "arteries-lenticulostriate"],
@@ -141,7 +139,7 @@ E.append(terr("territory-mca-insular", "MCA territory, insular", "territory-mca"
  [("Cardiac arrhythmia, blood pressure lability and troponin rise", "bilateral", "Loss of insular autonomic control, worst with right insular infarcts"), ("Altered taste and visceral sensation", "contralateral", "Gustatory and interoceptive insular cortex infarction"), ("Apraxia of speech and dysphagia (left)", "n/a", "Anterior insular infarction")],
  ["ECG monitoring for 72 hours after any MCA stroke that includes the insula", "Taste and swallowing assessment", "Blood pressure trends"],
  ["The insula goes first and tells you the MCA is blocked: look for the ribbon", "A right insular stroke is a cardiac risk; monitor the rhythm", "The insula is the brain's cardiologist and its taste bud"],
- VC + [S(8, 286, 288), B(19, 185, 190)], synonyms=["insular MCA domain", "M2 perforator territory"], syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division"],
+ VC + [R("sp-insular-cortex"), R("sp-middle-cerebral-artery-stroke"), R("sp-stroke-imaging")], synonyms=["insular MCA domain", "M2 perforator territory"], syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division"],
  afferents=[("Short insular perforators from the M2 segments", "arterial supply")], efferents=[("Deep middle cerebral vein to the basal vein of Rosenthal", "venous drainage")]))
 
 E.append(terr("territory-pca-occipital", "PCA territory, occipital", "territory-pca", ["artery-pca"],
@@ -156,7 +154,7 @@ E.append(terr("territory-pca-occipital", "PCA territory, occipital", "territory-
  [("Contralateral homonymous hemianopia or quadrantanopia", "contralateral", "Calcarine cortex infarction"), ("Hemiachromatopsia and visual agnosia", "contralateral", "Ventral occipital infarction"), ("Alexia without agraphia (left with splenium)", "n/a", "Left occipital and splenial infarction"), ("Cortical blindness when bilateral", "bilateral", "Bilateral calcarine infarction")],
  ["Confrontation fields and perimetry", "Reading and color naming by hemifield", "Pupillary reactions, normal in cortical visual loss"],
  ["A congruous hemianopia with normal pupils is occipital", "The occipital PCA territory is embolic territory: find the source", "Migraine, PRES, seizure and stroke all live in the occipital lobe; time course and DWI separate them"],
- VC + [S(11, 333, 336), B(6, 47, 52), B(26, 275, 278)], synonyms=["calcarine and parieto-occipital artery territory", "occipital PCA domain"], syndromes=["syn-homonymous-hemianopia", "syn-pca-infarct", "syn-anton", "syn-alexia-without-agraphia"],
+ VC + [R("sp-posterior-cerebral-artery-stroke"), R("sp-visual-cortex"), R("sp-homonymous-hemianopsia")], synonyms=["calcarine and parieto-occipital artery territory", "occipital PCA domain"], syndromes=["syn-homonymous-hemianopia", "syn-pca-infarct", "syn-anton", "syn-alexia-without-agraphia"],
  afferents=[("Calcarine and parieto-occipital arteries (P3-P4)", "arterial supply")], efferents=[("Internal occipital veins to the great cerebral vein and the transverse sinus", "venous drainage")]))
 
 E.append(terr("territory-pca-temporal", "PCA territory, temporal", "territory-pca", ["artery-pca"],
@@ -171,7 +169,7 @@ E.append(terr("territory-pca-temporal", "PCA territory, temporal", "territory-pc
  [("Anterograde amnesia", "bilateral", "Hippocampal and parahippocampal infarction, permanent when bilateral"), ("Prosopagnosia and landmark agnosia (right)", "n/a", "Right fusiform and parahippocampal infarction"), ("Associative agnosia and alexia (left)", "n/a", "Left fusiform and inferior temporal infarction"), ("Contralateral superior quadrantanopia", "contralateral", "Meyer's loop involvement")],
  ["Delayed recall and recognition", "Face recognition and reading", "Upper quadrant fields"],
  ["A stroke that produces amnesia is a posterior circulation stroke of the temporal PCA territory", "The P2 segment hugs the uncus: herniation adds a PCA infarct to the injury", "Bilateral medial temporal infarcts leave a memory that stops on the day of the stroke"],
- VC + [S(9, 301, 306), B(22, 238, 239), B(25, 271, 274)], synonyms=["anterior and posterior temporal artery territory", "temporal PCA domain"], syndromes=["syn-pca-infarct", "syn-uncal-herniation", "syn-wernicke-korsakoff", "syn-alexia-without-agraphia"],
+ VC + [R("sp-posterior-cerebral-artery-stroke"), R("sp-posterior-cerebral-arteries"), R("sp-anterior-choroidal-arteries")], synonyms=["anterior and posterior temporal artery territory", "temporal PCA domain"], syndromes=["syn-pca-infarct", "syn-uncal-herniation", "syn-wernicke-korsakoff", "syn-alexia-without-agraphia"],
  afferents=[("Anterior and posterior temporal branches of the P2 segment", "arterial supply")], efferents=[("Basal vein of Rosenthal and inferior temporal veins", "venous drainage")]))
 
 E.append(terr("territory-medial-lenticulostriate", "Medial lenticulostriate territory", "territory-lenticulostriate", ["arteries-lenticulostriate", "artery-mca", "artery-aca"],
@@ -186,7 +184,7 @@ E.append(terr("territory-medial-lenticulostriate", "Medial lenticulostriate terr
  [("Abulia, inattention and executive dysfunction", "bilateral", "Caudate head and anterior limb infarction"), ("Mild contralateral face-arm weakness and dysarthria", "contralateral", "Genu of the internal capsule involvement"), ("Transcortical motor aphasia (left)", "n/a", "Disconnection of the medial and dorsolateral frontal cortex from the striatum")],
  ["Initiative and attention during the interview", "Verbal fluency and set shifting", "Face and arm strength and speech"],
  ["A caudate stroke is a frontal lobe stroke that the CT places in the basal ganglia", "Heubner's artery is the vessel neurosurgeons protect when clipping anterior communicating aneurysms", "Medial lenticulostriate infarcts confuse more than they weaken; lateral ones weaken more than they confuse"],
- VC + [S(10, 309, 318), B(7, 62, 63)], synonyms=["medial striate artery territory", "recurrent artery of Heubner territory"], syndromes=["syn-aca-infarct", "syn-lacunar-pure-motor", "syn-subarachnoid-hemorrhage"],
+ VC + [R("sp-recurrent-artery-of-heubner"), R("sp-striate-arteries"), R("sp-cerebral-blood-supply")], synonyms=["medial striate artery territory", "recurrent artery of Heubner territory"], syndromes=["syn-aca-infarct", "syn-lacunar-pure-motor", "syn-subarachnoid-hemorrhage"],
  afferents=[("Medial lenticulostriate arteries from M1 and the recurrent artery of Heubner from A1-A2", "arterial supply")], efferents=[("Thalamostriate and septal veins to the internal cerebral vein", "venous drainage")]))
 
 E.append(terr("territory-lateral-lenticulostriate", "Lateral lenticulostriate territory", "territory-lenticulostriate", ["arteries-lenticulostriate", "artery-mca"],
@@ -201,7 +199,7 @@ E.append(terr("territory-lateral-lenticulostriate", "Lateral lenticulostriate te
  [("Contralateral face-arm-leg hemiparesis", "contralateral", "Posterior limb corticospinal infarction"), ("Dysarthria and contralateral hemisensory loss", "contralateral", "Corticobulbar and thalamocortical fiber involvement"), ("Delayed contralateral dystonia or chorea", "contralateral", "Putaminal and pallidal infarction"), ("Coma and herniation with large putaminal hemorrhage", "bilateral", "Mass effect of the hematoma")],
  ["Strength of face, arm and leg and the pattern of weakness", "Sensation and cortical signs to distinguish a lacune from a striatocapsular infarct", "Blood pressure and hemorrhage risk"],
  ["The lateral lenticulostriates take the full pressure of the M1 and pay for it with lacunes and hemorrhages", "Face-arm-leg weakness without cortical signs is the posterior limb", "The lentiform nucleus is the core of the MCA stroke: it dies first and does not come back"],
- VC + [S(10, 309, 318), B(19, 190, 194), B(7, 62, 63)], synonyms=["lateral striate artery territory", "striatocapsular territory"], syndromes=["syn-lacunar-pure-motor", "syn-lacunar-sensorimotor", "syn-mca-stem-infarct", "syn-hemiballismus"],
+ VC + [R("sp-striate-arteries"), R("sp-lacunar-stroke"), R("sp-internal-capsule")], synonyms=["lateral striate artery territory", "striatocapsular territory"], syndromes=["syn-lacunar-pure-motor", "syn-lacunar-sensorimotor", "syn-mca-stem-infarct", "syn-hemiballismus"],
  afferents=[("Lateral lenticulostriate arteries from the M1 segment", "arterial supply")], efferents=[("Thalamostriate and inferior striate veins", "venous drainage")]))
 
 E.append(terr("territory-anterior-choroidal-thalamoperforating", "Anterior choroidal and thalamoperforating territory", "territory-anterior-choroidal", ["artery-anterior-choroidal", "arteries-thalamoperforating", "artery-pcom", "artery-internal-carotid"],
@@ -216,7 +214,7 @@ E.append(terr("territory-anterior-choroidal-thalamoperforating", "Anterior choro
  [("Contralateral hemiparesis, hemisensory loss and hemianopia without cortical signs", "contralateral", "Posterior limb and optic tract infarction from anterior choroidal occlusion"), ("Amnesia, abulia and emotional facial paresis", "contralateral", "Anterior thalamic infarction from tuberothalamic occlusion"), ("Thalamic aphasia (left)", "n/a", "Left anterior thalamic disconnection from the language cortex")],
  ["Strength, sensation and visual fields together: the triad names the artery", "Delayed recall and spontaneous emotional facial movement", "Language when the left anterior thalamus is involved"],
  ["Three long-tract signs from one tiny artery: that is the anterior choroidal", "The anterior thalamus makes the patient forget and stop caring; the face smiles only on command", "The anterior choroidal artery is the price of a carotid aneurysm clip placed too far back"],
- VC + [S(12, 364, 370), B(7, 62, 63), B(22, 238, 239)], synonyms=["anterior choroidal territory", "tuberothalamic territory"], syndromes=["syn-anterior-choroidal-infarct", "syn-thalamic-dejerine-roussy", "syn-wernicke-korsakoff"],
+ VC + [R("sp-anterior-choroidal-arteries"), R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke")], synonyms=["anterior choroidal territory", "tuberothalamic territory"], syndromes=["syn-anterior-choroidal-infarct", "syn-thalamic-dejerine-roussy", "syn-wernicke-korsakoff"],
  afferents=[("Anterior choroidal artery from the internal carotid; tuberothalamic artery from the posterior communicating artery", "arterial supply")], efferents=[("Basal vein of Rosenthal", "venous drainage")]))
 
 E.append(terr("territory-posterior-choroidal-thalamoperforating", "Posterior choroidal and thalamoperforating territory", "territory-pca", ["arteries-thalamoperforating", "artery-pca", "artery-basilar"],
@@ -231,7 +229,7 @@ E.append(terr("territory-posterior-choroidal-thalamoperforating", "Posterior cho
  [("Hypersomnolence, vertical gaze palsy and amnesia", "bilateral", "Paramedian thalamic and medial midbrain infarction"), ("Contralateral hemisensory loss and delayed thalamic pain", "contralateral", "Thalamogeniculate infarction of the ventral posterior nuclei"), ("Contralateral hemianopia, ataxia and inattention", "contralateral", "Posterior choroidal infarction of the geniculate and pulvinar")],
  ["Level of consciousness and vertical eye movements", "Sensation on the face, arm and leg", "Visual fields and delayed recall"],
  ["A sleepy patient with bilateral thalamic lesions has one artery to blame: Percheron's", "Pure sensory stroke is thalamogeniculate; the pain comes later", "The thalamus is PCA territory: a stroke there is a posterior circulation stroke"],
- VC + [S(12, 364, 370), B(7, 62, 63), B(9, 78, 80)], synonyms=["paramedian thalamic territory", "thalamogeniculate territory", "posterior choroidal territory"], syndromes=["syn-top-of-basilar", "syn-thalamic-dejerine-roussy", "syn-lacunar-pure-sensory", "syn-parinaud-dorsal-midbrain"],
+ VC + [R("sp-thalamic-nuclei"), R("sp-thalamic-pain-syndrome"), R("sp-posterior-cerebral-arteries")], synonyms=["paramedian thalamic territory", "thalamogeniculate territory", "posterior choroidal territory"], syndromes=["syn-top-of-basilar", "syn-thalamic-dejerine-roussy", "syn-lacunar-pure-sensory", "syn-parinaud-dorsal-midbrain"],
  afferents=[("Posterior thalamoperforating (paramedian) arteries from P1, thalamogeniculate and posterior choroidal arteries from P2", "arterial supply")], efferents=[("Internal cerebral veins and the great cerebral vein", "venous drainage")]))
 
 E.append(terr("territory-basilar", "Basilar (pontine) territory", "territory-basilar-paramedian", ["artery-basilar", "arteries-pontine", "artery-aica", "artery-sca"],
@@ -246,7 +244,7 @@ E.append(terr("territory-basilar", "Basilar (pontine) territory", "territory-bas
  [("Contralateral hemiparesis with ipsilateral VI or VII palsy", "ipsilateral", "Paramedian and lateral pontine infarction (crossed syndromes)"), ("Internuclear ophthalmoplegia and horizontal gaze palsy", "ipsilateral", "MLF and pontine gaze center infarction"), ("Locked-in syndrome", "bilateral", "Bilateral basis pontis infarction sparing the tegmentum"), ("Coma with pinpoint pupils", "bilateral", "Pontine tegmental destruction")],
  ["Horizontal eye movements, facial strength and corneal reflexes", "Strength and coordination on the side opposite the cranial nerve signs", "Consciousness, pupils and breathing in bilateral disease"],
  ["Pontine lacunes mimic capsular lacunes; the eyes and the face give them away", "Locked-in patients are awake: ask them to blink or look up before you decide they are comatose", "The basilar perforators have no collaterals and no forgiveness"],
- VC + [S(5, 199, 212), B(9, 75, 82)], synonyms=["pontine territory", "basilar perforator domain"], syndromes=["syn-basilar-occlusion", "syn-locked-in", "syn-millard-gubler", "syn-foville", "syn-pontine-hemorrhage", "syn-lacunar-ataxic-hemiparesis", "syn-lacunar-dysarthria-clumsy-hand"],
+ VC + [R("sp-basilar-artery"), R("sp-basilar-artery-occlusion"), R("sp-vertebrobasilar-system")], synonyms=["pontine territory", "basilar perforator domain"], syndromes=["syn-basilar-occlusion", "syn-locked-in", "syn-millard-gubler", "syn-foville", "syn-pontine-hemorrhage", "syn-lacunar-ataxic-hemiparesis", "syn-lacunar-dysarthria-clumsy-hand"],
  afferents=[("Paramedian, short circumferential and long circumferential branches of the basilar artery", "arterial supply")], efferents=[("Anterior pontomesencephalic vein and petrosal veins", "venous drainage")]))
 
 E.append(terr("territory-superior-cerebellar", "Superior cerebellar artery territory", "territory-sca", ["artery-sca", "artery-basilar"],
@@ -261,7 +259,7 @@ E.append(terr("territory-superior-cerebellar", "Superior cerebellar artery terri
  [("Ipsilateral limb ataxia and intention tremor", "ipsilateral", "Anterior lobe, dentate and superior peduncle infarction"), ("Dysarthria", "ipsilateral", "Paravermian and dentate outflow infarction"), ("Contralateral loss of pain and temperature", "contralateral", "Spinothalamic tract in the lateral upper pontine tegmentum"), ("Coma from upward herniation", "bilateral", "Swelling of the superior cerebellum against the midbrain")],
  ["Finger-nose, heel-shin and speech", "Pin-prick on the side opposite the ataxia", "Serial level of consciousness for three days after a large infarct"],
  ["The SCA is the cerebellar artery of the arms and speech; PICA is the artery of vertigo and falls", "Superior cerebellar swelling herniates upward: the tectum, not the tonsils, is flattened", "An SCA infarct without a PCA infarct is unusual; look for the basilar tip embolus"],
- VC + [S(6, 244, 246), B(8, 70, 73)], synonyms=["SCA territory", "superior cerebellar domain"], syndromes=["syn-sca-infarct", "syn-cerebellar-hemispheric", "syn-top-of-basilar"],
+ VC + [R("sp-cerebellar-infarction"), R("sp-vertebrobasilar-system"), R("sp-dentate-nucleus")], synonyms=["SCA territory", "superior cerebellar domain"], syndromes=["syn-sca-infarct", "syn-cerebellar-hemispheric", "syn-top-of-basilar"],
  afferents=[("Superior cerebellar artery (medial and lateral branches)", "arterial supply")], efferents=[("Superior cerebellar veins to the great cerebral vein and the straight sinus", "venous drainage")]))
 
 E.append(terr("territory-inferior-cerebellar", "Inferior cerebellar (PICA/AICA) territory", "territory-pica-lateral-medulla", ["artery-pica", "artery-aica", "artery-vertebral", "artery-basilar"],
@@ -276,7 +274,7 @@ E.append(terr("territory-inferior-cerebellar", "Inferior cerebellar (PICA/AICA) 
  [("Vertigo, nystagmus and truncal ataxia", "ipsilateral", "Vestibulocerebellar and vestibular nuclear ischemia"), ("Wallenberg syndrome: crossed sensory loss, dysphagia, Horner syndrome", "ipsilateral", "Lateral medullary infarction"), ("Ipsilateral deafness and facial palsy (AICA)", "ipsilateral", "Labyrinthine artery and lateral pontine infarction"), ("Tonsillar herniation and hydrocephalus", "bilateral", "Swelling of a large inferior cerebellar infarct")],
  ["HINTS examination and ability to stand", "Facial sensation, palate, Horner syndrome and hearing", "Serial consciousness and gaze for 72 hours"],
  ["Vertigo with a normal head impulse is PICA territory until proved otherwise", "Deafness with vertigo is AICA; vertigo alone is PICA", "The posterior fossa has no spare room: a swollen PICA infarct needs a surgeon on day two, not day four"],
- VC + [S(6, 244, 246), S(5, 199, 205), B(8, 70, 73), B(9, 77, 80), B(12, 108, 114)], synonyms=["PICA/AICA territory", "inferior cerebellar domain"], syndromes=["syn-pica-cerebellar-infarct", "syn-wallenberg-lateral-medullary", "syn-aica-lateral-pontine", "syn-central-vs-peripheral-vertigo", "syn-tonsillar-herniation"],
+ VC + [R("sp-anterior-inferior-cerebellar-arteries"), R("sp-cerebellar-infarction"), R("sp-vertebrobasilar-system")], synonyms=["PICA/AICA territory", "inferior cerebellar domain"], syndromes=["syn-pica-cerebellar-infarct", "syn-wallenberg-lateral-medullary", "syn-aica-lateral-pontine", "syn-central-vs-peripheral-vertigo", "syn-tonsillar-herniation"],
  afferents=[("Posterior inferior cerebellar artery from the vertebral artery; anterior inferior cerebellar artery from the basilar artery", "arterial supply")], efferents=[("Inferior cerebellar veins to the transverse and sigmoid sinuses", "venous drainage")]))
 
 E.append(cortex("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)", "x",
@@ -292,7 +290,7 @@ E.append(cortex("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)
  [("No deficit: reference mesh", "n/a", "This is an imaging-derived reference, not a structure with a lesion syndrome"), ("Localizes aneurysm and occlusion sites", "n/a", "The tree marks branch points and segments used in vascular localization")],
  ["Compare a patient's angiogram with the atlas tree to name segments and branch points", "Use the tree with the territory overlays to relate an occlusion to its expected infarct"],
  ["The MRA tree lies exactly on the atlas MRI; the registered whole-body arteries carry a few millimeters of error", "Aneurysms grow at branch points: the atlas tree shows the three commonest", "An average artery is thicker than a real one; use the tree for course, not caliber"],
- [S(17, 463, 475), B(2, 11, 20), B(19, 179, 190)], synonyms=["intracranial arterial tree", "MRA average vessel map"], system="arteries", subsystem="mra", parent="circle-of-willis", mesh_ids=["arteries-mra-atlas"], territories=[], pathways=[], syndromes=["syn-subarachnoid-hemorrhage", "syn-basilar-occlusion", "syn-mca-stem-infarct"],
+ [R("sp-brain-arteries"), R("sp-circle-of-willis"), R("sp-cerebral-blood-supply")], synonyms=["intracranial arterial tree", "MRA average vessel map"], system="arteries", subsystem="mra", parent="circle-of-willis", mesh_ids=["arteries-mra-atlas"], territories=[], pathways=[], syndromes=["syn-subarachnoid-hemorrhage", "syn-basilar-occlusion", "syn-mca-stem-infarct"],
  afferents=[("Internal carotid and vertebral arteries", "inflow")], efferents=[("Cortical, perforating and cerebellar branches", "outflow")], tags=["reference", "MRA", "atlas"]))
 
 E.append(cortex("bp3d-brain", "Brain (BodyParts3D)", "x",
@@ -307,7 +305,7 @@ E.append(cortex("bp3d-brain", "Brain (BodyParts3D)", "x",
  [("No deficit: reference mesh", "n/a", "Context envelope without a lesion syndrome")],
  ["Use with low opacity to place deep structures against the gyral surface", "Compare with the template envelope to judge registration quality"],
  ["The BodyParts3D brain is one person's brain; the envelope is everyone's average", "Its sulci are deeper than the template's because it was modeled, not averaged", "Keep it translucent: it is scenery, not anatomy to measure"],
- [S(7, 249, 262), B(3, 25, 32)], synonyms=["BodyParts3D brain surface", "context brain"], system="envelope", subsystem="context", parent=False, mesh_ids=["bp3d-brain", "bp3d-cerebrum-l", "bp3d-cerebrum-r"], territories=[], tags=["reference", "envelope", "BodyParts3D"]))
+ [R("sp-brain"), R("sp-brain-arteries"), R("sp-brain-veins")], synonyms=["BodyParts3D brain surface", "context brain"], system="envelope", subsystem="context", parent=False, mesh_ids=["bp3d-brain", "bp3d-cerebrum-l", "bp3d-cerebrum-r"], territories=[], tags=["reference", "envelope", "BodyParts3D"]))
 
 E.append(cortex("brain-envelope", "Brain surface (template mask)", "x",
  "This mesh is the outer surface of the MNI152 template brain, generated from the template's brain mask, and it is the translucent shell that the atlas shows by default around every other structure. It represents the pial surface of the population-average brain including the cerebellum and brainstem, smoothed by averaging, so its sulci are shallow; it coincides exactly with the MRI slices and it is the reference against which the registered whole-body meshes are checked. In syndrome mode it stays visible while the parcels are dimmed, giving the lesion marker and the involved structures a frame, and it defines the field of view of the atlas.",
@@ -321,6 +319,6 @@ E.append(cortex("brain-envelope", "Brain surface (template mask)", "x",
  [("No deficit: reference surface", "n/a", "Context envelope without a lesion syndrome")],
  ["Use the envelope as the visual frame for deep structures and syndromes", "Check registered meshes against it for alignment"],
  ["The envelope is the average brain's skin; everything in the atlas lives inside it", "When a registered nerve pokes through the envelope, blame the registration, not the anatomy", "The envelope and the MRI are the same data seen two ways"],
- [S(7, 249, 262), S(15, 417, 422), B(3, 25, 32)], synonyms=["template brain surface", "pial envelope"], system="envelope", subsystem="template", parent=False, mesh_ids=["brain-envelope"], territories=[], tags=["reference", "envelope", "template"]))
+ [R("sp-brain"), R("sp-cerebral-cortex")], synonyms=["template brain surface", "pial envelope"], system="envelope", subsystem="template", parent=False, mesh_ids=["brain-envelope"], territories=[], tags=["reference", "envelope", "template"]))
 
 write(E)

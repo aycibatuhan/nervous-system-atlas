@@ -1,190 +1,170 @@
 {
- "kind": "structure",
- "id": "trigeminal-nuclei",
- "name": "Trigeminal sensory and motor nuclei",
- "synonyms": [
-  "principal sensory nucleus of V",
-  "motor nucleus of V",
-  "mesencephalic nucleus of V"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The trigeminal nerve has the longest nuclear column in the brainstem. The principal (chief) sensory nucleus in the rostral pons receives discriminative touch from the face; the spinal nucleus below it receives pain and temperature; the mesencephalic nucleus above it is the only place where primary sensory cell bodies sit inside the central nervous system, serving jaw proprioception; and the motor nucleus, medial to the principal nucleus, drives the muscles of mastication. Together they let a single pontine lesion produce facial numbness with a weak jaw deviating toward the lesion.",
- "anatomy": {
-  "location": "Principal sensory and motor nuclei: lateral tegmentum of the mid-pons at the level of the trigeminal root entry. Mesencephalic nucleus: a slender column along the lateral edge of the periaqueductal gray up to the superior colliculus. Spinal nucleus: descending through the medulla to C2–C3.",
-  "subdivisions": [
-   {
-    "name": "Principal sensory nucleus",
-    "note": "fine touch and pressure from the face; projects in the trigeminal lemniscus, mostly crossed, to VPM"
-   },
-   {
-    "name": "Motor nucleus",
-    "note": "masseter, temporalis, pterygoids, mylohyoid, anterior digastric, tensor tympani, tensor veli palatini; bilateral corticobulbar input"
-   },
-   {
-    "name": "Mesencephalic nucleus",
-    "note": "proprioception from jaw muscles and periodontal ligament; afferent limb of the jaw jerk"
-   },
-   {
-    "name": "Spinal nucleus",
-    "note": "pain, temperature and crude touch (see the spinal trigeminal entry)"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "ganglion-trigeminal",
-    "via": "cn-05-trigeminal"
-   }
+  "kind": "structure",
+  "id": "trigeminal-nuclei",
+  "name": "Trigeminal sensory and motor nuclei",
+  "synonyms": [
+    "principal sensory nucleus of V",
+    "motor nucleus of V",
+    "mesencephalic nucleus of V"
   ],
-  "efferents": [
-   {
-    "to": "thalamus-vpm",
-    "via": "trigeminal lemniscus",
-    "note": "crossed"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-trigeminothalamic"
-  ]
- },
- "function": "All facial somatic sensation, the sensory side of the corneal, blink and jaw-jerk reflexes, and motor control of chewing.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-pontine",
-   "artery-sca",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-basilar-paramedian",
-   "territory-sca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 22,
-     "y": -30,
-     "z": -28
+  "summary": "The trigeminal nerve has the longest nuclear column in the brainstem. The principal (chief) sensory nucleus in the rostral pons receives discriminative touch from the face; the spinal nucleus below it receives pain and temperature; the mesencephalic nucleus above it is the only place where primary sensory cell bodies sit inside the central nervous system, serving jaw proprioception; and the motor nucleus, medial to the principal nucleus, drives the muscles of mastication. Together they let a single pontine lesion produce facial numbness with a weak jaw deviating toward the lesion.",
+  "anatomy": {
+    "location": "Principal sensory and motor nuclei: lateral tegmentum of the mid-pons at the level of the trigeminal root entry. Mesencephalic nucleus: a slender column along the lateral edge of the periaqueductal gray up to the superior colliculus. Spinal nucleus: descending through the medulla to C2–C3.",
+    "subdivisions": [
+      {
+        "name": "Principal sensory nucleus",
+        "note": "fine touch and pressure from the face; projects in the trigeminal lemniscus, mostly crossed, to VPM"
+      },
+      {
+        "name": "Motor nucleus",
+        "note": "masseter, temporalis, pterygoids, mylohyoid, anterior digastric, tensor tympani, tensor veli palatini; bilateral corticobulbar input"
+      },
+      {
+        "name": "Mesencephalic nucleus",
+        "note": "proprioception from jaw muscles and periodontal ligament; afferent limb of the jaw jerk"
+      },
+      {
+        "name": "Spinal nucleus",
+        "note": "pain, temperature and crude touch (see the spinal trigeminal entry)"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "ganglion-trigeminal",
+        "via": "cn-05-trigeminal"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "thalamus-vpm",
+        "via": "trigeminal lemniscus",
+        "note": "crossed"
+      }
+    ],
+    "pathways": [
+      "pathway-trigeminothalamic"
+    ]
+  },
+  "function": "All facial somatic sensation, the sensory side of the corneal, blink and jaw-jerk reflexes, and motor control of chewing.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-pontine",
+      "artery-sca",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-basilar-paramedian",
+      "territory-sca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 22,
+          "y": -30,
+          "z": -28
+        },
+        "label": "lateral mid-pontine tegmentum at the trigeminal root entry"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 28,
+          "y": -28,
+          "z": -30
+        },
+        "label": "root leaving the pons toward Meckel's cave"
+      }
+    ],
+    "normalAppearance": "The trigeminal root is a well-seen band on axial T2 crossing the prepontine cistern; the nuclei are not resolved. Pontine plaques at the root entry zone are a frequent cause of trigeminal symptoms in multiple sclerosis.",
+    "pathology": [
+      {
+        "pathology": "Root entry zone demyelination",
+        "modality": "MRI",
+        "finding": "FLAIR-bright lesion at the lateral pons where the root enters; trigeminal neuralgia or facial numbness.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Lateral pontine infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the lateral mid-pons with ipsilateral facial sensory loss and contralateral body sensory loss.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Trigeminal schwannoma",
+        "modality": "MRI",
+        "finding": "Dumbbell enhancing mass along the root and Meckel's cave.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Thin axial T2/FLAIR of the pons; CISS/FIESTA and T1+Gd for the root"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral loss of facial touch",
+        "side": "ipsilateral",
+        "mechanism": "Principal sensory nucleus"
+      },
+      {
+        "deficit": "Jaw deviates toward the lesion on opening with masseter wasting",
+        "side": "ipsilateral",
+        "mechanism": "Motor nucleus or motor root: the intact lateral pterygoid pushes the jaw to the weak side"
+      },
+      {
+        "deficit": "Absent jaw jerk with an otherwise brisk reflex pattern",
+        "side": "ipsilateral",
+        "mechanism": "Mesencephalic nucleus afferents"
+      },
+      {
+        "deficit": "Brisk jaw jerk",
+        "side": "bilateral",
+        "mechanism": "Bilateral supranuclear (pseudobulbar) lesions"
+      }
+    ],
+    "examination": [
+      "Light touch and pin-prick in V1, V2, V3 on each side",
+      "Palpate the masseters while the patient clenches; watch jaw opening for deviation",
+      "Jaw jerk and corneal reflex"
+    ],
+    "syndromes": [
+      "syn-trigeminal-neuralgia",
+      "syn-bulbar-vs-pseudobulbar"
+    ],
+    "pearls": [
+      "Loss of touch but preserved pain on the face means the principal nucleus (pons), whereas the reverse means the spinal nucleus (medulla)",
+      "A brisk jaw jerk with a brisk everything else points to a lesion above the pons"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-trigeminal-nucleus",
+      "section": "Structure and Function"
     },
-    "label": "lateral mid-pontine tegmentum at the trigeminal root entry"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 28,
-     "y": -28,
-     "z": -30
+    {
+      "ref": "sp-spinal-trigeminal-nucleus",
+      "section": "Structure and Function"
     },
-    "label": "root leaving the pons toward Meckel's cave"
-   }
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The trigeminal root is a well-seen band on axial T2 crossing the prepontine cistern; the nuclei are not resolved. Pontine plaques at the root entry zone are a frequent cause of trigeminal symptoms in multiple sclerosis.",
-  "pathology": [
-   {
-    "pathology": "Root entry zone demyelination",
-    "modality": "MRI",
-    "finding": "FLAIR-bright lesion at the lateral pons where the root enters; trigeminal neuralgia or facial numbness.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Lateral pontine infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the lateral mid-pons with ipsilateral facial sensory loss and contralateral body sensory loss.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Trigeminal schwannoma",
-    "modality": "MRI",
-    "finding": "Dumbbell enhancing mass along the root and Meckel's cave.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "Thin axial T2/FLAIR of the pons; CISS/FIESTA and T1+Gd for the root"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral loss of facial touch",
-    "side": "ipsilateral",
-    "mechanism": "Principal sensory nucleus"
-   },
-   {
-    "deficit": "Jaw deviates toward the lesion on opening with masseter wasting",
-    "side": "ipsilateral",
-    "mechanism": "Motor nucleus or motor root: the intact lateral pterygoid pushes the jaw to the weak side"
-   },
-   {
-    "deficit": "Absent jaw jerk with an otherwise brisk reflex pattern",
-    "side": "ipsilateral",
-    "mechanism": "Mesencephalic nucleus afferents"
-   },
-   {
-    "deficit": "Brisk jaw jerk",
-    "side": "bilateral",
-    "mechanism": "Bilateral supranuclear (pseudobulbar) lesions"
-   }
-  ],
-  "examination": [
-   "Light touch and pin-prick in V1, V2, V3 on each side",
-   "Palpate the masseters while the patient clenches; watch jaw opening for deviation",
-   "Jaw jerk and corneal reflex"
-  ],
-  "syndromes": [
-   "syn-trigeminal-neuralgia",
-   "syn-bulbar-vs-pseudobulbar"
-  ],
-  "pearls": [
-   "Loss of touch but preserved pain on the face means the principal nucleus (pons), whereas the reverse means the spinal nucleus (medulla)",
-   "A brisk jaw jerk with a brisk everything else points to a lesion above the pons"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    207,
-    208
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    335
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    117,
-    120
-   ]
+  "status": "draft",
+  "subsystem": "pons",
+  "level": {
+    "region": "pons"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "subsystem": "pons",
- "level": {
-  "region": "pons"
- }
 }

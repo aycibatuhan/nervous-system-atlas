@@ -1,153 +1,141 @@
 {
- "kind": "syndrome",
- "id": "syn-superior-orbital-fissure",
- "name": "Superior orbital fissure and orbital apex syndromes",
- "eponyms": [
-  "Rochon-Duvigneaud syndrome"
- ],
- "category": "compressive",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cn-03-oculomotor",
-   "cn-04-trochlear",
-   "cn-06-abducens",
-   "cn-05-trigeminal",
-   "cn-02-optic",
-   "artery-ophthalmic"
+  "kind": "syndrome",
+  "id": "syn-superior-orbital-fissure",
+  "name": "Superior orbital fissure and orbital apex syndromes",
+  "eponyms": [
+    "Rochon-Duvigneaud syndrome"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -25,
-   "y": 25,
-   "z": -15
+  "category": "compressive",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cn-03-oculomotor",
+      "cn-04-trochlear",
+      "cn-06-abducens",
+      "cn-05-trigeminal",
+      "cn-02-optic",
+      "artery-ophthalmic"
+    ],
+    "side": "ipsilateral"
   },
-  "radiusMm": 10
- },
- "presentation": "After a facial fracture, or with a tumor or inflammation at the back of the orbit, a patient has a fixed, drooping eye that cannot move in any direction, a dilated pupil, numbness of the forehead and upper eyelid and loss of the corneal reflex, with a bulging, congested eye. If vision in that eye is also lost with an afferent pupillary defect, the lesion has extended medially to the optic canal: the orbital apex syndrome.",
- "deficits": [
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "III, IV and VI",
-   "sign": "Complete external ophthalmoplegia with ptosis",
-   "substrate": "cn-03-oculomotor"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -25,
+      "y": 25,
+      "z": -15
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "pupil",
-   "side": "ipsilateral",
-   "distribution": "one pupil",
-   "sign": "Dilated, fixed pupil (parasympathetic fibers in III) and loss of accommodation",
-   "substrate": "pathway-pupillary-light-reflex"
+  "presentation": "After a facial fracture, or with a tumor or inflammation at the back of the orbit, a patient has a fixed, drooping eye that cannot move in any direction, a dilated pupil, numbness of the forehead and upper eyelid and loss of the corneal reflex, with a bulging, congested eye. If vision in that eye is also lost with an afferent pupillary defect, the lesion has extended medially to the optic canal: the orbital apex syndrome.",
+  "deficits": [
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "III, IV and VI",
+      "sign": "Complete external ophthalmoplegia with ptosis",
+      "substrate": "cn-03-oculomotor"
+    },
+    {
+      "modality": "pupil",
+      "side": "ipsilateral",
+      "distribution": "one pupil",
+      "sign": "Dilated, fixed pupil (parasympathetic fibers in III) and loss of accommodation",
+      "substrate": "pathway-pupillary-light-reflex"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "forehead, upper lid, cornea, nose (V1)",
+      "sign": "Anesthesia in the ophthalmic division with an absent corneal reflex",
+      "substrate": "cn-05-trigeminal"
+    },
+    {
+      "modality": "other",
+      "side": "ipsilateral",
+      "distribution": "orbit",
+      "sign": "Proptosis and chemosis from superior ophthalmic vein obstruction",
+      "substrate": "sinus-cavernous"
+    },
+    {
+      "modality": "visual-acuity",
+      "side": "ipsilateral",
+      "distribution": "one eye (orbital apex)",
+      "sign": "Visual loss with a relative afferent pupillary defect when the optic canal is involved",
+      "substrate": "cn-02-optic"
+    }
+  ],
+  "reasoning": "The superior orbital fissure is the gap between the greater and lesser wings of the sphenoid through which the oculomotor, trochlear and abducens nerves, the three branches of the ophthalmic division of the trigeminal nerve (lacrimal, frontal and nasociliary) and the superior ophthalmic vein pass between the cavernous sinus and the orbit. All of these are uncrossed structures serving the ipsilateral eye, so a lesion at the fissure paralyzes all the ocular muscles and the levator, dilates the pupil because the parasympathetic fibers travel in the third nerve, and removes sensation from the forehead, upper lid, cornea and bridge of the nose, with venous congestion from obstruction of the ophthalmic vein. The optic nerve and the ophthalmic artery enter the orbit separately through the optic canal, medial to the fissure, so vision is spared in a pure fissure syndrome; a process that extends to involve the canal, as at the orbital apex where the fissure and canal converge, adds an optic neuropathy with visual loss and an afferent pupillary defect. The distinction from the cavernous sinus syndrome, which involves the same nerves a centimeter further back, rests on the maxillary division (V2) and the sympathetic plexus, which run through the sinus but not the fissure, so a Horner or cheek numbness points to the sinus.",
+  "imagingFindings": [
+    {
+      "pathology": "Fracture of the sphenoid wing",
+      "modality": "CT",
+      "finding": "Fracture line through the superior orbital fissure or optic canal with bone fragments and orbital hematoma on thin-section CT of the orbit.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Orbital apex lesion",
+      "modality": "MRI",
+      "finding": "Enhancing mass or inflammation at the apex (meningioma, lymphoma, metastasis, invasive fungal sinusitis, IgG4 disease, Tolosa–Hunt) extending through the fissure, with optic nerve involvement; fat-suppressed post-contrast coronal images.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Thyroid eye disease (mimic)",
+      "modality": "CT",
+      "finding": "Enlarged extraocular muscle bellies crowding the apex and compressing the optic nerve.",
+      "sequence": "CT contrast"
+    }
+  ],
+  "commonCauses": [
+    "Craniofacial trauma with sphenoid fracture",
+    "Sphenoid wing meningioma",
+    "Metastasis, lymphoma, nasopharyngeal carcinoma",
+    "Invasive fungal sinusitis, orbital cellulitis",
+    "Tolosa–Hunt and IgG4-related inflammation",
+    "Herpes zoster ophthalmicus"
+  ],
+  "mimics": [
+    {
+      "name": "Cavernous sinus syndrome",
+      "howToDistinguish": "Adds V2 sensory loss and a Horner syndrome; involves the carotid"
+    },
+    {
+      "name": "Orbital cellulitis",
+      "howToDistinguish": "Fever, painful proptosis, cranial nerves initially spared"
+    },
+    {
+      "name": "Ocular myasthenia",
+      "howToDistinguish": "Painless, variable, no sensory loss or proptosis"
+    }
+  ],
+  "management": [
+    "Urgent thin-section CT of the orbits for trauma; MRI with contrast for non-traumatic cases",
+    "Optic canal decompression or high-dose steroids when vision is threatened; antifungal therapy and debridement for mucormycosis",
+    "Corneal protection for the anesthetic, non-blinking eye"
+  ],
+  "citations": [
+    {
+      "ref": "sp-orbital-apex-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cavernous-sinus-syndromes",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-orbit",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -25,
+      "y": 25,
+      "z": -15
+    },
+    "label": "orbital apex and superior orbital fissure"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "forehead, upper lid, cornea, nose (V1)",
-   "sign": "Anesthesia in the ophthalmic division with an absent corneal reflex",
-   "substrate": "cn-05-trigeminal"
-  },
-  {
-   "modality": "other",
-   "side": "ipsilateral",
-   "distribution": "orbit",
-   "sign": "Proptosis and chemosis from superior ophthalmic vein obstruction",
-   "substrate": "sinus-cavernous"
-  },
-  {
-   "modality": "visual-acuity",
-   "side": "ipsilateral",
-   "distribution": "one eye (orbital apex)",
-   "sign": "Visual loss with a relative afferent pupillary defect when the optic canal is involved",
-   "substrate": "cn-02-optic"
-  }
- ],
- "reasoning": "The superior orbital fissure is the gap between the greater and lesser wings of the sphenoid through which the oculomotor, trochlear and abducens nerves, the three branches of the ophthalmic division of the trigeminal nerve (lacrimal, frontal and nasociliary) and the superior ophthalmic vein pass between the cavernous sinus and the orbit. All of these are uncrossed structures serving the ipsilateral eye, so a lesion at the fissure paralyzes all the ocular muscles and the levator, dilates the pupil because the parasympathetic fibers travel in the third nerve, and removes sensation from the forehead, upper lid, cornea and bridge of the nose, with venous congestion from obstruction of the ophthalmic vein. The optic nerve and the ophthalmic artery enter the orbit separately through the optic canal, medial to the fissure, so vision is spared in a pure fissure syndrome; a process that extends to involve the canal, as at the orbital apex where the fissure and canal converge, adds an optic neuropathy with visual loss and an afferent pupillary defect. The distinction from the cavernous sinus syndrome, which involves the same nerves a centimeter further back, rests on the maxillary division (V2) and the sympathetic plexus, which run through the sinus but not the fissure, so a Horner or cheek numbness points to the sinus.",
- "imagingFindings": [
-  {
-   "pathology": "Fracture of the sphenoid wing",
-   "modality": "CT",
-   "finding": "Fracture line through the superior orbital fissure or optic canal with bone fragments and orbital hematoma on thin-section CT of the orbit.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Orbital apex lesion",
-   "modality": "MRI",
-   "finding": "Enhancing mass or inflammation at the apex (meningioma, lymphoma, metastasis, invasive fungal sinusitis, IgG4 disease, Tolosa–Hunt) extending through the fissure, with optic nerve involvement; fat-suppressed post-contrast coronal images.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Thyroid eye disease (mimic)",
-   "modality": "CT",
-   "finding": "Enlarged extraocular muscle bellies crowding the apex and compressing the optic nerve.",
-   "sequence": "CT contrast"
-  }
- ],
- "commonCauses": [
-  "Craniofacial trauma with sphenoid fracture",
-  "Sphenoid wing meningioma",
-  "Metastasis, lymphoma, nasopharyngeal carcinoma",
-  "Invasive fungal sinusitis, orbital cellulitis",
-  "Tolosa–Hunt and IgG4-related inflammation",
-  "Herpes zoster ophthalmicus"
- ],
- "mimics": [
-  {
-   "name": "Cavernous sinus syndrome",
-   "howToDistinguish": "Adds V2 sensory loss and a Horner syndrome; involves the carotid"
-  },
-  {
-   "name": "Orbital cellulitis",
-   "howToDistinguish": "Fever, painful proptosis, cranial nerves initially spared"
-  },
-  {
-   "name": "Ocular myasthenia",
-   "howToDistinguish": "Painless, variable, no sensory loss or proptosis"
-  }
- ],
- "management": [
-  "Urgent thin-section CT of the orbits for trauma; MRI with contrast for non-traumatic cases",
-  "Optic canal decompression or high-dose steroids when vision is threatened; antifungal therapy and debridement for mucormycosis",
-  "Corneal protection for the anesthetic, non-blinking eye"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    324,
-    324
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    337,
-    337
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    354,
-    354
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -25,
-   "y": 25,
-   "z": -15
-  },
-  "label": "orbital apex and superior orbital fissure"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-dissociated-sensory-loss",
- "term": "Dissociated sensory loss",
- "definition": "Loss of pain and temperature with preservation of touch, vibration and position sense, or the reverse. It shows that the spinothalamic and lemniscal pathways, which travel separately in the cord and brainstem, have been affected differently, and points to a cord or lateral brainstem lesion rather than a nerve, thalamic or cortical one.",
- "related": [
-  "g-sensory-level",
-  "g-syrinx"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    143,
-    149
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-dissociated-sensory-loss",
+  "term": "Dissociated sensory loss",
+  "definition": "Loss of pain and temperature with preservation of touch, vibration and position sense, or the reverse. It shows that the spinothalamic and lemniscal pathways, which travel separately in the cord and brainstem, have been affected differently, and points to a cord or lateral brainstem lesion rather than a nerve, thalamic or cortical one.",
+  "related": [
+    "g-sensory-level",
+    "g-syrinx"
+  ],
+  "citations": [
+    {
+      "ref": "sp-syringomyelia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-spinothalamic-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-medial-lemniscus",
+      "section": "Structure and Function"
+    }
+  ]
 }

@@ -1,169 +1,145 @@
 {
- "kind": "structure",
- "id": "tract-cingulum-frontoparietal",
- "name": "Cingulum, fronto-parietal",
- "synonyms": [
-  "dorsal cingulum",
-  "cingulate bundle"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-cingulum-frontoparietal-l",
-  "tract-cingulum-frontoparietal-r"
- ],
- "summary": "The dorsal part of the cingulum bundle runs in the white matter of the cingulate gyrus above the corpus callosum, from the subgenual and anterior cingulate cortex back to the posterior cingulate and the precuneus, collecting and distributing fibers along its length. It is the backbone of the medial default mode and limbic networks, connecting the anterior thalamic radiation and the medial prefrontal cortex with the posterior cingulate, retrosplenial cortex and parietal cortex, and it carries the fibers that cingulotomy divides for pain and obsessive-compulsive disorder. Its integrity is reduced in Alzheimer disease, mild cognitive impairment and depression, and its interruption by anterior cerebral artery infarcts, butterfly gliomas and callosal surgery produces attention, memory and motivational deficits.",
- "anatomy": {
-  "location": "Within the cingulate gyrus from the subcallosal region forward of the genu, over the body of the corpus callosum in the depth of the cingulate gyrus, to the splenium, where it continues as the parahippocampal cingulum; it receives and gives off fibers to the medial frontal, cingulate, precuneal and parietal cortex along the way.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Anterior thalamic nuclei and medial prefrontal cortex",
-    "via": "anterior origin"
-   },
-   {
-    "from": "Posterior cingulate, precuneus and parietal cortex",
-    "via": "posterior origin"
-   }
+  "kind": "structure",
+  "id": "tract-cingulum-frontoparietal",
+  "name": "Cingulum, fronto-parietal",
+  "synonyms": [
+    "dorsal cingulum",
+    "cingulate bundle"
   ],
-  "efferents": [
-   {
-    "to": "Cingulate cortex along its length",
-    "via": "distributed termination"
-   },
-   {
-    "to": "Parahippocampal cingulum and entorhinal cortex",
-    "via": "posterior continuation"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-cingulum-frontoparietal-l",
+    "tract-cingulum-frontoparietal-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "The dorsal cingulum links the anterior cingulate and medial prefrontal cortex with the posterior cingulate, precuneus and retrosplenial cortex, carrying the executive, motivational and attentional signals of the medial frontal lobe to the posterior memory and self-referential regions and returning memory retrieval signals forward; it also carries the anterior thalamic projection to the cingulate cortex and the cingulate's input to the motor and prefrontal cortex. Interruption reduces attention and executive function, disturbs the affective component of pain (the target of cingulotomy), and disconnects memory retrieval from the frontal strategy, and its degeneration parallels the posterior cingulate hypometabolism of early Alzheimer disease.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-aca",
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "tract-cingulum-frontoparietal-l"
+  "summary": "The dorsal part of the cingulum bundle runs in the white matter of the cingulate gyrus above the corpus callosum, from the subgenual and anterior cingulate cortex back to the posterior cingulate and the precuneus, collecting and distributing fibers along its length. It is the backbone of the medial default mode and limbic networks, connecting the anterior thalamic radiation and the medial prefrontal cortex with the posterior cingulate, retrosplenial cortex and parietal cortex, and it carries the fibers that cingulotomy divides for pain and obsessive-compulsive disorder. Its integrity is reduced in Alzheimer disease, mild cognitive impairment and depression, and its interruption by anterior cerebral artery infarcts, butterfly gliomas and callosal surgery produces attention, memory and motivational deficits.",
+  "anatomy": {
+    "location": "Within the cingulate gyrus from the subcallosal region forward of the genu, over the body of the corpus callosum in the depth of the cingulate gyrus, to the splenium, where it continues as the parahippocampal cingulum; it receives and gives off fibers to the medial frontal, cingulate, precuneal and parietal cortex along the way.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior thalamic nuclei and medial prefrontal cortex",
+        "via": "anterior origin"
+      },
+      {
+        "from": "Posterior cingulate, precuneus and parietal cortex",
+        "via": "posterior origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Cingulate cortex along its length",
+        "via": "distributed termination"
+      },
+      {
+        "to": "Parahippocampal cingulum and entorhinal cortex",
+        "via": "posterior continuation"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "The dorsal cingulum links the anterior cingulate and medial prefrontal cortex with the posterior cingulate, precuneus and retrosplenial cortex, carrying the executive, motivational and attentional signals of the medial frontal lobe to the posterior memory and self-referential regions and returning memory retrieval signals forward; it also carries the anterior thalamic projection to the cingulate cortex and the cingulate's input to the motor and prefrontal cortex. Interruption reduces attention and executive function, disturbs the affective component of pain (the target of cingulotomy), and disconnects memory retrieval from the frontal strategy, and its degeneration parallels the posterior cingulate hypometabolism of early Alzheimer disease.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "tract-cingulum-frontoparietal-l"
+        },
+        "label": "dorsal cingulum in the cingulate gyrus above the corpus callosum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-cingulum-frontoparietal-r"
+        },
+        "label": "cingulum bundle in the depth of the cingulate gyrus"
+      }
+    ],
+    "normalAppearance": "Tractography shows a long green bundle above the corpus callosum from the subgenual region to the splenium; on coronal T2 it is the round white-matter core of the cingulate gyrus above the callosum.",
+    "pathology": [
+      {
+        "pathology": "Anterior cerebral artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the medial frontal cortex and the cingulum with apathy, memory impairment and attentional deficit.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Butterfly glioma of the corpus callosum",
+        "modality": "MRI",
+        "finding": "Enhancing mass crossing the callosum and infiltrating both cingula with personality change and abulia.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "MRI",
+        "finding": "Reduced fractional anisotropy of the posterior cingulum on diffusion imaging in mild cognitive impairment, preceding hippocampal atrophy.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired attention and executive control",
+        "side": "bilateral",
+        "mechanism": "Disconnection of the anterior cingulate from the posterior default mode and parietal cortex"
+      },
+      {
+        "deficit": "Reduced affective response to pain after cingulotomy",
+        "side": "bilateral",
+        "mechanism": "Interruption of the cingulate limb of the pain network"
+      },
+      {
+        "deficit": "Memory retrieval deficits",
+        "side": "bilateral",
+        "mechanism": "Disconnection of the frontal strategy from the posterior cingulate retrieval hub"
+      }
+    ],
+    "examination": [
+      "Sustained attention and executive testing",
+      "Delayed recall with cues",
+      "Mood and motivation"
+    ],
+    "syndromes": [
+      "syn-aca-infarct",
+      "syn-callosal-disconnection"
+    ],
+    "pearls": [
+      "The cingulum is the medial highway of the limbic lobe; Papez sends memory along it from the anterior thalamus to the parahippocampal gyrus",
+      "Cingulotomy leaves the sensation and removes the suffering by cutting this bundle",
+      "Posterior cingulum degeneration is one of the earliest white-matter changes of Alzheimer disease"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
     },
-    "label": "dorsal cingulum in the cingulate gyrus above the corpus callosum"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-cingulum-frontoparietal-r"
-    },
-    "label": "cingulum bundle in the depth of the cingulate gyrus"
-   }
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows a long green bundle above the corpus callosum from the subgenual region to the splenium; on coronal T2 it is the round white-matter core of the cingulate gyrus above the callosum.",
-  "pathology": [
-   {
-    "pathology": "Anterior cerebral artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the medial frontal cortex and the cingulum with apathy, memory impairment and attentional deficit.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Butterfly glioma of the corpus callosum",
-    "modality": "MRI",
-    "finding": "Enhancing mass crossing the callosum and infiltrating both cingula with personality change and abulia.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "MRI",
-    "finding": "Reduced fractional anisotropy of the posterior cingulum on diffusion imaging in mild cognitive impairment, preceding hippocampal atrophy.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired attention and executive control",
-    "side": "bilateral",
-    "mechanism": "Disconnection of the anterior cingulate from the posterior default mode and parietal cortex"
-   },
-   {
-    "deficit": "Reduced affective response to pain after cingulotomy",
-    "side": "bilateral",
-    "mechanism": "Interruption of the cingulate limb of the pain network"
-   },
-   {
-    "deficit": "Memory retrieval deficits",
-    "side": "bilateral",
-    "mechanism": "Disconnection of the frontal strategy from the posterior cingulate retrieval hub"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Sustained attention and executive testing",
-   "Delayed recall with cues",
-   "Mood and motivation"
-  ],
-  "syndromes": [
-   "syn-aca-infarct",
-   "syn-callosal-disconnection"
-  ],
-  "pearls": [
-   "The cingulum is the medial highway of the limbic lobe; Papez sends memory along it from the anterior thalamus to the parahippocampal gyrus",
-   "Cingulotomy leaves the sensation and removes the suffering by cutting this bundle",
-   "Posterior cingulum degeneration is one of the earliest white-matter changes of Alzheimer disease"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "gyrus-cingulate"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "gyrus-cingulate"
 }

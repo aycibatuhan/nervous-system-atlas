@@ -1,321 +1,301 @@
 {
- "kind": "cranial-nerve",
- "id": "cn-02-optic",
- "name": "Optic nerve (CN II)",
- "synonyms": [],
- "system": "cranial-nerves",
- "meshIds": [
-  "cn-02-optic-l",
-  "cn-02-optic-r",
-  "optic-nerve-l",
-  "optic-nerve-r",
-  "optic-chiasm",
-  "optic-tract-l",
-  "optic-tract-r"
- ],
- "summary": "The optic nerve is not a peripheral nerve but a tract of the central nervous system: the axons of the retinal ganglion cells, myelinated by oligodendrocytes and wrapped in all three meninges with a subarachnoid space, so it swells with raised intracranial pressure (papilledema) and is attacked by multiple sclerosis (optic neuritis). It runs from the optic disc through the orbit and the optic canal to the chiasm, where nasal fibers cross, and continues as the optic tract to the lateral geniculate body, the pretectum and the superior colliculus. Its lesions cause monocular visual loss with a relative afferent pupillary defect, and lesions from the chiasm backward cause binocular field defects.",
- "anatomy": {
-  "location": "Optic disc → intraorbital segment (25 mm, S-shaped to allow eye movement, surrounded by the extraocular muscle cone) → intracanalicular segment (in the optic canal with the ophthalmic artery) → intracranial segment (10 mm, above the cavernous sinus and below the ACA) → chiasm in the suprasellar cistern → optic tract around the cerebral peduncle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-visual",
-   "pathway-pupillary-light-reflex"
-  ]
- },
- "function": "Transmission of visual information (acuity, color, fields) from the retina to the lateral geniculate body and visual cortex, and of the afferent limb of the pupillary light reflex to the pretectum.",
- "bloodSupply": {
-  "arteries": [
-   "artery-ophthalmic",
-   "artery-internal-carotid",
-   "artery-anterior-choroidal"
+  "kind": "cranial-nerve",
+  "id": "cn-02-optic",
+  "name": "Optic nerve (CN II)",
+  "synonyms": [],
+  "system": "cranial-nerves",
+  "meshIds": [
+    "cn-02-optic-l",
+    "cn-02-optic-r",
+    "optic-nerve-l",
+    "optic-nerve-r",
+    "optic-chiasm",
+    "optic-tract-l",
+    "optic-tract-r"
   ],
-  "territories": [
-   "territory-anterior-choroidal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": 30,
-     "z": -15
-    },
-    "label": "intraorbital optic nerves converging on the optic canals"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": 2,
-     "z": -18
-    },
-    "label": "chiasm above the pituitary"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": -8,
-     "z": -12
-    },
-    "label": "optic tracts around the cerebral peduncles to the lateral geniculate bodies"
-   }
-  ],
-  "normalAppearance": "The nerve is a cord of intermediate signal within a CSF-filled sheath on coronal fat-saturated T2 (the sheath widens in raised pressure); the chiasm is a flat band above the sella. Optic neuritis shows T2 hyperintensity and enhancement of a segment; meningioma of the sheath enhances around a normal nerve (tram-track).",
-  "pathology": [
-   {
-    "pathology": "Optic neuritis",
-    "modality": "MRI",
-    "finding": "Swollen, T2-bright, enhancing segment of the nerve on fat-saturated coronal images; long segments and chiasmal involvement suggest neuromyelitis optica, perineural enhancement suggests MOG antibody disease.",
-    "sequence": "T1+Gd",
-    "timing": "Enhancement lasts about 30 days"
-   },
-   {
-    "pathology": "Papilledema",
-    "modality": "MRI",
-    "finding": "Distended optic nerve sheaths, flattened posterior globes, protrusion of the disc into the vitreous, empty sella.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Optic nerve sheath meningioma",
-    "modality": "MRI",
-    "finding": "Tram-track enhancement of the sheath around a non-enhancing nerve with slowly progressive monocular visual loss.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Optic pathway glioma",
-    "modality": "MRI",
-    "finding": "Fusiform enlargement of the nerve, chiasm or tract, often in neurofibromatosis 1.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Traumatic optic neuropathy",
-    "modality": "CT",
-    "finding": "Optic canal fracture with sudden monocular blindness after frontal trauma.",
-    "sequence": "CT non-contrast"
-   }
-  ],
-  "sequenceOfChoice": "Coronal fat-saturated T2 and T1+Gd of the orbits and chiasm; CT for the canal"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Monocular visual loss with a relative afferent pupillary defect",
-    "side": "ipsilateral",
-    "mechanism": "Optic nerve"
-   },
-   {
-    "deficit": "Bitemporal hemianopia",
-    "side": "bilateral",
-    "mechanism": "Chiasm (crossing nasal fibers)"
-   },
-   {
-    "deficit": "Incongruous homonymous hemianopia with a contralateral RAPD",
-    "side": "contralateral",
-    "mechanism": "Optic tract"
-   },
-   {
-    "deficit": "Central scotoma with pain on eye movement and color desaturation",
-    "side": "ipsilateral",
-    "mechanism": "Optic neuritis"
-   },
-   {
-    "deficit": "Altitudinal field loss with a swollen pale disc",
-    "side": "ipsilateral",
-    "mechanism": "Anterior ischemic optic neuropathy"
-   },
-   {
-    "deficit": "Enlarged blind spots with preserved acuity",
-    "side": "bilateral",
-    "mechanism": "Papilledema"
-   }
-  ],
-  "examination": [
-   "Acuity with correction, color vision (Ishihara or red desaturation), confrontation fields per eye",
-   "Swinging flashlight test for RAPD",
-   "Fundoscopy: disc swelling, pallor, hemorrhages",
-   "Pain on eye movement (neuritis)"
-  ],
-  "syndromes": [
-   "syn-optic-neuritis",
-   "syn-chiasmal-bitemporal",
-   "syn-rapd",
-   "syn-homonymous-hemianopia",
-   "syn-idiopathic-intracranial-hypertension"
-  ],
-  "pearls": [
-   "An RAPD means an asymmetric lesion in front of the lateral geniculate body: nerve, chiasm or tract. Cortical and geniculate lesions never give an RAPD",
-   "Painful monocular loss with a normal disc in a young adult is retrobulbar optic neuritis: think multiple sclerosis"
-  ]
- },
- "pitfalls": [
-  "Papilledema is bilateral and painless with preserved acuity early; optic neuritis is usually unilateral and painful with reduced acuity"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    324,
-    329
-   ]
+  "summary": "The optic nerve is not a peripheral nerve but a tract of the central nervous system: the axons of the retinal ganglion cells, myelinated by oligodendrocytes and wrapped in all three meninges with a subarachnoid space, so it swells with raised intracranial pressure (papilledema) and is attacked by multiple sclerosis (optic neuritis). It runs from the optic disc through the orbit and the optic canal to the chiasm, where nasal fibers cross, and continues as the optic tract to the lateral geniculate body, the pretectum and the superior colliculus. Its lesions cause monocular visual loss with a relative afferent pupillary defect, and lesions from the chiasm backward cause binocular field defects.",
+  "anatomy": {
+    "location": "Optic disc → intraorbital segment (25 mm, S-shaped to allow eye movement, surrounded by the extraocular muscle cone) → intracanalicular segment (in the optic canal with the ophthalmic artery) → intracranial segment (10 mm, above the cavernous sinus and below the ACA) → chiasm in the suprasellar cistern → optic tract around the cerebral peduncle.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    349,
-    350
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-visual",
+      "pathway-pupillary-light-reflex"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
+  "function": "Transmission of visual information (acuity, color, fields) from the retina to the lateral geniculate body and visual cortex, and of the afferent limb of the pupillary light reflex to the pretectum.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-ophthalmic",
+      "artery-internal-carotid",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-anterior-choroidal"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 21,
-   "pages": [
-    229,
-    229
-   ]
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": 30,
+          "z": -15
+        },
+        "label": "intraorbital optic nerves converging on the optic canals"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": 2,
+          "z": -18
+        },
+        "label": "chiasm above the pituitary"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": -8,
+          "z": -12
+        },
+        "label": "optic tracts around the cerebral peduncles to the lateral geniculate bodies"
+      }
+    ],
+    "normalAppearance": "The nerve is a cord of intermediate signal within a CSF-filled sheath on coronal fat-saturated T2 (the sheath widens in raised pressure); the chiasm is a flat band above the sella. Optic neuritis shows T2 hyperintensity and enhancement of a segment; meningioma of the sheath enhances around a normal nerve (tram-track).",
+    "pathology": [
+      {
+        "pathology": "Optic neuritis",
+        "modality": "MRI",
+        "finding": "Swollen, T2-bright, enhancing segment of the nerve on fat-saturated coronal images; long segments and chiasmal involvement suggest neuromyelitis optica, perineural enhancement suggests MOG antibody disease.",
+        "sequence": "T1+Gd",
+        "timing": "Enhancement lasts about 30 days"
+      },
+      {
+        "pathology": "Papilledema",
+        "modality": "MRI",
+        "finding": "Distended optic nerve sheaths, flattened posterior globes, protrusion of the disc into the vitreous, empty sella.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Optic nerve sheath meningioma",
+        "modality": "MRI",
+        "finding": "Tram-track enhancement of the sheath around a non-enhancing nerve with slowly progressive monocular visual loss.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Optic pathway glioma",
+        "modality": "MRI",
+        "finding": "Fusiform enlargement of the nerve, chiasm or tract, often in neurofibromatosis 1.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Traumatic optic neuropathy",
+        "modality": "CT",
+        "finding": "Optic canal fracture with sudden monocular blindness after frontal trauma.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "Coronal fat-saturated T2 and T1+Gd of the orbits and chiasm; CT for the canal"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Monocular visual loss with a relative afferent pupillary defect",
+        "side": "ipsilateral",
+        "mechanism": "Optic nerve"
+      },
+      {
+        "deficit": "Bitemporal hemianopia",
+        "side": "bilateral",
+        "mechanism": "Chiasm (crossing nasal fibers)"
+      },
+      {
+        "deficit": "Incongruous homonymous hemianopia with a contralateral RAPD",
+        "side": "contralateral",
+        "mechanism": "Optic tract"
+      },
+      {
+        "deficit": "Central scotoma with pain on eye movement and color desaturation",
+        "side": "ipsilateral",
+        "mechanism": "Optic neuritis"
+      },
+      {
+        "deficit": "Altitudinal field loss with a swollen pale disc",
+        "side": "ipsilateral",
+        "mechanism": "Anterior ischemic optic neuropathy"
+      },
+      {
+        "deficit": "Enlarged blind spots with preserved acuity",
+        "side": "bilateral",
+        "mechanism": "Papilledema"
+      }
+    ],
+    "examination": [
+      "Acuity with correction, color vision (Ishihara or red desaturation), confrontation fields per eye",
+      "Swinging flashlight test for RAPD",
+      "Fundoscopy: disc swelling, pallor, hemorrhages",
+      "Pain on eye movement (neuritis)"
+    ],
+    "syndromes": [
+      "syn-optic-neuritis",
+      "syn-chiasmal-bitemporal",
+      "syn-rapd",
+      "syn-homonymous-hemianopia",
+      "syn-idiopathic-intracranial-hypertension"
+    ],
+    "pearls": [
+      "An RAPD means an asymmetric lesion in front of the lateral geniculate body: nerve, chiasm or tract. Cortical and geniculate lesions never give an RAPD",
+      "Painful monocular loss with a normal disc in a young adult is retrobulbar optic neuritis: think multiple sclerosis"
+    ]
+  },
+  "pitfalls": [
+    "Papilledema is bilateral and painless with preserved acuity early; optic neuritis is usually unilateral and painful with reduced acuity"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cranial-nerve-2",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-optic-canal",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-optic-cup",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "cranial-nerve"
+  ],
+  "status": "draft",
+  "latin": "Nervus opticus",
+  "cranial": {
+    "number": 2,
+    "roman": "II",
+    "components": [
+      "SSA"
+    ],
+    "nuclei": [
+      {
+        "structureId": "lateral-geniculate-nucleus",
+        "component": "SSA relay (retinal ganglion cells are the second-order neurons; the nerve has no brainstem nucleus)",
+        "level": "diencephalon"
+      },
+      {
+        "structureId": "pretectal-area",
+        "component": "pupillary light reflex relay",
+        "level": "midbrain-superior-colliculus"
+      },
+      {
+        "structureId": "superior-colliculus",
+        "component": "visual reflexes",
+        "level": "midbrain-superior-colliculus"
+      }
+    ],
+    "ganglia": [
+      {
+        "name": "(none; retinal ganglion cells in the retina)",
+        "type": "sensory"
+      }
+    ],
+    "exit": {
+      "brainstemExit": "Not a brainstem nerve: the optic tract enters the diencephalon at the lateral geniculate body",
+      "cisternalCourse": "Intracranial segment above the cavernous sinus and diaphragma sellae to the chiasm in the suprasellar cistern; optic tract in the crural and ambient cisterns",
+      "foramen": "Optic canal of the sphenoid (with the ophthalmic artery), inside the annulus of Zinn",
+      "extracranialCourse": "Intraorbital nerve within the muscle cone, surrounded by fat and the meningeal sheath, to the back of the globe"
+    },
+    "branches": [
+      {
+        "name": "Optic tract (retinogeniculate fibers)",
+        "supplies": "lateral geniculate body → optic radiation → calcarine cortex"
+      },
+      {
+        "name": "Retinopretectal fibers",
+        "supplies": "pretectal nuclei for the light reflex"
+      },
+      {
+        "name": "Retinocollicular fibers",
+        "supplies": "superior colliculus"
+      },
+      {
+        "name": "Retinohypothalamic tract",
+        "supplies": "suprachiasmatic nucleus for circadian rhythm"
+      }
+    ],
+    "reflexes": [
+      {
+        "name": "Pupillary light reflex",
+        "afferent": "optic nerve (retinal ganglion cells)",
+        "center": "pretectal nucleus, both Edinger–Westphal nuclei",
+        "efferent": "oculomotor nerve to sphincter pupillae, both eyes"
+      },
+      {
+        "name": "Accommodation (near) reflex",
+        "afferent": "optic nerve and visual cortex",
+        "center": "visual association cortex → Edinger–Westphal via the pretectum",
+        "efferent": "oculomotor nerve to ciliary muscle, sphincter pupillae and medial recti"
+      },
+      {
+        "name": "Blink to threat",
+        "afferent": "optic nerve and visual cortex",
+        "center": "cortical and collicular",
+        "efferent": "facial nerve to orbicularis oculi"
+      }
+    ],
+    "tests": [
+      {
+        "name": "Visual acuity",
+        "how": "Snellen chart with correction, each eye",
+        "normal": "6/6 or baseline",
+        "abnormal": "Reduced acuity that does not improve with a pinhole"
+      },
+      {
+        "name": "Confrontation fields",
+        "how": "Compare the patient's field with your own, each eye, all quadrants, with fingers or a red pin",
+        "normal": "Full fields",
+        "abnormal": "Monocular defect (nerve), bitemporal (chiasm), homonymous (tract or beyond)"
+      },
+      {
+        "name": "Swinging flashlight test",
+        "how": "Alternate the light between pupils every 1–2 seconds in dim light",
+        "normal": "Both pupils constrict equally",
+        "abnormal": "The affected pupil dilates when the light swings onto it (RAPD)"
+      },
+      {
+        "name": "Fundoscopy",
+        "how": "Examine the disc margin, color and cup",
+        "normal": "Sharp margin, pink rim",
+        "abnormal": "Swelling (papillitis, papilledema) or pallor (atrophy)"
+      }
+    ],
+    "lesionSigns": [
+      {
+        "sign": "Monocular loss with RAPD",
+        "localisingValue": "optic nerve"
+      },
+      {
+        "sign": "Bitemporal field loss",
+        "localisingValue": "chiasm"
+      },
+      {
+        "sign": "Incongruous homonymous hemianopia with RAPD",
+        "localisingValue": "optic tract (the only homonymous lesion with a pupil sign)"
+      },
+      {
+        "sign": "Junctional scotoma",
+        "localisingValue": "junction of nerve and chiasm"
+      },
+      {
+        "sign": "Disc swelling with normal acuity",
+        "localisingValue": "papilledema (raised pressure) rather than optic neuritis"
+      }
+    ]
   }
- ],
- "tags": [
-  "cranial-nerve"
- ],
- "status": "draft",
- "latin": "Nervus opticus",
- "cranial": {
-  "number": 2,
-  "roman": "II",
-  "components": [
-   "SSA"
-  ],
-  "nuclei": [
-   {
-    "structureId": "lateral-geniculate-nucleus",
-    "component": "SSA relay (retinal ganglion cells are the second-order neurons; the nerve has no brainstem nucleus)",
-    "level": "diencephalon"
-   },
-   {
-    "structureId": "pretectal-area",
-    "component": "pupillary light reflex relay",
-    "level": "midbrain-superior-colliculus"
-   },
-   {
-    "structureId": "superior-colliculus",
-    "component": "visual reflexes",
-    "level": "midbrain-superior-colliculus"
-   }
-  ],
-  "ganglia": [
-   {
-    "name": "(none; retinal ganglion cells in the retina)",
-    "type": "sensory"
-   }
-  ],
-  "exit": {
-   "brainstemExit": "Not a brainstem nerve: the optic tract enters the diencephalon at the lateral geniculate body",
-   "cisternalCourse": "Intracranial segment above the cavernous sinus and diaphragma sellae to the chiasm in the suprasellar cistern; optic tract in the crural and ambient cisterns",
-   "foramen": "Optic canal of the sphenoid (with the ophthalmic artery), inside the annulus of Zinn",
-   "extracranialCourse": "Intraorbital nerve within the muscle cone, surrounded by fat and the meningeal sheath, to the back of the globe"
-  },
-  "branches": [
-   {
-    "name": "Optic tract (retinogeniculate fibers)",
-    "supplies": "lateral geniculate body → optic radiation → calcarine cortex"
-   },
-   {
-    "name": "Retinopretectal fibers",
-    "supplies": "pretectal nuclei for the light reflex"
-   },
-   {
-    "name": "Retinocollicular fibers",
-    "supplies": "superior colliculus"
-   },
-   {
-    "name": "Retinohypothalamic tract",
-    "supplies": "suprachiasmatic nucleus for circadian rhythm"
-   }
-  ],
-  "reflexes": [
-   {
-    "name": "Pupillary light reflex",
-    "afferent": "optic nerve (retinal ganglion cells)",
-    "center": "pretectal nucleus, both Edinger–Westphal nuclei",
-    "efferent": "oculomotor nerve to sphincter pupillae, both eyes"
-   },
-   {
-    "name": "Accommodation (near) reflex",
-    "afferent": "optic nerve and visual cortex",
-    "center": "visual association cortex → Edinger–Westphal via the pretectum",
-    "efferent": "oculomotor nerve to ciliary muscle, sphincter pupillae and medial recti"
-   },
-   {
-    "name": "Blink to threat",
-    "afferent": "optic nerve and visual cortex",
-    "center": "cortical and collicular",
-    "efferent": "facial nerve to orbicularis oculi"
-   }
-  ],
-  "tests": [
-   {
-    "name": "Visual acuity",
-    "how": "Snellen chart with correction, each eye",
-    "normal": "6/6 or baseline",
-    "abnormal": "Reduced acuity that does not improve with a pinhole"
-   },
-   {
-    "name": "Confrontation fields",
-    "how": "Compare the patient's field with your own, each eye, all quadrants, with fingers or a red pin",
-    "normal": "Full fields",
-    "abnormal": "Monocular defect (nerve), bitemporal (chiasm), homonymous (tract or beyond)"
-   },
-   {
-    "name": "Swinging flashlight test",
-    "how": "Alternate the light between pupils every 1–2 seconds in dim light",
-    "normal": "Both pupils constrict equally",
-    "abnormal": "The affected pupil dilates when the light swings onto it (RAPD)"
-   },
-   {
-    "name": "Fundoscopy",
-    "how": "Examine the disc margin, color and cup",
-    "normal": "Sharp margin, pink rim",
-    "abnormal": "Swelling (papillitis, papilledema) or pallor (atrophy)"
-   }
-  ],
-  "lesionSigns": [
-   {
-    "sign": "Monocular loss with RAPD",
-    "localisingValue": "optic nerve"
-   },
-   {
-    "sign": "Bitemporal field loss",
-    "localisingValue": "chiasm"
-   },
-   {
-    "sign": "Incongruous homonymous hemianopia with RAPD",
-    "localisingValue": "optic tract (the only homonymous lesion with a pupil sign)"
-   },
-   {
-    "sign": "Junctional scotoma",
-    "localisingValue": "junction of nerve and chiasm"
-   },
-   {
-    "sign": "Disc swelling with normal acuity",
-    "localisingValue": "papilledema (raised pressure) rather than optic neuritis"
-   }
-  ]
- }
 }

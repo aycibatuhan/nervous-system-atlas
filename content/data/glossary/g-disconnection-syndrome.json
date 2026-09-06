@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-disconnection-syndrome",
- "term": "Disconnection syndrome",
- "definition": "A deficit produced by interrupting the white-matter connection between two intact cortical areas rather than by destroying either: conduction aphasia (arcuate fasciculus), alexia without agraphia (splenium), left-hand apraxia and agraphia (callosal body), and the split-brain syndrome after callosotomy.",
- "related": [
-  "g-conduction-aphasia",
-  "g-alexia-without-agraphia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-disconnection-syndrome",
+  "term": "Disconnection syndrome",
+  "definition": "A deficit produced by interrupting the white-matter connection between two intact cortical areas rather than by destroying either: conduction aphasia (arcuate fasciculus), alexia without agraphia (splenium), left-hand apraxia and agraphia (callosal body), and the split-brain syndrome after callosotomy.",
+  "related": [
+    "g-conduction-aphasia",
+    "g-alexia-without-agraphia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-corpus-callosum",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-alexia",
+      "section": "Pathophysiology"
+    }
+  ]
 }

@@ -4,6 +4,7 @@ import { Pathway } from './pathway.ts';
 import { Syndrome, GlossaryTerm, QuizItem } from './syndrome.ts';
 import { Topic } from './topic.ts';
 export * from './common.ts';
+export { BibEntry } from './bibliography.ts';
 export { Structure, CranialNerve, Pathway, Syndrome, GlossaryTerm, QuizItem, Topic };
 export const Entry = z.discriminatedUnion('kind', [Structure, CranialNerve, Pathway, Syndrome, GlossaryTerm, QuizItem, Topic]);
 export type Entry = z.infer<typeof Entry>;

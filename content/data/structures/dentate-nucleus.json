@@ -1,153 +1,141 @@
 {
- "kind": "structure",
- "id": "dentate-nucleus",
- "name": "Dentate nucleus",
- "synonyms": [],
- "system": "cerebellum",
- "meshIds": [
-  "dentate-nucleus-l",
-  "dentate-nucleus-r"
- ],
- "summary": "The largest and most lateral of the deep cerebellar nuclei, a crinkled sheet of neurons within the white matter of each hemisphere that gives the cerebellum its main output. It receives Purkinje cell axons from the lateral hemisphere and collaterals of mossy and climbing fibers, and sends its axons through the superior cerebellar peduncle to cross in the midbrain and reach the contralateral red nucleus and ventral lateral thalamus, from which the motor cortex is informed. It accumulates iron and gadolinium with age, making it conspicuous on SWI and T1.",
- "anatomy": {
-  "location": "Deep in the white matter of each cerebellar hemisphere, lateral to the roof of the fourth ventricle and medial to the hemispheric folia; the emboliform nucleus lies just medial to its hilum.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cerebellar-hemisphere",
-    "note": "Purkinje cell axons"
-   }
+  "kind": "structure",
+  "id": "dentate-nucleus",
+  "name": "Dentate nucleus",
+  "synonyms": [],
+  "system": "cerebellum",
+  "meshIds": [
+    "dentate-nucleus-l",
+    "dentate-nucleus-r"
   ],
-  "efferents": [
-   {
-    "to": "red-nucleus and thalamus-va-vl (contralateral)",
-    "via": "superior-cerebellar-peduncle"
-   }
-  ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Final relay of the neocerebellar (lateral zone) circuit that times and coordinates skilled limb movement; its output via the thalamus prepares and adjusts cortical motor commands.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca",
-   "artery-pica"
-  ],
-  "territories": [
-   "territory-sca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 15,
-     "y": -58,
-     "z": -35
-    },
-    "label": "dentate nuclei as wavy bands in the hemispheric white matter"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 15,
-     "y": -58,
-     "z": -35
-    },
-    "label": "dentate lateral to the fourth ventricle roof"
-   }
-  ],
-  "normalAppearance": "A crenated dark band on T2* and SWI (iron) and increasingly bright on unenhanced T1 after repeated gadolinium exposure; on routine T1/T2 in the young it is subtle. Symmetrical T2 hyperintensity of the dentate is a metabolic clue.",
-  "pathology": [
-   {
-    "pathology": "Dentate T2 hyperintensity",
-    "modality": "MRI",
-    "finding": "Symmetrical bright dentate nuclei on T2/FLAIR in metronidazole toxicity, cerebrotendinous xanthomatosis, Wilson disease, maple syrup urine disease or mitochondrial disease.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Dentate infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the deep hemisphere within an SCA infarct.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Gadolinium retention",
-    "modality": "MRI",
-    "finding": "Bright dentate on precontrast T1 after many linear-agent doses; no known symptoms.",
-    "sequence": "T1"
-   }
-  ],
-  "sequenceOfChoice": "Axial T2/FLAIR and SWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia, intention tremor, dysmetria",
-    "side": "ipsilateral",
-    "mechanism": "Loss of hemispheric output before it crosses"
-   },
-   {
-    "deficit": "Holmes tremor after lesions of its outflow",
-    "side": "contralateral",
-    "mechanism": "Dentatorubrothalamic fibers after the decussation"
-   },
-   {
-    "deficit": "Palatal tremor after a lesion of the dentate or its outflow",
-    "side": "n/a",
-    "mechanism": "Dentato-rubro-olivary (Guillain–Mollaret) triangle interrupted, with later olivary hypertrophy"
-   }
-  ],
-  "examination": [
-   "Finger-nose and heel-shin",
-   "Rebound and rapid alternating movements",
-   "Inspect the palate for rhythmic movement in chronic cases"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-claude",
-   "syn-benedikt"
-  ],
-  "pearls": [
-   "Bilateral bright dentate nuclei in a patient on metronidazole: stop the drug",
-   "Damage to the dentate or the superior peduncle is the usual cause of cerebellar mutism after childhood posterior fossa surgery"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    233,
-    234
-   ]
+  "summary": "The largest and most lateral of the deep cerebellar nuclei, a crinkled sheet of neurons within the white matter of each hemisphere that gives the cerebellum its main output. It receives Purkinje cell axons from the lateral hemisphere and collaterals of mossy and climbing fibers, and sends its axons through the superior cerebellar peduncle to cross in the midbrain and reach the contralateral red nucleus and ventral lateral thalamus, from which the motor cortex is informed. It accumulates iron and gadolinium with age, making it conspicuous on SWI and T1.",
+  "anatomy": {
+    "location": "Deep in the white matter of each cerebellar hemisphere, lateral to the roof of the fourth ventricle and medial to the hemispheric folia; the emboliform nucleus lies just medial to its hilum.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    239,
-    240
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "cerebellar-hemisphere",
+        "note": "Purkinje cell axons"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "red-nucleus and thalamus-va-vl (contralateral)",
+        "via": "superior-cerebellar-peduncle"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    70
-   ]
-  }
- ],
- "tags": [
-  "cerebellum"
- ],
- "status": "draft",
- "latin": "Nucleus dentatus",
- "subsystem": "deep-nuclei"
+  "function": "Final relay of the neocerebellar (lateral zone) circuit that times and coordinates skilled limb movement; its output via the thalamus prepares and adjusts cortical motor commands.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca",
+      "artery-pica"
+    ],
+    "territories": [
+      "territory-sca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 15,
+          "y": -58,
+          "z": -35
+        },
+        "label": "dentate nuclei as wavy bands in the hemispheric white matter"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 15,
+          "y": -58,
+          "z": -35
+        },
+        "label": "dentate lateral to the fourth ventricle roof"
+      }
+    ],
+    "normalAppearance": "A crenated dark band on T2* and SWI (iron) and increasingly bright on unenhanced T1 after repeated gadolinium exposure; on routine T1/T2 in the young it is subtle. Symmetrical T2 hyperintensity of the dentate is a metabolic clue.",
+    "pathology": [
+      {
+        "pathology": "Dentate T2 hyperintensity",
+        "modality": "MRI",
+        "finding": "Symmetrical bright dentate nuclei on T2/FLAIR in metronidazole toxicity, cerebrotendinous xanthomatosis, Wilson disease, maple syrup urine disease or mitochondrial disease.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Dentate infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the deep hemisphere within an SCA infarct.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Gadolinium retention",
+        "modality": "MRI",
+        "finding": "Bright dentate on precontrast T1 after many linear-agent doses; no known symptoms.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Axial T2/FLAIR and SWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia, intention tremor, dysmetria",
+        "side": "ipsilateral",
+        "mechanism": "Loss of hemispheric output before it crosses"
+      },
+      {
+        "deficit": "Holmes tremor after lesions of its outflow",
+        "side": "contralateral",
+        "mechanism": "Dentatorubrothalamic fibers after the decussation"
+      },
+      {
+        "deficit": "Palatal tremor after a lesion of the dentate or its outflow",
+        "side": "n/a",
+        "mechanism": "Dentato-rubro-olivary (Guillain–Mollaret) triangle interrupted, with later olivary hypertrophy"
+      }
+    ],
+    "examination": [
+      "Finger-nose and heel-shin",
+      "Rebound and rapid alternating movements",
+      "Inspect the palate for rhythmic movement in chronic cases"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-claude",
+      "syn-benedikt"
+    ],
+    "pearls": [
+      "Bilateral bright dentate nuclei in a patient on metronidazole: stop the drug",
+      "Damage to the dentate or the superior peduncle is the usual cause of cerebellar mutism after childhood posterior fossa surgery"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellum",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellar-dysfunction-2",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "cerebellum"
+  ],
+  "status": "draft",
+  "latin": "Nucleus dentatus",
+  "subsystem": "deep-nuclei"
 }

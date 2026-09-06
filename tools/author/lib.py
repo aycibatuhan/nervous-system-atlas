@@ -3,9 +3,14 @@ import json, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DIRS = {"structure": "structures", "cranial-nerve": "cranial-nerves", "pathway": "pathways", "syndrome": "syndromes", "glossary": "glossary", "quiz": "quiz", "topic": "topics"}
 
-def C(book, ch, a, b=None, section=None):
-    d = {"book": book, "chapter": ch, "pages": [a, b or a]}
+def R(ref, section=None, note=None):
+    """One open-access citation: `ref` is the file name of a content/bibliography/<ref>.json entry.
+
+    Add new sources with tools/cite/statpearls.py (StatPearls) or tools/cite/oa.py (PMC article,
+    open textbook, verified web page) — never hand-write a bibliography file."""
+    d = {"ref": ref}
     if section: d["section"] = section
+    if note: d["note"] = note
     return d
 
 def img(best, normal, path, seq=None):

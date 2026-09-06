@@ -1,138 +1,126 @@
 {
- "kind": "structure",
- "id": "frontal-eye-field",
- "name": "Frontal eye field",
- "synonyms": [
-  "Brodmann area 8",
-  "FEF"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-middle-frontal-l",
-  "gyrus-middle-frontal-r"
- ],
- "summary": "A region at the junction of the precentral sulcus and the posterior middle frontal gyrus that drives voluntary saccades to the opposite side. Its output reaches the contralateral paramedian pontine reticular formation (and the superior colliculus), so an irritative lesion drives the eyes away from the lesion and a destructive lesion leaves the eyes deviated toward it. This is the basis of the bedside rule for gaze deviation in acute stroke and seizures.",
- "anatomy": {
-  "location": "Posterior part of the middle frontal gyrus in front of the premotor cortex, at the level of the hand area of the precentral gyrus, in the MCA superior division territory.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [
-   {
-    "to": "pprf (contralateral)"
-   },
-   {
-    "to": "superior-colliculus"
-   }
+  "kind": "structure",
+  "id": "frontal-eye-field",
+  "name": "Frontal eye field",
+  "synonyms": [
+    "Brodmann area 8",
+    "FEF"
   ],
-  "pathways": [
-   "pathway-horizontal-gaze"
-  ]
- },
- "function": "Generation of voluntary saccades to the contralateral side, visual search and attention shifts; smooth pursuit contribution to the ipsilateral side.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-superior-division"
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-middle-frontal-l",
+    "gyrus-middle-frontal-r"
   ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 35,
-     "y": 5,
-     "z": 45
+  "summary": "A region at the junction of the precentral sulcus and the posterior middle frontal gyrus that drives voluntary saccades to the opposite side. Its output reaches the contralateral paramedian pontine reticular formation (and the superior colliculus), so an irritative lesion drives the eyes away from the lesion and a destructive lesion leaves the eyes deviated toward it. This is the basis of the bedside rule for gaze deviation in acute stroke and seizures.",
+  "anatomy": {
+    "location": "Posterior part of the middle frontal gyrus in front of the premotor cortex, at the level of the hand area of the precentral gyrus, in the MCA superior division territory.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [
+      {
+        "to": "pprf (contralateral)"
+      },
+      {
+        "to": "superior-colliculus"
+      }
+    ],
+    "pathways": [
+      "pathway-horizontal-gaze"
+    ]
+  },
+  "function": "Generation of voluntary saccades to the contralateral side, visual search and attention shifts; smooth pursuit contribution to the ipsilateral side.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 35,
+          "y": 5,
+          "z": 45
+        },
+        "label": "posterior middle frontal gyrus at the precentral sulcus"
+      }
+    ],
+    "normalAppearance": "Not distinguishable from neighboring cortex on structural MRI; localized by fMRI during saccade tasks. Large MCA infarcts involving it are accompanied by gaze deviation visible on the scan itself (eyes turned toward the lesion on CT).",
+    "pathology": [
+      {
+        "pathology": "MCA infarct with gaze deviation",
+        "modality": "CT",
+        "finding": "Large frontal infarct; the globes are seen deviated toward the side of the lesion on the orbital cuts.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Frontal seizure focus",
+        "modality": "MRI",
+        "finding": "Cortical lesion near the frontal eye field with ictal gaze and head version away from it.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "DWI; EEG for seizures"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Eyes deviated toward the lesion, cannot look voluntarily to the opposite side",
+        "side": "ipsilateral",
+        "mechanism": "Destruction of the drive to the contralateral PPRF; the intact opposite FEF pushes the eyes toward the lesion"
+      },
+      {
+        "deficit": "Eyes and head turn away from the lesion during a seizure",
+        "side": "contralateral",
+        "mechanism": "Ictal activation of the field"
+      },
+      {
+        "deficit": "Recovery within days",
+        "side": "n/a",
+        "mechanism": "Reflex and collicular pathways take over"
+      }
+    ],
+    "examination": [
+      "Observe resting gaze; ask the patient to look to each side",
+      "Oculocephalic reflex overcomes a frontal gaze palsy (supranuclear)",
+      "Note the direction of head and eye version at seizure onset"
+    ],
+    "syndromes": [
+      "syn-mca-stem-infarct",
+      "syn-mca-superior-division",
+      "syn-horizontal-gaze-palsy-pontine"
+    ],
+    "pearls": [
+      "Stroke: eyes look toward the lesion and away from the hemiparesis. Seizure: eyes look away from the focus. Pontine lesion: eyes look away from the lesion and toward the hemiparesis",
+      "Frontal gaze deviation recovers in days; pontine gaze palsy persists"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-prefrontal-association-cortex",
+      "section": "Structure and Function"
     },
-    "label": "posterior middle frontal gyrus at the precentral sulcus"
-   }
+    {
+      "ref": "sp-superior-colliculus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-abducens-nucleus",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not distinguishable from neighboring cortex on structural MRI; localized by fMRI during saccade tasks. Large MCA infarcts involving it are accompanied by gaze deviation visible on the scan itself (eyes turned toward the lesion on CT).",
-  "pathology": [
-   {
-    "pathology": "MCA infarct with gaze deviation",
-    "modality": "CT",
-    "finding": "Large frontal infarct; the globes are seen deviated toward the side of the lesion on the orbital cuts.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Frontal seizure focus",
-    "modality": "MRI",
-    "finding": "Cortical lesion near the frontal eye field with ictal gaze and head version away from it.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "cortex",
+    "frontal"
   ],
-  "sequenceOfChoice": "DWI; EEG for seizures"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Eyes deviated toward the lesion, cannot look voluntarily to the opposite side",
-    "side": "ipsilateral",
-    "mechanism": "Destruction of the drive to the contralateral PPRF; the intact opposite FEF pushes the eyes toward the lesion"
-   },
-   {
-    "deficit": "Eyes and head turn away from the lesion during a seizure",
-    "side": "contralateral",
-    "mechanism": "Ictal activation of the field"
-   },
-   {
-    "deficit": "Recovery within days",
-    "side": "n/a",
-    "mechanism": "Reflex and collicular pathways take over"
-   }
-  ],
-  "examination": [
-   "Observe resting gaze; ask the patient to look to each side",
-   "Oculocephalic reflex overcomes a frontal gaze palsy (supranuclear)",
-   "Note the direction of head and eye version at seizure onset"
-  ],
-  "syndromes": [
-   "syn-mca-stem-infarct",
-   "syn-mca-superior-division",
-   "syn-horizontal-gaze-palsy-pontine"
-  ],
-  "pearls": [
-   "Stroke: eyes look toward the lesion and away from the hemiparesis. Seizure: eyes look away from the focus. Pontine lesion: eyes look away from the lesion and toward the hemiparesis",
-   "Frontal gaze deviation recovers in days; pontine gaze palsy persists"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    285,
-    285
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    54
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    96,
-    98
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "frontal"
- ],
- "status": "draft",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "status": "draft",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

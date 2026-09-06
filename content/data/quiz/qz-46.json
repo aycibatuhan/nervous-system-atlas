@@ -1,55 +1,63 @@
 {
- "kind": "quiz",
- "id": "qz-46",
- "type": "identify",
- "vignette": "A 58-year-old man with atrial fibrillation has a stroke and afterward cannot repeat sentences, although he speaks fluently and understands everything; his speech contains sound substitutions that he corrects. MRI shows a small infarct in the left supramarginal white matter.",
- "stem": "Which fiber bundle is interrupted?",
- "options": [
-  {
-   "key": "A",
-   "text": "Uncinate fasciculus"
-  },
-  {
-   "key": "B",
-   "text": "Arcuate fasciculus"
-  },
-  {
-   "key": "C",
-   "text": "Inferior longitudinal fasciculus"
-  },
-  {
-   "key": "D",
-   "text": "Frontal aslant tract"
-  },
-  {
-   "key": "E",
-   "text": "Cingulum"
-  }
- ],
- "answer": "B",
- "explanation": "Conduction aphasia (fluent, comprehending, unable to repeat, self-corrected phonemic errors) is a disconnection of the posterior temporal from the frontal language cortex through the arcuate fasciculus, which runs beneath the supramarginal gyrus.",
- "targets": {
-  "structureIds": [
-   "tract-arcuate-fasciculus"
+  "kind": "quiz",
+  "id": "qz-46",
+  "type": "identify",
+  "vignette": "A 58-year-old man with atrial fibrillation has a stroke and afterward cannot repeat sentences, although he speaks fluently and understands everything; his speech contains sound substitutions that he corrects. MRI shows a small infarct in the left supramarginal white matter.",
+  "stem": "Which fiber bundle is interrupted?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Uncinate fasciculus"
+    },
+    {
+      "key": "B",
+      "text": "Arcuate fasciculus"
+    },
+    {
+      "key": "C",
+      "text": "Inferior longitudinal fasciculus"
+    },
+    {
+      "key": "D",
+      "text": "Frontal aslant tract"
+    },
+    {
+      "key": "E",
+      "text": "Cingulum"
+    }
   ],
-  "syndromeIds": [
-   "syn-aphasia-conduction-global"
+  "answer": "B",
+  "explanation": "Conduction aphasia (fluent, comprehending, unable to repeat, self-corrected phonemic errors) is a disconnection of the posterior temporal from the frontal language cortex through the arcuate fasciculus, which runs beneath the supramarginal gyrus.",
+  "targets": {
+    "structureIds": [
+      "tract-arcuate-fasciculus"
+    ],
+    "syndromeIds": [
+      "syn-aphasia-conduction-global"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "tract-arcuate-fasciculus-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "tract-arcuate-fasciculus-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-aphasia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

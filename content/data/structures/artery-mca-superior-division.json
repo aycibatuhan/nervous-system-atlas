@@ -1,162 +1,142 @@
 {
- "kind": "structure",
- "id": "artery-mca-superior-division",
- "name": "Middle cerebral artery, superior division",
- "synonyms": [
-  "upper division of the MCA",
-  "M2 superior trunk"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "The superior trunk of the middle cerebral artery leaves the bifurcation at the limen insulae and climbs over the frontal operculum. Its branches feed the inferior frontal gyrus (Broca's area on the left), the frontal eye field, the precentral and postcentral gyri for the face, hand and arm, and the anterior parietal cortex. Occlusion produces the classic 'cortical' stroke with face and arm weakness and, on the dominant side, a non-fluent aphasia.",
- "anatomy": {
-  "location": "Runs upward and backward across the insula and around the frontal and anterior parietal opercula in the Sylvian fissure, emerging on the convexity as the orbitofrontal, prefrontal, precentral, central and anterior parietal arteries.",
-  "subdivisions": [
-   {
-    "name": "Orbitofrontal and prefrontal branches",
-    "note": "lateral prefrontal cortex and inferior frontal gyrus"
-   },
-   {
-    "name": "Precentral (pre-Rolandic) artery",
-    "note": "premotor cortex, frontal eye field, Broca's area"
-   },
-   {
-    "name": "Central (Rolandic) artery",
-    "note": "face and arm areas of the precentral and postcentral gyri"
-   },
-   {
-    "name": "Anterior parietal artery",
-    "note": "anterior supramarginal region"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Perfuses the frontal and anterior parietal convexity: motor and sensory cortex for the face, hand and arm, the frontal eye field, the premotor cortex and, on the dominant side, Broca's area.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca"
+  "kind": "structure",
+  "id": "artery-mca-superior-division",
+  "name": "Middle cerebral artery, superior division",
+  "synonyms": [
+    "upper division of the MCA",
+    "M2 superior trunk"
   ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 48,
-     "y": 10,
-     "z": 30
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The superior trunk of the middle cerebral artery leaves the bifurcation at the limen insulae and climbs over the frontal operculum. Its branches feed the inferior frontal gyrus (Broca's area on the left), the frontal eye field, the precentral and postcentral gyri for the face, hand and arm, and the anterior parietal cortex. Occlusion produces the classic 'cortical' stroke with face and arm weakness and, on the dominant side, a non-fluent aphasia.",
+  "anatomy": {
+    "location": "Runs upward and backward across the insula and around the frontal and anterior parietal opercula in the Sylvian fissure, emerging on the convexity as the orbitofrontal, prefrontal, precentral, central and anterior parietal arteries.",
+    "subdivisions": [
+      {
+        "name": "Orbitofrontal and prefrontal branches",
+        "note": "lateral prefrontal cortex and inferior frontal gyrus"
+      },
+      {
+        "name": "Precentral (pre-Rolandic) artery",
+        "note": "premotor cortex, frontal eye field, Broca's area"
+      },
+      {
+        "name": "Central (Rolandic) artery",
+        "note": "face and arm areas of the precentral and postcentral gyri"
+      },
+      {
+        "name": "Anterior parietal artery",
+        "note": "anterior supramarginal region"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Perfuses the frontal and anterior parietal convexity: motor and sensory cortex for the face, hand and arm, the frontal eye field, the premotor cortex and, on the dominant side, Broca's area.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 48,
+          "y": 10,
+          "z": 30
+        },
+        "label": "frontal operculum and precentral gyrus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 50,
+          "y": 0,
+          "z": 35
+        },
+        "label": "central sulcus region, face and hand areas"
+      }
+    ],
+    "normalAppearance": "The superior trunk appears on CTA as the larger of the two M2 branches leaving the bifurcation, arching upward over the insula. Its cortical territory is the frontal and anterior parietal convexity above the Sylvian fissure.",
+    "pathology": [
+      {
+        "pathology": "Superior division MCA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the inferior and middle frontal gyri, precentral and postcentral gyri and anterior insula, sparing the temporal lobe and the posterior parietal cortex; the basal ganglia are spared because the lenticulostriates arise from M1.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CTA to distinguish a branch occlusion from an M1 occlusion (which would add the lenticulostriate territory)"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Face and arm weakness with relative sparing of the leg",
+        "side": "contralateral",
+        "mechanism": "Precentral gyrus opercular and hand areas"
+      },
+      {
+        "deficit": "Cortical sensory loss of the face and arm",
+        "side": "contralateral",
+        "mechanism": "Postcentral gyrus"
+      },
+      {
+        "deficit": "Broca (non-fluent) aphasia with preserved comprehension",
+        "side": "n/a",
+        "mechanism": "Inferior frontal gyrus of the dominant hemisphere"
+      },
+      {
+        "deficit": "Gaze preference toward the lesion",
+        "side": "ipsilateral",
+        "mechanism": "Frontal eye field"
+      },
+      {
+        "deficit": "Motor neglect and anosognosia (non-dominant)",
+        "side": "contralateral",
+        "mechanism": "Right frontal-parietal opercular cortex"
+      }
+    ],
+    "examination": [
+      "Test speech output (fluency, naming, repetition) against comprehension of commands",
+      "Pronator drift and finger tapping versus hip flexion",
+      "Observe conjugate gaze deviation and test saccades to the contralateral side"
+    ],
+    "syndromes": [
+      "syn-mca-superior-division",
+      "syn-aphasia-broca"
+    ],
+    "pearls": [
+      "Non-fluent aphasia with right face and arm weakness is the left superior division; the leg is spared and visual fields are usually intact",
+      "Comprehension is preserved because Wernicke's area belongs to the inferior division"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-middle-cerebral-artery",
+      "section": "Structure and Function"
     },
-    "label": "frontal operculum and precentral gyrus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 50,
-     "y": 0,
-     "z": 35
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
     },
-    "label": "central sulcus region, face and hand areas"
-   }
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The superior trunk appears on CTA as the larger of the two M2 branches leaving the bifurcation, arching upward over the insula. Its cortical territory is the frontal and anterior parietal convexity above the Sylvian fissure.",
-  "pathology": [
-   {
-    "pathology": "Superior division MCA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the inferior and middle frontal gyri, precentral and postcentral gyri and anterior insula, sparing the temporal lobe and the posterior parietal cortex; the basal ganglia are spared because the lenticulostriates arise from M1.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "vascular"
   ],
-  "sequenceOfChoice": "DWI; CTA to distinguish a branch occlusion from an M1 occlusion (which would add the lenticulostriate territory)"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Face and arm weakness with relative sparing of the leg",
-    "side": "contralateral",
-    "mechanism": "Precentral gyrus opercular and hand areas"
-   },
-   {
-    "deficit": "Cortical sensory loss of the face and arm",
-    "side": "contralateral",
-    "mechanism": "Postcentral gyrus"
-   },
-   {
-    "deficit": "Broca (non-fluent) aphasia with preserved comprehension",
-    "side": "n/a",
-    "mechanism": "Inferior frontal gyrus of the dominant hemisphere"
-   },
-   {
-    "deficit": "Gaze preference toward the lesion",
-    "side": "ipsilateral",
-    "mechanism": "Frontal eye field"
-   },
-   {
-    "deficit": "Motor neglect and anosognosia (non-dominant)",
-    "side": "contralateral",
-    "mechanism": "Right frontal-parietal opercular cortex"
-   }
-  ],
-  "examination": [
-   "Test speech output (fluency, naming, repetition) against comprehension of commands",
-   "Pronator drift and finger tapping versus hip flexion",
-   "Observe conjugate gaze deviation and test saccades to the contralateral side"
-  ],
-  "syndromes": [
-   "syn-mca-superior-division",
-   "syn-aphasia-broca"
-  ],
-  "pearls": [
-   "Non-fluent aphasia with right face and arm weakness is the left superior division; the leg is spared and visual fields are usually intact",
-   "Comprehension is preserved because Wernicke's area belongs to the inferior division"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    465,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    284,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    59
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    184
-   ]
-  }
- ],
- "tags": [
-  "vascular"
- ],
- "status": "draft",
- "subsystem": "anterior-circulation",
- "parent": "artery-mca"
+  "status": "draft",
+  "subsystem": "anterior-circulation",
+  "parent": "artery-mca"
 }

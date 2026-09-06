@@ -1,183 +1,155 @@
 {
- "kind": "structure",
- "id": "superior-cerebellar-peduncle",
- "name": "Superior cerebellar peduncle",
- "synonyms": [
-  "brachium conjunctivum"
- ],
- "system": "brainstem",
- "meshIds": [
-  "superior-cerebellar-peduncle"
- ],
- "summary": "The main outflow of the cerebellum. Axons of the dentate and interposed nuclei ascend in the superior peduncle along the lateral wall of the upper fourth ventricle, cross completely in the caudal midbrain (decussation of the superior cerebellar peduncles), and end in the contralateral red nucleus and the ventral lateral thalamus, which relays to the motor cortex. This double crossing (cerebellum → contralateral thalamus/cortex → contralateral corticospinal tract → back to the original side) is why cerebellar signs are ipsilateral to the lesion. A smaller afferent component, the anterior spinocerebellar tract, enters through this peduncle.",
- "anatomy": {
-  "location": "Dorsolateral upper pons forming the lateral boundary of the rostral fourth ventricle, running upward and medially into the tegmentum of the caudal midbrain where the two sides decussate ventral to the aqueduct at the level of the inferior colliculus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "dentate-nucleus"
-   },
-   {
-    "from": "interposed-nucleus"
-   }
+  "kind": "structure",
+  "id": "superior-cerebellar-peduncle",
+  "name": "Superior cerebellar peduncle",
+  "synonyms": [
+    "brachium conjunctivum"
   ],
-  "efferents": [
-   {
-    "to": "red-nucleus (contralateral)"
-   },
-   {
-    "to": "thalamus-va-vl (contralateral)",
-    "via": "dentatorubrothalamic tract"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "superior-cerebellar-peduncle"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits",
-   "pathway-anterior-spinocerebellar"
-  ]
- },
- "function": "Carries the dentatorubrothalamic and interposito-rubral outflow that shapes cortical motor commands and drives the rubrospinal tract; receives the anterior spinocerebellar tract.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca",
-   "arteries-pontine"
-  ],
-  "territories": [
-   "territory-sca",
-   "territory-basilar-paramedian"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 8,
-     "y": -34,
-     "z": -26
+  "summary": "The main outflow of the cerebellum. Axons of the dentate and interposed nuclei ascend in the superior peduncle along the lateral wall of the upper fourth ventricle, cross completely in the caudal midbrain (decussation of the superior cerebellar peduncles), and end in the contralateral red nucleus and the ventral lateral thalamus, which relays to the motor cortex. This double crossing (cerebellum → contralateral thalamus/cortex → contralateral corticospinal tract → back to the original side) is why cerebellar signs are ipsilateral to the lesion. A smaller afferent component, the anterior spinocerebellar tract, enters through this peduncle.",
+  "anatomy": {
+    "location": "Dorsolateral upper pons forming the lateral boundary of the rostral fourth ventricle, running upward and medially into the tegmentum of the caudal midbrain where the two sides decussate ventral to the aqueduct at the level of the inferior colliculus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "dentate-nucleus"
+      },
+      {
+        "from": "interposed-nucleus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "red-nucleus (contralateral)"
+      },
+      {
+        "to": "thalamus-va-vl (contralateral)",
+        "via": "dentatorubrothalamic tract"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits",
+      "pathway-anterior-spinocerebellar"
+    ]
+  },
+  "function": "Carries the dentatorubrothalamic and interposito-rubral outflow that shapes cortical motor commands and drives the rubrospinal tract; receives the anterior spinocerebellar tract.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca",
+      "arteries-pontine"
+    ],
+    "territories": [
+      "territory-sca",
+      "territory-basilar-paramedian"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 8,
+          "y": -34,
+          "z": -26
+        },
+        "label": "dorsolateral upper pons beside the fourth ventricle"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 2,
+          "y": -30,
+          "z": -16
+        },
+        "label": "decussation in the caudal midbrain tegmentum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 8,
+          "y": -34,
+          "z": -24
+        },
+        "label": "peduncle climbing from the dentate nucleus to the midbrain"
+      }
+    ],
+    "normalAppearance": "The peduncles are the two white-matter walls of the upper fourth ventricle on axial T2; the decussation is a subtle central band in the caudal midbrain tegmentum. The HCP dentatorubrothalamic tract mesh in this atlas shows the full course to the thalamus.",
+    "pathology": [
+      {
+        "pathology": "Midbrain tegmental infarct at the decussation",
+        "modality": "MRI",
+        "finding": "Small restricted-diffusion lesion in the central caudal midbrain tegmentum; bilateral ataxia because both crossing bundles are hit.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Peduncular demyelination",
+        "modality": "MRI",
+        "finding": "FLAIR-bright plaque on the lateral wall of the fourth ventricle, with ipsilateral limb ataxia and intention tremor.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "FLAIR and DWI through the upper pons and midbrain"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia and intention tremor",
+        "side": "ipsilateral",
+        "mechanism": "Lesion below the decussation"
+      },
+      {
+        "deficit": "Contralateral limb ataxia",
+        "side": "contralateral",
+        "mechanism": "Lesion above the decussation (red nucleus, thalamus)"
+      },
+      {
+        "deficit": "Holmes (rubral) tremor",
+        "side": "contralateral",
+        "mechanism": "Dentatorubrothalamic fibers after the crossing, near the red nucleus"
+      }
+    ],
+    "examination": [
+      "Finger-nose with attention to terminal tremor",
+      "Heel-shin",
+      "Look for a coarse rest-postural-intention tremor (Holmes) after midbrain lesions"
+    ],
+    "syndromes": [
+      "syn-claude",
+      "syn-benedikt",
+      "syn-sca-infarct"
+    ],
+    "pearls": [
+      "Which side the ataxia falls on tells you whether the lesion is below or above the midbrain decussation",
+      "Claude syndrome is a third nerve palsy with contralateral ataxia: the lesion catches the crossed peduncle at the red nucleus"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Structure and Function"
     },
-    "label": "dorsolateral upper pons beside the fourth ventricle"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 2,
-     "y": -30,
-     "z": -16
+    {
+      "ref": "sp-cerebellum",
+      "section": "Structure and Function"
     },
-    "label": "decussation in the caudal midbrain tegmentum"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 8,
-     "y": -34,
-     "z": -24
-    },
-    "label": "peduncle climbing from the dentate nucleus to the midbrain"
-   }
+    {
+      "ref": "sp-red-nucleus",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The peduncles are the two white-matter walls of the upper fourth ventricle on axial T2; the decussation is a subtle central band in the caudal midbrain tegmentum. The HCP dentatorubrothalamic tract mesh in this atlas shows the full course to the thalamus.",
-  "pathology": [
-   {
-    "pathology": "Midbrain tegmental infarct at the decussation",
-    "modality": "MRI",
-    "finding": "Small restricted-diffusion lesion in the central caudal midbrain tegmentum; bilateral ataxia because both crossing bundles are hit.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Peduncular demyelination",
-    "modality": "MRI",
-    "finding": "FLAIR-bright plaque on the lateral wall of the fourth ventricle, with ipsilateral limb ataxia and intention tremor.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "FLAIR and DWI through the upper pons and midbrain"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia and intention tremor",
-    "side": "ipsilateral",
-    "mechanism": "Lesion below the decussation"
-   },
-   {
-    "deficit": "Contralateral limb ataxia",
-    "side": "contralateral",
-    "mechanism": "Lesion above the decussation (red nucleus, thalamus)"
-   },
-   {
-    "deficit": "Holmes (rubral) tremor",
-    "side": "contralateral",
-    "mechanism": "Dentatorubrothalamic fibers after the crossing, near the red nucleus"
-   }
-  ],
-  "examination": [
-   "Finger-nose with attention to terminal tremor",
-   "Heel-shin",
-   "Look for a coarse rest-postural-intention tremor (Holmes) after midbrain lesions"
-  ],
-  "syndromes": [
-   "syn-claude",
-   "syn-benedikt",
-   "syn-sca-infarct"
-  ],
-  "pearls": [
-   "Which side the ataxia falls on tells you whether the lesion is below or above the midbrain decussation",
-   "Claude syndrome is a third nerve palsy with contralateral ataxia: the lesion catches the crossed peduncle at the red nucleus"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    207,
-    213
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    239,
-    240
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    77
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    70
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    94,
-    95
-   ]
+  "status": "draft",
+  "latin": "Pedunculus cerebellaris superior",
+  "subsystem": "peduncles",
+  "level": {
+    "region": "pons"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Pedunculus cerebellaris superior",
- "subsystem": "peduncles",
- "level": {
-  "region": "pons"
- }
 }

@@ -1,184 +1,164 @@
 {
- "kind": "structure",
- "id": "spinal-white-columns",
- "name": "White columns of the spinal cord",
- "synonyms": [
-  "funiculi",
-  "posterior, lateral and anterior columns"
- ],
- "system": "spinal-cord",
- "meshIds": [
-  "spinal-cord",
-  "spinal-white-columns"
- ],
- "summary": "The white matter of the cord is arranged in three funiculi on each side, each carrying a fixed set of tracts, which is what makes cord syndromes localizable in cross-section. The posterior funiculus (fasciculus gracilis and cuneatus) carries uncrossed fine touch, vibration and proprioception upward; the lateral funiculus carries the crossed lateral corticospinal tract (motor, the leg fibers lateral), the crossed spinothalamic tract (pain and temperature, sacral fibers lateral), the spinocerebellar tracts and the descending autonomic fibers; the anterior funiculus carries the anterior corticospinal, vestibulospinal and reticulospinal tracts. Lamination explains why an expanding central lesion spares sacral sensation and why extrinsic compression affects the legs first.",
- "anatomy": {
-  "location": "Surrounding the gray matter: posterior funiculus between the posterior horns and the posterior median septum, lateral funiculus between the posterior and anterior horns, anterior funiculus between the anterior horn and the anterior median fissure; the anterior white commissure crosses in front of the central canal.",
-  "subdivisions": [
-   {
-    "name": "Posterior funiculus",
-    "note": "fasciculus gracilis (medial, leg and lower trunk, all levels) and fasciculus cuneatus (lateral, arm and upper trunk, above T6)"
-   },
-   {
-    "name": "Lateral funiculus",
-    "note": "lateral corticospinal (arm medial, leg lateral), lateral spinothalamic (arm medial, sacral lateral), posterior and anterior spinocerebellar, rubrospinal, descending autonomic"
-   },
-   {
-    "name": "Anterior funiculus",
-    "note": "anterior corticospinal, vestibulospinal, reticulospinal, tectospinal, anterior spinothalamic, MLF"
-   },
-   {
-    "name": "Anterior white commissure",
-    "note": "crossing spinothalamic fibers, damaged first by a syrinx"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-posterior-spinocerebellar",
-   "pathway-vestibulospinal"
-  ]
- },
- "function": "Conduction of all ascending sensory and descending motor and autonomic traffic between the segments and the brain.",
- "bloodSupply": {
-  "arteries": [
-   "anterior-spinal-artery",
-   "posterior-spinal-arteries"
+  "kind": "structure",
+  "id": "spinal-white-columns",
+  "name": "White columns of the spinal cord",
+  "synonyms": [
+    "funiculi",
+    "posterior, lateral and anterior columns"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-cord",
+    "spinal-white-columns"
+  ],
+  "summary": "The white matter of the cord is arranged in three funiculi on each side, each carrying a fixed set of tracts, which is what makes cord syndromes localizable in cross-section. The posterior funiculus (fasciculus gracilis and cuneatus) carries uncrossed fine touch, vibration and proprioception upward; the lateral funiculus carries the crossed lateral corticospinal tract (motor, the leg fibers lateral), the crossed spinothalamic tract (pain and temperature, sacral fibers lateral), the spinocerebellar tracts and the descending autonomic fibers; the anterior funiculus carries the anterior corticospinal, vestibulospinal and reticulospinal tracts. Lamination explains why an expanding central lesion spares sacral sensation and why extrinsic compression affects the legs first.",
+  "anatomy": {
+    "location": "Surrounding the gray matter: posterior funiculus between the posterior horns and the posterior median septum, lateral funiculus between the posterior and anterior horns, anterior funiculus between the anterior horn and the anterior median fissure; the anterior white commissure crosses in front of the central canal.",
+    "subdivisions": [
+      {
+        "name": "Posterior funiculus",
+        "note": "fasciculus gracilis (medial, leg and lower trunk, all levels) and fasciculus cuneatus (lateral, arm and upper trunk, above T6)"
+      },
+      {
+        "name": "Lateral funiculus",
+        "note": "lateral corticospinal (arm medial, leg lateral), lateral spinothalamic (arm medial, sacral lateral), posterior and anterior spinocerebellar, rubrospinal, descending autonomic"
+      },
+      {
+        "name": "Anterior funiculus",
+        "note": "anterior corticospinal, vestibulospinal, reticulospinal, tectospinal, anterior spinothalamic, MLF"
+      },
+      {
+        "name": "Anterior white commissure",
+        "note": "crossing spinothalamic fibers, damaged first by a syrinx"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-posterior-spinocerebellar",
+      "pathway-vestibulospinal"
+    ]
+  },
+  "function": "Conduction of all ascending sensory and descending motor and autonomic traffic between the segments and the brain.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "posterior-spinal-arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "posterior, lateral and anterior funiculi around the gray matter of the upper cervical cord"
+      }
+    ],
+    "normalAppearance": "White matter is slightly darker than gray on axial T2 at 3 T; tract-selective signal change is diagnostic: posterior columns in B12 deficiency and copper deficiency, lateral corticospinal tracts in ALS and hereditary spastic paraplegia, anterior two-thirds in infarction.",
+    "pathology": [
+      {
+        "pathology": "Subacute combined degeneration",
+        "modality": "MRI",
+        "finding": "Inverted V or dumbbell T2 hyperintensity of the posterior columns in the cervical and upper thoracic cord.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Anterior spinal artery infarct",
+        "modality": "MRI",
+        "finding": "Anterior two-thirds T2 hyperintensity sparing the posterior columns.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Corticospinal tract degeneration",
+        "modality": "MRI",
+        "finding": "Symmetric lateral column T2 hyperintensity in ALS or adrenomyeloneuropathy.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Multiple sclerosis",
+        "modality": "MRI",
+        "finding": "Short peripheral wedge-shaped plaques, often dorsal or lateral.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Axial and sagittal T2"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral loss of vibration and proprioception below the lesion",
+        "side": "ipsilateral",
+        "mechanism": "Posterior funiculus (uncrossed)"
+      },
+      {
+        "deficit": "Contralateral loss of pain and temperature one to two segments below",
+        "side": "contralateral",
+        "mechanism": "Lateral spinothalamic tract (crossed within two segments)"
+      },
+      {
+        "deficit": "Ipsilateral upper motor neuron weakness below the lesion",
+        "side": "ipsilateral",
+        "mechanism": "Lateral corticospinal tract (crossed in the medulla)"
+      },
+      {
+        "deficit": "Sacral sparing with central lesions",
+        "side": "bilateral",
+        "mechanism": "Sacral spinothalamic fibers lie most laterally, away from the center"
+      },
+      {
+        "deficit": "Legs before arms with extrinsic compression",
+        "side": "bilateral",
+        "mechanism": "Leg fibers of the corticospinal tract lie laterally, nearest the surface"
+      }
+    ],
+    "examination": [
+      "Test each tract modality separately: vibration (posterior), pin-prick (lateral spinothalamic), power and reflexes (corticospinal)",
+      "Check perianal (sacral) sensation for sacral sparing",
+      "Compare the two sides to build a cross-sectional map"
+    ],
+    "syndromes": [
+      "syn-brown-sequard",
+      "syn-anterior-cord",
+      "syn-posterior-cord-subacute-combined",
+      "syn-central-cord-syringomyelia"
+    ],
+    "pearls": [
+      "Motor and proprioceptive loss on one side with pain loss on the other is the hemicord (Brown-Séquard)",
+      "Sacral sparing means an intramedullary lesion; sacral loss first means extramedullary compression"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-posterior-column",
+      "section": "Structure and Function"
     },
-    "label": "posterior, lateral and anterior funiculi around the gray matter of the upper cervical cord"
-   }
+    {
+      "ref": "sp-spinal-cord",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-2",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "White matter is slightly darker than gray on axial T2 at 3 T; tract-selective signal change is diagnostic: posterior columns in B12 deficiency and copper deficiency, lateral corticospinal tracts in ALS and hereditary spastic paraplegia, anterior two-thirds in infarction.",
-  "pathology": [
-   {
-    "pathology": "Subacute combined degeneration",
-    "modality": "MRI",
-    "finding": "Inverted V or dumbbell T2 hyperintensity of the posterior columns in the cervical and upper thoracic cord.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Anterior spinal artery infarct",
-    "modality": "MRI",
-    "finding": "Anterior two-thirds T2 hyperintensity sparing the posterior columns.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Corticospinal tract degeneration",
-    "modality": "MRI",
-    "finding": "Symmetric lateral column T2 hyperintensity in ALS or adrenomyeloneuropathy.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Multiple sclerosis",
-    "modality": "MRI",
-    "finding": "Short peripheral wedge-shaped plaques, often dorsal or lateral.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Axial and sagittal T2"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral loss of vibration and proprioception below the lesion",
-    "side": "ipsilateral",
-    "mechanism": "Posterior funiculus (uncrossed)"
-   },
-   {
-    "deficit": "Contralateral loss of pain and temperature one to two segments below",
-    "side": "contralateral",
-    "mechanism": "Lateral spinothalamic tract (crossed within two segments)"
-   },
-   {
-    "deficit": "Ipsilateral upper motor neuron weakness below the lesion",
-    "side": "ipsilateral",
-    "mechanism": "Lateral corticospinal tract (crossed in the medulla)"
-   },
-   {
-    "deficit": "Sacral sparing with central lesions",
-    "side": "bilateral",
-    "mechanism": "Sacral spinothalamic fibers lie most laterally, away from the center"
-   },
-   {
-    "deficit": "Legs before arms with extrinsic compression",
-    "side": "bilateral",
-    "mechanism": "Leg fibers of the corticospinal tract lie laterally, nearest the surface"
-   }
-  ],
-  "examination": [
-   "Test each tract modality separately: vibration (posterior), pin-prick (lateral spinothalamic), power and reflexes (corticospinal)",
-   "Check perianal (sacral) sensation for sacral sparing",
-   "Compare the two sides to build a cross-sectional map"
-  ],
-  "syndromes": [
-   "syn-brown-sequard",
-   "syn-anterior-cord",
-   "syn-posterior-cord-subacute-combined",
-   "syn-central-cord-syringomyelia"
-  ],
-  "pearls": [
-   "Motor and proprioceptive loss on one side with pain loss on the other is the hemicord (Brown-Séquard)",
-   "Sacral sparing means an intramedullary lesion; sacral loss first means extramedullary compression"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    140,
-    162
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    163,
-    175
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    41,
-    44
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    38
-   ]
+  "status": "draft",
+  "latin": "Funiculi medullae spinalis",
+  "subsystem": "cord",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "latin": "Funiculi medullae spinalis",
- "subsystem": "cord",
- "level": {
-  "region": "spinal"
- }
 }

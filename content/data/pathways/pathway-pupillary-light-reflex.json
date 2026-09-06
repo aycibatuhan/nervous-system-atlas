@@ -1,174 +1,158 @@
 {
- "kind": "pathway",
- "id": "pathway-pupillary-light-reflex",
- "name": "Pupillary light reflex pathway",
- "synonyms": [],
- "type": "reflex",
- "modality": "pupillary constriction to light",
- "summary": "Light in either eye constricts both pupils because the pathway is bilateral at two points. Retinal ganglion cell axons leave the optic tract before the lateral geniculate body and reach the pretectal nuclei of both sides (via the brachium of the superior colliculus and the posterior commissure); each pretectal nucleus projects to both Edinger–Westphal nuclei; each Edinger–Westphal nucleus sends preganglionic fibers in the oculomotor nerve to the ciliary ganglion, whose postganglionic fibers reach the sphincter pupillae through the short ciliary nerves. Asymmetric afferent lesions produce the relative afferent pupillary defect, efferent lesions a fixed dilated pupil, and pretectal lesions light-near dissociation.",
- "origin": {
-  "structures": [
-   "cn-02-optic"
+  "kind": "pathway",
+  "id": "pathway-pupillary-light-reflex",
+  "name": "Pupillary light reflex pathway",
+  "synonyms": [],
+  "type": "reflex",
+  "modality": "pupillary constriction to light",
+  "summary": "Light in either eye constricts both pupils because the pathway is bilateral at two points. Retinal ganglion cell axons leave the optic tract before the lateral geniculate body and reach the pretectal nuclei of both sides (via the brachium of the superior colliculus and the posterior commissure); each pretectal nucleus projects to both Edinger–Westphal nuclei; each Edinger–Westphal nucleus sends preganglionic fibers in the oculomotor nerve to the ciliary ganglion, whose postganglionic fibers reach the sphincter pupillae through the short ciliary nerves. Asymmetric afferent lesions produce the relative afferent pupillary defect, efferent lesions a fixed dilated pupil, and pretectal lesions light-near dissociation.",
+  "origin": {
+    "structures": [
+      "cn-02-optic"
+    ],
+    "note": "Intrinsically photosensitive retinal ganglion cells (melanopsin) and conventional ganglion cells."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Retinal ganglion cell",
+      "synapse": "pretectal olivary nucleus (both sides)"
+    },
+    {
+      "order": 2,
+      "cellBody": "Pretectal neuron",
+      "synapse": "Edinger–Westphal nuclei of both sides via the posterior commissure"
+    },
+    {
+      "order": 3,
+      "cellBody": "Edinger–Westphal preganglionic neuron",
+      "synapse": "ciliary ganglion via CN III"
+    },
+    {
+      "order": 4,
+      "cellBody": "Ciliary ganglion postganglionic neuron",
+      "synapse": "sphincter pupillae via the short ciliary nerves"
+    }
   ],
-  "note": "Intrinsically photosensitive retinal ganglion cells (melanopsin) and conventional ganglion cells."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Retinal ganglion cell",
-   "synapse": "pretectal olivary nucleus (both sides)"
+  "decussation": {
+    "level": "Chiasm (afferent) and posterior commissure (pretectal)",
+    "structureId": "pretectal-area",
+    "note": "Bilateral at the chiasm and again between the pretectal and Edinger–Westphal nuclei, giving the consensual response."
   },
-  {
-   "order": 2,
-   "cellBody": "Pretectal neuron",
-   "synapse": "Edinger–Westphal nuclei of both sides via the posterior commissure"
-  },
-  {
-   "order": 3,
-   "cellBody": "Edinger–Westphal preganglionic neuron",
-   "synapse": "ciliary ganglion via CN III"
-  },
-  {
-   "order": 4,
-   "cellBody": "Ciliary ganglion postganglionic neuron",
-   "synapse": "sphincter pupillae via the short ciliary nerves"
-  }
- ],
- "decussation": {
-  "level": "Chiasm (afferent) and posterior commissure (pretectal)",
-  "structureId": "pretectal-area",
-  "note": "Bilateral at the chiasm and again between the pretectal and Edinger–Westphal nuclei, giving the consensual response."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "cn-02-optic",
-   "meshId": "optic-nerve-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "afferent limb in the optic nerve and tract"
-  },
-  {
-   "order": 2,
-   "structureId": "optic-chiasm",
-   "meshId": "optic-chiasm",
-   "sideRelativeToOrigin": "bilateral"
-  },
-  {
-   "order": 3,
-   "structureId": "pretectal-area",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "fibers leave the optic tract before the LGN via the brachium of the superior colliculus"
-  },
-  {
-   "order": 4,
-   "structureId": "oculomotor-nucleus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "Edinger–Westphal nuclei, both sides"
-  },
-  {
-   "order": 5,
-   "structureId": "cn-03-oculomotor",
-   "meshId": "cn-03-oculomotor-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "preganglionic fibers on the surface of the nerve"
-  },
-  {
-   "order": 6,
-   "structureId": "ganglion-ciliary",
-   "meshId": "ciliary-ganglion-l",
-   "sideRelativeToOrigin": "ipsilateral"
-  },
-  {
-   "order": 7,
-   "structureId": "cn-02-optic",
-   "meshId": "optic-nerve-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "short ciliary nerves to the sphincter pupillae (represented by the orbital region)"
-  }
- ],
- "termination": "Sphincter pupillae of both eyes (direct and consensual constriction).",
- "meshIds": [
-  "optic-nerve-l",
-  "optic-nerve-r",
-  "optic-chiasm",
-  "cn-03-oculomotor-l",
-  "cn-03-oculomotor-r",
-  "ciliary-ganglion-l",
-  "ciliary-ganglion-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Optic nerve (unilateral or asymmetric)",
-   "effects": "Relative afferent pupillary defect: the affected pupil dilates when the light swings onto it; both pupils are equal in size",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Optic tract",
-   "effects": "Contralateral RAPD with a homonymous hemianopia",
-   "side": "contralateral"
-  },
-  {
-   "level": "Pretectum / posterior commissure",
-   "effects": "Light-near dissociation of both pupils (Parinaud, Argyll Robertson)",
-   "side": "bilateral"
-  },
-  {
-   "level": "Oculomotor nerve (compressive)",
-   "effects": "Fixed dilated pupil with ptosis and ophthalmoplegia",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Ciliary ganglion or short ciliary nerves",
-   "effects": "Adie tonic pupil: large, slow to near, supersensitive to dilute pilocarpine",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Iris (pharmacological, trauma)",
-   "effects": "Fixed dilated pupil that does not constrict to full-strength pilocarpine",
-   "side": "ipsilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Both pupils are always the same size in an afferent lesion; anisocoria means an efferent (or iris) problem",
-   "The swinging flashlight test is the only bedside test that can detect an asymmetric optic nerve lesion in a patient with good acuity",
-   "Light-near dissociation localizes to the pretectum or to the ciliary ganglion with aberrant regeneration"
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "cn-02-optic",
+      "meshId": "optic-nerve-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "afferent limb in the optic nerve and tract"
+    },
+    {
+      "order": 2,
+      "structureId": "optic-chiasm",
+      "meshId": "optic-chiasm",
+      "sideRelativeToOrigin": "bilateral"
+    },
+    {
+      "order": 3,
+      "structureId": "pretectal-area",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "fibers leave the optic tract before the LGN via the brachium of the superior colliculus"
+    },
+    {
+      "order": 4,
+      "structureId": "oculomotor-nucleus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "Edinger–Westphal nuclei, both sides"
+    },
+    {
+      "order": 5,
+      "structureId": "cn-03-oculomotor",
+      "meshId": "cn-03-oculomotor-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "preganglionic fibers on the surface of the nerve"
+    },
+    {
+      "order": 6,
+      "structureId": "ganglion-ciliary",
+      "meshId": "ciliary-ganglion-l",
+      "sideRelativeToOrigin": "ipsilateral"
+    },
+    {
+      "order": 7,
+      "structureId": "cn-02-optic",
+      "meshId": "optic-nerve-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "short ciliary nerves to the sphincter pupillae (represented by the orbital region)"
+    }
   ],
-  "syndromes": [
-   "syn-rapd",
-   "syn-cn3-palsy",
-   "syn-adie-tonic-pupil",
-   "syn-argyll-robertson",
-   "syn-parinaud-dorsal-midbrain"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    329,
-    331
-   ]
+  "termination": "Sphincter pupillae of both eyes (direct and consensual constriction).",
+  "meshIds": [
+    "optic-nerve-l",
+    "optic-nerve-r",
+    "optic-chiasm",
+    "cn-03-oculomotor-l",
+    "cn-03-oculomotor-r",
+    "ciliary-ganglion-l",
+    "ciliary-ganglion-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Optic nerve (unilateral or asymmetric)",
+      "effects": "Relative afferent pupillary defect: the affected pupil dilates when the light swings onto it; both pupils are equal in size",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Optic tract",
+      "effects": "Contralateral RAPD with a homonymous hemianopia",
+      "side": "contralateral"
+    },
+    {
+      "level": "Pretectum / posterior commissure",
+      "effects": "Light-near dissociation of both pupils (Parinaud, Argyll Robertson)",
+      "side": "bilateral"
+    },
+    {
+      "level": "Oculomotor nerve (compressive)",
+      "effects": "Fixed dilated pupil with ptosis and ophthalmoplegia",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Ciliary ganglion or short ciliary nerves",
+      "effects": "Adie tonic pupil: large, slow to near, supersensitive to dilute pilocarpine",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Iris (pharmacological, trauma)",
+      "effects": "Fixed dilated pupil that does not constrict to full-strength pilocarpine",
+      "side": "ipsilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Both pupils are always the same size in an afferent lesion; anisocoria means an efferent (or iris) problem",
+      "The swinging flashlight test is the only bedside test that can detect an asymmetric optic nerve lesion in a patient with good acuity",
+      "Light-near dissociation localizes to the pretectum or to the ciliary ganglion with aberrant regeneration"
+    ],
+    "syndromes": [
+      "syn-rapd",
+      "syn-cn3-palsy",
+      "syn-adie-tonic-pupil",
+      "syn-argyll-robertson",
+      "syn-parinaud-dorsal-midbrain"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    83,
-    85
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    87,
-    90
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-pupillary-light-reflex",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-pupillary-light-reflexes-and-pathway",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

@@ -1,122 +1,110 @@
 {
- "kind": "structure",
- "id": "ganglion-otic",
- "name": "Otic ganglion",
- "synonyms": [],
- "system": "cranial-nerves",
- "meshIds": [],
- "summary": "A small parasympathetic ganglion lying just below the foramen ovale on the medial side of the mandibular nerve, where preganglionic fibers from the inferior salivatory nucleus arriving by the lesser petrosal nerve (glossopharyngeal nerve, via the tympanic plexus) synapse. The postganglionic fibers join the auriculotemporal nerve to reach the parotid gland. Frey syndrome (gustatory sweating over the parotid after parotidectomy) results from aberrant regeneration of these fibers into the sweat glands of the overlying skin.",
- "anatomy": {
-  "location": "Infratemporal fossa immediately below the foramen ovale, medial to the mandibular nerve, lateral to tensor veli palatini and in front of the middle meningeal artery.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "nucleus-solitarius region (inferior salivatory nucleus)",
-    "via": "lesser petrosal nerve via cn-09-glossopharyngeal"
-   }
-  ],
-  "efferents": [
-   {
-    "to": "parotid gland",
-    "via": "auriculotemporal nerve"
-   }
-  ],
-  "pathways": []
- },
- "function": "Relay of parasympathetic secretomotor fibers to the parotid gland; passage of sympathetic fibers from the middle meningeal plexus and of motor fibers to tensor tympani and tensor veli palatini.",
- "bloodSupply": {
-  "arteries": [
-   "regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -8,
-     "z": -40
+  "kind": "structure",
+  "id": "ganglion-otic",
+  "name": "Otic ganglion",
+  "synonyms": [],
+  "system": "cranial-nerves",
+  "meshIds": [],
+  "summary": "A small parasympathetic ganglion lying just below the foramen ovale on the medial side of the mandibular nerve, where preganglionic fibers from the inferior salivatory nucleus arriving by the lesser petrosal nerve (glossopharyngeal nerve, via the tympanic plexus) synapse. The postganglionic fibers join the auriculotemporal nerve to reach the parotid gland. Frey syndrome (gustatory sweating over the parotid after parotidectomy) results from aberrant regeneration of these fibers into the sweat glands of the overlying skin.",
+  "anatomy": {
+    "location": "Infratemporal fossa immediately below the foramen ovale, medial to the mandibular nerve, lateral to tensor veli palatini and in front of the middle meningeal artery.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "nucleus-solitarius region (inferior salivatory nucleus)",
+        "via": "lesser petrosal nerve via cn-09-glossopharyngeal"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "parotid gland",
+        "via": "auriculotemporal nerve"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Relay of parasympathetic secretomotor fibers to the parotid gland; passage of sympathetic fibers from the middle meningeal plexus and of motor fibers to tensor tympani and tensor veli palatini.",
+  "bloodSupply": {
+    "arteries": [
+      "regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -8,
+          "z": -40
+        },
+        "label": "infratemporal fossa below the foramen ovale, medial to V3"
+      }
+    ],
+    "normalAppearance": "Not identifiable on routine imaging; the foramen ovale and the mandibular nerve are seen on skull base CT and MRI, and perineural spread along V3 passes this region.",
+    "pathology": [
+      {
+        "pathology": "Perineural spread along V3",
+        "modality": "MRI",
+        "finding": "Enlarged enhancing mandibular nerve through the foramen ovale with denervation atrophy of the masticatory muscles.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Skull base MRI with fat saturation"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Reduced parotid secretion",
+        "side": "ipsilateral",
+        "mechanism": "Loss of glossopharyngeal parasympathetic supply"
+      },
+      {
+        "deficit": "Gustatory sweating and flushing over the cheek (Frey syndrome)",
+        "side": "ipsilateral",
+        "mechanism": "Aberrant regeneration of parasympathetic fibers into cutaneous sweat glands after parotid surgery"
+      },
+      {
+        "deficit": "Jaw weakness and V3 numbness with a mass",
+        "side": "ipsilateral",
+        "mechanism": "Adjacent mandibular nerve"
+      }
+    ],
+    "examination": [
+      "Observe the cheek during a meal for sweating",
+      "Masseter and pterygoid power, V3 sensation"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Sweating over the cheek when eating after parotid surgery is Frey syndrome, a misdirected otic ganglion outflow",
+      "The parotid gets its parasympathetic supply from the ninth nerve, not the seventh, despite the facial nerve running through it"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-otic-ganglion",
+      "section": "Structure and Function"
     },
-    "label": "infratemporal fossa below the foramen ovale, medial to V3"
-   }
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cranial-nerve-testing",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "Not identifiable on routine imaging; the foramen ovale and the mandibular nerve are seen on skull base CT and MRI, and perineural spread along V3 passes this region.",
-  "pathology": [
-   {
-    "pathology": "Perineural spread along V3",
-    "modality": "MRI",
-    "finding": "Enlarged enhancing mandibular nerve through the foramen ovale with denervation atrophy of the masticatory muscles.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "ganglion"
   ],
-  "sequenceOfChoice": "Skull base MRI with fat saturation"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Reduced parotid secretion",
-    "side": "ipsilateral",
-    "mechanism": "Loss of glossopharyngeal parasympathetic supply"
-   },
-   {
-    "deficit": "Gustatory sweating and flushing over the cheek (Frey syndrome)",
-    "side": "ipsilateral",
-    "mechanism": "Aberrant regeneration of parasympathetic fibers into cutaneous sweat glands after parotid surgery"
-   },
-   {
-    "deficit": "Jaw weakness and V3 numbness with a mass",
-    "side": "ipsilateral",
-    "mechanism": "Adjacent mandibular nerve"
-   }
-  ],
-  "examination": [
-   "Observe the cheek during a meal for sweating",
-   "Masseter and pterygoid power, V3 sensation"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Sweating over the cheek when eating after parotid surgery is Frey syndrome, a misdirected otic ganglion outflow",
-   "The parotid gets its parasympathetic supply from the ninth nerve, not the seventh, despite the facial nerve running through it"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    342,
-    342
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    399,
-    399
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    125,
-    125
-   ]
+  "status": "draft",
+  "latin": "Ganglion oticum",
+  "subsystem": "ganglia",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "ganglion"
- ],
- "status": "draft",
- "latin": "Ganglion oticum",
- "subsystem": "ganglia",
- "level": {
-  "region": "peripheral"
- }
 }

@@ -1,180 +1,152 @@
 {
- "kind": "structure",
- "id": "tract-thalamic-radiation-posterior",
- "name": "Posterior thalamic radiation",
- "synonyms": [
-  "pulvinar radiation",
-  "retrolenticular thalamocortical fibers"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-thalamic-radiation-posterior-l",
-  "tract-thalamic-radiation-posterior-r"
- ],
- "summary": "The posterior thalamic radiation connects the pulvinar and the lateral posterior nucleus with the parietal and occipital association cortex, running through the retrolenticular part of the internal capsule lateral to the atrium of the lateral ventricle, alongside and mixed with the optic radiation. It carries the thalamic contribution to visual attention, spatial perception and the integration of vision with somatosensation, and lesions of this region combine field defects from the optic radiation with neglect, visuospatial disorganization and, on the left, alexia and agraphia. The stratum sagittale that contains it is the corridor for the posterior cerebral and middle cerebral artery watershed and a common site of periventricular leukomalacia and of glioma spread.",
- "anatomy": {
-  "location": "From the pulvinar and lateral posterior nucleus backward and laterally through the retrolenticular internal capsule into the stratum sagittale lateral to the atrium and the occipital horn, fanning to the posterior parietal cortex, the angular gyrus, the lateral occipital cortex and the posterior temporal cortex.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Pulvinar and lateral posterior nucleus",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Parietal and occipital cortex",
-    "via": "corticothalamic fibers"
-   }
+  "kind": "structure",
+  "id": "tract-thalamic-radiation-posterior",
+  "name": "Posterior thalamic radiation",
+  "synonyms": [
+    "pulvinar radiation",
+    "retrolenticular thalamocortical fibers"
   ],
-  "efferents": [
-   {
-    "to": "Posterior parietal, angular and lateral occipital cortex",
-    "via": "thalamocortical termination"
-   },
-   {
-    "to": "Pulvinar",
-    "via": "corticothalamic termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-thalamic-radiation-posterior-l",
+    "tract-thalamic-radiation-posterior-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "The pulvinar receives the superior colliculus, the visual cortex and the parietal cortex and uses this bundle to coordinate attention across the visual field, to bind the features of an attended object and to suppress distracters; the lateral posterior nucleus contributes to the spatial and reaching functions of the superior parietal lobule; and corticothalamic fibers return through it from the parietal and occipital cortex. Because it shares the stratum sagittale with the optic radiation, its lesions add attentional and perceptual deficits to a hemianopia, and disconnection of the pulvinar from the parietal cortex on the right is one of the mechanisms of neglect. It is also the route by which the thalamus reaches the visual word form and angular gyrus regions on the left.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-mca-parietal",
-   "territory-pca-occipital",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-thalamic-radiation-posterior-l"
+  "summary": "The posterior thalamic radiation connects the pulvinar and the lateral posterior nucleus with the parietal and occipital association cortex, running through the retrolenticular part of the internal capsule lateral to the atrium of the lateral ventricle, alongside and mixed with the optic radiation. It carries the thalamic contribution to visual attention, spatial perception and the integration of vision with somatosensation, and lesions of this region combine field defects from the optic radiation with neglect, visuospatial disorganization and, on the left, alexia and agraphia. The stratum sagittale that contains it is the corridor for the posterior cerebral and middle cerebral artery watershed and a common site of periventricular leukomalacia and of glioma spread.",
+  "anatomy": {
+    "location": "From the pulvinar and lateral posterior nucleus backward and laterally through the retrolenticular internal capsule into the stratum sagittale lateral to the atrium and the occipital horn, fanning to the posterior parietal cortex, the angular gyrus, the lateral occipital cortex and the posterior temporal cortex.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Pulvinar and lateral posterior nucleus",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Parietal and occipital cortex",
+        "via": "corticothalamic fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Posterior parietal, angular and lateral occipital cortex",
+        "via": "thalamocortical termination"
+      },
+      {
+        "to": "Pulvinar",
+        "via": "corticothalamic termination"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "The pulvinar receives the superior colliculus, the visual cortex and the parietal cortex and uses this bundle to coordinate attention across the visual field, to bind the features of an attended object and to suppress distracters; the lateral posterior nucleus contributes to the spatial and reaching functions of the superior parietal lobule; and corticothalamic fibers return through it from the parietal and occipital cortex. Because it shares the stratum sagittale with the optic radiation, its lesions add attentional and perceptual deficits to a hemianopia, and disconnection of the pulvinar from the parietal cortex on the right is one of the mechanisms of neglect. It is also the route by which the thalamus reaches the visual word form and angular gyrus regions on the left.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-mca-parietal",
+      "territory-pca-occipital",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-thalamic-radiation-posterior-l"
+        },
+        "label": "posterior thalamic radiation from the pulvinar to the parieto-occipital cortex"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-thalamic-radiation-posterior-r"
+        },
+        "label": "retrolenticular fibers lateral to the atrium"
+      }
+    ],
+    "normalAppearance": "Tractography shows a posterior bundle from the pulvinar through the retrolenticular capsule into the parieto-occipital white matter, overlapping the optic radiation; on T2 the stratum sagittale lateral to the atrium contains both.",
+    "pathology": [
+      {
+        "pathology": "Posterior watershed (MCA-PCA) infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the parieto-occipital white matter lateral to the atrium with hemianopia, neglect or visuospatial impairment.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Periventricular leukomalacia",
+        "modality": "MRI",
+        "finding": "Loss of the peritrigonal white matter in ex-premature children with visual perceptual difficulty and field defects.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Glioma spreading along the stratum sagittale",
+        "modality": "MRI",
+        "finding": "FLAIR-bright infiltration of the peritrigonal white matter extending between the temporal, parietal and occipital lobes.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral neglect and impaired visual attention (right)",
+        "side": "contralateral",
+        "mechanism": "Disconnection of the pulvinar from the parietal attention cortex"
+      },
+      {
+        "deficit": "Visuospatial disorientation and optic ataxia",
+        "side": "contralateral",
+        "mechanism": "Loss of the lateral posterior-parietal projection"
+      },
+      {
+        "deficit": "Homonymous field defect",
+        "side": "contralateral",
+        "mechanism": "Involvement of the accompanying optic radiation"
+      }
+    ],
+    "examination": [
+      "Line bisection, cancellation and extinction testing",
+      "Visual fields",
+      "Reading and writing when the left side is involved"
+    ],
+    "syndromes": [
+      "syn-hemineglect",
+      "syn-homonymous-hemianopia",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Peritrigonal lesions take away both the seeing and the noticing: hemianopia plus neglect",
+      "The pulvinar is the thalamus of attention; its radiation is the wire",
+      "Periventricular leukomalacia damages this radiation early, which is why ex-premature children have perceptual visual problems"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-thalamocortical-radiations",
+      "section": "Structure and Function"
     },
-    "label": "posterior thalamic radiation from the pulvinar to the parieto-occipital cortex"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-thalamic-radiation-posterior-r"
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
     },
-    "label": "retrolenticular fibers lateral to the atrium"
-   }
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows a posterior bundle from the pulvinar through the retrolenticular capsule into the parieto-occipital white matter, overlapping the optic radiation; on T2 the stratum sagittale lateral to the atrium contains both.",
-  "pathology": [
-   {
-    "pathology": "Posterior watershed (MCA-PCA) infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the parieto-occipital white matter lateral to the atrium with hemianopia, neglect or visuospatial impairment.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Periventricular leukomalacia",
-    "modality": "MRI",
-    "finding": "Loss of the peritrigonal white matter in ex-premature children with visual perceptual difficulty and field defects.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Glioma spreading along the stratum sagittale",
-    "modality": "MRI",
-    "finding": "FLAIR-bright infiltration of the peritrigonal white matter extending between the temporal, parietal and occipital lobes.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral neglect and impaired visual attention (right)",
-    "side": "contralateral",
-    "mechanism": "Disconnection of the pulvinar from the parietal attention cortex"
-   },
-   {
-    "deficit": "Visuospatial disorientation and optic ataxia",
-    "side": "contralateral",
-    "mechanism": "Loss of the lateral posterior-parietal projection"
-   },
-   {
-    "deficit": "Homonymous field defect",
-    "side": "contralateral",
-    "mechanism": "Involvement of the accompanying optic radiation"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Line bisection, cancellation and extinction testing",
-   "Visual fields",
-   "Reading and writing when the left side is involved"
-  ],
-  "syndromes": [
-   "syn-hemineglect",
-   "syn-homonymous-hemianopia",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Peritrigonal lesions take away both the seeing and the noticing: hemianopia plus neglect",
-   "The pulvinar is the thalamus of attention; its radiation is the wire",
-   "Periventricular leukomalacia damages this radiation early, which is why ex-premature children have perceptual visual problems"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    370
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    336
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "internal-capsule"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "internal-capsule"
 }

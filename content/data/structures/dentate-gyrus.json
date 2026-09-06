@@ -1,176 +1,156 @@
 {
- "kind": "structure",
- "id": "dentate-gyrus",
- "name": "Dentate gyrus",
- "synonyms": [
-  "fascia dentata",
-  "gyrus dentatus"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "dentate-gyrus-l",
-  "dentate-gyrus-r"
- ],
- "summary": "The dentate gyrus is the notched strip of gray matter on the medial surface of the hippocampal formation between the fimbria and the parahippocampal gyrus, interlocking with the cornu ammonis to form the two C-shaped layers of the hippocampus seen on a coronal section. Its granule cells are the first stage of the trisynaptic circuit, receiving the perforant path from the entorhinal cortex and sending mossy fibers to CA3, and they separate similar inputs into distinct memory traces; the dentate gyrus is also one of the two sites of adult neurogenesis. It is involved in mesial temporal sclerosis, where granule cell dispersion and mossy fiber sprouting create a seizure circuit, and its neurogenesis is a target of antidepressant and exercise research.",
- "anatomy": {
-  "location": "Narrow toothed gyrus on the medial aspect of the hippocampus, lying in the concavity of the cornu ammonis, separated from the parahippocampal gyrus by the hippocampal sulcus and from the fimbria by the fimbriodentate sulcus; it continues onto the dorsal surface of the corpus callosum as the indusium griseum.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Entorhinal cortex layer II",
-    "via": "perforant path"
-   },
-   {
-    "from": "Septal nuclei (cholinergic and GABAergic)",
-    "via": "fornix"
-   },
-   {
-    "from": "Supramammillary nucleus of the hypothalamus",
-    "via": "fornix"
-   }
+  "kind": "structure",
+  "id": "dentate-gyrus",
+  "name": "Dentate gyrus",
+  "synonyms": [
+    "fascia dentata",
+    "gyrus dentatus"
   ],
-  "efferents": [
-   {
-    "to": "CA3 pyramidal cells",
-    "via": "mossy fibers"
-   },
-   {
-    "to": "Hilar mossy cells (local)",
-    "via": "intrinsic fibers"
-   },
-   {
-    "to": "Contralateral dentate gyrus (via mossy cells)",
-    "via": "hippocampal commissure"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "dentate-gyrus-l",
+    "dentate-gyrus-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Granule cells of the dentate gyrus receive the perforant path from entorhinal layer II and, through sparse firing and strong lateral inhibition by hilar interneurons, orthogonalize overlapping cortical inputs so that two similar experiences are stored as separable memories (pattern separation); their mossy fibers deliver these codes to CA3. New granule cells are generated throughout adult life in the subgranular zone and are recruited into memory circuits, a process reduced by stress and age and increased by exercise. The hilus contains mossy cells that spread excitation along the gyrus; their loss after injury and the sprouting of mossy fibers back onto granule cells underlie hyperexcitability in temporal lobe epilepsy.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
+  "summary": "The dentate gyrus is the notched strip of gray matter on the medial surface of the hippocampal formation between the fimbria and the parahippocampal gyrus, interlocking with the cornu ammonis to form the two C-shaped layers of the hippocampus seen on a coronal section. Its granule cells are the first stage of the trisynaptic circuit, receiving the perforant path from the entorhinal cortex and sending mossy fibers to CA3, and they separate similar inputs into distinct memory traces; the dentate gyrus is also one of the two sites of adult neurogenesis. It is involved in mesial temporal sclerosis, where granule cell dispersion and mossy fiber sprouting create a seizure circuit, and its neurogenesis is a target of antidepressant and exercise research.",
+  "anatomy": {
+    "location": "Narrow toothed gyrus on the medial aspect of the hippocampus, lying in the concavity of the cornu ammonis, separated from the parahippocampal gyrus by the hippocampal sulcus and from the fimbria by the fimbriodentate sulcus; it continues onto the dorsal surface of the corpus callosum as the indusium griseum.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Entorhinal cortex layer II",
+        "via": "perforant path"
+      },
+      {
+        "from": "Septal nuclei (cholinergic and GABAergic)",
+        "via": "fornix"
+      },
+      {
+        "from": "Supramammillary nucleus of the hypothalamus",
+        "via": "fornix"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "CA3 pyramidal cells",
+        "via": "mossy fibers"
+      },
+      {
+        "to": "Hilar mossy cells (local)",
+        "via": "intrinsic fibers"
+      },
+      {
+        "to": "Contralateral dentate gyrus (via mossy cells)",
+        "via": "hippocampal commissure"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Granule cells of the dentate gyrus receive the perforant path from entorhinal layer II and, through sparse firing and strong lateral inhibition by hilar interneurons, orthogonalize overlapping cortical inputs so that two similar experiences are stored as separable memories (pattern separation); their mossy fibers deliver these codes to CA3. New granule cells are generated throughout adult life in the subgranular zone and are recruited into memory circuits, a process reduced by stress and age and increased by exercise. The hilus contains mossy cells that spread excitation along the gyrus; their loss after injury and the sprouting of mossy fibers back onto granule cells underlie hyperexcitability in temporal lobe epilepsy.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "dentate-gyrus-l"
+        },
+        "label": "dentate gyrus in the concavity of the cornu ammonis"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "dentate-gyrus-r"
+        },
+        "label": "dentate gyrus along the medial hippocampus"
+      }
+    ],
+    "normalAppearance": "On high-resolution coronal T2 images the dentate gyrus is the inner, medial C of the hippocampal double spiral, with the hippocampal sulcus and its vestigial cysts between it and the subiculum; the notched surface faces the ambient cistern.",
+    "pathology": [
+      {
+        "pathology": "Mesial temporal sclerosis",
+        "modality": "MRI",
+        "finding": "Hippocampal atrophy with loss of the internal digitations; pathology shows granule cell dispersion, hilar cell loss and mossy fiber sprouting.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Hippocampal sulcal remnant cysts",
+        "modality": "MRI",
+        "finding": "Small CSF-signal cysts between the dentate gyrus and the subiculum, a normal developmental remnant not to be reported as pathology.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Limbic encephalitis",
+        "modality": "MRI",
+        "finding": "Swollen bright hippocampi with subacute amnesia and seizures; dentate involvement contributes to seizure generation.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired discrimination of similar memories",
+        "side": "bilateral",
+        "mechanism": "Loss of dentate pattern separation"
+      },
+      {
+        "deficit": "Temporal lobe seizures",
+        "side": "n/a",
+        "mechanism": "Hilar cell loss and mossy fiber sprouting create recurrent excitation"
+      },
+      {
+        "deficit": "Contribution to anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Failure of the first stage of the trisynaptic circuit"
+      }
+    ],
+    "examination": [
+      "Memory tests that use similar lures (recognizing which of two similar pictures was shown)",
+      "Seizure history and EEG",
+      "Mood and exercise history where neurogenesis is a consideration"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "The dentate gyrus keeps similar memories apart; its failure makes one day blur into another",
+      "Hippocampal sulcal remnant cysts are normal; report them as such",
+      "New neurons are born in the adult dentate gyrus, the exception to the rule that the brain does not regenerate"
+    ]
+  },
+  "pitfalls": [
+    "The dentate gyrus and the dentate nucleus of the cerebellum share a name and nothing else; do not confuse them in reports"
   ],
-  "territories": [
-   "territory-pca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "dentate-gyrus-l"
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "dentate gyrus in the concavity of the cornu ammonis"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "dentate-gyrus-r"
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "dentate gyrus along the medial hippocampus"
-   }
+    {
+      "ref": "sp-gray-matter",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On high-resolution coronal T2 images the dentate gyrus is the inner, medial C of the hippocampal double spiral, with the hippocampal sulcus and its vestigial cysts between it and the subiculum; the notched surface faces the ambient cistern.",
-  "pathology": [
-   {
-    "pathology": "Mesial temporal sclerosis",
-    "modality": "MRI",
-    "finding": "Hippocampal atrophy with loss of the internal digitations; pathology shows granule cell dispersion, hilar cell loss and mossy fiber sprouting.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Hippocampal sulcal remnant cysts",
-    "modality": "MRI",
-    "finding": "Small CSF-signal cysts between the dentate gyrus and the subiculum, a normal developmental remnant not to be reported as pathology.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Limbic encephalitis",
-    "modality": "MRI",
-    "finding": "Swollen bright hippocampi with subacute amnesia and seizures; dentate involvement contributes to seizure generation.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired discrimination of similar memories",
-    "side": "bilateral",
-    "mechanism": "Loss of dentate pattern separation"
-   },
-   {
-    "deficit": "Temporal lobe seizures",
-    "side": "n/a",
-    "mechanism": "Hilar cell loss and mossy fiber sprouting create recurrent excitation"
-   },
-   {
-    "deficit": "Contribution to anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Failure of the first stage of the trisynaptic circuit"
-   }
+  "tags": [
+    "hippocampus",
+    "neurogenesis",
+    "pattern separation"
   ],
-  "examination": [
-   "Memory tests that use similar lures (recognizing which of two similar pictures was shown)",
-   "Seizure history and EEG",
-   "Mood and exercise history where neurogenesis is a consideration"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "The dentate gyrus keeps similar memories apart; its failure makes one day blur into another",
-   "Hippocampal sulcal remnant cysts are normal; report them as such",
-   "New neurons are born in the adult dentate gyrus, the exception to the rule that the brain does not regenerate"
-  ]
- },
- "pitfalls": [
-  "The dentate gyrus and the dentate nucleus of the cerebellum share a name and nothing else; do not confuse them in reports"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    169,
-    172
-   ]
-  }
- ],
- "tags": [
-  "hippocampus",
-  "neurogenesis",
-  "pattern separation"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "hippocampus"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "hippocampus"
 }

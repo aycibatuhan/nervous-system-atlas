@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-08",
- "type": "localize",
- "vignette": "A 40-year-old man walks into door frames on both sides and has stopped driving. Confrontation testing shows that he cannot see the examiner's fingers in the temporal half of the field of each eye. His acuity is normal and he has recently noticed enlarged hands and a change in his face.",
- "stem": "Where is the lesion?",
- "options": [
-  {
-   "key": "A",
-   "text": "Both optic nerves"
-  },
-  {
-   "key": "B",
-   "text": "Optic chiasm"
-  },
-  {
-   "key": "C",
-   "text": "Left optic tract"
-  },
-  {
-   "key": "D",
-   "text": "Both occipital lobes"
-  },
-  {
-   "key": "E",
-   "text": "Right parietal lobe"
-  }
- ],
- "answer": "B",
- "explanation": "Bitemporal hemianopia is the signature of a chiasmal lesion, where the crossing nasal retinal fibers from both eyes are interrupted; the acromegalic features point to a pituitary macroadenoma compressing the chiasm from below.",
- "targets": {
-  "structureIds": [
-   "optic-chiasm"
+  "kind": "quiz",
+  "id": "qz-08",
+  "type": "localize",
+  "vignette": "A 40-year-old man walks into door frames on both sides and has stopped driving. Confrontation testing shows that he cannot see the examiner's fingers in the temporal half of the field of each eye. His acuity is normal and he has recently noticed enlarged hands and a change in his face.",
+  "stem": "Where is the lesion?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Both optic nerves"
+    },
+    {
+      "key": "B",
+      "text": "Optic chiasm"
+    },
+    {
+      "key": "C",
+      "text": "Left optic tract"
+    },
+    {
+      "key": "D",
+      "text": "Both occipital lobes"
+    },
+    {
+      "key": "E",
+      "text": "Right parietal lobe"
+    }
   ],
-  "syndromeIds": [
-   "syn-chiasmal-bitemporal",
-   "syn-pituitary-mass"
+  "answer": "B",
+  "explanation": "Bitemporal hemianopia is the signature of a chiasmal lesion, where the crossing nasal retinal fibers from both eyes are interrupted; the acromegalic features point to a pituitary macroadenoma compressing the chiasm from below.",
+  "targets": {
+    "structureIds": [
+      "optic-chiasm"
+    ],
+    "syndromeIds": [
+      "syn-chiasmal-bitemporal",
+      "syn-pituitary-mass"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "optic-chiasm",
+    "pituitary-gland"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "optic-chiasm",
-  "pituitary-gland"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    349,
-    350
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-bitemporal-hemianopsia",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-optic-chiasm",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-pituitary-adenoma",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-pituitary-apoplexy",
+      "section": "History and Physical"
+    }
+  ],
+  "original": true
 }

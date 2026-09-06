@@ -1,7 +1,7 @@
 {
- "meshes": 573,
- "bytes": 38890936,
- "triangles": 6020577,
+ "meshes": 595,
+ "bytes": 39849488,
+ "triangles": 6164980,
  "registration": {
   "bp3d_to_mni.json": {
    "landmark_mean_mm": 3.31,
@@ -121,6 +121,20 @@
   "dorsal-cutaneous-nerves-foot-r: extends beyond the MNI volume (registered-affine)",
   "spinal-grey-anterior-horn: extends beyond the MNI volume (registered-affine)",
   "spinal-grey-posterior-horn: extends beyond the MNI volume (registered-affine)",
-  "spinal-white-columns: extends beyond the MNI volume (registered-affine)"
+  "spinal-white-columns: extends beyond the MNI volume (registered-affine)",
+  "roots-lumbosacral-anterior-l: extends beyond the MNI volume (registered-affine)",
+  "roots-lumbosacral-anterior-r: extends beyond the MNI volume (registered-affine)",
+  "roots-lumbosacral-posterior-l: extends beyond the MNI volume (registered-affine)",
+  "roots-lumbosacral-posterior-r: extends beyond the MNI volume (registered-affine)",
+  "ganglia-lumbosacral-l: extends beyond the MNI volume (registered-affine)",
+  "ganglia-lumbosacral-r: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-cervical: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-thoracic: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-lumbar: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-sacral: extends beyond the MNI volume (registered-affine)",
+  "phrenic-nerve-l: extends beyond the MNI volume (registered-affine)",
+  "phrenic-nerve-r: extends beyond the MNI volume (registered-affine)",
+  "lumbosacral-trunk-l: extends beyond the MNI volume (registered-affine)",
+  "lumbosacral-trunk-r: extends beyond the MNI volume (registered-affine)"
  ]
 }

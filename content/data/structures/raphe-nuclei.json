@@ -1,169 +1,157 @@
 {
- "kind": "structure",
- "id": "raphe-nuclei",
- "name": "Raphe nuclei",
- "synonyms": [
-  "serotonergic nuclei",
-  "B1–B9 cell groups"
- ],
- "system": "brainstem",
- "meshIds": [
-  "raphe-dorsal",
-  "raphe-median",
-  "brainstem"
- ],
- "summary": "The raphe nuclei are a chain of serotonergic cell groups in the midline of the brainstem from the caudal medulla to the rostral midbrain. The rostral group, the dorsal and median raphe nuclei of the midbrain and rostral pons, sends serotonin to the entire forebrain and regulates mood, sleep, appetite, aggression and the sensitivity to pain, and is the target of antidepressant and migraine drugs; the caudal group, the raphe magnus, obscurus and pallidus of the medulla, projects to the spinal cord to inhibit pain transmission in the dorsal horn and to facilitate motor neurons, breathing and thermoregulation. Migraine, depression, sudden infant death and the serotonin syndrome all involve raphe circuitry.",
- "anatomy": {
-  "location": "Midline of the brainstem tegmentum from the medullary decussation to the midbrain periaqueductal gray: the nucleus raphe magnus at the level of the facial nucleus, the dorsal raphe in the ventral periaqueductal gray, the median raphe in the rostral pontine tegmentum, with smaller groups (obscurus, pallidus, pontis) between.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Periaqueductal gray",
-    "note": "to the raphe magnus for analgesia"
-   },
-   {
-    "from": "Prefrontal cortex, hypothalamus, habenula"
-   },
-   {
-    "from": "Locus coeruleus"
-   }
+  "kind": "structure",
+  "id": "raphe-nuclei",
+  "name": "Raphe nuclei",
+  "synonyms": [
+    "serotonergic nuclei",
+    "B1–B9 cell groups"
   ],
-  "efferents": [
-   {
-    "to": "Cerebral cortex, hippocampus, striatum, thalamus, hypothalamus",
-    "via": "medial forebrain bundle (dorsal and median raphe)"
-   },
-   {
-    "to": "Spinal dorsal horn",
-    "via": "dorsolateral funiculus (raphe magnus)"
-   },
-   {
-    "to": "Spinal motor neurons and intermediolateral column",
-    "via": "raphespinal fibers (obscurus, pallidus)"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "raphe-dorsal",
+    "raphe-median",
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-lateral-spinothalamic",
-   "pathway-reticulospinal"
-  ]
- },
- "function": "Serotonin released from the rostral raphe into the cortex, hippocampus, striatum, thalamus and hypothalamus modulates mood and anxiety, promotes satiety, sets the sleep–wake cycle (the raphe fires during waking, slows in slow-wave sleep and stops in REM), constrains impulsive aggression and modulates cortical vasomotor tone in migraine. The nucleus raphe magnus, driven by the periaqueductal gray, sends serotonergic and enkephalinergic fibers down the dorsolateral funiculus to the dorsal horn, where they inhibit spinothalamic neurons, the basis of stimulation-produced and opioid analgesia. The caudal raphe also facilitates respiratory chemosensitivity, motor neuron excitability and heat production.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-pca"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -18
-    },
-    "label": "midline pontine tegmentum: raphe nuclei"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -8
-    },
-    "label": "dorsal raphe in the ventral periaqueductal gray"
-   }
-  ],
-  "normalAppearance": "The raphe is the midline seam of the tegmentum and is not visible as a distinct structure; the dorsal raphe lies beneath the aqueduct in the ventral periaqueductal gray and the raphe magnus in the midline of the caudal pons.",
-  "pathology": [
-   {
-    "pathology": "Central pontine myelinolysis",
-    "modality": "MRI",
-    "finding": "Symmetric central pontine T2 hyperintensity sparing the periphery and the corticospinal tracts after rapid sodium correction, involving the raphe and crossing fibers.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Paramedian brainstem infarct",
-    "modality": "MRI",
-    "finding": "Midline tegmental restricted diffusion after basilar perforator occlusion, with sleep and pain changes added to the classical signs.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Depression, anxiety and impulsivity",
-    "side": "bilateral",
-    "mechanism": "Reduced serotonergic input to the limbic forebrain"
-   },
-   {
-    "deficit": "Insomnia or hypersomnia",
-    "side": "bilateral",
-    "mechanism": "Loss of raphe modulation of the sleep–wake cycle"
-   },
-   {
-    "deficit": "Hyperalgesia",
-    "side": "bilateral",
-    "mechanism": "Loss of raphe magnus descending inhibition of the dorsal horn"
-   },
-   {
-    "deficit": "Serotonin syndrome (excess)",
-    "side": "bilateral",
-    "mechanism": "Overactivation of raphe targets by drug combinations: clonus, hyperthermia, agitation"
-   }
-  ],
-  "examination": [
-   "Mood, sleep and appetite history",
-   "Look for clonus, hyperreflexia and hyperthermia when serotonergic drugs are combined"
-  ],
-  "syndromes": [
-   "syn-parkinsonism"
-  ],
-  "pearls": [
-   "The raphe magnus is the reason electrical stimulation of the periaqueductal gray relieves pain: it is the relay to the dorsal horn",
-   "Triptans act on serotonin receptors of raphe-modulated cranial vessels and trigeminal endings",
-   "The serotonin syndrome is raphe overdrive: clonus, tremor and hyperthermia within hours of adding a second serotonergic drug"
-  ]
- },
- "pitfalls": [
-  "Serotonin drugs act on raphe targets throughout the brain; there is no focal raphe syndrome to localize"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    299,
-    301
-   ]
+  "summary": "The raphe nuclei are a chain of serotonergic cell groups in the midline of the brainstem from the caudal medulla to the rostral midbrain. The rostral group, the dorsal and median raphe nuclei of the midbrain and rostral pons, sends serotonin to the entire forebrain and regulates mood, sleep, appetite, aggression and the sensitivity to pain, and is the target of antidepressant and migraine drugs; the caudal group, the raphe magnus, obscurus and pallidus of the medulla, projects to the spinal cord to inhibit pain transmission in the dorsal horn and to facilitate motor neurons, breathing and thermoregulation. Migraine, depression, sudden infant death and the serotonin syndrome all involve raphe circuitry.",
+  "anatomy": {
+    "location": "Midline of the brainstem tegmentum from the medullary decussation to the midbrain periaqueductal gray: the nucleus raphe magnus at the level of the facial nucleus, the dorsal raphe in the ventral periaqueductal gray, the median raphe in the rostral pontine tegmentum, with smaller groups (obscurus, pallidus, pontis) between.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    199,
-    208
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Periaqueductal gray",
+        "note": "to the raphe magnus for analgesia"
+      },
+      {
+        "from": "Prefrontal cortex, hypothalamus, habenula"
+      },
+      {
+        "from": "Locus coeruleus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Cerebral cortex, hippocampus, striatum, thalamus, hypothalamus",
+        "via": "medial forebrain bundle (dorsal and median raphe)"
+      },
+      {
+        "to": "Spinal dorsal horn",
+        "via": "dorsolateral funiculus (raphe magnus)"
+      },
+      {
+        "to": "Spinal motor neurons and intermediolateral column",
+        "via": "raphespinal fibers (obscurus, pallidus)"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-spinothalamic",
+      "pathway-reticulospinal"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    143,
-    145
-   ]
-  }
- ],
- "tags": [
-  "serotonin",
-  "pain modulation"
- ],
- "status": "draft",
- "subsystem": "reticular formation"
+  "function": "Serotonin released from the rostral raphe into the cortex, hippocampus, striatum, thalamus and hypothalamus modulates mood and anxiety, promotes satiety, sets the sleep–wake cycle (the raphe fires during waking, slows in slow-wave sleep and stops in REM), constrains impulsive aggression and modulates cortical vasomotor tone in migraine. The nucleus raphe magnus, driven by the periaqueductal gray, sends serotonergic and enkephalinergic fibers down the dorsolateral funiculus to the dorsal horn, where they inhibit spinothalamic neurons, the basis of stimulation-produced and opioid analgesia. The caudal raphe also facilitates respiratory chemosensitivity, motor neuron excitability and heat production.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-pca"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -18
+        },
+        "label": "midline pontine tegmentum: raphe nuclei"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -8
+        },
+        "label": "dorsal raphe in the ventral periaqueductal gray"
+      }
+    ],
+    "normalAppearance": "The raphe is the midline seam of the tegmentum and is not visible as a distinct structure; the dorsal raphe lies beneath the aqueduct in the ventral periaqueductal gray and the raphe magnus in the midline of the caudal pons.",
+    "pathology": [
+      {
+        "pathology": "Central pontine myelinolysis",
+        "modality": "MRI",
+        "finding": "Symmetric central pontine T2 hyperintensity sparing the periphery and the corticospinal tracts after rapid sodium correction, involving the raphe and crossing fibers.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Paramedian brainstem infarct",
+        "modality": "MRI",
+        "finding": "Midline tegmental restricted diffusion after basilar perforator occlusion, with sleep and pain changes added to the classical signs.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Depression, anxiety and impulsivity",
+        "side": "bilateral",
+        "mechanism": "Reduced serotonergic input to the limbic forebrain"
+      },
+      {
+        "deficit": "Insomnia or hypersomnia",
+        "side": "bilateral",
+        "mechanism": "Loss of raphe modulation of the sleep–wake cycle"
+      },
+      {
+        "deficit": "Hyperalgesia",
+        "side": "bilateral",
+        "mechanism": "Loss of raphe magnus descending inhibition of the dorsal horn"
+      },
+      {
+        "deficit": "Serotonin syndrome (excess)",
+        "side": "bilateral",
+        "mechanism": "Overactivation of raphe targets by drug combinations: clonus, hyperthermia, agitation"
+      }
+    ],
+    "examination": [
+      "Mood, sleep and appetite history",
+      "Look for clonus, hyperreflexia and hyperthermia when serotonergic drugs are combined"
+    ],
+    "syndromes": [
+      "syn-parkinsonism"
+    ],
+    "pearls": [
+      "The raphe magnus is the reason electrical stimulation of the periaqueductal gray relieves pain: it is the relay to the dorsal horn",
+      "Triptans act on serotonin receptors of raphe-modulated cranial vessels and trigeminal endings",
+      "The serotonin syndrome is raphe overdrive: clonus, tremor and hyperthermia within hours of adding a second serotonergic drug"
+    ]
+  },
+  "pitfalls": [
+    "Serotonin drugs act on raphe targets throughout the brain; there is no focal raphe syndrome to localize"
+  ],
+  "citations": [
+    {
+      "ref": "sp-nucleus-raphe",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "serotonin",
+    "pain modulation"
+  ],
+  "status": "draft",
+  "subsystem": "reticular formation"
 }

@@ -1,154 +1,142 @@
 {
- "kind": "structure",
- "id": "lateral-geniculate-nucleus",
- "name": "Lateral geniculate nucleus",
- "synonyms": [
-  "LGN",
-  "lateral geniculate body"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "lateral-geniculate-nucleus-l",
-  "lateral-geniculate-nucleus-r"
- ],
- "summary": "A small six-layered nucleus under the pulvinar where the optic tract ends. Fibers from the contralateral eye reach layers 1, 4 and 6 and those from the ipsilateral eye layers 2, 3 and 5, so each geniculate maps the contralateral visual hemifield; magnocellular layers 1–2 handle motion and contrast, parvocellular layers 3–6 detail and color. Its axons form the optic radiation to the calcarine cortex. Its dual blood supply from the anterior choroidal and lateral posterior choroidal arteries explains the sector-shaped field defects of geniculate infarcts.",
- "anatomy": {
-  "location": "Ventrolateral to the pulvinar on the inferior surface of the posterior thalamus, lateral to the medial geniculate body and above the hippocampus, at the end of the optic tract; the brachium of the superior colliculus passes medial to it.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "optic tract (both eyes)"
-   }
+  "kind": "structure",
+  "id": "lateral-geniculate-nucleus",
+  "name": "Lateral geniculate nucleus",
+  "synonyms": [
+    "LGN",
+    "lateral geniculate body"
   ],
-  "efferents": [
-   {
-    "to": "cortex-calcarine",
-    "via": "tract-optic-radiation"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "lateral-geniculate-nucleus-l",
+    "lateral-geniculate-nucleus-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Thalamic relay of the visual pathway; gates and sharpens retinal signals under cortical and brainstem control before they reach the primary visual cortex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-anterior-choroidal",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-anterior-choroidal",
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 22,
-     "y": -24,
-     "z": -4
-    },
-    "label": "lateral geniculate body at the end of the optic tract, medial to the temporal horn"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 22,
-     "y": -24,
-     "z": -4
-    },
-    "label": "LGN below the pulvinar and above the hippocampus"
-   }
-  ],
-  "normalAppearance": "A small bump on the inferolateral thalamus at the termination of the optic tract, visible on thin coronal T2 and as the MASSP mesh in this atlas; lesions are small and easily missed.",
-  "pathology": [
-   {
-    "pathology": "Geniculate infarct",
-    "modality": "MRI",
-    "finding": "Small restriction at the lateral geniculate body giving a congruous homonymous defect, often a horizontal sectoranopia (lateral posterior choroidal) or upper-and-lower quadrant loss with sparing of the horizontal sector (anterior choroidal).",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Transsynaptic degeneration",
-    "modality": "MRI",
-    "finding": "Atrophy of the LGN years after an eye or optic tract lesion; imaging is subtle.",
-    "sequence": "T1"
-   }
-  ],
-  "sequenceOfChoice": "Thin coronal T2 and DWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral homonymous hemianopia",
-    "side": "contralateral",
-    "mechanism": "Complete lesion of the nucleus"
-   },
-   {
-    "deficit": "Horizontal wedge-shaped sectoranopia",
-    "side": "contralateral",
-    "mechanism": "Lateral posterior choroidal artery infarct of the middle of the nucleus"
-   },
-   {
-    "deficit": "Upper and lower quadrantic loss sparing the horizontal sector",
-    "side": "contralateral",
-    "mechanism": "Anterior choroidal artery infarct of the medial and lateral parts"
-   },
-   {
-    "deficit": "Pupils normal",
-    "side": "n/a",
-    "mechanism": "Pupillary fibers leave the optic tract before the geniculate"
-   }
-  ],
-  "examination": [
-   "Confrontation fields and formal perimetry: look for congruous sector defects",
-   "Pupillary light reflex (preserved, unlike optic tract lesions with RAPD)"
-  ],
-  "syndromes": [
-   "syn-homonymous-hemianopia",
-   "syn-anterior-choroidal-infarct"
-  ],
-  "pearls": [
-   "A wedge-shaped homonymous defect pointing to fixation is a geniculate lesion",
-   "Geniculate and cortical lesions spare the pupils; optic tract lesions do not"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    327,
-    329
-   ]
+  "summary": "A small six-layered nucleus under the pulvinar where the optic tract ends. Fibers from the contralateral eye reach layers 1, 4 and 6 and those from the ipsilateral eye layers 2, 3 and 5, so each geniculate maps the contralateral visual hemifield; magnocellular layers 1–2 handle motion and contrast, parvocellular layers 3–6 detail and color. Its axons form the optic radiation to the calcarine cortex. Its dual blood supply from the anterior choroidal and lateral posterior choroidal arteries explains the sector-shaped field defects of geniculate infarcts.",
+  "anatomy": {
+    "location": "Ventrolateral to the pulvinar on the inferior surface of the posterior thalamus, lateral to the medial geniculate body and above the hippocampus, at the end of the optic tract; the brachium of the superior colliculus passes medial to it.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    366,
-    366
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "optic tract (both eyes)"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "cortex-calcarine",
+        "via": "tract-optic-radiation"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    49
-   ]
-  }
- ],
- "tags": [
-  "diencephalon"
- ],
- "status": "draft",
- "latin": "Corpus geniculatum laterale",
- "subsystem": "thalamus",
- "parent": "thalamus"
+  "function": "Thalamic relay of the visual pathway; gates and sharpens retinal signals under cortical and brainstem control before they reach the primary visual cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-anterior-choroidal",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-anterior-choroidal",
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 22,
+          "y": -24,
+          "z": -4
+        },
+        "label": "lateral geniculate body at the end of the optic tract, medial to the temporal horn"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 22,
+          "y": -24,
+          "z": -4
+        },
+        "label": "LGN below the pulvinar and above the hippocampus"
+      }
+    ],
+    "normalAppearance": "A small bump on the inferolateral thalamus at the termination of the optic tract, visible on thin coronal T2 and as the MASSP mesh in this atlas; lesions are small and easily missed.",
+    "pathology": [
+      {
+        "pathology": "Geniculate infarct",
+        "modality": "MRI",
+        "finding": "Small restriction at the lateral geniculate body giving a congruous homonymous defect, often a horizontal sectoranopia (lateral posterior choroidal) or upper-and-lower quadrant loss with sparing of the horizontal sector (anterior choroidal).",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Transsynaptic degeneration",
+        "modality": "MRI",
+        "finding": "Atrophy of the LGN years after an eye or optic tract lesion; imaging is subtle.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Thin coronal T2 and DWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral homonymous hemianopia",
+        "side": "contralateral",
+        "mechanism": "Complete lesion of the nucleus"
+      },
+      {
+        "deficit": "Horizontal wedge-shaped sectoranopia",
+        "side": "contralateral",
+        "mechanism": "Lateral posterior choroidal artery infarct of the middle of the nucleus"
+      },
+      {
+        "deficit": "Upper and lower quadrantic loss sparing the horizontal sector",
+        "side": "contralateral",
+        "mechanism": "Anterior choroidal artery infarct of the medial and lateral parts"
+      },
+      {
+        "deficit": "Pupils normal",
+        "side": "n/a",
+        "mechanism": "Pupillary fibers leave the optic tract before the geniculate"
+      }
+    ],
+    "examination": [
+      "Confrontation fields and formal perimetry: look for congruous sector defects",
+      "Pupillary light reflex (preserved, unlike optic tract lesions with RAPD)"
+    ],
+    "syndromes": [
+      "syn-homonymous-hemianopia",
+      "syn-anterior-choroidal-infarct"
+    ],
+    "pearls": [
+      "A wedge-shaped homonymous defect pointing to fixation is a geniculate lesion",
+      "Geniculate and cortical lesions spare the pupils; optic tract lesions do not"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-nucleus-lateral-geniculate",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-geniculate-ganglion",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-thalamus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "diencephalon"
+  ],
+  "status": "draft",
+  "latin": "Corpus geniculatum laterale",
+  "subsystem": "thalamus",
+  "parent": "thalamus"
 }

@@ -1,178 +1,158 @@
 {
- "kind": "structure",
- "id": "ventricle-third",
- "name": "Third ventricle",
- "synonyms": [],
- "system": "ventricles-csf",
- "meshIds": [
-  "ventricle-third"
- ],
- "summary": "A narrow midline slit between the two thalami and hypothalami, connected to the lateral ventricles in front through the interventricular foramina of Monro and to the fourth ventricle behind through the cerebral aqueduct. Its walls are the thalamus above and the hypothalamus below, its floor descends to the optic chiasm, infundibulum and mammillary bodies, and its roof carries choroid plexus. Masses of the pituitary, hypothalamus, pineal region or a colloid cyst at the foramen of Monro obstruct it, and its dilatation in hydrocephalus presses on the hypothalamus and chiasm.",
- "anatomy": {
-  "location": "Midline diencephalon, bounded laterally by the thalami (often joined across it by the interthalamic adhesion) and hypothalami, anteriorly by the lamina terminalis and anterior commissure, posteriorly by the pineal recess and posterior commissure, and inferiorly by the optic and infundibular recesses.",
-  "subdivisions": [
-   {
-    "name": "Anterior wall",
-    "note": "lamina terminalis, anterior commissure, columns of the fornix"
-   },
-   {
-    "name": "Floor",
-    "note": "optic chiasm, infundibulum, tuber cinereum, mammillary bodies, tegmentum of the midbrain"
-   },
-   {
-    "name": "Roof",
-    "note": "ependyma with choroid plexus beneath the fornix"
-   },
-   {
-    "name": "Posterior wall",
-    "note": "pineal recess, habenular and posterior commissures, opening of the aqueduct"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "CSF conduit between the lateral and fourth ventricles; its wall structures (hypothalamus, thalamus) and floor recesses are important landmarks for pituitary and pineal region disease.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pcom",
-   "artery-pca"
+  "kind": "structure",
+  "id": "ventricle-third",
+  "name": "Third ventricle",
+  "synonyms": [],
+  "system": "ventricles-csf",
+  "meshIds": [
+    "ventricle-third"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -10,
-     "z": 2
-    },
-    "label": "slit-like midline ventricle between the thalami"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -8,
-     "z": 0
-    },
-    "label": "recesses of the floor and the aqueduct behind"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -10,
-     "z": 2
-    },
-    "label": "third ventricle at the level of the foramen of Monro"
-   }
-  ],
-  "normalAppearance": "A thin midline CSF slit on axial and coronal images, wider in the elderly; on sagittal T2 the optic and infundibular recesses point down toward the sella. A ballooned third ventricle with a bowed floor indicates obstructive hydrocephalus.",
-  "pathology": [
-   {
-    "pathology": "Colloid cyst of the foramen of Monro",
-    "modality": "MRI",
-    "finding": "Round T1-bright, T2-variable cyst at the anterior roof of the third ventricle obstructing both foramina; can cause sudden death from acute hydrocephalus.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Craniopharyngioma or hypothalamic glioma",
-    "modality": "MRI",
-    "finding": "Suprasellar cystic and calcified mass elevating the floor of the third ventricle.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Hydrocephalus with third ventricular ballooning",
-    "modality": "MRI",
-    "finding": "Rounded third ventricle with downward bowing of the floor and dilated recesses; the target for endoscopic third ventriculostomy.",
-    "sequence": "T2"
-   }
-  ],
-  "sequenceOfChoice": "Sagittal T2 (CISS) for the floor and aqueduct; CT for calcification"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Intermittent severe headache with drop attacks",
-    "side": "n/a",
-    "mechanism": "Ball-valve obstruction of the foramina of Monro by a colloid cyst"
-   },
-   {
-    "deficit": "Bitemporal hemianopia and endocrine failure",
-    "side": "bilateral",
-    "mechanism": "Mass in the floor pressing on the chiasm and hypothalamus"
-   },
-   {
-    "deficit": "Diabetes insipidus, hyperphagia, temperature dysregulation",
-    "side": "n/a",
-    "mechanism": "Hypothalamic wall involvement"
-   },
-   {
-    "deficit": "Memory loss",
-    "side": "bilateral",
-    "mechanism": "Fornix and mammillary body damage from surgery or tumor"
-   }
-  ],
-  "examination": [
-   "Visual fields and acuity",
-   "Fundoscopy",
-   "Endocrine history: thirst, weight, menses, libido",
-   "Memory testing"
-  ],
-  "syndromes": [
-   "syn-hydrocephalus",
-   "syn-pituitary-mass"
-  ],
-  "pearls": [
-   "A young adult with positional thunderclap headaches and a round lesion at the foramen of Monro has a colloid cyst and needs neurosurgical review",
-   "The floor of the third ventricle is the thinnest and is where endoscopic ventriculostomy is performed"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    443,
-    445
-   ]
+  "summary": "A narrow midline slit between the two thalami and hypothalami, connected to the lateral ventricles in front through the interventricular foramina of Monro and to the fourth ventricle behind through the cerebral aqueduct. Its walls are the thalamus above and the hypothalamus below, its floor descends to the optic chiasm, infundibulum and mammillary bodies, and its roof carries choroid plexus. Masses of the pituitary, hypothalamus, pineal region or a colloid cyst at the foramen of Monro obstruct it, and its dilatation in hydrocephalus presses on the hypothalamus and chiasm.",
+  "anatomy": {
+    "location": "Midline diencephalon, bounded laterally by the thalami (often joined across it by the interthalamic adhesion) and hypothalami, anteriorly by the lamina terminalis and anterior commissure, posteriorly by the pineal recess and posterior commissure, and inferiorly by the optic and infundibular recesses.",
+    "subdivisions": [
+      {
+        "name": "Anterior wall",
+        "note": "lamina terminalis, anterior commissure, columns of the fornix"
+      },
+      {
+        "name": "Floor",
+        "note": "optic chiasm, infundibulum, tuber cinereum, mammillary bodies, tegmentum of the midbrain"
+      },
+      {
+        "name": "Roof",
+        "note": "ependyma with choroid plexus beneath the fornix"
+      },
+      {
+        "name": "Posterior wall",
+        "note": "pineal recess, habenular and posterior commissures, opening of the aqueduct"
+      }
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    373,
-    375
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    31
-   ]
+  "function": "CSF conduit between the lateral and fourth ventricles; its wall structures (hypothalamus, thalamus) and floor recesses are important landmarks for pituitary and pineal region disease.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pcom",
+      "artery-pca"
+    ],
+    "territories": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    272
-   ]
-  }
- ],
- "tags": [
-  "csf"
- ],
- "status": "draft",
- "latin": "Ventriculus tertius",
- "subsystem": "ventricles"
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -10,
+          "z": 2
+        },
+        "label": "slit-like midline ventricle between the thalami"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -8,
+          "z": 0
+        },
+        "label": "recesses of the floor and the aqueduct behind"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -10,
+          "z": 2
+        },
+        "label": "third ventricle at the level of the foramen of Monro"
+      }
+    ],
+    "normalAppearance": "A thin midline CSF slit on axial and coronal images, wider in the elderly; on sagittal T2 the optic and infundibular recesses point down toward the sella. A ballooned third ventricle with a bowed floor indicates obstructive hydrocephalus.",
+    "pathology": [
+      {
+        "pathology": "Colloid cyst of the foramen of Monro",
+        "modality": "MRI",
+        "finding": "Round T1-bright, T2-variable cyst at the anterior roof of the third ventricle obstructing both foramina; can cause sudden death from acute hydrocephalus.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Craniopharyngioma or hypothalamic glioma",
+        "modality": "MRI",
+        "finding": "Suprasellar cystic and calcified mass elevating the floor of the third ventricle.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Hydrocephalus with third ventricular ballooning",
+        "modality": "MRI",
+        "finding": "Rounded third ventricle with downward bowing of the floor and dilated recesses; the target for endoscopic third ventriculostomy.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T2 (CISS) for the floor and aqueduct; CT for calcification"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Intermittent severe headache with drop attacks",
+        "side": "n/a",
+        "mechanism": "Ball-valve obstruction of the foramina of Monro by a colloid cyst"
+      },
+      {
+        "deficit": "Bitemporal hemianopia and endocrine failure",
+        "side": "bilateral",
+        "mechanism": "Mass in the floor pressing on the chiasm and hypothalamus"
+      },
+      {
+        "deficit": "Diabetes insipidus, hyperphagia, temperature dysregulation",
+        "side": "n/a",
+        "mechanism": "Hypothalamic wall involvement"
+      },
+      {
+        "deficit": "Memory loss",
+        "side": "bilateral",
+        "mechanism": "Fornix and mammillary body damage from surgery or tumor"
+      }
+    ],
+    "examination": [
+      "Visual fields and acuity",
+      "Fundoscopy",
+      "Endocrine history: thirst, weight, menses, libido",
+      "Memory testing"
+    ],
+    "syndromes": [
+      "syn-hydrocephalus",
+      "syn-pituitary-mass"
+    ],
+    "pearls": [
+      "A young adult with positional thunderclap headaches and a round lesion at the foramen of Monro has a colloid cyst and needs neurosurgical review",
+      "The floor of the third ventricle is the thinnest and is where endoscopic ventriculostomy is performed"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebral-aqueduct",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hydrocephalus",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "csf"
+  ],
+  "status": "draft",
+  "latin": "Ventriculus tertius",
+  "subsystem": "ventricles"
 }

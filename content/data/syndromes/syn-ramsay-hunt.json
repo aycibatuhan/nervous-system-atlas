@@ -1,115 +1,119 @@
 {
- "kind": "syndrome",
- "id": "syn-ramsay-hunt",
- "name": "Ramsay Hunt syndrome (herpes zoster oticus)",
- "eponyms": [
-  "herpes zoster oticus",
-  "geniculate zoster"
- ],
- "category": "infectious",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cn-07-facial",
-   "ganglion-geniculate",
-   "cn-08-vestibulocochlear"
+  "kind": "syndrome",
+  "id": "syn-ramsay-hunt",
+  "name": "Ramsay Hunt syndrome (herpes zoster oticus)",
+  "eponyms": [
+    "herpes zoster oticus",
+    "geniculate zoster"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "cn-07-facial-l"
-  ]
- },
- "presentation": "A patient develops severe pain in and around one ear, followed within days by a complete facial palsy on that side and a crop of vesicles in the ear canal, on the eardrum or on the soft palate. Taste is lost on the front of the tongue and sounds are painfully loud. Many also have vertigo, tinnitus and hearing loss because the eighth nerve is inflamed alongside. Recovery is slower and less complete than in Bell palsy, and the pain may persist as postherpetic neuralgia.",
- "deficits": [
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "whole face",
-   "sign": "Lower motor neuron facial palsy, usually severe, with hyperacusis and loss of taste",
-   "substrate": "cn-07-facial"
+  "category": "infectious",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cn-07-facial",
+      "ganglion-geniculate",
+      "cn-08-vestibulocochlear"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "pain",
-   "side": "ipsilateral",
-   "distribution": "ear, auricle, deep ear",
-   "sign": "Severe otalgia preceding the rash; postherpetic neuralgia after",
-   "substrate": "ganglion-geniculate"
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "cn-07-facial-l"
+    ]
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "external auditory canal, concha, tympanic membrane",
-   "sign": "Vesicular eruption in the sensory territory of the facial nerve (and palate)",
-   "substrate": "ganglion-geniculate"
+  "presentation": "A patient develops severe pain in and around one ear, followed within days by a complete facial palsy on that side and a crop of vesicles in the ear canal, on the eardrum or on the soft palate. Taste is lost on the front of the tongue and sounds are painfully loud. Many also have vertigo, tinnitus and hearing loss because the eighth nerve is inflamed alongside. Recovery is slower and less complete than in Bell palsy, and the pain may persist as postherpetic neuralgia.",
+  "deficits": [
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "whole face",
+      "sign": "Lower motor neuron facial palsy, usually severe, with hyperacusis and loss of taste",
+      "substrate": "cn-07-facial"
+    },
+    {
+      "modality": "pain",
+      "side": "ipsilateral",
+      "distribution": "ear, auricle, deep ear",
+      "sign": "Severe otalgia preceding the rash; postherpetic neuralgia after",
+      "substrate": "ganglion-geniculate"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "external auditory canal, concha, tympanic membrane",
+      "sign": "Vesicular eruption in the sensory territory of the facial nerve (and palate)",
+      "substrate": "ganglion-geniculate"
+    },
+    {
+      "modality": "vestibular",
+      "side": "ipsilateral",
+      "distribution": "eighth nerve",
+      "sign": "Vertigo, nystagmus, sensorineural hearing loss and tinnitus",
+      "substrate": "cn-08-vestibulocochlear"
+    }
+  ],
+  "reasoning": "Varicella zoster virus that has lain dormant in the geniculate ganglion since childhood chickenpox reactivates and inflames the ganglion and the facial nerve within the narrow bony facial canal, where swelling compresses the nerve and blocks conduction. The facial nerve is the uncrossed lower motor neuron supply of the ipsilateral face, so the palsy is complete on that side including the forehead, and because the inflammation is at or proximal to the geniculate ganglion, the branches that leave distal to it are all affected: the greater petrosal nerve (reduced tearing), the nerve to the stapedius (hyperacusis) and the chorda tympani (loss of taste on the anterior two-thirds of the tongue). The geniculate ganglion also holds the cell bodies of the small cutaneous sensory territory of the facial nerve, the concha, the external auditory canal and the tympanic membrane, and of the taste and general sensory fibers to the palate, so the vesicles appear in exactly these places, which are the diagnostic clue. The vestibulocochlear nerve shares the internal acoustic meatus and is often involved by the spreading inflammation, adding vertigo and deafness, and less often the fifth, ninth and tenth nerves are affected. The virus damages axons more than the presumed viral inflammation of Bell palsy, hence the worse prognosis.",
+  "imagingFindings": [
+    {
+      "pathology": "Facial nerve and geniculate ganglion inflammation",
+      "modality": "MRI",
+      "finding": "Enhancement of the facial nerve in the labyrinthine segment and geniculate ganglion, often extending to the eighth nerve and the membranous labyrinth, on post-contrast T1 of the temporal bone.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Zoster ganglionitis",
+      "modality": "LP/CSF",
+      "finding": "Mild lymphocytic pleocytosis with VZV DNA on PCR when the diagnosis is uncertain or the brainstem is involved.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Reactivation of varicella zoster virus in the geniculate ganglion",
+    "Immunosuppression, age, HIV"
+  ],
+  "mimics": [
+    {
+      "name": "Bell palsy",
+      "howToDistinguish": "No vesicles, less pain, no eighth nerve involvement; zoster sine herpete can mimic it and is diagnosed by PCR or serology"
+    },
+    {
+      "name": "Otitis externa or media with facial palsy",
+      "howToDistinguish": "Purulent discharge, drum changes, no vesicles"
+    },
+    {
+      "name": "Lyme facial palsy",
+      "howToDistinguish": "Tick exposure, erythema migrans, often bilateral"
+    }
+  ],
+  "management": [
+    "Look in the ear and at the palate of every patient with a facial palsy and ear pain",
+    "Antiviral (valacyclovir) plus prednisolone within 72 hours; eye protection",
+    "Audiology and vestibular assessment; analgesia for neuralgia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-ramsay-hunt-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-herpes-zoster",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-herpes-zoster-ophthalmicus",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -35,
+      "y": -30,
+      "z": -30
+    },
+    "label": "facial nerve at the geniculate ganglion in the temporal bone"
   },
-  {
-   "modality": "vestibular",
-   "side": "ipsilateral",
-   "distribution": "eighth nerve",
-   "sign": "Vertigo, nystagmus, sensorineural hearing loss and tinnitus",
-   "substrate": "cn-08-vestibulocochlear"
-  }
- ],
- "reasoning": "Varicella zoster virus that has lain dormant in the geniculate ganglion since childhood chickenpox reactivates and inflames the ganglion and the facial nerve within the narrow bony facial canal, where swelling compresses the nerve and blocks conduction. The facial nerve is the uncrossed lower motor neuron supply of the ipsilateral face, so the palsy is complete on that side including the forehead, and because the inflammation is at or proximal to the geniculate ganglion, the branches that leave distal to it are all affected: the greater petrosal nerve (reduced tearing), the nerve to the stapedius (hyperacusis) and the chorda tympani (loss of taste on the anterior two-thirds of the tongue). The geniculate ganglion also holds the cell bodies of the small cutaneous sensory territory of the facial nerve, the concha, the external auditory canal and the tympanic membrane, and of the taste and general sensory fibers to the palate, so the vesicles appear in exactly these places, which are the diagnostic clue. The vestibulocochlear nerve shares the internal acoustic meatus and is often involved by the spreading inflammation, adding vertigo and deafness, and less often the fifth, ninth and tenth nerves are affected. The virus damages axons more than the presumed viral inflammation of Bell palsy, hence the worse prognosis.",
- "imagingFindings": [
-  {
-   "pathology": "Facial nerve and geniculate ganglion inflammation",
-   "modality": "MRI",
-   "finding": "Enhancement of the facial nerve in the labyrinthine segment and geniculate ganglion, often extending to the eighth nerve and the membranous labyrinth, on post-contrast T1 of the temporal bone.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Zoster ganglionitis",
-   "modality": "LP/CSF",
-   "finding": "Mild lymphocytic pleocytosis with VZV DNA on PCR when the diagnosis is uncertain or the brainstem is involved.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Reactivation of varicella zoster virus in the geniculate ganglion",
-  "Immunosuppression, age, HIV"
- ],
- "mimics": [
-  {
-   "name": "Bell palsy",
-   "howToDistinguish": "No vesicles, less pain, no eighth nerve involvement; zoster sine herpete can mimic it and is diagnosed by PCR or serology"
-  },
-  {
-   "name": "Otitis externa or media with facial palsy",
-   "howToDistinguish": "Purulent discharge, drum changes, no vesicles"
-  },
-  {
-   "name": "Lyme facial palsy",
-   "howToDistinguish": "Tick exposure, erythema migrans, often bilateral"
-  }
- ],
- "management": [
-  "Look in the ear and at the palate of every patient with a facial palsy and ear pain",
-  "Antiviral (valacyclovir) plus prednisolone within 72 hours; eye protection",
-  "Audiology and vestibular assessment; analgesia for neuralgia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    122,
-    124
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -35,
-   "y": -30,
-   "z": -30
-  },
-  "label": "facial nerve at the geniculate ganglion in the temporal bone"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

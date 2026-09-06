@@ -1,170 +1,142 @@
 {
- "kind": "topic",
- "id": "topic-brain-tumor-localization",
- "name": "Brain tumors: localization and patterns",
- "synonyms": [],
- "category": "neoplasm",
- "summary": "Intracranial tumors present through three mechanisms, focal deficit or seizure from the cortex or tract they invade or compress, raised intracranial pressure from their mass and edema or from the hydrocephalus they cause, and endocrine or cranial nerve syndromes from their position at the skull base, so the presentation localizes the tumor and the location predicts the histology: gliomas infiltrate the white matter of the hemispheres, meningiomas sit on the dura, metastases lodge at the gray-white junction, pituitary adenomas and craniopharyngiomas occupy the sella and suprasellar cistern, vestibular schwannomas fill the cerebellopontine angle, and medulloblastomas and ependymomas fill the fourth ventricle in children. Imaging pattern, age and the atlas position narrow the diagnosis before the biopsy.",
- "sections": [
-  {
-   "heading": "Hemispheric tumors",
-   "body": "Diffuse gliomas (astrocytomas and oligodendrogliomas, graded by IDH and 1p/19q status and histology) infiltrate the frontal and temporal white matter, presenting with seizures when low grade and with progressive focal deficit, headache and personality change when high grade; glioblastoma enhances irregularly around necrosis and crosses the corpus callosum as a butterfly lesion. Metastases (lung, breast, melanoma, kidney, colon) lodge at the gray-white junction where the arterioles narrow, are often multiple and round with disproportionate edema, and present with seizures or deficits appropriate to the cortex they occupy. Primary CNS lymphoma sits in the deep periventricular white matter and the corpus callosum, enhances homogeneously and restricts diffusion, and melts with steroids. Meningiomas compress rather than invade, arising from the convexity, the falx and parasagittal dura (leg weakness and seizures), the sphenoid wing (proptosis and optic neuropathy), the olfactory groove (anosmia and frontal change) and the tuberculum sellae (chiasmal syndrome). Functional localization follows the atlas: precentral tumors cause focal motor seizures and weakness, dominant temporal tumors aphasia, occipital tumors field defects, and frontal tumors personality change with late focal signs."
-  },
-  {
-   "heading": "Sellar, suprasellar and skull-base tumors",
-   "body": "Pituitary adenomas cause hormone excess (prolactin, growth hormone, ACTH) or hypopituitarism and, as they rise through the diaphragm, a bitemporal hemianopia from the chiasm and cavernous sinus syndromes from lateral extension; apoplexy into an adenoma produces thunderclap headache, visual loss and ophthalmoplegia. Craniopharyngiomas in children and adults are cystic, calcified suprasellar masses that compress the chiasm and the hypothalamus, producing visual loss, growth failure, diabetes insipidus and obesity. Germinomas of the pineal and suprasellar region cause Parinaud syndrome, hydrocephalus and diabetes insipidus. Skull-base tumors present as cranial nerve syndromes named by the foramen: cavernous sinus (III, IV, VI, V1), superior orbital fissure, orbital apex (with II), petrous apex (VI and V), cerebellopontine angle (VIII, then VII and V, then cerebellar signs, for vestibular schwannoma and meningioma), jugular foramen (IX, X, XI for glomus tumors and schwannomas) and clivus (chordoma with VI palsy). Optic pathway gliomas belong to neurofibromatosis type 1."
-  },
-  {
-   "heading": "Posterior fossa and intraventricular tumors",
-   "body": "In children the posterior fossa is the commonest site: medulloblastoma arises in the vermis and fills the fourth ventricle with truncal ataxia, vomiting and hydrocephalus and seeds the CSF; pilocytic astrocytoma is a cystic hemispheric mass with a mural nodule and limb ataxia; ependymoma grows from the floor of the fourth ventricle through the foramina; and diffuse midline glioma of the pons produces cranial nerve palsies, long-tract signs and ataxia with a fatal course. In adults, hemangioblastoma (with von Hippel-Lindau disease), metastases and cerebellar gliomas occur. Intraventricular tumors (colloid cyst of the third ventricle with positional headache and sudden death from acute hydrocephalus, central neurocytoma and subependymoma of the lateral ventricle, choroid plexus papilloma) present with obstructive hydrocephalus. Brainstem tumors show the level-specific crossed syndromes of the brainstem entries."
-  },
-  {
-   "heading": "Mass effect, edema and the treatment logic",
-   "body": "Vasogenic edema spreads through the white matter around tumors because their vessels lack a blood-brain barrier and it responds to dexamethasone; the mass and edema raise pressure and, as the atlas herniation entries describe, displace the cingulate under the falx, the uncus through the incisura and the tonsils through the foramen magnum. Headache that is worse in the morning and on lying, vomiting, papilledema and a sixth nerve palsy are the pressure signs, and a false localizing sixth nerve palsy must not be attributed to a pontine tumor. Seizures accompany cortical tumors and are treated with antiepileptics but not prophylactically in their absence. Surgery aims at maximal safe resection guided by awake mapping and tractography of the corticospinal tract, the arcuate and the inferior fronto-occipital fasciculus; radiotherapy and chemotherapy follow according to histology and molecular markers; and paraneoplastic syndromes (cerebellar degeneration, limbic encephalitis, Lambert-Eaton syndrome, sensory neuronopathy) are the remote effects of systemic cancer on the nervous system."
-  }
- ],
- "keyPoints": [
-  "Location predicts histology: white matter gliomas, dural meningiomas, junctional metastases, periventricular lymphoma, sellar adenomas, angle schwannomas, fourth ventricle medulloblastomas",
-  "Seizures suggest a cortical tumor and often a low-grade glioma; rapid deficit suggests glioblastoma or metastasis",
-  "A bitemporal hemianopia is a sellar mass until the MRI is done; a cerebellopontine angle tumor starts with hearing",
-  "Morning headache, vomiting and a sixth nerve palsy are pressure, not localization",
-  "Multiple round lesions with big edema at the gray-white junction are metastases; find the primary in the lung or breast"
- ],
- "meshIds": [
-  "pituitary-gland",
-  "optic-chiasm",
-  "ventricle-fourth",
-  "cerebellar-vermis-vi",
-  "sinus-cavernous-l",
-  "sinus-cavernous-r",
-  "cn-08-vestibulocochlear-l",
-  "cn-08-vestibulocochlear-r"
- ],
- "related": {
-  "structureIds": [
-   "pituitary-infundibulum",
-   "optic-chiasm",
-   "sinus-cavernous",
-   "ventricle-fourth",
-   "cerebellar-vermis",
-   "cerebral-white-matter",
-   "corpus-callosum",
-   "gyrus-precentral"
+  "kind": "topic",
+  "id": "topic-brain-tumor-localization",
+  "name": "Brain tumors: localization and patterns",
+  "synonyms": [],
+  "category": "neoplasm",
+  "summary": "Intracranial tumors present through three mechanisms, focal deficit or seizure from the cortex or tract they invade or compress, raised intracranial pressure from their mass and edema or from the hydrocephalus they cause, and endocrine or cranial nerve syndromes from their position at the skull base, so the presentation localizes the tumor and the location predicts the histology: gliomas infiltrate the white matter of the hemispheres, meningiomas sit on the dura, metastases lodge at the gray-white junction, pituitary adenomas and craniopharyngiomas occupy the sella and suprasellar cistern, vestibular schwannomas fill the cerebellopontine angle, and medulloblastomas and ependymomas fill the fourth ventricle in children. Imaging pattern, age and the atlas position narrow the diagnosis before the biopsy.",
+  "sections": [
+    {
+      "heading": "Hemispheric tumors",
+      "body": "Diffuse gliomas (astrocytomas and oligodendrogliomas, graded by IDH and 1p/19q status and histology) infiltrate the frontal and temporal white matter, presenting with seizures when low grade and with progressive focal deficit, headache and personality change when high grade; glioblastoma enhances irregularly around necrosis and crosses the corpus callosum as a butterfly lesion. Metastases (lung, breast, melanoma, kidney, colon) lodge at the gray-white junction where the arterioles narrow, are often multiple and round with disproportionate edema, and present with seizures or deficits appropriate to the cortex they occupy. Primary CNS lymphoma sits in the deep periventricular white matter and the corpus callosum, enhances homogeneously and restricts diffusion, and melts with steroids. Meningiomas compress rather than invade, arising from the convexity, the falx and parasagittal dura (leg weakness and seizures), the sphenoid wing (proptosis and optic neuropathy), the olfactory groove (anosmia and frontal change) and the tuberculum sellae (chiasmal syndrome). Functional localization follows the atlas: precentral tumors cause focal motor seizures and weakness, dominant temporal tumors aphasia, occipital tumors field defects, and frontal tumors personality change with late focal signs."
+    },
+    {
+      "heading": "Sellar, suprasellar and skull-base tumors",
+      "body": "Pituitary adenomas cause hormone excess (prolactin, growth hormone, ACTH) or hypopituitarism and, as they rise through the diaphragm, a bitemporal hemianopia from the chiasm and cavernous sinus syndromes from lateral extension; apoplexy into an adenoma produces thunderclap headache, visual loss and ophthalmoplegia. Craniopharyngiomas in children and adults are cystic, calcified suprasellar masses that compress the chiasm and the hypothalamus, producing visual loss, growth failure, diabetes insipidus and obesity. Germinomas of the pineal and suprasellar region cause Parinaud syndrome, hydrocephalus and diabetes insipidus. Skull-base tumors present as cranial nerve syndromes named by the foramen: cavernous sinus (III, IV, VI, V1), superior orbital fissure, orbital apex (with II), petrous apex (VI and V), cerebellopontine angle (VIII, then VII and V, then cerebellar signs, for vestibular schwannoma and meningioma), jugular foramen (IX, X, XI for glomus tumors and schwannomas) and clivus (chordoma with VI palsy). Optic pathway gliomas belong to neurofibromatosis type 1."
+    },
+    {
+      "heading": "Posterior fossa and intraventricular tumors",
+      "body": "In children the posterior fossa is the commonest site: medulloblastoma arises in the vermis and fills the fourth ventricle with truncal ataxia, vomiting and hydrocephalus and seeds the CSF; pilocytic astrocytoma is a cystic hemispheric mass with a mural nodule and limb ataxia; ependymoma grows from the floor of the fourth ventricle through the foramina; and diffuse midline glioma of the pons produces cranial nerve palsies, long-tract signs and ataxia with a fatal course. In adults, hemangioblastoma (with von Hippel-Lindau disease), metastases and cerebellar gliomas occur. Intraventricular tumors (colloid cyst of the third ventricle with positional headache and sudden death from acute hydrocephalus, central neurocytoma and subependymoma of the lateral ventricle, choroid plexus papilloma) present with obstructive hydrocephalus. Brainstem tumors show the level-specific crossed syndromes of the brainstem entries."
+    },
+    {
+      "heading": "Mass effect, edema and the treatment logic",
+      "body": "Vasogenic edema spreads through the white matter around tumors because their vessels lack a blood-brain barrier and it responds to dexamethasone; the mass and edema raise pressure and, as the atlas herniation entries describe, displace the cingulate under the falx, the uncus through the incisura and the tonsils through the foramen magnum. Headache that is worse in the morning and on lying, vomiting, papilledema and a sixth nerve palsy are the pressure signs, and a false localizing sixth nerve palsy must not be attributed to a pontine tumor. Seizures accompany cortical tumors and are treated with antiepileptics but not prophylactically in their absence. Surgery aims at maximal safe resection guided by awake mapping and tractography of the corticospinal tract, the arcuate and the inferior fronto-occipital fasciculus; radiotherapy and chemotherapy follow according to histology and molecular markers; and paraneoplastic syndromes (cerebellar degeneration, limbic encephalitis, Lambert-Eaton syndrome, sensory neuronopathy) are the remote effects of systemic cancer on the nervous system."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-pituitary-mass",
-   "syn-chiasmal-bitemporal",
-   "syn-cerebellopontine-angle",
-   "syn-cavernous-sinus",
-   "syn-jugular-foramen-vernet",
-   "syn-parinaud-dorsal-midbrain",
-   "syn-hydrocephalus",
-   "syn-uncal-herniation",
-   "syn-subfalcine-herniation"
+  "keyPoints": [
+    "Location predicts histology: white matter gliomas, dural meningiomas, junctional metastases, periventricular lymphoma, sellar adenomas, angle schwannomas, fourth ventricle medulloblastomas",
+    "Seizures suggest a cortical tumor and often a low-grade glioma; rapid deficit suggests glioblastoma or metastasis",
+    "A bitemporal hemianopia is a sellar mass until the MRI is done; a cerebellopontine angle tumor starts with hearing",
+    "Morning headache, vomiting and a sixth nerve palsy are pressure, not localization",
+    "Multiple round lesions with big edema at the gray-white junction are metastases; find the primary in the lung or breast"
   ],
-  "topicIds": [
-   "topic-neuroimaging-basics",
-   "topic-csf-physiology-blood-brain-barrier",
-   "topic-epilepsy-localization"
-  ]
- },
- "pearls": [
-  "Steroids before a biopsy can erase a lymphoma; image first, treat second when lymphoma is possible",
-  "The child with a head tilt and morning vomiting has a posterior fossa tumor until proved otherwise",
-  "Tractography turns the atlas bundles into surgical boundaries"
- ],
- "pitfalls": [
-  "Ring enhancement is shared by glioblastoma, metastasis, abscess, lymphoma and tumefactive demyelination; diffusion, the wall and the clinical course separate them"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 24,
-   "pages": [
-    255,
-    268
-   ]
+  "meshIds": [
+    "pituitary-gland",
+    "optic-chiasm",
+    "ventricle-fourth",
+    "cerebellar-vermis-vi",
+    "sinus-cavernous-l",
+    "sinus-cavernous-r",
+    "cn-08-vestibulocochlear-l",
+    "cn-08-vestibulocochlear-r"
+  ],
+  "related": {
+    "structureIds": [
+      "pituitary-infundibulum",
+      "optic-chiasm",
+      "sinus-cavernous",
+      "ventricle-fourth",
+      "cerebellar-vermis",
+      "cerebral-white-matter",
+      "corpus-callosum",
+      "gyrus-precentral"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-pituitary-mass",
+      "syn-chiasmal-bitemporal",
+      "syn-cerebellopontine-angle",
+      "syn-cavernous-sinus",
+      "syn-jugular-foramen-vernet",
+      "syn-parinaud-dorsal-midbrain",
+      "syn-hydrocephalus",
+      "syn-uncal-herniation",
+      "syn-subfalcine-herniation"
+    ],
+    "topicIds": [
+      "topic-neuroimaging-basics",
+      "topic-csf-physiology-blood-brain-barrier",
+      "topic-epilepsy-localization"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    274
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    430,
-    435
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    384,
-    386
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    456,
-    462
-   ]
+  "pearls": [
+    "Steroids before a biopsy can erase a lymphoma; image first, treat second when lymphoma is possible",
+    "The child with a head tilt and morning vomiting has a posterior fossa tumor until proved otherwise",
+    "Tractography turns the atlas bundles into surgical boundaries"
+  ],
+  "pitfalls": [
+    "Ring enhancement is shared by glioblastoma, metastasis, abscess, lymphoma and tumefactive demyelination; diffusion, the wall and the clinical course separate them"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-metastasis",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-meningioma",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-increased-intracranial-pressure",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "tumor",
+    "glioma",
+    "meningioma",
+    "skull base"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "Contrast MRI with FLAIR, DWI, SWI and perfusion characterizes the mass; enhancement pattern, diffusion, location and edema predict histology; spectroscopy and PET help separate tumor from necrosis; spine MRI stages CSF-seeding tumors.",
+    "pathology": [
+      {
+        "pathology": "Glioblastoma",
+        "modality": "MRI",
+        "finding": "Irregular ring enhancement around central necrosis, extensive FLAIR infiltration crossing the callosum, elevated perfusion and no central restricted diffusion.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Low-grade glioma",
+        "modality": "MRI",
+        "finding": "Non-enhancing T2/FLAIR-bright expansion of cortex and white matter, often frontal or insular, with T2-FLAIR mismatch in IDH-mutant astrocytoma and calcification in oligodendroglioma.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Meningioma",
+        "modality": "MRI",
+        "finding": "Homogeneously enhancing extra-axial dural mass with a dural tail, CSF cleft and hyperostosis; calcified and dense on CT.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Metastases",
+        "modality": "MRI",
+        "finding": "Multiple round enhancing lesions at the gray-white junction with disproportionate edema; hemorrhagic in melanoma, kidney and choriocarcinoma.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Pituitary macroadenoma",
+        "modality": "MRI",
+        "finding": "Sellar mass with suprasellar extension waisted by the diaphragm (snowman shape) elevating the chiasm; the normal gland is displaced and the stalk deviated.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Vestibular schwannoma",
+        "modality": "MRI",
+        "finding": "Enhancing cerebellopontine angle mass extending into the internal auditory canal (ice-cream cone), with widening of the canal.",
+        "sequence": "T1+Gd"
+      }
+    ]
   }
- ],
- "tags": [
-  "tumor",
-  "glioma",
-  "meningioma",
-  "skull base"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "Contrast MRI with FLAIR, DWI, SWI and perfusion characterizes the mass; enhancement pattern, diffusion, location and edema predict histology; spectroscopy and PET help separate tumor from necrosis; spine MRI stages CSF-seeding tumors.",
-  "pathology": [
-   {
-    "pathology": "Glioblastoma",
-    "modality": "MRI",
-    "finding": "Irregular ring enhancement around central necrosis, extensive FLAIR infiltration crossing the callosum, elevated perfusion and no central restricted diffusion.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Low-grade glioma",
-    "modality": "MRI",
-    "finding": "Non-enhancing T2/FLAIR-bright expansion of cortex and white matter, often frontal or insular, with T2-FLAIR mismatch in IDH-mutant astrocytoma and calcification in oligodendroglioma.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Meningioma",
-    "modality": "MRI",
-    "finding": "Homogeneously enhancing extra-axial dural mass with a dural tail, CSF cleft and hyperostosis; calcified and dense on CT.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Metastases",
-    "modality": "MRI",
-    "finding": "Multiple round enhancing lesions at the gray-white junction with disproportionate edema; hemorrhagic in melanoma, kidney and choriocarcinoma.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Pituitary macroadenoma",
-    "modality": "MRI",
-    "finding": "Sellar mass with suprasellar extension waisted by the diaphragm (snowman shape) elevating the chiasm; the normal gland is displaced and the stalk deviated.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Vestibular schwannoma",
-    "modality": "MRI",
-    "finding": "Enhancing cerebellopontine angle mass extending into the internal auditory canal (ice-cream cone), with widening of the canal.",
-    "sequence": "T1+Gd"
-   }
-  ]
- }
 }

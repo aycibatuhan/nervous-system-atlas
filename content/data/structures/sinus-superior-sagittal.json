@@ -1,153 +1,133 @@
 {
- "kind": "structure",
- "id": "sinus-superior-sagittal",
- "name": "Superior sagittal sinus",
- "synonyms": [],
- "system": "venous",
- "meshIds": [
-  "dura-mater-cranial"
- ],
- "summary": "The largest dural venous sinus, running in the attached edge of the falx from the crista galli to the internal occipital protuberance, where it turns (usually to the right) into a transverse sinus at the confluence. It receives the superior cerebral (bridging) veins from the convexity, the lateral lacunae with their arachnoid granulations that return CSF to the blood, and emissary and diploic veins. Its thrombosis, the commonest cerebral venous thrombosis, causes headache, seizures, bilateral parasagittal hemorrhagic infarcts and raised intracranial pressure, and it is the sinus invaded by parasagittal meningiomas.",
- "anatomy": {
-  "location": "Midline along the vault in the upper margin of the falx, triangular in section, enlarging posteriorly; lateral lacunae extend into the dura beside it in the parietal region.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "veins-superficial-cerebral",
-    "via": "bridging veins"
-   },
-   {
-    "from": "arachnoid-granulations",
-    "via": "lateral lacunae",
-    "note": "CSF"
-   }
+  "kind": "structure",
+  "id": "sinus-superior-sagittal",
+  "name": "Superior sagittal sinus",
+  "synonyms": [],
+  "system": "venous",
+  "meshIds": [
+    "dura-mater-cranial"
   ],
-  "efferents": [
-   {
-    "to": "sinus-transverse-sigmoid",
-    "via": "confluence of sinuses"
-   }
-  ],
-  "pathways": []
- },
- "function": "Drainage of the superior and medial cerebral cortex and the diploë; absorption of CSF through the arachnoid granulations in its lacunae.",
- "bloodSupply": {
-  "arteries": [
-   "(venous structure) drains territories of the cerebral arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 65
+  "summary": "The largest dural venous sinus, running in the attached edge of the falx from the crista galli to the internal occipital protuberance, where it turns (usually to the right) into a transverse sinus at the confluence. It receives the superior cerebral (bridging) veins from the convexity, the lateral lacunae with their arachnoid granulations that return CSF to the blood, and emissary and diploic veins. Its thrombosis, the commonest cerebral venous thrombosis, causes headache, seizures, bilateral parasagittal hemorrhagic infarcts and raised intracranial pressure, and it is the sinus invaded by parasagittal meningiomas.",
+  "anatomy": {
+    "location": "Midline along the vault in the upper margin of the falx, triangular in section, enlarging posteriorly; lateral lacunae extend into the dura beside it in the parietal region.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "veins-superficial-cerebral",
+        "via": "bridging veins"
+      },
+      {
+        "from": "arachnoid-granulations",
+        "via": "lateral lacunae",
+        "note": "CSF"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "sinus-transverse-sigmoid",
+        "via": "confluence of sinuses"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Drainage of the superior and medial cerebral cortex and the diploë; absorption of CSF through the arachnoid granulations in its lacunae.",
+  "bloodSupply": {
+    "arteries": [
+      "(venous structure) drains territories of the cerebral arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 65
+        },
+        "label": "triangular sinus at the top of the falx"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 65
+        },
+        "label": "sinus along the vault from front to back"
+      }
+    ],
+    "normalAppearance": "A triangular dark flow void at the vertex on coronal T2 and a dense triangle enhancing on contrast CT (the empty delta sign is a filling defect in thrombosis); MR or CT venography shows it as a continuous channel. Absent flow, T1-bright thrombus and bilateral parasagittal edema are the thrombosis triad.",
+    "pathology": [
+      {
+        "pathology": "Superior sagittal sinus thrombosis",
+        "modality": "MRV",
+        "finding": "Absent flow in the sinus on MR venography, dense clot on CT (cord sign) and empty delta on contrast CT, with bilateral parasagittal hemorrhagic venous infarcts.",
+        "sequence": "n/a",
+        "timing": "Thrombus is isointense on T1 in the first days, bright from day 5 to ~4 weeks"
+      },
+      {
+        "pathology": "Parasagittal meningioma with sinus invasion",
+        "modality": "MRV",
+        "finding": "Enhancing mass narrowing or occluding the sinus.",
+        "sequence": "n/a"
+      }
+    ],
+    "sequenceOfChoice": "CT venography or MR venography with T1/SWI for thrombus"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Headache, papilledema and raised intracranial pressure",
+        "side": "n/a",
+        "mechanism": "Impaired venous outflow and CSF absorption"
+      },
+      {
+        "deficit": "Seizures and bilateral leg weakness",
+        "side": "bilateral",
+        "mechanism": "Parasagittal venous congestion and infarction"
+      },
+      {
+        "deficit": "Decreased consciousness",
+        "side": "n/a",
+        "mechanism": "Extensive thrombosis with edema"
+      }
+    ],
+    "examination": [
+      "Fundoscopy for papilledema",
+      "Leg power and reflexes",
+      "Seizure history; risk factors: pregnancy, contraceptives, dehydration, infection, thrombophilia"
+    ],
+    "syndromes": [
+      "syn-cerebral-venous-sinus-thrombosis",
+      "syn-idiopathic-intracranial-hypertension"
+    ],
+    "pearls": [
+      "Headache with bilateral or unusual hemorrhagic infarcts that do not fit an arterial territory is venous thrombosis until proven otherwise",
+      "A dense triangle at the vertex on plain CT in a headache patient should prompt a venogram"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-superior-sagittal-sinus",
+      "section": "Structure and Function"
     },
-    "label": "triangular sinus at the top of the falx"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 65
+    {
+      "ref": "sp-dural-venous-sinuses",
+      "section": "Structure and Function"
     },
-    "label": "sinus along the vault from front to back"
-   }
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A triangular dark flow void at the vertex on coronal T2 and a dense triangle enhancing on contrast CT (the empty delta sign is a filling defect in thrombosis); MR or CT venography shows it as a continuous channel. Absent flow, T1-bright thrombus and bilateral parasagittal edema are the thrombosis triad.",
-  "pathology": [
-   {
-    "pathology": "Superior sagittal sinus thrombosis",
-    "modality": "MRV",
-    "finding": "Absent flow in the sinus on MR venography, dense clot on CT (cord sign) and empty delta on contrast CT, with bilateral parasagittal hemorrhagic venous infarcts.",
-    "sequence": "n/a",
-    "timing": "Thrombus is isointense on T1 in the first days, bright from day 5 to ~4 weeks"
-   },
-   {
-    "pathology": "Parasagittal meningioma with sinus invasion",
-    "modality": "MRV",
-    "finding": "Enhancing mass narrowing or occluding the sinus.",
-    "sequence": "n/a"
-   }
+  "tags": [
+    "venous"
   ],
-  "sequenceOfChoice": "CT venography or MR venography with T1/SWI for thrombus"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Headache, papilledema and raised intracranial pressure",
-    "side": "n/a",
-    "mechanism": "Impaired venous outflow and CSF absorption"
-   },
-   {
-    "deficit": "Seizures and bilateral leg weakness",
-    "side": "bilateral",
-    "mechanism": "Parasagittal venous congestion and infarction"
-   },
-   {
-    "deficit": "Decreased consciousness",
-    "side": "n/a",
-    "mechanism": "Extensive thrombosis with edema"
-   }
-  ],
-  "examination": [
-   "Fundoscopy for papilledema",
-   "Leg power and reflexes",
-   "Seizure history; risk factors: pregnancy, contraceptives, dehydration, infection, thrombophilia"
-  ],
-  "syndromes": [
-   "syn-cerebral-venous-sinus-thrombosis",
-   "syn-idiopathic-intracranial-hypertension"
-  ],
-  "pearls": [
-   "Headache with bilateral or unusual hemorrhagic infarcts that do not fit an arterial territory is venous thrombosis until proven otherwise",
-   "A dense triangle at the vertex on plain CT in a headache patient should prompt a venogram"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    419,
-    423
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    469,
-    469
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    200,
-    201
-   ]
-  }
- ],
- "tags": [
-  "venous"
- ],
- "status": "draft",
- "latin": "Sinus sagittalis superior"
+  "status": "draft",
+  "latin": "Sinus sagittalis superior"
 }

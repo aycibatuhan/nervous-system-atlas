@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-optic-ataxia",
- "term": "Optic ataxia",
- "definition": "Misreaching for an object under visual guidance despite normal strength, sensation and cerebellar function, from disconnection of the parietal visuomotor cortex from the premotor cortex. Part of Balint syndrome with simultanagnosia and ocular apraxia.",
- "related": [
-  "g-simultanagnosia",
-  "g-dorsal-stream"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-optic-ataxia",
+  "term": "Optic ataxia",
+  "definition": "Misreaching for an object under visual guidance despite normal strength, sensation and cerebellar function, from disconnection of the parietal visuomotor cortex from the premotor cortex. Part of Balint syndrome with simultanagnosia and ocular apraxia.",
+  "related": [
+    "g-simultanagnosia",
+    "g-dorsal-stream"
+  ],
+  "citations": [
+    {
+      "ref": "sp-balint-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-posterior-cortical-atrophy",
+      "section": "Pathophysiology"
+    }
+  ]
 }

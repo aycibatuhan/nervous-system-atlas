@@ -1,58 +1,66 @@
 {
- "kind": "quiz",
- "id": "qz-31",
- "type": "localize",
- "vignette": "A 62-year-old right-handed woman speaks fluently but her sentences are full of wrong words she does not notice, she cannot follow a two-step command, and when asked to repeat 'no ifs, ands or buts' she produces nonsense. Her strength is normal. Finger counting is missed in the right upper quadrant.",
- "stem": "Which cortical region is damaged?",
- "options": [
-  {
-   "key": "A",
-   "text": "Left pars opercularis"
-  },
-  {
-   "key": "B",
-   "text": "Left posterior superior temporal gyrus"
-  },
-  {
-   "key": "C",
-   "text": "Left supramarginal gyrus alone"
-  },
-  {
-   "key": "D",
-   "text": "Left angular gyrus"
-  },
-  {
-   "key": "E",
-   "text": "Right posterior superior temporal gyrus"
-  }
- ],
- "answer": "B",
- "explanation": "Fluent paraphasic speech with impaired comprehension and repetition is Wernicke aphasia, from the posterior superior temporal gyrus of the dominant hemisphere; the superior quadrantanopia comes from Meyer's loop in the temporal white matter beneath it, and normal strength shows the precentral gyrus of the superior division is spared.",
- "targets": {
-  "structureIds": [
-   "gyrus-superior-temporal-posterior",
-   "tract-optic-radiation"
+  "kind": "quiz",
+  "id": "qz-31",
+  "type": "localize",
+  "vignette": "A 62-year-old right-handed woman speaks fluently but her sentences are full of wrong words she does not notice, she cannot follow a two-step command, and when asked to repeat 'no ifs, ands or buts' she produces nonsense. Her strength is normal. Finger counting is missed in the right upper quadrant.",
+  "stem": "Which cortical region is damaged?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Left pars opercularis"
+    },
+    {
+      "key": "B",
+      "text": "Left posterior superior temporal gyrus"
+    },
+    {
+      "key": "C",
+      "text": "Left supramarginal gyrus alone"
+    },
+    {
+      "key": "D",
+      "text": "Left angular gyrus"
+    },
+    {
+      "key": "E",
+      "text": "Right posterior superior temporal gyrus"
+    }
   ],
-  "syndromeIds": [
-   "syn-aphasia-wernicke",
-   "syn-mca-inferior-division"
+  "answer": "B",
+  "explanation": "Fluent paraphasic speech with impaired comprehension and repetition is Wernicke aphasia, from the posterior superior temporal gyrus of the dominant hemisphere; the superior quadrantanopia comes from Meyer's loop in the temporal white matter beneath it, and normal strength shows the precentral gyrus of the superior division is spared.",
+  "targets": {
+    "structureIds": [
+      "gyrus-superior-temporal-posterior",
+      "tract-optic-radiation"
+    ],
+    "syndromeIds": [
+      "syn-aphasia-wernicke",
+      "syn-mca-inferior-division"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "gyrus-superior-temporal-posterior-l",
+    "tract-optic-radiation-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "gyrus-superior-temporal-posterior-l",
-  "tract-optic-radiation-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-wernicke-aphasia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-aphasia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

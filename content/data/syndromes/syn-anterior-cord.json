@@ -1,159 +1,139 @@
 {
- "kind": "syndrome",
- "id": "syn-anterior-cord",
- "name": "Anterior cord syndrome (anterior spinal artery)",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "anterior-spinal-artery",
-   "spinal-grey-anterior-horn",
-   "spinal-white-columns",
-   "artery-adamkiewicz",
-   "intermediolateral-column"
+  "kind": "syndrome",
+  "id": "syn-anterior-cord",
+  "name": "Anterior cord syndrome (anterior spinal artery)",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "anterior-spinal-artery",
+      "spinal-grey-anterior-horn",
+      "spinal-white-columns",
+      "artery-adamkiewicz",
+      "intermediolateral-column"
+    ],
+    "side": "bilateral",
+    "arteryId": "anterior-spinal-artery"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -90
+    },
+    "radiusMm": 8
+  },
+  "presentation": "During or after aortic surgery, or with sudden back pain in a patient with a dissecting aorta, both legs become paralyzed within minutes to hours. Pain and temperature sensation are lost below the level on both sides and the bladder does not empty, but the patient can still feel the position of the toes and a tuning fork on the ankle. Initially the legs are flaccid and areflexic; spasticity emerges over weeks.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "below the lesion",
+      "sign": "Paraplegia or quadriplegia: flaccid at first (spinal shock), then spastic; segmental lower motor neuron signs at the level",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "bilateral",
+      "distribution": "below the lesion",
+      "sign": "Loss of pain and temperature with a sensory level",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "sensory-vibration-proprioception",
+      "side": "bilateral",
+      "distribution": "preserved",
+      "sign": "Vibration and position sense intact (posterior columns spared)",
+      "substrate": "pathway-dcml"
+    },
+    {
+      "modality": "sphincter",
+      "side": "bilateral",
+      "distribution": "bladder and bowel",
+      "sign": "Retention then reflex incontinence; autonomic dysfunction",
+      "substrate": "intermediolateral-column"
+    },
+    {
+      "modality": "pain",
+      "side": "bilateral",
+      "distribution": "back",
+      "sign": "Sudden severe back pain at onset in ischemic cases",
+      "substrate": "anterior-spinal-artery"
+    }
   ],
-  "side": "bilateral",
-  "arteryId": "anterior-spinal-artery"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -90
+  "reasoning": "A single anterior spinal artery, fed by the vertebral arteries above and by a few radicular arteries below, of which the artery of Adamkiewicz in the lower thoracic region is the largest, supplies the anterior two-thirds of the cord: the anterior horns, the lateral and anterior white columns with the corticospinal and spinothalamic tracts, and the intermediolateral columns. The posterior columns are fed by the paired posterior spinal arteries with their rich pial anastomosis. Occlusion of the anterior artery or of its dominant feeder therefore infarcts everything except the posterior columns, bilaterally, because the vessel is midline. The corticospinal tracts, having crossed in the medulla, serve the same-side limbs, and the spinothalamic tracts, having crossed in the cord, serve the opposite side, but since both sides of the cord are infarcted the weakness and the pain-temperature loss are simply bilateral below the lesion, with a level. The preserved vibration and proprioception, carried in the intact posterior columns, are the diagnostic dissociation. Because the mid-thoracic cord lies at the watershed between the cervical and lumbar radicular supplies, that is where ischemia strikes first during aortic clamping or hypotension. Spinal shock with flaccidity and areflexia precedes the emergence of spasticity as the isolated cord segments recover excitability.",
+  "imagingFindings": [
+    {
+      "pathology": "Spinal cord infarct",
+      "modality": "MRI",
+      "finding": "T2 hyperintensity of the anterior two-thirds of the cord over several segments with 'owl's eyes' anterior horn hyperintensity on axial images and restricted diffusion; may be normal in the first hours.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Aortic pathology",
+      "modality": "CTA",
+      "finding": "Aortic dissection or aneurysm, or recent aortic surgery, involving the segmental artery origins.",
+      "sequence": "CT contrast"
+    },
+    {
+      "pathology": "Vertebral body infarct",
+      "modality": "MRI",
+      "finding": "Coexisting bone marrow signal change in the adjacent vertebral body supports a vascular cause.",
+      "sequence": "STIR"
+    }
+  ],
+  "commonCauses": [
+    "Aortic dissection, aneurysm repair or clamping",
+    "Profound hypotension",
+    "Atherosclerotic or embolic occlusion of a radicular artery",
+    "Fibrocartilaginous embolism",
+    "Vertebral artery dissection (cervical cases)",
+    "Disc herniation or burst fracture compressing the anterior cord"
+  ],
+  "mimics": [
+    {
+      "name": "Transverse myelitis",
+      "howToDistinguish": "Posterior columns also involved; slower onset; CSF inflammatory"
+    },
+    {
+      "name": "Guillain–Barré syndrome",
+      "howToDistinguish": "No sensory level, distal sensory symptoms, no sphincter loss early"
+    },
+    {
+      "name": "Epidural hematoma or abscess",
+      "howToDistinguish": "Compressive picture with all modalities; MRI shows the collection"
+    }
+  ],
+  "management": [
+    "Emergency MRI; if the cause is compressive, surgery; if ischemic, maintain blood pressure and treat the aortic cause",
+    "Lumbar CSF drainage and blood pressure augmentation in perioperative aortic cases",
+    "Bladder catheterization, thromboprophylaxis and rehabilitation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anterior-spinal-artery-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-anterior-spinal-artery",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-spinal-cord-arteries",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -90
+    },
+    "label": "anterior two-thirds of the cord"
   },
-  "radiusMm": 8
- },
- "presentation": "During or after aortic surgery, or with sudden back pain in a patient with a dissecting aorta, both legs become paralyzed within minutes to hours. Pain and temperature sensation are lost below the level on both sides and the bladder does not empty, but the patient can still feel the position of the toes and a tuning fork on the ankle. Initially the legs are flaccid and areflexic; spasticity emerges over weeks.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "below the lesion",
-   "sign": "Paraplegia or quadriplegia: flaccid at first (spinal shock), then spastic; segmental lower motor neuron signs at the level",
-   "substrate": "pathway-lateral-corticospinal"
-  },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "bilateral",
-   "distribution": "below the lesion",
-   "sign": "Loss of pain and temperature with a sensory level",
-   "substrate": "pathway-lateral-spinothalamic"
-  },
-  {
-   "modality": "sensory-vibration-proprioception",
-   "side": "bilateral",
-   "distribution": "preserved",
-   "sign": "Vibration and position sense intact (posterior columns spared)",
-   "substrate": "pathway-dcml"
-  },
-  {
-   "modality": "sphincter",
-   "side": "bilateral",
-   "distribution": "bladder and bowel",
-   "sign": "Retention then reflex incontinence; autonomic dysfunction",
-   "substrate": "intermediolateral-column"
-  },
-  {
-   "modality": "pain",
-   "side": "bilateral",
-   "distribution": "back",
-   "sign": "Sudden severe back pain at onset in ischemic cases",
-   "substrate": "anterior-spinal-artery"
-  }
- ],
- "reasoning": "A single anterior spinal artery, fed by the vertebral arteries above and by a few radicular arteries below, of which the artery of Adamkiewicz in the lower thoracic region is the largest, supplies the anterior two-thirds of the cord: the anterior horns, the lateral and anterior white columns with the corticospinal and spinothalamic tracts, and the intermediolateral columns. The posterior columns are fed by the paired posterior spinal arteries with their rich pial anastomosis. Occlusion of the anterior artery or of its dominant feeder therefore infarcts everything except the posterior columns, bilaterally, because the vessel is midline. The corticospinal tracts, having crossed in the medulla, serve the same-side limbs, and the spinothalamic tracts, having crossed in the cord, serve the opposite side, but since both sides of the cord are infarcted the weakness and the pain-temperature loss are simply bilateral below the lesion, with a level. The preserved vibration and proprioception, carried in the intact posterior columns, are the diagnostic dissociation. Because the mid-thoracic cord lies at the watershed between the cervical and lumbar radicular supplies, that is where ischemia strikes first during aortic clamping or hypotension. Spinal shock with flaccidity and areflexia precedes the emergence of spasticity as the isolated cord segments recover excitability.",
- "imagingFindings": [
-  {
-   "pathology": "Spinal cord infarct",
-   "modality": "MRI",
-   "finding": "T2 hyperintensity of the anterior two-thirds of the cord over several segments with 'owl's eyes' anterior horn hyperintensity on axial images and restricted diffusion; may be normal in the first hours.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Aortic pathology",
-   "modality": "CTA",
-   "finding": "Aortic dissection or aneurysm, or recent aortic surgery, involving the segmental artery origins.",
-   "sequence": "CT contrast"
-  },
-  {
-   "pathology": "Vertebral body infarct",
-   "modality": "MRI",
-   "finding": "Coexisting bone marrow signal change in the adjacent vertebral body supports a vascular cause.",
-   "sequence": "STIR"
-  }
- ],
- "commonCauses": [
-  "Aortic dissection, aneurysm repair or clamping",
-  "Profound hypotension",
-  "Atherosclerotic or embolic occlusion of a radicular artery",
-  "Fibrocartilaginous embolism",
-  "Vertebral artery dissection (cervical cases)",
-  "Disc herniation or burst fracture compressing the anterior cord"
- ],
- "mimics": [
-  {
-   "name": "Transverse myelitis",
-   "howToDistinguish": "Posterior columns also involved; slower onset; CSF inflammatory"
-  },
-  {
-   "name": "Guillain–Barré syndrome",
-   "howToDistinguish": "No sensory level, distal sensory symptoms, no sphincter loss early"
-  },
-  {
-   "name": "Epidural hematoma or abscess",
-   "howToDistinguish": "Compressive picture with all modalities; MRI shows the collection"
-  }
- ],
- "management": [
-  "Emergency MRI; if the cause is compressive, surgery; if ischemic, maintain blood pressure and treat the aortic cause",
-  "Lumbar CSF drainage and blood pressure augmentation in perioperative aortic cases",
-  "Bladder catheterization, thromboprophylaxis and rehabilitation"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    168,
-    168
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    479,
-    479
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    41,
-    44
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    78
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -90
-  },
-  "label": "anterior two-thirds of the cord"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

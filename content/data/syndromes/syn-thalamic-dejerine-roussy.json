@@ -1,138 +1,126 @@
 {
- "kind": "syndrome",
- "id": "syn-thalamic-dejerine-roussy",
- "name": "Thalamic syndrome (Dejerine–Roussy)",
- "eponyms": [
-  "Dejerine–Roussy syndrome",
-  "central post-stroke pain"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "thalamus",
-   "thalamus-vpl",
-   "thalamus-vpm",
-   "arteries-thalamoperforating",
-   "artery-pca"
+  "kind": "syndrome",
+  "id": "syn-thalamic-dejerine-roussy",
+  "name": "Thalamic syndrome (Dejerine–Roussy)",
+  "eponyms": [
+    "Dejerine–Roussy syndrome",
+    "central post-stroke pain"
   ],
-  "side": "contralateral",
-  "arteryId": "artery-pca"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -16,
-   "y": -20,
-   "z": 6
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "thalamus",
+      "thalamus-vpl",
+      "thalamus-vpm",
+      "arteries-thalamoperforating",
+      "artery-pca"
+    ],
+    "side": "contralateral",
+    "arteryId": "artery-pca"
   },
-  "radiusMm": 7
- },
- "presentation": "A patient recovers from a small posterior stroke that took away sensation on one side of the body, only to develop, weeks or months later, a spontaneous burning pain over the same side that is made worse by light touch, cold or emotion. Examination shows reduced sensation to all modalities on that side, sometimes with a mild hemiparesis, choreoathetosis or a 'thalamic hand' with the fingers flexed at the knuckles and extended at the joints.",
- "deficits": [
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "face, arm, trunk and leg",
-   "sign": "Loss or reduction of all modalities including vibration and position sense",
-   "substrate": "thalamus-vpl"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -16,
+      "y": -20,
+      "z": 6
+    },
+    "radiusMm": 7
   },
-  {
-   "modality": "pain",
-   "side": "contralateral",
-   "distribution": "hemibody",
-   "sign": "Delayed central pain with allodynia and hyperpathia",
-   "substrate": "thalamus-vpl"
+  "presentation": "A patient recovers from a small posterior stroke that took away sensation on one side of the body, only to develop, weeks or months later, a spontaneous burning pain over the same side that is made worse by light touch, cold or emotion. Examination shows reduced sensation to all modalities on that side, sometimes with a mild hemiparesis, choreoathetosis or a 'thalamic hand' with the fingers flexed at the knuckles and extended at the joints.",
+  "deficits": [
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "face, arm, trunk and leg",
+      "sign": "Loss or reduction of all modalities including vibration and position sense",
+      "substrate": "thalamus-vpl"
+    },
+    {
+      "modality": "pain",
+      "side": "contralateral",
+      "distribution": "hemibody",
+      "sign": "Delayed central pain with allodynia and hyperpathia",
+      "substrate": "thalamus-vpl"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "mild",
+      "sign": "Transient hemiparesis when the adjacent internal capsule is involved",
+      "substrate": "internal-capsule"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "contralateral",
+      "distribution": "limb",
+      "sign": "Ataxia and choreoathetosis from the ventral lateral nucleus and dentatothalamic fibers",
+      "substrate": "thalamus-va-vl"
+    }
+  ],
+  "reasoning": "The ventral posterolateral and ventral posteromedial nuclei of the thalamus are the final relay for both the medial lemniscus and the spinothalamic tract, both of which have already crossed in the brainstem or spinal cord, and for the crossed trigeminal lemniscus from the face. An infarct here therefore removes every somatic sensory modality from the contralateral face and body at once, which no single cord or brainstem lesion can do, because in those places the pain and proprioceptive pathways travel separately. The supply comes from the thalamogeniculate branches of the posterior cerebral artery, and lesions large enough to catch the adjacent posterior limb of the internal capsule add weakness. The delayed pain is attributed to loss of inhibitory thalamic and cortical processing of surviving spinothalamic input, so that residual input is perceived as intolerable. Involvement of the ventral lateral nucleus interrupts the cerebellar outflow after its decussation in the midbrain, which is why the ataxia and involuntary movements appear on the same side as the sensory loss.",
+  "imagingFindings": [
+    {
+      "pathology": "Thalamic infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the lateral thalamus (VPL/VPM) in the thalamogeniculate territory, often small.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Thalamic hemorrhage",
+      "modality": "CT",
+      "finding": "Hyperdense lateral thalamic hemorrhage, may extend into the third ventricle or capsule.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Lacunar infarct of the thalamogeniculate artery",
+    "Hypertensive thalamic hemorrhage",
+    "Posterior cerebral artery embolism"
+  ],
+  "mimics": [
+    {
+      "name": "Lacunar pure sensory stroke",
+      "howToDistinguish": "Same site; the term Dejerine–Roussy applies once pain has developed"
+    },
+    {
+      "name": "Parietal cortical lesion",
+      "howToDistinguish": "Discriminative loss with preserved primary modalities; no burning pain"
+    },
+    {
+      "name": "Lateral medullary syndrome",
+      "howToDistinguish": "Crossed facial and body sensory loss, dissociated modalities"
+    }
+  ],
+  "management": [
+    "Neuropathic pain treatment (amitriptyline, gabapentinoids, lamotrigine) without expectation of complete relief",
+    "Explain the delayed onset so the patient does not fear a new stroke",
+    "Vascular risk factor control"
+  ],
+  "citations": [
+    {
+      "ref": "sp-dejerine-roussy-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-central-post-stroke-pain-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-thalamic-pain-syndrome",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -16,
+      "y": -20,
+      "z": 6
+    },
+    "label": "ventral posterolateral thalamus"
   },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "mild",
-   "sign": "Transient hemiparesis when the adjacent internal capsule is involved",
-   "substrate": "internal-capsule"
-  },
-  {
-   "modality": "cerebellar",
-   "side": "contralateral",
-   "distribution": "limb",
-   "sign": "Ataxia and choreoathetosis from the ventral lateral nucleus and dentatothalamic fibers",
-   "substrate": "thalamus-va-vl"
-  }
- ],
- "reasoning": "The ventral posterolateral and ventral posteromedial nuclei of the thalamus are the final relay for both the medial lemniscus and the spinothalamic tract, both of which have already crossed in the brainstem or spinal cord, and for the crossed trigeminal lemniscus from the face. An infarct here therefore removes every somatic sensory modality from the contralateral face and body at once, which no single cord or brainstem lesion can do, because in those places the pain and proprioceptive pathways travel separately. The supply comes from the thalamogeniculate branches of the posterior cerebral artery, and lesions large enough to catch the adjacent posterior limb of the internal capsule add weakness. The delayed pain is attributed to loss of inhibitory thalamic and cortical processing of surviving spinothalamic input, so that residual input is perceived as intolerable. Involvement of the ventral lateral nucleus interrupts the cerebellar outflow after its decussation in the midbrain, which is why the ataxia and involuntary movements appear on the same side as the sensory loss.",
- "imagingFindings": [
-  {
-   "pathology": "Thalamic infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the lateral thalamus (VPL/VPM) in the thalamogeniculate territory, often small.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Thalamic hemorrhage",
-   "modality": "CT",
-   "finding": "Hyperdense lateral thalamic hemorrhage, may extend into the third ventricle or capsule.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Lacunar infarct of the thalamogeniculate artery",
-  "Hypertensive thalamic hemorrhage",
-  "Posterior cerebral artery embolism"
- ],
- "mimics": [
-  {
-   "name": "Lacunar pure sensory stroke",
-   "howToDistinguish": "Same site; the term Dejerine–Roussy applies once pain has developed"
-  },
-  {
-   "name": "Parietal cortical lesion",
-   "howToDistinguish": "Discriminative loss with preserved primary modalities; no burning pain"
-  },
-  {
-   "name": "Lateral medullary syndrome",
-   "howToDistinguish": "Crossed facial and body sensory loss, dissociated modalities"
-  }
- ],
- "management": [
-  "Neuropathic pain treatment (amitriptyline, gabapentinoids, lamotrigine) without expectation of complete relief",
-  "Explain the delayed onset so the patient does not fear a new stroke",
-  "Vascular risk factor control"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    369,
-    369
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    482
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    38,
-    38
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -16,
-   "y": -20,
-   "z": 6
-  },
-  "label": "ventral posterolateral thalamus"
- },
- "cameraPreset": "superior"
+  "cameraPreset": "superior"
 }

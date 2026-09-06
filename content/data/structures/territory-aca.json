@@ -1,156 +1,132 @@
 {
- "kind": "structure",
- "id": "territory-aca",
- "name": "ACA territory",
- "synonyms": [],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-aca-l",
-  "territory-aca-r",
-  "territory-aca-major-l",
-  "territory-aca-major-r"
- ],
- "summary": "The cortex and white matter perfused by the anterior cerebral artery: the medial surface of the frontal and parietal lobes from the frontal pole back to the parieto-occipital sulcus, a thin strip over the superior convexity, the anterior corpus callosum and, through the recurrent artery of Heubner and medial lenticulostriates, the head of the caudate and the anterior limb of the internal capsule. Clinically it is the territory of the leg, of initiative and of bladder control.",
- "anatomy": {
-  "location": "Medial hemisphere above the corpus callosum: superior frontal gyrus (medial part), paracentral lobule, precuneus in front of the parieto-occipital sulcus, cingulate gyrus, gyrus rectus and medial orbital gyri; the superior 1–2 cm of the convexity; the genu and body of the corpus callosum; caudate head and anterior limb of the internal capsule.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Contains the primary motor and sensory representation of the contralateral leg and foot (paracentral lobule), the supplementary motor area, the anterior cingulate and medial prefrontal cortex that drive initiative and continence, and callosal fibers linking the frontal lobes.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca"
+  "kind": "structure",
+  "id": "territory-aca",
+  "name": "ACA territory",
+  "synonyms": [],
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-aca-l",
+    "territory-aca-r",
+    "territory-aca-major-l",
+    "territory-aca-major-r"
   ],
-  "territories": [],
-  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": 20,
-     "z": 50
-    },
-    "label": "medial frontal cortex and paracentral lobule"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 3,
-     "y": 10,
-     "z": 40
-    },
-    "label": "medial surface from frontal pole to parieto-occipital sulcus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": 10,
-     "z": 45
-    },
-    "label": "narrow parasagittal strip over the convexity"
-   }
-  ],
-  "normalAppearance": "A parasagittal band of cortex on axial slices at the vertex and the whole medial surface on sagittal slices near the midline; the boundary with the MCA territory runs along the superior frontal sulcus and the upper convexity.",
-  "pathology": [
-   {
-    "pathology": "ACA infarct",
-    "modality": "MRI",
-    "finding": "Diffusion restriction along the medial frontal and parietal cortex; unilateral when the A2 segments are independent, bilateral with an azygos ACA or after AComm aneurysm vasospasm.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "ACA–MCA cortical watershed infarct",
-    "modality": "MRI",
-    "finding": "A chain of small infarcts along the superior frontal sulcus at the boundary between the two territories after hypotension or carotid stenosis.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI; CTA of the carotid and anterior communicating complex"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral leg weakness and sensory loss",
-    "side": "contralateral",
-    "mechanism": "Paracentral lobule"
-   },
-   {
-    "deficit": "Abulia, apathy, incontinence",
-    "side": "bilateral",
-    "mechanism": "Medial prefrontal and anterior cingulate cortex"
-   },
-   {
-    "deficit": "Grasp reflex, gait apraxia",
-    "side": "contralateral",
-    "mechanism": "Supplementary motor area and medial frontal cortex"
-   },
-   {
-    "deficit": "Transcortical motor aphasia (dominant)",
-    "side": "n/a",
-    "mechanism": "Supplementary motor area connections"
-   }
-  ],
-  "examination": [
-   "Leg versus arm power",
-   "Spontaneous speech and initiative",
-   "Bladder history",
-   "Grasp reflex"
-  ],
-  "syndromes": [
-   "syn-aca-infarct",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Leg-predominant weakness with frontal behavior is the ACA",
-   "Bilateral ACA infarcts mimic a spinal cord lesion or normal-pressure hydrocephalus"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    472,
-    476
-   ]
+  "summary": "The cortex and white matter perfused by the anterior cerebral artery: the medial surface of the frontal and parietal lobes from the frontal pole back to the parieto-occipital sulcus, a thin strip over the superior convexity, the anterior corpus callosum and, through the recurrent artery of Heubner and medial lenticulostriates, the head of the caudate and the anterior limb of the internal capsule. Clinically it is the territory of the leg, of initiative and of bladder control.",
+  "anatomy": {
+    "location": "Medial hemisphere above the corpus callosum: superior frontal gyrus (medial part), paracentral lobule, precuneus in front of the parieto-occipital sulcus, cingulate gyrus, gyrus rectus and medial orbital gyri; the superior 1–2 cm of the convexity; the genu and body of the corpus callosum; caudate head and anterior limb of the internal capsule.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    483
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    57,
-    59
-   ]
+  "function": "Contains the primary motor and sensory representation of the contralateral leg and foot (paracentral lobule), the supplementary motor area, the anterior cingulate and medial prefrontal cortex that drive initiative and continence, and callosal fibers linking the frontal lobes.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca"
+    ],
+    "territories": [],
+    "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
   },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    39,
-    40
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "territory"
- ],
- "status": "draft"
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": 20,
+          "z": 50
+        },
+        "label": "medial frontal cortex and paracentral lobule"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 3,
+          "y": 10,
+          "z": 40
+        },
+        "label": "medial surface from frontal pole to parieto-occipital sulcus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": 10,
+          "z": 45
+        },
+        "label": "narrow parasagittal strip over the convexity"
+      }
+    ],
+    "normalAppearance": "A parasagittal band of cortex on axial slices at the vertex and the whole medial surface on sagittal slices near the midline; the boundary with the MCA territory runs along the superior frontal sulcus and the upper convexity.",
+    "pathology": [
+      {
+        "pathology": "ACA infarct",
+        "modality": "MRI",
+        "finding": "Diffusion restriction along the medial frontal and parietal cortex; unilateral when the A2 segments are independent, bilateral with an azygos ACA or after AComm aneurysm vasospasm.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "ACA–MCA cortical watershed infarct",
+        "modality": "MRI",
+        "finding": "A chain of small infarcts along the superior frontal sulcus at the boundary between the two territories after hypotension or carotid stenosis.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CTA of the carotid and anterior communicating complex"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral leg weakness and sensory loss",
+        "side": "contralateral",
+        "mechanism": "Paracentral lobule"
+      },
+      {
+        "deficit": "Abulia, apathy, incontinence",
+        "side": "bilateral",
+        "mechanism": "Medial prefrontal and anterior cingulate cortex"
+      },
+      {
+        "deficit": "Grasp reflex, gait apraxia",
+        "side": "contralateral",
+        "mechanism": "Supplementary motor area and medial frontal cortex"
+      },
+      {
+        "deficit": "Transcortical motor aphasia (dominant)",
+        "side": "n/a",
+        "mechanism": "Supplementary motor area connections"
+      }
+    ],
+    "examination": [
+      "Leg versus arm power",
+      "Spontaneous speech and initiative",
+      "Bladder history",
+      "Grasp reflex"
+    ],
+    "syndromes": [
+      "syn-aca-infarct",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Leg-predominant weakness with frontal behavior is the ACA",
+      "Bilateral ACA infarcts mimic a spinal cord lesion or normal-pressure hydrocephalus"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-recurrent-artery-of-heubner",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "vascular",
+    "territory"
+  ],
+  "status": "draft"
 }

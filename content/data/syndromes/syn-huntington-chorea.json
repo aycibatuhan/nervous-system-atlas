@@ -1,145 +1,137 @@
 {
- "kind": "syndrome",
- "id": "syn-huntington-chorea",
- "name": "Huntington disease and chorea",
- "eponyms": [],
- "category": "degenerative",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "caudate-nucleus",
-   "putamen",
-   "globus-pallidus",
-   "cortex-prefrontal"
+  "kind": "syndrome",
+  "id": "syn-huntington-chorea",
+  "name": "Huntington disease and chorea",
+  "eponyms": [],
+  "category": "degenerative",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "caudate-nucleus",
+      "putamen",
+      "globus-pallidus",
+      "cortex-prefrontal"
+    ],
+    "side": "bilateral"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "caudate-nucleus-l",
+      "caudate-nucleus-r",
+      "putamen-l",
+      "putamen-r"
+    ]
+  },
+  "presentation": "A person in their forties whose parent died in a psychiatric hospital becomes irritable and depressed, then clumsy and fidgety; over a few years the fidgeting becomes continuous flowing, dance-like movements of the limbs, trunk and face, with an unsteady lurching gait, darting eyes that cannot hold fixation, and a slow decline in judgment and memory. The tongue cannot be kept protruded and the grip milks the examiner's fingers. In late disease the chorea gives way to rigidity and dystonia.",
+  "deficits": [
+    {
+      "modality": "other",
+      "side": "bilateral",
+      "distribution": "face, limbs, trunk",
+      "sign": "Chorea: irregular, flowing, unpredictable involuntary movements incorporated into voluntary acts; motor impersistence",
+      "substrate": "pathway-basal-ganglia-loops"
+    },
+    {
+      "modality": "cognitive",
+      "side": "bilateral",
+      "distribution": "frontostriatal",
+      "sign": "Executive dysfunction, slowed thinking, later dementia",
+      "substrate": "caudate-nucleus"
+    },
+    {
+      "modality": "cognitive",
+      "side": "bilateral",
+      "distribution": "limbic loop",
+      "sign": "Depression, irritability, apathy, obsessional traits, psychosis; high suicide risk",
+      "substrate": "cortex-prefrontal"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "saccades",
+      "sign": "Slow, delayed saccade initiation with head thrusts; impersistence of gaze",
+      "substrate": "frontal-eye-field"
+    },
+    {
+      "modality": "gait",
+      "side": "bilateral",
+      "distribution": "gait and posture",
+      "sign": "Lurching, wide-based gait with falls; late rigidity and dystonia (Westphal variant in juvenile onset)",
+      "substrate": "pathway-basal-ganglia-loops"
+    }
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "caudate-nucleus-l",
-   "caudate-nucleus-r",
-   "putamen-l",
-   "putamen-r"
-  ]
- },
- "presentation": "A person in their forties whose parent died in a psychiatric hospital becomes irritable and depressed, then clumsy and fidgety; over a few years the fidgeting becomes continuous flowing, dance-like movements of the limbs, trunk and face, with an unsteady lurching gait, darting eyes that cannot hold fixation, and a slow decline in judgment and memory. The tongue cannot be kept protruded and the grip milks the examiner's fingers. In late disease the chorea gives way to rigidity and dystonia.",
- "deficits": [
-  {
-   "modality": "other",
-   "side": "bilateral",
-   "distribution": "face, limbs, trunk",
-   "sign": "Chorea: irregular, flowing, unpredictable involuntary movements incorporated into voluntary acts; motor impersistence",
-   "substrate": "pathway-basal-ganglia-loops"
+  "reasoning": "An expanded CAG repeat in the huntingtin gene produces a protein that kills the medium spiny neurons of the striatum, beginning with those of the indirect pathway, which express D2 receptors and enkephalin and project to the external pallidum. Losing them removes the striatal inhibition of the external pallidum, which then over-inhibits the subthalamic nucleus, so the subthalamic excitation of the internal pallidum falls, the internal pallidum's inhibition of the thalamus weakens, and the motor thalamus and cortex are released: fragments of movement escape as chorea, the mirror image of the excessive inhibition of parkinsonism and the functional equivalent of a subthalamic lesion, but bilateral and gradual. Each striatum serves the contralateral body through the crossed corticospinal projection, and the degeneration is bilateral and symmetric, so the chorea is generalized. As the disease advances the direct pathway neurons die too and the output nuclei regain inhibitory dominance, so rigidity and bradykinesia replace the chorea, which also explains why juvenile-onset disease, in which both pathways degenerate early, presents with rigidity. The caudate, which connects the prefrontal cortex to the pallidum in the associative and limbic loops, atrophies visibly, and its loss underlies the executive, behavioral and psychiatric changes that often precede the movement disorder. Chorea from other causes, Sydenham chorea after streptococcal infection, lupus, drugs, thyrotoxicosis, pregnancy and stroke, involves the same striatal circuit by other mechanisms.",
+  "imagingFindings": [
+    {
+      "pathology": "Caudate atrophy",
+      "modality": "MRI",
+      "finding": "Loss of the convex bulge of the caudate heads into the frontal horns ('boxcar' ventricles) with putaminal atrophy and later diffuse cortical atrophy; reduced caudate uptake on FDG-PET precedes atrophy.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Genetic diagnosis",
+      "modality": "MRI",
+      "finding": "Imaging supports but does not make the diagnosis: CAG repeat expansion of 36 or more in the HTT gene; predictive testing requires genetic counseling.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Secondary chorea (mimic)",
+      "modality": "MRI",
+      "finding": "Striatal T1 hyperintensity in hyperglycemia, infarct or vasculitis of the striatum, or normal imaging in Sydenham and drug-induced chorea.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Huntington disease (autosomal dominant CAG repeat expansion)",
+    "Huntington-like syndromes (C9orf72, HDL2), neuroacanthocytosis, spinocerebellar ataxias",
+    "Sydenham chorea, lupus and antiphospholipid syndrome",
+    "Drugs (levodopa, dopamine blockers causing tardive dyskinesia, anticonvulsants, oral contraceptives)",
+    "Thyrotoxicosis, polycythemia, hyperglycemia, chorea gravidarum",
+    "Striatal or subthalamic stroke (hemichorea)"
+  ],
+  "mimics": [
+    {
+      "name": "Tardive dyskinesia",
+      "howToDistinguish": "Orofacial stereotypies with a history of dopamine blockers; no cognitive decline"
+    },
+    {
+      "name": "Sydenham chorea",
+      "howToDistinguish": "Child or young adult after streptococcal infection, self-limiting"
+    },
+    {
+      "name": "Wilson disease",
+      "howToDistinguish": "Young, with dystonia, tremor, Kayser–Fleischer rings and liver disease"
+    },
+    {
+      "name": "Essential tremor or tics",
+      "howToDistinguish": "Rhythmic tremor or suppressible stereotyped tics"
+    }
+  ],
+  "management": [
+    "Genetic testing with counseling; exclude treatable causes of chorea in atypical or sporadic cases",
+    "Tetrabenazine or deutetrabenazine, or atypical antipsychotics, for disabling chorea; treat depression and monitor suicide risk",
+    "Multidisciplinary support, nutrition and swallowing assessment, genetic counseling for the family"
+  ],
+  "citations": [
+    {
+      "ref": "sp-huntington-disease",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-chorea",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": 0,
+      "y": 10,
+      "z": 10
+    },
+    "label": "caudate heads bulging into the frontal horns"
   },
-  {
-   "modality": "cognitive",
-   "side": "bilateral",
-   "distribution": "frontostriatal",
-   "sign": "Executive dysfunction, slowed thinking, later dementia",
-   "substrate": "caudate-nucleus"
-  },
-  {
-   "modality": "cognitive",
-   "side": "bilateral",
-   "distribution": "limbic loop",
-   "sign": "Depression, irritability, apathy, obsessional traits, psychosis; high suicide risk",
-   "substrate": "cortex-prefrontal"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "saccades",
-   "sign": "Slow, delayed saccade initiation with head thrusts; impersistence of gaze",
-   "substrate": "frontal-eye-field"
-  },
-  {
-   "modality": "gait",
-   "side": "bilateral",
-   "distribution": "gait and posture",
-   "sign": "Lurching, wide-based gait with falls; late rigidity and dystonia (Westphal variant in juvenile onset)",
-   "substrate": "pathway-basal-ganglia-loops"
-  }
- ],
- "reasoning": "An expanded CAG repeat in the huntingtin gene produces a protein that kills the medium spiny neurons of the striatum, beginning with those of the indirect pathway, which express D2 receptors and enkephalin and project to the external pallidum. Losing them removes the striatal inhibition of the external pallidum, which then over-inhibits the subthalamic nucleus, so the subthalamic excitation of the internal pallidum falls, the internal pallidum's inhibition of the thalamus weakens, and the motor thalamus and cortex are released: fragments of movement escape as chorea, the mirror image of the excessive inhibition of parkinsonism and the functional equivalent of a subthalamic lesion, but bilateral and gradual. Each striatum serves the contralateral body through the crossed corticospinal projection, and the degeneration is bilateral and symmetric, so the chorea is generalized. As the disease advances the direct pathway neurons die too and the output nuclei regain inhibitory dominance, so rigidity and bradykinesia replace the chorea, which also explains why juvenile-onset disease, in which both pathways degenerate early, presents with rigidity. The caudate, which connects the prefrontal cortex to the pallidum in the associative and limbic loops, atrophies visibly, and its loss underlies the executive, behavioral and psychiatric changes that often precede the movement disorder. Chorea from other causes, Sydenham chorea after streptococcal infection, lupus, drugs, thyrotoxicosis, pregnancy and stroke, involves the same striatal circuit by other mechanisms.",
- "imagingFindings": [
-  {
-   "pathology": "Caudate atrophy",
-   "modality": "MRI",
-   "finding": "Loss of the convex bulge of the caudate heads into the frontal horns ('boxcar' ventricles) with putaminal atrophy and later diffuse cortical atrophy; reduced caudate uptake on FDG-PET precedes atrophy.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Genetic diagnosis",
-   "modality": "MRI",
-   "finding": "Imaging supports but does not make the diagnosis: CAG repeat expansion of 36 or more in the HTT gene; predictive testing requires genetic counseling.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Secondary chorea (mimic)",
-   "modality": "MRI",
-   "finding": "Striatal T1 hyperintensity in hyperglycemia, infarct or vasculitis of the striatum, or normal imaging in Sydenham and drug-induced chorea.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Huntington disease (autosomal dominant CAG repeat expansion)",
-  "Huntington-like syndromes (C9orf72, HDL2), neuroacanthocytosis, spinocerebellar ataxias",
-  "Sydenham chorea, lupus and antiphospholipid syndrome",
-  "Drugs (levodopa, dopamine blockers causing tardive dyskinesia, anticonvulsants, oral contraceptives)",
-  "Thyrotoxicosis, polycythemia, hyperglycemia, chorea gravidarum",
-  "Striatal or subthalamic stroke (hemichorea)"
- ],
- "mimics": [
-  {
-   "name": "Tardive dyskinesia",
-   "howToDistinguish": "Orofacial stereotypies with a history of dopamine blockers; no cognitive decline"
-  },
-  {
-   "name": "Sydenham chorea",
-   "howToDistinguish": "Child or young adult after streptococcal infection, self-limiting"
-  },
-  {
-   "name": "Wilson disease",
-   "howToDistinguish": "Young, with dystonia, tremor, Kayser–Fleischer rings and liver disease"
-  },
-  {
-   "name": "Essential tremor or tics",
-   "howToDistinguish": "Rhythmic tremor or suppressible stereotyped tics"
-  }
- ],
- "management": [
-  "Genetic testing with counseling; exclude treatable causes of chorea in atypical or sporadic cases",
-  "Tetrabenazine or deutetrabenazine, or atypical antipsychotics, for disabling chorea; treat depression and monitor suicide risk",
-  "Multidisciplinary support, nutrition and swallowing assessment, genetic counseling for the family"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    315,
-    316
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    244,
-    245
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": 0,
-   "y": 10,
-   "z": 10
-  },
-  "label": "caudate heads bulging into the frontal horns"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

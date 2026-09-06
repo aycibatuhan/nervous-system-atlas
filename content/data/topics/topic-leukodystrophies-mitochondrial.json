@@ -1,155 +1,127 @@
 {
- "kind": "topic",
- "id": "topic-leukodystrophies-mitochondrial",
- "name": "Leukodystrophies and mitochondrial disorders",
- "synonyms": [],
- "category": "disease-pattern",
- "summary": "Leukodystrophies are genetic disorders of myelin formation or maintenance that produce symmetric, confluent white-matter disease with progressive spasticity, ataxia, visual loss and cognitive decline, in contrast to the patchy asymmetric lesions of multiple sclerosis and vascular disease; the distribution on MRI (parieto-occipital, frontal, periventricular with or without the U-fibers, with or without the cerebellum and brainstem), the age of onset and the associated features (adrenal failure, peripheral neuropathy, macrocephaly, cataract) point to the enzyme or gene. Mitochondrial disorders, from defects of oxidative phosphorylation, attack the tissues with the highest energy demand and produce a different pattern: stroke-like cortical lesions that ignore arterial territories, deep gray matter necrosis, myopathy, neuropathy, deafness, diabetes and lactic acidosis, often with maternal inheritance.",
- "sections": [
-  {
-   "heading": "The main leukodystrophies",
-   "body": "X-linked adrenoleukodystrophy (ABCD1, very long chain fatty acids) produces in boys a parieto-occipital demyelination advancing forward with an enhancing rim, behavioral change, visual and auditory agnosia and adrenal failure, and in adult men a spastic paraparesis with neuropathy (adrenomyeloneuropathy); metachromatic leukodystrophy (arylsulfatase A) gives a symmetric periventricular disease sparing the U-fibers with a tigroid pattern, a demyelinating neuropathy and a childhood or adult onset with psychiatric change; Krabbe disease (galactocerebrosidase) gives infantile irritability, spasticity, optic atrophy and neuropathy with dense thalami and corticospinal involvement; Alexander disease (GFAP) gives frontal-predominant white-matter disease with macrocephaly; Canavan disease (aspartoacylase) gives diffuse subcortical disease with macrocephaly and an elevated N-acetylaspartate peak; Pelizaeus-Merzbacher disease (PLP1) gives nystagmus and hypomyelination from infancy; vanishing white matter disease shows white matter turning to CSF signal with episodes provoked by fever; and the adult-onset forms (cerebrotendinous xanthomatosis with cataracts and tendon xanthomas, CADASIL with anterior temporal and external capsule lesions, adult polyglucosan body disease) are treatable or at least diagnosable causes of spastic paraparesis and dementia."
-  },
-  {
-   "heading": "Reading the white matter pattern",
-   "body": "The questions are: is the disease hypomyelinating (persistently immature myelin signal on T1 and T2) or demyelinating (loss of formed myelin with T2 hyperintensity); which region leads (parieto-occipital in adrenoleukodystrophy, frontal in Alexander, periventricular sparing U-fibers in metachromatic, diffuse with U-fibers in Canavan); is there contrast enhancement at the advancing edge (adrenoleukodystrophy); are the cerebellum, brainstem, corticospinal tracts, corpus callosum or thalami involved; is the head large (Alexander, Canavan) or small; are cysts present (vanishing white matter, megalencephalic leukoencephalopathy); and is there a neuropathy (metachromatic, Krabbe, adrenomyeloneuropathy). Toxic leukoencephalopathies (methotrexate, heroin inhalation, carbon monoxide, chemotherapy) and metabolic ones (hypertensive PRES, osmotic demyelination) can mimic the symmetric pattern and are excluded by the history; the age-related and vascular patterns are asymmetric and patchy."
-  },
-  {
-   "heading": "Mitochondrial disorders",
-   "body": "Mitochondrial DNA is maternally inherited and heteroplasmic, so the same mutation produces different syndromes in different tissues and relatives: MELAS (mitochondrial encephalomyopathy, lactic acidosis and stroke-like episodes; m.3243A>G) gives stroke-like cortical lesions that cross arterial territories, favor the parieto-occipital cortex and shift over time, with seizures, migraine, deafness, diabetes and short stature; MERRF gives myoclonic epilepsy with ragged red fibers; Leigh syndrome gives infantile regression with symmetric necrotic lesions of the basal ganglia, brainstem and periaqueductal gray; Kearns-Sayre syndrome gives progressive external ophthalmoplegia, retinal pigmentation and heart block from large deletions; Leber hereditary optic neuropathy gives sequential painless central visual loss in young men; and nuclear-encoded disorders of mitochondrial maintenance (POLG) give epilepsy, ataxia, neuropathy and liver failure precipitated by valproate. Lactate is raised in blood and CSF and on spectroscopy, muscle biopsy shows ragged red and cytochrome-oxidase-negative fibers, and genetic testing of blood, urine or muscle confirms the mutation."
-  },
-  {
-   "heading": "Clinical approach and treatment",
-   "body": "Progressive symmetric spasticity, ataxia or cognitive decline with a symmetric white-matter MRI pattern demands a leukodystrophy workup: very long chain fatty acids and adrenal function, arylsulfatase A, galactocerebrosidase, lysosomal enzymes, plasma sterols, nerve conduction studies and, increasingly, a gene panel or exome; cerebrotendinous xanthomatosis is treated with chenodeoxycholic acid, adrenoleukodystrophy with early stem cell transplantation or gene therapy, and metachromatic leukodystrophy with enzyme replacement or gene therapy in the presymptomatic stage, so recognition matters. Multisystem disease with encephalopathy, myopathy, deafness, diabetes, short stature and maternal relatives affected demands lactate, muscle biopsy and mitochondrial genetics; treatment is supportive with avoidance of valproate and other mitochondrial toxins, arginine for MELAS episodes and management of the cardiac conduction defects. The atlas white-matter, basal ganglia and brainstem entries show the structures these diseases pick out."
-  }
- ],
- "keyPoints": [
-  "Symmetric confluent white-matter disease is genetic, toxic or metabolic; patchy asymmetric disease is vascular or inflammatory",
-  "The region that leads names the leukodystrophy: parieto-occipital adrenoleukodystrophy, frontal Alexander, periventricular sparing U-fibers metachromatic",
-  "Stroke-like lesions that ignore arterial territories and migrate over time are MELAS",
-  "Maternal inheritance with deafness, diabetes, short stature and myopathy means mitochondrial disease",
-  "Several leukodystrophies are now treatable early: recognize the pattern before the deficit is fixed"
- ],
- "meshIds": [
-  "cerebral-white-matter-l",
-  "cerebral-white-matter-r",
-  "corpus-callosum",
-  "putamen-l",
-  "putamen-r",
-  "periaqueductal-grey-l",
-  "periaqueductal-grey-r"
- ],
- "related": {
-  "structureIds": [
-   "cerebral-white-matter",
-   "corpus-callosum",
-   "putamen",
-   "periaqueductal-grey",
-   "cerebellar-white-matter",
-   "spinal-white-columns"
+  "kind": "topic",
+  "id": "topic-leukodystrophies-mitochondrial",
+  "name": "Leukodystrophies and mitochondrial disorders",
+  "synonyms": [],
+  "category": "disease-pattern",
+  "summary": "Leukodystrophies are genetic disorders of myelin formation or maintenance that produce symmetric, confluent white-matter disease with progressive spasticity, ataxia, visual loss and cognitive decline, in contrast to the patchy asymmetric lesions of multiple sclerosis and vascular disease; the distribution on MRI (parieto-occipital, frontal, periventricular with or without the U-fibers, with or without the cerebellum and brainstem), the age of onset and the associated features (adrenal failure, peripheral neuropathy, macrocephaly, cataract) point to the enzyme or gene. Mitochondrial disorders, from defects of oxidative phosphorylation, attack the tissues with the highest energy demand and produce a different pattern: stroke-like cortical lesions that ignore arterial territories, deep gray matter necrosis, myopathy, neuropathy, deafness, diabetes and lactic acidosis, often with maternal inheritance.",
+  "sections": [
+    {
+      "heading": "The main leukodystrophies",
+      "body": "X-linked adrenoleukodystrophy (ABCD1, very long chain fatty acids) produces in boys a parieto-occipital demyelination advancing forward with an enhancing rim, behavioral change, visual and auditory agnosia and adrenal failure, and in adult men a spastic paraparesis with neuropathy (adrenomyeloneuropathy); metachromatic leukodystrophy (arylsulfatase A) gives a symmetric periventricular disease sparing the U-fibers with a tigroid pattern, a demyelinating neuropathy and a childhood or adult onset with psychiatric change; Krabbe disease (galactocerebrosidase) gives infantile irritability, spasticity, optic atrophy and neuropathy with dense thalami and corticospinal involvement; Alexander disease (GFAP) gives frontal-predominant white-matter disease with macrocephaly; Canavan disease (aspartoacylase) gives diffuse subcortical disease with macrocephaly and an elevated N-acetylaspartate peak; Pelizaeus-Merzbacher disease (PLP1) gives nystagmus and hypomyelination from infancy; vanishing white matter disease shows white matter turning to CSF signal with episodes provoked by fever; and the adult-onset forms (cerebrotendinous xanthomatosis with cataracts and tendon xanthomas, CADASIL with anterior temporal and external capsule lesions, adult polyglucosan body disease) are treatable or at least diagnosable causes of spastic paraparesis and dementia."
+    },
+    {
+      "heading": "Reading the white matter pattern",
+      "body": "The questions are: is the disease hypomyelinating (persistently immature myelin signal on T1 and T2) or demyelinating (loss of formed myelin with T2 hyperintensity); which region leads (parieto-occipital in adrenoleukodystrophy, frontal in Alexander, periventricular sparing U-fibers in metachromatic, diffuse with U-fibers in Canavan); is there contrast enhancement at the advancing edge (adrenoleukodystrophy); are the cerebellum, brainstem, corticospinal tracts, corpus callosum or thalami involved; is the head large (Alexander, Canavan) or small; are cysts present (vanishing white matter, megalencephalic leukoencephalopathy); and is there a neuropathy (metachromatic, Krabbe, adrenomyeloneuropathy). Toxic leukoencephalopathies (methotrexate, heroin inhalation, carbon monoxide, chemotherapy) and metabolic ones (hypertensive PRES, osmotic demyelination) can mimic the symmetric pattern and are excluded by the history; the age-related and vascular patterns are asymmetric and patchy."
+    },
+    {
+      "heading": "Mitochondrial disorders",
+      "body": "Mitochondrial DNA is maternally inherited and heteroplasmic, so the same mutation produces different syndromes in different tissues and relatives: MELAS (mitochondrial encephalomyopathy, lactic acidosis and stroke-like episodes; m.3243A>G) gives stroke-like cortical lesions that cross arterial territories, favor the parieto-occipital cortex and shift over time, with seizures, migraine, deafness, diabetes and short stature; MERRF gives myoclonic epilepsy with ragged red fibers; Leigh syndrome gives infantile regression with symmetric necrotic lesions of the basal ganglia, brainstem and periaqueductal gray; Kearns-Sayre syndrome gives progressive external ophthalmoplegia, retinal pigmentation and heart block from large deletions; Leber hereditary optic neuropathy gives sequential painless central visual loss in young men; and nuclear-encoded disorders of mitochondrial maintenance (POLG) give epilepsy, ataxia, neuropathy and liver failure precipitated by valproate. Lactate is raised in blood and CSF and on spectroscopy, muscle biopsy shows ragged red and cytochrome-oxidase-negative fibers, and genetic testing of blood, urine or muscle confirms the mutation."
+    },
+    {
+      "heading": "Clinical approach and treatment",
+      "body": "Progressive symmetric spasticity, ataxia or cognitive decline with a symmetric white-matter MRI pattern demands a leukodystrophy workup: very long chain fatty acids and adrenal function, arylsulfatase A, galactocerebrosidase, lysosomal enzymes, plasma sterols, nerve conduction studies and, increasingly, a gene panel or exome; cerebrotendinous xanthomatosis is treated with chenodeoxycholic acid, adrenoleukodystrophy with early stem cell transplantation or gene therapy, and metachromatic leukodystrophy with enzyme replacement or gene therapy in the presymptomatic stage, so recognition matters. Multisystem disease with encephalopathy, myopathy, deafness, diabetes, short stature and maternal relatives affected demands lactate, muscle biopsy and mitochondrial genetics; treatment is supportive with avoidance of valproate and other mitochondrial toxins, arginine for MELAS episodes and management of the cardiac conduction defects. The atlas white-matter, basal ganglia and brainstem entries show the structures these diseases pick out."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-multiple-sclerosis-pattern",
-   "syn-posterior-cord-subacute-combined",
-   "syn-optic-neuritis"
+  "keyPoints": [
+    "Symmetric confluent white-matter disease is genetic, toxic or metabolic; patchy asymmetric disease is vascular or inflammatory",
+    "The region that leads names the leukodystrophy: parieto-occipital adrenoleukodystrophy, frontal Alexander, periventricular sparing U-fibers metachromatic",
+    "Stroke-like lesions that ignore arterial territories and migrate over time are MELAS",
+    "Maternal inheritance with deafness, diabetes, short stature and myopathy means mitochondrial disease",
+    "Several leukodystrophies are now treatable early: recognize the pattern before the deficit is fixed"
   ],
-  "topicIds": [
-   "topic-pediatric-neurological-syndromes",
-   "topic-neuroimaging-basics",
-   "topic-neural-development-malformations"
-  ]
- },
- "pearls": [
-  "Check adrenal function in every boy with parieto-occipital white-matter disease and behavioral change",
-  "Valproate can kill a patient with a POLG mutation; ask about family history before prescribing it in unexplained epilepsy",
-  "A raised CSF lactate in a child with regression points to the mitochondria"
- ],
- "pitfalls": [
-  "Age-related white-matter hyperintensities and multiple sclerosis are asymmetric; do not call a symmetric confluent pattern vascular",
-  "A migrating cortical lesion with a normal angiogram in a young diabetic with deafness is MELAS, not vasculitis"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 31,
-   "pages": [
-    309,
-    312
-   ]
+  "meshIds": [
+    "cerebral-white-matter-l",
+    "cerebral-white-matter-r",
+    "corpus-callosum",
+    "putamen-l",
+    "putamen-r",
+    "periaqueductal-grey-l",
+    "periaqueductal-grey-r"
+  ],
+  "related": {
+    "structureIds": [
+      "cerebral-white-matter",
+      "corpus-callosum",
+      "putamen",
+      "periaqueductal-grey",
+      "cerebellar-white-matter",
+      "spinal-white-columns"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-multiple-sclerosis-pattern",
+      "syn-posterior-cord-subacute-combined",
+      "syn-optic-neuritis"
+    ],
+    "topicIds": [
+      "topic-pediatric-neurological-syndromes",
+      "topic-neuroimaging-basics",
+      "topic-neural-development-malformations"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 21,
-   "pages": [
-    224,
-    228
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    190,
-    194
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    58,
-    62
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
+  "pearls": [
+    "Check adrenal function in every boy with parieto-occipital white-matter disease and behavioral change",
+    "Valproate can kill a patient with a POLG mutation; ask about family history before prescribing it in unexplained epilepsy",
+    "A raised CSF lactate in a child with regression points to the mitochondria"
+  ],
+  "pitfalls": [
+    "Age-related white-matter hyperintensities and multiple sclerosis are asymmetric; do not call a symmetric confluent pattern vascular",
+    "A migrating cortical lesion with a normal angiogram in a young diabetic with deafness is MELAS, not vasculitis"
+  ],
+  "citations": [
+    {
+      "ref": "sp-metachromatic-leukodystrophy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-krabbe-disease",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-melas-syndrome",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "leukodystrophy",
+    "mitochondrial",
+    "white matter"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "MRI with T2, FLAIR, DWI, contrast and spectroscopy characterizes the white-matter pattern and the mitochondrial lesions; the myelination timetable is the reference in children; serial imaging shows progression or migration.",
+    "pathology": [
+      {
+        "pathology": "X-linked adrenoleukodystrophy",
+        "modality": "MRI",
+        "finding": "Symmetric parieto-occipital white-matter T2 hyperintensity spreading through the splenium with a thin enhancing leading edge; Loes score tracks progression.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Metachromatic leukodystrophy",
+        "modality": "MRI",
+        "finding": "Confluent periventricular and deep white-matter T2 hyperintensity sparing the U-fibers with radiating stripes (tigroid pattern) and later cerebellar and callosal involvement.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "MELAS stroke-like episode",
+        "modality": "MRI",
+        "finding": "Cortical and subcortical T2/DWI hyperintensity in the parieto-occipital or temporal lobe that crosses arterial boundaries, with elevated lactate on spectroscopy and migration on follow-up.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Leigh syndrome",
+        "modality": "MRI",
+        "finding": "Symmetric T2 hyperintensity of the putamen, caudate, thalamus, periaqueductal gray and brainstem tegmentum in an infant with regression and lactic acidosis.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "CADASIL",
+        "modality": "MRI",
+        "finding": "Confluent white-matter hyperintensity with characteriztic anterior temporal pole and external capsule involvement, lacunes and microbleeds in a young adult with migraine and strokes.",
+        "sequence": "FLAIR"
+      }
+    ]
   }
- ],
- "tags": [
-  "leukodystrophy",
-  "mitochondrial",
-  "white matter"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "MRI with T2, FLAIR, DWI, contrast and spectroscopy characterizes the white-matter pattern and the mitochondrial lesions; the myelination timetable is the reference in children; serial imaging shows progression or migration.",
-  "pathology": [
-   {
-    "pathology": "X-linked adrenoleukodystrophy",
-    "modality": "MRI",
-    "finding": "Symmetric parieto-occipital white-matter T2 hyperintensity spreading through the splenium with a thin enhancing leading edge; Loes score tracks progression.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Metachromatic leukodystrophy",
-    "modality": "MRI",
-    "finding": "Confluent periventricular and deep white-matter T2 hyperintensity sparing the U-fibers with radiating stripes (tigroid pattern) and later cerebellar and callosal involvement.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "MELAS stroke-like episode",
-    "modality": "MRI",
-    "finding": "Cortical and subcortical T2/DWI hyperintensity in the parieto-occipital or temporal lobe that crosses arterial boundaries, with elevated lactate on spectroscopy and migration on follow-up.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Leigh syndrome",
-    "modality": "MRI",
-    "finding": "Symmetric T2 hyperintensity of the putamen, caudate, thalamus, periaqueductal gray and brainstem tegmentum in an infant with regression and lactic acidosis.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "CADASIL",
-    "modality": "MRI",
-    "finding": "Confluent white-matter hyperintensity with characteriztic anterior temporal pole and external capsule involvement, lacunes and microbleeds in a young adult with migraine and strokes.",
-    "sequence": "FLAIR"
-   }
-  ]
- }
 }

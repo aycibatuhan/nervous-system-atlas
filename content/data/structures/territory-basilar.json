@@ -1,178 +1,150 @@
 {
- "kind": "structure",
- "id": "territory-basilar",
- "name": "Basilar (pontine) territory",
- "synonyms": [
-  "pontine territory",
-  "basilar perforator domain"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-basilar-l",
-  "territory-basilar-r"
- ],
- "summary": "The basilar territory is the pons and the ventral midbrain supplied by the paramedian, short circumferential and long circumferential branches of the basilar artery. This level-1 domain covers the whole pons, so it includes the paramedian pontine lacunes of small vessel disease (pure motor hemiparesis, ataxic hemiparesis, dysarthria-clumsy hand), the lateral pontine syndromes of the circumferential branches (Millard-Gubler, Foville and the AICA syndrome), and the bilateral ventral pontine infarction of basilar occlusion that produces the locked-in state. The paramedian branches are end-arteries with no collateral, which is why the pons is the commonest brainstem site of lacunes and of hypertensive hemorrhage.",
- "anatomy": {
-  "location": "The entire pons (basis and tegmentum) and the ventral and paramedian midbrain, from the pontomedullary junction to the interpeduncular fossa, including the middle cerebellar peduncle's proximal part; paramedian branches supply the medial basis and tegmentum, short circumferential branches the lateral basis, and long circumferential branches (AICA, SCA) the lateral tegmentum and peduncles; bounded below by the vertebral and PICA territories of the medulla and above by the PCA thalamic and midbrain domains.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Paramedian, short circumferential and long circumferential branches of the basilar artery",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-basilar",
+  "name": "Basilar (pontine) territory",
+  "synonyms": [
+    "pontine territory",
+    "basilar perforator domain"
   ],
-  "efferents": [
-   {
-    "to": "Anterior pontomesencephalic vein and petrosal veins",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-basilar-l",
+    "territory-basilar-r"
   ],
-  "pathways": []
- },
- "function": "The territory contains the corticospinal and corticopontine fibers of the basis pontis, the pontine nuclei, the medial lemniscus and MLF, the abducens and facial nuclei and the pontine gaze center, the trigeminal nuclei, the vestibular and cochlear nuclei, the locus coeruleus and the pontine reticular formation that sustains consciousness and breathing, so ischemia produces the crossed pontine syndromes (ipsilateral VI or VII palsy with contralateral hemiparesis), internuclear ophthalmoplegia and gaze palsy, and, when bilateral, coma or the locked-in state. Thrombosis of the basilar trunk, embolism to its top and hypertensive lipohyalinosis of its perforators are the three mechanisms.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-aica",
-   "artery-sca"
-  ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-basilar-l"
+  "summary": "The basilar territory is the pons and the ventral midbrain supplied by the paramedian, short circumferential and long circumferential branches of the basilar artery. This level-1 domain covers the whole pons, so it includes the paramedian pontine lacunes of small vessel disease (pure motor hemiparesis, ataxic hemiparesis, dysarthria-clumsy hand), the lateral pontine syndromes of the circumferential branches (Millard-Gubler, Foville and the AICA syndrome), and the bilateral ventral pontine infarction of basilar occlusion that produces the locked-in state. The paramedian branches are end-arteries with no collateral, which is why the pons is the commonest brainstem site of lacunes and of hypertensive hemorrhage.",
+  "anatomy": {
+    "location": "The entire pons (basis and tegmentum) and the ventral and paramedian midbrain, from the pontomedullary junction to the interpeduncular fossa, including the middle cerebellar peduncle's proximal part; paramedian branches supply the medial basis and tegmentum, short circumferential branches the lateral basis, and long circumferential branches (AICA, SCA) the lateral tegmentum and peduncles; bounded below by the vertebral and PICA territories of the medulla and above by the PCA thalamic and midbrain domains.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Paramedian, short circumferential and long circumferential branches of the basilar artery",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Anterior pontomesencephalic vein and petrosal veins",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The territory contains the corticospinal and corticopontine fibers of the basis pontis, the pontine nuclei, the medial lemniscus and MLF, the abducens and facial nuclei and the pontine gaze center, the trigeminal nuclei, the vestibular and cochlear nuclei, the locus coeruleus and the pontine reticular formation that sustains consciousness and breathing, so ischemia produces the crossed pontine syndromes (ipsilateral VI or VII palsy with contralateral hemiparesis), internuclear ophthalmoplegia and gaze palsy, and, when bilateral, coma or the locked-in state. Thrombosis of the basilar trunk, embolism to its top and hypertensive lipohyalinosis of its perforators are the three mechanisms.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-aica",
+      "artery-sca"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-basilar-l"
+        },
+        "label": "basilar territory of the pons"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "territory-basilar-r"
+        },
+        "label": "pontine domain of the basilar perforators"
+      }
+    ],
+    "normalAppearance": "On the overlay the basilar domain covers the pons and ventral midbrain; on imaging a paramedian pontine infarct is a wedge of restricted diffusion reaching the ventral surface and stopping at the midline.",
+    "pathology": [
+      {
+        "pathology": "Paramedian pontine infarct",
+        "modality": "MRI",
+        "finding": "Unilateral wedge of restricted diffusion in the basis pontis reaching the ventral surface with pure motor or ataxic hemiparesis; early DWI may be negative.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Basilar occlusion with bilateral pontine infarction",
+        "modality": "MRI",
+        "finding": "Bilateral ventral pontine restricted diffusion with locked-in syndrome or coma; hyperdense basilar on CT and absent flow on CTA.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Pontine hemorrhage",
+        "modality": "CT",
+        "finding": "Central pontine hyperdensity with coma, pinpoint reactive pupils, quadriplegia and ocular bobbing; large hemorrhages are fatal.",
+        "sequence": "CT non-contrast"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemiparesis with ipsilateral VI or VII palsy",
+        "side": "ipsilateral",
+        "mechanism": "Paramedian and lateral pontine infarction (crossed syndromes)"
+      },
+      {
+        "deficit": "Internuclear ophthalmoplegia and horizontal gaze palsy",
+        "side": "ipsilateral",
+        "mechanism": "MLF and pontine gaze center infarction"
+      },
+      {
+        "deficit": "Locked-in syndrome",
+        "side": "bilateral",
+        "mechanism": "Bilateral basis pontis infarction sparing the tegmentum"
+      },
+      {
+        "deficit": "Coma with pinpoint pupils",
+        "side": "bilateral",
+        "mechanism": "Pontine tegmental destruction"
+      }
+    ],
+    "examination": [
+      "Horizontal eye movements, facial strength and corneal reflexes",
+      "Strength and coordination on the side opposite the cranial nerve signs",
+      "Consciousness, pupils and breathing in bilateral disease"
+    ],
+    "syndromes": [
+      "syn-basilar-occlusion",
+      "syn-locked-in",
+      "syn-millard-gubler",
+      "syn-foville",
+      "syn-pontine-hemorrhage",
+      "syn-lacunar-ataxic-hemiparesis",
+      "syn-lacunar-dysarthria-clumsy-hand"
+    ],
+    "pearls": [
+      "Pontine lacunes mimic capsular lacunes; the eyes and the face give them away",
+      "Locked-in patients are awake: ask them to blink or look up before you decide they are comatose",
+      "The basilar perforators have no collaterals and no forgiveness"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-basilar-artery",
+      "section": "Structure and Function"
     },
-    "label": "basilar territory of the pons"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "territory-basilar-r"
+    {
+      "ref": "sp-basilar-artery-occlusion",
+      "section": "Introduction"
     },
-    "label": "pontine domain of the basilar perforators"
-   }
+    {
+      "ref": "sp-vertebrobasilar-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On the overlay the basilar domain covers the pons and ventral midbrain; on imaging a paramedian pontine infarct is a wedge of restricted diffusion reaching the ventral surface and stopping at the midline.",
-  "pathology": [
-   {
-    "pathology": "Paramedian pontine infarct",
-    "modality": "MRI",
-    "finding": "Unilateral wedge of restricted diffusion in the basis pontis reaching the ventral surface with pure motor or ataxic hemiparesis; early DWI may be negative.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Basilar occlusion with bilateral pontine infarction",
-    "modality": "MRI",
-    "finding": "Bilateral ventral pontine restricted diffusion with locked-in syndrome or coma; hyperdense basilar on CT and absent flow on CTA.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Pontine hemorrhage",
-    "modality": "CT",
-    "finding": "Central pontine hyperdensity with coma, pinpoint reactive pupils, quadriplegia and ocular bobbing; large hemorrhages are fatal.",
-    "sequence": "CT non-contrast"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemiparesis with ipsilateral VI or VII palsy",
-    "side": "ipsilateral",
-    "mechanism": "Paramedian and lateral pontine infarction (crossed syndromes)"
-   },
-   {
-    "deficit": "Internuclear ophthalmoplegia and horizontal gaze palsy",
-    "side": "ipsilateral",
-    "mechanism": "MLF and pontine gaze center infarction"
-   },
-   {
-    "deficit": "Locked-in syndrome",
-    "side": "bilateral",
-    "mechanism": "Bilateral basis pontis infarction sparing the tegmentum"
-   },
-   {
-    "deficit": "Coma with pinpoint pupils",
-    "side": "bilateral",
-    "mechanism": "Pontine tegmental destruction"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "Horizontal eye movements, facial strength and corneal reflexes",
-   "Strength and coordination on the side opposite the cranial nerve signs",
-   "Consciousness, pupils and breathing in bilateral disease"
-  ],
-  "syndromes": [
-   "syn-basilar-occlusion",
-   "syn-locked-in",
-   "syn-millard-gubler",
-   "syn-foville",
-   "syn-pontine-hemorrhage",
-   "syn-lacunar-ataxic-hemiparesis",
-   "syn-lacunar-dysarthria-clumsy-hand"
-  ],
-  "pearls": [
-   "Pontine lacunes mimic capsular lacunes; the eyes and the face give them away",
-   "Locked-in patients are awake: ask them to blink or look up before you decide they are comatose",
-   "The basilar perforators have no collaterals and no forgiveness"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    199,
-    212
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    82
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level1",
- "parent": "territory-basilar-paramedian"
+  "status": "draft",
+  "subsystem": "level1",
+  "parent": "territory-basilar-paramedian"
 }

@@ -1,151 +1,123 @@
 {
- "kind": "topic",
- "id": "topic-cortical-layers-organization",
- "name": "Cortical layers, columns and functional areas",
- "synonyms": [],
- "category": "physiology",
- "summary": "The cerebral cortex is a sheet of gray matter two to four millimeters thick, folded into gyri to fit the skull, and organized in six layers whose relative thickness varies with function: granular sensory cortex has a thick input layer IV, agranular motor cortex has giant output cells in layer V and almost no layer IV, and association cortex is intermediate; the layers are crossed by vertical columns of neurons that share a receptive field or a feature, and the columns are grouped into the Brodmann areas that the atlas parcellation approximates. Knowing the layers explains why some diseases pick out particular cortical types (Alzheimer tangles in layers III and V of association cortex, laminar necrosis after hypoxia in layer III, cortical dysplasia with disorganized layers) and why the EEG, evoked potentials and cortical stimulation read the cortex as they do.",
- "sections": [
-  {
-   "heading": "The six layers and the two cell types",
-   "body": "Layer I (molecular) contains dendritic tufts and horizontal fibers; layer II (external granular) small pyramidal and stellate cells; layer III (external pyramidal) medium pyramidal cells whose axons form the association and commissural fibers to other cortex; layer IV (internal granular) the stellate cells that receive the specific thalamic input; layer V (internal pyramidal) the large pyramidal cells, including the giant Betz cells of the motor cortex, whose axons descend to the brainstem, spinal cord and striatum; and layer VI (multiform) the cells that project back to the thalamus. Pyramidal cells are the excitatory glutamatergic projection neurons, oriented perpendicular to the surface so that their summed dendritic currents generate the EEG; interneurons, mostly GABAergic, shape their activity and their loss produces hyperexcitability. Radial glia guide the neurons into place during development and the U-fibers beneath layer VI connect adjacent gyri."
-  },
-  {
-   "heading": "Cortical types and functional areas",
-   "body": "Primary sensory cortices (somatosensory area 3, visual area 17 with its stria of Gennari, auditory areas 41 and 42) are koniocortex with a thick granular layer IV for thalamic input; primary motor cortex (area 4) is agranular with its Betz cells; premotor and association cortices (areas 6, 9, 46, 39, 40, 22) are homotypical, with balanced layers; and the limbic allocortex (hippocampus with three layers) and periallocortex (entorhinal, cingulate) are older and simpler. The Brodmann map of about fifty cytoarchitectonic areas underlies the functional localization the atlas uses: motor and premotor areas 4 and 6, the frontal eye field in area 8, Broca's areas 44 and 45, somatosensory areas 3, 1 and 2, the parietal association areas 5, 7, 39 and 40, the visual areas 17, 18 and 19, the auditory areas 41, 42 and Wernicke's area 22, and the prefrontal areas 9, 10, 11 and 46; the Harvard-Oxford and other atlases parcellate the same sheet by gyral anatomy."
-  },
-  {
-   "heading": "Columns, maps and plasticity",
-   "body": "Neurons stacked vertically through the layers respond to the same stimulus feature (a whisker, an orientation, an ocular dominance, a sound frequency) and form columns half a millimeter wide, so each area is a mosaic of feature maps laid over a topographic map of the receptor surface: the homunculi of the motor and sensory strips, the retinotopy of the visual cortex with its cortical magnification of the macula, and the tonotopy of Heschl's gyrus. These maps are plastic: they expand with use (the reading finger of Braille readers), shrink with disuse, invade deafferented territory (the phantom limb whose face region has taken over the hand area), and reorganize after stroke as the basis of rehabilitation. Acetylcholine, noradrenaline and dopamine from the modulatory systems permit this plasticity, and the excitatory-inhibitory balance within each column sets the threshold for seizures."
-  },
-  {
-   "heading": "Clinical correlates of cortical architecture",
-   "body": "Hypoxia kills the most metabolically active layers first, producing laminar necrosis of layer III visible as cortical ribbon signal on MRI; Creutzfeldt-Jakob disease and status epilepticus also show ribboning; Alzheimer tangles concentrate in the large pyramidal cells of layers III and V that form the association fibers, disconnecting the cortical networks; focal cortical dysplasia disorganizes the layers with dysmorphic neurons and balloon cells and is a common cause of refractory epilepsy; polymicrogyria and lissencephaly are failures of lamination; and cortical stimulation during awake surgery maps the functional areas onto the patient's gyri because the Brodmann boundaries do not follow the sulci exactly. The EEG records layer III and V pyramidal cell currents, evoked potentials record the arrival of thalamic input in layer IV, and transcranial magnetic stimulation excites the layer V output of the motor cortex, each a window on one part of the architecture."
-  }
- ],
- "keyPoints": [
-  "Granular cortex receives (layer IV), agranular cortex sends (layer V): sensory areas are granular, motor areas are agranular",
-  "Layer III projects to other cortex, layer V to the brainstem and cord, layer VI back to the thalamus",
-  "Columns share a feature; areas share a map; the homunculus is the map of the central gyri",
-  "Laminar necrosis, Alzheimer tangles and cortical dysplasia each pick out particular layers",
-  "The maps move: plasticity after injury is the reason rehabilitation works and phantom limbs hurt"
- ],
- "meshIds": [
-  "gyrus-precentral-l",
-  "gyrus-precentral-r",
-  "gyrus-postcentral-l",
-  "gyrus-postcentral-r",
-  "cortex-intracalcarine-l",
-  "cortex-intracalcarine-r",
-  "gyrus-heschl-l",
-  "gyrus-heschl-r"
- ],
- "related": {
-  "structureIds": [
-   "gyrus-precentral",
-   "gyrus-postcentral",
-   "cortex-intracalcarine",
-   "gyrus-heschl",
-   "hippocampus",
-   "area-broca",
-   "area-wernicke"
+  "kind": "topic",
+  "id": "topic-cortical-layers-organization",
+  "name": "Cortical layers, columns and functional areas",
+  "synonyms": [],
+  "category": "physiology",
+  "summary": "The cerebral cortex is a sheet of gray matter two to four millimeters thick, folded into gyri to fit the skull, and organized in six layers whose relative thickness varies with function: granular sensory cortex has a thick input layer IV, agranular motor cortex has giant output cells in layer V and almost no layer IV, and association cortex is intermediate; the layers are crossed by vertical columns of neurons that share a receptive field or a feature, and the columns are grouped into the Brodmann areas that the atlas parcellation approximates. Knowing the layers explains why some diseases pick out particular cortical types (Alzheimer tangles in layers III and V of association cortex, laminar necrosis after hypoxia in layer III, cortical dysplasia with disorganized layers) and why the EEG, evoked potentials and cortical stimulation read the cortex as they do.",
+  "sections": [
+    {
+      "heading": "The six layers and the two cell types",
+      "body": "Layer I (molecular) contains dendritic tufts and horizontal fibers; layer II (external granular) small pyramidal and stellate cells; layer III (external pyramidal) medium pyramidal cells whose axons form the association and commissural fibers to other cortex; layer IV (internal granular) the stellate cells that receive the specific thalamic input; layer V (internal pyramidal) the large pyramidal cells, including the giant Betz cells of the motor cortex, whose axons descend to the brainstem, spinal cord and striatum; and layer VI (multiform) the cells that project back to the thalamus. Pyramidal cells are the excitatory glutamatergic projection neurons, oriented perpendicular to the surface so that their summed dendritic currents generate the EEG; interneurons, mostly GABAergic, shape their activity and their loss produces hyperexcitability. Radial glia guide the neurons into place during development and the U-fibers beneath layer VI connect adjacent gyri."
+    },
+    {
+      "heading": "Cortical types and functional areas",
+      "body": "Primary sensory cortices (somatosensory area 3, visual area 17 with its stria of Gennari, auditory areas 41 and 42) are koniocortex with a thick granular layer IV for thalamic input; primary motor cortex (area 4) is agranular with its Betz cells; premotor and association cortices (areas 6, 9, 46, 39, 40, 22) are homotypical, with balanced layers; and the limbic allocortex (hippocampus with three layers) and periallocortex (entorhinal, cingulate) are older and simpler. The Brodmann map of about fifty cytoarchitectonic areas underlies the functional localization the atlas uses: motor and premotor areas 4 and 6, the frontal eye field in area 8, Broca's areas 44 and 45, somatosensory areas 3, 1 and 2, the parietal association areas 5, 7, 39 and 40, the visual areas 17, 18 and 19, the auditory areas 41, 42 and Wernicke's area 22, and the prefrontal areas 9, 10, 11 and 46; the Harvard-Oxford and other atlases parcellate the same sheet by gyral anatomy."
+    },
+    {
+      "heading": "Columns, maps and plasticity",
+      "body": "Neurons stacked vertically through the layers respond to the same stimulus feature (a whisker, an orientation, an ocular dominance, a sound frequency) and form columns half a millimeter wide, so each area is a mosaic of feature maps laid over a topographic map of the receptor surface: the homunculi of the motor and sensory strips, the retinotopy of the visual cortex with its cortical magnification of the macula, and the tonotopy of Heschl's gyrus. These maps are plastic: they expand with use (the reading finger of Braille readers), shrink with disuse, invade deafferented territory (the phantom limb whose face region has taken over the hand area), and reorganize after stroke as the basis of rehabilitation. Acetylcholine, noradrenaline and dopamine from the modulatory systems permit this plasticity, and the excitatory-inhibitory balance within each column sets the threshold for seizures."
+    },
+    {
+      "heading": "Clinical correlates of cortical architecture",
+      "body": "Hypoxia kills the most metabolically active layers first, producing laminar necrosis of layer III visible as cortical ribbon signal on MRI; Creutzfeldt-Jakob disease and status epilepticus also show ribboning; Alzheimer tangles concentrate in the large pyramidal cells of layers III and V that form the association fibers, disconnecting the cortical networks; focal cortical dysplasia disorganizes the layers with dysmorphic neurons and balloon cells and is a common cause of refractory epilepsy; polymicrogyria and lissencephaly are failures of lamination; and cortical stimulation during awake surgery maps the functional areas onto the patient's gyri because the Brodmann boundaries do not follow the sulci exactly. The EEG records layer III and V pyramidal cell currents, evoked potentials record the arrival of thalamic input in layer IV, and transcranial magnetic stimulation excites the layer V output of the motor cortex, each a window on one part of the architecture."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-aphasia-broca",
-   "syn-anton"
+  "keyPoints": [
+    "Granular cortex receives (layer IV), agranular cortex sends (layer V): sensory areas are granular, motor areas are agranular",
+    "Layer III projects to other cortex, layer V to the brainstem and cord, layer VI back to the thalamus",
+    "Columns share a feature; areas share a map; the homunculus is the map of the central gyri",
+    "Laminar necrosis, Alzheimer tangles and cortical dysplasia each pick out particular layers",
+    "The maps move: plasticity after injury is the reason rehabilitation works and phantom limbs hurt"
   ],
-  "topicIds": [
-   "topic-epilepsy-localization",
-   "topic-neural-development-malformations",
-   "topic-dementia-patterns",
-   "topic-sleep-eeg-basics"
-  ]
- },
- "pearls": [
-  "The stria of Gennari is visible with the naked eye and on high-resolution MRI: it marks the primary visual cortex",
-  "Cortical ribbon signal on DWI means the gray matter is dying layer by layer: hypoxia, seizures or prions",
-  "Brodmann areas are cytoarchitecture; the gyri are folds; the two only approximately coincide"
- ],
- "pitfalls": [
-  "Gyral anatomy is a proxy for cytoarchitecture; the central sulcus locates the motor strip reliably, but language areas vary and must be mapped in the individual"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    279,
-    298
-   ]
+  "meshIds": [
+    "gyrus-precentral-l",
+    "gyrus-precentral-r",
+    "gyrus-postcentral-l",
+    "gyrus-postcentral-r",
+    "cortex-intracalcarine-l",
+    "cortex-intracalcarine-r",
+    "gyrus-heschl-l",
+    "gyrus-heschl-r"
+  ],
+  "related": {
+    "structureIds": [
+      "gyrus-precentral",
+      "gyrus-postcentral",
+      "cortex-intracalcarine",
+      "gyrus-heschl",
+      "hippocampus",
+      "area-broca",
+      "area-wernicke"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-aphasia-broca",
+      "syn-anton"
+    ],
+    "topicIds": [
+      "topic-epilepsy-localization",
+      "topic-neural-development-malformations",
+      "topic-dementia-patterns",
+      "topic-sleep-eeg-basics"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    33,
-    42
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    255,
-    262
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    25,
-    32
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
+  "pearls": [
+    "The stria of Gennari is visible with the naked eye and on high-resolution MRI: it marks the primary visual cortex",
+    "Cortical ribbon signal on DWI means the gray matter is dying layer by layer: hypoxia, seizures or prions",
+    "Brodmann areas are cytoarchitecture; the gyri are folds; the two only approximately coincide"
+  ],
+  "pitfalls": [
+    "Gyral anatomy is a proxy for cytoarchitecture; the central sulcus locates the motor strip reliably, but language areas vary and must be mapped in the individual"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebral-cortex-functions",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-motor-cortical",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "layers",
+    "Brodmann",
+    "plasticity"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "High-resolution T1 and T2 images show cortical thickness, the gray-white junction and the stria of Gennari; DWI shows cortical ribbon injury; FLAIR shows dysplasia and polymicrogyria; functional MRI and magnetoencephalography map the functional areas onto the individual's gyri.",
+    "pathology": [
+      {
+        "pathology": "Laminar cortical necrosis",
+        "modality": "MRI",
+        "finding": "Gyriform cortical restricted diffusion in the acute phase and T1 hyperintensity of the cortex weeks after global hypoxia, hypoglycemia or prolonged seizures.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Focal cortical dysplasia",
+        "modality": "MRI",
+        "finding": "Focal cortical thickening, blurring of the gray-white junction and a transmantle FLAIR band pointing at the ventricle.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Polymicrogyria",
+        "modality": "MRI",
+        "finding": "Thickened, irregular cortex with many small gyri and shallow sulci, often perisylvian, with a bumpy gray-white junction.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Cortical thinning in neurodegeneration",
+        "modality": "MRI",
+        "finding": "Regional cortical thinning on surface-based analysis in the pattern of the disease (temporo-parietal in Alzheimer, frontotemporal in FTD), used as a research and increasingly a clinical biomarker.",
+        "sequence": "T1"
+      }
+    ]
   }
- ],
- "tags": [
-  "cortex",
-  "layers",
-  "Brodmann",
-  "plasticity"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "High-resolution T1 and T2 images show cortical thickness, the gray-white junction and the stria of Gennari; DWI shows cortical ribbon injury; FLAIR shows dysplasia and polymicrogyria; functional MRI and magnetoencephalography map the functional areas onto the individual's gyri.",
-  "pathology": [
-   {
-    "pathology": "Laminar cortical necrosis",
-    "modality": "MRI",
-    "finding": "Gyriform cortical restricted diffusion in the acute phase and T1 hyperintensity of the cortex weeks after global hypoxia, hypoglycemia or prolonged seizures.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Focal cortical dysplasia",
-    "modality": "MRI",
-    "finding": "Focal cortical thickening, blurring of the gray-white junction and a transmantle FLAIR band pointing at the ventricle.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Polymicrogyria",
-    "modality": "MRI",
-    "finding": "Thickened, irregular cortex with many small gyri and shallow sulci, often perisylvian, with a bumpy gray-white junction.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Cortical thinning in neurodegeneration",
-    "modality": "MRI",
-    "finding": "Regional cortical thinning on surface-based analysis in the pattern of the disease (temporo-parietal in Alzheimer, frontotemporal in FTD), used as a research and increasingly a clinical biomarker.",
-    "sequence": "T1"
-   }
-  ]
- }
 }

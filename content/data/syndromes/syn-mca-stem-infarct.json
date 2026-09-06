@@ -1,167 +1,155 @@
 {
- "kind": "syndrome",
- "id": "syn-mca-stem-infarct",
- "name": "Middle cerebral artery stem (M1) infarction",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "territory-mca",
-   "artery-mca",
-   "internal-capsule",
-   "putamen",
-   "insula",
-   "lobe-frontal",
-   "lobe-parietal",
-   "lobe-temporal"
+  "kind": "syndrome",
+  "id": "syn-mca-stem-infarct",
+  "name": "Middle cerebral artery stem (M1) infarction",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "territory-mca",
+      "artery-mca",
+      "internal-capsule",
+      "putamen",
+      "insula",
+      "lobe-frontal",
+      "lobe-parietal",
+      "lobe-temporal"
+    ],
+    "side": "contralateral",
+    "arteryId": "artery-mca",
+    "territoryId": "territory-mca"
+  },
+  "lesionMarker": {
+    "kind": "territory",
+    "meshIds": [
+      "territory-mca-major-l",
+      "territory-lateral-lenticulostriate-l"
+    ]
+  },
+  "presentation": "The patient collapses with dense weakness of the face, arm and leg on one side, loss of sensation on the same side, a homonymous hemianopia and the eyes deviated toward the side of the lesion. If the dominant hemisphere is affected they are globally aphasic; if the non-dominant hemisphere, they neglect the left side and deny the deficit. Over the next two or three days the swelling brain may cause drowsiness and herniation, the malignant middle cerebral artery syndrome.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "face, arm and leg",
+      "sign": "Complete hemiplegia, leg included because the lenticulostriate branches supply the internal capsule",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "hemibody",
+      "sign": "Hemianesthesia to all modalities",
+      "substrate": "gyrus-postcentral"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "homonymous",
+      "sign": "Homonymous hemianopia from the optic radiation",
+      "substrate": "pathway-visual"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "conjugate",
+      "sign": "Gaze deviation toward the lesion (frontal eye field)",
+      "substrate": "pathway-horizontal-gaze"
+    },
+    {
+      "modality": "language",
+      "side": "n/a",
+      "distribution": "dominant hemisphere",
+      "sign": "Global aphasia",
+      "substrate": "area-broca"
+    },
+    {
+      "modality": "neglect",
+      "side": "contralateral",
+      "distribution": "non-dominant hemisphere",
+      "sign": "Hemineglect and anosognosia",
+      "substrate": "gyrus-supramarginal"
+    }
   ],
-  "side": "contralateral",
-  "arteryId": "artery-mca",
-  "territoryId": "territory-mca"
- },
- "lesionMarker": {
-  "kind": "territory",
-  "meshIds": [
-   "territory-mca-major-l",
-   "territory-lateral-lenticulostriate-l"
-  ]
- },
- "presentation": "The patient collapses with dense weakness of the face, arm and leg on one side, loss of sensation on the same side, a homonymous hemianopia and the eyes deviated toward the side of the lesion. If the dominant hemisphere is affected they are globally aphasic; if the non-dominant hemisphere, they neglect the left side and deny the deficit. Over the next two or three days the swelling brain may cause drowsiness and herniation, the malignant middle cerebral artery syndrome.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "face, arm and leg",
-   "sign": "Complete hemiplegia, leg included because the lenticulostriate branches supply the internal capsule",
-   "substrate": "pathway-lateral-corticospinal"
+  "reasoning": "Occlusion of the M1 segment before the lenticulostriate branches removes blood from both the deep structures (internal capsule, putamen, caudate body) and the whole lateral convexity. The corticospinal and corticobulbar fibers pass through the posterior limb and genu of the internal capsule and cross in the pyramidal decussation, so the hemiplegia is contralateral and involves the leg even though the leg cortex lies in anterior cerebral territory. The thalamocortical sensory radiation and the optic radiation traverse the same capsule and the temporal and parietal white matter, giving the contralateral hemianesthesia and hemianopia. The frontal eye field drives the contralateral paramedian pontine reticular formation, so its loss lets the intact hemisphere push the eyes toward the lesion. Language areas of the dominant hemisphere (Broca, Wernicke and the arcuate fasciculus) all lie in the territory, so the aphasia is global; in the non-dominant hemisphere the equivalent parietal cortex handles spatial attention, hence neglect.",
+  "imagingFindings": [
+    {
+      "pathology": "Hyperdense MCA sign",
+      "modality": "CT",
+      "finding": "Dense thrombus in the M1 segment on non-contrast CT within the first hours, before parenchymal change.",
+      "sequence": "CT non-contrast",
+      "timing": "0–6 h"
+    },
+    {
+      "pathology": "Early ischemic change",
+      "modality": "CT",
+      "finding": "Loss of the insular ribbon and lentiform nucleus outline, sulcal effacement; quantified by ASPECTS.",
+      "sequence": "CT non-contrast",
+      "timing": "2–12 h"
+    },
+    {
+      "pathology": "Acute infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion across the deep and superficial MCA territory; FLAIR change lags by several hours (DWI–FLAIR mismatch).",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Malignant edema",
+      "modality": "CT",
+      "finding": "Midline shift, effaced ventricles and uncal herniation at 48–72 h in large infarcts.",
+      "timing": "2–5 days"
+    }
+  ],
+  "commonCauses": [
+    "Cardioembolism (atrial fibrillation)",
+    "Internal carotid atherosclerosis with artery-to-artery embolism",
+    "Carotid dissection in younger patients",
+    "Intracranial atherosclerosis"
+  ],
+  "mimics": [
+    {
+      "name": "Internal carotid occlusion",
+      "howToDistinguish": "Same picture plus possible monocular blindness; CTA shows the carotid"
+    },
+    {
+      "name": "Seizure with Todd paresis",
+      "howToDistinguish": "Short-lived, preceded by convulsion; DWI negative or cortical only"
+    },
+    {
+      "name": "Hemispheric hemorrhage",
+      "howToDistinguish": "Hyperdense blood on CT; headache and vomiting more prominent"
+    }
+  ],
+  "management": [
+    "Emergency thrombectomy for M1 occlusion within the window, with thrombolysis when eligible",
+    "Monitor for malignant edema; decompressive hemicraniectomy improves survival in selected patients under about 60",
+    "Swallow assessment and aspiration precautions from the start",
+    "Search for the embolic source with cardiac monitoring and carotid imaging"
+  ],
+  "citations": [
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -30,
+      "y": -10,
+      "z": 10
+    },
+    "label": "insula, capsule and convexity in the MCA territory"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "hemibody",
-   "sign": "Hemianesthesia to all modalities",
-   "substrate": "gyrus-postcentral"
-  },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "homonymous",
-   "sign": "Homonymous hemianopia from the optic radiation",
-   "substrate": "pathway-visual"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "conjugate",
-   "sign": "Gaze deviation toward the lesion (frontal eye field)",
-   "substrate": "pathway-horizontal-gaze"
-  },
-  {
-   "modality": "language",
-   "side": "n/a",
-   "distribution": "dominant hemisphere",
-   "sign": "Global aphasia",
-   "substrate": "area-broca"
-  },
-  {
-   "modality": "neglect",
-   "side": "contralateral",
-   "distribution": "non-dominant hemisphere",
-   "sign": "Hemineglect and anosognosia",
-   "substrate": "gyrus-supramarginal"
-  }
- ],
- "reasoning": "Occlusion of the M1 segment before the lenticulostriate branches removes blood from both the deep structures (internal capsule, putamen, caudate body) and the whole lateral convexity. The corticospinal and corticobulbar fibers pass through the posterior limb and genu of the internal capsule and cross in the pyramidal decussation, so the hemiplegia is contralateral and involves the leg even though the leg cortex lies in anterior cerebral territory. The thalamocortical sensory radiation and the optic radiation traverse the same capsule and the temporal and parietal white matter, giving the contralateral hemianesthesia and hemianopia. The frontal eye field drives the contralateral paramedian pontine reticular formation, so its loss lets the intact hemisphere push the eyes toward the lesion. Language areas of the dominant hemisphere (Broca, Wernicke and the arcuate fasciculus) all lie in the territory, so the aphasia is global; in the non-dominant hemisphere the equivalent parietal cortex handles spatial attention, hence neglect.",
- "imagingFindings": [
-  {
-   "pathology": "Hyperdense MCA sign",
-   "modality": "CT",
-   "finding": "Dense thrombus in the M1 segment on non-contrast CT within the first hours, before parenchymal change.",
-   "sequence": "CT non-contrast",
-   "timing": "0–6 h"
-  },
-  {
-   "pathology": "Early ischemic change",
-   "modality": "CT",
-   "finding": "Loss of the insular ribbon and lentiform nucleus outline, sulcal effacement; quantified by ASPECTS.",
-   "sequence": "CT non-contrast",
-   "timing": "2–12 h"
-  },
-  {
-   "pathology": "Acute infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion across the deep and superficial MCA territory; FLAIR change lags by several hours (DWI–FLAIR mismatch).",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Malignant edema",
-   "modality": "CT",
-   "finding": "Midline shift, effaced ventricles and uncal herniation at 48–72 h in large infarcts.",
-   "timing": "2–5 days"
-  }
- ],
- "commonCauses": [
-  "Cardioembolism (atrial fibrillation)",
-  "Internal carotid atherosclerosis with artery-to-artery embolism",
-  "Carotid dissection in younger patients",
-  "Intracranial atherosclerosis"
- ],
- "mimics": [
-  {
-   "name": "Internal carotid occlusion",
-   "howToDistinguish": "Same picture plus possible monocular blindness; CTA shows the carotid"
-  },
-  {
-   "name": "Seizure with Todd paresis",
-   "howToDistinguish": "Short-lived, preceded by convulsion; DWI negative or cortical only"
-  },
-  {
-   "name": "Hemispheric hemorrhage",
-   "howToDistinguish": "Hyperdense blood on CT; headache and vomiting more prominent"
-  }
- ],
- "management": [
-  "Emergency thrombectomy for M1 occlusion within the window, with thrombolysis when eligible",
-  "Monitor for malignant edema; decompressive hemicraniectomy improves survival in selected patients under about 60",
-  "Swallow assessment and aspiration precautions from the start",
-  "Search for the embolic source with cardiac monitoring and carotid imaging"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    473,
-    475
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    482
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    59
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -30,
-   "y": -10,
-   "z": 10
-  },
-  "label": "insula, capsule and convexity in the MCA territory"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

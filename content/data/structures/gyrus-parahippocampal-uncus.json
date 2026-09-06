@@ -1,212 +1,176 @@
 {
- "kind": "structure",
- "id": "gyrus-parahippocampal-uncus",
- "name": "Parahippocampal gyrus and uncus",
- "synonyms": [],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-parahippocampal-anterior-l",
-  "gyrus-parahippocampal-anterior-r",
-  "gyrus-parahippocampal-posterior-l",
-  "gyrus-parahippocampal-posterior-r",
-  "uncus-l",
-  "uncus-r"
- ],
- "summary": "The most medial temporal gyrus, running along the medial edge of the temporal lobe from the uncus in front to the isthmus of the cingulate gyrus behind. Its anterior part is entorhinal cortex, the gateway through which cortical information enters the hippocampus (and the first site of Alzheimer tangles); its hook-shaped anterior end, the uncus, carries the primary olfactory cortex and abuts the amygdala. The uncus overhangs the tentorial edge beside the oculomotor nerve and the cerebral peduncle, which is why raised supratentorial pressure produces uncal herniation with a blown pupil.",
- "anatomy": {
-  "location": "Medial temporal lobe between the hippocampal fissure and the collateral sulcus, under the hippocampus; the uncus is its recurved anterior tip lying medial to the temporal horn, above the tentorial incisura, about 2 cm behind the temporal pole.",
-  "subdivisions": [
-   {
-    "name": "Entorhinal cortex (area 28)",
-    "note": "anterior parahippocampal gyrus; hippocampal input via the perforant path"
-   },
-   {
-    "name": "Uncus",
-    "note": "primary olfactory (piriform) cortex and amygdala cover"
-   },
-   {
-    "name": "Posterior parahippocampal cortex",
-    "note": "scene and spatial memory, continuous with the lingual gyrus and cingulate isthmus"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "association cortex",
-    "note": "to entorhinal cortex"
-   },
-   {
-    "from": "olfactory tract",
-    "via": "cn-01-olfactory",
-    "note": "to the uncus"
-   }
+  "kind": "structure",
+  "id": "gyrus-parahippocampal-uncus",
+  "name": "Parahippocampal gyrus and uncus",
+  "synonyms": [],
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-parahippocampal-anterior-l",
+    "gyrus-parahippocampal-anterior-r",
+    "gyrus-parahippocampal-posterior-l",
+    "gyrus-parahippocampal-posterior-r",
+    "uncus-l",
+    "uncus-r"
   ],
-  "efferents": [
-   {
-    "to": "hippocampus",
-    "via": "perforant path"
-   }
-  ],
-  "pathways": [
-   "pathway-papez-limbic",
-   "pathway-olfactory"
-  ]
- },
- "function": "Entry and exit of information to and from the hippocampus (declarative memory), olfactory perception, spatial and scene memory.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-pca",
-   "territory-anterior-choroidal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 22,
-     "y": -10,
-     "z": -22
+  "summary": "The most medial temporal gyrus, running along the medial edge of the temporal lobe from the uncus in front to the isthmus of the cingulate gyrus behind. Its anterior part is entorhinal cortex, the gateway through which cortical information enters the hippocampus (and the first site of Alzheimer tangles); its hook-shaped anterior end, the uncus, carries the primary olfactory cortex and abuts the amygdala. The uncus overhangs the tentorial edge beside the oculomotor nerve and the cerebral peduncle, which is why raised supratentorial pressure produces uncal herniation with a blown pupil.",
+  "anatomy": {
+    "location": "Medial temporal lobe between the hippocampal fissure and the collateral sulcus, under the hippocampus; the uncus is its recurved anterior tip lying medial to the temporal horn, above the tentorial incisura, about 2 cm behind the temporal pole.",
+    "subdivisions": [
+      {
+        "name": "Entorhinal cortex (area 28)",
+        "note": "anterior parahippocampal gyrus; hippocampal input via the perforant path"
+      },
+      {
+        "name": "Uncus",
+        "note": "primary olfactory (piriform) cortex and amygdala cover"
+      },
+      {
+        "name": "Posterior parahippocampal cortex",
+        "note": "scene and spatial memory, continuous with the lingual gyrus and cingulate isthmus"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "association cortex",
+        "note": "to entorhinal cortex"
+      },
+      {
+        "from": "olfactory tract",
+        "via": "cn-01-olfactory",
+        "note": "to the uncus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "hippocampus",
+        "via": "perforant path"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic",
+      "pathway-olfactory"
+    ]
+  },
+  "function": "Entry and exit of information to and from the hippocampus (declarative memory), olfactory perception, spatial and scene memory.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca",
+      "territory-anterior-choroidal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 22,
+          "y": -10,
+          "z": -22
+        },
+        "label": "uncus medial to the temporal horn beside the tentorial edge"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 25,
+          "y": -30,
+          "z": -12
+        },
+        "label": "parahippocampal gyrus under the hippocampus"
+      }
+    ],
+    "normalAppearance": "On coronal T1 the parahippocampal gyrus is the gray matter beneath the hippocampus, medial to the collateral sulcus; the uncus is the medial bump at the level of the anterior temporal horn beside the interpeduncular cistern. Entorhinal atrophy is an early MRI sign of Alzheimer disease; uncal herniation is judged by displacement across the tentorial edge and effacement of the ambient cistern.",
+    "pathology": [
+      {
+        "pathology": "Uncal herniation",
+        "modality": "CT",
+        "finding": "Medial temporal lobe displaced over the tentorium with effacement of the suprasellar and ambient cisterns, compression of the midbrain and dilatation of the contralateral temporal horn.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "MRI",
+        "finding": "Entorhinal and hippocampal atrophy with widening of the collateral sulcus and temporal horn.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Herpes encephalitis",
+        "modality": "MRI",
+        "finding": "FLAIR hyperintensity of the medial temporal lobe including the uncus and parahippocampal gyrus.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "Coronal T1/FLAIR; CT in the emergency"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral dilated pupil then complete third nerve palsy",
+        "side": "ipsilateral",
+        "mechanism": "Uncus compressing the oculomotor nerve against the tentorium"
+      },
+      {
+        "deficit": "Contralateral hemiparesis (or ipsilateral via Kernohan notch)",
+        "side": "contralateral",
+        "mechanism": "Cerebral peduncle compression"
+      },
+      {
+        "deficit": "Uncinate seizures with olfactory hallucinations and déjà vu",
+        "side": "n/a",
+        "mechanism": "Irritation of the piriform cortex"
+      },
+      {
+        "deficit": "Memory impairment",
+        "side": "bilateral",
+        "mechanism": "Entorhinal disconnection of the hippocampus"
+      },
+      {
+        "deficit": "Contralateral homonymous hemianopia",
+        "side": "contralateral",
+        "mechanism": "PCA compression against the tentorium during herniation"
+      }
+    ],
+    "examination": [
+      "Pupil size and reactivity in any patient with a mass or head injury",
+      "Level of consciousness and posture",
+      "Ask about unpleasant smells or déjà vu at seizure onset",
+      "Delayed recall"
+    ],
+    "syndromes": [
+      "syn-uncal-herniation",
+      "syn-kluver-bucy"
+    ],
+    "pearls": [
+      "A unilateral dilated pupil in a drowsy patient is uncal herniation until proven otherwise: act, then image",
+      "The first pathology of Alzheimer disease is in the entorhinal cortex, which is why the MRI marker is medial temporal atrophy"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "uncus medial to the temporal horn beside the tentorial edge"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 25,
-     "y": -30,
-     "z": -12
+    {
+      "ref": "sp-uncal-herniation",
+      "section": "Pathophysiology"
     },
-    "label": "parahippocampal gyrus under the hippocampus"
-   }
+    {
+      "ref": "sp-mesial-temporal-lobe-epilepsy",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "On coronal T1 the parahippocampal gyrus is the gray matter beneath the hippocampus, medial to the collateral sulcus; the uncus is the medial bump at the level of the anterior temporal horn beside the interpeduncular cistern. Entorhinal atrophy is an early MRI sign of Alzheimer disease; uncal herniation is judged by displacement across the tentorial edge and effacement of the ambient cistern.",
-  "pathology": [
-   {
-    "pathology": "Uncal herniation",
-    "modality": "CT",
-    "finding": "Medial temporal lobe displaced over the tentorium with effacement of the suprasellar and ambient cisterns, compression of the midbrain and dilatation of the contralateral temporal horn.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "MRI",
-    "finding": "Entorhinal and hippocampal atrophy with widening of the collateral sulcus and temporal horn.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Herpes encephalitis",
-    "modality": "MRI",
-    "finding": "FLAIR hyperintensity of the medial temporal lobe including the uncus and parahippocampal gyrus.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "cortex",
+    "limbic"
   ],
-  "sequenceOfChoice": "Coronal T1/FLAIR; CT in the emergency"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral dilated pupil then complete third nerve palsy",
-    "side": "ipsilateral",
-    "mechanism": "Uncus compressing the oculomotor nerve against the tentorium"
-   },
-   {
-    "deficit": "Contralateral hemiparesis (or ipsilateral via Kernohan notch)",
-    "side": "contralateral",
-    "mechanism": "Cerebral peduncle compression"
-   },
-   {
-    "deficit": "Uncinate seizures with olfactory hallucinations and déjà vu",
-    "side": "n/a",
-    "mechanism": "Irritation of the piriform cortex"
-   },
-   {
-    "deficit": "Memory impairment",
-    "side": "bilateral",
-    "mechanism": "Entorhinal disconnection of the hippocampus"
-   },
-   {
-    "deficit": "Contralateral homonymous hemianopia",
-    "side": "contralateral",
-    "mechanism": "PCA compression against the tentorium during herniation"
-   }
-  ],
-  "examination": [
-   "Pupil size and reactivity in any patient with a mass or head injury",
-   "Level of consciousness and posture",
-   "Ask about unpleasant smells or déjà vu at seizure onset",
-   "Delayed recall"
-  ],
-  "syndromes": [
-   "syn-uncal-herniation",
-   "syn-kluver-bucy"
-  ],
-  "pearls": [
-   "A unilateral dilated pupil in a drowsy patient is uncal herniation until proven otherwise: act, then image",
-   "The first pathology of Alzheimer disease is in the entorhinal cortex, which is why the MRI marker is medial temporal atrophy"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    251,
-    253
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    459,
-    459
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    54
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    270,
-    270
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    235,
-    237
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "limbic"
- ],
- "status": "draft",
- "latin": "Gyrus parahippocampalis; uncus",
- "subsystem": "lobe-limbic"
+  "status": "draft",
+  "latin": "Gyrus parahippocampalis; uncus",
+  "subsystem": "lobe-limbic"
 }

@@ -1,155 +1,139 @@
 {
- "kind": "structure",
- "id": "thalamus-pulvinar",
- "name": "Pulvinar",
- "synonyms": [],
- "system": "diencephalon",
- "meshIds": [
-  "thalamus-pulvinar-l",
-  "thalamus-pulvinar-r",
-  "thalamus-pulvinar-medial-centrolateral-l",
-  "thalamus-pulvinar-medial-centrolateral-r"
- ],
- "summary": "The large posterior cushion of the thalamus overhanging the midbrain and the geniculate bodies. It is the association nucleus for vision and attention, reciprocally connected with the parietal, temporal and occipital association cortices and the superior colliculus. Left pulvinar lesions contribute to thalamic aphasia and right ones to neglect; bilateral pulvinar hyperintensity on diffusion imaging is the signature of variant Creutzfeldt–Jakob disease, and it is the thalamic target of Fabry disease and some metabolic disorders.",
- "anatomy": {
-  "location": "Posterior pole of the thalamus above the superior colliculus and behind the ventral posterior nuclei, medial to the lateral geniculate body and bordering the atrium of the lateral ventricle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "superior-colliculus"
-   },
-   {
-    "from": "cortex-lateral-occipital and parietal association cortex"
-   }
+  "kind": "structure",
+  "id": "thalamus-pulvinar",
+  "name": "Pulvinar",
+  "synonyms": [],
+  "system": "diencephalon",
+  "meshIds": [
+    "thalamus-pulvinar-l",
+    "thalamus-pulvinar-r",
+    "thalamus-pulvinar-medial-centrolateral-l",
+    "thalamus-pulvinar-medial-centrolateral-r"
   ],
-  "efferents": [
-   {
-    "to": "parietal, temporal and occipital association cortex"
-   }
-  ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Visual attention and salience, integration of visual and other sensory information with the parietal and temporal cortices, contributions to language (left) and spatial attention (right).",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "arteries-thalamoperforating"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 14,
-     "y": -28,
-     "z": 6
-    },
-    "label": "posterior thalamus above the midbrain"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 14,
-     "y": -28,
-     "z": 6
-    },
-    "label": "pulvinar overhanging the superior colliculus"
-   }
-  ],
-  "normalAppearance": "The rounded posterior end of the thalamus on axial slices at the level of the atria; symmetric brightness on DWI/FLAIR is abnormal.",
-  "pathology": [
-   {
-    "pathology": "Variant CJD (pulvinar sign)",
-    "modality": "MRI",
-    "finding": "Bilateral symmetric pulvinar hyperintensity on DWI/FLAIR, greater than the anterior putamen, with the hockey-stick sign when the dorsomedial nuclei join.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior choroidal artery infarct",
-    "modality": "MRI",
-    "finding": "Pulvinar and lateral geniculate restriction with a field defect and sensory disturbance.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Fabry disease",
-    "modality": "MRI",
-    "finding": "T1-bright pulvinar (calcification) in a young patient with strokes.",
-    "sequence": "T1"
-   }
-  ],
-  "sequenceOfChoice": "DWI and FLAIR; CT for calcification"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hemispatial neglect (right) or thalamic aphasia (left)",
-    "side": "contralateral",
-    "mechanism": "Association connections with the parietal and temporal cortex"
-   },
-   {
-    "deficit": "Visual attention deficits and sectoranopia",
-    "side": "contralateral",
-    "mechanism": "Pulvinar-cortical and adjacent geniculate involvement"
-   },
-   {
-    "deficit": "Rapidly progressive dementia with pulvinar sign",
-    "side": "bilateral",
-    "mechanism": "Variant CJD"
-   }
-  ],
-  "examination": [
-   "Neglect screening (line bisection, extinction)",
-   "Language: fluent output with paraphasias and preserved repetition in thalamic aphasia",
-   "Visual fields"
-  ],
-  "syndromes": [
-   "syn-hemineglect"
-  ],
-  "pearls": [
-   "Thalamic aphasia is fluent with preserved repetition, unlike Broca or Wernicke aphasia",
-   "Bilateral bright pulvinars in a young person with psychiatric symptoms and ataxia: variant CJD"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    366
-   ]
+  "summary": "The large posterior cushion of the thalamus overhanging the midbrain and the geniculate bodies. It is the association nucleus for vision and attention, reciprocally connected with the parietal, temporal and occipital association cortices and the superior colliculus. Left pulvinar lesions contribute to thalamic aphasia and right ones to neglect; bilateral pulvinar hyperintensity on diffusion imaging is the signature of variant Creutzfeldt–Jakob disease, and it is the thalamic target of Fabry disease and some metabolic disorders.",
+  "anatomy": {
+    "location": "Posterior pole of the thalamus above the superior colliculus and behind the ventral posterior nuclei, medial to the lateral geniculate body and bordering the atrium of the lateral ventricle.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    48
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "superior-colliculus"
+      },
+      {
+        "from": "cortex-lateral-occipital and parietal association cortex"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "parietal, temporal and occipital association cortex"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    238,
-    239
-   ]
-  }
- ],
- "tags": [
-  "diencephalon"
- ],
- "status": "draft",
- "latin": "Pulvinar thalami",
- "subsystem": "thalamus",
- "parent": "thalamus"
+  "function": "Visual attention and salience, integration of visual and other sensory information with the parietal and temporal cortices, contributions to language (left) and spatial attention (right).",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 14,
+          "y": -28,
+          "z": 6
+        },
+        "label": "posterior thalamus above the midbrain"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 14,
+          "y": -28,
+          "z": 6
+        },
+        "label": "pulvinar overhanging the superior colliculus"
+      }
+    ],
+    "normalAppearance": "The rounded posterior end of the thalamus on axial slices at the level of the atria; symmetric brightness on DWI/FLAIR is abnormal.",
+    "pathology": [
+      {
+        "pathology": "Variant CJD (pulvinar sign)",
+        "modality": "MRI",
+        "finding": "Bilateral symmetric pulvinar hyperintensity on DWI/FLAIR, greater than the anterior putamen, with the hockey-stick sign when the dorsomedial nuclei join.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior choroidal artery infarct",
+        "modality": "MRI",
+        "finding": "Pulvinar and lateral geniculate restriction with a field defect and sensory disturbance.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Fabry disease",
+        "modality": "MRI",
+        "finding": "T1-bright pulvinar (calcification) in a young patient with strokes.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "DWI and FLAIR; CT for calcification"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hemispatial neglect (right) or thalamic aphasia (left)",
+        "side": "contralateral",
+        "mechanism": "Association connections with the parietal and temporal cortex"
+      },
+      {
+        "deficit": "Visual attention deficits and sectoranopia",
+        "side": "contralateral",
+        "mechanism": "Pulvinar-cortical and adjacent geniculate involvement"
+      },
+      {
+        "deficit": "Rapidly progressive dementia with pulvinar sign",
+        "side": "bilateral",
+        "mechanism": "Variant CJD"
+      }
+    ],
+    "examination": [
+      "Neglect screening (line bisection, extinction)",
+      "Language: fluent output with paraphasias and preserved repetition in thalamic aphasia",
+      "Visual fields"
+    ],
+    "syndromes": [
+      "syn-hemineglect"
+    ],
+    "pearls": [
+      "Thalamic aphasia is fluent with preserved repetition, unlike Broca or Wernicke aphasia",
+      "Bilateral bright pulvinars in a young person with psychiatric symptoms and ataxia: variant CJD"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-thalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-thalamic-nuclei",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "diencephalon"
+  ],
+  "status": "draft",
+  "latin": "Pulvinar thalami",
+  "subsystem": "thalamus",
+  "parent": "thalamus"
 }

@@ -1,56 +1,64 @@
 {
- "kind": "quiz",
- "id": "qz-18",
- "type": "imaging",
- "vignette": "A 78-year-old woman on warfarin has become confused and unsteady over three weeks and now has a mild left hemiparesis. CT shows a crescent-shaped collection over the right hemisphere that is slightly darker than brain and crosses the coronal suture.",
- "stem": "What is the diagnosis?",
- "options": [
-  {
-   "key": "A",
-   "text": "Acute epidural hematoma"
-  },
-  {
-   "key": "B",
-   "text": "Chronic subdural hematoma"
-  },
-  {
-   "key": "C",
-   "text": "Subarachnoid hemorrhage"
-  },
-  {
-   "key": "D",
-   "text": "Cortical infarct"
-  },
-  {
-   "key": "E",
-   "text": "Meningioma"
-  }
- ],
- "answer": "B",
- "explanation": "A crescentic, hypodense extra-axial collection that crosses sutures in an elderly anticoagulated patient with a subacute course is a chronic subdural hematoma from torn bridging veins; an epidural hematoma is biconvex, hyperdense and does not cross sutures.",
- "targets": {
-  "structureIds": [
-   "veins-superficial-cerebral"
+  "kind": "quiz",
+  "id": "qz-18",
+  "type": "imaging",
+  "vignette": "A 78-year-old woman on warfarin has become confused and unsteady over three weeks and now has a mild left hemiparesis. CT shows a crescent-shaped collection over the right hemisphere that is slightly darker than brain and crosses the coronal suture.",
+  "stem": "What is the diagnosis?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Acute epidural hematoma"
+    },
+    {
+      "key": "B",
+      "text": "Chronic subdural hematoma"
+    },
+    {
+      "key": "C",
+      "text": "Subarachnoid hemorrhage"
+    },
+    {
+      "key": "D",
+      "text": "Cortical infarct"
+    },
+    {
+      "key": "E",
+      "text": "Meningioma"
+    }
   ],
-  "syndromeIds": [
-   "syn-subdural-hematoma",
-   "syn-epidural-hematoma"
+  "answer": "B",
+  "explanation": "A crescentic, hypodense extra-axial collection that crosses sutures in an elderly anticoagulated patient with a subacute course is a chronic subdural hematoma from torn bridging veins; an epidural hematoma is biconvex, hyperdense and does not cross sutures.",
+  "targets": {
+    "structureIds": [
+      "veins-superficial-cerebral"
+    ],
+    "syndromeIds": [
+      "syn-subdural-hematoma",
+      "syn-epidural-hematoma"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "dura-mater-cranial"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "dura-mater-cranial"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    199,
-    200
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-subdural-hematoma",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-epidural-hematoma",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-brain-veins",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

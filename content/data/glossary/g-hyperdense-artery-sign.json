@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-hyperdense-artery-sign",
- "term": "Hyperdense artery sign",
- "definition": "Increased density of an occluded artery on non-contrast CT (the hyperdense MCA or basilar sign) from the fresh thrombus within it; an early marker of large vessel occlusion.",
- "related": [
-  "g-insular-ribbon-sign"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 2,
-   "pages": [
-    11,
-    20
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-hyperdense-artery-sign",
+  "term": "Hyperdense artery sign",
+  "definition": "Increased density of an occluded artery on non-contrast CT (the hyperdense MCA or basilar sign) from the fresh thrombus within it; an early marker of large vessel occlusion.",
+  "related": [
+    "g-insular-ribbon-sign"
+  ],
+  "citations": [
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "Pathophysiology"
+    }
+  ]
 }

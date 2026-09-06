@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-dystonia",
- "term": "Dystonia",
- "definition": "Sustained or intermittent muscle contractions producing twisting movements and abnormal postures, from disordered basal ganglia output; may be focal, segmental or generalized.",
- "related": [
-  "g-chorea"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-dystonia",
+  "term": "Dystonia",
+  "definition": "Sustained or intermittent muscle contractions producing twisting movements and abnormal postures, from disordered basal ganglia output; may be focal, segmental or generalized.",
+  "related": [
+    "g-chorea"
+  ],
+  "citations": [
+    {
+      "ref": "sp-dystonia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-tardive-dystonia",
+      "section": "Introduction"
+    }
+  ]
 }

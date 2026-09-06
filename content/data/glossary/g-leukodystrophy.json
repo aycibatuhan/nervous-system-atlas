@@ -1,20 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-leukodystrophy",
- "term": "Leukodystrophy",
- "definition": "A genetic disorder of myelin formation or maintenance producing symmetric, confluent white-matter disease with progressive spasticity, ataxia and cognitive decline; the regional pattern on MRI (parieto-occipital, frontal, periventricular) and associated features point to the gene.",
- "related": [
-  "g-u-fibers",
-  "g-heteroplasmy"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 31,
-   "pages": [
-    309,
-    312
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-leukodystrophy",
+  "term": "Leukodystrophy",
+  "definition": "A genetic disorder of myelin formation or maintenance producing symmetric, confluent white-matter disease with progressive spasticity, ataxia and cognitive decline; the regional pattern on MRI (parieto-occipital, frontal, periventricular) and associated features point to the gene.",
+  "related": [
+    "g-u-fibers",
+    "g-heteroplasmy"
+  ],
+  "citations": [
+    {
+      "ref": "sp-metachromatic-leukodystrophy",
+      "section": "Pathophysiology"
+    }
+  ]
 }

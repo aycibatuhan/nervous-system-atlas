@@ -1,110 +1,114 @@
 {
- "kind": "syndrome",
- "id": "syn-physiologic-anisocoria",
- "name": "Physiologic anisocoria and the approach to unequal pupils",
- "eponyms": [],
- "category": "functional-pattern",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cn-03-oculomotor",
-   "ganglion-ciliary",
-   "cervical-sympathetic-chain"
+  "kind": "syndrome",
+  "id": "syn-physiologic-anisocoria",
+  "name": "Physiologic anisocoria and the approach to unequal pupils",
+  "eponyms": [],
+  "category": "functional-pattern",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cn-03-oculomotor",
+      "ganglion-ciliary",
+      "cervical-sympathetic-chain"
+    ],
+    "side": "n/a"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "ciliary-ganglion-l",
+      "ciliary-ganglion-r"
+    ]
+  },
+  "presentation": "A patient, or a nurse, notices that one pupil is larger than the other. The size difference is under a millimeter, is the same in bright and dim light, both pupils react briskly, the lids are level and old photographs show the same asymmetry: this is physiologic anisocoria, present in a fifth of healthy people. If instead the difference is greater in the dark the small pupil is at fault (Horner), and if greater in the light the large pupil is at fault (third nerve, Adie, pharmacologic).",
+  "deficits": [
+    {
+      "modality": "pupil",
+      "side": "n/a",
+      "distribution": "both pupils",
+      "sign": "Anisocoria under 1 mm, equal in light and dark, brisk reactions, normal lids and motility; benign",
+      "substrate": "pathway-pupillary-light-reflex"
+    },
+    {
+      "modality": "pupil",
+      "side": "ipsilateral",
+      "distribution": "smaller pupil (pathologic)",
+      "sign": "Anisocoria greater in the dark with dilation lag and mild ptosis: Horner syndrome",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "pupil",
+      "side": "ipsilateral",
+      "distribution": "larger pupil (pathologic)",
+      "sign": "Anisocoria greater in the light with poor light reaction: third nerve palsy (with ptosis and ophthalmoplegia), Adie tonic pupil (slow near response) or pharmacologic mydriasis (no response to pilocarpine)",
+      "substrate": "cn-03-oculomotor"
+    }
   ],
-  "side": "n/a"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "ciliary-ganglion-l",
-   "ciliary-ganglion-r"
-  ]
- },
- "presentation": "A patient, or a nurse, notices that one pupil is larger than the other. The size difference is under a millimeter, is the same in bright and dim light, both pupils react briskly, the lids are level and old photographs show the same asymmetry: this is physiologic anisocoria, present in a fifth of healthy people. If instead the difference is greater in the dark the small pupil is at fault (Horner), and if greater in the light the large pupil is at fault (third nerve, Adie, pharmacologic).",
- "deficits": [
-  {
-   "modality": "pupil",
-   "side": "n/a",
-   "distribution": "both pupils",
-   "sign": "Anisocoria under 1 mm, equal in light and dark, brisk reactions, normal lids and motility; benign",
-   "substrate": "pathway-pupillary-light-reflex"
+  "reasoning": "Pupil size is the balance between the sphincter, driven by the parasympathetic fibers from the Edinger–Westphal nucleus through the third nerve and ciliary ganglion, and the dilator, driven by the three-neuron sympathetic chain, and both systems serve each eye separately and without crossing, so an efferent lesion produces an asymmetry between the two pupils, whereas an afferent lesion never does, because each retina drives both Edinger–Westphal nuclei equally. Which pupil is abnormal is found by changing the light: in darkness the dilator is working, so a paralyzed dilator leaves its pupil behind and the anisocoria grows, revealing a Horner syndrome on the side of the smaller pupil; in bright light the sphincter is working, so a paralyzed sphincter leaves its pupil large and the anisocoria grows, revealing a parasympathetic lesion on the side of the larger pupil. Physiologic anisocoria arises from a slight asymmetry of central inhibition of the Edinger–Westphal nuclei and therefore stays constant across lighting conditions, with normal reactions and no ptosis. The pharmacologic tests follow the same logic: apraclonidine reverses Horner anisocoria by stimulating the supersensitive dilator, dilute pilocarpine constricts the supersensitive Adie sphincter, and full-strength pilocarpine fails to constrict a pharmacologically blocked pupil but constricts a third nerve palsy pupil. Old photographs are the cheapest test of all.",
+  "imagingFindings": [
+    {
+      "pathology": "Physiologic anisocoria",
+      "modality": "MRI",
+      "finding": "No imaging needed; if obtained for other reasons the study is normal.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Pathologic anisocoria",
+      "modality": "MRA",
+      "finding": "Imaging follows the pattern: neck and skull base for Horner (carotid dissection), CTA for a pupil-involving third nerve palsy (posterior communicating aneurysm).",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Physiologic (20% of the population)",
+    "Horner syndrome",
+    "Third nerve palsy",
+    "Adie tonic pupil",
+    "Pharmacologic (scopolamine patch, nebulized ipratropium, plant alkaloids)",
+    "Iris trauma or synechiae, acute angle closure"
+  ],
+  "mimics": [
+    {
+      "name": "Horner syndrome",
+      "howToDistinguish": "Anisocoria greater in the dark, ptosis, dilation lag"
+    },
+    {
+      "name": "Third nerve palsy",
+      "howToDistinguish": "Anisocoria greater in the light with ptosis and ophthalmoplegia"
+    },
+    {
+      "name": "Pharmacologic mydriasis",
+      "howToDistinguish": "Very large pupil unresponsive to 1% pilocarpine; history of exposure"
+    }
+  ],
+  "management": [
+    "Measure the pupils in bright and dim light; examine the lids, eye movements and old photographs",
+    "Anisocoria greater in the dark: apraclonidine test and Horner workup; greater in the light: check motility and pupil reactions, then pilocarpine tests",
+    "Physiologic anisocoria with normal reactions and no other sign needs no investigation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anisocoria",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-pupillary-light-reflexes-and-pathway",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-horner-syndrome",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": 35,
+      "z": -12
+    },
+    "label": "both eyes: the pupils are compared, not imaged"
   },
-  {
-   "modality": "pupil",
-   "side": "ipsilateral",
-   "distribution": "smaller pupil (pathologic)",
-   "sign": "Anisocoria greater in the dark with dilation lag and mild ptosis: Horner syndrome",
-   "substrate": "pathway-oculosympathetic"
-  },
-  {
-   "modality": "pupil",
-   "side": "ipsilateral",
-   "distribution": "larger pupil (pathologic)",
-   "sign": "Anisocoria greater in the light with poor light reaction: third nerve palsy (with ptosis and ophthalmoplegia), Adie tonic pupil (slow near response) or pharmacologic mydriasis (no response to pilocarpine)",
-   "substrate": "cn-03-oculomotor"
-  }
- ],
- "reasoning": "Pupil size is the balance between the sphincter, driven by the parasympathetic fibers from the Edinger–Westphal nucleus through the third nerve and ciliary ganglion, and the dilator, driven by the three-neuron sympathetic chain, and both systems serve each eye separately and without crossing, so an efferent lesion produces an asymmetry between the two pupils, whereas an afferent lesion never does, because each retina drives both Edinger–Westphal nuclei equally. Which pupil is abnormal is found by changing the light: in darkness the dilator is working, so a paralyzed dilator leaves its pupil behind and the anisocoria grows, revealing a Horner syndrome on the side of the smaller pupil; in bright light the sphincter is working, so a paralyzed sphincter leaves its pupil large and the anisocoria grows, revealing a parasympathetic lesion on the side of the larger pupil. Physiologic anisocoria arises from a slight asymmetry of central inhibition of the Edinger–Westphal nuclei and therefore stays constant across lighting conditions, with normal reactions and no ptosis. The pharmacologic tests follow the same logic: apraclonidine reverses Horner anisocoria by stimulating the supersensitive dilator, dilute pilocarpine constricts the supersensitive Adie sphincter, and full-strength pilocarpine fails to constrict a pharmacologically blocked pupil but constricts a third nerve palsy pupil. Old photographs are the cheapest test of all.",
- "imagingFindings": [
-  {
-   "pathology": "Physiologic anisocoria",
-   "modality": "MRI",
-   "finding": "No imaging needed; if obtained for other reasons the study is normal.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Pathologic anisocoria",
-   "modality": "MRA",
-   "finding": "Imaging follows the pattern: neck and skull base for Horner (carotid dissection), CTA for a pupil-involving third nerve palsy (posterior communicating aneurysm).",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Physiologic (20% of the population)",
-  "Horner syndrome",
-  "Third nerve palsy",
-  "Adie tonic pupil",
-  "Pharmacologic (scopolamine patch, nebulized ipratropium, plant alkaloids)",
-  "Iris trauma or synechiae, acute angle closure"
- ],
- "mimics": [
-  {
-   "name": "Horner syndrome",
-   "howToDistinguish": "Anisocoria greater in the dark, ptosis, dilation lag"
-  },
-  {
-   "name": "Third nerve palsy",
-   "howToDistinguish": "Anisocoria greater in the light with ptosis and ophthalmoplegia"
-  },
-  {
-   "name": "Pharmacologic mydriasis",
-   "howToDistinguish": "Very large pupil unresponsive to 1% pilocarpine; history of exposure"
-  }
- ],
- "management": [
-  "Measure the pupils in bright and dim light; examine the lids, eye movements and old photographs",
-  "Anisocoria greater in the dark: apraclonidine test and Horner workup; greater in the light: check motility and pupil reactions, then pilocarpine tests",
-  "Physiologic anisocoria with normal reactions and no other sign needs no investigation"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    87,
-    90
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": 35,
-   "z": -12
-  },
-  "label": "both eyes: the pupils are compared, not imaged"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

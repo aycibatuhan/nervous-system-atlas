@@ -1,133 +1,129 @@
 {
- "kind": "structure",
- "id": "nerve-medial-antebrachial-cutaneous",
- "name": "Medial antebrachial cutaneous nerve",
- "synonyms": [
-  "medial cutaneous nerve of the forearm"
- ],
- "system": "peripheral",
- "meshIds": [
-  "medial-antebrachial-cutaneous-nerve-l",
-  "medial-antebrachial-cutaneous-nerve-r"
- ],
- "summary": "The medial antebrachial cutaneous nerve is a sensory branch of the medial cord of the brachial plexus (C8, T1) that runs down the medial arm with the basilic vein, pierces the deep fascia at the middle of the arm and divides into anterior and posterior branches that supply the skin of the medial forearm from the elbow to the wrist. It is the sensory territory that distinguishes a lower trunk or medial cord plexus lesion from an ulnar neuropathy: the ulnar nerve does not supply the forearm skin, so numbness of the medial forearm with a weak, numb hand means the lesion is in the plexus (Klumpke palsy, neurogenic thoracic outlet syndrome, Pancoast tumor), not at the elbow. Its sensory potential is the electrophysiological marker of that distinction.",
- "anatomy": {
-  "location": "Arises from the medial cord in the axilla, descends medial to the brachial artery and then with the basilic vein, pierces the deep fascia with the vein above the elbow and divides into anterior and posterior branches over the medial epicondyle to supply the medial half of the forearm skin down to the wrist.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Purely sensory, it carries touch, pain and temperature from the medial forearm through the medial cord and lower trunk to the C8 and T1 dorsal root ganglia; its territory is the key to separating lower plexus lesions from ulnar neuropathy, because the ulnar nerve's sensory supply stops at the wrist, and a normal medial antebrachial cutaneous sensory potential with an abnormal ulnar one places the lesion in the ulnar nerve, whereas both abnormal places it in the medial cord or lower trunk. It is injured by axillary surgery and by venepuncture and cannulation of the basilic vein, producing a painful neuroma, and it is harvested as a graft.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-medial-antebrachial-cutaneous",
+  "name": "Medial antebrachial cutaneous nerve",
+  "synonyms": [
+    "medial cutaneous nerve of the forearm"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "medial-antebrachial-cutaneous-nerve-l"
-    },
-    "label": "medial antebrachial cutaneous nerve along the medial arm"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "medial-antebrachial-cutaneous-nerve-r"
-    },
-    "label": "nerve beside the basilic vein above the elbow"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "medial-antebrachial-cutaneous-nerve-l",
+    "medial-antebrachial-cutaneous-nerve-r"
   ],
-  "normalAppearance": "A thin nerve accompanying the basilic vein in the medial arm on ultrasound; not seen on routine imaging. Its territory is the medial forearm skin.",
-  "pathology": [
-   {
-    "pathology": "Lower trunk or medial cord plexopathy",
-    "modality": "EMG/NCS",
-    "finding": "Absent or reduced medial antebrachial cutaneous sensory potential with abnormal ulnar studies and denervation in C8-T1 muscles of several nerves.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Neurogenic thoracic outlet syndrome",
-    "modality": "MRI",
-    "finding": "Fibrous band or cervical rib compressing the lower trunk; the medial antebrachial cutaneous potential is characteriztically reduced.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Iatrogenic injury at venepuncture",
-    "modality": "US",
-    "finding": "Neuroma of the nerve beside the basilic vein with a painful Tinel sign at the antecubital fossa.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Numbness of the medial forearm",
-    "side": "ipsilateral",
-    "mechanism": "Interruption of the nerve or of the medial cord and lower trunk"
-   },
-   {
-    "deficit": "Painful neuroma after venepuncture",
-    "side": "ipsilateral",
-    "mechanism": "Injury of the nerve where it accompanies the basilic vein"
-   },
-   {
-    "deficit": "No motor deficit",
-    "side": "n/a",
-    "mechanism": "The nerve is purely sensory"
-   }
-  ],
-  "examination": [
-   "Test light touch on the medial forearm as well as the little finger in any patient with an ulnar-pattern hand",
-   "Nerve conduction study of the medial antebrachial cutaneous sensory response",
-   "Look for a cervical rib and a Horner syndrome when the forearm is numb with the hand"
-  ],
-  "syndromes": [
-   "syn-klumpke",
-   "syn-neurogenic-thoracic-outlet",
-   "syn-cubital-tunnel"
-  ],
-  "pearls": [
-   "Numb forearm plus numb little finger means plexus; numb little finger alone means the ulnar nerve",
-   "The medial antebrachial cutaneous potential is the electrophysiologist's plexus test",
-   "A painful lump at the site of a blood test may be this nerve's neuroma"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The medial antebrachial cutaneous nerve is a sensory branch of the medial cord of the brachial plexus (C8, T1) that runs down the medial arm with the basilic vein, pierces the deep fascia at the middle of the arm and divides into anterior and posterior branches that supply the skin of the medial forearm from the elbow to the wrist. It is the sensory territory that distinguishes a lower trunk or medial cord plexus lesion from an ulnar neuropathy: the ulnar nerve does not supply the forearm skin, so numbness of the medial forearm with a weak, numb hand means the lesion is in the plexus (Klumpke palsy, neurogenic thoracic outlet syndrome, Pancoast tumor), not at the elbow. Its sensory potential is the electrophysiological marker of that distinction.",
+  "anatomy": {
+    "location": "Arises from the medial cord in the axilla, descends medial to the brachial artery and then with the basilic vein, pierces the deep fascia with the vein above the elbow and divides into anterior and posterior branches over the medial epicondyle to supply the medial half of the forearm skin down to the wrist.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Purely sensory, it carries touch, pain and temperature from the medial forearm through the medial cord and lower trunk to the C8 and T1 dorsal root ganglia; its territory is the key to separating lower plexus lesions from ulnar neuropathy, because the ulnar nerve's sensory supply stops at the wrist, and a normal medial antebrachial cutaneous sensory potential with an abnormal ulnar one places the lesion in the ulnar nerve, whereas both abnormal places it in the medial cord or lower trunk. It is injured by axillary surgery and by venepuncture and cannulation of the basilic vein, producing a painful neuroma, and it is harvested as a graft.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "medial-antebrachial-cutaneous-nerve-l"
+        },
+        "label": "medial antebrachial cutaneous nerve along the medial arm"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "medial-antebrachial-cutaneous-nerve-r"
+        },
+        "label": "nerve beside the basilic vein above the elbow"
+      }
+    ],
+    "normalAppearance": "A thin nerve accompanying the basilic vein in the medial arm on ultrasound; not seen on routine imaging. Its territory is the medial forearm skin.",
+    "pathology": [
+      {
+        "pathology": "Lower trunk or medial cord plexopathy",
+        "modality": "EMG/NCS",
+        "finding": "Absent or reduced medial antebrachial cutaneous sensory potential with abnormal ulnar studies and denervation in C8-T1 muscles of several nerves.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Neurogenic thoracic outlet syndrome",
+        "modality": "MRI",
+        "finding": "Fibrous band or cervical rib compressing the lower trunk; the medial antebrachial cutaneous potential is characteriztically reduced.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Iatrogenic injury at venepuncture",
+        "modality": "US",
+        "finding": "Neuroma of the nerve beside the basilic vein with a painful Tinel sign at the antecubital fossa.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Numbness of the medial forearm",
+        "side": "ipsilateral",
+        "mechanism": "Interruption of the nerve or of the medial cord and lower trunk"
+      },
+      {
+        "deficit": "Painful neuroma after venepuncture",
+        "side": "ipsilateral",
+        "mechanism": "Injury of the nerve where it accompanies the basilic vein"
+      },
+      {
+        "deficit": "No motor deficit",
+        "side": "n/a",
+        "mechanism": "The nerve is purely sensory"
+      }
+    ],
+    "examination": [
+      "Test light touch on the medial forearm as well as the little finger in any patient with an ulnar-pattern hand",
+      "Nerve conduction study of the medial antebrachial cutaneous sensory response",
+      "Look for a cervical rib and a Horner syndrome when the forearm is numb with the hand"
+    ],
+    "syndromes": [
+      "syn-klumpke",
+      "syn-neurogenic-thoracic-outlet",
+      "syn-cubital-tunnel"
+    ],
+    "pearls": [
+      "Numb forearm plus numb little finger means plexus; numb little finger alone means the ulnar nerve",
+      "The medial antebrachial cutaneous potential is the electrophysiologist's plexus test",
+      "A painful lump at the site of a blood test may be this nerve's neuroma"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-medial-antebrachial-cutaneous-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-medial-brachial-cutaneous-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-forearm-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C8-T1"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C8-T1"
- }
 }

@@ -5,6 +5,7 @@ cd "$(dirname "$0")/.."
 echo "== blender export $(date)"; blender/.venv/bin/python blender/export_zanatomy.py
 cd pipeline
 echo "== atlas meshes $(date)"; uv run atlas-atlas-meshes --force
+echo "== venat veins $(date)"; uv run atlas-venat
 echo "== bp3d meshes $(date)"; uv run atlas-bp3d-meshes
 echo "== zanatomy meshes $(date)"; uv run atlas-zanatomy-meshes
 echo "== manifest $(date)"; uv run atlas-manifest

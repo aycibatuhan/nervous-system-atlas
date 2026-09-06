@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-semantic-dementia",
- "term": "Semantic dementia",
- "definition": "Progressive loss of the meaning of words and of knowledge about objects and people with fluent, empty speech, from asymmetric anterior temporal lobe atrophy; a variant of frontotemporal lobar degeneration.",
- "related": [
-  "g-logopenic-aphasia",
-  "g-posterior-cortical-atrophy"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-semantic-dementia",
+  "term": "Semantic dementia",
+  "definition": "Progressive loss of the meaning of words and of knowledge about objects and people with fluent, empty speech, from asymmetric anterior temporal lobe atrophy; a variant of frontotemporal lobar degeneration.",
+  "related": [
+    "g-logopenic-aphasia",
+    "g-posterior-cortical-atrophy"
+  ],
+  "citations": [
+    {
+      "ref": "sp-primary-progressive-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-frontotemporal-lobe-dementia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    }
+  ]
 }

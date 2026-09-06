@@ -1,139 +1,131 @@
 {
- "kind": "syndrome",
- "id": "syn-poliomyelitis",
- "name": "Poliomyelitis and anterior horn cell disease",
- "eponyms": [
-  "infantile paralysis",
-  "acute flaccid myelitis"
- ],
- "category": "infectious",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "spinal-grey-anterior-horn",
-   "motor-unit",
-   "nucleus-ambiguus",
-   "hypoglossal-nucleus"
+  "kind": "syndrome",
+  "id": "syn-poliomyelitis",
+  "name": "Poliomyelitis and anterior horn cell disease",
+  "eponyms": [
+    "infantile paralysis",
+    "acute flaccid myelitis"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -150
+  "category": "infectious",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "spinal-grey-anterior-horn",
+      "motor-unit",
+      "nucleus-ambiguus",
+      "hypoglossal-nucleus"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 10
- },
- "presentation": "A child, unvaccinated or in an outbreak, has a febrile illness with headache and neck stiffness and then, over a day or two, develops weakness that is patchy and asymmetric, worse in the legs, with pain and fasciculation in the affected muscles. The weak limbs are flaccid and areflexic but sensation is normal and the bladder recovers quickly. Decades later some survivors develop new weakness and fatigue in the same muscles, the post-polio syndrome. Enterovirus and West Nile virus now produce the same picture.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "limbs, asymmetric and patchy, proximal and legs more than arms",
-   "sign": "Acute flaccid paralysis with wasting and fasciculation; no sensory loss",
-   "substrate": "spinal-grey-anterior-horn"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -150
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "affected limbs",
-   "sign": "Areflexia in the paralyzed muscles",
-   "substrate": "spinal-grey-anterior-horn"
+  "presentation": "A child, unvaccinated or in an outbreak, has a febrile illness with headache and neck stiffness and then, over a day or two, develops weakness that is patchy and asymmetric, worse in the legs, with pain and fasciculation in the affected muscles. The weak limbs are flaccid and areflexic but sensation is normal and the bladder recovers quickly. Decades later some survivors develop new weakness and fatigue in the same muscles, the post-polio syndrome. Enterovirus and West Nile virus now produce the same picture.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "limbs, asymmetric and patchy, proximal and legs more than arms",
+      "sign": "Acute flaccid paralysis with wasting and fasciculation; no sensory loss",
+      "substrate": "spinal-grey-anterior-horn"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "affected limbs",
+      "sign": "Areflexia in the paralyzed muscles",
+      "substrate": "spinal-grey-anterior-horn"
+    },
+    {
+      "modality": "bulbar",
+      "side": "bilateral",
+      "distribution": "palate, pharynx, larynx, face",
+      "sign": "Bulbar palsy with dysphagia and respiratory failure in the bulbar form",
+      "substrate": "nucleus-ambiguus"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "n/a",
+      "distribution": "spared",
+      "sign": "Normal sensation, the key feature separating it from Guillain–Barré and myelitis",
+      "substrate": "pathway-dcml"
+    }
+  ],
+  "reasoning": "Poliovirus, an enterovirus that enters through the gut, spreads to the central nervous system and infects the large motor neurons of the anterior horn and the motor nuclei of the brainstem selectively, destroying them and producing a purely lower motor neuron paralysis. The anterior horn cell is the final common pathway to muscle, so its death causes flaccid weakness with loss of the stretch reflex, whose efferent limb it forms, and denervation with wasting and fasciculation, while the sensory pathways, the dorsal horn and the long tracts are spared, so sensation is normal. Because the virus attacks scattered groups of motor neurons at different segments, the paralysis is asymmetric and patchy rather than following a level, unlike myelitis, and each side is affected independently, so there is no crossed or lateralized rule; the lumbar enlargement is affected most, and the bulbar nuclei in a minority, where involvement of the nucleus ambiguus and the respiratory centers is life-threatening. The preceding meningitic phase reflects the viral meningitis that accompanies the neuronal invasion. Surviving motor neurons sprout to re-innervate orphaned fibers, forming giant motor units; their later exhaustion after decades of overuse is the post-polio syndrome. Other enteroviruses (EV-D68, EV-A71), West Nile virus and spinal muscular atrophy produce the same anterior horn pattern by infection or degeneration.",
+  "imagingFindings": [
+    {
+      "pathology": "Acute anterior horn involvement",
+      "modality": "MRI",
+      "finding": "T2 hyperintensity of the anterior horns (gray matter) over several segments, often asymmetric, without white matter change; brainstem nuclei may enhance in the bulbar form.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Viral meningitis phase",
+      "modality": "LP/CSF",
+      "finding": "Lymphocytic pleocytosis with mildly raised protein; virus isolated from stool or throat, PCR of CSF for enteroviruses and West Nile virus.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Acute denervation in a patchy multisegmental distribution with normal sensory conduction; later giant motor units from reinnervation.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Poliovirus types 1–3 (wild or vaccine-derived)",
+    "Non-polio enteroviruses (EV-D68, EV-A71) causing acute flaccid myelitis",
+    "West Nile virus",
+    "Spinal muscular atrophy (genetic, symmetric)"
+  ],
+  "mimics": [
+    {
+      "name": "Guillain–Barré syndrome",
+      "howToDistinguish": "Symmetric, ascending, with sensory symptoms and raised CSF protein without cells; no fever at onset"
+    },
+    {
+      "name": "Transverse myelitis",
+      "howToDistinguish": "Sensory level, sphincter involvement, upper motor neuron signs later"
+    },
+    {
+      "name": "Botulism",
+      "howToDistinguish": "Descending paralysis with ophthalmoplegia and dilated pupils"
+    },
+    {
+      "name": "Amyotrophic lateral sclerosis",
+      "howToDistinguish": "Chronic, with upper motor neuron signs"
+    }
+  ],
+  "management": [
+    "Isolate the patient, notify public health, collect stool and CSF for virus identification; supportive care with respiratory monitoring",
+    "Physiotherapy and orthoses; avoid overexertion of weak muscles",
+    "Vaccination of contacts; recognize post-polio syndrome and manage fatigue and new weakness conservatively"
+  ],
+  "citations": [
+    {
+      "ref": "sp-poliomyelitis",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-acute-flaccid-myelitis",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -150
+    },
+    "label": "anterior horns of the lumbar enlargement"
   },
-  {
-   "modality": "bulbar",
-   "side": "bilateral",
-   "distribution": "palate, pharynx, larynx, face",
-   "sign": "Bulbar palsy with dysphagia and respiratory failure in the bulbar form",
-   "substrate": "nucleus-ambiguus"
-  },
-  {
-   "modality": "sensory-light-touch",
-   "side": "n/a",
-   "distribution": "spared",
-   "sign": "Normal sensation, the key feature separating it from Guillain–Barré and myelitis",
-   "substrate": "pathway-dcml"
-  }
- ],
- "reasoning": "Poliovirus, an enterovirus that enters through the gut, spreads to the central nervous system and infects the large motor neurons of the anterior horn and the motor nuclei of the brainstem selectively, destroying them and producing a purely lower motor neuron paralysis. The anterior horn cell is the final common pathway to muscle, so its death causes flaccid weakness with loss of the stretch reflex, whose efferent limb it forms, and denervation with wasting and fasciculation, while the sensory pathways, the dorsal horn and the long tracts are spared, so sensation is normal. Because the virus attacks scattered groups of motor neurons at different segments, the paralysis is asymmetric and patchy rather than following a level, unlike myelitis, and each side is affected independently, so there is no crossed or lateralized rule; the lumbar enlargement is affected most, and the bulbar nuclei in a minority, where involvement of the nucleus ambiguus and the respiratory centers is life-threatening. The preceding meningitic phase reflects the viral meningitis that accompanies the neuronal invasion. Surviving motor neurons sprout to re-innervate orphaned fibers, forming giant motor units; their later exhaustion after decades of overuse is the post-polio syndrome. Other enteroviruses (EV-D68, EV-A71), West Nile virus and spinal muscular atrophy produce the same anterior horn pattern by infection or degeneration.",
- "imagingFindings": [
-  {
-   "pathology": "Acute anterior horn involvement",
-   "modality": "MRI",
-   "finding": "T2 hyperintensity of the anterior horns (gray matter) over several segments, often asymmetric, without white matter change; brainstem nuclei may enhance in the bulbar form.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Viral meningitis phase",
-   "modality": "LP/CSF",
-   "finding": "Lymphocytic pleocytosis with mildly raised protein; virus isolated from stool or throat, PCR of CSF for enteroviruses and West Nile virus.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Acute denervation in a patchy multisegmental distribution with normal sensory conduction; later giant motor units from reinnervation.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Poliovirus types 1–3 (wild or vaccine-derived)",
-  "Non-polio enteroviruses (EV-D68, EV-A71) causing acute flaccid myelitis",
-  "West Nile virus",
-  "Spinal muscular atrophy (genetic, symmetric)"
- ],
- "mimics": [
-  {
-   "name": "Guillain–Barré syndrome",
-   "howToDistinguish": "Symmetric, ascending, with sensory symptoms and raised CSF protein without cells; no fever at onset"
-  },
-  {
-   "name": "Transverse myelitis",
-   "howToDistinguish": "Sensory level, sphincter involvement, upper motor neuron signs later"
-  },
-  {
-   "name": "Botulism",
-   "howToDistinguish": "Descending paralysis with ophthalmoplegia and dilated pupils"
-  },
-  {
-   "name": "Amyotrophic lateral sclerosis",
-   "howToDistinguish": "Chronic, with upper motor neuron signs"
-  }
- ],
- "management": [
-  "Isolate the patient, notify public health, collect stool and CSF for virus identification; supportive care with respiratory monitoring",
-  "Physiotherapy and orthoses; avoid overexertion of weak muscles",
-  "Vaccination of contacts; recognize post-polio syndrome and manage fatigue and new weakness conservatively"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    166,
-    166
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    169,
-    169
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -150
-  },
-  "label": "anterior horns of the lumbar enlargement"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

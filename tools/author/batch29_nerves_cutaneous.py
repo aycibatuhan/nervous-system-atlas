@@ -1,9 +1,8 @@
 import sys, pathlib, json; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from corlib import *
 E = []
-S = lambda ch, a, b=None: C("snell", ch, a, b)
-B = lambda ch, a, b=None: C("berkowitz", ch, a, b)
-UL = [S(3, 111, 120), B(16, 141, 156)]; LL = [S(3, 111, 120), B(17, 157, 166)]
+UL = [R("sp-brachial-plexus"), R("sp-spinal-nerves"), R("sp-peripheral-nerve-injury")]
+LL = [R("sp-back-lumbar-plexus"), R("sp-spinal-nerves"), R("sp-peripheral-nerve-injury")]
 def nerve(id, name, limb, mesh, roots, summary, course, function, views, normal, paths, lesion, exam, pearls, cites, **kw):
     kw.setdefault("parent", "plexus-brachial" if limb == "upper-limb" else "plexus-lumbosacral"); kw.setdefault("tags", ["peripheral nerve", "cutaneous"])
     kw.setdefault("territories", []); kw.setdefault("syndromes", [])

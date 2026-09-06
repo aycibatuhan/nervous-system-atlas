@@ -1,147 +1,127 @@
 {
- "kind": "structure",
- "id": "hypothalamus-posterior",
- "name": "Posterior hypothalamic nucleus",
- "synonyms": [
-  "posterior hypothalamic area",
-  "heat-production center"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-posterior-l",
-  "hypothalamus-posterior-r"
- ],
- "summary": "The posterior hypothalamic nucleus occupies the caudal hypothalamus above and behind the mammillary bodies, in front of the periaqueductal gray of the midbrain with which it is continuous. It is the heat-production and sympathetic center: it drives shivering, cutaneous vasoconstriction and brown fat thermogenesis in the cold and raises heart rate and blood pressure in defense and stress, and with the neighboring tuberomammillary and orexin systems it supports arousal. Bilateral lesions produce poikilothermia, in which the patient's temperature drifts with the room, together with somnolence, and stimulation of the region has been used to treat cluster headache, whose attacks are timed by this area.",
- "anatomy": {
-  "location": "Caudal medial hypothalamus dorsal to the mammillary bodies and behind the dorsomedial nucleus, beside the posterior third ventricle beneath the thalamus, continuous behind with the midbrain periaqueductal gray and the ventral tegmental area.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Posterior hypothalamic neurons receive cold signals from the preoptic area and the spinal cord and drive the sympathetic premotor neurons of the rostral ventrolateral medulla and the raphe pallidus to produce vasoconstriction, piloerection, shivering and thermogenesis; they also raise cardiac output and blood pressure during exercise, stress and the defense reaction and participate in the pressor response to hypoxia. The region is part of the ascending arousal system through its projections to the thalamus and cortex and its interaction with the histaminergic tuberomammillary nucleus and the orexin neurons. It also relays hippocampal and mammillary information to the midbrain and contributes to the timing of cluster headache attacks.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-posterior",
+  "name": "Posterior hypothalamic nucleus",
+  "synonyms": [
+    "posterior hypothalamic area",
+    "heat-production center"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-posterior-l"
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-posterior-l",
+    "hypothalamus-posterior-r"
+  ],
+  "summary": "The posterior hypothalamic nucleus occupies the caudal hypothalamus above and behind the mammillary bodies, in front of the periaqueductal gray of the midbrain with which it is continuous. It is the heat-production and sympathetic center: it drives shivering, cutaneous vasoconstriction and brown fat thermogenesis in the cold and raises heart rate and blood pressure in defense and stress, and with the neighboring tuberomammillary and orexin systems it supports arousal. Bilateral lesions produce poikilothermia, in which the patient's temperature drifts with the room, together with somnolence, and stimulation of the region has been used to treat cluster headache, whose attacks are timed by this area.",
+  "anatomy": {
+    "location": "Caudal medial hypothalamus dorsal to the mammillary bodies and behind the dorsomedial nucleus, beside the posterior third ventricle beneath the thalamus, continuous behind with the midbrain periaqueductal gray and the ventral tegmental area.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Posterior hypothalamic neurons receive cold signals from the preoptic area and the spinal cord and drive the sympathetic premotor neurons of the rostral ventrolateral medulla and the raphe pallidus to produce vasoconstriction, piloerection, shivering and thermogenesis; they also raise cardiac output and blood pressure during exercise, stress and the defense reaction and participate in the pressor response to hypoxia. The region is part of the ascending arousal system through its projections to the thalamus and cortex and its interaction with the histaminergic tuberomammillary nucleus and the orexin neurons. It also relays hippocampal and mammillary information to the midbrain and contributes to the timing of cluster headache attacks.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-posterior-l"
+        },
+        "label": "posterior hypothalamic nucleus above the mammillary bodies"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-posterior-r"
+        },
+        "label": "caudal hypothalamus in front of the midbrain"
+      }
+    ],
+    "normalAppearance": "Gray matter above the mammillary bodies and below the thalamus on midline sagittal images, merging with the midbrain tegmentum; not a distinct structure on clinical MRI.",
+    "pathology": [
+      {
+        "pathology": "Poikilothermia after posterior hypothalamic injury",
+        "modality": "MRI",
+        "finding": "Lesion of the caudal hypothalamus from trauma, tumor or surgery with loss of temperature regulation and somnolence.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Cluster headache (functional imaging)",
+        "modality": "PET",
+        "finding": "Activation of the posterior hypothalamic gray during attacks; structural imaging is normal, and the region is a deep brain stimulation target for refractory cases.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetric FLAIR signal in the mammillary bodies, periaqueductal gray and posterior hypothalamus with hypothermia and reduced consciousness.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Poikilothermia and hypothermia",
+        "side": "bilateral",
+        "mechanism": "Loss of the heat-production and sympathetic thermoregulatory center"
+      },
+      {
+        "deficit": "Somnolence",
+        "side": "bilateral",
+        "mechanism": "Loss of the posterior hypothalamic contribution to arousal"
+      },
+      {
+        "deficit": "Hypotension and impaired cardiovascular stress response",
+        "side": "bilateral",
+        "mechanism": "Loss of sympathetic premotor drive"
+      }
+    ],
+    "examination": [
+      "Core temperature in relation to ambient temperature",
+      "Level of alertness and sleep-wake pattern",
+      "Orthostatic blood pressure and heart rate"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Posterior hypothalamic damage makes the patient a cold-blooded animal: warm the room, warm the patient",
+      "Cluster headache keeps hypothalamic time, striking at the same hour each night",
+      "Thiamine deficiency hits the mammillary and posterior hypothalamic region: hypothermia is a sign of Wernicke encephalopathy"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
     },
-    "label": "posterior hypothalamic nucleus above the mammillary bodies"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-posterior-r"
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
     },
-    "label": "caudal hypothalamus in front of the midbrain"
-   }
+    {
+      "ref": "sp-heat-loss",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "Gray matter above the mammillary bodies and below the thalamus on midline sagittal images, merging with the midbrain tegmentum; not a distinct structure on clinical MRI.",
-  "pathology": [
-   {
-    "pathology": "Poikilothermia after posterior hypothalamic injury",
-    "modality": "MRI",
-    "finding": "Lesion of the caudal hypothalamus from trauma, tumor or surgery with loss of temperature regulation and somnolence.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Cluster headache (functional imaging)",
-    "modality": "PET",
-    "finding": "Activation of the posterior hypothalamic gray during attacks; structural imaging is normal, and the region is a deep brain stimulation target for refractory cases.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetric FLAIR signal in the mammillary bodies, periaqueductal gray and posterior hypothalamus with hypothermia and reduced consciousness.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Poikilothermia and hypothermia",
-    "side": "bilateral",
-    "mechanism": "Loss of the heat-production and sympathetic thermoregulatory center"
-   },
-   {
-    "deficit": "Somnolence",
-    "side": "bilateral",
-    "mechanism": "Loss of the posterior hypothalamic contribution to arousal"
-   },
-   {
-    "deficit": "Hypotension and impaired cardiovascular stress response",
-    "side": "bilateral",
-    "mechanism": "Loss of sympathetic premotor drive"
-   }
-  ],
-  "examination": [
-   "Core temperature in relation to ambient temperature",
-   "Level of alertness and sleep-wake pattern",
-   "Orthostatic blood pressure and heart rate"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Posterior hypothalamic damage makes the patient a cold-blooded animal: warm the room, warm the patient",
-   "Cluster headache keeps hypothalamic time, striking at the same hour each night",
-   "Thiamine deficiency hits the mammillary and posterior hypothalamic region: hypothermia is a sign of Wernicke encephalopathy"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 26,
-   "pages": [
-    275,
-    280
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

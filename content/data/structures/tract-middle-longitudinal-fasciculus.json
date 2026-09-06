@@ -1,161 +1,141 @@
 {
- "kind": "structure",
- "id": "tract-middle-longitudinal-fasciculus",
- "name": "Middle longitudinal fasciculus",
- "synonyms": [
-  "MdLF",
-  "temporo-parietal fasciculus"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-middle-longitudinal-fasciculus-l",
-  "tract-middle-longitudinal-fasciculus-r"
- ],
- "summary": "The middle longitudinal fasciculus runs along the superior temporal gyrus beneath its cortex, from the temporal pole and the anterior superior temporal gyrus backward to the angular gyrus and the superior parietal lobule, lying medial to the arcuate fasciculus and lateral to the inferior fronto-occipital fasciculus. It links the auditory and language cortex of the superior temporal gyrus with the multimodal parietal cortex, supporting the integration of language with spatial and attentional processing, and it is thought to carry sentence-level and auditory-spatial information; its lesions contribute to comprehension deficits, to auditory neglect and to the temporo-parietal disconnection seen after posterior MCA infarcts and temporal gliomas.",
- "anatomy": {
-  "location": "From the temporal pole and the anterior superior temporal gyrus, backward within the white matter of the superior temporal gyrus and the superior temporal sulcus, medial to the arcuate fasciculus and lateral to the IFOF, to the angular gyrus, the posterior inferior parietal lobule and the superior parietal lobule.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Temporal pole and anterior superior temporal gyrus",
-    "via": "anterior origin"
-   }
+  "kind": "structure",
+  "id": "tract-middle-longitudinal-fasciculus",
+  "name": "Middle longitudinal fasciculus",
+  "synonyms": [
+    "MdLF",
+    "temporo-parietal fasciculus"
   ],
-  "efferents": [
-   {
-    "to": "Angular gyrus and superior parietal lobule",
-    "via": "posterior termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-middle-longitudinal-fasciculus-l",
+    "tract-middle-longitudinal-fasciculus-r"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "It connects the auditory association cortex and the anterior temporal semantic system with the inferior and superior parietal cortex, allowing the integration of heard language with visuospatial attention and with the body schema; on the left it contributes to the comprehension of sentences and to reading through the angular gyrus, and on the right to the localization of sounds in space and to auditory attention. The bundle is a third component of the perisylvian language system alongside the arcuate and the IFOF, and its disconnection adds to the comprehension deficit of temporo-parietal lesions and produces auditory neglect and extinction on the right.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division"
-  ],
-  "territories": [
-   "territory-mca-temporal",
-   "territory-mca-parietal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "tract-middle-longitudinal-fasciculus-l"
+  "summary": "The middle longitudinal fasciculus runs along the superior temporal gyrus beneath its cortex, from the temporal pole and the anterior superior temporal gyrus backward to the angular gyrus and the superior parietal lobule, lying medial to the arcuate fasciculus and lateral to the inferior fronto-occipital fasciculus. It links the auditory and language cortex of the superior temporal gyrus with the multimodal parietal cortex, supporting the integration of language with spatial and attentional processing, and it is thought to carry sentence-level and auditory-spatial information; its lesions contribute to comprehension deficits, to auditory neglect and to the temporo-parietal disconnection seen after posterior MCA infarcts and temporal gliomas.",
+  "anatomy": {
+    "location": "From the temporal pole and the anterior superior temporal gyrus, backward within the white matter of the superior temporal gyrus and the superior temporal sulcus, medial to the arcuate fasciculus and lateral to the IFOF, to the angular gyrus, the posterior inferior parietal lobule and the superior parietal lobule.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Temporal pole and anterior superior temporal gyrus",
+        "via": "anterior origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Angular gyrus and superior parietal lobule",
+        "via": "posterior termination"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
+  },
+  "function": "It connects the auditory association cortex and the anterior temporal semantic system with the inferior and superior parietal cortex, allowing the integration of heard language with visuospatial attention and with the body schema; on the left it contributes to the comprehension of sentences and to reading through the angular gyrus, and on the right to the localization of sounds in space and to auditory attention. The bundle is a third component of the perisylvian language system alongside the arcuate and the IFOF, and its disconnection adds to the comprehension deficit of temporo-parietal lesions and produces auditory neglect and extinction on the right.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca-temporal",
+      "territory-mca-parietal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "tract-middle-longitudinal-fasciculus-l"
+        },
+        "label": "middle longitudinal fasciculus along the superior temporal gyrus to the angular gyrus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-middle-longitudinal-fasciculus-r"
+        },
+        "label": "MdLF medial to the arcuate fasciculus"
+      }
+    ],
+    "normalAppearance": "Tractography shows a bundle running the length of the superior temporal gyrus into the inferior parietal lobule, medial to the arcuate; not identifiable on conventional MRI.",
+    "pathology": [
+      {
+        "pathology": "Posterior MCA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the posterior superior temporal and inferior parietal white matter with fluent aphasia (left) or auditory neglect (right).",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Temporal glioma",
+        "modality": "MRI",
+        "finding": "Tumor of the superior temporal gyrus displacing the MdLF; awake mapping tests comprehension along it.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Logopenic primary progressive aphasia",
+        "modality": "MRI",
+        "finding": "Temporo-parietal atrophy with degeneration of the MdLF and arcuate terminations.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired sentence comprehension (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of the temporal language cortex from the angular gyrus"
+      },
+      {
+        "deficit": "Auditory neglect and extinction (right)",
+        "side": "contralateral",
+        "mechanism": "Disconnection of auditory-spatial processing from the parietal attention cortex"
+      },
+      {
+        "deficit": "Impaired sound localization",
+        "side": "contralateral",
+        "mechanism": "Loss of temporo-parietal auditory-spatial integration"
+      }
+    ],
+    "examination": [
+      "Comprehension of syntactically complex sentences",
+      "Auditory extinction with sounds presented to both sides",
+      "Sound localization"
+    ],
+    "syndromes": [
+      "syn-aphasia-wernicke",
+      "syn-hemineglect"
+    ],
+    "pearls": [
+      "The MdLF is the third language bundle: arcuate for sound, IFOF for meaning, MdLF for putting language in space",
+      "Auditory neglect is a temporo-parietal disconnection on the right",
+      "The superior temporal gyrus has its own longitudinal bundle beneath the cortex, distinct from the arcuate above it"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
     },
-    "label": "middle longitudinal fasciculus along the superior temporal gyrus to the angular gyrus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-middle-longitudinal-fasciculus-r"
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
     },
-    "label": "MdLF medial to the arcuate fasciculus"
-   }
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "Tractography shows a bundle running the length of the superior temporal gyrus into the inferior parietal lobule, medial to the arcuate; not identifiable on conventional MRI.",
-  "pathology": [
-   {
-    "pathology": "Posterior MCA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the posterior superior temporal and inferior parietal white matter with fluent aphasia (left) or auditory neglect (right).",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Temporal glioma",
-    "modality": "MRI",
-    "finding": "Tumor of the superior temporal gyrus displacing the MdLF; awake mapping tests comprehension along it.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Logopenic primary progressive aphasia",
-    "modality": "MRI",
-    "finding": "Temporo-parietal atrophy with degeneration of the MdLF and arcuate terminations.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired sentence comprehension (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of the temporal language cortex from the angular gyrus"
-   },
-   {
-    "deficit": "Auditory neglect and extinction (right)",
-    "side": "contralateral",
-    "mechanism": "Disconnection of auditory-spatial processing from the parietal attention cortex"
-   },
-   {
-    "deficit": "Impaired sound localization",
-    "side": "contralateral",
-    "mechanism": "Loss of temporo-parietal auditory-spatial integration"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Comprehension of syntactically complex sentences",
-   "Auditory extinction with sounds presented to both sides",
-   "Sound localization"
-  ],
-  "syndromes": [
-   "syn-aphasia-wernicke",
-   "syn-hemineglect"
-  ],
-  "pearls": [
-   "The MdLF is the third language bundle: arcuate for sound, IFOF for meaning, MdLF for putting language in space",
-   "Auditory neglect is a temporo-parietal disconnection on the right",
-   "The superior temporal gyrus has its own longitudinal bundle beneath the cortex, distinct from the arcuate above it"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    108
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "association",
- "parent": "cerebral-white-matter"
+  "status": "draft",
+  "subsystem": "association",
+  "parent": "cerebral-white-matter"
 }

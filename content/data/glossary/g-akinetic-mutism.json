@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-akinetic-mutism",
- "term": "Akinetic mutism",
- "definition": "A state of wakefulness with open eyes and visual tracking but no spontaneous movement or speech, after bilateral anterior cingulate and medial frontal damage or bilateral paramedian thalamic lesions; distinguished from coma by the alert appearance and from the locked-in state by the absence of communicative eye movements.",
- "related": [
-  "g-abulia",
-  "g-locked-in-state"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-akinetic-mutism",
+  "term": "Akinetic mutism",
+  "definition": "A state of wakefulness with open eyes and visual tracking but no spontaneous movement or speech, after bilateral anterior cingulate and medial frontal damage or bilateral paramedian thalamic lesions; distinguished from coma by the alert appearance and from the locked-in state by the absence of communicative eye movements.",
+  "related": [
+    "g-abulia",
+    "g-locked-in-state"
+  ],
+  "citations": [
+    {
+      "ref": "sp-abulia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-coma",
+      "section": "Pathophysiology"
+    }
+  ]
 }

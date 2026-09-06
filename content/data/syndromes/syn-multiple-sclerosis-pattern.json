@@ -1,161 +1,161 @@
 {
- "kind": "syndrome",
- "id": "syn-multiple-sclerosis-pattern",
- "name": "Multiple sclerosis: the pattern of lesions in space and time",
- "eponyms": [
-  "disseminated sclerosis"
- ],
- "category": "demyelinating",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cn-02-optic",
-   "medial-longitudinal-fasciculus",
-   "spinal-white-columns",
-   "corpus-callosum",
-   "corona-radiata",
-   "cerebellum"
+  "kind": "syndrome",
+  "id": "syn-multiple-sclerosis-pattern",
+  "name": "Multiple sclerosis: the pattern of lesions in space and time",
+  "eponyms": [
+    "disseminated sclerosis"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "optic-nerve-l",
-   "corpus-callosum",
-   "brainstem"
-  ]
- },
- "presentation": "A woman in her twenties had an episode of painful blurred vision in one eye three years ago that recovered; last year her legs became numb and stiff for a month; now she has double vision on looking to one side and a band of tingling around her chest, all worse after a hot bath. Examination shows a pale optic disc, an internuclear ophthalmoplegia, brisk reflexes with an extensor plantar, and reduced vibration sense at the ankles. Episodes separated in time and lesions separated in space, in a young adult, define the disease.",
- "deficits": [
-  {
-   "modality": "visual-acuity",
-   "side": "ipsilateral",
-   "distribution": "one eye",
-   "sign": "Optic neuritis: subacute monocular visual loss with pain on eye movement and an afferent pupillary defect; later optic atrophy",
-   "substrate": "cn-02-optic"
+  "category": "demyelinating",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cn-02-optic",
+      "medial-longitudinal-fasciculus",
+      "spinal-white-columns",
+      "corpus-callosum",
+      "corona-radiata",
+      "cerebellum"
+    ],
+    "side": "bilateral"
   },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "adduction",
-   "sign": "Internuclear ophthalmoplegia, often bilateral",
-   "substrate": "medial-longitudinal-fasciculus"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "optic-nerve-l",
+      "corpus-callosum",
+      "brainstem"
+    ]
   },
-  {
-   "modality": "sensory-vibration-proprioception",
-   "side": "bilateral",
-   "distribution": "legs, trunk",
-   "sign": "Partial myelitis: numbness, band-like tightness, Lhermitte sign, useless hand from posterior column lesions",
-   "substrate": "pathway-dcml"
+  "presentation": "A woman in her twenties had an episode of painful blurred vision in one eye three years ago that recovered; last year her legs became numb and stiff for a month; now she has double vision on looking to one side and a band of tingling around her chest, all worse after a hot bath. Examination shows a pale optic disc, an internuclear ophthalmoplegia, brisk reflexes with an extensor plantar, and reduced vibration sense at the ankles. Episodes separated in time and lesions separated in space, in a young adult, define the disease.",
+  "deficits": [
+    {
+      "modality": "visual-acuity",
+      "side": "ipsilateral",
+      "distribution": "one eye",
+      "sign": "Optic neuritis: subacute monocular visual loss with pain on eye movement and an afferent pupillary defect; later optic atrophy",
+      "substrate": "cn-02-optic"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "adduction",
+      "sign": "Internuclear ophthalmoplegia, often bilateral",
+      "substrate": "medial-longitudinal-fasciculus"
+    },
+    {
+      "modality": "sensory-vibration-proprioception",
+      "side": "bilateral",
+      "distribution": "legs, trunk",
+      "sign": "Partial myelitis: numbness, band-like tightness, Lhermitte sign, useless hand from posterior column lesions",
+      "substrate": "pathway-dcml"
+    },
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "legs more than arms",
+      "sign": "Spastic paraparesis with hyperreflexia and extensor plantars; fatigue and Uhthoff phenomenon",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "bilateral",
+      "distribution": "limbs and gait",
+      "sign": "Ataxia, intention tremor, scanning speech",
+      "substrate": "pathway-cerebellar-circuits"
+    },
+    {
+      "modality": "sphincter",
+      "side": "bilateral",
+      "distribution": "bladder",
+      "sign": "Urgency, frequency, incomplete emptying",
+      "substrate": "intermediolateral-column"
+    },
+    {
+      "modality": "cognitive",
+      "side": "bilateral",
+      "distribution": "diffuse",
+      "sign": "Cognitive slowing, depression, fatigue",
+      "substrate": "corona-radiata"
+    }
+  ],
+  "reasoning": "Multiple sclerosis is an immune attack on central myelin that produces focal plaques of demyelination wherever oligodendrocyte myelin lies, with a predilection for the periventricular white matter around the small veins, the corpus callosum, the optic nerves, the brainstem tegmentum around the fourth ventricle and aqueduct, the cerebellar peduncles and the dorsolateral spinal cord. Each plaque blocks or slows conduction in the fibers passing through it, and the symptoms of an attack are those of the pathway interrupted: a plaque in the optic nerve, a central nervous system tract, causes monocular visual loss with an afferent pupillary defect; a plaque in the MLF disconnects the abducens interneurons from the contralateral medial rectus after they have crossed, producing an internuclear ophthalmoplegia, bilateral when the paramedian plaque spans both bundles; a dorsolateral cord plaque interrupts the uncrossed posterior column and the crossed lateral corticospinal tract on one side, giving ipsilateral proprioceptive loss and spasticity below it, often without a complete level; and cerebellar peduncle plaques give ipsilateral ataxia. Because plaques are scattered and each attack strikes a different site, the deficits accumulate in a distribution that no single lesion could produce, the dissemination in space, and because inflammation subsides and conduction partially recovers through remyelination and sodium channel redistribution, attacks remit, the dissemination in time, until progressive axonal loss produces steadily worsening disability. Heat blocks marginal conduction in demyelinated fibers, explaining the worsening in hot baths and the transient Uhthoff phenomenon. MRI now demonstrates dissemination in space and time in a single scan, and CSF oligoclonal bands show the intrathecal immune response. Neuromyelitis optica, with its long cord lesions and severe optic neuritis, and MOG antibody disease are the diseases most easily confused with it and require different treatment.",
+  "imagingFindings": [
+    {
+      "pathology": "Demyelinating plaques",
+      "modality": "MRI",
+      "finding": "Ovoid T2/FLAIR-bright lesions perpendicular to the ventricles (Dawson fingers), in the corpus callosum, juxtacortical, infratentorial (pons, cerebellar peduncles) and spinal cord (short, eccentric, dorsolateral); central vein sign on SWI; hypointense 'black holes' on T1 for axonal loss.",
+      "sequence": "FLAIR"
+    },
+    {
+      "pathology": "Active lesions",
+      "modality": "MRI",
+      "finding": "Gadolinium enhancement, often ring or open-ring, in lesions of the last few weeks; simultaneous enhancing and non-enhancing lesions demonstrate dissemination in time.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Intrathecal immunoglobulin synthesis",
+      "modality": "LP/CSF",
+      "finding": "Oligoclonal bands present in CSF but not serum in over 90% of established cases; mild lymphocytic pleocytosis.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Optic neuritis",
+      "modality": "MRI",
+      "finding": "Short-segment enhancement of the optic nerve; delayed visual evoked potentials afterward.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Multiple sclerosis (relapsing-remitting, secondary progressive, primary progressive)",
+    "Clinically isolated syndrome (first attack)",
+    "Radiologically isolated syndrome"
+  ],
+  "mimics": [
+    {
+      "name": "Neuromyelitis optica spectrum disorder",
+      "howToDistinguish": "Longitudinally extensive myelitis, severe bilateral optic neuritis, area postrema syndrome; aquaporin-4 antibodies"
+    },
+    {
+      "name": "MOG antibody-associated disease",
+      "howToDistinguish": "Bilateral optic neuritis with disc swelling, ADEM-like attacks, good recovery; MOG antibodies"
+    },
+    {
+      "name": "Small vessel ischemic disease",
+      "howToDistinguish": "Older patient with vascular risk factors, subcortical lesions sparing the callosum, no bands"
+    },
+    {
+      "name": "Systemic lupus, sarcoidosis, Behçet, Susac syndrome, CNS lymphoma",
+      "howToDistinguish": "Systemic features, atypical imaging, different CSF"
+    },
+    {
+      "name": "Functional neurological disorder",
+      "howToDistinguish": "Inconsistent signs, normal imaging"
+    }
+  ],
+  "management": [
+    "MRI of the brain and whole spine with contrast, lumbar puncture for oligoclonal bands, aquaporin-4 and MOG antibodies when atypical; apply the McDonald criteria for dissemination in space and time",
+    "High-dose methylprednisolone for disabling relapses; early disease-modifying therapy (from interferons and glatiramer to natalizumab, ocrelizumab, ofatumumab, cladribine) chosen by activity and risk",
+    "Symptomatic care: spasticity, bladder, fatigue, pain, depression; vitamin D, smoking cessation, exercise"
+  ],
+  "citations": [
+    {
+      "ref": "sp-multiple-sclerosis",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-optic-neuritis",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": -5,
+      "y": -20,
+      "z": 20
+    },
+    "label": "periventricular white matter and callosum where plaques cluster"
   },
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "legs more than arms",
-   "sign": "Spastic paraparesis with hyperreflexia and extensor plantars; fatigue and Uhthoff phenomenon",
-   "substrate": "pathway-lateral-corticospinal"
-  },
-  {
-   "modality": "cerebellar",
-   "side": "bilateral",
-   "distribution": "limbs and gait",
-   "sign": "Ataxia, intention tremor, scanning speech",
-   "substrate": "pathway-cerebellar-circuits"
-  },
-  {
-   "modality": "sphincter",
-   "side": "bilateral",
-   "distribution": "bladder",
-   "sign": "Urgency, frequency, incomplete emptying",
-   "substrate": "intermediolateral-column"
-  },
-  {
-   "modality": "cognitive",
-   "side": "bilateral",
-   "distribution": "diffuse",
-   "sign": "Cognitive slowing, depression, fatigue",
-   "substrate": "corona-radiata"
-  }
- ],
- "reasoning": "Multiple sclerosis is an immune attack on central myelin that produces focal plaques of demyelination wherever oligodendrocyte myelin lies, with a predilection for the periventricular white matter around the small veins, the corpus callosum, the optic nerves, the brainstem tegmentum around the fourth ventricle and aqueduct, the cerebellar peduncles and the dorsolateral spinal cord. Each plaque blocks or slows conduction in the fibers passing through it, and the symptoms of an attack are those of the pathway interrupted: a plaque in the optic nerve, a central nervous system tract, causes monocular visual loss with an afferent pupillary defect; a plaque in the MLF disconnects the abducens interneurons from the contralateral medial rectus after they have crossed, producing an internuclear ophthalmoplegia, bilateral when the paramedian plaque spans both bundles; a dorsolateral cord plaque interrupts the uncrossed posterior column and the crossed lateral corticospinal tract on one side, giving ipsilateral proprioceptive loss and spasticity below it, often without a complete level; and cerebellar peduncle plaques give ipsilateral ataxia. Because plaques are scattered and each attack strikes a different site, the deficits accumulate in a distribution that no single lesion could produce, the dissemination in space, and because inflammation subsides and conduction partially recovers through remyelination and sodium channel redistribution, attacks remit, the dissemination in time, until progressive axonal loss produces steadily worsening disability. Heat blocks marginal conduction in demyelinated fibers, explaining the worsening in hot baths and the transient Uhthoff phenomenon. MRI now demonstrates dissemination in space and time in a single scan, and CSF oligoclonal bands show the intrathecal immune response. Neuromyelitis optica, with its long cord lesions and severe optic neuritis, and MOG antibody disease are the diseases most easily confused with it and require different treatment.",
- "imagingFindings": [
-  {
-   "pathology": "Demyelinating plaques",
-   "modality": "MRI",
-   "finding": "Ovoid T2/FLAIR-bright lesions perpendicular to the ventricles (Dawson fingers), in the corpus callosum, juxtacortical, infratentorial (pons, cerebellar peduncles) and spinal cord (short, eccentric, dorsolateral); central vein sign on SWI; hypointense 'black holes' on T1 for axonal loss.",
-   "sequence": "FLAIR"
-  },
-  {
-   "pathology": "Active lesions",
-   "modality": "MRI",
-   "finding": "Gadolinium enhancement, often ring or open-ring, in lesions of the last few weeks; simultaneous enhancing and non-enhancing lesions demonstrate dissemination in time.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Intrathecal immunoglobulin synthesis",
-   "modality": "LP/CSF",
-   "finding": "Oligoclonal bands present in CSF but not serum in over 90% of established cases; mild lymphocytic pleocytosis.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Optic neuritis",
-   "modality": "MRI",
-   "finding": "Short-segment enhancement of the optic nerve; delayed visual evoked potentials afterward.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Multiple sclerosis (relapsing-remitting, secondary progressive, primary progressive)",
-  "Clinically isolated syndrome (first attack)",
-  "Radiologically isolated syndrome"
- ],
- "mimics": [
-  {
-   "name": "Neuromyelitis optica spectrum disorder",
-   "howToDistinguish": "Longitudinally extensive myelitis, severe bilateral optic neuritis, area postrema syndrome; aquaporin-4 antibodies"
-  },
-  {
-   "name": "MOG antibody-associated disease",
-   "howToDistinguish": "Bilateral optic neuritis with disc swelling, ADEM-like attacks, good recovery; MOG antibodies"
-  },
-  {
-   "name": "Small vessel ischemic disease",
-   "howToDistinguish": "Older patient with vascular risk factors, subcortical lesions sparing the callosum, no bands"
-  },
-  {
-   "name": "Systemic lupus, sarcoidosis, Behçet, Susac syndrome, CNS lymphoma",
-   "howToDistinguish": "Systemic features, atypical imaging, different CSF"
-  },
-  {
-   "name": "Functional neurological disorder",
-   "howToDistinguish": "Inconsistent signs, normal imaging"
-  }
- ],
- "management": [
-  "MRI of the brain and whole spine with contrast, lumbar puncture for oligoclonal bands, aquaporin-4 and MOG antibodies when atypical; apply the McDonald criteria for dissemination in space and time",
-  "High-dose methylprednisolone for disabling relapses; early disease-modifying therapy (from interferons and glatiramer to natalizumab, ocrelizumab, ofatumumab, cladribine) chosen by activity and risk",
-  "Symptomatic care: spasticity, bladder, fatigue, pain, depression; vitamin D, smoking cessation, exercise"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 21,
-   "pages": [
-    223,
-    228
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": -5,
-   "y": -20,
-   "z": 20
-  },
-  "label": "periventricular white matter and callosum where plaques cluster"
- },
- "cameraPreset": "medial-l"
+  "cameraPreset": "medial-l"
 }

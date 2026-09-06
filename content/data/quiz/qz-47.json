@@ -1,63 +1,63 @@
 {
- "kind": "quiz",
- "id": "qz-47",
- "type": "identify",
- "vignette": "After removal of a medial frontal tumor a 40-year-old woman is mute and does not move her right arm for a week, then recovers fully over the following month. Repetition, when she began to speak, was normal from the start.",
- "stem": "What is the explanation?",
- "options": [
-  {
-   "key": "A",
-   "text": "Broca aphasia from the pars opercularis"
-  },
-  {
-   "key": "B",
-   "text": "Supplementary motor area syndrome with frontal aslant tract disconnection"
-  },
-  {
-   "key": "C",
-   "text": "Corticospinal tract infarct"
-  },
-  {
-   "key": "D",
-   "text": "Conduction aphasia"
-  },
-  {
-   "key": "E",
-   "text": "Anterior cerebral artery infarct of the paracentral lobule"
-  }
- ],
- "answer": "B",
- "explanation": "Transient mutism and contralateral akinesia after medial frontal surgery, with preserved repetition and full recovery in weeks, is the supplementary motor area syndrome: the SMA and its frontal aslant connection to the inferior frontal gyrus initiate speech and movement, and the lateral cortex takes over as they recover.",
- "targets": {
-  "structureIds": [
-   "cortex-supplementary-motor",
-   "tract-frontal-aslant"
+  "kind": "quiz",
+  "id": "qz-47",
+  "type": "identify",
+  "vignette": "After removal of a medial frontal tumor a 40-year-old woman is mute and does not move her right arm for a week, then recovers fully over the following month. Repetition, when she began to speak, was normal from the start.",
+  "stem": "What is the explanation?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Broca aphasia from the pars opercularis"
+    },
+    {
+      "key": "B",
+      "text": "Supplementary motor area syndrome with frontal aslant tract disconnection"
+    },
+    {
+      "key": "C",
+      "text": "Corticospinal tract infarct"
+    },
+    {
+      "key": "D",
+      "text": "Conduction aphasia"
+    },
+    {
+      "key": "E",
+      "text": "Anterior cerebral artery infarct of the paracentral lobule"
+    }
   ],
-  "syndromeIds": [],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cortex-supplementary-motor-l",
-  "tract-frontal-aslant-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    34
-   ]
+  "answer": "B",
+  "explanation": "Transient mutism and contralateral akinesia after medial frontal surgery, with preserved repetition and full recovery in weeks, is the supplementary motor area syndrome: the SMA and its frontal aslant connection to the inferior frontal gyrus initiate speech and movement, and the lateral cortex takes over as they recover.",
+  "targets": {
+    "structureIds": [
+      "cortex-supplementary-motor",
+      "tract-frontal-aslant"
+    ],
+    "syndromeIds": [],
+    "pathwayIds": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  }
- ],
- "original": true
+  "highlightOnReveal": [
+    "cortex-supplementary-motor-l",
+    "tract-frontal-aslant-l"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-motor-cortical",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-apraxia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-frontal-cortex",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

@@ -1,120 +1,116 @@
 {
- "kind": "syndrome",
- "id": "syn-aphasia-broca",
- "name": "Broca (expressive, non-fluent) aphasia",
- "eponyms": [
-  "motor aphasia"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "area-broca",
-   "lobe-frontal",
-   "artery-mca-superior-division",
-   "gyrus-precentral"
+  "kind": "syndrome",
+  "id": "syn-aphasia-broca",
+  "name": "Broca (expressive, non-fluent) aphasia",
+  "eponyms": [
+    "motor aphasia"
   ],
-  "side": "left"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -48,
-   "y": 15,
-   "z": 15
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "area-broca",
+      "lobe-frontal",
+      "artery-mca-superior-division",
+      "gyrus-precentral"
+    ],
+    "side": "left"
   },
-  "radiusMm": 10
- },
- "presentation": "Speech is effortful, slow and reduced to a few content words with the grammar stripped out ('go... hospital... wife'), and repeating a sentence is as hard as producing one. Comprehension of conversation is good, though complex grammatical sentences ('the lion was killed by the tiger; which animal died?') may defeat the patient. Writing is as impaired as speech. There is usually right facial and arm weakness, and the patient is frustrated and aware of the problem.",
- "deficits": [
-  {
-   "modality": "language",
-   "side": "n/a",
-   "distribution": "dominant frontal",
-   "sign": "Non-fluent, agrammatic speech with impaired repetition and naming, relatively preserved comprehension",
-   "substrate": "area-broca"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -48,
+      "y": 15,
+      "z": 15
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "face and arm",
-   "sign": "Right brachiofacial weakness from the adjacent motor cortex",
-   "substrate": "pathway-corticobulbar"
+  "presentation": "Speech is effortful, slow and reduced to a few content words with the grammar stripped out ('go... hospital... wife'), and repeating a sentence is as hard as producing one. Comprehension of conversation is good, though complex grammatical sentences ('the lion was killed by the tiger; which animal died?') may defeat the patient. Writing is as impaired as speech. There is usually right facial and arm weakness, and the patient is frustrated and aware of the problem.",
+  "deficits": [
+    {
+      "modality": "language",
+      "side": "n/a",
+      "distribution": "dominant frontal",
+      "sign": "Non-fluent, agrammatic speech with impaired repetition and naming, relatively preserved comprehension",
+      "substrate": "area-broca"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "face and arm",
+      "sign": "Right brachiofacial weakness from the adjacent motor cortex",
+      "substrate": "pathway-corticobulbar"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "dominant frontal",
+      "sign": "Buccofacial and ideomotor apraxia",
+      "substrate": "cortex-premotor-sma"
+    }
+  ],
+  "reasoning": "Broca's area occupies the pars opercularis and triangularis of the inferior frontal gyrus of the dominant hemisphere, in front of the face area of the motor cortex, and is supplied by the superior division of the middle cerebral artery. It assembles the motor programs for speech and the grammatical structure of sentences, and its connections to Wernicke's area through the arcuate fasciculus are what repetition requires, so speech output and repetition fail together. Comprehension survives because the posterior temporal cortex is in inferior division territory. Language is lateralized to the left hemisphere in almost all right-handers and most left-handers, and the network is entirely uncrossed at the cortical level, so the aphasia itself has no side; the accompanying weakness is contralateral because the corticobulbar and corticospinal fibers from the neighboring motor cortex cross in the brainstem, and the face and arm are affected because they sit next to Broca's area on the lateral convexity. A lesion confined to Broca's area gives a mild, transient deficit; the full persistent syndrome needs a larger infarct reaching the insula and underlying white matter.",
+  "imagingFindings": [
+    {
+      "pathology": "Superior-division infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the left inferior frontal gyrus, frontal operculum and often the insula and precentral gyrus.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Perfusion deficit",
+      "modality": "CT perfusion",
+      "finding": "Hypoperfusion of the left frontal operculum with a small core, common when the aphasia is the dominant deficit."
+    }
+  ],
+  "commonCauses": [
+    "Left MCA superior division infarct",
+    "Left frontal hemorrhage",
+    "Tumor or abscess of the left frontal operculum",
+    "Primary progressive aphasia (agrammatic variant)"
+  ],
+  "mimics": [
+    {
+      "name": "Dysarthria",
+      "howToDistinguish": "Grammar and word choice are normal; only articulation is impaired"
+    },
+    {
+      "name": "Transcortical motor aphasia",
+      "howToDistinguish": "Repetition preserved; lesion in the watershed anterior or superior to Broca's area"
+    },
+    {
+      "name": "Mutism after supplementary motor area lesion",
+      "howToDistinguish": "Recovers within days, no agrammatism"
+    }
+  ],
+  "management": [
+    "Acute stroke treatment",
+    "Early intensive speech and language therapy",
+    "Screen for depression, which is common with awareness of the deficit"
+  ],
+  "citations": [
+    {
+      "ref": "sp-aphasia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-broca-area",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -48,
+      "y": 15,
+      "z": 15
+    },
+    "label": "left inferior frontal gyrus, pars opercularis"
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "dominant frontal",
-   "sign": "Buccofacial and ideomotor apraxia",
-   "substrate": "cortex-premotor-sma"
-  }
- ],
- "reasoning": "Broca's area occupies the pars opercularis and triangularis of the inferior frontal gyrus of the dominant hemisphere, in front of the face area of the motor cortex, and is supplied by the superior division of the middle cerebral artery. It assembles the motor programs for speech and the grammatical structure of sentences, and its connections to Wernicke's area through the arcuate fasciculus are what repetition requires, so speech output and repetition fail together. Comprehension survives because the posterior temporal cortex is in inferior division territory. Language is lateralized to the left hemisphere in almost all right-handers and most left-handers, and the network is entirely uncrossed at the cortical level, so the aphasia itself has no side; the accompanying weakness is contralateral because the corticobulbar and corticospinal fibers from the neighboring motor cortex cross in the brainstem, and the face and arm are affected because they sit next to Broca's area on the lateral convexity. A lesion confined to Broca's area gives a mild, transient deficit; the full persistent syndrome needs a larger infarct reaching the insula and underlying white matter.",
- "imagingFindings": [
-  {
-   "pathology": "Superior-division infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the left inferior frontal gyrus, frontal operculum and often the insula and precentral gyrus.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Perfusion deficit",
-   "modality": "CT perfusion",
-   "finding": "Hypoperfusion of the left frontal operculum with a small core, common when the aphasia is the dominant deficit."
-  }
- ],
- "commonCauses": [
-  "Left MCA superior division infarct",
-  "Left frontal hemorrhage",
-  "Tumor or abscess of the left frontal operculum",
-  "Primary progressive aphasia (agrammatic variant)"
- ],
- "mimics": [
-  {
-   "name": "Dysarthria",
-   "howToDistinguish": "Grammar and word choice are normal; only articulation is impaired"
-  },
-  {
-   "name": "Transcortical motor aphasia",
-   "howToDistinguish": "Repetition preserved; lesion in the watershed anterior or superior to Broca's area"
-  },
-  {
-   "name": "Mutism after supplementary motor area lesion",
-   "howToDistinguish": "Recovers within days, no agrammatism"
-  }
- ],
- "management": [
-  "Acute stroke treatment",
-  "Early intensive speech and language therapy",
-  "Screen for depression, which is common with awareness of the deficit"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    290,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    54,
-    56
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -48,
-   "y": 15,
-   "z": 15
-  },
-  "label": "left inferior frontal gyrus, pars opercularis"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

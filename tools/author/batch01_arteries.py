@@ -2,8 +2,6 @@ import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from lib import *
 
 E = []
-SN17 = lambda a, b=None: C("snell", 17, a, b)
-BK7 = lambda a, b=None: C("berkowitz", 7, a, b)
 
 E.append(structure("artery-internal-carotid", "Internal carotid artery", "arteries", subsystem="anterior-circulation", synonyms=["ICA"], latin="Arteria carotis interna",
  summary="The internal carotid artery is the main feeder of the anterior circulation. It rises from the common carotid bifurcation, enters the skull through the carotid canal, crosses the cavernous sinus and, after piercing the dura medial to the anterior clinoid process, ends by splitting into the anterior and middle cerebral arteries. Its ophthalmic, posterior communicating and anterior choroidal branches leave in the short subarachnoid segment just before that bifurcation.",
@@ -24,7 +22,7 @@ E.append(structure("artery-internal-carotid", "Internal carotid artery", "arteri
  exam=["Auscultate the neck for a carotid bruit and compare pulses", "Fundoscopy for retinal emboli (Hollenhorst plaques) after monocular visual loss", "Look for a small pupil and mild ptosis on the side of neck pain after trauma or chiropractic manipulation"],
  pearls=["Retinal symptoms plus contralateral hemispheric symptoms point to the carotid, because the ophthalmic artery is its first intracranial branch", "A partial Horner syndrome with neck pain is carotid dissection until proven otherwise", "The cavernous segment is why a carotid aneurysm or fistula presents with cranial nerves III, IV, V1, V2 and VI signs"],
  pitfalls=["The absence of a carotid bruit does not exclude a tight stenosis; near-occlusion can be silent", "Tortuous or kinked cervical carotids in the elderly mimic stenosis on a single projection"],
- citations=[SN17(464, 465), C("snell", 15, 421, 424, "Cavernous sinus"), BK7(57, 58), C("berkowitz", 19, 180, 192)],
+ citations=[R("sp-internal-carotid-arteries"), R("sp-carotid-arteries"), R("sp-internal-mammary-arteries")],
  syndromes=["syn-mca-stem-infarct", "syn-horner", "syn-cavernous-sinus"], tags=["vascular", "anterior-circulation"]))
 
 E.append(structure("artery-ophthalmic", "Ophthalmic artery", "arteries", subsystem="anterior-circulation", latin="Arteria ophthalmica",
@@ -42,7 +40,7 @@ E.append(structure("artery-ophthalmic", "Ophthalmic artery", "arteries", subsyst
          ("Altitudinal field loss (upper or lower half)", "ipsilateral", "Ischemia of the optic nerve head supplied by the posterior ciliary arteries (anterior ischemic optic neuropathy)")],
  exam=["Confrontation fields and visual acuity in each eye separately", "Swinging flashlight test for a relative afferent pupillary defect", "Fundoscopy for retinal pallor, emboli or a swollen pale disc"],
  pearls=["Monocular visual loss is a retinal or optic nerve problem; binocular homonymous loss is retrochiasmal", "Amaurosis fugax lasting minutes with complete recovery is a carotid TIA and warrants urgent carotid imaging", "In a patient over 50 with sudden monocular loss and headache, check the ESR for giant cell arteritis before assuming embolism"],
- citations=[SN17(464), C("snell", 17, 473), C("berkowitz", 6, 48, 49), C("berkowitz", 19, 180, 181)],
+ citations=[R("sp-ophthalmic-arteries"), R("sp-cerebral-blood-supply"), R("sp-circle-of-willis")],
  syndromes=["syn-rapd"], tags=["vascular", "vision"]))
 
 E.append(structure("artery-anterior-choroidal", "Anterior choroidal artery", "arteries", subsystem="anterior-circulation", synonyms=["AChA"], latin="Arteria choroidea anterior",
@@ -58,7 +56,7 @@ E.append(structure("artery-anterior-choroidal", "Anterior choroidal artery", "ar
  lesion=[("Hemiparesis of face, arm and leg", "contralateral", "Corticospinal fibres in the posterior limb of the internal capsule"), ("Hemisensory loss", "contralateral", "Thalamocortical fibres passing through the posterior limb"), ("Homonymous hemianopia, sometimes sparing a horizontal sector", "contralateral", "Optic tract, lateral geniculate body and the origin of the optic radiation")],
  exam=["Test face, arm and leg power for a uniform hemiparesis", "Visual fields by confrontation for a homonymous defect", "Compare pin-prick and vibration on both sides"],
  pearls=["The triad hemiplegia, hemianesthesia and hemianopia without cortical signs (no aphasia, no neglect) suggests the anterior choroidal artery", "Wedge-shaped sector sparing of the hemianopia reflects the dual supply of the lateral geniculate body by the anterior and lateral posterior choroidal arteries"],
- citations=[SN17(464, 465), C("snell", 17, 476), C("berkowitz", 6, 50), BK7(53), BK7(60)],
+ citations=[R("sp-anterior-choroidal-arteries"), R("sp-cerebral-blood-supply"), R("sp-circle-of-willis")],
  syndromes=["syn-anterior-choroidal-infarct"], tags=["vascular", "internal-capsule"]))
 
 E.append(structure("artery-aca", "Anterior cerebral artery", "arteries", subsystem="anterior-circulation", synonyms=["ACA"], latin="Arteria cerebri anterior",
@@ -79,7 +77,7 @@ E.append(structure("artery-aca", "Anterior cerebral artery", "arteries", subsyst
  exam=["Test hip flexion and foot dorsiflexion against gravity; compare with shoulder abduction and finger extension", "Check sensation on the foot and shin", "Ask about bladder control and observe initiative and spontaneous speech", "Elicit a grasp reflex by stroking the palm"],
  pearls=["Leg-predominant hemiparesis points to the ACA, arm and face-predominant to the MCA", "Bilateral leg weakness with incontinence after subarachnoid hemorrhage suggests bilateral ACA vasospasm from an AComm aneurysm", "Because Heubner's artery arises from the proximal ACA, a proximal occlusion can add a faciobrachial component via the anterior limb of the internal capsule"],
  pitfalls=["Isolated leg weakness is also seen with a parasagittal meningioma and with a spinal cord lesion; sensory level and reflexes help", "ACA infarcts are much rarer than MCA infarcts and embolic sources should still be sought"],
- citations=[SN17(464, 468), C("snell", 17, 472, 476), C("berkowitz", 4, 39, 40), BK7(57, 59), C("berkowitz", 19, 180, 184)],
+ citations=[R("sp-brain-arteries"), R("sp-circle-of-willis"), R("sp-anterior-cerebral-artery-stroke")],
  syndromes=["syn-aca-infarct"], tags=["vascular", "anterior-circulation"]))
 
 E.append(structure("artery-acom", "Anterior communicating artery", "arteries", subsystem="anterior-circulation", synonyms=["AComm", "ACoA"], latin="Arteria communicans anterior",
@@ -95,7 +93,7 @@ E.append(structure("artery-acom", "Anterior communicating artery", "arteries", s
  lesion=[("Anterograde amnesia with confabulation", "bilateral", "Perforators to the basal forebrain and fornix are lost after rupture, vasospasm or surgery"), ("Bilateral leg weakness and abulia", "bilateral", "Vasospasm of both A2 segments after aneurysmal subarachnoid hemorrhage"), ("Bitemporal or junctional field defect", "bilateral", "Direct compression of the chiasm by a large downward-pointing aneurysm")],
  exam=["Bedside memory testing with delayed recall after subarachnoid hemorrhage", "Leg power and gait once the patient is mobilised", "Confrontation visual fields"],
  pearls=["Thunderclap headache with blood in the interhemispheric fissure points to an AComm aneurysm", "Amnesia and personality change are the signature deficits of AComm aneurysm complications, not hemiparesis"],
- citations=[SN17(465, 468), C("snell", 17, 474), BK7(57), C("berkowitz", 19, 196, 198)],
+ citations=[R("sp-cerebral-aneurysm"), R("sp-brain-arteries"), R("sp-anterior-cerebral-artery-stroke")],
  syndromes=["syn-subarachnoid-hemorrhage"], tags=["vascular", "circle-of-willis"]))
 
 E.append(structure("artery-mca", "Middle cerebral artery", "arteries", subsystem="anterior-circulation", synonyms=["MCA"], latin="Arteria cerebri media",
@@ -116,7 +114,7 @@ E.append(structure("artery-mca", "Middle cerebral artery", "arteries", subsystem
  exam=["Compare arm drift with leg drift: MCA infarcts weaken the arm more than the leg", "Assess speech fluency, comprehension and repetition", "Look for gaze deviation and test for visual and tactile extinction", "Visual fields by confrontation"],
  pearls=["Face and arm weakness plus aphasia or neglect is the MCA; leg-predominant weakness is the ACA", "A dense hemiplegia involving the leg too with an MCA occlusion means the lenticulostriates (internal capsule) are involved, i.e. an M1 occlusion", "Malignant MCA infarction in the young can require decompressive craniectomy within 48 hours"],
  pitfalls=["Isolated hand weakness can be a small cortical MCA branch infarct and is easily mistaken for a peripheral nerve lesion", "Wernicke aphasia without weakness may be labelled confusion or psychosis"],
- citations=[SN17(465, 468), C("snell", 17, 472, 476), C("snell", 17, 482), BK7(55, 59), C("berkowitz", 19, 180, 192)],
+ citations=[R("sp-middle-cerebral-artery"), R("sp-middle-cerebral-artery-stroke"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division", "syn-mca-inferior-division"], tags=["vascular", "anterior-circulation"]))
 
 write(E)

@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-upper-motor-neuron",
- "term": "Upper motor neuron",
- "definition": "The neuron of the motor cortex or brainstem whose axon descends in the corticospinal, corticobulbar or other descending tracts to influence the lower motor neuron. Upper motor neuron lesions cause weakness with spasticity, hyperreflexia, clonus and an extensor plantar response, with little wasting.",
- "related": [
-  "g-lower-motor-neuron",
-  "g-babinski-sign"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    160
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-upper-motor-neuron",
+  "term": "Upper motor neuron",
+  "definition": "The neuron of the motor cortex or brainstem whose axon descends in the corticospinal, corticobulbar or other descending tracts to influence the lower motor neuron. Upper motor neuron lesions cause weakness with spasticity, hyperreflexia, clonus and an extensor plantar response, with little wasting.",
+  "related": [
+    "g-lower-motor-neuron",
+    "g-babinski-sign"
+  ],
+  "citations": [
+    {
+      "ref": "sp-upper-motor-neuron-lesion",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-upper-motor-neuron-signs",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-motor-neuron",
+      "section": "Structure and Function"
+    }
+  ]
 }

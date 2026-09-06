@@ -1,188 +1,160 @@
 {
- "kind": "structure",
- "id": "gyrus-inferior-temporal-posterior",
- "name": "Inferior temporal gyrus, posterior division",
- "synonyms": [
-  "posterior ITG",
-  "area 37"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-inferior-temporal-posterior-l",
-  "gyrus-inferior-temporal-posterior-r"
- ],
- "summary": "The posterior inferior temporal gyrus is the lower lateral temporal cortex behind the level of the posterior insula and in front of the temporo-occipital junction, between the inferior temporal sulcus and the occipitotemporal sulcus. It is high-order visual cortex of the ventral stream that represents object shape, color and category, and in the dominant hemisphere it houses part of the basal temporal language area that supports naming. It receives the posterior cerebral artery below and the middle cerebral artery above and is a typical watershed, so it is affected in hypotensive injury and in posterior cortical atrophy; focal lesions cause object agnosia, color agnosia and anomia, and stimulation here arrests naming during awake surgery.",
- "anatomy": {
-  "location": "Posterior half of the inferior temporal gyrus below the inferior temporal sulcus and lateral to the fusiform gyrus, extending from the level of the posterior hippocampus to the temporo-occipital junction.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lateral occipital and fusiform cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Contralateral inferior temporal cortex",
-    "via": "splenium of the corpus callosum"
-   }
+  "kind": "structure",
+  "id": "gyrus-inferior-temporal-posterior",
+  "name": "Inferior temporal gyrus, posterior division",
+  "synonyms": [
+    "posterior ITG",
+    "area 37"
   ],
-  "efferents": [
-   {
-    "to": "Anterior inferior temporal cortex and perirhinal cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "to": "Prefrontal cortex",
-    "via": "inferior fronto-occipital fasciculus"
-   },
-   {
-    "to": "Amygdala",
-    "via": "temporo-amygdalar fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-inferior-temporal-posterior-l",
+    "gyrus-inferior-temporal-posterior-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Neurons here encode the shape, texture and color of objects and generalize across viewpoints, forming the intermediate stage between the occipital form areas and the invariant object representations of the anterior temporal lobe; the left side also participates in naming from vision and reading, as part of the basal temporal language area with the fusiform gyrus. It projects to the amygdala and perirhinal cortex for object memory and emotional value and to the prefrontal cortex through the inferior fronto-occipital fasciculus for object-based decisions. The right side dominates for global form and face processing and the left for detail and words.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The posterior inferior temporal gyrus is the lower lateral temporal cortex behind the level of the posterior insula and in front of the temporo-occipital junction, between the inferior temporal sulcus and the occipitotemporal sulcus. It is high-order visual cortex of the ventral stream that represents object shape, color and category, and in the dominant hemisphere it houses part of the basal temporal language area that supports naming. It receives the posterior cerebral artery below and the middle cerebral artery above and is a typical watershed, so it is affected in hypotensive injury and in posterior cortical atrophy; focal lesions cause object agnosia, color agnosia and anomia, and stimulation here arrests naming during awake surgery.",
+  "anatomy": {
+    "location": "Posterior half of the inferior temporal gyrus below the inferior temporal sulcus and lateral to the fusiform gyrus, extending from the level of the posterior hippocampus to the temporo-occipital junction.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lateral occipital and fusiform cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Contralateral inferior temporal cortex",
+        "via": "splenium of the corpus callosum"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Anterior inferior temporal cortex and perirhinal cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "to": "Prefrontal cortex",
+        "via": "inferior fronto-occipital fasciculus"
+      },
+      {
+        "to": "Amygdala",
+        "via": "temporo-amygdalar fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "Neurons here encode the shape, texture and color of objects and generalize across viewpoints, forming the intermediate stage between the occipital form areas and the invariant object representations of the anterior temporal lobe; the left side also participates in naming from vision and reading, as part of the basal temporal language area with the fusiform gyrus. It projects to the amygdala and perirhinal cortex for object memory and emotional value and to the prefrontal cortex through the inferior fronto-occipital fasciculus for object-based decisions. The right side dominates for global form and face processing and the left for detail and words.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-mca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-inferior-temporal-posterior-l"
+        },
+        "label": "posterior inferior temporal gyrus lateral to the fusiform gyrus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-inferior-temporal-posterior-r"
+        },
+        "label": "lower lateral temporal cortex behind the posterior insula"
+      }
+    ],
+    "normalAppearance": "Lowest lateral temporal gyrus on coronal images through the posterior hippocampus and the atrium, bounded medially by the occipitotemporal sulcus; the PCA branches run on its inferior surface.",
+    "pathology": [
+      {
+        "pathology": "Watershed infarct (MCA-PCA border zone)",
+        "modality": "MRI",
+        "finding": "Linear restricted diffusion along the inferolateral temporal cortex at the boundary of the two territories after hypotension or carotid occlusion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Bilateral posterior temporal and occipito-parietal atrophy with preserved hippocampi in a patient with progressive visual agnosia and alexia.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Basal temporal language area seizures",
+        "modality": "EEG",
+        "finding": "Ictal anomia or speech arrest with a posterior temporal focus in the dominant hemisphere.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Visual object and color agnosia",
+        "side": "n/a",
+        "mechanism": "Loss of shape and color representations of the ventral stream"
+      },
+      {
+        "deficit": "Anomia for seen objects (left)",
+        "side": "n/a",
+        "mechanism": "Damage to the basal temporal language area"
+      },
+      {
+        "deficit": "Impaired visual memory for objects and faces (right)",
+        "side": "n/a",
+        "mechanism": "Disconnection of ventral-stream representations from the medial temporal memory system"
+      }
+    ],
+    "examination": [
+      "Object naming, then recognition by description and by touch",
+      "Color naming and color matching",
+      "Visual recognition memory: recall of recently shown pictures"
+    ],
+    "syndromes": [
+      "syn-watershed-infarct",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "The border zone between the MCA and PCA runs along this gyrus; a bilateral lesion here after cardiac arrest causes visual agnosia",
+      "Awake mapping of the dominant posterior inferior temporal cortex finds naming sites the surgeon must spare",
+      "Color agnosia (cannot name or sort colors) with normal color vision is posterior ventral temporal"
+    ]
+  },
+  "pitfalls": [
+    "Visual agnosia after cardiac arrest is often attributed to confusion; test recognition once the patient is alert"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-mca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-inferior-temporal-posterior-l"
+  "citations": [
+    {
+      "ref": "sp-agnosia",
+      "section": "Introduction"
     },
-    "label": "posterior inferior temporal gyrus lateral to the fusiform gyrus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-inferior-temporal-posterior-r"
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
     },
-    "label": "lower lateral temporal cortex behind the posterior insula"
-   }
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Lowest lateral temporal gyrus on coronal images through the posterior hippocampus and the atrium, bounded medially by the occipitotemporal sulcus; the PCA branches run on its inferior surface.",
-  "pathology": [
-   {
-    "pathology": "Watershed infarct (MCA-PCA border zone)",
-    "modality": "MRI",
-    "finding": "Linear restricted diffusion along the inferolateral temporal cortex at the boundary of the two territories after hypotension or carotid occlusion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Bilateral posterior temporal and occipito-parietal atrophy with preserved hippocampi in a patient with progressive visual agnosia and alexia.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Basal temporal language area seizures",
-    "modality": "EEG",
-    "finding": "Ictal anomia or speech arrest with a posterior temporal focus in the dominant hemisphere.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Visual object and color agnosia",
-    "side": "n/a",
-    "mechanism": "Loss of shape and color representations of the ventral stream"
-   },
-   {
-    "deficit": "Anomia for seen objects (left)",
-    "side": "n/a",
-    "mechanism": "Damage to the basal temporal language area"
-   },
-   {
-    "deficit": "Impaired visual memory for objects and faces (right)",
-    "side": "n/a",
-    "mechanism": "Disconnection of ventral-stream representations from the medial temporal memory system"
-   }
+  "tags": [
+    "ventral stream",
+    "basal temporal language area"
   ],
-  "examination": [
-   "Object naming, then recognition by description and by touch",
-   "Color naming and color matching",
-   "Visual recognition memory: recall of recently shown pictures"
-  ],
-  "syndromes": [
-   "syn-watershed-infarct",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "The border zone between the MCA and PCA runs along this gyrus; a bilateral lesion here after cardiac arrest causes visual agnosia",
-   "Awake mapping of the dominant posterior inferior temporal cortex finds naming sites the surgeon must spare",
-   "Color agnosia (cannot name or sort colors) with normal color vision is posterior ventral temporal"
-  ]
- },
- "pitfalls": [
-  "Visual agnosia after cardiac arrest is often attributed to confusion; test recognition once the patient is alert"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "ventral stream",
-  "basal temporal language area"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

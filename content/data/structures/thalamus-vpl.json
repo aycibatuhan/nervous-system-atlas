@@ -1,161 +1,137 @@
 {
- "kind": "structure",
- "id": "thalamus-vpl",
- "name": "Ventral posterolateral nucleus (VPL)",
- "synonyms": [],
- "system": "diencephalon",
- "meshIds": [
-  "thalamus-ventral-posterior-ventrolateral-l",
-  "thalamus-ventral-posterior-ventrolateral-r",
-  "thalamus-lateral-posterior-ventral-posterior-l",
-  "thalamus-lateral-posterior-ventral-posterior-r"
- ],
- "summary": "The somatosensory relay for the body. The medial lemniscus and spinothalamic tract end here in a somatotopic map (leg lateral, arm medial, with the face taking over in the adjacent VPM), and third-order neurons project through the posterior limb of the internal capsule to the postcentral gyrus. A small infarct of the thalamogeniculate branches confined to VPL and VPM produces the pure sensory stroke, and its recovery phase may bring the intractable burning pain of the thalamic syndrome.",
- "anatomy": {
-  "location": "Posterior part of the ventral tier of the lateral thalamus, lateral to the VPM and medial to the internal capsule, beneath the lateral posterior nucleus and in front of the pulvinar.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "medial-lemniscus"
-   },
-   {
-    "from": "spinothalamic tracts"
-   }
+  "kind": "structure",
+  "id": "thalamus-vpl",
+  "name": "Ventral posterolateral nucleus (VPL)",
+  "synonyms": [],
+  "system": "diencephalon",
+  "meshIds": [
+    "thalamus-ventral-posterior-ventrolateral-l",
+    "thalamus-ventral-posterior-ventrolateral-r",
+    "thalamus-lateral-posterior-ventral-posterior-l",
+    "thalamus-lateral-posterior-ventral-posterior-r"
   ],
-  "efferents": [
-   {
-    "to": "gyrus-postcentral",
-    "via": "posterior limb of the internal capsule"
-   }
-  ],
-  "pathways": [
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic"
-  ]
- },
- "function": "Relay of discriminative touch, vibration, proprioception, pain and temperature from the contralateral body to the primary somatosensory cortex.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 16,
-     "y": -20,
-     "z": 4
+  "summary": "The somatosensory relay for the body. The medial lemniscus and spinothalamic tract end here in a somatotopic map (leg lateral, arm medial, with the face taking over in the adjacent VPM), and third-order neurons project through the posterior limb of the internal capsule to the postcentral gyrus. A small infarct of the thalamogeniculate branches confined to VPL and VPM produces the pure sensory stroke, and its recovery phase may bring the intractable burning pain of the thalamic syndrome.",
+  "anatomy": {
+    "location": "Posterior part of the ventral tier of the lateral thalamus, lateral to the VPM and medial to the internal capsule, beneath the lateral posterior nucleus and in front of the pulvinar.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "medial-lemniscus"
+      },
+      {
+        "from": "spinothalamic tracts"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "gyrus-postcentral",
+        "via": "posterior limb of the internal capsule"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic"
+    ]
+  },
+  "function": "Relay of discriminative touch, vibration, proprioception, pain and temperature from the contralateral body to the primary somatosensory cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 16,
+          "y": -20,
+          "z": 4
+        },
+        "label": "posterolateral thalamus beside the posterior limb of the internal capsule"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 16,
+          "y": -20,
+          "z": 4
+        },
+        "label": "VPL lateral to VPM in the ventral tier"
+      }
+    ],
+    "normalAppearance": "Not distinguishable from the rest of the thalamus on routine MRI; the MIAL thalamic nuclei mesh in this atlas outlines the ventral posterior group. Lacunes here sit in the posterolateral thalamus next to the internal capsule.",
+    "pathology": [
+      {
+        "pathology": "Pure sensory lacunar stroke",
+        "modality": "MRI",
+        "finding": "Small restricted-diffusion lesion in the posterolateral thalamus.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Thalamogeniculate artery infarct",
+        "modality": "MRI",
+        "finding": "Lateral thalamic infarct including VPL, VPM and sometimes the internal capsule (sensorimotor stroke) and the pulvinar.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI through the thalamus"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemianesthesia of the body",
+        "side": "contralateral",
+        "mechanism": "Loss of the somatosensory relay"
+      },
+      {
+        "deficit": "Thalamic pain syndrome weeks later",
+        "side": "contralateral",
+        "mechanism": "Deafferentation and reorganization of the ventral posterior nuclei"
+      },
+      {
+        "deficit": "Cheiro-oral pattern of numbness",
+        "side": "contralateral",
+        "mechanism": "Small lesion at the VPL–VPM border where hand and mouth representations are adjacent"
+      }
+    ],
+    "examination": [
+      "All sensory modalities on the opposite body compared with the face",
+      "Allodynia and hyperpathia in the affected limbs",
+      "Two-point discrimination and stereognosis"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-sensory",
+      "syn-thalamic-dejerine-roussy",
+      "syn-lacunar-sensorimotor"
+    ],
+    "pearls": [
+      "Numbness of the hand and the corner of the mouth together (cheiro-oral) is a tiny lateral thalamic lesion",
+      "Thalamic pain is delayed: warn stroke patients with sensory loss to report new burning pain"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-thalamus",
+      "section": "Structure and Function"
     },
-    "label": "posterolateral thalamus beside the posterior limb of the internal capsule"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 16,
-     "y": -20,
-     "z": 4
-    },
-    "label": "VPL lateral to VPM in the ventral tier"
-   }
+    {
+      "ref": "sp-thalamic-nuclei",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not distinguishable from the rest of the thalamus on routine MRI; the MIAL thalamic nuclei mesh in this atlas outlines the ventral posterior group. Lacunes here sit in the posterolateral thalamus next to the internal capsule.",
-  "pathology": [
-   {
-    "pathology": "Pure sensory lacunar stroke",
-    "modality": "MRI",
-    "finding": "Small restricted-diffusion lesion in the posterolateral thalamus.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Thalamogeniculate artery infarct",
-    "modality": "MRI",
-    "finding": "Lateral thalamic infarct including VPL, VPM and sometimes the internal capsule (sensorimotor stroke) and the pulvinar.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "diencephalon"
   ],
-  "sequenceOfChoice": "DWI through the thalamus"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemianesthesia of the body",
-    "side": "contralateral",
-    "mechanism": "Loss of the somatosensory relay"
-   },
-   {
-    "deficit": "Thalamic pain syndrome weeks later",
-    "side": "contralateral",
-    "mechanism": "Deafferentation and reorganization of the ventral posterior nuclei"
-   },
-   {
-    "deficit": "Cheiro-oral pattern of numbness",
-    "side": "contralateral",
-    "mechanism": "Small lesion at the VPL–VPM border where hand and mouth representations are adjacent"
-   }
-  ],
-  "examination": [
-   "All sensory modalities on the opposite body compared with the face",
-   "Allodynia and hyperpathia in the affected limbs",
-   "Two-point discrimination and stereognosis"
-  ],
-  "syndromes": [
-   "syn-lacunar-pure-sensory",
-   "syn-thalamic-dejerine-roussy",
-   "syn-lacunar-sensorimotor"
-  ],
-  "pearls": [
-   "Numbness of the hand and the corner of the mouth together (cheiro-oral) is a tiny lateral thalamic lesion",
-   "Thalamic pain is delayed: warn stroke patients with sensory loss to report new burning pain"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    367
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    369,
-    369
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    37,
-    38
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  }
- ],
- "tags": [
-  "diencephalon"
- ],
- "status": "draft",
- "latin": "Nucleus ventralis posterolateralis thalami",
- "subsystem": "thalamus",
- "parent": "thalamus"
+  "status": "draft",
+  "latin": "Nucleus ventralis posterolateralis thalami",
+  "subsystem": "thalamus",
+  "parent": "thalamus"
 }

@@ -1,9 +1,6 @@
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from lib import *
 E = []
-SN17 = lambda a, b=None: C("snell", 17, a, b)
-BK9 = lambda a, b=None: C("berkowitz", 9, a, b)
-BK8 = lambda a, b=None: C("berkowitz", 8, a, b)
 
 E.append(structure("artery-pica", "Posterior inferior cerebellar artery", "arteries", subsystem="posterior-circulation", synonyms=["PICA"], latin="Arteria cerebelli inferior posterior",
  summary="The largest branch of the vertebral artery. It takes a tortuous course between the medulla and the cerebellum, supplying the dorsolateral medulla, the inferior surface of the cerebellar hemisphere and vermis, the cerebellar tonsil and the choroid plexus of the fourth ventricle. Its occlusion (or, more often, occlusion of the parent vertebral artery) produces the lateral medullary syndrome, and a large cerebellar infarct in its territory can swell and compress the brainstem.",
@@ -19,7 +16,7 @@ E.append(structure("artery-pica", "Posterior inferior cerebellar artery", "arter
  lesion=[("Loss of pain and temperature on the face with loss on the opposite body", "ipsilateral", "Spinal trigeminal tract ipsilaterally and the already-crossed spinothalamic tract"), ("Dysphagia, hoarseness, absent gag", "ipsilateral", "Nucleus ambiguus"), ("Vertigo, nystagmus, nausea", "ipsilateral", "Vestibular nuclei"), ("Horner syndrome", "ipsilateral", "Descending sympathetic fibers in the lateral medulla"), ("Limb and gait ataxia", "ipsilateral", "Inferior cerebellar peduncle and cerebellum"), ("Hiccups", "n/a", "Medullary respiratory centers")],
  exam=["Pin-prick on the face compared with the trunk and limbs on each side", "Palatal elevation, voice quality and swallowing", "Pupil size and ptosis", "Finger-nose, heel-shin and gait; observe nystagmus direction"],
  pearls=["Crossed pain and temperature loss (face one side, body the other) with no weakness is the lateral medulla", "Most Wallenberg strokes are from vertebral artery occlusion or dissection rather than PICA itself", "A drowsy patient two days after a cerebellar infarct needs an urgent CT for hydrocephalus"],
- citations=[SN17(466, 468), C("snell", 5, 216), C("snell", 17, 477), BK9(77, 78), BK8(70), C("berkowitz", 12, 110, 112)],
+ citations=[R("sp-pica"), R("sp-anterior-inferior-cerebellar-arteries"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-wallenberg-lateral-medullary", "syn-pica-cerebellar-infarct"], tags=["vascular", "posterior-circulation"]))
 
 E.append(structure("artery-aica", "Anterior inferior cerebellar artery", "arteries", subsystem="posterior-circulation", synonyms=["AICA"], latin="Arteria cerebelli inferior anterior",
@@ -35,7 +32,7 @@ E.append(structure("artery-aica", "Anterior inferior cerebellar artery", "arteri
  lesion=[("Sudden sensorineural deafness and vertigo", "ipsilateral", "Labyrinthine artery to the inner ear and the cochlear/vestibular nuclei"), ("Lower motor neuron facial weakness", "ipsilateral", "Facial nucleus or fascicle in the caudal pons"), ("Facial pain and temperature loss with contralateral body loss", "ipsilateral", "Spinal trigeminal nucleus and the crossed spinothalamic tract"), ("Limb ataxia", "ipsilateral", "Middle cerebellar peduncle and cerebellum"), ("Horner syndrome", "ipsilateral", "Descending sympathetic fibers in the lateral tegmentum")],
  exam=["Whisper test or tuning-fork tests for unilateral hearing loss", "Facial movement including forehead", "Corneal reflex and facial pin-prick", "Finger-nose and heel-shin testing"],
  pearls=["Wallenberg plus deafness and facial palsy means AICA (lateral pons) rather than PICA (lateral medulla)", "Isolated sudden deafness with vertigo in a patient with vascular risk factors can be an AICA infarct"],
- citations=[SN17(466, 468), BK9(77, 79), C("berkowitz", 12, 106), C("berkowitz", 12, 112)],
+ citations=[R("sp-anterior-inferior-cerebellar-arteries"), R("sp-cerebral-blood-supply"), R("sp-circle-of-willis")],
  syndromes=["syn-aica-lateral-pontine"], tags=["vascular", "posterior-circulation"]))
 
 E.append(structure("artery-sca", "Superior cerebellar artery", "arteries", subsystem="posterior-circulation", synonyms=["SCA"], latin="Arteria cerebelli superior",
@@ -52,7 +49,7 @@ E.append(structure("artery-sca", "Superior cerebellar artery", "arteries", subsy
  lesion=[("Ipsilateral limb ataxia and intention tremor", "ipsilateral", "Superior cerebellar hemisphere, dentate nucleus and superior cerebellar peduncle"), ("Contralateral loss of pain and temperature (body)", "contralateral", "Spinothalamic tract in the dorsolateral rostral pons"), ("Horner syndrome", "ipsilateral", "Descending sympathetic fibers"), ("Trigeminal neuralgia", "ipsilateral", "Pulsatile compression of the trigeminal root by an SCA loop")],
  exam=["Finger-nose, heel-shin and rapid alternating movements", "Pin-prick on the trunk and limbs", "Ask about lancinating facial pain triggered by touch"],
  pearls=["Because the SCA runs under the third nerve, a basilar tip aneurysm can cause both a third nerve palsy and cerebellar signs", "Vertigo is less prominent with SCA infarcts than with PICA or AICA infarcts because the vestibular nuclei are spared"],
- citations=[SN17(466, 468), C("snell", 6, 241, 244), BK9(77, 79), BK8(70), C("berkowitz", 13, 120)],
+ citations=[R("sp-cerebellar-infarction"), R("sp-basilar-artery"), R("sp-brain-arteries")],
  syndromes=["syn-sca-infarct", "syn-trigeminal-neuralgia"], tags=["vascular", "posterior-circulation"]))
 
 E.append(structure("arteries-pontine", "Pontine arteries", "arteries", subsystem="perforators", synonyms=["paramedian pontine arteries", "short and long circumferential arteries"], latin="Arteriae pontis",
@@ -69,7 +66,7 @@ E.append(structure("arteries-pontine", "Pontine arteries", "arteries", subsystem
  lesion=[("Pure motor hemiparesis", "contralateral", "Corticospinal fibers in the basis pontis"), ("Ataxic hemiparesis", "contralateral", "Corticospinal fibers plus pontocerebellar fibers"), ("Dysarthria–clumsy hand", "contralateral", "Basis pontis at the level of the facial and hypoglossal projections"), ("Abducens palsy or horizontal gaze palsy with contralateral hemiparesis", "ipsilateral", "Abducens nucleus/PPRF plus the corticospinal tract (Foville)"), ("Facial palsy with contralateral hemiparesis", "ipsilateral", "Facial fascicle plus the corticospinal tract (Millard–Gubler)"), ("Internuclear ophthalmoplegia", "ipsilateral", "MLF in the paramedian tegmentum")],
  exam=["Pronator drift and gait; check for ataxia out of proportion to weakness", "Horizontal eye movements looking for adduction lag or gaze palsy", "Facial movement including the forehead", "Speech and fine finger movements"],
  pearls=["Lacunar syndromes come from the pons as often as from the internal capsule; ataxic hemiparesis and dysarthria–clumsy hand favor the pons", "A crossed sign (cranial nerve on one side, limbs on the other) means the brainstem: pons if it is VI or VII"],
- citations=[SN17(466, 467), C("snell", 5, 216, 218), BK9(77, 79), C("berkowitz", 7, 60), C("berkowitz", 7, 63)],
+ citations=[R("sp-basilar-artery"), R("sp-brainstem-stroke"), R("sp-brain-arteries")],
  syndromes=["syn-lacunar-ataxic-hemiparesis", "syn-lacunar-dysarthria-clumsy-hand", "syn-millard-gubler", "syn-foville", "syn-ino"], tags=["vascular", "pons"]))
 
 E.append(structure("circle-of-willis", "Circle of Willis", "arteries", subsystem="circle-of-willis", synonyms=["circulus arteriosus cerebri", "arterial circle"], latin="Circulus arteriosus cerebri", meshIds=["arteries-mra-atlas"],
@@ -88,7 +85,7 @@ E.append(structure("circle-of-willis", "Circle of Willis", "arteries", subsystem
  lesion=[("Variable stroke severity for a given occlusion", "n/a", "Presence or absence of communicating arteries determines collateral flow"), ("Subarachnoid hemorrhage", "n/a", "Rupture of a saccular aneurysm at a branch point of the circle"), ("Chiasmal visual field defects", "bilateral", "Aneurysm compressing the optic chiasm from below or laterally"), ("Third nerve palsy", "ipsilateral", "PComm or basilar tip aneurysm")],
  exam=["Visual fields and pupils in every patient with a sudden severe headache", "Neck stiffness and Kernig sign", "Serial neurological examination after subarachnoid hemorrhage for delayed ischemia"],
  pearls=["Roughly one person in four has a complete, symmetrical circle; most have at least one hypoplastic segment", "A carotid occlusion with a good circle may cause no symptoms; with a poor circle it may infarct the whole hemisphere"],
- citations=[SN17(468, 470), C("snell", 17, 474), C("berkowitz", 7, 57), C("berkowitz", 19, 196, 198)],
+ citations=[R("sp-circle-of-willis"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-subarachnoid-hemorrhage", "syn-chiasmal-bitemporal"], tags=["vascular", "circle-of-willis"]))
 
 E.append(structure("anterior-spinal-artery", "Anterior spinal artery", "arteries", subsystem="spinal", synonyms=["ASA"], latin="Arteria spinalis anterior",
@@ -105,7 +102,7 @@ E.append(structure("anterior-spinal-artery", "Anterior spinal artery", "arteries
  lesion=[("Flaccid then spastic paraparesis or quadriparesis", "bilateral", "Anterior horns and corticospinal tracts"), ("Loss of pain and temperature below the level with preserved vibration and proprioception", "bilateral", "Spinothalamic tracts infarcted, posterior columns spared"), ("Urinary retention and autonomic dysfunction", "bilateral", "Descending autonomic pathways and intermediolateral column"), ("Medial medullary syndrome", "contralateral", "Occlusion of the rostral anterior spinal artery")],
  exam=["Sensory level to pin-prick with preserved vibration at the same dermatomes", "Reflexes: initially absent (spinal shock), later brisk with extensor plantars", "Bladder scan for retention"],
  pearls=["Dissociated sensory loss below a level (pain and temperature gone, vibration kept) with weakness is the anterior spinal artery syndrome", "Sudden painful paraplegia after aortic surgery or dissection is a cord infarct until proven otherwise"],
- citations=[SN17(466), C("snell", 17, 471, 472), C("snell", 4, 168), C("berkowitz", 5, 44), C("berkowitz", 9, 77, 78), C("berkowitz", 19, 203, 205)],
+ citations=[R("sp-anterior-spinal-artery"), R("sp-anterior-spinal-artery-syndrome"), R("sp-spinal-cord-arteries")],
  syndromes=["syn-anterior-cord", "syn-dejerine-medial-medullary"], tags=["vascular", "spinal"]))
 
 E.append(structure("posterior-spinal-arteries", "Posterior spinal arteries", "arteries", subsystem="spinal", latin="Arteriae spinales posteriores",
@@ -120,7 +117,7 @@ E.append(structure("posterior-spinal-arteries", "Posterior spinal arteries", "ar
  lesion=[("Loss of vibration and proprioception below the level with sensory ataxia", "bilateral", "Posterior columns"), ("Loss of segmental deep tendon reflexes", "bilateral", "Dorsal horn and afferent limb of the reflex at the infarcted level")],
  exam=["Vibration at the malleoli and joint position sense at the toes", "Romberg test", "Compare pin-prick (should be preserved) with vibration (lost)"],
  pearls=["Posterior column loss with preserved pain and power after a vascular event points to the posterior spinal arteries", "The rich posterior anastomotic chain explains why posterior cord infarcts are far rarer than anterior ones"],
- citations=[SN17(466), C("snell", 17, 471, 472), C("berkowitz", 5, 44)],
+ citations=[R("sp-spinal-cord-arteries"), R("sp-back-spinal-cord-arteries"), R("sp-anterior-spinal-artery")],
  syndromes=["syn-posterior-cord-subacute-combined"], tags=["vascular", "spinal"]))
 
 E.append(structure("artery-adamkiewicz", "Artery of Adamkiewicz", "arteries", subsystem="spinal", synonyms=["arteria radicularis magna", "great anterior radiculomedullary artery"],
@@ -135,7 +132,7 @@ E.append(structure("artery-adamkiewicz", "Artery of Adamkiewicz", "arteries", su
  lesion=[("Paraplegia with a thoracic sensory level for pain and temperature", "bilateral", "Anterior two-thirds of the thoracolumbar cord"), ("Retention of urine, loss of bowel control", "bilateral", "Conus and descending autonomic pathways"), ("Preserved vibration and position sense", "bilateral", "Posterior columns perfused by the posterior spinal arteries")],
  exam=["Sensory level to pin-prick on the trunk", "Vibration sense at the malleoli to show sparing", "Bladder scan; check anal tone"],
  pearls=["Postoperative paraplegia after aortic repair is cord ischemia in the Adamkiewicz territory; a lumbar drain to lower CSF pressure is part of the response", "The mid-thoracic cord (T4–T8) is the watershed between the cervical and Adamkiewicz supplies and the commonest site of hypotensive cord infarcts"],
- citations=[SN17(471, 472), C("snell", 17, 485), C("berkowitz", 5, 44), C("berkowitz", 19, 203, 205)],
+ citations=[R("sp-back-artery-of-adamkiewicz"), R("sp-anterior-spinal-artery"), R("sp-spinal-cord-arteries")],
  syndromes=["syn-anterior-cord"], tags=["vascular", "spinal"]))
 
 write(E)

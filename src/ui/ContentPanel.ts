@@ -1,6 +1,8 @@
 import type { App } from '../app.ts';
 import { h, clear } from './dom.ts';
 import { selectStructure } from '../state/actions.ts';
+import { citeNode } from './cite.ts';
+import type { Citation } from '../types/content.ts';
 import type { ContentTab } from '../types/state.ts';
 
 type Rec = Record<string, unknown>;
@@ -26,10 +28,7 @@ export class ContentPanel {
   private linkify(root: HTMLElement): void {
     for (const a of Array.from(root.querySelectorAll('a[href^="#/structure/"]'))) a.addEventListener('click', (e) => { e.preventDefault(); location.hash = (a as HTMLAnchorElement).getAttribute('href')!; });
   }
-  private cite(c: { book: string; chapter: number; pages: [number, number]; section?: string }): string {
-    const src = this.app.content?.sources[c.book]; const p = c.pages[0] === c.pages[1] ? `p. ${c.pages[0]}` : `pp. ${c.pages[0]}–${c.pages[1]}`;
-    return `${src?.cite ?? c.book} ch. ${c.chapter}, ${p}${c.section ? ` (${c.section})` : ''}`;
-  }
+  private cite(c: Citation): HTMLElement { return citeNode(this.app.content?.bibliography, c); }
   private structLink(id: string): HTMLElement {
     const st = this.app.content?.structures[id] as Rec | undefined; const mesh = this.app.registry.byId.get(id) ?? this.app.manifest.meshes.find((m) => m.structureId === id);
     const name = (st?.['name'] as string) ?? mesh?.name ?? id;
@@ -120,8 +119,8 @@ export class ContentPanel {
         sec.append((entry['pitfalls'] as string[]).length ? this.list(entry['pitfalls'] as unknown[], (x) => String(x)) : h('p', { class: 'muted' }, 'No pitfalls listed.'));
         break;
       case 'citations':
-        sec.append(this.list(entry['citations'] as unknown[], (c) => this.cite(c as { book: string; chapter: number; pages: [number, number]; section?: string })),
-          h('p', { class: 'muted small' }, 'Text is original prose written from these references; page numbers are printed page numbers.'));
+        sec.append(this.list(entry['citations'] as unknown[], (c) => this.cite(c as unknown as Citation)),
+          h('p', { class: 'muted small' }, 'Original prose written from these open-access sources; every link opens the free full text.'));
         break;
     }
     this.body.append(sec, h('p', { class: 'muted small' }, 'Hover: ', h('span', { class: 'hover-name' })));

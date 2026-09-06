@@ -1,68 +1,68 @@
 {
- "kind": "quiz",
- "id": "qz-51",
- "type": "localize",
- "vignette": "A 66-year-old man with hypertension has sudden vertigo and vomiting and cannot stand. Head impulse testing is normal, there is direction-changing nystagmus, and there is no weakness, hearing loss or facial numbness.",
- "stem": "Which arterial territory is most likely involved?",
- "options": [
-  {
-   "key": "A",
-   "text": "Anterior inferior cerebellar artery"
-  },
-  {
-   "key": "B",
-   "text": "Medial branch of the posterior inferior cerebellar artery (nodulus and uvula)"
-  },
-  {
-   "key": "C",
-   "text": "Superior cerebellar artery"
-  },
-  {
-   "key": "D",
-   "text": "Basilar paramedian pontine territory"
-  },
-  {
-   "key": "E",
-   "text": "Labyrinthine artery"
-  }
- ],
- "answer": "B",
- "explanation": "Acute vertigo with a normal head impulse test, direction-changing nystagmus and inability to stand is a central vestibular lesion, most often a medial PICA infarct of the nodulus and uvula (lobules IX-X); AICA infarcts add deafness and facial weakness, and lateral medullary involvement adds crossed sensory loss.",
- "targets": {
-  "structureIds": [
-   "cerebellar-lobule-ix",
-   "cerebellar-lobule-x",
-   "territory-inferior-cerebellar"
+  "kind": "quiz",
+  "id": "qz-51",
+  "type": "localize",
+  "vignette": "A 66-year-old man with hypertension has sudden vertigo and vomiting and cannot stand. Head impulse testing is normal, there is direction-changing nystagmus, and there is no weakness, hearing loss or facial numbness.",
+  "stem": "Which arterial territory is most likely involved?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Anterior inferior cerebellar artery"
+    },
+    {
+      "key": "B",
+      "text": "Medial branch of the posterior inferior cerebellar artery (nodulus and uvula)"
+    },
+    {
+      "key": "C",
+      "text": "Superior cerebellar artery"
+    },
+    {
+      "key": "D",
+      "text": "Basilar paramedian pontine territory"
+    },
+    {
+      "key": "E",
+      "text": "Labyrinthine artery"
+    }
   ],
-  "syndromeIds": [
-   "syn-central-vs-peripheral-vertigo",
-   "syn-pica-cerebellar-infarct"
-  ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cerebellar-lobule-ix-l",
-  "cerebellar-lobule-ix-r",
-  "territory-inferior-cerebellar-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    108,
-    114
-   ]
+  "answer": "B",
+  "explanation": "Acute vertigo with a normal head impulse test, direction-changing nystagmus and inability to stand is a central vestibular lesion, most often a medial PICA infarct of the nodulus and uvula (lobules IX-X); AICA infarcts add deafness and facial weakness, and lateral medullary involvement adds crossed sensory loss.",
+  "targets": {
+    "structureIds": [
+      "cerebellar-lobule-ix",
+      "cerebellar-lobule-x",
+      "territory-inferior-cerebellar"
+    ],
+    "syndromeIds": [
+      "syn-central-vs-peripheral-vertigo",
+      "syn-pica-cerebellar-infarct"
+    ],
+    "pathwayIds": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    70,
-    73
-   ]
-  }
- ],
- "original": true
+  "highlightOnReveal": [
+    "cerebellar-lobule-ix-l",
+    "cerebellar-lobule-ix-r",
+    "territory-inferior-cerebellar-l"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-central-vertigo",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-vertigo-in-clinical-practice-evidence-based-diagnosis-and",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-vestibular-neuronitis",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebellar-infarction",
+      "section": "History and Physical"
+    }
+  ],
+  "original": true
 }

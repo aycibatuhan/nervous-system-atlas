@@ -1,179 +1,151 @@
 {
- "kind": "structure",
- "id": "arteries-thalamoperforating",
- "name": "Thalamoperforating and thalamogeniculate arteries",
- "synonyms": [
-  "thalamic perforators",
-  "paramedian thalamic arteries",
-  "artery of Percheron"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "Small perforating branches from the P1 segment of the posterior cerebral artery and the posterior communicating artery supply the thalamus. The paramedian (posterior thalamoperforating) group from P1 feeds the medial thalamus and rostral midbrain; when a single trunk from one P1 supplies both sides (artery of Percheron), its occlusion causes bilateral paramedian thalamic infarcts with coma-like somnolence and vertical gaze palsy. The thalamogeniculate arteries from P2 supply the lateral thalamus and are the usual cause of the pure sensory stroke and thalamic pain syndrome.",
- "anatomy": {
-  "location": "Arise from the posterior aspect of the P1 segments in the interpeduncular fossa and from the posterior communicating artery (anterior thalamoperforators), entering the posterior perforated substance beside the mammillary bodies; the thalamogeniculates leave the P2 segment in the ambient cistern and enter the thalamus beneath the geniculate bodies.",
-  "subdivisions": [
-   {
-    "name": "Anterior (tuberothalamic) group",
-    "note": "from PComm: anterior nuclei, mammillothalamic tract; amnesia and apathy when infarcted"
-   },
-   {
-    "name": "Paramedian (posterior thalamoperforating) group",
-    "note": "from P1: mediodorsal nucleus, intralaminar nuclei, rostral midbrain; artery of Percheron variant"
-   },
-   {
-    "name": "Inferolateral (thalamogeniculate) group",
-    "note": "from P2: ventral posterior nuclei, ventral lateral nucleus; pure sensory stroke"
-   },
-   {
-    "name": "Posterior choroidal group",
-    "note": "pulvinar, lateral geniculate body, medial thalamus"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supply the thalamic relay and association nuclei and the paramedian midbrain, including the oculomotor nuclear complex and the reticular activating system at the mesodiencephalic junction.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-pcom"
+  "kind": "structure",
+  "id": "arteries-thalamoperforating",
+  "name": "Thalamoperforating and thalamogeniculate arteries",
+  "synonyms": [
+    "thalamic perforators",
+    "paramedian thalamic arteries",
+    "artery of Percheron"
   ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -14,
-     "z": -6
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "Small perforating branches from the P1 segment of the posterior cerebral artery and the posterior communicating artery supply the thalamus. The paramedian (posterior thalamoperforating) group from P1 feeds the medial thalamus and rostral midbrain; when a single trunk from one P1 supplies both sides (artery of Percheron), its occlusion causes bilateral paramedian thalamic infarcts with coma-like somnolence and vertical gaze palsy. The thalamogeniculate arteries from P2 supply the lateral thalamus and are the usual cause of the pure sensory stroke and thalamic pain syndrome.",
+  "anatomy": {
+    "location": "Arise from the posterior aspect of the P1 segments in the interpeduncular fossa and from the posterior communicating artery (anterior thalamoperforators), entering the posterior perforated substance beside the mammillary bodies; the thalamogeniculates leave the P2 segment in the ambient cistern and enter the thalamus beneath the geniculate bodies.",
+    "subdivisions": [
+      {
+        "name": "Anterior (tuberothalamic) group",
+        "note": "from PComm: anterior nuclei, mammillothalamic tract; amnesia and apathy when infarcted"
+      },
+      {
+        "name": "Paramedian (posterior thalamoperforating) group",
+        "note": "from P1: mediodorsal nucleus, intralaminar nuclei, rostral midbrain; artery of Percheron variant"
+      },
+      {
+        "name": "Inferolateral (thalamogeniculate) group",
+        "note": "from P2: ventral posterior nuclei, ventral lateral nucleus; pure sensory stroke"
+      },
+      {
+        "name": "Posterior choroidal group",
+        "note": "pulvinar, lateral geniculate body, medial thalamus"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supply the thalamic relay and association nuclei and the paramedian midbrain, including the oculomotor nuclear complex and the reticular activating system at the mesodiencephalic junction.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-pcom"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -14,
+          "z": -6
+        },
+        "label": "interpeduncular fossa where the paramedian perforators enter"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 8,
+          "y": -18,
+          "z": 6
+        },
+        "label": "medial and lateral thalamus, the infarct sites"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -18,
+          "z": 4
+        },
+        "label": "paramedian thalamus on both sides of the third ventricle"
+      }
+    ],
+    "normalAppearance": "Not visible on routine MRI; the territories are the medial thalamus flanking the third ventricle (paramedian) and the lateral thalamus beside the posterior limb of the capsule (inferolateral).",
+    "pathology": [
+      {
+        "pathology": "Artery of Percheron infarct",
+        "modality": "MRI",
+        "finding": "Symmetrical restricted diffusion in the paramedian thalami, often with a V-shaped lesion in the rostral midbrain along the interpeduncular fossa; CT is frequently normal early.",
+        "sequence": "DWI",
+        "pitfalls": "Bilateral thalamic swelling on FLAIR can mimic deep venous thrombosis or a glioma; check DWI and the internal cerebral veins"
+      },
+      {
+        "pathology": "Thalamogeniculate (lateral thalamic) lacune",
+        "modality": "MRI",
+        "finding": "A small diffusion-restricting lesion in the ventral posterolateral thalamus producing a contralateral pure hemisensory syndrome.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI with thin slices through the thalamus; MRV if bilateral thalamic edema without restriction"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hypersomnolence or coma with vertical gaze palsy",
+        "side": "bilateral",
+        "mechanism": "Bilateral paramedian thalamic and rostral midbrain infarction (artery of Percheron)"
+      },
+      {
+        "deficit": "Amnesia and apathy",
+        "side": "contralateral",
+        "mechanism": "Anterior and mediodorsal nuclei and the mammillothalamic tract"
+      },
+      {
+        "deficit": "Pure hemisensory loss, later central pain",
+        "side": "contralateral",
+        "mechanism": "Ventral posterior nuclei (thalamogeniculate territory)"
+      }
+    ],
+    "examination": [
+      "Test vertical saccades and pursuit and look for skew deviation",
+      "Bedside memory and attention testing once alert",
+      "Pin-prick, temperature and vibration over the face, arm and leg"
+    ],
+    "syndromes": [
+      "syn-thalamic-dejerine-roussy",
+      "syn-top-of-basilar",
+      "syn-lacunar-pure-sensory"
+    ],
+    "pearls": [
+      "Sudden coma with bilateral thalamic infarcts and no other explanation should prompt a search for a basilar tip embolus",
+      "All modalities lost on one side of the body including the face, with no weakness, is a thalamic lesion"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-posterior-cerebral-arteries",
+      "section": "Structure and Function"
     },
-    "label": "interpeduncular fossa where the paramedian perforators enter"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 8,
-     "y": -18,
-     "z": 6
+    {
+      "ref": "sp-thalamic-nuclei",
+      "section": "Structure and Function"
     },
-    "label": "medial and lateral thalamus, the infarct sites"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -18,
-     "z": 4
-    },
-    "label": "paramedian thalamus on both sides of the third ventricle"
-   }
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not visible on routine MRI; the territories are the medial thalamus flanking the third ventricle (paramedian) and the lateral thalamus beside the posterior limb of the capsule (inferolateral).",
-  "pathology": [
-   {
-    "pathology": "Artery of Percheron infarct",
-    "modality": "MRI",
-    "finding": "Symmetrical restricted diffusion in the paramedian thalami, often with a V-shaped lesion in the rostral midbrain along the interpeduncular fossa; CT is frequently normal early.",
-    "sequence": "DWI",
-    "pitfalls": "Bilateral thalamic swelling on FLAIR can mimic deep venous thrombosis or a glioma; check DWI and the internal cerebral veins"
-   },
-   {
-    "pathology": "Thalamogeniculate (lateral thalamic) lacune",
-    "modality": "MRI",
-    "finding": "A small diffusion-restricting lesion in the ventral posterolateral thalamus producing a contralateral pure hemisensory syndrome.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "vascular",
+    "thalamus"
   ],
-  "sequenceOfChoice": "DWI with thin slices through the thalamus; MRV if bilateral thalamic edema without restriction"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hypersomnolence or coma with vertical gaze palsy",
-    "side": "bilateral",
-    "mechanism": "Bilateral paramedian thalamic and rostral midbrain infarction (artery of Percheron)"
-   },
-   {
-    "deficit": "Amnesia and apathy",
-    "side": "contralateral",
-    "mechanism": "Anterior and mediodorsal nuclei and the mammillothalamic tract"
-   },
-   {
-    "deficit": "Pure hemisensory loss, later central pain",
-    "side": "contralateral",
-    "mechanism": "Ventral posterior nuclei (thalamogeniculate territory)"
-   }
-  ],
-  "examination": [
-   "Test vertical saccades and pursuit and look for skew deviation",
-   "Bedside memory and attention testing once alert",
-   "Pin-prick, temperature and vibration over the face, arm and leg"
-  ],
-  "syndromes": [
-   "syn-thalamic-dejerine-roussy",
-   "syn-top-of-basilar",
-   "syn-lacunar-pure-sensory"
-  ],
-  "pearls": [
-   "Sudden coma with bilateral thalamic infarcts and no other explanation should prompt a search for a basilar tip embolus",
-   "All modalities lost on one side of the body including the face, with no weakness, is a thalamic lesion"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    467,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    369,
-    369
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    57,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    38,
-    38
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "thalamus"
- ],
- "status": "draft",
- "subsystem": "perforators"
+  "status": "draft",
+  "subsystem": "perforators"
 }

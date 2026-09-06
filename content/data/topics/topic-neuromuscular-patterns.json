@@ -1,191 +1,131 @@
 {
- "kind": "topic",
- "id": "topic-neuromuscular-patterns",
- "name": "Neuromuscular patterns: nerve, root, plexus, junction and muscle",
- "synonyms": [],
- "category": "disease-pattern",
- "summary": "Weakness with a normal brain and cord comes from one of five levels, the anterior horn cell, the root or plexus, the peripheral nerve, the neuromuscular junction and the muscle, and each level has a signature in the distribution of weakness, the presence or absence of sensory loss, the reflexes, the pattern of wasting and fasciculation, the fatigability and the electrophysiology. Motor neuron disease combines lower motor neuron signs with upper motor neuron signs and spares sensation; neuropathy is length-dependent and sensory; radiculopathy follows a root and its reflex; junction disease fluctuates and spares reflexes and sensation; and myopathy is proximal, symmetric and painless with normal sensation. Nerve conduction studies and electromyography then confirm the level and separate axonal from demyelinating disease.",
- "sections": [
-  {
-   "heading": "Anterior horn cell and root",
-   "body": "Motor neuron disease produces asymmetric wasting, fasciculation and weakness beginning in one limb or the bulbar muscles, with brisk reflexes in wasted muscles and extensor plantars from the accompanying upper motor neuron degeneration, and no sensory loss; a split hand with wasting of the thenar side, a brisk jaw jerk and a wasted fasciculating tongue are characteriztic, and EMG shows widespread denervation and reinnervation in three regions. Radiculopathy produces pain radiating along a dermatome, weakness in a myotome that crosses several nerves (C7 weakens triceps, wrist flexors and finger extensors), sensory loss in the dermatome and loss of the corresponding reflex (C5-6 biceps and brachioradialis, C7 triceps, L3-4 knee, S1 ankle); the sensory nerve action potential is normal because the lesion is proximal to the dorsal root ganglion, the finding that separates a root from a plexus lesion."
-  },
-  {
-   "heading": "Plexus and peripheral nerve",
-   "body": "Plexopathy produces weakness and sensory loss in the territory of several nerves and several roots at once (the upper trunk: C5-6 muscles of the shoulder and elbow flexion; the lower trunk: intrinsic hand muscles and the medial forearm), with reduced sensory potentials because the lesion is distal to the ganglion; trauma, tumor infiltration, radiation and the inflammatory neuralgic amyotrophy are the causes. Mononeuropathies follow one nerve's territory and are usually entrapments at known sites (median at the carpal tunnel, ulnar at the elbow, radial at the spiral groove, peroneal at the fibular neck), and mononeuritis multiplex from vasculitis picks off nerves one by one. Polyneuropathy is length-dependent and symmetric, beginning in the feet with sensory loss, absent ankle jerks and later weakness; axonal neuropathies (diabetes, alcohol, drugs) reduce amplitudes, whereas demyelinating neuropathies (Guillain-Barre, CIDP, hereditary) slow conduction and block it, and a rapidly ascending paralysis with areflexia is Guillain-Barre until proved otherwise."
-  },
-  {
-   "heading": "Neuromuscular junction and muscle",
-   "body": "Myasthenia gravis produces fatigable weakness of the eyelids, extraocular muscles, face, bulbar muscles and proximal limbs that worsens through the day and with exercise and improves with rest, with normal reflexes and sensation; acetylcholine receptor or MuSK antibodies, decrement on repetitive stimulation and jitter on single-fiber EMG confirm it, and a thymoma must be sought. Lambert-Eaton syndrome is the presynaptic mirror image: proximal weakness that improves briefly with exercise, absent reflexes that return after contraction, dry mouth and an underlying small cell lung cancer, with increment on high-frequency stimulation. Botulism descends from the cranial nerves with dilated pupils. Myopathies produce symmetric proximal weakness (difficulty rising from a chair, climbing stairs, lifting the arms) with preserved reflexes until late, normal sensation, sometimes myalgia, a raised creatine kinase and small polyphasic motor units on EMG; inflammatory, toxic (statins), endocrine, dystrophic and metabolic causes are separated by distribution, rash, family history and biopsy."
-  },
-  {
-   "heading": "The examination and the electrophysiology",
-   "body": "The bedside sequence is: is the weakness upper or lower motor neuron; if lower, is there sensory loss (nerve, root, plexus) or not (anterior horn, junction, muscle); is the distribution distal and symmetric (polyneuropathy), proximal and symmetric (myopathy or junction), in one nerve or root, or multifocal; are reflexes lost early (neuropathy, Lambert-Eaton, Guillain-Barre) or preserved (myopathy, myasthenia, motor neuron disease early); and does it fatigue or fluctuate (junction). Nerve conduction studies separate axonal loss (small amplitudes) from demyelination (slow velocities, prolonged distal latencies and F waves, conduction block) and localize entrapments; EMG separates neurogenic (large, reduced-recruitment units with fibrillations) from myopathic (small, early-recruiting units) patterns and finds subclinical denervation in motor neuron disease. Creatine kinase, antibody panels, genetic testing, nerve or muscle biopsy and imaging of the root or plexus complete the localization."
-  }
- ],
- "keyPoints": [
-  "Sensory loss excludes anterior horn cell, junction and muscle; its absence with lower motor neuron signs points to them",
-  "A normal sensory nerve action potential in a numb dermatome means the lesion is at the root, proximal to the ganglion",
-  "Fatigable ptosis and diplopia with normal reflexes is myasthenia; proximal weakness that improves with exercise and returns reflexes is Lambert-Eaton",
-  "Length-dependent symmetric sensory loss with absent ankle jerks is polyneuropathy; asymmetric wasting with brisk reflexes is motor neuron disease",
-  "Proximal, symmetric, painless weakness with normal sensation and a raised creatine kinase is muscle"
- ],
- "meshIds": [
-  "brachial-plexus-l",
-  "brachial-plexus-r",
-  "median-nerve-l",
-  "median-nerve-r",
-  "ulnar-nerve-l",
-  "ulnar-nerve-r",
-  "sciatic-nerve-l",
-  "sciatic-nerve-r",
-  "spinal-grey-anterior-horn"
- ],
- "related": {
-  "structureIds": [
-   "spinal-grey-anterior-horn",
-   "dorsal-root-ganglion",
-   "plexus-brachial",
-   "plexus-lumbosacral",
-   "neuromuscular-junction",
-   "motor-unit",
-   "nerve-median",
-   "nerve-ulnar",
-   "nerve-common-peroneal"
+  "kind": "topic",
+  "id": "topic-neuromuscular-patterns",
+  "name": "Neuromuscular patterns: nerve, root, plexus, junction and muscle",
+  "synonyms": [],
+  "category": "disease-pattern",
+  "summary": "Weakness with a normal brain and cord comes from one of five levels, the anterior horn cell, the root or plexus, the peripheral nerve, the neuromuscular junction and the muscle, and each level has a signature in the distribution of weakness, the presence or absence of sensory loss, the reflexes, the pattern of wasting and fasciculation, the fatigability and the electrophysiology. Motor neuron disease combines lower motor neuron signs with upper motor neuron signs and spares sensation; neuropathy is length-dependent and sensory; radiculopathy follows a root and its reflex; junction disease fluctuates and spares reflexes and sensation; and myopathy is proximal, symmetric and painless with normal sensation. Nerve conduction studies and electromyography then confirm the level and separate axonal from demyelinating disease.",
+  "sections": [
+    {
+      "heading": "Anterior horn cell and root",
+      "body": "Motor neuron disease produces asymmetric wasting, fasciculation and weakness beginning in one limb or the bulbar muscles, with brisk reflexes in wasted muscles and extensor plantars from the accompanying upper motor neuron degeneration, and no sensory loss; a split hand with wasting of the thenar side, a brisk jaw jerk and a wasted fasciculating tongue are characteriztic, and EMG shows widespread denervation and reinnervation in three regions. Radiculopathy produces pain radiating along a dermatome, weakness in a myotome that crosses several nerves (C7 weakens triceps, wrist flexors and finger extensors), sensory loss in the dermatome and loss of the corresponding reflex (C5-6 biceps and brachioradialis, C7 triceps, L3-4 knee, S1 ankle); the sensory nerve action potential is normal because the lesion is proximal to the dorsal root ganglion, the finding that separates a root from a plexus lesion."
+    },
+    {
+      "heading": "Plexus and peripheral nerve",
+      "body": "Plexopathy produces weakness and sensory loss in the territory of several nerves and several roots at once (the upper trunk: C5-6 muscles of the shoulder and elbow flexion; the lower trunk: intrinsic hand muscles and the medial forearm), with reduced sensory potentials because the lesion is distal to the ganglion; trauma, tumor infiltration, radiation and the inflammatory neuralgic amyotrophy are the causes. Mononeuropathies follow one nerve's territory and are usually entrapments at known sites (median at the carpal tunnel, ulnar at the elbow, radial at the spiral groove, peroneal at the fibular neck), and mononeuritis multiplex from vasculitis picks off nerves one by one. Polyneuropathy is length-dependent and symmetric, beginning in the feet with sensory loss, absent ankle jerks and later weakness; axonal neuropathies (diabetes, alcohol, drugs) reduce amplitudes, whereas demyelinating neuropathies (Guillain-Barre, CIDP, hereditary) slow conduction and block it, and a rapidly ascending paralysis with areflexia is Guillain-Barre until proved otherwise."
+    },
+    {
+      "heading": "Neuromuscular junction and muscle",
+      "body": "Myasthenia gravis produces fatigable weakness of the eyelids, extraocular muscles, face, bulbar muscles and proximal limbs that worsens through the day and with exercise and improves with rest, with normal reflexes and sensation; acetylcholine receptor or MuSK antibodies, decrement on repetitive stimulation and jitter on single-fiber EMG confirm it, and a thymoma must be sought. Lambert-Eaton syndrome is the presynaptic mirror image: proximal weakness that improves briefly with exercise, absent reflexes that return after contraction, dry mouth and an underlying small cell lung cancer, with increment on high-frequency stimulation. Botulism descends from the cranial nerves with dilated pupils. Myopathies produce symmetric proximal weakness (difficulty rising from a chair, climbing stairs, lifting the arms) with preserved reflexes until late, normal sensation, sometimes myalgia, a raised creatine kinase and small polyphasic motor units on EMG; inflammatory, toxic (statins), endocrine, dystrophic and metabolic causes are separated by distribution, rash, family history and biopsy."
+    },
+    {
+      "heading": "The examination and the electrophysiology",
+      "body": "The bedside sequence is: is the weakness upper or lower motor neuron; if lower, is there sensory loss (nerve, root, plexus) or not (anterior horn, junction, muscle); is the distribution distal and symmetric (polyneuropathy), proximal and symmetric (myopathy or junction), in one nerve or root, or multifocal; are reflexes lost early (neuropathy, Lambert-Eaton, Guillain-Barre) or preserved (myopathy, myasthenia, motor neuron disease early); and does it fatigue or fluctuate (junction). Nerve conduction studies separate axonal loss (small amplitudes) from demyelination (slow velocities, prolonged distal latencies and F waves, conduction block) and localize entrapments; EMG separates neurogenic (large, reduced-recruitment units with fibrillations) from myopathic (small, early-recruiting units) patterns and finds subclinical denervation in motor neuron disease. Creatine kinase, antibody panels, genetic testing, nerve or muscle biopsy and imaging of the root or plexus complete the localization."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-als-pattern",
-   "syn-guillain-barre",
-   "syn-myasthenia-gravis",
-   "syn-lambert-eaton",
-   "syn-myopathy-pattern",
-   "syn-length-dependent-polyneuropathy",
-   "syn-radiculopathy-cervical",
-   "syn-radiculopathy-lumbosacral",
-   "syn-carpal-tunnel",
-   "syn-mononeuritis-multiplex"
+  "keyPoints": [
+    "Sensory loss excludes anterior horn cell, junction and muscle; its absence with lower motor neuron signs points to them",
+    "A normal sensory nerve action potential in a numb dermatome means the lesion is at the root, proximal to the ganglion",
+    "Fatigable ptosis and diplopia with normal reflexes is myasthenia; proximal weakness that improves with exercise and returns reflexes is Lambert-Eaton",
+    "Length-dependent symmetric sensory loss with absent ankle jerks is polyneuropathy; asymmetric wasting with brisk reflexes is motor neuron disease",
+    "Proximal, symmetric, painless weakness with normal sensation and a raised creatine kinase is muscle"
   ],
-  "topicIds": [
-   "topic-nerve-injury-regeneration",
-   "topic-neurotransmitter-systems"
-  ]
- },
- "pearls": [
-  "Look at the tongue, the hands and the gait before touching the reflex hammer: fasciculation, split hand and foot drop tell the level",
-  "Ascending weakness with lost reflexes is Guillain-Barre: measure the vital capacity, not just the strength",
-  "Do not stop a statin without a creatine kinase, and do not blame the statin without one"
- ],
- "pitfalls": [
-  "Myasthenia has normal reflexes and no wasting; a wasted hand with brisk reflexes is motor neuron disease, however fatigable the patient feels"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 15,
-   "pages": [
-    129,
-    140
-   ]
+  "meshIds": [
+    "brachial-plexus-l",
+    "brachial-plexus-r",
+    "median-nerve-l",
+    "median-nerve-r",
+    "ulnar-nerve-l",
+    "ulnar-nerve-r",
+    "sciatic-nerve-l",
+    "sciatic-nerve-r",
+    "spinal-grey-anterior-horn"
+  ],
+  "related": {
+    "structureIds": [
+      "spinal-grey-anterior-horn",
+      "dorsal-root-ganglion",
+      "plexus-brachial",
+      "plexus-lumbosacral",
+      "neuromuscular-junction",
+      "motor-unit",
+      "nerve-median",
+      "nerve-ulnar",
+      "nerve-common-peroneal"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-als-pattern",
+      "syn-guillain-barre",
+      "syn-myasthenia-gravis",
+      "syn-lambert-eaton",
+      "syn-myopathy-pattern",
+      "syn-length-dependent-polyneuropathy",
+      "syn-radiculopathy-cervical",
+      "syn-radiculopathy-lumbosacral",
+      "syn-carpal-tunnel",
+      "syn-mononeuritis-multiplex"
+    ],
+    "topicIds": [
+      "topic-nerve-injury-regeneration",
+      "topic-neurotransmitter-systems"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    166
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 27,
-   "pages": [
-    281,
-    288
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 28,
-   "pages": [
-    289,
-    292
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 29,
-   "pages": [
-    293,
-    298
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    299,
-    308
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    71,
-    130
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    165,
-    167
-   ]
+  "pearls": [
+    "Look at the tongue, the hands and the gait before touching the reflex hammer: fasciculation, split hand and foot drop tell the level",
+    "Ascending weakness with lost reflexes is Guillain-Barre: measure the vital capacity, not just the strength",
+    "Do not stop a statin without a creatine kinase, and do not blame the statin without one"
+  ],
+  "pitfalls": [
+    "Myasthenia has normal reflexes and no wasting; a wasted hand with brisk reflexes is motor neuron disease, however fatigable the patient feels"
+  ],
+  "citations": [
+    {
+      "ref": "sp-myopathy",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-motor-neuron-disease",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-neuromuscular-junction",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "neuromuscular",
+    "EMG",
+    "localization"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "Imaging is reserved for the root and plexus: MRI of the spine for radiculopathy, MR neurography or ultrasound of the plexus and entrapment sites, chest CT for thymoma and lung cancer, and muscle MRI for the pattern of edema and fatty replacement in myopathy; the main tests are electrophysiological.",
+    "pathology": [
+      {
+        "pathology": "Cervical or lumbar radiculopathy",
+        "modality": "MRI",
+        "finding": "Disc protrusion or foraminal stenosis compressing the root at the level predicted by the dermatome and reflex; asymptomatic degenerative change is common, so the clinical level rules.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Brachial plexopathy",
+        "modality": "MRI",
+        "finding": "Thickening and T2 hyperintensity of the trunks or cords with enhancement in inflammatory or infiltrative disease; ultrasound shows hourglass constrictions in neuralgic amyotrophy.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Inflammatory myopathy",
+        "modality": "MRI",
+        "finding": "Symmetric muscle edema on STIR in the thighs with fatty replacement in chronic disease; guides the biopsy site.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Thymoma in myasthenia gravis",
+        "modality": "CT",
+        "finding": "Anterior mediastinal mass on chest CT in a patient with acetylcholine receptor antibodies.",
+        "sequence": "CT contrast"
+      }
+    ]
   }
- ],
- "tags": [
-  "neuromuscular",
-  "EMG",
-  "localization"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "Imaging is reserved for the root and plexus: MRI of the spine for radiculopathy, MR neurography or ultrasound of the plexus and entrapment sites, chest CT for thymoma and lung cancer, and muscle MRI for the pattern of edema and fatty replacement in myopathy; the main tests are electrophysiological.",
-  "pathology": [
-   {
-    "pathology": "Cervical or lumbar radiculopathy",
-    "modality": "MRI",
-    "finding": "Disc protrusion or foraminal stenosis compressing the root at the level predicted by the dermatome and reflex; asymptomatic degenerative change is common, so the clinical level rules.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Brachial plexopathy",
-    "modality": "MRI",
-    "finding": "Thickening and T2 hyperintensity of the trunks or cords with enhancement in inflammatory or infiltrative disease; ultrasound shows hourglass constrictions in neuralgic amyotrophy.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Inflammatory myopathy",
-    "modality": "MRI",
-    "finding": "Symmetric muscle edema on STIR in the thighs with fatty replacement in chronic disease; guides the biopsy site.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Thymoma in myasthenia gravis",
-    "modality": "CT",
-    "finding": "Anterior mediastinal mass on chest CT in a patient with acetylcholine receptor antibodies.",
-    "sequence": "CT contrast"
-   }
-  ]
- }
 }

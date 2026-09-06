@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-polyneuropathy",
- "term": "Polyneuropathy",
- "definition": "Generalized disease of the peripheral nerves. Length-dependent axonal neuropathies begin symmetrically in the toes and ascend in a stocking-glove pattern; demyelinating neuropathies produce proximal and distal weakness with areflexia and slowed conduction.",
- "related": [
-  "g-mononeuropathy"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 27,
-   "pages": [
-    283,
-    287
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-polyneuropathy",
+  "term": "Polyneuropathy",
+  "definition": "Generalized disease of the peripheral nerves. Length-dependent axonal neuropathies begin symmetrically in the toes and ascend in a stocking-glove pattern; demyelinating neuropathies produce proximal and distal weakness with areflexia and slowed conduction.",
+  "related": [
+    "g-mononeuropathy"
+  ],
+  "citations": [
+    {
+      "ref": "sp-neuropathy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-electrodiagnostic-evaluation-of-peripheral-neuropathy",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-electrodiagnostic-evaluation-of-acute-inflammatory-demyelinat",
+      "section": "Introduction"
+    }
+  ]
 }

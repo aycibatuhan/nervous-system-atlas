@@ -1,153 +1,141 @@
 {
- "kind": "structure",
- "id": "corona-radiata",
- "name": "Corona radiata",
- "synonyms": [],
- "system": "cerebrum",
- "meshIds": [
-  "cerebral-white-matter-l",
-  "cerebral-white-matter-r"
- ],
- "summary": "The fan of projection fibers that spreads upward and outward from the internal capsule into the centrum semiovale to reach every part of the cortex, interweaving with the callosal and association fibers. It carries the corticospinal, corticobulbar and corticopontine fibers descending from the motor areas and the thalamocortical radiations ascending to the sensory, visual and auditory cortices. Lacunar infarcts and the internal watershed lie here, and subcortical small vessel disease appears in it as the periventricular and deep white matter hyperintensities of ageing.",
- "anatomy": {
-  "location": "Deep white matter of each hemisphere above the internal capsule and lateral to the lateral ventricles, converging downward toward the capsule and fanning upward into the centrum semiovale beneath the cortex.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-dcml"
-  ]
- },
- "function": "Conduction of projection fibers between the cortex and the internal capsule: motor outflow and sensory inflow for the whole hemisphere.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "arteries-lenticulostriate",
-   "artery-aca"
+  "kind": "structure",
+  "id": "corona-radiata",
+  "name": "Corona radiata",
+  "synonyms": [],
+  "system": "cerebrum",
+  "meshIds": [
+    "cerebral-white-matter-l",
+    "cerebral-white-matter-r"
   ],
-  "territories": [
-   "territory-mca",
-   "territory-watershed"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -10,
-     "z": 30
-    },
-    "label": "corona radiata lateral to the body of the lateral ventricle"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 25,
-     "y": -10,
-     "z": 30
-    },
-    "label": "fibers fanning from the internal capsule to the cortex"
-   }
-  ],
-  "normalAppearance": "Deep white matter lateral to the ventricles on axial FLAIR; punctate and confluent FLAIR hyperintensities here reflect small vessel disease, and a linear chain of DWI lesions parallel to the ventricle marks an internal watershed infarct.",
-  "pathology": [
-   {
-    "pathology": "Lacunar infarct of the corona radiata",
-    "modality": "MRI",
-    "finding": "Small restriction in the deep white matter lateral to the ventricle; pure motor or ataxic hemiparesis.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Internal watershed infarcts",
-    "modality": "MRI",
-    "finding": "String of small lesions in the corona radiata on the side of a carotid stenosis.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Small vessel disease (leukoaraiosis)",
-    "modality": "MRI",
-    "finding": "Confluent periventricular and deep white matter FLAIR hyperintensity with lacunes and microbleeds.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Multiple sclerosis",
-    "modality": "MRI",
-    "finding": "Ovoid periventricular and juxtacortical FLAIR lesions.",
-    "sequence": "FLAIR"
-   }
-  ],
-  "sequenceOfChoice": "FLAIR and DWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemiparesis, often with ataxia",
-    "side": "contralateral",
-    "mechanism": "Corticospinal and corticopontine fibers"
-   },
-   {
-    "deficit": "Gait disturbance, cognitive slowing and pseudobulbar affect with diffuse disease",
-    "side": "bilateral",
-    "mechanism": "Bilateral subcortical small vessel disease"
-   },
-   {
-    "deficit": "Hemisensory loss",
-    "side": "contralateral",
-    "mechanism": "Thalamocortical radiation"
-   }
-  ],
-  "examination": [
-   "Power and coordination",
-   "Gait (short-stepped, wide-based in small vessel disease)",
-   "Cognitive speed and executive testing",
-   "Vascular risk factor review"
-  ],
-  "syndromes": [
-   "syn-lacunar-ataxic-hemiparesis",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Ataxic hemiparesis localizes to the corona radiata or capsule as often as to the pons",
-   "A chain of small infarcts lateral to the ventricle means a proximal stenosis, not many emboli"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    264,
-    265
-   ]
+  "summary": "The fan of projection fibers that spreads upward and outward from the internal capsule into the centrum semiovale to reach every part of the cortex, interweaving with the callosal and association fibers. It carries the corticospinal, corticobulbar and corticopontine fibers descending from the motor areas and the thalamocortical radiations ascending to the sensory, visual and auditory cortices. Lacunar infarcts and the internal watershed lie here, and subcortical small vessel disease appears in it as the periventricular and deep white matter hyperintensities of ageing.",
+  "anatomy": {
+    "location": "Deep white matter of each hemisphere above the internal capsule and lateral to the lateral ventricles, converging downward toward the capsule and fanning upward into the centrum semiovale beneath the cortex.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    34,
-    34
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-dcml"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    63
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "white-matter"
- ],
- "status": "draft",
- "latin": "Corona radiata",
- "subsystem": "lobe-white-matter"
+  "function": "Conduction of projection fibers between the cortex and the internal capsule: motor outflow and sensory inflow for the whole hemisphere.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "arteries-lenticulostriate",
+      "artery-aca"
+    ],
+    "territories": [
+      "territory-mca",
+      "territory-watershed"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -10,
+          "z": 30
+        },
+        "label": "corona radiata lateral to the body of the lateral ventricle"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 25,
+          "y": -10,
+          "z": 30
+        },
+        "label": "fibers fanning from the internal capsule to the cortex"
+      }
+    ],
+    "normalAppearance": "Deep white matter lateral to the ventricles on axial FLAIR; punctate and confluent FLAIR hyperintensities here reflect small vessel disease, and a linear chain of DWI lesions parallel to the ventricle marks an internal watershed infarct.",
+    "pathology": [
+      {
+        "pathology": "Lacunar infarct of the corona radiata",
+        "modality": "MRI",
+        "finding": "Small restriction in the deep white matter lateral to the ventricle; pure motor or ataxic hemiparesis.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Internal watershed infarcts",
+        "modality": "MRI",
+        "finding": "String of small lesions in the corona radiata on the side of a carotid stenosis.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Small vessel disease (leukoaraiosis)",
+        "modality": "MRI",
+        "finding": "Confluent periventricular and deep white matter FLAIR hyperintensity with lacunes and microbleeds.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Multiple sclerosis",
+        "modality": "MRI",
+        "finding": "Ovoid periventricular and juxtacortical FLAIR lesions.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "FLAIR and DWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemiparesis, often with ataxia",
+        "side": "contralateral",
+        "mechanism": "Corticospinal and corticopontine fibers"
+      },
+      {
+        "deficit": "Gait disturbance, cognitive slowing and pseudobulbar affect with diffuse disease",
+        "side": "bilateral",
+        "mechanism": "Bilateral subcortical small vessel disease"
+      },
+      {
+        "deficit": "Hemisensory loss",
+        "side": "contralateral",
+        "mechanism": "Thalamocortical radiation"
+      }
+    ],
+    "examination": [
+      "Power and coordination",
+      "Gait (short-stepped, wide-based in small vessel disease)",
+      "Cognitive speed and executive testing",
+      "Vascular risk factor review"
+    ],
+    "syndromes": [
+      "syn-lacunar-ataxic-hemiparesis",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Ataxic hemiparesis localizes to the corona radiata or capsule as often as to the pons",
+      "A chain of small infarcts lateral to the ventricle means a proximal stenosis, not many emboli"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-corticospinal-cord-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-lacunar-stroke",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "white-matter"
+  ],
+  "status": "draft",
+  "latin": "Corona radiata",
+  "subsystem": "lobe-white-matter"
 }

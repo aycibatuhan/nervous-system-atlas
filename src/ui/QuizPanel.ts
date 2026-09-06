@@ -1,5 +1,7 @@
 import type { App } from '../app.ts';
 import { h, clear } from './dom.ts';
+import { citeNode } from './cite.ts';
+import type { Citation } from '../types/content.ts';
 import { applyStates, setStructureVisible } from '../state/actions.ts';
 
 type Rec = Record<string, unknown>;
@@ -58,7 +60,7 @@ export class QuizPanel {
       h('div', { class: 'options' }, ...(q['options'] as Rec[]).map((o) => { const k = String(o['key']); const cls = given ? (k === correct ? 'opt right' : k === given ? 'opt wrong' : 'opt') : 'opt'; return h('button', { class: cls, onclick: () => this.choose(k) }, h('b', {}, k), ' ', String(o['text'])); })),
       given ? h('div', { class: given === correct ? 'reveal ok' : 'reveal bad' }, h('b', {}, given === correct ? 'Correct.' : `Not quite: the answer is ${correct}.`), h('p', {}, String(q['explanation'])),
         h('div', { class: 'chips' }, ...((targets['structureIds'] as string[]) ?? []).map((id) => this.link(id, 'structure')), ...((targets['syndromeIds'] as string[]) ?? []).map((id) => this.link(id, 'syndrome')), ...((targets['pathwayIds'] as string[]) ?? []).map((id) => this.link(id, 'pathway'))),
-        h('p', { class: 'muted small' }, 'Sources: ' + ((q['citations'] as Rec[]) ?? []).map((c) => `${this.app.content!.sources[String(c['book'])]?.cite ?? c['book']} ch. ${c['chapter']} pp. ${(c['pages'] as number[]).join('–')}`).join('; '))) : h('p', { class: 'muted small' }, 'Choose an answer (keys A–E). The relevant structures are highlighted in 3D after you answer.'),
+        h('div', { class: 'muted small' }, 'Sources: ', h('ul', { class: 'cites' }, ...(((q['citations'] as unknown as Citation[]) ?? []).map((c) => h('li', {}, citeNode(this.app.content?.bibliography, c))))))) : h('p', { class: 'muted small' }, 'Choose an answer (keys A–E). The relevant structures are highlighted in 3D after you answer.'),
       h('div', { class: 'quiz-nav' }, h('button', { disabled: this.index === 0 ? 'true' : null, onclick: () => this.go(-1) }, '◀ Previous'), h('button', { disabled: this.index >= items.length - 1 ? 'true' : null, onclick: () => this.go(1) }, 'Next ▶'), h('button', { onclick: () => { this.answered.clear(); this.go(-this.index); } }, 'Restart')),
     ));
   }

@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-core-penumbra-mismatch",
- "term": "Core-penumbra mismatch",
- "definition": "The difference between the irreversibly infarcted core (low blood volume or restricted diffusion) and the larger hypoperfused but viable penumbra on perfusion imaging; a large mismatch identifies patients who benefit from late thrombectomy.",
- "related": [
-  "g-penumbra",
-  "g-aspects"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-core-penumbra-mismatch",
+  "term": "Core-penumbra mismatch",
+  "definition": "The difference between the irreversibly infarcted core (low blood volume or restricted diffusion) and the larger hypoperfused but viable penumbra on perfusion imaging; a large mismatch identifies patients who benefit from late thrombectomy.",
+  "related": [
+    "g-penumbra",
+    "g-aspects"
+  ],
+  "citations": [
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-acute-stroke",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "Pathophysiology"
+    }
+  ]
 }

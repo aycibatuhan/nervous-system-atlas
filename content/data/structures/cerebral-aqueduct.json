@@ -1,143 +1,123 @@
 {
- "kind": "structure",
- "id": "cerebral-aqueduct",
- "name": "Cerebral aqueduct",
- "synonyms": [
-  "aqueduct of Sylvius"
- ],
- "system": "ventricles-csf",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "A 15 mm canal about 1 mm wide running through the midbrain from the third to the fourth ventricle, surrounded by the periaqueductal gray, with the tectum behind and the tegmentum in front. It is the narrowest point of the ventricular system and the commonest site of obstruction: congenital stenosis, tectal gliomas, pineal masses and post-hemorrhagic gliosis all produce hydrocephalus of the lateral and third ventricles with a normal fourth ventricle, the pattern known as triventricular hydrocephalus.",
- "anatomy": {
-  "location": "Midline midbrain, beginning at the posterior end of the third ventricle below the posterior commissure and opening into the fourth ventricle under the superior medullary velum; slightly kinked at the level of the colliculi.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Sole CSF passage from the third to the fourth ventricle; CSF pulses through it with each heartbeat, producing a flow void on T2.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca",
-   "artery-pca",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "cerebral-aqueduct",
+  "name": "Cerebral aqueduct",
+  "synonyms": [
+    "aqueduct of Sylvius"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -8
+  "system": "ventricles-csf",
+  "meshIds": [
+    "brainstem"
+  ],
+  "summary": "A 15 mm canal about 1 mm wide running through the midbrain from the third to the fourth ventricle, surrounded by the periaqueductal gray, with the tectum behind and the tegmentum in front. It is the narrowest point of the ventricular system and the commonest site of obstruction: congenital stenosis, tectal gliomas, pineal masses and post-hemorrhagic gliosis all produce hydrocephalus of the lateral and third ventricles with a normal fourth ventricle, the pattern known as triventricular hydrocephalus.",
+  "anatomy": {
+    "location": "Midline midbrain, beginning at the posterior end of the third ventricle below the posterior commissure and opening into the fourth ventricle under the superior medullary velum; slightly kinked at the level of the colliculi.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Sole CSF passage from the third to the fourth ventricle; CSF pulses through it with each heartbeat, producing a flow void on T2.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca",
+      "artery-pca",
+      "arteries-thalamoperforating"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -8
+        },
+        "label": "aqueduct running through the midbrain between tectum and tegmentum"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -8
+        },
+        "label": "central dot of CSF in the midbrain"
+      }
+    ],
+    "normalAppearance": "A dark flow void on T2 in the midline of the midbrain on sagittal images and a small central dot on axial slices; heavily T2-weighted CISS shows its lumen, and phase-contrast MRI quantifies flow. Absence of the flow void with triventricular dilatation suggests stenosis.",
+    "pathology": [
+      {
+        "pathology": "Aqueductal stenosis",
+        "modality": "MRI",
+        "finding": "Dilated lateral and third ventricles with a normal fourth, a narrowed or web-obstructed aqueduct on sagittal CISS and absent flow void; may present in adulthood.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Tectal glioma",
+        "modality": "MRI",
+        "finding": "T2-bright bulbous tectum compressing the aqueduct.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Aqueductal obstruction after hemorrhage or meningitis",
+        "modality": "MRI",
+        "finding": "Gliotic narrowing with the same triventricular pattern.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T2/CISS through the midline; phase-contrast CSF flow study"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Triventricular hydrocephalus: headache, papilledema, gait disturbance",
+        "side": "bilateral",
+        "mechanism": "Obstruction at the aqueduct spares the fourth ventricle"
+      },
+      {
+        "deficit": "Parinaud syndrome",
+        "side": "bilateral",
+        "mechanism": "Dilated third ventricle and suprapineal recess or the causative tectal mass pressing on the dorsal midbrain"
+      }
+    ],
+    "examination": [
+      "Papilledema",
+      "Up-gaze and pupillary light-near dissociation",
+      "Gait and cognition"
+    ],
+    "syndromes": [
+      "syn-hydrocephalus",
+      "syn-parinaud-dorsal-midbrain"
+    ],
+    "pearls": [
+      "Big lateral and third ventricles with a small fourth ventricle mean the block is at the aqueduct",
+      "Adult-onset aqueductal stenosis can masquerade as normal pressure hydrocephalus"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebral-aqueduct",
+      "section": "Structure and Function"
     },
-    "label": "aqueduct running through the midbrain between tectum and tegmentum"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -8
+    {
+      "ref": "sp-ventricular-system",
+      "section": "Structure and Function"
     },
-    "label": "central dot of CSF in the midbrain"
-   }
+    {
+      "ref": "sp-cerebrospinal-fluid",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A dark flow void on T2 in the midline of the midbrain on sagittal images and a small central dot on axial slices; heavily T2-weighted CISS shows its lumen, and phase-contrast MRI quantifies flow. Absence of the flow void with triventricular dilatation suggests stenosis.",
-  "pathology": [
-   {
-    "pathology": "Aqueductal stenosis",
-    "modality": "MRI",
-    "finding": "Dilated lateral and third ventricles with a normal fourth, a narrowed or web-obstructed aqueduct on sagittal CISS and absent flow void; may present in adulthood.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Tectal glioma",
-    "modality": "MRI",
-    "finding": "T2-bright bulbous tectum compressing the aqueduct.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Aqueductal obstruction after hemorrhage or meningitis",
-    "modality": "MRI",
-    "finding": "Gliotic narrowing with the same triventricular pattern.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "csf"
   ],
-  "sequenceOfChoice": "Sagittal T2/CISS through the midline; phase-contrast CSF flow study"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Triventricular hydrocephalus: headache, papilledema, gait disturbance",
-    "side": "bilateral",
-    "mechanism": "Obstruction at the aqueduct spares the fourth ventricle"
-   },
-   {
-    "deficit": "Parinaud syndrome",
-    "side": "bilateral",
-    "mechanism": "Dilated third ventricle and suprapineal recess or the causative tectal mass pressing on the dorsal midbrain"
-   }
-  ],
-  "examination": [
-   "Papilledema",
-   "Up-gaze and pupillary light-near dissociation",
-   "Gait and cognition"
-  ],
-  "syndromes": [
-   "syn-hydrocephalus",
-   "syn-parinaud-dorsal-midbrain"
-  ],
-  "pearls": [
-   "Big lateral and third ventricles with a small fourth ventricle mean the block is at the aqueduct",
-   "Adult-onset aqueductal stenosis can masquerade as normal pressure hydrocephalus"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    445,
-    445
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    455,
-    459
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    31
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    272
-   ]
-  }
- ],
- "tags": [
-  "csf"
- ],
- "status": "draft",
- "latin": "Aqueductus cerebri",
- "subsystem": "ventricles"
+  "status": "draft",
+  "latin": "Aqueductus cerebri",
+  "subsystem": "ventricles"
 }

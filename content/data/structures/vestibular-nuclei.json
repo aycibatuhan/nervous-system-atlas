@@ -1,193 +1,173 @@
 {
- "kind": "structure",
- "id": "vestibular-nuclei",
- "name": "Vestibular nuclei",
- "synonyms": [
-  "superior, lateral (Deiters), medial and inferior vestibular nuclei"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "Four nuclei beneath the lateral part of the fourth ventricular floor at the pontomedullary junction receive the vestibular nerve and cerebellar input and distribute it to the eye movement nuclei (through the MLF), the spinal cord (vestibulospinal tracts), the cerebellum and the thalamus. They generate the vestibulo-ocular reflex that keeps vision stable during head movement and the postural reflexes that keep us upright. Their involvement is why vertigo, nystagmus and vomiting open the lateral medullary and AICA syndromes.",
- "anatomy": {
-  "location": "Lateral floor of the fourth ventricle (vestibular area) from the upper medulla into the lower pons, medial to the inferior cerebellar peduncle and lateral to the solitary and dorsal vagal nuclei.",
-  "subdivisions": [
-   {
-    "name": "Superior nucleus",
-    "note": "vestibulo-ocular reflex via the MLF"
-   },
-   {
-    "name": "Lateral (Deiters) nucleus",
-    "note": "lateral vestibulospinal tract; extensor tone against gravity"
-   },
-   {
-    "name": "Medial nucleus",
-    "note": "medial vestibulospinal tract and MLF; head–eye coordination"
-   },
-   {
-    "name": "Inferior nucleus",
-    "note": "integration with the cerebellum and spinal input"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cn-08-vestibulocochlear",
-    "note": "vestibular ganglion"
-   },
-   {
-    "from": "cerebellum",
-    "via": "flocculonodular lobe and fastigial nucleus"
-   }
+  "kind": "structure",
+  "id": "vestibular-nuclei",
+  "name": "Vestibular nuclei",
+  "synonyms": [
+    "superior, lateral (Deiters), medial and inferior vestibular nuclei"
   ],
-  "efferents": [
-   {
-    "to": "oculomotor, trochlear, abducens nuclei",
-    "via": "medial-longitudinal-fasciculus"
-   },
-   {
-    "to": "spinal-cord",
-    "via": "vestibulospinal tracts"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-vestibular-vor",
-   "pathway-vestibulospinal"
-  ]
- },
- "function": "Sense of head position and motion; vestibulo-ocular and vestibulospinal reflexes; input to the cerebellum and to conscious vestibular perception in the thalamus and cortex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica",
-   "artery-vertebral"
-  ],
-  "territories": [
-   "territory-pica-lateral-medulla",
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": -42,
-     "z": -40
+  "summary": "Four nuclei beneath the lateral part of the fourth ventricular floor at the pontomedullary junction receive the vestibular nerve and cerebellar input and distribute it to the eye movement nuclei (through the MLF), the spinal cord (vestibulospinal tracts), the cerebellum and the thalamus. They generate the vestibulo-ocular reflex that keeps vision stable during head movement and the postural reflexes that keep us upright. Their involvement is why vertigo, nystagmus and vomiting open the lateral medullary and AICA syndromes.",
+  "anatomy": {
+    "location": "Lateral floor of the fourth ventricle (vestibular area) from the upper medulla into the lower pons, medial to the inferior cerebellar peduncle and lateral to the solitary and dorsal vagal nuclei.",
+    "subdivisions": [
+      {
+        "name": "Superior nucleus",
+        "note": "vestibulo-ocular reflex via the MLF"
+      },
+      {
+        "name": "Lateral (Deiters) nucleus",
+        "note": "lateral vestibulospinal tract; extensor tone against gravity"
+      },
+      {
+        "name": "Medial nucleus",
+        "note": "medial vestibulospinal tract and MLF; head–eye coordination"
+      },
+      {
+        "name": "Inferior nucleus",
+        "note": "integration with the cerebellum and spinal input"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "cn-08-vestibulocochlear",
+        "note": "vestibular ganglion"
+      },
+      {
+        "from": "cerebellum",
+        "via": "flocculonodular lobe and fastigial nucleus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "oculomotor, trochlear, abducens nuclei",
+        "via": "medial-longitudinal-fasciculus"
+      },
+      {
+        "to": "spinal-cord",
+        "via": "vestibulospinal tracts"
+      }
+    ],
+    "pathways": [
+      "pathway-vestibular-vor",
+      "pathway-vestibulospinal"
+    ]
+  },
+  "function": "Sense of head position and motion; vestibulo-ocular and vestibulospinal reflexes; input to the cerebellum and to conscious vestibular perception in the thalamus and cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica",
+      "artery-vertebral"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla",
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": -42,
+          "z": -40
+        },
+        "label": "lateral floor of the fourth ventricle at the pontomedullary junction"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 12,
+          "y": -42,
+          "z": -40
+        },
+        "label": "vestibular area under the lateral recess"
+      }
+    ],
+    "normalAppearance": "Not resolved on routine MRI; the region is the lateral ventricular floor near the lateral recess. In a patient with acute vertigo, a normal DWI in the first 48 hours does not exclude a small infarct here.",
+    "pathology": [
+      {
+        "pathology": "Lateral medullary or AICA infarct",
+        "modality": "MRI",
+        "finding": "Dorsolateral medullary or lateral pontine restricted diffusion in a patient with acute vestibular syndrome; HINTS examination is more sensitive than early DWI.",
+        "sequence": "DWI",
+        "pitfalls": "Up to a fifth of small posterior fossa infarcts are DWI-negative in the first two days"
+      },
+      {
+        "pathology": "Demyelination of the vestibular area",
+        "modality": "MRI",
+        "finding": "Small FLAIR lesion in the dorsolateral pontomedullary junction with vertigo and nystagmus.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "DWI (repeat after 48 h if negative and central signs are present); HINTS bedside battery"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Vertigo, nausea and vomiting",
+        "side": "n/a",
+        "mechanism": "Asymmetric vestibular tone"
+      },
+      {
+        "deficit": "Nystagmus that changes direction with gaze, or vertical or torsional nystagmus",
+        "side": "n/a",
+        "mechanism": "Central vestibular nuclei rather than the labyrinth"
+      },
+      {
+        "deficit": "Lateropulsion and ipsilateral falling",
+        "side": "ipsilateral",
+        "mechanism": "Vestibulospinal imbalance"
+      },
+      {
+        "deficit": "Skew deviation and ocular tilt reaction",
+        "side": "n/a",
+        "mechanism": "Central otolithic pathways"
+      }
+    ],
+    "examination": [
+      "HINTS: head impulse test (normal in central lesions), nystagmus direction, test of skew",
+      "Gait and Romberg",
+      "Hearing (preserved in medullary lesions, lost in AICA lesions)"
+    ],
+    "syndromes": [
+      "syn-wallenberg-lateral-medullary",
+      "syn-aica-lateral-pontine",
+      "syn-central-vs-peripheral-vertigo"
+    ],
+    "pearls": [
+      "A normal head impulse with direction-changing nystagmus and skew deviation means the vertigo is central",
+      "Vertigo that comes with dysphagia, Horner or crossed sensory loss is never labyrinthine"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-nucleus-vestibular",
+      "section": "Structure and Function"
     },
-    "label": "lateral floor of the fourth ventricle at the pontomedullary junction"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 12,
-     "y": -42,
-     "z": -40
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
     },
-    "label": "vestibular area under the lateral recess"
-   }
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not resolved on routine MRI; the region is the lateral ventricular floor near the lateral recess. In a patient with acute vertigo, a normal DWI in the first 48 hours does not exclude a small infarct here.",
-  "pathology": [
-   {
-    "pathology": "Lateral medullary or AICA infarct",
-    "modality": "MRI",
-    "finding": "Dorsolateral medullary or lateral pontine restricted diffusion in a patient with acute vestibular syndrome; HINTS examination is more sensitive than early DWI.",
-    "sequence": "DWI",
-    "pitfalls": "Up to a fifth of small posterior fossa infarcts are DWI-negative in the first two days"
-   },
-   {
-    "pathology": "Demyelination of the vestibular area",
-    "modality": "MRI",
-    "finding": "Small FLAIR lesion in the dorsolateral pontomedullary junction with vertigo and nystagmus.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "DWI (repeat after 48 h if negative and central signs are present); HINTS bedside battery"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Vertigo, nausea and vomiting",
-    "side": "n/a",
-    "mechanism": "Asymmetric vestibular tone"
-   },
-   {
-    "deficit": "Nystagmus that changes direction with gaze, or vertical or torsional nystagmus",
-    "side": "n/a",
-    "mechanism": "Central vestibular nuclei rather than the labyrinth"
-   },
-   {
-    "deficit": "Lateropulsion and ipsilateral falling",
-    "side": "ipsilateral",
-    "mechanism": "Vestibulospinal imbalance"
-   },
-   {
-    "deficit": "Skew deviation and ocular tilt reaction",
-    "side": "n/a",
-    "mechanism": "Central otolithic pathways"
-   }
-  ],
-  "examination": [
-   "HINTS: head impulse test (normal in central lesions), nystagmus direction, test of skew",
-   "Gait and Romberg",
-   "Hearing (preserved in medullary lesions, lost in AICA lesions)"
-  ],
-  "syndromes": [
-   "syn-wallenberg-lateral-medullary",
-   "syn-aica-lateral-pontine",
-   "syn-central-vs-peripheral-vertigo"
-  ],
-  "pearls": [
-   "A normal head impulse with direction-changing nystagmus and skew deviation means the vertigo is central",
-   "Vertigo that comes with dysphagia, Horner or crossed sensory loss is never labyrinthine"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    200,
-    207
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    339,
-    341
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    79,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    107,
-    112
-   ]
+  "status": "draft",
+  "latin": "Nuclei vestibulares",
+  "subsystem": "medulla",
+  "level": {
+    "region": "medulla"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Nuclei vestibulares",
- "subsystem": "medulla",
- "level": {
-  "region": "medulla"
- }
 }

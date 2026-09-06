@@ -1,174 +1,154 @@
 {
- "kind": "structure",
- "id": "superior-colliculus",
- "name": "Superior colliculus",
- "synonyms": [
-  "optic tectum"
- ],
- "system": "brainstem",
- "meshIds": [
-  "superior-colliculus-l",
-  "superior-colliculus-r"
- ],
- "summary": "The upper pair of bumps on the tectum, a layered structure that maps the visual field and directs the eyes and head toward things of interest. Its superficial layers receive direct retinal and visual cortical input; its deep layers integrate auditory and somatosensory maps and send tectospinal, tectobulbar and tecto-reticular fibers that drive saccades and orienting movements. It lies next to the pretectal area and the posterior commissure, so tumors or hydrocephalus pressing on the dorsal midbrain combine up-gaze palsy with pupillary light-near dissociation.",
- "anatomy": {
-  "location": "Dorsal midbrain forming the rostral half of the tectum, behind the aqueduct and periaqueductal gray, below the pineal gland and the posterior commissure; the brachium of the superior colliculus links it to the lateral geniculate body.",
-  "subdivisions": [
-   {
-    "name": "Superficial layers",
-    "note": "retinotopic visual map from the retina and striate cortex"
-   },
-   {
-    "name": "Intermediate and deep layers",
-    "note": "multisensory motor map; saccade and head-turn commands to the PPRF, riMLF and spinal cord"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "retina and cortex-calcarine",
-    "via": "brachium of the superior colliculus"
-   }
+  "kind": "structure",
+  "id": "superior-colliculus",
+  "name": "Superior colliculus",
+  "synonyms": [
+    "optic tectum"
   ],
-  "efferents": [
-   {
-    "to": "spinal-cord (cervical)",
-    "via": "tectospinal tract, crossed"
-   },
-   {
-    "to": "pprf and rimlf",
-    "via": "tectobulbar fibers"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "superior-colliculus-l",
+    "superior-colliculus-r"
   ],
-  "pathways": [
-   "pathway-visual",
-   "pathway-tectospinal"
-  ]
- },
- "function": "Visual grasp reflex: orients eyes and head to novel stimuli; contributes to saccade generation and to blinking and avoidance responses to visual threat.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-sca",
-   "arteries-thalamoperforating"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -30,
-     "z": -2
+  "summary": "The upper pair of bumps on the tectum, a layered structure that maps the visual field and directs the eyes and head toward things of interest. Its superficial layers receive direct retinal and visual cortical input; its deep layers integrate auditory and somatosensory maps and send tectospinal, tectobulbar and tecto-reticular fibers that drive saccades and orienting movements. It lies next to the pretectal area and the posterior commissure, so tumors or hydrocephalus pressing on the dorsal midbrain combine up-gaze palsy with pupillary light-near dissociation.",
+  "anatomy": {
+    "location": "Dorsal midbrain forming the rostral half of the tectum, behind the aqueduct and periaqueductal gray, below the pineal gland and the posterior commissure; the brachium of the superior colliculus links it to the lateral geniculate body.",
+    "subdivisions": [
+      {
+        "name": "Superficial layers",
+        "note": "retinotopic visual map from the retina and striate cortex"
+      },
+      {
+        "name": "Intermediate and deep layers",
+        "note": "multisensory motor map; saccade and head-turn commands to the PPRF, riMLF and spinal cord"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "retina and cortex-calcarine",
+        "via": "brachium of the superior colliculus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "spinal-cord (cervical)",
+        "via": "tectospinal tract, crossed"
+      },
+      {
+        "to": "pprf and rimlf",
+        "via": "tectobulbar fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual",
+      "pathway-tectospinal"
+    ]
+  },
+  "function": "Visual grasp reflex: orients eyes and head to novel stimuli; contributes to saccade generation and to blinking and avoidance responses to visual threat.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-sca",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -30,
+          "z": -2
+        },
+        "label": "rostral tectal plate behind the aqueduct"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -2
+        },
+        "label": "superior colliculus above the inferior colliculus, under the pineal"
+      }
+    ],
+    "normalAppearance": "The colliculi form the posterior surface of the midbrain on sagittal T1 as two stacked bumps; the superior colliculus is the upper one, just below the pineal. Flattening of the tectum by hydrocephalus is best seen on sagittal images.",
+    "pathology": [
+      {
+        "pathology": "Tectal glioma",
+        "modality": "MRI",
+        "finding": "Bulbous T2-bright enlargement of the tectal plate compressing the aqueduct with hydrocephalus; often non-enhancing and indolent.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Pineal region tumor with dorsal midbrain compression",
+        "modality": "MRI",
+        "finding": "Mass in the pineal region flattening the superior colliculi and posterior commissure; Parinaud syndrome.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T2/T1 of the tectum and pineal region; look for aqueductal obstruction"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Up-gaze palsy and convergence-retraction nystagmus",
+        "side": "bilateral",
+        "mechanism": "Compression of the posterior commissure and adjacent pretectum (dorsal midbrain syndrome)"
+      },
+      {
+        "deficit": "Impaired visual orienting and saccades to the opposite side",
+        "side": "contralateral",
+        "mechanism": "Loss of the collicular motor map"
+      },
+      {
+        "deficit": "Light-near dissociation of the pupils",
+        "side": "bilateral",
+        "mechanism": "Neighboring pretectal nuclei"
+      }
+    ],
+    "examination": [
+      "Vertical saccades and pursuit; look for lid retraction and convergence-retraction nystagmus on attempted up-gaze",
+      "Pupil reactions to light and near",
+      "Test saccades to sudden peripheral targets"
+    ],
+    "syndromes": [
+      "syn-parinaud-dorsal-midbrain",
+      "syn-hydrocephalus"
+    ],
+    "pearls": [
+      "Up-gaze palsy in a young person with headache: think pineal tumor or hydrocephalus pressing on the tectum",
+      "Isolated colliculus lesions are rare; the syndrome you see is the dorsal midbrain (Parinaud) complex"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-superior-colliculus",
+      "section": "Structure and Function"
     },
-    "label": "rostral tectal plate behind the aqueduct"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -2
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
     },
-    "label": "superior colliculus above the inferior colliculus, under the pineal"
-   }
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The colliculi form the posterior surface of the midbrain on sagittal T1 as two stacked bumps; the superior colliculus is the upper one, just below the pineal. Flattening of the tectum by hydrocephalus is best seen on sagittal images.",
-  "pathology": [
-   {
-    "pathology": "Tectal glioma",
-    "modality": "MRI",
-    "finding": "Bulbous T2-bright enlargement of the tectal plate compressing the aqueduct with hydrocephalus; often non-enhancing and indolent.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Pineal region tumor with dorsal midbrain compression",
-    "modality": "MRI",
-    "finding": "Mass in the pineal region flattening the superior colliculi and posterior commissure; Parinaud syndrome.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "Sagittal T2/T1 of the tectum and pineal region; look for aqueductal obstruction"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Up-gaze palsy and convergence-retraction nystagmus",
-    "side": "bilateral",
-    "mechanism": "Compression of the posterior commissure and adjacent pretectum (dorsal midbrain syndrome)"
-   },
-   {
-    "deficit": "Impaired visual orienting and saccades to the opposite side",
-    "side": "contralateral",
-    "mechanism": "Loss of the collicular motor map"
-   },
-   {
-    "deficit": "Light-near dissociation of the pupils",
-    "side": "bilateral",
-    "mechanism": "Neighboring pretectal nuclei"
-   }
-  ],
-  "examination": [
-   "Vertical saccades and pursuit; look for lid retraction and convergence-retraction nystagmus on attempted up-gaze",
-   "Pupil reactions to light and near",
-   "Test saccades to sudden peripheral targets"
-  ],
-  "syndromes": [
-   "syn-parinaud-dorsal-midbrain",
-   "syn-hydrocephalus"
-  ],
-  "pearls": [
-   "Up-gaze palsy in a young person with headache: think pineal tumor or hydrocephalus pressing on the tectum",
-   "Isolated colliculus lesions are rare; the syndrome you see is the dorsal midbrain (Parinaud) complex"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    214
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    327,
-    329
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    98,
-    100
-   ]
+  "status": "draft",
+  "latin": "Colliculus superior",
+  "subsystem": "midbrain",
+  "level": {
+    "region": "midbrain"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Colliculus superior",
- "subsystem": "midbrain",
- "level": {
-  "region": "midbrain"
- }
 }

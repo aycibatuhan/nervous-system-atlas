@@ -1,158 +1,130 @@
 {
- "kind": "structure",
- "id": "territory-lenticulostriate",
- "name": "Lenticulostriate (deep MCA) territory",
- "synonyms": [],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-medial-lenticulostriate-l",
-  "territory-medial-lenticulostriate-r",
-  "territory-lateral-lenticulostriate-l",
-  "territory-lateral-lenticulostriate-r"
- ],
- "summary": "The deep territory of the perforating branches of the M1 and A1 segments: putamen, globus pallidus, caudate, and the anterior limb, genu and upper posterior limb of the internal capsule. It is the commonest site of lacunar infarcts and of hypertensive hemorrhage, and it produces motor syndromes without cortical signs.",
- "anatomy": {
-  "location": "Central hemisphere at the level of the frontal horns and bodies of the lateral ventricles: lentiform nucleus, caudate head and body, and the internal capsule between them; bounded laterally by the insular cortex and medially by the thalamus (a PCA/PComm territory).",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Carries the corticospinal and corticobulbar tracts and the thalamocortical projections through the internal capsule, and houses the striatum and pallidum of the motor loop.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-mca",
-   "artery-aca"
+  "kind": "structure",
+  "id": "territory-lenticulostriate",
+  "name": "Lenticulostriate (deep MCA) territory",
+  "synonyms": [],
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-medial-lenticulostriate-l",
+    "territory-medial-lenticulostriate-r",
+    "territory-lateral-lenticulostriate-l",
+    "territory-lateral-lenticulostriate-r"
   ],
-  "territories": [],
-  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 22,
-     "y": 5,
-     "z": 8
+  "summary": "The deep territory of the perforating branches of the M1 and A1 segments: putamen, globus pallidus, caudate, and the anterior limb, genu and upper posterior limb of the internal capsule. It is the commonest site of lacunar infarcts and of hypertensive hemorrhage, and it produces motor syndromes without cortical signs.",
+  "anatomy": {
+    "location": "Central hemisphere at the level of the frontal horns and bodies of the lateral ventricles: lentiform nucleus, caudate head and body, and the internal capsule between them; bounded laterally by the insular cortex and medially by the thalamus (a PCA/PComm territory).",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Carries the corticospinal and corticobulbar tracts and the thalamocortical projections through the internal capsule, and houses the striatum and pallidum of the motor loop.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-mca",
+      "artery-aca"
+    ],
+    "territories": [],
+    "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 22,
+          "y": 5,
+          "z": 8
+        },
+        "label": "lentiform nucleus and internal capsule at the level of the frontal horns"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 22,
+          "y": 5,
+          "z": 8
+        },
+        "label": "perforator territory between insula and thalamus"
+      }
+    ],
+    "normalAppearance": "A central region on axial slices at the level of the basal ganglia; lacunes appear as small round diffusion-bright dots here, and old ones as CSF-signal cavities.",
+    "pathology": [
+      {
+        "pathology": "Lacunar infarct",
+        "modality": "MRI",
+        "finding": "Round or oval diffusion restriction under 15–20 mm in the putamen, capsule or corona radiata.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Striatocapsular infarct",
+        "modality": "MRI",
+        "finding": "Comma-shaped infarct of the whole deep territory after transient M1 occlusion with cortical sparing.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Hypertensive putaminal hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense putaminal hematoma with capsular extension and possible ventricular rupture.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "DWI; non-contrast CT; SWI for microbleeds"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Pure motor hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Internal capsule corticospinal fibers"
+      },
+      {
+        "deficit": "Sensorimotor stroke",
+        "side": "contralateral",
+        "mechanism": "Posterior limb of the capsule adjoining the thalamus"
+      },
+      {
+        "deficit": "Hemiballismus or dystonia",
+        "side": "contralateral",
+        "mechanism": "Striatal and pallidal lesions"
+      }
+    ],
+    "examination": [
+      "Equal weakness of face, arm and leg",
+      "Absence of aphasia, neglect and field cut",
+      "Blood pressure and fundi"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-motor",
+      "syn-lacunar-sensorimotor",
+      "syn-hemiballismus"
+    ],
+    "pearls": [
+      "Lacunar syndromes are motor and sensory without cortical signs",
+      "Hypertension is the disease of this territory: microbleeds on SWI confirm the small-vessel arteriopathy"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-striate-arteries",
+      "section": "Structure and Function"
     },
-    "label": "lentiform nucleus and internal capsule at the level of the frontal horns"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 22,
-     "y": 5,
-     "z": 8
+    {
+      "ref": "sp-lacunar-stroke",
+      "section": "Pathophysiology"
     },
-    "label": "perforator territory between insula and thalamus"
-   }
+    {
+      "ref": "sp-recurrent-artery-of-heubner",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A central region on axial slices at the level of the basal ganglia; lacunes appear as small round diffusion-bright dots here, and old ones as CSF-signal cavities.",
-  "pathology": [
-   {
-    "pathology": "Lacunar infarct",
-    "modality": "MRI",
-    "finding": "Round or oval diffusion restriction under 15–20 mm in the putamen, capsule or corona radiata.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Striatocapsular infarct",
-    "modality": "MRI",
-    "finding": "Comma-shaped infarct of the whole deep territory after transient M1 occlusion with cortical sparing.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Hypertensive putaminal hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense putaminal hematoma with capsular extension and possible ventricular rupture.",
-    "sequence": "CT non-contrast"
-   }
+  "tags": [
+    "vascular",
+    "territory"
   ],
-  "sequenceOfChoice": "DWI; non-contrast CT; SWI for microbleeds"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Pure motor hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Internal capsule corticospinal fibers"
-   },
-   {
-    "deficit": "Sensorimotor stroke",
-    "side": "contralateral",
-    "mechanism": "Posterior limb of the capsule adjoining the thalamus"
-   },
-   {
-    "deficit": "Hemiballismus or dystonia",
-    "side": "contralateral",
-    "mechanism": "Striatal and pallidal lesions"
-   }
-  ],
-  "examination": [
-   "Equal weakness of face, arm and leg",
-   "Absence of aphasia, neglect and field cut",
-   "Blood pressure and fundi"
-  ],
-  "syndromes": [
-   "syn-lacunar-pure-motor",
-   "syn-lacunar-sensorimotor",
-   "syn-hemiballismus"
-  ],
-  "pearls": [
-   "Lacunar syndromes are motor and sensory without cortical signs",
-   "Hypertension is the disease of this territory: microbleeds on SWI confirm the small-vessel arteriopathy"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    474,
-    474
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    482
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    192,
-    195
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "territory"
- ],
- "status": "draft"
+  "status": "draft"
 }

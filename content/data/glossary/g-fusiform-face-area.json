@@ -1,11 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-fusiform-face-area",
- "term": "Fusiform face area",
- "definition": "A region of the right posterior fusiform gyrus that responds selectively to faces and extracts the configuration that identifies an individual; its damage produces prosopagnosia.",
- "related": [
-  "g-prosopagnosia",
-  "g-ventral-stream"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-fusiform-face-area",
+  "term": "Fusiform face area",
+  "definition": "A region of the right posterior fusiform gyrus that responds selectively to faces and extracts the configuration that identifies an individual; its damage produces prosopagnosia.",
+  "related": [
+    "g-prosopagnosia",
+    "g-ventral-stream"
+  ],
+  "citations": [
+    {
+      "ref": "sp-prosopagnosia"
+    },
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    }
+  ]
 }

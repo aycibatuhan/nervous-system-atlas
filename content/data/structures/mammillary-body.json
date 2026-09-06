@@ -1,148 +1,136 @@
 {
- "kind": "structure",
- "id": "mammillary-body",
- "name": "Mammillary bodies",
- "synonyms": [],
- "system": "diencephalon",
- "meshIds": [
-  "mammillary-body-l",
-  "mammillary-body-r",
-  "mammillothalamic-tract-l",
-  "mammillothalamic-tract-r"
- ],
- "summary": "Two small rounded nuclei on the undersurface of the hypothalamus behind the tuber cinereum, at the posterior boundary of the third ventricle floor. They receive the fornix from the hippocampus and send the mammillothalamic tract to the anterior thalamic nuclei and the mammillotegmental tract to the brainstem, completing the Papez circuit of memory. They are the most vulnerable structures in thiamine deficiency, shrinking in Wernicke–Korsakoff syndrome, and they serve as a landmark for the basilar tip and the interpeduncular fossa.",
- "anatomy": {
-  "location": "Posterior part of the hypothalamic floor in the interpeduncular cistern, in front of the posterior perforated substance and behind the infundibulum and tuber cinereum; each is about 5 mm across.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "hippocampus",
-    "via": "fornix"
-   }
+  "kind": "structure",
+  "id": "mammillary-body",
+  "name": "Mammillary bodies",
+  "synonyms": [],
+  "system": "diencephalon",
+  "meshIds": [
+    "mammillary-body-l",
+    "mammillary-body-r",
+    "mammillothalamic-tract-l",
+    "mammillothalamic-tract-r"
   ],
-  "efferents": [
-   {
-    "to": "thalamus-anterior-nuclei",
-    "via": "mammillothalamic tract"
-   },
-   {
-    "to": "brainstem tegmentum",
-    "via": "mammillotegmental tract"
-   }
-  ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Memory relay of the Papez circuit (hippocampus → fornix → mammillary body → anterior thalamus → cingulate); spatial memory and head-direction signals.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pcom",
-   "arteries-thalamoperforating",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -8,
-     "z": -14
-    },
-    "label": "mammillary body behind the infundibulum on the floor of the third ventricle"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -8,
-     "z": -14
-    },
-    "label": "paired bodies in the interpeduncular cistern"
-   }
-  ],
-  "normalAppearance": "Well seen as two small round gray nodules on sagittal and coronal T1 at the posterior floor of the third ventricle; the mammillothalamic tract runs up and back from them. Volume loss and FLAIR hyperintensity are the signs of thiamine deficiency.",
-  "pathology": [
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Acute FLAIR hyperintensity and enhancement of the mammillary bodies with medial thalamic and periaqueductal change; chronic atrophy in Korsakoff syndrome.",
-    "sequence": "FLAIR",
-    "timing": "Acute changes reverse with thiamine; atrophy is permanent"
-   },
-   {
-    "pathology": "Third ventricular tumor or surgery",
-    "modality": "MRI",
-    "finding": "Distortion of the floor with memory loss.",
-    "sequence": "T1"
-   }
-  ],
-  "sequenceOfChoice": "Coronal and sagittal T1/FLAIR; give thiamine on suspicion"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia with confabulation (Korsakoff)",
-    "side": "bilateral",
-    "mechanism": "Bilateral mammillary and anterior thalamic damage"
-   },
-   {
-    "deficit": "Impaired spatial memory",
-    "side": "bilateral",
-    "mechanism": "Mammillothalamic circuit"
-   }
-  ],
-  "examination": [
-   "Registration, recall and recognition memory",
-   "Ask about alcohol intake, vomiting, malnutrition and bariatric surgery",
-   "Ophthalmoplegia and ataxia as accompanying Wernicke signs"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Small mammillary bodies on MRI in an amnesic patient are the footprint of past Wernicke encephalopathy",
-   "Thiamine before glucose in any malnourished confused patient"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    373,
-    375
-   ]
+  "summary": "Two small rounded nuclei on the undersurface of the hypothalamus behind the tuber cinereum, at the posterior boundary of the third ventricle floor. They receive the fornix from the hippocampus and send the mammillothalamic tract to the anterior thalamic nuclei and the mammillotegmental tract to the brainstem, completing the Papez circuit of memory. They are the most vulnerable structures in thiamine deficiency, shrinking in Wernicke–Korsakoff syndrome, and they serve as a landmark for the basilar tip and the interpeduncular fossa.",
+  "anatomy": {
+    "location": "Posterior part of the hypothalamic floor in the interpeduncular cistern, in front of the posterior perforated substance and behind the infundibulum and tuber cinereum; each is about 5 mm across.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    302,
-    306
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "hippocampus",
+        "via": "fornix"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "thalamus-anterior-nuclei",
+        "via": "mammillothalamic tract"
+      },
+      {
+        "to": "brainstem tegmentum",
+        "via": "mammillotegmental tract"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    233
-   ]
-  }
- ],
- "tags": [
-  "diencephalon"
- ],
- "status": "draft",
- "latin": "Corpora mammillaria",
- "subsystem": "hypothalamus"
+  "function": "Memory relay of the Papez circuit (hippocampus → fornix → mammillary body → anterior thalamus → cingulate); spatial memory and head-direction signals.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pcom",
+      "arteries-thalamoperforating",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -8,
+          "z": -14
+        },
+        "label": "mammillary body behind the infundibulum on the floor of the third ventricle"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -8,
+          "z": -14
+        },
+        "label": "paired bodies in the interpeduncular cistern"
+      }
+    ],
+    "normalAppearance": "Well seen as two small round gray nodules on sagittal and coronal T1 at the posterior floor of the third ventricle; the mammillothalamic tract runs up and back from them. Volume loss and FLAIR hyperintensity are the signs of thiamine deficiency.",
+    "pathology": [
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Acute FLAIR hyperintensity and enhancement of the mammillary bodies with medial thalamic and periaqueductal change; chronic atrophy in Korsakoff syndrome.",
+        "sequence": "FLAIR",
+        "timing": "Acute changes reverse with thiamine; atrophy is permanent"
+      },
+      {
+        "pathology": "Third ventricular tumor or surgery",
+        "modality": "MRI",
+        "finding": "Distortion of the floor with memory loss.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Coronal and sagittal T1/FLAIR; give thiamine on suspicion"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia with confabulation (Korsakoff)",
+        "side": "bilateral",
+        "mechanism": "Bilateral mammillary and anterior thalamic damage"
+      },
+      {
+        "deficit": "Impaired spatial memory",
+        "side": "bilateral",
+        "mechanism": "Mammillothalamic circuit"
+      }
+    ],
+    "examination": [
+      "Registration, recall and recognition memory",
+      "Ask about alcohol intake, vomiting, malnutrition and bariatric surgery",
+      "Ophthalmoplegia and ataxia as accompanying Wernicke signs"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Small mammillary bodies on MRI in an amnesic patient are the footprint of past Wernicke encephalopathy",
+      "Thiamine before glucose in any malnourished confused patient"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-mammillary-bodies",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-thalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-thalamic-nuclei",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "diencephalon"
+  ],
+  "status": "draft",
+  "latin": "Corpora mammillaria",
+  "subsystem": "hypothalamus"
 }

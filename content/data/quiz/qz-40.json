@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-40",
- "type": "localize",
- "vignette": "A 68-year-old woman is admitted with sudden deep sleepiness. When roused she cannot look up, has no memory of the morning and drifts off again. Her pupils are sluggish. Strength and sensation are normal.",
- "stem": "Which vascular structure is responsible?",
- "options": [
-  {
-   "key": "A",
-   "text": "Right middle cerebral artery"
-  },
-  {
-   "key": "B",
-   "text": "Artery of Percheron (paramedian thalamic)"
-  },
-  {
-   "key": "C",
-   "text": "Left posterior inferior cerebellar artery"
-  },
-  {
-   "key": "D",
-   "text": "Anterior communicating artery"
-  },
-  {
-   "key": "E",
-   "text": "Superior sagittal sinus"
-  }
- ],
- "answer": "B",
- "explanation": "Hypersomnolence with vertical gaze palsy and amnesia and no long-tract signs is bilateral paramedian thalamic and rostral midbrain infarction, the territory of a single artery of Percheron arising from one P1 segment.",
- "targets": {
-  "structureIds": [
-   "thalamus-pulvinar-medial-centrolateral",
-   "territory-posterior-choroidal-thalamoperforating"
+  "kind": "quiz",
+  "id": "qz-40",
+  "type": "localize",
+  "vignette": "A 68-year-old woman is admitted with sudden deep sleepiness. When roused she cannot look up, has no memory of the morning and drifts off again. Her pupils are sluggish. Strength and sensation are normal.",
+  "stem": "Which vascular structure is responsible?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Right middle cerebral artery"
+    },
+    {
+      "key": "B",
+      "text": "Artery of Percheron (paramedian thalamic)"
+    },
+    {
+      "key": "C",
+      "text": "Left posterior inferior cerebellar artery"
+    },
+    {
+      "key": "D",
+      "text": "Anterior communicating artery"
+    },
+    {
+      "key": "E",
+      "text": "Superior sagittal sinus"
+    }
   ],
-  "syndromeIds": [
-   "syn-top-of-basilar"
+  "answer": "B",
+  "explanation": "Hypersomnolence with vertical gaze palsy and amnesia and no long-tract signs is bilateral paramedian thalamic and rostral midbrain infarction, the territory of a single artery of Percheron arising from one P1 segment.",
+  "targets": {
+    "structureIds": [
+      "thalamus-pulvinar-medial-centrolateral",
+      "territory-posterior-choroidal-thalamoperforating"
+    ],
+    "syndromeIds": [
+      "syn-top-of-basilar"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "thalamus-pulvinar-medial-centrolateral-l",
+    "thalamus-pulvinar-medial-centrolateral-r"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "thalamus-pulvinar-medial-centrolateral-l",
-  "thalamus-pulvinar-medial-centrolateral-r"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-basilar-artery-occlusion",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-vertebrobasilar-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-reticular-activating-system",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

@@ -1,180 +1,160 @@
 {
- "kind": "structure",
- "id": "gyrus-cingulate-posterior",
- "name": "Cingulate gyrus, posterior division",
- "synonyms": [
-  "posterior cingulate cortex",
-  "retrosplenial cortex",
-  "isthmus"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-cingulate-posterior-l",
-  "gyrus-cingulate-posterior-r"
- ],
- "summary": "The posterior cingulate gyrus lies above the posterior body and the splenium of the corpus callosum and continues below the splenium as the isthmus, joining the parahippocampal gyrus; it includes the posterior cingulate cortex (areas 23 and 31) and the retrosplenial cortex (areas 29 and 30). It is the posterior hub of the default mode network with the precuneus, essential for episodic memory retrieval, spatial navigation and self-related thought, and it is the first cortex to lose glucose metabolism in Alzheimer disease. It is supplied by the pericallosal branches of the anterior cerebral artery and by the posterior cerebral artery near the isthmus, and its lesions cause topographical disorientation and amnesia.",
- "anatomy": {
-  "location": "Medial surface above the posterior half of the corpus callosum and around the splenium, bounded above by the cingulate sulcus and the subparietal sulcus, continuous in front with the anterior division and below the splenium with the isthmus and the parahippocampal gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Anterior thalamic nuclei",
-    "via": "anterior thalamic radiation and cingulum"
-   },
-   {
-    "from": "Subiculum and hippocampus",
-    "via": "cingulum"
-   },
-   {
-    "from": "Precuneus and parietal cortex",
-    "via": "short association fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-cingulate-posterior",
+  "name": "Cingulate gyrus, posterior division",
+  "synonyms": [
+    "posterior cingulate cortex",
+    "retrosplenial cortex",
+    "isthmus"
   ],
-  "efferents": [
-   {
-    "to": "Entorhinal and parahippocampal cortex",
-    "via": "cingulum"
-   },
-   {
-    "to": "Medial prefrontal cortex",
-    "via": "cingulum"
-   },
-   {
-    "to": "Anterior thalamus",
-    "via": "corticothalamic fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-cingulate-posterior-l",
+    "gyrus-cingulate-posterior-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "The posterior cingulate and retrosplenial cortex link the hippocampal memory system with the parietal and prefrontal cortex: the retrosplenial cortex converts egocentric views into the allocentric map used for navigation and recognizes the orientation of familiar scenes, and the posterior cingulate retrieves episodic memories and supports the internally directed thought of the default mode. The region receives the anterior thalamic nuclei and the subiculum and projects through the cingulum to the entorhinal cortex, closing a limb of the Papez circuit. Damage produces an amnesia with prominent loss of direction in familiar places, and metabolic failure here is the earliest imaging sign of Alzheimer disease.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-pca"
+  "summary": "The posterior cingulate gyrus lies above the posterior body and the splenium of the corpus callosum and continues below the splenium as the isthmus, joining the parahippocampal gyrus; it includes the posterior cingulate cortex (areas 23 and 31) and the retrosplenial cortex (areas 29 and 30). It is the posterior hub of the default mode network with the precuneus, essential for episodic memory retrieval, spatial navigation and self-related thought, and it is the first cortex to lose glucose metabolism in Alzheimer disease. It is supplied by the pericallosal branches of the anterior cerebral artery and by the posterior cerebral artery near the isthmus, and its lesions cause topographical disorientation and amnesia.",
+  "anatomy": {
+    "location": "Medial surface above the posterior half of the corpus callosum and around the splenium, bounded above by the cingulate sulcus and the subparietal sulcus, continuous in front with the anterior division and below the splenium with the isthmus and the parahippocampal gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior thalamic nuclei",
+        "via": "anterior thalamic radiation and cingulum"
+      },
+      {
+        "from": "Subiculum and hippocampus",
+        "via": "cingulum"
+      },
+      {
+        "from": "Precuneus and parietal cortex",
+        "via": "short association fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Entorhinal and parahippocampal cortex",
+        "via": "cingulum"
+      },
+      {
+        "to": "Medial prefrontal cortex",
+        "via": "cingulum"
+      },
+      {
+        "to": "Anterior thalamus",
+        "via": "corticothalamic fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "The posterior cingulate and retrosplenial cortex link the hippocampal memory system with the parietal and prefrontal cortex: the retrosplenial cortex converts egocentric views into the allocentric map used for navigation and recognizes the orientation of familiar scenes, and the posterior cingulate retrieves episodic memories and supports the internally directed thought of the default mode. The region receives the anterior thalamic nuclei and the subiculum and projects through the cingulum to the entorhinal cortex, closing a limb of the Papez circuit. Damage produces an amnesia with prominent loss of direction in familiar places, and metabolic failure here is the earliest imaging sign of Alzheimer disease.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "gyrus-cingulate-posterior-l"
+        },
+        "label": "posterior cingulate gyrus and isthmus around the splenium"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-cingulate-posterior-r"
+        },
+        "label": "cingulate gyrus above the posterior body of the corpus callosum"
+      }
+    ],
+    "normalAppearance": "The gyrus above the posterior corpus callosum on midline sagittal images, curving down behind the splenium as the isthmus; the retrosplenial cortex lines the callosal sulcus behind the splenium.",
+    "pathology": [
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "PET",
+        "finding": "Reduced FDG uptake in the posterior cingulate and precuneus, the earliest and most consistent metabolic sign, before medial temporal atrophy is obvious.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Retrosplenial infarct or hemorrhage",
+        "modality": "MRI",
+        "finding": "Lesion behind and below the splenium, usually right-sided, with acute topographical disorientation and amnesia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Splenial and posterior cingulate tumor",
+        "modality": "MRI",
+        "finding": "Butterfly glioma of the splenium with posterior cingulate involvement, presenting with memory loss and confusion.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Topographical disorientation: cannot find the way in familiar surroundings",
+        "side": "n/a",
+        "mechanism": "Loss of retrosplenial heading and scene orientation, especially with right-sided lesions"
+      },
+      {
+        "deficit": "Anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Interruption of the cingulum limb of the Papez circuit and of posterior cingulate retrieval"
+      },
+      {
+        "deficit": "Impaired self-referential thought and mind wandering",
+        "side": "bilateral",
+        "mechanism": "Loss of the posterior default mode hub"
+      }
+    ],
+    "examination": [
+      "Route description and drawing a map of the home",
+      "Delayed recall of a word list and a story",
+      "Orientation to place on the ward and ability to find the bathroom"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "A patient who recognizes buildings but cannot say which way to turn has a retrosplenial lesion",
+      "The posterior cingulate is the canary of Alzheimer disease on FDG-PET",
+      "Splenial lesions and posterior cingulate lesions both cause memory loss; the callosum carries the cingulum's callosal crossing"
+    ]
+  },
+  "pitfalls": [
+    "Posterior cingulate hypometabolism is also seen in dementia with Lewy bodies; the cingulate island sign (relative sparing) favors Lewy body disease"
   ],
-  "territories": [
-   "territory-aca",
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "gyrus-cingulate-posterior-l"
+  "citations": [
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
     },
-    "label": "posterior cingulate gyrus and isthmus around the splenium"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-cingulate-posterior-r"
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "cingulate gyrus above the posterior body of the corpus callosum"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The gyrus above the posterior corpus callosum on midline sagittal images, curving down behind the splenium as the isthmus; the retrosplenial cortex lines the callosal sulcus behind the splenium.",
-  "pathology": [
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "PET",
-    "finding": "Reduced FDG uptake in the posterior cingulate and precuneus, the earliest and most consistent metabolic sign, before medial temporal atrophy is obvious.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Retrosplenial infarct or hemorrhage",
-    "modality": "MRI",
-    "finding": "Lesion behind and below the splenium, usually right-sided, with acute topographical disorientation and amnesia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Splenial and posterior cingulate tumor",
-    "modality": "MRI",
-    "finding": "Butterfly glioma of the splenium with posterior cingulate involvement, presenting with memory loss and confusion.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Topographical disorientation: cannot find the way in familiar surroundings",
-    "side": "n/a",
-    "mechanism": "Loss of retrosplenial heading and scene orientation, especially with right-sided lesions"
-   },
-   {
-    "deficit": "Anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Interruption of the cingulum limb of the Papez circuit and of posterior cingulate retrieval"
-   },
-   {
-    "deficit": "Impaired self-referential thought and mind wandering",
-    "side": "bilateral",
-    "mechanism": "Loss of the posterior default mode hub"
-   }
+  "tags": [
+    "posterior cingulate",
+    "retrosplenial",
+    "default mode"
   ],
-  "examination": [
-   "Route description and drawing a map of the home",
-   "Delayed recall of a word list and a story",
-   "Orientation to place on the ward and ability to find the bathroom"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "A patient who recognizes buildings but cannot say which way to turn has a retrosplenial lesion",
-   "The posterior cingulate is the canary of Alzheimer disease on FDG-PET",
-   "Splenial lesions and posterior cingulate lesions both cause memory loss; the callosum carries the cingulum's callosal crossing"
-  ]
- },
- "pitfalls": [
-  "Posterior cingulate hypometabolism is also seen in dementia with Lewy bodies; the cingulate island sign (relative sparing) favors Lewy body disease"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    259
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    238
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  }
- ],
- "tags": [
-  "posterior cingulate",
-  "retrosplenial",
-  "default mode"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "gyrus-cingulate"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "gyrus-cingulate"
 }

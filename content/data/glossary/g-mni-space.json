@@ -1,8 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-mni-space",
- "term": "MNI space",
- "definition": "A standard stereotaxic coordinate system based on averaged MRI templates from the Montreal Neurological Institute, with x (left–right), y (posterior–anterior) and z (inferior–superior) in millimeters from the anterior commissure. This atlas uses the MNI152NLin2009cAsym template; all meshes and slice positions are expressed in its RAS millimeter coordinates.",
- "related": [],
- "citations": []
+  "kind": "glossary",
+  "id": "g-mni-space",
+  "term": "MNI space",
+  "definition": "A standard stereotaxic coordinate system based on averaged MRI templates from the Montreal Neurological Institute, with x (left–right), y (posterior–anterior) and z (inferior–superior) in millimeters from the anterior commissure. This atlas uses the MNI152NLin2009cAsym template; all meshes and slice positions are expressed in its RAS millimeter coordinates.",
+  "related": [],
+  "citations": [
+    {
+      "ref": "oa-mni-stereotactic-space"
+    },
+    {
+      "ref": "oa-icbm152-cerebra-atlas"
+    }
+  ]
 }

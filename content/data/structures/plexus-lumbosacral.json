@@ -1,152 +1,140 @@
 {
- "kind": "structure",
- "id": "plexus-lumbosacral",
- "name": "Lumbar and sacral plexuses",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [
-  "lumbosacral-plexus-l",
-  "lumbosacral-plexus-r"
- ],
- "summary": "The ventral rami of L1–S4 form two linked plexuses in the posterior abdominal wall and pelvis. The lumbar plexus (L1–L4) lies within psoas major and gives the iliohypogastric, ilioinguinal, genitofemoral and lateral femoral cutaneous nerves, the obturator nerve (medial thigh) and the femoral nerve (anterior thigh). The lumbosacral trunk (L4–L5) joins the sacral plexus (S1–S4) on piriformis in the pelvis to give the sciatic nerve (posterior thigh and everything below the knee), the superior and inferior gluteal nerves and the pudendal nerve. Plexopathies here come from diabetes (painful proximal diabetic neuropathy), pelvic tumors, retroperitoneal hematoma and radiation, and are recognized by deficits that span more than one nerve and more than one root.",
- "anatomy": {
-  "location": "Lumbar plexus within the substance of psoas major in front of the lumbar transverse processes; lumbosacral trunk crossing the pelvic brim; sacral plexus on the anterior surface of piriformis in the pelvis behind the internal iliac vessels.",
-  "subdivisions": [
-   {
-    "name": "Lumbar plexus L1–L4",
-    "note": "iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous (L2–L3), femoral (L2–L4, posterior divisions), obturator (L2–L4, anterior divisions)"
-   },
-   {
-    "name": "Lumbosacral trunk L4–L5",
-    "note": "joins the sacral plexus"
-   },
-   {
-    "name": "Sacral plexus L4–S4",
-    "note": "superior gluteal (L4–S1), inferior gluteal (L5–S2), sciatic (L4–S3), posterior femoral cutaneous, pudendal (S2–S4)"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Motor and sensory supply of the lower limb, pelvic floor and perineum.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "plexus-lumbosacral",
+  "name": "Lumbar and sacral plexuses",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [
+    "lumbosacral-plexus-l",
+    "lumbosacral-plexus-r"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "The ventral rami of L1–S4 form two linked plexuses in the posterior abdominal wall and pelvis. The lumbar plexus (L1–L4) lies within psoas major and gives the iliohypogastric, ilioinguinal, genitofemoral and lateral femoral cutaneous nerves, the obturator nerve (medial thigh) and the femoral nerve (anterior thigh). The lumbosacral trunk (L4–L5) joins the sacral plexus (S1–S4) on piriformis in the pelvis to give the sciatic nerve (posterior thigh and everything below the knee), the superior and inferior gluteal nerves and the pudendal nerve. Plexopathies here come from diabetes (painful proximal diabetic neuropathy), pelvic tumors, retroperitoneal hematoma and radiation, and are recognized by deficits that span more than one nerve and more than one root.",
+  "anatomy": {
+    "location": "Lumbar plexus within the substance of psoas major in front of the lumbar transverse processes; lumbosacral trunk crossing the pelvic brim; sacral plexus on the anterior surface of piriformis in the pelvis behind the internal iliac vessels.",
+    "subdivisions": [
+      {
+        "name": "Lumbar plexus L1–L4",
+        "note": "iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous (L2–L3), femoral (L2–L4, posterior divisions), obturator (L2–L4, anterior divisions)"
+      },
+      {
+        "name": "Lumbosacral trunk L4–L5",
+        "note": "joins the sacral plexus"
+      },
+      {
+        "name": "Sacral plexus L4–S4",
+        "note": "superior gluteal (L4–S1), inferior gluteal (L5–S2), sciatic (L4–S3), posterior femoral cutaneous, pudendal (S2–S4)"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Motor and sensory supply of the lower limb, pelvic floor and perineum.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "upper cervical cord; the lumbosacral plexus lies in the abdomen and pelvis"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Pelvic MRI with STIR and contrast shows the plexus in psoas and on piriformis; infiltration, hematoma or thickening identify the cause.",
+    "pathology": [
+      {
+        "pathology": "Neoplastic lumbosacral plexopathy",
+        "modality": "MRI",
+        "finding": "Enhancing mass in the pelvis or psoas infiltrating the plexus, usually painful and progressive.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Retroperitoneal hematoma",
+        "modality": "CT",
+        "finding": "Psoas hematoma in an anticoagulated patient compressing the lumbar plexus and femoral nerve.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Diabetic lumbosacral radiculoplexus neuropathy",
+        "modality": "MRI",
+        "finding": "Often normal or mild plexus T2 change; the diagnosis is clinical and electrophysiological.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "Pelvic MRI; CT for hematoma; EMG/NCS"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak hip flexion, knee extension and adduction with anterior and medial thigh numbness",
+        "side": "ipsilateral",
+        "mechanism": "Lumbar plexus: femoral and obturator territories together"
+      },
+      {
+        "deficit": "Foot drop with weak hip extension and abduction, and sole numbness",
+        "side": "ipsilateral",
+        "mechanism": "Sacral plexus: sciatic and gluteal territories together"
+      },
+      {
+        "deficit": "Severe asymmetric thigh pain, weakness and weight loss in a diabetic",
+        "side": "ipsilateral",
+        "mechanism": "Diabetic lumbosacral radiculoplexus neuropathy (amyotrophy)"
+      },
+      {
+        "deficit": "Perineal numbness and incontinence",
+        "side": "bilateral",
+        "mechanism": "Sacral plexus and pudendal involvement"
+      }
+    ],
+    "examination": [
+      "Hip flexion, extension, abduction and adduction; knee extension and flexion; ankle movements",
+      "Knee and ankle reflexes",
+      "Sensory map of the thigh, leg and perineum",
+      "Abdominal and rectal examination for a mass; check for a psoas sign"
+    ],
+    "syndromes": [
+      "syn-lumbosacral-plexopathy",
+      "syn-femoral-neuropathy",
+      "syn-sciatic-neuropathy"
+    ],
+    "pearls": [
+      "Weakness that crosses the femoral–sciatic boundary or the L4–S1 boundary is the plexus",
+      "Gluteal muscle weakness distinguishes a sacral plexopathy from a sciatic neuropathy"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-back-lumbar-plexus",
+      "section": "Introduction"
     },
-    "label": "upper cervical cord; the lumbosacral plexus lies in the abdomen and pelvis"
-   }
+    {
+      "ref": "sp-lumbosacral-plexopathy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-sciatic-nerve",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Pelvic MRI with STIR and contrast shows the plexus in psoas and on piriformis; infiltration, hematoma or thickening identify the cause.",
-  "pathology": [
-   {
-    "pathology": "Neoplastic lumbosacral plexopathy",
-    "modality": "MRI",
-    "finding": "Enhancing mass in the pelvis or psoas infiltrating the plexus, usually painful and progressive.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Retroperitoneal hematoma",
-    "modality": "CT",
-    "finding": "Psoas hematoma in an anticoagulated patient compressing the lumbar plexus and femoral nerve.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Diabetic lumbosacral radiculoplexus neuropathy",
-    "modality": "MRI",
-    "finding": "Often normal or mild plexus T2 change; the diagnosis is clinical and electrophysiological.",
-    "sequence": "STIR"
-   }
+  "tags": [
+    "pns",
+    "lower-limb"
   ],
-  "sequenceOfChoice": "Pelvic MRI; CT for hematoma; EMG/NCS"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weak hip flexion, knee extension and adduction with anterior and medial thigh numbness",
-    "side": "ipsilateral",
-    "mechanism": "Lumbar plexus: femoral and obturator territories together"
-   },
-   {
-    "deficit": "Foot drop with weak hip extension and abduction, and sole numbness",
-    "side": "ipsilateral",
-    "mechanism": "Sacral plexus: sciatic and gluteal territories together"
-   },
-   {
-    "deficit": "Severe asymmetric thigh pain, weakness and weight loss in a diabetic",
-    "side": "ipsilateral",
-    "mechanism": "Diabetic lumbosacral radiculoplexus neuropathy (amyotrophy)"
-   },
-   {
-    "deficit": "Perineal numbness and incontinence",
-    "side": "bilateral",
-    "mechanism": "Sacral plexus and pudendal involvement"
-   }
-  ],
-  "examination": [
-   "Hip flexion, extension, abduction and adduction; knee extension and flexion; ankle movements",
-   "Knee and ankle reflexes",
-   "Sensory map of the thigh, leg and perineum",
-   "Abdominal and rectal examination for a mass; check for a psoas sign"
-  ],
-  "syndromes": [
-   "syn-lumbosacral-plexopathy",
-   "syn-femoral-neuropathy",
-   "syn-sciatic-neuropathy"
-  ],
-  "pearls": [
-   "Weakness that crosses the femoral–sciatic boundary or the L4–S1 boundary is the plexus",
-   "Gluteal muscle weakness distinguishes a sacral plexopathy from a sciatic neuropathy"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    81,
-    83
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    159
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    163,
-    163
-   ]
+  "status": "draft",
+  "latin": "Plexus lumbosacralis",
+  "subsystem": "lower-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "lower-limb"
- ],
- "status": "draft",
- "latin": "Plexus lumbosacralis",
- "subsystem": "lower-limb",
- "level": {
-  "region": "peripheral"
- }
 }

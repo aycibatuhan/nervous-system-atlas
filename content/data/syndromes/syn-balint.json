@@ -1,121 +1,117 @@
 {
- "kind": "syndrome",
- "id": "syn-balint",
- "name": "Balint syndrome",
- "eponyms": [
-  "Balint–Holmes syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "lobule-superior-parietal",
-   "lobe-parietal",
-   "lobe-occipital",
-   "territory-watershed"
+  "kind": "syndrome",
+  "id": "syn-balint",
+  "name": "Balint syndrome",
+  "eponyms": [
+    "Balint–Holmes syndrome"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -65,
-   "z": 45
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "lobule-superior-parietal",
+      "lobe-parietal",
+      "lobe-occipital",
+      "territory-watershed"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 20
- },
- "presentation": "The patient can read individual letters but not a word, describes one object in a picture while missing the scene, cannot reach accurately for a cup that they see, and cannot shift their gaze voluntarily to a new target even though their eyes move freely at random. Acuity and fields may be normal or show lower quadrant defects. The syndrome typically follows bilateral hypotensive watershed infarcts or posterior cortical atrophy.",
- "deficits": [
-  {
-   "modality": "visual-acuity",
-   "side": "bilateral",
-   "distribution": "dorsal stream",
-   "sign": "Simultanagnosia: perceives only one object at a time",
-   "substrate": "lobule-superior-parietal"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -65,
+      "z": 45
+    },
+    "radiusMm": 20
   },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "voluntary saccades",
-   "sign": "Ocular apraxia (psychic paralysis of gaze): cannot direct gaze voluntarily",
-   "substrate": "frontal-eye-field"
+  "presentation": "The patient can read individual letters but not a word, describes one object in a picture while missing the scene, cannot reach accurately for a cup that they see, and cannot shift their gaze voluntarily to a new target even though their eyes move freely at random. Acuity and fields may be normal or show lower quadrant defects. The syndrome typically follows bilateral hypotensive watershed infarcts or posterior cortical atrophy.",
+  "deficits": [
+    {
+      "modality": "visual-acuity",
+      "side": "bilateral",
+      "distribution": "dorsal stream",
+      "sign": "Simultanagnosia: perceives only one object at a time",
+      "substrate": "lobule-superior-parietal"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "voluntary saccades",
+      "sign": "Ocular apraxia (psychic paralysis of gaze): cannot direct gaze voluntarily",
+      "substrate": "frontal-eye-field"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "bilateral",
+      "distribution": "reaching",
+      "sign": "Optic ataxia: misreaching for seen targets with an otherwise coordinated arm",
+      "substrate": "lobule-superior-parietal"
+    }
+  ],
+  "reasoning": "The dorsal visual stream runs from the occipital lobe up into the superior parietal lobule of each hemisphere and computes where objects are in space, guiding the eyes and hands toward them. Each hemisphere handles the contralateral field, but bilateral damage is needed for the full syndrome, because one intact parietal lobe can crudely cover both sides. The bilateral parieto-occipital cortex lies in the posterior watershed zone between middle and posterior cerebral territories, so the usual cause is a global drop in perfusion. Ventral stream areas in the occipitotemporal cortex are spared, which is why single objects and letters are still recognized: the failure is in binding several objects into a scene (simultanagnosia), in using visual information to program saccades (ocular apraxia, distinct from the motor palsy of a brainstem gaze center lesion) and in using it to program reaching (optic ataxia, distinct from cerebellar ataxia because reaching to a sound or to the patient's own body is accurate). Nothing crosses at this level; the syndrome is bilateral cortical, and the contralateral field defects, when present, come from the adjacent optic radiations.",
+  "imagingFindings": [
+    {
+      "pathology": "Bilateral parieto-occipital infarcts",
+      "modality": "MRI",
+      "finding": "Symmetric restricted diffusion or established infarcts in the posterior watershed zones of both hemispheres.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Posterior cortical atrophy",
+      "modality": "MRI",
+      "finding": "Bilateral parieto-occipital atrophy with a progressive course in an Alzheimer variant.",
+      "sequence": "T1"
+    }
+  ],
+  "commonCauses": [
+    "Bilateral watershed infarcts after hypotension",
+    "Posterior cortical atrophy (Alzheimer disease)",
+    "Posterior reversible encephalopathy syndrome",
+    "Bilateral PCA–MCA borderzone embolism"
+  ],
+  "mimics": [
+    {
+      "name": "Bilateral hemianopia / cortical blindness",
+      "howToDistinguish": "Fields are absent; Balint patients see objects but cannot integrate them"
+    },
+    {
+      "name": "Cerebellar ataxia",
+      "howToDistinguish": "Reaching to non-visual targets is also inaccurate"
+    },
+    {
+      "name": "Neglect",
+      "howToDistinguish": "Unilateral; Balint is bilateral and symmetric"
+    }
+  ],
+  "management": [
+    "Treat the cause",
+    "Occupational therapy with verbal and tactile cues to replace visual guidance",
+    "Safety supervision for walking and cooking"
+  ],
+  "citations": [
+    {
+      "ref": "sp-balint-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -65,
+      "z": 45
+    },
+    "label": "bilateral superior parietal lobules"
   },
-  {
-   "modality": "cerebellar",
-   "side": "bilateral",
-   "distribution": "reaching",
-   "sign": "Optic ataxia: misreaching for seen targets with an otherwise coordinated arm",
-   "substrate": "lobule-superior-parietal"
-  }
- ],
- "reasoning": "The dorsal visual stream runs from the occipital lobe up into the superior parietal lobule of each hemisphere and computes where objects are in space, guiding the eyes and hands toward them. Each hemisphere handles the contralateral field, but bilateral damage is needed for the full syndrome, because one intact parietal lobe can crudely cover both sides. The bilateral parieto-occipital cortex lies in the posterior watershed zone between middle and posterior cerebral territories, so the usual cause is a global drop in perfusion. Ventral stream areas in the occipitotemporal cortex are spared, which is why single objects and letters are still recognized: the failure is in binding several objects into a scene (simultanagnosia), in using visual information to program saccades (ocular apraxia, distinct from the motor palsy of a brainstem gaze center lesion) and in using it to program reaching (optic ataxia, distinct from cerebellar ataxia because reaching to a sound or to the patient's own body is accurate). Nothing crosses at this level; the syndrome is bilateral cortical, and the contralateral field defects, when present, come from the adjacent optic radiations.",
- "imagingFindings": [
-  {
-   "pathology": "Bilateral parieto-occipital infarcts",
-   "modality": "MRI",
-   "finding": "Symmetric restricted diffusion or established infarcts in the posterior watershed zones of both hemispheres.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Posterior cortical atrophy",
-   "modality": "MRI",
-   "finding": "Bilateral parieto-occipital atrophy with a progressive course in an Alzheimer variant.",
-   "sequence": "T1"
-  }
- ],
- "commonCauses": [
-  "Bilateral watershed infarcts after hypotension",
-  "Posterior cortical atrophy (Alzheimer disease)",
-  "Posterior reversible encephalopathy syndrome",
-  "Bilateral PCA–MCA borderzone embolism"
- ],
- "mimics": [
-  {
-   "name": "Bilateral hemianopia / cortical blindness",
-   "howToDistinguish": "Fields are absent; Balint patients see objects but cannot integrate them"
-  },
-  {
-   "name": "Cerebellar ataxia",
-   "howToDistinguish": "Reaching to non-visual targets is also inaccurate"
-  },
-  {
-   "name": "Neglect",
-   "howToDistinguish": "Unilateral; Balint is bilateral and symmetric"
-  }
- ],
- "management": [
-  "Treat the cause",
-  "Occupational therapy with verbal and tactile cues to replace visual guidance",
-  "Safety supervision for walking and cooking"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    47
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    50,
-    50
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -65,
-   "z": 45
-  },
-  "label": "bilateral superior parietal lobules"
- },
- "cameraPreset": "superior"
+  "cameraPreset": "superior"
 }

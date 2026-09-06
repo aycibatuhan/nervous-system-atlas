@@ -1,181 +1,161 @@
 {
- "kind": "structure",
- "id": "pedunculopontine-nucleus",
- "name": "Pedunculopontine nucleus",
- "synonyms": [
-  "PPN",
-  "mesencephalic locomotor region"
- ],
- "system": "brainstem",
- "meshIds": [
-  "pedunculopontine-nucleus-l",
-  "pedunculopontine-nucleus-r"
- ],
- "summary": "The pedunculopontine nucleus is a cluster of cholinergic and glutamatergic neurons in the caudal midbrain and rostral pontine tegmentum, lateral to the decussation of the superior cerebellar peduncles and beneath the inferior colliculus. It is the brainstem locomotor region: it initiates and paces gait and postural adjustments through the reticulospinal system and it is part of the ascending arousal system and of the REM sleep circuitry. It is reciprocally connected with the basal ganglia and degenerates in Parkinson disease and progressive supranuclear palsy, which is why freezing of gait and falls do not respond to dopamine; it has been a target of deep brain stimulation for these axial symptoms.",
- "anatomy": {
-  "location": "Mesopontine tegmentum at the junction of the midbrain and pons, lateral to the superior cerebellar peduncle decussation, medial to the medial lemniscus, below the inferior colliculus and behind the substantia nigra, extending along the lateral edge of the periaqueductal gray.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Globus pallidus internus and substantia nigra pars reticulata",
-    "via": "pallidotegmental and nigrotegmental fibers"
-   },
-   {
-    "from": "Motor cortex",
-    "via": "corticotegmental fibers"
-   },
-   {
-    "from": "Subthalamic nucleus",
-    "via": "subthalamotegmental fibers"
-   }
+  "kind": "structure",
+  "id": "pedunculopontine-nucleus",
+  "name": "Pedunculopontine nucleus",
+  "synonyms": [
+    "PPN",
+    "mesencephalic locomotor region"
   ],
-  "efferents": [
-   {
-    "to": "Pontomedullary reticular formation and spinal cord",
-    "via": "reticulospinal pathway"
-   },
-   {
-    "to": "Thalamus (intralaminar and reticular)",
-    "via": "cholinergic ascending projection"
-   },
-   {
-    "to": "Substantia nigra pars compacta and subthalamic nucleus",
-    "via": "cholinergic and glutamatergic fibers"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "pedunculopontine-nucleus-l",
+    "pedunculopontine-nucleus-r"
   ],
-  "pathways": [
-   "pathway-reticulospinal",
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Cholinergic pedunculopontine neurons project to the thalamus, the substantia nigra pars compacta and the subthalamic nucleus, supporting arousal and REM sleep and modulating dopamine release, while glutamatergic and GABAergic neurons project to the pontomedullary reticular formation and the spinal cord to trigger and sustain locomotion and to adjust posture; the nucleus receives the internal pallidum and the substantia nigra pars reticulata, whose excessive inhibition in parkinsonism suppresses it. It also relays motor cortex commands for gait initiation and turns and participates in the startle reflex. Loss of its cholinergic neurons correlates with freezing, falls and REM sleep behavior disorder.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-sca",
-   "artery-basilar",
-   "arteries-thalamoperforating"
+  "summary": "The pedunculopontine nucleus is a cluster of cholinergic and glutamatergic neurons in the caudal midbrain and rostral pontine tegmentum, lateral to the decussation of the superior cerebellar peduncles and beneath the inferior colliculus. It is the brainstem locomotor region: it initiates and paces gait and postural adjustments through the reticulospinal system and it is part of the ascending arousal system and of the REM sleep circuitry. It is reciprocally connected with the basal ganglia and degenerates in Parkinson disease and progressive supranuclear palsy, which is why freezing of gait and falls do not respond to dopamine; it has been a target of deep brain stimulation for these axial symptoms.",
+  "anatomy": {
+    "location": "Mesopontine tegmentum at the junction of the midbrain and pons, lateral to the superior cerebellar peduncle decussation, medial to the medial lemniscus, below the inferior colliculus and behind the substantia nigra, extending along the lateral edge of the periaqueductal gray.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Globus pallidus internus and substantia nigra pars reticulata",
+        "via": "pallidotegmental and nigrotegmental fibers"
+      },
+      {
+        "from": "Motor cortex",
+        "via": "corticotegmental fibers"
+      },
+      {
+        "from": "Subthalamic nucleus",
+        "via": "subthalamotegmental fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Pontomedullary reticular formation and spinal cord",
+        "via": "reticulospinal pathway"
+      },
+      {
+        "to": "Thalamus (intralaminar and reticular)",
+        "via": "cholinergic ascending projection"
+      },
+      {
+        "to": "Substantia nigra pars compacta and subthalamic nucleus",
+        "via": "cholinergic and glutamatergic fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-reticulospinal",
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Cholinergic pedunculopontine neurons project to the thalamus, the substantia nigra pars compacta and the subthalamic nucleus, supporting arousal and REM sleep and modulating dopamine release, while glutamatergic and GABAergic neurons project to the pontomedullary reticular formation and the spinal cord to trigger and sustain locomotion and to adjust posture; the nucleus receives the internal pallidum and the substantia nigra pars reticulata, whose excessive inhibition in parkinsonism suppresses it. It also relays motor cortex commands for gait initiation and turns and participates in the startle reflex. Loss of its cholinergic neurons correlates with freezing, falls and REM sleep behavior disorder.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-sca",
+      "artery-basilar",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "pedunculopontine-nucleus-l"
+        },
+        "label": "pedunculopontine nucleus in the mesopontine tegmentum"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "pedunculopontine-nucleus-r"
+        },
+        "label": "tegmentum at the midbrain-pons junction below the inferior colliculus"
+      }
+    ],
+    "normalAppearance": "A small tegmental region lateral to the superior cerebellar peduncle decussation on axial images at the level of the inferior colliculus; identified by atlases and by tractography for stimulation planning.",
+    "pathology": [
+      {
+        "pathology": "Parkinson disease and progressive supranuclear palsy (axial symptoms)",
+        "modality": "MRI",
+        "finding": "Mesopontine tegmental atrophy and reduced cholinergic markers on PET correlate with freezing of gait and falls; routine MRI is normal or shows midbrain atrophy in PSP.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Pedunculopontine deep brain stimulation",
+        "modality": "MRI",
+        "finding": "Electrode in the mesopontine tegmentum lateral to the superior cerebellar peduncle for refractory freezing; results are variable.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Mesopontine tegmental infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the tegmentum at the midbrain-pontine junction with gait failure, hypersomnolence and REM sleep disturbance.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Freezing of gait and postural instability",
+        "side": "bilateral",
+        "mechanism": "Loss of the mesencephalic locomotor drive to the reticulospinal system"
+      },
+      {
+        "deficit": "REM sleep behavior disorder and reduced arousal",
+        "side": "bilateral",
+        "mechanism": "Loss of cholinergic REM-on and arousal neurons"
+      },
+      {
+        "deficit": "Falls unresponsive to dopamine",
+        "side": "bilateral",
+        "mechanism": "Cholinergic and non-dopaminergic degeneration"
+      }
+    ],
+    "examination": [
+      "Gait initiation, turning and dual-task walking to elicit freezing",
+      "Pull test for postural instability",
+      "Sleep history for dream enactment"
+    ],
+    "syndromes": [
+      "syn-parkinsonism"
+    ],
+    "pearls": [
+      "Dopamine does not fix freezing because the pedunculopontine nucleus is cholinergic",
+      "Gait is a brainstem act that the cortex requests and the basal ganglia permit",
+      "REM sleep behavior disorder years before parkinsonism reflects early pedunculopontine and pontine degeneration"
+    ]
+  },
+  "pitfalls": [
+    "Freezing of gait in a levodopa-responsive patient who no longer responds is a pedunculopontine, not a dose, problem"
   ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "pedunculopontine-nucleus-l"
+  "citations": [
+    {
+      "ref": "sp-reticular-formation",
+      "section": "Structure and Function"
     },
-    "label": "pedunculopontine nucleus in the mesopontine tegmentum"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "pedunculopontine-nucleus-r"
+    {
+      "ref": "sp-parkinson-disease",
+      "section": "Pathophysiology"
     },
-    "label": "tegmentum at the midbrain-pons junction below the inferior colliculus"
-   }
+    {
+      "ref": "sp-gait-disturbances",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "A small tegmental region lateral to the superior cerebellar peduncle decussation on axial images at the level of the inferior colliculus; identified by atlases and by tractography for stimulation planning.",
-  "pathology": [
-   {
-    "pathology": "Parkinson disease and progressive supranuclear palsy (axial symptoms)",
-    "modality": "MRI",
-    "finding": "Mesopontine tegmental atrophy and reduced cholinergic markers on PET correlate with freezing of gait and falls; routine MRI is normal or shows midbrain atrophy in PSP.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Pedunculopontine deep brain stimulation",
-    "modality": "MRI",
-    "finding": "Electrode in the mesopontine tegmentum lateral to the superior cerebellar peduncle for refractory freezing; results are variable.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Mesopontine tegmental infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the tegmentum at the midbrain-pontine junction with gait failure, hypersomnolence and REM sleep disturbance.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Freezing of gait and postural instability",
-    "side": "bilateral",
-    "mechanism": "Loss of the mesencephalic locomotor drive to the reticulospinal system"
-   },
-   {
-    "deficit": "REM sleep behavior disorder and reduced arousal",
-    "side": "bilateral",
-    "mechanism": "Loss of cholinergic REM-on and arousal neurons"
-   },
-   {
-    "deficit": "Falls unresponsive to dopamine",
-    "side": "bilateral",
-    "mechanism": "Cholinergic and non-dopaminergic degeneration"
-   }
+  "tags": [
+    "locomotion",
+    "cholinergic",
+    "gait"
   ],
-  "examination": [
-   "Gait initiation, turning and dual-task walking to elicit freezing",
-   "Pull test for postural instability",
-   "Sleep history for dream enactment"
-  ],
-  "syndromes": [
-   "syn-parkinsonism"
-  ],
-  "pearls": [
-   "Dopamine does not fix freezing because the pedunculopontine nucleus is cholinergic",
-   "Gait is a brainstem act that the cortex requests and the basal ganglia permit",
-   "REM sleep behavior disorder years before parkinsonism reflects early pedunculopontine and pontine degeneration"
-  ]
- },
- "pitfalls": [
-  "Freezing of gait in a levodopa-responsive patient who no longer responds is a pedunculopontine, not a dose, problem"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    299,
-    301
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    242,
-    246
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    78
-   ]
-  }
- ],
- "tags": [
-  "locomotion",
-  "cholinergic",
-  "gait"
- ],
- "status": "draft",
- "subsystem": "pons",
- "parent": "brainstem"
+  "status": "draft",
+  "subsystem": "pons",
+  "parent": "brainstem"
 }

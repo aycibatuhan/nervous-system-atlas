@@ -12,6 +12,7 @@
     "content": "node scripts/content/build.ts",
     "content:validate": "node scripts/content/build.ts --validate-only",
     "content:report": "node scripts/content/build.ts --report",
+    "citations:check": "node scripts/content/check-citations.ts",
     "check-data": "node scripts/check-data.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",

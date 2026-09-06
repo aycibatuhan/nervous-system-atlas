@@ -1,118 +1,102 @@
 {
- "kind": "structure",
- "id": "brain-envelope",
- "name": "Brain surface (template mask)",
- "synonyms": [
-  "template brain surface",
-  "pial envelope"
- ],
- "system": "envelope",
- "meshIds": [
-  "brain-envelope"
- ],
- "summary": "This mesh is the outer surface of the MNI152 template brain, generated from the template's brain mask, and it is the translucent shell that the atlas shows by default around every other structure. It represents the pial surface of the population-average brain including the cerebellum and brainstem, smoothed by averaging, so its sulci are shallow; it coincides exactly with the MRI slices and it is the reference against which the registered whole-body meshes are checked. In syndrome mode it stays visible while the parcels are dimmed, giving the lesion marker and the involved structures a frame, and it defines the field of view of the atlas.",
- "anatomy": {
-  "location": "The boundary of the template brain mask: cerebral hemispheres, cerebellum and brainstem to the foramen magnum, in MNI space at 1 mm resolution, closed and smoothed.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "The envelope shows the position of any structure relative to the brain surface and the skull base, marks the tentorial and interhemispheric contours, and provides the visual container for the syndrome, pathway and quiz displays; its coincidence with the MRI means that a slice through it always shows brain at the surface, which makes it the natural reference for judging whether a registered mesh sits correctly. It also gives the scale of the atlas, roughly 140 mm wide, 170 mm long and 120 mm high for the average adult brain, and it is the surface used for camera framing.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-aca",
-   "artery-pca"
+  "kind": "structure",
+  "id": "brain-envelope",
+  "name": "Brain surface (template mask)",
+  "synonyms": [
+    "template brain surface",
+    "pial envelope"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "brain-envelope"
-    },
-    "label": "template brain surface on the midline"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "brain-envelope"
-    },
-    "label": "brain envelope around the hemispheres"
-   }
+  "system": "envelope",
+  "meshIds": [
+    "brain-envelope"
   ],
-  "normalAppearance": "The template brain mask boundary follows the pial surface of the average brain on all slices; individual gyri are visible only as shallow undulations because averaging smooths them.",
-  "pathology": [
-   {
-    "pathology": "No pathology",
-    "modality": "MRI",
-    "finding": "The envelope is a reference surface without disease; a patient's brain surface departs from it with atrophy (widened sulci, retracted surface) or mass effect (displaced surface).",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Registration quality control",
-    "modality": "MRI",
-    "finding": "Registered whole-body meshes that protrude beyond the envelope reveal the residual error of the affine transform.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "No deficit: reference surface",
-    "side": "n/a",
-    "mechanism": "Context envelope without a lesion syndrome"
-   }
-  ],
-  "examination": [
-   "Use the envelope as the visual frame for deep structures and syndromes",
-   "Check registered meshes against it for alignment"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "The envelope is the average brain's skin; everything in the atlas lives inside it",
-   "When a registered nerve pokes through the envelope, blame the registration, not the anatomy",
-   "The envelope and the MRI are the same data seen two ways"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    249,
-    262
-   ]
+  "summary": "This mesh is the outer surface of the MNI152 template brain, generated from the template's brain mask, and it is the translucent shell that the atlas shows by default around every other structure. It represents the pial surface of the population-average brain including the cerebellum and brainstem, smoothed by averaging, so its sulci are shallow; it coincides exactly with the MRI slices and it is the reference against which the registered whole-body meshes are checked. In syndrome mode it stays visible while the parcels are dimmed, giving the lesion marker and the involved structures a frame, and it defines the field of view of the atlas.",
+  "anatomy": {
+    "location": "The boundary of the template brain mask: cerebral hemispheres, cerebellum and brainstem to the foramen magnum, in MNI space at 1 mm resolution, closed and smoothed.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    417,
-    422
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    25,
-    32
-   ]
-  }
- ],
- "tags": [
-  "reference",
-  "envelope",
-  "template"
- ],
- "status": "draft",
- "subsystem": "template"
+  "function": "The envelope shows the position of any structure relative to the brain surface and the skull base, marks the tentorial and interhemispheric contours, and provides the visual container for the syndrome, pathway and quiz displays; its coincidence with the MRI means that a slice through it always shows brain at the surface, which makes it the natural reference for judging whether a registered mesh sits correctly. It also gives the scale of the atlas, roughly 140 mm wide, 170 mm long and 120 mm high for the average adult brain, and it is the surface used for camera framing.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "brain-envelope"
+        },
+        "label": "template brain surface on the midline"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "brain-envelope"
+        },
+        "label": "brain envelope around the hemispheres"
+      }
+    ],
+    "normalAppearance": "The template brain mask boundary follows the pial surface of the average brain on all slices; individual gyri are visible only as shallow undulations because averaging smooths them.",
+    "pathology": [
+      {
+        "pathology": "No pathology",
+        "modality": "MRI",
+        "finding": "The envelope is a reference surface without disease; a patient's brain surface departs from it with atrophy (widened sulci, retracted surface) or mass effect (displaced surface).",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Registration quality control",
+        "modality": "MRI",
+        "finding": "Registered whole-body meshes that protrude beyond the envelope reveal the residual error of the affine transform.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "No deficit: reference surface",
+        "side": "n/a",
+        "mechanism": "Context envelope without a lesion syndrome"
+      }
+    ],
+    "examination": [
+      "Use the envelope as the visual frame for deep structures and syndromes",
+      "Check registered meshes against it for alignment"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "The envelope is the average brain's skin; everything in the atlas lives inside it",
+      "When a registered nerve pokes through the envelope, blame the registration, not the anatomy",
+      "The envelope and the MRI are the same data seen two ways"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-brain",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "reference",
+    "envelope",
+    "template"
+  ],
+  "status": "draft",
+  "subsystem": "template"
 }

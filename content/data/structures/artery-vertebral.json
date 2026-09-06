@@ -1,155 +1,135 @@
 {
- "kind": "structure",
- "id": "artery-vertebral",
- "name": "Vertebral artery",
- "synonyms": [],
- "system": "arteries",
- "meshIds": [],
- "summary": "The two vertebral arteries carry blood from the subclavian arteries up through the transverse foramina of the cervical vertebrae and the foramen magnum to unite at the pontomedullary junction into the basilar artery. Intracranially each gives the posterior inferior cerebellar artery, the contribution to the anterior spinal artery and small medullary perforators, so vertebral occlusion or dissection presents as a lateral medullary or cerebellar stroke.",
- "anatomy": {
-  "location": "Arises from the first part of the subclavian artery (V1), ascends through the transverse foramina of C6 to C1 (V2), loops behind the lateral mass of the atlas (V3), pierces the dura and arachnoid at the foramen magnum and runs anteromedially along the medulla to the lower border of the pons (V4).",
-  "subdivisions": [
-   {
-    "name": "V1–V3 (extracranial)",
-    "note": "no brain branches; the V3 loop at C1–C2 is the site most prone to dissection with neck rotation"
-   },
-   {
-    "name": "V4 (intracranial)",
-    "note": "posterior meningeal, posterior spinal, anterior spinal, PICA and direct medullary branches"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Main supply of the medulla and inferior cerebellum, and through the basilar the pons, midbrain, cerebellum and occipital lobes. The dominant vertebral artery (often the left) can supply the whole posterior circulation if the other is hypoplastic.",
- "bloodSupply": {
-  "arteries": [
-   "subclavian artery"
-  ],
-  "territories": [
-   "territory-pica-lateral-medulla"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 8,
-     "y": -42,
-     "z": -45
+  "kind": "structure",
+  "id": "artery-vertebral",
+  "name": "Vertebral artery",
+  "synonyms": [],
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The two vertebral arteries carry blood from the subclavian arteries up through the transverse foramina of the cervical vertebrae and the foramen magnum to unite at the pontomedullary junction into the basilar artery. Intracranially each gives the posterior inferior cerebellar artery, the contribution to the anterior spinal artery and small medullary perforators, so vertebral occlusion or dissection presents as a lateral medullary or cerebellar stroke.",
+  "anatomy": {
+    "location": "Arises from the first part of the subclavian artery (V1), ascends through the transverse foramina of C6 to C1 (V2), loops behind the lateral mass of the atlas (V3), pierces the dura and arachnoid at the foramen magnum and runs anteromedially along the medulla to the lower border of the pons (V4).",
+    "subdivisions": [
+      {
+        "name": "V1–V3 (extracranial)",
+        "note": "no brain branches; the V3 loop at C1–C2 is the site most prone to dissection with neck rotation"
+      },
+      {
+        "name": "V4 (intracranial)",
+        "note": "posterior meningeal, posterior spinal, anterior spinal, PICA and direct medullary branches"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Main supply of the medulla and inferior cerebellum, and through the basilar the pons, midbrain, cerebellum and occipital lobes. The dominant vertebral artery (often the left) can supply the whole posterior circulation if the other is hypoplastic.",
+  "bloodSupply": {
+    "arteries": [
+      "subclavian artery"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 8,
+          "y": -42,
+          "z": -45
+        },
+        "label": "V4 segments converging on the anterior medulla"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -40,
+          "z": -40
+        },
+        "label": "vertebral confluence forming the basilar"
+      }
+    ],
+    "normalAppearance": "Paired flow voids anterolateral to the medulla on axial T2, often asymmetrical in calibre. CTA and MRA show the course through the transverse foramina; a hypoplastic side ending in PICA is a common variant.",
+    "pathology": [
+      {
+        "pathology": "Vertebral artery dissection",
+        "modality": "MRI",
+        "finding": "Crescentic T1-bright mural hematoma with a narrowed eccentric lumen in the V2/V3 segments on fat-saturated axial T1; often after neck trauma or manipulation, presenting with occipital pain and lateral medullary or cerebellar infarction.",
+        "sequence": "T1",
+        "timing": "Mural hematoma is T1-bright from about day 3 to week 8"
+      },
+      {
+        "pathology": "Vertebral occlusion with lateral medullary infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the dorsolateral medulla, sometimes with an inferior cerebellar component; CTA shows absent flow in V4.",
+        "sequence": "DWI",
+        "pitfalls": "Small medullary infarcts can be missed on 5 mm axial DWI; thin coronal DWI helps"
+      }
+    ],
+    "sequenceOfChoice": "CTA or fat-saturated T1 MRI for dissection; DWI for the brainstem and cerebellar infarct"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Lateral medullary (Wallenberg) syndrome",
+        "side": "ipsilateral",
+        "mechanism": "Occlusion of the vertebral artery or its PICA branch infarcts the dorsolateral medulla"
+      },
+      {
+        "deficit": "Medial medullary syndrome",
+        "side": "contralateral",
+        "mechanism": "Anterior spinal branch or paramedian perforators from the vertebral artery"
+      },
+      {
+        "deficit": "Inferior cerebellar infarction with vertigo and ataxia",
+        "side": "ipsilateral",
+        "mechanism": "PICA territory"
+      },
+      {
+        "deficit": "Occipital headache and neck pain preceding stroke",
+        "side": "ipsilateral",
+        "mechanism": "Dissection of the artery in the neck"
+      }
+    ],
+    "examination": [
+      "Test for crossed sensory findings: face on one side, body on the other",
+      "Horner syndrome, dysphagia, hoarseness and palatal deviation",
+      "Gait, limb ataxia and nystagmus"
+    ],
+    "syndromes": [
+      "syn-wallenberg-lateral-medullary",
+      "syn-dejerine-medial-medullary"
+    ],
+    "pearls": [
+      "Neck pain plus brainstem signs in a young patient is a vertebral dissection until excluded",
+      "Vertebral occlusion can be silent when the contralateral artery is dominant; PICA territory symptoms reveal it"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-vertebrobasilar-system",
+      "section": "Structure and Function"
     },
-    "label": "V4 segments converging on the anterior medulla"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -40,
-     "z": -40
+    {
+      "ref": "sp-vertebral-artery-dissection",
+      "section": "Pathophysiology"
     },
-    "label": "vertebral confluence forming the basilar"
-   }
+    {
+      "ref": "sp-basilar-artery",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Paired flow voids anterolateral to the medulla on axial T2, often asymmetrical in calibre. CTA and MRA show the course through the transverse foramina; a hypoplastic side ending in PICA is a common variant.",
-  "pathology": [
-   {
-    "pathology": "Vertebral artery dissection",
-    "modality": "MRI",
-    "finding": "Crescentic T1-bright mural hematoma with a narrowed eccentric lumen in the V2/V3 segments on fat-saturated axial T1; often after neck trauma or manipulation, presenting with occipital pain and lateral medullary or cerebellar infarction.",
-    "sequence": "T1",
-    "timing": "Mural hematoma is T1-bright from about day 3 to week 8"
-   },
-   {
-    "pathology": "Vertebral occlusion with lateral medullary infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the dorsolateral medulla, sometimes with an inferior cerebellar component; CTA shows absent flow in V4.",
-    "sequence": "DWI",
-    "pitfalls": "Small medullary infarcts can be missed on 5 mm axial DWI; thin coronal DWI helps"
-   }
+  "tags": [
+    "vascular",
+    "posterior-circulation"
   ],
-  "sequenceOfChoice": "CTA or fat-saturated T1 MRI for dissection; DWI for the brainstem and cerebellar infarct"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Lateral medullary (Wallenberg) syndrome",
-    "side": "ipsilateral",
-    "mechanism": "Occlusion of the vertebral artery or its PICA branch infarcts the dorsolateral medulla"
-   },
-   {
-    "deficit": "Medial medullary syndrome",
-    "side": "contralateral",
-    "mechanism": "Anterior spinal branch or paramedian perforators from the vertebral artery"
-   },
-   {
-    "deficit": "Inferior cerebellar infarction with vertigo and ataxia",
-    "side": "ipsilateral",
-    "mechanism": "PICA territory"
-   },
-   {
-    "deficit": "Occipital headache and neck pain preceding stroke",
-    "side": "ipsilateral",
-    "mechanism": "Dissection of the artery in the neck"
-   }
-  ],
-  "examination": [
-   "Test for crossed sensory findings: face on one side, body on the other",
-   "Horner syndrome, dysphagia, hoarseness and palatal deviation",
-   "Gait, limb ataxia and nystagmus"
-  ],
-  "syndromes": [
-   "syn-wallenberg-lateral-medullary",
-   "syn-dejerine-medial-medullary"
-  ],
-  "pearls": [
-   "Neck pain plus brainstem signs in a young patient is a vertebral dissection until excluded",
-   "Vertebral occlusion can be silent when the contralateral artery is dominant; PICA territory symptoms reveal it"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    466,
-    466
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    215,
-    217
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    79
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    184
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "posterior-circulation"
- ],
- "status": "draft",
- "latin": "Arteria vertebralis",
- "subsystem": "posterior-circulation"
+  "status": "draft",
+  "latin": "Arteria vertebralis",
+  "subsystem": "posterior-circulation"
 }

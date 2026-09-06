@@ -1,160 +1,148 @@
 {
- "kind": "structure",
- "id": "gyrus-heschl",
- "name": "Heschl's gyrus (primary auditory cortex)",
- "synonyms": [
-  "transverse temporal gyrus",
-  "primary auditory cortex",
-  "A1",
-  "Brodmann areas 41 and 42"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-heschl-l",
-  "gyrus-heschl-r",
-  "planum-temporale-l",
-  "planum-temporale-r"
- ],
- "summary": "One or two short gyri running transversely across the upper surface of the superior temporal gyrus, hidden inside the Sylvian fissure. They receive the acoustic radiation from the medial geniculate body and hold a tonotopic map (low frequencies anterolaterally, high frequencies posteromedially). Because the auditory pathway is bilateral from the brainstem up, a unilateral lesion never causes deafness, only subtle deficits in localization and in perceiving speech in noise; bilateral lesions produce cortical deafness or pure word deafness. The planum temporale behind Heschl's gyrus is larger on the left in most people and merges into Wernicke's area.",
- "anatomy": {
-  "location": "On the superior (opercular) surface of the superior temporal gyrus within the depths of the lateral sulcus, running obliquely backward and medially from the lateral surface toward the insula; the planum temporale lies posterior to it.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "medial-geniculate-nucleus",
-    "via": "tract-acoustic-radiation"
-   }
+  "kind": "structure",
+  "id": "gyrus-heschl",
+  "name": "Heschl's gyrus (primary auditory cortex)",
+  "synonyms": [
+    "transverse temporal gyrus",
+    "primary auditory cortex",
+    "A1",
+    "Brodmann areas 41 and 42"
   ],
-  "efferents": [
-   {
-    "to": "area-wernicke"
-   },
-   {
-    "to": "planum temporale and belt areas"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-heschl-l",
+    "gyrus-heschl-r",
+    "planum-temporale-l",
+    "planum-temporale-r"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "Conscious perception of sound, frequency and intensity analysis, sound localization and the first cortical stage of speech and music perception.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-inferior-division"
-  ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 48,
-     "y": -20,
-     "z": 8
-    },
-    "label": "Heschl's gyrus on the upper surface of the temporal lobe inside the Sylvian fissure"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 48,
-     "y": -20,
-     "z": 8
-    },
-    "label": "transverse gyrus running toward the insula"
-   }
-  ],
-  "normalAppearance": "Seen on coronal T1 as the transverse gyrus on the roof of the temporal lobe, medial to the Sylvian fissure and lateral to the insula; on axial images it runs obliquely toward the posterior insula. Bilateral infarcts here are the classic cause of cortical deafness.",
-  "pathology": [
-   {
-    "pathology": "Bilateral temporal infarcts with cortical deafness",
-    "modality": "MRI",
-    "finding": "Bilateral superior temporal restriction, typically from sequential MCA strokes.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Auditory seizures",
-    "modality": "MRI",
-    "finding": "Focal lesion of the superior temporal gyrus with ictal buzzing or ringing.",
-    "sequence": "FLAIR"
-   }
-  ],
-  "sequenceOfChoice": "DWI; FLAIR; audiometry and brainstem auditory evoked responses (preserved in cortical deafness)"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Mild contralateral hearing loss and impaired localization",
-    "side": "contralateral",
-    "mechanism": "Loss of the predominantly crossed cortical input"
-   },
-   {
-    "deficit": "Cortical deafness or pure word deafness",
-    "side": "bilateral",
-    "mechanism": "Bilateral Heschl's gyri or their radiations with preserved brainstem responses"
-   },
-   {
-    "deficit": "Auditory hallucinations (simple sounds) in seizures",
-    "side": "n/a",
-    "mechanism": "Ictal activation"
-   },
-   {
-    "deficit": "Amusia (non-dominant)",
-    "side": "n/a",
-    "mechanism": "Right auditory cortex"
-   }
-  ],
-  "examination": [
-   "Whisper test and localization of sounds",
-   "Ask about hearing in noisy rooms",
-   "Repetition of spoken words versus reading (pure word deafness spares reading)"
-  ],
-  "syndromes": [
-   "syn-hearing-loss"
-  ],
-  "pearls": [
-   "A deaf ear is never a cortical sign",
-   "Pure word deafness: the patient hears but cannot understand speech, yet reads and writes normally"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    287,
-    287
-   ]
+  "summary": "One or two short gyri running transversely across the upper surface of the superior temporal gyrus, hidden inside the Sylvian fissure. They receive the acoustic radiation from the medial geniculate body and hold a tonotopic map (low frequencies anterolaterally, high frequencies posteromedially). Because the auditory pathway is bilateral from the brainstem up, a unilateral lesion never causes deafness, only subtle deficits in localization and in perceiving speech in noise; bilateral lesions produce cortical deafness or pure word deafness. The planum temporale behind Heschl's gyrus is larger on the left in most people and merges into Wernicke's area.",
+  "anatomy": {
+    "location": "On the superior (opercular) surface of the superior temporal gyrus within the depths of the lateral sulcus, running obliquely backward and medially from the lateral surface toward the insula; the planum temporale lies posterior to it.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    339
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "medial-geniculate-nucleus",
+        "via": "tract-acoustic-radiation"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "area-wernicke"
+      },
+      {
+        "to": "planum temporale and belt areas"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "temporal"
- ],
- "status": "draft",
- "latin": "Gyrus temporalis transversus anterior",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "function": "Conscious perception of sound, frequency and intensity analysis, sound localization and the first cortical stage of speech and music perception.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 48,
+          "y": -20,
+          "z": 8
+        },
+        "label": "Heschl's gyrus on the upper surface of the temporal lobe inside the Sylvian fissure"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 48,
+          "y": -20,
+          "z": 8
+        },
+        "label": "transverse gyrus running toward the insula"
+      }
+    ],
+    "normalAppearance": "Seen on coronal T1 as the transverse gyrus on the roof of the temporal lobe, medial to the Sylvian fissure and lateral to the insula; on axial images it runs obliquely toward the posterior insula. Bilateral infarcts here are the classic cause of cortical deafness.",
+    "pathology": [
+      {
+        "pathology": "Bilateral temporal infarcts with cortical deafness",
+        "modality": "MRI",
+        "finding": "Bilateral superior temporal restriction, typically from sequential MCA strokes.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Auditory seizures",
+        "modality": "MRI",
+        "finding": "Focal lesion of the superior temporal gyrus with ictal buzzing or ringing.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "DWI; FLAIR; audiometry and brainstem auditory evoked responses (preserved in cortical deafness)"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Mild contralateral hearing loss and impaired localization",
+        "side": "contralateral",
+        "mechanism": "Loss of the predominantly crossed cortical input"
+      },
+      {
+        "deficit": "Cortical deafness or pure word deafness",
+        "side": "bilateral",
+        "mechanism": "Bilateral Heschl's gyri or their radiations with preserved brainstem responses"
+      },
+      {
+        "deficit": "Auditory hallucinations (simple sounds) in seizures",
+        "side": "n/a",
+        "mechanism": "Ictal activation"
+      },
+      {
+        "deficit": "Amusia (non-dominant)",
+        "side": "n/a",
+        "mechanism": "Right auditory cortex"
+      }
+    ],
+    "examination": [
+      "Whisper test and localization of sounds",
+      "Ask about hearing in noisy rooms",
+      "Repetition of spoken words versus reading (pure word deafness spares reading)"
+    ],
+    "syndromes": [
+      "syn-hearing-loss"
+    ],
+    "pearls": [
+      "A deaf ear is never a cortical sign",
+      "Pure word deafness: the patient hears but cannot understand speech, yet reads and writes normally"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "temporal"
+  ],
+  "status": "draft",
+  "latin": "Gyrus temporalis transversus anterior",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

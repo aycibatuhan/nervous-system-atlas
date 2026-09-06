@@ -1,124 +1,116 @@
 {
- "kind": "syndrome",
- "id": "syn-ino",
- "name": "Internuclear ophthalmoplegia",
- "eponyms": [
-  "INO",
-  "MLF syndrome"
- ],
- "category": "demyelinating",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "medial-longitudinal-fasciculus",
-   "level-pons-caudal",
-   "level-pons-rostral",
-   "abducens-nucleus",
-   "oculomotor-nucleus"
+  "kind": "syndrome",
+  "id": "syn-ino",
+  "name": "Internuclear ophthalmoplegia",
+  "eponyms": [
+    "INO",
+    "MLF syndrome"
   ],
-  "side": "ipsilateral",
-  "level": "pons-rostral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -2,
-   "y": -35,
-   "z": -25
+  "category": "demyelinating",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "medial-longitudinal-fasciculus",
+      "level-pons-caudal",
+      "level-pons-rostral",
+      "abducens-nucleus",
+      "oculomotor-nucleus"
+    ],
+    "side": "ipsilateral",
+    "level": "pons-rostral"
   },
-  "radiusMm": 5
- },
- "presentation": "A young woman notices double vision on looking to one side. When she looks to the right, the left eye stays in the midline or adducts slowly while the right eye abducts fully and shows jerky nystagmus; when she looks left, both eyes move normally. Asked to look at a pencil brought toward her nose, both eyes converge, proving that the medial rectus itself works. In an older patient with the same finding, a small pontine stroke is the likely cause.",
- "deficits": [
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "adduction of the eye on the side of the lesion",
-   "sign": "Adduction failure or slowing on contralateral gaze with preserved convergence",
-   "substrate": "medial-longitudinal-fasciculus"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -2,
+      "y": -35,
+      "z": -25
+    },
+    "radiusMm": 5
   },
-  {
-   "modality": "oculomotor",
-   "side": "contralateral",
-   "distribution": "abducting eye",
-   "sign": "Dissociated nystagmus of the abducting eye",
-   "substrate": "pathway-horizontal-gaze"
+  "presentation": "A young woman notices double vision on looking to one side. When she looks to the right, the left eye stays in the midline or adducts slowly while the right eye abducts fully and shows jerky nystagmus; when she looks left, both eyes move normally. Asked to look at a pencil brought toward her nose, both eyes converge, proving that the medial rectus itself works. In an older patient with the same finding, a small pontine stroke is the likely cause.",
+  "deficits": [
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "adduction of the eye on the side of the lesion",
+      "sign": "Adduction failure or slowing on contralateral gaze with preserved convergence",
+      "substrate": "medial-longitudinal-fasciculus"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "contralateral",
+      "distribution": "abducting eye",
+      "sign": "Dissociated nystagmus of the abducting eye",
+      "substrate": "pathway-horizontal-gaze"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "vertical",
+      "sign": "Skew deviation and vertical gaze-evoked nystagmus when bilateral",
+      "substrate": "pathway-vestibular-vor"
+    }
+  ],
+  "reasoning": "Conjugate horizontal gaze depends on the abducens nucleus of one side driving the lateral rectus of its own eye and, through interneurons whose axons cross immediately and ascend in the contralateral MLF, the medial rectus subnucleus of the opposite oculomotor nucleus. A lesion of the MLF on one side cuts the ascending interneuron axons after they have crossed, so the medial rectus on the side of the lesion no longer receives the gaze command: on gaze away from the lesion the ipsilateral eye fails to adduct, and the syndrome is named for the side of the eye that does not adduct, which is the side of the MLF lesion. The abducting eye shows nystagmus, attributed to adaptive increased innervation sent to both yoked muscles. The medial rectus and its motor neurons are intact, so convergence, which uses a separate midbrain pathway, is preserved; this separates INO from a partial third nerve palsy. Bilateral INO in a young adult is almost diagnostic of multiple sclerosis because the MLFs lie side by side in the periventricular tegmentum; unilateral INO in the elderly is usually a paramedian pontine perforator infarct.",
+  "imagingFindings": [
+    {
+      "pathology": "Multiple sclerosis plaque",
+      "modality": "MRI",
+      "finding": "Small T2/FLAIR-bright lesion in the dorsal paramedian pons or midbrain along the MLF, often with other periventricular lesions; thin sagittal sections help.",
+      "sequence": "FLAIR"
+    },
+    {
+      "pathology": "Pontine lacunar infarct",
+      "modality": "MRI",
+      "finding": "Punctate restricted diffusion in the paramedian tegmentum in an older patient.",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Multiple sclerosis (young, often bilateral)",
+    "Paramedian pontine infarct (older)",
+    "Brainstem tumor or hemorrhage",
+    "Wernicke encephalopathy"
+  ],
+  "mimics": [
+    {
+      "name": "Medial rectus (partial third nerve) palsy",
+      "howToDistinguish": "Convergence also fails; ptosis or pupil signs may coexist"
+    },
+    {
+      "name": "Myasthenia gravis",
+      "howToDistinguish": "Pseudo-INO that fatigues and reverses with ice or edrophonium; ptosis common"
+    },
+    {
+      "name": "One-and-a-half syndrome",
+      "howToDistinguish": "Adds an ipsilateral conjugate gaze palsy"
+    }
+  ],
+  "management": [
+    "MRI of the brain with attention to the brainstem; evaluate for multiple sclerosis in the young",
+    "Stroke workup and secondary prevention in the elderly",
+    "Diplopia is usually mild and improves; prisms if persistent"
+  ],
+  "citations": [
+    {
+      "ref": "sp-internuclear-ophthalmoplegia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-nodes-of-ranvier",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -2,
+      "y": -35,
+      "z": -25
+    },
+    "label": "medial longitudinal fasciculus in the dorsal paramedian pons"
   },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "vertical",
-   "sign": "Skew deviation and vertical gaze-evoked nystagmus when bilateral",
-   "substrate": "pathway-vestibular-vor"
-  }
- ],
- "reasoning": "Conjugate horizontal gaze depends on the abducens nucleus of one side driving the lateral rectus of its own eye and, through interneurons whose axons cross immediately and ascend in the contralateral MLF, the medial rectus subnucleus of the opposite oculomotor nucleus. A lesion of the MLF on one side cuts the ascending interneuron axons after they have crossed, so the medial rectus on the side of the lesion no longer receives the gaze command: on gaze away from the lesion the ipsilateral eye fails to adduct, and the syndrome is named for the side of the eye that does not adduct, which is the side of the MLF lesion. The abducting eye shows nystagmus, attributed to adaptive increased innervation sent to both yoked muscles. The medial rectus and its motor neurons are intact, so convergence, which uses a separate midbrain pathway, is preserved; this separates INO from a partial third nerve palsy. Bilateral INO in a young adult is almost diagnostic of multiple sclerosis because the MLFs lie side by side in the periventricular tegmentum; unilateral INO in the elderly is usually a paramedian pontine perforator infarct.",
- "imagingFindings": [
-  {
-   "pathology": "Multiple sclerosis plaque",
-   "modality": "MRI",
-   "finding": "Small T2/FLAIR-bright lesion in the dorsal paramedian pons or midbrain along the MLF, often with other periventricular lesions; thin sagittal sections help.",
-   "sequence": "FLAIR"
-  },
-  {
-   "pathology": "Pontine lacunar infarct",
-   "modality": "MRI",
-   "finding": "Punctate restricted diffusion in the paramedian tegmentum in an older patient.",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Multiple sclerosis (young, often bilateral)",
-  "Paramedian pontine infarct (older)",
-  "Brainstem tumor or hemorrhage",
-  "Wernicke encephalopathy"
- ],
- "mimics": [
-  {
-   "name": "Medial rectus (partial third nerve) palsy",
-   "howToDistinguish": "Convergence also fails; ptosis or pupil signs may coexist"
-  },
-  {
-   "name": "Myasthenia gravis",
-   "howToDistinguish": "Pseudo-INO that fatigues and reverses with ice or edrophonium; ptosis common"
-  },
-  {
-   "name": "One-and-a-half syndrome",
-   "howToDistinguish": "Adds an ipsilateral conjugate gaze palsy"
-  }
- ],
- "management": [
-  "MRI of the brain with attention to the brainstem; evaluate for multiple sclerosis in the young",
-  "Stroke workup and secondary prevention in the elderly",
-  "Diplopia is usually mild and improves; prisms if persistent"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    351,
-    351
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    99,
-    100
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -2,
-   "y": -35,
-   "z": -25
-  },
-  "label": "medial longitudinal fasciculus in the dorsal paramedian pons"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

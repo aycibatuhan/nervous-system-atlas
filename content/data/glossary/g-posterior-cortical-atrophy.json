@@ -1,20 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-posterior-cortical-atrophy",
- "term": "Posterior cortical atrophy",
- "definition": "A visual variant of Alzheimer disease beginning in the occipito-parietal and occipito-temporal cortex with simultanagnosia, optic ataxia, alexia and visual agnosia while memory is relatively preserved.",
- "related": [
-  "g-simultanagnosia",
-  "g-semantic-dementia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-posterior-cortical-atrophy",
+  "term": "Posterior cortical atrophy",
+  "definition": "A visual variant of Alzheimer disease beginning in the occipito-parietal and occipito-temporal cortex with simultanagnosia, optic ataxia, alexia and visual agnosia while memory is relatively preserved.",
+  "related": [
+    "g-simultanagnosia",
+    "g-semantic-dementia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-posterior-cortical-atrophy",
+      "section": "Pathophysiology"
+    }
+  ]
 }

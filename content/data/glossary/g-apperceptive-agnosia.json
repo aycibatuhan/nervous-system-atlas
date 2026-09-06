@@ -1,11 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-apperceptive-agnosia",
- "term": "Apperceptive agnosia",
- "definition": "Failure to recognize objects because their shape cannot be assembled from the visual input; the patient cannot copy or match the object. Lesions lie in the lateral occipital and occipito-temporal cortex, often bilateral after hypoxia.",
- "related": [
-  "g-agnosia",
-  "g-associative-agnosia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-apperceptive-agnosia",
+  "term": "Apperceptive agnosia",
+  "definition": "Failure to recognize objects because their shape cannot be assembled from the visual input; the patient cannot copy or match the object. Lesions lie in the lateral occipital and occipito-temporal cortex, often bilateral after hypoxia.",
+  "related": [
+    "g-agnosia",
+    "g-associative-agnosia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-agnosia",
+      "section": "Introduction"
+    }
+  ]
 }

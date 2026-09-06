@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-spot-sign",
- "term": "Spot sign",
- "definition": "A focus of contrast extravasation within an acute intracerebral hematoma on CT angiography, predicting hematoma expansion and worse outcome.",
- "related": [
-  "g-charcot-bouchard-aneurysm"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-spot-sign",
+  "term": "Spot sign",
+  "definition": "A focus of contrast extravasation within an acute intracerebral hematoma on CT angiography, predicting hematoma expansion and worse outcome.",
+  "related": [
+    "g-charcot-bouchard-aneurysm"
+  ],
+  "citations": [
+    {
+      "ref": "sp-intracerebral-hemorrhagic-stroke",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-hemorrhagic-stroke-overview",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    }
+  ]
 }

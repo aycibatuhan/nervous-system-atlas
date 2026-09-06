@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-neurulation",
- "term": "Neurulation",
- "definition": "Folding and closure of the neural plate into the neural tube during the third and fourth weeks; failure at the anterior neuropore produces anencephaly and at the posterior neuropore spina bifida.",
- "related": [
-  "g-heterotopia"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 18,
-   "pages": [
-    486,
-    506
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-neurulation",
+  "term": "Neurulation",
+  "definition": "Folding and closure of the neural plate into the neural tube during the third and fourth weeks; failure at the anterior neuropore produces anencephaly and at the posterior neuropore spina bifida.",
+  "related": [
+    "g-heterotopia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-neural-tube",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-neural-tube-development-and-stages",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-anencephaly",
+      "section": "Pathophysiology"
+    }
+  ]
 }

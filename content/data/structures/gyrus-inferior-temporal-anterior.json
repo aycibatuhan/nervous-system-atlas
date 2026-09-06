@@ -1,188 +1,160 @@
 {
- "kind": "structure",
- "id": "gyrus-inferior-temporal-anterior",
- "name": "Inferior temporal gyrus, anterior division",
- "synonyms": [
-  "anterior ITG",
-  "area 20"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-inferior-temporal-anterior-l",
-  "gyrus-inferior-temporal-anterior-r"
- ],
- "summary": "The anterior inferior temporal gyrus forms the lower lateral border of the front of the temporal lobe, between the inferior temporal sulcus and the occipitotemporal sulcus, curving onto the inferior surface toward the fusiform gyrus. It is the end of the ventral visual stream where object and face representations reach the semantic and emotional systems of the anterior temporal lobe, and it is supplied mainly by the posterior cerebral artery with the middle cerebral artery laterally. Its damage contributes to prosopagnosia and object agnosia, to semantic dementia when combined with the temporal pole, and to the visual hallucinations and experiential phenomena of temporal seizures.",
- "anatomy": {
-  "location": "Anterior half of the lowest lateral temporal gyrus, below the inferior temporal sulcus and lateral to the occipitotemporal sulcus and the fusiform gyrus, resting on the floor of the middle cranial fossa.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Posterior inferior temporal and fusiform cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Amygdala",
-    "via": "reciprocal amygdalotemporal fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-inferior-temporal-anterior",
+  "name": "Inferior temporal gyrus, anterior division",
+  "synonyms": [
+    "anterior ITG",
+    "area 20"
   ],
-  "efferents": [
-   {
-    "to": "Temporal pole and perirhinal cortex",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Amygdala",
-    "via": "temporo-amygdalar fibers"
-   },
-   {
-    "to": "Inferior frontal cortex",
-    "via": "uncinate and inferior fronto-occipital fasciculi"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-inferior-temporal-anterior-l",
+    "gyrus-inferior-temporal-anterior-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Neurons of the anterior inferior temporal cortex respond to whole objects and faces regardless of their size, position and lighting, and pass these invariant representations to the temporal pole, the perirhinal cortex and the amygdala so that objects can be recognized, named and given emotional meaning. The left side is important for naming objects from vision and for reading words as wholes, the right for recognizing faces and familiar objects and for visual memory. It lies in the posterior cerebral artery territory, and its involvement in a PCA infarct adds visual agnosia or alexia to the hemianopia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The anterior inferior temporal gyrus forms the lower lateral border of the front of the temporal lobe, between the inferior temporal sulcus and the occipitotemporal sulcus, curving onto the inferior surface toward the fusiform gyrus. It is the end of the ventral visual stream where object and face representations reach the semantic and emotional systems of the anterior temporal lobe, and it is supplied mainly by the posterior cerebral artery with the middle cerebral artery laterally. Its damage contributes to prosopagnosia and object agnosia, to semantic dementia when combined with the temporal pole, and to the visual hallucinations and experiential phenomena of temporal seizures.",
+  "anatomy": {
+    "location": "Anterior half of the lowest lateral temporal gyrus, below the inferior temporal sulcus and lateral to the occipitotemporal sulcus and the fusiform gyrus, resting on the floor of the middle cranial fossa.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Posterior inferior temporal and fusiform cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Amygdala",
+        "via": "reciprocal amygdalotemporal fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Temporal pole and perirhinal cortex",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Amygdala",
+        "via": "temporo-amygdalar fibers"
+      },
+      {
+        "to": "Inferior frontal cortex",
+        "via": "uncinate and inferior fronto-occipital fasciculi"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "Neurons of the anterior inferior temporal cortex respond to whole objects and faces regardless of their size, position and lighting, and pass these invariant representations to the temporal pole, the perirhinal cortex and the amygdala so that objects can be recognized, named and given emotional meaning. The left side is important for naming objects from vision and for reading words as wholes, the right for recognizing faces and familiar objects and for visual memory. It lies in the posterior cerebral artery territory, and its involvement in a PCA infarct adds visual agnosia or alexia to the hemianopia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-mca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-inferior-temporal-anterior-l"
+        },
+        "label": "anterior inferior temporal gyrus at the lateral edge of the temporal lobe"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-inferior-temporal-anterior-r"
+        },
+        "label": "lower lateral temporal cortex on the middle fossa floor"
+      }
+    ],
+    "normalAppearance": "The lowest lateral temporal gyrus on coronal images through the amygdala and anterior hippocampus, lateral to the occipitotemporal sulcus and the fusiform gyrus and resting on the middle cranial fossa floor.",
+    "pathology": [
+      {
+        "pathology": "PCA infarct with visual agnosia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the inferior temporal and fusiform cortex together with the medial occipital lobe; the patient cannot recognize objects or faces in the preserved field.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Semantic dementia",
+        "modality": "MRI",
+        "finding": "Anterior inferior temporal and polar atrophy, usually left-sided first, with loss of object knowledge.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Temporal lobe epilepsy with formed visual auras",
+        "modality": "EEG",
+        "finding": "Complex visual scenes or faces at seizure onset with an anterior temporal focus.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Visual object agnosia and anomia for seen objects (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of invariant object representations from the semantic and lexical systems"
+      },
+      {
+        "deficit": "Prosopagnosia (right or bilateral)",
+        "side": "n/a",
+        "mechanism": "Loss of the face-identity representation of the anterior inferior temporal cortex"
+      },
+      {
+        "deficit": "Formed visual hallucinations",
+        "side": "n/a",
+        "mechanism": "Ictal activation of anterior ventral-stream cortex"
+      }
+    ],
+    "examination": [
+      "Naming and describing objects shown, then recognizing them by touch or sound to prove the deficit is visual",
+      "Recognition of famous faces and of the examiner",
+      "Visual fields; a hemianopia coexists when the PCA is the cause"
+    ],
+    "syndromes": [
+      "syn-pca-infarct",
+      "syn-kluver-bucy"
+    ],
+    "pearls": [
+      "Agnosia is recognition failure with preserved sight: the patient copies the drawing but cannot say what it is",
+      "The inferior temporal cortex is PCA territory: visual agnosia with hemianopia is a posterior circulation stroke",
+      "Right anterior inferior temporal damage takes away faces; left takes away names"
+    ]
+  },
+  "pitfalls": [
+    "Prosopagnosia is often reported by the patient as poor eyesight or poor memory; ask specifically whether they recognize family members by their face"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-mca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-inferior-temporal-anterior-l"
+  "citations": [
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
     },
-    "label": "anterior inferior temporal gyrus at the lateral edge of the temporal lobe"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-inferior-temporal-anterior-r"
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
     },
-    "label": "lower lateral temporal cortex on the middle fossa floor"
-   }
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The lowest lateral temporal gyrus on coronal images through the amygdala and anterior hippocampus, lateral to the occipitotemporal sulcus and the fusiform gyrus and resting on the middle cranial fossa floor.",
-  "pathology": [
-   {
-    "pathology": "PCA infarct with visual agnosia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the inferior temporal and fusiform cortex together with the medial occipital lobe; the patient cannot recognize objects or faces in the preserved field.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Semantic dementia",
-    "modality": "MRI",
-    "finding": "Anterior inferior temporal and polar atrophy, usually left-sided first, with loss of object knowledge.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Temporal lobe epilepsy with formed visual auras",
-    "modality": "EEG",
-    "finding": "Complex visual scenes or faces at seizure onset with an anterior temporal focus.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Visual object agnosia and anomia for seen objects (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of invariant object representations from the semantic and lexical systems"
-   },
-   {
-    "deficit": "Prosopagnosia (right or bilateral)",
-    "side": "n/a",
-    "mechanism": "Loss of the face-identity representation of the anterior inferior temporal cortex"
-   },
-   {
-    "deficit": "Formed visual hallucinations",
-    "side": "n/a",
-    "mechanism": "Ictal activation of anterior ventral-stream cortex"
-   }
+  "tags": [
+    "ventral stream",
+    "object recognition"
   ],
-  "examination": [
-   "Naming and describing objects shown, then recognizing them by touch or sound to prove the deficit is visual",
-   "Recognition of famous faces and of the examiner",
-   "Visual fields; a hemianopia coexists when the PCA is the cause"
-  ],
-  "syndromes": [
-   "syn-pca-infarct",
-   "syn-kluver-bucy"
-  ],
-  "pearls": [
-   "Agnosia is recognition failure with preserved sight: the patient copies the drawing but cannot say what it is",
-   "The inferior temporal cortex is PCA territory: visual agnosia with hemianopia is a posterior circulation stroke",
-   "Right anterior inferior temporal damage takes away faces; left takes away names"
-  ]
- },
- "pitfalls": [
-  "Prosopagnosia is often reported by the patient as poor eyesight or poor memory; ask specifically whether they recognize family members by their face"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "ventral stream",
-  "object recognition"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

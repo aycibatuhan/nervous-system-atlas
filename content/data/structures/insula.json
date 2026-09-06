@@ -1,195 +1,175 @@
 {
- "kind": "structure",
- "id": "insula",
- "name": "Insula",
- "synonyms": [
-  "island of Reil",
-  "insular cortex"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "insula-l",
-  "insula-r"
- ],
- "summary": "A lobe of cortex buried at the floor of the lateral sulcus, covered by the frontal, parietal and temporal opercula and overlying the claustrum and putamen. Its anterior part is agranular and limbic, processing taste, interoception, autonomic control and the feeling of emotions and disgust; its posterior part is granular and somatosensory, carrying pain, temperature and vestibular representations. It is the first cortex to lose gray–white differentiation in MCA stroke (insular ribbon sign), the site of the cardiac autonomic disturbances after right MCA infarction, and a frequent origin of hard-to-localize focal seizures.",
- "anatomy": {
-  "location": "Deep in the lateral sulcus, bounded by the circular sulcus and the opercula; the central insular sulcus divides the anterior short gyri from the posterior long gyri; the M2 segments of the MCA run over its surface.",
-  "subdivisions": [
-   {
-    "name": "Anterior insula (short gyri)",
-    "note": "gustatory cortex, interoception, emotion, salience, autonomic control"
-   },
-   {
-    "name": "Posterior insula (long gyri)",
-    "note": "pain, temperature, vestibular and visceral sensation"
-   },
-   {
-    "name": "Insular limen",
-    "note": "junction with the temporal lobe where the MCA divides"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "thalamus-vpm",
-    "note": "taste and visceral"
-   },
-   {
-    "from": "amygdala"
-   }
+  "kind": "structure",
+  "id": "insula",
+  "name": "Insula",
+  "synonyms": [
+    "island of Reil",
+    "insular cortex"
   ],
-  "efferents": [
-   {
-    "to": "hypothalamus and brainstem autonomic centers"
-   },
-   {
-    "to": "cortex-prefrontal"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "insula-l",
+    "insula-r"
   ],
-  "pathways": []
- },
- "function": "Taste, interoceptive awareness, pain and temperature perception, vestibular perception, autonomic regulation (heart rate and blood pressure), emotional awareness (especially disgust), and a role in speech articulation on the left.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca"
-  ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 38,
-     "y": 0,
-     "z": 5
+  "summary": "A lobe of cortex buried at the floor of the lateral sulcus, covered by the frontal, parietal and temporal opercula and overlying the claustrum and putamen. Its anterior part is agranular and limbic, processing taste, interoception, autonomic control and the feeling of emotions and disgust; its posterior part is granular and somatosensory, carrying pain, temperature and vestibular representations. It is the first cortex to lose gray–white differentiation in MCA stroke (insular ribbon sign), the site of the cardiac autonomic disturbances after right MCA infarction, and a frequent origin of hard-to-localize focal seizures.",
+  "anatomy": {
+    "location": "Deep in the lateral sulcus, bounded by the circular sulcus and the opercula; the central insular sulcus divides the anterior short gyri from the posterior long gyri; the M2 segments of the MCA run over its surface.",
+    "subdivisions": [
+      {
+        "name": "Anterior insula (short gyri)",
+        "note": "gustatory cortex, interoception, emotion, salience, autonomic control"
+      },
+      {
+        "name": "Posterior insula (long gyri)",
+        "note": "pain, temperature, vestibular and visceral sensation"
+      },
+      {
+        "name": "Insular limen",
+        "note": "junction with the temporal lobe where the MCA divides"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "thalamus-vpm",
+        "note": "taste and visceral"
+      },
+      {
+        "from": "amygdala"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "hypothalamus and brainstem autonomic centers"
+      },
+      {
+        "to": "cortex-prefrontal"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Taste, interoceptive awareness, pain and temperature perception, vestibular perception, autonomic regulation (heart rate and blood pressure), emotional awareness (especially disgust), and a role in speech articulation on the left.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 38,
+          "y": 0,
+          "z": 5
+        },
+        "label": "insular cortex beneath the Sylvian fissure lateral to the claustrum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 38,
+          "y": 0,
+          "z": 5
+        },
+        "label": "insula under the opercula with the putamen medial"
+      }
+    ],
+    "normalAppearance": "The cortex at the floor of the Sylvian fissure on axial images, lateral to the extreme capsule and claustrum; loss of its gray–white interface on early stroke CT is the insular ribbon sign. Insular FLAIR change with medial temporal involvement is typical of herpes and limbic encephalitis.",
+    "pathology": [
+      {
+        "pathology": "Early MCA infarct: insular ribbon sign",
+        "modality": "CT",
+        "finding": "Loss of the normal gray–white distinction of the insular cortex within hours of MCA occlusion.",
+        "sequence": "CT non-contrast",
+        "timing": "Within 1–3 h"
+      },
+      {
+        "pathology": "Insular glioma",
+        "modality": "MRI",
+        "finding": "T2-bright infiltrating mass expanding the insula; presents with seizures.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Autoimmune or herpes encephalitis",
+        "modality": "MRI",
+        "finding": "FLAIR hyperintensity of the insula and medial temporal lobe.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "CT for early stroke signs; FLAIR"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Loss of taste and impaired interoception",
+        "side": "ipsilateral",
+        "mechanism": "Anterior insula (taste is largely ipsilateral)"
+      },
+      {
+        "deficit": "Cardiac arrhythmias, blood pressure lability, sudden death after stroke",
+        "side": "n/a",
+        "mechanism": "Autonomic cortex, especially right insula"
+      },
+      {
+        "deficit": "Contralateral pain and temperature disturbance, central pain",
+        "side": "contralateral",
+        "mechanism": "Posterior insula"
+      },
+      {
+        "deficit": "Apraxia of speech (dominant)",
+        "side": "n/a",
+        "mechanism": "Anterior insula"
+      },
+      {
+        "deficit": "Seizures with visceral, gustatory or laryngeal auras and hypersalivation",
+        "side": "n/a",
+        "mechanism": "Insular epileptogenic cortex"
+      },
+      {
+        "deficit": "Vertigo and tilt of the visual vertical",
+        "side": "contralateral",
+        "mechanism": "Posterior insula vestibular cortex"
+      }
+    ],
+    "examination": [
+      "Taste testing",
+      "Pin-prick and temperature",
+      "Heart rate and rhythm monitoring after MCA stroke",
+      "Ask about throat tightening, nausea or strange tastes as seizure auras"
+    ],
+    "syndromes": [
+      "syn-mca-stem-infarct"
+    ],
+    "pearls": [
+      "Insular seizures mimic temporal lobe epilepsy but with early throat constriction, paresthesias and hypersalivation",
+      "Right insular stroke deserves cardiac monitoring for arrhythmia"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-insular-cortex",
+      "section": "Introduction"
     },
-    "label": "insular cortex beneath the Sylvian fissure lateral to the claustrum"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 38,
-     "y": 0,
-     "z": 5
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
     },
-    "label": "insula under the opercula with the putamen medial"
-   }
+    {
+      "ref": "sp-cerebral-hemisphere",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The cortex at the floor of the Sylvian fissure on axial images, lateral to the extreme capsule and claustrum; loss of its gray–white interface on early stroke CT is the insular ribbon sign. Insular FLAIR change with medial temporal involvement is typical of herpes and limbic encephalitis.",
-  "pathology": [
-   {
-    "pathology": "Early MCA infarct: insular ribbon sign",
-    "modality": "CT",
-    "finding": "Loss of the normal gray–white distinction of the insular cortex within hours of MCA occlusion.",
-    "sequence": "CT non-contrast",
-    "timing": "Within 1–3 h"
-   },
-   {
-    "pathology": "Insular glioma",
-    "modality": "MRI",
-    "finding": "T2-bright infiltrating mass expanding the insula; presents with seizures.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Autoimmune or herpes encephalitis",
-    "modality": "MRI",
-    "finding": "FLAIR hyperintensity of the insula and medial temporal lobe.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "cortex",
+    "insula"
   ],
-  "sequenceOfChoice": "CT for early stroke signs; FLAIR"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Loss of taste and impaired interoception",
-    "side": "ipsilateral",
-    "mechanism": "Anterior insula (taste is largely ipsilateral)"
-   },
-   {
-    "deficit": "Cardiac arrhythmias, blood pressure lability, sudden death after stroke",
-    "side": "n/a",
-    "mechanism": "Autonomic cortex, especially right insula"
-   },
-   {
-    "deficit": "Contralateral pain and temperature disturbance, central pain",
-    "side": "contralateral",
-    "mechanism": "Posterior insula"
-   },
-   {
-    "deficit": "Apraxia of speech (dominant)",
-    "side": "n/a",
-    "mechanism": "Anterior insula"
-   },
-   {
-    "deficit": "Seizures with visceral, gustatory or laryngeal auras and hypersalivation",
-    "side": "n/a",
-    "mechanism": "Insular epileptogenic cortex"
-   },
-   {
-    "deficit": "Vertigo and tilt of the visual vertical",
-    "side": "contralateral",
-    "mechanism": "Posterior insula vestibular cortex"
-   }
-  ],
-  "examination": [
-   "Taste testing",
-   "Pin-prick and temperature",
-   "Heart rate and rhythm monitoring after MCA stroke",
-   "Ask about throat tightening, nausea or strange tastes as seizure auras"
-  ],
-  "syndromes": [
-   "syn-mca-stem-infarct"
-  ],
-  "pearls": [
-   "Insular seizures mimic temporal lobe epilepsy but with early throat constriction, paresthesias and hypersalivation",
-   "Right insular stroke deserves cardiac monitoring for arrhythmia"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    256,
-    262
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    287,
-    287
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    55
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    184
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "insula"
- ],
- "status": "draft",
- "latin": "Insula",
- "subsystem": "lobe-insula"
+  "status": "draft",
+  "latin": "Insula",
+  "subsystem": "lobe-insula"
 }

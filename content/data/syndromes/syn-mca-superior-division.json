@@ -1,126 +1,122 @@
 {
- "kind": "syndrome",
- "id": "syn-mca-superior-division",
- "name": "Middle cerebral artery superior division infarction",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "territory-mca",
-   "artery-mca-superior-division",
-   "gyrus-precentral",
-   "gyrus-postcentral",
-   "area-broca",
-   "frontal-eye-field"
+  "kind": "syndrome",
+  "id": "syn-mca-superior-division",
+  "name": "Middle cerebral artery superior division infarction",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "territory-mca",
+      "artery-mca-superior-division",
+      "gyrus-precentral",
+      "gyrus-postcentral",
+      "area-broca",
+      "frontal-eye-field"
+    ],
+    "side": "contralateral",
+    "arteryId": "artery-mca-superior-division",
+    "territoryId": "territory-mca"
+  },
+  "lesionMarker": {
+    "kind": "territory",
+    "meshIds": [
+      "territory-mca-frontal-l",
+      "territory-mca-parietal-l"
+    ]
+  },
+  "presentation": "Weakness and numbness of the face and arm develop suddenly, with the leg relatively spared, and the eyes are turned toward the side of the infarct for the first day or two. In the dominant hemisphere the patient understands but cannot produce fluent speech: output is effortful and telegraphic, repetition is poor and there is often apraxia of the non-paralyzed hand. There is no hemianopia. The picture is a brachiofacial hemiparesis with Broca aphasia.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "face and arm more than leg",
+      "sign": "Brachiofacial hemiparesis with forehead-sparing facial weakness",
+      "substrate": "pathway-corticobulbar"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "face and arm",
+      "sign": "Cortical sensory loss with astereognosis",
+      "substrate": "gyrus-postcentral"
+    },
+    {
+      "modality": "language",
+      "side": "n/a",
+      "distribution": "dominant hemisphere",
+      "sign": "Non-fluent (Broca) aphasia with preserved comprehension",
+      "substrate": "area-broca"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "conjugate",
+      "sign": "Transient gaze preference toward the lesion",
+      "substrate": "frontal-eye-field"
+    }
   ],
-  "side": "contralateral",
-  "arteryId": "artery-mca-superior-division",
-  "territoryId": "territory-mca"
- },
- "lesionMarker": {
-  "kind": "territory",
-  "meshIds": [
-   "territory-mca-frontal-l",
-   "territory-mca-parietal-l"
-  ]
- },
- "presentation": "Weakness and numbness of the face and arm develop suddenly, with the leg relatively spared, and the eyes are turned toward the side of the infarct for the first day or two. In the dominant hemisphere the patient understands but cannot produce fluent speech: output is effortful and telegraphic, repetition is poor and there is often apraxia of the non-paralyzed hand. There is no hemianopia. The picture is a brachiofacial hemiparesis with Broca aphasia.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "face and arm more than leg",
-   "sign": "Brachiofacial hemiparesis with forehead-sparing facial weakness",
-   "substrate": "pathway-corticobulbar"
+  "reasoning": "The superior division leaves the middle cerebral trunk in the Sylvian fissure and supplies the frontal and anterior parietal convexity: the lateral part of the precentral and postcentral gyri, the frontal operculum and the frontal eye field. The motor and sensory homunculi place the face and hand on this lateral surface and the leg on the medial surface served by the anterior cerebral artery, so the deficit is brachiofacial. Corticospinal and corticobulbar fibers cross in the brainstem, and the face area projects mainly to the contralateral lower facial subnucleus, so the weakness is contralateral and spares the forehead. Broca's area in the dominant inferior frontal gyrus lies in the territory, but Wernicke's area in the posterior temporal lobe belongs to the inferior division, which is why comprehension is preserved. The optic radiation runs through the temporal and parietal lobes below the territory, so vision is spared, a useful distinction from a stem occlusion.",
+  "imagingFindings": [
+    {
+      "pathology": "Acute superior-division infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the frontal operculum, precentral and postcentral gyri on the lateral convexity, sparing the temporal lobe and deep nuclei.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Branch occlusion",
+      "modality": "CTA",
+      "finding": "Cut-off of the superior M2 trunk with preserved inferior trunk flow."
+    }
+  ],
+  "commonCauses": [
+    "Cardioembolism",
+    "Artery-to-artery embolism from carotid plaque",
+    "Small emboli after cardiac procedures"
+  ],
+  "mimics": [
+    {
+      "name": "Lacunar pure motor stroke",
+      "howToDistinguish": "Face, arm and leg equally weak, no aphasia or sensory loss"
+    },
+    {
+      "name": "Inferior division infarct",
+      "howToDistinguish": "Fluent aphasia and visual field loss without much weakness"
+    },
+    {
+      "name": "Cortical vein thrombosis",
+      "howToDistinguish": "Seizures, headache and a hemorrhagic cortical lesion on imaging"
+    }
+  ],
+  "management": [
+    "Acute stroke treatment; M2 thrombectomy is considered case by case",
+    "Speech and language therapy begun early",
+    "Secondary prevention directed at the embolic source"
+  ],
+  "citations": [
+    {
+      "ref": "sp-broca-area",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-aphasia",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -45,
+      "y": 5,
+      "z": 30
+    },
+    "label": "frontal operculum and precentral gyrus"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "face and arm",
-   "sign": "Cortical sensory loss with astereognosis",
-   "substrate": "gyrus-postcentral"
-  },
-  {
-   "modality": "language",
-   "side": "n/a",
-   "distribution": "dominant hemisphere",
-   "sign": "Non-fluent (Broca) aphasia with preserved comprehension",
-   "substrate": "area-broca"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "conjugate",
-   "sign": "Transient gaze preference toward the lesion",
-   "substrate": "frontal-eye-field"
-  }
- ],
- "reasoning": "The superior division leaves the middle cerebral trunk in the Sylvian fissure and supplies the frontal and anterior parietal convexity: the lateral part of the precentral and postcentral gyri, the frontal operculum and the frontal eye field. The motor and sensory homunculi place the face and hand on this lateral surface and the leg on the medial surface served by the anterior cerebral artery, so the deficit is brachiofacial. Corticospinal and corticobulbar fibers cross in the brainstem, and the face area projects mainly to the contralateral lower facial subnucleus, so the weakness is contralateral and spares the forehead. Broca's area in the dominant inferior frontal gyrus lies in the territory, but Wernicke's area in the posterior temporal lobe belongs to the inferior division, which is why comprehension is preserved. The optic radiation runs through the temporal and parietal lobes below the territory, so vision is spared, a useful distinction from a stem occlusion.",
- "imagingFindings": [
-  {
-   "pathology": "Acute superior-division infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the frontal operculum, precentral and postcentral gyri on the lateral convexity, sparing the temporal lobe and deep nuclei.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Branch occlusion",
-   "modality": "CTA",
-   "finding": "Cut-off of the superior M2 trunk with preserved inferior trunk flow."
-  }
- ],
- "commonCauses": [
-  "Cardioembolism",
-  "Artery-to-artery embolism from carotid plaque",
-  "Small emboli after cardiac procedures"
- ],
- "mimics": [
-  {
-   "name": "Lacunar pure motor stroke",
-   "howToDistinguish": "Face, arm and leg equally weak, no aphasia or sensory loss"
-  },
-  {
-   "name": "Inferior division infarct",
-   "howToDistinguish": "Fluent aphasia and visual field loss without much weakness"
-  },
-  {
-   "name": "Cortical vein thrombosis",
-   "howToDistinguish": "Seizures, headache and a hemorrhagic cortical lesion on imaging"
-  }
- ],
- "management": [
-  "Acute stroke treatment; M2 thrombectomy is considered case by case",
-  "Speech and language therapy begun early",
-  "Secondary prevention directed at the embolic source"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    473,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    59
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -45,
-   "y": 5,
-   "z": 30
-  },
-  "label": "frontal operculum and precentral gyrus"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

@@ -1,10 +1,22 @@
 {
- "kind": "glossary",
- "id": "g-dwi",
- "term": "Diffusion-weighted imaging (DWI)",
- "definition": "An MRI sequence sensitive to the restricted diffusion of water in cytotoxic edema, which shows acute infarcts as bright areas within minutes of onset, well before CT or conventional MRI change; also bright in abscess, epidermoid and highly cellular tumors.",
- "related": [
-  "g-flair"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-dwi",
+  "term": "Diffusion-weighted imaging (DWI)",
+  "definition": "An MRI sequence sensitive to the restricted diffusion of water in cytotoxic edema, which shows acute infarcts as bright areas within minutes of onset, well before CT or conventional MRI change; also bright in abscess, epidermoid and highly cellular tumors.",
+  "related": [
+    "g-flair"
+  ],
+  "citations": [
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-magnetic-resonance-imaging-physics"
+    },
+    {
+      "ref": "sp-diffusion-tensor-imaging",
+      "section": "Introduction"
+    }
+  ]
 }

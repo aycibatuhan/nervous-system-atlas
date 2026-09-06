@@ -1,118 +1,122 @@
 {
- "kind": "syndrome",
- "id": "syn-hearing-loss",
- "name": "Conductive versus sensorineural hearing loss",
- "eponyms": [],
- "category": "otologic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-08-vestibulocochlear",
-   "cochlear-nuclei",
-   "gyrus-heschl"
+  "kind": "syndrome",
+  "id": "syn-hearing-loss",
+  "name": "Conductive versus sensorineural hearing loss",
+  "eponyms": [],
+  "category": "otologic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-08-vestibulocochlear",
+      "cochlear-nuclei",
+      "gyrus-heschl"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "cn-08-vestibulocochlear-l"
+    ]
+  },
+  "presentation": "A patient cannot hear well in one ear. A tuning fork placed on the forehead is heard louder in the affected ear if the problem is in the ear canal, drum or ossicles, and louder in the good ear if the cochlea or nerve is at fault; placed on the mastoid and then held beside the ear, it is heard longer through the bone than the air in conductive loss and longer through the air in sensorineural loss. Unilateral sensorineural loss needs an MRI; conductive loss needs an otoscope.",
+  "deficits": [
+    {
+      "modality": "auditory",
+      "side": "ipsilateral",
+      "distribution": "external or middle ear (conductive)",
+      "sign": "Weber lateralizes to the affected ear, Rinne negative (bone > air); low-frequency loss on audiometry",
+      "substrate": "cn-08-vestibulocochlear"
+    },
+    {
+      "modality": "auditory",
+      "side": "ipsilateral",
+      "distribution": "cochlea or nerve (sensorineural)",
+      "sign": "Weber lateralizes to the good ear, Rinne positive (air > bone); high-frequency or all-frequency loss with reduced discrimination in nerve lesions",
+      "substrate": "cochlear-nuclei"
+    },
+    {
+      "modality": "vestibular",
+      "side": "ipsilateral",
+      "distribution": "labyrinth (with cochlear disease)",
+      "sign": "Vertigo or imbalance accompanies labyrinthine and nerve lesions but not middle ear disease",
+      "substrate": "pathway-vestibular-vor"
+    },
+    {
+      "modality": "auditory",
+      "side": "n/a",
+      "distribution": "central (rare)",
+      "sign": "Bilateral central lesions cause cortical deafness or word deafness; unilateral central lesions never cause deafness",
+      "substrate": "pathway-auditory"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "cn-08-vestibulocochlear-l"
-  ]
- },
- "presentation": "A patient cannot hear well in one ear. A tuning fork placed on the forehead is heard louder in the affected ear if the problem is in the ear canal, drum or ossicles, and louder in the good ear if the cochlea or nerve is at fault; placed on the mastoid and then held beside the ear, it is heard longer through the bone than the air in conductive loss and longer through the air in sensorineural loss. Unilateral sensorineural loss needs an MRI; conductive loss needs an otoscope.",
- "deficits": [
-  {
-   "modality": "auditory",
-   "side": "ipsilateral",
-   "distribution": "external or middle ear (conductive)",
-   "sign": "Weber lateralizes to the affected ear, Rinne negative (bone > air); low-frequency loss on audiometry",
-   "substrate": "cn-08-vestibulocochlear"
+  "reasoning": "Sound reaches the cochlea by two routes: through the ear canal, drum and ossicles (air conduction) or directly through the skull bones (bone conduction). A conductive lesion blocks the air route and leaves bone conduction intact, so the affected ear hears the forehead fork better than the good ear, which is distracted by ambient noise entering through its open air route, and hears the mastoid fork longer than the fork beside the canal. A sensorineural lesion of the cochlea or the cochlear nerve reduces both routes equally, so the fork on the forehead is heard better by the healthy cochlea and the normal air-over-bone advantage persists. Above the cochlear nuclei the auditory pathway crosses partially at several levels, in the trapezoid body, the lateral lemniscus and the inferior colliculus, so each auditory cortex receives input from both ears and a unilateral brainstem, thalamic or cortical lesion causes at most subtle localization or discrimination deficits, never deafness in one ear: unilateral hearing loss is always peripheral, in the ear or the eighth nerve. Nerve (retrocochlear) lesions are distinguished from cochlear ones by speech discrimination far worse than the pure-tone loss predicts, absent acoustic reflexes and prolonged interpeak latencies on brainstem auditory evoked potentials, and require MRI for a schwannoma. Sudden sensorineural loss is an emergency treated with steroids; a conductive loss with a normal drum in a young adult suggests otosclerosis.",
+  "imagingFindings": [
+    {
+      "pathology": "Vestibular schwannoma",
+      "modality": "MRI",
+      "finding": "Enhancing mass in the internal acoustic meatus in any asymmetric sensorineural loss.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Otosclerosis or ossicular disease",
+      "modality": "CT",
+      "finding": "Lucent otospongiotic focus at the fissula ante fenestram, ossicular erosion by cholesteatoma or discontinuity after trauma on temporal bone CT.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Labyrinthine infarct or labyrinthitis",
+      "modality": "MRI",
+      "finding": "Enhancement of the cochlea and vestibule, or AICA territory infarct on DWI.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Conductive: wax, otitis media with effusion, perforation, otosclerosis, cholesteatoma",
+    "Sensorineural: presbycusis, noise, ototoxic drugs, Ménière, sudden idiopathic loss, schwannoma, AICA infarct, meningitis"
+  ],
+  "mimics": [
+    {
+      "name": "Functional hearing loss",
+      "howToDistinguish": "Inconsistent audiometry; normal otoacoustic emissions and evoked potentials"
+    },
+    {
+      "name": "Auditory neuropathy",
+      "howToDistinguish": "Present emissions, absent brainstem responses"
+    },
+    {
+      "name": "Cortical deafness",
+      "howToDistinguish": "Bilateral temporal lesions; patient responds to sounds inconsistently"
+    }
+  ],
+  "management": [
+    "Otoscopy, Weber and Rinne, then audiometry with speech discrimination",
+    "MRI of the internal auditory meatus for any unexplained asymmetric sensorineural loss",
+    "Urgent oral or intratympanic steroids for sudden sensorineural loss; hearing aids or implants for chronic loss"
+  ],
+  "citations": [
+    {
+      "ref": "sp-hearing-loss",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-sensorineural-hearing-loss",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-conductive-hearing-loss",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -45,
+      "y": -30,
+      "z": -32
+    },
+    "label": "cochlea and cochlear nerve"
   },
-  {
-   "modality": "auditory",
-   "side": "ipsilateral",
-   "distribution": "cochlea or nerve (sensorineural)",
-   "sign": "Weber lateralizes to the good ear, Rinne positive (air > bone); high-frequency or all-frequency loss with reduced discrimination in nerve lesions",
-   "substrate": "cochlear-nuclei"
-  },
-  {
-   "modality": "vestibular",
-   "side": "ipsilateral",
-   "distribution": "labyrinth (with cochlear disease)",
-   "sign": "Vertigo or imbalance accompanies labyrinthine and nerve lesions but not middle ear disease",
-   "substrate": "pathway-vestibular-vor"
-  },
-  {
-   "modality": "auditory",
-   "side": "n/a",
-   "distribution": "central (rare)",
-   "sign": "Bilateral central lesions cause cortical deafness or word deafness; unilateral central lesions never cause deafness",
-   "substrate": "pathway-auditory"
-  }
- ],
- "reasoning": "Sound reaches the cochlea by two routes: through the ear canal, drum and ossicles (air conduction) or directly through the skull bones (bone conduction). A conductive lesion blocks the air route and leaves bone conduction intact, so the affected ear hears the forehead fork better than the good ear, which is distracted by ambient noise entering through its open air route, and hears the mastoid fork longer than the fork beside the canal. A sensorineural lesion of the cochlea or the cochlear nerve reduces both routes equally, so the fork on the forehead is heard better by the healthy cochlea and the normal air-over-bone advantage persists. Above the cochlear nuclei the auditory pathway crosses partially at several levels, in the trapezoid body, the lateral lemniscus and the inferior colliculus, so each auditory cortex receives input from both ears and a unilateral brainstem, thalamic or cortical lesion causes at most subtle localization or discrimination deficits, never deafness in one ear: unilateral hearing loss is always peripheral, in the ear or the eighth nerve. Nerve (retrocochlear) lesions are distinguished from cochlear ones by speech discrimination far worse than the pure-tone loss predicts, absent acoustic reflexes and prolonged interpeak latencies on brainstem auditory evoked potentials, and require MRI for a schwannoma. Sudden sensorineural loss is an emergency treated with steroids; a conductive loss with a normal drum in a young adult suggests otosclerosis.",
- "imagingFindings": [
-  {
-   "pathology": "Vestibular schwannoma",
-   "modality": "MRI",
-   "finding": "Enhancing mass in the internal acoustic meatus in any asymmetric sensorineural loss.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Otosclerosis or ossicular disease",
-   "modality": "CT",
-   "finding": "Lucent otospongiotic focus at the fissula ante fenestram, ossicular erosion by cholesteatoma or discontinuity after trauma on temporal bone CT.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Labyrinthine infarct or labyrinthitis",
-   "modality": "MRI",
-   "finding": "Enhancement of the cochlea and vestibule, or AICA territory infarct on DWI.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Conductive: wax, otitis media with effusion, perforation, otosclerosis, cholesteatoma",
-  "Sensorineural: presbycusis, noise, ototoxic drugs, Ménière, sudden idiopathic loss, schwannoma, AICA infarct, meningitis"
- ],
- "mimics": [
-  {
-   "name": "Functional hearing loss",
-   "howToDistinguish": "Inconsistent audiometry; normal otoacoustic emissions and evoked potentials"
-  },
-  {
-   "name": "Auditory neuropathy",
-   "howToDistinguish": "Present emissions, absent brainstem responses"
-  },
-  {
-   "name": "Cortical deafness",
-   "howToDistinguish": "Bilateral temporal lesions; patient responds to sounds inconsistently"
-  }
- ],
- "management": [
-  "Otoscopy, Weber and Rinne, then audiometry with speech discrimination",
-  "MRI of the internal auditory meatus for any unexplained asymmetric sensorineural loss",
-  "Urgent oral or intratympanic steroids for sudden sensorineural loss; hearing aids or implants for chronic loss"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -45,
-   "y": -30,
-   "z": -32
-  },
-  "label": "cochlea and cochlear nerve"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

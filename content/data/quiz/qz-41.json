@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-41",
- "type": "localize",
- "vignette": "A 60-year-old man develops weakness of the right face, arm and leg, loss of all sensation on the right side and a right homonymous hemianopia within an hour. He speaks normally, follows commands and is aware of his deficits. CT shows no cortical change.",
- "stem": "Which artery is most likely occluded?",
- "options": [
-  {
-   "key": "A",
-   "text": "Left middle cerebral artery stem"
-  },
-  {
-   "key": "B",
-   "text": "Left anterior choroidal artery"
-  },
-  {
-   "key": "C",
-   "text": "Left posterior cerebral artery"
-  },
-  {
-   "key": "D",
-   "text": "Left lenticulostriate artery"
-  },
-  {
-   "key": "E",
-   "text": "Left superior cerebellar artery"
-  }
- ],
- "answer": "B",
- "explanation": "Hemiparesis, hemisensory loss and hemianopia without aphasia or neglect is the triad of the anterior choroidal artery, which supplies the posterior limb of the internal capsule (motor and sensory fibers) and the optic tract and geniculate; an MCA stem occlusion would add cortical signs, and a lenticulostriate lacune would spare the fields.",
- "targets": {
-  "structureIds": [
-   "territory-anterior-choroidal-thalamoperforating",
-   "artery-anterior-choroidal"
+  "kind": "quiz",
+  "id": "qz-41",
+  "type": "localize",
+  "vignette": "A 60-year-old man develops weakness of the right face, arm and leg, loss of all sensation on the right side and a right homonymous hemianopia within an hour. He speaks normally, follows commands and is aware of his deficits. CT shows no cortical change.",
+  "stem": "Which artery is most likely occluded?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Left middle cerebral artery stem"
+    },
+    {
+      "key": "B",
+      "text": "Left anterior choroidal artery"
+    },
+    {
+      "key": "C",
+      "text": "Left posterior cerebral artery"
+    },
+    {
+      "key": "D",
+      "text": "Left lenticulostriate artery"
+    },
+    {
+      "key": "E",
+      "text": "Left superior cerebellar artery"
+    }
   ],
-  "syndromeIds": [
-   "syn-anterior-choroidal-infarct"
+  "answer": "B",
+  "explanation": "Hemiparesis, hemisensory loss and hemianopia without aphasia or neglect is the triad of the anterior choroidal artery, which supplies the posterior limb of the internal capsule (motor and sensory fibers) and the optic tract and geniculate; an MCA stem occlusion would add cortical signs, and a lenticulostriate lacune would spare the fields.",
+  "targets": {
+    "structureIds": [
+      "territory-anterior-choroidal-thalamoperforating",
+      "artery-anterior-choroidal"
+    ],
+    "syndromeIds": [
+      "syn-anterior-choroidal-infarct"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "territory-anterior-choroidal-thalamoperforating-l",
+    "artery-anterior-choroidal-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "territory-anterior-choroidal-thalamoperforating-l",
-  "artery-anterior-choroidal-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-anterior-choroidal-arteries",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-circle-of-willis",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

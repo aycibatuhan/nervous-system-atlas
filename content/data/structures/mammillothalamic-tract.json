@@ -1,187 +1,159 @@
 {
- "kind": "structure",
- "id": "mammillothalamic-tract",
- "name": "Mammillothalamic tract",
- "synonyms": [
-  "bundle of Vicq d'Azyr"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "mammillothalamic-tract-l",
-  "mammillothalamic-tract-r"
- ],
- "summary": "The mammillothalamic tract is a compact bundle that rises from the mammillary body through the posterior hypothalamus to the anterior nucleus of the thalamus, the diencephalic limb of the Papez memory circuit. It carries hippocampal information that reached the mammillary body through the fornix on to the anterior thalamus, from which the cingulate gyrus and the entorhinal cortex receive it, and interruption of it at any point produces anterograde amnesia. It is a landmark on axial MRI through the midbrain-diencephalic junction, a stereotactic target for epilepsy (anterior thalamic stimulation), and it degenerates with the mammillary bodies in Wernicke-Korsakoff syndrome and in thalamic infarcts of the tuberothalamic artery.",
- "anatomy": {
-  "location": "Ascends from the medial mammillary nucleus through the posterior hypothalamus, lateral to the third ventricle and medial to the lateral hypothalamus, to enter the anterior thalamic nuclei; the mammillotegmental tract branches off it to the midbrain.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Medial mammillary nucleus",
-    "via": "direct"
-   },
-   {
-    "from": "Subiculum (via the mammillary body)",
-    "via": "postcommissural fornix"
-   },
-   {
-    "from": "Tegmental nuclei of Gudden",
-    "via": "mammillary peduncle"
-   }
+  "kind": "structure",
+  "id": "mammillothalamic-tract",
+  "name": "Mammillothalamic tract",
+  "synonyms": [
+    "bundle of Vicq d'Azyr"
   ],
-  "efferents": [
-   {
-    "to": "Anteroventral and anteromedial thalamic nuclei",
-    "via": "direct"
-   },
-   {
-    "to": "Midbrain tegmentum",
-    "via": "mammillotegmental tract branch"
-   },
-   {
-    "to": "Cingulate and retrosplenial cortex (via anterior thalamus)",
-    "via": "anterior thalamic radiation"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "mammillothalamic-tract-l",
+    "mammillothalamic-tract-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "The tract conveys the output of the medial mammillary nucleus, which itself receives the postcommissural fornix from the subiculum and the theta-modulated input of the supramammillary and tegmental nuclei of Gudden, to the anteroventral and anteromedial thalamic nuclei; the anterior thalamus projects to the cingulate and retrosplenial cortex and the presubiculum, closing the Papez circuit that supports the encoding of new episodic memories and the head-direction signal used in navigation. Lesions of the tract disconnect the hippocampus from the thalamus and produce an amnesia as dense as bilateral hippocampal damage, with confabulation when the frontal connections are also affected.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pcom",
-   "artery-pca"
+  "summary": "The mammillothalamic tract is a compact bundle that rises from the mammillary body through the posterior hypothalamus to the anterior nucleus of the thalamus, the diencephalic limb of the Papez memory circuit. It carries hippocampal information that reached the mammillary body through the fornix on to the anterior thalamus, from which the cingulate gyrus and the entorhinal cortex receive it, and interruption of it at any point produces anterograde amnesia. It is a landmark on axial MRI through the midbrain-diencephalic junction, a stereotactic target for epilepsy (anterior thalamic stimulation), and it degenerates with the mammillary bodies in Wernicke-Korsakoff syndrome and in thalamic infarcts of the tuberothalamic artery.",
+  "anatomy": {
+    "location": "Ascends from the medial mammillary nucleus through the posterior hypothalamus, lateral to the third ventricle and medial to the lateral hypothalamus, to enter the anterior thalamic nuclei; the mammillotegmental tract branches off it to the midbrain.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Medial mammillary nucleus",
+        "via": "direct"
+      },
+      {
+        "from": "Subiculum (via the mammillary body)",
+        "via": "postcommissural fornix"
+      },
+      {
+        "from": "Tegmental nuclei of Gudden",
+        "via": "mammillary peduncle"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Anteroventral and anteromedial thalamic nuclei",
+        "via": "direct"
+      },
+      {
+        "to": "Midbrain tegmentum",
+        "via": "mammillotegmental tract branch"
+      },
+      {
+        "to": "Cingulate and retrosplenial cortex (via anterior thalamus)",
+        "via": "anterior thalamic radiation"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "The tract conveys the output of the medial mammillary nucleus, which itself receives the postcommissural fornix from the subiculum and the theta-modulated input of the supramammillary and tegmental nuclei of Gudden, to the anteroventral and anteromedial thalamic nuclei; the anterior thalamus projects to the cingulate and retrosplenial cortex and the presubiculum, closing the Papez circuit that supports the encoding of new episodic memories and the head-direction signal used in navigation. Lesions of the tract disconnect the hippocampus from the thalamus and produce an amnesia as dense as bilateral hippocampal damage, with confabulation when the frontal connections are also affected.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pcom",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "mammillothalamic-tract-l"
+        },
+        "label": "mammillothalamic tract rising through the posterior hypothalamus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "mammillothalamic-tract-r"
+        },
+        "label": "tract between the mammillary body and the anterior thalamus"
+      }
+    ],
+    "normalAppearance": "A short dark bundle on axial T2 images running obliquely from the mammillary body to the anterior thalamus, visible as a small round structure lateral to the third ventricle at the level of the interpeduncular fossa; it is used to locate the anterior thalamic nucleus for stimulation.",
+    "pathology": [
+      {
+        "pathology": "Wernicke-Korsakoff syndrome",
+        "modality": "MRI",
+        "finding": "Mammillary body signal change and later atrophy with thinning of the mammillothalamic tracts and anterior thalamic volume loss; amnesia persists.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Tuberothalamic (polar) artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the anterior thalamus interrupting the tract's termination, with amnesia, apathy and facial paresis for emotional movement.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Third ventricular tumor",
+        "modality": "MRI",
+        "finding": "Craniopharyngioma or glioma of the posterior third ventricle compressing both tracts with memory loss.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Interruption of the Papez circuit between the mammillary body and the anterior thalamus"
+      },
+      {
+        "deficit": "Confabulation",
+        "side": "bilateral",
+        "mechanism": "Combined diencephalic amnesia and frontal-thalamic disconnection"
+      },
+      {
+        "deficit": "Impaired spatial orientation",
+        "side": "bilateral",
+        "mechanism": "Loss of the mammillary-anterior thalamic head-direction signal"
+      }
+    ],
+    "examination": [
+      "Delayed recall and recognition memory",
+      "Confabulation probing: ask about recent events the examiner can verify",
+      "Thiamine status and alcohol history in any patient with diencephalic memory loss"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff",
+      "syn-thalamic-dejerine-roussy"
+    ],
+    "pearls": [
+      "The Papez circuit runs fornix, mammillary body, mammillothalamic tract, anterior thalamus, cingulate: cut it anywhere and memory stops",
+      "The tract is a millimeter-scale landmark that defines the anterior thalamic target for epilepsy stimulation",
+      "Diencephalic amnesia confabulates; hippocampal amnesia usually does not"
+    ]
+  },
+  "pitfalls": [
+    "Memory loss with a normal hippocampus on MRI should prompt a look at the mammillary bodies and the anterior thalamus"
   ],
-  "territories": [
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "mammillothalamic-tract-l"
+  "citations": [
+    {
+      "ref": "sp-mammillary-bodies",
+      "section": "Structure and Function"
     },
-    "label": "mammillothalamic tract rising through the posterior hypothalamus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "mammillothalamic-tract-r"
+    {
+      "ref": "sp-wernicke-encephalopathy",
+      "section": "Pathophysiology"
     },
-    "label": "tract between the mammillary body and the anterior thalamus"
-   }
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A short dark bundle on axial T2 images running obliquely from the mammillary body to the anterior thalamus, visible as a small round structure lateral to the third ventricle at the level of the interpeduncular fossa; it is used to locate the anterior thalamic nucleus for stimulation.",
-  "pathology": [
-   {
-    "pathology": "Wernicke-Korsakoff syndrome",
-    "modality": "MRI",
-    "finding": "Mammillary body signal change and later atrophy with thinning of the mammillothalamic tracts and anterior thalamic volume loss; amnesia persists.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Tuberothalamic (polar) artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the anterior thalamus interrupting the tract's termination, with amnesia, apathy and facial paresis for emotional movement.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Third ventricular tumor",
-    "modality": "MRI",
-    "finding": "Craniopharyngioma or glioma of the posterior third ventricle compressing both tracts with memory loss.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Interruption of the Papez circuit between the mammillary body and the anterior thalamus"
-   },
-   {
-    "deficit": "Confabulation",
-    "side": "bilateral",
-    "mechanism": "Combined diencephalic amnesia and frontal-thalamic disconnection"
-   },
-   {
-    "deficit": "Impaired spatial orientation",
-    "side": "bilateral",
-    "mechanism": "Loss of the mammillary-anterior thalamic head-direction signal"
-   }
+  "tags": [
+    "Papez",
+    "memory",
+    "landmark"
   ],
-  "examination": [
-   "Delayed recall and recognition memory",
-   "Confabulation probing: ask about recent events the examiner can verify",
-   "Thiamine status and alcohol history in any patient with diencephalic memory loss"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff",
-   "syn-thalamic-dejerine-roussy"
-  ],
-  "pearls": [
-   "The Papez circuit runs fornix, mammillary body, mammillothalamic tract, anterior thalamus, cingulate: cut it anywhere and memory stops",
-   "The tract is a millimeter-scale landmark that defines the anterior thalamic target for epilepsy stimulation",
-   "Diencephalic amnesia confabulates; hippocampal amnesia usually does not"
-  ]
- },
- "pitfalls": [
-  "Memory loss with a normal hippocampus on MRI should prompt a look at the mammillary bodies and the anterior thalamus"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    368
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    238,
-    239
-   ]
-  }
- ],
- "tags": [
-  "Papez",
-  "memory",
-  "landmark"
- ],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "mammillary-body"
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "mammillary-body"
 }

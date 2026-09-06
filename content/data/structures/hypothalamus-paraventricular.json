@@ -1,130 +1,126 @@
 {
- "kind": "structure",
- "id": "hypothalamus-paraventricular",
- "name": "Paraventricular nucleus",
- "synonyms": [
-  "PVN"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-paraventricular-l",
-  "hypothalamus-paraventricular-r"
- ],
- "summary": "The paraventricular nucleus is a wedge of neurons in the dorsal anterior hypothalamus against the wall of the third ventricle, the command center of the neuroendocrine and autonomic hypothalamus. Its magnocellular neurons make oxytocin and vasopressin and send them down the infundibulum to the posterior pituitary; its parvocellular neurons release corticotropin-releasing hormone and thyrotropin-releasing hormone into the portal system to drive the pituitary-adrenal and thyroid axes; and a third population projects directly to the brainstem and the spinal intermediolateral column to control sympathetic and parasympathetic outflow. It is the effector of the stress response, of fluid balance and of appetite, and it is damaged by suprasellar tumors, hypothalamic surgery and Wernicke encephalopathy.",
- "anatomy": {
-  "location": "Dorsal part of the anterior hypothalamus lateral to the third ventricle, below the fornix column and the anterior commissure, above the supraoptic nucleus and the optic chiasm, in front of the dorsomedial nucleus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Magnocellular vasopressin neurons respond to osmoreceptors and to baroreceptor input relayed through the nucleus of the solitary tract, releasing antidiuretic hormone from the posterior pituitary; magnocellular oxytocin neurons drive milk let-down and uterine contraction and modulate social bonding. Parvocellular neurons secrete corticotropin-releasing hormone in response to stress and to the amygdala and bed nucleus, and thyrotropin-releasing hormone in response to cold and energy state, into the median eminence portal vessels. Descending neurons project to the dorsal motor nucleus of the vagus, the ventrolateral medulla and the intermediolateral column to set heart rate, blood pressure, gastric function and thermogenesis, and the nucleus integrates leptin and gut hormone signals from the arcuate nucleus to suppress feeding.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-paraventricular",
+  "name": "Paraventricular nucleus",
+  "synonyms": [
+    "PVN"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-paraventricular-l"
-    },
-    "label": "paraventricular nucleus against the wall of the third ventricle"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-paraventricular-r"
-    },
-    "label": "dorsal anterior hypothalamus below the fornix"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-paraventricular-l",
+    "hypothalamus-paraventricular-r"
   ],
-  "normalAppearance": "Gray matter of the upper anterior wall of the third ventricle beneath the fornix column on coronal images at the level of the chiasm; not resolved as a discrete nucleus.",
-  "pathology": [
-   {
-    "pathology": "Central diabetes insipidus",
-    "modality": "MRI",
-    "finding": "Loss of the posterior pituitary bright spot on sagittal T1 with thickening of the infundibulum in hypophysitis, germinoma or histiocytosis; the paraventricular and supraoptic nuclei are the source of the missing hormone.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Hypothalamic obesity after craniopharyngioma surgery",
-    "modality": "MRI",
-    "finding": "Postoperative defect of the anterior hypothalamus and third ventricle floor with rapid weight gain, hyperphagia and endocrine failure.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetric FLAIR hyperintensity of the periventricular hypothalamus, medial thalami and mammillary bodies with hypothermia and autonomic instability.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Diabetes insipidus",
-    "side": "bilateral",
-    "mechanism": "Loss of vasopressin neurons or their axons in the infundibulum"
-   },
-   {
-    "deficit": "Adrenal and thyroid axis failure",
-    "side": "bilateral",
-    "mechanism": "Loss of corticotropin- and thyrotropin-releasing hormone neurons"
-   },
-   {
-    "deficit": "Hyperphagia, obesity and autonomic dysregulation",
-    "side": "bilateral",
-    "mechanism": "Loss of the paraventricular satiety and autonomic control neurons"
-   }
-  ],
-  "examination": [
-   "Fluid balance: urine output, serum sodium and osmolality",
-   "Morning cortisol and thyroid function in any hypothalamic lesion",
-   "Weight, appetite and blood pressure variability"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-pituitary-mass"
-  ],
-  "pearls": [
-   "Diabetes insipidus after pituitary surgery is transient when the stalk is bruised and permanent when the paraventricular and supraoptic neurons die",
-   "The paraventricular nucleus is both an endocrine gland and a sympathetic premotor nucleus",
-   "Hypothalamic obesity after craniopharyngioma resection is a paraventricular and ventromedial injury, not a behavioral failure"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The paraventricular nucleus is a wedge of neurons in the dorsal anterior hypothalamus against the wall of the third ventricle, the command center of the neuroendocrine and autonomic hypothalamus. Its magnocellular neurons make oxytocin and vasopressin and send them down the infundibulum to the posterior pituitary; its parvocellular neurons release corticotropin-releasing hormone and thyrotropin-releasing hormone into the portal system to drive the pituitary-adrenal and thyroid axes; and a third population projects directly to the brainstem and the spinal intermediolateral column to control sympathetic and parasympathetic outflow. It is the effector of the stress response, of fluid balance and of appetite, and it is damaged by suprasellar tumors, hypothalamic surgery and Wernicke encephalopathy.",
+  "anatomy": {
+    "location": "Dorsal part of the anterior hypothalamus lateral to the third ventricle, below the fornix column and the anterior commissure, above the supraoptic nucleus and the optic chiasm, in front of the dorsomedial nucleus.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Magnocellular vasopressin neurons respond to osmoreceptors and to baroreceptor input relayed through the nucleus of the solitary tract, releasing antidiuretic hormone from the posterior pituitary; magnocellular oxytocin neurons drive milk let-down and uterine contraction and modulate social bonding. Parvocellular neurons secrete corticotropin-releasing hormone in response to stress and to the amygdala and bed nucleus, and thyrotropin-releasing hormone in response to cold and energy state, into the median eminence portal vessels. Descending neurons project to the dorsal motor nucleus of the vagus, the ventrolateral medulla and the intermediolateral column to set heart rate, blood pressure, gastric function and thermogenesis, and the nucleus integrates leptin and gut hormone signals from the arcuate nucleus to suppress feeding.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-paraventricular-l"
+        },
+        "label": "paraventricular nucleus against the wall of the third ventricle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-paraventricular-r"
+        },
+        "label": "dorsal anterior hypothalamus below the fornix"
+      }
+    ],
+    "normalAppearance": "Gray matter of the upper anterior wall of the third ventricle beneath the fornix column on coronal images at the level of the chiasm; not resolved as a discrete nucleus.",
+    "pathology": [
+      {
+        "pathology": "Central diabetes insipidus",
+        "modality": "MRI",
+        "finding": "Loss of the posterior pituitary bright spot on sagittal T1 with thickening of the infundibulum in hypophysitis, germinoma or histiocytosis; the paraventricular and supraoptic nuclei are the source of the missing hormone.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Hypothalamic obesity after craniopharyngioma surgery",
+        "modality": "MRI",
+        "finding": "Postoperative defect of the anterior hypothalamus and third ventricle floor with rapid weight gain, hyperphagia and endocrine failure.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetric FLAIR hyperintensity of the periventricular hypothalamus, medial thalami and mammillary bodies with hypothermia and autonomic instability.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Diabetes insipidus",
+        "side": "bilateral",
+        "mechanism": "Loss of vasopressin neurons or their axons in the infundibulum"
+      },
+      {
+        "deficit": "Adrenal and thyroid axis failure",
+        "side": "bilateral",
+        "mechanism": "Loss of corticotropin- and thyrotropin-releasing hormone neurons"
+      },
+      {
+        "deficit": "Hyperphagia, obesity and autonomic dysregulation",
+        "side": "bilateral",
+        "mechanism": "Loss of the paraventricular satiety and autonomic control neurons"
+      }
+    ],
+    "examination": [
+      "Fluid balance: urine output, serum sodium and osmolality",
+      "Morning cortisol and thyroid function in any hypothalamic lesion",
+      "Weight, appetite and blood pressure variability"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-pituitary-mass"
+    ],
+    "pearls": [
+      "Diabetes insipidus after pituitary surgery is transient when the stalk is bruised and permanent when the paraventricular and supraoptic neurons die",
+      "The paraventricular nucleus is both an endocrine gland and a sympathetic premotor nucleus",
+      "Hypothalamic obesity after craniopharyngioma resection is a paraventricular and ventromedial injury, not a behavioral failure"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-vasopressin",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

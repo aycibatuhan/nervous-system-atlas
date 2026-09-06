@@ -1,157 +1,137 @@
 {
- "kind": "structure",
- "id": "nerve-radial",
- "name": "Radial nerve",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The largest branch of the posterior cord (C5–T1), the radial nerve supplies every extensor of the elbow, wrist and fingers. It spirals around the back of the humerus in the radial groove with the profunda brachii artery, where it is compressed against the bone during deep sleep (Saturday night palsy) or torn by humeral shaft fractures, pierces the lateral intermuscular septum, and divides in front of the lateral epicondyle into a superficial sensory branch (dorsal radial hand) and the posterior interosseous nerve, which passes through supinator to the finger extensors. Wrist drop with sparing of triceps is its signature.",
- "anatomy": {
-  "location": "Axilla behind the axillary artery, radial (spiral) groove of the humerus between the heads of triceps, lateral arm between brachialis and brachioradialis, division at the lateral epicondyle; the posterior interosseous nerve winds around the radial neck through the arcade of Frohse and supinator.",
-  "subdivisions": [
-   {
-    "name": "Branches in the axilla and arm",
-    "note": "triceps, anconeus, posterior cutaneous nerves of the arm and forearm"
-   },
-   {
-    "name": "Branches at the elbow",
-    "note": "brachioradialis, extensor carpi radialis longus"
-   },
-   {
-    "name": "Posterior interosseous nerve",
-    "note": "supinator, extensor carpi radialis brevis, extensor digitorum, extensor carpi ulnaris, extensor pollicis longus and brevis, abductor pollicis longus, extensor indicis"
-   },
-   {
-    "name": "Superficial radial nerve",
-    "note": "sensation over the dorsum of the hand and first web space (anatomical snuffbox)"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Extension of the elbow, wrist, fingers and thumb, supination, and stabilization of the wrist for grip; sensation of the posterior arm and forearm and the dorsolateral hand.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "nerve-radial",
+  "name": "Radial nerve",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The largest branch of the posterior cord (C5–T1), the radial nerve supplies every extensor of the elbow, wrist and fingers. It spirals around the back of the humerus in the radial groove with the profunda brachii artery, where it is compressed against the bone during deep sleep (Saturday night palsy) or torn by humeral shaft fractures, pierces the lateral intermuscular septum, and divides in front of the lateral epicondyle into a superficial sensory branch (dorsal radial hand) and the posterior interosseous nerve, which passes through supinator to the finger extensors. Wrist drop with sparing of triceps is its signature.",
+  "anatomy": {
+    "location": "Axilla behind the axillary artery, radial (spiral) groove of the humerus between the heads of triceps, lateral arm between brachialis and brachioradialis, division at the lateral epicondyle; the posterior interosseous nerve winds around the radial neck through the arcade of Frohse and supinator.",
+    "subdivisions": [
+      {
+        "name": "Branches in the axilla and arm",
+        "note": "triceps, anconeus, posterior cutaneous nerves of the arm and forearm"
+      },
+      {
+        "name": "Branches at the elbow",
+        "note": "brachioradialis, extensor carpi radialis longus"
+      },
+      {
+        "name": "Posterior interosseous nerve",
+        "note": "supinator, extensor carpi radialis brevis, extensor digitorum, extensor carpi ulnaris, extensor pollicis longus and brevis, abductor pollicis longus, extensor indicis"
+      },
+      {
+        "name": "Superficial radial nerve",
+        "note": "sensation over the dorsum of the hand and first web space (anatomical snuffbox)"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Extension of the elbow, wrist, fingers and thumb, supination, and stabilization of the wrist for grip; sensation of the posterior arm and forearm and the dorsolateral hand.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; fibers from C5–T1"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Humerus radiographs show the fracture; ultrasound follows the nerve in the spiral groove and at the arcade of Frohse; MRI shows denervation of the extensor compartment.",
+    "pathology": [
+      {
+        "pathology": "Radial neuropathy at the spiral groove",
+        "modality": "US",
+        "finding": "Swollen nerve in the spiral groove with denervation of brachioradialis and the extensors but spared triceps.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Posterior interosseous neuropathy",
+        "modality": "MRI",
+        "finding": "Denervation of the finger extensors and extensor carpi ulnaris with spared wrist extension (radial deviation) and normal sensation; lipoma or ganglion at the arcade of Frohse.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "Nerve conduction and EMG (triceps, brachioradialis, extensors); ultrasound"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Wrist drop and finger drop with weak brachioradialis, sparing triceps",
+        "side": "ipsilateral",
+        "mechanism": "Lesion at the spiral groove"
+      },
+      {
+        "deficit": "Wrist drop with triceps weakness and posterior arm numbness",
+        "side": "ipsilateral",
+        "mechanism": "Lesion in the axilla (crutch palsy)"
+      },
+      {
+        "deficit": "Finger drop with radially deviated wrist extension and normal sensation",
+        "side": "ipsilateral",
+        "mechanism": "Posterior interosseous nerve"
+      },
+      {
+        "deficit": "Numbness of the dorsal first web space only",
+        "side": "ipsilateral",
+        "mechanism": "Superficial radial nerve (handcuff neuropathy)"
+      }
+    ],
+    "examination": [
+      "Wrist and finger extension with the wrist supported to unmask true extensor weakness",
+      "Triceps power and reflex (localizes above or below the spiral groove)",
+      "Brachioradialis contraction with the forearm in mid-position",
+      "Sensation in the first dorsal web space",
+      "Beware apparent weakness of ulnar-innervated finger abduction when the wrist is flexed"
+    ],
+    "syndromes": [
+      "syn-radial-neuropathy",
+      "syn-radiculopathy-cervical"
+    ],
+    "pearls": [
+      "Wrist drop with a preserved triceps reflex is the spiral groove; with an absent triceps reflex look higher (axilla, posterior cord, C7)",
+      "Finger drop without wrist drop and with normal sensation is the posterior interosseous nerve"
+    ]
+  },
+  "pitfalls": [
+    "A C7 radiculopathy also weakens triceps and wrist extension, but adds neck pain and involves pronator teres and flexor carpi radialis (median-innervated C7 muscles)"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "citations": [
+    {
+      "ref": "sp-radial-nerve",
+      "section": "Structure and Function"
     },
-    "label": "cervical cord; fibers from C5–T1"
-   }
+    {
+      "ref": "sp-radial-nerve-block",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-radial-nerve-injury",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Humerus radiographs show the fracture; ultrasound follows the nerve in the spiral groove and at the arcade of Frohse; MRI shows denervation of the extensor compartment.",
-  "pathology": [
-   {
-    "pathology": "Radial neuropathy at the spiral groove",
-    "modality": "US",
-    "finding": "Swollen nerve in the spiral groove with denervation of brachioradialis and the extensors but spared triceps.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Posterior interosseous neuropathy",
-    "modality": "MRI",
-    "finding": "Denervation of the finger extensors and extensor carpi ulnaris with spared wrist extension (radial deviation) and normal sensation; lipoma or ganglion at the arcade of Frohse.",
-    "sequence": "STIR"
-   }
+  "tags": [
+    "pns",
+    "upper-limb"
   ],
-  "sequenceOfChoice": "Nerve conduction and EMG (triceps, brachioradialis, extensors); ultrasound"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Wrist drop and finger drop with weak brachioradialis, sparing triceps",
-    "side": "ipsilateral",
-    "mechanism": "Lesion at the spiral groove"
-   },
-   {
-    "deficit": "Wrist drop with triceps weakness and posterior arm numbness",
-    "side": "ipsilateral",
-    "mechanism": "Lesion in the axilla (crutch palsy)"
-   },
-   {
-    "deficit": "Finger drop with radially deviated wrist extension and normal sensation",
-    "side": "ipsilateral",
-    "mechanism": "Posterior interosseous nerve"
-   },
-   {
-    "deficit": "Numbness of the dorsal first web space only",
-    "side": "ipsilateral",
-    "mechanism": "Superficial radial nerve (handcuff neuropathy)"
-   }
-  ],
-  "examination": [
-   "Wrist and finger extension with the wrist supported to unmask true extensor weakness",
-   "Triceps power and reflex (localizes above or below the spiral groove)",
-   "Brachioradialis contraction with the forearm in mid-position",
-   "Sensation in the first dorsal web space",
-   "Beware apparent weakness of ulnar-innervated finger abduction when the wrist is flexed"
-  ],
-  "syndromes": [
-   "syn-radial-neuropathy",
-   "syn-radiculopathy-cervical"
-  ],
-  "pearls": [
-   "Wrist drop with a preserved triceps reflex is the spiral groove; with an absent triceps reflex look higher (axilla, posterior cord, C7)",
-   "Finger drop without wrist drop and with normal sensation is the posterior interosseous nerve"
-  ]
- },
- "pitfalls": [
-  "A C7 radiculopathy also weakens triceps and wrist extension, but adds neck pain and involves pronator teres and flexor carpi radialis (median-innervated C7 muscles)"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    113,
-    113
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    120,
-    120
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    147
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    150,
-    151
-   ]
+  "status": "draft",
+  "latin": "Nervus radialis",
+  "subsystem": "upper-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "upper-limb"
- ],
- "status": "draft",
- "latin": "Nervus radialis",
- "subsystem": "upper-limb",
- "level": {
-  "region": "peripheral"
- }
 }

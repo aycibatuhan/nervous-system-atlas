@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-aprosodia",
- "term": "Aprosodia",
- "definition": "Loss of the melody, rhythm and emotional intonation of speech (expressive) or of the ability to understand it (receptive), from right hemisphere lesions homologous to the left language areas. The words are correct but sound flat, and irony and anger are missed.",
- "related": [
-  "g-aphasia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-aprosodia",
+  "term": "Aprosodia",
+  "definition": "Loss of the melody, rhythm and emotional intonation of speech (expressive) or of the ability to understand it (receptive), from right hemisphere lesions homologous to the left language areas. The words are correct but sound flat, and irony and anger are missed.",
+  "related": [
+    "g-aphasia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-cerebral-cortex-functions",
+      "section": "Introduction"
+    }
+  ]
 }

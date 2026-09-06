@@ -1,194 +1,166 @@
 {
- "kind": "structure",
- "id": "spinal-grey-anterior-horn",
- "name": "Anterior (ventral) horn",
- "synonyms": [
-  "ventral horn",
-  "laminae VIII–IX"
- ],
- "system": "spinal-cord",
- "meshIds": [
-  "spinal-cord",
-  "spinal-grey-anterior-horn"
- ],
- "summary": "The motor part of the spinal gray matter. It contains the alpha motor neurons that innervate skeletal muscle (the lower motor neurons), the gamma motor neurons for muscle spindles, and the interneurons, including Renshaw cells, that shape their output. Motor neurons are arranged somatotopically: medial groups supply axial muscles, lateral groups the limbs (present only in the enlargements), with flexors dorsal to extensors. Their death, as in poliomyelitis, spinal muscular atrophy and motor neuron disease, produces the lower motor neuron picture of weakness, wasting, fasciculations and lost reflexes.",
- "anatomy": {
-  "location": "Anterior part of the gray matter on each side, largest in the cervical and lumbosacral enlargements where the lateral motor columns for the limbs are added to the medial columns for the trunk.",
-  "subdivisions": [
-   {
-    "name": "Medial motor column",
-    "note": "axial and trunk muscles, all levels"
-   },
-   {
-    "name": "Lateral motor column",
-    "note": "limb muscles, C5–T1 and L2–S3; proximal muscles medial, distal muscles lateral"
-   },
-   {
-    "name": "Phrenic nucleus",
-    "note": "C3–C5, diaphragm"
-   },
-   {
-    "name": "Onuf's nucleus",
-    "note": "S2–S4, external urethral and anal sphincters; spared in motor neuron disease"
-   },
-   {
-    "name": "Spinal accessory nucleus",
-    "note": "C1–C5, sternocleidomastoid and trapezius"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "gyrus-precentral",
-    "via": "pathway-lateral-corticospinal"
-   },
-   {
-    "from": "muscle spindles",
-    "via": "dorsal root, monosynaptic"
-   }
+  "kind": "structure",
+  "id": "spinal-grey-anterior-horn",
+  "name": "Anterior (ventral) horn",
+  "synonyms": [
+    "ventral horn",
+    "laminae VIII–IX"
   ],
-  "efferents": [
-   {
-    "to": "skeletal muscle",
-    "via": "ventral root and peripheral nerve"
-   }
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-cord",
+    "spinal-grey-anterior-horn"
   ],
-  "pathways": [
-   "pathway-lateral-corticospinal"
-  ]
- },
- "function": "Final common pathway for movement: integrates corticospinal, brainstem and segmental reflex inputs into the firing of motor units; gamma neurons set spindle sensitivity and muscle tone.",
- "bloodSupply": {
-  "arteries": [
-   "anterior-spinal-artery"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "The motor part of the spinal gray matter. It contains the alpha motor neurons that innervate skeletal muscle (the lower motor neurons), the gamma motor neurons for muscle spindles, and the interneurons, including Renshaw cells, that shape their output. Motor neurons are arranged somatotopically: medial groups supply axial muscles, lateral groups the limbs (present only in the enlargements), with flexors dorsal to extensors. Their death, as in poliomyelitis, spinal muscular atrophy and motor neuron disease, produces the lower motor neuron picture of weakness, wasting, fasciculations and lost reflexes.",
+  "anatomy": {
+    "location": "Anterior part of the gray matter on each side, largest in the cervical and lumbosacral enlargements where the lateral motor columns for the limbs are added to the medial columns for the trunk.",
+    "subdivisions": [
+      {
+        "name": "Medial motor column",
+        "note": "axial and trunk muscles, all levels"
+      },
+      {
+        "name": "Lateral motor column",
+        "note": "limb muscles, C5–T1 and L2–S3; proximal muscles medial, distal muscles lateral"
+      },
+      {
+        "name": "Phrenic nucleus",
+        "note": "C3–C5, diaphragm"
+      },
+      {
+        "name": "Onuf's nucleus",
+        "note": "S2–S4, external urethral and anal sphincters; spared in motor neuron disease"
+      },
+      {
+        "name": "Spinal accessory nucleus",
+        "note": "C1–C5, sternocleidomastoid and trapezius"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "gyrus-precentral",
+        "via": "pathway-lateral-corticospinal"
+      },
+      {
+        "from": "muscle spindles",
+        "via": "dorsal root, monosynaptic"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "skeletal muscle",
+        "via": "ventral root and peripheral nerve"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-corticospinal"
+    ]
+  },
+  "function": "Final common pathway for movement: integrates corticospinal, brainstem and segmental reflex inputs into the firing of motor units; gamma neurons set spindle sensitivity and muscle tone.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "anterior gray horns of the upper cervical cord"
+      }
+    ],
+    "normalAppearance": "The anterior horns are the anterior limbs of the gray butterfly on axial T2 at high resolution; bilateral anterior horn T2 hyperintensity (owl's eyes or snake eyes) is seen in cord infarction, compressive myelopathy and viral anterior horn infection.",
+    "pathology": [
+      {
+        "pathology": "Anterior spinal artery infarct",
+        "modality": "MRI",
+        "finding": "Bilateral anterior horn T2 hyperintensity (owl's eyes) with restricted diffusion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Acute flaccid myelitis (enterovirus, polio)",
+        "modality": "MRI",
+        "finding": "Longitudinal T2 hyperintensity confined to the anterior gray matter.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Motor neuron disease",
+        "modality": "MRI",
+        "finding": "Normal cord imaging; the diagnosis is clinical and electrophysiological.",
+        "sequence": "n/a"
+      }
+    ],
+    "sequenceOfChoice": "Axial T2 of the cord; EMG for denervation"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Flaccid weakness, wasting, fasciculations, absent reflexes in the affected myotomes",
+        "side": "ipsilateral",
+        "mechanism": "Lower motor neuron loss at the segment"
+      },
+      {
+        "deficit": "Asymmetric limb weakness without sensory loss",
+        "side": "ipsilateral",
+        "mechanism": "Pure motor gray matter disease (polio, SMA, ALS)"
+      },
+      {
+        "deficit": "Diaphragm paralysis",
+        "side": "ipsilateral",
+        "mechanism": "C3–C5 phrenic motor neurons"
+      },
+      {
+        "deficit": "Preserved sphincters in ALS",
+        "side": "n/a",
+        "mechanism": "Onuf's nucleus is spared"
+      }
+    ],
+    "examination": [
+      "Inspect for wasting and fasciculations at rest",
+      "Power by myotome; reflexes",
+      "Sensory testing (normal in pure anterior horn disease)",
+      "Tongue fasciculations for bulbar involvement"
+    ],
+    "syndromes": [
+      "syn-als-pattern",
+      "syn-poliomyelitis",
+      "syn-anterior-cord"
+    ],
+    "pearls": [
+      "Weakness with wasting and fasciculations but normal sensation is anterior horn disease",
+      "Upper motor neuron signs in the legs with lower motor neuron signs in the arms and no sensory loss: motor neuron disease"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-motor-neuron",
+      "section": "Structure and Function"
     },
-    "label": "anterior gray horns of the upper cervical cord"
-   }
+    {
+      "ref": "sp-lower-motor-neuron-lesion",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-gray-matter",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The anterior horns are the anterior limbs of the gray butterfly on axial T2 at high resolution; bilateral anterior horn T2 hyperintensity (owl's eyes or snake eyes) is seen in cord infarction, compressive myelopathy and viral anterior horn infection.",
-  "pathology": [
-   {
-    "pathology": "Anterior spinal artery infarct",
-    "modality": "MRI",
-    "finding": "Bilateral anterior horn T2 hyperintensity (owl's eyes) with restricted diffusion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Acute flaccid myelitis (enterovirus, polio)",
-    "modality": "MRI",
-    "finding": "Longitudinal T2 hyperintensity confined to the anterior gray matter.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Motor neuron disease",
-    "modality": "MRI",
-    "finding": "Normal cord imaging; the diagnosis is clinical and electrophysiological.",
-    "sequence": "n/a"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Axial T2 of the cord; EMG for denervation"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Flaccid weakness, wasting, fasciculations, absent reflexes in the affected myotomes",
-    "side": "ipsilateral",
-    "mechanism": "Lower motor neuron loss at the segment"
-   },
-   {
-    "deficit": "Asymmetric limb weakness without sensory loss",
-    "side": "ipsilateral",
-    "mechanism": "Pure motor gray matter disease (polio, SMA, ALS)"
-   },
-   {
-    "deficit": "Diaphragm paralysis",
-    "side": "ipsilateral",
-    "mechanism": "C3–C5 phrenic motor neurons"
-   },
-   {
-    "deficit": "Preserved sphincters in ALS",
-    "side": "n/a",
-    "mechanism": "Onuf's nucleus is spared"
-   }
-  ],
-  "examination": [
-   "Inspect for wasting and fasciculations at rest",
-   "Power by myotome; reflexes",
-   "Sensory testing (normal in pure anterior horn disease)",
-   "Tongue fasciculations for bulbar involvement"
-  ],
-  "syndromes": [
-   "syn-als-pattern",
-   "syn-poliomyelitis",
-   "syn-anterior-cord"
-  ],
-  "pearls": [
-   "Weakness with wasting and fasciculations but normal sensation is anterior horn disease",
-   "Upper motor neuron signs in the legs with lower motor neuron signs in the arms and no sensory loss: motor neuron disease"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    138,
-    140
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    163,
-    171
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    101,
-    102
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 15,
-   "pages": [
-    129,
-    130
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 28,
-   "pages": [
-    289,
-    291
-   ]
+  "status": "draft",
+  "latin": "Cornu anterius",
+  "subsystem": "cord",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "latin": "Cornu anterius",
- "subsystem": "cord",
- "level": {
-  "region": "spinal"
- }
 }

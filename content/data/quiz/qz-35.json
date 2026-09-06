@@ -1,66 +1,66 @@
 {
- "kind": "quiz",
- "id": "qz-35",
- "type": "localize",
- "vignette": "A 74-year-old woman after cardiac arrest can read single letters but not words, reaches past objects she looks at, and describes a picture of a kitchen one item at a time without grasping the scene. Acuity is normal.",
- "stem": "Where are the lesions?",
- "options": [
-  {
-   "key": "A",
-   "text": "Bilateral medial occipital cortex"
-  },
-  {
-   "key": "B",
-   "text": "Bilateral parieto-occipital border zones"
-  },
-  {
-   "key": "C",
-   "text": "Bilateral hippocampi"
-  },
-  {
-   "key": "D",
-   "text": "Left angular gyrus"
-  },
-  {
-   "key": "E",
-   "text": "Bilateral fusiform gyri"
-  }
- ],
- "answer": "B",
- "explanation": "Simultanagnosia, optic ataxia and ocular apraxia form Balint syndrome, from bilateral dorsal parieto-occipital damage; after cardiac arrest the lesions lie in the border zones between the middle and posterior cerebral arteries, the superior lateral occipital and superior parietal cortex.",
- "targets": {
-  "structureIds": [
-   "cortex-lateral-occipital-superior",
-   "territory-mca-occipital"
+  "kind": "quiz",
+  "id": "qz-35",
+  "type": "localize",
+  "vignette": "A 74-year-old woman after cardiac arrest can read single letters but not words, reaches past objects she looks at, and describes a picture of a kitchen one item at a time without grasping the scene. Acuity is normal.",
+  "stem": "Where are the lesions?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Bilateral medial occipital cortex"
+    },
+    {
+      "key": "B",
+      "text": "Bilateral parieto-occipital border zones"
+    },
+    {
+      "key": "C",
+      "text": "Bilateral hippocampi"
+    },
+    {
+      "key": "D",
+      "text": "Left angular gyrus"
+    },
+    {
+      "key": "E",
+      "text": "Bilateral fusiform gyri"
+    }
   ],
-  "syndromeIds": [
-   "syn-balint",
-   "syn-watershed-infarct"
-  ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cortex-lateral-occipital-superior-l",
-  "cortex-lateral-occipital-superior-r"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
+  "answer": "B",
+  "explanation": "Simultanagnosia, optic ataxia and ocular apraxia form Balint syndrome, from bilateral dorsal parieto-occipital damage; after cardiac arrest the lesions lie in the border zones between the middle and posterior cerebral arteries, the superior lateral occipital and superior parietal cortex.",
+  "targets": {
+    "structureIds": [
+      "cortex-lateral-occipital-superior",
+      "territory-mca-occipital"
+    ],
+    "syndromeIds": [
+      "syn-balint",
+      "syn-watershed-infarct"
+    ],
+    "pathwayIds": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    190,
-    194
-   ]
-  }
- ],
- "original": true
+  "highlightOnReveal": [
+    "cortex-lateral-occipital-superior-l",
+    "cortex-lateral-occipital-superior-r"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-balint-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-carotid-artery-stenosis",
+      "section": "History and Physical"
+    }
+  ],
+  "original": true
 }

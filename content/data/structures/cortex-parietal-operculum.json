@@ -1,182 +1,162 @@
 {
- "kind": "structure",
- "id": "cortex-parietal-operculum",
- "name": "Parietal operculum cortex",
- "synonyms": [
-  "secondary somatosensory cortex (SII)",
-  "parieto-insular vestibular cortex"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cortex-parietal-operculum-l",
-  "cortex-parietal-operculum-r"
- ],
- "summary": "The parietal operculum is the part of the parietal lobe that folds under the posterior lateral sulcus above the posterior insula and the planum temporale, behind the central operculum. It contains the secondary somatosensory cortex (SII) and the parieto-insular vestibular cortex, so it is the cortex of tactile object recognition, of the affective dimension of pain, and of the conscious sense of head motion and verticality. It is a middle cerebral artery territory, and its lesions produce impaired stereognosis and tactile learning, altered pain perception, and vertigo or tilt illusions; seizures here give bilateral tingling, pain or a sense of motion.",
- "anatomy": {
-  "location": "Buried parietal cortex forming the roof of the posterior Sylvian fissure between the central operculum in front and the supramarginal gyrus behind, above the planum temporale and the posterior insula.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Postcentral gyrus (SI), both sides",
-    "via": "short association fibers and corpus callosum"
-   },
-   {
-    "from": "Ventral posterior thalamus and posterior nuclear group",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Vestibular thalamic relay",
-    "via": "thalamocortical fibers"
-   }
+  "kind": "structure",
+  "id": "cortex-parietal-operculum",
+  "name": "Parietal operculum cortex",
+  "synonyms": [
+    "secondary somatosensory cortex (SII)",
+    "parieto-insular vestibular cortex"
   ],
-  "efferents": [
-   {
-    "to": "Insula and anterior cingulate",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Premotor cortex",
-    "via": "superior longitudinal fasciculus III"
-   },
-   {
-    "to": "Posterior parietal cortex",
-    "via": "short association fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cortex-parietal-operculum-l",
+    "cortex-parietal-operculum-r"
   ],
-  "pathways": [
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-vestibular-vor"
-  ]
- },
- "function": "SII receives touch and proprioception from both sides of the body through the primary somatosensory cortex and the thalamus, with the two hands represented together, and it integrates them for recognizing objects by touch, learning tactile skills and attending to a stimulus; it also receives nociceptive input and, with the insula and cingulate, gives pain its unpleasant and motivational quality. The adjacent parieto-insular vestibular cortex combines vestibular, visual and neck proprioceptive signals to perceive self-motion and the vertical. Both sides of the body are represented, so a unilateral lesion produces subtler and bilateral tactile deficits than a postcentral lesion.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The parietal operculum is the part of the parietal lobe that folds under the posterior lateral sulcus above the posterior insula and the planum temporale, behind the central operculum. It contains the secondary somatosensory cortex (SII) and the parieto-insular vestibular cortex, so it is the cortex of tactile object recognition, of the affective dimension of pain, and of the conscious sense of head motion and verticality. It is a middle cerebral artery territory, and its lesions produce impaired stereognosis and tactile learning, altered pain perception, and vertigo or tilt illusions; seizures here give bilateral tingling, pain or a sense of motion.",
+  "anatomy": {
+    "location": "Buried parietal cortex forming the roof of the posterior Sylvian fissure between the central operculum in front and the supramarginal gyrus behind, above the planum temporale and the posterior insula.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Postcentral gyrus (SI), both sides",
+        "via": "short association fibers and corpus callosum"
+      },
+      {
+        "from": "Ventral posterior thalamus and posterior nuclear group",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Vestibular thalamic relay",
+        "via": "thalamocortical fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Insula and anterior cingulate",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Premotor cortex",
+        "via": "superior longitudinal fasciculus III"
+      },
+      {
+        "to": "Posterior parietal cortex",
+        "via": "short association fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-vestibular-vor"
+    ]
+  },
+  "function": "SII receives touch and proprioception from both sides of the body through the primary somatosensory cortex and the thalamus, with the two hands represented together, and it integrates them for recognizing objects by touch, learning tactile skills and attending to a stimulus; it also receives nociceptive input and, with the insula and cingulate, gives pain its unpleasant and motivational quality. The adjacent parieto-insular vestibular cortex combines vestibular, visual and neck proprioceptive signals to perceive self-motion and the vertical. Both sides of the body are represented, so a unilateral lesion produces subtler and bilateral tactile deficits than a postcentral lesion.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca-parietal",
+      "territory-mca-insular"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cortex-parietal-operculum-l"
+        },
+        "label": "parietal operculum above the posterior insula"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cortex-parietal-operculum-r"
+        },
+        "label": "roof of the posterior Sylvian fissure"
+      }
+    ],
+    "normalAppearance": "The upper bank of the posterior Sylvian fissure on coronal images through the posterior insula, between the postcentral gyrus above and the planum temporale below.",
+    "pathology": [
+      {
+        "pathology": "Opercular MCA branch infarct",
+        "modality": "MRI",
+        "finding": "Small cortical restricted diffusion at the parietal operculum with impaired stereognosis, tactile extinction and sometimes vertigo.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Parietal opercular seizures",
+        "modality": "EEG",
+        "finding": "Bilateral or contralateral tingling, painful auras or a sensation of rotation; scalp EEG shows a centro-parietal focus.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Central post-stroke pain",
+        "modality": "MRI",
+        "finding": "Lesion involving the parietal operculum, insula or thalamus with delayed burning pain and allodynia in the contralateral limbs.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Astereognosis and impaired tactile learning",
+        "side": "contralateral",
+        "mechanism": "Loss of the SII integration of touch and proprioception"
+      },
+      {
+        "deficit": "Altered pain perception or central pain",
+        "side": "contralateral",
+        "mechanism": "Damage to the opercular-insular nociceptive cortex"
+      },
+      {
+        "deficit": "Vertigo, tilt and loss of the subjective vertical",
+        "side": "contralateral",
+        "mechanism": "Involvement of the parieto-insular vestibular cortex"
+      }
+    ],
+    "examination": [
+      "Stereognosis: identify coins and keys placed in the hand with eyes closed",
+      "Bilateral simultaneous tactile stimulation for extinction",
+      "Subjective visual vertical (ask the patient to set a line upright) and a history of tilt illusions"
+    ],
+    "syndromes": [
+      "syn-mca-inferior-division",
+      "syn-central-vs-peripheral-vertigo"
+    ],
+    "pearls": [
+      "SII is bilateral: a unilateral lesion impairs tactile recognition subtly, not with anesthesia",
+      "Painful seizures are rare and almost always parietal opercular or insular",
+      "The vestibular cortex sits here: cortical vertigo exists and is not a brainstem sign"
+    ]
+  },
+  "pitfalls": [
+    "Astereognosis with intact primary sensation is cortical; do not attribute it to a neuropathy"
   ],
-  "territories": [
-   "territory-mca-parietal",
-   "territory-mca-insular"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cortex-parietal-operculum-l"
+  "citations": [
+    {
+      "ref": "sp-somatosensory-cortex",
+      "section": "Structure and Function"
     },
-    "label": "parietal operculum above the posterior insula"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cortex-parietal-operculum-r"
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
     },
-    "label": "roof of the posterior Sylvian fissure"
-   }
+    {
+      "ref": "sp-cerebral-hemisphere",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The upper bank of the posterior Sylvian fissure on coronal images through the posterior insula, between the postcentral gyrus above and the planum temporale below.",
-  "pathology": [
-   {
-    "pathology": "Opercular MCA branch infarct",
-    "modality": "MRI",
-    "finding": "Small cortical restricted diffusion at the parietal operculum with impaired stereognosis, tactile extinction and sometimes vertigo.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Parietal opercular seizures",
-    "modality": "EEG",
-    "finding": "Bilateral or contralateral tingling, painful auras or a sensation of rotation; scalp EEG shows a centro-parietal focus.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Central post-stroke pain",
-    "modality": "MRI",
-    "finding": "Lesion involving the parietal operculum, insula or thalamus with delayed burning pain and allodynia in the contralateral limbs.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Astereognosis and impaired tactile learning",
-    "side": "contralateral",
-    "mechanism": "Loss of the SII integration of touch and proprioception"
-   },
-   {
-    "deficit": "Altered pain perception or central pain",
-    "side": "contralateral",
-    "mechanism": "Damage to the opercular-insular nociceptive cortex"
-   },
-   {
-    "deficit": "Vertigo, tilt and loss of the subjective vertical",
-    "side": "contralateral",
-    "mechanism": "Involvement of the parieto-insular vestibular cortex"
-   }
+  "tags": [
+    "SII",
+    "vestibular cortex",
+    "pain"
   ],
-  "examination": [
-   "Stereognosis: identify coins and keys placed in the hand with eyes closed",
-   "Bilateral simultaneous tactile stimulation for extinction",
-   "Subjective visual vertical (ask the patient to set a line upright) and a history of tilt illusions"
-  ],
-  "syndromes": [
-   "syn-mca-inferior-division",
-   "syn-central-vs-peripheral-vertigo"
-  ],
-  "pearls": [
-   "SII is bilateral: a unilateral lesion impairs tactile recognition subtly, not with anesthesia",
-   "Painful seizures are rare and almost always parietal opercular or insular",
-   "The vestibular cortex sits here: cortical vertigo exists and is not a brainstem sign"
-  ]
- },
- "pitfalls": [
-  "Astereognosis with intact primary sensation is cortical; do not attribute it to a neuropathy"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    286,
-    288
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    108,
-    112
-   ]
-  }
- ],
- "tags": [
-  "SII",
-  "vestibular cortex",
-  "pain"
- ],
- "status": "draft",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "status": "draft",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

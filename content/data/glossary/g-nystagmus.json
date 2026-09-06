@@ -1,20 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-nystagmus",
- "term": "Nystagmus",
- "definition": "Rhythmic involuntary oscillation of the eyes, named by the direction of the fast phase. Peripheral vestibular nystagmus is unidirectional, horizontal-torsional and suppressed by fixation; central nystagmus changes direction with gaze, may be vertical or purely torsional and is not suppressed.",
- "related": [
-  "g-vestibulo-ocular-reflex",
-  "g-internuclear-ophthalmoplegia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    107,
-    112
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-nystagmus",
+  "term": "Nystagmus",
+  "definition": "Rhythmic involuntary oscillation of the eyes, named by the direction of the fast phase. Peripheral vestibular nystagmus is unidirectional, horizontal-torsional and suppressed by fixation; central nystagmus changes direction with gaze, may be vertical or purely torsional and is not suppressed.",
+  "related": [
+    "g-vestibulo-ocular-reflex",
+    "g-internuclear-ophthalmoplegia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-nystagmus-types"
+    }
+  ]
 }

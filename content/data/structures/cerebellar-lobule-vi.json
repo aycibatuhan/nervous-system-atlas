@@ -1,160 +1,144 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-vi",
- "name": "Lobule VI",
- "synonyms": [
-  "declive and simplex lobule",
-  "posterior quadrangular lobule"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-vi-l",
-  "cerebellar-lobule-vi-r"
- ],
- "summary": "Lobule VI is the first lobule of the posterior lobe, immediately behind the primary fissure, comprising the declive of the vermis and the posterior quadrangular lobule of the hemisphere, the simplex lobule. It is a transition between the motor cerebellum of the anterior lobe and the cognitive cerebellum of Crus I and II: it holds a second representation of the face, mouth and eye movements, it supports articulation and the timing of speech, and its vermian part with lobule VII is the oculomotor vermis that calibrates saccades. It is a superior cerebellar artery territory, it is involved in the dysarthria of cerebellar strokes, and it is one of the regions most consistently abnormal in the cerebellar cognitive-affective syndrome and in studies of autism.",
- "anatomy": {
-  "location": "Anterior part of the posterior lobe between the primary fissure in front and the superior posterior fissure behind, from the vermian declive laterally into the simplex (posterior quadrangular) lobule of the hemisphere, under the tentorium and above the horizontal fissure.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Premotor, motor and prefrontal cortex via the pontine nuclei",
-    "via": "middle cerebellar peduncle"
-   },
-   {
-    "from": "Superior colliculus and vestibular nuclei (vermis)",
-    "via": "tectocerebellar and vestibulocerebellar fibers"
-   },
-   {
-    "from": "Trigeminal nuclei",
-    "via": "trigeminocerebellar fibers"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-vi",
+  "name": "Lobule VI",
+  "synonyms": [
+    "declive and simplex lobule",
+    "posterior quadrangular lobule"
   ],
-  "efferents": [
-   {
-    "to": "Dentate nucleus (hemisphere) and fastigial nucleus (vermis)",
-    "via": "Purkinje axons"
-   },
-   {
-    "to": "Motor and prefrontal cortex via the thalamus",
-    "via": "superior cerebellar peduncle"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-vi-l",
+    "cerebellar-lobule-vi-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "The hemispheric part of lobule VI receives the ventral premotor, motor and somatosensory cortex through the pontine nuclei and the trigeminal system, and its projection through the dentate nucleus to the motor thalamus times the muscles of the mouth, tongue and larynx, so lesions produce scanning dysarthria; the vermian part receives the superior colliculus, the vestibular nuclei and the nucleus prepositus and projects to the fastigial nucleus to adjust saccade amplitude and pursuit gain, so lesions produce saccadic dysmetria and impaired pursuit. Its lateral parts also participate in working memory and language tasks with Crus I, and it is a station of the cerebellar pain and emotional networks.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca"
-  ],
-  "territories": [
-   "territory-superior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-vi-l"
-    },
-    "label": "lobule VI behind the primary fissure"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebellar-lobule-vi-r"
-    },
-    "label": "simplex lobule of the superior hemisphere"
-   }
-  ],
-  "normalAppearance": "The lobule immediately behind the primary fissure on sagittal images, above the horizontal fissure on the hemisphere; the declive of the vermis is the corresponding midline part.",
-  "pathology": [
-   {
-    "pathology": "Superior cerebellar artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the superior hemisphere including lobule VI with dysarthria, ipsilateral limb ataxia and nystagmus.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cerebellar cognitive-affective syndrome",
-    "modality": "MRI",
-    "finding": "Posterior lobe lesions (stroke, tumor, resection) involving lobule VI and Crus I-II with executive, linguistic and affective change and mild motor signs.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Medulloblastoma or pilocytic astrocytoma of the superior vermis",
-    "modality": "MRI",
-    "finding": "Enhancing midline mass extending into lobule VI with ataxia, vomiting and hydrocephalus in a child.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Scanning dysarthria",
-    "side": "ipsilateral",
-    "mechanism": "Loss of cerebellar timing of articulatory muscles from the face representation"
-   },
-   {
-    "deficit": "Saccadic dysmetria and impaired smooth pursuit",
-    "side": "bilateral",
-    "mechanism": "Loss of oculomotor vermis calibration through the fastigial nucleus"
-   },
-   {
-    "deficit": "Executive and affective change with adjacent Crus I involvement",
-    "side": "n/a",
-    "mechanism": "Disruption of the cerebrocerebellar cognitive loops"
-   }
-  ],
-  "examination": [
-   "Repeat syllables and a sentence to detect scanning, explosive speech",
-   "Saccades to targets: overshoot and corrective saccades",
-   "Verbal fluency and affect after a posterior lobe lesion"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-cerebellar-vermian-midline"
-  ],
-  "pearls": [
-   "Dysarthria in cerebellar disease is a lobule VI and paravermian sign, usually from the left hemisphere",
-   "The oculomotor vermis (VI-VII) tunes every saccade; its lesion makes the eyes overshoot",
-   "Lobule VI is where the motor cerebellum shades into the cognitive cerebellum"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
+  "summary": "Lobule VI is the first lobule of the posterior lobe, immediately behind the primary fissure, comprising the declive of the vermis and the posterior quadrangular lobule of the hemisphere, the simplex lobule. It is a transition between the motor cerebellum of the anterior lobe and the cognitive cerebellum of Crus I and II: it holds a second representation of the face, mouth and eye movements, it supports articulation and the timing of speech, and its vermian part with lobule VII is the oculomotor vermis that calibrates saccades. It is a superior cerebellar artery territory, it is involved in the dysarthria of cerebellar strokes, and it is one of the regions most consistently abnormal in the cerebellar cognitive-affective syndrome and in studies of autism.",
+  "anatomy": {
+    "location": "Anterior part of the posterior lobe between the primary fissure in front and the superior posterior fissure behind, from the vermian declive laterally into the simplex (posterior quadrangular) lobule of the hemisphere, under the tentorium and above the horizontal fissure.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Premotor, motor and prefrontal cortex via the pontine nuclei",
+        "via": "middle cerebellar peduncle"
+      },
+      {
+        "from": "Superior colliculus and vestibular nuclei (vermis)",
+        "via": "tectocerebellar and vestibulocerebellar fibers"
+      },
+      {
+        "from": "Trigeminal nuclei",
+        "via": "trigeminocerebellar fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Dentate nucleus (hemisphere) and fastigial nucleus (vermis)",
+        "via": "Purkinje axons"
+      },
+      {
+        "to": "Motor and prefrontal cortex via the thalamus",
+        "via": "superior cerebellar peduncle"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    96,
-    100
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "cerebellar-hemisphere"
+  "function": "The hemispheric part of lobule VI receives the ventral premotor, motor and somatosensory cortex through the pontine nuclei and the trigeminal system, and its projection through the dentate nucleus to the motor thalamus times the muscles of the mouth, tongue and larynx, so lesions produce scanning dysarthria; the vermian part receives the superior colliculus, the vestibular nuclei and the nucleus prepositus and projects to the fastigial nucleus to adjust saccade amplitude and pursuit gain, so lesions produce saccadic dysmetria and impaired pursuit. Its lateral parts also participate in working memory and language tasks with Crus I, and it is a station of the cerebellar pain and emotional networks.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca"
+    ],
+    "territories": [
+      "territory-superior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-vi-l"
+        },
+        "label": "lobule VI behind the primary fissure"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebellar-lobule-vi-r"
+        },
+        "label": "simplex lobule of the superior hemisphere"
+      }
+    ],
+    "normalAppearance": "The lobule immediately behind the primary fissure on sagittal images, above the horizontal fissure on the hemisphere; the declive of the vermis is the corresponding midline part.",
+    "pathology": [
+      {
+        "pathology": "Superior cerebellar artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the superior hemisphere including lobule VI with dysarthria, ipsilateral limb ataxia and nystagmus.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cerebellar cognitive-affective syndrome",
+        "modality": "MRI",
+        "finding": "Posterior lobe lesions (stroke, tumor, resection) involving lobule VI and Crus I-II with executive, linguistic and affective change and mild motor signs.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Medulloblastoma or pilocytic astrocytoma of the superior vermis",
+        "modality": "MRI",
+        "finding": "Enhancing midline mass extending into lobule VI with ataxia, vomiting and hydrocephalus in a child.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Scanning dysarthria",
+        "side": "ipsilateral",
+        "mechanism": "Loss of cerebellar timing of articulatory muscles from the face representation"
+      },
+      {
+        "deficit": "Saccadic dysmetria and impaired smooth pursuit",
+        "side": "bilateral",
+        "mechanism": "Loss of oculomotor vermis calibration through the fastigial nucleus"
+      },
+      {
+        "deficit": "Executive and affective change with adjacent Crus I involvement",
+        "side": "n/a",
+        "mechanism": "Disruption of the cerebrocerebellar cognitive loops"
+      }
+    ],
+    "examination": [
+      "Repeat syllables and a sentence to detect scanning, explosive speech",
+      "Saccades to targets: overshoot and corrective saccades",
+      "Verbal fluency and affect after a posterior lobe lesion"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-cerebellar-vermian-midline"
+    ],
+    "pearls": [
+      "Dysarthria in cerebellar disease is a lobule VI and paravermian sign, usually from the left hemisphere",
+      "The oculomotor vermis (VI-VII) tunes every saccade; its lesion makes the eyes overshoot",
+      "Lobule VI is where the motor cerebellum shades into the cognitive cerebellum"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "cerebellar-hemisphere"
 }

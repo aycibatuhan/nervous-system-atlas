@@ -1,156 +1,144 @@
 {
- "kind": "structure",
- "id": "territory-mca-frontal",
- "name": "MCA territory, frontal",
- "synonyms": [
-  "superior division MCA territory",
-  "frontal MCA domain"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-mca-frontal-l",
-  "territory-mca-frontal-r"
- ],
- "summary": "The frontal MCA territory is the lateral frontal lobe supplied by the superior division of the middle cerebral artery: the inferior and middle frontal gyri, the precentral gyrus for the face and arm, the frontal operculum and the frontal eye field. It is the territory of the classical superior division stroke: contralateral face-arm weakness, gaze deviation toward the lesion and, on the left, Broca aphasia, with relative sparing of the leg, the visual fields and comprehension. Its border with the ACA territory along the superior frontal sulcus is a watershed, and its deep boundary is the corona radiata supplied by the medullary arteries and the lenticulostriates.",
- "anatomy": {
-  "location": "Lateral frontal convexity from the frontal pole back to the central sulcus, including the middle and inferior frontal gyri, the lateral part of the superior frontal gyrus, the precentral gyrus below the leg area and the frontal operculum, extending into the underlying white matter to the corona radiata; bounded above by the ACA territory and behind by the parietal MCA territory.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Superior division of the MCA: orbitofrontal, prefrontal, precentral and central branches",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-mca-frontal",
+  "name": "MCA territory, frontal",
+  "synonyms": [
+    "superior division MCA territory",
+    "frontal MCA domain"
   ],
-  "efferents": [
-   {
-    "to": "Superficial middle cerebral vein and superior sagittal sinus",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-mca-frontal-l",
+    "territory-mca-frontal-r"
   ],
-  "pathways": []
- },
- "function": "The territory contains the motor cortex of the face, tongue and arm, the premotor and frontal eye field areas, the dorsolateral prefrontal cortex and, on the left, the Broca region, so its infarction produces a brachiofacial hemiparesis, ipsiversive gaze deviation, executive dysfunction and non-fluent aphasia; it is supplied by the orbitofrontal, prefrontal, precentral and central branches of the superior division, and collaterals from the ACA over the convexity limit the infarct in slow occlusions. Its deep white matter is a common site of internal border-zone infarcts when the carotid is stenosed.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-mca-frontal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-mca-frontal-l"
-    },
-    "label": "frontal MCA territory on the lateral frontal lobe"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-mca-frontal-r"
-    },
-    "label": "superior division domain of the frontal convexity"
-   }
-  ],
-  "normalAppearance": "On the overlay the frontal MCA domain covers the lateral frontal convexity below the superior frontal sulcus; the precentral gyrus is its posterior edge.",
-  "pathology": [
-   {
-    "pathology": "Superior division MCA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the lateral frontal cortex and precentral gyrus with face-arm weakness and, on the left, Broca aphasia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Internal border-zone infarcts",
-    "modality": "MRI",
-    "finding": "Rosary-like restricted diffusion in the frontal corona radiata and centrum semiovale from carotid stenosis with hypoperfusion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Frontal lobe glioma",
-    "modality": "MRI",
-    "finding": "Infiltrating lesion of the frontal white matter within the MCA domain; tumors do not respect arterial boundaries, which distinguishes them from infarcts.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral face and arm weakness sparing the leg",
-    "side": "contralateral",
-    "mechanism": "Precentral gyrus infarction below the leg area"
-   },
-   {
-    "deficit": "Broca aphasia (left)",
-    "side": "n/a",
-    "mechanism": "Frontal opercular infarction"
-   },
-   {
-    "deficit": "Gaze deviation toward the lesion",
-    "side": "ipsilateral",
-    "mechanism": "Frontal eye field infarction"
-   },
-   {
-    "deficit": "Executive dysfunction and apathy",
-    "side": "bilateral",
-    "mechanism": "Dorsolateral prefrontal infarction"
-   }
-  ],
-  "examination": [
-   "Face and arm strength versus leg strength",
-   "Fluency, repetition and comprehension",
-   "Gaze position and voluntary saccades"
-  ],
-  "syndromes": [
-   "syn-mca-superior-division",
-   "syn-aphasia-broca",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Face-arm weakness with aphasia and a spared leg is the superior MCA division",
-   "Rosary infarcts in the frontal white matter mean carotid stenosis, not emboli",
-   "Infarcts respect arterial boundaries; tumors do not"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
+  "summary": "The frontal MCA territory is the lateral frontal lobe supplied by the superior division of the middle cerebral artery: the inferior and middle frontal gyri, the precentral gyrus for the face and arm, the frontal operculum and the frontal eye field. It is the territory of the classical superior division stroke: contralateral face-arm weakness, gaze deviation toward the lesion and, on the left, Broca aphasia, with relative sparing of the leg, the visual fields and comprehension. Its border with the ACA territory along the superior frontal sulcus is a watershed, and its deep boundary is the corona radiata supplied by the medullary arteries and the lenticulostriates.",
+  "anatomy": {
+    "location": "Lateral frontal convexity from the frontal pole back to the central sulcus, including the middle and inferior frontal gyri, the lateral part of the superior frontal gyrus, the precentral gyrus below the leg area and the frontal operculum, extending into the underlying white matter to the corona radiata; bounded above by the ACA territory and behind by the parietal MCA territory.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Superior division of the MCA: orbitofrontal, prefrontal, precentral and central branches",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superficial middle cerebral vein and superior sagittal sinus",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level1",
- "parent": "territory-mca"
+  "function": "The territory contains the motor cortex of the face, tongue and arm, the premotor and frontal eye field areas, the dorsolateral prefrontal cortex and, on the left, the Broca region, so its infarction produces a brachiofacial hemiparesis, ipsiversive gaze deviation, executive dysfunction and non-fluent aphasia; it is supplied by the orbitofrontal, prefrontal, precentral and central branches of the superior division, and collaterals from the ACA over the convexity limit the infarct in slow occlusions. Its deep white matter is a common site of internal border-zone infarcts when the carotid is stenosed.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-mca-frontal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-mca-frontal-l"
+        },
+        "label": "frontal MCA territory on the lateral frontal lobe"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-mca-frontal-r"
+        },
+        "label": "superior division domain of the frontal convexity"
+      }
+    ],
+    "normalAppearance": "On the overlay the frontal MCA domain covers the lateral frontal convexity below the superior frontal sulcus; the precentral gyrus is its posterior edge.",
+    "pathology": [
+      {
+        "pathology": "Superior division MCA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the lateral frontal cortex and precentral gyrus with face-arm weakness and, on the left, Broca aphasia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Internal border-zone infarcts",
+        "modality": "MRI",
+        "finding": "Rosary-like restricted diffusion in the frontal corona radiata and centrum semiovale from carotid stenosis with hypoperfusion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Frontal lobe glioma",
+        "modality": "MRI",
+        "finding": "Infiltrating lesion of the frontal white matter within the MCA domain; tumors do not respect arterial boundaries, which distinguishes them from infarcts.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral face and arm weakness sparing the leg",
+        "side": "contralateral",
+        "mechanism": "Precentral gyrus infarction below the leg area"
+      },
+      {
+        "deficit": "Broca aphasia (left)",
+        "side": "n/a",
+        "mechanism": "Frontal opercular infarction"
+      },
+      {
+        "deficit": "Gaze deviation toward the lesion",
+        "side": "ipsilateral",
+        "mechanism": "Frontal eye field infarction"
+      },
+      {
+        "deficit": "Executive dysfunction and apathy",
+        "side": "bilateral",
+        "mechanism": "Dorsolateral prefrontal infarction"
+      }
+    ],
+    "examination": [
+      "Face and arm strength versus leg strength",
+      "Fluency, repetition and comprehension",
+      "Gaze position and voluntary saccades"
+    ],
+    "syndromes": [
+      "syn-mca-superior-division",
+      "syn-aphasia-broca",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Face-arm weakness with aphasia and a spared leg is the superior MCA division",
+      "Rosary infarcts in the frontal white matter mean carotid stenosis, not emboli",
+      "Infarcts respect arterial boundaries; tumors do not"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-precentral-gyrus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-broca-area",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "arterial territory",
+    "stroke"
+  ],
+  "status": "draft",
+  "subsystem": "level1",
+  "parent": "territory-mca"
 }

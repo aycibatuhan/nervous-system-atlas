@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-43",
- "type": "mechanism",
- "vignette": "A 35-year-old man is found to have a small infarct of the right supramarginal gyrus after a cardiac embolus. Which of the following is the most likely persistent deficit?",
- "stem": "Choose the best answer.",
- "options": [
-  {
-   "key": "A",
-   "text": "Right hemianopia"
-  },
-  {
-   "key": "B",
-   "text": "Left-sided extinction and neglect"
-  },
-  {
-   "key": "C",
-   "text": "Expressive aphasia"
-  },
-  {
-   "key": "D",
-   "text": "Right hand apraxia"
-  },
-  {
-   "key": "E",
-   "text": "Left leg weakness"
-  }
- ],
- "answer": "B",
- "explanation": "The right inferior parietal lobule is the ventral attention hub; its lesion produces left neglect and extinction, often lasting because the superior longitudinal fasciculus II beneath it is interrupted. Aphasia and bilateral apraxia are left-hemisphere signs.",
- "targets": {
-  "structureIds": [
-   "gyrus-supramarginal-anterior",
-   "tract-superior-longitudinal-fasciculus-ii"
+  "kind": "quiz",
+  "id": "qz-43",
+  "type": "mechanism",
+  "vignette": "A 35-year-old man is found to have a small infarct of the right supramarginal gyrus after a cardiac embolus. Which of the following is the most likely persistent deficit?",
+  "stem": "Choose the best answer.",
+  "options": [
+    {
+      "key": "A",
+      "text": "Right hemianopia"
+    },
+    {
+      "key": "B",
+      "text": "Left-sided extinction and neglect"
+    },
+    {
+      "key": "C",
+      "text": "Expressive aphasia"
+    },
+    {
+      "key": "D",
+      "text": "Right hand apraxia"
+    },
+    {
+      "key": "E",
+      "text": "Left leg weakness"
+    }
   ],
-  "syndromeIds": [
-   "syn-hemineglect"
+  "answer": "B",
+  "explanation": "The right inferior parietal lobule is the ventral attention hub; its lesion produces left neglect and extinction, often lasting because the superior longitudinal fasciculus II beneath it is interrupted. Aphasia and bilateral apraxia are left-hemisphere signs.",
+  "targets": {
+    "structureIds": [
+      "gyrus-supramarginal-anterior",
+      "tract-superior-longitudinal-fasciculus-ii"
+    ],
+    "syndromeIds": [
+      "syn-hemineglect"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "gyrus-supramarginal-anterior-r",
+    "tract-superior-longitudinal-fasciculus-ii-r"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "gyrus-supramarginal-anterior-r",
-  "tract-superior-longitudinal-fasciculus-ii-r"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-spatial-neglect",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-apraxia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "History and Physical"
+    }
+  ],
+  "original": true
 }

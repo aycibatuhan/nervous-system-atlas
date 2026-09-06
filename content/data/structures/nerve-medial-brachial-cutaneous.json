@@ -1,133 +1,129 @@
 {
- "kind": "structure",
- "id": "nerve-medial-brachial-cutaneous",
- "name": "Medial brachial cutaneous nerve",
- "synonyms": [
-  "medial cutaneous nerve of the arm"
- ],
- "system": "peripheral",
- "meshIds": [
-  "medial-brachial-cutaneous-nerve-l",
-  "medial-brachial-cutaneous-nerve-r"
- ],
- "summary": "The medial brachial cutaneous nerve is the smallest branch of the medial cord (T1, with a T2 contribution through the intercostobrachial nerve) and supplies the skin of the medial arm and the axilla. It is clinically a marker of the T1 root and the lower plexus: numbness of the medial arm accompanies a Pancoast tumor, a lower trunk injury and neurogenic thoracic outlet syndrome, and the intercostobrachial nerve that joins it is cut in axillary dissection for breast cancer, leaving the numb inner arm that patients notice after surgery.",
- "anatomy": {
-  "location": "Arises from the medial cord in the axilla, runs medial to the axillary vein, communicates with the intercostobrachial nerve from the second intercostal nerve, pierces the deep fascia in the middle of the arm and supplies the skin of the medial arm from the axilla to the elbow.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Purely sensory, it carries sensation from the medial arm and the floor of the axilla through the medial cord and lower trunk to the T1 (and via the intercostobrachial nerve the T2) dorsal root ganglia, so its territory is the dermatomal marker of the lowest root of the plexus; loss of sensation here with a wasted hand and a Horner syndrome points to a Pancoast tumor at the apex of the lung invading the lower trunk and the sympathetic chain, and loss after axillary surgery reflects section of the intercostobrachial nerve, a benign but permanent numbness. Pain in its territory can be referred cardiac pain, since T1-T2 also receive the heart.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-medial-brachial-cutaneous",
+  "name": "Medial brachial cutaneous nerve",
+  "synonyms": [
+    "medial cutaneous nerve of the arm"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "medial-brachial-cutaneous-nerve-l"
-    },
-    "label": "medial brachial cutaneous nerve in the axilla and medial arm"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "medial-brachial-cutaneous-nerve-r"
-    },
-    "label": "nerve medial to the axillary vein"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "medial-brachial-cutaneous-nerve-l",
+    "medial-brachial-cutaneous-nerve-r"
   ],
-  "normalAppearance": "A tiny nerve medial to the axillary vein; not identifiable on routine imaging. Territory: the medial upper arm and axilla.",
-  "pathology": [
-   {
-    "pathology": "Pancoast tumor",
-    "modality": "MRI",
-    "finding": "Apical lung tumor invading the lower trunk of the brachial plexus, the T1 root and the stellate ganglion, with medial arm numbness, hand wasting and Horner syndrome.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Post-mastectomy numbness (intercostobrachial injury)",
-    "modality": "US",
-    "finding": "No imaging finding; numbness of the medial arm and axilla after axillary dissection with a possible neuroma on ultrasound.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Neurogenic thoracic outlet syndrome",
-    "modality": "MRI",
-    "finding": "Cervical rib or band at the T1 root and lower trunk with medial arm and forearm numbness.",
-    "sequence": "STIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Numbness of the medial arm and axilla",
-    "side": "ipsilateral",
-    "mechanism": "T1 root, lower trunk or medial cord lesion, or intercostobrachial section"
-   },
-   {
-    "deficit": "Associated hand wasting and Horner syndrome",
-    "side": "ipsilateral",
-    "mechanism": "Apical lung tumor invading the lower plexus and the sympathetic chain"
-   },
-   {
-    "deficit": "No motor deficit",
-    "side": "n/a",
-    "mechanism": "Purely sensory nerve"
-   }
-  ],
-  "examination": [
-   "Sensation over the medial arm, the medial forearm and the little finger to define the extent of a lower plexus lesion",
-   "Look for ptosis and miosis in any patient with a numb medial arm",
-   "Chest imaging of the apex when the T1 territory is numb and the hand is wasted"
-  ],
-  "syndromes": [
-   "syn-klumpke",
-   "syn-neurogenic-thoracic-outlet",
-   "syn-horner"
-  ],
-  "pearls": [
-   "A numb inner arm with a small pupil is a Pancoast tumor until the chest film says otherwise",
-   "The intercostobrachial nerve is sacrificed in axillary dissection; warn the patient about the numb inner arm",
-   "T1 supplies the medial arm and the heart: arm pain can be angina"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The medial brachial cutaneous nerve is the smallest branch of the medial cord (T1, with a T2 contribution through the intercostobrachial nerve) and supplies the skin of the medial arm and the axilla. It is clinically a marker of the T1 root and the lower plexus: numbness of the medial arm accompanies a Pancoast tumor, a lower trunk injury and neurogenic thoracic outlet syndrome, and the intercostobrachial nerve that joins it is cut in axillary dissection for breast cancer, leaving the numb inner arm that patients notice after surgery.",
+  "anatomy": {
+    "location": "Arises from the medial cord in the axilla, runs medial to the axillary vein, communicates with the intercostobrachial nerve from the second intercostal nerve, pierces the deep fascia in the middle of the arm and supplies the skin of the medial arm from the axilla to the elbow.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Purely sensory, it carries sensation from the medial arm and the floor of the axilla through the medial cord and lower trunk to the T1 (and via the intercostobrachial nerve the T2) dorsal root ganglia, so its territory is the dermatomal marker of the lowest root of the plexus; loss of sensation here with a wasted hand and a Horner syndrome points to a Pancoast tumor at the apex of the lung invading the lower trunk and the sympathetic chain, and loss after axillary surgery reflects section of the intercostobrachial nerve, a benign but permanent numbness. Pain in its territory can be referred cardiac pain, since T1-T2 also receive the heart.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "medial-brachial-cutaneous-nerve-l"
+        },
+        "label": "medial brachial cutaneous nerve in the axilla and medial arm"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "medial-brachial-cutaneous-nerve-r"
+        },
+        "label": "nerve medial to the axillary vein"
+      }
+    ],
+    "normalAppearance": "A tiny nerve medial to the axillary vein; not identifiable on routine imaging. Territory: the medial upper arm and axilla.",
+    "pathology": [
+      {
+        "pathology": "Pancoast tumor",
+        "modality": "MRI",
+        "finding": "Apical lung tumor invading the lower trunk of the brachial plexus, the T1 root and the stellate ganglion, with medial arm numbness, hand wasting and Horner syndrome.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Post-mastectomy numbness (intercostobrachial injury)",
+        "modality": "US",
+        "finding": "No imaging finding; numbness of the medial arm and axilla after axillary dissection with a possible neuroma on ultrasound.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Neurogenic thoracic outlet syndrome",
+        "modality": "MRI",
+        "finding": "Cervical rib or band at the T1 root and lower trunk with medial arm and forearm numbness.",
+        "sequence": "STIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Numbness of the medial arm and axilla",
+        "side": "ipsilateral",
+        "mechanism": "T1 root, lower trunk or medial cord lesion, or intercostobrachial section"
+      },
+      {
+        "deficit": "Associated hand wasting and Horner syndrome",
+        "side": "ipsilateral",
+        "mechanism": "Apical lung tumor invading the lower plexus and the sympathetic chain"
+      },
+      {
+        "deficit": "No motor deficit",
+        "side": "n/a",
+        "mechanism": "Purely sensory nerve"
+      }
+    ],
+    "examination": [
+      "Sensation over the medial arm, the medial forearm and the little finger to define the extent of a lower plexus lesion",
+      "Look for ptosis and miosis in any patient with a numb medial arm",
+      "Chest imaging of the apex when the T1 territory is numb and the hand is wasted"
+    ],
+    "syndromes": [
+      "syn-klumpke",
+      "syn-neurogenic-thoracic-outlet",
+      "syn-horner"
+    ],
+    "pearls": [
+      "A numb inner arm with a small pupil is a Pancoast tumor until the chest film says otherwise",
+      "The intercostobrachial nerve is sacrificed in axillary dissection; warn the patient about the numb inner arm",
+      "T1 supplies the medial arm and the heart: arm pain can be angina"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-medial-brachial-cutaneous-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-medial-antebrachial-cutaneous-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-arm-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "T1"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "T1"
- }
 }

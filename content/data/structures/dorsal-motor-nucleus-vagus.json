@@ -1,155 +1,127 @@
 {
- "kind": "structure",
- "id": "dorsal-motor-nucleus-vagus",
- "name": "Dorsal motor nucleus of the vagus",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The largest parasympathetic nucleus of the brainstem, lying beneath the vagal trigone in the floor of the fourth ventricle lateral to the hypoglossal nucleus. Its preganglionic neurons travel in the vagus nerve to the thoracic and abdominal viscera, driving bronchoconstriction, gastric secretion and gut motility. It is functionally paired with the nucleus of the solitary tract just lateral to it, which delivers the visceral afferent information that its reflexes require.",
- "anatomy": {
-  "location": "Dorsal medulla under the vagal trigone of the fourth ventricular floor, lateral to the hypoglossal nucleus and medial to the solitary nucleus, extending from the obex upward through the open medulla.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [
-   {
-    "to": "thoracic and abdominal viscera",
-    "via": "cn-10-vagus",
-    "note": "preganglionic parasympathetic"
-   }
+  "kind": "structure",
+  "id": "dorsal-motor-nucleus-vagus",
+  "name": "Dorsal motor nucleus of the vagus",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": []
- },
- "function": "Preganglionic parasympathetic outflow to the heart (in part), lungs, esophagus, stomach, small bowel and proximal colon; secretomotor and motor drive to the gut.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-vertebral"
-  ],
-  "territories": [
-   "territory-pica-lateral-medulla"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -46,
-     "z": -44
+  "summary": "The largest parasympathetic nucleus of the brainstem, lying beneath the vagal trigone in the floor of the fourth ventricle lateral to the hypoglossal nucleus. Its preganglionic neurons travel in the vagus nerve to the thoracic and abdominal viscera, driving bronchoconstriction, gastric secretion and gut motility. It is functionally paired with the nucleus of the solitary tract just lateral to it, which delivers the visceral afferent information that its reflexes require.",
+  "anatomy": {
+    "location": "Dorsal medulla under the vagal trigone of the fourth ventricular floor, lateral to the hypoglossal nucleus and medial to the solitary nucleus, extending from the obex upward through the open medulla.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [
+      {
+        "to": "thoracic and abdominal viscera",
+        "via": "cn-10-vagus",
+        "note": "preganglionic parasympathetic"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Preganglionic parasympathetic outflow to the heart (in part), lungs, esophagus, stomach, small bowel and proximal colon; secretomotor and motor drive to the gut.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-vertebral"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -46,
+          "z": -44
+        },
+        "label": "dorsal medulla under the floor of the fourth ventricle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 3,
+          "y": -46,
+          "z": -44
+        },
+        "label": "vagal trigone in the caudal fourth ventricular floor"
+      }
+    ],
+    "normalAppearance": "Not resolved on MRI; the vagal and hypoglossal trigones form the caudal floor of the fourth ventricle. Dorsal medullary lesions here appear as small T2 or DWI lesions beneath the ventricle.",
+    "pathology": [
+      {
+        "pathology": "Area postrema / dorsal medullary lesion (neuromyelitis optica)",
+        "modality": "MRI",
+        "finding": "T2/FLAIR-bright lesion of the dorsal medulla abutting the fourth ventricle, presenting with intractable hiccups and vomiting.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Dorsal medullary infarct",
+        "modality": "MRI",
+        "finding": "Small restricted-diffusion lesion in the dorsal medulla from PICA or vertebral perforators.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "Axial FLAIR and DWI; aquaporin-4 antibodies if the lesion abuts the fourth ventricle"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Tachycardia and loss of vagal tone",
+        "side": "n/a",
+        "mechanism": "Loss of parasympathetic drive to the heart (with nucleus ambiguus)"
+      },
+      {
+        "deficit": "Gastroparesis and reduced gut motility",
+        "side": "n/a",
+        "mechanism": "Loss of vagal motor outflow to the stomach and bowel"
+      },
+      {
+        "deficit": "Intractable hiccups, nausea and vomiting",
+        "side": "n/a",
+        "mechanism": "Involvement of the neighboring area postrema and solitary complex"
+      }
+    ],
+    "examination": [
+      "Heart rate variability and orthostatic responses",
+      "Ask about early satiety, nausea and hiccups",
+      "Assess the palate and gag for associated ambiguus involvement"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Persistent hiccups and vomiting with a dorsal medullary lesion should raise neuromyelitis optica",
+      "Vagal parasympathetic neurons for the heart come mainly from the nucleus ambiguus, not this nucleus"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-vagal-nerve-nuclei",
+      "section": "Structure and Function"
     },
-    "label": "dorsal medulla under the floor of the fourth ventricle"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 3,
-     "y": -46,
-     "z": -44
+    {
+      "ref": "sp-cranial-nerve-10",
+      "section": "Structure and Function"
     },
-    "label": "vagal trigone in the caudal fourth ventricular floor"
-   }
+    {
+      "ref": "sp-parasympathetic-nervous-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not resolved on MRI; the vagal and hypoglossal trigones form the caudal floor of the fourth ventricle. Dorsal medullary lesions here appear as small T2 or DWI lesions beneath the ventricle.",
-  "pathology": [
-   {
-    "pathology": "Area postrema / dorsal medullary lesion (neuromyelitis optica)",
-    "modality": "MRI",
-    "finding": "T2/FLAIR-bright lesion of the dorsal medulla abutting the fourth ventricle, presenting with intractable hiccups and vomiting.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Dorsal medullary infarct",
-    "modality": "MRI",
-    "finding": "Small restricted-diffusion lesion in the dorsal medulla from PICA or vertebral perforators.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "Axial FLAIR and DWI; aquaporin-4 antibodies if the lesion abuts the fourth ventricle"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Tachycardia and loss of vagal tone",
-    "side": "n/a",
-    "mechanism": "Loss of parasympathetic drive to the heart (with nucleus ambiguus)"
-   },
-   {
-    "deficit": "Gastroparesis and reduced gut motility",
-    "side": "n/a",
-    "mechanism": "Loss of vagal motor outflow to the stomach and bowel"
-   },
-   {
-    "deficit": "Intractable hiccups, nausea and vomiting",
-    "side": "n/a",
-    "mechanism": "Involvement of the neighboring area postrema and solitary complex"
-   }
-  ],
-  "examination": [
-   "Heart rate variability and orthostatic responses",
-   "Ask about early satiety, nausea and hiccups",
-   "Assess the palate and gag for associated ambiguus involvement"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Persistent hiccups and vomiting with a dorsal medullary lesion should raise neuromyelitis optica",
-   "Vagal parasympathetic neurons for the heart come mainly from the nucleus ambiguus, not this nucleus"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    200,
-    204
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    343,
-    344
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    387,
-    392
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    79,
-    82
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    125,
-    126
-   ]
+  "status": "draft",
+  "latin": "Nucleus dorsalis nervi vagi",
+  "subsystem": "medulla",
+  "level": {
+    "region": "medulla"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Nucleus dorsalis nervi vagi",
- "subsystem": "medulla",
- "level": {
-  "region": "medulla"
- }
 }

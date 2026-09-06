@@ -1,181 +1,161 @@
 {
- "kind": "structure",
- "id": "gyrus-inferior-temporal-temporooccipital",
- "name": "Inferior temporal gyrus, temporo-occipital part",
- "synonyms": [
-  "lateral occipital complex",
-  "posterior ITG"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-inferior-temporal-temporooccipital-l",
-  "gyrus-inferior-temporal-temporooccipital-r"
- ],
- "summary": "The temporo-occipital part of the inferior temporal gyrus is the most posterior segment of the lower lateral temporal cortex, where it passes into the inferior lateral occipital cortex behind the level of the atrium. It contains shape-selective and object-selective visual cortex (the lateral occipital complex), contributes to the visual word form system in the dominant hemisphere and to face and body perception on the right, and is supplied by the posterior cerebral artery with a middle cerebral artery contribution at its upper edge. Lesions produce apperceptive visual agnosia, alexia and, when the adjacent optic radiation is involved, a contralateral upper quadrant defect.",
- "anatomy": {
-  "location": "Posterior end of the inferior temporal gyrus at the junction with the occipital lobe, lateral to the occipital fusiform gyrus and below the temporo-occipital part of the middle temporal gyrus, above the inferior surface of the hemisphere.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Ventral occipital cortex (V2-V4)",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Primary visual cortex",
-    "via": "occipito-temporal projection"
-   },
-   {
-    "from": "Contralateral occipito-temporal cortex",
-    "via": "splenium"
-   }
+  "kind": "structure",
+  "id": "gyrus-inferior-temporal-temporooccipital",
+  "name": "Inferior temporal gyrus, temporo-occipital part",
+  "synonyms": [
+    "lateral occipital complex",
+    "posterior ITG"
   ],
-  "efferents": [
-   {
-    "to": "Posterior and anterior inferior temporal cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "to": "Angular gyrus",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Amygdala",
-    "via": "temporo-amygdalar fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-inferior-temporal-temporooccipital-l",
+    "gyrus-inferior-temporal-temporooccipital-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "This cortex assembles edges, contours and surfaces into whole object shapes and represents them independently of low-level features, the stage at which a drawn outline and a photograph become the same object; the left side contributes to recognizing letter strings as words and the right to recognizing faces and bodies as wholes. It receives the ventral occipital areas and projects forward along the inferior longitudinal fasciculus to the inferior temporal and perirhinal cortex and to the amygdala. Damage produces apperceptive agnosia, in which the patient cannot copy or match shapes, in contrast to the associative agnosia of more anterior lesions where copying is preserved.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The temporo-occipital part of the inferior temporal gyrus is the most posterior segment of the lower lateral temporal cortex, where it passes into the inferior lateral occipital cortex behind the level of the atrium. It contains shape-selective and object-selective visual cortex (the lateral occipital complex), contributes to the visual word form system in the dominant hemisphere and to face and body perception on the right, and is supplied by the posterior cerebral artery with a middle cerebral artery contribution at its upper edge. Lesions produce apperceptive visual agnosia, alexia and, when the adjacent optic radiation is involved, a contralateral upper quadrant defect.",
+  "anatomy": {
+    "location": "Posterior end of the inferior temporal gyrus at the junction with the occipital lobe, lateral to the occipital fusiform gyrus and below the temporo-occipital part of the middle temporal gyrus, above the inferior surface of the hemisphere.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Ventral occipital cortex (V2-V4)",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Primary visual cortex",
+        "via": "occipito-temporal projection"
+      },
+      {
+        "from": "Contralateral occipito-temporal cortex",
+        "via": "splenium"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Posterior and anterior inferior temporal cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "to": "Angular gyrus",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Amygdala",
+        "via": "temporo-amygdalar fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "This cortex assembles edges, contours and surfaces into whole object shapes and represents them independently of low-level features, the stage at which a drawn outline and a photograph become the same object; the left side contributes to recognizing letter strings as words and the right to recognizing faces and bodies as wholes. It receives the ventral occipital areas and projects forward along the inferior longitudinal fasciculus to the inferior temporal and perirhinal cortex and to the amygdala. Damage produces apperceptive agnosia, in which the patient cannot copy or match shapes, in contrast to the associative agnosia of more anterior lesions where copying is preserved.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-inferior-temporal-temporooccipital-l"
+        },
+        "label": "inferior temporo-occipital junction behind the atrium"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-inferior-temporal-temporooccipital-r"
+        },
+        "label": "lateral occipito-temporal cortex above the inferior surface"
+      }
+    ],
+    "normalAppearance": "Lateral cortex at the inferior temporo-occipital junction on coronal images behind the atrium, lateral to the occipitotemporal sulcus; the preoccipital notch marks its lower posterior border.",
+    "pathology": [
+      {
+        "pathology": "PCA branch infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the inferior temporo-occipital cortex with visual agnosia or pure alexia (left) and a superior quadrantanopia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Occipito-temporal atrophy with impaired object and face recognition and reading; FDG-PET shows posterior hypometabolism.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Occipito-temporal cortical dysplasia",
+        "modality": "MRI",
+        "finding": "Focal cortical thickening at the temporo-occipital junction in a patient with visual auras of shapes and colors.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apperceptive visual agnosia",
+        "side": "n/a",
+        "mechanism": "Loss of shape integration in the lateral occipital complex"
+      },
+      {
+        "deficit": "Alexia and impaired letter recognition (left)",
+        "side": "n/a",
+        "mechanism": "Damage to the visual word form pathway from the occipital lobe to the fusiform gyrus"
+      },
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Involvement of Meyer's loop fibers of the optic radiation in the underlying white matter"
+      }
+    ],
+    "examination": [
+      "Copying and matching of shapes and letters (fails in apperceptive agnosia)",
+      "Reading single words and letters; writing is preserved in pure alexia",
+      "Quadrantic visual fields"
+    ],
+    "syndromes": [
+      "syn-alexia-without-agraphia",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Copying tells apperceptive from associative agnosia: the apperceptive patient cannot copy, the associative one copies but cannot recognize",
+      "Alexia without agraphia arises when the left occipito-temporal cortex and the splenial fibers are cut together",
+      "Upper quadrant defects come from the temporal loop of the optic radiation, which runs under this cortex"
+    ]
+  },
+  "pitfalls": [
+    "A patient who cannot read but writes normally has a disconnection, not a language disorder; check the splenium and left occipital lobe"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-inferior-temporal-temporooccipital-l"
+  "citations": [
+    {
+      "ref": "sp-agnosia",
+      "section": "Introduction"
     },
-    "label": "inferior temporo-occipital junction behind the atrium"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-inferior-temporal-temporooccipital-r"
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
     },
-    "label": "lateral occipito-temporal cortex above the inferior surface"
-   }
+    {
+      "ref": "sp-occipital-lobe",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Lateral cortex at the inferior temporo-occipital junction on coronal images behind the atrium, lateral to the occipitotemporal sulcus; the preoccipital notch marks its lower posterior border.",
-  "pathology": [
-   {
-    "pathology": "PCA branch infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the inferior temporo-occipital cortex with visual agnosia or pure alexia (left) and a superior quadrantanopia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Occipito-temporal atrophy with impaired object and face recognition and reading; FDG-PET shows posterior hypometabolism.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Occipito-temporal cortical dysplasia",
-    "modality": "MRI",
-    "finding": "Focal cortical thickening at the temporo-occipital junction in a patient with visual auras of shapes and colors.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apperceptive visual agnosia",
-    "side": "n/a",
-    "mechanism": "Loss of shape integration in the lateral occipital complex"
-   },
-   {
-    "deficit": "Alexia and impaired letter recognition (left)",
-    "side": "n/a",
-    "mechanism": "Damage to the visual word form pathway from the occipital lobe to the fusiform gyrus"
-   },
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Involvement of Meyer's loop fibers of the optic radiation in the underlying white matter"
-   }
+  "tags": [
+    "ventral stream",
+    "shape",
+    "reading"
   ],
-  "examination": [
-   "Copying and matching of shapes and letters (fails in apperceptive agnosia)",
-   "Reading single words and letters; writing is preserved in pure alexia",
-   "Quadrantic visual fields"
-  ],
-  "syndromes": [
-   "syn-alexia-without-agraphia",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Copying tells apperceptive from associative agnosia: the apperceptive patient cannot copy, the associative one copies but cannot recognize",
-   "Alexia without agraphia arises when the left occipito-temporal cortex and the splenial fibers are cut together",
-   "Upper quadrant defects come from the temporal loop of the optic radiation, which runs under this cortex"
-  ]
- },
- "pitfalls": [
-  "A patient who cannot read but writes normally has a disconnection, not a language disorder; check the splenium and left occipital lobe"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "ventral stream",
-  "shape",
-  "reading"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

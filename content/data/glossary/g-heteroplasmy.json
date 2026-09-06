@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-heteroplasmy",
- "term": "Heteroplasmy",
- "definition": "The coexistence of normal and mutant mitochondrial DNA within a cell, varying between tissues and relatives, which explains the variable expression and maternal inheritance of mitochondrial disorders such as MELAS.",
- "related": [
-  "g-leukodystrophy",
-  "g-ragged-red-fibers"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 31,
-   "pages": [
-    309,
-    312
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-heteroplasmy",
+  "term": "Heteroplasmy",
+  "definition": "The coexistence of normal and mutant mitochondrial DNA within a cell, varying between tissues and relatives, which explains the variable expression and maternal inheritance of mitochondrial disorders such as MELAS.",
+  "related": [
+    "g-leukodystrophy",
+    "g-ragged-red-fibers"
+  ],
+  "citations": [
+    {
+      "ref": "sp-melas-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-myoclonic-epilepsy-and-ragged-red-fibers",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-genetics-inheritance-patterns",
+      "section": "Introduction"
+    }
+  ]
 }

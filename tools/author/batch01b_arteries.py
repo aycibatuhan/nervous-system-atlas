@@ -1,9 +1,6 @@
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from lib import *
 E = []
-SN17 = lambda a, b=None: C("snell", 17, a, b)
-BK7 = lambda a, b=None: C("berkowitz", 7, a, b)
-BK9 = lambda a, b=None: C("berkowitz", 9, a, b)
 
 E.append(structure("artery-mca-superior-division", "Middle cerebral artery, superior division", "arteries", subsystem="anterior-circulation", parent="artery-mca", synonyms=["upper division of the MCA", "M2 superior trunk"],
  summary="The superior trunk of the middle cerebral artery leaves the bifurcation at the limen insulae and climbs over the frontal operculum. Its branches feed the inferior frontal gyrus (Broca's area on the left), the frontal eye field, the precentral and postcentral gyri for the face, hand and arm, and the anterior parietal cortex. Occlusion produces the classic 'cortical' stroke with face and arm weakness and, on the dominant side, a non-fluent aphasia.",
@@ -18,7 +15,7 @@ E.append(structure("artery-mca-superior-division", "Middle cerebral artery, supe
  lesion=[("Face and arm weakness with relative sparing of the leg", "contralateral", "Precentral gyrus opercular and hand areas"), ("Cortical sensory loss of the face and arm", "contralateral", "Postcentral gyrus"), ("Broca (non-fluent) aphasia with preserved comprehension", "n/a", "Inferior frontal gyrus of the dominant hemisphere"), ("Gaze preference toward the lesion", "ipsilateral", "Frontal eye field"), ("Motor neglect and anosognosia (non-dominant)", "contralateral", "Right frontal-parietal opercular cortex")],
  exam=["Test speech output (fluency, naming, repetition) against comprehension of commands", "Pronator drift and finger tapping versus hip flexion", "Observe conjugate gaze deviation and test saccades to the contralateral side"],
  pearls=["Non-fluent aphasia with right face and arm weakness is the left superior division; the leg is spared and visual fields are usually intact", "Comprehension is preserved because Wernicke's area belongs to the inferior division"],
- citations=[SN17(465, 468), C("snell", 8, 284, 291), BK7(55, 59), C("berkowitz", 19, 180, 184)],
+ citations=[R("sp-middle-cerebral-artery"), R("sp-middle-cerebral-artery-stroke"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-mca-superior-division", "syn-aphasia-broca"], tags=["vascular"]))
 
 E.append(structure("artery-mca-inferior-division", "Middle cerebral artery, inferior division", "arteries", subsystem="anterior-circulation", parent="artery-mca", synonyms=["lower division of the MCA", "M2 inferior trunk"],
@@ -34,7 +31,7 @@ E.append(structure("artery-mca-inferior-division", "Middle cerebral artery, infe
  lesion=[("Wernicke (fluent) aphasia with impaired comprehension and repetition", "n/a", "Posterior superior temporal gyrus of the dominant hemisphere"), ("Contralateral homonymous hemianopia or superior quadrantanopia", "contralateral", "Optic radiation fibres in the temporal and parietal white matter"), ("Hemispatial neglect and constructional apraxia (non-dominant)", "contralateral", "Right inferior parietal lobule"), ("Gerstmann syndrome (dominant)", "n/a", "Angular gyrus")],
  exam=["Ask the patient to follow multi-step commands and to repeat phrases; note paraphasias and jargon", "Visual fields by confrontation in each quadrant", "Line bisection and clock drawing for neglect", "Finger naming, left-right orientation, calculation and writing"],
  pearls=["Fluent nonsense speech without weakness is an inferior division stroke, easily mistaken for delirium or psychosis", "A superior quadrantanopia points to the temporal loop of the optic radiation (Meyer's loop)"],
- citations=[SN17(465, 468), C("snell", 8, 285, 291), BK7(55, 59), C("berkowitz", 6, 49, 51)],
+ citations=[R("sp-middle-cerebral-artery"), R("sp-middle-cerebral-artery-stroke"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-mca-inferior-division", "syn-aphasia-wernicke", "syn-hemineglect", "syn-gerstmann"], tags=["vascular"]))
 
 E.append(structure("arteries-lenticulostriate", "Lenticulostriate arteries", "arteries", subsystem="perforators", synonyms=["lateral striate arteries", "arteries of cerebral hemorrhage"], latin="Arteriae lenticulostriatae",
@@ -53,7 +50,7 @@ E.append(structure("arteries-lenticulostriate", "Lenticulostriate arteries", "ar
  exam=["Check that face, arm and leg are affected to a similar degree with no cortical signs", "Look for hemiballismus or dystonia after recovery", "Measure blood pressure and look for retinal hypertensive change"],
  pearls=["A hemiparesis that is equal in face, arm and leg with no aphasia, neglect or field cut is capsular, not cortical", "The lenticulostriates are the classic site of hypertensive hemorrhage because they leave a large trunk at right angles and bear its full pressure"],
  pitfalls=["Small deep infarcts can also come from emboli or from M1 atheroma occluding the perforator origins, so cardiac and large-vessel evaluation is still needed"],
- citations=[SN17(465, 468), C("snell", 17, 474), BK7(58, 60), C("berkowitz", 19, 180, 184), C("berkowitz", 19, 192, 195)],
+ citations=[R("sp-striate-arteries"), R("sp-middle-cerebral-artery"), R("sp-recurrent-artery-of-heubner")],
  syndromes=["syn-lacunar-pure-motor", "syn-hemiballismus"], tags=["vascular", "lacunar"]))
 
 E.append(structure("artery-pcom", "Posterior communicating artery", "arteries", subsystem="circle-of-willis", synonyms=["PComm", "PCoA"], latin="Arteria communicans posterior",
@@ -68,7 +65,7 @@ E.append(structure("artery-pcom", "Posterior communicating artery", "arteries", 
  lesion=[("Painful third nerve palsy with a dilated pupil", "ipsilateral", "Compression of the pial surface of the oculomotor nerve, where the parasympathetic pupillary fibres lie superficially"), ("Contralateral hemiparesis with amnesia after aneurysm treatment", "contralateral", "Loss of anterior thalamoperforating branches to the thalamus and capsule")],
  exam=["Examine the pupil size and reaction alongside ptosis and extraocular movements", "Ask about a sudden severe headache accompanying the palsy"],
  pearls=["A third nerve palsy that involves the pupil is a compressive lesion, and the PComm aneurysm is the one you must not miss", "A fetal PComm means a carotid occlusion can also infarct the occipital lobe"],
- citations=[SN17(464, 468), C("snell", 11, 350, 351), BK7(57), C("berkowitz", 10, 87, 90), C("berkowitz", 11, 93, 95)],
+ citations=[R("sp-cranial-nerve-iii-palsy"), R("sp-cerebral-aneurysm"), R("sp-internal-carotid-arteries")],
  syndromes=["syn-cn3-palsy", "syn-subarachnoid-hemorrhage"], tags=["vascular", "circle-of-willis"]))
 
 E.append(structure("artery-pca", "Posterior cerebral artery", "arteries", subsystem="posterior-circulation", synonyms=["PCA"], latin="Arteria cerebri posterior",
@@ -86,7 +83,7 @@ E.append(structure("artery-pca", "Posterior cerebral artery", "arteries", subsys
  exam=["Confrontation fields quadrant by quadrant, checking for macular sparing", "Reading aloud and writing to dictation", "Face recognition and colour naming", "Pupils and extraocular movements for a midbrain component"],
  pearls=["A hemianopia without weakness or aphasia is a PCA stroke until proven otherwise", "Macular sparing favours an occipital (PCA) lesion over an optic tract lesion", "Bilateral PCA infarcts cause cortical blindness that the patient may deny (Anton syndrome)"],
  pitfalls=["Patients often report 'blurred vision' or bump into things rather than noticing a field cut", "A fetal PCA origin from the carotid changes the embolic source from the heart/vertebrobasilar system to the carotid"],
- citations=[SN17(466, 468), C("snell", 17, 472, 476), C("snell", 17, 482, 483), BK7(57, 59), C("berkowitz", 6, 49, 51), C("berkowitz", 19, 180, 184)],
+ citations=[R("sp-posterior-cerebral-arteries"), R("sp-posterior-cerebral-artery-stroke"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-pca-infarct", "syn-alexia-without-agraphia", "syn-anton", "syn-thalamic-dejerine-roussy", "syn-weber", "syn-claude"], tags=["vascular", "posterior-circulation"]))
 
 E.append(structure("arteries-thalamoperforating", "Thalamoperforating and thalamogeniculate arteries", "arteries", subsystem="perforators", synonyms=["thalamic perforators", "paramedian thalamic arteries", "artery of Percheron"],
@@ -103,7 +100,7 @@ E.append(structure("arteries-thalamoperforating", "Thalamoperforating and thalam
  lesion=[("Hypersomnolence or coma with vertical gaze palsy", "bilateral", "Bilateral paramedian thalamic and rostral midbrain infarction (artery of Percheron)"), ("Amnesia and apathy", "contralateral", "Anterior and mediodorsal nuclei and the mammillothalamic tract"), ("Pure hemisensory loss, later central pain", "contralateral", "Ventral posterior nuclei (thalamogeniculate territory)")],
  exam=["Test vertical saccades and pursuit and look for skew deviation", "Bedside memory and attention testing once alert", "Pin-prick, temperature and vibration over the face, arm and leg"],
  pearls=["Sudden coma with bilateral thalamic infarcts and no other explanation should prompt a search for a basilar tip embolus", "All modalities lost on one side of the body including the face, with no weakness, is a thalamic lesion"],
- citations=[SN17(467, 468), C("snell", 12, 369), BK7(57, 58), BK7(63), C("berkowitz", 4, 38)],
+ citations=[R("sp-posterior-cerebral-arteries"), R("sp-thalamic-nuclei"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-thalamic-dejerine-roussy", "syn-top-of-basilar", "syn-lacunar-pure-sensory"], tags=["vascular", "thalamus"]))
 
 E.append(structure("artery-vertebral", "Vertebral artery", "arteries", subsystem="posterior-circulation", latin="Arteria vertebralis",
@@ -120,7 +117,7 @@ E.append(structure("artery-vertebral", "Vertebral artery", "arteries", subsystem
  lesion=[("Lateral medullary (Wallenberg) syndrome", "ipsilateral", "Occlusion of the vertebral artery or its PICA branch infarcts the dorsolateral medulla"), ("Medial medullary syndrome", "contralateral", "Anterior spinal branch or paramedian perforators from the vertebral artery"), ("Inferior cerebellar infarction with vertigo and ataxia", "ipsilateral", "PICA territory"), ("Occipital headache and neck pain preceding stroke", "ipsilateral", "Dissection of the artery in the neck")],
  exam=["Test for crossed sensory findings: face on one side, body on the other", "Horner syndrome, dysphagia, hoarseness and palatal deviation", "Gait, limb ataxia and nystagmus"],
  pearls=["Neck pain plus brainstem signs in a young patient is a vertebral dissection until excluded", "Vertebral occlusion can be silent when the contralateral artery is dominant; PICA territory symptoms reveal it"],
- citations=[SN17(466), C("snell", 5, 215, 217), BK9(77, 79), C("berkowitz", 19, 180, 184)],
+ citations=[R("sp-vertebrobasilar-system"), R("sp-vertebral-artery-dissection"), R("sp-basilar-artery")],
  syndromes=["syn-wallenberg-lateral-medullary", "syn-dejerine-medial-medullary"], tags=["vascular", "posterior-circulation"]))
 
 E.append(structure("artery-basilar", "Basilar artery", "arteries", subsystem="posterior-circulation", latin="Arteria basilaris",
@@ -140,7 +137,7 @@ E.append(structure("artery-basilar", "Basilar artery", "arteries", subsystem="po
  exam=["Assess consciousness, pupils, corneal reflexes and eye movements in every stuporous patient", "Look for bilateral long-tract signs", "Ask about preceding vertigo, diplopia, dysarthria and drop attacks (basilar TIAs)"],
  pearls=["Bilateral or crossed signs with altered consciousness mean the basilar artery until proven otherwise; call for CTA", "Locked-in patients are awake: examine vertical eye movements and blinking before assuming coma"],
  pitfalls=["Basilar occlusion may present with fluctuating symptoms or apparent psychiatric change over hours before collapse", "A dolichoectatic basilar can compress cranial nerves or cause perforator strokes without occlusion"],
- citations=[SN17(466, 467), C("snell", 5, 215, 218), BK9(75, 79), BK7(57, 58), C("berkowitz", 19, 180, 184)],
+ citations=[R("sp-basilar-artery"), R("sp-basilar-artery-occlusion"), R("sp-cerebral-blood-supply")],
  syndromes=["syn-basilar-occlusion", "syn-locked-in", "syn-top-of-basilar", "syn-millard-gubler", "syn-foville"], tags=["vascular", "posterior-circulation"]))
 
 write(E)

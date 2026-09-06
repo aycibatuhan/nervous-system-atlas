@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-retinotopy",
- "term": "Retinotopy",
- "definition": "The orderly mapping of the retina, and hence the visual field, onto the visual pathway and cortex. Upper retinal (lower field) fibers stay superior in the radiation and cortex; the macula occupies the occipital pole.",
- "related": [
-  "g-homonymous-hemianopia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-retinotopy",
+  "term": "Retinotopy",
+  "definition": "The orderly mapping of the retina, and hence the visual field, onto the visual pathway and cortex. Upper retinal (lower field) fibers stay superior in the radiation and cortex; the macula occupies the occipital pole.",
+  "related": [
+    "g-homonymous-hemianopia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-retina",
+      "section": "Structure and Function"
+    }
+  ]
 }

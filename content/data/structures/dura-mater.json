@@ -1,196 +1,164 @@
 {
- "kind": "structure",
- "id": "dura-mater",
- "name": "Dura mater",
- "synonyms": [
-  "pachymeninx"
- ],
- "system": "meninges",
- "meshIds": [
-  "dura-mater-cranial",
-  "tentorium-cerebelli"
- ],
- "summary": "The tough outer meninx. Inside the skull it has two layers: an endosteal layer that is the periosteum of the inner table and a meningeal layer that folds inward as the falx cerebri, tentorium cerebelli, falx cerebelli and diaphragma sellae; where the layers separate they enclose the dural venous sinuses. The meningeal arteries run between dura and bone (epidural hematoma), the bridging veins cross from brain to sinus beneath it (subdural hematoma), and it is the only intracranial structure with pain fibers, so its stretching, inflammation and traction produce headache. It enhances on MRI and thickens in hypotension, inflammation and metastasis.",
- "anatomy": {
-  "location": "Lining the skull from the foramen magnum up, adherent to bone at the sutures and skull base; the meningeal layer continues through the foramen magnum as the spinal dura, which is separated from the vertebral canal by the fat-filled epidural space and ends at S2.",
-  "subdivisions": [
-   {
-    "name": "Endosteal (periosteal) layer",
-    "note": "adherent to the skull; site of epidural hematoma when stripped by arterial bleeding"
-   },
-   {
-    "name": "Meningeal layer",
-    "note": "forms the folds and the outer wall of the sinuses; continuous with the spinal dura"
-   },
-   {
-    "name": "Dural folds",
-    "note": "falx cerebri, tentorium cerebelli with its incisura, falx cerebelli, diaphragma sellae"
-   },
-   {
-    "name": "Innervation",
-    "note": "trigeminal (V1 mainly) supratentorially, upper cervical nerves and vagus infratentorially"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cn-05-trigeminal (V1)",
-    "note": "sensory"
-   },
-   {
-    "from": "upper cervical nerves"
-   }
+  "kind": "structure",
+  "id": "dura-mater",
+  "name": "Dura mater",
+  "synonyms": [
+    "pachymeninx"
   ],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Mechanical protection and partitioning of the brain, formation of the venous sinuses, CSF absorption through the granulations projecting into them, and pain signaling for headache.",
- "bloodSupply": {
-  "arteries": [
-   "middle meningeal artery",
-   "artery-ophthalmic",
-   "artery-vertebral"
+  "system": "meninges",
+  "meshIds": [
+    "dura-mater-cranial",
+    "tentorium-cerebelli"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 40
+  "summary": "The tough outer meninx. Inside the skull it has two layers: an endosteal layer that is the periosteum of the inner table and a meningeal layer that folds inward as the falx cerebri, tentorium cerebelli, falx cerebelli and diaphragma sellae; where the layers separate they enclose the dural venous sinuses. The meningeal arteries run between dura and bone (epidural hematoma), the bridging veins cross from brain to sinus beneath it (subdural hematoma), and it is the only intracranial structure with pain fibers, so its stretching, inflammation and traction produce headache. It enhances on MRI and thickens in hypotension, inflammation and metastasis.",
+  "anatomy": {
+    "location": "Lining the skull from the foramen magnum up, adherent to bone at the sutures and skull base; the meningeal layer continues through the foramen magnum as the spinal dura, which is separated from the vertebral canal by the fat-filled epidural space and ends at S2.",
+    "subdivisions": [
+      {
+        "name": "Endosteal (periosteal) layer",
+        "note": "adherent to the skull; site of epidural hematoma when stripped by arterial bleeding"
+      },
+      {
+        "name": "Meningeal layer",
+        "note": "forms the folds and the outer wall of the sinuses; continuous with the spinal dura"
+      },
+      {
+        "name": "Dural folds",
+        "note": "falx cerebri, tentorium cerebelli with its incisura, falx cerebelli, diaphragma sellae"
+      },
+      {
+        "name": "Innervation",
+        "note": "trigeminal (V1 mainly) supratentorially, upper cervical nerves and vagus infratentorially"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "cn-05-trigeminal (V1)",
+        "note": "sensory"
+      },
+      {
+        "from": "upper cervical nerves"
+      }
+    ],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Mechanical protection and partitioning of the brain, formation of the venous sinuses, CSF absorption through the granulations projecting into them, and pain signaling for headache.",
+  "bloodSupply": {
+    "arteries": [
+      "middle meningeal artery",
+      "artery-ophthalmic",
+      "artery-vertebral"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 40
+        },
+        "label": "convexity dura and falx at the superior sagittal sinus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 40,
+          "y": -10,
+          "z": 20
+        },
+        "label": "dura lining the inner table"
+      }
+    ],
+    "normalAppearance": "A thin line against the inner table, invisible on CT and faintly enhancing on T1+Gd in short segments; diffuse smooth thick enhancement means intracranial hypotension, pachymeningitis or metastasis. Extra-axial collections are classified by their relation to the dura: lens-shaped epidural (arterial, limited by sutures) versus crescentic subdural (venous, crossing sutures).",
+    "pathology": [
+      {
+        "pathology": "Epidural hematoma",
+        "modality": "CT",
+        "finding": "Biconvex hyperdense collection between skull and dura, not crossing sutures, usually temporoparietal from the middle meningeal artery with a skull fracture.",
+        "sequence": "CT non-contrast",
+        "timing": "Classic lucid interval then rapid deterioration over hours"
+      },
+      {
+        "pathology": "Subdural hematoma",
+        "modality": "CT",
+        "finding": "Crescentic collection over the convexity crossing sutures; hyperdense acute, isodense at 1–3 weeks, hypodense chronic.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Intracranial hypotension",
+        "modality": "MRI",
+        "finding": "Diffuse smooth dural thickening and enhancement, subdural collections, venous engorgement and brain sagging.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Meningioma",
+        "modality": "MRI",
+        "finding": "Extra-axial, dural-based, homogeneously enhancing mass with a dural tail.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Hypertrophic pachymeningitis / dural metastasis",
+        "modality": "MRI",
+        "finding": "Nodular or thick enhancing dura (IgG4 disease, tuberculosis, breast and prostate cancer).",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Non-contrast CT for hematomas; T1+Gd for dural disease"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Headache (worse upright in hypotension, worse lying down in raised pressure)",
+        "side": "n/a",
+        "mechanism": "Traction on or stretching of pain-sensitive dura"
+      },
+      {
+        "deficit": "Focal deficits and coma from expanding hematomas",
+        "side": "contralateral",
+        "mechanism": "Compression of the underlying hemisphere and herniation"
+      },
+      {
+        "deficit": "Cranial nerve palsies from dural thickening at the skull base",
+        "side": "ipsilateral",
+        "mechanism": "Entrapment of nerves passing through dural foramina"
+      }
+    ],
+    "examination": [
+      "Postural headache history",
+      "Neck stiffness",
+      "Pupils and level of consciousness after head injury",
+      "Cranial nerves at the skull base"
+    ],
+    "syndromes": [
+      "syn-epidural-hematoma",
+      "syn-subdural-hematoma",
+      "syn-idiopathic-intracranial-hypertension"
+    ],
+    "pearls": [
+      "A lucid interval after head injury followed by decline is an epidural hematoma: get the CT before the second decline",
+      "Postural headache that vanishes when lying flat with diffuse dural enhancement is a CSF leak"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-dura-mater",
+      "section": "Structure and Function"
     },
-    "label": "convexity dura and falx at the superior sagittal sinus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 40,
-     "y": -10,
-     "z": 20
-    },
-    "label": "dura lining the inner table"
-   }
+    {
+      "ref": "sp-cranial-meninges",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A thin line against the inner table, invisible on CT and faintly enhancing on T1+Gd in short segments; diffuse smooth thick enhancement means intracranial hypotension, pachymeningitis or metastasis. Extra-axial collections are classified by their relation to the dura: lens-shaped epidural (arterial, limited by sutures) versus crescentic subdural (venous, crossing sutures).",
-  "pathology": [
-   {
-    "pathology": "Epidural hematoma",
-    "modality": "CT",
-    "finding": "Biconvex hyperdense collection between skull and dura, not crossing sutures, usually temporoparietal from the middle meningeal artery with a skull fracture.",
-    "sequence": "CT non-contrast",
-    "timing": "Classic lucid interval then rapid deterioration over hours"
-   },
-   {
-    "pathology": "Subdural hematoma",
-    "modality": "CT",
-    "finding": "Crescentic collection over the convexity crossing sutures; hyperdense acute, isodense at 1–3 weeks, hypodense chronic.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Intracranial hypotension",
-    "modality": "MRI",
-    "finding": "Diffuse smooth dural thickening and enhancement, subdural collections, venous engorgement and brain sagging.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Meningioma",
-    "modality": "MRI",
-    "finding": "Extra-axial, dural-based, homogeneously enhancing mass with a dural tail.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Hypertrophic pachymeningitis / dural metastasis",
-    "modality": "MRI",
-    "finding": "Nodular or thick enhancing dura (IgG4 disease, tuberculosis, breast and prostate cancer).",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "meninges"
   ],
-  "sequenceOfChoice": "Non-contrast CT for hematomas; T1+Gd for dural disease"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Headache (worse upright in hypotension, worse lying down in raised pressure)",
-    "side": "n/a",
-    "mechanism": "Traction on or stretching of pain-sensitive dura"
-   },
-   {
-    "deficit": "Focal deficits and coma from expanding hematomas",
-    "side": "contralateral",
-    "mechanism": "Compression of the underlying hemisphere and herniation"
-   },
-   {
-    "deficit": "Cranial nerve palsies from dural thickening at the skull base",
-    "side": "ipsilateral",
-    "mechanism": "Entrapment of nerves passing through dural foramina"
-   }
-  ],
-  "examination": [
-   "Postural headache history",
-   "Neck stiffness",
-   "Pupils and level of consciousness after head injury",
-   "Cranial nerves at the skull base"
-  ],
-  "syndromes": [
-   "syn-epidural-hematoma",
-   "syn-subdural-hematoma",
-   "syn-idiopathic-intracranial-hypertension"
-  ],
-  "pearls": [
-   "A lucid interval after head injury followed by decline is an epidural hematoma: get the CT before the second decline",
-   "Postural headache that vanishes when lying flat with diffuse dural enhancement is a CSF leak"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    417,
-    421
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    428,
-    431
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    26,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    199,
-    200
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    273,
-    273
-   ]
-  }
- ],
- "tags": [
-  "meninges"
- ],
- "status": "draft",
- "latin": "Dura mater"
+  "status": "draft",
+  "latin": "Dura mater"
 }

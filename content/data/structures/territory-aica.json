@@ -1,133 +1,121 @@
 {
- "kind": "structure",
- "id": "territory-aica",
- "name": "AICA territory",
- "synonyms": [],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-inferior-cerebellar-l",
-  "territory-inferior-cerebellar-r"
- ],
- "summary": "The lateral caudal pons, the middle cerebellar peduncle, the inner ear and the anterior inferior cerebellum perfused by the anterior inferior cerebellar artery. Infarction combines lateral pontine signs with deafness and vertigo, and because the labyrinthine artery is an end artery the cochlea is often the first casualty. The territory is small and variable: when AICA is hypoplastic, PICA takes over the cerebellar part, and when PICA is hypoplastic, AICA extends downward, so the border with the PICA territory is the least predictable in the posterior fossa.",
- "anatomy": {
-  "location": "Lateral tegmentum and basis of the caudal pons (facial nucleus, spinal trigeminal nucleus, vestibular and cochlear nuclei, spinothalamic tract), the middle cerebellar peduncle, the flocculus and the petrosal surface of the cerebellum; the cochlea and labyrinth through the labyrinthine artery.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Facial movement, facial pain and temperature sensation, hearing, vestibular input and pontocerebellar coordination.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aica",
-   "artery-basilar"
+  "kind": "structure",
+  "id": "territory-aica",
+  "name": "AICA territory",
+  "synonyms": [],
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-inferior-cerebellar-l",
+    "territory-inferior-cerebellar-r"
   ],
-  "territories": [],
-  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -40,
-     "z": -35
-    },
-    "label": "lateral caudal pons and middle cerebellar peduncle"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 35,
-     "y": -55,
-     "z": -35
-    },
-    "label": "anterior inferior cerebellum near the petrous bone"
-   }
-  ],
-  "normalAppearance": "The lateral pons and the adjacent cerebellar peduncle and anterior inferior cerebellar surface on axial slices at the level of the internal acoustic meatus. In the lesion atlas used here the AICA and PICA cerebellar regions are pooled as the inferior cerebellar territory.",
-  "pathology": [
-   {
-    "pathology": "AICA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the lateral caudal pons, middle cerebellar peduncle and anterior inferior cerebellum, often with acute unilateral hearing loss.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI; audiometry; CTA"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral deafness and vertigo",
-    "side": "ipsilateral",
-    "mechanism": "Labyrinthine artery and vestibulocochlear nuclei"
-   },
-   {
-    "deficit": "Lower motor neuron facial palsy",
-    "side": "ipsilateral",
-    "mechanism": "Facial nucleus"
-   },
-   {
-    "deficit": "Crossed pain and temperature loss",
-    "side": "ipsilateral",
-    "mechanism": "Spinal trigeminal nucleus and spinothalamic tract"
-   },
-   {
-    "deficit": "Ataxia",
-    "side": "ipsilateral",
-    "mechanism": "Middle cerebellar peduncle"
-   }
-  ],
-  "examination": [
-   "Hearing test",
-   "Facial movement",
-   "Corneal reflex",
-   "Coordination"
-  ],
-  "syndromes": [
-   "syn-aica-lateral-pontine"
-  ],
-  "pearls": [
-   "Lateral medullary picture plus deafness and facial palsy equals the lateral pons (AICA)",
-   "Sudden unilateral deafness with vertigo in an older patient with vascular risk factors deserves a DWI, not only an ENT referral"
-  ]
- },
- "pitfalls": [
-  "Vestibular neuritis and AICA infarction both give acute vertigo with nystagmus; hearing loss, facial weakness and inability to stand favor the infarct"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    79
-   ]
+  "summary": "The lateral caudal pons, the middle cerebellar peduncle, the inner ear and the anterior inferior cerebellum perfused by the anterior inferior cerebellar artery. Infarction combines lateral pontine signs with deafness and vertigo, and because the labyrinthine artery is an end artery the cochlea is often the first casualty. The territory is small and variable: when AICA is hypoplastic, PICA takes over the cerebellar part, and when PICA is hypoplastic, AICA extends downward, so the border with the PICA territory is the least predictable in the posterior fossa.",
+  "anatomy": {
+    "location": "Lateral tegmentum and basis of the caudal pons (facial nucleus, spinal trigeminal nucleus, vestibular and cochlear nuclei, spinothalamic tract), the middle cerebellar peduncle, the flocculus and the petrosal surface of the cerebellum; the cochlea and labyrinth through the labyrinthine artery.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    106,
-    106
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    112,
-    112
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "territory"
- ],
- "status": "draft"
+  "function": "Facial movement, facial pain and temperature sensation, hearing, vestibular input and pontocerebellar coordination.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aica",
+      "artery-basilar"
+    ],
+    "territories": [],
+    "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -40,
+          "z": -35
+        },
+        "label": "lateral caudal pons and middle cerebellar peduncle"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 35,
+          "y": -55,
+          "z": -35
+        },
+        "label": "anterior inferior cerebellum near the petrous bone"
+      }
+    ],
+    "normalAppearance": "The lateral pons and the adjacent cerebellar peduncle and anterior inferior cerebellar surface on axial slices at the level of the internal acoustic meatus. In the lesion atlas used here the AICA and PICA cerebellar regions are pooled as the inferior cerebellar territory.",
+    "pathology": [
+      {
+        "pathology": "AICA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the lateral caudal pons, middle cerebellar peduncle and anterior inferior cerebellum, often with acute unilateral hearing loss.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; audiometry; CTA"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral deafness and vertigo",
+        "side": "ipsilateral",
+        "mechanism": "Labyrinthine artery and vestibulocochlear nuclei"
+      },
+      {
+        "deficit": "Lower motor neuron facial palsy",
+        "side": "ipsilateral",
+        "mechanism": "Facial nucleus"
+      },
+      {
+        "deficit": "Crossed pain and temperature loss",
+        "side": "ipsilateral",
+        "mechanism": "Spinal trigeminal nucleus and spinothalamic tract"
+      },
+      {
+        "deficit": "Ataxia",
+        "side": "ipsilateral",
+        "mechanism": "Middle cerebellar peduncle"
+      }
+    ],
+    "examination": [
+      "Hearing test",
+      "Facial movement",
+      "Corneal reflex",
+      "Coordination"
+    ],
+    "syndromes": [
+      "syn-aica-lateral-pontine"
+    ],
+    "pearls": [
+      "Lateral medullary picture plus deafness and facial palsy equals the lateral pons (AICA)",
+      "Sudden unilateral deafness with vertigo in an older patient with vascular risk factors deserves a DWI, not only an ENT referral"
+    ]
+  },
+  "pitfalls": [
+    "Vestibular neuritis and AICA infarction both give acute vertigo with nystagmus; hearing loss, facial weakness and inability to stand favor the infarct"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anterior-inferior-cerebellar-arteries",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellar-infarction",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-vertebrobasilar-system",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "vascular",
+    "territory"
+  ],
+  "status": "draft"
 }

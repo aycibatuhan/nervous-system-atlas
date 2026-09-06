@@ -1,146 +1,134 @@
 {
- "kind": "structure",
- "id": "sinus-petrosal",
- "name": "Superior and inferior petrosal sinuses",
- "synonyms": [],
- "system": "venous",
- "meshIds": [
-  "dura-mater-cranial",
-  "tentorium-cerebelli"
- ],
- "summary": "Two channels draining the cavernous sinus backward: the superior petrosal sinus runs along the petrous ridge in the attached margin of the tentorium to the transverse sinus, and the inferior petrosal sinus runs in the groove between the petrous bone and the clivus to the jugular bulb. The superior sinus crosses the trigeminal root at Meckel's cave and the inferior sinus passes beside the abducens nerve in Dorello's canal and the glossopharyngeal and vagus nerves at the jugular foramen. The inferior petrosal sinus is catheterized to sample pituitary ACTH in Cushing disease.",
- "anatomy": {
-  "location": "Superior petrosal sinus along the superior border of the petrous temporal bone from the cavernous sinus to the transverse sinus; inferior petrosal sinus along the petro-occipital fissure from the cavernous sinus to the jugular foramen.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "sinus-cavernous"
-   },
-   {
-    "from": "cerebellar and pontine veins",
-    "via": "petrosal vein"
-   }
+  "kind": "structure",
+  "id": "sinus-petrosal",
+  "name": "Superior and inferior petrosal sinuses",
+  "synonyms": [],
+  "system": "venous",
+  "meshIds": [
+    "dura-mater-cranial",
+    "tentorium-cerebelli"
   ],
-  "efferents": [
-   {
-    "to": "sinus-transverse-sigmoid"
-   },
-   {
-    "to": "internal jugular vein",
-    "via": "jugular bulb"
-   }
-  ],
-  "pathways": []
- },
- "function": "Drainage of the cavernous sinus and of the cerebellum, brainstem and inner ear (via the labyrinthine and petrosal veins) into the lateral sinuses and jugular bulb.",
- "bloodSupply": {
-  "arteries": [
-   "(venous structure) drains territories of the cerebral arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 30,
-     "y": -30,
-     "z": -25
-    },
-    "label": "superior petrosal sinus along the petrous ridge"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 15,
-     "y": -30,
-     "z": -40
-    },
-    "label": "inferior petrosal sinus beside the clivus"
-   }
-  ],
-  "normalAppearance": "Thin channels seen on contrast-enhanced venography along the petrous ridge and the clivus; the inferior petrosal sinus is the route for petrosal sampling, and the petrosal veins are involved in dural fistulas of the tentorium.",
-  "pathology": [
-   {
-    "pathology": "Tentorial dural arteriovenous fistula",
-    "modality": "DSA",
-    "finding": "Abnormal arterialized flow in the petrosal veins and superior petrosal sinus with cortical venous reflux; risk of hemorrhage.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Gradenigo syndrome (petrous apicitis)",
-    "modality": "MRI",
-    "finding": "Inflammation of the petrous apex with abducens palsy and facial pain from involvement of Dorello's canal and Meckel's cave.",
-    "sequence": "T1+Gd"
-   }
-  ],
-  "sequenceOfChoice": "CT/MR venography; DSA"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Abducens palsy with retro-orbital pain and otitis (Gradenigo)",
-    "side": "ipsilateral",
-    "mechanism": "Inflammation at the petrous apex where the nerve and inferior petrosal sinus run"
-   },
-   {
-    "deficit": "Trigeminal symptoms",
-    "side": "ipsilateral",
-    "mechanism": "Superior petrosal sinus at Meckel's cave"
-   },
-   {
-    "deficit": "Pulsatile tinnitus and hemorrhage risk",
-    "side": "ipsilateral",
-    "mechanism": "Dural fistula draining through the petrosal veins"
-   }
-  ],
-  "examination": [
-   "Lateral rectus function and facial sensation",
-   "Ear examination",
-   "Auscultate the mastoid for a bruit"
-  ],
-  "syndromes": [
-   "syn-cn6-palsy",
-   "syn-cavernous-sinus"
-  ],
-  "pearls": [
-   "Sixth nerve palsy plus facial pain plus ear discharge is the petrous apex",
-   "The inferior petrosal sinus is where endocrinologists go to prove that ACTH is coming from the pituitary"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    421,
-    423
-   ]
+  "summary": "Two channels draining the cavernous sinus backward: the superior petrosal sinus runs along the petrous ridge in the attached margin of the tentorium to the transverse sinus, and the inferior petrosal sinus runs in the groove between the petrous bone and the clivus to the jugular bulb. The superior sinus crosses the trigeminal root at Meckel's cave and the inferior sinus passes beside the abducens nerve in Dorello's canal and the glossopharyngeal and vagus nerves at the jugular foramen. The inferior petrosal sinus is catheterized to sample pituitary ACTH in Cushing disease.",
+  "anatomy": {
+    "location": "Superior petrosal sinus along the superior border of the petrous temporal bone from the cavernous sinus to the transverse sinus; inferior petrosal sinus along the petro-occipital fissure from the cavernous sinus to the jugular foramen.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    29
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "sinus-cavernous"
+      },
+      {
+        "from": "cerebellar and pontine veins",
+        "via": "petrosal vein"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "sinus-transverse-sigmoid"
+      },
+      {
+        "to": "internal jugular vein",
+        "via": "jugular bulb"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    93,
-    96
-   ]
-  }
- ],
- "tags": [
-  "venous"
- ],
- "status": "draft",
- "latin": "Sinus petrosus superior et inferior"
+  "function": "Drainage of the cavernous sinus and of the cerebellum, brainstem and inner ear (via the labyrinthine and petrosal veins) into the lateral sinuses and jugular bulb.",
+  "bloodSupply": {
+    "arteries": [
+      "(venous structure) drains territories of the cerebral arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 30,
+          "y": -30,
+          "z": -25
+        },
+        "label": "superior petrosal sinus along the petrous ridge"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 15,
+          "y": -30,
+          "z": -40
+        },
+        "label": "inferior petrosal sinus beside the clivus"
+      }
+    ],
+    "normalAppearance": "Thin channels seen on contrast-enhanced venography along the petrous ridge and the clivus; the inferior petrosal sinus is the route for petrosal sampling, and the petrosal veins are involved in dural fistulas of the tentorium.",
+    "pathology": [
+      {
+        "pathology": "Tentorial dural arteriovenous fistula",
+        "modality": "DSA",
+        "finding": "Abnormal arterialized flow in the petrosal veins and superior petrosal sinus with cortical venous reflux; risk of hemorrhage.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Gradenigo syndrome (petrous apicitis)",
+        "modality": "MRI",
+        "finding": "Inflammation of the petrous apex with abducens palsy and facial pain from involvement of Dorello's canal and Meckel's cave.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "CT/MR venography; DSA"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Abducens palsy with retro-orbital pain and otitis (Gradenigo)",
+        "side": "ipsilateral",
+        "mechanism": "Inflammation at the petrous apex where the nerve and inferior petrosal sinus run"
+      },
+      {
+        "deficit": "Trigeminal symptoms",
+        "side": "ipsilateral",
+        "mechanism": "Superior petrosal sinus at Meckel's cave"
+      },
+      {
+        "deficit": "Pulsatile tinnitus and hemorrhage risk",
+        "side": "ipsilateral",
+        "mechanism": "Dural fistula draining through the petrosal veins"
+      }
+    ],
+    "examination": [
+      "Lateral rectus function and facial sensation",
+      "Ear examination",
+      "Auscultate the mastoid for a bruit"
+    ],
+    "syndromes": [
+      "syn-cn6-palsy",
+      "syn-cavernous-sinus"
+    ],
+    "pearls": [
+      "Sixth nerve palsy plus facial pain plus ear discharge is the petrous apex",
+      "The inferior petrosal sinus is where endocrinologists go to prove that ACTH is coming from the pituitary"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-superior-petrosal-sinus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dural-venous-sinuses",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "venous"
+  ],
+  "status": "draft",
+  "latin": "Sinus petrosus superior et inferior"
 }

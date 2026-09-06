@@ -1,131 +1,123 @@
 {
- "kind": "syndrome",
- "id": "syn-radial-neuropathy",
- "name": "Radial neuropathy (Saturday night palsy)",
- "eponyms": [
-  "Saturday night palsy",
-  "honeymoon palsy"
- ],
- "category": "entrapment",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "nerve-radial",
-   "plexus-brachial"
+  "kind": "syndrome",
+  "id": "syn-radial-neuropathy",
+  "name": "Radial neuropathy (Saturday night palsy)",
+  "eponyms": [
+    "Saturday night palsy",
+    "honeymoon palsy"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "radial-nerve-l"
-  ]
- },
- "presentation": "A patient wakes after falling asleep drunk with an arm draped over a chair and finds the wrist and fingers hanging limp: the wrist cannot be extended, the fingers cannot be straightened at the knuckles, and the thumb cannot be extended or abducted in the plane of the hand. Grip feels weak because the wrist cannot be stabilized, but with the wrist held up by the examiner the grip is strong. The triceps is spared and there is a small patch of numbness on the back of the hand between the thumb and index finger.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "wrist and finger extensors, brachioradialis, supinator, thumb extensors and abductor",
-   "sign": "Wrist drop and finger drop; weak brachioradialis; triceps spared in spiral groove lesions",
-   "substrate": "nerve-radial"
+  "category": "entrapment",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "nerve-radial",
+      "plexus-brachial"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "dorsum of the first web space",
-   "sign": "Small area of sensory loss on the dorsolateral hand; often minimal",
-   "substrate": "nerve-radial"
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "radial-nerve-l"
+    ]
   },
-  {
-   "modality": "reflex",
-   "side": "ipsilateral",
-   "distribution": "brachioradialis",
-   "sign": "Reduced brachioradialis reflex; triceps reflex normal",
-   "substrate": "nerve-radial"
+  "presentation": "A patient wakes after falling asleep drunk with an arm draped over a chair and finds the wrist and fingers hanging limp: the wrist cannot be extended, the fingers cannot be straightened at the knuckles, and the thumb cannot be extended or abducted in the plane of the hand. Grip feels weak because the wrist cannot be stabilized, but with the wrist held up by the examiner the grip is strong. The triceps is spared and there is a small patch of numbness on the back of the hand between the thumb and index finger.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "wrist and finger extensors, brachioradialis, supinator, thumb extensors and abductor",
+      "sign": "Wrist drop and finger drop; weak brachioradialis; triceps spared in spiral groove lesions",
+      "substrate": "nerve-radial"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "dorsum of the first web space",
+      "sign": "Small area of sensory loss on the dorsolateral hand; often minimal",
+      "substrate": "nerve-radial"
+    },
+    {
+      "modality": "reflex",
+      "side": "ipsilateral",
+      "distribution": "brachioradialis",
+      "sign": "Reduced brachioradialis reflex; triceps reflex normal",
+      "substrate": "nerve-radial"
+    },
+    {
+      "modality": "motor",
+      "side": "n/a",
+      "distribution": "grip and finger abduction",
+      "sign": "Apparent grip and interosseous weakness that corrects when the wrist is passively extended (false ulnar weakness)",
+      "substrate": "nerve-ulnar"
+    }
+  ],
+  "reasoning": "The radial nerve winds around the back of the humerus in the spiral groove, where it lies directly on bone and is compressed by the edge of a chair or by a fracture. The branches to the triceps leave above the groove, so a groove lesion spares elbow extension and the triceps reflex, whereas an axillary lesion (crutch palsy) paralyzes the triceps too and involves the posterior cutaneous nerve of the arm. Below the groove the nerve supplies the brachioradialis, the wrist extensors and, through the posterior interosseous branch, the finger and thumb extensors, so all of these fail together: the wrist drops, the fingers cannot extend at the metacarpophalangeal joints (the interphalangeal joints still extend through the lumbricals and interossei) and the thumb cannot extend. Because the finger flexors and the intrinsic muscles work best with the wrist extended, the patient's grip and finger spreading appear weak until the examiner supports the wrist, a trap that mimics a combined median and ulnar lesion. The superficial radial sensory branch supplies only the dorsum of the radial hand, so sensory loss is small, and the deep branch (posterior interosseous nerve) is purely motor, so an entrapment at the supinator produces finger drop with preserved wrist extension (radial deviation from the intact extensor carpi radialis) and no sensory loss at all. The nerve is peripheral and the deficit ipsilateral.",
+  "imagingFindings": [
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Conduction block or slowing of the radial nerve across the spiral groove with denervation in the extensor muscles but not the triceps; superficial radial sensory response reduced.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Humeral fracture",
+      "modality": "CT",
+      "finding": "Midshaft humeral fracture with the nerve in the fracture line; ultrasound can show nerve continuity.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Posterior interosseous compression",
+      "modality": "MRI",
+      "finding": "Mass, ganglion or fibrous arcade of Frohse at the supinator with denervation edema of the extensor muscles.",
+      "sequence": "STIR"
+    }
+  ],
+  "commonCauses": [
+    "Compression in the spiral groove during deep sleep or intoxication",
+    "Humeral shaft fracture",
+    "Crutch compression in the axilla",
+    "Posterior interosseous entrapment at the supinator (finger drop without wrist drop)",
+    "Lead poisoning, vasculitis (bilateral)"
+  ],
+  "mimics": [
+    {
+      "name": "C7 radiculopathy",
+      "howToDistinguish": "Triceps weak with the extensors, wrist flexors also weak, neck pain, C7 sensory loss"
+    },
+    {
+      "name": "Cortical hand (small motor cortex infarct)",
+      "howToDistinguish": "Weakness mainly of finger extension with brisk reflexes and cortical sensory signs"
+    },
+    {
+      "name": "Lead neuropathy",
+      "howToDistinguish": "Bilateral wrist drop, abdominal pain, anemia"
+    }
+  ],
+  "management": [
+    "Wrist splint in extension to preserve function while awaiting recovery; most compressive palsies recover within 2–4 months",
+    "EMG at 3 weeks if no early improvement to distinguish conduction block from axonal loss",
+    "Surgical exploration for fracture-associated palsies without recovery"
+  ],
+  "citations": [
+    {
+      "ref": "sp-compressive-radial-neuropathy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-radial-nerve",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -55,
+      "y": -25,
+      "z": -120
+    },
+    "label": "radial nerve in the spiral groove (virtual)"
   },
-  {
-   "modality": "motor",
-   "side": "n/a",
-   "distribution": "grip and finger abduction",
-   "sign": "Apparent grip and interosseous weakness that corrects when the wrist is passively extended (false ulnar weakness)",
-   "substrate": "nerve-ulnar"
-  }
- ],
- "reasoning": "The radial nerve winds around the back of the humerus in the spiral groove, where it lies directly on bone and is compressed by the edge of a chair or by a fracture. The branches to the triceps leave above the groove, so a groove lesion spares elbow extension and the triceps reflex, whereas an axillary lesion (crutch palsy) paralyzes the triceps too and involves the posterior cutaneous nerve of the arm. Below the groove the nerve supplies the brachioradialis, the wrist extensors and, through the posterior interosseous branch, the finger and thumb extensors, so all of these fail together: the wrist drops, the fingers cannot extend at the metacarpophalangeal joints (the interphalangeal joints still extend through the lumbricals and interossei) and the thumb cannot extend. Because the finger flexors and the intrinsic muscles work best with the wrist extended, the patient's grip and finger spreading appear weak until the examiner supports the wrist, a trap that mimics a combined median and ulnar lesion. The superficial radial sensory branch supplies only the dorsum of the radial hand, so sensory loss is small, and the deep branch (posterior interosseous nerve) is purely motor, so an entrapment at the supinator produces finger drop with preserved wrist extension (radial deviation from the intact extensor carpi radialis) and no sensory loss at all. The nerve is peripheral and the deficit ipsilateral.",
- "imagingFindings": [
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Conduction block or slowing of the radial nerve across the spiral groove with denervation in the extensor muscles but not the triceps; superficial radial sensory response reduced.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Humeral fracture",
-   "modality": "CT",
-   "finding": "Midshaft humeral fracture with the nerve in the fracture line; ultrasound can show nerve continuity.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Posterior interosseous compression",
-   "modality": "MRI",
-   "finding": "Mass, ganglion or fibrous arcade of Frohse at the supinator with denervation edema of the extensor muscles.",
-   "sequence": "STIR"
-  }
- ],
- "commonCauses": [
-  "Compression in the spiral groove during deep sleep or intoxication",
-  "Humeral shaft fracture",
-  "Crutch compression in the axilla",
-  "Posterior interosseous entrapment at the supinator (finger drop without wrist drop)",
-  "Lead poisoning, vasculitis (bilateral)"
- ],
- "mimics": [
-  {
-   "name": "C7 radiculopathy",
-   "howToDistinguish": "Triceps weak with the extensors, wrist flexors also weak, neck pain, C7 sensory loss"
-  },
-  {
-   "name": "Cortical hand (small motor cortex infarct)",
-   "howToDistinguish": "Weakness mainly of finger extension with brisk reflexes and cortical sensory signs"
-  },
-  {
-   "name": "Lead neuropathy",
-   "howToDistinguish": "Bilateral wrist drop, abdominal pain, anemia"
-  }
- ],
- "management": [
-  "Wrist splint in extension to preserve function while awaiting recovery; most compressive palsies recover within 2–4 months",
-  "EMG at 3 weeks if no early improvement to distinguish conduction block from axonal loss",
-  "Surgical exploration for fracture-associated palsies without recovery"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    120,
-    120
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    150,
-    151
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -55,
-   "y": -25,
-   "z": -120
-  },
-  "label": "radial nerve in the spiral groove (virtual)"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

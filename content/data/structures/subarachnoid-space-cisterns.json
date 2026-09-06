@@ -1,185 +1,157 @@
 {
- "kind": "structure",
- "id": "subarachnoid-space-cisterns",
- "name": "Subarachnoid space and basal cisterns",
- "synonyms": [],
- "system": "ventricles-csf",
- "meshIds": [
-  "brain-envelope"
- ],
- "summary": "The CSF-filled space between the arachnoid and the pia covers the whole brain and spinal cord and widens into cisterns wherever the arachnoid bridges a hollow: the cisterna magna behind the medulla, the pontine and interpeduncular cisterns in front of the brainstem, the suprasellar (chiasmatic) cistern around the optic chiasm and circle of Willis, the ambient and quadrigeminal cisterns around the midbrain, and the Sylvian cisterns. Cranial nerves and the major arteries run through these cisterns, blood collects in them after aneurysm rupture, and their effacement is the imaging sign of herniation.",
- "anatomy": {
-  "location": "Between arachnoid and pia over the entire CNS; the basal cisterns lie between the base of the brain and the skull base from the cisterna magna to the interhemispheric fissure; the space ends at S2 in the spinal canal, where lumbar puncture is performed below the conus.",
-  "subdivisions": [
-   {
-    "name": "Cisterna magna (cerebellomedullary)",
-    "note": "between the cerebellum and medulla, receiving CSF from the foramen of Magendie"
-   },
-   {
-    "name": "Pontine and interpeduncular cisterns",
-    "note": "basilar artery, CN VI, III, and the basilar tip"
-   },
-   {
-    "name": "Suprasellar (chiasmatic) cistern",
-    "note": "optic chiasm, infundibulum, circle of Willis"
-   },
-   {
-    "name": "Ambient and quadrigeminal cisterns",
-    "note": "around the midbrain: PCA, SCA, CN IV, vein of Galen"
-   },
-   {
-    "name": "Sylvian cisterns",
-    "note": "MCA branches"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Cushions the brain, carries CSF from the fourth ventricle to the arachnoid granulations, and provides the route for the cranial nerves and arteries at the base of the brain.",
- "bloodSupply": {
-  "arteries": [
-   "circle-of-willis",
-   "artery-basilar"
+  "kind": "structure",
+  "id": "subarachnoid-space-cisterns",
+  "name": "Subarachnoid space and basal cisterns",
+  "synonyms": [],
+  "system": "ventricles-csf",
+  "meshIds": [
+    "brain-envelope"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": 0,
-     "z": -18
+  "summary": "The CSF-filled space between the arachnoid and the pia covers the whole brain and spinal cord and widens into cisterns wherever the arachnoid bridges a hollow: the cisterna magna behind the medulla, the pontine and interpeduncular cisterns in front of the brainstem, the suprasellar (chiasmatic) cistern around the optic chiasm and circle of Willis, the ambient and quadrigeminal cisterns around the midbrain, and the Sylvian cisterns. Cranial nerves and the major arteries run through these cisterns, blood collects in them after aneurysm rupture, and their effacement is the imaging sign of herniation.",
+  "anatomy": {
+    "location": "Between arachnoid and pia over the entire CNS; the basal cisterns lie between the base of the brain and the skull base from the cisterna magna to the interhemispheric fissure; the space ends at S2 in the spinal canal, where lumbar puncture is performed below the conus.",
+    "subdivisions": [
+      {
+        "name": "Cisterna magna (cerebellomedullary)",
+        "note": "between the cerebellum and medulla, receiving CSF from the foramen of Magendie"
+      },
+      {
+        "name": "Pontine and interpeduncular cisterns",
+        "note": "basilar artery, CN VI, III, and the basilar tip"
+      },
+      {
+        "name": "Suprasellar (chiasmatic) cistern",
+        "note": "optic chiasm, infundibulum, circle of Willis"
+      },
+      {
+        "name": "Ambient and quadrigeminal cisterns",
+        "note": "around the midbrain: PCA, SCA, CN IV, vein of Galen"
+      },
+      {
+        "name": "Sylvian cisterns",
+        "note": "MCA branches"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Cushions the brain, carries CSF from the fourth ventricle to the arachnoid granulations, and provides the route for the cranial nerves and arteries at the base of the brain.",
+  "bloodSupply": {
+    "arteries": [
+      "circle-of-willis",
+      "artery-basilar"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": 0,
+          "z": -18
+        },
+        "label": "suprasellar cistern with the circle of Willis"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -25
+        },
+        "label": "prepontine and ambient cisterns around the brainstem"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -50,
+          "z": -50
+        },
+        "label": "cisterna magna behind the medulla"
+      }
+    ],
+    "normalAppearance": "CSF spaces: dark on T1, bright on T2, dark on FLAIR. The basal cisterns should be open and symmetric; effacement of the suprasellar or ambient cisterns signals uncal or central herniation. Blood in the cisterns is bright on non-contrast CT and bright on FLAIR.",
+    "pathology": [
+      {
+        "pathology": "Subarachnoid hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense blood in the basal cisterns and Sylvian fissures; the distribution suggests the aneurysm site; FLAIR shows sulcal hyperintensity when CT is negative later.",
+        "sequence": "CT non-contrast",
+        "timing": "CT sensitivity is near 100% in the first 6 h and falls over days"
+      },
+      {
+        "pathology": "Effaced cisterns from herniation",
+        "modality": "CT",
+        "finding": "Loss of the suprasellar and perimesencephalic cisterns with a mass or diffuse swelling.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Basal meningitis (tuberculosis, fungal, sarcoid)",
+        "modality": "MRI",
+        "finding": "Thick enhancement of the basal cisterns with cranial nerve palsies and hydrocephalus.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Non-contrast CT for blood and herniation; FLAIR and T1+Gd for meningeal disease"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Thunderclap headache with neck stiffness",
+        "side": "n/a",
+        "mechanism": "Blood in the subarachnoid space"
+      },
+      {
+        "deficit": "Multiple cranial nerve palsies",
+        "side": "bilateral",
+        "mechanism": "Basal meningitis or cisternal tumor spread coating the nerves"
+      },
+      {
+        "deficit": "Coma with pupillary changes",
+        "side": "n/a",
+        "mechanism": "Herniation compressing the cisterns and the brainstem"
+      }
+    ],
+    "examination": [
+      "Neck stiffness, Kernig and Brudzinski signs",
+      "Cranial nerves II–XII systematically",
+      "Fundoscopy for subhyaloid hemorrhage and papilledema"
+    ],
+    "syndromes": [
+      "syn-subarachnoid-hemorrhage",
+      "syn-uncal-herniation",
+      "syn-central-transtentorial-herniation"
+    ],
+    "pearls": [
+      "Blood in the interhemispheric fissure suggests an AComm aneurysm; in the Sylvian fissure an MCA aneurysm; in front of the pons a basilar or vertebral source",
+      "Lumbar puncture samples the same space: xanthochromia confirms subarachnoid hemorrhage when CT is negative after 12 hours"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-subarachnoid-space",
+      "section": "Structure and Function"
     },
-    "label": "suprasellar cistern with the circle of Willis"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -25
+    {
+      "ref": "sp-ventricular-system",
+      "section": "Structure and Function"
     },
-    "label": "prepontine and ambient cisterns around the brainstem"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -50,
-     "z": -50
-    },
-    "label": "cisterna magna behind the medulla"
-   }
+    {
+      "ref": "sp-cerebrospinal-fluid",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "CSF spaces: dark on T1, bright on T2, dark on FLAIR. The basal cisterns should be open and symmetric; effacement of the suprasellar or ambient cisterns signals uncal or central herniation. Blood in the cisterns is bright on non-contrast CT and bright on FLAIR.",
-  "pathology": [
-   {
-    "pathology": "Subarachnoid hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense blood in the basal cisterns and Sylvian fissures; the distribution suggests the aneurysm site; FLAIR shows sulcal hyperintensity when CT is negative later.",
-    "sequence": "CT non-contrast",
-    "timing": "CT sensitivity is near 100% in the first 6 h and falls over days"
-   },
-   {
-    "pathology": "Effaced cisterns from herniation",
-    "modality": "CT",
-    "finding": "Loss of the suprasellar and perimesencephalic cisterns with a mass or diffuse swelling.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Basal meningitis (tuberculosis, fungal, sarcoid)",
-    "modality": "MRI",
-    "finding": "Thick enhancement of the basal cisterns with cranial nerve palsies and hydrocephalus.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "csf"
   ],
-  "sequenceOfChoice": "Non-contrast CT for blood and herniation; FLAIR and T1+Gd for meningeal disease"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Thunderclap headache with neck stiffness",
-    "side": "n/a",
-    "mechanism": "Blood in the subarachnoid space"
-   },
-   {
-    "deficit": "Multiple cranial nerve palsies",
-    "side": "bilateral",
-    "mechanism": "Basal meningitis or cisternal tumor spread coating the nerves"
-   },
-   {
-    "deficit": "Coma with pupillary changes",
-    "side": "n/a",
-    "mechanism": "Herniation compressing the cisterns and the brainstem"
-   }
-  ],
-  "examination": [
-   "Neck stiffness, Kernig and Brudzinski signs",
-   "Cranial nerves II–XII systematically",
-   "Fundoscopy for subhyaloid hemorrhage and papilledema"
-  ],
-  "syndromes": [
-   "syn-subarachnoid-hemorrhage",
-   "syn-uncal-herniation",
-   "syn-central-transtentorial-herniation"
-  ],
-  "pearls": [
-   "Blood in the interhemispheric fissure suggests an AComm aneurysm; in the Sylvian fissure an MCA aneurysm; in front of the pons a basilar or vertebral source",
-   "Lumbar puncture samples the same space: xanthochromia confirms subarachnoid hemorrhage when CT is negative after 12 hours"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    422,
-    425
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    447,
-    448
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    26,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    196,
-    198
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 2,
-   "pages": [
-    21,
-    23
-   ]
-  }
- ],
- "tags": [
-  "csf"
- ],
- "status": "draft",
- "latin": "Spatium subarachnoideum; cisternae subarachnoideae",
- "subsystem": "csf"
+  "status": "draft",
+  "latin": "Spatium subarachnoideum; cisternae subarachnoideae",
+  "subsystem": "csf"
 }

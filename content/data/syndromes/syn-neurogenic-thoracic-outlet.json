@@ -1,119 +1,119 @@
 {
- "kind": "syndrome",
- "id": "syn-neurogenic-thoracic-outlet",
- "name": "Neurogenic thoracic outlet syndrome",
- "eponyms": [
-  "Gilliatt–Sumner hand"
- ],
- "category": "entrapment",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "plexus-brachial",
-   "roots-c5-t1",
-   "nerve-ulnar",
-   "nerve-median"
+  "kind": "syndrome",
+  "id": "syn-neurogenic-thoracic-outlet",
+  "name": "Neurogenic thoracic outlet syndrome",
+  "eponyms": [
+    "Gilliatt–Sumner hand"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "brachial-plexus-l"
-  ]
- },
- "presentation": "A young adult with a long neck notices slowly progressive wasting of the thumb side of the hand, aching in the inner forearm and tingling of the little and ring fingers, worse with the arm raised. Examination shows the Gilliatt–Sumner hand: marked wasting of the abductor pollicis brevis with milder involvement of the hypothenar and interosseous muscles, and sensory loss along the medial forearm. A neck X-ray shows a cervical rib or an elongated C7 transverse process.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "thenar (abductor pollicis brevis) more than hypothenar and interossei",
-   "sign": "Wasting and weakness of the intrinsic hand muscles, thenar worst",
-   "substrate": "plexus-brachial"
+  "category": "entrapment",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "plexus-brachial",
+      "roots-c5-t1",
+      "nerve-ulnar",
+      "nerve-median"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "medial forearm and ulnar hand (T1 > C8)",
-   "sign": "Sensory loss and paresthesias along the medial forearm and little finger",
-   "substrate": "roots-c5-t1"
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "brachial-plexus-l"
+    ]
   },
-  {
-   "modality": "pain",
-   "side": "ipsilateral",
-   "distribution": "medial arm and forearm",
-   "sign": "Aching pain worse with arm elevation and carrying",
-   "substrate": "plexus-brachial"
-  }
- ],
- "reasoning": "The lower trunk of the brachial plexus crosses the first rib behind the scalenus anterior, and in a minority of people a cervical rib or a fibrous band from an elongated C7 transverse process to the first rib lifts and angulates the trunk, stretching the T1 fibers most because they lie lowest and are draped most tightly over the band. The T1 root contributes most of the fibers for the abductor pollicis brevis, so the thenar wasting exceeds that of the hypothenar and interossei, which have a larger C8 contribution, a distribution that no single nerve lesion produces: it is more thenar than an ulnar neuropathy and involves the interossei and the medial forearm unlike a carpal tunnel syndrome. Sensory loss follows the T1 dermatome along the medial forearm and the C8 dermatome on the ulnar hand, and the medial antebrachial cutaneous nerve conduction is reduced, which is the most sensitive electrodiagnostic finding. All signs are ipsilateral to the band. True neurogenic thoracic outlet syndrome is rare; the far commoner 'disputed' form consists of arm pain and paresthesias without objective deficit, and vascular forms compress the subclavian vessels rather than the plexus, so an objective neurological deficit with the characteriztic hand is the requirement for the diagnosis and for surgery.",
- "imagingFindings": [
-  {
-   "pathology": "Cervical rib or band",
-   "modality": "CT",
-   "finding": "Cervical rib or elongated C7 transverse process; a fibrous band is not seen but inferred. MR neurography may show the angulated lower trunk.",
-   "sequence": "CT non-contrast"
+  "presentation": "A young adult with a long neck notices slowly progressive wasting of the thumb side of the hand, aching in the inner forearm and tingling of the little and ring fingers, worse with the arm raised. Examination shows the Gilliatt–Sumner hand: marked wasting of the abductor pollicis brevis with milder involvement of the hypothenar and interosseous muscles, and sensory loss along the medial forearm. A neck X-ray shows a cervical rib or an elongated C7 transverse process.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "thenar (abductor pollicis brevis) more than hypothenar and interossei",
+      "sign": "Wasting and weakness of the intrinsic hand muscles, thenar worst",
+      "substrate": "plexus-brachial"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "medial forearm and ulnar hand (T1 > C8)",
+      "sign": "Sensory loss and paresthesias along the medial forearm and little finger",
+      "substrate": "roots-c5-t1"
+    },
+    {
+      "modality": "pain",
+      "side": "ipsilateral",
+      "distribution": "medial arm and forearm",
+      "sign": "Aching pain worse with arm elevation and carrying",
+      "substrate": "plexus-brachial"
+    }
+  ],
+  "reasoning": "The lower trunk of the brachial plexus crosses the first rib behind the scalenus anterior, and in a minority of people a cervical rib or a fibrous band from an elongated C7 transverse process to the first rib lifts and angulates the trunk, stretching the T1 fibers most because they lie lowest and are draped most tightly over the band. The T1 root contributes most of the fibers for the abductor pollicis brevis, so the thenar wasting exceeds that of the hypothenar and interossei, which have a larger C8 contribution, a distribution that no single nerve lesion produces: it is more thenar than an ulnar neuropathy and involves the interossei and the medial forearm unlike a carpal tunnel syndrome. Sensory loss follows the T1 dermatome along the medial forearm and the C8 dermatome on the ulnar hand, and the medial antebrachial cutaneous nerve conduction is reduced, which is the most sensitive electrodiagnostic finding. All signs are ipsilateral to the band. True neurogenic thoracic outlet syndrome is rare; the far commoner 'disputed' form consists of arm pain and paresthesias without objective deficit, and vascular forms compress the subclavian vessels rather than the plexus, so an objective neurological deficit with the characteriztic hand is the requirement for the diagnosis and for surgery.",
+  "imagingFindings": [
+    {
+      "pathology": "Cervical rib or band",
+      "modality": "CT",
+      "finding": "Cervical rib or elongated C7 transverse process; a fibrous band is not seen but inferred. MR neurography may show the angulated lower trunk.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Reduced medial antebrachial cutaneous sensory response and reduced median motor amplitude with preserved median sensory response; denervation in the abductor pollicis brevis and first dorsal interosseous.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Subclavian compression (vascular forms)",
+      "modality": "CTA",
+      "finding": "Subclavian artery stenosis or aneurysm with arm elevation, or venous thrombosis (Paget–Schroetter)."
+    }
+  ],
+  "commonCauses": [
+    "Cervical rib with a fibrous band",
+    "Elongated C7 transverse process with a band",
+    "Scalene muscle anomalies",
+    "Callus from a clavicle fracture"
+  ],
+  "mimics": [
+    {
+      "name": "Ulnar neuropathy at the elbow",
+      "howToDistinguish": "Thenar spared, forearm sensation spared, slowing across the elbow"
+    },
+    {
+      "name": "Carpal tunnel syndrome",
+      "howToDistinguish": "Sensory loss on the palmar thumb and index, no interosseous or forearm involvement"
+    },
+    {
+      "name": "C8–T1 radiculopathy",
+      "howToDistinguish": "Neck pain, paraspinal denervation"
+    },
+    {
+      "name": "Motor neuron disease",
+      "howToDistinguish": "No sensory loss, fasciculations, spreads beyond one limb"
+    }
+  ],
+  "management": [
+    "Confirm electrodiagnostically before surgery; X-ray and CT of the thoracic outlet",
+    "Resection of the cervical rib and band, or first rib, for objective neurogenic deficit",
+    "Physiotherapy and posture correction for disputed forms"
+  ],
+  "citations": [
+    {
+      "ref": "sp-thoracic-outlet-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-brachial-plexus-2",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -55,
+      "y": -25,
+      "z": -60
+    },
+    "label": "lower trunk over the first rib"
   },
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Reduced medial antebrachial cutaneous sensory response and reduced median motor amplitude with preserved median sensory response; denervation in the abductor pollicis brevis and first dorsal interosseous.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Subclavian compression (vascular forms)",
-   "modality": "CTA",
-   "finding": "Subclavian artery stenosis or aneurysm with arm elevation, or venous thrombosis (Paget–Schroetter)."
-  }
- ],
- "commonCauses": [
-  "Cervical rib with a fibrous band",
-  "Elongated C7 transverse process with a band",
-  "Scalene muscle anomalies",
-  "Callus from a clavicle fracture"
- ],
- "mimics": [
-  {
-   "name": "Ulnar neuropathy at the elbow",
-   "howToDistinguish": "Thenar spared, forearm sensation spared, slowing across the elbow"
-  },
-  {
-   "name": "Carpal tunnel syndrome",
-   "howToDistinguish": "Sensory loss on the palmar thumb and index, no interosseous or forearm involvement"
-  },
-  {
-   "name": "C8–T1 radiculopathy",
-   "howToDistinguish": "Neck pain, paraspinal denervation"
-  },
-  {
-   "name": "Motor neuron disease",
-   "howToDistinguish": "No sensory loss, fasciculations, spreads beyond one limb"
-  }
- ],
- "management": [
-  "Confirm electrodiagnostically before surgery; X-ray and CT of the thoracic outlet",
-  "Resection of the cervical rib and band, or first rib, for objective neurogenic deficit",
-  "Physiotherapy and posture correction for disputed forms"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    147,
-    149
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -55,
-   "y": -25,
-   "z": -60
-  },
-  "label": "lower trunk over the first rib"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

@@ -1,149 +1,130 @@
 {
- "kind": "structure",
- "id": "sinus-straight",
- "name": "Straight sinus and inferior sagittal sinus",
- "synonyms": [],
- "system": "venous",
- "meshIds": [
-  "dura-mater-cranial"
- ],
- "summary": "The inferior sagittal sinus runs in the free edge of the falx above the corpus callosum and joins the great cerebral vein of Galen at the anterior edge of the tentorium to form the straight sinus, which runs backward along the junction of the falx and tentorium to the confluence. The straight sinus therefore drains the deep venous system (internal cerebral and basal veins) from the thalami, basal ganglia and deep white matter; its thrombosis produces bilateral thalamic edema, coma and a picture easily confused with an artery of Percheron infarct or a tumor.",
- "anatomy": {
-  "location": "Inferior sagittal sinus in the lower free margin of the falx; straight sinus from the falcotentorial junction behind the splenium to the internal occipital protuberance, sloping downward and backward.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "vein-great-cerebral"
-   },
-   {
-    "from": "inferior sagittal sinus"
-   }
+  "kind": "structure",
+  "id": "sinus-straight",
+  "name": "Straight sinus and inferior sagittal sinus",
+  "synonyms": [],
+  "system": "venous",
+  "meshIds": [
+    "sinus-straight",
+    "sinus-straight-venat"
   ],
-  "efferents": [
-   {
-    "to": "sinus-transverse-sigmoid",
-    "via": "confluence of sinuses"
-   }
-  ],
-  "pathways": []
- },
- "function": "Drainage of the deep cerebral veins (via the vein of Galen) and the medial hemisphere (inferior sagittal sinus) to the confluence of sinuses.",
- "bloodSupply": {
-  "arteries": [
-   "(venous structure) drains territories of the cerebral arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -50,
-     "z": 20
+  "summary": "The inferior sagittal sinus runs in the free edge of the falx above the corpus callosum and joins the great cerebral vein of Galen at the anterior edge of the tentorium to form the straight sinus, which runs backward along the junction of the falx and tentorium to the confluence. The straight sinus therefore drains the deep venous system (internal cerebral and basal veins) from the thalami, basal ganglia and deep white matter; its thrombosis produces bilateral thalamic edema, coma and a picture easily confused with an artery of Percheron infarct or a tumor.",
+  "anatomy": {
+    "location": "Inferior sagittal sinus in the lower free margin of the falx; straight sinus from the falcotentorial junction behind the splenium to the internal occipital protuberance, sloping downward and backward.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "vein-great-cerebral"
+      },
+      {
+        "from": "inferior sagittal sinus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "sinus-transverse-sigmoid",
+        "via": "confluence of sinuses"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Drainage of the deep cerebral veins (via the vein of Galen) and the medial hemisphere (inferior sagittal sinus) to the confluence of sinuses.",
+  "bloodSupply": {
+    "arteries": [
+      "(venous structure) drains territories of the cerebral arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -50,
+          "z": 20
+        },
+        "label": "straight sinus along the falcotentorial junction behind the splenium"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -50,
+          "z": 20
+        },
+        "label": "straight sinus running back to the confluence"
+      }
+    ],
+    "normalAppearance": "A straight dark channel from the splenium to the occipital protuberance on sagittal T1/T2 and venography; thrombosis shows as absent flow with T1-bright clot and bilateral thalamic swelling.",
+    "pathology": [
+      {
+        "pathology": "Deep venous thrombosis (straight sinus, vein of Galen, internal cerebral veins)",
+        "modality": "MRV",
+        "finding": "Absent flow in the deep venous system with bilateral thalamic and basal ganglia edema and hemorrhage.",
+        "sequence": "n/a",
+        "pitfalls": "Bilateral thalamic swelling without diffusion restriction: check the venogram before diagnosing tumor or Percheron infarct"
+      },
+      {
+        "pathology": "Falcotentorial meningioma",
+        "modality": "MRI",
+        "finding": "Enhancing mass at the falcotentorial junction compressing the straight sinus.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "MR venography with T1 and SWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Coma or fluctuating consciousness with bilateral thalamic swelling",
+        "side": "bilateral",
+        "mechanism": "Deep venous congestion"
+      },
+      {
+        "deficit": "Memory and behavioral change after recovery",
+        "side": "bilateral",
+        "mechanism": "Thalamic injury"
+      },
+      {
+        "deficit": "Raised intracranial pressure",
+        "side": "n/a",
+        "mechanism": "Impaired deep venous drainage"
+      }
+    ],
+    "examination": [
+      "Level of consciousness and vertical gaze",
+      "Memory and orientation",
+      "Fundoscopy"
+    ],
+    "syndromes": [
+      "syn-cerebral-venous-sinus-thrombosis"
+    ],
+    "pearls": [
+      "Bilateral thalamic edema in a young person: deep venous thrombosis first, then everything else",
+      "The straight sinus is the exit for the whole deep venous system: its occlusion is more dangerous than a lateral sinus occlusion"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-falx-cerebri",
+      "section": "Structure and Function"
     },
-    "label": "straight sinus along the falcotentorial junction behind the splenium"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -50,
-     "z": 20
+    {
+      "ref": "sp-tentorium-cerebelli",
+      "section": "Structure and Function"
     },
-    "label": "straight sinus running back to the confluence"
-   }
+    {
+      "ref": "sp-superior-sagittal-sinus",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A straight dark channel from the splenium to the occipital protuberance on sagittal T1/T2 and venography; thrombosis shows as absent flow with T1-bright clot and bilateral thalamic swelling.",
-  "pathology": [
-   {
-    "pathology": "Deep venous thrombosis (straight sinus, vein of Galen, internal cerebral veins)",
-    "modality": "MRV",
-    "finding": "Absent flow in the deep venous system with bilateral thalamic and basal ganglia edema and hemorrhage.",
-    "sequence": "n/a",
-    "pitfalls": "Bilateral thalamic swelling without diffusion restriction: check the venogram before diagnosing tumor or Percheron infarct"
-   },
-   {
-    "pathology": "Falcotentorial meningioma",
-    "modality": "MRI",
-    "finding": "Enhancing mass at the falcotentorial junction compressing the straight sinus.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "venous"
   ],
-  "sequenceOfChoice": "MR venography with T1 and SWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Coma or fluctuating consciousness with bilateral thalamic swelling",
-    "side": "bilateral",
-    "mechanism": "Deep venous congestion"
-   },
-   {
-    "deficit": "Memory and behavioral change after recovery",
-    "side": "bilateral",
-    "mechanism": "Thalamic injury"
-   },
-   {
-    "deficit": "Raised intracranial pressure",
-    "side": "n/a",
-    "mechanism": "Impaired deep venous drainage"
-   }
-  ],
-  "examination": [
-   "Level of consciousness and vertical gaze",
-   "Memory and orientation",
-   "Fundoscopy"
-  ],
-  "syndromes": [
-   "syn-cerebral-venous-sinus-thrombosis"
-  ],
-  "pearls": [
-   "Bilateral thalamic edema in a young person: deep venous thrombosis first, then everything else",
-   "The straight sinus is the exit for the whole deep venous system: its occlusion is more dangerous than a lateral sinus occlusion"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    419,
-    423
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    469,
-    469
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    200,
-    201
-   ]
-  }
- ],
- "tags": [
-  "venous"
- ],
- "status": "draft",
- "latin": "Sinus rectus; sinus sagittalis inferior"
+  "status": "draft",
+  "latin": "Sinus rectus; sinus sagittalis inferior"
 }

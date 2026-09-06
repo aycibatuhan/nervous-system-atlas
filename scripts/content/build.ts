@@ -4,7 +4,7 @@
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { marked } from 'marked';
-import { Entry, KIND_DIRS } from '../../content/schema/index.ts';
+import { Entry, KIND_DIRS, BibEntry } from '../../content/schema/index.ts';
 import { checkPlagiarism } from './plagiarism.ts';
 
 const ROOT = resolve(import.meta.dirname, '../..');
@@ -13,17 +13,29 @@ const OUT = join(ROOT, 'public/data');
 const args = new Set(process.argv.slice(2));
 const strict = args.has('--strict');
 
-const sources = JSON.parse(readFileSync(join(ROOT, 'content/sources.json'), 'utf8')) as Record<string, { cite: string; title: string; chapters: number; lastPage: number }>;
+interface Problem { file: string; msg: string; level: 'error' | 'warn' }
+const problems: Problem[] = [];
+const err = (file: string, msg: string) => problems.push({ file, msg, level: 'error' });
+const warn = (file: string, msg: string) => problems.push({ file, msg, level: 'warn' });
+
+// open-access bibliography: one file per source in content/bibliography/
+const BIB_DIR = join(ROOT, 'content/bibliography');
+const bibliography: Record<string, BibEntry> = {};
+if (existsSync(BIB_DIR)) for (const f of readdirSync(BIB_DIR).filter((x) => x.endsWith('.json')).sort()) {
+  const file = `content/bibliography/${f}`;
+  try {
+    const parsed = BibEntry.safeParse(JSON.parse(readFileSync(join(BIB_DIR, f), 'utf8')));
+    if (!parsed.success) { for (const i of parsed.error.issues) problems.push({ file, msg: `${i.path.join('.')}: ${i.message}`, level: 'error' }); continue; }
+    if (parsed.data.id !== f.replace(/\.json$/, '')) problems.push({ file, msg: `id ${parsed.data.id} != file name`, level: 'error' });
+    bibliography[parsed.data.id] = parsed.data;
+  } catch (e) { problems.push({ file, msg: `invalid JSON: ${(e as Error).message}`, level: 'error' }); }
+}
 const manifestPath = join(OUT, 'manifest.json');
 const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) as { meshes: { id: string; structureId: string; centroid: number[] }[] } : { meshes: [] };
 const meshIds = new Set(manifest.meshes.map((m) => m.id));
 const meshCentroid = new Map(manifest.meshes.map((m) => [m.id, m.centroid] as const));
 const meshStructure = new Map(manifest.meshes.map((m) => [m.id, m.structureId] as const));
 
-interface Problem { file: string; msg: string; level: 'error' | 'warn' }
-const problems: Problem[] = [];
-const err = (file: string, msg: string) => problems.push({ file, msg, level: 'error' });
-const warn = (file: string, msg: string) => problems.push({ file, msg, level: 'warn' });
 
 // ---- load
 const entries: { file: string; e: Entry }[] = [];
@@ -83,11 +95,7 @@ for (const { file, e } of entries) {
   const total = proseOf(e).reduce((n, s) => n + words(s), 0);
   wc[e.id] = total;
   if (total < (minWords[e.kind] ?? 0)) err(file, `only ${total} words (min ${minWords[e.kind]})`);
-  for (const c of e.citations ?? []) {
-    const src = sources[c.book]; if (!src) { err(file, `unknown book ${c.book}`); continue; }
-    if (c.chapter > src.chapters) err(file, `chapter ${c.chapter} > ${src.chapters} for ${c.book}`);
-    if (c.pages[0] > c.pages[1] || c.pages[1] > src.lastPage) err(file, `bad page range ${c.pages.join('-')} for ${c.book}`);
-  }
+  for (const c of e.citations ?? []) if (!bibliography[c.ref]) err(file, `unknown bibliography ref '${c.ref}'`);
   for (const id of refIds(e)) if (!isKnown(id)) (strict ? err : warn)(file, `unresolved reference '${id}'`);
   if (e.kind === 'structure' || e.kind === 'cranial-nerve' || e.kind === 'topic') for (const m of e.meshIds) if (meshIds.size && !meshIds.has(m)) err(file, `meshId '${m}' not in manifest`);
   if (e.kind === 'syndrome') {
@@ -105,7 +113,7 @@ for (const { file, e } of entries) {
 const plag = checkPlagiarism(entries.map(({ file, e }) => ({ file, texts: proseOf(e) })), join(ROOT, 'reference'));
 const hitsByFile = new Map<string, typeof plag.hits>();
 for (const p of plag.hits) hitsByFile.set(p.file, [...(hitsByFile.get(p.file) ?? []), p]);
-for (const [file, hits] of hitsByFile) for (const p of hits) (hits.length >= 2 ? err : warn)(file, `11-word overlap with ${p.book} p.${p.page}: "${p.shingle}"`);
+for (const [file, hits] of hitsByFile) for (const p of hits) (hits.length >= 2 ? err : warn)(file, `11-word overlap with ${p.corpus} p.${p.page}: "${p.shingle}"`);
 
 // ---- coverage
 const covPath = join(ROOT, 'content/coverage.json');
@@ -146,7 +154,7 @@ const htmlFields: Record<string, string[]> = {
   topic: ['summary', 'imaging.normalAppearance'],
 };
 const get = (o: Record<string, unknown>, path: string): unknown => path.split('.').reduce<unknown>((v, k) => (v && typeof v === 'object' ? (v as Record<string, unknown>)[k] : undefined), o);
-const bundle = { generated: new Date().toISOString(), sources, structures: {} as Record<string, unknown>, pathways: {} as Record<string, unknown>, syndromes: {} as Record<string, unknown>, glossary: {} as Record<string, unknown>, quiz: {} as Record<string, unknown>, topics: {} as Record<string, unknown>, meshToStructure: {} as Record<string, string>, wordCounts: wc };
+const bundle = { generated: new Date().toISOString(), bibliography, structures: {} as Record<string, unknown>, pathways: {} as Record<string, unknown>, syndromes: {} as Record<string, unknown>, glossary: {} as Record<string, unknown>, quiz: {} as Record<string, unknown>, topics: {} as Record<string, unknown>, meshToStructure: {} as Record<string, string>, wordCounts: wc };
 const searchDocs: { id: string; kind: string; name: string; aliases: string[]; summary: string }[] = [];
 for (const { e } of entries) {
   const html: Record<string, string> = {};

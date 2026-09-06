@@ -1,188 +1,159 @@
 {
- "kind": "structure",
- "id": "cortex-temporal-fusiform-posterior",
- "name": "Temporal fusiform cortex, posterior division",
- "synonyms": [
-  "fusiform face area (right)",
-  "visual word form area (left)",
-  "middle fusiform gyrus"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cortex-temporal-fusiform-posterior-l",
-  "cortex-temporal-fusiform-posterior-r"
- ],
- "summary": "The posterior temporal fusiform cortex is the middle segment of the fusiform gyrus on the inferior temporal surface, beneath the body of the hippocampus and the atrium, between the collateral sulcus and the occipitotemporal sulcus. It contains the fusiform face area on the right and the visual word form area on the left, the two best-known category-selective regions of the ventral visual stream, and it is supplied by temporal branches of the posterior cerebral artery. Right-sided lesions cause prosopagnosia, left-sided lesions cause pure alexia when the splenial input is also cut, and bilateral disease produces the visual agnosias of posterior cortical atrophy.",
- "anatomy": {
-  "location": "Middle third of the fusiform gyrus, medial to the inferior temporal gyrus and lateral to the parahippocampal gyrus, under the body and tail of the hippocampus at the level of the atrium, in front of the occipital fusiform gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Occipital fusiform and lateral occipital cortex (V4, LOC)",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Contralateral fusiform cortex",
-    "via": "splenium of the corpus callosum"
-   },
-   {
-    "from": "Parietal and frontal attention areas",
-    "via": "top-down modulation via the inferior fronto-occipital fasciculus"
-   }
+  "kind": "structure",
+  "id": "cortex-temporal-fusiform-posterior",
+  "name": "Temporal fusiform cortex, posterior division",
+  "synonyms": [
+    "fusiform face area (right)",
+    "visual word form area (left)",
+    "middle fusiform gyrus"
   ],
-  "efferents": [
-   {
-    "to": "Anterior fusiform and perirhinal cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "to": "Amygdala",
-    "via": "temporo-amygdalar fibers"
-   },
-   {
-    "to": "Angular gyrus and posterior temporal language cortex (left)",
-    "via": "short association fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cortex-temporal-fusiform-posterior-l",
+    "cortex-temporal-fusiform-posterior-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "The right posterior fusiform cortex responds preferentially to faces, extracting the configuration of features that identifies an individual, while the left posterior fusiform cortex learns to recognize letter strings and familiar words as visual wholes, allowing fast reading; neighboring patches prefer bodies, places and tools. Both sides receive the occipital form areas and project forward to the anterior fusiform and perirhinal cortex and to the amygdala, and both are modulated by attention from the parietal and frontal cortex. Seizures arising here produce visual auras of faces or letters, and functional imaging of these areas is used to map eloquent cortex before temporo-occipital surgery.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca"
+  "summary": "The posterior temporal fusiform cortex is the middle segment of the fusiform gyrus on the inferior temporal surface, beneath the body of the hippocampus and the atrium, between the collateral sulcus and the occipitotemporal sulcus. It contains the fusiform face area on the right and the visual word form area on the left, the two best-known category-selective regions of the ventral visual stream, and it is supplied by temporal branches of the posterior cerebral artery. Right-sided lesions cause prosopagnosia, left-sided lesions cause pure alexia when the splenial input is also cut, and bilateral disease produces the visual agnosias of posterior cortical atrophy.",
+  "anatomy": {
+    "location": "Middle third of the fusiform gyrus, medial to the inferior temporal gyrus and lateral to the parahippocampal gyrus, under the body and tail of the hippocampus at the level of the atrium, in front of the occipital fusiform gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Occipital fusiform and lateral occipital cortex (V4, LOC)",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Contralateral fusiform cortex",
+        "via": "splenium of the corpus callosum"
+      },
+      {
+        "from": "Parietal and frontal attention areas",
+        "via": "top-down modulation via the inferior fronto-occipital fasciculus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Anterior fusiform and perirhinal cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "to": "Amygdala",
+        "via": "temporo-amygdalar fibers"
+      },
+      {
+        "to": "Angular gyrus and posterior temporal language cortex (left)",
+        "via": "short association fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "The right posterior fusiform cortex responds preferentially to faces, extracting the configuration of features that identifies an individual, while the left posterior fusiform cortex learns to recognize letter strings and familiar words as visual wholes, allowing fast reading; neighboring patches prefer bodies, places and tools. Both sides receive the occipital form areas and project forward to the anterior fusiform and perirhinal cortex and to the amygdala, and both are modulated by attention from the parietal and frontal cortex. Seizures arising here produce visual auras of faces or letters, and functional imaging of these areas is used to map eloquent cortex before temporo-occipital surgery.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cortex-temporal-fusiform-posterior-l"
+        },
+        "label": "posterior fusiform gyrus under the body of the hippocampus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cortex-temporal-fusiform-posterior-r"
+        },
+        "label": "fusiform face region on the basal temporal surface"
+      }
+    ],
+    "normalAppearance": "The fusiform gyrus on coronal images through the atrium, between the collateral and occipitotemporal sulci; the fusiform face area sits at its posterior end on the right and the visual word form area in the corresponding position on the left.",
+    "pathology": [
+      {
+        "pathology": "Right PCA branch infarct with prosopagnosia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the right posterior fusiform gyrus, often with a left superior quadrantanopia from the adjacent radiation.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Pure alexia",
+        "modality": "MRI",
+        "finding": "Left occipito-temporal infarct involving the posterior fusiform cortex and the splenial fibers; the patient reads letter by letter but writes normally.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Bilateral fusiform and occipito-parietal atrophy with prosopagnosia, alexia and simultanagnosia; hippocampi preserved.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Prosopagnosia (right)",
+        "side": "n/a",
+        "mechanism": "Loss of the fusiform face area configuration processing"
+      },
+      {
+        "deficit": "Pure alexia and letter-by-letter reading (left)",
+        "side": "n/a",
+        "mechanism": "Loss of the visual word form area or its input"
+      },
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Optic radiation fibers in the adjacent white matter"
+      }
+    ],
+    "examination": [
+      "Face recognition of family and famous people; matching faces with different expressions",
+      "Reading words of increasing length; letter-by-letter reading is the signature of pure alexia",
+      "Quadrantic visual fields"
+    ],
+    "syndromes": [
+      "syn-alexia-without-agraphia",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Reading time that grows with word length is the fingerprint of the visual word form area lesion",
+      "The face area is right-sided: a right occipito-temporal stroke makes the patient recognize people by voice and gait",
+      "Both regions are late developing and learnable: reading recruits a cortex that evolution built for objects"
+    ]
+  },
+  "pitfalls": [
+    "Prosopagnosic patients often deny a problem because they recognize people by other cues; ask whether they recognize themselves in photographs"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cortex-temporal-fusiform-posterior-l"
+  "citations": [
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
     },
-    "label": "posterior fusiform gyrus under the body of the hippocampus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cortex-temporal-fusiform-posterior-r"
+    {
+      "ref": "sp-prosopagnosia"
     },
-    "label": "fusiform face region on the basal temporal surface"
-   }
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The fusiform gyrus on coronal images through the atrium, between the collateral and occipitotemporal sulci; the fusiform face area sits at its posterior end on the right and the visual word form area in the corresponding position on the left.",
-  "pathology": [
-   {
-    "pathology": "Right PCA branch infarct with prosopagnosia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the right posterior fusiform gyrus, often with a left superior quadrantanopia from the adjacent radiation.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Pure alexia",
-    "modality": "MRI",
-    "finding": "Left occipito-temporal infarct involving the posterior fusiform cortex and the splenial fibers; the patient reads letter by letter but writes normally.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Bilateral fusiform and occipito-parietal atrophy with prosopagnosia, alexia and simultanagnosia; hippocampi preserved.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Prosopagnosia (right)",
-    "side": "n/a",
-    "mechanism": "Loss of the fusiform face area configuration processing"
-   },
-   {
-    "deficit": "Pure alexia and letter-by-letter reading (left)",
-    "side": "n/a",
-    "mechanism": "Loss of the visual word form area or its input"
-   },
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Optic radiation fibers in the adjacent white matter"
-   }
+  "tags": [
+    "fusiform face area",
+    "visual word form area",
+    "ventral stream"
   ],
-  "examination": [
-   "Face recognition of family and famous people; matching faces with different expressions",
-   "Reading words of increasing length; letter-by-letter reading is the signature of pure alexia",
-   "Quadrantic visual fields"
-  ],
-  "syndromes": [
-   "syn-alexia-without-agraphia",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Reading time that grows with word length is the fingerprint of the visual word form area lesion",
-   "The face area is right-sided: a right occipito-temporal stroke makes the patient recognize people by voice and gait",
-   "Both regions are late developing and learnable: reading recruits a cortex that evolution built for objects"
-  ]
- },
- "pitfalls": [
-  "Prosopagnosic patients often deny a problem because they recognize people by other cues; ask whether they recognize themselves in photographs"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "fusiform face area",
-  "visual word form area",
-  "ventral stream"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

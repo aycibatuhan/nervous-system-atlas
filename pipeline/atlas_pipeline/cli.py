@@ -37,3 +37,12 @@ def zanatomy_register():
 
 def zanatomy_meshes():
     from .zanatomy import main_meshes; main_meshes()
+
+def venat():
+    from .venat import main; main()
+
+def brainstem_nav():
+    from .brainstem_nav import main; main()
+
+def derived():
+    from .derived import main; main()

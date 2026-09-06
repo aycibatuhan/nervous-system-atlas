@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-30",
- "type": "localize",
- "vignette": "A 66-year-old woman is brought in with sudden weakness of the right leg, much worse than the arm, with the face spared. She is slow to respond, has a grasp reflex in the right hand and is incontinent of urine. Speech is preserved.",
- "stem": "Which artery is occluded?",
- "options": [
-  {
-   "key": "A",
-   "text": "Left middle cerebral artery, superior division"
-  },
-  {
-   "key": "B",
-   "text": "Left anterior cerebral artery"
-  },
-  {
-   "key": "C",
-   "text": "Left posterior cerebral artery"
-  },
-  {
-   "key": "D",
-   "text": "Left lenticulostriate artery"
-  },
-  {
-   "key": "E",
-   "text": "Basilar artery"
-  }
- ],
- "answer": "B",
- "explanation": "Leg-predominant contralateral weakness with abulia, a grasp reflex and incontinence follows infarction of the medial frontal lobe and paracentral lobule, the territory of the anterior cerebral artery, where the leg is represented on the homunculus.",
- "targets": {
-  "structureIds": [
-   "artery-aca",
-   "territory-aca"
+  "kind": "quiz",
+  "id": "qz-30",
+  "type": "localize",
+  "vignette": "A 66-year-old woman is brought in with sudden weakness of the right leg, much worse than the arm, with the face spared. She is slow to respond, has a grasp reflex in the right hand and is incontinent of urine. Speech is preserved.",
+  "stem": "Which artery is occluded?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Left middle cerebral artery, superior division"
+    },
+    {
+      "key": "B",
+      "text": "Left anterior cerebral artery"
+    },
+    {
+      "key": "C",
+      "text": "Left posterior cerebral artery"
+    },
+    {
+      "key": "D",
+      "text": "Left lenticulostriate artery"
+    },
+    {
+      "key": "E",
+      "text": "Basilar artery"
+    }
   ],
-  "syndromeIds": [
-   "syn-aca-infarct"
+  "answer": "B",
+  "explanation": "Leg-predominant contralateral weakness with abulia, a grasp reflex and incontinence follows infarction of the medial frontal lobe and paracentral lobule, the territory of the anterior cerebral artery, where the leg is represented on the homunculus.",
+  "targets": {
+    "structureIds": [
+      "artery-aca",
+      "territory-aca"
+    ],
+    "syndromeIds": [
+      "syn-aca-infarct"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "territory-aca-major-l",
+    "artery-aca-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "territory-aca-major-l",
-  "artery-aca-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    59
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-brain-arteries",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

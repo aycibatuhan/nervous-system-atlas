@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-febrile-seizure",
- "term": "Febrile seizure",
- "definition": "A generalized seizure with fever in a neurologically normal child between six months and five years, usually brief and benign; complex features (focal, prolonged, repeated) raise the risk of later epilepsy and require evaluation.",
- "related": [
-  "g-absence-seizure"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-febrile-seizure",
+  "term": "Febrile seizure",
+  "definition": "A generalized seizure with fever in a neurologically normal child between six months and five years, usually brief and benign; complex features (focal, prolonged, repeated) raise the risk of later epilepsy and require evaluation.",
+  "related": [
+    "g-absence-seizure"
+  ],
+  "citations": [
+    {
+      "ref": "sp-febrile-seizure",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-seizure",
+      "section": "Pathophysiology"
+    }
+  ]
 }

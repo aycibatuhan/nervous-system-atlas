@@ -1,177 +1,149 @@
 {
- "kind": "structure",
- "id": "tract-corticopontine-parietal",
- "name": "Parietopontine tract",
- "synonyms": [
-  "parietopontine fibers",
-  "corticopontine tract (parietal)"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-corticopontine-parietal-l",
-  "tract-corticopontine-parietal-r"
- ],
- "summary": "The parietopontine tract carries fibers from the somatosensory and posterior parietal cortex to the ipsilateral pontine nuclei, descending through the posterior limb and retrolenticular part of the internal capsule and the lateral part of the crus cerebri, lateral to the corticospinal fibers. Together with the temporopontine and occipitopontine fibers it gives the cerebellum the sensory context of movement, the position of the limbs and of visual targets in space, which the cerebellum uses to guide reaching and to update its predictions. Its lesions contribute to the ataxia and dysmetria of parietal and capsular strokes and it is one of the pathways involved in the optic ataxia of parietal damage.",
- "anatomy": {
-  "location": "From the postcentral gyrus, the superior and inferior parietal lobules and the parietal operculum through the corona radiata and the posterior part of the posterior limb and retrolenticular capsule, descending in the lateral fifth of the crus cerebri to the pontine nuclei, especially their dorsolateral part.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Postcentral gyrus and posterior parietal cortex",
-    "via": "origin"
-   }
+  "kind": "structure",
+  "id": "tract-corticopontine-parietal",
+  "name": "Parietopontine tract",
+  "synonyms": [
+    "parietopontine fibers",
+    "corticopontine tract (parietal)"
   ],
-  "efferents": [
-   {
-    "to": "Ipsilateral pontine nuclei",
-    "via": "termination"
-   },
-   {
-    "to": "Contralateral cerebellar hemisphere (via pontocerebellar fibers)",
-    "via": "middle cerebellar peduncle"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-corticopontine-parietal-l",
+    "tract-corticopontine-parietal-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "The tract conveys tactile, proprioceptive and visuospatial information, already processed in the parietal cortex, to the pontine nuclei and thence, after crossing in the middle cerebellar peduncle, to the contralateral cerebellar hemisphere, chiefly the intermediate zone and the posterior lobe; this lets the cerebellum compare the intended movement with the sensed state of the limb and the target and correct it, and it underlies the cerebellar contribution to reaching and to eye-hand coordination. Interruption produces dysmetria and impaired visually guided reaching on the side opposite the lesion, together with the parietal sensory deficits, and it participates in the crossed cerebellar diaschisis that follows parietal strokes.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-anterior-choroidal",
-   "artery-pca",
-   "artery-basilar",
-   "arteries-pontine"
-  ],
-  "territories": [
-   "territory-mca-parietal",
-   "territory-anterior-choroidal-thalamoperforating",
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-corticopontine-parietal-l"
+  "summary": "The parietopontine tract carries fibers from the somatosensory and posterior parietal cortex to the ipsilateral pontine nuclei, descending through the posterior limb and retrolenticular part of the internal capsule and the lateral part of the crus cerebri, lateral to the corticospinal fibers. Together with the temporopontine and occipitopontine fibers it gives the cerebellum the sensory context of movement, the position of the limbs and of visual targets in space, which the cerebellum uses to guide reaching and to update its predictions. Its lesions contribute to the ataxia and dysmetria of parietal and capsular strokes and it is one of the pathways involved in the optic ataxia of parietal damage.",
+  "anatomy": {
+    "location": "From the postcentral gyrus, the superior and inferior parietal lobules and the parietal operculum through the corona radiata and the posterior part of the posterior limb and retrolenticular capsule, descending in the lateral fifth of the crus cerebri to the pontine nuclei, especially their dorsolateral part.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Postcentral gyrus and posterior parietal cortex",
+        "via": "origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Ipsilateral pontine nuclei",
+        "via": "termination"
+      },
+      {
+        "to": "Contralateral cerebellar hemisphere (via pontocerebellar fibers)",
+        "via": "middle cerebellar peduncle"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "The tract conveys tactile, proprioceptive and visuospatial information, already processed in the parietal cortex, to the pontine nuclei and thence, after crossing in the middle cerebellar peduncle, to the contralateral cerebellar hemisphere, chiefly the intermediate zone and the posterior lobe; this lets the cerebellum compare the intended movement with the sensed state of the limb and the target and correct it, and it underlies the cerebellar contribution to reaching and to eye-hand coordination. Interruption produces dysmetria and impaired visually guided reaching on the side opposite the lesion, together with the parietal sensory deficits, and it participates in the crossed cerebellar diaschisis that follows parietal strokes.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-anterior-choroidal",
+      "artery-pca",
+      "artery-basilar",
+      "arteries-pontine"
+    ],
+    "territories": [
+      "territory-mca-parietal",
+      "territory-anterior-choroidal-thalamoperforating",
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-corticopontine-parietal-l"
+        },
+        "label": "parietopontine fibers from the parietal lobe to the pons"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-corticopontine-parietal-r"
+        },
+        "label": "parietopontine tract in the lateral crus cerebri"
+      }
+    ],
+    "normalAppearance": "Tractography shows a bundle from the parietal cortex through the posterior capsule and the lateral peduncle into the pons; on conventional MRI it is part of the posterior limb and the lateral crus.",
+    "pathology": [
+      {
+        "pathology": "Parietal or posterior capsular infarct with ataxia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the parietal white matter or the posterior limb with contralateral sensory loss, dysmetria and misreaching.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Midbrain peduncular infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the lateral crus cerebri with contralateral hemiparesis and ataxia from combined corticospinal and corticopontine damage.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Crossed cerebellar diaschisis after parietal stroke",
+        "modality": "PET",
+        "finding": "Contralateral cerebellar hypometabolism from loss of parietopontine input.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral dysmetria and misreaching",
+        "side": "contralateral",
+        "mechanism": "Loss of parietal sensory and spatial input to the cerebellum"
+      },
+      {
+        "deficit": "Ataxic hemiparesis with sensory loss",
+        "side": "contralateral",
+        "mechanism": "Combined injury of parietopontine, thalamocortical and corticospinal fibers in the posterior capsule"
+      },
+      {
+        "deficit": "Optic ataxia component with parietal lesions",
+        "side": "contralateral",
+        "mechanism": "Disconnection of the parietal visuomotor cortex from the cerebellum and the frontal cortex"
+      }
+    ],
+    "examination": [
+      "Finger-nose testing with eyes open and closed",
+      "Reaching to peripheral targets",
+      "Cortical sensory testing"
+    ],
+    "syndromes": [
+      "syn-lacunar-ataxic-hemiparesis",
+      "syn-balint"
+    ],
+    "pearls": [
+      "The parietal lobe tells the cerebellum where the arm is; without it the cerebellum guesses",
+      "Lateral crus lesions add ataxia to hemiparesis because the parietopontine fibers live there",
+      "Sensory ataxia and cerebellar ataxia coexist in parietal strokes; the eyes-closed test separates them"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pons",
+      "section": "Structure and Function"
     },
-    "label": "parietopontine fibers from the parietal lobe to the pons"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-corticopontine-parietal-r"
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
     },
-    "label": "parietopontine tract in the lateral crus cerebri"
-   }
+    {
+      "ref": "sp-cerebellum",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows a bundle from the parietal cortex through the posterior capsule and the lateral peduncle into the pons; on conventional MRI it is part of the posterior limb and the lateral crus.",
-  "pathology": [
-   {
-    "pathology": "Parietal or posterior capsular infarct with ataxia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the parietal white matter or the posterior limb with contralateral sensory loss, dysmetria and misreaching.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Midbrain peduncular infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the lateral crus cerebri with contralateral hemiparesis and ataxia from combined corticospinal and corticopontine damage.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Crossed cerebellar diaschisis after parietal stroke",
-    "modality": "PET",
-    "finding": "Contralateral cerebellar hypometabolism from loss of parietopontine input.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral dysmetria and misreaching",
-    "side": "contralateral",
-    "mechanism": "Loss of parietal sensory and spatial input to the cerebellum"
-   },
-   {
-    "deficit": "Ataxic hemiparesis with sensory loss",
-    "side": "contralateral",
-    "mechanism": "Combined injury of parietopontine, thalamocortical and corticospinal fibers in the posterior capsule"
-   },
-   {
-    "deficit": "Optic ataxia component with parietal lesions",
-    "side": "contralateral",
-    "mechanism": "Disconnection of the parietal visuomotor cortex from the cerebellum and the frontal cortex"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Finger-nose testing with eyes open and closed",
-   "Reaching to peripheral targets",
-   "Cortical sensory testing"
-  ],
-  "syndromes": [
-   "syn-lacunar-ataxic-hemiparesis",
-   "syn-balint"
-  ],
-  "pearls": [
-   "The parietal lobe tells the cerebellum where the arm is; without it the cerebellum guesses",
-   "Lateral crus lesions add ataxia to hemiparesis because the parietopontine fibers live there",
-   "Sensory ataxia and cerebellar ataxia coexist in parietal strokes; the eyes-closed test separates them"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    236,
-    242
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    218
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "internal-capsule"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "internal-capsule"
 }

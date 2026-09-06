@@ -1,121 +1,113 @@
 {
- "kind": "syndrome",
- "id": "syn-subfalcine-herniation",
- "name": "Subfalcine (cingulate) herniation",
- "eponyms": [
-  "cingulate herniation"
- ],
- "category": "herniation",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "gyrus-cingulate",
-   "falx-cerebri",
-   "artery-aca",
-   "ventricle-lateral"
+  "kind": "syndrome",
+  "id": "syn-subfalcine-herniation",
+  "name": "Subfalcine (cingulate) herniation",
+  "eponyms": [
+    "cingulate herniation"
   ],
-  "side": "contralateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "gyrus-cingulate-anterior-l"
-  ]
- },
- "presentation": "A patient with a large frontal or parietal mass has a headache and is drowsy, and the CT shows the septum pellucidum and the anterior ventricles pushed far across the midline beneath the falx. If the displaced hemisphere pinches its anterior cerebral artery against the rigid falx, weakness of the opposite leg develops on top of whatever deficit the mass has already produced. The far lateral ventricle dilates because its foramen of Monro is kinked.",
- "deficits": [
-  {
-   "modality": "consciousness",
-   "side": "n/a",
-   "distribution": "diffuse",
-   "sign": "Headache and depressed consciousness from the mass and raised pressure",
-   "substrate": "reticular-formation"
+  "category": "herniation",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "gyrus-cingulate",
+      "falx-cerebri",
+      "artery-aca",
+      "ventricle-lateral"
+    ],
+    "side": "contralateral"
   },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "leg",
-   "sign": "Leg weakness from compression of the anterior cerebral artery against the falx (ACA infarct)",
-   "substrate": "pathway-lateral-corticospinal"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "gyrus-cingulate-anterior-l"
+    ]
   },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "ventricles",
-   "sign": "Trapped contralateral lateral ventricle from obstruction of the foramen of Monro",
-   "substrate": "ventricle-lateral"
+  "presentation": "A patient with a large frontal or parietal mass has a headache and is drowsy, and the CT shows the septum pellucidum and the anterior ventricles pushed far across the midline beneath the falx. If the displaced hemisphere pinches its anterior cerebral artery against the rigid falx, weakness of the opposite leg develops on top of whatever deficit the mass has already produced. The far lateral ventricle dilates because its foramen of Monro is kinked.",
+  "deficits": [
+    {
+      "modality": "consciousness",
+      "side": "n/a",
+      "distribution": "diffuse",
+      "sign": "Headache and depressed consciousness from the mass and raised pressure",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "leg",
+      "sign": "Leg weakness from compression of the anterior cerebral artery against the falx (ACA infarct)",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "ventricles",
+      "sign": "Trapped contralateral lateral ventricle from obstruction of the foramen of Monro",
+      "substrate": "ventricle-lateral"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "medial frontal",
+      "sign": "Abulia, incontinence, gait apraxia with bilateral medial frontal ischemia",
+      "substrate": "gyrus-cingulate"
+    }
+  ],
+  "reasoning": "The falx cerebri hangs in the interhemispheric fissure from the vault to the corpus callosum, and its free lower edge lies just above the cingulate gyrus and the pericallosal branches of the anterior cerebral arteries. A mass in one hemisphere displaces the hemisphere toward the other side, and the cingulate gyrus, the most medial structure, is pushed under the free edge of the falx, taking the anterior cerebral artery with it. The herniation itself is usually silent, being the commonest and least dangerous of the herniations, and it is recognized on imaging by the midline shift of the septum pellucidum and the asymmetric ventricles; the third ventricle and the foramen of Monro are distorted so that the ventricle on the opposite side cannot drain and dilates, adding to the pressure. When the shift is large the anterior cerebral artery is compressed against the falx, infarcting the medial frontal and parietal cortex where the leg is represented; the corticospinal fibers from that cortex cross in the medulla, so the leg weakness is contralateral to the herniating hemisphere and the artery, in addition to whatever deficit the mass itself has produced. Both anterior cerebral arteries can be involved because they lie side by side, giving bilateral leg weakness, abulia and incontinence. Progressive shift precedes transtentorial herniation, so the degree of midline shift on CT is a marker of danger.",
+  "imagingFindings": [
+    {
+      "pathology": "Subfalcine herniation",
+      "modality": "CT",
+      "finding": "Displacement of the septum pellucidum, third ventricle and anterior falx-adjacent structures across the midline, measured as midline shift in millimeters; dilated contralateral ventricle.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "ACA infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the medial frontal and parietal cortex on the side of the compressed artery, sometimes bilateral.",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Large hemispheric infarct with edema",
+    "Subdural or intracerebral hematoma",
+    "Tumor with edema",
+    "Abscess"
+  ],
+  "mimics": [
+    {
+      "name": "Primary ACA infarct",
+      "howToDistinguish": "Leg weakness without a mass or midline shift"
+    },
+    {
+      "name": "Hydrocephalus",
+      "howToDistinguish": "Ventricles dilated symmetrically without shift"
+    }
+  ],
+  "management": [
+    "Treat the mass and the raised pressure; midline shift above about 5 mm with clinical decline prompts surgical decompression",
+    "Serial CT to monitor shift and the trapped ventricle",
+    "Prevent secondary ACA infarction by early relief of the shift"
+  ],
+  "citations": [
+    {
+      "ref": "sp-subfalcine-herniation",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-meninges",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": 0,
+      "y": 10,
+      "z": 30
+    },
+    "label": "cingulate gyrus beneath the free edge of the falx"
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "medial frontal",
-   "sign": "Abulia, incontinence, gait apraxia with bilateral medial frontal ischemia",
-   "substrate": "gyrus-cingulate"
-  }
- ],
- "reasoning": "The falx cerebri hangs in the interhemispheric fissure from the vault to the corpus callosum, and its free lower edge lies just above the cingulate gyrus and the pericallosal branches of the anterior cerebral arteries. A mass in one hemisphere displaces the hemisphere toward the other side, and the cingulate gyrus, the most medial structure, is pushed under the free edge of the falx, taking the anterior cerebral artery with it. The herniation itself is usually silent, being the commonest and least dangerous of the herniations, and it is recognized on imaging by the midline shift of the septum pellucidum and the asymmetric ventricles; the third ventricle and the foramen of Monro are distorted so that the ventricle on the opposite side cannot drain and dilates, adding to the pressure. When the shift is large the anterior cerebral artery is compressed against the falx, infarcting the medial frontal and parietal cortex where the leg is represented; the corticospinal fibers from that cortex cross in the medulla, so the leg weakness is contralateral to the herniating hemisphere and the artery, in addition to whatever deficit the mass itself has produced. Both anterior cerebral arteries can be involved because they lie side by side, giving bilateral leg weakness, abulia and incontinence. Progressive shift precedes transtentorial herniation, so the degree of midline shift on CT is a marker of danger.",
- "imagingFindings": [
-  {
-   "pathology": "Subfalcine herniation",
-   "modality": "CT",
-   "finding": "Displacement of the septum pellucidum, third ventricle and anterior falx-adjacent structures across the midline, measured as midline shift in millimeters; dilated contralateral ventricle.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "ACA infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the medial frontal and parietal cortex on the side of the compressed artery, sometimes bilateral.",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Large hemispheric infarct with edema",
-  "Subdural or intracerebral hematoma",
-  "Tumor with edema",
-  "Abscess"
- ],
- "mimics": [
-  {
-   "name": "Primary ACA infarct",
-   "howToDistinguish": "Leg weakness without a mass or midline shift"
-  },
-  {
-   "name": "Hydrocephalus",
-   "howToDistinguish": "Ventricles dilated symmetrically without shift"
-  }
- ],
- "management": [
-  "Treat the mass and the raised pressure; midline shift above about 5 mm with clinical decline prompts surgical decompression",
-  "Serial CT to monitor shift and the trapped ventricle",
-  "Prevent secondary ACA infarction by early relief of the shift"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    60,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    270,
-    270
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": 0,
-   "y": 10,
-   "z": 30
-  },
-  "label": "cingulate gyrus beneath the free edge of the falx"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

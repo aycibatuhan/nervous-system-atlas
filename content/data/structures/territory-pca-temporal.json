@@ -1,181 +1,145 @@
 {
- "kind": "structure",
- "id": "territory-pca-temporal",
- "name": "PCA territory, temporal",
- "synonyms": [
-  "anterior and posterior temporal artery territory",
-  "temporal PCA domain"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-pca-temporal-l",
-  "territory-pca-temporal-r"
- ],
- "summary": "The temporal PCA territory is the inferomedial temporal lobe supplied by the anterior and posterior temporal branches of the posterior cerebral artery's P2 segment: the parahippocampal, fusiform and inferior temporal gyri, the hippocampus (with the anterior choroidal artery) and the temporal pole's inferior surface. It is the territory of the memory and recognition syndromes of PCA stroke: amnesia, prosopagnosia and visual agnosia, and it contributes the upper quadrant defect through Meyer's loop. It borders the MCA temporal territory along the inferior temporal gyrus, a watershed, and it is the cortex compressed against the tentorium and infarcted by PCA compression during uncal herniation.",
- "anatomy": {
-  "location": "Inferomedial temporal lobe from the temporal pole to the occipito-temporal junction, including the parahippocampal gyrus, the hippocampus, the fusiform gyrus and the inferior temporal gyrus, resting on the tentorium and the middle cranial fossa floor; bounded laterally by the MCA temporal territory, medially by the anterior choroidal territory of the hippocampal head and posteriorly by the occipital PCA territory.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Anterior and posterior temporal branches of the P2 segment",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-pca-temporal",
+  "name": "PCA territory, temporal",
+  "synonyms": [
+    "anterior and posterior temporal artery territory",
+    "temporal PCA domain"
   ],
-  "efferents": [
-   {
-    "to": "Basal vein of Rosenthal and inferior temporal veins",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-pca-temporal-l",
+    "territory-pca-temporal-r"
   ],
-  "pathways": []
- },
- "function": "The territory contains the medial temporal memory system (hippocampus, entorhinal and parahippocampal cortex) and the ventral visual recognition cortex (fusiform face and word areas, inferior temporal object areas), so its infarction produces amnesia, which is severe and permanent when bilateral, prosopagnosia and landmark agnosia on the right, and associative agnosia and alexia on the left, together with the upper quadrant defect from the temporal optic radiation. The P2 segment runs in the ambient cistern beside the uncus and is compressed in uncal herniation, producing a secondary PCA infarct of this territory.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-pca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-pca-temporal-l"
+  "summary": "The temporal PCA territory is the inferomedial temporal lobe supplied by the anterior and posterior temporal branches of the posterior cerebral artery's P2 segment: the parahippocampal, fusiform and inferior temporal gyri, the hippocampus (with the anterior choroidal artery) and the temporal pole's inferior surface. It is the territory of the memory and recognition syndromes of PCA stroke: amnesia, prosopagnosia and visual agnosia, and it contributes the upper quadrant defect through Meyer's loop. It borders the MCA temporal territory along the inferior temporal gyrus, a watershed, and it is the cortex compressed against the tentorium and infarcted by PCA compression during uncal herniation.",
+  "anatomy": {
+    "location": "Inferomedial temporal lobe from the temporal pole to the occipito-temporal junction, including the parahippocampal gyrus, the hippocampus, the fusiform gyrus and the inferior temporal gyrus, resting on the tentorium and the middle cranial fossa floor; bounded laterally by the MCA temporal territory, medially by the anterior choroidal territory of the hippocampal head and posteriorly by the occipital PCA territory.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior and posterior temporal branches of the P2 segment",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Basal vein of Rosenthal and inferior temporal veins",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The territory contains the medial temporal memory system (hippocampus, entorhinal and parahippocampal cortex) and the ventral visual recognition cortex (fusiform face and word areas, inferior temporal object areas), so its infarction produces amnesia, which is severe and permanent when bilateral, prosopagnosia and landmark agnosia on the right, and associative agnosia and alexia on the left, together with the upper quadrant defect from the temporal optic radiation. The P2 segment runs in the ambient cistern beside the uncus and is compressed in uncal herniation, producing a secondary PCA infarct of this territory.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-pca-temporal-l"
+        },
+        "label": "temporal PCA territory on the inferomedial temporal lobe"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-pca-temporal-r"
+        },
+        "label": "PCA temporal branches over the parahippocampal and fusiform gyri"
+      }
+    ],
+    "normalAppearance": "On the overlay the temporal PCA domain covers the inferomedial temporal surface including the hippocampus; the MCA-PCA border runs along the inferior temporal gyrus.",
+    "pathology": [
+      {
+        "pathology": "PCA temporal branch infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the parahippocampal and fusiform gyri and the hippocampus with amnesia, agnosia and an upper quadrantanopia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Secondary PCA infarct in uncal herniation",
+        "modality": "CT",
+        "finding": "Hypodensity of the medial temporal and occipital lobes days after a supratentorial mass compressed the P2 segment against the tentorium.",
+        "sequence": "CT non-contrast",
+        "timing": "Appears 24-72 hours after herniation"
+      },
+      {
+        "pathology": "Transient global amnesia (mimic)",
+        "modality": "MRI",
+        "finding": "Punctate hippocampal diffusion lesions at 24-72 hours with no territorial infarct.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Hippocampal and parahippocampal infarction, permanent when bilateral"
+      },
+      {
+        "deficit": "Prosopagnosia and landmark agnosia (right)",
+        "side": "n/a",
+        "mechanism": "Right fusiform and parahippocampal infarction"
+      },
+      {
+        "deficit": "Associative agnosia and alexia (left)",
+        "side": "n/a",
+        "mechanism": "Left fusiform and inferior temporal infarction"
+      },
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Meyer's loop involvement"
+      }
+    ],
+    "examination": [
+      "Delayed recall and recognition",
+      "Face recognition and reading",
+      "Upper quadrant fields"
+    ],
+    "syndromes": [
+      "syn-pca-infarct",
+      "syn-uncal-herniation",
+      "syn-wernicke-korsakoff",
+      "syn-alexia-without-agraphia"
+    ],
+    "pearls": [
+      "A stroke that produces amnesia is a posterior circulation stroke of the temporal PCA territory",
+      "The P2 segment hugs the uncus: herniation adds a PCA infarct to the injury",
+      "Bilateral medial temporal infarcts leave a memory that stops on the day of the stroke"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "Pathophysiology"
     },
-    "label": "temporal PCA territory on the inferomedial temporal lobe"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-pca-temporal-r"
+    {
+      "ref": "sp-posterior-cerebral-arteries",
+      "section": "Structure and Function"
     },
-    "label": "PCA temporal branches over the parahippocampal and fusiform gyri"
-   }
+    {
+      "ref": "sp-anterior-choroidal-arteries",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On the overlay the temporal PCA domain covers the inferomedial temporal surface including the hippocampus; the MCA-PCA border runs along the inferior temporal gyrus.",
-  "pathology": [
-   {
-    "pathology": "PCA temporal branch infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the parahippocampal and fusiform gyri and the hippocampus with amnesia, agnosia and an upper quadrantanopia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Secondary PCA infarct in uncal herniation",
-    "modality": "CT",
-    "finding": "Hypodensity of the medial temporal and occipital lobes days after a supratentorial mass compressed the P2 segment against the tentorium.",
-    "sequence": "CT non-contrast",
-    "timing": "Appears 24-72 hours after herniation"
-   },
-   {
-    "pathology": "Transient global amnesia (mimic)",
-    "modality": "MRI",
-    "finding": "Punctate hippocampal diffusion lesions at 24-72 hours with no territorial infarct.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Hippocampal and parahippocampal infarction, permanent when bilateral"
-   },
-   {
-    "deficit": "Prosopagnosia and landmark agnosia (right)",
-    "side": "n/a",
-    "mechanism": "Right fusiform and parahippocampal infarction"
-   },
-   {
-    "deficit": "Associative agnosia and alexia (left)",
-    "side": "n/a",
-    "mechanism": "Left fusiform and inferior temporal infarction"
-   },
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Meyer's loop involvement"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "Delayed recall and recognition",
-   "Face recognition and reading",
-   "Upper quadrant fields"
-  ],
-  "syndromes": [
-   "syn-pca-infarct",
-   "syn-uncal-herniation",
-   "syn-wernicke-korsakoff",
-   "syn-alexia-without-agraphia"
-  ],
-  "pearls": [
-   "A stroke that produces amnesia is a posterior circulation stroke of the temporal PCA territory",
-   "The P2 segment hugs the uncus: herniation adds a PCA infarct to the injury",
-   "Bilateral medial temporal infarcts leave a memory that stops on the day of the stroke"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    238,
-    239
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    271,
-    274
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level1",
- "parent": "territory-pca"
+  "status": "draft",
+  "subsystem": "level1",
+  "parent": "territory-pca"
 }

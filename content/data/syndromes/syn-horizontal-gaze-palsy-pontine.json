@@ -1,112 +1,116 @@
 {
- "kind": "syndrome",
- "id": "syn-horizontal-gaze-palsy-pontine",
- "name": "Pontine horizontal gaze palsy",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "pprf",
-   "abducens-nucleus",
-   "level-pons-caudal",
-   "frontal-eye-field"
+  "kind": "syndrome",
+  "id": "syn-horizontal-gaze-palsy-pontine",
+  "name": "Pontine horizontal gaze palsy",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "pprf",
+      "abducens-nucleus",
+      "level-pons-caudal",
+      "frontal-eye-field"
+    ],
+    "side": "ipsilateral",
+    "level": "pons-caudal"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -5,
+      "y": -38,
+      "z": -28
+    },
+    "radiusMm": 6
+  },
+  "presentation": "After a pontine stroke the patient cannot look toward the side of the lesion with either eye, and at rest the eyes drift toward the opposite side, away from the lesion and toward any hemiparesis. This is the reverse of the hemispheric pattern, where the eyes look toward the lesion and away from the weak limbs. Distinguishing the two is a bedside way to tell a pontine from a hemispheric stroke.",
+  "deficits": [
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "conjugate horizontal gaze",
+      "sign": "Gaze palsy toward the lesion; eyes deviated away from the lesion",
+      "substrate": "pprf"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "arm and leg",
+      "sign": "Hemiparesis when the basis pontis is involved; the eyes look toward the weak side",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "vestibulo-ocular",
+      "sign": "Oculocephalic reflex overcomes a PPRF lesion but not an abducens nuclear lesion",
+      "substrate": "pathway-vestibular-vor"
+    }
   ],
-  "side": "ipsilateral",
-  "level": "pons-caudal"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -5,
-   "y": -38,
-   "z": -28
+  "reasoning": "The frontal eye field of each hemisphere sends its saccade command across the midline to the paramedian pontine reticular formation of the opposite side, which fires the adjacent abducens nucleus to move both eyes toward that side. A right hemispheric lesion therefore removes the drive to the left PPRF: the patient cannot look left, and the unopposed left hemisphere pushes the eyes to the right, toward the lesion; with the crossed corticospinal fibers also damaged, the weak limbs are on the left, so the eyes look away from the hemiparesis. A left pontine lesion of the PPRF or abducens nucleus removes leftward gaze at its final stage: the eyes cannot look left, toward the lesion, and drift right, away from it; the uncrossed corticospinal fibers in the left basis pontis produce a right hemiparesis, so now the eyes look toward the weak limbs. The vestibulo-ocular reflex reaches the abducens nucleus directly from the vestibular nuclei, bypassing the PPRF, so a PPRF lesion (supranuclear) can be overcome by head turning and caloric stimulation whereas an abducens nuclear lesion cannot, and a nuclear lesion adds an ipsilateral facial palsy from the facial colliculus.",
+  "imagingFindings": [
+    {
+      "pathology": "Paramedian pontine infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the dorsal paramedian caudal pons; may extend ventrally into the corticospinal fibers.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Pontine hemorrhage",
+      "modality": "CT",
+      "finding": "Hyperdense tegmental hematoma; often hypertensive.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Paramedian pontine infarct",
+    "Pontine hemorrhage",
+    "Multiple sclerosis",
+    "Pontine glioma"
+  ],
+  "mimics": [
+    {
+      "name": "Frontal eye field lesion",
+      "howToDistinguish": "Eyes deviate toward the lesion, palsy overcome by the oculocephalic reflex, resolves within days"
+    },
+    {
+      "name": "Sixth nerve palsy",
+      "howToDistinguish": "Only one eye fails to abduct; the other adducts normally"
+    },
+    {
+      "name": "Seizure with gaze deviation",
+      "howToDistinguish": "Eyes deviate away from an irritative focus and jerk; transient"
+    }
+  ],
+  "management": [
+    "Acute stroke treatment",
+    "Bedside: use the direction of gaze deviation relative to the weak side to localize before imaging",
+    "Recovery of gaze is usual over weeks"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cranial-nerve-6",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-internuclear-ophthalmoplegia",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -5,
+      "y": -38,
+      "z": -28
+    },
+    "label": "PPRF and abducens nucleus"
   },
-  "radiusMm": 6
- },
- "presentation": "After a pontine stroke the patient cannot look toward the side of the lesion with either eye, and at rest the eyes drift toward the opposite side, away from the lesion and toward any hemiparesis. This is the reverse of the hemispheric pattern, where the eyes look toward the lesion and away from the weak limbs. Distinguishing the two is a bedside way to tell a pontine from a hemispheric stroke.",
- "deficits": [
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "conjugate horizontal gaze",
-   "sign": "Gaze palsy toward the lesion; eyes deviated away from the lesion",
-   "substrate": "pprf"
-  },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "arm and leg",
-   "sign": "Hemiparesis when the basis pontis is involved; the eyes look toward the weak side",
-   "substrate": "pathway-lateral-corticospinal"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "vestibulo-ocular",
-   "sign": "Oculocephalic reflex overcomes a PPRF lesion but not an abducens nuclear lesion",
-   "substrate": "pathway-vestibular-vor"
-  }
- ],
- "reasoning": "The frontal eye field of each hemisphere sends its saccade command across the midline to the paramedian pontine reticular formation of the opposite side, which fires the adjacent abducens nucleus to move both eyes toward that side. A right hemispheric lesion therefore removes the drive to the left PPRF: the patient cannot look left, and the unopposed left hemisphere pushes the eyes to the right, toward the lesion; with the crossed corticospinal fibers also damaged, the weak limbs are on the left, so the eyes look away from the hemiparesis. A left pontine lesion of the PPRF or abducens nucleus removes leftward gaze at its final stage: the eyes cannot look left, toward the lesion, and drift right, away from it; the uncrossed corticospinal fibers in the left basis pontis produce a right hemiparesis, so now the eyes look toward the weak limbs. The vestibulo-ocular reflex reaches the abducens nucleus directly from the vestibular nuclei, bypassing the PPRF, so a PPRF lesion (supranuclear) can be overcome by head turning and caloric stimulation whereas an abducens nuclear lesion cannot, and a nuclear lesion adds an ipsilateral facial palsy from the facial colliculus.",
- "imagingFindings": [
-  {
-   "pathology": "Paramedian pontine infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the dorsal paramedian caudal pons; may extend ventrally into the corticospinal fibers.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Pontine hemorrhage",
-   "modality": "CT",
-   "finding": "Hyperdense tegmental hematoma; often hypertensive.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Paramedian pontine infarct",
-  "Pontine hemorrhage",
-  "Multiple sclerosis",
-  "Pontine glioma"
- ],
- "mimics": [
-  {
-   "name": "Frontal eye field lesion",
-   "howToDistinguish": "Eyes deviate toward the lesion, palsy overcome by the oculocephalic reflex, resolves within days"
-  },
-  {
-   "name": "Sixth nerve palsy",
-   "howToDistinguish": "Only one eye fails to abduct; the other adducts normally"
-  },
-  {
-   "name": "Seizure with gaze deviation",
-   "howToDistinguish": "Eyes deviate away from an irritative focus and jerk; transient"
-  }
- ],
- "management": [
-  "Acute stroke treatment",
-  "Bedside: use the direction of gaze deviation relative to the weak side to localize before imaging",
-  "Recovery of gaze is usual over weeks"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    97,
-    98
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -5,
-   "y": -38,
-   "z": -28
-  },
-  "label": "PPRF and abducens nucleus"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

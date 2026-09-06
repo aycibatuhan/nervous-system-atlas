@@ -1,158 +1,146 @@
 {
- "kind": "structure",
- "id": "area-broca",
- "name": "Broca's area",
- "synonyms": [
-  "Brodmann areas 44 and 45",
-  "pars opercularis and pars triangularis"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-inferior-frontal-opercularis-l",
-  "gyrus-inferior-frontal-triangularis-l"
- ],
- "summary": "The posterior part of the inferior frontal gyrus of the dominant (usually left) hemisphere, the pars opercularis and pars triangularis. It assembles the motor programs of speech and sentence structure and passes them to the adjacent face and mouth area of the motor cortex, receiving input from Wernicke's area through the arcuate fasciculus. Its damage produces non-fluent, effortful, agrammatic speech with relatively preserved comprehension, typically with right face and arm weakness because the same MCA superior division supplies both.",
- "anatomy": {
-  "location": "Inferior frontal gyrus just in front of the lower precentral gyrus and above the Sylvian fissure, in the dominant hemisphere; the frontal operculum covering the insula.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "area-wernicke",
-    "via": "tract-arcuate-fasciculus"
-   }
+  "kind": "structure",
+  "id": "area-broca",
+  "name": "Broca's area",
+  "synonyms": [
+    "Brodmann areas 44 and 45",
+    "pars opercularis and pars triangularis"
   ],
-  "efferents": [
-   {
-    "to": "gyrus-precentral (face area)"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-inferior-frontal-opercularis-l",
+    "gyrus-inferior-frontal-triangularis-l"
   ],
-  "pathways": []
- },
- "function": "Speech production: articulatory planning, grammar and syntax; also contributes to verbal working memory and to comprehension of complex syntax.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 50,
-     "y": 15,
-     "z": 15
-    },
-    "label": "posterior inferior frontal gyrus above the Sylvian fissure"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 50,
-     "y": 15,
-     "z": 15
-    },
-    "label": "pars opercularis and triangularis in front of the precentral gyrus"
-   }
-  ],
-  "normalAppearance": "The pars triangularis and opercularis are seen on sagittal images 45–55 mm left of the midline as the two gyri in front of the lower precentral gyrus; fMRI language mapping localizes it before surgery.",
-  "pathology": [
-   {
-    "pathology": "Superior division MCA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the left inferior frontal gyrus and adjacent opercular cortex.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Progressive non-fluent aphasia",
-    "modality": "MRI",
-    "finding": "Left inferior frontal and insular atrophy in the agrammatic variant of primary progressive aphasia.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Tumor near Broca's area",
-    "modality": "MRI",
-    "finding": "Left frontal opercular glioma; awake mapping required for resection.",
-    "sequence": "FLAIR"
-   }
-  ],
-  "sequenceOfChoice": "DWI; T1 for atrophy; fMRI/awake mapping before surgery"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Non-fluent aphasia: effortful, telegraphic speech, agrammatism, impaired repetition, preserved comprehension",
-    "side": "n/a",
-    "mechanism": "Loss of articulatory and syntactic programming"
-   },
-   {
-    "deficit": "Right face and arm weakness",
-    "side": "contralateral",
-    "mechanism": "Adjacent motor cortex in the same arterial territory"
-   },
-   {
-    "deficit": "Apraxia of speech and buccofacial apraxia",
-    "side": "n/a",
-    "mechanism": "Motor programming of oral movements"
-   },
-   {
-    "deficit": "Frustration and awareness of the deficit",
-    "side": "n/a",
-    "mechanism": "Comprehension is intact"
-   }
-  ],
-  "examination": [
-   "Listen for fluency, phrase length and grammatical words",
-   "Test comprehension with commands and yes/no questions",
-   "Repetition of phrases",
-   "Naming, reading and writing"
-  ],
-  "syndromes": [
-   "syn-aphasia-broca",
-   "syn-mca-superior-division"
-  ],
-  "pearls": [
-   "Broca aphasia patients know what they want to say and cannot get it out; Wernicke aphasia patients do not know they are unintelligible",
-   "Handedness matters: about 5% of right-handers and a third of left-handers have right or bilateral language dominance"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    284,
-    288
-   ]
+  "summary": "The posterior part of the inferior frontal gyrus of the dominant (usually left) hemisphere, the pars opercularis and pars triangularis. It assembles the motor programs of speech and sentence structure and passes them to the adjacent face and mouth area of the motor cortex, receiving input from Wernicke's area through the arcuate fasciculus. Its damage produces non-fluent, effortful, agrammatic speech with relatively preserved comprehension, typically with right face and arm weakness because the same MCA superior division supplies both.",
+  "anatomy": {
+    "location": "Inferior frontal gyrus just in front of the lower precentral gyrus and above the Sylvian fissure, in the dominant hemisphere; the frontal operculum covering the insula.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    290,
-    291
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "area-wernicke",
+        "via": "tract-arcuate-fasciculus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "gyrus-precentral (face area)"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    54,
-    56
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "frontal"
- ],
- "status": "draft",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "function": "Speech production: articulatory planning, grammar and syntax; also contributes to verbal working memory and to comprehension of complex syntax.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 50,
+          "y": 15,
+          "z": 15
+        },
+        "label": "posterior inferior frontal gyrus above the Sylvian fissure"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 50,
+          "y": 15,
+          "z": 15
+        },
+        "label": "pars opercularis and triangularis in front of the precentral gyrus"
+      }
+    ],
+    "normalAppearance": "The pars triangularis and opercularis are seen on sagittal images 45–55 mm left of the midline as the two gyri in front of the lower precentral gyrus; fMRI language mapping localizes it before surgery.",
+    "pathology": [
+      {
+        "pathology": "Superior division MCA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the left inferior frontal gyrus and adjacent opercular cortex.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Progressive non-fluent aphasia",
+        "modality": "MRI",
+        "finding": "Left inferior frontal and insular atrophy in the agrammatic variant of primary progressive aphasia.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Tumor near Broca's area",
+        "modality": "MRI",
+        "finding": "Left frontal opercular glioma; awake mapping required for resection.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "DWI; T1 for atrophy; fMRI/awake mapping before surgery"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Non-fluent aphasia: effortful, telegraphic speech, agrammatism, impaired repetition, preserved comprehension",
+        "side": "n/a",
+        "mechanism": "Loss of articulatory and syntactic programming"
+      },
+      {
+        "deficit": "Right face and arm weakness",
+        "side": "contralateral",
+        "mechanism": "Adjacent motor cortex in the same arterial territory"
+      },
+      {
+        "deficit": "Apraxia of speech and buccofacial apraxia",
+        "side": "n/a",
+        "mechanism": "Motor programming of oral movements"
+      },
+      {
+        "deficit": "Frustration and awareness of the deficit",
+        "side": "n/a",
+        "mechanism": "Comprehension is intact"
+      }
+    ],
+    "examination": [
+      "Listen for fluency, phrase length and grammatical words",
+      "Test comprehension with commands and yes/no questions",
+      "Repetition of phrases",
+      "Naming, reading and writing"
+    ],
+    "syndromes": [
+      "syn-aphasia-broca",
+      "syn-mca-superior-division"
+    ],
+    "pearls": [
+      "Broca aphasia patients know what they want to say and cannot get it out; Wernicke aphasia patients do not know they are unintelligible",
+      "Handedness matters: about 5% of right-handers and a third of left-handers have right or bilateral language dominance"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-broca-area",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-frontal-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "frontal"
+  ],
+  "status": "draft",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

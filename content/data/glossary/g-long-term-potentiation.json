@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-long-term-potentiation",
- "term": "Long-term potentiation",
- "definition": "A lasting increase in synaptic strength after brief high-frequency activity, best studied at the CA3-CA1 synapse of the hippocampus and dependent on NMDA receptors; the cellular model of memory storage.",
- "related": [
-  "g-nmda-receptor",
-  "g-papez-circuit"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-long-term-potentiation",
+  "term": "Long-term potentiation",
+  "definition": "A lasting increase in synaptic strength after brief high-frequency activity, best studied at the CA3-CA1 synapse of the hippocampus and dependent on NMDA receptors; the cellular model of memory storage.",
+  "related": [
+    "g-nmda-receptor",
+    "g-papez-circuit"
+  ],
+  "citations": [
+    {
+      "ref": "sp-nmda-receptor",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-neuroplasticity",
+      "section": "Introduction"
+    }
+  ]
 }

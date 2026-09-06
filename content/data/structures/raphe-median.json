@@ -1,180 +1,160 @@
 {
- "kind": "structure",
- "id": "raphe-median",
- "name": "Median raphe nucleus",
- "synonyms": [
-  "nucleus raphes medianus",
-  "superior central nucleus",
-  "B8 group"
- ],
- "system": "brainstem",
- "meshIds": [
-  "raphe-median"
- ],
- "summary": "The median raphe nucleus is the serotonergic nucleus of the midline pontine tegmentum, below and behind the dorsal raphe, between the medial longitudinal fasciculi and the reticular formation, with the superior central nucleus of Bechterew. Its neurons project mainly to the hippocampus, the septum, the hypothalamus and the medial cortex, where serotonin regulates hippocampal theta rhythm, memory consolidation, anxiety and stress resilience, and it acts as a brake on the dorsal raphe and the amygdala. It is part of the pontine sleep circuitry and contributes to the serotonergic modulation of breathing and of the cardiovascular reflexes, and its damage in pontine strokes and in neurodegeneration adds anxiety, memory impairment and sleep disturbance to the classical signs.",
- "anatomy": {
-  "location": "Midline of the rostral pontine tegmentum in the paramedian reticular formation, below the dorsal raphe and the aqueduct-fourth ventricle junction, above the pontine nuclei and the basis pontis, between the medial longitudinal fasciculi and lateral to the midline seam.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Prefrontal cortex",
-    "via": "corticofugal fibers"
-   },
-   {
-    "from": "Lateral habenula",
-    "via": "habenulo-raphe fibers"
-   },
-   {
-    "from": "Hypothalamus",
-    "via": "medial forebrain bundle"
-   }
+  "kind": "structure",
+  "id": "raphe-median",
+  "name": "Median raphe nucleus",
+  "synonyms": [
+    "nucleus raphes medianus",
+    "superior central nucleus",
+    "B8 group"
   ],
-  "efferents": [
-   {
-    "to": "Hippocampus and septal area",
-    "via": "medial forebrain bundle and fornix"
-   },
-   {
-    "to": "Suprachiasmatic nucleus and hypothalamus",
-    "via": "ascending serotonergic fibers"
-   },
-   {
-    "to": "Amygdala (inhibitory)",
-    "via": "ascending serotonergic fibers"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "raphe-median"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Median raphe serotonergic neurons reach the hippocampus and septal area through the medial forebrain bundle and the fornix and desynchronize hippocampal theta, tuning memory encoding and acting as a resilience system that damps the response to stress and fear; they inhibit the amygdala and the dorsal raphe, which are more anxiogenic, and project to the suprachiasmatic nucleus to modulate circadian entrainment. Together with the medullary raphe they modulate the respiratory chemoreflex and sympathetic tone, and their activity across the sleep-wake cycle mirrors the dorsal raphe. The nucleus receives the prefrontal cortex, the lateral habenula and the hypothalamus.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-sca"
+  "summary": "The median raphe nucleus is the serotonergic nucleus of the midline pontine tegmentum, below and behind the dorsal raphe, between the medial longitudinal fasciculi and the reticular formation, with the superior central nucleus of Bechterew. Its neurons project mainly to the hippocampus, the septum, the hypothalamus and the medial cortex, where serotonin regulates hippocampal theta rhythm, memory consolidation, anxiety and stress resilience, and it acts as a brake on the dorsal raphe and the amygdala. It is part of the pontine sleep circuitry and contributes to the serotonergic modulation of breathing and of the cardiovascular reflexes, and its damage in pontine strokes and in neurodegeneration adds anxiety, memory impairment and sleep disturbance to the classical signs.",
+  "anatomy": {
+    "location": "Midline of the rostral pontine tegmentum in the paramedian reticular formation, below the dorsal raphe and the aqueduct-fourth ventricle junction, above the pontine nuclei and the basis pontis, between the medial longitudinal fasciculi and lateral to the midline seam.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Prefrontal cortex",
+        "via": "corticofugal fibers"
+      },
+      {
+        "from": "Lateral habenula",
+        "via": "habenulo-raphe fibers"
+      },
+      {
+        "from": "Hypothalamus",
+        "via": "medial forebrain bundle"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Hippocampus and septal area",
+        "via": "medial forebrain bundle and fornix"
+      },
+      {
+        "to": "Suprachiasmatic nucleus and hypothalamus",
+        "via": "ascending serotonergic fibers"
+      },
+      {
+        "to": "Amygdala (inhibitory)",
+        "via": "ascending serotonergic fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Median raphe serotonergic neurons reach the hippocampus and septal area through the medial forebrain bundle and the fornix and desynchronize hippocampal theta, tuning memory encoding and acting as a resilience system that damps the response to stress and fear; they inhibit the amygdala and the dorsal raphe, which are more anxiogenic, and project to the suprachiasmatic nucleus to modulate circadian entrainment. Together with the medullary raphe they modulate the respiratory chemoreflex and sympathetic tone, and their activity across the sleep-wake cycle mirrors the dorsal raphe. The nucleus receives the prefrontal cortex, the lateral habenula and the hypothalamus.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-sca"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "raphe-median"
+        },
+        "label": "median raphe nucleus in the midline pontine tegmentum"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "raphe-median"
+        },
+        "label": "paramedian tegmentum of the rostral pons"
+      }
+    ],
+    "normalAppearance": "The midline of the rostral pontine tegmentum on axial images, in front of the fourth ventricle and behind the basis pontis; not resolved as a discrete nucleus.",
+    "pathology": [
+      {
+        "pathology": "Paramedian pontine infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the paramedian pontine tegmentum with gaze palsy, internuclear ophthalmoplegia and often mood and sleep change.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Central pontine myelinolysis",
+        "modality": "MRI",
+        "finding": "Symmetric central pontine T2 hyperintensity sparing the periphery after rapid sodium correction, with pseudobulbar signs and altered behavior.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Multiple system atrophy or Parkinson disease (functional)",
+        "modality": "PET",
+        "finding": "Reduced serotonergic markers in the pontine raphe on PET associated with anxiety, sleep and autonomic symptoms.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anxiety and reduced stress resilience",
+        "side": "bilateral",
+        "mechanism": "Loss of median raphe serotonergic damping of the amygdala and hippocampus"
+      },
+      {
+        "deficit": "Memory disturbance",
+        "side": "bilateral",
+        "mechanism": "Loss of serotonergic modulation of hippocampal theta"
+      },
+      {
+        "deficit": "Sleep-wake and circadian disturbance",
+        "side": "bilateral",
+        "mechanism": "Loss of raphe input to the suprachiasmatic nucleus and sleep circuits"
+      }
+    ],
+    "examination": [
+      "Anxiety and mood assessment in pontine lesions",
+      "Memory testing",
+      "Sleep history"
+    ],
+    "syndromes": [
+      "syn-pontine-hemorrhage",
+      "syn-locked-in"
+    ],
+    "pearls": [
+      "Two raphe nuclei, two temperaments: the dorsal raphe arouses and the median raphe calms",
+      "The median raphe reaches the hippocampus; the dorsal raphe reaches the cortex and striatum",
+      "Central pontine myelinolysis sits exactly where the median raphe lives; behavioral change is part of it"
+    ]
+  },
+  "pitfalls": [
+    "Behavioral change after a pontine stroke is usually attributed to the situation; the raphe and locus coeruleus are often part of the lesion"
   ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "raphe-median"
+  "citations": [
+    {
+      "ref": "sp-nucleus-raphe",
+      "section": "Structure and Function"
     },
-    "label": "median raphe nucleus in the midline pontine tegmentum"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "raphe-median"
+    {
+      "ref": "sp-serotonin-2",
+      "section": "Pathophysiology"
     },
-    "label": "paramedian tegmentum of the rostral pons"
-   }
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The midline of the rostral pontine tegmentum on axial images, in front of the fourth ventricle and behind the basis pontis; not resolved as a discrete nucleus.",
-  "pathology": [
-   {
-    "pathology": "Paramedian pontine infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the paramedian pontine tegmentum with gaze palsy, internuclear ophthalmoplegia and often mood and sleep change.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Central pontine myelinolysis",
-    "modality": "MRI",
-    "finding": "Symmetric central pontine T2 hyperintensity sparing the periphery after rapid sodium correction, with pseudobulbar signs and altered behavior.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Multiple system atrophy or Parkinson disease (functional)",
-    "modality": "PET",
-    "finding": "Reduced serotonergic markers in the pontine raphe on PET associated with anxiety, sleep and autonomic symptoms.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anxiety and reduced stress resilience",
-    "side": "bilateral",
-    "mechanism": "Loss of median raphe serotonergic damping of the amygdala and hippocampus"
-   },
-   {
-    "deficit": "Memory disturbance",
-    "side": "bilateral",
-    "mechanism": "Loss of serotonergic modulation of hippocampal theta"
-   },
-   {
-    "deficit": "Sleep-wake and circadian disturbance",
-    "side": "bilateral",
-    "mechanism": "Loss of raphe input to the suprachiasmatic nucleus and sleep circuits"
-   }
+  "tags": [
+    "serotonin",
+    "hippocampus",
+    "raphe"
   ],
-  "examination": [
-   "Anxiety and mood assessment in pontine lesions",
-   "Memory testing",
-   "Sleep history"
-  ],
-  "syndromes": [
-   "syn-pontine-hemorrhage",
-   "syn-locked-in"
-  ],
-  "pearls": [
-   "Two raphe nuclei, two temperaments: the dorsal raphe arouses and the median raphe calms",
-   "The median raphe reaches the hippocampus; the dorsal raphe reaches the cortex and striatum",
-   "Central pontine myelinolysis sits exactly where the median raphe lives; behavioral change is part of it"
-  ]
- },
- "pitfalls": [
-  "Behavioral change after a pontine stroke is usually attributed to the situation; the raphe and locus coeruleus are often part of the lesion"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    299,
-    301
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    205,
-    212
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    55,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    78,
-    80
-   ]
-  }
- ],
- "tags": [
-  "serotonin",
-  "hippocampus",
-  "raphe"
- ],
- "status": "draft",
- "subsystem": "pons",
- "parent": "brainstem"
+  "status": "draft",
+  "subsystem": "pons",
+  "parent": "brainstem"
 }

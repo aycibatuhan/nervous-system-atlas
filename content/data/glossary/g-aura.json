@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-aura",
- "term": "Aura",
- "definition": "The first subjective symptom of a focal seizure, produced by discharge in the cortex of onset and therefore the best localizing feature: epigastric rising and fear for the medial temporal lobe, colored shapes for the occipital lobe, tingling for the parietal lobe. Migraine aura is a spreading cortical event of minutes rather than seconds.",
- "related": [
-  "g-jacksonian-march",
-  "g-cortical-spreading-depression"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    167,
-    172
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-aura",
+  "term": "Aura",
+  "definition": "The first subjective symptom of a focal seizure, produced by discharge in the cortex of onset and therefore the best localizing feature: epigastric rising and fear for the medial temporal lobe, colored shapes for the occipital lobe, tingling for the parietal lobe. Migraine aura is a spreading cortical event of minutes rather than seconds.",
+  "related": [
+    "g-jacksonian-march",
+    "g-cortical-spreading-depression"
+  ],
+  "citations": [
+    {
+      "ref": "sp-seizure",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-focal-onset-seizure",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-migraine-with-aura",
+      "section": "Pathophysiology"
+    }
+  ]
 }

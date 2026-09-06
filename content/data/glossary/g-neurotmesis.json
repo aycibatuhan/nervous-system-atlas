@@ -1,20 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-neurotmesis",
- "term": "Neurotmesis",
- "definition": "Complete transection of a nerve including its connective tissue sheaths; regeneration fails or forms a neuroma unless the nerve is surgically repaired or grafted.",
- "related": [
-  "g-axonotmesis",
-  "g-tinel-sign"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    71,
-    130
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-neurotmesis",
+  "term": "Neurotmesis",
+  "definition": "Complete transection of a nerve including its connective tissue sheaths; regeneration fails or forms a neuroma unless the nerve is surgically repaired or grafted.",
+  "related": [
+    "g-axonotmesis",
+    "g-tinel-sign"
+  ],
+  "citations": [
+    {
+      "ref": "sp-neurotmesis",
+      "section": "Pathophysiology"
+    }
+  ]
 }

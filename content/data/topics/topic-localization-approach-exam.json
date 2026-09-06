@@ -1,160 +1,124 @@
 {
- "kind": "topic",
- "id": "topic-localization-approach-exam",
- "name": "Localization: the neurological examination as a map",
- "synonyms": [],
- "category": "approach",
- "summary": "Neurological diagnosis answers two questions in order, where is the lesion and what is it, and the first is answered by the examination read against the anatomy: the level (cortex, subcortical white matter, basal ganglia, thalamus, brainstem, cerebellum, spinal cord, root, plexus, nerve, junction, muscle), the side (crossed or uncrossed pathways), and the number of lesions (one, multiple or diffuse). Each examination component tests a system whose anatomy this atlas shows, and combinations of findings that can only be explained by one site are the strongest evidence; the pattern of onset (sudden, stepwise, progressive, relapsing) then narrows the pathology. This entry summarizes the logic that the syndrome entries apply case by case.",
- "sections": [
-  {
-   "heading": "Level: which floor of the building",
-   "body": "Cortical lesions add cortical signs (aphasia, neglect, apraxia, agnosia, field defects, seizures, cortical sensory loss) and produce weakness that favors one body part (face and arm or leg); subcortical capsular lesions produce equal face-arm-leg weakness without cortical signs; basal ganglia lesions produce movement disorders rather than weakness; thalamic lesions produce hemisensory loss of all modalities including the face; brainstem lesions produce crossed signs (a cranial nerve on one side with long-tract signs on the other), vertigo, diplopia and dysarthria; cerebellar lesions produce ipsilateral ataxia without weakness; cord lesions produce a sensory level, bilateral signs below the lesion, sphincter change and dissociated sensory loss; and peripheral lesions produce lower motor neuron signs in the distribution of a root, plexus, nerve or a length-dependent pattern with sensory loss. The upper versus lower motor neuron distinction (tone, reflexes, plantar responses, wasting, fasciculation) is the first branch of the tree."
+  "kind": "topic",
+  "id": "topic-localization-approach-exam",
+  "name": "Localization: the neurological examination as a map",
+  "synonyms": [],
+  "category": "approach",
+  "summary": "Neurological diagnosis answers two questions in order, where is the lesion and what is it, and the first is answered by the examination read against the anatomy: the level (cortex, subcortical white matter, basal ganglia, thalamus, brainstem, cerebellum, spinal cord, root, plexus, nerve, junction, muscle), the side (crossed or uncrossed pathways), and the number of lesions (one, multiple or diffuse). Each examination component tests a system whose anatomy this atlas shows, and combinations of findings that can only be explained by one site are the strongest evidence; the pattern of onset (sudden, stepwise, progressive, relapsing) then narrows the pathology. This entry summarizes the logic that the syndrome entries apply case by case.",
+  "sections": [
+    {
+      "heading": "Level: which floor of the building",
+      "body": "Cortical lesions add cortical signs (aphasia, neglect, apraxia, agnosia, field defects, seizures, cortical sensory loss) and produce weakness that favors one body part (face and arm or leg); subcortical capsular lesions produce equal face-arm-leg weakness without cortical signs; basal ganglia lesions produce movement disorders rather than weakness; thalamic lesions produce hemisensory loss of all modalities including the face; brainstem lesions produce crossed signs (a cranial nerve on one side with long-tract signs on the other), vertigo, diplopia and dysarthria; cerebellar lesions produce ipsilateral ataxia without weakness; cord lesions produce a sensory level, bilateral signs below the lesion, sphincter change and dissociated sensory loss; and peripheral lesions produce lower motor neuron signs in the distribution of a root, plexus, nerve or a length-dependent pattern with sensory loss. The upper versus lower motor neuron distinction (tone, reflexes, plantar responses, wasting, fasciculation) is the first branch of the tree."
+    },
+    {
+      "heading": "Side: the crossings",
+      "body": "The corticospinal tract crosses at the pyramidal decussation, the dorsal column pathway in the lower medulla, the spinothalamic tract within the cord one or two segments above entry, the trigeminal pathways in the pons and medulla, the optic pathway partially at the chiasm, the cerebellar outflow in the superior cerebellar peduncle (so cerebellar signs are ipsilateral), and the cranial nerve nuclei project to the same side; therefore weakness contralateral to a facial palsy that includes the forehead means a pontine lesion, pain loss on one side of the face and the other side of the body means a lateral medullary lesion, and weakness with proprioceptive loss on one side and pain loss on the other means a hemicord lesion. Gaze deviation toward the weak side means a pontine lesion, away from it a hemispheric one. Sensory levels for pin lie one or two segments below the lesion, and a Horner syndrome is ipsilateral to any lesion of the sympathetic pathway."
+    },
+    {
+      "heading": "Number and time course",
+      "body": "A single lesion is sought first; when findings cannot be explained by one site (optic neuritis plus a cord level, or a facial palsy plus a foot drop), the process is multifocal (multiple sclerosis, vasculitis, metastases, emboli) or diffuse (encephalopathy, polyneuropathy, myopathy). The tempo names the pathology: seconds to minutes and maximal at onset is vascular (ischemia, hemorrhage) or a seizure; minutes to hours with spread is migraine or seizure; hours to days is inflammatory, infectious or toxic-metabolic; weeks to months is neoplastic or subacute degenerative; months to years is degenerative or genetic; and relapsing-remitting is demyelinating, vascular or paroxysmal. Age, risk factors and the systemic examination (fever, rash, lymphadenopathy, murmurs, skin stigmata) complete the differential before any test."
+    },
+    {
+      "heading": "The examination as a system check",
+      "body": "Mental status tests the cortex and its networks (attention, language, memory, visuospatial, executive); the cranial nerves test the brainstem level by level (II and III midbrain, V-VIII pons, IX-XII medulla) and the special senses; the motor examination tests tone, power by segment, reflexes and the plantar response; the sensory examination tests the two ascending systems separately (pin and temperature for the spinothalamic, vibration and position for the dorsal columns) and the cortical modalities; coordination tests the cerebellum and its inputs; and gait integrates everything (hemiparetic, spastic, ataxic, parkinsonian, steppage, waddling, apraxic and functional gaits each have a site). A focused examination driven by the history takes ten minutes, and the atlas's syndrome entries show how each pattern is assembled from these findings."
+    }
+  ],
+  "keyPoints": [
+    "Where before what: level, side and number, then tempo",
+    "Cortical signs place the lesion in the cortex; equal face-arm-leg weakness without them places it in the capsule",
+    "Crossed findings mean brainstem; a sensory level means cord; ipsilateral ataxia means cerebellum",
+    "Sudden and maximal at onset is vascular; progressive over weeks is a mass; relapsing is demyelination",
+    "If one lesion cannot explain everything, look for a multifocal or diffuse process"
+  ],
+  "meshIds": [
+    "gyrus-precentral-l",
+    "gyrus-precentral-r",
+    "internal-capsule-l",
+    "internal-capsule-r",
+    "brainstem",
+    "spinal-cord",
+    "cerebellar-hemisphere-l",
+    "cerebellar-hemisphere-r"
+  ],
+  "related": {
+    "structureIds": [
+      "gyrus-precentral",
+      "internal-capsule",
+      "thalamus",
+      "brainstem",
+      "cerebellum",
+      "spinal-cord",
+      "pyramid",
+      "medial-lemniscus"
+    ],
+    "pathwayIds": [
+      "pathway-lateral-corticospinal",
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-corticobulbar",
+      "pathway-trigeminothalamic"
+    ],
+    "syndromeIds": [
+      "syn-lacunar-pure-motor",
+      "syn-brown-sequard",
+      "syn-wallenberg-lateral-medullary",
+      "syn-mca-superior-division",
+      "syn-cerebellar-hemispheric"
+    ],
+    "topicIds": [
+      "topic-neuromuscular-patterns",
+      "topic-neuroimaging-basics"
+    ]
   },
-  {
-   "heading": "Side: the crossings",
-   "body": "The corticospinal tract crosses at the pyramidal decussation, the dorsal column pathway in the lower medulla, the spinothalamic tract within the cord one or two segments above entry, the trigeminal pathways in the pons and medulla, the optic pathway partially at the chiasm, the cerebellar outflow in the superior cerebellar peduncle (so cerebellar signs are ipsilateral), and the cranial nerve nuclei project to the same side; therefore weakness contralateral to a facial palsy that includes the forehead means a pontine lesion, pain loss on one side of the face and the other side of the body means a lateral medullary lesion, and weakness with proprioceptive loss on one side and pain loss on the other means a hemicord lesion. Gaze deviation toward the weak side means a pontine lesion, away from it a hemispheric one. Sensory levels for pin lie one or two segments below the lesion, and a Horner syndrome is ipsilateral to any lesion of the sympathetic pathway."
-  },
-  {
-   "heading": "Number and time course",
-   "body": "A single lesion is sought first; when findings cannot be explained by one site (optic neuritis plus a cord level, or a facial palsy plus a foot drop), the process is multifocal (multiple sclerosis, vasculitis, metastases, emboli) or diffuse (encephalopathy, polyneuropathy, myopathy). The tempo names the pathology: seconds to minutes and maximal at onset is vascular (ischemia, hemorrhage) or a seizure; minutes to hours with spread is migraine or seizure; hours to days is inflammatory, infectious or toxic-metabolic; weeks to months is neoplastic or subacute degenerative; months to years is degenerative or genetic; and relapsing-remitting is demyelinating, vascular or paroxysmal. Age, risk factors and the systemic examination (fever, rash, lymphadenopathy, murmurs, skin stigmata) complete the differential before any test."
-  },
-  {
-   "heading": "The examination as a system check",
-   "body": "Mental status tests the cortex and its networks (attention, language, memory, visuospatial, executive); the cranial nerves test the brainstem level by level (II and III midbrain, V-VIII pons, IX-XII medulla) and the special senses; the motor examination tests tone, power by segment, reflexes and the plantar response; the sensory examination tests the two ascending systems separately (pin and temperature for the spinothalamic, vibration and position for the dorsal columns) and the cortical modalities; coordination tests the cerebellum and its inputs; and gait integrates everything (hemiparetic, spastic, ataxic, parkinsonian, steppage, waddling, apraxic and functional gaits each have a site). A focused examination driven by the history takes ten minutes, and the atlas's syndrome entries show how each pattern is assembled from these findings."
+  "pearls": [
+    "Examine the gait first: it screens the whole nervous system in ten steps",
+    "The forehead decides the facial palsy, the pupil decides the third nerve, the plantar decides the motor neuron",
+    "Never let imaging replace the examination in the brainstem, where the first scan is often normal"
+  ],
+  "pitfalls": [
+    "Functional (non-organic) weakness is a diagnosis of positive signs (Hoover sign, give-way weakness, inconsistency), not of a normal scan"
+  ],
+  "citations": [
+    {
+      "ref": "sp-trauma-neurological-exam",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-upper-motor-neuron-signs",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-lower-motor-neuron-lesion",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "localization",
+    "examination",
+    "approach"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "Imaging is chosen by the localization: MRI with DWI for brain and brainstem, MRI of the appropriate spinal level for cord and root, CT for acute hemorrhage and bone, vascular imaging when the tempo is vascular, and electrophysiology for the peripheral levels.",
+    "pathology": [
+      {
+        "pathology": "Capsular lacune versus cortical infarct",
+        "modality": "MRI",
+        "finding": "A small deep restricted-diffusion lesion in the posterior limb explains face-arm-leg weakness without cortical signs; a cortical lesion explains aphasia or neglect with partial weakness.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Brainstem lesion with crossed signs",
+        "modality": "MRI",
+        "finding": "Paramedian or lateral brainstem lesion at the level named by the cranial nerve; DWI may lag the examination by a day.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Spinal cord lesion with a sensory level",
+        "modality": "MRI",
+        "finding": "Intramedullary signal change or extrinsic compression at or above the clinical level, imaged with sagittal T2 and STIR of the whole cord when the level is uncertain.",
+        "sequence": "T2"
+      }
+    ]
   }
- ],
- "keyPoints": [
-  "Where before what: level, side and number, then tempo",
-  "Cortical signs place the lesion in the cortex; equal face-arm-leg weakness without them places it in the capsule",
-  "Crossed findings mean brainstem; a sensory level means cord; ipsilateral ataxia means cerebellum",
-  "Sudden and maximal at onset is vascular; progressive over weeks is a mass; relapsing is demyelination",
-  "If one lesion cannot explain everything, look for a multifocal or diffuse process"
- ],
- "meshIds": [
-  "gyrus-precentral-l",
-  "gyrus-precentral-r",
-  "internal-capsule-l",
-  "internal-capsule-r",
-  "brainstem",
-  "spinal-cord",
-  "cerebellar-hemisphere-l",
-  "cerebellar-hemisphere-r"
- ],
- "related": {
-  "structureIds": [
-   "gyrus-precentral",
-   "internal-capsule",
-   "thalamus",
-   "brainstem",
-   "cerebellum",
-   "spinal-cord",
-   "pyramid",
-   "medial-lemniscus"
-  ],
-  "pathwayIds": [
-   "pathway-lateral-corticospinal",
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-corticobulbar",
-   "pathway-trigeminothalamic"
-  ],
-  "syndromeIds": [
-   "syn-lacunar-pure-motor",
-   "syn-brown-sequard",
-   "syn-wallenberg-lateral-medullary",
-   "syn-mca-superior-division",
-   "syn-cerebellar-hemispheric"
-  ],
-  "topicIds": [
-   "topic-neuromuscular-patterns",
-   "topic-neuroimaging-basics"
-  ]
- },
- "pearls": [
-  "Examine the gait first: it screens the whole nervous system in ten steps",
-  "The forehead decides the facial palsy, the pupil decides the third nerve, the plantar decides the motor neuron",
-  "Never let imaging replace the examination in the brainstem, where the first scan is often normal"
- ],
- "pitfalls": [
-  "Functional (non-organic) weakness is a diagnosis of positive signs (Hoover sign, give-way weakness, inconsistency), not of a normal scan"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 1,
-   "pages": [
-    1,
-    10
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    25,
-    32
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    40
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    143,
-    167
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    218,
-    224
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    356,
-    362
-   ]
-  }
- ],
- "tags": [
-  "localization",
-  "examination",
-  "approach"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "Imaging is chosen by the localization: MRI with DWI for brain and brainstem, MRI of the appropriate spinal level for cord and root, CT for acute hemorrhage and bone, vascular imaging when the tempo is vascular, and electrophysiology for the peripheral levels.",
-  "pathology": [
-   {
-    "pathology": "Capsular lacune versus cortical infarct",
-    "modality": "MRI",
-    "finding": "A small deep restricted-diffusion lesion in the posterior limb explains face-arm-leg weakness without cortical signs; a cortical lesion explains aphasia or neglect with partial weakness.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Brainstem lesion with crossed signs",
-    "modality": "MRI",
-    "finding": "Paramedian or lateral brainstem lesion at the level named by the cranial nerve; DWI may lag the examination by a day.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Spinal cord lesion with a sensory level",
-    "modality": "MRI",
-    "finding": "Intramedullary signal change or extrinsic compression at or above the clinical level, imaged with sagittal T2 and STIR of the whole cord when the level is uncertain.",
-    "sequence": "T2"
-   }
-  ]
- }
 }

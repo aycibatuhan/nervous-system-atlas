@@ -1,158 +1,138 @@
 {
- "kind": "structure",
- "id": "nerve-ulnar",
- "name": "Ulnar nerve",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The terminal branch of the medial cord (C8–T1) descends on the medial side of the arm, passes behind the medial epicondyle in the cubital tunnel (where it is palpable and vulnerable), enters the forearm between the heads of flexor carpi ulnaris, supplies that muscle and the ulnar half of flexor digitorum profundus, and crosses the wrist superficial to the flexor retinaculum through Guyon's canal to supply most of the small muscles of the hand (interossei, medial lumbricals, hypothenar muscles, adductor pollicis) and sensation to the little finger and half the ring finger. Its dorsal cutaneous branch arises above the wrist, so dorsal ulnar hand sensation separates elbow from wrist lesions.",
- "anatomy": {
-  "location": "Medial arm on coracobrachialis, then behind the medial intermuscular septum, through the cubital tunnel behind the medial epicondyle, down the medial forearm under flexor carpi ulnaris with the ulnar artery, through Guyon's canal at the wrist lateral to the pisiform, into the hand as superficial (sensory) and deep (motor) branches.",
-  "subdivisions": [
-   {
-    "name": "Forearm branches",
-    "note": "flexor carpi ulnaris, flexor digitorum profundus to ring and little fingers"
-   },
-   {
-    "name": "Dorsal cutaneous branch",
-    "note": "dorsal ulnar hand; arises 5–8 cm above the wrist"
-   },
-   {
-    "name": "Superficial terminal branch",
-    "note": "palmaris brevis, sensation of little finger and medial half of ring finger"
-   },
-   {
-    "name": "Deep terminal branch",
-    "note": "hypothenar muscles, interossei, medial two lumbricals, adductor pollicis, flexor pollicis brevis (deep head)"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Finger abduction and adduction, thumb adduction, flexion of the ring and little fingers, power grip and fine finger control; sensation of the medial one and a half digits and the ulnar hand.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "nerve-ulnar",
+  "name": "Ulnar nerve",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The terminal branch of the medial cord (C8–T1) descends on the medial side of the arm, passes behind the medial epicondyle in the cubital tunnel (where it is palpable and vulnerable), enters the forearm between the heads of flexor carpi ulnaris, supplies that muscle and the ulnar half of flexor digitorum profundus, and crosses the wrist superficial to the flexor retinaculum through Guyon's canal to supply most of the small muscles of the hand (interossei, medial lumbricals, hypothenar muscles, adductor pollicis) and sensation to the little finger and half the ring finger. Its dorsal cutaneous branch arises above the wrist, so dorsal ulnar hand sensation separates elbow from wrist lesions.",
+  "anatomy": {
+    "location": "Medial arm on coracobrachialis, then behind the medial intermuscular septum, through the cubital tunnel behind the medial epicondyle, down the medial forearm under flexor carpi ulnaris with the ulnar artery, through Guyon's canal at the wrist lateral to the pisiform, into the hand as superficial (sensory) and deep (motor) branches.",
+    "subdivisions": [
+      {
+        "name": "Forearm branches",
+        "note": "flexor carpi ulnaris, flexor digitorum profundus to ring and little fingers"
+      },
+      {
+        "name": "Dorsal cutaneous branch",
+        "note": "dorsal ulnar hand; arises 5–8 cm above the wrist"
+      },
+      {
+        "name": "Superficial terminal branch",
+        "note": "palmaris brevis, sensation of little finger and medial half of ring finger"
+      },
+      {
+        "name": "Deep terminal branch",
+        "note": "hypothenar muscles, interossei, medial two lumbricals, adductor pollicis, flexor pollicis brevis (deep head)"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Finger abduction and adduction, thumb adduction, flexion of the ring and little fingers, power grip and fine finger control; sensation of the medial one and a half digits and the ulnar hand.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; fibers from C8–T1"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Elbow ultrasound and MRI show nerve enlargement at the cubital tunnel, subluxation over the epicondyle, and denervation of the interossei and flexor digitorum profundus.",
+    "pathology": [
+      {
+        "pathology": "Ulnar neuropathy at the elbow",
+        "modality": "US",
+        "finding": "Enlarged nerve at or just proximal to the medial epicondyle; nerve conduction shows focal slowing across the elbow segment.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Guyon's canal (wrist) lesion",
+        "modality": "MRI",
+        "finding": "Ganglion or hamate fracture compressing the deep branch with intrinsic denervation and spared dorsal sensation.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "Nerve conduction studies across the elbow; ultrasound; MRI of the wrist for Guyon's canal"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Numbness of the little finger and half the ring finger, weak finger abduction, wasting of the first dorsal interosseous",
+        "side": "ipsilateral",
+        "mechanism": "Ulnar nerve at the elbow (cubital tunnel), the commonest site"
+      },
+      {
+        "deficit": "Claw hand (ulnar paradox: worse with distal lesions)",
+        "side": "ipsilateral",
+        "mechanism": "Loss of lumbricals to ring and little fingers; profundus preserved in wrist lesions makes the claw worse"
+      },
+      {
+        "deficit": "Froment sign: thumb flexes when pinching paper",
+        "side": "ipsilateral",
+        "mechanism": "Adductor pollicis weakness compensated by flexor pollicis longus (median)"
+      },
+      {
+        "deficit": "Intrinsic wasting with normal sensation",
+        "side": "ipsilateral",
+        "mechanism": "Deep branch lesion in Guyon's canal (cyclist's palsy)"
+      }
+    ],
+    "examination": [
+      "Finger abduction against resistance and first dorsal interosseous bulk",
+      "Froment sign and Wartenberg sign (abducted little finger)",
+      "Sensation on the little finger, and on the dorsal ulnar hand to separate elbow from wrist",
+      "Tinel at the elbow; elbow flexion test",
+      "Flexor digitorum profundus to the little finger (spared in wrist lesions)"
+    ],
+    "syndromes": [
+      "syn-cubital-tunnel",
+      "syn-klumpke",
+      "syn-neurogenic-thoracic-outlet"
+    ],
+    "pearls": [
+      "Dorsal ulnar hand numbness means the lesion is above the wrist; normal dorsal sensation with intrinsic weakness means Guyon's canal",
+      "Hand intrinsic wasting with normal sensation everywhere should raise motor neuron disease or a C8–T1 lesion, not just an ulnar palsy"
+    ]
+  },
+  "pitfalls": [
+    "Lower trunk plexopathy and C8–T1 radiculopathy also waste the hand, but they involve median-innervated thenar muscles and medial forearm sensation too"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "citations": [
+    {
+      "ref": "sp-ulnar-nerve",
+      "section": "Structure and Function"
     },
-    "label": "cervical cord; fibers from C8–T1"
-   }
+    {
+      "ref": "sp-ulnar-nerve-entrapment",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-ulnar-nerve-block-techniques",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Elbow ultrasound and MRI show nerve enlargement at the cubital tunnel, subluxation over the epicondyle, and denervation of the interossei and flexor digitorum profundus.",
-  "pathology": [
-   {
-    "pathology": "Ulnar neuropathy at the elbow",
-    "modality": "US",
-    "finding": "Enlarged nerve at or just proximal to the medial epicondyle; nerve conduction shows focal slowing across the elbow segment.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Guyon's canal (wrist) lesion",
-    "modality": "MRI",
-    "finding": "Ganglion or hamate fracture compressing the deep branch with intrinsic denervation and spared dorsal sensation.",
-    "sequence": "STIR"
-   }
+  "tags": [
+    "pns",
+    "upper-limb"
   ],
-  "sequenceOfChoice": "Nerve conduction studies across the elbow; ultrasound; MRI of the wrist for Guyon's canal"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Numbness of the little finger and half the ring finger, weak finger abduction, wasting of the first dorsal interosseous",
-    "side": "ipsilateral",
-    "mechanism": "Ulnar nerve at the elbow (cubital tunnel), the commonest site"
-   },
-   {
-    "deficit": "Claw hand (ulnar paradox: worse with distal lesions)",
-    "side": "ipsilateral",
-    "mechanism": "Loss of lumbricals to ring and little fingers; profundus preserved in wrist lesions makes the claw worse"
-   },
-   {
-    "deficit": "Froment sign: thumb flexes when pinching paper",
-    "side": "ipsilateral",
-    "mechanism": "Adductor pollicis weakness compensated by flexor pollicis longus (median)"
-   },
-   {
-    "deficit": "Intrinsic wasting with normal sensation",
-    "side": "ipsilateral",
-    "mechanism": "Deep branch lesion in Guyon's canal (cyclist's palsy)"
-   }
-  ],
-  "examination": [
-   "Finger abduction against resistance and first dorsal interosseous bulk",
-   "Froment sign and Wartenberg sign (abducted little finger)",
-   "Sensation on the little finger, and on the dorsal ulnar hand to separate elbow from wrist",
-   "Tinel at the elbow; elbow flexion test",
-   "Flexor digitorum profundus to the little finger (spared in wrist lesions)"
-  ],
-  "syndromes": [
-   "syn-cubital-tunnel",
-   "syn-klumpke",
-   "syn-neurogenic-thoracic-outlet"
-  ],
-  "pearls": [
-   "Dorsal ulnar hand numbness means the lesion is above the wrist; normal dorsal sensation with intrinsic weakness means Guyon's canal",
-   "Hand intrinsic wasting with normal sensation everywhere should raise motor neuron disease or a C8–T1 lesion, not just an ulnar palsy"
-  ]
- },
- "pitfalls": [
-  "Lower trunk plexopathy and C8–T1 radiculopathy also waste the hand, but they involve median-innervated thenar muscles and medial forearm sensation too"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    113,
-    113
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    120,
-    120
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    147
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    150,
-    153
-   ]
+  "status": "draft",
+  "latin": "Nervus ulnaris",
+  "subsystem": "upper-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "upper-limb"
- ],
- "status": "draft",
- "latin": "Nervus ulnaris",
- "subsystem": "upper-limb",
- "level": {
-  "region": "peripheral"
- }
 }

@@ -1,113 +1,117 @@
 {
- "kind": "syndrome",
- "id": "syn-claude",
- "name": "Claude syndrome (dorsal midbrain tegmentum)",
- "eponyms": [
-  "Claude syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "red-nucleus",
-   "oculomotor-nucleus",
-   "superior-cerebellar-peduncle",
-   "level-midbrain-superior-colliculus"
+  "kind": "syndrome",
+  "id": "syn-claude",
+  "name": "Claude syndrome (dorsal midbrain tegmentum)",
+  "eponyms": [
+    "Claude syndrome"
   ],
-  "side": "ipsilateral",
-  "level": "midbrain-superior-colliculus"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -4,
-   "y": -22,
-   "z": -10
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "red-nucleus",
+      "oculomotor-nucleus",
+      "superior-cerebellar-peduncle",
+      "level-midbrain-superior-colliculus"
+    ],
+    "side": "ipsilateral",
+    "level": "midbrain-superior-colliculus"
   },
-  "radiusMm": 6
- },
- "presentation": "A patient develops a third nerve palsy on one side and, on the opposite side, an ataxic arm and leg with dysmetria and an intention tremor, without weakness. The combination of an ipsilateral oculomotor palsy and contralateral cerebellar signs places the lesion in the midbrain tegmentum, where the third nerve fascicles cross the superior cerebellar peduncle decussation and the red nucleus.",
- "deficits": [
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "oculomotor",
-   "sign": "Third nerve palsy, often with pupil involvement",
-   "substrate": "cn-03-oculomotor"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -4,
+      "y": -22,
+      "z": -10
+    },
+    "radiusMm": 6
   },
-  {
-   "modality": "cerebellar",
-   "side": "contralateral",
-   "distribution": "arm and leg",
-   "sign": "Limb ataxia, dysmetria and intention tremor",
-   "substrate": "pathway-cerebellar-circuits"
+  "presentation": "A patient develops a third nerve palsy on one side and, on the opposite side, an ataxic arm and leg with dysmetria and an intention tremor, without weakness. The combination of an ipsilateral oculomotor palsy and contralateral cerebellar signs places the lesion in the midbrain tegmentum, where the third nerve fascicles cross the superior cerebellar peduncle decussation and the red nucleus.",
+  "deficits": [
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "oculomotor",
+      "sign": "Third nerve palsy, often with pupil involvement",
+      "substrate": "cn-03-oculomotor"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "contralateral",
+      "distribution": "arm and leg",
+      "sign": "Limb ataxia, dysmetria and intention tremor",
+      "substrate": "pathway-cerebellar-circuits"
+    },
+    {
+      "modality": "motor",
+      "side": "n/a",
+      "distribution": "spared",
+      "sign": "No significant weakness (crus cerebri spared)",
+      "substrate": "pathway-lateral-corticospinal"
+    }
+  ],
+  "reasoning": "The dentate nucleus sends its output through the superior cerebellar peduncle, which decussates in the caudal midbrain and then ends in or passes through the red nucleus of the opposite side on its way to the thalamus. A lesion of the paramedian midbrain tegmentum at the level of the red nucleus therefore interrupts cerebellar outflow that has already crossed, and since that outflow, after relaying in the thalamus and motor cortex, would have crossed again through the corticospinal tract to reach the limbs on the side of the original cerebellar hemisphere, the ataxia appears on the side opposite the midbrain lesion. The oculomotor fascicles run through the same region on their way from the nucleus to the interpeduncular fossa and are lost on the side of the lesion, since the nerve is the final ipsilateral motor pathway. The crus cerebri lies ventral to the lesion and is spared, so there is no hemiplegia, which separates Claude from Weber; involvement of the red nucleus itself with rubral tremor and some weakness makes it Benedikt. The supplying vessels are the paramedian perforators from the top of the basilar and the proximal posterior cerebral artery.",
+  "imagingFindings": [
+    {
+      "pathology": "Paramedian midbrain infarct",
+      "modality": "MRI",
+      "finding": "Small area of restricted diffusion in the paramedian midbrain tegmentum at the level of the red nucleus.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Midbrain hemorrhage",
+      "modality": "CT",
+      "finding": "Small hyperdense tegmental hemorrhage; check for cavernoma on MRI.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Perforator infarct from the posterior cerebral or basilar artery",
+    "Midbrain hemorrhage or cavernoma",
+    "Demyelination"
+  ],
+  "mimics": [
+    {
+      "name": "Weber syndrome",
+      "howToDistinguish": "Contralateral hemiplegia instead of ataxia"
+    },
+    {
+      "name": "Benedikt syndrome",
+      "howToDistinguish": "Adds contralateral tremor and involuntary movements from the red nucleus"
+    },
+    {
+      "name": "Cerebellar infarct with a separate third nerve palsy",
+      "howToDistinguish": "Ataxia would be ipsilateral to the cerebellar lesion"
+    }
+  ],
+  "management": [
+    "Acute stroke treatment",
+    "Diplopia management",
+    "Physiotherapy for ataxia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-red-nucleus",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-nerve-iii-palsy",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -4,
+      "y": -22,
+      "z": -10
+    },
+    "label": "paramedian midbrain tegmentum, red nucleus"
   },
-  {
-   "modality": "motor",
-   "side": "n/a",
-   "distribution": "spared",
-   "sign": "No significant weakness (crus cerebri spared)",
-   "substrate": "pathway-lateral-corticospinal"
-  }
- ],
- "reasoning": "The dentate nucleus sends its output through the superior cerebellar peduncle, which decussates in the caudal midbrain and then ends in or passes through the red nucleus of the opposite side on its way to the thalamus. A lesion of the paramedian midbrain tegmentum at the level of the red nucleus therefore interrupts cerebellar outflow that has already crossed, and since that outflow, after relaying in the thalamus and motor cortex, would have crossed again through the corticospinal tract to reach the limbs on the side of the original cerebellar hemisphere, the ataxia appears on the side opposite the midbrain lesion. The oculomotor fascicles run through the same region on their way from the nucleus to the interpeduncular fossa and are lost on the side of the lesion, since the nerve is the final ipsilateral motor pathway. The crus cerebri lies ventral to the lesion and is spared, so there is no hemiplegia, which separates Claude from Weber; involvement of the red nucleus itself with rubral tremor and some weakness makes it Benedikt. The supplying vessels are the paramedian perforators from the top of the basilar and the proximal posterior cerebral artery.",
- "imagingFindings": [
-  {
-   "pathology": "Paramedian midbrain infarct",
-   "modality": "MRI",
-   "finding": "Small area of restricted diffusion in the paramedian midbrain tegmentum at the level of the red nucleus.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Midbrain hemorrhage",
-   "modality": "CT",
-   "finding": "Small hyperdense tegmental hemorrhage; check for cavernoma on MRI.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Perforator infarct from the posterior cerebral or basilar artery",
-  "Midbrain hemorrhage or cavernoma",
-  "Demyelination"
- ],
- "mimics": [
-  {
-   "name": "Weber syndrome",
-   "howToDistinguish": "Contralateral hemiplegia instead of ataxia"
-  },
-  {
-   "name": "Benedikt syndrome",
-   "howToDistinguish": "Adds contralateral tremor and involuntary movements from the red nucleus"
-  },
-  {
-   "name": "Cerebellar infarct with a separate third nerve palsy",
-   "howToDistinguish": "Ataxia would be ipsilateral to the cerebellar lesion"
-  }
- ],
- "management": [
-  "Acute stroke treatment",
-  "Diplopia management",
-  "Physiotherapy for ataxia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    95,
-    95
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -4,
-   "y": -22,
-   "z": -10
-  },
-  "label": "paramedian midbrain tegmentum, red nucleus"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

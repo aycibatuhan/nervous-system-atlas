@@ -31,6 +31,13 @@ licenses:
     url: https://creativecommons.org/licenses/by-nc/3.0/
     nc: true
 
+  BrainstemNavigator-NC-ND:
+    name: Brainstem Navigator licence (non-commercial research, NO redistribution of derived files)
+    url: https://www.nitrc.org/projects/brainstemnavig/
+    attribution: "Brainstem Navigator v1.0, Bianciardi lab (Massachusetts General Hospital); research use only, derived files must not leave the organisation"
+    nc: true
+    no_redistribution: true
+
 sources:
   # ---------------- MNI152NLin2009cAsym native ----------------
   - id: mni_t1w
@@ -126,6 +133,15 @@ sources:
         dest: vesselProbabilities.nii.gz
       - url: https://ndownloader.figshare.com/files/14475920
         dest: vesselRadius.nii.gz
+  - id: venat
+    group: vessels
+    license: CC-BY-4.0
+    citation: "Huck J, Wanner Y, Fan AP, Jager AT, Grahl S, Schneider U, Villringer A, Steele CJ, Tardif CL, Bazin PL, Gauthier CJ. High resolution atlas of the venous brain vasculature from 7 T quantitative susceptibility maps. Brain Struct Funct 2019;224(7):2467-2485. doi:10.1007/s00429-019-01919-4 (VENAT, figshare doi:10.6084/m9.figshare.7205960.v4)."
+    files:
+      - url: https://ndownloader.figshare.com/files/13267316
+        dest: VENAT_PartialVolume.nii.gz
+      - url: https://ndownloader.figshare.com/files/13267301
+        dest: VENAT_diameter.nii.gz
   # ---------------- BodyParts3D ----------------
   - id: bodyparts3d
     group: bp3d
@@ -157,7 +173,7 @@ sources:
         unzip: true
   - id: brainstem_navigator
     group: manual
-    license: MNI
+    license: BrainstemNavigator-NC-ND
     citation: "Bianciardi M et al. Brainstem Navigator (NITRC). Manual download required (click-through agreement)."
     manual: true
     files:

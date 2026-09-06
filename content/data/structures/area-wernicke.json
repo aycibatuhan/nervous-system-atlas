@@ -1,167 +1,155 @@
 {
- "kind": "structure",
- "id": "area-wernicke",
- "name": "Wernicke's area",
- "synonyms": [
-  "posterior superior temporal gyrus",
-  "Brodmann area 22"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-superior-temporal-posterior-l",
-  "planum-temporale-l"
- ],
- "summary": "The posterior part of the superior temporal gyrus and the planum temporale of the dominant hemisphere, wrapping onto the supramarginal gyrus. It converts the sounds processed by the adjacent auditory cortex into words and meaning and sends the plan for spoken output forward to Broca's area through the arcuate fasciculus. Its destruction, usually by an inferior division MCA infarct, produces fluent but empty speech full of paraphasias and neologisms, with impaired comprehension and repetition, and often no weakness, so the patient may be mistaken for confused or psychotic.",
- "anatomy": {
-  "location": "Posterior third of the superior temporal gyrus and the planum temporale of the dominant (usually left) hemisphere, at the posterior end of the Sylvian fissure adjacent to the supramarginal and angular gyri.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "gyrus-heschl"
-   },
-   {
-    "from": "gyrus-angular",
-    "note": "written language"
-   }
+  "kind": "structure",
+  "id": "area-wernicke",
+  "name": "Wernicke's area",
+  "synonyms": [
+    "posterior superior temporal gyrus",
+    "Brodmann area 22"
   ],
-  "efferents": [
-   {
-    "to": "area-broca",
-    "via": "tract-arcuate-fasciculus"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-superior-temporal-posterior-l",
+    "planum-temporale-l"
   ],
-  "pathways": []
- },
- "function": "Comprehension of spoken and written language, selection of words for speech, and monitoring of one's own output.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-inferior-division"
-  ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 55,
-     "y": -40,
-     "z": 15
-    },
-    "label": "posterior superior temporal gyrus at the end of the Sylvian fissure"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 55,
-     "y": -40,
-     "z": 15
-    },
-    "label": "posterior superior temporal gyrus and planum temporale"
-   }
-  ],
-  "normalAppearance": "Located on the left posterior superior temporal gyrus 50–60 mm from the midline, behind Heschl's gyrus and below the supramarginal gyrus; fMRI language mapping identifies it before temporal surgery.",
-  "pathology": [
-   {
-    "pathology": "Inferior division MCA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the left posterior superior temporal gyrus and adjacent parietal cortex.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Logopenic primary progressive aphasia",
-    "modality": "MRI",
-    "finding": "Left posterior temporal and inferior parietal atrophy, usually Alzheimer pathology.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Temporal lobe tumor near Wernicke's area",
-    "modality": "MRI",
-    "finding": "Left posterior temporal mass; awake mapping needed.",
-    "sequence": "FLAIR"
-   }
-  ],
-  "sequenceOfChoice": "DWI; T1 for atrophy; fMRI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Fluent aphasia with paraphasias, neologisms and jargon",
-    "side": "n/a",
-    "mechanism": "Loss of word selection and monitoring"
-   },
-   {
-    "deficit": "Impaired comprehension of speech and writing",
-    "side": "n/a",
-    "mechanism": "Loss of the language comprehension center"
-   },
-   {
-    "deficit": "Impaired repetition and naming",
-    "side": "n/a",
-    "mechanism": "Disconnection from Broca's area"
-   },
-   {
-    "deficit": "Superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Adjacent optic radiation"
-   },
-   {
-    "deficit": "Lack of insight, agitation",
-    "side": "n/a",
-    "mechanism": "The patient cannot monitor his own errors"
-   }
-  ],
-  "examination": [
-   "Comprehension: one, two and three-step commands; yes/no questions",
-   "Listen for paraphasias and neologisms in fluent output",
-   "Repetition, naming, reading and writing",
-   "Visual fields"
-  ],
-  "syndromes": [
-   "syn-aphasia-wernicke",
-   "syn-mca-inferior-division"
-  ],
-  "pearls": [
-   "Fluent nonsense with no weakness is a stroke, not delirium: check the visual fields and the clock",
-   "Comprehension of commands is the quickest bedside separator of Broca (preserved) from Wernicke (impaired) aphasia"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    285,
-    288
-   ]
+  "summary": "The posterior part of the superior temporal gyrus and the planum temporale of the dominant hemisphere, wrapping onto the supramarginal gyrus. It converts the sounds processed by the adjacent auditory cortex into words and meaning and sends the plan for spoken output forward to Broca's area through the arcuate fasciculus. Its destruction, usually by an inferior division MCA infarct, produces fluent but empty speech full of paraphasias and neologisms, with impaired comprehension and repetition, and often no weakness, so the patient may be mistaken for confused or psychotic.",
+  "anatomy": {
+    "location": "Posterior third of the superior temporal gyrus and the planum temporale of the dominant (usually left) hemisphere, at the posterior end of the Sylvian fissure adjacent to the supramarginal and angular gyri.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    290,
-    291
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "gyrus-heschl"
+      },
+      {
+        "from": "gyrus-angular",
+        "note": "written language"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "area-broca",
+        "via": "tract-arcuate-fasciculus"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    54,
-    56
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "temporal"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "function": "Comprehension of spoken and written language, selection of words for speech, and monitoring of one's own output.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 55,
+          "y": -40,
+          "z": 15
+        },
+        "label": "posterior superior temporal gyrus at the end of the Sylvian fissure"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 55,
+          "y": -40,
+          "z": 15
+        },
+        "label": "posterior superior temporal gyrus and planum temporale"
+      }
+    ],
+    "normalAppearance": "Located on the left posterior superior temporal gyrus 50–60 mm from the midline, behind Heschl's gyrus and below the supramarginal gyrus; fMRI language mapping identifies it before temporal surgery.",
+    "pathology": [
+      {
+        "pathology": "Inferior division MCA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the left posterior superior temporal gyrus and adjacent parietal cortex.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Logopenic primary progressive aphasia",
+        "modality": "MRI",
+        "finding": "Left posterior temporal and inferior parietal atrophy, usually Alzheimer pathology.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Temporal lobe tumor near Wernicke's area",
+        "modality": "MRI",
+        "finding": "Left posterior temporal mass; awake mapping needed.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "DWI; T1 for atrophy; fMRI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Fluent aphasia with paraphasias, neologisms and jargon",
+        "side": "n/a",
+        "mechanism": "Loss of word selection and monitoring"
+      },
+      {
+        "deficit": "Impaired comprehension of speech and writing",
+        "side": "n/a",
+        "mechanism": "Loss of the language comprehension center"
+      },
+      {
+        "deficit": "Impaired repetition and naming",
+        "side": "n/a",
+        "mechanism": "Disconnection from Broca's area"
+      },
+      {
+        "deficit": "Superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Adjacent optic radiation"
+      },
+      {
+        "deficit": "Lack of insight, agitation",
+        "side": "n/a",
+        "mechanism": "The patient cannot monitor his own errors"
+      }
+    ],
+    "examination": [
+      "Comprehension: one, two and three-step commands; yes/no questions",
+      "Listen for paraphasias and neologisms in fluent output",
+      "Repetition, naming, reading and writing",
+      "Visual fields"
+    ],
+    "syndromes": [
+      "syn-aphasia-wernicke",
+      "syn-mca-inferior-division"
+    ],
+    "pearls": [
+      "Fluent nonsense with no weakness is a stroke, not delirium: check the visual fields and the clock",
+      "Comprehension of commands is the quickest bedside separator of Broca (preserved) from Wernicke (impaired) aphasia"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-temporal-region",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "temporal"
+  ],
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

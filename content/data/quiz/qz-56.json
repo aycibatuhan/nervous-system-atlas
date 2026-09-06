@@ -1,58 +1,66 @@
 {
- "kind": "quiz",
- "id": "qz-56",
- "type": "localize",
- "vignette": "A 40-year-old man who fell asleep with his arm over a chair wakes with wrist and finger drop. The triceps is strong, the brachioradialis is weak, and sensation is lost over the dorsum of the hand and the back of the forearm.",
- "stem": "At which level is the radial nerve injured?",
- "options": [
-  {
-   "key": "A",
-   "text": "Axilla"
-  },
-  {
-   "key": "B",
-   "text": "Spiral groove of the humerus"
-  },
-  {
-   "key": "C",
-   "text": "Elbow (posterior interosseous branch)"
-  },
-  {
-   "key": "D",
-   "text": "Wrist (superficial branch)"
-  },
-  {
-   "key": "E",
-   "text": "Posterior cord of the plexus"
-  }
- ],
- "answer": "B",
- "explanation": "A spared triceps with weak brachioradialis and wrist extensors places the lesion at the spiral groove, below the triceps branches; numbness of the posterior forearm shows the posterior antebrachial cutaneous branch, which leaves in the groove, is involved, excluding a lesion below the elbow, where only the dorsal hand would be numb or, in a posterior interosseous lesion, nothing at all.",
- "targets": {
-  "structureIds": [
-   "nerve-posterior-antebrachial-cutaneous",
-   "nerve-superficial-radial",
-   "nerve-radial"
+  "kind": "quiz",
+  "id": "qz-56",
+  "type": "localize",
+  "vignette": "A 40-year-old man who fell asleep with his arm over a chair wakes with wrist and finger drop. The triceps is strong, the brachioradialis is weak, and sensation is lost over the dorsum of the hand and the back of the forearm.",
+  "stem": "At which level is the radial nerve injured?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Axilla"
+    },
+    {
+      "key": "B",
+      "text": "Spiral groove of the humerus"
+    },
+    {
+      "key": "C",
+      "text": "Elbow (posterior interosseous branch)"
+    },
+    {
+      "key": "D",
+      "text": "Wrist (superficial branch)"
+    },
+    {
+      "key": "E",
+      "text": "Posterior cord of the plexus"
+    }
   ],
-  "syndromeIds": [
-   "syn-radial-neuropathy"
+  "answer": "B",
+  "explanation": "A spared triceps with weak brachioradialis and wrist extensors places the lesion at the spiral groove, below the triceps branches; numbness of the posterior forearm shows the posterior antebrachial cutaneous branch, which leaves in the groove, is involved, excluding a lesion below the elbow, where only the dorsal hand would be numb or, in a posterior interosseous lesion, nothing at all.",
+  "targets": {
+    "structureIds": [
+      "nerve-posterior-antebrachial-cutaneous",
+      "nerve-superficial-radial",
+      "nerve-radial"
+    ],
+    "syndromeIds": [
+      "syn-radial-neuropathy"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "posterior-antebrachial-cutaneous-nerve-l",
+    "radial-nerve-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "posterior-antebrachial-cutaneous-nerve-l",
-  "radial-nerve-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-compressive-radial-neuropathy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-radial-nerve",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-forearm-nerves",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-sensory-nerves",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

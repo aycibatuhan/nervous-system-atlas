@@ -1,10 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-kernicterus",
- "term": "Kernicterus",
- "definition": "Bilirubin toxicity of the neonatal brain, selectively damaging the globus pallidus, subthalamic nucleus, hippocampus and brainstem nuclei and producing dyskinetic cerebral palsy, deafness and upgaze palsy; the immature blood-brain barrier lets unconjugated bilirubin in.",
- "related": [
-  "g-blood-brain-barrier"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-kernicterus",
+  "term": "Kernicterus",
+  "definition": "Bilirubin toxicity of the neonatal brain, selectively damaging the globus pallidus, subthalamic nucleus, hippocampus and brainstem nuclei and producing dyskinetic cerebral palsy, deafness and upgaze palsy; the immature blood-brain barrier lets unconjugated bilirubin in.",
+  "related": [
+    "g-blood-brain-barrier"
+  ],
+  "citations": [
+    {
+      "ref": "sp-kernicterus",
+      "section": "Pathophysiology"
+    }
+  ]
 }

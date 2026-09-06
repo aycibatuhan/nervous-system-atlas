@@ -1,120 +1,108 @@
 {
- "kind": "pathway",
- "id": "pathway-reticulospinal",
- "name": "Reticulospinal tracts",
- "synonyms": [],
- "type": "descending",
- "modality": "posture, locomotion, tone and autonomic modulation",
- "summary": "The pontine and medullary reticular formation send two tracts to the cord: the pontine (medial) reticulospinal tract, uncrossed in the anterior funiculus, which facilitates extensors and axial muscles, and the medullary (lateral) reticulospinal tract, partly crossed in the lateral funiculus, which inhibits extensor tone and modulates reflexes and pain transmission. Driven by the cortex, they form the main route for postural adjustments, anticipatory postural control and locomotor commands, and their imbalance after upper motor neuron lesions (loss of the cortical drive to the inhibitory medullary tract) contributes to spasticity more than the loss of the corticospinal tract itself.",
- "origin": {
-  "structures": [
-   "reticular-formation"
+  "kind": "pathway",
+  "id": "pathway-reticulospinal",
+  "name": "Reticulospinal tracts",
+  "synonyms": [],
+  "type": "descending",
+  "modality": "posture, locomotion, tone and autonomic modulation",
+  "summary": "The pontine and medullary reticular formation send two tracts to the cord: the pontine (medial) reticulospinal tract, uncrossed in the anterior funiculus, which facilitates extensors and axial muscles, and the medullary (lateral) reticulospinal tract, partly crossed in the lateral funiculus, which inhibits extensor tone and modulates reflexes and pain transmission. Driven by the cortex, they form the main route for postural adjustments, anticipatory postural control and locomotor commands, and their imbalance after upper motor neuron lesions (loss of the cortical drive to the inhibitory medullary tract) contributes to spasticity more than the loss of the corticospinal tract itself.",
+  "origin": {
+    "structures": [
+      "reticular-formation"
+    ],
+    "note": "Pontine reticular nuclei (nucleus reticularis pontis oralis and caudalis) and the medullary gigantocellular reticular nucleus, driven by the premotor cortex."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Reticular formation neuron",
+      "synapse": "spinal interneurons and gamma and alpha motor neurons over many segments"
+    },
+    {
+      "order": 2,
+      "cellBody": "Motor neuron",
+      "synapse": "axial and proximal muscles"
+    }
   ],
-  "note": "Pontine reticular nuclei (nucleus reticularis pontis oralis and caudalis) and the medullary gigantocellular reticular nucleus, driven by the premotor cortex."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Reticular formation neuron",
-   "synapse": "spinal interneurons and gamma and alpha motor neurons over many segments"
+  "decussation": {
+    "level": "Partly crossed (medullary tract)",
+    "note": "Pontine tract uncrossed; medullary tract bilateral."
   },
-  {
-   "order": 2,
-   "cellBody": "Motor neuron",
-   "synapse": "axial and proximal muscles"
-  }
- ],
- "decussation": {
-  "level": "Partly crossed (medullary tract)",
-  "note": "Pontine tract uncrossed; medullary tract bilateral."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "reticular-formation",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "pontine and medullary reticular nuclei"
-  },
-  {
-   "order": 2,
-   "structureId": "level-medulla-olive",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "medullary tract descends in the lateral tegmentum"
-  },
-  {
-   "order": 3,
-   "structureId": "spinal-white-columns",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "pontine tract in the anterior funiculus, medullary tract in the lateral funiculus"
-  },
-  {
-   "order": 4,
-   "structureId": "spinal-grey-anterior-horn",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "interneurons and motor neurons of axial and proximal muscles; also autonomic neurons"
-  }
- ],
- "termination": "Interneurons and motor neurons throughout the cord, especially for axial and proximal muscles; sympathetic preganglionic neurons; dorsal horn (pain modulation).",
- "meshIds": [
-  "tract-reticulospinal-l",
-  "tract-reticulospinal-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Cortical or capsular lesion (loss of drive to the medullary inhibitory tract)",
-   "effects": "Spasticity, clasp-knife tone and hyperreflexia below the lesion",
-   "side": "contralateral"
-  },
-  {
-   "level": "Pontine tegmental lesion",
-   "effects": "Loss of anticipatory postural adjustments; contributes to decerebrate posturing when combined with vestibulospinal release",
-   "side": "bilateral"
-  },
-  {
-   "level": "Medullary lesion",
-   "effects": "Loss of descending pain inhibition and of autonomic modulation (blood pressure lability)",
-   "side": "bilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Spasticity is largely a reticulospinal problem: the corticospinal tract alone produces weakness and clumsiness, not hypertonia",
-   "Reticulospinal pathways explain why patients with corticospinal lesions can still walk with a stiff gait: the medial descending systems drive locomotion"
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "reticular-formation",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "pontine and medullary reticular nuclei"
+    },
+    {
+      "order": 2,
+      "structureId": "level-medulla-olive",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "medullary tract descends in the lateral tegmentum"
+    },
+    {
+      "order": 3,
+      "structureId": "spinal-white-columns",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "pontine tract in the anterior funiculus, medullary tract in the lateral funiculus"
+    },
+    {
+      "order": 4,
+      "structureId": "spinal-grey-anterior-horn",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "interneurons and motor neurons of axial and proximal muscles; also autonomic neurons"
+    }
   ],
-  "syndromes": [
-   "syn-complete-transection-spinal-shock",
-   "syn-central-transtentorial-herniation"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    156,
-    157
-   ]
+  "termination": "Interneurons and motor neurons throughout the cord, especially for axial and proximal muscles; sympathetic preganglionic neurons; dorsal horn (pain modulation).",
+  "meshIds": [
+    "tract-reticulospinal-l",
+    "tract-reticulospinal-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Cortical or capsular lesion (loss of drive to the medullary inhibitory tract)",
+      "effects": "Spasticity, clasp-knife tone and hyperreflexia below the lesion",
+      "side": "contralateral"
+    },
+    {
+      "level": "Pontine tegmental lesion",
+      "effects": "Loss of anticipatory postural adjustments; contributes to decerebrate posturing when combined with vestibulospinal release",
+      "side": "bilateral"
+    },
+    {
+      "level": "Medullary lesion",
+      "effects": "Loss of descending pain inhibition and of autonomic modulation (blood pressure lability)",
+      "side": "bilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Spasticity is largely a reticulospinal problem: the corticospinal tract alone produces weakness and clumsiness, not hypertonia",
+      "Reticulospinal pathways explain why patients with corticospinal lesions can still walk with a stiff gait: the medial descending systems drive locomotion"
+    ],
+    "syndromes": [
+      "syn-complete-transection-spinal-shock",
+      "syn-central-transtentorial-herniation"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    299,
-    301
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    36
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-reticular-formation",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-decerebrate-and-decorticate-posturing",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-spasticity",
+      "section": "Pathophysiology"
+    }
+  ],
+  "status": "draft"
 }

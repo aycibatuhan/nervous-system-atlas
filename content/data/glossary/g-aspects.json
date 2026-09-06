@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-aspects",
- "term": "ASPECTS",
- "definition": "The Alberta Stroke Program Early CT Score: ten regions of the MCA territory on two CT levels, one point deducted for each region with early ischemic change; low scores predict poor outcome and hemorrhage after reperfusion.",
- "related": [
-  "g-insular-ribbon-sign",
-  "g-penumbra"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-aspects",
+  "term": "ASPECTS",
+  "definition": "The Alberta Stroke Program Early CT Score: ten regions of the MCA territory on two CT levels, one point deducted for each region with early ischemic change; low scores predict poor outcome and hemorrhage after reperfusion.",
+  "related": [
+    "g-insular-ribbon-sign",
+    "g-penumbra"
+  ],
+  "citations": [
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "Pathophysiology"
+    }
+  ]
 }

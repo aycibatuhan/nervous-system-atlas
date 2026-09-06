@@ -1,180 +1,156 @@
 {
- "kind": "structure",
- "id": "gyrus-middle-temporal-anterior",
- "name": "Middle temporal gyrus, anterior division",
- "synonyms": [
-  "anterior MTG",
-  "area 21"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-middle-temporal-anterior-l",
-  "gyrus-middle-temporal-anterior-r"
- ],
- "summary": "The anterior middle temporal gyrus lies between the superior and inferior temporal sulci in the front half of the lateral temporal lobe, forward of the level of the posterior insula. It is heteromodal association cortex that stores the meanings of words and the knowledge of objects and people, forming with the temporal pole the semantic system of the ventral language stream. It is supplied by the inferior division of the middle cerebral artery with a contribution from the posterior cerebral artery at its lower border, it atrophies early in semantic dementia and Alzheimer disease, and it is the lateral cortex most often included in an anterior temporal lobectomy for medial temporal epilepsy.",
- "anatomy": {
-  "location": "Anterior half of the middle of the three lateral temporal gyri, bounded above by the superior temporal sulcus and below by the inferior temporal sulcus, continuous in front with the temporal pole and behind with the posterior division.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Superior temporal gyrus (auditory identification)",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Fusiform and inferior temporal cortex (visual objects)",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Temporal pole and amygdala",
-    "via": "short association fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-middle-temporal-anterior",
+  "name": "Middle temporal gyrus, anterior division",
+  "synonyms": [
+    "anterior MTG",
+    "area 21"
   ],
-  "efferents": [
-   {
-    "to": "Inferior frontal gyrus (pars triangularis)",
-    "via": "inferior fronto-occipital and uncinate fasciculi"
-   },
-   {
-    "to": "Angular gyrus",
-    "via": "middle longitudinal fasciculus"
-   },
-   {
-    "to": "Entorhinal cortex",
-    "via": "perforant path input via parahippocampal cortex"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-middle-temporal-anterior-l",
+    "gyrus-middle-temporal-anterior-r"
   ],
-  "pathways": [
-   "pathway-auditory",
-   "pathway-visual"
-  ]
- },
- "function": "The anterior middle temporal cortex links the sound and the written form of a word with its meaning and stores knowledge about objects, animals and famous people in a modality-independent form; on the left it is essential for comprehension of single words and for naming, on the right it contributes to recognizing familiar faces and voices and to understanding social scenes and narratives. It receives the visual object stream from the fusiform and inferior temporal cortex and the auditory identification stream from the superior temporal gyrus and projects to the inferior frontal gyrus through the inferior fronto-occipital and uncinate fasciculi. Seizure spread into this cortex produces the auditory and complex auras of lateral temporal epilepsy.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division",
-   "artery-pca"
+  "summary": "The anterior middle temporal gyrus lies between the superior and inferior temporal sulci in the front half of the lateral temporal lobe, forward of the level of the posterior insula. It is heteromodal association cortex that stores the meanings of words and the knowledge of objects and people, forming with the temporal pole the semantic system of the ventral language stream. It is supplied by the inferior division of the middle cerebral artery with a contribution from the posterior cerebral artery at its lower border, it atrophies early in semantic dementia and Alzheimer disease, and it is the lateral cortex most often included in an anterior temporal lobectomy for medial temporal epilepsy.",
+  "anatomy": {
+    "location": "Anterior half of the middle of the three lateral temporal gyri, bounded above by the superior temporal sulcus and below by the inferior temporal sulcus, continuous in front with the temporal pole and behind with the posterior division.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Superior temporal gyrus (auditory identification)",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Fusiform and inferior temporal cortex (visual objects)",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Temporal pole and amygdala",
+        "via": "short association fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Inferior frontal gyrus (pars triangularis)",
+        "via": "inferior fronto-occipital and uncinate fasciculi"
+      },
+      {
+        "to": "Angular gyrus",
+        "via": "middle longitudinal fasciculus"
+      },
+      {
+        "to": "Entorhinal cortex",
+        "via": "perforant path input via parahippocampal cortex"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory",
+      "pathway-visual"
+    ]
+  },
+  "function": "The anterior middle temporal cortex links the sound and the written form of a word with its meaning and stores knowledge about objects, animals and famous people in a modality-independent form; on the left it is essential for comprehension of single words and for naming, on the right it contributes to recognizing familiar faces and voices and to understanding social scenes and narratives. It receives the visual object stream from the fusiform and inferior temporal cortex and the auditory identification stream from the superior temporal gyrus and projects to the inferior frontal gyrus through the inferior fronto-occipital and uncinate fasciculi. Seizure spread into this cortex produces the auditory and complex auras of lateral temporal epilepsy.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-mca-temporal",
+      "territory-pca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-middle-temporal-anterior-l"
+        },
+        "label": "anterior middle temporal gyrus between the superior and inferior temporal sulci"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-middle-temporal-anterior-r"
+        },
+        "label": "lateral temporal cortex at the level of the amygdala"
+      }
+    ],
+    "normalAppearance": "The middle of the three lateral temporal gyri on coronal images through the amygdala and the anterior hippocampus, separated from the superior temporal gyrus by the deep superior temporal sulcus.",
+    "pathology": [
+      {
+        "pathology": "Semantic dementia",
+        "modality": "MRI",
+        "finding": "Asymmetric anterior temporal atrophy involving the middle and inferior temporal gyri and the temporal pole with a widened superior temporal sulcus.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "MRI",
+        "finding": "Middle temporal and medial temporal atrophy with hippocampal volume loss; the lateral temporal loss follows the entorhinal and hippocampal changes.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Lateral temporal seizures",
+        "modality": "EEG",
+        "finding": "Auditory hallucinations, vertigo or complex visual auras with an anterior temporal focus on scalp EEG.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anomia and impaired single-word comprehension (left)",
+        "side": "n/a",
+        "mechanism": "Loss of the lexical-semantic store of the anterior middle temporal gyrus"
+      },
+      {
+        "deficit": "Difficulty recognizing familiar people and objects (right)",
+        "side": "n/a",
+        "mechanism": "Loss of person and object knowledge in the right anterior temporal cortex"
+      },
+      {
+        "deficit": "Complex auditory or experiential auras",
+        "side": "n/a",
+        "mechanism": "Ictal activation of lateral temporal association cortex"
+      }
+    ],
+    "examination": [
+      "Naming of pictures of increasing difficulty and definition of words",
+      "Picture matching by meaning (which two go together)",
+      "Famous face naming and identification"
+    ],
+    "syndromes": [
+      "syn-aphasia-wernicke"
+    ],
+    "pearls": [
+      "Semantic loss means the patient asks what a familiar word means; the speech itself stays fluent and grammatical",
+      "Anterior lateral temporal cortex is the first cortex beyond the hippocampus to atrophy in Alzheimer disease",
+      "Auditory and vertiginous auras are lateral temporal; fear and epigastric rising are medial"
+    ]
+  },
+  "pitfalls": [
+    "Word-finding difficulty with intact comprehension is not semantic dementia; test what the patient knows about the word they cannot find"
   ],
-  "territories": [
-   "territory-mca-temporal",
-   "territory-pca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-middle-temporal-anterior-l"
+  "citations": [
+    {
+      "ref": "sp-primary-progressive-aphasia",
+      "section": "Pathophysiology"
     },
-    "label": "anterior middle temporal gyrus between the superior and inferior temporal sulci"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-middle-temporal-anterior-r"
-    },
-    "label": "lateral temporal cortex at the level of the amygdala"
-   }
+    {
+      "ref": "sp-aphasia",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "The middle of the three lateral temporal gyri on coronal images through the amygdala and the anterior hippocampus, separated from the superior temporal gyrus by the deep superior temporal sulcus.",
-  "pathology": [
-   {
-    "pathology": "Semantic dementia",
-    "modality": "MRI",
-    "finding": "Asymmetric anterior temporal atrophy involving the middle and inferior temporal gyri and the temporal pole with a widened superior temporal sulcus.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "MRI",
-    "finding": "Middle temporal and medial temporal atrophy with hippocampal volume loss; the lateral temporal loss follows the entorhinal and hippocampal changes.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Lateral temporal seizures",
-    "modality": "EEG",
-    "finding": "Auditory hallucinations, vertigo or complex visual auras with an anterior temporal focus on scalp EEG.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anomia and impaired single-word comprehension (left)",
-    "side": "n/a",
-    "mechanism": "Loss of the lexical-semantic store of the anterior middle temporal gyrus"
-   },
-   {
-    "deficit": "Difficulty recognizing familiar people and objects (right)",
-    "side": "n/a",
-    "mechanism": "Loss of person and object knowledge in the right anterior temporal cortex"
-   },
-   {
-    "deficit": "Complex auditory or experiential auras",
-    "side": "n/a",
-    "mechanism": "Ictal activation of lateral temporal association cortex"
-   }
+  "tags": [
+    "semantic",
+    "ventral stream"
   ],
-  "examination": [
-   "Naming of pictures of increasing difficulty and definition of words",
-   "Picture matching by meaning (which two go together)",
-   "Famous face naming and identification"
-  ],
-  "syndromes": [
-   "syn-aphasia-wernicke"
-  ],
-  "pearls": [
-   "Semantic loss means the patient asks what a familiar word means; the speech itself stays fluent and grammatical",
-   "Anterior lateral temporal cortex is the first cortex beyond the hippocampus to atrophy in Alzheimer disease",
-   "Auditory and vertiginous auras are lateral temporal; fear and epigastric rising are medial"
-  ]
- },
- "pitfalls": [
-  "Word-finding difficulty with intact comprehension is not semantic dementia; test what the patient knows about the word they cannot find"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    287,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    238
-   ]
-  }
- ],
- "tags": [
-  "semantic",
-  "ventral stream"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

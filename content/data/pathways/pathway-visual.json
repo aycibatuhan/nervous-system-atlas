@@ -1,186 +1,173 @@
 {
- "kind": "pathway",
- "id": "pathway-visual",
- "name": "Visual pathway",
- "synonyms": [
-  "retinogeniculocalcarine pathway",
-  "geniculostriate pathway"
- ],
- "type": "visual",
- "modality": "vision",
- "summary": "Light falling on the retina is converted by photoreceptors, bipolar cells and ganglion cells into action potentials that leave the eye in the optic nerve. At the chiasm the fibers from the nasal retina (temporal field) cross so that each optic tract carries the opposite hemifield from both eyes to the lateral geniculate body. Geniculate neurons project as the optic radiation: fibers for the upper field loop forward into the temporal lobe (Meyer's loop) and fibers for the lower field pass through the parietal lobe, all ending in the calcarine cortex with the macula at the pole. The pathway is the most precisely localizable in neurology: the shape of the field defect, its congruity, macular sparing and the pupils together give the level.",
- "origin": {
-  "structures": [
-   "cn-02-optic"
+  "kind": "pathway",
+  "id": "pathway-visual",
+  "name": "Visual pathway",
+  "synonyms": [
+    "retinogeniculocalcarine pathway",
+    "geniculostriate pathway"
   ],
-  "note": "Retinal ganglion cells (third-order neurons of the retina) form the optic nerve; the pathway is CNS from the retina onward."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Photoreceptor and bipolar cell",
-   "synapse": "retinal ganglion cell"
+  "type": "visual",
+  "modality": "vision",
+  "summary": "Light falling on the retina is converted by photoreceptors, bipolar cells and ganglion cells into action potentials that leave the eye in the optic nerve. At the chiasm the fibers from the nasal retina (temporal field) cross so that each optic tract carries the opposite hemifield from both eyes to the lateral geniculate body. Geniculate neurons project as the optic radiation: fibers for the upper field loop forward into the temporal lobe (Meyer's loop) and fibers for the lower field pass through the parietal lobe, all ending in the calcarine cortex with the macula at the pole. The pathway is the most precisely localizable in neurology: the shape of the field defect, its congruity, macular sparing and the pupils together give the level.",
+  "origin": {
+    "structures": [
+      "cn-02-optic"
+    ],
+    "note": "Retinal ganglion cells (third-order neurons of the retina) form the optic nerve; the pathway is CNS from the retina onward."
   },
-  {
-   "order": 2,
-   "cellBody": "Retinal ganglion cell",
-   "synapse": "lateral geniculate nucleus (also pretectum, superior colliculus, suprachiasmatic nucleus)"
-  },
-  {
-   "order": 3,
-   "cellBody": "Lateral geniculate neuron",
-   "synapse": "layer IV of the striate cortex via the optic radiation"
-  }
- ],
- "decussation": {
-  "level": "Optic chiasm",
-  "structureId": "optic-chiasm",
-  "note": "Nasal retinal fibers (about 53%) cross; temporal fibers remain uncrossed."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "cn-02-optic",
-   "meshId": "optic-nerve-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "optic nerve from the disc through the optic canal"
-  },
-  {
-   "order": 2,
-   "structureId": "optic-chiasm",
-   "meshId": "optic-chiasm",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "partial decussation above the sella"
-  },
-  {
-   "order": 3,
-   "structureId": "cn-02-optic",
-   "meshId": "optic-tract-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "optic tract around the cerebral peduncle carrying the contralateral hemifield"
-  },
-  {
-   "order": 4,
-   "structureId": "lateral-geniculate-nucleus",
-   "meshId": "lateral-geniculate-nucleus-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "six-layered relay; pupillary fibers leave before it"
-  },
-  {
-   "order": 5,
-   "structureId": "lobe-temporal",
-   "meshId": "tract-optic-radiation-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "Meyer's loop through the temporal lobe (upper field)"
-  },
-  {
-   "order": 6,
-   "structureId": "lobe-parietal",
-   "meshId": "tract-optic-radiation-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "parietal fibers (lower field)"
-  },
-  {
-   "order": 7,
-   "structureId": "cortex-calcarine",
-   "meshId": "cortex-intracalcarine-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "striate cortex; macula at the pole"
-  }
- ],
- "termination": "Primary visual cortex lining the calcarine sulcus, with onward projection to extrastriate areas (V2–V5), the ventral stream (temporal) and the dorsal stream (parietal).",
- "meshIds": [
-  "optic-nerve-l",
-  "optic-nerve-r",
-  "optic-chiasm",
-  "optic-tract-l",
-  "optic-tract-r",
-  "tract-optic-radiation-l",
-  "tract-optic-radiation-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Retina or optic nerve",
-   "effects": "Monocular loss (central scotoma, altitudinal or arcuate defects) with an RAPD and reduced acuity/color",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Chiasm",
-   "effects": "Bitemporal hemianopia (or junctional scotoma); acuity preserved unless the nerves are involved",
-   "side": "bilateral"
-  },
-  {
-   "level": "Optic tract",
-   "effects": "Incongruous contralateral homonymous hemianopia with a contralateral RAPD and later bow-tie optic atrophy",
-   "side": "contralateral"
-  },
-  {
-   "level": "Lateral geniculate body",
-   "effects": "Congruous sectoranopia or quadrantic defects with normal pupils",
-   "side": "contralateral"
-  },
-  {
-   "level": "Meyer's loop (temporal lobe)",
-   "effects": "Contralateral superior quadrantanopia ('pie in the sky')",
-   "side": "contralateral"
-  },
-  {
-   "level": "Parietal radiation",
-   "effects": "Contralateral inferior quadrantanopia, often with neglect or asymmetric optokinetic nystagmus",
-   "side": "contralateral"
-  },
-  {
-   "level": "Calcarine cortex",
-   "effects": "Highly congruous contralateral hemianopia with macular sparing; pupils normal",
-   "side": "contralateral"
-  },
-  {
-   "level": "Bilateral occipital cortex",
-   "effects": "Cortical blindness with normal pupils and, in Anton syndrome, denial",
-   "side": "bilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Monocular = in front of the chiasm; bitemporal = chiasm; homonymous = behind the chiasm, and the more congruous the more posterior",
-   "An RAPD localizes to the nerve, chiasm or tract; geniculate, radiation and cortical lesions spare the pupil",
-   "Macular sparing means occipital cortex with collateral MCA supply"
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Photoreceptor and bipolar cell",
+      "synapse": "retinal ganglion cell"
+    },
+    {
+      "order": 2,
+      "cellBody": "Retinal ganglion cell",
+      "synapse": "lateral geniculate nucleus (also pretectum, superior colliculus, suprachiasmatic nucleus)"
+    },
+    {
+      "order": 3,
+      "cellBody": "Lateral geniculate neuron",
+      "synapse": "layer IV of the striate cortex via the optic radiation"
+    }
   ],
-  "syndromes": [
-   "syn-optic-neuritis",
-   "syn-chiasmal-bitemporal",
-   "syn-homonymous-hemianopia",
-   "syn-pca-infarct",
-   "syn-anton",
-   "syn-alexia-without-agraphia"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    324,
-    329
-   ]
+  "decussation": {
+    "level": "Optic chiasm",
+    "structureId": "optic-chiasm",
+    "note": "Nasal retinal fibers (about 53%) cross; temporal fibers remain uncrossed."
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    349,
-    350
-   ]
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "cn-02-optic",
+      "meshId": "optic-nerve-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "optic nerve from the disc through the optic canal"
+    },
+    {
+      "order": 2,
+      "structureId": "optic-chiasm",
+      "meshId": "optic-chiasm",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "partial decussation above the sella"
+    },
+    {
+      "order": 3,
+      "structureId": "cn-02-optic",
+      "meshId": "optic-tract-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "optic tract around the cerebral peduncle carrying the contralateral hemifield"
+    },
+    {
+      "order": 4,
+      "structureId": "lateral-geniculate-nucleus",
+      "meshId": "lateral-geniculate-nucleus-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "six-layered relay; pupillary fibers leave before it"
+    },
+    {
+      "order": 5,
+      "structureId": "lobe-temporal",
+      "meshId": "tract-optic-radiation-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "Meyer's loop through the temporal lobe (upper field)"
+    },
+    {
+      "order": 6,
+      "structureId": "lobe-parietal",
+      "meshId": "tract-optic-radiation-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "parietal fibers (lower field)"
+    },
+    {
+      "order": 7,
+      "structureId": "cortex-calcarine",
+      "meshId": "cortex-intracalcarine-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "striate cortex; macula at the pole"
+    }
+  ],
+  "termination": "Primary visual cortex lining the calcarine sulcus, with onward projection to extrastriate areas (V2–V5), the ventral stream (temporal) and the dorsal stream (parietal).",
+  "meshIds": [
+    "optic-nerve-l",
+    "optic-nerve-r",
+    "optic-chiasm",
+    "optic-tract-l",
+    "optic-tract-r",
+    "tract-optic-radiation-l",
+    "tract-optic-radiation-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Retina or optic nerve",
+      "effects": "Monocular loss (central scotoma, altitudinal or arcuate defects) with an RAPD and reduced acuity/color",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Chiasm",
+      "effects": "Bitemporal hemianopia (or junctional scotoma); acuity preserved unless the nerves are involved",
+      "side": "bilateral"
+    },
+    {
+      "level": "Optic tract",
+      "effects": "Incongruous contralateral homonymous hemianopia with a contralateral RAPD and later bow-tie optic atrophy",
+      "side": "contralateral"
+    },
+    {
+      "level": "Lateral geniculate body",
+      "effects": "Congruous sectoranopia or quadrantic defects with normal pupils",
+      "side": "contralateral"
+    },
+    {
+      "level": "Meyer's loop (temporal lobe)",
+      "effects": "Contralateral superior quadrantanopia ('pie in the sky')",
+      "side": "contralateral"
+    },
+    {
+      "level": "Parietal radiation",
+      "effects": "Contralateral inferior quadrantanopia, often with neglect or asymmetric optokinetic nystagmus",
+      "side": "contralateral"
+    },
+    {
+      "level": "Calcarine cortex",
+      "effects": "Highly congruous contralateral hemianopia with macular sparing; pupils normal",
+      "side": "contralateral"
+    },
+    {
+      "level": "Bilateral occipital cortex",
+      "effects": "Cortical blindness with normal pupils and, in Anton syndrome, denial",
+      "side": "bilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Monocular = in front of the chiasm; bitemporal = chiasm; homonymous = behind the chiasm, and the more congruous the more posterior",
+      "An RAPD localizes to the nerve, chiasm or tract; geniculate, radiation and cortical lesions spare the pupil",
+      "Macular sparing means occipital cortex with collateral MCA supply"
+    ],
+    "syndromes": [
+      "syn-optic-neuritis",
+      "syn-chiasmal-bitemporal",
+      "syn-homonymous-hemianopia",
+      "syn-pca-infarct",
+      "syn-anton",
+      "syn-alexia-without-agraphia"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  }
- ],
- "status": "draft",
- "somatotopy": "Retinotopic throughout: upper retina (lower field) stays superior in the tract, radiation (parietal) and cortex (cuneus); lower retina (upper field) runs inferiorly (Meyer's loop, lingual gyrus); macula central in the nerve, posterior in the chiasm, occupying the occipital pole."
+  "citations": [
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-visual-discrimination"
+    }
+  ],
+  "status": "draft",
+  "somatotopy": "Retinotopic throughout: upper retina (lower field) stays superior in the tract, radiation (parietal) and cortex (cuneus); lower retina (upper field) runs inferiorly (Meyer's loop, lingual gyrus); macula central in the nerve, posterior in the chiasm, occupying the occipital pole."
 }

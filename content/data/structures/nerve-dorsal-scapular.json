@@ -1,133 +1,129 @@
 {
- "kind": "structure",
- "id": "nerve-dorsal-scapular",
- "name": "Dorsal scapular nerve",
- "synonyms": [
-  "nerve to the rhomboids"
- ],
- "system": "peripheral",
- "meshIds": [
-  "dorsal-scapular-nerve-l",
-  "dorsal-scapular-nerve-r"
- ],
- "summary": "The dorsal scapular nerve arises from the C5 root (with a C4 contribution) above the upper trunk, pierces the scalenus medius and descends along the medial border of the scapula deep to the levator scapulae and the rhomboids, which it supplies. Because it leaves the root before the plexus forms, rhomboid weakness distinguishes a C5 root lesion from an upper trunk lesion, and its EMG is one of the tests that places a lesion at the root: a C5 radiculopathy denervates the rhomboids, whereas Erb palsy of the upper trunk spares them. It is entrapped in the scalenus medius, producing interscapular pain and scapular winging in a pattern different from that of the long thoracic nerve.",
- "anatomy": {
-  "location": "Leaves the C5 anterior ramus in the neck, pierces the scalenus medius, runs beneath the levator scapulae along the medial scapular border with the dorsal scapular artery, deep to the rhomboid minor and major, which it supplies together with the levator scapulae.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Motor to the levator scapulae and the rhomboids, it elevates and retracts the scapula and stabilizes it during arm movement; its loss produces mild lateral winging of the scapula with the inferior angle displaced laterally (the opposite direction from serratus anterior weakness), difficulty bracing the shoulders back and a dull interscapular ache. Its origin proximal to the plexus makes it a root marker: rhomboid denervation on EMG with deltoid and biceps weakness means the C5 root or a preganglionic avulsion (a poor prognosis for repair), whereas spared rhomboids mean a postganglionic upper trunk injury that may regenerate. Entrapment in the scalenus medius accompanies neck trauma and thoracic outlet syndromes.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-dorsal-scapular",
+  "name": "Dorsal scapular nerve",
+  "synonyms": [
+    "nerve to the rhomboids"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "dorsal-scapular-nerve-l"
-    },
-    "label": "dorsal scapular nerve along the medial scapular border"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "dorsal-scapular-nerve-r"
-    },
-    "label": "nerve piercing the scalenus medius from the C5 root"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "dorsal-scapular-nerve-l",
+    "dorsal-scapular-nerve-r"
   ],
-  "normalAppearance": "A small nerve piercing the scalenus medius and running beneath the levator scapulae on ultrasound; routine MRI shows only its muscles, which show denervation edema or fatty atrophy.",
-  "pathology": [
-   {
-    "pathology": "C5 radiculopathy or root avulsion",
-    "modality": "EMG/NCS",
-    "finding": "Denervation of the rhomboids with the deltoid, biceps and supraspinatus; a pseudomeningocele on myelography or MRI marks a root avulsion.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Rhomboid denervation",
-    "modality": "MRI",
-    "finding": "STIR hyperintensity and later fatty atrophy of the rhomboids and levator scapulae with a normal serratus anterior.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Upper trunk plexopathy (for comparison)",
-    "modality": "EMG/NCS",
-    "finding": "Denervation of deltoid, biceps and supraspinatus with normal rhomboids, placing the lesion distal to the root.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Lateral scapular winging and weak scapular retraction",
-    "side": "ipsilateral",
-    "mechanism": "Denervation of the rhomboids and levator scapulae"
-   },
-   {
-    "deficit": "Interscapular ache and neck pain",
-    "side": "ipsilateral",
-    "mechanism": "Entrapment in the scalenus medius or a C5 root lesion"
-   },
-   {
-    "deficit": "Marker of C5 root (versus upper trunk) lesion",
-    "side": "ipsilateral",
-    "mechanism": "Origin of the nerve proximal to the plexus"
-   }
-  ],
-  "examination": [
-   "Ask the patient to brace the shoulders back against resistance and watch for lateral displacement of the inferior scapular angle",
-   "EMG of the rhomboids in any upper plexus or C5 lesion",
-   "Compare with serratus anterior winging on wall push-up"
-  ],
-  "syndromes": [
-   "syn-erb-duchenne",
-   "syn-radiculopathy-cervical",
-   "syn-neurogenic-thoracic-outlet"
-  ],
-  "pearls": [
-   "Rhomboids weak means the lesion is at the C5 root; rhomboids strong means the trunk",
-   "Two nerves wing the scapula: the long thoracic wings it medially, the dorsal scapular laterally",
-   "A root avulsion cannot be repaired; the rhomboid EMG helps decide before surgery"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The dorsal scapular nerve arises from the C5 root (with a C4 contribution) above the upper trunk, pierces the scalenus medius and descends along the medial border of the scapula deep to the levator scapulae and the rhomboids, which it supplies. Because it leaves the root before the plexus forms, rhomboid weakness distinguishes a C5 root lesion from an upper trunk lesion, and its EMG is one of the tests that places a lesion at the root: a C5 radiculopathy denervates the rhomboids, whereas Erb palsy of the upper trunk spares them. It is entrapped in the scalenus medius, producing interscapular pain and scapular winging in a pattern different from that of the long thoracic nerve.",
+  "anatomy": {
+    "location": "Leaves the C5 anterior ramus in the neck, pierces the scalenus medius, runs beneath the levator scapulae along the medial scapular border with the dorsal scapular artery, deep to the rhomboid minor and major, which it supplies together with the levator scapulae.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Motor to the levator scapulae and the rhomboids, it elevates and retracts the scapula and stabilizes it during arm movement; its loss produces mild lateral winging of the scapula with the inferior angle displaced laterally (the opposite direction from serratus anterior weakness), difficulty bracing the shoulders back and a dull interscapular ache. Its origin proximal to the plexus makes it a root marker: rhomboid denervation on EMG with deltoid and biceps weakness means the C5 root or a preganglionic avulsion (a poor prognosis for repair), whereas spared rhomboids mean a postganglionic upper trunk injury that may regenerate. Entrapment in the scalenus medius accompanies neck trauma and thoracic outlet syndromes.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "dorsal-scapular-nerve-l"
+        },
+        "label": "dorsal scapular nerve along the medial scapular border"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "dorsal-scapular-nerve-r"
+        },
+        "label": "nerve piercing the scalenus medius from the C5 root"
+      }
+    ],
+    "normalAppearance": "A small nerve piercing the scalenus medius and running beneath the levator scapulae on ultrasound; routine MRI shows only its muscles, which show denervation edema or fatty atrophy.",
+    "pathology": [
+      {
+        "pathology": "C5 radiculopathy or root avulsion",
+        "modality": "EMG/NCS",
+        "finding": "Denervation of the rhomboids with the deltoid, biceps and supraspinatus; a pseudomeningocele on myelography or MRI marks a root avulsion.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Rhomboid denervation",
+        "modality": "MRI",
+        "finding": "STIR hyperintensity and later fatty atrophy of the rhomboids and levator scapulae with a normal serratus anterior.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Upper trunk plexopathy (for comparison)",
+        "modality": "EMG/NCS",
+        "finding": "Denervation of deltoid, biceps and supraspinatus with normal rhomboids, placing the lesion distal to the root.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Lateral scapular winging and weak scapular retraction",
+        "side": "ipsilateral",
+        "mechanism": "Denervation of the rhomboids and levator scapulae"
+      },
+      {
+        "deficit": "Interscapular ache and neck pain",
+        "side": "ipsilateral",
+        "mechanism": "Entrapment in the scalenus medius or a C5 root lesion"
+      },
+      {
+        "deficit": "Marker of C5 root (versus upper trunk) lesion",
+        "side": "ipsilateral",
+        "mechanism": "Origin of the nerve proximal to the plexus"
+      }
+    ],
+    "examination": [
+      "Ask the patient to brace the shoulders back against resistance and watch for lateral displacement of the inferior scapular angle",
+      "EMG of the rhomboids in any upper plexus or C5 lesion",
+      "Compare with serratus anterior winging on wall push-up"
+    ],
+    "syndromes": [
+      "syn-erb-duchenne",
+      "syn-radiculopathy-cervical",
+      "syn-neurogenic-thoracic-outlet"
+    ],
+    "pearls": [
+      "Rhomboids weak means the lesion is at the C5 root; rhomboids strong means the trunk",
+      "Two nerves wing the scapula: the long thoracic wings it medially, the dorsal scapular laterally",
+      "A root avulsion cannot be repaired; the rhomboid EMG helps decide before surgery"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-dorsal-scapular-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C5"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C5"
- }
 }

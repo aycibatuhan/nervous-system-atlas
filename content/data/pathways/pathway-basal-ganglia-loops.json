@@ -1,209 +1,181 @@
 {
- "kind": "pathway",
- "id": "pathway-basal-ganglia-loops",
- "name": "Basal ganglia direct and indirect loops",
- "synonyms": [],
- "type": "basal-ganglia",
- "modality": "selection and scaling of movement",
- "summary": "The basal ganglia form loops from the cortex through the striatum, pallidum and thalamus back to the cortex. In the direct pathway, cortical excitation of striatal neurons inhibits the internal pallidum and substantia nigra reticulata, releasing the thalamus and facilitating movement; in the indirect pathway, striatal neurons inhibit the external pallidum, which disinhibits the subthalamic nucleus, whose excitation of the internal pallidum suppresses the thalamus and movement. Dopamine from the substantia nigra compacta excites the direct (D1) and inhibits the indirect (D2) pathway, so its loss tips the balance toward inhibition (parkinsonism), while loss of striatal indirect neurons (Huntington) or of the subthalamic nucleus (hemiballismus) tips it toward excess movement.",
- "origin": {
-  "structures": [
-   "gyrus-precentral",
-   "cortex-premotor-sma",
-   "cortex-prefrontal",
-   "putamen",
-   "caudate-nucleus"
+  "kind": "pathway",
+  "id": "pathway-basal-ganglia-loops",
+  "name": "Basal ganglia direct and indirect loops",
+  "synonyms": [],
+  "type": "basal-ganglia",
+  "modality": "selection and scaling of movement",
+  "summary": "The basal ganglia form loops from the cortex through the striatum, pallidum and thalamus back to the cortex. In the direct pathway, cortical excitation of striatal neurons inhibits the internal pallidum and substantia nigra reticulata, releasing the thalamus and facilitating movement; in the indirect pathway, striatal neurons inhibit the external pallidum, which disinhibits the subthalamic nucleus, whose excitation of the internal pallidum suppresses the thalamus and movement. Dopamine from the substantia nigra compacta excites the direct (D1) and inhibits the indirect (D2) pathway, so its loss tips the balance toward inhibition (parkinsonism), while loss of striatal indirect neurons (Huntington) or of the subthalamic nucleus (hemiballismus) tips it toward excess movement.",
+  "origin": {
+    "structures": [
+      "gyrus-precentral",
+      "cortex-premotor-sma",
+      "cortex-prefrontal",
+      "putamen",
+      "caudate-nucleus"
+    ],
+    "note": "Glutamatergic input from the whole cortex to the striatum (motor cortex to the putamen, association cortex to the caudate, limbic cortex to the accumbens)."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Cortical pyramidal cell",
+      "synapse": "striatal medium spiny neurons (glutamate)"
+    },
+    {
+      "order": 2,
+      "cellBody": "Direct pathway striatal neuron (D1)",
+      "synapse": "internal pallidum / substantia nigra reticulata (GABA)"
+    },
+    {
+      "order": 3,
+      "cellBody": "Indirect pathway striatal neuron (D2)",
+      "synapse": "external pallidum (GABA)"
+    },
+    {
+      "order": 4,
+      "cellBody": "External pallidal neuron",
+      "synapse": "subthalamic nucleus (GABA)"
+    },
+    {
+      "order": 5,
+      "cellBody": "Subthalamic neuron",
+      "synapse": "internal pallidum (glutamate)"
+    },
+    {
+      "order": 6,
+      "cellBody": "Internal pallidal neuron",
+      "synapse": "VA/VL thalamus (GABA, tonic inhibition)"
+    },
+    {
+      "order": 7,
+      "cellBody": "Thalamic neuron",
+      "synapse": "motor and premotor cortex (glutamate)"
+    }
   ],
-  "note": "Glutamatergic input from the whole cortex to the striatum (motor cortex to the putamen, association cortex to the caudate, limbic cortex to the accumbens)."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Cortical pyramidal cell",
-   "synapse": "striatal medium spiny neurons (glutamate)"
-  },
-  {
-   "order": 2,
-   "cellBody": "Direct pathway striatal neuron (D1)",
-   "synapse": "internal pallidum / substantia nigra reticulata (GABA)"
-  },
-  {
-   "order": 3,
-   "cellBody": "Indirect pathway striatal neuron (D2)",
-   "synapse": "external pallidum (GABA)"
-  },
-  {
-   "order": 4,
-   "cellBody": "External pallidal neuron",
-   "synapse": "subthalamic nucleus (GABA)"
-  },
-  {
-   "order": 5,
-   "cellBody": "Subthalamic neuron",
-   "synapse": "internal pallidum (glutamate)"
-  },
-  {
-   "order": 6,
-   "cellBody": "Internal pallidal neuron",
-   "synapse": "VA/VL thalamus (GABA, tonic inhibition)"
-  },
-  {
-   "order": 7,
-   "cellBody": "Thalamic neuron",
-   "synapse": "motor and premotor cortex (glutamate)"
-  }
- ],
- "decussation": null,
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "gyrus-precentral",
-   "meshId": "gyrus-precentral-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "cortical input"
-  },
-  {
-   "order": 2,
-   "structureId": "putamen",
-   "meshId": "putamen-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "striatal input stage (motor loop)"
-  },
-  {
-   "order": 3,
-   "structureId": "globus-pallidus",
-   "meshId": "globus-pallidus-externus-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "external segment (indirect pathway)"
-  },
-  {
-   "order": 4,
-   "structureId": "subthalamic-nucleus",
-   "meshId": "subthalamic-nucleus-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "excitatory node of the indirect pathway"
-  },
-  {
-   "order": 5,
-   "structureId": "globus-pallidus",
-   "meshId": "globus-pallidus-internus-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "internal segment: output"
-  },
-  {
-   "order": 6,
-   "structureId": "substantia-nigra",
-   "meshId": "substantia-nigra-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "pars compacta (dopamine to the striatum) and pars reticulata (output)"
-  },
-  {
-   "order": 7,
-   "structureId": "thalamus-va-vl",
-   "meshId": "thalamus-ventral-anterior-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "ventral anterior and ventral lateral nuclei"
-  },
-  {
-   "order": 8,
-   "structureId": "cortex-premotor-sma",
-   "meshId": "cortex-supplementary-motor-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "return to the cortex"
-  }
- ],
- "termination": "Motor, premotor and supplementary motor cortex (motor loop), prefrontal cortex (associative loop) and anterior cingulate/orbitofrontal cortex (limbic loop) via the thalamus; brainstem targets (superior colliculus, pedunculopontine nucleus) via the nigra reticulata and pallidum.",
- "meshIds": [
-  "putamen-l",
-  "putamen-r",
-  "caudate-nucleus-l",
-  "caudate-nucleus-r",
-  "globus-pallidus-internus-l",
-  "globus-pallidus-internus-r",
-  "globus-pallidus-externus-l",
-  "globus-pallidus-externus-r",
-  "subthalamic-nucleus-l",
-  "subthalamic-nucleus-r",
-  "substantia-nigra-l",
-  "substantia-nigra-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Substantia nigra pars compacta (dopamine loss)",
-   "effects": "Parkinsonism: bradykinesia, rigidity, rest tremor, postural instability",
-   "side": "contralateral"
-  },
-  {
-   "level": "Striatum (Huntington disease, indirect pathway neurons lost first)",
-   "effects": "Chorea, later rigidity and dementia",
-   "side": "bilateral"
-  },
-  {
-   "level": "Subthalamic nucleus (lacunar infarct)",
-   "effects": "Contralateral hemiballismus",
-   "side": "contralateral"
-  },
-  {
-   "level": "Globus pallidus (CO poisoning, kernicterus)",
-   "effects": "Parkinsonism or dystonia",
-   "side": "bilateral"
-  },
-  {
-   "level": "Putamen (Wilson disease, methanol)",
-   "effects": "Dystonia, parkinsonism",
-   "side": "bilateral"
-  },
-  {
-   "level": "Caudate / associative loop",
-   "effects": "Apathy, executive dysfunction, obsessive-compulsive features",
-   "side": "bilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Too little dopamine or too much pallidal output: hypokinesia. Too little pallidal output: hyperkinesia",
-   "The subthalamic nucleus is the brake; the internal pallidum is the gate; dopamine sets the threshold",
-   "Basal ganglia lesions do not cause weakness, sensory loss or reflex change: they change the quality of movement"
+  "decussation": null,
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "gyrus-precentral",
+      "meshId": "gyrus-precentral-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "cortical input"
+    },
+    {
+      "order": 2,
+      "structureId": "putamen",
+      "meshId": "putamen-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "striatal input stage (motor loop)"
+    },
+    {
+      "order": 3,
+      "structureId": "globus-pallidus",
+      "meshId": "globus-pallidus-externus-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "external segment (indirect pathway)"
+    },
+    {
+      "order": 4,
+      "structureId": "subthalamic-nucleus",
+      "meshId": "subthalamic-nucleus-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "excitatory node of the indirect pathway"
+    },
+    {
+      "order": 5,
+      "structureId": "globus-pallidus",
+      "meshId": "globus-pallidus-internus-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "internal segment: output"
+    },
+    {
+      "order": 6,
+      "structureId": "substantia-nigra",
+      "meshId": "substantia-nigra-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "pars compacta (dopamine to the striatum) and pars reticulata (output)"
+    },
+    {
+      "order": 7,
+      "structureId": "thalamus-va-vl",
+      "meshId": "thalamus-ventral-anterior-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "ventral anterior and ventral lateral nuclei"
+    },
+    {
+      "order": 8,
+      "structureId": "cortex-premotor-sma",
+      "meshId": "cortex-supplementary-motor-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "return to the cortex"
+    }
   ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-hemiballismus",
-   "syn-huntington-chorea"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    312,
-    315
-   ]
+  "termination": "Motor, premotor and supplementary motor cortex (motor loop), prefrontal cortex (associative loop) and anterior cingulate/orbitofrontal cortex (limbic loop) via the thalamus; brainstem targets (superior colliculus, pedunculopontine nucleus) via the nigra reticulata and pallidum.",
+  "meshIds": [
+    "putamen-l",
+    "putamen-r",
+    "caudate-nucleus-l",
+    "caudate-nucleus-r",
+    "globus-pallidus-internus-l",
+    "globus-pallidus-internus-r",
+    "globus-pallidus-externus-l",
+    "globus-pallidus-externus-r",
+    "subthalamic-nucleus-l",
+    "subthalamic-nucleus-r",
+    "substantia-nigra-l",
+    "substantia-nigra-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Substantia nigra pars compacta (dopamine loss)",
+      "effects": "Parkinsonism: bradykinesia, rigidity, rest tremor, postural instability",
+      "side": "contralateral"
+    },
+    {
+      "level": "Striatum (Huntington disease, indirect pathway neurons lost first)",
+      "effects": "Chorea, later rigidity and dementia",
+      "side": "bilateral"
+    },
+    {
+      "level": "Subthalamic nucleus (lacunar infarct)",
+      "effects": "Contralateral hemiballismus",
+      "side": "contralateral"
+    },
+    {
+      "level": "Globus pallidus (CO poisoning, kernicterus)",
+      "effects": "Parkinsonism or dystonia",
+      "side": "bilateral"
+    },
+    {
+      "level": "Putamen (Wilson disease, methanol)",
+      "effects": "Dystonia, parkinsonism",
+      "side": "bilateral"
+    },
+    {
+      "level": "Caudate / associative loop",
+      "effects": "Apathy, executive dysfunction, obsessive-compulsive features",
+      "side": "bilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Too little dopamine or too much pallidal output: hypokinesia. Too little pallidal output: hyperkinesia",
+      "The subthalamic nucleus is the brake; the internal pallidum is the gate; dopamine sets the threshold",
+      "Basal ganglia lesions do not cause weakness, sensory loss or reflex change: they change the quality of movement"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-hemiballismus",
+      "syn-huntington-chorea"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    213
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    56
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    242,
-    245
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

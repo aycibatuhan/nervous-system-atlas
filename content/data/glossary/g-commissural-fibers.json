@@ -1,20 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-commissural-fibers",
- "term": "Commissural fibers",
- "definition": "Axons crossing between the hemispheres: the corpus callosum, the anterior commissure (temporal and olfactory), the hippocampal commissure and the posterior commissure (pretectal and vertical gaze fibers).",
- "related": [
-  "g-association-fibers",
-  "g-disconnection-syndrome"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-commissural-fibers",
+  "term": "Commissural fibers",
+  "definition": "Axons crossing between the hemispheres: the corpus callosum, the anterior commissure (temporal and olfactory), the hippocampal commissure and the posterior commissure (pretectal and vertical gaze fibers).",
+  "related": [
+    "g-association-fibers",
+    "g-disconnection-syndrome"
+  ],
+  "citations": [
+    {
+      "ref": "sp-corpus-callosum",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
+  ]
 }

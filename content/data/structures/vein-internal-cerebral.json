@@ -1,0 +1,187 @@
+{
+  "kind": "structure",
+  "id": "vein-internal-cerebral",
+  "name": "Internal cerebral vein",
+  "synonyms": [
+    "ICV",
+    "vena interna cerebri",
+    "deep paramedian vein"
+  ],
+  "system": "venous",
+  "meshIds": [
+    "vein-internal-cerebral-l",
+    "vein-internal-cerebral-r"
+  ],
+  "summary": "The internal cerebral vein is the paired collector of the deep white matter, the basal ganglia and the thalamus. It begins behind the foramen of Monro at the venous angle, where the anterior septal vein meets the thalamostriate vein, and runs backward for three to four centimeters as a straight paramedian channel in the roof of the third ventricle, inside the two layers of tela choroidea that form the velum interpositum. Under the splenium of the corpus callosum the two internal cerebral veins converge and join the two basal veins of Rosenthal to make the great cerebral vein of Galen. Because it lies within a millimeter or two of the midline and drains structures on both sides through the choroidal and subependymal veins, occlusion of one internal cerebral vein rarely stays unilateral: the classic result is bilateral thalamic swelling with a deep coma out of proportion to the size of the lesion.",
+  "anatomy": {
+    "location": "In the roof of the third ventricle, paired and paramedian, between about 2 and 6 mm from the midline, running from the foramen of Monro (roughly y = 0, z = +10 in MNI coordinates) posteriorly to the quadrigeminal cistern under the splenium (roughly y = -38). The vein lies in the velum interpositum between the fornix above and the roof of the third ventricle and the internal medullary lamina of the thalamus below; the medial posterior choroidal artery accompanies it, and the choroid plexus of the third ventricle hangs beneath it.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior septal vein",
+        "via": "venous angle"
+      },
+      {
+        "from": "Thalamostriate vein",
+        "via": "caudothalamic groove"
+      },
+      {
+        "from": "Superior choroidal vein",
+        "via": "choroid plexus of the lateral ventricle"
+      },
+      {
+        "from": "Direct lateral and posterior thalamic veins",
+        "via": "roof of the third ventricle"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Great cerebral vein of Galen",
+        "via": "under the splenium"
+      },
+      {
+        "to": "Straight sinus",
+        "via": "through the vein of Galen"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The internal cerebral vein carries the deep venous return of the hemisphere: the anterior septal vein from the septum pellucidum and the anterior corpus callosum, the thalamostriate vein from the caudothalamic groove draining the caudate nucleus, the internal capsule and the deep periventricular white matter, the superior choroidal vein from the choroid plexus of the lateral ventricle, the direct lateral vein and the posterior thalamic (internal occipital) tributaries. Its territory is therefore the paraventricular white matter, the caudate, the internal capsule and most of the thalamus. Unlike the cortical veins, which have many surface anastomoses, the deep system is close to an end-drainage arrangement, so obstruction raises pressure quickly in a region with no collateral outlet. Flow is slow and pressure is low in health, which is why the vein is only faintly seen without contrast and why a thrombus in it produces venous congestion rather than immediate infarction: edema first, then petechial hemorrhage as the capillary bed fails.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-posterior-choroidal",
+      "arteries-thalamoperforating",
+      "medial posterior choroidal artery"
+    ],
+    "territories": [],
+    "venous": "Drains into the great cerebral vein of Galen and thence the straight sinus, the torcular and the transverse sinuses"
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "vein-internal-cerebral-l"
+        },
+        "label": "paired internal cerebral veins in the roof of the third ventricle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "vein-internal-cerebral-r"
+        },
+        "label": "internal cerebral vein under the body of the corpus callosum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "vein-internal-cerebral-l"
+        },
+        "label": "velum interpositum between the fornix and the thalamus"
+      }
+    ],
+    "normalAppearance": "On MR venography the internal cerebral veins are two thin parallel lines that run straight back below the corpus callosum and meet the basal veins at the great cerebral vein; the venous angle behind the foramen of Monro is the landmark used to measure the position of the deep gray matter on an angiogram. On contrast-enhanced T1 and on CT venography they enhance uniformly; on susceptibility-weighted imaging they are dark because of deoxyhemoglobin, and asymmetry of that signal is a sensitive early sign of slowed deep venous flow.",
+    "pathology": [
+      {
+        "pathology": "Deep cerebral venous thrombosis",
+        "modality": "MRI",
+        "finding": "Symmetric swelling and T2 or FLAIR hyperintensity of both thalami, sometimes the basal ganglia and the internal capsules, with loss of the normal flow void in the internal cerebral veins and an absent signal on MR venography; restricted diffusion is patchy rather than territorial.",
+        "sequence": "FLAIR",
+        "timing": "Symptoms evolve over hours to days, unlike an arterial stroke",
+        "pitfalls": "Bilateral thalamic edema is also seen in top-of-the-basilar infarction, Wernicke encephalopathy, acute necrotizing encephalopathy and deep glioma; the venous cause is settled by the venogram"
+      },
+      {
+        "pathology": "Straight sinus and deep vein thrombosis on unenhanced CT",
+        "modality": "CT",
+        "finding": "Hyperdense internal cerebral veins, great cerebral vein and straight sinus (the cord sign in the deep system) with hypodense thalami; a normal density in a dehydrated or polycythemic patient can mimic it.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Venous congestion from a deep arteriovenous shunt",
+        "modality": "DSA",
+        "finding": "Early filling and dilatation of the internal cerebral vein during the arterial phase, with a vein of Galen malformation or a choroidal arteriovenous malformation as the shunt.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Displacement by a mass",
+        "modality": "MRI",
+        "finding": "Elevation or lateral bowing of the internal cerebral vein by a pineal region tumor, a colloid cyst at the foramen of Monro or a thalamic glioma; the vein marks the plane a surgeon must not cross.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Contrast-enhanced MR venography, with susceptibility-weighted imaging when deep venous thrombosis is suspected"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Depressed consciousness with bilateral thalamic edema",
+        "side": "bilateral",
+        "mechanism": "Obstruction of the deep venous outflow congests both thalami through the paired internal cerebral veins"
+      },
+      {
+        "deficit": "Amnesia and abulia",
+        "side": "bilateral",
+        "mechanism": "Congestion of the anterior and mediodorsal thalamic nuclei and the fornix"
+      },
+      {
+        "deficit": "Vertical gaze palsy",
+        "side": "bilateral",
+        "mechanism": "Edema tracking to the posterior commissure and the rostral midbrain"
+      },
+      {
+        "deficit": "Hemorrhagic transformation of the basal ganglia",
+        "side": "n/a",
+        "mechanism": "Sustained venous pressure ruptures the congested capillary bed"
+      }
+    ],
+    "examination": [
+      "Assess level of consciousness serially: deep venous thrombosis presents as an encephalopathy, not as a hemiparesis",
+      "Test vertical gaze and pupillary light-near dissociation for rostral midbrain involvement",
+      "Ask about the prothrombotic setting: puerperium, oral contraceptives, dehydration, malignancy, thrombophilia"
+    ],
+    "syndromes": [
+      "syn-cerebral-venous-sinus-thrombosis"
+    ],
+    "pearls": [
+      "Two thin veins on either side of the midline under the corpus callosum: nothing else runs there",
+      "Bilateral thalamic edema in a young patient means look at the deep veins before anything else",
+      "The venous angle behind the foramen of Monro is the anterior end of the vein and a fixed angiographic landmark",
+      "Anticoagulate deep venous thrombosis even when the imaging already shows hemorrhage"
+    ]
+  },
+  "pitfalls": [
+    "A hypoplastic or duplicated internal cerebral vein is a normal variant; asymmetry alone is not thrombosis",
+    "The mesh is an iso-surface of a group-average susceptibility atlas, so it is smoother and a little thicker than the vein in any one person"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "internal-cerebral-vein-cta"
+    },
+    {
+      "ref": "mr-venography-normal-anatomy"
+    },
+    {
+      "ref": "deep-cerebral-venous-thrombosis"
+    },
+    {
+      "ref": "sp-cerebral-venous-sinus-thrombosis",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "venous",
+    "deep venous system",
+    "thalamus",
+    "VENAT"
+  ],
+  "status": "draft",
+  "latin": "vena interna cerebri",
+  "subsystem": "deep veins",
+  "parent": "veins-deep-cerebral"
+}

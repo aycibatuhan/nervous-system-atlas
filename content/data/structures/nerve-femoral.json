@@ -1,135 +1,131 @@
 {
- "kind": "structure",
- "id": "nerve-femoral",
- "name": "Femoral nerve",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The largest branch of the lumbar plexus (L2–L4), the femoral nerve emerges from the lateral border of psoas, passes under the inguinal ligament lateral to the femoral artery (outside the femoral sheath) and divides in the femoral triangle into branches to iliacus, pectineus, sartorius and the four heads of quadriceps and into cutaneous branches for the anterior thigh and, through the saphenous nerve, the medial leg and foot. Its lesions (retroperitoneal hematoma, diabetes, hip surgery, lithotomy position) cause the knee to give way, an absent knee jerk and anteromedial thigh and medial leg numbness.",
- "anatomy": {
-  "location": "Within psoas from L2–L4, emerging at its lateral border to run between psoas and iliacus, beneath the inguinal ligament into the femoral triangle lateral to the femoral artery, dividing within a few centimetres; the saphenous nerve continues through the adductor canal to the medial leg.",
-  "subdivisions": [
-   {
-    "name": "Muscular branches",
-    "note": "iliacus and psoas (hip flexion), pectineus, sartorius, quadriceps femoris (knee extension)"
-   },
-   {
-    "name": "Anterior cutaneous branches",
-    "note": "anterior and medial thigh"
-   },
-   {
-    "name": "Saphenous nerve",
-    "note": "medial leg and foot to the great toe; purely sensory"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Hip flexion and knee extension; sensation of the anterior thigh and medial leg.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "cervical cord; the femoral nerve arises from L2–L4"
-   }
-  ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Pelvic CT or MRI reveals a psoas or iliacus hematoma or mass; MRI of the thigh shows quadriceps denervation.",
-  "pathology": [
-   {
-    "pathology": "Iliacus hematoma",
-    "modality": "CT",
-    "finding": "Hyperdense hematoma within iliacus or psoas in an anticoagulated patient compressing the nerve.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Femoral neuropathy after surgery or lithotomy",
-    "modality": "MRI",
-    "finding": "Denervation edema of quadriceps with a normal plexus.",
-    "sequence": "STIR"
-   }
-  ],
-  "sequenceOfChoice": "EMG (quadriceps and iliopsoas; adductors spared) and femoral nerve conduction; pelvic CT"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Knee buckling and difficulty climbing stairs; wasted quadriceps; absent knee jerk",
-    "side": "ipsilateral",
-    "mechanism": "Quadriceps paralysis"
-   },
-   {
-    "deficit": "Weak hip flexion",
-    "side": "ipsilateral",
-    "mechanism": "Iliacus involvement (lesion above the inguinal ligament)"
-   },
-   {
-    "deficit": "Numbness of the anterior thigh and medial leg",
-    "side": "ipsilateral",
-    "mechanism": "Cutaneous branches and saphenous nerve"
-   },
-   {
-    "deficit": "Preserved hip adduction",
-    "side": "n/a",
-    "mechanism": "Obturator nerve intact, distinguishing nerve from L2–L4 root or plexus lesions"
-   }
-  ],
-  "examination": [
-   "Knee extension against resistance and quadriceps bulk",
-   "Knee reflex",
-   "Hip flexion (iliopsoas) to place the lesion above or below the ligament",
-   "Hip adduction (obturator) to exclude a plexus or root lesion",
-   "Sensation on the medial leg"
-  ],
-  "syndromes": [
-   "syn-femoral-neuropathy",
-   "syn-lumbosacral-plexopathy"
-  ],
-  "pearls": [
-   "Weak knee extension with an absent knee jerk and normal adduction is the femoral nerve; weak adduction too means L2–L4 roots or the lumbar plexus",
-   "Groin pain and quadriceps weakness in an anticoagulated patient: CT the pelvis for a hematoma"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    112,
-    112
-   ]
+  "kind": "structure",
+  "id": "nerve-femoral",
+  "name": "Femoral nerve",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The largest branch of the lumbar plexus (L2–L4), the femoral nerve emerges from the lateral border of psoas, passes under the inguinal ligament lateral to the femoral artery (outside the femoral sheath) and divides in the femoral triangle into branches to iliacus, pectineus, sartorius and the four heads of quadriceps and into cutaneous branches for the anterior thigh and, through the saphenous nerve, the medial leg and foot. Its lesions (retroperitoneal hematoma, diabetes, hip surgery, lithotomy position) cause the knee to give way, an absent knee jerk and anteromedial thigh and medial leg numbness.",
+  "anatomy": {
+    "location": "Within psoas from L2–L4, emerging at its lateral border to run between psoas and iliacus, beneath the inguinal ligament into the femoral triangle lateral to the femoral artery, dividing within a few centimetres; the saphenous nerve continues through the adductor canal to the medial leg.",
+    "subdivisions": [
+      {
+        "name": "Muscular branches",
+        "note": "iliacus and psoas (hip flexion), pectineus, sartorius, quadriceps femoris (knee extension)"
+      },
+      {
+        "name": "Anterior cutaneous branches",
+        "note": "anterior and medial thigh"
+      },
+      {
+        "name": "Saphenous nerve",
+        "note": "medial leg and foot to the great toe; purely sensory"
+      }
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    164
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Hip flexion and knee extension; sensation of the anterior thigh and medial leg.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; the femoral nerve arises from L2–L4"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Pelvic CT or MRI reveals a psoas or iliacus hematoma or mass; MRI of the thigh shows quadriceps denervation.",
+    "pathology": [
+      {
+        "pathology": "Iliacus hematoma",
+        "modality": "CT",
+        "finding": "Hyperdense hematoma within iliacus or psoas in an anticoagulated patient compressing the nerve.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Femoral neuropathy after surgery or lithotomy",
+        "modality": "MRI",
+        "finding": "Denervation edema of quadriceps with a normal plexus.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "EMG (quadriceps and iliopsoas; adductors spared) and femoral nerve conduction; pelvic CT"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Knee buckling and difficulty climbing stairs; wasted quadriceps; absent knee jerk",
+        "side": "ipsilateral",
+        "mechanism": "Quadriceps paralysis"
+      },
+      {
+        "deficit": "Weak hip flexion",
+        "side": "ipsilateral",
+        "mechanism": "Iliacus involvement (lesion above the inguinal ligament)"
+      },
+      {
+        "deficit": "Numbness of the anterior thigh and medial leg",
+        "side": "ipsilateral",
+        "mechanism": "Cutaneous branches and saphenous nerve"
+      },
+      {
+        "deficit": "Preserved hip adduction",
+        "side": "n/a",
+        "mechanism": "Obturator nerve intact, distinguishing nerve from L2–L4 root or plexus lesions"
+      }
+    ],
+    "examination": [
+      "Knee extension against resistance and quadriceps bulk",
+      "Knee reflex",
+      "Hip flexion (iliopsoas) to place the lesion above or below the ligament",
+      "Hip adduction (obturator) to exclude a plexus or root lesion",
+      "Sensation on the medial leg"
+    ],
+    "syndromes": [
+      "syn-femoral-neuropathy",
+      "syn-lumbosacral-plexopathy"
+    ],
+    "pearls": [
+      "Weak knee extension with an absent knee jerk and normal adduction is the femoral nerve; weak adduction too means L2–L4 roots or the lumbar plexus",
+      "Groin pain and quadriceps weakness in an anticoagulated patient: CT the pelvis for a hematoma"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-thigh-femoral-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-femoral-nerve-block",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-thigh-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "pns",
+    "lower-limb"
+  ],
+  "status": "draft",
+  "latin": "Nervus femoralis",
+  "subsystem": "lower-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "lower-limb"
- ],
- "status": "draft",
- "latin": "Nervus femoralis",
- "subsystem": "lower-limb",
- "level": {
-  "region": "peripheral"
- }
 }

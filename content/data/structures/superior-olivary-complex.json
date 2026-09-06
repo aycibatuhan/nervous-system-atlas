@@ -1,143 +1,131 @@
 {
- "kind": "structure",
- "id": "superior-olivary-complex",
- "name": "Superior olivary complex and lateral lemniscus",
- "synonyms": [
-  "superior olive",
-  "trapezoid body"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The first binaural station of the auditory pathway. Axons from the cochlear nuclei cross in the trapezoid body of the caudal pons and converge on the superior olivary complex of both sides, whose neurons compare timing (medial superior olive) and intensity (lateral superior olive) between the two ears to localize sound. Output ascends in the lateral lemniscus to the inferior colliculus. The complex also gives rise to the olivocochlear bundle that tunes the outer hair cells and to the efferent limb of the stapedius reflex through the facial nucleus.",
- "anatomy": {
-  "location": "Ventral tegmentum of the caudal pons, dorsal to the trapezoid body and lateral to the medial lemniscus, just ventromedial to the facial motor nucleus; the lateral lemniscus climbs along the lateral surface of the pontine tegmentum to the inferior colliculus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cochlear-nuclei",
-    "via": "trapezoid body",
-    "note": "bilateral"
-   }
+  "kind": "structure",
+  "id": "superior-olivary-complex",
+  "name": "Superior olivary complex and lateral lemniscus",
+  "synonyms": [
+    "superior olive",
+    "trapezoid body"
   ],
-  "efferents": [
-   {
-    "to": "inferior-colliculus",
-    "via": "lateral lemniscus"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "Sound localization by interaural time and level differences, the acoustic stapedius reflex, and efferent control of the cochlea.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-pontine",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-basilar-paramedian",
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 10,
-     "y": -34,
-     "z": -38
-    },
-    "label": "ventral caudal pontine tegmentum behind the trapezoid body"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": -30,
-     "z": -22
-    },
-    "label": "lateral lemniscus on the lateral upper pons"
-   }
-  ],
-  "normalAppearance": "Not resolved on routine MRI; localized to the ventral tegmentum of the caudal pons. Pontine lesions here rarely cause deafness because the pathway is already bilateral.",
-  "pathology": [
-   {
-    "pathology": "Pontine tegmental lesion with hyperacusis or poor localization",
-    "modality": "MRI",
-    "finding": "Tegmental infarct or plaque in the caudal pons; hearing is preserved but sound localization and the stapedius reflex are impaired.",
-    "sequence": "FLAIR"
-   }
-  ],
-  "sequenceOfChoice": "FLAIR/DWI; audiometry with stapedius reflex testing"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired sound localization without deafness",
-    "side": "bilateral",
-    "mechanism": "Binaural comparison neurons"
-   },
-   {
-    "deficit": "Hyperacusis",
-    "side": "ipsilateral",
-    "mechanism": "Efferent limb of the stapedius reflex"
-   },
-   {
-    "deficit": "Central auditory processing deficits",
-    "side": "bilateral",
-    "mechanism": "Ascending lateral lemniscus fibers"
-   }
-  ],
-  "examination": [
-   "Hearing thresholds are normal; test localization of a sound source with eyes closed",
-   "Stapedius reflex on tympanometry",
-   "Facial movement and corneal reflex for neighboring structures"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Unilateral deafness never comes from the pons or above",
-   "Brainstem auditory evoked potentials map lesions of this pathway wave by wave"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    205,
-    208
-   ]
+  "summary": "The first binaural station of the auditory pathway. Axons from the cochlear nuclei cross in the trapezoid body of the caudal pons and converge on the superior olivary complex of both sides, whose neurons compare timing (medial superior olive) and intensity (lateral superior olive) between the two ears to localize sound. Output ascends in the lateral lemniscus to the inferior colliculus. The complex also gives rise to the olivocochlear bundle that tunes the outer hair cells and to the efferent limb of the stapedius reflex through the facial nucleus.",
+  "anatomy": {
+    "location": "Ventral tegmentum of the caudal pons, dorsal to the trapezoid body and lateral to the medial lemniscus, just ventromedial to the facial motor nucleus; the lateral lemniscus climbs along the lateral surface of the pontine tegmentum to the inferior colliculus.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    339
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "cochlear-nuclei",
+        "via": "trapezoid body",
+        "note": "bilateral"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "inferior-colliculus",
+        "via": "lateral lemniscus"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
+  "function": "Sound localization by interaural time and level differences, the acoustic stapedius reflex, and efferent control of the cochlea.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-pontine",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-basilar-paramedian",
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 10,
+          "y": -34,
+          "z": -38
+        },
+        "label": "ventral caudal pontine tegmentum behind the trapezoid body"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": -30,
+          "z": -22
+        },
+        "label": "lateral lemniscus on the lateral upper pons"
+      }
+    ],
+    "normalAppearance": "Not resolved on routine MRI; localized to the ventral tegmentum of the caudal pons. Pontine lesions here rarely cause deafness because the pathway is already bilateral.",
+    "pathology": [
+      {
+        "pathology": "Pontine tegmental lesion with hyperacusis or poor localization",
+        "modality": "MRI",
+        "finding": "Tegmental infarct or plaque in the caudal pons; hearing is preserved but sound localization and the stapedius reflex are impaired.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "FLAIR/DWI; audiometry with stapedius reflex testing"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired sound localization without deafness",
+        "side": "bilateral",
+        "mechanism": "Binaural comparison neurons"
+      },
+      {
+        "deficit": "Hyperacusis",
+        "side": "ipsilateral",
+        "mechanism": "Efferent limb of the stapedius reflex"
+      },
+      {
+        "deficit": "Central auditory processing deficits",
+        "side": "bilateral",
+        "mechanism": "Ascending lateral lemniscus fibers"
+      }
+    ],
+    "examination": [
+      "Hearing thresholds are normal; test localization of a sound source with eyes closed",
+      "Stapedius reflex on tympanometry",
+      "Facial movement and corneal reflex for neighboring structures"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Unilateral deafness never comes from the pons or above",
+      "Brainstem auditory evoked potentials map lesions of this pathway wave by wave"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-superior-and-inferior-olivary-nucleus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "brainstem"
+  ],
+  "status": "draft",
+  "subsystem": "pons",
+  "level": {
+    "region": "pons"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "subsystem": "pons",
- "level": {
-  "region": "pons"
- }
 }

@@ -1,117 +1,121 @@
 {
- "kind": "syndrome",
- "id": "syn-tarsal-tunnel",
- "name": "Tarsal tunnel syndrome",
- "eponyms": [],
- "category": "entrapment",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "nerve-tibial",
-   "nerve-sciatic"
+  "kind": "syndrome",
+  "id": "syn-tarsal-tunnel",
+  "name": "Tarsal tunnel syndrome",
+  "eponyms": [],
+  "category": "entrapment",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "nerve-tibial",
+      "nerve-sciatic"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "tibial-nerve-l"
+    ]
+  },
+  "presentation": "A patient describes burning pain and tingling in the sole of the foot and the toes, worse after prolonged standing or walking and sometimes at night, with relief on resting or removing shoes. Sensation may be reduced on the sole while the dorsum of the foot and the heel are normal, and in long-standing cases the small muscles of the foot are wasted and the toes clawed. Tapping behind the medial malleolus reproduces the tingling.",
+  "deficits": [
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "sole of the foot and toes (medial and lateral plantar nerves)",
+      "sign": "Burning paresthesias and sensory loss of the sole, sparing the dorsum; heel sometimes spared",
+      "substrate": "nerve-tibial"
+    },
+    {
+      "modality": "pain",
+      "side": "ipsilateral",
+      "distribution": "ankle and sole",
+      "sign": "Pain worse with standing and walking, Tinel sign at the flexor retinaculum",
+      "substrate": "nerve-tibial"
+    },
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "intrinsic foot muscles",
+      "sign": "Weakness and wasting of the abductor hallucis and toe flexors with clawing in chronic cases; calf muscles and ankle reflex normal",
+      "substrate": "nerve-tibial"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "tibial-nerve-l"
-  ]
- },
- "presentation": "A patient describes burning pain and tingling in the sole of the foot and the toes, worse after prolonged standing or walking and sometimes at night, with relief on resting or removing shoes. Sensation may be reduced on the sole while the dorsum of the foot and the heel are normal, and in long-standing cases the small muscles of the foot are wasted and the toes clawed. Tapping behind the medial malleolus reproduces the tingling.",
- "deficits": [
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "sole of the foot and toes (medial and lateral plantar nerves)",
-   "sign": "Burning paresthesias and sensory loss of the sole, sparing the dorsum; heel sometimes spared",
-   "substrate": "nerve-tibial"
+  "reasoning": "Behind the medial malleolus the tibial nerve passes beneath the flexor retinaculum in the tarsal tunnel, with the tendons of the tibialis posterior, flexor digitorum longus and flexor hallucis longus and the posterior tibial vessels, and there divides into the medial and lateral plantar nerves for the sole and the intrinsic muscles and the calcaneal branch for the heel. Compression within the tunnel by tenosynovitis, a ganglion, varicosities, a bony spur after an ankle fracture, hindfoot valgus or a tight retinaculum produces the plantar sensory symptoms and, later, intrinsic muscle weakness. The muscles of the calf and the ankle reflex are supplied by the tibial nerve above the tunnel and are unaffected, which separates the syndrome from a proximal tibial or sciatic lesion, and the dorsum of the foot is supplied by the peroneal nerves and is spared, which separates it from a polyneuropathy that would involve the whole foot symmetrically on both sides. The calcaneal branch often leaves the nerve above the retinaculum, so heel sensation may be preserved. An S1 radiculopathy affects the sole too but adds calf weakness, an absent ankle reflex and back pain. The deficit is peripheral and ipsilateral. Electrodiagnosis is technically demanding, and the diagnosis rests on the clinical pattern, a positive Tinel sign, imaging of the tunnel and the response to a local anesthetic block.",
+  "imagingFindings": [
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Prolonged distal latencies of the medial and lateral plantar nerves with denervation of the abductor hallucis and abductor digiti minimi; normal peroneal and proximal tibial conduction.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Space-occupying lesion in the tunnel",
+      "modality": "MRI",
+      "finding": "Ganglion, varicosities, tenosynovitis, lipoma or accessory muscle within the tarsal tunnel compressing the nerve on axial T2.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Bony compression",
+      "modality": "CT",
+      "finding": "Talocalcaneal coalition, exostosis or malunited fracture narrowing the tunnel.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Idiopathic with hindfoot deformity",
+    "Ganglion, varicosities, tenosynovitis",
+    "Ankle fracture or sprain",
+    "Rheumatoid arthritis, diabetes, hypothyroidism",
+    "Space-occupying lesions (lipoma, nerve sheath tumor)"
+  ],
+  "mimics": [
+    {
+      "name": "Plantar fasciitis",
+      "howToDistinguish": "Pain under the heel worst on first steps, no sensory loss or Tinel sign"
+    },
+    {
+      "name": "Distal polyneuropathy",
+      "howToDistinguish": "Bilateral, symmetric, dorsum involved, reduced ankle reflexes"
+    },
+    {
+      "name": "S1 radiculopathy",
+      "howToDistinguish": "Back pain, calf weakness, absent ankle jerk"
+    },
+    {
+      "name": "Morton neuroma",
+      "howToDistinguish": "Pain between the metatarsal heads, focal"
+    }
+  ],
+  "management": [
+    "Orthotics to correct hindfoot valgus, activity modification, anti-inflammatory measures",
+    "Steroid injection into the tunnel for inflammatory causes",
+    "Surgical release for a demonstrable mass or persistent symptoms with electrodiagnostic confirmation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-tarsal-tunnel-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-tarsal-tunnel-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-electrodiagnostic-evaluation-of-tarsal-tunnel-neuropathy",
+      "section": "Introduction"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -70,
+      "y": -50,
+      "z": -420
+    },
+    "label": "tibial nerve behind the medial malleolus (virtual)"
   },
-  {
-   "modality": "pain",
-   "side": "ipsilateral",
-   "distribution": "ankle and sole",
-   "sign": "Pain worse with standing and walking, Tinel sign at the flexor retinaculum",
-   "substrate": "nerve-tibial"
-  },
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "intrinsic foot muscles",
-   "sign": "Weakness and wasting of the abductor hallucis and toe flexors with clawing in chronic cases; calf muscles and ankle reflex normal",
-   "substrate": "nerve-tibial"
-  }
- ],
- "reasoning": "Behind the medial malleolus the tibial nerve passes beneath the flexor retinaculum in the tarsal tunnel, with the tendons of the tibialis posterior, flexor digitorum longus and flexor hallucis longus and the posterior tibial vessels, and there divides into the medial and lateral plantar nerves for the sole and the intrinsic muscles and the calcaneal branch for the heel. Compression within the tunnel by tenosynovitis, a ganglion, varicosities, a bony spur after an ankle fracture, hindfoot valgus or a tight retinaculum produces the plantar sensory symptoms and, later, intrinsic muscle weakness. The muscles of the calf and the ankle reflex are supplied by the tibial nerve above the tunnel and are unaffected, which separates the syndrome from a proximal tibial or sciatic lesion, and the dorsum of the foot is supplied by the peroneal nerves and is spared, which separates it from a polyneuropathy that would involve the whole foot symmetrically on both sides. The calcaneal branch often leaves the nerve above the retinaculum, so heel sensation may be preserved. An S1 radiculopathy affects the sole too but adds calf weakness, an absent ankle reflex and back pain. The deficit is peripheral and ipsilateral. Electrodiagnosis is technically demanding, and the diagnosis rests on the clinical pattern, a positive Tinel sign, imaging of the tunnel and the response to a local anesthetic block.",
- "imagingFindings": [
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Prolonged distal latencies of the medial and lateral plantar nerves with denervation of the abductor hallucis and abductor digiti minimi; normal peroneal and proximal tibial conduction.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Space-occupying lesion in the tunnel",
-   "modality": "MRI",
-   "finding": "Ganglion, varicosities, tenosynovitis, lipoma or accessory muscle within the tarsal tunnel compressing the nerve on axial T2.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Bony compression",
-   "modality": "CT",
-   "finding": "Talocalcaneal coalition, exostosis or malunited fracture narrowing the tunnel.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Idiopathic with hindfoot deformity",
-  "Ganglion, varicosities, tenosynovitis",
-  "Ankle fracture or sprain",
-  "Rheumatoid arthritis, diabetes, hypothyroidism",
-  "Space-occupying lesions (lipoma, nerve sheath tumor)"
- ],
- "mimics": [
-  {
-   "name": "Plantar fasciitis",
-   "howToDistinguish": "Pain under the heel worst on first steps, no sensory loss or Tinel sign"
-  },
-  {
-   "name": "Distal polyneuropathy",
-   "howToDistinguish": "Bilateral, symmetric, dorsum involved, reduced ankle reflexes"
-  },
-  {
-   "name": "S1 radiculopathy",
-   "howToDistinguish": "Back pain, calf weakness, absent ankle jerk"
-  },
-  {
-   "name": "Morton neuroma",
-   "howToDistinguish": "Pain between the metatarsal heads, focal"
-  }
- ],
- "management": [
-  "Orthotics to correct hindfoot valgus, activity modification, anti-inflammatory measures",
-  "Steroid injection into the tunnel for inflammatory causes",
-  "Surgical release for a demonstrable mass or persistent symptoms with electrodiagnostic confirmation"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    165,
-    165
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -70,
-   "y": -50,
-   "z": -420
-  },
-  "label": "tibial nerve behind the medial malleolus (virtual)"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

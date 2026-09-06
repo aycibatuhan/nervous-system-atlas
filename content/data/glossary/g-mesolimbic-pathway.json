@@ -1,10 +1,22 @@
 {
- "kind": "glossary",
- "id": "g-mesolimbic-pathway",
- "term": "Mesolimbic and mesocortical pathways",
- "definition": "Dopaminergic projections from the ventral tegmental area to the nucleus accumbens, amygdala and hippocampus (mesolimbic: reward, motivation, addiction, psychosis) and to the prefrontal cortex (mesocortical: working memory, motivation).",
- "related": [
-  "g-nigrostriatal-pathway"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-mesolimbic-pathway",
+  "term": "Mesolimbic and mesocortical pathways",
+  "definition": "Dopaminergic projections from the ventral tegmental area to the nucleus accumbens, amygdala and hippocampus (mesolimbic: reward, motivation, addiction, psychosis) and to the prefrontal cortex (mesocortical: working memory, motivation).",
+  "related": [
+    "g-nigrostriatal-pathway"
+  ],
+  "citations": [
+    {
+      "ref": "sp-dopamine"
+    },
+    {
+      "ref": "sp-dopamine-receptors",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
+  ]
 }

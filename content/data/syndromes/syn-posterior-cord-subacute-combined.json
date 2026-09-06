@@ -1,159 +1,135 @@
 {
- "kind": "syndrome",
- "id": "syn-posterior-cord-subacute-combined",
- "name": "Posterior cord syndrome and subacute combined degeneration",
- "eponyms": [
-  "subacute combined degeneration of the cord"
- ],
- "category": "metabolic-toxic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "spinal-white-columns",
-   "spinal-cord",
-   "posterior-spinal-arteries",
-   "dorsal-root-ganglion"
+  "kind": "syndrome",
+  "id": "syn-posterior-cord-subacute-combined",
+  "name": "Posterior cord syndrome and subacute combined degeneration",
+  "eponyms": [
+    "subacute combined degeneration of the cord"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -85
+  "category": "metabolic-toxic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "spinal-white-columns",
+      "spinal-cord",
+      "posterior-spinal-arteries",
+      "dorsal-root-ganglion"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 6
- },
- "presentation": "A patient who has had a gastrectomy, is a vegan, or takes metformin or uses nitrous oxide complains of tingling feet and unsteadiness in the dark. Examination shows loss of vibration and joint position sense in the feet with a positive Romberg test, brisk knee reflexes with absent ankle reflexes and extensor plantars, and a stamping gait; the electric shock down the spine on neck flexion (Lhermitte) may be present. Untreated, spastic paraparesis and dementia follow.",
- "deficits": [
-  {
-   "modality": "sensory-vibration-proprioception",
-   "side": "bilateral",
-   "distribution": "legs then arms",
-   "sign": "Loss of vibration and position sense with sensory ataxia and positive Romberg (posterior columns)",
-   "substrate": "pathway-dcml"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -85
+    },
+    "radiusMm": 6
   },
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "legs",
-   "sign": "Spastic weakness with extensor plantars (lateral corticospinal tracts)",
-   "substrate": "pathway-lateral-corticospinal"
+  "presentation": "A patient who has had a gastrectomy, is a vegan, or takes metformin or uses nitrous oxide complains of tingling feet and unsteadiness in the dark. Examination shows loss of vibration and joint position sense in the feet with a positive Romberg test, brisk knee reflexes with absent ankle reflexes and extensor plantars, and a stamping gait; the electric shock down the spine on neck flexion (Lhermitte) may be present. Untreated, spastic paraparesis and dementia follow.",
+  "deficits": [
+    {
+      "modality": "sensory-vibration-proprioception",
+      "side": "bilateral",
+      "distribution": "legs then arms",
+      "sign": "Loss of vibration and position sense with sensory ataxia and positive Romberg (posterior columns)",
+      "substrate": "pathway-dcml"
+    },
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "legs",
+      "sign": "Spastic weakness with extensor plantars (lateral corticospinal tracts)",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "legs",
+      "sign": "Mixed picture: brisk knees with absent ankles when a peripheral neuropathy coexists",
+      "substrate": "dorsal-root-ganglion"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "bilateral",
+      "distribution": "preserved",
+      "sign": "Pain and temperature relatively spared",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "cerebral white matter",
+      "sign": "Memory loss, irritability, dementia in vitamin B12 deficiency",
+      "substrate": "corona-radiata"
+    }
+  ],
+  "reasoning": "The posterior columns carry uncrossed proprioceptive and vibration fibers from the ipsilateral leg (fasciculus gracilis, medially) and arm (fasciculus cuneatus, laterally) to the medulla, where they cross; bilateral damage in the cord therefore produces bilateral loss of those modalities below the lesion without any crossed pattern, and the loss of position sense removes the feedback that keeps the patient upright when vision is removed, hence the Romberg sign and the worsening in the dark. Vitamin B12 is needed for the methylation reactions that maintain myelin, and its deficiency produces a vacuolar demyelination that begins in the large, heavily myelinated fibers of the posterior columns at the cervical and upper thoracic levels and then involves the lateral corticospinal tracts, hence 'combined': proprioceptive loss plus spastic weakness, with the spinothalamic tracts largely spared. Because the same deficiency causes a peripheral neuropathy, the ankle reflexes may be lost while the knees are brisk, and because the cerebral white matter and optic nerves are also affected, cognitive change and visual loss can accompany the myelopathy. Nitrous oxide inactivates B12 and produces the same syndrome acutely. Copper deficiency, HIV vacuolar myelopathy and tabes dorsalis attack the same columns, and posterior spinal artery infarction is a rare vascular cause.",
+  "imagingFindings": [
+    {
+      "pathology": "Subacute combined degeneration",
+      "modality": "MRI",
+      "finding": "Symmetric T2 hyperintensity of the posterior columns over the cervical and upper thoracic cord, an 'inverted V' on axial images, without enhancement; may resolve with treatment.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Tabes dorsalis",
+      "modality": "MRI",
+      "finding": "Posterior column atrophy and signal change in late syphilis; CSF VDRL positive.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Posterior spinal artery infarct",
+      "modality": "MRI",
+      "finding": "Acute restricted diffusion confined to the posterior columns after vertebral dissection or surgery.",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Vitamin B12 deficiency (pernicious anemia, gastrectomy, veganism, metformin, nitrous oxide abuse)",
+    "Copper deficiency (zinc excess, bariatric surgery)",
+    "Tabes dorsalis",
+    "HIV vacuolar myelopathy",
+    "Friedreich ataxia",
+    "Posterior spinal artery infarct"
+  ],
+  "mimics": [
+    {
+      "name": "Sensory polyneuropathy",
+      "howToDistinguish": "Distal loss of all modalities with areflexia and no upper motor neuron signs"
+    },
+    {
+      "name": "Cervical spondylotic myelopathy",
+      "howToDistinguish": "Neck pain, radicular arm symptoms, compressive cord lesion on MRI"
+    },
+    {
+      "name": "Multiple sclerosis",
+      "howToDistinguish": "Relapsing course, asymmetric lesions, brain MRI"
+    }
+  ],
+  "management": [
+    "Check B12, methylmalonic acid and homocysteine, plus copper and syphilis serology; treat empirically with parenteral B12 while awaiting results",
+    "Stop nitrous oxide exposure",
+    "Neurological recovery depends on the duration of deficiency; treat before the anemia appears"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spinal-cord-subacute-combined-degeneration",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-column",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -85
+    },
+    "label": "posterior columns of the cervical cord"
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "legs",
-   "sign": "Mixed picture: brisk knees with absent ankles when a peripheral neuropathy coexists",
-   "substrate": "dorsal-root-ganglion"
-  },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "bilateral",
-   "distribution": "preserved",
-   "sign": "Pain and temperature relatively spared",
-   "substrate": "pathway-lateral-spinothalamic"
-  },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "cerebral white matter",
-   "sign": "Memory loss, irritability, dementia in vitamin B12 deficiency",
-   "substrate": "corona-radiata"
-  }
- ],
- "reasoning": "The posterior columns carry uncrossed proprioceptive and vibration fibers from the ipsilateral leg (fasciculus gracilis, medially) and arm (fasciculus cuneatus, laterally) to the medulla, where they cross; bilateral damage in the cord therefore produces bilateral loss of those modalities below the lesion without any crossed pattern, and the loss of position sense removes the feedback that keeps the patient upright when vision is removed, hence the Romberg sign and the worsening in the dark. Vitamin B12 is needed for the methylation reactions that maintain myelin, and its deficiency produces a vacuolar demyelination that begins in the large, heavily myelinated fibers of the posterior columns at the cervical and upper thoracic levels and then involves the lateral corticospinal tracts, hence 'combined': proprioceptive loss plus spastic weakness, with the spinothalamic tracts largely spared. Because the same deficiency causes a peripheral neuropathy, the ankle reflexes may be lost while the knees are brisk, and because the cerebral white matter and optic nerves are also affected, cognitive change and visual loss can accompany the myelopathy. Nitrous oxide inactivates B12 and produces the same syndrome acutely. Copper deficiency, HIV vacuolar myelopathy and tabes dorsalis attack the same columns, and posterior spinal artery infarction is a rare vascular cause.",
- "imagingFindings": [
-  {
-   "pathology": "Subacute combined degeneration",
-   "modality": "MRI",
-   "finding": "Symmetric T2 hyperintensity of the posterior columns over the cervical and upper thoracic cord, an 'inverted V' on axial images, without enhancement; may resolve with treatment.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Tabes dorsalis",
-   "modality": "MRI",
-   "finding": "Posterior column atrophy and signal change in late syphilis; CSF VDRL positive.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Posterior spinal artery infarct",
-   "modality": "MRI",
-   "finding": "Acute restricted diffusion confined to the posterior columns after vertebral dissection or surgery.",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Vitamin B12 deficiency (pernicious anemia, gastrectomy, veganism, metformin, nitrous oxide abuse)",
-  "Copper deficiency (zinc excess, bariatric surgery)",
-  "Tabes dorsalis",
-  "HIV vacuolar myelopathy",
-  "Friedreich ataxia",
-  "Posterior spinal artery infarct"
- ],
- "mimics": [
-  {
-   "name": "Sensory polyneuropathy",
-   "howToDistinguish": "Distal loss of all modalities with areflexia and no upper motor neuron signs"
-  },
-  {
-   "name": "Cervical spondylotic myelopathy",
-   "howToDistinguish": "Neck pain, radicular arm symptoms, compressive cord lesion on MRI"
-  },
-  {
-   "name": "Multiple sclerosis",
-   "howToDistinguish": "Relapsing course, asymmetric lesions, brain MRI"
-  }
- ],
- "management": [
-  "Check B12, methylmalonic acid and homocysteine, plus copper and syphilis serology; treat empirically with parenteral B12 while awaiting results",
-  "Stop nitrous oxide exposure",
-  "Neurological recovery depends on the duration of deficiency; treat before the anemia appears"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    120,
-    121
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    163,
-    163
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    41,
-    44
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 21,
-   "pages": [
-    218,
-    218
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -85
-  },
-  "label": "posterior columns of the cervical cord"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

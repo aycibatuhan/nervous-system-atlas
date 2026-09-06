@@ -1,183 +1,163 @@
 {
- "kind": "structure",
- "id": "substantia-nigra-pars-reticulata",
- "name": "Substantia nigra, pars reticulata",
- "synonyms": [
-  "SNr"
- ],
- "system": "brainstem",
- "meshIds": [
-  "substantia-nigra-pars-reticulata-l",
-  "substantia-nigra-pars-reticulata-r"
- ],
- "summary": "The pars reticulata is the ventral, cell-sparse part of the substantia nigra that lies on the crus cerebri and is a dispersed continuation of the internal segment of the globus pallidus. Its GABAergic neurons are an output nucleus of the basal ganglia: they tonically inhibit the superior colliculus, the ventral anterior and mediodorsal thalamus and the pedunculopontine nucleus, and they pause to release saccades, orofacial movements and cognitive actions. It is central to the control of eye movements and to the propagation of seizures, it is disinhibited in parkinsonism and overinhibited in chorea, and it is the reason a nigral lesion affects gaze and axial movement as well as the limbs.",
- "anatomy": {
-  "location": "Ventral substantia nigra spread along the dorsal surface of the crus cerebri from the medial edge near the interpeduncular fossa to the lateral edge of the peduncle, beneath the pars compacta and continuous rostrally with the internal pallidum through the cerebral peduncle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Striatum (direct pathway)",
-    "via": "striatonigral GABAergic fibers"
-   },
-   {
-    "from": "Subthalamic nucleus",
-    "via": "glutamatergic fibers"
-   },
-   {
-    "from": "Substantia nigra pars compacta",
-    "via": "dendritic dopamine release"
-   }
+  "kind": "structure",
+  "id": "substantia-nigra-pars-reticulata",
+  "name": "Substantia nigra, pars reticulata",
+  "synonyms": [
+    "SNr"
   ],
-  "efferents": [
-   {
-    "to": "Superior colliculus",
-    "via": "nigrotectal fibers"
-   },
-   {
-    "to": "Ventral anterior and mediodorsal thalamus",
-    "via": "nigrothalamic fibers"
-   },
-   {
-    "to": "Pedunculopontine nucleus",
-    "via": "nigrotegmental fibers"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "substantia-nigra-pars-reticulata-l",
+    "substantia-nigra-pars-reticulata-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops",
-   "pathway-horizontal-gaze"
-  ]
- },
- "function": "Pars reticulata neurons fire tonically at high rates and hold the superior colliculus, the ventral anterior and mediodorsal thalamus and the brainstem locomotor region under inhibition; striatal direct-pathway neurons inhibit them to release a movement, and subthalamic input excites them to stop one, so they are the final common path of the oculomotor, orofacial and prefrontal basal ganglia loops much as the internal pallidum is for the limbs. Their projection to the superior colliculus gates saccades and their dendrites receive dopamine from the pars compacta, which sets their excitability. Reduced GABAergic output from the nigra to the colliculus underlies the seizure-suppressing effect of nigral inhibition in animal models.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-sca",
-   "artery-basilar",
-   "arteries-thalamoperforating",
-   "artery-pcom"
+  "summary": "The pars reticulata is the ventral, cell-sparse part of the substantia nigra that lies on the crus cerebri and is a dispersed continuation of the internal segment of the globus pallidus. Its GABAergic neurons are an output nucleus of the basal ganglia: they tonically inhibit the superior colliculus, the ventral anterior and mediodorsal thalamus and the pedunculopontine nucleus, and they pause to release saccades, orofacial movements and cognitive actions. It is central to the control of eye movements and to the propagation of seizures, it is disinhibited in parkinsonism and overinhibited in chorea, and it is the reason a nigral lesion affects gaze and axial movement as well as the limbs.",
+  "anatomy": {
+    "location": "Ventral substantia nigra spread along the dorsal surface of the crus cerebri from the medial edge near the interpeduncular fossa to the lateral edge of the peduncle, beneath the pars compacta and continuous rostrally with the internal pallidum through the cerebral peduncle.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Striatum (direct pathway)",
+        "via": "striatonigral GABAergic fibers"
+      },
+      {
+        "from": "Subthalamic nucleus",
+        "via": "glutamatergic fibers"
+      },
+      {
+        "from": "Substantia nigra pars compacta",
+        "via": "dendritic dopamine release"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superior colliculus",
+        "via": "nigrotectal fibers"
+      },
+      {
+        "to": "Ventral anterior and mediodorsal thalamus",
+        "via": "nigrothalamic fibers"
+      },
+      {
+        "to": "Pedunculopontine nucleus",
+        "via": "nigrotegmental fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops",
+      "pathway-horizontal-gaze"
+    ]
+  },
+  "function": "Pars reticulata neurons fire tonically at high rates and hold the superior colliculus, the ventral anterior and mediodorsal thalamus and the brainstem locomotor region under inhibition; striatal direct-pathway neurons inhibit them to release a movement, and subthalamic input excites them to stop one, so they are the final common path of the oculomotor, orofacial and prefrontal basal ganglia loops much as the internal pallidum is for the limbs. Their projection to the superior colliculus gates saccades and their dendrites receive dopamine from the pars compacta, which sets their excitability. Reduced GABAergic output from the nigra to the colliculus underlies the seizure-suppressing effect of nigral inhibition in animal models.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-sca",
+      "artery-basilar",
+      "arteries-thalamoperforating",
+      "artery-pcom"
+    ],
+    "territories": [
+      "territory-basilar",
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "substantia-nigra-pars-reticulata-l"
+        },
+        "label": "pars reticulata on the dorsal surface of the crus cerebri"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "substantia-nigra-pars-reticulata-r"
+        },
+        "label": "ventral substantia nigra above the cerebral peduncle"
+      }
+    ],
+    "normalAppearance": "On T2 and susceptibility-weighted images the pars reticulata is the dark, iron-rich band immediately dorsal to the crus cerebri, distinct from the brighter pars compacta behind it; its iron increases in Parkinson disease.",
+    "pathology": [
+      {
+        "pathology": "Parkinson disease (iron accumulation)",
+        "modality": "MRI",
+        "finding": "Increased susceptibility signal in the pars reticulata and loss of the compacta's swallow-tail sign; quantitative susceptibility mapping tracks progression.",
+        "sequence": "SWI"
+      },
+      {
+        "pathology": "Neurodegeneration with brain iron accumulation",
+        "modality": "MRI",
+        "finding": "Marked hypointensity of the substantia nigra and globus pallidus on T2, with the eye-of-the-tiger sign in PKAN.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Ventral midbrain infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the crus and ventral tegmentum with contralateral hemiparesis and parkinsonism, and gaze abnormalities from reticulata involvement.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired saccade initiation and slowed eye movements",
+        "side": "contralateral",
+        "mechanism": "Loss of reticulata control of the superior colliculus"
+      },
+      {
+        "deficit": "Contribution to parkinsonian akinesia (over-inhibition) or chorea (under-inhibition)",
+        "side": "bilateral",
+        "mechanism": "Altered tonic inhibition of the thalamus and brainstem"
+      },
+      {
+        "deficit": "Altered seizure threshold",
+        "side": "bilateral",
+        "mechanism": "Loss of nigral gating of the collicular seizure-propagation pathway"
+      }
+    ],
+    "examination": [
+      "Saccade latency and velocity, especially antisaccades",
+      "Bradykinesia and axial rigidity",
+      "Seizure history in patients with nigral pathology"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-huntington-chorea"
+    ],
+    "pearls": [
+      "The pars reticulata is the pallidum of the eyes and the face",
+      "Iron accumulates in the reticulata as dopamine neurons die in the compacta",
+      "Nigral output silences the superior colliculus; a saccade is a moment of nigral silence"
+    ]
+  },
+  "pitfalls": [
+    "A dark substantia nigra on T2 is normal in adults; only marked or asymmetric hypointensity with clinical signs suggests iron disease"
   ],
-  "territories": [
-   "territory-basilar",
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "substantia-nigra-pars-reticulata-l"
+  "citations": [
+    {
+      "ref": "sp-substantia-nigra",
+      "section": "Structure and Function"
     },
-    "label": "pars reticulata on the dorsal surface of the crus cerebri"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "substantia-nigra-pars-reticulata-r"
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "ventral substantia nigra above the cerebral peduncle"
-   }
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On T2 and susceptibility-weighted images the pars reticulata is the dark, iron-rich band immediately dorsal to the crus cerebri, distinct from the brighter pars compacta behind it; its iron increases in Parkinson disease.",
-  "pathology": [
-   {
-    "pathology": "Parkinson disease (iron accumulation)",
-    "modality": "MRI",
-    "finding": "Increased susceptibility signal in the pars reticulata and loss of the compacta's swallow-tail sign; quantitative susceptibility mapping tracks progression.",
-    "sequence": "SWI"
-   },
-   {
-    "pathology": "Neurodegeneration with brain iron accumulation",
-    "modality": "MRI",
-    "finding": "Marked hypointensity of the substantia nigra and globus pallidus on T2, with the eye-of-the-tiger sign in PKAN.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Ventral midbrain infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the crus and ventral tegmentum with contralateral hemiparesis and parkinsonism, and gaze abnormalities from reticulata involvement.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired saccade initiation and slowed eye movements",
-    "side": "contralateral",
-    "mechanism": "Loss of reticulata control of the superior colliculus"
-   },
-   {
-    "deficit": "Contribution to parkinsonian akinesia (over-inhibition) or chorea (under-inhibition)",
-    "side": "bilateral",
-    "mechanism": "Altered tonic inhibition of the thalamus and brainstem"
-   },
-   {
-    "deficit": "Altered seizure threshold",
-    "side": "bilateral",
-    "mechanism": "Loss of nigral gating of the collicular seizure-propagation pathway"
-   }
+  "tags": [
+    "basal ganglia output",
+    "saccades",
+    "iron"
   ],
-  "examination": [
-   "Saccade latency and velocity, especially antisaccades",
-   "Bradykinesia and axial rigidity",
-   "Seizure history in patients with nigral pathology"
-  ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-huntington-chorea"
-  ],
-  "pearls": [
-   "The pars reticulata is the pallidum of the eyes and the face",
-   "Iron accumulates in the reticulata as dopamine neurons die in the compacta",
-   "Nigral output silences the superior colliculus; a saccade is a moment of nigral silence"
-  ]
- },
- "pitfalls": [
-  "A dark substantia nigra on T2 is normal in adults; only marked or asymmetric hypointensity with clinical signs suggests iron disease"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    248
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    91,
-    96
-   ]
-  }
- ],
- "tags": [
-  "basal ganglia output",
-  "saccades",
-  "iron"
- ],
- "status": "draft",
- "subsystem": "midbrain",
- "parent": "substantia-nigra"
+  "status": "draft",
+  "subsystem": "midbrain",
+  "parent": "substantia-nigra"
 }

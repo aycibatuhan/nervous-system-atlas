@@ -1,169 +1,149 @@
 {
- "kind": "structure",
- "id": "thalamus-va-vl",
- "name": "Ventral anterior and ventral lateral nuclei (VA/VL)",
- "synonyms": [],
- "system": "diencephalon",
- "meshIds": [
-  "thalamus-ventral-anterior-l",
-  "thalamus-ventral-anterior-r",
-  "thalamus-ventrolateral-l",
-  "thalamus-ventrolateral-r"
- ],
- "summary": "The motor thalamus. The ventral anterior nucleus receives the inhibitory outflow of the basal ganglia (globus pallidus interna and substantia nigra reticulata) and projects to the premotor and prefrontal cortex; the ventral lateral nucleus receives the crossed cerebellar outflow from the dentate and interposed nuclei (and pallidal input to its anterior part) and projects to the primary motor and premotor cortex. Both loops pass through here, so a VL lesion can abolish a contralateral tremor, which is why the VL (VIM) nucleus is the target for thalamotomy and deep brain stimulation in tremor.",
- "anatomy": {
-  "location": "Anterior part of the ventral tier of the lateral thalamus, in front of the VPL/VPM, lateral to the mediodorsal nucleus and medial to the internal capsule; VA is anterior, VL behind it.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "dentate-nucleus (contralateral)",
-    "via": "superior-cerebellar-peduncle"
-   },
-   {
-    "from": "globus-pallidus (internal segment)",
-    "via": "thalamic fasciculus"
-   },
-   {
-    "from": "substantia-nigra (pars reticulata)"
-   }
+  "kind": "structure",
+  "id": "thalamus-va-vl",
+  "name": "Ventral anterior and ventral lateral nuclei (VA/VL)",
+  "synonyms": [],
+  "system": "diencephalon",
+  "meshIds": [
+    "thalamus-ventral-anterior-l",
+    "thalamus-ventral-anterior-r",
+    "thalamus-ventrolateral-l",
+    "thalamus-ventrolateral-r"
   ],
-  "efferents": [
-   {
-    "to": "gyrus-precentral and cortex-premotor-sma"
-   }
-  ],
-  "pathways": [
-   "pathway-cerebellar-circuits",
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Relay of basal ganglia and cerebellar output to the motor cortices; integration of movement selection (VA, pallidal) and movement timing and coordination (VL, cerebellar).",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pcom"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": -10,
-     "z": 6
+  "summary": "The motor thalamus. The ventral anterior nucleus receives the inhibitory outflow of the basal ganglia (globus pallidus interna and substantia nigra reticulata) and projects to the premotor and prefrontal cortex; the ventral lateral nucleus receives the crossed cerebellar outflow from the dentate and interposed nuclei (and pallidal input to its anterior part) and projects to the primary motor and premotor cortex. Both loops pass through here, so a VL lesion can abolish a contralateral tremor, which is why the VL (VIM) nucleus is the target for thalamotomy and deep brain stimulation in tremor.",
+  "anatomy": {
+    "location": "Anterior part of the ventral tier of the lateral thalamus, in front of the VPL/VPM, lateral to the mediodorsal nucleus and medial to the internal capsule; VA is anterior, VL behind it.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "dentate-nucleus (contralateral)",
+        "via": "superior-cerebellar-peduncle"
+      },
+      {
+        "from": "globus-pallidus (internal segment)",
+        "via": "thalamic fasciculus"
+      },
+      {
+        "from": "substantia-nigra (pars reticulata)"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "gyrus-precentral and cortex-premotor-sma"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits",
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Relay of basal ganglia and cerebellar output to the motor cortices; integration of movement selection (VA, pallidal) and movement timing and coordination (VL, cerebellar).",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pcom"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": -10,
+          "z": 6
+        },
+        "label": "anterior ventral thalamus beside the internal capsule"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 12,
+          "y": -10,
+          "z": 6
+        },
+        "label": "VA/VL in the anterior ventral tier"
+      }
+    ],
+    "normalAppearance": "Not separately resolved on routine MRI; the MIAL VA and VL nuclear group meshes show its position. Deep brain stimulation electrodes for tremor are targeted here.",
+    "pathology": [
+      {
+        "pathology": "Tuberothalamic (anterior thalamic) infarct",
+        "modality": "MRI",
+        "finding": "Anterolateral thalamic restriction from the polar artery, with neuropsychological and mild motor deficits.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Thalamotomy or DBS lesion/electrode",
+        "modality": "MRI",
+        "finding": "Focal lesion or electrode artifact in the VIM region on the side opposite the treated tremor.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "DWI; T1 for surgical targeting"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral ataxia and intention tremor (thalamic ataxia)",
+        "side": "contralateral",
+        "mechanism": "Cerebellar relay in VL"
+      },
+      {
+        "deficit": "Hemiparesis with a lesion extending into the capsule",
+        "side": "contralateral",
+        "mechanism": "Adjacent posterior limb"
+      },
+      {
+        "deficit": "Abolition of contralateral tremor after a lesion",
+        "side": "contralateral",
+        "mechanism": "Interruption of the cerebello-thalamo-cortical loop"
+      },
+      {
+        "deficit": "Apathy and executive dysfunction",
+        "side": "contralateral",
+        "mechanism": "Anterior and VA connections with the frontal lobe"
+      }
+    ],
+    "examination": [
+      "Finger-nose and heel-shin on the opposite side",
+      "Observe rest and action tremor",
+      "Frontal executive tasks"
+    ],
+    "syndromes": [
+      "syn-lacunar-ataxic-hemiparesis",
+      "syn-parkinsonism"
+    ],
+    "pearls": [
+      "Ataxic hemiparesis can come from the thalamus and internal capsule as well as the pons",
+      "The cerebellum reaches the cortex only through this nucleus: a VL lesion mimics a contralateral cerebellar lesion in the limbs"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "anterior ventral thalamus beside the internal capsule"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 12,
-     "y": -10,
-     "z": 6
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Structure and Function"
     },
-    "label": "VA/VL in the anterior ventral tier"
-   }
+    {
+      "ref": "sp-deep-brain-stimulation",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "Not separately resolved on routine MRI; the MIAL VA and VL nuclear group meshes show its position. Deep brain stimulation electrodes for tremor are targeted here.",
-  "pathology": [
-   {
-    "pathology": "Tuberothalamic (anterior thalamic) infarct",
-    "modality": "MRI",
-    "finding": "Anterolateral thalamic restriction from the polar artery, with neuropsychological and mild motor deficits.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Thalamotomy or DBS lesion/electrode",
-    "modality": "MRI",
-    "finding": "Focal lesion or electrode artifact in the VIM region on the side opposite the treated tremor.",
-    "sequence": "T1"
-   }
+  "tags": [
+    "diencephalon"
   ],
-  "sequenceOfChoice": "DWI; T1 for surgical targeting"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral ataxia and intention tremor (thalamic ataxia)",
-    "side": "contralateral",
-    "mechanism": "Cerebellar relay in VL"
-   },
-   {
-    "deficit": "Hemiparesis with a lesion extending into the capsule",
-    "side": "contralateral",
-    "mechanism": "Adjacent posterior limb"
-   },
-   {
-    "deficit": "Abolition of contralateral tremor after a lesion",
-    "side": "contralateral",
-    "mechanism": "Interruption of the cerebello-thalamo-cortical loop"
-   },
-   {
-    "deficit": "Apathy and executive dysfunction",
-    "side": "contralateral",
-    "mechanism": "Anterior and VA connections with the frontal lobe"
-   }
-  ],
-  "examination": [
-   "Finger-nose and heel-shin on the opposite side",
-   "Observe rest and action tremor",
-   "Frontal executive tasks"
-  ],
-  "syndromes": [
-   "syn-lacunar-ataxic-hemiparesis",
-   "syn-parkinsonism"
-  ],
-  "pearls": [
-   "Ataxic hemiparesis can come from the thalamus and internal capsule as well as the pons",
-   "The cerebellum reaches the cortex only through this nucleus: a VL lesion mimics a contralateral cerebellar lesion in the limbs"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    367
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    312,
-    315
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    56
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    242,
-    245
-   ]
-  }
- ],
- "tags": [
-  "diencephalon"
- ],
- "status": "draft",
- "latin": "Nucleus ventralis anterior; nucleus ventralis lateralis",
- "subsystem": "thalamus",
- "parent": "thalamus"
+  "status": "draft",
+  "latin": "Nucleus ventralis anterior; nucleus ventralis lateralis",
+  "subsystem": "thalamus",
+  "parent": "thalamus"
 }

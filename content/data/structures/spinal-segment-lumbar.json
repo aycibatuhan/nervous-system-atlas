@@ -1,0 +1,168 @@
+{
+  "kind": "structure",
+  "id": "spinal-segment-lumbar",
+  "name": "Lumbar spinal cord (L1-L5)",
+  "synonyms": [
+    "lumbar cord",
+    "L1-L5 cord segments",
+    "epiconus"
+  ],
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-segment-lumbar"
+  ],
+  "summary": "The five lumbar cord segments are packed into the vertebral canal opposite the T10, T11 and T12 vertebral bodies, far above the lumbar vertebrae they are named for, and together with the upper sacral segments they form the lumbosacral enlargement whose broad anterior horns supply the leg. The L1 and L2 segments carry the last of the sympathetic outflow and the cremasteric reflex, L2 to L4 supply the hip flexors, adductors and quadriceps and the knee jerk, and L4 and L5 supply ankle dorsiflexion, inversion and eversion. Their long roots have to travel far down the canal to reach their own foramina, so they run in the cauda equina beside the cord itself. A lesion confined to these segments, the epiconus syndrome, gives weak hips and knees with a preserved knee jerk pattern that shifts as the level rises, an absent ankle jerk, and less bladder involvement than a true conus lesion.",
+  "anatomy": {
+    "location": "In the vertebral canal opposite the T10, T11 and upper T12 vertebral bodies, immediately above the sacral segments and the conus medullaris. The cord is at its widest from side to side here, the lumbosacral enlargement, and it is surrounded by the descending roots of the cauda equina, which crowd the subarachnoid space so that a small mass at this level can compress both cord and roots at once. The great anterior radicular artery of Adamkiewicz usually enters between T9 and L2 and supplies this part of the cord.",
+    "subdivisions": [
+      {
+        "name": "L1-L2",
+        "note": "Last of the sympathetic outflow, the cremasteric reflex and Clarke column, the origin of the posterior spinocerebellar tract."
+      },
+      {
+        "name": "L3-L5",
+        "note": "Quadriceps, adductors and ankle dorsiflexors; the knee jerk is L3-L4 and the L5 myotome extends the great toe."
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-lateral-spinothalamic",
+      "pathway-posterior-spinocerebellar"
+    ]
+  },
+  "function": "The lumbar cord provides the motor supply of the hip flexors, adductors, quadriceps and ankle dorsiflexors and receives sensation from the front of the thigh, the medial leg and the dorsum of the foot. Its anterior horns are large and somatotopically arranged, with the trunk muscles medial and the distal leg muscles lateral, and Clarke column at L1 and L2 is the origin of the posterior spinocerebellar tract carrying unconscious proprioception from the leg. The last preganglionic sympathetic neurons of the intermediolateral column lie at L1 and L2 and supply the pelvic vessels, and the L1 and L2 segments run the cremasteric reflex. Because these segments sit opposite the low thoracic vertebrae, a burst fracture of T12 damages lumbar cord and not lumbar roots, which is the commonest reason for the mismatch between the fracture level on a radiograph and the neurological level at the bedside.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "artery of Adamkiewicz",
+      "lumbar segmental radicular arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -70
+        },
+        "label": "cord cross-section; the lumbar cord segments lie in the low thoracic canal, below the MNI volume"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "rostral cord shown in the volume; the lumbosacral enlargement is far caudal to it"
+      }
+    ],
+    "normalAppearance": "On sagittal T2 the cord widens into the lumbosacral enlargement opposite the T10 to T12 vertebrae before tapering to the conus; below it the cauda equina roots hang as fine dark strands in bright CSF.",
+    "pathology": [
+      {
+        "pathology": "Epiconus syndrome after a thoracolumbar fracture",
+        "modality": "MRI",
+        "finding": "Cord signal change opposite T11 or T12 with weak hip extensors and knee flexors, an absent ankle jerk and a preserved knee jerk, and relatively late bladder involvement.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Spinal dural arteriovenous fistula",
+        "modality": "MRI",
+        "finding": "Long T2 hyperintensity of the lower cord with dilated perimedullary flow voids on the dorsal surface, producing a slowly progressive paraparesis in an older man.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Intramedullary metastasis or ependymoma",
+        "modality": "MRI",
+        "finding": "Enhancing expansile lesion of the lumbosacral enlargement with surrounding edema and cord widening.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T2 of the thoracolumbar junction with axial images, and contrast for tumor or fistula."
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak hip flexion and knee extension with a depressed knee jerk",
+        "side": "bilateral",
+        "mechanism": "Loss of the L2-L4 anterior horn cells and of the afferent and efferent limbs of the knee jerk"
+      },
+      {
+        "deficit": "Foot drop with weak inversion and eversion",
+        "side": "bilateral",
+        "mechanism": "Loss of the L4 and L5 anterior horn cells supplying tibialis anterior and the peroneal muscles"
+      },
+      {
+        "deficit": "Absent cremasteric reflex",
+        "side": "ipsilateral",
+        "mechanism": "Interruption of the L1-L2 reflex arc"
+      },
+      {
+        "deficit": "Sensory loss over the front of the thigh and the medial leg",
+        "side": "bilateral",
+        "mechanism": "Loss of the L2-L4 dorsal root entry zones"
+      }
+    ],
+    "examination": [
+      "Test hip flexion (L1-L2), knee extension (L3-L4), ankle dorsiflexion (L4-L5) and great toe extension (L5)",
+      "Compare the knee jerk (L3-L4) with the ankle jerk (S1) to place the level",
+      "Look for the cremasteric reflex in men and for a sensory level on the thigh",
+      "Ask about back pain, trauma and progressive walking difficulty"
+    ],
+    "syndromes": [
+      "syn-conus-vs-cauda-equina",
+      "syn-radiculopathy-lumbosacral"
+    ],
+    "pearls": [
+      "Weak legs with a preserved knee jerk and an absent ankle jerk points to the epiconus, not the cauda equina",
+      "A T12 fracture injures lumbar cord segments; the vertebral number is not the neurological level",
+      "The knee jerk and ankle jerk together separate an L3-L4 from an L5-S1 problem faster than any sensory map"
+    ]
+  },
+  "pitfalls": [
+    "DERIVED MESH: the four cord blocks are not measured on an individual. The Z-Anatomy cord surface was cut by horizontal planes placed at the classical cord-segment to vertebral-body relationship read off the Z-Anatomy vertebrae, so the block boundaries teach the rule rather than record a specimen; use them for orientation, never to read a level off an image.",
+    "The lumbar cord segments lie opposite the T10-T12 vertebrae, several levels above the lumbar vertebrae of the same name",
+    "Weakness from lumbar cord segments is bilateral and symmetric; asymmetric weakness with radicular pain is more likely root disease"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spinal-cord",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-morphology",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-conus-medullaris",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-arteries",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-back-lumbar-plexus",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "spinal cord",
+    "segment",
+    "derived"
+  ],
+  "status": "draft",
+  "subsystem": "segments",
+  "parent": "spinal-cord",
+  "level": {
+    "region": "spinal",
+    "sub": "lumbar"
+  }
+}

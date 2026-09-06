@@ -1,130 +1,126 @@
 {
- "kind": "syndrome",
- "id": "syn-benedikt",
- "name": "Benedikt syndrome (midbrain tegmentum with red nucleus)",
- "eponyms": [
-  "Benedikt syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "red-nucleus",
-   "oculomotor-nucleus",
-   "substantia-nigra",
-   "cerebral-peduncle-crus",
-   "level-midbrain-superior-colliculus"
+  "kind": "syndrome",
+  "id": "syn-benedikt",
+  "name": "Benedikt syndrome (midbrain tegmentum with red nucleus)",
+  "eponyms": [
+    "Benedikt syndrome"
   ],
-  "side": "ipsilateral",
-  "level": "midbrain-superior-colliculus"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -6,
-   "y": -20,
-   "z": -8
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "red-nucleus",
+      "oculomotor-nucleus",
+      "substantia-nigra",
+      "cerebral-peduncle-crus",
+      "level-midbrain-superior-colliculus"
+    ],
+    "side": "ipsilateral",
+    "level": "midbrain-superior-colliculus"
   },
-  "radiusMm": 7
- },
- "presentation": "The patient has a third nerve palsy on one side and, on the other, a coarse tremor that is present at rest, worsens with posture and becomes wild on reaching, together with ataxia, choreoathetoid movements and sometimes mild weakness. This combination of an oculomotor palsy with contralateral involuntary movements marks a lesion of the midbrain tegmentum that includes the red nucleus.",
- "deficits": [
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "oculomotor",
-   "sign": "Third nerve palsy",
-   "substrate": "cn-03-oculomotor"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -6,
+      "y": -20,
+      "z": -8
+    },
+    "radiusMm": 7
   },
-  {
-   "modality": "cerebellar",
-   "side": "contralateral",
-   "distribution": "arm more than leg",
-   "sign": "Holmes (rubral) tremor: rest, postural and intention components; ataxia",
-   "substrate": "red-nucleus"
+  "presentation": "The patient has a third nerve palsy on one side and, on the other, a coarse tremor that is present at rest, worsens with posture and becomes wild on reaching, together with ataxia, choreoathetoid movements and sometimes mild weakness. This combination of an oculomotor palsy with contralateral involuntary movements marks a lesion of the midbrain tegmentum that includes the red nucleus.",
+  "deficits": [
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "oculomotor",
+      "sign": "Third nerve palsy",
+      "substrate": "cn-03-oculomotor"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "contralateral",
+      "distribution": "arm more than leg",
+      "sign": "Holmes (rubral) tremor: rest, postural and intention components; ataxia",
+      "substrate": "red-nucleus"
+    },
+    {
+      "modality": "other",
+      "side": "contralateral",
+      "distribution": "limbs",
+      "sign": "Choreoathetosis or hemiballismus-like movements from the nigra and subthalamic connections",
+      "substrate": "substantia-nigra"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "mild",
+      "sign": "Mild hemiparesis if the lesion reaches the crus",
+      "substrate": "pathway-lateral-corticospinal"
+    }
+  ],
+  "reasoning": "The red nucleus sits in the midbrain tegmentum at the level of the superior colliculus, receiving the crossed dentatothalamic fibers from the opposite cerebellum and sending the rubrospinal tract, which crosses immediately, to the contralateral cord. A lesion here interrupts cerebellar outflow after its decussation and damages the red nucleus and the neighboring substantia nigra, so the resulting tremor and ataxia are contralateral, following the same double-crossing logic as the Claude syndrome: cerebellar information that crossed once in the superior cerebellar peduncle would have been re-crossed by the corticospinal tract to serve the opposite limbs. The oculomotor fascicles pass directly through the red nucleus on their way to the interpeduncular fossa, and their interruption gives the ipsilateral third nerve palsy. The characteriztic Holmes tremor, slow and present at rest as well as on action, is attributed to the combined loss of cerebellothalamic and nigrostriatal input, and it typically appears weeks after the acute lesion. Ventral extension into the crus adds contralateral weakness, blending the syndrome with Weber.",
+  "imagingFindings": [
+    {
+      "pathology": "Midbrain tegmental infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion involving the red nucleus and adjacent tegmentum on the side of the third nerve palsy.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Midbrain tumor or vascular malformation",
+      "modality": "MRI",
+      "finding": "Enhancing lesion or cavernoma in the tegmentum; tremor may be delayed.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Perforator infarct from the posterior cerebral artery",
+    "Midbrain hemorrhage",
+    "Cavernous malformation",
+    "Tumor"
+  ],
+  "mimics": [
+    {
+      "name": "Claude syndrome",
+      "howToDistinguish": "Ataxia only, no rest tremor or involuntary movements"
+    },
+    {
+      "name": "Weber syndrome",
+      "howToDistinguish": "Hemiplegia without tremor"
+    },
+    {
+      "name": "Parkinsonian rest tremor",
+      "howToDistinguish": "No third nerve palsy; bilateral over time"
+    }
+  ],
+  "management": [
+    "Treat the underlying lesion",
+    "Holmes tremor may respond partly to levodopa or to thalamic deep brain stimulation",
+    "Diplopia management"
+  ],
+  "citations": [
+    {
+      "ref": "sp-benedikt-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -6,
+      "y": -20,
+      "z": -8
+    },
+    "label": "red nucleus and oculomotor fascicle"
   },
-  {
-   "modality": "other",
-   "side": "contralateral",
-   "distribution": "limbs",
-   "sign": "Choreoathetosis or hemiballismus-like movements from the nigra and subthalamic connections",
-   "substrate": "substantia-nigra"
-  },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "mild",
-   "sign": "Mild hemiparesis if the lesion reaches the crus",
-   "substrate": "pathway-lateral-corticospinal"
-  }
- ],
- "reasoning": "The red nucleus sits in the midbrain tegmentum at the level of the superior colliculus, receiving the crossed dentatothalamic fibers from the opposite cerebellum and sending the rubrospinal tract, which crosses immediately, to the contralateral cord. A lesion here interrupts cerebellar outflow after its decussation and damages the red nucleus and the neighboring substantia nigra, so the resulting tremor and ataxia are contralateral, following the same double-crossing logic as the Claude syndrome: cerebellar information that crossed once in the superior cerebellar peduncle would have been re-crossed by the corticospinal tract to serve the opposite limbs. The oculomotor fascicles pass directly through the red nucleus on their way to the interpeduncular fossa, and their interruption gives the ipsilateral third nerve palsy. The characteriztic Holmes tremor, slow and present at rest as well as on action, is attributed to the combined loss of cerebellothalamic and nigrostriatal input, and it typically appears weeks after the acute lesion. Ventral extension into the crus adds contralateral weakness, blending the syndrome with Weber.",
- "imagingFindings": [
-  {
-   "pathology": "Midbrain tegmental infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion involving the red nucleus and adjacent tegmentum on the side of the third nerve palsy.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Midbrain tumor or vascular malformation",
-   "modality": "MRI",
-   "finding": "Enhancing lesion or cavernoma in the tegmentum; tremor may be delayed.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Perforator infarct from the posterior cerebral artery",
-  "Midbrain hemorrhage",
-  "Cavernous malformation",
-  "Tumor"
- ],
- "mimics": [
-  {
-   "name": "Claude syndrome",
-   "howToDistinguish": "Ataxia only, no rest tremor or involuntary movements"
-  },
-  {
-   "name": "Weber syndrome",
-   "howToDistinguish": "Hemiplegia without tremor"
-  },
-  {
-   "name": "Parkinsonian rest tremor",
-   "howToDistinguish": "No third nerve palsy; bilateral over time"
-  }
- ],
- "management": [
-  "Treat the underlying lesion",
-  "Holmes tremor may respond partly to levodopa or to thalamic deep brain stimulation",
-  "Diplopia management"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    217,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    94,
-    94
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -6,
-   "y": -20,
-   "z": -8
-  },
-  "label": "red nucleus and oculomotor fascicle"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

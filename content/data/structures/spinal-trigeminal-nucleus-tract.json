@@ -1,162 +1,142 @@
 {
- "kind": "structure",
- "id": "spinal-trigeminal-nucleus-tract",
- "name": "Spinal trigeminal nucleus and tract",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "Pain and temperature fibers from the face enter the pons in the trigeminal root, turn downward as the spinal trigeminal tract and descend through the medulla into the upper cervical cord, synapsing along the way in the spinal trigeminal nucleus that lies medial to the tract. Second-order axons cross to join the trigeminothalamic tract. This descending course explains the signature crossed sensory loss of lateral brainstem lesions: facial pain loss on the side of the lesion, body pain loss on the opposite side. The nucleus also receives pain fibers from the ear and pharynx carried by cranial nerves VII, IX and X.",
- "anatomy": {
-  "location": "Lateral tegmentum of the medulla and caudal pons, just deep to the surface and medial to the inferior cerebellar peduncle, continuous below with the substantia gelatinosa of the upper cervical dorsal horn (C2–C3) and above with the principal sensory nucleus.",
-  "subdivisions": [
-   {
-    "name": "Pars oralis",
-    "note": "rostral, near the principal nucleus; touch from the perioral region"
-   },
-   {
-    "name": "Pars interpolaris",
-    "note": "mid-medulla, dental pain"
-   },
-   {
-    "name": "Pars caudalis",
-    "note": "lower medulla to C3; the main relay for facial pain and temperature, laminated like the dorsal horn, with an onion-skin somatotopy (perioral rostral, peripheral face caudal)"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-trigeminothalamic"
-  ]
- },
- "function": "Relays facial and oral pain, temperature and crude touch, plus pain from the external ear, tympanic membrane and pharynx; afferent limb of the corneal reflex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-vertebral",
-   "artery-aica"
+  "kind": "structure",
+  "id": "spinal-trigeminal-nucleus-tract",
+  "name": "Spinal trigeminal nucleus and tract",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "territories": [
-   "territory-pica-lateral-medulla",
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": -42,
-     "z": -44
+  "summary": "Pain and temperature fibers from the face enter the pons in the trigeminal root, turn downward as the spinal trigeminal tract and descend through the medulla into the upper cervical cord, synapsing along the way in the spinal trigeminal nucleus that lies medial to the tract. Second-order axons cross to join the trigeminothalamic tract. This descending course explains the signature crossed sensory loss of lateral brainstem lesions: facial pain loss on the side of the lesion, body pain loss on the opposite side. The nucleus also receives pain fibers from the ear and pharynx carried by cranial nerves VII, IX and X.",
+  "anatomy": {
+    "location": "Lateral tegmentum of the medulla and caudal pons, just deep to the surface and medial to the inferior cerebellar peduncle, continuous below with the substantia gelatinosa of the upper cervical dorsal horn (C2–C3) and above with the principal sensory nucleus.",
+    "subdivisions": [
+      {
+        "name": "Pars oralis",
+        "note": "rostral, near the principal nucleus; touch from the perioral region"
+      },
+      {
+        "name": "Pars interpolaris",
+        "note": "mid-medulla, dental pain"
+      },
+      {
+        "name": "Pars caudalis",
+        "note": "lower medulla to C3; the main relay for facial pain and temperature, laminated like the dorsal horn, with an onion-skin somatotopy (perioral rostral, peripheral face caudal)"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-trigeminothalamic"
+    ]
+  },
+  "function": "Relays facial and oral pain, temperature and crude touch, plus pain from the external ear, tympanic membrane and pharynx; afferent limb of the corneal reflex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-vertebral",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla",
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": -42,
+          "z": -44
+        },
+        "label": "lateral medulla medial to the inferior cerebellar peduncle"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 12,
+          "y": -42,
+          "z": -44
+        },
+        "label": "descending column from the pons to the upper cervical cord"
+      }
+    ],
+    "normalAppearance": "Not resolved on routine MRI; localized to the lateral tegmentum. Lateral medullary infarcts that involve it lie behind the olive on axial DWI.",
+    "pathology": [
+      {
+        "pathology": "Lateral medullary infarct",
+        "modality": "MRI",
+        "finding": "Dorsolateral medullary restricted diffusion; facial pain and temperature loss with a preserved corneal touch sensation.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Syringobulbia",
+        "modality": "MRI",
+        "finding": "Cavity extending from a cervical syrinx into the medulla, giving an onion-skin pattern of facial sensory loss.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "DWI; sagittal T2 of the cervicomedullary junction for syrinx"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Loss of pain and temperature over the ipsilateral face with preserved touch",
+        "side": "ipsilateral",
+        "mechanism": "Tract and nucleus before the second-order fibers cross"
+      },
+      {
+        "deficit": "Onion-skin facial sensory loss starting around the mouth or the periphery",
+        "side": "ipsilateral",
+        "mechanism": "Somatotopy along the length of the pars caudalis"
+      },
+      {
+        "deficit": "Reduced corneal reflex on the affected side with both eyes blinking when the other cornea is touched",
+        "side": "ipsilateral",
+        "mechanism": "Afferent limb of the reflex"
+      }
+    ],
+    "examination": [
+      "Pin-prick and cold on the forehead, cheek and chin compared with the trunk",
+      "Corneal reflex, watching both eyes",
+      "Compare facial pain sensation with facial light touch to detect dissociation"
+    ],
+    "syndromes": [
+      "syn-wallenberg-lateral-medullary",
+      "syn-aica-lateral-pontine",
+      "syn-central-cord-syringomyelia"
+    ],
+    "pearls": [
+      "Dissociated facial sensory loss (pain lost, touch kept) means the lesion is in the descending trigeminal system, not the nerve",
+      "A cervical cord lesion at C2–C3 can numb the back of the face and scalp because the pars caudalis extends that low"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-spinal-trigeminal-nucleus",
+      "section": "Structure and Function"
     },
-    "label": "lateral medulla medial to the inferior cerebellar peduncle"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 12,
-     "y": -42,
-     "z": -44
+    {
+      "ref": "sp-trigeminal-nucleus",
+      "section": "Structure and Function"
     },
-    "label": "descending column from the pons to the upper cervical cord"
-   }
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not resolved on routine MRI; localized to the lateral tegmentum. Lateral medullary infarcts that involve it lie behind the olive on axial DWI.",
-  "pathology": [
-   {
-    "pathology": "Lateral medullary infarct",
-    "modality": "MRI",
-    "finding": "Dorsolateral medullary restricted diffusion; facial pain and temperature loss with a preserved corneal touch sensation.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Syringobulbia",
-    "modality": "MRI",
-    "finding": "Cavity extending from a cervical syrinx into the medulla, giving an onion-skin pattern of facial sensory loss.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "DWI; sagittal T2 of the cervicomedullary junction for syrinx"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Loss of pain and temperature over the ipsilateral face with preserved touch",
-    "side": "ipsilateral",
-    "mechanism": "Tract and nucleus before the second-order fibers cross"
-   },
-   {
-    "deficit": "Onion-skin facial sensory loss starting around the mouth or the periphery",
-    "side": "ipsilateral",
-    "mechanism": "Somatotopy along the length of the pars caudalis"
-   },
-   {
-    "deficit": "Reduced corneal reflex on the affected side with both eyes blinking when the other cornea is touched",
-    "side": "ipsilateral",
-    "mechanism": "Afferent limb of the reflex"
-   }
-  ],
-  "examination": [
-   "Pin-prick and cold on the forehead, cheek and chin compared with the trunk",
-   "Corneal reflex, watching both eyes",
-   "Compare facial pain sensation with facial light touch to detect dissociation"
-  ],
-  "syndromes": [
-   "syn-wallenberg-lateral-medullary",
-   "syn-aica-lateral-pontine",
-   "syn-central-cord-syringomyelia"
-  ],
-  "pearls": [
-   "Dissociated facial sensory loss (pain lost, touch kept) means the lesion is in the descending trigeminal system, not the nerve",
-   "A cervical cord lesion at C2–C3 can numb the back of the face and scalp because the pars caudalis extends that low"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    199,
-    204
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    335
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    78
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    117,
-    120
-   ]
+  "status": "draft",
+  "latin": "Nucleus et tractus spinalis nervi trigemini",
+  "subsystem": "medulla",
+  "level": {
+    "region": "medulla"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Nucleus et tractus spinalis nervi trigemini",
- "subsystem": "medulla",
- "level": {
-  "region": "medulla"
- }
 }

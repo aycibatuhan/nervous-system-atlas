@@ -1,187 +1,159 @@
 {
- "kind": "structure",
- "id": "gyrus-lingual",
- "name": "Lingual gyrus",
- "synonyms": [
-  "lower calcarine bank",
-  "medial occipitotemporal gyrus"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-lingual-l",
-  "gyrus-lingual-r"
- ],
- "summary": "The lingual gyrus is the tongue-shaped gyrus on the inferomedial occipital surface below the calcarine sulcus, extending forward to the isthmus of the cingulate gyrus and bounded laterally by the collateral sulcus and the fusiform gyrus. It is the lower bank of the primary visual cortex and its surrounding V2, V3 and ventral V4, and it represents the contralateral upper visual field; it also processes color and, together with the parahippocampal cortex in front of it, the recognition of places and landmarks. It is supplied by the posterior cerebral artery, and its lesions produce contralateral superior quadrantanopia, hemiachromatopsia and topographical disorientation.",
- "anatomy": {
-  "location": "Inferomedial occipital gyrus between the calcarine sulcus above and the collateral sulcus below and laterally, from the occipital pole forward to the isthmus behind the splenium, continuous anteriorly with the parahippocampal gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lateral geniculate nucleus (upper field fibers)",
-    "via": "optic radiation, lower bank"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Contralateral lingual gyrus",
-    "via": "splenium"
-   }
+  "kind": "structure",
+  "id": "gyrus-lingual",
+  "name": "Lingual gyrus",
+  "synonyms": [
+    "lower calcarine bank",
+    "medial occipitotemporal gyrus"
   ],
-  "efferents": [
-   {
-    "to": "Fusiform gyrus (ventral stream)",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Parahippocampal and retrosplenial cortex",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Superior colliculus",
-    "via": "corticotectal fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-lingual-l",
+    "gyrus-lingual-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "The lower calcarine bank on the lingual gyrus receives the geniculocalcarine fibers carrying the contralateral upper field, and the surrounding ventral extrastriate cortex analyzes color, texture and the layout of scenes; the anterior lingual and neighboring parahippocampal cortex form the place area that recognizes landmarks and the spatial structure of environments. The gyrus feeds the fusiform recognition regions laterally and the retrosplenial and hippocampal navigation system anteriorly. Damage produces an upper quadrantic defect, loss of color in the contralateral field and inability to recognize familiar places, and irritation produces colored hallucinations in the upper field.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca"
+  "summary": "The lingual gyrus is the tongue-shaped gyrus on the inferomedial occipital surface below the calcarine sulcus, extending forward to the isthmus of the cingulate gyrus and bounded laterally by the collateral sulcus and the fusiform gyrus. It is the lower bank of the primary visual cortex and its surrounding V2, V3 and ventral V4, and it represents the contralateral upper visual field; it also processes color and, together with the parahippocampal cortex in front of it, the recognition of places and landmarks. It is supplied by the posterior cerebral artery, and its lesions produce contralateral superior quadrantanopia, hemiachromatopsia and topographical disorientation.",
+  "anatomy": {
+    "location": "Inferomedial occipital gyrus between the calcarine sulcus above and the collateral sulcus below and laterally, from the occipital pole forward to the isthmus behind the splenium, continuous anteriorly with the parahippocampal gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lateral geniculate nucleus (upper field fibers)",
+        "via": "optic radiation, lower bank"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Contralateral lingual gyrus",
+        "via": "splenium"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Fusiform gyrus (ventral stream)",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Parahippocampal and retrosplenial cortex",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Superior colliculus",
+        "via": "corticotectal fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "The lower calcarine bank on the lingual gyrus receives the geniculocalcarine fibers carrying the contralateral upper field, and the surrounding ventral extrastriate cortex analyzes color, texture and the layout of scenes; the anterior lingual and neighboring parahippocampal cortex form the place area that recognizes landmarks and the spatial structure of environments. The gyrus feeds the fusiform recognition regions laterally and the retrosplenial and hippocampal navigation system anteriorly. Damage produces an upper quadrantic defect, loss of color in the contralateral field and inability to recognize familiar places, and irritation produces colored hallucinations in the upper field.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "gyrus-lingual-l"
+        },
+        "label": "lingual gyrus below the calcarine sulcus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-lingual-r"
+        },
+        "label": "inferomedial occipital cortex between the calcarine and collateral sulci"
+      }
+    ],
+    "normalAppearance": "Medial occipital gyrus below the calcarine sulcus on sagittal images, tapering forward toward the splenium; on coronal images it lies medial to the collateral sulcus and the fusiform gyrus.",
+    "pathology": [
+      {
+        "pathology": "PCA infarct (lower calcarine bank)",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the lingual gyrus with a contralateral superior quadrantanopia and, with extension laterally, hemiachromatopsia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Landmark agnosia",
+        "modality": "MRI",
+        "finding": "Right lingual and parahippocampal infarct or tumor with inability to recognize familiar buildings and places despite preserved object recognition.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Occipital seizures",
+        "modality": "EEG",
+        "finding": "Colored visual hallucinations in the upper contralateral field with an occipital focus.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Loss of the lower calcarine bank representing the upper field"
+      },
+      {
+        "deficit": "Contralateral hemiachromatopsia",
+        "side": "contralateral",
+        "mechanism": "Damage to ventral V4 on the lingual and fusiform surface"
+      },
+      {
+        "deficit": "Landmark agnosia and topographical disorientation (right)",
+        "side": "n/a",
+        "mechanism": "Loss of the lingual-parahippocampal place recognition cortex"
+      }
+    ],
+    "examination": [
+      "Upper quadrant fields by confrontation",
+      "Color naming and matching in each hemifield",
+      "Recognition of familiar buildings and route description"
+    ],
+    "syndromes": [
+      "syn-homonymous-hemianopia",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Below the calcarine sulcus means the upper field: lingual lesions cut the upper quadrant",
+      "A patient who gets lost in familiar streets despite recognizing objects has a right lingual-parahippocampal lesion",
+      "Hemiachromatopsia accompanies upper quadrant defects because V4 lies on the ventral surface"
+    ]
+  },
+  "pitfalls": [
+    "Upper quadrant defects are attributed to the temporal loop of the radiation, but a lingual cortical lesion gives the same field defect with cortical signs"
   ],
-  "territories": [
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "gyrus-lingual-l"
+  "citations": [
+    {
+      "ref": "sp-occipital-lobe",
+      "section": "Structure and Function"
     },
-    "label": "lingual gyrus below the calcarine sulcus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-lingual-r"
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
     },
-    "label": "inferomedial occipital cortex between the calcarine and collateral sulci"
-   }
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Medial occipital gyrus below the calcarine sulcus on sagittal images, tapering forward toward the splenium; on coronal images it lies medial to the collateral sulcus and the fusiform gyrus.",
-  "pathology": [
-   {
-    "pathology": "PCA infarct (lower calcarine bank)",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the lingual gyrus with a contralateral superior quadrantanopia and, with extension laterally, hemiachromatopsia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Landmark agnosia",
-    "modality": "MRI",
-    "finding": "Right lingual and parahippocampal infarct or tumor with inability to recognize familiar buildings and places despite preserved object recognition.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Occipital seizures",
-    "modality": "EEG",
-    "finding": "Colored visual hallucinations in the upper contralateral field with an occipital focus.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Loss of the lower calcarine bank representing the upper field"
-   },
-   {
-    "deficit": "Contralateral hemiachromatopsia",
-    "side": "contralateral",
-    "mechanism": "Damage to ventral V4 on the lingual and fusiform surface"
-   },
-   {
-    "deficit": "Landmark agnosia and topographical disorientation (right)",
-    "side": "n/a",
-    "mechanism": "Loss of the lingual-parahippocampal place recognition cortex"
-   }
+  "tags": [
+    "V1",
+    "V4",
+    "place area",
+    "upper quadrant"
   ],
-  "examination": [
-   "Upper quadrant fields by confrontation",
-   "Color naming and matching in each hemifield",
-   "Recognition of familiar buildings and route description"
-  ],
-  "syndromes": [
-   "syn-homonymous-hemianopia",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Below the calcarine sulcus means the upper field: lingual lesions cut the upper quadrant",
-   "A patient who gets lost in familiar streets despite recognizing objects has a right lingual-parahippocampal lesion",
-   "Hemiachromatopsia accompanies upper quadrant defects because V4 lies on the ventral surface"
-  ]
- },
- "pitfalls": [
-  "Upper quadrant defects are attributed to the temporal loop of the radiation, but a lingual cortical lesion gives the same field defect with cortical signs"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    289
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    336
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "V1",
-  "V4",
-  "place area",
-  "upper quadrant"
- ],
- "status": "draft",
- "subsystem": "lobe-occipital",
- "parent": "lobe-occipital"
+  "status": "draft",
+  "subsystem": "lobe-occipital",
+  "parent": "lobe-occipital"
 }

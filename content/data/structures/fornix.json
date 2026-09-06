@@ -1,183 +1,163 @@
 {
- "kind": "structure",
- "id": "fornix",
- "name": "Fornix",
- "synonyms": [],
- "system": "cerebrum",
- "meshIds": [
-  "fornix",
-  "tract-fornix-l",
-  "tract-fornix-r"
- ],
- "summary": "The main efferent bundle of the hippocampus. The fimbria of each hippocampus gathers into the crus of the fornix, which arches forward under the corpus callosum as the body (the two bodies joining beneath the septum pellucidum) and then splits into the columns that dive in front of the foramen of Monro to end mainly in the mammillary bodies, with fibers to the anterior thalamus, septal nuclei and hypothalamus. It is the second link of the Papez circuit, and bilateral damage (surgery for colloid cysts, tumors of the third ventricle, trauma) produces anterograde amnesia.",
- "anatomy": {
-  "location": "Beneath the corpus callosum and above the third ventricle: crura from the hippocampal tails, body under the septum pellucidum forming the medial wall of the lateral ventricles, columns curving down in front of the foramen of Monro into the hypothalamus behind the anterior commissure.",
-  "subdivisions": [
-   {
-    "name": "Fimbria and crus",
-    "note": "hippocampal output fibers"
-   },
-   {
-    "name": "Body",
-    "note": "fused midline bundle with the hippocampal commissure beneath the septum"
-   },
-   {
-    "name": "Columns",
-    "note": "precommissural fibers to the septal area, postcommissural fibers to the mammillary bodies and anterior thalamus"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "hippocampus",
-    "via": "fimbria"
-   }
+  "kind": "structure",
+  "id": "fornix",
+  "name": "Fornix",
+  "synonyms": [],
+  "system": "cerebrum",
+  "meshIds": [
+    "fornix",
+    "tract-fornix-l",
+    "tract-fornix-r"
   ],
-  "efferents": [
-   {
-    "to": "mammillary-body",
-    "via": "postcommissural fornix"
-   },
-   {
-    "to": "thalamus-anterior-nuclei"
-   },
-   {
-    "to": "septal-area",
-    "via": "precommissural fornix"
-   }
-  ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Transmission of hippocampal output to the mammillary bodies, anterior thalamus and septal region for consolidation of episodic memory; also carries cholinergic septal input back to the hippocampus.",
- "bloodSupply": {
-  "arteries": [
-   "artery-anterior-choroidal",
-   "artery-acom",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-anterior-choroidal",
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -5,
-     "z": 15
+  "summary": "The main efferent bundle of the hippocampus. The fimbria of each hippocampus gathers into the crus of the fornix, which arches forward under the corpus callosum as the body (the two bodies joining beneath the septum pellucidum) and then splits into the columns that dive in front of the foramen of Monro to end mainly in the mammillary bodies, with fibers to the anterior thalamus, septal nuclei and hypothalamus. It is the second link of the Papez circuit, and bilateral damage (surgery for colloid cysts, tumors of the third ventricle, trauma) produces anterograde amnesia.",
+  "anatomy": {
+    "location": "Beneath the corpus callosum and above the third ventricle: crura from the hippocampal tails, body under the septum pellucidum forming the medial wall of the lateral ventricles, columns curving down in front of the foramen of Monro into the hypothalamus behind the anterior commissure.",
+    "subdivisions": [
+      {
+        "name": "Fimbria and crus",
+        "note": "hippocampal output fibers"
+      },
+      {
+        "name": "Body",
+        "note": "fused midline bundle with the hippocampal commissure beneath the septum"
+      },
+      {
+        "name": "Columns",
+        "note": "precommissural fibers to the septal area, postcommissural fibers to the mammillary bodies and anterior thalamus"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "hippocampus",
+        "via": "fimbria"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "mammillary-body",
+        "via": "postcommissural fornix"
+      },
+      {
+        "to": "thalamus-anterior-nuclei"
+      },
+      {
+        "to": "septal-area",
+        "via": "precommissural fornix"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Transmission of hippocampal output to the mammillary bodies, anterior thalamus and septal region for consolidation of episodic memory; also carries cholinergic septal input back to the hippocampus.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-anterior-choroidal",
+      "artery-acom",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-anterior-choroidal",
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -5,
+          "z": 15
+        },
+        "label": "body of the fornix under the corpus callosum above the third ventricle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 2,
+          "y": -5,
+          "z": 12
+        },
+        "label": "fornix arching from the hippocampus to the mammillary body"
+      }
+    ],
+    "normalAppearance": "Thin white matter band under the septum on coronal T1, forming the roof of the third ventricle; the columns are seen in front of the foramen of Monro on sagittal images. Fornix atrophy accompanies hippocampal atrophy in Alzheimer disease and follows temporal lobe surgery.",
+    "pathology": [
+      {
+        "pathology": "Fornix injury after colloid cyst surgery",
+        "modality": "MRI",
+        "finding": "T2 change or discontinuity of the columns with post-operative amnesia.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Third ventricular tumor",
+        "modality": "MRI",
+        "finding": "Colloid cyst, subependymoma or glioma of the third ventricle elevating, splaying or invading the fornices, with memory loss and hydrocephalus.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Fornix atrophy",
+        "modality": "MRI",
+        "finding": "Thin fornix with enlarged ventricles in Alzheimer disease or after mesial temporal sclerosis.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Coronal and sagittal T1/T2"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Bilateral interruption of the hippocampal-mammillary pathway"
+      },
+      {
+        "deficit": "Verbal (left) or visuospatial (right) memory impairment",
+        "side": "n/a",
+        "mechanism": "Unilateral fornix lesion"
+      },
+      {
+        "deficit": "Amnesia after AComm aneurysm repair",
+        "side": "bilateral",
+        "mechanism": "Perforators to the fornix columns and septal region"
+      }
+    ],
+    "examination": [
+      "Delayed recall of words and of a figure",
+      "Recognition versus free recall",
+      "Orientation and confabulation"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Colloid cyst surgery and AComm aneurysm surgery are the two classical iatrogenic causes of fornix amnesia",
+      "Memory loss with hydrocephalus partly reflects stretching of the fornix over dilated ventricles"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "body of the fornix under the corpus callosum above the third ventricle"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 2,
-     "y": -5,
-     "z": 12
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "fornix arching from the hippocampus to the mammillary body"
-   }
+    {
+      "ref": "sp-explicit-memory",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "Thin white matter band under the septum on coronal T1, forming the roof of the third ventricle; the columns are seen in front of the foramen of Monro on sagittal images. Fornix atrophy accompanies hippocampal atrophy in Alzheimer disease and follows temporal lobe surgery.",
-  "pathology": [
-   {
-    "pathology": "Fornix injury after colloid cyst surgery",
-    "modality": "MRI",
-    "finding": "T2 change or discontinuity of the columns with post-operative amnesia.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Third ventricular tumor",
-    "modality": "MRI",
-    "finding": "Colloid cyst, subependymoma or glioma of the third ventricle elevating, splaying or invading the fornices, with memory loss and hydrocephalus.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Fornix atrophy",
-    "modality": "MRI",
-    "finding": "Thin fornix with enlarged ventricles in Alzheimer disease or after mesial temporal sclerosis.",
-    "sequence": "T1"
-   }
+  "tags": [
+    "cortex",
+    "limbic"
   ],
-  "sequenceOfChoice": "Coronal and sagittal T1/T2"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Bilateral interruption of the hippocampal-mammillary pathway"
-   },
-   {
-    "deficit": "Verbal (left) or visuospatial (right) memory impairment",
-    "side": "n/a",
-    "mechanism": "Unilateral fornix lesion"
-   },
-   {
-    "deficit": "Amnesia after AComm aneurysm repair",
-    "side": "bilateral",
-    "mechanism": "Perforators to the fornix columns and septal region"
-   }
-  ],
-  "examination": [
-   "Delayed recall of words and of a figure",
-   "Recognition versus free recall",
-   "Orientation and confabulation"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Colloid cyst surgery and AComm aneurysm surgery are the two classical iatrogenic causes of fornix amnesia",
-   "Memory loss with hydrocephalus partly reflects stretching of the fornix over dilated ventricles"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    305
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    250,
-    251
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    54,
-    54
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    233
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "limbic"
- ],
- "status": "draft",
- "latin": "Fornix",
- "subsystem": "lobe-limbic"
+  "status": "draft",
+  "latin": "Fornix",
+  "subsystem": "lobe-limbic"
 }

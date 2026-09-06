@@ -1,178 +1,158 @@
 {
- "kind": "structure",
- "id": "gyrus-superior-frontal",
- "name": "Superior frontal gyrus",
- "synonyms": [],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-superior-frontal-l",
-  "gyrus-superior-frontal-r"
- ],
- "summary": "The superior frontal gyrus is the long strip of frontal cortex above the superior frontal sulcus, running from the frontal pole back to the precentral sulcus and folding over the superior margin onto the medial surface, where it is continuous with the paracentral lobule. Laterally and medially it houses parts of the premotor cortex and the supplementary motor area, and its anterior part is dorsolateral prefrontal cortex. It is supplied mainly by the anterior cerebral artery on its medial and upper parts and by the middle cerebral artery laterally, which is why anterior cerebral infarcts produce leg weakness and abulia from this gyrus rather than a face-arm hemiparesis.",
- "anatomy": {
-  "location": "Uppermost of the three frontal convexity gyri, bounded below by the superior frontal sulcus and behind by the precentral sulcus; it wraps over the superomedial border so that its medial part faces the falx above the cingulate sulcus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Thalamus (ventral anterior and mediodorsal)",
-    "via": "anterior and superior thalamic radiations"
-   },
-   {
-    "from": "Parietal association cortex",
-    "via": "superior longitudinal fasciculus I"
-   },
-   {
-    "from": "Cingulate gyrus",
-    "via": "cingulum"
-   }
+  "kind": "structure",
+  "id": "gyrus-superior-frontal",
+  "name": "Superior frontal gyrus",
+  "synonyms": [],
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-superior-frontal-l",
+    "gyrus-superior-frontal-r"
   ],
-  "efferents": [
-   {
-    "to": "Precentral gyrus and spinal cord (leg and trunk)",
-    "via": "corticospinal tract"
-   },
-   {
-    "to": "Striatum",
-    "via": "corticostriatal fibers"
-   },
-   {
-    "to": "Pontine nuclei",
-    "via": "frontopontine tract"
-   }
+  "summary": "The superior frontal gyrus is the long strip of frontal cortex above the superior frontal sulcus, running from the frontal pole back to the precentral sulcus and folding over the superior margin onto the medial surface, where it is continuous with the paracentral lobule. Laterally and medially it houses parts of the premotor cortex and the supplementary motor area, and its anterior part is dorsolateral prefrontal cortex. It is supplied mainly by the anterior cerebral artery on its medial and upper parts and by the middle cerebral artery laterally, which is why anterior cerebral infarcts produce leg weakness and abulia from this gyrus rather than a face-arm hemiparesis.",
+  "anatomy": {
+    "location": "Uppermost of the three frontal convexity gyri, bounded below by the superior frontal sulcus and behind by the precentral sulcus; it wraps over the superomedial border so that its medial part faces the falx above the cingulate sulcus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Thalamus (ventral anterior and mediodorsal)",
+        "via": "anterior and superior thalamic radiations"
+      },
+      {
+        "from": "Parietal association cortex",
+        "via": "superior longitudinal fasciculus I"
+      },
+      {
+        "from": "Cingulate gyrus",
+        "via": "cingulum"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Precentral gyrus and spinal cord (leg and trunk)",
+        "via": "corticospinal tract"
+      },
+      {
+        "to": "Striatum",
+        "via": "corticostriatal fibers"
+      },
+      {
+        "to": "Pontine nuclei",
+        "via": "frontopontine tract"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-corticospinal"
+    ]
+  },
+  "function": "Its posterior part contributes premotor and supplementary motor cortex for the planning and initiation of movement, especially of the legs and trunk and of internally generated, sequenced actions; the frontal eye field lies at its junction with the precentral gyrus. Its anterior part is dorsolateral prefrontal cortex engaged in working memory, self-awareness and the top-down control of attention, and its medial part is part of the default mode network. Seizures beginning here produce abrupt hypermotor or tonic posturing of both limbs with preserved awareness that is often mistaken for a psychogenic attack.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-mca",
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-mca-frontal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-superior-frontal-l"
+        },
+        "label": "superior frontal gyrus wrapping over the superomedial border"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-superior-frontal-r"
+        },
+        "label": "superior frontal gyrus medial to the superior frontal sulcus"
+      }
+    ],
+    "normalAppearance": "Widest of the frontal gyri on axial images at the level of the centrum semiovale, lying medial to the superior frontal sulcus and reaching the interhemispheric fissure; on the medial surface it forms the cortex above the cingulate sulcus.",
+    "pathology": [
+      {
+        "pathology": "Anterior cerebral artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the medial and superior frontal cortex extending to the paracentral lobule, with contralateral leg weakness and abulia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Supplementary motor area seizure",
+        "modality": "EEG",
+        "finding": "Brief nocturnal tonic posturing with a fencing posture and vocalization; scalp EEG is often normal or shows vertex sharp waves because the focus is interhemispheric.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Parasagittal meningioma",
+        "modality": "MRI",
+        "finding": "Dural-based enhancing mass along the falx compressing the superior frontal gyrus and the superior sagittal sinus, presenting with focal leg seizures or paraparesis when bilateral.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral leg-predominant weakness",
+        "side": "contralateral",
+        "mechanism": "Involvement of the paracentral and supplementary motor cortex for the lower limb"
+      },
+      {
+        "deficit": "Abulia, reduced spontaneous speech and movement",
+        "side": "bilateral",
+        "mechanism": "Loss of medial frontal drive from the supplementary motor and anterior cingulate cortex"
+      },
+      {
+        "deficit": "Hypermotor or asymmetric tonic seizures",
+        "side": "contralateral",
+        "mechanism": "Ictal discharge in the supplementary motor area with a fencing posture"
+      }
+    ],
+    "examination": [
+      "Test leg strength and gait initiation, not just the arm",
+      "Look for a grasp reflex and motor impersistence",
+      "Ask about brief nocturnal seizures with bilateral posturing and preserved awareness"
+    ],
+    "syndromes": [
+      "syn-aca-infarct",
+      "syn-subfalcine-herniation"
+    ],
+    "pearls": [
+      "An infarct that weakens the leg more than the arm points to the anterior cerebral artery and this gyrus",
+      "Supplementary motor seizures are short, nocturnal, bizarre and often misdiagnosed as non-epileptic",
+      "Bilateral medial frontal damage produces akinetic mutism: the patient is awake but does not move or speak"
+    ]
+  },
+  "pitfalls": [
+    "Weakness of one leg with a normal arm is cortical until proved otherwise; do not assume a lumbar root"
   ],
-  "pathways": [
-   "pathway-lateral-corticospinal"
-  ]
- },
- "function": "Its posterior part contributes premotor and supplementary motor cortex for the planning and initiation of movement, especially of the legs and trunk and of internally generated, sequenced actions; the frontal eye field lies at its junction with the precentral gyrus. Its anterior part is dorsolateral prefrontal cortex engaged in working memory, self-awareness and the top-down control of attention, and its medial part is part of the default mode network. Seizures beginning here produce abrupt hypermotor or tonic posturing of both limbs with preserved awareness that is often mistaken for a psychogenic attack.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-mca",
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-aca",
-   "territory-mca-frontal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-superior-frontal-l"
+  "citations": [
+    {
+      "ref": "sp-frontal-cortex",
+      "section": "Structure and Function"
     },
-    "label": "superior frontal gyrus wrapping over the superomedial border"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-superior-frontal-r"
+    {
+      "ref": "sp-frontal-lobe-syndrome",
+      "section": "Pathophysiology"
     },
-    "label": "superior frontal gyrus medial to the superior frontal sulcus"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Widest of the frontal gyri on axial images at the level of the centrum semiovale, lying medial to the superior frontal sulcus and reaching the interhemispheric fissure; on the medial surface it forms the cortex above the cingulate sulcus.",
-  "pathology": [
-   {
-    "pathology": "Anterior cerebral artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the medial and superior frontal cortex extending to the paracentral lobule, with contralateral leg weakness and abulia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Supplementary motor area seizure",
-    "modality": "EEG",
-    "finding": "Brief nocturnal tonic posturing with a fencing posture and vocalization; scalp EEG is often normal or shows vertex sharp waves because the focus is interhemispheric.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Parasagittal meningioma",
-    "modality": "MRI",
-    "finding": "Dural-based enhancing mass along the falx compressing the superior frontal gyrus and the superior sagittal sinus, presenting with focal leg seizures or paraparesis when bilateral.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral leg-predominant weakness",
-    "side": "contralateral",
-    "mechanism": "Involvement of the paracentral and supplementary motor cortex for the lower limb"
-   },
-   {
-    "deficit": "Abulia, reduced spontaneous speech and movement",
-    "side": "bilateral",
-    "mechanism": "Loss of medial frontal drive from the supplementary motor and anterior cingulate cortex"
-   },
-   {
-    "deficit": "Hypermotor or asymmetric tonic seizures",
-    "side": "contralateral",
-    "mechanism": "Ictal discharge in the supplementary motor area with a fencing posture"
-   }
+  "tags": [
+    "premotor",
+    "SMA",
+    "dorsolateral prefrontal"
   ],
-  "examination": [
-   "Test leg strength and gait initiation, not just the arm",
-   "Look for a grasp reflex and motor impersistence",
-   "Ask about brief nocturnal seizures with bilateral posturing and preserved awareness"
-  ],
-  "syndromes": [
-   "syn-aca-infarct",
-   "syn-subfalcine-herniation"
-  ],
-  "pearls": [
-   "An infarct that weakens the leg more than the arm points to the anterior cerebral artery and this gyrus",
-   "Supplementary motor seizures are short, nocturnal, bizarre and often misdiagnosed as non-epileptic",
-   "Bilateral medial frontal damage produces akinetic mutism: the patient is awake but does not move or speak"
-  ]
- },
- "pitfalls": [
-  "Weakness of one leg with a normal arm is cortical until proved otherwise; do not assume a lumbar root"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    255,
-    258
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    284,
-    285
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    57
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    168,
-    170
-   ]
-  }
- ],
- "tags": [
-  "premotor",
-  "SMA",
-  "dorsolateral prefrontal"
- ],
- "status": "draft",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "status": "draft",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

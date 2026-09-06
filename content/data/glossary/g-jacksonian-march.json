@@ -1,21 +1,25 @@
 {
- "kind": "glossary",
- "id": "g-jacksonian-march",
- "term": "Jacksonian march",
- "definition": "Spread of clonic jerking from one body part to adjacent parts (thumb to hand to arm to face) as a seizure discharge moves along the motor homunculus of the precentral gyrus.",
- "related": [
-  "g-aura",
-  "g-todd-paresis",
-  "g-homunculus"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    283,
-    285
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-jacksonian-march",
+  "term": "Jacksonian march",
+  "definition": "Spread of clonic jerking from one body part to adjacent parts (thumb to hand to arm to face) as a seizure discharge moves along the motor homunculus of the precentral gyrus.",
+  "related": [
+    "g-aura",
+    "g-todd-paresis",
+    "g-homunculus"
+  ],
+  "citations": [
+    {
+      "ref": "sp-focal-onset-seizure",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-precentral-gyrus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-motor-cortical",
+      "section": "Pathophysiology"
+    }
+  ]
 }

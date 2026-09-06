@@ -1,222 +1,210 @@
 {
- "kind": "cranial-nerve",
- "id": "cn-04-trochlear",
- "name": "Trochlear nerve (CN IV)",
- "synonyms": [],
- "system": "cranial-nerves",
- "meshIds": [
-  "trochlear-nerve-l",
-  "trochlear-nerve-r"
- ],
- "summary": "The thinnest cranial nerve and the only one to emerge from the back of the brainstem and to cross before leaving: from the nucleus in the caudal midbrain the fibers curve dorsally around the aqueduct, decussate in the superior medullary velum and exit below the inferior colliculus to supply the contralateral superior oblique. Its long subarachnoid course around the midbrain and along the free edge of the tentorium makes it the nerve most often damaged by closed head injury. Palsy produces vertical diplopia worse looking down and in (reading, stairs) with a compensatory head tilt away from the affected eye.",
- "anatomy": {
-  "location": "Nucleus in the periaqueductal gray at the inferior colliculus → fibers dorsally around the aqueduct, crossing in the superior medullary velum → exit on the dorsal midbrain below the inferior colliculus → around the cerebral peduncle in the ambient cistern beneath the free edge of the tentorium → lateral wall of the cavernous sinus below III → superior orbital fissure outside the annulus → superior oblique.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-vertical-gaze"
-  ]
- },
- "function": "Depression of the adducted eye, intorsion of the abducted eye; keeps the eyes level during head tilt.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca",
-   "artery-pca",
-   "artery-internal-carotid"
+  "kind": "cranial-nerve",
+  "id": "cn-04-trochlear",
+  "name": "Trochlear nerve (CN IV)",
+  "synonyms": [],
+  "system": "cranial-nerves",
+  "meshIds": [
+    "trochlear-nerve-l",
+    "trochlear-nerve-r"
   ],
-  "territories": [
-   "territory-basilar-paramedian"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -32,
-     "z": -16
-    },
-    "label": "dorsal exit below the inferior colliculus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 15,
-     "y": -26,
-     "z": -18
-    },
-    "label": "cisternal course around the midbrain beneath the tentorial edge"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 14,
-     "y": 5,
-     "z": -20
-    },
-    "label": "trochlear nerve in the lateral wall of the cavernous sinus below the third nerve"
-   }
-  ],
-  "normalAppearance": "Rarely visible on routine MRI; 3D CISS sometimes shows it in the ambient cistern. Imaging is often normal in isolated palsies; the yield rises with other signs. The BodyParts3D mesh in this atlas shows the orbital course.",
-  "pathology": [
-   {
-    "pathology": "Traumatic trochlear palsy",
-    "modality": "MRI",
-    "finding": "Usually normal; occasionally dorsal midbrain contusion or subarachnoid blood in the quadrigeminal cistern; often bilateral after severe trauma.",
-    "sequence": "SWI"
-   },
-   {
-    "pathology": "Dorsal midbrain infarct or hemorrhage",
-    "modality": "MRI",
-    "finding": "Small lesion of the caudal periaqueductal gray or superior medullary velum with a contralateral palsy.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Congenital fourth nerve palsy",
-    "modality": "MRI",
-    "finding": "Hypoplastic or absent nerve and small superior oblique on orbital MRI; long-standing head tilt in old photographs.",
-    "sequence": "T2"
-   }
-  ],
-  "sequenceOfChoice": "MRI with thin brainstem and cavernous sinus sequences when the palsy is not traumatic or congenital"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Vertical (and torsional) diplopia worse on down-gaze and gaze to the opposite side",
-    "side": "ipsilateral",
-    "mechanism": "Superior oblique weakness: hypertropia of the affected eye"
-   },
-   {
-    "deficit": "Head tilt away from the affected eye, chin down",
-    "side": "n/a",
-    "mechanism": "Compensation for the loss of intorsion and depression"
-   },
-   {
-    "deficit": "Contralateral superior oblique palsy",
-    "side": "contralateral",
-    "mechanism": "Nuclear or fascicular lesion before the decussation"
-   }
-  ],
-  "examination": [
-   "Cover test for hypertropia in the nine positions",
-   "Parks–Bielschowsky three-step test: hypertropia increases on gaze to the opposite side and on head tilt to the same side",
-   "Double Maddox rod for excyclotorsion",
-   "Look for a long-standing head tilt in photographs",
-   "Examine the other ocular motor nerves and the pupil"
-  ],
-  "syndromes": [
-   "syn-cn4-palsy",
-   "syn-cavernous-sinus"
-  ],
-  "pearls": [
-   "Diplopia going down stairs or reading with a head tilt is the fourth nerve",
-   "A nuclear fourth nerve lesion is contralateral to the palsy and often comes with an ipsilateral Horner syndrome (adjacent sympathetic fibers)"
-  ]
- },
- "pitfalls": [
-  "Skew deviation (a supranuclear vertical misalignment from brainstem or cerebellar lesions) mimics a fourth nerve palsy; it lacks excyclotorsion of the higher eye and changes with lying down"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    331,
-    333
-   ]
+  "summary": "The thinnest cranial nerve and the only one to emerge from the back of the brainstem and to cross before leaving: from the nucleus in the caudal midbrain the fibers curve dorsally around the aqueduct, decussate in the superior medullary velum and exit below the inferior colliculus to supply the contralateral superior oblique. Its long subarachnoid course around the midbrain and along the free edge of the tentorium makes it the nerve most often damaged by closed head injury. Palsy produces vertical diplopia worse looking down and in (reading, stairs) with a compensatory head tilt away from the affected eye.",
+  "anatomy": {
+    "location": "Nucleus in the periaqueductal gray at the inferior colliculus → fibers dorsally around the aqueduct, crossing in the superior medullary velum → exit on the dorsal midbrain below the inferior colliculus → around the cerebral peduncle in the ambient cistern beneath the free edge of the tentorium → lateral wall of the cavernous sinus below III → superior orbital fissure outside the annulus → superior oblique.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    351,
-    351
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-vertical-gaze"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    91,
-    96
-   ]
+  "function": "Depression of the adducted eye, intorsion of the abducted eye; keeps the eyes level during head tilt.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca",
+      "artery-pca",
+      "artery-internal-carotid"
+    ],
+    "territories": [
+      "territory-basilar-paramedian"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -32,
+          "z": -16
+        },
+        "label": "dorsal exit below the inferior colliculus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 15,
+          "y": -26,
+          "z": -18
+        },
+        "label": "cisternal course around the midbrain beneath the tentorial edge"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 14,
+          "y": 5,
+          "z": -20
+        },
+        "label": "trochlear nerve in the lateral wall of the cavernous sinus below the third nerve"
+      }
+    ],
+    "normalAppearance": "Rarely visible on routine MRI; 3D CISS sometimes shows it in the ambient cistern. Imaging is often normal in isolated palsies; the yield rises with other signs. The BodyParts3D mesh in this atlas shows the orbital course.",
+    "pathology": [
+      {
+        "pathology": "Traumatic trochlear palsy",
+        "modality": "MRI",
+        "finding": "Usually normal; occasionally dorsal midbrain contusion or subarachnoid blood in the quadrigeminal cistern; often bilateral after severe trauma.",
+        "sequence": "SWI"
+      },
+      {
+        "pathology": "Dorsal midbrain infarct or hemorrhage",
+        "modality": "MRI",
+        "finding": "Small lesion of the caudal periaqueductal gray or superior medullary velum with a contralateral palsy.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Congenital fourth nerve palsy",
+        "modality": "MRI",
+        "finding": "Hypoplastic or absent nerve and small superior oblique on orbital MRI; long-standing head tilt in old photographs.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "MRI with thin brainstem and cavernous sinus sequences when the palsy is not traumatic or congenital"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Vertical (and torsional) diplopia worse on down-gaze and gaze to the opposite side",
+        "side": "ipsilateral",
+        "mechanism": "Superior oblique weakness: hypertropia of the affected eye"
+      },
+      {
+        "deficit": "Head tilt away from the affected eye, chin down",
+        "side": "n/a",
+        "mechanism": "Compensation for the loss of intorsion and depression"
+      },
+      {
+        "deficit": "Contralateral superior oblique palsy",
+        "side": "contralateral",
+        "mechanism": "Nuclear or fascicular lesion before the decussation"
+      }
+    ],
+    "examination": [
+      "Cover test for hypertropia in the nine positions",
+      "Parks–Bielschowsky three-step test: hypertropia increases on gaze to the opposite side and on head tilt to the same side",
+      "Double Maddox rod for excyclotorsion",
+      "Look for a long-standing head tilt in photographs",
+      "Examine the other ocular motor nerves and the pupil"
+    ],
+    "syndromes": [
+      "syn-cn4-palsy",
+      "syn-cavernous-sinus"
+    ],
+    "pearls": [
+      "Diplopia going down stairs or reading with a head tilt is the fourth nerve",
+      "A nuclear fourth nerve lesion is contralateral to the palsy and often comes with an ipsilateral Horner syndrome (adjacent sympathetic fibers)"
+    ]
+  },
+  "pitfalls": [
+    "Skew deviation (a supranuclear vertical misalignment from brainstem or cerebellar lesions) mimics a fourth nerve palsy; it lacks excyclotorsion of the higher eye and changes with lying down"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cranial-nerve-4",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-trochlear-nerve-palsy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cranial-nerve"
+  ],
+  "status": "draft",
+  "latin": "Nervus trochlearis",
+  "cranial": {
+    "number": 4,
+    "roman": "IV",
+    "components": [
+      "GSE"
+    ],
+    "nuclei": [
+      {
+        "structureId": "trochlear-nucleus",
+        "component": "GSE to the contralateral superior oblique",
+        "level": "midbrain-inferior-colliculus"
+      }
+    ],
+    "ganglia": [],
+    "exit": {
+      "brainstemExit": "Dorsal midbrain below the inferior colliculus, after decussating in the superior medullary velum",
+      "cisternalCourse": "Around the cerebral peduncle in the ambient cistern under the free edge of the tentorium, between the PCA and SCA laterally",
+      "foramen": "Superior orbital fissure (outside the annulus of Zinn)",
+      "extracranialCourse": "Crosses over the levator and superior rectus to the superior oblique in the superomedial orbit"
+    },
+    "branches": [
+      {
+        "name": "Muscular branch",
+        "supplies": "superior oblique"
+      }
+    ],
+    "reflexes": [],
+    "tests": [
+      {
+        "name": "Three-step test",
+        "how": "Identify the hypertropic eye, then whether it worsens on right or left gaze, then on right or left head tilt",
+        "normal": "No hypertropia",
+        "abnormal": "Hypertropia worse on contralateral gaze and ipsilateral head tilt"
+      },
+      {
+        "name": "Down and in gaze",
+        "how": "Ask the patient to look down while adducting",
+        "normal": "Full depression",
+        "abnormal": "Underaction with vertical diplopia"
+      },
+      {
+        "name": "Torsion",
+        "how": "Double Maddox rod or fundus photography",
+        "normal": "No cyclotorsion",
+        "abnormal": "Excyclotorsion of the affected eye"
+      }
+    ],
+    "lesionSigns": [
+      {
+        "sign": "Isolated superior oblique palsy after head injury",
+        "localisingValue": "peripheral nerve at the dorsal midbrain exit or along the tentorium"
+      },
+      {
+        "sign": "Palsy contralateral to a midbrain lesion",
+        "localisingValue": "nucleus or fascicle (crosses before exit)"
+      },
+      {
+        "sign": "Palsy with III, VI and V1",
+        "localisingValue": "cavernous sinus or orbital fissure"
+      },
+      {
+        "sign": "Bilateral palsies with V-pattern esotropia",
+        "localisingValue": "trauma at the decussation (superior medullary velum)"
+      }
+    ],
+    "nuclearVsPeripheral": "Because the fibers cross before leaving the brainstem, nuclear and fascicular lesions cause a palsy of the opposite eye, often with an ipsilateral Horner syndrome or a contralateral sensory loss from the adjacent tegmentum; peripheral lesions cause an ipsilateral palsy."
   }
- ],
- "tags": [
-  "cranial-nerve"
- ],
- "status": "draft",
- "latin": "Nervus trochlearis",
- "cranial": {
-  "number": 4,
-  "roman": "IV",
-  "components": [
-   "GSE"
-  ],
-  "nuclei": [
-   {
-    "structureId": "trochlear-nucleus",
-    "component": "GSE to the contralateral superior oblique",
-    "level": "midbrain-inferior-colliculus"
-   }
-  ],
-  "ganglia": [],
-  "exit": {
-   "brainstemExit": "Dorsal midbrain below the inferior colliculus, after decussating in the superior medullary velum",
-   "cisternalCourse": "Around the cerebral peduncle in the ambient cistern under the free edge of the tentorium, between the PCA and SCA laterally",
-   "foramen": "Superior orbital fissure (outside the annulus of Zinn)",
-   "extracranialCourse": "Crosses over the levator and superior rectus to the superior oblique in the superomedial orbit"
-  },
-  "branches": [
-   {
-    "name": "Muscular branch",
-    "supplies": "superior oblique"
-   }
-  ],
-  "reflexes": [],
-  "tests": [
-   {
-    "name": "Three-step test",
-    "how": "Identify the hypertropic eye, then whether it worsens on right or left gaze, then on right or left head tilt",
-    "normal": "No hypertropia",
-    "abnormal": "Hypertropia worse on contralateral gaze and ipsilateral head tilt"
-   },
-   {
-    "name": "Down and in gaze",
-    "how": "Ask the patient to look down while adducting",
-    "normal": "Full depression",
-    "abnormal": "Underaction with vertical diplopia"
-   },
-   {
-    "name": "Torsion",
-    "how": "Double Maddox rod or fundus photography",
-    "normal": "No cyclotorsion",
-    "abnormal": "Excyclotorsion of the affected eye"
-   }
-  ],
-  "lesionSigns": [
-   {
-    "sign": "Isolated superior oblique palsy after head injury",
-    "localisingValue": "peripheral nerve at the dorsal midbrain exit or along the tentorium"
-   },
-   {
-    "sign": "Palsy contralateral to a midbrain lesion",
-    "localisingValue": "nucleus or fascicle (crosses before exit)"
-   },
-   {
-    "sign": "Palsy with III, VI and V1",
-    "localisingValue": "cavernous sinus or orbital fissure"
-   },
-   {
-    "sign": "Bilateral palsies with V-pattern esotropia",
-    "localisingValue": "trauma at the decussation (superior medullary velum)"
-   }
-  ],
-  "nuclearVsPeripheral": "Because the fibers cross before leaving the brainstem, nuclear and fascicular lesions cause a palsy of the opposite eye, often with an ipsilateral Horner syndrome or a contralateral sensory loss from the adjacent tegmentum; peripheral lesions cause an ipsilateral palsy."
- }
 }

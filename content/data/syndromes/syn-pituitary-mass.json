@@ -1,160 +1,140 @@
 {
- "kind": "syndrome",
- "id": "syn-pituitary-mass",
- "name": "Pituitary mass lesion",
- "eponyms": [],
- "category": "neoplastic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "pituitary-infundibulum",
-   "optic-chiasm",
-   "sinus-cavernous",
-   "hypothalamus",
-   "artery-internal-carotid"
+  "kind": "syndrome",
+  "id": "syn-pituitary-mass",
+  "name": "Pituitary mass lesion",
+  "eponyms": [],
+  "category": "neoplastic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "pituitary-infundibulum",
+      "optic-chiasm",
+      "sinus-cavernous",
+      "hypothalamus",
+      "artery-internal-carotid"
+    ],
+    "side": "bilateral"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "pituitary-gland"
+    ]
+  },
+  "presentation": "A patient presents with a hormone syndrome, with visual loss, or with an incidental finding on a scan. A young woman has amenorrhea and galactorrhea from prolactin; a middle-aged man notices his rings and shoes no longer fit; another patient is tired, cold and has lost body hair as the normal gland is crushed. When the tumor reaches the chiasm the temporal fields go, and when it invades the cavernous sinus the eye movements fail. A sudden headache with visual collapse and ophthalmoplegia means the tumor has bled.",
+  "deficits": [
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "endocrine",
+      "sign": "Hypersecretion (prolactin, growth hormone, ACTH) or hypopituitarism from compression of the normal gland",
+      "substrate": "pituitary-infundibulum"
+    },
+    {
+      "modality": "visual-field",
+      "side": "bilateral",
+      "distribution": "temporal fields",
+      "sign": "Bitemporal hemianopia from chiasmal compression, superior quadrants first",
+      "substrate": "pathway-visual"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "III, IV, VI",
+      "sign": "Ocular motor palsies from lateral extension into the cavernous sinus",
+      "substrate": "sinus-cavernous"
+    },
+    {
+      "modality": "pain",
+      "side": "bilateral",
+      "distribution": "head",
+      "sign": "Headache from dural stretching; thunderclap headache with apoplexy",
+      "substrate": "dura-mater"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "hypothalamus",
+      "sign": "Diabetes insipidus and hypothalamic dysfunction with suprasellar extension (mostly craniopharyngioma)",
+      "substrate": "hypothalamus"
+    }
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "pituitary-gland"
-  ]
- },
- "presentation": "A patient presents with a hormone syndrome, with visual loss, or with an incidental finding on a scan. A young woman has amenorrhea and galactorrhea from prolactin; a middle-aged man notices his rings and shoes no longer fit; another patient is tired, cold and has lost body hair as the normal gland is crushed. When the tumor reaches the chiasm the temporal fields go, and when it invades the cavernous sinus the eye movements fail. A sudden headache with visual collapse and ophthalmoplegia means the tumor has bled.",
- "deficits": [
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "endocrine",
-   "sign": "Hypersecretion (prolactin, growth hormone, ACTH) or hypopituitarism from compression of the normal gland",
-   "substrate": "pituitary-infundibulum"
+  "reasoning": "The pituitary gland sits in the sella turcica, roofed by the diaphragma sellae, with the optic chiasm about a centimeter above the diaphragm, the cavernous sinuses and their carotid arteries and ocular motor nerves on either side, the sphenoid sinus below and the hypothalamus above through the stalk. A tumor of the anterior gland grows within this box, and its clinical expression is determined by what it secretes and by which neighbor it reaches. Hormonal effects come first: prolactin-secreting adenomas cause amenorrhea, galactorrhea and, in men, hypogonadism; growth hormone causes acromegaly; ACTH causes Cushing disease; and a large non-functioning tumor compresses the normal gland, so that the trophic hormones fail in a characteriztic order, gonadotropins and growth hormone first, then thyroid and finally adrenal. Growth upward pushes the diaphragma and reaches the chiasm from below, compressing the crossing fibers from the inferior nasal retinae that carry the superior temporal fields, so the bitemporal hemianopia starts in the upper quadrants; because the chiasm is midline and both sets of crossing fibers are involved, the field loss is bilateral. Lateral growth invades the cavernous sinus and involves the uncrossed nerves in its wall, producing ipsilateral ophthalmoplegia. Hemorrhage or infarction of a tumor, pituitary apoplexy, expands the mass within hours, causing sudden headache, visual loss, ophthalmoplegia and acute adrenal insufficiency, which is life-threatening. Stalk compression by any mass raises prolactin modestly by removing dopaminergic inhibition, so a mildly raised prolactin does not prove a prolactinoma.",
+  "imagingFindings": [
+    {
+      "pathology": "Pituitary adenoma",
+      "modality": "MRI",
+      "finding": "Sellar mass enhancing less than the normal gland on dynamic post-contrast T1, expanding the sella, elevating the chiasm and displacing the stalk; microadenomas under 10 mm, macroadenomas above.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Cavernous sinus invasion",
+      "modality": "MRI",
+      "finding": "Tumor encasing more than two-thirds of the cavernous carotid (Knosp grade) on coronal images.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Pituitary apoplexy",
+      "modality": "MRI",
+      "finding": "Hemorrhage or infarction within an adenoma with fluid levels, T1 shortening and sudden enlargement; hyperdense on CT.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Craniopharyngioma",
+      "modality": "CT",
+      "finding": "Cystic, calcified suprasellar mass in a child or older adult, often with hydrocephalus.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Pituitary adenoma (prolactinoma, non-functioning, somatotroph, corticotroph)",
+    "Craniopharyngioma",
+    "Rathke cleft cyst",
+    "Meningioma, metastasis, lymphocytic hypophysitis",
+    "Pituitary apoplexy (Sheehan syndrome postpartum)"
+  ],
+  "mimics": [
+    {
+      "name": "Chiasmal glioma or meningioma",
+      "howToDistinguish": "Arises above the sella; normal gland seen separately"
+    },
+    {
+      "name": "Internal carotid aneurysm",
+      "howToDistinguish": "Flow void on MRI, pulsatile; never biopsy"
+    },
+    {
+      "name": "Physiological enlargement",
+      "howToDistinguish": "Pregnancy, adolescence, primary hypothyroidism; homogeneous gland without a discrete lesion"
+    }
+  ],
+  "management": [
+    "Full pituitary hormone profile, formal perimetry and MRI of the sella",
+    "Dopamine agonists for prolactinomas; transsphenoidal surgery for other tumors compressing the chiasm or secreting hormones; radiotherapy for residual disease",
+    "Apoplexy: immediate hydrocortisone, then urgent decompression if vision or eye movements are affected; lifelong replacement for hypopituitarism"
+  ],
+  "citations": [
+    {
+      "ref": "sp-pituitary-adenoma",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-pituitary-apoplexy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-pituitary-gland",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": 0,
+      "y": 2,
+      "z": -28
+    },
+    "label": "pituitary gland in the sella beneath the chiasm"
   },
-  {
-   "modality": "visual-field",
-   "side": "bilateral",
-   "distribution": "temporal fields",
-   "sign": "Bitemporal hemianopia from chiasmal compression, superior quadrants first",
-   "substrate": "pathway-visual"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "III, IV, VI",
-   "sign": "Ocular motor palsies from lateral extension into the cavernous sinus",
-   "substrate": "sinus-cavernous"
-  },
-  {
-   "modality": "pain",
-   "side": "bilateral",
-   "distribution": "head",
-   "sign": "Headache from dural stretching; thunderclap headache with apoplexy",
-   "substrate": "dura-mater"
-  },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "hypothalamus",
-   "sign": "Diabetes insipidus and hypothalamic dysfunction with suprasellar extension (mostly craniopharyngioma)",
-   "substrate": "hypothalamus"
-  }
- ],
- "reasoning": "The pituitary gland sits in the sella turcica, roofed by the diaphragma sellae, with the optic chiasm about a centimeter above the diaphragm, the cavernous sinuses and their carotid arteries and ocular motor nerves on either side, the sphenoid sinus below and the hypothalamus above through the stalk. A tumor of the anterior gland grows within this box, and its clinical expression is determined by what it secretes and by which neighbor it reaches. Hormonal effects come first: prolactin-secreting adenomas cause amenorrhea, galactorrhea and, in men, hypogonadism; growth hormone causes acromegaly; ACTH causes Cushing disease; and a large non-functioning tumor compresses the normal gland, so that the trophic hormones fail in a characteriztic order, gonadotropins and growth hormone first, then thyroid and finally adrenal. Growth upward pushes the diaphragma and reaches the chiasm from below, compressing the crossing fibers from the inferior nasal retinae that carry the superior temporal fields, so the bitemporal hemianopia starts in the upper quadrants; because the chiasm is midline and both sets of crossing fibers are involved, the field loss is bilateral. Lateral growth invades the cavernous sinus and involves the uncrossed nerves in its wall, producing ipsilateral ophthalmoplegia. Hemorrhage or infarction of a tumor, pituitary apoplexy, expands the mass within hours, causing sudden headache, visual loss, ophthalmoplegia and acute adrenal insufficiency, which is life-threatening. Stalk compression by any mass raises prolactin modestly by removing dopaminergic inhibition, so a mildly raised prolactin does not prove a prolactinoma.",
- "imagingFindings": [
-  {
-   "pathology": "Pituitary adenoma",
-   "modality": "MRI",
-   "finding": "Sellar mass enhancing less than the normal gland on dynamic post-contrast T1, expanding the sella, elevating the chiasm and displacing the stalk; microadenomas under 10 mm, macroadenomas above.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Cavernous sinus invasion",
-   "modality": "MRI",
-   "finding": "Tumor encasing more than two-thirds of the cavernous carotid (Knosp grade) on coronal images.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Pituitary apoplexy",
-   "modality": "MRI",
-   "finding": "Hemorrhage or infarction within an adenoma with fluid levels, T1 shortening and sudden enlargement; hyperdense on CT.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Craniopharyngioma",
-   "modality": "CT",
-   "finding": "Cystic, calcified suprasellar mass in a child or older adult, often with hydrocephalus.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Pituitary adenoma (prolactinoma, non-functioning, somatotroph, corticotroph)",
-  "Craniopharyngioma",
-  "Rathke cleft cyst",
-  "Meningioma, metastasis, lymphocytic hypophysitis",
-  "Pituitary apoplexy (Sheehan syndrome postpartum)"
- ],
- "mimics": [
-  {
-   "name": "Chiasmal glioma or meningioma",
-   "howToDistinguish": "Arises above the sella; normal gland seen separately"
-  },
-  {
-   "name": "Internal carotid aneurysm",
-   "howToDistinguish": "Flow void on MRI, pulsatile; never biopsy"
-  },
-  {
-   "name": "Physiological enlargement",
-   "howToDistinguish": "Pregnancy, adolescence, primary hypothyroidism; homogeneous gland without a discrete lesion"
-  }
- ],
- "management": [
-  "Full pituitary hormone profile, formal perimetry and MRI of the sella",
-  "Dopamine agonists for prolactinomas; transsphenoidal surgery for other tumors compressing the chiasm or secreting hormones; radiotherapy for residual disease",
-  "Apoplexy: immediate hydrocortisone, then urgent decompression if vision or eye movements are affected; lifelong replacement for hypopituitarism"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    349,
-    349
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    383,
-    383
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    49
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 29,
-   "pages": [
-    260,
-    260
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": 0,
-   "y": 2,
-   "z": -28
-  },
-  "label": "pituitary gland in the sella beneath the chiasm"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

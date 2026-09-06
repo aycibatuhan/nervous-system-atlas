@@ -1,189 +1,161 @@
 {
- "kind": "structure",
- "id": "cortex-lateral-occipital-superior",
- "name": "Lateral occipital cortex, superior division",
- "synonyms": [
-  "dorsal extrastriate cortex",
-  "areas 18/19 (superior lateral)"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cortex-lateral-occipital-superior-l",
-  "cortex-lateral-occipital-superior-r"
- ],
- "summary": "The superior lateral occipital cortex is the upper part of the convex outer surface of the occipital lobe, above the lateral occipital sulcus and behind the parieto-occipital junction, corresponding to dorsal extrastriate visual areas (V3A, V6 and the lateral occipital complex) that lead into the parietal dorsal stream. It represents where objects are and how they move relative to the observer and guides eye and hand movements toward them, and it is a watershed between the middle and posterior cerebral arteries. Lesions produce optic ataxia, defective motion perception and the simultanagnosia of Balint syndrome when bilateral, and the region is damaged early in posterior cortical atrophy.",
- "anatomy": {
-  "location": "Upper lateral surface of the occipital lobe from the parieto-occipital sulcus and the superior parietal lobule down to the lateral occipital sulcus, and from the occipital pole forward to the angular gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Primary visual cortex and cuneus",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Contralateral lateral occipital cortex",
-    "via": "splenium"
-   }
+  "kind": "structure",
+  "id": "cortex-lateral-occipital-superior",
+  "name": "Lateral occipital cortex, superior division",
+  "synonyms": [
+    "dorsal extrastriate cortex",
+    "areas 18/19 (superior lateral)"
   ],
-  "efferents": [
-   {
-    "to": "Superior parietal lobule and intraparietal sulcus",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Frontal eye field",
-    "via": "superior longitudinal fasciculus"
-   },
-   {
-    "to": "Middle temporal motion area",
-    "via": "short association fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cortex-lateral-occipital-superior-l",
+    "cortex-lateral-occipital-superior-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Dorsal extrastriate cortex here computes the position of objects in eye- and head-centered coordinates, their motion and the optic flow produced by self-movement, and passes this to the intraparietal cortex for reaching, grasping and shifting attention; it also contains part of the shape-selective lateral occipital complex. It is retinotopic with the contralateral lower field, and it contributes to visually guided saccades and to the perception of depth and of three-dimensional structure from motion. Bilateral damage leaves the patient able to see single objects but unable to perceive the scene as a whole or to reach for what is seen.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The superior lateral occipital cortex is the upper part of the convex outer surface of the occipital lobe, above the lateral occipital sulcus and behind the parieto-occipital junction, corresponding to dorsal extrastriate visual areas (V3A, V6 and the lateral occipital complex) that lead into the parietal dorsal stream. It represents where objects are and how they move relative to the observer and guides eye and hand movements toward them, and it is a watershed between the middle and posterior cerebral arteries. Lesions produce optic ataxia, defective motion perception and the simultanagnosia of Balint syndrome when bilateral, and the region is damaged early in posterior cortical atrophy.",
+  "anatomy": {
+    "location": "Upper lateral surface of the occipital lobe from the parieto-occipital sulcus and the superior parietal lobule down to the lateral occipital sulcus, and from the occipital pole forward to the angular gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Primary visual cortex and cuneus",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Contralateral lateral occipital cortex",
+        "via": "splenium"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superior parietal lobule and intraparietal sulcus",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Frontal eye field",
+        "via": "superior longitudinal fasciculus"
+      },
+      {
+        "to": "Middle temporal motion area",
+        "via": "short association fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "Dorsal extrastriate cortex here computes the position of objects in eye- and head-centered coordinates, their motion and the optic flow produced by self-movement, and passes this to the intraparietal cortex for reaching, grasping and shifting attention; it also contains part of the shape-selective lateral occipital complex. It is retinotopic with the contralateral lower field, and it contributes to visually guided saccades and to the perception of depth and of three-dimensional structure from motion. Bilateral damage leaves the patient able to see single objects but unable to perceive the scene as a whole or to reach for what is seen.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca-occipital",
+      "territory-mca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cortex-lateral-occipital-superior-l"
+        },
+        "label": "superior lateral occipital cortex behind the angular gyrus"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cortex-lateral-occipital-superior-r"
+        },
+        "label": "dorsolateral occipital convexity"
+      }
+    ],
+    "normalAppearance": "Convex lateral occipital cortex above the lateral occipital sulcus on axial images above the atria, behind the angular gyrus and lateral to the parieto-occipital sulcus.",
+    "pathology": [
+      {
+        "pathology": "Bilateral parieto-occipital watershed infarcts",
+        "modality": "MRI",
+        "finding": "Symmetric border-zone restricted diffusion in the superior lateral occipital and parietal cortex after hypotension, producing Balint syndrome.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Bilateral dorsal occipito-parietal atrophy with simultanagnosia, optic ataxia and ocular apraxia; hippocampi relatively spared.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Posterior reversible encephalopathy syndrome",
+        "modality": "MRI",
+        "finding": "Cortical and subcortical vasogenic edema of the occipito-parietal convexity with visual disturbance and seizures.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Optic ataxia: misreaching for seen objects",
+        "side": "contralateral",
+        "mechanism": "Loss of the dorsal-stream transformation from visual location to hand movement"
+      },
+      {
+        "deficit": "Simultanagnosia when bilateral",
+        "side": "bilateral",
+        "mechanism": "Loss of the ability to integrate multiple objects into a scene"
+      },
+      {
+        "deficit": "Impaired motion perception and visually guided saccades",
+        "side": "contralateral",
+        "mechanism": "Damage to dorsal motion and attention areas"
+      }
+    ],
+    "examination": [
+      "Reaching for a target in the peripheral field while fixating centrally",
+      "Describe a complex picture: does the patient report only one item at a time?",
+      "Visual fields and pursuit and saccade accuracy"
+    ],
+    "syndromes": [
+      "syn-balint",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Balint syndrome is bilateral dorsal occipito-parietal disease: the patient sees but cannot find, reach or take in a scene",
+      "The occipito-parietal border zone is the cortex most vulnerable to a drop in perfusion in both hemispheres",
+      "Posterior cortical atrophy is Alzheimer disease starting in the dorsal visual stream; memory comes later"
+    ]
+  },
+  "pitfalls": [
+    "Simultanagnosia can pass as poor vision on acuity testing; the patient reads letters but not the scene"
   ],
-  "territories": [
-   "territory-pca-occipital",
-   "territory-mca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cortex-lateral-occipital-superior-l"
+  "citations": [
+    {
+      "ref": "sp-balint-syndrome",
+      "section": "Pathophysiology"
     },
-    "label": "superior lateral occipital cortex behind the angular gyrus"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cortex-lateral-occipital-superior-r"
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
     },
-    "label": "dorsolateral occipital convexity"
-   }
+    {
+      "ref": "sp-spatial-neglect",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "Convex lateral occipital cortex above the lateral occipital sulcus on axial images above the atria, behind the angular gyrus and lateral to the parieto-occipital sulcus.",
-  "pathology": [
-   {
-    "pathology": "Bilateral parieto-occipital watershed infarcts",
-    "modality": "MRI",
-    "finding": "Symmetric border-zone restricted diffusion in the superior lateral occipital and parietal cortex after hypotension, producing Balint syndrome.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Bilateral dorsal occipito-parietal atrophy with simultanagnosia, optic ataxia and ocular apraxia; hippocampi relatively spared.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Posterior reversible encephalopathy syndrome",
-    "modality": "MRI",
-    "finding": "Cortical and subcortical vasogenic edema of the occipito-parietal convexity with visual disturbance and seizures.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Optic ataxia: misreaching for seen objects",
-    "side": "contralateral",
-    "mechanism": "Loss of the dorsal-stream transformation from visual location to hand movement"
-   },
-   {
-    "deficit": "Simultanagnosia when bilateral",
-    "side": "bilateral",
-    "mechanism": "Loss of the ability to integrate multiple objects into a scene"
-   },
-   {
-    "deficit": "Impaired motion perception and visually guided saccades",
-    "side": "contralateral",
-    "mechanism": "Damage to dorsal motion and attention areas"
-   }
+  "tags": [
+    "dorsal stream",
+    "watershed",
+    "Balint"
   ],
-  "examination": [
-   "Reaching for a target in the peripheral field while fixating centrally",
-   "Describe a complex picture: does the patient report only one item at a time?",
-   "Visual fields and pursuit and saccade accuracy"
-  ],
-  "syndromes": [
-   "syn-balint",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Balint syndrome is bilateral dorsal occipito-parietal disease: the patient sees but cannot find, reach or take in a scene",
-   "The occipito-parietal border zone is the cortex most vulnerable to a drop in perfusion in both hemispheres",
-   "Posterior cortical atrophy is Alzheimer disease starting in the dorsal visual stream; memory comes later"
-  ]
- },
- "pitfalls": [
-  "Simultanagnosia can pass as poor vision on acuity testing; the patient reads letters but not the scene"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "dorsal stream",
-  "watershed",
-  "Balint"
- ],
- "status": "draft",
- "subsystem": "lobe-occipital",
- "parent": "lobe-occipital"
+  "status": "draft",
+  "subsystem": "lobe-occipital",
+  "parent": "lobe-occipital"
 }

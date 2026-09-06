@@ -1,176 +1,164 @@
 {
- "kind": "structure",
- "id": "cervical-sympathetic-chain",
- "name": "Cervical sympathetic chain and stellate ganglion",
- "synonyms": [],
- "system": "autonomic",
- "meshIds": [],
- "summary": "The head and neck receive their sympathetic supply by a three-neuron chain: first-order neurons in the hypothalamus descend through the brainstem and lateral cervical cord to the ciliospinal center at C8–T2; second-order preganglionic fibers leave in the T1 root, cross the apex of the lung and ascend the cervical chain through the stellate and middle ganglia to the superior cervical ganglion; third-order postganglionic fibers travel on the internal carotid artery to the eye (dilator pupillae, Müller's muscle) and on the external carotid to the facial sweat glands. Interruption anywhere gives Horner syndrome, and the level can be inferred from sweating and from pharmacological pupil tests.",
- "anatomy": {
-  "location": "Superior cervical ganglion at C2–C3 behind the carotid sheath; middle ganglion at C6; stellate ganglion in front of the C7 transverse process and the neck of the first rib, behind the subclavian artery at the apex of the pleura.",
-  "subdivisions": [
-   {
-    "name": "First-order (central) neuron",
-    "note": "hypothalamus → brainstem tegmentum → lateral cervical cord; lesions: lateral medullary infarct, cord lesions"
-   },
-   {
-    "name": "Second-order (preganglionic) neuron",
-    "note": "C8–T2 → T1 root → stellate → superior cervical ganglion; lesions: Pancoast tumor, neck and thoracic surgery, trauma"
-   },
-   {
-    "name": "Third-order (postganglionic) neuron",
-    "note": "superior cervical ganglion → internal carotid plexus → cavernous sinus → eye; lesions: carotid dissection, cavernous sinus disease, cluster headache"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "hypothalamus",
-    "via": "descending sympathetic fibers"
-   },
-   {
-    "from": "intermediolateral-column (T1)",
-    "via": "white ramus communicans"
-   }
-  ],
-  "efferents": [
-   {
-    "to": "dilator pupillae and Müller's muscle",
-    "via": "internal carotid plexus"
-   },
-   {
-    "to": "facial sweat glands",
-    "via": "external carotid plexus"
-   }
-  ],
-  "pathways": [
-   "pathway-oculosympathetic"
-  ]
- },
- "function": "Pupillary dilation, elevation of the upper lid (Müller's muscle), sweating and vasoconstriction of the face, and sympathetic supply to the salivary glands, thyroid, heart and upper limb (stellate).",
- "bloodSupply": {
-  "arteries": [
-   "regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "upper cervical cord: descending first-order sympathetic fibers in the lateral funiculus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": 5,
-     "z": -18
-    },
-    "label": "cavernous carotid carrying the third-order fibers"
-   }
-  ],
-  "normalAppearance": "The chain is not seen as such; imaging follows the level suggested by the examination: brain and cervical cord MRI for first-order lesions, chest CT of the lung apex for second-order, and carotid CTA/MRI for third-order lesions.",
-  "pathology": [
-   {
-    "pathology": "Pancoast tumor",
-    "modality": "CT",
-    "finding": "Apical lung mass invading the stellate ganglion and lower brachial plexus.",
-    "sequence": "CT contrast"
-   },
-   {
-    "pathology": "Carotid dissection",
-    "modality": "MRI",
-    "finding": "Crescentic mural hematoma of the internal carotid with a postganglionic Horner syndrome.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Lateral medullary infarct",
-    "modality": "MRI",
-    "finding": "Dorsolateral medullary restriction with a central Horner syndrome.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "Targeted imaging by level: brain/cord MRI, chest CT, carotid CTA"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Horner syndrome with anhidrosis of the whole ipsilateral face and body side",
-    "side": "ipsilateral",
-    "mechanism": "First-order lesion (brainstem or cord)"
-   },
-   {
-    "deficit": "Horner syndrome with anhidrosis of the face only",
-    "side": "ipsilateral",
-    "mechanism": "Second-order lesion (chest apex, neck)"
-   },
-   {
-    "deficit": "Horner syndrome without anhidrosis",
-    "side": "ipsilateral",
-    "mechanism": "Third-order lesion beyond the superior cervical ganglion (sweat fibers travel with the external carotid)"
-   },
-   {
-    "deficit": "Harlequin sign: flushing and sweating on one side of the face",
-    "side": "contralateral",
-    "mechanism": "Unilateral sympathetic loss revealed on exertion"
-   }
-  ],
-  "examination": [
-   "Pupil inequality greater in the dark; dilation lag",
-   "Ptosis of 1–2 mm with 'upside-down' ptosis of the lower lid",
-   "Facial sweating after exertion or heat",
-   "Apraclonidine test (reverses the anisocoria) and hydroxyamphetamine test (fails to dilate a third-order Horner pupil)",
-   "Examine the neck, supraclavicular fossa and hands (T1)"
-  ],
-  "syndromes": [
-   "syn-horner",
-   "syn-wallenberg-lateral-medullary"
-  ],
-  "pearls": [
-   "Painful Horner syndrome is carotid dissection until proven otherwise; Horner with hand weakness is a Pancoast tumor; Horner with crossed brainstem signs is the medulla",
-   "Congenital Horner syndrome gives iris heterochromia because pigmentation needs sympathetic input"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    388,
-    391
-   ]
+  "kind": "structure",
+  "id": "cervical-sympathetic-chain",
+  "name": "Cervical sympathetic chain and stellate ganglion",
+  "synonyms": [],
+  "system": "autonomic",
+  "meshIds": [],
+  "summary": "The head and neck receive their sympathetic supply by a three-neuron chain: first-order neurons in the hypothalamus descend through the brainstem and lateral cervical cord to the ciliospinal center at C8–T2; second-order preganglionic fibers leave in the T1 root, cross the apex of the lung and ascend the cervical chain through the stellate and middle ganglia to the superior cervical ganglion; third-order postganglionic fibers travel on the internal carotid artery to the eye (dilator pupillae, Müller's muscle) and on the external carotid to the facial sweat glands. Interruption anywhere gives Horner syndrome, and the level can be inferred from sweating and from pharmacological pupil tests.",
+  "anatomy": {
+    "location": "Superior cervical ganglion at C2–C3 behind the carotid sheath; middle ganglion at C6; stellate ganglion in front of the C7 transverse process and the neck of the first rib, behind the subclavian artery at the apex of the pleura.",
+    "subdivisions": [
+      {
+        "name": "First-order (central) neuron",
+        "note": "hypothalamus → brainstem tegmentum → lateral cervical cord; lesions: lateral medullary infarct, cord lesions"
+      },
+      {
+        "name": "Second-order (preganglionic) neuron",
+        "note": "C8–T2 → T1 root → stellate → superior cervical ganglion; lesions: Pancoast tumor, neck and thoracic surgery, trauma"
+      },
+      {
+        "name": "Third-order (postganglionic) neuron",
+        "note": "superior cervical ganglion → internal carotid plexus → cavernous sinus → eye; lesions: carotid dissection, cavernous sinus disease, cluster headache"
+      }
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    406,
-    408
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "hypothalamus",
+        "via": "descending sympathetic fibers"
+      },
+      {
+        "from": "intermediolateral-column (T1)",
+        "via": "white ramus communicans"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "dilator pupillae and Müller's muscle",
+        "via": "internal carotid plexus"
+      },
+      {
+        "to": "facial sweat glands",
+        "via": "external carotid plexus"
+      }
+    ],
+    "pathways": [
+      "pathway-oculosympathetic"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    87
-   ]
+  "function": "Pupillary dilation, elevation of the upper lid (Müller's muscle), sweating and vasoconstriction of the face, and sympathetic supply to the salivary glands, thyroid, heart and upper limb (stellate).",
+  "bloodSupply": {
+    "arteries": [
+      "regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "upper cervical cord: descending first-order sympathetic fibers in the lateral funiculus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": 5,
+          "z": -18
+        },
+        "label": "cavernous carotid carrying the third-order fibers"
+      }
+    ],
+    "normalAppearance": "The chain is not seen as such; imaging follows the level suggested by the examination: brain and cervical cord MRI for first-order lesions, chest CT of the lung apex for second-order, and carotid CTA/MRI for third-order lesions.",
+    "pathology": [
+      {
+        "pathology": "Pancoast tumor",
+        "modality": "CT",
+        "finding": "Apical lung mass invading the stellate ganglion and lower brachial plexus.",
+        "sequence": "CT contrast"
+      },
+      {
+        "pathology": "Carotid dissection",
+        "modality": "MRI",
+        "finding": "Crescentic mural hematoma of the internal carotid with a postganglionic Horner syndrome.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Lateral medullary infarct",
+        "modality": "MRI",
+        "finding": "Dorsolateral medullary restriction with a central Horner syndrome.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "Targeted imaging by level: brain/cord MRI, chest CT, carotid CTA"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Horner syndrome with anhidrosis of the whole ipsilateral face and body side",
+        "side": "ipsilateral",
+        "mechanism": "First-order lesion (brainstem or cord)"
+      },
+      {
+        "deficit": "Horner syndrome with anhidrosis of the face only",
+        "side": "ipsilateral",
+        "mechanism": "Second-order lesion (chest apex, neck)"
+      },
+      {
+        "deficit": "Horner syndrome without anhidrosis",
+        "side": "ipsilateral",
+        "mechanism": "Third-order lesion beyond the superior cervical ganglion (sweat fibers travel with the external carotid)"
+      },
+      {
+        "deficit": "Harlequin sign: flushing and sweating on one side of the face",
+        "side": "contralateral",
+        "mechanism": "Unilateral sympathetic loss revealed on exertion"
+      }
+    ],
+    "examination": [
+      "Pupil inequality greater in the dark; dilation lag",
+      "Ptosis of 1–2 mm with 'upside-down' ptosis of the lower lid",
+      "Facial sweating after exertion or heat",
+      "Apraclonidine test (reverses the anisocoria) and hydroxyamphetamine test (fails to dilate a third-order Horner pupil)",
+      "Examine the neck, supraclavicular fossa and hands (T1)"
+    ],
+    "syndromes": [
+      "syn-horner",
+      "syn-wallenberg-lateral-medullary"
+    ],
+    "pearls": [
+      "Painful Horner syndrome is carotid dissection until proven otherwise; Horner with hand weakness is a Pancoast tumor; Horner with crossed brainstem signs is the medulla",
+      "Congenital Horner syndrome gives iris heterochromia because pigmentation needs sympathetic input"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-sympathetic-chain",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-autonomic-nervous-system",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-sympathetic-nervous-system",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "autonomic"
+  ],
+  "status": "draft",
+  "latin": "Ganglia cervicalia; ganglion cervicothoracicum",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "autonomic"
- ],
- "status": "draft",
- "latin": "Ganglia cervicalia; ganglion cervicothoracicum",
- "level": {
-  "region": "peripheral"
- }
 }

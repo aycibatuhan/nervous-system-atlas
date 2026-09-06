@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-neurofibrillary-tangle",
- "term": "Neurofibrillary tangle",
- "definition": "Intraneuronal aggregate of hyperphosphorylated tau protein that appears first in the entorhinal cortex and spreads to the hippocampus and association cortex in Alzheimer disease; tangle stage tracks the cognitive decline better than amyloid plaques.",
- "related": [
-  "g-amyloid-plaque",
-  "g-lewy-body"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-neurofibrillary-tangle",
+  "term": "Neurofibrillary tangle",
+  "definition": "Intraneuronal aggregate of hyperphosphorylated tau protein that appears first in the entorhinal cortex and spreads to the hippocampus and association cortex in Alzheimer disease; tangle stage tracks the cognitive decline better than amyloid plaques.",
+  "related": [
+    "g-amyloid-plaque",
+    "g-lewy-body"
+  ],
+  "citations": [
+    {
+      "ref": "sp-alzheimer-disease",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-amyloid-beta-peptide",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-pick-disease",
+      "section": "Pathophysiology"
+    }
+  ]
 }

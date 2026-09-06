@@ -1,107 +1,95 @@
 {
- "kind": "pathway",
- "id": "pathway-tectospinal",
- "name": "Tectospinal tract",
- "synonyms": [],
- "type": "descending",
- "modality": "reflex turning of the head toward stimuli",
- "summary": "Neurons of the deep layers of the superior colliculus send axons that cross in the dorsal tegmental decussation just below the periaqueductal gray, descend near the MLF through the brainstem and end in the cervical cord, where they drive neck motor neurons to turn the head toward a visual, auditory or somatosensory stimulus. It is the spinal component of the orienting response and works with the tectobulbar fibers that move the eyes toward the same target, so that gaze and head turn arrive together and the fovea lands on whatever attracted attention.",
- "origin": {
-  "structures": [
-   "superior-colliculus"
+  "kind": "pathway",
+  "id": "pathway-tectospinal",
+  "name": "Tectospinal tract",
+  "synonyms": [],
+  "type": "descending",
+  "modality": "reflex turning of the head toward stimuli",
+  "summary": "Neurons of the deep layers of the superior colliculus send axons that cross in the dorsal tegmental decussation just below the periaqueductal gray, descend near the MLF through the brainstem and end in the cervical cord, where they drive neck motor neurons to turn the head toward a visual, auditory or somatosensory stimulus. It is the spinal component of the orienting response and works with the tectobulbar fibers that move the eyes toward the same target, so that gaze and head turn arrive together and the fovea lands on whatever attracted attention.",
+  "origin": {
+    "structures": [
+      "superior-colliculus"
+    ],
+    "note": "Deep and intermediate layers of the superior colliculus, driven by retinal, auditory and cortical input."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Superior colliculus neuron",
+      "synapse": "cervical interneurons and motor neurons"
+    },
+    {
+      "order": 2,
+      "cellBody": "Motor neuron",
+      "synapse": "neck muscles"
+    }
   ],
-  "note": "Deep and intermediate layers of the superior colliculus, driven by retinal, auditory and cortical input."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Superior colliculus neuron",
-   "synapse": "cervical interneurons and motor neurons"
+  "decussation": {
+    "level": "Dorsal tegmental decussation, midbrain",
+    "structureId": "superior-colliculus",
+    "note": "Crosses beneath the periaqueductal gray at the level of the colliculi."
   },
-  {
-   "order": 2,
-   "cellBody": "Motor neuron",
-   "synapse": "neck muscles"
-  }
- ],
- "decussation": {
-  "level": "Dorsal tegmental decussation, midbrain",
-  "structureId": "superior-colliculus",
-  "note": "Crosses beneath the periaqueductal gray at the level of the colliculi."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "superior-colliculus",
-   "meshId": "superior-colliculus-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "origin"
-  },
-  {
-   "order": 2,
-   "structureId": "level-midbrain-superior-colliculus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "dorsal tegmental decussation"
-  },
-  {
-   "order": 3,
-   "structureId": "medial-longitudinal-fasciculus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "descends beside the MLF"
-  },
-  {
-   "order": 4,
-   "structureId": "spinal-white-columns",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "anterior funiculus, cervical segments only"
-  }
- ],
- "termination": "Motor neurons and interneurons of the upper cervical cord for neck muscles.",
- "meshIds": [
-  "superior-colliculus-l",
-  "superior-colliculus-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Superior colliculus",
-   "effects": "Impaired reflex orienting of the head and eyes to the contralateral side; rarely isolated",
-   "side": "contralateral"
-  },
-  {
-   "level": "Dorsal midbrain compression",
-   "effects": "Orienting deficits merge with the vertical gaze palsy of the Parinaud syndrome",
-   "side": "bilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "This tract is why a sudden sound makes you turn your head before you know why",
-   "Isolated tectospinal lesions are a textbook concept rather than a clinical entity; think of it as part of the dorsal midbrain"
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "superior-colliculus",
+      "meshId": "superior-colliculus-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "origin"
+    },
+    {
+      "order": 2,
+      "structureId": "level-midbrain-superior-colliculus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "dorsal tegmental decussation"
+    },
+    {
+      "order": 3,
+      "structureId": "medial-longitudinal-fasciculus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "descends beside the MLF"
+    },
+    {
+      "order": 4,
+      "structureId": "spinal-white-columns",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "anterior funiculus, cervical segments only"
+    }
   ],
-  "syndromes": [
-   "syn-parinaud-dorsal-midbrain"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    157,
-    157
-   ]
+  "termination": "Motor neurons and interneurons of the upper cervical cord for neck muscles.",
+  "meshIds": [
+    "superior-colliculus-l",
+    "superior-colliculus-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Superior colliculus",
+      "effects": "Impaired reflex orienting of the head and eyes to the contralateral side; rarely isolated",
+      "side": "contralateral"
+    },
+    {
+      "level": "Dorsal midbrain compression",
+      "effects": "Orienting deficits merge with the vertical gaze palsy of the Parinaud syndrome",
+      "side": "bilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "This tract is why a sudden sound makes you turn your head before you know why",
+      "Isolated tectospinal lesions are a textbook concept rather than a clinical entity; think of it as part of the dorsal midbrain"
+    ],
+    "syndromes": [
+      "syn-parinaud-dorsal-midbrain"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    214
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-tectospinal-tract",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

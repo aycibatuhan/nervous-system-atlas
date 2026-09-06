@@ -1,6 +1,4 @@
 from corlib import *
-S = lambda ch, a, b=None: C("snell", ch, a, b)
-B = lambda ch, a, b=None: C("berkowitz", ch, a, b)
 def tract(id, name, sub, summary, course, function, arteries, views, normal, paths, lesion, exam, pearls, cites, **kw):
     kw.setdefault("territories", []); kw.setdefault("parent", "cerebral-white-matter")
     kw.setdefault("tags", ["white matter", "tractography"])

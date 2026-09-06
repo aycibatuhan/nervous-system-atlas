@@ -1,163 +1,151 @@
 {
- "kind": "structure",
- "id": "gyrus-supramarginal",
- "name": "Supramarginal gyrus",
- "synonyms": [
-  "Brodmann area 40"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-supramarginal-anterior-l",
-  "gyrus-supramarginal-anterior-r",
-  "gyrus-supramarginal-posterior-l",
-  "gyrus-supramarginal-posterior-r"
- ],
- "summary": "The anterior part of the inferior parietal lobule, capping the posterior end of the Sylvian fissure. On the dominant side it belongs to the perisylvian language network: it handles phonological processing and the sensory-motor mapping of speech sounds, and its underlying white matter carries the arcuate fasciculus; lesions here cause conduction aphasia. It also stores the motor engrams for skilled gestures, so dominant lesions cause ideomotor apraxia of both hands. On the right it contributes to spatial attention, and lesions add to neglect.",
- "anatomy": {
-  "location": "Inferior parietal lobule arching over the upturned end of the lateral sulcus, in front of the angular gyrus and behind the postcentral gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "gyrus-postcentral"
-   },
-   {
-    "from": "area-wernicke"
-   }
+  "kind": "structure",
+  "id": "gyrus-supramarginal",
+  "name": "Supramarginal gyrus",
+  "synonyms": [
+    "Brodmann area 40"
   ],
-  "efferents": [
-   {
-    "to": "area-broca",
-    "via": "tract-arcuate-fasciculus"
-   },
-   {
-    "to": "cortex-premotor-sma",
-    "note": "praxis"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-supramarginal-anterior-l",
+    "gyrus-supramarginal-anterior-r",
+    "gyrus-supramarginal-posterior-l",
+    "gyrus-supramarginal-posterior-r"
   ],
-  "pathways": []
- },
- "function": "Phonological processing and repetition, storage of praxis programs, tactile-visual integration, and (right side) spatial attention.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-inferior-division",
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 55,
-     "y": -40,
-     "z": 35
-    },
-    "label": "supramarginal gyrus at the posterior end of the Sylvian fissure"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 55,
-     "y": -40,
-     "z": 35
-    },
-    "label": "gyrus arching over the end of the lateral sulcus"
-   }
-  ],
-  "normalAppearance": "Identified on sagittal images 50–60 mm from the midline as the gyrus wrapping the posterior end of the Sylvian fissure; the arcuate fasciculus runs beneath it.",
-  "pathology": [
-   {
-    "pathology": "Conduction aphasia infarct",
-    "modality": "MRI",
-    "finding": "Left supramarginal or deep arcuate fasciculus infarct with impaired repetition and fluent paraphasic speech.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Right inferior parietal infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the right supramarginal and angular gyri with neglect.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Conduction aphasia: fluent speech with phonemic paraphasias, poor repetition, good comprehension (dominant)",
-    "side": "n/a",
-    "mechanism": "Supramarginal gyrus and arcuate fasciculus"
-   },
-   {
-    "deficit": "Ideomotor apraxia of both hands (dominant)",
-    "side": "bilateral",
-    "mechanism": "Praxis engrams"
-   },
-   {
-    "deficit": "Hemispatial neglect (non-dominant)",
-    "side": "contralateral",
-    "mechanism": "Ventral attention network"
-   },
-   {
-    "deficit": "Tactile agnosia",
-    "side": "contralateral",
-    "mechanism": "Tactile-visual integration"
-   }
-  ],
-  "examination": [
-   "Repeat sentences and multisyllabic words",
-   "Pantomime brushing teeth, using a hammer; imitate meaningless gestures",
-   "Line bisection and cancellation",
-   "Stereognosis"
-  ],
-  "syndromes": [
-   "syn-aphasia-conduction-global",
-   "syn-hemineglect",
-   "syn-mca-inferior-division"
-  ],
-  "pearls": [
-   "Good comprehension, fluent speech, bad repetition: conduction aphasia, supramarginal gyrus",
-   "Apraxia is tested by pantomime, not by asking whether the patient can use objects"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    286,
-    287
-   ]
+  "summary": "The anterior part of the inferior parietal lobule, capping the posterior end of the Sylvian fissure. On the dominant side it belongs to the perisylvian language network: it handles phonological processing and the sensory-motor mapping of speech sounds, and its underlying white matter carries the arcuate fasciculus; lesions here cause conduction aphasia. It also stores the motor engrams for skilled gestures, so dominant lesions cause ideomotor apraxia of both hands. On the right it contributes to spatial attention, and lesions add to neglect.",
+  "anatomy": {
+    "location": "Inferior parietal lobule arching over the upturned end of the lateral sulcus, in front of the angular gyrus and behind the postcentral gyrus.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    290,
-    291
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "gyrus-postcentral"
+      },
+      {
+        "from": "area-wernicke"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "area-broca",
+        "via": "tract-arcuate-fasciculus"
+      },
+      {
+        "to": "cortex-premotor-sma",
+        "note": "praxis"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    56
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "parietal"
- ],
- "status": "draft",
- "latin": "Gyrus supramarginalis",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "function": "Phonological processing and repetition, storage of praxis programs, tactile-visual integration, and (right side) spatial attention.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-inferior-division",
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 55,
+          "y": -40,
+          "z": 35
+        },
+        "label": "supramarginal gyrus at the posterior end of the Sylvian fissure"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 55,
+          "y": -40,
+          "z": 35
+        },
+        "label": "gyrus arching over the end of the lateral sulcus"
+      }
+    ],
+    "normalAppearance": "Identified on sagittal images 50–60 mm from the midline as the gyrus wrapping the posterior end of the Sylvian fissure; the arcuate fasciculus runs beneath it.",
+    "pathology": [
+      {
+        "pathology": "Conduction aphasia infarct",
+        "modality": "MRI",
+        "finding": "Left supramarginal or deep arcuate fasciculus infarct with impaired repetition and fluent paraphasic speech.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Right inferior parietal infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the right supramarginal and angular gyri with neglect.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Conduction aphasia: fluent speech with phonemic paraphasias, poor repetition, good comprehension (dominant)",
+        "side": "n/a",
+        "mechanism": "Supramarginal gyrus and arcuate fasciculus"
+      },
+      {
+        "deficit": "Ideomotor apraxia of both hands (dominant)",
+        "side": "bilateral",
+        "mechanism": "Praxis engrams"
+      },
+      {
+        "deficit": "Hemispatial neglect (non-dominant)",
+        "side": "contralateral",
+        "mechanism": "Ventral attention network"
+      },
+      {
+        "deficit": "Tactile agnosia",
+        "side": "contralateral",
+        "mechanism": "Tactile-visual integration"
+      }
+    ],
+    "examination": [
+      "Repeat sentences and multisyllabic words",
+      "Pantomime brushing teeth, using a hammer; imitate meaningless gestures",
+      "Line bisection and cancellation",
+      "Stereognosis"
+    ],
+    "syndromes": [
+      "syn-aphasia-conduction-global",
+      "syn-hemineglect",
+      "syn-mca-inferior-division"
+    ],
+    "pearls": [
+      "Good comprehension, fluent speech, bad repetition: conduction aphasia, supramarginal gyrus",
+      "Apraxia is tested by pantomime, not by asking whether the patient can use objects"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-gerstmann-syndrome",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "parietal"
+  ],
+  "status": "draft",
+  "latin": "Gyrus supramarginalis",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

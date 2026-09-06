@@ -1,172 +1,144 @@
 {
- "kind": "structure",
- "id": "tract-uncinate-fasciculus",
- "name": "Uncinate fasciculus",
- "synonyms": [
-  "fasciculus uncinatus",
-  "temporo-orbitofrontal bundle"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-uncinate-fasciculus-l",
-  "tract-uncinate-fasciculus-r"
- ],
- "summary": "The uncinate fasciculus is the hook-shaped bundle that curves around the stem of the Sylvian fissure through the limen insulae, connecting the anterior temporal lobe, the temporal pole and the amygdala with the orbitofrontal and ventral prefrontal cortex. It is the pathway that lets emotion, memory and social meaning from the temporal lobe reach the decision-making cortex of the frontal lobe, and it carries proper names and person knowledge from the temporal pole to the inferior frontal gyrus. It is the last bundle to mature, in the third decade, it is damaged in temporal lobe epilepsy and its surgery, in frontotemporal dementia and in head injury, and its disconnection contributes to memory for names, emotional regulation and social conduct.",
- "anatomy": {
-  "location": "From the temporal pole, the anterior superior, middle and inferior temporal gyri, the uncus and the amygdala, curving upward and forward through the limen insulae and the ventral extreme capsule (medial to the IFOF), then fanning into the gyrus rectus, the orbital gyri and the inferior frontal gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Temporal pole, anterior temporal gyri, uncus and amygdala",
-    "via": "temporal origin"
-   }
+  "kind": "structure",
+  "id": "tract-uncinate-fasciculus",
+  "name": "Uncinate fasciculus",
+  "synonyms": [
+    "fasciculus uncinatus",
+    "temporo-orbitofrontal bundle"
   ],
-  "efferents": [
-   {
-    "to": "Orbitofrontal cortex, gyrus rectus and inferior frontal gyrus",
-    "via": "frontal termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-uncinate-fasciculus-l",
+    "tract-uncinate-fasciculus-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "It transmits the emotional value and the identity of stimuli from the amygdala and the temporal pole to the orbitofrontal cortex, which uses them to guide choices and social behavior, and returns frontal regulation to the amygdala; on the left it carries proper-name retrieval and the semantic-frontal connection for naming people, and it contributes to episodic memory encoding by linking the temporal memory system with the frontal strategic system. Bilateral damage or degeneration produces impaired social and emotional judgement, disinhibition and poor name retrieval, the picture of behavioral variant frontotemporal dementia, and its left-sided lesion after temporal lobectomy impairs naming of famous people and memory.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division",
-   "artery-aca",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-mca-temporal",
-   "territory-mca-insular",
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "tract-uncinate-fasciculus-l"
+  "summary": "The uncinate fasciculus is the hook-shaped bundle that curves around the stem of the Sylvian fissure through the limen insulae, connecting the anterior temporal lobe, the temporal pole and the amygdala with the orbitofrontal and ventral prefrontal cortex. It is the pathway that lets emotion, memory and social meaning from the temporal lobe reach the decision-making cortex of the frontal lobe, and it carries proper names and person knowledge from the temporal pole to the inferior frontal gyrus. It is the last bundle to mature, in the third decade, it is damaged in temporal lobe epilepsy and its surgery, in frontotemporal dementia and in head injury, and its disconnection contributes to memory for names, emotional regulation and social conduct.",
+  "anatomy": {
+    "location": "From the temporal pole, the anterior superior, middle and inferior temporal gyri, the uncus and the amygdala, curving upward and forward through the limen insulae and the ventral extreme capsule (medial to the IFOF), then fanning into the gyrus rectus, the orbital gyri and the inferior frontal gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Temporal pole, anterior temporal gyri, uncus and amygdala",
+        "via": "temporal origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Orbitofrontal cortex, gyrus rectus and inferior frontal gyrus",
+        "via": "frontal termination"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "It transmits the emotional value and the identity of stimuli from the amygdala and the temporal pole to the orbitofrontal cortex, which uses them to guide choices and social behavior, and returns frontal regulation to the amygdala; on the left it carries proper-name retrieval and the semantic-frontal connection for naming people, and it contributes to episodic memory encoding by linking the temporal memory system with the frontal strategic system. Bilateral damage or degeneration produces impaired social and emotional judgement, disinhibition and poor name retrieval, the picture of behavioral variant frontotemporal dementia, and its left-sided lesion after temporal lobectomy impairs naming of famous people and memory.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division",
+      "artery-aca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-mca-temporal",
+      "territory-mca-insular",
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "tract-uncinate-fasciculus-l"
+        },
+        "label": "uncinate fasciculus hooking through the limen insulae"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-uncinate-fasciculus-r"
+        },
+        "label": "uncinate fibers between the temporal pole and the orbitofrontal cortex"
+      }
+    ],
+    "normalAppearance": "Tractography shows a hook-shaped bundle from the anterior temporal lobe around the Sylvian stem into the orbitofrontal cortex; on coronal T2 the limen insulae, where it passes, is the narrow white-matter bridge between the temporal and frontal lobes.",
+    "pathology": [
+      {
+        "pathology": "Behavioral variant frontotemporal dementia",
+        "modality": "MRI",
+        "finding": "Orbitofrontal and anterior temporal atrophy with reduced fractional anisotropy of the uncinate, correlating with disinhibition and loss of empathy.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Temporal lobe epilepsy and anterior temporal lobectomy",
+        "modality": "MRI",
+        "finding": "Reduced uncinate integrity ipsilateral to the seizure focus and transection during resection, with impaired famous-face naming.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Traumatic brain injury",
+        "modality": "MRI",
+        "finding": "Shear injury of the uncinate at the limen insulae from orbitofrontal and temporal pole contusions, contributing to personality change.",
+        "sequence": "SWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired social and emotional decision making, disinhibition",
+        "side": "bilateral",
+        "mechanism": "Disconnection of the amygdala and temporal pole from the orbitofrontal cortex"
+      },
+      {
+        "deficit": "Impaired retrieval of proper names and person knowledge (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of the temporal pole from the inferior frontal gyrus"
+      },
+      {
+        "deficit": "Episodic memory encoding deficits",
+        "side": "bilateral",
+        "mechanism": "Loss of the temporo-frontal memory strategy link"
+      }
+    ],
+    "examination": [
+      "Famous face naming and identification",
+      "Social cognition tests and collateral history of conduct",
+      "Delayed recall"
+    ],
+    "syndromes": [
+      "syn-kluver-bucy",
+      "syn-anosmia"
+    ],
+    "pearls": [
+      "The uncinate is the last tract to myelinate, which may be why adolescents and their orbitofrontal cortex take so long to agree",
+      "Naming famous people fails after left temporal surgery because the uncinate is cut at the limen",
+      "Frontotemporal dementia is a disease of the uncinate as much as of the cortex at its two ends"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-amygdala",
+      "section": "Structure and Function"
     },
-    "label": "uncinate fasciculus hooking through the limen insulae"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-uncinate-fasciculus-r"
+    {
+      "ref": "sp-prefrontal-cortex",
+      "section": "Structure and Function"
     },
-    "label": "uncinate fibers between the temporal pole and the orbitofrontal cortex"
-   }
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows a hook-shaped bundle from the anterior temporal lobe around the Sylvian stem into the orbitofrontal cortex; on coronal T2 the limen insulae, where it passes, is the narrow white-matter bridge between the temporal and frontal lobes.",
-  "pathology": [
-   {
-    "pathology": "Behavioral variant frontotemporal dementia",
-    "modality": "MRI",
-    "finding": "Orbitofrontal and anterior temporal atrophy with reduced fractional anisotropy of the uncinate, correlating with disinhibition and loss of empathy.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Temporal lobe epilepsy and anterior temporal lobectomy",
-    "modality": "MRI",
-    "finding": "Reduced uncinate integrity ipsilateral to the seizure focus and transection during resection, with impaired famous-face naming.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Traumatic brain injury",
-    "modality": "MRI",
-    "finding": "Shear injury of the uncinate at the limen insulae from orbitofrontal and temporal pole contusions, contributing to personality change.",
-    "sequence": "SWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired social and emotional decision making, disinhibition",
-    "side": "bilateral",
-    "mechanism": "Disconnection of the amygdala and temporal pole from the orbitofrontal cortex"
-   },
-   {
-    "deficit": "Impaired retrieval of proper names and person knowledge (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of the temporal pole from the inferior frontal gyrus"
-   },
-   {
-    "deficit": "Episodic memory encoding deficits",
-    "side": "bilateral",
-    "mechanism": "Loss of the temporo-frontal memory strategy link"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Famous face naming and identification",
-   "Social cognition tests and collateral history of conduct",
-   "Delayed recall"
-  ],
-  "syndromes": [
-   "syn-kluver-bucy",
-   "syn-anosmia"
-  ],
-  "pearls": [
-   "The uncinate is the last tract to myelinate, which may be why adolescents and their orbitofrontal cortex take so long to agree",
-   "Naming famous people fails after left temporal surgery because the uncinate is cut at the limen",
-   "Frontotemporal dementia is a disease of the uncinate as much as of the cortex at its two ends"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    169,
-    172
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "association",
- "parent": "cerebral-white-matter"
+  "status": "draft",
+  "subsystem": "association",
+  "parent": "cerebral-white-matter"
 }

@@ -1,132 +1,128 @@
 {
- "kind": "syndrome",
- "id": "syn-callosal-disconnection",
- "name": "Callosal disconnection syndrome",
- "eponyms": [
-  "split-brain syndrome"
- ],
- "category": "vascular",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "corpus-callosum",
-   "gyrus-angular",
-   "cortex-premotor-sma"
+  "kind": "syndrome",
+  "id": "syn-callosal-disconnection",
+  "name": "Callosal disconnection syndrome",
+  "eponyms": [
+    "split-brain syndrome"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "corpus-callosum"
-  ]
- },
- "presentation": "After surgical division of the corpus callosum for epilepsy, or an infarct or tumor of its body, a right-handed patient can name objects placed in the right hand but not in the left, cannot write with the left hand or copy a drawing with the right, and the left hand may button what the right hand unbuttons. Reading in the left visual field is impossible. In daily life the deficits are subtle and are found only when each hemisphere is tested alone.",
- "deficits": [
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "left hand and left hemispace",
-   "sign": "Left-hand tactile anomia and left-hand agraphia; left ideomotor apraxia to verbal command",
-   "substrate": "corpus-callosum"
+  "category": "vascular",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "corpus-callosum",
+      "gyrus-angular",
+      "cortex-premotor-sma"
+    ],
+    "side": "bilateral"
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "right hand",
-   "sign": "Right-hand constructional apraxia (right hemisphere skills unavailable to the left hand's controller)",
-   "substrate": "corpus-callosum"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "corpus-callosum"
+    ]
   },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "left hemifield",
-   "sign": "Left hemialexia: words in the left field cannot be read",
-   "substrate": "pathway-visual"
+  "presentation": "After surgical division of the corpus callosum for epilepsy, or an infarct or tumor of its body, a right-handed patient can name objects placed in the right hand but not in the left, cannot write with the left hand or copy a drawing with the right, and the left hand may button what the right hand unbuttons. Reading in the left visual field is impossible. In daily life the deficits are subtle and are found only when each hemisphere is tested alone.",
+  "deficits": [
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "left hand and left hemispace",
+      "sign": "Left-hand tactile anomia and left-hand agraphia; left ideomotor apraxia to verbal command",
+      "substrate": "corpus-callosum"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "right hand",
+      "sign": "Right-hand constructional apraxia (right hemisphere skills unavailable to the left hand's controller)",
+      "substrate": "corpus-callosum"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "left hemifield",
+      "sign": "Left hemialexia: words in the left field cannot be read",
+      "substrate": "pathway-visual"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "both hands",
+      "sign": "Intermanual conflict, alien hand phenomena and diagonistic dyspraxia after anterior callosal lesions",
+      "substrate": "cortex-premotor-sma"
+    }
+  ],
+  "reasoning": "Sensation and motor control are crossed: the left hand reports to the right hemisphere and the left visual field projects to the right occipital cortex, whereas language lives in the left hemisphere. In an intact brain the corpus callosum transfers information between the hemispheres in milliseconds, so what the right hemisphere feels or sees can be named. When the callosum is divided, the right hemisphere still perceives the object in the left hand and can select it by touch from a tray, but the name cannot reach the left hemisphere's speech areas; the left hand cannot write because the right hemisphere has no access to the left hemisphere's language, and it cannot carry out a verbal command because the praxis programs of the left parietal lobe cannot cross to the right motor cortex. The right hand, controlled by the left hemisphere, loses the visuospatial skill of the right parietal lobe, hence its constructional apraxia. Words in the left visual field reach only the right occipital lobe and cannot cross the splenium to the left angular gyrus, a left hemialexia that is the mirror of alexia without agraphia. Anterior callosal lesions disconnect the supplementary motor areas and produce conflict between the hands. Each hemisphere is intact, so ordinary behavior, which uses both eyes and both hands, is nearly normal, and the syndrome reveals itself only when input is lateralized.",
+  "imagingFindings": [
+    {
+      "pathology": "Callosal infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the body or splenium of the corpus callosum, from anterior or posterior cerebral artery pericallosal branch occlusion.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Callosotomy",
+      "modality": "MRI",
+      "finding": "Surgical division of the anterior two-thirds or the whole callosum on sagittal T1.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Callosal tumor or demyelination",
+      "modality": "MRI",
+      "finding": "'Butterfly' glioblastoma crossing the callosum, or the callososeptal lesions of multiple sclerosis; Marchiafava–Bignami necrosis in alcoholism.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Callosotomy for epilepsy",
+    "Pericallosal artery infarct",
+    "Glioblastoma or lymphoma of the callosum",
+    "Marchiafava–Bignami disease",
+    "Multiple sclerosis",
+    "Callosal agenesis (mostly compensated)"
+  ],
+  "mimics": [
+    {
+      "name": "Left parietal apraxia",
+      "howToDistinguish": "Bilateral apraxia; naming intact in both hands"
+    },
+    {
+      "name": "Left hemineglect",
+      "howToDistinguish": "Left field and hand ignored rather than unnamed; awareness deficit"
+    },
+    {
+      "name": "Corticobasal degeneration",
+      "howToDistinguish": "Progressive asymmetric rigidity, dystonia and alien limb with cortical sensory loss"
+    }
+  ],
+  "management": [
+    "Test each hand and each visual field separately when a callosal lesion is suspected",
+    "Treat the underlying lesion; callosotomy deficits are mild and adapt",
+    "Occupational therapy strategies using bimanual and verbal cues"
+  ],
+  "citations": [
+    {
+      "ref": "sp-corpus-callosum",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-agraphia",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -10,
+      "z": 20
+    },
+    "label": "body and splenium of the corpus callosum"
   },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "both hands",
-   "sign": "Intermanual conflict, alien hand phenomena and diagonistic dyspraxia after anterior callosal lesions",
-   "substrate": "cortex-premotor-sma"
-  }
- ],
- "reasoning": "Sensation and motor control are crossed: the left hand reports to the right hemisphere and the left visual field projects to the right occipital cortex, whereas language lives in the left hemisphere. In an intact brain the corpus callosum transfers information between the hemispheres in milliseconds, so what the right hemisphere feels or sees can be named. When the callosum is divided, the right hemisphere still perceives the object in the left hand and can select it by touch from a tray, but the name cannot reach the left hemisphere's speech areas; the left hand cannot write because the right hemisphere has no access to the left hemisphere's language, and it cannot carry out a verbal command because the praxis programs of the left parietal lobe cannot cross to the right motor cortex. The right hand, controlled by the left hemisphere, loses the visuospatial skill of the right parietal lobe, hence its constructional apraxia. Words in the left visual field reach only the right occipital lobe and cannot cross the splenium to the left angular gyrus, a left hemialexia that is the mirror of alexia without agraphia. Anterior callosal lesions disconnect the supplementary motor areas and produce conflict between the hands. Each hemisphere is intact, so ordinary behavior, which uses both eyes and both hands, is nearly normal, and the syndrome reveals itself only when input is lateralized.",
- "imagingFindings": [
-  {
-   "pathology": "Callosal infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the body or splenium of the corpus callosum, from anterior or posterior cerebral artery pericallosal branch occlusion.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Callosotomy",
-   "modality": "MRI",
-   "finding": "Surgical division of the anterior two-thirds or the whole callosum on sagittal T1.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Callosal tumor or demyelination",
-   "modality": "MRI",
-   "finding": "'Butterfly' glioblastoma crossing the callosum, or the callososeptal lesions of multiple sclerosis; Marchiafava–Bignami necrosis in alcoholism.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Callosotomy for epilepsy",
-  "Pericallosal artery infarct",
-  "Glioblastoma or lymphoma of the callosum",
-  "Marchiafava–Bignami disease",
-  "Multiple sclerosis",
-  "Callosal agenesis (mostly compensated)"
- ],
- "mimics": [
-  {
-   "name": "Left parietal apraxia",
-   "howToDistinguish": "Bilateral apraxia; naming intact in both hands"
-  },
-  {
-   "name": "Left hemineglect",
-   "howToDistinguish": "Left field and hand ignored rather than unnamed; awareness deficit"
-  },
-  {
-   "name": "Corticobasal degeneration",
-   "howToDistinguish": "Progressive asymmetric rigidity, dystonia and alien limb with cortical sensory loss"
-  }
- ],
- "management": [
-  "Test each hand and each visual field separately when a callosal lesion is suspected",
-  "Treat the underlying lesion; callosotomy deficits are mild and adapt",
-  "Occupational therapy strategies using bimanual and verbal cues"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    289,
-    290
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    191,
-    191
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -10,
-   "z": 20
-  },
-  "label": "body and splenium of the corpus callosum"
- },
- "cameraPreset": "medial-l"
+  "cameraPreset": "medial-l"
 }

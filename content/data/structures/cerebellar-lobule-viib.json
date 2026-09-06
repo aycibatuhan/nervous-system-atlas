@@ -1,161 +1,145 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-viib",
- "name": "Lobule VIIB",
- "synonyms": [
-  "gracile lobule",
-  "lobule VIIB with the vermian tuber"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-viib-l",
-  "cerebellar-lobule-viib-r"
- ],
- "summary": "Lobule VIIB is the narrow hemispheric lobule between Crus II above and lobule VIIIA below, the gracile lobule, on the inferior surface of the posterior cerebellum, with the vermian tuber and folium as its midline counterparts. It lies at the boundary between the cognitive cerebellum of the ansiform lobules and the second sensorimotor map of lobule VIII, and it contributes to both: its lateral part joins the prefrontal loops for working memory and its medial part receives spinal and pontine sensorimotor input. It is supplied by the posterior inferior cerebellar artery, is involved in PICA infarcts and in the cerebellar cognitive-affective syndrome, and its vermian part belongs to the oculomotor vermis.",
- "anatomy": {
-  "location": "Inferior surface of the posterior lobe between the ansoparamedian fissure (below Crus II) and the prebiventer fissure (above lobule VIIIA), extending from the tuber of the vermis laterally as the gracile lobule to the lateral margin of the hemisphere.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Prefrontal, parietal and sensorimotor cortex via the pontine nuclei",
-    "via": "middle cerebellar peduncle"
-   },
-   {
-    "from": "Spinal cord (paravermian part)",
-    "via": "spinocerebellar tracts"
-   },
-   {
-    "from": "Superior colliculus and vestibular nuclei (vermis)",
-    "via": "tectocerebellar and vestibulocerebellar fibers"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-viib",
+  "name": "Lobule VIIB",
+  "synonyms": [
+    "gracile lobule",
+    "lobule VIIB with the vermian tuber"
   ],
-  "efferents": [
-   {
-    "to": "Dentate and interposed nuclei; fastigial nucleus (vermis)",
-    "via": "Purkinje axons"
-   },
-   {
-    "to": "Prefrontal and motor cortex via the thalamus",
-    "via": "superior cerebellar peduncle"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-viib-l",
+    "cerebellar-lobule-viib-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Lobule VIIB receives corticopontine fibers from the prefrontal and parietal cortex laterally and from the sensorimotor cortex medially, and spinocerebellar input to its paravermian part, projecting to the dentate and interposed nuclei; functionally it takes part in verbal and spatial working memory and in the planning of sequential movements, and the vermian folium and tuber (VIIA) with lobule VI form the oculomotor vermis that calibrates saccades through the fastigial nucleus. It is one of the lobules in which the cerebellum's contribution to attention and to the timing of cognitive operations has been mapped, and its involvement in posterior lobe lesions adds executive symptoms to gait and ocular signs.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-inferior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebellar-lobule-viib-l"
-    },
-    "label": "lobule VIIB between Crus II and lobule VIIIA"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-viib-r"
-    },
-    "label": "gracile lobule on the inferior cerebellar surface"
-   }
-  ],
-  "normalAppearance": "A narrow lobule on the inferior cerebellar surface on sagittal images below Crus II and above the biventer lobule; the vermian folium and tuber lie at the same level in the midline.",
-  "pathology": [
-   {
-    "pathology": "PICA territory infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the inferior posterior hemisphere including lobule VIIB with ataxia, vertigo and subtle executive change.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cerebellar cognitive-affective syndrome",
-    "modality": "MRI",
-    "finding": "Posterior lobe lesion involving VIIB with Crus I-II producing working memory and executive deficits.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Oculomotor vermis lesion",
-    "modality": "MRI",
-    "finding": "Midline lesion of the folium and tuber with saccadic dysmetria and impaired pursuit; medulloblastoma in children, infarct or demyelination in adults.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Working memory and sequencing deficits",
-    "side": "n/a",
-    "mechanism": "Disruption of the prefrontal loops through lateral VIIB"
-   },
-   {
-    "deficit": "Saccadic dysmetria (vermian part)",
-    "side": "bilateral",
-    "mechanism": "Loss of oculomotor vermis calibration of saccade amplitude"
-   },
-   {
-    "deficit": "Mild limb ataxia (medial part)",
-    "side": "ipsilateral",
-    "mechanism": "Involvement of the paravermian sensorimotor representation"
-   }
-  ],
-  "examination": [
-   "Digit span and sequencing tasks",
-   "Saccade accuracy to targets",
-   "Finger-nose testing for a paravermian component"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-cerebellar-vermian-midline"
-  ],
-  "pearls": [
-   "VIIB is the border lobule: cognition laterally, movement medially, eye movements in the midline",
-   "Saccadic overshoot with a normal brainstem points to the oculomotor vermis",
-   "Posterior lobe strokes deserve a cognitive screen as much as a gait test"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
+  "summary": "Lobule VIIB is the narrow hemispheric lobule between Crus II above and lobule VIIIA below, the gracile lobule, on the inferior surface of the posterior cerebellum, with the vermian tuber and folium as its midline counterparts. It lies at the boundary between the cognitive cerebellum of the ansiform lobules and the second sensorimotor map of lobule VIII, and it contributes to both: its lateral part joins the prefrontal loops for working memory and its medial part receives spinal and pontine sensorimotor input. It is supplied by the posterior inferior cerebellar artery, is involved in PICA infarcts and in the cerebellar cognitive-affective syndrome, and its vermian part belongs to the oculomotor vermis.",
+  "anatomy": {
+    "location": "Inferior surface of the posterior lobe between the ansoparamedian fissure (below Crus II) and the prebiventer fissure (above lobule VIIIA), extending from the tuber of the vermis laterally as the gracile lobule to the lateral margin of the hemisphere.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Prefrontal, parietal and sensorimotor cortex via the pontine nuclei",
+        "via": "middle cerebellar peduncle"
+      },
+      {
+        "from": "Spinal cord (paravermian part)",
+        "via": "spinocerebellar tracts"
+      },
+      {
+        "from": "Superior colliculus and vestibular nuclei (vermis)",
+        "via": "tectocerebellar and vestibulocerebellar fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Dentate and interposed nuclei; fastigial nucleus (vermis)",
+        "via": "Purkinje axons"
+      },
+      {
+        "to": "Prefrontal and motor cortex via the thalamus",
+        "via": "superior cerebellar peduncle"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    96,
-    100
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "cerebellar-hemisphere"
+  "function": "Lobule VIIB receives corticopontine fibers from the prefrontal and parietal cortex laterally and from the sensorimotor cortex medially, and spinocerebellar input to its paravermian part, projecting to the dentate and interposed nuclei; functionally it takes part in verbal and spatial working memory and in the planning of sequential movements, and the vermian folium and tuber (VIIA) with lobule VI form the oculomotor vermis that calibrates saccades through the fastigial nucleus. It is one of the lobules in which the cerebellum's contribution to attention and to the timing of cognitive operations has been mapped, and its involvement in posterior lobe lesions adds executive symptoms to gait and ocular signs.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-inferior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebellar-lobule-viib-l"
+        },
+        "label": "lobule VIIB between Crus II and lobule VIIIA"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-viib-r"
+        },
+        "label": "gracile lobule on the inferior cerebellar surface"
+      }
+    ],
+    "normalAppearance": "A narrow lobule on the inferior cerebellar surface on sagittal images below Crus II and above the biventer lobule; the vermian folium and tuber lie at the same level in the midline.",
+    "pathology": [
+      {
+        "pathology": "PICA territory infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the inferior posterior hemisphere including lobule VIIB with ataxia, vertigo and subtle executive change.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cerebellar cognitive-affective syndrome",
+        "modality": "MRI",
+        "finding": "Posterior lobe lesion involving VIIB with Crus I-II producing working memory and executive deficits.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Oculomotor vermis lesion",
+        "modality": "MRI",
+        "finding": "Midline lesion of the folium and tuber with saccadic dysmetria and impaired pursuit; medulloblastoma in children, infarct or demyelination in adults.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Working memory and sequencing deficits",
+        "side": "n/a",
+        "mechanism": "Disruption of the prefrontal loops through lateral VIIB"
+      },
+      {
+        "deficit": "Saccadic dysmetria (vermian part)",
+        "side": "bilateral",
+        "mechanism": "Loss of oculomotor vermis calibration of saccade amplitude"
+      },
+      {
+        "deficit": "Mild limb ataxia (medial part)",
+        "side": "ipsilateral",
+        "mechanism": "Involvement of the paravermian sensorimotor representation"
+      }
+    ],
+    "examination": [
+      "Digit span and sequencing tasks",
+      "Saccade accuracy to targets",
+      "Finger-nose testing for a paravermian component"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-cerebellar-vermian-midline"
+    ],
+    "pearls": [
+      "VIIB is the border lobule: cognition laterally, movement medially, eye movements in the midline",
+      "Saccadic overshoot with a normal brainstem points to the oculomotor vermis",
+      "Posterior lobe strokes deserve a cognitive screen as much as a gait test"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "cerebellar-hemisphere"
 }

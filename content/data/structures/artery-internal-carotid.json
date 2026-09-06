@@ -1,189 +1,168 @@
 {
- "kind": "structure",
- "id": "artery-internal-carotid",
- "name": "Internal carotid artery",
- "synonyms": [
-  "ICA"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "The internal carotid artery is the main feeder of the anterior circulation. It rises from the common carotid bifurcation, enters the skull through the carotid canal, crosses the cavernous sinus and, after piercing the dura medial to the anterior clinoid process, ends by splitting into the anterior and middle cerebral arteries. Its ophthalmic, posterior communicating and anterior choroidal branches leave in the short subarachnoid segment just before that bifurcation.",
- "anatomy": {
-  "location": "Begins at the level of the upper border of the thyroid cartilage (around C4) as the larger terminal branch of the common carotid; a carotid sinus dilatation marks its origin. The cervical segment gives no branches. The petrous segment turns forward and medially inside the temporal bone, the cavernous segment runs horizontally in the cavernous sinus lateral to the sphenoid body, and the supraclinoid segment lies in the subarachnoid space beside the optic chiasm and terminates at the medial end of the lateral sulcus.",
-  "subdivisions": [
-   {
-    "name": "Cervical",
-    "note": "no branches; the carotid sinus and body sit at the origin"
-   },
-   {
-    "name": "Petrous",
-    "note": "in the carotid canal, surrounded by the sympathetic carotid plexus"
-   },
-   {
-    "name": "Cavernous",
-    "note": "S-shaped siphon inside the cavernous sinus; the abducens nerve lies lateral to it"
-   },
-   {
-    "name": "Supraclinoid (cerebral)",
-    "note": "subarachnoid; gives ophthalmic, posterior communicating, anterior choroidal branches, then bifurcates"
-   }
+  "kind": "structure",
+  "id": "artery-internal-carotid",
+  "name": "Internal carotid artery",
+  "synonyms": [
+    "ICA"
   ],
-  "relations": {
-   "medial": "sphenoid body and pituitary fossa in the cavernous segment",
-   "lateral": "cranial nerves III, IV, V1 and V2 in the lateral wall of the cavernous sinus; VI lies directly beside the artery inside the sinus",
-   "superior": "optic nerve and chiasm at the terminal bifurcation"
-  }
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Delivers most of the blood to the cerebral hemispheres: the entire lateral convexity (via the middle cerebral artery), the medial frontal and parietal surfaces (via the anterior cerebral artery), the eye and orbit (ophthalmic artery), and the deep structures supplied by the anterior choroidal and lenticulostriate perforators. Through the posterior communicating artery it can also back-fill the posterior circulation.",
- "bloodSupply": {
-  "arteries": [
-   "common carotid artery"
-  ],
-  "territories": [
-   "territory-aca",
-   "territory-mca",
-   "territory-anterior-choroidal",
-   "territory-lenticulostriate"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": 5,
-     "z": -18
-    },
-    "label": "cavernous carotid: paired flow voids lateral to the pituitary fossa"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 12,
-     "y": 5,
-     "z": -18
-    },
-    "label": "carotid siphon in the cavernous sinus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": 8,
-     "z": -6
-    },
-    "label": "terminal bifurcation into A1 and M1 lateral to the chiasm"
-   }
-  ],
-  "normalAppearance": "On T1 and T2 the artery is a round signal void (flow void) because of fast flow: the siphon is easiest to find on axial slices lateral to the sella, and the supraclinoid segment just anterolateral to the optic chiasm. On CT angiography and time-of-flight MRA the vessel is bright, and the siphon calcifies with age on non-contrast CT.",
-  "pathology": [
-   {
-    "pathology": "Symptomatic carotid stenosis",
-    "modality": "CTA",
-    "finding": "Focal narrowing of the proximal internal carotid at or just above the bifurcation, measured against the distal normal lumen (NASCET method); an ipsilateral cortical MCA/ACA-territory infarct on DWI is the typical downstream signature.",
-    "sequence": "CT contrast"
-   },
-   {
-    "pathology": "Carotid dissection",
-    "modality": "MRI",
-    "finding": "Crescentic T1-bright intramural hematoma on fat-saturated axial T1 around a narrowed eccentric lumen, usually in the upper cervical or petrous segment; may present with Horner syndrome and ipsilateral embolic infarcts.",
-    "sequence": "T1",
-    "timing": "Intramural methemoglobin is brightest from days 3 to ~14 after the tear"
-   },
-   {
-    "pathology": "Terminal carotid (T) occlusion",
-    "modality": "CTA",
-    "finding": "Absent opacification of the distal ICA, A1 and M1 with a large ACA plus MCA territory infarct; on non-contrast CT a hyperdense M1 or carotid terminus may be visible early.",
-    "sequence": "CT non-contrast",
-    "timing": "Hyperdense vessel sign is visible immediately; parenchymal hypodensity develops over hours"
-   }
-  ],
-  "sequenceOfChoice": "CTA of the neck and head for stenosis and occlusion; fat-saturated T1 for dissection; DWI for the downstream infarct"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemiparesis and hemisensory loss with aphasia (dominant) or neglect (non-dominant)",
-    "side": "contralateral",
-    "mechanism": "Loss of flow to both ACA and MCA territories when the terminus occludes without adequate collateral supply"
-   },
-   {
-    "deficit": "Transient monocular blindness (amaurosis fugax)",
-    "side": "ipsilateral",
-    "mechanism": "Emboli from a carotid plaque pass into the ophthalmic artery and retinal arterioles"
-   },
-   {
-    "deficit": "Partial Horner syndrome (ptosis and miosis without anhidrosis of the face)",
-    "side": "ipsilateral",
-    "mechanism": "The sympathetic plexus travelling on the artery is stretched by a dissection; sweat fibers to the face travel with the external carotid, so sweating is spared"
-   }
-  ],
-  "examination": [
-   "Auscultate the neck for a carotid bruit and compare pulses",
-   "Fundoscopy for retinal emboli (Hollenhorst plaques) after monocular visual loss",
-   "Look for a small pupil and mild ptosis on the side of neck pain after trauma or chiropractic manipulation"
-  ],
-  "syndromes": [
-   "syn-mca-stem-infarct",
-   "syn-horner",
-   "syn-cavernous-sinus"
-  ],
-  "pearls": [
-   "Retinal symptoms plus contralateral hemispheric symptoms point to the carotid, because the ophthalmic artery is its first intracranial branch",
-   "A partial Horner syndrome with neck pain is carotid dissection until proven otherwise",
-   "The cavernous segment is why a carotid aneurysm or fistula presents with cranial nerves III, IV, V1, V2 and VI signs"
-  ]
- },
- "pitfalls": [
-  "The absence of a carotid bruit does not exclude a tight stenosis; near-occlusion can be silent",
-  "Tortuous or kinked cervical carotids in the elderly mimic stenosis on a single projection"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    464,
-    465
-   ]
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The internal carotid artery is the main feeder of the anterior circulation. It rises from the common carotid bifurcation, enters the skull through the carotid canal, crosses the cavernous sinus and, after piercing the dura medial to the anterior clinoid process, ends by splitting into the anterior and middle cerebral arteries. Its ophthalmic, posterior communicating and anterior choroidal branches leave in the short subarachnoid segment just before that bifurcation.",
+  "anatomy": {
+    "location": "Begins at the level of the upper border of the thyroid cartilage (around C4) as the larger terminal branch of the common carotid; a carotid sinus dilatation marks its origin. The cervical segment gives no branches. The petrous segment turns forward and medially inside the temporal bone, the cavernous segment runs horizontally in the cavernous sinus lateral to the sphenoid body, and the supraclinoid segment lies in the subarachnoid space beside the optic chiasm and terminates at the medial end of the lateral sulcus.",
+    "subdivisions": [
+      {
+        "name": "Cervical",
+        "note": "no branches; the carotid sinus and body sit at the origin"
+      },
+      {
+        "name": "Petrous",
+        "note": "in the carotid canal, surrounded by the sympathetic carotid plexus"
+      },
+      {
+        "name": "Cavernous",
+        "note": "S-shaped siphon inside the cavernous sinus; the abducens nerve lies lateral to it"
+      },
+      {
+        "name": "Supraclinoid (cerebral)",
+        "note": "subarachnoid; gives ophthalmic, posterior communicating, anterior choroidal branches, then bifurcates"
+      }
+    ],
+    "relations": {
+      "medial": "sphenoid body and pituitary fossa in the cavernous segment",
+      "lateral": "cranial nerves III, IV, V1 and V2 in the lateral wall of the cavernous sinus; VI lies directly beside the artery inside the sinus",
+      "superior": "optic nerve and chiasm at the terminal bifurcation"
+    }
   },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    421,
-    424
-   ],
-   "section": "Cavernous sinus"
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    57,
-    58
-   ]
+  "function": "Delivers most of the blood to the cerebral hemispheres: the entire lateral convexity (via the middle cerebral artery), the medial frontal and parietal surfaces (via the anterior cerebral artery), the eye and orbit (ophthalmic artery), and the deep structures supplied by the anterior choroidal and lenticulostriate perforators. Through the posterior communicating artery it can also back-fill the posterior circulation.",
+  "bloodSupply": {
+    "arteries": [
+      "common carotid artery"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-mca",
+      "territory-anterior-choroidal",
+      "territory-lenticulostriate"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    192
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "anterior-circulation"
- ],
- "status": "draft",
- "latin": "Arteria carotis interna",
- "subsystem": "anterior-circulation"
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": 5,
+          "z": -18
+        },
+        "label": "cavernous carotid: paired flow voids lateral to the pituitary fossa"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 12,
+          "y": 5,
+          "z": -18
+        },
+        "label": "carotid siphon in the cavernous sinus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": 8,
+          "z": -6
+        },
+        "label": "terminal bifurcation into A1 and M1 lateral to the chiasm"
+      }
+    ],
+    "normalAppearance": "On T1 and T2 the artery is a round signal void (flow void) because of fast flow: the siphon is easiest to find on axial slices lateral to the sella, and the supraclinoid segment just anterolateral to the optic chiasm. On CT angiography and time-of-flight MRA the vessel is bright, and the siphon calcifies with age on non-contrast CT.",
+    "pathology": [
+      {
+        "pathology": "Symptomatic carotid stenosis",
+        "modality": "CTA",
+        "finding": "Focal narrowing of the proximal internal carotid at or just above the bifurcation, measured against the distal normal lumen (NASCET method); an ipsilateral cortical MCA/ACA-territory infarct on DWI is the typical downstream signature.",
+        "sequence": "CT contrast"
+      },
+      {
+        "pathology": "Carotid dissection",
+        "modality": "MRI",
+        "finding": "Crescentic T1-bright intramural hematoma on fat-saturated axial T1 around a narrowed eccentric lumen, usually in the upper cervical or petrous segment; may present with Horner syndrome and ipsilateral embolic infarcts.",
+        "sequence": "T1",
+        "timing": "Intramural methemoglobin is brightest from days 3 to ~14 after the tear"
+      },
+      {
+        "pathology": "Terminal carotid (T) occlusion",
+        "modality": "CTA",
+        "finding": "Absent opacification of the distal ICA, A1 and M1 with a large ACA plus MCA territory infarct; on non-contrast CT a hyperdense M1 or carotid terminus may be visible early.",
+        "sequence": "CT non-contrast",
+        "timing": "Hyperdense vessel sign is visible immediately; parenchymal hypodensity develops over hours"
+      }
+    ],
+    "sequenceOfChoice": "CTA of the neck and head for stenosis and occlusion; fat-saturated T1 for dissection; DWI for the downstream infarct"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemiparesis and hemisensory loss with aphasia (dominant) or neglect (non-dominant)",
+        "side": "contralateral",
+        "mechanism": "Loss of flow to both ACA and MCA territories when the terminus occludes without adequate collateral supply"
+      },
+      {
+        "deficit": "Transient monocular blindness (amaurosis fugax)",
+        "side": "ipsilateral",
+        "mechanism": "Emboli from a carotid plaque pass into the ophthalmic artery and retinal arterioles"
+      },
+      {
+        "deficit": "Partial Horner syndrome (ptosis and miosis without anhidrosis of the face)",
+        "side": "ipsilateral",
+        "mechanism": "The sympathetic plexus travelling on the artery is stretched by a dissection; sweat fibers to the face travel with the external carotid, so sweating is spared"
+      }
+    ],
+    "examination": [
+      "Auscultate the neck for a carotid bruit and compare pulses",
+      "Fundoscopy for retinal emboli (Hollenhorst plaques) after monocular visual loss",
+      "Look for a small pupil and mild ptosis on the side of neck pain after trauma or chiropractic manipulation"
+    ],
+    "syndromes": [
+      "syn-mca-stem-infarct",
+      "syn-horner",
+      "syn-cavernous-sinus"
+    ],
+    "pearls": [
+      "Retinal symptoms plus contralateral hemispheric symptoms point to the carotid, because the ophthalmic artery is its first intracranial branch",
+      "A partial Horner syndrome with neck pain is carotid dissection until proven otherwise",
+      "The cavernous segment is why a carotid aneurysm or fistula presents with cranial nerves III, IV, V1, V2 and VI signs"
+    ]
+  },
+  "pitfalls": [
+    "The absence of a carotid bruit does not exclude a tight stenosis; near-occlusion can be silent",
+    "Tortuous or kinked cervical carotids in the elderly mimic stenosis on a single projection"
+  ],
+  "citations": [
+    {
+      "ref": "sp-internal-carotid-arteries",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-carotid-arteries",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-internal-mammary-arteries",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "vascular",
+    "anterior-circulation"
+  ],
+  "status": "draft",
+  "latin": "Arteria carotis interna",
+  "subsystem": "anterior-circulation"
 }

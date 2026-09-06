@@ -1,165 +1,145 @@
 {
- "kind": "structure",
- "id": "territory-aca-major",
- "name": "ACA major territory",
- "synonyms": [
-  "ACA territory (level 2)",
-  "anterior cerebral artery domain"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-aca-major-l",
-  "territory-aca-major-r"
- ],
- "summary": "The anterior cerebral artery major territory is the medial surface of the frontal and parietal lobes from the frontal pole to the parieto-occipital sulcus, the superior margin of the hemisphere for a centimeter or two onto the convexity, the corpus callosum except the splenium, and, through the recurrent artery of Heubner, the caudate head and the anterior limb of the internal capsule. This level-2 map merges the cortical and deep ACA domains. Infarction is uncommon because the anterior communicating artery provides a collateral, and it produces contralateral leg weakness, abulia, urinary incontinence and, with the callosum, disconnection signs; bilateral infarction from a single azygos trunk or after anterior communicating aneurysm surgery produces akinetic mutism.",
- "anatomy": {
-  "location": "Medial frontal and parietal cortex (superior frontal gyrus, paracentral lobule, cingulate gyrus, precuneus, medial orbital cortex), the superior convexity margin, the genu, body and part of the splenium of the corpus callosum, the septal area and, via Heubner's artery, the caudate head and anterior limb, bordered laterally by the MCA territory and posteriorly by the PCA territory at the parieto-occipital sulcus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Anterior cerebral artery A1-A5 segments, recurrent artery of Heubner",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-aca-major",
+  "name": "ACA major territory",
+  "synonyms": [
+    "ACA territory (level 2)",
+    "anterior cerebral artery domain"
   ],
-  "efferents": [
-   {
-    "to": "Superior sagittal sinus via superior cerebral veins",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-aca-major-l",
+    "territory-aca-major-r"
   ],
-  "pathways": []
- },
- "function": "The territory contains the leg and foot areas of the motor and sensory cortex in the paracentral lobule, the supplementary motor area and anterior cingulate that initiate movement and speech, the medial prefrontal cortex of motivation and social behavior, the micturition center of the medial frontal lobe and the callosal fibers that join the hemispheres; its deep part carries the frontal-striatal loops through the caudate head. Infarction therefore produces leg-predominant weakness, apraxia of gait, abulia, incontinence and, on the left, transcortical motor aphasia; the parasagittal border zone with the MCA is the site of watershed infarcts that produce bilateral proximal weakness (man-in-a-barrel).",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-acom"
-  ],
-  "territories": [
-   "territory-aca-major"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "territory-aca-major-l"
+  "summary": "The anterior cerebral artery major territory is the medial surface of the frontal and parietal lobes from the frontal pole to the parieto-occipital sulcus, the superior margin of the hemisphere for a centimeter or two onto the convexity, the corpus callosum except the splenium, and, through the recurrent artery of Heubner, the caudate head and the anterior limb of the internal capsule. This level-2 map merges the cortical and deep ACA domains. Infarction is uncommon because the anterior communicating artery provides a collateral, and it produces contralateral leg weakness, abulia, urinary incontinence and, with the callosum, disconnection signs; bilateral infarction from a single azygos trunk or after anterior communicating aneurysm surgery produces akinetic mutism.",
+  "anatomy": {
+    "location": "Medial frontal and parietal cortex (superior frontal gyrus, paracentral lobule, cingulate gyrus, precuneus, medial orbital cortex), the superior convexity margin, the genu, body and part of the splenium of the corpus callosum, the septal area and, via Heubner's artery, the caudate head and anterior limb, bordered laterally by the MCA territory and posteriorly by the PCA territory at the parieto-occipital sulcus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior cerebral artery A1-A5 segments, recurrent artery of Heubner",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superior sagittal sinus via superior cerebral veins",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The territory contains the leg and foot areas of the motor and sensory cortex in the paracentral lobule, the supplementary motor area and anterior cingulate that initiate movement and speech, the medial prefrontal cortex of motivation and social behavior, the micturition center of the medial frontal lobe and the callosal fibers that join the hemispheres; its deep part carries the frontal-striatal loops through the caudate head. Infarction therefore produces leg-predominant weakness, apraxia of gait, abulia, incontinence and, on the left, transcortical motor aphasia; the parasagittal border zone with the MCA is the site of watershed infarcts that produce bilateral proximal weakness (man-in-a-barrel).",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-acom"
+    ],
+    "territories": [
+      "territory-aca-major"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "territory-aca-major-l"
+        },
+        "label": "ACA territory on the medial hemisphere"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-aca-major-r"
+        },
+        "label": "ACA domain over the superior margin and the corpus callosum"
+      }
+    ],
+    "normalAppearance": "On the overlay the ACA domain covers the medial surface and the superior rim of the convexity and the corpus callosum; the boundary with the MCA territory runs along the superior frontal sulcus region on the convexity.",
+    "pathology": [
+      {
+        "pathology": "ACA infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the medial frontal cortex and the paracentral lobule, sometimes the caudate head, with contralateral leg weakness and abulia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Bilateral ACA infarct (azygos ACA or vasospasm after AComm aneurysm)",
+        "modality": "MRI",
+        "finding": "Symmetric medial frontal infarcts with akinetic mutism, paraparesis and incontinence.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Subfalcine herniation compressing the ACA",
+        "modality": "CT",
+        "finding": "Midline shift with the cingulate gyrus under the falx and a secondary ACA infarct on the side of the mass.",
+        "sequence": "CT non-contrast"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral leg-predominant weakness and sensory loss",
+        "side": "contralateral",
+        "mechanism": "Paracentral lobule infarction"
+      },
+      {
+        "deficit": "Abulia, akinetic mutism when bilateral",
+        "side": "bilateral",
+        "mechanism": "Medial frontal and anterior cingulate infarction"
+      },
+      {
+        "deficit": "Urinary incontinence and gait apraxia",
+        "side": "bilateral",
+        "mechanism": "Medial frontal micturition and gait control areas"
+      },
+      {
+        "deficit": "Callosal disconnection: left-hand apraxia and agraphia",
+        "side": "n/a",
+        "mechanism": "Infarction of the genu and body of the corpus callosum"
+      }
+    ],
+    "examination": [
+      "Leg strength and gait initiation",
+      "Spontaneous speech and initiative",
+      "Bladder control and grasp reflexes"
+    ],
+    "syndromes": [
+      "syn-aca-infarct",
+      "syn-subfalcine-herniation",
+      "syn-callosal-disconnection",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Leg weaker than arm means ACA; face and arm weaker than leg means MCA",
+      "The anterior communicating artery is the collateral that makes ACA strokes rare",
+      "Akinetic mutism after aneurysm surgery is bilateral ACA territory ischemia"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "Introduction"
     },
-    "label": "ACA territory on the medial hemisphere"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-aca-major-r"
+    {
+      "ref": "sp-recurrent-artery-of-heubner",
+      "section": "Structure and Function"
     },
-    "label": "ACA domain over the superior margin and the corpus callosum"
-   }
+    {
+      "ref": "sp-brain-arteries",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On the overlay the ACA domain covers the medial surface and the superior rim of the convexity and the corpus callosum; the boundary with the MCA territory runs along the superior frontal sulcus region on the convexity.",
-  "pathology": [
-   {
-    "pathology": "ACA infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the medial frontal cortex and the paracentral lobule, sometimes the caudate head, with contralateral leg weakness and abulia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Bilateral ACA infarct (azygos ACA or vasospasm after AComm aneurysm)",
-    "modality": "MRI",
-    "finding": "Symmetric medial frontal infarcts with akinetic mutism, paraparesis and incontinence.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Subfalcine herniation compressing the ACA",
-    "modality": "CT",
-    "finding": "Midline shift with the cingulate gyrus under the falx and a secondary ACA infarct on the side of the mass.",
-    "sequence": "CT non-contrast"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral leg-predominant weakness and sensory loss",
-    "side": "contralateral",
-    "mechanism": "Paracentral lobule infarction"
-   },
-   {
-    "deficit": "Abulia, akinetic mutism when bilateral",
-    "side": "bilateral",
-    "mechanism": "Medial frontal and anterior cingulate infarction"
-   },
-   {
-    "deficit": "Urinary incontinence and gait apraxia",
-    "side": "bilateral",
-    "mechanism": "Medial frontal micturition and gait control areas"
-   },
-   {
-    "deficit": "Callosal disconnection: left-hand apraxia and agraphia",
-    "side": "n/a",
-    "mechanism": "Infarction of the genu and body of the corpus callosum"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "Leg strength and gait initiation",
-   "Spontaneous speech and initiative",
-   "Bladder control and grasp reflexes"
-  ],
-  "syndromes": [
-   "syn-aca-infarct",
-   "syn-subfalcine-herniation",
-   "syn-callosal-disconnection",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Leg weaker than arm means ACA; face and arm weaker than leg means MCA",
-   "The anterior communicating artery is the collateral that makes ACA strokes rare",
-   "Akinetic mutism after aneurysm surgery is bilateral ACA territory ischemia"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level2",
- "parent": "territory-aca"
+  "status": "draft",
+  "subsystem": "level2",
+  "parent": "territory-aca"
 }

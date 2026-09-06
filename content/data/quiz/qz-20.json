@@ -1,58 +1,66 @@
 {
- "kind": "quiz",
- "id": "qz-20",
- "type": "localize",
- "vignette": "A 64-year-old man develops a right hemianopia. He can write a sentence but cannot read it back a minute later, although he can spell words aloud and recognizes words spelled to him. He cannot name colors but matches them correctly.",
- "stem": "Which two structures are damaged?",
- "options": [
-  {
-   "key": "A",
-   "text": "Left angular gyrus and Wernicke's area"
-  },
-  {
-   "key": "B",
-   "text": "Left calcarine cortex and splenium of the corpus callosum"
-  },
-  {
-   "key": "C",
-   "text": "Right calcarine cortex and left angular gyrus"
-  },
-  {
-   "key": "D",
-   "text": "Left optic tract and lateral geniculate body"
-  },
-  {
-   "key": "E",
-   "text": "Bilateral occipital lobes"
-  }
- ],
- "answer": "B",
- "explanation": "Alexia without agraphia arises when a left occipital infarct blinds the right hemifield and the accompanying splenial lesion disconnects the seeing right occipital cortex from the left angular gyrus; writing, which needs no visual input, survives.",
- "targets": {
-  "structureIds": [
-   "corpus-callosum",
-   "cortex-calcarine"
+  "kind": "quiz",
+  "id": "qz-20",
+  "type": "localize",
+  "vignette": "A 64-year-old man develops a right hemianopia. He can write a sentence but cannot read it back a minute later, although he can spell words aloud and recognizes words spelled to him. He cannot name colors but matches them correctly.",
+  "stem": "Which two structures are damaged?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Left angular gyrus and Wernicke's area"
+    },
+    {
+      "key": "B",
+      "text": "Left calcarine cortex and splenium of the corpus callosum"
+    },
+    {
+      "key": "C",
+      "text": "Right calcarine cortex and left angular gyrus"
+    },
+    {
+      "key": "D",
+      "text": "Left optic tract and lateral geniculate body"
+    },
+    {
+      "key": "E",
+      "text": "Bilateral occipital lobes"
+    }
   ],
-  "syndromeIds": [
-   "syn-alexia-without-agraphia",
-   "syn-pca-infarct"
+  "answer": "B",
+  "explanation": "Alexia without agraphia arises when a left occipital infarct blinds the right hemifield and the accompanying splenial lesion disconnects the seeing right occipital cortex from the left angular gyrus; writing, which needs no visual input, survives.",
+  "targets": {
+    "structureIds": [
+      "corpus-callosum",
+      "cortex-calcarine"
+    ],
+    "syndromeIds": [
+      "syn-alexia-without-agraphia",
+      "syn-pca-infarct"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "cortex-intracalcarine-l",
+    "corpus-callosum"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cortex-intracalcarine-l",
-  "corpus-callosum"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    50,
-    50
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-alexia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-cerebral-arteries",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

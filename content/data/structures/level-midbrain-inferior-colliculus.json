@@ -1,208 +1,188 @@
 {
- "kind": "structure",
- "id": "level-midbrain-inferior-colliculus",
- "name": "Midbrain: inferior colliculus level",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "brainstem",
-  "inferior-colliculus-l",
-  "inferior-colliculus-r"
- ],
- "summary": "The lower midbrain, cut through the inferior colliculi, shows the three tiers of the midbrain clearly: the tectum (inferior colliculi, the auditory relay), the tegmentum around the cerebral aqueduct (trochlear nucleus, decussating superior cerebellar peduncles, the sensory lemnisci and the MLF) and the basis (crus cerebri carrying the corticospinal and corticobulbar fibers in its middle three-fifths, separated from the tegmentum by the substantia nigra). The trochlear nerve is unique in crossing and leaving dorsally just below the colliculi.",
- "anatomy": {
-  "location": "From the isthmus at the pontomesencephalic junction up to the level of the inferior colliculi and the trochlear nuclei; MNI z ≈ −14 to −22.",
-  "subdivisions": [
-   {
-    "name": "Inferior colliculus",
-    "note": "auditory relay receiving the lateral lemniscus and projecting to the medial geniculate body through its brachium"
-   },
-   {
-    "name": "Cerebral aqueduct and periaqueductal gray",
-    "note": "narrow channel between the third and fourth ventricles; the surrounding gray modulates pain and autonomic responses"
-   },
-   {
-    "name": "Trochlear nucleus",
-    "note": "in the ventral periaqueductal gray at the level of the inferior colliculus; its fibers cross in the superior medullary velum and exit dorsally"
-   },
-   {
-    "name": "Decussation of the superior cerebellar peduncles",
-    "note": "central tegmentum; dentate outflow crossing toward the contralateral red nucleus and thalamus"
-   },
-   {
-    "name": "Medial lemniscus, spinothalamic and trigeminothalamic tracts",
-    "note": "lateral tegmentum in a curved band"
-   },
-   {
-    "name": "Medial longitudinal fasciculus",
-    "note": "ventral to the periaqueductal gray, near the midline"
-   },
-   {
-    "name": "Substantia nigra",
-    "note": "between the crus and the tegmentum: pars compacta (dopaminergic) and pars reticulata"
-   },
-   {
-    "name": "Crus cerebri",
-    "note": "corticopontine fibers laterally and medially, corticospinal and corticobulbar in the middle"
-   },
-   {
-    "name": "Mesencephalic nucleus of V",
-    "note": "lateral margin of the periaqueductal gray"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Auditory relay and startle reflexes (inferior colliculus), control of the superior oblique muscle, passage of cerebellar outflow to the thalamus and of all long tracts, and dopaminergic modulation of the basal ganglia from the substantia nigra.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "artery-sca",
-   "artery-pca"
+  "kind": "structure",
+  "id": "level-midbrain-inferior-colliculus",
+  "name": "Midbrain: inferior colliculus level",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem",
+    "inferior-colliculus-l",
+    "inferior-colliculus-r"
   ],
-  "territories": [
-   "territory-basilar-paramedian",
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -16
+  "summary": "The lower midbrain, cut through the inferior colliculi, shows the three tiers of the midbrain clearly: the tectum (inferior colliculi, the auditory relay), the tegmentum around the cerebral aqueduct (trochlear nucleus, decussating superior cerebellar peduncles, the sensory lemnisci and the MLF) and the basis (crus cerebri carrying the corticospinal and corticobulbar fibers in its middle three-fifths, separated from the tegmentum by the substantia nigra). The trochlear nerve is unique in crossing and leaving dorsally just below the colliculi.",
+  "anatomy": {
+    "location": "From the isthmus at the pontomesencephalic junction up to the level of the inferior colliculi and the trochlear nuclei; MNI z ≈ −14 to −22.",
+    "subdivisions": [
+      {
+        "name": "Inferior colliculus",
+        "note": "auditory relay receiving the lateral lemniscus and projecting to the medial geniculate body through its brachium"
+      },
+      {
+        "name": "Cerebral aqueduct and periaqueductal gray",
+        "note": "narrow channel between the third and fourth ventricles; the surrounding gray modulates pain and autonomic responses"
+      },
+      {
+        "name": "Trochlear nucleus",
+        "note": "in the ventral periaqueductal gray at the level of the inferior colliculus; its fibers cross in the superior medullary velum and exit dorsally"
+      },
+      {
+        "name": "Decussation of the superior cerebellar peduncles",
+        "note": "central tegmentum; dentate outflow crossing toward the contralateral red nucleus and thalamus"
+      },
+      {
+        "name": "Medial lemniscus, spinothalamic and trigeminothalamic tracts",
+        "note": "lateral tegmentum in a curved band"
+      },
+      {
+        "name": "Medial longitudinal fasciculus",
+        "note": "ventral to the periaqueductal gray, near the midline"
+      },
+      {
+        "name": "Substantia nigra",
+        "note": "between the crus and the tegmentum: pars compacta (dopaminergic) and pars reticulata"
+      },
+      {
+        "name": "Crus cerebri",
+        "note": "corticopontine fibers laterally and medially, corticospinal and corticobulbar in the middle"
+      },
+      {
+        "name": "Mesencephalic nucleus of V",
+        "note": "lateral margin of the periaqueductal gray"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Auditory relay and startle reflexes (inferior colliculus), control of the superior oblique muscle, passage of cerebellar outflow to the thalamus and of all long tracts, and dopaminergic modulation of the basal ganglia from the substantia nigra.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "artery-sca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-basilar-paramedian",
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -16
+        },
+        "label": "lower midbrain: inferior colliculi behind the aqueduct, crura in front"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -16
+        },
+        "label": "inferior colliculus below the superior colliculus, aqueduct in front of the tectum"
+      }
+    ],
+    "normalAppearance": "On axial T2 the crura are two dark anterior bulges; the substantia nigra is a faint dark band behind each crus (darker on T2* because of iron); the aqueduct is a central bright dot and the inferior colliculi form the posterior surface.",
+    "pathology": [
+      {
+        "pathology": "Tectal or aqueductal lesion",
+        "modality": "MRI",
+        "finding": "Mass or T2 lesion of the tectal plate (tectal glioma, pineal region tumor) compressing the aqueduct with obstructive hydrocephalus of the lateral and third ventricles.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Lower midbrain infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the paramedian or lateral tegmentum from SCA or PCA perforators; ataxia and contralateral sensory loss.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetrical FLAIR hyperintensity of the periaqueductal gray, medial thalami and mammillary bodies.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "Axial T2/FLAIR and DWI through the midbrain; sagittal T2 for the aqueduct"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral superior oblique palsy (vertical diplopia worse looking down and in)",
+        "side": "contralateral",
+        "mechanism": "Trochlear nucleus, whose fibers cross before exiting"
+      },
+      {
+        "deficit": "Ipsilateral superior oblique palsy",
+        "side": "ipsilateral",
+        "mechanism": "Trochlear nerve after its exit"
+      },
+      {
+        "deficit": "Ipsilateral or contralateral limb ataxia",
+        "side": "n/a",
+        "mechanism": "Superior cerebellar peduncle before (ipsilateral) or after (contralateral) the decussation"
+      },
+      {
+        "deficit": "Contralateral hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Crus cerebri"
+      },
+      {
+        "deficit": "Contralateral hemisensory loss",
+        "side": "contralateral",
+        "mechanism": "Medial lemniscus and spinothalamic tract"
+      },
+      {
+        "deficit": "Difficulty localizing sound",
+        "side": "bilateral",
+        "mechanism": "Inferior colliculi"
+      }
+    ],
+    "examination": [
+      "Cover test for vertical diplopia; look for head tilt away from the affected eye",
+      "Limb coordination",
+      "Power and sensation of the opposite side",
+      "Hearing and sound localization"
+    ],
+    "syndromes": [
+      "syn-cn4-palsy",
+      "syn-hydrocephalus"
+    ],
+    "pearls": [
+      "The trochlear nerve is the only cranial nerve to cross and to leave the dorsal brainstem: a nuclear lesion gives a contralateral palsy, a nerve lesion an ipsilateral one",
+      "Aqueductal compression at this level produces hydrocephalus of the third and lateral ventricles with a normal fourth ventricle"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-mesencephalon-midbrain",
+      "section": "Structure and Function"
     },
-    "label": "lower midbrain: inferior colliculi behind the aqueduct, crura in front"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -16
+    {
+      "ref": "sp-inferior-colliculus",
+      "section": "Structure and Function"
     },
-    "label": "inferior colliculus below the superior colliculus, aqueduct in front of the tectum"
-   }
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On axial T2 the crura are two dark anterior bulges; the substantia nigra is a faint dark band behind each crus (darker on T2* because of iron); the aqueduct is a central bright dot and the inferior colliculi form the posterior surface.",
-  "pathology": [
-   {
-    "pathology": "Tectal or aqueductal lesion",
-    "modality": "MRI",
-    "finding": "Mass or T2 lesion of the tectal plate (tectal glioma, pineal region tumor) compressing the aqueduct with obstructive hydrocephalus of the lateral and third ventricles.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Lower midbrain infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the paramedian or lateral tegmentum from SCA or PCA perforators; ataxia and contralateral sensory loss.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetrical FLAIR hyperintensity of the periaqueductal gray, medial thalami and mammillary bodies.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "brainstem",
+    "cross-section"
   ],
-  "sequenceOfChoice": "Axial T2/FLAIR and DWI through the midbrain; sagittal T2 for the aqueduct"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral superior oblique palsy (vertical diplopia worse looking down and in)",
-    "side": "contralateral",
-    "mechanism": "Trochlear nucleus, whose fibers cross before exiting"
-   },
-   {
-    "deficit": "Ipsilateral superior oblique palsy",
-    "side": "ipsilateral",
-    "mechanism": "Trochlear nerve after its exit"
-   },
-   {
-    "deficit": "Ipsilateral or contralateral limb ataxia",
-    "side": "n/a",
-    "mechanism": "Superior cerebellar peduncle before (ipsilateral) or after (contralateral) the decussation"
-   },
-   {
-    "deficit": "Contralateral hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Crus cerebri"
-   },
-   {
-    "deficit": "Contralateral hemisensory loss",
-    "side": "contralateral",
-    "mechanism": "Medial lemniscus and spinothalamic tract"
-   },
-   {
-    "deficit": "Difficulty localizing sound",
-    "side": "bilateral",
-    "mechanism": "Inferior colliculi"
-   }
-  ],
-  "examination": [
-   "Cover test for vertical diplopia; look for head tilt away from the affected eye",
-   "Limb coordination",
-   "Power and sensation of the opposite side",
-   "Hearing and sound localization"
-  ],
-  "syndromes": [
-   "syn-cn4-palsy",
-   "syn-hydrocephalus"
-  ],
-  "pearls": [
-   "The trochlear nerve is the only cranial nerve to cross and to leave the dorsal brainstem: a nuclear lesion gives a contralateral palsy, a nerve lesion an ipsilateral one",
-   "Aqueductal compression at this level produces hydrocephalus of the third and lateral ventricles with a normal fourth ventricle"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    209,
-    212
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    331,
-    333
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    95,
-    96
-   ]
+  "status": "draft",
+  "subsystem": "levels",
+  "level": {
+    "region": "midbrain",
+    "sub": "midbrain-inferior-colliculus"
   }
- ],
- "tags": [
-  "brainstem",
-  "cross-section"
- ],
- "status": "draft",
- "subsystem": "levels",
- "level": {
-  "region": "midbrain",
-  "sub": "midbrain-inferior-colliculus"
- }
 }

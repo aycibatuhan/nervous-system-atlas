@@ -1,180 +1,160 @@
 {
- "kind": "structure",
- "id": "gyrus-supramarginal-posterior",
- "name": "Supramarginal gyrus, posterior division",
- "synonyms": [
-  "posterior inferior parietal lobule"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-supramarginal-posterior-l",
-  "gyrus-supramarginal-posterior-r"
- ],
- "summary": "The posterior supramarginal gyrus lies between the anterior division and the angular gyrus in the inferior parietal lobule, above the posterior end of the superior temporal sulcus. It is multimodal association cortex that integrates the location of the body and of objects around it and, in the dominant hemisphere, links the sounds of words to their spelling and to the movements of writing; in the right hemisphere it contributes to spatial attention and to the perception of one's own body. It is supplied by parietal branches of the middle cerebral artery, is a watershed with the posterior cerebral artery below, and its lesions add agraphia, spatial disorientation and elements of the Gerstmann syndrome to those of the anterior division.",
- "anatomy": {
-  "location": "Posterior part of the inferior parietal lobule between the anterior supramarginal gyrus in front and the angular gyrus behind, above the superior temporal sulcus and below the intraparietal sulcus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Superior parietal lobule and intraparietal cortex",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Posterior superior temporal gyrus",
-    "via": "middle longitudinal fasciculus"
-   },
-   {
-    "from": "Vestibular thalamic relay",
-    "via": "thalamocortical fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-supramarginal-posterior",
+  "name": "Supramarginal gyrus, posterior division",
+  "synonyms": [
+    "posterior inferior parietal lobule"
   ],
-  "efferents": [
-   {
-    "to": "Premotor and prefrontal cortex",
-    "via": "superior longitudinal fasciculus II"
-   },
-   {
-    "to": "Angular gyrus",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Contralateral inferior parietal lobule",
-    "via": "corpus callosum"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-supramarginal-posterior-l",
+    "gyrus-supramarginal-posterior-r"
   ],
-  "pathways": [
-   "pathway-dcml",
-   "pathway-vestibular-vor"
-  ]
- },
- "function": "This cortex represents the position of the limbs and of objects in body-centered coordinates for reaching and grasping, and links auditory word forms with their written form, supporting spelling and writing in the left hemisphere; it is part of the dorsal attention and the sensorimotor integration networks that keep the body schema updated. In the right hemisphere it participates in the sense of ownership of the limbs and in the perception of the contralateral hemispace, and its damage contributes to neglect, asomatognosia and anosognosia. It also receives vestibular input through the parieto-insular vestibular cortex, so lesions can produce a sensation of tilt or of leaving the body.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division",
-   "artery-pca"
+  "summary": "The posterior supramarginal gyrus lies between the anterior division and the angular gyrus in the inferior parietal lobule, above the posterior end of the superior temporal sulcus. It is multimodal association cortex that integrates the location of the body and of objects around it and, in the dominant hemisphere, links the sounds of words to their spelling and to the movements of writing; in the right hemisphere it contributes to spatial attention and to the perception of one's own body. It is supplied by parietal branches of the middle cerebral artery, is a watershed with the posterior cerebral artery below, and its lesions add agraphia, spatial disorientation and elements of the Gerstmann syndrome to those of the anterior division.",
+  "anatomy": {
+    "location": "Posterior part of the inferior parietal lobule between the anterior supramarginal gyrus in front and the angular gyrus behind, above the superior temporal sulcus and below the intraparietal sulcus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Superior parietal lobule and intraparietal cortex",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Posterior superior temporal gyrus",
+        "via": "middle longitudinal fasciculus"
+      },
+      {
+        "from": "Vestibular thalamic relay",
+        "via": "thalamocortical fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Premotor and prefrontal cortex",
+        "via": "superior longitudinal fasciculus II"
+      },
+      {
+        "to": "Angular gyrus",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Contralateral inferior parietal lobule",
+        "via": "corpus callosum"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml",
+      "pathway-vestibular-vor"
+    ]
+  },
+  "function": "This cortex represents the position of the limbs and of objects in body-centered coordinates for reaching and grasping, and links auditory word forms with their written form, supporting spelling and writing in the left hemisphere; it is part of the dorsal attention and the sensorimotor integration networks that keep the body schema updated. In the right hemisphere it participates in the sense of ownership of the limbs and in the perception of the contralateral hemispace, and its damage contributes to neglect, asomatognosia and anosognosia. It also receives vestibular input through the parieto-insular vestibular cortex, so lesions can produce a sensation of tilt or of leaving the body.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-mca-parietal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-supramarginal-posterior-l"
+        },
+        "label": "posterior supramarginal gyrus in front of the angular gyrus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-supramarginal-posterior-r"
+        },
+        "label": "inferior parietal lobule above the superior temporal sulcus"
+      }
+    ],
+    "normalAppearance": "The middle part of the inferior parietal lobule on axial images above the atrium, between the upturned Sylvian fissure and the upturned superior temporal sulcus that marks the angular gyrus.",
+    "pathology": [
+      {
+        "pathology": "Posterior MCA branch infarct",
+        "modality": "MRI",
+        "finding": "Cortical restricted diffusion of the posterior inferior parietal lobule with agraphia and finger agnosia (left) or spatial neglect (right).",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Bilateral inferior parietal and occipital atrophy with agraphia, acalculia and visuospatial disorientation.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Parietal seizures",
+        "modality": "EEG",
+        "finding": "Somatosensory auras of tingling, a feeling of the limb being absent or displaced, or vertigo, with a parietal EEG focus.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Agraphia and spelling errors (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of phonological and orthographic word forms in the dominant inferior parietal lobule"
+      },
+      {
+        "deficit": "Contralateral neglect and asomatognosia (right)",
+        "side": "contralateral",
+        "mechanism": "Loss of the right inferior parietal representation of contralateral space and body"
+      },
+      {
+        "deficit": "Disturbed body schema and vestibular illusions",
+        "side": "contralateral",
+        "mechanism": "Involvement of the parietal vestibular and body-schema cortex"
+      }
+    ],
+    "examination": [
+      "Writing to dictation and spelling aloud",
+      "Line bisection, figure copying and drawing a clock",
+      "Ask about out-of-body sensations, tilt or the feeling that a limb is not theirs"
+    ],
+    "syndromes": [
+      "syn-gerstmann",
+      "syn-hemineglect"
+    ],
+    "pearls": [
+      "Agraphia without aphasia is inferior parietal; test writing separately from speech",
+      "Asomatognosia (denial of one's own arm) is a right posterior parietal sign",
+      "Vertigo with a normal vestibular examination can be a parietal seizure"
+    ]
+  },
+  "pitfalls": [
+    "Anosognosia means the patient will not report the deficit; rely on examination and the family"
   ],
-  "territories": [
-   "territory-mca-parietal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-supramarginal-posterior-l"
+  "citations": [
+    {
+      "ref": "sp-spatial-neglect",
+      "section": "Pathophysiology"
     },
-    "label": "posterior supramarginal gyrus in front of the angular gyrus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-supramarginal-posterior-r"
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "Pathophysiology"
     },
-    "label": "inferior parietal lobule above the superior temporal sulcus"
-   }
+    {
+      "ref": "sp-gerstmann-syndrome",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "The middle part of the inferior parietal lobule on axial images above the atrium, between the upturned Sylvian fissure and the upturned superior temporal sulcus that marks the angular gyrus.",
-  "pathology": [
-   {
-    "pathology": "Posterior MCA branch infarct",
-    "modality": "MRI",
-    "finding": "Cortical restricted diffusion of the posterior inferior parietal lobule with agraphia and finger agnosia (left) or spatial neglect (right).",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Bilateral inferior parietal and occipital atrophy with agraphia, acalculia and visuospatial disorientation.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Parietal seizures",
-    "modality": "EEG",
-    "finding": "Somatosensory auras of tingling, a feeling of the limb being absent or displaced, or vertigo, with a parietal EEG focus.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Agraphia and spelling errors (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of phonological and orthographic word forms in the dominant inferior parietal lobule"
-   },
-   {
-    "deficit": "Contralateral neglect and asomatognosia (right)",
-    "side": "contralateral",
-    "mechanism": "Loss of the right inferior parietal representation of contralateral space and body"
-   },
-   {
-    "deficit": "Disturbed body schema and vestibular illusions",
-    "side": "contralateral",
-    "mechanism": "Involvement of the parietal vestibular and body-schema cortex"
-   }
+  "tags": [
+    "inferior parietal lobule",
+    "body schema",
+    "writing"
   ],
-  "examination": [
-   "Writing to dictation and spelling aloud",
-   "Line bisection, figure copying and drawing a clock",
-   "Ask about out-of-body sensations, tilt or the feeling that a limb is not theirs"
-  ],
-  "syndromes": [
-   "syn-gerstmann",
-   "syn-hemineglect"
-  ],
-  "pearls": [
-   "Agraphia without aphasia is inferior parietal; test writing separately from speech",
-   "Asomatognosia (denial of one's own arm) is a right posterior parietal sign",
-   "Vertigo with a normal vestibular examination can be a parietal seizure"
-  ]
- },
- "pitfalls": [
-  "Anosognosia means the patient will not report the deficit; rely on examination and the family"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "inferior parietal lobule",
-  "body schema",
-  "writing"
- ],
- "status": "draft",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "status": "draft",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

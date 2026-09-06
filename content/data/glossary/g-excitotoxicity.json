@@ -1,19 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-excitotoxicity",
- "term": "Excitotoxicity",
- "definition": "Neuronal death caused by excessive glutamate acting on NMDA receptors, flooding the cell with calcium; the mechanism of neuronal loss in ischemia, status epilepticus, hypoglycemia and trauma.",
- "related": [
-  "g-nmda-receptor"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    55,
-    58
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-excitotoxicity",
+  "term": "Excitotoxicity",
+  "definition": "Neuronal death caused by excessive glutamate acting on NMDA receptors, flooding the cell with calcium; the mechanism of neuronal loss in ischemia, status epilepticus, hypoglycemia and trauma.",
+  "related": [
+    "g-nmda-receptor"
+  ],
+  "citations": [
+    {
+      "ref": "sp-nmda-receptor",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-hypoxic-ischemic-encephalopathy",
+      "section": "Pathophysiology"
+    }
+  ]
 }

@@ -1,112 +1,108 @@
 {
- "kind": "structure",
- "id": "bp3d-brain",
- "name": "Brain (BodyParts3D)",
- "synonyms": [
-  "BodyParts3D brain surface",
-  "context brain"
- ],
- "system": "envelope",
- "meshIds": [
-  "bp3d-brain",
-  "bp3d-cerebrum-l",
-  "bp3d-cerebrum-r"
- ],
- "summary": "This mesh is the whole brain from the BodyParts3D anatomical model, registered into MNI space with the same transform as the other whole-body structures, and it is provided as a translucent context envelope with the left and right cerebrum meshes from the same source. It shows the gyral surface of a single individual as modeled by anatomists rather than the population-average envelope derived from the MRI template, so its sulci are deeper and its gyri better defined, and it is useful as a visual reference when the atlas-derived cortical parcels are hidden. The registration residual at deep landmarks is a few millimeters, so it should not be used for measurement.",
- "anatomy": {
-  "location": "The whole brain including the cerebral hemispheres, the cerebellum and the brainstem down to the medulla, in MNI space after a landmark affine registration from the BodyParts3D coordinate frame.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "The mesh serves as a visual context for the deep structures: switched on with low opacity it shows where a nucleus or a tract lies relative to the cortical surface and the sulci, and it gives the sense of the gyral pattern that the smooth atlas parcels lack. It also documents the registration quality of the whole-body source: the difference between this surface and the MRI-derived envelope shows the residual misalignment of the BodyParts3D frame, which is largest at the poles and the ventral surface. It has no clinical function of its own beyond orientation.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-aca",
-   "artery-pca"
+  "kind": "structure",
+  "id": "bp3d-brain",
+  "name": "Brain (BodyParts3D)",
+  "synonyms": [
+    "BodyParts3D brain surface",
+    "context brain"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "bp3d-brain"
-    },
-    "label": "BodyParts3D whole brain in MNI space"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "bp3d-brain"
-    },
-    "label": "registered brain surface over the MRI template"
-   }
+  "system": "envelope",
+  "meshIds": [
+    "bp3d-brain",
+    "bp3d-cerebrum-l",
+    "bp3d-cerebrum-r"
   ],
-  "normalAppearance": "A single-subject polygonal brain surface with modeled sulci and gyri; it overlays the template brain with a few millimeters of mismatch at the surface, most visible at the frontal and occipital poles.",
-  "pathology": [
-   {
-    "pathology": "Registration mismatch (quality control)",
-    "modality": "MRI",
-    "finding": "Where the BodyParts3D surface departs from the template brain surface on the slices, the local registration error of the whole-body sources can be read off directly.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "No pathology",
-    "modality": "MRI",
-    "finding": "This is a reference mesh; it does not represent a patient and shows no disease.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "No deficit: reference mesh",
-    "side": "n/a",
-    "mechanism": "Context envelope without a lesion syndrome"
-   }
-  ],
-  "examination": [
-   "Use with low opacity to place deep structures against the gyral surface",
-   "Compare with the template envelope to judge registration quality"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "The BodyParts3D brain is one person's brain; the envelope is everyone's average",
-   "Its sulci are deeper than the template's because it was modeled, not averaged",
-   "Keep it translucent: it is scenery, not anatomy to measure"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    249,
-    262
-   ]
+  "summary": "This mesh is the whole brain from the BodyParts3D anatomical model, registered into MNI space with the same transform as the other whole-body structures, and it is provided as a translucent context envelope with the left and right cerebrum meshes from the same source. It shows the gyral surface of a single individual as modeled by anatomists rather than the population-average envelope derived from the MRI template, so its sulci are deeper and its gyri better defined, and it is useful as a visual reference when the atlas-derived cortical parcels are hidden. The registration residual at deep landmarks is a few millimeters, so it should not be used for measurement.",
+  "anatomy": {
+    "location": "The whole brain including the cerebral hemispheres, the cerebellum and the brainstem down to the medulla, in MNI space after a landmark affine registration from the BodyParts3D coordinate frame.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    25,
-    32
-   ]
-  }
- ],
- "tags": [
-  "reference",
-  "envelope",
-  "BodyParts3D"
- ],
- "status": "draft",
- "subsystem": "context"
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "The mesh serves as a visual context for the deep structures: switched on with low opacity it shows where a nucleus or a tract lies relative to the cortical surface and the sulci, and it gives the sense of the gyral pattern that the smooth atlas parcels lack. It also documents the registration quality of the whole-body source: the difference between this surface and the MRI-derived envelope shows the residual misalignment of the BodyParts3D frame, which is largest at the poles and the ventral surface. It has no clinical function of its own beyond orientation.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "bp3d-brain"
+        },
+        "label": "BodyParts3D whole brain in MNI space"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "bp3d-brain"
+        },
+        "label": "registered brain surface over the MRI template"
+      }
+    ],
+    "normalAppearance": "A single-subject polygonal brain surface with modeled sulci and gyri; it overlays the template brain with a few millimeters of mismatch at the surface, most visible at the frontal and occipital poles.",
+    "pathology": [
+      {
+        "pathology": "Registration mismatch (quality control)",
+        "modality": "MRI",
+        "finding": "Where the BodyParts3D surface departs from the template brain surface on the slices, the local registration error of the whole-body sources can be read off directly.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "No pathology",
+        "modality": "MRI",
+        "finding": "This is a reference mesh; it does not represent a patient and shows no disease.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "No deficit: reference mesh",
+        "side": "n/a",
+        "mechanism": "Context envelope without a lesion syndrome"
+      }
+    ],
+    "examination": [
+      "Use with low opacity to place deep structures against the gyral surface",
+      "Compare with the template envelope to judge registration quality"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "The BodyParts3D brain is one person's brain; the envelope is everyone's average",
+      "Its sulci are deeper than the template's because it was modeled, not averaged",
+      "Keep it translucent: it is scenery, not anatomy to measure"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-brain",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-brain-arteries",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "reference",
+    "envelope",
+    "BodyParts3D"
+  ],
+  "status": "draft",
+  "subsystem": "context"
 }

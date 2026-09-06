@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-neglect",
- "term": "Hemispatial neglect",
- "definition": "Failure to attend to or respond to stimuli on one side of space, usually the left after a right parietal lesion, with extinction on double simultaneous stimulation and often anosognosia. It is a disorder of attention, not of sensation.",
- "related": [
-  "g-agnosia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    53
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-neglect",
+  "term": "Hemispatial neglect",
+  "definition": "Failure to attend to or respond to stimuli on one side of space, usually the left after a right parietal lesion, with extinction on double simultaneous stimulation and often anosognosia. It is a disorder of attention, not of sensation.",
+  "related": [
+    "g-agnosia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spatial-neglect",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-anosognosia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
+    }
+  ]
 }

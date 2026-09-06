@@ -85,3 +85,13 @@ test('topic route spotlights its meshes and selecting a structure returns to the
   await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText(/Putamen/i, { timeout: 20_000 });
   await expect.poll(() => page.evaluate(() => location.hash)).toMatch(/#\/structure\/putamen/);
 });
+
+test('the sources tab lists open-access citations that link to free full text', async ({ page }) => {
+  await boot(page, '#/structure/putamen');
+  await page.locator('#right .tabs button', { hasText: 'Sources' }).click();
+  const link = page.locator('#right .section .cite a').first();
+  await expect(link).toBeVisible({ timeout: 20_000 });
+  await expect(link).toHaveAttribute('target', '_blank');
+  await expect(link).toHaveAttribute('href', /^https:\/\/(www\.ncbi\.nlm\.nih\.gov\/books\/NBK|pmc\.ncbi\.nlm\.nih\.gov\/articles\/PMC)/);
+  await expect(page.locator('#right .section')).not.toContainText(/Snell|Berkowitz/i);
+});

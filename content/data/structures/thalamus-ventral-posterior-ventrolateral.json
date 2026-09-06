@@ -1,180 +1,160 @@
 {
- "kind": "structure",
- "id": "thalamus-ventral-posterior-ventrolateral",
- "name": "Ventral posterior / ventrolateral group (VPL/VPM)",
- "synonyms": [
-  "VPL/VPM",
-  "ventral posterior complex"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "thalamus-ventral-posterior-ventrolateral-l",
-  "thalamus-ventral-posterior-ventrolateral-r"
- ],
- "summary": "This MIAL thalamic atlas group covers the ventral posterolateral and ventral posteromedial nuclei together with the posterior part of the ventrolateral nucleus, the somatosensory and cerebellar relay region at the ventral posterolateral corner of the thalamus, supplied by the thalamogeniculate arteries. It transmits touch, proprioception, pain and temperature from the contralateral body and face to the postcentral gyrus and cerebellar timing signals to the motor cortex, so its infarction produces the classic thalamic sensory stroke with ataxia (the sensory-ataxic and hypesthetic-ataxic hemiparesis lacunes) and its stimulation is used for tremor. Thalamic hemorrhage most often begins here.",
- "anatomy": {
-  "location": "Ventral posterior part of the thalamus lateral to the internal medullary lamina and the centromedian nucleus, behind the anterior ventrolateral nucleus and in front of the pulvinar, against the posterior limb of the internal capsule laterally and above the medial geniculate body and the subthalamus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Medial lemniscus and spinothalamic tract",
-    "via": "ascending sensory pathways"
-   },
-   {
-    "from": "Trigeminothalamic tracts",
-    "via": "trigeminal lemniscus"
-   },
-   {
-    "from": "Contralateral dentate nucleus",
-    "via": "dentatorubrothalamic tract"
-   }
+  "kind": "structure",
+  "id": "thalamus-ventral-posterior-ventrolateral",
+  "name": "Ventral posterior / ventrolateral group (VPL/VPM)",
+  "synonyms": [
+    "VPL/VPM",
+    "ventral posterior complex"
   ],
-  "efferents": [
-   {
-    "to": "Postcentral gyrus",
-    "via": "superior thalamic radiation"
-   },
-   {
-    "to": "Primary motor cortex",
-    "via": "superior thalamic radiation"
-   },
-   {
-    "to": "Reticular nucleus (collaterals)",
-    "via": "thalamocortical fibers"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "thalamus-ventral-posterior-ventrolateral-l",
+    "thalamus-ventral-posterior-ventrolateral-r"
   ],
-  "pathways": [
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-trigeminothalamic",
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Lemniscal, spinothalamic and trigeminothalamic axons terminate in a somatotopic map and their thalamocortical neurons relay to the somatosensory cortex under the control of the reticular nucleus and the cortex itself, so that sensory transmission is gated by attention and sleep; the adjacent cerebellar-receiving territory relays dentate and interposed output to the motor cortex. Because these functions are packed together in a few millimeters, a single small infarct here produces contralateral sensory loss with ataxia and, when the internal capsule is involved, weakness. Partial lesions that spare the spinothalamic input to the medial thalamus set up the central pain syndrome.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pca",
-   "artery-pcom",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "thalamus-ventral-posterior-ventrolateral-l"
+  "summary": "This MIAL thalamic atlas group covers the ventral posterolateral and ventral posteromedial nuclei together with the posterior part of the ventrolateral nucleus, the somatosensory and cerebellar relay region at the ventral posterolateral corner of the thalamus, supplied by the thalamogeniculate arteries. It transmits touch, proprioception, pain and temperature from the contralateral body and face to the postcentral gyrus and cerebellar timing signals to the motor cortex, so its infarction produces the classic thalamic sensory stroke with ataxia (the sensory-ataxic and hypesthetic-ataxic hemiparesis lacunes) and its stimulation is used for tremor. Thalamic hemorrhage most often begins here.",
+  "anatomy": {
+    "location": "Ventral posterior part of the thalamus lateral to the internal medullary lamina and the centromedian nucleus, behind the anterior ventrolateral nucleus and in front of the pulvinar, against the posterior limb of the internal capsule laterally and above the medial geniculate body and the subthalamus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Medial lemniscus and spinothalamic tract",
+        "via": "ascending sensory pathways"
+      },
+      {
+        "from": "Trigeminothalamic tracts",
+        "via": "trigeminal lemniscus"
+      },
+      {
+        "from": "Contralateral dentate nucleus",
+        "via": "dentatorubrothalamic tract"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Postcentral gyrus",
+        "via": "superior thalamic radiation"
+      },
+      {
+        "to": "Primary motor cortex",
+        "via": "superior thalamic radiation"
+      },
+      {
+        "to": "Reticular nucleus (collaterals)",
+        "via": "thalamocortical fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-trigeminothalamic",
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "Lemniscal, spinothalamic and trigeminothalamic axons terminate in a somatotopic map and their thalamocortical neurons relay to the somatosensory cortex under the control of the reticular nucleus and the cortex itself, so that sensory transmission is gated by attention and sleep; the adjacent cerebellar-receiving territory relays dentate and interposed output to the motor cortex. Because these functions are packed together in a few millimeters, a single small infarct here produces contralateral sensory loss with ataxia and, when the internal capsule is involved, weakness. Partial lesions that spare the spinothalamic input to the medial thalamus set up the central pain syndrome.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pca",
+      "artery-pcom",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "thalamus-ventral-posterior-ventrolateral-l"
+        },
+        "label": "ventral posterior nuclei against the posterior limb of the internal capsule"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "thalamus-ventral-posterior-ventrolateral-r"
+        },
+        "label": "ventral tier of the thalamus above the subthalamus"
+      }
+    ],
+    "normalAppearance": "The ventrolateral corner of the thalamus beside the posterior limb of the internal capsule on axial images through the level of the posterior commissure; the thalamogeniculate arteries reach it from the ambient cistern.",
+    "pathology": [
+      {
+        "pathology": "Thalamogeniculate infarct (sensory or sensory-ataxic lacune)",
+        "modality": "MRI",
+        "finding": "Small restricted diffusion in the ventral posterolateral thalamus with contralateral hemisensory loss and ataxia, sometimes with mild weakness.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Thalamic hemorrhage",
+        "modality": "CT",
+        "finding": "Posterolateral thalamic hematoma with hemisensory loss, hemiparesis and, when medial, drowsiness and eye movement signs.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Ventral intermediate nucleus stimulation",
+        "modality": "MRI",
+        "finding": "Electrode along the ventrolateral-ventral posterior border; too posterior a placement causes paresthesias from ventral posterior stimulation.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemisensory loss of all modalities",
+        "side": "contralateral",
+        "mechanism": "Loss of the ventral posterior relay"
+      },
+      {
+        "deficit": "Contralateral ataxia and tremor",
+        "side": "contralateral",
+        "mechanism": "Involvement of the cerebellar-receiving ventrolateral territory"
+      },
+      {
+        "deficit": "Paresthesias with stimulation",
+        "side": "contralateral",
+        "mechanism": "Activation of the ventral posterior nuclei"
+      }
+    ],
+    "examination": [
+      "Face, arm and leg sensation to pin, touch, vibration and position",
+      "Coordination testing to detect the ataxic component",
+      "Motor examination for capsular involvement"
+    ],
+    "syndromes": [
+      "syn-thalamic-dejerine-roussy",
+      "syn-lacunar-pure-sensory",
+      "syn-lacunar-sensorimotor",
+      "syn-lacunar-ataxic-hemiparesis"
+    ],
+    "pearls": [
+      "Sensory loss plus ataxia in the same limbs is a ventral posterior-ventrolateral thalamic lacune",
+      "Paresthesias during tremor stimulation mean the electrode is too far back, in the sensory nuclei",
+      "Thalamic hemorrhage starts posterolaterally because the thalamogeniculate perforators bleed there"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-medial-lemniscus",
+      "section": "Structure and Function"
     },
-    "label": "ventral posterior nuclei against the posterior limb of the internal capsule"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "thalamus-ventral-posterior-ventrolateral-r"
+    {
+      "ref": "sp-spinothalamic-tract",
+      "section": "Structure and Function"
     },
-    "label": "ventral tier of the thalamus above the subthalamus"
-   }
+    {
+      "ref": "sp-thalamic-pain-syndrome",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "The ventrolateral corner of the thalamus beside the posterior limb of the internal capsule on axial images through the level of the posterior commissure; the thalamogeniculate arteries reach it from the ambient cistern.",
-  "pathology": [
-   {
-    "pathology": "Thalamogeniculate infarct (sensory or sensory-ataxic lacune)",
-    "modality": "MRI",
-    "finding": "Small restricted diffusion in the ventral posterolateral thalamus with contralateral hemisensory loss and ataxia, sometimes with mild weakness.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Thalamic hemorrhage",
-    "modality": "CT",
-    "finding": "Posterolateral thalamic hematoma with hemisensory loss, hemiparesis and, when medial, drowsiness and eye movement signs.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Ventral intermediate nucleus stimulation",
-    "modality": "MRI",
-    "finding": "Electrode along the ventrolateral-ventral posterior border; too posterior a placement causes paresthesias from ventral posterior stimulation.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemisensory loss of all modalities",
-    "side": "contralateral",
-    "mechanism": "Loss of the ventral posterior relay"
-   },
-   {
-    "deficit": "Contralateral ataxia and tremor",
-    "side": "contralateral",
-    "mechanism": "Involvement of the cerebellar-receiving ventrolateral territory"
-   },
-   {
-    "deficit": "Paresthesias with stimulation",
-    "side": "contralateral",
-    "mechanism": "Activation of the ventral posterior nuclei"
-   }
-  ],
-  "examination": [
-   "Face, arm and leg sensation to pin, touch, vibration and position",
-   "Coordination testing to detect the ataxic component",
-   "Motor examination for capsular involvement"
-  ],
-  "syndromes": [
-   "syn-thalamic-dejerine-roussy",
-   "syn-lacunar-pure-sensory",
-   "syn-lacunar-sensorimotor",
-   "syn-lacunar-ataxic-hemiparesis"
-  ],
-  "pearls": [
-   "Sensory loss plus ataxia in the same limbs is a ventral posterior-ventrolateral thalamic lacune",
-   "Paresthesias during tremor stimulation mean the electrode is too far back, in the sensory nuclei",
-   "Thalamic hemorrhage starts posterolaterally because the thalamogeniculate perforators bleed there"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    370
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    143,
-    149
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    38
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "thalamic-nuclei",
- "parent": "thalamus"
+  "tags": [],
+  "status": "draft",
+  "subsystem": "thalamic-nuclei",
+  "parent": "thalamus"
 }

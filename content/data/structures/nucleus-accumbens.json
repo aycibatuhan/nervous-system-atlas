@@ -1,167 +1,155 @@
 {
- "kind": "structure",
- "id": "nucleus-accumbens",
- "name": "Nucleus accumbens",
- "synonyms": [
-  "ventral striatum"
- ],
- "system": "basal-ganglia",
- "meshIds": [
-  "nucleus-accumbens-l",
-  "nucleus-accumbens-r"
- ],
- "summary": "The ventral striatum, where the head of the caudate and the putamen merge beneath the anterior limb of the internal capsule, next to the septal area. It receives dopamine from the ventral tegmental area (mesolimbic pathway) and input from the amygdala, hippocampus and prefrontal cortex, and projects to the ventral pallidum. It encodes reward prediction and motivation, is the substrate of addiction and of apathy, and is a target of deep brain stimulation for obsessive-compulsive disorder and depression.",
- "anatomy": {
-  "location": "Ventromedial striatum at the junction of the caudate head and putamen beneath the anterior limb of the internal capsule, lateral to the septal nuclei and above the olfactory tubercle, at the level of the anterior commissure.",
-  "subdivisions": [
-   {
-    "name": "Core",
-    "note": "motor aspects of motivated behavior; projects to the ventral pallidum"
-   },
-   {
-    "name": "Shell",
-    "note": "limbic, connected with the hypothalamus and extended amygdala; drug reward"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "ventral-tegmental-area",
-    "via": "mesolimbic pathway",
-    "note": "dopamine"
-   },
-   {
-    "from": "amygdala"
-   },
-   {
-    "from": "hippocampus"
-   },
-   {
-    "from": "cortex-prefrontal"
-   }
+  "kind": "structure",
+  "id": "nucleus-accumbens",
+  "name": "Nucleus accumbens",
+  "synonyms": [
+    "ventral striatum"
   ],
-  "efferents": [
-   {
-    "to": "ventral pallidum"
-   },
-   {
-    "to": "hypothalamus"
-   }
+  "system": "basal-ganglia",
+  "meshIds": [
+    "nucleus-accumbens-l",
+    "nucleus-accumbens-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Reward processing, motivation and incentive salience, reinforcement learning, integration of limbic drive into action.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "arteries-lenticulostriate",
-   "artery-acom"
-  ],
-  "territories": [
-   "territory-aca",
-   "territory-lenticulostriate"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 10,
-     "y": 10,
-     "z": -8
-    },
-    "label": "ventral striatum below the anterior limb of the internal capsule"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 10,
-     "y": 10,
-     "z": -8
-    },
-    "label": "junction of caudate head and putamen at the level of the anterior commissure"
-   }
-  ],
-  "normalAppearance": "Gray matter bridging the caudate and putamen ventrally on coronal T1 at the level of the anterior commissure; the MASSP mesh in this atlas outlines it. Rarely abnormal on routine imaging.",
-  "pathology": [
-   {
-    "pathology": "Ventral striatal infarct (Heubner's artery)",
-    "modality": "MRI",
-    "finding": "Restriction of the caudate head and ventral striatum; abulia and apathy.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Deep brain stimulation for OCD",
-    "modality": "CT",
-    "finding": "Electrode in the ventral striatum/anterior limb.",
-    "sequence": "CT non-contrast"
-   }
-  ],
-  "sequenceOfChoice": "DWI; coronal T1"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apathy, anhedonia, loss of motivation",
-    "side": "bilateral",
-    "mechanism": "Loss of reward signaling"
-   },
-   {
-    "deficit": "Addiction and compulsive behaviors (dysfunction rather than lesion)",
-    "side": "n/a",
-    "mechanism": "Sensitized mesolimbic dopamine"
-   },
-   {
-    "deficit": "Improvement of obsessive-compulsive symptoms with stimulation",
-    "side": "n/a",
-    "mechanism": "Modulation of the cortico-striatal loop"
-   }
-  ],
-  "examination": [
-   "Motivation and interest on history from patient and family",
-   "Screen for substance use and compulsive behaviors",
-   "Frontal executive tasks"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Apathy after a caudate or ventral striatal stroke is a lesion, not depression; it responds poorly to antidepressants and better to dopaminergic drugs",
-   "Dopamine agonists can produce compulsive gambling through this circuit"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    311,
-    311
-   ]
+  "summary": "The ventral striatum, where the head of the caudate and the putamen merge beneath the anterior limb of the internal capsule, next to the septal area. It receives dopamine from the ventral tegmental area (mesolimbic pathway) and input from the amygdala, hippocampus and prefrontal cortex, and projects to the ventral pallidum. It encodes reward prediction and motivation, is the substrate of addiction and of apathy, and is a target of deep brain stimulation for obsessive-compulsive disorder and depression.",
+  "anatomy": {
+    "location": "Ventromedial striatum at the junction of the caudate head and putamen beneath the anterior limb of the internal capsule, lateral to the septal nuclei and above the olfactory tubercle, at the level of the anterior commissure.",
+    "subdivisions": [
+      {
+        "name": "Core",
+        "note": "motor aspects of motivated behavior; projects to the ventral pallidum"
+      },
+      {
+        "name": "Shell",
+        "note": "limbic, connected with the hypothalamus and extended amygdala; drug reward"
+      }
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    305,
-    306
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "ventral-tegmental-area",
+        "via": "mesolimbic pathway",
+        "note": "dopamine"
+      },
+      {
+        "from": "amygdala"
+      },
+      {
+        "from": "hippocampus"
+      },
+      {
+        "from": "cortex-prefrontal"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "ventral pallidum"
+      },
+      {
+        "to": "hypothalamus"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    56
-   ]
-  }
- ],
- "tags": [
-  "basal-ganglia"
- ],
- "status": "draft",
- "latin": "Nucleus accumbens"
+  "function": "Reward processing, motivation and incentive salience, reinforcement learning, integration of limbic drive into action.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "arteries-lenticulostriate",
+      "artery-acom"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-lenticulostriate"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 10,
+          "y": 10,
+          "z": -8
+        },
+        "label": "ventral striatum below the anterior limb of the internal capsule"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 10,
+          "y": 10,
+          "z": -8
+        },
+        "label": "junction of caudate head and putamen at the level of the anterior commissure"
+      }
+    ],
+    "normalAppearance": "Gray matter bridging the caudate and putamen ventrally on coronal T1 at the level of the anterior commissure; the MASSP mesh in this atlas outlines it. Rarely abnormal on routine imaging.",
+    "pathology": [
+      {
+        "pathology": "Ventral striatal infarct (Heubner's artery)",
+        "modality": "MRI",
+        "finding": "Restriction of the caudate head and ventral striatum; abulia and apathy.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Deep brain stimulation for OCD",
+        "modality": "CT",
+        "finding": "Electrode in the ventral striatum/anterior limb.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "DWI; coronal T1"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apathy, anhedonia, loss of motivation",
+        "side": "bilateral",
+        "mechanism": "Loss of reward signaling"
+      },
+      {
+        "deficit": "Addiction and compulsive behaviors (dysfunction rather than lesion)",
+        "side": "n/a",
+        "mechanism": "Sensitized mesolimbic dopamine"
+      },
+      {
+        "deficit": "Improvement of obsessive-compulsive symptoms with stimulation",
+        "side": "n/a",
+        "mechanism": "Modulation of the cortico-striatal loop"
+      }
+    ],
+    "examination": [
+      "Motivation and interest on history from patient and family",
+      "Screen for substance use and compulsive behaviors",
+      "Frontal executive tasks"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Apathy after a caudate or ventral striatal stroke is a lesion, not depression; it responds poorly to antidepressants and better to dopaminergic drugs",
+      "Dopamine agonists can produce compulsive gambling through this circuit"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-neurobiology-of-addiction",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-deep-brain-stimulation",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "basal-ganglia"
+  ],
+  "status": "draft",
+  "latin": "Nucleus accumbens"
 }

@@ -1,181 +1,160 @@
 {
- "kind": "structure",
- "id": "cortex-lateral-occipital-inferior",
- "name": "Lateral occipital cortex, inferior division",
- "synonyms": [
-  "lateral occipital complex (inferior)",
-  "areas 18/19 (inferior lateral)"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cortex-lateral-occipital-inferior-l",
-  "cortex-lateral-occipital-inferior-r"
- ],
- "summary": "The inferior lateral occipital cortex is the lower part of the outer surface of the occipital lobe, below the lateral occipital sulcus and above the preoccipital notch, continuous in front with the temporo-occipital cortex. It contains the shape- and object-selective cortex of the lateral occipital complex and part of the extrastriate body area, the beginning of the ventral visual stream that identifies what is seen. It is supplied by the posterior cerebral artery with a middle cerebral artery contribution laterally, and its lesions cause apperceptive agnosia and contralateral upper quadrant defects; the region is a frequent site of visual auras and of the hallucinations of Charles Bonnet syndrome.",
- "anatomy": {
-  "location": "Lower lateral occipital surface between the lateral occipital sulcus above and the inferior margin of the hemisphere at the preoccipital notch, behind the inferior temporal gyrus and lateral to the occipital fusiform gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Primary visual cortex and lingual gyrus",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Contralateral occipital cortex",
-    "via": "splenium"
-   }
+  "kind": "structure",
+  "id": "cortex-lateral-occipital-inferior",
+  "name": "Lateral occipital cortex, inferior division",
+  "synonyms": [
+    "lateral occipital complex (inferior)",
+    "areas 18/19 (inferior lateral)"
   ],
-  "efferents": [
-   {
-    "to": "Occipital and temporal fusiform cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "to": "Inferior temporal gyrus",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Posterior parietal cortex",
-    "via": "vertical occipital fasciculus"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cortex-lateral-occipital-inferior-l",
+    "cortex-lateral-occipital-inferior-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Neurons of the lateral occipital complex respond to the shape of objects regardless of the cues that define them, whether luminance edges, texture or motion, and represent bodies and body parts in an adjacent patch; this shape information feeds the fusiform and inferior temporal recognition areas. The region is retinotopic for the contralateral upper field and it contributes to the perception of depth and of figure from ground. Damage produces apperceptive agnosia with inability to copy or match shapes despite intact acuity, and release phenomena produce formed hallucinations of objects and figures when the input is lost.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The inferior lateral occipital cortex is the lower part of the outer surface of the occipital lobe, below the lateral occipital sulcus and above the preoccipital notch, continuous in front with the temporo-occipital cortex. It contains the shape- and object-selective cortex of the lateral occipital complex and part of the extrastriate body area, the beginning of the ventral visual stream that identifies what is seen. It is supplied by the posterior cerebral artery with a middle cerebral artery contribution laterally, and its lesions cause apperceptive agnosia and contralateral upper quadrant defects; the region is a frequent site of visual auras and of the hallucinations of Charles Bonnet syndrome.",
+  "anatomy": {
+    "location": "Lower lateral occipital surface between the lateral occipital sulcus above and the inferior margin of the hemisphere at the preoccipital notch, behind the inferior temporal gyrus and lateral to the occipital fusiform gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Primary visual cortex and lingual gyrus",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Contralateral occipital cortex",
+        "via": "splenium"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Occipital and temporal fusiform cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "to": "Inferior temporal gyrus",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Posterior parietal cortex",
+        "via": "vertical occipital fasciculus"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "Neurons of the lateral occipital complex respond to the shape of objects regardless of the cues that define them, whether luminance edges, texture or motion, and represent bodies and body parts in an adjacent patch; this shape information feeds the fusiform and inferior temporal recognition areas. The region is retinotopic for the contralateral upper field and it contributes to the perception of depth and of figure from ground. Damage produces apperceptive agnosia with inability to copy or match shapes despite intact acuity, and release phenomena produce formed hallucinations of objects and figures when the input is lost.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca-occipital",
+      "territory-mca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cortex-lateral-occipital-inferior-l"
+        },
+        "label": "inferior lateral occipital cortex above the preoccipital notch"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cortex-lateral-occipital-inferior-r"
+        },
+        "label": "lower lateral occipital convexity"
+      }
+    ],
+    "normalAppearance": "Lateral occipital cortex below the lateral occipital sulcus on axial images through the level of the atria and below, behind the temporo-occipital junction.",
+    "pathology": [
+      {
+        "pathology": "PCA branch infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the inferior lateral occipital cortex with a contralateral upper quadrantanopia and impaired shape perception.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Charles Bonnet syndrome",
+        "modality": "MRI",
+        "finding": "Formed visual hallucinations of people or patterns in a patient with visual loss from any cause; imaging excludes a structural occipital lesion.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Occipital cortical dysplasia or tumor",
+        "modality": "MRI",
+        "finding": "Focal FLAIR-bright cortex at the lateral occipital surface in a patient with visual seizures.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apperceptive visual agnosia",
+        "side": "contralateral",
+        "mechanism": "Loss of shape integration in the lateral occipital complex"
+      },
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Involvement of the ventral extrastriate cortex or the lower optic radiation"
+      },
+      {
+        "deficit": "Formed visual hallucinations",
+        "side": "n/a",
+        "mechanism": "Release or ictal activation of object-selective visual cortex"
+      }
+    ],
+    "examination": [
+      "Copy and match simple shapes and letters",
+      "Quadrantic visual fields",
+      "Ask about hallucinations of people, animals or patterns and whether the patient knows they are unreal"
+    ],
+    "syndromes": [
+      "syn-homonymous-hemianopia",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Charles Bonnet hallucinations are unreal and known to be unreal by the patient; they are a sign of visual loss, not psychosis",
+      "An apperceptive agnosic cannot copy a drawing; an associative agnosic copies it slavishly and still cannot recognize it",
+      "The lower lateral occipital cortex represents the upper visual field"
+    ]
+  },
+  "pitfalls": [
+    "Hallucinations in a patient with poor vision should prompt an eye examination and an occipital MRI before antipsychotics"
   ],
-  "territories": [
-   "territory-pca-occipital",
-   "territory-mca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cortex-lateral-occipital-inferior-l"
+  "citations": [
+    {
+      "ref": "sp-agnosia",
+      "section": "Introduction"
     },
-    "label": "inferior lateral occipital cortex above the preoccipital notch"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cortex-lateral-occipital-inferior-r"
+    {
+      "ref": "sp-prosopagnosia"
     },
-    "label": "lower lateral occipital convexity"
-   }
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Lateral occipital cortex below the lateral occipital sulcus on axial images through the level of the atria and below, behind the temporo-occipital junction.",
-  "pathology": [
-   {
-    "pathology": "PCA branch infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the inferior lateral occipital cortex with a contralateral upper quadrantanopia and impaired shape perception.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Charles Bonnet syndrome",
-    "modality": "MRI",
-    "finding": "Formed visual hallucinations of people or patterns in a patient with visual loss from any cause; imaging excludes a structural occipital lesion.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Occipital cortical dysplasia or tumor",
-    "modality": "MRI",
-    "finding": "Focal FLAIR-bright cortex at the lateral occipital surface in a patient with visual seizures.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apperceptive visual agnosia",
-    "side": "contralateral",
-    "mechanism": "Loss of shape integration in the lateral occipital complex"
-   },
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Involvement of the ventral extrastriate cortex or the lower optic radiation"
-   },
-   {
-    "deficit": "Formed visual hallucinations",
-    "side": "n/a",
-    "mechanism": "Release or ictal activation of object-selective visual cortex"
-   }
+  "tags": [
+    "ventral stream",
+    "shape",
+    "upper quadrant"
   ],
-  "examination": [
-   "Copy and match simple shapes and letters",
-   "Quadrantic visual fields",
-   "Ask about hallucinations of people, animals or patterns and whether the patient knows they are unreal"
-  ],
-  "syndromes": [
-   "syn-homonymous-hemianopia",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Charles Bonnet hallucinations are unreal and known to be unreal by the patient; they are a sign of visual loss, not psychosis",
-   "An apperceptive agnosic cannot copy a drawing; an associative agnosic copies it slavishly and still cannot recognize it",
-   "The lower lateral occipital cortex represents the upper visual field"
-  ]
- },
- "pitfalls": [
-  "Hallucinations in a patient with poor vision should prompt an eye examination and an occipital MRI before antipsychotics"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "ventral stream",
-  "shape",
-  "upper quadrant"
- ],
- "status": "draft",
- "subsystem": "lobe-occipital",
- "parent": "lobe-occipital"
+  "status": "draft",
+  "subsystem": "lobe-occipital",
+  "parent": "lobe-occipital"
 }

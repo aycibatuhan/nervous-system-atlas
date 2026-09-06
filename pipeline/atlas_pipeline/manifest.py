@@ -23,8 +23,14 @@ def palette() -> dict[str, dict]:
             put(spec.id, spec.colour, spec.opacity, spec.structure_id)
             if spec.side == "bilateral":
                 put(spec.id + "-l", spec.colour, spec.opacity); put(spec.id + "-r", spec.colour, spec.opacity)
-    for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA):
-        put(spec.id, spec.colour, spec.opacity)
+    for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA, *catalog.venat_entries().values()):
+        put(spec.id, spec.colour, spec.opacity, spec.structure_id)
+    try:
+        from .brainstem_nav import palette_specs
+        for spec in palette_specs().values():
+            put(spec.id, spec.colour, spec.opacity, spec.structure_id)
+    except Exception:  # noqa: BLE001 - the Brainstem Navigator mapping is optional
+        pass
     for e in yaml.safe_load((CONFIG / "bp3d_selection.yaml").read_text())["meshes"]:
         put(e["id"], e.get("colour") or catalog.jitter(catalog.SYSTEM_COLOUR[e["system"]], e.get("structureId") or e["id"]), e.get("opacity", 1.0))
     for e in yaml.safe_load((CONFIG / "zanatomy_selection.yaml").read_text())["entries"]:
@@ -58,6 +64,7 @@ def main(argv=None) -> None:
             "colour": look["colour"], "opacity": look["opacity"], "visible": m["visible"], "bbox": m["bbox"], "centroid": m["centroid"],
             "labels": by_mesh.get(m["id"], {}), "ontology": {k: v for k, v in (("atlasLabels", m.get("atlasLabels")),) if v},
             **({"lod": m["lod"]} if m.get("lod") else {}),
+            **({"derived": m["derived"]} if m.get("derived") else {}),
         })
     manifest = {
         "schema": 1, "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "space": "MNI152NLin2009cAsym",
@@ -65,7 +72,7 @@ def main(argv=None) -> None:
         "volumes": {**volume["contrasts"], **{k: {**v, "lut": "volumes/labels.json"} for k, v in labels["volumes"].items()}},
         "transforms": transforms,
         "systems": [{"id": s[0], "name": s[1], "colour": s[2], "defaultVisible": s[3]} for s in catalog.SYSTEMS],
-        "licenses": {k: {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""), "nc": bool(v.get("nc", False)),
+        "licenses": {k: {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""), "nc": bool(v.get("nc", False)), "noRedistribution": bool(v.get("no_redistribution", False)),
                          "text": f"licenses/{k}.txt"} for k, v in cfg["licenses"].items()},
         "sources": {s["id"]: {"license": s["license"], "citation": s["citation"],
                               "files": {f: lock.get(f"{s['id']}/{f}", {}).get("sha256") for f in [d.get("dest") or d["url"].rsplit("/", 1)[-1] for d in s["files"]]}}

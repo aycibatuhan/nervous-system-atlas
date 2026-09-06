@@ -1,65 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-32",
- "type": "localize",
- "vignette": "A 70-year-old man is brought by his wife because he no longer recognizes her or their children by their faces, though he knows them at once by voice. He reads normally, names objects and has a left upper quadrant field defect.",
- "stem": "Where is the lesion?",
- "options": [
-  {
-   "key": "A",
-   "text": "Right posterior fusiform gyrus"
-  },
-  {
-   "key": "B",
-   "text": "Left posterior fusiform gyrus"
-  },
-  {
-   "key": "C",
-   "text": "Right amygdala"
-  },
-  {
-   "key": "D",
-   "text": "Left angular gyrus"
-  },
-  {
-   "key": "E",
-   "text": "Bilateral occipital poles"
-  }
- ],
- "answer": "A",
- "explanation": "Prosopagnosia with preserved reading and object naming points to the right fusiform face area; the left upper quadrant defect places the lesion in the right occipito-temporal region where the lower calcarine bank and the optic radiation lie nearby. A left fusiform lesion would impair reading (pure alexia) rather than faces.",
- "targets": {
-  "structureIds": [
-   "cortex-temporal-fusiform-posterior",
-   "gyrus-lingual"
+  "kind": "quiz",
+  "id": "qz-32",
+  "type": "localize",
+  "vignette": "A 70-year-old man is brought by his wife because he no longer recognizes her or their children by their faces, though he knows them at once by voice. He reads normally, names objects and has a left upper quadrant field defect.",
+  "stem": "Where is the lesion?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Right posterior fusiform gyrus"
+    },
+    {
+      "key": "B",
+      "text": "Left posterior fusiform gyrus"
+    },
+    {
+      "key": "C",
+      "text": "Right amygdala"
+    },
+    {
+      "key": "D",
+      "text": "Left angular gyrus"
+    },
+    {
+      "key": "E",
+      "text": "Bilateral occipital poles"
+    }
   ],
-  "syndromeIds": [
-   "syn-pca-infarct"
-  ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cortex-temporal-fusiform-posterior-r",
-  "gyrus-lingual-r"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
+  "answer": "A",
+  "explanation": "Prosopagnosia with preserved reading and object naming points to the right fusiform face area; the left upper quadrant defect places the lesion in the right occipito-temporal region where the lower calcarine bank and the optic radiation lie nearby. A left fusiform lesion would impair reading (pure alexia) rather than faces.",
+  "targets": {
+    "structureIds": [
+      "cortex-temporal-fusiform-posterior",
+      "gyrus-lingual"
+    ],
+    "syndromeIds": [
+      "syn-pca-infarct"
+    ],
+    "pathwayIds": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "original": true
+  "highlightOnReveal": [
+    "cortex-temporal-fusiform-posterior-r",
+    "gyrus-lingual-r"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-posterior-cerebral-arteries",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

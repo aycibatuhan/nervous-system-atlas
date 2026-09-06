@@ -1,174 +1,154 @@
 {
- "kind": "structure",
- "id": "thalamus-ventral-anterior",
- "name": "Ventral anterior nucleus",
- "synonyms": [
-  "VA nucleus"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "thalamus-ventral-anterior-l",
-  "thalamus-ventral-anterior-r"
- ],
- "summary": "The ventral anterior nucleus is the most rostral of the ventral tier of thalamic nuclei, lying behind the anterior nuclear group and in front of the ventrolateral nucleus, bounded laterally by the internal capsule and medially by the internal medullary lamina. It is the thalamic relay of the basal ganglia to the premotor and prefrontal cortex: it receives the inhibitory output of the internal pallidum and the substantia nigra pars reticulata and projects to the supplementary motor area, the premotor cortex and the prefrontal cortex, so it is the node through which the basal ganglia select and initiate actions. It is affected in tuberothalamic infarcts and in the thalamic degeneration of some dementias, and it is a target of pallidothalamic surgery.",
- "anatomy": {
-  "location": "Anterior part of the ventral thalamus lateral to the internal medullary lamina, behind the anterior nuclei, in front of the ventrolateral nucleus, above the zona incerta and the fields of Forel through which its pallidal input arrives.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Globus pallidus internus",
-    "via": "thalamic fasciculus (ansa lenticularis and lenticular fasciculus)"
-   },
-   {
-    "from": "Substantia nigra pars reticulata",
-    "via": "nigrothalamic fibers"
-   },
-   {
-    "from": "Premotor and prefrontal cortex",
-    "via": "corticothalamic fibers"
-   }
+  "kind": "structure",
+  "id": "thalamus-ventral-anterior",
+  "name": "Ventral anterior nucleus",
+  "synonyms": [
+    "VA nucleus"
   ],
-  "efferents": [
-   {
-    "to": "Supplementary motor area and premotor cortex",
-    "via": "superior thalamic radiation"
-   },
-   {
-    "to": "Prefrontal cortex and frontal eye field",
-    "via": "anterior thalamic radiation"
-   },
-   {
-    "to": "Striatum",
-    "via": "thalamostriatal fibers"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "thalamus-ventral-anterior-l",
+    "thalamus-ventral-anterior-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Pallidal and nigral fibers reach the ventral anterior nucleus through the thalamic fasciculus and inhibit it tonically; when the basal ganglia release a movement or a thought by pausing this inhibition, the nucleus drives the supplementary motor area and premotor cortex to initiate the action and the prefrontal cortex to shift cognitive set. Its magnocellular part carries the nigral output to the prefrontal and frontal eye fields, participating in saccade initiation and executive function. Reduced pallidothalamic release in parkinsonism starves it and slows initiation; excess release in chorea and ballismus overdrives it. It is the thalamic station of the motor and prefrontal loops of the basal ganglia.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pca",
-   "artery-pcom",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "thalamus-ventral-anterior-l"
+  "summary": "The ventral anterior nucleus is the most rostral of the ventral tier of thalamic nuclei, lying behind the anterior nuclear group and in front of the ventrolateral nucleus, bounded laterally by the internal capsule and medially by the internal medullary lamina. It is the thalamic relay of the basal ganglia to the premotor and prefrontal cortex: it receives the inhibitory output of the internal pallidum and the substantia nigra pars reticulata and projects to the supplementary motor area, the premotor cortex and the prefrontal cortex, so it is the node through which the basal ganglia select and initiate actions. It is affected in tuberothalamic infarcts and in the thalamic degeneration of some dementias, and it is a target of pallidothalamic surgery.",
+  "anatomy": {
+    "location": "Anterior part of the ventral thalamus lateral to the internal medullary lamina, behind the anterior nuclei, in front of the ventrolateral nucleus, above the zona incerta and the fields of Forel through which its pallidal input arrives.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Globus pallidus internus",
+        "via": "thalamic fasciculus (ansa lenticularis and lenticular fasciculus)"
+      },
+      {
+        "from": "Substantia nigra pars reticulata",
+        "via": "nigrothalamic fibers"
+      },
+      {
+        "from": "Premotor and prefrontal cortex",
+        "via": "corticothalamic fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Supplementary motor area and premotor cortex",
+        "via": "superior thalamic radiation"
+      },
+      {
+        "to": "Prefrontal cortex and frontal eye field",
+        "via": "anterior thalamic radiation"
+      },
+      {
+        "to": "Striatum",
+        "via": "thalamostriatal fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Pallidal and nigral fibers reach the ventral anterior nucleus through the thalamic fasciculus and inhibit it tonically; when the basal ganglia release a movement or a thought by pausing this inhibition, the nucleus drives the supplementary motor area and premotor cortex to initiate the action and the prefrontal cortex to shift cognitive set. Its magnocellular part carries the nigral output to the prefrontal and frontal eye fields, participating in saccade initiation and executive function. Reduced pallidothalamic release in parkinsonism starves it and slows initiation; excess release in chorea and ballismus overdrives it. It is the thalamic station of the motor and prefrontal loops of the basal ganglia.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pca",
+      "artery-pcom",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "thalamus-ventral-anterior-l"
+        },
+        "label": "ventral anterior nucleus at the front of the ventral thalamus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "thalamus-ventral-anterior-r"
+        },
+        "label": "anterior ventral thalamus beside the internal capsule"
+      }
+    ],
+    "normalAppearance": "The anterolateral thalamus behind the anterior tubercle on axial images through the foramen of Monro; individual nuclei are inferred from atlases or from tractography-based parcellation.",
+    "pathology": [
+      {
+        "pathology": "Tuberothalamic artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the anterior thalamus involving the ventral anterior and anterior nuclei with apathy, amnesia and impaired initiation.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Parkinson disease (functional)",
+        "modality": "PET",
+        "finding": "Reduced thalamic and cortical activation during movement initiation from excessive pallidothalamic inhibition; structural MRI normal.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Thalamic glioma",
+        "modality": "MRI",
+        "finding": "Expansile T2-bright mass of the thalamus with contralateral motor and cognitive signs and hydrocephalus.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired initiation of movement and speech (akinesia, abulia)",
+        "side": "contralateral",
+        "mechanism": "Loss of the basal ganglia relay to the supplementary motor and premotor cortex"
+      },
+      {
+        "deficit": "Executive dysfunction and impaired set shifting",
+        "side": "bilateral",
+        "mechanism": "Loss of the prefrontal loop relay"
+      },
+      {
+        "deficit": "Contralateral involuntary movements with irritative or disinhibited input",
+        "side": "contralateral",
+        "mechanism": "Overdrive from reduced pallidal inhibition"
+      }
+    ],
+    "examination": [
+      "Spontaneous versus cued movement and speech",
+      "Verbal fluency and set shifting",
+      "Observation for parkinsonism or chorea"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-thalamic-dejerine-roussy"
+    ],
+    "pearls": [
+      "The basal ganglia speak to the cortex through the ventral anterior and ventrolateral nuclei; silence here is akinesia",
+      "Anterior thalamic infarcts look frontal: apathy, poor initiation and memory loss",
+      "Pallidal inhibition of this nucleus is the brake the basal ganglia release to start a movement"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "ventral anterior nucleus at the front of the ventral thalamus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "thalamus-ventral-anterior-r"
+    {
+      "ref": "sp-globus-pallidus",
+      "section": "Structure and Function"
     },
-    "label": "anterior ventral thalamus beside the internal capsule"
-   }
+    {
+      "ref": "sp-substantia-nigra",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The anterolateral thalamus behind the anterior tubercle on axial images through the foramen of Monro; individual nuclei are inferred from atlases or from tractography-based parcellation.",
-  "pathology": [
-   {
-    "pathology": "Tuberothalamic artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the anterior thalamus involving the ventral anterior and anterior nuclei with apathy, amnesia and impaired initiation.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Parkinson disease (functional)",
-    "modality": "PET",
-    "finding": "Reduced thalamic and cortical activation during movement initiation from excessive pallidothalamic inhibition; structural MRI normal.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Thalamic glioma",
-    "modality": "MRI",
-    "finding": "Expansile T2-bright mass of the thalamus with contralateral motor and cognitive signs and hydrocephalus.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired initiation of movement and speech (akinesia, abulia)",
-    "side": "contralateral",
-    "mechanism": "Loss of the basal ganglia relay to the supplementary motor and premotor cortex"
-   },
-   {
-    "deficit": "Executive dysfunction and impaired set shifting",
-    "side": "bilateral",
-    "mechanism": "Loss of the prefrontal loop relay"
-   },
-   {
-    "deficit": "Contralateral involuntary movements with irritative or disinhibited input",
-    "side": "contralateral",
-    "mechanism": "Overdrive from reduced pallidal inhibition"
-   }
-  ],
-  "examination": [
-   "Spontaneous versus cued movement and speech",
-   "Verbal fluency and set shifting",
-   "Observation for parkinsonism or chorea"
-  ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-thalamic-dejerine-roussy"
-  ],
-  "pearls": [
-   "The basal ganglia speak to the cortex through the ventral anterior and ventrolateral nuclei; silence here is akinesia",
-   "Anterior thalamic infarcts look frontal: apathy, poor initiation and memory loss",
-   "Pallidal inhibition of this nucleus is the brake the basal ganglia release to start a movement"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    370
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    313,
-    318
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    246
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "thalamic-nuclei",
- "parent": "thalamus"
+  "tags": [],
+  "status": "draft",
+  "subsystem": "thalamic-nuclei",
+  "parent": "thalamus"
 }

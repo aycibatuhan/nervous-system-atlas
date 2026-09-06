@@ -1,56 +1,64 @@
 {
- "kind": "quiz",
- "id": "qz-12",
- "type": "localize",
- "vignette": "A 62-year-old man has weakness of the right arm and leg that spares the face and loss of vibration and position sense in the same limbs. On protrusion his tongue deviates to the left and the left half of the tongue is wasted.",
- "stem": "Where is the lesion?",
- "options": [
-  {
-   "key": "A",
-   "text": "Left medial medulla"
-  },
-  {
-   "key": "B",
-   "text": "Right medial medulla"
-  },
-  {
-   "key": "C",
-   "text": "Left lateral medulla"
-  },
-  {
-   "key": "D",
-   "text": "Left internal capsule"
-  },
-  {
-   "key": "E",
-   "text": "Left pons"
-  }
- ],
- "answer": "A",
- "explanation": "A lower motor neuron tongue palsy (deviation toward the lesion, wasting) with contralateral limb weakness and proprioceptive loss and a spared face is the medial medullary syndrome on the side of the tongue palsy: the pyramid and medial lemniscus serve the opposite side while the hypoglossal nucleus is ipsilateral.",
- "targets": {
-  "structureIds": [],
-  "syndromeIds": [
-   "syn-dejerine-medial-medullary"
+  "kind": "quiz",
+  "id": "qz-12",
+  "type": "localize",
+  "vignette": "A 62-year-old man has weakness of the right arm and leg that spares the face and loss of vibration and position sense in the same limbs. On protrusion his tongue deviates to the left and the left half of the tongue is wasted.",
+  "stem": "Where is the lesion?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Left medial medulla"
+    },
+    {
+      "key": "B",
+      "text": "Right medial medulla"
+    },
+    {
+      "key": "C",
+      "text": "Left lateral medulla"
+    },
+    {
+      "key": "D",
+      "text": "Left internal capsule"
+    },
+    {
+      "key": "E",
+      "text": "Left pons"
+    }
   ],
-  "pathwayIds": [
-   "pathway-lateral-corticospinal",
-   "pathway-dcml"
-  ]
- },
- "highlightOnReveal": [
-  "brainstem"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    78
-   ]
-  }
- ],
- "original": true
+  "answer": "A",
+  "explanation": "A lower motor neuron tongue palsy (deviation toward the lesion, wasting) with contralateral limb weakness and proprioceptive loss and a spared face is the medial medullary syndrome on the side of the tongue palsy: the pyramid and medial lemniscus serve the opposite side while the hypoglossal nucleus is ipsilateral.",
+  "targets": {
+    "structureIds": [],
+    "syndromeIds": [
+      "syn-dejerine-medial-medullary"
+    ],
+    "pathwayIds": [
+      "pathway-lateral-corticospinal",
+      "pathway-dcml"
+    ]
+  },
+  "highlightOnReveal": [
+    "brainstem"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-medial-medullary-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-dejerine-roussy-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-lateral-medullary-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-lateral-corticospinal-tract",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

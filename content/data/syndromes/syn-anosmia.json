@@ -1,142 +1,138 @@
 {
- "kind": "syndrome",
- "id": "syn-anosmia",
- "name": "Anosmia and olfactory localization",
- "eponyms": [
-  "Foster Kennedy syndrome (with a subfrontal mass)"
- ],
- "category": "traumatic",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cn-01-olfactory",
-   "lobe-frontal",
-   "gyrus-parahippocampal-uncus"
+  "kind": "syndrome",
+  "id": "syn-anosmia",
+  "name": "Anosmia and olfactory localization",
+  "eponyms": [
+    "Foster Kennedy syndrome (with a subfrontal mass)"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": 40,
-   "z": -20
+  "category": "traumatic",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cn-01-olfactory",
+      "lobe-frontal",
+      "gyrus-parahippocampal-uncus"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 10
- },
- "presentation": "A patient who fell and struck the back of the head can no longer smell coffee or gas and finds food tasteless. Another, with a slowly changing personality, has lost the sense of smell in one nostril without noticing, and has a swollen optic disc on the other side. Testing each nostril separately with familiar non-irritant odors reveals the loss; ammonia, which is felt through the trigeminal nerve, is still detected and unmasks a functional complaint.",
- "deficits": [
-  {
-   "modality": "cranial-nerve",
-   "side": "bilateral",
-   "distribution": "both nostrils",
-   "sign": "Anosmia or hyposmia to non-irritant odors with preserved perception of irritants (trigeminal)",
-   "substrate": "cn-01-olfactory"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": 40,
+      "z": -20
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "one nostril",
-   "sign": "Unilateral anosmia from a bulb or tract lesion, usually unnoticed by the patient",
-   "substrate": "cn-01-olfactory"
+  "presentation": "A patient who fell and struck the back of the head can no longer smell coffee or gas and finds food tasteless. Another, with a slowly changing personality, has lost the sense of smell in one nostril without noticing, and has a swollen optic disc on the other side. Testing each nostril separately with familiar non-irritant odors reveals the loss; ammonia, which is felt through the trigeminal nerve, is still detected and unmasks a functional complaint.",
+  "deficits": [
+    {
+      "modality": "cranial-nerve",
+      "side": "bilateral",
+      "distribution": "both nostrils",
+      "sign": "Anosmia or hyposmia to non-irritant odors with preserved perception of irritants (trigeminal)",
+      "substrate": "cn-01-olfactory"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "one nostril",
+      "sign": "Unilateral anosmia from a bulb or tract lesion, usually unnoticed by the patient",
+      "substrate": "cn-01-olfactory"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "taste (apparent)",
+      "sign": "Complaint of loss of taste from loss of flavor; sweet, salt, sour and bitter preserved",
+      "substrate": "pathway-gustatory"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "frontal",
+      "sign": "Personality change and apathy with a subfrontal tumor; Foster Kennedy syndrome with ipsilateral optic atrophy and contralateral papilledema",
+      "substrate": "lobe-frontal"
+    }
+  ],
+  "reasoning": "Olfactory receptor neurons in the roof of the nasal cavity send unmyelinated axons in bundles through the cribriform plate to the olfactory bulb, which lies on the plate under the frontal lobe; the bulb's output runs back in the olfactory tract to the piriform cortex of the uncus and the amygdala, mostly on the same side, with a smaller crossed component through the anterior commissure. Because the pathway is largely uncrossed and each nostril is served by its own bulb, unilateral anosmia localizes to the nasal cavity, cribriform plate, bulb or tract of that side, and a unilateral loss is the earliest sign of an olfactory groove meningioma, which then compresses the optic nerve on the same side and raises intracranial pressure, producing the classic combination of ipsilateral optic atrophy and contralateral papilledema. Bilateral loss most often reflects disease of the nasal mucosa or a shearing injury of the olfactory filaments against the cribriform plate when the brain moves on impact, especially with occipital blows. Cortical lesions rarely abolish smell because the projection is bilateral at the level of the piriform cortex, but irritative lesions of the uncus produce olfactory hallucinations. Flavor depends on retronasal smell, so anosmic patients complain of tasteless food although the gustatory pathway is intact. Loss of smell is also an early sign of Parkinson and Alzheimer disease, in which the olfactory bulb is among the first structures affected.",
+  "imagingFindings": [
+    {
+      "pathology": "Post-traumatic anosmia",
+      "modality": "MRI",
+      "finding": "Contusion of the gyrus recti and orbital frontal cortex, hemosiderin on SWI, and atrophy of the olfactory bulbs on coronal thin-section T2.",
+      "sequence": "SWI"
+    },
+    {
+      "pathology": "Olfactory groove meningioma",
+      "modality": "MRI",
+      "finding": "Enhancing subfrontal extra-axial mass on the cribriform plate displacing the frontal lobes and optic nerves, with hyperostosis on CT.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Sinonasal disease",
+      "modality": "CT",
+      "finding": "Mucosal thickening, polyps or obstruction of the olfactory cleft on sinus CT.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Olfactory bulb volume loss",
+      "modality": "MRI",
+      "finding": "Small or absent bulbs in Kallmann syndrome (congenital) and reduced volume in post-viral and neurodegenerative anosmia.",
+      "sequence": "T2"
+    }
+  ],
+  "commonCauses": [
+    "Upper respiratory viral infection (including COVID-19)",
+    "Chronic rhinosinusitis and polyps",
+    "Head injury",
+    "Olfactory groove or planum meningioma",
+    "Parkinson and Alzheimer disease (early)",
+    "Kallmann syndrome (with hypogonadism)",
+    "Toxins, smoking, aging"
+  ],
+  "mimics": [
+    {
+      "name": "Ageusia",
+      "howToDistinguish": "True taste loss is rare; test the four tastes on the tongue"
+    },
+    {
+      "name": "Functional anosmia",
+      "howToDistinguish": "Claims not to detect ammonia, which is a trigeminal stimulus"
+    },
+    {
+      "name": "Nasal obstruction",
+      "howToDistinguish": "Conductive loss that fluctuates and responds to decongestants"
+    }
+  ],
+  "management": [
+    "Test each nostril with non-irritant odors and with ammonia; formal olfactory testing kits for quantification",
+    "MRI with coronal thin sections through the anterior cranial fossa for unilateral or unexplained anosmia; sinus CT for suspected mucosal disease",
+    "Safety counseling: gas detectors, food dating; olfactory training after viral loss"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anosmia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-foster-kennedy-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": 0,
+      "y": 40,
+      "z": -20
+    },
+    "label": "olfactory bulbs on the cribriform plate beneath the frontal lobes"
   },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "taste (apparent)",
-   "sign": "Complaint of loss of taste from loss of flavor; sweet, salt, sour and bitter preserved",
-   "substrate": "pathway-gustatory"
-  },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "frontal",
-   "sign": "Personality change and apathy with a subfrontal tumor; Foster Kennedy syndrome with ipsilateral optic atrophy and contralateral papilledema",
-   "substrate": "lobe-frontal"
-  }
- ],
- "reasoning": "Olfactory receptor neurons in the roof of the nasal cavity send unmyelinated axons in bundles through the cribriform plate to the olfactory bulb, which lies on the plate under the frontal lobe; the bulb's output runs back in the olfactory tract to the piriform cortex of the uncus and the amygdala, mostly on the same side, with a smaller crossed component through the anterior commissure. Because the pathway is largely uncrossed and each nostril is served by its own bulb, unilateral anosmia localizes to the nasal cavity, cribriform plate, bulb or tract of that side, and a unilateral loss is the earliest sign of an olfactory groove meningioma, which then compresses the optic nerve on the same side and raises intracranial pressure, producing the classic combination of ipsilateral optic atrophy and contralateral papilledema. Bilateral loss most often reflects disease of the nasal mucosa or a shearing injury of the olfactory filaments against the cribriform plate when the brain moves on impact, especially with occipital blows. Cortical lesions rarely abolish smell because the projection is bilateral at the level of the piriform cortex, but irritative lesions of the uncus produce olfactory hallucinations. Flavor depends on retronasal smell, so anosmic patients complain of tasteless food although the gustatory pathway is intact. Loss of smell is also an early sign of Parkinson and Alzheimer disease, in which the olfactory bulb is among the first structures affected.",
- "imagingFindings": [
-  {
-   "pathology": "Post-traumatic anosmia",
-   "modality": "MRI",
-   "finding": "Contusion of the gyrus recti and orbital frontal cortex, hemosiderin on SWI, and atrophy of the olfactory bulbs on coronal thin-section T2.",
-   "sequence": "SWI"
-  },
-  {
-   "pathology": "Olfactory groove meningioma",
-   "modality": "MRI",
-   "finding": "Enhancing subfrontal extra-axial mass on the cribriform plate displacing the frontal lobes and optic nerves, with hyperostosis on CT.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Sinonasal disease",
-   "modality": "CT",
-   "finding": "Mucosal thickening, polyps or obstruction of the olfactory cleft on sinus CT.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Olfactory bulb volume loss",
-   "modality": "MRI",
-   "finding": "Small or absent bulbs in Kallmann syndrome (congenital) and reduced volume in post-viral and neurodegenerative anosmia.",
-   "sequence": "T2"
-  }
- ],
- "commonCauses": [
-  "Upper respiratory viral infection (including COVID-19)",
-  "Chronic rhinosinusitis and polyps",
-  "Head injury",
-  "Olfactory groove or planum meningioma",
-  "Parkinson and Alzheimer disease (early)",
-  "Kallmann syndrome (with hypogonadism)",
-  "Toxins, smoking, aging"
- ],
- "mimics": [
-  {
-   "name": "Ageusia",
-   "howToDistinguish": "True taste loss is rare; test the four tastes on the tongue"
-  },
-  {
-   "name": "Functional anosmia",
-   "howToDistinguish": "Claims not to detect ammonia, which is a trigeminal stimulus"
-  },
-  {
-   "name": "Nasal obstruction",
-   "howToDistinguish": "Conductive loss that fluctuates and responds to decongestants"
-  }
- ],
- "management": [
-  "Test each nostril with non-irritant odors and with ammonia; formal olfactory testing kits for quantification",
-  "MRI with coronal thin sections through the anterior cranial fossa for unilateral or unexplained anosmia; sinus CT for suspected mucosal disease",
-  "Safety counseling: gas detectors, food dating; olfactory training after viral loss"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    349,
-    349
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    125,
-    125
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": 0,
-   "y": 40,
-   "z": -20
-  },
-  "label": "olfactory bulbs on the cribriform plate beneath the frontal lobes"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

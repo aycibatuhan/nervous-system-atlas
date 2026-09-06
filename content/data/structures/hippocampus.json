@@ -1,269 +1,233 @@
 {
- "kind": "structure",
- "id": "hippocampus",
- "name": "Hippocampus",
- "synonyms": [
-  "hippocampal formation",
-  "Ammon's horn"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "hippocampus-l",
-  "hippocampus-r",
-  "hippocampus-ca1-l",
-  "hippocampus-ca1-r",
-  "hippocampus-ca23-l",
-  "hippocampus-ca23-r",
-  "dentate-gyrus-l",
-  "dentate-gyrus-r",
-  "subiculum-l",
-  "subiculum-r",
-  "presubiculum-l",
-  "presubiculum-r"
- ],
- "summary": "A curved ridge of three-layered cortex in the floor of the temporal horn, formed of the dentate gyrus, the cornu ammonis (CA1–CA4) and the subiculum, which together with the entorhinal cortex constitute the hippocampal formation. Information enters from the entorhinal cortex through the perforant path, passes around the trisynaptic circuit (dentate gyrus → CA3 → CA1 → subiculum) and leaves through the fornix. It is essential for forming new declarative memories and for spatial navigation. It is also the most epileptogenic tissue in the brain (mesial temporal sclerosis), the first target of Alzheimer disease, and highly vulnerable to anoxia, herpes encephalitis and limbic encephalitis.",
- "anatomy": {
-  "location": "Medial temporal lobe forming the floor and medial wall of the temporal horn from the amygdala in front to the splenium behind (head, body, tail), covered by the choroid plexus and fimbria, with the parahippocampal gyrus beneath and the ambient cistern medially.",
-  "subdivisions": [
-   {
-    "name": "Dentate gyrus",
-    "note": "granule cells; input from the perforant path; adult neurogenesis"
-   },
-   {
-    "name": "CA3",
-    "note": "pyramidal cells with recurrent collaterals; pattern completion"
-   },
-   {
-    "name": "CA1",
-    "note": "Sommer's sector, the most anoxia- and seizure-sensitive region; output to the subiculum"
-   },
-   {
-    "name": "Subiculum and presubiculum",
-    "note": "main hippocampal output to the fornix and entorhinal cortex"
-   },
-   {
-    "name": "Head (pes), body and tail",
-    "note": "anteroposterior segments seen on coronal MRI"
-   }
+  "kind": "structure",
+  "id": "hippocampus",
+  "name": "Hippocampus",
+  "synonyms": [
+    "hippocampal formation",
+    "Ammon's horn"
   ],
-  "relations": {
-   "superior": "temporal horn, fimbria and choroid plexus",
-   "inferior": "parahippocampal gyrus (subiculum and entorhinal cortex)",
-   "medial": "ambient cistern, midbrain and posterior cerebral artery",
-   "anterior": "amygdala"
-  }
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "gyrus-parahippocampal-uncus (entorhinal cortex)",
-    "via": "perforant path"
-   },
-   {
-    "from": "septal-area",
-    "via": "fornix",
-    "note": "cholinergic"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "hippocampus-l",
+    "hippocampus-r",
+    "hippocampus-ca1-l",
+    "hippocampus-ca1-r",
+    "hippocampus-ca23-l",
+    "hippocampus-ca23-r",
+    "dentate-gyrus-l",
+    "dentate-gyrus-r",
+    "subiculum-l",
+    "subiculum-r",
+    "presubiculum-l",
+    "presubiculum-r"
   ],
-  "efferents": [
-   {
-    "to": "fornix",
-    "via": "fimbria"
-   },
-   {
-    "to": "gyrus-parahippocampal-uncus (entorhinal cortex)",
-    "via": "subiculum"
-   }
+  "summary": "A curved ridge of three-layered cortex in the floor of the temporal horn, formed of the dentate gyrus, the cornu ammonis (CA1–CA4) and the subiculum, which together with the entorhinal cortex constitute the hippocampal formation. Information enters from the entorhinal cortex through the perforant path, passes around the trisynaptic circuit (dentate gyrus → CA3 → CA1 → subiculum) and leaves through the fornix. It is essential for forming new declarative memories and for spatial navigation. It is also the most epileptogenic tissue in the brain (mesial temporal sclerosis), the first target of Alzheimer disease, and highly vulnerable to anoxia, herpes encephalitis and limbic encephalitis.",
+  "anatomy": {
+    "location": "Medial temporal lobe forming the floor and medial wall of the temporal horn from the amygdala in front to the splenium behind (head, body, tail), covered by the choroid plexus and fimbria, with the parahippocampal gyrus beneath and the ambient cistern medially.",
+    "subdivisions": [
+      {
+        "name": "Dentate gyrus",
+        "note": "granule cells; input from the perforant path; adult neurogenesis"
+      },
+      {
+        "name": "CA3",
+        "note": "pyramidal cells with recurrent collaterals; pattern completion"
+      },
+      {
+        "name": "CA1",
+        "note": "Sommer's sector, the most anoxia- and seizure-sensitive region; output to the subiculum"
+      },
+      {
+        "name": "Subiculum and presubiculum",
+        "note": "main hippocampal output to the fornix and entorhinal cortex"
+      },
+      {
+        "name": "Head (pes), body and tail",
+        "note": "anteroposterior segments seen on coronal MRI"
+      }
+    ],
+    "relations": {
+      "superior": "temporal horn, fimbria and choroid plexus",
+      "inferior": "parahippocampal gyrus (subiculum and entorhinal cortex)",
+      "medial": "ambient cistern, midbrain and posterior cerebral artery",
+      "anterior": "amygdala"
+    }
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "gyrus-parahippocampal-uncus (entorhinal cortex)",
+        "via": "perforant path"
+      },
+      {
+        "from": "septal-area",
+        "via": "fornix",
+        "note": "cholinergic"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "fornix",
+        "via": "fimbria"
+      },
+      {
+        "to": "gyrus-parahippocampal-uncus (entorhinal cortex)",
+        "via": "subiculum"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Encoding and consolidation of declarative (episodic and semantic) memory, spatial navigation and cognitive maps, contextual and emotional memory, regulation of the stress response.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca",
+      "territory-anterior-choroidal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 25,
+          "y": -20,
+          "z": -14
+        },
+        "label": "hippocampal body in the floor of the temporal horn"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 25,
+          "y": -8,
+          "z": -18
+        },
+        "label": "hippocampal head beneath the amygdala"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 25,
+          "y": -20,
+          "z": -14
+        },
+        "label": "hippocampus from head to tail along the temporal horn"
+      }
+    ],
+    "normalAppearance": "Coronal T2/FLAIR perpendicular to the long axis show the internal architecture (alternating gray and white layers); it should be symmetric in size and signal with a slit-like temporal horn. Atrophy is graded on coronal T1 (Scheltens scale); FLAIR hyperintensity with volume loss is sclerosis, with swelling it is encephalitis or status epilepticus.",
+    "pathology": [
+      {
+        "pathology": "Mesial temporal sclerosis",
+        "modality": "MRI",
+        "finding": "Atrophic FLAIR-bright hippocampus with loss of internal structure and a dilated temporal horn; the cause of drug-resistant temporal lobe epilepsy.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "MRI",
+        "finding": "Bilateral hippocampal and entorhinal atrophy out of proportion to age.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Herpes simplex encephalitis",
+        "modality": "MRI",
+        "finding": "Asymmetric swelling and FLAIR/DWI hyperintensity of the hippocampus and medial temporal lobe with hemorrhage.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Limbic encephalitis (autoimmune, paraneoplastic)",
+        "modality": "MRI",
+        "finding": "Bilateral medial temporal FLAIR hyperintensity without hemorrhage, later atrophy.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Transient global amnesia",
+        "modality": "MRI",
+        "finding": "Tiny punctate DWI-bright lesions in CA1 appearing 24–72 h after the episode.",
+        "sequence": "DWI",
+        "timing": "Best seen at 1–3 days with thin slices"
+      },
+      {
+        "pathology": "Hypoxic-ischemic injury",
+        "modality": "MRI",
+        "finding": "Bilateral hippocampal restriction after cardiac arrest.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "Coronal thin T2/FLAIR perpendicular to the hippocampus; DWI; T1 volumetry"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia with preserved remote memory and working memory",
+        "side": "bilateral",
+        "mechanism": "Bilateral hippocampal damage (the classic patient H.M.)"
+      },
+      {
+        "deficit": "Verbal memory impairment (left) or visuospatial memory impairment (right)",
+        "side": "n/a",
+        "mechanism": "Unilateral lesion"
+      },
+      {
+        "deficit": "Temporal lobe seizures with epigastric aura, déjà vu, automatisms and post-ictal confusion",
+        "side": "n/a",
+        "mechanism": "Hippocampal sclerosis"
+      },
+      {
+        "deficit": "Topographical disorientation",
+        "side": "bilateral",
+        "mechanism": "Spatial mapping function"
+      },
+      {
+        "deficit": "Transient global amnesia",
+        "side": "bilateral",
+        "mechanism": "Transient CA1 dysfunction"
+      }
+    ],
+    "examination": [
+      "Three-word recall at five minutes; story recall; figure recall",
+      "Distinguish encoding failure (hippocampal) from retrieval failure (frontal) by cueing and recognition",
+      "Seizure history: auras, automatisms, febrile seizures in childhood",
+      "Orientation in place and route finding"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff",
+      "syn-pca-infarct"
+    ],
+    "pearls": [
+      "Memory loss for new events with intact reasoning and language is hippocampal; poor retrieval helped by cues is frontal",
+      "Bilateral medial temporal FLAIR change: herpes if febrile and hemorrhagic, autoimmune if subacute with seizures and psychiatric features"
+    ]
+  },
+  "pitfalls": [
+    "Hippocampal asymmetry alone is not sclerosis; look for signal change and loss of internal structure",
+    "Incomplete hippocampal inversion is a normal variant"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Encoding and consolidation of declarative (episodic and semantic) memory, spatial navigation and cognitive maps, contextual and emotional memory, regulation of the stress response.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-pca",
-   "territory-anterior-choroidal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 25,
-     "y": -20,
-     "z": -14
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "hippocampal body in the floor of the temporal horn"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 25,
-     "y": -8,
-     "z": -18
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "hippocampal head beneath the amygdala"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 25,
-     "y": -20,
-     "z": -14
-    },
-    "label": "hippocampus from head to tail along the temporal horn"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Coronal T2/FLAIR perpendicular to the long axis show the internal architecture (alternating gray and white layers); it should be symmetric in size and signal with a slit-like temporal horn. Atrophy is graded on coronal T1 (Scheltens scale); FLAIR hyperintensity with volume loss is sclerosis, with swelling it is encephalitis or status epilepticus.",
-  "pathology": [
-   {
-    "pathology": "Mesial temporal sclerosis",
-    "modality": "MRI",
-    "finding": "Atrophic FLAIR-bright hippocampus with loss of internal structure and a dilated temporal horn; the cause of drug-resistant temporal lobe epilepsy.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "MRI",
-    "finding": "Bilateral hippocampal and entorhinal atrophy out of proportion to age.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Herpes simplex encephalitis",
-    "modality": "MRI",
-    "finding": "Asymmetric swelling and FLAIR/DWI hyperintensity of the hippocampus and medial temporal lobe with hemorrhage.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Limbic encephalitis (autoimmune, paraneoplastic)",
-    "modality": "MRI",
-    "finding": "Bilateral medial temporal FLAIR hyperintensity without hemorrhage, later atrophy.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Transient global amnesia",
-    "modality": "MRI",
-    "finding": "Tiny punctate DWI-bright lesions in CA1 appearing 24–72 h after the episode.",
-    "sequence": "DWI",
-    "timing": "Best seen at 1–3 days with thin slices"
-   },
-   {
-    "pathology": "Hypoxic-ischemic injury",
-    "modality": "MRI",
-    "finding": "Bilateral hippocampal restriction after cardiac arrest.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "cortex",
+    "limbic"
   ],
-  "sequenceOfChoice": "Coronal thin T2/FLAIR perpendicular to the hippocampus; DWI; T1 volumetry"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia with preserved remote memory and working memory",
-    "side": "bilateral",
-    "mechanism": "Bilateral hippocampal damage (the classic patient H.M.)"
-   },
-   {
-    "deficit": "Verbal memory impairment (left) or visuospatial memory impairment (right)",
-    "side": "n/a",
-    "mechanism": "Unilateral lesion"
-   },
-   {
-    "deficit": "Temporal lobe seizures with epigastric aura, déjà vu, automatisms and post-ictal confusion",
-    "side": "n/a",
-    "mechanism": "Hippocampal sclerosis"
-   },
-   {
-    "deficit": "Topographical disorientation",
-    "side": "bilateral",
-    "mechanism": "Spatial mapping function"
-   },
-   {
-    "deficit": "Transient global amnesia",
-    "side": "bilateral",
-    "mechanism": "Transient CA1 dysfunction"
-   }
-  ],
-  "examination": [
-   "Three-word recall at five minutes; story recall; figure recall",
-   "Distinguish encoding failure (hippocampal) from retrieval failure (frontal) by cueing and recognition",
-   "Seizure history: auras, automatisms, febrile seizures in childhood",
-   "Orientation in place and route finding"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff",
-   "syn-pca-infarct"
-  ],
-  "pearls": [
-   "Memory loss for new events with intact reasoning and language is hippocampal; poor retrieval helped by cues is frontal",
-   "Bilateral medial temporal FLAIR change: herpes if febrile and hemorrhagic, autoimmune if subacute with seizures and psychiatric features"
-  ]
- },
- "pitfalls": [
-  "Hippocampal asymmetry alone is not sclerosis; look for signal change and loss of internal structure",
-  "Incomplete hippocampal inversion is a normal variant"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    302,
-    305
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    251,
-    253
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    54,
-    54
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    232,
-    233
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    169,
-    171
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    212,
-    214
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "limbic"
- ],
- "status": "draft",
- "latin": "Hippocampus",
- "subsystem": "lobe-limbic"
+  "status": "draft",
+  "latin": "Hippocampus",
+  "subsystem": "lobe-limbic"
 }

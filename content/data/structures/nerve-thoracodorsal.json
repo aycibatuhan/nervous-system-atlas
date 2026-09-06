@@ -1,133 +1,129 @@
 {
- "kind": "structure",
- "id": "nerve-thoracodorsal",
- "name": "Thoracodorsal nerve",
- "synonyms": [
-  "middle subscapular nerve",
-  "nerve to latissimus dorsi"
- ],
- "system": "peripheral",
- "meshIds": [
-  "thoracodorsal-nerve-l",
-  "thoracodorsal-nerve-r"
- ],
- "summary": "The thoracodorsal nerve arises from the posterior cord of the brachial plexus (C6, C7, C8) between the subscapular nerves, descends along the posterior axillary wall with the thoracodorsal artery and enters the latissimus dorsi, which it supplies. It is at risk in axillary lymph node dissection and in posterior shoulder surgery, it is the nerve of the latissimus flap used in reconstruction, and its EMG places lesions in the posterior cord: latissimus weakness with radial and axillary signs means the posterior cord, whereas latissimus sparing points to the individual nerves.",
- "anatomy": {
-  "location": "Leaves the posterior cord in the axilla between the upper and lower subscapular nerves, descends along the posterior axillary wall on the surface of the subscapularis and teres major with the thoracodorsal artery, and enters the deep surface of the latissimus dorsi near its tendon.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Motor to the latissimus dorsi, it adducts, extends and medially rotates the arm and pulls the body up in climbing and in transfers from a wheelchair, and it contributes to forced expiration and coughing; its loss weakens adduction against resistance (the patient cannot press the arm down against the examiner's hand) and is felt most by athletes and by paraplegics who depend on the latissimus for transfers. Its origin from the posterior cord makes it a cord marker in plexus lesions, and surgeons preserve it during axillary clearance or use it, with its artery, as the pedicle of the latissimus flap for breast and chest wall reconstruction and for restoring elbow flexion after brachial plexus injury.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-thoracodorsal",
+  "name": "Thoracodorsal nerve",
+  "synonyms": [
+    "middle subscapular nerve",
+    "nerve to latissimus dorsi"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "thoracodorsal-nerve-l"
-    },
-    "label": "thoracodorsal nerve along the posterior axillary wall to the latissimus dorsi"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "thoracodorsal-nerve-r"
-    },
-    "label": "nerve with the thoracodorsal artery on the subscapularis"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "thoracodorsal-nerve-l",
+    "thoracodorsal-nerve-r"
   ],
-  "normalAppearance": "A nerve accompanying the thoracodorsal vessels on the posterior axillary wall on ultrasound and MRI; denervation appears as STIR change and atrophy of the latissimus dorsi.",
-  "pathology": [
-   {
-    "pathology": "Posterior cord plexopathy",
-    "modality": "EMG/NCS",
-    "finding": "Denervation of the latissimus dorsi with the deltoid, teres minor and radial-innervated muscles, placing the lesion in the posterior cord.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Iatrogenic injury at axillary dissection",
-    "modality": "MRI",
-    "finding": "Latissimus dorsi denervation edema and later atrophy after axillary surgery, with weak adduction.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Latissimus flap harvest",
-    "modality": "MRI",
-    "finding": "Absent latissimus in the back after reconstruction, with the muscle transposed to the chest wall on its thoracodorsal pedicle.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weak adduction and extension of the arm",
-    "side": "ipsilateral",
-    "mechanism": "Denervation of the latissimus dorsi"
-   },
-   {
-    "deficit": "Difficulty with climbing, pulling and wheelchair transfers",
-    "side": "ipsilateral",
-    "mechanism": "Loss of the latissimus contribution to body elevation"
-   },
-   {
-    "deficit": "Marker of posterior cord involvement",
-    "side": "ipsilateral",
-    "mechanism": "Origin from the posterior cord with the axillary and radial nerves"
-   }
-  ],
-  "examination": [
-   "Adduction of the abducted arm against resistance while palpating the latissimus in the posterior axillary fold",
-   "Cough strength in patients with bilateral involvement",
-   "EMG of the latissimus in suspected posterior cord lesions"
-  ],
-  "syndromes": [
-   "syn-radial-neuropathy",
-   "syn-axillary-neuropathy"
-  ],
-  "pearls": [
-   "The latissimus is the muscle of climbing and of transfers; its nerve is the one axillary surgeons protect",
-   "Latissimus plus deltoid plus wrist drop means the posterior cord",
-   "The thoracodorsal pedicle carries the latissimus to the chest wall in reconstruction"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The thoracodorsal nerve arises from the posterior cord of the brachial plexus (C6, C7, C8) between the subscapular nerves, descends along the posterior axillary wall with the thoracodorsal artery and enters the latissimus dorsi, which it supplies. It is at risk in axillary lymph node dissection and in posterior shoulder surgery, it is the nerve of the latissimus flap used in reconstruction, and its EMG places lesions in the posterior cord: latissimus weakness with radial and axillary signs means the posterior cord, whereas latissimus sparing points to the individual nerves.",
+  "anatomy": {
+    "location": "Leaves the posterior cord in the axilla between the upper and lower subscapular nerves, descends along the posterior axillary wall on the surface of the subscapularis and teres major with the thoracodorsal artery, and enters the deep surface of the latissimus dorsi near its tendon.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Motor to the latissimus dorsi, it adducts, extends and medially rotates the arm and pulls the body up in climbing and in transfers from a wheelchair, and it contributes to forced expiration and coughing; its loss weakens adduction against resistance (the patient cannot press the arm down against the examiner's hand) and is felt most by athletes and by paraplegics who depend on the latissimus for transfers. Its origin from the posterior cord makes it a cord marker in plexus lesions, and surgeons preserve it during axillary clearance or use it, with its artery, as the pedicle of the latissimus flap for breast and chest wall reconstruction and for restoring elbow flexion after brachial plexus injury.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "thoracodorsal-nerve-l"
+        },
+        "label": "thoracodorsal nerve along the posterior axillary wall to the latissimus dorsi"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "thoracodorsal-nerve-r"
+        },
+        "label": "nerve with the thoracodorsal artery on the subscapularis"
+      }
+    ],
+    "normalAppearance": "A nerve accompanying the thoracodorsal vessels on the posterior axillary wall on ultrasound and MRI; denervation appears as STIR change and atrophy of the latissimus dorsi.",
+    "pathology": [
+      {
+        "pathology": "Posterior cord plexopathy",
+        "modality": "EMG/NCS",
+        "finding": "Denervation of the latissimus dorsi with the deltoid, teres minor and radial-innervated muscles, placing the lesion in the posterior cord.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Iatrogenic injury at axillary dissection",
+        "modality": "MRI",
+        "finding": "Latissimus dorsi denervation edema and later atrophy after axillary surgery, with weak adduction.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Latissimus flap harvest",
+        "modality": "MRI",
+        "finding": "Absent latissimus in the back after reconstruction, with the muscle transposed to the chest wall on its thoracodorsal pedicle.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak adduction and extension of the arm",
+        "side": "ipsilateral",
+        "mechanism": "Denervation of the latissimus dorsi"
+      },
+      {
+        "deficit": "Difficulty with climbing, pulling and wheelchair transfers",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the latissimus contribution to body elevation"
+      },
+      {
+        "deficit": "Marker of posterior cord involvement",
+        "side": "ipsilateral",
+        "mechanism": "Origin from the posterior cord with the axillary and radial nerves"
+      }
+    ],
+    "examination": [
+      "Adduction of the abducted arm against resistance while palpating the latissimus in the posterior axillary fold",
+      "Cough strength in patients with bilateral involvement",
+      "EMG of the latissimus in suspected posterior cord lesions"
+    ],
+    "syndromes": [
+      "syn-radial-neuropathy",
+      "syn-axillary-neuropathy"
+    ],
+    "pearls": [
+      "The latissimus is the muscle of climbing and of transfers; its nerve is the one axillary surgeons protect",
+      "Latissimus plus deltoid plus wrist drop means the posterior cord",
+      "The thoracodorsal pedicle carries the latissimus to the chest wall in reconstruction"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-thoracodorsal-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-back-latissimus-dorsi",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-latissimus-dorsi-flap",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C6-C8"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C6-C8"
- }
 }

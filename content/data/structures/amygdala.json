@@ -1,202 +1,182 @@
 {
- "kind": "structure",
- "id": "amygdala",
- "name": "Amygdala",
- "synonyms": [
-  "amygdaloid nuclear complex"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "amygdala-l",
-  "amygdala-r"
- ],
- "summary": "An almond-shaped group of nuclei in the anteromedial temporal lobe, in front of the hippocampal head and beneath the uncus, at the tip of the temporal horn. It attaches emotional significance to sensory input: the lateral and basolateral nuclei receive highly processed sensory and prefrontal input, the central nucleus sends output to the hypothalamus and brainstem for autonomic and behavioral fear responses, and the corticomedial group receives olfactory input. It drives fear conditioning, threat detection and emotional memory, and its bilateral loss produces the placidity, hyperorality and hypersexuality of the Klüver–Bucy syndrome.",
- "anatomy": {
-  "location": "Anteromedial temporal lobe at the anterior end of the temporal horn, in front of and partly above the hippocampal head, below the lentiform nucleus (with which it is continuous through the substantia innominata) and medial to the temporal pole white matter; its output pathways are the stria terminalis and the ventral amygdalofugal pathway.",
-  "subdivisions": [
-   {
-    "name": "Basolateral group (lateral, basal, accessory basal nuclei)",
-    "note": "sensory and prefrontal input; emotional learning"
-   },
-   {
-    "name": "Central nucleus",
-    "note": "output to hypothalamus, periaqueductal gray, brainstem autonomic nuclei: fear expression"
-   },
-   {
-    "name": "Corticomedial group and medial nucleus",
-    "note": "olfactory and pheromonal input"
-   },
-   {
-    "name": "Bed nucleus of the stria terminalis (extended amygdala)",
-    "note": "anxiety and stress responses"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "sensory association cortex and thalamus"
-   },
-   {
-    "from": "cortex-prefrontal (orbitofrontal)"
-   },
-   {
-    "from": "olfactory tract",
-    "via": "cn-01-olfactory"
-   }
+  "kind": "structure",
+  "id": "amygdala",
+  "name": "Amygdala",
+  "synonyms": [
+    "amygdaloid nuclear complex"
   ],
-  "efferents": [
-   {
-    "to": "hypothalamus",
-    "via": "stria terminalis and ventral amygdalofugal pathway"
-   },
-   {
-    "to": "periaqueductal-gray and brainstem autonomic nuclei"
-   },
-   {
-    "to": "thalamus-mediodorsal"
-   },
-   {
-    "to": "nucleus-accumbens"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "amygdala-l",
+    "amygdala-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic",
-   "pathway-olfactory"
-  ]
- },
- "function": "Fear and threat processing, emotional conditioning, assignment of emotional value to stimuli and memories, autonomic and endocrine responses to emotion, social recognition of facial expression, olfactory-emotional integration.",
- "bloodSupply": {
-  "arteries": [
-   "artery-anterior-choroidal",
-   "artery-mca",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-anterior-choroidal",
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 24,
-     "y": -4,
-     "z": -20
+  "summary": "An almond-shaped group of nuclei in the anteromedial temporal lobe, in front of the hippocampal head and beneath the uncus, at the tip of the temporal horn. It attaches emotional significance to sensory input: the lateral and basolateral nuclei receive highly processed sensory and prefrontal input, the central nucleus sends output to the hypothalamus and brainstem for autonomic and behavioral fear responses, and the corticomedial group receives olfactory input. It drives fear conditioning, threat detection and emotional memory, and its bilateral loss produces the placidity, hyperorality and hypersexuality of the Klüver–Bucy syndrome.",
+  "anatomy": {
+    "location": "Anteromedial temporal lobe at the anterior end of the temporal horn, in front of and partly above the hippocampal head, below the lentiform nucleus (with which it is continuous through the substantia innominata) and medial to the temporal pole white matter; its output pathways are the stria terminalis and the ventral amygdalofugal pathway.",
+    "subdivisions": [
+      {
+        "name": "Basolateral group (lateral, basal, accessory basal nuclei)",
+        "note": "sensory and prefrontal input; emotional learning"
+      },
+      {
+        "name": "Central nucleus",
+        "note": "output to hypothalamus, periaqueductal gray, brainstem autonomic nuclei: fear expression"
+      },
+      {
+        "name": "Corticomedial group and medial nucleus",
+        "note": "olfactory and pheromonal input"
+      },
+      {
+        "name": "Bed nucleus of the stria terminalis (extended amygdala)",
+        "note": "anxiety and stress responses"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "sensory association cortex and thalamus"
+      },
+      {
+        "from": "cortex-prefrontal (orbitofrontal)"
+      },
+      {
+        "from": "olfactory tract",
+        "via": "cn-01-olfactory"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "hypothalamus",
+        "via": "stria terminalis and ventral amygdalofugal pathway"
+      },
+      {
+        "to": "periaqueductal-gray and brainstem autonomic nuclei"
+      },
+      {
+        "to": "thalamus-mediodorsal"
+      },
+      {
+        "to": "nucleus-accumbens"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic",
+      "pathway-olfactory"
+    ]
+  },
+  "function": "Fear and threat processing, emotional conditioning, assignment of emotional value to stimuli and memories, autonomic and endocrine responses to emotion, social recognition of facial expression, olfactory-emotional integration.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-anterior-choroidal",
+      "artery-mca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-anterior-choroidal",
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 24,
+          "y": -4,
+          "z": -20
+        },
+        "label": "amygdala in front of the hippocampal head under the uncus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 24,
+          "y": -4,
+          "z": -20
+        },
+        "label": "anteromedial temporal lobe at the tip of the temporal horn"
+      }
+    ],
+    "normalAppearance": "Homogeneous gray matter at the anterior tip of the temporal horn on coronal T1, above and in front of the hippocampal head and beneath the uncus; the MASSP mesh in this atlas outlines it. Involved together with the hippocampus in encephalitis and sclerosis.",
+    "pathology": [
+      {
+        "pathology": "Limbic and herpes encephalitis",
+        "modality": "MRI",
+        "finding": "FLAIR hyperintensity and swelling of the amygdala and hippocampus.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Amygdala enlargement in temporal lobe epilepsy",
+        "modality": "MRI",
+        "finding": "Enlarged, mildly T2-bright amygdala on the side of seizure onset.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Urbach–Wiethe disease",
+        "modality": "CT",
+        "finding": "Bilateral symmetrical amygdala calcification with absent fear responses.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "Coronal T2/FLAIR"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Klüver–Bucy syndrome: placidity, hyperorality, hypersexuality, visual agnosia, hypermetamorphosis",
+        "side": "bilateral",
+        "mechanism": "Bilateral amygdala and anterior temporal destruction"
+      },
+      {
+        "deficit": "Loss of fear and impaired recognition of fearful faces",
+        "side": "bilateral",
+        "mechanism": "Bilateral amygdala lesions"
+      },
+      {
+        "deficit": "Seizures with fear aura and autonomic features",
+        "side": "n/a",
+        "mechanism": "Amygdala involvement in temporal lobe epilepsy"
+      },
+      {
+        "deficit": "Anxiety and hypervigilance",
+        "side": "n/a",
+        "mechanism": "Hyperactivity of the amygdala in anxiety and PTSD"
+      }
+    ],
+    "examination": [
+      "Recognition of emotional facial expressions",
+      "Ask about ictal fear, palpitations or gastric sensations",
+      "Behavioral observation: placidity, oral exploration"
+    ],
+    "syndromes": [
+      "syn-kluver-bucy"
+    ],
+    "pearls": [
+      "A temporal lobe seizure that begins with intense fear and a rising epigastric sensation points to the amygdala and hippocampus",
+      "The Klüver–Bucy syndrome after herpes encephalitis or bilateral temporal surgery is the human evidence for amygdala function"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-amygdala",
+      "section": "Structure and Function"
     },
-    "label": "amygdala in front of the hippocampal head under the uncus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 24,
-     "y": -4,
-     "z": -20
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "anteromedial temporal lobe at the tip of the temporal horn"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Homogeneous gray matter at the anterior tip of the temporal horn on coronal T1, above and in front of the hippocampal head and beneath the uncus; the MASSP mesh in this atlas outlines it. Involved together with the hippocampus in encephalitis and sclerosis.",
-  "pathology": [
-   {
-    "pathology": "Limbic and herpes encephalitis",
-    "modality": "MRI",
-    "finding": "FLAIR hyperintensity and swelling of the amygdala and hippocampus.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Amygdala enlargement in temporal lobe epilepsy",
-    "modality": "MRI",
-    "finding": "Enlarged, mildly T2-bright amygdala on the side of seizure onset.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Urbach–Wiethe disease",
-    "modality": "CT",
-    "finding": "Bilateral symmetrical amygdala calcification with absent fear responses.",
-    "sequence": "CT non-contrast"
-   }
+  "tags": [
+    "cortex",
+    "limbic"
   ],
-  "sequenceOfChoice": "Coronal T2/FLAIR"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Klüver–Bucy syndrome: placidity, hyperorality, hypersexuality, visual agnosia, hypermetamorphosis",
-    "side": "bilateral",
-    "mechanism": "Bilateral amygdala and anterior temporal destruction"
-   },
-   {
-    "deficit": "Loss of fear and impaired recognition of fearful faces",
-    "side": "bilateral",
-    "mechanism": "Bilateral amygdala lesions"
-   },
-   {
-    "deficit": "Seizures with fear aura and autonomic features",
-    "side": "n/a",
-    "mechanism": "Amygdala involvement in temporal lobe epilepsy"
-   },
-   {
-    "deficit": "Anxiety and hypervigilance",
-    "side": "n/a",
-    "mechanism": "Hyperactivity of the amygdala in anxiety and PTSD"
-   }
-  ],
-  "examination": [
-   "Recognition of emotional facial expressions",
-   "Ask about ictal fear, palpitations or gastric sensations",
-   "Behavioral observation: placidity, oral exploration"
-  ],
-  "syndromes": [
-   "syn-kluver-bucy"
-  ],
-  "pearls": [
-   "A temporal lobe seizure that begins with intense fear and a rising epigastric sensation points to the amygdala and hippocampus",
-   "The Klüver–Bucy syndrome after herpes encephalitis or bilateral temporal surgery is the human evidence for amygdala function"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    302,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    311,
-    311
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    54,
-    54
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    212,
-    214
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "limbic"
- ],
- "status": "draft",
- "latin": "Corpus amygdaloideum",
- "subsystem": "lobe-limbic"
+  "status": "draft",
+  "latin": "Corpus amygdaloideum",
+  "subsystem": "lobe-limbic"
 }

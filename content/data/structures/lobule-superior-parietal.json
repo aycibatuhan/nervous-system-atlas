@@ -1,166 +1,154 @@
 {
- "kind": "structure",
- "id": "lobule-superior-parietal",
- "name": "Superior parietal lobule",
- "synonyms": [
-  "Brodmann areas 5 and 7"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "lobule-superior-parietal-l",
-  "lobule-superior-parietal-r",
-  "precuneus-l",
-  "precuneus-r"
- ],
- "summary": "The upper part of the parietal convexity above the intraparietal sulcus, continuous medially with the precuneus. It integrates somatosensory input from the postcentral gyrus with visual information from the occipital lobe to guide reaching, grasping and eye movements in space and to hold a body schema. Bilateral lesions of the superior parietal and adjacent occipital cortex cause Bálint syndrome (optic ataxia, ocular apraxia, simultanagnosia); unilateral lesions cause contralateral tactile agnosia and clumsy visually guided reaching.",
- "anatomy": {
-  "location": "Between the postcentral sulcus and the parieto-occipital sulcus, above the intraparietal sulcus; the precuneus is its medial continuation between the paracentral lobule and the cuneus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "gyrus-postcentral"
-   },
-   {
-    "from": "cortex-lateral-occipital (dorsal stream)"
-   }
+  "kind": "structure",
+  "id": "lobule-superior-parietal",
+  "name": "Superior parietal lobule",
+  "synonyms": [
+    "Brodmann areas 5 and 7"
   ],
-  "efferents": [
-   {
-    "to": "cortex-premotor-sma"
-   },
-   {
-    "to": "frontal-eye-field"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "lobule-superior-parietal-l",
+    "lobule-superior-parietal-r",
+    "precuneus-l",
+    "precuneus-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Somatosensory association, visuomotor coordination of reaching and grasping (dorsal 'where/how' visual stream), spatial attention and mental imagery.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-superior-division",
-   "artery-aca",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-mca",
-   "territory-aca",
-   "territory-watershed"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -55,
-     "z": 60
-    },
-    "label": "superior parietal lobule above the intraparietal sulcus"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 8,
-     "y": -60,
-     "z": 45
-    },
-    "label": "precuneus between the paracentral lobule and the cuneus"
-   }
-  ],
-  "normalAppearance": "Occupies the vertex behind the postcentral sulcus; the posterior watershed between MCA and ACA/PCA runs through it, so bilateral lesions here follow hypotension. Posterior cortical atrophy and Alzheimer disease thin the precuneus early.",
-  "pathology": [
-   {
-    "pathology": "Bilateral posterior watershed infarcts",
-    "modality": "MRI",
-    "finding": "Symmetrical parieto-occipital restricted diffusion after global hypoperfusion, producing Bálint syndrome.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Superior parietal and precuneus atrophy with visuospatial decline.",
-    "sequence": "T1"
-   }
-  ],
-  "sequenceOfChoice": "DWI; T1 volumetry"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Optic ataxia: misreaching for seen objects",
-    "side": "contralateral",
-    "mechanism": "Disconnection of visual and reaching maps"
-   },
-   {
-    "deficit": "Astereognosis and tactile agnosia",
-    "side": "contralateral",
-    "mechanism": "Somatosensory association cortex"
-   },
-   {
-    "deficit": "Simultanagnosia and ocular apraxia (bilateral)",
-    "side": "bilateral",
-    "mechanism": "Bálint syndrome"
-   },
-   {
-    "deficit": "Neglect of contralateral space (especially right lesions)",
-    "side": "contralateral",
-    "mechanism": "Dorsal attention network"
-   }
-  ],
-  "examination": [
-   "Reach for a target in the peripheral field while fixating centrally",
-   "Identify objects by touch",
-   "Describe a complex picture (simultanagnosia)",
-   "Line bisection and cancellation"
-  ],
-  "syndromes": [
-   "syn-balint",
-   "syn-watershed-infarct",
-   "syn-hemineglect"
-  ],
-  "pearls": [
-   "A patient who cannot reach accurately for a cup while seeing it clearly has optic ataxia from the superior parietal lobule",
-   "Bálint syndrome after cardiac arrest is the posterior watershed"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    286,
-    287
-   ]
+  "summary": "The upper part of the parietal convexity above the intraparietal sulcus, continuous medially with the precuneus. It integrates somatosensory input from the postcentral gyrus with visual information from the occipital lobe to guide reaching, grasping and eye movements in space and to hold a body schema. Bilateral lesions of the superior parietal and adjacent occipital cortex cause Bálint syndrome (optic ataxia, ocular apraxia, simultanagnosia); unilateral lesions cause contralateral tactile agnosia and clumsy visually guided reaching.",
+  "anatomy": {
+    "location": "Between the postcentral sulcus and the parieto-occipital sulcus, above the intraparietal sulcus; the precuneus is its medial continuation between the paracentral lobule and the cuneus.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    53
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "gyrus-postcentral"
+      },
+      {
+        "from": "cortex-lateral-occipital (dorsal stream)"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "cortex-premotor-sma"
+      },
+      {
+        "to": "frontal-eye-field"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    50,
-    50
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "parietal"
- ],
- "status": "draft",
- "latin": "Lobulus parietalis superior",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "function": "Somatosensory association, visuomotor coordination of reaching and grasping (dorsal 'where/how' visual stream), spatial attention and mental imagery.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-superior-division",
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-mca",
+      "territory-aca",
+      "territory-watershed"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -55,
+          "z": 60
+        },
+        "label": "superior parietal lobule above the intraparietal sulcus"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 8,
+          "y": -60,
+          "z": 45
+        },
+        "label": "precuneus between the paracentral lobule and the cuneus"
+      }
+    ],
+    "normalAppearance": "Occupies the vertex behind the postcentral sulcus; the posterior watershed between MCA and ACA/PCA runs through it, so bilateral lesions here follow hypotension. Posterior cortical atrophy and Alzheimer disease thin the precuneus early.",
+    "pathology": [
+      {
+        "pathology": "Bilateral posterior watershed infarcts",
+        "modality": "MRI",
+        "finding": "Symmetrical parieto-occipital restricted diffusion after global hypoperfusion, producing Bálint syndrome.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Superior parietal and precuneus atrophy with visuospatial decline.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "DWI; T1 volumetry"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Optic ataxia: misreaching for seen objects",
+        "side": "contralateral",
+        "mechanism": "Disconnection of visual and reaching maps"
+      },
+      {
+        "deficit": "Astereognosis and tactile agnosia",
+        "side": "contralateral",
+        "mechanism": "Somatosensory association cortex"
+      },
+      {
+        "deficit": "Simultanagnosia and ocular apraxia (bilateral)",
+        "side": "bilateral",
+        "mechanism": "Bálint syndrome"
+      },
+      {
+        "deficit": "Neglect of contralateral space (especially right lesions)",
+        "side": "contralateral",
+        "mechanism": "Dorsal attention network"
+      }
+    ],
+    "examination": [
+      "Reach for a target in the peripheral field while fixating centrally",
+      "Identify objects by touch",
+      "Describe a complex picture (simultanagnosia)",
+      "Line bisection and cancellation"
+    ],
+    "syndromes": [
+      "syn-balint",
+      "syn-watershed-infarct",
+      "syn-hemineglect"
+    ],
+    "pearls": [
+      "A patient who cannot reach accurately for a cup while seeing it clearly has optic ataxia from the superior parietal lobule",
+      "Bálint syndrome after cardiac arrest is the posterior watershed"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-spatial-neglect",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-postcentral-gyrus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-apraxia",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "parietal"
+  ],
+  "status": "draft",
+  "latin": "Lobulus parietalis superior",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

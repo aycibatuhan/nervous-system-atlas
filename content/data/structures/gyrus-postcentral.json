@@ -1,173 +1,153 @@
 {
- "kind": "structure",
- "id": "gyrus-postcentral",
- "name": "Postcentral gyrus (primary somatosensory cortex)",
- "synonyms": [
-  "primary somatosensory cortex",
-  "S1",
-  "Brodmann areas 3, 1, 2"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-postcentral-l",
-  "gyrus-postcentral-r"
- ],
- "summary": "The gyrus behind the central sulcus, receiving the thalamocortical projections from the ventral posterior nuclei and mapping the contralateral body in a sensory homunculus that mirrors the motor one: leg and foot on the medial paracentral lobule, hand at the convexity with a large representation, face and tongue lowest. Area 3b in the posterior wall of the central sulcus receives cutaneous touch, area 3a proprioception, and areas 1 and 2 elaborate texture and shape. Its lesions abolish the discriminative aspects of sensation while crude pain and touch survive in the thalamus.",
- "anatomy": {
-  "location": "Between the central sulcus in front and the postcentral sulcus behind, from the lateral sulcus over the vertex to the posterior paracentral lobule on the medial surface; thinner cortex than the precentral gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "thalamus-vpl",
-    "via": "posterior limb of the internal capsule"
-   },
-   {
-    "from": "thalamus-vpm"
-   }
+  "kind": "structure",
+  "id": "gyrus-postcentral",
+  "name": "Postcentral gyrus (primary somatosensory cortex)",
+  "synonyms": [
+    "primary somatosensory cortex",
+    "S1",
+    "Brodmann areas 3, 1, 2"
   ],
-  "efferents": [
-   {
-    "to": "lobule-superior-parietal"
-   },
-   {
-    "to": "gyrus-precentral"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-postcentral-l",
+    "gyrus-postcentral-r"
   ],
-  "pathways": [
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-trigeminothalamic"
-  ]
- },
- "function": "Conscious discriminative touch, proprioception, vibration and localization of pain and temperature for the contralateral body; first stage of tactile object recognition.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-superior-division",
-   "artery-aca"
-  ],
-  "territories": [
-   "territory-mca",
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 40,
-     "y": -30,
-     "z": 55
+  "summary": "The gyrus behind the central sulcus, receiving the thalamocortical projections from the ventral posterior nuclei and mapping the contralateral body in a sensory homunculus that mirrors the motor one: leg and foot on the medial paracentral lobule, hand at the convexity with a large representation, face and tongue lowest. Area 3b in the posterior wall of the central sulcus receives cutaneous touch, area 3a proprioception, and areas 1 and 2 elaborate texture and shape. Its lesions abolish the discriminative aspects of sensation while crude pain and touch survive in the thalamus.",
+  "anatomy": {
+    "location": "Between the central sulcus in front and the postcentral sulcus behind, from the lateral sulcus over the vertex to the posterior paracentral lobule on the medial surface; thinner cortex than the precentral gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "thalamus-vpl",
+        "via": "posterior limb of the internal capsule"
+      },
+      {
+        "from": "thalamus-vpm"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "lobule-superior-parietal"
+      },
+      {
+        "to": "gyrus-precentral"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-trigeminothalamic"
+    ]
+  },
+  "function": "Conscious discriminative touch, proprioception, vibration and localization of pain and temperature for the contralateral body; first stage of tactile object recognition.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-superior-division",
+      "artery-aca"
+    ],
+    "territories": [
+      "territory-mca",
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 40,
+          "y": -30,
+          "z": 55
+        },
+        "label": "postcentral gyrus behind the hand knob"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 40,
+          "y": -30,
+          "z": 55
+        },
+        "label": "postcentral gyrus behind the central sulcus"
+      }
+    ],
+    "normalAppearance": "The gyrus behind the central sulcus, thinner than the precentral gyrus on T1; the hand area faces the motor hand knob across the sulcus. Cortical infarcts here are thin ribbons on DWI.",
+    "pathology": [
+      {
+        "pathology": "Cortical sensory infarct",
+        "modality": "MRI",
+        "finding": "Ribbon of restricted diffusion along the postcentral gyrus, giving a cortical sensory syndrome sometimes misread as a peripheral lesion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Sensory seizures",
+        "modality": "MRI",
+        "finding": "Focal cortical lesion with tingling marching along the homunculus.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "DWI; FLAIR and EEG for seizures"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Loss of two-point discrimination, graphesthesia, stereognosis and localization on the opposite side",
+        "side": "contralateral",
+        "mechanism": "Cortical sensory processing"
+      },
+      {
+        "deficit": "Preserved crude touch and pain",
+        "side": "contralateral",
+        "mechanism": "Thalamic level perception survives"
+      },
+      {
+        "deficit": "Sensory extinction to double simultaneous stimulation",
+        "side": "contralateral",
+        "mechanism": "Early or partial parietal lesion"
+      },
+      {
+        "deficit": "Pseudoathetosis and clumsiness of the hand",
+        "side": "contralateral",
+        "mechanism": "Proprioceptive loss (area 3a and 2)"
+      }
+    ],
+    "examination": [
+      "Two-point discrimination, graphesthesia, stereognosis, joint position sense",
+      "Double simultaneous tactile stimulation",
+      "Touch and pin-prick (relatively preserved)"
+    ],
+    "syndromes": [
+      "syn-mca-superior-division",
+      "syn-lacunar-pure-sensory"
+    ],
+    "pearls": [
+      "Cortical sensory loss makes a hand useless despite normal strength: the 'useless hand' of a parietal stroke",
+      "Sensory marching seizures (Jacksonian sensory) start at the hand or face, the largest representations"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-postcentral-gyrus",
+      "section": "Structure and Function"
     },
-    "label": "postcentral gyrus behind the hand knob"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 40,
-     "y": -30,
-     "z": 55
+    {
+      "ref": "sp-somatosensory-cortex",
+      "section": "Structure and Function"
     },
-    "label": "postcentral gyrus behind the central sulcus"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The gyrus behind the central sulcus, thinner than the precentral gyrus on T1; the hand area faces the motor hand knob across the sulcus. Cortical infarcts here are thin ribbons on DWI.",
-  "pathology": [
-   {
-    "pathology": "Cortical sensory infarct",
-    "modality": "MRI",
-    "finding": "Ribbon of restricted diffusion along the postcentral gyrus, giving a cortical sensory syndrome sometimes misread as a peripheral lesion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Sensory seizures",
-    "modality": "MRI",
-    "finding": "Focal cortical lesion with tingling marching along the homunculus.",
-    "sequence": "FLAIR"
-   }
+  "tags": [
+    "cortex",
+    "parietal"
   ],
-  "sequenceOfChoice": "DWI; FLAIR and EEG for seizures"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Loss of two-point discrimination, graphesthesia, stereognosis and localization on the opposite side",
-    "side": "contralateral",
-    "mechanism": "Cortical sensory processing"
-   },
-   {
-    "deficit": "Preserved crude touch and pain",
-    "side": "contralateral",
-    "mechanism": "Thalamic level perception survives"
-   },
-   {
-    "deficit": "Sensory extinction to double simultaneous stimulation",
-    "side": "contralateral",
-    "mechanism": "Early or partial parietal lesion"
-   },
-   {
-    "deficit": "Pseudoathetosis and clumsiness of the hand",
-    "side": "contralateral",
-    "mechanism": "Proprioceptive loss (area 3a and 2)"
-   }
-  ],
-  "examination": [
-   "Two-point discrimination, graphesthesia, stereognosis, joint position sense",
-   "Double simultaneous tactile stimulation",
-   "Touch and pin-prick (relatively preserved)"
-  ],
-  "syndromes": [
-   "syn-mca-superior-division",
-   "syn-lacunar-pure-sensory"
-  ],
-  "pearls": [
-   "Cortical sensory loss makes a hand useless despite normal strength: the 'useless hand' of a parietal stroke",
-   "Sensory marching seizures (Jacksonian sensory) start at the hand or face, the largest representations"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    286,
-    286
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    147,
-    149
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    36,
-    38
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    54
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "parietal"
- ],
- "status": "draft",
- "latin": "Gyrus postcentralis",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "status": "draft",
+  "latin": "Gyrus postcentralis",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

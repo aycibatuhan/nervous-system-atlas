@@ -1,157 +1,129 @@
 {
- "kind": "syndrome",
- "id": "syn-chiari-tonsillar-ectopia",
- "name": "Chiari I malformation and tonsillar ectopia",
- "eponyms": [
-  "Chiari I malformation",
-  "Arnold–Chiari malformation (type II)"
- ],
- "category": "congenital",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cerebellar-tonsil",
-   "level-medulla-olive",
-   "spinal-cord",
-   "subarachnoid-space-cisterns"
+  "kind": "syndrome",
+  "id": "syn-chiari-tonsillar-ectopia",
+  "name": "Chiari I malformation and tonsillar ectopia",
+  "eponyms": [
+    "Chiari I malformation",
+    "Arnold–Chiari malformation (type II)"
   ],
-  "side": "midline"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "cerebellar-lobule-ix-l",
-   "cerebellar-lobule-ix-r"
-  ]
- },
- "presentation": "A young adult has occipital headaches that are triggered by coughing, straining or laughing and last seconds to minutes. Over time they notice that their hands are numb to heat and they have burned themselves without pain, a cape-like loss from an associated syrinx. Examination may show downbeat nystagmus, a lower cranial nerve palsy, limb ataxia or spastic legs. Many cases are incidental findings on MRI.",
- "deficits": [
-  {
-   "modality": "pain",
-   "side": "n/a",
-   "distribution": "occiput",
-   "sign": "Cough-induced occipital headache (Valsalva-related)",
-   "substrate": "cerebellar-tonsil"
+  "category": "congenital",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cerebellar-tonsil",
+      "level-medulla-olive",
+      "spinal-cord",
+      "subarachnoid-space-cisterns"
+    ],
+    "side": "midline"
   },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "bilateral",
-   "distribution": "cape distribution over arms and shoulders",
-   "sign": "Dissociated loss from an associated cervical syrinx",
-   "substrate": "pathway-lateral-spinothalamic"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "cerebellar-lobule-ix-l",
+      "cerebellar-lobule-ix-r"
+    ]
   },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "downbeat",
-   "sign": "Downbeat nystagmus from cervicomedullary compression",
-   "substrate": "flocculonodular-lobe"
+  "presentation": "A young adult has occipital headaches that are triggered by coughing, straining or laughing and last seconds to minutes. Over time they notice that their hands are numb to heat and they have burned themselves without pain, a cape-like loss from an associated syrinx. Examination may show downbeat nystagmus, a lower cranial nerve palsy, limb ataxia or spastic legs. Many cases are incidental findings on MRI.",
+  "deficits": [
+    {
+      "modality": "pain",
+      "side": "n/a",
+      "distribution": "occiput",
+      "sign": "Cough-induced occipital headache (Valsalva-related)",
+      "substrate": "cerebellar-tonsil"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "bilateral",
+      "distribution": "cape distribution over arms and shoulders",
+      "sign": "Dissociated loss from an associated cervical syrinx",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "downbeat",
+      "sign": "Downbeat nystagmus from cervicomedullary compression",
+      "substrate": "flocculonodular-lobe"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "bilateral",
+      "distribution": "lower cranial nerves",
+      "sign": "Dysphagia, hoarseness, sleep apnea from medullary compression",
+      "substrate": "nucleus-ambiguus"
+    }
+  ],
+  "reasoning": "In Chiari I malformation the cerebellar tonsils lie more than about five millimeters below the foramen magnum, crowding the cervicomedullary junction and obstructing the normal to-and-fro movement of CSF between the cranial and spinal compartments with each heartbeat and each Valsalva maneuver. The transient pressure difference across the foramen during coughing displaces the tonsils further and stretches the dura and lower cranial nerve roots, producing the characteriztic short occipital headaches. The obstruction also drives CSF into the central canal of the cervical cord, producing syringomyelia in a substantial fraction of patients; the expanding cavity first destroys the fibers of the spinothalamic tract crossing in the anterior white commissure, which gives the bilateral dissociated loss of pain and temperature in the arms and shoulders with preserved touch and proprioception, before spreading to the anterior horns and lateral columns. Compression of the medulla and the lower cerebellum accounts for downbeat nystagmus, lower cranial nerve palsies and ataxia; because the compressed structures are midline, most signs are bilateral and there is no lateralizing rule. The malformation is often silent, and an incidental ectopia without a syrinx or symptoms needs only observation.",
+  "imagingFindings": [
+    {
+      "pathology": "Tonsillar ectopia",
+      "modality": "MRI",
+      "finding": "Peg-shaped cerebellar tonsils extending more than 5 mm below the basion–opisthion line on a sagittal T1 image, with crowding of the foramen magnum and effacement of the cisterna magna.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Syringomyelia",
+      "modality": "MRI",
+      "finding": "Central CSF-intensity cavity within the cervical (or thoracic) cord on sagittal T2; check the entire cord.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "CSF flow study",
+      "modality": "MRI",
+      "finding": "Reduced or absent pulsatile CSF flow at the foramen magnum on phase-contrast cine imaging.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Congenital small posterior fossa",
+    "Intracranial hypotension (acquired tonsillar descent, reversible)",
+    "Raised intracranial pressure from a mass (acquired, an emergency)",
+    "Lumboperitoneal shunting"
+  ],
+  "mimics": [
+    {
+      "name": "Cough headache of other cause",
+      "howToDistinguish": "Normal MRI"
+    },
+    {
+      "name": "Tonsillar herniation from a mass",
+      "howToDistinguish": "Acute, with drowsiness and a supratentorial or posterior fossa lesion"
+    },
+    {
+      "name": "Intracranial hypotension",
+      "howToDistinguish": "Orthostatic headache with dural enhancement and slumping of the brainstem"
+    }
+  ],
+  "management": [
+    "Observation for asymptomatic ectopia without a syrinx",
+    "Posterior fossa decompression for symptomatic patients or a progressive syrinx",
+    "Do not perform a lumbar puncture when the tonsils are low without considering the risk of further descent"
+  ],
+  "citations": [
+    {
+      "ref": "sp-chiari-malformation-type-1",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-syringomyelia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-chiari-malformation-type-2",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -55
+    },
+    "label": "cerebellar tonsils at the foramen magnum"
   },
-  {
-   "modality": "cranial-nerve",
-   "side": "bilateral",
-   "distribution": "lower cranial nerves",
-   "sign": "Dysphagia, hoarseness, sleep apnea from medullary compression",
-   "substrate": "nucleus-ambiguus"
-  }
- ],
- "reasoning": "In Chiari I malformation the cerebellar tonsils lie more than about five millimeters below the foramen magnum, crowding the cervicomedullary junction and obstructing the normal to-and-fro movement of CSF between the cranial and spinal compartments with each heartbeat and each Valsalva maneuver. The transient pressure difference across the foramen during coughing displaces the tonsils further and stretches the dura and lower cranial nerve roots, producing the characteriztic short occipital headaches. The obstruction also drives CSF into the central canal of the cervical cord, producing syringomyelia in a substantial fraction of patients; the expanding cavity first destroys the fibers of the spinothalamic tract crossing in the anterior white commissure, which gives the bilateral dissociated loss of pain and temperature in the arms and shoulders with preserved touch and proprioception, before spreading to the anterior horns and lateral columns. Compression of the medulla and the lower cerebellum accounts for downbeat nystagmus, lower cranial nerve palsies and ataxia; because the compressed structures are midline, most signs are bilateral and there is no lateralizing rule. The malformation is often silent, and an incidental ectopia without a syrinx or symptoms needs only observation.",
- "imagingFindings": [
-  {
-   "pathology": "Tonsillar ectopia",
-   "modality": "MRI",
-   "finding": "Peg-shaped cerebellar tonsils extending more than 5 mm below the basion–opisthion line on a sagittal T1 image, with crowding of the foramen magnum and effacement of the cisterna magna.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Syringomyelia",
-   "modality": "MRI",
-   "finding": "Central CSF-intensity cavity within the cervical (or thoracic) cord on sagittal T2; check the entire cord.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "CSF flow study",
-   "modality": "MRI",
-   "finding": "Reduced or absent pulsatile CSF flow at the foramen magnum on phase-contrast cine imaging.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Congenital small posterior fossa",
-  "Intracranial hypotension (acquired tonsillar descent, reversible)",
-  "Raised intracranial pressure from a mass (acquired, an emergency)",
-  "Lumboperitoneal shunting"
- ],
- "mimics": [
-  {
-   "name": "Cough headache of other cause",
-   "howToDistinguish": "Normal MRI"
-  },
-  {
-   "name": "Tonsillar herniation from a mass",
-   "howToDistinguish": "Acute, with drowsiness and a supratentorial or posterior fossa lesion"
-  },
-  {
-   "name": "Intracranial hypotension",
-   "howToDistinguish": "Orthostatic headache with dural enhancement and slumping of the brainstem"
-  }
- ],
- "management": [
-  "Observation for asymptomatic ectopia without a syrinx",
-  "Posterior fossa decompression for symptomatic patients or a progressive syrinx",
-  "Do not perform a lumbar puncture when the tonsils are low without considering the risk of further descent"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    215,
-    215
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 18,
-   "pages": [
-    513,
-    513
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    44,
-    44
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    112,
-    112
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    270,
-    270
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -55
-  },
-  "label": "cerebellar tonsils at the foramen magnum"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

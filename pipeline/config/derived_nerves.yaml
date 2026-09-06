@@ -1,0 +1,80 @@
+# Derived nerve courses: polylines for nerves that no source atlas contains, swept into round tubes by
+# pipeline/atlas_pipeline/derived.py (`atlas-derived`).  Nothing here is exported geometry -- every mesh built
+# from this file is tagged `derived` in the manifest and flagged as schematic in its content entry.
+#
+# Coordinates are Z-Anatomy world metres (+x = subject LEFT, +y = posterior, +z = up), the same frame as
+# pipeline/work/zanatomy/objects.json, so every waypoint can be checked against a named Z-Anatomy object.
+# They are mapped to MNI152NLin2009cAsym RAS mm with pipeline/config/zanatomy_to_mni.json and the tube is
+# built after that mapping, so `radius_mm` is a true millimetre radius in MNI space.
+#
+# `via` records the Z-Anatomy object each waypoint was read off (bbox, vertex-mean centroid, nearest surface
+# vertex or curve control point).  Cardiac waypoints are the heart-chamber surface offset ~3 mm laterally so
+# the nerve lies on the pericardium rather than inside the myocardium.
+
+nerves:
+  - id: phrenic-nerve
+    name: Phrenic nerve
+    system: peripheral
+    subsystem: neck
+    structureId: nerve-phrenic
+    colour: "#F0E4B0"
+    radius_mm: 1.5
+    budget: 4000
+    derived: "polyline through Z-Anatomy landmarks (C4 spinal ganglion, scalenus anterior, subclavian vessels, brachiocephalic vein, aortic arch / SVC, heart, diaphragm), Catmull-Rom smoothed, swept as a 1.5 mm tube"
+    sides:
+      l:
+        - [0.0150, 0.0155, 1.5040]   # via Spinal ganglion.l component 2 (C4), just lateral to it: C4 ventral ramus
+        - [0.0180, 0.0130, 1.4960]   # C3 and C5 contributions join at the upper pole of Scalenus anterior muscle.l (top z 1.4936)
+        - [0.0250, 0.0020, 1.4870]   # anterior surface of Scalenus anterior muscle.l at z 1.4868 (surface 0.0257, 0.0031)
+        - [0.0285, -0.0028, 1.4730]  # anterior surface of the same muscle at z 1.4726 (surface 0.0325, -0.0015)
+        - [0.0300, -0.0058, 1.4590]  # anterior surface at z 1.4586 (surface 0.0353, -0.0045)
+        - [0.0315, -0.0090, 1.4430]  # crossing the muscle towards its medial border (muscle x 0.0310-0.0440 at z 1.4430)
+        - [0.0300, -0.0100, 1.4270]  # leaving the medial border of the anterior scalene at the root of the neck
+        - [0.0270, -0.0075, 1.4110]  # between Left subclavian vein (y -0.0175) in front and Left subclavian artery (y +0.0038) behind
+        - [0.0235, -0.0125, 1.4020]  # thoracic inlet, behind Left brachiocephalic vein (control point 0.0178, -0.0240, 1.4034)
+        - [0.0255, -0.0075, 1.3830]  # on the left side of the Aortic arch (summit control point 0.0180, 0.0006, 1.3844)
+        - [0.0330, -0.0170, 1.3550]  # on the pericardium anterior to the hilum of the left lung
+        - [0.0388, -0.0190, 1.3360]  # Left atrium surface (0.0353, -0.0186, 1.3364) + 3 mm lateral
+        - [0.0511, -0.0272, 1.3075]  # Left ventricle surface (0.0481, -0.0267, 1.3075) + 3 mm lateral
+        - [0.0734, -0.0375, 1.2830]  # Left ventricle surface (0.0704, -0.0370, 1.2830) + 3 mm lateral
+        - [0.0746, -0.0441, 1.2589]  # Left ventricle surface (0.0716, -0.0436, 1.2589) + 3 mm lateral
+        - [0.0671, -0.0387, 1.2381]  # Diaphragm vertex, left dome just lateral to the pericardium
+      r:
+        - [-0.0150, 0.0155, 1.5040]  # via Spinal ganglion.r component 2 (C4): C4 ventral ramus
+        - [-0.0180, 0.0130, 1.4960]  # upper pole of Scalenus anterior muscle.r
+        - [-0.0250, 0.0020, 1.4870]  # anterior surface of Scalenus anterior muscle.r at z 1.4868
+        - [-0.0285, -0.0028, 1.4730] # anterior surface at z 1.4726
+        - [-0.0300, -0.0058, 1.4590] # anterior surface at z 1.4586
+        - [-0.0315, -0.0090, 1.4430] # crossing towards the medial border of the muscle
+        - [-0.0300, -0.0100, 1.4270] # leaving the medial border at the root of the neck
+        - [-0.0270, -0.0075, 1.4110] # between Right subclavian vein in front and Right subclavian artery behind
+        - [-0.0235, -0.0125, 1.4020] # thoracic inlet, behind Right brachiocephalic vein (control point -0.0193, -0.0192, 1.3916)
+        - [-0.0230, -0.0165, 1.3830] # lateral to the Superior vena cava (control points -0.0144/-0.0166, -0.023/-0.0178)
+        - [-0.0270, -0.0140, 1.3550] # along the SVC, anterior to the hilum of the right lung
+        - [-0.0339, -0.0118, 1.3298] # Right atrium surface (-0.0309, -0.0118, 1.3298) + 3 mm lateral
+        - [-0.0397, -0.0095, 1.3001] # Right atrium surface (-0.0367, -0.0095, 1.3001) + 3 mm lateral
+        - [-0.0371, -0.0120, 1.2706] # Right atrium surface (-0.0341, -0.0120, 1.2706) + 3 mm lateral
+        - [-0.0375, -0.0236, 1.2581] # Diaphragm vertex, right dome beside the caval opening
+
+  - id: lumbosacral-trunk
+    name: Lumbosacral trunk
+    system: peripheral
+    subsystem: lower-limb
+    structureId: lumbosacral-trunk
+    colour: "#F0E4B0"
+    radius_mm: 2.0
+    budget: 3000
+    derived: "polyline joining the L4/L5 anterior rami to the sacral plexus over the ala of the sacrum, read off the Z-Anatomy lumbosacral plexus, obturator, superior gluteal and sciatic nerve geometry; Catmull-Rom smoothed, swept as a 2 mm tube"
+    sides:
+      l:
+        - [0.0180, 0.0270, 1.0100]   # L4 and L5 anterior rami at the medial border of psoas, level of Intervertebral disc L4-L5 (z 0.987-1.006)
+        - [0.0215, 0.0310, 0.9870]   # crossing the pelvic brim on the ala of the sacrum (plexus medial point 0.0240, 0.0333, 0.9775)
+        - [0.0245, 0.0380, 0.9640]   # in front of the sacro-iliac joint (Superior gluteal nerve.l medial point 0.0285, 0.0269, 0.9639)
+        - [0.0270, 0.0430, 0.9430]   # meeting the S1 ramus at the upper border of piriformis (Sciatic nerve.l medial point 0.0197, 0.0374, 0.9320)
+        - [0.0285, 0.0480, 0.9280]   # merging into the sacral plexus (Sciatic nerve.l at z 0.9216: x 0.0156-0.0489, y 0.0145-0.0621)
+      r:
+        - [-0.0180, 0.0270, 1.0100]  # L4 and L5 anterior rami at the medial border of psoas
+        - [-0.0215, 0.0310, 0.9870]  # crossing the pelvic brim on the ala of the sacrum
+        - [-0.0245, 0.0380, 0.9640]  # in front of the sacro-iliac joint
+        - [-0.0270, 0.0430, 0.9430]  # meeting the S1 ramus at the upper border of piriformis
+        - [-0.0285, 0.0480, 0.9280]  # merging into the sacral plexus

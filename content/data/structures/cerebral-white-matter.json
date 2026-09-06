@@ -1,210 +1,174 @@
 {
- "kind": "structure",
- "id": "cerebral-white-matter",
- "name": "Cerebral white matter",
- "synonyms": [
-  "centrum semiovale",
-  "corona radiata (with)",
-  "subcortical white matter"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cerebral-white-matter-l",
-  "cerebral-white-matter-r"
- ],
- "summary": "The cerebral white matter is the mass of myelinated axons beneath the cortex and around the ventricles that connects cortex with cortex (association fibers), the two hemispheres (commissural fibers) and the cortex with the thalamus, brainstem and spinal cord (projection fibers), organized into the centrum semiovale, the corona radiata and the deep bundles of the internal capsule and the long fasciculi. It is supplied by long penetrating medullary arteries from the pial network and by the lenticulostriate and choroidal arteries, which makes its periventricular and deep parts border zones. It is the tissue of small vessel disease, multiple sclerosis, leukodystrophy and diffuse axonal injury, and its disconnection produces the syndromes of the hemisphere without cortical damage.",
- "anatomy": {
-  "location": "All the tissue between the cortical gray matter and the lateral ventricles and deep nuclei: the subcortical U-fibers, the centrum semiovale above the ventricles, the corona radiata fanning into the internal capsule, and the association bundles running beneath the cortex of each lobe and around the ventricles.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Thalamus",
-    "via": "thalamocortical radiations"
-   },
-   {
-    "from": "Contralateral cortex",
-    "via": "corpus callosum and anterior commissure"
-   },
-   {
-    "from": "Ipsilateral cortex",
-    "via": "association fasciculi"
-   }
+  "kind": "structure",
+  "id": "cerebral-white-matter",
+  "name": "Cerebral white matter",
+  "synonyms": [
+    "centrum semiovale",
+    "corona radiata (with)",
+    "subcortical white matter"
   ],
-  "efferents": [
-   {
-    "to": "Spinal cord, brainstem and pons",
-    "via": "corticospinal, corticobulbar and corticopontine fibers via the internal capsule"
-   },
-   {
-    "to": "Striatum and thalamus",
-    "via": "corticostriatal and corticothalamic fibers"
-   },
-   {
-    "to": "Contralateral cortex",
-    "via": "commissural fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cerebral-white-matter-l",
+    "cerebral-white-matter-r"
   ],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-visual",
-   "pathway-dcml"
-  ]
- },
- "function": "Short association U-fibers join adjacent gyri, and the long fasciculi (arcuate and superior longitudinal, inferior longitudinal, inferior fronto-occipital, uncinate and cingulum) join the lobes into the language, attention, visual and limbic networks; the corpus callosum and the anterior commissure join the hemispheres; and the projection fibers of the corona radiata carry the corticospinal, corticobulbar, corticopontine and thalamocortical systems through the internal capsule. Oligodendrocyte myelin allows fast conduction, and periventricular regions are perfused by end-arteries so that they suffer first in hypoperfusion and hypertensive small vessel disease. Damage produces disconnection syndromes, slowing and gait and executive decline out of proportion to focal signs.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-aca",
-   "artery-pca",
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal"
+  "summary": "The cerebral white matter is the mass of myelinated axons beneath the cortex and around the ventricles that connects cortex with cortex (association fibers), the two hemispheres (commissural fibers) and the cortex with the thalamus, brainstem and spinal cord (projection fibers), organized into the centrum semiovale, the corona radiata and the deep bundles of the internal capsule and the long fasciculi. It is supplied by long penetrating medullary arteries from the pial network and by the lenticulostriate and choroidal arteries, which makes its periventricular and deep parts border zones. It is the tissue of small vessel disease, multiple sclerosis, leukodystrophy and diffuse axonal injury, and its disconnection produces the syndromes of the hemisphere without cortical damage.",
+  "anatomy": {
+    "location": "All the tissue between the cortical gray matter and the lateral ventricles and deep nuclei: the subcortical U-fibers, the centrum semiovale above the ventricles, the corona radiata fanning into the internal capsule, and the association bundles running beneath the cortex of each lobe and around the ventricles.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Thalamus",
+        "via": "thalamocortical radiations"
+      },
+      {
+        "from": "Contralateral cortex",
+        "via": "corpus callosum and anterior commissure"
+      },
+      {
+        "from": "Ipsilateral cortex",
+        "via": "association fasciculi"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Spinal cord, brainstem and pons",
+        "via": "corticospinal, corticobulbar and corticopontine fibers via the internal capsule"
+      },
+      {
+        "to": "Striatum and thalamus",
+        "via": "corticostriatal and corticothalamic fibers"
+      },
+      {
+        "to": "Contralateral cortex",
+        "via": "commissural fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-visual",
+      "pathway-dcml"
+    ]
+  },
+  "function": "Short association U-fibers join adjacent gyri, and the long fasciculi (arcuate and superior longitudinal, inferior longitudinal, inferior fronto-occipital, uncinate and cingulum) join the lobes into the language, attention, visual and limbic networks; the corpus callosum and the anterior commissure join the hemispheres; and the projection fibers of the corona radiata carry the corticospinal, corticobulbar, corticopontine and thalamocortical systems through the internal capsule. Oligodendrocyte myelin allows fast conduction, and periventricular regions are perfused by end-arteries so that they suffer first in hypoperfusion and hypertensive small vessel disease. Damage produces disconnection syndromes, slowing and gait and executive decline out of proportion to focal signs.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-aca",
+      "artery-pca",
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-mca-major",
+      "territory-aca-major",
+      "territory-pca-major"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebral-white-matter-l"
+        },
+        "label": "centrum semiovale above the lateral ventricles"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cerebral-white-matter-r"
+        },
+        "label": "corona radiata converging into the internal capsule"
+      }
+    ],
+    "normalAppearance": "Homogeneous bright tissue on T1 and dark on T2 between cortex and ventricles in adults; a thin periventricular FLAIR rim (ependymitis granularis) at the frontal horns is normal, and a few punctate white-matter hyperintensities are common after 60.",
+    "pathology": [
+      {
+        "pathology": "Cerebral small vessel disease",
+        "modality": "MRI",
+        "finding": "Confluent periventricular and deep white-matter FLAIR hyperintensities with lacunes, microbleeds and enlarged perivascular spaces; correlates with gait and executive decline.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Multiple sclerosis",
+        "modality": "MRI",
+        "finding": "Ovoid periventricular lesions perpendicular to the ventricles (Dawson fingers), juxtacortical and callosal lesions, some enhancing when active.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Diffuse axonal injury",
+        "modality": "MRI",
+        "finding": "Punctate microbleeds at the gray-white junction, in the corpus callosum and in the dorsolateral brainstem after acceleration injury, with coma out of proportion to CT findings.",
+        "sequence": "SWI"
+      },
+      {
+        "pathology": "Leukodystrophy",
+        "modality": "MRI",
+        "finding": "Symmetric confluent white-matter T2 signal change with a pattern that suggests the disorder: parieto-occipital in adrenoleukodystrophy, frontal in Alexander disease, with sparing or involvement of U-fibers.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Disconnection syndromes (conduction aphasia, alexia without agraphia, apraxia)",
+        "side": "n/a",
+        "mechanism": "Interruption of association or commissural bundles with intact cortex"
+      },
+      {
+        "deficit": "Subcortical cognitive slowing, gait apraxia and executive dysfunction",
+        "side": "bilateral",
+        "mechanism": "Diffuse loss of frontal-subcortical connections in small vessel disease"
+      },
+      {
+        "deficit": "Contralateral hemiparesis or hemianopia from projection fiber lesions",
+        "side": "contralateral",
+        "mechanism": "Interruption of the corona radiata or the optic radiation"
+      }
+    ],
+    "examination": [
+      "Gait, speed of processing and executive tests in suspected small vessel disease",
+      "Vascular risk factor review",
+      "Tests of interhemispheric and intrahemispheric transfer when a disconnection is suspected"
+    ],
+    "syndromes": [
+      "syn-multiple-sclerosis-pattern",
+      "syn-callosal-disconnection",
+      "syn-watershed-infarct",
+      "syn-normal-pressure-hydrocephalus"
+    ],
+    "pearls": [
+      "White-matter disease produces slowing and gait failure before any focal sign",
+      "Dawson fingers point away from the ventricles along the veins: that is demyelination, not vascular disease",
+      "A leukodystrophy is symmetric and confluent; vascular disease is patchy and asymmetric"
+    ]
+  },
+  "pitfalls": [
+    "Age-related white-matter hyperintensities are not multiple sclerosis; shape, location and the corpus callosum decide"
   ],
-  "territories": [
-   "territory-mca-major",
-   "territory-aca-major",
-   "territory-pca-major"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebral-white-matter-l"
+  "citations": [
+    {
+      "ref": "sp-white-matter-lesions",
+      "section": "Pathophysiology"
     },
-    "label": "centrum semiovale above the lateral ventricles"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cerebral-white-matter-r"
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
     },
-    "label": "corona radiata converging into the internal capsule"
-   }
+    {
+      "ref": "sp-cerebral-hemisphere",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Homogeneous bright tissue on T1 and dark on T2 between cortex and ventricles in adults; a thin periventricular FLAIR rim (ependymitis granularis) at the frontal horns is normal, and a few punctate white-matter hyperintensities are common after 60.",
-  "pathology": [
-   {
-    "pathology": "Cerebral small vessel disease",
-    "modality": "MRI",
-    "finding": "Confluent periventricular and deep white-matter FLAIR hyperintensities with lacunes, microbleeds and enlarged perivascular spaces; correlates with gait and executive decline.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Multiple sclerosis",
-    "modality": "MRI",
-    "finding": "Ovoid periventricular lesions perpendicular to the ventricles (Dawson fingers), juxtacortical and callosal lesions, some enhancing when active.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Diffuse axonal injury",
-    "modality": "MRI",
-    "finding": "Punctate microbleeds at the gray-white junction, in the corpus callosum and in the dorsolateral brainstem after acceleration injury, with coma out of proportion to CT findings.",
-    "sequence": "SWI"
-   },
-   {
-    "pathology": "Leukodystrophy",
-    "modality": "MRI",
-    "finding": "Symmetric confluent white-matter T2 signal change with a pattern that suggests the disorder: parieto-occipital in adrenoleukodystrophy, frontal in Alexander disease, with sparing or involvement of U-fibers.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Disconnection syndromes (conduction aphasia, alexia without agraphia, apraxia)",
-    "side": "n/a",
-    "mechanism": "Interruption of association or commissural bundles with intact cortex"
-   },
-   {
-    "deficit": "Subcortical cognitive slowing, gait apraxia and executive dysfunction",
-    "side": "bilateral",
-    "mechanism": "Diffuse loss of frontal-subcortical connections in small vessel disease"
-   },
-   {
-    "deficit": "Contralateral hemiparesis or hemianopia from projection fiber lesions",
-    "side": "contralateral",
-    "mechanism": "Interruption of the corona radiata or the optic radiation"
-   }
+  "tags": [
+    "white matter",
+    "association fibers",
+    "small vessel disease"
   ],
-  "examination": [
-   "Gait, speed of processing and executive tests in suspected small vessel disease",
-   "Vascular risk factor review",
-   "Tests of interhemispheric and intrahemispheric transfer when a disconnection is suspected"
-  ],
-  "syndromes": [
-   "syn-multiple-sclerosis-pattern",
-   "syn-callosal-disconnection",
-   "syn-watershed-infarct",
-   "syn-normal-pressure-hydrocephalus"
-  ],
-  "pearls": [
-   "White-matter disease produces slowing and gait failure before any focal sign",
-   "Dawson fingers point away from the ventricles along the veins: that is demyelination, not vascular disease",
-   "A leukodystrophy is symmetric and confluent; vascular disease is patchy and asymmetric"
-  ]
- },
- "pitfalls": [
-  "Age-related white-matter hyperintensities are not multiple sclerosis; shape, location and the corpus callosum decide"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    466,
-    470
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 2,
-   "pages": [
-    11,
-    20
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    190,
-    194
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 21,
-   "pages": [
-    224,
-    228
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 31,
-   "pages": [
-    309,
-    312
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "association fibers",
-  "small vessel disease"
- ],
- "status": "draft",
- "subsystem": "white-matter"
+  "status": "draft",
+  "subsystem": "white-matter"
 }

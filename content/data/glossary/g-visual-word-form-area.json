@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-visual-word-form-area",
- "term": "Visual word form area",
- "definition": "A region of the left posterior fusiform gyrus that learns to recognize letter strings and familiar words as visual wholes; its damage produces pure alexia with letter-by-letter reading whose time grows with word length.",
- "related": [
-  "g-alexia-without-agraphia",
-  "g-ventral-stream"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-visual-word-form-area",
+  "term": "Visual word form area",
+  "definition": "A region of the left posterior fusiform gyrus that learns to recognize letter strings and familiar words as visual wholes; its damage produces pure alexia with letter-by-letter reading whose time grows with word length.",
+  "related": [
+    "g-alexia-without-agraphia",
+    "g-ventral-stream"
+  ],
+  "citations": [
+    {
+      "ref": "sp-alexia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    }
+  ]
 }

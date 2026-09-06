@@ -2,20 +2,20 @@
 
 A local, browser-based 3D atlas of clinical neuroanatomy with synchronized MRI slices, arterial territory maps, pathway tracing, a syndrome/lesion mode, clinical topics, a glossary and a quiz. Everything is expressed in one coordinate frame, MNI152NLin2009cAsym RAS millimeters, so the 3D meshes, the T1/T2 slices and the label overlays line up exactly.
 
-The text is original prose written from two clinical neuroanatomy textbooks (Snell's Clinical Neuroanatomy, 8th ed.; Berkowitz, Clinical Neurology and Neuroanatomy, Lange 2017), cited by printed page. No book figures or text are shipped; the books live in the private `source/` folder and are not part of the repository.
+The text is original prose. Every entry is cited to **open-access sources that anyone can read online for free** — StatPearls chapters on the NCBI Bookshelf, open-access journal articles in PubMed Central, and openly licensed textbooks — so the atlas can be read, checked and redistributed without a paywall. See [Sources and citations](#sources-and-citations).
 
 ## What is in it
 
 | Kind | Count | Notes |
 |---|---|---|
-| Structures | 352 | every mesh in the manifest has an entry: lobes and all 48 Harvard-Oxford gyri per side, hippocampal subfields, basal forebrain, thalamic and hypothalamic nuclei, brainstem nuclei, cerebellar lobules, white-matter tracts, arterial territories, ventricles, meninges, arteries, spinal cord, peripheral and cutaneous nerves, autonomic |
+| Structures | 360 | every mesh in the manifest has an entry: deep cerebral veins, spinal cord segments, lobes and all 48 Harvard-Oxford gyri per side, hippocampal subfields, basal forebrain, thalamic and hypothalamic nuclei, brainstem nuclei, cerebellar lobules, white-matter tracts, arterial territories, ventricles, meninges, arteries, spinal cord, peripheral and cutaneous nerves, autonomic |
 | Cranial nerves | 12 | nuclei, course, branches, reflexes, bedside tests, localizing signs |
 | Pathways | 25 | neuron chain, decussation, clickable waypoints, lesion effects by level |
 | Syndromes | 125 | localization, deficits with substrates, crossing logic, imaging, mimics, management pearls |
 | Topics | 19 | development and malformations, CSF and the blood–brain barrier, neurotransmitters, sleep and EEG, epilepsy, headache, dementia, movement disorders, neuromuscular patterns, pediatric syndromes, localization approach, imaging basics, stroke mechanisms, CNS infections, tumors, leukodystrophies and mitochondrial disease, nerve injury, cortical layers, coma and brain death |
 | Glossary | 205 | |
 | Quiz | 60 | original vignettes; the answer spotlights the structures in 3D |
-| Meshes | 573 | MNI atlases (2× signed-distance marching cubes, welded parcels) + BodyParts3D and Z-Anatomy (landmark-registered): cranial nerves, plexuses, limb and cutaneous nerves, dural sinuses, brainstem nuclei, spinal gray and white matter; 38.9 MB full detail + 5.1 MB stand-ins, first paint about 4.6 MB |
+| Meshes | 595 | MNI atlases (2× signed-distance marching cubes, welded parcels) + VENAT venous atlas (deep cerebral veins, straight sinus, whole venous surface) + BodyParts3D and Z-Anatomy (landmark-registered): cranial nerves, plexuses, limb and cutaneous nerves, dural sinuses, brainstem nuclei, spinal gray and white matter, lumbosacral roots and ganglia; 9 derived meshes (phrenic nerves, cord segments, lumbosacral trunks, fourth-ventricle choroid plexus); 39.8 MB full detail + 5.2 MB stand-ins, first paint about 4.6 MB |
 
 Data sources and licences are listed in `public/data/manifest.json` and `pipeline/config/sources.yaml`. Some atlases are non-commercial (flagged `nc` in the manifest and switchable in the tree).
 
@@ -35,7 +35,7 @@ uv run --project pipeline atlas-build      # download → volumes → BP3D selec
 node scripts/check-data.ts                 # integrity check of the generated data
 ```
 
-Individual steps: `atlas-download`, `atlas-volumes`, `atlas-bp3d-select`, `atlas-register`, `atlas-bp3d-meshes`, `atlas-atlas-meshes`, `atlas-labels`, `atlas-manifest`, `atlas-qa`. Z-Anatomy (needs the `blender/` venv with `bpy`): `blender/.venv/bin/python blender/export_zanatomy.py`, then `atlas-zanatomy-register`, `atlas-zanatomy-meshes`, `atlas-manifest`. `pipeline/rebuild.sh` runs the full mesh rebuild; `pipeline/add_zanatomy.sh` adds the Z-Anatomy entries listed in it.
+Individual steps: `atlas-download`, `atlas-volumes`, `atlas-bp3d-select`, `atlas-register`, `atlas-bp3d-meshes`, `atlas-atlas-meshes`, `atlas-venat`, `atlas-labels`, `atlas-manifest`, `atlas-qa`. Meshes that no source ships are constructed by `atlas-derived` (spinal cord segment blocks, phrenic nerves, lumbosacral trunk, fourth-ventricle choroid plexus; waypoints in `pipeline/config/derived_nerves.yaml`). Z-Anatomy (needs the `blender/` venv with `bpy`): `blender/.venv/bin/python blender/export_zanatomy.py`, then `atlas-zanatomy-register`, `atlas-zanatomy-meshes`, `atlas-manifest`. `pipeline/rebuild.sh` runs the full mesh rebuild; `pipeline/add_zanatomy.sh` adds the Z-Anatomy entries listed in it; `pipeline/add_brainstem_navigator.sh` ingests a manually downloaded Brainstem Navigator toolkit.
 
 Meshing (`pipeline/atlas_pipeline/meshing.py`): label masks are converted to a signed-distance field, upsampled 2× trilinearly, smoothed, meshed at the zero level, Taubin-smoothed (20 iterations, λ 0.5 / μ −0.53), quadric-decimated to per-class budgets (`catalog.BUDGET`: cortical parcels 20k, subcortical 8k, brainstem/cerebellum 40k, envelope 60k) and welded across neighbouring parcels of one atlas; meshes above 12k triangles also get a 3k-triangle `*.lod.glb` stand-in. Colours and opacities are refreshed from `catalog.py` and the selection YAML files by `atlas-manifest`, so palette edits never need a re-mesh. Nerve tubes exported from Z-Anatomy get a minimum radius of 1 mm (cranial) or 1.5 mm (peripheral) with round caps.
 
@@ -59,7 +59,36 @@ Reference views: `node scripts/shots.mjs <tag>` (set `QUALITY=high` for the comp
 
 Content lives as JSON in `content/data/<kind>/<id>.json`, validated by the zod schemas in `content/schema/` (`structure`, `cranial-nerve`, `pathway`, `syndrome`, `topic`, `glossary`, `quiz`). Entries are written with the Python helpers in `tools/author/` (`lib.py` for structures and topics, `synlib.py` for syndromes, `corlib.py`/`tractlib.py` for mesh-backed parcels and tracts) and the batch scripts `batchNN_*.py`; `node scripts/content/build.ts` validates, checks cross-links, word minimums, spelling, an 11-word-shingle overlap check against the private reference corpus, and bundles.
 
-Rules: American spelling; every entry cites printed pages; syndromes must state the crossing/side logic; imaging block mandatory; no figure or table references; no reused book vignettes.
+Rules: American spelling; every non-glossary entry carries at least one open-access citation; syndromes must state the crossing/side logic; imaging block mandatory; no figure or table references; all quiz vignettes original.
+
+## Sources and citations
+
+Counts today: **616 sources — 604 StatPearls chapters, 11 open-access PubMed Central articles and 1 openly licensed textbook page — carrying 2195 citations across 806 entries** (1–4 refs each; 2154 of them name a section that was read from the live chapter). No printed textbook is referenced anywhere in the shipped atlas.
+
+Citations are open access only. A citation is `{"ref": "<id>", "section": "...", "note": "..."}` and `ref` names a file in `content/bibliography/<ref>.json`; the build fails on an unknown ref, and `npm run citations:check` fails on any citation that is not in this form, on an unverified bibliography entry and on a bibliography entry nothing cites.
+
+A bibliography entry records the title, authors, year, container, canonical free full-text URL, the accession that identifies it (`nbk` for the NCBI Bookshelf, `pmcid`/`doi`/`pmid` for articles), the licence and `verified: true`. **`verified: true` is only ever written by a tool from live source metadata** — never by hand:
+
+| Type | What it is | Added with |
+|---|---|---|
+| `statpearls` | peer-reviewed StatPearls chapter on the NCBI Bookshelf (`https://www.ncbi.nlm.nih.gov/books/NBK…/`) | `tools/cite/statpearls.py`, in bulk by `tools/cite/migrate.py` |
+| `journal` | open-access article, stored with its PMCID and the PMC URL | `tools/cite/oa.py --pmcid PMC…` |
+| `book` / `web` | openly licensed textbook or reference page (OpenStax *Anatomy and Physiology 2e*, UTHealth *Neuroscience Online*, Radiopaedia) with a specific section | `tools/cite/oa.py --web <url> …` (only written after the URL returns HTTP 200) |
+
+The citation tooling lives in `tools/cite/`:
+
+```bash
+python3 tools/cite/catalog.py --terms-from-content   # harvest the StatPearls chapter catalog (cached in reference/)
+python3 tools/cite/migrate.py                        # dry run: per-entry plan and match-quality table
+python3 tools/cite/migrate.py --unmatched            # entries needing a manual mapping decision, with candidates
+python3 tools/cite/migrate.py --apply                # write bibliography entries and rewrite every citations array
+python3 tools/cite/statpearls.py --search "phrenic nerve"
+python3 tools/cite/oa.py --pmc-search "claustrum connectivity review"
+```
+
+`migrate.py` derives search terms from each entry's name, synonyms, id and kind, queries the NCBI E-utilities (`esearch`/`esummary`, ≤3 requests/s, every response cached under the gitignored `reference/`), scores candidate chapters with a rarity-weighted title match, and adds system- and lobe-level chapters as supporting refs. Chapter section names (`"Structure and Function"`, `"Clinical Significance"`, …) are read from the live chapter, never guessed. Decisions the automatic pass cannot make are recorded by hand in `tools/cite/mapping.json`. Re-running `migrate.py --apply` is safe: entries whose citations are already refs are left untouched.
+
+`tools/ref_*.py` and `tools/refcorpus.py` build an **optional private text corpus** under `reference/` used only by the build's 11-word-shingle plagiarism check (`scripts/content/plagiarism.ts`). Nothing from it is shipped, and the check is skipped when `reference/` is absent.
 
 ## Checks
 
@@ -67,6 +96,7 @@ Rules: American spelling; every entry cites printed pages; syndromes must state 
 npm run typecheck
 npm test
 npm run content:validate
+npm run citations:check
 node scripts/check-data.ts
 uv run --project pipeline atlas-qa       # data gates
 npx playwright install chromium && npm run e2e   # browser smoke tests against the dev server
@@ -74,9 +104,10 @@ npx playwright install chromium && npm run e2e   # browser smoke tests against t
 
 ## Not covered
 
-- No mesh exists in the sources for the phrenic nerve, the deep cerebral veins (internal cerebral, basal, great cerebral vein), the choroid plexus of the fourth ventricle or individual spinal cord segments; the lumbosacral plexus mesh is assembled from its proximal branches because Z-Anatomy has no roots or trunks for it. These remain content-only ("virtual") structures.
-- Brainstem Navigator nuclei need a manual NITRC download and are not included.
-- Snell chapters 1–2 (general organization, neuron and glial cell biology) are covered only where they touch a topic (transmitters, nerve injury, cortical layers); Berkowitz chapters 20 and 24 are summarized as topics rather than entry by entry.
+- The thalamostriate vein has no mesh: along the caudothalamic groove the VENAT venous atlas never rises above a partial volume of about 0.4 and its ridge is not separable from the shoulder of the internal cerebral vein, so it stays a content-only structure. The internal cerebral, basal and great cerebral veins and the straight sinus **do** have meshes now, cut from that atlas by `atlas-venat`.
+- The phrenic nerve, the choroid plexus of the fourth ventricle, the four spinal cord segment blocks and the lumbosacral trunk have no mesh in any source atlas either, so they are **derived**: constructed by `pipeline/atlas_pipeline/derived.py` (`atlas-derived`) from geometry that does exist, tagged `derived` in the manifest with the construction method, and flagged as schematic in their content entries. Z-Anatomy models one spinal root and ganglion pair per intervertebral foramen from C2 to L2 only, so the lumbosacral root meshes hold the L1 and L2 pairs and the rest of the cauda equina is a single mesh.
+- Brainstem Navigator nuclei need a manual NITRC download (click-through licence; its terms forbid redistributing derived files outside your organisation, so the meshes are tagged `nc` + `noRedistribution` and must stay out of any shared build) and are not included. The ingestion is scaffolded: put `BrainstemNavigatorv1.0.zip` in `pipeline/raw/manual/` and run `pipeline/add_brainstem_navigator.sh` (`atlas-brainstem-nav --inventory` first); the abbreviation-to-mesh table is `pipeline/config/brainstem_navigator.yaml`.
+- General neuron and glial cell biology is covered only where it touches a topic (transmitters, nerve injury, cortical layers).
 
 ## Licence
 

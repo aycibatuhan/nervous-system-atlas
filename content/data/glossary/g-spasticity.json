@@ -1,11 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-spasticity",
- "term": "Spasticity",
- "definition": "Velocity-dependent increase in muscle tone with a clasp-knife release, resulting from loss of descending inhibition (largely reticulospinal) after upper motor neuron lesions. Distinguished from the lead-pipe or cogwheel rigidity of basal ganglia disease, which is present throughout the range and independent of speed.",
- "related": [
-  "g-upper-motor-neuron",
-  "g-rigidity"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-spasticity",
+  "term": "Spasticity",
+  "definition": "Velocity-dependent increase in muscle tone with a clasp-knife release, resulting from loss of descending inhibition (largely reticulospinal) after upper motor neuron lesions. Distinguished from the lead-pipe or cogwheel rigidity of basal ganglia disease, which is present throughout the range and independent of speed.",
+  "related": [
+    "g-upper-motor-neuron",
+    "g-rigidity"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spasticity",
+      "section": "Pathophysiology"
+    }
+  ]
 }

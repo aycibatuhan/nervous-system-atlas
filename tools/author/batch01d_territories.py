@@ -1,9 +1,6 @@
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from lib import *
 E = []
-SN17 = lambda a, b=None: C("snell", 17, a, b)
-BK7 = lambda a, b=None: C("berkowitz", 7, a, b)
-BK9 = lambda a, b=None: C("berkowitz", 9, a, b)
 
 def terr(id, name, meshes, summary, location, function, arteries, imaging, lesion, exam, pearls, citations, syndromes=(), pitfalls=(), synonyms=()):
     return structure(id, name, "arterial-territories", summary, location, function, arteries, imaging, lesion, exam, pearls, citations,
@@ -22,7 +19,7 @@ E.append(terr("territory-aca", "ACA territory", ["territory-aca-l", "territory-a
  [("Contralateral leg weakness and sensory loss", "contralateral", "Paracentral lobule"), ("Abulia, apathy, incontinence", "bilateral", "Medial prefrontal and anterior cingulate cortex"), ("Grasp reflex, gait apraxia", "contralateral", "Supplementary motor area and medial frontal cortex"), ("Transcortical motor aphasia (dominant)", "n/a", "Supplementary motor area connections")],
  ["Leg versus arm power", "Spontaneous speech and initiative", "Bladder history", "Grasp reflex"],
  ["Leg-predominant weakness with frontal behavior is the ACA", "Bilateral ACA infarcts mimic a spinal cord lesion or normal-pressure hydrocephalus"],
- [SN17(472, 476), SN17(482, 483), BK7(57, 59), C("berkowitz", 4, 39, 40)], syndromes=["syn-aca-infarct", "syn-watershed-infarct"]))
+ [R("sp-anterior-cerebral-artery-stroke"), R("sp-recurrent-artery-of-heubner")], syndromes=["syn-aca-infarct", "syn-watershed-infarct"]))
 
 E.append(terr("territory-mca", "MCA territory", ["territory-mca-major-l", "territory-mca-major-r", "territory-mca-frontal-l", "territory-mca-frontal-r", "territory-mca-parietal-l", "territory-mca-parietal-r", "territory-mca-temporal-l", "territory-mca-temporal-r", "territory-mca-occipital-l", "territory-mca-occipital-r", "territory-mca-insular-l", "territory-mca-insular-r"],
  "The largest cortical territory: almost the entire lateral convexity of the hemisphere, the insula and the underlying white matter, plus the deep territory of the lenticulostriate arteries. It holds the face, hand and arm areas of the motor and sensory cortices, both language areas in the dominant hemisphere, the frontal eye field, the auditory cortex and the parietal association cortex, so an MCA stroke is the prototype of the 'cortical' syndrome.",
@@ -38,7 +35,7 @@ E.append(terr("territory-mca", "MCA territory", ["territory-mca-major-l", "terri
  [("Face and arm-predominant hemiparesis and hemisensory loss", "contralateral", "Precentral and postcentral gyri"), ("Aphasia (dominant) or neglect (non-dominant)", "contralateral", "Perisylvian language cortex or parietal association cortex"), ("Gaze deviation toward the lesion", "ipsilateral", "Frontal eye field"), ("Homonymous hemianopia", "contralateral", "Optic radiation")],
  ["Arm drift versus leg drift", "Speech fluency, comprehension, repetition, naming", "Extinction to double simultaneous stimulation", "Visual fields"],
  ["Face plus arm plus cortical sign (aphasia or neglect) is the MCA", "The territory has a deep part: capsular involvement means the occlusion is proximal to the lenticulostriates"],
- [SN17(472, 476), SN17(482), BK7(55, 59), C("berkowitz", 19, 180, 184)], syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division", "syn-mca-inferior-division"]))
+ [R("sp-middle-cerebral-artery-stroke"), R("sp-middle-cerebral-artery")], syndromes=["syn-mca-stem-infarct", "syn-mca-superior-division", "syn-mca-inferior-division"]))
 
 E.append(terr("territory-pca", "PCA territory", ["territory-pca-major-l", "territory-pca-major-r", "territory-pca-temporal-l", "territory-pca-temporal-r", "territory-pca-occipital-l", "territory-pca-occipital-r"],
  "The occipital lobe, the inferomedial temporal lobe and, through the perforating branches of the P1 and P2 segments, the thalamus and midbrain. It is the territory of vision and of memory, and proximal occlusion adds the thalamic and midbrain syndromes.",
@@ -53,7 +50,7 @@ E.append(terr("territory-pca", "PCA territory", ["territory-pca-major-l", "terri
  [("Homonymous hemianopia with macular sparing", "contralateral", "Calcarine cortex with collateral supply to the occipital pole"), ("Memory loss", "contralateral", "Hippocampus and parahippocampal gyrus"), ("Alexia without agraphia (dominant)", "n/a", "Left occipital cortex plus splenium"), ("Thalamic sensory syndrome", "contralateral", "Thalamogeniculate perforators")],
  ["Confrontation fields", "Reading, colour naming, face recognition", "Delayed recall", "Pin-prick and vibration on the opposite side"],
  ["A field cut without weakness is the PCA territory", "Macular sparing distinguishes an occipital lesion from an optic tract lesion"],
- [SN17(472, 476), SN17(482, 483), BK7(57, 59), C("berkowitz", 6, 49, 51)], syndromes=["syn-pca-infarct", "syn-anton", "syn-alexia-without-agraphia"]))
+ [R("sp-posterior-cerebral-artery-stroke"), R("sp-posterior-cerebral-arteries")], syndromes=["syn-pca-infarct", "syn-anton", "syn-alexia-without-agraphia"]))
 
 E.append(terr("territory-lenticulostriate", "Lenticulostriate (deep MCA) territory", ["territory-medial-lenticulostriate-l", "territory-medial-lenticulostriate-r", "territory-lateral-lenticulostriate-l", "territory-lateral-lenticulostriate-r"],
  "The deep territory of the perforating branches of the M1 and A1 segments: putamen, globus pallidus, caudate, and the anterior limb, genu and upper posterior limb of the internal capsule. It is the commonest site of lacunar infarcts and of hypertensive hemorrhage, and it produces motor syndromes without cortical signs.",
@@ -69,7 +66,7 @@ E.append(terr("territory-lenticulostriate", "Lenticulostriate (deep MCA) territo
  [("Pure motor hemiparesis", "contralateral", "Internal capsule corticospinal fibers"), ("Sensorimotor stroke", "contralateral", "Posterior limb of the capsule adjoining the thalamus"), ("Hemiballismus or dystonia", "contralateral", "Striatal and pallidal lesions")],
  ["Equal weakness of face, arm and leg", "Absence of aphasia, neglect and field cut", "Blood pressure and fundi"],
  ["Lacunar syndromes are motor and sensory without cortical signs", "Hypertension is the disease of this territory: microbleeds on SWI confirm the small-vessel arteriopathy"],
- [SN17(474), SN17(482), BK7(58, 60), BK7(63), C("berkowitz", 19, 192, 195)], syndromes=["syn-lacunar-pure-motor", "syn-lacunar-sensorimotor", "syn-hemiballismus"]))
+ [R("sp-striate-arteries"), R("sp-lacunar-stroke"), R("sp-recurrent-artery-of-heubner")], syndromes=["syn-lacunar-pure-motor", "syn-lacunar-sensorimotor", "syn-hemiballismus"]))
 
 E.append(terr("territory-anterior-choroidal", "Anterior choroidal territory", ["territory-anterior-choroidal-thalamoperforating-l", "territory-anterior-choroidal-thalamoperforating-r"],
  "The narrow strip supplied by the anterior choroidal artery and the neighbouring anterior thalamoperforators from the posterior communicating artery: the posterior limb of the internal capsule, the lateral geniculate body and optic tract, the medial temporal lobe and part of the cerebral peduncle and thalamus. Small in volume, large in consequence because the corticospinal tract, the thalamocortical sensory fibers and the visual pathway all pass through it.",
@@ -83,7 +80,7 @@ E.append(terr("territory-anterior-choroidal", "Anterior choroidal territory", ["
  [("Hemiparesis, hemisensory loss and hemianopia (the triad)", "contralateral", "Posterior limb of the capsule, thalamocortical fibers and lateral geniculate body")],
  ["Power and sensation of face, arm and leg", "Confrontation fields"],
  ["The full triad without aphasia or neglect points to the anterior choroidal artery", "Sector-sparing hemianopia reflects the dual supply of the lateral geniculate body"],
- [SN17(476), BK7(60), C("berkowitz", 6, 50)], syndromes=["syn-anterior-choroidal-infarct"]))
+ [R("sp-anterior-choroidal-arteries"), R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke")], syndromes=["syn-anterior-choroidal-infarct"]))
 
 E.append(terr("territory-watershed", "Watershed (borderzone) territories", [],
  "Borderzones between adjacent arterial territories are the last parts of the brain to be perfused and the first to fail when perfusion pressure drops. The cortical (external) watersheds lie between the ACA and MCA and between the MCA and PCA on the convexity; the internal (subcortical) watershed lies in the corona radiata and centrum semiovale between the deep lenticulostriate perforators and the superficial MCA branches. Watershed infarcts point to hypotension or a proximal stenosis rather than embolism.",
@@ -98,7 +95,7 @@ E.append(terr("territory-watershed", "Watershed (borderzone) territories", [],
  [("'Man-in-a-barrel': bilateral proximal arm and shoulder weakness with spared face and legs", "bilateral", "Bilateral anterior cortical watershed between ACA and MCA"), ("Cortical visual disturbance, Bálint features", "bilateral", "Posterior parieto-occipital watershed"), ("Hemiparesis with subcortical lesions", "contralateral", "Internal watershed in the corona radiata")],
  ["Proximal versus distal arm power", "Visual fields and visual attention", "Carotid bruits and blood pressure"],
  ["Bilateral watershed infarcts after cardiac arrest or surgery mean hypotension; unilateral ones mean a proximal stenosis", "The internal watershed is more sensitive to carotid stenosis than the cortical one"],
- [BK7(50, 53), BK7(58, 63), C("berkowitz", 19, 180, 184)], syndromes=["syn-watershed-infarct", "syn-balint"]))
+ [R("sp-cerebral-autoregulation"), R("sp-carotid-artery-stenosis")], syndromes=["syn-watershed-infarct", "syn-balint"]))
 
 E.append(terr("territory-pica-lateral-medulla", "PICA and lateral medullary territory", ["territory-inferior-cerebellar-l", "territory-inferior-cerebellar-r"],
  "The dorsolateral medulla and the inferior cerebellum perfused by the posterior inferior cerebellar artery and the small lateral medullary branches of the vertebral artery. It is the anatomical substrate of the Wallenberg syndrome and of the inferior cerebellar infarct that swells against the fourth ventricle.",
@@ -113,7 +110,7 @@ E.append(terr("territory-pica-lateral-medulla", "PICA and lateral medullary terr
  [("Crossed pain and temperature loss", "ipsilateral", "Spinal trigeminal tract (face) and crossed spinothalamic tract (body)"), ("Dysphagia and hoarseness", "ipsilateral", "Nucleus ambiguus"), ("Vertigo and nystagmus", "ipsilateral", "Vestibular nuclei"), ("Horner syndrome", "ipsilateral", "Descending sympathetic fibers"), ("Ataxia", "ipsilateral", "Inferior cerebellar peduncle and cerebellum")],
  ["Facial versus body pin-prick", "Palate, voice and swallow", "Pupils", "Gait and limb coordination"],
  ["No weakness, crossed sensory loss, dysphagia and Horner: the lateral medulla", "Vertebral dissection is the cause to look for in the young"],
- [C("snell", 5, 216), SN17(477), BK9(77, 78), C("berkowitz", 8, 70)], syndromes=["syn-wallenberg-lateral-medullary", "syn-pica-cerebellar-infarct"]))
+ [R("sp-lateral-medullary-syndrome"), R("sp-medulla-oblongata"), R("sp-cerebellar-infarction")], syndromes=["syn-wallenberg-lateral-medullary", "syn-pica-cerebellar-infarct"]))
 
 E.append(terr("territory-aica", "AICA territory", ["territory-inferior-cerebellar-l", "territory-inferior-cerebellar-r"],
  "The lateral caudal pons, the middle cerebellar peduncle, the inner ear and the anterior inferior cerebellum perfused by the anterior inferior cerebellar artery. Infarction combines lateral pontine signs with deafness and vertigo, and because the labyrinthine artery is an end artery the cochlea is often the first casualty. The territory is small and variable: when AICA is hypoplastic, PICA takes over the cerebellar part, and when PICA is hypoplastic, AICA extends downward, so the border with the PICA territory is the least predictable in the posterior fossa.",
@@ -127,7 +124,7 @@ E.append(terr("territory-aica", "AICA territory", ["territory-inferior-cerebella
  [("Ipsilateral deafness and vertigo", "ipsilateral", "Labyrinthine artery and vestibulocochlear nuclei"), ("Lower motor neuron facial palsy", "ipsilateral", "Facial nucleus"), ("Crossed pain and temperature loss", "ipsilateral", "Spinal trigeminal nucleus and spinothalamic tract"), ("Ataxia", "ipsilateral", "Middle cerebellar peduncle")],
  ["Hearing test", "Facial movement", "Corneal reflex", "Coordination"],
  ["Lateral medullary picture plus deafness and facial palsy equals the lateral pons (AICA)", "Sudden unilateral deafness with vertigo in an older patient with vascular risk factors deserves a DWI, not only an ENT referral"],
- [BK9(77, 79), C("berkowitz", 12, 106), C("berkowitz", 12, 112)], syndromes=["syn-aica-lateral-pontine"], pitfalls=["Vestibular neuritis and AICA infarction both give acute vertigo with nystagmus; hearing loss, facial weakness and inability to stand favor the infarct"]))
+ [R("sp-anterior-inferior-cerebellar-arteries"), R("sp-cerebellar-infarction"), R("sp-vertebrobasilar-system")], syndromes=["syn-aica-lateral-pontine"], pitfalls=["Vestibular neuritis and AICA infarction both give acute vertigo with nystagmus; hearing loss, facial weakness and inability to stand favor the infarct"]))
 
 E.append(terr("territory-sca", "SCA territory", ["territory-superior-cerebellar-l", "territory-superior-cerebellar-r"],
  "The superior cerebellum, dentate nucleus, superior cerebellar peduncle and dorsolateral rostral pons perfused by the superior cerebellar artery. It is the cerebellar territory that produces the purest limb ataxia, because the dentate nucleus and its outflow through the superior peduncle sit inside it, and the one whose infarcts most often come from cardiac emboli lodging at the basilar tip.",
@@ -141,7 +138,7 @@ E.append(terr("territory-sca", "SCA territory", ["territory-superior-cerebellar-
  [("Ipsilateral limb ataxia and intention tremor", "ipsilateral", "Dentate nucleus and superior peduncle"), ("Contralateral pain and temperature loss", "contralateral", "Spinothalamic tract in the rostral pons"), ("Horner syndrome", "ipsilateral", "Sympathetic fibers in the tegmentum")],
  ["Finger-nose and heel-shin", "Pin-prick on the body", "Pupils"],
  ["Vertigo is mild or absent with SCA infarcts because the vestibular nuclei lie lower", "Large SCA infarcts swell upward against the tentorium and downward on the fourth ventricle, so a drowsy patient on day 2–3 needs a repeat CT", "Superior cerebellar infarcts are more often embolic than PICA infarcts, which are more often from vertebral artery disease"],
- [C("snell", 6, 241, 244), BK9(77, 79), C("berkowitz", 8, 70)], syndromes=["syn-sca-infarct"], pitfalls=["Ataxia with a contralateral sensory loss can be mistaken for a thalamic or capsular lesion; the ipsilateral Horner and the cerebellar signs point to the pons and cerebellum"]))
+ [R("sp-cerebellar-infarction"), R("sp-vertebrobasilar-system"), R("sp-dentate-nucleus")], syndromes=["syn-sca-infarct"], pitfalls=["Ataxia with a contralateral sensory loss can be mistaken for a thalamic or capsular lesion; the ipsilateral Horner and the cerebellar signs point to the pons and cerebellum"]))
 
 E.append(terr("territory-basilar-paramedian", "Basilar paramedian (pontine) territory", ["territory-basilar-l", "territory-basilar-r"],
  "The medial pons and, by extension, the medial medulla and midbrain perfused by the paramedian perforators of the basilar and vertebral arteries. It contains the corticospinal tract, the medial lemniscus, the abducens and facial nuclei, the MLF and the hypoglossal and oculomotor nuclear regions, so infarcts here produce the classic crossed brainstem syndromes and, when bilateral, the locked-in state.",
@@ -157,6 +154,6 @@ E.append(terr("territory-basilar-paramedian", "Basilar paramedian (pontine) terr
  [("Contralateral hemiparesis", "contralateral", "Corticospinal tract in the basis pontis"), ("Ipsilateral abducens or facial palsy with contralateral weakness", "ipsilateral", "Abducens/facial nucleus or fascicle plus the corticospinal tract"), ("Internuclear ophthalmoplegia", "ipsilateral", "MLF"), ("Locked-in state", "bilateral", "Bilateral basis pontis")],
  ["Horizontal eye movements", "Facial movement", "Limb power on each side", "Vertical eye movements and blinking in an unresponsive patient"],
  ["A cranial nerve VI or VII sign with contralateral hemiparesis localizes to the paramedian pons"],
- [C("snell", 5, 215, 218), BK9(77, 79), C("berkowitz", 7, 63)], syndromes=["syn-millard-gubler", "syn-foville", "syn-locked-in", "syn-dejerine-medial-medullary", "syn-ino"]))
+ [R("sp-basilar-artery-occlusion"), R("sp-basilar-artery"), R("sp-brainstem-stroke")], syndromes=["syn-millard-gubler", "syn-foville", "syn-locked-in", "syn-dejerine-medial-medullary", "syn-ino"]))
 
 write(E)

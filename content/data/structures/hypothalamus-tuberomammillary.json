@@ -1,139 +1,127 @@
 {
- "kind": "structure",
- "id": "hypothalamus-tuberomammillary",
- "name": "Tuberomammillary nucleus",
- "synonyms": [
-  "TMN",
-  "histaminergic nucleus"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-tuberomammillary-l",
-  "hypothalamus-tuberomammillary-r"
- ],
- "summary": "The tuberomammillary nucleus is a scattered group of large neurons on the ventral surface of the posterior hypothalamus around the mammillary bodies and the lateral tuberal region, the only source of histamine in the brain. Its axons reach the whole cortex, the thalamus, the basal forebrain and the brainstem and promote wakefulness, attention and appetite suppression; it is silent in sleep, inhibited by the preoptic sleep-active neurons and excited by orexin. It explains the sedation caused by antihistamines that cross the blood-brain barrier, the alerting effect of histamine H3 antagonists used in narcolepsy, and the somnolence of posterior hypothalamic lesions.",
- "anatomy": {
-  "location": "Ventrolateral posterior hypothalamus surrounding the mammillary bodies, extending laterally to the lateral hypothalamic area and forward along the tuberal region, immediately above the interpeduncular cistern and the posterior cerebral arteries.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Histaminergic neurons fire tonically during wakefulness and fastest during attentive waking, releasing histamine onto H1 receptors in the cortex and thalamus to promote arousal and onto the basal forebrain and brainstem arousal nuclei to reinforce them; they are inhibited by GABA and galanin from the ventrolateral preoptic nucleus at sleep onset and excited by orexin from the lateral hypothalamus, forming one arm of the sleep-wake flip-flop switch. Histamine also suppresses appetite, modulates fluid balance and pituitary hormone release, and reduces vestibular signaling, which is the basis of antihistamine treatment of motion sickness. The nucleus receives the prefrontal cortex, the septum and the brainstem.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-tuberomammillary",
+  "name": "Tuberomammillary nucleus",
+  "synonyms": [
+    "TMN",
+    "histaminergic nucleus"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-tuberomammillary-l"
-    },
-    "label": "tuberomammillary nucleus around the mammillary bodies"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-tuberomammillary-r"
-    },
-    "label": "ventral posterior hypothalamus above the interpeduncular cistern"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-tuberomammillary-l",
+    "hypothalamus-tuberomammillary-r"
   ],
-  "normalAppearance": "Ventral posterior hypothalamic gray matter around the mammillary bodies on coronal images through the interpeduncular fossa; not resolved as a nucleus.",
-  "pathology": [
-   {
-    "pathology": "Hypersomnia from posterior hypothalamic lesions",
-    "modality": "MRI",
-    "finding": "Tumor, stroke or inflammation of the posterior hypothalamus with excessive sleep and reduced attention.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Mammillary body and periventricular signal change with reduced consciousness, part of which reflects loss of the histaminergic and posterior hypothalamic arousal systems.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Drug-induced sedation (functional)",
-    "modality": "EEG",
-    "finding": "Slowing and drowsiness with first-generation antihistamines and with anticholinergics; no structural lesion.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hypersomnia and reduced attention",
-    "side": "bilateral",
-    "mechanism": "Loss of histaminergic cortical arousal"
-   },
-   {
-    "deficit": "Increased appetite",
-    "side": "bilateral",
-    "mechanism": "Loss of histamine suppression of feeding"
-   },
-   {
-    "deficit": "Impaired arousal from sleep",
-    "side": "bilateral",
-    "mechanism": "Loss of one arm of the sleep-wake switch"
-   }
-  ],
-  "examination": [
-   "Daytime sleepiness scale and vigilance testing",
-   "Drug history for sedating antihistamines and antipsychotics with H1 blockade",
-   "Weight and appetite change"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Every drug that makes you drowsy and hungry blocks H1 receptors: it is silencing the tuberomammillary nucleus",
-   "Histamine is the brain's alarm clock; the preoptic nucleus turns it off at night",
-   "H3 antagonists wake the narcoleptic by releasing more histamine"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The tuberomammillary nucleus is a scattered group of large neurons on the ventral surface of the posterior hypothalamus around the mammillary bodies and the lateral tuberal region, the only source of histamine in the brain. Its axons reach the whole cortex, the thalamus, the basal forebrain and the brainstem and promote wakefulness, attention and appetite suppression; it is silent in sleep, inhibited by the preoptic sleep-active neurons and excited by orexin. It explains the sedation caused by antihistamines that cross the blood-brain barrier, the alerting effect of histamine H3 antagonists used in narcolepsy, and the somnolence of posterior hypothalamic lesions.",
+  "anatomy": {
+    "location": "Ventrolateral posterior hypothalamus surrounding the mammillary bodies, extending laterally to the lateral hypothalamic area and forward along the tuberal region, immediately above the interpeduncular cistern and the posterior cerebral arteries.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    299,
-    301
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "function": "Histaminergic neurons fire tonically during wakefulness and fastest during attentive waking, releasing histamine onto H1 receptors in the cortex and thalamus to promote arousal and onto the basal forebrain and brainstem arousal nuclei to reinforce them; they are inhibited by GABA and galanin from the ventrolateral preoptic nucleus at sleep onset and excited by orexin from the lateral hypothalamus, forming one arm of the sleep-wake flip-flop switch. Histamine also suppresses appetite, modulates fluid balance and pituitary hormone release, and reduces vestibular signaling, which is the basis of antihistamine treatment of motion sickness. The nucleus receives the prefrontal cortex, the septum and the brainstem.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-tuberomammillary-l"
+        },
+        "label": "tuberomammillary nucleus around the mammillary bodies"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-tuberomammillary-r"
+        },
+        "label": "ventral posterior hypothalamus above the interpeduncular cistern"
+      }
+    ],
+    "normalAppearance": "Ventral posterior hypothalamic gray matter around the mammillary bodies on coronal images through the interpeduncular fossa; not resolved as a nucleus.",
+    "pathology": [
+      {
+        "pathology": "Hypersomnia from posterior hypothalamic lesions",
+        "modality": "MRI",
+        "finding": "Tumor, stroke or inflammation of the posterior hypothalamus with excessive sleep and reduced attention.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Mammillary body and periventricular signal change with reduced consciousness, part of which reflects loss of the histaminergic and posterior hypothalamic arousal systems.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Drug-induced sedation (functional)",
+        "modality": "EEG",
+        "finding": "Slowing and drowsiness with first-generation antihistamines and with anticholinergics; no structural lesion.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hypersomnia and reduced attention",
+        "side": "bilateral",
+        "mechanism": "Loss of histaminergic cortical arousal"
+      },
+      {
+        "deficit": "Increased appetite",
+        "side": "bilateral",
+        "mechanism": "Loss of histamine suppression of feeding"
+      },
+      {
+        "deficit": "Impaired arousal from sleep",
+        "side": "bilateral",
+        "mechanism": "Loss of one arm of the sleep-wake switch"
+      }
+    ],
+    "examination": [
+      "Daytime sleepiness scale and vigilance testing",
+      "Drug history for sedating antihistamines and antipsychotics with H1 blockade",
+      "Weight and appetite change"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Every drug that makes you drowsy and hungry blocks H1 receptors: it is silencing the tuberomammillary nucleus",
+      "Histamine is the brain's alarm clock; the preoptic nucleus turns it off at night",
+      "H3 antagonists wake the narcoleptic by releasing more histamine"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-physiology-of-sleep",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

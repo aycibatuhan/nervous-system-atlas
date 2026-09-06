@@ -1,130 +1,126 @@
 {
- "kind": "syndrome",
- "id": "syn-vagal-palsy",
- "name": "Vagus nerve palsy",
- "eponyms": [],
- "category": "neoplastic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-10-vagus",
-   "nucleus-ambiguus",
-   "dorsal-motor-nucleus-vagus",
-   "artery-internal-carotid"
+  "kind": "syndrome",
+  "id": "syn-vagal-palsy",
+  "name": "Vagus nerve palsy",
+  "eponyms": [],
+  "category": "neoplastic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-10-vagus",
+      "nucleus-ambiguus",
+      "dorsal-motor-nucleus-vagus",
+      "artery-internal-carotid"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "cn-10-vagus-l"
+    ]
+  },
+  "presentation": "A patient becomes hoarse with a breathy voice and a weak cough, and regurgitates fluid through the nose when drinking. On saying 'ah' the palate rises only on one side and the uvula swings toward the good side; laryngoscopy shows one vocal cord lying still in the paramedian position. A palsy of the recurrent laryngeal branch alone spares the palate and pharynx and points to the chest or thyroid.",
+  "deficits": [
+    {
+      "modality": "bulbar",
+      "side": "ipsilateral",
+      "distribution": "soft palate",
+      "sign": "Palatal weakness with nasal speech and regurgitation; uvula deviates to the intact side",
+      "substrate": "cn-10-vagus"
+    },
+    {
+      "modality": "bulbar",
+      "side": "ipsilateral",
+      "distribution": "vocal cord",
+      "sign": "Hoarseness, breathy voice, weak cough; paramedian cord paralysis",
+      "substrate": "nucleus-ambiguus"
+    },
+    {
+      "modality": "bulbar",
+      "side": "ipsilateral",
+      "distribution": "pharynx",
+      "sign": "Dysphagia and pooling on the affected side; reduced gag",
+      "substrate": "cn-10-vagus"
+    },
+    {
+      "modality": "autonomic",
+      "side": "n/a",
+      "distribution": "heart and gut",
+      "sign": "Tachycardia and gastric atony are rare with unilateral lesions",
+      "substrate": "dorsal-motor-nucleus-vagus"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "cn-10-vagus-l"
-  ]
- },
- "presentation": "A patient becomes hoarse with a breathy voice and a weak cough, and regurgitates fluid through the nose when drinking. On saying 'ah' the palate rises only on one side and the uvula swings toward the good side; laryngoscopy shows one vocal cord lying still in the paramedian position. A palsy of the recurrent laryngeal branch alone spares the palate and pharynx and points to the chest or thyroid.",
- "deficits": [
-  {
-   "modality": "bulbar",
-   "side": "ipsilateral",
-   "distribution": "soft palate",
-   "sign": "Palatal weakness with nasal speech and regurgitation; uvula deviates to the intact side",
-   "substrate": "cn-10-vagus"
+  "reasoning": "The vagus carries the motor fibers from the nucleus ambiguus to the palate, pharynx and larynx of its own side, sensation from the pharynx, larynx and external ear, and the parasympathetic outflow from the dorsal motor nucleus to the thoracic and abdominal viscera. It is an uncrossed peripheral nerve, so a palsy is ipsilateral: the levator veli palatini fails on that side and the intact side pulls the uvula across, the pharyngeal constrictors do not clear the bolus and the vocal cord is paralyzed. Where the lesion lies is read from which branches are affected. A lesion at the skull base, in the jugular foramen, or high in the neck involves the pharyngeal branch, the superior laryngeal nerve and the recurrent laryngeal nerve together, so palate, pharynx and larynx are all weak, usually with the neighboring ninth and eleventh nerves. A lesion in the chest or the lower neck, at the aortic arch on the left or the subclavian artery on the right where the recurrent laryngeal nerves loop, or in the thyroid, catches only the recurrent nerve, paralyzing the cord while the palate lifts normally; the left nerve's longer course under the aortic arch makes left-sided cord palsy from mediastinal tumors the commonest pattern. A nuclear lesion in the medulla adds the crossed signs of the lateral medullary syndrome. Bilateral cord palsies cause stridor and are an airway emergency.",
+  "imagingFindings": [
+    {
+      "pathology": "Skull base or carotid space lesion",
+      "modality": "MRI",
+      "finding": "Enhancing mass at the jugular foramen or along the carotid sheath; look for denervation atrophy of the pharyngeal constrictors and cord.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Mediastinal tumor (recurrent laryngeal nerve)",
+      "modality": "CT",
+      "finding": "Left hilar or aortopulmonary window mass, or thyroid mass, in a patient with isolated cord palsy.",
+      "sequence": "CT contrast"
+    },
+    {
+      "pathology": "Lateral medullary infarct",
+      "modality": "MRI",
+      "finding": "Dorsolateral medullary restricted diffusion including the nucleus ambiguus.",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Lateral medullary infarct",
+    "Jugular foramen tumor",
+    "Carotid dissection or surgery",
+    "Thyroid surgery, mediastinal and lung tumors (recurrent laryngeal)",
+    "Guillain–Barré, diphtheria (bilateral)"
+  ],
+  "mimics": [
+    {
+      "name": "Myasthenia gravis",
+      "howToDistinguish": "Bilateral, fatigable, with ptosis"
+    },
+    {
+      "name": "Laryngeal disease",
+      "howToDistinguish": "Cords move; hoarseness from a mass or inflammation on laryngoscopy"
+    },
+    {
+      "name": "Functional dysphonia",
+      "howToDistinguish": "Normal cord movement on coughing"
+    }
+  ],
+  "management": [
+    "Laryngoscopy to document the cord and swallow assessment",
+    "Imaging from the medulla to the mediastinum for an isolated recurrent laryngeal palsy",
+    "Cord medialization procedures for persistent aspiration or dysphonia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cranial-nerve-10",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-lateral-medullary-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-nerve-testing",
+      "section": "Introduction"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -30,
+      "y": -30,
+      "z": -40
+    },
+    "label": "vagus at the jugular foramen"
   },
-  {
-   "modality": "bulbar",
-   "side": "ipsilateral",
-   "distribution": "vocal cord",
-   "sign": "Hoarseness, breathy voice, weak cough; paramedian cord paralysis",
-   "substrate": "nucleus-ambiguus"
-  },
-  {
-   "modality": "bulbar",
-   "side": "ipsilateral",
-   "distribution": "pharynx",
-   "sign": "Dysphagia and pooling on the affected side; reduced gag",
-   "substrate": "cn-10-vagus"
-  },
-  {
-   "modality": "autonomic",
-   "side": "n/a",
-   "distribution": "heart and gut",
-   "sign": "Tachycardia and gastric atony are rare with unilateral lesions",
-   "substrate": "dorsal-motor-nucleus-vagus"
-  }
- ],
- "reasoning": "The vagus carries the motor fibers from the nucleus ambiguus to the palate, pharynx and larynx of its own side, sensation from the pharynx, larynx and external ear, and the parasympathetic outflow from the dorsal motor nucleus to the thoracic and abdominal viscera. It is an uncrossed peripheral nerve, so a palsy is ipsilateral: the levator veli palatini fails on that side and the intact side pulls the uvula across, the pharyngeal constrictors do not clear the bolus and the vocal cord is paralyzed. Where the lesion lies is read from which branches are affected. A lesion at the skull base, in the jugular foramen, or high in the neck involves the pharyngeal branch, the superior laryngeal nerve and the recurrent laryngeal nerve together, so palate, pharynx and larynx are all weak, usually with the neighboring ninth and eleventh nerves. A lesion in the chest or the lower neck, at the aortic arch on the left or the subclavian artery on the right where the recurrent laryngeal nerves loop, or in the thyroid, catches only the recurrent nerve, paralyzing the cord while the palate lifts normally; the left nerve's longer course under the aortic arch makes left-sided cord palsy from mediastinal tumors the commonest pattern. A nuclear lesion in the medulla adds the crossed signs of the lateral medullary syndrome. Bilateral cord palsies cause stridor and are an airway emergency.",
- "imagingFindings": [
-  {
-   "pathology": "Skull base or carotid space lesion",
-   "modality": "MRI",
-   "finding": "Enhancing mass at the jugular foramen or along the carotid sheath; look for denervation atrophy of the pharyngeal constrictors and cord.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Mediastinal tumor (recurrent laryngeal nerve)",
-   "modality": "CT",
-   "finding": "Left hilar or aortopulmonary window mass, or thyroid mass, in a patient with isolated cord palsy.",
-   "sequence": "CT contrast"
-  },
-  {
-   "pathology": "Lateral medullary infarct",
-   "modality": "MRI",
-   "finding": "Dorsolateral medullary restricted diffusion including the nucleus ambiguus.",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Lateral medullary infarct",
-  "Jugular foramen tumor",
-  "Carotid dissection or surgery",
-  "Thyroid surgery, mediastinal and lung tumors (recurrent laryngeal)",
-  "Guillain–Barré, diphtheria (bilateral)"
- ],
- "mimics": [
-  {
-   "name": "Myasthenia gravis",
-   "howToDistinguish": "Bilateral, fatigable, with ptosis"
-  },
-  {
-   "name": "Laryngeal disease",
-   "howToDistinguish": "Cords move; hoarseness from a mass or inflammation on laryngoscopy"
-  },
-  {
-   "name": "Functional dysphonia",
-   "howToDistinguish": "Normal cord movement on coughing"
-  }
- ],
- "management": [
-  "Laryngoscopy to document the cord and swallow assessment",
-  "Imaging from the medulla to the mediastinum for an isolated recurrent laryngeal palsy",
-  "Cord medialization procedures for persistent aspiration or dysphonia"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    353,
-    353
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    126,
-    126
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -30,
-   "y": -30,
-   "z": -40
-  },
-  "label": "vagus at the jugular foramen"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

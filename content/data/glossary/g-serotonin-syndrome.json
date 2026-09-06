@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-serotonin-syndrome",
- "term": "Serotonin syndrome",
- "definition": "A toxic state from excess serotonergic activity (drug combinations) with agitation, clonus, hyperreflexia, tremor, sweating, diarrhea and hyperthermia; the clonus and rapid onset distinguish it from neuroleptic malignant syndrome.",
- "related": [
-  "g-anticholinergic-toxicity"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-serotonin-syndrome",
+  "term": "Serotonin syndrome",
+  "definition": "A toxic state from excess serotonergic activity (drug combinations) with agitation, clonus, hyperreflexia, tremor, sweating, diarrhea and hyperthermia; the clonus and rapid onset distinguish it from neuroleptic malignant syndrome.",
+  "related": [
+    "g-anticholinergic-toxicity"
+  ],
+  "citations": [
+    {
+      "ref": "sp-serotonin-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-serotonin",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-serotonin-2",
+      "section": "Pathophysiology"
+    }
+  ]
 }

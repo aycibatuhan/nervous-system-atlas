@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-contralateral",
- "term": "Contralateral",
- "definition": "On the opposite side of the body from the lesion. Corticospinal weakness, spinothalamic pain loss and cortical sensory loss are contralateral to lesions above the level at which their fibers cross.",
- "related": [
-  "g-ipsilateral",
-  "g-decussation"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-contralateral",
+  "term": "Contralateral",
+  "definition": "On the opposite side of the body from the lesion. Corticospinal weakness, spinothalamic pain loss and cortical sensory loss are contralateral to lesions above the level at which their fibers cross.",
+  "related": [
+    "g-ipsilateral",
+    "g-decussation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-pyramidal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinothalamic-tract",
+      "section": "Structure and Function"
+    }
+  ]
 }

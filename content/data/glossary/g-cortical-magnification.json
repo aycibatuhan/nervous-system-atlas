@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-cortical-magnification",
- "term": "Cortical magnification",
- "definition": "The disproportionate area of visual cortex devoted to the central few degrees of the visual field, mapped to the occipital pole; it explains why macular vision survives partial calcarine lesions and why the macula is represented at the pole where two arteries meet.",
- "related": [
-  "g-retinotopy",
-  "g-macular-sparing"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-cortical-magnification",
+  "term": "Cortical magnification",
+  "definition": "The disproportionate area of visual cortex devoted to the central few degrees of the visual field, mapped to the occipital pole; it explains why macular vision survives partial calcarine lesions and why the macula is represented at the pole where two arteries meet.",
+  "related": [
+    "g-retinotopy",
+    "g-macular-sparing"
+  ],
+  "citations": [
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-occipital-lobe",
+      "section": "Structure and Function"
+    }
+  ]
 }

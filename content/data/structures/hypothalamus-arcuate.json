@@ -1,139 +1,127 @@
 {
- "kind": "structure",
- "id": "hypothalamus-arcuate",
- "name": "Arcuate nucleus",
- "synonyms": [
-  "infundibular nucleus",
-  "tuberoinfundibular system"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-arcuate-l",
-  "hypothalamus-arcuate-r"
- ],
- "summary": "The arcuate nucleus is a curved band of neurons in the floor of the tuberal hypothalamus around the base of the infundibulum, forming the walls of the infundibular recess, outside the blood-brain barrier at the median eminence. It is the interface between the blood and the hypothalamus: its neurons sense leptin, insulin, ghrelin, glucose and gonadal steroids and control appetite, energy expenditure and growth, and its releasing-hormone neurons (growth hormone-releasing hormone, dopamine and kisspeptin-driven gonadotropin-releasing hormone) discharge into the portal capillaries of the median eminence. Its damage produces hyperphagia and obesity, hypogonadism and growth failure, and it is the site of action of dopamine antagonists that raise prolactin and of the appetite drugs that mimic gut hormones.",
- "anatomy": {
-  "location": "Ventral tuberal hypothalamus surrounding the infundibular recess of the third ventricle, at the base of the pituitary stalk, medial to the ventromedial nucleus, behind the optic chiasm and in front of the mammillary bodies, in continuity with the median eminence.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Two opposing arcuate populations set energy balance: pro-opiomelanocortin neurons release alpha-melanocyte-stimulating hormone onto paraventricular melanocortin-4 receptors to suppress feeding and raise expenditure when leptin and insulin are high, whereas agouti-related peptide and neuropeptide Y neurons drive hunger when ghrelin rises and leptin falls. Dopamine neurons of the arcuate (the tuberoinfundibular system) tonically inhibit prolactin secretion, growth hormone-releasing hormone neurons drive the somatotrophs, and kisspeptin neurons pace the gonadotropin-releasing hormone pulses that control reproduction. Because the median eminence lacks a barrier, circulating hormones and toxins reach these neurons directly.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-arcuate",
+  "name": "Arcuate nucleus",
+  "synonyms": [
+    "infundibular nucleus",
+    "tuberoinfundibular system"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-arcuate-l"
-    },
-    "label": "arcuate nucleus around the infundibular recess"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-arcuate-r"
-    },
-    "label": "tuber cinereum at the base of the pituitary stalk"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-arcuate-l",
+    "hypothalamus-arcuate-r"
   ],
-  "normalAppearance": "The gray matter of the tuber cinereum around the infundibular recess on midline sagittal images, between the chiasm and the mammillary bodies; the median eminence enhances normally after gadolinium because it lacks a barrier.",
-  "pathology": [
-   {
-    "pathology": "Hypothalamic obesity",
-    "modality": "MRI",
-    "finding": "Damage to the tuberal hypothalamus and infundibular region after craniopharyngioma surgery or radiation, with hyperphagia, weight gain and hypogonadism.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Hypothalamic hamartoma",
-    "modality": "MRI",
-    "finding": "Sessile or pedunculated mass of the tuber cinereum between the infundibulum and the mammillary bodies, isointense to gray matter, with precocious puberty and gelastic seizures.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Hyperprolactinemia from stalk effect",
-    "modality": "MRI",
-    "finding": "Any mass compressing the stalk or the arcuate region raises prolactin moderately by removing dopamine inhibition; a prolactinoma raises it much more.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hyperphagia and obesity",
-    "side": "bilateral",
-    "mechanism": "Loss of pro-opiomelanocortin satiety signaling"
-   },
-   {
-    "deficit": "Hypogonadotropic hypogonadism and growth failure",
-    "side": "bilateral",
-    "mechanism": "Loss of kisspeptin-GnRH and growth hormone-releasing hormone neurons"
-   },
-   {
-    "deficit": "Hyperprolactinemia",
-    "side": "bilateral",
-    "mechanism": "Loss of tuberoinfundibular dopamine reaching the lactotrophs"
-   }
-  ],
-  "examination": [
-   "Weight trajectory, appetite and satiety",
-   "Prolactin, gonadal and growth hormone axes",
-   "Pubertal staging in children with suprasellar lesions"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-pituitary-mass"
-  ],
-  "pearls": [
-   "The arcuate nucleus tastes the blood: it sits outside the blood-brain barrier at the median eminence",
-   "A moderately high prolactin with a stalk lesion is disinhibition; a very high prolactin is a prolactinoma",
-   "Gut hormone appetite drugs work on the arcuate and its paraventricular targets"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The arcuate nucleus is a curved band of neurons in the floor of the tuberal hypothalamus around the base of the infundibulum, forming the walls of the infundibular recess, outside the blood-brain barrier at the median eminence. It is the interface between the blood and the hypothalamus: its neurons sense leptin, insulin, ghrelin, glucose and gonadal steroids and control appetite, energy expenditure and growth, and its releasing-hormone neurons (growth hormone-releasing hormone, dopamine and kisspeptin-driven gonadotropin-releasing hormone) discharge into the portal capillaries of the median eminence. Its damage produces hyperphagia and obesity, hypogonadism and growth failure, and it is the site of action of dopamine antagonists that raise prolactin and of the appetite drugs that mimic gut hormones.",
+  "anatomy": {
+    "location": "Ventral tuberal hypothalamus surrounding the infundibular recess of the third ventricle, at the base of the pituitary stalk, medial to the ventromedial nucleus, behind the optic chiasm and in front of the mammillary bodies, in continuity with the median eminence.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    452,
-    454
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "function": "Two opposing arcuate populations set energy balance: pro-opiomelanocortin neurons release alpha-melanocyte-stimulating hormone onto paraventricular melanocortin-4 receptors to suppress feeding and raise expenditure when leptin and insulin are high, whereas agouti-related peptide and neuropeptide Y neurons drive hunger when ghrelin rises and leptin falls. Dopamine neurons of the arcuate (the tuberoinfundibular system) tonically inhibit prolactin secretion, growth hormone-releasing hormone neurons drive the somatotrophs, and kisspeptin neurons pace the gonadotropin-releasing hormone pulses that control reproduction. Because the median eminence lacks a barrier, circulating hormones and toxins reach these neurons directly.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-arcuate-l"
+        },
+        "label": "arcuate nucleus around the infundibular recess"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-arcuate-r"
+        },
+        "label": "tuber cinereum at the base of the pituitary stalk"
+      }
+    ],
+    "normalAppearance": "The gray matter of the tuber cinereum around the infundibular recess on midline sagittal images, between the chiasm and the mammillary bodies; the median eminence enhances normally after gadolinium because it lacks a barrier.",
+    "pathology": [
+      {
+        "pathology": "Hypothalamic obesity",
+        "modality": "MRI",
+        "finding": "Damage to the tuberal hypothalamus and infundibular region after craniopharyngioma surgery or radiation, with hyperphagia, weight gain and hypogonadism.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Hypothalamic hamartoma",
+        "modality": "MRI",
+        "finding": "Sessile or pedunculated mass of the tuber cinereum between the infundibulum and the mammillary bodies, isointense to gray matter, with precocious puberty and gelastic seizures.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Hyperprolactinemia from stalk effect",
+        "modality": "MRI",
+        "finding": "Any mass compressing the stalk or the arcuate region raises prolactin moderately by removing dopamine inhibition; a prolactinoma raises it much more.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hyperphagia and obesity",
+        "side": "bilateral",
+        "mechanism": "Loss of pro-opiomelanocortin satiety signaling"
+      },
+      {
+        "deficit": "Hypogonadotropic hypogonadism and growth failure",
+        "side": "bilateral",
+        "mechanism": "Loss of kisspeptin-GnRH and growth hormone-releasing hormone neurons"
+      },
+      {
+        "deficit": "Hyperprolactinemia",
+        "side": "bilateral",
+        "mechanism": "Loss of tuberoinfundibular dopamine reaching the lactotrophs"
+      }
+    ],
+    "examination": [
+      "Weight trajectory, appetite and satiety",
+      "Prolactin, gonadal and growth hormone axes",
+      "Pubertal staging in children with suprasellar lesions"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-pituitary-mass"
+    ],
+    "pearls": [
+      "The arcuate nucleus tastes the blood: it sits outside the blood-brain barrier at the median eminence",
+      "A moderately high prolactin with a stalk lesion is disinhibition; a very high prolactin is a prolactinoma",
+      "Gut hormone appetite drugs work on the arcuate and its paraventricular targets"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-prolactin",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

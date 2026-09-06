@@ -1,155 +1,135 @@
 {
- "kind": "structure",
- "id": "arachnoid-mater",
- "name": "Arachnoid mater",
- "synonyms": [],
- "system": "meninges",
- "meshIds": [
-  "brain-envelope"
- ],
- "summary": "The delicate, avascular middle meninx that lines the dura and bridges the sulci and fissures, leaving the CSF-filled subarachnoid space between itself and the pia. Its trabeculae cross that space like a spider's web, its granulations push through the dura into the venous sinuses to absorb CSF, and its cells form the barrier that keeps CSF separate from the dural blood supply. It is the origin of meningiomas (arachnoid cap cells) and of arachnoid cysts, and infection of the subarachnoid space beneath it is meningitis.",
- "anatomy": {
-  "location": "Inner surface of the dura from the vault to the sacrum, separated from it by the potential subdural space and from the pia by the subarachnoid space; it does not follow the brain into the sulci, hence the cisterns.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Contains the CSF, absorbs it into the venous sinuses through the granulations, forms the blood–CSF barrier at the dural interface, and gives origin to meningiomas.",
- "bloodSupply": {
-  "arteries": [
-   "none (avascular)"
+  "kind": "structure",
+  "id": "arachnoid-mater",
+  "name": "Arachnoid mater",
+  "synonyms": [],
+  "system": "meninges",
+  "meshIds": [
+    "brain-envelope"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": 0,
-     "z": -18
+  "summary": "The delicate, avascular middle meninx that lines the dura and bridges the sulci and fissures, leaving the CSF-filled subarachnoid space between itself and the pia. Its trabeculae cross that space like a spider's web, its granulations push through the dura into the venous sinuses to absorb CSF, and its cells form the barrier that keeps CSF separate from the dural blood supply. It is the origin of meningiomas (arachnoid cap cells) and of arachnoid cysts, and infection of the subarachnoid space beneath it is meningitis.",
+  "anatomy": {
+    "location": "Inner surface of the dura from the vault to the sacrum, separated from it by the potential subdural space and from the pia by the subarachnoid space; it does not follow the brain into the sulci, hence the cisterns.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Contains the CSF, absorbs it into the venous sinuses through the granulations, forms the blood–CSF barrier at the dural interface, and gives origin to meningiomas.",
+  "bloodSupply": {
+    "arteries": [
+      "none (avascular)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": 0,
+          "z": -18
+        },
+        "label": "basal subarachnoid cisterns beneath the arachnoid"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 50
+        },
+        "label": "subarachnoid space over the convexity"
+      }
+    ],
+    "normalAppearance": "Not visible as a membrane; recognized through the subarachnoid space it encloses and by its lesions: arachnoid cysts are sharply defined CSF-signal extra-axial collections following CSF on every sequence, and leptomeningeal enhancement follows the sulci in meningitis.",
+    "pathology": [
+      {
+        "pathology": "Arachnoid cyst",
+        "modality": "MRI",
+        "finding": "Well-defined extra-axial CSF-signal cyst, most often in the middle cranial fossa, suppressing on FLAIR and not restricting on DWI; remodels bone.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Meningitis",
+        "modality": "MRI",
+        "finding": "Sulcal FLAIR hyperintensity with leptomeningeal enhancement following the sulci and cisterns.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Meningioma",
+        "modality": "MRI",
+        "finding": "Dural-based enhancing mass arising from arachnoid cap cells.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Adhesive arachnoiditis",
+        "modality": "MRI",
+        "finding": "Clumped, adherent cauda equina roots displaced to the periphery of the thecal sac (empty sac sign) after surgery, hemorrhage or infection, with chronic radicular pain.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "FLAIR and T1+Gd; lumbar puncture for CSF"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Meningism: headache, neck stiffness, photophobia",
+        "side": "n/a",
+        "mechanism": "Inflammation of the subarachnoid space"
+      },
+      {
+        "deficit": "Communicating hydrocephalus",
+        "side": "bilateral",
+        "mechanism": "Blockage of the granulations by blood or exudate"
+      },
+      {
+        "deficit": "Cranial nerve palsies in basal meningitis",
+        "side": "bilateral",
+        "mechanism": "Nerves crossing the inflamed basal cisterns"
+      },
+      {
+        "deficit": "Mass effect from a large arachnoid cyst",
+        "side": "ipsilateral",
+        "mechanism": "Expanding CSF collection"
+      }
+    ],
+    "examination": [
+      "Neck stiffness, Kernig and Brudzinski signs",
+      "Fundoscopy",
+      "Cranial nerves",
+      "Fever and rash"
+    ],
+    "syndromes": [
+      "syn-hydrocephalus",
+      "syn-subarachnoid-hemorrhage"
+    ],
+    "pearls": [
+      "An arachnoid cyst that follows CSF on every sequence and suppresses on FLAIR is benign and usually needs nothing",
+      "Basal meningitis (TB, fungal, sarcoid) hits the cranial nerves and the CSF pathways; bacterial meningitis hits the convexity"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-subarachnoid-space",
+      "section": "Structure and Function"
     },
-    "label": "basal subarachnoid cisterns beneath the arachnoid"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 50
+    {
+      "ref": "sp-back-spinal-meninges",
+      "section": "Structure and Function"
     },
-    "label": "subarachnoid space over the convexity"
-   }
+    {
+      "ref": "sp-dura-mater",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not visible as a membrane; recognized through the subarachnoid space it encloses and by its lesions: arachnoid cysts are sharply defined CSF-signal extra-axial collections following CSF on every sequence, and leptomeningeal enhancement follows the sulci in meningitis.",
-  "pathology": [
-   {
-    "pathology": "Arachnoid cyst",
-    "modality": "MRI",
-    "finding": "Well-defined extra-axial CSF-signal cyst, most often in the middle cranial fossa, suppressing on FLAIR and not restricting on DWI; remodels bone.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Meningitis",
-    "modality": "MRI",
-    "finding": "Sulcal FLAIR hyperintensity with leptomeningeal enhancement following the sulci and cisterns.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Meningioma",
-    "modality": "MRI",
-    "finding": "Dural-based enhancing mass arising from arachnoid cap cells.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Adhesive arachnoiditis",
-    "modality": "MRI",
-    "finding": "Clumped, adherent cauda equina roots displaced to the periphery of the thecal sac (empty sac sign) after surgery, hemorrhage or infection, with chronic radicular pain.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "meninges"
   ],
-  "sequenceOfChoice": "FLAIR and T1+Gd; lumbar puncture for CSF"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Meningism: headache, neck stiffness, photophobia",
-    "side": "n/a",
-    "mechanism": "Inflammation of the subarachnoid space"
-   },
-   {
-    "deficit": "Communicating hydrocephalus",
-    "side": "bilateral",
-    "mechanism": "Blockage of the granulations by blood or exudate"
-   },
-   {
-    "deficit": "Cranial nerve palsies in basal meningitis",
-    "side": "bilateral",
-    "mechanism": "Nerves crossing the inflamed basal cisterns"
-   },
-   {
-    "deficit": "Mass effect from a large arachnoid cyst",
-    "side": "ipsilateral",
-    "mechanism": "Expanding CSF collection"
-   }
-  ],
-  "examination": [
-   "Neck stiffness, Kernig and Brudzinski signs",
-   "Fundoscopy",
-   "Cranial nerves",
-   "Fever and rash"
-  ],
-  "syndromes": [
-   "syn-hydrocephalus",
-   "syn-subarachnoid-hemorrhage"
-  ],
-  "pearls": [
-   "An arachnoid cyst that follows CSF on every sequence and suppresses on FLAIR is benign and usually needs nothing",
-   "Basal meningitis (TB, fungal, sarcoid) hits the cranial nerves and the CSF pathways; bacterial meningitis hits the convexity"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    422,
-    425
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    428,
-    433
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    26,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    207,
-    212
-   ]
-  }
- ],
- "tags": [
-  "meninges"
- ],
- "status": "draft",
- "latin": "Arachnoidea mater"
+  "status": "draft",
+  "latin": "Arachnoidea mater"
 }

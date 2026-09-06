@@ -1,5 +1,7 @@
 import type { App } from '../app.ts';
 import { h, clear } from './dom.ts';
+import { citeNode } from './cite.ts';
+import type { Citation } from '../types/content.ts';
 import { applyStates } from '../state/actions.ts';
 
 type Rec = Record<string, unknown>;
@@ -37,8 +39,8 @@ export class TopicPanel {
     const rel = (t['related'] as Rec) ?? {};
     const imaging = t['imaging'] as { normalAppearance?: string; pathology?: { pathology: string; modality: string; sequence?: string; finding: string; timing?: string; pitfalls?: string }[] } | undefined;
     const meshIds = ((t['meshIds'] as string[]) ?? []).filter((m) => this.app.registry.byId.has(m));
-    const cites = (t['citations'] as { book: string; chapter: number; pages: [number, number] }[]) ?? [];
-    const src = this.app.content?.sources ?? {};
+    const cites = (t['citations'] as unknown as Citation[]) ?? [];
+    const bib = this.app.content?.bibliography;
     const el = h('div', {},
       h('div', { class: 'content-head' }, h('span', { class: 'swatch big', style: 'background:#7fb3d5' }),
         h('div', {}, h('h2', {}, String(t['name'])), h('div', { class: 'crumbs' }, `Topic · ${CATEGORY_LABEL[String(t['category'])] ?? String(t['category'])}`, ...(((t['synonyms'] as string[]) ?? []).length ? [` · ${(t['synonyms'] as string[]).join(', ')}`] : [])))),
@@ -54,7 +56,7 @@ export class TopicPanel {
       ...(meshIds.length ? [h('h3', {}, 'In the atlas'), h('div', { class: 'chips' }, ...meshIds.map((m) => h('a', { class: 'chip', href: `#/structure/${m}` }, this.app.registry.byId.get(m)!.name)))] : []),
       ...(['structureIds', 'pathwayIds', 'syndromeIds', 'topicIds'].some((k) => ((rel[k] as string[]) ?? []).length) ? [h('h3', {}, 'Related'),
         h('div', { class: 'chips' }, ...['structureIds', 'pathwayIds', 'syndromeIds', 'topicIds'].flatMap((k) => ((rel[k] as string[]) ?? []).map((r) => this.link(r))))] : []),
-      h('h3', {}, 'Sources'), h('ul', { class: 'cites' }, ...cites.map((c) => h('li', {}, `${src[c.book]?.cite ?? c.book} ch. ${c.chapter}, p. ${c.pages[0]}${c.pages[1] !== c.pages[0] ? `–${c.pages[1]}` : ''}`))),
+      h('h3', {}, 'Sources'), h('ul', { class: 'cites' }, ...cites.map((c) => h('li', {}, citeNode(bib, c)))),
       h('div', { class: 'muted small' }, h('a', { href: '#/topic' }, '← all topics')),
     );
     this.container.append(el);

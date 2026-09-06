@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-default-mode-network",
- "term": "Default mode network",
- "definition": "The set of regions (medial prefrontal cortex, posterior cingulate and precuneus, angular gyri, hippocampal formation) that is most active at rest and during self-referential thought and memory retrieval and deactivates during attention-demanding tasks; its posterior hub is the first to lose metabolism in Alzheimer disease.",
- "related": [
-  "g-papez-circuit"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-default-mode-network",
+  "term": "Default mode network",
+  "definition": "The set of regions (medial prefrontal cortex, posterior cingulate and precuneus, angular gyri, hippocampal formation) that is most active at rest and during self-referential thought and memory retrieval and deactivates during attention-demanding tasks; its posterior hub is the first to lose metabolism in Alzheimer disease.",
+  "related": [
+    "g-papez-circuit"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-alzheimer-disease",
+      "section": "Pathophysiology"
+    }
+  ]
 }

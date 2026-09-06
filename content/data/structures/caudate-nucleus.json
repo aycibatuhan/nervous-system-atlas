@@ -1,202 +1,182 @@
 {
- "kind": "structure",
- "id": "caudate-nucleus",
- "name": "Caudate nucleus",
- "synonyms": [],
- "system": "basal-ganglia",
- "meshIds": [
-  "caudate-nucleus-l",
-  "caudate-nucleus-r"
- ],
- "summary": "A C-shaped mass of gray matter that follows the lateral ventricle: a bulbous head in the wall of the frontal horn, a body along the floor of the ventricle above the thalamus, and a slender tail curving down into the roof of the temporal horn to end near the amygdala. With the putamen (to which it is joined by gray bridges across the anterior limb of the internal capsule) it forms the striatum, the input stage of the basal ganglia. The head receives prefrontal and association cortex and is the substrate of the cognitive and limbic loops; its atrophy flattens the frontal horns in Huntington disease, and lesions cause abulia, executive dysfunction and sometimes chorea rather than weakness.",
- "anatomy": {
-  "location": "Medial to the anterior limb of the internal capsule and lateral to the frontal horn (head), on the floor of the body of the lateral ventricle lateral to the thalamus (body), and in the roof of the temporal horn (tail); supplied by the recurrent artery of Heubner and the lenticulostriate arteries.",
-  "subdivisions": [
-   {
-    "name": "Head",
-    "note": "prefrontal, orbitofrontal and cingulate input; cognitive and limbic loops"
-   },
-   {
-    "name": "Body",
-    "note": "premotor and parietal association input"
-   },
-   {
-    "name": "Tail",
-    "note": "visual and auditory association input; ends at the amygdala"
-   }
+  "kind": "structure",
+  "id": "caudate-nucleus",
+  "name": "Caudate nucleus",
+  "synonyms": [],
+  "system": "basal-ganglia",
+  "meshIds": [
+    "caudate-nucleus-l",
+    "caudate-nucleus-r"
   ],
-  "relations": {
-   "medial": "frontal horn and body of the lateral ventricle",
-   "lateral": "anterior limb of the internal capsule and putamen",
-   "inferior": "thalamus (body) and temporal horn (tail)"
-  }
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cortex-prefrontal and association cortex",
-    "note": "glutamatergic"
-   },
-   {
-    "from": "substantia-nigra (pars compacta)",
-    "via": "nigrostriatal pathway",
-    "note": "dopaminergic"
-   },
-   {
-    "from": "thalamus intralaminar nuclei"
-   }
-  ],
-  "efferents": [
-   {
-    "to": "globus-pallidus",
-    "note": "GABAergic direct and indirect pathways"
-   },
-   {
-    "to": "substantia-nigra (pars reticulata)"
-   }
-  ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Input nucleus of the basal ganglia for the associative and limbic loops: goal-directed behavior, learning of habits and reward, cognitive flexibility, eye movement control (caudate → substantia nigra pars reticulata → superior colliculus).",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-aca",
-   "artery-mca"
-  ],
-  "territories": [
-   "territory-lenticulostriate",
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 14,
-     "y": 12,
-     "z": 12
+  "summary": "A C-shaped mass of gray matter that follows the lateral ventricle: a bulbous head in the wall of the frontal horn, a body along the floor of the ventricle above the thalamus, and a slender tail curving down into the roof of the temporal horn to end near the amygdala. With the putamen (to which it is joined by gray bridges across the anterior limb of the internal capsule) it forms the striatum, the input stage of the basal ganglia. The head receives prefrontal and association cortex and is the substrate of the cognitive and limbic loops; its atrophy flattens the frontal horns in Huntington disease, and lesions cause abulia, executive dysfunction and sometimes chorea rather than weakness.",
+  "anatomy": {
+    "location": "Medial to the anterior limb of the internal capsule and lateral to the frontal horn (head), on the floor of the body of the lateral ventricle lateral to the thalamus (body), and in the roof of the temporal horn (tail); supplied by the recurrent artery of Heubner and the lenticulostriate arteries.",
+    "subdivisions": [
+      {
+        "name": "Head",
+        "note": "prefrontal, orbitofrontal and cingulate input; cognitive and limbic loops"
+      },
+      {
+        "name": "Body",
+        "note": "premotor and parietal association input"
+      },
+      {
+        "name": "Tail",
+        "note": "visual and auditory association input; ends at the amygdala"
+      }
+    ],
+    "relations": {
+      "medial": "frontal horn and body of the lateral ventricle",
+      "lateral": "anterior limb of the internal capsule and putamen",
+      "inferior": "thalamus (body) and temporal horn (tail)"
+    }
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "cortex-prefrontal and association cortex",
+        "note": "glutamatergic"
+      },
+      {
+        "from": "substantia-nigra (pars compacta)",
+        "via": "nigrostriatal pathway",
+        "note": "dopaminergic"
+      },
+      {
+        "from": "thalamus intralaminar nuclei"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "globus-pallidus",
+        "note": "GABAergic direct and indirect pathways"
+      },
+      {
+        "to": "substantia-nigra (pars reticulata)"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Input nucleus of the basal ganglia for the associative and limbic loops: goal-directed behavior, learning of habits and reward, cognitive flexibility, eye movement control (caudate → substantia nigra pars reticulata → superior colliculus).",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-aca",
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-lenticulostriate",
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 14,
+          "y": 12,
+          "z": 12
+        },
+        "label": "caudate head bulging into the frontal horn"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 14,
+          "y": 12,
+          "z": 12
+        },
+        "label": "head of the caudate lateral to the frontal horn, medial to the internal capsule"
+      }
+    ],
+    "normalAppearance": "The head is the gray matter indenting the lateral wall of the frontal horn on axial and coronal images; the body runs along the ventricular floor. Flattening or concavity of the frontal horn walls (loss of the caudate bulge) is the signature of Huntington disease; symmetric caudate and putamen T2 hyperintensity suggests toxic, metabolic or prion disease.",
+    "pathology": [
+      {
+        "pathology": "Huntington disease",
+        "modality": "MRI",
+        "finding": "Bilateral caudate head atrophy giving boxcar frontal horns, with putaminal atrophy.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Caudate infarct",
+        "modality": "MRI",
+        "finding": "Restriction in the caudate head from Heubner's artery or lenticulostriate occlusion; abulia, confusion or contralateral chorea.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Sporadic CJD",
+        "modality": "MRI",
+        "finding": "Bilateral caudate and putamen DWI hyperintensity (striatal ribbon) with cortical ribboning.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Carbon monoxide, hypoglycemia, Wilson disease",
+        "modality": "MRI",
+        "finding": "Symmetric striatal T2 change; the globus pallidus is the CO target, the striatum the hypoglycemia target.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Axial T1 (atrophy), DWI and FLAIR"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Abulia, apathy, executive dysfunction",
+        "side": "bilateral",
+        "mechanism": "Prefrontal-caudate loop"
+      },
+      {
+        "deficit": "Contralateral chorea or dystonia",
+        "side": "contralateral",
+        "mechanism": "Loss of striatal inhibition of the pallidum"
+      },
+      {
+        "deficit": "Obsessive-compulsive features",
+        "side": "bilateral",
+        "mechanism": "Orbitofrontal-caudate circuit"
+      },
+      {
+        "deficit": "Impaired saccade initiation",
+        "side": "contralateral",
+        "mechanism": "Caudate-nigral-collicular pathway"
+      }
+    ],
+    "examination": [
+      "Frontal executive tasks and initiative",
+      "Observe for chorea at rest and with distraction (finger counting)",
+      "Saccades on command",
+      "Family history of movement disorder or dementia"
+    ],
+    "syndromes": [
+      "syn-huntington-chorea",
+      "syn-lacunar-pure-motor"
+    ],
+    "pearls": [
+      "Chorea with personality change and a family history: look at the caudate heads on the scan",
+      "Caudate strokes present with behavioral change more than weakness"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-nucleus-caudate",
+      "section": "Structure and Function"
     },
-    "label": "caudate head bulging into the frontal horn"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 14,
-     "y": 12,
-     "z": 12
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "head of the caudate lateral to the frontal horn, medial to the internal capsule"
-   }
+    {
+      "ref": "sp-extrapyramidal-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The head is the gray matter indenting the lateral wall of the frontal horn on axial and coronal images; the body runs along the ventricular floor. Flattening or concavity of the frontal horn walls (loss of the caudate bulge) is the signature of Huntington disease; symmetric caudate and putamen T2 hyperintensity suggests toxic, metabolic or prion disease.",
-  "pathology": [
-   {
-    "pathology": "Huntington disease",
-    "modality": "MRI",
-    "finding": "Bilateral caudate head atrophy giving boxcar frontal horns, with putaminal atrophy.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Caudate infarct",
-    "modality": "MRI",
-    "finding": "Restriction in the caudate head from Heubner's artery or lenticulostriate occlusion; abulia, confusion or contralateral chorea.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Sporadic CJD",
-    "modality": "MRI",
-    "finding": "Bilateral caudate and putamen DWI hyperintensity (striatal ribbon) with cortical ribboning.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Carbon monoxide, hypoglycemia, Wilson disease",
-    "modality": "MRI",
-    "finding": "Symmetric striatal T2 change; the globus pallidus is the CO target, the striatum the hypoglycemia target.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "basal-ganglia"
   ],
-  "sequenceOfChoice": "Axial T1 (atrophy), DWI and FLAIR"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Abulia, apathy, executive dysfunction",
-    "side": "bilateral",
-    "mechanism": "Prefrontal-caudate loop"
-   },
-   {
-    "deficit": "Contralateral chorea or dystonia",
-    "side": "contralateral",
-    "mechanism": "Loss of striatal inhibition of the pallidum"
-   },
-   {
-    "deficit": "Obsessive-compulsive features",
-    "side": "bilateral",
-    "mechanism": "Orbitofrontal-caudate circuit"
-   },
-   {
-    "deficit": "Impaired saccade initiation",
-    "side": "contralateral",
-    "mechanism": "Caudate-nigral-collicular pathway"
-   }
-  ],
-  "examination": [
-   "Frontal executive tasks and initiative",
-   "Observe for chorea at rest and with distraction (finger counting)",
-   "Saccades on command",
-   "Family history of movement disorder or dementia"
-  ],
-  "syndromes": [
-   "syn-huntington-chorea",
-   "syn-lacunar-pure-motor"
-  ],
-  "pearls": [
-   "Chorea with personality change and a family history: look at the caudate heads on the scan",
-   "Caudate strokes present with behavioral change more than weakness"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    310,
-    311
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    315,
-    316
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    56
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    244,
-    245
-   ]
-  }
- ],
- "tags": [
-  "basal-ganglia"
- ],
- "status": "draft",
- "latin": "Nucleus caudatus"
+  "status": "draft",
+  "latin": "Nucleus caudatus"
 }

@@ -1,153 +1,145 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-viiia",
- "name": "Lobule VIIIA",
- "synonyms": [
-  "biventer lobule (upper part)",
-  "pyramis (vermis)"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-viiia-l",
-  "cerebellar-lobule-viiia-r"
- ],
- "summary": "Lobule VIIIA is the upper part of the biventer lobule on the inferior cerebellar surface, between lobule VIIB above and VIIIB below, with the pyramis of the vermis as its midline part. It contains the second, inverted somatotopic map of the body, so it is a sensorimotor lobule like the anterior lobe: it receives spinocerebellar and corticopontine input from the limbs and trunk and projects through the interposed and dentate nuclei to the motor thalamus and the brainstem. Lesions produce ipsilateral limb ataxia and contribute to the gait disorder of PICA infarcts, its vermian part (the pyramis) participates in trunk and posture control, and it is one of the lobules where the cerebellar contribution to motor learning has been mapped.",
- "anatomy": {
-  "location": "Inferior surface of the posterior lobe between the prebiventer fissure above and the intrabiventer fissure below, from the vermian pyramis laterally through the upper biventer lobule to the lateral hemispheric margin, resting on the occipital bone above the cerebellar tonsils.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Sensorimotor cortex via the pontine nuclei",
-    "via": "middle cerebellar peduncle"
-   },
-   {
-    "from": "Spinal cord and lateral reticular nucleus",
-    "via": "spinocerebellar and reticulocerebellar fibers"
-   },
-   {
-    "from": "Inferior olive",
-    "via": "climbing fibers"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-viiia",
+  "name": "Lobule VIIIA",
+  "synonyms": [
+    "biventer lobule (upper part)",
+    "pyramis (vermis)"
   ],
-  "efferents": [
-   {
-    "to": "Interposed and dentate nuclei; fastigial nucleus (vermis)",
-    "via": "Purkinje axons"
-   },
-   {
-    "to": "Motor cortex and red nucleus via the superior peduncle",
-    "via": "cerebellar outflow"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-viiia-l",
+    "cerebellar-lobule-viiia-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Lobule VIIIA receives copies of motor commands from the sensorimotor cortex through the pontine nuclei and sensory feedback from the limbs through the spinocerebellar tracts and the lateral reticular nucleus, and its Purkinje cells shape the output of the interposed and dentate nuclei to the motor cortex and the red nucleus, providing a second cerebellar map that is engaged especially in bimanual coordination, rhythmic movements such as tapping and walking, and the learning of new motor sequences. The pyramis receives vestibular and spinal input and controls trunk posture through the fastigial nucleus. Damage adds limb dysmetria and gait ataxia to the vertigo of inferior cerebellar lesions.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-inferior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebellar-lobule-viiia-l"
-    },
-    "label": "lobule VIIIA in the upper biventer lobule"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-viiia-r"
-    },
-    "label": "pyramis and biventer region on the inferior surface"
-   }
-  ],
-  "normalAppearance": "The upper of the two biventer sublobules on the inferior surface of the hemisphere on sagittal and coronal images, lateral to the vermian pyramis and above the tonsil.",
-  "pathology": [
-   {
-    "pathology": "PICA territory infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the inferior hemisphere including lobules VIII and the tonsil with limb and gait ataxia and vertigo.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cerebellar degeneration (paraneoplastic or hereditary)",
-    "modality": "MRI",
-    "finding": "Diffuse folial atrophy including the inferior hemispheres, progressive ataxia; antibodies and genetics define the cause.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Chiari malformation with tonsillar descent",
-    "modality": "MRI",
-    "finding": "Tonsils below the foramen magnum with crowding of the inferior cerebellum; VIIIA and B are compressed against the occipital bone.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia and dysmetria",
-    "side": "ipsilateral",
-    "mechanism": "Loss of the second sensorimotor map"
-   },
-   {
-    "deficit": "Gait and trunk ataxia (vermian part)",
-    "side": "bilateral",
-    "mechanism": "Loss of pyramis control of trunk posture through the fastigial nucleus"
-   },
-   {
-    "deficit": "Impaired rhythmic and bimanual coordination",
-    "side": "ipsilateral",
-    "mechanism": "Loss of timing signals for sequential movements"
-   }
-  ],
-  "examination": [
-   "Finger-nose and heel-shin tests",
-   "Rhythmic tapping and bimanual alternating movements",
-   "Tandem gait"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-cerebellar-vermian-midline"
-  ],
-  "pearls": [
-   "The cerebellum maps the body twice: lobule VIII is the second, upside-down map",
-   "Rhythm lives in lobule VIII: tapping in time fails with inferior cerebellar lesions",
-   "Inferior cerebellar strokes combine vertigo (nodulus) with ataxia (VIII)"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
+  "summary": "Lobule VIIIA is the upper part of the biventer lobule on the inferior cerebellar surface, between lobule VIIB above and VIIIB below, with the pyramis of the vermis as its midline part. It contains the second, inverted somatotopic map of the body, so it is a sensorimotor lobule like the anterior lobe: it receives spinocerebellar and corticopontine input from the limbs and trunk and projects through the interposed and dentate nuclei to the motor thalamus and the brainstem. Lesions produce ipsilateral limb ataxia and contribute to the gait disorder of PICA infarcts, its vermian part (the pyramis) participates in trunk and posture control, and it is one of the lobules where the cerebellar contribution to motor learning has been mapped.",
+  "anatomy": {
+    "location": "Inferior surface of the posterior lobe between the prebiventer fissure above and the intrabiventer fissure below, from the vermian pyramis laterally through the upper biventer lobule to the lateral hemispheric margin, resting on the occipital bone above the cerebellar tonsils.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "cerebellar-hemisphere"
+  "connections": {
+    "afferents": [
+      {
+        "from": "Sensorimotor cortex via the pontine nuclei",
+        "via": "middle cerebellar peduncle"
+      },
+      {
+        "from": "Spinal cord and lateral reticular nucleus",
+        "via": "spinocerebellar and reticulocerebellar fibers"
+      },
+      {
+        "from": "Inferior olive",
+        "via": "climbing fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Interposed and dentate nuclei; fastigial nucleus (vermis)",
+        "via": "Purkinje axons"
+      },
+      {
+        "to": "Motor cortex and red nucleus via the superior peduncle",
+        "via": "cerebellar outflow"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "Lobule VIIIA receives copies of motor commands from the sensorimotor cortex through the pontine nuclei and sensory feedback from the limbs through the spinocerebellar tracts and the lateral reticular nucleus, and its Purkinje cells shape the output of the interposed and dentate nuclei to the motor cortex and the red nucleus, providing a second cerebellar map that is engaged especially in bimanual coordination, rhythmic movements such as tapping and walking, and the learning of new motor sequences. The pyramis receives vestibular and spinal input and controls trunk posture through the fastigial nucleus. Damage adds limb dysmetria and gait ataxia to the vertigo of inferior cerebellar lesions.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-inferior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebellar-lobule-viiia-l"
+        },
+        "label": "lobule VIIIA in the upper biventer lobule"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-viiia-r"
+        },
+        "label": "pyramis and biventer region on the inferior surface"
+      }
+    ],
+    "normalAppearance": "The upper of the two biventer sublobules on the inferior surface of the hemisphere on sagittal and coronal images, lateral to the vermian pyramis and above the tonsil.",
+    "pathology": [
+      {
+        "pathology": "PICA territory infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the inferior hemisphere including lobules VIII and the tonsil with limb and gait ataxia and vertigo.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cerebellar degeneration (paraneoplastic or hereditary)",
+        "modality": "MRI",
+        "finding": "Diffuse folial atrophy including the inferior hemispheres, progressive ataxia; antibodies and genetics define the cause.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Chiari malformation with tonsillar descent",
+        "modality": "MRI",
+        "finding": "Tonsils below the foramen magnum with crowding of the inferior cerebellum; VIIIA and B are compressed against the occipital bone.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia and dysmetria",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the second sensorimotor map"
+      },
+      {
+        "deficit": "Gait and trunk ataxia (vermian part)",
+        "side": "bilateral",
+        "mechanism": "Loss of pyramis control of trunk posture through the fastigial nucleus"
+      },
+      {
+        "deficit": "Impaired rhythmic and bimanual coordination",
+        "side": "ipsilateral",
+        "mechanism": "Loss of timing signals for sequential movements"
+      }
+    ],
+    "examination": [
+      "Finger-nose and heel-shin tests",
+      "Rhythmic tapping and bimanual alternating movements",
+      "Tandem gait"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-cerebellar-vermian-midline"
+    ],
+    "pearls": [
+      "The cerebellum maps the body twice: lobule VIII is the second, upside-down map",
+      "Rhythm lives in lobule VIII: tapping in time fails with inferior cerebellar lesions",
+      "Inferior cerebellar strokes combine vertigo (nodulus) with ataxia (VIII)"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-spinocerebellar-dorsal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "cerebellar-hemisphere"
 }

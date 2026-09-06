@@ -1,169 +1,157 @@
 {
- "kind": "pathway",
- "id": "pathway-horizontal-gaze",
- "name": "Horizontal gaze pathway",
- "synonyms": [],
- "type": "oculomotor",
- "modality": "conjugate horizontal eye movements",
- "summary": "Looking to the left requires the left lateral rectus and the right medial rectus to contract together. The command starts in the right frontal eye field (for voluntary saccades) or the parieto-occipital cortex (for pursuit), descends to the left paramedian pontine reticular formation, which fires the left abducens nucleus; that nucleus contains both the motor neurons for the left lateral rectus and the interneurons whose axons cross and ascend in the right MLF to the right medial rectus subnucleus of the oculomotor nucleus. Lesions of the frontal eye field, the PPRF, the abducens nucleus and the MLF each produce a characteriztic and localizable pattern.",
- "origin": {
-  "structures": [
-   "frontal-eye-field",
-   "lobule-superior-parietal"
+  "kind": "pathway",
+  "id": "pathway-horizontal-gaze",
+  "name": "Horizontal gaze pathway",
+  "synonyms": [],
+  "type": "oculomotor",
+  "modality": "conjugate horizontal eye movements",
+  "summary": "Looking to the left requires the left lateral rectus and the right medial rectus to contract together. The command starts in the right frontal eye field (for voluntary saccades) or the parieto-occipital cortex (for pursuit), descends to the left paramedian pontine reticular formation, which fires the left abducens nucleus; that nucleus contains both the motor neurons for the left lateral rectus and the interneurons whose axons cross and ascend in the right MLF to the right medial rectus subnucleus of the oculomotor nucleus. Lesions of the frontal eye field, the PPRF, the abducens nucleus and the MLF each produce a characteriztic and localizable pattern.",
+  "origin": {
+    "structures": [
+      "frontal-eye-field",
+      "lobule-superior-parietal"
+    ],
+    "note": "Frontal eye field (saccades) and parieto-temporo-occipital cortex (pursuit); also the superior colliculus and vestibular nuclei."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Frontal eye field neuron",
+      "synapse": "contralateral PPRF (directly and via the superior colliculus)"
+    },
+    {
+      "order": 2,
+      "cellBody": "PPRF burst neuron",
+      "synapse": "ipsilateral abducens nucleus"
+    },
+    {
+      "order": 3,
+      "cellBody": "Abducens motor neuron",
+      "synapse": "ipsilateral lateral rectus"
+    },
+    {
+      "order": 4,
+      "cellBody": "Abducens internuclear neuron",
+      "synapse": "contralateral oculomotor nucleus (medial rectus subnucleus) via the MLF"
+    },
+    {
+      "order": 5,
+      "cellBody": "Oculomotor motor neuron",
+      "synapse": "medial rectus"
+    }
   ],
-  "note": "Frontal eye field (saccades) and parieto-temporo-occipital cortex (pursuit); also the superior colliculus and vestibular nuclei."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Frontal eye field neuron",
-   "synapse": "contralateral PPRF (directly and via the superior colliculus)"
+  "decussation": {
+    "level": "Cortex to PPRF (crossed in the midbrain–pons) and abducens interneurons to the contralateral MLF",
+    "structureId": "medial-longitudinal-fasciculus",
+    "note": "Double crossing: the cortex drives the contralateral PPRF, whose abducens nucleus drives the contralateral medial rectus through the MLF."
   },
-  {
-   "order": 2,
-   "cellBody": "PPRF burst neuron",
-   "synapse": "ipsilateral abducens nucleus"
-  },
-  {
-   "order": 3,
-   "cellBody": "Abducens motor neuron",
-   "synapse": "ipsilateral lateral rectus"
-  },
-  {
-   "order": 4,
-   "cellBody": "Abducens internuclear neuron",
-   "synapse": "contralateral oculomotor nucleus (medial rectus subnucleus) via the MLF"
-  },
-  {
-   "order": 5,
-   "cellBody": "Oculomotor motor neuron",
-   "synapse": "medial rectus"
-  }
- ],
- "decussation": {
-  "level": "Cortex to PPRF (crossed in the midbrain–pons) and abducens interneurons to the contralateral MLF",
-  "structureId": "medial-longitudinal-fasciculus",
-  "note": "Double crossing: the cortex drives the contralateral PPRF, whose abducens nucleus drives the contralateral medial rectus through the MLF."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "frontal-eye-field",
-   "meshId": "gyrus-middle-frontal-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "voluntary saccade command"
-  },
-  {
-   "order": 2,
-   "structureId": "internal-capsule",
-   "meshId": "internal-capsule-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "descends with corticobulbar fibers"
-  },
-  {
-   "order": 3,
-   "structureId": "pprf",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "paramedian pontine reticular formation"
-  },
-  {
-   "order": 4,
-   "structureId": "abducens-nucleus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "motor neurons to the lateral rectus; interneurons to the MLF"
-  },
-  {
-   "order": 5,
-   "structureId": "medial-longitudinal-fasciculus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "interneuron axons cross and ascend in the MLF"
-  },
-  {
-   "order": 6,
-   "structureId": "oculomotor-nucleus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "medial rectus subnucleus"
-  }
- ],
- "termination": "Lateral rectus (abducens nerve) of one eye and medial rectus (oculomotor nerve) of the other.",
- "meshIds": [
-  "brainstem"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Frontal eye field (destructive)",
-   "effects": "Eyes deviate toward the lesion; cannot look voluntarily to the opposite side; vestibulo-ocular reflex intact; recovers in days",
-   "side": "contralateral"
-  },
-  {
-   "level": "Frontal eye field (irritative, seizure)",
-   "effects": "Eyes and head turn away from the focus",
-   "side": "contralateral"
-  },
-  {
-   "level": "PPRF",
-   "effects": "Loss of ipsilateral saccades; eyes deviate away from the lesion; oculocephalic reflex can still bring the eyes across",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Abducens nucleus",
-   "effects": "Complete ipsilateral gaze palsy not overcome by the oculocephalic reflex, usually with an ipsilateral facial palsy",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "MLF",
-   "effects": "Internuclear ophthalmoplegia: the ipsilateral eye fails to adduct, the contralateral eye shows abducting nystagmus, convergence spared",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Abducens nucleus plus ipsilateral MLF",
-   "effects": "One-and-a-half syndrome: only abduction of the contralateral eye survives",
-   "side": "ipsilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Hemisphere: eyes look toward the lesion. Pons: eyes look away from the lesion",
-   "A gaze palsy that head turning overcomes is supranuclear; one it cannot overcome is nuclear",
-   "INO is the MLF; bilateral INO in a young adult is multiple sclerosis"
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "frontal-eye-field",
+      "meshId": "gyrus-middle-frontal-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "voluntary saccade command"
+    },
+    {
+      "order": 2,
+      "structureId": "internal-capsule",
+      "meshId": "internal-capsule-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "descends with corticobulbar fibers"
+    },
+    {
+      "order": 3,
+      "structureId": "pprf",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "paramedian pontine reticular formation"
+    },
+    {
+      "order": 4,
+      "structureId": "abducens-nucleus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "motor neurons to the lateral rectus; interneurons to the MLF"
+    },
+    {
+      "order": 5,
+      "structureId": "medial-longitudinal-fasciculus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "interneuron axons cross and ascend in the MLF"
+    },
+    {
+      "order": 6,
+      "structureId": "oculomotor-nucleus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "medial rectus subnucleus"
+    }
   ],
-  "syndromes": [
-   "syn-ino",
-   "syn-one-and-a-half",
-   "syn-horizontal-gaze-palsy-pontine",
-   "syn-foville",
-   "syn-mca-stem-infarct"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    331,
-    331
-   ]
+  "termination": "Lateral rectus (abducens nerve) of one eye and medial rectus (oculomotor nerve) of the other.",
+  "meshIds": [
+    "brainstem"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Frontal eye field (destructive)",
+      "effects": "Eyes deviate toward the lesion; cannot look voluntarily to the opposite side; vestibulo-ocular reflex intact; recovers in days",
+      "side": "contralateral"
+    },
+    {
+      "level": "Frontal eye field (irritative, seizure)",
+      "effects": "Eyes and head turn away from the focus",
+      "side": "contralateral"
+    },
+    {
+      "level": "PPRF",
+      "effects": "Loss of ipsilateral saccades; eyes deviate away from the lesion; oculocephalic reflex can still bring the eyes across",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Abducens nucleus",
+      "effects": "Complete ipsilateral gaze palsy not overcome by the oculocephalic reflex, usually with an ipsilateral facial palsy",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "MLF",
+      "effects": "Internuclear ophthalmoplegia: the ipsilateral eye fails to adduct, the contralateral eye shows abducting nystagmus, convergence spared",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Abducens nucleus plus ipsilateral MLF",
+      "effects": "One-and-a-half syndrome: only abduction of the contralateral eye survives",
+      "side": "ipsilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Hemisphere: eyes look toward the lesion. Pons: eyes look away from the lesion",
+      "A gaze palsy that head turning overcomes is supranuclear; one it cannot overcome is nuclear",
+      "INO is the MLF; bilateral INO in a young adult is multiple sclerosis"
+    ],
+    "syndromes": [
+      "syn-ino",
+      "syn-one-and-a-half",
+      "syn-horizontal-gaze-palsy-pontine",
+      "syn-foville",
+      "syn-mca-stem-infarct"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    157,
-    157
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    96,
-    101
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-abducens-nucleus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-internuclear-ophthalmoplegia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-reticular-formation",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

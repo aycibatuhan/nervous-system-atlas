@@ -1,153 +1,125 @@
 {
- "kind": "topic",
- "id": "topic-nerve-injury-regeneration",
- "name": "Peripheral nerve injury, degeneration and regeneration",
- "synonyms": [],
- "category": "physiology",
- "summary": "A peripheral nerve is a bundle of axons with their Schwann cell sheaths, organized into fascicles by the perineurium and held in the epineurium, and its response to injury follows fixed rules: distal to a cut the axon and its myelin degenerate over days (Wallerian degeneration) while the Schwann cells survive, proliferate and form tubes that guide regenerating sprouts from the proximal stump at about a millimeter a day; the cell body swells and turns its metabolism to growth (chromatolysis); and recovery depends on whether the connective tissue tubes remain intact. The classification of injuries into neurapraxia, axonotmesis and neurotmesis predicts recovery, the electrophysiology dates the injury, and the same rules explain why the central nervous system, whose oligodendrocytes and glial scar block regrowth, does not recover in the same way.",
- "sections": [
-  {
-   "heading": "Structure of the nerve and types of injury",
-   "body": "Myelinated axons, wrapped by one Schwann cell per internode with nodes of Ranvier for saltatory conduction, carry motor, large sensory and some autonomic signals, whereas unmyelinated axons in Remak bundles carry pain, temperature and postganglionic autonomic signals; fascicles are separated by the perineurium, which is the blood-nerve barrier, and the epineurium carries the vasa nervorum. Neurapraxia is a conduction block from focal demyelination or ischemia without axonal loss (the Saturday night radial palsy, a tourniquet palsy), recovering over days to weeks; axonotmesis is axonal interruption with intact connective tissue (traction, crush), recovering by regeneration along the preserved tubes at about one millimeter a day; neurotmesis is complete transection with loss of the tubes, in which regeneration fails or produces a neuroma unless the nerve is repaired. Compression at entrapment sites produces first demyelination and then axonal loss, and ischemia from vasculitis produces infarction of nerve segments."
-  },
-  {
-   "heading": "Degeneration and the cell body response",
-   "body": "Within days of axonal interruption the distal segment fragments and its myelin is cleared by Schwann cells and macrophages, so the distal nerve stops conducting after about a week (the reason a nerve conduction study is normal in the first days after a transection and must be repeated); the muscle it supplied atrophies, develops fibrillations and positive sharp waves on EMG after two to three weeks and loses its motor end plates over months. The neuron reacts by chromatolysis, swelling with dispersal of Nissl substance and displacement of the nucleus, switching from transmission to regeneration; neurons whose axons are cut close to the cell body may die. In the central nervous system the same degeneration occurs (Wallerian degeneration of the corticospinal tract is visible on MRI after a capsular stroke), but oligodendrocytes do not support regrowth, myelin debris and the astrocytic scar inhibit it, and functional recovery depends on plasticity and sprouting of surviving connections rather than regeneration."
-  },
-  {
-   "heading": "Regeneration, reinnervation and their errors",
-   "body": "Sprouts from the proximal stump enter the Schwann cell tubes (bands of Bungner), which express growth-promoting molecules, and grow at one to three millimeters a day, so the time to recovery is estimated from the distance to the muscle; the advancing front can be followed by Tinel sign (tingling on percussion over the regenerating axons) and by the sequence of muscle recovery from proximal to distal. Reinnervation restores function only if axons reach the right targets: misdirection after facial nerve injury produces synkinesis (eye closure with smiling) and crocodile tears, and after limb nerve injury produces co-contraction and poor sensory localization. Surviving motor neurons also sprout collaterals to adopt denervated muscle fibers, producing the large motor units of chronic denervation on EMG and the giant motor units of old poliomyelitis. Regeneration slows with age and distance, and muscle that stays denervated for more than a year or two cannot be recovered, which sets the timing of nerve repair and transfer surgery."
-  },
-  {
-   "heading": "Clinical and electrophysiological assessment",
-   "body": "The examination localizes the lesion by the pattern of motor and sensory loss and by Tinel sign; nerve conduction studies after a week distinguish conduction block (preserved distal response, absent proximal-to-distal conduction) from axonal loss (reduced or absent distal response), and EMG after three weeks shows denervation and, months later, reinnervation; MRI neurography and ultrasound show the site of entrapment, transection or neuroma. Management follows the injury type: observation and splinting for neurapraxia, serial examination with EMG for axonotmesis, and exploration with repair or grafting within weeks for neurotmesis, with nerve transfers when the distance to the muscle is too great. Entrapment neuropathies are relieved by decompression before axonal loss is severe. The same biology underlies the neuropathies: demyelinating ones (Guillain-Barre, CIDP) block conduction and recover quickly, whereas axonal ones (diabetes, vasculitis, toxins) recover slowly by regeneration and sprouting."
-  }
- ],
- "keyPoints": [
-  "Neurapraxia conducts distally and recovers in weeks; axonotmesis regenerates at a millimeter a day; neurotmesis needs a surgeon",
-  "Nerve conduction studies are normal in the first days after a transection: repeat them after a week, and EMG after three",
-  "Tinel sign marks the front of regeneration; count the millimeters to the muscle",
-  "Misdirected regeneration produces synkinesis and crocodile tears after facial nerve injury",
-  "The central nervous system degenerates the same way but does not regenerate: plasticity, not regrowth, is its recovery"
- ],
- "meshIds": [
-  "median-nerve-l",
-  "median-nerve-r",
-  "ulnar-nerve-l",
-  "ulnar-nerve-r",
-  "radial-nerve-l",
-  "radial-nerve-r",
-  "cn-07-facial-course-l",
-  "cn-07-facial-course-r"
- ],
- "related": {
-  "structureIds": [
-   "nerve-median",
-   "nerve-ulnar",
-   "nerve-radial",
-   "nerve-common-peroneal",
-   "dorsal-root-ganglion",
-   "motor-unit",
-   "neuromuscular-junction",
-   "spinal-grey-anterior-horn"
+  "kind": "topic",
+  "id": "topic-nerve-injury-regeneration",
+  "name": "Peripheral nerve injury, degeneration and regeneration",
+  "synonyms": [],
+  "category": "physiology",
+  "summary": "A peripheral nerve is a bundle of axons with their Schwann cell sheaths, organized into fascicles by the perineurium and held in the epineurium, and its response to injury follows fixed rules: distal to a cut the axon and its myelin degenerate over days (Wallerian degeneration) while the Schwann cells survive, proliferate and form tubes that guide regenerating sprouts from the proximal stump at about a millimeter a day; the cell body swells and turns its metabolism to growth (chromatolysis); and recovery depends on whether the connective tissue tubes remain intact. The classification of injuries into neurapraxia, axonotmesis and neurotmesis predicts recovery, the electrophysiology dates the injury, and the same rules explain why the central nervous system, whose oligodendrocytes and glial scar block regrowth, does not recover in the same way.",
+  "sections": [
+    {
+      "heading": "Structure of the nerve and types of injury",
+      "body": "Myelinated axons, wrapped by one Schwann cell per internode with nodes of Ranvier for saltatory conduction, carry motor, large sensory and some autonomic signals, whereas unmyelinated axons in Remak bundles carry pain, temperature and postganglionic autonomic signals; fascicles are separated by the perineurium, which is the blood-nerve barrier, and the epineurium carries the vasa nervorum. Neurapraxia is a conduction block from focal demyelination or ischemia without axonal loss (the Saturday night radial palsy, a tourniquet palsy), recovering over days to weeks; axonotmesis is axonal interruption with intact connective tissue (traction, crush), recovering by regeneration along the preserved tubes at about one millimeter a day; neurotmesis is complete transection with loss of the tubes, in which regeneration fails or produces a neuroma unless the nerve is repaired. Compression at entrapment sites produces first demyelination and then axonal loss, and ischemia from vasculitis produces infarction of nerve segments."
+    },
+    {
+      "heading": "Degeneration and the cell body response",
+      "body": "Within days of axonal interruption the distal segment fragments and its myelin is cleared by Schwann cells and macrophages, so the distal nerve stops conducting after about a week (the reason a nerve conduction study is normal in the first days after a transection and must be repeated); the muscle it supplied atrophies, develops fibrillations and positive sharp waves on EMG after two to three weeks and loses its motor end plates over months. The neuron reacts by chromatolysis, swelling with dispersal of Nissl substance and displacement of the nucleus, switching from transmission to regeneration; neurons whose axons are cut close to the cell body may die. In the central nervous system the same degeneration occurs (Wallerian degeneration of the corticospinal tract is visible on MRI after a capsular stroke), but oligodendrocytes do not support regrowth, myelin debris and the astrocytic scar inhibit it, and functional recovery depends on plasticity and sprouting of surviving connections rather than regeneration."
+    },
+    {
+      "heading": "Regeneration, reinnervation and their errors",
+      "body": "Sprouts from the proximal stump enter the Schwann cell tubes (bands of Bungner), which express growth-promoting molecules, and grow at one to three millimeters a day, so the time to recovery is estimated from the distance to the muscle; the advancing front can be followed by Tinel sign (tingling on percussion over the regenerating axons) and by the sequence of muscle recovery from proximal to distal. Reinnervation restores function only if axons reach the right targets: misdirection after facial nerve injury produces synkinesis (eye closure with smiling) and crocodile tears, and after limb nerve injury produces co-contraction and poor sensory localization. Surviving motor neurons also sprout collaterals to adopt denervated muscle fibers, producing the large motor units of chronic denervation on EMG and the giant motor units of old poliomyelitis. Regeneration slows with age and distance, and muscle that stays denervated for more than a year or two cannot be recovered, which sets the timing of nerve repair and transfer surgery."
+    },
+    {
+      "heading": "Clinical and electrophysiological assessment",
+      "body": "The examination localizes the lesion by the pattern of motor and sensory loss and by Tinel sign; nerve conduction studies after a week distinguish conduction block (preserved distal response, absent proximal-to-distal conduction) from axonal loss (reduced or absent distal response), and EMG after three weeks shows denervation and, months later, reinnervation; MRI neurography and ultrasound show the site of entrapment, transection or neuroma. Management follows the injury type: observation and splinting for neurapraxia, serial examination with EMG for axonotmesis, and exploration with repair or grafting within weeks for neurotmesis, with nerve transfers when the distance to the muscle is too great. Entrapment neuropathies are relieved by decompression before axonal loss is severe. The same biology underlies the neuropathies: demyelinating ones (Guillain-Barre, CIDP) block conduction and recover quickly, whereas axonal ones (diabetes, vasculitis, toxins) recover slowly by regeneration and sprouting."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-carpal-tunnel",
-   "syn-cubital-tunnel",
-   "syn-radial-neuropathy",
-   "syn-peroneal-palsy-foot-drop",
-   "syn-facial-palsy-peripheral-vs-central",
-   "syn-guillain-barre",
-   "syn-erb-duchenne"
+  "keyPoints": [
+    "Neurapraxia conducts distally and recovers in weeks; axonotmesis regenerates at a millimeter a day; neurotmesis needs a surgeon",
+    "Nerve conduction studies are normal in the first days after a transection: repeat them after a week, and EMG after three",
+    "Tinel sign marks the front of regeneration; count the millimeters to the muscle",
+    "Misdirected regeneration produces synkinesis and crocodile tears after facial nerve injury",
+    "The central nervous system degenerates the same way but does not regenerate: plasticity, not regrowth, is its recovery"
   ],
-  "topicIds": [
-   "topic-neuromuscular-patterns"
-  ]
- },
- "pearls": [
-  "Do not tell a patient with a transected nerve to wait and see: the tubes close and the muscle dies within two years",
-  "A normal distal nerve response in a paralyzed limb one week after injury is good news: the axons are intact",
-  "Fibrillations on EMG are the muscle's complaint that its nerve is gone"
- ],
- "pitfalls": [
-  "Early nerve conduction studies underestimate axonal injury; the distal response persists for a week after transection"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    71,
-    130
-   ]
+  "meshIds": [
+    "median-nerve-l",
+    "median-nerve-r",
+    "ulnar-nerve-l",
+    "ulnar-nerve-r",
+    "radial-nerve-l",
+    "radial-nerve-r",
+    "cn-07-facial-course-l",
+    "cn-07-facial-course-r"
+  ],
+  "related": {
+    "structureIds": [
+      "nerve-median",
+      "nerve-ulnar",
+      "nerve-radial",
+      "nerve-common-peroneal",
+      "dorsal-root-ganglion",
+      "motor-unit",
+      "neuromuscular-junction",
+      "spinal-grey-anterior-horn"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-carpal-tunnel",
+      "syn-cubital-tunnel",
+      "syn-radial-neuropathy",
+      "syn-peroneal-palsy-foot-drop",
+      "syn-facial-palsy-peripheral-vs-central",
+      "syn-guillain-barre",
+      "syn-erb-duchenne"
+    ],
+    "topicIds": [
+      "topic-neuromuscular-patterns"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    58,
-    70
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 15,
-   "pages": [
-    129,
-    140
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 27,
-   "pages": [
-    281,
-    288
-   ]
+  "pearls": [
+    "Do not tell a patient with a transected nerve to wait and see: the tubes close and the muscle dies within two years",
+    "A normal distal nerve response in a paralyzed limb one week after injury is good news: the axons are intact",
+    "Fibrillations on EMG are the muscle's complaint that its nerve is gone"
+  ],
+  "pitfalls": [
+    "Early nerve conduction studies underestimate axonal injury; the distal response persists for a week after transection"
+  ],
+  "citations": [
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-axonotmesis",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-schwann-cells",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "nerve injury",
+    "regeneration",
+    "Wallerian degeneration"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "Ultrasound and MR neurography show nerve caliber, fascicular architecture, entrapment, neuroma and transection; MRI of muscle shows denervation edema early and fatty atrophy late; electrophysiology remains the main measure of injury type and recovery.",
+    "pathology": [
+      {
+        "pathology": "Entrapment neuropathy",
+        "modality": "US",
+        "finding": "Focal enlargement and loss of fascicular pattern of the nerve proximal to the compression site (carpal tunnel, cubital tunnel, fibular neck), with flattening under the retinaculum.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Nerve transection with neuroma",
+        "modality": "MRI",
+        "finding": "Discontinuity of the nerve with a bulbous enhancing stump neuroma on MR neurography; distal muscle denervation edema on STIR.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Denervated muscle",
+        "modality": "MRI",
+        "finding": "Diffuse STIR hyperintensity of the muscles in the nerve's territory within weeks of injury, replaced by fatty atrophy on T1 after months.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Wallerian degeneration of the corticospinal tract",
+        "modality": "MRI",
+        "finding": "T2 hyperintensity and atrophy of the ipsilateral cerebral peduncle and pyramid months after a capsular infarct.",
+        "sequence": "T2"
+      }
+    ]
   }
- ],
- "tags": [
-  "nerve injury",
-  "regeneration",
-  "Wallerian degeneration"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "Ultrasound and MR neurography show nerve caliber, fascicular architecture, entrapment, neuroma and transection; MRI of muscle shows denervation edema early and fatty atrophy late; electrophysiology remains the main measure of injury type and recovery.",
-  "pathology": [
-   {
-    "pathology": "Entrapment neuropathy",
-    "modality": "US",
-    "finding": "Focal enlargement and loss of fascicular pattern of the nerve proximal to the compression site (carpal tunnel, cubital tunnel, fibular neck), with flattening under the retinaculum.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Nerve transection with neuroma",
-    "modality": "MRI",
-    "finding": "Discontinuity of the nerve with a bulbous enhancing stump neuroma on MR neurography; distal muscle denervation edema on STIR.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Denervated muscle",
-    "modality": "MRI",
-    "finding": "Diffuse STIR hyperintensity of the muscles in the nerve's territory within weeks of injury, replaced by fatty atrophy on T1 after months.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Wallerian degeneration of the corticospinal tract",
-    "modality": "MRI",
-    "finding": "T2 hyperintensity and atrophy of the ipsilateral cerebral peduncle and pyramid months after a capsular infarct.",
-    "sequence": "T2"
-   }
-  ]
- }
 }

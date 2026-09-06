@@ -1,55 +1,63 @@
 {
- "kind": "quiz",
- "id": "qz-33",
- "type": "localize",
- "vignette": "A 58-year-old right-handed woman has a small stroke. Her strength and sensation are normal, but when asked to show how she would use a key or brush her teeth she cannot do it with either hand, and she cannot copy meaningless hand postures. She understands the instructions and can describe the actions in words.",
- "stem": "Which structure is damaged?",
- "options": [
-  {
-   "key": "A",
-   "text": "Right supramarginal gyrus"
-  },
-  {
-   "key": "B",
-   "text": "Left supramarginal gyrus"
-  },
-  {
-   "key": "C",
-   "text": "Right precentral gyrus"
-  },
-  {
-   "key": "D",
-   "text": "Body of the corpus callosum"
-  },
-  {
-   "key": "E",
-   "text": "Left frontal operculum"
-  }
- ],
- "answer": "B",
- "explanation": "Ideomotor apraxia of both hands with intact comprehension and strength is a lesion of the dominant left inferior parietal lobule, which stores the movement formulas that the right hemisphere receives through the corpus callosum; a callosal lesion would spare the right hand, and a right parietal lesion would produce neglect rather than apraxia.",
- "targets": {
-  "structureIds": [
-   "gyrus-supramarginal-anterior"
+  "kind": "quiz",
+  "id": "qz-33",
+  "type": "localize",
+  "vignette": "A 58-year-old right-handed woman has a small stroke. Her strength and sensation are normal, but when asked to show how she would use a key or brush her teeth she cannot do it with either hand, and she cannot copy meaningless hand postures. She understands the instructions and can describe the actions in words.",
+  "stem": "Which structure is damaged?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Right supramarginal gyrus"
+    },
+    {
+      "key": "B",
+      "text": "Left supramarginal gyrus"
+    },
+    {
+      "key": "C",
+      "text": "Right precentral gyrus"
+    },
+    {
+      "key": "D",
+      "text": "Body of the corpus callosum"
+    },
+    {
+      "key": "E",
+      "text": "Left frontal operculum"
+    }
   ],
-  "syndromeIds": [
-   "syn-gerstmann"
+  "answer": "B",
+  "explanation": "Ideomotor apraxia of both hands with intact comprehension and strength is a lesion of the dominant left inferior parietal lobule, which stores the movement formulas that the right hemisphere receives through the corpus callosum; a callosal lesion would spare the right hand, and a right parietal lesion would produce neglect rather than apraxia.",
+  "targets": {
+    "structureIds": [
+      "gyrus-supramarginal-anterior"
+    ],
+    "syndromeIds": [
+      "syn-gerstmann"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "gyrus-supramarginal-anterior-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "gyrus-supramarginal-anterior-l"
- ],
- "difficulty": "3",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "original": true
+  "difficulty": "3",
+  "citations": [
+    {
+      "ref": "sp-gerstmann-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-apraxia",
+      "section": "History and Physical"
+    }
+  ],
+  "original": true
 }

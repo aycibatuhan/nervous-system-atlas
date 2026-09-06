@@ -1,0 +1,152 @@
+{
+  "kind": "structure",
+  "id": "veins-venat-atlas",
+  "name": "Cerebral veins and sinuses (VENAT atlas iso-surface)",
+  "synonyms": [
+    "VENAT venous atlas",
+    "average intracranial venous tree",
+    "venogram template"
+  ],
+  "system": "venous",
+  "meshIds": [
+    "veins-venat-atlas"
+  ],
+  "summary": "This mesh is the intracranial venous tree extracted from a population atlas of the cerebral veins built from 7 T quantitative susceptibility maps: the iso-surface of the average venous partial-volume map, thresholded inside the brain, so that it shows the channels that are present in almost everyone. It contains the superior sagittal sinus along the attached margin of the falx, the transverse and sigmoid sinuses, the torcular, the straight sinus in the tentorium, the great cerebral vein, the paired internal cerebral veins in the roof of the third ventricle, the basal veins around the midbrain and the larger cortical and medullary veins. It is the venous counterpart of the arterial iso-surface in this atlas: it sits exactly on the template MRI, so the veins can be read against the slices without any registration error, and it shows what a normal venogram should contain.",
+  "anatomy": {
+    "location": "The whole intracranial venous compartment inside the template brain mask, from the vertex where the superior sagittal sinus begins to the torcular and the transverse and sigmoid sinuses at the skull base, including the deep veins in the roof of the third ventricle and the ambient cisterns.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Cortical, medullary and deep cerebral veins",
+        "via": "inflow"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Internal jugular veins",
+        "via": "sigmoid sinuses and jugular bulbs"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Read as an anatomical reference, the surface answers the questions a venogram raises: where a sinus should run, how the deep veins relate to the ventricles and the corpus callosum, and which cortical veins reach which sinus. Because it is an average of many people, its channels are smoother and slightly wider than any individual's, the small cortical veins that vary from person to person fall below the threshold and are missing, and normal variants such as a hypoplastic left transverse sinus are averaged away. That is exactly what makes it useful as a template: a vessel that is present here is present in almost everyone, so its absence on a patient's venogram is worth explaining, while a vessel missing here may still be normal in an individual. The venous tree also explains the two rules that separate venous from arterial disease: venous lesions cross arterial territory boundaries, and they are usually edematous before they are hemorrhagic.",
+  "bloodSupply": {
+    "arteries": [
+      "Cerebral arteries feed the capillary bed drained by these veins",
+      "artery-mca",
+      "artery-pca"
+    ],
+    "territories": [],
+    "venous": "The whole intracranial venous outflow, ending at the jugular bulbs and the vertebral venous plexus"
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "veins-venat-atlas"
+        },
+        "label": "midline sinuses, deep veins and the straight sinus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "veins-venat-atlas"
+        },
+        "label": "transverse sinuses and the torcular"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "veins-venat-atlas"
+        },
+        "label": "superior sagittal sinus and the deep venous system"
+      }
+    ],
+    "normalAppearance": "On MR and CT venography the normal venous tree looks like this surface: a continuous superior sagittal sinus, two transverse sinuses that are commonly asymmetric, a straight sinus running from the vein of Galen to the torcular, and two thin internal cerebral veins under the corpus callosum. Susceptibility-weighted imaging adds the medullary and cortical veins that are too variable to survive averaging.",
+    "pathology": [
+      {
+        "pathology": "Cerebral venous sinus thrombosis",
+        "modality": "MRV",
+        "finding": "A filling defect or absent flow in a sinus that the atlas shows should be continuous, with the empty delta sign after contrast and, on unenhanced CT, a hyperdense cord along the expected course.",
+        "sequence": "n/a",
+        "pitfalls": "Flow gaps, arachnoid granulations and a hypoplastic transverse sinus all mimic thrombosis on time-of-flight venography; confirm with contrast-enhanced or susceptibility imaging"
+      },
+      {
+        "pathology": "Venous infarction",
+        "modality": "MRI",
+        "finding": "Edema and petechial hemorrhage that do not respect arterial territory borders, in the drainage field of the occluded channel rather than in a cortical wedge.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Dural arteriovenous fistula",
+        "modality": "DSA",
+        "finding": "Arterialized flow in a sinus or a cortical vein with retrograde cortical venous drainage, which is the feature that predicts hemorrhage.",
+        "sequence": "n/a"
+      }
+    ],
+    "sequenceOfChoice": "Contrast-enhanced MR venography, with susceptibility-weighted imaging for the small veins"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "No deficit: reference surface",
+        "side": "n/a",
+        "mechanism": "This is an imaging-derived reference, not a structure with a lesion syndrome"
+      },
+      {
+        "deficit": "Shows where an absent channel should have been",
+        "side": "n/a",
+        "mechanism": "The averaged tree marks the expected course of every constant sinus and deep vein"
+      }
+    ],
+    "examination": [
+      "Compare a patient's venogram with the atlas surface before calling a sinus absent",
+      "Follow each sinus from the vertex to the jugular bulb rather than looking at one slice"
+    ],
+    "syndromes": [
+      "syn-cerebral-venous-sinus-thrombosis",
+      "syn-cavernous-sinus-thrombosis"
+    ],
+    "pearls": [
+      "A vessel present in the average atlas is present in nearly everybody: its absence needs an explanation",
+      "The atlas is thicker than a real vein; use it for course, not for caliber",
+      "The deep veins and the straight sinus are the constant part of the map; the cortical veins are the variable part"
+    ]
+  },
+  "pitfalls": [
+    "Averaging removes normal variants; a channel absent here can still be normal in one person",
+    "The threshold that keeps the sinuses clean also removes the smallest cortical veins"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dural-venous-sinuses",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "mr-venography-normal-anatomy"
+    },
+    {
+      "ref": "posterior-fossa-venous-drainage"
+    },
+    {
+      "ref": "sp-cerebral-venous-sinus-thrombosis",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "reference",
+    "venous",
+    "MRV",
+    "atlas",
+    "VENAT"
+  ],
+  "status": "draft",
+  "subsystem": "venat"
+}

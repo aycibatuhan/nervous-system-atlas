@@ -1,181 +1,153 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-x",
- "name": "Lobule X (flocculonodular)",
- "synonyms": [
-  "flocculonodular lobe",
-  "archicerebellum",
-  "vestibulocerebellum"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-x-l",
-  "cerebellar-lobule-x-r"
- ],
- "summary": "Lobule X is the flocculonodular lobe, the nodulus of the vermis and the flocculi of the hemispheres, the oldest part of the cerebellum and the one most directly tied to the vestibular system. The flocculus, tucked beneath the middle cerebellar peduncle in the cerebellopontine angle, adapts the vestibulo-ocular reflex and holds eccentric gaze and smooth pursuit; the nodulus with the uvula controls the vestibulospinal reflexes and the sense of tilt. Lesions cause gaze-evoked and downbeat nystagmus, impaired pursuit and vertigo with imbalance, and this lobe is damaged in medulloblastoma of the fourth ventricle, in PICA and AICA infarcts, in cerebellopontine angle tumors and in Wernicke encephalopathy.",
- "anatomy": {
-  "location": "The nodulus is the most anterior inferior vermian lobule projecting into the fourth ventricle roof below the uvula; each flocculus is a small tufted lobule on the anterior inferior surface of the hemisphere beside the pons and the medulla, under the middle cerebellar peduncle and the vestibulocochlear nerve, joined to the nodulus by the peduncle of the flocculus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Vestibular nerve and nuclei",
-    "via": "juxtarestiform body"
-   },
-   {
-    "from": "Inferior olive (visual climbing fibers)",
-    "via": "inferior cerebellar peduncle"
-   },
-   {
-    "from": "Pontine nuclei (visual and pursuit signals)",
-    "via": "middle cerebellar peduncle"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-x",
+  "name": "Lobule X (flocculonodular)",
+  "synonyms": [
+    "flocculonodular lobe",
+    "archicerebellum",
+    "vestibulocerebellum"
   ],
-  "efferents": [
-   {
-    "to": "Vestibular nuclei (direct Purkinje projection)",
-    "via": "juxtarestiform body"
-   },
-   {
-    "to": "Fastigial nucleus (nodulus)",
-    "via": "Purkinje axons"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-x-l",
+    "cerebellar-lobule-x-r"
   ],
-  "pathways": [
-   "pathway-vestibular-vor",
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "The flocculus receives visual motion signals through the inferior olive and the pontine nuclei and vestibular signals from the nerve and nuclei, and its Purkinje cells project directly to the vestibular nuclei to modify the gain and direction of the vestibulo-ocular reflex during learning, to suppress it during fixation and to stabilize gaze in eccentric positions and during pursuit; the nodulus and uvula process otolith and canal signals to separate tilt from translation, limit the duration of post-rotatory nystagmus, and calibrate the vestibulospinal reflexes for stance. Loss of the flocculus produces gaze-evoked nystagmus, downbeat nystagmus, impaired pursuit and inability to suppress the vestibulo-ocular reflex; loss of the nodulus produces vertigo, periodic alternating nystagmus and truncal ataxia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-inferior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebellar-lobule-x-l"
+  "summary": "Lobule X is the flocculonodular lobe, the nodulus of the vermis and the flocculi of the hemispheres, the oldest part of the cerebellum and the one most directly tied to the vestibular system. The flocculus, tucked beneath the middle cerebellar peduncle in the cerebellopontine angle, adapts the vestibulo-ocular reflex and holds eccentric gaze and smooth pursuit; the nodulus with the uvula controls the vestibulospinal reflexes and the sense of tilt. Lesions cause gaze-evoked and downbeat nystagmus, impaired pursuit and vertigo with imbalance, and this lobe is damaged in medulloblastoma of the fourth ventricle, in PICA and AICA infarcts, in cerebellopontine angle tumors and in Wernicke encephalopathy.",
+  "anatomy": {
+    "location": "The nodulus is the most anterior inferior vermian lobule projecting into the fourth ventricle roof below the uvula; each flocculus is a small tufted lobule on the anterior inferior surface of the hemisphere beside the pons and the medulla, under the middle cerebellar peduncle and the vestibulocochlear nerve, joined to the nodulus by the peduncle of the flocculus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Vestibular nerve and nuclei",
+        "via": "juxtarestiform body"
+      },
+      {
+        "from": "Inferior olive (visual climbing fibers)",
+        "via": "inferior cerebellar peduncle"
+      },
+      {
+        "from": "Pontine nuclei (visual and pursuit signals)",
+        "via": "middle cerebellar peduncle"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Vestibular nuclei (direct Purkinje projection)",
+        "via": "juxtarestiform body"
+      },
+      {
+        "to": "Fastigial nucleus (nodulus)",
+        "via": "Purkinje axons"
+      }
+    ],
+    "pathways": [
+      "pathway-vestibular-vor",
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "The flocculus receives visual motion signals through the inferior olive and the pontine nuclei and vestibular signals from the nerve and nuclei, and its Purkinje cells project directly to the vestibular nuclei to modify the gain and direction of the vestibulo-ocular reflex during learning, to suppress it during fixation and to stabilize gaze in eccentric positions and during pursuit; the nodulus and uvula process otolith and canal signals to separate tilt from translation, limit the duration of post-rotatory nystagmus, and calibrate the vestibulospinal reflexes for stance. Loss of the flocculus produces gaze-evoked nystagmus, downbeat nystagmus, impaired pursuit and inability to suppress the vestibulo-ocular reflex; loss of the nodulus produces vertigo, periodic alternating nystagmus and truncal ataxia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-inferior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebellar-lobule-x-l"
+        },
+        "label": "flocculus beneath the middle cerebellar peduncle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-x-r"
+        },
+        "label": "nodulus in the roof of the fourth ventricle"
+      }
+    ],
+    "normalAppearance": "The flocculus is the small lobule in the cerebellopontine angle cistern below the middle cerebellar peduncle on axial images, easily mistaken for a mass; the nodulus is the anterior inferior vermian lobule projecting into the fourth ventricle on sagittal images.",
+    "pathology": [
+      {
+        "pathology": "Medulloblastoma",
+        "modality": "MRI",
+        "finding": "Enhancing midline mass arising in the nodulus and fourth ventricle roof in a child, with hydrocephalus, truncal ataxia and vomiting; restricted diffusion because it is densely cellular.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "AICA or PICA infarct with flocculus involvement",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the flocculus and the adjacent cerebellum with vertigo, gaze-evoked nystagmus and, with AICA, deafness.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Prominent flocculus mimicking a cerebellopontine angle mass",
+        "modality": "MRI",
+        "finding": "A normally large flocculus protruding into the cistern; follows gray matter on all sequences and does not enhance.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Gaze-evoked and downbeat nystagmus, impaired pursuit",
+        "side": "bilateral",
+        "mechanism": "Loss of flocculus control of gaze holding and the vestibulo-ocular reflex"
+      },
+      {
+        "deficit": "Vertigo and truncal ataxia with periodic alternating nystagmus",
+        "side": "bilateral",
+        "mechanism": "Loss of nodulus-uvula processing of vestibular signals"
+      },
+      {
+        "deficit": "Inability to suppress the vestibulo-ocular reflex by fixation",
+        "side": "bilateral",
+        "mechanism": "Loss of the flocculus's visual-vestibular integration"
+      }
+    ],
+    "examination": [
+      "Observe nystagmus in primary and eccentric gaze and on downgaze",
+      "Smooth pursuit and VOR suppression (fixate on the thumbs while turning)",
+      "Stance with feet together and eyes open"
+    ],
+    "syndromes": [
+      "syn-central-vs-peripheral-vertigo",
+      "syn-cerebellar-vermian-midline",
+      "syn-cerebellopontine-angle",
+      "syn-aica-lateral-pontine"
+    ],
+    "pearls": [
+      "The flocculus is the cerebellum's gaze stabilizer; downbeat nystagmus points to it or to the craniocervical junction",
+      "Medulloblastoma grows from the nodulus, which is why it fills the fourth ventricle",
+      "A big flocculus is a normal finding that has caused unnecessary surgery"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-vestibulo-ocular-reflex",
+      "section": "Structure and Function"
     },
-    "label": "flocculus beneath the middle cerebellar peduncle"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-x-r"
+    {
+      "ref": "sp-vestibular-pathways",
+      "section": "Structure and Function"
     },
-    "label": "nodulus in the roof of the fourth ventricle"
-   }
+    {
+      "ref": "sp-tonsillar-herniation",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "The flocculus is the small lobule in the cerebellopontine angle cistern below the middle cerebellar peduncle on axial images, easily mistaken for a mass; the nodulus is the anterior inferior vermian lobule projecting into the fourth ventricle on sagittal images.",
-  "pathology": [
-   {
-    "pathology": "Medulloblastoma",
-    "modality": "MRI",
-    "finding": "Enhancing midline mass arising in the nodulus and fourth ventricle roof in a child, with hydrocephalus, truncal ataxia and vomiting; restricted diffusion because it is densely cellular.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "AICA or PICA infarct with flocculus involvement",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the flocculus and the adjacent cerebellum with vertigo, gaze-evoked nystagmus and, with AICA, deafness.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Prominent flocculus mimicking a cerebellopontine angle mass",
-    "modality": "MRI",
-    "finding": "A normally large flocculus protruding into the cistern; follows gray matter on all sequences and does not enhance.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Gaze-evoked and downbeat nystagmus, impaired pursuit",
-    "side": "bilateral",
-    "mechanism": "Loss of flocculus control of gaze holding and the vestibulo-ocular reflex"
-   },
-   {
-    "deficit": "Vertigo and truncal ataxia with periodic alternating nystagmus",
-    "side": "bilateral",
-    "mechanism": "Loss of nodulus-uvula processing of vestibular signals"
-   },
-   {
-    "deficit": "Inability to suppress the vestibulo-ocular reflex by fixation",
-    "side": "bilateral",
-    "mechanism": "Loss of the flocculus's visual-vestibular integration"
-   }
-  ],
-  "examination": [
-   "Observe nystagmus in primary and eccentric gaze and on downgaze",
-   "Smooth pursuit and VOR suppression (fixate on the thumbs while turning)",
-   "Stance with feet together and eyes open"
-  ],
-  "syndromes": [
-   "syn-central-vs-peripheral-vertigo",
-   "syn-cerebellar-vermian-midline",
-   "syn-cerebellopontine-angle",
-   "syn-aica-lateral-pontine"
-  ],
-  "pearls": [
-   "The flocculus is the cerebellum's gaze stabilizer; downbeat nystagmus points to it or to the craniocervical junction",
-   "Medulloblastoma grows from the nodulus, which is why it fills the fourth ventricle",
-   "A big flocculus is a normal finding that has caused unnecessary surgery"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    341,
-    346
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    108,
-    114
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    96,
-    100
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "flocculonodular-lobe"
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "flocculonodular-lobe"
 }

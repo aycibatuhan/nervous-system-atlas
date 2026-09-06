@@ -1,20 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-lewy-body",
- "term": "Lewy body",
- "definition": "Intraneuronal inclusion of alpha-synuclein found in the substantia nigra, brainstem nuclei and cortex in Parkinson disease and dementia with Lewy bodies; the pathology spreads from the olfactory bulb and vagal nucleus upward.",
- "related": [
-  "g-neurofibrillary-tangle",
-  "g-rem-sleep-behavior-disorder"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    242,
-    246
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-lewy-body",
+  "term": "Lewy body",
+  "definition": "Intraneuronal inclusion of alpha-synuclein found in the substantia nigra, brainstem nuclei and cortex in Parkinson disease and dementia with Lewy bodies; the pathology spreads from the olfactory bulb and vagal nucleus upward.",
+  "related": [
+    "g-neurofibrillary-tangle",
+    "g-rem-sleep-behavior-disorder"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lewy-bodies",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-lewy-body-dementia",
+      "section": "Pathophysiology"
+    }
+  ]
 }

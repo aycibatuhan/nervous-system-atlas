@@ -1,127 +1,123 @@
 {
- "kind": "syndrome",
- "id": "syn-peroneal-palsy-foot-drop",
- "name": "Common peroneal neuropathy (foot drop)",
- "eponyms": [],
- "category": "entrapment",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "nerve-common-peroneal",
-   "nerve-sciatic",
-   "roots-l2-s1"
+  "kind": "syndrome",
+  "id": "syn-peroneal-palsy-foot-drop",
+  "name": "Common peroneal neuropathy (foot drop)",
+  "eponyms": [],
+  "category": "entrapment",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "nerve-common-peroneal",
+      "nerve-sciatic",
+      "roots-l2-s1"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "common-peroneal-nerve-l"
+    ]
+  },
+  "presentation": "A thin patient who has lost weight, or who has been crossing the legs or lying with the leg against a bed rail, trips over the toes of one foot and lifts the knee high to clear it. The foot cannot be dorsiflexed or everted and the toes cannot be extended, but inversion and plantar flexion are strong, the ankle reflex is normal, and sensation is lost over the dorsum of the foot and the lateral lower leg. Tapping the nerve at the fibular neck tingles into the foot.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "tibialis anterior, extensor hallucis and digitorum longus, peroneus longus and brevis",
+      "sign": "Foot drop with weak eversion; steppage gait",
+      "substrate": "nerve-common-peroneal"
+    },
+    {
+      "modality": "motor",
+      "side": "n/a",
+      "distribution": "tibialis posterior, gastrocnemius",
+      "sign": "Inversion and plantar flexion spared, ankle reflex normal",
+      "substrate": "nerve-tibial"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "dorsum of the foot and lateral leg",
+      "sign": "Sensory loss in the superficial and deep peroneal distribution",
+      "substrate": "nerve-common-peroneal"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "common-peroneal-nerve-l"
-  ]
- },
- "presentation": "A thin patient who has lost weight, or who has been crossing the legs or lying with the leg against a bed rail, trips over the toes of one foot and lifts the knee high to clear it. The foot cannot be dorsiflexed or everted and the toes cannot be extended, but inversion and plantar flexion are strong, the ankle reflex is normal, and sensation is lost over the dorsum of the foot and the lateral lower leg. Tapping the nerve at the fibular neck tingles into the foot.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "tibialis anterior, extensor hallucis and digitorum longus, peroneus longus and brevis",
-   "sign": "Foot drop with weak eversion; steppage gait",
-   "substrate": "nerve-common-peroneal"
+  "reasoning": "The common peroneal nerve leaves the sciatic nerve above the knee, winds around the neck of the fibula just beneath the skin and passes through the fibrous tunnel of the peroneus longus origin to divide into the superficial branch, which everts the foot and supplies the lateral leg and most of the dorsum, and the deep branch, which dorsiflexes the ankle and toes and supplies the first web space. At the fibular neck the nerve lies on bone with no muscle cover, so it is compressed by crossing the legs, squatting, a tight cast, a bed rail during coma or surgery, or a ganglion, and rapid weight loss removes the fat that protected it. The result is weakness of dorsiflexion, toe extension and eversion with sensory loss on the dorsum and lateral leg. The muscles that separate it from the other causes of foot drop are those that share the same roots but travel by other nerves: the tibialis posterior (L5, tibial nerve), which inverts the foot, and the gluteus medius (L5, superior gluteal nerve), which abducts the hip, are weak in an L5 radiculopathy and normal in a peroneal palsy, and the plantar flexors and ankle reflex (S1, tibial nerve) are weak or absent in a sciatic lesion. The lesion is peripheral and ipsilateral. Conduction studies show slowing or block across the fibular head, and a preserved superficial peroneal sensory response with a foot drop points instead to a root lesion, where the dorsal root ganglion is spared.",
+  "imagingFindings": [
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Conduction block or focal slowing of the peroneal nerve across the fibular head with denervation of the tibialis anterior and peroneus longus but not the tibialis posterior or short head of biceps; superficial peroneal sensory response reduced.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Fibular neck compression or ganglion",
+      "modality": "US",
+      "finding": "Swollen nerve at the fibular neck or an intraneural ganglion arising from the tibiofibular joint.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Knee or fibular injury",
+      "modality": "MRI",
+      "finding": "Fracture, knee dislocation or hematoma with nerve involvement; denervation edema in the anterior compartment.",
+      "sequence": "STIR"
+    }
+  ],
+  "commonCauses": [
+    "Habitual leg crossing, squatting, weight loss",
+    "Compression during surgery or coma",
+    "Tight cast or bandage",
+    "Fibular neck fracture or knee dislocation",
+    "Intraneural ganglion",
+    "Vasculitis, diabetes, hereditary neuropathy with pressure palsies (recurrent)"
+  ],
+  "mimics": [
+    {
+      "name": "L5 radiculopathy",
+      "howToDistinguish": "Back pain, weak inversion and hip abduction, sensory loss extending to the big toe and lateral thigh, paraspinal denervation"
+    },
+    {
+      "name": "Sciatic neuropathy",
+      "howToDistinguish": "Weak plantar flexion, absent ankle jerk, sole numb"
+    },
+    {
+      "name": "Anterior horn or motor neuron disease",
+      "howToDistinguish": "No sensory loss, fasciculation, spreads"
+    },
+    {
+      "name": "Upper motor neuron foot drop",
+      "howToDistinguish": "Spasticity, brisk reflexes, extensor plantar"
+    }
+  ],
+  "management": [
+    "Remove the compression and protect the fibular head; ankle-foot orthosis",
+    "Nerve conduction studies to localize and to establish conduction block (good prognosis) versus axonal loss",
+    "Surgical decompression for a ganglion or a persistent lesion"
+  ],
+  "citations": [
+    {
+      "ref": "sp-foot-drop",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-calf-common-peroneal-nerve",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-peroneal-nerve-injury",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -80,
+      "y": -40,
+      "z": -300
+    },
+    "label": "common peroneal nerve at the fibular neck (virtual)"
   },
-  {
-   "modality": "motor",
-   "side": "n/a",
-   "distribution": "tibialis posterior, gastrocnemius",
-   "sign": "Inversion and plantar flexion spared, ankle reflex normal",
-   "substrate": "nerve-tibial"
-  },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "dorsum of the foot and lateral leg",
-   "sign": "Sensory loss in the superficial and deep peroneal distribution",
-   "substrate": "nerve-common-peroneal"
-  }
- ],
- "reasoning": "The common peroneal nerve leaves the sciatic nerve above the knee, winds around the neck of the fibula just beneath the skin and passes through the fibrous tunnel of the peroneus longus origin to divide into the superficial branch, which everts the foot and supplies the lateral leg and most of the dorsum, and the deep branch, which dorsiflexes the ankle and toes and supplies the first web space. At the fibular neck the nerve lies on bone with no muscle cover, so it is compressed by crossing the legs, squatting, a tight cast, a bed rail during coma or surgery, or a ganglion, and rapid weight loss removes the fat that protected it. The result is weakness of dorsiflexion, toe extension and eversion with sensory loss on the dorsum and lateral leg. The muscles that separate it from the other causes of foot drop are those that share the same roots but travel by other nerves: the tibialis posterior (L5, tibial nerve), which inverts the foot, and the gluteus medius (L5, superior gluteal nerve), which abducts the hip, are weak in an L5 radiculopathy and normal in a peroneal palsy, and the plantar flexors and ankle reflex (S1, tibial nerve) are weak or absent in a sciatic lesion. The lesion is peripheral and ipsilateral. Conduction studies show slowing or block across the fibular head, and a preserved superficial peroneal sensory response with a foot drop points instead to a root lesion, where the dorsal root ganglion is spared.",
- "imagingFindings": [
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Conduction block or focal slowing of the peroneal nerve across the fibular head with denervation of the tibialis anterior and peroneus longus but not the tibialis posterior or short head of biceps; superficial peroneal sensory response reduced.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Fibular neck compression or ganglion",
-   "modality": "US",
-   "finding": "Swollen nerve at the fibular neck or an intraneural ganglion arising from the tibiofibular joint.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Knee or fibular injury",
-   "modality": "MRI",
-   "finding": "Fracture, knee dislocation or hematoma with nerve involvement; denervation edema in the anterior compartment.",
-   "sequence": "STIR"
-  }
- ],
- "commonCauses": [
-  "Habitual leg crossing, squatting, weight loss",
-  "Compression during surgery or coma",
-  "Tight cast or bandage",
-  "Fibular neck fracture or knee dislocation",
-  "Intraneural ganglion",
-  "Vasculitis, diabetes, hereditary neuropathy with pressure palsies (recurrent)"
- ],
- "mimics": [
-  {
-   "name": "L5 radiculopathy",
-   "howToDistinguish": "Back pain, weak inversion and hip abduction, sensory loss extending to the big toe and lateral thigh, paraspinal denervation"
-  },
-  {
-   "name": "Sciatic neuropathy",
-   "howToDistinguish": "Weak plantar flexion, absent ankle jerk, sole numb"
-  },
-  {
-   "name": "Anterior horn or motor neuron disease",
-   "howToDistinguish": "No sensory loss, fasciculation, spreads"
-  },
-  {
-   "name": "Upper motor neuron foot drop",
-   "howToDistinguish": "Spasticity, brisk reflexes, extensor plantar"
-  }
- ],
- "management": [
-  "Remove the compression and protect the fibular head; ankle-foot orthosis",
-  "Nerve conduction studies to localize and to establish conduction block (good prognosis) versus axonal loss",
-  "Surgical decompression for a ganglion or a persistent lesion"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    112,
-    112
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    163,
-    166
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -80,
-   "y": -40,
-   "z": -300
-  },
-  "label": "common peroneal nerve at the fibular neck (virtual)"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

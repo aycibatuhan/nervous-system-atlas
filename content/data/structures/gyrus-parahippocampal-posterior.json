@@ -1,188 +1,160 @@
 {
- "kind": "structure",
- "id": "gyrus-parahippocampal-posterior",
- "name": "Parahippocampal gyrus, posterior division",
- "synonyms": [
-  "parahippocampal place area",
-  "areas TH/TF"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-parahippocampal-posterior-l",
-  "gyrus-parahippocampal-posterior-r"
- ],
- "summary": "The posterior parahippocampal gyrus is the medial temporal cortex beneath the body and tail of the hippocampus, behind the entorhinal cortex and in front of the isthmus of the cingulate gyrus, bounded laterally by the collateral sulcus and the fusiform gyrus. It contains the parahippocampal cortex proper (areas TH and TF), which houses the parahippocampal place area that recognizes scenes and the spatial layout of the environment, and it relays scene and context information into the entorhinal cortex and the hippocampus. It is supplied by the posterior cerebral artery, its lesions cause landmark and topographical disorientation and context-dependent memory loss, and it atrophies with the rest of the medial temporal lobe in Alzheimer disease.",
- "anatomy": {
-  "location": "Posterior part of the parahippocampal gyrus on the inferomedial temporal surface under the hippocampal body and tail, from the level of the cerebral peduncle back to the splenium where it continues as the isthmus, medial to the collateral sulcus and lateral to the ambient and quadrigeminal cisterns.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lingual, fusiform and lateral occipital cortex (scenes)",
-    "via": "inferior longitudinal fasciculus and short fibers"
-   },
-   {
-    "from": "Retrosplenial and posterior cingulate cortex",
-    "via": "cingulum"
-   },
-   {
-    "from": "Posterior parietal cortex",
-    "via": "short association fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-parahippocampal-posterior",
+  "name": "Parahippocampal gyrus, posterior division",
+  "synonyms": [
+    "parahippocampal place area",
+    "areas TH/TF"
   ],
-  "efferents": [
-   {
-    "to": "Entorhinal cortex (medial)",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Hippocampus (direct)",
-    "via": "perforant path contribution"
-   },
-   {
-    "to": "Retrosplenial cortex",
-    "via": "cingulum"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-parahippocampal-posterior-l",
+    "gyrus-parahippocampal-posterior-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic",
-   "pathway-visual"
-  ]
- },
- "function": "The posterior parahippocampal cortex receives visual scene information from the lingual and fusiform gyri and the dorsal stream, spatial information from the retrosplenial cortex and the posterior cingulate, and represents places, the arrangement of a room and the context in which an event occurred; it feeds the medial entorhinal cortex, which builds the spatial map of the hippocampus, and it also receives vestibular and auditory input. It is one of the two main channels into the hippocampus, the other being the perirhinal object channel, and its damage produces a memory loss dominated by the where and the when, with impaired navigation and recognition of scenes.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca"
+  "summary": "The posterior parahippocampal gyrus is the medial temporal cortex beneath the body and tail of the hippocampus, behind the entorhinal cortex and in front of the isthmus of the cingulate gyrus, bounded laterally by the collateral sulcus and the fusiform gyrus. It contains the parahippocampal cortex proper (areas TH and TF), which houses the parahippocampal place area that recognizes scenes and the spatial layout of the environment, and it relays scene and context information into the entorhinal cortex and the hippocampus. It is supplied by the posterior cerebral artery, its lesions cause landmark and topographical disorientation and context-dependent memory loss, and it atrophies with the rest of the medial temporal lobe in Alzheimer disease.",
+  "anatomy": {
+    "location": "Posterior part of the parahippocampal gyrus on the inferomedial temporal surface under the hippocampal body and tail, from the level of the cerebral peduncle back to the splenium where it continues as the isthmus, medial to the collateral sulcus and lateral to the ambient and quadrigeminal cisterns.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lingual, fusiform and lateral occipital cortex (scenes)",
+        "via": "inferior longitudinal fasciculus and short fibers"
+      },
+      {
+        "from": "Retrosplenial and posterior cingulate cortex",
+        "via": "cingulum"
+      },
+      {
+        "from": "Posterior parietal cortex",
+        "via": "short association fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Entorhinal cortex (medial)",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Hippocampus (direct)",
+        "via": "perforant path contribution"
+      },
+      {
+        "to": "Retrosplenial cortex",
+        "via": "cingulum"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic",
+      "pathway-visual"
+    ]
+  },
+  "function": "The posterior parahippocampal cortex receives visual scene information from the lingual and fusiform gyri and the dorsal stream, spatial information from the retrosplenial cortex and the posterior cingulate, and represents places, the arrangement of a room and the context in which an event occurred; it feeds the medial entorhinal cortex, which builds the spatial map of the hippocampus, and it also receives vestibular and auditory input. It is one of the two main channels into the hippocampus, the other being the perirhinal object channel, and its damage produces a memory loss dominated by the where and the when, with impaired navigation and recognition of scenes.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-parahippocampal-posterior-l"
+        },
+        "label": "posterior parahippocampal gyrus under the hippocampal body"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-parahippocampal-posterior-r"
+        },
+        "label": "medial temporal cortex beside the ambient cistern"
+      }
+    ],
+    "normalAppearance": "Medial temporal cortex under the hippocampal body and tail on coronal images through the midbrain and the atrium, lateral to the ambient cistern; the collateral sulcus separates it from the fusiform gyrus.",
+    "pathology": [
+      {
+        "pathology": "PCA infarct with amnesia and disorientation",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the medial temporal lobe and hippocampus along with the medial occipital cortex; amnesia is lasting when bilateral.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Landmark agnosia",
+        "modality": "MRI",
+        "finding": "Right posterior parahippocampal and lingual lesion with inability to recognize familiar places and to learn new routes.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Transient global amnesia",
+        "modality": "MRI",
+        "finding": "Punctate hippocampal restricted diffusion appearing 24-72 hours after an episode of dense but transient amnesia; parahippocampal cortex is intact.",
+        "sequence": "DWI",
+        "timing": "DWI lesions are best seen at 48-72 hours, not acutely"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Topographical disorientation and landmark agnosia",
+        "side": "n/a",
+        "mechanism": "Loss of the parahippocampal place area, especially on the right"
+      },
+      {
+        "deficit": "Impaired memory for the context and place of events",
+        "side": "bilateral",
+        "mechanism": "Loss of the scene channel into the entorhinal-hippocampal system"
+      },
+      {
+        "deficit": "Contribution to amnesia in medial temporal disease",
+        "side": "bilateral",
+        "mechanism": "Part of the medial temporal memory network"
+      }
+    ],
+    "examination": [
+      "Recognition of famous places and of the patient's own street from photographs",
+      "Route learning within the ward",
+      "Delayed recall for the setting of a story, not only its content"
+    ],
+    "syndromes": [
+      "syn-pca-infarct",
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Getting lost in a familiar neighborhood with intact object recognition points to the posterior parahippocampal and lingual cortex",
+      "The PCA supplies the hippocampus and the parahippocampal gyrus: a posterior circulation stroke can present as pure amnesia",
+      "Transient global amnesia is hippocampal, not parahippocampal, and the DWI dots appear late"
+    ]
+  },
+  "pitfalls": [
+    "Disorientation in hospital is usually delirium, but persistent inability to find the room after the delirium clears suggests a posterior medial temporal lesion"
   ],
-  "territories": [
-   "territory-pca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-parahippocampal-posterior-l"
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "posterior parahippocampal gyrus under the hippocampal body"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-parahippocampal-posterior-r"
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "medial temporal cortex beside the ambient cistern"
-   }
+    {
+      "ref": "sp-explicit-memory",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "Medial temporal cortex under the hippocampal body and tail on coronal images through the midbrain and the atrium, lateral to the ambient cistern; the collateral sulcus separates it from the fusiform gyrus.",
-  "pathology": [
-   {
-    "pathology": "PCA infarct with amnesia and disorientation",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the medial temporal lobe and hippocampus along with the medial occipital cortex; amnesia is lasting when bilateral.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Landmark agnosia",
-    "modality": "MRI",
-    "finding": "Right posterior parahippocampal and lingual lesion with inability to recognize familiar places and to learn new routes.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Transient global amnesia",
-    "modality": "MRI",
-    "finding": "Punctate hippocampal restricted diffusion appearing 24-72 hours after an episode of dense but transient amnesia; parahippocampal cortex is intact.",
-    "sequence": "DWI",
-    "timing": "DWI lesions are best seen at 48-72 hours, not acutely"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Topographical disorientation and landmark agnosia",
-    "side": "n/a",
-    "mechanism": "Loss of the parahippocampal place area, especially on the right"
-   },
-   {
-    "deficit": "Impaired memory for the context and place of events",
-    "side": "bilateral",
-    "mechanism": "Loss of the scene channel into the entorhinal-hippocampal system"
-   },
-   {
-    "deficit": "Contribution to amnesia in medial temporal disease",
-    "side": "bilateral",
-    "mechanism": "Part of the medial temporal memory network"
-   }
+  "tags": [
+    "parahippocampal",
+    "place area",
+    "navigation"
   ],
-  "examination": [
-   "Recognition of famous places and of the patient's own street from photographs",
-   "Route learning within the ward",
-   "Delayed recall for the setting of a story, not only its content"
-  ],
-  "syndromes": [
-   "syn-pca-infarct",
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Getting lost in a familiar neighborhood with intact object recognition points to the posterior parahippocampal and lingual cortex",
-   "The PCA supplies the hippocampus and the parahippocampal gyrus: a posterior circulation stroke can present as pure amnesia",
-   "Transient global amnesia is hippocampal, not parahippocampal, and the DWI dots appear late"
-  ]
- },
- "pitfalls": [
-  "Disorientation in hospital is usually delirium, but persistent inability to find the room after the delirium clears suggests a posterior medial temporal lesion"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    468,
-    470
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  }
- ],
- "tags": [
-  "parahippocampal",
-  "place area",
-  "navigation"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "gyrus-parahippocampal-uncus"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "gyrus-parahippocampal-uncus"
 }

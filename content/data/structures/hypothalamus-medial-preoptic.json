@@ -1,130 +1,126 @@
 {
- "kind": "structure",
- "id": "hypothalamus-medial-preoptic",
- "name": "Medial preoptic nucleus",
- "synonyms": [
-  "preoptic area",
-  "sexually dimorphic nucleus"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-medial-preoptic-l",
-  "hypothalamus-medial-preoptic-r"
- ],
- "summary": "The medial preoptic nucleus lies in the preoptic area at the front of the hypothalamus, in the wall of the third ventricle behind the lamina terminalis and above the optic chiasm, and is developmentally telencephalic though functionally hypothalamic. It regulates reproductive and parental behavior, gonadotropin release through its projections to the arcuate GnRH neurons, thermoregulation and sleep, and it contains the sexually dimorphic nucleus that is larger in males. With the ventrolateral preoptic nucleus beside it, which switches off the arousal systems, it is part of the machinery of sleep onset; lesions produce insomnia, hyperthermia and loss of sexual behavior, and the region is involved in suprasellar tumors and in the anterior communicating artery aneurysm territory.",
- "anatomy": {
-  "location": "Preoptic region of the anterior hypothalamus lateral to the third ventricle, behind the lamina terminalis and the organum vasculosum, above the optic chiasm and in front of the anterior hypothalamic area and the paraventricular nucleus, with the ventrolateral preoptic nucleus lateral to it.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Medial preoptic neurons integrate gonadal hormones with olfactory and limbic input to drive male sexual behavior and maternal behavior and to time the preovulatory gonadotropin surge through kisspeptin neurons; warm-sensitive preoptic neurons form the thermostat that triggers heat loss and fever, and the ventrolateral preoptic neurons release GABA and galanin onto the histaminergic, noradrenergic and cholinergic arousal nuclei to start sleep. The region also senses osmolality and angiotensin through the neighboring organum vasculosum and helps regulate thirst and vasopressin. It receives the amygdala, the septal area and the brainstem, and it projects to the arcuate nucleus, the periaqueductal gray and the ventral tegmental area.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-medial-preoptic",
+  "name": "Medial preoptic nucleus",
+  "synonyms": [
+    "preoptic area",
+    "sexually dimorphic nucleus"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-medial-preoptic-l"
-    },
-    "label": "medial preoptic nucleus behind the lamina terminalis"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-medial-preoptic-r"
-    },
-    "label": "preoptic area above the optic chiasm"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-medial-preoptic-l",
+    "hypothalamus-medial-preoptic-r"
   ],
-  "normalAppearance": "Anterior wall of the third ventricle immediately behind the lamina terminalis and above the chiasm on midline sagittal images; the preoptic recess of the ventricle indents it.",
-  "pathology": [
-   {
-    "pathology": "Insomnia after preoptic injury",
-    "modality": "MRI",
-    "finding": "Anterior hypothalamic lesion from surgery, tumor or stroke with profound sleep loss and hyperthermia.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Hypothalamic hamartoma",
-    "modality": "MRI",
-    "finding": "Non-enhancing mass isointense to gray matter in the tuber cinereum and preoptic region with gelastic seizures and precocious puberty.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Suprasellar germinoma",
-    "modality": "MRI",
-    "finding": "Enhancing midline mass in the anterior third ventricle floor with diabetes insipidus and precocious or delayed puberty.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Insomnia",
-    "side": "bilateral",
-    "mechanism": "Loss of the ventrolateral preoptic sleep switch"
-   },
-   {
-    "deficit": "Loss of sexual and parental behavior, hypogonadism",
-    "side": "bilateral",
-    "mechanism": "Loss of medial preoptic drive to the GnRH system and to sexual behavior"
-   },
-   {
-    "deficit": "Hyperthermia",
-    "side": "bilateral",
-    "mechanism": "Loss of the warm-sensitive preoptic thermostat"
-   }
-  ],
-  "examination": [
-   "Sleep history and sleep study when a hypothalamic lesion is suspected",
-   "Pubertal staging in children and gonadal hormone review in adults",
-   "Temperature regulation and thirst"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes"
-  ],
-  "pearls": [
-   "The ventrolateral preoptic nucleus is the sleep switch; its loss produces insomnia that hypnotics barely touch",
-   "Precocious puberty with gelastic seizures means a hypothalamic hamartoma in this region",
-   "The preoptic area is the thermostat, the anterior hypothalamus the radiator"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The medial preoptic nucleus lies in the preoptic area at the front of the hypothalamus, in the wall of the third ventricle behind the lamina terminalis and above the optic chiasm, and is developmentally telencephalic though functionally hypothalamic. It regulates reproductive and parental behavior, gonadotropin release through its projections to the arcuate GnRH neurons, thermoregulation and sleep, and it contains the sexually dimorphic nucleus that is larger in males. With the ventrolateral preoptic nucleus beside it, which switches off the arousal systems, it is part of the machinery of sleep onset; lesions produce insomnia, hyperthermia and loss of sexual behavior, and the region is involved in suprasellar tumors and in the anterior communicating artery aneurysm territory.",
+  "anatomy": {
+    "location": "Preoptic region of the anterior hypothalamus lateral to the third ventricle, behind the lamina terminalis and the organum vasculosum, above the optic chiasm and in front of the anterior hypothalamic area and the paraventricular nucleus, with the ventrolateral preoptic nucleus lateral to it.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Medial preoptic neurons integrate gonadal hormones with olfactory and limbic input to drive male sexual behavior and maternal behavior and to time the preovulatory gonadotropin surge through kisspeptin neurons; warm-sensitive preoptic neurons form the thermostat that triggers heat loss and fever, and the ventrolateral preoptic neurons release GABA and galanin onto the histaminergic, noradrenergic and cholinergic arousal nuclei to start sleep. The region also senses osmolality and angiotensin through the neighboring organum vasculosum and helps regulate thirst and vasopressin. It receives the amygdala, the septal area and the brainstem, and it projects to the arcuate nucleus, the periaqueductal gray and the ventral tegmental area.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-medial-preoptic-l"
+        },
+        "label": "medial preoptic nucleus behind the lamina terminalis"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-medial-preoptic-r"
+        },
+        "label": "preoptic area above the optic chiasm"
+      }
+    ],
+    "normalAppearance": "Anterior wall of the third ventricle immediately behind the lamina terminalis and above the chiasm on midline sagittal images; the preoptic recess of the ventricle indents it.",
+    "pathology": [
+      {
+        "pathology": "Insomnia after preoptic injury",
+        "modality": "MRI",
+        "finding": "Anterior hypothalamic lesion from surgery, tumor or stroke with profound sleep loss and hyperthermia.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Hypothalamic hamartoma",
+        "modality": "MRI",
+        "finding": "Non-enhancing mass isointense to gray matter in the tuber cinereum and preoptic region with gelastic seizures and precocious puberty.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Suprasellar germinoma",
+        "modality": "MRI",
+        "finding": "Enhancing midline mass in the anterior third ventricle floor with diabetes insipidus and precocious or delayed puberty.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Insomnia",
+        "side": "bilateral",
+        "mechanism": "Loss of the ventrolateral preoptic sleep switch"
+      },
+      {
+        "deficit": "Loss of sexual and parental behavior, hypogonadism",
+        "side": "bilateral",
+        "mechanism": "Loss of medial preoptic drive to the GnRH system and to sexual behavior"
+      },
+      {
+        "deficit": "Hyperthermia",
+        "side": "bilateral",
+        "mechanism": "Loss of the warm-sensitive preoptic thermostat"
+      }
+    ],
+    "examination": [
+      "Sleep history and sleep study when a hypothalamic lesion is suspected",
+      "Pubertal staging in children and gonadal hormone review in adults",
+      "Temperature regulation and thirst"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes"
+    ],
+    "pearls": [
+      "The ventrolateral preoptic nucleus is the sleep switch; its loss produces insomnia that hypnotics barely touch",
+      "Precocious puberty with gelastic seizures means a hypothalamic hamartoma in this region",
+      "The preoptic area is the thermostat, the anterior hypothalamus the radiator"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-temperature-regulation",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

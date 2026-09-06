@@ -1,131 +1,127 @@
 {
- "kind": "syndrome",
- "id": "syn-sca-infarct",
- "name": "Superior cerebellar artery infarction",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "artery-sca",
-   "cerebellar-hemisphere",
-   "superior-cerebellar-peduncle",
-   "dentate-nucleus",
-   "territory-sca",
-   "level-pons-rostral"
+  "kind": "syndrome",
+  "id": "syn-sca-infarct",
+  "name": "Superior cerebellar artery infarction",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "artery-sca",
+      "cerebellar-hemisphere",
+      "superior-cerebellar-peduncle",
+      "dentate-nucleus",
+      "territory-sca",
+      "level-pons-rostral"
+    ],
+    "side": "ipsilateral",
+    "arteryId": "artery-sca",
+    "territoryId": "territory-sca"
+  },
+  "lesionMarker": {
+    "kind": "territory",
+    "meshIds": [
+      "territory-superior-cerebellar-l"
+    ]
+  },
+  "presentation": "The patient presents with a sudden inability to walk, vomiting, dysarthria and a clumsy arm on one side. There may be a Horner syndrome on the same side and loss of pain sensation on the opposite side of the body, without facial involvement. Over the next two days drowsiness can develop as the swollen superior cerebellum compresses the brainstem and fourth ventricle.",
+  "deficits": [
+    {
+      "modality": "cerebellar",
+      "side": "ipsilateral",
+      "distribution": "arm and leg, gait",
+      "sign": "Limb and gait ataxia with dysarthria (superior cerebellar hemisphere and dentate)",
+      "substrate": "pathway-cerebellar-circuits"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "contralateral",
+      "distribution": "body, face spared",
+      "sign": "Loss of body pain and temperature from the spinothalamic tract in the rostral lateral pons",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "autonomic",
+      "side": "ipsilateral",
+      "distribution": "eye",
+      "sign": "Horner syndrome",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "consciousness",
+      "side": "n/a",
+      "distribution": "mass effect",
+      "sign": "Drowsiness and later coma from brainstem compression and hydrocephalus",
+      "substrate": "ventricle-fourth"
+    }
   ],
-  "side": "ipsilateral",
-  "arteryId": "artery-sca",
-  "territoryId": "territory-sca"
- },
- "lesionMarker": {
-  "kind": "territory",
-  "meshIds": [
-   "territory-superior-cerebellar-l"
-  ]
- },
- "presentation": "The patient presents with a sudden inability to walk, vomiting, dysarthria and a clumsy arm on one side. There may be a Horner syndrome on the same side and loss of pain sensation on the opposite side of the body, without facial involvement. Over the next two days drowsiness can develop as the swollen superior cerebellum compresses the brainstem and fourth ventricle.",
- "deficits": [
-  {
-   "modality": "cerebellar",
-   "side": "ipsilateral",
-   "distribution": "arm and leg, gait",
-   "sign": "Limb and gait ataxia with dysarthria (superior cerebellar hemisphere and dentate)",
-   "substrate": "pathway-cerebellar-circuits"
+  "reasoning": "The superior cerebellar artery arises from the basilar just below its bifurcation, curves around the rostral pons beneath the tentorium and supplies the superior surface of the cerebellum, the dentate nucleus, the superior cerebellar peduncle and the lateral rostral pontine tegmentum. Cerebellar signs are ipsilateral because cerebellar hemisphere output crosses in the superior cerebellar peduncle decussation and is crossed back by the corticospinal tract, so each hemisphere governs its own side of the body. The lateral rostral pons carries the spinothalamic tract, which crossed in the cord and now carries body pain and temperature from the opposite side, and the uncrossed descending sympathetic fibers; the spinal trigeminal tract has already ended below this level, which is why the face is spared, unlike in the lateral medullary and AICA syndromes. The facial and abducens nuclei lie caudal to the territory, so there is no facial palsy or deafness. The superior cerebellum abuts the tentorium and the midbrain, so swelling produces upward herniation and aqueduct obstruction, the main threat to life.",
+  "imagingFindings": [
+    {
+      "pathology": "SCA infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the superior cerebellar hemisphere and vermis, often in a wedge extending to the dentate.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Mass effect",
+      "modality": "CT",
+      "finding": "Effaced fourth ventricle and quadrigeminal cistern with early hydrocephalus at 24–72 h.",
+      "timing": "Peak swelling day 2–3"
+    },
+    {
+      "pathology": "Embolic source",
+      "modality": "CTA",
+      "finding": "SCA branch occlusion; the artery is often embolized from the heart because of its proximal origin."
+    }
+  ],
+  "commonCauses": [
+    "Cardioembolism (the SCA is the cerebellar artery most often embolized)",
+    "Basilar atherosclerosis",
+    "Vertebrobasilar dissection"
+  ],
+  "mimics": [
+    {
+      "name": "Lateral medullary syndrome",
+      "howToDistinguish": "Facial sensory loss and bulbar palsy present; no dysarthria of cerebellar type"
+    },
+    {
+      "name": "AICA infarct",
+      "howToDistinguish": "Deafness and facial palsy"
+    },
+    {
+      "name": "Cerebellar hemorrhage",
+      "howToDistinguish": "Hyperdense on CT, headache and rapid deterioration"
+    }
+  ],
+  "management": [
+    "Stroke treatment and neurosurgical monitoring for swelling; suboccipital decompression or ventriculostomy if deteriorating",
+    "Anticoagulation for a cardiac source after the swelling phase",
+    "Physiotherapy for ataxia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cerebellar-infarction",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -25,
+      "y": -60,
+      "z": -25
+    },
+    "label": "superior cerebellar hemisphere"
   },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "contralateral",
-   "distribution": "body, face spared",
-   "sign": "Loss of body pain and temperature from the spinothalamic tract in the rostral lateral pons",
-   "substrate": "pathway-lateral-spinothalamic"
-  },
-  {
-   "modality": "autonomic",
-   "side": "ipsilateral",
-   "distribution": "eye",
-   "sign": "Horner syndrome",
-   "substrate": "pathway-oculosympathetic"
-  },
-  {
-   "modality": "consciousness",
-   "side": "n/a",
-   "distribution": "mass effect",
-   "sign": "Drowsiness and later coma from brainstem compression and hydrocephalus",
-   "substrate": "ventricle-fourth"
-  }
- ],
- "reasoning": "The superior cerebellar artery arises from the basilar just below its bifurcation, curves around the rostral pons beneath the tentorium and supplies the superior surface of the cerebellum, the dentate nucleus, the superior cerebellar peduncle and the lateral rostral pontine tegmentum. Cerebellar signs are ipsilateral because cerebellar hemisphere output crosses in the superior cerebellar peduncle decussation and is crossed back by the corticospinal tract, so each hemisphere governs its own side of the body. The lateral rostral pons carries the spinothalamic tract, which crossed in the cord and now carries body pain and temperature from the opposite side, and the uncrossed descending sympathetic fibers; the spinal trigeminal tract has already ended below this level, which is why the face is spared, unlike in the lateral medullary and AICA syndromes. The facial and abducens nuclei lie caudal to the territory, so there is no facial palsy or deafness. The superior cerebellum abuts the tentorium and the midbrain, so swelling produces upward herniation and aqueduct obstruction, the main threat to life.",
- "imagingFindings": [
-  {
-   "pathology": "SCA infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the superior cerebellar hemisphere and vermis, often in a wedge extending to the dentate.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Mass effect",
-   "modality": "CT",
-   "finding": "Effaced fourth ventricle and quadrigeminal cistern with early hydrocephalus at 24–72 h.",
-   "timing": "Peak swelling day 2–3"
-  },
-  {
-   "pathology": "Embolic source",
-   "modality": "CTA",
-   "finding": "SCA branch occlusion; the artery is often embolized from the heart because of its proximal origin."
-  }
- ],
- "commonCauses": [
-  "Cardioembolism (the SCA is the cerebellar artery most often embolized)",
-  "Basilar atherosclerosis",
-  "Vertebrobasilar dissection"
- ],
- "mimics": [
-  {
-   "name": "Lateral medullary syndrome",
-   "howToDistinguish": "Facial sensory loss and bulbar palsy present; no dysarthria of cerebellar type"
-  },
-  {
-   "name": "AICA infarct",
-   "howToDistinguish": "Deafness and facial palsy"
-  },
-  {
-   "name": "Cerebellar hemorrhage",
-   "howToDistinguish": "Hyperdense on CT, headache and rapid deterioration"
-  }
- ],
- "management": [
-  "Stroke treatment and neurosurgical monitoring for swelling; suboccipital decompression or ventriculostomy if deteriorating",
-  "Anticoagulation for a cardiac source after the swelling phase",
-  "Physiotherapy for ataxia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    70,
-    70
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    78,
-    78
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -25,
-   "y": -60,
-   "z": -25
-  },
-  "label": "superior cerebellar hemisphere"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

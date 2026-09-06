@@ -1,138 +1,142 @@
 {
- "kind": "syndrome",
- "id": "syn-cavernous-sinus-thrombosis",
- "name": "Septic cavernous sinus thrombosis",
- "eponyms": [],
- "category": "infectious",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "sinus-cavernous",
-   "cn-06-abducens",
-   "cn-03-oculomotor",
-   "cn-05-trigeminal",
-   "artery-internal-carotid"
+  "kind": "syndrome",
+  "id": "syn-cavernous-sinus-thrombosis",
+  "name": "Septic cavernous sinus thrombosis",
+  "eponyms": [],
+  "category": "infectious",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "sinus-cavernous",
+      "cn-06-abducens",
+      "cn-03-oculomotor",
+      "cn-05-trigeminal",
+      "artery-internal-carotid"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -15,
+      "y": 5,
+      "z": -20
+    },
+    "radiusMm": 10
+  },
+  "presentation": "A patient with a boil on the upper lip or a sinus infection develops high fever, severe headache and a red, swollen, protruding eye with drooping lid; within a day the eye cannot move, the forehead is numb, the retinal veins are engorged and the other eye starts to swell as the infection crosses the midline. Untreated, meningitis, carotid narrowing with stroke and death follow within days; treated early with antibiotics and anticoagulation most survive.",
+  "deficits": [
+    {
+      "modality": "other",
+      "side": "ipsilateral",
+      "distribution": "orbit, then bilateral",
+      "sign": "Painful proptosis, chemosis, lid edema and retinal venous engorgement from ophthalmic vein obstruction; spreads to the other eye within days",
+      "substrate": "sinus-cavernous"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "VI first, then III and IV",
+      "sign": "Ophthalmoplegia beginning with abduction failure",
+      "substrate": "cn-06-abducens"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "V1 and V2",
+      "sign": "Forehead and cheek numbness, reduced corneal reflex",
+      "substrate": "cn-05-trigeminal"
+    },
+    {
+      "modality": "consciousness",
+      "side": "bilateral",
+      "distribution": "diffuse",
+      "sign": "Fever, rigors, drowsiness from sepsis and meningitis",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "hemibody (complication)",
+      "sign": "Hemiparesis from carotid arteritis and narrowing within the sinus",
+      "substrate": "artery-internal-carotid"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -15,
-   "y": 5,
-   "z": -20
+  "reasoning": "The facial veins have no valves and drain into the cavernous sinus through the ophthalmic veins and the pterygoid plexus, so an infection of the central face, the orbit, the sphenoid or ethmoid sinuses, the teeth or the ear can propagate thrombophlebitis backward into the sinus. Within the sinus the thrombus obstructs the ophthalmic veins, congesting the orbit and retina on that side, and the inflammation involves the nerves in its walls, uncrossed nerves serving the ipsilateral eye and face: the abducens nerve, floating free beside the carotid, fails first, then the oculomotor and trochlear nerves in the lateral wall, and the ophthalmic and maxillary divisions of the trigeminal nerve, while the sympathetic plexus on the carotid may add a Horner. The two cavernous sinuses communicate through the intercavernous sinuses around the pituitary, so the thrombosis spreads across within days and the picture becomes bilateral, which is the clue that separates it from an orbital cellulitis or a tumor. The carotid artery runs through the sinus and can be narrowed by the surrounding inflammation, producing cerebral infarction, and the infection reaches the meninges and the pituitary. Staphylococcus aureus is the usual organizm, and the diagnosis is confirmed by venography showing the filling defect and the dilated superior ophthalmic vein, though it should be treated on clinical suspicion.",
+  "imagingFindings": [
+    {
+      "pathology": "Cavernous sinus thrombophlebitis",
+      "modality": "MRV",
+      "finding": "Filling defect with expansion and convex bulging of the lateral walls of the cavernous sinus, dilated thrombosed superior ophthalmic vein, proptosis and orbital fat stranding; enhancement of the sinus walls and dura.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Source of infection",
+      "modality": "CT",
+      "finding": "Sphenoid or ethmoid sinusitis, facial cellulitis, dental or orbital abscess on contrast CT of the sinuses and orbits.",
+      "sequence": "CT contrast"
+    },
+    {
+      "pathology": "Carotid narrowing and infarction",
+      "modality": "MRA",
+      "finding": "Narrowing of the cavernous carotid with cerebral infarcts on DWI; mycotic aneurysm later.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Facial furuncle or cellulitis in the 'danger triangle'",
+    "Sphenoid and ethmoid sinusitis",
+    "Dental infection",
+    "Orbital cellulitis",
+    "Otitis and mastoiditis (via the petrosal sinuses)",
+    "Invasive fungal sinusitis in diabetics and the immunosuppressed"
+  ],
+  "mimics": [
+    {
+      "name": "Orbital cellulitis",
+      "howToDistinguish": "Unilateral, cranial nerves spared initially, no contralateral spread"
+    },
+    {
+      "name": "Cavernous sinus tumor or Tolosa–Hunt",
+      "howToDistinguish": "No fever or sepsis, slower course, no venous engorgement"
+    },
+    {
+      "name": "Carotid-cavernous fistula",
+      "howToDistinguish": "Pulsating exophthalmos with a bruit, no fever"
+    },
+    {
+      "name": "Aseptic cavernous sinus thrombosis",
+      "howToDistinguish": "Prothrombotic state without infection"
+    }
+  ],
+  "management": [
+    "Blood cultures then immediate high-dose intravenous antibiotics covering Staphylococcus aureus and anaerobes; drain the source",
+    "Anticoagulation with heparin is generally recommended despite the risk of hemorrhage",
+    "Steroids for pituitary insufficiency; antifungals and debridement if mucormycosis is suspected"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cavernous-sinus-thrombosis",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cavernous-sinus",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-cavernous-sinus-syndromes",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -15,
+      "y": 5,
+      "z": -20
+    },
+    "label": "cavernous sinus beside the sella"
   },
-  "radiusMm": 10
- },
- "presentation": "A patient with a boil on the upper lip or a sinus infection develops high fever, severe headache and a red, swollen, protruding eye with drooping lid; within a day the eye cannot move, the forehead is numb, the retinal veins are engorged and the other eye starts to swell as the infection crosses the midline. Untreated, meningitis, carotid narrowing with stroke and death follow within days; treated early with antibiotics and anticoagulation most survive.",
- "deficits": [
-  {
-   "modality": "other",
-   "side": "ipsilateral",
-   "distribution": "orbit, then bilateral",
-   "sign": "Painful proptosis, chemosis, lid edema and retinal venous engorgement from ophthalmic vein obstruction; spreads to the other eye within days",
-   "substrate": "sinus-cavernous"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "VI first, then III and IV",
-   "sign": "Ophthalmoplegia beginning with abduction failure",
-   "substrate": "cn-06-abducens"
-  },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "V1 and V2",
-   "sign": "Forehead and cheek numbness, reduced corneal reflex",
-   "substrate": "cn-05-trigeminal"
-  },
-  {
-   "modality": "consciousness",
-   "side": "bilateral",
-   "distribution": "diffuse",
-   "sign": "Fever, rigors, drowsiness from sepsis and meningitis",
-   "substrate": "reticular-formation"
-  },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "hemibody (complication)",
-   "sign": "Hemiparesis from carotid arteritis and narrowing within the sinus",
-   "substrate": "artery-internal-carotid"
-  }
- ],
- "reasoning": "The facial veins have no valves and drain into the cavernous sinus through the ophthalmic veins and the pterygoid plexus, so an infection of the central face, the orbit, the sphenoid or ethmoid sinuses, the teeth or the ear can propagate thrombophlebitis backward into the sinus. Within the sinus the thrombus obstructs the ophthalmic veins, congesting the orbit and retina on that side, and the inflammation involves the nerves in its walls, uncrossed nerves serving the ipsilateral eye and face: the abducens nerve, floating free beside the carotid, fails first, then the oculomotor and trochlear nerves in the lateral wall, and the ophthalmic and maxillary divisions of the trigeminal nerve, while the sympathetic plexus on the carotid may add a Horner. The two cavernous sinuses communicate through the intercavernous sinuses around the pituitary, so the thrombosis spreads across within days and the picture becomes bilateral, which is the clue that separates it from an orbital cellulitis or a tumor. The carotid artery runs through the sinus and can be narrowed by the surrounding inflammation, producing cerebral infarction, and the infection reaches the meninges and the pituitary. Staphylococcus aureus is the usual organizm, and the diagnosis is confirmed by venography showing the filling defect and the dilated superior ophthalmic vein, though it should be treated on clinical suspicion.",
- "imagingFindings": [
-  {
-   "pathology": "Cavernous sinus thrombophlebitis",
-   "modality": "MRV",
-   "finding": "Filling defect with expansion and convex bulging of the lateral walls of the cavernous sinus, dilated thrombosed superior ophthalmic vein, proptosis and orbital fat stranding; enhancement of the sinus walls and dura.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Source of infection",
-   "modality": "CT",
-   "finding": "Sphenoid or ethmoid sinusitis, facial cellulitis, dental or orbital abscess on contrast CT of the sinuses and orbits.",
-   "sequence": "CT contrast"
-  },
-  {
-   "pathology": "Carotid narrowing and infarction",
-   "modality": "MRA",
-   "finding": "Narrowing of the cavernous carotid with cerebral infarcts on DWI; mycotic aneurysm later.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Facial furuncle or cellulitis in the 'danger triangle'",
-  "Sphenoid and ethmoid sinusitis",
-  "Dental infection",
-  "Orbital cellulitis",
-  "Otitis and mastoiditis (via the petrosal sinuses)",
-  "Invasive fungal sinusitis in diabetics and the immunosuppressed"
- ],
- "mimics": [
-  {
-   "name": "Orbital cellulitis",
-   "howToDistinguish": "Unilateral, cranial nerves spared initially, no contralateral spread"
-  },
-  {
-   "name": "Cavernous sinus tumor or Tolosa–Hunt",
-   "howToDistinguish": "No fever or sepsis, slower course, no venous engorgement"
-  },
-  {
-   "name": "Carotid-cavernous fistula",
-   "howToDistinguish": "Pulsating exophthalmos with a bruit, no fever"
-  },
-  {
-   "name": "Aseptic cavernous sinus thrombosis",
-   "howToDistinguish": "Prothrombotic state without infection"
-  }
- ],
- "management": [
-  "Blood cultures then immediate high-dose intravenous antibiotics covering Staphylococcus aureus and anaerobes; drain the source",
-  "Anticoagulation with heparin is generally recommended despite the risk of hemorrhage",
-  "Steroids for pituitary insufficiency; antifungals and debridement if mucormycosis is suspected"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    432,
-    433
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -15,
-   "y": 5,
-   "z": -20
-  },
-  "label": "cavernous sinus beside the sella"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

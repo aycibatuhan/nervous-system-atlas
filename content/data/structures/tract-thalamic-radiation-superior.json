@@ -1,181 +1,153 @@
 {
- "kind": "structure",
- "id": "tract-thalamic-radiation-superior",
- "name": "Superior thalamic radiation",
- "synonyms": [
-  "sensorimotor thalamocortical radiation",
-  "posterior limb thalamocortical fibers"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-thalamic-radiation-superior-l",
-  "tract-thalamic-radiation-superior-r"
- ],
- "summary": "The superior thalamic radiation carries the fibers between the ventral tier of the thalamus and the sensorimotor cortex through the capsule's posterior limb and the corona radiata: the ventral posterior nuclei's somatosensory projection to the postcentral gyrus and the ventrolateral and ventral anterior nuclei's motor projection to the precentral gyrus and premotor cortex. It is the thalamocortical half of the sensorimotor system, running beside the descending corticospinal fibers, so posterior limb lesions produce sensory and motor deficits together, and thalamocortical disconnection in the corona radiata produces cortical-type sensory loss with an intact thalamus.",
- "anatomy": {
-  "location": "From the ventral anterior, ventrolateral and ventral posterior nuclei laterally through the capsule's posterior limb, interdigitating with the corticospinal tract, and upward through the corona radiata to the precentral and postcentral gyri and the paracentral lobule, with the leg fibers posterior and the face fibers anterior in the capsule.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Ventral posterior, ventrolateral and ventral anterior nuclei",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Sensorimotor cortex",
-    "via": "corticothalamic fibers"
-   }
+  "kind": "structure",
+  "id": "tract-thalamic-radiation-superior",
+  "name": "Superior thalamic radiation",
+  "synonyms": [
+    "sensorimotor thalamocortical radiation",
+    "posterior limb thalamocortical fibers"
   ],
-  "efferents": [
-   {
-    "to": "Postcentral and precentral gyri, premotor cortex",
-    "via": "thalamocortical termination"
-   },
-   {
-    "to": "Ventral thalamic nuclei and reticular nucleus",
-    "via": "corticothalamic termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-thalamic-radiation-superior-l",
+    "tract-thalamic-radiation-superior-r"
   ],
-  "pathways": [
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "It delivers touch, proprioception, pain and temperature from the ventral posterior nuclei to the somatosensory cortex and the cerebellar and pallidal motor signals from the ventrolateral and ventral anterior nuclei to the motor and premotor cortex, and it returns corticothalamic fibers that regulate thalamic gating and generate sleep spindles and the alpha rhythm through the reticular nucleus. Its interruption produces contralateral hemianesthesia of cortical type (impaired localization, two-point discrimination and graphesthesia with relative preservation of pain) and contributes to ataxia and bradykinesia from loss of the motor thalamic input. It is damaged in lenticulostriate and anterior choroidal infarcts and in periventricular hemorrhage.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal",
-   "artery-mca"
-  ],
-  "territories": [
-   "territory-lateral-lenticulostriate",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-thalamic-radiation-superior-l"
+  "summary": "The superior thalamic radiation carries the fibers between the ventral tier of the thalamus and the sensorimotor cortex through the capsule's posterior limb and the corona radiata: the ventral posterior nuclei's somatosensory projection to the postcentral gyrus and the ventrolateral and ventral anterior nuclei's motor projection to the precentral gyrus and premotor cortex. It is the thalamocortical half of the sensorimotor system, running beside the descending corticospinal fibers, so posterior limb lesions produce sensory and motor deficits together, and thalamocortical disconnection in the corona radiata produces cortical-type sensory loss with an intact thalamus.",
+  "anatomy": {
+    "location": "From the ventral anterior, ventrolateral and ventral posterior nuclei laterally through the capsule's posterior limb, interdigitating with the corticospinal tract, and upward through the corona radiata to the precentral and postcentral gyri and the paracentral lobule, with the leg fibers posterior and the face fibers anterior in the capsule.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Ventral posterior, ventrolateral and ventral anterior nuclei",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Sensorimotor cortex",
+        "via": "corticothalamic fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Postcentral and precentral gyri, premotor cortex",
+        "via": "thalamocortical termination"
+      },
+      {
+        "to": "Ventral thalamic nuclei and reticular nucleus",
+        "via": "corticothalamic termination"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "It delivers touch, proprioception, pain and temperature from the ventral posterior nuclei to the somatosensory cortex and the cerebellar and pallidal motor signals from the ventrolateral and ventral anterior nuclei to the motor and premotor cortex, and it returns corticothalamic fibers that regulate thalamic gating and generate sleep spindles and the alpha rhythm through the reticular nucleus. Its interruption produces contralateral hemianesthesia of cortical type (impaired localization, two-point discrimination and graphesthesia with relative preservation of pain) and contributes to ataxia and bradykinesia from loss of the motor thalamic input. It is damaged in lenticulostriate and anterior choroidal infarcts and in periventricular hemorrhage.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal",
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-lateral-lenticulostriate",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-thalamic-radiation-superior-l"
+        },
+        "label": "superior thalamic radiation from the ventral thalamus to the central gyri"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-thalamic-radiation-superior-r"
+        },
+        "label": "thalamocortical fibers in the posterior limb of the internal capsule"
+      }
+    ],
+    "normalAppearance": "On tractography a superoinferior bundle from the lateral thalamus through the posterior limb to the pre- and postcentral gyri, inseparable from the corticospinal tract on conventional images.",
+    "pathology": [
+      {
+        "pathology": "Striatocapsular or anterior choroidal infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the posterior limb with contralateral hemiparesis and hemisensory loss.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Corona radiata infarct with cortical sensory loss",
+        "modality": "MRI",
+        "finding": "Small deep white-matter infarct interrupting thalamocortical fibers with impaired discriminative sensation and a normal thalamus.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Periventricular hemorrhage of prematurity",
+        "modality": "US",
+        "finding": "Germinal matrix hemorrhage extending into the periventricular white matter, injuring the descending and ascending capsular fibers with later spastic diplegia.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral cortical-type sensory loss",
+        "side": "contralateral",
+        "mechanism": "Interruption of thalamocortical somatosensory fibers"
+      },
+      {
+        "deficit": "Contralateral hemiparesis with sensory loss (posterior limb)",
+        "side": "contralateral",
+        "mechanism": "Combined injury with the adjacent corticospinal tract"
+      },
+      {
+        "deficit": "Ataxia and bradykinesia",
+        "side": "contralateral",
+        "mechanism": "Loss of cerebellar and pallidal thalamocortical input"
+      }
+    ],
+    "examination": [
+      "Two-point discrimination, graphesthesia and stereognosis",
+      "Strength and tone, since the corticospinal tract is a neighbor",
+      "Coordination on the affected side"
+    ],
+    "syndromes": [
+      "syn-lacunar-sensorimotor",
+      "syn-anterior-choroidal-infarct",
+      "syn-lacunar-pure-sensory"
+    ],
+    "pearls": [
+      "Sensation reaches the cortex through the posterior limb; a capsular stroke numbs and weakens together",
+      "Cortical sensory loss with a normal thalamus is a white-matter disconnection",
+      "The sleep spindles on an EEG are the superior thalamic radiation talking to itself"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-thalamocortical-radiations",
+      "section": "Structure and Function"
     },
-    "label": "superior thalamic radiation from the ventral thalamus to the central gyri"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-thalamic-radiation-superior-r"
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
     },
-    "label": "thalamocortical fibers in the posterior limb of the internal capsule"
-   }
+    {
+      "ref": "sp-cerebral-hemisphere",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On tractography a superoinferior bundle from the lateral thalamus through the posterior limb to the pre- and postcentral gyri, inseparable from the corticospinal tract on conventional images.",
-  "pathology": [
-   {
-    "pathology": "Striatocapsular or anterior choroidal infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the posterior limb with contralateral hemiparesis and hemisensory loss.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Corona radiata infarct with cortical sensory loss",
-    "modality": "MRI",
-    "finding": "Small deep white-matter infarct interrupting thalamocortical fibers with impaired discriminative sensation and a normal thalamus.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Periventricular hemorrhage of prematurity",
-    "modality": "US",
-    "finding": "Germinal matrix hemorrhage extending into the periventricular white matter, injuring the descending and ascending capsular fibers with later spastic diplegia.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral cortical-type sensory loss",
-    "side": "contralateral",
-    "mechanism": "Interruption of thalamocortical somatosensory fibers"
-   },
-   {
-    "deficit": "Contralateral hemiparesis with sensory loss (posterior limb)",
-    "side": "contralateral",
-    "mechanism": "Combined injury with the adjacent corticospinal tract"
-   },
-   {
-    "deficit": "Ataxia and bradykinesia",
-    "side": "contralateral",
-    "mechanism": "Loss of cerebellar and pallidal thalamocortical input"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Two-point discrimination, graphesthesia and stereognosis",
-   "Strength and tone, since the corticospinal tract is a neighbor",
-   "Coordination on the affected side"
-  ],
-  "syndromes": [
-   "syn-lacunar-sensorimotor",
-   "syn-anterior-choroidal-infarct",
-   "syn-lacunar-pure-sensory"
-  ],
-  "pearls": [
-   "Sensation reaches the cortex through the posterior limb; a capsular stroke numbs and weakens together",
-   "Cortical sensory loss with a normal thalamus is a white-matter disconnection",
-   "The sleep spindles on an EEG are the superior thalamic radiation talking to itself"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    370
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    143,
-    149
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    38
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "internal-capsule"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "internal-capsule"
 }

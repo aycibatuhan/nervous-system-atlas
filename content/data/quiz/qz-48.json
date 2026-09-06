@@ -1,59 +1,67 @@
 {
- "kind": "quiz",
- "id": "qz-48",
- "type": "localize",
- "vignette": "A 70-year-old man has a stroke leaving him unable to see anything in his right visual field, but he can still recognize faces and read slowly. His pupils react normally. On fields, a small island of central vision survives on the right.",
- "stem": "Where is the lesion and why is the center spared?",
- "options": [
-  {
-   "key": "A",
-   "text": "Right optic tract; the macula has bilateral representation"
-  },
-  {
-   "key": "B",
-   "text": "Left calcarine cortex; the occipital pole receives middle cerebral artery collateral supply"
-  },
-  {
-   "key": "C",
-   "text": "Left optic radiation; macular fibers run separately"
-  },
-  {
-   "key": "D",
-   "text": "Left lateral geniculate; the macula projects to the pulvinar"
-  },
-  {
-   "key": "E",
-   "text": "Right calcarine cortex; the field defect is functional"
-  }
- ],
- "answer": "B",
- "explanation": "A congruous right hemianopia with normal pupils is a left calcarine (PCA) infarct, and the spared central island is macular sparing, because the macular cortex at the occipital pole is also supplied by terminal middle cerebral artery branches.",
- "targets": {
-  "structureIds": [
-   "cortex-intracalcarine",
-   "occipital-pole",
-   "territory-pca-occipital"
+  "kind": "quiz",
+  "id": "qz-48",
+  "type": "localize",
+  "vignette": "A 70-year-old man has a stroke leaving him unable to see anything in his right visual field, but he can still recognize faces and read slowly. His pupils react normally. On fields, a small island of central vision survives on the right.",
+  "stem": "Where is the lesion and why is the center spared?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Right optic tract; the macula has bilateral representation"
+    },
+    {
+      "key": "B",
+      "text": "Left calcarine cortex; the occipital pole receives middle cerebral artery collateral supply"
+    },
+    {
+      "key": "C",
+      "text": "Left optic radiation; macular fibers run separately"
+    },
+    {
+      "key": "D",
+      "text": "Left lateral geniculate; the macula projects to the pulvinar"
+    },
+    {
+      "key": "E",
+      "text": "Right calcarine cortex; the field defect is functional"
+    }
   ],
-  "syndromeIds": [
-   "syn-homonymous-hemianopia",
-   "syn-pca-infarct"
+  "answer": "B",
+  "explanation": "A congruous right hemianopia with normal pupils is a left calcarine (PCA) infarct, and the spared central island is macular sparing, because the macular cortex at the occipital pole is also supplied by terminal middle cerebral artery branches.",
+  "targets": {
+    "structureIds": [
+      "cortex-intracalcarine",
+      "occipital-pole",
+      "territory-pca-occipital"
+    ],
+    "syndromeIds": [
+      "syn-homonymous-hemianopia",
+      "syn-pca-infarct"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "cortex-intracalcarine-l",
+    "occipital-pole-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cortex-intracalcarine-l",
-  "occipital-pole-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-homonymous-hemianopsia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-homonymous-superior-quadrantanopia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-cerebral-arteries",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

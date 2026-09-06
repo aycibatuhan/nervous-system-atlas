@@ -1,176 +1,164 @@
 {
- "kind": "structure",
- "id": "ventral-diencephalon",
- "name": "Ventral diencephalon",
- "synonyms": [
-  "FreeSurfer ventral DC",
-  "subthalamus and hypothalamus (segmentation)"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "ventral-diencephalon-l",
-  "ventral-diencephalon-r"
- ],
- "summary": "The ventral diencephalon is the FreeSurfer segmentation label that groups the structures below the thalamus that are hard to separate on T1-weighted images: the hypothalamus, the mammillary bodies, the subthalamic nucleus, the zona incerta and fields of Forel, the substantia nigra and red nucleus at the diencephalic-midbrain junction, the optic tract, the ventral tegmental area and the geniculate region. It is used in this atlas as the container mesh for the hypothalamic and subthalamic nuclei that the higher-resolution atlases subdivide, and its volume is a crude but reproducible measure of the diencephalon in dementia and in hypothalamic disease.",
- "anatomy": {
-  "location": "The tissue between the thalamus above and the interpeduncular cistern and cerebral peduncles below, from the optic chiasm and lamina terminalis in front to the posterior commissure and the midbrain behind, lateral to the third ventricle and medial to the internal capsule and the optic tract.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Limbic forebrain",
-    "via": "fornix and medial forebrain bundle"
-   },
-   {
-    "from": "Basal ganglia",
-    "via": "pallidothalamic and subthalamic fibers"
-   },
-   {
-    "from": "Brainstem",
-    "via": "ascending tegmental fibers"
-   }
+  "kind": "structure",
+  "id": "ventral-diencephalon",
+  "name": "Ventral diencephalon",
+  "synonyms": [
+    "FreeSurfer ventral DC",
+    "subthalamus and hypothalamus (segmentation)"
   ],
-  "efferents": [
-   {
-    "to": "Thalamus",
-    "via": "mammillothalamic tract and pallidothalamic fibers"
-   },
-   {
-    "to": "Pituitary",
-    "via": "infundibulum"
-   },
-   {
-    "to": "Brainstem and spinal cord",
-    "via": "descending hypothalamic fibers"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "ventral-diencephalon-l",
+    "ventral-diencephalon-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops",
-   "pathway-papez-limbic"
-  ]
- },
- "function": "The label spans the hypothalamus (autonomic, endocrine, circadian and behavioral control), the subthalamus (motor control through the subthalamic nucleus and the pallidothalamic pathways), the mammillary bodies (memory), the optic tract (vision), the substantia nigra and ventral tegmental area (dopamine) and the red nucleus (cerebellar outflow); functionally it is the crossroads through which the limbic forebrain, the basal ganglia, the cerebellum and the brainstem exchange fibers with the thalamus and the cortex. Its individual components are described in their own entries; the container is useful for volumetric follow-up and as a landmark region for the thalamoperforating and anterior choroidal artery territories.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pcom",
-   "artery-anterior-choroidal",
-   "artery-acom"
-  ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating",
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "ventral-diencephalon-l"
-    },
-    "label": "ventral diencephalon below the thalamus and beside the third ventricle"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "ventral-diencephalon-r"
-    },
-    "label": "hypothalamus and subthalamus in front of the midbrain"
-   }
-  ],
-  "normalAppearance": "Gray matter beneath the thalamus and around the lower third ventricle on coronal images, extending from the chiasm to the midbrain; the FreeSurfer label includes the optic tract and the upper substantia nigra, so it is not a pure gray-matter structure.",
-  "pathology": [
-   {
-    "pathology": "Diencephalic infarct (thalamoperforating or anterior choroidal)",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the subthalamic-hypothalamic region with contralateral hemiballismus, hemiparesis or amnesia depending on the artery.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Hypothalamic tumor or hamartoma",
-    "modality": "MRI",
-    "finding": "Mass in the ventral diencephalon with endocrine, sleep and behavioral disturbance; enhancement pattern distinguishes glioma, germinoma and hamartoma.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetric FLAIR hyperintensity of the medial thalami, mammillary bodies and periventricular hypothalamus.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Endocrine, autonomic and sleep disturbance",
-    "side": "bilateral",
-    "mechanism": "Hypothalamic component"
-   },
-   {
-    "deficit": "Contralateral hemiballismus or tremor",
-    "side": "contralateral",
-    "mechanism": "Subthalamic and zona incerta component"
-   },
-   {
-    "deficit": "Amnesia",
-    "side": "bilateral",
-    "mechanism": "Mammillary body and mammillothalamic component"
-   }
-  ],
-  "examination": [
-   "Endocrine screen, temperature and sleep history",
-   "Movement examination for ballismus, tremor and parkinsonism",
-   "Memory testing"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-hemiballismus",
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "The ventral diencephalon label is a segmentation convenience; when a lesion is here, ask which of its residents is hit",
-   "Its volume shrinks in Alzheimer disease and in hypothalamic disorders and is a reproducible measure",
-   "It is the region where the anterior choroidal, thalamoperforating and posterior communicating arteries meet"
-  ]
- },
- "pitfalls": [
-  "Automated volumes of the ventral diencephalon include the optic tract and part of the midbrain; interpret changes with the anatomy in mind"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    373,
-    386
-   ]
+  "summary": "The ventral diencephalon is the FreeSurfer segmentation label that groups the structures below the thalamus that are hard to separate on T1-weighted images: the hypothalamus, the mammillary bodies, the subthalamic nucleus, the zona incerta and fields of Forel, the substantia nigra and red nucleus at the diencephalic-midbrain junction, the optic tract, the ventral tegmental area and the geniculate region. It is used in this atlas as the container mesh for the hypothalamic and subthalamic nuclei that the higher-resolution atlases subdivide, and its volume is a crude but reproducible measure of the diencephalon in dementia and in hypothalamic disease.",
+  "anatomy": {
+    "location": "The tissue between the thalamus above and the interpeduncular cistern and cerebral peduncles below, from the optic chiasm and lamina terminalis in front to the posterior commissure and the midbrain behind, lateral to the third ventricle and medial to the internal capsule and the optic tract.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    363,
-    372
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Limbic forebrain",
+        "via": "fornix and medial forebrain bundle"
+      },
+      {
+        "from": "Basal ganglia",
+        "via": "pallidothalamic and subthalamic fibers"
+      },
+      {
+        "from": "Brainstem",
+        "via": "ascending tegmental fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Thalamus",
+        "via": "mammillothalamic tract and pallidothalamic fibers"
+      },
+      {
+        "to": "Pituitary",
+        "via": "infundibulum"
+      },
+      {
+        "to": "Brainstem and spinal cord",
+        "via": "descending hypothalamic fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops",
+      "pathway-papez-limbic"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    25,
-    32
-   ]
-  }
- ],
- "tags": [
-  "segmentation",
-  "container",
-  "diencephalon"
- ],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "function": "The label spans the hypothalamus (autonomic, endocrine, circadian and behavioral control), the subthalamus (motor control through the subthalamic nucleus and the pallidothalamic pathways), the mammillary bodies (memory), the optic tract (vision), the substantia nigra and ventral tegmental area (dopamine) and the red nucleus (cerebellar outflow); functionally it is the crossroads through which the limbic forebrain, the basal ganglia, the cerebellum and the brainstem exchange fibers with the thalamus and the cortex. Its individual components are described in their own entries; the container is useful for volumetric follow-up and as a landmark region for the thalamoperforating and anterior choroidal artery territories.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pcom",
+      "artery-anterior-choroidal",
+      "artery-acom"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating",
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "ventral-diencephalon-l"
+        },
+        "label": "ventral diencephalon below the thalamus and beside the third ventricle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "ventral-diencephalon-r"
+        },
+        "label": "hypothalamus and subthalamus in front of the midbrain"
+      }
+    ],
+    "normalAppearance": "Gray matter beneath the thalamus and around the lower third ventricle on coronal images, extending from the chiasm to the midbrain; the FreeSurfer label includes the optic tract and the upper substantia nigra, so it is not a pure gray-matter structure.",
+    "pathology": [
+      {
+        "pathology": "Diencephalic infarct (thalamoperforating or anterior choroidal)",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the subthalamic-hypothalamic region with contralateral hemiballismus, hemiparesis or amnesia depending on the artery.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Hypothalamic tumor or hamartoma",
+        "modality": "MRI",
+        "finding": "Mass in the ventral diencephalon with endocrine, sleep and behavioral disturbance; enhancement pattern distinguishes glioma, germinoma and hamartoma.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetric FLAIR hyperintensity of the medial thalami, mammillary bodies and periventricular hypothalamus.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Endocrine, autonomic and sleep disturbance",
+        "side": "bilateral",
+        "mechanism": "Hypothalamic component"
+      },
+      {
+        "deficit": "Contralateral hemiballismus or tremor",
+        "side": "contralateral",
+        "mechanism": "Subthalamic and zona incerta component"
+      },
+      {
+        "deficit": "Amnesia",
+        "side": "bilateral",
+        "mechanism": "Mammillary body and mammillothalamic component"
+      }
+    ],
+    "examination": [
+      "Endocrine screen, temperature and sleep history",
+      "Movement examination for ballismus, tremor and parkinsonism",
+      "Memory testing"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-hemiballismus",
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "The ventral diencephalon label is a segmentation convenience; when a lesion is here, ask which of its residents is hit",
+      "Its volume shrinks in Alzheimer disease and in hypothalamic disorders and is a reproducible measure",
+      "It is the region where the anterior choroidal, thalamoperforating and posterior communicating arteries meet"
+    ]
+  },
+  "pitfalls": [
+    "Automated volumes of the ventral diencephalon include the optic tract and part of the midbrain; interpret changes with the anatomy in mind"
+  ],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-thalamus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "segmentation",
+    "container",
+    "diencephalon"
+  ],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

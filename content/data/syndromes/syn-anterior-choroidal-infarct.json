@@ -1,117 +1,113 @@
 {
- "kind": "syndrome",
- "id": "syn-anterior-choroidal-infarct",
- "name": "Anterior choroidal artery infarction",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "artery-anterior-choroidal",
-   "territory-anterior-choroidal",
-   "internal-capsule",
-   "lateral-geniculate-nucleus"
+  "kind": "syndrome",
+  "id": "syn-anterior-choroidal-infarct",
+  "name": "Anterior choroidal artery infarction",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "artery-anterior-choroidal",
+      "territory-anterior-choroidal",
+      "internal-capsule",
+      "lateral-geniculate-nucleus"
+    ],
+    "side": "contralateral",
+    "arteryId": "artery-anterior-choroidal",
+    "territoryId": "territory-anterior-choroidal"
+  },
+  "lesionMarker": {
+    "kind": "territory",
+    "meshIds": [
+      "territory-anterior-choroidal-thalamoperforating-l"
+    ]
+  },
+  "presentation": "A patient presents with a hemiparesis affecting face, arm and leg, hemisensory loss and a homonymous hemianopia, yet is alert with intact language and no neglect. The triad of motor, sensory and visual loss without cortical signs is the classic anterior choroidal syndrome. Some patients show only a pure motor or sensorimotor lacunar picture; others have a peculiar sectoral field defect sparing a horizontal wedge.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "face, arm and leg",
+      "sign": "Hemiparesis from the posterior limb of the internal capsule",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "hemibody",
+      "sign": "Hemihypesthesia from the thalamocortical fibers in the posterior capsule",
+      "substrate": "pathway-dcml"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "homonymous",
+      "sign": "Homonymous hemianopia, sometimes with sparing of a horizontal sector",
+      "substrate": "lateral-geniculate-nucleus"
+    }
   ],
-  "side": "contralateral",
-  "arteryId": "artery-anterior-choroidal",
-  "territoryId": "territory-anterior-choroidal"
- },
- "lesionMarker": {
-  "kind": "territory",
-  "meshIds": [
-   "territory-anterior-choroidal-thalamoperforating-l"
-  ]
- },
- "presentation": "A patient presents with a hemiparesis affecting face, arm and leg, hemisensory loss and a homonymous hemianopia, yet is alert with intact language and no neglect. The triad of motor, sensory and visual loss without cortical signs is the classic anterior choroidal syndrome. Some patients show only a pure motor or sensorimotor lacunar picture; others have a peculiar sectoral field defect sparing a horizontal wedge.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "face, arm and leg",
-   "sign": "Hemiparesis from the posterior limb of the internal capsule",
-   "substrate": "pathway-lateral-corticospinal"
+  "reasoning": "The anterior choroidal artery arises from the internal carotid just beyond the posterior communicating origin and runs backward beneath the optic tract to enter the temporal horn, supplying on the way the posterior limb of the internal capsule, the retrolenticular fibers, the optic tract, part of the lateral geniculate body and the medial temporal lobe. All three long pathways pass through this small territory: the corticospinal tract, whose fibers cross in the pyramidal decussation, the thalamocortical sensory radiation carrying the crossed spinothalamic and lemniscal input, and the optic tract and lateral geniculate body carrying the contralateral hemifield. A single small infarct therefore reproduces the deficit of a whole hemisphere lesion but without aphasia, neglect or field loss from cortical damage, because the cortex is intact. The lateral geniculate has a dual supply, anterior choroidal and lateral posterior choroidal, which explains the unusual sectoranopias: loss of the anterior choroidal portion spares the horizontal wedge fed by the other vessel.",
+  "imagingFindings": [
+    {
+      "pathology": "Acute anterior choroidal infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the posterior limb of the internal capsule extending down to the medial temporal lobe and lateral geniculate body, elongated in the anteroposterior direction.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Vessel imaging",
+      "modality": "CTA",
+      "finding": "The artery is usually too small to show an occlusion; the parent carotid may show atheroma or dissection."
+    }
+  ],
+  "commonCauses": [
+    "Small vessel disease",
+    "Carotid atheroembolism",
+    "Surgical clipping or coiling of nearby aneurysms",
+    "Cardioembolism"
+  ],
+  "mimics": [
+    {
+      "name": "Lacunar sensorimotor stroke",
+      "howToDistinguish": "No visual field defect"
+    },
+    {
+      "name": "MCA stem infarct",
+      "howToDistinguish": "Cortical signs (aphasia, neglect) and gaze deviation present"
+    },
+    {
+      "name": "PCA infarct",
+      "howToDistinguish": "Hemianopia with little or no weakness"
+    }
+  ],
+  "management": [
+    "Standard acute ischemic stroke care",
+    "Vascular risk factor control",
+    "Field defect assessment before driving"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anterior-choroidal-arteries",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -22,
+      "y": -15,
+      "z": 5
+    },
+    "label": "posterior limb of the internal capsule"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "hemibody",
-   "sign": "Hemihypesthesia from the thalamocortical fibers in the posterior capsule",
-   "substrate": "pathway-dcml"
-  },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "homonymous",
-   "sign": "Homonymous hemianopia, sometimes with sparing of a horizontal sector",
-   "substrate": "lateral-geniculate-nucleus"
-  }
- ],
- "reasoning": "The anterior choroidal artery arises from the internal carotid just beyond the posterior communicating origin and runs backward beneath the optic tract to enter the temporal horn, supplying on the way the posterior limb of the internal capsule, the retrolenticular fibers, the optic tract, part of the lateral geniculate body and the medial temporal lobe. All three long pathways pass through this small territory: the corticospinal tract, whose fibers cross in the pyramidal decussation, the thalamocortical sensory radiation carrying the crossed spinothalamic and lemniscal input, and the optic tract and lateral geniculate body carrying the contralateral hemifield. A single small infarct therefore reproduces the deficit of a whole hemisphere lesion but without aphasia, neglect or field loss from cortical damage, because the cortex is intact. The lateral geniculate has a dual supply, anterior choroidal and lateral posterior choroidal, which explains the unusual sectoranopias: loss of the anterior choroidal portion spares the horizontal wedge fed by the other vessel.",
- "imagingFindings": [
-  {
-   "pathology": "Acute anterior choroidal infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the posterior limb of the internal capsule extending down to the medial temporal lobe and lateral geniculate body, elongated in the anteroposterior direction.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Vessel imaging",
-   "modality": "CTA",
-   "finding": "The artery is usually too small to show an occlusion; the parent carotid may show atheroma or dissection."
-  }
- ],
- "commonCauses": [
-  "Small vessel disease",
-  "Carotid atheroembolism",
-  "Surgical clipping or coiling of nearby aneurysms",
-  "Cardioembolism"
- ],
- "mimics": [
-  {
-   "name": "Lacunar sensorimotor stroke",
-   "howToDistinguish": "No visual field defect"
-  },
-  {
-   "name": "MCA stem infarct",
-   "howToDistinguish": "Cortical signs (aphasia, neglect) and gaze deviation present"
-  },
-  {
-   "name": "PCA infarct",
-   "howToDistinguish": "Hemianopia with little or no weakness"
-  }
- ],
- "management": [
-  "Standard acute ischemic stroke care",
-  "Vascular risk factor control",
-  "Field defect assessment before driving"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    476,
-    476
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    60,
-    60
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -22,
-   "y": -15,
-   "z": 5
-  },
-  "label": "posterior limb of the internal capsule"
- },
- "cameraPreset": "superior"
+  "cameraPreset": "superior"
 }

@@ -1,134 +1,130 @@
 {
- "kind": "structure",
- "id": "nerve-sciatic",
- "name": "Sciatic nerve",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The thickest nerve in the body, formed from L4–S3 in the sacral plexus, leaves the pelvis through the greater sciatic foramen below piriformis, runs down the posterior thigh between the ischial tuberosity and the greater trochanter deep to gluteus maximus, supplies the hamstrings and the ischial part of adductor magnus, and divides above the knee into the tibial and common peroneal nerves, which together supply everything below the knee. Its two divisions are already separate bundles within the trunk, and the lateral (peroneal) division is more vulnerable to stretch and compression, so sciatic lesions often look like peroneal palsies with subtle tibial involvement.",
- "anatomy": {
-  "location": "From the sacral plexus on piriformis through the infrapiriform part of the greater sciatic foramen, midway between the ischial tuberosity and greater trochanter, down the posterior thigh on adductor magnus under the long head of biceps femoris, dividing at the apex of the popliteal fossa.",
-  "subdivisions": [
-   {
-    "name": "Tibial division (L4–S3)",
-    "note": "hamstrings (except short head of biceps), adductor magnus, all posterior leg and sole muscles"
-   },
-   {
-    "name": "Common peroneal division (L4–S2)",
-    "note": "short head of biceps femoris, anterior and lateral leg muscles, dorsum of the foot"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Knee flexion, hip extension (with the gluteals) and all movements of the ankle and foot; sensation of the posterior thigh (via the posterior femoral cutaneous nerve travelling with it) and the whole leg and foot below the knee except the medial (saphenous) strip.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "cervical cord; the sciatic nerve arises from L4–S3"
-   }
-  ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. MR neurography of the pelvis and thigh shows the nerve at the sciatic notch and along the thigh; hematoma, tumor, piriformis anomalies and injection injury are identified.",
-  "pathology": [
-   {
-    "pathology": "Sciatic neuropathy after hip surgery or injection",
-    "modality": "MRI",
-    "finding": "Thickened T2-bright nerve at the sciatic notch or gluteal region with denervation of hamstrings and leg muscles.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Piriformis syndrome",
-    "modality": "MRI",
-    "finding": "Asymmetric piriformis or nerve variant passing through the muscle; controversial diagnosis.",
-    "sequence": "T1"
-   }
-  ],
-  "sequenceOfChoice": "EMG (short head of biceps femoris distinguishes sciatic from peroneal lesions); pelvic and thigh MRI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Foot drop with weak plantar flexion, knee flexion and an absent ankle jerk",
-    "side": "ipsilateral",
-    "mechanism": "Complete sciatic lesion: both divisions"
-   },
-   {
-    "deficit": "Foot drop with subtle weakness of foot inversion and plantar flexion",
-    "side": "ipsilateral",
-    "mechanism": "Partial sciatic lesion, peroneal division more affected"
-   },
-   {
-    "deficit": "Numbness of the whole foot and lateral leg",
-    "side": "ipsilateral",
-    "mechanism": "Both tibial and peroneal sensory territories"
-   },
-   {
-    "deficit": "Preserved hip abduction and extension",
-    "side": "n/a",
-    "mechanism": "Gluteal nerves leave the plexus separately, unlike in a plexopathy"
-   }
-  ],
-  "examination": [
-   "Knee flexion (hamstrings) and ankle jerk to separate sciatic from common peroneal lesions",
-   "Ankle inversion (tibial) versus eversion and dorsiflexion (peroneal)",
-   "Sensation of the sole and lateral leg",
-   "Hip abduction (superior gluteal) to exclude a plexopathy",
-   "Straight-leg raise; palpate the sciatic notch"
-  ],
-  "syndromes": [
-   "syn-sciatic-neuropathy",
-   "syn-peroneal-palsy-foot-drop",
-   "syn-radiculopathy-lumbosacral"
-  ],
-  "pearls": [
-   "Foot drop plus a lost ankle jerk or weak knee flexion is the sciatic nerve, not the peroneal nerve",
-   "Gluteal weakness means the lesion is in the plexus or roots, above the sciatic nerve"
-  ]
- },
- "pitfalls": [
-  "An L5 radiculopathy also gives foot drop with inversion weakness; back pain, a positive straight-leg raise and paraspinal EMG changes point to the root"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    112,
-    112
-   ]
+  "kind": "structure",
+  "id": "nerve-sciatic",
+  "name": "Sciatic nerve",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The thickest nerve in the body, formed from L4–S3 in the sacral plexus, leaves the pelvis through the greater sciatic foramen below piriformis, runs down the posterior thigh between the ischial tuberosity and the greater trochanter deep to gluteus maximus, supplies the hamstrings and the ischial part of adductor magnus, and divides above the knee into the tibial and common peroneal nerves, which together supply everything below the knee. Its two divisions are already separate bundles within the trunk, and the lateral (peroneal) division is more vulnerable to stretch and compression, so sciatic lesions often look like peroneal palsies with subtle tibial involvement.",
+  "anatomy": {
+    "location": "From the sacral plexus on piriformis through the infrapiriform part of the greater sciatic foramen, midway between the ischial tuberosity and greater trochanter, down the posterior thigh on adductor magnus under the long head of biceps femoris, dividing at the apex of the popliteal fossa.",
+    "subdivisions": [
+      {
+        "name": "Tibial division (L4–S3)",
+        "note": "hamstrings (except short head of biceps), adductor magnus, all posterior leg and sole muscles"
+      },
+      {
+        "name": "Common peroneal division (L4–S2)",
+        "note": "short head of biceps femoris, anterior and lateral leg muscles, dorsum of the foot"
+      }
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    165
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Knee flexion, hip extension (with the gluteals) and all movements of the ankle and foot; sensation of the posterior thigh (via the posterior femoral cutaneous nerve travelling with it) and the whole leg and foot below the knee except the medial (saphenous) strip.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; the sciatic nerve arises from L4–S3"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. MR neurography of the pelvis and thigh shows the nerve at the sciatic notch and along the thigh; hematoma, tumor, piriformis anomalies and injection injury are identified.",
+    "pathology": [
+      {
+        "pathology": "Sciatic neuropathy after hip surgery or injection",
+        "modality": "MRI",
+        "finding": "Thickened T2-bright nerve at the sciatic notch or gluteal region with denervation of hamstrings and leg muscles.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Piriformis syndrome",
+        "modality": "MRI",
+        "finding": "Asymmetric piriformis or nerve variant passing through the muscle; controversial diagnosis.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "EMG (short head of biceps femoris distinguishes sciatic from peroneal lesions); pelvic and thigh MRI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Foot drop with weak plantar flexion, knee flexion and an absent ankle jerk",
+        "side": "ipsilateral",
+        "mechanism": "Complete sciatic lesion: both divisions"
+      },
+      {
+        "deficit": "Foot drop with subtle weakness of foot inversion and plantar flexion",
+        "side": "ipsilateral",
+        "mechanism": "Partial sciatic lesion, peroneal division more affected"
+      },
+      {
+        "deficit": "Numbness of the whole foot and lateral leg",
+        "side": "ipsilateral",
+        "mechanism": "Both tibial and peroneal sensory territories"
+      },
+      {
+        "deficit": "Preserved hip abduction and extension",
+        "side": "n/a",
+        "mechanism": "Gluteal nerves leave the plexus separately, unlike in a plexopathy"
+      }
+    ],
+    "examination": [
+      "Knee flexion (hamstrings) and ankle jerk to separate sciatic from common peroneal lesions",
+      "Ankle inversion (tibial) versus eversion and dorsiflexion (peroneal)",
+      "Sensation of the sole and lateral leg",
+      "Hip abduction (superior gluteal) to exclude a plexopathy",
+      "Straight-leg raise; palpate the sciatic notch"
+    ],
+    "syndromes": [
+      "syn-sciatic-neuropathy",
+      "syn-peroneal-palsy-foot-drop",
+      "syn-radiculopathy-lumbosacral"
+    ],
+    "pearls": [
+      "Foot drop plus a lost ankle jerk or weak knee flexion is the sciatic nerve, not the peroneal nerve",
+      "Gluteal weakness means the lesion is in the plexus or roots, above the sciatic nerve"
+    ]
+  },
+  "pitfalls": [
+    "An L5 radiculopathy also gives foot drop with inversion weakness; back pain, a positive straight-leg raise and paraspinal EMG changes point to the root"
+  ],
+  "citations": [
+    {
+      "ref": "sp-sciatic-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-sciatic-nerve-block",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "pns",
+    "lower-limb"
+  ],
+  "status": "draft",
+  "latin": "Nervus ischiadicus",
+  "subsystem": "lower-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "lower-limb"
- ],
- "status": "draft",
- "latin": "Nervus ischiadicus",
- "subsystem": "lower-limb",
- "level": {
-  "region": "peripheral"
- }
 }

@@ -1,170 +1,142 @@
 {
- "kind": "structure",
- "id": "arteries-lenticulostriate",
- "name": "Lenticulostriate arteries",
- "synonyms": [
-  "lateral striate arteries",
-  "arteries of cerebral hemorrhage"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "A fan of small perforating arteries that rise from the first segment of the middle cerebral artery (lateral lenticulostriates) and from the proximal anterior cerebral artery (medial lenticulostriates, including the recurrent artery of Heubner), pierce the anterior perforated substance and supply the putamen, globus pallidus, caudate and the internal capsule. They are end arteries, so their occlusion produces lacunar infarcts and their rupture under chronic hypertension produces the typical deep putaminal hemorrhage.",
- "anatomy": {
-  "location": "Arise from the superior and posterior wall of the M1 segment (and from A1 for the medial group) in the Sylvian cistern, ascend through the anterior perforated substance, and fan out through the lentiform nucleus toward the body of the caudate and the genu and anterior part of the posterior limb of the internal capsule.",
-  "subdivisions": [
-   {
-    "name": "Medial lenticulostriates (including Heubner's artery)",
-    "note": "head of the caudate, anterior limb of the internal capsule, anterior putamen"
-   },
-   {
-    "name": "Lateral lenticulostriates",
-    "note": "putamen, lateral globus pallidus, body of the caudate, genu and superior posterior limb of the internal capsule"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supply the striatum, the globus pallidus and the corticospinal and corticobulbar fibers travelling in the genu and posterior limb of the internal capsule.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-aca"
+  "kind": "structure",
+  "id": "arteries-lenticulostriate",
+  "name": "Lenticulostriate arteries",
+  "synonyms": [
+    "lateral striate arteries",
+    "arteries of cerebral hemorrhage"
   ],
-  "territories": [
-   "territory-lenticulostriate"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 22,
-     "y": 8,
-     "z": 8
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "A fan of small perforating arteries that rise from the first segment of the middle cerebral artery (lateral lenticulostriates) and from the proximal anterior cerebral artery (medial lenticulostriates, including the recurrent artery of Heubner), pierce the anterior perforated substance and supply the putamen, globus pallidus, caudate and the internal capsule. They are end arteries, so their occlusion produces lacunar infarcts and their rupture under chronic hypertension produces the typical deep putaminal hemorrhage.",
+  "anatomy": {
+    "location": "Arise from the superior and posterior wall of the M1 segment (and from A1 for the medial group) in the Sylvian cistern, ascend through the anterior perforated substance, and fan out through the lentiform nucleus toward the body of the caudate and the genu and anterior part of the posterior limb of the internal capsule.",
+    "subdivisions": [
+      {
+        "name": "Medial lenticulostriates (including Heubner's artery)",
+        "note": "head of the caudate, anterior limb of the internal capsule, anterior putamen"
+      },
+      {
+        "name": "Lateral lenticulostriates",
+        "note": "putamen, lateral globus pallidus, body of the caudate, genu and superior posterior limb of the internal capsule"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supply the striatum, the globus pallidus and the corticospinal and corticobulbar fibers travelling in the genu and posterior limb of the internal capsule.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-aca"
+    ],
+    "territories": [
+      "territory-lenticulostriate"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 22,
+          "y": 8,
+          "z": 8
+        },
+        "label": "perforators rising through the anterior perforated substance into the lentiform nucleus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 24,
+          "y": 2,
+          "z": 8
+        },
+        "label": "putamen and internal capsule, the lacune and hypertensive hemorrhage site"
+      }
+    ],
+    "normalAppearance": "Individual vessels are below MRI resolution but can be seen as fine radiating lines on CTA and 7 T imaging. Their territory is the lentiform nucleus, caudate and internal capsule on axial slices at the level of the frontal horns.",
+    "pathology": [
+      {
+        "pathology": "Lacunar infarct",
+        "modality": "MRI",
+        "finding": "A small (under 15–20 mm) focus of restricted diffusion in the putamen, internal capsule or corona radiata; older lacunes become CSF-signal cavities with a FLAIR rim.",
+        "sequence": "DWI",
+        "timing": "DWI positive acutely; cavitation over weeks to months"
+      },
+      {
+        "pathology": "Hypertensive putaminal hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense hematoma centered on the putamen, spreading medially into the internal capsule or rupturing into the lateral ventricle; surrounding hypodense edema grows over days.",
+        "sequence": "CT non-contrast",
+        "timing": "Hyperdense immediately; isodense after ~1–2 weeks; hypodense chronically"
+      },
+      {
+        "pathology": "Striatocapsular infarct",
+        "modality": "MRI",
+        "finding": "A comma-shaped infarct of the whole lenticulostriate territory when M1 is transiently occluded and the cortex is saved by collaterals.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI for lacunes; non-contrast CT for hemorrhage; SWI shows old microbleeds in the same territory"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Pure motor hemiparesis (face, arm and leg equally)",
+        "side": "contralateral",
+        "mechanism": "Corticospinal and corticobulbar fibers in the posterior limb and genu of the internal capsule"
+      },
+      {
+        "deficit": "Hemiballismus or chorea (rare)",
+        "side": "contralateral",
+        "mechanism": "Striatal or subthalamic connections"
+      },
+      {
+        "deficit": "Dense hemiplegia with gaze deviation and decreased consciousness",
+        "side": "contralateral",
+        "mechanism": "Large putaminal hemorrhage with capsular involvement and mass effect"
+      }
+    ],
+    "examination": [
+      "Check that face, arm and leg are affected to a similar degree with no cortical signs",
+      "Look for hemiballismus or dystonia after recovery",
+      "Measure blood pressure and look for retinal hypertensive change"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-motor",
+      "syn-hemiballismus"
+    ],
+    "pearls": [
+      "A hemiparesis that is equal in face, arm and leg with no aphasia, neglect or field cut is capsular, not cortical",
+      "The lenticulostriates are the classic site of hypertensive hemorrhage because they leave a large trunk at right angles and bear its full pressure"
+    ]
+  },
+  "pitfalls": [
+    "Small deep infarcts can also come from emboli or from M1 atheroma occluding the perforator origins, so cardiac and large-vessel evaluation is still needed"
+  ],
+  "citations": [
+    {
+      "ref": "sp-striate-arteries",
+      "section": "Structure and Function"
     },
-    "label": "perforators rising through the anterior perforated substance into the lentiform nucleus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 24,
-     "y": 2,
-     "z": 8
+    {
+      "ref": "sp-middle-cerebral-artery",
+      "section": "Structure and Function"
     },
-    "label": "putamen and internal capsule, the lacune and hypertensive hemorrhage site"
-   }
+    {
+      "ref": "sp-recurrent-artery-of-heubner",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Individual vessels are below MRI resolution but can be seen as fine radiating lines on CTA and 7 T imaging. Their territory is the lentiform nucleus, caudate and internal capsule on axial slices at the level of the frontal horns.",
-  "pathology": [
-   {
-    "pathology": "Lacunar infarct",
-    "modality": "MRI",
-    "finding": "A small (under 15–20 mm) focus of restricted diffusion in the putamen, internal capsule or corona radiata; older lacunes become CSF-signal cavities with a FLAIR rim.",
-    "sequence": "DWI",
-    "timing": "DWI positive acutely; cavitation over weeks to months"
-   },
-   {
-    "pathology": "Hypertensive putaminal hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense hematoma centered on the putamen, spreading medially into the internal capsule or rupturing into the lateral ventricle; surrounding hypodense edema grows over days.",
-    "sequence": "CT non-contrast",
-    "timing": "Hyperdense immediately; isodense after ~1–2 weeks; hypodense chronically"
-   },
-   {
-    "pathology": "Striatocapsular infarct",
-    "modality": "MRI",
-    "finding": "A comma-shaped infarct of the whole lenticulostriate territory when M1 is transiently occluded and the cortex is saved by collaterals.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "vascular",
+    "lacunar"
   ],
-  "sequenceOfChoice": "DWI for lacunes; non-contrast CT for hemorrhage; SWI shows old microbleeds in the same territory"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Pure motor hemiparesis (face, arm and leg equally)",
-    "side": "contralateral",
-    "mechanism": "Corticospinal and corticobulbar fibers in the posterior limb and genu of the internal capsule"
-   },
-   {
-    "deficit": "Hemiballismus or chorea (rare)",
-    "side": "contralateral",
-    "mechanism": "Striatal or subthalamic connections"
-   },
-   {
-    "deficit": "Dense hemiplegia with gaze deviation and decreased consciousness",
-    "side": "contralateral",
-    "mechanism": "Large putaminal hemorrhage with capsular involvement and mass effect"
-   }
-  ],
-  "examination": [
-   "Check that face, arm and leg are affected to a similar degree with no cortical signs",
-   "Look for hemiballismus or dystonia after recovery",
-   "Measure blood pressure and look for retinal hypertensive change"
-  ],
-  "syndromes": [
-   "syn-lacunar-pure-motor",
-   "syn-hemiballismus"
-  ],
-  "pearls": [
-   "A hemiparesis that is equal in face, arm and leg with no aphasia, neglect or field cut is capsular, not cortical",
-   "The lenticulostriates are the classic site of hypertensive hemorrhage because they leave a large trunk at right angles and bear its full pressure"
-  ]
- },
- "pitfalls": [
-  "Small deep infarcts can also come from emboli or from M1 atheroma occluding the perforator origins, so cardiac and large-vessel evaluation is still needed"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    465,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    474,
-    474
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    184
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    192,
-    195
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "lacunar"
- ],
- "status": "draft",
- "latin": "Arteriae lenticulostriatae",
- "subsystem": "perforators"
+  "status": "draft",
+  "latin": "Arteriae lenticulostriatae",
+  "subsystem": "perforators"
 }

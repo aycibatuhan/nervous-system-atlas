@@ -1,178 +1,150 @@
 {
- "kind": "structure",
- "id": "tract-corticobulbar",
- "name": "Corticobulbar tract",
- "synonyms": [
-  "corticonuclear tract",
-  "CBT"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-corticobulbar-l",
-  "tract-corticobulbar-r"
- ],
- "summary": "The corticobulbar tract carries the motor command from the face, tongue and larynx areas of the precentral gyrus and the premotor cortex to the motor nuclei of the cranial nerves in the brainstem, running with the corticospinal tract through the genu and posterior limb of the internal capsule and the medial crus cerebri before leaving it at each level to reach the trigeminal, facial, ambiguus and hypoglossal nuclei. Because most nuclei receive both hemispheres, a unilateral lesion produces only lower facial weakness and mild tongue and palatal deviation, whereas bilateral lesions produce the pseudobulbar palsy of spastic dysarthria, dysphagia and emotional lability. The reconstruction shows the bundle from the lateral motor cortex to the pons and medulla.",
- "anatomy": {
-  "location": "From the ventral precentral gyrus and frontal operculum through the corona radiata into the genu of the internal capsule, then the medial part of the middle of the crus cerebri, descending in the basis pontis and pyramid and sending crossed and uncrossed fibers to the trigeminal motor nucleus, the facial nucleus, the nucleus ambiguus and the hypoglossal nucleus, largely through interneurons of the reticular formation.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Ventral precentral gyrus and frontal operculum",
-    "via": "origin"
-   }
+  "kind": "structure",
+  "id": "tract-corticobulbar",
+  "name": "Corticobulbar tract",
+  "synonyms": [
+    "corticonuclear tract",
+    "CBT"
   ],
-  "efferents": [
-   {
-    "to": "Trigeminal motor, facial, ambiguus and hypoglossal nuclei",
-    "via": "mostly via reticular interneurons"
-   },
-   {
-    "to": "Brainstem reticular formation (emotional expression centers)",
-    "via": "corticoreticular fibers"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-corticobulbar-l",
+    "tract-corticobulbar-r"
   ],
-  "pathways": [
-   "pathway-corticobulbar"
-  ]
- },
- "function": "It provides voluntary control of chewing, facial expression, phonation, swallowing and tongue movement, with bilateral supply to most nuclei except the lower facial subnucleus and part of the hypoglossal nucleus, which receive mainly crossed fibers; it also carries the corticoreticular fibers that inhibit the brainstem reflex centers for laughing and crying, so bilateral loss releases pathological emotional expression. Unilateral damage gives contralateral lower facial weakness and transient dysarthria; bilateral damage from repeated strokes, motor neuron disease or bilateral opercular lesions gives a slow, strained voice, a brisk jaw jerk and a tongue that cannot move but does not waste.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal",
-   "artery-basilar",
-   "arteries-pontine"
-  ],
-  "territories": [
-   "territory-mca-major",
-   "territory-lateral-lenticulostriate",
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-corticobulbar-l"
+  "summary": "The corticobulbar tract carries the motor command from the face, tongue and larynx areas of the precentral gyrus and the premotor cortex to the motor nuclei of the cranial nerves in the brainstem, running with the corticospinal tract through the genu and posterior limb of the internal capsule and the medial crus cerebri before leaving it at each level to reach the trigeminal, facial, ambiguus and hypoglossal nuclei. Because most nuclei receive both hemispheres, a unilateral lesion produces only lower facial weakness and mild tongue and palatal deviation, whereas bilateral lesions produce the pseudobulbar palsy of spastic dysarthria, dysphagia and emotional lability. The reconstruction shows the bundle from the lateral motor cortex to the pons and medulla.",
+  "anatomy": {
+    "location": "From the ventral precentral gyrus and frontal operculum through the corona radiata into the genu of the internal capsule, then the medial part of the middle of the crus cerebri, descending in the basis pontis and pyramid and sending crossed and uncrossed fibers to the trigeminal motor nucleus, the facial nucleus, the nucleus ambiguus and the hypoglossal nucleus, largely through interneurons of the reticular formation.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Ventral precentral gyrus and frontal operculum",
+        "via": "origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Trigeminal motor, facial, ambiguus and hypoglossal nuclei",
+        "via": "mostly via reticular interneurons"
+      },
+      {
+        "to": "Brainstem reticular formation (emotional expression centers)",
+        "via": "corticoreticular fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-corticobulbar"
+    ]
+  },
+  "function": "It provides voluntary control of chewing, facial expression, phonation, swallowing and tongue movement, with bilateral supply to most nuclei except the lower facial subnucleus and part of the hypoglossal nucleus, which receive mainly crossed fibers; it also carries the corticoreticular fibers that inhibit the brainstem reflex centers for laughing and crying, so bilateral loss releases pathological emotional expression. Unilateral damage gives contralateral lower facial weakness and transient dysarthria; bilateral damage from repeated strokes, motor neuron disease or bilateral opercular lesions gives a slow, strained voice, a brisk jaw jerk and a tongue that cannot move but does not waste.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal",
+      "artery-basilar",
+      "arteries-pontine"
+    ],
+    "territories": [
+      "territory-mca-major",
+      "territory-lateral-lenticulostriate",
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-corticobulbar-l"
+        },
+        "label": "corticobulbar fibers from the face area to the brainstem"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-corticobulbar-r"
+        },
+        "label": "corticobulbar tract in the genu of the internal capsule"
+      }
+    ],
+    "normalAppearance": "Tractography shows a bundle from the lateral precentral gyrus converging into the genu of the internal capsule medial to the corticospinal fibers and descending in the medial crus; it cannot be separated from the corticospinal tract on conventional MRI.",
+    "pathology": [
+      {
+        "pathology": "Pseudobulbar palsy from bilateral capsular or pontine infarcts",
+        "modality": "MRI",
+        "finding": "Bilateral lacunes in the genu or basis pontis with spastic dysarthria, dysphagia, brisk jaw jerk and emotional lability.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Amyotrophic lateral sclerosis (bulbar onset)",
+        "modality": "MRI",
+        "finding": "Corticospinal and corticobulbar tract hyperintensity with precentral hypointensity; EMG shows the lower motor neuron component in the tongue.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Central facial palsy from a small capsular infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the genu of the internal capsule with contralateral lower facial weakness and dysarthria.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral lower facial weakness sparing the forehead",
+        "side": "contralateral",
+        "mechanism": "Loss of the crossed projection to the lower facial subnucleus"
+      },
+      {
+        "deficit": "Pseudobulbar palsy when bilateral",
+        "side": "bilateral",
+        "mechanism": "Loss of bilateral supranuclear control of the bulbar nuclei"
+      },
+      {
+        "deficit": "Pathological laughing and crying",
+        "side": "bilateral",
+        "mechanism": "Loss of corticoreticular inhibition of brainstem emotional-expression centers"
+      }
+    ],
+    "examination": [
+      "Forehead wrinkling versus lower facial movement",
+      "Jaw jerk, palatal elevation, tongue movement and speed, and emotional lability",
+      "Swallowing assessment before oral intake in bilateral lesions"
+    ],
+    "syndromes": [
+      "syn-bulbar-vs-pseudobulbar",
+      "syn-facial-palsy-peripheral-vs-central",
+      "syn-als-pattern"
+    ],
+    "pearls": [
+      "A brisk jaw jerk with a slow tongue that does not waste is pseudobulbar; a wasted, fasciculating tongue is bulbar",
+      "One hemisphere is enough for most cranial nerve nuclei; the lower face and the tongue are the exceptions",
+      "Bilateral corticobulbar loss releases the crying and laughing centers of the brainstem"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-corticobulbar-tract",
+      "section": "Structure and Function"
     },
-    "label": "corticobulbar fibers from the face area to the brainstem"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-corticobulbar-r"
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
     },
-    "label": "corticobulbar tract in the genu of the internal capsule"
-   }
+    {
+      "ref": "sp-thalamocortical-radiations",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows a bundle from the lateral precentral gyrus converging into the genu of the internal capsule medial to the corticospinal fibers and descending in the medial crus; it cannot be separated from the corticospinal tract on conventional MRI.",
-  "pathology": [
-   {
-    "pathology": "Pseudobulbar palsy from bilateral capsular or pontine infarcts",
-    "modality": "MRI",
-    "finding": "Bilateral lacunes in the genu or basis pontis with spastic dysarthria, dysphagia, brisk jaw jerk and emotional lability.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Amyotrophic lateral sclerosis (bulbar onset)",
-    "modality": "MRI",
-    "finding": "Corticospinal and corticobulbar tract hyperintensity with precentral hypointensity; EMG shows the lower motor neuron component in the tongue.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Central facial palsy from a small capsular infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the genu of the internal capsule with contralateral lower facial weakness and dysarthria.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral lower facial weakness sparing the forehead",
-    "side": "contralateral",
-    "mechanism": "Loss of the crossed projection to the lower facial subnucleus"
-   },
-   {
-    "deficit": "Pseudobulbar palsy when bilateral",
-    "side": "bilateral",
-    "mechanism": "Loss of bilateral supranuclear control of the bulbar nuclei"
-   },
-   {
-    "deficit": "Pathological laughing and crying",
-    "side": "bilateral",
-    "mechanism": "Loss of corticoreticular inhibition of brainstem emotional-expression centers"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Forehead wrinkling versus lower facial movement",
-   "Jaw jerk, palatal elevation, tongue movement and speed, and emotional lability",
-   "Swallowing assessment before oral intake in bilateral lesions"
-  ],
-  "syndromes": [
-   "syn-bulbar-vs-pseudobulbar",
-   "syn-facial-palsy-peripheral-vs-central",
-   "syn-als-pattern"
-  ],
-  "pearls": [
-   "A brisk jaw jerk with a slow tongue that does not waste is pseudobulbar; a wasted, fasciculating tongue is bulbar",
-   "One hemisphere is enough for most cranial nerve nuclei; the lower face and the tongue are the exceptions",
-   "Bilateral corticobulbar loss releases the crying and laughing centers of the brainstem"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    323,
-    362
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    160
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    36
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    121,
-    123
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    125,
-    128
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "corona-radiata"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "corona-radiata"
 }

@@ -1,20 +1,16 @@
 {
- "kind": "glossary",
- "id": "g-lissencephaly",
- "term": "Lissencephaly",
- "definition": "A smooth brain with absent or shallow sulci and a thick, abnormally layered cortex from arrested neuronal migration (LIS1, DCX and other genes), presenting with severe developmental delay and epilepsy.",
- "related": [
-  "g-heterotopia",
-  "g-polymicrogyria"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 18,
-   "pages": [
-    486,
-    506
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-lissencephaly",
+  "term": "Lissencephaly",
+  "definition": "A smooth brain with absent or shallow sulci and a thick, abnormally layered cortex from arrested neuronal migration (LIS1, DCX and other genes), presenting with severe developmental delay and epilepsy.",
+  "related": [
+    "g-heterotopia",
+    "g-polymicrogyria"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lissencephaly",
+      "section": "Pathophysiology"
+    }
+  ]
 }

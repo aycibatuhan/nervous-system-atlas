@@ -1,117 +1,117 @@
 {
- "kind": "syndrome",
- "id": "syn-accessory-palsy",
- "name": "Spinal accessory nerve palsy",
- "eponyms": [],
- "category": "traumatic",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "cn-11-accessory",
-   "nucleus-ambiguus"
+  "kind": "syndrome",
+  "id": "syn-accessory-palsy",
+  "name": "Spinal accessory nerve palsy",
+  "eponyms": [],
+  "category": "traumatic",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "cn-11-accessory",
+      "nucleus-ambiguus"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "cn-11-accessory-l"
+    ]
+  },
+  "presentation": "Weeks after a lymph node biopsy in the posterior triangle of the neck, a patient complains of a dull ache in the shoulder, difficulty lifting the arm above the head and a shoulder that hangs lower than the other. The upper trapezius is wasted, the scapula sits low and rotated with lateral winging that increases on abducting the arm, and shrugging is weak; turning the head against resistance is normal because the sternocleidomastoid branch left the nerve higher up.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "trapezius",
+      "sign": "Shoulder droop, weak shrug, weak abduction above 90°, lateral scapular winging on abduction",
+      "substrate": "cn-11-accessory"
+    },
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "sternocleidomastoid (proximal lesions only)",
+      "sign": "Weak head turning to the opposite side and flexion; spared in posterior triangle lesions",
+      "substrate": "cn-11-accessory"
+    },
+    {
+      "modality": "pain",
+      "side": "ipsilateral",
+      "distribution": "shoulder and neck",
+      "sign": "Aching from traction on the unsupported shoulder girdle and stretched ligaments",
+      "substrate": "cn-11-accessory"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "cn-11-accessory-l"
-  ]
- },
- "presentation": "Weeks after a lymph node biopsy in the posterior triangle of the neck, a patient complains of a dull ache in the shoulder, difficulty lifting the arm above the head and a shoulder that hangs lower than the other. The upper trapezius is wasted, the scapula sits low and rotated with lateral winging that increases on abducting the arm, and shrugging is weak; turning the head against resistance is normal because the sternocleidomastoid branch left the nerve higher up.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "trapezius",
-   "sign": "Shoulder droop, weak shrug, weak abduction above 90°, lateral scapular winging on abduction",
-   "substrate": "cn-11-accessory"
+  "reasoning": "The spinal root of the accessory nerve arises from the upper five cervical segments, ascends through the foramen magnum, leaves the skull through the jugular foramen and descends in the neck, first supplying the sternocleidomastoid and then crossing the posterior triangle superficially, beneath only skin and platysma, to reach the trapezius. That exposed course is where surgeons find and injure it during lymph node biopsy, neck dissection or carotid surgery. The nerve is the uncrossed motor supply of the ipsilateral trapezius and sternocleidomastoid, so the deficit is on the side of the injury: without the trapezius the shoulder is not held up and the scapula cannot be rotated upward to allow full abduction, so the arm cannot be raised above the horizontal, and the scapula drifts downward and laterally with its lateral border winging when the arm is abducted, a pattern that differs from the medial winging on forward pushing of a long thoracic nerve palsy. Whether the sternocleidomastoid is spared tells the level: it is weak with lesions at the jugular foramen or upper neck, spared with the common posterior triangle lesions. Cortical control of the sternocleidomastoid is ipsilateral and of the trapezius contralateral, a curiosity that explains the head deviation of hemispheric seizures.",
+  "imagingFindings": [
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Denervation of the trapezius with a preserved sternocleidomastoid in posterior triangle lesions, or of both muscles in jugular foramen lesions; normal serratus anterior.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Jugular foramen lesion",
+      "modality": "MRI",
+      "finding": "Enhancing mass or fracture at the jugular foramen when the ninth and tenth nerves are also involved.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Nerve transection",
+      "modality": "US",
+      "finding": "Discontinuity or neuroma of the nerve in the posterior triangle after surgery.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Lymph node biopsy or neck dissection",
+    "Carotid endarterectomy, cervical surgery",
+    "Blunt trauma or stretch",
+    "Jugular foramen tumor",
+    "Radiation"
+  ],
+  "mimics": [
+    {
+      "name": "Long thoracic nerve palsy",
+      "howToDistinguish": "Medial winging on pushing against a wall; shrug and abduction above the head preserved"
+    },
+    {
+      "name": "C5–C6 radiculopathy",
+      "howToDistinguish": "Deltoid and biceps weakness with sensory loss; trapezius spared"
+    },
+    {
+      "name": "Rotator cuff tear",
+      "howToDistinguish": "Painful weak abduction without winging or trapezius wasting"
+    },
+    {
+      "name": "Facioscapulohumeral dystrophy",
+      "howToDistinguish": "Bilateral, with facial weakness"
+    }
+  ],
+  "management": [
+    "Early exploration and repair when the nerve is injured at surgery; EMG at 4–6 weeks if the deficit persists",
+    "Physiotherapy to preserve shoulder range; sling for pain",
+    "Eden–Lange tendon transfer for permanent palsy"
+  ],
+  "citations": [
+    {
+      "ref": "sp-accessory-nerve-injury",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-nerve-11",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -30,
+      "y": -30,
+      "z": -40
+    },
+    "label": "accessory nerve at the jugular foramen; the injury site is lower in the posterior triangle"
   },
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "sternocleidomastoid (proximal lesions only)",
-   "sign": "Weak head turning to the opposite side and flexion; spared in posterior triangle lesions",
-   "substrate": "cn-11-accessory"
-  },
-  {
-   "modality": "pain",
-   "side": "ipsilateral",
-   "distribution": "shoulder and neck",
-   "sign": "Aching from traction on the unsupported shoulder girdle and stretched ligaments",
-   "substrate": "cn-11-accessory"
-  }
- ],
- "reasoning": "The spinal root of the accessory nerve arises from the upper five cervical segments, ascends through the foramen magnum, leaves the skull through the jugular foramen and descends in the neck, first supplying the sternocleidomastoid and then crossing the posterior triangle superficially, beneath only skin and platysma, to reach the trapezius. That exposed course is where surgeons find and injure it during lymph node biopsy, neck dissection or carotid surgery. The nerve is the uncrossed motor supply of the ipsilateral trapezius and sternocleidomastoid, so the deficit is on the side of the injury: without the trapezius the shoulder is not held up and the scapula cannot be rotated upward to allow full abduction, so the arm cannot be raised above the horizontal, and the scapula drifts downward and laterally with its lateral border winging when the arm is abducted, a pattern that differs from the medial winging on forward pushing of a long thoracic nerve palsy. Whether the sternocleidomastoid is spared tells the level: it is weak with lesions at the jugular foramen or upper neck, spared with the common posterior triangle lesions. Cortical control of the sternocleidomastoid is ipsilateral and of the trapezius contralateral, a curiosity that explains the head deviation of hemispheric seizures.",
- "imagingFindings": [
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Denervation of the trapezius with a preserved sternocleidomastoid in posterior triangle lesions, or of both muscles in jugular foramen lesions; normal serratus anterior.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Jugular foramen lesion",
-   "modality": "MRI",
-   "finding": "Enhancing mass or fracture at the jugular foramen when the ninth and tenth nerves are also involved.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Nerve transection",
-   "modality": "US",
-   "finding": "Discontinuity or neuroma of the nerve in the posterior triangle after surgery.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Lymph node biopsy or neck dissection",
-  "Carotid endarterectomy, cervical surgery",
-  "Blunt trauma or stretch",
-  "Jugular foramen tumor",
-  "Radiation"
- ],
- "mimics": [
-  {
-   "name": "Long thoracic nerve palsy",
-   "howToDistinguish": "Medial winging on pushing against a wall; shrug and abduction above the head preserved"
-  },
-  {
-   "name": "C5–C6 radiculopathy",
-   "howToDistinguish": "Deltoid and biceps weakness with sensory loss; trapezius spared"
-  },
-  {
-   "name": "Rotator cuff tear",
-   "howToDistinguish": "Painful weak abduction without winging or trapezius wasting"
-  },
-  {
-   "name": "Facioscapulohumeral dystrophy",
-   "howToDistinguish": "Bilateral, with facial weakness"
-  }
- ],
- "management": [
-  "Early exploration and repair when the nerve is injured at surgery; EMG at 4–6 weeks if the deficit persists",
-  "Physiotherapy to preserve shoulder range; sling for pain",
-  "Eden–Lange tendon transfer for permanent palsy"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    126,
-    126
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -30,
-   "y": -30,
-   "z": -40
-  },
-  "label": "accessory nerve at the jugular foramen; the injury site is lower in the posterior triangle"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

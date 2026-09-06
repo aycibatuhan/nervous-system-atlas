@@ -1,19 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-brain-death",
- "term": "Brain death",
- "definition": "Irreversible loss of all brainstem function: deep coma of known irreversible cause without confounders, absent pupillary, corneal, oculocephalic, caloric, gag and cough reflexes, no cranial motor response and apnea on a formal test; spinal reflexes may persist.",
- "related": [
-  "g-vegetative-state"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    274
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-brain-death",
+  "term": "Brain death",
+  "definition": "Irreversible loss of all brainstem function: deep coma of known irreversible cause without confounders, absent pupillary, corneal, oculocephalic, caloric, gag and cough reflexes, no cranial motor response and apnea on a formal test; spinal reflexes may persist.",
+  "related": [
+    "g-vegetative-state"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-death",
+      "section": "Pathophysiology"
+    }
+  ]
 }

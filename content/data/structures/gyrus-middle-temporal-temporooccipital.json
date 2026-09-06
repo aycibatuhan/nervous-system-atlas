@@ -1,189 +1,161 @@
 {
- "kind": "structure",
- "id": "gyrus-middle-temporal-temporooccipital",
- "name": "Middle temporal gyrus, temporo-occipital part",
- "synonyms": [
-  "MT/V5 region",
-  "posterior MTG"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-middle-temporal-temporooccipital-l",
-  "gyrus-middle-temporal-temporooccipital-r"
- ],
- "summary": "The temporo-occipital part of the middle temporal gyrus is the posterior end of the gyrus where the temporal lobe merges with the lateral occipital lobe, behind the level of the atrium. It contains the human motion complex (area MT/V5 and its satellites) on its lateral surface and cortex that links visual form with meaning and with reading. It sits at the border of the middle and posterior cerebral artery territories, a watershed, and its damage causes akinetopsia, impaired perception of biological motion and, on the left, difficulties in reading and in retrieving words from pictures; seizures here produce elementary moving visual hallucinations.",
- "anatomy": {
-  "location": "Posterior end of the middle temporal gyrus at the temporo-occipital junction, bounded above by the angular gyrus and the superior temporal sulcus, below by the inferior temporal gyrus, and behind by the lateral occipital cortex.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Primary visual cortex (magnocellular layer 4B)",
-    "via": "direct V1-MT projection"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Lateral geniculate nucleus (koniocellular)",
-    "via": "direct geniculo-extrastriate fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-middle-temporal-temporooccipital",
+  "name": "Middle temporal gyrus, temporo-occipital part",
+  "synonyms": [
+    "MT/V5 region",
+    "posterior MTG"
   ],
-  "efferents": [
-   {
-    "to": "Posterior parietal cortex",
-    "via": "dorsal stream fibers"
-   },
-   {
-    "to": "Frontal eye field and pontine pursuit centers",
-    "via": "corticofugal fibers"
-   },
-   {
-    "to": "Anterior temporal cortex",
-    "via": "inferior longitudinal fasciculus"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-middle-temporal-temporooccipital-l",
+    "gyrus-middle-temporal-temporooccipital-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Area MT/V5 here receives direct magnocellular input from the primary visual cortex and from the pulvinar and computes the direction and speed of moving objects and the global motion of the visual scene; neighboring cortex in the superior temporal sulcus reads biological motion, gaze and gestures, and the ventral part links visual objects and written words to the semantic system of the middle temporal gyrus. Lesions produce loss of motion perception with preserved acuity and form vision, difficulty following moving conversation partners, and in the dominant hemisphere a slowing of reading. The region also guides smooth pursuit eye movements toward the ipsilateral side.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division",
-   "artery-pca"
+  "summary": "The temporo-occipital part of the middle temporal gyrus is the posterior end of the gyrus where the temporal lobe merges with the lateral occipital lobe, behind the level of the atrium. It contains the human motion complex (area MT/V5 and its satellites) on its lateral surface and cortex that links visual form with meaning and with reading. It sits at the border of the middle and posterior cerebral artery territories, a watershed, and its damage causes akinetopsia, impaired perception of biological motion and, on the left, difficulties in reading and in retrieving words from pictures; seizures here produce elementary moving visual hallucinations.",
+  "anatomy": {
+    "location": "Posterior end of the middle temporal gyrus at the temporo-occipital junction, bounded above by the angular gyrus and the superior temporal sulcus, below by the inferior temporal gyrus, and behind by the lateral occipital cortex.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Primary visual cortex (magnocellular layer 4B)",
+        "via": "direct V1-MT projection"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Lateral geniculate nucleus (koniocellular)",
+        "via": "direct geniculo-extrastriate fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Posterior parietal cortex",
+        "via": "dorsal stream fibers"
+      },
+      {
+        "to": "Frontal eye field and pontine pursuit centers",
+        "via": "corticofugal fibers"
+      },
+      {
+        "to": "Anterior temporal cortex",
+        "via": "inferior longitudinal fasciculus"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "Area MT/V5 here receives direct magnocellular input from the primary visual cortex and from the pulvinar and computes the direction and speed of moving objects and the global motion of the visual scene; neighboring cortex in the superior temporal sulcus reads biological motion, gaze and gestures, and the ventral part links visual objects and written words to the semantic system of the middle temporal gyrus. Lesions produce loss of motion perception with preserved acuity and form vision, difficulty following moving conversation partners, and in the dominant hemisphere a slowing of reading. The region also guides smooth pursuit eye movements toward the ipsilateral side.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-mca-temporal",
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-middle-temporal-temporooccipital-l"
+        },
+        "label": "temporo-occipital junction of the middle temporal gyrus"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "gyrus-middle-temporal-temporooccipital-r"
+        },
+        "label": "lateral temporo-occipital cortex behind the atrium"
+      }
+    ],
+    "normalAppearance": "The lateral cortex just in front of the occipital lobe on axial images through the atria; the ascending limb of the inferior temporal sulcus is the landmark for the motion area.",
+    "pathology": [
+      {
+        "pathology": "Posterior MCA-PCA watershed infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion at the temporo-occipital junction along the border zone, with impaired motion perception or reading and a contralateral quadrantic field defect.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior cortical atrophy",
+        "modality": "MRI",
+        "finding": "Bilateral temporo-parieto-occipital atrophy with preserved medial temporal lobes in a patient with visuospatial and reading difficulties.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Occipito-temporal seizures",
+        "modality": "EEG",
+        "finding": "Elementary moving visual hallucinations or a sense that the scene moves, with a posterior temporal EEG focus.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired motion perception (akinetopsia) when bilateral",
+        "side": "bilateral",
+        "mechanism": "Loss of the MT/V5 motion complex on both sides"
+      },
+      {
+        "deficit": "Contralateral hemifield motion and pursuit deficits",
+        "side": "contralateral",
+        "mechanism": "Unilateral loss of MT/V5 and its projection to the pursuit system"
+      },
+      {
+        "deficit": "Slowed reading and picture naming (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of visual word and object forms from the semantic system"
+      }
+    ],
+    "examination": [
+      "Ask the patient to follow a slowly moving target and to report moving objects in each hemifield",
+      "Timed reading of a paragraph and naming of pictures",
+      "Visual fields, including quadrants, by confrontation"
+    ],
+    "syndromes": [
+      "syn-watershed-infarct",
+      "syn-balint"
+    ],
+    "pearls": [
+      "Akinetopsia is rare but unmistakable: pouring tea looks like a frozen arc",
+      "The temporo-occipital junction is a watershed; hypotension picks it out in both hemispheres",
+      "Smooth pursuit toward one side depends on the temporo-occipital cortex of that side"
+    ]
+  },
+  "pitfalls": [
+    "Motion-selective deficits are not tested by standard perimetry; ask about moving objects and cars"
   ],
-  "territories": [
-   "territory-mca-temporal",
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-middle-temporal-temporooccipital-l"
+  "citations": [
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
     },
-    "label": "temporo-occipital junction of the middle temporal gyrus"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "gyrus-middle-temporal-temporooccipital-r"
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
     },
-    "label": "lateral temporo-occipital cortex behind the atrium"
-   }
+    {
+      "ref": "sp-occipital-lobe",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The lateral cortex just in front of the occipital lobe on axial images through the atria; the ascending limb of the inferior temporal sulcus is the landmark for the motion area.",
-  "pathology": [
-   {
-    "pathology": "Posterior MCA-PCA watershed infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion at the temporo-occipital junction along the border zone, with impaired motion perception or reading and a contralateral quadrantic field defect.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior cortical atrophy",
-    "modality": "MRI",
-    "finding": "Bilateral temporo-parieto-occipital atrophy with preserved medial temporal lobes in a patient with visuospatial and reading difficulties.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Occipito-temporal seizures",
-    "modality": "EEG",
-    "finding": "Elementary moving visual hallucinations or a sense that the scene moves, with a posterior temporal EEG focus.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired motion perception (akinetopsia) when bilateral",
-    "side": "bilateral",
-    "mechanism": "Loss of the MT/V5 motion complex on both sides"
-   },
-   {
-    "deficit": "Contralateral hemifield motion and pursuit deficits",
-    "side": "contralateral",
-    "mechanism": "Unilateral loss of MT/V5 and its projection to the pursuit system"
-   },
-   {
-    "deficit": "Slowed reading and picture naming (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of visual word and object forms from the semantic system"
-   }
+  "tags": [
+    "MT/V5",
+    "motion",
+    "watershed"
   ],
-  "examination": [
-   "Ask the patient to follow a slowly moving target and to report moving objects in each hemifield",
-   "Timed reading of a paragraph and naming of pictures",
-   "Visual fields, including quadrants, by confrontation"
-  ],
-  "syndromes": [
-   "syn-watershed-infarct",
-   "syn-balint"
-  ],
-  "pearls": [
-   "Akinetopsia is rare but unmistakable: pouring tea looks like a frozen arc",
-   "The temporo-occipital junction is a watershed; hypotension picks it out in both hemispheres",
-   "Smooth pursuit toward one side depends on the temporo-occipital cortex of that side"
-  ]
- },
- "pitfalls": [
-  "Motion-selective deficits are not tested by standard perimetry; ask about moving objects and cars"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "MT/V5",
-  "motion",
-  "watershed"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

@@ -1,19 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-chromatolysis",
- "term": "Chromatolysis",
- "definition": "The reaction of a neuron whose axon has been cut: swelling of the cell body, dispersal of Nissl substance and displacement of the nucleus to the periphery as the cell switches from transmission to regeneration.",
- "related": [
-  "g-wallerian-degeneration"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    58,
-    70
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-chromatolysis",
+  "term": "Chromatolysis",
+  "definition": "The reaction of a neuron whose axon has been cut: swelling of the cell body, dispersal of Nissl substance and displacement of the nucleus to the periphery as the cell switches from transmission to regeneration.",
+  "related": [
+    "g-wallerian-degeneration"
+  ],
+  "citations": [
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-neurons",
+      "section": "Structure and Function"
+    }
+  ]
 }

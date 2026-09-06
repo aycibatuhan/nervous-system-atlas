@@ -1,181 +1,153 @@
 {
- "kind": "structure",
- "id": "artery-aca",
- "name": "Anterior cerebral artery",
- "synonyms": [
-  "ACA"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "The smaller terminal branch of the internal carotid. It runs medially above the optic nerve into the interhemispheric fissure, where the anterior communicating artery links it to its partner, then arches back over the corpus callosum. Its cortical branches supply the medial surface of the frontal and parietal lobes as far as the parieto-occipital sulcus plus a narrow strip of the adjoining convexity, which includes the leg and foot areas of the motor and sensory cortices. Central branches, including the recurrent artery of Heubner, supply the head of the caudate and the anterior limb of the internal capsule.",
- "anatomy": {
-  "location": "From the carotid terminus at the medial end of the lateral sulcus the A1 (precommunicating) segment passes over the optic nerve or chiasm to the anterior communicating artery; the A2 segment ascends in front of the lamina terminalis and genu of the corpus callosum, and the pericallosal artery (A3 onward) runs back in the callosal sulcus giving off callosomarginal and frontopolar branches.",
-  "subdivisions": [
-   {
-    "name": "A1 (precommunicating)",
-    "note": "gives medial lenticulostriate perforators and the recurrent artery of Heubner near the AComm"
-   },
-   {
-    "name": "A2 (postcommunicating)",
-    "note": "ascends around the genu; orbitofrontal and frontopolar branches"
-   },
-   {
-    "name": "Pericallosal and callosomarginal arteries",
-    "note": "medial frontal and paracentral lobule, precuneus"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supplies the paracentral lobule (motor and sensory cortex of the contralateral leg and foot), the medial prefrontal cortex and supplementary motor area, the anterior cingulate, the anterior four-fifths of the corpus callosum, and via Heubner's artery the head of the caudate and anterior limb of the internal capsule.",
- "bloodSupply": {
-  "arteries": [
-   "artery-internal-carotid"
+  "kind": "structure",
+  "id": "artery-aca",
+  "name": "Anterior cerebral artery",
+  "synonyms": [
+    "ACA"
   ],
-  "territories": [
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 2,
-     "y": 20,
-     "z": 20
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The smaller terminal branch of the internal carotid. It runs medially above the optic nerve into the interhemispheric fissure, where the anterior communicating artery links it to its partner, then arches back over the corpus callosum. Its cortical branches supply the medial surface of the frontal and parietal lobes as far as the parieto-occipital sulcus plus a narrow strip of the adjoining convexity, which includes the leg and foot areas of the motor and sensory cortices. Central branches, including the recurrent artery of Heubner, supply the head of the caudate and the anterior limb of the internal capsule.",
+  "anatomy": {
+    "location": "From the carotid terminus at the medial end of the lateral sulcus the A1 (precommunicating) segment passes over the optic nerve or chiasm to the anterior communicating artery; the A2 segment ascends in front of the lamina terminalis and genu of the corpus callosum, and the pericallosal artery (A3 onward) runs back in the callosal sulcus giving off callosomarginal and frontopolar branches.",
+    "subdivisions": [
+      {
+        "name": "A1 (precommunicating)",
+        "note": "gives medial lenticulostriate perforators and the recurrent artery of Heubner near the AComm"
+      },
+      {
+        "name": "A2 (postcommunicating)",
+        "note": "ascends around the genu; orbitofrontal and frontopolar branches"
+      },
+      {
+        "name": "Pericallosal and callosomarginal arteries",
+        "note": "medial frontal and paracentral lobule, precuneus"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supplies the paracentral lobule (motor and sensory cortex of the contralateral leg and foot), the medial prefrontal cortex and supplementary motor area, the anterior cingulate, the anterior four-fifths of the corpus callosum, and via Heubner's artery the head of the caudate and anterior limb of the internal capsule.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-internal-carotid"
+    ],
+    "territories": [
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 2,
+          "y": 20,
+          "z": 20
+        },
+        "label": "pericallosal artery arching over the corpus callosum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": 30,
+          "z": 10
+        },
+        "label": "paired A2 segments in the interhemispheric fissure"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": 30,
+          "z": 50
+        },
+        "label": "medial frontal cortex and paracentral lobule, the classic infarct site"
+      }
+    ],
+    "normalAppearance": "On sagittal T1 the pericallosal artery is a curving flow void just above the corpus callosum; on axial slices the paired A2 segments sit in the midline in front of the genu. CTA and MRA show the A1 segments converging on the anterior communicating complex.",
+    "pathology": [
+      {
+        "pathology": "ACA territory infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion along the medial frontal and parietal cortex from the frontal pole to the paracentral lobule, sometimes involving the caudate head and anterior limb of the capsule when the proximal A1/Heubner is included; bilateral when both A2s arise from one A1 (azygos variant).",
+        "sequence": "DWI",
+        "timing": "DWI bright within an hour; FLAIR follows by roughly 6 hours"
+      },
+      {
+        "pathology": "Anterior communicating artery aneurysm",
+        "modality": "CTA",
+        "finding": "Saccular aneurysm at the A1–A2 junction; rupture gives blood in the interhemispheric fissure and frontal horns with a gyrus rectus hematoma.",
+        "sequence": "CT contrast"
+      }
+    ],
+    "sequenceOfChoice": "DWI for infarction; CTA or DSA for aneurysms of the anterior communicating complex"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weakness and sensory loss of the leg and foot, arm relatively spared",
+        "side": "contralateral",
+        "mechanism": "Paracentral lobule (leg area of the motor and sensory homunculi) on the medial surface"
+      },
+      {
+        "deficit": "Abulia, apathy, urinary incontinence",
+        "side": "bilateral",
+        "mechanism": "Medial prefrontal and anterior cingulate cortex, especially with bilateral infarcts or a single A1 supplying both A2s"
+      },
+      {
+        "deficit": "Grasp reflex and gait apraxia",
+        "side": "contralateral",
+        "mechanism": "Supplementary motor area and medial frontal cortex"
+      },
+      {
+        "deficit": "Transcortical motor aphasia (dominant side)",
+        "side": "contralateral",
+        "mechanism": "Supplementary motor area and its connections with Broca's area"
+      }
+    ],
+    "examination": [
+      "Test hip flexion and foot dorsiflexion against gravity; compare with shoulder abduction and finger extension",
+      "Check sensation on the foot and shin",
+      "Ask about bladder control and observe initiative and spontaneous speech",
+      "Elicit a grasp reflex by stroking the palm"
+    ],
+    "syndromes": [
+      "syn-aca-infarct"
+    ],
+    "pearls": [
+      "Leg-predominant hemiparesis points to the ACA, arm and face-predominant to the MCA",
+      "Bilateral leg weakness with incontinence after subarachnoid hemorrhage suggests bilateral ACA vasospasm from an AComm aneurysm",
+      "Because Heubner's artery arises from the proximal ACA, a proximal occlusion can add a faciobrachial component via the anterior limb of the internal capsule"
+    ]
+  },
+  "pitfalls": [
+    "Isolated leg weakness is also seen with a parasagittal meningioma and with a spinal cord lesion; sensory level and reflexes help",
+    "ACA infarcts are much rarer than MCA infarcts and embolic sources should still be sought"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-arteries",
+      "section": "Structure and Function"
     },
-    "label": "pericallosal artery arching over the corpus callosum"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": 30,
-     "z": 10
+    {
+      "ref": "sp-circle-of-willis",
+      "section": "Structure and Function"
     },
-    "label": "paired A2 segments in the interhemispheric fissure"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": 30,
-     "z": 50
-    },
-    "label": "medial frontal cortex and paracentral lobule, the classic infarct site"
-   }
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "On sagittal T1 the pericallosal artery is a curving flow void just above the corpus callosum; on axial slices the paired A2 segments sit in the midline in front of the genu. CTA and MRA show the A1 segments converging on the anterior communicating complex.",
-  "pathology": [
-   {
-    "pathology": "ACA territory infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion along the medial frontal and parietal cortex from the frontal pole to the paracentral lobule, sometimes involving the caudate head and anterior limb of the capsule when the proximal A1/Heubner is included; bilateral when both A2s arise from one A1 (azygos variant).",
-    "sequence": "DWI",
-    "timing": "DWI bright within an hour; FLAIR follows by roughly 6 hours"
-   },
-   {
-    "pathology": "Anterior communicating artery aneurysm",
-    "modality": "CTA",
-    "finding": "Saccular aneurysm at the A1–A2 junction; rupture gives blood in the interhemispheric fissure and frontal horns with a gyrus rectus hematoma.",
-    "sequence": "CT contrast"
-   }
+  "tags": [
+    "vascular",
+    "anterior-circulation"
   ],
-  "sequenceOfChoice": "DWI for infarction; CTA or DSA for aneurysms of the anterior communicating complex"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weakness and sensory loss of the leg and foot, arm relatively spared",
-    "side": "contralateral",
-    "mechanism": "Paracentral lobule (leg area of the motor and sensory homunculi) on the medial surface"
-   },
-   {
-    "deficit": "Abulia, apathy, urinary incontinence",
-    "side": "bilateral",
-    "mechanism": "Medial prefrontal and anterior cingulate cortex, especially with bilateral infarcts or a single A1 supplying both A2s"
-   },
-   {
-    "deficit": "Grasp reflex and gait apraxia",
-    "side": "contralateral",
-    "mechanism": "Supplementary motor area and medial frontal cortex"
-   },
-   {
-    "deficit": "Transcortical motor aphasia (dominant side)",
-    "side": "contralateral",
-    "mechanism": "Supplementary motor area and its connections with Broca's area"
-   }
-  ],
-  "examination": [
-   "Test hip flexion and foot dorsiflexion against gravity; compare with shoulder abduction and finger extension",
-   "Check sensation on the foot and shin",
-   "Ask about bladder control and observe initiative and spontaneous speech",
-   "Elicit a grasp reflex by stroking the palm"
-  ],
-  "syndromes": [
-   "syn-aca-infarct"
-  ],
-  "pearls": [
-   "Leg-predominant hemiparesis points to the ACA, arm and face-predominant to the MCA",
-   "Bilateral leg weakness with incontinence after subarachnoid hemorrhage suggests bilateral ACA vasospasm from an AComm aneurysm",
-   "Because Heubner's artery arises from the proximal ACA, a proximal occlusion can add a faciobrachial component via the anterior limb of the internal capsule"
-  ]
- },
- "pitfalls": [
-  "Isolated leg weakness is also seen with a parasagittal meningioma and with a spinal cord lesion; sensory level and reflexes help",
-  "ACA infarcts are much rarer than MCA infarcts and embolic sources should still be sought"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    464,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    472,
-    476
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    39,
-    40
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    57,
-    59
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    184
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "anterior-circulation"
- ],
- "status": "draft",
- "latin": "Arteria cerebri anterior",
- "subsystem": "anterior-circulation"
+  "status": "draft",
+  "latin": "Arteria cerebri anterior",
+  "subsystem": "anterior-circulation"
 }

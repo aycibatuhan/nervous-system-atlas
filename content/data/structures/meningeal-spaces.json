@@ -1,199 +1,167 @@
 {
- "kind": "structure",
- "id": "meningeal-spaces",
- "name": "Epidural, subdural and subarachnoid spaces",
- "synonyms": [
-  "extra-axial spaces"
- ],
- "system": "meninges",
- "meshIds": [
-  "brain-envelope"
- ],
- "summary": "Three spaces, one real and two potential, separate the meninges and give extra-axial hemorrhages their shapes. The cranial epidural space is potential, opened by arterial bleeding from the meningeal arteries into a lens-shaped hematoma limited by the sutures; the spinal epidural space is real and fat-filled, the site of epidural anesthesia, abscess and hematoma. The subdural space is potential, opened by tearing of bridging veins into a crescent that crosses sutures but not the midline. The subarachnoid space is real, filled with CSF, contains the arteries and cranial nerves, and is where aneurysmal blood and meningitis collect.",
- "anatomy": {
-  "location": "Epidural: between the skull (or vertebral canal) and dura. Subdural: between dura and arachnoid, at the level of the dural border cells. Subarachnoid: between arachnoid and pia, expanded into cisterns at the base and in the lumbar theca.",
-  "subdivisions": [
-   {
-    "name": "Cranial epidural space",
-    "note": "middle meningeal artery; lens-shaped hematoma stopped by sutures"
-   },
-   {
-    "name": "Spinal epidural space",
-    "note": "fat and the internal vertebral venous plexus; epidural anesthesia, abscess, hematoma, metastasis"
-   },
-   {
-    "name": "Subdural space",
-    "note": "bridging veins; crescentic hematoma crossing sutures, common in the elderly and anticoagulated"
-   },
-   {
-    "name": "Subarachnoid space",
-    "note": "CSF, arteries of the circle of Willis, cranial nerves; aneurysmal hemorrhage, meningitis, lumbar puncture site"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "The subarachnoid space cushions the brain and circulates CSF; the other two are anatomical planes whose opening defines the extra-axial hemorrhages and infections.",
- "bloodSupply": {
-  "arteries": [
-   "middle meningeal artery",
-   "circle-of-willis",
-   "bridging veins"
+  "kind": "structure",
+  "id": "meningeal-spaces",
+  "name": "Epidural, subdural and subarachnoid spaces",
+  "synonyms": [
+    "extra-axial spaces"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 40,
-     "y": -10,
-     "z": 20
+  "system": "meninges",
+  "meshIds": [
+    "brain-envelope"
+  ],
+  "summary": "Three spaces, one real and two potential, separate the meninges and give extra-axial hemorrhages their shapes. The cranial epidural space is potential, opened by arterial bleeding from the meningeal arteries into a lens-shaped hematoma limited by the sutures; the spinal epidural space is real and fat-filled, the site of epidural anesthesia, abscess and hematoma. The subdural space is potential, opened by tearing of bridging veins into a crescent that crosses sutures but not the midline. The subarachnoid space is real, filled with CSF, contains the arteries and cranial nerves, and is where aneurysmal blood and meningitis collect.",
+  "anatomy": {
+    "location": "Epidural: between the skull (or vertebral canal) and dura. Subdural: between dura and arachnoid, at the level of the dural border cells. Subarachnoid: between arachnoid and pia, expanded into cisterns at the base and in the lumbar theca.",
+    "subdivisions": [
+      {
+        "name": "Cranial epidural space",
+        "note": "middle meningeal artery; lens-shaped hematoma stopped by sutures"
+      },
+      {
+        "name": "Spinal epidural space",
+        "note": "fat and the internal vertebral venous plexus; epidural anesthesia, abscess, hematoma, metastasis"
+      },
+      {
+        "name": "Subdural space",
+        "note": "bridging veins; crescentic hematoma crossing sutures, common in the elderly and anticoagulated"
+      },
+      {
+        "name": "Subarachnoid space",
+        "note": "CSF, arteries of the circle of Willis, cranial nerves; aneurysmal hemorrhage, meningitis, lumbar puncture site"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "The subarachnoid space cushions the brain and circulates CSF; the other two are anatomical planes whose opening defines the extra-axial hemorrhages and infections.",
+  "bloodSupply": {
+    "arteries": [
+      "middle meningeal artery",
+      "circle-of-willis",
+      "bridging veins"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 40,
+          "y": -10,
+          "z": 20
+        },
+        "label": "convexity: the planes between skull, dura, arachnoid and brain"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": 0,
+          "z": -18
+        },
+        "label": "subarachnoid basal cisterns"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 50
+        },
+        "label": "subarachnoid space over the convexity"
+      }
+    ],
+    "normalAppearance": "Extra-axial collections are read by shape and density: biconvex epidural (arterial, acute, dense, respects sutures), crescentic subdural (venous, density fading over weeks, crosses sutures), and sulcal or cisternal subarachnoid blood (follows the CSF spaces). Spinal epidural lesions displace the thecal sac.",
+    "pathology": [
+      {
+        "pathology": "Epidural hematoma",
+        "modality": "CT",
+        "finding": "Biconvex dense collection with a fracture, usually temporal.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Subdural hematoma",
+        "modality": "CT",
+        "finding": "Crescentic collection, acute dense, chronic hypodense, with membranes and rebleeding.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Subarachnoid hemorrhage",
+        "modality": "CT",
+        "finding": "Blood in the cisterns and sulcs; CTA for the aneurysm.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Spinal epidural abscess or hematoma",
+        "modality": "MRI",
+        "finding": "Extradural collection compressing the cord with rim enhancement (abscess) or blood signal (hematoma).",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Subdural empyema",
+        "modality": "MRI",
+        "finding": "Restricted-diffusion extra-axial collection with enhancing rim, usually after sinusitis.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "Non-contrast CT first; MRI with contrast and DWI for infection and spinal lesions"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Lucid interval then deterioration (epidural)",
+        "side": "contralateral",
+        "mechanism": "Arterial expansion with delayed mass effect"
+      },
+      {
+        "deficit": "Fluctuating confusion, headache and hemiparesis in the elderly (chronic subdural)",
+        "side": "contralateral",
+        "mechanism": "Slow venous accumulation"
+      },
+      {
+        "deficit": "Thunderclap headache with meningism (subarachnoid)",
+        "side": "n/a",
+        "mechanism": "Arterial blood irritating the meninges"
+      },
+      {
+        "deficit": "Back pain, fever and rapidly progressive paraparesis (spinal epidural abscess)",
+        "side": "bilateral",
+        "mechanism": "Cord compression"
+      }
+    ],
+    "examination": [
+      "Level of consciousness, pupils, lateralizing signs",
+      "Neck stiffness",
+      "Spinal tenderness and a sensory level with fever",
+      "Anticoagulation and fall history"
+    ],
+    "syndromes": [
+      "syn-epidural-hematoma",
+      "syn-subdural-hematoma",
+      "syn-subarachnoid-hemorrhage"
+    ],
+    "pearls": [
+      "Do not wait for a fever to image the spine in a patient with back pain and new leg weakness: epidural abscess and hematoma are emergencies",
+      "Chronic subdural hematoma is the great imitator in the elderly: image any new confusion after a fall"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-subarachnoid-space",
+      "section": "Structure and Function"
     },
-    "label": "convexity: the planes between skull, dura, arachnoid and brain"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": 0,
-     "z": -18
-    },
-    "label": "subarachnoid basal cisterns"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 50
-    },
-    "label": "subarachnoid space over the convexity"
-   }
+    {
+      "ref": "sp-cranial-meninges",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Extra-axial collections are read by shape and density: biconvex epidural (arterial, acute, dense, respects sutures), crescentic subdural (venous, density fading over weeks, crosses sutures), and sulcal or cisternal subarachnoid blood (follows the CSF spaces). Spinal epidural lesions displace the thecal sac.",
-  "pathology": [
-   {
-    "pathology": "Epidural hematoma",
-    "modality": "CT",
-    "finding": "Biconvex dense collection with a fracture, usually temporal.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Subdural hematoma",
-    "modality": "CT",
-    "finding": "Crescentic collection, acute dense, chronic hypodense, with membranes and rebleeding.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Subarachnoid hemorrhage",
-    "modality": "CT",
-    "finding": "Blood in the cisterns and sulcs; CTA for the aneurysm.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Spinal epidural abscess or hematoma",
-    "modality": "MRI",
-    "finding": "Extradural collection compressing the cord with rim enhancement (abscess) or blood signal (hematoma).",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Subdural empyema",
-    "modality": "MRI",
-    "finding": "Restricted-diffusion extra-axial collection with enhancing rim, usually after sinusitis.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "meninges"
   ],
-  "sequenceOfChoice": "Non-contrast CT first; MRI with contrast and DWI for infection and spinal lesions"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Lucid interval then deterioration (epidural)",
-    "side": "contralateral",
-    "mechanism": "Arterial expansion with delayed mass effect"
-   },
-   {
-    "deficit": "Fluctuating confusion, headache and hemiparesis in the elderly (chronic subdural)",
-    "side": "contralateral",
-    "mechanism": "Slow venous accumulation"
-   },
-   {
-    "deficit": "Thunderclap headache with meningism (subarachnoid)",
-    "side": "n/a",
-    "mechanism": "Arterial blood irritating the meninges"
-   },
-   {
-    "deficit": "Back pain, fever and rapidly progressive paraparesis (spinal epidural abscess)",
-    "side": "bilateral",
-    "mechanism": "Cord compression"
-   }
-  ],
-  "examination": [
-   "Level of consciousness, pupils, lateralizing signs",
-   "Neck stiffness",
-   "Spinal tenderness and a sensory level with fever",
-   "Anticoagulation and fall history"
-  ],
-  "syndromes": [
-   "syn-epidural-hematoma",
-   "syn-subdural-hematoma",
-   "syn-subarachnoid-hemorrhage"
-  ],
-  "pearls": [
-   "Do not wait for a fever to image the spine in a patient with back pain and new leg weakness: epidural abscess and hematoma are emergencies",
-   "Chronic subdural hematoma is the great imitator in the elderly: image any new confusion after a fall"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    418,
-    425
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    428,
-    433
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    26,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    196,
-    200
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    218,
-    219
-   ]
-  }
- ],
- "tags": [
-  "meninges"
- ],
- "status": "draft"
+  "status": "draft"
 }

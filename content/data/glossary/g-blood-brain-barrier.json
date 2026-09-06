@@ -1,20 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-blood-brain-barrier",
- "term": "Blood–brain barrier",
- "definition": "The tight-junctioned capillary endothelium with its astrocyte end-feet and pericytes that excludes proteins, most drugs and hydrophilic molecules from the brain; it is absent in the circumventricular organs and breaks down in tumor, infection, inflammation and infarction, which is what contrast enhancement shows.",
- "related": [
-  "g-circumventricular-organs",
-  "g-vasogenic-edema"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    452,
-    458
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-blood-brain-barrier",
+  "term": "Blood–brain barrier",
+  "definition": "The tight-junctioned capillary endothelium with its astrocyte end-feet and pericytes that excludes proteins, most drugs and hydrophilic molecules from the brain; it is absent in the circumventricular organs and breaks down in tumor, infection, inflammation and infarction, which is what contrast enhancement shows.",
+  "related": [
+    "g-circumventricular-organs",
+    "g-vasogenic-edema"
+  ],
+  "citations": [
+    {
+      "ref": "sp-blood-brain-barrier",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-blood-brain-barrier-2",
+      "section": "Pathophysiology"
+    }
+  ]
 }

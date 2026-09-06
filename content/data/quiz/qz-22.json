@@ -1,55 +1,59 @@
 {
- "kind": "quiz",
- "id": "qz-22",
- "type": "localize",
- "vignette": "A 40-year-old man has burned his fingers several times without feeling it. Pin-prick and temperature sensation are absent over both shoulders, arms and the upper chest, but he feels a tuning fork and joint movement normally there. The small muscles of his hands are wasted and the arm reflexes are absent.",
- "stem": "Where is the lesion?",
- "options": [
-  {
-   "key": "A",
-   "text": "Both median nerves"
-  },
-  {
-   "key": "B",
-   "text": "Posterior columns of the cervical cord"
-  },
-  {
-   "key": "C",
-   "text": "Central cervical cord (syrinx)"
-  },
-  {
-   "key": "D",
-   "text": "Brachial plexus bilaterally"
-  },
-  {
-   "key": "E",
-   "text": "Lateral medulla"
-  }
- ],
- "answer": "C",
- "explanation": "Bilateral cape-like dissociated loss of pain and temperature with preserved proprioception, plus lower motor neuron signs in the arms, is a central cervical cord lesion destroying the crossing spinothalamic fibers and the anterior horns: syringomyelia.",
- "targets": {
-  "structureIds": [],
-  "syndromeIds": [
-   "syn-central-cord-syringomyelia"
+  "kind": "quiz",
+  "id": "qz-22",
+  "type": "localize",
+  "vignette": "A 40-year-old man has burned his fingers several times without feeling it. Pin-prick and temperature sensation are absent over both shoulders, arms and the upper chest, but he feels a tuning fork and joint movement normally there. The small muscles of his hands are wasted and the arm reflexes are absent.",
+  "stem": "Where is the lesion?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Both median nerves"
+    },
+    {
+      "key": "B",
+      "text": "Posterior columns of the cervical cord"
+    },
+    {
+      "key": "C",
+      "text": "Central cervical cord (syrinx)"
+    },
+    {
+      "key": "D",
+      "text": "Brachial plexus bilaterally"
+    },
+    {
+      "key": "E",
+      "text": "Lateral medulla"
+    }
   ],
-  "pathwayIds": [
-   "pathway-lateral-spinothalamic"
-  ]
- },
- "highlightOnReveal": [
-  "spinal-cord"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    169,
-    171
-   ]
-  }
- ],
- "original": true
+  "answer": "C",
+  "explanation": "Bilateral cape-like dissociated loss of pain and temperature with preserved proprioception, plus lower motor neuron signs in the arms, is a central cervical cord lesion destroying the crossing spinothalamic fibers and the anterior horns: syringomyelia.",
+  "targets": {
+    "structureIds": [],
+    "syndromeIds": [
+      "syn-central-cord-syringomyelia"
+    ],
+    "pathwayIds": [
+      "pathway-lateral-spinothalamic"
+    ]
+  },
+  "highlightOnReveal": [
+    "spinal-cord"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-central-cord-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-syringomyelia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinothalamic-tract",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

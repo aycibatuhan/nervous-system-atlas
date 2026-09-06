@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-02",
- "type": "localize",
- "vignette": "A 55-year-old woman with sudden vertigo and vomiting has hoarseness and cannot swallow her saliva. Her right eyelid droops slightly and the right pupil is smaller. Pin-prick is dull on the right side of her face and on the left arm and leg. Strength is normal everywhere.",
- "stem": "Which single lesion explains all the findings?",
- "options": [
-  {
-   "key": "A",
-   "text": "Right lateral medulla"
-  },
-  {
-   "key": "B",
-   "text": "Left lateral medulla"
-  },
-  {
-   "key": "C",
-   "text": "Right medial medulla"
-  },
-  {
-   "key": "D",
-   "text": "Right lateral pons"
-  },
-  {
-   "key": "E",
-   "text": "Left thalamus"
-  }
- ],
- "answer": "A",
- "explanation": "Ipsilateral facial pain loss (spinal trigeminal tract), contralateral body pain loss (crossed spinothalamic tract), ipsilateral Horner syndrome and ipsilateral bulbar palsy with preserved strength is the lateral medullary syndrome on the side of the facial signs. The lateral pons would add facial weakness and deafness.",
- "targets": {
-  "structureIds": [],
-  "syndromeIds": [
-   "syn-wallenberg-lateral-medullary"
+  "kind": "quiz",
+  "id": "qz-02",
+  "type": "localize",
+  "vignette": "A 55-year-old woman with sudden vertigo and vomiting has hoarseness and cannot swallow her saliva. Her right eyelid droops slightly and the right pupil is smaller. Pin-prick is dull on the right side of her face and on the left arm and leg. Strength is normal everywhere.",
+  "stem": "Which single lesion explains all the findings?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Right lateral medulla"
+    },
+    {
+      "key": "B",
+      "text": "Left lateral medulla"
+    },
+    {
+      "key": "C",
+      "text": "Right medial medulla"
+    },
+    {
+      "key": "D",
+      "text": "Right lateral pons"
+    },
+    {
+      "key": "E",
+      "text": "Left thalamus"
+    }
   ],
-  "pathwayIds": [
-   "pathway-lateral-spinothalamic",
-   "pathway-trigeminothalamic"
-  ]
- },
- "highlightOnReveal": [
-  "brainstem",
-  "artery-pica-r"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    78
-   ]
-  }
- ],
- "original": true
+  "answer": "A",
+  "explanation": "Ipsilateral facial pain loss (spinal trigeminal tract), contralateral body pain loss (crossed spinothalamic tract), ipsilateral Horner syndrome and ipsilateral bulbar palsy with preserved strength is the lateral medullary syndrome on the side of the facial signs. The lateral pons would add facial weakness and deafness.",
+  "targets": {
+    "structureIds": [],
+    "syndromeIds": [
+      "syn-wallenberg-lateral-medullary"
+    ],
+    "pathwayIds": [
+      "pathway-lateral-spinothalamic",
+      "pathway-trigeminothalamic"
+    ]
+  },
+  "highlightOnReveal": [
+    "brainstem",
+    "artery-pica-r"
+  ],
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-lateral-medullary-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-pica",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-medial-medullary-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinothalamic-tract",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

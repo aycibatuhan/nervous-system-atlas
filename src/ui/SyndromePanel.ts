@@ -1,5 +1,7 @@
 import type { App } from '../app.ts';
 import { h, clear } from './dom.ts';
+import { citeNode } from './cite.ts';
+import type { Citation } from '../types/content.ts';
 import { setSyndromeStep, meshesFor } from '../state/syndrome.ts';
 import { selectStructure } from '../state/actions.ts';
 
@@ -12,10 +14,7 @@ export class SyndromePanel {
     app.store.subscribe((s) => s.syndrome?.step ?? -1, (step) => { for (const tr of Array.from(this.container.querySelectorAll('tr[data-step]'))) tr.classList.toggle('active', Number((tr as HTMLElement).dataset['step']) === step); });
   }
   private html(s: unknown): HTMLElement { const d = h('div', { class: 'prose' }); d.innerHTML = String(s ?? ''); for (const a of Array.from(d.querySelectorAll('a[href^="#/"]'))) a.addEventListener('click', (e) => { e.preventDefault(); location.hash = (a as HTMLAnchorElement).getAttribute('href')!; }); return d; }
-  private cite(c: { book: string; chapter: number; pages: [number, number]; section?: string }): string {
-    const src = this.app.content?.sources[c.book]; const p = c.pages[0] === c.pages[1] ? `p. ${c.pages[0]}` : `pp. ${c.pages[0]}–${c.pages[1]}`;
-    return `${src?.cite ?? c.book} ch. ${c.chapter}, ${p}`;
-  }
+  private cite(c: Citation): HTMLElement { return citeNode(this.app.content?.bibliography, c); }
   private link(id: string): HTMLElement {
     const c = this.app.content; const st = (c?.structures[id] ?? c?.pathways[id] ?? c?.syndromes[id]) as Rec | undefined;
     const name = (st?.['name'] as string) ?? this.app.registry.byId.get(id)?.name ?? id;
@@ -48,7 +47,7 @@ export class SyndromePanel {
       h('h3', {}, 'Mimics'), h('ul', {}, ...((syn['mimics'] as Rec[]) ?? []).map((m) => h('li', {}, h('b', {}, String(m['name'])), ` — ${m['howToDistinguish']}`))),
       ((syn['examSequence'] as string[]) ?? []).length ? h('div', {}, h('h3', {}, 'Bedside sequence'), h('ol', {}, ...(syn['examSequence'] as string[]).map((x) => h('li', {}, x)))) : null,
       h('h3', {}, 'Management pearls'), h('ul', {}, ...((syn['management'] as string[]) ?? []).map((x) => h('li', {}, x))),
-      h('h3', {}, 'Sources'), h('ul', {}, ...((syn['citations'] as Rec[]) ?? []).map((c) => h('li', {}, this.cite(c as { book: string; chapter: number; pages: [number, number] })))),
+      h('h3', {}, 'Sources'), h('ul', {}, ...((syn['citations'] as Rec[]) ?? []).map((c) => h('li', {}, this.cite(c as unknown as Citation)))),
     ));
   }
 }

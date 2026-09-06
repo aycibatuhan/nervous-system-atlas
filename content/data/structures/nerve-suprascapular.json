@@ -1,109 +1,105 @@
 {
- "kind": "structure",
- "id": "nerve-suprascapular",
- "name": "Suprascapular nerve",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "A branch of the upper trunk (C5–C6) that runs back through the suprascapular notch under the transverse scapular ligament to supply supraspinatus, then around the spinoglenoid notch to supply infraspinatus, with sensory fibers to the shoulder joint but no cutaneous branch. It is compressed at either notch (ganglion cysts, repetitive overhead activity in athletes) and injured in upper trunk lesions and neuralgic amyotrophy, producing a painless or aching shoulder with weak abduction initiation and external rotation and visible wasting of the spinati.",
- "anatomy": {
-  "location": "From the upper trunk in the posterior triangle, laterally beneath the trapezius to the suprascapular notch, into the supraspinous fossa, then around the lateral border of the scapular spine (spinoglenoid notch) into the infraspinous fossa.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Motor supply to supraspinatus (initiation of abduction) and infraspinatus (external rotation); proprioceptive supply to the glenohumeral and acromioclavicular joints.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "cervical cord; fibers from C5–C6"
-   }
-  ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Shoulder MRI shows a paralabral cyst at the spinoglenoid notch compressing the nerve and denervation edema or fatty atrophy of the spinati.",
-  "pathology": [
-   {
-    "pathology": "Suprascapular nerve entrapment",
-    "modality": "MRI",
-    "finding": "Ganglion cyst at the suprascapular or spinoglenoid notch with STIR-bright, later atrophic, supraspinatus and/or infraspinatus.",
-    "sequence": "STIR"
-   }
-  ],
-  "sequenceOfChoice": "Shoulder MRI; EMG of supraspinatus and infraspinatus"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weak initiation of abduction and weak external rotation with wasting of the spinati",
-    "side": "ipsilateral",
-    "mechanism": "Suprascapular notch lesion (both muscles)"
-   },
-   {
-    "deficit": "Isolated infraspinatus wasting and weak external rotation",
-    "side": "ipsilateral",
-    "mechanism": "Spinoglenoid notch lesion (infraspinatus only)"
-   },
-   {
-    "deficit": "Deep posterior shoulder pain without cutaneous loss",
-    "side": "ipsilateral",
-    "mechanism": "Articular sensory fibers"
-   }
-  ],
-  "examination": [
-   "Inspect the supra- and infraspinous fossae from behind for wasting",
-   "External rotation against resistance with the elbow at the side",
-   "Empty can test for supraspinatus"
-  ],
-  "syndromes": [
-   "syn-erb-duchenne",
-   "syn-parsonage-turner"
-  ],
-  "pearls": [
-   "Infraspinatus wasting alone points to the spinoglenoid notch; both spinati point to the suprascapular notch",
-   "Rotator cuff tear and suprascapular neuropathy both weaken external rotation; wasting with a normal cuff on MRI points to the nerve"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    113,
-    113
-   ]
+  "kind": "structure",
+  "id": "nerve-suprascapular",
+  "name": "Suprascapular nerve",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "A branch of the upper trunk (C5–C6) that runs back through the suprascapular notch under the transverse scapular ligament to supply supraspinatus, then around the spinoglenoid notch to supply infraspinatus, with sensory fibers to the shoulder joint but no cutaneous branch. It is compressed at either notch (ganglion cysts, repetitive overhead activity in athletes) and injured in upper trunk lesions and neuralgic amyotrophy, producing a painless or aching shoulder with weak abduction initiation and external rotation and visible wasting of the spinati.",
+  "anatomy": {
+    "location": "From the upper trunk in the posterior triangle, laterally beneath the trapezius to the suprascapular notch, into the supraspinous fossa, then around the lateral border of the scapular spine (spinoglenoid notch) into the infraspinous fossa.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    147
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Motor supply to supraspinatus (initiation of abduction) and infraspinatus (external rotation); proprioceptive supply to the glenohumeral and acromioclavicular joints.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; fibers from C5–C6"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Shoulder MRI shows a paralabral cyst at the spinoglenoid notch compressing the nerve and denervation edema or fatty atrophy of the spinati.",
+    "pathology": [
+      {
+        "pathology": "Suprascapular nerve entrapment",
+        "modality": "MRI",
+        "finding": "Ganglion cyst at the suprascapular or spinoglenoid notch with STIR-bright, later atrophic, supraspinatus and/or infraspinatus.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "Shoulder MRI; EMG of supraspinatus and infraspinatus"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak initiation of abduction and weak external rotation with wasting of the spinati",
+        "side": "ipsilateral",
+        "mechanism": "Suprascapular notch lesion (both muscles)"
+      },
+      {
+        "deficit": "Isolated infraspinatus wasting and weak external rotation",
+        "side": "ipsilateral",
+        "mechanism": "Spinoglenoid notch lesion (infraspinatus only)"
+      },
+      {
+        "deficit": "Deep posterior shoulder pain without cutaneous loss",
+        "side": "ipsilateral",
+        "mechanism": "Articular sensory fibers"
+      }
+    ],
+    "examination": [
+      "Inspect the supra- and infraspinous fossae from behind for wasting",
+      "External rotation against resistance with the elbow at the side",
+      "Empty can test for supraspinatus"
+    ],
+    "syndromes": [
+      "syn-erb-duchenne",
+      "syn-parsonage-turner"
+    ],
+    "pearls": [
+      "Infraspinatus wasting alone points to the spinoglenoid notch; both spinati point to the suprascapular notch",
+      "Rotator cuff tear and suprascapular neuropathy both weaken external rotation; wasting with a normal cuff on MRI points to the nerve"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-suprascapular-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-suprascapular-nerve-block",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-suprascapular-nerve-injury",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "pns",
+    "upper-limb"
+  ],
+  "status": "draft",
+  "latin": "Nervus suprascapularis",
+  "subsystem": "upper-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "upper-limb"
- ],
- "status": "draft",
- "latin": "Nervus suprascapularis",
- "subsystem": "upper-limb",
- "level": {
-  "region": "peripheral"
- }
 }

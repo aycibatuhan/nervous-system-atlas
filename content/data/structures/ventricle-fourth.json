@@ -1,181 +1,153 @@
 {
- "kind": "structure",
- "id": "ventricle-fourth",
- "name": "Fourth ventricle",
- "synonyms": [],
- "system": "ventricles-csf",
- "meshIds": [
-  "ventricle-fourth"
- ],
- "summary": "A tent-shaped cavity between the pons and medulla in front and the cerebellum behind. Its diamond-shaped floor, the rhomboid fossa, is a clinical map of cranial nerve nuclei: the facial colliculus and hypoglossal and vagal trigones bulge into it, and the area postrema (vomiting trigger zone) lies at its caudal tip. CSF leaves it through the median foramen of Magendie and the two lateral foramina of Luschka into the subarachnoid space. Tumors in it (ependymoma, medulloblastoma) and cerebellar swelling around it cause acute hydrocephalus.",
- "anatomy": {
-  "location": "Between the dorsal pons and upper medulla (floor) and the cerebellum (roof), continuous above with the aqueduct and below with the central canal; lateral recesses extend around the inferior cerebellar peduncles to open at the cerebellopontine angles.",
-  "subdivisions": [
-   {
-    "name": "Floor (rhomboid fossa)",
-    "note": "medial eminence, facial colliculus, hypoglossal and vagal trigones, vestibular area, area postrema"
-   },
-   {
-    "name": "Roof",
-    "note": "superior medullary velum and superior cerebellar peduncles above, inferior medullary velum and tela choroidea with choroid plexus below"
-   },
-   {
-    "name": "Lateral recesses and foramina of Luschka",
-    "note": "openings at the cerebellopontine angles"
-   },
-   {
-    "name": "Foramen of Magendie",
-    "note": "median opening into the cisterna magna"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Passage of CSF from the aqueduct into the subarachnoid space; its floor houses the pontine and medullary cranial nerve nuclei; the area postrema senses blood-borne toxins and triggers vomiting.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica",
-   "artery-sca"
+  "kind": "structure",
+  "id": "ventricle-fourth",
+  "name": "Fourth ventricle",
+  "synonyms": [],
+  "system": "ventricles-csf",
+  "meshIds": [
+    "ventricle-fourth"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -40,
-     "z": -32
+  "summary": "A tent-shaped cavity between the pons and medulla in front and the cerebellum behind. Its diamond-shaped floor, the rhomboid fossa, is a clinical map of cranial nerve nuclei: the facial colliculus and hypoglossal and vagal trigones bulge into it, and the area postrema (vomiting trigger zone) lies at its caudal tip. CSF leaves it through the median foramen of Magendie and the two lateral foramina of Luschka into the subarachnoid space. Tumors in it (ependymoma, medulloblastoma) and cerebellar swelling around it cause acute hydrocephalus.",
+  "anatomy": {
+    "location": "Between the dorsal pons and upper medulla (floor) and the cerebellum (roof), continuous above with the aqueduct and below with the central canal; lateral recesses extend around the inferior cerebellar peduncles to open at the cerebellopontine angles.",
+    "subdivisions": [
+      {
+        "name": "Floor (rhomboid fossa)",
+        "note": "medial eminence, facial colliculus, hypoglossal and vagal trigones, vestibular area, area postrema"
+      },
+      {
+        "name": "Roof",
+        "note": "superior medullary velum and superior cerebellar peduncles above, inferior medullary velum and tela choroidea with choroid plexus below"
+      },
+      {
+        "name": "Lateral recesses and foramina of Luschka",
+        "note": "openings at the cerebellopontine angles"
+      },
+      {
+        "name": "Foramen of Magendie",
+        "note": "median opening into the cisterna magna"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Passage of CSF from the aqueduct into the subarachnoid space; its floor houses the pontine and medullary cranial nerve nuclei; the area postrema senses blood-borne toxins and triggers vomiting.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica",
+      "artery-sca"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -40,
+          "z": -32
+        },
+        "label": "fourth ventricle between the pons and cerebellum"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -42,
+          "z": -32
+        },
+        "label": "tent-shaped ventricle with its fastigium under the vermis"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -42,
+          "z": -32
+        },
+        "label": "lateral recesses extending toward the cerebellopontine angles"
+      }
+    ],
+    "normalAppearance": "A CSF-filled triangle behind the pons on axial images and a tent with its apex (fastigium) pointing into the vermis on sagittal images. Compression or effacement by cerebellar swelling is an emergency sign; a mass inside it in a child is usually ependymoma or medulloblastoma.",
+    "pathology": [
+      {
+        "pathology": "Fourth ventricular tumor",
+        "modality": "MRI",
+        "finding": "Medulloblastoma (arising from the vermis, restricted diffusion) or ependymoma (plastic tumor squeezing through the foramina of Luschka and Magendie) with obstructive hydrocephalus.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Effaced fourth ventricle from cerebellar infarct or hemorrhage",
+        "modality": "CT",
+        "finding": "Loss of the fourth ventricular lumen with dilatation of the third and lateral ventricles; needs urgent neurosurgical evaluation.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Dandy–Walker malformation",
+        "modality": "MRI",
+        "finding": "Cystic dilatation of the fourth ventricle with vermian hypoplasia and an enlarged posterior fossa.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "CT for acute effacement; sagittal T2/T1+Gd for masses"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Acute hydrocephalus with headache, vomiting and decreased consciousness",
+        "side": "bilateral",
+        "mechanism": "Obstruction of the ventricle by tumor or surrounding swelling"
+      },
+      {
+        "deficit": "Intractable vomiting and hiccups",
+        "side": "n/a",
+        "mechanism": "Area postrema at the caudal tip"
+      },
+      {
+        "deficit": "Cranial nerve VI, VII, X and XII signs",
+        "side": "ipsilateral",
+        "mechanism": "Nuclei in the floor involved by a floor tumor or infarct"
+      }
+    ],
+    "examination": [
+      "Consciousness and vital signs in posterior fossa lesions",
+      "Eye movements, facial movement, palate and tongue",
+      "Gait and truncal ataxia"
+    ],
+    "syndromes": [
+      "syn-hydrocephalus",
+      "syn-pica-cerebellar-infarct",
+      "syn-tonsillar-herniation"
+    ],
+    "pearls": [
+      "An effaced fourth ventricle on the CT of a patient with a cerebellar stroke is the signal to call neurosurgery",
+      "Floor-of-fourth-ventricle lesions announce themselves with facial and abducens signs"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-fourth-ventricle",
+      "section": "Structure and Function"
     },
-    "label": "fourth ventricle between the pons and cerebellum"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -42,
-     "z": -32
+    {
+      "ref": "sp-ventricular-system",
+      "section": "Structure and Function"
     },
-    "label": "tent-shaped ventricle with its fastigium under the vermis"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -42,
-     "z": -32
-    },
-    "label": "lateral recesses extending toward the cerebellopontine angles"
-   }
+    {
+      "ref": "sp-cerebrospinal-fluid",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A CSF-filled triangle behind the pons on axial images and a tent with its apex (fastigium) pointing into the vermis on sagittal images. Compression or effacement by cerebellar swelling is an emergency sign; a mass inside it in a child is usually ependymoma or medulloblastoma.",
-  "pathology": [
-   {
-    "pathology": "Fourth ventricular tumor",
-    "modality": "MRI",
-    "finding": "Medulloblastoma (arising from the vermis, restricted diffusion) or ependymoma (plastic tumor squeezing through the foramina of Luschka and Magendie) with obstructive hydrocephalus.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Effaced fourth ventricle from cerebellar infarct or hemorrhage",
-    "modality": "CT",
-    "finding": "Loss of the fourth ventricular lumen with dilatation of the third and lateral ventricles; needs urgent neurosurgical evaluation.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Dandy–Walker malformation",
-    "modality": "MRI",
-    "finding": "Cystic dilatation of the fourth ventricle with vermian hypoplasia and an enlarged posterior fossa.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "csf"
   ],
-  "sequenceOfChoice": "CT for acute effacement; sagittal T2/T1+Gd for masses"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Acute hydrocephalus with headache, vomiting and decreased consciousness",
-    "side": "bilateral",
-    "mechanism": "Obstruction of the ventricle by tumor or surrounding swelling"
-   },
-   {
-    "deficit": "Intractable vomiting and hiccups",
-    "side": "n/a",
-    "mechanism": "Area postrema at the caudal tip"
-   },
-   {
-    "deficit": "Cranial nerve VI, VII, X and XII signs",
-    "side": "ipsilateral",
-    "mechanism": "Nuclei in the floor involved by a floor tumor or infarct"
-   }
-  ],
-  "examination": [
-   "Consciousness and vital signs in posterior fossa lesions",
-   "Eye movements, facial movement, palate and tongue",
-   "Gait and truncal ataxia"
-  ],
-  "syndromes": [
-   "syn-hydrocephalus",
-   "syn-pica-cerebellar-infarct",
-   "syn-tonsillar-herniation"
-  ],
-  "pearls": [
-   "An effaced fourth ventricle on the CT of a patient with a cerebellar stroke is the signal to call neurosurgery",
-   "Floor-of-fourth-ventricle lesions announce themselves with facial and abducens signs"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    445,
-    447
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    195,
-    204
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    31
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    272
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 24,
-   "pages": [
-    255,
-    258
-   ]
-  }
- ],
- "tags": [
-  "csf"
- ],
- "status": "draft",
- "latin": "Ventriculus quartus",
- "subsystem": "ventricles"
+  "status": "draft",
+  "latin": "Ventriculus quartus",
+  "subsystem": "ventricles"
 }

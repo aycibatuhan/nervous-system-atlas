@@ -1,0 +1,148 @@
+{
+  "kind": "structure",
+  "id": "lumbosacral-trunk",
+  "name": "Lumbosacral trunk",
+  "synonyms": [
+    "truncus lumbosacralis",
+    "lumbosacral cord"
+  ],
+  "system": "peripheral",
+  "meshIds": [
+    "lumbosacral-trunk-l",
+    "lumbosacral-trunk-r"
+  ],
+  "summary": "The lumbosacral trunk is the thick cord of nerve fibers that carries the lower half of the L4 anterior ramus and the whole of L5 down over the ala of the sacrum to join the S1 ramus, and it is what makes the lumbar and sacral plexuses one continuous lumbosacral plexus. Its fibers travel on into the sciatic, superior gluteal and inferior gluteal nerves, so it carries the L4 and L5 supply of hip abduction, ankle dorsiflexion, foot inversion and great-toe extension. Because it lies directly on the bone at the pelvic brim with nothing between it and the fetal head, it is the nerve injured in maternal obstetric palsy, in which a long labor with a large baby leaves a woman with a unilateral foot drop and weak hip abduction after delivery; it is also compressed by pelvic tumors, by sacral fractures and by badly placed retractors during pelvic surgery.",
+  "anatomy": {
+    "location": "The trunk forms at the medial border of psoas major at about the level of the L4-L5 intervertebral disc, where the descending branch of the L4 ramus joins the whole L5 ramus. It then runs downward and backward over the ala of the sacrum, crossing the pelvic brim in front of the sacro-iliac joint, and enters the pelvis to meet the S1 ramus at the upper border of piriformis, where the sacral plexus is formed. It lies deep to the common iliac vessels and directly on the periosteum, covered only by the parietal pelvic fascia.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "The lumbosacral trunk is the conduit through which the L4 and L5 segments reach the sacral plexus, so it supplies no muscle itself but carries the fibers that will run in the superior gluteal nerve to gluteus medius, minimus and tensor fasciae latae, in the inferior gluteal nerve to gluteus maximus, and in the sciatic nerve to the hamstrings and, through the common peroneal division, to the dorsiflexors and evertors of the foot. Its sensory fibers reach the lateral leg and the dorsum of the foot. Damage to it therefore reproduces an L5 pattern that crosses the territory of more than one peripheral nerve: weak hip abduction, weak ankle dorsiflexion and eversion, weak great-toe extension and numbness over the lateral leg, with a preserved ankle jerk. The combination of hip abduction weakness with foot drop is what separates a lumbosacral trunk lesion from a common peroneal nerve palsy at the fibular neck, in which hip abduction is normal.",
+  "bloodSupply": {
+    "arteries": [
+      "iliolumbar artery",
+      "lateral sacral arteries",
+      "vasa nervorum from the internal iliac artery"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -70
+        },
+        "label": "cord cross-section; the lumbosacral trunk lies on the pelvic brim, far below the MNI volume"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "rostral cord in the volume; the trunk crosses the ala of the sacrum well caudal to it"
+      }
+    ],
+    "normalAppearance": "On coronal STIR of the lumbosacral plexus the trunk is a thin band of intermediate signal running over the sacral ala between the L5 root and the sacral plexus; it is best seen on thin-section three-dimensional neurography, and computed tomography shows only the bone it lies on.",
+    "pathology": [
+      {
+        "pathology": "Maternal obstetric palsy",
+        "modality": "MRI",
+        "finding": "Increased T2 signal and swelling of the trunk where it crosses the sacral ala after a prolonged labor, with denervation edema in the tibialis anterior and gluteus medius.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Pelvic tumor or nodal mass",
+        "modality": "MRI",
+        "finding": "Mass on the sacral ala encasing the trunk with progressive painful L5 weakness; contrast helps separate tumor from postradiation fibrosis.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Sacral or pelvic ring fracture",
+        "modality": "CT",
+        "finding": "Zone II or III sacral fracture crossing the ala with an L5 deficit; the fracture line and the displacement predict the nerve injury better than the neurological grade.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "Coronal and axial STIR neurography of the lumbosacral plexus with contrast when a mass is suspected."
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Foot drop with weak eversion and inversion",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the L4 and L5 fibers destined for the deep and superficial peroneal and tibial nerves"
+      },
+      {
+        "deficit": "Weak hip abduction with a Trendelenburg gait",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the L4-L5 fibers destined for the superior gluteal nerve"
+      },
+      {
+        "deficit": "Numbness of the lateral leg and dorsum of the foot",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the L5 sensory fibers"
+      },
+      {
+        "deficit": "Preserved ankle jerk",
+        "side": "ipsilateral",
+        "mechanism": "The S1 reflex arc travels in the sacral rami and is spared when the trunk alone is injured"
+      }
+    ],
+    "examination": [
+      "Test hip abduction as well as ankle dorsiflexion in every patient with a foot drop",
+      "Look for a Trendelenburg sign and for wasting of gluteus medius",
+      "Map sensation over the lateral leg and the first web space",
+      "Ask about a difficult delivery, pelvic surgery, pelvic trauma and pelvic malignancy"
+    ],
+    "syndromes": [
+      "syn-lumbosacral-plexopathy",
+      "syn-radiculopathy-lumbosacral"
+    ],
+    "pearls": [
+      "Foot drop plus weak hip abduction is the lumbosacral trunk or the L5 root, never the peroneal nerve at the knee",
+      "Maternal obstetric palsy is nearly always unilateral, on the side of the fetal occiput, and usually recovers over months",
+      "A preserved ankle jerk with an L5 pattern keeps the lesion above the sacral plexus"
+    ]
+  },
+  "pitfalls": [
+    "DERIVED MESH: Z-Anatomy contains no lumbosacral trunk, so the shape shown is a schematic tube built along the classical course, from the L4 and L5 anterior rami at the medial border of psoas, over the ala of the sacrum, to the sacral plexus in front of piriformis; the waypoints were taken from the Z-Anatomy lumbosacral plexus, obturator, superior gluteal and sciatic nerve geometry and are recorded in pipeline/config/derived_nerves.yaml. Its caliber and exact path are illustrative, not measured.",
+    "An L5 radiculopathy and a lumbosacral trunk lesion look identical at the bedside; the paraspinal muscles on needle electromyography separate them, because they are denervated only in the root lesion",
+    "Do not call an isolated foot drop a peroneal palsy until hip abduction and inversion have been tested"
+  ],
+  "citations": [
+    {
+      "ref": "sp-back-lumbar-plexus",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-sciatic-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-back-vertebral-column",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "plexus",
+    "derived"
+  ],
+  "status": "draft",
+  "latin": "truncus lumbosacralis",
+  "subsystem": "lower-limb",
+  "parent": "plexus-lumbosacral",
+  "level": {
+    "region": "peripheral",
+    "sub": "L4-L5"
+  }
+}

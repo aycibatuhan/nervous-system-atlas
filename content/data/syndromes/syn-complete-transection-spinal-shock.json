@@ -1,144 +1,136 @@
 {
- "kind": "syndrome",
- "id": "syn-complete-transection-spinal-shock",
- "name": "Complete cord transection and spinal shock",
- "eponyms": [
-  "complete spinal cord injury"
- ],
- "category": "traumatic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "spinal-cord",
-   "spinal-white-columns",
-   "spinal-grey-anterior-horn",
-   "intermediolateral-column",
-   "conus-medullaris"
+  "kind": "syndrome",
+  "id": "syn-complete-transection-spinal-shock",
+  "name": "Complete cord transection and spinal shock",
+  "eponyms": [
+    "complete spinal cord injury"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -100
+  "category": "traumatic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "spinal-cord",
+      "spinal-white-columns",
+      "spinal-grey-anterior-horn",
+      "intermediolateral-column",
+      "conus-medullaris"
+    ],
+    "side": "bilateral"
   },
-  "radiusMm": 10
- },
- "presentation": "After a fall or a road accident the patient cannot move or feel anything below the level of the injury. For the first days to weeks the legs are flaccid, all reflexes below the level are absent, the bladder is distended and painless, the bowel is silent and, in cervical injuries, the blood pressure is low with a slow pulse and the skin warm. Then the reflexes return and become exaggerated, the legs stiffen and flex in spasms, and the bladder empties reflexly and unpredictably.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "all muscles below the level",
-   "sign": "Complete paralysis: flaccid in spinal shock, then spastic with clonus and flexor spasms",
-   "substrate": "pathway-lateral-corticospinal"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -100
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "bilateral",
-   "distribution": "all modalities below the level",
-   "sign": "Complete sensory loss with a sharp level; a band of hyperesthesia just above",
-   "substrate": "pathway-dcml"
+  "presentation": "After a fall or a road accident the patient cannot move or feel anything below the level of the injury. For the first days to weeks the legs are flaccid, all reflexes below the level are absent, the bladder is distended and painless, the bowel is silent and, in cervical injuries, the blood pressure is low with a slow pulse and the skin warm. Then the reflexes return and become exaggerated, the legs stiffen and flex in spasms, and the bladder empties reflexly and unpredictably.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "all muscles below the level",
+      "sign": "Complete paralysis: flaccid in spinal shock, then spastic with clonus and flexor spasms",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "bilateral",
+      "distribution": "all modalities below the level",
+      "sign": "Complete sensory loss with a sharp level; a band of hyperesthesia just above",
+      "substrate": "pathway-dcml"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "below the level",
+      "sign": "Areflexia in spinal shock; later hyperreflexia, extensor plantars, mass reflex",
+      "substrate": "spinal-grey-anterior-horn"
+    },
+    {
+      "modality": "sphincter",
+      "side": "bilateral",
+      "distribution": "bladder, bowel, sexual function",
+      "sign": "Retention with overflow, then reflex (spastic) bladder in lesions above the conus",
+      "substrate": "intermediolateral-column"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "sympathetic outflow (lesions above T6)",
+      "sign": "Neurogenic shock (hypotension, bradycardia) acutely; autonomic dysreflexia later",
+      "substrate": "sympathetic-trunk"
+    }
+  ],
+  "reasoning": "Complete transection interrupts every ascending and descending tract at one level, so all sensation from below, whichever side it crossed on, and all motor commands to below, whichever side they came from, are lost bilaterally with a sharp sensory level that marks the segment. The level of the sensory loss on the trunk gives the segment, and the last working muscle group gives the motor level; a cervical lesion produces quadriplegia, a thoracic lesion paraplegia. Spinal shock is the temporary loss of all reflex activity in the isolated cord below the lesion, attributed to the sudden withdrawal of the tonic facilitation that descending reticulospinal and vestibulospinal pathways normally supply to spinal motor neurons and interneurons; without it the stretch reflex arcs, though anatomically intact, are silent, the bladder wall is atonic and, when the lesion lies above the sympathetic outflow at T1–T6, the loss of descending sympathetic drive causes vasodilatation and unopposed vagal bradycardia. Over days to weeks the isolated segments regain and then exceed their excitability through receptor upregulation and sprouting, producing spasticity, hyperreflexia, the mass reflex in which a small stimulus triggers flexor spasms, sweating and bladder emptying, and autonomic dysreflexia, in which a distended bladder or bowel below a high lesion provokes uncontrolled sympathetic discharge and severe hypertension because the cord's sympathetic neurons have no descending brake. Priapism and the bulbocavernosus reflex return early and their recovery marks the end of spinal shock.",
+  "imagingFindings": [
+    {
+      "pathology": "Cord transection or contusion",
+      "modality": "MRI",
+      "finding": "Cord discontinuity or extensive T2 hyperintensity with hemorrhage (T2* dark) at the fracture level; hematoma length predicts outcome.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Vertebral fracture-dislocation",
+      "modality": "CT",
+      "finding": "Burst fracture, facet dislocation or translation narrowing the canal; CT of the whole spine for other levels.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Non-traumatic transverse lesion",
+      "modality": "MRI",
+      "finding": "Epidural abscess, metastasis or transverse myelitis producing the same complete syndrome over hours to days.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Vertebral fracture-dislocation",
+    "Penetrating injury",
+    "Metastatic epidural compression",
+    "Epidural abscess or hematoma",
+    "Transverse myelitis",
+    "Cord infarct"
+  ],
+  "mimics": [
+    {
+      "name": "Incomplete cord syndromes",
+      "howToDistinguish": "Some function preserved below the level, sacral sparing"
+    },
+    {
+      "name": "Guillain–Barré syndrome",
+      "howToDistinguish": "No sensory level, ascending, cranial nerves involved, CSF protein raised"
+    },
+    {
+      "name": "Functional paralysis",
+      "howToDistinguish": "Inconsistent findings, normal reflexes and imaging"
+    }
+  ],
+  "management": [
+    "Immobilize, maintain mean arterial pressure and oxygenation, and obtain CT and MRI urgently; early surgical decompression and stabilization",
+    "Catheterize the bladder, prevent pressure sores and thromboembolism, protect the airway in cervical lesions",
+    "Recognize and treat autonomic dysreflexia (sit the patient up, empty the bladder or bowel)"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spinal-cord-injuries",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinal-shock",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -100
+    },
+    "label": "cervicothoracic cord"
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "below the level",
-   "sign": "Areflexia in spinal shock; later hyperreflexia, extensor plantars, mass reflex",
-   "substrate": "spinal-grey-anterior-horn"
-  },
-  {
-   "modality": "sphincter",
-   "side": "bilateral",
-   "distribution": "bladder, bowel, sexual function",
-   "sign": "Retention with overflow, then reflex (spastic) bladder in lesions above the conus",
-   "substrate": "intermediolateral-column"
-  },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "sympathetic outflow (lesions above T6)",
-   "sign": "Neurogenic shock (hypotension, bradycardia) acutely; autonomic dysreflexia later",
-   "substrate": "sympathetic-trunk"
-  }
- ],
- "reasoning": "Complete transection interrupts every ascending and descending tract at one level, so all sensation from below, whichever side it crossed on, and all motor commands to below, whichever side they came from, are lost bilaterally with a sharp sensory level that marks the segment. The level of the sensory loss on the trunk gives the segment, and the last working muscle group gives the motor level; a cervical lesion produces quadriplegia, a thoracic lesion paraplegia. Spinal shock is the temporary loss of all reflex activity in the isolated cord below the lesion, attributed to the sudden withdrawal of the tonic facilitation that descending reticulospinal and vestibulospinal pathways normally supply to spinal motor neurons and interneurons; without it the stretch reflex arcs, though anatomically intact, are silent, the bladder wall is atonic and, when the lesion lies above the sympathetic outflow at T1–T6, the loss of descending sympathetic drive causes vasodilatation and unopposed vagal bradycardia. Over days to weeks the isolated segments regain and then exceed their excitability through receptor upregulation and sprouting, producing spasticity, hyperreflexia, the mass reflex in which a small stimulus triggers flexor spasms, sweating and bladder emptying, and autonomic dysreflexia, in which a distended bladder or bowel below a high lesion provokes uncontrolled sympathetic discharge and severe hypertension because the cord's sympathetic neurons have no descending brake. Priapism and the bulbocavernosus reflex return early and their recovery marks the end of spinal shock.",
- "imagingFindings": [
-  {
-   "pathology": "Cord transection or contusion",
-   "modality": "MRI",
-   "finding": "Cord discontinuity or extensive T2 hyperintensity with hemorrhage (T2* dark) at the fracture level; hematoma length predicts outcome.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Vertebral fracture-dislocation",
-   "modality": "CT",
-   "finding": "Burst fracture, facet dislocation or translation narrowing the canal; CT of the whole spine for other levels.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Non-traumatic transverse lesion",
-   "modality": "MRI",
-   "finding": "Epidural abscess, metastasis or transverse myelitis producing the same complete syndrome over hours to days.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Vertebral fracture-dislocation",
-  "Penetrating injury",
-  "Metastatic epidural compression",
-  "Epidural abscess or hematoma",
-  "Transverse myelitis",
-  "Cord infarct"
- ],
- "mimics": [
-  {
-   "name": "Incomplete cord syndromes",
-   "howToDistinguish": "Some function preserved below the level, sacral sparing"
-  },
-  {
-   "name": "Guillain–Barré syndrome",
-   "howToDistinguish": "No sensory level, ascending, cranial nerves involved, CSF protein raised"
-  },
-  {
-   "name": "Functional paralysis",
-   "howToDistinguish": "Inconsistent findings, normal reflexes and imaging"
-  }
- ],
- "management": [
-  "Immobilize, maintain mean arterial pressure and oxygenation, and obtain CT and MRI urgently; early surgical decompression and stabilization",
-  "Catheterize the bladder, prevent pressure sores and thromboembolism, protect the airway in cervical lesions",
-  "Recognize and treat autonomic dysreflexia (sit the patient up, empty the bladder or bowel)"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    167,
-    168
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    41,
-    44
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -100
-  },
-  "label": "cervicothoracic cord"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

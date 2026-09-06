@@ -1,180 +1,160 @@
 {
- "kind": "structure",
- "id": "precuneus",
- "name": "Precuneus",
- "synonyms": [
-  "medial parietal cortex",
-  "area 7 (medial)"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "precuneus-l",
-  "precuneus-r"
- ],
- "summary": "The precuneus is the medial surface of the parietal lobe, a quadrilateral area behind the paracentral lobule and in front of the parieto-occipital sulcus, above the posterior cingulate gyrus and the splenium. It is a hub of the default mode network with the posterior cingulate, active in self-referential thought, episodic memory retrieval, mental imagery and the sense of first-person perspective, and it is one of the first regions to lose metabolism and to accumulate amyloid in Alzheimer disease. It is supplied by the anterior cerebral artery through the pericallosal and parieto-occipital branches, and it is compressed by parasagittal and falcine tumors; bilateral disconnection contributes to the loss of consciousness in generalized seizures and anesthesia.",
- "anatomy": {
-  "location": "Medial parietal cortex between the marginal branch of the cingulate sulcus in front, the parieto-occipital sulcus behind and the subparietal sulcus below, continuous over the superior margin with the superior parietal lobule.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Posterior cingulate and retrosplenial cortex",
-    "via": "cingulum"
-   },
-   {
-    "from": "Superior parietal lobule",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Pulvinar and lateral posterior thalamus",
-    "via": "posterior thalamic radiation"
-   }
+  "kind": "structure",
+  "id": "precuneus",
+  "name": "Precuneus",
+  "synonyms": [
+    "medial parietal cortex",
+    "area 7 (medial)"
   ],
-  "efferents": [
-   {
-    "to": "Hippocampus and parahippocampal cortex",
-    "via": "cingulum"
-   },
-   {
-    "to": "Medial prefrontal cortex (default mode)",
-    "via": "cingulum"
-   },
-   {
-    "to": "Frontal eye field and premotor cortex",
-    "via": "superior longitudinal fasciculus I"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "precuneus-l",
+    "precuneus-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "The precuneus retrieves autobiographical memories and imagines scenes from a first-person point of view, integrating egocentric space with the self; together with the posterior cingulate it is the most metabolically active region of the resting brain and deactivates during attention-demanding tasks. Its dorsal part guides visually directed reaching and shifts of spatial attention with the superior parietal lobule, and its ventral part connects with the hippocampus through the cingulum and the retrosplenial cortex. Loss of its function produces impaired navigation, disturbed self-awareness and, when bilateral with the posterior cingulate, the amnesia and disorientation of early Alzheimer disease.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-pca"
+  "summary": "The precuneus is the medial surface of the parietal lobe, a quadrilateral area behind the paracentral lobule and in front of the parieto-occipital sulcus, above the posterior cingulate gyrus and the splenium. It is a hub of the default mode network with the posterior cingulate, active in self-referential thought, episodic memory retrieval, mental imagery and the sense of first-person perspective, and it is one of the first regions to lose metabolism and to accumulate amyloid in Alzheimer disease. It is supplied by the anterior cerebral artery through the pericallosal and parieto-occipital branches, and it is compressed by parasagittal and falcine tumors; bilateral disconnection contributes to the loss of consciousness in generalized seizures and anesthesia.",
+  "anatomy": {
+    "location": "Medial parietal cortex between the marginal branch of the cingulate sulcus in front, the parieto-occipital sulcus behind and the subparietal sulcus below, continuous over the superior margin with the superior parietal lobule.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Posterior cingulate and retrosplenial cortex",
+        "via": "cingulum"
+      },
+      {
+        "from": "Superior parietal lobule",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Pulvinar and lateral posterior thalamus",
+        "via": "posterior thalamic radiation"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Hippocampus and parahippocampal cortex",
+        "via": "cingulum"
+      },
+      {
+        "to": "Medial prefrontal cortex (default mode)",
+        "via": "cingulum"
+      },
+      {
+        "to": "Frontal eye field and premotor cortex",
+        "via": "superior longitudinal fasciculus I"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "The precuneus retrieves autobiographical memories and imagines scenes from a first-person point of view, integrating egocentric space with the self; together with the posterior cingulate it is the most metabolically active region of the resting brain and deactivates during attention-demanding tasks. Its dorsal part guides visually directed reaching and shifts of spatial attention with the superior parietal lobule, and its ventral part connects with the hippocampus through the cingulum and the retrosplenial cortex. Loss of its function produces impaired navigation, disturbed self-awareness and, when bilateral with the posterior cingulate, the amnesia and disorientation of early Alzheimer disease.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "precuneus-l"
+        },
+        "label": "precuneus on the medial parietal surface in front of the parieto-occipital sulcus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "precuneus-r"
+        },
+        "label": "medial parietal cortex above the splenium"
+      }
+    ],
+    "normalAppearance": "Medial parietal cortex on midline sagittal images between the marginal ramus of the cingulate sulcus and the deep parieto-occipital sulcus; the subparietal sulcus separates it from the posterior cingulate below.",
+    "pathology": [
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "PET",
+        "finding": "Hypometabolism of the precuneus and posterior cingulate on FDG-PET and early amyloid deposition, preceding lateral parietal and temporal changes.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Parasagittal meningioma",
+        "modality": "MRI",
+        "finding": "Dural-based enhancing mass indenting the medial parietal cortex with sensory seizures or contralateral leg symptoms.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Posterior reversible encephalopathy syndrome",
+        "modality": "MRI",
+        "finding": "Symmetric vasogenic edema of the parieto-occipital cortex including the precuneus, with headache, seizures and visual symptoms.",
+        "sequence": "FLAIR",
+        "timing": "Resolves within days to weeks with control of blood pressure"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired episodic memory retrieval and mental imagery",
+        "side": "bilateral",
+        "mechanism": "Loss of the precuneus-posterior cingulate retrieval hub"
+      },
+      {
+        "deficit": "Topographical disorientation",
+        "side": "bilateral",
+        "mechanism": "Disconnection of the precuneus and retrosplenial cortex from the hippocampus"
+      },
+      {
+        "deficit": "Contralateral leg sensory symptoms and seizures",
+        "side": "contralateral",
+        "mechanism": "Involvement of the adjacent paracentral lobule by a medial parietal lesion"
+      }
+    ],
+    "examination": [
+      "Route finding and describing familiar routes",
+      "Autobiographical memory for specific events",
+      "Sensation and strength of the contralateral leg"
+    ],
+    "syndromes": [
+      "syn-aca-infarct"
+    ],
+    "pearls": [
+      "The precuneus and posterior cingulate go dark on FDG-PET years before Alzheimer dementia is diagnosed",
+      "Medial parietal lesions disturb the sense of self and of place more than any sensory modality",
+      "A parasagittal mass can be silent until the leg is affected or a sensory seizure occurs"
+    ]
+  },
+  "pitfalls": [
+    "Precuneal atrophy is hard to judge visually; rely on FDG-PET or quantitative volumetry when early Alzheimer disease is the question"
   ],
-  "territories": [
-   "territory-aca",
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "precuneus-l"
+  "citations": [
+    {
+      "ref": "sp-postcentral-gyrus",
+      "section": "Structure and Function"
     },
-    "label": "precuneus on the medial parietal surface in front of the parieto-occipital sulcus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "precuneus-r"
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
     },
-    "label": "medial parietal cortex above the splenium"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Medial parietal cortex on midline sagittal images between the marginal ramus of the cingulate sulcus and the deep parieto-occipital sulcus; the subparietal sulcus separates it from the posterior cingulate below.",
-  "pathology": [
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "PET",
-    "finding": "Hypometabolism of the precuneus and posterior cingulate on FDG-PET and early amyloid deposition, preceding lateral parietal and temporal changes.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Parasagittal meningioma",
-    "modality": "MRI",
-    "finding": "Dural-based enhancing mass indenting the medial parietal cortex with sensory seizures or contralateral leg symptoms.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Posterior reversible encephalopathy syndrome",
-    "modality": "MRI",
-    "finding": "Symmetric vasogenic edema of the parieto-occipital cortex including the precuneus, with headache, seizures and visual symptoms.",
-    "sequence": "FLAIR",
-    "timing": "Resolves within days to weeks with control of blood pressure"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired episodic memory retrieval and mental imagery",
-    "side": "bilateral",
-    "mechanism": "Loss of the precuneus-posterior cingulate retrieval hub"
-   },
-   {
-    "deficit": "Topographical disorientation",
-    "side": "bilateral",
-    "mechanism": "Disconnection of the precuneus and retrosplenial cortex from the hippocampus"
-   },
-   {
-    "deficit": "Contralateral leg sensory symptoms and seizures",
-    "side": "contralateral",
-    "mechanism": "Involvement of the adjacent paracentral lobule by a medial parietal lesion"
-   }
+  "tags": [
+    "default mode",
+    "medial parietal",
+    "Alzheimer"
   ],
-  "examination": [
-   "Route finding and describing familiar routes",
-   "Autobiographical memory for specific events",
-   "Sensation and strength of the contralateral leg"
-  ],
-  "syndromes": [
-   "syn-aca-infarct"
-  ],
-  "pearls": [
-   "The precuneus and posterior cingulate go dark on FDG-PET years before Alzheimer dementia is diagnosed",
-   "Medial parietal lesions disturb the sense of self and of place more than any sensory modality",
-   "A parasagittal mass can be silent until the leg is affected or a sensory seizure occurs"
-  ]
- },
- "pitfalls": [
-  "Precuneal atrophy is hard to judge visually; rely on FDG-PET or quantitative volumetry when early Alzheimer disease is the question"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    259
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    238
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "default mode",
-  "medial parietal",
-  "Alzheimer"
- ],
- "status": "draft",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "status": "draft",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

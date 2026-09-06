@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Build reference/index.json: chapters, sections (detected headings) and topics (from content/coverage.json)."""
+"""Build reference/index.json: chapters and sections (detected headings) of the private plagiarism-check corpus.
+
+Private tooling: it reads PDFs under source/ (never committed) and writes reference/ (gitignored). The atlas
+itself cites only the open-access bibliography in content/bibliography/ — see tools/cite/."""
 import json, re, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from refcorpus import BOOKS, REF, ROOT, chapter_ranges, clean_pages
 
-index = {"books": {}, "chapters": {}, "topics": {}}
+index = {"books": {}, "chapters": {}}
 for book, b in BOOKS.items():
     index["books"][book] = {"file": str(b["file"].relative_to(ROOT)), "cite": b["cite"], "title": b["title"],
                             "pdfOffset": b["pdfOffset"], "pages": b["pages"]}
@@ -27,11 +30,5 @@ for book, b in BOOKS.items():
         chapters.append(ch)
     index["chapters"][book] = chapters
 
-cov = ROOT / "content" / "coverage.json"
-if cov.exists():
-    for entry in json.loads(cov.read_text()).get("entries", []):
-        src = entry.get("sources", {})
-        index["topics"][entry["id"]] = {"kind": entry["kind"], "snell": src.get("snell", []), "berkowitz": src.get("berkowitz", []),
-                                        "coveredBy": [k for k in ("snell", "berkowitz") if src.get(k)]}
 (REF / "index.json").write_text(json.dumps(index, indent=1))
-print("wrote", REF / "index.json", "chapters:", {k: len(v) for k, v in index["chapters"].items()}, "topics:", len(index["topics"]))
+print("wrote", REF / "index.json", "chapters:", {k: len(v) for k, v in index["chapters"].items()})

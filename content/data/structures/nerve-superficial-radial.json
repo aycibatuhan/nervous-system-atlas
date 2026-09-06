@@ -1,133 +1,125 @@
 {
- "kind": "structure",
- "id": "nerve-superficial-radial",
- "name": "Superficial branch of the radial nerve",
- "synonyms": [
-  "superficial radial nerve",
-  "radial sensory nerve"
- ],
- "system": "peripheral",
- "meshIds": [
-  "superficial-radial-nerve-l",
-  "superficial-radial-nerve-r"
- ],
- "summary": "The superficial branch of the radial nerve is the sensory continuation of the radial nerve after it divides at the elbow, running down the forearm beneath the brachioradialis, emerging between its tendon and the extensor carpi radialis longus in the distal forearm and crossing the anatomical snuffbox to supply the skin of the dorsolateral hand and the dorsum of the thumb, index and middle fingers to the distal joints. It is compressed by tight watch straps and handcuffs (Wartenberg syndrome or cheiralgia paresthetica), injured by wrist surgery, cannulation and de Quervain release, and its sensory potential is the standard radial sensory study that separates a radial nerve lesion from a C6-C7 radiculopathy.",
- "anatomy": {
-  "location": "Leaves the radial nerve in front of the lateral epicondyle, descends under the brachioradialis lateral to the radial artery, pierces the deep fascia about eight centimeters above the wrist between the brachioradialis and extensor carpi radialis longus tendons, crosses the snuffbox superficially and divides into dorsal digital nerves for the thumb, index, middle and half of the ring finger over the dorsum of the hand.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Purely sensory, it carries sensation from the radial dorsum of the hand and the dorsum of the lateral fingers through the radial nerve and the posterior cord to the C6 and C7 dorsal root ganglia; its territory is spared in the posterior interosseous syndrome (which separates from it at the elbow) and lost in higher radial lesions, and its conduction study is normal in a C6-C7 radiculopathy because the lesion is proximal to the ganglion. It is entrapped where it pierces the fascia between the brachioradialis and extensor carpi radialis longus, producing pain and paresthesias of the dorsal hand aggravated by pronation and by anything tight around the wrist.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-superficial-radial",
+  "name": "Superficial branch of the radial nerve",
+  "synonyms": [
+    "superficial radial nerve",
+    "radial sensory nerve"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "superficial-radial-nerve-l"
-    },
-    "label": "superficial radial nerve descending under the brachioradialis to the snuffbox"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "superficial-radial-nerve-r"
-    },
-    "label": "nerve piercing the fascia above the wrist"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "superficial-radial-nerve-l",
+    "superficial-radial-nerve-r"
   ],
-  "normalAppearance": "A thin nerve beside the radial artery under the brachioradialis on ultrasound, emerging subcutaneously above the wrist; territory: dorsolateral hand and thumb.",
-  "pathology": [
-   {
-    "pathology": "Wartenberg syndrome (cheiralgia paresthetica)",
-    "modality": "US",
-    "finding": "Focal enlargement of the superficial radial nerve where it emerges between the brachioradialis and extensor carpi radialis longus tendons, with a Tinel sign and dorsal hand paresthesias.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Radial neuropathy at the spiral groove",
-    "modality": "EMG/NCS",
-    "finding": "Reduced superficial radial sensory potential with wrist drop; the posterior interosseous syndrome spares the potential.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Iatrogenic injury at the wrist",
-    "modality": "US",
-    "finding": "Neuroma of the nerve after de Quervain release, cannulation or external fixation, with a painful Tinel over the snuffbox.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Numbness and paresthesias of the dorsolateral hand and thumb",
-    "side": "ipsilateral",
-    "mechanism": "Superficial radial or higher radial nerve lesion"
-   },
-   {
-    "deficit": "Pain on pronation and with a tight wrist band",
-    "side": "ipsilateral",
-    "mechanism": "Entrapment where the nerve pierces the forearm fascia"
-   },
-   {
-    "deficit": "No weakness",
-    "side": "n/a",
-    "mechanism": "Purely sensory branch; weakness means the lesion is at or above the elbow"
-   }
-  ],
-  "examination": [
-   "Sensation over the dorsal first web space and the dorsum of the thumb",
-   "Finger and wrist extension to exclude a posterior interosseous or higher radial lesion",
-   "Radial sensory conduction study; normal in radiculopathy, reduced in nerve lesions"
-  ],
-  "syndromes": [
-   "syn-radial-neuropathy",
-   "syn-radiculopathy-cervical"
-  ],
-  "pearls": [
-   "Numb back of the hand with normal finger extension is the superficial radial nerve; add finger drop and it is the radial trunk",
-   "Handcuffs and watch straps compress this nerve where it surfaces above the wrist",
-   "A normal radial sensory response in a numb thumb means the C6 root"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The superficial branch of the radial nerve is the sensory continuation of the radial nerve after it divides at the elbow, running down the forearm beneath the brachioradialis, emerging between its tendon and the extensor carpi radialis longus in the distal forearm and crossing the anatomical snuffbox to supply the skin of the dorsolateral hand and the dorsum of the thumb, index and middle fingers to the distal joints. It is compressed by tight watch straps and handcuffs (Wartenberg syndrome or cheiralgia paresthetica), injured by wrist surgery, cannulation and de Quervain release, and its sensory potential is the standard radial sensory study that separates a radial nerve lesion from a C6-C7 radiculopathy.",
+  "anatomy": {
+    "location": "Leaves the radial nerve in front of the lateral epicondyle, descends under the brachioradialis lateral to the radial artery, pierces the deep fascia about eight centimeters above the wrist between the brachioradialis and extensor carpi radialis longus tendons, crosses the snuffbox superficially and divides into dorsal digital nerves for the thumb, index, middle and half of the ring finger over the dorsum of the hand.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Purely sensory, it carries sensation from the radial dorsum of the hand and the dorsum of the lateral fingers through the radial nerve and the posterior cord to the C6 and C7 dorsal root ganglia; its territory is spared in the posterior interosseous syndrome (which separates from it at the elbow) and lost in higher radial lesions, and its conduction study is normal in a C6-C7 radiculopathy because the lesion is proximal to the ganglion. It is entrapped where it pierces the fascia between the brachioradialis and extensor carpi radialis longus, producing pain and paresthesias of the dorsal hand aggravated by pronation and by anything tight around the wrist.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "superficial-radial-nerve-l"
+        },
+        "label": "superficial radial nerve descending under the brachioradialis to the snuffbox"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "superficial-radial-nerve-r"
+        },
+        "label": "nerve piercing the fascia above the wrist"
+      }
+    ],
+    "normalAppearance": "A thin nerve beside the radial artery under the brachioradialis on ultrasound, emerging subcutaneously above the wrist; territory: dorsolateral hand and thumb.",
+    "pathology": [
+      {
+        "pathology": "Wartenberg syndrome (cheiralgia paresthetica)",
+        "modality": "US",
+        "finding": "Focal enlargement of the superficial radial nerve where it emerges between the brachioradialis and extensor carpi radialis longus tendons, with a Tinel sign and dorsal hand paresthesias.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Radial neuropathy at the spiral groove",
+        "modality": "EMG/NCS",
+        "finding": "Reduced superficial radial sensory potential with wrist drop; the posterior interosseous syndrome spares the potential.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Iatrogenic injury at the wrist",
+        "modality": "US",
+        "finding": "Neuroma of the nerve after de Quervain release, cannulation or external fixation, with a painful Tinel over the snuffbox.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Numbness and paresthesias of the dorsolateral hand and thumb",
+        "side": "ipsilateral",
+        "mechanism": "Superficial radial or higher radial nerve lesion"
+      },
+      {
+        "deficit": "Pain on pronation and with a tight wrist band",
+        "side": "ipsilateral",
+        "mechanism": "Entrapment where the nerve pierces the forearm fascia"
+      },
+      {
+        "deficit": "No weakness",
+        "side": "n/a",
+        "mechanism": "Purely sensory branch; weakness means the lesion is at or above the elbow"
+      }
+    ],
+    "examination": [
+      "Sensation over the dorsal first web space and the dorsum of the thumb",
+      "Finger and wrist extension to exclude a posterior interosseous or higher radial lesion",
+      "Radial sensory conduction study; normal in radiculopathy, reduced in nerve lesions"
+    ],
+    "syndromes": [
+      "syn-radial-neuropathy",
+      "syn-radiculopathy-cervical"
+    ],
+    "pearls": [
+      "Numb back of the hand with normal finger extension is the superficial radial nerve; add finger drop and it is the radial trunk",
+      "Handcuffs and watch straps compress this nerve where it surfaces above the wrist",
+      "A normal radial sensory response in a numb thumb means the C6 root"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-radial-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-sensory-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C6-C7"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C6-C7"
- }
 }

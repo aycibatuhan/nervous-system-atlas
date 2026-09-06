@@ -1,125 +1,121 @@
 {
- "kind": "syndrome",
- "id": "syn-weber",
- "name": "Weber syndrome (ventral midbrain)",
- "eponyms": [
-  "Weber syndrome",
-  "superior alternating hemiplegia"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cerebral-peduncle-crus",
-   "oculomotor-nucleus",
-   "level-midbrain-superior-colliculus",
-   "artery-pca",
-   "arteries-thalamoperforating"
+  "kind": "syndrome",
+  "id": "syn-weber",
+  "name": "Weber syndrome (ventral midbrain)",
+  "eponyms": [
+    "Weber syndrome",
+    "superior alternating hemiplegia"
   ],
-  "side": "ipsilateral",
-  "level": "midbrain-superior-colliculus",
-  "arteryId": "artery-pca"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -8,
-   "y": -20,
-   "z": -12
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cerebral-peduncle-crus",
+      "oculomotor-nucleus",
+      "level-midbrain-superior-colliculus",
+      "artery-pca",
+      "arteries-thalamoperforating"
+    ],
+    "side": "ipsilateral",
+    "level": "midbrain-superior-colliculus",
+    "arteryId": "artery-pca"
   },
-  "radiusMm": 7
- },
- "presentation": "A patient develops a drooping eyelid and a fixed dilated pupil with the eye turned down and out on one side, together with weakness of the face, arm and leg on the opposite side. The pattern of a third nerve palsy with crossed hemiplegia is the classic ventral midbrain syndrome and is most often caused by a small infarct in the territory of the posterior cerebral artery perforators.",
- "deficits": [
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "oculomotor",
-   "sign": "Complete third nerve palsy with ptosis, mydriasis and the eye down and out",
-   "substrate": "cn-03-oculomotor"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -8,
+      "y": -20,
+      "z": -12
+    },
+    "radiusMm": 7
   },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "face, arm and leg",
-   "sign": "Hemiplegia including the lower face (corticobulbar fibers in the crus)",
-   "substrate": "pathway-lateral-corticospinal"
+  "presentation": "A patient develops a drooping eyelid and a fixed dilated pupil with the eye turned down and out on one side, together with weakness of the face, arm and leg on the opposite side. The pattern of a third nerve palsy with crossed hemiplegia is the classic ventral midbrain syndrome and is most often caused by a small infarct in the territory of the posterior cerebral artery perforators.",
+  "deficits": [
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "oculomotor",
+      "sign": "Complete third nerve palsy with ptosis, mydriasis and the eye down and out",
+      "substrate": "cn-03-oculomotor"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "face, arm and leg",
+      "sign": "Hemiplegia including the lower face (corticobulbar fibers in the crus)",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "bulbar",
+      "side": "contralateral",
+      "distribution": "tongue and lower face",
+      "sign": "Corticobulbar weakness",
+      "substrate": "pathway-corticobulbar"
+    }
+  ],
+  "reasoning": "The oculomotor nerve fascicles leave their nucleus in the periaqueductal gray and pass ventrally through the red nucleus and the medial part of the crus cerebri to emerge in the interpeduncular fossa. The middle three-fifths of the crus carry the corticospinal and corticobulbar fibers, which have not yet crossed; the corticobulbar fibers will cross at the level of the facial and hypoglossal nuclei and the corticospinal fibers at the pyramidal decussation. A ventral midbrain lesion therefore paralyzes the contralateral face, arm and leg together, in contrast to the medullary syndromes where the face is spared, while the oculomotor fibers, already the final lower motor neurons for the ipsilateral eye muscles and the parasympathetic supply to the pupil, are lost on the side of the lesion. The result is the alternating pattern of a cranial nerve palsy on one side and long tract signs on the other, and the identity of the nerve fixes the level at the midbrain. The pupil is involved because the parasympathetic fibers travel within the fascicle, unlike the ischemic peripheral third nerve palsy of diabetes, where they are usually spared.",
+  "imagingFindings": [
+    {
+      "pathology": "Ventral midbrain infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the medial crus cerebri and adjacent tegmentum on the side of the third nerve palsy.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Uncal herniation compressing the peduncle",
+      "modality": "CT",
+      "finding": "Supratentorial mass with medial temporal lobe displacement and a compressed midbrain; false localizing when the opposite peduncle is pressed against the tentorium (Kernohan).",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Posterior cerebral artery or basilar perforator infarct",
+    "Midbrain hemorrhage",
+    "Uncal herniation",
+    "Midbrain tumor or aneurysm of the posterior cerebral artery"
+  ],
+  "mimics": [
+    {
+      "name": "Peripheral third nerve palsy with a separate capsular stroke",
+      "howToDistinguish": "Two lesions; the hemiparesis would be on the same side as the ptosis only by coincidence"
+    },
+    {
+      "name": "Benedikt syndrome",
+      "howToDistinguish": "Contralateral tremor and ataxia (red nucleus) rather than hemiplegia"
+    },
+    {
+      "name": "Claude syndrome",
+      "howToDistinguish": "Contralateral ataxia without weakness"
+    }
+  ],
+  "management": [
+    "Acute stroke management",
+    "Exclude an aneurysm or herniation urgently when the pupil is involved",
+    "Eye patching for diplopia while the palsy recovers"
+  ],
+  "citations": [
+    {
+      "ref": "sp-weber-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-sturge-weber-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-weber-test",
+      "section": "Introduction"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -8,
+      "y": -20,
+      "z": -12
+    },
+    "label": "medial crus cerebri and oculomotor fascicle"
   },
-  {
-   "modality": "bulbar",
-   "side": "contralateral",
-   "distribution": "tongue and lower face",
-   "sign": "Corticobulbar weakness",
-   "substrate": "pathway-corticobulbar"
-  }
- ],
- "reasoning": "The oculomotor nerve fascicles leave their nucleus in the periaqueductal gray and pass ventrally through the red nucleus and the medial part of the crus cerebri to emerge in the interpeduncular fossa. The middle three-fifths of the crus carry the corticospinal and corticobulbar fibers, which have not yet crossed; the corticobulbar fibers will cross at the level of the facial and hypoglossal nuclei and the corticospinal fibers at the pyramidal decussation. A ventral midbrain lesion therefore paralyzes the contralateral face, arm and leg together, in contrast to the medullary syndromes where the face is spared, while the oculomotor fibers, already the final lower motor neurons for the ipsilateral eye muscles and the parasympathetic supply to the pupil, are lost on the side of the lesion. The result is the alternating pattern of a cranial nerve palsy on one side and long tract signs on the other, and the identity of the nerve fixes the level at the midbrain. The pupil is involved because the parasympathetic fibers travel within the fascicle, unlike the ischemic peripheral third nerve palsy of diabetes, where they are usually spared.",
- "imagingFindings": [
-  {
-   "pathology": "Ventral midbrain infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the medial crus cerebri and adjacent tegmentum on the side of the third nerve palsy.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Uncal herniation compressing the peduncle",
-   "modality": "CT",
-   "finding": "Supratentorial mass with medial temporal lobe displacement and a compressed midbrain; false localizing when the opposite peduncle is pressed against the tentorium (Kernohan).",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Posterior cerebral artery or basilar perforator infarct",
-  "Midbrain hemorrhage",
-  "Uncal herniation",
-  "Midbrain tumor or aneurysm of the posterior cerebral artery"
- ],
- "mimics": [
-  {
-   "name": "Peripheral third nerve palsy with a separate capsular stroke",
-   "howToDistinguish": "Two lesions; the hemiparesis would be on the same side as the ptosis only by coincidence"
-  },
-  {
-   "name": "Benedikt syndrome",
-   "howToDistinguish": "Contralateral tremor and ataxia (red nucleus) rather than hemiplegia"
-  },
-  {
-   "name": "Claude syndrome",
-   "howToDistinguish": "Contralateral ataxia without weakness"
-  }
- ],
- "management": [
-  "Acute stroke management",
-  "Exclude an aneurysm or herniation urgently when the pupil is involved",
-  "Eye patching for diplopia while the palsy recovers"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    217,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    94,
-    94
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -8,
-   "y": -20,
-   "z": -12
-  },
-  "label": "medial crus cerebri and oculomotor fascicle"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

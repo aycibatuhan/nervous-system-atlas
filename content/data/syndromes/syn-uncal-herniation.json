@@ -1,165 +1,137 @@
 {
- "kind": "syndrome",
- "id": "syn-uncal-herniation",
- "name": "Uncal (lateral transtentorial) herniation",
- "eponyms": [
-  "lateral transtentorial herniation",
-  "Kernohan notch phenomenon"
- ],
- "category": "herniation",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "gyrus-parahippocampal-uncus",
-   "cn-03-oculomotor",
-   "cerebral-peduncle-crus",
-   "tentorium-cerebelli",
-   "artery-pca",
-   "reticular-formation"
+  "kind": "syndrome",
+  "id": "syn-uncal-herniation",
+  "name": "Uncal (lateral transtentorial) herniation",
+  "eponyms": [
+    "lateral transtentorial herniation",
+    "Kernohan notch phenomenon"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "uncus-l"
-  ]
- },
- "presentation": "A patient with a growing temporal hematoma becomes drowsy, and the pupil on the side of the lesion enlarges and stops reacting to light while the eye drifts down and out. Then the opposite arm and leg weaken and the plantar becomes extensor. If nothing is done the patient becomes unresponsive, the other pupil dilates, the posture becomes extensor and breathing becomes irregular. Occasionally the weakness appears on the same side as the mass, because the opposite peduncle has been crushed against the tentorial edge.",
- "deficits": [
-  {
-   "modality": "pupil",
-   "side": "ipsilateral",
-   "distribution": "one pupil, then both",
-   "sign": "Early dilated, sluggish pupil from third nerve compression; later fixed and dilated, then bilateral",
-   "substrate": "cn-03-oculomotor"
+  "category": "herniation",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "gyrus-parahippocampal-uncus",
+      "cn-03-oculomotor",
+      "cerebral-peduncle-crus",
+      "tentorium-cerebelli",
+      "artery-pca",
+      "reticular-formation"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "consciousness",
-   "side": "n/a",
-   "distribution": "midbrain reticular formation",
-   "sign": "Progressive drowsiness to coma as the midbrain is displaced and compressed",
-   "substrate": "reticular-formation"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "uncus-l"
+    ]
   },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "arm and leg",
-   "sign": "Hemiparesis with extensor plantar from compression of the ipsilateral cerebral peduncle",
-   "substrate": "pathway-lateral-corticospinal"
+  "presentation": "A patient with a growing temporal hematoma becomes drowsy, and the pupil on the side of the lesion enlarges and stops reacting to light while the eye drifts down and out. Then the opposite arm and leg weaken and the plantar becomes extensor. If nothing is done the patient becomes unresponsive, the other pupil dilates, the posture becomes extensor and breathing becomes irregular. Occasionally the weakness appears on the same side as the mass, because the opposite peduncle has been crushed against the tentorial edge.",
+  "deficits": [
+    {
+      "modality": "pupil",
+      "side": "ipsilateral",
+      "distribution": "one pupil, then both",
+      "sign": "Early dilated, sluggish pupil from third nerve compression; later fixed and dilated, then bilateral",
+      "substrate": "cn-03-oculomotor"
+    },
+    {
+      "modality": "consciousness",
+      "side": "n/a",
+      "distribution": "midbrain reticular formation",
+      "sign": "Progressive drowsiness to coma as the midbrain is displaced and compressed",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "arm and leg",
+      "sign": "Hemiparesis with extensor plantar from compression of the ipsilateral cerebral peduncle",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "arm and leg (false localizing)",
+      "sign": "Kernohan notch: hemiparesis on the side of the mass from compression of the contralateral peduncle against the tentorium",
+      "substrate": "cerebral-peduncle-crus"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "homonymous",
+      "sign": "Occipital infarct from compression of the posterior cerebral artery against the tentorial edge",
+      "substrate": "artery-pca"
+    }
+  ],
+  "reasoning": "The tentorium cerebelli separates the temporal lobes from the posterior fossa, leaving the tentorial notch through which the midbrain passes with the oculomotor nerves and the posterior cerebral arteries running beside it. An expanding lateral supratentorial mass pushes the medial temporal lobe, the uncus and parahippocampal gyrus, over the free edge of the tentorium into the notch. The first structure crushed is the oculomotor nerve, which runs forward from the midbrain beneath the uncus; its superficial pupilloconstrictor fibers fail before the motor fibers, so an enlarging, sluggish pupil on the side of the mass is the earliest sign, followed by ptosis and a down-and-out eye. The herniating uncus then presses on the cerebral peduncle, which carries the corticospinal fibers before their crossing in the medulla, so weakness appears on the opposite side; when the midbrain is instead displaced against the opposite tentorial edge, the contralateral peduncle is notched and the weakness appears on the same side as the mass, the false-localizing Kernohan sign, which is why the pupil, not the weakness, is trusted to indicate the side of the lesion. Compression and distortion of the midbrain reticular formation cause the decline in consciousness, and downward displacement stretches the paramedian perforating arteries, producing the Duret hemorrhages of the brainstem that make the late stages irreversible. The posterior cerebral artery is compressed against the tentorium, adding an occipital infarct in survivors.",
+  "imagingFindings": [
+    {
+      "pathology": "Uncal herniation",
+      "modality": "CT",
+      "finding": "Medial temporal lobe displaced into the suprasellar cistern, effacement of the ipsilateral ambient and suprasellar cisterns, midline shift, dilated contralateral temporal horn, midbrain rotation and widened contralateral ambient cistern.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Duret hemorrhages",
+      "modality": "MRI",
+      "finding": "Linear or flame-shaped hemorrhages in the midline of the midbrain and pons on SWI or CT after downward displacement.",
+      "sequence": "SWI"
+    },
+    {
+      "pathology": "PCA territory infarct",
+      "modality": "MRI",
+      "finding": "Occipital restricted diffusion on the side of the herniation.",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Epidural or subdural hematoma",
+    "Temporal lobe contusion or hemorrhage",
+    "Large MCA infarct with edema",
+    "Tumor or abscess of the temporal lobe"
+  ],
+  "mimics": [
+    {
+      "name": "Primary third nerve palsy from an aneurysm",
+      "howToDistinguish": "Alert patient, no hemiparesis or altered consciousness"
+    },
+    {
+      "name": "Metabolic coma",
+      "howToDistinguish": "Pupils small and reactive, no lateralizing signs"
+    },
+    {
+      "name": "Pontine hemorrhage",
+      "howToDistinguish": "Pinpoint reactive pupils, quadriplegia, abrupt coma"
+    }
+  ],
+  "management": [
+    "A dilating pupil in a patient with a mass is a surgical emergency: hyperventilate briefly, give mannitol or hypertonic saline, and evacuate the mass",
+    "Head elevation, sedation, avoid hypotension and hypoxia",
+    "Intracranial pressure monitoring and decompressive craniectomy when the mass cannot be removed"
+  ],
+  "citations": [
+    {
+      "ref": "sp-uncal-herniation",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-transtentorial-herniation",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-meninges",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -25,
+      "y": -10,
+      "z": -20
+    },
+    "label": "uncus at the tentorial notch beside the midbrain"
   },
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "arm and leg (false localizing)",
-   "sign": "Kernohan notch: hemiparesis on the side of the mass from compression of the contralateral peduncle against the tentorium",
-   "substrate": "cerebral-peduncle-crus"
-  },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "homonymous",
-   "sign": "Occipital infarct from compression of the posterior cerebral artery against the tentorial edge",
-   "substrate": "artery-pca"
-  }
- ],
- "reasoning": "The tentorium cerebelli separates the temporal lobes from the posterior fossa, leaving the tentorial notch through which the midbrain passes with the oculomotor nerves and the posterior cerebral arteries running beside it. An expanding lateral supratentorial mass pushes the medial temporal lobe, the uncus and parahippocampal gyrus, over the free edge of the tentorium into the notch. The first structure crushed is the oculomotor nerve, which runs forward from the midbrain beneath the uncus; its superficial pupilloconstrictor fibers fail before the motor fibers, so an enlarging, sluggish pupil on the side of the mass is the earliest sign, followed by ptosis and a down-and-out eye. The herniating uncus then presses on the cerebral peduncle, which carries the corticospinal fibers before their crossing in the medulla, so weakness appears on the opposite side; when the midbrain is instead displaced against the opposite tentorial edge, the contralateral peduncle is notched and the weakness appears on the same side as the mass, the false-localizing Kernohan sign, which is why the pupil, not the weakness, is trusted to indicate the side of the lesion. Compression and distortion of the midbrain reticular formation cause the decline in consciousness, and downward displacement stretches the paramedian perforating arteries, producing the Duret hemorrhages of the brainstem that make the late stages irreversible. The posterior cerebral artery is compressed against the tentorium, adding an occipital infarct in survivors.",
- "imagingFindings": [
-  {
-   "pathology": "Uncal herniation",
-   "modality": "CT",
-   "finding": "Medial temporal lobe displaced into the suprasellar cistern, effacement of the ipsilateral ambient and suprasellar cisterns, midline shift, dilated contralateral temporal horn, midbrain rotation and widened contralateral ambient cistern.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Duret hemorrhages",
-   "modality": "MRI",
-   "finding": "Linear or flame-shaped hemorrhages in the midline of the midbrain and pons on SWI or CT after downward displacement.",
-   "sequence": "SWI"
-  },
-  {
-   "pathology": "PCA territory infarct",
-   "modality": "MRI",
-   "finding": "Occipital restricted diffusion on the side of the herniation.",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Epidural or subdural hematoma",
-  "Temporal lobe contusion or hemorrhage",
-  "Large MCA infarct with edema",
-  "Tumor or abscess of the temporal lobe"
- ],
- "mimics": [
-  {
-   "name": "Primary third nerve palsy from an aneurysm",
-   "howToDistinguish": "Alert patient, no hemiparesis or altered consciousness"
-  },
-  {
-   "name": "Metabolic coma",
-   "howToDistinguish": "Pupils small and reactive, no lateralizing signs"
-  },
-  {
-   "name": "Pontine hemorrhage",
-   "howToDistinguish": "Pinpoint reactive pupils, quadriplegia, abrupt coma"
-  }
- ],
- "management": [
-  "A dilating pupil in a patient with a mass is a surgical emergency: hyperventilate briefly, give mannitol or hypertonic saline, and evacuate the mass",
-  "Head elevation, sedation, avoid hypotension and hypoxia",
-  "Intracranial pressure monitoring and decompressive craniectomy when the mass cannot be removed"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    459,
-    459
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    84,
-    84
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    87,
-    87
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    94,
-    94
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    270,
-    270
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -25,
-   "y": -10,
-   "z": -20
-  },
-  "label": "uncus at the tentorial notch beside the midbrain"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

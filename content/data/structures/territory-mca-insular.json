@@ -1,167 +1,139 @@
 {
- "kind": "structure",
- "id": "territory-mca-insular",
- "name": "MCA territory, insular",
- "synonyms": [
-  "insular MCA domain",
-  "M2 perforator territory"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-mca-insular-l",
-  "territory-mca-insular-r"
- ],
- "summary": "The insular MCA territory is the insula, the claustrum and the extreme and external capsules, supplied by short perforating branches of the M2 segments as they course over the insular surface. It is the first cortex to lose its gray-white distinction in an M1 occlusion (the insular ribbon sign) because it is the most distal territory of the perforators with no leptomeningeal collateral, and it is infarcted in almost every MCA stem stroke. Insular infarction adds autonomic instability, cardiac arrhythmia and altered taste and pain perception to the hemispheric signs, and its right-sided involvement carries the highest risk of sudden cardiac death after stroke.",
- "anatomy": {
-  "location": "The insular cortex within the Sylvian fissure (anterior and posterior lobules), the claustrum, the extreme and external capsules, and the medial surface of the opercula facing the insula; bounded laterally by the opercular parts of the frontal, parietal and temporal territories and medially by the lenticulostriate territory of the putamen.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Short insular perforators from the M2 segments",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-mca-insular",
+  "name": "MCA territory, insular",
+  "synonyms": [
+    "insular MCA domain",
+    "M2 perforator territory"
   ],
-  "efferents": [
-   {
-    "to": "Deep middle cerebral vein to the basal vein of Rosenthal",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-mca-insular-l",
+    "territory-mca-insular-r"
   ],
-  "pathways": []
- },
- "function": "The insula is the visceral and interoceptive cortex: it contains the primary gustatory cortex, the vestibular cortex, the cortical representation of pain and of visceral sensation, and the autonomic control areas that set heart rate and blood pressure, with the right anterior insula driving sympathetic and the left parasympathetic tone; it is also part of the language system on the left (articulation) and of the salience network on both sides. Its infarction produces cardiac arrhythmias, blood pressure lability, troponin rise and altered taste, contributes to apraxia of speech and impaired swallowing, and, when it is the only region infarcted, suggests a lenticulostriate or M2 perforator occlusion.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "arteries-lenticulostriate"
-  ],
-  "territories": [
-   "territory-mca-insular"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-mca-insular-l"
+  "summary": "The insular MCA territory is the insula, the claustrum and the extreme and external capsules, supplied by short perforating branches of the M2 segments as they course over the insular surface. It is the first cortex to lose its gray-white distinction in an M1 occlusion (the insular ribbon sign) because it is the most distal territory of the perforators with no leptomeningeal collateral, and it is infarcted in almost every MCA stem stroke. Insular infarction adds autonomic instability, cardiac arrhythmia and altered taste and pain perception to the hemispheric signs, and its right-sided involvement carries the highest risk of sudden cardiac death after stroke.",
+  "anatomy": {
+    "location": "The insular cortex within the Sylvian fissure (anterior and posterior lobules), the claustrum, the extreme and external capsules, and the medial surface of the opercula facing the insula; bounded laterally by the opercular parts of the frontal, parietal and temporal territories and medially by the lenticulostriate territory of the putamen.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Short insular perforators from the M2 segments",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Deep middle cerebral vein to the basal vein of Rosenthal",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The insula is the visceral and interoceptive cortex: it contains the primary gustatory cortex, the vestibular cortex, the cortical representation of pain and of visceral sensation, and the autonomic control areas that set heart rate and blood pressure, with the right anterior insula driving sympathetic and the left parasympathetic tone; it is also part of the language system on the left (articulation) and of the salience network on both sides. Its infarction produces cardiac arrhythmias, blood pressure lability, troponin rise and altered taste, contributes to apraxia of speech and impaired swallowing, and, when it is the only region infarcted, suggests a lenticulostriate or M2 perforator occlusion.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "arteries-lenticulostriate"
+    ],
+    "territories": [
+      "territory-mca-insular"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-mca-insular-l"
+        },
+        "label": "insular MCA territory within the Sylvian fissure"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-mca-insular-r"
+        },
+        "label": "insular domain between the opercula and the putamen"
+      }
+    ],
+    "normalAppearance": "On the overlay the insular domain is the cortex at the floor of the Sylvian fissure lateral to the putamen; on early CT the loss of its gray-white contrast is the insular ribbon sign.",
+    "pathology": [
+      {
+        "pathology": "Insular ribbon sign in acute MCA occlusion",
+        "modality": "CT",
+        "finding": "Loss of the gray-white distinction of the insular cortex within hours of M1 occlusion, before hypodensity elsewhere.",
+        "sequence": "CT non-contrast",
+        "timing": "Visible within 1-3 hours"
+      },
+      {
+        "pathology": "Isolated insular infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion confined to the insula with dysarthria, altered taste, autonomic symptoms and mild contralateral sensory change.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Herpes encephalitis (mimic)",
+        "modality": "MRI",
+        "finding": "Insular and medial temporal FLAIR change with fever; involvement of the insula with the temporal pole and sparing of the putamen.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Cardiac arrhythmia, blood pressure lability and troponin rise",
+        "side": "bilateral",
+        "mechanism": "Loss of insular autonomic control, worst with right insular infarcts"
+      },
+      {
+        "deficit": "Altered taste and visceral sensation",
+        "side": "contralateral",
+        "mechanism": "Gustatory and interoceptive insular cortex infarction"
+      },
+      {
+        "deficit": "Apraxia of speech and dysphagia (left)",
+        "side": "n/a",
+        "mechanism": "Anterior insular infarction"
+      }
+    ],
+    "examination": [
+      "ECG monitoring for 72 hours after any MCA stroke that includes the insula",
+      "Taste and swallowing assessment",
+      "Blood pressure trends"
+    ],
+    "syndromes": [
+      "syn-mca-stem-infarct",
+      "syn-mca-superior-division"
+    ],
+    "pearls": [
+      "The insula goes first and tells you the MCA is blocked: look for the ribbon",
+      "A right insular stroke is a cardiac risk; monitor the rhythm",
+      "The insula is the brain's cardiologist and its taste bud"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-insular-cortex",
+      "section": "Introduction"
     },
-    "label": "insular MCA territory within the Sylvian fissure"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-mca-insular-r"
+    {
+      "ref": "sp-middle-cerebral-artery-stroke",
+      "section": "Introduction"
     },
-    "label": "insular domain between the opercula and the putamen"
-   }
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "On the overlay the insular domain is the cortex at the floor of the Sylvian fissure lateral to the putamen; on early CT the loss of its gray-white contrast is the insular ribbon sign.",
-  "pathology": [
-   {
-    "pathology": "Insular ribbon sign in acute MCA occlusion",
-    "modality": "CT",
-    "finding": "Loss of the gray-white distinction of the insular cortex within hours of M1 occlusion, before hypodensity elsewhere.",
-    "sequence": "CT non-contrast",
-    "timing": "Visible within 1-3 hours"
-   },
-   {
-    "pathology": "Isolated insular infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion confined to the insula with dysarthria, altered taste, autonomic symptoms and mild contralateral sensory change.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Herpes encephalitis (mimic)",
-    "modality": "MRI",
-    "finding": "Insular and medial temporal FLAIR change with fever; involvement of the insula with the temporal pole and sparing of the putamen.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Cardiac arrhythmia, blood pressure lability and troponin rise",
-    "side": "bilateral",
-    "mechanism": "Loss of insular autonomic control, worst with right insular infarcts"
-   },
-   {
-    "deficit": "Altered taste and visceral sensation",
-    "side": "contralateral",
-    "mechanism": "Gustatory and interoceptive insular cortex infarction"
-   },
-   {
-    "deficit": "Apraxia of speech and dysphagia (left)",
-    "side": "n/a",
-    "mechanism": "Anterior insular infarction"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "ECG monitoring for 72 hours after any MCA stroke that includes the insula",
-   "Taste and swallowing assessment",
-   "Blood pressure trends"
-  ],
-  "syndromes": [
-   "syn-mca-stem-infarct",
-   "syn-mca-superior-division"
-  ],
-  "pearls": [
-   "The insula goes first and tells you the MCA is blocked: look for the ribbon",
-   "A right insular stroke is a cardiac risk; monitor the rhythm",
-   "The insula is the brain's cardiologist and its taste bud"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    286,
-    288
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    185,
-    190
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level1",
- "parent": "territory-mca"
+  "status": "draft",
+  "subsystem": "level1",
+  "parent": "territory-mca"
 }

@@ -1,181 +1,161 @@
 {
- "kind": "structure",
- "id": "cortex-subcallosal",
- "name": "Subcallosal cortex",
- "synonyms": [
-  "subgenual cingulate",
-  "area 25",
-  "paraterminal gyrus"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cortex-subcallosal-l",
-  "cortex-subcallosal-r"
- ],
- "summary": "The subcallosal cortex is the medial frontal cortex beneath the genu and rostrum of the corpus callosum, including the subgenual cingulate (Brodmann area 25), the paraterminal gyrus and the subcallosal area in front of the lamina terminalis. It is the part of the limbic cortex most closely tied to mood: it is overactive in depression, quiet after successful treatment and a target of deep brain stimulation for resistant depression. It connects the medial prefrontal cortex to the hypothalamus, amygdala and brainstem monoamine nuclei, lies against the anterior cerebral and anterior communicating arteries, and is bordered behind by the septal area and the basal forebrain, which is why anterior communicating aneurysm surgery can leave a patient amnestic and apathetic.",
- "anatomy": {
-  "location": "Medial surface of the frontal lobe below the genu of the corpus callosum and in front of the lamina terminalis and the septal area, above the olfactory trigone and the anterior perforated substance, continuous with the gyrus rectus below.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Orbitofrontal and medial prefrontal cortex",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Amygdala and hippocampus",
-    "via": "uncinate fasciculus and fornix"
-   },
-   {
-    "from": "Anterior perforated substance (olfactory)",
-    "via": "olfactory striae"
-   }
+  "kind": "structure",
+  "id": "cortex-subcallosal",
+  "name": "Subcallosal cortex",
+  "synonyms": [
+    "subgenual cingulate",
+    "area 25",
+    "paraterminal gyrus"
   ],
-  "efferents": [
-   {
-    "to": "Hypothalamus",
-    "via": "medial forebrain bundle"
-   },
-   {
-    "to": "Raphe and locus coeruleus",
-    "via": "descending medial forebrain bundle fibers"
-   },
-   {
-    "to": "Ventral striatum and accumbens",
-    "via": "corticostriatal fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cortex-subcallosal-l",
+    "cortex-subcallosal-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic",
-   "pathway-olfactory"
-  ]
- },
- "function": "Subgenual cingulate cortex integrates the emotional value assigned by the orbitofrontal cortex with hypothalamic and visceral states and sets the tone of mood and the autonomic response to sadness; it inhibits the amygdala and modulates the raphe and locus coeruleus through descending fibers, and its metabolic activity tracks depressive symptoms. The paraterminal gyrus and subcallosal area belong to the septal region and take part in the reward and memory circuits through the fornix and the medial forebrain bundle. The region also processes olfactory and visceral information reaching it from the anterior perforated substance.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-acom"
+  "summary": "The subcallosal cortex is the medial frontal cortex beneath the genu and rostrum of the corpus callosum, including the subgenual cingulate (Brodmann area 25), the paraterminal gyrus and the subcallosal area in front of the lamina terminalis. It is the part of the limbic cortex most closely tied to mood: it is overactive in depression, quiet after successful treatment and a target of deep brain stimulation for resistant depression. It connects the medial prefrontal cortex to the hypothalamus, amygdala and brainstem monoamine nuclei, lies against the anterior cerebral and anterior communicating arteries, and is bordered behind by the septal area and the basal forebrain, which is why anterior communicating aneurysm surgery can leave a patient amnestic and apathetic.",
+  "anatomy": {
+    "location": "Medial surface of the frontal lobe below the genu of the corpus callosum and in front of the lamina terminalis and the septal area, above the olfactory trigone and the anterior perforated substance, continuous with the gyrus rectus below.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Orbitofrontal and medial prefrontal cortex",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Amygdala and hippocampus",
+        "via": "uncinate fasciculus and fornix"
+      },
+      {
+        "from": "Anterior perforated substance (olfactory)",
+        "via": "olfactory striae"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Hypothalamus",
+        "via": "medial forebrain bundle"
+      },
+      {
+        "to": "Raphe and locus coeruleus",
+        "via": "descending medial forebrain bundle fibers"
+      },
+      {
+        "to": "Ventral striatum and accumbens",
+        "via": "corticostriatal fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic",
+      "pathway-olfactory"
+    ]
+  },
+  "function": "Subgenual cingulate cortex integrates the emotional value assigned by the orbitofrontal cortex with hypothalamic and visceral states and sets the tone of mood and the autonomic response to sadness; it inhibits the amygdala and modulates the raphe and locus coeruleus through descending fibers, and its metabolic activity tracks depressive symptoms. The paraterminal gyrus and subcallosal area belong to the septal region and take part in the reward and memory circuits through the fornix and the medial forebrain bundle. The region also processes olfactory and visceral information reaching it from the anterior perforated substance.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-acom"
+    ],
+    "territories": [
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cortex-subcallosal-l"
+        },
+        "label": "subcallosal cortex under the genu and rostrum"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cortex-subcallosal-r"
+        },
+        "label": "subgenual cingulate below the genu of the corpus callosum"
+      }
+    ],
+    "normalAppearance": "Thin cortex under the genu on midline sagittal images, curving down in front of the lamina terminalis and the anterior commissure; the anterior cerebral arteries run immediately in front of it in the interhemispheric fissure.",
+    "pathology": [
+      {
+        "pathology": "Anterior communicating artery aneurysm rupture",
+        "modality": "CT",
+        "finding": "Blood in the interhemispheric fissure with a hematoma of the subcallosal and gyrus rectus region; later basal forebrain infarcts with amnesia.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Treatment-resistant depression (functional imaging)",
+        "modality": "PET",
+        "finding": "Increased metabolism in the subgenual cingulate that falls with effective treatment; used to plan deep brain stimulation.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Low-grade glioma of the gyrus rectus and subcallosal area",
+        "modality": "MRI",
+        "finding": "Non-enhancing FLAIR-bright expansion below the genu with mood change and anosmia.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Depressed mood, anhedonia and altered autonomic tone",
+        "side": "bilateral",
+        "mechanism": "Dysfunction of the subgenual cingulate mood circuit and its hypothalamic and monoaminergic connections"
+      },
+      {
+        "deficit": "Apathy and amnesia after vascular injury",
+        "side": "bilateral",
+        "mechanism": "Extension of anterior communicating artery infarction into the septal area and basal forebrain"
+      },
+      {
+        "deficit": "Anosmia",
+        "side": "ipsilateral",
+        "mechanism": "Involvement of the adjacent olfactory trigone and tract"
+      }
+    ],
+    "examination": [
+      "Mood, anhedonia and sleep history in any patient with a medial frontal lesion",
+      "Recent memory and confabulation after anterior communicating artery aneurysm repair",
+      "Smell testing"
+    ],
+    "syndromes": [
+      "syn-aca-infarct",
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Area 25 is the hub of the depression circuit and a stimulation target; a lesion here can present as new depression",
+      "The anterior communicating artery sits directly in front of the subcallosal cortex and septal area: rupture and clipping injure both",
+      "Subcallosal and orbitofrontal lesions share the olfactory tract and cause anosmia"
+    ]
+  },
+  "pitfalls": [
+    "The subgenual region is small and easily overlooked on axial images; look at midline sagittal views when a mood or memory change follows an anterior circulation event"
   ],
-  "territories": [
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cortex-subcallosal-l"
+  "citations": [
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
     },
-    "label": "subcallosal cortex under the genu and rostrum"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cortex-subcallosal-r"
+    {
+      "ref": "sp-prefrontal-cortex",
+      "section": "Structure and Function"
     },
-    "label": "subgenual cingulate below the genu of the corpus callosum"
-   }
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Thin cortex under the genu on midline sagittal images, curving down in front of the lamina terminalis and the anterior commissure; the anterior cerebral arteries run immediately in front of it in the interhemispheric fissure.",
-  "pathology": [
-   {
-    "pathology": "Anterior communicating artery aneurysm rupture",
-    "modality": "CT",
-    "finding": "Blood in the interhemispheric fissure with a hematoma of the subcallosal and gyrus rectus region; later basal forebrain infarcts with amnesia.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Treatment-resistant depression (functional imaging)",
-    "modality": "PET",
-    "finding": "Increased metabolism in the subgenual cingulate that falls with effective treatment; used to plan deep brain stimulation.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Low-grade glioma of the gyrus rectus and subcallosal area",
-    "modality": "MRI",
-    "finding": "Non-enhancing FLAIR-bright expansion below the genu with mood change and anosmia.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Depressed mood, anhedonia and altered autonomic tone",
-    "side": "bilateral",
-    "mechanism": "Dysfunction of the subgenual cingulate mood circuit and its hypothalamic and monoaminergic connections"
-   },
-   {
-    "deficit": "Apathy and amnesia after vascular injury",
-    "side": "bilateral",
-    "mechanism": "Extension of anterior communicating artery infarction into the septal area and basal forebrain"
-   },
-   {
-    "deficit": "Anosmia",
-    "side": "ipsilateral",
-    "mechanism": "Involvement of the adjacent olfactory trigone and tract"
-   }
+  "tags": [
+    "subgenual cingulate",
+    "mood",
+    "area 25"
   ],
-  "examination": [
-   "Mood, anhedonia and sleep history in any patient with a medial frontal lesion",
-   "Recent memory and confabulation after anterior communicating artery aneurysm repair",
-   "Smell testing"
-  ],
-  "syndromes": [
-   "syn-aca-infarct",
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Area 25 is the hub of the depression circuit and a stimulation target; a lesion here can present as new depression",
-   "The anterior communicating artery sits directly in front of the subcallosal cortex and septal area: rupture and clipping injure both",
-   "Subcallosal and orbitofrontal lesions share the olfactory tract and cause anosmia"
-  ]
- },
- "pitfalls": [
-  "The subgenual region is small and easily overlooked on axial images; look at midline sagittal views when a mood or memory change follows an anterior circulation event"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "subgenual cingulate",
-  "mood",
-  "area 25"
- ],
- "status": "draft",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "status": "draft",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

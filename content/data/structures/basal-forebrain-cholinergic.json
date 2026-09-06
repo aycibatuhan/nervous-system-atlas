@@ -1,190 +1,162 @@
 {
- "kind": "structure",
- "id": "basal-forebrain-cholinergic",
- "name": "Basal forebrain cholinergic nuclei",
- "synonyms": [
-  "medial septal nucleus",
-  "nucleus of the diagonal band",
-  "substantia innominata"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "basal-forebrain-cholinergic-l",
-  "basal-forebrain-cholinergic-r"
- ],
- "summary": "The basal forebrain cholinergic nuclei are the medial septal nucleus, the vertical and horizontal limbs of the nucleus of the diagonal band and the nucleus basalis of Meynert, a continuous band of large acetylcholine-producing neurons beneath the anterior commissure and the striatum in the substantia innominata and the septal region. They supply nearly all the acetylcholine of the cerebral cortex, hippocampus and amygdala, tuning attention, cortical plasticity and memory encoding, and they degenerate in Alzheimer disease and dementia with Lewy bodies, which is the rationale for cholinesterase inhibitors. They are injured by anterior communicating artery aneurysm rupture and surgery, producing the basal forebrain amnesia with confabulation.",
- "anatomy": {
-  "location": "Ventral forebrain beneath the anterior commissure and the globus pallidus, from the septal area and the diagonal band on the medial surface, through the substantia innominata under the anterior perforated substance, to the nucleus basalis lateral to the hypothalamus and medial to the amygdala.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Hypothalamus and reticular activating system",
-    "via": "medial forebrain bundle"
-   },
-   {
-    "from": "Amygdala",
-    "via": "ventral amygdalofugal pathway"
-   },
-   {
-    "from": "Prefrontal and limbic cortex",
-    "via": "corticofugal fibers"
-   }
+  "kind": "structure",
+  "id": "basal-forebrain-cholinergic",
+  "name": "Basal forebrain cholinergic nuclei",
+  "synonyms": [
+    "medial septal nucleus",
+    "nucleus of the diagonal band",
+    "substantia innominata"
   ],
-  "efferents": [
-   {
-    "to": "Hippocampus",
-    "via": "fornix"
-   },
-   {
-    "to": "Whole neocortex",
-    "via": "medial and lateral cholinergic pathways"
-   },
-   {
-    "to": "Amygdala and olfactory bulb",
-    "via": "ventral pathway"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "basal-forebrain-cholinergic-l",
+    "basal-forebrain-cholinergic-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic",
-   "pathway-olfactory"
-  ]
- },
- "function": "The medial septal nucleus and the vertical limb of the diagonal band project through the fornix to the hippocampus and set the theta rhythm that gates memory encoding; the horizontal limb supplies the olfactory bulb and the amygdala; and the nucleus basalis projects diffusely to the whole neocortex, where acetylcholine increases the signal-to-noise ratio of sensory processing, sustains attention and permits experience-dependent cortical reorganization. These neurons are driven by the hypothalamus, the brainstem arousal systems and the amygdala, and they are silent in slow-wave sleep and active in waking and REM. Their loss reduces cortical acetylcholine and produces the attentional and memory deficits of dementia and of anticholinergic delirium.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-acom",
-   "artery-anterior-choroidal"
+  "summary": "The basal forebrain cholinergic nuclei are the medial septal nucleus, the vertical and horizontal limbs of the nucleus of the diagonal band and the nucleus basalis of Meynert, a continuous band of large acetylcholine-producing neurons beneath the anterior commissure and the striatum in the substantia innominata and the septal region. They supply nearly all the acetylcholine of the cerebral cortex, hippocampus and amygdala, tuning attention, cortical plasticity and memory encoding, and they degenerate in Alzheimer disease and dementia with Lewy bodies, which is the rationale for cholinesterase inhibitors. They are injured by anterior communicating artery aneurysm rupture and surgery, producing the basal forebrain amnesia with confabulation.",
+  "anatomy": {
+    "location": "Ventral forebrain beneath the anterior commissure and the globus pallidus, from the septal area and the diagonal band on the medial surface, through the substantia innominata under the anterior perforated substance, to the nucleus basalis lateral to the hypothalamus and medial to the amygdala.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Hypothalamus and reticular activating system",
+        "via": "medial forebrain bundle"
+      },
+      {
+        "from": "Amygdala",
+        "via": "ventral amygdalofugal pathway"
+      },
+      {
+        "from": "Prefrontal and limbic cortex",
+        "via": "corticofugal fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Hippocampus",
+        "via": "fornix"
+      },
+      {
+        "to": "Whole neocortex",
+        "via": "medial and lateral cholinergic pathways"
+      },
+      {
+        "to": "Amygdala and olfactory bulb",
+        "via": "ventral pathway"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic",
+      "pathway-olfactory"
+    ]
+  },
+  "function": "The medial septal nucleus and the vertical limb of the diagonal band project through the fornix to the hippocampus and set the theta rhythm that gates memory encoding; the horizontal limb supplies the olfactory bulb and the amygdala; and the nucleus basalis projects diffusely to the whole neocortex, where acetylcholine increases the signal-to-noise ratio of sensory processing, sustains attention and permits experience-dependent cortical reorganization. These neurons are driven by the hypothalamus, the brainstem arousal systems and the amygdala, and they are silent in slow-wave sleep and active in waking and REM. Their loss reduces cortical acetylcholine and produces the attentional and memory deficits of dementia and of anticholinergic delirium.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-acom",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "basal-forebrain-cholinergic-l"
+        },
+        "label": "basal forebrain beneath the anterior commissure"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "basal-forebrain-cholinergic-r"
+        },
+        "label": "septal region and diagonal band under the rostrum"
+      }
+    ],
+    "normalAppearance": "A thin band of gray matter under the anterior commissure and the pallidum on coronal images at the level of the anterior commissure, best seen as the substantia innominata between the optic tract and the ventral pallidum; nucleus basalis volume is measurable only by atlas-based methods.",
+    "pathology": [
+      {
+        "pathology": "Alzheimer disease and dementia with Lewy bodies",
+        "modality": "MRI",
+        "finding": "Reduced basal forebrain volume on atlas-based measurements, preceding cortical atrophy; correlates with cholinergic deficit and response to cholinesterase inhibitors.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Anterior communicating artery aneurysm rupture or surgery",
+        "modality": "MRI",
+        "finding": "Infarction of the basal forebrain and septal area beneath the rostrum with amnesia, confabulation and personality change.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Anticholinergic delirium (functional)",
+        "modality": "EEG",
+        "finding": "Diffuse slowing with inattention and hallucinations in a patient on anticholinergic drugs, reversing when the drug is stopped; reflects loss of cholinergic tone rather than a lesion.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia with confabulation",
+        "side": "bilateral",
+        "mechanism": "Loss of septohippocampal cholinergic drive and theta rhythm"
+      },
+      {
+        "deficit": "Inattention, fluctuating alertness and hallucinations",
+        "side": "bilateral",
+        "mechanism": "Loss of cortical acetylcholine from the nucleus basalis"
+      },
+      {
+        "deficit": "Reduced cortical plasticity and learning",
+        "side": "bilateral",
+        "mechanism": "Loss of the cholinergic permissive signal for cortical reorganization"
+      }
+    ],
+    "examination": [
+      "Attention testing (months backward, digit span) before memory testing",
+      "Delayed recall and confabulation",
+      "Medication review for anticholinergic burden in any cognitively impaired patient"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "Cholinesterase inhibitors work because the nucleus basalis dies before the cortex does",
+      "Anticholinergic drugs are chemical basal forebrain lesions: stop them before diagnosing dementia",
+      "Basal forebrain amnesia after aneurysm surgery confabulates; hippocampal amnesia does not"
+    ]
+  },
+  "pitfalls": [
+    "Basal forebrain infarcts are missed on routine axial CT; MRI with coronal DWI through the anterior commissure shows them"
   ],
-  "territories": [
-   "territory-aca",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "basal-forebrain-cholinergic-l"
+  "citations": [
+    {
+      "ref": "sp-alzheimer-disease",
+      "section": "Pathophysiology"
     },
-    "label": "basal forebrain beneath the anterior commissure"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "basal-forebrain-cholinergic-r"
+    {
+      "ref": "sp-acetylcholine",
+      "section": "Pathophysiology"
     },
-    "label": "septal region and diagonal band under the rostrum"
-   }
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A thin band of gray matter under the anterior commissure and the pallidum on coronal images at the level of the anterior commissure, best seen as the substantia innominata between the optic tract and the ventral pallidum; nucleus basalis volume is measurable only by atlas-based methods.",
-  "pathology": [
-   {
-    "pathology": "Alzheimer disease and dementia with Lewy bodies",
-    "modality": "MRI",
-    "finding": "Reduced basal forebrain volume on atlas-based measurements, preceding cortical atrophy; correlates with cholinergic deficit and response to cholinesterase inhibitors.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Anterior communicating artery aneurysm rupture or surgery",
-    "modality": "MRI",
-    "finding": "Infarction of the basal forebrain and septal area beneath the rostrum with amnesia, confabulation and personality change.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Anticholinergic delirium (functional)",
-    "modality": "EEG",
-    "finding": "Diffuse slowing with inattention and hallucinations in a patient on anticholinergic drugs, reversing when the drug is stopped; reflects loss of cholinergic tone rather than a lesion.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia with confabulation",
-    "side": "bilateral",
-    "mechanism": "Loss of septohippocampal cholinergic drive and theta rhythm"
-   },
-   {
-    "deficit": "Inattention, fluctuating alertness and hallucinations",
-    "side": "bilateral",
-    "mechanism": "Loss of cortical acetylcholine from the nucleus basalis"
-   },
-   {
-    "deficit": "Reduced cortical plasticity and learning",
-    "side": "bilateral",
-    "mechanism": "Loss of the cholinergic permissive signal for cortical reorganization"
-   }
+  "tags": [
+    "acetylcholine",
+    "basal forebrain",
+    "dementia"
   ],
-  "examination": [
-   "Attention testing (months backward, digit span) before memory testing",
-   "Delayed recall and confabulation",
-   "Medication review for anticholinergic burden in any cognitively impaired patient"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "Cholinesterase inhibitors work because the nucleus basalis dies before the cortex does",
-   "Anticholinergic drugs are chemical basal forebrain lesions: stop them before diagnosing dementia",
-   "Basal forebrain amnesia after aneurysm surgery confabulates; hippocampal amnesia does not"
-  ]
- },
- "pitfalls": [
-  "Basal forebrain infarcts are missed on routine axial CT; MRI with coronal DWI through the anterior commissure shows them"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    55,
-    58
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    376,
-    378
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  }
- ],
- "tags": [
-  "acetylcholine",
-  "basal forebrain",
-  "dementia"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "septal-area"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "septal-area"
 }

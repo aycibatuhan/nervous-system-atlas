@@ -1,145 +1,129 @@
 {
- "kind": "syndrome",
- "id": "syn-radiculopathy-lumbosacral",
- "name": "Lumbosacral radiculopathy (L4, L5, S1)",
- "eponyms": [
-  "sciatica"
- ],
- "category": "radiculopathy",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "roots-l2-s1",
-   "spinal-nerve-root-dermatome",
-   "cauda-equina",
-   "dorsal-root-ganglion"
+  "kind": "syndrome",
+  "id": "syn-radiculopathy-lumbosacral",
+  "name": "Lumbosacral radiculopathy (L4, L5, S1)",
+  "eponyms": [
+    "sciatica"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "cauda-equina"
-  ]
- },
- "presentation": "A patient bends to lift something and feels pain in the back that shoots down the back of the leg into the foot, worse on coughing, sitting and bending, with tingling in the big toe or the little toe. Raising the straight leg reproduces the pain at thirty degrees. The findings give the root: weak dorsiflexion of the ankle and toes with numbness of the dorsum of the foot for L5, absent ankle reflex with weak plantar flexion and numbness of the lateral foot for S1, weak quadriceps with a reduced knee jerk and numbness of the medial leg for L4.",
- "deficits": [
-  {
-   "modality": "pain",
-   "side": "ipsilateral",
-   "distribution": "back to leg in a dermatomal band (sciatica)",
-   "sign": "Radicular pain worse on sitting, bending and Valsalva; positive straight leg raise (L5, S1) or femoral stretch test (L4)",
-   "substrate": "spinal-nerve-root-dermatome"
+  "category": "radiculopathy",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "roots-l2-s1",
+      "spinal-nerve-root-dermatome",
+      "cauda-equina",
+      "dorsal-root-ganglion"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "dermatome (L4 medial leg, L5 dorsum of the foot and big toe, S1 lateral foot and sole)",
-   "sign": "Dermatomal sensory loss",
-   "substrate": "dorsal-root-ganglion"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "cauda-equina"
+    ]
   },
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "myotome",
-   "sign": "L4 quadriceps; L5 extensor hallucis longus, tibialis anterior, hip abductors; S1 plantar flexors and gluteus maximus",
-   "substrate": "roots-l2-s1"
+  "presentation": "A patient bends to lift something and feels pain in the back that shoots down the back of the leg into the foot, worse on coughing, sitting and bending, with tingling in the big toe or the little toe. Raising the straight leg reproduces the pain at thirty degrees. The findings give the root: weak dorsiflexion of the ankle and toes with numbness of the dorsum of the foot for L5, absent ankle reflex with weak plantar flexion and numbness of the lateral foot for S1, weak quadriceps with a reduced knee jerk and numbness of the medial leg for L4.",
+  "deficits": [
+    {
+      "modality": "pain",
+      "side": "ipsilateral",
+      "distribution": "back to leg in a dermatomal band (sciatica)",
+      "sign": "Radicular pain worse on sitting, bending and Valsalva; positive straight leg raise (L5, S1) or femoral stretch test (L4)",
+      "substrate": "spinal-nerve-root-dermatome"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "dermatome (L4 medial leg, L5 dorsum of the foot and big toe, S1 lateral foot and sole)",
+      "sign": "Dermatomal sensory loss",
+      "substrate": "dorsal-root-ganglion"
+    },
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "myotome",
+      "sign": "L4 quadriceps; L5 extensor hallucis longus, tibialis anterior, hip abductors; S1 plantar flexors and gluteus maximus",
+      "substrate": "roots-l2-s1"
+    },
+    {
+      "modality": "reflex",
+      "side": "ipsilateral",
+      "distribution": "knee (L4) or ankle (S1)",
+      "sign": "Reduced knee jerk (L4) or ankle jerk (S1); L5 has no reliable reflex",
+      "substrate": "roots-l2-s1"
+    }
+  ],
+  "reasoning": "In the lumbar spine the roots descend within the canal for several segments before exiting, so a posterolateral disc herniation at one level compresses the root that is passing by on its way to the foramen one level below: an L4–L5 disc pinches the L5 root and an L5–S1 disc the S1 root, which are the two commonest patterns, whereas a far lateral disc catches the root exiting at that level. The compressed root is inflamed and mechanically sensitive, so stretching it by raising the straight leg, which tenses the sciatic nerve and the L5 and S1 roots, reproduces the pain, and raising the opposite leg (crossed straight leg raise) is a specific though less sensitive sign; the L4 root is stretched instead by extending the hip with the knee flexed. The pattern is strictly ipsilateral because the lesion is proximal to the plexus, and it distinguishes itself from a peripheral neuropathy by crossing nerve territories: L5 weakness involves the tibialis anterior and extensor hallucis (deep peroneal nerve) together with the hip abductors (superior gluteal nerve) and the ankle invertor (tibial nerve), which no single nerve lesion produces, and this is how an L5 radiculopathy is separated from the common peroneal palsy that also causes foot drop. The reflex arcs run through the roots, so the ankle reflex is lost with S1 and the knee reflex with L4. A large central disc herniation can compress the whole cauda equina and must be excluded by asking about perineal numbness and bladder function.",
+  "imagingFindings": [
+    {
+      "pathology": "Lumbar disc herniation",
+      "modality": "MRI",
+      "finding": "Posterolateral extrusion at L4–L5 or L5–S1 displacing the traversing root in the lateral recess on axial T2; far lateral discs compress the exiting root in the foramen.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Foraminal stenosis and spondylolisthesis",
+      "modality": "MRI",
+      "finding": "Facet hypertrophy and slip narrowing the foramen and compressing the exiting root, seen on sagittal images.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Denervation",
+      "modality": "EMG/NCS",
+      "finding": "Denervation in a myotomal distribution including paraspinal muscles with normal sural and superficial peroneal sensory responses.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Lumbar disc herniation",
+    "Degenerative foraminal stenosis and spondylolisthesis",
+    "Synovial cyst",
+    "Herpes zoster",
+    "Diabetic radiculoplexus neuropathy",
+    "Metastasis or nerve sheath tumor"
+  ],
+  "mimics": [
+    {
+      "name": "Common peroneal neuropathy (vs L5)",
+      "howToDistinguish": "Foot drop with sparing of inversion and hip abduction; sensory loss over the dorsum only; conduction block at the fibular head"
+    },
+    {
+      "name": "Hip or sacroiliac disease",
+      "howToDistinguish": "Pain with joint movement, no neurological deficit"
+    },
+    {
+      "name": "Lumbosacral plexopathy",
+      "howToDistinguish": "Multiple roots' territories, often painful, with weight loss or diabetes"
+    },
+    {
+      "name": "Cauda equina syndrome",
+      "howToDistinguish": "Bilateral, saddle anesthesia, sphincter involvement: emergency"
+    }
+  ],
+  "management": [
+    "Most cases settle within 6–12 weeks with activity as tolerated and analgesia; urgent imaging only for red flags (sphincter symptoms, progressive weakness, cancer, infection)",
+    "MRI and surgical referral for persistent severe pain or progressive deficit; discectomy speeds recovery in selected patients",
+    "Epidural steroid injection for short-term relief"
+  ],
+  "citations": [
+    {
+      "ref": "sp-sciatica",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -165
+    },
+    "label": "lumbosacral roots below the conus"
   },
-  {
-   "modality": "reflex",
-   "side": "ipsilateral",
-   "distribution": "knee (L4) or ankle (S1)",
-   "sign": "Reduced knee jerk (L4) or ankle jerk (S1); L5 has no reliable reflex",
-   "substrate": "roots-l2-s1"
-  }
- ],
- "reasoning": "In the lumbar spine the roots descend within the canal for several segments before exiting, so a posterolateral disc herniation at one level compresses the root that is passing by on its way to the foramen one level below: an L4–L5 disc pinches the L5 root and an L5–S1 disc the S1 root, which are the two commonest patterns, whereas a far lateral disc catches the root exiting at that level. The compressed root is inflamed and mechanically sensitive, so stretching it by raising the straight leg, which tenses the sciatic nerve and the L5 and S1 roots, reproduces the pain, and raising the opposite leg (crossed straight leg raise) is a specific though less sensitive sign; the L4 root is stretched instead by extending the hip with the knee flexed. The pattern is strictly ipsilateral because the lesion is proximal to the plexus, and it distinguishes itself from a peripheral neuropathy by crossing nerve territories: L5 weakness involves the tibialis anterior and extensor hallucis (deep peroneal nerve) together with the hip abductors (superior gluteal nerve) and the ankle invertor (tibial nerve), which no single nerve lesion produces, and this is how an L5 radiculopathy is separated from the common peroneal palsy that also causes foot drop. The reflex arcs run through the roots, so the ankle reflex is lost with S1 and the knee reflex with L4. A large central disc herniation can compress the whole cauda equina and must be excluded by asking about perineal numbness and bladder function.",
- "imagingFindings": [
-  {
-   "pathology": "Lumbar disc herniation",
-   "modality": "MRI",
-   "finding": "Posterolateral extrusion at L4–L5 or L5–S1 displacing the traversing root in the lateral recess on axial T2; far lateral discs compress the exiting root in the foramen.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Foraminal stenosis and spondylolisthesis",
-   "modality": "MRI",
-   "finding": "Facet hypertrophy and slip narrowing the foramen and compressing the exiting root, seen on sagittal images.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Denervation",
-   "modality": "EMG/NCS",
-   "finding": "Denervation in a myotomal distribution including paraspinal muscles with normal sural and superficial peroneal sensory responses.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Lumbar disc herniation",
-  "Degenerative foraminal stenosis and spondylolisthesis",
-  "Synovial cyst",
-  "Herpes zoster",
-  "Diabetic radiculoplexus neuropathy",
-  "Metastasis or nerve sheath tumor"
- ],
- "mimics": [
-  {
-   "name": "Common peroneal neuropathy (vs L5)",
-   "howToDistinguish": "Foot drop with sparing of inversion and hip abduction; sensory loss over the dorsum only; conduction block at the fibular head"
-  },
-  {
-   "name": "Hip or sacroiliac disease",
-   "howToDistinguish": "Pain with joint movement, no neurological deficit"
-  },
-  {
-   "name": "Lumbosacral plexopathy",
-   "howToDistinguish": "Multiple roots' territories, often painful, with weight loss or diabetes"
-  },
-  {
-   "name": "Cauda equina syndrome",
-   "howToDistinguish": "Bilateral, saddle anesthesia, sphincter involvement: emergency"
-  }
- ],
- "management": [
-  "Most cases settle within 6–12 weeks with activity as tolerated and analgesia; urgent imaging only for red flags (sphincter symptoms, progressive weakness, cancer, infection)",
-  "MRI and surgical referral for persistent severe pain or progressive deficit; discectomy speeds recovery in selected patients",
-  "Epidural steroid injection for short-term relief"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    167,
-    167
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 18,
-   "pages": [
-    510,
-    511
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    159,
-    163
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -165
-  },
-  "label": "lumbosacral roots below the conus"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

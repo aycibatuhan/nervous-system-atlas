@@ -1,177 +1,157 @@
 {
- "kind": "structure",
- "id": "gyrus-superior-temporal-anterior",
- "name": "Superior temporal gyrus, anterior division",
- "synonyms": [
-  "anterior STG"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-superior-temporal-anterior-l",
-  "gyrus-superior-temporal-anterior-r"
- ],
- "summary": "The anterior part of the superior temporal gyrus lies below the lateral sulcus in front of Heschl's gyrus, extending forward to the temporal pole. Its upper surface, the planum polare, borders the anterior Sylvian fissure, and its lateral surface is auditory association cortex that processes the identity of sounds, voices and, in the dominant hemisphere, the meaning of spoken words as part of the ventral auditory-language stream. It is supplied by the inferior division of the middle cerebral artery and takes part in the fluent aphasias, in the recognition of voices, and in the auditory hallucinations of temporal lobe seizures and psychosis.",
- "anatomy": {
-  "location": "Anterior half of the uppermost temporal gyrus, bounded above by the lateral sulcus, below by the superior temporal sulcus, in front by the temporal pole and behind by the transverse temporal gyrus of Heschl and the posterior division.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Primary auditory cortex (Heschl)",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Medial geniculate nucleus",
-    "via": "acoustic radiation (belt projection)"
-   },
-   {
-    "from": "Contralateral superior temporal gyrus",
-    "via": "corpus callosum"
-   }
+  "kind": "structure",
+  "id": "gyrus-superior-temporal-anterior",
+  "name": "Superior temporal gyrus, anterior division",
+  "synonyms": [
+    "anterior STG"
   ],
-  "efferents": [
-   {
-    "to": "Temporal pole and inferior frontal gyrus",
-    "via": "uncinate and extreme capsule fibers"
-   },
-   {
-    "to": "Amygdala",
-    "via": "direct temporal projection"
-   },
-   {
-    "to": "Inferior colliculus and medial geniculate (descending)",
-    "via": "corticofugal auditory fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-superior-temporal-anterior-l",
+    "gyrus-superior-temporal-anterior-r"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "Sound leaves the primary auditory cortex along two streams; the anterior stream through this gyrus identifies what a sound is, recognizing voices, environmental sounds and, on the left, the phonemes and words of speech, and passes them forward to the temporal pole and the inferior frontal gyrus through the uncinate and extreme capsule fibers. The right anterior superior temporal cortex is specialized for the melody and emotional prosody of speech and for voice identity, and both sides respond to music. Lesions here produce word deafness and voice agnosia when the primary cortex is spared, and contribute to the comprehension deficit of Wernicke aphasia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The anterior part of the superior temporal gyrus lies below the lateral sulcus in front of Heschl's gyrus, extending forward to the temporal pole. Its upper surface, the planum polare, borders the anterior Sylvian fissure, and its lateral surface is auditory association cortex that processes the identity of sounds, voices and, in the dominant hemisphere, the meaning of spoken words as part of the ventral auditory-language stream. It is supplied by the inferior division of the middle cerebral artery and takes part in the fluent aphasias, in the recognition of voices, and in the auditory hallucinations of temporal lobe seizures and psychosis.",
+  "anatomy": {
+    "location": "Anterior half of the uppermost temporal gyrus, bounded above by the lateral sulcus, below by the superior temporal sulcus, in front by the temporal pole and behind by the transverse temporal gyrus of Heschl and the posterior division.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Primary auditory cortex (Heschl)",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Medial geniculate nucleus",
+        "via": "acoustic radiation (belt projection)"
+      },
+      {
+        "from": "Contralateral superior temporal gyrus",
+        "via": "corpus callosum"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Temporal pole and inferior frontal gyrus",
+        "via": "uncinate and extreme capsule fibers"
+      },
+      {
+        "to": "Amygdala",
+        "via": "direct temporal projection"
+      },
+      {
+        "to": "Inferior colliculus and medial geniculate (descending)",
+        "via": "corticofugal auditory fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
+  },
+  "function": "Sound leaves the primary auditory cortex along two streams; the anterior stream through this gyrus identifies what a sound is, recognizing voices, environmental sounds and, on the left, the phonemes and words of speech, and passes them forward to the temporal pole and the inferior frontal gyrus through the uncinate and extreme capsule fibers. The right anterior superior temporal cortex is specialized for the melody and emotional prosody of speech and for voice identity, and both sides respond to music. Lesions here produce word deafness and voice agnosia when the primary cortex is spared, and contribute to the comprehension deficit of Wernicke aphasia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-superior-temporal-anterior-l"
+        },
+        "label": "anterior superior temporal gyrus below the Sylvian fissure"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-superior-temporal-anterior-r"
+        },
+        "label": "superior temporal gyrus in front of Heschl's gyrus"
+      }
+    ],
+    "normalAppearance": "The gyrus that forms the lower lip of the anterior Sylvian fissure on coronal images through the sella and the anterior insula; its flat superior surface, the planum polare, faces the insula.",
+    "pathology": [
+      {
+        "pathology": "MCA inferior division infarct",
+        "modality": "MRI",
+        "finding": "Cortical restricted diffusion of the superior and middle temporal gyri with fluent aphasia (left) or auditory neglect and aprosodia (right).",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Temporal lobe seizures with auditory aura",
+        "modality": "EEG",
+        "finding": "Simple sounds or voices at seizure onset with a lateral temporal EEG focus; distinguish from the medial temporal epigastric-fear aura.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Herpes encephalitis",
+        "modality": "MRI",
+        "finding": "FLAIR hyperintensity spreading from the medial temporal lobe to the superior temporal gyrus and insula, often with cortical hemorrhage.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired recognition of voices and environmental sounds",
+        "side": "n/a",
+        "mechanism": "Loss of the anterior auditory identification stream"
+      },
+      {
+        "deficit": "Contribution to fluent aphasia with poor comprehension (left)",
+        "side": "n/a",
+        "mechanism": "Disruption of the ventral pathway from auditory word forms to meaning"
+      },
+      {
+        "deficit": "Loss of emotional prosody comprehension (right)",
+        "side": "n/a",
+        "mechanism": "Right anterior superior temporal cortex no longer decodes the emotional melody of speech"
+      }
+    ],
+    "examination": [
+      "Comprehension of single words and commands; ask the patient to point to objects named",
+      "Recognition of familiar voices and environmental sounds (a key jingle, a cough)",
+      "Judgement of emotional tone in sentences read with different intonations"
+    ],
+    "syndromes": [
+      "syn-aphasia-wernicke",
+      "syn-mca-inferior-division"
+    ],
+    "pearls": [
+      "The anterior temporal stream answers what a sound is; the posterior stream answers where it is and how to repeat it",
+      "Right temporal lesions leave words intact but the music of speech lost",
+      "Auditory hallucinations of formed voices are lateral temporal, not brainstem"
+    ]
+  },
+  "pitfalls": [
+    "Pure word deafness requires both anterior temporal cortices or a left lesion that cuts the callosal auditory input; unilateral lesions rarely abolish speech perception"
   ],
-  "territories": [
-   "territory-mca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-superior-temporal-anterior-l"
+  "citations": [
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
     },
-    "label": "anterior superior temporal gyrus below the Sylvian fissure"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-superior-temporal-anterior-r"
+    {
+      "ref": "sp-primary-progressive-aphasia",
+      "section": "Pathophysiology"
     },
-    "label": "superior temporal gyrus in front of Heschl's gyrus"
-   }
+    {
+      "ref": "sp-sylvian-fissure",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The gyrus that forms the lower lip of the anterior Sylvian fissure on coronal images through the sella and the anterior insula; its flat superior surface, the planum polare, faces the insula.",
-  "pathology": [
-   {
-    "pathology": "MCA inferior division infarct",
-    "modality": "MRI",
-    "finding": "Cortical restricted diffusion of the superior and middle temporal gyri with fluent aphasia (left) or auditory neglect and aprosodia (right).",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Temporal lobe seizures with auditory aura",
-    "modality": "EEG",
-    "finding": "Simple sounds or voices at seizure onset with a lateral temporal EEG focus; distinguish from the medial temporal epigastric-fear aura.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Herpes encephalitis",
-    "modality": "MRI",
-    "finding": "FLAIR hyperintensity spreading from the medial temporal lobe to the superior temporal gyrus and insula, often with cortical hemorrhage.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired recognition of voices and environmental sounds",
-    "side": "n/a",
-    "mechanism": "Loss of the anterior auditory identification stream"
-   },
-   {
-    "deficit": "Contribution to fluent aphasia with poor comprehension (left)",
-    "side": "n/a",
-    "mechanism": "Disruption of the ventral pathway from auditory word forms to meaning"
-   },
-   {
-    "deficit": "Loss of emotional prosody comprehension (right)",
-    "side": "n/a",
-    "mechanism": "Right anterior superior temporal cortex no longer decodes the emotional melody of speech"
-   }
+  "tags": [
+    "auditory association",
+    "ventral stream"
   ],
-  "examination": [
-   "Comprehension of single words and commands; ask the patient to point to objects named",
-   "Recognition of familiar voices and environmental sounds (a key jingle, a cough)",
-   "Judgement of emotional tone in sentences read with different intonations"
-  ],
-  "syndromes": [
-   "syn-aphasia-wernicke",
-   "syn-mca-inferior-division"
-  ],
-  "pearls": [
-   "The anterior temporal stream answers what a sound is; the posterior stream answers where it is and how to repeat it",
-   "Right temporal lesions leave words intact but the music of speech lost",
-   "Auditory hallucinations of formed voices are lateral temporal, not brainstem"
-  ]
- },
- "pitfalls": [
-  "Pure word deafness requires both anterior temporal cortices or a left lesion that cuts the callosal auditory input; unilateral lesions rarely abolish speech perception"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    287,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    108
-   ]
-  }
- ],
- "tags": [
-  "auditory association",
-  "ventral stream"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

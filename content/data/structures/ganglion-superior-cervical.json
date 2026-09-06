@@ -1,140 +1,128 @@
 {
- "kind": "structure",
- "id": "ganglion-superior-cervical",
- "name": "Superior cervical ganglion",
- "synonyms": [],
- "system": "autonomic",
- "meshIds": [],
- "summary": "The largest sympathetic ganglion, about 2.5 cm long, lying behind the carotid sheath at the level of C2–C3, where the preganglionic fibers from T1–T3 (having ascended the cervical chain) synapse. Its postganglionic fibers form the internal carotid plexus to the eye, the pupil, the lid, the lacrimal gland and the cavernous sinus region, the external carotid plexus to the facial sweat glands and vessels, gray rami to C1–C4, cardiac nerves, and branches to the pharynx and the pineal gland. It is the third-order relay of the oculosympathetic pathway; lesions distal to it cause Horner syndrome without facial anhidrosis.",
- "anatomy": {
-  "location": "In front of the transverse processes of C2 and C3 (some say C1–C4), behind the internal carotid artery and the carotid sheath, medial to the vagus nerve and in front of longus capitis.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "intermediolateral-column (T1–T3)",
-    "via": "cervical sympathetic trunk"
-   }
-  ],
-  "efferents": [
-   {
-    "to": "dilator pupillae, Müller's muscle",
-    "via": "internal carotid plexus"
-   },
-   {
-    "to": "facial sweat glands and vessels",
-    "via": "external carotid plexus"
-   },
-   {
-    "to": "pineal-gland",
-    "via": "nervi conarii"
-   }
-  ],
-  "pathways": []
- },
- "function": "Sympathetic supply to the head: pupil dilation, lid elevation (Müller's muscle), vasoconstriction, sweating of the face, and innervation of the pineal gland; contributes to cardiac sympathetic supply.",
- "bloodSupply": {
-  "arteries": [
-   "regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 20,
-     "y": -20,
-     "z": -60
+  "kind": "structure",
+  "id": "ganglion-superior-cervical",
+  "name": "Superior cervical ganglion",
+  "synonyms": [],
+  "system": "autonomic",
+  "meshIds": [],
+  "summary": "The largest sympathetic ganglion, about 2.5 cm long, lying behind the carotid sheath at the level of C2–C3, where the preganglionic fibers from T1–T3 (having ascended the cervical chain) synapse. Its postganglionic fibers form the internal carotid plexus to the eye, the pupil, the lid, the lacrimal gland and the cavernous sinus region, the external carotid plexus to the facial sweat glands and vessels, gray rami to C1–C4, cardiac nerves, and branches to the pharynx and the pineal gland. It is the third-order relay of the oculosympathetic pathway; lesions distal to it cause Horner syndrome without facial anhidrosis.",
+  "anatomy": {
+    "location": "In front of the transverse processes of C2 and C3 (some say C1–C4), behind the internal carotid artery and the carotid sheath, medial to the vagus nerve and in front of longus capitis.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "intermediolateral-column (T1–T3)",
+        "via": "cervical sympathetic trunk"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "dilator pupillae, Müller's muscle",
+        "via": "internal carotid plexus"
+      },
+      {
+        "to": "facial sweat glands and vessels",
+        "via": "external carotid plexus"
+      },
+      {
+        "to": "pineal-gland",
+        "via": "nervi conarii"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Sympathetic supply to the head: pupil dilation, lid elevation (Müller's muscle), vasoconstriction, sweating of the face, and innervation of the pineal gland; contributes to cardiac sympathetic supply.",
+  "bloodSupply": {
+    "arteries": [
+      "regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 20,
+          "y": -20,
+          "z": -60
+        },
+        "label": "upper cervical region behind the carotid sheath (outside the brain volume)"
+      }
+    ],
+    "normalAppearance": "Seen on neck MRI as a small fusiform structure behind the carotid sheath, easily mistaken for a lymph node; enlargement occurs in schwannoma. Carotid imaging is the key study for postganglionic Horner syndrome.",
+    "pathology": [
+      {
+        "pathology": "Superior cervical ganglion schwannoma",
+        "modality": "MRI",
+        "finding": "Enhancing fusiform mass behind the carotid displacing the vessels anteriorly, sometimes with a Horner syndrome.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Internal carotid dissection",
+        "modality": "MRI",
+        "finding": "Mural hematoma with a postganglionic Horner syndrome (no anhidrosis).",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Neck MRI; carotid CTA/MRA"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Horner syndrome without facial anhidrosis",
+        "side": "ipsilateral",
+        "mechanism": "Postganglionic fibers on the internal carotid; sweat fibers travel with the external carotid"
+      },
+      {
+        "deficit": "Horner syndrome with facial anhidrosis",
+        "side": "ipsilateral",
+        "mechanism": "Lesion at or proximal to the ganglion (preganglionic)"
+      },
+      {
+        "deficit": "Failure of the hydroxyamphetamine test to dilate the pupil",
+        "side": "ipsilateral",
+        "mechanism": "Loss of postganglionic terminals (no stored noradrenaline)"
+      }
+    ],
+    "examination": [
+      "Anisocoria worse in the dark, mild ptosis",
+      "Facial sweating with exercise",
+      "Pharmacological tests to separate pre- from postganglionic lesions",
+      "Palpate the neck and check for carotid bruits"
+    ],
+    "syndromes": [
+      "syn-horner"
+    ],
+    "pearls": [
+      "The sweat fibers leave the pathway at the ganglion: no anhidrosis means the lesion is beyond it, on the carotid or in the cavernous sinus",
+      "Cluster headache produces a transient postganglionic Horner syndrome through inflammation around the cavernous carotid"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-superior-cervical-ganglion",
+      "section": "Structure and Function"
     },
-    "label": "upper cervical region behind the carotid sheath (outside the brain volume)"
-   }
+    {
+      "ref": "sp-autonomic-nervous-system",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-sympathetic-nervous-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Seen on neck MRI as a small fusiform structure behind the carotid sheath, easily mistaken for a lymph node; enlargement occurs in schwannoma. Carotid imaging is the key study for postganglionic Horner syndrome.",
-  "pathology": [
-   {
-    "pathology": "Superior cervical ganglion schwannoma",
-    "modality": "MRI",
-    "finding": "Enhancing fusiform mass behind the carotid displacing the vessels anteriorly, sometimes with a Horner syndrome.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Internal carotid dissection",
-    "modality": "MRI",
-    "finding": "Mural hematoma with a postganglionic Horner syndrome (no anhidrosis).",
-    "sequence": "T1"
-   }
+  "tags": [
+    "ganglion"
   ],
-  "sequenceOfChoice": "Neck MRI; carotid CTA/MRA"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Horner syndrome without facial anhidrosis",
-    "side": "ipsilateral",
-    "mechanism": "Postganglionic fibers on the internal carotid; sweat fibers travel with the external carotid"
-   },
-   {
-    "deficit": "Horner syndrome with facial anhidrosis",
-    "side": "ipsilateral",
-    "mechanism": "Lesion at or proximal to the ganglion (preganglionic)"
-   },
-   {
-    "deficit": "Failure of the hydroxyamphetamine test to dilate the pupil",
-    "side": "ipsilateral",
-    "mechanism": "Loss of postganglionic terminals (no stored noradrenaline)"
-   }
-  ],
-  "examination": [
-   "Anisocoria worse in the dark, mild ptosis",
-   "Facial sweating with exercise",
-   "Pharmacological tests to separate pre- from postganglionic lesions",
-   "Palpate the neck and check for carotid bruits"
-  ],
-  "syndromes": [
-   "syn-horner"
-  ],
-  "pearls": [
-   "The sweat fibers leave the pathway at the ganglion: no anhidrosis means the lesion is beyond it, on the carotid or in the cavernous sinus",
-   "Cluster headache produces a transient postganglionic Horner syndrome through inflammation around the cavernous carotid"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    388,
-    390
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    407,
-    408
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    86
-   ]
+  "status": "draft",
+  "latin": "Ganglion cervicale superius",
+  "subsystem": "ganglia",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "ganglion"
- ],
- "status": "draft",
- "latin": "Ganglion cervicale superius",
- "subsystem": "ganglia",
- "level": {
-  "region": "peripheral"
- }
 }

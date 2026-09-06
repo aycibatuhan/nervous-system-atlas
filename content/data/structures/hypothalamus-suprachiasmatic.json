@@ -1,141 +1,129 @@
 {
- "kind": "structure",
- "id": "hypothalamus-suprachiasmatic",
- "name": "Suprachiasmatic nucleus",
- "synonyms": [
-  "SCN",
-  "circadian pacemaker"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-suprachiasmatic-l",
-  "hypothalamus-suprachiasmatic-r"
- ],
- "summary": "The suprachiasmatic nucleus is a pair of tiny nuclei on the floor of the third ventricle directly above the optic chiasm, the master circadian clock of the body. Its neurons keep a near-24-hour rhythm through a transcriptional feedback loop of clock genes and are reset each day by light reaching them through the retinohypothalamic tract from melanopsin-containing retinal ganglion cells. It times sleep and waking, body temperature, cortisol and melatonin secretion and feeding, and its damage by suprasellar tumors, surgery or stroke produces loss of the sleep-wake rhythm with sleep scattered through day and night; its output is the basis of jet lag, shift-work disorder and the timing of light therapy.",
- "anatomy": {
-  "location": "Floor of the third ventricle immediately above the optic chiasm on each side of the midline, in front of the infundibulum and below the paraventricular nucleus, within the retrochiasmatic hypothalamus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "Suprachiasmatic neurons generate the circadian rhythm autonomously and are entrained by light through the retinohypothalamic tract and by the intergeniculate leaflet of the thalamus and the raphe; they impose the rhythm on the rest of the hypothalamus through projections to the subparaventricular zone and the dorsomedial nucleus, which gate the sleep-wake, feeding and temperature systems, and on the pineal gland through a multisynaptic path via the paraventricular nucleus, the intermediolateral column and the superior cervical ganglion, so that melatonin is secreted only in darkness. Clock output also times cortisol through the paraventricular corticotropin-releasing hormone neurons. With age and in neurodegenerative disease the nucleus loses neurons, contributing to the fragmented sleep and sundowning of dementia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-suprachiasmatic",
+  "name": "Suprachiasmatic nucleus",
+  "synonyms": [
+    "SCN",
+    "circadian pacemaker"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-suprachiasmatic-l"
-    },
-    "label": "suprachiasmatic nucleus above the optic chiasm"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-suprachiasmatic-r"
-    },
-    "label": "third ventricular floor between the chiasm and the infundibulum"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-suprachiasmatic-l",
+    "hypothalamus-suprachiasmatic-r"
   ],
-  "normalAppearance": "Too small to see on clinical MRI; it lies in the few millimeters of hypothalamus directly above the chiasm on midline sagittal images, in front of the infundibular recess.",
-  "pathology": [
-   {
-    "pathology": "Circadian rhythm loss after suprasellar lesions",
-    "modality": "MRI",
-    "finding": "Craniopharyngioma, chiasmal glioma or germinoma involving the floor of the third ventricle above the chiasm, with sleep-wake disorganization.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Chiasmal compression by a pituitary macroadenoma",
-    "modality": "MRI",
-    "finding": "Adenoma extending above the diaphragm sellae and elevating the chiasm; the suprachiasmatic nucleus is involved only in large suprasellar extension.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Neurodegenerative sleep-wake fragmentation",
-    "modality": "MRI",
-    "finding": "No specific structural lesion; hypothalamic atrophy in dementia with loss of suprachiasmatic neurons is inferred from actigraphy and melatonin profiles.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Irregular sleep-wake rhythm: sleep scattered across 24 hours",
-    "side": "bilateral",
-    "mechanism": "Loss of the master circadian pacemaker"
-   },
-   {
-    "deficit": "Loss of the melatonin and cortisol rhythms",
-    "side": "bilateral",
-    "mechanism": "Loss of clock output to the pineal and paraventricular nucleus"
-   },
-   {
-    "deficit": "Disturbed temperature and feeding rhythms",
-    "side": "bilateral",
-    "mechanism": "Loss of circadian gating of hypothalamic effector systems"
-   }
-  ],
-  "examination": [
-   "Sleep diary or actigraphy over two weeks",
-   "Timing of melatonin or cortisol in suspected circadian disorders",
-   "Visual fields, because the chiasm lies beneath"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-pituitary-mass"
-  ],
-  "pearls": [
-   "The suprachiasmatic nucleus is the only clock the body has; the others are set by it",
-   "Blind people with intact melanopsin cells still entrain to light; those without eyes free-run",
-   "Bright morning light is a drug for this nucleus: it advances the clock"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The suprachiasmatic nucleus is a pair of tiny nuclei on the floor of the third ventricle directly above the optic chiasm, the master circadian clock of the body. Its neurons keep a near-24-hour rhythm through a transcriptional feedback loop of clock genes and are reset each day by light reaching them through the retinohypothalamic tract from melanopsin-containing retinal ganglion cells. It times sleep and waking, body temperature, cortisol and melatonin secretion and feeding, and its damage by suprasellar tumors, surgery or stroke produces loss of the sleep-wake rhythm with sleep scattered through day and night; its output is the basis of jet lag, shift-work disorder and the timing of light therapy.",
+  "anatomy": {
+    "location": "Floor of the third ventricle immediately above the optic chiasm on each side of the midline, in front of the infundibulum and below the paraventricular nucleus, within the retrochiasmatic hypothalamus.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    336
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-visual"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "function": "Suprachiasmatic neurons generate the circadian rhythm autonomously and are entrained by light through the retinohypothalamic tract and by the intergeniculate leaflet of the thalamus and the raphe; they impose the rhythm on the rest of the hypothalamus through projections to the subparaventricular zone and the dorsomedial nucleus, which gate the sleep-wake, feeding and temperature systems, and on the pineal gland through a multisynaptic path via the paraventricular nucleus, the intermediolateral column and the superior cervical ganglion, so that melatonin is secreted only in darkness. Clock output also times cortisol through the paraventricular corticotropin-releasing hormone neurons. With age and in neurodegenerative disease the nucleus loses neurons, contributing to the fragmented sleep and sundowning of dementia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-suprachiasmatic-l"
+        },
+        "label": "suprachiasmatic nucleus above the optic chiasm"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-suprachiasmatic-r"
+        },
+        "label": "third ventricular floor between the chiasm and the infundibulum"
+      }
+    ],
+    "normalAppearance": "Too small to see on clinical MRI; it lies in the few millimeters of hypothalamus directly above the chiasm on midline sagittal images, in front of the infundibular recess.",
+    "pathology": [
+      {
+        "pathology": "Circadian rhythm loss after suprasellar lesions",
+        "modality": "MRI",
+        "finding": "Craniopharyngioma, chiasmal glioma or germinoma involving the floor of the third ventricle above the chiasm, with sleep-wake disorganization.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Chiasmal compression by a pituitary macroadenoma",
+        "modality": "MRI",
+        "finding": "Adenoma extending above the diaphragm sellae and elevating the chiasm; the suprachiasmatic nucleus is involved only in large suprasellar extension.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Neurodegenerative sleep-wake fragmentation",
+        "modality": "MRI",
+        "finding": "No specific structural lesion; hypothalamic atrophy in dementia with loss of suprachiasmatic neurons is inferred from actigraphy and melatonin profiles.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Irregular sleep-wake rhythm: sleep scattered across 24 hours",
+        "side": "bilateral",
+        "mechanism": "Loss of the master circadian pacemaker"
+      },
+      {
+        "deficit": "Loss of the melatonin and cortisol rhythms",
+        "side": "bilateral",
+        "mechanism": "Loss of clock output to the pineal and paraventricular nucleus"
+      },
+      {
+        "deficit": "Disturbed temperature and feeding rhythms",
+        "side": "bilateral",
+        "mechanism": "Loss of circadian gating of hypothalamic effector systems"
+      }
+    ],
+    "examination": [
+      "Sleep diary or actigraphy over two weeks",
+      "Timing of melatonin or cortisol in suspected circadian disorders",
+      "Visual fields, because the chiasm lies beneath"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-pituitary-mass"
+    ],
+    "pearls": [
+      "The suprachiasmatic nucleus is the only clock the body has; the others are set by it",
+      "Blind people with intact melanopsin cells still entrain to light; those without eyes free-run",
+      "Bright morning light is a drug for this nucleus: it advances the clock"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-nucleus-suprachiasmatic",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

@@ -1,0 +1,181 @@
+{
+  "kind": "structure",
+  "id": "spinal-segment-cervical",
+  "name": "Cervical spinal cord (C1-C8)",
+  "synonyms": [
+    "cervical cord",
+    "C1-C8 cord segments"
+  ],
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-segment-cervical"
+  ],
+  "summary": "The cervical cord runs from the decussation of the pyramids at the foramen magnum to the lower border of the seventh cervical vertebra, and it carries every long tract that serves the trunk and both pairs of limbs, which is why a single lesion here can be catastrophic. Its upper four segments are narrow and supply the neck, the diaphragm through the phrenic motor pool at C3, C4 and C5, and the trapezius and sternocleidomastoid through the spinal accessory nucleus that reaches down to C5 or C6. From C5 to T1 the cord swells into the cervical enlargement, whose large anterior horns hold the motor neurons of the arm and whose dorsal roots build the brachial plexus. A complete lesion above C4 abolishes spontaneous breathing; a complete lesion at C5 leaves a patient who can flex the elbow but cannot extend the wrist; at C6 wrist extension returns; at C7 the elbow extends and at C8 and T1 the small hand muscles are the last to go.",
+  "anatomy": {
+    "location": "From the level of the pyramidal decussation, where the medulla becomes the cord at the foramen magnum, down to the lower border of the C7 vertebral body, inside the widest part of the vertebral canal. The cord is oval in cross-section here, wider from side to side than from front to back, and reaches its greatest width in the cervical enlargement opposite the C5 and C6 vertebrae. The dentate ligaments anchor it to the dura on each side, and the vertebral arteries and the anterior spinal artery lie in front of it.",
+    "subdivisions": [
+      {
+        "name": "C1-C4 (high cervical)",
+        "note": "Neck, diaphragm through the phrenic pool at C3-C5, and the spinal accessory nucleus; a complete lesion here is ventilator dependent."
+      },
+      {
+        "name": "C5-T1 (cervical enlargement)",
+        "note": "Large anterior horns for the upper limb; the dorsal roots here form the brachial plexus and the segment gives the classical arm myotomes."
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-lateral-spinothalamic",
+      "pathway-dcml"
+    ]
+  },
+  "function": "The cervical cord supplies the neck, the diaphragm and the upper limbs and transmits everything below. Its anterior horns contain the motor pools for the neck, shoulder girdle, arm and hand, arranged so that proximal muscles lie medially and the intrinsic hand muscles most laterally, and the phrenic pool sits ventromedially at C3 to C5. Its posterior horns receive the dorsal roots that carry sensation from the back of the head, the neck and the whole upper limb. The lateral horn is absent above T1, so the sympathetic outflow to the head leaves through the T1 segment and travels back up the chain; a cervical cord lesion nonetheless interrupts the descending sympathetic pathway in the lateral funiculus and produces an ipsilateral Horner syndrome. The corticospinal, spinothalamic and dorsal column pathways are all fully assembled at this level, and their somatotopy, with sacral fibers lying most laterally in the corticospinal and spinothalamic tracts, explains why an expanding central lesion spares the sacral dermatomes until late.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "posterior-spinal-arteries",
+      "vertebral arteries",
+      "ascending and deep cervical radicular arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cross-section of the upper cervical cord at the foramen magnum"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -60
+        },
+        "label": "cervicomedullary junction; the rest of the cervical cord lies below the MNI volume"
+      }
+    ],
+    "normalAppearance": "On sagittal T2 the cervical cord is a smooth band of intermediate signal within bright CSF, widening between C4 and C6; on axial T2 the gray matter is a faint butterfly inside the paler white matter. The cord occupies well under half the canal in a normal adult.",
+    "pathology": [
+      {
+        "pathology": "Cervical spondylotic myelopathy",
+        "modality": "MRI",
+        "finding": "Canal narrowing with cord flattening at one or more disc levels and a pancake of T2 hyperintensity in the central cord, often with gadolinium enhancement in severe compression.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Central cord syndrome",
+        "modality": "MRI",
+        "finding": "Hyperextension injury in a stenotic canal with central cord edema and weakness that is worse in the hands than the legs, often with preserved sacral sensation.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Traumatic cervical cord injury",
+        "modality": "CT",
+        "finding": "Fracture or facet dislocation on CT with cord swelling and hemorrhage on MRI; the neurological level is set by the lowest segment with normal power and sensation.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal and axial T2 of the whole cervical cord, with STIR for cord edema and CT for the bony injury."
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Tetraplegia with respiratory failure",
+        "side": "bilateral",
+        "mechanism": "Complete lesion above C4 removing the phrenic motor pool and all descending motor tracts"
+      },
+      {
+        "deficit": "Weak hands with relatively strong legs",
+        "side": "bilateral",
+        "mechanism": "Central cord injury damaging the medially placed arm fibers of the corticospinal tract first"
+      },
+      {
+        "deficit": "Ipsilateral Horner syndrome",
+        "side": "ipsilateral",
+        "mechanism": "Interruption of the descending sympathetic fibers in the lateral funiculus above T1"
+      },
+      {
+        "deficit": "Loss of pain and temperature in a cape distribution",
+        "side": "bilateral",
+        "mechanism": "Damage to the decussating spinothalamic fibers in the anterior white commissure, as in syringomyelia"
+      }
+    ],
+    "examination": [
+      "Test the diaphragm: ask about breathlessness lying flat and watch for paradoxical abdominal movement",
+      "Work down the key myotomes C5 elbow flexion, C6 wrist extension, C7 elbow extension, C8 finger flexion, T1 finger abduction",
+      "Check the biceps (C5-C6), brachioradialis (C6) and triceps (C7) reflexes and look for an inverted supinator sign",
+      "Look for a Horner syndrome and for a sensory level on the trunk"
+    ],
+    "syndromes": [
+      "syn-central-cord-syringomyelia",
+      "syn-brown-sequard",
+      "syn-cervical-spondylotic-myelopathy"
+    ],
+    "pearls": [
+      "A lesion at or above C4 threatens the airway before it threatens the limbs",
+      "Hand muscles weaker than legs after a fall in an older person is central cord syndrome until proved otherwise",
+      "An inverted supinator jerk localizes to C5-C6 better than any sensory level"
+    ]
+  },
+  "pitfalls": [
+    "DERIVED MESH: the four cord blocks are not measured on an individual. The Z-Anatomy cord surface was cut by horizontal planes placed at the classical cord-segment to vertebral-body relationship read off the Z-Anatomy vertebrae, so the block boundaries teach the rule rather than record a specimen; use them for orientation, never to read a level off an image.",
+    "The C8 segment lies opposite the C7 vertebra, so the vertebral level of an injury is not its cord level",
+    "A cervical cord lesion can present as painless hand wasting and be mistaken for an ulnar neuropathy or motor neuron disease"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spinal-cord",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-morphology",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-injuries",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-cervical-radiculopathy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-thorax-phrenic-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-back-vertebral-column",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-phrenic-nerve-injury",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-thorax-diaphragm",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "spinal cord",
+    "segment",
+    "derived"
+  ],
+  "status": "draft",
+  "subsystem": "segments",
+  "parent": "spinal-cord",
+  "level": {
+    "region": "spinal",
+    "sub": "cervical"
+  }
+}

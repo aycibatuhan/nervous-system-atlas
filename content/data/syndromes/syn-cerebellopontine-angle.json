@@ -1,175 +1,143 @@
 {
- "kind": "syndrome",
- "id": "syn-cerebellopontine-angle",
- "name": "Cerebellopontine angle syndrome",
- "eponyms": [
-  "acoustic neuroma syndrome"
- ],
- "category": "neoplastic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-08-vestibulocochlear",
-   "cn-07-facial",
-   "cn-05-trigeminal",
-   "cerebellar-hemisphere",
-   "level-pons-caudal",
-   "middle-cerebellar-peduncle"
+  "kind": "syndrome",
+  "id": "syn-cerebellopontine-angle",
+  "name": "Cerebellopontine angle syndrome",
+  "eponyms": [
+    "acoustic neuroma syndrome"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -38,
-   "y": -35,
-   "z": -32
+  "category": "neoplastic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-08-vestibulocochlear",
+      "cn-07-facial",
+      "cn-05-trigeminal",
+      "cerebellar-hemisphere",
+      "level-pons-caudal",
+      "middle-cerebellar-peduncle"
+    ],
+    "side": "ipsilateral"
   },
-  "radiusMm": 12
- },
- "presentation": "Hearing in one ear has been fading for two years with tinnitus, and the patient now notices imbalance rather than spinning vertigo. Later the cheek becomes numb and the corneal reflex on that side is lost; eventually there is facial weakness, ataxia of the arm and leg on the same side, and, with large tumors, headache and papilledema. The sequence eighth, fifth, seventh nerves and then cerebellum tells the story of a slowly growing mass at the angle.",
- "deficits": [
-  {
-   "modality": "auditory",
-   "side": "ipsilateral",
-   "distribution": "one ear",
-   "sign": "Progressive sensorineural hearing loss with poor speech discrimination and tinnitus",
-   "substrate": "cn-08-vestibulocochlear"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -38,
+      "y": -35,
+      "z": -32
+    },
+    "radiusMm": 12
   },
-  {
-   "modality": "vestibular",
-   "side": "ipsilateral",
-   "distribution": "vestibular nerve",
-   "sign": "Imbalance more than vertigo; canal paresis on caloric testing",
-   "substrate": "pathway-vestibular-vor"
+  "presentation": "Hearing in one ear has been fading for two years with tinnitus, and the patient now notices imbalance rather than spinning vertigo. Later the cheek becomes numb and the corneal reflex on that side is lost; eventually there is facial weakness, ataxia of the arm and leg on the same side, and, with large tumors, headache and papilledema. The sequence eighth, fifth, seventh nerves and then cerebellum tells the story of a slowly growing mass at the angle.",
+  "deficits": [
+    {
+      "modality": "auditory",
+      "side": "ipsilateral",
+      "distribution": "one ear",
+      "sign": "Progressive sensorineural hearing loss with poor speech discrimination and tinnitus",
+      "substrate": "cn-08-vestibulocochlear"
+    },
+    {
+      "modality": "vestibular",
+      "side": "ipsilateral",
+      "distribution": "vestibular nerve",
+      "sign": "Imbalance more than vertigo; canal paresis on caloric testing",
+      "substrate": "pathway-vestibular-vor"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "face",
+      "sign": "Facial numbness with a depressed corneal reflex",
+      "substrate": "cn-05-trigeminal"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "face",
+      "sign": "Late lower motor neuron facial weakness (the nerve is surprisingly resistant)",
+      "substrate": "cn-07-facial"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "ipsilateral",
+      "distribution": "limbs and gait",
+      "sign": "Ataxia from compression of the cerebellar hemisphere and middle peduncle",
+      "substrate": "pathway-cerebellar-circuits"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "raised ICP",
+      "sign": "Headache, papilledema, hydrocephalus with large tumors",
+      "substrate": "ventricle-fourth"
+    }
+  ],
+  "reasoning": "The cerebellopontine angle is the wedge of cistern between the pons, the middle cerebellar peduncle and the petrous bone, containing the seventh and eighth nerves on their way to the internal acoustic meatus, with the trigeminal root above and the ninth, tenth and eleventh nerves below. All of these are uncrossed peripheral nerves, so every sign is on the side of the mass. A vestibular schwannoma starts in the meatus on the superior vestibular nerve and compresses the cochlear nerve first, so the earliest symptom is unilateral retrocochlear hearing loss in which speech discrimination is worse than the pure-tone threshold predicts, and because the vestibular loss is gradual the brain compensates and the patient feels unsteady rather than vertiginous. As the tumor grows into the angle it stretches the trigeminal root, dulling the corneal reflex and facial sensation, then flattens the facial nerve, which tolerates stretching remarkably well, and finally indents the cerebellar hemisphere and peduncle, producing ipsilateral ataxia (cerebellar signs are ipsilateral because of the double crossing of cerebellar output and corticospinal fibers). Very large tumors displace the brainstem and obstruct the fourth ventricle. Bilateral tumors define neurofibromatosis type 2.",
+  "imagingFindings": [
+    {
+      "pathology": "Vestibular schwannoma",
+      "modality": "MRI",
+      "finding": "Avidly enhancing mass centered on the internal acoustic meatus with an 'ice-cream cone' extension into the angle, widening the porus acusticus; small intracanalicular tumors need thin post-contrast or CISS images.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Meningioma",
+      "modality": "MRI",
+      "finding": "Broad-based dural mass eccentric to the meatus with a dural tail, hyperostosis on CT.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Epidermoid",
+      "modality": "MRI",
+      "finding": "Lobulated non-enhancing mass insinuating around nerves, bright on DWI (distinguishes it from an arachnoid cyst).",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Vestibular schwannoma (acoustic neuroma)",
+    "Meningioma",
+    "Epidermoid cyst",
+    "Metastasis or lymphoma",
+    "Neurofibromatosis type 2 (bilateral)"
+  ],
+  "mimics": [
+    {
+      "name": "Ménière disease",
+      "howToDistinguish": "Episodic vertigo with fluctuating low-frequency hearing loss; normal MRI"
+    },
+    {
+      "name": "Presbycusis",
+      "howToDistinguish": "Bilateral, symmetric high-frequency loss with proportional discrimination"
+    },
+    {
+      "name": "Bell palsy",
+      "howToDistinguish": "Sudden, complete facial palsy without deafness"
+    }
+  ],
+  "management": [
+    "Any asymmetric sensorineural hearing loss: MRI of the internal acoustic meatus with contrast",
+    "Options: observation with serial MRI, stereotactic radiosurgery, or microsurgical resection depending on size, hearing and age",
+    "Test the corneal reflex and facial nerve in every patient with unilateral deafness"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cerebellopontine-angle-cancer",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-vestibular-schwannoma",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -38,
+      "y": -35,
+      "z": -32
+    },
+    "label": "cerebellopontine angle at the internal acoustic meatus"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "face",
-   "sign": "Facial numbness with a depressed corneal reflex",
-   "substrate": "cn-05-trigeminal"
-  },
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "face",
-   "sign": "Late lower motor neuron facial weakness (the nerve is surprisingly resistant)",
-   "substrate": "cn-07-facial"
-  },
-  {
-   "modality": "cerebellar",
-   "side": "ipsilateral",
-   "distribution": "limbs and gait",
-   "sign": "Ataxia from compression of the cerebellar hemisphere and middle peduncle",
-   "substrate": "pathway-cerebellar-circuits"
-  },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "raised ICP",
-   "sign": "Headache, papilledema, hydrocephalus with large tumors",
-   "substrate": "ventricle-fourth"
-  }
- ],
- "reasoning": "The cerebellopontine angle is the wedge of cistern between the pons, the middle cerebellar peduncle and the petrous bone, containing the seventh and eighth nerves on their way to the internal acoustic meatus, with the trigeminal root above and the ninth, tenth and eleventh nerves below. All of these are uncrossed peripheral nerves, so every sign is on the side of the mass. A vestibular schwannoma starts in the meatus on the superior vestibular nerve and compresses the cochlear nerve first, so the earliest symptom is unilateral retrocochlear hearing loss in which speech discrimination is worse than the pure-tone threshold predicts, and because the vestibular loss is gradual the brain compensates and the patient feels unsteady rather than vertiginous. As the tumor grows into the angle it stretches the trigeminal root, dulling the corneal reflex and facial sensation, then flattens the facial nerve, which tolerates stretching remarkably well, and finally indents the cerebellar hemisphere and peduncle, producing ipsilateral ataxia (cerebellar signs are ipsilateral because of the double crossing of cerebellar output and corticospinal fibers). Very large tumors displace the brainstem and obstruct the fourth ventricle. Bilateral tumors define neurofibromatosis type 2.",
- "imagingFindings": [
-  {
-   "pathology": "Vestibular schwannoma",
-   "modality": "MRI",
-   "finding": "Avidly enhancing mass centered on the internal acoustic meatus with an 'ice-cream cone' extension into the angle, widening the porus acusticus; small intracanalicular tumors need thin post-contrast or CISS images.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Meningioma",
-   "modality": "MRI",
-   "finding": "Broad-based dural mass eccentric to the meatus with a dural tail, hyperostosis on CT.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Epidermoid",
-   "modality": "MRI",
-   "finding": "Lobulated non-enhancing mass insinuating around nerves, bright on DWI (distinguishes it from an arachnoid cyst).",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Vestibular schwannoma (acoustic neuroma)",
-  "Meningioma",
-  "Epidermoid cyst",
-  "Metastasis or lymphoma",
-  "Neurofibromatosis type 2 (bilateral)"
- ],
- "mimics": [
-  {
-   "name": "Ménière disease",
-   "howToDistinguish": "Episodic vertigo with fluctuating low-frequency hearing loss; normal MRI"
-  },
-  {
-   "name": "Presbycusis",
-   "howToDistinguish": "Bilateral, symmetric high-frequency loss with proportional discrimination"
-  },
-  {
-   "name": "Bell palsy",
-   "howToDistinguish": "Sudden, complete facial palsy without deafness"
-  }
- ],
- "management": [
-  "Any asymmetric sensorineural hearing loss: MRI of the internal acoustic meatus with contrast",
-  "Options: observation with serial MRI, stereotactic radiosurgery, or microsurgical resection depending on size, hearing and age",
-  "Test the corneal reflex and facial nerve in every patient with unilateral deafness"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    106,
-    106
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    119,
-    119
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    122,
-    122
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 29,
-   "pages": [
-    256,
-    256
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 29,
-   "pages": [
-    261,
-    261
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -38,
-   "y": -35,
-   "z": -32
-  },
-  "label": "cerebellopontine angle at the internal acoustic meatus"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

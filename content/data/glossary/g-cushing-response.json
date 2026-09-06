@@ -1,10 +1,22 @@
 {
- "kind": "glossary",
- "id": "g-cushing-response",
- "term": "Cushing response",
- "definition": "Hypertension with bradycardia and irregular breathing produced by medullary ischemia when intracranial pressure approaches arterial pressure, a sign of impending brainstem compression.",
- "related": [
-  "g-herniation"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-cushing-response",
+  "term": "Cushing response",
+  "definition": "Hypertension with bradycardia and irregular breathing produced by medullary ischemia when intracranial pressure approaches arterial pressure, a sign of impending brainstem compression.",
+  "related": [
+    "g-herniation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cushing-reflex"
+    },
+    {
+      "ref": "sp-increased-intracranial-pressure",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-brain-herniation",
+      "section": "Pathophysiology"
+    }
+  ]
 }

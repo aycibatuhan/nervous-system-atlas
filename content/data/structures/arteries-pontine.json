@@ -1,183 +1,155 @@
 {
- "kind": "structure",
- "id": "arteries-pontine",
- "name": "Pontine arteries",
- "synonyms": [
-  "paramedian pontine arteries",
-  "short and long circumferential arteries"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "Numerous small branches leave the basilar artery along its course and enter the pons. The paramedian arteries pierce the ventral pons beside the midline and supply the corticospinal fibers, pontine nuclei, medial lemniscus and the abducens and facial nuclei; the short circumferential branches supply the anterolateral pons and the long circumferential branches (AICA, SCA) the lateral tegmentum. Paramedian branch disease from basilar atheroma is a very common cause of pontine lacunes.",
- "anatomy": {
-  "location": "Arise from the posterior and lateral walls of the basilar artery in the prepontine cistern and enter the basilar sulcus and anterolateral surface of the pons; they do not anastomose significantly with one another.",
-  "subdivisions": [
-   {
-    "name": "Paramedian arteries",
-    "note": "medial basis pontis and medial tegmentum: corticospinal and corticobulbar fibers, pontine nuclei, medial lemniscus, abducens nucleus, facial nucleus, MLF"
-   },
-   {
-    "name": "Short circumferential arteries",
-    "note": "anterolateral basis pontis and middle cerebellar peduncle entry zone"
-   },
-   {
-    "name": "Long circumferential arteries",
-    "note": "lateral tegmentum, together with AICA and SCA branches"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supply the pons segment by segment: the corticospinal tract in the basis pontis, the pontine nuclei and transverse fibers, the medial lemniscus, the abducens and facial nuclei, the paramedian pontine reticular formation and the MLF.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar"
+  "kind": "structure",
+  "id": "arteries-pontine",
+  "name": "Pontine arteries",
+  "synonyms": [
+    "paramedian pontine arteries",
+    "short and long circumferential arteries"
   ],
-  "territories": [
-   "territory-basilar-paramedian"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -28,
-     "z": -30
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "Numerous small branches leave the basilar artery along its course and enter the pons. The paramedian arteries pierce the ventral pons beside the midline and supply the corticospinal fibers, pontine nuclei, medial lemniscus and the abducens and facial nuclei; the short circumferential branches supply the anterolateral pons and the long circumferential branches (AICA, SCA) the lateral tegmentum. Paramedian branch disease from basilar atheroma is a very common cause of pontine lacunes.",
+  "anatomy": {
+    "location": "Arise from the posterior and lateral walls of the basilar artery in the prepontine cistern and enter the basilar sulcus and anterolateral surface of the pons; they do not anastomose significantly with one another.",
+    "subdivisions": [
+      {
+        "name": "Paramedian arteries",
+        "note": "medial basis pontis and medial tegmentum: corticospinal and corticobulbar fibers, pontine nuclei, medial lemniscus, abducens nucleus, facial nucleus, MLF"
+      },
+      {
+        "name": "Short circumferential arteries",
+        "note": "anterolateral basis pontis and middle cerebellar peduncle entry zone"
+      },
+      {
+        "name": "Long circumferential arteries",
+        "note": "lateral tegmentum, together with AICA and SCA branches"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supply the pons segment by segment: the corticospinal tract in the basis pontis, the pontine nuclei and transverse fibers, the medial lemniscus, the abducens and facial nuclei, the paramedian pontine reticular formation and the MLF.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar"
+    ],
+    "territories": [
+      "territory-basilar-paramedian"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -28,
+          "z": -30
+        },
+        "label": "paramedian basis pontis, the lacunar site"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -26,
+          "z": -28
+        },
+        "label": "basilar artery on the ventral pons with perforators entering"
+      }
+    ],
+    "normalAppearance": "Individual perforators are not resolved on MRI. Their territories are the paramedian wedges of the pons on axial slices, best judged relative to the midline and the ventral surface.",
+    "pathology": [
+      {
+        "pathology": "Paramedian pontine infarct",
+        "modality": "MRI",
+        "finding": "A wedge of restricted diffusion in one half of the basis pontis extending to the ventral surface (branch atheromatous disease) or a smaller deep lacune; the corticospinal tract is usually involved.",
+        "sequence": "DWI",
+        "pitfalls": "Pontine infarcts may not be visible on CT at all; DWI is essential"
+      },
+      {
+        "pathology": "Pontine hemorrhage",
+        "modality": "CT",
+        "finding": "A hyperdense hematoma centered in the pons, often extending into the fourth ventricle; large hemorrhages cause coma with pinpoint pupils.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CTA of the basilar artery for atheroma or occlusion"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Pure motor hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Corticospinal fibers in the basis pontis"
+      },
+      {
+        "deficit": "Ataxic hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Corticospinal fibers plus pontocerebellar fibers"
+      },
+      {
+        "deficit": "Dysarthria–clumsy hand",
+        "side": "contralateral",
+        "mechanism": "Basis pontis at the level of the facial and hypoglossal projections"
+      },
+      {
+        "deficit": "Abducens palsy or horizontal gaze palsy with contralateral hemiparesis",
+        "side": "ipsilateral",
+        "mechanism": "Abducens nucleus/PPRF plus the corticospinal tract (Foville)"
+      },
+      {
+        "deficit": "Facial palsy with contralateral hemiparesis",
+        "side": "ipsilateral",
+        "mechanism": "Facial fascicle plus the corticospinal tract (Millard–Gubler)"
+      },
+      {
+        "deficit": "Internuclear ophthalmoplegia",
+        "side": "ipsilateral",
+        "mechanism": "MLF in the paramedian tegmentum"
+      }
+    ],
+    "examination": [
+      "Pronator drift and gait; check for ataxia out of proportion to weakness",
+      "Horizontal eye movements looking for adduction lag or gaze palsy",
+      "Facial movement including the forehead",
+      "Speech and fine finger movements"
+    ],
+    "syndromes": [
+      "syn-lacunar-ataxic-hemiparesis",
+      "syn-lacunar-dysarthria-clumsy-hand",
+      "syn-millard-gubler",
+      "syn-foville",
+      "syn-ino"
+    ],
+    "pearls": [
+      "Lacunar syndromes come from the pons as often as from the internal capsule; ataxic hemiparesis and dysarthria–clumsy hand favor the pons",
+      "A crossed sign (cranial nerve on one side, limbs on the other) means the brainstem: pons if it is VI or VII"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-basilar-artery",
+      "section": "Structure and Function"
     },
-    "label": "paramedian basis pontis, the lacunar site"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -26,
-     "z": -28
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "Pathophysiology"
     },
-    "label": "basilar artery on the ventral pons with perforators entering"
-   }
+    {
+      "ref": "sp-brain-arteries",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Individual perforators are not resolved on MRI. Their territories are the paramedian wedges of the pons on axial slices, best judged relative to the midline and the ventral surface.",
-  "pathology": [
-   {
-    "pathology": "Paramedian pontine infarct",
-    "modality": "MRI",
-    "finding": "A wedge of restricted diffusion in one half of the basis pontis extending to the ventral surface (branch atheromatous disease) or a smaller deep lacune; the corticospinal tract is usually involved.",
-    "sequence": "DWI",
-    "pitfalls": "Pontine infarcts may not be visible on CT at all; DWI is essential"
-   },
-   {
-    "pathology": "Pontine hemorrhage",
-    "modality": "CT",
-    "finding": "A hyperdense hematoma centered in the pons, often extending into the fourth ventricle; large hemorrhages cause coma with pinpoint pupils.",
-    "sequence": "CT non-contrast"
-   }
+  "tags": [
+    "vascular",
+    "pons"
   ],
-  "sequenceOfChoice": "DWI; CTA of the basilar artery for atheroma or occlusion"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Pure motor hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Corticospinal fibers in the basis pontis"
-   },
-   {
-    "deficit": "Ataxic hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Corticospinal fibers plus pontocerebellar fibers"
-   },
-   {
-    "deficit": "Dysarthria–clumsy hand",
-    "side": "contralateral",
-    "mechanism": "Basis pontis at the level of the facial and hypoglossal projections"
-   },
-   {
-    "deficit": "Abducens palsy or horizontal gaze palsy with contralateral hemiparesis",
-    "side": "ipsilateral",
-    "mechanism": "Abducens nucleus/PPRF plus the corticospinal tract (Foville)"
-   },
-   {
-    "deficit": "Facial palsy with contralateral hemiparesis",
-    "side": "ipsilateral",
-    "mechanism": "Facial fascicle plus the corticospinal tract (Millard–Gubler)"
-   },
-   {
-    "deficit": "Internuclear ophthalmoplegia",
-    "side": "ipsilateral",
-    "mechanism": "MLF in the paramedian tegmentum"
-   }
-  ],
-  "examination": [
-   "Pronator drift and gait; check for ataxia out of proportion to weakness",
-   "Horizontal eye movements looking for adduction lag or gaze palsy",
-   "Facial movement including the forehead",
-   "Speech and fine finger movements"
-  ],
-  "syndromes": [
-   "syn-lacunar-ataxic-hemiparesis",
-   "syn-lacunar-dysarthria-clumsy-hand",
-   "syn-millard-gubler",
-   "syn-foville",
-   "syn-ino"
-  ],
-  "pearls": [
-   "Lacunar syndromes come from the pons as often as from the internal capsule; ataxic hemiparesis and dysarthria–clumsy hand favor the pons",
-   "A crossed sign (cranial nerve on one side, limbs on the other) means the brainstem: pons if it is VI or VII"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    466,
-    467
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    216,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    79
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    60,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "pons"
- ],
- "status": "draft",
- "latin": "Arteriae pontis",
- "subsystem": "perforators"
+  "status": "draft",
+  "latin": "Arteriae pontis",
+  "subsystem": "perforators"
 }

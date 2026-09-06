@@ -1,181 +1,145 @@
 {
- "kind": "structure",
- "id": "territory-lateral-lenticulostriate",
- "name": "Lateral lenticulostriate territory",
- "synonyms": [
-  "lateral striate artery territory",
-  "striatocapsular territory"
- ],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-lateral-lenticulostriate-l",
-  "territory-lateral-lenticulostriate-r"
- ],
- "summary": "The lateral lenticulostriate territory is the deep region supplied by the lateral striate arteries that rise from the M1 segment through the anterior perforated substance: the posterior putamen, the lateral globus pallidus, the body of the caudate and the upper part of the capsule's posterior limb and the corona radiata. It is the most important small-vessel territory of the hemisphere: it is the site of the pure motor lacune and of the striatocapsular infarct after MCA embolism, the site of the hypertensive putaminal hemorrhage that is the commonest intracerebral bleed, and it has no collateral supply, so it is the irreversible core of every MCA occlusion.",
- "anatomy": {
-  "location": "Posterior two-thirds of the putamen, the lateral part of the globus pallidus, the body of the caudate, the upper two-thirds of the capsule's posterior limb together with the adjacent corona radiata, between the medial lenticulostriate territory in front, the anterior choroidal territory below and behind in the lower posterior limb, and the insular and cortical MCA territories laterally.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lateral lenticulostriate arteries from the M1 segment",
-    "via": "arterial supply"
-   }
+  "kind": "structure",
+  "id": "territory-lateral-lenticulostriate",
+  "name": "Lateral lenticulostriate territory",
+  "synonyms": [
+    "lateral striate artery territory",
+    "striatocapsular territory"
   ],
-  "efferents": [
-   {
-    "to": "Thalamostriate and inferior striate veins",
-    "via": "venous drainage"
-   }
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-lateral-lenticulostriate-l",
+    "territory-lateral-lenticulostriate-r"
   ],
-  "pathways": []
- },
- "function": "The territory contains the corticospinal and corticobulbar fibers and the thalamocortical sensory fibers of the posterior limb, the motor striatum and the lateral pallidum, so its infarction produces the classic capsular syndrome of contralateral face-arm-leg hemiparesis with or without sensory loss, dysarthria and, from the striatum, later dystonia or chorea; a striatocapsular infarct from transient M1 occlusion adds cortical signs (aphasia, neglect) from the hypoperfused convexity. The lateral striate arteries are end-arteries under the direct pressure of the M1 segment, which is why chronic hypertension causes lipohyalinosis and lacunes here and why their rupture produces the putaminal hemorrhage that dissects into the capsule and the ventricle.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-mca"
-  ],
-  "territories": [
-   "territory-lateral-lenticulostriate"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "territory-lateral-lenticulostriate-l"
+  "summary": "The lateral lenticulostriate territory is the deep region supplied by the lateral striate arteries that rise from the M1 segment through the anterior perforated substance: the posterior putamen, the lateral globus pallidus, the body of the caudate and the upper part of the capsule's posterior limb and the corona radiata. It is the most important small-vessel territory of the hemisphere: it is the site of the pure motor lacune and of the striatocapsular infarct after MCA embolism, the site of the hypertensive putaminal hemorrhage that is the commonest intracerebral bleed, and it has no collateral supply, so it is the irreversible core of every MCA occlusion.",
+  "anatomy": {
+    "location": "Posterior two-thirds of the putamen, the lateral part of the globus pallidus, the body of the caudate, the upper two-thirds of the capsule's posterior limb together with the adjacent corona radiata, between the medial lenticulostriate territory in front, the anterior choroidal territory below and behind in the lower posterior limb, and the insular and cortical MCA territories laterally.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lateral lenticulostriate arteries from the M1 segment",
+        "via": "arterial supply"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Thalamostriate and inferior striate veins",
+        "via": "venous drainage"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The territory contains the corticospinal and corticobulbar fibers and the thalamocortical sensory fibers of the posterior limb, the motor striatum and the lateral pallidum, so its infarction produces the classic capsular syndrome of contralateral face-arm-leg hemiparesis with or without sensory loss, dysarthria and, from the striatum, later dystonia or chorea; a striatocapsular infarct from transient M1 occlusion adds cortical signs (aphasia, neglect) from the hypoperfused convexity. The lateral striate arteries are end-arteries under the direct pressure of the M1 segment, which is why chronic hypertension causes lipohyalinosis and lacunes here and why their rupture produces the putaminal hemorrhage that dissects into the capsule and the ventricle.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-lateral-lenticulostriate"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "territory-lateral-lenticulostriate-l"
+        },
+        "label": "lateral lenticulostriate territory of the putamen and posterior limb"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "territory-lateral-lenticulostriate-r"
+        },
+        "label": "lateral striate domain of the lentiform nucleus and internal capsule"
+      }
+    ],
+    "normalAppearance": "On the overlay the lateral lenticulostriate domain covers the posterior putamen, lateral pallidum and upper posterior limb; on imaging the lentiform nucleus is the first deep structure to lose density in an MCA occlusion.",
+    "pathology": [
+      {
+        "pathology": "Putaminal hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense hematoma in the putamen extending into the internal capsule and sometimes the ventricle, with contralateral hemiplegia, gaze deviation and drowsiness.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Striatocapsular infarct",
+        "modality": "MRI",
+        "finding": "Comma-shaped restricted diffusion of the putamen, caudate body and capsule with hemiparesis and cortical signs from convexity hypoperfusion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Pure motor lacune",
+        "modality": "MRI",
+        "finding": "Small restricted diffusion in the posterior limb with face-arm-leg weakness and no cortical signs.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral face-arm-leg hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Posterior limb corticospinal infarction"
+      },
+      {
+        "deficit": "Dysarthria and contralateral hemisensory loss",
+        "side": "contralateral",
+        "mechanism": "Corticobulbar and thalamocortical fiber involvement"
+      },
+      {
+        "deficit": "Delayed contralateral dystonia or chorea",
+        "side": "contralateral",
+        "mechanism": "Putaminal and pallidal infarction"
+      },
+      {
+        "deficit": "Coma and herniation with large putaminal hemorrhage",
+        "side": "bilateral",
+        "mechanism": "Mass effect of the hematoma"
+      }
+    ],
+    "examination": [
+      "Strength of face, arm and leg and the pattern of weakness",
+      "Sensation and cortical signs to distinguish a lacune from a striatocapsular infarct",
+      "Blood pressure and hemorrhage risk"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-motor",
+      "syn-lacunar-sensorimotor",
+      "syn-mca-stem-infarct",
+      "syn-hemiballismus"
+    ],
+    "pearls": [
+      "The lateral lenticulostriates take the full pressure of the M1 and pay for it with lacunes and hemorrhages",
+      "Face-arm-leg weakness without cortical signs is the posterior limb",
+      "The lentiform nucleus is the core of the MCA stroke: it dies first and does not come back"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-striate-arteries",
+      "section": "Structure and Function"
     },
-    "label": "lateral lenticulostriate territory of the putamen and posterior limb"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "territory-lateral-lenticulostriate-r"
+    {
+      "ref": "sp-lacunar-stroke",
+      "section": "Pathophysiology"
     },
-    "label": "lateral striate domain of the lentiform nucleus and internal capsule"
-   }
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On the overlay the lateral lenticulostriate domain covers the posterior putamen, lateral pallidum and upper posterior limb; on imaging the lentiform nucleus is the first deep structure to lose density in an MCA occlusion.",
-  "pathology": [
-   {
-    "pathology": "Putaminal hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense hematoma in the putamen extending into the internal capsule and sometimes the ventricle, with contralateral hemiplegia, gaze deviation and drowsiness.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Striatocapsular infarct",
-    "modality": "MRI",
-    "finding": "Comma-shaped restricted diffusion of the putamen, caudate body and capsule with hemiparesis and cortical signs from convexity hypoperfusion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Pure motor lacune",
-    "modality": "MRI",
-    "finding": "Small restricted diffusion in the posterior limb with face-arm-leg weakness and no cortical signs.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral face-arm-leg hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Posterior limb corticospinal infarction"
-   },
-   {
-    "deficit": "Dysarthria and contralateral hemisensory loss",
-    "side": "contralateral",
-    "mechanism": "Corticobulbar and thalamocortical fiber involvement"
-   },
-   {
-    "deficit": "Delayed contralateral dystonia or chorea",
-    "side": "contralateral",
-    "mechanism": "Putaminal and pallidal infarction"
-   },
-   {
-    "deficit": "Coma and herniation with large putaminal hemorrhage",
-    "side": "bilateral",
-    "mechanism": "Mass effect of the hematoma"
-   }
+  "tags": [
+    "arterial territory",
+    "stroke"
   ],
-  "examination": [
-   "Strength of face, arm and leg and the pattern of weakness",
-   "Sensation and cortical signs to distinguish a lacune from a striatocapsular infarct",
-   "Blood pressure and hemorrhage risk"
-  ],
-  "syndromes": [
-   "syn-lacunar-pure-motor",
-   "syn-lacunar-sensorimotor",
-   "syn-mca-stem-infarct",
-   "syn-hemiballismus"
-  ],
-  "pearls": [
-   "The lateral lenticulostriates take the full pressure of the M1 and pay for it with lacunes and hemorrhages",
-   "Face-arm-leg weakness without cortical signs is the posterior limb",
-   "The lentiform nucleus is the core of the MCA stroke: it dies first and does not come back"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    475
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    66
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    190,
-    194
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "tags": [
-  "arterial territory",
-  "stroke"
- ],
- "status": "draft",
- "subsystem": "level1",
- "parent": "territory-lenticulostriate"
+  "status": "draft",
+  "subsystem": "level1",
+  "parent": "territory-lenticulostriate"
 }

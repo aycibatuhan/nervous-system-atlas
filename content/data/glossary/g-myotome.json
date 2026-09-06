@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-myotome",
- "term": "Myotome",
- "definition": "The group of muscles supplied by one spinal root. Root weakness crosses peripheral nerve territories (C7: triceps and wrist flexors), whereas nerve weakness crosses root territories.",
- "related": [
-  "g-dermatome",
-  "g-radiculopathy"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-myotome",
+  "term": "Myotome",
+  "definition": "The group of muscles supplied by one spinal root. Root weakness crosses peripheral nerve territories (C7: triceps and wrist flexors), whereas nerve weakness crosses root territories.",
+  "related": [
+    "g-dermatome",
+    "g-radiculopathy"
+  ],
+  "citations": [
+    {
+      "ref": "sp-dermatomes",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cervical-radiculopathy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-lumbar-disc-herniation",
+      "section": "Pathophysiology"
+    }
+  ]
 }

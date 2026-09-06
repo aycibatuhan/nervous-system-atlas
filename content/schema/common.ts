@@ -1,13 +1,12 @@
 import { z } from 'zod';
 
-export const Book = z.enum(['snell', 'berkowitz']);
-export const Citation = z.object({
-  book: Book,
-  chapter: z.number().int().min(1).max(31),
-  pages: z.tuple([z.number().int().min(1), z.number().int().min(1)]),   // printed pages, inclusive
-  section: z.string().max(120).optional(),
+/** Open-access citation: `ref` is a file name in content/bibliography/<ref>.json (StatPearls chapter, open-access review, open textbook). */
+export const RefCitation = z.object({
+  ref: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'kebab-case bibliography id'),
+  section: z.string().max(160).optional(),   // section of the cited work, e.g. "Structure and Function"
   note: z.string().max(240).optional(),
-});
+}).strict();
+export const Citation = RefCitation;
 export type Citation = z.infer<typeof Citation>;
 
 export const Side = z.enum(['left', 'right', 'bilateral', 'ipsilateral', 'contralateral', 'midline', 'n/a']);

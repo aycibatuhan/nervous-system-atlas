@@ -1,209 +1,189 @@
 {
- "kind": "structure",
- "id": "gyrus-precentral",
- "name": "Precentral gyrus (primary motor cortex)",
- "synonyms": [
-  "primary motor cortex",
-  "M1",
-  "Brodmann area 4"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-precentral-l",
-  "gyrus-precentral-r"
- ],
- "summary": "The gyrus immediately in front of the central sulcus, extending over the vertex onto the medial surface as the anterior part of the paracentral lobule. Its layer V giant pyramidal (Betz) cells and many smaller pyramidal neurons give rise to the corticospinal and corticobulbar tracts. The body is mapped upside down and distorted along it (the motor homunculus): the leg and foot on the medial surface, the trunk and arm over the convexity with a disproportionately large hand area at the hand knob, and the face and tongue lowest, just above the Sylvian fissure. Because the ACA supplies the leg area and the MCA the rest, the pattern of weakness after a stroke tells you which artery is involved.",
- "anatomy": {
-  "location": "Between the precentral sulcus in front and the central sulcus behind, from the lateral sulcus to the superior margin and onto the medial surface; recognized on axial MRI by the omega-shaped hand knob and by the thicker cortex compared with the postcentral gyrus.",
-  "subdivisions": [
-   {
-    "name": "Medial (paracentral) part",
-    "note": "leg, foot and perineum; ACA territory"
-   },
-   {
-    "name": "Superior convexity",
-    "note": "trunk and shoulder"
-   },
-   {
-    "name": "Hand knob",
-    "note": "hand and fingers, the largest representation"
-   },
-   {
-    "name": "Inferior part",
-    "note": "face, tongue, larynx; MCA superior division"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "thalamus-va-vl",
-    "note": "cerebellar and pallidal input"
-   },
-   {
-    "from": "gyrus-postcentral and cortex-premotor-sma"
-   }
+  "kind": "structure",
+  "id": "gyrus-precentral",
+  "name": "Precentral gyrus (primary motor cortex)",
+  "synonyms": [
+    "primary motor cortex",
+    "M1",
+    "Brodmann area 4"
   ],
-  "efferents": [
-   {
-    "to": "spinal-cord",
-    "via": "pathway-lateral-corticospinal",
-    "note": "crossed"
-   },
-   {
-    "to": "brainstem motor nuclei",
-    "via": "pathway-corticobulbar"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-precentral-l",
+    "gyrus-precentral-r"
   ],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-anterior-corticospinal",
-   "pathway-corticobulbar"
-  ]
- },
- "function": "Execution of voluntary skilled movement of the contralateral body through the corticospinal tract and of the face through the corticobulbar tract; force and direction coding of movement.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-superior-division",
-   "artery-aca"
-  ],
-  "territories": [
-   "territory-mca",
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 35,
-     "y": -20,
-     "z": 55
-    },
-    "label": "hand knob of the precentral gyrus, in front of the central sulcus"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 35,
-     "y": -20,
-     "z": 55
-    },
-    "label": "precentral gyrus with the central sulcus behind"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 5,
-     "y": -25,
-     "z": 60
-    },
-    "label": "paracentral lobule: leg area on the medial surface"
-   }
-  ],
-  "normalAppearance": "Identify the central sulcus on axial images by the hand knob (an inverted omega) on the precentral gyrus and by the pars marginalis of the cingulate sulcus on the medial surface; the precentral cortex is thicker and slightly darker on T2 than the postcentral cortex. Functional MRI and tractography map the tract for surgical planning.",
-  "pathology": [
-   {
-    "pathology": "Cortical motor strip infarct",
-    "modality": "MRI",
-    "finding": "Ribbon of restricted diffusion along the precentral gyrus; an isolated hand-knob infarct causes pure hand weakness mimicking a peripheral nerve lesion.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Parasagittal meningioma",
-    "modality": "MRI",
-    "finding": "Enhancing dural mass at the vertex compressing the paracentral lobule with contralateral (or bilateral) leg weakness and focal seizures.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Motor neuron disease",
-    "modality": "MRI",
-    "finding": "T2 hyperintensity along the corticospinal tract and T2*/SWI hypointensity of the precentral cortex from iron.",
-    "sequence": "SWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI; T1+Gd for masses; fMRI/tractography for surgery"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral weakness with the pattern of the homunculus: face and arm (lateral lesion) or leg (medial lesion)",
-    "side": "contralateral",
-    "mechanism": "Somatotopic destruction of motor cortex"
-   },
-   {
-    "deficit": "Loss of fine finger movements out of proportion to power",
-    "side": "contralateral",
-    "mechanism": "Corticospinal control of independent finger movement"
-   },
-   {
-    "deficit": "Focal motor (Jacksonian) seizures marching along the homunculus",
-    "side": "contralateral",
-    "mechanism": "Cortical irritation"
-   },
-   {
-    "deficit": "Initial flaccidity then spasticity and hyperreflexia",
-    "side": "contralateral",
-    "mechanism": "Upper motor neuron lesion"
-   }
-  ],
-  "examination": [
-   "Pronator drift, finger tapping and rapid alternating movements",
-   "Compare leg with arm weakness to infer ACA versus MCA",
-   "Reflexes, plantar responses, tone",
-   "Ask about focal twitching or marching seizures"
-  ],
-  "syndromes": [
-   "syn-mca-superior-division",
-   "syn-aca-infarct"
-  ],
-  "pearls": [
-   "Isolated hand weakness of sudden onset is a hand-knob cortical infarct until proven otherwise, not a radial or ulnar palsy",
-   "Weakness in the leg alone: paracentral lobule (ACA), spinal cord or a parasagittal mass"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    283,
-    284
-   ]
+  "summary": "The gyrus immediately in front of the central sulcus, extending over the vertex onto the medial surface as the anterior part of the paracentral lobule. Its layer V giant pyramidal (Betz) cells and many smaller pyramidal neurons give rise to the corticospinal and corticobulbar tracts. The body is mapped upside down and distorted along it (the motor homunculus): the leg and foot on the medial surface, the trunk and arm over the convexity with a disproportionately large hand area at the hand knob, and the face and tongue lowest, just above the Sylvian fissure. Because the ACA supplies the leg area and the MCA the rest, the pattern of weakness after a stroke tells you which artery is involved.",
+  "anatomy": {
+    "location": "Between the precentral sulcus in front and the central sulcus behind, from the lateral sulcus to the superior margin and onto the medial surface; recognized on axial MRI by the omega-shaped hand knob and by the thicker cortex compared with the postcentral gyrus.",
+    "subdivisions": [
+      {
+        "name": "Medial (paracentral) part",
+        "note": "leg, foot and perineum; ACA territory"
+      },
+      {
+        "name": "Superior convexity",
+        "note": "trunk and shoulder"
+      },
+      {
+        "name": "Hand knob",
+        "note": "hand and fingers, the largest representation"
+      },
+      {
+        "name": "Inferior part",
+        "note": "face, tongue, larynx; MCA superior division"
+      }
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    156
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "thalamus-va-vl",
+        "note": "cerebellar and pallidal input"
+      },
+      {
+        "from": "gyrus-postcentral and cortex-premotor-sma"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "spinal-cord",
+        "via": "pathway-lateral-corticospinal",
+        "note": "crossed"
+      },
+      {
+        "to": "brainstem motor nuclei",
+        "via": "pathway-corticobulbar"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-anterior-corticospinal",
+      "pathway-corticobulbar"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    34
-   ]
+  "function": "Execution of voluntary skilled movement of the contralateral body through the corticospinal tract and of the face through the corticobulbar tract; force and direction coding of movement.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-superior-division",
+      "artery-aca"
+    ],
+    "territories": [
+      "territory-mca",
+      "territory-aca"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    54
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "frontal"
- ],
- "status": "draft",
- "latin": "Gyrus precentralis",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 35,
+          "y": -20,
+          "z": 55
+        },
+        "label": "hand knob of the precentral gyrus, in front of the central sulcus"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 35,
+          "y": -20,
+          "z": 55
+        },
+        "label": "precentral gyrus with the central sulcus behind"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 5,
+          "y": -25,
+          "z": 60
+        },
+        "label": "paracentral lobule: leg area on the medial surface"
+      }
+    ],
+    "normalAppearance": "Identify the central sulcus on axial images by the hand knob (an inverted omega) on the precentral gyrus and by the pars marginalis of the cingulate sulcus on the medial surface; the precentral cortex is thicker and slightly darker on T2 than the postcentral cortex. Functional MRI and tractography map the tract for surgical planning.",
+    "pathology": [
+      {
+        "pathology": "Cortical motor strip infarct",
+        "modality": "MRI",
+        "finding": "Ribbon of restricted diffusion along the precentral gyrus; an isolated hand-knob infarct causes pure hand weakness mimicking a peripheral nerve lesion.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Parasagittal meningioma",
+        "modality": "MRI",
+        "finding": "Enhancing dural mass at the vertex compressing the paracentral lobule with contralateral (or bilateral) leg weakness and focal seizures.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Motor neuron disease",
+        "modality": "MRI",
+        "finding": "T2 hyperintensity along the corticospinal tract and T2*/SWI hypointensity of the precentral cortex from iron.",
+        "sequence": "SWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; T1+Gd for masses; fMRI/tractography for surgery"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral weakness with the pattern of the homunculus: face and arm (lateral lesion) or leg (medial lesion)",
+        "side": "contralateral",
+        "mechanism": "Somatotopic destruction of motor cortex"
+      },
+      {
+        "deficit": "Loss of fine finger movements out of proportion to power",
+        "side": "contralateral",
+        "mechanism": "Corticospinal control of independent finger movement"
+      },
+      {
+        "deficit": "Focal motor (Jacksonian) seizures marching along the homunculus",
+        "side": "contralateral",
+        "mechanism": "Cortical irritation"
+      },
+      {
+        "deficit": "Initial flaccidity then spasticity and hyperreflexia",
+        "side": "contralateral",
+        "mechanism": "Upper motor neuron lesion"
+      }
+    ],
+    "examination": [
+      "Pronator drift, finger tapping and rapid alternating movements",
+      "Compare leg with arm weakness to infer ACA versus MCA",
+      "Reflexes, plantar responses, tone",
+      "Ask about focal twitching or marching seizures"
+    ],
+    "syndromes": [
+      "syn-mca-superior-division",
+      "syn-aca-infarct"
+    ],
+    "pearls": [
+      "Isolated hand weakness of sudden onset is a hand-knob cortical infarct until proven otherwise, not a radial or ulnar palsy",
+      "Weakness in the leg alone: paracentral lobule (ACA), spinal cord or a parasagittal mass"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-precentral-gyrus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-motor-cortical",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-frontal-cortex",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "frontal"
+  ],
+  "status": "draft",
+  "latin": "Gyrus precentralis",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

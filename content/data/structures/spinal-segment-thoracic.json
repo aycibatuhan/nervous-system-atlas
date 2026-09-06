@@ -1,0 +1,170 @@
+{
+  "kind": "structure",
+  "id": "spinal-segment-thoracic",
+  "name": "Thoracic spinal cord (T1-T12)",
+  "synonyms": [
+    "thoracic cord",
+    "T1-T12 cord segments"
+  ],
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-segment-thoracic"
+  ],
+  "summary": "The thoracic cord is the long, slender middle third of the cord, the part with the smallest cross-section, the poorest blood supply and the narrowest bony canal, which together make it the segment where compression and infarction do the most damage for the least warning. It has no limb enlargement, so its anterior horns are small and supply only the intercostal and abdominal muscles, but its lateral horn runs the entire sympathetic outflow of the body from T1 to L2, and the T1 segment supplies the sympathetic fibers of the head. Because the thoracic dermatomes wrap the trunk in neat bands, a lesion here declares itself as a sensory level: the nipple line is T4, the xiphisternum T6 and the umbilicus T10. A complete thoracic lesion gives spastic paraplegia with a sensory level and a neurogenic bladder, with normal arms.",
+  "anatomy": {
+    "location": "From the lower border of the C7 vertebral body to about the T9 or T10 vertebral body, so that the twelve thoracic cord segments are compressed into nine or ten vertebral levels and each segment lies two to three vertebrae above the bone of the same number. The canal is at its narrowest and the cord at its thinnest between T4 and T9, and the cord is held in the middle of the canal by the dentate ligaments with the thoracic aorta and its intercostal arteries in front of the vertebral bodies.",
+    "subdivisions": [
+      {
+        "name": "T1-T6 (upper thoracic)",
+        "note": "Sympathetic supply to the head, neck and heart, and the upper intercostal muscles; a lesion at or above T6 permits autonomic dysreflexia."
+      },
+      {
+        "name": "T7-T12 (lower thoracic)",
+        "note": "Lower intercostal and abdominal muscles, the splanchnic sympathetic outflow, and the T10 dermatome at the umbilicus."
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-lateral-spinothalamic",
+      "pathway-dcml"
+    ]
+  },
+  "function": "The thoracic cord carries the whole motor and sensory traffic of the lower limbs and pelvis through, innervates the intercostal and abdominal muscles for breathing, coughing and posture, and houses the intermediolateral cell column, the preganglionic sympathetic neurons that reach every blood vessel, sweat gland, viscus and the adrenal medulla. Its dermatomes are the most reliable segmental map in the body, which is why a sensory level found on the trunk is the single most useful sign in acute myelopathy. The upper thoracic segments also carry the sympathetic supply of the heart, and T5 to T9 supply the splanchnic nerves; a lesion above T6 removes descending control of that outflow and allows autonomic dysreflexia, in which a distended bladder or bowel drives a dangerous surge of blood pressure with a reflex bradycardia and flushing above the lesion.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "posterior-spinal-arteries",
+      "segmental intercostal radicular arteries",
+      "artery of Adamkiewicz"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -70
+        },
+        "label": "cord cross-section; the thoracic cord itself lies below the MNI volume"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervicomedullary junction, the rostral end of the cord shown in the volume"
+      }
+    ],
+    "normalAppearance": "On sagittal T2 the thoracic cord is a uniform, slender band with no enlargement, narrowing further as it descends until it swells into the lumbar enlargement; the anterior median fissure and the posterior septum are not resolved at routine resolution.",
+    "pathology": [
+      {
+        "pathology": "Thoracic cord compression by metastasis",
+        "modality": "MRI",
+        "finding": "Epidural soft tissue from a vertebral body deposit indenting the thecal sac with cord signal change; the sensory level on examination is usually a few segments below the true lesion.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Spinal cord infarction in the anterior spinal artery territory",
+        "modality": "MRI",
+        "finding": "Pencil-like or owl-eye T2 hyperintensity restricted to the anterior two-thirds of the cord with restricted diffusion, classically after aortic surgery or dissection.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Transverse myelitis",
+        "modality": "MRI",
+        "finding": "Long central T2 hyperintensity over three or more segments with cord swelling and patchy enhancement, raising neuromyelitis optica and MOG antibody disease.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Whole-spine sagittal T2 with axial images through the level, and contrast when a tumor or myelitis is suspected."
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Spastic paraplegia with a sensory level on the trunk",
+        "side": "bilateral",
+        "mechanism": "Interruption of the corticospinal and spinothalamic tracts at one thoracic segment"
+      },
+      {
+        "deficit": "Beevor sign, the umbilicus moving upward on flexing the neck",
+        "side": "bilateral",
+        "mechanism": "Weak lower abdominal muscles (T10-T12) with intact upper ones, placing the lesion around T10"
+      },
+      {
+        "deficit": "Autonomic dysreflexia",
+        "side": "bilateral",
+        "mechanism": "Loss of descending control over the sympathetic outflow below a lesion at or above T6"
+      },
+      {
+        "deficit": "Girdle pain radiating around the chest or abdomen",
+        "side": "ipsilateral",
+        "mechanism": "Irritation of a thoracic dorsal root or of the dorsal root entry zone at the level of the lesion"
+      }
+    ],
+    "examination": [
+      "Find the sensory level with a pin, working upward from a numb area to normal skin",
+      "Test the abdominal reflexes and look for Beevor sign",
+      "Check for spasticity, extensor plantar responses and a neurogenic bladder",
+      "Ask about vascular surgery, aortic dissection and back pain of sudden onset"
+    ],
+    "syndromes": [
+      "syn-anterior-cord",
+      "syn-brown-sequard",
+      "syn-transverse-myelitis",
+      "syn-complete-transection-spinal-shock"
+    ],
+    "pearls": [
+      "A sensory level on the trunk means the cord, not the brain, until imaging says otherwise",
+      "Image above the clinical level: the sensory level often sits below the lesion",
+      "Sudden painless paraplegia with preserved vibration and joint position sense is anterior spinal artery infarction"
+    ]
+  },
+  "pitfalls": [
+    "DERIVED MESH: the four cord blocks are not measured on an individual. The Z-Anatomy cord surface was cut by horizontal planes placed at the classical cord-segment to vertebral-body relationship read off the Z-Anatomy vertebrae, so the block boundaries teach the rule rather than record a specimen; use them for orientation, never to read a level off an image.",
+    "Thoracic cord segments lie two to three vertebrae above the bone of the same number, so a T10 sensory level is not a T10 vertebral lesion",
+    "The mid-thoracic cord is the watershed of the spinal circulation and infarcts there with little warning"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spinal-cord",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-morphology",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-injuries",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-spinal-cord-arteries",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-back-vertebral-column",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "spinal cord",
+    "segment",
+    "derived"
+  ],
+  "status": "draft",
+  "subsystem": "segments",
+  "parent": "spinal-cord",
+  "level": {
+    "region": "spinal",
+    "sub": "thoracic"
+  }
+}

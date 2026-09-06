@@ -1,148 +1,136 @@
 {
- "kind": "structure",
- "id": "territory-basilar-paramedian",
- "name": "Basilar paramedian (pontine) territory",
- "synonyms": [],
- "system": "arterial-territories",
- "meshIds": [
-  "territory-basilar-l",
-  "territory-basilar-r"
- ],
- "summary": "The medial pons and, by extension, the medial medulla and midbrain perfused by the paramedian perforators of the basilar and vertebral arteries. It contains the corticospinal tract, the medial lemniscus, the abducens and facial nuclei, the MLF and the hypoglossal and oculomotor nuclear regions, so infarcts here produce the classic crossed brainstem syndromes and, when bilateral, the locked-in state.",
- "anatomy": {
-  "location": "A paramedian wedge on each side of the midline extending from the ventral surface of the pons (basis pontis) back into the medial tegmentum; the same pattern continues rostrally into the midbrain (Weber, Benedikt, Claude sites) and caudally into the medulla (Dejerine site).",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Descending motor control (corticospinal and corticobulbar fibers), proprioceptive relay (medial lemniscus), horizontal gaze (abducens nucleus, PPRF, MLF) and the facial and hypoglossal motor nuclei.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-pontine",
-   "artery-basilar",
-   "artery-vertebral",
-   "anterior-spinal-artery"
+  "kind": "structure",
+  "id": "territory-basilar-paramedian",
+  "name": "Basilar paramedian (pontine) territory",
+  "synonyms": [],
+  "system": "arterial-territories",
+  "meshIds": [
+    "territory-basilar-l",
+    "territory-basilar-r"
   ],
-  "territories": [],
-  "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -28,
-     "z": -30
-    },
-    "label": "paramedian basis pontis"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -28,
-     "z": -30
-    },
-    "label": "ventral pons and the basilar artery"
-   }
-  ],
-  "normalAppearance": "The medial half of each side of the pons on axial slices; infarcts typically abut the ventral surface and respect the midline.",
-  "pathology": [
-   {
-    "pathology": "Paramedian pontine infarct",
-    "modality": "MRI",
-    "finding": "Unilateral wedge of restricted diffusion in the basis pontis reaching the ventral surface.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Bilateral ventral pontine infarct",
-    "modality": "MRI",
-    "finding": "Bilateral basis pontis diffusion restriction with a preserved tegmentum: the locked-in pattern.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Medial medullary infarct",
-    "modality": "MRI",
-    "finding": "Paramedian ventral medullary restriction involving the pyramid.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI; CTA of the basilar"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Corticospinal tract in the basis pontis"
-   },
-   {
-    "deficit": "Ipsilateral abducens or facial palsy with contralateral weakness",
-    "side": "ipsilateral",
-    "mechanism": "Abducens/facial nucleus or fascicle plus the corticospinal tract"
-   },
-   {
-    "deficit": "Internuclear ophthalmoplegia",
-    "side": "ipsilateral",
-    "mechanism": "MLF"
-   },
-   {
-    "deficit": "Locked-in state",
-    "side": "bilateral",
-    "mechanism": "Bilateral basis pontis"
-   }
-  ],
-  "examination": [
-   "Horizontal eye movements",
-   "Facial movement",
-   "Limb power on each side",
-   "Vertical eye movements and blinking in an unresponsive patient"
-  ],
-  "syndromes": [
-   "syn-millard-gubler",
-   "syn-foville",
-   "syn-locked-in",
-   "syn-dejerine-medial-medullary",
-   "syn-ino"
-  ],
-  "pearls": [
-   "A cranial nerve VI or VII sign with contralateral hemiparesis localizes to the paramedian pons"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    215,
-    218
-   ]
+  "summary": "The medial pons and, by extension, the medial medulla and midbrain perfused by the paramedian perforators of the basilar and vertebral arteries. It contains the corticospinal tract, the medial lemniscus, the abducens and facial nuclei, the MLF and the hypoglossal and oculomotor nuclear regions, so infarcts here produce the classic crossed brainstem syndromes and, when bilateral, the locked-in state.",
+  "anatomy": {
+    "location": "A paramedian wedge on each side of the midline extending from the ventral surface of the pons (basis pontis) back into the medial tegmentum; the same pattern continues rostrally into the midbrain (Weber, Benedikt, Claude sites) and caudally into the medulla (Dejerine site).",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    79
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "territory"
- ],
- "status": "draft"
+  "function": "Descending motor control (corticospinal and corticobulbar fibers), proprioceptive relay (medial lemniscus), horizontal gaze (abducens nucleus, PPRF, MLF) and the facial and hypoglossal motor nuclei.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-pontine",
+      "artery-basilar",
+      "artery-vertebral",
+      "anterior-spinal-artery"
+    ],
+    "territories": [],
+    "note": "Territory boundaries in this atlas come from a probabilistic stroke-lesion atlas (Liu et al. 2023) and shift between individuals with the anatomy of the circle of Willis."
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -28,
+          "z": -30
+        },
+        "label": "paramedian basis pontis"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -28,
+          "z": -30
+        },
+        "label": "ventral pons and the basilar artery"
+      }
+    ],
+    "normalAppearance": "The medial half of each side of the pons on axial slices; infarcts typically abut the ventral surface and respect the midline.",
+    "pathology": [
+      {
+        "pathology": "Paramedian pontine infarct",
+        "modality": "MRI",
+        "finding": "Unilateral wedge of restricted diffusion in the basis pontis reaching the ventral surface.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Bilateral ventral pontine infarct",
+        "modality": "MRI",
+        "finding": "Bilateral basis pontis diffusion restriction with a preserved tegmentum: the locked-in pattern.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Medial medullary infarct",
+        "modality": "MRI",
+        "finding": "Paramedian ventral medullary restriction involving the pyramid.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CTA of the basilar"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Corticospinal tract in the basis pontis"
+      },
+      {
+        "deficit": "Ipsilateral abducens or facial palsy with contralateral weakness",
+        "side": "ipsilateral",
+        "mechanism": "Abducens/facial nucleus or fascicle plus the corticospinal tract"
+      },
+      {
+        "deficit": "Internuclear ophthalmoplegia",
+        "side": "ipsilateral",
+        "mechanism": "MLF"
+      },
+      {
+        "deficit": "Locked-in state",
+        "side": "bilateral",
+        "mechanism": "Bilateral basis pontis"
+      }
+    ],
+    "examination": [
+      "Horizontal eye movements",
+      "Facial movement",
+      "Limb power on each side",
+      "Vertical eye movements and blinking in an unresponsive patient"
+    ],
+    "syndromes": [
+      "syn-millard-gubler",
+      "syn-foville",
+      "syn-locked-in",
+      "syn-dejerine-medial-medullary",
+      "syn-ino"
+    ],
+    "pearls": [
+      "A cranial nerve VI or VII sign with contralateral hemiparesis localizes to the paramedian pons"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-basilar-artery-occlusion",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-basilar-artery",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "vascular",
+    "territory"
+  ],
+  "status": "draft"
 }

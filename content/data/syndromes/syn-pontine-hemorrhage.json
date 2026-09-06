@@ -1,137 +1,133 @@
 {
- "kind": "syndrome",
- "id": "syn-pontine-hemorrhage",
- "name": "Pontine hemorrhage",
- "eponyms": [],
- "category": "vascular",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "level-pons-caudal",
-   "level-pons-rostral",
-   "reticular-formation",
-   "pontine-nuclei",
-   "arteries-pontine"
+  "kind": "syndrome",
+  "id": "syn-pontine-hemorrhage",
+  "name": "Pontine hemorrhage",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "level-pons-caudal",
+      "level-pons-rostral",
+      "reticular-formation",
+      "pontine-nuclei",
+      "arteries-pontine"
+    ],
+    "side": "bilateral",
+    "level": "pons-rostral",
+    "arteryId": "artery-basilar"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -30,
+      "z": -28
+    },
+    "radiusMm": 12
+  },
+  "presentation": "A hypertensive patient collapses and within minutes is deeply comatose with pinpoint pupils that still react to a bright light under magnification, quadriplegia with bilateral extensor plantars, absent horizontal eye movements even with head turning and caloric stimulation, ocular bobbing, a high fever and irregular breathing. Small hemorrhages confined to the tegmentum or the base produce instead a survivable lateral pontine or pure motor picture.",
+  "deficits": [
+    {
+      "modality": "consciousness",
+      "side": "bilateral",
+      "distribution": "pontine reticular formation",
+      "sign": "Abrupt coma within minutes",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "pupil",
+      "side": "bilateral",
+      "distribution": "both pupils",
+      "sign": "Pinpoint but reactive pupils from bilateral interruption of the descending sympathetic fibers with intact parasympathetic outflow",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "all limbs",
+      "sign": "Quadriplegia with bilateral extensor plantars; decerebrate posturing",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "horizontal",
+      "sign": "Absent horizontal eye movements not overcome by oculocephalic or caloric stimulation; ocular bobbing",
+      "substrate": "pathway-horizontal-gaze"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "thermoregulation and breathing",
+      "sign": "Hyperthermia and abnormal respiratory patterns",
+      "substrate": "reticular-formation"
+    }
   ],
-  "side": "bilateral",
-  "level": "pons-rostral",
-  "arteryId": "artery-basilar"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -30,
-   "z": -28
+  "reasoning": "The paramedian perforating branches of the basilar artery are small end arteries that develop lipohyalinosis and microaneurysms under chronic hypertension, and their rupture floods the center of the pons, usually at the junction of the base and tegmentum, from where the hematoma spreads across the midline and often into the fourth ventricle. Because the pons is compact, a single hematoma destroys bilateral structures at once. The corticospinal fibers of both sides, uncrossed at this level, are cut, so all four limbs are paralyzed; the pontine reticular formation that maintains arousal is destroyed, so coma is immediate; both abducens nuclei, both paramedian pontine reticular formations and both MLFs are involved, so no horizontal eye movement can be produced by any pathway, whereas vertical movements generated in the spared midbrain persist and, released, produce the bobbing. The descending sympathetic fibers pass through the tegmentum bilaterally and are interrupted while the midbrain parasympathetic outflow is intact, hence pinpoint pupils that react, a combination that separates a pontine lesion from opioid poisoning only by the accompanying signs. Hyperthermia reflects the loss of descending control over the hypothalamic set point. A hematoma confined to one side of the tegmentum produces instead an ipsilateral gaze palsy, facial palsy and contralateral sensory loss, and a small basal hematoma a pure motor hemiparesis, both with a far better outlook.",
+  "imagingFindings": [
+    {
+      "pathology": "Pontine hemorrhage",
+      "modality": "CT",
+      "finding": "Hyperdense hematoma in the center of the pons, often extending into the fourth ventricle, with hydrocephalus; large hematomas over 5 mL or extending across the midline carry a poor prognosis.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Cavernoma or arteriovenous malformation",
+      "modality": "MRI",
+      "finding": "'Popcorn' lesion with a hemosiderin rim, or flow voids, in younger patients without hypertension.",
+      "sequence": "SWI"
+    }
+  ],
+  "commonCauses": [
+    "Hypertensive rupture of paramedian basilar perforators",
+    "Cavernous malformation",
+    "Arteriovenous malformation",
+    "Anticoagulation",
+    "Hemorrhagic transformation of a pontine infarct"
+  ],
+  "mimics": [
+    {
+      "name": "Opioid overdose",
+      "howToDistinguish": "Pinpoint pupils with coma but preserved eye movements and normal tone; responds to naloxone"
+    },
+    {
+      "name": "Basilar artery occlusion",
+      "howToDistinguish": "Similar deficits but evolution over hours with prodromal symptoms; no blood on CT"
+    },
+    {
+      "name": "Central pontine myelinolysis",
+      "howToDistinguish": "Subacute after sodium correction; T2 change without hemorrhage"
+    }
+  ],
+  "management": [
+    "Airway protection and blood pressure control; reverse anticoagulation",
+    "Ventricular drainage for hydrocephalus; surgical evacuation is rarely beneficial",
+    "Prognosis depends on hematoma volume and level of consciousness at presentation; discuss goals of care early"
+  ],
+  "citations": [
+    {
+      "ref": "sp-intracerebral-hemorrhagic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-hemorrhagic-stroke-overview",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -30,
+      "z": -28
+    },
+    "label": "central pons at the basis–tegmentum junction"
   },
-  "radiusMm": 12
- },
- "presentation": "A hypertensive patient collapses and within minutes is deeply comatose with pinpoint pupils that still react to a bright light under magnification, quadriplegia with bilateral extensor plantars, absent horizontal eye movements even with head turning and caloric stimulation, ocular bobbing, a high fever and irregular breathing. Small hemorrhages confined to the tegmentum or the base produce instead a survivable lateral pontine or pure motor picture.",
- "deficits": [
-  {
-   "modality": "consciousness",
-   "side": "bilateral",
-   "distribution": "pontine reticular formation",
-   "sign": "Abrupt coma within minutes",
-   "substrate": "reticular-formation"
-  },
-  {
-   "modality": "pupil",
-   "side": "bilateral",
-   "distribution": "both pupils",
-   "sign": "Pinpoint but reactive pupils from bilateral interruption of the descending sympathetic fibers with intact parasympathetic outflow",
-   "substrate": "pathway-oculosympathetic"
-  },
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "all limbs",
-   "sign": "Quadriplegia with bilateral extensor plantars; decerebrate posturing",
-   "substrate": "pathway-lateral-corticospinal"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "horizontal",
-   "sign": "Absent horizontal eye movements not overcome by oculocephalic or caloric stimulation; ocular bobbing",
-   "substrate": "pathway-horizontal-gaze"
-  },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "thermoregulation and breathing",
-   "sign": "Hyperthermia and abnormal respiratory patterns",
-   "substrate": "reticular-formation"
-  }
- ],
- "reasoning": "The paramedian perforating branches of the basilar artery are small end arteries that develop lipohyalinosis and microaneurysms under chronic hypertension, and their rupture floods the center of the pons, usually at the junction of the base and tegmentum, from where the hematoma spreads across the midline and often into the fourth ventricle. Because the pons is compact, a single hematoma destroys bilateral structures at once. The corticospinal fibers of both sides, uncrossed at this level, are cut, so all four limbs are paralyzed; the pontine reticular formation that maintains arousal is destroyed, so coma is immediate; both abducens nuclei, both paramedian pontine reticular formations and both MLFs are involved, so no horizontal eye movement can be produced by any pathway, whereas vertical movements generated in the spared midbrain persist and, released, produce the bobbing. The descending sympathetic fibers pass through the tegmentum bilaterally and are interrupted while the midbrain parasympathetic outflow is intact, hence pinpoint pupils that react, a combination that separates a pontine lesion from opioid poisoning only by the accompanying signs. Hyperthermia reflects the loss of descending control over the hypothalamic set point. A hematoma confined to one side of the tegmentum produces instead an ipsilateral gaze palsy, facial palsy and contralateral sensory loss, and a small basal hematoma a pure motor hemiparesis, both with a far better outlook.",
- "imagingFindings": [
-  {
-   "pathology": "Pontine hemorrhage",
-   "modality": "CT",
-   "finding": "Hyperdense hematoma in the center of the pons, often extending into the fourth ventricle, with hydrocephalus; large hematomas over 5 mL or extending across the midline carry a poor prognosis.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Cavernoma or arteriovenous malformation",
-   "modality": "MRI",
-   "finding": "'Popcorn' lesion with a hemosiderin rim, or flow voids, in younger patients without hypertension.",
-   "sequence": "SWI"
-  }
- ],
- "commonCauses": [
-  "Hypertensive rupture of paramedian basilar perforators",
-  "Cavernous malformation",
-  "Arteriovenous malformation",
-  "Anticoagulation",
-  "Hemorrhagic transformation of a pontine infarct"
- ],
- "mimics": [
-  {
-   "name": "Opioid overdose",
-   "howToDistinguish": "Pinpoint pupils with coma but preserved eye movements and normal tone; responds to naloxone"
-  },
-  {
-   "name": "Basilar artery occlusion",
-   "howToDistinguish": "Similar deficits but evolution over hours with prodromal symptoms; no blood on CT"
-  },
-  {
-   "name": "Central pontine myelinolysis",
-   "howToDistinguish": "Subacute after sodium correction; T2 change without hemorrhage"
-  }
- ],
- "management": [
-  "Airway protection and blood pressure control; reverse anticoagulation",
-  "Ventricular drainage for hydrocephalus; surgical evacuation is rarely beneficial",
-  "Prognosis depends on hematoma volume and level of consciousness at presentation; discuss goals of care early"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    78,
-    79
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    187,
-    187
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -30,
-   "z": -28
-  },
-  "label": "central pons at the basis–tegmentum junction"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

@@ -1,301 +1,289 @@
 {
- "kind": "cranial-nerve",
- "id": "cn-08-vestibulocochlear",
- "name": "Vestibulocochlear nerve (CN VIII)",
- "synonyms": [],
- "system": "cranial-nerves",
- "meshIds": [
-  "cn-08-vestibulocochlear-l",
-  "cn-08-vestibulocochlear-r"
- ],
- "summary": "Two nerves in one sheath: the cochlear nerve carrying hearing from the spiral ganglion of the cochlea to the cochlear nuclei, and the vestibular nerve carrying head motion and position from the semicircular canals and otolith organs (vestibular ganglion of Scarpa) to the vestibular nuclei and cerebellum. Both run from the inner ear through the internal acoustic meatus with the facial nerve and across the cerebellopontine angle to the pontomedullary junction. The nerve is the site of the vestibular schwannoma, the commonest cerebellopontine angle tumor, and of vestibular neuritis; its lesions cause unilateral sensorineural deafness, tinnitus and vertigo, and the pattern of nystagmus and the head impulse test separate these peripheral lesions from central vestibular disease.",
- "anatomy": {
-  "location": "Spiral ganglion in the modiolus of the cochlea and vestibular ganglion in the fundus of the internal acoustic meatus → cochlear nerve (anteroinferior) and superior and inferior vestibular nerves (posterior) in the meatus with VII (anterosuperior) → cerebellopontine angle cistern → entry at the lateral pontomedullary junction into the cochlear and vestibular nuclei at the lateral recess of the fourth ventricle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": [
-   "pathway-auditory",
-   "pathway-vestibular-vor"
-  ]
- },
- "function": "Hearing (frequency, intensity, timing) and the vestibular senses of angular acceleration (semicircular canals) and linear acceleration and gravity (utricle and saccule), driving the vestibulo-ocular and vestibulospinal reflexes and spatial orientation.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aica",
-   "artery-labyrinthine"
+  "kind": "cranial-nerve",
+  "id": "cn-08-vestibulocochlear",
+  "name": "Vestibulocochlear nerve (CN VIII)",
+  "synonyms": [],
+  "system": "cranial-nerves",
+  "meshIds": [
+    "cn-08-vestibulocochlear-l",
+    "cn-08-vestibulocochlear-r"
   ],
-  "territories": [
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -38,
-     "z": -36
-    },
-    "label": "cochlear and vestibular nerves in the cerebellopontine angle and internal acoustic meatus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": -40,
-     "z": -38
-    },
-    "label": "cochlear and vestibular nuclei at the lateral recess of the fourth ventricle"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 28,
-     "y": -38,
-     "z": -35
-    },
-    "label": "internal acoustic meatus with the four nerves"
-   }
-  ],
-  "normalAppearance": "High-resolution T2 (CISS/FIESTA) through the internal acoustic meatus shows the four nerves in cross-section (facial anterosuperior, cochlear anteroinferior, superior and inferior vestibular posterior) and the fluid of the cochlea and labyrinth; contrast T1 detects even tiny schwannomas and labyrinthitis. The HCP1065 mesh in this atlas shows the cisternal segment.",
-  "pathology": [
-   {
-    "pathology": "Vestibular schwannoma",
-    "modality": "MRI",
-    "finding": "Enhancing mass in the meatus expanding into the cerebellopontine angle (ice-cream cone), widening the porus; large tumors compress the brainstem and cerebellum.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Vestibular neuritis / labyrinthitis",
-    "modality": "MRI",
-    "finding": "Usually normal; enhancement of the nerve or labyrinth in some cases.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "AICA infarct with sudden deafness",
-    "modality": "MRI",
-    "finding": "Lateral pontine and anterior inferior cerebellar restriction.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cochlear aplasia / ossification",
-    "modality": "CT",
-    "finding": "Absent or ossified cochlea on temporal bone CT (post-meningitis) relevant to cochlear implantation.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Bilateral vestibular schwannomas",
-    "modality": "MRI",
-    "finding": "Enhancing masses in both internal acoustic meatus and cerebellopontine angles, diagnostic of neurofibromatosis type 2; look for meningiomas and spinal ependymomas.",
-    "sequence": "T1+Gd"
-   }
-  ],
-  "sequenceOfChoice": "Internal acoustic meatus MRI with CISS and T1+Gd; temporal bone CT; audiometry and vestibular testing"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Unilateral sensorineural hearing loss with tinnitus, poor speech discrimination",
-    "side": "ipsilateral",
-    "mechanism": "Cochlear nerve"
-   },
-   {
-    "deficit": "Acute vertigo, nausea, unidirectional horizontal-torsional nystagmus beating away from the lesion, positive head impulse",
-    "side": "ipsilateral",
-    "mechanism": "Vestibular nerve (vestibular neuritis)"
-   },
-   {
-    "deficit": "Slowly progressive deafness and imbalance with facial numbness and later ataxia",
-    "side": "ipsilateral",
-    "mechanism": "Vestibular schwannoma expanding into the cerebellopontine angle (V, then VII and cerebellum)"
-   },
-   {
-    "deficit": "Deafness after meningitis, ototoxic drugs or noise",
-    "side": "bilateral",
-    "mechanism": "Cochlear hair cells rather than the nerve"
-   }
-  ],
-  "examination": [
-   "Whisper test, finger rub; Rinne (air > bone in sensorineural loss) and Weber (lateralizes to the better ear in sensorineural loss)",
-   "Nystagmus in primary and lateral gaze with and without fixation removed",
-   "Head impulse test: a corrective saccade means a peripheral vestibular loss",
-   "Dix–Hallpike for positional vertigo",
-   "Corneal reflex and facial movement for cerebellopontine angle involvement; gait and Romberg"
-  ],
-  "syndromes": [
-   "syn-hearing-loss",
-   "syn-vestibular-neuritis",
-   "syn-bppv",
-   "syn-meniere",
-   "syn-central-vs-peripheral-vertigo",
-   "syn-cerebellopontine-angle",
-   "syn-aica-lateral-pontine"
-  ],
-  "pearls": [
-   "Asymmetric sensorineural hearing loss needs an MRI of the internal acoustic meatus for a schwannoma",
-   "Peripheral vertigo: nystagmus is unidirectional, suppressed by fixation, the head impulse is abnormal and there are no other neurological signs. Anything else is central"
-  ]
- },
- "pitfalls": [
-  "A normal head impulse test in a patient with acute continuous vertigo is a stroke until proven otherwise, even with a normal early DWI"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    341
-   ]
+  "summary": "Two nerves in one sheath: the cochlear nerve carrying hearing from the spiral ganglion of the cochlea to the cochlear nuclei, and the vestibular nerve carrying head motion and position from the semicircular canals and otolith organs (vestibular ganglion of Scarpa) to the vestibular nuclei and cerebellum. Both run from the inner ear through the internal acoustic meatus with the facial nerve and across the cerebellopontine angle to the pontomedullary junction. The nerve is the site of the vestibular schwannoma, the commonest cerebellopontine angle tumor, and of vestibular neuritis; its lesions cause unilateral sensorineural deafness, tinnitus and vertigo, and the pattern of nystagmus and the head impulse test separate these peripheral lesions from central vestibular disease.",
+  "anatomy": {
+    "location": "Spiral ganglion in the modiolus of the cochlea and vestibular ganglion in the fundus of the internal acoustic meatus → cochlear nerve (anteroinferior) and superior and inferior vestibular nerves (posterior) in the meatus with VII (anterosuperior) → cerebellopontine angle cistern → entry at the lateral pontomedullary junction into the cochlear and vestibular nuclei at the lateral recess of the fourth ventricle.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    353,
-    353
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-auditory",
+      "pathway-vestibular-vor"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    115
-   ]
+  "function": "Hearing (frequency, intensity, timing) and the vestibular senses of angular acceleration (semicircular canals) and linear acceleration and gravity (utricle and saccule), driving the vestibulo-ocular and vestibulospinal reflexes and spatial orientation.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aica",
+      "artery-labyrinthine"
+    ],
+    "territories": [
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -38,
+          "z": -36
+        },
+        "label": "cochlear and vestibular nerves in the cerebellopontine angle and internal acoustic meatus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": -40,
+          "z": -38
+        },
+        "label": "cochlear and vestibular nuclei at the lateral recess of the fourth ventricle"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 28,
+          "y": -38,
+          "z": -35
+        },
+        "label": "internal acoustic meatus with the four nerves"
+      }
+    ],
+    "normalAppearance": "High-resolution T2 (CISS/FIESTA) through the internal acoustic meatus shows the four nerves in cross-section (facial anterosuperior, cochlear anteroinferior, superior and inferior vestibular posterior) and the fluid of the cochlea and labyrinth; contrast T1 detects even tiny schwannomas and labyrinthitis. The HCP1065 mesh in this atlas shows the cisternal segment.",
+    "pathology": [
+      {
+        "pathology": "Vestibular schwannoma",
+        "modality": "MRI",
+        "finding": "Enhancing mass in the meatus expanding into the cerebellopontine angle (ice-cream cone), widening the porus; large tumors compress the brainstem and cerebellum.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Vestibular neuritis / labyrinthitis",
+        "modality": "MRI",
+        "finding": "Usually normal; enhancement of the nerve or labyrinth in some cases.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "AICA infarct with sudden deafness",
+        "modality": "MRI",
+        "finding": "Lateral pontine and anterior inferior cerebellar restriction.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cochlear aplasia / ossification",
+        "modality": "CT",
+        "finding": "Absent or ossified cochlea on temporal bone CT (post-meningitis) relevant to cochlear implantation.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Bilateral vestibular schwannomas",
+        "modality": "MRI",
+        "finding": "Enhancing masses in both internal acoustic meatus and cerebellopontine angles, diagnostic of neurofibromatosis type 2; look for meningiomas and spinal ependymomas.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Internal acoustic meatus MRI with CISS and T1+Gd; temporal bone CT; audiometry and vestibular testing"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Unilateral sensorineural hearing loss with tinnitus, poor speech discrimination",
+        "side": "ipsilateral",
+        "mechanism": "Cochlear nerve"
+      },
+      {
+        "deficit": "Acute vertigo, nausea, unidirectional horizontal-torsional nystagmus beating away from the lesion, positive head impulse",
+        "side": "ipsilateral",
+        "mechanism": "Vestibular nerve (vestibular neuritis)"
+      },
+      {
+        "deficit": "Slowly progressive deafness and imbalance with facial numbness and later ataxia",
+        "side": "ipsilateral",
+        "mechanism": "Vestibular schwannoma expanding into the cerebellopontine angle (V, then VII and cerebellum)"
+      },
+      {
+        "deficit": "Deafness after meningitis, ototoxic drugs or noise",
+        "side": "bilateral",
+        "mechanism": "Cochlear hair cells rather than the nerve"
+      }
+    ],
+    "examination": [
+      "Whisper test, finger rub; Rinne (air > bone in sensorineural loss) and Weber (lateralizes to the better ear in sensorineural loss)",
+      "Nystagmus in primary and lateral gaze with and without fixation removed",
+      "Head impulse test: a corrective saccade means a peripheral vestibular loss",
+      "Dix–Hallpike for positional vertigo",
+      "Corneal reflex and facial movement for cerebellopontine angle involvement; gait and Romberg"
+    ],
+    "syndromes": [
+      "syn-hearing-loss",
+      "syn-vestibular-neuritis",
+      "syn-bppv",
+      "syn-meniere",
+      "syn-central-vs-peripheral-vertigo",
+      "syn-cerebellopontine-angle",
+      "syn-aica-lateral-pontine"
+    ],
+    "pearls": [
+      "Asymmetric sensorineural hearing loss needs an MRI of the internal acoustic meatus for a schwannoma",
+      "Peripheral vertigo: nystagmus is unidirectional, suppressed by fixation, the head impulse is abnormal and there are no other neurological signs. Anything else is central"
+    ]
+  },
+  "pitfalls": [
+    "A normal head impulse test in a patient with acute continuous vertigo is a stroke until proven otherwise, even with a normal early DWI"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cranial-nerve-8",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cranial-nerve-testing",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "cranial-nerve"
+  ],
+  "status": "draft",
+  "latin": "Nervus vestibulocochlearis",
+  "cranial": {
+    "number": 8,
+    "roman": "VIII",
+    "components": [
+      "SSA"
+    ],
+    "nuclei": [
+      {
+        "structureId": "cochlear-nuclei",
+        "component": "SSA: hearing",
+        "level": "medulla-rostral"
+      },
+      {
+        "structureId": "vestibular-nuclei",
+        "component": "SSA: balance and eye movement reflexes",
+        "level": "medulla-rostral"
+      }
+    ],
+    "ganglia": [
+      {
+        "name": "Spiral ganglion (cochlear)",
+        "type": "sensory"
+      },
+      {
+        "name": "Vestibular (Scarpa's) ganglion",
+        "type": "sensory"
+      }
+    ],
+    "exit": {
+      "brainstemExit": "Lateral pontomedullary junction, lateral to VII, at the lateral recess of the fourth ventricle (cerebellopontine angle)",
+      "cisternalCourse": "Cerebellopontine angle cistern with VII and the AICA loop, over the flocculus",
+      "foramen": "Internal acoustic meatus (with VII and the labyrinthine artery)",
+      "extracranialCourse": "Ends in the fundus of the meatus: cochlear nerve to the modiolus, superior vestibular nerve to the utricle and lateral and superior canals, inferior vestibular nerve to the saccule and posterior canal"
+    },
+    "branches": [
+      {
+        "name": "Cochlear nerve",
+        "supplies": "organ of Corti (spiral ganglion)"
+      },
+      {
+        "name": "Superior vestibular nerve",
+        "supplies": "utricle, superior and lateral semicircular canals"
+      },
+      {
+        "name": "Inferior vestibular nerve",
+        "supplies": "saccule, posterior semicircular canal"
+      }
+    ],
+    "reflexes": [
+      {
+        "name": "Vestibulo-ocular reflex",
+        "afferent": "semicircular canals via the vestibular nerve",
+        "center": "vestibular nuclei → MLF",
+        "efferent": "III, IV, VI to the extraocular muscles"
+      },
+      {
+        "name": "Stapedius reflex",
+        "afferent": "cochlear nerve",
+        "center": "superior olive → facial nucleus",
+        "efferent": "nerve to stapedius"
+      },
+      {
+        "name": "Vestibulospinal reflexes",
+        "afferent": "otoliths and canals",
+        "center": "lateral and medial vestibular nuclei",
+        "efferent": "vestibulospinal tracts to antigravity muscles"
+      }
+    ],
+    "tests": [
+      {
+        "name": "Bedside hearing",
+        "how": "Whispered numbers at 60 cm with the other ear masked; finger rub",
+        "normal": "Repeats correctly",
+        "abnormal": "Fails on the affected side"
+      },
+      {
+        "name": "Rinne and Weber",
+        "how": "512 Hz tuning fork on the mastoid then beside the ear; on the vertex",
+        "normal": "Air conduction better than bone; Weber central",
+        "abnormal": "Sensorineural: air > bone but reduced, Weber to the good ear. Conductive: bone > air, Weber to the bad ear"
+      },
+      {
+        "name": "Head impulse test",
+        "how": "Rapid small head turns while the patient fixates your nose",
+        "normal": "Eyes stay on target",
+        "abnormal": "Catch-up saccade after turning toward the lesion (peripheral loss)"
+      },
+      {
+        "name": "Nystagmus",
+        "how": "Observe in primary gaze and 30 degrees to each side, then with fixation removed (Frenzel or penlight cover)",
+        "normal": "None",
+        "abnormal": "Peripheral: unidirectional, increases without fixation. Central: direction-changing, vertical or torsional, not suppressed by fixation"
+      },
+      {
+        "name": "Dix–Hallpike",
+        "how": "Rapid lying back with the head turned 45 degrees",
+        "normal": "No nystagmus",
+        "abnormal": "Latent, brief, torsional upbeating nystagmus fatiguing on repetition (BPPV of the posterior canal)"
+      }
+    ],
+    "lesionSigns": [
+      {
+        "sign": "Unilateral sensorineural deafness",
+        "localisingValue": "cochlea, cochlear nerve or cochlear nuclei (never higher)"
+      },
+      {
+        "sign": "Acute vertigo with positive head impulse and unidirectional nystagmus",
+        "localisingValue": "vestibular nerve or labyrinth"
+      },
+      {
+        "sign": "Vertigo with normal head impulse, direction-changing nystagmus or skew",
+        "localisingValue": "central (brainstem or cerebellum)"
+      },
+      {
+        "sign": "Deafness with facial numbness and absent corneal reflex",
+        "localisingValue": "cerebellopontine angle mass"
+      },
+      {
+        "sign": "Deafness with facial palsy and vertigo of sudden onset",
+        "localisingValue": "AICA infarct or Ramsay Hunt"
+      }
+    ],
+    "nuclearVsPeripheral": "Lesions of the cochlear nuclei are rare and behave like nerve lesions (unilateral deafness) because the pathway becomes bilateral only above them; vestibular nuclear lesions behave centrally: direction-changing nystagmus, skew deviation, a normal head impulse test, and neighboring medullary signs (Wallenberg)."
   }
- ],
- "tags": [
-  "cranial-nerve"
- ],
- "status": "draft",
- "latin": "Nervus vestibulocochlearis",
- "cranial": {
-  "number": 8,
-  "roman": "VIII",
-  "components": [
-   "SSA"
-  ],
-  "nuclei": [
-   {
-    "structureId": "cochlear-nuclei",
-    "component": "SSA: hearing",
-    "level": "medulla-rostral"
-   },
-   {
-    "structureId": "vestibular-nuclei",
-    "component": "SSA: balance and eye movement reflexes",
-    "level": "medulla-rostral"
-   }
-  ],
-  "ganglia": [
-   {
-    "name": "Spiral ganglion (cochlear)",
-    "type": "sensory"
-   },
-   {
-    "name": "Vestibular (Scarpa's) ganglion",
-    "type": "sensory"
-   }
-  ],
-  "exit": {
-   "brainstemExit": "Lateral pontomedullary junction, lateral to VII, at the lateral recess of the fourth ventricle (cerebellopontine angle)",
-   "cisternalCourse": "Cerebellopontine angle cistern with VII and the AICA loop, over the flocculus",
-   "foramen": "Internal acoustic meatus (with VII and the labyrinthine artery)",
-   "extracranialCourse": "Ends in the fundus of the meatus: cochlear nerve to the modiolus, superior vestibular nerve to the utricle and lateral and superior canals, inferior vestibular nerve to the saccule and posterior canal"
-  },
-  "branches": [
-   {
-    "name": "Cochlear nerve",
-    "supplies": "organ of Corti (spiral ganglion)"
-   },
-   {
-    "name": "Superior vestibular nerve",
-    "supplies": "utricle, superior and lateral semicircular canals"
-   },
-   {
-    "name": "Inferior vestibular nerve",
-    "supplies": "saccule, posterior semicircular canal"
-   }
-  ],
-  "reflexes": [
-   {
-    "name": "Vestibulo-ocular reflex",
-    "afferent": "semicircular canals via the vestibular nerve",
-    "center": "vestibular nuclei → MLF",
-    "efferent": "III, IV, VI to the extraocular muscles"
-   },
-   {
-    "name": "Stapedius reflex",
-    "afferent": "cochlear nerve",
-    "center": "superior olive → facial nucleus",
-    "efferent": "nerve to stapedius"
-   },
-   {
-    "name": "Vestibulospinal reflexes",
-    "afferent": "otoliths and canals",
-    "center": "lateral and medial vestibular nuclei",
-    "efferent": "vestibulospinal tracts to antigravity muscles"
-   }
-  ],
-  "tests": [
-   {
-    "name": "Bedside hearing",
-    "how": "Whispered numbers at 60 cm with the other ear masked; finger rub",
-    "normal": "Repeats correctly",
-    "abnormal": "Fails on the affected side"
-   },
-   {
-    "name": "Rinne and Weber",
-    "how": "512 Hz tuning fork on the mastoid then beside the ear; on the vertex",
-    "normal": "Air conduction better than bone; Weber central",
-    "abnormal": "Sensorineural: air > bone but reduced, Weber to the good ear. Conductive: bone > air, Weber to the bad ear"
-   },
-   {
-    "name": "Head impulse test",
-    "how": "Rapid small head turns while the patient fixates your nose",
-    "normal": "Eyes stay on target",
-    "abnormal": "Catch-up saccade after turning toward the lesion (peripheral loss)"
-   },
-   {
-    "name": "Nystagmus",
-    "how": "Observe in primary gaze and 30 degrees to each side, then with fixation removed (Frenzel or penlight cover)",
-    "normal": "None",
-    "abnormal": "Peripheral: unidirectional, increases without fixation. Central: direction-changing, vertical or torsional, not suppressed by fixation"
-   },
-   {
-    "name": "Dix–Hallpike",
-    "how": "Rapid lying back with the head turned 45 degrees",
-    "normal": "No nystagmus",
-    "abnormal": "Latent, brief, torsional upbeating nystagmus fatiguing on repetition (BPPV of the posterior canal)"
-   }
-  ],
-  "lesionSigns": [
-   {
-    "sign": "Unilateral sensorineural deafness",
-    "localisingValue": "cochlea, cochlear nerve or cochlear nuclei (never higher)"
-   },
-   {
-    "sign": "Acute vertigo with positive head impulse and unidirectional nystagmus",
-    "localisingValue": "vestibular nerve or labyrinth"
-   },
-   {
-    "sign": "Vertigo with normal head impulse, direction-changing nystagmus or skew",
-    "localisingValue": "central (brainstem or cerebellum)"
-   },
-   {
-    "sign": "Deafness with facial numbness and absent corneal reflex",
-    "localisingValue": "cerebellopontine angle mass"
-   },
-   {
-    "sign": "Deafness with facial palsy and vertigo of sudden onset",
-    "localisingValue": "AICA infarct or Ramsay Hunt"
-   }
-  ],
-  "nuclearVsPeripheral": "Lesions of the cochlear nuclei are rare and behave like nerve lesions (unilateral deafness) because the pathway becomes bilateral only above them; vestibular nuclear lesions behave centrally: direction-changing nystagmus, skew deviation, a normal head impulse test, and neighboring medullary signs (Wallenberg)."
- }
 }

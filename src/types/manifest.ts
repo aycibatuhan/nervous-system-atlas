@@ -29,6 +29,8 @@ export interface ManifestMesh {
   ontology: Record<string, unknown>;
   /** low-detail stand-in loaded first; the full mesh replaces it in idle time */
   lod?: { file: string; bytes: number; triangles: number };
+  /** set when the shape was constructed rather than exported from a source atlas; the value is the method */
+  derived?: string;
 }
 
 export interface VolumeFile {

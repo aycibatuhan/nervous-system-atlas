@@ -1,169 +1,133 @@
 {
- "kind": "structure",
- "id": "conus-medullaris",
- "name": "Conus medullaris",
- "synonyms": [],
- "system": "spinal-cord",
- "meshIds": [
-  "spinal-cord"
- ],
- "summary": "The tapered lower end of the spinal cord, containing the sacral segments (S2–S5 and coccygeal), ending at the L1–L2 disc level in most adults, from which the filum terminale continues to the coccyx. It houses the sacral parasympathetic nucleus and Onuf's nucleus, so its lesions produce early, symmetric sphincter failure and saddle anesthesia with relatively little leg weakness, the conus syndrome, which must be distinguished from the asymmetric, painful, lower motor neuron cauda equina syndrome affecting the roots below it.",
- "anatomy": {
-  "location": "Lower border of L1 to the L1–L2 disc in most adults (range T12–L3), surrounded by the emerging lumbar and sacral roots of the cauda equina; the level is fixed by the age of two years.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [
-   {
-    "to": "bladder, rectum and genitalia",
-    "via": "pelvic splanchnic nerves"
-   },
-   {
-    "to": "pelvic floor and sphincters",
-    "via": "pudendal nerve (Onuf's nucleus)"
-   }
+  "kind": "structure",
+  "id": "conus-medullaris",
+  "name": "Conus medullaris",
+  "synonyms": [],
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-cord"
   ],
-  "pathways": []
- },
- "function": "Contains the sacral segments: parasympathetic outflow to the bladder, rectum and genitals, motor neurons for the pelvic floor and sphincters, and sensory relay for the perineum.",
- "bloodSupply": {
-  "arteries": [
-   "anterior-spinal-artery",
-   "artery-adamkiewicz"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "The tapered lower end of the spinal cord, containing the sacral segments (S2–S5 and coccygeal), ending at the L1–L2 disc level in most adults, from which the filum terminale continues to the coccyx. It houses the sacral parasympathetic nucleus and Onuf's nucleus, so its lesions produce early, symmetric sphincter failure and saddle anesthesia with relatively little leg weakness, the conus syndrome, which must be distinguished from the asymmetric, painful, lower motor neuron cauda equina syndrome affecting the roots below it.",
+  "anatomy": {
+    "location": "Lower border of L1 to the L1–L2 disc in most adults (range T12–L3), surrounded by the emerging lumbar and sacral roots of the cauda equina; the level is fixed by the age of two years.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [
+      {
+        "to": "bladder, rectum and genitalia",
+        "via": "pelvic splanchnic nerves"
+      },
+      {
+        "to": "pelvic floor and sphincters",
+        "via": "pudendal nerve (Onuf's nucleus)"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Contains the sacral segments: parasympathetic outflow to the bladder, rectum and genitals, motor neurons for the pelvic floor and sphincters, and sensory relay for the perineum.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "artery-adamkiewicz"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cord (the conus lies at L1–L2, below the MNI volume)"
+      }
+    ],
+    "normalAppearance": "On sagittal lumbar MRI the conus should end at or above L2; a low-lying conus with a thick filum indicates tethering. Conus lesions (ependymoma, infarct, myelitis) appear as focal signal change or expansion of the cone.",
+    "pathology": [
+      {
+        "pathology": "Conus infarct",
+        "modality": "MRI",
+        "finding": "T2 hyperintensity and restricted diffusion of the conus after aortic surgery or in vascular malformations.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Tethered cord",
+        "modality": "MRI",
+        "finding": "Conus below L2 with a thickened filum or lipoma.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Myxopapillary ependymoma",
+        "modality": "MRI",
+        "finding": "Enhancing mass of the conus and filum with hemorrhage.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal and axial lumbar T2 and T1+Gd; DWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Early urinary retention and fecal incontinence",
+        "side": "bilateral",
+        "mechanism": "Sacral autonomic nuclei"
+      },
+      {
+        "deficit": "Symmetric saddle anesthesia",
+        "side": "bilateral",
+        "mechanism": "Sacral dermatome relay"
+      },
+      {
+        "deficit": "Mild, symmetric leg weakness with mixed reflexes (brisk knee, absent ankle)",
+        "side": "bilateral",
+        "mechanism": "Sacral segments and adjacent lumbar tracts"
+      },
+      {
+        "deficit": "Impotence",
+        "side": "bilateral",
+        "mechanism": "Sacral parasympathetic outflow"
+      }
+    ],
+    "examination": [
+      "Perianal pin-prick, anal tone and reflex, bulbocavernosus reflex",
+      "Bladder scan for retention",
+      "Ankle versus knee reflexes"
+    ],
+    "syndromes": [
+      "syn-conus-vs-cauda-equina",
+      "syn-anterior-cord"
+    ],
+    "pearls": [
+      "Sphincters first, symmetric and painless: conus. Legs first, asymmetric and painful: cauda equina",
+      "The conus is at L1–L2: a lumbar puncture at L3–L4 or below is safe"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-conus-medullaris",
+      "section": "Structure and Function"
     },
-    "label": "cord (the conus lies at L1–L2, below the MNI volume)"
-   }
+    {
+      "ref": "sp-cauda-equina-and-conus-medullaris-syndromes",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-spinal-cord",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On sagittal lumbar MRI the conus should end at or above L2; a low-lying conus with a thick filum indicates tethering. Conus lesions (ependymoma, infarct, myelitis) appear as focal signal change or expansion of the cone.",
-  "pathology": [
-   {
-    "pathology": "Conus infarct",
-    "modality": "MRI",
-    "finding": "T2 hyperintensity and restricted diffusion of the conus after aortic surgery or in vascular malformations.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Tethered cord",
-    "modality": "MRI",
-    "finding": "Conus below L2 with a thickened filum or lipoma.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Myxopapillary ependymoma",
-    "modality": "MRI",
-    "finding": "Enhancing mass of the conus and filum with hemorrhage.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Sagittal and axial lumbar T2 and T1+Gd; DWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Early urinary retention and fecal incontinence",
-    "side": "bilateral",
-    "mechanism": "Sacral autonomic nuclei"
-   },
-   {
-    "deficit": "Symmetric saddle anesthesia",
-    "side": "bilateral",
-    "mechanism": "Sacral dermatome relay"
-   },
-   {
-    "deficit": "Mild, symmetric leg weakness with mixed reflexes (brisk knee, absent ankle)",
-    "side": "bilateral",
-    "mechanism": "Sacral segments and adjacent lumbar tracts"
-   },
-   {
-    "deficit": "Impotence",
-    "side": "bilateral",
-    "mechanism": "Sacral parasympathetic outflow"
-   }
-  ],
-  "examination": [
-   "Perianal pin-prick, anal tone and reflex, bulbocavernosus reflex",
-   "Bladder scan for retention",
-   "Ankle versus knee reflexes"
-  ],
-  "syndromes": [
-   "syn-conus-vs-cauda-equina",
-   "syn-anterior-cord"
-  ],
-  "pearls": [
-   "Sphincters first, symmetric and painless: conus. Legs first, asymmetric and painful: cauda equina",
-   "The conus is at L1–L2: a lumbar puncture at L3–L4 or below is safe"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    134,
-    136
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    168,
-    168
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    172,
-    172
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    41,
-    41
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    45,
-    45
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    162,
-    163
-   ]
+  "status": "draft",
+  "latin": "Conus medullaris",
+  "subsystem": "cord",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "latin": "Conus medullaris",
- "subsystem": "cord",
- "level": {
-  "region": "spinal"
- }
 }

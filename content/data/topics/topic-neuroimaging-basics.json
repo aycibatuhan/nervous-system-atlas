@@ -1,155 +1,125 @@
 {
- "kind": "topic",
- "id": "topic-neuroimaging-basics",
- "name": "Neuroimaging basics: reading CT and MRI against the atlas",
- "synonyms": [],
- "category": "imaging",
- "summary": "Computed tomography maps X-ray attenuation, so bone and acute blood are bright and edema, infarction and air are dark, and it answers the emergency questions of hemorrhage, mass effect, hydrocephalus and fracture in minutes; magnetic resonance imaging maps proton signal under different weightings, so it separates gray from white matter, shows edema and demyelination on T2 and FLAIR, restricted diffusion in acute infarction and abscess on DWI, blood products on gradient and susceptibility images, and barrier breakdown after gadolinium. Each sequence is a question, and the atlas's MRI slices, which use the T1 and T2 templates, are the normal against which every abnormal study is compared; the arterial and venous meshes give the vascular map for CT and MR angiography.",
- "sections": [
-  {
-   "heading": "CT: density and the acute questions",
-   "body": "Hyperdensity means blood (acute hemorrhage, a thrombosed vessel, a hyperdense MCA sign), calcification, dense tumor or contrast; hypodensity means edema, infarction older than a few hours, old blood, fat or air. The early signs of ischemic stroke are subtle: loss of the insular ribbon, obscuration of the lentiform nucleus and effacement of sulci, graded by the ASPECTS score; a hemorrhage is obvious and its site (putamen, thalamus, pons, cerebellum for hypertension; lobar for amyloid angiopathy and malformations; basal cisterns for aneurysmal subarachnoid) names its cause. Mass effect shows as sulcal effacement, ventricular compression, midline shift and cisternal effacement in that order, and the temporal horns round early in hydrocephalus. CT angiography shows occlusions, aneurysms and dissections; CT perfusion separates the infarct core from the penumbra. CT is the test for trauma, for the first hours of stroke and for patients who cannot have MRI."
-  },
-  {
-   "heading": "MRI: sequences as questions",
-   "body": "T1 shows anatomy with white matter bright and CSF dark, and fat, subacute blood, melanin, protein and gadolinium bright; T2 shows CSF and edema bright; FLAIR suppresses CSF so that periventricular and cortical lesions, subarachnoid blood and meningeal disease stand out; DWI with the ADC map shows restricted diffusion in acute infarction (bright DWI, dark ADC, for about ten days), abscess pus, dense tumors such as lymphoma and medulloblastoma, prion disease and status epilepticus; SWI and gradient echo show hemosiderin, microbleeds, cavernomas, calcification and venous structures; STIR suppresses fat for the spine and orbits; and gadolinium enhancement marks barrier breakdown in tumor, infection, inflammation, subacute infarction and demyelination. MRA and MRV image the arteries and veins without contrast. Contraindications are ferromagnetic implants and some devices; gadolinium is avoided in severe renal failure."
-  },
-  {
-   "heading": "Patterns that localize the pathology",
-   "body": "An arterial infarct respects a territory and has a wedge shape; a venous infarct crosses territories, is often hemorrhagic and lies near a thrombosed sinus; a watershed infarct is linear along a border zone. Demyelination produces ovoid periventricular lesions perpendicular to the ventricles, juxtacortical, callosal, brainstem and cord lesions, some enhancing; small vessel disease produces patchy deep and periventricular hyperintensities with lacunes and microbleeds. Ring enhancement with central restricted diffusion is an abscess; ring enhancement without it is a necrotic tumor or, with a thin rim, a demyelinating lesion; multiple enhancing lesions at the gray-white junction are metastases; a dural-based enhancing mass with a tail is a meningioma; and leptomeningeal enhancement is infection, carcinomatosis or sarcoidosis. Symmetric deep gray matter signal change points to toxic, metabolic, hypoxic or prion disease; symmetric white-matter disease points to a leukodystrophy or toxic leukoencephalopathy."
-  },
-  {
-   "heading": "The spine, the vessels and the pitfalls",
-   "body": "Spinal MRI uses sagittal T2 and STIR to find cord signal change, compression and the level, axial images to define foraminal and canal stenosis, and contrast for tumor, infection and inflammation; CT shows bone. Vascular imaging (CTA, MRA, DSA) is read against the atlas arteries: the site of an occlusion predicts the infarct, the branch point predicts the aneurysm, and the tapered stenosis with intramural hematoma is the dissection. Pitfalls include the normal bright posterior limb on FLAIR, ependymitis granularis at the frontal horns, the incompletely myelinated white matter of infants, the prominent flocculus and choroid plexus that mimic masses, flow artifacts in the sinuses that mimic thrombosis, and the age-related white-matter hyperintensities that are not multiple sclerosis; and every study must be read with the clinical localization in hand, because an incidental finding will otherwise become the diagnosis."
-  }
- ],
- "keyPoints": [
-  "CT for blood, bone and the first hour; MRI for everything else",
-  "DWI is the sequence of the acute stroke and the abscess; FLAIR of demyelination and the periventricular lesion; SWI of blood and calcium; gadolinium of the open barrier",
-  "Arterial infarcts respect territories; venous infarcts, tumors and infections do not",
-  "Ring enhancement with restricted diffusion in the center is an abscess; with a thin, open ring it is demyelination",
-  "Read the scan after the examination, not instead of it"
- ],
- "meshIds": [
-  "arteries-mra-atlas",
-  "brain-envelope",
-  "ventricle-lateral-l",
-  "ventricle-lateral-r",
-  "internal-capsule-l",
-  "internal-capsule-r"
- ],
- "related": {
-  "structureIds": [
-   "arteries-mra-atlas",
-   "brain-envelope",
-   "cerebral-white-matter",
-   "insula",
-   "ventricle-lateral"
+  "kind": "topic",
+  "id": "topic-neuroimaging-basics",
+  "name": "Neuroimaging basics: reading CT and MRI against the atlas",
+  "synonyms": [],
+  "category": "imaging",
+  "summary": "Computed tomography maps X-ray attenuation, so bone and acute blood are bright and edema, infarction and air are dark, and it answers the emergency questions of hemorrhage, mass effect, hydrocephalus and fracture in minutes; magnetic resonance imaging maps proton signal under different weightings, so it separates gray from white matter, shows edema and demyelination on T2 and FLAIR, restricted diffusion in acute infarction and abscess on DWI, blood products on gradient and susceptibility images, and barrier breakdown after gadolinium. Each sequence is a question, and the atlas's MRI slices, which use the T1 and T2 templates, are the normal against which every abnormal study is compared; the arterial and venous meshes give the vascular map for CT and MR angiography.",
+  "sections": [
+    {
+      "heading": "CT: density and the acute questions",
+      "body": "Hyperdensity means blood (acute hemorrhage, a thrombosed vessel, a hyperdense MCA sign), calcification, dense tumor or contrast; hypodensity means edema, infarction older than a few hours, old blood, fat or air. The early signs of ischemic stroke are subtle: loss of the insular ribbon, obscuration of the lentiform nucleus and effacement of sulci, graded by the ASPECTS score; a hemorrhage is obvious and its site (putamen, thalamus, pons, cerebellum for hypertension; lobar for amyloid angiopathy and malformations; basal cisterns for aneurysmal subarachnoid) names its cause. Mass effect shows as sulcal effacement, ventricular compression, midline shift and cisternal effacement in that order, and the temporal horns round early in hydrocephalus. CT angiography shows occlusions, aneurysms and dissections; CT perfusion separates the infarct core from the penumbra. CT is the test for trauma, for the first hours of stroke and for patients who cannot have MRI."
+    },
+    {
+      "heading": "MRI: sequences as questions",
+      "body": "T1 shows anatomy with white matter bright and CSF dark, and fat, subacute blood, melanin, protein and gadolinium bright; T2 shows CSF and edema bright; FLAIR suppresses CSF so that periventricular and cortical lesions, subarachnoid blood and meningeal disease stand out; DWI with the ADC map shows restricted diffusion in acute infarction (bright DWI, dark ADC, for about ten days), abscess pus, dense tumors such as lymphoma and medulloblastoma, prion disease and status epilepticus; SWI and gradient echo show hemosiderin, microbleeds, cavernomas, calcification and venous structures; STIR suppresses fat for the spine and orbits; and gadolinium enhancement marks barrier breakdown in tumor, infection, inflammation, subacute infarction and demyelination. MRA and MRV image the arteries and veins without contrast. Contraindications are ferromagnetic implants and some devices; gadolinium is avoided in severe renal failure."
+    },
+    {
+      "heading": "Patterns that localize the pathology",
+      "body": "An arterial infarct respects a territory and has a wedge shape; a venous infarct crosses territories, is often hemorrhagic and lies near a thrombosed sinus; a watershed infarct is linear along a border zone. Demyelination produces ovoid periventricular lesions perpendicular to the ventricles, juxtacortical, callosal, brainstem and cord lesions, some enhancing; small vessel disease produces patchy deep and periventricular hyperintensities with lacunes and microbleeds. Ring enhancement with central restricted diffusion is an abscess; ring enhancement without it is a necrotic tumor or, with a thin rim, a demyelinating lesion; multiple enhancing lesions at the gray-white junction are metastases; a dural-based enhancing mass with a tail is a meningioma; and leptomeningeal enhancement is infection, carcinomatosis or sarcoidosis. Symmetric deep gray matter signal change points to toxic, metabolic, hypoxic or prion disease; symmetric white-matter disease points to a leukodystrophy or toxic leukoencephalopathy."
+    },
+    {
+      "heading": "The spine, the vessels and the pitfalls",
+      "body": "Spinal MRI uses sagittal T2 and STIR to find cord signal change, compression and the level, axial images to define foraminal and canal stenosis, and contrast for tumor, infection and inflammation; CT shows bone. Vascular imaging (CTA, MRA, DSA) is read against the atlas arteries: the site of an occlusion predicts the infarct, the branch point predicts the aneurysm, and the tapered stenosis with intramural hematoma is the dissection. Pitfalls include the normal bright posterior limb on FLAIR, ependymitis granularis at the frontal horns, the incompletely myelinated white matter of infants, the prominent flocculus and choroid plexus that mimic masses, flow artifacts in the sinuses that mimic thrombosis, and the age-related white-matter hyperintensities that are not multiple sclerosis; and every study must be read with the clinical localization in hand, because an incidental finding will otherwise become the diagnosis."
+    }
   ],
-  "pathwayIds": [],
-  "syndromeIds": [
-   "syn-mca-stem-infarct",
-   "syn-subarachnoid-hemorrhage",
-   "syn-multiple-sclerosis-pattern",
-   "syn-hydrocephalus"
+  "keyPoints": [
+    "CT for blood, bone and the first hour; MRI for everything else",
+    "DWI is the sequence of the acute stroke and the abscess; FLAIR of demyelination and the periventricular lesion; SWI of blood and calcium; gadolinium of the open barrier",
+    "Arterial infarcts respect territories; venous infarcts, tumors and infections do not",
+    "Ring enhancement with restricted diffusion in the center is an abscess; with a thin, open ring it is demyelination",
+    "Read the scan after the examination, not instead of it"
   ],
-  "topicIds": [
-   "topic-csf-physiology-blood-brain-barrier",
-   "topic-stroke-mechanisms-hemorrhage",
-   "topic-localization-approach-exam"
-  ]
- },
- "pearls": [
-  "Compare every lesion with the atlas slice at the same coordinates: the normal is the best contrast agent",
-  "A normal early DWI does not exclude a small brainstem or lacunar infarct; repeat it",
-  "Symmetry on MRI means metabolic, toxic, hypoxic or genetic; asymmetry means vascular, neoplastic or inflammatory"
- ],
- "pitfalls": [
-  "The scan cannot tell you which lesion is symptomatic; the examination does",
-  "Contrast enhancement in a subacute infarct mimics a tumor; the clinical time course and the vascular territory decide"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 2,
-   "pages": [
-    11,
-    24
-   ]
+  "meshIds": [
+    "arteries-mra-atlas",
+    "brain-envelope",
+    "ventricle-lateral-l",
+    "ventricle-lateral-r",
+    "internal-capsule-l",
+    "internal-capsule-r"
+  ],
+  "related": {
+    "structureIds": [
+      "arteries-mra-atlas",
+      "brain-envelope",
+      "cerebral-white-matter",
+      "insula",
+      "ventricle-lateral"
+    ],
+    "pathwayIds": [],
+    "syndromeIds": [
+      "syn-mca-stem-infarct",
+      "syn-subarachnoid-hemorrhage",
+      "syn-multiple-sclerosis-pattern",
+      "syn-hydrocephalus"
+    ],
+    "topicIds": [
+      "topic-csf-physiology-blood-brain-barrier",
+      "topic-stroke-mechanisms-hemorrhage",
+      "topic-localization-approach-exam"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    179,
-    194
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 21,
-   "pages": [
-    224,
-    228
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    471,
-    475
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 1,
-   "pages": [
-    20,
-    32
-   ]
+  "pearls": [
+    "Compare every lesion with the atlas slice at the same coordinates: the normal is the best contrast agent",
+    "A normal early DWI does not exclude a small brainstem or lacunar infarct; repeat it",
+    "Symmetry on MRI means metabolic, toxic, hypoxic or genetic; asymmetry means vascular, neoplastic or inflammatory"
+  ],
+  "pitfalls": [
+    "The scan cannot tell you which lesion is symptomatic; the examination does",
+    "Contrast enhancement in a subacute infarct mimics a tumor; the clinical time course and the vascular territory decide"
+  ],
+  "citations": [
+    {
+      "ref": "sp-magnetic-resonance-imaging-physics"
+    },
+    {
+      "ref": "sp-computed-tomography-instrumentation-and-physics"
+    },
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "imaging",
+    "CT",
+    "MRI",
+    "sequences"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "The atlas MRI slices are the MNI T1 and T2 templates at 1 mm; the T1 shows white matter bright and the T2 shows CSF bright, and the label overlays name every structure at the cursor.",
+    "pathology": [
+      {
+        "pathology": "Acute ischemic infarct",
+        "modality": "MRI",
+        "finding": "Bright on DWI with dark ADC within minutes, FLAIR-bright after 4-6 hours, T2-bright by 24 hours; enhancement in the subacute phase; encephalomalacia later.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Intracerebral hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense mass with surrounding hypodense edema; on MRI the signal evolves with the blood products (hyperacute T2-bright, acute T2-dark, subacute T1-bright, chronic hemosiderin rim).",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Brain abscess",
+        "modality": "MRI",
+        "finding": "Ring-enhancing lesion with central restricted diffusion and a smooth thin capsule that is T2-dark; the ring is thinner toward the ventricle.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Multiple sclerosis",
+        "modality": "MRI",
+        "finding": "Ovoid periventricular, juxtacortical, infratentorial and spinal cord lesions on FLAIR and T2; some enhance; central veins on SWI.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Glioblastoma",
+        "modality": "MRI",
+        "finding": "Irregular ring-enhancing mass with central necrosis, surrounding FLAIR infiltration and elevated perfusion; no central restricted diffusion.",
+        "sequence": "T1+Gd"
+      }
+    ]
   }
- ],
- "tags": [
-  "imaging",
-  "CT",
-  "MRI",
-  "sequences"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "The atlas MRI slices are the MNI T1 and T2 templates at 1 mm; the T1 shows white matter bright and the T2 shows CSF bright, and the label overlays name every structure at the cursor.",
-  "pathology": [
-   {
-    "pathology": "Acute ischemic infarct",
-    "modality": "MRI",
-    "finding": "Bright on DWI with dark ADC within minutes, FLAIR-bright after 4-6 hours, T2-bright by 24 hours; enhancement in the subacute phase; encephalomalacia later.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Intracerebral hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense mass with surrounding hypodense edema; on MRI the signal evolves with the blood products (hyperacute T2-bright, acute T2-dark, subacute T1-bright, chronic hemosiderin rim).",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Brain abscess",
-    "modality": "MRI",
-    "finding": "Ring-enhancing lesion with central restricted diffusion and a smooth thin capsule that is T2-dark; the ring is thinner toward the ventricle.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Multiple sclerosis",
-    "modality": "MRI",
-    "finding": "Ovoid periventricular, juxtacortical, infratentorial and spinal cord lesions on FLAIR and T2; some enhance; central veins on SWI.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Glioblastoma",
-    "modality": "MRI",
-    "finding": "Irregular ring-enhancing mass with central necrosis, surrounding FLAIR infiltration and elevated perfusion; no central restricted diffusion.",
-    "sequence": "T1+Gd"
-   }
-  ]
- }
 }

@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-ring-enhancement",
- "term": "Ring enhancement",
- "definition": "A rim of contrast enhancement around a non-enhancing center, produced by a necrotic tumor (glioblastoma, metastasis), an abscess (thin smooth wall, central restricted diffusion), a resolving hematoma or tumefactive demyelination (incomplete ring); the wall, the diffusion and the time course separate them.",
- "related": [
-  "g-vasogenic-edema",
-  "g-dural-tail"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 2,
-   "pages": [
-    11,
-    20
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-ring-enhancement",
+  "term": "Ring enhancement",
+  "definition": "A rim of contrast enhancement around a non-enhancing center, produced by a necrotic tumor (glioblastoma, metastasis), an abscess (thin smooth wall, central restricted diffusion), a resolving hematoma or tumefactive demyelination (incomplete ring); the wall, the diffusion and the time course separate them.",
+  "related": [
+    "g-vasogenic-edema",
+    "g-dural-tail"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-abscess",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-glioblastoma-multiforme",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-brain-metastasis",
+      "section": "Pathophysiology"
+    }
+  ]
 }

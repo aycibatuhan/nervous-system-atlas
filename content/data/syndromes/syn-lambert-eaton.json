@@ -1,122 +1,122 @@
 {
- "kind": "syndrome",
- "id": "syn-lambert-eaton",
- "name": "Lambert–Eaton myasthenic syndrome",
- "eponyms": [],
- "category": "neuromuscular",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "neuromuscular-junction",
-   "motor-unit",
-   "sympathetic-trunk"
+  "kind": "syndrome",
+  "id": "syn-lambert-eaton",
+  "name": "Lambert–Eaton myasthenic syndrome",
+  "eponyms": [],
+  "category": "neuromuscular",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "neuromuscular-junction",
+      "motor-unit",
+      "sympathetic-trunk"
+    ],
+    "side": "bilateral"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "brainstem"
+    ]
+  },
+  "presentation": "A long-term smoker develops weakness of the thighs and hips that makes rising from a chair and climbing stairs difficult, with aching muscles, a dry mouth and impotence. The weakness is worst after rest and improves briefly after a few seconds of effort; the reflexes are absent at first but appear after the patient contracts the muscle for ten seconds. Ptosis and diplopia are mild or absent, and swallowing is usually preserved. A small cell lung cancer is found in half the patients, sometimes years later.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "proximal legs then arms",
+      "sign": "Proximal weakness that facilitates briefly with exercise",
+      "substrate": "neuromuscular-junction"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "generalized",
+      "sign": "Absent or reduced reflexes that return after brief maximal contraction (post-exercise facilitation)",
+      "substrate": "motor-unit"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "cholinergic",
+      "sign": "Dry mouth, constipation, erectile dysfunction, orthostatic hypotension, reduced sweating",
+      "substrate": "sympathetic-trunk"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "mild",
+      "sign": "Mild ptosis or diplopia; bulbar and respiratory involvement uncommon",
+      "substrate": "cn-03-oculomotor"
+    }
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "brainstem"
-  ]
- },
- "presentation": "A long-term smoker develops weakness of the thighs and hips that makes rising from a chair and climbing stairs difficult, with aching muscles, a dry mouth and impotence. The weakness is worst after rest and improves briefly after a few seconds of effort; the reflexes are absent at first but appear after the patient contracts the muscle for ten seconds. Ptosis and diplopia are mild or absent, and swallowing is usually preserved. A small cell lung cancer is found in half the patients, sometimes years later.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "proximal legs then arms",
-   "sign": "Proximal weakness that facilitates briefly with exercise",
-   "substrate": "neuromuscular-junction"
+  "reasoning": "Antibodies against the P/Q-type voltage-gated calcium channels of the presynaptic motor nerve terminal reduce the calcium entry that triggers acetylcholine release, so each nerve impulse releases too few quanta and the endplate potential often fails to reach threshold. The muscle fibers and their receptors are normal, so the defect is presynaptic, the reverse of myasthenia gravis: because repetitive stimulation at high frequency or a brief voluntary contraction lets calcium accumulate in the terminal, transmission improves for a few seconds, which is why strength and reflexes facilitate with exercise and why the compound muscle action potential increments by more than 100% on rapid repetitive stimulation, whereas in myasthenia it decrements. The same calcium channels operate at the terminals of autonomic cholinergic neurons, so the parasympathetic and sudomotor failure that gives the dry mouth, constipation and erectile dysfunction is part of the disease and helps separate it from myasthenia. The antibodies arise in about half of patients as an immune response to a small cell lung carcinoma, which expresses the same channels, and the neurological syndrome typically precedes the tumor's detection; the remainder are autoimmune without cancer, often with other autoimmune disease. Everything is bilateral and symmetric, a disorder of transmission rather than of any anatomical pathway, so there is no crossing or lateralization to consider.",
+  "imagingFindings": [
+    {
+      "pathology": "Presynaptic transmission defect",
+      "modality": "EMG/NCS",
+      "finding": "Small resting compound muscle action potentials, decrement at low-frequency stimulation, and an increment of over 100% after 10 seconds of maximal exercise or 50 Hz stimulation; increased jitter on single-fiber EMG.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Small cell lung cancer",
+      "modality": "CT",
+      "finding": "Hilar or mediastinal mass on chest CT; FDG-PET if CT is negative, repeated over two years, since the tumor may lag the syndrome.",
+      "sequence": "CT contrast"
+    },
+    {
+      "pathology": "Antibodies",
+      "modality": "EMG/NCS",
+      "finding": "Serology alongside electrodiagnosis: P/Q-type voltage-gated calcium channel antibodies in 85–90%; SOX1 antibodies favor a paraneoplastic cause.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Paraneoplastic (small cell lung cancer)",
+    "Autoimmune non-paraneoplastic (often with thyroid disease or type 1 diabetes)"
+  ],
+  "mimics": [
+    {
+      "name": "Myasthenia gravis",
+      "howToDistinguish": "Ocular and bulbar predominance, fatigability without facilitation, normal reflexes and autonomic function, decrement without increment"
+    },
+    {
+      "name": "Inflammatory myopathy",
+      "howToDistinguish": "Proximal weakness with raised CK and myopathic EMG; reflexes preserved"
+    },
+    {
+      "name": "Guillain–Barré or CIDP",
+      "howToDistinguish": "Sensory symptoms, demyelinating conduction changes"
+    },
+    {
+      "name": "Botulism",
+      "howToDistinguish": "Acute, descending, with ophthalmoplegia and dilated pupils; also presynaptic"
+    }
+  ],
+  "management": [
+    "Confirm with repetitive stimulation and calcium channel antibodies; search for small cell lung cancer with CT and PET, repeated for two years",
+    "Amifampridine (3,4-diaminopyridine) improves strength; pyridostigmine adds little; immunosuppression or IVIG for severe cases",
+    "Treat the tumor: this often improves the neurological syndrome"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lambert-eaton-myasthenic-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-motor-neuron",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -160
+    },
+    "label": "the defect is at neuromuscular junctions throughout the body; the lumbosacral roots stand in for the proximal legs"
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "generalized",
-   "sign": "Absent or reduced reflexes that return after brief maximal contraction (post-exercise facilitation)",
-   "substrate": "motor-unit"
-  },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "cholinergic",
-   "sign": "Dry mouth, constipation, erectile dysfunction, orthostatic hypotension, reduced sweating",
-   "substrate": "sympathetic-trunk"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "mild",
-   "sign": "Mild ptosis or diplopia; bulbar and respiratory involvement uncommon",
-   "substrate": "cn-03-oculomotor"
-  }
- ],
- "reasoning": "Antibodies against the P/Q-type voltage-gated calcium channels of the presynaptic motor nerve terminal reduce the calcium entry that triggers acetylcholine release, so each nerve impulse releases too few quanta and the endplate potential often fails to reach threshold. The muscle fibers and their receptors are normal, so the defect is presynaptic, the reverse of myasthenia gravis: because repetitive stimulation at high frequency or a brief voluntary contraction lets calcium accumulate in the terminal, transmission improves for a few seconds, which is why strength and reflexes facilitate with exercise and why the compound muscle action potential increments by more than 100% on rapid repetitive stimulation, whereas in myasthenia it decrements. The same calcium channels operate at the terminals of autonomic cholinergic neurons, so the parasympathetic and sudomotor failure that gives the dry mouth, constipation and erectile dysfunction is part of the disease and helps separate it from myasthenia. The antibodies arise in about half of patients as an immune response to a small cell lung carcinoma, which expresses the same channels, and the neurological syndrome typically precedes the tumor's detection; the remainder are autoimmune without cancer, often with other autoimmune disease. Everything is bilateral and symmetric, a disorder of transmission rather than of any anatomical pathway, so there is no crossing or lateralization to consider.",
- "imagingFindings": [
-  {
-   "pathology": "Presynaptic transmission defect",
-   "modality": "EMG/NCS",
-   "finding": "Small resting compound muscle action potentials, decrement at low-frequency stimulation, and an increment of over 100% after 10 seconds of maximal exercise or 50 Hz stimulation; increased jitter on single-fiber EMG.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Small cell lung cancer",
-   "modality": "CT",
-   "finding": "Hilar or mediastinal mass on chest CT; FDG-PET if CT is negative, repeated over two years, since the tumor may lag the syndrome.",
-   "sequence": "CT contrast"
-  },
-  {
-   "pathology": "Antibodies",
-   "modality": "EMG/NCS",
-   "finding": "Serology alongside electrodiagnosis: P/Q-type voltage-gated calcium channel antibodies in 85–90%; SOX1 antibodies favor a paraneoplastic cause.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Paraneoplastic (small cell lung cancer)",
-  "Autoimmune non-paraneoplastic (often with thyroid disease or type 1 diabetes)"
- ],
- "mimics": [
-  {
-   "name": "Myasthenia gravis",
-   "howToDistinguish": "Ocular and bulbar predominance, fatigability without facilitation, normal reflexes and autonomic function, decrement without increment"
-  },
-  {
-   "name": "Inflammatory myopathy",
-   "howToDistinguish": "Proximal weakness with raised CK and myopathic EMG; reflexes preserved"
-  },
-  {
-   "name": "Guillain–Barré or CIDP",
-   "howToDistinguish": "Sensory symptoms, demyelinating conduction changes"
-  },
-  {
-   "name": "Botulism",
-   "howToDistinguish": "Acute, descending, with ophthalmoplegia and dilated pupils; also presynaptic"
-  }
- ],
- "management": [
-  "Confirm with repetitive stimulation and calcium channel antibodies; search for small cell lung cancer with CT and PET, repeated for two years",
-  "Amifampridine (3,4-diaminopyridine) improves strength; pyridostigmine adds little; immunosuppression or IVIG for severe cases",
-  "Treat the tumor: this often improves the neurological syndrome"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    295,
-    297
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -160
-  },
-  "label": "the defect is at neuromuscular junctions throughout the body; the lumbosacral roots stand in for the proximal legs"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

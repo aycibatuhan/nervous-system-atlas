@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-nigrostriatal-pathway",
- "term": "Nigrostriatal pathway",
- "definition": "The dopaminergic projection from the substantia nigra pars compacta to the putamen and caudate that sets the gain of the basal ganglia loops; its degeneration causes Parkinson disease and its blockade drug-induced parkinsonism.",
- "related": [
-  "g-mesolimbic-pathway",
-  "g-bradykinesia"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-nigrostriatal-pathway",
+  "term": "Nigrostriatal pathway",
+  "definition": "The dopaminergic projection from the substantia nigra pars compacta to the putamen and caudate that sets the gain of the basal ganglia loops; its degeneration causes Parkinson disease and its blockade drug-induced parkinsonism.",
+  "related": [
+    "g-mesolimbic-pathway",
+    "g-bradykinesia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-substantia-nigra",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-parkinson-disease",
+      "section": "Pathophysiology"
+    }
+  ]
 }

@@ -1,188 +1,160 @@
 {
- "kind": "structure",
- "id": "planum-temporale",
- "name": "Planum temporale",
- "synonyms": [
-  "posterior superior temporal plane",
-  "area 22/42"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "planum-temporale-l",
-  "planum-temporale-r"
- ],
- "summary": "The planum temporale is the flat triangular surface of the superior temporal gyrus behind Heschl's gyrus, forming the floor of the posterior lateral sulcus beneath the parietal operculum. It is larger on the left in most people, one of the earliest described anatomical asymmetries of the language brain, and it contains auditory association cortex that decodes the spectral and temporal structure of speech and locates sounds in space, forming the start of the dorsal auditory stream to Wernicke's area, the supramarginal gyrus and the frontal speech cortex. It is supplied by the inferior division of the middle cerebral artery, and lesions contribute to Wernicke and conduction aphasia, to impaired sound localization, and to the auditory hallucinations of schizophrenia, in which its asymmetry is reduced.",
- "anatomy": {
-  "location": "Posterior part of the superior surface of the temporal lobe, behind the transverse temporal gyrus of Heschl and in front of the point where the lateral sulcus turns upward into the supramarginal gyrus; it faces the parietal operculum across the posterior Sylvian fissure.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Heschl's gyrus (core auditory cortex)",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Medial geniculate nucleus",
-    "via": "acoustic radiation (belt input)"
-   },
-   {
-    "from": "Contralateral planum temporale",
-    "via": "corpus callosum"
-   }
+  "kind": "structure",
+  "id": "planum-temporale",
+  "name": "Planum temporale",
+  "synonyms": [
+    "posterior superior temporal plane",
+    "area 22/42"
   ],
-  "efferents": [
-   {
-    "to": "Supramarginal gyrus and inferior frontal gyrus",
-    "via": "arcuate fasciculus"
-   },
-   {
-    "to": "Posterior superior temporal gyrus (Wernicke area)",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Posterior parietal cortex (auditory space)",
-    "via": "short association fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "planum-temporale-l",
+    "planum-temporale-r"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "The planum temporale analyzes the rapidly changing spectral patterns of speech and other complex sounds and computes where a sound comes from and whether it is moving; in the left hemisphere it is the entry point of the dorsal stream that maps phonology onto articulation through the arcuate fasciculus, and it contains a sensorimotor interface used in repetition and in monitoring one's own voice. It is also engaged when reading silently, when listening to music, and in the perception of the timing of sounds. Its size asymmetry relates to language lateralization but is only loosely tied to handedness.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The planum temporale is the flat triangular surface of the superior temporal gyrus behind Heschl's gyrus, forming the floor of the posterior lateral sulcus beneath the parietal operculum. It is larger on the left in most people, one of the earliest described anatomical asymmetries of the language brain, and it contains auditory association cortex that decodes the spectral and temporal structure of speech and locates sounds in space, forming the start of the dorsal auditory stream to Wernicke's area, the supramarginal gyrus and the frontal speech cortex. It is supplied by the inferior division of the middle cerebral artery, and lesions contribute to Wernicke and conduction aphasia, to impaired sound localization, and to the auditory hallucinations of schizophrenia, in which its asymmetry is reduced.",
+  "anatomy": {
+    "location": "Posterior part of the superior surface of the temporal lobe, behind the transverse temporal gyrus of Heschl and in front of the point where the lateral sulcus turns upward into the supramarginal gyrus; it faces the parietal operculum across the posterior Sylvian fissure.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Heschl's gyrus (core auditory cortex)",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Medial geniculate nucleus",
+        "via": "acoustic radiation (belt input)"
+      },
+      {
+        "from": "Contralateral planum temporale",
+        "via": "corpus callosum"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Supramarginal gyrus and inferior frontal gyrus",
+        "via": "arcuate fasciculus"
+      },
+      {
+        "to": "Posterior superior temporal gyrus (Wernicke area)",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Posterior parietal cortex (auditory space)",
+        "via": "short association fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
+  },
+  "function": "The planum temporale analyzes the rapidly changing spectral patterns of speech and other complex sounds and computes where a sound comes from and whether it is moving; in the left hemisphere it is the entry point of the dorsal stream that maps phonology onto articulation through the arcuate fasciculus, and it contains a sensorimotor interface used in repetition and in monitoring one's own voice. It is also engaged when reading silently, when listening to music, and in the perception of the timing of sounds. Its size asymmetry relates to language lateralization but is only loosely tied to handedness.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "planum-temporale-l"
+        },
+        "label": "planum temporale behind Heschl's gyrus on the superior temporal surface"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "planum-temporale-r"
+        },
+        "label": "floor of the posterior Sylvian fissure beneath the parietal operculum"
+      }
+    ],
+    "normalAppearance": "Flat superior temporal surface behind the transverse temporal gyrus on axial images through the level of the thalamus and posterior insula; the left planum is longer and reaches further back in most brains.",
+    "pathology": [
+      {
+        "pathology": "Conduction or Wernicke aphasia from a posterior MCA branch infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the posterior superior temporal plane and the underlying arcuate fibers with impaired repetition and phonemic paraphasias.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cortical deafness or auditory agnosia",
+        "modality": "MRI",
+        "finding": "Bilateral posterior superior temporal lesions, usually sequential strokes, with inability to interpret sounds despite normal audiometry.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Reduced planum asymmetry (research finding)",
+        "modality": "MRI",
+        "finding": "Loss of the normal left-greater-than-right planum size in schizophrenia and dyslexia; not diagnostic in an individual.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired repetition with phonemic paraphasias",
+        "side": "n/a",
+        "mechanism": "Damage to the sensorimotor speech interface at the start of the dorsal stream"
+      },
+      {
+        "deficit": "Impaired sound localization in the contralateral hemispace",
+        "side": "contralateral",
+        "mechanism": "Loss of the spatial auditory processing of the posterior temporal plane"
+      },
+      {
+        "deficit": "Contribution to word deafness when bilateral",
+        "side": "bilateral",
+        "mechanism": "Loss of speech-sound decoding in both auditory association cortices"
+      }
+    ],
+    "examination": [
+      "Repetition of words and non-words and of long sentences",
+      "Localization of sounds made behind the patient on each side",
+      "Comprehension of speech in noise, which fails early with posterior temporal lesions"
+    ],
+    "syndromes": [
+      "syn-aphasia-conduction-global",
+      "syn-aphasia-wernicke",
+      "syn-hearing-loss"
+    ],
+    "pearls": [
+      "Repetition failure with fluent speech and good comprehension points to the posterior superior temporal plane and the arcuate fasciculus",
+      "The left planum temporale is the classic anatomical signature of language dominance, visible on a single MRI",
+      "Cortical deafness needs both plana and Heschl's gyri; a unilateral lesion never makes a patient deaf"
+    ]
+  },
+  "pitfalls": [
+    "Conduction aphasia is missed unless repetition is tested with sentences of several words"
   ],
-  "territories": [
-   "territory-mca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "planum-temporale-l"
+  "citations": [
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Introduction"
     },
-    "label": "planum temporale behind Heschl's gyrus on the superior temporal surface"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "planum-temporale-r"
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
     },
-    "label": "floor of the posterior Sylvian fissure beneath the parietal operculum"
-   }
+    {
+      "ref": "sp-sylvian-fissure",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Flat superior temporal surface behind the transverse temporal gyrus on axial images through the level of the thalamus and posterior insula; the left planum is longer and reaches further back in most brains.",
-  "pathology": [
-   {
-    "pathology": "Conduction or Wernicke aphasia from a posterior MCA branch infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the posterior superior temporal plane and the underlying arcuate fibers with impaired repetition and phonemic paraphasias.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cortical deafness or auditory agnosia",
-    "modality": "MRI",
-    "finding": "Bilateral posterior superior temporal lesions, usually sequential strokes, with inability to interpret sounds despite normal audiometry.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Reduced planum asymmetry (research finding)",
-    "modality": "MRI",
-    "finding": "Loss of the normal left-greater-than-right planum size in schizophrenia and dyslexia; not diagnostic in an individual.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired repetition with phonemic paraphasias",
-    "side": "n/a",
-    "mechanism": "Damage to the sensorimotor speech interface at the start of the dorsal stream"
-   },
-   {
-    "deficit": "Impaired sound localization in the contralateral hemispace",
-    "side": "contralateral",
-    "mechanism": "Loss of the spatial auditory processing of the posterior temporal plane"
-   },
-   {
-    "deficit": "Contribution to word deafness when bilateral",
-    "side": "bilateral",
-    "mechanism": "Loss of speech-sound decoding in both auditory association cortices"
-   }
+  "tags": [
+    "auditory association",
+    "dorsal stream",
+    "asymmetry"
   ],
-  "examination": [
-   "Repetition of words and non-words and of long sentences",
-   "Localization of sounds made behind the patient on each side",
-   "Comprehension of speech in noise, which fails early with posterior temporal lesions"
-  ],
-  "syndromes": [
-   "syn-aphasia-conduction-global",
-   "syn-aphasia-wernicke",
-   "syn-hearing-loss"
-  ],
-  "pearls": [
-   "Repetition failure with fluent speech and good comprehension points to the posterior superior temporal plane and the arcuate fasciculus",
-   "The left planum temporale is the classic anatomical signature of language dominance, visible on a single MRI",
-   "Cortical deafness needs both plana and Heschl's gyri; a unilateral lesion never makes a patient deaf"
-  ]
- },
- "pitfalls": [
-  "Conduction aphasia is missed unless repetition is tested with sentences of several words"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    287,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    341,
-    341
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    108
-   ]
-  }
- ],
- "tags": [
-  "auditory association",
-  "dorsal stream",
-  "asymmetry"
- ],
- "status": "draft",
- "subsystem": "lobe-temporal",
- "parent": "lobe-temporal"
+  "status": "draft",
+  "subsystem": "lobe-temporal",
+  "parent": "lobe-temporal"
 }

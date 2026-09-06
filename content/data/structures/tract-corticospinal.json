@@ -1,187 +1,159 @@
 {
- "kind": "structure",
- "id": "tract-corticospinal",
- "name": "Corticospinal tract",
- "synonyms": [
-  "pyramidal tract",
-  "CST"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-corticospinal-l",
-  "tract-corticospinal-r"
- ],
- "summary": "The corticospinal tract is the great descending motor pathway from the precentral gyrus, premotor and supplementary motor cortex and the postcentral gyrus to the spinal cord, reconstructed here from diffusion tractography as the bundle that runs through the corona radiata, the posterior limb of the internal capsule, the middle of the crus cerebri, the basis pontis and the medullary pyramid. Most of its fibers cross in the pyramidal decussation to form the lateral corticospinal tract, so a lesion above the decussation weakens the opposite side and one below it the same side. It is the substrate of the upper motor neuron syndrome and of capsular, pontine and medullary strokes, and its integrity on tractography predicts recovery of hand function after stroke.",
- "anatomy": {
-  "location": "From the motor cortex through the corona radiata, converging into the posterior limb of the internal capsule (face anterior, leg posterior), the middle three-fifths of the crus cerebri, the scattered bundles of the basis pontis and the pyramid of the medulla, where 85-90 percent cross to the contralateral lateral column and the rest descend uncrossed in the anterior column.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Precentral gyrus (area 4) and premotor cortex",
-    "via": "origin"
-   },
-   {
-    "from": "Postcentral gyrus and parietal cortex",
-    "via": "origin (sensory fibers to the dorsal horn)"
-   }
+  "kind": "structure",
+  "id": "tract-corticospinal",
+  "name": "Corticospinal tract",
+  "synonyms": [
+    "pyramidal tract",
+    "CST"
   ],
-  "efferents": [
-   {
-    "to": "Spinal motor neurons and interneurons",
-    "via": "lateral and anterior corticospinal tracts"
-   },
-   {
-    "to": "Dorsal horn and dorsal column nuclei",
-    "via": "corticospinal collaterals"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-corticospinal-l",
+    "tract-corticospinal-r"
   ],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-anterior-corticospinal"
-  ]
- },
- "function": "It carries the voluntary motor command, especially for fractionated finger movements and for the face and tongue through its corticobulbar companions; its monosynaptic connections to spinal motor neurons are what make skilled hand movement possible, and its collaterals to the dorsal horn and the brainstem set the gain of reflexes. Its loss produces weakness with the upper motor neuron pattern of extensor-flexor imbalance, spasticity from loss of accompanying corticoreticular fibers, hyperreflexia and the extensor plantar response. The tractography reconstruction follows the bundle from cortex to the caudal medulla and shows its somatotopy in the capsule and the peduncle.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal",
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-vertebral",
-   "anterior-spinal-artery"
-  ],
-  "territories": [
-   "territory-mca-major",
-   "territory-lateral-lenticulostriate",
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-corticospinal-l"
+  "summary": "The corticospinal tract is the great descending motor pathway from the precentral gyrus, premotor and supplementary motor cortex and the postcentral gyrus to the spinal cord, reconstructed here from diffusion tractography as the bundle that runs through the corona radiata, the posterior limb of the internal capsule, the middle of the crus cerebri, the basis pontis and the medullary pyramid. Most of its fibers cross in the pyramidal decussation to form the lateral corticospinal tract, so a lesion above the decussation weakens the opposite side and one below it the same side. It is the substrate of the upper motor neuron syndrome and of capsular, pontine and medullary strokes, and its integrity on tractography predicts recovery of hand function after stroke.",
+  "anatomy": {
+    "location": "From the motor cortex through the corona radiata, converging into the posterior limb of the internal capsule (face anterior, leg posterior), the middle three-fifths of the crus cerebri, the scattered bundles of the basis pontis and the pyramid of the medulla, where 85-90 percent cross to the contralateral lateral column and the rest descend uncrossed in the anterior column.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Precentral gyrus (area 4) and premotor cortex",
+        "via": "origin"
+      },
+      {
+        "from": "Postcentral gyrus and parietal cortex",
+        "via": "origin (sensory fibers to the dorsal horn)"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Spinal motor neurons and interneurons",
+        "via": "lateral and anterior corticospinal tracts"
+      },
+      {
+        "to": "Dorsal horn and dorsal column nuclei",
+        "via": "corticospinal collaterals"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-anterior-corticospinal"
+    ]
+  },
+  "function": "It carries the voluntary motor command, especially for fractionated finger movements and for the face and tongue through its corticobulbar companions; its monosynaptic connections to spinal motor neurons are what make skilled hand movement possible, and its collaterals to the dorsal horn and the brainstem set the gain of reflexes. Its loss produces weakness with the upper motor neuron pattern of extensor-flexor imbalance, spasticity from loss of accompanying corticoreticular fibers, hyperreflexia and the extensor plantar response. The tractography reconstruction follows the bundle from cortex to the caudal medulla and shows its somatotopy in the capsule and the peduncle.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal",
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-vertebral",
+      "anterior-spinal-artery"
+    ],
+    "territories": [
+      "territory-mca-major",
+      "territory-lateral-lenticulostriate",
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-corticospinal-l"
+        },
+        "label": "corticospinal tract from the motor cortex through the internal capsule to the brainstem"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-corticospinal-r"
+        },
+        "label": "corticospinal fibers in the posterior limb of the internal capsule"
+      }
+    ],
+    "normalAppearance": "On diffusion tractography a dense blue (superoinferior) bundle from the precentral gyrus through the posterior limb and the cerebral peduncle to the pyramid; on FLAIR it is often slightly bright in the posterior limb in healthy adults, a normal finding not to be mistaken for disease.",
+    "pathology": [
+      {
+        "pathology": "Capsular or pontine infarct with hemiparesis",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the posterior limb or basis pontis; subsequent Wallerian degeneration of the tract appears as T2 hyperintensity and atrophy of the ipsilateral peduncle and pyramid over months.",
+        "sequence": "DWI",
+        "timing": "Wallerian change visible on DWI within days and on T2 by 4-10 weeks"
+      },
+      {
+        "pathology": "Amyotrophic lateral sclerosis",
+        "modality": "MRI",
+        "finding": "Symmetric T2/FLAIR hyperintensity along the corticospinal tracts from the corona radiata to the brainstem and T2 hypointensity of the precentral cortex; supportive, not diagnostic.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Tumor displacing the corticospinal tract",
+        "modality": "MRI",
+        "finding": "Tractography shows the bundle displaced or infiltrated by a glioma, guiding the surgical corridor; distance to the tract predicts postoperative weakness.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral spastic hemiparesis (lesion above the decussation)",
+        "side": "contralateral",
+        "mechanism": "Interruption of crossed corticospinal fibers"
+      },
+      {
+        "deficit": "Ipsilateral weakness (lesion below the decussation)",
+        "side": "ipsilateral",
+        "mechanism": "Interruption after the fibers have crossed"
+      },
+      {
+        "deficit": "Loss of fine finger movements out of proportion to strength",
+        "side": "contralateral",
+        "mechanism": "Loss of the corticomotoneuronal component"
+      }
+    ],
+    "examination": [
+      "Pronator drift, finger tapping and grip release",
+      "Tone, reflexes and the plantar response",
+      "Pattern of weakness: extensors in the arm and flexors in the leg"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-motor",
+      "syn-als-pattern",
+      "syn-locked-in",
+      "syn-dejerine-medial-medullary"
+    ],
+    "pearls": [
+      "The corticospinal tract crosses at the bottom of the medulla: above it, the weakness is on the other side",
+      "Wallerian degeneration of the tract after a stroke is visible on MRI and explains a shrunken peduncle",
+      "Tractography of this bundle is the most trusted map in tumor surgery"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pyramidal-tract",
+      "section": "Structure and Function"
     },
-    "label": "corticospinal tract from the motor cortex through the internal capsule to the brainstem"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-corticospinal-r"
+    {
+      "ref": "sp-lateral-corticospinal-tract",
+      "section": "Structure and Function"
     },
-    "label": "corticospinal fibers in the posterior limb of the internal capsule"
-   }
+    {
+      "ref": "sp-pyramidal-tract-lesions",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On diffusion tractography a dense blue (superoinferior) bundle from the precentral gyrus through the posterior limb and the cerebral peduncle to the pyramid; on FLAIR it is often slightly bright in the posterior limb in healthy adults, a normal finding not to be mistaken for disease.",
-  "pathology": [
-   {
-    "pathology": "Capsular or pontine infarct with hemiparesis",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the posterior limb or basis pontis; subsequent Wallerian degeneration of the tract appears as T2 hyperintensity and atrophy of the ipsilateral peduncle and pyramid over months.",
-    "sequence": "DWI",
-    "timing": "Wallerian change visible on DWI within days and on T2 by 4-10 weeks"
-   },
-   {
-    "pathology": "Amyotrophic lateral sclerosis",
-    "modality": "MRI",
-    "finding": "Symmetric T2/FLAIR hyperintensity along the corticospinal tracts from the corona radiata to the brainstem and T2 hypointensity of the precentral cortex; supportive, not diagnostic.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Tumor displacing the corticospinal tract",
-    "modality": "MRI",
-    "finding": "Tractography shows the bundle displaced or infiltrated by a glioma, guiding the surgical corridor; distance to the tract predicts postoperative weakness.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral spastic hemiparesis (lesion above the decussation)",
-    "side": "contralateral",
-    "mechanism": "Interruption of crossed corticospinal fibers"
-   },
-   {
-    "deficit": "Ipsilateral weakness (lesion below the decussation)",
-    "side": "ipsilateral",
-    "mechanism": "Interruption after the fibers have crossed"
-   },
-   {
-    "deficit": "Loss of fine finger movements out of proportion to strength",
-    "side": "contralateral",
-    "mechanism": "Loss of the corticomotoneuronal component"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Pronator drift, finger tapping and grip release",
-   "Tone, reflexes and the plantar response",
-   "Pattern of weakness: extensors in the arm and flexors in the leg"
-  ],
-  "syndromes": [
-   "syn-lacunar-pure-motor",
-   "syn-als-pattern",
-   "syn-locked-in",
-   "syn-dejerine-medial-medullary"
-  ],
-  "pearls": [
-   "The corticospinal tract crosses at the bottom of the medulla: above it, the weakness is on the other side",
-   "Wallerian degeneration of the tract after a stroke is visible on MRI and explains a shrunken peduncle",
-   "Tractography of this bundle is the most trusted map in tumor surgery"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    160
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    185,
-    199
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    36
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 28,
-   "pages": [
-    289,
-    292
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "corona-radiata"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "corona-radiata"
 }

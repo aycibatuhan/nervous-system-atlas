@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-fasciculation",
- "term": "Fasciculation",
- "definition": "A visible twitch of a group of muscle fibers produced by spontaneous discharge of a single motor unit, a sign of lower motor neuron irritability or degeneration, most significant when combined with wasting and weakness.",
- "related": [
-  "g-lower-motor-neuron"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-fasciculation",
+  "term": "Fasciculation",
+  "definition": "A visible twitch of a group of muscle fibers produced by spontaneous discharge of a single motor unit, a sign of lower motor neuron irritability or degeneration, most significant when combined with wasting and weakness.",
+  "related": [
+    "g-lower-motor-neuron"
+  ],
+  "citations": [
+    {
+      "ref": "sp-motor-neuron-disease",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-lower-motor-neuron-lesion",
+      "section": "Structure and Function"
+    }
+  ]
 }

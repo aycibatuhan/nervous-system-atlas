@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-status-epilepticus",
- "term": "Status epilepticus",
- "definition": "A seizure lasting more than five minutes or seizures recurring without recovery; a medical emergency treated with benzodiazepines then a loading antiepileptic, because prolonged seizures cause excitotoxic neuronal death. Non-convulsive status is an unrecognized cause of coma diagnosed only by EEG.",
- "related": [
-  "g-excitotoxicity"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    167,
-    178
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-status-epilepticus",
+  "term": "Status epilepticus",
+  "definition": "A seizure lasting more than five minutes or seizures recurring without recovery; a medical emergency treated with benzodiazepines then a loading antiepileptic, because prolonged seizures cause excitotoxic neuronal death. Non-convulsive status is an unrecognized cause of coma diagnosed only by EEG.",
+  "related": [
+    "g-excitotoxicity"
+  ],
+  "citations": [
+    {
+      "ref": "sp-status-epilepticus",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-electrical-status-epilepticus-in-sleep",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-new-onset-refractory-status-epilepticus",
+      "section": "Pathophysiology"
+    }
+  ]
 }

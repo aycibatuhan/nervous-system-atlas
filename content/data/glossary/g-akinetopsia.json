@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-akinetopsia",
- "term": "Akinetopsia",
- "definition": "Loss of the perception of visual motion, so that moving objects appear as a sequence of still frames, after bilateral damage to the temporo-occipital motion area (MT/V5). Acuity, color and form vision remain intact.",
- "related": [
-  "g-dorsal-stream"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-akinetopsia",
+  "term": "Akinetopsia",
+  "definition": "Loss of the perception of visual motion, so that moving objects appear as a sequence of still frames, after bilateral damage to the temporo-occipital motion area (MT/V5). Acuity, color and form vision remain intact.",
+  "related": [
+    "g-dorsal-stream"
+  ],
+  "citations": [
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-agnosia",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    }
+  ]
 }

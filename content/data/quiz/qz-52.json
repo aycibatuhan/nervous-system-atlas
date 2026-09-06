@@ -1,57 +1,65 @@
 {
- "kind": "quiz",
- "id": "qz-52",
- "type": "localize",
- "vignette": "A 60-year-old woman has a stroke in the right cerebellum. Her examination is remarkable only for mild gait unsteadiness, but her husband reports that she has become disorganized, cannot plan the day and answers questions in a flat, disinhibited way.",
- "stem": "Which lobules are most likely infarcted?",
- "options": [
-  {
-   "key": "A",
-   "text": "Anterior lobe (lobules I-V)"
-  },
-  {
-   "key": "B",
-   "text": "Crus I and Crus II of the posterior lobe"
-  },
-  {
-   "key": "C",
-   "text": "Nodulus and flocculus"
-  },
-  {
-   "key": "D",
-   "text": "Vermis lobules VI-VII"
-  },
-  {
-   "key": "E",
-   "text": "Lobules VIIIA and VIIIB"
-  }
- ],
- "answer": "B",
- "explanation": "A cerebellar lesion with executive and affective change and little motor deficit involves the posterior lobe hemispheres (Crus I and II), the cognitive cerebellum connected to the prefrontal cortex; the anterior lobe and lobule VIII carry the body maps and would produce ataxia.",
- "targets": {
-  "structureIds": [
-   "cerebellar-lobule-crus-i",
-   "cerebellar-lobule-crus-ii"
+  "kind": "quiz",
+  "id": "qz-52",
+  "type": "localize",
+  "vignette": "A 60-year-old woman has a stroke in the right cerebellum. Her examination is remarkable only for mild gait unsteadiness, but her husband reports that she has become disorganized, cannot plan the day and answers questions in a flat, disinhibited way.",
+  "stem": "Which lobules are most likely infarcted?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Anterior lobe (lobules I-V)"
+    },
+    {
+      "key": "B",
+      "text": "Crus I and Crus II of the posterior lobe"
+    },
+    {
+      "key": "C",
+      "text": "Nodulus and flocculus"
+    },
+    {
+      "key": "D",
+      "text": "Vermis lobules VI-VII"
+    },
+    {
+      "key": "E",
+      "text": "Lobules VIIIA and VIIIB"
+    }
   ],
-  "syndromeIds": [
-   "syn-cerebellar-hemispheric"
+  "answer": "B",
+  "explanation": "A cerebellar lesion with executive and affective change and little motor deficit involves the posterior lobe hemispheres (Crus I and II), the cognitive cerebellum connected to the prefrontal cortex; the anterior lobe and lobule VIII carry the body maps and would produce ataxia.",
+  "targets": {
+    "structureIds": [
+      "cerebellar-lobule-crus-i",
+      "cerebellar-lobule-crus-ii"
+    ],
+    "syndromeIds": [
+      "syn-cerebellar-hemispheric"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "cerebellar-lobule-crus-i-r",
+    "cerebellar-lobule-crus-ii-r"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cerebellar-lobule-crus-i-r",
-  "cerebellar-lobule-crus-ii-r"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-cerebellum",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-cerebellar-dysfunction-2",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

@@ -1,181 +1,161 @@
 {
- "kind": "structure",
- "id": "globus-pallidus-internus",
- "name": "Globus pallidus, internal segment",
- "synonyms": [
-  "GPi",
-  "medial pallidum"
- ],
- "system": "basal-ganglia",
- "meshIds": [
-  "globus-pallidus-internus-l",
-  "globus-pallidus-internus-r"
- ],
- "summary": "The internal segment of the globus pallidus is the medial, smaller part of the pallidum, against the posterior limb of the internal capsule and separated from the external segment by the medial medullary lamina. It is the main output nucleus of the basal ganglia for the limbs: its GABAergic neurons tonically inhibit the ventral anterior and ventrolateral thalamus and the pedunculopontine nucleus through the ansa lenticularis and the lenticular fasciculus, and movement is released when the direct pathway pauses them. It is the target of pallidotomy and of deep brain stimulation for Parkinson disease and dystonia, and it is damaged in kernicterus, in carbon monoxide poisoning and in the pantothenate kinase iron disorder.",
- "anatomy": {
-  "location": "Medial part of the lentiform nucleus between the medial medullary lamina and the posterior limb of the internal capsule, above the optic tract and the substantia innominata, in front of and lateral to the subthalamic nucleus, divided by an accessory lamina into outer and inner portions.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Striatum (direct pathway, D1 neurons)",
-    "via": "striatopallidal fibers"
-   },
-   {
-    "from": "Subthalamic nucleus",
-    "via": "subthalamopallidal fibers"
-   },
-   {
-    "from": "Globus pallidus externus",
-    "via": "pallidopallidal fibers"
-   }
+  "kind": "structure",
+  "id": "globus-pallidus-internus",
+  "name": "Globus pallidus, internal segment",
+  "synonyms": [
+    "GPi",
+    "medial pallidum"
   ],
-  "efferents": [
-   {
-    "to": "Ventral anterior and ventrolateral thalamus",
-    "via": "ansa lenticularis and lenticular fasciculus (thalamic fasciculus)"
-   },
-   {
-    "to": "Pedunculopontine nucleus",
-    "via": "pallidotegmental fibers"
-   },
-   {
-    "to": "Centromedian-parafascicular thalamus",
-    "via": "pallidothalamic fibers"
-   }
+  "system": "basal-ganglia",
+  "meshIds": [
+    "globus-pallidus-internus-l",
+    "globus-pallidus-internus-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Internal pallidal neurons discharge continuously to keep the motor thalamus and the brainstem locomotor region suppressed; striatal direct-pathway neurons inhibit them to open a window for the intended movement while subthalamic excitation closes it around competing movements, giving the focused selection the basal ganglia provide. The output leaves through the ansa lenticularis (from the outer portion) and the lenticular fasciculus (from the inner portion), which unite as the thalamic fasciculus in the field H1 of Forel. Excess pallidal output in parkinsonism freezes the thalamus and lesioning or high-frequency stimulation of the nucleus relieves rigidity, bradykinesia and dyskinesia; abnormal patterned output produces dystonia.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal"
+  "summary": "The internal segment of the globus pallidus is the medial, smaller part of the pallidum, against the posterior limb of the internal capsule and separated from the external segment by the medial medullary lamina. It is the main output nucleus of the basal ganglia for the limbs: its GABAergic neurons tonically inhibit the ventral anterior and ventrolateral thalamus and the pedunculopontine nucleus through the ansa lenticularis and the lenticular fasciculus, and movement is released when the direct pathway pauses them. It is the target of pallidotomy and of deep brain stimulation for Parkinson disease and dystonia, and it is damaged in kernicterus, in carbon monoxide poisoning and in the pantothenate kinase iron disorder.",
+  "anatomy": {
+    "location": "Medial part of the lentiform nucleus between the medial medullary lamina and the posterior limb of the internal capsule, above the optic tract and the substantia innominata, in front of and lateral to the subthalamic nucleus, divided by an accessory lamina into outer and inner portions.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Striatum (direct pathway, D1 neurons)",
+        "via": "striatopallidal fibers"
+      },
+      {
+        "from": "Subthalamic nucleus",
+        "via": "subthalamopallidal fibers"
+      },
+      {
+        "from": "Globus pallidus externus",
+        "via": "pallidopallidal fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Ventral anterior and ventrolateral thalamus",
+        "via": "ansa lenticularis and lenticular fasciculus (thalamic fasciculus)"
+      },
+      {
+        "to": "Pedunculopontine nucleus",
+        "via": "pallidotegmental fibers"
+      },
+      {
+        "to": "Centromedian-parafascicular thalamus",
+        "via": "pallidothalamic fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Internal pallidal neurons discharge continuously to keep the motor thalamus and the brainstem locomotor region suppressed; striatal direct-pathway neurons inhibit them to open a window for the intended movement while subthalamic excitation closes it around competing movements, giving the focused selection the basal ganglia provide. The output leaves through the ansa lenticularis (from the outer portion) and the lenticular fasciculus (from the inner portion), which unite as the thalamic fasciculus in the field H1 of Forel. Excess pallidal output in parkinsonism freezes the thalamus and lesioning or high-frequency stimulation of the nucleus relieves rigidity, bradykinesia and dyskinesia; abnormal patterned output produces dystonia.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating",
+      "territory-lateral-lenticulostriate"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "globus-pallidus-internus-l"
+        },
+        "label": "internal pallidum against the posterior limb of the internal capsule"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "globus-pallidus-internus-r"
+        },
+        "label": "medial pallidum above the optic tract"
+      }
+    ],
+    "normalAppearance": "The medial, smaller pallidal segment on axial T2 images, separated from the external segment by the medial medullary lamina; its posteroventral part is the surgical target, planned on the AC-PC plane above the optic tract.",
+    "pathology": [
+      {
+        "pathology": "Pallidal deep brain stimulation",
+        "modality": "CT",
+        "finding": "Electrodes in the posteroventral internal pallidum on postoperative CT fused with MRI for Parkinson disease with dyskinesia or for generalized dystonia.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Kernicterus and pantothenate kinase-associated neurodegeneration",
+        "modality": "MRI",
+        "finding": "Bilateral pallidal signal change: T2 hyperintensity in kernicterus, the eye-of-the-tiger central hyperintensity within a hypointense pallidum in PKAN.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Anterior choroidal artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the medial pallidum and posterior limb with contralateral hemiparesis, hemisensory loss and hemianopia.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral dystonia or athetosis",
+        "side": "contralateral",
+        "mechanism": "Abnormally patterned pallidal output to the thalamus"
+      },
+      {
+        "deficit": "Relief of contralateral parkinsonism and dyskinesia after lesion or stimulation",
+        "side": "contralateral",
+        "mechanism": "Removal of excessive tonic inhibition of the motor thalamus"
+      },
+      {
+        "deficit": "Apathy and cognitive slowing with bilateral lesions",
+        "side": "bilateral",
+        "mechanism": "Interruption of the prefrontal and limbic pallidal loops"
+      }
+    ],
+    "examination": [
+      "Dystonia at rest and with action; tremor and bradykinesia",
+      "Levodopa-induced dyskinesia severity when planning surgery",
+      "Bilirubin history in childhood dystonia"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-anterior-choroidal-infarct",
+      "syn-hemiballismus"
+    ],
+    "pearls": [
+      "The internal pallidum is the basal ganglia's exit door; pallidotomy props it open",
+      "Bilateral pallidal stimulation is the best treatment for generalized dystonia",
+      "Eye of the tiger means iron in the internal pallidum: think PKAN"
+    ]
+  },
+  "pitfalls": [
+    "Pallidal stimulation can worsen gait and speech; the target treats the limbs better than the axis"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating",
-   "territory-lateral-lenticulostriate"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "globus-pallidus-internus-l"
+  "citations": [
+    {
+      "ref": "sp-globus-pallidus",
+      "section": "Structure and Function"
     },
-    "label": "internal pallidum against the posterior limb of the internal capsule"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "globus-pallidus-internus-r"
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "medial pallidum above the optic tract"
-   }
+    {
+      "ref": "sp-extrapyramidal-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The medial, smaller pallidal segment on axial T2 images, separated from the external segment by the medial medullary lamina; its posteroventral part is the surgical target, planned on the AC-PC plane above the optic tract.",
-  "pathology": [
-   {
-    "pathology": "Pallidal deep brain stimulation",
-    "modality": "CT",
-    "finding": "Electrodes in the posteroventral internal pallidum on postoperative CT fused with MRI for Parkinson disease with dyskinesia or for generalized dystonia.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Kernicterus and pantothenate kinase-associated neurodegeneration",
-    "modality": "MRI",
-    "finding": "Bilateral pallidal signal change: T2 hyperintensity in kernicterus, the eye-of-the-tiger central hyperintensity within a hypointense pallidum in PKAN.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Anterior choroidal artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the medial pallidum and posterior limb with contralateral hemiparesis, hemisensory loss and hemianopia.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral dystonia or athetosis",
-    "side": "contralateral",
-    "mechanism": "Abnormally patterned pallidal output to the thalamus"
-   },
-   {
-    "deficit": "Relief of contralateral parkinsonism and dyskinesia after lesion or stimulation",
-    "side": "contralateral",
-    "mechanism": "Removal of excessive tonic inhibition of the motor thalamus"
-   },
-   {
-    "deficit": "Apathy and cognitive slowing with bilateral lesions",
-    "side": "bilateral",
-    "mechanism": "Interruption of the prefrontal and limbic pallidal loops"
-   }
+  "tags": [
+    "basal ganglia output",
+    "DBS",
+    "dystonia"
   ],
-  "examination": [
-   "Dystonia at rest and with action; tremor and bradykinesia",
-   "Levodopa-induced dyskinesia severity when planning surgery",
-   "Bilirubin history in childhood dystonia"
-  ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-anterior-choroidal-infarct",
-   "syn-hemiballismus"
-  ],
-  "pearls": [
-   "The internal pallidum is the basal ganglia's exit door; pallidotomy props it open",
-   "Bilateral pallidal stimulation is the best treatment for generalized dystonia",
-   "Eye of the tiger means iron in the internal pallidum: think PKAN"
-  ]
- },
- "pitfalls": [
-  "Pallidal stimulation can worsen gait and speech; the target treats the limbs better than the axis"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    369,
-    370
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    250
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "tags": [
-  "basal ganglia output",
-  "DBS",
-  "dystonia"
- ],
- "status": "draft",
- "subsystem": "pallidum",
- "parent": "globus-pallidus"
+  "status": "draft",
+  "subsystem": "pallidum",
+  "parent": "globus-pallidus"
 }

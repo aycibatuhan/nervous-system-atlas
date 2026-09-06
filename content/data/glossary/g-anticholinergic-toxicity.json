@@ -1,10 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-anticholinergic-toxicity",
- "term": "Anticholinergic toxicity",
- "definition": "Delirium with dilated pupils, dry skin, urinary retention, tachycardia and hyperthermia from muscarinic blockade; a common reversible cause of confusion in the elderly on bladder, sleep and allergy drugs.",
- "related": [
-  "g-serotonin-syndrome"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-anticholinergic-toxicity",
+  "term": "Anticholinergic toxicity",
+  "definition": "Delirium with dilated pupils, dry skin, urinary retention, tachycardia and hyperthermia from muscarinic blockade; a common reversible cause of confusion in the elderly on bladder, sleep and allergy drugs.",
+  "related": [
+    "g-serotonin-syndrome"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anticholinergic-toxicity",
+      "section": "Pathophysiology"
+    }
+  ]
 }

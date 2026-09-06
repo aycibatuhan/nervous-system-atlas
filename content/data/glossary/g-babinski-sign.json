@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-babinski-sign",
- "term": "Babinski sign (extensor plantar response)",
- "definition": "Extension of the big toe with fanning of the other toes when the lateral sole is stroked, indicating a corticospinal (upper motor neuron) lesion. Normal in infants before myelination of the corticospinal tract.",
- "related": [
-  "g-upper-motor-neuron"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-babinski-sign",
+  "term": "Babinski sign (extensor plantar response)",
+  "definition": "Extension of the big toe with fanning of the other toes when the lateral sole is stroked, indicating a corticospinal (upper motor neuron) lesion. Normal in infants before myelination of the corticospinal tract.",
+  "related": [
+    "g-upper-motor-neuron"
+  ],
+  "citations": [
+    {
+      "ref": "sp-babinski-reflex",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-upper-motor-neuron-signs",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-upper-motor-neuron-lesion",
+      "section": "Structure and Function"
+    }
+  ]
 }

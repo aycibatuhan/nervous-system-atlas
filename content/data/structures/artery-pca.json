@@ -1,206 +1,170 @@
 {
- "kind": "structure",
- "id": "artery-pca",
- "name": "Posterior cerebral artery",
- "synonyms": [
-  "PCA"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "The terminal branches of the basilar artery. Each posterior cerebral artery curves around the midbrain, sending perforators to the thalamus and midbrain and choroidal branches to the ventricles, then spreads over the inferomedial temporal lobe and the whole occipital lobe including the calcarine cortex. Occlusion gives a contralateral homonymous hemianopia, often with macular sparing, and proximal occlusion adds thalamic and midbrain deficits.",
- "anatomy": {
-  "location": "Arises at the basilar bifurcation in the interpeduncular cistern (P1 segment), receives the posterior communicating artery, runs around the cerebral peduncle in the ambient cistern (P2), passes through the quadrigeminal cistern (P3) and ends in calcarine and parieto-occipital branches on the medial occipital surface (P4).",
-  "subdivisions": [
-   {
-    "name": "P1 (precommunicating)",
-    "note": "thalamoperforating arteries to the medial thalamus and midbrain; medial posterior choroidal artery"
-   },
-   {
-    "name": "P2 (ambient)",
-    "note": "thalamogeniculate arteries to the lateral thalamus, lateral posterior choroidal artery, anterior and posterior temporal branches"
-   },
-   {
-    "name": "P3–P4 (cortical)",
-    "note": "calcarine, parieto-occipital and posterior temporal arteries"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supplies the occipital lobe (primary and association visual cortex), the inferomedial temporal lobe including the hippocampus and parahippocampal gyrus, the splenium of the corpus callosum, the thalamus and the midbrain.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "artery-pcom"
+  "kind": "structure",
+  "id": "artery-pca",
+  "name": "Posterior cerebral artery",
+  "synonyms": [
+    "PCA"
   ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": -22,
-     "z": -8
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The terminal branches of the basilar artery. Each posterior cerebral artery curves around the midbrain, sending perforators to the thalamus and midbrain and choroidal branches to the ventricles, then spreads over the inferomedial temporal lobe and the whole occipital lobe including the calcarine cortex. Occlusion gives a contralateral homonymous hemianopia, often with macular sparing, and proximal occlusion adds thalamic and midbrain deficits.",
+  "anatomy": {
+    "location": "Arises at the basilar bifurcation in the interpeduncular cistern (P1 segment), receives the posterior communicating artery, runs around the cerebral peduncle in the ambient cistern (P2), passes through the quadrigeminal cistern (P3) and ends in calcarine and parieto-occipital branches on the medial occipital surface (P4).",
+    "subdivisions": [
+      {
+        "name": "P1 (precommunicating)",
+        "note": "thalamoperforating arteries to the medial thalamus and midbrain; medial posterior choroidal artery"
+      },
+      {
+        "name": "P2 (ambient)",
+        "note": "thalamogeniculate arteries to the lateral thalamus, lateral posterior choroidal artery, anterior and posterior temporal branches"
+      },
+      {
+        "name": "P3–P4 (cortical)",
+        "note": "calcarine, parieto-occipital and posterior temporal arteries"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supplies the occipital lobe (primary and association visual cortex), the inferomedial temporal lobe including the hippocampus and parahippocampal gyrus, the splenium of the corpus callosum, the thalamus and the midbrain.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "artery-pcom"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": -22,
+          "z": -8
+        },
+        "label": "P2 segment in the ambient cistern lateral to the midbrain"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": -80,
+          "z": 5
+        },
+        "label": "calcarine cortex, the cortical infarct site"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 8,
+          "y": -70,
+          "z": 8
+        },
+        "label": "calcarine sulcus and the medial occipital territory"
+      }
+    ],
+    "normalAppearance": "The P1 and P2 segments are paired flow voids wrapping around the midbrain on axial T2 through the interpeduncular and ambient cisterns. Cortical branches lie in the calcarine and parieto-occipital sulci.",
+    "pathology": [
+      {
+        "pathology": "PCA territory infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the medial occipital lobe and inferomedial temporal lobe; with proximal occlusion the ipsilateral thalamus and cerebral peduncle are included. Bilateral occipital infarcts follow a basilar tip embolus.",
+        "sequence": "DWI",
+        "timing": "DWI within minutes; FLAIR after ~6 h"
+      },
+      {
+        "pathology": "Posterior reversible encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetrical parieto-occipital vasogenic edema that is bright on FLAIR but not restricted on DWI, mimicking bilateral PCA infarcts but reversible.",
+        "sequence": "FLAIR",
+        "pitfalls": "Check ADC: PRES is facilitated diffusion, infarct is restricted"
+      }
+    ],
+    "sequenceOfChoice": "DWI with ADC; CTA of the vertebrobasilar system; cardiac evaluation for embolism"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Homonymous hemianopia, often macular sparing",
+        "side": "contralateral",
+        "mechanism": "Calcarine cortex; the occipital pole has collateral supply from the MCA"
+      },
+      {
+        "deficit": "Alexia without agraphia (dominant)",
+        "side": "n/a",
+        "mechanism": "Left occipital cortex plus the splenium, disconnecting the right visual cortex from the left language areas"
+      },
+      {
+        "deficit": "Prosopagnosia or achromatopsia",
+        "side": "bilateral",
+        "mechanism": "Fusiform and lingual gyri"
+      },
+      {
+        "deficit": "Thalamic sensory loss and pain",
+        "side": "contralateral",
+        "mechanism": "Thalamogeniculate perforators to the ventral posterior nuclei"
+      },
+      {
+        "deficit": "Memory impairment",
+        "side": "contralateral",
+        "mechanism": "Hippocampus and parahippocampal cortex"
+      },
+      {
+        "deficit": "Third nerve palsy with contralateral hemiparesis (Weber) or ataxia (Claude)",
+        "side": "ipsilateral",
+        "mechanism": "P1 perforators to the midbrain"
+      }
+    ],
+    "examination": [
+      "Confrontation fields quadrant by quadrant, checking for macular sparing",
+      "Reading aloud and writing to dictation",
+      "Face recognition and color naming",
+      "Pupils and extraocular movements for a midbrain component"
+    ],
+    "syndromes": [
+      "syn-pca-infarct",
+      "syn-alexia-without-agraphia",
+      "syn-anton",
+      "syn-thalamic-dejerine-roussy",
+      "syn-weber",
+      "syn-claude"
+    ],
+    "pearls": [
+      "A hemianopia without weakness or aphasia is a PCA stroke until proven otherwise",
+      "Macular sparing favors an occipital (PCA) lesion over an optic tract lesion",
+      "Bilateral PCA infarcts cause cortical blindness that the patient may deny (Anton syndrome)"
+    ]
+  },
+  "pitfalls": [
+    "Patients often report 'blurred vision' or bump into things rather than noticing a field cut",
+    "A fetal PCA origin from the carotid changes the embolic source from the heart/vertebrobasilar system to the carotid"
+  ],
+  "citations": [
+    {
+      "ref": "sp-posterior-cerebral-arteries",
+      "section": "Structure and Function"
     },
-    "label": "P2 segment in the ambient cistern lateral to the midbrain"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": -80,
-     "z": 5
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "Pathophysiology"
     },
-    "label": "calcarine cortex, the cortical infarct site"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 8,
-     "y": -70,
-     "z": 8
-    },
-    "label": "calcarine sulcus and the medial occipital territory"
-   }
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The P1 and P2 segments are paired flow voids wrapping around the midbrain on axial T2 through the interpeduncular and ambient cisterns. Cortical branches lie in the calcarine and parieto-occipital sulci.",
-  "pathology": [
-   {
-    "pathology": "PCA territory infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the medial occipital lobe and inferomedial temporal lobe; with proximal occlusion the ipsilateral thalamus and cerebral peduncle are included. Bilateral occipital infarcts follow a basilar tip embolus.",
-    "sequence": "DWI",
-    "timing": "DWI within minutes; FLAIR after ~6 h"
-   },
-   {
-    "pathology": "Posterior reversible encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetrical parieto-occipital vasogenic edema that is bright on FLAIR but not restricted on DWI, mimicking bilateral PCA infarcts but reversible.",
-    "sequence": "FLAIR",
-    "pitfalls": "Check ADC: PRES is facilitated diffusion, infarct is restricted"
-   }
+  "tags": [
+    "vascular",
+    "posterior-circulation"
   ],
-  "sequenceOfChoice": "DWI with ADC; CTA of the vertebrobasilar system; cardiac evaluation for embolism"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Homonymous hemianopia, often macular sparing",
-    "side": "contralateral",
-    "mechanism": "Calcarine cortex; the occipital pole has collateral supply from the MCA"
-   },
-   {
-    "deficit": "Alexia without agraphia (dominant)",
-    "side": "n/a",
-    "mechanism": "Left occipital cortex plus the splenium, disconnecting the right visual cortex from the left language areas"
-   },
-   {
-    "deficit": "Prosopagnosia or achromatopsia",
-    "side": "bilateral",
-    "mechanism": "Fusiform and lingual gyri"
-   },
-   {
-    "deficit": "Thalamic sensory loss and pain",
-    "side": "contralateral",
-    "mechanism": "Thalamogeniculate perforators to the ventral posterior nuclei"
-   },
-   {
-    "deficit": "Memory impairment",
-    "side": "contralateral",
-    "mechanism": "Hippocampus and parahippocampal cortex"
-   },
-   {
-    "deficit": "Third nerve palsy with contralateral hemiparesis (Weber) or ataxia (Claude)",
-    "side": "ipsilateral",
-    "mechanism": "P1 perforators to the midbrain"
-   }
-  ],
-  "examination": [
-   "Confrontation fields quadrant by quadrant, checking for macular sparing",
-   "Reading aloud and writing to dictation",
-   "Face recognition and color naming",
-   "Pupils and extraocular movements for a midbrain component"
-  ],
-  "syndromes": [
-   "syn-pca-infarct",
-   "syn-alexia-without-agraphia",
-   "syn-anton",
-   "syn-thalamic-dejerine-roussy",
-   "syn-weber",
-   "syn-claude"
-  ],
-  "pearls": [
-   "A hemianopia without weakness or aphasia is a PCA stroke until proven otherwise",
-   "Macular sparing favors an occipital (PCA) lesion over an optic tract lesion",
-   "Bilateral PCA infarcts cause cortical blindness that the patient may deny (Anton syndrome)"
-  ]
- },
- "pitfalls": [
-  "Patients often report 'blurred vision' or bump into things rather than noticing a field cut",
-  "A fetal PCA origin from the carotid changes the embolic source from the heart/vertebrobasilar system to the carotid"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    466,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    472,
-    476
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    483
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    57,
-    59
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    49,
-    51
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    180,
-    184
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "posterior-circulation"
- ],
- "status": "draft",
- "latin": "Arteria cerebri posterior",
- "subsystem": "posterior-circulation"
+  "status": "draft",
+  "latin": "Arteria cerebri posterior",
+  "subsystem": "posterior-circulation"
 }

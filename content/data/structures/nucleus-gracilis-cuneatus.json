@@ -1,140 +1,120 @@
 {
- "kind": "structure",
- "id": "nucleus-gracilis-cuneatus",
- "name": "Gracile and cuneate nuclei",
- "synonyms": [
-  "dorsal column nuclei",
-  "nucleus gracilis",
-  "nucleus cuneatus"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The gracile and cuneate nuclei sit in the dorsal lower medulla beneath the gracile and cuneate tubercles and receive the ascending fibers of the posterior columns: the gracile nucleus from the leg and lower trunk (fasciculus gracilis), the cuneate nucleus from the arm and upper trunk (fasciculus cuneatus). Their axons cross as the internal arcuate fibers to form the medial lemniscus. The accessory cuneate nucleus, just lateral, sends unconscious proprioception from the arm to the cerebellum through the inferior cerebellar peduncle.",
- "anatomy": {
-  "location": "Dorsal closed medulla just above the pyramidal decussation, medial (gracile) and lateral (cuneate) to each other under the tubercles that bulge into the caudal floor of the fourth ventricle region; the accessory cuneate nucleus lies lateral to the cuneate nucleus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [
-   {
-    "to": "medial-lemniscus",
-    "via": "internal arcuate fibers"
-   }
+  "kind": "structure",
+  "id": "nucleus-gracilis-cuneatus",
+  "name": "Gracile and cuneate nuclei",
+  "synonyms": [
+    "dorsal column nuclei",
+    "nucleus gracilis",
+    "nucleus cuneatus"
   ],
-  "pathways": [
-   "pathway-dcml"
-  ]
- },
- "function": "Second-order relay of discriminative touch, vibration and conscious proprioception; the site of the somatotopic hand-over from ipsilateral to contralateral representation.",
- "bloodSupply": {
-  "arteries": [
-   "posterior-spinal-arteries",
-   "artery-vertebral"
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "territories": [
-   "territory-pica-lateral-medulla"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -46,
-     "z": -52
+  "summary": "The gracile and cuneate nuclei sit in the dorsal lower medulla beneath the gracile and cuneate tubercles and receive the ascending fibers of the posterior columns: the gracile nucleus from the leg and lower trunk (fasciculus gracilis), the cuneate nucleus from the arm and upper trunk (fasciculus cuneatus). Their axons cross as the internal arcuate fibers to form the medial lemniscus. The accessory cuneate nucleus, just lateral, sends unconscious proprioception from the arm to the cerebellum through the inferior cerebellar peduncle.",
+  "anatomy": {
+    "location": "Dorsal closed medulla just above the pyramidal decussation, medial (gracile) and lateral (cuneate) to each other under the tubercles that bulge into the caudal floor of the fourth ventricle region; the accessory cuneate nucleus lies lateral to the cuneate nucleus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [
+      {
+        "to": "medial-lemniscus",
+        "via": "internal arcuate fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-dcml"
+    ]
+  },
+  "function": "Second-order relay of discriminative touch, vibration and conscious proprioception; the site of the somatotopic hand-over from ipsilateral to contralateral representation.",
+  "bloodSupply": {
+    "arteries": [
+      "posterior-spinal-arteries",
+      "artery-vertebral"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -46,
+          "z": -52
+        },
+        "label": "dorsal closed medulla beneath the gracile and cuneate tubercles"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 3,
+          "y": -46,
+          "z": -52
+        },
+        "label": "dorsal surface of the lower medulla"
+      }
+    ],
+    "normalAppearance": "The tubercles form the posterior surface of the lower medulla on axial T2 and sagittal images; the nuclei themselves are not resolved. Subacute combined degeneration shows T2 hyperintensity of the posterior columns continuing up to this level.",
+    "pathology": [
+      {
+        "pathology": "Dorsal medullary lesion (demyelination, cavernoma)",
+        "modality": "MRI",
+        "finding": "Small dorsal paramedian lesion at the cervicomedullary junction with ipsilateral loss of vibration and position sense.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal and axial T2 of the cervicomedullary junction"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral loss of vibration and proprioception below the level",
+        "side": "ipsilateral",
+        "mechanism": "Fibers and nuclei are still uncrossed"
+      },
+      {
+        "deficit": "Sensory ataxia and pseudoathetosis of the hand",
+        "side": "ipsilateral",
+        "mechanism": "Cuneate nucleus deafferentation"
+      }
+    ],
+    "examination": [
+      "Vibration and joint position sense compared side to side",
+      "Romberg and pseudoathetosis with eyes closed",
+      "Look for a sensory level for these modalities"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "A dorsal lesion at or below these nuclei gives ipsilateral proprioceptive loss; above them the loss is contralateral",
+      "Isolated numb clumsy hand can come from the cuneate fasciculus or nucleus (cervicomedullary demyelination)"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-nucleus-gracilis",
+      "section": "Structure and Function"
     },
-    "label": "dorsal closed medulla beneath the gracile and cuneate tubercles"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 3,
-     "y": -46,
-     "z": -52
+    {
+      "ref": "sp-dorsal-root-ganglion",
+      "section": "Structure and Function"
     },
-    "label": "dorsal surface of the lower medulla"
-   }
+    {
+      "ref": "sp-spinocerebellar-dorsal-tract",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The tubercles form the posterior surface of the lower medulla on axial T2 and sagittal images; the nuclei themselves are not resolved. Subacute combined degeneration shows T2 hyperintensity of the posterior columns continuing up to this level.",
-  "pathology": [
-   {
-    "pathology": "Dorsal medullary lesion (demyelination, cavernoma)",
-    "modality": "MRI",
-    "finding": "Small dorsal paramedian lesion at the cervicomedullary junction with ipsilateral loss of vibration and position sense.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "Sagittal and axial T2 of the cervicomedullary junction"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral loss of vibration and proprioception below the level",
-    "side": "ipsilateral",
-    "mechanism": "Fibers and nuclei are still uncrossed"
-   },
-   {
-    "deficit": "Sensory ataxia and pseudoathetosis of the hand",
-    "side": "ipsilateral",
-    "mechanism": "Cuneate nucleus deafferentation"
-   }
-  ],
-  "examination": [
-   "Vibration and joint position sense compared side to side",
-   "Romberg and pseudoathetosis with eyes closed",
-   "Look for a sensory level for these modalities"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "A dorsal lesion at or below these nuclei gives ipsilateral proprioceptive loss; above them the loss is contralateral",
-   "Isolated numb clumsy hand can come from the cuneate fasciculus or nucleus (cervicomedullary demyelination)"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    198,
-    200
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    147,
-    149
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    77
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    36,
-    38
-   ]
+  "status": "draft",
+  "subsystem": "medulla",
+  "level": {
+    "region": "medulla"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "subsystem": "medulla",
- "level": {
-  "region": "medulla"
- }
 }

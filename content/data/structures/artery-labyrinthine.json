@@ -1,148 +1,136 @@
 {
- "kind": "structure",
- "id": "artery-labyrinthine",
- "name": "Labyrinthine (internal auditory) artery",
- "synonyms": [
-  "internal auditory artery"
- ],
- "system": "arteries",
- "meshIds": [
-  "artery-aica"
- ],
- "summary": "The labyrinthine artery is a long, thin end artery, usually a branch of the anterior inferior cerebellar artery and occasionally of the basilar, which enters the internal acoustic meatus with the facial and vestibulocochlear nerves and divides into the cochlear and vestibular branches that supply the inner ear. The cochlea and the labyrinth have no collateral supply, so occlusion, embolism or vasospasm produces sudden unilateral deafness with vertigo, and because the artery arises from AICA, the same event often infarcts the lateral pons and the anterior inferior cerebellum. Sudden hearing loss in a patient with vascular risk factors, or hearing loss accompanying vertigo, should therefore be treated as a posterior circulation event until imaging proves otherwise.",
- "anatomy": {
-  "location": "Arises from the AICA (about 85%) or directly from the basilar artery in the cerebellopontine angle, runs laterally with the seventh and eighth nerves into the internal acoustic meatus, and divides within the meatus into the anterior vestibular artery, the common cochlear artery and its vestibulocochlear branch.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [
-   {
-    "to": "Cochlea, vestibular labyrinth, nerves of the internal acoustic meatus"
-   }
+  "kind": "structure",
+  "id": "artery-labyrinthine",
+  "name": "Labyrinthine (internal auditory) artery",
+  "synonyms": [
+    "internal auditory artery"
   ],
-  "pathways": []
- },
- "function": "Supplies the cochlea (through the spiral modiolar artery), the vestibular labyrinth (saccule, utricle and the semicircular canals) and the nerves within the meatus; the anterior vestibular artery supplies the utricle and the superior and horizontal canals, the posterior vestibular branch the saccule and posterior canal, a division that explains partial syndromes such as isolated utricular or canal ischemia. Its stria vascularis territory maintains the endocochlear potential required for hair cell transduction.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aica",
-   "artery-basilar"
+  "system": "arteries",
+  "meshIds": [
+    "artery-aica"
   ],
-  "territories": [
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": -40,
-     "y": -35,
-     "z": -30
-    },
-    "label": "internal acoustic meatus and cerebellopontine angle"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": -40,
-     "y": -35,
-     "z": -30
-    },
-    "label": "seventh and eighth nerves with the labyrinthine artery entering the meatus"
-   }
-  ],
-  "normalAppearance": "Too small to see on routine MRA; the AICA loop in the cerebellopontine angle and sometimes entering the meatus is visible on high-resolution T2 (CISS/FIESTA) and is a normal finding. The inner ear itself shows as bright fluid signal in the cochlea and canals.",
-  "pathology": [
-   {
-    "pathology": "Labyrinthine infarction",
-    "modality": "MRI",
-    "finding": "Loss of the normal bright fluid signal or abnormal enhancement of the cochlea and vestibule on delayed post-contrast 3D-FLAIR, often with an AICA territory infarct in the lateral pons and cerebellum on DWI.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "AICA occlusion",
-    "modality": "CTA",
-    "finding": "Absent AICA or basilar atheroma at its origin in a patient with sudden deafness and vertigo."
-   },
-   {
-    "pathology": "Vascular loop compression",
-    "modality": "MRI",
-    "finding": "AICA loop deep within the meatus contacting the eighth nerve, of debated relevance to tinnitus and vertigo.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Sudden unilateral sensorineural deafness",
-    "side": "ipsilateral",
-    "mechanism": "Cochlear ischemia (end artery, no collaterals)"
-   },
-   {
-    "deficit": "Acute vertigo with nystagmus and vomiting",
-    "side": "ipsilateral",
-    "mechanism": "Labyrinthine ischemia, with or without cochlear involvement"
-   },
-   {
-    "deficit": "Lateral pontine syndrome",
-    "side": "ipsilateral",
-    "mechanism": "Associated AICA occlusion: facial palsy, facial sensory loss, ataxia, Horner"
-   }
-  ],
-  "examination": [
-   "Weber and Rinne tests; sudden sensorineural loss is an emergency",
-   "Head impulse test and nystagmus; look for the other AICA signs (facial weakness, corneal reflex, limb ataxia)",
-   "Vascular risk factor review and posterior circulation imaging in sudden deafness with vertigo"
-  ],
-  "syndromes": [
-   "syn-aica-lateral-pontine",
-   "syn-hearing-loss",
-   "syn-vestibular-neuritis"
-  ],
-  "pearls": [
-   "Hearing loss with vertigo is the signature of the labyrinthine artery and therefore of AICA; the PICA syndrome spares hearing",
-   "The artery is an end artery: the cochlea dies within minutes of occlusion, and steroids are the only treatment for the idiopathic form",
-   "An AICA loop in the meatus is a common normal finding on MRI"
-  ]
- },
- "pitfalls": [
-  "Isolated labyrinthine infarction has a normal brain MRI; the diagnosis rests on the clinical context and inner ear imaging"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    466,
-    466
-   ]
+  "summary": "The labyrinthine artery is a long, thin end artery, usually a branch of the anterior inferior cerebellar artery and occasionally of the basilar, which enters the internal acoustic meatus with the facial and vestibulocochlear nerves and divides into the cochlear and vestibular branches that supply the inner ear. The cochlea and the labyrinth have no collateral supply, so occlusion, embolism or vasospasm produces sudden unilateral deafness with vertigo, and because the artery arises from AICA, the same event often infarcts the lateral pons and the anterior inferior cerebellum. Sudden hearing loss in a patient with vascular risk factors, or hearing loss accompanying vertigo, should therefore be treated as a posterior circulation event until imaging proves otherwise.",
+  "anatomy": {
+    "location": "Arises from the AICA (about 85%) or directly from the basilar artery in the cerebellopontine angle, runs laterally with the seventh and eighth nerves into the internal acoustic meatus, and divides within the meatus into the anterior vestibular artery, the common cochlear artery and its vestibulocochlear branch.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    463,
-    486
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [
+      {
+        "to": "Cochlea, vestibular labyrinth, nerves of the internal acoustic meatus"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    106,
-    106
-   ]
-  }
- ],
- "tags": [
-  "end artery",
-  "inner ear"
- ],
- "status": "draft",
- "subsystem": "vertebrobasilar",
- "parent": "artery-aica"
+  "function": "Supplies the cochlea (through the spiral modiolar artery), the vestibular labyrinth (saccule, utricle and the semicircular canals) and the nerves within the meatus; the anterior vestibular artery supplies the utricle and the superior and horizontal canals, the posterior vestibular branch the saccule and posterior canal, a division that explains partial syndromes such as isolated utricular or canal ischemia. Its stria vascularis territory maintains the endocochlear potential required for hair cell transduction.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aica",
+      "artery-basilar"
+    ],
+    "territories": [
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": -40,
+          "y": -35,
+          "z": -30
+        },
+        "label": "internal acoustic meatus and cerebellopontine angle"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": -40,
+          "y": -35,
+          "z": -30
+        },
+        "label": "seventh and eighth nerves with the labyrinthine artery entering the meatus"
+      }
+    ],
+    "normalAppearance": "Too small to see on routine MRA; the AICA loop in the cerebellopontine angle and sometimes entering the meatus is visible on high-resolution T2 (CISS/FIESTA) and is a normal finding. The inner ear itself shows as bright fluid signal in the cochlea and canals.",
+    "pathology": [
+      {
+        "pathology": "Labyrinthine infarction",
+        "modality": "MRI",
+        "finding": "Loss of the normal bright fluid signal or abnormal enhancement of the cochlea and vestibule on delayed post-contrast 3D-FLAIR, often with an AICA territory infarct in the lateral pons and cerebellum on DWI.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "AICA occlusion",
+        "modality": "CTA",
+        "finding": "Absent AICA or basilar atheroma at its origin in a patient with sudden deafness and vertigo."
+      },
+      {
+        "pathology": "Vascular loop compression",
+        "modality": "MRI",
+        "finding": "AICA loop deep within the meatus contacting the eighth nerve, of debated relevance to tinnitus and vertigo.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Sudden unilateral sensorineural deafness",
+        "side": "ipsilateral",
+        "mechanism": "Cochlear ischemia (end artery, no collaterals)"
+      },
+      {
+        "deficit": "Acute vertigo with nystagmus and vomiting",
+        "side": "ipsilateral",
+        "mechanism": "Labyrinthine ischemia, with or without cochlear involvement"
+      },
+      {
+        "deficit": "Lateral pontine syndrome",
+        "side": "ipsilateral",
+        "mechanism": "Associated AICA occlusion: facial palsy, facial sensory loss, ataxia, Horner"
+      }
+    ],
+    "examination": [
+      "Weber and Rinne tests; sudden sensorineural loss is an emergency",
+      "Head impulse test and nystagmus; look for the other AICA signs (facial weakness, corneal reflex, limb ataxia)",
+      "Vascular risk factor review and posterior circulation imaging in sudden deafness with vertigo"
+    ],
+    "syndromes": [
+      "syn-aica-lateral-pontine",
+      "syn-hearing-loss",
+      "syn-vestibular-neuritis"
+    ],
+    "pearls": [
+      "Hearing loss with vertigo is the signature of the labyrinthine artery and therefore of AICA; the PICA syndrome spares hearing",
+      "The artery is an end artery: the cochlea dies within minutes of occlusion, and steroids are the only treatment for the idiopathic form",
+      "An AICA loop in the meatus is a common normal finding on MRI"
+    ]
+  },
+  "pitfalls": [
+    "Isolated labyrinthine infarction has a normal brain MRI; the diagnosis rests on the clinical context and inner ear imaging"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anterior-inferior-cerebellar-arteries",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-inner-ear",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-vertebrobasilar-system",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "end artery",
+    "inner ear"
+  ],
+  "status": "draft",
+  "subsystem": "vertebrobasilar",
+  "parent": "artery-aica"
 }

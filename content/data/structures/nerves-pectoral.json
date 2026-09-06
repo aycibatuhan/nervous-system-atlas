@@ -1,133 +1,129 @@
 {
- "kind": "structure",
- "id": "nerves-pectoral",
- "name": "Medial and lateral pectoral nerves",
- "synonyms": [
-  "anterior thoracic nerves"
- ],
- "system": "peripheral",
- "meshIds": [
-  "pectoral-nerves-l",
-  "pectoral-nerves-r"
- ],
- "summary": "The lateral pectoral nerve (C5-C7) from the lateral cord and the medial pectoral nerve (C8-T1) from the medial cord cross the axilla to supply the pectoralis major and minor, the lateral nerve the clavicular and upper sternal parts of the major and the medial nerve the lower sternal part and the minor; they are named for the cords they arise from, not for their positions. They are the motor markers of the cords in plexus lesions, they are injured in breast and axillary surgery and by the pectoralis minor in thoracic outlet syndromes, and the pectoral reflex and the palpable contraction of the muscle during adduction give a bedside test of the C5-T1 roots.",
- "anatomy": {
-  "location": "The lateral pectoral nerve leaves the lateral cord, crosses the axillary artery and pierces the clavipectoral fascia to enter the deep surface of the pectoralis major; the medial pectoral nerve leaves the medial cord behind the axillary artery, passes through or around the pectoralis minor, supplying it, and ends in the lower pectoralis major; a loop between the two nerves crosses the artery.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Motor to the pectoralis major (adduction, medial rotation and flexion of the arm, with the clavicular head flexing and the sternal head adducting) and the pectoralis minor (depression and protraction of the scapula), they let the arm be pressed against the chest and the body be pushed up from a chair; their two-cord origin makes the pectoralis major a map of the plexus, with clavicular-head weakness indicating the upper roots and lateral cord and sternal-head weakness the lower roots and medial cord. The pectoral reflex, elicited by tapping the tendon with the arm abducted, tests C5-T1 and is brisk in cervical myelopathy. The nerves are divided in radical mastectomy and can be used as donors for nerve transfer.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerves-pectoral",
+  "name": "Medial and lateral pectoral nerves",
+  "synonyms": [
+    "anterior thoracic nerves"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "pectoral-nerves-l"
-    },
-    "label": "pectoral nerves crossing the axilla to the pectoralis major and minor"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "pectoral-nerves-r"
-    },
-    "label": "medial and lateral pectoral nerves around the axillary artery"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "pectoral-nerves-l",
+    "pectoral-nerves-r"
   ],
-  "normalAppearance": "Nerves crossing the axillary artery beneath the clavipectoral fascia on ultrasound; pectoralis denervation shows as STIR change and atrophy, and pectoralis major atrophy is visible on chest CT.",
-  "pathology": [
-   {
-    "pathology": "Lateral or medial cord plexopathy",
-    "modality": "EMG/NCS",
-    "finding": "Denervation of the clavicular head (lateral cord, with musculocutaneous and median signs) or the sternal head (medial cord, with ulnar signs) of the pectoralis major.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Post-mastectomy pectoral denervation",
-    "modality": "MRI",
-    "finding": "Atrophy of the pectoralis major after axillary surgery with weak adduction and a hollow infraclavicular region.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Pectoralis minor syndrome",
-    "modality": "US",
-    "finding": "Compression of the neurovascular bundle beneath a tight pectoralis minor with pain and paresthesias reproduced by arm elevation; the pectoral nerves themselves are usually spared.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weak adduction of the arm across the chest",
-    "side": "ipsilateral",
-    "mechanism": "Denervation of the pectoralis major"
-   },
-   {
-    "deficit": "Pattern of pectoral weakness marks the cord",
-    "side": "ipsilateral",
-    "mechanism": "Clavicular head from the lateral cord, sternal head from the medial cord"
-   },
-   {
-    "deficit": "Brisk pectoral reflex",
-    "side": "bilateral",
-    "mechanism": "Cervical myelopathy above C5 with upper motor neuron signs"
-   }
-  ],
-  "examination": [
-   "Have the patient press the palms together and palpate both heads of the pectoralis major",
-   "Pectoral reflex with the arm partly abducted",
-   "EMG of the two heads separately in plexus lesions"
-  ],
-  "syndromes": [
-   "syn-neurogenic-thoracic-outlet",
-   "syn-cervical-spondylotic-myelopathy",
-   "syn-klumpke"
-  ],
-  "pearls": [
-   "The pectoralis major reads the plexus: clavicular head high roots, sternal head low roots",
-   "A brisk pectoral jerk is an early sign of cervical cord compression",
-   "Named for their cords, not their sides: the medial pectoral nerve lies lateral to the lateral one at first"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The lateral pectoral nerve (C5-C7) from the lateral cord and the medial pectoral nerve (C8-T1) from the medial cord cross the axilla to supply the pectoralis major and minor, the lateral nerve the clavicular and upper sternal parts of the major and the medial nerve the lower sternal part and the minor; they are named for the cords they arise from, not for their positions. They are the motor markers of the cords in plexus lesions, they are injured in breast and axillary surgery and by the pectoralis minor in thoracic outlet syndromes, and the pectoral reflex and the palpable contraction of the muscle during adduction give a bedside test of the C5-T1 roots.",
+  "anatomy": {
+    "location": "The lateral pectoral nerve leaves the lateral cord, crosses the axillary artery and pierces the clavipectoral fascia to enter the deep surface of the pectoralis major; the medial pectoral nerve leaves the medial cord behind the axillary artery, passes through or around the pectoralis minor, supplying it, and ends in the lower pectoralis major; a loop between the two nerves crosses the artery.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Motor to the pectoralis major (adduction, medial rotation and flexion of the arm, with the clavicular head flexing and the sternal head adducting) and the pectoralis minor (depression and protraction of the scapula), they let the arm be pressed against the chest and the body be pushed up from a chair; their two-cord origin makes the pectoralis major a map of the plexus, with clavicular-head weakness indicating the upper roots and lateral cord and sternal-head weakness the lower roots and medial cord. The pectoral reflex, elicited by tapping the tendon with the arm abducted, tests C5-T1 and is brisk in cervical myelopathy. The nerves are divided in radical mastectomy and can be used as donors for nerve transfer.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "pectoral-nerves-l"
+        },
+        "label": "pectoral nerves crossing the axilla to the pectoralis major and minor"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "pectoral-nerves-r"
+        },
+        "label": "medial and lateral pectoral nerves around the axillary artery"
+      }
+    ],
+    "normalAppearance": "Nerves crossing the axillary artery beneath the clavipectoral fascia on ultrasound; pectoralis denervation shows as STIR change and atrophy, and pectoralis major atrophy is visible on chest CT.",
+    "pathology": [
+      {
+        "pathology": "Lateral or medial cord plexopathy",
+        "modality": "EMG/NCS",
+        "finding": "Denervation of the clavicular head (lateral cord, with musculocutaneous and median signs) or the sternal head (medial cord, with ulnar signs) of the pectoralis major.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Post-mastectomy pectoral denervation",
+        "modality": "MRI",
+        "finding": "Atrophy of the pectoralis major after axillary surgery with weak adduction and a hollow infraclavicular region.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Pectoralis minor syndrome",
+        "modality": "US",
+        "finding": "Compression of the neurovascular bundle beneath a tight pectoralis minor with pain and paresthesias reproduced by arm elevation; the pectoral nerves themselves are usually spared.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak adduction of the arm across the chest",
+        "side": "ipsilateral",
+        "mechanism": "Denervation of the pectoralis major"
+      },
+      {
+        "deficit": "Pattern of pectoral weakness marks the cord",
+        "side": "ipsilateral",
+        "mechanism": "Clavicular head from the lateral cord, sternal head from the medial cord"
+      },
+      {
+        "deficit": "Brisk pectoral reflex",
+        "side": "bilateral",
+        "mechanism": "Cervical myelopathy above C5 with upper motor neuron signs"
+      }
+    ],
+    "examination": [
+      "Have the patient press the palms together and palpate both heads of the pectoralis major",
+      "Pectoral reflex with the arm partly abducted",
+      "EMG of the two heads separately in plexus lesions"
+    ],
+    "syndromes": [
+      "syn-neurogenic-thoracic-outlet",
+      "syn-cervical-spondylotic-myelopathy",
+      "syn-klumpke"
+    ],
+    "pearls": [
+      "The pectoralis major reads the plexus: clavicular head high roots, sternal head low roots",
+      "A brisk pectoral jerk is an early sign of cervical cord compression",
+      "Named for their cords, not their sides: the medial pectoral nerve lies lateral to the lateral one at first"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-medial-pectoral-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-brachial-plexus-2",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-pectoral-muscles",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C5-T1"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C5-T1"
- }
 }

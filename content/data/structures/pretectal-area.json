@@ -1,169 +1,141 @@
 {
- "kind": "structure",
- "id": "pretectal-area",
- "name": "Pretectal area",
- "synonyms": [
-  "pretectal nuclei",
-  "olivary pretectal nucleus"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "A group of small nuclei at the junction of the midbrain and diencephalon, just in front of the superior colliculus and beside the posterior commissure. They are the central relay of the pupillary light reflex: each receives retinal fibers from both eyes via the optic tract and brachium of the superior colliculus and projects to both Edinger–Westphal nuclei, partly through the posterior commissure. This bilateral wiring is why light in one eye constricts both pupils and why a pretectal lesion produces light-near dissociation rather than blindness.",
- "anatomy": {
-  "location": "Rostral to the superior colliculus at the level of the posterior commissure, lateral to the aqueduct's upper end, between the tectum and the pulvinar.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "optic tract (both eyes)",
-    "via": "brachium of the superior colliculus"
-   }
+  "kind": "structure",
+  "id": "pretectal-area",
+  "name": "Pretectal area",
+  "synonyms": [
+    "pretectal nuclei",
+    "olivary pretectal nucleus"
   ],
-  "efferents": [
-   {
-    "to": "oculomotor-nucleus (Edinger–Westphal, both sides)",
-    "via": "posterior commissure"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-pupillary-light-reflex",
-   "pathway-vertical-gaze"
-  ]
- },
- "function": "Afferent center of the pupillary light reflex; contributes to the accommodation reflex and to vertical gaze through the posterior commissure and interstitial nucleus of Cajal.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "arteries-thalamoperforating"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -28,
-     "z": 0
+  "summary": "A group of small nuclei at the junction of the midbrain and diencephalon, just in front of the superior colliculus and beside the posterior commissure. They are the central relay of the pupillary light reflex: each receives retinal fibers from both eyes via the optic tract and brachium of the superior colliculus and projects to both Edinger–Westphal nuclei, partly through the posterior commissure. This bilateral wiring is why light in one eye constricts both pupils and why a pretectal lesion produces light-near dissociation rather than blindness.",
+  "anatomy": {
+    "location": "Rostral to the superior colliculus at the level of the posterior commissure, lateral to the aqueduct's upper end, between the tectum and the pulvinar.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "optic tract (both eyes)",
+        "via": "brachium of the superior colliculus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "oculomotor-nucleus (Edinger–Westphal, both sides)",
+        "via": "posterior commissure"
+      }
+    ],
+    "pathways": [
+      "pathway-pupillary-light-reflex",
+      "pathway-vertical-gaze"
+    ]
+  },
+  "function": "Afferent center of the pupillary light reflex; contributes to the accommodation reflex and to vertical gaze through the posterior commissure and interstitial nucleus of Cajal.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -28,
+          "z": 0
+        },
+        "label": "junction of the tectum and thalamus at the posterior commissure"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -28,
+          "z": 0
+        },
+        "label": "rostral to the superior colliculus beneath the pineal"
+      }
+    ],
+    "normalAppearance": "Not resolved on routine MRI; the region is the dorsal midbrain–diencephalic junction just below the pineal and behind the third ventricle.",
+    "pathology": [
+      {
+        "pathology": "Dorsal midbrain (Parinaud) syndrome",
+        "modality": "MRI",
+        "finding": "Pineal tumor, tectal glioma, hydrocephalus or infarct compressing or involving the posterior commissure and pretectum.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Argyll Robertson pupils",
+        "modality": "MRI",
+        "finding": "Imaging usually normal; the lesion is in the pretectal light-reflex fibers (classically neurosyphilis).",
+        "sequence": "n/a"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal and axial T2 of the pineal region; serology for syphilis when pupils dissociate"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Light-near dissociation: pupils react to near but not to light",
+        "side": "bilateral",
+        "mechanism": "Interruption of the light reflex arc while the near reflex reaches Edinger–Westphal by a more ventral route"
+      },
+      {
+        "deficit": "Bilateral mid-dilated pupils with poor light reaction plus up-gaze palsy",
+        "side": "bilateral",
+        "mechanism": "Pretectum and posterior commissure (Parinaud)"
+      },
+      {
+        "deficit": "Relative afferent pupillary defect is NOT produced",
+        "side": "n/a",
+        "mechanism": "Lesions here are usually bilateral; RAPD needs an asymmetric afferent lesion in front of the pretectum"
+      }
+    ],
+    "examination": [
+      "Pupil reaction to light then to a near target",
+      "Up-gaze and convergence-retraction nystagmus",
+      "Swinging flashlight test to exclude an afferent (optic nerve) cause"
+    ],
+    "syndromes": [
+      "syn-parinaud-dorsal-midbrain",
+      "syn-argyll-robertson",
+      "syn-rapd"
+    ],
+    "pearls": [
+      "Light-near dissociation localizes to the pretectum or the ciliary ganglion; up-gaze palsy alongside it makes it the dorsal midbrain",
+      "Argyll Robertson pupils are small and irregular; Adie pupils are large and slow"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pupillary-light-reflexes-and-pathway",
+      "section": "Structure and Function"
     },
-    "label": "junction of the tectum and thalamus at the posterior commissure"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -28,
-     "z": 0
+    {
+      "ref": "sp-pupillary-light-reflex",
+      "section": "Introduction"
     },
-    "label": "rostral to the superior colliculus beneath the pineal"
-   }
+    {
+      "ref": "sp-edinger-westphal-nucleus",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not resolved on routine MRI; the region is the dorsal midbrain–diencephalic junction just below the pineal and behind the third ventricle.",
-  "pathology": [
-   {
-    "pathology": "Dorsal midbrain (Parinaud) syndrome",
-    "modality": "MRI",
-    "finding": "Pineal tumor, tectal glioma, hydrocephalus or infarct compressing or involving the posterior commissure and pretectum.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Argyll Robertson pupils",
-    "modality": "MRI",
-    "finding": "Imaging usually normal; the lesion is in the pretectal light-reflex fibers (classically neurosyphilis).",
-    "sequence": "n/a"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "Sagittal and axial T2 of the pineal region; serology for syphilis when pupils dissociate"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Light-near dissociation: pupils react to near but not to light",
-    "side": "bilateral",
-    "mechanism": "Interruption of the light reflex arc while the near reflex reaches Edinger–Westphal by a more ventral route"
-   },
-   {
-    "deficit": "Bilateral mid-dilated pupils with poor light reaction plus up-gaze palsy",
-    "side": "bilateral",
-    "mechanism": "Pretectum and posterior commissure (Parinaud)"
-   },
-   {
-    "deficit": "Relative afferent pupillary defect is NOT produced",
-    "side": "n/a",
-    "mechanism": "Lesions here are usually bilateral; RAPD needs an asymmetric afferent lesion in front of the pretectum"
-   }
-  ],
-  "examination": [
-   "Pupil reaction to light then to a near target",
-   "Up-gaze and convergence-retraction nystagmus",
-   "Swinging flashlight test to exclude an afferent (optic nerve) cause"
-  ],
-  "syndromes": [
-   "syn-parinaud-dorsal-midbrain",
-   "syn-argyll-robertson",
-   "syn-rapd"
-  ],
-  "pearls": [
-   "Light-near dissociation localizes to the pretectum or the ciliary ganglion; up-gaze palsy alongside it makes it the dorsal midbrain",
-   "Argyll Robertson pupils are small and irregular; Adie pupils are large and slow"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    329,
-    331
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    408,
-    408
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    83,
-    85
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    90,
-    90
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    98,
-    100
-   ]
+  "status": "draft",
+  "latin": "Area pretectalis",
+  "subsystem": "midbrain",
+  "level": {
+    "region": "midbrain"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Area pretectalis",
- "subsystem": "midbrain",
- "level": {
-  "region": "midbrain"
- }
 }

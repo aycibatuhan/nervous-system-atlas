@@ -1,178 +1,157 @@
 {
- "kind": "structure",
- "id": "gyrus-occipital-fusiform",
- "name": "Occipital fusiform gyrus",
- "synonyms": [
-  "posterior fusiform gyrus",
-  "ventral V4"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-occipital-fusiform-l",
-  "gyrus-occipital-fusiform-r"
- ],
- "summary": "The occipital fusiform gyrus is the posterior end of the fusiform gyrus on the inferior surface of the occipital lobe, between the collateral sulcus and the lingual gyrus medially and the inferior lateral occipital cortex laterally, behind the temporo-occipital fusiform cortex. It is ventral extrastriate cortex (parts of V2, V3, V4 and the posterior lateral occipital complex) that represents the contralateral upper field and begins the analysis of color, texture and shape that the fusiform recognition areas complete. It is supplied by the posterior cerebral artery, and its lesions add hemiachromatopsia and apperceptive agnosia to a superior quadrantanopia; bilateral lesions give achromatopsia and visual form agnosia.",
- "anatomy": {
-  "location": "Inferior occipital surface behind the temporo-occipital junction, between the collateral sulcus medially and the lateral occipital sulcus laterally, above the tentorium and below the calcarine cortex.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Primary and secondary visual cortex",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Contralateral ventral occipital cortex",
-    "via": "splenium"
-   }
+  "kind": "structure",
+  "id": "gyrus-occipital-fusiform",
+  "name": "Occipital fusiform gyrus",
+  "synonyms": [
+    "posterior fusiform gyrus",
+    "ventral V4"
   ],
-  "efferents": [
-   {
-    "to": "Temporo-occipital and temporal fusiform cortex",
-    "via": "inferior longitudinal fasciculus"
-   },
-   {
-    "to": "Inferior lateral occipital cortex",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Lateral geniculate nucleus",
-    "via": "corticogeniculate feedback"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-occipital-fusiform-l",
+    "gyrus-occipital-fusiform-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "The occipital fusiform cortex contains retinotopic ventral visual areas that compute color constancy, surface texture and the curvature of contours, integrating them into the shape descriptions used by the face, word and object areas of the fusiform gyrus in front; the contralateral upper visual field is represented, with the vertical meridian at its lateral border. It projects along the inferior longitudinal fasciculus and receives feedback from the parietal and frontal attention systems. Lesions produce loss of color and shape perception in the contralateral upper field and, with extension medially, a quadrantanopia; seizures here produce colored auras in the upper field.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca"
+  "summary": "The occipital fusiform gyrus is the posterior end of the fusiform gyrus on the inferior surface of the occipital lobe, between the collateral sulcus and the lingual gyrus medially and the inferior lateral occipital cortex laterally, behind the temporo-occipital fusiform cortex. It is ventral extrastriate cortex (parts of V2, V3, V4 and the posterior lateral occipital complex) that represents the contralateral upper field and begins the analysis of color, texture and shape that the fusiform recognition areas complete. It is supplied by the posterior cerebral artery, and its lesions add hemiachromatopsia and apperceptive agnosia to a superior quadrantanopia; bilateral lesions give achromatopsia and visual form agnosia.",
+  "anatomy": {
+    "location": "Inferior occipital surface behind the temporo-occipital junction, between the collateral sulcus medially and the lateral occipital sulcus laterally, above the tentorium and below the calcarine cortex.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Primary and secondary visual cortex",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Contralateral ventral occipital cortex",
+        "via": "splenium"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Temporo-occipital and temporal fusiform cortex",
+        "via": "inferior longitudinal fasciculus"
+      },
+      {
+        "to": "Inferior lateral occipital cortex",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Lateral geniculate nucleus",
+        "via": "corticogeniculate feedback"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "The occipital fusiform cortex contains retinotopic ventral visual areas that compute color constancy, surface texture and the curvature of contours, integrating them into the shape descriptions used by the face, word and object areas of the fusiform gyrus in front; the contralateral upper visual field is represented, with the vertical meridian at its lateral border. It projects along the inferior longitudinal fasciculus and receives feedback from the parietal and frontal attention systems. Lesions produce loss of color and shape perception in the contralateral upper field and, with extension medially, a quadrantanopia; seizures here produce colored auras in the upper field.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-occipital-fusiform-l"
+        },
+        "label": "occipital fusiform gyrus on the inferior occipital surface"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-occipital-fusiform-r"
+        },
+        "label": "ventral occipital cortex lateral to the lingual gyrus"
+      }
+    ],
+    "normalAppearance": "The gyrus on the inferior occipital surface lateral to the collateral sulcus on coronal images behind the atrium, above the tentorial surface and below the level of the calcarine sulcus.",
+    "pathology": [
+      {
+        "pathology": "PCA infarct with hemiachromatopsia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the inferior occipital cortex with loss of color vision in the contralateral hemifield and an upper quadrant defect.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cerebral achromatopsia",
+        "modality": "MRI",
+        "finding": "Bilateral ventral occipital lesions with complete loss of color vision, the world seen in gray; usually with prosopagnosia and upper field defects.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Tentorial meningioma",
+        "modality": "MRI",
+        "finding": "Dural enhancing mass on the tentorium indenting the inferior occipital surface with visual field loss and seizures.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral hemiachromatopsia",
+        "side": "contralateral",
+        "mechanism": "Loss of the ventral V4 color-constancy cortex"
+      },
+      {
+        "deficit": "Contralateral superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Involvement of the lower calcarine bank or the ventral retinotopic areas"
+      },
+      {
+        "deficit": "Apperceptive agnosia when bilateral",
+        "side": "bilateral",
+        "mechanism": "Loss of ventral form processing on both sides"
+      }
+    ],
+    "examination": [
+      "Color plates presented separately to each hemifield",
+      "Upper quadrant fields",
+      "Shape copying and matching"
+    ],
+    "syndromes": [
+      "syn-pca-infarct",
+      "syn-homonymous-hemianopia"
+    ],
+    "pearls": [
+      "Color is processed on the underside of the occipital lobe; a tentorial tumor can present with washed-out color on one side",
+      "Achromatopsia is cortical color blindness with normal cones and normal acuity",
+      "Upper field defects plus color loss point below the calcarine sulcus"
+    ]
+  },
+  "pitfalls": [
+    "Hemiachromatopsia is unrecognized unless colors are tested by hemifield; standard testing at fixation misses it"
   ],
-  "territories": [
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-occipital-fusiform-l"
+  "citations": [
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
     },
-    "label": "occipital fusiform gyrus on the inferior occipital surface"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-occipital-fusiform-r"
+    {
+      "ref": "sp-vision",
+      "section": "Introduction"
     },
-    "label": "ventral occipital cortex lateral to the lingual gyrus"
-   }
+    {
+      "ref": "sp-prosopagnosia"
+    }
   ],
-  "normalAppearance": "The gyrus on the inferior occipital surface lateral to the collateral sulcus on coronal images behind the atrium, above the tentorial surface and below the level of the calcarine sulcus.",
-  "pathology": [
-   {
-    "pathology": "PCA infarct with hemiachromatopsia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the inferior occipital cortex with loss of color vision in the contralateral hemifield and an upper quadrant defect.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cerebral achromatopsia",
-    "modality": "MRI",
-    "finding": "Bilateral ventral occipital lesions with complete loss of color vision, the world seen in gray; usually with prosopagnosia and upper field defects.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Tentorial meningioma",
-    "modality": "MRI",
-    "finding": "Dural enhancing mass on the tentorium indenting the inferior occipital surface with visual field loss and seizures.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral hemiachromatopsia",
-    "side": "contralateral",
-    "mechanism": "Loss of the ventral V4 color-constancy cortex"
-   },
-   {
-    "deficit": "Contralateral superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Involvement of the lower calcarine bank or the ventral retinotopic areas"
-   },
-   {
-    "deficit": "Apperceptive agnosia when bilateral",
-    "side": "bilateral",
-    "mechanism": "Loss of ventral form processing on both sides"
-   }
+  "tags": [
+    "V4",
+    "color",
+    "ventral stream"
   ],
-  "examination": [
-   "Color plates presented separately to each hemifield",
-   "Upper quadrant fields",
-   "Shape copying and matching"
-  ],
-  "syndromes": [
-   "syn-pca-infarct",
-   "syn-homonymous-hemianopia"
-  ],
-  "pearls": [
-   "Color is processed on the underside of the occipital lobe; a tentorial tumor can present with washed-out color on one side",
-   "Achromatopsia is cortical color blindness with normal cones and normal acuity",
-   "Upper field defects plus color loss point below the calcarine sulcus"
-  ]
- },
- "pitfalls": [
-  "Hemiachromatopsia is unrecognized unless colors are tested by hemifield; standard testing at fixation misses it"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "tags": [
-  "V4",
-  "color",
-  "ventral stream"
- ],
- "status": "draft",
- "subsystem": "lobe-occipital",
- "parent": "lobe-occipital"
+  "status": "draft",
+  "subsystem": "lobe-occipital",
+  "parent": "lobe-occipital"
 }

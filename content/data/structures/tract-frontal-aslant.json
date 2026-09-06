@@ -1,164 +1,144 @@
 {
- "kind": "structure",
- "id": "tract-frontal-aslant",
- "name": "Frontal aslant tract",
- "synonyms": [
-  "FAT",
-  "SMA-inferior frontal connection"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-frontal-aslant-l",
-  "tract-frontal-aslant-r"
- ],
- "summary": "The frontal aslant tract is an oblique bundle within the frontal lobe that connects the supplementary motor area and the pre-supplementary motor area on the medial surface with the pars opercularis of the inferior frontal gyrus on the lateral surface, running downward and laterally through the white matter of the superior and middle frontal gyri. It is the pathway of speech initiation and of the control of action: on the left it links the medial frontal drive to speak with the lateral articulatory area, and its lesions produce reduced spontaneous speech, stuttering and mutism; on both sides it participates in stopping actions and in the executive control of movement. It is damaged in medial frontal surgery, in ACA-MCA watershed infarcts and in the non-fluent variant of primary progressive aphasia.",
- "anatomy": {
-  "location": "From the supplementary and pre-supplementary motor area and the anterior cingulate cortex, obliquely downward and laterally through the white matter deep to the superior and middle frontal gyri, to the pars opercularis and the ventral premotor cortex, lateral to the cingulum and medial to the SLF.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Supplementary and pre-supplementary motor area, anterior cingulate",
-    "via": "medial origin"
-   }
+  "kind": "structure",
+  "id": "tract-frontal-aslant",
+  "name": "Frontal aslant tract",
+  "synonyms": [
+    "FAT",
+    "SMA-inferior frontal connection"
   ],
-  "efferents": [
-   {
-    "to": "Pars opercularis and ventral premotor cortex",
-    "via": "lateral termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-frontal-aslant-l",
+    "tract-frontal-aslant-r"
   ],
-  "pathways": [
-   "pathway-corticobulbar"
-  ]
- },
- "function": "The tract carries the medial frontal signals that initiate and sequence speech and other self-generated actions to the lateral frontal cortex that executes them, so that the supplementary motor area can start an utterance and the inferior frontal gyrus can shape it; it also carries inhibitory control signals from the pre-supplementary motor area that stop or switch actions, and it supports verbal fluency and the planning of word sequences. Disconnection produces a transcortical motor pattern of speech with preserved repetition but reduced initiation and fluency, stuttering-like dysfluency, and, after surgery, a transient mutism that recovers as the lateral cortex reorganizes; in progressive non-fluent aphasia the tract degenerates with the inferior frontal gyrus.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-mca",
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-aca",
-   "territory-mca-frontal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-frontal-aslant-l"
+  "summary": "The frontal aslant tract is an oblique bundle within the frontal lobe that connects the supplementary motor area and the pre-supplementary motor area on the medial surface with the pars opercularis of the inferior frontal gyrus on the lateral surface, running downward and laterally through the white matter of the superior and middle frontal gyri. It is the pathway of speech initiation and of the control of action: on the left it links the medial frontal drive to speak with the lateral articulatory area, and its lesions produce reduced spontaneous speech, stuttering and mutism; on both sides it participates in stopping actions and in the executive control of movement. It is damaged in medial frontal surgery, in ACA-MCA watershed infarcts and in the non-fluent variant of primary progressive aphasia.",
+  "anatomy": {
+    "location": "From the supplementary and pre-supplementary motor area and the anterior cingulate cortex, obliquely downward and laterally through the white matter deep to the superior and middle frontal gyri, to the pars opercularis and the ventral premotor cortex, lateral to the cingulum and medial to the SLF.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Supplementary and pre-supplementary motor area, anterior cingulate",
+        "via": "medial origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Pars opercularis and ventral premotor cortex",
+        "via": "lateral termination"
+      }
+    ],
+    "pathways": [
+      "pathway-corticobulbar"
+    ]
+  },
+  "function": "The tract carries the medial frontal signals that initiate and sequence speech and other self-generated actions to the lateral frontal cortex that executes them, so that the supplementary motor area can start an utterance and the inferior frontal gyrus can shape it; it also carries inhibitory control signals from the pre-supplementary motor area that stop or switch actions, and it supports verbal fluency and the planning of word sequences. Disconnection produces a transcortical motor pattern of speech with preserved repetition but reduced initiation and fluency, stuttering-like dysfluency, and, after surgery, a transient mutism that recovers as the lateral cortex reorganizes; in progressive non-fluent aphasia the tract degenerates with the inferior frontal gyrus.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-mca",
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-mca-frontal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-frontal-aslant-l"
+        },
+        "label": "frontal aslant tract from the SMA to the inferior frontal gyrus"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "tract-frontal-aslant-r"
+        },
+        "label": "oblique fibers through the frontal white matter"
+      }
+    ],
+    "normalAppearance": "Tractography shows an oblique bundle from the medial superior frontal gyrus to the frontal operculum within the frontal lobe; not visible on conventional MRI.",
+    "pathology": [
+      {
+        "pathology": "Supplementary motor area syndrome after surgery",
+        "modality": "MRI",
+        "finding": "Resection or edema of the medial frontal lobe disconnecting the aslant tract, with mutism and contralateral akinesia that recover over weeks.",
+        "sequence": "T1",
+        "timing": "Recovery over 2-8 weeks"
+      },
+      {
+        "pathology": "Non-fluent/agrammatic primary progressive aphasia",
+        "modality": "MRI",
+        "finding": "Left inferior frontal and medial frontal atrophy with degeneration of the aslant tract on diffusion imaging; effortful speech with apraxia of speech.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "ACA-MCA watershed infarct",
+        "modality": "MRI",
+        "finding": "Border-zone infarct of the frontal white matter with transcortical motor aphasia: reduced fluency, preserved repetition.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Reduced spontaneous speech, mutism and stuttering (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of the SMA speech initiation from the inferior frontal articulator"
+      },
+      {
+        "deficit": "Transcortical motor aphasia",
+        "side": "n/a",
+        "mechanism": "Preserved perisylvian loop with lost frontal drive"
+      },
+      {
+        "deficit": "Impaired inhibition of actions",
+        "side": "bilateral",
+        "mechanism": "Interruption of pre-SMA control signals"
+      }
+    ],
+    "examination": [
+      "Spontaneous speech versus repetition (preserved) and naming",
+      "Verbal fluency in one minute",
+      "Stop-signal or go/no-go tasks"
+    ],
+    "syndromes": [
+      "syn-aphasia-broca",
+      "syn-aca-infarct",
+      "syn-watershed-infarct"
+    ],
+    "pearls": [
+      "Mutism with preserved repetition after medial frontal surgery is an aslant tract disconnection and it recovers",
+      "Stuttering acquired in adulthood can be a lesion of this tract",
+      "The frontal aslant tract is the newest named bundle of the language system and already an awake-surgery landmark"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-frontal-cortex",
+      "section": "Structure and Function"
     },
-    "label": "frontal aslant tract from the SMA to the inferior frontal gyrus"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "tract-frontal-aslant-r"
+    {
+      "ref": "sp-broca-area",
+      "section": "Structure and Function"
     },
-    "label": "oblique fibers through the frontal white matter"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows an oblique bundle from the medial superior frontal gyrus to the frontal operculum within the frontal lobe; not visible on conventional MRI.",
-  "pathology": [
-   {
-    "pathology": "Supplementary motor area syndrome after surgery",
-    "modality": "MRI",
-    "finding": "Resection or edema of the medial frontal lobe disconnecting the aslant tract, with mutism and contralateral akinesia that recover over weeks.",
-    "sequence": "T1",
-    "timing": "Recovery over 2-8 weeks"
-   },
-   {
-    "pathology": "Non-fluent/agrammatic primary progressive aphasia",
-    "modality": "MRI",
-    "finding": "Left inferior frontal and medial frontal atrophy with degeneration of the aslant tract on diffusion imaging; effortful speech with apraxia of speech.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "ACA-MCA watershed infarct",
-    "modality": "MRI",
-    "finding": "Border-zone infarct of the frontal white matter with transcortical motor aphasia: reduced fluency, preserved repetition.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Reduced spontaneous speech, mutism and stuttering (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of the SMA speech initiation from the inferior frontal articulator"
-   },
-   {
-    "deficit": "Transcortical motor aphasia",
-    "side": "n/a",
-    "mechanism": "Preserved perisylvian loop with lost frontal drive"
-   },
-   {
-    "deficit": "Impaired inhibition of actions",
-    "side": "bilateral",
-    "mechanism": "Interruption of pre-SMA control signals"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Spontaneous speech versus repetition (preserved) and naming",
-   "Verbal fluency in one minute",
-   "Stop-signal or go/no-go tasks"
-  ],
-  "syndromes": [
-   "syn-aphasia-broca",
-   "syn-aca-infarct",
-   "syn-watershed-infarct"
-  ],
-  "pearls": [
-   "Mutism with preserved repetition after medial frontal surgery is an aslant tract disconnection and it recovers",
-   "Stuttering acquired in adulthood can be a lesion of this tract",
-   "The frontal aslant tract is the newest named bundle of the language system and already an awake-surgery landmark"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    284,
-    291
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    236,
-    238
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "association",
- "parent": "cerebral-white-matter"
+  "status": "draft",
+  "subsystem": "association",
+  "parent": "cerebral-white-matter"
 }

@@ -1,143 +1,119 @@
 {
- "kind": "structure",
- "id": "falx-cerebri",
- "name": "Falx cerebri",
- "synonyms": [],
- "system": "meninges",
- "meshIds": [
-  "dura-mater-cranial"
- ],
- "summary": "The sickle-shaped fold of meningeal dura that hangs in the interhemispheric fissure from the crista galli in front to the tentorium behind, enclosing the superior sagittal sinus along its attached upper edge and the inferior sagittal sinus in its free lower edge, which lies just above the corpus callosum. It limits side-to-side shift of the hemispheres, which is why supratentorial mass effect produces subfalcine herniation of the cingulate gyrus under its free edge, and it is a favorite site of parasagittal meningiomas that present with leg weakness or seizures.",
- "anatomy": {
-  "location": "Midline between the hemispheres, attached to the frontal crest, the sagittal sulcus of the vault and the tentorium; the free edge lies above the corpus callosum, closer to it posteriorly.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Partition and support of the hemispheres, housing of the sagittal sinuses, limitation of lateral brain shift.",
- "bloodSupply": {
-  "arteries": [
-   "middle meningeal artery",
-   "anterior ethmoidal branches of the ophthalmic artery"
+  "kind": "structure",
+  "id": "falx-cerebri",
+  "name": "Falx cerebri",
+  "synonyms": [],
+  "system": "meninges",
+  "meshIds": [
+    "dura-mater-cranial"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 40
+  "summary": "The sickle-shaped fold of meningeal dura that hangs in the interhemispheric fissure from the crista galli in front to the tentorium behind, enclosing the superior sagittal sinus along its attached upper edge and the inferior sagittal sinus in its free lower edge, which lies just above the corpus callosum. It limits side-to-side shift of the hemispheres, which is why supratentorial mass effect produces subfalcine herniation of the cingulate gyrus under its free edge, and it is a favorite site of parasagittal meningiomas that present with leg weakness or seizures.",
+  "anatomy": {
+    "location": "Midline between the hemispheres, attached to the frontal crest, the sagittal sulcus of the vault and the tentorium; the free edge lies above the corpus callosum, closer to it posteriorly.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Partition and support of the hemispheres, housing of the sagittal sinuses, limitation of lateral brain shift.",
+  "bloodSupply": {
+    "arteries": [
+      "middle meningeal artery",
+      "anterior ethmoidal branches of the ophthalmic artery"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 40
+        },
+        "label": "falx between the hemispheres with the superior sagittal sinus at its top"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 40
+        },
+        "label": "midline line of the falx on axial images"
+      }
+    ],
+    "normalAppearance": "A midline line on axial CT, denser when calcified, with the superior sagittal sinus as a triangle at the vertex on coronal images; midline shift of the septum pellucidum under a bowed falx measures subfalcine herniation. Falcine and parasagittal meningiomas are dural-based enhancing masses along it.",
+    "pathology": [
+      {
+        "pathology": "Subfalcine herniation",
+        "modality": "CT",
+        "finding": "Midline shift of the septum pellucidum with the cingulate gyrus displaced under the falx; may compress the ACA.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Parasagittal / falx meningioma",
+        "modality": "MRI",
+        "finding": "Enhancing dural mass with a dural tail, often invading or occluding the superior sagittal sinus.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Interhemispheric subdural hematoma",
+        "modality": "CT",
+        "finding": "Blood tracking along the falx after trauma or in non-accidental injury.",
+        "sequence": "CT non-contrast"
+      }
+    ],
+    "sequenceOfChoice": "CT for shift; MRI with contrast for masses; MRV for sinus involvement"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral leg weakness from ACA compression under the falx",
+        "side": "contralateral",
+        "mechanism": "Subfalcine herniation compressing the pericallosal artery"
+      },
+      {
+        "deficit": "Leg weakness or focal motor seizures from a parasagittal mass",
+        "side": "contralateral",
+        "mechanism": "Compression of the paracentral lobule"
+      },
+      {
+        "deficit": "Headache and raised pressure from sinus occlusion",
+        "side": "n/a",
+        "mechanism": "Superior sagittal sinus invasion"
+      }
+    ],
+    "examination": [
+      "Leg power and gait",
+      "Level of consciousness and headache with mass effect",
+      "Seizure history"
+    ],
+    "syndromes": [
+      "syn-subfalcine-herniation"
+    ],
+    "pearls": [
+      "Bilateral leg weakness with a midline mass on imaging: a parasagittal meningioma compressing both paracentral lobules",
+      "Midline shift on CT is subfalcine herniation; it precedes uncal herniation"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-falx-cerebri",
+      "section": "Structure and Function"
     },
-    "label": "falx between the hemispheres with the superior sagittal sinus at its top"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 40
-    },
-    "label": "midline line of the falx on axial images"
-   }
+    {
+      "ref": "sp-cranial-meninges",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A midline line on axial CT, denser when calcified, with the superior sagittal sinus as a triangle at the vertex on coronal images; midline shift of the septum pellucidum under a bowed falx measures subfalcine herniation. Falcine and parasagittal meningiomas are dural-based enhancing masses along it.",
-  "pathology": [
-   {
-    "pathology": "Subfalcine herniation",
-    "modality": "CT",
-    "finding": "Midline shift of the septum pellucidum with the cingulate gyrus displaced under the falx; may compress the ACA.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Parasagittal / falx meningioma",
-    "modality": "MRI",
-    "finding": "Enhancing dural mass with a dural tail, often invading or occluding the superior sagittal sinus.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Interhemispheric subdural hematoma",
-    "modality": "CT",
-    "finding": "Blood tracking along the falx after trauma or in non-accidental injury.",
-    "sequence": "CT non-contrast"
-   }
+  "tags": [
+    "meninges"
   ],
-  "sequenceOfChoice": "CT for shift; MRI with contrast for masses; MRV for sinus involvement"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral leg weakness from ACA compression under the falx",
-    "side": "contralateral",
-    "mechanism": "Subfalcine herniation compressing the pericallosal artery"
-   },
-   {
-    "deficit": "Leg weakness or focal motor seizures from a parasagittal mass",
-    "side": "contralateral",
-    "mechanism": "Compression of the paracentral lobule"
-   },
-   {
-    "deficit": "Headache and raised pressure from sinus occlusion",
-    "side": "n/a",
-    "mechanism": "Superior sagittal sinus invasion"
-   }
-  ],
-  "examination": [
-   "Leg power and gait",
-   "Level of consciousness and headache with mass effect",
-   "Seizure history"
-  ],
-  "syndromes": [
-   "syn-subfalcine-herniation"
-  ],
-  "pearls": [
-   "Bilateral leg weakness with a midline mass on imaging: a parasagittal meningioma compressing both paracentral lobules",
-   "Midline shift on CT is subfalcine herniation; it precedes uncal herniation"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    418,
-    419
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    428,
-    431
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    26,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    270,
-    270
-   ]
-  }
- ],
- "tags": [
-  "meninges"
- ],
- "status": "draft",
- "latin": "Falx cerebri"
+  "status": "draft",
+  "latin": "Falx cerebri"
 }

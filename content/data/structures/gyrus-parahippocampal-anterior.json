@@ -1,199 +1,163 @@
 {
- "kind": "structure",
- "id": "gyrus-parahippocampal-anterior",
- "name": "Parahippocampal gyrus, anterior division",
- "synonyms": [
-  "entorhinal cortex",
-  "perirhinal cortex",
-  "area 28"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-parahippocampal-anterior-l",
-  "gyrus-parahippocampal-anterior-r"
- ],
- "summary": "The anterior parahippocampal gyrus is the medial temporal cortex beneath the hippocampal head and the amygdala, containing the entorhinal cortex (area 28) medially and the perirhinal cortex (areas 35 and 36) along the collateral and rhinal sulci; it bends back on itself medially as the uncus. It is the gateway to the hippocampus: nearly all cortical information enters the hippocampal formation through the entorhinal cortex by the perforant path, and the perirhinal cortex recognizes familiar objects. It is the first cortex to accumulate tau tangles in Alzheimer disease, it is involved in mesial temporal epilepsy, and it is compressed against the tentorium in uncal herniation.",
- "anatomy": {
-  "location": "Anterior part of the parahippocampal gyrus on the inferomedial temporal surface, medial to the collateral and rhinal sulci and the fusiform gyrus, lateral to the ambient cistern and the midbrain, below the amygdala and the hippocampal head, curving into the uncus anteromedially.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Perirhinal and parahippocampal cortex, all association cortices",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Subiculum and CA1",
-    "via": "return projection"
-   },
-   {
-    "from": "Olfactory bulb and piriform cortex",
-    "via": "lateral olfactory stria"
-   }
+  "kind": "structure",
+  "id": "gyrus-parahippocampal-anterior",
+  "name": "Parahippocampal gyrus, anterior division",
+  "synonyms": [
+    "entorhinal cortex",
+    "perirhinal cortex",
+    "area 28"
   ],
-  "efferents": [
-   {
-    "to": "Dentate gyrus and hippocampus",
-    "via": "perforant path"
-   },
-   {
-    "to": "Association cortex (memory consolidation)",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Amygdala",
-    "via": "short association fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-parahippocampal-anterior-l",
+    "gyrus-parahippocampal-anterior-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic",
-   "pathway-olfactory"
-  ]
- },
- "function": "The entorhinal cortex gathers highly processed sensory and associative input from the whole cortex, especially through the perirhinal (object) and parahippocampal (scene) cortices, and sends it into the dentate gyrus and hippocampus by the perforant path while receiving the hippocampal output from the subiculum and relaying it back to the cortex; its grid cells provide the spatial metric of navigation. The perirhinal cortex signals whether an object has been seen before and links it with its value. Damage here produces anterograde amnesia even with an intact hippocampus, and the region is where Alzheimer tangles and mesial temporal seizures begin.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
+  "summary": "The anterior parahippocampal gyrus is the medial temporal cortex beneath the hippocampal head and the amygdala, containing the entorhinal cortex (area 28) medially and the perirhinal cortex (areas 35 and 36) along the collateral and rhinal sulci; it bends back on itself medially as the uncus. It is the gateway to the hippocampus: nearly all cortical information enters the hippocampal formation through the entorhinal cortex by the perforant path, and the perirhinal cortex recognizes familiar objects. It is the first cortex to accumulate tau tangles in Alzheimer disease, it is involved in mesial temporal epilepsy, and it is compressed against the tentorium in uncal herniation.",
+  "anatomy": {
+    "location": "Anterior part of the parahippocampal gyrus on the inferomedial temporal surface, medial to the collateral and rhinal sulci and the fusiform gyrus, lateral to the ambient cistern and the midbrain, below the amygdala and the hippocampal head, curving into the uncus anteromedially.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Perirhinal and parahippocampal cortex, all association cortices",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Subiculum and CA1",
+        "via": "return projection"
+      },
+      {
+        "from": "Olfactory bulb and piriform cortex",
+        "via": "lateral olfactory stria"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Dentate gyrus and hippocampus",
+        "via": "perforant path"
+      },
+      {
+        "to": "Association cortex (memory consolidation)",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Amygdala",
+        "via": "short association fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic",
+      "pathway-olfactory"
+    ]
+  },
+  "function": "The entorhinal cortex gathers highly processed sensory and associative input from the whole cortex, especially through the perirhinal (object) and parahippocampal (scene) cortices, and sends it into the dentate gyrus and hippocampus by the perforant path while receiving the hippocampal output from the subiculum and relaying it back to the cortex; its grid cells provide the spatial metric of navigation. The perirhinal cortex signals whether an object has been seen before and links it with its value. Damage here produces anterograde amnesia even with an intact hippocampus, and the region is where Alzheimer tangles and mesial temporal seizures begin.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-parahippocampal-anterior-l"
+        },
+        "label": "anterior parahippocampal gyrus beneath the hippocampal head and amygdala"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-parahippocampal-anterior-r"
+        },
+        "label": "entorhinal cortex medial to the collateral sulcus"
+      }
+    ],
+    "normalAppearance": "The medial temporal cortex below the hippocampal head on coronal images, bounded laterally by the collateral sulcus and medially by the ambient cistern and the tentorial edge; the rhinal sulcus marks its anterior lateral border.",
+    "pathology": [
+      {
+        "pathology": "Alzheimer disease (early)",
+        "modality": "MRI",
+        "finding": "Entorhinal and hippocampal atrophy with widening of the collateral sulcus and the temporal horn, measurable before dementia.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Mesial temporal sclerosis",
+        "modality": "MRI",
+        "finding": "Hippocampal atrophy and FLAIR hyperintensity with loss of internal architecture, often with parahippocampal atrophy and a small temporal pole.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Uncal herniation",
+        "modality": "CT",
+        "finding": "Effacement of the ipsilateral suprasellar and ambient cisterns with medial displacement of the uncus and parahippocampal gyrus over the tentorial edge and midbrain compression.",
+        "sequence": "CT non-contrast"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Loss of the entorhinal gateway to the hippocampal formation"
+      },
+      {
+        "deficit": "Impaired object recognition memory",
+        "side": "bilateral",
+        "mechanism": "Perirhinal cortex damage"
+      },
+      {
+        "deficit": "Complex partial seizures with epigastric aura, fear and deja vu",
+        "side": "n/a",
+        "mechanism": "Ictal onset in the entorhinal-hippocampal circuit"
+      }
+    ],
+    "examination": [
+      "Delayed recall with recognition cues; entorhinal damage impairs both recall and recognition",
+      "Ask about brief episodes of altered awareness with a rising epigastric feeling",
+      "Level of consciousness and pupils in any patient with a temporal mass, watching for uncal herniation"
+    ],
+    "syndromes": [
+      "syn-uncal-herniation",
+      "syn-wernicke-korsakoff",
+      "syn-kluver-bucy"
+    ],
+    "pearls": [
+      "Alzheimer tangles start in the entorhinal cortex; volumetric MRI of this region predicts conversion from mild cognitive impairment",
+      "Uncal herniation crushes the parahippocampal gyrus against the tentorium and the third nerve against the clivus",
+      "The perforant path is the funnel through which all memory enters the hippocampus"
+    ]
+  },
+  "pitfalls": [
+    "Hippocampal volume alone underestimates early Alzheimer disease; the entorhinal cortex shrinks first"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-parahippocampal-anterior-l"
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "anterior parahippocampal gyrus beneath the hippocampal head and amygdala"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-parahippocampal-anterior-r"
+    {
+      "ref": "sp-alzheimer-disease",
+      "section": "Pathophysiology"
     },
-    "label": "entorhinal cortex medial to the collateral sulcus"
-   }
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The medial temporal cortex below the hippocampal head on coronal images, bounded laterally by the collateral sulcus and medially by the ambient cistern and the tentorial edge; the rhinal sulcus marks its anterior lateral border.",
-  "pathology": [
-   {
-    "pathology": "Alzheimer disease (early)",
-    "modality": "MRI",
-    "finding": "Entorhinal and hippocampal atrophy with widening of the collateral sulcus and the temporal horn, measurable before dementia.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Mesial temporal sclerosis",
-    "modality": "MRI",
-    "finding": "Hippocampal atrophy and FLAIR hyperintensity with loss of internal architecture, often with parahippocampal atrophy and a small temporal pole.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Uncal herniation",
-    "modality": "CT",
-    "finding": "Effacement of the ipsilateral suprasellar and ambient cisterns with medial displacement of the uncus and parahippocampal gyrus over the tentorial edge and midbrain compression.",
-    "sequence": "CT non-contrast"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Loss of the entorhinal gateway to the hippocampal formation"
-   },
-   {
-    "deficit": "Impaired object recognition memory",
-    "side": "bilateral",
-    "mechanism": "Perirhinal cortex damage"
-   },
-   {
-    "deficit": "Complex partial seizures with epigastric aura, fear and deja vu",
-    "side": "n/a",
-    "mechanism": "Ictal onset in the entorhinal-hippocampal circuit"
-   }
+  "tags": [
+    "entorhinal",
+    "perirhinal",
+    "memory gateway"
   ],
-  "examination": [
-   "Delayed recall with recognition cues; entorhinal damage impairs both recall and recognition",
-   "Ask about brief episodes of altered awareness with a rising epigastric feeling",
-   "Level of consciousness and pupils in any patient with a temporal mass, watching for uncal herniation"
-  ],
-  "syndromes": [
-   "syn-uncal-herniation",
-   "syn-wernicke-korsakoff",
-   "syn-kluver-bucy"
-  ],
-  "pearls": [
-   "Alzheimer tangles start in the entorhinal cortex; volumetric MRI of this region predicts conversion from mild cognitive impairment",
-   "Uncal herniation crushes the parahippocampal gyrus against the tentorium and the third nerve against the clivus",
-   "The perforant path is the funnel through which all memory enters the hippocampus"
-  ]
- },
- "pitfalls": [
-  "Hippocampal volume alone underestimates early Alzheimer disease; the entorhinal cortex shrinks first"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    220,
-    221
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    169,
-    172
-   ]
-  }
- ],
- "tags": [
-  "entorhinal",
-  "perirhinal",
-  "memory gateway"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "gyrus-parahippocampal-uncus"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "gyrus-parahippocampal-uncus"
 }

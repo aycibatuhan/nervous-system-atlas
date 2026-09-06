@@ -1,124 +1,116 @@
 {
- "kind": "structure",
- "id": "claustrum",
- "name": "Claustrum",
- "synonyms": [],
- "system": "basal-ganglia",
- "meshIds": [
-  "claustrum-l",
-  "claustrum-r"
- ],
- "summary": "A thin sheet of gray matter between the putamen and the insular cortex, separated from the putamen by the external capsule and from the insula by the extreme capsule. It is reciprocally connected with almost the entire cortex and has been proposed as a coordinator of cortical activity and of consciousness, but its clinical signature is meagre: it is involved in autoimmune and febrile encephalitides (the claustrum sign) and in some cases of status epilepticus, and its stimulation can suspend consciousness.",
- "anatomy": {
-  "location": "Deep to the insula, lateral to the putamen, a vertical plate of gray matter stretching from the level of the anterior commissure to the posterior end of the lentiform nucleus; the external capsule lies medial, the extreme capsule lateral.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "widespread cortex"
-   }
+  "kind": "structure",
+  "id": "claustrum",
+  "name": "Claustrum",
+  "synonyms": [],
+  "system": "basal-ganglia",
+  "meshIds": [
+    "claustrum-l",
+    "claustrum-r"
   ],
-  "efferents": [
-   {
-    "to": "widespread cortex"
-   }
-  ],
-  "pathways": []
- },
- "function": "Widespread reciprocal cortical connections suggesting a role in multisensory integration, attention and the binding of conscious experience; ventral claustrum connects with the amygdala and limbic cortex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "arteries-lenticulostriate"
-  ],
-  "territories": [
-   "territory-mca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 32,
-     "y": 2,
-     "z": 4
-    },
-    "label": "thin gray sheet between the putamen and the insula"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 32,
-     "y": 2,
-     "z": 4
-    },
-    "label": "claustrum between the external and extreme capsules"
-   }
-  ],
-  "normalAppearance": "A thin vertical gray line between the external and extreme capsules on axial T1/T2, easiest to see on high-resolution 3 T images; symmetric FLAIR hyperintensity is the claustrum sign of encephalitis.",
-  "pathology": [
-   {
-    "pathology": "Febrile infection-related epilepsy syndrome / autoimmune encephalitis",
-    "modality": "MRI",
-    "finding": "Bilateral symmetric claustrum FLAIR hyperintensity ('claustrum sign') with refractory status epilepticus.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Insular-opercular infarct",
-    "modality": "MRI",
-    "finding": "Restriction of the insula and claustrum in an MCA branch occlusion.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "Axial FLAIR"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Refractory seizures and altered consciousness with encephalitis",
-    "side": "bilateral",
-    "mechanism": "Bilateral claustral inflammation"
-   },
-   {
-    "deficit": "No consistent focal syndrome",
-    "side": "n/a",
-    "mechanism": "Diffuse connectivity; deficits attributed to adjacent insula and putamen"
-   }
-  ],
-  "examination": [
-   "Level of consciousness and seizure semiology in encephalitis",
-   "Insular signs: taste, autonomic changes"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Bilateral bright claustra on FLAIR in a febrile patient with refractory seizures is a recognized encephalitis pattern",
-   "The claustrum is anatomy that outruns clinical knowledge; keep expectations modest"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    312,
-    312
-   ]
+  "summary": "A thin sheet of gray matter between the putamen and the insular cortex, separated from the putamen by the external capsule and from the insula by the extreme capsule. It is reciprocally connected with almost the entire cortex and has been proposed as a coordinator of cortical activity and of consciousness, but its clinical signature is meagre: it is involved in autoimmune and febrile encephalitides (the claustrum sign) and in some cases of status epilepticus, and its stimulation can suspend consciousness.",
+  "anatomy": {
+    "location": "Deep to the insula, lateral to the putamen, a vertical plate of gray matter stretching from the level of the anterior commissure to the posterior end of the lentiform nucleus; the external capsule lies medial, the extreme capsule lateral.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    310,
-    311
-   ]
-  }
- ],
- "tags": [
-  "basal-ganglia"
- ],
- "status": "draft",
- "latin": "Claustrum"
+  "connections": {
+    "afferents": [
+      {
+        "from": "widespread cortex"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "widespread cortex"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Widespread reciprocal cortical connections suggesting a role in multisensory integration, attention and the binding of conscious experience; ventral claustrum connects with the amygdala and limbic cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "arteries-lenticulostriate"
+    ],
+    "territories": [
+      "territory-mca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 32,
+          "y": 2,
+          "z": 4
+        },
+        "label": "thin gray sheet between the putamen and the insula"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 32,
+          "y": 2,
+          "z": 4
+        },
+        "label": "claustrum between the external and extreme capsules"
+      }
+    ],
+    "normalAppearance": "A thin vertical gray line between the external and extreme capsules on axial T1/T2, easiest to see on high-resolution 3 T images; symmetric FLAIR hyperintensity is the claustrum sign of encephalitis.",
+    "pathology": [
+      {
+        "pathology": "Febrile infection-related epilepsy syndrome / autoimmune encephalitis",
+        "modality": "MRI",
+        "finding": "Bilateral symmetric claustrum FLAIR hyperintensity ('claustrum sign') with refractory status epilepticus.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Insular-opercular infarct",
+        "modality": "MRI",
+        "finding": "Restriction of the insula and claustrum in an MCA branch occlusion.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "Axial FLAIR"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Refractory seizures and altered consciousness with encephalitis",
+        "side": "bilateral",
+        "mechanism": "Bilateral claustral inflammation"
+      },
+      {
+        "deficit": "No consistent focal syndrome",
+        "side": "n/a",
+        "mechanism": "Diffuse connectivity; deficits attributed to adjacent insula and putamen"
+      }
+    ],
+    "examination": [
+      "Level of consciousness and seizure semiology in encephalitis",
+      "Insular signs: taste, autonomic changes"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Bilateral bright claustra on FLAIR in a febrile patient with refractory seizures is a recognized encephalitis pattern",
+      "The claustrum is anatomy that outruns clinical knowledge; keep expectations modest"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-putamen",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-insular-cortex",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "basal-ganglia"
+  ],
+  "status": "draft",
+  "latin": "Claustrum"
 }

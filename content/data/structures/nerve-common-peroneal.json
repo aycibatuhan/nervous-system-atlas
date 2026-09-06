@@ -1,144 +1,140 @@
 {
- "kind": "structure",
- "id": "nerve-common-peroneal",
- "name": "Common (and deep/superficial) peroneal nerve",
- "synonyms": [
-  "common fibular nerve",
-  "lateral popliteal nerve"
- ],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The smaller lateral division of the sciatic nerve (L4–S2) runs along the medial border of biceps femoris to the lateral side of the popliteal fossa, winds around the neck of the fibula (where it lies on bone under thin skin) and divides into the deep peroneal nerve, which supplies the anterior compartment (tibialis anterior, extensor digitorum longus, extensor hallucis longus) and the first web space skin, and the superficial peroneal nerve, which supplies the evertors (peroneus longus and brevis) and the dorsum of the foot. Compression at the fibular neck by crossed legs, casts, weight loss or squatting is the commonest cause of foot drop.",
- "anatomy": {
-  "location": "Lateral popliteal fossa along the tendon of biceps femoris, around the neck of the fibula deep to peroneus longus (the fibular tunnel), where it divides; the deep branch runs on the interosseous membrane with the anterior tibial artery, the superficial branch in the lateral compartment.",
-  "subdivisions": [
-   {
-    "name": "Common peroneal nerve",
-    "note": "short head of biceps femoris (in the thigh, from the sciatic trunk), lateral sural cutaneous nerve"
-   },
-   {
-    "name": "Deep peroneal nerve",
-    "note": "tibialis anterior, extensor digitorum longus and brevis, extensor hallucis longus, peroneus tertius; first dorsal web space"
-   },
-   {
-    "name": "Superficial peroneal nerve",
-    "note": "peroneus longus and brevis (eversion); dorsum of the foot and lateral leg"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Ankle dorsiflexion and toe extension (deep), foot eversion (superficial), and sensation of the dorsum of the foot and the lateral leg.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "nerve-common-peroneal",
+  "name": "Common (and deep/superficial) peroneal nerve",
+  "synonyms": [
+    "common fibular nerve",
+    "lateral popliteal nerve"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "cervical cord; the peroneal nerve derives from L4–S2"
-   }
-  ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Ultrasound and MRI at the fibular neck show nerve swelling, an intraneural ganglion from the tibiofibular joint, or a fibular head fracture, with denervation of the anterior and lateral compartments.",
-  "pathology": [
-   {
-    "pathology": "Peroneal neuropathy at the fibular neck",
-    "modality": "US",
-    "finding": "Enlarged nerve at the fibular neck; nerve conduction shows conduction block across the fibular head.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Intraneural ganglion",
-    "modality": "MRI",
-    "finding": "Cystic expansion of the nerve tracking from the superior tibiofibular joint.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Anterior compartment syndrome",
-    "modality": "MRI",
-    "finding": "Swollen anterior compartment muscles with deep peroneal nerve involvement after trauma or exertion.",
-    "sequence": "STIR"
-   }
-  ],
-  "sequenceOfChoice": "Nerve conduction across the fibular neck; EMG including short head of biceps femoris; ultrasound"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Foot drop with weak eversion, steppage gait, numbness of the dorsum of the foot",
-    "side": "ipsilateral",
-    "mechanism": "Common peroneal nerve at the fibular neck"
-   },
-   {
-    "deficit": "Foot drop with preserved eversion and numbness limited to the first web space",
-    "side": "ipsilateral",
-    "mechanism": "Deep peroneal nerve"
-   },
-   {
-    "deficit": "Weak eversion with dorsal foot numbness and normal dorsiflexion",
-    "side": "ipsilateral",
-    "mechanism": "Superficial peroneal nerve"
-   },
-   {
-    "deficit": "Preserved inversion and ankle jerk",
-    "side": "n/a",
-    "mechanism": "Tibial nerve and S1 intact, distinguishing it from sciatic and L5 lesions"
-   }
-  ],
-  "examination": [
-   "Dorsiflexion, toe extension and eversion against resistance; inversion (should be normal)",
-   "Ankle jerk (normal)",
-   "Sensation of the dorsum, first web space and lateral leg",
-   "Tinel at the fibular neck; look for a habit of crossing the legs, recent weight loss or a cast"
-  ],
-  "syndromes": [
-   "syn-peroneal-palsy-foot-drop",
-   "syn-sciatic-neuropathy",
-   "syn-radiculopathy-lumbosacral"
-  ],
-  "pearls": [
-   "Foot drop with normal inversion is peroneal; with weak inversion it is L5 or sciatic",
-   "Weight loss plus foot drop: the nerve has lost its fat cushion at the fibular neck"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    112,
-    112
-   ]
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The smaller lateral division of the sciatic nerve (L4–S2) runs along the medial border of biceps femoris to the lateral side of the popliteal fossa, winds around the neck of the fibula (where it lies on bone under thin skin) and divides into the deep peroneal nerve, which supplies the anterior compartment (tibialis anterior, extensor digitorum longus, extensor hallucis longus) and the first web space skin, and the superficial peroneal nerve, which supplies the evertors (peroneus longus and brevis) and the dorsum of the foot. Compression at the fibular neck by crossed legs, casts, weight loss or squatting is the commonest cause of foot drop.",
+  "anatomy": {
+    "location": "Lateral popliteal fossa along the tendon of biceps femoris, around the neck of the fibula deep to peroneus longus (the fibular tunnel), where it divides; the deep branch runs on the interosseous membrane with the anterior tibial artery, the superficial branch in the lateral compartment.",
+    "subdivisions": [
+      {
+        "name": "Common peroneal nerve",
+        "note": "short head of biceps femoris (in the thigh, from the sciatic trunk), lateral sural cutaneous nerve"
+      },
+      {
+        "name": "Deep peroneal nerve",
+        "note": "tibialis anterior, extensor digitorum longus and brevis, extensor hallucis longus, peroneus tertius; first dorsal web space"
+      },
+      {
+        "name": "Superficial peroneal nerve",
+        "note": "peroneus longus and brevis (eversion); dorsum of the foot and lateral leg"
+      }
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    163,
-    166
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Ankle dorsiflexion and toe extension (deep), foot eversion (superficial), and sensation of the dorsum of the foot and the lateral leg.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; the peroneal nerve derives from L4–S2"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Ultrasound and MRI at the fibular neck show nerve swelling, an intraneural ganglion from the tibiofibular joint, or a fibular head fracture, with denervation of the anterior and lateral compartments.",
+    "pathology": [
+      {
+        "pathology": "Peroneal neuropathy at the fibular neck",
+        "modality": "US",
+        "finding": "Enlarged nerve at the fibular neck; nerve conduction shows conduction block across the fibular head.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Intraneural ganglion",
+        "modality": "MRI",
+        "finding": "Cystic expansion of the nerve tracking from the superior tibiofibular joint.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Anterior compartment syndrome",
+        "modality": "MRI",
+        "finding": "Swollen anterior compartment muscles with deep peroneal nerve involvement after trauma or exertion.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "Nerve conduction across the fibular neck; EMG including short head of biceps femoris; ultrasound"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Foot drop with weak eversion, steppage gait, numbness of the dorsum of the foot",
+        "side": "ipsilateral",
+        "mechanism": "Common peroneal nerve at the fibular neck"
+      },
+      {
+        "deficit": "Foot drop with preserved eversion and numbness limited to the first web space",
+        "side": "ipsilateral",
+        "mechanism": "Deep peroneal nerve"
+      },
+      {
+        "deficit": "Weak eversion with dorsal foot numbness and normal dorsiflexion",
+        "side": "ipsilateral",
+        "mechanism": "Superficial peroneal nerve"
+      },
+      {
+        "deficit": "Preserved inversion and ankle jerk",
+        "side": "n/a",
+        "mechanism": "Tibial nerve and S1 intact, distinguishing it from sciatic and L5 lesions"
+      }
+    ],
+    "examination": [
+      "Dorsiflexion, toe extension and eversion against resistance; inversion (should be normal)",
+      "Ankle jerk (normal)",
+      "Sensation of the dorsum, first web space and lateral leg",
+      "Tinel at the fibular neck; look for a habit of crossing the legs, recent weight loss or a cast"
+    ],
+    "syndromes": [
+      "syn-peroneal-palsy-foot-drop",
+      "syn-sciatic-neuropathy",
+      "syn-radiculopathy-lumbosacral"
+    ],
+    "pearls": [
+      "Foot drop with normal inversion is peroneal; with weak inversion it is L5 or sciatic",
+      "Weight loss plus foot drop: the nerve has lost its fat cushion at the fibular neck"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-calf-common-peroneal-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-peroneal-nerve-injury",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-calf-deep-peroneal-nerve",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "pns",
+    "lower-limb"
+  ],
+  "status": "draft",
+  "latin": "Nervus fibularis communis",
+  "subsystem": "lower-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "lower-limb"
- ],
- "status": "draft",
- "latin": "Nervus fibularis communis",
- "subsystem": "lower-limb",
- "level": {
-  "region": "peripheral"
- }
 }

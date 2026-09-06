@@ -1,8 +1,6 @@
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from corlib import *
 E = []
-S = lambda ch, a, b=None: C("snell", ch, a, b)
-B = lambda ch, a, b=None: C("berkowitz", ch, a, b)
 CB_ART = {"sup": ["artery-sca"], "inf": ["artery-pica", "artery-aica"], "all": ["artery-sca", "artery-pica", "artery-aica"]}
 CB_TERR = {"sup": ["territory-superior-cerebellar"], "inf": ["territory-inferior-cerebellar"], "all": ["territory-superior-cerebellar", "territory-inferior-cerebellar"]}
 def lob(id, name, art, summary, location, function, views, normal, paths, lesion, exam, pearls, cites, **kw):
@@ -24,7 +22,7 @@ E.append(lob("cerebellar-lobule-i-iv", "Lobules I–IV", "sup",
  [("Wide-based, unsteady gait and truncal instability", "bilateral", "Loss of spinocerebellar regulation of leg and trunk muscles"), ("Hypotonia of the legs", "bilateral", "Loss of anterior lobe facilitation of tone through the fastigial and vestibulospinal system"), ("Relatively preserved arm coordination", "n/a", "The arm representation lies in more posterior lobules")],
  ["Tandem gait and Romberg with eyes open (cerebellar patients sway with eyes open)", "Heel-shin test compared with finger-nose test", "Alcohol and nutritional history"],
  ["Anterior lobe atrophy is the cerebellar signature of alcohol: the legs go before the arms", "The anterior vermis on a sagittal MRI is the first place to look for cerebellar atrophy", "Gait ataxia with normal finger-nose testing is anterior lobe, not hemisphere"],
- [S(6, 229, 244), B(8, 67, 73)], synonyms=["anterior lobe (rostral part)", "lingula, central lobule and culmen"], mesh_ids=vm("cerebellar-lobule-i-iv"),
+ [R("sp-cerebellum"), R("sp-cerebellar-dysfunction-2"), R("sp-cerebellar-dysfunction")], synonyms=["anterior lobe (rostral part)", "lingula, central lobule and culmen"], mesh_ids=vm("cerebellar-lobule-i-iv"),
  afferents=[("Spinal cord (legs and trunk)", "dorsal and ventral spinocerebellar tracts via the inferior and superior peduncles"), ("Pontine nuclei", "middle cerebellar peduncle"), ("Inferior olive", "climbing fibers via the inferior peduncle")],
  efferents=[("Fastigial and interposed nuclei", "Purkinje axons"), ("Vestibular nuclei (direct)", "juxtarestiform body")]))
 
@@ -40,7 +38,7 @@ E.append(lob("cerebellar-lobule-v", "Lobule V", "sup",
  [("Ipsilateral limb ataxia and dysmetria", "ipsilateral", "Loss of the cerebellar prediction and correction of limb movements"), ("Intention tremor and dysdiadochokinesia", "ipsilateral", "Loss of timing signals through the interposed and dentate nuclei"), ("Hypotonia", "ipsilateral", "Loss of cerebellar facilitation of tone")],
  ["Finger-nose and heel-shin testing on each side", "Rapid alternating movements and rebound", "Handwriting and speech for dysmetria of fine movement"],
  ["Cerebellar signs are ipsilateral because the outflow crosses twice: in the superior cerebellar peduncle and again in the corticospinal tract", "The anterior lobe maps the body twice: once here, once in lobule VIII", "Intention tremor grows as the finger approaches the target; parkinsonian tremor fades"],
- [S(6, 229, 244), B(8, 67, 73)], synonyms=["culmen (posterior part)", "anterior quadrangular lobule"], mesh_ids=vm("cerebellar-lobule-v"),
+ [R("sp-spinocerebellar-dorsal-tract"), R("sp-cerebellar-dysfunction")], synonyms=["culmen (posterior part)", "anterior quadrangular lobule"], mesh_ids=vm("cerebellar-lobule-v"),
  afferents=[("Motor and somatosensory cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Spinal cord", "spinocerebellar tracts"), ("Inferior olive", "climbing fibers")],
  efferents=[("Interposed and dentate nuclei", "Purkinje axons"), ("Motor cortex via the ventrolateral thalamus (from the nuclei)", "superior cerebellar peduncle")]))
 
@@ -56,7 +54,7 @@ E.append(lob("cerebellar-lobule-vi", "Lobule VI", "sup",
  [("Scanning dysarthria", "ipsilateral", "Loss of cerebellar timing of articulatory muscles from the face representation"), ("Saccadic dysmetria and impaired smooth pursuit", "bilateral", "Loss of oculomotor vermis calibration through the fastigial nucleus"), ("Executive and affective change with adjacent Crus I involvement", "n/a", "Disruption of the cerebrocerebellar cognitive loops")],
  ["Repeat syllables and a sentence to detect scanning, explosive speech", "Saccades to targets: overshoot and corrective saccades", "Verbal fluency and affect after a posterior lobe lesion"],
  ["Dysarthria in cerebellar disease is a lobule VI and paravermian sign, usually from the left hemisphere", "The oculomotor vermis (VI-VII) tunes every saccade; its lesion makes the eyes overshoot", "Lobule VI is where the motor cerebellum shades into the cognitive cerebellum"],
- [S(6, 229, 244), B(8, 67, 73), B(11, 96, 100)], synonyms=["declive and simplex lobule", "posterior quadrangular lobule"], mesh_ids=vm("cerebellar-lobule-vi"),
+ [R("sp-cerebellar-dysfunction"), R("sp-dentate-nucleus")], synonyms=["declive and simplex lobule", "posterior quadrangular lobule"], mesh_ids=vm("cerebellar-lobule-vi"),
  afferents=[("Premotor, motor and prefrontal cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Superior colliculus and vestibular nuclei (vermis)", "tectocerebellar and vestibulocerebellar fibers"), ("Trigeminal nuclei", "trigeminocerebellar fibers")],
  efferents=[("Dentate nucleus (hemisphere) and fastigial nucleus (vermis)", "Purkinje axons"), ("Motor and prefrontal cortex via the thalamus", "superior cerebellar peduncle")]))
 
@@ -72,7 +70,7 @@ E.append(lob("cerebellar-lobule-crus-i", "Crus I", "inf",
  [("Executive dysfunction and impaired working memory", "n/a", "Disruption of the prefrontal-cerebellar loops through Crus I"), ("Language impairment (agrammatism, reduced fluency) with right hemispheric lesions", "n/a", "Crossed connection of the right cerebellum with the left frontal language cortex"), ("Blunted or disinhibited affect", "n/a", "Disruption of limbic-cerebellar connections")],
  ["Verbal fluency, digit span backward and set-shifting tests after any posterior cerebellar lesion", "Sentence construction and grammar", "Mood and behavior history from the family"],
  ["A cerebellar lesion without ataxia is a Crus I lesion: it changes thinking rather than walking", "The right cerebellum serves the left frontal lobe: right Crus I lesions impair language", "Posterior lobe means cognitive, anterior lobe means motor"],
- [S(6, 229, 244), B(8, 67, 73), B(7, 53, 58)], synonyms=["superior semilunar lobule", "Crus I of the ansiform lobule"], mesh_ids=vm("cerebellar-lobule-crus-i"),
+ [R("sp-cerebellar-dysfunction"), R("sp-dentate-nucleus")], synonyms=["superior semilunar lobule", "Crus I of the ansiform lobule"], mesh_ids=vm("cerebellar-lobule-crus-i"),
  afferents=[("Prefrontal, parietal and temporal association cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Inferior olive (principal olive)", "climbing fibers")],
  efferents=[("Dentate nucleus (ventral, non-motor part)", "Purkinje axons"), ("Prefrontal and parietal cortex via the ventrolateral and mediodorsal thalamus", "superior cerebellar peduncle")]))
 
@@ -88,7 +86,7 @@ E.append(lob("cerebellar-lobule-crus-ii", "Crus II", "inf",
  [("Cerebellar cognitive-affective syndrome", "n/a", "Disruption of the cerebrocerebellar association loops"), ("Little or no limb ataxia", "n/a", "Absence of a somatotopic body map in Crus II"), ("Delayed brainstem compression from swelling after infarction", "bilateral", "Mass effect of the swollen posteroinferior hemisphere on the fourth ventricle and medulla")],
  ["Cognitive screening after a PICA stroke, not only gait testing", "Serial level of consciousness and gaze for 72 hours after a large cerebellar infarct", "Speech output in children after posterior fossa surgery"],
  ["A large Crus II infarct may walk normally and think badly", "Cerebellar stroke deteriorates late: the swelling peaks on the third day", "Posterior fossa mutism appears after a silent interval and is a dentate-outflow injury"],
- [S(6, 229, 244), B(8, 67, 73), B(19, 190, 194)], synonyms=["inferior semilunar lobule", "Crus II of the ansiform lobule"], mesh_ids=vm("cerebellar-lobule-crus-ii"), syndromes=["syn-cerebellar-hemispheric", "syn-pica-cerebellar-infarct"],
+ [R("sp-cerebellar-dysfunction"), R("sp-cerebellar-infarction")], synonyms=["inferior semilunar lobule", "Crus II of the ansiform lobule"], mesh_ids=vm("cerebellar-lobule-crus-ii"), syndromes=["syn-cerebellar-hemispheric", "syn-pica-cerebellar-infarct"],
  afferents=[("Prefrontal and parietal association cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Inferior olive", "climbing fibers")],
  efferents=[("Dentate nucleus", "Purkinje axons"), ("Prefrontal and parietal cortex via the thalamus", "superior cerebellar peduncle")]))
 
@@ -104,7 +102,7 @@ E.append(lob("cerebellar-lobule-viib", "Lobule VIIB", "inf",
  [("Working memory and sequencing deficits", "n/a", "Disruption of the prefrontal loops through lateral VIIB"), ("Saccadic dysmetria (vermian part)", "bilateral", "Loss of oculomotor vermis calibration of saccade amplitude"), ("Mild limb ataxia (medial part)", "ipsilateral", "Involvement of the paravermian sensorimotor representation")],
  ["Digit span and sequencing tasks", "Saccade accuracy to targets", "Finger-nose testing for a paravermian component"],
  ["VIIB is the border lobule: cognition laterally, movement medially, eye movements in the midline", "Saccadic overshoot with a normal brainstem points to the oculomotor vermis", "Posterior lobe strokes deserve a cognitive screen as much as a gait test"],
- [S(6, 229, 244), B(8, 67, 73), B(11, 96, 100)], synonyms=["gracile lobule", "lobule VIIB with the vermian tuber"], mesh_ids=vm("cerebellar-lobule-viib"),
+ [R("sp-cerebellar-dysfunction"), R("sp-dentate-nucleus")], synonyms=["gracile lobule", "lobule VIIB with the vermian tuber"], mesh_ids=vm("cerebellar-lobule-viib"),
  afferents=[("Prefrontal, parietal and sensorimotor cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Spinal cord (paravermian part)", "spinocerebellar tracts"), ("Superior colliculus and vestibular nuclei (vermis)", "tectocerebellar and vestibulocerebellar fibers")],
  efferents=[("Dentate and interposed nuclei; fastigial nucleus (vermis)", "Purkinje axons"), ("Prefrontal and motor cortex via the thalamus", "superior cerebellar peduncle")]))
 
@@ -120,7 +118,7 @@ E.append(lob("cerebellar-lobule-viiia", "Lobule VIIIA", "inf",
  [("Ipsilateral limb ataxia and dysmetria", "ipsilateral", "Loss of the second sensorimotor map"), ("Gait and trunk ataxia (vermian part)", "bilateral", "Loss of pyramis control of trunk posture through the fastigial nucleus"), ("Impaired rhythmic and bimanual coordination", "ipsilateral", "Loss of timing signals for sequential movements")],
  ["Finger-nose and heel-shin tests", "Rhythmic tapping and bimanual alternating movements", "Tandem gait"],
  ["The cerebellum maps the body twice: lobule VIII is the second, upside-down map", "Rhythm lives in lobule VIII: tapping in time fails with inferior cerebellar lesions", "Inferior cerebellar strokes combine vertigo (nodulus) with ataxia (VIII)"],
- [S(6, 229, 244), B(8, 67, 73)], synonyms=["biventer lobule (upper part)", "pyramis (vermis)"], mesh_ids=vm("cerebellar-lobule-viiia"),
+ [R("sp-spinocerebellar-dorsal-tract"), R("sp-cerebellar-dysfunction")], synonyms=["biventer lobule (upper part)", "pyramis (vermis)"], mesh_ids=vm("cerebellar-lobule-viiia"),
  afferents=[("Sensorimotor cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Spinal cord and lateral reticular nucleus", "spinocerebellar and reticulocerebellar fibers"), ("Inferior olive", "climbing fibers")],
  efferents=[("Interposed and dentate nuclei; fastigial nucleus (vermis)", "Purkinje axons"), ("Motor cortex and red nucleus via the superior peduncle", "cerebellar outflow")]))
 
@@ -136,7 +134,7 @@ E.append(lob("cerebellar-lobule-viiib", "Lobule VIIIB", "inf",
  [("Ipsilateral limb ataxia", "ipsilateral", "Loss of the lower part of the second sensorimotor map"), ("Mild dysarthria and oral incoordination", "ipsilateral", "Involvement of the face representation"), ("Gait instability", "bilateral", "Vermian pyramis-uvula involvement")],
  ["Limb coordination tests", "Speech articulation", "Cough headache and lower cranial nerve signs when Chiari or herniation is suspected"],
  ["The lowest cerebellar lobules are the first to be crowded when the posterior fossa is small", "A PICA infarct that swells pushes VIIIB and the tonsil into the foramen magnum", "Face and limbs are mapped again here, upside down relative to the anterior lobe"],
- [S(6, 229, 244), B(8, 67, 73), B(25, 271, 274)], synonyms=["biventer lobule (lower part)"], mesh_ids=vm("cerebellar-lobule-viiib"), syndromes=["syn-cerebellar-hemispheric", "syn-tonsillar-herniation", "syn-chiari-tonsillar-ectopia"],
+ [R("sp-spinocerebellar-dorsal-tract"), R("sp-cerebellar-dysfunction")], synonyms=["biventer lobule (lower part)"], mesh_ids=vm("cerebellar-lobule-viiib"), syndromes=["syn-cerebellar-hemispheric", "syn-tonsillar-herniation", "syn-chiari-tonsillar-ectopia"],
  afferents=[("Sensorimotor cortex via the pontine nuclei", "middle cerebellar peduncle"), ("Spinal cord and trigeminal nuclei", "spinocerebellar and trigeminocerebellar fibers"), ("Inferior olive", "climbing fibers")],
  efferents=[("Interposed and dentate nuclei", "Purkinje axons"), ("Fastigial nucleus (vermian part)", "Purkinje axons")]))
 
@@ -152,7 +150,7 @@ E.append(lob("cerebellar-lobule-ix", "Lobule IX", "inf",
  [("Vertigo, downbeat nystagmus and imbalance without limb ataxia", "bilateral", "Loss of uvular-nodular calibration of the vestibular nuclei"), ("Impaired vestibulo-ocular reflex adaptation and tilt perception", "bilateral", "Loss of vestibulocerebellar processing"), ("Medullary compression, apnea and death with herniation", "bilateral", "Tonsils driven into the foramen magnum")],
  ["HINTS examination: a normal head impulse with direction-changing or vertical nystagmus is central", "Ability to stand and walk: inferior cerebellar strokes cannot stand", "Cough headache and lower cranial nerve signs for Chiari"],
  ["Isolated vertigo with a normal head-impulse test is a nodulus-uvula stroke until MRI proves otherwise", "Tonsils belong above the foramen magnum; five millimeters below is Chiari", "Never do a lumbar puncture when the tonsils are already in the foramen"],
- [S(6, 229, 244), S(5, 220, 221), B(8, 67, 73), B(12, 108, 114), B(25, 271, 274)], synonyms=["uvula and tonsils", "vestibulocerebellum (with the nodulus)"], mesh_ids=vm("cerebellar-lobule-ix"), pathways=["pathway-vestibular-vor", "pathway-cerebellar-circuits"], syndromes=["syn-tonsillar-herniation", "syn-chiari-tonsillar-ectopia", "syn-central-vs-peripheral-vertigo", "syn-pica-cerebellar-infarct"],
+ [R("sp-cerebellum"), R("sp-vestibular-pathways"), R("sp-tonsillar-herniation")], synonyms=["uvula and tonsils", "vestibulocerebellum (with the nodulus)"], mesh_ids=vm("cerebellar-lobule-ix"), pathways=["pathway-vestibular-vor", "pathway-cerebellar-circuits"], syndromes=["syn-tonsillar-herniation", "syn-chiari-tonsillar-ectopia", "syn-central-vs-peripheral-vertigo", "syn-pica-cerebellar-infarct"],
  afferents=[("Vestibular nerve and nuclei", "juxtarestiform body"), ("Inferior olive (visual motion)", "climbing fibers"), ("Pontine nuclei", "middle cerebellar peduncle")],
  efferents=[("Vestibular nuclei (direct)", "juxtarestiform body"), ("Fastigial nucleus", "Purkinje axons")]))
 
@@ -168,7 +166,7 @@ E.append(lob("cerebellar-lobule-x", "Lobule X (flocculonodular)", "inf",
  [("Gaze-evoked and downbeat nystagmus, impaired pursuit", "bilateral", "Loss of flocculus control of gaze holding and the vestibulo-ocular reflex"), ("Vertigo and truncal ataxia with periodic alternating nystagmus", "bilateral", "Loss of nodulus-uvula processing of vestibular signals"), ("Inability to suppress the vestibulo-ocular reflex by fixation", "bilateral", "Loss of the flocculus's visual-vestibular integration")],
  ["Observe nystagmus in primary and eccentric gaze and on downgaze", "Smooth pursuit and VOR suppression (fixate on the thumbs while turning)", "Stance with feet together and eyes open"],
  ["The flocculus is the cerebellum's gaze stabilizer; downbeat nystagmus points to it or to the craniocervical junction", "Medulloblastoma grows from the nodulus, which is why it fills the fourth ventricle", "A big flocculus is a normal finding that has caused unnecessary surgery"],
- [S(6, 229, 244), S(11, 341, 346), B(8, 67, 73), B(12, 108, 114), B(11, 96, 100)], synonyms=["flocculonodular lobe", "archicerebellum", "vestibulocerebellum"], mesh_ids=vm("cerebellar-lobule-x"), parent="flocculonodular-lobe", pathways=["pathway-vestibular-vor", "pathway-cerebellar-circuits"], syndromes=["syn-central-vs-peripheral-vertigo", "syn-cerebellar-vermian-midline", "syn-cerebellopontine-angle", "syn-aica-lateral-pontine"],
+ [R("sp-vestibulo-ocular-reflex"), R("sp-vestibular-pathways"), R("sp-tonsillar-herniation")], synonyms=["flocculonodular lobe", "archicerebellum", "vestibulocerebellum"], mesh_ids=vm("cerebellar-lobule-x"), parent="flocculonodular-lobe", pathways=["pathway-vestibular-vor", "pathway-cerebellar-circuits"], syndromes=["syn-central-vs-peripheral-vertigo", "syn-cerebellar-vermian-midline", "syn-cerebellopontine-angle", "syn-aica-lateral-pontine"],
  afferents=[("Vestibular nerve and nuclei", "juxtarestiform body"), ("Inferior olive (visual climbing fibers)", "inferior cerebellar peduncle"), ("Pontine nuclei (visual and pursuit signals)", "middle cerebellar peduncle")],
  efferents=[("Vestibular nuclei (direct Purkinje projection)", "juxtarestiform body"), ("Fastigial nucleus (nodulus)", "Purkinje axons")]))
 
@@ -186,7 +184,7 @@ E.append(cortex("cerebellar-white-matter", "Cerebellar white matter", "x",
  [("Ipsilateral limb ataxia, dysarthria and tremor", "ipsilateral", "Disconnection of the cortex from the deep nuclei and interruption of the outflow"), ("Nystagmus and gait ataxia", "bilateral", "Interruption of vestibulocerebellar fibers"), ("Fourth ventricular compression and hydrocephalus", "bilateral", "Mass effect from swelling, hemorrhage or tumor in the white matter")],
  ["Limb and gait coordination, speech and eye movements", "Serial consciousness and gaze after a cerebellar infarct", "Metabolic and genetic evaluation when the white-matter change is symmetric"],
  ["Cerebellar white-matter lesions behave like cortical ones but add tremor when they catch the outflow", "Symmetric dentate and white-matter signal change is metabolic until proved otherwise", "The arbor vitae is the map of the peduncles: each branch carries one lobule's fibers"],
- [S(6, 229, 244), S(7, 262, 264), B(8, 67, 73), B(21, 224, 228), B(31, 309, 312)], synonyms=["arbor vitae", "cerebellar medullary center"], system="cerebellum", subsystem="white-matter", parent="cerebellum", territories=["territory-superior-cerebellar", "territory-inferior-cerebellar"], pathways=["pathway-cerebellar-circuits", "pathway-posterior-spinocerebellar", "pathway-anterior-spinocerebellar"], syndromes=["syn-cerebellar-hemispheric", "syn-multiple-sclerosis-pattern", "syn-pica-cerebellar-infarct"],
+ [R("sp-cerebellum"), R("sp-dentate-nucleus")], synonyms=["arbor vitae", "cerebellar medullary center"], system="cerebellum", subsystem="white-matter", parent="cerebellum", territories=["territory-superior-cerebellar", "territory-inferior-cerebellar"], pathways=["pathway-cerebellar-circuits", "pathway-posterior-spinocerebellar", "pathway-anterior-spinocerebellar"], syndromes=["syn-cerebellar-hemispheric", "syn-multiple-sclerosis-pattern", "syn-pica-cerebellar-infarct"],
  afferents=[("Pontine nuclei", "middle cerebellar peduncle (mossy fibers)"), ("Inferior olive", "inferior cerebellar peduncle (climbing fibers)"), ("Spinal cord and vestibular nuclei", "inferior and superior cerebellar peduncles")],
  efferents=[("Red nucleus and thalamus (from the dentate and interposed nuclei)", "superior cerebellar peduncle"), ("Vestibular nuclei and reticular formation (from the fastigial nucleus)", "inferior cerebellar peduncle and juxtarestiform body")],
  pitfalls=["Cerebellar white-matter lesions in multiple sclerosis are often clinically silent; a normal examination does not exclude them"], tags=["arbor vitae", "peduncles", "white matter"]))

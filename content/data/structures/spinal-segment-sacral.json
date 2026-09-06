@@ -1,0 +1,180 @@
+{
+  "kind": "structure",
+  "id": "spinal-segment-sacral",
+  "name": "Sacral and coccygeal spinal cord (S1-S5, Co)",
+  "synonyms": [
+    "conus medullaris",
+    "sacral cord",
+    "S1-S5 cord segments"
+  ],
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-segment-sacral"
+  ],
+  "summary": "The sacral and coccygeal segments make up the conus medullaris, the tapering tip of the cord that lies opposite the T12 and L1 vertebrae and ends at the L1-L2 disc in most adults. They are the smallest segments but they carry the reflex machinery of the pelvic floor: the parasympathetic nucleus at S2, S3 and S4 that empties the bladder and rectum and produces erection, Onuf nucleus that holds the motor neurons of the external urethral and anal sphincters, and the afferents of the saddle area. A lesion confined to the conus therefore produces early, symmetric retention with overflow incontinence, saddle anesthesia, impotence and absent anal and bulbocavernosus reflexes, with little or no leg weakness, and it is separated from a cauda equina lesion by being symmetric, less painful and less likely to abolish the ankle jerks on one side only.",
+  "anatomy": {
+    "location": "In the vertebral canal opposite the T12 and L1 vertebral bodies, forming the conus medullaris, which tapers to the filum terminale at about the L1-L2 intervertebral disc in the adult and one or two levels lower in the newborn. The conus lies surrounded by the roots of the cauda equina, which fill the lumbar theca below it, and it is supplied by a fine anastomotic basket rather than by a single feeding artery.",
+    "subdivisions": [
+      {
+        "name": "S1-S2",
+        "note": "Plantar flexors and small muscles of the foot, the ankle jerk and sensation of the sole and the back of the thigh."
+      },
+      {
+        "name": "S2-S4",
+        "note": "Pelvic parasympathetic nucleus, Onuf nucleus for the external sphincters, and the saddle dermatomes."
+      },
+      {
+        "name": "S5 and coccygeal",
+        "note": "The last dermatome, a small patch of skin over the coccyx, and the origin of the filum terminale."
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-lateral-spinothalamic"
+    ]
+  },
+  "function": "The sacral cord supplies the small muscles of the foot and the pelvic floor, receives sensation from the back of the thigh, the sole and the perineum, and runs the autonomic control of the bladder, bowel and genitals. Its parasympathetic preganglionic neurons at S2 to S4 leave in the pelvic splanchnic nerves to contract the detrusor and relax the internal sphincter, while the somatic motor neurons of Onuf nucleus hold the external sphincters closed; the balance between them is what continence is. The S1 segment supplies the gastrocnemius and soleus and the ankle jerk, S2 to S4 the anal and bulbocavernosus reflexes, and the coccygeal segment a small patch of skin over the coccyx. Because the sacral fibers of the spinothalamic tract lie most laterally, an intramedullary lesion higher up spares sacral sensation until late, the sacral sparing that separates an intrinsic cord lesion from an extrinsic compression.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "posterior-spinal-arteries",
+      "lateral sacral and iliolumbar radicular arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -70
+        },
+        "label": "cord cross-section; the conus lies at the thoracolumbar junction, below the MNI volume"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "rostral cord in the volume; the conus is at the L1-L2 disc far caudal to it"
+      }
+    ],
+    "normalAppearance": "On sagittal T2 the conus tapers smoothly from the lumbosacral enlargement and ends at or above the L1-L2 disc; the filum terminale continues as a thin midline strand among the cauda equina roots.",
+    "pathology": [
+      {
+        "pathology": "Conus medullaris syndrome",
+        "modality": "MRI",
+        "finding": "Focal lesion of the cord tip at T12-L1 with early symmetric urinary retention, saddle anesthesia and absent anal reflex; leg power is often preserved.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Tethered cord with a low conus",
+        "modality": "MRI",
+        "finding": "Conus ending below the L2 vertebral body with a thickened fatty filum, in a patient with back pain, urinary symptoms and a cutaneous stigma over the lower back.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Conus ependymoma or myxopapillary tumor",
+        "modality": "MRI",
+        "finding": "Enhancing mass of the conus and filum with hemorrhage at its margins and slowly progressive sphincter failure.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal and axial T2 of the thoracolumbar junction with contrast when a tumor or tethering is suspected."
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Early symmetric urinary retention with overflow incontinence",
+        "side": "bilateral",
+        "mechanism": "Loss of the S2-S4 parasympathetic nucleus that drives the detrusor"
+      },
+      {
+        "deficit": "Saddle anesthesia",
+        "side": "bilateral",
+        "mechanism": "Loss of the S3-S5 dorsal root entry zones serving the perineum"
+      },
+      {
+        "deficit": "Absent anal and bulbocavernosus reflexes",
+        "side": "bilateral",
+        "mechanism": "Interruption of the S2-S4 reflex arcs through Onuf nucleus"
+      },
+      {
+        "deficit": "Absent ankle jerks with preserved knee jerks",
+        "side": "bilateral",
+        "mechanism": "Loss of the S1 reflex arc while the L3-L4 arc above the lesion is spared"
+      },
+      {
+        "deficit": "Impotence",
+        "side": "bilateral",
+        "mechanism": "Loss of the sacral parasympathetic outflow in the pelvic splanchnic nerves"
+      }
+    ],
+    "examination": [
+      "Test perianal pinprick and light touch in all four saddle quadrants",
+      "Check anal tone, voluntary squeeze, the anal wink and the bulbocavernosus reflex",
+      "Measure a post-void bladder scan in anyone with new back pain and leg symptoms",
+      "Compare ankle jerks with knee jerks and look for asymmetry that would suggest the cauda equina instead"
+    ],
+    "syndromes": [
+      "syn-conus-vs-cauda-equina"
+    ],
+    "pearls": [
+      "New urinary retention with back pain is a conus or cauda equina emergency and needs imaging the same day",
+      "Symmetric, painless and early sphincter failure is the conus; asymmetric, painful and radicular is the cauda equina",
+      "Sacral sparing points to an intramedullary lesion, because the sacral fibers run most laterally in the spinothalamic tract"
+    ]
+  },
+  "pitfalls": [
+    "DERIVED MESH: the four cord blocks are not measured on an individual. The Z-Anatomy cord surface was cut by horizontal planes placed at the classical cord-segment to vertebral-body relationship read off the Z-Anatomy vertebrae, so the block boundaries teach the rule rather than record a specimen; use them for orientation, never to read a level off an image.",
+    "The conus sits at the T12-L1 vertebral level, so a lumbar puncture below L2 is safe in an adult but not in an infant, whose conus lies lower",
+    "A normal ankle jerk does not exclude a conus lesion, because the sphincter segments can be hit alone"
+  ],
+  "citations": [
+    {
+      "ref": "sp-spinal-cord",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-cord-morphology",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-conus-medullaris",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cauda-equina-and-conus-medullaris-syndromes",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-back-cauda-equina",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dorsal-root-ganglion",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "spinal cord",
+    "segment",
+    "conus",
+    "derived"
+  ],
+  "status": "draft",
+  "subsystem": "segments",
+  "parent": "spinal-cord",
+  "level": {
+    "region": "spinal",
+    "sub": "sacral"
+  }
+}

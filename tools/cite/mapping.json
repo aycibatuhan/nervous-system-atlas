@@ -1,0 +1,4855 @@
+{
+ "_doc": "Manual entryId -> refs overrides for the citation migration. Each value is a list of {nbk|ref, section?, note?}; an entry listed here ignores automatic matching. Added by the manual mapping pass for entries with no exact StatPearls title.",
+ "map": {
+  "g-achromatopsia-cerebral": [
+   {
+    "nbk": "NBK544355",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK493156"
+   }
+  ],
+  "g-akinetic-mutism": [
+   {
+    "nbk": "NBK537093",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK537077",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK430722"
+   }
+  ],
+  "g-akinetopsia": [
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK493156"
+   },
+   {
+    "nbk": "NBK519512",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-alexia-without-agraphia": [
+   {
+    "nbk": "NBK557669",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK560722"
+   },
+   {
+    "nbk": "NBK448209",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-alpha-rhythm": [
+   {
+    "nbk": "NBK539805",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK563295"
+   },
+   {
+    "nbk": "NBK564371"
+   }
+  ],
+  "g-amyloid-plaque": [
+   {
+    "nbk": "NBK459119"
+   },
+   {
+    "nbk": "NBK499922",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-aprosodia": [
+   {
+    "nbk": "NBK559315",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK538496",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-arterial-territory": [
+   {
+    "nbk": "NBK532297",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499997"
+   }
+  ],
+  "g-artery-of-percheron": [
+   {
+    "nbk": "NBK549908",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK538474",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK532296"
+   }
+  ],
+  "g-asomatognosia": [
+   {
+    "nbk": "NBK562184",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK493156"
+   }
+  ],
+  "g-babinski-sign": [
+   {
+    "nbk": "NBK519009"
+   },
+   {
+    "nbk": "NBK541082"
+   },
+   {
+    "nbk": "NBK537305"
+   }
+  ],
+  "g-ballismus": [
+   {
+    "nbk": "NBK559127",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK559002",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK430923"
+   }
+  ],
+  "g-bradykinesia": [
+   {
+    "nbk": "NBK542224",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK470193"
+   },
+   {
+    "nbk": "NBK537141",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-burst-suppression": [
+   {
+    "nbk": "NBK564371"
+   },
+   {
+    "nbk": "NBK563295"
+   }
+  ],
+  "g-butterfly-glioma": [
+   {
+    "nbk": "NBK558954",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK448209",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-chromatolysis": [
+   {
+    "nbk": "NBK549848",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK441977",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-circumventricular-organs": [
+   {
+    "nbk": "NBK544249",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557721"
+   },
+   {
+    "nbk": "NBK557510"
+   }
+  ],
+  "g-commissural-fibers": [
+   {
+    "nbk": "NBK448209",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537247",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-confabulation": [
+   {
+    "nbk": "NBK470344",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK532981"
+   }
+  ],
+  "g-contralateral": [
+   {
+    "nbk": "NBK545314",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK507824",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-core-penumbra-mismatch": [
+   {
+    "nbk": "NBK546635",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK535369"
+   },
+   {
+    "nbk": "NBK499997"
+   }
+  ],
+  "g-cortical-magnification": [
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544320",
+    "section": "Blood Supply and Lymphatics"
+   }
+  ],
+  "g-cortical-ribbon-sign": [
+   {
+    "nbk": "NBK507860",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK539833"
+   }
+  ],
+  "g-cortical-spreading-depression": [
+   {
+    "nbk": "NBK554611",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK560787",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-crossed-cerebellar-diaschisis": [
+   {
+    "nbk": "NBK582135"
+   },
+   {
+    "nbk": "NBK538167",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-crossed-syndrome": [
+   {
+    "nbk": "NBK560896",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK544297",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-cushing-response": [
+   {
+    "nbk": "NBK549801"
+   },
+   {
+    "nbk": "NBK482119"
+   },
+   {
+    "nbk": "NBK542246"
+   }
+  ],
+  "g-dawson-fingers": [
+   {
+    "nbk": "NBK499849",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK562167"
+   }
+  ],
+  "g-decussation": [
+   {
+    "nbk": "NBK545314",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK526040",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542287"
+   }
+  ],
+  "g-default-mode-network": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499922",
+    "section": "Evaluation"
+   }
+  ],
+  "g-disconnection-syndrome": [
+   {
+    "nbk": "NBK537006",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK448209",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK557669"
+   }
+  ],
+  "g-dissociated-sensory-loss": [
+   {
+    "nbk": "NBK537110",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK507824",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK526040"
+   }
+  ],
+  "g-dopamine-transporter-imaging": [
+   {
+    "nbk": "NBK470193",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK603715"
+   },
+   {
+    "nbk": "NBK542224",
+    "section": "Evaluation"
+   }
+  ],
+  "g-dorsal-stream": [
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544347"
+   },
+   {
+    "nbk": "NBK553189"
+   }
+  ],
+  "g-dural-tail": [
+   {
+    "nbk": "NBK560538",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK545301",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-dysexecutive-syndrome": [
+   {
+    "nbk": "NBK532981",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK499919",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-dysmetria": [
+   {
+    "nbk": "NBK545251",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK562317",
+    "section": "History and Physical"
+   }
+  ],
+  "g-empty-delta-sign": [
+   {
+    "nbk": "NBK459315",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK482257",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-excitotoxicity": [
+   {
+    "nbk": "NBK519495",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK539833",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-extinction": [
+   {
+    "nbk": "NBK562184",
+    "section": "History and Physical"
+   }
+  ],
+  "g-eye-of-the-tiger-sign": [
+   {
+    "nbk": "NBK557755",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-false-localizing-sign": [
+   {
+    "nbk": "NBK537108",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK482119"
+   },
+   {
+    "nbk": "NBK482177",
+    "section": "Etiology"
+   }
+  ],
+  "g-fasciculation": [
+   {
+    "nbk": "NBK560774",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK539814",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-flair": [
+   {
+    "nbk": "NBK564320"
+   }
+  ],
+  "g-floppy-infant": [
+   {
+    "nbk": "NBK562209",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK539814"
+   }
+  ],
+  "g-focal-cortical-dysplasia": [
+   {
+    "nbk": "NBK564376",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK557740"
+   },
+   {
+    "nbk": "NBK562151"
+   }
+  ],
+  "g-forehead-sparing": [
+   {
+    "nbk": "NBK482290",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK554569",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537305"
+   }
+  ],
+  "g-frontal-release-signs": [
+   {
+    "nbk": "NBK554606"
+   },
+   {
+    "nbk": "NBK532981",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK553125"
+   }
+  ],
+  "g-fusiform-face-area": [
+   {
+    "nbk": "NBK559324",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482504"
+   }
+  ],
+  "g-glymphatic-system": [
+   {
+    "nbk": "NBK470578",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK606111"
+   }
+  ],
+  "g-heteroplasmy": [
+   {
+    "nbk": "NBK532959",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK555923",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK557512"
+   }
+  ],
+  "g-heterotopia": [
+   {
+    "nbk": "NBK553171"
+   },
+   {
+    "nbk": "NBK560766"
+   },
+   {
+    "nbk": "NBK526024"
+   }
+  ],
+  "g-hints": [
+   {
+    "nbk": "NBK441861",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK482356",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK539711"
+   }
+  ],
+  "g-homonymous-hemianopia": [
+   {
+    "nbk": "NBK558929"
+   },
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK558982"
+   }
+  ],
+  "g-hoover-sign": [
+   {
+    "nbk": "NBK551567",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK532253"
+   }
+  ],
+  "g-hot-cross-bun-sign": [
+   {
+    "nbk": "NBK560502",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK585113",
+    "section": "Evaluation"
+   }
+  ],
+  "g-hummingbird-sign": [
+   {
+    "nbk": "NBK526098",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK585113",
+    "section": "Evaluation"
+   }
+  ],
+  "g-hyperdense-artery-sign": [
+   {
+    "nbk": "NBK546635"
+   },
+   {
+    "nbk": "NBK556132",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK499997",
+    "section": "Evaluation"
+   }
+  ],
+  "g-hypsarrhythmia": [
+   {
+    "nbk": "NBK537251",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK558912"
+   }
+  ],
+  "g-insular-ribbon-sign": [
+   {
+    "nbk": "NBK570606",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK546635"
+   },
+   {
+    "nbk": "NBK556132",
+    "section": "Evaluation"
+   }
+  ],
+  "g-jacksonian-march": [
+   {
+    "nbk": "NBK500005",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK544218",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK542188"
+   }
+  ],
+  "g-kernohan-notch": [
+   {
+    "nbk": "NBK537108",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK560536"
+   },
+   {
+    "nbk": "NBK542246"
+   }
+  ],
+  "g-lacune": [
+   {
+    "nbk": "NBK563216"
+   },
+   {
+    "nbk": "NBK542181",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-light-near-dissociation": [
+   {
+    "nbk": "NBK537179"
+   },
+   {
+    "nbk": "NBK531471"
+   },
+   {
+    "nbk": "NBK441892"
+   }
+  ],
+  "g-long-term-potentiation": [
+   {
+    "nbk": "NBK519495",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557811"
+   }
+  ],
+  "g-macular-sparing": [
+   {
+    "nbk": "NBK482504",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK532296"
+   },
+   {
+    "nbk": "NBK558929"
+   }
+  ],
+  "g-malignant-mca-infarct": [
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK537272"
+   },
+   {
+    "nbk": "NBK542246"
+   }
+  ],
+  "g-mesolimbic-pathway": [
+   {
+    "nbk": "NBK535451",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538242"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "g-meyer-loop": [
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK558982"
+   },
+   {
+    "nbk": "NBK519512",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-mononeuropathy": [
+   {
+    "nbk": "NBK549848"
+   },
+   {
+    "nbk": "NBK448179"
+   },
+   {
+    "nbk": "NBK555929"
+   }
+  ],
+  "g-monro-kellie-doctrine": [
+   {
+    "nbk": "NBK482119",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK542298"
+   },
+   {
+    "nbk": "NBK537272",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-motor-unit": [
+   {
+    "nbk": "NBK554616",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK611987"
+   },
+   {
+    "nbk": "NBK537140"
+   }
+  ],
+  "g-myotome": [
+   {
+    "nbk": "NBK535401",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK441828",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK560878",
+    "section": "History and Physical"
+   }
+  ],
+  "g-neglect": [
+   {
+    "nbk": "NBK562184"
+   },
+   {
+    "nbk": "NBK513361"
+   },
+   {
+    "nbk": "NBK556132",
+    "section": "History and Physical"
+   }
+  ],
+  "g-neurofibrillary-tangle": [
+   {
+    "nbk": "NBK499922",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK459119"
+   },
+   {
+    "nbk": "NBK562226",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-neurulation": [
+   {
+    "nbk": "NBK542285"
+   },
+   {
+    "nbk": "NBK557414"
+   },
+   {
+    "nbk": "NBK545244"
+   }
+  ],
+  "g-nigrostriatal-pathway": [
+   {
+    "nbk": "NBK536995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK470193",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-oligoclonal-bands": [
+   {
+    "nbk": "NBK499849",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK470578",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-optic-ataxia": [
+   {
+    "nbk": "NBK544347"
+   },
+   {
+    "nbk": "NBK580553"
+   }
+  ],
+  "g-orexin": [
+   {
+    "nbk": "NBK549782",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK621969",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-papez-circuit": [
+   {
+    "nbk": "NBK538491",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537192",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537077"
+   }
+  ],
+  "g-paraphasia": [
+   {
+    "nbk": "NBK559315",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK537006"
+   },
+   {
+    "nbk": "NBK533001",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-penumbra": [
+   {
+    "nbk": "NBK499997",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK535369"
+   },
+   {
+    "nbk": "NBK546635"
+   }
+  ],
+  "g-periodic-discharges": [
+   {
+    "nbk": "NBK564371"
+   },
+   {
+    "nbk": "NBK589709"
+   },
+   {
+    "nbk": "NBK558912"
+   }
+  ],
+  "g-periventricular-leukomalacia": [
+   {
+    "nbk": "NBK538147",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK538310"
+   }
+  ],
+  "g-polymicrogyria": [
+   {
+    "nbk": "NBK553171"
+   },
+   {
+    "nbk": "NBK560766"
+   }
+  ],
+  "g-projection-fibers": [
+   {
+    "nbk": "NBK542181",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK546699",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535423"
+   }
+  ],
+  "g-rapd": [
+   {
+    "nbk": "NBK553169",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK537180"
+   },
+   {
+    "nbk": "NBK557853",
+    "section": "History and Physical"
+   }
+  ],
+  "g-retinotopy": [
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545310"
+   }
+  ],
+  "g-ring-enhancement": [
+   {
+    "nbk": "NBK441841",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK558954",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK470246",
+    "section": "Evaluation"
+   }
+  ],
+  "g-romberg-sign": [
+   {
+    "nbk": "NBK563187"
+   },
+   {
+    "nbk": "NBK507888",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-semantic-dementia": [
+   {
+    "nbk": "NBK563145"
+   },
+   {
+    "nbk": "NBK559286"
+   },
+   {
+    "nbk": "NBK519512",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-sensory-level": [
+   {
+    "nbk": "NBK507824",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560721",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK535401"
+   }
+  ],
+  "g-simultanagnosia": [
+   {
+    "nbk": "NBK544347"
+   },
+   {
+    "nbk": "NBK493156"
+   },
+   {
+    "nbk": "NBK580553"
+   }
+  ],
+  "g-sleep-spindle": [
+   {
+    "nbk": "NBK537023"
+   },
+   {
+    "nbk": "NBK526132"
+   },
+   {
+    "nbk": "NBK549908",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-somatotopy": [
+   {
+    "nbk": "NBK549841",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544218",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535423",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-spot-sign": [
+   {
+    "nbk": "NBK553103",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK559173",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK546635"
+   }
+  ],
+  "g-swallow-tail-sign": [
+   {
+    "nbk": "NBK470193",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK536995",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-synkinesis": [
+   {
+    "nbk": "NBK482290"
+   },
+   {
+    "nbk": "NBK549815"
+   },
+   {
+    "nbk": "NBK554569",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-syrinx": [
+   {
+    "nbk": "NBK537110"
+   },
+   {
+    "nbk": "NBK554609",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK470405"
+   }
+  ],
+  "g-todd-paresis": [
+   {
+    "nbk": "NBK526004",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK541044"
+   },
+   {
+    "nbk": "NBK500005"
+   }
+  ],
+  "g-top-of-basilar-syndrome": [
+   {
+    "nbk": "NBK532241"
+   },
+   {
+    "nbk": "NBK459137",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK532296"
+   }
+  ],
+  "g-transependymal-edema": [
+   {
+    "nbk": "NBK560875",
+    "section": "Evaluation"
+   },
+   {
+    "nbk": "NBK537272",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-trigeminal-autonomic-cephalalgia": [
+   {
+    "nbk": "NBK544241"
+   },
+   {
+    "nbk": "NBK558980"
+   },
+   {
+    "nbk": "NBK539729",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-trigeminocervical-complex": [
+   {
+    "nbk": "NBK539729",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK507862",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK560787",
+    "section": "Pathophysiology"
+   }
+  ],
+  "g-u-fibers": [
+   {
+    "nbk": "NBK562167"
+   },
+   {
+    "nbk": "NBK560744"
+   },
+   {
+    "nbk": "NBK430816"
+   }
+  ],
+  "g-vasogenic-edema": [
+   {
+    "nbk": "NBK537272",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK557721"
+   },
+   {
+    "nbk": "NBK537065"
+   }
+  ],
+  "g-vegetative-state": [
+   {
+    "nbk": "NBK430722"
+   },
+   {
+    "nbk": "NBK559026"
+   },
+   {
+    "nbk": "NBK538159"
+   }
+  ],
+  "g-ventral-stream": [
+   {
+    "nbk": "NBK493156"
+   },
+   {
+    "nbk": "NBK559324"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   }
+  ],
+  "g-visual-word-form-area": [
+   {
+    "nbk": "NBK557669"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-wallerian-degeneration": [
+   {
+    "nbk": "NBK549848",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK562304"
+   },
+   {
+    "nbk": "NBK544316"
+   }
+  ],
+  "g-wartenberg-syndrome": [
+   {
+    "nbk": "NBK545200"
+   },
+   {
+    "nbk": "NBK534840",
+    "section": "Clinical Significance"
+   }
+  ],
+  "g-watershed": [
+   {
+    "nbk": "NBK499997",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK532297",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK442025"
+   }
+  ],
+  "pathway-cerebellar-circuits": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545154"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "pathway-horizontal-gaze": [
+   {
+    "nbk": "NBK544265",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK441970"
+   },
+   {
+    "nbk": "NBK556102"
+   }
+  ],
+  "pathway-oculosympathetic": [
+   {
+    "nbk": "NBK500000",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK544331"
+   },
+   {
+    "nbk": "NBK542195"
+   }
+  ],
+  "pathway-reticulospinal": [
+   {
+    "nbk": "NBK556102",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK559135"
+   },
+   {
+    "nbk": "NBK507869",
+    "section": "Pathophysiology"
+   }
+  ],
+  "pathway-rubrospinal": [
+   {
+    "nbk": "NBK551628",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK559135"
+   }
+  ],
+  "pathway-vertical-gaze": [
+   {
+    "nbk": "NBK441892"
+   },
+   {
+    "nbk": "NBK551509",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537126"
+   }
+  ],
+  "pathway-vestibulospinal": [
+   {
+    "nbk": "NBK557380",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK562261"
+   },
+   {
+    "nbk": "NBK559135"
+   }
+  ],
+  "arachnoid-granulations": [
+   {
+    "nbk": "NBK546615",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557521"
+   },
+   {
+    "nbk": "NBK482257"
+   }
+  ],
+  "arachnoid-mater": [
+   {
+    "nbk": "NBK557521",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK547755"
+   },
+   {
+    "nbk": "NBK545301"
+   }
+  ],
+  "arteries-pontine": [
+   {
+    "nbk": "NBK459137",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560896"
+   },
+   {
+    "nbk": "NBK549894"
+   }
+  ],
+  "artery-acom": [
+   {
+    "nbk": "NBK507902"
+   },
+   {
+    "nbk": "NBK549894",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537333"
+   }
+  ],
+  "artery-pcom": [
+   {
+    "nbk": "NBK526112",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK507902"
+   },
+   {
+    "nbk": "NBK556061"
+   }
+  ],
+  "artery-sca": [
+   {
+    "nbk": "NBK470416"
+   },
+   {
+    "nbk": "NBK459137",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549894"
+   }
+  ],
+  "autonomic-cranial-parasympathetic": [
+   {
+    "nbk": "NBK553141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553182"
+   },
+   {
+    "nbk": "NBK545308"
+   }
+  ],
+  "autonomic-sacral-parasympathetic": [
+   {
+    "nbk": "NBK557419",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560617"
+   },
+   {
+    "nbk": "NBK538533"
+   }
+  ],
+  "basal-forebrain-cholinergic": [
+   {
+    "nbk": "NBK499922",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK557825"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "cerebellar-hemisphere": [
+   {
+    "nbk": "NBK554381",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cerebellar-lobule-crus-i": [
+   {
+    "nbk": "NBK545251",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "cerebellar-lobule-crus-ii": [
+   {
+    "nbk": "NBK545251",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK470416"
+   }
+  ],
+  "cerebellar-lobule-v": [
+   {
+    "nbk": "NBK556013",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cerebellar-lobule-vi": [
+   {
+    "nbk": "NBK545251",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "cerebellar-lobule-viib": [
+   {
+    "nbk": "NBK545251",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "cerebellar-lobule-viiia": [
+   {
+    "nbk": "NBK556013",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cerebellar-lobule-viiib": [
+   {
+    "nbk": "NBK556013",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cerebellar-lobule-x": [
+   {
+    "nbk": "NBK545297",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557380"
+   },
+   {
+    "nbk": "NBK562170"
+   }
+  ],
+  "cerebellar-vermis": [
+   {
+    "nbk": "NBK556013",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cerebral-peduncle-crus": [
+   {
+    "nbk": "NBK551509",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535423"
+   },
+   {
+    "nbk": "NBK537108"
+   }
+  ],
+  "cervical-enlargement": [
+   {
+    "nbk": "NBK531473",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560721"
+   },
+   {
+    "nbk": "NBK539814"
+   }
+  ],
+  "claustrum": [
+   {
+    "nbk": "NBK542170",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK570606"
+   }
+  ],
+  "corona-radiata": [
+   {
+    "nbk": "NBK542181",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535423"
+   },
+   {
+    "nbk": "NBK563216"
+   }
+  ],
+  "cortex-central-operculum": [
+   {
+    "nbk": "NBK574552",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549825"
+   },
+   {
+    "nbk": "NBK544218"
+   }
+  ],
+  "cortex-lateral-occipital-inferior": [
+   {
+    "nbk": "NBK493156"
+   },
+   {
+    "nbk": "NBK559324"
+   },
+   {
+    "nbk": "NBK553189"
+   }
+  ],
+  "cortex-lateral-occipital-superior": [
+   {
+    "nbk": "NBK544347"
+   },
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK562184"
+   }
+  ],
+  "cortex-premotor-sma": [
+   {
+    "nbk": "NBK542188",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK585110"
+   },
+   {
+    "nbk": "NBK544218"
+   }
+  ],
+  "cortex-supplementary-motor": [
+   {
+    "nbk": "NBK542188",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK585110"
+   },
+   {
+    "nbk": "NBK537333"
+   }
+  ],
+  "cortex-supracalcarine": [
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK558929",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK538493"
+   }
+  ],
+  "cortex-temporal-fusiform-anterior": [
+   {
+    "nbk": "NBK559324",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK493156",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK563145"
+   }
+  ],
+  "cortex-temporo-occipital-fusiform": [
+   {
+    "nbk": "NBK559324",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557669",
+    "section": "Pathophysiology"
+   }
+  ],
+  "dorsal-motor-nucleus-vagus": [
+   {
+    "nbk": "NBK545209",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553141"
+   }
+  ],
+  "flocculonodular-lobe": [
+   {
+    "nbk": "NBK562261",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557380",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545297"
+   }
+  ],
+  "frontal-eye-field": [
+   {
+    "nbk": "NBK545214",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544224",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544265",
+    "section": "Clinical Significance"
+   }
+  ],
+  "gyrus-angular": [
+   {
+    "nbk": "NBK519528",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK557669",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK533001",
+    "section": "Structure and Function"
+   }
+  ],
+  "gyrus-inferior-temporal-posterior": [
+   {
+    "nbk": "NBK493156",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553189"
+   }
+  ],
+  "gyrus-inferior-temporal-temporooccipital": [
+   {
+    "nbk": "NBK493156",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544320"
+   }
+  ],
+  "gyrus-middle-temporal-anterior": [
+   {
+    "nbk": "NBK563145",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK559315",
+    "section": "Etiology"
+   }
+  ],
+  "gyrus-middle-temporal-posterior": [
+   {
+    "nbk": "NBK533001",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK441951",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK559315"
+   }
+  ],
+  "gyrus-middle-temporal-temporooccipital": [
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553189"
+   },
+   {
+    "nbk": "NBK544320"
+   }
+  ],
+  "gyrus-occipital-fusiform": [
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538493"
+   },
+   {
+    "nbk": "NBK559324"
+   }
+  ],
+  "gyrus-paracingulate": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545214",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "gyrus-parahippocampal-anterior": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499922",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "gyrus-parahippocampal-posterior": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK554551"
+   }
+  ],
+  "gyrus-parahippocampal-uncus": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537108",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK554432"
+   }
+  ],
+  "gyrus-superior-temporal-anterior": [
+   {
+    "nbk": "NBK532311",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK563145"
+   },
+   {
+    "nbk": "NBK574552"
+   }
+  ],
+  "gyrus-supramarginal": [
+   {
+    "nbk": "NBK537006",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK533001",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK519528"
+   }
+  ],
+  "gyrus-supramarginal-anterior": [
+   {
+    "nbk": "NBK585110",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK537006",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK549825"
+   }
+  ],
+  "gyrus-supramarginal-posterior": [
+   {
+    "nbk": "NBK562184",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK537006",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK519528"
+   }
+  ],
+  "hypoglossal-nucleus": [
+   {
+    "nbk": "NBK532869",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560590",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK551589"
+   }
+  ],
+  "hypothalamus-medial-preoptic": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK507838"
+   }
+  ],
+  "intermediolateral-column": [
+   {
+    "nbk": "NBK542195",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549910",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553141"
+   }
+  ],
+  "interposed-nucleus": [
+   {
+    "nbk": "NBK547738",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554381",
+    "section": "Structure and Function"
+   }
+  ],
+  "level-medulla-olive": [
+   {
+    "nbk": "NBK551589",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK551670",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK560590",
+    "section": "Pathophysiology"
+   }
+  ],
+  "level-medulla-pyramidal-decussation": [
+   {
+    "nbk": "NBK545314",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK534818",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK551589"
+   }
+  ],
+  "level-medulla-sensory-decussation": [
+   {
+    "nbk": "NBK546640",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK526040",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK507888"
+   }
+  ],
+  "level-midbrain-superior-colliculus": [
+   {
+    "nbk": "NBK551509",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544224",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK559158",
+    "section": "Pathophysiology"
+   }
+  ],
+  "lobule-superior-parietal": [
+   {
+    "nbk": "NBK562184",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK549825",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK585110"
+   }
+  ],
+  "mammillothalamic-tract": [
+   {
+    "nbk": "NBK537192",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK470344",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "medial-longitudinal-fasciculus": [
+   {
+    "nbk": "NBK441970",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK544265",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545297"
+   }
+  ],
+  "middle-cerebellar-peduncle": [
+   {
+    "nbk": "NBK560589",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK448167",
+    "section": "Blood Supply and Lymphatics"
+   }
+  ],
+  "nerve-iliohypogastric": [
+   {
+    "nbk": "NBK557605",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545137",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538256",
+    "section": "Clinical Significance"
+   }
+  ],
+  "nerves-dorsal-cutaneous-foot": [
+   {
+    "nbk": "NBK534793",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537292",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537363"
+   }
+  ],
+  "nucleus-accumbens": [
+   {
+    "nbk": "NBK597351",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK538491",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557847"
+   }
+  ],
+  "pedunculopontine-nucleus": [
+   {
+    "nbk": "NBK556102",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK470193",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK560610"
+   }
+  ],
+  "pia-mater": [
+   {
+    "nbk": "NBK545301",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557521",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK547755"
+   }
+  ],
+  "planum-polare": [
+   {
+    "nbk": "NBK532311",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK574552",
+    "section": "Structure and Function"
+   }
+  ],
+  "planum-temporale": [
+   {
+    "nbk": "NBK533001",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK532311",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK574552"
+   }
+  ],
+  "pontine-nuclei": [
+   {
+    "nbk": "NBK560589",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK551697",
+    "section": "Pathophysiology"
+   }
+  ],
+  "posterior-commissure": [
+   {
+    "nbk": "NBK441892",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK553169",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK551509"
+   }
+  ],
+  "presubiculum": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK554551"
+   }
+  ],
+  "pretectal-area": [
+   {
+    "nbk": "NBK553169",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537180"
+   },
+   {
+    "nbk": "NBK554555"
+   }
+  ],
+  "pyramid": [
+   {
+    "nbk": "NBK545314",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK534818",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560590",
+    "section": "Pathophysiology"
+   }
+  ],
+  "rimlf": [
+   {
+    "nbk": "NBK547674",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK441892",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK551509"
+   }
+  ],
+  "roots-l2-s1": [
+   {
+    "nbk": "NBK560878",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK507908",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK535401"
+   }
+  ],
+  "segment-vertebral-levels": [
+   {
+    "nbk": "NBK545227",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK513251",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535401"
+   }
+  ],
+  "septal-area": [
+   {
+    "nbk": "NBK538491",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   }
+  ],
+  "sinus-straight": [
+   {
+    "nbk": "NBK545304",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557840",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK546615"
+   }
+  ],
+  "spinal-grey-anterior-horn": [
+   {
+    "nbk": "NBK554616",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK539814",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK553239"
+   }
+  ],
+  "spinal-grey-posterior-horn": [
+   {
+    "nbk": "NBK551522",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK470255"
+   },
+   {
+    "nbk": "NBK553239"
+   }
+  ],
+  "spinal-nerve-root-dermatome": [
+   {
+    "nbk": "NBK542218",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535401"
+   },
+   {
+    "nbk": "NBK532291"
+   }
+  ],
+  "subiculum": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK554551"
+   }
+  ],
+  "superior-cerebellar-peduncle": [
+   {
+    "nbk": "NBK554381",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538167"
+   },
+   {
+    "nbk": "NBK551628"
+   }
+  ],
+  "territory-aca": [
+   {
+    "nbk": "NBK537333"
+   },
+   {
+    "nbk": "NBK545222"
+   }
+  ],
+  "territory-aca-major": [
+   {
+    "nbk": "NBK537333"
+   },
+   {
+    "nbk": "NBK545222"
+   },
+   {
+    "nbk": "NBK549894"
+   }
+  ],
+  "territory-aica": [
+   {
+    "nbk": "NBK448167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK470416"
+   },
+   {
+    "nbk": "NBK540995"
+   }
+  ],
+  "territory-basilar-paramedian": [
+   {
+    "nbk": "NBK532241"
+   },
+   {
+    "nbk": "NBK459137",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560896"
+   }
+  ],
+  "territory-lateral-lenticulostriate": [
+   {
+    "nbk": "NBK541060",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK563216"
+   },
+   {
+    "nbk": "NBK542181"
+   }
+  ],
+  "territory-lenticulostriate": [
+   {
+    "nbk": "NBK541060",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK563216"
+   },
+   {
+    "nbk": "NBK545222"
+   }
+  ],
+  "territory-mca": [
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK526002",
+    "section": "Structure and Function"
+   }
+  ],
+  "territory-mca-frontal": [
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK544218"
+   },
+   {
+    "nbk": "NBK526096"
+   }
+  ],
+  "territory-mca-insular": [
+   {
+    "nbk": "NBK570606",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK546635"
+   }
+  ],
+  "territory-mca-occipital": [
+   {
+    "nbk": "NBK544320",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK482504"
+   }
+  ],
+  "territory-mca-parietal": [
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK549825"
+   },
+   {
+    "nbk": "NBK562184"
+   }
+  ],
+  "territory-mca-temporal": [
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK519512",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK533001"
+   }
+  ],
+  "territory-pca": [
+   {
+    "nbk": "NBK532296"
+   },
+   {
+    "nbk": "NBK538474",
+    "section": "Structure and Function"
+   }
+  ],
+  "territory-pca-occipital": [
+   {
+    "nbk": "NBK532296"
+   },
+   {
+    "nbk": "NBK482504"
+   },
+   {
+    "nbk": "NBK558929"
+   }
+  ],
+  "territory-pca-temporal": [
+   {
+    "nbk": "NBK532296"
+   },
+   {
+    "nbk": "NBK538474",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538189"
+   }
+  ],
+  "territory-pica-lateral-medulla": [
+   {
+    "nbk": "NBK551670"
+   },
+   {
+    "nbk": "NBK551589",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK470416"
+   }
+  ],
+  "territory-posterior-choroidal-thalamoperforating": [
+   {
+    "nbk": "NBK549908",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK554490"
+   },
+   {
+    "nbk": "NBK538474"
+   }
+  ],
+  "territory-sca": [
+   {
+    "nbk": "NBK470416"
+   },
+   {
+    "nbk": "NBK540995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "territory-superior-cerebellar": [
+   {
+    "nbk": "NBK470416"
+   },
+   {
+    "nbk": "NBK540995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "territory-watershed": [
+   {
+    "nbk": "NBK553183"
+   },
+   {
+    "nbk": "NBK442025",
+    "section": "Pathophysiology"
+   }
+  ],
+  "thalamus-pulvinar-medial-centrolateral": [
+   {
+    "nbk": "NBK549835",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537141"
+   },
+   {
+    "nbk": "NBK546699"
+   }
+  ],
+  "thalamus-va-vl": [
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554381"
+   },
+   {
+    "nbk": "NBK557847"
+   }
+  ],
+  "thalamus-ventral-anterior": [
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557755"
+   },
+   {
+    "nbk": "NBK536995"
+   }
+  ],
+  "thalamus-ventral-posterior-ventrolateral": [
+   {
+    "nbk": "NBK526040",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK507824"
+   },
+   {
+    "nbk": "NBK554490"
+   }
+  ],
+  "tract-arcuate-fasciculus": [
+   {
+    "nbk": "NBK537006"
+   },
+   {
+    "nbk": "NBK533001",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK526096"
+   }
+  ],
+  "tract-cingulum-parahippocampal": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK482171"
+   }
+  ],
+  "tract-corticopontine-occipital": [
+   {
+    "nbk": "NBK560589",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542181"
+   },
+   {
+    "nbk": "NBK538167"
+   }
+  ],
+  "tract-corticopontine-parietal": [
+   {
+    "nbk": "NBK560589",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542181"
+   },
+   {
+    "nbk": "NBK538167"
+   }
+  ],
+  "tract-corticostriatal-posterior": [
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557407"
+   },
+   {
+    "nbk": "NBK542170"
+   }
+  ],
+  "tract-corticostriatal-superior": [
+   {
+    "nbk": "NBK542170",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537141"
+   },
+   {
+    "nbk": "NBK544218"
+   }
+  ],
+  "tract-dentatorubrothalamic": [
+   {
+    "nbk": "NBK554381",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK551628"
+   },
+   {
+    "nbk": "NBK562149"
+   }
+  ],
+  "tract-inferior-fronto-occipital-fasciculus": [
+   {
+    "nbk": "NBK544320",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499919"
+   },
+   {
+    "nbk": "NBK559315"
+   }
+  ],
+  "tract-inferior-longitudinal-fasciculus": [
+   {
+    "nbk": "NBK553189",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK519512"
+   },
+   {
+    "nbk": "NBK559324"
+   }
+  ],
+  "tract-middle-longitudinal-fasciculus": [
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK532311"
+   },
+   {
+    "nbk": "NBK533001"
+   }
+  ],
+  "tract-reticulospinal": [
+   {
+    "nbk": "NBK556102",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554542"
+   },
+   {
+    "nbk": "NBK547687"
+   }
+  ],
+  "tract-superior-longitudinal-fasciculus-i": [
+   {
+    "nbk": "NBK544218",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542188"
+   },
+   {
+    "nbk": "NBK549825"
+   }
+  ],
+  "tract-superior-longitudinal-fasciculus-ii": [
+   {
+    "nbk": "NBK562184",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK545214"
+   },
+   {
+    "nbk": "NBK554483"
+   }
+  ],
+  "tract-superior-longitudinal-fasciculus-iii": [
+   {
+    "nbk": "NBK526096",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537006"
+   },
+   {
+    "nbk": "NBK574552"
+   }
+  ],
+  "tract-thalamic-radiation-anterior": [
+   {
+    "nbk": "NBK546699",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542181"
+   },
+   {
+    "nbk": "NBK499919"
+   }
+  ],
+  "tract-thalamic-radiation-posterior": [
+   {
+    "nbk": "NBK546699",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542181"
+   },
+   {
+    "nbk": "NBK553189"
+   }
+  ],
+  "tract-uncinate-fasciculus": [
+   {
+    "nbk": "NBK537102",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499919"
+   },
+   {
+    "nbk": "NBK519512"
+   }
+  ],
+  "uncus": [
+   {
+    "nbk": "NBK537108"
+   },
+   {
+    "nbk": "NBK556051",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537102"
+   }
+  ],
+  "ventral-tegmental-area": [
+   {
+    "nbk": "NBK536995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535451"
+   },
+   {
+    "nbk": "NBK551509"
+   }
+  ],
+  "ventricle-lateral": [
+   {
+    "nbk": "NBK538156",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560875"
+   }
+  ],
+  "ventricle-lateral-inferior-horn": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560875",
+    "section": "Pathophysiology"
+   }
+  ],
+  "ventricle-third": [
+   {
+    "nbk": "NBK540988",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560875",
+    "section": "Pathophysiology"
+   }
+  ],
+  "syn-accessory-palsy": [
+   {
+    "nbk": "NBK532245"
+   },
+   {
+    "nbk": "NBK507722",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-aica-lateral-pontine": [
+   {
+    "nbk": "NBK448167",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK560896"
+   },
+   {
+    "nbk": "NBK537359",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-anterior-cord": [
+   {
+    "nbk": "NBK560731"
+   },
+   {
+    "nbk": "NBK532963",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK539889",
+    "section": "Structure and Function"
+   }
+  ],
+  "syn-callosal-disconnection": [
+   {
+    "nbk": "NBK448209",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK537333"
+   },
+   {
+    "nbk": "NBK560722"
+   }
+  ],
+  "syn-cerebellar-hemispheric": [
+   {
+    "nbk": "NBK545251"
+   },
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK562317",
+    "section": "History and Physical"
+   }
+  ],
+  "syn-cerebellar-vermian-midline": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545251"
+   },
+   {
+    "nbk": "NBK560875",
+    "section": "Pathophysiology"
+   }
+  ],
+  "syn-chiari-tonsillar-ectopia": [
+   {
+    "nbk": "NBK554609"
+   },
+   {
+    "nbk": "NBK537110",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK557498"
+   }
+  ],
+  "syn-chiasmal-bitemporal": [
+   {
+    "nbk": "NBK545213"
+   },
+   {
+    "nbk": "NBK542287",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK554451",
+    "section": "History and Physical"
+   }
+  ],
+  "syn-claude": [
+   {
+    "nbk": "NBK551628",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK560896"
+   },
+   {
+    "nbk": "NBK526112"
+   }
+  ],
+  "syn-cn3-palsy": [
+   {
+    "nbk": "NBK526112"
+   },
+   {
+    "nbk": "NBK537126",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK554555",
+    "section": "Structure and Function"
+   }
+  ],
+  "syn-cn6-palsy": [
+   {
+    "nbk": "NBK482177"
+   },
+   {
+    "nbk": "NBK482119",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK430711",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-hemineglect": [
+   {
+    "nbk": "NBK562184"
+   },
+   {
+    "nbk": "NBK556132",
+    "section": "History and Physical"
+   }
+  ],
+  "syn-homonymous-hemianopia": [
+   {
+    "nbk": "NBK558929"
+   },
+   {
+    "nbk": "NBK558982"
+   },
+   {
+    "nbk": "NBK532296",
+    "section": "History and Physical"
+   }
+  ],
+  "syn-horizontal-gaze-palsy-pontine": [
+   {
+    "nbk": "NBK430711",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK560896"
+   },
+   {
+    "nbk": "NBK441970"
+   }
+  ],
+  "syn-hypoglossal-palsy": [
+   {
+    "nbk": "NBK532869",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK567747"
+   },
+   {
+    "nbk": "NBK585066"
+   }
+  ],
+  "syn-lacunar-ataxic-hemiparesis": [
+   {
+    "nbk": "NBK542181",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "syn-lacunar-dysarthria-clumsy-hand": [
+   {
+    "nbk": "NBK592453",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK542181",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-length-dependent-polyneuropathy": [
+   {
+    "nbk": "NBK442009"
+   },
+   {
+    "nbk": "NBK542220"
+   },
+   {
+    "nbk": "NBK563169",
+    "section": "Evaluation"
+   }
+  ],
+  "syn-mca-inferior-division": [
+   {
+    "nbk": "NBK441951"
+   },
+   {
+    "nbk": "NBK533001",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK556132"
+   }
+  ],
+  "syn-mca-stem-infarct": [
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK526002",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK542181",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-mca-superior-division": [
+   {
+    "nbk": "NBK526096",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK559315"
+   }
+  ],
+  "syn-mononeuritis-multiplex": [
+   {
+    "nbk": "NBK542220",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK563169",
+    "section": "Evaluation"
+   }
+  ],
+  "syn-one-and-a-half": [
+   {
+    "nbk": "NBK441970"
+   },
+   {
+    "nbk": "NBK430711",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK560896"
+   }
+  ],
+  "syn-pica-cerebellar-infarct": [
+   {
+    "nbk": "NBK470416"
+   },
+   {
+    "nbk": "NBK551670"
+   },
+   {
+    "nbk": "NBK540995",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-pituitary-mass": [
+   {
+    "nbk": "NBK554451"
+   },
+   {
+    "nbk": "NBK559222"
+   },
+   {
+    "nbk": "NBK551529",
+    "section": "Clinical Significance"
+   }
+  ],
+  "syn-pontine-hemorrhage": [
+   {
+    "nbk": "NBK553103"
+   },
+   {
+    "nbk": "NBK560896"
+   },
+   {
+    "nbk": "NBK559173"
+   }
+  ],
+  "syn-raymond": [
+   {
+    "nbk": "NBK532907"
+   },
+   {
+    "nbk": "NBK560896"
+   },
+   {
+    "nbk": "NBK482177"
+   }
+  ],
+  "syn-top-of-basilar": [
+   {
+    "nbk": "NBK532241"
+   },
+   {
+    "nbk": "NBK532296"
+   },
+   {
+    "nbk": "NBK556084"
+   }
+  ],
+  "syn-watershed-infarct": [
+   {
+    "nbk": "NBK442025",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK534861",
+    "section": "Clinical Significance"
+   }
+  ],
+  "topic-brain-tumor-localization": [
+   {
+    "nbk": "NBK470246"
+   },
+   {
+    "nbk": "NBK560538"
+   },
+   {
+    "nbk": "NBK482119"
+   }
+  ],
+  "topic-cns-infections-localization": [
+   {
+    "nbk": "NBK459360"
+   },
+   {
+    "nbk": "NBK441841"
+   },
+   {
+    "nbk": "NBK557829"
+   }
+  ],
+  "topic-consciousness-coma-brain-death": [
+   {
+    "nbk": "NBK430722"
+   },
+   {
+    "nbk": "NBK538159"
+   },
+   {
+    "nbk": "NBK549835",
+    "section": "Structure and Function"
+   }
+  ],
+  "topic-cortical-layers-organization": [
+   {
+    "nbk": "NBK537247",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538496"
+   },
+   {
+    "nbk": "NBK542188"
+   }
+  ],
+  "topic-dementia-patterns": [
+   {
+    "nbk": "NBK499922"
+   },
+   {
+    "nbk": "NBK559286"
+   },
+   {
+    "nbk": "NBK482441"
+   }
+  ],
+  "topic-epilepsy-localization": [
+   {
+    "nbk": "NBK557645"
+   },
+   {
+    "nbk": "NBK564376"
+   },
+   {
+    "nbk": "NBK430765",
+    "section": "History and Physical"
+   }
+  ],
+  "topic-headache-localization": [
+   {
+    "nbk": "NBK554510",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK560787",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK482283",
+    "section": "Clinical Significance"
+   }
+  ],
+  "topic-leukodystrophies-mitochondrial": [
+   {
+    "nbk": "NBK560744"
+   },
+   {
+    "nbk": "NBK562315"
+   },
+   {
+    "nbk": "NBK532959"
+   }
+  ],
+  "topic-localization-approach-exam": [
+   {
+    "nbk": "NBK507915"
+   },
+   {
+    "nbk": "NBK541082"
+   },
+   {
+    "nbk": "NBK539814"
+   }
+  ],
+  "topic-movement-disorder-circuits": [
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK470193"
+   },
+   {
+    "nbk": "NBK430923"
+   }
+  ],
+  "topic-nerve-injury-regeneration": [
+   {
+    "nbk": "NBK549848",
+    "section": "Pathophysiology"
+   },
+   {
+    "nbk": "NBK562304"
+   },
+   {
+    "nbk": "NBK544316"
+   }
+  ],
+  "topic-neural-development-malformations": [
+   {
+    "nbk": "NBK557414"
+   },
+   {
+    "nbk": "NBK553171"
+   },
+   {
+    "nbk": "NBK542285"
+   }
+  ],
+  "topic-neuroimaging-basics": [
+   {
+    "nbk": "NBK564320"
+   },
+   {
+    "nbk": "NBK597347"
+   },
+   {
+    "nbk": "NBK546635"
+   }
+  ],
+  "topic-neuromuscular-patterns": [
+   {
+    "nbk": "NBK562290"
+   },
+   {
+    "nbk": "NBK560774"
+   },
+   {
+    "nbk": "NBK470413"
+   }
+  ],
+  "topic-pediatric-neurological-syndromes": [
+   {
+    "nbk": "NBK538147"
+   },
+   {
+    "nbk": "NBK448123"
+   },
+   {
+    "nbk": "NBK609108"
+   }
+  ],
+  "topic-sleep-eeg-basics": [
+   {
+    "nbk": "NBK537023"
+   },
+   {
+    "nbk": "NBK526132"
+   },
+   {
+    "nbk": "NBK549835",
+    "section": "Structure and Function"
+   }
+  ],
+  "topic-stroke-mechanisms-hemorrhage": [
+   {
+    "nbk": "NBK499997",
+    "section": "Etiology"
+   },
+   {
+    "nbk": "NBK470242"
+   },
+   {
+    "nbk": "NBK559173"
+   }
+  ],
+  "habenula": [
+   {
+    "ref": "oa-habenula-7t-mri"
+   },
+   {
+    "ref": "oa-habenula-connectivity"
+   }
+  ],
+  "g-mni-space": [
+   {
+    "ref": "oa-mni-stereotactic-space"
+   },
+   {
+    "ref": "oa-icbm152-cerebra-atlas"
+   }
+  ],
+  "g-ipsilateral": [
+   {
+    "ref": "ox-anatomical-terminology"
+   }
+  ],
+  "g-association-fibers": [
+   {
+    "nbk": "NBK448209"
+   },
+   {
+    "nbk": "NBK545214"
+   },
+   {
+    "nbk": "NBK553239",
+    "section": "Structure and Function"
+   }
+  ],
+  "pathway-papez-limbic": [
+   {
+    "nbk": "NBK538491",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK448209"
+   }
+  ],
+  "pathway-trigeminothalamic": [
+   {
+    "nbk": "NBK539823",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482283"
+   },
+   {
+    "nbk": "NBK507824"
+   }
+  ],
+  "syn-vagal-palsy": [
+   {
+    "nbk": "NBK537171",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK551670"
+   },
+   {
+    "nbk": "NBK585066"
+   }
+  ],
+  "arteries-thalamoperforating": [
+   {
+    "nbk": "NBK538474",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549908"
+   },
+   {
+    "nbk": "NBK532297"
+   }
+  ],
+  "cerebellar-cortex-layers": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554381"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cochlear-nuclei": [
+   {
+    "nbk": "NBK537359",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK532311"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ],
+  "cortex-subcallosal": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499919"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "dentate-gyrus": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK553239"
+   }
+  ],
+  "facial-motor-nucleus": [
+   {
+    "nbk": "NBK554569",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544297",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549815"
+   }
+  ],
+  "ganglion-submandibular": [
+   {
+    "nbk": "NBK553141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK542272"
+   },
+   {
+    "nbk": "NBK470353"
+   }
+  ],
+  "inferior-cerebellar-peduncle": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544297"
+   },
+   {
+    "nbk": "NBK556013"
+   }
+  ],
+  "nerve-ilioinguinal": [
+   {
+    "nbk": "NBK538256"
+   },
+   {
+    "nbk": "NBK557605"
+   },
+   {
+    "nbk": "NBK549848"
+   }
+  ],
+  "occipital-pole": [
+   {
+    "nbk": "NBK544320",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482504"
+   },
+   {
+    "nbk": "NBK538474"
+   }
+  ],
+  "precuneus": [
+   {
+    "nbk": "NBK549825",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537077"
+   },
+   {
+    "nbk": "NBK537247"
+   }
+  ],
+  "sinus-transverse-sigmoid": [
+   {
+    "nbk": "NBK482257",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK546605"
+   },
+   {
+    "nbk": "NBK459315"
+   }
+  ],
+  "territory-basilar": [
+   {
+    "nbk": "NBK459137",
+    "section": "Blood Supply and Lymphatics"
+   },
+   {
+    "nbk": "NBK532241"
+   },
+   {
+    "nbk": "NBK540995"
+   }
+  ],
+  "territory-inferior-cerebellar": [
+   {
+    "nbk": "NBK448167"
+   },
+   {
+    "nbk": "NBK470416"
+   },
+   {
+    "nbk": "NBK540995"
+   }
+  ],
+  "territory-vertebrobasilar-major": [
+   {
+    "nbk": "NBK540995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK556084"
+   },
+   {
+    "nbk": "NBK459137"
+   }
+  ],
+  "tract-acoustic-radiation": [
+   {
+    "nbk": "NBK532311",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537359"
+   },
+   {
+    "nbk": "NBK519512"
+   }
+  ],
+  "tract-corticopontine-frontal": [
+   {
+    "nbk": "NBK560589",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554483"
+   },
+   {
+    "nbk": "NBK538167"
+   }
+  ],
+  "tract-corticostriatal-anterior": [
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554542"
+   },
+   {
+    "nbk": "NBK554483"
+   }
+  ],
+  "trochlear-nucleus": [
+   {
+    "nbk": "NBK537244",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544297"
+   },
+   {
+    "nbk": "NBK565850"
+   }
+  ],
+  "zona-incerta": [
+   {
+    "nbk": "NBK559002",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549908"
+   },
+   {
+    "nbk": "NBK537141"
+   }
+  ],
+  "syn-sciatic-neuropathy": [
+   {
+    "nbk": "NBK482431",
+    "section": "Clinical Significance"
+   },
+   {
+    "nbk": "NBK507908"
+   },
+   {
+    "nbk": "NBK549848"
+   }
+  ],
+  "frontal-pole": [
+   {
+    "nbk": "NBK499919",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554483"
+   },
+   {
+    "nbk": "NBK532981"
+   }
+  ],
+  "cn-07-facial": [
+   {
+    "nbk": "NBK554569",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549815"
+   },
+   {
+    "nbk": "NBK555907"
+   }
+  ],
+  "g-aspects": [
+   {
+    "nbk": "NBK546635"
+   },
+   {
+    "nbk": "NBK499997",
+    "section": "Evaluation"
+   }
+  ],
+  "g-ataxia": [
+   {
+    "nbk": "NBK562317"
+   },
+   {
+    "nbk": "NBK545251"
+   },
+   {
+    "nbk": "NBK557816"
+   }
+  ],
+  "g-aura": [
+   {
+    "nbk": "NBK430765",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK500005"
+   },
+   {
+    "nbk": "NBK554611"
+   }
+  ],
+  "g-dwi": [
+   {
+    "nbk": "NBK546635"
+   },
+   {
+    "nbk": "NBK564320"
+   },
+   {
+    "nbk": "NBK537361"
+   }
+  ],
+  "g-herniation": [
+   {
+    "nbk": "NBK542246"
+   },
+   {
+    "nbk": "NBK537108"
+   },
+   {
+    "nbk": "NBK562170"
+   }
+  ],
+  "g-plexopathy": [
+   {
+    "nbk": "NBK556030"
+   },
+   {
+    "nbk": "NBK562197"
+   },
+   {
+    "nbk": "NBK482305"
+   }
+  ],
+  "g-polyneuropathy": [
+   {
+    "nbk": "NBK542220"
+   },
+   {
+    "nbk": "NBK563169"
+   },
+   {
+    "nbk": "NBK562217"
+   }
+  ],
+  "g-radiculopathy": [
+   {
+    "nbk": "NBK441828"
+   },
+   {
+    "nbk": "NBK507908"
+   },
+   {
+    "nbk": "NBK563152"
+   }
+  ],
+  "g-rem-sleep-behavior-disorder": [
+   {
+    "nbk": "NBK555928"
+   },
+   {
+    "nbk": "NBK531454"
+   }
+  ],
+  "g-rigidity": [
+   {
+    "nbk": "NBK542224",
+    "section": "History and Physical"
+   },
+   {
+    "nbk": "NBK470193"
+   }
+  ],
+  "pathway-anterior-corticospinal": [
+   {
+    "nbk": "NBK535423",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545314"
+   }
+  ],
+  "pathway-anterior-spinocerebellar": [
+   {
+    "nbk": "NBK556013"
+   },
+   {
+    "nbk": "NBK538167"
+   },
+   {
+    "nbk": "NBK545206"
+   }
+  ],
+  "pathway-gustatory": [
+   {
+    "nbk": "NBK545236"
+   },
+   {
+    "nbk": "NBK554522"
+   },
+   {
+    "nbk": "NBK557768"
+   }
+  ],
+  "pathway-vestibular-vor": [
+   {
+    "nbk": "NBK545297"
+   },
+   {
+    "nbk": "NBK557380"
+   },
+   {
+    "nbk": "NBK562261"
+   }
+  ],
+  "anterior-commissure": [
+   {
+    "nbk": "NBK549789",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK448209"
+   }
+  ],
+  "arteries-lenticulostriate": [
+   {
+    "nbk": "NBK541060"
+   },
+   {
+    "nbk": "NBK526002"
+   },
+   {
+    "nbk": "NBK545222"
+   }
+  ],
+  "arteries-mra-atlas": [
+   {
+    "nbk": "NBK549894"
+   },
+   {
+    "nbk": "NBK534861"
+   },
+   {
+    "nbk": "NBK532297"
+   }
+  ],
+  "artery-aca": [
+   {
+    "nbk": "NBK549894",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK534861"
+   },
+   {
+    "nbk": "NBK537333"
+   }
+  ],
+  "artery-adamkiewicz": [
+   {
+    "nbk": "NBK532971"
+   },
+   {
+    "nbk": "NBK532963"
+   },
+   {
+    "nbk": "NBK539889"
+   }
+  ],
+  "artery-labyrinthine": [
+   {
+    "nbk": "NBK448167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538335"
+   },
+   {
+    "nbk": "NBK540995"
+   }
+  ],
+  "artery-mca-inferior-division": [
+   {
+    "nbk": "NBK526002"
+   },
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK532297"
+   }
+  ],
+  "artery-mca-superior-division": [
+   {
+    "nbk": "NBK526002"
+   },
+   {
+    "nbk": "NBK556132"
+   },
+   {
+    "nbk": "NBK532297"
+   }
+  ],
+  "artery-vertebral": [
+   {
+    "nbk": "NBK540995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK441827"
+   },
+   {
+    "nbk": "NBK459137"
+   }
+  ],
+  "bed-nucleus-stria-terminalis": [
+   {
+    "nbk": "NBK537102"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "cerebellar-lobule-i-iv": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK562317"
+   },
+   {
+    "nbk": "NBK545251"
+   }
+  ],
+  "cerebellar-lobule-ix": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK557380"
+   },
+   {
+    "nbk": "NBK562170"
+   }
+  ],
+  "cerebellar-tonsil": [
+   {
+    "nbk": "NBK538167"
+   },
+   {
+    "nbk": "NBK562170"
+   },
+   {
+    "nbk": "NBK542246"
+   }
+  ],
+  "cerebellar-white-matter": [
+   {
+    "nbk": "NBK538167",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554381"
+   }
+  ],
+  "temporal-pole": [
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537247"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "tract-cingulum-frontoparietal": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   }
+  ],
+  "tract-frontal-aslant": [
+   {
+    "nbk": "NBK554483",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK526096"
+   },
+   {
+    "nbk": "NBK537247"
+   }
+  ],
+  "vein-great-cerebral": [
+   {
+    "nbk": "NBK546605",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482257"
+   }
+  ],
+  "veins-deep-cerebral": [
+   {
+    "nbk": "NBK546605",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482257"
+   }
+  ],
+  "veins-superficial-cerebral": [
+   {
+    "nbk": "NBK546605",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482257"
+   }
+  ],
+  "syn-adie-tonic-pupil": [
+   {
+    "nbk": "NBK531471"
+   },
+   {
+    "nbk": "NBK553169"
+   }
+  ],
+  "syn-alexia-without-agraphia": [
+   {
+    "nbk": "NBK557669"
+   },
+   {
+    "nbk": "NBK532296"
+   },
+   {
+    "nbk": "NBK499997"
+   }
+  ],
+  "syn-aphasia-broca": [
+   {
+    "nbk": "NBK559315"
+   },
+   {
+    "nbk": "NBK526096"
+   },
+   {
+    "nbk": "NBK556132"
+   }
+  ],
+  "syn-aphasia-conduction-global": [
+   {
+    "nbk": "NBK537006"
+   },
+   {
+    "nbk": "NBK559315"
+   },
+   {
+    "nbk": "NBK556132"
+   }
+  ],
+  "syn-bulbar-vs-pseudobulbar": [
+   {
+    "nbk": "NBK553160"
+   },
+   {
+    "nbk": "NBK556151"
+   },
+   {
+    "nbk": "NBK555891"
+   }
+  ],
+  "syn-central-cord-syringomyelia": [
+   {
+    "nbk": "NBK441932"
+   },
+   {
+    "nbk": "NBK537110"
+   }
+  ],
+  "syn-central-transtentorial-herniation": [
+   {
+    "nbk": "NBK560536"
+   },
+   {
+    "nbk": "NBK542246"
+   }
+  ],
+  "syn-central-vs-peripheral-vertigo": [
+   {
+    "nbk": "NBK441861"
+   },
+   {
+    "nbk": "NBK482356"
+   },
+   {
+    "nbk": "NBK549866"
+   }
+  ],
+  "syn-cerebellopontine-angle": [
+   {
+    "nbk": "NBK559116"
+   },
+   {
+    "nbk": "NBK562312"
+   }
+  ],
+  "syn-cervical-spondylotic-myelopathy": [
+   {
+    "nbk": "NBK482312"
+   },
+   {
+    "nbk": "NBK551557"
+   }
+  ],
+  "syn-complete-transection-spinal-shock": [
+   {
+    "nbk": "NBK560721"
+   },
+   {
+    "nbk": "NBK448163"
+   }
+  ],
+  "syn-conus-vs-cauda-equina": [
+   {
+    "nbk": "NBK537200"
+   },
+   {
+    "nbk": "NBK545227"
+   },
+   {
+    "nbk": "NBK513251"
+   }
+  ],
+  "syn-cubital-tunnel": [
+   {
+    "nbk": "NBK555929"
+   },
+   {
+    "nbk": "NBK534226"
+   },
+   {
+    "nbk": "NBK499892"
+   }
+  ],
+  "syn-femoral-neuropathy": [
+   {
+    "nbk": "NBK556065"
+   },
+   {
+    "nbk": "NBK542220"
+   }
+  ],
+  "syn-guillain-barre": [
+   {
+    "nbk": "NBK532254"
+   },
+   {
+    "nbk": "NBK562217"
+   }
+  ],
+  "syn-multiple-sclerosis-pattern": [
+   {
+    "nbk": "NBK499849"
+   },
+   {
+    "nbk": "NBK557853"
+   }
+  ],
+  "syn-myopathy-pattern": [
+   {
+    "nbk": "NBK562290"
+   },
+   {
+    "nbk": "NBK564383"
+   }
+  ],
+  "syn-neurogenic-thoracic-outlet": [
+   {
+    "nbk": "NBK557450"
+   },
+   {
+    "nbk": "NBK500016"
+   }
+  ],
+  "syn-peroneal-palsy-foot-drop": [
+   {
+    "nbk": "NBK554393"
+   },
+   {
+    "nbk": "NBK532968"
+   },
+   {
+    "nbk": "NBK549859"
+   }
+  ],
+  "syn-physiologic-anisocoria": [
+   {
+    "nbk": "NBK470384"
+   },
+   {
+    "nbk": "NBK553169"
+   },
+   {
+    "nbk": "NBK500000"
+   }
+  ],
+  "syn-posterior-cord-subacute-combined": [
+   {
+    "nbk": "NBK560728"
+   },
+   {
+    "nbk": "NBK507888"
+   }
+  ],
+  "syn-radial-neuropathy": [
+   {
+    "nbk": "NBK557520"
+   },
+   {
+    "nbk": "NBK534840"
+   }
+  ],
+  "syn-superior-orbital-fissure": [
+   {
+    "nbk": "NBK592386"
+   },
+   {
+    "nbk": "NBK532976"
+   },
+   {
+    "nbk": "NBK539843"
+   }
+  ],
+  "topic-csf-physiology-blood-brain-barrier": [
+   {
+    "nbk": "NBK470578"
+   },
+   {
+    "nbk": "NBK557721"
+   },
+   {
+    "nbk": "NBK519556"
+   }
+  ],
+  "cortex-calcarine": [
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544320",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553189"
+   }
+  ],
+  "cortex-intracalcarine": [
+   {
+    "nbk": "NBK482504",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK553189"
+   },
+   {
+    "nbk": "NBK544320"
+   }
+  ],
+  "cortex-temporal-fusiform-posterior": [
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK559324"
+   },
+   {
+    "nbk": "NBK482504"
+   }
+  ],
+  "fornix": [
+   {
+    "nbk": "NBK538491",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482171"
+   },
+   {
+    "nbk": "NBK554551"
+   }
+  ],
+  "gyrus-cingulate-anterior": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK537247"
+   }
+  ],
+  "gyrus-cingulate-posterior": [
+   {
+    "nbk": "NBK537077",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK537247"
+   }
+  ],
+  "gyrus-heschl": [
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK532311"
+   },
+   {
+    "nbk": "NBK537247"
+   }
+  ],
+  "gyrus-inferior-temporal-anterior": [
+   {
+    "nbk": "NBK519512",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537247"
+   },
+   {
+    "nbk": "NBK482504"
+   }
+  ],
+  "gyrus-lingual": [
+   {
+    "nbk": "NBK544320",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK482504"
+   },
+   {
+    "nbk": "NBK553189"
+   }
+  ],
+  "gyrus-middle-frontal": [
+   {
+    "nbk": "NBK554483",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499919"
+   },
+   {
+    "nbk": "NBK532981"
+   }
+  ],
+  "hippocampus-ca1": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK554432"
+   }
+  ],
+  "hippocampus-ca23": [
+   {
+    "nbk": "NBK482171",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK538491"
+   },
+   {
+    "nbk": "NBK549791"
+   }
+  ],
+  "hypothalamus-anterior-area": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK541107"
+   }
+  ],
+  "hypothalamus-arcuate": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK507829"
+   }
+  ],
+  "hypothalamus-dorsomedial": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK560743"
+   }
+  ],
+  "hypothalamus-lateral": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK574539"
+   }
+  ],
+  "hypothalamus-paraventricular": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK526069"
+   }
+  ],
+  "hypothalamus-posterior": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK541107"
+   }
+  ],
+  "hypothalamus-tuberomammillary": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK482512"
+   }
+  ],
+  "hypothalamus-ventromedial": [
+   {
+    "nbk": "NBK525993",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK535380"
+   },
+   {
+    "nbk": "NBK574539"
+   }
+  ],
+  "inferior-olivary-nucleus": [
+   {
+    "nbk": "NBK542242",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK551589"
+   },
+   {
+    "nbk": "NBK538167"
+   }
+  ],
+  "level-midbrain-inferior-colliculus": [
+   {
+    "nbk": "NBK551509",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554468"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ],
+  "lobe-parietal": [
+   {
+    "nbk": "NBK555915",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549825"
+   },
+   {
+    "nbk": "NBK537247"
+   }
+  ],
+  "medial-geniculate-nucleus": [
+   {
+    "nbk": "NBK542184",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK532311"
+   },
+   {
+    "nbk": "NBK554468"
+   }
+  ],
+  "motor-unit": [
+   {
+    "nbk": "NBK554616",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK539814"
+   },
+   {
+    "nbk": "NBK537139"
+   }
+  ],
+  "nerve-common-peroneal": [
+   {
+    "nbk": "NBK532968",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK549859"
+   },
+   {
+    "nbk": "NBK526033"
+   }
+  ],
+  "nerve-femoral": [
+   {
+    "nbk": "NBK556065",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK546704"
+   },
+   {
+    "nbk": "NBK482225"
+   }
+  ],
+  "nerve-lateral-antebrachial-cutaneous": [
+   {
+    "nbk": "NBK534199",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554514"
+   }
+  ],
+  "nerve-posterior-antebrachial-cutaneous": [
+   {
+    "nbk": "NBK534840",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK554514"
+   }
+  ],
+  "nerve-posterior-femoral-cutaneous": [
+   {
+    "nbk": "NBK554598",
+    "section": "Nerves"
+   },
+   {
+    "nbk": "NBK482225"
+   }
+  ],
+  "nerve-superficial-radial": [
+   {
+    "nbk": "NBK534840",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK539846"
+   }
+  ],
+  "nerves-pectoral": [
+   {
+    "nbk": "NBK556059",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK500016"
+   },
+   {
+    "nbk": "NBK545241"
+   }
+  ],
+  "nucleus-basalis-meynert": [
+   {
+    "nbk": "NBK537141",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK499922"
+   },
+   {
+    "nbk": "NBK557825"
+   }
+  ],
+  "pituitary-infundibulum": [
+   {
+    "nbk": "NBK551529",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK459247"
+   },
+   {
+    "nbk": "NBK526130"
+   }
+  ],
+  "plexus-lumbosacral": [
+   {
+    "nbk": "NBK545137",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK556030"
+   },
+   {
+    "nbk": "NBK482431"
+   }
+  ],
+  "posterior-spinal-arteries": [
+   {
+    "nbk": "NBK539889",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537219"
+   },
+   {
+    "nbk": "NBK532963"
+   }
+  ],
+  "pprf": [
+   {
+    "nbk": "NBK556102",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK544265"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ],
+  "raphe-dorsal": [
+   {
+    "nbk": "NBK544359",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545168"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ],
+  "raphe-median": [
+   {
+    "nbk": "NBK544359",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK545168"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ],
+  "substantia-nigra-pars-compacta": [
+   {
+    "nbk": "NBK536995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537141"
+   },
+   {
+    "nbk": "NBK470193"
+   }
+  ],
+  "substantia-nigra-pars-reticulata": [
+   {
+    "nbk": "NBK536995",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK537141"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ],
+  "superior-olivary-complex": [
+   {
+    "nbk": "NBK542242",
+    "section": "Structure and Function"
+   },
+   {
+    "nbk": "NBK532311"
+   },
+   {
+    "nbk": "NBK544297"
+   }
+  ]
+ }
+}

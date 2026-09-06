@@ -1,161 +1,141 @@
 {
- "kind": "structure",
- "id": "tract-corticostriatal-superior",
- "name": "Corticostriatal tract, superior",
- "synonyms": [
-  "sensorimotor corticostriatal fibers",
-  "motor loop input"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-corticostriatal-superior-l",
-  "tract-corticostriatal-superior-r"
- ],
- "summary": "The superior corticostriatal bundle contains the fibers from the motor, premotor and somatosensory cortex to the putamen and the body of the caudate, the cortical input of the motor loop of the basal ganglia. It descends through the corona radiata to the dorsolateral striatum, where the somatotopic representation of the body in the putamen is built from these terminals, and it is the pathway through which the cortex tells the basal ganglia what movement is planned so that the direct and indirect pathways can release it and suppress its competitors. Its degeneration and its abnormal dopaminergic modulation underlie the motor signs of Parkinson disease and Huntington disease, and it is interrupted in striatocapsular infarcts.",
- "anatomy": {
-  "location": "From the precentral and postcentral gyri, the premotor cortex and the supplementary motor area through the corona radiata, entering the putamen and the body of the caudate from above and laterally through the internal and external capsules with a somatotopic order (leg dorsal, face ventral).",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Precentral and postcentral gyri, premotor cortex and SMA",
-    "via": "origin"
-   }
+  "kind": "structure",
+  "id": "tract-corticostriatal-superior",
+  "name": "Corticostriatal tract, superior",
+  "synonyms": [
+    "sensorimotor corticostriatal fibers",
+    "motor loop input"
   ],
-  "efferents": [
-   {
-    "to": "Putamen and body of the caudate",
-    "via": "glutamatergic termination on medium spiny neurons"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-corticostriatal-superior-l",
+    "tract-corticostriatal-superior-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Sensorimotor corticostriatal axons excite the medium spiny neurons of the putamen, whose direct-pathway cells then inhibit the internal pallidum to release the movement while indirect-pathway cells increase pallidal output to stop competing movements; dopamine from the substantia nigra strengthens or weakens these corticostriatal synapses according to outcome, making the loop the site of motor habit learning. Copies of the same corticofugal axons continue to the brainstem and spinal cord. Loss of dopamine leaves the corticostriatal input unable to drive the direct pathway, producing bradykinesia; loss of the indirect-pathway striatal neurons in Huntington disease leaves it unopposed, producing chorea; and striatal infarcts produce dystonia and hemichorea.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-mca"
-  ],
-  "territories": [
-   "territory-lateral-lenticulostriate"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-corticostriatal-superior-l"
+  "summary": "The superior corticostriatal bundle contains the fibers from the motor, premotor and somatosensory cortex to the putamen and the body of the caudate, the cortical input of the motor loop of the basal ganglia. It descends through the corona radiata to the dorsolateral striatum, where the somatotopic representation of the body in the putamen is built from these terminals, and it is the pathway through which the cortex tells the basal ganglia what movement is planned so that the direct and indirect pathways can release it and suppress its competitors. Its degeneration and its abnormal dopaminergic modulation underlie the motor signs of Parkinson disease and Huntington disease, and it is interrupted in striatocapsular infarcts.",
+  "anatomy": {
+    "location": "From the precentral and postcentral gyri, the premotor cortex and the supplementary motor area through the corona radiata, entering the putamen and the body of the caudate from above and laterally through the internal and external capsules with a somatotopic order (leg dorsal, face ventral).",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Precentral and postcentral gyri, premotor cortex and SMA",
+        "via": "origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Putamen and body of the caudate",
+        "via": "glutamatergic termination on medium spiny neurons"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Sensorimotor corticostriatal axons excite the medium spiny neurons of the putamen, whose direct-pathway cells then inhibit the internal pallidum to release the movement while indirect-pathway cells increase pallidal output to stop competing movements; dopamine from the substantia nigra strengthens or weakens these corticostriatal synapses according to outcome, making the loop the site of motor habit learning. Copies of the same corticofugal axons continue to the brainstem and spinal cord. Loss of dopamine leaves the corticostriatal input unable to drive the direct pathway, producing bradykinesia; loss of the indirect-pathway striatal neurons in Huntington disease leaves it unopposed, producing chorea; and striatal infarcts produce dystonia and hemichorea.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-mca"
+    ],
+    "territories": [
+      "territory-lateral-lenticulostriate"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-corticostriatal-superior-l"
+        },
+        "label": "superior corticostriatal fibers from the sensorimotor cortex to the putamen"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-corticostriatal-superior-r"
+        },
+        "label": "sensorimotor fibers entering the dorsolateral striatum"
+      }
+    ],
+    "normalAppearance": "Tractography shows fibers descending from the central gyri into the putamen and caudate body, mixed with the corona radiata; not separable on conventional images.",
+    "pathology": [
+      {
+        "pathology": "Striatocapsular infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the putamen and adjacent capsule with contralateral hemiparesis and, later, dystonia or chorea.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Parkinson disease (functional)",
+        "modality": "SPECT",
+        "finding": "Reduced dopamine transporter binding in the posterior putamen, the terminal field of the sensorimotor corticostriatal projection, worst contralateral to the affected side.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Huntington disease",
+        "modality": "MRI",
+        "finding": "Putaminal and caudate atrophy with loss of the indirect-pathway neurons that the sensorimotor cortex drives.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral bradykinesia when dopaminergic modulation fails",
+        "side": "contralateral",
+        "mechanism": "Ineffective corticostriatal activation of the direct pathway"
+      },
+      {
+        "deficit": "Contralateral chorea or dystonia after striatal injury",
+        "side": "contralateral",
+        "mechanism": "Loss of indirect-pathway suppression of competing movements"
+      },
+      {
+        "deficit": "Impaired motor habit learning",
+        "side": "bilateral",
+        "mechanism": "Loss of dopamine-dependent plasticity at corticostriatal synapses"
+      }
+    ],
+    "examination": [
+      "Finger tapping and rapid alternating movements",
+      "Observation for chorea and dystonia",
+      "Motor sequence learning where feasible"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-huntington-chorea",
+      "syn-hemiballismus"
+    ],
+    "pearls": [
+      "The putamen is the motor cortex's second target; the first is the spinal cord",
+      "The posterior putamen loses dopamine first in Parkinson disease because it is where the motor cortex projects",
+      "Striatal strokes cause movement disorders weeks later, when the corticostriatal synapses reorganize"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-putamen",
+      "section": "Structure and Function"
     },
-    "label": "superior corticostriatal fibers from the sensorimotor cortex to the putamen"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-corticostriatal-superior-r"
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "sensorimotor fibers entering the dorsolateral striatum"
-   }
+    {
+      "ref": "sp-precentral-gyrus",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Tractography shows fibers descending from the central gyri into the putamen and caudate body, mixed with the corona radiata; not separable on conventional images.",
-  "pathology": [
-   {
-    "pathology": "Striatocapsular infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the putamen and adjacent capsule with contralateral hemiparesis and, later, dystonia or chorea.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Parkinson disease (functional)",
-    "modality": "SPECT",
-    "finding": "Reduced dopamine transporter binding in the posterior putamen, the terminal field of the sensorimotor corticostriatal projection, worst contralateral to the affected side.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Huntington disease",
-    "modality": "MRI",
-    "finding": "Putaminal and caudate atrophy with loss of the indirect-pathway neurons that the sensorimotor cortex drives.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral bradykinesia when dopaminergic modulation fails",
-    "side": "contralateral",
-    "mechanism": "Ineffective corticostriatal activation of the direct pathway"
-   },
-   {
-    "deficit": "Contralateral chorea or dystonia after striatal injury",
-    "side": "contralateral",
-    "mechanism": "Loss of indirect-pathway suppression of competing movements"
-   },
-   {
-    "deficit": "Impaired motor habit learning",
-    "side": "bilateral",
-    "mechanism": "Loss of dopamine-dependent plasticity at corticostriatal synapses"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Finger tapping and rapid alternating movements",
-   "Observation for chorea and dystonia",
-   "Motor sequence learning where feasible"
-  ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-huntington-chorea",
-   "syn-hemiballismus"
-  ],
-  "pearls": [
-   "The putamen is the motor cortex's second target; the first is the spinal cord",
-   "The posterior putamen loses dopamine first in Parkinson disease because it is where the motor cortex projects",
-   "Striatal strokes cause movement disorders weeks later, when the corticostriatal synapses reorganize"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    250
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "internal-capsule"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "internal-capsule"
 }

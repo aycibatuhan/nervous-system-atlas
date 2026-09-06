@@ -1,149 +1,129 @@
 {
- "kind": "structure",
- "id": "hypothalamus-supraoptic",
- "name": "Supraoptic nucleus",
- "synonyms": [
-  "SON",
-  "supraoptic nucleus of the hypothalamus"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-supraoptic-l",
-  "hypothalamus-supraoptic-r"
- ],
- "summary": "The supraoptic nucleus is a dense cluster of large neurosecretory neurons straddling the lateral edge of the optic chiasm and the optic tract in the anterior hypothalamus. With the paraventricular nucleus it is the source of the vasopressin and oxytocin stored in the posterior pituitary, and its neurons are osmoreceptors themselves, firing faster as plasma osmolality rises. It is the nucleus of water balance: destruction of its axons in the pituitary stalk or of the neurons themselves causes central diabetes insipidus, and its inappropriate activation causes the syndrome of inappropriate antidiuretic hormone secretion seen after head injury, subarachnoid hemorrhage and with many drugs and lung diseases.",
- "anatomy": {
-  "location": "Anterior hypothalamus immediately above and lateral to the optic chiasm and the beginning of the optic tract, below the paraventricular nucleus, with a smaller retrochiasmatic part behind the chiasm; its axons run through the infundibulum to the neurohypophysis.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supraoptic magnocellular neurons synthesize vasopressin (most cells) and oxytocin, transport them down the supraoptico-hypophyseal tract bound to neurophysins and release them from axon terminals in the posterior pituitary into the systemic circulation; their firing is set by intrinsic osmosensitivity, by the osmoreceptors of the organum vasculosum and subfornical organ, by angiotensin II, and by baroreceptor and volume signals relayed from the nucleus of the solitary tract. Vasopressin concentrates the urine through renal V2 receptors and constricts vessels at high concentrations; oxytocin drives labor and lactation. The nucleus also receives inhibitory input from the anterior hypothalamus and is suppressed by alcohol and stimulated by nausea and pain.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-supraoptic",
+  "name": "Supraoptic nucleus",
+  "synonyms": [
+    "SON",
+    "supraoptic nucleus of the hypothalamus"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-supraoptic-l"
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-supraoptic-l",
+    "hypothalamus-supraoptic-r"
+  ],
+  "summary": "The supraoptic nucleus is a dense cluster of large neurosecretory neurons straddling the lateral edge of the optic chiasm and the optic tract in the anterior hypothalamus. With the paraventricular nucleus it is the source of the vasopressin and oxytocin stored in the posterior pituitary, and its neurons are osmoreceptors themselves, firing faster as plasma osmolality rises. It is the nucleus of water balance: destruction of its axons in the pituitary stalk or of the neurons themselves causes central diabetes insipidus, and its inappropriate activation causes the syndrome of inappropriate antidiuretic hormone secretion seen after head injury, subarachnoid hemorrhage and with many drugs and lung diseases.",
+  "anatomy": {
+    "location": "Anterior hypothalamus immediately above and lateral to the optic chiasm and the beginning of the optic tract, below the paraventricular nucleus, with a smaller retrochiasmatic part behind the chiasm; its axons run through the infundibulum to the neurohypophysis.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supraoptic magnocellular neurons synthesize vasopressin (most cells) and oxytocin, transport them down the supraoptico-hypophyseal tract bound to neurophysins and release them from axon terminals in the posterior pituitary into the systemic circulation; their firing is set by intrinsic osmosensitivity, by the osmoreceptors of the organum vasculosum and subfornical organ, by angiotensin II, and by baroreceptor and volume signals relayed from the nucleus of the solitary tract. Vasopressin concentrates the urine through renal V2 receptors and constricts vessels at high concentrations; oxytocin drives labor and lactation. The nucleus also receives inhibitory input from the anterior hypothalamus and is suppressed by alcohol and stimulated by nausea and pain.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-supraoptic-l"
+        },
+        "label": "supraoptic nucleus above the lateral chiasm and optic tract"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-supraoptic-r"
+        },
+        "label": "anterior hypothalamus over the optic chiasm"
+      }
+    ],
+    "normalAppearance": "Not visible as a discrete nucleus; it occupies the hypothalamic tissue directly above the lateral optic chiasm on coronal images. Its function is inferred from the posterior pituitary bright spot on sagittal T1 images, present in most normal subjects.",
+    "pathology": [
+      {
+        "pathology": "Central diabetes insipidus",
+        "modality": "MRI",
+        "finding": "Absent posterior pituitary bright spot and a thickened stalk in stalk lesions (hypophysitis, germinoma, histiocytosis, metastasis) or after transsphenoidal surgery.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Chiasmal compression with hypothalamic involvement",
+        "modality": "MRI",
+        "finding": "Suprasellar mass elevating and stretching the chiasm and the supraoptic region, with bitemporal hemianopia and water balance disturbance.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Osmotic demyelination (consequence of sodium correction)",
+        "modality": "MRI",
+        "finding": "Central pontine and extrapontine T2 signal change after rapid correction of hyponatremia caused by inappropriate vasopressin release.",
+        "sequence": "T2",
+        "timing": "Appears days after the sodium rise"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Diabetes insipidus: polyuria, polydipsia, hypernatremia",
+        "side": "bilateral",
+        "mechanism": "Loss of vasopressin neurons or transection of their axons above the stalk"
+      },
+      {
+        "deficit": "Inappropriate antidiuresis with hyponatremia",
+        "side": "bilateral",
+        "mechanism": "Unregulated vasopressin release after injury, hemorrhage or drugs"
+      },
+      {
+        "deficit": "Adipsic hypernatremia",
+        "side": "bilateral",
+        "mechanism": "Loss of the osmoreceptor and thirst mechanism with the nucleus"
+      }
+    ],
+    "examination": [
+      "Paired serum and urine osmolality and sodium, with urine output charting",
+      "Thirst assessment: adipsia is dangerous and easily missed",
+      "Visual fields, because the chiasm is a neighbor"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-pituitary-mass",
+      "syn-chiasmal-bitemporal"
+    ],
+    "pearls": [
+      "Stalk section above the pituitary causes permanent diabetes insipidus; below it, the nucleus survives and the deficit is transient",
+      "SIADH is a supraoptic nucleus that will not stop; diabetes insipidus is one that cannot start",
+      "Correct sodium slowly: the price of haste is osmotic demyelination"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-nucleus-supraoptic",
+      "section": "Structure and Function"
     },
-    "label": "supraoptic nucleus above the lateral chiasm and optic tract"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-supraoptic-r"
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
     },
-    "label": "anterior hypothalamus over the optic chiasm"
-   }
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "Not visible as a discrete nucleus; it occupies the hypothalamic tissue directly above the lateral optic chiasm on coronal images. Its function is inferred from the posterior pituitary bright spot on sagittal T1 images, present in most normal subjects.",
-  "pathology": [
-   {
-    "pathology": "Central diabetes insipidus",
-    "modality": "MRI",
-    "finding": "Absent posterior pituitary bright spot and a thickened stalk in stalk lesions (hypophysitis, germinoma, histiocytosis, metastasis) or after transsphenoidal surgery.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Chiasmal compression with hypothalamic involvement",
-    "modality": "MRI",
-    "finding": "Suprasellar mass elevating and stretching the chiasm and the supraoptic region, with bitemporal hemianopia and water balance disturbance.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Osmotic demyelination (consequence of sodium correction)",
-    "modality": "MRI",
-    "finding": "Central pontine and extrapontine T2 signal change after rapid correction of hyponatremia caused by inappropriate vasopressin release.",
-    "sequence": "T2",
-    "timing": "Appears days after the sodium rise"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Diabetes insipidus: polyuria, polydipsia, hypernatremia",
-    "side": "bilateral",
-    "mechanism": "Loss of vasopressin neurons or transection of their axons above the stalk"
-   },
-   {
-    "deficit": "Inappropriate antidiuresis with hyponatremia",
-    "side": "bilateral",
-    "mechanism": "Unregulated vasopressin release after injury, hemorrhage or drugs"
-   },
-   {
-    "deficit": "Adipsic hypernatremia",
-    "side": "bilateral",
-    "mechanism": "Loss of the osmoreceptor and thirst mechanism with the nucleus"
-   }
-  ],
-  "examination": [
-   "Paired serum and urine osmolality and sodium, with urine output charting",
-   "Thirst assessment: adipsia is dangerous and easily missed",
-   "Visual fields, because the chiasm is a neighbor"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-pituitary-mass",
-   "syn-chiasmal-bitemporal"
-  ],
-  "pearls": [
-   "Stalk section above the pituitary causes permanent diabetes insipidus; below it, the nucleus survives and the deficit is transient",
-   "SIADH is a supraoptic nucleus that will not stop; diabetes insipidus is one that cannot start",
-   "Correct sodium slowly: the price of haste is osmotic demyelination"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    371,
-    372
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    271,
-    274
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

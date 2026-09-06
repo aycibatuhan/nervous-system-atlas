@@ -1,117 +1,117 @@
 {
- "kind": "syndrome",
- "id": "syn-rapd",
- "name": "Relative afferent pupillary defect",
- "eponyms": [
-  "Marcus Gunn pupil"
- ],
- "category": "functional-pattern",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-02-optic",
-   "optic-chiasm",
-   "pretectal-area"
+  "kind": "syndrome",
+  "id": "syn-rapd",
+  "name": "Relative afferent pupillary defect",
+  "eponyms": [
+    "Marcus Gunn pupil"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "optic-nerve-l"
-  ]
- },
- "presentation": "Both pupils are the same size and both constrict when a light is shone in either eye, but when the light is swung quickly from the good eye to the bad eye, the bad eye's pupil dilates instead of staying small, and when swung back to the good eye both constrict again. This paradoxical dilation is the relative afferent pupillary defect, the most reliable objective sign of a unilateral or asymmetric optic nerve lesion, present even when acuity is normal.",
- "deficits": [
-  {
-   "modality": "pupil",
-   "side": "ipsilateral",
-   "distribution": "afferent limb",
-   "sign": "Paradoxical dilation of the affected pupil on the swinging flashlight test; no anisocoria",
-   "substrate": "pathway-pupillary-light-reflex"
+  "category": "functional-pattern",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-02-optic",
+      "optic-chiasm",
+      "pretectal-area"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "visual-acuity",
-   "side": "ipsilateral",
-   "distribution": "one eye",
-   "sign": "Usually reduced acuity, color desaturation or a field defect in the same eye",
-   "substrate": "cn-02-optic"
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "optic-nerve-l"
+    ]
   },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "homonymous (tract lesions)",
-   "sign": "With an optic tract lesion, the RAPD is in the eye with the temporal field loss, contralateral to the lesion",
-   "substrate": "pathway-visual"
-  }
- ],
- "reasoning": "The light reflex has a bilateral afferent input and a bilateral efferent output: light in one eye drives both pretectal nuclei through the crossed and uncrossed fibers of the chiasm, and each pretectal nucleus drives both Edinger–Westphal nuclei, so the direct and consensual responses are normally equal and the two pupils are always the same size. A lesion of one optic nerve reduces the signal from that eye but not the response of either pupil to the other eye, so the pupils remain equal, and the only way to expose the deficit is to compare the two afferent inputs directly by alternating the light between the eyes: when the light moves to the damaged eye the total drive to the pupils falls and both pupils dilate, which the examiner sees in the illuminated eye. This is why an RAPD never causes anisocoria, why it is graded by comparison rather than measured in absolute terms, and why it cannot be detected when both nerves are equally affected. Because the crossing nasal fibers outnumber the uncrossed temporal fibers, a lesion of one optic tract, which contains the crossed fibers of the contralateral eye and the uncrossed fibers of the ipsilateral eye, reduces the input from the contralateral eye more and produces a small RAPD in the eye opposite the lesion, together with a homonymous hemianopia. Lesions beyond the geniculate spare the pupil, so a hemianopia with an RAPD is a tract lesion. Dense cataract, corneal opacity or media disease do not produce an RAPD, since the light scattered through them still reaches the retina.",
- "imagingFindings": [
-  {
-   "pathology": "Optic neuritis",
-   "modality": "MRI",
-   "finding": "Enhancing segment of the optic nerve on fat-suppressed orbital images.",
-   "sequence": "T1+Gd"
+  "presentation": "Both pupils are the same size and both constrict when a light is shone in either eye, but when the light is swung quickly from the good eye to the bad eye, the bad eye's pupil dilates instead of staying small, and when swung back to the good eye both constrict again. This paradoxical dilation is the relative afferent pupillary defect, the most reliable objective sign of a unilateral or asymmetric optic nerve lesion, present even when acuity is normal.",
+  "deficits": [
+    {
+      "modality": "pupil",
+      "side": "ipsilateral",
+      "distribution": "afferent limb",
+      "sign": "Paradoxical dilation of the affected pupil on the swinging flashlight test; no anisocoria",
+      "substrate": "pathway-pupillary-light-reflex"
+    },
+    {
+      "modality": "visual-acuity",
+      "side": "ipsilateral",
+      "distribution": "one eye",
+      "sign": "Usually reduced acuity, color desaturation or a field defect in the same eye",
+      "substrate": "cn-02-optic"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "homonymous (tract lesions)",
+      "sign": "With an optic tract lesion, the RAPD is in the eye with the temporal field loss, contralateral to the lesion",
+      "substrate": "pathway-visual"
+    }
+  ],
+  "reasoning": "The light reflex has a bilateral afferent input and a bilateral efferent output: light in one eye drives both pretectal nuclei through the crossed and uncrossed fibers of the chiasm, and each pretectal nucleus drives both Edinger–Westphal nuclei, so the direct and consensual responses are normally equal and the two pupils are always the same size. A lesion of one optic nerve reduces the signal from that eye but not the response of either pupil to the other eye, so the pupils remain equal, and the only way to expose the deficit is to compare the two afferent inputs directly by alternating the light between the eyes: when the light moves to the damaged eye the total drive to the pupils falls and both pupils dilate, which the examiner sees in the illuminated eye. This is why an RAPD never causes anisocoria, why it is graded by comparison rather than measured in absolute terms, and why it cannot be detected when both nerves are equally affected. Because the crossing nasal fibers outnumber the uncrossed temporal fibers, a lesion of one optic tract, which contains the crossed fibers of the contralateral eye and the uncrossed fibers of the ipsilateral eye, reduces the input from the contralateral eye more and produces a small RAPD in the eye opposite the lesion, together with a homonymous hemianopia. Lesions beyond the geniculate spare the pupil, so a hemianopia with an RAPD is a tract lesion. Dense cataract, corneal opacity or media disease do not produce an RAPD, since the light scattered through them still reaches the retina.",
+  "imagingFindings": [
+    {
+      "pathology": "Optic neuritis",
+      "modality": "MRI",
+      "finding": "Enhancing segment of the optic nerve on fat-suppressed orbital images.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Compressive optic neuropathy",
+      "modality": "MRI",
+      "finding": "Meningioma, glioma or orbital mass along the nerve; canal narrowing on CT.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Optic tract lesion",
+      "modality": "MRI",
+      "finding": "Lesion of the tract lateral to the hypothalamus with a contralateral hemianopia.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Optic neuritis",
+    "Ischemic optic neuropathy",
+    "Compressive optic neuropathy",
+    "Glaucoma with asymmetric damage",
+    "Large retinal detachment or central retinal artery or vein occlusion",
+    "Optic tract lesion"
+  ],
+  "mimics": [
+    {
+      "name": "Hippus",
+      "howToDistinguish": "Rhythmic oscillation of both pupils unrelated to the side of illumination"
+    },
+    {
+      "name": "Anisocoria of any cause",
+      "howToDistinguish": "An efferent problem; the RAPD test compares constriction, not size"
+    },
+    {
+      "name": "Dense media opacity",
+      "howToDistinguish": "Does not produce an RAPD"
+    }
+  ],
+  "management": [
+    "Perform the swinging flashlight test in every patient with unexplained visual loss or a suspected optic neuropathy",
+    "An RAPD with normal acuity and fundus still requires optic nerve imaging",
+    "Grade with neutral density filters when quantification is needed"
+  ],
+  "citations": [
+    {
+      "ref": "sp-marcus-gunn-pupil",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -20,
+      "y": 20,
+      "z": -12
+    },
+    "label": "optic nerve from the globe to the chiasm"
   },
-  {
-   "pathology": "Compressive optic neuropathy",
-   "modality": "MRI",
-   "finding": "Meningioma, glioma or orbital mass along the nerve; canal narrowing on CT.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Optic tract lesion",
-   "modality": "MRI",
-   "finding": "Lesion of the tract lateral to the hypothalamus with a contralateral hemianopia.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Optic neuritis",
-  "Ischemic optic neuropathy",
-  "Compressive optic neuropathy",
-  "Glaucoma with asymmetric damage",
-  "Large retinal detachment or central retinal artery or vein occlusion",
-  "Optic tract lesion"
- ],
- "mimics": [
-  {
-   "name": "Hippus",
-   "howToDistinguish": "Rhythmic oscillation of both pupils unrelated to the side of illumination"
-  },
-  {
-   "name": "Anisocoria of any cause",
-   "howToDistinguish": "An efferent problem; the RAPD test compares constriction, not size"
-  },
-  {
-   "name": "Dense media opacity",
-   "howToDistinguish": "Does not produce an RAPD"
-  }
- ],
- "management": [
-  "Perform the swinging flashlight test in every patient with unexplained visual loss or a suspected optic neuropathy",
-  "An RAPD with normal acuity and fundus still requires optic nerve imaging",
-  "Grade with neutral density filters when quantification is needed"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    83,
-    85
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -20,
-   "y": 20,
-   "z": -12
-  },
-  "label": "optic nerve from the globe to the chiasm"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

@@ -1,129 +1,133 @@
 {
- "kind": "syndrome",
- "id": "syn-idiopathic-intracranial-hypertension",
- "name": "Idiopathic intracranial hypertension",
- "eponyms": [
-  "pseudotumor cerebri",
-  "benign intracranial hypertension"
- ],
- "category": "csf-pressure",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "arachnoid-granulations",
-   "cn-02-optic",
-   "cn-06-abducens",
-   "sinus-transverse-sigmoid",
-   "subarachnoid-space-cisterns"
+  "kind": "syndrome",
+  "id": "syn-idiopathic-intracranial-hypertension",
+  "name": "Idiopathic intracranial hypertension",
+  "eponyms": [
+    "pseudotumor cerebri",
+    "benign intracranial hypertension"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "optic-nerve-l",
-   "optic-nerve-r"
-  ]
- },
- "presentation": "An overweight young woman has daily headaches that are worse on waking and on bending, a whooshing pulsatile noise in the ears, brief episodes of visual dimming on standing and horizontal double vision. Both optic discs are swollen, the blind spots are enlarged and one eye cannot fully abduct, but the rest of the examination is normal, the MRI shows no mass and small ventricles, and the lumbar puncture opening pressure is thirty-five centimeters of CSF with normal fluid.",
- "deficits": [
-  {
-   "modality": "pain",
-   "side": "bilateral",
-   "distribution": "head",
-   "sign": "Daily headache worse on waking, lying and straining; pulsatile tinnitus",
-   "substrate": "subarachnoid-space-cisterns"
+  "category": "csf-pressure",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "arachnoid-granulations",
+      "cn-02-optic",
+      "cn-06-abducens",
+      "sinus-transverse-sigmoid",
+      "subarachnoid-space-cisterns"
+    ],
+    "side": "bilateral"
   },
-  {
-   "modality": "visual-acuity",
-   "side": "bilateral",
-   "distribution": "optic discs",
-   "sign": "Papilledema with transient visual obscurations, enlarged blind spots, progressive constriction of the fields and, untreated, permanent visual loss",
-   "substrate": "cn-02-optic"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "optic-nerve-l",
+      "optic-nerve-r"
+    ]
   },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "abducens",
-   "sign": "Unilateral or bilateral sixth nerve palsies (false localizing)",
-   "substrate": "cn-06-abducens"
+  "presentation": "An overweight young woman has daily headaches that are worse on waking and on bending, a whooshing pulsatile noise in the ears, brief episodes of visual dimming on standing and horizontal double vision. Both optic discs are swollen, the blind spots are enlarged and one eye cannot fully abduct, but the rest of the examination is normal, the MRI shows no mass and small ventricles, and the lumbar puncture opening pressure is thirty-five centimeters of CSF with normal fluid.",
+  "deficits": [
+    {
+      "modality": "pain",
+      "side": "bilateral",
+      "distribution": "head",
+      "sign": "Daily headache worse on waking, lying and straining; pulsatile tinnitus",
+      "substrate": "subarachnoid-space-cisterns"
+    },
+    {
+      "modality": "visual-acuity",
+      "side": "bilateral",
+      "distribution": "optic discs",
+      "sign": "Papilledema with transient visual obscurations, enlarged blind spots, progressive constriction of the fields and, untreated, permanent visual loss",
+      "substrate": "cn-02-optic"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "abducens",
+      "sign": "Unilateral or bilateral sixth nerve palsies (false localizing)",
+      "substrate": "cn-06-abducens"
+    },
+    {
+      "modality": "consciousness",
+      "side": "n/a",
+      "distribution": "preserved",
+      "sign": "Alert, normal cognition; no focal deficit",
+      "substrate": "reticular-formation"
+    }
+  ],
+  "reasoning": "The intracranial pressure rises without a mass, hydrocephalus or infection, most often in obese women of childbearing age, through mechanisms that are still debated but include impaired CSF absorption, raised venous pressure in the dural sinuses and, in many, stenosis of the transverse sinuses that may be cause or consequence. The raised pressure is transmitted throughout the subarachnoid space and along the optic nerve sheaths, where it obstructs axoplasmic flow in the optic nerve heads and produces papilledema; the swollen nerve fibers enlarge the blind spot and, if the pressure persists, die, constricting the field from the periphery and eventually destroying central vision, which makes the condition a threat to sight rather than to life. The abducens nerves, with their long course up the clivus and over the petrous apex, are stretched by the pressure and fail on one or both sides, giving diplopia that has nothing to do with the pons; a false-localizing sixth nerve palsy is the rule. Pulsatile tinnitus arises from turbulent venous flow through the compressed transverse sinuses, and the headache from stretching of the pain-sensitive dura. There is no focal lesion and no crossed or lateralized deficit apart from the sixth nerve palsy; the ventricles are small because the pressure is uniform, which separates the condition from hydrocephalus. The diagnosis requires papilledema, a normal neurological examination apart from sixth nerve palsy, normal imaging including venography to exclude sinus thrombosis, and a raised opening pressure with normal CSF composition.",
+  "imagingFindings": [
+    {
+      "pathology": "Signs of intracranial hypertension",
+      "modality": "MRI",
+      "finding": "Partially empty sella, flattening of the posterior globes, distension and tortuosity of the optic nerve sheaths, protrusion of the optic nerve heads, slit-like ventricles.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Transverse sinus stenosis",
+      "modality": "MRV",
+      "finding": "Bilateral narrowing of the distal transverse sinuses; also excludes venous sinus thrombosis, the essential mimic.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Raised opening pressure",
+      "modality": "LP/CSF",
+      "finding": "Opening pressure above 25 cm CSF in the lateral decubitus position with normal protein, glucose and cells.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Idiopathic, associated with obesity and recent weight gain",
+    "Drugs: tetracyclines, retinoids, growth hormone, steroid withdrawal",
+    "Secondary: venous sinus thrombosis, sleep apnea, anemia, endocrine disease (these are excluded by definition)"
+  ],
+  "mimics": [
+    {
+      "name": "Cerebral venous sinus thrombosis",
+      "howToDistinguish": "Identical presentation; MRV shows the thrombus; seizures and focal signs may occur"
+    },
+    {
+      "name": "Hydrocephalus",
+      "howToDistinguish": "Dilated ventricles"
+    },
+    {
+      "name": "Malignant hypertension",
+      "howToDistinguish": "Very high blood pressure with retinal hemorrhages and exudates"
+    },
+    {
+      "name": "Pseudopapilledema (drusen)",
+      "howToDistinguish": "Normal pressure; drusen on ultrasound or autofluorescence"
+    }
+  ],
+  "management": [
+    "Formal perimetry at diagnosis and follow-up; visual fields, not headache, guide treatment",
+    "Weight loss and acetazolamide; stop causative drugs",
+    "Optic nerve sheath fenestration, venous sinus stenting or CSF shunting for progressive visual loss"
+  ],
+  "citations": [
+    {
+      "ref": "sp-pseudotumor-cerebri",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-intracranial-hypertension",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebrospinal-fluid",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": 20,
+      "z": -12
+    },
+    "label": "optic nerve sheaths and posterior globes"
   },
-  {
-   "modality": "consciousness",
-   "side": "n/a",
-   "distribution": "preserved",
-   "sign": "Alert, normal cognition; no focal deficit",
-   "substrate": "reticular-formation"
-  }
- ],
- "reasoning": "The intracranial pressure rises without a mass, hydrocephalus or infection, most often in obese women of childbearing age, through mechanisms that are still debated but include impaired CSF absorption, raised venous pressure in the dural sinuses and, in many, stenosis of the transverse sinuses that may be cause or consequence. The raised pressure is transmitted throughout the subarachnoid space and along the optic nerve sheaths, where it obstructs axoplasmic flow in the optic nerve heads and produces papilledema; the swollen nerve fibers enlarge the blind spot and, if the pressure persists, die, constricting the field from the periphery and eventually destroying central vision, which makes the condition a threat to sight rather than to life. The abducens nerves, with their long course up the clivus and over the petrous apex, are stretched by the pressure and fail on one or both sides, giving diplopia that has nothing to do with the pons; a false-localizing sixth nerve palsy is the rule. Pulsatile tinnitus arises from turbulent venous flow through the compressed transverse sinuses, and the headache from stretching of the pain-sensitive dura. There is no focal lesion and no crossed or lateralized deficit apart from the sixth nerve palsy; the ventricles are small because the pressure is uniform, which separates the condition from hydrocephalus. The diagnosis requires papilledema, a normal neurological examination apart from sixth nerve palsy, normal imaging including venography to exclude sinus thrombosis, and a raised opening pressure with normal CSF composition.",
- "imagingFindings": [
-  {
-   "pathology": "Signs of intracranial hypertension",
-   "modality": "MRI",
-   "finding": "Partially empty sella, flattening of the posterior globes, distension and tortuosity of the optic nerve sheaths, protrusion of the optic nerve heads, slit-like ventricles.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Transverse sinus stenosis",
-   "modality": "MRV",
-   "finding": "Bilateral narrowing of the distal transverse sinuses; also excludes venous sinus thrombosis, the essential mimic.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Raised opening pressure",
-   "modality": "LP/CSF",
-   "finding": "Opening pressure above 25 cm CSF in the lateral decubitus position with normal protein, glucose and cells.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Idiopathic, associated with obesity and recent weight gain",
-  "Drugs: tetracyclines, retinoids, growth hormone, steroid withdrawal",
-  "Secondary: venous sinus thrombosis, sleep apnea, anemia, endocrine disease (these are excluded by definition)"
- ],
- "mimics": [
-  {
-   "name": "Cerebral venous sinus thrombosis",
-   "howToDistinguish": "Identical presentation; MRV shows the thrombus; seizures and focal signs may occur"
-  },
-  {
-   "name": "Hydrocephalus",
-   "howToDistinguish": "Dilated ventricles"
-  },
-  {
-   "name": "Malignant hypertension",
-   "howToDistinguish": "Very high blood pressure with retinal hemorrhages and exudates"
-  },
-  {
-   "name": "Pseudopapilledema (drusen)",
-   "howToDistinguish": "Normal pressure; drusen on ultrasound or autofluorescence"
-  }
- ],
- "management": [
-  "Formal perimetry at diagnosis and follow-up; visual fields, not headache, guide treatment",
-  "Weight loss and acetazolamide; stop causative drugs",
-  "Optic nerve sheath fenestration, venous sinus stenting or CSF shunting for progressive visual loss"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    272,
-    276
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": 20,
-   "z": -12
-  },
-  "label": "optic nerve sheaths and posterior globes"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

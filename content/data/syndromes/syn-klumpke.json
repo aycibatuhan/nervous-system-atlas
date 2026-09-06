@@ -1,134 +1,130 @@
 {
- "kind": "syndrome",
- "id": "syn-klumpke",
- "name": "Lower brachial plexus palsy (Klumpke)",
- "eponyms": [
-  "Klumpke palsy",
-  "Dejerine–Klumpke palsy"
- ],
- "category": "plexopathy",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "plexus-brachial",
-   "roots-c5-t1",
-   "nerve-ulnar",
-   "nerve-median",
-   "cervical-sympathetic-chain"
+  "kind": "syndrome",
+  "id": "syn-klumpke",
+  "name": "Lower brachial plexus palsy (Klumpke)",
+  "eponyms": [
+    "Klumpke palsy",
+    "Dejerine–Klumpke palsy"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "brachial-plexus-l"
-  ]
- },
- "presentation": "A patient who grabbed a branch while falling, or a baby delivered with the arm pulled upward, has a claw hand: the fingers cannot be spread or brought together, the small hand muscles are wasted, and grip is weak, while the shoulder and elbow work. Sensation is absent along the inner forearm and the little finger. A drooping lid and small pupil on the same side mean the T1 root has been torn from the cord.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "intrinsic hand muscles, long finger flexors",
-   "sign": "Claw hand with weak grip; wasting of the thenar, hypothenar and interossei; wrist flexion weak",
-   "substrate": "plexus-brachial"
+  "category": "plexopathy",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "plexus-brachial",
+      "roots-c5-t1",
+      "nerve-ulnar",
+      "nerve-median",
+      "cervical-sympathetic-chain"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "medial forearm, medial hand and little finger (C8–T1)",
-   "sign": "Sensory loss along the ulnar border of the forearm and hand",
-   "substrate": "roots-c5-t1"
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "brachial-plexus-l"
+    ]
   },
-  {
-   "modality": "autonomic",
-   "side": "ipsilateral",
-   "distribution": "eye",
-   "sign": "Horner syndrome when the T1 root is avulsed",
-   "substrate": "pathway-oculosympathetic"
+  "presentation": "A patient who grabbed a branch while falling, or a baby delivered with the arm pulled upward, has a claw hand: the fingers cannot be spread or brought together, the small hand muscles are wasted, and grip is weak, while the shoulder and elbow work. Sensation is absent along the inner forearm and the little finger. A drooping lid and small pupil on the same side mean the T1 root has been torn from the cord.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "intrinsic hand muscles, long finger flexors",
+      "sign": "Claw hand with weak grip; wasting of the thenar, hypothenar and interossei; wrist flexion weak",
+      "substrate": "plexus-brachial"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "medial forearm, medial hand and little finger (C8–T1)",
+      "sign": "Sensory loss along the ulnar border of the forearm and hand",
+      "substrate": "roots-c5-t1"
+    },
+    {
+      "modality": "autonomic",
+      "side": "ipsilateral",
+      "distribution": "eye",
+      "sign": "Horner syndrome when the T1 root is avulsed",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "motor",
+      "side": "n/a",
+      "distribution": "shoulder and elbow",
+      "sign": "Proximal muscles preserved",
+      "substrate": "nerve-axillary"
+    }
+  ],
+  "reasoning": "Traction on the abducted arm stretches the lower roots of the plexus, C8 and T1, and the lower trunk they form. These fibers pass through the medial cord into the ulnar nerve for the interossei, the hypothenar muscles and the medial long finger flexors, and into the median nerve for the thenar muscles and the lateral finger flexors, so all the intrinsic muscles and the finger flexors fail together: the unopposed extensors and the loss of lumbrical action produce the claw posture, and grip is lost. The shoulder and elbow muscles, supplied from C5–C7 through the upper and middle trunks, are unaffected. The C8 and T1 dermatomes cover the medial forearm and the ulnar side of the hand, so sensory loss lies there; involvement of the medial forearm distinguishes a lower plexus lesion from an ulnar neuropathy, whose sensory territory stops at the wrist. The preganglionic sympathetic fibers for the eye leave the cord in the T1 root and pass through the stellate ganglion, so avulsion of the root also produces a Horner syndrome on the same side, a sign that the injury is at the cord and cannot be repaired. All signs are ipsilateral since the plexus is a peripheral structure. Chronic compression of the lower trunk by a cervical rib or fibrous band produces the same pattern slowly as neurogenic thoracic outlet syndrome, and infiltration by an apical lung tumor produces it with pain and a Horner.",
+  "imagingFindings": [
+    {
+      "pathology": "Lower trunk injury or avulsion",
+      "modality": "MRI",
+      "finding": "T2 hyperintensity of the C8–T1 roots and lower trunk on MR neurography; pseudomeningocele at T1 with avulsion.",
+      "sequence": "STIR"
+    },
+    {
+      "pathology": "Apical lung (Pancoast) tumor",
+      "modality": "CT",
+      "finding": "Apical mass invading the lower trunk and stellate ganglion in adults with painful progressive lower plexopathy.",
+      "sequence": "CT contrast"
+    },
+    {
+      "pathology": "Nerve conduction and EMG",
+      "modality": "EMG/NCS",
+      "finding": "Denervation in C8–T1 muscles of both ulnar and median territories; medial antebrachial cutaneous sensory response absent in postganglionic lesions, preserved in avulsion.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Traction injury with the arm abducted",
+    "Obstetric injury (rare, usually with the whole plexus)",
+    "Pancoast tumor",
+    "Cervical rib and neurogenic thoracic outlet syndrome",
+    "Metastatic infiltration"
+  ],
+  "mimics": [
+    {
+      "name": "Ulnar neuropathy at the elbow",
+      "howToDistinguish": "Sensory loss spares the medial forearm; median-innervated thenar muscles are normal"
+    },
+    {
+      "name": "C8 radiculopathy",
+      "howToDistinguish": "Neck pain, paraspinal denervation, no Horner"
+    },
+    {
+      "name": "Combined median and ulnar neuropathy",
+      "howToDistinguish": "Sensory loss follows nerve territories, sparing the forearm"
+    }
+  ],
+  "management": [
+    "Look for a Horner and image the lung apex in adult lower plexopathy",
+    "EMG to define the level; surgical exploration if no recovery",
+    "Hand therapy and splinting for the claw deformity"
+  ],
+  "citations": [
+    {
+      "ref": "sp-klumpke-palsy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": -55,
+      "y": -25,
+      "z": -60
+    },
+    "label": "lower trunk of the brachial plexus over the first rib"
   },
-  {
-   "modality": "motor",
-   "side": "n/a",
-   "distribution": "shoulder and elbow",
-   "sign": "Proximal muscles preserved",
-   "substrate": "nerve-axillary"
-  }
- ],
- "reasoning": "Traction on the abducted arm stretches the lower roots of the plexus, C8 and T1, and the lower trunk they form. These fibers pass through the medial cord into the ulnar nerve for the interossei, the hypothenar muscles and the medial long finger flexors, and into the median nerve for the thenar muscles and the lateral finger flexors, so all the intrinsic muscles and the finger flexors fail together: the unopposed extensors and the loss of lumbrical action produce the claw posture, and grip is lost. The shoulder and elbow muscles, supplied from C5–C7 through the upper and middle trunks, are unaffected. The C8 and T1 dermatomes cover the medial forearm and the ulnar side of the hand, so sensory loss lies there; involvement of the medial forearm distinguishes a lower plexus lesion from an ulnar neuropathy, whose sensory territory stops at the wrist. The preganglionic sympathetic fibers for the eye leave the cord in the T1 root and pass through the stellate ganglion, so avulsion of the root also produces a Horner syndrome on the same side, a sign that the injury is at the cord and cannot be repaired. All signs are ipsilateral since the plexus is a peripheral structure. Chronic compression of the lower trunk by a cervical rib or fibrous band produces the same pattern slowly as neurogenic thoracic outlet syndrome, and infiltration by an apical lung tumor produces it with pain and a Horner.",
- "imagingFindings": [
-  {
-   "pathology": "Lower trunk injury or avulsion",
-   "modality": "MRI",
-   "finding": "T2 hyperintensity of the C8–T1 roots and lower trunk on MR neurography; pseudomeningocele at T1 with avulsion.",
-   "sequence": "STIR"
-  },
-  {
-   "pathology": "Apical lung (Pancoast) tumor",
-   "modality": "CT",
-   "finding": "Apical mass invading the lower trunk and stellate ganglion in adults with painful progressive lower plexopathy.",
-   "sequence": "CT contrast"
-  },
-  {
-   "pathology": "Nerve conduction and EMG",
-   "modality": "EMG/NCS",
-   "finding": "Denervation in C8–T1 muscles of both ulnar and median territories; medial antebrachial cutaneous sensory response absent in postganglionic lesions, preserved in avulsion.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Traction injury with the arm abducted",
-  "Obstetric injury (rare, usually with the whole plexus)",
-  "Pancoast tumor",
-  "Cervical rib and neurogenic thoracic outlet syndrome",
-  "Metastatic infiltration"
- ],
- "mimics": [
-  {
-   "name": "Ulnar neuropathy at the elbow",
-   "howToDistinguish": "Sensory loss spares the medial forearm; median-innervated thenar muscles are normal"
-  },
-  {
-   "name": "C8 radiculopathy",
-   "howToDistinguish": "Neck pain, paraspinal denervation, no Horner"
-  },
-  {
-   "name": "Combined median and ulnar neuropathy",
-   "howToDistinguish": "Sensory loss follows nerve territories, sparing the forearm"
-  }
- ],
- "management": [
-  "Look for a Horner and image the lung apex in adult lower plexopathy",
-  "EMG to define the level; surgical exploration if no recovery",
-  "Hand therapy and splinting for the claw deformity"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    412,
-    412
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    147,
-    147
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": -55,
-   "y": -25,
-   "z": -60
-  },
-  "label": "lower trunk of the brachial plexus over the first rib"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

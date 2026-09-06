@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-focal-cortical-dysplasia",
- "term": "Focal cortical dysplasia",
- "definition": "A localized malformation of cortical development with disorganized layers, dysmorphic neurons and balloon cells, seen on MRI as cortical thickening, blurred gray-white junction and a transmantle FLAIR band; a leading cause of surgically treatable epilepsy.",
- "related": [
-  "g-heterotopia"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    167,
-    172
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-focal-cortical-dysplasia",
+  "term": "Focal cortical dysplasia",
+  "definition": "A localized malformation of cortical development with disorganized layers, dysmorphic neurons and balloon cells, seen on MRI as cortical thickening, blurred gray-white junction and a transmantle FLAIR band; a leading cause of surgically treatable epilepsy.",
+  "related": [
+    "g-heterotopia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-partial-epilepsy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-neuroimaging-in-epilepsy-surgery",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-epilepsy-surgery",
+      "section": "Introduction"
+    }
+  ]
 }

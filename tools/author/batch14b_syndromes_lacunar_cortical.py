@@ -1,10 +1,6 @@
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from synlib import *
 E = []
-S17 = lambda a, b=None: C("snell", 17, a, b)
-B7 = lambda a, b=None: C("berkowitz", 7, a, b)
-B6 = lambda a, b=None: C("berkowitz", 6, a, b)
-S8 = lambda a, b=None: C("snell", 8, a, b)
 
 def lac(id, name, structures, presentation, deficits, reasoning, site, marker, hint_, causes_extra=(), mimics_extra=(), preset="superior"):
     return syn(id, name, "lacunar", structures, "contralateral", presentation, deficits, reasoning,
@@ -13,7 +9,7 @@ def lac(id, name, structures, presentation, deficits, reasoning, site, marker, h
         ["Hypertensive lipohyalinosis of a single perforating artery", "Microatheroma at the perforator origin", *causes_extra],
         [("Cortical branch infarct", "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"), ("Small hemorrhage", "Hyperdense on CT; same sites"), *mimics_extra],
         ["Antiplatelet therapy, statin and blood pressure control", "Thrombolysis when presenting within the window and disabling", "Early mobilization; prognosis for recovery is good"],
-        [S17(474), S17(482), B7(60), B7(63)], marker=marker, imagingHint=hint_, preset=preset)
+        [R("sp-lacunar-stroke"), R("sp-internal-capsule"), R("sp-cerebral-blood-supply")], marker=marker, imagingHint=hint_, preset=preset)
 
 E.append(lac("syn-lacunar-pure-motor", "Pure motor lacunar stroke", ["internal-capsule", "arteries-lenticulostriate", "pontine-nuclei", "corona-radiata"],
  "A hypertensive patient wakes with weakness of the face, arm and leg on one side, all roughly equally affected, and nothing else: sensation, vision, speech content and awareness are normal, though speech may be slurred by the facial weakness. There is no headache and the patient is fully alert. The weakness may stutter over hours before settling.",
@@ -53,7 +49,7 @@ E.append(syn("syn-gerstmann", "Gerstmann syndrome", "vascular", ["gyrus-angular"
  ["Infarct of the angular branch of the left middle cerebral artery", "Left parietal tumor", "Posterior cortical atrophy"],
  [("Wernicke aphasia", "Comprehension is impaired; in Gerstmann it is preserved"), ("Developmental Gerstmann", "Lifelong learning difficulty in children, no acute lesion"), ("Global cognitive impairment", "Deficits are not selective")],
  ["Treat the underlying stroke or lesion", "Occupational therapy for calculation and writing", "Screen for a field defect"],
- [B7(53)], marker=sphere(-45, -60, 35, 10), imagingHint=hint("axial", -45, -60, 35, "left angular gyrus"), preset="lateral-l", eponyms=["angular gyrus syndrome"]))
+ [R("sp-gerstmann-syndrome"), R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke")], marker=sphere(-45, -60, 35, 10), imagingHint=hint("axial", -45, -60, 35, "left angular gyrus"), preset="lateral-l", eponyms=["angular gyrus syndrome"]))
 
 E.append(syn("syn-aphasia-broca", "Broca (expressive, non-fluent) aphasia", "vascular", ["area-broca", "lobe-frontal", "artery-mca-superior-division", "gyrus-precentral"], "left",
  "Speech is effortful, slow and reduced to a few content words with the grammar stripped out ('go... hospital... wife'), and repeating a sentence is as hard as producing one. Comprehension of conversation is good, though complex grammatical sentences ('the lion was killed by the tiger; which animal died?') may defeat the patient. Writing is as impaired as speech. There is usually right facial and arm weakness, and the patient is frustrated and aware of the problem.",
@@ -63,7 +59,7 @@ E.append(syn("syn-aphasia-broca", "Broca (expressive, non-fluent) aphasia", "vas
  ["Left MCA superior division infarct", "Left frontal hemorrhage", "Tumor or abscess of the left frontal operculum", "Primary progressive aphasia (agrammatic variant)"],
  [("Dysarthria", "Grammar and word choice are normal; only articulation is impaired"), ("Transcortical motor aphasia", "Repetition preserved; lesion in the watershed anterior or superior to Broca's area"), ("Mutism after supplementary motor area lesion", "Recovers within days, no agrammatism")],
  ["Acute stroke treatment", "Early intensive speech and language therapy", "Screen for depression, which is common with awareness of the deficit"],
- [S8(290, 291), B7(54, 56)], marker=sphere(-48, 15, 15, 10), imagingHint=hint("axial", -48, 15, 15, "left inferior frontal gyrus, pars opercularis"), preset="lateral-l", eponyms=["motor aphasia"]))
+ [R("sp-aphasia"), R("sp-broca-area"), R("sp-middle-cerebral-artery-stroke")], marker=sphere(-48, 15, 15, 10), imagingHint=hint("axial", -48, 15, 15, "left inferior frontal gyrus, pars opercularis"), preset="lateral-l", eponyms=["motor aphasia"]))
 
 E.append(syn("syn-aphasia-wernicke", "Wernicke (receptive, fluent) aphasia", "vascular", ["area-wernicke", "lobe-temporal", "artery-mca-inferior-division", "gyrus-heschl"], "left",
  "The patient speaks in long, well-articulated but empty sentences peppered with wrong words and invented words, does not follow commands, cannot repeat, and seems unaware that anything is wrong, sometimes becoming angry when not understood. Strength is normal. A right superior quadrantanopia may be found if the examiner thinks to test the fields. The initial diagnosis is frequently confusion or psychosis.",
@@ -73,7 +69,7 @@ E.append(syn("syn-aphasia-wernicke", "Wernicke (receptive, fluent) aphasia", "va
  ["Left MCA inferior division embolic infarct", "Left temporal hemorrhage", "Herpes simplex encephalitis", "Temporal lobe tumor", "Logopenic or semantic primary progressive aphasia"],
  [("Delirium or psychosis", "Language testing shows paraphasias and failed repetition with a field defect; DWI positive"), ("Transcortical sensory aphasia", "Repetition intact; watershed lesion behind Wernicke's area"), ("Pure word deafness", "Reading and writing preserved; bilateral or deep temporal lesions")],
  ["Acute stroke treatment; the deficit is disabling even without weakness", "Speech therapy focused on comprehension strategies", "Cardiac source evaluation, since the branch occlusion is usually embolic"],
- [S8(290, 291), B7(54, 56)], marker=sphere(-55, -45, 15, 10), imagingHint=hint("axial", -55, -45, 15, "left posterior superior temporal gyrus"), preset="lateral-l", eponyms=["sensory aphasia"]))
+ [R("sp-wernicke-aphasia"), R("sp-aphasia"), R("sp-cerebral-blood-supply")], marker=sphere(-55, -45, 15, 10), imagingHint=hint("axial", -55, -45, 15, "left posterior superior temporal gyrus"), preset="lateral-l", eponyms=["sensory aphasia"]))
 
 E.append(syn("syn-aphasia-conduction-global", "Conduction and global aphasia", "vascular", ["gyrus-supramarginal", "area-broca", "area-wernicke", "insula", "artery-mca"], "left",
  "In conduction aphasia the patient speaks fluently with frequent phonemic slips that they notice and try to correct, understands well, but cannot repeat even short phrases, which is the giveaway. In global aphasia, after a large left middle cerebral artery infarct, speech is reduced to a few stereotyped syllables, comprehension is nearly absent, repetition is impossible, and there is a dense right hemiplegia with hemianopia.",
@@ -83,7 +79,7 @@ E.append(syn("syn-aphasia-conduction-global", "Conduction and global aphasia", "
  ["Left MCA branch embolus (conduction)", "Left MCA stem occlusion (global)", "Left perisylvian hemorrhage"],
  [("Wernicke aphasia", "Comprehension poor in Wernicke, good in conduction aphasia"), ("Anarthria or mutism", "Comprehension and writing preserved in pure anarthria"), ("Transcortical aphasias", "Repetition preserved")],
  ["Acute stroke treatment; global aphasia with M1 occlusion is a thrombectomy indication", "Speech therapy; prognosis of conduction aphasia is good, of global aphasia poor unless it evolves to Broca type", "Assess and support communication with gesture and picture boards"],
- [S8(290, 291), B7(54, 56)], marker=sphere(-50, -35, 30, 10), imagingHint=hint("axial", -50, -35, 30, "left supramarginal gyrus over the arcuate fasciculus"), preset="lateral-l"))
+ [R("sp-conduction-aphasia"), R("sp-aphasia"), R("sp-middle-cerebral-artery-stroke")], marker=sphere(-50, -35, 30, 10), imagingHint=hint("axial", -50, -35, 30, "left supramarginal gyrus over the arcuate fasciculus"), preset="lateral-l"))
 
 E.append(syn("syn-hemineglect", "Hemispatial neglect", "vascular", ["gyrus-supramarginal", "gyrus-angular", "lobe-parietal", "lobule-superior-parietal", "artery-mca-inferior-division"], "contralateral",
  "After a right hemisphere stroke, the patient ignores the left side of space: they eat from the right half of the plate, shave the right side of the face, bisect lines far to the right, and when asked to draw a clock crowd all the numbers on the right. They may deny that the left arm belongs to them, insist they are not weak, and, when touched on both sides, feel only the right. The head and eyes are turned to the right.",
@@ -93,7 +89,7 @@ E.append(syn("syn-hemineglect", "Hemispatial neglect", "vascular", ["gyrus-supra
  ["Right MCA infarct (stem or inferior division)", "Right parietal hemorrhage", "Right frontal or thalamic infarct (milder)", "Tumor of the right parietal lobe"],
  [("Left homonymous hemianopia", "Hemianopic patients turn to compensate and are aware; neglect patients do not search and deny"), ("Left hemisensory loss", "Sensation is present when tested alone; extinction only with bilateral stimulation"), ("Global inattention or delirium", "No lateralized pattern")],
  ["Acute stroke treatment", "Neglect rehabilitation: prism adaptation, visual scanning training, approaching from the neglected side", "Fall prevention; neglect is a strong predictor of poor functional recovery"],
- [B7(53), B7(56)], marker=sphere(50, -45, 35, 12), imagingHint=hint("axial", 50, -45, 35, "right inferior parietal lobule"), preset="lateral-r", eponyms=["hemi-inattention"]))
+ [R("sp-spatial-neglect"), R("sp-middle-cerebral-artery-stroke")], marker=sphere(50, -45, 35, 12), imagingHint=hint("axial", 50, -45, 35, "right inferior parietal lobule"), preset="lateral-r", eponyms=["hemi-inattention"]))
 
 E.append(syn("syn-anton", "Anton syndrome (cortical blindness with denial)", "vascular", ["cortex-calcarine", "lobe-occipital", "artery-pca"], "bilateral",
  "A patient who has suffered bilateral occipital infarcts, often after a basilar embolus or a cardiac arrest, walks into furniture and describes objects that are not there, yet insists that they can see, blaming the light or their glasses. The pupils react normally to light, the fundi are normal, and there is no blink to threat. The confabulated descriptions are the clue that the patient is unaware of the blindness.",
@@ -103,7 +99,7 @@ E.append(syn("syn-anton", "Anton syndrome (cortical blindness with denial)", "va
  ["Basilar tip embolism with bilateral PCA occlusion", "Hypoperfusion after cardiac arrest", "Posterior reversible encephalopathy syndrome", "Bilateral occipital trauma"],
  [("Functional (non-organic) visual loss", "Normal imaging; optokinetic nystagmus present; patient is distressed, not indifferent"), ("Bilateral optic neuropathy", "Pupils sluggish or absent light reaction, abnormal fundi"), ("Balint syndrome", "Sees objects but cannot integrate a scene; visual acuity preserved")],
  ["Treat the cause (thrombectomy for basilar occlusion, blood pressure control in PRES)", "Safety measures for a patient who does not know they are blind", "Explain the denial to the family"],
- [B6(47), B6(51)], marker=sphere(0, -85, 5, 20), imagingHint=hint("axial", 0, -85, 5, "both calcarine cortices"), preset="posterior", eponyms=["Anton–Babinski syndrome"]))
+ [R("sp-anton-syndrome"), R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke")], marker=sphere(0, -85, 5, 20), imagingHint=hint("axial", 0, -85, 5, "both calcarine cortices"), preset="posterior", eponyms=["Anton–Babinski syndrome"]))
 
 E.append(syn("syn-balint", "Balint syndrome", "vascular", ["lobule-superior-parietal", "lobe-parietal", "lobe-occipital", "territory-watershed"], "bilateral",
  "The patient can read individual letters but not a word, describes one object in a picture while missing the scene, cannot reach accurately for a cup that they see, and cannot shift their gaze voluntarily to a new target even though their eyes move freely at random. Acuity and fields may be normal or show lower quadrant defects. The syndrome typically follows bilateral hypotensive watershed infarcts or posterior cortical atrophy.",
@@ -113,7 +109,7 @@ E.append(syn("syn-balint", "Balint syndrome", "vascular", ["lobule-superior-pari
  ["Bilateral watershed infarcts after hypotension", "Posterior cortical atrophy (Alzheimer disease)", "Posterior reversible encephalopathy syndrome", "Bilateral PCA–MCA borderzone embolism"],
  [("Bilateral hemianopia / cortical blindness", "Fields are absent; Balint patients see objects but cannot integrate them"), ("Cerebellar ataxia", "Reaching to non-visual targets is also inaccurate"), ("Neglect", "Unilateral; Balint is bilateral and symmetric")],
  ["Treat the cause", "Occupational therapy with verbal and tactile cues to replace visual guidance", "Safety supervision for walking and cooking"],
- [B6(47), B6(50)], marker=sphere(0, -65, 45, 20), imagingHint=hint("axial", 0, -65, 45, "bilateral superior parietal lobules"), preset="superior", eponyms=["Balint–Holmes syndrome"]))
+ [R("sp-balint-syndrome"), R("sp-cerebral-blood-supply"), R("sp-ischemic-stroke")], marker=sphere(0, -65, 45, 20), imagingHint=hint("axial", 0, -65, 45, "bilateral superior parietal lobules"), preset="superior", eponyms=["Balint–Holmes syndrome"]))
 
 E.append(syn("syn-alexia-without-agraphia", "Alexia without agraphia", "vascular", ["cortex-calcarine", "corpus-callosum", "lobe-occipital", "artery-pca", "gyrus-angular"], "left",
  "A patient writes a sentence at the examiner's request and then, a minute later, cannot read what they have written, although they can spell words aloud, understand spoken language and copy letters slowly stroke by stroke. They have a right homonymous hemianopia and often cannot name colors. The combination follows a left posterior cerebral artery infarct that included the splenium of the corpus callosum.",
@@ -123,6 +119,6 @@ E.append(syn("syn-alexia-without-agraphia", "Alexia without agraphia", "vascular
  ["Left posterior cerebral artery infarct", "Splenial hemorrhage or tumor", "Posterior cortical atrophy"],
  [("Alexia with agraphia", "Writing also impaired; lesion in the left angular gyrus"), ("Hemianopic dyslexia", "Reads slowly because of the field defect but can read when text is placed in the intact field"), ("Aphasic alexia", "Reading loss is part of a broader aphasia")],
  ["Acute stroke treatment", "Reading rehabilitation: letter-by-letter and tactile letter-tracing strategies", "Field defect counseling and driving restriction"],
- [B6(50), B7(54)], marker=sphere(-12, -75, 10, 14), imagingHint=hint("axial", -12, -75, 10, "left calcarine cortex and splenium"), preset="medial-l", eponyms=["pure alexia", "pure word blindness"]))
+ [R("sp-alexia"), R("sp-posterior-cerebral-artery-stroke"), R("sp-ischemic-stroke")], marker=sphere(-12, -75, 10, 14), imagingHint=hint("axial", -12, -75, 10, "left calcarine cortex and splenium"), preset="medial-l", eponyms=["pure alexia", "pure word blindness"]))
 
 write(E)

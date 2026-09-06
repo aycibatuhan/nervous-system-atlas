@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-dorsal-stream",
- "term": "Dorsal visual stream",
- "definition": "The occipito-parietal pathway that computes where objects are and how to act on them (location, motion, reaching, attention); lesions produce optic ataxia, simultanagnosia, akinetopsia and neglect. The 'where' or 'how' pathway.",
- "related": [
-  "g-ventral-stream",
-  "g-optic-ataxia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-dorsal-stream",
+  "term": "Dorsal visual stream",
+  "definition": "The occipito-parietal pathway that computes where objects are and how to act on them (location, motion, reaching, attention); lesions produce optic ataxia, simultanagnosia, akinetopsia and neglect. The 'where' or 'how' pathway.",
+  "related": [
+    "g-ventral-stream",
+    "g-optic-ataxia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-balint-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    }
+  ]
 }

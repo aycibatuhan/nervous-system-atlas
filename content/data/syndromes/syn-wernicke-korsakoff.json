@@ -1,148 +1,136 @@
 {
- "kind": "syndrome",
- "id": "syn-wernicke-korsakoff",
- "name": "Wernicke encephalopathy and Korsakoff syndrome",
- "eponyms": [
-  "Wernicke–Korsakoff syndrome"
- ],
- "category": "metabolic-toxic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "mammillary-body",
-   "thalamus-mediodorsal",
-   "thalamus-anterior-nuclei",
-   "periaqueductal-grey",
-   "hypothalamus",
-   "cerebellar-vermis"
+  "kind": "syndrome",
+  "id": "syn-wernicke-korsakoff",
+  "name": "Wernicke encephalopathy and Korsakoff syndrome",
+  "eponyms": [
+    "Wernicke–Korsakoff syndrome"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "mammillary-body-l",
-   "mammillary-body-r",
-   "thalamus-mediodorsal-l",
-   "thalamus-mediodorsal-r"
-  ]
- },
- "presentation": "A malnourished alcoholic, or a patient after bariatric surgery or with hyperemesis, is brought in confused and unsteady, and is found to have nystagmus and an inability to abduct either eye. Given glucose without thiamine, the confusion deepens. After treatment the ophthalmoplegia clears within hours and the gait improves over weeks, but the patient is left unable to form new memories, reciting invented explanations for the gaps and unconcerned by them: Korsakoff psychosis.",
- "deficits": [
-  {
-   "modality": "cognitive",
-   "side": "bilateral",
-   "distribution": "global then memory",
-   "sign": "Acute confusion, inattention and apathy (Wernicke); dense anterograde amnesia with confabulation and preserved intelligence (Korsakoff)",
-   "substrate": "thalamus-mediodorsal"
+  "category": "metabolic-toxic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "mammillary-body",
+      "thalamus-mediodorsal",
+      "thalamus-anterior-nuclei",
+      "periaqueductal-grey",
+      "hypothalamus",
+      "cerebellar-vermis"
+    ],
+    "side": "bilateral"
   },
-  {
-   "modality": "oculomotor",
-   "side": "bilateral",
-   "distribution": "abducens, gaze",
-   "sign": "Nystagmus, bilateral sixth nerve palsies, conjugate gaze palsies, rarely complete ophthalmoplegia",
-   "substrate": "abducens-nucleus"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "mammillary-body-l",
+      "mammillary-body-r",
+      "thalamus-mediodorsal-l",
+      "thalamus-mediodorsal-r"
+    ]
   },
-  {
-   "modality": "gait",
-   "side": "bilateral",
-   "distribution": "trunk and legs",
-   "sign": "Wide-based ataxic gait from the anterior vermis and vestibular nuclei; limbs relatively spared",
-   "substrate": "cerebellar-vermis"
+  "presentation": "A malnourished alcoholic, or a patient after bariatric surgery or with hyperemesis, is brought in confused and unsteady, and is found to have nystagmus and an inability to abduct either eye. Given glucose without thiamine, the confusion deepens. After treatment the ophthalmoplegia clears within hours and the gait improves over weeks, but the patient is left unable to form new memories, reciting invented explanations for the gaps and unconcerned by them: Korsakoff psychosis.",
+  "deficits": [
+    {
+      "modality": "cognitive",
+      "side": "bilateral",
+      "distribution": "global then memory",
+      "sign": "Acute confusion, inattention and apathy (Wernicke); dense anterograde amnesia with confabulation and preserved intelligence (Korsakoff)",
+      "substrate": "thalamus-mediodorsal"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "bilateral",
+      "distribution": "abducens, gaze",
+      "sign": "Nystagmus, bilateral sixth nerve palsies, conjugate gaze palsies, rarely complete ophthalmoplegia",
+      "substrate": "abducens-nucleus"
+    },
+    {
+      "modality": "gait",
+      "side": "bilateral",
+      "distribution": "trunk and legs",
+      "sign": "Wide-based ataxic gait from the anterior vermis and vestibular nuclei; limbs relatively spared",
+      "substrate": "cerebellar-vermis"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "hypothalamus",
+      "sign": "Hypothermia, hypotension, tachycardia",
+      "substrate": "hypothalamus"
+    },
+    {
+      "modality": "consciousness",
+      "side": "bilateral",
+      "distribution": "diffuse",
+      "sign": "Stupor and coma if untreated",
+      "substrate": "reticular-formation"
+    }
+  ],
+  "reasoning": "Thiamine is a cofactor for the enzymes of glucose metabolism, and the periventricular structures around the third and fourth ventricles and the aqueduct have the highest thiamine turnover; when the vitamin runs out, especially when a glucose load suddenly increases demand, these regions suffer a symmetric, bilateral, non-inflammatory injury with petechial hemorrhage. The affected structures explain each sign: the abducens and vestibular nuclei and the periaqueductal gray beneath the fourth ventricle and aqueduct account for the nystagmus and the bilateral sixth nerve and gaze palsies; the anterior vermis and the vestibular nuclei for the gait ataxia; the hypothalamus around the third ventricle for the hypothermia and autonomic instability; and the medial thalamus and reticular formation for the confusion and stupor. Because the process is symmetric and midline, there are no crossed or lateralized signs, and the triad is often incomplete, so the diagnosis must be considered in any confused malnourished patient. The mammillary bodies and the mediodorsal and anterior thalamic nuclei are stations of the Papez circuit through which the hippocampus consolidates new memories via the fornix and mammillothalamic tract, and their destruction, which is not reversed by treatment, leaves the isolated anterograde amnesia of Korsakoff syndrome: the patient cannot lay down new memories although remote memory, attention and reasoning survive, and fills the gaps with confabulation. Early thiamine reverses the eye signs within hours and prevents the amnesia; delay makes it permanent.",
+  "imagingFindings": [
+    {
+      "pathology": "Wernicke encephalopathy",
+      "modality": "MRI",
+      "finding": "Symmetric FLAIR and T2 hyperintensity of the medial thalami, mammillary bodies, periaqueductal gray, tectum and around the third ventricle, sometimes enhancing; restricted diffusion acutely.",
+      "sequence": "FLAIR",
+      "pitfalls": "Normal MRI does not exclude the diagnosis; treat on suspicion"
+    },
+    {
+      "pathology": "Korsakoff syndrome",
+      "modality": "MRI",
+      "finding": "Atrophy of the mammillary bodies and medial thalami on coronal T1 in the chronic stage.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Alcoholic cerebellar degeneration",
+      "modality": "MRI",
+      "finding": "Atrophy of the anterior superior vermis.",
+      "sequence": "T1"
+    }
+  ],
+  "commonCauses": [
+    "Chronic alcoholism with malnutrition",
+    "Bariatric surgery, prolonged vomiting (hyperemesis gravidarum), starvation",
+    "Parenteral nutrition or glucose without thiamine",
+    "Malabsorption, dialysis, malignancy"
+  ],
+  "mimics": [
+    {
+      "name": "Alcohol withdrawal delirium",
+      "howToDistinguish": "Tremor, agitation, hallucinations, autonomic overactivity without ophthalmoplegia; may coexist"
+    },
+    {
+      "name": "Hepatic encephalopathy",
+      "howToDistinguish": "Asterixis, raised ammonia, no eye signs"
+    },
+    {
+      "name": "Top of the basilar stroke",
+      "howToDistinguish": "Abrupt onset, vertical gaze palsy, pupillary signs, DWI positive"
+    },
+    {
+      "name": "Miller Fisher syndrome",
+      "howToDistinguish": "Ophthalmoplegia with ataxia and areflexia after infection, no confusion"
+    }
+  ],
+  "management": [
+    "Give high-dose parenteral thiamine immediately, before any glucose, to any patient at risk with confusion, ataxia or eye signs; do not wait for imaging or levels",
+    "Correct magnesium, which is required for thiamine to work; treat withdrawal",
+    "Continue thiamine and nutritional rehabilitation; Korsakoff amnesia recovers only partly"
+  ],
+  "citations": [
+    {
+      "ref": "sp-wernicke-encephalopathy",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": 0,
+      "y": -8,
+      "z": -10
+    },
+    "label": "mammillary bodies and medial thalami around the third ventricle"
   },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "hypothalamus",
-   "sign": "Hypothermia, hypotension, tachycardia",
-   "substrate": "hypothalamus"
-  },
-  {
-   "modality": "consciousness",
-   "side": "bilateral",
-   "distribution": "diffuse",
-   "sign": "Stupor and coma if untreated",
-   "substrate": "reticular-formation"
-  }
- ],
- "reasoning": "Thiamine is a cofactor for the enzymes of glucose metabolism, and the periventricular structures around the third and fourth ventricles and the aqueduct have the highest thiamine turnover; when the vitamin runs out, especially when a glucose load suddenly increases demand, these regions suffer a symmetric, bilateral, non-inflammatory injury with petechial hemorrhage. The affected structures explain each sign: the abducens and vestibular nuclei and the periaqueductal gray beneath the fourth ventricle and aqueduct account for the nystagmus and the bilateral sixth nerve and gaze palsies; the anterior vermis and the vestibular nuclei for the gait ataxia; the hypothalamus around the third ventricle for the hypothermia and autonomic instability; and the medial thalamus and reticular formation for the confusion and stupor. Because the process is symmetric and midline, there are no crossed or lateralized signs, and the triad is often incomplete, so the diagnosis must be considered in any confused malnourished patient. The mammillary bodies and the mediodorsal and anterior thalamic nuclei are stations of the Papez circuit through which the hippocampus consolidates new memories via the fornix and mammillothalamic tract, and their destruction, which is not reversed by treatment, leaves the isolated anterograde amnesia of Korsakoff syndrome: the patient cannot lay down new memories although remote memory, attention and reasoning survive, and fills the gaps with confabulation. Early thiamine reverses the eye signs within hours and prevents the amnesia; delay makes it permanent.",
- "imagingFindings": [
-  {
-   "pathology": "Wernicke encephalopathy",
-   "modality": "MRI",
-   "finding": "Symmetric FLAIR and T2 hyperintensity of the medial thalami, mammillary bodies, periaqueductal gray, tectum and around the third ventricle, sometimes enhancing; restricted diffusion acutely.",
-   "sequence": "FLAIR",
-   "pitfalls": "Normal MRI does not exclude the diagnosis; treat on suspicion"
-  },
-  {
-   "pathology": "Korsakoff syndrome",
-   "modality": "MRI",
-   "finding": "Atrophy of the mammillary bodies and medial thalami on coronal T1 in the chronic stage.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Alcoholic cerebellar degeneration",
-   "modality": "MRI",
-   "finding": "Atrophy of the anterior superior vermis.",
-   "sequence": "T1"
-  }
- ],
- "commonCauses": [
-  "Chronic alcoholism with malnutrition",
-  "Bariatric surgery, prolonged vomiting (hyperemesis gravidarum), starvation",
-  "Parenteral nutrition or glucose without thiamine",
-  "Malabsorption, dialysis, malignancy"
- ],
- "mimics": [
-  {
-   "name": "Alcohol withdrawal delirium",
-   "howToDistinguish": "Tremor, agitation, hallucinations, autonomic overactivity without ophthalmoplegia; may coexist"
-  },
-  {
-   "name": "Hepatic encephalopathy",
-   "howToDistinguish": "Asterixis, raised ammonia, no eye signs"
-  },
-  {
-   "name": "Top of the basilar stroke",
-   "howToDistinguish": "Abrupt onset, vertical gaze palsy, pupillary signs, DWI positive"
-  },
-  {
-   "name": "Miller Fisher syndrome",
-   "howToDistinguish": "Ophthalmoplegia with ataxia and areflexia after infection, no confusion"
-  }
- ],
- "management": [
-  "Give high-dose parenteral thiamine immediately, before any glucose, to any patient at risk with confusion, ataxia or eye signs; do not wait for imaging or levels",
-  "Correct magnesium, which is required for thiamine to work; treat withdrawal",
-  "Continue thiamine and nutritional rehabilitation; Korsakoff amnesia recovers only partly"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    306,
-    306
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    233
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": 0,
-   "y": -8,
-   "z": -10
-  },
-  "label": "mammillary bodies and medial thalami around the third ventricle"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

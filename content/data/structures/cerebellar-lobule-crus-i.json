@@ -1,157 +1,141 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-crus-i",
- "name": "Crus I",
- "synonyms": [
-  "superior semilunar lobule",
-  "Crus I of the ansiform lobule"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-crus-i-l",
-  "cerebellar-lobule-crus-i-r"
- ],
- "summary": "Crus I is the upper of the two large hemispheric lobules of the posterior lobe (the superior semilunar lobule), lying between lobule VI above the horizontal fissure and Crus II below, forming the bulk of the posterior lateral hemisphere. It is the cognitive cerebellum: it has no somatotopic body map but is connected through the pontine nuclei and the dentate nucleus to the prefrontal, parietal and temporal association cortex, and it participates in working memory, language, executive function and social cognition. Damage causes the cerebellar cognitive-affective syndrome rather than limb ataxia, it is a common site of cerebellar metastases and of PICA-territory infarcts of the posterolateral hemisphere, and its volume is altered in autism and schizophrenia.",
- "anatomy": {
-  "location": "Posterior lobe of the hemisphere between the superior posterior fissure and the horizontal fissure, lateral to the vermian folium, forming the superior semilunar lobule that wraps around the lateral edge of the hemisphere below the tentorium.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Prefrontal, parietal and temporal association cortex via the pontine nuclei",
-    "via": "middle cerebellar peduncle"
-   },
-   {
-    "from": "Inferior olive (principal olive)",
-    "via": "climbing fibers"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-crus-i",
+  "name": "Crus I",
+  "synonyms": [
+    "superior semilunar lobule",
+    "Crus I of the ansiform lobule"
   ],
-  "efferents": [
-   {
-    "to": "Dentate nucleus (ventral, non-motor part)",
-    "via": "Purkinje axons"
-   },
-   {
-    "to": "Prefrontal and parietal cortex via the ventrolateral and mediodorsal thalamus",
-    "via": "superior cerebellar peduncle"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-crus-i-l",
+    "cerebellar-lobule-crus-i-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Crus I receives the dorsolateral prefrontal, posterior parietal and superior temporal cortex through the pontine nuclei and projects via the dentate nucleus and the ventrolateral and mediodorsal thalamus back to the same areas, forming closed loops that apply the cerebellum's predictive, timing and error-correcting computation to thought and language as it does to movement: it supports verbal working memory, planning, set shifting, the fluency of speech and the understanding of other minds. It is a node of the default mode and frontoparietal networks, and its connections with the prefrontal cortex are the anatomical basis of the executive and affective changes after posterior cerebellar lesions.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-inferior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebellar-lobule-crus-i-l"
-    },
-    "label": "Crus I forming the posterolateral hemisphere above the horizontal fissure"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-crus-i-r"
-    },
-    "label": "superior semilunar lobule below the tentorium"
-   }
-  ],
-  "normalAppearance": "The large posterolateral lobule of the cerebellar hemisphere on axial images through the middle of the cerebellum, above the horizontal fissure that separates it from Crus II; its folia run obliquely toward the vermis.",
-  "pathology": [
-   {
-    "pathology": "PICA or SCA border-zone infarct of the posterior hemisphere",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the posterolateral hemisphere with mild ataxia and cognitive or affective change out of proportion to motor signs.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cerebellar metastasis",
-    "modality": "MRI",
-    "finding": "Ring-enhancing hemispheric lesion with edema in Crus I, presenting with headache, ataxia and hydrocephalus.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Cerebellar cognitive-affective syndrome after resection",
-    "modality": "MRI",
-    "finding": "Posterolateral hemispheric defect after tumor surgery with executive, language and affect disturbance.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Executive dysfunction and impaired working memory",
-    "side": "n/a",
-    "mechanism": "Disruption of the prefrontal-cerebellar loops through Crus I"
-   },
-   {
-    "deficit": "Language impairment (agrammatism, reduced fluency) with right hemispheric lesions",
-    "side": "n/a",
-    "mechanism": "Crossed connection of the right cerebellum with the left frontal language cortex"
-   },
-   {
-    "deficit": "Blunted or disinhibited affect",
-    "side": "n/a",
-    "mechanism": "Disruption of limbic-cerebellar connections"
-   }
-  ],
-  "examination": [
-   "Verbal fluency, digit span backward and set-shifting tests after any posterior cerebellar lesion",
-   "Sentence construction and grammar",
-   "Mood and behavior history from the family"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-cerebellar-vermian-midline"
-  ],
-  "pearls": [
-   "A cerebellar lesion without ataxia is a Crus I lesion: it changes thinking rather than walking",
-   "The right cerebellum serves the left frontal lobe: right Crus I lesions impair language",
-   "Posterior lobe means cognitive, anterior lobe means motor"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
+  "summary": "Crus I is the upper of the two large hemispheric lobules of the posterior lobe (the superior semilunar lobule), lying between lobule VI above the horizontal fissure and Crus II below, forming the bulk of the posterior lateral hemisphere. It is the cognitive cerebellum: it has no somatotopic body map but is connected through the pontine nuclei and the dentate nucleus to the prefrontal, parietal and temporal association cortex, and it participates in working memory, language, executive function and social cognition. Damage causes the cerebellar cognitive-affective syndrome rather than limb ataxia, it is a common site of cerebellar metastases and of PICA-territory infarcts of the posterolateral hemisphere, and its volume is altered in autism and schizophrenia.",
+  "anatomy": {
+    "location": "Posterior lobe of the hemisphere between the superior posterior fissure and the horizontal fissure, lateral to the vermian folium, forming the superior semilunar lobule that wraps around the lateral edge of the hemisphere below the tentorium.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Prefrontal, parietal and temporal association cortex via the pontine nuclei",
+        "via": "middle cerebellar peduncle"
+      },
+      {
+        "from": "Inferior olive (principal olive)",
+        "via": "climbing fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Dentate nucleus (ventral, non-motor part)",
+        "via": "Purkinje axons"
+      },
+      {
+        "to": "Prefrontal and parietal cortex via the ventrolateral and mediodorsal thalamus",
+        "via": "superior cerebellar peduncle"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    58
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "cerebellar-hemisphere"
+  "function": "Crus I receives the dorsolateral prefrontal, posterior parietal and superior temporal cortex through the pontine nuclei and projects via the dentate nucleus and the ventrolateral and mediodorsal thalamus back to the same areas, forming closed loops that apply the cerebellum's predictive, timing and error-correcting computation to thought and language as it does to movement: it supports verbal working memory, planning, set shifting, the fluency of speech and the understanding of other minds. It is a node of the default mode and frontoparietal networks, and its connections with the prefrontal cortex are the anatomical basis of the executive and affective changes after posterior cerebellar lesions.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-inferior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebellar-lobule-crus-i-l"
+        },
+        "label": "Crus I forming the posterolateral hemisphere above the horizontal fissure"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-crus-i-r"
+        },
+        "label": "superior semilunar lobule below the tentorium"
+      }
+    ],
+    "normalAppearance": "The large posterolateral lobule of the cerebellar hemisphere on axial images through the middle of the cerebellum, above the horizontal fissure that separates it from Crus II; its folia run obliquely toward the vermis.",
+    "pathology": [
+      {
+        "pathology": "PICA or SCA border-zone infarct of the posterior hemisphere",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the posterolateral hemisphere with mild ataxia and cognitive or affective change out of proportion to motor signs.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cerebellar metastasis",
+        "modality": "MRI",
+        "finding": "Ring-enhancing hemispheric lesion with edema in Crus I, presenting with headache, ataxia and hydrocephalus.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Cerebellar cognitive-affective syndrome after resection",
+        "modality": "MRI",
+        "finding": "Posterolateral hemispheric defect after tumor surgery with executive, language and affect disturbance.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Executive dysfunction and impaired working memory",
+        "side": "n/a",
+        "mechanism": "Disruption of the prefrontal-cerebellar loops through Crus I"
+      },
+      {
+        "deficit": "Language impairment (agrammatism, reduced fluency) with right hemispheric lesions",
+        "side": "n/a",
+        "mechanism": "Crossed connection of the right cerebellum with the left frontal language cortex"
+      },
+      {
+        "deficit": "Blunted or disinhibited affect",
+        "side": "n/a",
+        "mechanism": "Disruption of limbic-cerebellar connections"
+      }
+    ],
+    "examination": [
+      "Verbal fluency, digit span backward and set-shifting tests after any posterior cerebellar lesion",
+      "Sentence construction and grammar",
+      "Mood and behavior history from the family"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-cerebellar-vermian-midline"
+    ],
+    "pearls": [
+      "A cerebellar lesion without ataxia is a Crus I lesion: it changes thinking rather than walking",
+      "The right cerebellum serves the left frontal lobe: right Crus I lesions impair language",
+      "Posterior lobe means cognitive, anterior lobe means motor"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dentate-nucleus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "cerebellar-hemisphere"
 }

@@ -1,160 +1,148 @@
 {
- "kind": "structure",
- "id": "gyrus-angular",
- "name": "Angular gyrus",
- "synonyms": [
-  "Brodmann area 39"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-angular-l",
-  "gyrus-angular-r"
- ],
- "summary": "The posterior part of the inferior parietal lobule, arching over the end of the superior temporal sulcus at the meeting point of the parietal, temporal and occipital lobes. It is a multimodal hub: on the dominant side it links written symbols with language (reading, writing), numbers with quantity (calculation) and the body with its labels (finger recognition, right-left), so a left angular lesion yields Gerstmann syndrome and alexia with agraphia. On the right it contributes to spatial attention and self-location, and stimulation here produces out-of-body experiences.",
- "anatomy": {
-  "location": "Behind the supramarginal gyrus at the posterior end of the superior temporal sulcus, bordering the occipital lobe; the angular artery of the MCA reaches it as the artery's terminal branch.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cortex-lateral-occipital (visual word form area)"
-   },
-   {
-    "from": "area-wernicke"
-   }
+  "kind": "structure",
+  "id": "gyrus-angular",
+  "name": "Angular gyrus",
+  "synonyms": [
+    "Brodmann area 39"
   ],
-  "efferents": [
-   {
-    "to": "area-broca"
-   },
-   {
-    "to": "cortex-prefrontal"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-angular-l",
+    "gyrus-angular-r"
   ],
-  "pathways": []
- },
- "function": "Reading, writing, calculation, finger gnosis, right-left orientation, semantic integration and, on the right, spatial attention and body awareness.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca-inferior-division",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-mca",
-   "territory-watershed"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 50,
-     "y": -60,
-     "z": 30
-    },
-    "label": "angular gyrus at the temporo-parieto-occipital junction"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 50,
-     "y": -60,
-     "z": 30
-    },
-    "label": "gyrus over the end of the superior temporal sulcus"
-   }
-  ],
-  "normalAppearance": "Lies at the posterior end of the superior temporal sulcus, in the MCA–PCA watershed; infarcts and posterior cortical atrophy involve it early.",
-  "pathology": [
-   {
-    "pathology": "Angular gyrus infarct",
-    "modality": "MRI",
-    "finding": "Left temporoparietal restriction with Gerstmann syndrome and alexia with agraphia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Posterior watershed infarct",
-    "modality": "MRI",
-    "finding": "Wedge at the MCA–PCA boundary involving the angular gyrus after hypotension.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Gerstmann syndrome: acalculia, agraphia, finger agnosia, right-left disorientation",
-    "side": "n/a",
-    "mechanism": "Left angular gyrus"
-   },
-   {
-    "deficit": "Alexia with agraphia",
-    "side": "n/a",
-    "mechanism": "Disconnection of visual word forms from language"
-   },
-   {
-    "deficit": "Anomia and semantic deficits",
-    "side": "n/a",
-    "mechanism": "Semantic hub function"
-   },
-   {
-    "deficit": "Neglect and out-of-body illusions (right)",
-    "side": "contralateral",
-    "mechanism": "Right temporoparietal junction"
-   }
-  ],
-  "examination": [
-   "Write a sentence, read a paragraph",
-   "Serial sevens and simple written arithmetic",
-   "Name and point to fingers; show right hand, left ear",
-   "Line bisection"
-  ],
-  "syndromes": [
-   "syn-gerstmann",
-   "syn-mca-inferior-division",
-   "syn-hemineglect"
-  ],
-  "pearls": [
-   "Complete Gerstmann syndrome is rare; any two components with an inferior quadrantanopia point to the left angular gyrus",
-   "Alexia with agraphia (angular) differs from alexia without agraphia (occipital plus splenium)"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    286,
-    287
-   ]
+  "summary": "The posterior part of the inferior parietal lobule, arching over the end of the superior temporal sulcus at the meeting point of the parietal, temporal and occipital lobes. It is a multimodal hub: on the dominant side it links written symbols with language (reading, writing), numbers with quantity (calculation) and the body with its labels (finger recognition, right-left), so a left angular lesion yields Gerstmann syndrome and alexia with agraphia. On the right it contributes to spatial attention and self-location, and stimulation here produces out-of-body experiences.",
+  "anatomy": {
+    "location": "Behind the supramarginal gyrus at the posterior end of the superior temporal sulcus, bordering the occipital lobe; the angular artery of the MCA reaches it as the artery's terminal branch.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    53
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "cortex-lateral-occipital (visual word form area)"
+      },
+      {
+        "from": "area-wernicke"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "area-broca"
+      },
+      {
+        "to": "cortex-prefrontal"
+      }
+    ],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    50,
-    50
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "parietal"
- ],
- "status": "draft",
- "latin": "Gyrus angularis",
- "subsystem": "lobe-parietal",
- "parent": "lobe-parietal"
+  "function": "Reading, writing, calculation, finger gnosis, right-left orientation, semantic integration and, on the right, spatial attention and body awareness.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca-inferior-division",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-mca",
+      "territory-watershed"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 50,
+          "y": -60,
+          "z": 30
+        },
+        "label": "angular gyrus at the temporo-parieto-occipital junction"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 50,
+          "y": -60,
+          "z": 30
+        },
+        "label": "gyrus over the end of the superior temporal sulcus"
+      }
+    ],
+    "normalAppearance": "Lies at the posterior end of the superior temporal sulcus, in the MCA–PCA watershed; infarcts and posterior cortical atrophy involve it early.",
+    "pathology": [
+      {
+        "pathology": "Angular gyrus infarct",
+        "modality": "MRI",
+        "finding": "Left temporoparietal restriction with Gerstmann syndrome and alexia with agraphia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Posterior watershed infarct",
+        "modality": "MRI",
+        "finding": "Wedge at the MCA–PCA boundary involving the angular gyrus after hypotension.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Gerstmann syndrome: acalculia, agraphia, finger agnosia, right-left disorientation",
+        "side": "n/a",
+        "mechanism": "Left angular gyrus"
+      },
+      {
+        "deficit": "Alexia with agraphia",
+        "side": "n/a",
+        "mechanism": "Disconnection of visual word forms from language"
+      },
+      {
+        "deficit": "Anomia and semantic deficits",
+        "side": "n/a",
+        "mechanism": "Semantic hub function"
+      },
+      {
+        "deficit": "Neglect and out-of-body illusions (right)",
+        "side": "contralateral",
+        "mechanism": "Right temporoparietal junction"
+      }
+    ],
+    "examination": [
+      "Write a sentence, read a paragraph",
+      "Serial sevens and simple written arithmetic",
+      "Name and point to fingers; show right hand, left ear",
+      "Line bisection"
+    ],
+    "syndromes": [
+      "syn-gerstmann",
+      "syn-mca-inferior-division",
+      "syn-hemineglect"
+    ],
+    "pearls": [
+      "Complete Gerstmann syndrome is rare; any two components with an inferior quadrantanopia point to the left angular gyrus",
+      "Alexia with agraphia (angular) differs from alexia without agraphia (occipital plus splenium)"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-gerstmann-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-alexia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "parietal"
+  ],
+  "status": "draft",
+  "latin": "Gyrus angularis",
+  "subsystem": "lobe-parietal",
+  "parent": "lobe-parietal"
 }

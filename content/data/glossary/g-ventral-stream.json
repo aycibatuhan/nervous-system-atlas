@@ -1,11 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-ventral-stream",
- "term": "Ventral visual stream",
- "definition": "The occipito-temporal pathway that identifies what is seen (shape, color, faces, words, objects), running from the primary visual cortex through the fusiform and inferior temporal cortex to the anterior temporal lobe; lesions produce agnosia, prosopagnosia, achromatopsia and alexia.",
- "related": [
-  "g-dorsal-stream",
-  "g-prosopagnosia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-ventral-stream",
+  "term": "Ventral visual stream",
+  "definition": "The occipito-temporal pathway that identifies what is seen (shape, color, faces, words, objects), running from the primary visual cortex through the fusiform and inferior temporal cortex to the anterior temporal lobe; lesions produce agnosia, prosopagnosia, achromatopsia and alexia.",
+  "related": [
+    "g-dorsal-stream",
+    "g-prosopagnosia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-agnosia",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-prosopagnosia"
+    },
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    }
+  ]
 }

@@ -1,143 +1,143 @@
 {
- "kind": "syndrome",
- "id": "syn-guillain-barre",
- "name": "Guillain–Barré syndrome",
- "eponyms": [
-  "acute inflammatory demyelinating polyradiculoneuropathy",
-  "Landry ascending paralysis"
- ],
- "category": "demyelinating",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "spinal-nerve-root-dermatome",
-   "dorsal-root-ganglion",
-   "cauda-equina",
-   "cn-07-facial",
-   "nerve-phrenic"
+  "kind": "syndrome",
+  "id": "syn-guillain-barre",
+  "name": "Guillain–Barré syndrome",
+  "eponyms": [
+    "acute inflammatory demyelinating polyradiculoneuropathy",
+    "Landry ascending paralysis"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "cauda-equina"
-  ]
- },
- "presentation": "Two weeks after a diarrheal illness a young adult develops tingling in the feet and hands and, over the following days, weakness that begins in the legs and climbs to the arms and face, so that within a week they cannot walk and both sides of the face are weak. The reflexes have disappeared, sensation is only mildly reduced, and the pulse and blood pressure swing unpredictably. Breathing becomes shallow, and the vital capacity is measured every few hours.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "legs then arms, proximal and distal, ascending",
-   "sign": "Rapidly progressive symmetric flaccid weakness reaching a nadir within 4 weeks",
-   "substrate": "spinal-nerve-root-dermatome"
+  "category": "demyelinating",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "spinal-nerve-root-dermatome",
+      "dorsal-root-ganglion",
+      "cauda-equina",
+      "cn-07-facial",
+      "nerve-phrenic"
+    ],
+    "side": "bilateral"
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "generalized",
-   "sign": "Areflexia or hyporeflexia",
-   "substrate": "dorsal-root-ganglion"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "cauda-equina"
+    ]
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "bilateral",
-   "distribution": "distal",
-   "sign": "Paresthesias with mild objective loss; back and limb pain from root inflammation",
-   "substrate": "dorsal-root-ganglion"
+  "presentation": "Two weeks after a diarrheal illness a young adult develops tingling in the feet and hands and, over the following days, weakness that begins in the legs and climbs to the arms and face, so that within a week they cannot walk and both sides of the face are weak. The reflexes have disappeared, sensation is only mildly reduced, and the pulse and blood pressure swing unpredictably. Breathing becomes shallow, and the vital capacity is measured every few hours.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "legs then arms, proximal and distal, ascending",
+      "sign": "Rapidly progressive symmetric flaccid weakness reaching a nadir within 4 weeks",
+      "substrate": "spinal-nerve-root-dermatome"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "generalized",
+      "sign": "Areflexia or hyporeflexia",
+      "substrate": "dorsal-root-ganglion"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "bilateral",
+      "distribution": "distal",
+      "sign": "Paresthesias with mild objective loss; back and limb pain from root inflammation",
+      "substrate": "dorsal-root-ganglion"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "bilateral",
+      "distribution": "face, bulbar, ocular",
+      "sign": "Bilateral facial weakness in half, dysphagia, ophthalmoplegia in the Miller Fisher variant",
+      "substrate": "cn-07-facial"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "cardiovascular, bladder, gut",
+      "sign": "Labile blood pressure, arrhythmias, ileus, retention",
+      "substrate": "sympathetic-trunk"
+    },
+    {
+      "modality": "other",
+      "side": "bilateral",
+      "distribution": "diaphragm and intercostals",
+      "sign": "Respiratory failure requiring ventilation in a quarter",
+      "substrate": "nerve-phrenic"
+    }
+  ],
+  "reasoning": "An infection, most often Campylobacter jejuni, provokes antibodies that cross-react with gangliosides on peripheral nerve myelin or axons, and within weeks the immune attack strips myelin from the spinal roots and peripheral nerves, or in the axonal forms destroys the axons at the nodes of Ranvier. Because the roots are inflamed where they leave the cord and the process is diffuse, weakness is symmetric, involves proximal as well as distal muscles and is not length-dependent, distinguishing it from the toxic and metabolic neuropathies; it ascends because the longest fibers and the most heavily myelinated motor fibers fail first, but it is not a lesion at any level of the cord, so there is no sensory level, no sphincter loss at the outset and no upper motor neuron sign. The reflex arcs run through the demyelinated roots, so all reflexes are lost early, even in muscles that are still strong, which is the sign that most reliably points away from a spinal cord or muscle disease. Cranial nerves are involved because their roots are similarly attacked, the facial nerve most often, and the autonomic fibers in the vagus and sympathetic chain because they are peripheral nerves too. Everything is bilateral and peripheral; there is no crossing to reason about. The CSF protein rises as the inflamed roots leak protein into the lumbar cistern while the cell count stays normal, the albuminocytological dissociation, though this may take a week to appear. Death comes from respiratory failure or autonomic arrhythmia, both preventable with monitoring.",
+  "imagingFindings": [
+    {
+      "pathology": "Nerve root enhancement",
+      "modality": "MRI",
+      "finding": "Smooth enhancement and thickening of the cauda equina and cranial nerve roots on post-contrast T1; excludes cord compression and myelitis.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Demyelinating polyradiculoneuropathy",
+      "modality": "EMG/NCS",
+      "finding": "Prolonged distal latencies, absent or prolonged F waves, conduction block and temporal dispersion in the demyelinating form; reduced amplitudes with preserved velocities in axonal forms. May be normal in the first week.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Albuminocytological dissociation",
+      "modality": "LP/CSF",
+      "finding": "Raised CSF protein with a normal cell count after the first week; pleocytosis suggests HIV, Lyme or malignancy.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Post-infectious (Campylobacter, cytomegalovirus, Epstein–Barr virus, Mycoplasma, Zika)",
+    "Post-vaccination (rare)",
+    "Surgery",
+    "Idiopathic"
+  ],
+  "mimics": [
+    {
+      "name": "Acute spinal cord lesion (transverse myelitis, compression)",
+      "howToDistinguish": "Sensory level, early sphincter loss, reflexes return brisk; MRI"
+    },
+    {
+      "name": "Myasthenia gravis",
+      "howToDistinguish": "Fatigable ocular and bulbar weakness, normal reflexes and sensation"
+    },
+    {
+      "name": "Botulism",
+      "howToDistinguish": "Descending paralysis with fixed dilated pupils and dry mouth"
+    },
+    {
+      "name": "Acute intermittent porphyria, tick paralysis, hypokalemia",
+      "howToDistinguish": "History, urine porphyrins, tick search, potassium"
+    }
+  ],
+  "management": [
+    "Admit for vital capacity and cardiac monitoring; intubate for falling vital capacity or bulbar failure",
+    "Intravenous immunoglobulin or plasma exchange within 2 weeks of onset; steroids are ineffective",
+    "Thromboprophylaxis, pain control, early physiotherapy; most recover but a fifth remain disabled"
+  ],
+  "citations": [
+    {
+      "ref": "sp-guillain-barre-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-electrodiagnostic-evaluation-of-acute-inflammatory-demyelinat",
+      "section": "Introduction"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -50,
+      "z": -170
+    },
+    "label": "cauda equina roots"
   },
-  {
-   "modality": "cranial-nerve",
-   "side": "bilateral",
-   "distribution": "face, bulbar, ocular",
-   "sign": "Bilateral facial weakness in half, dysphagia, ophthalmoplegia in the Miller Fisher variant",
-   "substrate": "cn-07-facial"
-  },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "cardiovascular, bladder, gut",
-   "sign": "Labile blood pressure, arrhythmias, ileus, retention",
-   "substrate": "sympathetic-trunk"
-  },
-  {
-   "modality": "other",
-   "side": "bilateral",
-   "distribution": "diaphragm and intercostals",
-   "sign": "Respiratory failure requiring ventilation in a quarter",
-   "substrate": "nerve-phrenic"
-  }
- ],
- "reasoning": "An infection, most often Campylobacter jejuni, provokes antibodies that cross-react with gangliosides on peripheral nerve myelin or axons, and within weeks the immune attack strips myelin from the spinal roots and peripheral nerves, or in the axonal forms destroys the axons at the nodes of Ranvier. Because the roots are inflamed where they leave the cord and the process is diffuse, weakness is symmetric, involves proximal as well as distal muscles and is not length-dependent, distinguishing it from the toxic and metabolic neuropathies; it ascends because the longest fibers and the most heavily myelinated motor fibers fail first, but it is not a lesion at any level of the cord, so there is no sensory level, no sphincter loss at the outset and no upper motor neuron sign. The reflex arcs run through the demyelinated roots, so all reflexes are lost early, even in muscles that are still strong, which is the sign that most reliably points away from a spinal cord or muscle disease. Cranial nerves are involved because their roots are similarly attacked, the facial nerve most often, and the autonomic fibers in the vagus and sympathetic chain because they are peripheral nerves too. Everything is bilateral and peripheral; there is no crossing to reason about. The CSF protein rises as the inflamed roots leak protein into the lumbar cistern while the cell count stays normal, the albuminocytological dissociation, though this may take a week to appear. Death comes from respiratory failure or autonomic arrhythmia, both preventable with monitoring.",
- "imagingFindings": [
-  {
-   "pathology": "Nerve root enhancement",
-   "modality": "MRI",
-   "finding": "Smooth enhancement and thickening of the cauda equina and cranial nerve roots on post-contrast T1; excludes cord compression and myelitis.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Demyelinating polyradiculoneuropathy",
-   "modality": "EMG/NCS",
-   "finding": "Prolonged distal latencies, absent or prolonged F waves, conduction block and temporal dispersion in the demyelinating form; reduced amplitudes with preserved velocities in axonal forms. May be normal in the first week.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Albuminocytological dissociation",
-   "modality": "LP/CSF",
-   "finding": "Raised CSF protein with a normal cell count after the first week; pleocytosis suggests HIV, Lyme or malignancy.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Post-infectious (Campylobacter, cytomegalovirus, Epstein–Barr virus, Mycoplasma, Zika)",
-  "Post-vaccination (rare)",
-  "Surgery",
-  "Idiopathic"
- ],
- "mimics": [
-  {
-   "name": "Acute spinal cord lesion (transverse myelitis, compression)",
-   "howToDistinguish": "Sensory level, early sphincter loss, reflexes return brisk; MRI"
-  },
-  {
-   "name": "Myasthenia gravis",
-   "howToDistinguish": "Fatigable ocular and bulbar weakness, normal reflexes and sensation"
-  },
-  {
-   "name": "Botulism",
-   "howToDistinguish": "Descending paralysis with fixed dilated pupils and dry mouth"
-  },
-  {
-   "name": "Acute intermittent porphyria, tick paralysis, hypokalemia",
-   "howToDistinguish": "History, urine porphyrins, tick search, potassium"
-  }
- ],
- "management": [
-  "Admit for vital capacity and cardiac monitoring; intubate for falling vital capacity or bulbar failure",
-  "Intravenous immunoglobulin or plasma exchange within 2 weeks of onset; steroids are ineffective",
-  "Thromboprophylaxis, pain control, early physiotherapy; most recover but a fifth remain disabled"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 27,
-   "pages": [
-    281,
-    284
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -50,
-   "z": -170
-  },
-  "label": "cauda equina roots"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

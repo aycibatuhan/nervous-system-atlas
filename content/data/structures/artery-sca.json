@@ -1,177 +1,149 @@
 {
- "kind": "structure",
- "id": "artery-sca",
- "name": "Superior cerebellar artery",
- "synonyms": [
-  "SCA"
- ],
- "system": "arteries",
- "meshIds": [],
- "summary": "The last branch of the basilar artery before it divides, the superior cerebellar artery winds around the midbrain just below the oculomotor nerve and the tentorium to reach the upper cerebellar surface. It supplies the superior cerebellum, the dentate nucleus, the superior cerebellar peduncle and the dorsolateral upper pons. Infarction causes ipsilateral limb ataxia, sometimes with contralateral pain and temperature loss and a Horner syndrome, and large infarcts can swell against the brainstem.",
- "anatomy": {
-  "location": "Arises from the distal basilar in the interpeduncular cistern, passes laterally below the oculomotor nerve (which separates it from the posterior cerebral artery), runs around the cerebral peduncle in the ambient cistern under the free edge of the tentorium, and fans out over the superior cerebellar surface.",
-  "subdivisions": [
-   {
-    "name": "Medial branch",
-    "note": "superior vermis and the dentate nucleus region"
-   },
-   {
-    "name": "Lateral branch",
-    "note": "superior lateral hemisphere"
-   },
-   {
-    "name": "Perforators",
-    "note": "dorsolateral rostral pons and the superior cerebellar peduncle"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Supplies the superior half of the cerebellum, the dentate nucleus, the superior cerebellar peduncle, the superior vermis and the dorsolateral rostral pons; a vascular loop of the SCA is the usual culprit compressing the trigeminal root in trigeminal neuralgia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar"
+  "kind": "structure",
+  "id": "artery-sca",
+  "name": "Superior cerebellar artery",
+  "synonyms": [
+    "SCA"
   ],
-  "territories": [
-   "territory-sca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 15,
-     "y": -28,
-     "z": -18
+  "system": "arteries",
+  "meshIds": [],
+  "summary": "The last branch of the basilar artery before it divides, the superior cerebellar artery winds around the midbrain just below the oculomotor nerve and the tentorium to reach the upper cerebellar surface. It supplies the superior cerebellum, the dentate nucleus, the superior cerebellar peduncle and the dorsolateral upper pons. Infarction causes ipsilateral limb ataxia, sometimes with contralateral pain and temperature loss and a Horner syndrome, and large infarcts can swell against the brainstem.",
+  "anatomy": {
+    "location": "Arises from the distal basilar in the interpeduncular cistern, passes laterally below the oculomotor nerve (which separates it from the posterior cerebral artery), runs around the cerebral peduncle in the ambient cistern under the free edge of the tentorium, and fans out over the superior cerebellar surface.",
+    "subdivisions": [
+      {
+        "name": "Medial branch",
+        "note": "superior vermis and the dentate nucleus region"
+      },
+      {
+        "name": "Lateral branch",
+        "note": "superior lateral hemisphere"
+      },
+      {
+        "name": "Perforators",
+        "note": "dorsolateral rostral pons and the superior cerebellar peduncle"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Supplies the superior half of the cerebellum, the dentate nucleus, the superior cerebellar peduncle, the superior vermis and the dorsolateral rostral pons; a vascular loop of the SCA is the usual culprit compressing the trigeminal root in trigeminal neuralgia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar"
+    ],
+    "territories": [
+      "territory-sca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 15,
+          "y": -28,
+          "z": -18
+        },
+        "label": "SCA in the ambient cistern below the tentorium"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -60,
+          "z": -20
+        },
+        "label": "superior cerebellar hemisphere, the infarct site"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 15,
+          "y": -55,
+          "z": -25
+        },
+        "label": "SCA versus PICA territories above and below the horizontal fissure"
+      }
+    ],
+    "normalAppearance": "A paired flow void running around the midbrain just below the PCA on axial T2 through the ambient cisterns. Its territory is the cerebellum above the horizontal (great) fissure and the upper vermis.",
+    "pathology": [
+      {
+        "pathology": "SCA territory infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the superior cerebellar hemisphere and upper vermis, often wedge-shaped and reaching the tentorial surface; the dorsolateral rostral pons may be included.",
+        "sequence": "DWI",
+        "timing": "Swelling and mass effect on the fourth ventricle peak at day 2–4"
+      },
+      {
+        "pathology": "Neurovascular compression of the trigeminal root",
+        "modality": "MRI",
+        "finding": "A vessel (usually the SCA) indenting the root entry zone of the trigeminal nerve on high-resolution T2 (CISS/FIESTA) and TOF MRA.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "DWI; CTA; high-resolution cisternal T2 with MRA for neurovascular conflict"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia and intention tremor",
+        "side": "ipsilateral",
+        "mechanism": "Superior cerebellar hemisphere, dentate nucleus and superior cerebellar peduncle"
+      },
+      {
+        "deficit": "Contralateral loss of pain and temperature (body)",
+        "side": "contralateral",
+        "mechanism": "Spinothalamic tract in the dorsolateral rostral pons"
+      },
+      {
+        "deficit": "Horner syndrome",
+        "side": "ipsilateral",
+        "mechanism": "Descending sympathetic fibers"
+      },
+      {
+        "deficit": "Trigeminal neuralgia",
+        "side": "ipsilateral",
+        "mechanism": "Pulsatile compression of the trigeminal root by an SCA loop"
+      }
+    ],
+    "examination": [
+      "Finger-nose, heel-shin and rapid alternating movements",
+      "Pin-prick on the trunk and limbs",
+      "Ask about lancinating facial pain triggered by touch"
+    ],
+    "syndromes": [
+      "syn-sca-infarct",
+      "syn-trigeminal-neuralgia"
+    ],
+    "pearls": [
+      "Because the SCA runs under the third nerve, a basilar tip aneurysm can cause both a third nerve palsy and cerebellar signs",
+      "Vertigo is less prominent with SCA infarcts than with PICA or AICA infarcts because the vestibular nuclei are spared"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebellar-infarction",
+      "section": "Pathophysiology"
     },
-    "label": "SCA in the ambient cistern below the tentorium"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -60,
-     "z": -20
+    {
+      "ref": "sp-basilar-artery",
+      "section": "Structure and Function"
     },
-    "label": "superior cerebellar hemisphere, the infarct site"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 15,
-     "y": -55,
-     "z": -25
-    },
-    "label": "SCA versus PICA territories above and below the horizontal fissure"
-   }
+    {
+      "ref": "sp-brain-arteries",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "A paired flow void running around the midbrain just below the PCA on axial T2 through the ambient cisterns. Its territory is the cerebellum above the horizontal (great) fissure and the upper vermis.",
-  "pathology": [
-   {
-    "pathology": "SCA territory infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the superior cerebellar hemisphere and upper vermis, often wedge-shaped and reaching the tentorial surface; the dorsolateral rostral pons may be included.",
-    "sequence": "DWI",
-    "timing": "Swelling and mass effect on the fourth ventricle peak at day 2–4"
-   },
-   {
-    "pathology": "Neurovascular compression of the trigeminal root",
-    "modality": "MRI",
-    "finding": "A vessel (usually the SCA) indenting the root entry zone of the trigeminal nerve on high-resolution T2 (CISS/FIESTA) and TOF MRA.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "vascular",
+    "posterior-circulation"
   ],
-  "sequenceOfChoice": "DWI; CTA; high-resolution cisternal T2 with MRA for neurovascular conflict"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia and intention tremor",
-    "side": "ipsilateral",
-    "mechanism": "Superior cerebellar hemisphere, dentate nucleus and superior cerebellar peduncle"
-   },
-   {
-    "deficit": "Contralateral loss of pain and temperature (body)",
-    "side": "contralateral",
-    "mechanism": "Spinothalamic tract in the dorsolateral rostral pons"
-   },
-   {
-    "deficit": "Horner syndrome",
-    "side": "ipsilateral",
-    "mechanism": "Descending sympathetic fibers"
-   },
-   {
-    "deficit": "Trigeminal neuralgia",
-    "side": "ipsilateral",
-    "mechanism": "Pulsatile compression of the trigeminal root by an SCA loop"
-   }
-  ],
-  "examination": [
-   "Finger-nose, heel-shin and rapid alternating movements",
-   "Pin-prick on the trunk and limbs",
-   "Ask about lancinating facial pain triggered by touch"
-  ],
-  "syndromes": [
-   "syn-sca-infarct",
-   "syn-trigeminal-neuralgia"
-  ],
-  "pearls": [
-   "Because the SCA runs under the third nerve, a basilar tip aneurysm can cause both a third nerve palsy and cerebellar signs",
-   "Vertigo is less prominent with SCA infarcts than with PICA or AICA infarcts because the vestibular nuclei are spared"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    466,
-    468
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    241,
-    244
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    79
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    70,
-    70
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    120,
-    120
-   ]
-  }
- ],
- "tags": [
-  "vascular",
-  "posterior-circulation"
- ],
- "status": "draft",
- "latin": "Arteria cerebelli superior",
- "subsystem": "posterior-circulation"
+  "status": "draft",
+  "latin": "Arteria cerebelli superior",
+  "subsystem": "posterior-circulation"
 }

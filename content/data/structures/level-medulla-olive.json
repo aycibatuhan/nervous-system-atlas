@@ -1,229 +1,209 @@
 {
- "kind": "structure",
- "id": "level-medulla-olive",
- "name": "Medulla: level of the inferior olive",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The open medulla at the level of the inferior olivary nucleus is the most clinically important brainstem section, because it is the site of the lateral medullary (Wallenberg) syndrome and of the medial medullary syndrome. The fourth ventricle roofs the section, and its floor holds the hypoglossal, dorsal vagal and vestibular nuclei. In front lie the pyramids, then the medial lemniscus and the hypoglossal fibers threading between them and the olive; laterally the inferior cerebellar peduncle, spinothalamic tract, spinal trigeminal nucleus, nucleus ambiguus and the descending sympathetic fibers cluster in the wedge that PICA and the vertebral perforators supply.",
- "anatomy": {
-  "location": "Open medulla between the obex and the pontomedullary junction, marked externally by the olive on each side and the inferior cerebellar peduncle behind it; MNI z ≈ −42 to −48.",
-  "subdivisions": [
-   {
-    "name": "Pyramids",
-    "note": "anterior, paramedian; corticospinal tract"
-   },
-   {
-    "name": "Medial lemniscus",
-    "note": "dorsal to the pyramid on either side of the midline"
-   },
-   {
-    "name": "Hypoglossal nucleus and nerve",
-    "note": "nucleus under the hypoglossal trigone; fibers pass ventrally between the medial lemniscus and the olive to exit in the preolivary sulcus"
-   },
-   {
-    "name": "Inferior olivary nucleus",
-    "note": "crumpled bag of gray matter behind the olive; its fibers cross to the opposite inferior cerebellar peduncle as climbing fibers"
-   },
-   {
-    "name": "Nucleus ambiguus",
-    "note": "deep in the reticular formation: motor neurons for IX, X and cranial XI"
-   },
-   {
-    "name": "Dorsal motor nucleus of the vagus and nucleus of the solitary tract",
-    "note": "under the vagal trigone: parasympathetic outflow and visceral/taste afferents"
-   },
-   {
-    "name": "Vestibular nuclei (medial and inferior)",
-    "note": "under the lateral part of the ventricular floor"
-   },
-   {
-    "name": "Spinal trigeminal nucleus and tract",
-    "note": "lateral, medial to the inferior cerebellar peduncle"
-   },
-   {
-    "name": "Spinothalamic tract and descending sympathetic fibers",
-    "note": "anterolateral tegmentum, in the lateral medullary wedge"
-   },
-   {
-    "name": "Inferior cerebellar peduncle",
-    "note": "posterolateral, carrying spinocerebellar, olivocerebellar and vestibular fibers"
-   },
-   {
-    "name": "Medial longitudinal fasciculus",
-    "note": "dorsal paramedian, beneath the hypoglossal nucleus"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Contains the lower cranial nerve nuclei for swallowing, phonation, tongue movement and visceral control, the vestibular and olivary relays to the cerebellum, and every long tract between the cord and the pons.",
- "bloodSupply": {
-  "arteries": [
-   "artery-vertebral",
-   "artery-pica",
-   "anterior-spinal-artery"
+  "kind": "structure",
+  "id": "level-medulla-olive",
+  "name": "Medulla: level of the inferior olive",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "territories": [
-   "territory-pica-lateral-medulla",
-   "territory-basilar-paramedian"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -44,
-     "z": -46
-    },
-    "label": "open medulla: olives bulge laterally, fourth ventricle behind"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 12,
-     "y": -42,
-     "z": -44
-    },
-    "label": "lateral medullary wedge behind the olive: Wallenberg site"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 4,
-     "y": -46,
-     "z": -46
-    },
-    "label": "paramedian medulla: pyramid, medial lemniscus, hypoglossal fibers"
-   }
-  ],
-  "normalAppearance": "On axial T2 the olives make the anterolateral surface bulge and the fourth ventricle appears as a triangle behind; the inferior cerebellar peduncles form the posterolateral corners. The olive itself is faintly darker than surrounding white matter on T1.",
-  "pathology": [
-   {
-    "pathology": "Lateral medullary (Wallenberg) infarct",
-    "modality": "MRI",
-    "finding": "Small area of restricted diffusion in the dorsolateral medulla behind the olive, sometimes extending to the inferior cerebellar surface; CT is normal.",
-    "sequence": "DWI",
-    "pitfalls": "Look on thin axial and coronal DWI; a first DWI within hours may be negative"
-   },
-   {
-    "pathology": "Medial medullary (Dejerine) infarct",
-    "modality": "MRI",
-    "finding": "Paramedian restricted diffusion in the ventral medulla including the pyramid, medial lemniscus and hypoglossal fibers.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Hypertrophic olivary degeneration",
-    "modality": "MRI",
-    "finding": "Enlarged, T2-bright inferior olive months after a lesion of the dentato-rubro-olivary (Guillain–Mollaret) triangle, presenting as palatal tremor.",
-    "sequence": "T2",
-    "timing": "Appears after about 4–6 months and persists"
-   }
-  ],
-  "sequenceOfChoice": "Thin-slice DWI (2–3 mm) through the medulla; CTA of the vertebral arteries"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Crossed pain and temperature loss: face ipsilateral, body contralateral",
-    "side": "ipsilateral",
-    "mechanism": "Spinal trigeminal tract and the crossed spinothalamic tract in the lateral wedge"
-   },
-   {
-    "deficit": "Dysphagia, hoarseness, absent gag, palate deviation away from the lesion",
-    "side": "ipsilateral",
-    "mechanism": "Nucleus ambiguus"
-   },
-   {
-    "deficit": "Vertigo, nystagmus, vomiting",
-    "side": "ipsilateral",
-    "mechanism": "Vestibular nuclei"
-   },
-   {
-    "deficit": "Horner syndrome",
-    "side": "ipsilateral",
-    "mechanism": "Descending sympathetic fibers"
-   },
-   {
-    "deficit": "Ipsilateral limb ataxia",
-    "side": "ipsilateral",
-    "mechanism": "Inferior cerebellar peduncle"
-   },
-   {
-    "deficit": "Contralateral hemiparesis with ipsilateral tongue weakness and contralateral loss of vibration and proprioception",
-    "side": "contralateral",
-    "mechanism": "Medial medullary infarct: pyramid, hypoglossal fibers, medial lemniscus"
-   }
-  ],
-  "examination": [
-   "Pin-prick on the face versus the limbs on each side",
-   "Palatal movement and voice; ask the patient to cough and swallow water",
-   "Tongue protrusion for deviation and atrophy",
-   "Pupils and ptosis",
-   "Finger-nose and gait; observe nystagmus"
-  ],
-  "syndromes": [
-   "syn-wallenberg-lateral-medullary",
-   "syn-dejerine-medial-medullary",
-   "syn-hypoglossal-palsy"
-  ],
-  "pearls": [
-   "Lateral medulla: no weakness, crossed sensory loss, dysphagia and Horner. Medial medulla: contralateral hemiparesis, ipsilateral tongue, contralateral proprioceptive loss",
-   "The tongue deviates toward the side of the hypoglossal lesion; the palate deviates away from a vagal lesion"
-  ]
- },
- "pitfalls": [
-  "Facial sensory loss may be subtle; test the cornea and compare sharp sensation on the forehead and cheek carefully"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    200,
-    204
-   ]
+  "summary": "The open medulla at the level of the inferior olivary nucleus is the most clinically important brainstem section, because it is the site of the lateral medullary (Wallenberg) syndrome and of the medial medullary syndrome. The fourth ventricle roofs the section, and its floor holds the hypoglossal, dorsal vagal and vestibular nuclei. In front lie the pyramids, then the medial lemniscus and the hypoglossal fibers threading between them and the olive; laterally the inferior cerebellar peduncle, spinothalamic tract, spinal trigeminal nucleus, nucleus ambiguus and the descending sympathetic fibers cluster in the wedge that PICA and the vertebral perforators supply.",
+  "anatomy": {
+    "location": "Open medulla between the obex and the pontomedullary junction, marked externally by the olive on each side and the inferior cerebellar peduncle behind it; MNI z ≈ −42 to −48.",
+    "subdivisions": [
+      {
+        "name": "Pyramids",
+        "note": "anterior, paramedian; corticospinal tract"
+      },
+      {
+        "name": "Medial lemniscus",
+        "note": "dorsal to the pyramid on either side of the midline"
+      },
+      {
+        "name": "Hypoglossal nucleus and nerve",
+        "note": "nucleus under the hypoglossal trigone; fibers pass ventrally between the medial lemniscus and the olive to exit in the preolivary sulcus"
+      },
+      {
+        "name": "Inferior olivary nucleus",
+        "note": "crumpled bag of gray matter behind the olive; its fibers cross to the opposite inferior cerebellar peduncle as climbing fibers"
+      },
+      {
+        "name": "Nucleus ambiguus",
+        "note": "deep in the reticular formation: motor neurons for IX, X and cranial XI"
+      },
+      {
+        "name": "Dorsal motor nucleus of the vagus and nucleus of the solitary tract",
+        "note": "under the vagal trigone: parasympathetic outflow and visceral/taste afferents"
+      },
+      {
+        "name": "Vestibular nuclei (medial and inferior)",
+        "note": "under the lateral part of the ventricular floor"
+      },
+      {
+        "name": "Spinal trigeminal nucleus and tract",
+        "note": "lateral, medial to the inferior cerebellar peduncle"
+      },
+      {
+        "name": "Spinothalamic tract and descending sympathetic fibers",
+        "note": "anterolateral tegmentum, in the lateral medullary wedge"
+      },
+      {
+        "name": "Inferior cerebellar peduncle",
+        "note": "posterolateral, carrying spinocerebellar, olivocerebellar and vestibular fibers"
+      },
+      {
+        "name": "Medial longitudinal fasciculus",
+        "note": "dorsal paramedian, beneath the hypoglossal nucleus"
+      }
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    215,
-    216
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    78
-   ]
+  "function": "Contains the lower cranial nerve nuclei for swallowing, phonation, tongue movement and visceral control, the vestibular and olivary relays to the cerebellum, and every long tract between the cord and the pons.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-vertebral",
+      "artery-pica",
+      "anterior-spinal-artery"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla",
+      "territory-basilar-paramedian"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    125,
-    128
-   ]
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -44,
+          "z": -46
+        },
+        "label": "open medulla: olives bulge laterally, fourth ventricle behind"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 12,
+          "y": -42,
+          "z": -44
+        },
+        "label": "lateral medullary wedge behind the olive: Wallenberg site"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 4,
+          "y": -46,
+          "z": -46
+        },
+        "label": "paramedian medulla: pyramid, medial lemniscus, hypoglossal fibers"
+      }
+    ],
+    "normalAppearance": "On axial T2 the olives make the anterolateral surface bulge and the fourth ventricle appears as a triangle behind; the inferior cerebellar peduncles form the posterolateral corners. The olive itself is faintly darker than surrounding white matter on T1.",
+    "pathology": [
+      {
+        "pathology": "Lateral medullary (Wallenberg) infarct",
+        "modality": "MRI",
+        "finding": "Small area of restricted diffusion in the dorsolateral medulla behind the olive, sometimes extending to the inferior cerebellar surface; CT is normal.",
+        "sequence": "DWI",
+        "pitfalls": "Look on thin axial and coronal DWI; a first DWI within hours may be negative"
+      },
+      {
+        "pathology": "Medial medullary (Dejerine) infarct",
+        "modality": "MRI",
+        "finding": "Paramedian restricted diffusion in the ventral medulla including the pyramid, medial lemniscus and hypoglossal fibers.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Hypertrophic olivary degeneration",
+        "modality": "MRI",
+        "finding": "Enlarged, T2-bright inferior olive months after a lesion of the dentato-rubro-olivary (Guillain–Mollaret) triangle, presenting as palatal tremor.",
+        "sequence": "T2",
+        "timing": "Appears after about 4–6 months and persists"
+      }
+    ],
+    "sequenceOfChoice": "Thin-slice DWI (2–3 mm) through the medulla; CTA of the vertebral arteries"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Crossed pain and temperature loss: face ipsilateral, body contralateral",
+        "side": "ipsilateral",
+        "mechanism": "Spinal trigeminal tract and the crossed spinothalamic tract in the lateral wedge"
+      },
+      {
+        "deficit": "Dysphagia, hoarseness, absent gag, palate deviation away from the lesion",
+        "side": "ipsilateral",
+        "mechanism": "Nucleus ambiguus"
+      },
+      {
+        "deficit": "Vertigo, nystagmus, vomiting",
+        "side": "ipsilateral",
+        "mechanism": "Vestibular nuclei"
+      },
+      {
+        "deficit": "Horner syndrome",
+        "side": "ipsilateral",
+        "mechanism": "Descending sympathetic fibers"
+      },
+      {
+        "deficit": "Ipsilateral limb ataxia",
+        "side": "ipsilateral",
+        "mechanism": "Inferior cerebellar peduncle"
+      },
+      {
+        "deficit": "Contralateral hemiparesis with ipsilateral tongue weakness and contralateral loss of vibration and proprioception",
+        "side": "contralateral",
+        "mechanism": "Medial medullary infarct: pyramid, hypoglossal fibers, medial lemniscus"
+      }
+    ],
+    "examination": [
+      "Pin-prick on the face versus the limbs on each side",
+      "Palatal movement and voice; ask the patient to cough and swallow water",
+      "Tongue protrusion for deviation and atrophy",
+      "Pupils and ptosis",
+      "Finger-nose and gait; observe nystagmus"
+    ],
+    "syndromes": [
+      "syn-wallenberg-lateral-medullary",
+      "syn-dejerine-medial-medullary",
+      "syn-hypoglossal-palsy"
+    ],
+    "pearls": [
+      "Lateral medulla: no weakness, crossed sensory loss, dysphagia and Horner. Medial medulla: contralateral hemiparesis, ipsilateral tongue, contralateral proprioceptive loss",
+      "The tongue deviates toward the side of the hypoglossal lesion; the palate deviates away from a vagal lesion"
+    ]
+  },
+  "pitfalls": [
+    "Facial sensory loss may be subtle; test the cornea and compare sharp sensation on the forehead and cheek carefully"
+  ],
+  "citations": [
+    {
+      "ref": "sp-medulla-oblongata",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-lateral-medullary-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-medial-medullary-syndrome",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "brainstem",
+    "cross-section"
+  ],
+  "status": "draft",
+  "subsystem": "levels",
+  "level": {
+    "region": "medulla",
+    "sub": "medulla-olive"
   }
- ],
- "tags": [
-  "brainstem",
-  "cross-section"
- ],
- "status": "draft",
- "subsystem": "levels",
- "level": {
-  "region": "medulla",
-  "sub": "medulla-olive"
- }
 }

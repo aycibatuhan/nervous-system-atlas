@@ -1,137 +1,125 @@
 {
- "kind": "structure",
- "id": "medial-geniculate-nucleus",
- "name": "Medial geniculate nucleus",
- "synonyms": [
-  "MGN",
-  "medial geniculate body"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "medial-geniculate-nucleus-l",
-  "medial-geniculate-nucleus-r"
- ],
- "summary": "The auditory thalamus, a small oval nucleus medial to the lateral geniculate body on the undersurface of the pulvinar. It receives the brachium of the inferior colliculus and projects through the acoustic radiation in the sublenticular internal capsule to Heschl's gyrus. Because the auditory pathway is bilateral from the cochlear nuclei upward, a unilateral geniculate lesion causes only subtle contralateral hearing and localization deficits, never deafness.",
- "anatomy": {
-  "location": "Inferomedial to the lateral geniculate body and lateral to the superior colliculus on the posteroinferior thalamus, receiving the brachium of the inferior colliculus along the lateral midbrain.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "inferior-colliculus",
-    "via": "brachium of the inferior colliculus"
-   }
+  "kind": "structure",
+  "id": "medial-geniculate-nucleus",
+  "name": "Medial geniculate nucleus",
+  "synonyms": [
+    "MGN",
+    "medial geniculate body"
   ],
-  "efferents": [
-   {
-    "to": "gyrus-heschl",
-    "via": "tract-acoustic-radiation"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "medial-geniculate-nucleus-l",
+    "medial-geniculate-nucleus-r"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "Thalamic relay of hearing to the primary auditory cortex, tonotopically organized; also relays auditory information to the amygdala for fear conditioning.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "arteries-thalamoperforating"
-  ],
-  "territories": [
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 16,
-     "y": -26,
-     "z": -6
-    },
-    "label": "medial geniculate body medial to the LGN"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 16,
-     "y": -26,
-     "z": -6
-    },
-    "label": "MGN on the inferior thalamus lateral to the midbrain"
-   }
-  ],
-  "normalAppearance": "Small nucleus on thin coronal T2 medial to the lateral geniculate; represented by the MASSP mesh in this atlas.",
-  "pathology": [
-   {
-    "pathology": "Thalamic infarct including the MGN",
-    "modality": "MRI",
-    "finding": "Posterior thalamic restriction; mild contralateral hearing deficit with a hemianopia if the LGN is included.",
-    "sequence": "DWI"
-   }
-  ],
-  "sequenceOfChoice": "DWI; audiometry with central tests"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Mild contralateral hearing loss and poor sound localization",
-    "side": "contralateral",
-    "mechanism": "Partial interruption of the mainly crossed auditory pathway"
-   },
-   {
-    "deficit": "Auditory agnosia with bilateral lesions",
-    "side": "bilateral",
-    "mechanism": "Bilateral geniculate or radiation damage"
-   }
-  ],
-  "examination": [
-   "Hearing thresholds (near normal) and localization",
-   "Dichotic listening if available"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Central auditory lesions do not cause deafness in one ear; if the patient is deaf on one side, look at the nerve or cochlea",
-   "The medial geniculate is the last relay before the cortex: bilateral lesions of it or of the acoustic radiations produce cortical (central) deafness with preserved brainstem auditory responses"
-  ]
- },
- "pitfalls": [
-  "Sound localization testing at the bedside is crude; refer for central auditory testing when the history suggests difficulty in noisy rooms with normal audiograms"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    339
-   ]
+  "summary": "The auditory thalamus, a small oval nucleus medial to the lateral geniculate body on the undersurface of the pulvinar. It receives the brachium of the inferior colliculus and projects through the acoustic radiation in the sublenticular internal capsule to Heschl's gyrus. Because the auditory pathway is bilateral from the cochlear nuclei upward, a unilateral geniculate lesion causes only subtle contralateral hearing and localization deficits, never deafness.",
+  "anatomy": {
+    "location": "Inferomedial to the lateral geniculate body and lateral to the superior colliculus on the posteroinferior thalamus, receiving the brachium of the inferior colliculus along the lateral midbrain.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    366,
-    366
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "inferior-colliculus",
+        "via": "brachium of the inferior colliculus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "gyrus-heschl",
+        "via": "tract-acoustic-radiation"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
-  }
- ],
- "tags": [
-  "diencephalon"
- ],
- "status": "draft",
- "latin": "Corpus geniculatum mediale",
- "subsystem": "thalamus",
- "parent": "thalamus"
+  "function": "Thalamic relay of hearing to the primary auditory cortex, tonotopically organized; also relays auditory information to the amygdala for fear conditioning.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 16,
+          "y": -26,
+          "z": -6
+        },
+        "label": "medial geniculate body medial to the LGN"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 16,
+          "y": -26,
+          "z": -6
+        },
+        "label": "MGN on the inferior thalamus lateral to the midbrain"
+      }
+    ],
+    "normalAppearance": "Small nucleus on thin coronal T2 medial to the lateral geniculate; represented by the MASSP mesh in this atlas.",
+    "pathology": [
+      {
+        "pathology": "Thalamic infarct including the MGN",
+        "modality": "MRI",
+        "finding": "Posterior thalamic restriction; mild contralateral hearing deficit with a hemianopia if the LGN is included.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "DWI; audiometry with central tests"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Mild contralateral hearing loss and poor sound localization",
+        "side": "contralateral",
+        "mechanism": "Partial interruption of the mainly crossed auditory pathway"
+      },
+      {
+        "deficit": "Auditory agnosia with bilateral lesions",
+        "side": "bilateral",
+        "mechanism": "Bilateral geniculate or radiation damage"
+      }
+    ],
+    "examination": [
+      "Hearing thresholds (near normal) and localization",
+      "Dichotic listening if available"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Central auditory lesions do not cause deafness in one ear; if the patient is deaf on one side, look at the nerve or cochlea",
+      "The medial geniculate is the last relay before the cortex: bilateral lesions of it or of the acoustic radiations produce cortical (central) deafness with preserved brainstem auditory responses"
+    ]
+  },
+  "pitfalls": [
+    "Sound localization testing at the bedside is crude; refer for central auditory testing when the history suggests difficulty in noisy rooms with normal audiograms"
+  ],
+  "citations": [
+    {
+      "ref": "sp-thalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-inferior-colliculus",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "diencephalon"
+  ],
+  "status": "draft",
+  "latin": "Corpus geniculatum mediale",
+  "subsystem": "thalamus",
+  "parent": "thalamus"
 }

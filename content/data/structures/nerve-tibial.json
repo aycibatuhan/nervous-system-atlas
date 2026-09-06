@@ -1,136 +1,132 @@
 {
- "kind": "structure",
- "id": "nerve-tibial",
- "name": "Tibial nerve",
- "synonyms": [
-  "medial popliteal nerve"
- ],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The larger terminal division of the sciatic nerve (L4–S3) runs straight through the popliteal fossa and down the back of the leg deep to soleus with the posterior tibial artery, supplying the plantar flexors and invertors (gastrocnemius, soleus, tibialis posterior, flexor digitorum longus, flexor hallucis longus), then passes behind the medial malleolus through the tarsal tunnel to divide into the medial and lateral plantar nerves for the sole. Sensation of the sole and heel and the ankle reflex belong to it. It is well protected and rarely injured proximally; distal entrapment in the tarsal tunnel causes burning sole pain.",
- "anatomy": {
-  "location": "Popliteal fossa in the midline superficial to the popliteal vessels, then between the superficial and deep posterior compartments of the leg on tibialis posterior, behind the medial malleolus under the flexor retinaculum (tarsal tunnel) between the flexor digitorum longus and flexor hallucis longus tendons.",
-  "subdivisions": [
-   {
-    "name": "Muscular branches in the leg",
-    "note": "gastrocnemius and soleus, plantaris and popliteus, tibialis posterior, and the long flexors of the digits and hallux"
-   },
-   {
-    "name": "Sural nerve (with a peroneal contribution)",
-    "note": "posterolateral leg and lateral foot"
-   },
-   {
-    "name": "Medial calcaneal branch",
-    "note": "heel"
-   },
-   {
-    "name": "Medial and lateral plantar nerves",
-    "note": "intrinsic muscles of the sole and plantar sensation (medial plantar: medial three and a half toes, like the median nerve; lateral plantar: lateral one and a half, like the ulnar)"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Plantar flexion, foot inversion, toe flexion and the intrinsic foot muscles; sensation of the sole, heel and lateral foot; the ankle (S1) reflex.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "nerve-tibial",
+  "name": "Tibial nerve",
+  "synonyms": [
+    "medial popliteal nerve"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "cervical cord; the tibial nerve derives from L4–S3"
-   }
-  ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Ankle MRI shows the tarsal tunnel with a ganglion, varicosity or accessory muscle compressing the nerve and denervation of the plantar muscles.",
-  "pathology": [
-   {
-    "pathology": "Tarsal tunnel syndrome",
-    "modality": "MRI",
-    "finding": "Space-occupying lesion under the flexor retinaculum with STIR-bright abductor hallucis and plantar muscles.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Popliteal fossa lesion (Baker cyst, aneurysm)",
-    "modality": "US",
-    "finding": "Cyst or popliteal artery aneurysm compressing the nerve.",
-    "sequence": "n/a"
-   }
-  ],
-  "sequenceOfChoice": "EMG/NCS including plantar nerves; ankle MRI or ultrasound"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weak plantar flexion and inversion, cannot stand on toes, absent ankle jerk",
-    "side": "ipsilateral",
-    "mechanism": "Proximal tibial lesion"
-   },
-   {
-    "deficit": "Burning pain and numbness of the sole worse at night, with weak toe flexion",
-    "side": "ipsilateral",
-    "mechanism": "Tarsal tunnel entrapment"
-   },
-   {
-    "deficit": "Clawing of the toes with intrinsic wasting",
-    "side": "ipsilateral",
-    "mechanism": "Plantar nerve lesions"
-   }
-  ],
-  "examination": [
-   "Toe-stand and heel-stand",
-   "Ankle jerk",
-   "Foot inversion (tibialis posterior)",
-   "Sole sensation and Tinel behind the medial malleolus"
-  ],
-  "syndromes": [
-   "syn-tarsal-tunnel",
-   "syn-sciatic-neuropathy",
-   "syn-radiculopathy-lumbosacral"
-  ],
-  "pearls": [
-   "Foot drop with weak inversion but preserved plantar flexion and ankle jerk is peroneal or L5; add plantar flexion weakness and a lost ankle jerk and it is sciatic or S1",
-   "Sole numbness with normal dorsum sensation is the tibial nerve or its plantar branches"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    112,
-    112
-   ]
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The larger terminal division of the sciatic nerve (L4–S3) runs straight through the popliteal fossa and down the back of the leg deep to soleus with the posterior tibial artery, supplying the plantar flexors and invertors (gastrocnemius, soleus, tibialis posterior, flexor digitorum longus, flexor hallucis longus), then passes behind the medial malleolus through the tarsal tunnel to divide into the medial and lateral plantar nerves for the sole. Sensation of the sole and heel and the ankle reflex belong to it. It is well protected and rarely injured proximally; distal entrapment in the tarsal tunnel causes burning sole pain.",
+  "anatomy": {
+    "location": "Popliteal fossa in the midline superficial to the popliteal vessels, then between the superficial and deep posterior compartments of the leg on tibialis posterior, behind the medial malleolus under the flexor retinaculum (tarsal tunnel) between the flexor digitorum longus and flexor hallucis longus tendons.",
+    "subdivisions": [
+      {
+        "name": "Muscular branches in the leg",
+        "note": "gastrocnemius and soleus, plantaris and popliteus, tibialis posterior, and the long flexors of the digits and hallux"
+      },
+      {
+        "name": "Sural nerve (with a peroneal contribution)",
+        "note": "posterolateral leg and lateral foot"
+      },
+      {
+        "name": "Medial calcaneal branch",
+        "note": "heel"
+      },
+      {
+        "name": "Medial and lateral plantar nerves",
+        "note": "intrinsic muscles of the sole and plantar sensation (medial plantar: medial three and a half toes, like the median nerve; lateral plantar: lateral one and a half, like the ulnar)"
+      }
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    166
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Plantar flexion, foot inversion, toe flexion and the intrinsic foot muscles; sensation of the sole, heel and lateral foot; the ankle (S1) reflex.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; the tibial nerve derives from L4–S3"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Ankle MRI shows the tarsal tunnel with a ganglion, varicosity or accessory muscle compressing the nerve and denervation of the plantar muscles.",
+    "pathology": [
+      {
+        "pathology": "Tarsal tunnel syndrome",
+        "modality": "MRI",
+        "finding": "Space-occupying lesion under the flexor retinaculum with STIR-bright abductor hallucis and plantar muscles.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Popliteal fossa lesion (Baker cyst, aneurysm)",
+        "modality": "US",
+        "finding": "Cyst or popliteal artery aneurysm compressing the nerve.",
+        "sequence": "n/a"
+      }
+    ],
+    "sequenceOfChoice": "EMG/NCS including plantar nerves; ankle MRI or ultrasound"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak plantar flexion and inversion, cannot stand on toes, absent ankle jerk",
+        "side": "ipsilateral",
+        "mechanism": "Proximal tibial lesion"
+      },
+      {
+        "deficit": "Burning pain and numbness of the sole worse at night, with weak toe flexion",
+        "side": "ipsilateral",
+        "mechanism": "Tarsal tunnel entrapment"
+      },
+      {
+        "deficit": "Clawing of the toes with intrinsic wasting",
+        "side": "ipsilateral",
+        "mechanism": "Plantar nerve lesions"
+      }
+    ],
+    "examination": [
+      "Toe-stand and heel-stand",
+      "Ankle jerk",
+      "Foot inversion (tibialis posterior)",
+      "Sole sensation and Tinel behind the medial malleolus"
+    ],
+    "syndromes": [
+      "syn-tarsal-tunnel",
+      "syn-sciatic-neuropathy",
+      "syn-radiculopathy-lumbosacral"
+    ],
+    "pearls": [
+      "Foot drop with weak inversion but preserved plantar flexion and ankle jerk is peroneal or L5; add plantar flexion weakness and a lost ankle jerk and it is sciatic or S1",
+      "Sole numbness with normal dorsum sensation is the tibial nerve or its plantar branches"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-tibial-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-tibial-artery",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "pns",
+    "lower-limb"
+  ],
+  "status": "draft",
+  "latin": "Nervus tibialis",
+  "subsystem": "lower-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "lower-limb"
- ],
- "status": "draft",
- "latin": "Nervus tibialis",
- "subsystem": "lower-limb",
- "level": {
-  "region": "peripheral"
- }
 }

@@ -1,158 +1,130 @@
 {
- "kind": "structure",
- "id": "spinal-nerve-root-dermatome",
- "name": "Spinal nerve roots and dermatomes",
- "synonyms": [],
- "system": "spinal-cord",
- "meshIds": [
-  "spinal-cord"
- ],
- "summary": "Each segment of the cord gives a ventral (motor) and a dorsal (sensory) root that unite in the intervertebral foramen into a spinal nerve, which immediately divides into a dorsal ramus for the back and a ventral ramus for the limbs and trunk. The skin supplied by one dorsal root is its dermatome and the muscles supplied by one ventral root its myotome; because adjacent dermatomes overlap, a single root lesion produces pain and paresthesia in the dermatome but only patchy numbness, whereas the myotome pattern and the lost reflex localize the root. The key landmarks are C6 thumb, C7 middle finger, C8 little finger, T4 nipple, T10 umbilicus, L4 medial leg, L5 dorsum of the foot and great toe, S1 lateral foot and sole.",
- "anatomy": {
-  "location": "Roots run from the cord to the foramina, increasingly obliquely downward; cervical roots emerge above their vertebra (C8 below C7), thoracic and lumbar roots below theirs; the dorsal root ganglion sits in the foramen.",
-  "subdivisions": [
-   {
-    "name": "Cervical roots C5–T1",
-    "note": "brachial plexus: C5 deltoid/biceps reflex, C6 biceps and wrist extensors/brachioradialis reflex, C7 triceps/triceps reflex, C8 finger flexors, T1 hand intrinsics"
-   },
-   {
-    "name": "Thoracic roots",
-    "note": "intercostal and abdominal muscles; band-like dermatomes"
-   },
-   {
-    "name": "Lumbosacral roots L2–S1",
-    "note": "L2–L3 hip flexion, L4 knee extension/knee reflex, L5 dorsiflexion and great toe extension, S1 plantar flexion/ankle reflex"
-   },
-   {
-    "name": "Sacral roots S2–S4",
-    "note": "pelvic floor, sphincters, perineal sensation"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Segmental motor, sensory and autonomic connection between the cord and the periphery; the anatomical basis of radiculopathy and of the dermatomal and myotomal examination.",
- "bloodSupply": {
-  "arteries": [
-   "radicular arteries"
+  "kind": "structure",
+  "id": "spinal-nerve-root-dermatome",
+  "name": "Spinal nerve roots and dermatomes",
+  "synonyms": [],
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-cord"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "Each segment of the cord gives a ventral (motor) and a dorsal (sensory) root that unite in the intervertebral foramen into a spinal nerve, which immediately divides into a dorsal ramus for the back and a ventral ramus for the limbs and trunk. The skin supplied by one dorsal root is its dermatome and the muscles supplied by one ventral root its myotome; because adjacent dermatomes overlap, a single root lesion produces pain and paresthesia in the dermatome but only patchy numbness, whereas the myotome pattern and the lost reflex localize the root. The key landmarks are C6 thumb, C7 middle finger, C8 little finger, T4 nipple, T10 umbilicus, L4 medial leg, L5 dorsum of the foot and great toe, S1 lateral foot and sole.",
+  "anatomy": {
+    "location": "Roots run from the cord to the foramina, increasingly obliquely downward; cervical roots emerge above their vertebra (C8 below C7), thoracic and lumbar roots below theirs; the dorsal root ganglion sits in the foramen.",
+    "subdivisions": [
+      {
+        "name": "Cervical roots C5–T1",
+        "note": "brachial plexus: C5 deltoid/biceps reflex, C6 biceps and wrist extensors/brachioradialis reflex, C7 triceps/triceps reflex, C8 finger flexors, T1 hand intrinsics"
+      },
+      {
+        "name": "Thoracic roots",
+        "note": "intercostal and abdominal muscles; band-like dermatomes"
+      },
+      {
+        "name": "Lumbosacral roots L2–S1",
+        "note": "L2–L3 hip flexion, L4 knee extension/knee reflex, L5 dorsiflexion and great toe extension, S1 plantar flexion/ankle reflex"
+      },
+      {
+        "name": "Sacral roots S2–S4",
+        "note": "pelvic floor, sphincters, perineal sensation"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Segmental motor, sensory and autonomic connection between the cord and the periphery; the anatomical basis of radiculopathy and of the dermatomal and myotomal examination.",
+  "bloodSupply": {
+    "arteries": [
+      "radicular arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "upper cervical cord with the C1–C2 root region"
+      }
+    ],
+    "normalAppearance": "Root compression is diagnosed on axial and sagittal spine MRI where a disc or osteophyte narrows the foramen or the lateral recess; the root affected depends on the level and position of the disc. Root enhancement indicates inflammation or infiltration.",
+    "pathology": [
+      {
+        "pathology": "Foraminal disc herniation",
+        "modality": "MRI",
+        "finding": "Disc material in the foramen compressing the exiting root (C5–C6 disc: C6 root; L4–L5 posterolateral disc: L5 root).",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Polyradiculitis (Guillain–Barré, CMV, Lyme, carcinomatosis)",
+        "modality": "MRI",
+        "finding": "Smooth or nodular enhancement of the roots.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Spine MRI; EMG for denervation in the myotome and paraspinal muscles"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Dermatomal pain and paresthesia with patchy sensory loss",
+        "side": "ipsilateral",
+        "mechanism": "Dorsal root; overlap limits the numbness"
+      },
+      {
+        "deficit": "Weakness in the myotome, often mild, with a lost reflex",
+        "side": "ipsilateral",
+        "mechanism": "Ventral root"
+      },
+      {
+        "deficit": "Paraspinal muscle denervation on EMG",
+        "side": "ipsilateral",
+        "mechanism": "Dorsal ramus involvement distinguishes root from plexus lesions"
+      }
+    ],
+    "examination": [
+      "Map pin-prick and light touch against the dermatome chart",
+      "Test the key muscle and reflex for each root",
+      "Straight-leg raise (L5, S1) and femoral stretch (L2–L4); Spurling's test in the neck"
+    ],
+    "syndromes": [
+      "syn-radiculopathy-cervical",
+      "syn-radiculopathy-lumbosacral",
+      "syn-guillain-barre"
+    ],
+    "pearls": [
+      "A reflex loss plus a dermatomal symptom is the quickest root localization: biceps C5–C6, triceps C7, knee L4, ankle S1",
+      "Root lesions spare the dorsal ramus territory on the trunk only if the lesion is distal to it: paraspinal EMG separates root from plexus"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
     },
-    "label": "upper cervical cord with the C1–C2 root region"
-   }
+    {
+      "ref": "sp-dermatomes",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dorsal-root-ganglion",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Root compression is diagnosed on axial and sagittal spine MRI where a disc or osteophyte narrows the foramen or the lateral recess; the root affected depends on the level and position of the disc. Root enhancement indicates inflammation or infiltration.",
-  "pathology": [
-   {
-    "pathology": "Foraminal disc herniation",
-    "modality": "MRI",
-    "finding": "Disc material in the foramen compressing the exiting root (C5–C6 disc: C6 root; L4–L5 posterolateral disc: L5 root).",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Polyradiculitis (Guillain–Barré, CMV, Lyme, carcinomatosis)",
-    "modality": "MRI",
-    "finding": "Smooth or nodular enhancement of the roots.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Spine MRI; EMG for denervation in the myotome and paraspinal muscles"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Dermatomal pain and paresthesia with patchy sensory loss",
-    "side": "ipsilateral",
-    "mechanism": "Dorsal root; overlap limits the numbness"
-   },
-   {
-    "deficit": "Weakness in the myotome, often mild, with a lost reflex",
-    "side": "ipsilateral",
-    "mechanism": "Ventral root"
-   },
-   {
-    "deficit": "Paraspinal muscle denervation on EMG",
-    "side": "ipsilateral",
-    "mechanism": "Dorsal ramus involvement distinguishes root from plexus lesions"
-   }
-  ],
-  "examination": [
-   "Map pin-prick and light touch against the dermatome chart",
-   "Test the key muscle and reflex for each root",
-   "Straight-leg raise (L5, S1) and femoral stretch (L2–L4); Spurling's test in the neck"
-  ],
-  "syndromes": [
-   "syn-radiculopathy-cervical",
-   "syn-radiculopathy-lumbosacral",
-   "syn-guillain-barre"
-  ],
-  "pearls": [
-   "A reflex loss plus a dermatomal symptom is the quickest root localization: biceps C5–C6, triceps C7, knee L4, ankle S1",
-   "Root lesions spare the dorsal ramus territory on the trunk only if the lesion is distal to it: paraspinal EMG separates root from plexus"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    98,
-    100
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 19,
-   "pages": [
-    510,
-    511
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 15,
-   "pages": [
-    130,
-    133
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    147
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    163
-   ]
+  "status": "draft",
+  "latin": "Radices nervorum spinalium",
+  "subsystem": "roots",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "latin": "Radices nervorum spinalium",
- "subsystem": "roots",
- "level": {
-  "region": "spinal"
- }
 }

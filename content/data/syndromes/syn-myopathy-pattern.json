@@ -1,131 +1,131 @@
 {
- "kind": "syndrome",
- "id": "syn-myopathy-pattern",
- "name": "Myopathy: the muscle disease pattern",
- "eponyms": [],
- "category": "neuromuscular",
- "tier": "extended",
- "localisation": {
-  "structures": [
-   "motor-unit",
-   "neuromuscular-junction"
+  "kind": "syndrome",
+  "id": "syn-myopathy-pattern",
+  "name": "Myopathy: the muscle disease pattern",
+  "eponyms": [],
+  "category": "neuromuscular",
+  "tier": "extended",
+  "localisation": {
+    "structures": [
+      "motor-unit",
+      "neuromuscular-junction"
+    ],
+    "side": "bilateral"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "brainstem"
+    ]
+  },
+  "presentation": "A patient cannot rise from a low chair without using the arms, climbs stairs one at a time and cannot lift the arms to wash their hair, yet buttons, writing and walking on the flat are normal. The weakness is symmetric and proximal, the muscles are not wasted early and may be tender, the reflexes are preserved until the muscles are very weak, sensation is normal and there are no fasciculations. Dark urine, a rash over the knuckles and eyelids, or a family history each point to a cause.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "bilateral",
+      "distribution": "proximal limb girdles, neck flexors, symmetric",
+      "sign": "Symmetric proximal weakness: Gowers sign, difficulty rising and lifting the arms; distal strength preserved",
+      "substrate": "motor-unit"
+    },
+    {
+      "modality": "reflex",
+      "side": "bilateral",
+      "distribution": "generalized",
+      "sign": "Reflexes preserved in proportion to strength; lost only late",
+      "substrate": "motor-unit"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "n/a",
+      "distribution": "spared",
+      "sign": "Normal sensation; no fasciculations",
+      "substrate": "dorsal-root-ganglion"
+    },
+    {
+      "modality": "other",
+      "side": "bilateral",
+      "distribution": "muscle",
+      "sign": "Myalgia, tenderness, cramps or contractures; myoglobinuria in necrotizing forms",
+      "substrate": "motor-unit"
+    },
+    {
+      "modality": "bulbar",
+      "side": "bilateral",
+      "distribution": "pharynx, face, respiratory muscles (some myopathies)",
+      "sign": "Dysphagia, facial weakness, ptosis or respiratory failure in specific diseases",
+      "substrate": "neuromuscular-junction"
+    }
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "brainstem"
-  ]
- },
- "presentation": "A patient cannot rise from a low chair without using the arms, climbs stairs one at a time and cannot lift the arms to wash their hair, yet buttons, writing and walking on the flat are normal. The weakness is symmetric and proximal, the muscles are not wasted early and may be tender, the reflexes are preserved until the muscles are very weak, sensation is normal and there are no fasciculations. Dark urine, a rash over the knuckles and eyelids, or a family history each point to a cause.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "bilateral",
-   "distribution": "proximal limb girdles, neck flexors, symmetric",
-   "sign": "Symmetric proximal weakness: Gowers sign, difficulty rising and lifting the arms; distal strength preserved",
-   "substrate": "motor-unit"
+  "reasoning": "In a myopathy the disease is in the muscle fiber itself, whether inflammatory, dystrophic, metabolic, toxic or endocrine, and the nerve supply is intact. Because the largest, most metabolically active muscles of the limb girdles and trunk are affected first and most, the weakness is proximal and symmetric, in contrast to the distal, length-dependent weakness of neuropathy and the asymmetric, regional weakness of anterior horn cell disease; sensation is normal because the sensory nerves and roots are untouched, and fasciculations are absent because the motor neuron is healthy. The reflex arc is intact, so reflexes persist until the muscle is too weak to generate a visible contraction, unlike the early areflexia of neuropathy. Nothing crosses and nothing lateralizes; the pattern is bilateral and symmetric, and any marked asymmetry (facioscapulohumeral dystrophy, inclusion body myositis with its finger flexor and quadriceps predilection) is itself a clue to the specific disease. Damaged fibers leak creatine kinase, which is raised in inflammatory, dystrophic and necrotizing myopathies but normal in steroid and many endocrine myopathies, and EMG shows small, short, polyphasic motor units that recruit early, the electrical signature of fibers dropping out of intact motor units, the opposite of the large units of reinnervation. The specific diagnosis rests on the tempo, the distribution, the skin and systemic features, the enzyme level, imaging of muscle edema or fatty replacement, and biopsy or genetic testing.",
+  "imagingFindings": [
+    {
+      "pathology": "Myopathic pattern",
+      "modality": "EMG/NCS",
+      "finding": "Small, short-duration, polyphasic motor unit potentials with early recruitment; fibrillations in inflammatory and necrotizing myopathies; normal nerve conduction.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Muscle edema and fatty replacement",
+      "modality": "MRI",
+      "finding": "STIR hyperintensity of inflamed muscles guiding biopsy in myositis; selective fatty infiltration patterns on T1 in dystrophies and inclusion body myositis.",
+      "sequence": "STIR"
+    },
+    {
+      "pathology": "Serum creatine kinase",
+      "modality": "EMG/NCS",
+      "finding": "Serum CK measured alongside electrodiagnosis: markedly raised in polymyositis, necrotizing myopathy and dystrophinopathies; normal in steroid myopathy and mild in inclusion body myositis.",
+      "sequence": "n/a"
+    }
+  ],
+  "commonCauses": [
+    "Inflammatory: dermatomyositis, polymyositis, immune-mediated necrotizing myopathy, inclusion body myositis",
+    "Endocrine and toxic: hypothyroidism, Cushing syndrome or steroids, statins, alcohol, colchicine",
+    "Muscular dystrophies (Duchenne, Becker, limb-girdle, facioscapulohumeral, myotonic)",
+    "Metabolic: glycogen and lipid storage, mitochondrial disease, periodic paralysis",
+    "Critical illness myopathy"
+  ],
+  "mimics": [
+    {
+      "name": "Myasthenia gravis",
+      "howToDistinguish": "Fatigable ocular and bulbar weakness, normal CK, antibodies"
+    },
+    {
+      "name": "Motor neuron disease",
+      "howToDistinguish": "Fasciculations, wasting, upper motor neuron signs, asymmetric"
+    },
+    {
+      "name": "Proximal neuropathy (CIDP, diabetic amyotrophy)",
+      "howToDistinguish": "Areflexia, sensory loss, demyelinating conduction"
+    },
+    {
+      "name": "Polymyalgia rheumatica",
+      "howToDistinguish": "Pain and stiffness with normal strength and CK, raised ESR"
+    }
+  ],
+  "management": [
+    "CK, thyroid function, EMG and muscle MRI; myositis antibody panel; biopsy or genetic testing as directed by the pattern",
+    "Immunosuppression for inflammatory myopathies; stop offending drugs; treat endocrine causes",
+    "Screen for malignancy in adult dermatomyositis; monitor respiratory and cardiac function in dystrophies"
+  ],
+  "citations": [
+    {
+      "ref": "sp-myopathy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-electrodiagnostic-evaluation-of-myopathy",
+      "section": "Introduction"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -160
+    },
+    "label": "the disease is in the muscles; the lumbosacral segments stand in for the limb girdles"
   },
-  {
-   "modality": "reflex",
-   "side": "bilateral",
-   "distribution": "generalized",
-   "sign": "Reflexes preserved in proportion to strength; lost only late",
-   "substrate": "motor-unit"
-  },
-  {
-   "modality": "sensory-light-touch",
-   "side": "n/a",
-   "distribution": "spared",
-   "sign": "Normal sensation; no fasciculations",
-   "substrate": "dorsal-root-ganglion"
-  },
-  {
-   "modality": "other",
-   "side": "bilateral",
-   "distribution": "muscle",
-   "sign": "Myalgia, tenderness, cramps or contractures; myoglobinuria in necrotizing forms",
-   "substrate": "motor-unit"
-  },
-  {
-   "modality": "bulbar",
-   "side": "bilateral",
-   "distribution": "pharynx, face, respiratory muscles (some myopathies)",
-   "sign": "Dysphagia, facial weakness, ptosis or respiratory failure in specific diseases",
-   "substrate": "neuromuscular-junction"
-  }
- ],
- "reasoning": "In a myopathy the disease is in the muscle fiber itself, whether inflammatory, dystrophic, metabolic, toxic or endocrine, and the nerve supply is intact. Because the largest, most metabolically active muscles of the limb girdles and trunk are affected first and most, the weakness is proximal and symmetric, in contrast to the distal, length-dependent weakness of neuropathy and the asymmetric, regional weakness of anterior horn cell disease; sensation is normal because the sensory nerves and roots are untouched, and fasciculations are absent because the motor neuron is healthy. The reflex arc is intact, so reflexes persist until the muscle is too weak to generate a visible contraction, unlike the early areflexia of neuropathy. Nothing crosses and nothing lateralizes; the pattern is bilateral and symmetric, and any marked asymmetry (facioscapulohumeral dystrophy, inclusion body myositis with its finger flexor and quadriceps predilection) is itself a clue to the specific disease. Damaged fibers leak creatine kinase, which is raised in inflammatory, dystrophic and necrotizing myopathies but normal in steroid and many endocrine myopathies, and EMG shows small, short, polyphasic motor units that recruit early, the electrical signature of fibers dropping out of intact motor units, the opposite of the large units of reinnervation. The specific diagnosis rests on the tempo, the distribution, the skin and systemic features, the enzyme level, imaging of muscle edema or fatty replacement, and biopsy or genetic testing.",
- "imagingFindings": [
-  {
-   "pathology": "Myopathic pattern",
-   "modality": "EMG/NCS",
-   "finding": "Small, short-duration, polyphasic motor unit potentials with early recruitment; fibrillations in inflammatory and necrotizing myopathies; normal nerve conduction.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Muscle edema and fatty replacement",
-   "modality": "MRI",
-   "finding": "STIR hyperintensity of inflamed muscles guiding biopsy in myositis; selective fatty infiltration patterns on T1 in dystrophies and inclusion body myositis.",
-   "sequence": "STIR"
-  },
-  {
-   "pathology": "Serum creatine kinase",
-   "modality": "EMG/NCS",
-   "finding": "Serum CK measured alongside electrodiagnosis: markedly raised in polymyositis, necrotizing myopathy and dystrophinopathies; normal in steroid myopathy and mild in inclusion body myositis.",
-   "sequence": "n/a"
-  }
- ],
- "commonCauses": [
-  "Inflammatory: dermatomyositis, polymyositis, immune-mediated necrotizing myopathy, inclusion body myositis",
-  "Endocrine and toxic: hypothyroidism, Cushing syndrome or steroids, statins, alcohol, colchicine",
-  "Muscular dystrophies (Duchenne, Becker, limb-girdle, facioscapulohumeral, myotonic)",
-  "Metabolic: glycogen and lipid storage, mitochondrial disease, periodic paralysis",
-  "Critical illness myopathy"
- ],
- "mimics": [
-  {
-   "name": "Myasthenia gravis",
-   "howToDistinguish": "Fatigable ocular and bulbar weakness, normal CK, antibodies"
-  },
-  {
-   "name": "Motor neuron disease",
-   "howToDistinguish": "Fasciculations, wasting, upper motor neuron signs, asymmetric"
-  },
-  {
-   "name": "Proximal neuropathy (CIDP, diabetic amyotrophy)",
-   "howToDistinguish": "Areflexia, sensory loss, demyelinating conduction"
-  },
-  {
-   "name": "Polymyalgia rheumatica",
-   "howToDistinguish": "Pain and stiffness with normal strength and CK, raised ESR"
-  }
- ],
- "management": [
-  "CK, thyroid function, EMG and muscle MRI; myositis antibody panel; biopsy or genetic testing as directed by the pattern",
-  "Immunosuppression for inflammatory myopathies; stop offending drugs; treat endocrine causes",
-  "Screen for malignancy in adult dermatomyositis; monitor respiratory and cardiac function in dystrophies"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 31,
-   "pages": [
-    301,
-    305
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -160
-  },
-  "label": "the disease is in the muscles; the lumbosacral segments stand in for the limb girdles"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

@@ -1,152 +1,148 @@
 {
- "kind": "pathway",
- "id": "pathway-oculosympathetic",
- "name": "Oculosympathetic pathway",
- "synonyms": [],
- "type": "autonomic",
- "modality": "pupillary dilation, lid elevation, facial sweating",
- "summary": "The sympathetic supply to the eye is a three-neuron chain that travels a remarkable distance: from the hypothalamus down the brainstem tegmentum and lateral cervical cord to the ciliospinal center at C8–T2; out through the T1 root over the lung apex and up the cervical chain to the superior cervical ganglion; and finally along the internal carotid artery through the cavernous sinus and the ophthalmic division to the dilator pupillae and Müller's muscle, with the sweat fibers leaving on the external carotid. A lesion anywhere along this route gives Horner syndrome, and the company it keeps (brainstem signs, hand weakness, neck pain, cavernous sinus nerves) plus the sweating pattern tells you where.",
- "origin": {
-  "structures": [
-   "hypothalamus"
+  "kind": "pathway",
+  "id": "pathway-oculosympathetic",
+  "name": "Oculosympathetic pathway",
+  "synonyms": [],
+  "type": "autonomic",
+  "modality": "pupillary dilation, lid elevation, facial sweating",
+  "summary": "The sympathetic supply to the eye is a three-neuron chain that travels a remarkable distance: from the hypothalamus down the brainstem tegmentum and lateral cervical cord to the ciliospinal center at C8–T2; out through the T1 root over the lung apex and up the cervical chain to the superior cervical ganglion; and finally along the internal carotid artery through the cavernous sinus and the ophthalmic division to the dilator pupillae and Müller's muscle, with the sweat fibers leaving on the external carotid. A lesion anywhere along this route gives Horner syndrome, and the company it keeps (brainstem signs, hand weakness, neck pain, cavernous sinus nerves) plus the sweating pattern tells you where.",
+  "origin": {
+    "structures": [
+      "hypothalamus"
+    ],
+    "note": "Posterolateral hypothalamus (first-order neuron)."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Hypothalamic neuron",
+      "synapse": "intermediolateral column at C8–T2 (ciliospinal center)"
+    },
+    {
+      "order": 2,
+      "cellBody": "Preganglionic neuron in the ciliospinal center",
+      "synapse": "superior cervical ganglion"
+    },
+    {
+      "order": 3,
+      "cellBody": "Superior cervical ganglion neuron",
+      "synapse": "dilator pupillae, Müller's muscle, facial sweat glands"
+    }
   ],
-  "note": "Posterolateral hypothalamus (first-order neuron)."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Hypothalamic neuron",
-   "synapse": "intermediolateral column at C8–T2 (ciliospinal center)"
-  },
-  {
-   "order": 2,
-   "cellBody": "Preganglionic neuron in the ciliospinal center",
-   "synapse": "superior cervical ganglion"
-  },
-  {
-   "order": 3,
-   "cellBody": "Superior cervical ganglion neuron",
-   "synapse": "dilator pupillae, Müller's muscle, facial sweat glands"
-  }
- ],
- "decussation": null,
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "hypothalamus",
-   "meshId": "hypothalamus-posterior-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "first-order neuron"
-  },
-  {
-   "order": 2,
-   "structureId": "level-midbrain-superior-colliculus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "lateral tegmentum"
-  },
-  {
-   "order": 3,
-   "structureId": "level-medulla-olive",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "lateral medulla (Wallenberg)"
-  },
-  {
-   "order": 4,
-   "structureId": "intermediolateral-column",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "ciliospinal center C8–T2"
-  },
-  {
-   "order": 5,
-   "structureId": "sympathetic-trunk",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "T1 root, stellate ganglion, lung apex, cervical chain"
-  },
-  {
-   "order": 6,
-   "structureId": "ganglion-superior-cervical",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "third-order synapse"
-  },
-  {
-   "order": 7,
-   "structureId": "artery-internal-carotid",
-   "meshId": "artery-internal-carotid-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "internal carotid plexus"
-  },
-  {
-   "order": 8,
-   "structureId": "sinus-cavernous",
-   "meshId": "dura-mater-cranial",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "briefly joins the abducens nerve then V1"
-  },
-  {
-   "order": 9,
-   "structureId": "cn-05-trigeminal",
-   "meshId": "ophthalmic-nerve-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "nasociliary nerve and long ciliary nerves to the dilator"
-  }
- ],
- "termination": "Dilator pupillae, superior tarsal (Müller's) muscle, orbital vessels and the sweat glands of the face.",
- "meshIds": [
-  "artery-internal-carotid-l",
-  "artery-internal-carotid-r",
-  "ophthalmic-nerve-l",
-  "ophthalmic-nerve-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Hypothalamus, brainstem or cervical cord (first-order)",
-   "effects": "Horner syndrome with anhidrosis of the whole side of the face and body; accompanied by brainstem or cord signs",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Ciliospinal center, T1 root, lung apex, cervical chain (second-order)",
-   "effects": "Horner with facial anhidrosis; hand weakness or pain (Pancoast), neck surgery or trauma",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Superior cervical ganglion, carotid, cavernous sinus (third-order)",
-   "effects": "Horner without anhidrosis; neck pain (dissection), sixth nerve palsy (cavernous), cluster headache",
-   "side": "ipsilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Small pupil, mild ptosis, anisocoria greater in the dark: Horner. Where? Sweating and the neighbors decide",
-   "Painful Horner is carotid dissection until proven otherwise",
-   "Hydroxyamphetamine dilates a preganglionic Horner pupil but not a postganglionic one"
+  "decussation": null,
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "hypothalamus",
+      "meshId": "hypothalamus-posterior-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "first-order neuron"
+    },
+    {
+      "order": 2,
+      "structureId": "level-midbrain-superior-colliculus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "lateral tegmentum"
+    },
+    {
+      "order": 3,
+      "structureId": "level-medulla-olive",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "lateral medulla (Wallenberg)"
+    },
+    {
+      "order": 4,
+      "structureId": "intermediolateral-column",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "ciliospinal center C8–T2"
+    },
+    {
+      "order": 5,
+      "structureId": "sympathetic-trunk",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "T1 root, stellate ganglion, lung apex, cervical chain"
+    },
+    {
+      "order": 6,
+      "structureId": "ganglion-superior-cervical",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "third-order synapse"
+    },
+    {
+      "order": 7,
+      "structureId": "artery-internal-carotid",
+      "meshId": "artery-internal-carotid-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "internal carotid plexus"
+    },
+    {
+      "order": 8,
+      "structureId": "sinus-cavernous",
+      "meshId": "dura-mater-cranial",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "briefly joins the abducens nerve then V1"
+    },
+    {
+      "order": 9,
+      "structureId": "cn-05-trigeminal",
+      "meshId": "ophthalmic-nerve-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "nasociliary nerve and long ciliary nerves to the dilator"
+    }
   ],
-  "syndromes": [
-   "syn-horner",
-   "syn-wallenberg-lateral-medullary",
-   "syn-cavernous-sinus",
-   "syn-klumpke"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    407,
-    408
-   ]
+  "termination": "Dilator pupillae, superior tarsal (Müller's) muscle, orbital vessels and the sweat glands of the face.",
+  "meshIds": [
+    "artery-internal-carotid-l",
+    "artery-internal-carotid-r",
+    "ophthalmic-nerve-l",
+    "ophthalmic-nerve-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Hypothalamus, brainstem or cervical cord (first-order)",
+      "effects": "Horner syndrome with anhidrosis of the whole side of the face and body; accompanied by brainstem or cord signs",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Ciliospinal center, T1 root, lung apex, cervical chain (second-order)",
+      "effects": "Horner with facial anhidrosis; hand weakness or pain (Pancoast), neck surgery or trauma",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Superior cervical ganglion, carotid, cavernous sinus (third-order)",
+      "effects": "Horner without anhidrosis; neck pain (dissection), sixth nerve palsy (cavernous), cluster headache",
+      "side": "ipsilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Small pupil, mild ptosis, anisocoria greater in the dark: Horner. Where? Sweating and the neighbors decide",
+      "Painful Horner is carotid dissection until proven otherwise",
+      "Hydroxyamphetamine dilates a preganglionic Horner pupil but not a postganglionic one"
+    ],
+    "syndromes": [
+      "syn-horner",
+      "syn-wallenberg-lateral-medullary",
+      "syn-cavernous-sinus",
+      "syn-klumpke"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    87
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-horner-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-superior-cervical-ganglion",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-sympathetic-nervous-system",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft"
 }

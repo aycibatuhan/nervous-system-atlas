@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-todd-paresis",
- "term": "Todd paresis",
- "definition": "Transient weakness of the body part involved in a focal motor seizure, lasting minutes to hours after it ends, from exhaustion of the motor cortex; it localizes the focus and can mimic a stroke.",
- "related": [
-  "g-jacksonian-march"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    167,
-    172
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-todd-paresis",
+  "term": "Todd paresis",
+  "definition": "Transient weakness of the body part involved in a focal motor seizure, lasting minutes to hours after it ends, from exhaustion of the motor cortex; it localizes the focus and can mimic a stroke.",
+  "related": [
+    "g-jacksonian-march"
+  ],
+  "citations": [
+    {
+      "ref": "sp-postictal-seizure-state",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-stroke-mimics",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-focal-onset-seizure",
+      "section": "Pathophysiology"
+    }
+  ]
 }

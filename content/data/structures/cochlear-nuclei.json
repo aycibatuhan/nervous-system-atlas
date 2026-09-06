@@ -1,160 +1,140 @@
 {
- "kind": "structure",
- "id": "cochlear-nuclei",
- "name": "Cochlear nuclei",
- "synonyms": [
-  "dorsal and ventral cochlear nuclei"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The dorsal and ventral cochlear nuclei drape over the inferior cerebellar peduncle at the pontomedullary junction and receive every fiber of the cochlear nerve. From them the auditory pathway becomes bilateral almost at once: second-order axons cross in the trapezoid body to the contralateral superior olive and lateral lemniscus, while others ascend on the same side. This early bilaterality is why a single central lesion above the nuclei never causes deafness in one ear, whereas a lesion of the nerve or nuclei does.",
- "anatomy": {
-  "location": "Lateral surface of the inferior cerebellar peduncle at the lateral recess of the fourth ventricle, where the cochlear nerve enters at the cerebellopontine angle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "cn-08-vestibulocochlear",
-    "note": "spiral ganglion"
-   }
+  "kind": "structure",
+  "id": "cochlear-nuclei",
+  "name": "Cochlear nuclei",
+  "synonyms": [
+    "dorsal and ventral cochlear nuclei"
   ],
-  "efferents": [
-   {
-    "to": "superior-olivary-complex",
-    "via": "trapezoid body",
-    "note": "bilateral"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "First central relay of hearing; begins frequency analysis and the separation of pathways for sound localization (ventral nucleus) and spectral analysis (dorsal nucleus).",
- "bloodSupply": {
-  "arteries": [
-   "artery-aica",
-   "artery-pica"
-  ],
-  "territories": [
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": -40,
-     "z": -38
+  "summary": "The dorsal and ventral cochlear nuclei drape over the inferior cerebellar peduncle at the pontomedullary junction and receive every fiber of the cochlear nerve. From them the auditory pathway becomes bilateral almost at once: second-order axons cross in the trapezoid body to the contralateral superior olive and lateral lemniscus, while others ascend on the same side. This early bilaterality is why a single central lesion above the nuclei never causes deafness in one ear, whereas a lesion of the nerve or nuclei does.",
+  "anatomy": {
+    "location": "Lateral surface of the inferior cerebellar peduncle at the lateral recess of the fourth ventricle, where the cochlear nerve enters at the cerebellopontine angle.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "cn-08-vestibulocochlear",
+        "note": "spiral ganglion"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "superior-olivary-complex",
+        "via": "trapezoid body",
+        "note": "bilateral"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
+  },
+  "function": "First central relay of hearing; begins frequency analysis and the separation of pathways for sound localization (ventral nucleus) and spectral analysis (dorsal nucleus).",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aica",
+      "artery-pica"
+    ],
+    "territories": [
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": -40,
+          "z": -38
+        },
+        "label": "lateral recess of the fourth ventricle at the cochlear nerve entry"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -40,
+          "z": -36
+        },
+        "label": "cerebellopontine angle and internal acoustic meatus"
+      }
+    ],
+    "normalAppearance": "Not resolved on routine MRI; the cochlear nerve itself is seen on high-resolution T2 (CISS/FIESTA) entering the brainstem at the lateral recess. AICA infarcts that include the nuclei show lateral pontomedullary restriction.",
+    "pathology": [
+      {
+        "pathology": "AICA infarct with deafness",
+        "modality": "MRI",
+        "finding": "Lateral pontomedullary and anterior inferior cerebellar restricted diffusion with acute unilateral hearing loss.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Vestibular schwannoma",
+        "modality": "MRI",
+        "finding": "Enhancing mass at the internal acoustic meatus and cerebellopontine angle compressing the nerve before it reaches the nuclei.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "High-resolution T2 of the internal acoustic meatus; DWI for infarct; audiometry"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral sensorineural deafness",
+        "side": "ipsilateral",
+        "mechanism": "Nerve or cochlear nuclei, before the pathway becomes bilateral"
+      },
+      {
+        "deficit": "Tinnitus",
+        "side": "ipsilateral",
+        "mechanism": "Deafferentation of the nuclei"
+      },
+      {
+        "deficit": "Bilateral mild hearing loss and poor localization from a higher lesion",
+        "side": "bilateral",
+        "mechanism": "Lesions above the nuclei affect both ears because of the crossing"
+      }
+    ],
+    "examination": [
+      "Whisper test and finger rub in each ear",
+      "Rinne and Weber tuning-fork tests to separate conductive from sensorineural loss",
+      "Formal audiometry"
+    ],
+    "syndromes": [
+      "syn-aica-lateral-pontine",
+      "syn-hearing-loss",
+      "syn-cerebellopontine-angle"
+    ],
+    "pearls": [
+      "Unilateral deafness is a nerve, cochlear nucleus or cochlear problem, never a hemispheric one",
+      "Sudden deafness with vertigo and ataxia is an AICA stroke until proven otherwise"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cranial-nerve-8",
+      "section": "Structure and Function"
     },
-    "label": "lateral recess of the fourth ventricle at the cochlear nerve entry"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -40,
-     "z": -36
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
     },
-    "label": "cerebellopontine angle and internal acoustic meatus"
-   }
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not resolved on routine MRI; the cochlear nerve itself is seen on high-resolution T2 (CISS/FIESTA) entering the brainstem at the lateral recess. AICA infarcts that include the nuclei show lateral pontomedullary restriction.",
-  "pathology": [
-   {
-    "pathology": "AICA infarct with deafness",
-    "modality": "MRI",
-    "finding": "Lateral pontomedullary and anterior inferior cerebellar restricted diffusion with acute unilateral hearing loss.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Vestibular schwannoma",
-    "modality": "MRI",
-    "finding": "Enhancing mass at the internal acoustic meatus and cerebellopontine angle compressing the nerve before it reaches the nuclei.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "High-resolution T2 of the internal acoustic meatus; DWI for infarct; audiometry"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral sensorineural deafness",
-    "side": "ipsilateral",
-    "mechanism": "Nerve or cochlear nuclei, before the pathway becomes bilateral"
-   },
-   {
-    "deficit": "Tinnitus",
-    "side": "ipsilateral",
-    "mechanism": "Deafferentation of the nuclei"
-   },
-   {
-    "deficit": "Bilateral mild hearing loss and poor localization from a higher lesion",
-    "side": "bilateral",
-    "mechanism": "Lesions above the nuclei affect both ears because of the crossing"
-   }
-  ],
-  "examination": [
-   "Whisper test and finger rub in each ear",
-   "Rinne and Weber tuning-fork tests to separate conductive from sensorineural loss",
-   "Formal audiometry"
-  ],
-  "syndromes": [
-   "syn-aica-lateral-pontine",
-   "syn-hearing-loss",
-   "syn-cerebellopontine-angle"
-  ],
-  "pearls": [
-   "Unilateral deafness is a nerve, cochlear nucleus or cochlear problem, never a hemispheric one",
-   "Sudden deafness with vertigo and ataxia is an AICA stroke until proven otherwise"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    204,
-    207
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    339
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    79,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
+  "status": "draft",
+  "latin": "Nuclei cochleares",
+  "subsystem": "medulla",
+  "level": {
+    "region": "medulla"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Nuclei cochleares",
- "subsystem": "medulla",
- "level": {
-  "region": "medulla"
- }
 }

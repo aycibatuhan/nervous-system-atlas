@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-plexopathy",
- "term": "Plexopathy",
- "definition": "A lesion of the brachial or lumbosacral plexus, between the roots and the peripheral nerves, producing deficits broader than one nerve and not confined to one root, with reduced sensory nerve action potentials because the lesion is distal to the dorsal root ganglion.",
- "related": [
-  "g-radiculopathy",
-  "g-mononeuropathy"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-plexopathy",
+  "term": "Plexopathy",
+  "definition": "A lesion of the brachial or lumbosacral plexus, between the roots and the peripheral nerves, producing deficits broader than one nerve and not confined to one root, with reduced sensory nerve action potentials because the lesion is distal to the dorsal root ganglion.",
+  "related": [
+    "g-radiculopathy",
+    "g-mononeuropathy"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lumbosacral-plexopathy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-electrodiagnostic-evaluation-of-brachial-plexopathies",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-brachial-plexus-injuries",
+      "section": "Pathophysiology"
+    }
+  ]
 }

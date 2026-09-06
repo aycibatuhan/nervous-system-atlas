@@ -1,164 +1,152 @@
 {
- "kind": "structure",
- "id": "sympathetic-trunk",
- "name": "Sympathetic trunk and ganglia",
- "synonyms": [
-  "sympathetic chain",
-  "paravertebral ganglia"
- ],
- "system": "autonomic",
- "meshIds": [
-  "spinal-cord"
- ],
- "summary": "A chain of ganglia running along each side of the vertebral column from the skull base to the coccyx, receiving preganglionic fibers from the T1–L2 segments through white rami communicantes and distributing postganglionic fibers to every spinal nerve through gray rami, to the head along the carotid arteries and to the viscera through cardiac, pulmonary and splanchnic nerves. Its three cervical ganglia (superior, middle and stellate) carry the entire sympathetic supply of the head and neck, so lesions of the chain in the neck or chest apex (Pancoast tumor, carotid dissection, surgery) cause Horner syndrome.",
- "anatomy": {
-  "location": "Paravertebral gutter on each side from C1 to the coccyx: cervical ganglia in front of the transverse processes behind the carotid sheath, thoracic ganglia on the heads of the ribs, lumbar ganglia on the vertebral bodies, sacral ganglia medial to the anterior sacral foramina, joining at the ganglion impar.",
-  "subdivisions": [
-   {
-    "name": "Superior cervical ganglion",
-    "note": "C1–C4 level; postganglionic fibers to the head (pupil, lid, face sweating) via the internal carotid plexus"
-   },
-   {
-    "name": "Middle cervical and stellate (cervicothoracic) ganglia",
-    "note": "C6–T1; upper limb, heart"
-   },
-   {
-    "name": "Thoracic ganglia",
-    "note": "cardiac and pulmonary nerves; greater, lesser and least splanchnic nerves to the abdomen"
-   },
-   {
-    "name": "Lumbar and sacral ganglia",
-    "note": "lower limb and pelvic viscera"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "intermediolateral-column",
-    "via": "white rami communicantes"
-   }
+  "kind": "structure",
+  "id": "sympathetic-trunk",
+  "name": "Sympathetic trunk and ganglia",
+  "synonyms": [
+    "sympathetic chain",
+    "paravertebral ganglia"
   ],
-  "efferents": [
-   {
-    "to": "spinal nerves",
-    "via": "gray rami communicantes"
-   },
-   {
-    "to": "head",
-    "via": "internal carotid plexus"
-   },
-   {
-    "to": "viscera",
-    "via": "splanchnic and cardiac nerves"
-   }
+  "system": "autonomic",
+  "meshIds": [
+    "spinal-cord"
   ],
-  "pathways": [
-   "pathway-oculosympathetic"
-  ]
- },
- "function": "Distribution of sympathetic outflow: vasoconstriction, sweating, piloerection, pupil dilation, cardiac acceleration, bronchodilation and inhibition of gut motility; adrenal medullary stimulation.",
- "bloodSupply": {
-  "arteries": [
-   "segmental arteries",
-   "artery-vertebral"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "A chain of ganglia running along each side of the vertebral column from the skull base to the coccyx, receiving preganglionic fibers from the T1–L2 segments through white rami communicantes and distributing postganglionic fibers to every spinal nerve through gray rami, to the head along the carotid arteries and to the viscera through cardiac, pulmonary and splanchnic nerves. Its three cervical ganglia (superior, middle and stellate) carry the entire sympathetic supply of the head and neck, so lesions of the chain in the neck or chest apex (Pancoast tumor, carotid dissection, surgery) cause Horner syndrome.",
+  "anatomy": {
+    "location": "Paravertebral gutter on each side from C1 to the coccyx: cervical ganglia in front of the transverse processes behind the carotid sheath, thoracic ganglia on the heads of the ribs, lumbar ganglia on the vertebral bodies, sacral ganglia medial to the anterior sacral foramina, joining at the ganglion impar.",
+    "subdivisions": [
+      {
+        "name": "Superior cervical ganglion",
+        "note": "C1–C4 level; postganglionic fibers to the head (pupil, lid, face sweating) via the internal carotid plexus"
+      },
+      {
+        "name": "Middle cervical and stellate (cervicothoracic) ganglia",
+        "note": "C6–T1; upper limb, heart"
+      },
+      {
+        "name": "Thoracic ganglia",
+        "note": "cardiac and pulmonary nerves; greater, lesser and least splanchnic nerves to the abdomen"
+      },
+      {
+        "name": "Lumbar and sacral ganglia",
+        "note": "lower limb and pelvic viscera"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "intermediolateral-column",
+        "via": "white rami communicantes"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "spinal nerves",
+        "via": "gray rami communicantes"
+      },
+      {
+        "to": "head",
+        "via": "internal carotid plexus"
+      },
+      {
+        "to": "viscera",
+        "via": "splanchnic and cardiac nerves"
+      }
+    ],
+    "pathways": [
+      "pathway-oculosympathetic"
+    ]
+  },
+  "function": "Distribution of sympathetic outflow: vasoconstriction, sweating, piloerection, pupil dilation, cardiac acceleration, bronchodilation and inhibition of gut motility; adrenal medullary stimulation.",
+  "bloodSupply": {
+    "arteries": [
+      "segmental arteries",
+      "artery-vertebral"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "upper cervical region; the chain lies in the paravertebral gutter outside the brain volume"
+      }
+    ],
+    "normalAppearance": "Not seen as a discrete structure on routine imaging; the stellate ganglion region at the lung apex and the cervical chain behind the carotid sheath are evaluated on chest CT or neck MRI when a Horner syndrome is being explained.",
+    "pathology": [
+      {
+        "pathology": "Pancoast (superior sulcus) tumor",
+        "modality": "CT",
+        "finding": "Apical lung mass invading the stellate ganglion and lower brachial plexus: Horner syndrome with C8–T1 pain and hand weakness.",
+        "sequence": "CT contrast"
+      },
+      {
+        "pathology": "Carotid dissection",
+        "modality": "MRI",
+        "finding": "Mural hematoma of the internal carotid with a partial Horner syndrome from the sympathetic plexus on the artery.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Chest CT for the apex; neck MRI/MRA for the carotid"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Horner syndrome (ptosis, miosis, facial anhidrosis)",
+        "side": "ipsilateral",
+        "mechanism": "Preganglionic (second-order) fibers in the chain or stellate ganglion, or postganglionic fibers along the carotid"
+      },
+      {
+        "deficit": "Warm, dry, flushed limb",
+        "side": "ipsilateral",
+        "mechanism": "Loss of vasoconstrictor and sudomotor supply"
+      },
+      {
+        "deficit": "Loss of the adrenal and cardiac response to stress",
+        "side": "bilateral",
+        "mechanism": "Extensive sympathetic failure"
+      }
+    ],
+    "examination": [
+      "Pupil asymmetry in light and dark, ptosis, facial sweating",
+      "Skin temperature and sweat pattern of the limbs",
+      "Pharmacological pupil testing (apraclonidine, hydroxyamphetamine) to grade the lesion"
+    ],
+    "syndromes": [
+      "syn-horner"
+    ],
+    "pearls": [
+      "Horner syndrome with anhidrosis of the whole face is preganglionic (chain); without anhidrosis it is postganglionic (carotid)",
+      "A new Horner syndrome with hand pain: image the lung apex"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-sympathetic-chain",
+      "section": "Structure and Function"
     },
-    "label": "upper cervical region; the chain lies in the paravertebral gutter outside the brain volume"
-   }
+    {
+      "ref": "sp-back-lumbar-sympathetic-chain",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-autonomic-nervous-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not seen as a discrete structure on routine imaging; the stellate ganglion region at the lung apex and the cervical chain behind the carotid sheath are evaluated on chest CT or neck MRI when a Horner syndrome is being explained.",
-  "pathology": [
-   {
-    "pathology": "Pancoast (superior sulcus) tumor",
-    "modality": "CT",
-    "finding": "Apical lung mass invading the stellate ganglion and lower brachial plexus: Horner syndrome with C8–T1 pain and hand weakness.",
-    "sequence": "CT contrast"
-   },
-   {
-    "pathology": "Carotid dissection",
-    "modality": "MRI",
-    "finding": "Mural hematoma of the internal carotid with a partial Horner syndrome from the sympathetic plexus on the artery.",
-    "sequence": "T1"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Chest CT for the apex; neck MRI/MRA for the carotid"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Horner syndrome (ptosis, miosis, facial anhidrosis)",
-    "side": "ipsilateral",
-    "mechanism": "Preganglionic (second-order) fibers in the chain or stellate ganglion, or postganglionic fibers along the carotid"
-   },
-   {
-    "deficit": "Warm, dry, flushed limb",
-    "side": "ipsilateral",
-    "mechanism": "Loss of vasoconstrictor and sudomotor supply"
-   },
-   {
-    "deficit": "Loss of the adrenal and cardiac response to stress",
-    "side": "bilateral",
-    "mechanism": "Extensive sympathetic failure"
-   }
-  ],
-  "examination": [
-   "Pupil asymmetry in light and dark, ptosis, facial sweating",
-   "Skin temperature and sweat pattern of the limbs",
-   "Pharmacological pupil testing (apraclonidine, hydroxyamphetamine) to grade the lesion"
-  ],
-  "syndromes": [
-   "syn-horner"
-  ],
-  "pearls": [
-   "Horner syndrome with anhidrosis of the whole face is preganglionic (chain); without anhidrosis it is postganglionic (carotid)",
-   "A new Horner syndrome with hand pain: image the lung apex"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    388,
-    391
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    407,
-    408
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    87
-   ]
+  "status": "draft",
+  "latin": "Truncus sympathicus",
+  "subsystem": "autonomic",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "latin": "Truncus sympathicus",
- "subsystem": "autonomic",
- "level": {
-  "region": "spinal"
- }
 }

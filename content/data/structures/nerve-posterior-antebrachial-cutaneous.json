@@ -1,132 +1,124 @@
 {
- "kind": "structure",
- "id": "nerve-posterior-antebrachial-cutaneous",
- "name": "Posterior antebrachial cutaneous nerve",
- "synonyms": [
-  "posterior cutaneous nerve of the forearm",
-  "dorsal antebrachial cutaneous nerve"
- ],
- "system": "peripheral",
- "meshIds": [
-  "posterior-antebrachial-cutaneous-nerve-l",
-  "posterior-antebrachial-cutaneous-nerve-r"
- ],
- "summary": "The posterior antebrachial cutaneous nerve is a sensory branch of the radial nerve given off in the spiral groove of the humerus, together with the inferior lateral brachial cutaneous nerve, supplying the skin of the posterior arm below the deltoid and the posterior forearm to the wrist. Its involvement marks the level of a radial nerve lesion: it is spared in posterior interosseous and superficial radial lesions at the elbow and forearm and lost in lesions at or above the spiral groove, such as the Saturday night palsy and humeral fracture, so posterior forearm numbness with wrist drop places the injury in the arm.",
- "anatomy": {
-  "location": "Arises from the radial nerve in the spiral groove, pierces the lateral head of the triceps and the deep fascia with the inferior lateral brachial cutaneous nerve, descends along the lateral arm behind the lateral epicondyle and supplies the posterior forearm skin from the elbow to the wrist; the brachial branch supplies the lower lateral arm.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Purely sensory, it carries sensation from the posterior forearm and lower lateral arm through the radial nerve and the posterior cord to the C5-C8 dorsal root ganglia; because it leaves the radial nerve in the spiral groove, its territory is anesthetic in high radial lesions (axilla, spiral groove, humeral fracture) and spared in lesions below the elbow (posterior interosseous entrapment, superficial radial injury), a bedside way to place the lesion along the radial nerve. It is also the nerve whose territory hurts in lateral epicondylitis mimics and after elbow surgery.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-posterior-antebrachial-cutaneous",
+  "name": "Posterior antebrachial cutaneous nerve",
+  "synonyms": [
+    "posterior cutaneous nerve of the forearm",
+    "dorsal antebrachial cutaneous nerve"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "posterior-antebrachial-cutaneous-nerve-l"
-    },
-    "label": "posterior antebrachial cutaneous nerve leaving the radial nerve at the spiral groove"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "posterior-antebrachial-cutaneous-nerve-r"
-    },
-    "label": "nerve descending along the lateral arm to the posterior forearm"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "posterior-antebrachial-cutaneous-nerve-l",
+    "posterior-antebrachial-cutaneous-nerve-r"
   ],
-  "normalAppearance": "Branches of the radial nerve at the spiral groove on ultrasound; the territory is the posterior forearm and the lower lateral arm.",
-  "pathology": [
-   {
-    "pathology": "Radial neuropathy at the spiral groove",
-    "modality": "EMG/NCS",
-    "finding": "Reduced radial sensory potentials including the posterior antebrachial cutaneous response with denervation of brachioradialis and wrist extensors but sparing the triceps.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Humeral shaft fracture with radial nerve injury",
-    "modality": "MRI",
-    "finding": "Nerve discontinuity or entrapment in the fracture at the spiral groove with anesthesia of the posterior forearm and wrist drop.",
-    "sequence": "STIR"
-   },
-   {
-    "pathology": "Posterior interosseous syndrome (for comparison)",
-    "modality": "US",
-    "finding": "Entrapment at the arcade of Frohse with finger drop and no sensory loss; the posterior antebrachial cutaneous territory is spared.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Numbness of the posterior forearm and lower lateral arm",
-    "side": "ipsilateral",
-    "mechanism": "Radial nerve lesion at or above the spiral groove"
-   },
-   {
-    "deficit": "Sparing of the posterior forearm with finger drop",
-    "side": "ipsilateral",
-    "mechanism": "Radial lesion below the branch (posterior interosseous nerve)"
-   },
-   {
-    "deficit": "No motor deficit from the branch itself",
-    "side": "n/a",
-    "mechanism": "Purely sensory branch"
-   }
-  ],
-  "examination": [
-   "Map sensory loss on the posterior forearm and the dorsum of the hand separately",
-   "Triceps strength (spared in spiral groove lesions) and brachioradialis strength",
-   "Radial sensory conduction studies including the posterior antebrachial cutaneous response"
-  ],
-  "syndromes": [
-   "syn-radial-neuropathy"
-  ],
-  "pearls": [
-   "Posterior forearm numbness with wrist drop puts the radial lesion in the arm; a normal posterior forearm puts it below the elbow",
-   "The Saturday night palsy numbs the back of the forearm; the posterior interosseous syndrome numbs nothing",
-   "Triceps intact and posterior forearm numb: spiral groove"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The posterior antebrachial cutaneous nerve is a sensory branch of the radial nerve given off in the spiral groove of the humerus, together with the inferior lateral brachial cutaneous nerve, supplying the skin of the posterior arm below the deltoid and the posterior forearm to the wrist. Its involvement marks the level of a radial nerve lesion: it is spared in posterior interosseous and superficial radial lesions at the elbow and forearm and lost in lesions at or above the spiral groove, such as the Saturday night palsy and humeral fracture, so posterior forearm numbness with wrist drop places the injury in the arm.",
+  "anatomy": {
+    "location": "Arises from the radial nerve in the spiral groove, pierces the lateral head of the triceps and the deep fascia with the inferior lateral brachial cutaneous nerve, descends along the lateral arm behind the lateral epicondyle and supplies the posterior forearm skin from the elbow to the wrist; the brachial branch supplies the lower lateral arm.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Purely sensory, it carries sensation from the posterior forearm and lower lateral arm through the radial nerve and the posterior cord to the C5-C8 dorsal root ganglia; because it leaves the radial nerve in the spiral groove, its territory is anesthetic in high radial lesions (axilla, spiral groove, humeral fracture) and spared in lesions below the elbow (posterior interosseous entrapment, superficial radial injury), a bedside way to place the lesion along the radial nerve. It is also the nerve whose territory hurts in lateral epicondylitis mimics and after elbow surgery.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "posterior-antebrachial-cutaneous-nerve-l"
+        },
+        "label": "posterior antebrachial cutaneous nerve leaving the radial nerve at the spiral groove"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "posterior-antebrachial-cutaneous-nerve-r"
+        },
+        "label": "nerve descending along the lateral arm to the posterior forearm"
+      }
+    ],
+    "normalAppearance": "Branches of the radial nerve at the spiral groove on ultrasound; the territory is the posterior forearm and the lower lateral arm.",
+    "pathology": [
+      {
+        "pathology": "Radial neuropathy at the spiral groove",
+        "modality": "EMG/NCS",
+        "finding": "Reduced radial sensory potentials including the posterior antebrachial cutaneous response with denervation of brachioradialis and wrist extensors but sparing the triceps.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Humeral shaft fracture with radial nerve injury",
+        "modality": "MRI",
+        "finding": "Nerve discontinuity or entrapment in the fracture at the spiral groove with anesthesia of the posterior forearm and wrist drop.",
+        "sequence": "STIR"
+      },
+      {
+        "pathology": "Posterior interosseous syndrome (for comparison)",
+        "modality": "US",
+        "finding": "Entrapment at the arcade of Frohse with finger drop and no sensory loss; the posterior antebrachial cutaneous territory is spared.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Numbness of the posterior forearm and lower lateral arm",
+        "side": "ipsilateral",
+        "mechanism": "Radial nerve lesion at or above the spiral groove"
+      },
+      {
+        "deficit": "Sparing of the posterior forearm with finger drop",
+        "side": "ipsilateral",
+        "mechanism": "Radial lesion below the branch (posterior interosseous nerve)"
+      },
+      {
+        "deficit": "No motor deficit from the branch itself",
+        "side": "n/a",
+        "mechanism": "Purely sensory branch"
+      }
+    ],
+    "examination": [
+      "Map sensory loss on the posterior forearm and the dorsum of the hand separately",
+      "Triceps strength (spared in spiral groove lesions) and brachioradialis strength",
+      "Radial sensory conduction studies including the posterior antebrachial cutaneous response"
+    ],
+    "syndromes": [
+      "syn-radial-neuropathy"
+    ],
+    "pearls": [
+      "Posterior forearm numbness with wrist drop puts the radial lesion in the arm; a normal posterior forearm puts it below the elbow",
+      "The Saturday night palsy numbs the back of the forearm; the posterior interosseous syndrome numbs nothing",
+      "Triceps intact and posterior forearm numb: spiral groove"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-radial-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-forearm-nerves",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "upper-limb",
+  "parent": "plexus-brachial",
+  "level": {
+    "region": "peripheral",
+    "sub": "C5-C8"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "upper-limb",
- "parent": "plexus-brachial",
- "level": {
-  "region": "peripheral",
-  "sub": "C5-C8"
- }
 }

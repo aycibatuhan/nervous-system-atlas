@@ -1,175 +1,163 @@
 {
- "kind": "pathway",
- "id": "pathway-auditory",
- "name": "Auditory pathway",
- "synonyms": [],
- "type": "auditory",
- "modality": "hearing",
- "summary": "Hair cells of the organ of Corti excite spiral ganglion neurons whose axons form the cochlear nerve to the dorsal and ventral cochlear nuclei. From there the pathway becomes bilateral almost immediately: fibers cross in the trapezoid body to the contralateral superior olivary complex and lateral lemniscus, others ascend ipsilaterally, and further crossings occur at the inferior colliculus. All fibers relay in the inferior colliculus, then the medial geniculate body, and reach Heschl's gyrus through the acoustic radiation. The extensive crossing means a unilateral central lesion never causes deafness; unilateral deafness is always the cochlea, nerve or cochlear nuclei.",
- "origin": {
-  "structures": [
-   "cn-08-vestibulocochlear"
+  "kind": "pathway",
+  "id": "pathway-auditory",
+  "name": "Auditory pathway",
+  "synonyms": [],
+  "type": "auditory",
+  "modality": "hearing",
+  "summary": "Hair cells of the organ of Corti excite spiral ganglion neurons whose axons form the cochlear nerve to the dorsal and ventral cochlear nuclei. From there the pathway becomes bilateral almost immediately: fibers cross in the trapezoid body to the contralateral superior olivary complex and lateral lemniscus, others ascend ipsilaterally, and further crossings occur at the inferior colliculus. All fibers relay in the inferior colliculus, then the medial geniculate body, and reach Heschl's gyrus through the acoustic radiation. The extensive crossing means a unilateral central lesion never causes deafness; unilateral deafness is always the cochlea, nerve or cochlear nuclei.",
+  "origin": {
+    "structures": [
+      "cn-08-vestibulocochlear"
+    ],
+    "note": "Inner hair cells of the cochlea; bipolar spiral ganglion neurons."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Spiral ganglion neuron",
+      "synapse": "dorsal and ventral cochlear nuclei"
+    },
+    {
+      "order": 2,
+      "cellBody": "Cochlear nuclear neuron",
+      "synapse": "superior olivary complex (both sides) and inferior colliculus via the lateral lemniscus"
+    },
+    {
+      "order": 3,
+      "cellBody": "Superior olive / lateral lemniscus neuron",
+      "synapse": "inferior colliculus"
+    },
+    {
+      "order": 4,
+      "cellBody": "Inferior colliculus neuron",
+      "synapse": "medial geniculate body via its brachium"
+    },
+    {
+      "order": 5,
+      "cellBody": "Medial geniculate neuron",
+      "synapse": "Heschl's gyrus via the acoustic radiation"
+    }
   ],
-  "note": "Inner hair cells of the cochlea; bipolar spiral ganglion neurons."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Spiral ganglion neuron",
-   "synapse": "dorsal and ventral cochlear nuclei"
+  "decussation": {
+    "level": "Trapezoid body (caudal pons), lateral lemniscus commissure, inferior colliculus commissure",
+    "structureId": "superior-olivary-complex",
+    "note": "Multiple partial crossings; the pathway is bilateral above the cochlear nuclei."
   },
-  {
-   "order": 2,
-   "cellBody": "Cochlear nuclear neuron",
-   "synapse": "superior olivary complex (both sides) and inferior colliculus via the lateral lemniscus"
-  },
-  {
-   "order": 3,
-   "cellBody": "Superior olive / lateral lemniscus neuron",
-   "synapse": "inferior colliculus"
-  },
-  {
-   "order": 4,
-   "cellBody": "Inferior colliculus neuron",
-   "synapse": "medial geniculate body via its brachium"
-  },
-  {
-   "order": 5,
-   "cellBody": "Medial geniculate neuron",
-   "synapse": "Heschl's gyrus via the acoustic radiation"
-  }
- ],
- "decussation": {
-  "level": "Trapezoid body (caudal pons), lateral lemniscus commissure, inferior colliculus commissure",
-  "structureId": "superior-olivary-complex",
-  "note": "Multiple partial crossings; the pathway is bilateral above the cochlear nuclei."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "cn-08-vestibulocochlear",
-   "meshId": "cn-08-vestibulocochlear-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "cochlear nerve"
-  },
-  {
-   "order": 2,
-   "structureId": "cochlear-nuclei",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "at the lateral recess of the fourth ventricle"
-  },
-  {
-   "order": 3,
-   "structureId": "superior-olivary-complex",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "trapezoid body crossing; binaural comparison"
-  },
-  {
-   "order": 4,
-   "structureId": "inferior-colliculus",
-   "meshId": "inferior-colliculus-l",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "lateral lemniscus ends here"
-  },
-  {
-   "order": 5,
-   "structureId": "medial-geniculate-nucleus",
-   "meshId": "medial-geniculate-nucleus-l",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "thalamic relay"
-  },
-  {
-   "order": 6,
-   "structureId": "internal-capsule",
-   "meshId": "tract-acoustic-radiation-l",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "acoustic radiation in the sublenticular capsule"
-  },
-  {
-   "order": 7,
-   "structureId": "gyrus-heschl",
-   "meshId": "gyrus-heschl-l",
-   "sideRelativeToOrigin": "bilateral",
-   "note": "primary auditory cortex"
-  }
- ],
- "termination": "Primary auditory cortex on Heschl's gyrus, tonotopically organized, with onward projection to the auditory association cortex and Wernicke's area.",
- "meshIds": [
-  "cn-08-vestibulocochlear-l",
-  "cn-08-vestibulocochlear-r",
-  "inferior-colliculus-l",
-  "inferior-colliculus-r",
-  "medial-geniculate-nucleus-l",
-  "medial-geniculate-nucleus-r",
-  "tract-acoustic-radiation-l",
-  "tract-acoustic-radiation-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Cochlea",
-   "effects": "Ipsilateral sensorineural deafness (noise, ototoxicity, presbycusis, Ménière)",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Cochlear nerve or nuclei",
-   "effects": "Ipsilateral deafness with poor speech discrimination and tinnitus (schwannoma, AICA infarct)",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Superior olive, lateral lemniscus, inferior colliculus",
-   "effects": "Impaired sound localization and central auditory processing without deafness",
-   "side": "bilateral"
-  },
-  {
-   "level": "Medial geniculate or acoustic radiation (unilateral)",
-   "effects": "Subtle contralateral deficits only",
-   "side": "contralateral"
-  },
-  {
-   "level": "Bilateral Heschl's gyri or radiations",
-   "effects": "Cortical deafness or pure word deafness",
-   "side": "bilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Deafness in one ear is peripheral; the brainstem and cortex cannot deafen a single ear",
-   "Brainstem auditory evoked potentials track the pathway wave by wave: I nerve, II cochlear nucleus, III superior olive, IV lateral lemniscus, V inferior colliculus"
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "cn-08-vestibulocochlear",
+      "meshId": "cn-08-vestibulocochlear-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "cochlear nerve"
+    },
+    {
+      "order": 2,
+      "structureId": "cochlear-nuclei",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "at the lateral recess of the fourth ventricle"
+    },
+    {
+      "order": 3,
+      "structureId": "superior-olivary-complex",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "trapezoid body crossing; binaural comparison"
+    },
+    {
+      "order": 4,
+      "structureId": "inferior-colliculus",
+      "meshId": "inferior-colliculus-l",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "lateral lemniscus ends here"
+    },
+    {
+      "order": 5,
+      "structureId": "medial-geniculate-nucleus",
+      "meshId": "medial-geniculate-nucleus-l",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "thalamic relay"
+    },
+    {
+      "order": 6,
+      "structureId": "internal-capsule",
+      "meshId": "tract-acoustic-radiation-l",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "acoustic radiation in the sublenticular capsule"
+    },
+    {
+      "order": 7,
+      "structureId": "gyrus-heschl",
+      "meshId": "gyrus-heschl-l",
+      "sideRelativeToOrigin": "bilateral",
+      "note": "primary auditory cortex"
+    }
   ],
-  "syndromes": [
-   "syn-hearing-loss",
-   "syn-cerebellopontine-angle",
-   "syn-aica-lateral-pontine"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    339
-   ]
+  "termination": "Primary auditory cortex on Heschl's gyrus, tonotopically organized, with onward projection to the auditory association cortex and Wernicke's area.",
+  "meshIds": [
+    "cn-08-vestibulocochlear-l",
+    "cn-08-vestibulocochlear-r",
+    "inferior-colliculus-l",
+    "inferior-colliculus-r",
+    "medial-geniculate-nucleus-l",
+    "medial-geniculate-nucleus-r",
+    "tract-acoustic-radiation-l",
+    "tract-acoustic-radiation-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Cochlea",
+      "effects": "Ipsilateral sensorineural deafness (noise, ototoxicity, presbycusis, Ménière)",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Cochlear nerve or nuclei",
+      "effects": "Ipsilateral deafness with poor speech discrimination and tinnitus (schwannoma, AICA infarct)",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Superior olive, lateral lemniscus, inferior colliculus",
+      "effects": "Impaired sound localization and central auditory processing without deafness",
+      "side": "bilateral"
+    },
+    {
+      "level": "Medial geniculate or acoustic radiation (unilateral)",
+      "effects": "Subtle contralateral deficits only",
+      "side": "contralateral"
+    },
+    {
+      "level": "Bilateral Heschl's gyri or radiations",
+      "effects": "Cortical deafness or pure word deafness",
+      "side": "bilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Deafness in one ear is peripheral; the brainstem and cortex cannot deafen a single ear",
+      "Brainstem auditory evoked potentials track the pathway wave by wave: I nerve, II cochlear nucleus, III superior olive, IV lateral lemniscus, V inferior colliculus"
+    ],
+    "syndromes": [
+      "syn-hearing-loss",
+      "syn-cerebellopontine-angle",
+      "syn-aica-lateral-pontine"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    205,
-    208
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
-  }
- ],
- "status": "draft",
- "somatotopy": "Tonotopic at every level: high frequencies at the base of the cochlea and in the ventral cochlear nucleus, mapped systematically through the colliculus and geniculate to Heschl's gyrus (low frequencies anterolateral, high posteromedial)."
+  "citations": [
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-auditory-hallucinations",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-auditory-brainstem-response",
+      "section": "Introduction"
+    }
+  ],
+  "status": "draft",
+  "somatotopy": "Tonotopic at every level: high frequencies at the base of the cochlea and in the ventral cochlear nucleus, mapped systematically through the colliculus and geniculate to Heschl's gyrus (low frequencies anterolateral, high posteromedial)."
 }

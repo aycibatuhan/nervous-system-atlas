@@ -1,184 +1,156 @@
 {
- "kind": "structure",
- "id": "intermediolateral-column",
- "name": "Intermediolateral cell column",
- "synonyms": [
-  "lateral horn",
-  "IML"
- ],
- "system": "spinal-cord",
- "meshIds": [
-  "spinal-cord"
- ],
- "summary": "The lateral horn of gray matter present from T1 to L2, containing the preganglionic sympathetic neurons of the whole body, and its sacral counterpart at S2–S4 containing the preganglionic parasympathetic neurons for the pelvic organs. Its axons leave in the ventral roots (white rami communicantes) to the sympathetic chain. Because all sympathetic outflow to the head passes through the upper thoracic segments and the cervical cord above them, cervical and upper thoracic cord lesions cause Horner syndrome, and lesions above T6 disconnect most of the sympathetic outflow from the brain, producing autonomic dysreflexia.",
- "anatomy": {
-  "location": "Lateral projection of the gray matter between the anterior and posterior horns at T1–L2 (sympathetic) and the equivalent position at S2–S4 (parasympathetic, sacral autonomic nucleus).",
-  "subdivisions": [
-   {
-    "name": "T1–T2 (ciliospinal center of Budge)",
-    "note": "oculosympathetic outflow to the pupil, lid and face"
-   },
-   {
-    "name": "T1–T5",
-    "note": "heart, lungs, upper limb"
-   },
-   {
-    "name": "T5–L2",
-    "note": "abdominal and pelvic viscera, lower limb"
-   },
-   {
-    "name": "S2–S4 (sacral parasympathetic nucleus)",
-    "note": "bladder detrusor, rectum, erection"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "hypothalamus",
-    "via": "descending autonomic fibers in the lateral funiculus"
-   }
+  "kind": "structure",
+  "id": "intermediolateral-column",
+  "name": "Intermediolateral cell column",
+  "synonyms": [
+    "lateral horn",
+    "IML"
   ],
-  "efferents": [
-   {
-    "to": "sympathetic-trunk",
-    "via": "white rami communicantes"
-   },
-   {
-    "to": "pelvic ganglia",
-    "via": "pelvic splanchnic nerves (S2–S4)"
-   }
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-cord"
   ],
-  "pathways": [
-   "pathway-oculosympathetic"
-  ]
- },
- "function": "Preganglionic autonomic outflow: sympathetic control of blood pressure, heart rate, sweating, pupils and visceral function; sacral parasympathetic control of micturition, defecation and sexual function.",
- "bloodSupply": {
-  "arteries": [
-   "anterior-spinal-artery",
-   "artery-adamkiewicz"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "The lateral horn of gray matter present from T1 to L2, containing the preganglionic sympathetic neurons of the whole body, and its sacral counterpart at S2–S4 containing the preganglionic parasympathetic neurons for the pelvic organs. Its axons leave in the ventral roots (white rami communicantes) to the sympathetic chain. Because all sympathetic outflow to the head passes through the upper thoracic segments and the cervical cord above them, cervical and upper thoracic cord lesions cause Horner syndrome, and lesions above T6 disconnect most of the sympathetic outflow from the brain, producing autonomic dysreflexia.",
+  "anatomy": {
+    "location": "Lateral projection of the gray matter between the anterior and posterior horns at T1–L2 (sympathetic) and the equivalent position at S2–S4 (parasympathetic, sacral autonomic nucleus).",
+    "subdivisions": [
+      {
+        "name": "T1–T2 (ciliospinal center of Budge)",
+        "note": "oculosympathetic outflow to the pupil, lid and face"
+      },
+      {
+        "name": "T1–T5",
+        "note": "heart, lungs, upper limb"
+      },
+      {
+        "name": "T5–L2",
+        "note": "abdominal and pelvic viscera, lower limb"
+      },
+      {
+        "name": "S2–S4 (sacral parasympathetic nucleus)",
+        "note": "bladder detrusor, rectum, erection"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "hypothalamus",
+        "via": "descending autonomic fibers in the lateral funiculus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "sympathetic-trunk",
+        "via": "white rami communicantes"
+      },
+      {
+        "to": "pelvic ganglia",
+        "via": "pelvic splanchnic nerves (S2–S4)"
+      }
+    ],
+    "pathways": [
+      "pathway-oculosympathetic"
+    ]
+  },
+  "function": "Preganglionic autonomic outflow: sympathetic control of blood pressure, heart rate, sweating, pupils and visceral function; sacral parasympathetic control of micturition, defecation and sexual function.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery",
+      "artery-adamkiewicz"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "lateral gray region (the upper cervical cord shown carries the descending sympathetic fibers rather than the column itself)"
+      }
+    ],
+    "normalAppearance": "Not resolved on MRI; the descending sympathetic fibers in the cervical cord run in the lateral funiculus. Thoracic cord lesions involving the lateral gray are inferred from autonomic signs.",
+    "pathology": [
+      {
+        "pathology": "Cervicothoracic cord lesion with Horner syndrome",
+        "modality": "MRI",
+        "finding": "Cervical or upper thoracic intramedullary lesion (syrinx, tumor, myelitis) with ipsilateral Horner syndrome.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "High cord injury with autonomic dysreflexia",
+        "modality": "MRI",
+        "finding": "Cord injury above T6; the syndrome is clinical.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal and axial T2 of the cervical and thoracic cord"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Horner syndrome (ptosis, miosis, anhidrosis)",
+        "side": "ipsilateral",
+        "mechanism": "Ciliospinal center at C8–T2 or the descending fibers above it"
+      },
+      {
+        "deficit": "Autonomic dysreflexia: paroxysmal hypertension, headache, flushing above the level, bradycardia",
+        "side": "bilateral",
+        "mechanism": "Unopposed sympathetic reflexes below a lesion above T6"
+      },
+      {
+        "deficit": "Orthostatic hypotension and thermoregulatory failure",
+        "side": "bilateral",
+        "mechanism": "Loss of supraspinal sympathetic control"
+      },
+      {
+        "deficit": "Detrusor areflexia and erectile failure",
+        "side": "bilateral",
+        "mechanism": "Sacral parasympathetic nucleus or conus lesion"
+      }
+    ],
+    "examination": [
+      "Pupils and ptosis; sweating pattern of the face",
+      "Postural blood pressure",
+      "Skin temperature and color below the level",
+      "Bladder and bowel history; anal tone and bulbocavernosus reflex"
+    ],
+    "syndromes": [
+      "syn-horner",
+      "syn-complete-transection-spinal-shock",
+      "syn-conus-vs-cauda-equina"
+    ],
+    "pearls": [
+      "Horner syndrome with arm weakness and hand wasting: think of the C8–T1 region (syrinx, Pancoast tumor, cord lesion)",
+      "Severe headache with hypertension in a tetraplegic patient is autonomic dysreflexia: find the noxious trigger (full bladder) first"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-sympathetic-nervous-system",
+      "section": "Structure and Function"
     },
-    "label": "lateral gray region (the upper cervical cord shown carries the descending sympathetic fibers rather than the column itself)"
-   }
+    {
+      "ref": "sp-white-rami-communicans",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-parasympathetic-nervous-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not resolved on MRI; the descending sympathetic fibers in the cervical cord run in the lateral funiculus. Thoracic cord lesions involving the lateral gray are inferred from autonomic signs.",
-  "pathology": [
-   {
-    "pathology": "Cervicothoracic cord lesion with Horner syndrome",
-    "modality": "MRI",
-    "finding": "Cervical or upper thoracic intramedullary lesion (syrinx, tumor, myelitis) with ipsilateral Horner syndrome.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "High cord injury with autonomic dysreflexia",
-    "modality": "MRI",
-    "finding": "Cord injury above T6; the syndrome is clinical.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Sagittal and axial T2 of the cervical and thoracic cord"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Horner syndrome (ptosis, miosis, anhidrosis)",
-    "side": "ipsilateral",
-    "mechanism": "Ciliospinal center at C8–T2 or the descending fibers above it"
-   },
-   {
-    "deficit": "Autonomic dysreflexia: paroxysmal hypertension, headache, flushing above the level, bradycardia",
-    "side": "bilateral",
-    "mechanism": "Unopposed sympathetic reflexes below a lesion above T6"
-   },
-   {
-    "deficit": "Orthostatic hypotension and thermoregulatory failure",
-    "side": "bilateral",
-    "mechanism": "Loss of supraspinal sympathetic control"
-   },
-   {
-    "deficit": "Detrusor areflexia and erectile failure",
-    "side": "bilateral",
-    "mechanism": "Sacral parasympathetic nucleus or conus lesion"
-   }
-  ],
-  "examination": [
-   "Pupils and ptosis; sweating pattern of the face",
-   "Postural blood pressure",
-   "Skin temperature and color below the level",
-   "Bladder and bowel history; anal tone and bulbocavernosus reflex"
-  ],
-  "syndromes": [
-   "syn-horner",
-   "syn-complete-transection-spinal-shock",
-   "syn-conus-vs-cauda-equina"
-  ],
-  "pearls": [
-   "Horner syndrome with arm weakness and hand wasting: think of the C8–T1 region (syrinx, Pancoast tumor, cord lesion)",
-   "Severe headache with hypertension in a tetraplegic patient is autonomic dysreflexia: find the noxious trigger (full bladder) first"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    138,
-    139
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    387,
-    392
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    406,
-    408
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    44,
-    44
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    87
-   ]
+  "status": "draft",
+  "latin": "Columna intermediolateralis",
+  "subsystem": "cord",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "latin": "Columna intermediolateralis",
- "subsystem": "cord",
- "level": {
-  "region": "spinal"
- }
 }

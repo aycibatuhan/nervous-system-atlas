@@ -1,134 +1,122 @@
 {
- "kind": "syndrome",
- "id": "syn-aca-infarct",
- "name": "Anterior cerebral artery infarction",
- "eponyms": [],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "territory-aca",
-   "artery-aca",
-   "lobe-frontal",
-   "gyrus-precentral",
-   "gyrus-cingulate"
+  "kind": "syndrome",
+  "id": "syn-aca-infarct",
+  "name": "Anterior cerebral artery infarction",
+  "eponyms": [],
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "territory-aca",
+      "artery-aca",
+      "lobe-frontal",
+      "gyrus-precentral",
+      "gyrus-cingulate"
+    ],
+    "side": "contralateral",
+    "arteryId": "artery-aca",
+    "territoryId": "territory-aca"
+  },
+  "lesionMarker": {
+    "kind": "territory",
+    "meshIds": [
+      "territory-aca-major-l"
+    ]
+  },
+  "presentation": "A patient develops sudden weakness that is much worse in the leg than the arm, with the face almost spared, together with sensory loss over the same leg. They may be abulic and slow to respond, incontinent of urine, and show a grasp reflex in the affected hand. With a large or bilateral infarct there is akinetic mutism. Speech is preserved apart from a transient transcortical motor aphasia when the dominant hemisphere is involved.",
+  "deficits": [
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "leg more than arm, face spared",
+      "sign": "Upper motor neuron weakness of the leg with extensor plantar",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "leg and foot",
+      "sign": "Cortical sensory loss of the leg",
+      "substrate": "gyrus-postcentral"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "frontal",
+      "sign": "Abulia, apathy, perseveration, grasp reflex",
+      "substrate": "cortex-prefrontal"
+    },
+    {
+      "modality": "sphincter",
+      "side": "n/a",
+      "distribution": "bladder",
+      "sign": "Urinary incontinence from loss of the paracentral micturition area",
+      "substrate": "gyrus-cingulate"
+    }
   ],
-  "side": "contralateral",
-  "arteryId": "artery-aca",
-  "territoryId": "territory-aca"
- },
- "lesionMarker": {
-  "kind": "territory",
-  "meshIds": [
-   "territory-aca-major-l"
-  ]
- },
- "presentation": "A patient develops sudden weakness that is much worse in the leg than the arm, with the face almost spared, together with sensory loss over the same leg. They may be abulic and slow to respond, incontinent of urine, and show a grasp reflex in the affected hand. With a large or bilateral infarct there is akinetic mutism. Speech is preserved apart from a transient transcortical motor aphasia when the dominant hemisphere is involved.",
- "deficits": [
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "leg more than arm, face spared",
-   "sign": "Upper motor neuron weakness of the leg with extensor plantar",
-   "substrate": "pathway-lateral-corticospinal"
+  "reasoning": "The anterior cerebral artery runs in the interhemispheric fissure and supplies the medial surface of the frontal and parietal lobes, which is where the leg and foot are represented in the motor and sensory homunculus of the paracentral lobule. The corticospinal fibers from this area cross in the medullary pyramidal decussation, so the weakness is contralateral to the infarct, and it follows the homunculus rather than the whole hemibody: the leg is weakest, the shoulder may be weak, and the face and hand, which sit on the lateral convexity in middle cerebral territory, are spared. The medial frontal lobe includes the supplementary motor area and the anterior cingulate gyrus, whose loss gives abulia and, bilaterally, akinetic mutism; the paracentral lobule holds the cortical bladder control area, explaining the incontinence. Recurrent artery of Heubner involvement adds face and arm weakness from the anterior limb of the internal capsule and caudate head, a pattern that can mislead toward the middle cerebral artery.",
+  "imagingFindings": [
+    {
+      "pathology": "Acute ACA infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the medial frontal and parietal cortex and the paracentral lobule along the interhemispheric fissure, sometimes extending to the caudate head.",
+      "sequence": "DWI",
+      "timing": "Minutes to hours"
+    },
+    {
+      "pathology": "ACA occlusion",
+      "modality": "CTA",
+      "finding": "Cut-off of the A2 segment; a vasospasm after anterior communicating aneurysm rupture is a common cause of bilateral infarcts."
+    }
+  ],
+  "commonCauses": [
+    "Vasospasm after anterior communicating artery aneurysm rupture",
+    "Cardioembolism",
+    "Anterior cerebral artery dissection or atherosclerosis",
+    "Subfalcine herniation compressing the artery against the falx"
+  ],
+  "mimics": [
+    {
+      "name": "Parasagittal meningioma",
+      "howToDistinguish": "Gradual bilateral leg weakness and seizures; enhancing mass on MRI"
+    },
+    {
+      "name": "Spinal cord lesion",
+      "howToDistinguish": "Bilateral leg weakness with a sensory level and no cortical signs"
+    },
+    {
+      "name": "MCA infarct",
+      "howToDistinguish": "Face and arm weakness with aphasia or neglect"
+    }
+  ],
+  "management": [
+    "Stroke pathway: thrombolysis and thrombectomy according to time and vessel status",
+    "Screen for an anterior communicating aneurysm when the infarct is bilateral or accompanied by headache",
+    "Early bladder management and antithrombotic prevention"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": -8,
+      "y": -10,
+      "z": 55
+    },
+    "label": "paracentral lobule in the ACA territory"
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "leg and foot",
-   "sign": "Cortical sensory loss of the leg",
-   "substrate": "gyrus-postcentral"
-  },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "frontal",
-   "sign": "Abulia, apathy, perseveration, grasp reflex",
-   "substrate": "cortex-prefrontal"
-  },
-  {
-   "modality": "sphincter",
-   "side": "n/a",
-   "distribution": "bladder",
-   "sign": "Urinary incontinence from loss of the paracentral micturition area",
-   "substrate": "gyrus-cingulate"
-  }
- ],
- "reasoning": "The anterior cerebral artery runs in the interhemispheric fissure and supplies the medial surface of the frontal and parietal lobes, which is where the leg and foot are represented in the motor and sensory homunculus of the paracentral lobule. The corticospinal fibers from this area cross in the medullary pyramidal decussation, so the weakness is contralateral to the infarct, and it follows the homunculus rather than the whole hemibody: the leg is weakest, the shoulder may be weak, and the face and hand, which sit on the lateral convexity in middle cerebral territory, are spared. The medial frontal lobe includes the supplementary motor area and the anterior cingulate gyrus, whose loss gives abulia and, bilaterally, akinetic mutism; the paracentral lobule holds the cortical bladder control area, explaining the incontinence. Recurrent artery of Heubner involvement adds face and arm weakness from the anterior limb of the internal capsule and caudate head, a pattern that can mislead toward the middle cerebral artery.",
- "imagingFindings": [
-  {
-   "pathology": "Acute ACA infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the medial frontal and parietal cortex and the paracentral lobule along the interhemispheric fissure, sometimes extending to the caudate head.",
-   "sequence": "DWI",
-   "timing": "Minutes to hours"
-  },
-  {
-   "pathology": "ACA occlusion",
-   "modality": "CTA",
-   "finding": "Cut-off of the A2 segment; a vasospasm after anterior communicating aneurysm rupture is a common cause of bilateral infarcts."
-  }
- ],
- "commonCauses": [
-  "Vasospasm after anterior communicating artery aneurysm rupture",
-  "Cardioembolism",
-  "Anterior cerebral artery dissection or atherosclerosis",
-  "Subfalcine herniation compressing the artery against the falx"
- ],
- "mimics": [
-  {
-   "name": "Parasagittal meningioma",
-   "howToDistinguish": "Gradual bilateral leg weakness and seizures; enhancing mass on MRI"
-  },
-  {
-   "name": "Spinal cord lesion",
-   "howToDistinguish": "Bilateral leg weakness with a sensory level and no cortical signs"
-  },
-  {
-   "name": "MCA infarct",
-   "howToDistinguish": "Face and arm weakness with aphasia or neglect"
-  }
- ],
- "management": [
-  "Stroke pathway: thrombolysis and thrombectomy according to time and vessel status",
-  "Screen for an anterior communicating aneurysm when the infarct is bilateral or accompanied by headache",
-  "Early bladder management and antithrombotic prevention"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    483
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    59
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    39,
-    40
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": -8,
-   "y": -10,
-   "z": 55
-  },
-  "label": "paracentral lobule in the ACA territory"
- },
- "cameraPreset": "medial-l"
+  "cameraPreset": "medial-l"
 }

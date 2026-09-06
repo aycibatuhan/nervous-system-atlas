@@ -1,178 +1,158 @@
 {
- "kind": "structure",
- "id": "thalamus-pulvinar-medial-centrolateral",
- "name": "Medial pulvinar / centrolateral group",
- "synonyms": [
-  "intralaminar nuclei",
-  "centromedian-parafascicular complex",
-  "medial pulvinar"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "thalamus-pulvinar-medial-centrolateral-l",
-  "thalamus-pulvinar-medial-centrolateral-r"
- ],
- "summary": "This MIAL atlas group gathers the medial pulvinar with the intralaminar nuclei of the posterior internal medullary lamina, the centrolateral, centromedian and parafascicular nuclei, which lie between the mediodorsal nucleus and the ventral tier. The medial pulvinar is an associative nucleus linked with the temporal, parietal and prefrontal cortex and the amygdala, supporting attention and the integration of visual and limbic information, whereas the intralaminar nuclei are the thalamic part of the ascending arousal system and the main thalamic input to the striatum. Paramedian thalamic infarcts that involve this region cause hypersomnolence, apathy and memory loss, and bilateral lesions produce coma or akinetic mutism.",
- "anatomy": {
-  "location": "Posteromedial thalamus: the medial pulvinar behind the mediodorsal nucleus above the posterior commissure, and the intralaminar nuclei within the internal medullary lamina between the mediodorsal nucleus medially and the ventral and lateral nuclei laterally, the centromedian nucleus lying just in front of the pulvinar.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Brainstem reticular formation",
-    "via": "ascending reticular fibers"
-   },
-   {
-    "from": "Globus pallidus internus",
-    "via": "pallidothalamic fibers"
-   },
-   {
-    "from": "Superior colliculus and parietal cortex",
-    "via": "corticothalamic and tectothalamic fibers"
-   }
+  "kind": "structure",
+  "id": "thalamus-pulvinar-medial-centrolateral",
+  "name": "Medial pulvinar / centrolateral group",
+  "synonyms": [
+    "intralaminar nuclei",
+    "centromedian-parafascicular complex",
+    "medial pulvinar"
   ],
-  "efferents": [
-   {
-    "to": "Striatum",
-    "via": "thalamostriatal fibers"
-   },
-   {
-    "to": "Widespread cortex (diffuse)",
-    "via": "intralaminar thalamocortical fibers"
-   },
-   {
-    "to": "Temporal and parietal association cortex",
-    "via": "posterior thalamic radiation"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "thalamus-pulvinar-medial-centrolateral-l",
+    "thalamus-pulvinar-medial-centrolateral-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops",
-   "pathway-lateral-spinothalamic",
-   "pathway-visual"
-  ]
- },
- "function": "The intralaminar nuclei receive the reticular activating system, the spinothalamic tract and the pallidum and project diffusely to the cortex and massively to the striatum, sustaining arousal, driving cortical readiness and providing the striatum with salience signals; the centromedian-parafascicular complex is part of the basal ganglia loop and a target of stimulation for epilepsy and Tourette syndrome. The medial pulvinar connects the temporal and parietal association cortex, the frontal eye field and the amygdala, and directs attention and filters distracting information. The paramedian arteries from the P1 segment supply the whole group, sometimes from a single artery of Percheron on both sides.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-thalamoperforating",
-   "artery-pca",
-   "artery-pcom",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "thalamus-pulvinar-medial-centrolateral-l"
+  "summary": "This MIAL atlas group gathers the medial pulvinar with the intralaminar nuclei of the posterior internal medullary lamina, the centrolateral, centromedian and parafascicular nuclei, which lie between the mediodorsal nucleus and the ventral tier. The medial pulvinar is an associative nucleus linked with the temporal, parietal and prefrontal cortex and the amygdala, supporting attention and the integration of visual and limbic information, whereas the intralaminar nuclei are the thalamic part of the ascending arousal system and the main thalamic input to the striatum. Paramedian thalamic infarcts that involve this region cause hypersomnolence, apathy and memory loss, and bilateral lesions produce coma or akinetic mutism.",
+  "anatomy": {
+    "location": "Posteromedial thalamus: the medial pulvinar behind the mediodorsal nucleus above the posterior commissure, and the intralaminar nuclei within the internal medullary lamina between the mediodorsal nucleus medially and the ventral and lateral nuclei laterally, the centromedian nucleus lying just in front of the pulvinar.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Brainstem reticular formation",
+        "via": "ascending reticular fibers"
+      },
+      {
+        "from": "Globus pallidus internus",
+        "via": "pallidothalamic fibers"
+      },
+      {
+        "from": "Superior colliculus and parietal cortex",
+        "via": "corticothalamic and tectothalamic fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Striatum",
+        "via": "thalamostriatal fibers"
+      },
+      {
+        "to": "Widespread cortex (diffuse)",
+        "via": "intralaminar thalamocortical fibers"
+      },
+      {
+        "to": "Temporal and parietal association cortex",
+        "via": "posterior thalamic radiation"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops",
+      "pathway-lateral-spinothalamic",
+      "pathway-visual"
+    ]
+  },
+  "function": "The intralaminar nuclei receive the reticular activating system, the spinothalamic tract and the pallidum and project diffusely to the cortex and massively to the striatum, sustaining arousal, driving cortical readiness and providing the striatum with salience signals; the centromedian-parafascicular complex is part of the basal ganglia loop and a target of stimulation for epilepsy and Tourette syndrome. The medial pulvinar connects the temporal and parietal association cortex, the frontal eye field and the amygdala, and directs attention and filters distracting information. The paramedian arteries from the P1 segment supply the whole group, sometimes from a single artery of Percheron on both sides.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-thalamoperforating",
+      "artery-pca",
+      "artery-pcom",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "thalamus-pulvinar-medial-centrolateral-l"
+        },
+        "label": "medial pulvinar and intralaminar nuclei of the posteromedial thalamus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "thalamus-pulvinar-medial-centrolateral-r"
+        },
+        "label": "intralaminar region between the mediodorsal nucleus and the ventral tier"
+      }
+    ],
+    "normalAppearance": "The posteromedial thalamus beside the posterior third ventricle on axial images through the posterior commissure, in front of the pulvinar bulk; the paramedian thalamic arteries supply it from the interpeduncular fossa.",
+    "pathology": [
+      {
+        "pathology": "Paramedian thalamic infarct (artery of Percheron)",
+        "modality": "MRI",
+        "finding": "Bilateral symmetric restricted diffusion of the paramedian thalami, often with the midbrain, presenting with coma or hypersomnolence, vertical gaze palsy and amnesia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Centromedian deep brain stimulation",
+        "modality": "MRI",
+        "finding": "Electrodes in the centromedian-parafascicular complex for generalized epilepsy or Tourette syndrome, planned on the AC-PC plane.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Thalamic glioma or lymphoma",
+        "modality": "MRI",
+        "finding": "Enhancing mass of the posteromedial thalamus with somnolence, memory loss and hydrocephalus from aqueductal compression.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hypersomnolence or coma",
+        "side": "bilateral",
+        "mechanism": "Loss of the intralaminar arousal relay"
+      },
+      {
+        "deficit": "Apathy, amnesia and confabulation",
+        "side": "bilateral",
+        "mechanism": "Combined intralaminar and mediodorsal-limbic disconnection"
+      },
+      {
+        "deficit": "Contralateral hemi-inattention",
+        "side": "contralateral",
+        "mechanism": "Loss of the medial pulvinar attentional filter"
+      }
+    ],
+    "examination": [
+      "Level of consciousness and its fluctuation",
+      "Vertical gaze, which is affected when the adjacent midbrain is involved",
+      "Attention and memory testing once awake"
+    ],
+    "syndromes": [
+      "syn-top-of-basilar",
+      "syn-thalamic-dejerine-roussy"
+    ],
+    "pearls": [
+      "A patient who is suddenly asleep with bilateral thalamic lesions has an artery of Percheron infarct",
+      "The intralaminar nuclei are the thalamus's contribution to consciousness; the striatum listens to them too",
+      "Centromedian stimulation is the thalamic route to controlling generalized seizures"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-reticular-activating-system",
+      "section": "Structure and Function"
     },
-    "label": "medial pulvinar and intralaminar nuclei of the posteromedial thalamus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "thalamus-pulvinar-medial-centrolateral-r"
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "intralaminar region between the mediodorsal nucleus and the ventral tier"
-   }
+    {
+      "ref": "sp-thalamocortical-radiations",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The posteromedial thalamus beside the posterior third ventricle on axial images through the posterior commissure, in front of the pulvinar bulk; the paramedian thalamic arteries supply it from the interpeduncular fossa.",
-  "pathology": [
-   {
-    "pathology": "Paramedian thalamic infarct (artery of Percheron)",
-    "modality": "MRI",
-    "finding": "Bilateral symmetric restricted diffusion of the paramedian thalami, often with the midbrain, presenting with coma or hypersomnolence, vertical gaze palsy and amnesia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Centromedian deep brain stimulation",
-    "modality": "MRI",
-    "finding": "Electrodes in the centromedian-parafascicular complex for generalized epilepsy or Tourette syndrome, planned on the AC-PC plane.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Thalamic glioma or lymphoma",
-    "modality": "MRI",
-    "finding": "Enhancing mass of the posteromedial thalamus with somnolence, memory loss and hydrocephalus from aqueductal compression.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hypersomnolence or coma",
-    "side": "bilateral",
-    "mechanism": "Loss of the intralaminar arousal relay"
-   },
-   {
-    "deficit": "Apathy, amnesia and confabulation",
-    "side": "bilateral",
-    "mechanism": "Combined intralaminar and mediodorsal-limbic disconnection"
-   },
-   {
-    "deficit": "Contralateral hemi-inattention",
-    "side": "contralateral",
-    "mechanism": "Loss of the medial pulvinar attentional filter"
-   }
-  ],
-  "examination": [
-   "Level of consciousness and its fluctuation",
-   "Vertical gaze, which is affected when the adjacent midbrain is involved",
-   "Attention and memory testing once awake"
-  ],
-  "syndromes": [
-   "syn-top-of-basilar",
-   "syn-thalamic-dejerine-roussy"
-  ],
-  "pearls": [
-   "A patient who is suddenly asleep with bilateral thalamic lesions has an artery of Percheron infarct",
-   "The intralaminar nuclei are the thalamus's contribution to consciousness; the striatum listens to them too",
-   "Centromedian stimulation is the thalamic route to controlling generalized seizures"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    364,
-    370
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    299,
-    301
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    62,
-    63
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 19,
-   "pages": [
-    190,
-    194
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "thalamic-nuclei",
- "parent": "thalamus"
+  "tags": [],
+  "status": "draft",
+  "subsystem": "thalamic-nuclei",
+  "parent": "thalamus"
 }

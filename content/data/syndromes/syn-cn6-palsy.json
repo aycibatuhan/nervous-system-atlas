@@ -1,136 +1,124 @@
 {
- "kind": "syndrome",
- "id": "syn-cn6-palsy",
- "name": "Abducens nerve palsy and its false-localizing value",
- "eponyms": [],
- "category": "csf-pressure",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-06-abducens",
-   "abducens-nucleus",
-   "level-pons-caudal",
-   "sinus-cavernous"
+  "kind": "syndrome",
+  "id": "syn-cn6-palsy",
+  "name": "Abducens nerve palsy and its false-localizing value",
+  "eponyms": [],
+  "category": "csf-pressure",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-06-abducens",
+      "abducens-nucleus",
+      "level-pons-caudal",
+      "sinus-cavernous"
+    ],
+    "side": "ipsilateral"
+  },
+  "lesionMarker": {
+    "kind": "nerve",
+    "meshIds": [
+      "cn-06-abducens-l"
+    ]
+  },
+  "presentation": "A patient develops horizontal double vision that is worse when looking to one side and at distance, and turns the head toward that side to avoid it. The affected eye cannot abduct past the midline, or does so incompletely, while all other movements are normal. In one patient the cause is a diabetic microvascular lesion that recovers; in another, headache and papilledema reveal raised intracranial pressure from a tumor nowhere near the pons.",
+  "deficits": [
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "lateral rectus",
+      "sign": "Abduction deficit with esotropia greatest on gaze to the affected side and at distance",
+      "substrate": "cn-06-abducens"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "head posture",
+      "sign": "Head turned toward the affected side",
+      "substrate": "cn-06-abducens"
+    },
+    {
+      "modality": "other",
+      "side": "bilateral",
+      "distribution": "raised ICP (when false-localizing)",
+      "sign": "Headache, papilledema, sometimes bilateral palsies",
+      "substrate": "subarachnoid-space-cisterns"
+    }
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "nerve",
-  "meshIds": [
-   "cn-06-abducens-l"
-  ]
- },
- "presentation": "A patient develops horizontal double vision that is worse when looking to one side and at distance, and turns the head toward that side to avoid it. The affected eye cannot abduct past the midline, or does so incompletely, while all other movements are normal. In one patient the cause is a diabetic microvascular lesion that recovers; in another, headache and papilledema reveal raised intracranial pressure from a tumor nowhere near the pons.",
- "deficits": [
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "lateral rectus",
-   "sign": "Abduction deficit with esotropia greatest on gaze to the affected side and at distance",
-   "substrate": "cn-06-abducens"
+  "reasoning": "The abducens nerve leaves the pontomedullary junction and runs the longest intracranial course of any cranial nerve, ascending the clivus in the subarachnoid space, bending sharply over the petrous apex beneath the petroclinoid ligament to enter Dorello's canal, and running through the body of the cavernous sinus to the lateral rectus. It is uncrossed, so an abduction deficit is on the side of the nerve. That long vertical course and the sharp bend at the petrous ridge make it the nerve most vulnerable to any process that shifts the brainstem downward or raises intracranial pressure, so a sixth nerve palsy, especially if bilateral, is a classic false-localizing sign that must not be taken to mean pontine disease. A nuclear lesion is recognized because the nucleus also contains the interneurons for the contralateral medial rectus, so nuclear damage causes a conjugate gaze palsy rather than an isolated abduction deficit, usually with an ipsilateral facial palsy from the overlying facial genu. In the cavernous sinus the nerve lies medially beside the carotid artery with the oculosympathetic fibers briefly attached, so a sixth nerve palsy with an ipsilateral Horner syndrome points to the sinus; at the petrous apex it is accompanied by facial pain and deafness in Gradenigo syndrome.",
+  "imagingFindings": [
+    {
+      "pathology": "Raised intracranial pressure",
+      "modality": "MRI",
+      "finding": "Papilledema correlates: distended optic nerve sheaths, flattened posterior globes, partially empty sella; mass, venous thrombosis or IIH as the cause.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Clival or cavernous lesion",
+      "modality": "MRI",
+      "finding": "Enhancing chordoma, meningioma, nasopharyngeal carcinoma or cavernous sinus mass along the nerve's course.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Pontine lesion",
+      "modality": "MRI",
+      "finding": "Demyelination or infarct at the facial colliculus giving a gaze palsy rather than an isolated palsy.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Microvascular ischemia (diabetes, hypertension)",
+    "Raised intracranial pressure of any cause",
+    "Trauma",
+    "Clival tumor, nasopharyngeal carcinoma, cavernous sinus disease",
+    "Petrous apicitis (Gradenigo)",
+    "Multiple sclerosis (young)"
+  ],
+  "mimics": [
+    {
+      "name": "Thyroid eye disease (medial rectus restriction)",
+      "howToDistinguish": "Abduction limited by a tight medial rectus; forced duction positive; proptosis"
+    },
+    {
+      "name": "Ocular myasthenia",
+      "howToDistinguish": "Variable, fatigable, normal pupils"
+    },
+    {
+      "name": "Duane syndrome",
+      "howToDistinguish": "Congenital; globe retraction and narrowing of the fissure on adduction"
+    },
+    {
+      "name": "Convergence spasm",
+      "howToDistinguish": "Miosis on attempted lateral gaze; functional"
+    }
+  ],
+  "management": [
+    "Examine the fundi for papilledema in every sixth nerve palsy; image if present, bilateral, young, or with any other sign",
+    "Isolated palsy in a vasculopath over 50: observe for recovery at 3 months",
+    "Prism or occlusion for diplopia; botulinum toxin to the medial rectus in persistent cases"
+  ],
+  "citations": [
+    {
+      "ref": "sp-abducens-nerve-palsy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-increased-intracranial-pressure",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-nerve-6",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -8,
+      "y": -35,
+      "z": -30
+    },
+    "label": "abducens nerve rising from the pontomedullary junction along the clivus"
   },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "head posture",
-   "sign": "Head turned toward the affected side",
-   "substrate": "cn-06-abducens"
-  },
-  {
-   "modality": "other",
-   "side": "bilateral",
-   "distribution": "raised ICP (when false-localizing)",
-   "sign": "Headache, papilledema, sometimes bilateral palsies",
-   "substrate": "subarachnoid-space-cisterns"
-  }
- ],
- "reasoning": "The abducens nerve leaves the pontomedullary junction and runs the longest intracranial course of any cranial nerve, ascending the clivus in the subarachnoid space, bending sharply over the petrous apex beneath the petroclinoid ligament to enter Dorello's canal, and running through the body of the cavernous sinus to the lateral rectus. It is uncrossed, so an abduction deficit is on the side of the nerve. That long vertical course and the sharp bend at the petrous ridge make it the nerve most vulnerable to any process that shifts the brainstem downward or raises intracranial pressure, so a sixth nerve palsy, especially if bilateral, is a classic false-localizing sign that must not be taken to mean pontine disease. A nuclear lesion is recognized because the nucleus also contains the interneurons for the contralateral medial rectus, so nuclear damage causes a conjugate gaze palsy rather than an isolated abduction deficit, usually with an ipsilateral facial palsy from the overlying facial genu. In the cavernous sinus the nerve lies medially beside the carotid artery with the oculosympathetic fibers briefly attached, so a sixth nerve palsy with an ipsilateral Horner syndrome points to the sinus; at the petrous apex it is accompanied by facial pain and deafness in Gradenigo syndrome.",
- "imagingFindings": [
-  {
-   "pathology": "Raised intracranial pressure",
-   "modality": "MRI",
-   "finding": "Papilledema correlates: distended optic nerve sheaths, flattened posterior globes, partially empty sella; mass, venous thrombosis or IIH as the cause.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Clival or cavernous lesion",
-   "modality": "MRI",
-   "finding": "Enhancing chordoma, meningioma, nasopharyngeal carcinoma or cavernous sinus mass along the nerve's course.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Pontine lesion",
-   "modality": "MRI",
-   "finding": "Demyelination or infarct at the facial colliculus giving a gaze palsy rather than an isolated palsy.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Microvascular ischemia (diabetes, hypertension)",
-  "Raised intracranial pressure of any cause",
-  "Trauma",
-  "Clival tumor, nasopharyngeal carcinoma, cavernous sinus disease",
-  "Petrous apicitis (Gradenigo)",
-  "Multiple sclerosis (young)"
- ],
- "mimics": [
-  {
-   "name": "Thyroid eye disease (medial rectus restriction)",
-   "howToDistinguish": "Abduction limited by a tight medial rectus; forced duction positive; proptosis"
-  },
-  {
-   "name": "Ocular myasthenia",
-   "howToDistinguish": "Variable, fatigable, normal pupils"
-  },
-  {
-   "name": "Duane syndrome",
-   "howToDistinguish": "Congenital; globe retraction and narrowing of the fissure on adduction"
-  },
-  {
-   "name": "Convergence spasm",
-   "howToDistinguish": "Miosis on attempted lateral gaze; functional"
-  }
- ],
- "management": [
-  "Examine the fundi for papilledema in every sixth nerve palsy; image if present, bilateral, young, or with any other sign",
-  "Isolated palsy in a vasculopath over 50: observe for recovery at 3 months",
-  "Prism or occlusion for diplopia; botulinum toxin to the medial rectus in persistent cases"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    351,
-    351
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    358,
-    358
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    93,
-    96
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -8,
-   "y": -35,
-   "z": -30
-  },
-  "label": "abducens nerve rising from the pontomedullary junction along the clivus"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

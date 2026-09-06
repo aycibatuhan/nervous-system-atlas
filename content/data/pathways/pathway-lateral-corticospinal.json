@@ -1,234 +1,214 @@
 {
- "kind": "pathway",
- "id": "pathway-lateral-corticospinal",
- "name": "Lateral corticospinal tract",
- "synonyms": [
-  "pyramidal tract"
- ],
- "type": "descending",
- "modality": "voluntary skilled movement of the limbs",
- "summary": "The main voluntary motor pathway. Pyramidal neurons of the motor and premotor cortex send axons through the corona radiata, the posterior limb of the internal capsule, the middle of the crus cerebri and the basis pontis to the medullary pyramid, where about 85–90% cross in the pyramidal decussation to descend in the lateral funiculus of the cord as the lateral corticospinal tract, ending on interneurons and, for the hand, directly on motor neurons of the anterior horn. Because the crossing happens at the cervicomedullary junction, a lesion anywhere above it weakens the opposite side of the body and a lesion below it the same side, and the accompanying signs of the neighbors (face, cranial nerves, sensation) give the level.",
- "origin": {
-  "structures": [
-   "gyrus-precentral",
-   "cortex-premotor-sma",
-   "gyrus-postcentral"
+  "kind": "pathway",
+  "id": "pathway-lateral-corticospinal",
+  "name": "Lateral corticospinal tract",
+  "synonyms": [
+    "pyramidal tract"
   ],
-  "note": "Roughly a third each from the primary motor cortex, premotor/SMA and the somatosensory cortex; Betz cells contribute a small fraction of the fibers."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Upper motor neuron: pyramidal cells in cortical layer V",
-   "synapse": "on spinal interneurons and directly on alpha motor neurons (corticomotoneuronal, hand)"
+  "type": "descending",
+  "modality": "voluntary skilled movement of the limbs",
+  "summary": "The main voluntary motor pathway. Pyramidal neurons of the motor and premotor cortex send axons through the corona radiata, the posterior limb of the internal capsule, the middle of the crus cerebri and the basis pontis to the medullary pyramid, where about 85–90% cross in the pyramidal decussation to descend in the lateral funiculus of the cord as the lateral corticospinal tract, ending on interneurons and, for the hand, directly on motor neurons of the anterior horn. Because the crossing happens at the cervicomedullary junction, a lesion anywhere above it weakens the opposite side of the body and a lesion below it the same side, and the accompanying signs of the neighbors (face, cranial nerves, sensation) give the level.",
+  "origin": {
+    "structures": [
+      "gyrus-precentral",
+      "cortex-premotor-sma",
+      "gyrus-postcentral"
+    ],
+    "note": "Roughly a third each from the primary motor cortex, premotor/SMA and the somatosensory cortex; Betz cells contribute a small fraction of the fibers."
   },
-  {
-   "order": 2,
-   "cellBody": "Lower motor neuron: anterior horn cell",
-   "synapse": "at the neuromuscular junction"
-  }
- ],
- "decussation": {
-  "level": "Pyramidal decussation, cervicomedullary junction",
-  "structureId": "pyramid",
-  "note": "About 85–90% of fibers cross; the arm fibers cross rostral to the leg fibers, the basis of cruciate paralysis."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "gyrus-precentral",
-   "meshId": "gyrus-precentral-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "origin in the motor cortex, somatotopic"
-  },
-  {
-   "order": 2,
-   "structureId": "corona-radiata",
-   "meshId": "cerebral-white-matter-l",
-   "sideRelativeToOrigin": "ipsilateral"
-  },
-  {
-   "order": 3,
-   "structureId": "internal-capsule",
-   "meshId": "internal-capsule-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "posterior limb: face at the genu, arm anterior, leg posterior"
-  },
-  {
-   "order": 4,
-   "structureId": "cerebral-peduncle-crus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "middle three-fifths of the crus"
-  },
-  {
-   "order": 5,
-   "structureId": "pontine-nuclei",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "dispersed bundles among the pontine nuclei in the basis pontis"
-  },
-  {
-   "order": 6,
-   "structureId": "pyramid",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "compact tract on the ventral medulla"
-  },
-  {
-   "order": 7,
-   "structureId": "level-medulla-pyramidal-decussation",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "pyramidal decussation"
-  },
-  {
-   "order": 8,
-   "structureId": "spinal-white-columns",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "lateral funiculus, medial to the spinocerebellar tract; leg fibers lateral"
-  },
-  {
-   "order": 9,
-   "structureId": "spinal-grey-anterior-horn",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "termination on interneurons and motor neurons"
-  }
- ],
- "termination": "Interneurons of the intermediate gray and alpha motor neurons of the anterior horn at every level of the cord, most densely in the cervical and lumbosacral enlargements.",
- "meshIds": [
-  "tract-corticospinal-l",
-  "tract-corticospinal-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Cortex or corona radiata",
-   "effects": "Contralateral weakness following the homunculus (face and arm on the convexity, leg medially), often with cortical signs; seizures",
-   "side": "contralateral"
-  },
-  {
-   "level": "Internal capsule",
-   "effects": "Dense contralateral hemiparesis of face, arm and leg with no cortical signs (pure motor stroke)",
-   "side": "contralateral"
-  },
-  {
-   "level": "Midbrain crus",
-   "effects": "Contralateral hemiparesis with ipsilateral third nerve palsy (Weber)",
-   "side": "contralateral"
-  },
-  {
-   "level": "Pons",
-   "effects": "Contralateral hemiparesis with ipsilateral VI or VII palsy (Millard–Gubler, Foville); bilateral: locked-in",
-   "side": "contralateral"
-  },
-  {
-   "level": "Medulla above the decussation",
-   "effects": "Contralateral hemiparesis sparing the face with ipsilateral tongue weakness (medial medullary)",
-   "side": "contralateral"
-  },
-  {
-   "level": "Spinal cord below the decussation",
-   "effects": "Ipsilateral upper motor neuron weakness below the level (Brown-Séquard)",
-   "side": "ipsilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Upper motor neuron signs (spasticity, hyperreflexia, Babinski, clonus) mark the tract; lower motor neuron signs mark the anterior horn or nerve",
-   "Weakness with a cranial nerve palsy on the opposite side is the brainstem; with a sensory level and no face involvement, the cord",
-   "Fine independent finger movements are the first and last casualty of corticospinal lesions because the direct corticomotoneuronal connections serve them"
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Upper motor neuron: pyramidal cells in cortical layer V",
+      "synapse": "on spinal interneurons and directly on alpha motor neurons (corticomotoneuronal, hand)"
+    },
+    {
+      "order": 2,
+      "cellBody": "Lower motor neuron: anterior horn cell",
+      "synapse": "at the neuromuscular junction"
+    }
   ],
-  "syndromes": [
-   "syn-lacunar-pure-motor",
-   "syn-weber",
-   "syn-millard-gubler",
-   "syn-dejerine-medial-medullary",
-   "syn-brown-sequard",
-   "syn-locked-in"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    156
-   ]
+  "decussation": {
+    "level": "Pyramidal decussation, cervicomedullary junction",
+    "structureId": "pyramid",
+    "note": "About 85–90% of fibers cross; the arm fibers cross rostral to the leg fibers, the basis of cruciate paralysis."
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    196,
-    199
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    36
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    56,
-    57
-   ]
-  }
- ],
- "status": "draft",
- "somatotopy": "Cortex: leg medial, arm and face lateral. Internal capsule: face anterior (genu), then arm, then leg. Crus: face medial, leg lateral. Cord: arm fibers medial, leg fibers lateral within the tract, so an expanding central cord lesion hits the arms first and extrinsic compression the legs first.",
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 20,
-     "y": -10,
-     "z": 10
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "gyrus-precentral",
+      "meshId": "gyrus-precentral-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "origin in the motor cortex, somatotopic"
     },
-    "label": "posterior limb of the internal capsule"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 8,
-     "y": -20,
-     "z": -12
+    {
+      "order": 2,
+      "structureId": "corona-radiata",
+      "meshId": "cerebral-white-matter-l",
+      "sideRelativeToOrigin": "ipsilateral"
     },
-    "label": "middle of the crus cerebri"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 4,
-     "y": -46,
-     "z": -48
+    {
+      "order": 3,
+      "structureId": "internal-capsule",
+      "meshId": "internal-capsule-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "posterior limb: face at the genu, arm anterior, leg posterior"
     },
-    "label": "pyramid on the ventral medulla"
-   }
+    {
+      "order": 4,
+      "structureId": "cerebral-peduncle-crus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "middle three-fifths of the crus"
+    },
+    {
+      "order": 5,
+      "structureId": "pontine-nuclei",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "dispersed bundles among the pontine nuclei in the basis pontis"
+    },
+    {
+      "order": 6,
+      "structureId": "pyramid",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "compact tract on the ventral medulla"
+    },
+    {
+      "order": 7,
+      "structureId": "level-medulla-pyramidal-decussation",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "pyramidal decussation"
+    },
+    {
+      "order": 8,
+      "structureId": "spinal-white-columns",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "lateral funiculus, medial to the spinocerebellar tract; leg fibers lateral"
+    },
+    {
+      "order": 9,
+      "structureId": "spinal-grey-anterior-horn",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "termination on interneurons and motor neurons"
+    }
   ],
-  "normalAppearance": "The tract is followed on the HCP1065 mesh in this atlas from the motor cortex through the capsule, crus, pons and pyramid. Wallerian degeneration after a stroke makes it T2-bright and atrophic along its whole length below the lesion; in ALS it is symmetrically T2-bright in the posterior limb and crus.",
-  "pathology": [
-   {
-    "pathology": "Wallerian degeneration",
-    "modality": "MRI",
-    "finding": "T2 hyperintensity and atrophy of the ipsilateral capsule, crus and pyramid weeks after a large hemispheric infarct.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Amyotrophic lateral sclerosis",
-    "modality": "MRI",
-    "finding": "Bilateral symmetric T2/FLAIR hyperintensity of the corticospinal tracts from the corona radiata to the brainstem with precentral iron on SWI.",
-    "sequence": "FLAIR"
-   }
-  ]
- }
+  "termination": "Interneurons of the intermediate gray and alpha motor neurons of the anterior horn at every level of the cord, most densely in the cervical and lumbosacral enlargements.",
+  "meshIds": [
+    "tract-corticospinal-l",
+    "tract-corticospinal-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Cortex or corona radiata",
+      "effects": "Contralateral weakness following the homunculus (face and arm on the convexity, leg medially), often with cortical signs; seizures",
+      "side": "contralateral"
+    },
+    {
+      "level": "Internal capsule",
+      "effects": "Dense contralateral hemiparesis of face, arm and leg with no cortical signs (pure motor stroke)",
+      "side": "contralateral"
+    },
+    {
+      "level": "Midbrain crus",
+      "effects": "Contralateral hemiparesis with ipsilateral third nerve palsy (Weber)",
+      "side": "contralateral"
+    },
+    {
+      "level": "Pons",
+      "effects": "Contralateral hemiparesis with ipsilateral VI or VII palsy (Millard–Gubler, Foville); bilateral: locked-in",
+      "side": "contralateral"
+    },
+    {
+      "level": "Medulla above the decussation",
+      "effects": "Contralateral hemiparesis sparing the face with ipsilateral tongue weakness (medial medullary)",
+      "side": "contralateral"
+    },
+    {
+      "level": "Spinal cord below the decussation",
+      "effects": "Ipsilateral upper motor neuron weakness below the level (Brown-Séquard)",
+      "side": "ipsilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Upper motor neuron signs (spasticity, hyperreflexia, Babinski, clonus) mark the tract; lower motor neuron signs mark the anterior horn or nerve",
+      "Weakness with a cranial nerve palsy on the opposite side is the brainstem; with a sensory level and no face involvement, the cord",
+      "Fine independent finger movements are the first and last casualty of corticospinal lesions because the direct corticomotoneuronal connections serve them"
+    ],
+    "syndromes": [
+      "syn-lacunar-pure-motor",
+      "syn-weber",
+      "syn-millard-gubler",
+      "syn-dejerine-medial-medullary",
+      "syn-brown-sequard",
+      "syn-locked-in"
+    ]
+  },
+  "citations": [
+    {
+      "ref": "sp-lateral-corticospinal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-pyramidal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-pyramidal-tract-lesions",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft",
+  "somatotopy": "Cortex: leg medial, arm and face lateral. Internal capsule: face anterior (genu), then arm, then leg. Crus: face medial, leg lateral. Cord: arm fibers medial, leg fibers lateral within the tract, so an expanding central cord lesion hits the arms first and extrinsic compression the legs first.",
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 20,
+          "y": -10,
+          "z": 10
+        },
+        "label": "posterior limb of the internal capsule"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 8,
+          "y": -20,
+          "z": -12
+        },
+        "label": "middle of the crus cerebri"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 4,
+          "y": -46,
+          "z": -48
+        },
+        "label": "pyramid on the ventral medulla"
+      }
+    ],
+    "normalAppearance": "The tract is followed on the HCP1065 mesh in this atlas from the motor cortex through the capsule, crus, pons and pyramid. Wallerian degeneration after a stroke makes it T2-bright and atrophic along its whole length below the lesion; in ALS it is symmetrically T2-bright in the posterior limb and crus.",
+    "pathology": [
+      {
+        "pathology": "Wallerian degeneration",
+        "modality": "MRI",
+        "finding": "T2 hyperintensity and atrophy of the ipsilateral capsule, crus and pyramid weeks after a large hemispheric infarct.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Amyotrophic lateral sclerosis",
+        "modality": "MRI",
+        "finding": "Bilateral symmetric T2/FLAIR hyperintensity of the corticospinal tracts from the corona radiata to the brainstem with precentral iron on SWI.",
+        "sequence": "FLAIR"
+      }
+    ]
+  }
 }

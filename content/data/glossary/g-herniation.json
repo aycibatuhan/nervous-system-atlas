@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-herniation",
- "term": "Herniation",
- "definition": "Displacement of brain from one intracranial compartment to another under pressure: subfalcine (cingulate under the falx), uncal (medial temporal lobe through the tentorial notch), central (diencephalon downward), tonsillar (cerebellar tonsils through the foramen magnum) and upward (cerebellum through the notch).",
- "related": [
-  "g-false-localizing-sign",
-  "g-cushing-response"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    270,
-    270
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-herniation",
+  "term": "Herniation",
+  "definition": "Displacement of brain from one intracranial compartment to another under pressure: subfalcine (cingulate under the falx), uncal (medial temporal lobe through the tentorial notch), central (diencephalon downward), tonsillar (cerebellar tonsils through the foramen magnum) and upward (cerebellum through the notch).",
+  "related": [
+    "g-false-localizing-sign",
+    "g-cushing-response"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-herniation",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-uncal-herniation",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-tonsillar-herniation",
+      "section": "Pathophysiology"
+    }
+  ]
 }

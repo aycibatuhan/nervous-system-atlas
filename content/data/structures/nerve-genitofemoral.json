@@ -1,132 +1,128 @@
 {
- "kind": "structure",
- "id": "nerve-genitofemoral",
- "name": "Genitofemoral nerve",
- "synonyms": [
-  "genitocrural nerve"
- ],
- "system": "peripheral",
- "meshIds": [
-  "genitofemoral-nerve-l",
-  "genitofemoral-nerve-r"
- ],
- "summary": "The genitofemoral nerve arises from the L1 and L2 roots within the psoas major, emerges on its anterior surface and descends behind the peritoneum to divide above the inguinal ligament into a genital branch, which enters the inguinal canal to supply the cremaster and the skin of the scrotum or labium, and a femoral branch, which passes under the inguinal ligament to supply the skin of the upper anterior thigh over the femoral triangle. It is the efferent and part of the afferent limb of the cremasteric reflex, it is entrapped after hernia repair and pelvic surgery, and its territory distinguishes L1-L2 lesions from the more lateral femoral cutaneous and ilioinguinal patterns.",
- "anatomy": {
-  "location": "Formed within the psoas from L1 and L2, pierces the anterior surface of the muscle, descends on it beneath the peritoneum and the ureter, crosses the external iliac vessels and divides: the genital branch enters the deep inguinal ring with the spermatic cord (or round ligament) to the cremaster and the scrotal or labial skin; the femoral branch passes lateral to the femoral artery under the inguinal ligament to the skin of the upper thigh.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Its genital branch is motor to the cremaster and sensory to the anterior scrotum or labium majus, forming the efferent limb of the cremasteric reflex (stroking the medial thigh elevates the testis), whose loss indicates an L1-L2 root, plexus or nerve lesion or a corticospinal lesion above; its femoral branch is sensory to the upper anterior thigh below the inguinal ligament. Entrapment or injury by inguinal hernia mesh, varicocelectomy, appendectomy and psoas abscess produces groin, scrotal and upper thigh pain and numbness that is aggravated by hip extension and relieved by flexion, and its blockade is part of the anesthesia for inguinal surgery.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum (regional arteries)"
+  "kind": "structure",
+  "id": "nerve-genitofemoral",
+  "name": "Genitofemoral nerve",
+  "synonyms": [
+    "genitocrural nerve"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "genitofemoral-nerve-l"
-    },
-    "label": "genitofemoral nerve on the anterior surface of the psoas dividing above the inguinal ligament"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "genitofemoral-nerve-r"
-    },
-    "label": "nerve on the psoas beneath the peritoneum"
-   }
+  "system": "peripheral",
+  "meshIds": [
+    "genitofemoral-nerve-l",
+    "genitofemoral-nerve-r"
   ],
-  "normalAppearance": "A small nerve on the anterior surface of the psoas on MR neurography; its branches at the inguinal canal are seen on ultrasound. Territory: anterior scrotum or labium and the upper anterior thigh.",
-  "pathology": [
-   {
-    "pathology": "Post-herniorrhaphy neuralgia",
-    "modality": "US",
-    "finding": "Entrapment of the genital branch by mesh or suture at the inguinal canal with groin and scrotal pain; ultrasound-guided block confirms and treats.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Psoas abscess or retroperitoneal mass",
-    "modality": "CT",
-    "finding": "Fluid collection or tumor within or on the psoas involving the nerve, with groin pain, a flexed hip and sensory loss in the femoral triangle.",
-    "sequence": "CT contrast"
-   },
-   {
-    "pathology": "L1-L2 radiculopathy",
-    "modality": "MRI",
-    "finding": "Upper lumbar disc or foraminal lesion with groin pain and an absent cremasteric reflex.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Groin, scrotal or labial pain and numbness",
-    "side": "ipsilateral",
-    "mechanism": "Entrapment or injury of the genital branch"
-   },
-   {
-    "deficit": "Numbness of the upper anterior thigh",
-    "side": "ipsilateral",
-    "mechanism": "Femoral branch involvement"
-   },
-   {
-    "deficit": "Absent cremasteric reflex",
-    "side": "ipsilateral",
-    "mechanism": "Loss of the L1-L2 reflex arc or a corticospinal lesion above it"
-   }
-  ],
-  "examination": [
-   "Cremasteric reflex on each side",
-   "Sensation over the femoral triangle and the anterior scrotum or labium",
-   "Pain reproduction with hip extension and relief with flexion; a diagnostic block"
-  ],
-  "syndromes": [
-   "syn-lumbosacral-plexopathy",
-   "syn-radiculopathy-lumbosacral"
-  ],
-  "pearls": [
-   "Groin pain after hernia repair is this nerve or its neighbors; a block sorts them out",
-   "The cremasteric reflex tests L1-L2 and the corticospinal tract at once",
-   "A flexed hip with groin pain and fever is a psoas abscess on the genitofemoral nerve"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    111,
-    120
-   ]
+  "summary": "The genitofemoral nerve arises from the L1 and L2 roots within the psoas major, emerges on its anterior surface and descends behind the peritoneum to divide above the inguinal ligament into a genital branch, which enters the inguinal canal to supply the cremaster and the skin of the scrotum or labium, and a femoral branch, which passes under the inguinal ligament to supply the skin of the upper anterior thigh over the femoral triangle. It is the efferent and part of the afferent limb of the cremasteric reflex, it is entrapped after hernia repair and pelvic surgery, and its territory distinguishes L1-L2 lesions from the more lateral femoral cutaneous and ilioinguinal patterns.",
+  "anatomy": {
+    "location": "Formed within the psoas from L1 and L2, pierces the anterior surface of the muscle, descends on it beneath the peritoneum and the ureter, crosses the external iliac vessels and divides: the genital branch enters the deep inguinal ring with the spermatic cord (or round ligament) to the cremaster and the scrotal or labial skin; the femoral branch passes lateral to the femoral artery under the inguinal ligament to the skin of the upper thigh.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    166
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Its genital branch is motor to the cremaster and sensory to the anterior scrotum or labium majus, forming the efferent limb of the cremasteric reflex (stroking the medial thigh elevates the testis), whose loss indicates an L1-L2 root, plexus or nerve lesion or a corticospinal lesion above; its femoral branch is sensory to the upper anterior thigh below the inguinal ligament. Entrapment or injury by inguinal hernia mesh, varicocelectomy, appendectomy and psoas abscess produces groin, scrotal and upper thigh pain and numbness that is aggravated by hip extension and relieved by flexion, and its blockade is part of the anesthesia for inguinal surgery.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum (regional arteries)"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "genitofemoral-nerve-l"
+        },
+        "label": "genitofemoral nerve on the anterior surface of the psoas dividing above the inguinal ligament"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "genitofemoral-nerve-r"
+        },
+        "label": "nerve on the psoas beneath the peritoneum"
+      }
+    ],
+    "normalAppearance": "A small nerve on the anterior surface of the psoas on MR neurography; its branches at the inguinal canal are seen on ultrasound. Territory: anterior scrotum or labium and the upper anterior thigh.",
+    "pathology": [
+      {
+        "pathology": "Post-herniorrhaphy neuralgia",
+        "modality": "US",
+        "finding": "Entrapment of the genital branch by mesh or suture at the inguinal canal with groin and scrotal pain; ultrasound-guided block confirms and treats.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Psoas abscess or retroperitoneal mass",
+        "modality": "CT",
+        "finding": "Fluid collection or tumor within or on the psoas involving the nerve, with groin pain, a flexed hip and sensory loss in the femoral triangle.",
+        "sequence": "CT contrast"
+      },
+      {
+        "pathology": "L1-L2 radiculopathy",
+        "modality": "MRI",
+        "finding": "Upper lumbar disc or foraminal lesion with groin pain and an absent cremasteric reflex.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Groin, scrotal or labial pain and numbness",
+        "side": "ipsilateral",
+        "mechanism": "Entrapment or injury of the genital branch"
+      },
+      {
+        "deficit": "Numbness of the upper anterior thigh",
+        "side": "ipsilateral",
+        "mechanism": "Femoral branch involvement"
+      },
+      {
+        "deficit": "Absent cremasteric reflex",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the L1-L2 reflex arc or a corticospinal lesion above it"
+      }
+    ],
+    "examination": [
+      "Cremasteric reflex on each side",
+      "Sensation over the femoral triangle and the anterior scrotum or labium",
+      "Pain reproduction with hip extension and relief with flexion; a diagnostic block"
+    ],
+    "syndromes": [
+      "syn-lumbosacral-plexopathy",
+      "syn-radiculopathy-lumbosacral"
+    ],
+    "pearls": [
+      "Groin pain after hernia repair is this nerve or its neighbors; a block sorts them out",
+      "The cremasteric reflex tests L1-L2 and the corticospinal tract at once",
+      "A flexed hip with groin pain and fever is a psoas abscess on the genitofemoral nerve"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-genitofemoral-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "peripheral nerve",
+    "cutaneous"
+  ],
+  "status": "draft",
+  "subsystem": "lower-limb",
+  "parent": "plexus-lumbosacral",
+  "level": {
+    "region": "peripheral",
+    "sub": "L1-L2"
   }
- ],
- "tags": [
-  "peripheral nerve",
-  "cutaneous"
- ],
- "status": "draft",
- "subsystem": "lower-limb",
- "parent": "plexus-lumbosacral",
- "level": {
-  "region": "peripheral",
-  "sub": "L1-L2"
- }
 }

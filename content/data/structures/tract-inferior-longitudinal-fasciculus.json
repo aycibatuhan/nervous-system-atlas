@@ -1,172 +1,143 @@
 {
- "kind": "structure",
- "id": "tract-inferior-longitudinal-fasciculus",
- "name": "Inferior longitudinal fasciculus",
- "synonyms": [
-  "ILF",
-  "occipitotemporal fasciculus"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-inferior-longitudinal-fasciculus-l",
-  "tract-inferior-longitudinal-fasciculus-r"
- ],
- "summary": "The inferior longitudinal fasciculus runs along the length of the temporal lobe beneath the lateral ventricle, connecting the occipital visual areas with the anterior temporal lobe, the amygdala and the temporal pole. It is the ventral visual stream in white matter: it carries the identity of objects, faces and written words forward from the occipito-temporal cortex to the anterior temporal semantic and emotional systems, so its lesions produce visual agnosia, prosopagnosia, pure alexia and visual amnesia, and its right-sided damage produces landmark agnosia. It runs beneath the optic radiation in the stratum sagittale and is injured in PCA infarcts, temporal lobe surgery and herpes encephalitis, and it degenerates in semantic dementia.",
- "anatomy": {
-  "location": "From the lingual, fusiform and lateral occipital cortex forward in the inferolateral temporal white matter beneath the temporal horn and lateral to the hippocampus, medial to the inferior and middle temporal gyri, to the anterior fusiform and inferior temporal cortex, the temporal pole and the amygdala; it lies below and lateral to the optic radiation and the IFOF in the stratum sagittale.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lingual, fusiform and lateral occipital cortex",
-    "via": "posterior origin"
-   }
+  "kind": "structure",
+  "id": "tract-inferior-longitudinal-fasciculus",
+  "name": "Inferior longitudinal fasciculus",
+  "synonyms": [
+    "ILF",
+    "occipitotemporal fasciculus"
   ],
-  "efferents": [
-   {
-    "to": "Anterior fusiform and inferior temporal cortex, temporal pole and amygdala",
-    "via": "anterior termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-inferior-longitudinal-fasciculus-l",
+    "tract-inferior-longitudinal-fasciculus-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "It carries the output of the occipito-temporal object, face and word-form areas to the anterior temporal cortex, where these percepts acquire meaning and personal significance, and to the amygdala, where they acquire emotional value; it also carries feedback from memory and emotion back to the visual areas, biasing perception, and it takes part in reading through the visual word form area. Disconnection leaves perception intact but severs it from recognition: the patient sees the face, copies the word or describes the object but cannot recognize or read it, and cannot learn new visual material. Right-sided lesions produce prosopagnosia and topographical agnosia, left-sided ones pure alexia and associative agnosia, and bilateral ones a profound visual agnosia.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca-inferior-division",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-pca-occipital",
-   "territory-mca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "tract-inferior-longitudinal-fasciculus-l"
+  "summary": "The inferior longitudinal fasciculus runs along the length of the temporal lobe beneath the lateral ventricle, connecting the occipital visual areas with the anterior temporal lobe, the amygdala and the temporal pole. It is the ventral visual stream in white matter: it carries the identity of objects, faces and written words forward from the occipito-temporal cortex to the anterior temporal semantic and emotional systems, so its lesions produce visual agnosia, prosopagnosia, pure alexia and visual amnesia, and its right-sided damage produces landmark agnosia. It runs beneath the optic radiation in the stratum sagittale and is injured in PCA infarcts, temporal lobe surgery and herpes encephalitis, and it degenerates in semantic dementia.",
+  "anatomy": {
+    "location": "From the lingual, fusiform and lateral occipital cortex forward in the inferolateral temporal white matter beneath the temporal horn and lateral to the hippocampus, medial to the inferior and middle temporal gyri, to the anterior fusiform and inferior temporal cortex, the temporal pole and the amygdala; it lies below and lateral to the optic radiation and the IFOF in the stratum sagittale.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lingual, fusiform and lateral occipital cortex",
+        "via": "posterior origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Anterior fusiform and inferior temporal cortex, temporal pole and amygdala",
+        "via": "anterior termination"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "It carries the output of the occipito-temporal object, face and word-form areas to the anterior temporal cortex, where these percepts acquire meaning and personal significance, and to the amygdala, where they acquire emotional value; it also carries feedback from memory and emotion back to the visual areas, biasing perception, and it takes part in reading through the visual word form area. Disconnection leaves perception intact but severs it from recognition: the patient sees the face, copies the word or describes the object but cannot recognize or read it, and cannot learn new visual material. Right-sided lesions produce prosopagnosia and topographical agnosia, left-sided ones pure alexia and associative agnosia, and bilateral ones a profound visual agnosia.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca-inferior-division",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-pca-occipital",
+      "territory-mca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "tract-inferior-longitudinal-fasciculus-l"
+        },
+        "label": "inferior longitudinal fasciculus along the ventral temporal lobe"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-inferior-longitudinal-fasciculus-r"
+        },
+        "label": "ILF beneath the temporal horn lateral to the hippocampus"
+      }
+    ],
+    "normalAppearance": "Tractography shows a long anteroposterior bundle in the inferolateral temporal white matter from the occipital pole to the temporal pole, below the optic radiation; on coronal T2 it lies in the white matter beneath the temporal horn.",
+    "pathology": [
+      {
+        "pathology": "PCA infarct with visual agnosia or pure alexia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the medial occipito-temporal cortex and white matter interrupting the ILF; on the left with splenial involvement, alexia without agraphia.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Herpes simplex encephalitis",
+        "modality": "MRI",
+        "finding": "Anterior and medial temporal FLAIR change involving the ILF's anterior terminations with amnesia and, on the right, prosopagnosia.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Semantic dementia",
+        "modality": "MRI",
+        "finding": "Anterior temporal atrophy with reduced fractional anisotropy of the ILF, correlating with loss of object and face knowledge.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Associative visual agnosia and pure alexia (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of visual word and object forms from the anterior temporal semantic system"
+      },
+      {
+        "deficit": "Prosopagnosia and landmark agnosia (right)",
+        "side": "n/a",
+        "mechanism": "Disconnection of face and place areas from the anterior temporal identity nodes"
+      },
+      {
+        "deficit": "Impaired visual learning and emotional response to visual stimuli",
+        "side": "bilateral",
+        "mechanism": "Disconnection of the visual cortex from the hippocampus and amygdala"
+      }
+    ],
+    "examination": [
+      "Object naming with recognition by other modalities",
+      "Face recognition and reading",
+      "Visual recognition memory for recently seen pictures"
+    ],
+    "syndromes": [
+      "syn-alexia-without-agraphia",
+      "syn-pca-infarct",
+      "syn-kluver-bucy"
+    ],
+    "pearls": [
+      "The ILF is the wire between seeing and knowing; its lesions look like blindness to the family and normal vision to the optometrist",
+      "Alexia without agraphia is an ILF-splenium disconnection",
+      "Herpes encephalitis cuts the anterior end of this bundle, which is why survivors cannot recognize faces"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
     },
-    "label": "inferior longitudinal fasciculus along the ventral temporal lobe"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-inferior-longitudinal-fasciculus-r"
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
     },
-    "label": "ILF beneath the temporal horn lateral to the hippocampus"
-   }
+    {
+      "ref": "sp-prosopagnosia"
+    }
   ],
-  "normalAppearance": "Tractography shows a long anteroposterior bundle in the inferolateral temporal white matter from the occipital pole to the temporal pole, below the optic radiation; on coronal T2 it lies in the white matter beneath the temporal horn.",
-  "pathology": [
-   {
-    "pathology": "PCA infarct with visual agnosia or pure alexia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the medial occipito-temporal cortex and white matter interrupting the ILF; on the left with splenial involvement, alexia without agraphia.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Herpes simplex encephalitis",
-    "modality": "MRI",
-    "finding": "Anterior and medial temporal FLAIR change involving the ILF's anterior terminations with amnesia and, on the right, prosopagnosia.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Semantic dementia",
-    "modality": "MRI",
-    "finding": "Anterior temporal atrophy with reduced fractional anisotropy of the ILF, correlating with loss of object and face knowledge.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Associative visual agnosia and pure alexia (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of visual word and object forms from the anterior temporal semantic system"
-   },
-   {
-    "deficit": "Prosopagnosia and landmark agnosia (right)",
-    "side": "n/a",
-    "mechanism": "Disconnection of face and place areas from the anterior temporal identity nodes"
-   },
-   {
-    "deficit": "Impaired visual learning and emotional response to visual stimuli",
-    "side": "bilateral",
-    "mechanism": "Disconnection of the visual cortex from the hippocampus and amygdala"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Object naming with recognition by other modalities",
-   "Face recognition and reading",
-   "Visual recognition memory for recently seen pictures"
-  ],
-  "syndromes": [
-   "syn-alexia-without-agraphia",
-   "syn-pca-infarct",
-   "syn-kluver-bucy"
-  ],
-  "pearls": [
-   "The ILF is the wire between seeing and knowing; its lesions look like blindness to the family and normal vision to the optometrist",
-   "Alexia without agraphia is an ILF-splenium disconnection",
-   "Herpes encephalitis cuts the anterior end of this bundle, which is why survivors cannot recognize faces"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 20,
-   "pages": [
-    214,
-    216
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "association",
- "parent": "cerebral-white-matter"
+  "status": "draft",
+  "subsystem": "association",
+  "parent": "cerebral-white-matter"
 }

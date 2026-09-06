@@ -1,124 +1,112 @@
 {
- "kind": "structure",
- "id": "ganglion-submandibular",
- "name": "Submandibular ganglion",
- "synonyms": [],
- "system": "cranial-nerves",
- "meshIds": [],
- "summary": "A small parasympathetic ganglion hanging from the lingual nerve above the deep part of the submandibular gland. Preganglionic fibers from the superior salivatory nucleus travel in the facial nerve, leave it as the chorda tympani in the middle ear, join the lingual nerve in the infratemporal fossa and synapse here; postganglionic fibers supply the submandibular and sublingual glands and the minor glands of the floor of the mouth. The chorda tympani also carries taste from the anterior tongue, so lesions of the facial nerve proximal to it reduce both salivation and taste.",
- "anatomy": {
-  "location": "On the hyoglossus muscle below the lingual nerve, above the deep process of the submandibular gland and lateral to the submandibular duct, in the floor of the mouth.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "facial-motor-nucleus region (superior salivatory nucleus)",
-    "via": "chorda tympani via the lingual nerve"
-   }
-  ],
-  "efferents": [
-   {
-    "to": "submandibular and sublingual glands"
-   }
-  ],
-  "pathways": []
- },
- "function": "Secretomotor supply to the submandibular and sublingual salivary glands.",
- "bloodSupply": {
-  "arteries": [
-   "regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 30,
-     "y": 0,
-     "z": -55
+  "kind": "structure",
+  "id": "ganglion-submandibular",
+  "name": "Submandibular ganglion",
+  "synonyms": [],
+  "system": "cranial-nerves",
+  "meshIds": [],
+  "summary": "A small parasympathetic ganglion hanging from the lingual nerve above the deep part of the submandibular gland. Preganglionic fibers from the superior salivatory nucleus travel in the facial nerve, leave it as the chorda tympani in the middle ear, join the lingual nerve in the infratemporal fossa and synapse here; postganglionic fibers supply the submandibular and sublingual glands and the minor glands of the floor of the mouth. The chorda tympani also carries taste from the anterior tongue, so lesions of the facial nerve proximal to it reduce both salivation and taste.",
+  "anatomy": {
+    "location": "On the hyoglossus muscle below the lingual nerve, above the deep process of the submandibular gland and lateral to the submandibular duct, in the floor of the mouth.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "facial-motor-nucleus region (superior salivatory nucleus)",
+        "via": "chorda tympani via the lingual nerve"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "submandibular and sublingual glands"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "Secretomotor supply to the submandibular and sublingual salivary glands.",
+  "bloodSupply": {
+    "arteries": [
+      "regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 30,
+          "y": 0,
+          "z": -55
+        },
+        "label": "floor of the mouth region; the ganglion sits on hyoglossus (outside the brain volume)"
+      }
+    ],
+    "normalAppearance": "Not identifiable; the submandibular gland and lingual nerve region are seen on neck MRI. Denervated glands atrophy and show fatty change.",
+    "pathology": [
+      {
+        "pathology": "Submandibular gland denervation",
+        "modality": "MRI",
+        "finding": "Small fatty gland after chorda tympani or lingual nerve injury.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Neck MRI when a mass is suspected"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Reduced salivation from the submandibular and sublingual glands",
+        "side": "ipsilateral",
+        "mechanism": "Chorda tympani or ganglion lesion"
+      },
+      {
+        "deficit": "Loss of taste on the anterior two-thirds of the tongue with the same lesion",
+        "side": "ipsilateral",
+        "mechanism": "Chorda tympani also carries taste"
+      },
+      {
+        "deficit": "Numbness of the anterior tongue",
+        "side": "ipsilateral",
+        "mechanism": "Lingual nerve injury (dental surgery)"
+      }
+    ],
+    "examination": [
+      "Taste on the anterior tongue with sugar and salt",
+      "Saliva pooling under the tongue",
+      "Tongue sensation"
+    ],
+    "syndromes": [
+      "syn-facial-palsy-peripheral-vs-central"
+    ],
+    "pearls": [
+      "Loss of taste with a facial palsy places the lesion proximal to the chorda tympani, in the mastoid segment or higher",
+      "Lingual nerve injury after third molar extraction numbs the tongue and can reduce salivation and taste"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-parasympathetic-nervous-system",
+      "section": "Structure and Function"
     },
-    "label": "floor of the mouth region; the ganglion sits on hyoglossus (outside the brain volume)"
-   }
+    {
+      "ref": "sp-submandibular-gland",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not identifiable; the submandibular gland and lingual nerve region are seen on neck MRI. Denervated glands atrophy and show fatty change.",
-  "pathology": [
-   {
-    "pathology": "Submandibular gland denervation",
-    "modality": "MRI",
-    "finding": "Small fatty gland after chorda tympani or lingual nerve injury.",
-    "sequence": "T1"
-   }
+  "tags": [
+    "ganglion"
   ],
-  "sequenceOfChoice": "Neck MRI when a mass is suspected"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Reduced salivation from the submandibular and sublingual glands",
-    "side": "ipsilateral",
-    "mechanism": "Chorda tympani or ganglion lesion"
-   },
-   {
-    "deficit": "Loss of taste on the anterior two-thirds of the tongue with the same lesion",
-    "side": "ipsilateral",
-    "mechanism": "Chorda tympani also carries taste"
-   },
-   {
-    "deficit": "Numbness of the anterior tongue",
-    "side": "ipsilateral",
-    "mechanism": "Lingual nerve injury (dental surgery)"
-   }
-  ],
-  "examination": [
-   "Taste on the anterior tongue with sugar and salt",
-   "Saliva pooling under the tongue",
-   "Tongue sensation"
-  ],
-  "syndromes": [
-   "syn-facial-palsy-peripheral-vs-central"
-  ],
-  "pearls": [
-   "Loss of taste with a facial palsy places the lesion proximal to the chorda tympani, in the mastoid segment or higher",
-   "Lingual nerve injury after third molar extraction numbs the tongue and can reduce salivation and taste"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    398,
-    398
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    337,
-    339
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    120,
-    124
-   ]
+  "status": "draft",
+  "latin": "Ganglion submandibulare",
+  "subsystem": "ganglia",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "ganglion"
- ],
- "status": "draft",
- "latin": "Ganglion submandibulare",
- "subsystem": "ganglia",
- "level": {
-  "region": "peripheral"
- }
 }

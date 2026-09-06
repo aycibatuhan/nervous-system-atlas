@@ -1,10 +1,19 @@
 {
- "kind": "glossary",
- "id": "g-romberg-sign",
- "term": "Romberg sign",
- "definition": "Marked worsening of balance when the eyes are closed while standing with the feet together, indicating loss of proprioceptive input (posterior columns or peripheral nerves) that vision was compensating for. It is not a cerebellar sign.",
- "related": [
-  "g-ataxia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-romberg-sign",
+  "term": "Romberg sign",
+  "definition": "Marked worsening of balance when the eyes are closed while standing with the feet together, indicating loss of proprioceptive input (posterior columns or peripheral nerves) that vision was compensating for. It is not a cerebellar sign.",
+  "related": [
+    "g-ataxia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-romberg-test",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-posterior-column",
+      "section": "Structure and Function"
+    }
+  ]
 }

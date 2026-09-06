@@ -1,200 +1,180 @@
 {
- "kind": "structure",
- "id": "gyrus-cingulate",
- "name": "Cingulate gyrus",
- "synonyms": [],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-cingulate-anterior-l",
-  "gyrus-cingulate-anterior-r",
-  "gyrus-cingulate-posterior-l",
-  "gyrus-cingulate-posterior-r",
-  "gyrus-paracingulate-l",
-  "gyrus-paracingulate-r"
- ],
- "summary": "The long gyrus arching over the corpus callosum on the medial surface, separated from it by the callosal sulcus and from the frontal and parietal cortex by the cingulate sulcus, and continuous behind the splenium with the parahippocampal gyrus through the isthmus. It is the cortical station of the Papez circuit (receiving the anterior thalamic nuclei) and the cingulum bundle runs in its white matter. The anterior cingulate drives motivation, attention, pain affect and autonomic responses; the posterior cingulate and retrosplenial cortex support episodic memory and spatial orientation and are the earliest hypometabolic regions in Alzheimer disease.",
- "anatomy": {
-  "location": "Medial surface above the corpus callosum from the subcallosal area in front to the isthmus behind the splenium; ACA territory (pericallosal and callosomarginal arteries) with the posterior part supplied by the PCA.",
-  "subdivisions": [
-   {
-    "name": "Anterior cingulate cortex (areas 24, 32)",
-    "note": "motivation, error monitoring, pain unpleasantness, autonomic output"
-   },
-   {
-    "name": "Posterior cingulate and retrosplenial cortex (areas 23, 29, 30)",
-    "note": "episodic memory retrieval, navigation, default mode network hub"
-   },
-   {
-    "name": "Cingulum bundle",
-    "note": "white matter connecting frontal, parietal and medial temporal cortex"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "thalamus-anterior-nuclei"
-   }
+  "kind": "structure",
+  "id": "gyrus-cingulate",
+  "name": "Cingulate gyrus",
+  "synonyms": [],
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-cingulate-anterior-l",
+    "gyrus-cingulate-anterior-r",
+    "gyrus-cingulate-posterior-l",
+    "gyrus-cingulate-posterior-r",
+    "gyrus-paracingulate-l",
+    "gyrus-paracingulate-r"
   ],
-  "efferents": [
-   {
-    "to": "gyrus-parahippocampal-uncus (entorhinal)",
-    "via": "cingulum bundle"
-   },
-   {
-    "to": "cortex-prefrontal"
-   }
-  ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Emotional and motivational coloring of behavior, attention and conflict monitoring, affective response to pain, autonomic regulation, memory and spatial orientation.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-aca",
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 5,
-     "y": 20,
-     "z": 30
-    },
-    "label": "anterior cingulate gyrus above the genu"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 5,
-     "y": -45,
-     "z": 30
-    },
-    "label": "posterior cingulate and retrosplenial cortex behind the splenium"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": 10,
-     "z": 30
-    },
-    "label": "cingulate gyri above the corpus callosum"
-   }
-  ],
-  "normalAppearance": "The gyrus directly above the corpus callosum on midline sagittal T1; the cingulate sulcus and its pars marginalis are landmarks for the central sulcus. Posterior cingulate hypometabolism on FDG-PET precedes atrophy in Alzheimer disease; bilateral ACA infarcts involve the anterior cingulate.",
-  "pathology": [
-   {
-    "pathology": "Bilateral ACA infarct",
-    "modality": "MRI",
-    "finding": "Medial frontal and cingulate restriction with akinetic mutism.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "PET",
-    "finding": "Posterior cingulate and precuneus hypometabolism, often before atrophy is visible.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Cingulate glioma",
-    "modality": "MRI",
-    "finding": "Medial frontal infiltrating mass with apathy or seizures.",
-    "sequence": "FLAIR"
-   }
-  ],
-  "sequenceOfChoice": "Sagittal T1/FLAIR; FDG-PET"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Akinetic mutism and abulia",
-    "side": "bilateral",
-    "mechanism": "Bilateral anterior cingulate lesions"
-   },
-   {
-    "deficit": "Apathy, loss of motivation",
-    "side": "bilateral",
-    "mechanism": "Anterior cingulate"
-   },
-   {
-    "deficit": "Indifference to pain (pain asymbolia)",
-    "side": "n/a",
-    "mechanism": "Anterior cingulate affective pain processing"
-   },
-   {
-    "deficit": "Topographical disorientation and memory impairment",
-    "side": "n/a",
-    "mechanism": "Retrosplenial and posterior cingulate cortex"
-   },
-   {
-    "deficit": "Urinary incontinence",
-    "side": "bilateral",
-    "mechanism": "Anterior cingulate micturition control"
-   }
-  ],
-  "examination": [
-   "Spontaneous speech and initiative",
-   "Route finding and orientation",
-   "Delayed recall",
-   "Bladder history"
-  ],
-  "syndromes": [
-   "syn-aca-infarct"
-  ],
-  "pearls": [
-   "Bilateral anterior cingulate damage produces a patient who is awake and silent: akinetic mutism",
-   "The posterior cingulate is where Alzheimer disease first shows on PET"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    257,
-    257
-   ]
+  "summary": "The long gyrus arching over the corpus callosum on the medial surface, separated from it by the callosal sulcus and from the frontal and parietal cortex by the cingulate sulcus, and continuous behind the splenium with the parahippocampal gyrus through the isthmus. It is the cortical station of the Papez circuit (receiving the anterior thalamic nuclei) and the cingulum bundle runs in its white matter. The anterior cingulate drives motivation, attention, pain affect and autonomic responses; the posterior cingulate and retrosplenial cortex support episodic memory and spatial orientation and are the earliest hypometabolic regions in Alzheimer disease.",
+  "anatomy": {
+    "location": "Medial surface above the corpus callosum from the subcallosal area in front to the isthmus behind the splenium; ACA territory (pericallosal and callosomarginal arteries) with the posterior part supplied by the PCA.",
+    "subdivisions": [
+      {
+        "name": "Anterior cingulate cortex (areas 24, 32)",
+        "note": "motivation, error monitoring, pain unpleasantness, autonomic output"
+      },
+      {
+        "name": "Posterior cingulate and retrosplenial cortex (areas 23, 29, 30)",
+        "note": "episodic memory retrieval, navigation, default mode network hub"
+      },
+      {
+        "name": "Cingulum bundle",
+        "note": "white matter connecting frontal, parietal and medial temporal cortex"
+      }
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    304,
-    305
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "thalamus-anterior-nuclei"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "gyrus-parahippocampal-uncus (entorhinal)",
+        "via": "cingulum bundle"
+      },
+      {
+        "to": "cortex-prefrontal"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    54
-   ]
+  "function": "Emotional and motivational coloring of behavior, attention and conflict monitoring, affective response to pain, autonomic regulation, memory and spatial orientation.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-aca",
+      "territory-pca"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    235,
-    237
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "limbic"
- ],
- "status": "draft",
- "latin": "Gyrus cinguli",
- "subsystem": "lobe-limbic"
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 5,
+          "y": 20,
+          "z": 30
+        },
+        "label": "anterior cingulate gyrus above the genu"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 5,
+          "y": -45,
+          "z": 30
+        },
+        "label": "posterior cingulate and retrosplenial cortex behind the splenium"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": 10,
+          "z": 30
+        },
+        "label": "cingulate gyri above the corpus callosum"
+      }
+    ],
+    "normalAppearance": "The gyrus directly above the corpus callosum on midline sagittal T1; the cingulate sulcus and its pars marginalis are landmarks for the central sulcus. Posterior cingulate hypometabolism on FDG-PET precedes atrophy in Alzheimer disease; bilateral ACA infarcts involve the anterior cingulate.",
+    "pathology": [
+      {
+        "pathology": "Bilateral ACA infarct",
+        "modality": "MRI",
+        "finding": "Medial frontal and cingulate restriction with akinetic mutism.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "PET",
+        "finding": "Posterior cingulate and precuneus hypometabolism, often before atrophy is visible.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Cingulate glioma",
+        "modality": "MRI",
+        "finding": "Medial frontal infiltrating mass with apathy or seizures.",
+        "sequence": "FLAIR"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T1/FLAIR; FDG-PET"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Akinetic mutism and abulia",
+        "side": "bilateral",
+        "mechanism": "Bilateral anterior cingulate lesions"
+      },
+      {
+        "deficit": "Apathy, loss of motivation",
+        "side": "bilateral",
+        "mechanism": "Anterior cingulate"
+      },
+      {
+        "deficit": "Indifference to pain (pain asymbolia)",
+        "side": "n/a",
+        "mechanism": "Anterior cingulate affective pain processing"
+      },
+      {
+        "deficit": "Topographical disorientation and memory impairment",
+        "side": "n/a",
+        "mechanism": "Retrosplenial and posterior cingulate cortex"
+      },
+      {
+        "deficit": "Urinary incontinence",
+        "side": "bilateral",
+        "mechanism": "Anterior cingulate micturition control"
+      }
+    ],
+    "examination": [
+      "Spontaneous speech and initiative",
+      "Route finding and orientation",
+      "Delayed recall",
+      "Bladder history"
+    ],
+    "syndromes": [
+      "syn-aca-infarct"
+    ],
+    "pearls": [
+      "Bilateral anterior cingulate damage produces a patient who is awake and silent: akinetic mutism",
+      "The posterior cingulate is where Alzheimer disease first shows on PET"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "limbic"
+  ],
+  "status": "draft",
+  "latin": "Gyrus cinguli",
+  "subsystem": "lobe-limbic"
 }

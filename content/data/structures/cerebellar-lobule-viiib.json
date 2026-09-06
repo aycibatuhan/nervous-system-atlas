@@ -1,161 +1,145 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-viiib",
- "name": "Lobule VIIIB",
- "synonyms": [
-  "biventer lobule (lower part)"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-viiib-l",
-  "cerebellar-lobule-viiib-r"
- ],
- "summary": "Lobule VIIIB is the lower part of the biventer lobule on the inferior cerebellar surface, between lobule VIIIA above and lobule IX (the tonsil) below, completing the second sensorimotor map of the posterior lobe with a representation of the face and the limbs. It receives spinal, trigeminal and pontine sensorimotor input and projects through the interposed and dentate nuclei, contributing to limb coordination, oral movements and the timing of speech, and its vermian part (pyramis and uvula boundary) supports trunk posture. It is in the posterior inferior cerebellar artery territory and is involved in PICA infarcts and in the tonsillar crowding of Chiari malformation, and it is the lobule adjacent to the tonsils that is compressed in tonsillar herniation.",
- "anatomy": {
-  "location": "Lower biventer lobule between the intrabiventer fissure above and the secondary fissure below, lateral to the vermian pyramis-uvula junction, on the inferior surface of the hemisphere immediately above and lateral to the tonsil, against the occipital bone near the foramen magnum.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Sensorimotor cortex via the pontine nuclei",
-    "via": "middle cerebellar peduncle"
-   },
-   {
-    "from": "Spinal cord and trigeminal nuclei",
-    "via": "spinocerebellar and trigeminocerebellar fibers"
-   },
-   {
-    "from": "Inferior olive",
-    "via": "climbing fibers"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-viiib",
+  "name": "Lobule VIIIB",
+  "synonyms": [
+    "biventer lobule (lower part)"
   ],
-  "efferents": [
-   {
-    "to": "Interposed and dentate nuclei",
-    "via": "Purkinje axons"
-   },
-   {
-    "to": "Fastigial nucleus (vermian part)",
-    "via": "Purkinje axons"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-viiib-l",
+    "cerebellar-lobule-viiib-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Lobule VIIIB receives the sensorimotor cortex through the pontine nuclei and proprioceptive input from the limbs and face through the spinocerebellar and trigeminocerebellar pathways, and its Purkinje output through the interposed nuclei adjusts the gain of stretch reflexes and the timing of agonist-antagonist activation in ongoing movement; it participates with VIIIA in rhythmic movement, and with lobule VI in the coordination of the mouth and larynx. Its vermian part contributes vestibulospinal control of stance. Lesions cause ipsilateral limb dysmetria, mild dysarthria and gait instability, and the lobule's proximity to the tonsils means it is deformed early by downward displacement of the cerebellum.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-inferior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "cerebellar-lobule-viiib-l"
-    },
-    "label": "lobule VIIIB above the tonsil"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-viiib-r"
-    },
-    "label": "lower biventer lobule near the foramen magnum"
-   }
-  ],
-  "normalAppearance": "The lowest hemispheric lobule above the tonsil on coronal and sagittal images, immediately lateral to the uvula and pyramis of the vermis.",
-  "pathology": [
-   {
-    "pathology": "PICA territory infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the inferior hemisphere and tonsil with limb ataxia, vertigo and risk of tonsillar herniation from swelling.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Chiari I malformation",
-    "modality": "MRI",
-    "finding": "Tonsillar descent below the foramen magnum with crowding of lobules VIII-IX and a possible syrinx; occipital headache on cough.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Tonsillar herniation",
-    "modality": "CT",
-    "finding": "Obliteration of the cisterna magna with the tonsils and lower biventer lobules pushed into the foramen magnum, compressing the medulla.",
-    "sequence": "CT non-contrast"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia",
-    "side": "ipsilateral",
-    "mechanism": "Loss of the lower part of the second sensorimotor map"
-   },
-   {
-    "deficit": "Mild dysarthria and oral incoordination",
-    "side": "ipsilateral",
-    "mechanism": "Involvement of the face representation"
-   },
-   {
-    "deficit": "Gait instability",
-    "side": "bilateral",
-    "mechanism": "Vermian pyramis-uvula involvement"
-   }
-  ],
-  "examination": [
-   "Limb coordination tests",
-   "Speech articulation",
-   "Cough headache and lower cranial nerve signs when Chiari or herniation is suspected"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-tonsillar-herniation",
-   "syn-chiari-tonsillar-ectopia"
-  ],
-  "pearls": [
-   "The lowest cerebellar lobules are the first to be crowded when the posterior fossa is small",
-   "A PICA infarct that swells pushes VIIIB and the tonsil into the foramen magnum",
-   "Face and limbs are mapped again here, upside down relative to the anterior lobe"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
+  "summary": "Lobule VIIIB is the lower part of the biventer lobule on the inferior cerebellar surface, between lobule VIIIA above and lobule IX (the tonsil) below, completing the second sensorimotor map of the posterior lobe with a representation of the face and the limbs. It receives spinal, trigeminal and pontine sensorimotor input and projects through the interposed and dentate nuclei, contributing to limb coordination, oral movements and the timing of speech, and its vermian part (pyramis and uvula boundary) supports trunk posture. It is in the posterior inferior cerebellar artery territory and is involved in PICA infarcts and in the tonsillar crowding of Chiari malformation, and it is the lobule adjacent to the tonsils that is compressed in tonsillar herniation.",
+  "anatomy": {
+    "location": "Lower biventer lobule between the intrabiventer fissure above and the secondary fissure below, lateral to the vermian pyramis-uvula junction, on the inferior surface of the hemisphere immediately above and lateral to the tonsil, against the occipital bone near the foramen magnum.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Sensorimotor cortex via the pontine nuclei",
+        "via": "middle cerebellar peduncle"
+      },
+      {
+        "from": "Spinal cord and trigeminal nuclei",
+        "via": "spinocerebellar and trigeminocerebellar fibers"
+      },
+      {
+        "from": "Inferior olive",
+        "via": "climbing fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Interposed and dentate nuclei",
+        "via": "Purkinje axons"
+      },
+      {
+        "to": "Fastigial nucleus (vermian part)",
+        "via": "Purkinje axons"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    271,
-    274
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "cerebellar-hemisphere"
+  "function": "Lobule VIIIB receives the sensorimotor cortex through the pontine nuclei and proprioceptive input from the limbs and face through the spinocerebellar and trigeminocerebellar pathways, and its Purkinje output through the interposed nuclei adjusts the gain of stretch reflexes and the timing of agonist-antagonist activation in ongoing movement; it participates with VIIIA in rhythmic movement, and with lobule VI in the coordination of the mouth and larynx. Its vermian part contributes vestibulospinal control of stance. Lesions cause ipsilateral limb dysmetria, mild dysarthria and gait instability, and the lobule's proximity to the tonsils means it is deformed early by downward displacement of the cerebellum.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-inferior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "cerebellar-lobule-viiib-l"
+        },
+        "label": "lobule VIIIB above the tonsil"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-viiib-r"
+        },
+        "label": "lower biventer lobule near the foramen magnum"
+      }
+    ],
+    "normalAppearance": "The lowest hemispheric lobule above the tonsil on coronal and sagittal images, immediately lateral to the uvula and pyramis of the vermis.",
+    "pathology": [
+      {
+        "pathology": "PICA territory infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the inferior hemisphere and tonsil with limb ataxia, vertigo and risk of tonsillar herniation from swelling.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Chiari I malformation",
+        "modality": "MRI",
+        "finding": "Tonsillar descent below the foramen magnum with crowding of lobules VIII-IX and a possible syrinx; occipital headache on cough.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Tonsillar herniation",
+        "modality": "CT",
+        "finding": "Obliteration of the cisterna magna with the tonsils and lower biventer lobules pushed into the foramen magnum, compressing the medulla.",
+        "sequence": "CT non-contrast"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the lower part of the second sensorimotor map"
+      },
+      {
+        "deficit": "Mild dysarthria and oral incoordination",
+        "side": "ipsilateral",
+        "mechanism": "Involvement of the face representation"
+      },
+      {
+        "deficit": "Gait instability",
+        "side": "bilateral",
+        "mechanism": "Vermian pyramis-uvula involvement"
+      }
+    ],
+    "examination": [
+      "Limb coordination tests",
+      "Speech articulation",
+      "Cough headache and lower cranial nerve signs when Chiari or herniation is suspected"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-tonsillar-herniation",
+      "syn-chiari-tonsillar-ectopia"
+    ],
+    "pearls": [
+      "The lowest cerebellar lobules are the first to be crowded when the posterior fossa is small",
+      "A PICA infarct that swells pushes VIIIB and the tonsil into the foramen magnum",
+      "Face and limbs are mapped again here, upside down relative to the anterior lobe"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-spinocerebellar-dorsal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "cerebellar-hemisphere"
 }

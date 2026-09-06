@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-motor-unit",
- "term": "Motor unit",
- "definition": "One lower motor neuron and all the muscle fibers it innervates. Denervation and reinnervation change the size and shape of motor unit potentials on EMG: large in reinnervation, small and polyphasic in myopathy.",
- "related": [
-  "g-lower-motor-neuron",
-  "g-fasciculation"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-motor-unit",
+  "term": "Motor unit",
+  "definition": "One lower motor neuron and all the muscle fibers it innervates. Denervation and reinnervation change the size and shape of motor unit potentials on EMG: large in reinnervation, small and polyphasic in myopathy.",
+  "related": [
+    "g-lower-motor-neuron",
+    "g-fasciculation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-motor-neuron",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-nerve-conduction-studies-and-electromyography",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-muscle-contraction",
+      "section": "Pathophysiology"
+    }
+  ]
 }

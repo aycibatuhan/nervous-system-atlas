@@ -1,108 +1,104 @@
 {
- "kind": "structure",
- "id": "nerve-musculocutaneous",
- "name": "Musculocutaneous nerve",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The terminal branch of the lateral cord (C5–C7) that pierces coracobrachialis, runs between biceps and brachialis supplying all three, and emerges lateral to the biceps tendon as the lateral cutaneous nerve of the forearm. It is rarely injured alone (heavy lifting, shoulder surgery, strenuous exercise), and its lesion produces weak elbow flexion and supination with an absent biceps reflex and numbness over the lateral forearm; brachioradialis (radial nerve) still allows some flexion.",
- "anatomy": {
-  "location": "From the lateral cord in the axilla, through coracobrachialis, down the arm between biceps brachii and brachialis, continuing as the lateral antebrachial cutaneous nerve along the radial border of the forearm.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Motor supply to coracobrachialis, biceps brachii and brachialis (elbow flexion, forearm supination, shoulder flexion); sensory supply to the lateral forearm.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
-  ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
-    },
-    "label": "cervical cord; fibers from C5–C7"
-   }
-  ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Arm MRI shows biceps and brachialis denervation; ultrasound follows the nerve through coracobrachialis.",
-  "pathology": [
-   {
-    "pathology": "Musculocutaneous neuropathy",
-    "modality": "MRI",
-    "finding": "STIR hyperintensity of biceps, brachialis and coracobrachialis after strenuous exertion or surgery.",
-    "sequence": "STIR"
-   }
-  ],
-  "sequenceOfChoice": "EMG; ultrasound"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Weak elbow flexion and supination with absent biceps jerk",
-    "side": "ipsilateral",
-    "mechanism": "Biceps and brachialis paralysis; brachioradialis preserved"
-   },
-   {
-    "deficit": "Numbness of the lateral forearm",
-    "side": "ipsilateral",
-    "mechanism": "Lateral antebrachial cutaneous nerve"
-   },
-   {
-    "deficit": "Preserved deltoid and supraspinatus",
-    "side": "n/a",
-    "mechanism": "Distinguishes it from an upper trunk (Erb) lesion"
-   }
-  ],
-  "examination": [
-   "Elbow flexion with the forearm supinated (biceps) versus in mid-position (brachioradialis)",
-   "Biceps reflex",
-   "Sensation over the lateral forearm versus the lateral arm (axillary) and thumb (C6)"
-  ],
-  "syndromes": [
-   "syn-erb-duchenne"
-  ],
-  "pearls": [
-   "Weak biceps with normal deltoid and normal brachioradialis is the musculocutaneous nerve; add deltoid and it is the upper trunk or C5–C6",
-   "Lateral forearm numbness with intact thumb sensation separates the nerve from a C6 root"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    113,
-    113
-   ]
+  "kind": "structure",
+  "id": "nerve-musculocutaneous",
+  "name": "Musculocutaneous nerve",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [],
+  "summary": "The terminal branch of the lateral cord (C5–C7) that pierces coracobrachialis, runs between biceps and brachialis supplying all three, and emerges lateral to the biceps tendon as the lateral cutaneous nerve of the forearm. It is rarely injured alone (heavy lifting, shoulder surgery, strenuous exercise), and its lesion produces weak elbow flexion and supination with an absent biceps reflex and numbness over the lateral forearm; brachioradialis (radial nerve) still allows some flexion.",
+  "anatomy": {
+    "location": "From the lateral cord in the axilla, through coracobrachialis, down the arm between biceps brachii and brachialis, continuing as the lateral antebrachial cutaneous nerve along the radial border of the forearm.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    147
-   ]
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Motor supply to coracobrachialis, biceps brachii and brachialis (elbow flexion, forearm supination, shoulder flexion); sensory supply to the lateral forearm.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervical cord; fibers from C5–C7"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Arm MRI shows biceps and brachialis denervation; ultrasound follows the nerve through coracobrachialis.",
+    "pathology": [
+      {
+        "pathology": "Musculocutaneous neuropathy",
+        "modality": "MRI",
+        "finding": "STIR hyperintensity of biceps, brachialis and coracobrachialis after strenuous exertion or surgery.",
+        "sequence": "STIR"
+      }
+    ],
+    "sequenceOfChoice": "EMG; ultrasound"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Weak elbow flexion and supination with absent biceps jerk",
+        "side": "ipsilateral",
+        "mechanism": "Biceps and brachialis paralysis; brachioradialis preserved"
+      },
+      {
+        "deficit": "Numbness of the lateral forearm",
+        "side": "ipsilateral",
+        "mechanism": "Lateral antebrachial cutaneous nerve"
+      },
+      {
+        "deficit": "Preserved deltoid and supraspinatus",
+        "side": "n/a",
+        "mechanism": "Distinguishes it from an upper trunk (Erb) lesion"
+      }
+    ],
+    "examination": [
+      "Elbow flexion with the forearm supinated (biceps) versus in mid-position (brachioradialis)",
+      "Biceps reflex",
+      "Sensation over the lateral forearm versus the lateral arm (axillary) and thumb (C6)"
+    ],
+    "syndromes": [
+      "syn-erb-duchenne"
+    ],
+    "pearls": [
+      "Weak biceps with normal deltoid and normal brachioradialis is the musculocutaneous nerve; add deltoid and it is the upper trunk or C5–C6",
+      "Lateral forearm numbness with intact thumb sensation separates the nerve from a C6 root"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-musculocutaneous-nerve",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-peripheral-nerve-injury",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "pns",
+    "upper-limb"
+  ],
+  "status": "draft",
+  "latin": "Nervus musculocutaneus",
+  "subsystem": "upper-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "upper-limb"
- ],
- "status": "draft",
- "latin": "Nervus musculocutaneus",
- "subsystem": "upper-limb",
- "level": {
-  "region": "peripheral"
- }
 }

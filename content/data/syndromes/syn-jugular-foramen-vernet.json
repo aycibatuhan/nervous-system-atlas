@@ -1,147 +1,131 @@
 {
- "kind": "syndrome",
- "id": "syn-jugular-foramen-vernet",
- "name": "Jugular foramen syndrome (Vernet)",
- "eponyms": [
-  "Vernet syndrome",
-  "Collet–Sicard (with XII)",
-  "Villaret (with Horner)"
- ],
- "category": "neoplastic",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cn-09-glossopharyngeal",
-   "cn-10-vagus",
-   "cn-11-accessory",
-   "nucleus-ambiguus",
-   "sinus-transverse-sigmoid"
+  "kind": "syndrome",
+  "id": "syn-jugular-foramen-vernet",
+  "name": "Jugular foramen syndrome (Vernet)",
+  "eponyms": [
+    "Vernet syndrome",
+    "Collet–Sicard (with XII)",
+    "Villaret (with Horner)"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -30,
-   "y": -30,
-   "z": -40
+  "category": "neoplastic",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cn-09-glossopharyngeal",
+      "cn-10-vagus",
+      "cn-11-accessory",
+      "nucleus-ambiguus",
+      "sinus-transverse-sigmoid"
+    ],
+    "side": "ipsilateral"
   },
-  "radiusMm": 10
- },
- "presentation": "The patient has become hoarse, chokes on liquids and has lost the ability to shrug one shoulder; the examiner finds that the palate lifts only on one side with the uvula pulled toward the healthy side, the gag is absent on the affected side, the sternocleidomastoid and upper trapezius are wasted, and taste and sensation are gone from the back of the tongue. Pulsatile tinnitus and a red mass behind the eardrum point to a glomus tumor.",
- "deficits": [
-  {
-   "modality": "bulbar",
-   "side": "ipsilateral",
-   "distribution": "palate, pharynx, larynx",
-   "sign": "Palatal droop, uvula deviates to the intact side, dysphagia, hoarseness with vocal cord paralysis, absent gag",
-   "substrate": "nucleus-ambiguus"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -30,
+      "y": -30,
+      "z": -40
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "sensory-light-touch",
-   "side": "ipsilateral",
-   "distribution": "posterior tongue, pharynx",
-   "sign": "Loss of taste and sensation on the posterior third of the tongue and pharynx",
-   "substrate": "cn-09-glossopharyngeal"
+  "presentation": "The patient has become hoarse, chokes on liquids and has lost the ability to shrug one shoulder; the examiner finds that the palate lifts only on one side with the uvula pulled toward the healthy side, the gag is absent on the affected side, the sternocleidomastoid and upper trapezius are wasted, and taste and sensation are gone from the back of the tongue. Pulsatile tinnitus and a red mass behind the eardrum point to a glomus tumor.",
+  "deficits": [
+    {
+      "modality": "bulbar",
+      "side": "ipsilateral",
+      "distribution": "palate, pharynx, larynx",
+      "sign": "Palatal droop, uvula deviates to the intact side, dysphagia, hoarseness with vocal cord paralysis, absent gag",
+      "substrate": "nucleus-ambiguus"
+    },
+    {
+      "modality": "sensory-light-touch",
+      "side": "ipsilateral",
+      "distribution": "posterior tongue, pharynx",
+      "sign": "Loss of taste and sensation on the posterior third of the tongue and pharynx",
+      "substrate": "cn-09-glossopharyngeal"
+    },
+    {
+      "modality": "motor",
+      "side": "ipsilateral",
+      "distribution": "sternocleidomastoid and trapezius",
+      "sign": "Weak head turning to the opposite side and shoulder shrug; shoulder droop",
+      "substrate": "cn-11-accessory"
+    },
+    {
+      "modality": "auditory",
+      "side": "ipsilateral",
+      "distribution": "ear",
+      "sign": "Pulsatile tinnitus and conductive hearing loss with glomus jugulare tumors",
+      "substrate": "sinus-transverse-sigmoid"
+    }
+  ],
+  "reasoning": "The glossopharyngeal, vagus and accessory nerves leave the skull together through the jugular foramen alongside the jugular bulb, so a lesion at the foramen paralyzes all three on the same side; these are uncrossed lower motor neuron and sensory pathways, and every sign is ipsilateral. The vagus supplies the palate, pharynx and larynx through the pharyngeal plexus and the laryngeal nerves, so the palate on the affected side fails to lift and the uvula is drawn toward the intact side by the working muscles, the vocal cord lies in the paramedian position and the pharynx does not clear, hence hoarseness and aspiration. The glossopharyngeal nerve carries sensation and taste from the posterior tongue and is the afferent limb of the gag, which is therefore absent when the affected side is stimulated. The spinal accessory nerve, which has climbed through the foramen magnum to leave with them, supplies the sternocleidomastoid that turns the head to the opposite side and the trapezius that shrugs the shoulder. If the hypoglossal nerve, which exits through the neighboring hypoglossal canal, is added, the syndrome becomes Collet–Sicard, and involvement of the sympathetic chain below the skull base adds a Horner (Villaret): the combination maps the lesion's extent along the skull base. A nuclear lesion in the medulla would add crossed long-tract signs and spare the accessory nerve's spinal root.",
+  "imagingFindings": [
+    {
+      "pathology": "Glomus jugulare paraganglioma",
+      "modality": "MRI",
+      "finding": "Avidly enhancing mass expanding the jugular foramen with a 'salt and pepper' appearance from flow voids; permeative bone destruction on CT.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Schwannoma or meningioma of the foramen",
+      "modality": "MRI",
+      "finding": "Smooth enlargement of the foramen with an enhancing mass; meningiomas show a dural tail and sclerosis.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Skull base metastasis or nasopharyngeal carcinoma",
+      "modality": "CT",
+      "finding": "Destructive lesion of the jugular foramen and petrous bone.",
+      "sequence": "CT contrast"
+    }
+  ],
+  "commonCauses": [
+    "Glomus jugulare tumor",
+    "Schwannoma of IX, X or XI",
+    "Meningioma",
+    "Skull base metastasis or nasopharyngeal carcinoma",
+    "Jugular vein thrombosis or internal carotid dissection",
+    "Skull base fracture"
+  ],
+  "mimics": [
+    {
+      "name": "Medullary infarct (Wallenberg)",
+      "howToDistinguish": "Crossed sensory loss, Horner and ataxia; spinal accessory spared"
+    },
+    {
+      "name": "Vagal palsy alone",
+      "howToDistinguish": "Palatal and laryngeal signs without tongue sensory loss or shoulder weakness"
+    },
+    {
+      "name": "Myasthenia gravis",
+      "howToDistinguish": "Bilateral fatigable bulbar weakness"
+    }
+  ],
+  "management": [
+    "Contrast MRI of the skull base with CT for bone; catheter angiography if a glomus tumor is suspected",
+    "Swallow assessment; laryngoscopy for cord position",
+    "Surgery or radiotherapy according to tumor type"
+  ],
+  "citations": [
+    {
+      "ref": "sp-jugular-foramen-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-jugular-foramen",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -30,
+      "y": -30,
+      "z": -40
+    },
+    "label": "jugular foramen at the skull base"
   },
-  {
-   "modality": "motor",
-   "side": "ipsilateral",
-   "distribution": "sternocleidomastoid and trapezius",
-   "sign": "Weak head turning to the opposite side and shoulder shrug; shoulder droop",
-   "substrate": "cn-11-accessory"
-  },
-  {
-   "modality": "auditory",
-   "side": "ipsilateral",
-   "distribution": "ear",
-   "sign": "Pulsatile tinnitus and conductive hearing loss with glomus jugulare tumors",
-   "substrate": "sinus-transverse-sigmoid"
-  }
- ],
- "reasoning": "The glossopharyngeal, vagus and accessory nerves leave the skull together through the jugular foramen alongside the jugular bulb, so a lesion at the foramen paralyzes all three on the same side; these are uncrossed lower motor neuron and sensory pathways, and every sign is ipsilateral. The vagus supplies the palate, pharynx and larynx through the pharyngeal plexus and the laryngeal nerves, so the palate on the affected side fails to lift and the uvula is drawn toward the intact side by the working muscles, the vocal cord lies in the paramedian position and the pharynx does not clear, hence hoarseness and aspiration. The glossopharyngeal nerve carries sensation and taste from the posterior tongue and is the afferent limb of the gag, which is therefore absent when the affected side is stimulated. The spinal accessory nerve, which has climbed through the foramen magnum to leave with them, supplies the sternocleidomastoid that turns the head to the opposite side and the trapezius that shrugs the shoulder. If the hypoglossal nerve, which exits through the neighboring hypoglossal canal, is added, the syndrome becomes Collet–Sicard, and involvement of the sympathetic chain below the skull base adds a Horner (Villaret): the combination maps the lesion's extent along the skull base. A nuclear lesion in the medulla would add crossed long-tract signs and spare the accessory nerve's spinal root.",
- "imagingFindings": [
-  {
-   "pathology": "Glomus jugulare paraganglioma",
-   "modality": "MRI",
-   "finding": "Avidly enhancing mass expanding the jugular foramen with a 'salt and pepper' appearance from flow voids; permeative bone destruction on CT.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Schwannoma or meningioma of the foramen",
-   "modality": "MRI",
-   "finding": "Smooth enlargement of the foramen with an enhancing mass; meningiomas show a dural tail and sclerosis.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Skull base metastasis or nasopharyngeal carcinoma",
-   "modality": "CT",
-   "finding": "Destructive lesion of the jugular foramen and petrous bone.",
-   "sequence": "CT contrast"
-  }
- ],
- "commonCauses": [
-  "Glomus jugulare tumor",
-  "Schwannoma of IX, X or XI",
-  "Meningioma",
-  "Skull base metastasis or nasopharyngeal carcinoma",
-  "Jugular vein thrombosis or internal carotid dissection",
-  "Skull base fracture"
- ],
- "mimics": [
-  {
-   "name": "Medullary infarct (Wallenberg)",
-   "howToDistinguish": "Crossed sensory loss, Horner and ataxia; spinal accessory spared"
-  },
-  {
-   "name": "Vagal palsy alone",
-   "howToDistinguish": "Palatal and laryngeal signs without tongue sensory loss or shoulder weakness"
-  },
-  {
-   "name": "Myasthenia gravis",
-   "howToDistinguish": "Bilateral fatigable bulbar weakness"
-  }
- ],
- "management": [
-  "Contrast MRI of the skull base with CT for bone; catheter angiography if a glomus tumor is suspected",
-  "Swallow assessment; laryngoscopy for cord position",
-  "Surgery or radiotherapy according to tumor type"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    343,
-    346
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    355,
-    355
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 14,
-   "pages": [
-    126,
-    126
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -30,
-   "y": -30,
-   "z": -40
-  },
-  "label": "jugular foramen at the skull base"
- },
- "cameraPreset": "inferior"
+  "cameraPreset": "inferior"
 }

@@ -1,205 +1,173 @@
 {
- "kind": "structure",
- "id": "ventricle-lateral",
- "name": "Lateral ventricles",
- "synonyms": [],
- "system": "ventricles-csf",
- "meshIds": [
-  "ventricle-lateral-l",
-  "ventricle-lateral-r",
-  "ventricle-lateral-inferior-horn-l",
-  "ventricle-lateral-inferior-horn-r",
-  "bp3d-lateral-ventricle-l",
-  "bp3d-lateral-ventricle-r"
- ],
- "summary": "Each cerebral hemisphere contains a C-shaped lateral ventricle that follows the curve of the caudate nucleus and hippocampus: a frontal horn in front of the foramen of Monro, a body beneath the corpus callosum, a trigone (atrium) where the posterior and inferior horns diverge, an occipital horn and a temporal (inferior) horn ending near the amygdala. Choroid plexus in the body, atrium and temporal horn produces most of the CSF. The ventricles are the first structures to change shape with hydrocephalus, atrophy or a mass, so their size and symmetry are read on every scan.",
- "anatomy": {
-  "location": "Frontal horn between the genu of the corpus callosum and the caudate head, lateral to the septum pellucidum; body under the callosal body with the thalamus in its floor; atrium at the splenium; occipital horn indenting the calcar avis; temporal horn in the medial temporal lobe above the hippocampus.",
-  "subdivisions": [
-   {
-    "name": "Frontal (anterior) horn",
-    "note": "in front of the foramen of Monro; caudate head lateral, septum medial; no choroid plexus"
-   },
-   {
-    "name": "Body",
-    "note": "roof corpus callosum, floor thalamus and caudate body, medial wall fornix"
-   },
-   {
-    "name": "Atrium (trigone)",
-    "note": "junction of body, occipital and temporal horns; large glomus of choroid plexus"
-   },
-   {
-    "name": "Occipital (posterior) horn",
-    "note": "variable in size, often asymmetrical; calcar avis on the medial wall"
-   },
-   {
-    "name": "Temporal (inferior) horn",
-    "note": "roof tail of caudate and stria terminalis, floor hippocampus; first to enlarge in obstructive hydrocephalus"
-   }
+  "kind": "structure",
+  "id": "ventricle-lateral",
+  "name": "Lateral ventricles",
+  "synonyms": [],
+  "system": "ventricles-csf",
+  "meshIds": [
+    "ventricle-lateral-l",
+    "ventricle-lateral-r",
+    "ventricle-lateral-inferior-horn-l",
+    "ventricle-lateral-inferior-horn-r",
+    "bp3d-lateral-ventricle-l",
+    "bp3d-lateral-ventricle-r"
   ],
-  "relations": {
-   "medial": "septum pellucidum (frontal horn) and fornix (body)",
-   "lateral": "caudate nucleus",
-   "superior": "corpus callosum",
-   "inferior": "thalamus (body), hippocampus (temporal horn)"
-  }
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Contain and circulate CSF produced by the choroid plexus toward the third ventricle through the interventricular foramina; buffer the brain against pressure changes.",
- "bloodSupply": {
-  "arteries": [
-   "artery-anterior-choroidal",
-   "artery-pca"
+  "summary": "Each cerebral hemisphere contains a C-shaped lateral ventricle that follows the curve of the caudate nucleus and hippocampus: a frontal horn in front of the foramen of Monro, a body beneath the corpus callosum, a trigone (atrium) where the posterior and inferior horns diverge, an occipital horn and a temporal (inferior) horn ending near the amygdala. Choroid plexus in the body, atrium and temporal horn produces most of the CSF. The ventricles are the first structures to change shape with hydrocephalus, atrophy or a mass, so their size and symmetry are read on every scan.",
+  "anatomy": {
+    "location": "Frontal horn between the genu of the corpus callosum and the caudate head, lateral to the septum pellucidum; body under the callosal body with the thalamus in its floor; atrium at the splenium; occipital horn indenting the calcar avis; temporal horn in the medial temporal lobe above the hippocampus.",
+    "subdivisions": [
+      {
+        "name": "Frontal (anterior) horn",
+        "note": "in front of the foramen of Monro; caudate head lateral, septum medial; no choroid plexus"
+      },
+      {
+        "name": "Body",
+        "note": "roof corpus callosum, floor thalamus and caudate body, medial wall fornix"
+      },
+      {
+        "name": "Atrium (trigone)",
+        "note": "junction of body, occipital and temporal horns; large glomus of choroid plexus"
+      },
+      {
+        "name": "Occipital (posterior) horn",
+        "note": "variable in size, often asymmetrical; calcar avis on the medial wall"
+      },
+      {
+        "name": "Temporal (inferior) horn",
+        "note": "roof tail of caudate and stria terminalis, floor hippocampus; first to enlarge in obstructive hydrocephalus"
+      }
+    ],
+    "relations": {
+      "medial": "septum pellucidum (frontal horn) and fornix (body)",
+      "lateral": "caudate nucleus",
+      "superior": "corpus callosum",
+      "inferior": "thalamus (body), hippocampus (temporal horn)"
+    }
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Contain and circulate CSF produced by the choroid plexus toward the third ventricle through the interventricular foramina; buffer the brain against pressure changes.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-anterior-choroidal",
+      "artery-pca"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 15,
+          "y": -10,
+          "z": 15
+        },
+        "label": "bodies and frontal horns at the level of the foramen of Monro"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 15,
+          "y": 10,
+          "z": 15
+        },
+        "label": "frontal horns with the caudate heads lateral"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": -25,
+          "z": -12
+        },
+        "label": "temporal horns above the hippocampi"
+      }
+    ],
+    "normalAppearance": "CSF-dark on T1, bright on T2, suppressed on FLAIR. Frontal horns are slit-like or gently rounded; a frontal horn ratio (Evans index) above 0.3 suggests enlargement. Temporal horns should be barely visible; their dilatation is an early sign of obstructive hydrocephalus. Periventricular FLAIR caps at the frontal horns are common and benign in the elderly.",
+    "pathology": [
+      {
+        "pathology": "Obstructive hydrocephalus",
+        "modality": "CT",
+        "finding": "Dilated lateral and third ventricles with rounded frontal horns, dilated temporal horns and periventricular hypodensity (transependymal edema) out of proportion to sulcal size; the fourth ventricle is normal if the aqueduct is blocked.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Normal pressure hydrocephalus",
+        "modality": "MRI",
+        "finding": "Ventriculomegaly with tight high-convexity sulci and widened Sylvian fissures (DESH), an acute callosal angle, and a flow void in the aqueduct.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Intraventricular hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense blood layering in the occipital horns and filling the ventricles, from an intracerebral hemorrhage rupturing through or from germinal matrix bleeding in preterm infants.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Ex vacuo dilatation (atrophy)",
+        "modality": "MRI",
+        "finding": "Enlarged ventricles proportional to enlarged sulci, no temporal horn dilatation or transependymal edema.",
+        "sequence": "T1"
+      }
+    ],
+    "sequenceOfChoice": "Non-contrast CT for acute ventricular size; MRI T2/FLAIR for the cause"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Headache, vomiting, papilledema, sixth nerve palsy",
+        "side": "bilateral",
+        "mechanism": "Raised pressure from obstructed CSF outflow"
+      },
+      {
+        "deficit": "Gait apraxia, urinary incontinence, cognitive slowing",
+        "side": "bilateral",
+        "mechanism": "Chronic ventricular enlargement stretching periventricular fibers (normal pressure hydrocephalus)"
+      },
+      {
+        "deficit": "Up-gaze palsy (sunset eyes) in children",
+        "side": "bilateral",
+        "mechanism": "Dilated third ventricle and suprapineal recess pressing on the tectum"
+      }
+    ],
+    "examination": [
+      "Fundoscopy for papilledema",
+      "Gait: short steps, wide base, feet stuck to the floor (magnetic gait)",
+      "Bedside cognition and continence history",
+      "In infants: head circumference and fontanelle"
+    ],
+    "syndromes": [
+      "syn-hydrocephalus",
+      "syn-normal-pressure-hydrocephalus",
+      "syn-subarachnoid-hemorrhage"
+    ],
+    "pearls": [
+      "Temporal horns visible on a CT of an adult mean hydrocephalus until proven otherwise",
+      "Big ventricles with big sulci is atrophy; big ventricles with small sulci is hydrocephalus"
+    ]
+  },
+  "pitfalls": [
+    "Asymmetric occipital horns are a common normal variant",
+    "Cavum septum pellucidum and cavum vergae are normal CSF spaces between the leaves of the septum, not a cyst"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 15,
-     "y": -10,
-     "z": 15
+  "citations": [
+    {
+      "ref": "sp-choroid-plexus",
+      "section": "Structure and Function"
     },
-    "label": "bodies and frontal horns at the level of the foramen of Monro"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 15,
-     "y": 10,
-     "z": 15
-    },
-    "label": "frontal horns with the caudate heads lateral"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": -25,
-     "z": -12
-    },
-    "label": "temporal horns above the hippocampi"
-   }
+    {
+      "ref": "sp-hydrocephalus",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "CSF-dark on T1, bright on T2, suppressed on FLAIR. Frontal horns are slit-like or gently rounded; a frontal horn ratio (Evans index) above 0.3 suggests enlargement. Temporal horns should be barely visible; their dilatation is an early sign of obstructive hydrocephalus. Periventricular FLAIR caps at the frontal horns are common and benign in the elderly.",
-  "pathology": [
-   {
-    "pathology": "Obstructive hydrocephalus",
-    "modality": "CT",
-    "finding": "Dilated lateral and third ventricles with rounded frontal horns, dilated temporal horns and periventricular hypodensity (transependymal edema) out of proportion to sulcal size; the fourth ventricle is normal if the aqueduct is blocked.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Normal pressure hydrocephalus",
-    "modality": "MRI",
-    "finding": "Ventriculomegaly with tight high-convexity sulci and widened Sylvian fissures (DESH), an acute callosal angle, and a flow void in the aqueduct.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Intraventricular hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense blood layering in the occipital horns and filling the ventricles, from an intracerebral hemorrhage rupturing through or from germinal matrix bleeding in preterm infants.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Ex vacuo dilatation (atrophy)",
-    "modality": "MRI",
-    "finding": "Enlarged ventricles proportional to enlarged sulci, no temporal horn dilatation or transependymal edema.",
-    "sequence": "T1"
-   }
+  "tags": [
+    "csf"
   ],
-  "sequenceOfChoice": "Non-contrast CT for acute ventricular size; MRI T2/FLAIR for the cause"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Headache, vomiting, papilledema, sixth nerve palsy",
-    "side": "bilateral",
-    "mechanism": "Raised pressure from obstructed CSF outflow"
-   },
-   {
-    "deficit": "Gait apraxia, urinary incontinence, cognitive slowing",
-    "side": "bilateral",
-    "mechanism": "Chronic ventricular enlargement stretching periventricular fibers (normal pressure hydrocephalus)"
-   },
-   {
-    "deficit": "Up-gaze palsy (sunset eyes) in children",
-    "side": "bilateral",
-    "mechanism": "Dilated third ventricle and suprapineal recess pressing on the tectum"
-   }
-  ],
-  "examination": [
-   "Fundoscopy for papilledema",
-   "Gait: short steps, wide base, feet stuck to the floor (magnetic gait)",
-   "Bedside cognition and continence history",
-   "In infants: head circumference and fontanelle"
-  ],
-  "syndromes": [
-   "syn-hydrocephalus",
-   "syn-normal-pressure-hydrocephalus",
-   "syn-subarachnoid-hemorrhage"
-  ],
-  "pearls": [
-   "Temporal horns visible on a CT of an adult mean hydrocephalus until proven otherwise",
-   "Big ventricles with big sulci is atrophy; big ventricles with small sulci is hydrocephalus"
-  ]
- },
- "pitfalls": [
-  "Asymmetric occipital horns are a common normal variant",
-  "Cavum septum pellucidum and cavum vergae are normal CSF spaces between the leaves of the septum, not a cyst"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    436,
-    443
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 16,
-   "pages": [
-    455,
-    459
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    31
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    272
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    237,
-    237
-   ]
-  }
- ],
- "tags": [
-  "csf"
- ],
- "status": "draft",
- "latin": "Ventriculus lateralis",
- "subsystem": "ventricles"
+  "status": "draft",
+  "latin": "Ventriculus lateralis",
+  "subsystem": "ventricles"
 }

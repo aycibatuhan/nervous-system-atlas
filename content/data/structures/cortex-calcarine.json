@@ -1,168 +1,156 @@
 {
- "kind": "structure",
- "id": "cortex-calcarine",
- "name": "Calcarine (primary visual) cortex",
- "synonyms": [
-  "striate cortex",
-  "V1",
-  "Brodmann area 17"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cortex-intracalcarine-l",
-  "cortex-intracalcarine-r",
-  "cortex-supracalcarine-l",
-  "cortex-supracalcarine-r"
- ],
- "summary": "The primary visual cortex lines the walls of the calcarine sulcus on the medial occipital surface and extends around the pole. It receives the optic radiation from the lateral geniculate body and is identified histologically by the stria of Gennari, a band of myelinated fibers in layer IV. Its map is precise: the contralateral hemifield is represented with the macula at the occipital pole occupying half the area, the periphery anteriorly, and the lower field on the upper bank (cuneus) and the upper field on the lower bank (lingual gyrus). Lesions give the most congruous homonymous field defects of any visual pathway lesion.",
- "anatomy": {
-  "location": "Both banks of the calcarine sulcus from the junction with the parieto-occipital sulcus back to the occipital pole, extending slightly onto the lateral surface of the pole.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "lateral-geniculate-nucleus",
-    "via": "tract-optic-radiation"
-   }
+  "kind": "structure",
+  "id": "cortex-calcarine",
+  "name": "Calcarine (primary visual) cortex",
+  "synonyms": [
+    "striate cortex",
+    "V1",
+    "Brodmann area 17"
   ],
-  "efferents": [
-   {
-    "to": "extrastriate cortex (cuneus, lingual, lateral occipital)"
-   },
-   {
-    "to": "superior-colliculus"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cortex-intracalcarine-l",
+    "cortex-intracalcarine-r",
+    "cortex-supracalcarine-l",
+    "cortex-supracalcarine-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "First cortical stage of vision: orientation, edge, spatial frequency, binocular disparity and color contrast analysis of the contralateral hemifield, relayed to extrastriate areas.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca-inferior-division"
-  ],
-  "territories": [
-   "territory-pca",
-   "territory-watershed"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 8,
-     "y": -85,
-     "z": 5
-    },
-    "label": "calcarine sulcus with cuneus above and lingual gyrus below"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 10,
-     "y": -85,
-     "z": 5
-    },
-    "label": "striate cortex on the medial occipital surface near the pole"
-   }
-  ],
-  "normalAppearance": "Cortex lining the calcarine sulcus on sagittal T1; the stria of Gennari is a fine dark line within the cortex on high-resolution T1 or T2. Calcarine infarcts are wedge-shaped on the medial surface with the pole often intact.",
-  "pathology": [
-   {
-    "pathology": "Calcarine infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion along the calcarine banks, pole spared.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Occipital arteriovenous malformation",
-    "modality": "MRI",
-    "finding": "Flow voids in the calcarine region with headache, visual auras and field defect.",
-    "sequence": "T2"
-   }
-  ],
-  "sequenceOfChoice": "DWI; perimetry"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Congruous homonymous hemianopia with macular sparing",
-    "side": "contralateral",
-    "mechanism": "Whole calcarine cortex with spared pole"
-   },
-   {
-    "deficit": "Inferior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Upper bank (cuneus)"
-   },
-   {
-    "deficit": "Superior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Lower bank (lingual gyrus)"
-   },
-   {
-    "deficit": "Central homonymous scotoma",
-    "side": "contralateral",
-    "mechanism": "Occipital pole"
-   },
-   {
-    "deficit": "Temporal crescent sparing or loss",
-    "side": "contralateral",
-    "mechanism": "Most anterior calcarine cortex represents the monocular temporal crescent"
-   }
-  ],
-  "examination": [
-   "Perimetry: the defects are congruous (identical in both eyes)",
-   "Test the far temporal periphery of each eye separately for the temporal crescent",
-   "Pupils and acuity (normal)"
-  ],
-  "syndromes": [
-   "syn-homonymous-hemianopia",
-   "syn-pca-infarct",
-   "syn-anton"
-  ],
-  "pearls": [
-   "The more congruous the homonymous defect, the more posterior the lesion",
-   "Macular sparing is the fingerprint of an occipital lesion with collateral flow to the pole"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    287,
-    287
-   ]
+  "summary": "The primary visual cortex lines the walls of the calcarine sulcus on the medial occipital surface and extends around the pole. It receives the optic radiation from the lateral geniculate body and is identified histologically by the stria of Gennari, a band of myelinated fibers in layer IV. Its map is precise: the contralateral hemifield is represented with the macula at the occipital pole occupying half the area, the periphery anteriorly, and the lower field on the upper bank (cuneus) and the upper field on the lower bank (lingual gyrus). Lesions give the most congruous homonymous field defects of any visual pathway lesion.",
+  "anatomy": {
+    "location": "Both banks of the calcarine sulcus from the junction with the parieto-occipital sulcus back to the occipital pole, extending slightly onto the lateral surface of the pole.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    327,
-    329
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "lateral-geniculate-nucleus",
+        "via": "tract-optic-radiation"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "extrastriate cortex (cuneus, lingual, lateral occipital)"
+      },
+      {
+        "to": "superior-colliculus"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  }
- ],
- "tags": [
-  "cortex",
-  "occipital"
- ],
- "status": "draft",
- "latin": "Area striata",
- "subsystem": "lobe-occipital",
- "parent": "lobe-occipital"
+  "function": "First cortical stage of vision: orientation, edge, spatial frequency, binocular disparity and color contrast analysis of the contralateral hemifield, relayed to extrastriate areas.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca",
+      "territory-watershed"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 8,
+          "y": -85,
+          "z": 5
+        },
+        "label": "calcarine sulcus with cuneus above and lingual gyrus below"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 10,
+          "y": -85,
+          "z": 5
+        },
+        "label": "striate cortex on the medial occipital surface near the pole"
+      }
+    ],
+    "normalAppearance": "Cortex lining the calcarine sulcus on sagittal T1; the stria of Gennari is a fine dark line within the cortex on high-resolution T1 or T2. Calcarine infarcts are wedge-shaped on the medial surface with the pole often intact.",
+    "pathology": [
+      {
+        "pathology": "Calcarine infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion along the calcarine banks, pole spared.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Occipital arteriovenous malformation",
+        "modality": "MRI",
+        "finding": "Flow voids in the calcarine region with headache, visual auras and field defect.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "DWI; perimetry"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Congruous homonymous hemianopia with macular sparing",
+        "side": "contralateral",
+        "mechanism": "Whole calcarine cortex with spared pole"
+      },
+      {
+        "deficit": "Inferior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Upper bank (cuneus)"
+      },
+      {
+        "deficit": "Superior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Lower bank (lingual gyrus)"
+      },
+      {
+        "deficit": "Central homonymous scotoma",
+        "side": "contralateral",
+        "mechanism": "Occipital pole"
+      },
+      {
+        "deficit": "Temporal crescent sparing or loss",
+        "side": "contralateral",
+        "mechanism": "Most anterior calcarine cortex represents the monocular temporal crescent"
+      }
+    ],
+    "examination": [
+      "Perimetry: the defects are congruous (identical in both eyes)",
+      "Test the far temporal periphery of each eye separately for the temporal crescent",
+      "Pupils and acuity (normal)"
+    ],
+    "syndromes": [
+      "syn-homonymous-hemianopia",
+      "syn-pca-infarct",
+      "syn-anton"
+    ],
+    "pearls": [
+      "The more congruous the homonymous defect, the more posterior the lesion",
+      "Macular sparing is the fingerprint of an occipital lesion with collateral flow to the pole"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-occipital-lobe",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "cortex",
+    "occipital"
+  ],
+  "status": "draft",
+  "latin": "Area striata",
+  "subsystem": "lobe-occipital",
+  "parent": "lobe-occipital"
 }

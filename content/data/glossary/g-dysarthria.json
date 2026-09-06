@@ -1,10 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-dysarthria",
- "term": "Dysarthria",
- "definition": "Impaired articulation of speech with intact language, from weakness or incoordination of the muscles of speech: spastic (pseudobulbar), flaccid (bulbar), ataxic (cerebellar) or hypokinetic (parkinsonian).",
- "related": [
-  "g-aphasia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-dysarthria",
+  "term": "Dysarthria",
+  "definition": "Impaired articulation of speech with intact language, from weakness or incoordination of the muscles of speech: spastic (pseudobulbar), flaccid (bulbar), ataxic (cerebellar) or hypokinetic (parkinsonian).",
+  "related": [
+    "g-aphasia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-dysarthria",
+      "section": "Pathophysiology"
+    }
+  ]
 }

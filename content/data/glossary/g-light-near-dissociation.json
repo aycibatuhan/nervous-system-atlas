@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-light-near-dissociation",
- "term": "Light-near dissociation",
- "definition": "Pupils that fail to constrict to light but constrict to a near target, produced by lesions of the pretectum (Parinaud, Argyll Robertson) or by aberrant regeneration in the ciliary ganglion (Adie).",
- "related": [
-  "g-rapd"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-light-near-dissociation",
+  "term": "Light-near dissociation",
+  "definition": "Pupils that fail to constrict to light but constrict to a near target, produced by lesions of the pretectum (Parinaud, Argyll Robertson) or by aberrant regeneration in the ciliary ganglion (Adie).",
+  "related": [
+    "g-rapd"
+  ],
+  "citations": [
+    {
+      "ref": "sp-argyll-robertson-pupil",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-adie-syndrome",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-parinaud-syndrome",
+      "section": "Pathophysiology"
+    }
+  ]
 }

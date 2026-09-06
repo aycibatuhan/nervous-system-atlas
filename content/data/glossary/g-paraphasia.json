@@ -1,11 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-paraphasia",
- "term": "Paraphasia",
- "definition": "Substitution of an incorrect sound (phonemic: 'tencil' for pencil) or word (semantic: 'fork' for spoon) during speech; a marker of aphasia. Phonemic errors point to the posterior perisylvian and arcuate region, semantic errors to the temporal semantic system and the ventral stream.",
- "related": [
-  "g-aphasia",
-  "g-conduction-aphasia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-paraphasia",
+  "term": "Paraphasia",
+  "definition": "Substitution of an incorrect sound (phonemic: 'tencil' for pencil) or word (semantic: 'fork' for spoon) during speech; a marker of aphasia. Phonemic errors point to the posterior perisylvian and arcuate region, semantic errors to the temporal semantic system and the ventral stream.",
+  "related": [
+    "g-aphasia",
+    "g-conduction-aphasia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-wernicke-area",
+      "section": "Introduction"
+    }
+  ]
 }

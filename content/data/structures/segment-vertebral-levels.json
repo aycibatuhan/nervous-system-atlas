@@ -1,164 +1,136 @@
 {
- "kind": "structure",
- "id": "segment-vertebral-levels",
- "name": "Spinal segments versus vertebral levels",
- "synonyms": [
-  "vertebral-segmental relationship",
-  "Chipault's rule"
- ],
- "system": "spinal-cord",
- "meshIds": [
-  "spinal-cord"
- ],
- "summary": "Because the vertebral column outgrows the cord, each cord segment lies higher than the vertebra of the same number, and the discrepancy increases caudally: cervical segments lie about one vertebra above their spine, upper thoracic two, lower thoracic three, and the whole lumbar and sacral cord lies opposite T10–L1. Clinicians need this in two directions: to convert the sensory level found at the bedside into the vertebral level to image, and to convert the vertebra injured on the scan into the segments and deficits expected. Roots leave through the foramen of the same number below the pedicle (cervical roots above their vertebra, C8 below C7), which decides which root a disc compresses.",
- "anatomy": {
-  "location": "Cervical cord segments opposite C1–C7 vertebrae; T1–T6 segments opposite C7–T4; T7–T12 segments opposite T5–T9; L1–L5 opposite T10–T12; sacral segments opposite L1; conus at L1–L2.",
-  "subdivisions": [
-   {
-    "name": "Cervical",
-    "note": "segment = vertebra + 1 (C8 segment lies at C7)"
-   },
-   {
-    "name": "Upper thoracic",
-    "note": "segment = vertebra + 2"
-   },
-   {
-    "name": "Lower thoracic",
-    "note": "segment = vertebra + 3"
-   },
-   {
-    "name": "Lumbar and sacral",
-    "note": "L1–S5 segments compressed into the T10–L1 region"
-   },
-   {
-    "name": "Root exit",
-    "note": "cervical roots exit above the same-numbered vertebra (C1–C7), C8 below C7, thoracic and lumbar roots below the same-numbered vertebra"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "A mapping rule rather than a structure: allows translation between clinical segmental findings and vertebral imaging levels.",
- "bloodSupply": {
-  "arteries": [
-   "anterior-spinal-artery"
+  "kind": "structure",
+  "id": "segment-vertebral-levels",
+  "name": "Spinal segments versus vertebral levels",
+  "synonyms": [
+    "vertebral-segmental relationship",
+    "Chipault's rule"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "system": "spinal-cord",
+  "meshIds": [
+    "spinal-cord"
+  ],
+  "summary": "Because the vertebral column outgrows the cord, each cord segment lies higher than the vertebra of the same number, and the discrepancy increases caudally: cervical segments lie about one vertebra above their spine, upper thoracic two, lower thoracic three, and the whole lumbar and sacral cord lies opposite T10–L1. Clinicians need this in two directions: to convert the sensory level found at the bedside into the vertebral level to image, and to convert the vertebra injured on the scan into the segments and deficits expected. Roots leave through the foramen of the same number below the pedicle (cervical roots above their vertebra, C8 below C7), which decides which root a disc compresses.",
+  "anatomy": {
+    "location": "Cervical cord segments opposite C1–C7 vertebrae; T1–T6 segments opposite C7–T4; T7–T12 segments opposite T5–T9; L1–L5 opposite T10–T12; sacral segments opposite L1; conus at L1–L2.",
+    "subdivisions": [
+      {
+        "name": "Cervical",
+        "note": "segment = vertebra + 1 (C8 segment lies at C7)"
+      },
+      {
+        "name": "Upper thoracic",
+        "note": "segment = vertebra + 2"
+      },
+      {
+        "name": "Lower thoracic",
+        "note": "segment = vertebra + 3"
+      },
+      {
+        "name": "Lumbar and sacral",
+        "note": "L1–S5 segments compressed into the T10–L1 region"
+      },
+      {
+        "name": "Root exit",
+        "note": "cervical roots exit above the same-numbered vertebra (C1–C7), C8 below C7, thoracic and lumbar roots below the same-numbered vertebra"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "A mapping rule rather than a structure: allows translation between clinical segmental findings and vertebral imaging levels.",
+  "bloodSupply": {
+    "arteries": [
+      "anterior-spinal-artery"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cervicomedullary junction: C1 segment opposite the atlas"
+      }
+    ],
+    "normalAppearance": "On sagittal spine MRI count vertebrae from C2 (or from the sacrum) to name the level of a lesion; the cord segment involved is then inferred by the rule above. A thoracic sensory level at T10 means imaging the T7–T8 vertebrae, not T10 alone.",
+    "pathology": [
+      {
+        "pathology": "Vertebral fracture with cord injury",
+        "modality": "CT",
+        "finding": "Fracture level on CT; the neurological level is one to three segments above the vertebra.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Disc herniation and the root affected",
+        "modality": "MRI",
+        "finding": "A posterolateral C5–C6 disc compresses the C6 root; an L4–L5 disc compresses L5; a far-lateral disc compresses the root above.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T2 of the whole spine when the level is uncertain"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Sensory level lower than the vertebral lesion",
+        "side": "bilateral",
+        "mechanism": "Cord segments lie above their vertebrae"
+      },
+      {
+        "deficit": "Root pattern determined by the disc level and position",
+        "side": "ipsilateral",
+        "mechanism": "Root exit anatomy"
+      },
+      {
+        "deficit": "Cauda equina rather than cord syndrome below L1–L2",
+        "side": "bilateral",
+        "mechanism": "No cord below the conus"
+      }
+    ],
+    "examination": [
+      "Find the sensory level with pin-prick and vibration on the trunk",
+      "Localize the lower motor neuron signs to a segment",
+      "Palpate for spinal tenderness and count from a fixed landmark (C7 spine, iliac crests at L4)"
+    ],
+    "syndromes": [
+      "syn-radiculopathy-cervical",
+      "syn-radiculopathy-lumbosacral",
+      "syn-complete-transection-spinal-shock"
+    ],
+    "pearls": [
+      "Add one in the neck, two in the upper back, three in the lower back to convert a vertebra into a segment",
+      "A T10 sensory level (umbilicus) points to the T7–T8 vertebrae"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-conus-medullaris",
+      "section": "Structure and Function"
     },
-    "label": "cervicomedullary junction: C1 segment opposite the atlas"
-   }
+    {
+      "ref": "sp-back-cauda-equina",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-dermatomes",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On sagittal spine MRI count vertebrae from C2 (or from the sacrum) to name the level of a lesion; the cord segment involved is then inferred by the rule above. A thoracic sensory level at T10 means imaging the T7–T8 vertebrae, not T10 alone.",
-  "pathology": [
-   {
-    "pathology": "Vertebral fracture with cord injury",
-    "modality": "CT",
-    "finding": "Fracture level on CT; the neurological level is one to three segments above the vertebra.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Disc herniation and the root affected",
-    "modality": "MRI",
-    "finding": "A posterolateral C5–C6 disc compresses the C6 root; an L4–L5 disc compresses L5; a far-lateral disc compresses the root above.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "spinal"
   ],
-  "sequenceOfChoice": "Sagittal T2 of the whole spine when the level is uncertain"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Sensory level lower than the vertebral lesion",
-    "side": "bilateral",
-    "mechanism": "Cord segments lie above their vertebrae"
-   },
-   {
-    "deficit": "Root pattern determined by the disc level and position",
-    "side": "ipsilateral",
-    "mechanism": "Root exit anatomy"
-   },
-   {
-    "deficit": "Cauda equina rather than cord syndrome below L1–L2",
-    "side": "bilateral",
-    "mechanism": "No cord below the conus"
-   }
-  ],
-  "examination": [
-   "Find the sensory level with pin-prick and vibration on the trunk",
-   "Localize the lower motor neuron signs to a segment",
-   "Palpate for spinal tenderness and count from a fixed landmark (C7 spine, iliac crests at L4)"
-  ],
-  "syndromes": [
-   "syn-radiculopathy-cervical",
-   "syn-radiculopathy-lumbosacral",
-   "syn-complete-transection-spinal-shock"
-  ],
-  "pearls": [
-   "Add one in the neck, two in the upper back, three in the lower back to convert a vertebra into a segment",
-   "A T10 sensory level (umbilicus) points to the T7–T8 vertebrae"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    134,
-    136
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 19,
-   "pages": [
-    507,
-    512
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    41,
-    41
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    145,
-    147
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    159,
-    163
-   ]
+  "status": "draft",
+  "subsystem": "cord",
+  "level": {
+    "region": "spinal"
   }
- ],
- "tags": [
-  "spinal"
- ],
- "status": "draft",
- "subsystem": "cord",
- "level": {
-  "region": "spinal"
- }
 }

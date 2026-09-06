@@ -1,10 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-vestibulo-ocular-reflex",
- "term": "Vestibulo-ocular reflex (VOR)",
- "definition": "The three-neuron reflex that moves the eyes opposite to head rotation to keep gaze stable, tested at the bedside by the head impulse and oculocephalic maneuvers. Loss on one side (a corrective saccade after a head impulse) indicates a peripheral vestibular lesion.",
- "related": [
-  "g-nystagmus"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-vestibulo-ocular-reflex",
+  "term": "Vestibulo-ocular reflex (VOR)",
+  "definition": "The three-neuron reflex that moves the eyes opposite to head rotation to keep gaze stable, tested at the bedside by the head impulse and oculocephalic maneuvers. Loss on one side (a corrective saccade after a head impulse) indicates a peripheral vestibular lesion.",
+  "related": [
+    "g-nystagmus"
+  ],
+  "citations": [
+    {
+      "ref": "sp-vestibulo-ocular-reflex",
+      "section": "Structure and Function"
+    }
+  ]
 }

@@ -1,178 +1,158 @@
 {
- "kind": "structure",
- "id": "subiculum",
- "name": "Subiculum",
- "synonyms": [
-  "subicular complex"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "subiculum-l",
-  "subiculum-r"
- ],
- "summary": "The subiculum is the transitional cortex between CA1 of the hippocampus and the entorhinal cortex of the parahippocampal gyrus, forming the floor of the hippocampal formation on the medial temporal surface. It is the main output station of the hippocampus: it receives CA1 and the entorhinal cortex and projects through the fornix to the mammillary bodies, the anterior thalamus, the septal area and the accumbens, and back to the entorhinal cortex, so the Papez circuit and the hippocampal control of the stress axis both pass through it. It is affected early in Alzheimer disease and is the site of the earliest tau spread from the entorhinal cortex.",
- "anatomy": {
-  "location": "Cortical band on the inferomedial surface of the hippocampal formation between CA1 laterally and the presubiculum and entorhinal cortex medially, on the upper surface of the parahippocampal gyrus, extending from the hippocampal head to the tail.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "CA1",
-    "via": "intrahippocampal fibers"
-   },
-   {
-    "from": "Entorhinal cortex layer III",
-    "via": "perforant path"
-   },
-   {
-    "from": "Anterior thalamic nuclei",
-    "via": "cingulum and fornix"
-   }
+  "kind": "structure",
+  "id": "subiculum",
+  "name": "Subiculum",
+  "synonyms": [
+    "subicular complex"
   ],
-  "efferents": [
-   {
-    "to": "Mammillary bodies and anterior thalamus",
-    "via": "fornix (postcommissural)"
-   },
-   {
-    "to": "Accumbens and septal area",
-    "via": "fornix (precommissural)"
-   },
-   {
-    "to": "Entorhinal cortex layer V",
-    "via": "return projection"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "subiculum-l",
+    "subiculum-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Subicular pyramidal cells integrate the output of CA1 with direct entorhinal input and encode place, head direction and the salience of context; through the fornix they carry the hippocampal memory signal to the mammillary bodies and the anterior thalamic nuclei, completing the Papez circuit, and to the accumbens, where memory and motivation meet. They also send inhibitory control to the hypothalamic-pituitary-adrenal axis via the bed nucleus of the stria terminalis, so hippocampal damage raises cortisol. Bursting subicular neurons are a major generator of epileptiform discharges in sclerotic hippocampi, and they are the earliest hippocampal cells to develop Alzheimer tangles after the entorhinal cortex.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
+  "summary": "The subiculum is the transitional cortex between CA1 of the hippocampus and the entorhinal cortex of the parahippocampal gyrus, forming the floor of the hippocampal formation on the medial temporal surface. It is the main output station of the hippocampus: it receives CA1 and the entorhinal cortex and projects through the fornix to the mammillary bodies, the anterior thalamus, the septal area and the accumbens, and back to the entorhinal cortex, so the Papez circuit and the hippocampal control of the stress axis both pass through it. It is affected early in Alzheimer disease and is the site of the earliest tau spread from the entorhinal cortex.",
+  "anatomy": {
+    "location": "Cortical band on the inferomedial surface of the hippocampal formation between CA1 laterally and the presubiculum and entorhinal cortex medially, on the upper surface of the parahippocampal gyrus, extending from the hippocampal head to the tail.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "CA1",
+        "via": "intrahippocampal fibers"
+      },
+      {
+        "from": "Entorhinal cortex layer III",
+        "via": "perforant path"
+      },
+      {
+        "from": "Anterior thalamic nuclei",
+        "via": "cingulum and fornix"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Mammillary bodies and anterior thalamus",
+        "via": "fornix (postcommissural)"
+      },
+      {
+        "to": "Accumbens and septal area",
+        "via": "fornix (precommissural)"
+      },
+      {
+        "to": "Entorhinal cortex layer V",
+        "via": "return projection"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Subicular pyramidal cells integrate the output of CA1 with direct entorhinal input and encode place, head direction and the salience of context; through the fornix they carry the hippocampal memory signal to the mammillary bodies and the anterior thalamic nuclei, completing the Papez circuit, and to the accumbens, where memory and motivation meet. They also send inhibitory control to the hypothalamic-pituitary-adrenal axis via the bed nucleus of the stria terminalis, so hippocampal damage raises cortisol. Bursting subicular neurons are a major generator of epileptiform discharges in sclerotic hippocampi, and they are the earliest hippocampal cells to develop Alzheimer tangles after the entorhinal cortex.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca-temporal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "subiculum-l"
+        },
+        "label": "subiculum between CA1 and the entorhinal cortex on the parahippocampal surface"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "subiculum-r"
+        },
+        "label": "subiculum along the medial hippocampal formation"
+      }
+    ],
+    "normalAppearance": "The inferomedial gray band of the hippocampal formation on coronal T2 images, where the hippocampus flattens onto the parahippocampal gyrus; it continues medially into the entorhinal cortex without a visible border on routine MRI.",
+    "pathology": [
+      {
+        "pathology": "Alzheimer disease",
+        "modality": "MRI",
+        "finding": "Early subicular and CA1 atrophy on subfield volumetry, with widening of the hippocampal sulcus and temporal horn.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Mesial temporal sclerosis",
+        "modality": "MRI",
+        "finding": "Hippocampal atrophy in which the subiculum is relatively preserved but hyperexcitable, sustaining seizures.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Transient global amnesia",
+        "modality": "MRI",
+        "finding": "Punctate delayed diffusion lesions in the lateral hippocampus at the CA1-subiculum border.",
+        "sequence": "DWI",
+        "timing": "Seen at 24-72 hours after the episode"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Anterograde amnesia",
+        "side": "bilateral",
+        "mechanism": "Loss of the hippocampal output to the diencephalon and cortex"
+      },
+      {
+        "deficit": "Impaired contextual and spatial memory",
+        "side": "bilateral",
+        "mechanism": "Loss of subicular place and head-direction signals"
+      },
+      {
+        "deficit": "Dysregulated stress response",
+        "side": "bilateral",
+        "mechanism": "Loss of hippocampal inhibition of the hypothalamic-pituitary-adrenal axis"
+      }
+    ],
+    "examination": [
+      "Delayed recall and recognition",
+      "Route finding and orientation",
+      "Consider cortisol dysregulation in patients with bilateral hippocampal disease and mood change"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff"
+    ],
+    "pearls": [
+      "The subiculum is the hippocampus's exit: the fornix is mostly subicular axons",
+      "The Papez circuit begins here, not in CA1",
+      "In sclerotic hippocampi the surviving subiculum keeps the seizures going"
+    ]
+  },
+  "pitfalls": [
+    "Subfield names on MRI reports depend on the atlas used; treat subicular volumes as research measures"
   ],
-  "territories": [
-   "territory-pca-temporal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "subiculum-l"
+  "citations": [
+    {
+      "ref": "sp-hippocampus",
+      "section": "Structure and Function"
     },
-    "label": "subiculum between CA1 and the entorhinal cortex on the parahippocampal surface"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "subiculum-r"
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
     },
-    "label": "subiculum along the medial hippocampal formation"
-   }
+    {
+      "ref": "sp-explicit-memory",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "The inferomedial gray band of the hippocampal formation on coronal T2 images, where the hippocampus flattens onto the parahippocampal gyrus; it continues medially into the entorhinal cortex without a visible border on routine MRI.",
-  "pathology": [
-   {
-    "pathology": "Alzheimer disease",
-    "modality": "MRI",
-    "finding": "Early subicular and CA1 atrophy on subfield volumetry, with widening of the hippocampal sulcus and temporal horn.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Mesial temporal sclerosis",
-    "modality": "MRI",
-    "finding": "Hippocampal atrophy in which the subiculum is relatively preserved but hyperexcitable, sustaining seizures.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Transient global amnesia",
-    "modality": "MRI",
-    "finding": "Punctate delayed diffusion lesions in the lateral hippocampus at the CA1-subiculum border.",
-    "sequence": "DWI",
-    "timing": "Seen at 24-72 hours after the episode"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Anterograde amnesia",
-    "side": "bilateral",
-    "mechanism": "Loss of the hippocampal output to the diencephalon and cortex"
-   },
-   {
-    "deficit": "Impaired contextual and spatial memory",
-    "side": "bilateral",
-    "mechanism": "Loss of subicular place and head-direction signals"
-   },
-   {
-    "deficit": "Dysregulated stress response",
-    "side": "bilateral",
-    "mechanism": "Loss of hippocampal inhibition of the hypothalamic-pituitary-adrenal axis"
-   }
+  "tags": [
+    "hippocampus",
+    "fornix",
+    "Papez"
   ],
-  "examination": [
-   "Delayed recall and recognition",
-   "Route finding and orientation",
-   "Consider cortisol dysregulation in patients with bilateral hippocampal disease and mood change"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff"
-  ],
-  "pearls": [
-   "The subiculum is the hippocampus's exit: the fornix is mostly subicular axons",
-   "The Papez circuit begins here, not in CA1",
-   "In sclerotic hippocampi the surviving subiculum keeps the seizures going"
-  ]
- },
- "pitfalls": [
-  "Subfield names on MRI reports depend on the atlas used; treat subicular volumes as research measures"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  }
- ],
- "tags": [
-  "hippocampus",
-  "fornix",
-  "Papez"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "hippocampus"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "hippocampus"
 }

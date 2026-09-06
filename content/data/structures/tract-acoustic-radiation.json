@@ -1,167 +1,147 @@
 {
- "kind": "structure",
- "id": "tract-acoustic-radiation",
- "name": "Acoustic radiation",
- "synonyms": [
-  "auditory radiation",
-  "geniculotemporal tract"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-acoustic-radiation-l",
-  "tract-acoustic-radiation-r"
- ],
- "summary": "The acoustic radiation is the short bundle from the medial geniculate body to the primary auditory cortex on Heschl's gyrus, running through the sublenticular part of the internal capsule beneath the lentiform nucleus. Because each cochlea is represented in both medial geniculate bodies after the extensive crossing in the brainstem, a unilateral lesion of the radiation does not cause deafness but impairs sound localization and the recognition of speech in noise from the contralateral side, and bilateral lesions cause cortical deafness. The reconstruction shows the bundle passing laterally under the putamen to the superior temporal plane; it is crossed by MCA perforators and by the fibers of the internal capsule and is damaged in lenticulostriate and MCA infarcts.",
- "anatomy": {
-  "location": "From the medial geniculate body, laterally and forward through the sublenticular limb of the internal capsule beneath the putamen and the globus pallidus, above the temporal stem, to the transverse temporal gyrus of Heschl in the floor of the Sylvian fissure, a short thick bundle a few centimeters long.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Medial geniculate nucleus",
-    "via": "origin"
-   }
+  "kind": "structure",
+  "id": "tract-acoustic-radiation",
+  "name": "Acoustic radiation",
+  "synonyms": [
+    "auditory radiation",
+    "geniculotemporal tract"
   ],
-  "efferents": [
-   {
-    "to": "Heschl's gyrus (areas 41 and 42)",
-    "via": "termination"
-   },
-   {
-    "to": "Medial geniculate and inferior colliculus (corticofugal)",
-    "via": "descending fibers"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-acoustic-radiation-l",
+    "tract-acoustic-radiation-r"
   ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "It conveys the tonotopically ordered auditory signal, already binaural after processing in the superior olive, lateral lemniscus and inferior colliculus, to the core auditory cortex, where frequency, intensity and timing are mapped; corticofugal fibers run back in it to the geniculate and colliculus. Because of the bilateral representation, unilateral damage produces subtle deficits (impaired localization, extinction of contralateral sounds on dichotic testing, poorer speech-in-noise perception), and only bilateral interruption, usually from sequential strokes, produces cortical deafness or auditory agnosia. The bundle is one of the last to myelinate and is affected in periventricular injury of prematurity.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-lateral-lenticulostriate",
-   "territory-mca-temporal",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-acoustic-radiation-l"
+  "summary": "The acoustic radiation is the short bundle from the medial geniculate body to the primary auditory cortex on Heschl's gyrus, running through the sublenticular part of the internal capsule beneath the lentiform nucleus. Because each cochlea is represented in both medial geniculate bodies after the extensive crossing in the brainstem, a unilateral lesion of the radiation does not cause deafness but impairs sound localization and the recognition of speech in noise from the contralateral side, and bilateral lesions cause cortical deafness. The reconstruction shows the bundle passing laterally under the putamen to the superior temporal plane; it is crossed by MCA perforators and by the fibers of the internal capsule and is damaged in lenticulostriate and MCA infarcts.",
+  "anatomy": {
+    "location": "From the medial geniculate body, laterally and forward through the sublenticular limb of the internal capsule beneath the putamen and the globus pallidus, above the temporal stem, to the transverse temporal gyrus of Heschl in the floor of the Sylvian fissure, a short thick bundle a few centimeters long.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Medial geniculate nucleus",
+        "via": "origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Heschl's gyrus (areas 41 and 42)",
+        "via": "termination"
+      },
+      {
+        "to": "Medial geniculate and inferior colliculus (corticofugal)",
+        "via": "descending fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
+  },
+  "function": "It conveys the tonotopically ordered auditory signal, already binaural after processing in the superior olive, lateral lemniscus and inferior colliculus, to the core auditory cortex, where frequency, intensity and timing are mapped; corticofugal fibers run back in it to the geniculate and colliculus. Because of the bilateral representation, unilateral damage produces subtle deficits (impaired localization, extinction of contralateral sounds on dichotic testing, poorer speech-in-noise perception), and only bilateral interruption, usually from sequential strokes, produces cortical deafness or auditory agnosia. The bundle is one of the last to myelinate and is affected in periventricular injury of prematurity.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-lateral-lenticulostriate",
+      "territory-mca-temporal",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-acoustic-radiation-l"
+        },
+        "label": "acoustic radiation beneath the lentiform nucleus to Heschl's gyrus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "tract-acoustic-radiation-r"
+        },
+        "label": "sublenticular fibers from the medial geniculate body"
+      }
+    ],
+    "normalAppearance": "On tractography a short lateral bundle from the medial geniculate under the putamen to the superior temporal surface; not visible on conventional MRI.",
+    "pathology": [
+      {
+        "pathology": "Cortical deafness or auditory agnosia (bilateral lesions)",
+        "modality": "MRI",
+        "finding": "Bilateral lesions of the temporal lobes or the sublenticular capsule from sequential strokes, with absent cortical auditory evoked responses and preserved brainstem responses.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "MCA or lenticulostriate infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion under the lentiform nucleus with contralateral extinction of sounds and impaired localization, usually with hemiparesis.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Periventricular leukomalacia",
+        "modality": "MRI",
+        "finding": "Periventricular white-matter loss in premature infants with central auditory processing disorder.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired localization of sounds and speech-in-noise perception on the contralateral side",
+        "side": "contralateral",
+        "mechanism": "Loss of one auditory radiation with preserved bilateral representation"
+      },
+      {
+        "deficit": "Cortical deafness when bilateral",
+        "side": "bilateral",
+        "mechanism": "Interruption of both radiations"
+      },
+      {
+        "deficit": "Auditory extinction on dichotic listening",
+        "side": "contralateral",
+        "mechanism": "Reduced cortical input from the contralateral radiation"
+      }
+    ],
+    "examination": [
+      "Dichotic listening or simultaneous sound presentation to both ears",
+      "Audiometry and brainstem auditory evoked responses to show that the periphery and brainstem are intact",
+      "Sound localization with eyes closed"
+    ],
+    "syndromes": [
+      "syn-hearing-loss",
+      "syn-mca-stem-infarct"
+    ],
+    "pearls": [
+      "One acoustic radiation is enough to hear; two are needed to hear well",
+      "Cortical deafness is a bilateral disease with normal audiograms",
+      "The acoustic radiation runs under the putamen: a striatocapsular stroke can dull the hearing on the other side"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-auditory-pathway",
+      "section": "Structure and Function"
     },
-    "label": "acoustic radiation beneath the lentiform nucleus to Heschl's gyrus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "tract-acoustic-radiation-r"
+    {
+      "ref": "sp-cranial-nerve-8",
+      "section": "Structure and Function"
     },
-    "label": "sublenticular fibers from the medial geniculate body"
-   }
+    {
+      "ref": "sp-temporal-lobe",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On tractography a short lateral bundle from the medial geniculate under the putamen to the superior temporal surface; not visible on conventional MRI.",
-  "pathology": [
-   {
-    "pathology": "Cortical deafness or auditory agnosia (bilateral lesions)",
-    "modality": "MRI",
-    "finding": "Bilateral lesions of the temporal lobes or the sublenticular capsule from sequential strokes, with absent cortical auditory evoked responses and preserved brainstem responses.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "MCA or lenticulostriate infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion under the lentiform nucleus with contralateral extinction of sounds and impaired localization, usually with hemiparesis.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Periventricular leukomalacia",
-    "modality": "MRI",
-    "finding": "Periventricular white-matter loss in premature infants with central auditory processing disorder.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired localization of sounds and speech-in-noise perception on the contralateral side",
-    "side": "contralateral",
-    "mechanism": "Loss of one auditory radiation with preserved bilateral representation"
-   },
-   {
-    "deficit": "Cortical deafness when bilateral",
-    "side": "bilateral",
-    "mechanism": "Interruption of both radiations"
-   },
-   {
-    "deficit": "Auditory extinction on dichotic listening",
-    "side": "contralateral",
-    "mechanism": "Reduced cortical input from the contralateral radiation"
-   }
+  "tags": [
+    "white matter",
+    "tractography"
   ],
-  "examination": [
-   "Dichotic listening or simultaneous sound presentation to both ears",
-   "Audiometry and brainstem auditory evoked responses to show that the periphery and brainstem are intact",
-   "Sound localization with eyes closed"
-  ],
-  "syndromes": [
-   "syn-hearing-loss",
-   "syn-mca-stem-infarct"
-  ],
-  "pearls": [
-   "One acoustic radiation is enough to hear; two are needed to hear well",
-   "Cortical deafness is a bilateral disease with normal audiograms",
-   "The acoustic radiation runs under the putamen: a striatocapsular stroke can dull the hearing on the other side"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    341,
-    341
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 12,
-   "pages": [
-    366,
-    368
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    108
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "projection",
- "parent": "cerebral-white-matter"
+  "status": "draft",
+  "subsystem": "projection",
+  "parent": "cerebral-white-matter"
 }

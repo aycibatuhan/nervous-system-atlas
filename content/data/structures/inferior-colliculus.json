@@ -1,150 +1,130 @@
 {
- "kind": "structure",
- "id": "inferior-colliculus",
- "name": "Inferior colliculus",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "inferior-colliculus-l",
-  "inferior-colliculus-r"
- ],
- "summary": "The lower pair of tectal bumps and the obligatory relay of the ascending auditory pathway: every lateral lemniscus fiber ends here before the signal goes on through the brachium of the inferior colliculus to the medial geniculate body and the auditory cortex. Its central nucleus is tonotopically organized, and it also mediates auditory startle and the reflex turning of eyes and head toward a sound through connections with the superior colliculus.",
- "anatomy": {
-  "location": "Dorsal caudal midbrain below the superior colliculi and above the trochlear nerve exit, on either side of the midline, with the brachium running rostrolaterally to the medial geniculate body.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "superior-olivary-complex",
-    "via": "lateral lemniscus"
-   }
+  "kind": "structure",
+  "id": "inferior-colliculus",
+  "name": "Inferior colliculus",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "inferior-colliculus-l",
+    "inferior-colliculus-r"
   ],
-  "efferents": [
-   {
-    "to": "medial-geniculate-nucleus",
-    "via": "brachium of the inferior colliculus"
-   }
-  ],
-  "pathways": [
-   "pathway-auditory"
-  ]
- },
- "function": "Frequency analysis, sound localization and the integration of monaural and binaural pathways; relay to the thalamus and reflex orientation to sound.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca",
-   "artery-pca"
-  ],
-  "territories": [
-   "territory-sca",
-   "territory-pca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 5,
-     "y": -34,
-     "z": -12
+  "summary": "The lower pair of tectal bumps and the obligatory relay of the ascending auditory pathway: every lateral lemniscus fiber ends here before the signal goes on through the brachium of the inferior colliculus to the medial geniculate body and the auditory cortex. Its central nucleus is tonotopically organized, and it also mediates auditory startle and the reflex turning of eyes and head toward a sound through connections with the superior colliculus.",
+  "anatomy": {
+    "location": "Dorsal caudal midbrain below the superior colliculi and above the trochlear nerve exit, on either side of the midline, with the brachium running rostrolaterally to the medial geniculate body.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "superior-olivary-complex",
+        "via": "lateral lemniscus"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "medial-geniculate-nucleus",
+        "via": "brachium of the inferior colliculus"
+      }
+    ],
+    "pathways": [
+      "pathway-auditory"
+    ]
+  },
+  "function": "Frequency analysis, sound localization and the integration of monaural and binaural pathways; relay to the thalamus and reflex orientation to sound.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca",
+      "artery-pca"
+    ],
+    "territories": [
+      "territory-sca",
+      "territory-pca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 5,
+          "y": -34,
+          "z": -12
+        },
+        "label": "caudal tectal plate at the trochlear level"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -34,
+          "z": -12
+        },
+        "label": "inferior colliculus below the superior colliculus"
+      }
+    ],
+    "normalAppearance": "Lower of the two tectal bumps on sagittal images; on axial slices at the inferior colliculus level the aqueduct lies just in front. Hypoxic or Wernicke lesions can produce symmetrical T2 hyperintensity here.",
+    "pathology": [
+      {
+        "pathology": "Wernicke encephalopathy / hypoxic injury",
+        "modality": "MRI",
+        "finding": "Symmetrical FLAIR hyperintensity of the inferior colliculi with the periaqueductal gray and medial thalami.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Tectal mass",
+        "modality": "MRI",
+        "finding": "Expansion of the caudal tectum with aqueductal compression.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Axial FLAIR and sagittal T2"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Impaired sound localization and central hearing disturbance without deafness",
+        "side": "bilateral",
+        "mechanism": "Bilateral relay of auditory information"
+      },
+      {
+        "deficit": "Reduced auditory startle",
+        "side": "bilateral",
+        "mechanism": "Collicular reflex circuitry"
+      }
+    ],
+    "examination": [
+      "Hearing thresholds (normal) versus localization of sound with eyes closed",
+      "Speech-in-noise difficulty on history",
+      "Brainstem auditory evoked potentials"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Central auditory lesions above the cochlear nuclei do not cause deafness in one ear",
+      "Bilateral bright inferior colliculi on FLAIR in a malnourished or alcohol-dependent patient: give thiamine"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-inferior-colliculus",
+      "section": "Structure and Function"
     },
-    "label": "caudal tectal plate at the trochlear level"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -34,
-     "z": -12
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
     },
-    "label": "inferior colliculus below the superior colliculus"
-   }
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Lower of the two tectal bumps on sagittal images; on axial slices at the inferior colliculus level the aqueduct lies just in front. Hypoxic or Wernicke lesions can produce symmetrical T2 hyperintensity here.",
-  "pathology": [
-   {
-    "pathology": "Wernicke encephalopathy / hypoxic injury",
-    "modality": "MRI",
-    "finding": "Symmetrical FLAIR hyperintensity of the inferior colliculi with the periaqueductal gray and medial thalami.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Tectal mass",
-    "modality": "MRI",
-    "finding": "Expansion of the caudal tectum with aqueductal compression.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "brainstem"
   ],
-  "sequenceOfChoice": "Axial FLAIR and sagittal T2"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Impaired sound localization and central hearing disturbance without deafness",
-    "side": "bilateral",
-    "mechanism": "Bilateral relay of auditory information"
-   },
-   {
-    "deficit": "Reduced auditory startle",
-    "side": "bilateral",
-    "mechanism": "Collicular reflex circuitry"
-   }
-  ],
-  "examination": [
-   "Hearing thresholds (normal) versus localization of sound with eyes closed",
-   "Speech-in-noise difficulty on history",
-   "Brainstem auditory evoked potentials"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Central auditory lesions above the cochlear nuclei do not cause deafness in one ear",
-   "Bilateral bright inferior colliculi on FLAIR in a malnourished or alcohol-dependent patient: give thiamine"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    210,
-    212
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    339
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    105,
-    107
-   ]
+  "status": "draft",
+  "latin": "Colliculus inferior",
+  "subsystem": "midbrain",
+  "level": {
+    "region": "midbrain"
   }
- ],
- "tags": [
-  "brainstem"
- ],
- "status": "draft",
- "latin": "Colliculus inferior",
- "subsystem": "midbrain",
- "level": {
-  "region": "midbrain"
- }
 }

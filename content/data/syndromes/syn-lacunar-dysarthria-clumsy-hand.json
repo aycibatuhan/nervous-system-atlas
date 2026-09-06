@@ -1,128 +1,104 @@
 {
- "kind": "syndrome",
- "id": "syn-lacunar-dysarthria-clumsy-hand",
- "name": "Dysarthria–clumsy hand syndrome",
- "eponyms": [],
- "category": "lacunar",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "pontine-nuclei",
-   "internal-capsule",
-   "level-pons-caudal"
+  "kind": "syndrome",
+  "id": "syn-lacunar-dysarthria-clumsy-hand",
+  "name": "Dysarthria–clumsy hand syndrome",
+  "eponyms": [],
+  "category": "lacunar",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "pontine-nuclei",
+      "internal-capsule",
+      "level-pons-caudal"
+    ],
+    "side": "contralateral"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -4,
+      "y": -25,
+      "z": -26
+    },
+    "radiusMm": 5
+  },
+  "presentation": "Speech becomes slurred and the patient complains that one hand has become clumsy: writing deteriorates and fine tasks are fumbled, although strength is nearly normal. Examination shows facial weakness of the lower face, tongue deviation, mild hand weakness with hyperreflexia and clumsiness, and sometimes an extensor plantar. Sensation is intact.",
+  "deficits": [
+    {
+      "modality": "bulbar",
+      "side": "contralateral",
+      "distribution": "face and tongue",
+      "sign": "Dysarthria with lower facial weakness and tongue deviation",
+      "substrate": "pathway-corticobulbar"
+    },
+    {
+      "modality": "motor",
+      "side": "contralateral",
+      "distribution": "hand",
+      "sign": "Clumsiness and mild weakness of the hand with hyperreflexia",
+      "substrate": "pathway-lateral-corticospinal"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "contralateral",
+      "distribution": "hand",
+      "sign": "Impaired fine finger movements and dysmetria",
+      "substrate": "pathway-cerebellar-circuits"
+    }
   ],
-  "side": "contralateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -4,
-   "y": -25,
-   "z": -26
+  "reasoning": "This is a small-vessel infarct in the paramedian basis pontis or the genu of the internal capsule, where the corticobulbar fibers to the facial and hypoglossal nuclei run beside the corticospinal fibers for the hand. The corticobulbar fibers cross at the level of the nuclei in the pons and medulla, and the corticospinal fibers cross in the pyramidal decussation, so both the facial weakness and the hand signs are contralateral to the lesion. Involvement of the corticopontocerebellar pathway, which crosses twice like all cerebellar loops, adds the clumsiness on the same side as the weakness. The lesion is too small to reach the sensory pathways in the pontine tegmentum or the posterior capsule, and the cortex is intact, so there is no sensory loss, aphasia or field defect. It is really a fragment of the pure motor syndrome in which the face and hand fibers, which lie most anteriorly in the capsule and most medially in the crus and pons, are picked out by an even smaller infarct.",
+  "imagingFindings": [
+    {
+      "pathology": "Acute lacune",
+      "modality": "MRI",
+      "finding": "Small (under 15 mm) focus of restricted diffusion in the paramedian basis pontis or genu of the internal capsule; CT is often normal in the first day.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Chronic lacune",
+      "modality": "MRI",
+      "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Hypertensive lipohyalinosis of a single perforating artery",
+    "Microatheroma at the perforator origin"
+  ],
+  "mimics": [
+    {
+      "name": "Cortical branch infarct",
+      "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
+    },
+    {
+      "name": "Small hemorrhage",
+      "howToDistinguish": "Hyperdense on CT; same sites"
+    }
+  ],
+  "management": [
+    "Antiplatelet therapy, statin and blood pressure control",
+    "Thrombolysis when presenting within the window and disabling",
+    "Early mobilization; prognosis for recovery is good"
+  ],
+  "citations": [
+    {
+      "ref": "sp-dysarthria",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-internal-capsule",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -4,
+      "y": -25,
+      "z": -26
+    },
+    "label": "paramedian pons"
   },
-  "radiusMm": 5
- },
- "presentation": "Speech becomes slurred and the patient complains that one hand has become clumsy: writing deteriorates and fine tasks are fumbled, although strength is nearly normal. Examination shows facial weakness of the lower face, tongue deviation, mild hand weakness with hyperreflexia and clumsiness, and sometimes an extensor plantar. Sensation is intact.",
- "deficits": [
-  {
-   "modality": "bulbar",
-   "side": "contralateral",
-   "distribution": "face and tongue",
-   "sign": "Dysarthria with lower facial weakness and tongue deviation",
-   "substrate": "pathway-corticobulbar"
-  },
-  {
-   "modality": "motor",
-   "side": "contralateral",
-   "distribution": "hand",
-   "sign": "Clumsiness and mild weakness of the hand with hyperreflexia",
-   "substrate": "pathway-lateral-corticospinal"
-  },
-  {
-   "modality": "cerebellar",
-   "side": "contralateral",
-   "distribution": "hand",
-   "sign": "Impaired fine finger movements and dysmetria",
-   "substrate": "pathway-cerebellar-circuits"
-  }
- ],
- "reasoning": "This is a small-vessel infarct in the paramedian basis pontis or the genu of the internal capsule, where the corticobulbar fibers to the facial and hypoglossal nuclei run beside the corticospinal fibers for the hand. The corticobulbar fibers cross at the level of the nuclei in the pons and medulla, and the corticospinal fibers cross in the pyramidal decussation, so both the facial weakness and the hand signs are contralateral to the lesion. Involvement of the corticopontocerebellar pathway, which crosses twice like all cerebellar loops, adds the clumsiness on the same side as the weakness. The lesion is too small to reach the sensory pathways in the pontine tegmentum or the posterior capsule, and the cortex is intact, so there is no sensory loss, aphasia or field defect. It is really a fragment of the pure motor syndrome in which the face and hand fibers, which lie most anteriorly in the capsule and most medially in the crus and pons, are picked out by an even smaller infarct.",
- "imagingFindings": [
-  {
-   "pathology": "Acute lacune",
-   "modality": "MRI",
-   "finding": "Small (under 15 mm) focus of restricted diffusion in the paramedian basis pontis or genu of the internal capsule; CT is often normal in the first day.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Chronic lacune",
-   "modality": "MRI",
-   "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Hypertensive lipohyalinosis of a single perforating artery",
-  "Microatheroma at the perforator origin"
- ],
- "mimics": [
-  {
-   "name": "Cortical branch infarct",
-   "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
-  },
-  {
-   "name": "Small hemorrhage",
-   "howToDistinguish": "Hyperdense on CT; same sites"
-  }
- ],
- "management": [
-  "Antiplatelet therapy, statin and blood pressure control",
-  "Thrombolysis when presenting within the window and disabling",
-  "Early mobilization; prognosis for recovery is good"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    474,
-    474
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    482
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    60,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -4,
-   "y": -25,
-   "z": -26
-  },
-  "label": "paramedian pons"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

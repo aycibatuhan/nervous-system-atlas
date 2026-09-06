@@ -1,181 +1,161 @@
 {
- "kind": "structure",
- "id": "cuneus",
- "name": "Cuneus",
- "synonyms": [
-  "upper calcarine bank",
-  "medial occipital cortex (superior)"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "cuneus-l",
-  "cuneus-r"
- ],
- "summary": "The cuneus is the wedge of medial occipital cortex above the calcarine sulcus and below the parieto-occipital sulcus, the upper bank of the primary visual cortex and its surrounding extrastriate areas (V1 above the sulcus, V2 and V3 on the cuneal surface). It represents the contralateral inferior visual field, so a cuneal lesion produces a contralateral inferior quadrantanopia. It is supplied by the calcarine and parieto-occipital branches of the posterior cerebral artery with a middle cerebral artery contribution at the occipital pole, which explains macular sparing after PCA occlusion, and it is the cortex of the visual auras of occipital epilepsy and migraine.",
- "anatomy": {
-  "location": "Medial occipital surface between the calcarine sulcus below and the parieto-occipital sulcus above, extending from the occipital pole forward to the junction of the two sulci behind the splenium.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Lateral geniculate nucleus (lower field fibers)",
-    "via": "optic radiation, upper bank"
-   },
-   {
-    "from": "Pulvinar",
-    "via": "thalamocortical fibers"
-   },
-   {
-    "from": "Contralateral visual cortex",
-    "via": "splenium of the corpus callosum"
-   }
+  "kind": "structure",
+  "id": "cuneus",
+  "name": "Cuneus",
+  "synonyms": [
+    "upper calcarine bank",
+    "medial occipital cortex (superior)"
   ],
-  "efferents": [
-   {
-    "to": "Superior parietal and lateral occipital cortex (dorsal stream)",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Superior colliculus and pretectum",
-    "via": "corticotectal fibers"
-   },
-   {
-    "to": "Lateral geniculate nucleus (feedback)",
-    "via": "corticogeniculate fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "cuneus-l",
+    "cuneus-r"
   ],
-  "pathways": [
-   "pathway-visual"
-  ]
- },
- "function": "The cuneal part of the primary visual cortex receives the upper bank of the optic radiation carrying the contralateral lower visual field, with the periphery represented anteriorly and the macula toward the pole, and passes the retinotopic map to the surrounding V2 and V3 on the cuneus and to dorsal-stream areas of the parietal lobe for the localization of objects and the guidance of action. Damage produces a congruous inferior quadrantic field defect, and irritation produces elementary hallucinations of flashes and colored shapes in the lower contralateral field. The cuneus also participates in visual attention and reading, and in the visual imagery that accompanies memory retrieval.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-mca",
-   "artery-mca-inferior-division"
+  "summary": "The cuneus is the wedge of medial occipital cortex above the calcarine sulcus and below the parieto-occipital sulcus, the upper bank of the primary visual cortex and its surrounding extrastriate areas (V1 above the sulcus, V2 and V3 on the cuneal surface). It represents the contralateral inferior visual field, so a cuneal lesion produces a contralateral inferior quadrantanopia. It is supplied by the calcarine and parieto-occipital branches of the posterior cerebral artery with a middle cerebral artery contribution at the occipital pole, which explains macular sparing after PCA occlusion, and it is the cortex of the visual auras of occipital epilepsy and migraine.",
+  "anatomy": {
+    "location": "Medial occipital surface between the calcarine sulcus below and the parieto-occipital sulcus above, extending from the occipital pole forward to the junction of the two sulci behind the splenium.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Lateral geniculate nucleus (lower field fibers)",
+        "via": "optic radiation, upper bank"
+      },
+      {
+        "from": "Pulvinar",
+        "via": "thalamocortical fibers"
+      },
+      {
+        "from": "Contralateral visual cortex",
+        "via": "splenium of the corpus callosum"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Superior parietal and lateral occipital cortex (dorsal stream)",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Superior colliculus and pretectum",
+        "via": "corticotectal fibers"
+      },
+      {
+        "to": "Lateral geniculate nucleus (feedback)",
+        "via": "corticogeniculate fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-visual"
+    ]
+  },
+  "function": "The cuneal part of the primary visual cortex receives the upper bank of the optic radiation carrying the contralateral lower visual field, with the periphery represented anteriorly and the macula toward the pole, and passes the retinotopic map to the surrounding V2 and V3 on the cuneus and to dorsal-stream areas of the parietal lobe for the localization of objects and the guidance of action. Damage produces a congruous inferior quadrantic field defect, and irritation produces elementary hallucinations of flashes and colored shapes in the lower contralateral field. The cuneus also participates in visual attention and reading, and in the visual imagery that accompanies memory retrieval.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-mca",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-pca-occipital"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cuneus-l"
+        },
+        "label": "cuneus above the calcarine sulcus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cuneus-r"
+        },
+        "label": "medial occipital cortex between the calcarine and parieto-occipital sulci"
+      }
+    ],
+    "normalAppearance": "Triangular medial occipital cortex on sagittal images between the deep calcarine and parieto-occipital sulci; the stria of Gennari is visible as a thin dark line in the calcarine cortex on high-resolution T1 images.",
+    "pathology": [
+      {
+        "pathology": "PCA infarct (upper calcarine bank)",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the cuneus with a contralateral inferior quadrantanopia; macular sparing when the pole is supplied by the MCA.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Occipital epilepsy",
+        "modality": "EEG",
+        "finding": "Brief elementary visual hallucinations of colored circles in the contralateral lower field followed by eye deviation; occipital spikes that increase with eye closure.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Posterior reversible encephalopathy syndrome",
+        "modality": "MRI",
+        "finding": "Bilateral parieto-occipital vasogenic edema including the cuneus with cortical blindness or visual disturbance.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral inferior quadrantanopia",
+        "side": "contralateral",
+        "mechanism": "Loss of the upper calcarine bank representing the lower visual field"
+      },
+      {
+        "deficit": "Elementary visual hallucinations in the lower contralateral field",
+        "side": "contralateral",
+        "mechanism": "Ictal activation of the cuneal visual cortex"
+      },
+      {
+        "deficit": "Impaired visually guided reaching and attention to the lower field",
+        "side": "contralateral",
+        "mechanism": "Loss of cuneal input to the dorsal visual stream"
+      }
+    ],
+    "examination": [
+      "Confrontation fields by quadrant with finger counting or a red target",
+      "Ask about flashes or colored shapes and their duration and side",
+      "Reading and scanning of a page for lower-field neglect of text"
+    ],
+    "syndromes": [
+      "syn-homonymous-hemianopia",
+      "syn-pca-infarct",
+      "syn-anton"
+    ],
+    "pearls": [
+      "Above the calcarine sulcus means below the horizontal meridian: cuneal lesions cut the lower field",
+      "Occipital seizure auras last seconds and are colored; migraine auras last minutes and are black and white zigzags",
+      "Macular sparing is the fingerprint of a PCA infarct with an intact MCA collateral at the occipital pole"
+    ]
+  },
+  "pitfalls": [
+    "Quadrantic defects are missed by testing hemifields only; count fingers in each of the four quadrants"
   ],
-  "territories": [
-   "territory-pca-occipital"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cuneus-l"
+  "citations": [
+    {
+      "ref": "sp-occipital-lobe",
+      "section": "Structure and Function"
     },
-    "label": "cuneus above the calcarine sulcus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cuneus-r"
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Structure and Function"
     },
-    "label": "medial occipital cortex between the calcarine and parieto-occipital sulci"
-   }
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Triangular medial occipital cortex on sagittal images between the deep calcarine and parieto-occipital sulci; the stria of Gennari is visible as a thin dark line in the calcarine cortex on high-resolution T1 images.",
-  "pathology": [
-   {
-    "pathology": "PCA infarct (upper calcarine bank)",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the cuneus with a contralateral inferior quadrantanopia; macular sparing when the pole is supplied by the MCA.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Occipital epilepsy",
-    "modality": "EEG",
-    "finding": "Brief elementary visual hallucinations of colored circles in the contralateral lower field followed by eye deviation; occipital spikes that increase with eye closure.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Posterior reversible encephalopathy syndrome",
-    "modality": "MRI",
-    "finding": "Bilateral parieto-occipital vasogenic edema including the cuneus with cortical blindness or visual disturbance.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral inferior quadrantanopia",
-    "side": "contralateral",
-    "mechanism": "Loss of the upper calcarine bank representing the lower visual field"
-   },
-   {
-    "deficit": "Elementary visual hallucinations in the lower contralateral field",
-    "side": "contralateral",
-    "mechanism": "Ictal activation of the cuneal visual cortex"
-   },
-   {
-    "deficit": "Impaired visually guided reaching and attention to the lower field",
-    "side": "contralateral",
-    "mechanism": "Loss of cuneal input to the dorsal visual stream"
-   }
+  "tags": [
+    "V1",
+    "visual field",
+    "lower quadrant"
   ],
-  "examination": [
-   "Confrontation fields by quadrant with finger counting or a red target",
-   "Ask about flashes or colored shapes and their duration and side",
-   "Reading and scanning of a page for lower-field neglect of text"
-  ],
-  "syndromes": [
-   "syn-homonymous-hemianopia",
-   "syn-pca-infarct",
-   "syn-anton"
-  ],
-  "pearls": [
-   "Above the calcarine sulcus means below the horizontal meridian: cuneal lesions cut the lower field",
-   "Occipital seizure auras last seconds and are colored; migraine auras last minutes and are black and white zigzags",
-   "Macular sparing is the fingerprint of a PCA infarct with an intact MCA collateral at the occipital pole"
-  ]
- },
- "pitfalls": [
-  "Quadrantic defects are missed by testing hemifields only; count fingers in each of the four quadrants"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    289
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    333,
-    336
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    52
-   ]
-  }
- ],
- "tags": [
-  "V1",
-  "visual field",
-  "lower quadrant"
- ],
- "status": "draft",
- "subsystem": "lobe-occipital",
- "parent": "lobe-occipital"
+  "status": "draft",
+  "subsystem": "lobe-occipital",
+  "parent": "lobe-occipital"
 }

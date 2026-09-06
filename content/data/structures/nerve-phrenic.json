@@ -1,134 +1,119 @@
 {
- "kind": "structure",
- "id": "nerve-phrenic",
- "name": "Phrenic nerve",
- "synonyms": [
-  "C3, C4, C5 keep the diaphragm alive"
- ],
- "system": "peripheral",
- "meshIds": [],
- "summary": "Formed mainly from C4 with contributions from C3 and C5 at the lateral border of the anterior scalene, the phrenic nerve descends on that muscle, enters the thorax between the subclavian artery and vein, and runs in front of the lung root over the pericardium to reach the diaphragm, which it supplies motor fibers and to which it also gives sensory fibers (plus the pericardium, mediastinal pleura and peritoneum under the diaphragm). Its interruption paralyzes a hemidiaphragm, which is tolerated at rest but produces orthopnea; bilateral loss, as in high cervical cord injury, Guillain–Barré syndrome or neuralgic amyotrophy, causes respiratory failure.",
- "anatomy": {
-  "location": "From the C3–C5 roots across the anterior scalene, behind the sternocleidomastoid and subclavian vein, in front of the lung hilum along the pericardium to the diaphragm; the right nerve is shorter and more vertical.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Sole motor supply to the diaphragm; sensory supply to the central diaphragm, pericardium and mediastinal pleura (referred shoulder-tip pain via C4).",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "nerve-phrenic",
+  "name": "Phrenic nerve",
+  "synonyms": [
+    "C3, C4, C5 keep the diaphragm alive"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "system": "peripheral",
+  "meshIds": [
+    "phrenic-nerve-l",
+    "phrenic-nerve-r"
+  ],
+  "summary": "Formed mainly from C4 with contributions from C3 and C5 at the lateral border of the anterior scalene, the phrenic nerve descends on that muscle, enters the thorax between the subclavian artery and vein, and runs in front of the lung root over the pericardium to reach the diaphragm, which it supplies motor fibers and to which it also gives sensory fibers (plus the pericardium, mediastinal pleura and peritoneum under the diaphragm). Its interruption paralyzes a hemidiaphragm, which is tolerated at rest but produces orthopnea; bilateral loss, as in high cervical cord injury, Guillain–Barré syndrome or neuralgic amyotrophy, causes respiratory failure.",
+  "anatomy": {
+    "location": "From the C3–C5 roots across the anterior scalene, behind the sternocleidomastoid and subclavian vein, in front of the lung hilum along the pericardium to the diaphragm; the right nerve is shorter and more vertical.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Sole motor supply to the diaphragm; sensory supply to the central diaphragm, pericardium and mediastinal pleura (referred shoulder-tip pain via C4).",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "upper cervical cord; the phrenic motor neurons lie at C3–C5"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. A raised hemidiaphragm on a chest radiograph with paradoxical movement on fluoroscopic or ultrasound sniff test is the imaging sign of phrenic palsy.",
+    "pathology": [
+      {
+        "pathology": "Phrenic nerve palsy",
+        "modality": "US",
+        "finding": "Absent or paradoxical diaphragmatic excursion on sniff test ultrasound; elevated hemidiaphragm on radiograph.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Mediastinal tumor or cardiac surgery injury",
+        "modality": "CT",
+        "finding": "Mass along the course of the nerve or post-surgical change with an elevated hemidiaphragm.",
+        "sequence": "CT contrast"
+      }
+    ],
+    "sequenceOfChoice": "Chest radiograph and diaphragm ultrasound; phrenic nerve conduction and diaphragm EMG"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Orthopnea and exertional dyspnea with an elevated hemidiaphragm",
+        "side": "ipsilateral",
+        "mechanism": "Hemidiaphragm paralysis"
+      },
+      {
+        "deficit": "Respiratory failure requiring ventilation",
+        "side": "bilateral",
+        "mechanism": "Bilateral phrenic loss: high cervical injury above C3, Guillain–Barré, motor neuron disease"
+      },
+      {
+        "deficit": "Shoulder-tip pain",
+        "side": "ipsilateral",
+        "mechanism": "Referred sensory fibers via C4 from diaphragmatic irritation"
+      }
+    ],
+    "examination": [
+      "Observe abdominal paradox (abdomen moves in on inspiration) when lying flat",
+      "Vital capacity sitting versus supine (a fall over 20% suggests diaphragm weakness)",
+      "Percuss the diaphragm level"
+    ],
+    "syndromes": [
+      "syn-guillain-barre",
+      "syn-parsonage-turner",
+      "syn-complete-transection-spinal-shock"
+    ],
+    "pearls": [
+      "A patient who cannot lie flat but has clear lungs may have diaphragm paralysis",
+      "Cord injuries above C3 need ventilation; C4 and below usually breathe"
+    ]
+  },
+  "pitfalls": [
+    "DERIVED MESH: no source atlas contains a phrenic nerve, so the two tubes shown are constructed. The course was built as a smoothed polyline whose waypoints were read off named Z-Anatomy objects (the C4 spinal ganglion, the anterior surface of scalenus anterior, the gap between the subclavian vein and artery, the brachiocephalic vein, the aortic arch on the left and the superior vena cava on the right, the pericardial surface of the heart and the diaphragm) and swept as a 1.5 mm tube; the waypoints are listed in pipeline/config/derived_nerves.yaml. It shows the route, not this specimen's nerve, and the accessory phrenic nerve is not modeled."
+  ],
+  "citations": [
+    {
+      "ref": "sp-thorax-phrenic-nerves",
+      "section": "Structure and Function"
     },
-    "label": "upper cervical cord; the phrenic motor neurons lie at C3–C5"
-   }
+    {
+      "ref": "sp-phrenic-nerve-injury",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. A raised hemidiaphragm on a chest radiograph with paradoxical movement on fluoroscopic or ultrasound sniff test is the imaging sign of phrenic palsy.",
-  "pathology": [
-   {
-    "pathology": "Phrenic nerve palsy",
-    "modality": "US",
-    "finding": "Absent or paradoxical diaphragmatic excursion on sniff test ultrasound; elevated hemidiaphragm on radiograph.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Mediastinal tumor or cardiac surgery injury",
-    "modality": "CT",
-    "finding": "Mass along the course of the nerve or post-surgical change with an elevated hemidiaphragm.",
-    "sequence": "CT contrast"
-   }
+  "tags": [
+    "pns",
+    "upper-limb"
   ],
-  "sequenceOfChoice": "Chest radiograph and diaphragm ultrasound; phrenic nerve conduction and diaphragm EMG"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Orthopnea and exertional dyspnea with an elevated hemidiaphragm",
-    "side": "ipsilateral",
-    "mechanism": "Hemidiaphragm paralysis"
-   },
-   {
-    "deficit": "Respiratory failure requiring ventilation",
-    "side": "bilateral",
-    "mechanism": "Bilateral phrenic loss: high cervical injury above C3, Guillain–Barré, motor neuron disease"
-   },
-   {
-    "deficit": "Shoulder-tip pain",
-    "side": "ipsilateral",
-    "mechanism": "Referred sensory fibers via C4 from diaphragmatic irritation"
-   }
-  ],
-  "examination": [
-   "Observe abdominal paradox (abdomen moves in on inspiration) when lying flat",
-   "Vital capacity sitting versus supine (a fall over 20% suggests diaphragm weakness)",
-   "Percuss the diaphragm level"
-  ],
-  "syndromes": [
-   "syn-guillain-barre",
-   "syn-parsonage-turner",
-   "syn-complete-transection-spinal-shock"
-  ],
-  "pearls": [
-   "A patient who cannot lie flat but has clear lungs may have diaphragm paralysis",
-   "Cord injuries above C3 need ventilation; C4 and below usually breathe"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    113,
-    113
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 19,
-   "pages": [
-    510,
-    511
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 15,
-   "pages": [
-    129,
-    130
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 27,
-   "pages": [
-    281,
-    284
-   ]
+  "status": "draft",
+  "latin": "Nervus phrenicus",
+  "subsystem": "upper-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "upper-limb"
- ],
- "status": "draft",
- "latin": "Nervus phrenicus",
- "subsystem": "upper-limb",
- "level": {
-  "region": "peripheral"
- }
 }

@@ -1,167 +1,155 @@
 {
- "kind": "structure",
- "id": "roots-l2-s1",
- "name": "Lumbosacral roots L2–S1",
- "synonyms": [],
- "system": "peripheral",
- "meshIds": [],
- "summary": "The lumbosacral roots descend obliquely from the conus as the cauda equina before leaving through their foramina, so a posterolateral disc at one level compresses the root that has not yet exited (the L4–L5 disc compresses L5, the L5–S1 disc compresses S1) while a far-lateral disc catches the root above. Each root has a bedside signature: L2–L3 hip flexion and anterior thigh; L4 knee extension, foot inversion, the knee jerk and the medial leg; L5 dorsiflexion, great toe extension, hip abduction and the dorsum of the foot; S1 plantar flexion, hip extension, the ankle jerk and the lateral foot and sole. L5 and S1 radiculopathies account for most sciatica.",
- "anatomy": {
-  "location": "Roots leaving the conus at T12–L1 and descending in the cauda equina to their foramina; the exiting root passes below the pedicle of the same-numbered vertebra, the traversing root of the next level crosses the disc.",
-  "subdivisions": [
-   {
-    "name": "L2–L3",
-    "note": "iliopsoas, adductors, quadriceps (partly); anterior and medial thigh"
-   },
-   {
-    "name": "L4",
-    "note": "quadriceps, tibialis anterior (inversion component); knee reflex; medial leg to the medial malleolus"
-   },
-   {
-    "name": "L5",
-    "note": "extensor hallucis longus, tibialis anterior, peroneals, gluteus medius, hamstrings (partly); no reliable reflex (medial hamstring); dorsum of the foot, great toe, lateral leg"
-   },
-   {
-    "name": "S1",
-    "note": "gastrocnemius, soleus, gluteus maximus, hamstrings; ankle reflex; lateral foot, sole, posterior calf"
-   },
-   {
-    "name": "S2–S4",
-    "note": "pelvic floor, sphincters; perineum"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Segmental motor, sensory and autonomic supply to the lower limb and perineum.",
- "bloodSupply": {
-  "arteries": [
-   "vasa nervorum from regional arteries"
+  "kind": "structure",
+  "id": "roots-l2-s1",
+  "name": "Lumbosacral roots L2–S1",
+  "synonyms": [],
+  "system": "peripheral",
+  "meshIds": [
+    "roots-lumbosacral-anterior-l",
+    "roots-lumbosacral-anterior-r",
+    "roots-lumbosacral-posterior-l",
+    "roots-lumbosacral-posterior-r"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -48,
-     "z": -65
+  "summary": "The lumbosacral roots descend obliquely from the conus as the cauda equina before leaving through their foramina, so a posterolateral disc at one level compresses the root that has not yet exited (the L4–L5 disc compresses L5, the L5–S1 disc compresses S1) while a far-lateral disc catches the root above. Each root has a bedside signature: L2–L3 hip flexion and anterior thigh; L4 knee extension, foot inversion, the knee jerk and the medial leg; L5 dorsiflexion, great toe extension, hip abduction and the dorsum of the foot; S1 plantar flexion, hip extension, the ankle jerk and the lateral foot and sole. L5 and S1 radiculopathies account for most sciatica.",
+  "anatomy": {
+    "location": "Roots leaving the conus at T12–L1 and descending in the cauda equina to their foramina; the exiting root passes below the pedicle of the same-numbered vertebra, the traversing root of the next level crosses the disc.",
+    "subdivisions": [
+      {
+        "name": "L2–L3",
+        "note": "iliopsoas, adductors, quadriceps (partly); anterior and medial thigh"
+      },
+      {
+        "name": "L4",
+        "note": "quadriceps, tibialis anterior (inversion component); knee reflex; medial leg to the medial malleolus"
+      },
+      {
+        "name": "L5",
+        "note": "extensor hallucis longus, tibialis anterior, peroneals, gluteus medius, hamstrings (partly); no reliable reflex (medial hamstring); dorsum of the foot, great toe, lateral leg"
+      },
+      {
+        "name": "S1",
+        "note": "gastrocnemius, soleus, gluteus maximus, hamstrings; ankle reflex; lateral foot, sole, posterior calf"
+      },
+      {
+        "name": "S2–S4",
+        "note": "pelvic floor, sphincters; perineum"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Segmental motor, sensory and autonomic supply to the lower limb and perineum.",
+  "bloodSupply": {
+    "arteries": [
+      "vasa nervorum from regional arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -48,
+          "z": -65
+        },
+        "label": "cord (the lumbosacral roots lie in the lumbar canal, below the MNI volume)"
+      }
+    ],
+    "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Lumbar MRI shows the disc herniation, lateral recess or foraminal stenosis and its relation to the exiting and traversing roots; root enhancement suggests inflammation.",
+    "pathology": [
+      {
+        "pathology": "Lumbar disc herniation",
+        "modality": "MRI",
+        "finding": "Posterolateral L4–L5 or L5–S1 protrusion compressing the traversing L5 or S1 root in the lateral recess.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Foraminal stenosis / far-lateral disc",
+        "modality": "MRI",
+        "finding": "Compression of the exiting root (L4 at L4–L5) in the foramen.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Lumbar canal stenosis",
+        "modality": "MRI",
+        "finding": "Trefoil canal with crowded roots and neurogenic claudication.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "Lumbar MRI; EMG including paraspinal muscles"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Sciatica to the great toe, weak dorsiflexion and great toe extension, weak hip abduction (Trendelenburg), reflexes preserved",
+        "side": "ipsilateral",
+        "mechanism": "L5 radiculopathy (L4–L5 disc)"
+      },
+      {
+        "deficit": "Sciatica to the lateral foot, weak plantar flexion and absent ankle jerk",
+        "side": "ipsilateral",
+        "mechanism": "S1 radiculopathy (L5–S1 disc)"
+      },
+      {
+        "deficit": "Anterior thigh pain, weak knee extension and absent knee jerk",
+        "side": "ipsilateral",
+        "mechanism": "L3–L4 radiculopathy (femoral stretch test positive)"
+      },
+      {
+        "deficit": "Bilateral leg pain on walking relieved by sitting",
+        "side": "bilateral",
+        "mechanism": "Lumbar canal stenosis compressing several roots"
+      }
+    ],
+    "examination": [
+      "Straight-leg raise (L5, S1) and femoral stretch (L2–L4)",
+      "Key muscles: extensor hallucis longus (L5), toe-stand (S1), knee extension (L4)",
+      "Knee and ankle reflexes",
+      "Dermatomes: medial leg L4, dorsum L5, lateral foot S1",
+      "Hip abduction for L5 (gluteus medius, spared in peroneal palsy)"
+    ],
+    "syndromes": [
+      "syn-radiculopathy-lumbosacral",
+      "syn-lumbar-stenosis",
+      "syn-conus-vs-cauda-equina",
+      "syn-peroneal-palsy-foot-drop"
+    ],
+    "pearls": [
+      "Foot drop with weak hip abduction and inversion is L5; with normal abduction and inversion it is the peroneal nerve",
+      "The ankle jerk belongs to S1 and the knee jerk to L4; L5 has no convenient reflex"
+    ]
+  },
+  "pitfalls": [
+    "The Z-Anatomy source models one root and ganglion pair per intervertebral foramen from C2 to L2 only, so the lumbosacral root meshes hold the L1 and L2 pairs; the L3 to S5 roots are represented by the cauda equina mesh instead.",
+    "The source also draws every root as a short straight segment running out to the foramen at its own vertebral level, so it does not show the long oblique descent that makes a paracentral disc compress the traversing rather than the exiting root."
+  ],
+  "citations": [
+    {
+      "ref": "sp-lumbar-disc-herniation",
+      "section": "Pathophysiology"
     },
-    "label": "cord (the lumbosacral roots lie in the lumbar canal, below the MNI volume)"
-   }
+    {
+      "ref": "sp-sciatica",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-dermatomes",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Peripheral nerves of the limbs are outside the MNI brain volume; no atlas mesh is shown. Ultrasound and MR neurography image the nerve directly; electrodiagnosis localizes the lesion functionally. Lumbar MRI shows the disc herniation, lateral recess or foraminal stenosis and its relation to the exiting and traversing roots; root enhancement suggests inflammation.",
-  "pathology": [
-   {
-    "pathology": "Lumbar disc herniation",
-    "modality": "MRI",
-    "finding": "Posterolateral L4–L5 or L5–S1 protrusion compressing the traversing L5 or S1 root in the lateral recess.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Foraminal stenosis / far-lateral disc",
-    "modality": "MRI",
-    "finding": "Compression of the exiting root (L4 at L4–L5) in the foramen.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Lumbar canal stenosis",
-    "modality": "MRI",
-    "finding": "Trefoil canal with crowded roots and neurogenic claudication.",
-    "sequence": "T2"
-   }
+  "tags": [
+    "pns",
+    "lower-limb"
   ],
-  "sequenceOfChoice": "Lumbar MRI; EMG including paraspinal muscles"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Sciatica to the great toe, weak dorsiflexion and great toe extension, weak hip abduction (Trendelenburg), reflexes preserved",
-    "side": "ipsilateral",
-    "mechanism": "L5 radiculopathy (L4–L5 disc)"
-   },
-   {
-    "deficit": "Sciatica to the lateral foot, weak plantar flexion and absent ankle jerk",
-    "side": "ipsilateral",
-    "mechanism": "S1 radiculopathy (L5–S1 disc)"
-   },
-   {
-    "deficit": "Anterior thigh pain, weak knee extension and absent knee jerk",
-    "side": "ipsilateral",
-    "mechanism": "L3–L4 radiculopathy (femoral stretch test positive)"
-   },
-   {
-    "deficit": "Bilateral leg pain on walking relieved by sitting",
-    "side": "bilateral",
-    "mechanism": "Lumbar canal stenosis compressing several roots"
-   }
-  ],
-  "examination": [
-   "Straight-leg raise (L5, S1) and femoral stretch (L2–L4)",
-   "Key muscles: extensor hallucis longus (L5), toe-stand (S1), knee extension (L4)",
-   "Knee and ankle reflexes",
-   "Dermatomes: medial leg L4, dorsum L5, lateral foot S1",
-   "Hip abduction for L5 (gluteus medius, spared in peroneal palsy)"
-  ],
-  "syndromes": [
-   "syn-radiculopathy-lumbosacral",
-   "syn-lumbar-stenosis",
-   "syn-conus-vs-cauda-equina",
-   "syn-peroneal-palsy-foot-drop"
-  ],
-  "pearls": [
-   "Foot drop with weak hip abduction and inversion is L5; with normal abduction and inversion it is the peroneal nerve",
-   "The ankle jerk belongs to S1 and the knee jerk to L4; L5 has no convenient reflex"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    98,
-    100
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 19,
-   "pages": [
-    510,
-    511
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 17,
-   "pages": [
-    157,
-    163
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 15,
-   "pages": [
-    130,
-    133
-   ]
+  "status": "draft",
+  "latin": "Radices L2–S1",
+  "subsystem": "lower-limb",
+  "level": {
+    "region": "peripheral"
   }
- ],
- "tags": [
-  "pns",
-  "lower-limb"
- ],
- "status": "draft",
- "latin": "Radices L2–S1",
- "subsystem": "lower-limb",
- "level": {
-  "region": "peripheral"
- }
 }

@@ -1,118 +1,122 @@
 {
- "kind": "syndrome",
- "id": "syn-gerstmann",
- "name": "Gerstmann syndrome",
- "eponyms": [
-  "angular gyrus syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "gyrus-angular",
-   "lobe-parietal",
-   "artery-mca-inferior-division"
+  "kind": "syndrome",
+  "id": "syn-gerstmann",
+  "name": "Gerstmann syndrome",
+  "eponyms": [
+    "angular gyrus syndrome"
   ],
-  "side": "left"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -45,
-   "y": -60,
-   "z": 35
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "gyrus-angular",
+      "lobe-parietal",
+      "artery-mca-inferior-division"
+    ],
+    "side": "left"
   },
-  "radiusMm": 10
- },
- "presentation": "A right-handed patient is found unable to do simple arithmetic, to write a sentence, to name or point to individual fingers, and to tell left from right, either on themselves or on the examiner, while speaking fluently and understanding well. There may be a mild alexia and constructional difficulty. The combination points to the dominant angular gyrus.",
- "deficits": [
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "dominant parietal",
-   "sign": "Acalculia",
-   "substrate": "gyrus-angular"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -45,
+      "y": -60,
+      "z": 35
+    },
+    "radiusMm": 10
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "dominant parietal",
-   "sign": "Agraphia without alexia (or with mild alexia)",
-   "substrate": "gyrus-angular"
+  "presentation": "A right-handed patient is found unable to do simple arithmetic, to write a sentence, to name or point to individual fingers, and to tell left from right, either on themselves or on the examiner, while speaking fluently and understanding well. There may be a mild alexia and constructional difficulty. The combination points to the dominant angular gyrus.",
+  "deficits": [
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "dominant parietal",
+      "sign": "Acalculia",
+      "substrate": "gyrus-angular"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "dominant parietal",
+      "sign": "Agraphia without alexia (or with mild alexia)",
+      "substrate": "gyrus-angular"
+    },
+    {
+      "modality": "cognitive",
+      "side": "n/a",
+      "distribution": "dominant parietal",
+      "sign": "Finger agnosia and right-left disorientation",
+      "substrate": "gyrus-angular"
+    },
+    {
+      "modality": "visual-field",
+      "side": "contralateral",
+      "distribution": "inferior quadrant (sometimes)",
+      "sign": "Inferior quadrantanopia if the parietal optic radiation is caught",
+      "substrate": "pathway-visual"
+    }
+  ],
+  "reasoning": "The angular gyrus of the dominant hemisphere is a hub where visual, somatosensory and language information converge, at the junction of the parietal, temporal and occipital lobes. It maps the body schema onto language, which is why identifying fingers, telling left from right, manipulating numbers and writing, all of which require translating between spatial and verbal representations, fail together. Each of these functions depends on the intact, uncrossed cortical association network of one hemisphere, so the syndrome is a consequence of a left-sided lesion in right-handed people and has no contralateral or crossed component apart from any accompanying field defect, which is contralateral because the optic radiation on its way to the calcarine cortex carries the opposite hemifield. The supplying vessel is the angular branch of the inferior division of the middle cerebral artery; larger infarcts add Wernicke aphasia or alexia, and the pure tetrad is rare enough that its localizing value is debated, but its presence should always send the examiner to the left parietal lobe.",
+  "imagingFindings": [
+    {
+      "pathology": "Angular gyrus infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the left angular gyrus at the parieto-temporo-occipital junction.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Tumor or focal atrophy",
+      "modality": "MRI",
+      "finding": "Left parietal mass or focal atrophy (posterior cortical variants of Alzheimer disease) producing a slowly progressive version.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Infarct of the angular branch of the left middle cerebral artery",
+    "Left parietal tumor",
+    "Posterior cortical atrophy"
+  ],
+  "mimics": [
+    {
+      "name": "Wernicke aphasia",
+      "howToDistinguish": "Comprehension is impaired; in Gerstmann it is preserved"
+    },
+    {
+      "name": "Developmental Gerstmann",
+      "howToDistinguish": "Lifelong learning difficulty in children, no acute lesion"
+    },
+    {
+      "name": "Global cognitive impairment",
+      "howToDistinguish": "Deficits are not selective"
+    }
+  ],
+  "management": [
+    "Treat the underlying stroke or lesion",
+    "Occupational therapy for calculation and writing",
+    "Screen for a field defect"
+  ],
+  "citations": [
+    {
+      "ref": "sp-gerstmann-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -45,
+      "y": -60,
+      "z": 35
+    },
+    "label": "left angular gyrus"
   },
-  {
-   "modality": "cognitive",
-   "side": "n/a",
-   "distribution": "dominant parietal",
-   "sign": "Finger agnosia and right-left disorientation",
-   "substrate": "gyrus-angular"
-  },
-  {
-   "modality": "visual-field",
-   "side": "contralateral",
-   "distribution": "inferior quadrant (sometimes)",
-   "sign": "Inferior quadrantanopia if the parietal optic radiation is caught",
-   "substrate": "pathway-visual"
-  }
- ],
- "reasoning": "The angular gyrus of the dominant hemisphere is a hub where visual, somatosensory and language information converge, at the junction of the parietal, temporal and occipital lobes. It maps the body schema onto language, which is why identifying fingers, telling left from right, manipulating numbers and writing, all of which require translating between spatial and verbal representations, fail together. Each of these functions depends on the intact, uncrossed cortical association network of one hemisphere, so the syndrome is a consequence of a left-sided lesion in right-handed people and has no contralateral or crossed component apart from any accompanying field defect, which is contralateral because the optic radiation on its way to the calcarine cortex carries the opposite hemifield. The supplying vessel is the angular branch of the inferior division of the middle cerebral artery; larger infarcts add Wernicke aphasia or alexia, and the pure tetrad is rare enough that its localizing value is debated, but its presence should always send the examiner to the left parietal lobe.",
- "imagingFindings": [
-  {
-   "pathology": "Angular gyrus infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the left angular gyrus at the parieto-temporo-occipital junction.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Tumor or focal atrophy",
-   "modality": "MRI",
-   "finding": "Left parietal mass or focal atrophy (posterior cortical variants of Alzheimer disease) producing a slowly progressive version.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Infarct of the angular branch of the left middle cerebral artery",
-  "Left parietal tumor",
-  "Posterior cortical atrophy"
- ],
- "mimics": [
-  {
-   "name": "Wernicke aphasia",
-   "howToDistinguish": "Comprehension is impaired; in Gerstmann it is preserved"
-  },
-  {
-   "name": "Developmental Gerstmann",
-   "howToDistinguish": "Lifelong learning difficulty in children, no acute lesion"
-  },
-  {
-   "name": "Global cognitive impairment",
-   "howToDistinguish": "Deficits are not selective"
-  }
- ],
- "management": [
-  "Treat the underlying stroke or lesion",
-  "Occupational therapy for calculation and writing",
-  "Screen for a field defect"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    53
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -45,
-   "y": -60,
-   "z": 35
-  },
-  "label": "left angular gyrus"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

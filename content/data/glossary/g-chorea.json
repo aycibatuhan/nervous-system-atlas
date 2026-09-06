@@ -1,11 +1,20 @@
 {
- "kind": "glossary",
- "id": "g-chorea",
- "term": "Chorea",
- "definition": "Irregular, flowing, unpredictable involuntary movements that flit from one body part to another, from dysfunction of the striatum and the indirect pathway (Huntington disease, Sydenham chorea, drugs).",
- "related": [
-  "g-ballismus",
-  "g-dystonia"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-chorea",
+  "term": "Chorea",
+  "definition": "Irregular, flowing, unpredictable involuntary movements that flit from one body part to another, from dysfunction of the striatum and the indirect pathway (Huntington disease, Sydenham chorea, drugs).",
+  "related": [
+    "g-ballismus",
+    "g-dystonia"
+  ],
+  "citations": [
+    {
+      "ref": "sp-chorea",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-sydenham-chorea",
+      "section": "Pathophysiology"
+    }
+  ]
 }

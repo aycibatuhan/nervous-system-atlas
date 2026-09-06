@@ -1,140 +1,136 @@
 {
- "kind": "syndrome",
- "id": "syn-tonsillar-herniation",
- "name": "Tonsillar herniation (coning)",
- "eponyms": [
-  "coning",
-  "foramen magnum herniation"
- ],
- "category": "herniation",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "cerebellar-tonsil",
-   "level-medulla-olive",
-   "reticular-formation",
-   "ventricle-fourth"
+  "kind": "syndrome",
+  "id": "syn-tonsillar-herniation",
+  "name": "Tonsillar herniation (coning)",
+  "eponyms": [
+    "coning",
+    "foramen magnum herniation"
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "cerebellar-lobule-ix-l",
-   "cerebellar-lobule-ix-r"
-  ]
- },
- "presentation": "A patient with a posterior fossa mass, or a patient with raised intracranial pressure who has just had a lumbar puncture, develops a stiff neck, holds the head tilted, vomits, and then abruptly becomes apneic with a slow pulse and a rising blood pressure. The pupils may be small and then dilate; the arms extend. Unless the pressure is relieved within minutes, breathing stops permanently while the heart continues.",
- "deficits": [
-  {
-   "modality": "other",
-   "side": "bilateral",
-   "distribution": "respiratory centers",
-   "sign": "Apnea and ataxic breathing from medullary compression",
-   "substrate": "reticular-formation"
+  "category": "herniation",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "cerebellar-tonsil",
+      "level-medulla-olive",
+      "reticular-formation",
+      "ventricle-fourth"
+    ],
+    "side": "bilateral"
   },
-  {
-   "modality": "autonomic",
-   "side": "bilateral",
-   "distribution": "cardiovascular centers",
-   "sign": "Cushing response: hypertension, bradycardia and irregular respiration",
-   "substrate": "reticular-formation"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "cerebellar-lobule-ix-l",
+      "cerebellar-lobule-ix-r"
+    ]
   },
-  {
-   "modality": "consciousness",
-   "side": "bilateral",
-   "distribution": "medulla and lower pons",
-   "sign": "Abrupt loss of consciousness",
-   "substrate": "reticular-formation"
+  "presentation": "A patient with a posterior fossa mass, or a patient with raised intracranial pressure who has just had a lumbar puncture, develops a stiff neck, holds the head tilted, vomits, and then abruptly becomes apneic with a slow pulse and a rising blood pressure. The pupils may be small and then dilate; the arms extend. Unless the pressure is relieved within minutes, breathing stops permanently while the heart continues.",
+  "deficits": [
+    {
+      "modality": "other",
+      "side": "bilateral",
+      "distribution": "respiratory centers",
+      "sign": "Apnea and ataxic breathing from medullary compression",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "autonomic",
+      "side": "bilateral",
+      "distribution": "cardiovascular centers",
+      "sign": "Cushing response: hypertension, bradycardia and irregular respiration",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "consciousness",
+      "side": "bilateral",
+      "distribution": "medulla and lower pons",
+      "sign": "Abrupt loss of consciousness",
+      "substrate": "reticular-formation"
+    },
+    {
+      "modality": "pain",
+      "side": "bilateral",
+      "distribution": "neck",
+      "sign": "Neck stiffness, head tilt and occipital pain from dural stretching and tonsillar impaction",
+      "substrate": "cerebellar-tonsil"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "bilateral",
+      "distribution": "lower cranial nerves",
+      "sign": "Dysphagia, bilateral sixth nerve palsies and downbeat nystagmus before the crisis",
+      "substrate": "abducens-nucleus"
+    }
+  ],
+  "reasoning": "The foramen magnum is the only exit from the rigid skull, and the cerebellar tonsils lie directly above it beside the medulla. When the pressure in the posterior fossa rises, from a cerebellar hematoma, infarct or tumor, or when the pressure difference across the foramen is suddenly increased by withdrawing CSF from the lumbar sac in a patient with a supratentorial mass, the tonsils are forced down through the foramen, plugging it and compressing the medulla against the bony rim. The medulla contains the respiratory rhythm generators and the cardiovascular centers, so the first consequences are irregular breathing, the Cushing response of hypertension with reflex bradycardia as the medulla tries to maintain its own perfusion, and then apnea; the heart, which has its own rhythm, keeps beating after breathing stops, which is why the classical death from coning is respiratory. The obstruction of the foramen also blocks CSF outflow from the fourth ventricle and worsens the hydrocephalus that produced it. The structures crushed are midline and the compression is symmetric, so there is no lateralizing sign and no ipsilateral or contralateral rule to apply, and the warning signs are those of medullary and lower pontine irritation: neck stiffness and head tilt, vomiting, hiccups, downbeat nystagmus and bilateral abducens palsies. Chronic tonsillar descent in Chiari malformation is a different, slow process, but it explains why a lumbar puncture can precipitate acute coning even when the supratentorial pressure is modest.",
+  "imagingFindings": [
+    {
+      "pathology": "Tonsillar herniation",
+      "modality": "CT",
+      "finding": "Tonsils below the foramen magnum with obliteration of the cisterna magna and crowding of the foramen; posterior fossa mass with a compressed fourth ventricle and hydrocephalus.",
+      "sequence": "CT non-contrast"
+    },
+    {
+      "pathology": "Tonsillar descent",
+      "modality": "MRI",
+      "finding": "Peg-shaped tonsils below the basion–opisthion line on sagittal T1 with an effaced cisterna magna and medullary compression.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Cerebellar hemorrhage or infarct",
+      "modality": "CT",
+      "finding": "Hyperdense cerebellar hematoma or hypodense swollen infarct with fourth ventricular effacement, the commonest acute causes.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Cerebellar hemorrhage or infarct with swelling",
+    "Posterior fossa tumor",
+    "Lumbar puncture in the presence of raised intracranial pressure",
+    "Diffuse cerebral edema as the end stage of central herniation"
+  ],
+  "mimics": [
+    {
+      "name": "Chiari I malformation",
+      "howToDistinguish": "Chronic, cough headache, no acute deterioration"
+    },
+    {
+      "name": "Vasovagal syncope during lumbar puncture",
+      "howToDistinguish": "Brief, with recovery and no neurological signs"
+    },
+    {
+      "name": "Brainstem stroke",
+      "howToDistinguish": "Focal signs, cranial nerve pattern, no mass"
+    }
+  ],
+  "management": [
+    "Never perform a lumbar puncture in a patient with signs of raised intracranial pressure or a posterior fossa mass without imaging first",
+    "Emergency ventriculostomy and suboccipital decompression for posterior fossa masses with tonsillar descent",
+    "Intubate and ventilate, osmotherapy, head up"
+  ],
+  "citations": [
+    {
+      "ref": "sp-tonsillar-herniation",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-foramen-magnum",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-cranial-meninges",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -45,
+      "z": -55
+    },
+    "label": "cerebellar tonsils at the foramen magnum"
   },
-  {
-   "modality": "pain",
-   "side": "bilateral",
-   "distribution": "neck",
-   "sign": "Neck stiffness, head tilt and occipital pain from dural stretching and tonsillar impaction",
-   "substrate": "cerebellar-tonsil"
-  },
-  {
-   "modality": "cranial-nerve",
-   "side": "bilateral",
-   "distribution": "lower cranial nerves",
-   "sign": "Dysphagia, bilateral sixth nerve palsies and downbeat nystagmus before the crisis",
-   "substrate": "abducens-nucleus"
-  }
- ],
- "reasoning": "The foramen magnum is the only exit from the rigid skull, and the cerebellar tonsils lie directly above it beside the medulla. When the pressure in the posterior fossa rises, from a cerebellar hematoma, infarct or tumor, or when the pressure difference across the foramen is suddenly increased by withdrawing CSF from the lumbar sac in a patient with a supratentorial mass, the tonsils are forced down through the foramen, plugging it and compressing the medulla against the bony rim. The medulla contains the respiratory rhythm generators and the cardiovascular centers, so the first consequences are irregular breathing, the Cushing response of hypertension with reflex bradycardia as the medulla tries to maintain its own perfusion, and then apnea; the heart, which has its own rhythm, keeps beating after breathing stops, which is why the classical death from coning is respiratory. The obstruction of the foramen also blocks CSF outflow from the fourth ventricle and worsens the hydrocephalus that produced it. The structures crushed are midline and the compression is symmetric, so there is no lateralizing sign and no ipsilateral or contralateral rule to apply, and the warning signs are those of medullary and lower pontine irritation: neck stiffness and head tilt, vomiting, hiccups, downbeat nystagmus and bilateral abducens palsies. Chronic tonsillar descent in Chiari malformation is a different, slow process, but it explains why a lumbar puncture can precipitate acute coning even when the supratentorial pressure is modest.",
- "imagingFindings": [
-  {
-   "pathology": "Tonsillar herniation",
-   "modality": "CT",
-   "finding": "Tonsils below the foramen magnum with obliteration of the cisterna magna and crowding of the foramen; posterior fossa mass with a compressed fourth ventricle and hydrocephalus.",
-   "sequence": "CT non-contrast"
-  },
-  {
-   "pathology": "Tonsillar descent",
-   "modality": "MRI",
-   "finding": "Peg-shaped tonsils below the basion–opisthion line on sagittal T1 with an effaced cisterna magna and medullary compression.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Cerebellar hemorrhage or infarct",
-   "modality": "CT",
-   "finding": "Hyperdense cerebellar hematoma or hypodense swollen infarct with fourth ventricular effacement, the commonest acute causes.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Cerebellar hemorrhage or infarct with swelling",
-  "Posterior fossa tumor",
-  "Lumbar puncture in the presence of raised intracranial pressure",
-  "Diffuse cerebral edema as the end stage of central herniation"
- ],
- "mimics": [
-  {
-   "name": "Chiari I malformation",
-   "howToDistinguish": "Chronic, cough headache, no acute deterioration"
-  },
-  {
-   "name": "Vasovagal syncope during lumbar puncture",
-   "howToDistinguish": "Brief, with recovery and no neurological signs"
-  },
-  {
-   "name": "Brainstem stroke",
-   "howToDistinguish": "Focal signs, cranial nerve pattern, no mass"
-  }
- ],
- "management": [
-  "Never perform a lumbar puncture in a patient with signs of raised intracranial pressure or a posterior fossa mass without imaging first",
-  "Emergency ventriculostomy and suboccipital decompression for posterior fossa masses with tonsillar descent",
-  "Intubate and ventilate, osmotherapy, head up"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    215,
-    215
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 30,
-   "pages": [
-    270,
-    270
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -45,
-   "z": -55
-  },
-  "label": "cerebellar tonsils at the foramen magnum"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

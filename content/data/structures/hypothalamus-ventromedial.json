@@ -1,131 +1,127 @@
 {
- "kind": "structure",
- "id": "hypothalamus-ventromedial",
- "name": "Ventromedial nucleus",
- "synonyms": [
-  "VMH",
-  "satiety center"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-ventromedial-l",
-  "hypothalamus-ventromedial-r"
- ],
- "summary": "The ventromedial nucleus is a large, well-defined nucleus in the tuberal hypothalamus lateral to the arcuate nucleus and below the dorsomedial nucleus, classically the satiety center: bilateral lesions in animals produce hyperphagia, obesity and rage, and in humans the same picture follows craniopharyngioma surgery, trauma and hypothalamic gliomas. It integrates leptin and glucose signals with limbic and brainstem input to limit feeding, and it also organizes defensive behavior and female sexual behavior and participates in glucose counter-regulation and in the control of sympathetic tone to fat and muscle. It is supplied by the thalamoperforating and tuberal branches of the posterior circulation.",
- "anatomy": {
-  "location": "Middle of the tuberal hypothalamus, above and lateral to the arcuate nucleus and the infundibular recess, below the dorsomedial nucleus, medial to the lateral hypothalamic area and the fornix, at the level between the chiasm and the mammillary bodies.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Ventromedial neurons express leptin receptors and glucose sensors and, through brain-derived neurotrophic factor and steroidogenic factor 1 populations, drive satiety, energy expenditure and the sympathetic response to hypoglycemia; they project to the paraventricular nucleus, the brainstem feeding centers and the periaqueductal gray. Estrogen-sensitive ventrolateral neurons control lordosis and other aspects of female sexual behavior, and a distinct population drives defensive aggression when the animal is threatened, receiving the amygdala through the stria terminalis. Destruction produces relentless eating and weight gain with irritability, whereas stimulation stops feeding and produces fear-like behavior.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-ventromedial",
+  "name": "Ventromedial nucleus",
+  "synonyms": [
+    "VMH",
+    "satiety center"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-ventromedial-l"
-    },
-    "label": "ventromedial nucleus lateral to the arcuate nucleus"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "hypothalamus-ventromedial-r"
-    },
-    "label": "tuberal hypothalamus medial to the fornix"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-ventromedial-l",
+    "hypothalamus-ventromedial-r"
   ],
-  "normalAppearance": "Part of the tuberal hypothalamic gray matter beside the lower third ventricle on coronal images through the infundibulum; distinct from its neighbors only in atlases.",
-  "pathology": [
-   {
-    "pathology": "Hypothalamic obesity after craniopharyngioma",
-    "modality": "MRI",
-    "finding": "Postoperative or tumor-related damage to the tuberal hypothalamus with rapid weight gain, hyperphagia and reduced energy expenditure.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Hypothalamic glioma",
-    "modality": "MRI",
-    "finding": "Enhancing or non-enhancing mass of the hypothalamus and chiasm in a child with obesity or, paradoxically, the diencephalic syndrome of emaciation when the lateral hypothalamus is involved.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Rage and hyperphagia after head injury",
-    "modality": "MRI",
-    "finding": "Hemorrhagic contusion or shear injury of the basal hypothalamus with behavioral change.",
-    "sequence": "SWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hyperphagia, obesity and impaired satiety",
-    "side": "bilateral",
-    "mechanism": "Loss of leptin-driven satiety neurons"
-   },
-   {
-    "deficit": "Rage and irritability",
-    "side": "bilateral",
-    "mechanism": "Release of amygdalar and lateral hypothalamic aggression from ventromedial control"
-   },
-   {
-    "deficit": "Impaired counter-regulation of hypoglycemia",
-    "side": "bilateral",
-    "mechanism": "Loss of ventromedial glucose sensing driving the sympathetic and glucagon response"
-   }
-  ],
-  "examination": [
-   "Weight and eating behavior after any hypothalamic injury",
-   "Glucose monitoring in hypothalamic patients on insulin",
-   "Behavioral history: temper, irritability, aggression"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes",
-   "syn-pituitary-mass"
-  ],
-  "pearls": [
-   "Ventromedial damage means eating without end; lateral hypothalamic damage means not eating at all",
-   "Hypothalamic obesity is a lesion, not a choice; counsel families before surgery",
-   "Ventromedial glucose sensors trigger the adrenaline response to hypoglycemia; their damage makes hypoglycemia silent"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The ventromedial nucleus is a large, well-defined nucleus in the tuberal hypothalamus lateral to the arcuate nucleus and below the dorsomedial nucleus, classically the satiety center: bilateral lesions in animals produce hyperphagia, obesity and rage, and in humans the same picture follows craniopharyngioma surgery, trauma and hypothalamic gliomas. It integrates leptin and glucose signals with limbic and brainstem input to limit feeding, and it also organizes defensive behavior and female sexual behavior and participates in glucose counter-regulation and in the control of sympathetic tone to fat and muscle. It is supplied by the thalamoperforating and tuberal branches of the posterior circulation.",
+  "anatomy": {
+    "location": "Middle of the tuberal hypothalamus, above and lateral to the arcuate nucleus and the infundibular recess, below the dorsomedial nucleus, medial to the lateral hypothalamic area and the fornix, at the level between the chiasm and the mammillary bodies.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Ventromedial neurons express leptin receptors and glucose sensors and, through brain-derived neurotrophic factor and steroidogenic factor 1 populations, drive satiety, energy expenditure and the sympathetic response to hypoglycemia; they project to the paraventricular nucleus, the brainstem feeding centers and the periaqueductal gray. Estrogen-sensitive ventrolateral neurons control lordosis and other aspects of female sexual behavior, and a distinct population drives defensive aggression when the animal is threatened, receiving the amygdala through the stria terminalis. Destruction produces relentless eating and weight gain with irritability, whereas stimulation stops feeding and produces fear-like behavior.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-ventromedial-l"
+        },
+        "label": "ventromedial nucleus lateral to the arcuate nucleus"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "hypothalamus-ventromedial-r"
+        },
+        "label": "tuberal hypothalamus medial to the fornix"
+      }
+    ],
+    "normalAppearance": "Part of the tuberal hypothalamic gray matter beside the lower third ventricle on coronal images through the infundibulum; distinct from its neighbors only in atlases.",
+    "pathology": [
+      {
+        "pathology": "Hypothalamic obesity after craniopharyngioma",
+        "modality": "MRI",
+        "finding": "Postoperative or tumor-related damage to the tuberal hypothalamus with rapid weight gain, hyperphagia and reduced energy expenditure.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Hypothalamic glioma",
+        "modality": "MRI",
+        "finding": "Enhancing or non-enhancing mass of the hypothalamus and chiasm in a child with obesity or, paradoxically, the diencephalic syndrome of emaciation when the lateral hypothalamus is involved.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Rage and hyperphagia after head injury",
+        "modality": "MRI",
+        "finding": "Hemorrhagic contusion or shear injury of the basal hypothalamus with behavioral change.",
+        "sequence": "SWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hyperphagia, obesity and impaired satiety",
+        "side": "bilateral",
+        "mechanism": "Loss of leptin-driven satiety neurons"
+      },
+      {
+        "deficit": "Rage and irritability",
+        "side": "bilateral",
+        "mechanism": "Release of amygdalar and lateral hypothalamic aggression from ventromedial control"
+      },
+      {
+        "deficit": "Impaired counter-regulation of hypoglycemia",
+        "side": "bilateral",
+        "mechanism": "Loss of ventromedial glucose sensing driving the sympathetic and glucagon response"
+      }
+    ],
+    "examination": [
+      "Weight and eating behavior after any hypothalamic injury",
+      "Glucose monitoring in hypothalamic patients on insulin",
+      "Behavioral history: temper, irritability, aggression"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes",
+      "syn-pituitary-mass"
+    ],
+    "pearls": [
+      "Ventromedial damage means eating without end; lateral hypothalamic damage means not eating at all",
+      "Hypothalamic obesity is a lesion, not a choice; counsel families before surgery",
+      "Ventromedial glucose sensors trigger the adrenaline response to hypoglycemia; their damage makes hypoglycemia silent"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-appetite-and-weight-regulation",
+      "section": "Introduction"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

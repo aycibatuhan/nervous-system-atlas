@@ -1,162 +1,150 @@
 {
- "kind": "syndrome",
- "id": "syn-aica-lateral-pontine",
- "name": "Lateral pontine syndrome (AICA infarct)",
- "eponyms": [
-  "AICA syndrome",
-  "lateral inferior pontine syndrome"
- ],
- "category": "vascular",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "level-pons-caudal",
-   "facial-motor-nucleus",
-   "cochlear-nuclei",
-   "vestibular-nuclei",
-   "spinal-trigeminal-nucleus-tract",
-   "middle-cerebellar-peduncle",
-   "artery-aica"
+  "kind": "syndrome",
+  "id": "syn-aica-lateral-pontine",
+  "name": "Lateral pontine syndrome (AICA infarct)",
+  "eponyms": [
+    "AICA syndrome",
+    "lateral inferior pontine syndrome"
   ],
-  "side": "ipsilateral",
-  "level": "pons-caudal",
-  "arteryId": "artery-aica",
-  "territoryId": "territory-aica"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -22,
-   "y": -40,
-   "z": -35
+  "category": "vascular",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "level-pons-caudal",
+      "facial-motor-nucleus",
+      "cochlear-nuclei",
+      "vestibular-nuclei",
+      "spinal-trigeminal-nucleus-tract",
+      "middle-cerebellar-peduncle",
+      "artery-aica"
+    ],
+    "side": "ipsilateral",
+    "level": "pons-caudal",
+    "arteryId": "artery-aica",
+    "territoryId": "territory-aica"
   },
-  "radiusMm": 9
- },
- "presentation": "A patient develops sudden vertigo and vomiting with deafness in one ear, a complete facial palsy on the same side, and clumsiness of the arm and leg on that side. Pain sensation is lost on that side of the face and on the opposite side of the body, and there may be a Horner syndrome. Weakness is absent. It looks like a Wallenberg syndrome that has moved up one level and acquired the seventh and eighth nerves.",
- "deficits": [
-  {
-   "modality": "auditory",
-   "side": "ipsilateral",
-   "distribution": "one ear",
-   "sign": "Sudden sensorineural deafness (cochlear nucleus, labyrinthine artery)",
-   "substrate": "cochlear-nuclei"
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -22,
+      "y": -40,
+      "z": -35
+    },
+    "radiusMm": 9
   },
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "whole face",
-   "sign": "Peripheral-type facial palsy (facial nucleus)",
-   "substrate": "facial-motor-nucleus"
+  "presentation": "A patient develops sudden vertigo and vomiting with deafness in one ear, a complete facial palsy on the same side, and clumsiness of the arm and leg on that side. Pain sensation is lost on that side of the face and on the opposite side of the body, and there may be a Horner syndrome. Weakness is absent. It looks like a Wallenberg syndrome that has moved up one level and acquired the seventh and eighth nerves.",
+  "deficits": [
+    {
+      "modality": "auditory",
+      "side": "ipsilateral",
+      "distribution": "one ear",
+      "sign": "Sudden sensorineural deafness (cochlear nucleus, labyrinthine artery)",
+      "substrate": "cochlear-nuclei"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "whole face",
+      "sign": "Peripheral-type facial palsy (facial nucleus)",
+      "substrate": "facial-motor-nucleus"
+    },
+    {
+      "modality": "vestibular",
+      "side": "ipsilateral",
+      "distribution": "vestibular nuclei and labyrinth",
+      "sign": "Vertigo, nystagmus, vomiting",
+      "substrate": "vestibular-nuclei"
+    },
+    {
+      "modality": "cerebellar",
+      "side": "ipsilateral",
+      "distribution": "limbs",
+      "sign": "Ataxia from the middle cerebellar peduncle and cerebellar infarct",
+      "substrate": "middle-cerebellar-peduncle"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "ipsilateral",
+      "distribution": "face",
+      "sign": "Facial pain and temperature loss (spinal trigeminal tract)",
+      "substrate": "spinal-trigeminal-nucleus-tract"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "contralateral",
+      "distribution": "body",
+      "sign": "Body pain and temperature loss (spinothalamic tract)",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "autonomic",
+      "side": "ipsilateral",
+      "distribution": "eye",
+      "sign": "Horner syndrome",
+      "substrate": "pathway-oculosympathetic"
+    }
+  ],
+  "reasoning": "The anterior inferior cerebellar artery supplies the lateral caudal pons, the middle cerebellar peduncle, the anterior inferior cerebellum and, through the labyrinthine artery, the inner ear. The lateral pontine tegmentum contains the same long tracts that make the lateral medullary syndrome, the spinothalamic tract (already crossed, so body pain loss is contralateral), the spinal trigeminal tract (uncrossed, so facial pain loss is ipsilateral) and the descending sympathetic fibers (uncrossed, giving an ipsilateral Horner), plus the structures specific to this level: the facial motor nucleus, the cochlear and vestibular nuclei at the pontomedullary junction and the middle cerebellar peduncle. These are all ipsilateral, so the facial palsy, deafness, vertigo and ataxia are on the side of the lesion. The corticospinal fibers in the basis pontis and the medial lemniscus lie in the paramedian territory of the basilar perforators and are spared, hence no weakness or proprioceptive loss. Deafness is the distinguishing feature: an isolated acute unilateral hearing loss with vertigo should always raise AICA infarction, since the labyrinthine artery is usually a branch of AICA.",
+  "imagingFindings": [
+    {
+      "pathology": "AICA infarct",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the lateral caudal pons, middle cerebellar peduncle and anterior inferior cerebellum (flocculus region).",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "AICA or basilar disease",
+      "modality": "CTA",
+      "finding": "Basilar atherosclerosis at the AICA origin or AICA occlusion; vertebrobasilar dissection in the young."
+    }
+  ],
+  "commonCauses": [
+    "Basilar artery atherosclerosis occluding the AICA origin",
+    "Cardioembolism",
+    "Vertebrobasilar dissection"
+  ],
+  "mimics": [
+    {
+      "name": "Vestibular neuritis with a coincidental Bell palsy",
+      "howToDistinguish": "No deafness, no crossed sensory loss, no ataxia beyond imbalance"
+    },
+    {
+      "name": "Lateral medullary syndrome",
+      "howToDistinguish": "No deafness or facial palsy; dysphagia and hoarseness present"
+    },
+    {
+      "name": "Labyrinthitis",
+      "howToDistinguish": "Hearing loss and vertigo with normal neurological examination and negative DWI"
+    }
+  ],
+  "management": [
+    "Stroke treatment; anticoagulate for dissection or cardioembolism as appropriate",
+    "Audiology; hearing rarely recovers fully",
+    "Eye protection for the facial palsy; vestibular rehabilitation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-anterior-inferior-cerebellar-arteries",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cranial-nerve-8",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -22,
+      "y": -40,
+      "z": -35
+    },
+    "label": "lateral caudal pons and middle cerebellar peduncle"
   },
-  {
-   "modality": "vestibular",
-   "side": "ipsilateral",
-   "distribution": "vestibular nuclei and labyrinth",
-   "sign": "Vertigo, nystagmus, vomiting",
-   "substrate": "vestibular-nuclei"
-  },
-  {
-   "modality": "cerebellar",
-   "side": "ipsilateral",
-   "distribution": "limbs",
-   "sign": "Ataxia from the middle cerebellar peduncle and cerebellar infarct",
-   "substrate": "middle-cerebellar-peduncle"
-  },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "ipsilateral",
-   "distribution": "face",
-   "sign": "Facial pain and temperature loss (spinal trigeminal tract)",
-   "substrate": "spinal-trigeminal-nucleus-tract"
-  },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "contralateral",
-   "distribution": "body",
-   "sign": "Body pain and temperature loss (spinothalamic tract)",
-   "substrate": "pathway-lateral-spinothalamic"
-  },
-  {
-   "modality": "autonomic",
-   "side": "ipsilateral",
-   "distribution": "eye",
-   "sign": "Horner syndrome",
-   "substrate": "pathway-oculosympathetic"
-  }
- ],
- "reasoning": "The anterior inferior cerebellar artery supplies the lateral caudal pons, the middle cerebellar peduncle, the anterior inferior cerebellum and, through the labyrinthine artery, the inner ear. The lateral pontine tegmentum contains the same long tracts that make the lateral medullary syndrome, the spinothalamic tract (already crossed, so body pain loss is contralateral), the spinal trigeminal tract (uncrossed, so facial pain loss is ipsilateral) and the descending sympathetic fibers (uncrossed, giving an ipsilateral Horner), plus the structures specific to this level: the facial motor nucleus, the cochlear and vestibular nuclei at the pontomedullary junction and the middle cerebellar peduncle. These are all ipsilateral, so the facial palsy, deafness, vertigo and ataxia are on the side of the lesion. The corticospinal fibers in the basis pontis and the medial lemniscus lie in the paramedian territory of the basilar perforators and are spared, hence no weakness or proprioceptive loss. Deafness is the distinguishing feature: an isolated acute unilateral hearing loss with vertigo should always raise AICA infarction, since the labyrinthine artery is usually a branch of AICA.",
- "imagingFindings": [
-  {
-   "pathology": "AICA infarct",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the lateral caudal pons, middle cerebellar peduncle and anterior inferior cerebellum (flocculus region).",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "AICA or basilar disease",
-   "modality": "CTA",
-   "finding": "Basilar atherosclerosis at the AICA origin or AICA occlusion; vertebrobasilar dissection in the young."
-  }
- ],
- "commonCauses": [
-  "Basilar artery atherosclerosis occluding the AICA origin",
-  "Cardioembolism",
-  "Vertebrobasilar dissection"
- ],
- "mimics": [
-  {
-   "name": "Vestibular neuritis with a coincidental Bell palsy",
-   "howToDistinguish": "No deafness, no crossed sensory loss, no ataxia beyond imbalance"
-  },
-  {
-   "name": "Lateral medullary syndrome",
-   "howToDistinguish": "No deafness or facial palsy; dysphagia and hoarseness present"
-  },
-  {
-   "name": "Labyrinthitis",
-   "howToDistinguish": "Hearing loss and vertigo with normal neurological examination and negative DWI"
-  }
- ],
- "management": [
-  "Stroke treatment; anticoagulate for dissection or cardioembolism as appropriate",
-  "Audiology; hearing rarely recovers fully",
-  "Eye protection for the facial palsy; vestibular rehabilitation"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    77,
-    79
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    106,
-    106
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    112,
-    112
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -22,
-   "y": -40,
-   "z": -35
-  },
-  "label": "lateral caudal pons and middle cerebellar peduncle"
- },
- "cameraPreset": "posterior"
+  "cameraPreset": "posterior"
 }

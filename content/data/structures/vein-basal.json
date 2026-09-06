@@ -1,0 +1,189 @@
+{
+  "kind": "structure",
+  "id": "vein-basal",
+  "name": "Basal vein (of Rosenthal)",
+  "synonyms": [
+    "basal vein of Rosenthal",
+    "vena basalis",
+    "BVR"
+  ],
+  "system": "venous",
+  "meshIds": [
+    "vein-basal-l",
+    "vein-basal-r"
+  ],
+  "summary": "The basal vein of Rosenthal is the paired deep vein of the base of the brain. It forms under the anterior perforated substance where the deep middle cerebral vein from the insula meets the anterior cerebral and striate veins, then curves backward around the cerebral peduncle through the crural and ambient cisterns, climbs over the lateral surface of the midbrain beside the posterior cerebral artery and the trochlear nerve, and ends in the great cerebral vein of Galen behind the pineal gland. Its course makes it the venous equivalent of an arterial circle at the skull base, linking the sylvian, deep and posterior fossa drainage; for the surgeon it is the vein that must be preserved when working in the ambient cistern, and for the radiologist it is the channel whose congestion explains temporal and midbrain edema in deep venous thrombosis.",
+  "anatomy": {
+    "location": "From the anterior perforated substance below the anterior commissure (about x = 13, y = 2, z = -16 in MNI coordinates) backward and medially through the crural cistern between the uncus and the cerebral peduncle, then through the ambient cistern lateral to the midbrain and medial to the parahippocampal gyrus, and finally over the pulvinar into the quadrigeminal cistern, where it joins the internal cerebral vein and its fellow to form the great cerebral vein. It runs with the posterior cerebral artery, above the trochlear nerve and below the optic tract.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Deep middle cerebral vein",
+        "via": "insula and sylvian fissure"
+      },
+      {
+        "from": "Anterior cerebral and inferior striate veins",
+        "via": "anterior perforated substance"
+      },
+      {
+        "from": "Inferior ventricular and hippocampal veins",
+        "via": "temporal horn"
+      },
+      {
+        "from": "Peduncular and mesencephalic veins",
+        "via": "crural and ambient cisterns"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Great cerebral vein of Galen",
+        "via": "quadrigeminal cistern"
+      },
+      {
+        "to": "Superior petrosal, sphenoparietal or cavernous sinus",
+        "via": "variant routes"
+      }
+    ],
+    "pathways": []
+  },
+  "function": "The basal vein drains the medial temporal lobe including the hippocampus and the amygdala, the insula and the deep sylvian region through the deep middle cerebral vein, the anterior perforated substance and the striatum through the inferior striate veins, the hypothalamus, the midbrain and the choroid plexus of the temporal horn. Because it is assembled from three embryological segments (striate, peduncular and mesencephalic), it is one of the most variable veins in the skull: any of the three may be absent, and the vein may drain forward into the cavernous or sphenoparietal sinus, laterally into the superior petrosal sinus or backward into the transverse sinus rather than into the vein of Galen. That variability matters clinically, because a basal vein that empties into the vein of Galen makes the deep system the only outlet for the medial temporal lobe, whereas one that drains anteriorly gives it an escape route. In the ambient cistern the vein also forms the posterior half of the anastomotic venous ring around the midbrain that connects the two sides.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal",
+      "posterior communicating perforators"
+    ],
+    "territories": [],
+    "venous": "Normally into the great cerebral vein; variants drain forward to the cavernous or sphenoparietal sinus or laterally to the superior petrosal sinus"
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "vein-basal-l"
+        },
+        "label": "basal vein in the ambient cistern beside the midbrain"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "vein-basal-r"
+        },
+        "label": "basal vein below the optic tract and lateral to the peduncle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "vein-basal-l"
+        },
+        "label": "curve from the anterior perforated substance to the vein of Galen"
+      }
+    ],
+    "normalAppearance": "On MR and CT venography the basal vein is a smooth curve that hugs the midbrain, seen best on axial images at the level of the cerebral peduncles, and it is a normal finding for it to be visible on only one side. Its junction with the great cerebral vein sits just behind and above the pineal gland. On susceptibility-weighted imaging it is a dark line in the ambient cistern that should be symmetric with its fellow.",
+    "pathology": [
+      {
+        "pathology": "Deep cerebral venous thrombosis involving the basal veins",
+        "modality": "MRI",
+        "finding": "Absent flow in one or both basal veins with swelling of the medial temporal lobe, the thalamus and the midbrain; the picture may be mistaken for herpes encephalitis when it is unilateral and temporal.",
+        "sequence": "FLAIR",
+        "pitfalls": "Non-visualization of a basal vein is common as a normal variant; call it thrombosis only with a matching parenchymal abnormality or direct clot signal"
+      },
+      {
+        "pathology": "Venous drainage of a temporal arteriovenous malformation",
+        "modality": "DSA",
+        "finding": "Early arterial-phase filling of a dilated basal vein, which becomes the route of hemorrhage and the vessel that must be left until last at surgery.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Displacement in uncal herniation",
+        "modality": "CT",
+        "finding": "The basal vein and the posterior cerebral artery are pushed medially across the ambient cistern by the herniating uncus, and the cistern is effaced.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Vein of Galen malformation",
+        "modality": "MRA",
+        "finding": "Enlarged basal veins feeding a dilated median prosencephalic vein, with hydrocephalus and, in the neonate, high-output cardiac failure.",
+        "sequence": "TOF"
+      }
+    ],
+    "sequenceOfChoice": "Contrast-enhanced MR venography in the axial plane through the midbrain"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Medial temporal and thalamic swelling with confusion or seizures",
+        "side": "ipsilateral",
+        "mechanism": "Occlusion congests the hippocampus, amygdala and thalamus, which drain only through this vein"
+      },
+      {
+        "deficit": "Midbrain edema with a vertical gaze palsy",
+        "side": "bilateral",
+        "mechanism": "The mesencephalic segment drains the tectum and the periaqueductal region"
+      },
+      {
+        "deficit": "Temporal lobe hemorrhage",
+        "side": "ipsilateral",
+        "mechanism": "Sustained venous hypertension in a territory without a collateral outlet"
+      },
+      {
+        "deficit": "No deficit",
+        "side": "n/a",
+        "mechanism": "An absent or hypoplastic segment is common and is compensated by the sphenoparietal or petrosal route"
+      }
+    ],
+    "examination": [
+      "Look for a temporal or thalamic abnormality that crosses arterial territory boundaries: that pattern is venous",
+      "Check both basal veins on the venogram before calling one of them thrombosed",
+      "In a neonate with heart failure and a big head, listen for a cranial bruit and image the deep veins"
+    ],
+    "syndromes": [
+      "syn-cerebral-venous-sinus-thrombosis",
+      "syn-uncal-herniation"
+    ],
+    "pearls": [
+      "Rosenthal's vein is the deep companion of the posterior cerebral artery around the midbrain",
+      "Three embryological segments means three chances for a variant: absence of any one is normal",
+      "A medial temporal lesion that does not fit the PCA territory should raise the basal vein as the culprit",
+      "It forms the posterior part of the venous ring around the brainstem, so one side can drain the other"
+    ]
+  },
+  "pitfalls": [
+    "The vein is often visible on one side only; asymmetry is not disease",
+    "The mesh is cut from a group-average atlas and shows the peduncular and ambient segments; the anterior striate segment is too variable to appear reliably in the average"
+  ],
+  "citations": [
+    {
+      "ref": "sp-brain-veins",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "basal-vein-rosenthal-drainage"
+    },
+    {
+      "ref": "basal-venous-circle"
+    },
+    {
+      "ref": "great-vein-of-galen-morphometry"
+    },
+    {
+      "ref": "mr-venography-normal-anatomy"
+    },
+    {
+      "ref": "deep-cerebral-venous-thrombosis"
+    }
+  ],
+  "tags": [
+    "venous",
+    "deep venous system",
+    "ambient cistern",
+    "VENAT"
+  ],
+  "status": "draft",
+  "latin": "vena basalis",
+  "subsystem": "deep veins",
+  "parent": "veins-deep-cerebral"
+}

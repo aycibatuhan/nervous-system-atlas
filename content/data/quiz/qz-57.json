@@ -1,59 +1,67 @@
 {
- "kind": "quiz",
- "id": "qz-57",
- "type": "localize",
- "vignette": "A 50-year-old woman has numbness of the little finger, wasting of the hand muscles and numbness of the medial forearm up to the elbow. The nerve conduction study shows an absent medial antebrachial cutaneous sensory response.",
- "stem": "Where is the lesion?",
- "options": [
-  {
-   "key": "A",
-   "text": "Ulnar nerve at the elbow"
-  },
-  {
-   "key": "B",
-   "text": "Ulnar nerve at the wrist"
-  },
-  {
-   "key": "C",
-   "text": "Lower trunk or medial cord of the brachial plexus"
-  },
-  {
-   "key": "D",
-   "text": "C6 root"
-  },
-  {
-   "key": "E",
-   "text": "Median nerve at the carpal tunnel"
-  }
- ],
- "answer": "C",
- "explanation": "The ulnar nerve supplies no forearm skin; numbness of the medial forearm with an absent medial antebrachial cutaneous potential proves the lesion is in the medial cord or lower trunk (thoracic outlet syndrome, Pancoast tumor, Klumpke injury), not at the elbow.",
- "targets": {
-  "structureIds": [
-   "nerve-medial-antebrachial-cutaneous",
-   "plexus-brachial"
+  "kind": "quiz",
+  "id": "qz-57",
+  "type": "localize",
+  "vignette": "A 50-year-old woman has numbness of the little finger, wasting of the hand muscles and numbness of the medial forearm up to the elbow. The nerve conduction study shows an absent medial antebrachial cutaneous sensory response.",
+  "stem": "Where is the lesion?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Ulnar nerve at the elbow"
+    },
+    {
+      "key": "B",
+      "text": "Ulnar nerve at the wrist"
+    },
+    {
+      "key": "C",
+      "text": "Lower trunk or medial cord of the brachial plexus"
+    },
+    {
+      "key": "D",
+      "text": "C6 root"
+    },
+    {
+      "key": "E",
+      "text": "Median nerve at the carpal tunnel"
+    }
   ],
-  "syndromeIds": [
-   "syn-neurogenic-thoracic-outlet",
-   "syn-klumpke",
-   "syn-cubital-tunnel"
+  "answer": "C",
+  "explanation": "The ulnar nerve supplies no forearm skin; numbness of the medial forearm with an absent medial antebrachial cutaneous potential proves the lesion is in the medial cord or lower trunk (thoracic outlet syndrome, Pancoast tumor, Klumpke injury), not at the elbow.",
+  "targets": {
+    "structureIds": [
+      "nerve-medial-antebrachial-cutaneous",
+      "plexus-brachial"
+    ],
+    "syndromeIds": [
+      "syn-neurogenic-thoracic-outlet",
+      "syn-klumpke",
+      "syn-cubital-tunnel"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "medial-antebrachial-cutaneous-nerve-l",
+    "brachial-plexus-l"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "medial-antebrachial-cutaneous-nerve-l",
-  "brachial-plexus-l"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 16,
-   "pages": [
-    141,
-    156
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-thoracic-outlet-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-brachial-plexus-2",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-klumpke-palsy",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-spinal-nerves",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

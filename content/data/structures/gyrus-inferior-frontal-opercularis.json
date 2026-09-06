@@ -1,171 +1,159 @@
 {
- "kind": "structure",
- "id": "gyrus-inferior-frontal-opercularis",
- "name": "Inferior frontal gyrus, pars opercularis",
- "synonyms": [
-  "Broca area (posterior part)",
-  "area 44"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-inferior-frontal-opercularis-l",
-  "gyrus-inferior-frontal-opercularis-r"
- ],
- "summary": "The pars opercularis is the posterior part of the inferior frontal gyrus, between the ascending ramus of the lateral sulcus and the precentral sulcus, forming with the pars triangularis the classical Broca area (Brodmann area 44) in the language-dominant hemisphere. It coordinates the sequencing of articulatory movements and syntax, and it is a core node of the dorsal language stream with the arcuate fasciculus behind it. Infarction of the superior division of the middle cerebral artery here produces non-fluent aphasia with intact comprehension, usually with a right facial and arm weakness because the precentral gyrus lies immediately behind it.",
- "anatomy": {
-  "location": "Posterior division of the inferior frontal gyrus, bounded in front by the ascending ramus of the lateral sulcus, behind by the inferior precentral sulcus and above by the inferior frontal sulcus; it overhangs the insula as part of the frontal operculum.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Posterior superior temporal gyrus (Wernicke area)",
-    "via": "arcuate fasciculus"
-   },
-   {
-    "from": "Supplementary motor area",
-    "via": "frontal aslant tract"
-   },
-   {
-    "from": "Ventral premotor cortex",
-    "via": "short association fibers"
-   }
+  "kind": "structure",
+  "id": "gyrus-inferior-frontal-opercularis",
+  "name": "Inferior frontal gyrus, pars opercularis",
+  "synonyms": [
+    "Broca area (posterior part)",
+    "area 44"
   ],
-  "efferents": [
-   {
-    "to": "Ventral precentral gyrus (face, larynx)",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Putamen and caudate",
-    "via": "corticostriatal fibers"
-   },
-   {
-    "to": "Contralateral inferior frontal gyrus",
-    "via": "corpus callosum"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-inferior-frontal-opercularis-l",
+    "gyrus-inferior-frontal-opercularis-r"
   ],
-  "pathways": [
-   "pathway-corticobulbar"
-  ]
- },
- "function": "Area 44 translates the phonological plan of an utterance into a motor program for the larynx, tongue and lips through its projection to the ventral precentral gyrus, and it holds the grammatical frame of a sentence, which is why lesions produce agrammatic, telegraphic speech. It receives the posterior temporal language cortex through the arcuate fasciculus and the frontal aslant tract links it to the supplementary motor area for speech initiation. In the non-dominant hemisphere the homologous region contributes to prosody and to response inhibition (stopping an action), and both sides house mirror-neuron-like responses to observed actions.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-superior-division"
-  ],
-  "territories": [
-   "territory-mca-frontal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "gyrus-inferior-frontal-opercularis-l"
-    },
-    "label": "pars opercularis in front of the inferior precentral sulcus"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "gyrus-inferior-frontal-opercularis-l"
-    },
-    "label": "frontal operculum above the insula"
-   }
-  ],
-  "normalAppearance": "Small gyrus at the posterior end of the inferior frontal gyrus, best identified on sagittal images as the cortex between the ascending ramus of the Sylvian fissure and the precentral sulcus, capping the anterior insula.",
-  "pathology": [
-   {
-    "pathology": "Broca aphasia from MCA superior division infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the posterior inferior frontal gyrus and the adjacent precentral cortex of the dominant hemisphere, usually with insular and white-matter involvement.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Progressive non-fluent aphasia",
-    "modality": "MRI",
-    "finding": "Left inferior frontal and insular atrophy with a widened Sylvian fissure in a patient with effortful, agrammatic speech.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Low-grade glioma of the frontal operculum",
-    "modality": "MRI",
-    "finding": "T2/FLAIR-bright infiltrating lesion in the pars opercularis; awake mapping is needed before resection.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Non-fluent, agrammatic speech with preserved comprehension",
-    "side": "n/a",
-    "mechanism": "Loss of the articulatory and syntactic program of area 44 in the dominant hemisphere"
-   },
-   {
-    "deficit": "Apraxia of speech and oral apraxia",
-    "side": "n/a",
-    "mechanism": "Disconnection between the frontal operculum and the ventral motor cortex"
-   },
-   {
-    "deficit": "Contralateral facial and arm weakness",
-    "side": "contralateral",
-    "mechanism": "Extension of the lesion into the adjacent precentral gyrus and underlying corona radiata"
-   }
-  ],
-  "examination": [
-   "Spontaneous speech fluency, repetition, naming and comprehension in that order",
-   "Ask the patient to describe a picture: telegraphic output with omitted function words is the signature",
-   "Examine the right face and arm; a Broca aphasia without weakness suggests a small cortical lesion or a subcortical one"
-  ],
-  "syndromes": [
-   "syn-aphasia-broca",
-   "syn-mca-superior-division"
-  ],
-  "pearls": [
-   "Broca aphasia patients understand what is said and are frustrated; Wernicke patients do not and are not",
-   "Fluency is judged by phrase length and effort, not by how much the patient talks",
-   "Right-handed patients with left frontal opercular lesions rarely recover full syntax; children can transfer language to the other side"
-  ]
- },
- "pitfalls": [
-  "Mutism in the first hours after a left frontal stroke does not mean permanent Broca aphasia; reassess daily"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    284,
-    291
-   ]
+  "summary": "The pars opercularis is the posterior part of the inferior frontal gyrus, between the ascending ramus of the lateral sulcus and the precentral sulcus, forming with the pars triangularis the classical Broca area (Brodmann area 44) in the language-dominant hemisphere. It coordinates the sequencing of articulatory movements and syntax, and it is a core node of the dorsal language stream with the arcuate fasciculus behind it. Infarction of the superior division of the middle cerebral artery here produces non-fluent aphasia with intact comprehension, usually with a right facial and arm weakness because the precentral gyrus lies immediately behind it.",
+  "anatomy": {
+    "location": "Posterior division of the inferior frontal gyrus, bounded in front by the ascending ramus of the lateral sulcus, behind by the inferior precentral sulcus and above by the inferior frontal sulcus; it overhangs the insula as part of the frontal operculum.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    258,
-    258
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Posterior superior temporal gyrus (Wernicke area)",
+        "via": "arcuate fasciculus"
+      },
+      {
+        "from": "Supplementary motor area",
+        "via": "frontal aslant tract"
+      },
+      {
+        "from": "Ventral premotor cortex",
+        "via": "short association fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Ventral precentral gyrus (face, larynx)",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Putamen and caudate",
+        "via": "corticostriatal fibers"
+      },
+      {
+        "to": "Contralateral inferior frontal gyrus",
+        "via": "corpus callosum"
+      }
+    ],
+    "pathways": [
+      "pathway-corticobulbar"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    56
-   ]
-  }
- ],
- "tags": [
-  "language",
-  "Broca",
-  "area 44"
- ],
- "status": "draft",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "function": "Area 44 translates the phonological plan of an utterance into a motor program for the larynx, tongue and lips through its projection to the ventral precentral gyrus, and it holds the grammatical frame of a sentence, which is why lesions produce agrammatic, telegraphic speech. It receives the posterior temporal language cortex through the arcuate fasciculus and the frontal aslant tract links it to the supplementary motor area for speech initiation. In the non-dominant hemisphere the homologous region contributes to prosody and to response inhibition (stopping an action), and both sides house mirror-neuron-like responses to observed actions.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-superior-division"
+    ],
+    "territories": [
+      "territory-mca-frontal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "gyrus-inferior-frontal-opercularis-l"
+        },
+        "label": "pars opercularis in front of the inferior precentral sulcus"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "gyrus-inferior-frontal-opercularis-l"
+        },
+        "label": "frontal operculum above the insula"
+      }
+    ],
+    "normalAppearance": "Small gyrus at the posterior end of the inferior frontal gyrus, best identified on sagittal images as the cortex between the ascending ramus of the Sylvian fissure and the precentral sulcus, capping the anterior insula.",
+    "pathology": [
+      {
+        "pathology": "Broca aphasia from MCA superior division infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the posterior inferior frontal gyrus and the adjacent precentral cortex of the dominant hemisphere, usually with insular and white-matter involvement.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Progressive non-fluent aphasia",
+        "modality": "MRI",
+        "finding": "Left inferior frontal and insular atrophy with a widened Sylvian fissure in a patient with effortful, agrammatic speech.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Low-grade glioma of the frontal operculum",
+        "modality": "MRI",
+        "finding": "T2/FLAIR-bright infiltrating lesion in the pars opercularis; awake mapping is needed before resection.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Non-fluent, agrammatic speech with preserved comprehension",
+        "side": "n/a",
+        "mechanism": "Loss of the articulatory and syntactic program of area 44 in the dominant hemisphere"
+      },
+      {
+        "deficit": "Apraxia of speech and oral apraxia",
+        "side": "n/a",
+        "mechanism": "Disconnection between the frontal operculum and the ventral motor cortex"
+      },
+      {
+        "deficit": "Contralateral facial and arm weakness",
+        "side": "contralateral",
+        "mechanism": "Extension of the lesion into the adjacent precentral gyrus and underlying corona radiata"
+      }
+    ],
+    "examination": [
+      "Spontaneous speech fluency, repetition, naming and comprehension in that order",
+      "Ask the patient to describe a picture: telegraphic output with omitted function words is the signature",
+      "Examine the right face and arm; a Broca aphasia without weakness suggests a small cortical lesion or a subcortical one"
+    ],
+    "syndromes": [
+      "syn-aphasia-broca",
+      "syn-mca-superior-division"
+    ],
+    "pearls": [
+      "Broca aphasia patients understand what is said and are frustrated; Wernicke patients do not and are not",
+      "Fluency is judged by phrase length and effort, not by how much the patient talks",
+      "Right-handed patients with left frontal opercular lesions rarely recover full syntax; children can transfer language to the other side"
+    ]
+  },
+  "pitfalls": [
+    "Mutism in the first hours after a left frontal stroke does not mean permanent Broca aphasia; reassess daily"
+  ],
+  "citations": [
+    {
+      "ref": "sp-broca-area",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-frontal-cortex",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "language",
+    "Broca",
+    "area 44"
+  ],
+  "status": "draft",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

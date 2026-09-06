@@ -1,21 +1,25 @@
 {
- "kind": "glossary",
- "id": "g-homonymous-hemianopia",
- "term": "Homonymous hemianopia",
- "definition": "Loss of the same half of the visual field in both eyes, produced by a lesion behind the optic chiasm on the opposite side. Congruity increases and pupillary involvement disappears as the lesion moves from the optic tract to the occipital cortex.",
- "related": [
-  "g-retinotopy",
-  "g-macular-sparing",
-  "g-rapd"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    51
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-homonymous-hemianopia",
+  "term": "Homonymous hemianopia",
+  "definition": "Loss of the same half of the visual field in both eyes, produced by a lesion behind the optic chiasm on the opposite side. Congruity increases and pupillary involvement disappears as the lesion moves from the optic tract to the occipital cortex.",
+  "related": [
+    "g-retinotopy",
+    "g-macular-sparing",
+    "g-rapd"
+  ],
+  "citations": [
+    {
+      "ref": "sp-homonymous-hemianopsia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-visual-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-homonymous-superior-quadrantanopia",
+      "section": "Pathophysiology"
+    }
+  ]
 }

@@ -1,240 +1,212 @@
 {
- "kind": "structure",
- "id": "level-pons-caudal",
- "name": "Caudal pons (facial colliculus level)",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "brainstem",
-  "pedunculopontine-nucleus-l",
-  "pedunculopontine-nucleus-r"
- ],
- "summary": "The lower pons is where the abducens and facial nuclei live and where the horizontal gaze machinery sits, so its lesions produce the classic combination of a sixth or seventh nerve palsy on the side of the lesion with hemiparesis of the opposite limbs. The section is divided into a ventral basis pontis, full of pontine nuclei, transverse pontocerebellar fibers and the scattered bundles of the corticospinal tract, and a dorsal tegmentum containing the cranial nerve nuclei, the medial lemniscus (now lying flat), the spinothalamic tract, the MLF and the trapezoid body of the auditory pathway.",
- "anatomy": {
-  "location": "Between the pontomedullary junction and the level of the trigeminal root entry, marked on the floor of the fourth ventricle by the facial colliculus; MNI z ≈ −34 to −40.",
-  "subdivisions": [
-   {
-    "name": "Basis pontis",
-    "note": "pontine nuclei, transverse fibers entering the middle cerebellar peduncle, and dispersed corticospinal and corticobulbar bundles"
-   },
-   {
-    "name": "Trapezoid body and superior olivary complex",
-    "note": "crossing auditory fibers from the cochlear nuclei; the medial lemniscus lies just behind them"
-   },
-   {
-    "name": "Medial lemniscus",
-    "note": "now horizontal, medial to lateral: arm to leg"
-   },
-   {
-    "name": "Abducens nucleus and facial colliculus",
-    "note": "under the ventricular floor; the facial nerve fibers loop over the abducens nucleus (internal genu) forming the colliculus"
-   },
-   {
-    "name": "Facial motor nucleus",
-    "note": "ventrolateral tegmentum; its fibers run dorsomedially, loop around the abducens nucleus, then exit ventrolaterally"
-   },
-   {
-    "name": "Paramedian pontine reticular formation (PPRF)",
-    "note": "horizontal gaze center adjacent to the abducens nucleus"
-   },
-   {
-    "name": "Medial longitudinal fasciculus",
-    "note": "dorsal paramedian, carrying abducens interneuron axons to the contralateral oculomotor nucleus"
-   },
-   {
-    "name": "Spinal trigeminal nucleus and tract",
-    "note": "lateral tegmentum"
-   },
-   {
-    "name": "Vestibular and cochlear nuclei",
-    "note": "at the lateral recess of the ventricle and on the inferior cerebellar peduncle"
-   },
-   {
-    "name": "Spinothalamic tract and descending sympathetic fibers",
-    "note": "lateral tegmentum, ventral to the spinal trigeminal complex"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Generates conjugate horizontal gaze (abducens nucleus and PPRF), controls facial movement, relays hearing through the trapezoid body and superior olive, and transmits all descending motor and ascending sensory traffic between the midbrain and medulla.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-aica"
+  "kind": "structure",
+  "id": "level-pons-caudal",
+  "name": "Caudal pons (facial colliculus level)",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem",
+    "pedunculopontine-nucleus-l",
+    "pedunculopontine-nucleus-r"
   ],
-  "territories": [
-   "territory-basilar-paramedian",
-   "territory-aica"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -34,
-     "z": -36
+  "summary": "The lower pons is where the abducens and facial nuclei live and where the horizontal gaze machinery sits, so its lesions produce the classic combination of a sixth or seventh nerve palsy on the side of the lesion with hemiparesis of the opposite limbs. The section is divided into a ventral basis pontis, full of pontine nuclei, transverse pontocerebellar fibers and the scattered bundles of the corticospinal tract, and a dorsal tegmentum containing the cranial nerve nuclei, the medial lemniscus (now lying flat), the spinothalamic tract, the MLF and the trapezoid body of the auditory pathway.",
+  "anatomy": {
+    "location": "Between the pontomedullary junction and the level of the trigeminal root entry, marked on the floor of the fourth ventricle by the facial colliculus; MNI z ≈ −34 to −40.",
+    "subdivisions": [
+      {
+        "name": "Basis pontis",
+        "note": "pontine nuclei, transverse fibers entering the middle cerebellar peduncle, and dispersed corticospinal and corticobulbar bundles"
+      },
+      {
+        "name": "Trapezoid body and superior olivary complex",
+        "note": "crossing auditory fibers from the cochlear nuclei; the medial lemniscus lies just behind them"
+      },
+      {
+        "name": "Medial lemniscus",
+        "note": "now horizontal, medial to lateral: arm to leg"
+      },
+      {
+        "name": "Abducens nucleus and facial colliculus",
+        "note": "under the ventricular floor; the facial nerve fibers loop over the abducens nucleus (internal genu) forming the colliculus"
+      },
+      {
+        "name": "Facial motor nucleus",
+        "note": "ventrolateral tegmentum; its fibers run dorsomedially, loop around the abducens nucleus, then exit ventrolaterally"
+      },
+      {
+        "name": "Paramedian pontine reticular formation (PPRF)",
+        "note": "horizontal gaze center adjacent to the abducens nucleus"
+      },
+      {
+        "name": "Medial longitudinal fasciculus",
+        "note": "dorsal paramedian, carrying abducens interneuron axons to the contralateral oculomotor nucleus"
+      },
+      {
+        "name": "Spinal trigeminal nucleus and tract",
+        "note": "lateral tegmentum"
+      },
+      {
+        "name": "Vestibular and cochlear nuclei",
+        "note": "at the lateral recess of the ventricle and on the inferior cerebellar peduncle"
+      },
+      {
+        "name": "Spinothalamic tract and descending sympathetic fibers",
+        "note": "lateral tegmentum, ventral to the spinal trigeminal complex"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Generates conjugate horizontal gaze (abducens nucleus and PPRF), controls facial movement, relays hearing through the trapezoid body and superior olive, and transmits all descending motor and ascending sensory traffic between the midbrain and medulla.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-basilar-paramedian",
+      "territory-aica"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -34,
+          "z": -36
+        },
+        "label": "caudal pons: facial colliculus on the ventricular floor, basis pontis in front"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 6,
+          "y": -32,
+          "z": -36
+        },
+        "label": "paramedian tegmentum: abducens nucleus, PPRF and MLF"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -30,
+          "z": -35
+        },
+        "label": "pontomedullary junction and lower pons"
+      }
+    ],
+    "normalAppearance": "On axial T2 the pons is a broad convex bulge with the fourth ventricle behind it; the facial colliculus is a subtle paramedian elevation of the floor. The basis pontis is homogeneous white matter; the tegmentum is slightly grayer.",
+    "pathology": [
+      {
+        "pathology": "Paramedian pontine infarct",
+        "modality": "MRI",
+        "finding": "Wedge of restricted diffusion in one side of the basis pontis reaching the ventral surface, with or without tegmental extension to the abducens/facial region.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Multiple sclerosis plaque at the facial colliculus",
+        "modality": "MRI",
+        "finding": "Small T2/FLAIR-bright lesion in the dorsal paramedian pons producing an internuclear ophthalmoplegia, one-and-a-half syndrome or facial palsy.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Pontine hemorrhage",
+        "modality": "CT",
+        "finding": "Hyperdense hematoma centered on the pons; large ones extend into the fourth ventricle and cause coma with pinpoint pupils.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Central pontine myelinolysis",
+        "modality": "MRI",
+        "finding": "Symmetrical central pontine T2 hyperintensity sparing the periphery and the corticospinal bundles (trident shape) after rapid sodium correction.",
+        "sequence": "T2",
+        "timing": "Appears 1–2 weeks after the osmotic insult"
+      }
+    ],
+    "sequenceOfChoice": "Thin axial DWI and FLAIR; CTA of the basilar"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral lateral rectus palsy or horizontal gaze palsy",
+        "side": "ipsilateral",
+        "mechanism": "Abducens fascicle (lateral rectus only) or abducens nucleus/PPRF (conjugate gaze toward the lesion)"
+      },
+      {
+        "deficit": "Ipsilateral lower motor neuron facial palsy",
+        "side": "ipsilateral",
+        "mechanism": "Facial nucleus or its intrapontine fibers"
+      },
+      {
+        "deficit": "Contralateral hemiparesis",
+        "side": "contralateral",
+        "mechanism": "Corticospinal fibers in the basis pontis"
+      },
+      {
+        "deficit": "Internuclear ophthalmoplegia",
+        "side": "ipsilateral",
+        "mechanism": "MLF: the eye on the side of the lesion fails to adduct"
+      },
+      {
+        "deficit": "Contralateral loss of vibration and proprioception",
+        "side": "contralateral",
+        "mechanism": "Medial lemniscus"
+      },
+      {
+        "deficit": "Ipsilateral facial and contralateral body pain and temperature loss",
+        "side": "ipsilateral",
+        "mechanism": "Spinal trigeminal complex and spinothalamic tract in the lateral tegmentum"
+      }
+    ],
+    "examination": [
+      "Test horizontal gaze in both directions and look for adduction lag with abducting nystagmus",
+      "Facial movement including the forehead; taste is not affected by pontine lesions",
+      "Power of the opposite limbs",
+      "Hearing and corneal reflex for lateral extension"
+    ],
+    "syndromes": [
+      "syn-millard-gubler",
+      "syn-foville",
+      "syn-ino",
+      "syn-one-and-a-half",
+      "syn-horizontal-gaze-palsy-pontine",
+      "syn-locked-in"
+    ],
+    "pearls": [
+      "Sixth nerve palsy plus contralateral hemiparesis is the caudal pons (Millard–Gubler when the seventh is included, Foville when gaze is involved)",
+      "A lower motor neuron facial palsy with hemiparesis on the other side cannot be Bell palsy: it is the pons"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pons",
+      "section": "Structure and Function"
     },
-    "label": "caudal pons: facial colliculus on the ventricular floor, basis pontis in front"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 6,
-     "y": -32,
-     "z": -36
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
     },
-    "label": "paramedian tegmentum: abducens nucleus, PPRF and MLF"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -30,
-     "z": -35
-    },
-    "label": "pontomedullary junction and lower pons"
-   }
+    {
+      "ref": "sp-cranial-nerve",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On axial T2 the pons is a broad convex bulge with the fourth ventricle behind it; the facial colliculus is a subtle paramedian elevation of the floor. The basis pontis is homogeneous white matter; the tegmentum is slightly grayer.",
-  "pathology": [
-   {
-    "pathology": "Paramedian pontine infarct",
-    "modality": "MRI",
-    "finding": "Wedge of restricted diffusion in one side of the basis pontis reaching the ventral surface, with or without tegmental extension to the abducens/facial region.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Multiple sclerosis plaque at the facial colliculus",
-    "modality": "MRI",
-    "finding": "Small T2/FLAIR-bright lesion in the dorsal paramedian pons producing an internuclear ophthalmoplegia, one-and-a-half syndrome or facial palsy.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Pontine hemorrhage",
-    "modality": "CT",
-    "finding": "Hyperdense hematoma centered on the pons; large ones extend into the fourth ventricle and cause coma with pinpoint pupils.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Central pontine myelinolysis",
-    "modality": "MRI",
-    "finding": "Symmetrical central pontine T2 hyperintensity sparing the periphery and the corticospinal bundles (trident shape) after rapid sodium correction.",
-    "sequence": "T2",
-    "timing": "Appears 1–2 weeks after the osmotic insult"
-   }
+  "tags": [
+    "brainstem",
+    "cross-section"
   ],
-  "sequenceOfChoice": "Thin axial DWI and FLAIR; CTA of the basilar"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral lateral rectus palsy or horizontal gaze palsy",
-    "side": "ipsilateral",
-    "mechanism": "Abducens fascicle (lateral rectus only) or abducens nucleus/PPRF (conjugate gaze toward the lesion)"
-   },
-   {
-    "deficit": "Ipsilateral lower motor neuron facial palsy",
-    "side": "ipsilateral",
-    "mechanism": "Facial nucleus or its intrapontine fibers"
-   },
-   {
-    "deficit": "Contralateral hemiparesis",
-    "side": "contralateral",
-    "mechanism": "Corticospinal fibers in the basis pontis"
-   },
-   {
-    "deficit": "Internuclear ophthalmoplegia",
-    "side": "ipsilateral",
-    "mechanism": "MLF: the eye on the side of the lesion fails to adduct"
-   },
-   {
-    "deficit": "Contralateral loss of vibration and proprioception",
-    "side": "contralateral",
-    "mechanism": "Medial lemniscus"
-   },
-   {
-    "deficit": "Ipsilateral facial and contralateral body pain and temperature loss",
-    "side": "ipsilateral",
-    "mechanism": "Spinal trigeminal complex and spinothalamic tract in the lateral tegmentum"
-   }
-  ],
-  "examination": [
-   "Test horizontal gaze in both directions and look for adduction lag with abducting nystagmus",
-   "Facial movement including the forehead; taste is not affected by pontine lesions",
-   "Power of the opposite limbs",
-   "Hearing and corneal reflex for lateral extension"
-  ],
-  "syndromes": [
-   "syn-millard-gubler",
-   "syn-foville",
-   "syn-ino",
-   "syn-one-and-a-half",
-   "syn-horizontal-gaze-palsy-pontine",
-   "syn-locked-in"
-  ],
-  "pearls": [
-   "Sixth nerve palsy plus contralateral hemiparesis is the caudal pons (Millard–Gubler when the seventh is included, Foville when gaze is involved)",
-   "A lower motor neuron facial palsy with hemiparesis on the other side cannot be Bell palsy: it is the pons"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    205,
-    207
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    216,
-    218
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    80
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 11,
-   "pages": [
-    96,
-    101
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    120,
-    124
-   ]
+  "status": "draft",
+  "subsystem": "levels",
+  "level": {
+    "region": "pons",
+    "sub": "pons-caudal"
   }
- ],
- "tags": [
-  "brainstem",
-  "cross-section"
- ],
- "status": "draft",
- "subsystem": "levels",
- "level": {
-  "region": "pons",
-  "sub": "pons-caudal"
- }
 }

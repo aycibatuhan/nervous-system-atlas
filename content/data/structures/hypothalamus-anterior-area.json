@@ -1,130 +1,126 @@
 {
- "kind": "structure",
- "id": "hypothalamus-anterior-area",
- "name": "Anterior hypothalamic area",
- "synonyms": [
-  "anterior hypothalamic region",
-  "heat-loss center"
- ],
- "system": "diencephalon",
- "meshIds": [
-  "hypothalamus-anterior-area-l",
-  "hypothalamus-anterior-area-r"
- ],
- "summary": "The anterior hypothalamic area is the region between the preoptic area in front and the tuberal hypothalamus behind, above the optic chiasm and around the paraventricular and supraoptic nuclei. It is the heat-loss center: warming of the blood activates its neurons, which drive sweating, cutaneous vasodilatation and panting and inhibit shivering and heat production, and it contains the parasympathetic-leaning autonomic neurons that lower heart rate and blood pressure. Damage produces hyperthermia, whereas irritation produces hypothermia, and the region is injured by suprasellar tumors, anterior communicating aneurysm surgery and hypothalamic hamartomas; it also contributes to sleep induction with the neighboring preoptic nuclei.",
- "anatomy": {
-  "location": "Anterior hypothalamus above the optic chiasm and lateral to the third ventricle, between the medial preoptic nucleus in front and the ventromedial and dorsomedial nuclei behind, surrounding the paraventricular and supraoptic nuclei.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Warm-sensitive neurons here integrate blood temperature with cutaneous thermal input and drive heat loss through sympathetic vasodilatation and sweating, while inhibiting the posterior hypothalamic heat-production pathways; they also generate fever when prostaglandin E2 resets their set point during infection, which is why antipyretics act here. The area contains parasympathetic-promoting autonomic neurons that project to the dorsal motor nucleus of the vagus and the nucleus of the solitary tract to slow the heart and lower blood pressure, and with the preoptic sleep-active neurons it promotes non-REM sleep by inhibiting the arousal systems. It also modulates aggression and, through oxytocin and vasopressin neurons nearby, social behavior.",
- "bloodSupply": {
-  "arteries": [
-   "artery-acom",
-   "artery-aca",
-   "artery-pcom",
-   "arteries-thalamoperforating"
+  "kind": "structure",
+  "id": "hypothalamus-anterior-area",
+  "name": "Anterior hypothalamic area",
+  "synonyms": [
+    "anterior hypothalamic region",
+    "heat-loss center"
   ],
-  "territories": [
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "hypothalamus-anterior-area-l"
-    },
-    "label": "anterior hypothalamus above the optic chiasm"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "hypothalamus-anterior-area-r"
-    },
-    "label": "anterior hypothalamic area between the preoptic and tuberal regions"
-   }
+  "system": "diencephalon",
+  "meshIds": [
+    "hypothalamus-anterior-area-l",
+    "hypothalamus-anterior-area-r"
   ],
-  "normalAppearance": "Gray matter of the anterior third ventricular wall above the chiasm on coronal images, below the anterior commissure and the fornix columns; individual nuclei are not resolved on clinical MRI.",
-  "pathology": [
-   {
-    "pathology": "Hyperthermia after anterior hypothalamic injury",
-    "modality": "MRI",
-    "finding": "Signal change or hemorrhage in the anterior hypothalamus after aneurysm surgery, craniopharyngioma resection or head injury, with uncontrolled fever without infection.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Suprasellar mass",
-    "modality": "MRI",
-    "finding": "Craniopharyngioma, germinoma or glioma expanding into the anterior hypothalamus with thermoregulatory, sleep and endocrine disturbance.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetric FLAIR change of the medial thalami, mammillary bodies and periaqueductal region that may extend to the hypothalamus with hypothermia.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hyperthermia",
-    "side": "bilateral",
-    "mechanism": "Loss of the heat-loss center so that heat production runs unopposed"
-   },
-   {
-    "deficit": "Insomnia",
-    "side": "bilateral",
-    "mechanism": "Loss of the anterior hypothalamic and preoptic sleep-promoting neurons"
-   },
-   {
-    "deficit": "Hypothermia and bradycardia with irritative lesions",
-    "side": "bilateral",
-    "mechanism": "Overactivity of heat-loss and parasympathetic outputs"
-   }
-  ],
-  "examination": [
-   "Core temperature trend without infective cause in a patient with a suprasellar lesion",
-   "Sleep history and daytime sleepiness",
-   "Autonomic function: heart rate variability and orthostatic blood pressure"
-  ],
-  "syndromes": [
-   "syn-hypothalamic-syndromes"
-  ],
-  "pearls": [
-   "Anterior hypothalamus loses heat; posterior hypothalamus makes it: anterior damage means fever, posterior damage means cold",
-   "Central fever after hypothalamic surgery does not respond to antibiotics but does respond to cooling",
-   "Fever itself is an anterior hypothalamic act: prostaglandin resets the thermostat"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 13,
-   "pages": [
-    374,
-    384
-   ]
+  "summary": "The anterior hypothalamic area is the region between the preoptic area in front and the tuberal hypothalamus behind, above the optic chiasm and around the paraventricular and supraoptic nuclei. It is the heat-loss center: warming of the blood activates its neurons, which drive sweating, cutaneous vasodilatation and panting and inhibit shivering and heat production, and it contains the parasympathetic-leaning autonomic neurons that lower heart rate and blood pressure. Damage produces hyperthermia, whereas irritation produces hypothermia, and the region is injured by suprasellar tumors, anterior communicating aneurysm surgery and hypothalamic hamartomas; it also contributes to sleep induction with the neighboring preoptic nuclei.",
+  "anatomy": {
+    "location": "Anterior hypothalamus above the optic chiasm and lateral to the third ventricle, between the medial preoptic nucleus in front and the ventromedial and dorsomedial nuclei behind, surrounding the paraventricular and supraoptic nuclei.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    29,
-    30
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "hypothalamus",
- "parent": "hypothalamus"
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Warm-sensitive neurons here integrate blood temperature with cutaneous thermal input and drive heat loss through sympathetic vasodilatation and sweating, while inhibiting the posterior hypothalamic heat-production pathways; they also generate fever when prostaglandin E2 resets their set point during infection, which is why antipyretics act here. The area contains parasympathetic-promoting autonomic neurons that project to the dorsal motor nucleus of the vagus and the nucleus of the solitary tract to slow the heart and lower blood pressure, and with the preoptic sleep-active neurons it promotes non-REM sleep by inhibiting the arousal systems. It also modulates aggression and, through oxytocin and vasopressin neurons nearby, social behavior.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-acom",
+      "artery-aca",
+      "artery-pcom",
+      "arteries-thalamoperforating"
+    ],
+    "territories": [
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "hypothalamus-anterior-area-l"
+        },
+        "label": "anterior hypothalamus above the optic chiasm"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "hypothalamus-anterior-area-r"
+        },
+        "label": "anterior hypothalamic area between the preoptic and tuberal regions"
+      }
+    ],
+    "normalAppearance": "Gray matter of the anterior third ventricular wall above the chiasm on coronal images, below the anterior commissure and the fornix columns; individual nuclei are not resolved on clinical MRI.",
+    "pathology": [
+      {
+        "pathology": "Hyperthermia after anterior hypothalamic injury",
+        "modality": "MRI",
+        "finding": "Signal change or hemorrhage in the anterior hypothalamus after aneurysm surgery, craniopharyngioma resection or head injury, with uncontrolled fever without infection.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Suprasellar mass",
+        "modality": "MRI",
+        "finding": "Craniopharyngioma, germinoma or glioma expanding into the anterior hypothalamus with thermoregulatory, sleep and endocrine disturbance.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetric FLAIR change of the medial thalami, mammillary bodies and periaqueductal region that may extend to the hypothalamus with hypothermia.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hyperthermia",
+        "side": "bilateral",
+        "mechanism": "Loss of the heat-loss center so that heat production runs unopposed"
+      },
+      {
+        "deficit": "Insomnia",
+        "side": "bilateral",
+        "mechanism": "Loss of the anterior hypothalamic and preoptic sleep-promoting neurons"
+      },
+      {
+        "deficit": "Hypothermia and bradycardia with irritative lesions",
+        "side": "bilateral",
+        "mechanism": "Overactivity of heat-loss and parasympathetic outputs"
+      }
+    ],
+    "examination": [
+      "Core temperature trend without infective cause in a patient with a suprasellar lesion",
+      "Sleep history and daytime sleepiness",
+      "Autonomic function: heart rate variability and orthostatic blood pressure"
+    ],
+    "syndromes": [
+      "syn-hypothalamic-syndromes"
+    ],
+    "pearls": [
+      "Anterior hypothalamus loses heat; posterior hypothalamus makes it: anterior damage means fever, posterior damage means cold",
+      "Central fever after hypothalamic surgery does not respond to antibiotics but does respond to cooling",
+      "Fever itself is an anterior hypothalamic act: prostaglandin resets the thermostat"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-hypothalamus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-hypothalamus-2",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-heat-loss",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "hypothalamus",
+  "parent": "hypothalamus"
 }

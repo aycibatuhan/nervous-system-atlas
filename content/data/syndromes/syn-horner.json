@@ -1,130 +1,122 @@
 {
- "kind": "syndrome",
- "id": "syn-horner",
- "name": "Horner syndrome",
- "eponyms": [
-  "oculosympathetic paresis",
-  "Bernard–Horner syndrome"
- ],
- "category": "functional-pattern",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "hypothalamus",
-   "intermediolateral-column",
-   "sympathetic-trunk",
-   "ganglion-superior-cervical",
-   "artery-internal-carotid",
-   "cervical-sympathetic-chain"
+  "kind": "syndrome",
+  "id": "syn-horner",
+  "name": "Horner syndrome",
+  "eponyms": [
+    "oculosympathetic paresis",
+    "Bernard–Horner syndrome"
   ],
-  "side": "ipsilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "artery-internal-carotid-l"
-  ]
- },
- "presentation": "One pupil is smaller than the other and the difference is greater in a dim room, the eyelid on that side droops a millimeter or two and the lower lid sits slightly higher, giving the eye a sunken look. The affected side of the face may not sweat. Depending on the cause there may be neck pain, hoarseness, weakness of the hand, or a brainstem syndrome; in a child a lighter iris on the affected side implies a congenital lesion.",
- "deficits": [
-  {
-   "modality": "pupil",
-   "side": "ipsilateral",
-   "distribution": "one pupil",
-   "sign": "Miosis with dilation lag; anisocoria greatest in darkness",
-   "substrate": "pathway-oculosympathetic"
+  "category": "functional-pattern",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "hypothalamus",
+      "intermediolateral-column",
+      "sympathetic-trunk",
+      "ganglion-superior-cervical",
+      "artery-internal-carotid",
+      "cervical-sympathetic-chain"
+    ],
+    "side": "ipsilateral"
   },
-  {
-   "modality": "other",
-   "side": "ipsilateral",
-   "distribution": "upper and lower lids",
-   "sign": "Mild ptosis (Müller's muscle) and 'upside-down ptosis' of the lower lid; apparent enophthalmos",
-   "substrate": "pathway-oculosympathetic"
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "artery-internal-carotid-l"
+    ]
   },
-  {
-   "modality": "autonomic",
-   "side": "ipsilateral",
-   "distribution": "face",
-   "sign": "Anhidrosis of the face with central and preganglionic lesions; spared with postganglionic lesions",
-   "substrate": "ganglion-superior-cervical"
-  }
- ],
- "reasoning": "The sympathetic pathway to the eye is entirely uncrossed, a three-neuron chain from the hypothalamus through the lateral brainstem and cervical cord to the ciliospinal center at C8–T2, then out through the T1 root over the lung apex and up the cervical chain to the superior cervical ganglion, and finally along the internal carotid artery through the cavernous sinus to the dilator pupillae and the smooth muscle of the lids. A lesion anywhere along this route produces the same ipsilateral triad, so the syndrome itself localizes only to the pathway, and the company it keeps localizes the lesion: first-order lesions (lateral medullary infarct, cervical cord) come with brainstem or cord signs and anhidrosis of the whole half of the body; second-order lesions (apical lung tumor, neck trauma, thyroid or carotid surgery) come with hand weakness, arm pain or a neck scar and facial anhidrosis; third-order lesions (carotid dissection, cavernous sinus disease, cluster headache) spare sweating, because the sudomotor fibers to the face leave the chain with the external carotid artery. The pupil is small because the dilator is paralyzed while the parasympathetic sphincter, reaching the eye by the third nerve, is intact, which is why the anisocoria widens in the dark and both pupils react normally to light.",
- "imagingFindings": [
-  {
-   "pathology": "Carotid dissection",
-   "modality": "MRA",
-   "finding": "Crescentic intramural hematoma around a narrowed lumen on fat-saturated T1; string sign or tapered occlusion on angiography.",
-   "sequence": "T1"
+  "presentation": "One pupil is smaller than the other and the difference is greater in a dim room, the eyelid on that side droops a millimeter or two and the lower lid sits slightly higher, giving the eye a sunken look. The affected side of the face may not sweat. Depending on the cause there may be neck pain, hoarseness, weakness of the hand, or a brainstem syndrome; in a child a lighter iris on the affected side implies a congenital lesion.",
+  "deficits": [
+    {
+      "modality": "pupil",
+      "side": "ipsilateral",
+      "distribution": "one pupil",
+      "sign": "Miosis with dilation lag; anisocoria greatest in darkness",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "other",
+      "side": "ipsilateral",
+      "distribution": "upper and lower lids",
+      "sign": "Mild ptosis (Müller's muscle) and 'upside-down ptosis' of the lower lid; apparent enophthalmos",
+      "substrate": "pathway-oculosympathetic"
+    },
+    {
+      "modality": "autonomic",
+      "side": "ipsilateral",
+      "distribution": "face",
+      "sign": "Anhidrosis of the face with central and preganglionic lesions; spared with postganglionic lesions",
+      "substrate": "ganglion-superior-cervical"
+    }
+  ],
+  "reasoning": "The sympathetic pathway to the eye is entirely uncrossed, a three-neuron chain from the hypothalamus through the lateral brainstem and cervical cord to the ciliospinal center at C8–T2, then out through the T1 root over the lung apex and up the cervical chain to the superior cervical ganglion, and finally along the internal carotid artery through the cavernous sinus to the dilator pupillae and the smooth muscle of the lids. A lesion anywhere along this route produces the same ipsilateral triad, so the syndrome itself localizes only to the pathway, and the company it keeps localizes the lesion: first-order lesions (lateral medullary infarct, cervical cord) come with brainstem or cord signs and anhidrosis of the whole half of the body; second-order lesions (apical lung tumor, neck trauma, thyroid or carotid surgery) come with hand weakness, arm pain or a neck scar and facial anhidrosis; third-order lesions (carotid dissection, cavernous sinus disease, cluster headache) spare sweating, because the sudomotor fibers to the face leave the chain with the external carotid artery. The pupil is small because the dilator is paralyzed while the parasympathetic sphincter, reaching the eye by the third nerve, is intact, which is why the anisocoria widens in the dark and both pupils react normally to light.",
+  "imagingFindings": [
+    {
+      "pathology": "Carotid dissection",
+      "modality": "MRA",
+      "finding": "Crescentic intramural hematoma around a narrowed lumen on fat-saturated T1; string sign or tapered occlusion on angiography.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Pancoast tumor",
+      "modality": "CT",
+      "finding": "Apical lung mass invading the T1 root and stellate ganglion; look at the lung apex on any Horner workup.",
+      "sequence": "CT contrast"
+    },
+    {
+      "pathology": "Lateral medullary infarct",
+      "modality": "MRI",
+      "finding": "Dorsolateral medullary restricted diffusion with the other Wallenberg signs.",
+      "sequence": "DWI"
+    }
+  ],
+  "commonCauses": [
+    "Internal carotid artery dissection",
+    "Lateral medullary infarct",
+    "Apical lung tumor",
+    "Neck trauma or surgery",
+    "Cavernous sinus lesion",
+    "Cluster headache (transient)",
+    "Congenital or birth trauma"
+  ],
+  "mimics": [
+    {
+      "name": "Physiologic anisocoria",
+      "howToDistinguish": "Difference equal in light and dark, no ptosis, no dilation lag"
+    },
+    {
+      "name": "Third nerve palsy with ptosis",
+      "howToDistinguish": "The pupil is large, not small, and ptosis is marked"
+    },
+    {
+      "name": "Adie tonic pupil",
+      "howToDistinguish": "The larger pupil is abnormal; poor light reaction, tonic near response"
+    }
+  ],
+  "management": [
+    "A painful Horner is carotid dissection until proven otherwise: urgent CTA or MRA of the neck",
+    "Apraclonidine (reversal of anisocoria) confirms the diagnosis; hydroxyamphetamine separates pre- from postganglionic lesions",
+    "Image the whole pathway from hypothalamus to cavernous sinus when no cause is apparent, including the lung apex"
+  ],
+  "citations": [
+    {
+      "ref": "sp-horner-syndrome",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-cortex",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -25,
+      "y": 0,
+      "z": -40
+    },
+    "label": "internal carotid artery in the neck"
   },
-  {
-   "pathology": "Pancoast tumor",
-   "modality": "CT",
-   "finding": "Apical lung mass invading the T1 root and stellate ganglion; look at the lung apex on any Horner workup.",
-   "sequence": "CT contrast"
-  },
-  {
-   "pathology": "Lateral medullary infarct",
-   "modality": "MRI",
-   "finding": "Dorsolateral medullary restricted diffusion with the other Wallenberg signs.",
-   "sequence": "DWI"
-  }
- ],
- "commonCauses": [
-  "Internal carotid artery dissection",
-  "Lateral medullary infarct",
-  "Apical lung tumor",
-  "Neck trauma or surgery",
-  "Cavernous sinus lesion",
-  "Cluster headache (transient)",
-  "Congenital or birth trauma"
- ],
- "mimics": [
-  {
-   "name": "Physiologic anisocoria",
-   "howToDistinguish": "Difference equal in light and dark, no ptosis, no dilation lag"
-  },
-  {
-   "name": "Third nerve palsy with ptosis",
-   "howToDistinguish": "The pupil is large, not small, and ptosis is marked"
-  },
-  {
-   "name": "Adie tonic pupil",
-   "howToDistinguish": "The larger pupil is abnormal; poor light reaction, tonic near response"
-  }
- ],
- "management": [
-  "A painful Horner is carotid dissection until proven otherwise: urgent CTA or MRA of the neck",
-  "Apraclonidine (reversal of anisocoria) confirms the diagnosis; hydroxyamphetamine separates pre- from postganglionic lesions",
-  "Image the whole pathway from hypothalamus to cavernous sinus when no cause is apparent, including the lung apex"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    407,
-    408
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    85,
-    87
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -25,
-   "y": 0,
-   "z": -40
-  },
-  "label": "internal carotid artery in the neck"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }

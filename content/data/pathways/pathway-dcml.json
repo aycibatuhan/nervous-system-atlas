@@ -1,178 +1,158 @@
 {
- "kind": "pathway",
- "id": "pathway-dcml",
- "name": "Dorsal column–medial lemniscus pathway",
- "synonyms": [
-  "posterior column pathway",
-  "lemniscal system"
- ],
- "type": "ascending",
- "modality": "discriminative touch, vibration, conscious proprioception",
- "summary": "Large myelinated fibers from mechanoreceptors and proprioceptors enter through the dorsal root and ascend uncrossed in the posterior columns (fasciculus gracilis for the leg and lower trunk, fasciculus cuneatus for the arm) to the gracile and cuneate nuclei in the lower medulla. Second-order axons cross as the internal arcuate fibers (sensory decussation) to form the medial lemniscus, which ascends through the brainstem to the ventral posterolateral nucleus of the thalamus, whose neurons project through the posterior limb of the internal capsule to the postcentral gyrus. The pathway crosses in the medulla, so cord lesions give ipsilateral loss and brainstem lesions contralateral loss, and its separation from the spinothalamic tract in the cord explains dissociated sensory loss.",
- "origin": {
-  "structures": [
-   "dorsal-root-ganglion"
+  "kind": "pathway",
+  "id": "pathway-dcml",
+  "name": "Dorsal column–medial lemniscus pathway",
+  "synonyms": [
+    "posterior column pathway",
+    "lemniscal system"
   ],
-  "note": "Pacinian and Meissner corpuscles, muscle spindles, Golgi tendon organs and joint receptors; cell bodies in the dorsal root ganglia."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Dorsal root ganglion cell",
-   "synapse": "gracile or cuneate nucleus"
+  "type": "ascending",
+  "modality": "discriminative touch, vibration, conscious proprioception",
+  "summary": "Large myelinated fibers from mechanoreceptors and proprioceptors enter through the dorsal root and ascend uncrossed in the posterior columns (fasciculus gracilis for the leg and lower trunk, fasciculus cuneatus for the arm) to the gracile and cuneate nuclei in the lower medulla. Second-order axons cross as the internal arcuate fibers (sensory decussation) to form the medial lemniscus, which ascends through the brainstem to the ventral posterolateral nucleus of the thalamus, whose neurons project through the posterior limb of the internal capsule to the postcentral gyrus. The pathway crosses in the medulla, so cord lesions give ipsilateral loss and brainstem lesions contralateral loss, and its separation from the spinothalamic tract in the cord explains dissociated sensory loss.",
+  "origin": {
+    "structures": [
+      "dorsal-root-ganglion"
+    ],
+    "note": "Pacinian and Meissner corpuscles, muscle spindles, Golgi tendon organs and joint receptors; cell bodies in the dorsal root ganglia."
   },
-  {
-   "order": 2,
-   "cellBody": "Gracile/cuneate nucleus neuron",
-   "synapse": "VPL of the thalamus after crossing in the medial lemniscus"
-  },
-  {
-   "order": 3,
-   "cellBody": "VPL thalamic neuron",
-   "synapse": "layer IV of the postcentral gyrus"
-  }
- ],
- "decussation": {
-  "level": "Sensory (lemniscal) decussation, lower medulla",
-  "structureId": "level-medulla-sensory-decussation",
-  "note": "Internal arcuate fibers cross just above the pyramidal decussation."
- },
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "dorsal-root-ganglion",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "first-order neuron"
-  },
-  {
-   "order": 2,
-   "structureId": "spinal-white-columns",
-   "meshId": "spinal-cord",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "posterior funiculus: gracilis medial (leg), cuneatus lateral (arm)"
-  },
-  {
-   "order": 3,
-   "structureId": "nucleus-gracilis-cuneatus",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "second-order neurons"
-  },
-  {
-   "order": 4,
-   "structureId": "level-medulla-sensory-decussation",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "internal arcuate fibers cross"
-  },
-  {
-   "order": 5,
-   "structureId": "medial-lemniscus",
-   "meshId": "tract-medial-lemniscus-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "ascends through pons and midbrain, rotating from vertical to horizontal"
-  },
-  {
-   "order": 6,
-   "structureId": "thalamus-vpl",
-   "meshId": "thalamus-ventral-posterior-ventrolateral-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "third-order relay"
-  },
-  {
-   "order": 7,
-   "structureId": "internal-capsule",
-   "meshId": "internal-capsule-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "posterior limb, superior thalamic radiation"
-  },
-  {
-   "order": 8,
-   "structureId": "gyrus-postcentral",
-   "meshId": "gyrus-postcentral-l",
-   "sideRelativeToOrigin": "contralateral",
-   "note": "primary somatosensory cortex, areas 3b, 1, 2"
-  }
- ],
- "termination": "Primary somatosensory cortex of the postcentral gyrus, somatotopically, with onward projection to the parietal association cortex.",
- "meshIds": [
-  "tract-medial-lemniscus-l",
-  "tract-medial-lemniscus-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Peripheral nerve or dorsal root",
-   "effects": "Loss of vibration and position sense in the nerve or dermatome distribution with areflexia",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Posterior columns (B12 deficiency, tabes, MS, posterior cord infarct)",
-   "effects": "Ipsilateral loss below the level, sensory ataxia, Romberg positive, Lhermitte sign",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Medulla above the decussation, pons, midbrain",
-   "effects": "Contralateral loss of vibration and proprioception, usually with other brainstem signs",
-   "side": "contralateral"
-  },
-  {
-   "level": "Thalamus (VPL)",
-   "effects": "Contralateral loss of all modalities including pain and temperature",
-   "side": "contralateral"
-  },
-  {
-   "level": "Parietal cortex",
-   "effects": "Loss of discriminative functions (two-point, graphesthesia, stereognosis) with preserved primary modalities",
-   "side": "contralateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Vibration and position sense lost on the same side as the lesion means the cord; on the opposite side, the brainstem or above",
-   "Sensory ataxia gets dramatically worse with the eyes closed (Romberg); cerebellar ataxia does not",
-   "The posterior columns are where B12 deficiency, HIV and copper deficiency strike; check them in every ataxic patient"
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Dorsal root ganglion cell",
+      "synapse": "gracile or cuneate nucleus"
+    },
+    {
+      "order": 2,
+      "cellBody": "Gracile/cuneate nucleus neuron",
+      "synapse": "VPL of the thalamus after crossing in the medial lemniscus"
+    },
+    {
+      "order": 3,
+      "cellBody": "VPL thalamic neuron",
+      "synapse": "layer IV of the postcentral gyrus"
+    }
   ],
-  "syndromes": [
-   "syn-posterior-cord-subacute-combined",
-   "syn-brown-sequard",
-   "syn-dejerine-medial-medullary",
-   "syn-lacunar-pure-sensory"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    147,
-    149
-   ]
+  "decussation": {
+    "level": "Sensory (lemniscal) decussation, lower medulla",
+    "structureId": "level-medulla-sensory-decussation",
+    "note": "Internal arcuate fibers cross just above the pyramidal decussation."
   },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    199,
-    200
-   ]
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "dorsal-root-ganglion",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "first-order neuron"
+    },
+    {
+      "order": 2,
+      "structureId": "spinal-white-columns",
+      "meshId": "spinal-cord",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "posterior funiculus: gracilis medial (leg), cuneatus lateral (arm)"
+    },
+    {
+      "order": 3,
+      "structureId": "nucleus-gracilis-cuneatus",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "second-order neurons"
+    },
+    {
+      "order": 4,
+      "structureId": "level-medulla-sensory-decussation",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "internal arcuate fibers cross"
+    },
+    {
+      "order": 5,
+      "structureId": "medial-lemniscus",
+      "meshId": "tract-medial-lemniscus-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "ascends through pons and midbrain, rotating from vertical to horizontal"
+    },
+    {
+      "order": 6,
+      "structureId": "thalamus-vpl",
+      "meshId": "thalamus-ventral-posterior-ventrolateral-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "third-order relay"
+    },
+    {
+      "order": 7,
+      "structureId": "internal-capsule",
+      "meshId": "internal-capsule-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "posterior limb, superior thalamic radiation"
+    },
+    {
+      "order": 8,
+      "structureId": "gyrus-postcentral",
+      "meshId": "gyrus-postcentral-l",
+      "sideRelativeToOrigin": "contralateral",
+      "note": "primary somatosensory cortex, areas 3b, 1, 2"
+    }
+  ],
+  "termination": "Primary somatosensory cortex of the postcentral gyrus, somatotopically, with onward projection to the parietal association cortex.",
+  "meshIds": [
+    "tract-medial-lemniscus-l",
+    "tract-medial-lemniscus-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Peripheral nerve or dorsal root",
+      "effects": "Loss of vibration and position sense in the nerve or dermatome distribution with areflexia",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Posterior columns (B12 deficiency, tabes, MS, posterior cord infarct)",
+      "effects": "Ipsilateral loss below the level, sensory ataxia, Romberg positive, Lhermitte sign",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Medulla above the decussation, pons, midbrain",
+      "effects": "Contralateral loss of vibration and proprioception, usually with other brainstem signs",
+      "side": "contralateral"
+    },
+    {
+      "level": "Thalamus (VPL)",
+      "effects": "Contralateral loss of all modalities including pain and temperature",
+      "side": "contralateral"
+    },
+    {
+      "level": "Parietal cortex",
+      "effects": "Loss of discriminative functions (two-point, graphesthesia, stereognosis) with preserved primary modalities",
+      "side": "contralateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Vibration and position sense lost on the same side as the lesion means the cord; on the opposite side, the brainstem or above",
+      "Sensory ataxia gets dramatically worse with the eyes closed (Romberg); cerebellar ataxia does not",
+      "The posterior columns are where B12 deficiency, HIV and copper deficiency strike; check them in every ataxic patient"
+    ],
+    "syndromes": [
+      "syn-posterior-cord-subacute-combined",
+      "syn-brown-sequard",
+      "syn-dejerine-medial-medullary",
+      "syn-lacunar-pure-sensory"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    36,
-    38
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    41,
-    44
-   ]
-  }
- ],
- "status": "draft",
- "somatotopy": "Cord: sacral fibers medial, cervical lateral (gracilis medial, cuneatus lateral). Medulla: leg ventral, arm dorsal in the forming lemniscus. Pons and midbrain: arm medial, leg lateral. Thalamus and cortex: standard homunculus."
+  "citations": [
+    {
+      "ref": "sp-posterior-column",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-medial-lemniscus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-spinocerebellar-dorsal-tract",
+      "section": "Structure and Function"
+    }
+  ],
+  "status": "draft",
+  "somatotopy": "Cord: sacral fibers medial, cervical lateral (gracilis medial, cuneatus lateral). Medulla: leg ventral, arm dorsal in the forming lemniscus. Pons and midbrain: arm medial, leg lateral. Thalamus and cortex: standard homunculus."
 }

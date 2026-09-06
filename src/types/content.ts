@@ -1,9 +1,15 @@
 // Compiled content bundle (public/data/content.json) — produced by scripts/content/build.ts
-export interface Citation { book: 'snell' | 'berkowitz'; chapter: number; pages: [number, number]; section?: string; note?: string }
+/** A citation points at a bibliography entry (content/bibliography/<ref>.json), never at a printed book. */
+export interface Citation { ref: string; section?: string; note?: string }
+export interface BibEntry {
+  id: string; type: 'statpearls' | 'journal' | 'book' | 'web'; title: string; authors: string[]; year: number;
+  container: string; publisher?: string; url: string; nbk?: string; doi?: string; pmid?: string; pmcid?: string;
+  license?: string; accessed: string; verified: true; tags: string[];
+}
 export interface ContentEntryBase { kind: string; id: string; name: string; synonyms?: string[]; summary?: string; citations: Citation[]; status?: string; html?: Record<string, string> }
 export interface ContentBundle {
   generated: string;
-  sources: Record<string, { cite: string; title: string }>;
+  bibliography: Record<string, BibEntry>;
   structures: Record<string, ContentEntryBase & Record<string, unknown>>;
   pathways: Record<string, ContentEntryBase & Record<string, unknown>>;
   syndromes: Record<string, ContentEntryBase & Record<string, unknown>>;

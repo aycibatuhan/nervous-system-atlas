@@ -1,132 +1,112 @@
 {
- "kind": "syndrome",
- "id": "syn-argyll-robertson",
- "name": "Argyll Robertson pupils",
- "eponyms": [],
- "category": "infectious",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "pretectal-area",
-   "oculomotor-nucleus",
-   "level-midbrain-superior-colliculus"
+  "kind": "syndrome",
+  "id": "syn-argyll-robertson",
+  "name": "Argyll Robertson pupils",
+  "eponyms": [],
+  "category": "infectious",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "pretectal-area",
+      "oculomotor-nucleus",
+      "level-midbrain-superior-colliculus"
+    ],
+    "side": "bilateral"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": 0,
+      "y": -28,
+      "z": -3
+    },
+    "radiusMm": 6
+  },
+  "presentation": "Both pupils are small and irregular and do not constrict to even the brightest light, but they constrict promptly when the patient looks at a near target and redilate slowly afterward. Vision is normal and there is no ptosis. The patient may have absent ankle reflexes, lightning pains and a sensory ataxia from tabes dorsalis; the finding was classically a sign of late neurosyphilis and today prompts serological testing.",
+  "deficits": [
+    {
+      "modality": "pupil",
+      "side": "bilateral",
+      "distribution": "both pupils",
+      "sign": "Small, irregular pupils that fail to react to light but constrict to near (light-near dissociation)",
+      "substrate": "pathway-pupillary-light-reflex"
+    },
+    {
+      "modality": "visual-acuity",
+      "side": "bilateral",
+      "distribution": "spared",
+      "sign": "Normal acuity and fields; the afferent visual pathway is intact",
+      "substrate": "pathway-visual"
+    },
+    {
+      "modality": "sensory-vibration-proprioception",
+      "side": "bilateral",
+      "distribution": "legs (tabes)",
+      "sign": "Sensory ataxia, absent reflexes and Charcot joints when tabes dorsalis coexists",
+      "substrate": "pathway-dcml"
+    }
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": 0,
-   "y": -28,
-   "z": -3
+  "reasoning": "The light reflex and the near reflex share the same final pathway from the Edinger–Westphal nucleus through the oculomotor nerve and the ciliary ganglion to the sphincter pupillae, but they reach the nucleus by different routes: the light reflex arrives from the pretectal nuclei, which lie dorsally beneath the posterior commissure and receive bilateral retinal input, whereas the near response is driven from the cortex by fibers descending more ventrally in the midbrain tegmentum. A lesion of the periaqueductal region that damages the pretectal nuclei or their bilateral connections to the Edinger–Westphal nuclei abolishes the light reaction of both pupils while leaving the near reaction intact: light-near dissociation. The pupils are small because the same periaqueductal process is thought to interrupt the supranuclear inhibitory fibers that normally hold the Edinger–Westphal neurons in check, and irregular because of chronic iris damage. Both pupils are involved because the pretectal connections are bilateral and the lesion is midline; there is no ipsilateral or contralateral pattern. Vision is normal because the retinogeniculate fibers to the lateral geniculate leave the tract before the pretectum. The same dissociation with large rather than small pupils occurs in the dorsal midbrain syndrome from a pineal tumor and in the Adie tonic pupil from ciliary ganglion damage with aberrant regeneration, so pupil size and reactivity speed separate the three.",
+  "imagingFindings": [
+    {
+      "pathology": "Neurosyphilis",
+      "modality": "LP/CSF",
+      "finding": "Positive serum treponemal test with CSF pleocytosis, raised protein and a reactive CSF VDRL.",
+      "sequence": "n/a"
+    },
+    {
+      "pathology": "Tabes dorsalis",
+      "modality": "MRI",
+      "finding": "Atrophy and T2 hyperintensity of the posterior columns of the cord.",
+      "sequence": "T2"
+    },
+    {
+      "pathology": "Dorsal midbrain lesion",
+      "modality": "MRI",
+      "finding": "Periaqueductal lesion (tumor, demyelination, infarct) when the syndrome is not syphilitic.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Neurosyphilis (tabes dorsalis, general paresis)",
+    "Diabetic autonomic neuropathy (pseudo-Argyll Robertson)",
+    "Dorsal midbrain lesions",
+    "Chronic alcoholism, sarcoidosis, Lyme (rare)"
+  ],
+  "mimics": [
+    {
+      "name": "Adie tonic pupil",
+      "howToDistinguish": "Usually unilateral, large, with slow tonic near response and denervation supersensitivity to dilute pilocarpine"
+    },
+    {
+      "name": "Parinaud syndrome",
+      "howToDistinguish": "Large pupils with up-gaze palsy and convergence-retraction nystagmus"
+    },
+    {
+      "name": "Pharmacologic miosis (opiates, pilocarpine)",
+      "howToDistinguish": "Both light and near responses reduced"
+    }
+  ],
+  "management": [
+    "Serum treponemal serology and, if positive, lumbar puncture",
+    "Intravenous penicillin for neurosyphilis; test for HIV",
+    "Slit-lamp examination to distinguish iris disease"
+  ],
+  "citations": [
+    {
+      "ref": "sp-argyll-robertson-pupil",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "sagittal",
+    "mni": {
+      "x": 0,
+      "y": -28,
+      "z": -3
+    },
+    "label": "pretectal region and periaqueductal gray"
   },
-  "radiusMm": 6
- },
- "presentation": "Both pupils are small and irregular and do not constrict to even the brightest light, but they constrict promptly when the patient looks at a near target and redilate slowly afterward. Vision is normal and there is no ptosis. The patient may have absent ankle reflexes, lightning pains and a sensory ataxia from tabes dorsalis; the finding was classically a sign of late neurosyphilis and today prompts serological testing.",
- "deficits": [
-  {
-   "modality": "pupil",
-   "side": "bilateral",
-   "distribution": "both pupils",
-   "sign": "Small, irregular pupils that fail to react to light but constrict to near (light-near dissociation)",
-   "substrate": "pathway-pupillary-light-reflex"
-  },
-  {
-   "modality": "visual-acuity",
-   "side": "bilateral",
-   "distribution": "spared",
-   "sign": "Normal acuity and fields; the afferent visual pathway is intact",
-   "substrate": "pathway-visual"
-  },
-  {
-   "modality": "sensory-vibration-proprioception",
-   "side": "bilateral",
-   "distribution": "legs (tabes)",
-   "sign": "Sensory ataxia, absent reflexes and Charcot joints when tabes dorsalis coexists",
-   "substrate": "pathway-dcml"
-  }
- ],
- "reasoning": "The light reflex and the near reflex share the same final pathway from the Edinger–Westphal nucleus through the oculomotor nerve and the ciliary ganglion to the sphincter pupillae, but they reach the nucleus by different routes: the light reflex arrives from the pretectal nuclei, which lie dorsally beneath the posterior commissure and receive bilateral retinal input, whereas the near response is driven from the cortex by fibers descending more ventrally in the midbrain tegmentum. A lesion of the periaqueductal region that damages the pretectal nuclei or their bilateral connections to the Edinger–Westphal nuclei abolishes the light reaction of both pupils while leaving the near reaction intact: light-near dissociation. The pupils are small because the same periaqueductal process is thought to interrupt the supranuclear inhibitory fibers that normally hold the Edinger–Westphal neurons in check, and irregular because of chronic iris damage. Both pupils are involved because the pretectal connections are bilateral and the lesion is midline; there is no ipsilateral or contralateral pattern. Vision is normal because the retinogeniculate fibers to the lateral geniculate leave the tract before the pretectum. The same dissociation with large rather than small pupils occurs in the dorsal midbrain syndrome from a pineal tumor and in the Adie tonic pupil from ciliary ganglion damage with aberrant regeneration, so pupil size and reactivity speed separate the three.",
- "imagingFindings": [
-  {
-   "pathology": "Neurosyphilis",
-   "modality": "LP/CSF",
-   "finding": "Positive serum treponemal test with CSF pleocytosis, raised protein and a reactive CSF VDRL.",
-   "sequence": "n/a"
-  },
-  {
-   "pathology": "Tabes dorsalis",
-   "modality": "MRI",
-   "finding": "Atrophy and T2 hyperintensity of the posterior columns of the cord.",
-   "sequence": "T2"
-  },
-  {
-   "pathology": "Dorsal midbrain lesion",
-   "modality": "MRI",
-   "finding": "Periaqueductal lesion (tumor, demyelination, infarct) when the syndrome is not syphilitic.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Neurosyphilis (tabes dorsalis, general paresis)",
-  "Diabetic autonomic neuropathy (pseudo-Argyll Robertson)",
-  "Dorsal midbrain lesions",
-  "Chronic alcoholism, sarcoidosis, Lyme (rare)"
- ],
- "mimics": [
-  {
-   "name": "Adie tonic pupil",
-   "howToDistinguish": "Usually unilateral, large, with slow tonic near response and denervation supersensitivity to dilute pilocarpine"
-  },
-  {
-   "name": "Parinaud syndrome",
-   "howToDistinguish": "Large pupils with up-gaze palsy and convergence-retraction nystagmus"
-  },
-  {
-   "name": "Pharmacologic miosis (opiates, pilocarpine)",
-   "howToDistinguish": "Both light and near responses reduced"
-  }
- ],
- "management": [
-  "Serum treponemal serology and, if positive, lumbar puncture",
-  "Intravenous penicillin for neurosyphilis; test for HIV",
-  "Slit-lamp examination to distinguish iris disease"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    357,
-    358
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 14,
-   "pages": [
-    408,
-    408
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    90,
-    90
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "sagittal",
-  "mni": {
-   "x": 0,
-   "y": -28,
-   "z": -3
-  },
-  "label": "pretectal region and periaqueductal gray"
- },
- "cameraPreset": "lateral-l"
+  "cameraPreset": "lateral-l"
 }

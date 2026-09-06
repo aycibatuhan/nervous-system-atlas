@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-rapd",
- "term": "Relative afferent pupillary defect (RAPD)",
- "definition": "Paradoxical dilation of one pupil when a light is swung onto it from the other eye, showing that the afferent light signal from that eye is weaker. It indicates an optic nerve, chiasmal or optic tract lesion and never causes anisocoria.",
- "related": [
-  "g-anisocoria",
-  "g-light-near-dissociation"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 10,
-   "pages": [
-    83,
-    85
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-rapd",
+  "term": "Relative afferent pupillary defect (RAPD)",
+  "definition": "Paradoxical dilation of one pupil when a light is swung onto it from the other eye, showing that the afferent light signal from that eye is weaker. It indicates an optic nerve, chiasmal or optic tract lesion and never causes anisocoria.",
+  "related": [
+    "g-anisocoria",
+    "g-light-near-dissociation"
+  ],
+  "citations": [
+    {
+      "ref": "sp-pupillary-light-reflexes-and-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-pupillary-light-reflex",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-optic-neuritis",
+      "section": "Pathophysiology"
+    }
+  ]
 }

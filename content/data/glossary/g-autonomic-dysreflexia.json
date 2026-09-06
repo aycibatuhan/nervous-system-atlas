@@ -1,10 +1,15 @@
 {
- "kind": "glossary",
- "id": "g-autonomic-dysreflexia",
- "term": "Autonomic dysreflexia",
- "definition": "Paroxysmal hypertension with headache, sweating and bradycardia triggered by a noxious stimulus (typically bladder distension) below a spinal cord lesion above T6, from unmodulated sympathetic discharge.",
- "related": [
-  "g-spinal-shock"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-autonomic-dysreflexia",
+  "term": "Autonomic dysreflexia",
+  "definition": "Paroxysmal hypertension with headache, sweating and bradycardia triggered by a noxious stimulus (typically bladder distension) below a spinal cord lesion above T6, from unmodulated sympathetic discharge.",
+  "related": [
+    "g-spinal-shock"
+  ],
+  "citations": [
+    {
+      "ref": "sp-autonomic-dysreflexia",
+      "section": "Pathophysiology"
+    }
+  ]
 }

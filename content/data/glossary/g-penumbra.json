@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-penumbra",
- "term": "Ischemic penumbra",
- "definition": "Brain tissue around an infarct core that is hypoperfused and non-functioning but still viable, and can be saved by reperfusion within a limited time; its extent is estimated by perfusion imaging or the mismatch between clinical deficit and infarct core.",
- "related": [
-  "g-lacune"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-penumbra",
+  "term": "Ischemic penumbra",
+  "definition": "Brain tissue around an infarct core that is hypoperfused and non-functioning but still viable, and can be saved by reperfusion within a limited time; its extent is estimated by perfusion imaging or the mismatch between clinical deficit and infarct core.",
+  "related": [
+    "g-lacune"
+  ],
+  "citations": [
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-acute-stroke",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-stroke-imaging",
+      "section": "Introduction"
+    }
+  ]
 }

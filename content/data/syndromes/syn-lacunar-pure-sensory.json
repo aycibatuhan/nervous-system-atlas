@@ -1,132 +1,108 @@
 {
- "kind": "syndrome",
- "id": "syn-lacunar-pure-sensory",
- "name": "Pure sensory lacunar stroke",
- "eponyms": [],
- "category": "lacunar",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "thalamus-vpl",
-   "thalamus-vpm",
-   "arteries-thalamoperforating"
+  "kind": "syndrome",
+  "id": "syn-lacunar-pure-sensory",
+  "name": "Pure sensory lacunar stroke",
+  "eponyms": [],
+  "category": "lacunar",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "thalamus-vpl",
+      "thalamus-vpm",
+      "arteries-thalamoperforating"
+    ],
+    "side": "contralateral"
+  },
+  "lesionMarker": {
+    "kind": "sphere",
+    "mni": {
+      "x": -15,
+      "y": -20,
+      "z": 6
+    },
+    "radiusMm": 5
+  },
+  "presentation": "The patient describes numbness or tingling that came on over minutes and involves the face, arm, trunk and leg of one side, sometimes splitting the midline exactly. Strength, coordination, vision and speech are unaffected. The examiner may find surprisingly little objective loss compared with the complaint, or a clear reduction of all modalities on that side.",
+  "deficits": [
+    {
+      "modality": "sensory-light-touch",
+      "side": "contralateral",
+      "distribution": "face, arm, trunk and leg",
+      "sign": "Hemihypesthesia to touch, pin and vibration, often splitting the midline",
+      "substrate": "thalamus-vpl"
+    },
+    {
+      "modality": "sensory-pain-temp",
+      "side": "contralateral",
+      "distribution": "hemibody",
+      "sign": "Paresthesias and reduced pin-prick",
+      "substrate": "pathway-lateral-spinothalamic"
+    },
+    {
+      "modality": "motor",
+      "side": "n/a",
+      "distribution": "none",
+      "sign": "No weakness; reflexes symmetric",
+      "substrate": "pathway-lateral-corticospinal"
+    }
   ],
-  "side": "contralateral"
- },
- "lesionMarker": {
-  "kind": "sphere",
-  "mni": {
-   "x": -15,
-   "y": -20,
-   "z": 6
+  "reasoning": "The ventral posterior nuclei of the thalamus receive every ascending somatic sensory pathway after it has crossed: the medial lemniscus, which crossed in the medulla, the spinothalamic tract, which crossed in the spinal cord, and the trigeminal lemniscus from the face. A lacune in the thalamogeniculate perforator territory therefore removes all modalities from the whole contralateral half of the body including the face, a combination that a spinal lesion cannot produce and a brainstem lesion produces only with crossed facial involvement. The corticospinal tract lies in the adjacent internal capsule and is spared, so there is no weakness; an infarct big enough to reach it becomes a sensorimotor stroke. A small cortical infarct of the postcentral gyrus can cause a similar restricted hemisensory deficit, but it usually spares some modality and rarely splits the trunk at the midline. Some patients later develop central post-stroke pain, when the syndrome is renamed Dejerine–Roussy.",
+  "imagingFindings": [
+    {
+      "pathology": "Acute lacune",
+      "modality": "MRI",
+      "finding": "Small (under 15 mm) focus of restricted diffusion in the ventral posterolateral thalamus; CT is often normal in the first day.",
+      "sequence": "DWI"
+    },
+    {
+      "pathology": "Chronic lacune",
+      "modality": "MRI",
+      "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
+      "sequence": "FLAIR"
+    }
+  ],
+  "commonCauses": [
+    "Hypertensive lipohyalinosis of a single perforating artery",
+    "Microatheroma at the perforator origin"
+  ],
+  "mimics": [
+    {
+      "name": "Cortical branch infarct",
+      "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
+    },
+    {
+      "name": "Small hemorrhage",
+      "howToDistinguish": "Hyperdense on CT; same sites"
+    },
+    {
+      "name": "Parietal cortical infarct",
+      "howToDistinguish": "Discriminative loss (graphesthesia, stereognosis) with sparing of primary modalities; DWI cortical"
+    }
+  ],
+  "management": [
+    "Antiplatelet therapy, statin and blood pressure control",
+    "Thrombolysis when presenting within the window and disabling",
+    "Early mobilization; prognosis for recovery is good"
+  ],
+  "citations": [
+    {
+      "ref": "sp-lacunar-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-cerebral-blood-supply",
+      "section": "Clinical Significance"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -15,
+      "y": -20,
+      "z": 6
+    },
+    "label": "lateral thalamus"
   },
-  "radiusMm": 5
- },
- "presentation": "The patient describes numbness or tingling that came on over minutes and involves the face, arm, trunk and leg of one side, sometimes splitting the midline exactly. Strength, coordination, vision and speech are unaffected. The examiner may find surprisingly little objective loss compared with the complaint, or a clear reduction of all modalities on that side.",
- "deficits": [
-  {
-   "modality": "sensory-light-touch",
-   "side": "contralateral",
-   "distribution": "face, arm, trunk and leg",
-   "sign": "Hemihypesthesia to touch, pin and vibration, often splitting the midline",
-   "substrate": "thalamus-vpl"
-  },
-  {
-   "modality": "sensory-pain-temp",
-   "side": "contralateral",
-   "distribution": "hemibody",
-   "sign": "Paresthesias and reduced pin-prick",
-   "substrate": "pathway-lateral-spinothalamic"
-  },
-  {
-   "modality": "motor",
-   "side": "n/a",
-   "distribution": "none",
-   "sign": "No weakness; reflexes symmetric",
-   "substrate": "pathway-lateral-corticospinal"
-  }
- ],
- "reasoning": "The ventral posterior nuclei of the thalamus receive every ascending somatic sensory pathway after it has crossed: the medial lemniscus, which crossed in the medulla, the spinothalamic tract, which crossed in the spinal cord, and the trigeminal lemniscus from the face. A lacune in the thalamogeniculate perforator territory therefore removes all modalities from the whole contralateral half of the body including the face, a combination that a spinal lesion cannot produce and a brainstem lesion produces only with crossed facial involvement. The corticospinal tract lies in the adjacent internal capsule and is spared, so there is no weakness; an infarct big enough to reach it becomes a sensorimotor stroke. A small cortical infarct of the postcentral gyrus can cause a similar restricted hemisensory deficit, but it usually spares some modality and rarely splits the trunk at the midline. Some patients later develop central post-stroke pain, when the syndrome is renamed Dejerine–Roussy.",
- "imagingFindings": [
-  {
-   "pathology": "Acute lacune",
-   "modality": "MRI",
-   "finding": "Small (under 15 mm) focus of restricted diffusion in the ventral posterolateral thalamus; CT is often normal in the first day.",
-   "sequence": "DWI"
-  },
-  {
-   "pathology": "Chronic lacune",
-   "modality": "MRI",
-   "finding": "Small CSF-intensity cavity with a FLAIR-bright rim, often multiple, with diffuse white matter hyperintensity of small vessel disease.",
-   "sequence": "FLAIR"
-  }
- ],
- "commonCauses": [
-  "Hypertensive lipohyalinosis of a single perforating artery",
-  "Microatheroma at the perforator origin"
- ],
- "mimics": [
-  {
-   "name": "Cortical branch infarct",
-   "howToDistinguish": "Cortical signs (aphasia, neglect, field loss, gaze deviation) exclude a lacune"
-  },
-  {
-   "name": "Small hemorrhage",
-   "howToDistinguish": "Hyperdense on CT; same sites"
-  },
-  {
-   "name": "Parietal cortical infarct",
-   "howToDistinguish": "Discriminative loss (graphesthesia, stereognosis) with sparing of primary modalities; DWI cortical"
-  }
- ],
- "management": [
-  "Antiplatelet therapy, statin and blood pressure control",
-  "Thrombolysis when presenting within the window and disabling",
-  "Early mobilization; prognosis for recovery is good"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    474,
-    474
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 17,
-   "pages": [
-    482,
-    482
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    60,
-    60
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    63,
-    63
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -15,
-   "y": -20,
-   "z": 6
-  },
-  "label": "lateral thalamus"
- },
- "cameraPreset": "superior"
+  "cameraPreset": "superior"
 }

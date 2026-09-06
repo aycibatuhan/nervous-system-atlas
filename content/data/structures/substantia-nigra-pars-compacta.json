@@ -1,184 +1,164 @@
 {
- "kind": "structure",
- "id": "substantia-nigra-pars-compacta",
- "name": "Substantia nigra, pars compacta",
- "synonyms": [
-  "SNc",
-  "A9 dopaminergic group"
- ],
- "system": "brainstem",
- "meshIds": [
-  "substantia-nigra-pars-compacta-l",
-  "substantia-nigra-pars-compacta-r"
- ],
- "summary": "The pars compacta is the dorsal, densely cellular part of the substantia nigra, a band of large neuromelanin-pigmented dopamine neurons in the midbrain tegmentum between the crus cerebri and the red nucleus. Its axons form the nigrostriatal pathway to the caudate and putamen, where dopamine sets the gain of the direct and indirect basal ganglia pathways, enabling movement to be initiated, scaled and learned. Loss of most of its neurons, with Lewy bodies in the survivors, is Parkinson disease, and the neuromelanin and iron changes of the nucleus are now visible on MRI; it is also the site of the dopaminergic lesion of MPTP toxicity and of the neurodegeneration in progressive supranuclear palsy and multiple system atrophy.",
- "anatomy": {
-  "location": "Dorsal part of the substantia nigra across the whole midbrain, lying on the crus cerebri ventrally and beneath the pars reticulata's dorsal border, medial to the medial lemniscus, lateral to the ventral tegmental area and the interpeduncular fossa, from the level of the subthalamus down to the pons.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Striatum (striatonigral GABAergic fibers)",
-    "via": "direct pathway collaterals"
-   },
-   {
-    "from": "Subthalamic nucleus and pedunculopontine nucleus",
-    "via": "glutamatergic and cholinergic fibers"
-   },
-   {
-    "from": "Prefrontal cortex and amygdala",
-    "via": "corticonigral fibers"
-   }
+  "kind": "structure",
+  "id": "substantia-nigra-pars-compacta",
+  "name": "Substantia nigra, pars compacta",
+  "synonyms": [
+    "SNc",
+    "A9 dopaminergic group"
   ],
-  "efferents": [
-   {
-    "to": "Caudate and putamen",
-    "via": "nigrostriatal pathway"
-   },
-   {
-    "to": "Globus pallidus and subthalamic nucleus",
-    "via": "dopaminergic collaterals"
-   },
-   {
-    "to": "Thalamus and prefrontal cortex",
-    "via": "mesocortical fibers (minor)"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "substantia-nigra-pars-compacta-l",
+    "substantia-nigra-pars-compacta-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Dopaminergic pars compacta neurons fire tonically to provide the background dopamine that D1 and D2 receptors in the striatum need for the direct pathway to facilitate and the indirect pathway to suppress movement, and they burst to reward prediction errors, teaching the striatum which actions are worth repeating; their ventral tier neurons, which project to the putamen, are the most vulnerable in Parkinson disease. The neurons receive the striatum, the pallidum, the subthalamic nucleus, the pedunculopontine nucleus and the prefrontal cortex, and they also send dopamine to the pallidum, the subthalamic nucleus and the thalamus. With about 60 percent of the neurons lost and 80 percent of striatal dopamine gone, bradykinesia and rigidity appear.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-sca",
-   "artery-basilar",
-   "arteries-thalamoperforating",
-   "artery-pcom"
+  "summary": "The pars compacta is the dorsal, densely cellular part of the substantia nigra, a band of large neuromelanin-pigmented dopamine neurons in the midbrain tegmentum between the crus cerebri and the red nucleus. Its axons form the nigrostriatal pathway to the caudate and putamen, where dopamine sets the gain of the direct and indirect basal ganglia pathways, enabling movement to be initiated, scaled and learned. Loss of most of its neurons, with Lewy bodies in the survivors, is Parkinson disease, and the neuromelanin and iron changes of the nucleus are now visible on MRI; it is also the site of the dopaminergic lesion of MPTP toxicity and of the neurodegeneration in progressive supranuclear palsy and multiple system atrophy.",
+  "anatomy": {
+    "location": "Dorsal part of the substantia nigra across the whole midbrain, lying on the crus cerebri ventrally and beneath the pars reticulata's dorsal border, medial to the medial lemniscus, lateral to the ventral tegmental area and the interpeduncular fossa, from the level of the subthalamus down to the pons.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Striatum (striatonigral GABAergic fibers)",
+        "via": "direct pathway collaterals"
+      },
+      {
+        "from": "Subthalamic nucleus and pedunculopontine nucleus",
+        "via": "glutamatergic and cholinergic fibers"
+      },
+      {
+        "from": "Prefrontal cortex and amygdala",
+        "via": "corticonigral fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Caudate and putamen",
+        "via": "nigrostriatal pathway"
+      },
+      {
+        "to": "Globus pallidus and subthalamic nucleus",
+        "via": "dopaminergic collaterals"
+      },
+      {
+        "to": "Thalamus and prefrontal cortex",
+        "via": "mesocortical fibers (minor)"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
+  },
+  "function": "Dopaminergic pars compacta neurons fire tonically to provide the background dopamine that D1 and D2 receptors in the striatum need for the direct pathway to facilitate and the indirect pathway to suppress movement, and they burst to reward prediction errors, teaching the striatum which actions are worth repeating; their ventral tier neurons, which project to the putamen, are the most vulnerable in Parkinson disease. The neurons receive the striatum, the pallidum, the subthalamic nucleus, the pedunculopontine nucleus and the prefrontal cortex, and they also send dopamine to the pallidum, the subthalamic nucleus and the thalamus. With about 60 percent of the neurons lost and 80 percent of striatal dopamine gone, bradykinesia and rigidity appear.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-sca",
+      "artery-basilar",
+      "arteries-thalamoperforating",
+      "artery-pcom"
+    ],
+    "territories": [
+      "territory-basilar",
+      "territory-posterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "substantia-nigra-pars-compacta-l"
+        },
+        "label": "pars compacta between the crus cerebri and the red nucleus"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "substantia-nigra-pars-compacta-r"
+        },
+        "label": "substantia nigra in the midbrain tegmentum"
+      }
+    ],
+    "normalAppearance": "On neuromelanin-sensitive T1 images the pars compacta is a bright band dorsal to the crus cerebri; on susceptibility-weighted images its dorsolateral part shows the swallow-tail sign of nigrosome-1, which is lost in Parkinson disease.",
+    "pathology": [
+      {
+        "pathology": "Parkinson disease",
+        "modality": "MRI",
+        "finding": "Loss of the dorsolateral nigral hyperintensity (swallow-tail sign) on SWI and reduced neuromelanin signal; dopamine transporter SPECT shows reduced putaminal uptake, worse contralateral to the affected side.",
+        "sequence": "SWI"
+      },
+      {
+        "pathology": "Midbrain infarct involving the nigra",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the ventral midbrain tegmentum with contralateral hemiparkinsonism and oculomotor signs.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Progressive supranuclear palsy",
+        "modality": "MRI",
+        "finding": "Midbrain atrophy with the hummingbird sign and reduced midbrain area; nigral neuromelanin loss also present.",
+        "sequence": "T1"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Contralateral bradykinesia, rigidity and rest tremor",
+        "side": "contralateral",
+        "mechanism": "Loss of striatal dopamine from the ipsilateral nigrostriatal pathway"
+      },
+      {
+        "deficit": "Postural instability and gait disorder",
+        "side": "bilateral",
+        "mechanism": "Advanced bilateral nigral loss with non-dopaminergic degeneration"
+      },
+      {
+        "deficit": "Impaired reward learning and motivation",
+        "side": "bilateral",
+        "mechanism": "Loss of dopaminergic reward prediction signals"
+      }
+    ],
+    "examination": [
+      "Finger tapping, rapid alternating movements and arm swing for bradykinesia; cogwheel rigidity with activation",
+      "Rest tremor at 4-6 Hz and its asymmetry",
+      "Response to a levodopa challenge when the diagnosis is in doubt"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-weber",
+      "syn-benedikt"
+    ],
+    "pearls": [
+      "Parkinson disease begins as a one-sided disease because the two nigrae die at different rates",
+      "The swallow tail on SWI disappears when nigrosome-1 dies",
+      "Dopamine replacement treats the striatal deficit; it cannot stop the nigral loss"
+    ]
+  },
+  "pitfalls": [
+    "Symmetric parkinsonism with early falls or autonomic failure is not Parkinson disease; the nigra is involved in all the parkinsonian syndromes, and the pattern of spread decides"
   ],
-  "territories": [
-   "territory-basilar",
-   "territory-posterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "substantia-nigra-pars-compacta-l"
+  "citations": [
+    {
+      "ref": "sp-substantia-nigra",
+      "section": "Structure and Function"
     },
-    "label": "pars compacta between the crus cerebri and the red nucleus"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "substantia-nigra-pars-compacta-r"
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
     },
-    "label": "substantia nigra in the midbrain tegmentum"
-   }
+    {
+      "ref": "sp-parkinson-disease",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "On neuromelanin-sensitive T1 images the pars compacta is a bright band dorsal to the crus cerebri; on susceptibility-weighted images its dorsolateral part shows the swallow-tail sign of nigrosome-1, which is lost in Parkinson disease.",
-  "pathology": [
-   {
-    "pathology": "Parkinson disease",
-    "modality": "MRI",
-    "finding": "Loss of the dorsolateral nigral hyperintensity (swallow-tail sign) on SWI and reduced neuromelanin signal; dopamine transporter SPECT shows reduced putaminal uptake, worse contralateral to the affected side.",
-    "sequence": "SWI"
-   },
-   {
-    "pathology": "Midbrain infarct involving the nigra",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the ventral midbrain tegmentum with contralateral hemiparkinsonism and oculomotor signs.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Progressive supranuclear palsy",
-    "modality": "MRI",
-    "finding": "Midbrain atrophy with the hummingbird sign and reduced midbrain area; nigral neuromelanin loss also present.",
-    "sequence": "T1"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Contralateral bradykinesia, rigidity and rest tremor",
-    "side": "contralateral",
-    "mechanism": "Loss of striatal dopamine from the ipsilateral nigrostriatal pathway"
-   },
-   {
-    "deficit": "Postural instability and gait disorder",
-    "side": "bilateral",
-    "mechanism": "Advanced bilateral nigral loss with non-dopaminergic degeneration"
-   },
-   {
-    "deficit": "Impaired reward learning and motivation",
-    "side": "bilateral",
-    "mechanism": "Loss of dopaminergic reward prediction signals"
-   }
+  "tags": [
+    "dopamine",
+    "Parkinson",
+    "nigrostriatal"
   ],
-  "examination": [
-   "Finger tapping, rapid alternating movements and arm swing for bradykinesia; cogwheel rigidity with activation",
-   "Rest tremor at 4-6 Hz and its asymmetry",
-   "Response to a levodopa challenge when the diagnosis is in doubt"
-  ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-weber",
-   "syn-benedikt"
-  ],
-  "pearls": [
-   "Parkinson disease begins as a one-sided disease because the two nigrae die at different rates",
-   "The swallow tail on SWI disappears when nigrosome-1 dies",
-   "Dopamine replacement treats the striatal deficit; it cannot stop the nigral loss"
-  ]
- },
- "pitfalls": [
-  "Symmetric parkinsonism with early falls or autonomic failure is not Parkinson disease; the nigra is involved in all the parkinsonian syndromes, and the pattern of spread decides"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    318
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    212,
-    218
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    55,
-    58
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    248
-   ]
-  }
- ],
- "tags": [
-  "dopamine",
-  "Parkinson",
-  "nigrostriatal"
- ],
- "status": "draft",
- "subsystem": "midbrain",
- "parent": "substantia-nigra"
+  "status": "draft",
+  "subsystem": "midbrain",
+  "parent": "substantia-nigra"
 }

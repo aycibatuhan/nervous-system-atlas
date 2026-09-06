@@ -1,198 +1,162 @@
 {
- "kind": "structure",
- "id": "uncus",
- "name": "Uncus",
- "synonyms": [
-  "piriform cortex",
-  "uncinate gyrus"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "uncus-l",
-  "uncus-r"
- ],
- "summary": "The uncus is the hook-shaped anteromedial end of the parahippocampal gyrus, where the gyrus turns back on itself over the hippocampal head, lying in the medial temporal lobe against the tentorial edge, lateral to the cerebral peduncle and the oculomotor nerve. It contains the primary olfactory (piriform) cortex, the cortical nuclei of the amygdala and the anterior entorhinal cortex, so it is the cortex of smell and of the olfactory and gustatory auras of temporal seizures. Its clinical fame comes from uncal herniation: when a supratentorial mass pushes the uncus through the tentorial incisura it compresses the third nerve and the midbrain, producing the dilated pupil, hemiplegia and coma that neurosurgeons act on within minutes.",
- "anatomy": {
-  "location": "Medial tip of the temporal lobe, anterior and medial to the hippocampal head, bounded medially by the free edge of the tentorium and the crural and ambient cisterns, with the oculomotor nerve, the posterior cerebral artery and the cerebral peduncle just medial to it.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Olfactory bulb",
-    "via": "lateral olfactory stria"
-   },
-   {
-    "from": "Amygdala",
-    "via": "direct amygdalocortical fibers"
-   },
-   {
-    "from": "Entorhinal cortex and hippocampus",
-    "via": "short association fibers"
-   }
+  "kind": "structure",
+  "id": "uncus",
+  "name": "Uncus",
+  "synonyms": [
+    "piriform cortex",
+    "uncinate gyrus"
   ],
-  "efferents": [
-   {
-    "to": "Entorhinal cortex",
-    "via": "short association fibers"
-   },
-   {
-    "to": "Orbitofrontal cortex",
-    "via": "direct olfactory projection and via the mediodorsal thalamus"
-   },
-   {
-    "to": "Amygdala and hypothalamus",
-    "via": "amygdalofugal fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "uncus-l",
+    "uncus-r"
   ],
-  "pathways": [
-   "pathway-olfactory"
-  ]
- },
- "function": "The piriform cortex on the uncus receives the lateral olfactory stria directly from the olfactory bulb, without a thalamic relay, and gives conscious perception of smell and its emotional and memory associations through the amygdala and entorhinal cortex; the amygdaloid cortical nuclei add the affective value of odors and tastes. Because it sits at the entrance to the hippocampus, seizures spreading through it produce olfactory hallucinations of burning or rotting smells (uncinate fits), lip smacking and chewing automatisms and an epigastric aura. Pressure on the uncus from herniation compresses the third nerve against the tentorial edge and the posterior cerebral artery, and displaces the midbrain.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pca",
-   "artery-anterior-choroidal"
+  "summary": "The uncus is the hook-shaped anteromedial end of the parahippocampal gyrus, where the gyrus turns back on itself over the hippocampal head, lying in the medial temporal lobe against the tentorial edge, lateral to the cerebral peduncle and the oculomotor nerve. It contains the primary olfactory (piriform) cortex, the cortical nuclei of the amygdala and the anterior entorhinal cortex, so it is the cortex of smell and of the olfactory and gustatory auras of temporal seizures. Its clinical fame comes from uncal herniation: when a supratentorial mass pushes the uncus through the tentorial incisura it compresses the third nerve and the midbrain, producing the dilated pupil, hemiplegia and coma that neurosurgeons act on within minutes.",
+  "anatomy": {
+    "location": "Medial tip of the temporal lobe, anterior and medial to the hippocampal head, bounded medially by the free edge of the tentorium and the crural and ambient cisterns, with the oculomotor nerve, the posterior cerebral artery and the cerebral peduncle just medial to it.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Olfactory bulb",
+        "via": "lateral olfactory stria"
+      },
+      {
+        "from": "Amygdala",
+        "via": "direct amygdalocortical fibers"
+      },
+      {
+        "from": "Entorhinal cortex and hippocampus",
+        "via": "short association fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Entorhinal cortex",
+        "via": "short association fibers"
+      },
+      {
+        "to": "Orbitofrontal cortex",
+        "via": "direct olfactory projection and via the mediodorsal thalamus"
+      },
+      {
+        "to": "Amygdala and hypothalamus",
+        "via": "amygdalofugal fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-olfactory"
+    ]
+  },
+  "function": "The piriform cortex on the uncus receives the lateral olfactory stria directly from the olfactory bulb, without a thalamic relay, and gives conscious perception of smell and its emotional and memory associations through the amygdala and entorhinal cortex; the amygdaloid cortical nuclei add the affective value of odors and tastes. Because it sits at the entrance to the hippocampus, seizures spreading through it produce olfactory hallucinations of burning or rotting smells (uncinate fits), lip smacking and chewing automatisms and an epigastric aura. Pressure on the uncus from herniation compresses the third nerve against the tentorial edge and the posterior cerebral artery, and displaces the midbrain.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pca",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-pca-temporal",
+      "territory-anterior-choroidal-thalamoperforating"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "uncus-l"
+        },
+        "label": "uncus medial to the tentorial edge and lateral to the midbrain"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "uncus-r"
+        },
+        "label": "uncus in the suprasellar and crural cistern beside the oculomotor nerve"
+      }
+    ],
+    "normalAppearance": "The medial bump of the temporal lobe projecting into the suprasellar cistern on coronal and axial images, separated from the cerebral peduncle by the crural cistern in which the third nerve and the posterior cerebral artery run.",
+    "pathology": [
+      {
+        "pathology": "Uncal herniation",
+        "modality": "CT",
+        "finding": "Loss of the ipsilateral suprasellar and crural cisterns, medial shift of the uncus over the tentorial edge, midbrain rotation and contralateral hydrocephalus of the temporal horn; later Duret hemorrhages in the brainstem.",
+        "sequence": "CT non-contrast",
+        "timing": "Minutes matter: image and decompress before the pupil is fixed"
+      },
+      {
+        "pathology": "Herpes simplex encephalitis",
+        "modality": "MRI",
+        "finding": "Asymmetric FLAIR signal and swelling of the uncus, amygdala, hippocampus and insula with cortical restricted diffusion and sometimes hemorrhage.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Uncinate seizures from a medial temporal tumor",
+        "modality": "MRI",
+        "finding": "Ganglioglioma or low-grade glioma expanding the uncus with olfactory auras; enhancement and calcification vary.",
+        "sequence": "T1+Gd"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Olfactory hallucinations (uncinate fits) with chewing automatisms",
+        "side": "n/a",
+        "mechanism": "Ictal activation of the piriform cortex and amygdala"
+      },
+      {
+        "deficit": "Ipsilateral dilated pupil then complete third nerve palsy, contralateral hemiplegia and coma",
+        "side": "ipsilateral",
+        "mechanism": "Herniating uncus compresses the oculomotor nerve and the midbrain against the tentorial edge"
+      },
+      {
+        "deficit": "Ipsilateral hemiplegia (false localizing)",
+        "side": "ipsilateral",
+        "mechanism": "Contralateral cerebral peduncle pressed against the opposite tentorial edge (Kernohan notch)"
+      }
+    ],
+    "examination": [
+      "Pupil size and reaction on both sides every 15 minutes in a patient with a supratentorial mass",
+      "Smell testing in the epilepsy clinic: hyposmia can accompany a medial temporal focus",
+      "Ask about smells of burning rubber or rotten eggs before a seizure"
+    ],
+    "syndromes": [
+      "syn-uncal-herniation",
+      "syn-cn3-palsy",
+      "syn-kluver-bucy"
+    ],
+    "pearls": [
+      "A dilated pupil on the side of a mass means the uncus has reached the third nerve: the next step is coma",
+      "Uncinate fits are seizures with an olfactory aura from the uncus, not from the olfactory bulb",
+      "Kernohan's notch makes the hemiplegia land on the wrong side; trust the pupil, not the weakness, for the side of the mass"
+    ]
+  },
+  "pitfalls": [
+    "A dilated pupil with normal consciousness is usually not herniation; herniation dilates the pupil in a patient who is also becoming drowsy"
   ],
-  "territories": [
-   "territory-pca-temporal",
-   "territory-anterior-choroidal-thalamoperforating"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "uncus-l"
+  "citations": [
+    {
+      "ref": "sp-uncal-herniation",
+      "section": "Pathophysiology"
     },
-    "label": "uncus medial to the tentorial edge and lateral to the midbrain"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "uncus-r"
+    {
+      "ref": "sp-cranial-nerve-1",
+      "section": "Structure and Function"
     },
-    "label": "uncus in the suprasellar and crural cistern beside the oculomotor nerve"
-   }
+    {
+      "ref": "sp-amygdala",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "The medial bump of the temporal lobe projecting into the suprasellar cistern on coronal and axial images, separated from the cerebral peduncle by the crural cistern in which the third nerve and the posterior cerebral artery run.",
-  "pathology": [
-   {
-    "pathology": "Uncal herniation",
-    "modality": "CT",
-    "finding": "Loss of the ipsilateral suprasellar and crural cisterns, medial shift of the uncus over the tentorial edge, midbrain rotation and contralateral hydrocephalus of the temporal horn; later Duret hemorrhages in the brainstem.",
-    "sequence": "CT non-contrast",
-    "timing": "Minutes matter: image and decompress before the pupil is fixed"
-   },
-   {
-    "pathology": "Herpes simplex encephalitis",
-    "modality": "MRI",
-    "finding": "Asymmetric FLAIR signal and swelling of the uncus, amygdala, hippocampus and insula with cortical restricted diffusion and sometimes hemorrhage.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Uncinate seizures from a medial temporal tumor",
-    "modality": "MRI",
-    "finding": "Ganglioglioma or low-grade glioma expanding the uncus with olfactory auras; enhancement and calcification vary.",
-    "sequence": "T1+Gd"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Olfactory hallucinations (uncinate fits) with chewing automatisms",
-    "side": "n/a",
-    "mechanism": "Ictal activation of the piriform cortex and amygdala"
-   },
-   {
-    "deficit": "Ipsilateral dilated pupil then complete third nerve palsy, contralateral hemiplegia and coma",
-    "side": "ipsilateral",
-    "mechanism": "Herniating uncus compresses the oculomotor nerve and the midbrain against the tentorial edge"
-   },
-   {
-    "deficit": "Ipsilateral hemiplegia (false localizing)",
-    "side": "ipsilateral",
-    "mechanism": "Contralateral cerebral peduncle pressed against the opposite tentorial edge (Kernohan notch)"
-   }
+  "tags": [
+    "olfactory cortex",
+    "herniation",
+    "amygdala"
   ],
-  "examination": [
-   "Pupil size and reaction on both sides every 15 minutes in a patient with a supratentorial mass",
-   "Smell testing in the epilepsy clinic: hyposmia can accompany a medial temporal focus",
-   "Ask about smells of burning rubber or rotten eggs before a seizure"
-  ],
-  "syndromes": [
-   "syn-uncal-herniation",
-   "syn-cn3-palsy",
-   "syn-kluver-bucy"
-  ],
-  "pearls": [
-   "A dilated pupil on the side of a mass means the uncus has reached the third nerve: the next step is coma",
-   "Uncinate fits are seizures with an olfactory aura from the uncus, not from the olfactory bulb",
-   "Kernohan's notch makes the hemiplegia land on the wrong side; trust the pupil, not the weakness, for the side of the mass"
-  ]
- },
- "pitfalls": [
-  "A dilated pupil with normal consciousness is usually not herniation; herniation dilates the pupil in a patient who is also becoming drowsy"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    220,
-    221
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    260
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    327,
-    328
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    271,
-    274
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  }
- ],
- "tags": [
-  "olfactory cortex",
-  "herniation",
-  "amygdala"
- ],
- "status": "draft",
- "subsystem": "limbic",
- "parent": "gyrus-parahippocampal-uncus"
+  "status": "draft",
+  "subsystem": "limbic",
+  "parent": "gyrus-parahippocampal-uncus"
 }

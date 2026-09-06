@@ -1,206 +1,186 @@
 {
- "kind": "structure",
- "id": "brainstem",
- "name": "Brainstem",
- "synonyms": [
-  "truncus encephali",
-  "brainstem (midbrain, pons, medulla)"
- ],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The brainstem is the stalk that joins the cerebral hemispheres to the spinal cord, made of the midbrain, pons and medulla oblongata, lying in the posterior fossa on the clivus and passing through the tentorial notch above and the foramen magnum below. It contains the nuclei of cranial nerves III to XII, the ascending and descending long tracts, the reticular formation that maintains consciousness and controls breathing and circulation, and the crossings that decide on which side a deficit appears. Its compact packing means small lesions produce crossed syndromes that name the level, and its vital centers make brainstem compression, hemorrhage and basilar occlusion the most dangerous events in neurology.",
- "anatomy": {
-  "location": "Posterior cranial fossa in front of the cerebellum, from the diencephalon at the level of the posterior commissure and mammillary bodies to the pyramidal decussation at the foramen magnum, with the fourth ventricle and aqueduct behind it and the basilar and vertebral arteries in front.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Cerebral cortex",
-    "via": "corticospinal, corticobulbar and corticopontine tracts"
-   },
-   {
-    "from": "Spinal cord",
-    "via": "spinothalamic, spinocerebellar and dorsal column pathways"
-   },
-   {
-    "from": "Cerebellum",
-    "via": "superior cerebellar peduncle"
-   }
+  "kind": "structure",
+  "id": "brainstem",
+  "name": "Brainstem",
+  "synonyms": [
+    "truncus encephali",
+    "brainstem (midbrain, pons, medulla)"
   ],
-  "efferents": [
-   {
-    "to": "Thalamus and cortex",
-    "via": "medial lemniscus and reticular activating system"
-   },
-   {
-    "to": "Spinal cord",
-    "via": "reticulospinal, vestibulospinal, rubrospinal and tectospinal tracts"
-   },
-   {
-    "to": "Cerebellum",
-    "via": "inferior and middle cerebellar peduncles"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "pathways": [
-   "pathway-lateral-corticospinal",
-   "pathway-dcml",
-   "pathway-lateral-spinothalamic",
-   "pathway-corticobulbar",
-   "pathway-horizontal-gaze",
-   "pathway-vertical-gaze"
-  ]
- },
- "function": "Ascending pathways (medial lemniscus, spinothalamic tract, lateral lemniscus, cerebellar peduncles) and descending pathways (corticospinal, corticobulbar, rubrospinal, vestibulospinal, reticulospinal) traverse it; cranial nerve nuclei are arranged in longitudinal columns with motor nuclei medial and sensory nuclei lateral; the reticular formation generates the respiratory rhythm, sets blood pressure and heart rate, and its ascending projections keep the thalamus and cortex awake; and the pontine and medullary gaze centers, the vestibular nuclei and the inferior olive coordinate eye movements and posture. The pyramidal, lemniscal and trochlear decussations and the crossing of the superior cerebellar peduncles determine the side of signs. This entry is the container for the level-by-level and nucleus-by-nucleus descriptions elsewhere in the atlas.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "artery-vertebral",
-   "artery-pica",
-   "artery-aica",
-   "artery-sca",
-   "arteries-pontine"
+  "summary": "The brainstem is the stalk that joins the cerebral hemispheres to the spinal cord, made of the midbrain, pons and medulla oblongata, lying in the posterior fossa on the clivus and passing through the tentorial notch above and the foramen magnum below. It contains the nuclei of cranial nerves III to XII, the ascending and descending long tracts, the reticular formation that maintains consciousness and controls breathing and circulation, and the crossings that decide on which side a deficit appears. Its compact packing means small lesions produce crossed syndromes that name the level, and its vital centers make brainstem compression, hemorrhage and basilar occlusion the most dangerous events in neurology.",
+  "anatomy": {
+    "location": "Posterior cranial fossa in front of the cerebellum, from the diencephalon at the level of the posterior commissure and mammillary bodies to the pyramidal decussation at the foramen magnum, with the fourth ventricle and aqueduct behind it and the basilar and vertebral arteries in front.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Cerebral cortex",
+        "via": "corticospinal, corticobulbar and corticopontine tracts"
+      },
+      {
+        "from": "Spinal cord",
+        "via": "spinothalamic, spinocerebellar and dorsal column pathways"
+      },
+      {
+        "from": "Cerebellum",
+        "via": "superior cerebellar peduncle"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Thalamus and cortex",
+        "via": "medial lemniscus and reticular activating system"
+      },
+      {
+        "to": "Spinal cord",
+        "via": "reticulospinal, vestibulospinal, rubrospinal and tectospinal tracts"
+      },
+      {
+        "to": "Cerebellum",
+        "via": "inferior and middle cerebellar peduncles"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-corticospinal",
+      "pathway-dcml",
+      "pathway-lateral-spinothalamic",
+      "pathway-corticobulbar",
+      "pathway-horizontal-gaze",
+      "pathway-vertical-gaze"
+    ]
+  },
+  "function": "Ascending pathways (medial lemniscus, spinothalamic tract, lateral lemniscus, cerebellar peduncles) and descending pathways (corticospinal, corticobulbar, rubrospinal, vestibulospinal, reticulospinal) traverse it; cranial nerve nuclei are arranged in longitudinal columns with motor nuclei medial and sensory nuclei lateral; the reticular formation generates the respiratory rhythm, sets blood pressure and heart rate, and its ascending projections keep the thalamus and cortex awake; and the pontine and medullary gaze centers, the vestibular nuclei and the inferior olive coordinate eye movements and posture. The pyramidal, lemniscal and trochlear decussations and the crossing of the superior cerebellar peduncles determine the side of signs. This entry is the container for the level-by-level and nucleus-by-nucleus descriptions elsewhere in the atlas.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "artery-vertebral",
+      "artery-pica",
+      "artery-aica",
+      "artery-sca",
+      "arteries-pontine"
+    ],
+    "territories": [
+      "territory-basilar",
+      "territory-inferior-cerebellar",
+      "territory-superior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "brainstem"
+        },
+        "label": "brainstem from the midbrain to the cervicomedullary junction"
+      },
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "brainstem"
+        },
+        "label": "pons in front of the fourth ventricle"
+      }
+    ],
+    "normalAppearance": "On midline sagittal T1 images the midbrain, the bulging pons and the tapering medulla lie on the clivus with the aqueduct and fourth ventricle behind; the pontine-midbrain ratio, the medulla area and the midbrain profile are measured in neurodegenerative disease.",
+    "pathology": [
+      {
+        "pathology": "Brainstem infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in a paramedian or lateral territory; DWI can be falsely negative in the first hours for small pontine and medullary infarcts.",
+        "sequence": "DWI",
+        "timing": "Repeat DWI at 24-48 hours if the first is negative and the syndrome is convincing"
+      },
+      {
+        "pathology": "Brainstem compression and herniation",
+        "modality": "CT",
+        "finding": "Effacement of the perimesencephalic cisterns, midbrain distortion by uncal herniation or tonsillar descent, and Duret hemorrhages in the pontine tegmentum.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Progressive supranuclear palsy",
+        "modality": "MRI",
+        "finding": "Midbrain atrophy with a concave upper profile (hummingbird sign) and a reduced midbrain-to-pons ratio.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Brainstem glioma or demyelination",
+        "modality": "MRI",
+        "finding": "Diffuse pontine expansion with T2 hyperintensity in children; focal FLAIR lesions of the pons and middle cerebellar peduncle in multiple sclerosis.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Crossed cranial nerve and long-tract signs",
+        "side": "ipsilateral",
+        "mechanism": "Cranial nerve nucleus or fascicle on the side of the lesion with crossed corticospinal or sensory tracts"
+      },
+      {
+        "deficit": "Coma",
+        "side": "bilateral",
+        "mechanism": "Damage to the reticular activating system of the upper pons and midbrain"
+      },
+      {
+        "deficit": "Respiratory and cardiovascular failure",
+        "side": "bilateral",
+        "mechanism": "Damage to the medullary respiratory and vasomotor centers"
+      },
+      {
+        "deficit": "Locked-in state",
+        "side": "bilateral",
+        "mechanism": "Bilateral ventral pontine destruction sparing the tegmentum"
+      }
+    ],
+    "examination": [
+      "Cranial nerves III-XII in order, then long-tract signs and their sides, then level of consciousness and breathing pattern",
+      "Brainstem reflexes in coma: pupils, corneals, oculocephalic and cold caloric responses, gag and cough",
+      "Blood pressure, heart rate and respiratory pattern as vital-center signs"
+    ],
+    "syndromes": [
+      "syn-wallenberg-lateral-medullary",
+      "syn-dejerine-medial-medullary",
+      "syn-millard-gubler",
+      "syn-weber",
+      "syn-locked-in",
+      "syn-basilar-occlusion",
+      "syn-central-transtentorial-herniation",
+      "syn-tonsillar-herniation"
+    ],
+    "pearls": [
+      "The cranial nerve names the level: III midbrain, VI-VII pons, IX-XII medulla",
+      "Sensory loss on one side of the face and the other side of the body is the brainstem's signature",
+      "A small lesion in the brainstem produces more deficits than a large one in the hemisphere"
+    ]
+  },
+  "pitfalls": [
+    "Early DWI misses up to a third of small brainstem infarcts; the examination outranks the first scan"
   ],
-  "territories": [
-   "territory-basilar",
-   "territory-inferior-cerebellar",
-   "territory-superior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "brainstem"
+  "citations": [
+    {
+      "ref": "sp-brainstem",
+      "section": "Structure and Function"
     },
-    "label": "brainstem from the midbrain to the cervicomedullary junction"
-   },
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "brainstem"
+    {
+      "ref": "sp-brainstem-stroke",
+      "section": "Pathophysiology"
     },
-    "label": "pons in front of the fourth ventricle"
-   }
+    {
+      "ref": "sp-auditory-brainstem-response",
+      "section": "Introduction"
+    }
   ],
-  "normalAppearance": "On midline sagittal T1 images the midbrain, the bulging pons and the tapering medulla lie on the clivus with the aqueduct and fourth ventricle behind; the pontine-midbrain ratio, the medulla area and the midbrain profile are measured in neurodegenerative disease.",
-  "pathology": [
-   {
-    "pathology": "Brainstem infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in a paramedian or lateral territory; DWI can be falsely negative in the first hours for small pontine and medullary infarcts.",
-    "sequence": "DWI",
-    "timing": "Repeat DWI at 24-48 hours if the first is negative and the syndrome is convincing"
-   },
-   {
-    "pathology": "Brainstem compression and herniation",
-    "modality": "CT",
-    "finding": "Effacement of the perimesencephalic cisterns, midbrain distortion by uncal herniation or tonsillar descent, and Duret hemorrhages in the pontine tegmentum.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Progressive supranuclear palsy",
-    "modality": "MRI",
-    "finding": "Midbrain atrophy with a concave upper profile (hummingbird sign) and a reduced midbrain-to-pons ratio.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Brainstem glioma or demyelination",
-    "modality": "MRI",
-    "finding": "Diffuse pontine expansion with T2 hyperintensity in children; focal FLAIR lesions of the pons and middle cerebellar peduncle in multiple sclerosis.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Crossed cranial nerve and long-tract signs",
-    "side": "ipsilateral",
-    "mechanism": "Cranial nerve nucleus or fascicle on the side of the lesion with crossed corticospinal or sensory tracts"
-   },
-   {
-    "deficit": "Coma",
-    "side": "bilateral",
-    "mechanism": "Damage to the reticular activating system of the upper pons and midbrain"
-   },
-   {
-    "deficit": "Respiratory and cardiovascular failure",
-    "side": "bilateral",
-    "mechanism": "Damage to the medullary respiratory and vasomotor centers"
-   },
-   {
-    "deficit": "Locked-in state",
-    "side": "bilateral",
-    "mechanism": "Bilateral ventral pontine destruction sparing the tegmentum"
-   }
+  "tags": [
+    "brainstem",
+    "container",
+    "crossed syndromes"
   ],
-  "examination": [
-   "Cranial nerves III-XII in order, then long-tract signs and their sides, then level of consciousness and breathing pattern",
-   "Brainstem reflexes in coma: pupils, corneals, oculocephalic and cold caloric responses, gag and cough",
-   "Blood pressure, heart rate and respiratory pattern as vital-center signs"
-  ],
-  "syndromes": [
-   "syn-wallenberg-lateral-medullary",
-   "syn-dejerine-medial-medullary",
-   "syn-millard-gubler",
-   "syn-weber",
-   "syn-locked-in",
-   "syn-basilar-occlusion",
-   "syn-central-transtentorial-herniation",
-   "syn-tonsillar-herniation"
-  ],
-  "pearls": [
-   "The cranial nerve names the level: III midbrain, VI-VII pons, IX-XII medulla",
-   "Sensory loss on one side of the face and the other side of the body is the brainstem's signature",
-   "A small lesion in the brainstem produces more deficits than a large one in the hemisphere"
-  ]
- },
- "pitfalls": [
-  "Early DWI misses up to a third of small brainstem infarcts; the examination outranks the first scan"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    185,
-    228
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    82
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    25,
-    32
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    271,
-    274
-   ]
-  }
- ],
- "tags": [
-  "brainstem",
-  "container",
-  "crossed syndromes"
- ],
- "status": "draft",
- "subsystem": "whole"
+  "status": "draft",
+  "subsystem": "whole"
 }

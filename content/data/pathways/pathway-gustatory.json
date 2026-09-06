@@ -1,154 +1,134 @@
 {
- "kind": "pathway",
- "id": "pathway-gustatory",
- "name": "Gustatory pathway",
- "synonyms": [],
- "type": "gustatory",
- "modality": "taste",
- "summary": "Taste buds on the anterior two-thirds of the tongue signal through the chorda tympani of the facial nerve, those on the posterior third through the glossopharyngeal nerve, and those on the epiglottis and pharynx through the vagus; all these fibers, with cell bodies in the geniculate, petrosal and nodose ganglia, end in the rostral part of the nucleus of the solitary tract. Second-order axons ascend mainly uncrossed in the central tegmental tract to the ventral posteromedial thalamus and then to the gustatory cortex in the frontal operculum and anterior insula, with connections to the orbitofrontal cortex where taste and smell combine into flavour. Loss of taste therefore localizes to the peripheral nerves far more often than to the brain.",
- "origin": {
-  "structures": [
-   "ganglion-geniculate",
-   "nucleus-solitarius"
+  "kind": "pathway",
+  "id": "pathway-gustatory",
+  "name": "Gustatory pathway",
+  "synonyms": [],
+  "type": "gustatory",
+  "modality": "taste",
+  "summary": "Taste buds on the anterior two-thirds of the tongue signal through the chorda tympani of the facial nerve, those on the posterior third through the glossopharyngeal nerve, and those on the epiglottis and pharynx through the vagus; all these fibers, with cell bodies in the geniculate, petrosal and nodose ganglia, end in the rostral part of the nucleus of the solitary tract. Second-order axons ascend mainly uncrossed in the central tegmental tract to the ventral posteromedial thalamus and then to the gustatory cortex in the frontal operculum and anterior insula, with connections to the orbitofrontal cortex where taste and smell combine into flavour. Loss of taste therefore localizes to the peripheral nerves far more often than to the brain.",
+  "origin": {
+    "structures": [
+      "ganglion-geniculate",
+      "nucleus-solitarius"
+    ],
+    "note": "Taste receptor cells; first-order neurons in the geniculate (VII), petrosal (IX) and nodose (X) ganglia."
+  },
+  "neuronChain": [
+    {
+      "order": 1,
+      "cellBody": "Ganglion cell of VII, IX or X",
+      "synapse": "rostral (gustatory) nucleus of the solitary tract"
+    },
+    {
+      "order": 2,
+      "cellBody": "Solitary nucleus neuron",
+      "synapse": "VPM thalamus (parvocellular) via the central tegmental tract, mostly ipsilateral"
+    },
+    {
+      "order": 3,
+      "cellBody": "VPM neuron",
+      "synapse": "gustatory cortex in the frontal operculum and anterior insula"
+    }
   ],
-  "note": "Taste receptor cells; first-order neurons in the geniculate (VII), petrosal (IX) and nodose (X) ganglia."
- },
- "neuronChain": [
-  {
-   "order": 1,
-   "cellBody": "Ganglion cell of VII, IX or X",
-   "synapse": "rostral (gustatory) nucleus of the solitary tract"
-  },
-  {
-   "order": 2,
-   "cellBody": "Solitary nucleus neuron",
-   "synapse": "VPM thalamus (parvocellular) via the central tegmental tract, mostly ipsilateral"
-  },
-  {
-   "order": 3,
-   "cellBody": "VPM neuron",
-   "synapse": "gustatory cortex in the frontal operculum and anterior insula"
-  }
- ],
- "decussation": null,
- "waypoints": [
-  {
-   "order": 1,
-   "structureId": "ganglion-geniculate",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "chorda tympani for the anterior tongue"
-  },
-  {
-   "order": 2,
-   "structureId": "cn-09-glossopharyngeal",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "posterior tongue"
-  },
-  {
-   "order": 3,
-   "structureId": "nucleus-solitarius",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "rostral gustatory nucleus in the medulla"
-  },
-  {
-   "order": 4,
-   "structureId": "level-pons-rostral",
-   "meshId": "brainstem",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "central tegmental tract"
-  },
-  {
-   "order": 5,
-   "structureId": "thalamus-vpm",
-   "meshId": "thalamus-ventral-posterior-ventrolateral-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "parvocellular VPM"
-  },
-  {
-   "order": 6,
-   "structureId": "insula",
-   "meshId": "insula-l",
-   "sideRelativeToOrigin": "ipsilateral",
-   "note": "anterior insula and frontal operculum: primary gustatory cortex"
-  }
- ],
- "termination": "Primary gustatory cortex in the anterior insula and frontal operculum; orbitofrontal cortex for flavour; hypothalamus and amygdala for appetite and aversion.",
- "meshIds": [
-  "brainstem",
-  "insula-l",
-  "insula-r"
- ],
- "lesionEffectsByLevel": [
-  {
-   "level": "Chorda tympani / facial nerve proximal to the chorda",
-   "effects": "Loss of taste on the anterior two-thirds of the ipsilateral tongue (with facial palsy in Bell palsy)",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Glossopharyngeal nerve",
-   "effects": "Loss of taste on the posterior tongue, rarely noticed",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Solitary nucleus (lateral medulla)",
-   "effects": "Ipsilateral ageusia with the other lateral medullary signs",
-   "side": "ipsilateral"
-  },
-  {
-   "level": "Thalamus or insular cortex",
-   "effects": "Contralateral or bilateral taste disturbance, usually subtle",
-   "side": "n/a"
-  },
-  {
-   "level": "Middle ear surgery or lingual nerve injury",
-   "effects": "Metallic taste or loss on the anterior tongue",
-   "side": "ipsilateral"
-  }
- ],
- "clinical": {
-  "pearls": [
-   "Most 'loss of taste' is loss of smell: test both",
-   "Taste loss with a facial palsy puts the lesion above the chorda tympani, in the mastoid segment or higher"
+  "decussation": null,
+  "waypoints": [
+    {
+      "order": 1,
+      "structureId": "ganglion-geniculate",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "chorda tympani for the anterior tongue"
+    },
+    {
+      "order": 2,
+      "structureId": "cn-09-glossopharyngeal",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "posterior tongue"
+    },
+    {
+      "order": 3,
+      "structureId": "nucleus-solitarius",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "rostral gustatory nucleus in the medulla"
+    },
+    {
+      "order": 4,
+      "structureId": "level-pons-rostral",
+      "meshId": "brainstem",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "central tegmental tract"
+    },
+    {
+      "order": 5,
+      "structureId": "thalamus-vpm",
+      "meshId": "thalamus-ventral-posterior-ventrolateral-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "parvocellular VPM"
+    },
+    {
+      "order": 6,
+      "structureId": "insula",
+      "meshId": "insula-l",
+      "sideRelativeToOrigin": "ipsilateral",
+      "note": "anterior insula and frontal operculum: primary gustatory cortex"
+    }
   ],
-  "syndromes": [
-   "syn-facial-palsy-peripheral-vs-central",
-   "syn-wallenberg-lateral-medullary"
-  ]
- },
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    338,
-    338
-   ]
+  "termination": "Primary gustatory cortex in the anterior insula and frontal operculum; orbitofrontal cortex for flavour; hypothalamus and amygdala for appetite and aversion.",
+  "meshIds": [
+    "brainstem",
+    "insula-l",
+    "insula-r"
+  ],
+  "lesionEffectsByLevel": [
+    {
+      "level": "Chorda tympani / facial nerve proximal to the chorda",
+      "effects": "Loss of taste on the anterior two-thirds of the ipsilateral tongue (with facial palsy in Bell palsy)",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Glossopharyngeal nerve",
+      "effects": "Loss of taste on the posterior tongue, rarely noticed",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Solitary nucleus (lateral medulla)",
+      "effects": "Ipsilateral ageusia with the other lateral medullary signs",
+      "side": "ipsilateral"
+    },
+    {
+      "level": "Thalamus or insular cortex",
+      "effects": "Contralateral or bilateral taste disturbance, usually subtle",
+      "side": "n/a"
+    },
+    {
+      "level": "Middle ear surgery or lingual nerve injury",
+      "effects": "Metallic taste or loss on the anterior tongue",
+      "side": "ipsilateral"
+    }
+  ],
+  "clinical": {
+    "pearls": [
+      "Most 'loss of taste' is loss of smell: test both",
+      "Taste loss with a facial palsy puts the lesion above the chorda tympani, in the mastoid segment or higher"
+    ],
+    "syndromes": [
+      "syn-facial-palsy-peripheral-vs-central",
+      "syn-wallenberg-lateral-medullary"
+    ]
   },
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    342,
-    342
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    200,
-    204
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 13,
-   "pages": [
-    120,
-    124
-   ]
-  }
- ],
- "status": "draft"
+  "citations": [
+    {
+      "ref": "sp-neural-taste-pathway",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-nucleus-gustatory",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-taste",
+      "section": "Pathophysiology"
+    }
+  ],
+  "status": "draft"
 }

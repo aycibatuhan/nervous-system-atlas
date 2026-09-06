@@ -1,20 +1,24 @@
 {
- "kind": "glossary",
- "id": "g-monro-kellie-doctrine",
- "term": "Monro-Kellie doctrine",
- "definition": "Within the rigid skull the volumes of brain, blood and CSF are constant, so an added volume (mass, edema, hematoma) must displace CSF or venous blood; when that compensation is exhausted, intracranial pressure rises steeply and herniation follows.",
- "related": [
-  "g-herniation",
-  "g-cushing-response"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    269,
-    274
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-monro-kellie-doctrine",
+  "term": "Monro-Kellie doctrine",
+  "definition": "Within the rigid skull the volumes of brain, blood and CSF are constant, so an added volume (mass, edema, hematoma) must displace CSF or venous blood; when that compensation is exhausted, intracranial pressure rises steeply and herniation follows.",
+  "related": [
+    "g-herniation",
+    "g-cushing-response"
+  ],
+  "citations": [
+    {
+      "ref": "sp-increased-intracranial-pressure",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-intracranial-pressure-monitoring",
+      "section": "Introduction"
+    },
+    {
+      "ref": "sp-cerebral-edema",
+      "section": "Pathophysiology"
+    }
+  ]
 }

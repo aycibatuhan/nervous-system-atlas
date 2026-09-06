@@ -1,154 +1,110 @@
 {
- "kind": "topic",
- "id": "topic-neurotransmitter-systems",
- "name": "Neurotransmitter systems",
- "synonyms": [],
- "category": "neurochemistry",
- "summary": "The brain uses a small number of transmitters in two organizations: the point-to-point synapses of glutamate (excitatory) and GABA and glycine (inhibitory) that carry the signals of every pathway in this atlas, and the diffuse modulatory systems of dopamine, noradrenaline, serotonin, acetylcholine and histamine that arise from small brainstem and basal forebrain nuclei and set the state of the whole brain. Peptides, purines and endocannabinoids modulate both. Clinical neurology is largely the pharmacology of these systems: parkinsonism is dopamine loss, myasthenia is a cholinergic synapse under attack, epilepsy is an excess of glutamate over GABA, anticholinergic delirium and serotonin syndrome are drug effects on the modulatory nuclei, and antidepressants, antipsychotics, anesthetics and antiepileptics are all transmitter drugs.",
- "sections": [
-  {
-   "heading": "Fast transmission: glutamate, GABA and glycine",
-   "body": "Glutamate is the transmitter of the corticospinal tract, the thalamocortical and corticocortical projections, the sensory afferents and the cerebellar mossy and climbing fibers; it acts through AMPA receptors for fast depolarization and NMDA receptors that require depolarization and glutamate together and let calcium in, the coincidence detector of synaptic plasticity and the mediator of excitotoxic death in stroke, status epilepticus and hypoglycemia. GABA is released by cortical interneurons, striatal and pallidal projection neurons, Purkinje cells and the reticular thalamic nucleus, opening chloride channels (GABA-A, the site of benzodiazepines, barbiturates and most anesthetics) or potassium channels (GABA-B, the site of baclofen). Glycine is the inhibitory transmitter of the spinal cord and brainstem; its blockade by strychnine or tetanus toxin and its receptor mutations in hyperekplexia produce rigidity and exaggerated startle. Seizures are a failure of the balance between these systems."
+  "kind": "topic",
+  "id": "topic-neurotransmitter-systems",
+  "name": "Neurotransmitter systems",
+  "synonyms": [],
+  "category": "neurochemistry",
+  "summary": "The brain uses a small number of transmitters in two organizations: the point-to-point synapses of glutamate (excitatory) and GABA and glycine (inhibitory) that carry the signals of every pathway in this atlas, and the diffuse modulatory systems of dopamine, noradrenaline, serotonin, acetylcholine and histamine that arise from small brainstem and basal forebrain nuclei and set the state of the whole brain. Peptides, purines and endocannabinoids modulate both. Clinical neurology is largely the pharmacology of these systems: parkinsonism is dopamine loss, myasthenia is a cholinergic synapse under attack, epilepsy is an excess of glutamate over GABA, anticholinergic delirium and serotonin syndrome are drug effects on the modulatory nuclei, and antidepressants, antipsychotics, anesthetics and antiepileptics are all transmitter drugs.",
+  "sections": [
+    {
+      "heading": "Fast transmission: glutamate, GABA and glycine",
+      "body": "Glutamate is the transmitter of the corticospinal tract, the thalamocortical and corticocortical projections, the sensory afferents and the cerebellar mossy and climbing fibers; it acts through AMPA receptors for fast depolarization and NMDA receptors that require depolarization and glutamate together and let calcium in, the coincidence detector of synaptic plasticity and the mediator of excitotoxic death in stroke, status epilepticus and hypoglycemia. GABA is released by cortical interneurons, striatal and pallidal projection neurons, Purkinje cells and the reticular thalamic nucleus, opening chloride channels (GABA-A, the site of benzodiazepines, barbiturates and most anesthetics) or potassium channels (GABA-B, the site of baclofen). Glycine is the inhibitory transmitter of the spinal cord and brainstem; its blockade by strychnine or tetanus toxin and its receptor mutations in hyperekplexia produce rigidity and exaggerated startle. Seizures are a failure of the balance between these systems."
+    },
+    {
+      "heading": "Dopamine and noradrenaline",
+      "body": "Dopamine neurons of the substantia nigra pars compacta project to the striatum (nigrostriatal), and those of the ventral tegmental area to the accumbens, amygdala and prefrontal cortex (mesolimbic and mesocortical); the tuberoinfundibular neurons of the hypothalamus inhibit prolactin. Loss of the nigrostriatal system produces parkinsonism, excess mesolimbic activity produces psychosis and addiction, and dopamine antagonists produce parkinsonism, dystonia, akathisia, tardive dyskinesia and hyperprolactinemia, while agonists produce hallucinations and impulse control disorders. Noradrenaline arises almost entirely from the locus coeruleus and drives arousal, attention, the stress response and the descending inhibition of pain; its loss contributes to the sleep and autonomic symptoms of Parkinson disease, and drugs that raise it (stimulants, some antidepressants) improve attention and raise blood pressure. Peripheral noradrenaline is the sympathetic transmitter, and dopamine-beta-hydroxylase deficiency abolishes it."
+    },
+    {
+      "heading": "Serotonin, acetylcholine and histamine",
+      "body": "Serotonin from the raphe nuclei modulates mood, anxiety, appetite, sleep, pain and the trigeminovascular system, which is why triptans and reuptake inhibitors act where they do and why combining serotonergic drugs produces the clonus, hyperthermia and agitation of serotonin syndrome. Acetylcholine is the transmitter of motor neurons at the neuromuscular junction (nicotinic receptors, the target of myasthenia antibodies, curare and botulinum toxin), of all preganglionic and parasympathetic postganglionic autonomic neurons (nicotinic and muscarinic), of the basal forebrain projection to the cortex and hippocampus that sustains attention and memory (lost in Alzheimer and Lewy body disease), and of the pedunculopontine and striatal interneuron systems; anticholinergic drugs cause delirium, and cholinesterase inhibitors treat both myasthenia and dementia. Histamine from the tuberomammillary nucleus promotes wakefulness, the reason sedating antihistamines sedate."
+    },
+    {
+      "heading": "Transmitter disorders at the bedside",
+      "body": "A transmitter system can be recognized by its clinical signature: excess dopamine gives psychosis and chorea, deficiency gives parkinsonism; excess cholinergic activity gives salivation, lacrimation, urination, diarrhea, bronchospasm and fasciculations (organophosphates), deficiency gives dry mouth, dilated pupils, urinary retention and delirium; excess serotonin gives clonus and hyperthermia; loss of GABA gives seizures and the withdrawal syndrome of alcohol and benzodiazepines; and NMDA receptor antibodies give psychosis, seizures, dyskinesia and autonomic instability in anti-NMDA receptor encephalitis. Neuromuscular junction disorders divide by the synapse: presynaptic (Lambert-Eaton, botulism) versus postsynaptic (myasthenia gravis). Drug histories should be read as a list of transmitter manipulations."
+    }
+  ],
+  "keyPoints": [
+    "Glutamate and GABA carry the signal; the monoamines and acetylcholine set the state",
+    "Parkinsonism is dopamine loss, psychosis is dopamine excess, and the same drugs move patients between the two",
+    "Anticholinergic delirium, serotonin syndrome and neuroleptic malignant syndrome are transmitter emergencies that mimic infection",
+    "The neuromuscular junction is the most accessible synapse: presynaptic calcium channels (Lambert-Eaton), vesicle release (botulism), postsynaptic receptors (myasthenia)",
+    "NMDA receptors couple depolarization to calcium entry: plasticity when brief, cell death when prolonged"
+  ],
+  "meshIds": [
+    "substantia-nigra-pars-compacta-l",
+    "substantia-nigra-pars-compacta-r",
+    "ventral-tegmental-area-l",
+    "ventral-tegmental-area-r",
+    "raphe-dorsal",
+    "nucleus-basalis-meynert-l",
+    "nucleus-basalis-meynert-r"
+  ],
+  "related": {
+    "structureIds": [
+      "substantia-nigra-pars-compacta",
+      "ventral-tegmental-area",
+      "raphe-dorsal",
+      "locus-coeruleus",
+      "nucleus-basalis-meynert",
+      "hypothalamus-tuberomammillary",
+      "neuromuscular-junction"
+    ],
+    "pathwayIds": [
+      "pathway-basal-ganglia-loops"
+    ],
+    "syndromeIds": [
+      "syn-parkinsonism",
+      "syn-myasthenia-gravis",
+      "syn-lambert-eaton",
+      "syn-huntington-chorea"
+    ],
+    "topicIds": [
+      "topic-movement-disorder-circuits",
+      "topic-sleep-eeg-basics",
+      "topic-neuromuscular-patterns"
+    ]
   },
-  {
-   "heading": "Dopamine and noradrenaline",
-   "body": "Dopamine neurons of the substantia nigra pars compacta project to the striatum (nigrostriatal), and those of the ventral tegmental area to the accumbens, amygdala and prefrontal cortex (mesolimbic and mesocortical); the tuberoinfundibular neurons of the hypothalamus inhibit prolactin. Loss of the nigrostriatal system produces parkinsonism, excess mesolimbic activity produces psychosis and addiction, and dopamine antagonists produce parkinsonism, dystonia, akathisia, tardive dyskinesia and hyperprolactinemia, while agonists produce hallucinations and impulse control disorders. Noradrenaline arises almost entirely from the locus coeruleus and drives arousal, attention, the stress response and the descending inhibition of pain; its loss contributes to the sleep and autonomic symptoms of Parkinson disease, and drugs that raise it (stimulants, some antidepressants) improve attention and raise blood pressure. Peripheral noradrenaline is the sympathetic transmitter, and dopamine-beta-hydroxylase deficiency abolishes it."
-  },
-  {
-   "heading": "Serotonin, acetylcholine and histamine",
-   "body": "Serotonin from the raphe nuclei modulates mood, anxiety, appetite, sleep, pain and the trigeminovascular system, which is why triptans and reuptake inhibitors act where they do and why combining serotonergic drugs produces the clonus, hyperthermia and agitation of serotonin syndrome. Acetylcholine is the transmitter of motor neurons at the neuromuscular junction (nicotinic receptors, the target of myasthenia antibodies, curare and botulinum toxin), of all preganglionic and parasympathetic postganglionic autonomic neurons (nicotinic and muscarinic), of the basal forebrain projection to the cortex and hippocampus that sustains attention and memory (lost in Alzheimer and Lewy body disease), and of the pedunculopontine and striatal interneuron systems; anticholinergic drugs cause delirium, and cholinesterase inhibitors treat both myasthenia and dementia. Histamine from the tuberomammillary nucleus promotes wakefulness, the reason sedating antihistamines sedate."
-  },
-  {
-   "heading": "Transmitter disorders at the bedside",
-   "body": "A transmitter system can be recognized by its clinical signature: excess dopamine gives psychosis and chorea, deficiency gives parkinsonism; excess cholinergic activity gives salivation, lacrimation, urination, diarrhea, bronchospasm and fasciculations (organophosphates), deficiency gives dry mouth, dilated pupils, urinary retention and delirium; excess serotonin gives clonus and hyperthermia; loss of GABA gives seizures and the withdrawal syndrome of alcohol and benzodiazepines; and NMDA receptor antibodies give psychosis, seizures, dyskinesia and autonomic instability in anti-NMDA receptor encephalitis. Neuromuscular junction disorders divide by the synapse: presynaptic (Lambert-Eaton, botulism) versus postsynaptic (myasthenia gravis). Drug histories should be read as a list of transmitter manipulations."
+  "pearls": [
+    "Read every drug list as a transmitter list before blaming the brain",
+    "Cholinesterase inhibitors help attention more than memory because the nucleus basalis dies first",
+    "A patient on two serotonergic drugs with clonus and fever has serotonin syndrome, not sepsis, until proved otherwise"
+  ],
+  "pitfalls": [
+    "A normal dopamine transporter scan in a parkinsonian patient means the problem is downstream (drug-induced, vascular or functional), not in the nigra"
+  ],
+  "citations": [
+    {
+      "ref": "sp-neurotransmitters",
+      "section": "Pathophysiology"
+    }
+  ],
+  "tags": [
+    "neurotransmitters",
+    "pharmacology",
+    "synapse"
+  ],
+  "status": "draft",
+  "imaging": {
+    "normalAppearance": "Transmitter systems are imaged functionally: dopamine transporter SPECT for the nigrostriatal pathway, neuromelanin MRI for the nigra and locus coeruleus, PET ligands for cholinergic and serotonergic terminals.",
+    "pathology": [
+      {
+        "pathology": "Nigrostriatal dopamine loss",
+        "modality": "SPECT",
+        "finding": "Reduced dopamine transporter uptake in the putamen, asymmetric and posterior-predominant, in Parkinson disease and Lewy body dementia; normal in essential tremor and drug-induced parkinsonism.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Locus coeruleus and nigra degeneration",
+        "modality": "MRI",
+        "finding": "Loss of neuromelanin signal in the locus coeruleus and substantia nigra pars compacta on neuromelanin-sensitive T1 images.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Anti-NMDA receptor encephalitis",
+        "modality": "MRI",
+        "finding": "Often normal or with subtle medial temporal FLAIR change despite severe psychiatric, seizure and autonomic disturbance; CSF antibodies make the diagnosis.",
+        "sequence": "FLAIR"
+      }
+    ]
   }
- ],
- "keyPoints": [
-  "Glutamate and GABA carry the signal; the monoamines and acetylcholine set the state",
-  "Parkinsonism is dopamine loss, psychosis is dopamine excess, and the same drugs move patients between the two",
-  "Anticholinergic delirium, serotonin syndrome and neuroleptic malignant syndrome are transmitter emergencies that mimic infection",
-  "The neuromuscular junction is the most accessible synapse: presynaptic calcium channels (Lambert-Eaton), vesicle release (botulism), postsynaptic receptors (myasthenia)",
-  "NMDA receptors couple depolarization to calcium entry: plasticity when brief, cell death when prolonged"
- ],
- "meshIds": [
-  "substantia-nigra-pars-compacta-l",
-  "substantia-nigra-pars-compacta-r",
-  "ventral-tegmental-area-l",
-  "ventral-tegmental-area-r",
-  "raphe-dorsal",
-  "nucleus-basalis-meynert-l",
-  "nucleus-basalis-meynert-r"
- ],
- "related": {
-  "structureIds": [
-   "substantia-nigra-pars-compacta",
-   "ventral-tegmental-area",
-   "raphe-dorsal",
-   "locus-coeruleus",
-   "nucleus-basalis-meynert",
-   "hypothalamus-tuberomammillary",
-   "neuromuscular-junction"
-  ],
-  "pathwayIds": [
-   "pathway-basal-ganglia-loops"
-  ],
-  "syndromeIds": [
-   "syn-parkinsonism",
-   "syn-myasthenia-gravis",
-   "syn-lambert-eaton",
-   "syn-huntington-chorea"
-  ],
-  "topicIds": [
-   "topic-movement-disorder-circuits",
-   "topic-sleep-eeg-basics",
-   "topic-neuromuscular-patterns"
-  ]
- },
- "pearls": [
-  "Read every drug list as a transmitter list before blaming the brain",
-  "Cholinesterase inhibitors help attention more than memory because the nucleus basalis dies first",
-  "A patient on two serotonergic drugs with clonus and fever has serotonin syndrome, not sepsis, until proved otherwise"
- ],
- "pitfalls": [
-  "A normal dopamine transporter scan in a parkinsonian patient means the problem is downstream (drug-induced, vascular or functional), not in the nigra"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 2,
-   "pages": [
-    33,
-    70
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 3,
-   "pages": [
-    71,
-    130
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    309,
-    322
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    241,
-    250
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 29,
-   "pages": [
-    293,
-    298
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 22,
-   "pages": [
-    233,
-    236
-   ]
-  }
- ],
- "tags": [
-  "neurotransmitters",
-  "pharmacology",
-  "synapse"
- ],
- "status": "draft",
- "imaging": {
-  "normalAppearance": "Transmitter systems are imaged functionally: dopamine transporter SPECT for the nigrostriatal pathway, neuromelanin MRI for the nigra and locus coeruleus, PET ligands for cholinergic and serotonergic terminals.",
-  "pathology": [
-   {
-    "pathology": "Nigrostriatal dopamine loss",
-    "modality": "SPECT",
-    "finding": "Reduced dopamine transporter uptake in the putamen, asymmetric and posterior-predominant, in Parkinson disease and Lewy body dementia; normal in essential tremor and drug-induced parkinsonism.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Locus coeruleus and nigra degeneration",
-    "modality": "MRI",
-    "finding": "Loss of neuromelanin signal in the locus coeruleus and substantia nigra pars compacta on neuromelanin-sensitive T1 images.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Anti-NMDA receptor encephalitis",
-    "modality": "MRI",
-    "finding": "Often normal or with subtle medial temporal FLAIR change despite severe psychiatric, seizure and autonomic disturbance; CSF antibodies make the diagnosis.",
-    "sequence": "FLAIR"
-   }
-  ]
- }
 }

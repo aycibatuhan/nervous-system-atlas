@@ -1,19 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-trigeminal-autonomic-cephalalgia",
- "term": "Trigeminal autonomic cephalalgia",
- "definition": "A group of strictly unilateral orbital headaches with ipsilateral lacrimation, nasal congestion, ptosis and miosis from parasympathetic activation and sympathetic deficit: cluster headache, paroxysmal hemicrania, SUNCT and hemicrania continua, distinguished by attack duration and treatment response.",
- "related": [
-  "g-trigeminocervical-complex"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 26,
-   "pages": [
-    275,
-    280
-   ]
-  }
- ]
+  "kind": "glossary",
+  "id": "g-trigeminal-autonomic-cephalalgia",
+  "term": "Trigeminal autonomic cephalalgia",
+  "definition": "A group of strictly unilateral orbital headaches with ipsilateral lacrimation, nasal congestion, ptosis and miosis from parasympathetic activation and sympathetic deficit: cluster headache, paroxysmal hemicrania, SUNCT and hemicrania continua, distinguished by attack duration and treatment response.",
+  "related": [
+    "g-trigeminocervical-complex"
+  ],
+  "citations": [
+    {
+      "ref": "sp-cluster-headache",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-chronic-paroxysmal-hemicrania",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-spinal-trigeminal-nucleus",
+      "section": "Structure and Function"
+    }
+  ]
 }

@@ -1,171 +1,151 @@
 {
- "kind": "structure",
- "id": "level-medulla-pyramidal-decussation",
- "name": "Medulla: level of the pyramidal decussation",
- "synonyms": [],
- "system": "brainstem",
- "meshIds": [
-  "brainstem"
- ],
- "summary": "The lowest transverse section of the brainstem, at the junction with the spinal cord, is dominated by the great motor decussation: most corticospinal fibers of each pyramid cross here to form the lateral corticospinal tract of the opposite side. The gray matter still looks spinal, with anterior and posterior horns, but the posterior columns are ending in the gracile and cuneate nuclei and the spinal trigeminal nucleus has replaced the substantia gelatinosa. A lesion here can produce the paradox of an arm weaker than the leg on opposite sides, because arm fibers cross higher than leg fibers.",
- "anatomy": {
-  "location": "Just above the foramen magnum, from the first cervical root down to the point where the pyramids begin to bulge, roughly 35–45 mm below the anterior commissure in MNI coordinates (z ≈ −55 to −60).",
-  "subdivisions": [
-   {
-    "name": "Pyramidal decussation",
-    "note": "corticospinal fibers crossing obliquely through the anterior median fissure into the contralateral lateral funiculus"
-   },
-   {
-    "name": "Fasciculus gracilis and cuneatus",
-    "note": "still present, capped by the beginnings of their nuclei"
-   },
-   {
-    "name": "Spinal trigeminal nucleus and tract",
-    "note": "lateral to the posterior horn, continuous with the substantia gelatinosa"
-   },
-   {
-    "name": "Spinothalamic tracts",
-    "note": "anterolateral, unchanged from the cord"
-   },
-   {
-    "name": "Anterior horn cells",
-    "note": "for the first cervical segment and the spinal accessory nucleus"
-   },
-   {
-    "name": "Central canal",
-    "note": "still central; it opens into the fourth ventricle at higher levels"
-   }
-  ]
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Transition of the cord into the brainstem; the site where upper motor neuron control switches sides, which explains why lesions above this point give contralateral weakness and lesions below give ipsilateral weakness.",
- "bloodSupply": {
-  "arteries": [
-   "artery-vertebral",
-   "anterior-spinal-artery",
-   "posterior-spinal-arteries"
+  "kind": "structure",
+  "id": "level-medulla-pyramidal-decussation",
+  "name": "Medulla: level of the pyramidal decussation",
+  "synonyms": [],
+  "system": "brainstem",
+  "meshIds": [
+    "brainstem"
   ],
-  "territories": [
-   "territory-pica-lateral-medulla",
-   "territory-basilar-paramedian"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 0,
-     "y": -44,
-     "z": -56
+  "summary": "The lowest transverse section of the brainstem, at the junction with the spinal cord, is dominated by the great motor decussation: most corticospinal fibers of each pyramid cross here to form the lateral corticospinal tract of the opposite side. The gray matter still looks spinal, with anterior and posterior horns, but the posterior columns are ending in the gracile and cuneate nuclei and the spinal trigeminal nucleus has replaced the substantia gelatinosa. A lesion here can produce the paradox of an arm weaker than the leg on opposite sides, because arm fibers cross higher than leg fibers.",
+  "anatomy": {
+    "location": "Just above the foramen magnum, from the first cervical root down to the point where the pyramids begin to bulge, roughly 35–45 mm below the anterior commissure in MNI coordinates (z ≈ −55 to −60).",
+    "subdivisions": [
+      {
+        "name": "Pyramidal decussation",
+        "note": "corticospinal fibers crossing obliquely through the anterior median fissure into the contralateral lateral funiculus"
+      },
+      {
+        "name": "Fasciculus gracilis and cuneatus",
+        "note": "still present, capped by the beginnings of their nuclei"
+      },
+      {
+        "name": "Spinal trigeminal nucleus and tract",
+        "note": "lateral to the posterior horn, continuous with the substantia gelatinosa"
+      },
+      {
+        "name": "Spinothalamic tracts",
+        "note": "anterolateral, unchanged from the cord"
+      },
+      {
+        "name": "Anterior horn cells",
+        "note": "for the first cervical segment and the spinal accessory nucleus"
+      },
+      {
+        "name": "Central canal",
+        "note": "still central; it opens into the fourth ventricle at higher levels"
+      }
+    ]
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Transition of the cord into the brainstem; the site where upper motor neuron control switches sides, which explains why lesions above this point give contralateral weakness and lesions below give ipsilateral weakness.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-vertebral",
+      "anterior-spinal-artery",
+      "posterior-spinal-arteries"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla",
+      "territory-basilar-paramedian"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 0,
+          "y": -44,
+          "z": -56
+        },
+        "label": "cervicomedullary junction: pyramids narrowing, decussating fibers crossing the midline"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 0,
+          "y": -45,
+          "z": -55
+        },
+        "label": "junction of medulla and cord above the foramen magnum"
+      }
+    ],
+    "normalAppearance": "On axial T2 the section is small and nearly round, with the pyramids as two anterior bulges and the posterior surface flat; gray matter is barely visible at 1 mm resolution. On sagittal images the level lies at the anterior lip of the foramen magnum.",
+    "pathology": [
+      {
+        "pathology": "Cervicomedullary compression (Chiari, basilar invagination, odontoid pannus)",
+        "modality": "MRI",
+        "finding": "Indentation or kinking of the cervicomedullary junction by descended tonsils, the dens or rheumatoid pannus, sometimes with T2 signal change in the cord; cruciate paralysis or spastic quadriparesis.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Cervicomedullary infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion in the ventral cervicomedullary junction from anterior spinal or vertebral artery disease.",
+        "sequence": "DWI"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T1/T2 and axial T2 through the craniocervical junction; flexion–extension CT for instability"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Cruciate paralysis: arm weakness with relatively spared legs",
+        "side": "bilateral",
+        "mechanism": "Arm fibers decussate more rostrally than leg fibers, so a lesion in the upper part of the decussation catches the arm fibers of both sides"
+      },
+      {
+        "deficit": "Hemiplegia cruciata: weakness of one arm and the opposite leg",
+        "side": "n/a",
+        "mechanism": "A lesion at the level where arm fibers have crossed but leg fibers have not"
+      },
+      {
+        "deficit": "Ipsilateral hemiplegia below the level",
+        "side": "ipsilateral",
+        "mechanism": "Lesion caudal to the decussation after the fibers have crossed"
+      }
+    ],
+    "examination": [
+      "Compare proximal arm and leg power on both sides",
+      "Look for a Lhermitte sign and neck pain",
+      "Check lower cranial nerves to distinguish medullary from high cervical lesions"
+    ],
+    "syndromes": [
+      "syn-chiari-tonsillar-ectopia"
+    ],
+    "pearls": [
+      "Arm-predominant quadriparesis after a craniocervical injury points to the pyramidal decussation",
+      "Below this level upper motor neuron lesions are ipsilateral; above it, contralateral"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-pyramidal-tract",
+      "section": "Structure and Function"
     },
-    "label": "cervicomedullary junction: pyramids narrowing, decussating fibers crossing the midline"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 0,
-     "y": -45,
-     "z": -55
+    {
+      "ref": "sp-lateral-corticospinal-tract",
+      "section": "Structure and Function"
     },
-    "label": "junction of medulla and cord above the foramen magnum"
-   }
+    {
+      "ref": "sp-medulla-oblongata",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On axial T2 the section is small and nearly round, with the pyramids as two anterior bulges and the posterior surface flat; gray matter is barely visible at 1 mm resolution. On sagittal images the level lies at the anterior lip of the foramen magnum.",
-  "pathology": [
-   {
-    "pathology": "Cervicomedullary compression (Chiari, basilar invagination, odontoid pannus)",
-    "modality": "MRI",
-    "finding": "Indentation or kinking of the cervicomedullary junction by descended tonsils, the dens or rheumatoid pannus, sometimes with T2 signal change in the cord; cruciate paralysis or spastic quadriparesis.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Cervicomedullary infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion in the ventral cervicomedullary junction from anterior spinal or vertebral artery disease.",
-    "sequence": "DWI"
-   }
+  "tags": [
+    "brainstem",
+    "cross-section"
   ],
-  "sequenceOfChoice": "Sagittal T1/T2 and axial T2 through the craniocervical junction; flexion–extension CT for instability"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Cruciate paralysis: arm weakness with relatively spared legs",
-    "side": "bilateral",
-    "mechanism": "Arm fibers decussate more rostrally than leg fibers, so a lesion in the upper part of the decussation catches the arm fibers of both sides"
-   },
-   {
-    "deficit": "Hemiplegia cruciata: weakness of one arm and the opposite leg",
-    "side": "n/a",
-    "mechanism": "A lesion at the level where arm fibers have crossed but leg fibers have not"
-   },
-   {
-    "deficit": "Ipsilateral hemiplegia below the level",
-    "side": "ipsilateral",
-    "mechanism": "Lesion caudal to the decussation after the fibers have crossed"
-   }
-  ],
-  "examination": [
-   "Compare proximal arm and leg power on both sides",
-   "Look for a Lhermitte sign and neck pain",
-   "Check lower cranial nerves to distinguish medullary from high cervical lesions"
-  ],
-  "syndromes": [
-   "syn-chiari-tonsillar-ectopia"
-  ],
-  "pearls": [
-   "Arm-predominant quadriparesis after a craniocervical injury points to the pyramidal decussation",
-   "Below this level upper motor neuron lesions are ipsilateral; above it, contralateral"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    196,
-    199
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 4,
-   "pages": [
-    152,
-    156
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 9,
-   "pages": [
-    75,
-    77
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 4,
-   "pages": [
-    33,
-    35
-   ]
+  "status": "draft",
+  "subsystem": "levels",
+  "level": {
+    "region": "medulla",
+    "sub": "medulla-pyramidal-decussation"
   }
- ],
- "tags": [
-  "brainstem",
-  "cross-section"
- ],
- "status": "draft",
- "subsystem": "levels",
- "level": {
-  "region": "medulla",
-  "sub": "medulla-pyramidal-decussation"
- }
 }

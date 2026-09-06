@@ -365,3 +365,32 @@ def atlases() -> list[AtlasSpec]:
 
 ENVELOPE = MeshSpec("brain-envelope", "Brain surface (mask)", "envelope", visible=True, budget="huge", colour="#DCBFAE", opacity=0.12)
 ARTERIES_MRA = MeshSpec("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)", "arteries", subsystem="mra", visible=True, budget="vessel", colour="#C42B2B")
+
+
+# ================================================================ VENAT venous atlas (Huck et al. 2019)
+# Meshes cut out of the thresholded venous partial-volume map by atlas_pipeline.venat. The whole
+# iso-surface is the venous counterpart of ARTERIES_MRA; the named deep veins are region cuts of the
+# same voxel mask. Venous palette = the "venous" system colour (#2F4C8F) with small deliberate shifts
+# so the deep veins stay tellable from the dural sinus meshes that come from Z-Anatomy.
+# NOTE: the mesh id `sinus-straight` is already used by the Z-Anatomy dural sinus, so the VENAT surface
+# is `sinus-straight-venat` and keeps `sinus-straight` as its content structure id.
+VEINS_VENAT = MeshSpec("veins-venat-atlas", "Cerebral veins and sinuses (VENAT atlas iso-surface)", "venous",
+                       subsystem="venat", visible=True, budget="vessel", colour="#2F4C8F")
+
+
+def venat_entries() -> dict[str, MeshSpec]:
+    """mesh id -> spec for every VENAT-derived mesh (whole iso-surface + named deep veins)."""
+    e: dict[str, MeshSpec] = {VEINS_VENAT.id: VEINS_VENAT}
+    for base, name, colour, budget in (
+        ("vein-internal-cerebral", "Internal cerebral vein", "#33528F", "medium"),
+        ("vein-basal", "Basal vein (of Rosenthal)", "#3A5A9B", "medium"),
+    ):
+        for side, sfx in (("left", "-l"), ("right", "-r")):
+            e[base + sfx] = MeshSpec(id=base + sfx, name=f"{name} ({'L' if side == 'left' else 'R'})", system="venous",
+                                     subsystem="deep veins", side=side, structure_id=base, budget=budget, colour=colour)
+    e["vein-great-cerebral"] = MeshSpec("vein-great-cerebral", "Great cerebral vein (of Galen)", "venous",
+                                        subsystem="deep veins", side="midline", budget="small", colour="#2F4C8F")
+    e["sinus-straight-venat"] = MeshSpec("sinus-straight-venat", "Straight sinus (VENAT atlas)", "venous",
+                                         subsystem="dural sinuses", side="midline", budget="medium",
+                                         colour="#2A4480", structure_id="sinus-straight")
+    return e

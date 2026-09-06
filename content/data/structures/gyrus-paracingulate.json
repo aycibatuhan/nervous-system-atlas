@@ -1,177 +1,157 @@
 {
- "kind": "structure",
- "id": "gyrus-paracingulate",
- "name": "Paracingulate gyrus",
- "synonyms": [
-  "dorsal anterior cingulate cortex",
-  "area 32"
- ],
- "system": "cerebrum",
- "meshIds": [
-  "gyrus-paracingulate-l",
-  "gyrus-paracingulate-r"
- ],
- "summary": "The paracingulate gyrus is a variable gyrus on the medial frontal surface between the cingulate sulcus and the paracingulate sulcus, present in most left hemispheres and fewer right ones, corresponding to the dorsal anterior cingulate and medial prefrontal cortex of Brodmann areas 32 and part of 24. It belongs to the cingulo-opercular control network that monitors performance, detects errors and conflict, and adjusts effort, and it is the medial frontal region most consistently activated by cognitive tasks. Its asymmetry is a normal variant, but reduced paracingulate folding has been linked to schizophrenia, and damage contributes to apathy and to impaired conflict resolution.",
- "anatomy": {
-  "location": "Medial frontal surface above the anterior cingulate gyrus, between the cingulate sulcus below and the paracingulate sulcus above, running from the level of the genu back toward the supplementary motor area; when the paracingulate sulcus is absent the area is part of the superior frontal gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Anterior and mediodorsal thalamus",
-    "via": "anterior thalamic radiation"
-   },
-   {
-    "from": "Dorsolateral prefrontal cortex",
-    "via": "short association fibers"
-   },
-   {
-    "from": "Amygdala",
-    "via": "cingulum"
-   }
+  "kind": "structure",
+  "id": "gyrus-paracingulate",
+  "name": "Paracingulate gyrus",
+  "synonyms": [
+    "dorsal anterior cingulate cortex",
+    "area 32"
   ],
-  "efferents": [
-   {
-    "to": "Dorsolateral prefrontal cortex and SMA",
-    "via": "cingulum"
-   },
-   {
-    "to": "Anterior insula",
-    "via": "cingulo-opercular fibers"
-   },
-   {
-    "to": "Striatum and brainstem autonomic nuclei",
-    "via": "corticostriatal and descending fibers"
-   }
+  "system": "cerebrum",
+  "meshIds": [
+    "gyrus-paracingulate-l",
+    "gyrus-paracingulate-r"
   ],
-  "pathways": [
-   "pathway-papez-limbic"
-  ]
- },
- "function": "Dorsal anterior cingulate and paracingulate cortex signals when an action conflicts with a goal or produces an error, recruits the dorsolateral prefrontal cortex to increase control, and weighs the effort and reward of a task; it drives the anterior insula in the salience network and contributes to the motivation to act and to the affective response to pain. Its projections to the striatum and the brainstem autonomic centers couple mental effort to heart rate and blood pressure. Bilateral damage with the neighboring anterior cingulate produces apathy and, when extensive, akinetic mutism.",
- "bloodSupply": {
-  "arteries": [
-   "artery-aca"
+  "summary": "The paracingulate gyrus is a variable gyrus on the medial frontal surface between the cingulate sulcus and the paracingulate sulcus, present in most left hemispheres and fewer right ones, corresponding to the dorsal anterior cingulate and medial prefrontal cortex of Brodmann areas 32 and part of 24. It belongs to the cingulo-opercular control network that monitors performance, detects errors and conflict, and adjusts effort, and it is the medial frontal region most consistently activated by cognitive tasks. Its asymmetry is a normal variant, but reduced paracingulate folding has been linked to schizophrenia, and damage contributes to apathy and to impaired conflict resolution.",
+  "anatomy": {
+    "location": "Medial frontal surface above the anterior cingulate gyrus, between the cingulate sulcus below and the paracingulate sulcus above, running from the level of the genu back toward the supplementary motor area; when the paracingulate sulcus is absent the area is part of the superior frontal gyrus.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Anterior and mediodorsal thalamus",
+        "via": "anterior thalamic radiation"
+      },
+      {
+        "from": "Dorsolateral prefrontal cortex",
+        "via": "short association fibers"
+      },
+      {
+        "from": "Amygdala",
+        "via": "cingulum"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Dorsolateral prefrontal cortex and SMA",
+        "via": "cingulum"
+      },
+      {
+        "to": "Anterior insula",
+        "via": "cingulo-opercular fibers"
+      },
+      {
+        "to": "Striatum and brainstem autonomic nuclei",
+        "via": "corticostriatal and descending fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-papez-limbic"
+    ]
+  },
+  "function": "Dorsal anterior cingulate and paracingulate cortex signals when an action conflicts with a goal or produces an error, recruits the dorsolateral prefrontal cortex to increase control, and weighs the effort and reward of a task; it drives the anterior insula in the salience network and contributes to the motivation to act and to the affective response to pain. Its projections to the striatum and the brainstem autonomic centers couple mental effort to heart rate and blood pressure. Bilateral damage with the neighboring anterior cingulate produces apathy and, when extensive, akinetic mutism.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-aca"
+    ],
+    "territories": [
+      "territory-aca"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "gyrus-paracingulate-l"
+        },
+        "label": "paracingulate gyrus between the cingulate and paracingulate sulci"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "gyrus-paracingulate-r"
+        },
+        "label": "medial frontal cortex above the anterior cingulate"
+      }
+    ],
+    "normalAppearance": "On sagittal images a second sulcus parallel to and above the cingulate sulcus, the paracingulate sulcus, marks this gyrus; it is present on the left in about two-thirds of brains and is a normal asymmetry.",
+    "pathology": [
+      {
+        "pathology": "Anterior cerebral artery infarct",
+        "modality": "MRI",
+        "finding": "Medial frontal restricted diffusion above the genu with apathy, reduced speech and contralateral leg weakness.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Cingulate glioma",
+        "modality": "MRI",
+        "finding": "FLAIR-bright infiltration of the medial frontal cortex crossing to the other side through the corpus callosum in a patient with apathy or seizures.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Anterior cingulate seizures",
+        "modality": "EEG",
+        "finding": "Fearful screaming, complex hypermotor behavior and autonomic change from sleep with a poorly localized frontal EEG.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apathy, reduced motivation and effort",
+        "side": "bilateral",
+        "mechanism": "Loss of the effort-reward evaluation of the dorsal anterior cingulate"
+      },
+      {
+        "deficit": "Impaired error monitoring and conflict resolution",
+        "side": "bilateral",
+        "mechanism": "Loss of the cingulate performance-monitoring signal to the dorsolateral prefrontal cortex"
+      },
+      {
+        "deficit": "Blunted autonomic response to effort and pain",
+        "side": "bilateral",
+        "mechanism": "Interruption of cingulate projections to the insula and brainstem autonomic centers"
+      }
+    ],
+    "examination": [
+      "Stroop and go/no-go tasks for conflict and inhibition",
+      "Ask about initiative and interest; apathy scales help",
+      "Look for accompanying leg weakness or grasp reflex indicating a wider medial frontal lesion"
+    ],
+    "syndromes": [
+      "syn-aca-infarct"
+    ],
+    "pearls": [
+      "A paracingulate sulcus on the left and not the right is a normal asymmetry, not atrophy",
+      "The anterior cingulate is the cortex of effort: lesions make patients indifferent, not weak",
+      "Hypermotor seizures from the anterior cingulate are dramatic and misdiagnosed as parasomnias"
+    ]
+  },
+  "pitfalls": [
+    "Absence of the paracingulate sulcus on one side is common and must not be reported as a malformation"
   ],
-  "territories": [
-   "territory-aca"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "gyrus-paracingulate-l"
+  "citations": [
+    {
+      "ref": "sp-cingulate-cortex",
+      "section": "Structure and Function"
     },
-    "label": "paracingulate gyrus between the cingulate and paracingulate sulci"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "gyrus-paracingulate-r"
+    {
+      "ref": "sp-prefrontal-association-cortex",
+      "section": "Structure and Function"
     },
-    "label": "medial frontal cortex above the anterior cingulate"
-   }
+    {
+      "ref": "sp-limbic-system",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "On sagittal images a second sulcus parallel to and above the cingulate sulcus, the paracingulate sulcus, marks this gyrus; it is present on the left in about two-thirds of brains and is a normal asymmetry.",
-  "pathology": [
-   {
-    "pathology": "Anterior cerebral artery infarct",
-    "modality": "MRI",
-    "finding": "Medial frontal restricted diffusion above the genu with apathy, reduced speech and contralateral leg weakness.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Cingulate glioma",
-    "modality": "MRI",
-    "finding": "FLAIR-bright infiltration of the medial frontal cortex crossing to the other side through the corpus callosum in a patient with apathy or seizures.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Anterior cingulate seizures",
-    "modality": "EEG",
-    "finding": "Fearful screaming, complex hypermotor behavior and autonomic change from sleep with a poorly localized frontal EEG.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apathy, reduced motivation and effort",
-    "side": "bilateral",
-    "mechanism": "Loss of the effort-reward evaluation of the dorsal anterior cingulate"
-   },
-   {
-    "deficit": "Impaired error monitoring and conflict resolution",
-    "side": "bilateral",
-    "mechanism": "Loss of the cingulate performance-monitoring signal to the dorsolateral prefrontal cortex"
-   },
-   {
-    "deficit": "Blunted autonomic response to effort and pain",
-    "side": "bilateral",
-    "mechanism": "Interruption of cingulate projections to the insula and brainstem autonomic centers"
-   }
+  "tags": [
+    "anterior cingulate",
+    "salience network",
+    "area 32"
   ],
-  "examination": [
-   "Stroop and go/no-go tasks for conflict and inhibition",
-   "Ask about initiative and interest; apathy scales help",
-   "Look for accompanying leg weakness or grasp reflex indicating a wider medial frontal lesion"
-  ],
-  "syndromes": [
-   "syn-aca-infarct"
-  ],
-  "pearls": [
-   "A paracingulate sulcus on the left and not the right is a normal asymmetry, not atrophy",
-   "The anterior cingulate is the cortex of effort: lesions make patients indifferent, not weak",
-   "Hypermotor seizures from the anterior cingulate are dramatic and misdiagnosed as parasomnias"
-  ]
- },
- "pitfalls": [
-  "Absence of the paracingulate sulcus on one side is common and must not be reported as a malformation"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    259,
-    259
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 9,
-   "pages": [
-    301,
-    306
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    61,
-    62
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 18,
-   "pages": [
-    168,
-    170
-   ]
-  }
- ],
- "tags": [
-  "anterior cingulate",
-  "salience network",
-  "area 32"
- ],
- "status": "draft",
- "subsystem": "lobe-frontal",
- "parent": "lobe-frontal"
+  "status": "draft",
+  "subsystem": "lobe-frontal",
+  "parent": "lobe-frontal"
 }

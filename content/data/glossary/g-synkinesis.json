@@ -1,10 +1,23 @@
 {
- "kind": "glossary",
- "id": "g-synkinesis",
- "term": "Synkinesis",
- "definition": "Involuntary movement accompanying a voluntary one because regenerating axons have reached the wrong targets, as when the eye closes on smiling after facial nerve recovery; crocodile tears (lacrimation on eating) are the autonomic form.",
- "related": [
-  "g-axonotmesis"
- ],
- "citations": []
+  "kind": "glossary",
+  "id": "g-synkinesis",
+  "term": "Synkinesis",
+  "definition": "Involuntary movement accompanying a voluntary one because regenerating axons have reached the wrong targets, as when the eye closes on smiling after facial nerve recovery; crocodile tears (lacrimation on eating) are the autonomic form.",
+  "related": [
+    "g-axonotmesis"
+  ],
+  "citations": [
+    {
+      "ref": "sp-bell-palsy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-facial-nerve-palsy",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-facial-nerve-anatomy-and-clinical-applications",
+      "section": "Introduction"
+    }
+  ]
 }

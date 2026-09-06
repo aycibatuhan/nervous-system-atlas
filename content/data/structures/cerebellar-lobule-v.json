@@ -1,152 +1,144 @@
 {
- "kind": "structure",
- "id": "cerebellar-lobule-v",
- "name": "Lobule V",
- "synonyms": [
-  "culmen (posterior part)",
-  "anterior quadrangular lobule"
- ],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-v-l",
-  "cerebellar-lobule-v-r"
- ],
- "summary": "Lobule V is the posterior part of the anterior lobe, the culmen of the vermis and its hemispheric extension, ending at the primary fissure that separates the anterior from the posterior lobe. It contains the anterior somatotopic map of the body, with the arm and hand lateral and the leg medial, and it works with the primary motor cortex through the pontine nuclei and the dentate-thalamic projection to time and coordinate limb movements, so its lesions produce limb ataxia and dysmetria of the ipsilateral arm and leg. It is in the superior cerebellar artery territory and it is compressed or infarcted with the rest of the superior cerebellum, and it shows early atrophy in the spinocerebellar ataxias.",
- "anatomy": {
-  "location": "Posterior part of the anterior lobe between lobule IV in front and the primary fissure behind, extending from the vermian culmen laterally into the anterior quadrangular lobule of the hemisphere, beneath the tentorium above the superior cerebellar peduncle.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Motor and somatosensory cortex via the pontine nuclei",
-    "via": "middle cerebellar peduncle"
-   },
-   {
-    "from": "Spinal cord",
-    "via": "spinocerebellar tracts"
-   },
-   {
-    "from": "Inferior olive",
-    "via": "climbing fibers"
-   }
+  "kind": "structure",
+  "id": "cerebellar-lobule-v",
+  "name": "Lobule V",
+  "synonyms": [
+    "culmen (posterior part)",
+    "anterior quadrangular lobule"
   ],
-  "efferents": [
-   {
-    "to": "Interposed and dentate nuclei",
-    "via": "Purkinje axons"
-   },
-   {
-    "to": "Motor cortex via the ventrolateral thalamus (from the nuclei)",
-    "via": "superior cerebellar peduncle"
-   }
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-v-l",
+    "cerebellar-lobule-v-r"
   ],
-  "pathways": [
-   "pathway-cerebellar-circuits"
-  ]
- },
- "function": "Lobule V receives corticopontine input from the motor and somatosensory cortex through the middle cerebellar peduncle and spinocerebellar input from the limbs, and its Purkinje cells project to the interposed nuclei (intermediate zone) and the dentate nucleus (lateral part), which send the corrected motor signal to the motor cortex through the ventrolateral thalamus and to the red nucleus; this loop predicts the sensory consequences of a movement and corrects it in flight, so that reaching is smooth and rhythmic movements keep time. Climbing fibers from the inferior olive signal errors and drive motor learning. Its lateral part is the cerebellar hand area used in fine finger movements.",
- "bloodSupply": {
-  "arteries": [
-   "artery-sca"
-  ],
-  "territories": [
-   "territory-superior-cerebellar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "cerebellar-lobule-v-l"
-    },
-    "label": "lobule V ending at the primary fissure"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "cerebellar-lobule-v-r"
-    },
-    "label": "anterior quadrangular lobule of the hemisphere"
-   }
-  ],
-  "normalAppearance": "The posterior part of the anterior lobe just in front of the deep primary fissure on sagittal images; on axial images through the superior cerebellum it forms the anterior part of the hemisphere beside the vermis.",
-  "pathology": [
-   {
-    "pathology": "Superior cerebellar artery infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the anterior superior cerebellar hemisphere and vermis with ipsilateral limb ataxia and dysarthria.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Spinocerebellar ataxia",
-    "modality": "MRI",
-    "finding": "Diffuse cerebellar and pontine atrophy with widened fissures, the anterior lobe often affected early; brainstem atrophy distinguishes some subtypes.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Cerebellar contusion or hemorrhage",
-    "modality": "CT",
-    "finding": "Superior cerebellar hematoma from hypertension or trauma with acute ataxia, vomiting and risk of upward herniation.",
-    "sequence": "CT non-contrast"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral limb ataxia and dysmetria",
-    "side": "ipsilateral",
-    "mechanism": "Loss of the cerebellar prediction and correction of limb movements"
-   },
-   {
-    "deficit": "Intention tremor and dysdiadochokinesia",
-    "side": "ipsilateral",
-    "mechanism": "Loss of timing signals through the interposed and dentate nuclei"
-   },
-   {
-    "deficit": "Hypotonia",
-    "side": "ipsilateral",
-    "mechanism": "Loss of cerebellar facilitation of tone"
-   }
-  ],
-  "examination": [
-   "Finger-nose and heel-shin testing on each side",
-   "Rapid alternating movements and rebound",
-   "Handwriting and speech for dysmetria of fine movement"
-  ],
-  "syndromes": [
-   "syn-cerebellar-hemispheric",
-   "syn-cerebellar-vermian-midline"
-  ],
-  "pearls": [
-   "Cerebellar signs are ipsilateral because the outflow crosses twice: in the superior cerebellar peduncle and again in the corticospinal tract",
-   "The anterior lobe maps the body twice: once here, once in lobule VIII",
-   "Intention tremor grows as the finger approaches the target; parkinsonian tremor fades"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    229,
-    244
-   ]
+  "summary": "Lobule V is the posterior part of the anterior lobe, the culmen of the vermis and its hemispheric extension, ending at the primary fissure that separates the anterior from the posterior lobe. It contains the anterior somatotopic map of the body, with the arm and hand lateral and the leg medial, and it works with the primary motor cortex through the pontine nuclei and the dentate-thalamic projection to time and coordinate limb movements, so its lesions produce limb ataxia and dysmetria of the ipsilateral arm and leg. It is in the superior cerebellar artery territory and it is compressed or infarcted with the rest of the superior cerebellum, and it shows early atrophy in the spinocerebellar ataxias.",
+  "anatomy": {
+    "location": "Posterior part of the anterior lobe between lobule IV in front and the primary fissure behind, extending from the vermian culmen laterally into the anterior quadrangular lobule of the hemisphere, beneath the tentorium above the superior cerebellar peduncle.",
+    "subdivisions": []
   },
-  {
-   "book": "berkowitz",
-   "chapter": 8,
-   "pages": [
-    67,
-    73
-   ]
-  }
- ],
- "tags": [],
- "status": "draft",
- "subsystem": "lobules",
- "parent": "cerebellar-hemisphere"
+  "connections": {
+    "afferents": [
+      {
+        "from": "Motor and somatosensory cortex via the pontine nuclei",
+        "via": "middle cerebellar peduncle"
+      },
+      {
+        "from": "Spinal cord",
+        "via": "spinocerebellar tracts"
+      },
+      {
+        "from": "Inferior olive",
+        "via": "climbing fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Interposed and dentate nuclei",
+        "via": "Purkinje axons"
+      },
+      {
+        "to": "Motor cortex via the ventrolateral thalamus (from the nuclei)",
+        "via": "superior cerebellar peduncle"
+      }
+    ],
+    "pathways": [
+      "pathway-cerebellar-circuits"
+    ]
+  },
+  "function": "Lobule V receives corticopontine input from the motor and somatosensory cortex through the middle cerebellar peduncle and spinocerebellar input from the limbs, and its Purkinje cells project to the interposed nuclei (intermediate zone) and the dentate nucleus (lateral part), which send the corrected motor signal to the motor cortex through the ventrolateral thalamus and to the red nucleus; this loop predicts the sensory consequences of a movement and corrects it in flight, so that reaching is smooth and rhythmic movements keep time. Climbing fibers from the inferior olive signal errors and drive motor learning. Its lateral part is the cerebellar hand area used in fine finger movements.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-sca"
+    ],
+    "territories": [
+      "territory-superior-cerebellar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "cerebellar-lobule-v-l"
+        },
+        "label": "lobule V ending at the primary fissure"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "cerebellar-lobule-v-r"
+        },
+        "label": "anterior quadrangular lobule of the hemisphere"
+      }
+    ],
+    "normalAppearance": "The posterior part of the anterior lobe just in front of the deep primary fissure on sagittal images; on axial images through the superior cerebellum it forms the anterior part of the hemisphere beside the vermis.",
+    "pathology": [
+      {
+        "pathology": "Superior cerebellar artery infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the anterior superior cerebellar hemisphere and vermis with ipsilateral limb ataxia and dysarthria.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Spinocerebellar ataxia",
+        "modality": "MRI",
+        "finding": "Diffuse cerebellar and pontine atrophy with widened fissures, the anterior lobe often affected early; brainstem atrophy distinguishes some subtypes.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Cerebellar contusion or hemorrhage",
+        "modality": "CT",
+        "finding": "Superior cerebellar hematoma from hypertension or trauma with acute ataxia, vomiting and risk of upward herniation.",
+        "sequence": "CT non-contrast"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral limb ataxia and dysmetria",
+        "side": "ipsilateral",
+        "mechanism": "Loss of the cerebellar prediction and correction of limb movements"
+      },
+      {
+        "deficit": "Intention tremor and dysdiadochokinesia",
+        "side": "ipsilateral",
+        "mechanism": "Loss of timing signals through the interposed and dentate nuclei"
+      },
+      {
+        "deficit": "Hypotonia",
+        "side": "ipsilateral",
+        "mechanism": "Loss of cerebellar facilitation of tone"
+      }
+    ],
+    "examination": [
+      "Finger-nose and heel-shin testing on each side",
+      "Rapid alternating movements and rebound",
+      "Handwriting and speech for dysmetria of fine movement"
+    ],
+    "syndromes": [
+      "syn-cerebellar-hemispheric",
+      "syn-cerebellar-vermian-midline"
+    ],
+    "pearls": [
+      "Cerebellar signs are ipsilateral because the outflow crosses twice: in the superior cerebellar peduncle and again in the corticospinal tract",
+      "The anterior lobe maps the body twice: once here, once in lobule VIII",
+      "Intention tremor grows as the finger approaches the target; parkinsonian tremor fades"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-spinocerebellar-dorsal-tract",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-cerebellar-dysfunction",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [],
+  "status": "draft",
+  "subsystem": "lobules",
+  "parent": "cerebellar-hemisphere"
 }

@@ -2,6 +2,13 @@
 
 Usage: blender/.venv/bin/python blender/export_zanatomy.py [--only id1,id2]
 Writes pipeline/work/zanatomy/objs/<id>[-l|-r].ply and pipeline/work/zanatomy/landmarks.json
+
+Selection entries may restrict the geometry that is taken from each object:
+  zrange_m: [zmin, zmax]  keep only geometry whose centroid lies in that world-z band (Z-Anatomy metres,
+                          +z up). Curve splines are kept or dropped whole (mean z of their control points),
+                          so bevelled tubes keep their round caps; mesh triangles are kept whole (face centroid).
+  splines: [i, j, ...]    keep only these spline indices of a curve object (indices are Blender's spline order).
+Both are per entry and apply to every object listed in it.
 """
 import bpy, bmesh, json, sys, re, glob, pathlib, argparse
 import numpy as np
@@ -23,8 +30,38 @@ MIN_BEVEL = 0.0006  # default 0.6 mm radius for zero-width curves (metres)
 # minimum tube radius per system: cranial nerves 1.0 mm, peripheral/autonomic nerves and roots 1.5 mm
 MIN_BEVEL_BY_SYSTEM = {"cranial-nerves": 0.0010, "peripheral": 0.0015, "autonomic": 0.0015, "spinal-cord": 0.0012}
 
-def world_mesh(o, min_bevel=MIN_BEVEL):
-    """Evaluated world-space triangles of a mesh or curve object -> (verts Nx3, faces Mx3)."""
+def _z(v, M):
+    return (M @ v).z
+
+
+def _subset_curve(o, zrange, splines):
+    """A temporary copy of a curve object holding only the wanted splines (so the bevel caps the cut ends)."""
+    o2 = o.copy(); o2.data = o.data.copy()
+    bpy.context.scene.collection.objects.link(o2)
+    M = o.matrix_world
+    for i, s in reversed(list(enumerate(o2.data.splines))):
+        pts = [p.co.xyz for p in s.points] + [p.co for p in s.bezier_points]
+        keep = True
+        if splines is not None and i not in splines:
+            keep = False
+        if keep and zrange is not None and pts:
+            zc = sum(_z(p, M) for p in pts) / len(pts)
+            keep = zrange[0] <= zc <= zrange[1]
+        if not keep:
+            o2.data.splines.remove(s)
+    return o2
+
+
+def world_mesh(o, min_bevel=MIN_BEVEL, zrange=None, splines=None):
+    """Evaluated world-space triangles of a mesh or curve object -> (verts Nx3, faces Mx3).
+
+    `zrange` (world metres) and `splines` (curve spline indices) restrict what is taken from the object."""
+    tmp = None
+    is_curve = o.type == "CURVE"
+    if is_curve and (zrange is not None or splines is not None):
+        tmp = o = _subset_curve(o, zrange, splines)
+        if len(o.data.splines) == 0:
+            bpy.data.objects.remove(tmp, do_unlink=True); return None, None
     if o.type == "CURVE":
         d = o.data
         if d.bevel_object is None and d.bevel_depth < min_bevel:
@@ -43,6 +80,16 @@ def world_mesh(o, min_bevel=MIN_BEVEL):
     verts = np.array([list(M @ v.co) for v in bm.verts], float)
     faces = np.array([[v.index for v in f.verts] for f in bm.faces], int)
     bm.free(); ev.to_mesh_clear()
+    if tmp is not None:
+        bpy.data.objects.remove(tmp, do_unlink=True)
+    if zrange is not None and not is_curve:
+        c = verts[faces].mean(1)[:, 2]
+        keep = (c >= zrange[0]) & (c <= zrange[1])
+        if not keep.any():
+            return None, None
+        faces = faces[keep]
+        used, faces = np.unique(faces, return_inverse=True)
+        verts, faces = verts[used], faces.reshape(-1, 3)
     return verts, faces
 
 def write_ply(path, verts, faces):
@@ -78,7 +125,7 @@ for e in sel:
     for side, objs in groups.items():
         vs, fs, off = [], [], 0
         for o in objs:
-            v, f = world_mesh(o, MIN_BEVEL_BY_SYSTEM.get(e.get("system"), MIN_BEVEL))
+            v, f = world_mesh(o, MIN_BEVEL_BY_SYSTEM.get(e.get("system"), MIN_BEVEL), zrange=e.get("zrange_m"), splines=set(e["splines"]) if e.get("splines") else None)
             if v is None: print("  [empty]", o.name); continue
             vs.append(v); fs.append(f + off); off += len(v)
         if not vs: continue

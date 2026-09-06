@@ -1,58 +1,66 @@
 {
- "kind": "quiz",
- "id": "qz-34",
- "type": "localize",
- "vignette": "A 66-year-old man wakes unable to read the newspaper, although he can write a note to his wife, which he then cannot read back. He names objects and speaks normally. He has a right homonymous hemianopia.",
- "stem": "Which two structures are damaged together?",
- "options": [
-  {
-   "key": "A",
-   "text": "Left angular gyrus and left arcuate fasciculus"
-  },
-  {
-   "key": "B",
-   "text": "Left calcarine cortex and the splenium of the corpus callosum"
-  },
-  {
-   "key": "C",
-   "text": "Left pars triangularis and left insula"
-  },
-  {
-   "key": "D",
-   "text": "Right calcarine cortex and the genu of the corpus callosum"
-  },
-  {
-   "key": "E",
-   "text": "Left planum temporale and left Heschl's gyrus"
-  }
- ],
- "answer": "B",
- "explanation": "Alexia without agraphia is a disconnection: the left visual cortex is destroyed (right hemianopia) and the splenial fibers that would bring the surviving right visual cortex's information to the left language cortex are cut, so words are seen but cannot be read; writing, driven from the intact language areas, is preserved.",
- "targets": {
-  "structureIds": [
-   "cortex-intracalcarine",
-   "corpus-callosum",
-   "tract-inferior-longitudinal-fasciculus"
+  "kind": "quiz",
+  "id": "qz-34",
+  "type": "localize",
+  "vignette": "A 66-year-old man wakes unable to read the newspaper, although he can write a note to his wife, which he then cannot read back. He names objects and speaks normally. He has a right homonymous hemianopia.",
+  "stem": "Which two structures are damaged together?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Left angular gyrus and left arcuate fasciculus"
+    },
+    {
+      "key": "B",
+      "text": "Left calcarine cortex and the splenium of the corpus callosum"
+    },
+    {
+      "key": "C",
+      "text": "Left pars triangularis and left insula"
+    },
+    {
+      "key": "D",
+      "text": "Right calcarine cortex and the genu of the corpus callosum"
+    },
+    {
+      "key": "E",
+      "text": "Left planum temporale and left Heschl's gyrus"
+    }
   ],
-  "syndromeIds": [
-   "syn-alexia-without-agraphia"
+  "answer": "B",
+  "explanation": "Alexia without agraphia is a disconnection: the left visual cortex is destroyed (right hemianopia) and the splenial fibers that would bring the surviving right visual cortex's information to the left language cortex are cut, so words are seen but cannot be read; writing, driven from the intact language areas, is preserved.",
+  "targets": {
+    "structureIds": [
+      "cortex-intracalcarine",
+      "corpus-callosum",
+      "tract-inferior-longitudinal-fasciculus"
+    ],
+    "syndromeIds": [
+      "syn-alexia-without-agraphia"
+    ],
+    "pathwayIds": []
+  },
+  "highlightOnReveal": [
+    "cortex-intracalcarine-l",
+    "corpus-callosum"
   ],
-  "pathwayIds": []
- },
- "highlightOnReveal": [
-  "cortex-intracalcarine-l",
-  "corpus-callosum"
- ],
- "difficulty": "2",
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    58,
-    60
-   ]
-  }
- ],
- "original": true
+  "difficulty": "2",
+  "citations": [
+    {
+      "ref": "sp-alexia",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-posterior-cerebral-artery-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-ischemic-stroke",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-visual-cortex",
+      "section": "Clinical Significance"
+    }
+  ],
+  "original": true
 }

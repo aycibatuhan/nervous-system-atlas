@@ -1,170 +1,134 @@
 {
- "kind": "structure",
- "id": "cerebellar-tonsil",
- "name": "Cerebellar tonsil",
- "synonyms": [],
- "system": "cerebellum",
- "meshIds": [
-  "cerebellar-lobule-ix-l",
-  "cerebellar-lobule-ix-r"
- ],
- "summary": "The rounded lobules on the inferomedial surface of each hemisphere that sit directly above the foramen magnum on either side of the medulla. They matter almost entirely because of where they are: raised pressure in the posterior fossa pushes them into the foramen magnum (tonsillar herniation), compressing the medulla and blocking CSF flow, and the Chiari I malformation is defined by their congenital descent below the foramen magnum.",
- "anatomy": {
-  "location": "Inferomedial cerebellar hemisphere adjacent to the vallecula, lateral to the uvula and above the foramen magnum, bounded above by the biventral lobule; normally the tonsillar tips lie at or above the plane of the foramen magnum (McRae line).",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Part of the posterior lobe (hemispheric lobule IX); no unique clinical function, but a critical space-occupying landmark at the craniocervical junction.",
- "bloodSupply": {
-  "arteries": [
-   "artery-pica"
+  "kind": "structure",
+  "id": "cerebellar-tonsil",
+  "name": "Cerebellar tonsil",
+  "synonyms": [],
+  "system": "cerebellum",
+  "meshIds": [
+    "cerebellar-lobule-ix-l",
+    "cerebellar-lobule-ix-r"
   ],
-  "territories": [
-   "territory-pica-lateral-medulla"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "x": 8,
-     "y": -50,
-     "z": -45
+  "summary": "The rounded lobules on the inferomedial surface of each hemisphere that sit directly above the foramen magnum on either side of the medulla. They matter almost entirely because of where they are: raised pressure in the posterior fossa pushes them into the foramen magnum (tonsillar herniation), compressing the medulla and blocking CSF flow, and the Chiari I malformation is defined by their congenital descent below the foramen magnum.",
+  "anatomy": {
+    "location": "Inferomedial cerebellar hemisphere adjacent to the vallecula, lateral to the uvula and above the foramen magnum, bounded above by the biventral lobule; normally the tonsillar tips lie at or above the plane of the foramen magnum (McRae line).",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Part of the posterior lobe (hemispheric lobule IX); no unique clinical function, but a critical space-occupying landmark at the craniocervical junction.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-pica"
+    ],
+    "territories": [
+      "territory-pica-lateral-medulla"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "x": 8,
+          "y": -50,
+          "z": -45
+        },
+        "label": "tonsil above the foramen magnum on a parasagittal slice"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 8,
+          "y": -50,
+          "z": -45
+        },
+        "label": "tonsils flanking the medulla"
+      }
+    ],
+    "normalAppearance": "On sagittal T1 the tonsillar tip should not lie more than about 5 mm below the line from the basion to the opisthion; peg-like pointed tonsils with obliteration of the cisterna magna indicate Chiari I. Rounded tonsils forced down acutely with effaced CSF indicate herniation.",
+    "pathology": [
+      {
+        "pathology": "Tonsillar herniation",
+        "modality": "CT",
+        "finding": "Tonsils crowded into the foramen magnum with obliterated basal cisterns and cisterna magna, often with a posterior fossa mass or diffuse swelling; lumbar puncture is contraindicated.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Chiari I malformation",
+        "modality": "MRI",
+        "finding": "Pointed tonsils more than 5 mm below the foramen magnum with a small posterior fossa, often with a cervical syrinx; look for the syrinx on sagittal T2.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Intracranial hypotension",
+        "modality": "MRI",
+        "finding": "Mild tonsillar descent with brainstem sagging, dural enhancement and subdural collections, reversible after treatment.",
+        "sequence": "T1+Gd"
+      }
+    ],
+    "sequenceOfChoice": "Sagittal T1/T2 of the craniocervical junction; CT in the emergency setting"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Neck pain, occipital headache worse with cough or strain",
+        "side": "n/a",
+        "mechanism": "Tonsillar impaction at the foramen magnum (Chiari)"
+      },
+      {
+        "deficit": "Downbeat nystagmus and ataxia",
+        "side": "n/a",
+        "mechanism": "Compression of the craniocervical junction"
+      },
+      {
+        "deficit": "Respiratory arrest, bradycardia, hypertension and coma",
+        "side": "n/a",
+        "mechanism": "Acute medullary compression by herniating tonsils"
+      },
+      {
+        "deficit": "Syringomyelia with cape-like dissociated sensory loss",
+        "side": "bilateral",
+        "mechanism": "Disturbed CSF dynamics at the foramen magnum in Chiari I"
+      }
+    ],
+    "examination": [
+      "Cough-induced headache history",
+      "Downbeat nystagmus, lower cranial nerve function",
+      "Sensory testing for a syrinx pattern",
+      "In a deteriorating patient: breathing pattern, pulse and blood pressure (Cushing response)"
+    ],
+    "syndromes": [
+      "syn-tonsillar-herniation",
+      "syn-chiari-tonsillar-ectopia",
+      "syn-central-cord-syringomyelia"
+    ],
+    "pearls": [
+      "Never perform a lumbar puncture when the tonsils are crowded into the foramen magnum on imaging",
+      "Cough headache in a young adult with downbeat nystagmus should prompt a sagittal MRI of the craniocervical junction"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-cerebellum",
+      "section": "Structure and Function"
     },
-    "label": "tonsil above the foramen magnum on a parasagittal slice"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 8,
-     "y": -50,
-     "z": -45
+    {
+      "ref": "sp-tonsillar-herniation",
+      "section": "Pathophysiology"
     },
-    "label": "tonsils flanking the medulla"
-   }
+    {
+      "ref": "sp-brain-herniation",
+      "section": "Pathophysiology"
+    }
   ],
-  "normalAppearance": "On sagittal T1 the tonsillar tip should not lie more than about 5 mm below the line from the basion to the opisthion; peg-like pointed tonsils with obliteration of the cisterna magna indicate Chiari I. Rounded tonsils forced down acutely with effaced CSF indicate herniation.",
-  "pathology": [
-   {
-    "pathology": "Tonsillar herniation",
-    "modality": "CT",
-    "finding": "Tonsils crowded into the foramen magnum with obliterated basal cisterns and cisterna magna, often with a posterior fossa mass or diffuse swelling; lumbar puncture is contraindicated.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Chiari I malformation",
-    "modality": "MRI",
-    "finding": "Pointed tonsils more than 5 mm below the foramen magnum with a small posterior fossa, often with a cervical syrinx; look for the syrinx on sagittal T2.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Intracranial hypotension",
-    "modality": "MRI",
-    "finding": "Mild tonsillar descent with brainstem sagging, dural enhancement and subdural collections, reversible after treatment.",
-    "sequence": "T1+Gd"
-   }
+  "tags": [
+    "cerebellum"
   ],
-  "sequenceOfChoice": "Sagittal T1/T2 of the craniocervical junction; CT in the emergency setting"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Neck pain, occipital headache worse with cough or strain",
-    "side": "n/a",
-    "mechanism": "Tonsillar impaction at the foramen magnum (Chiari)"
-   },
-   {
-    "deficit": "Downbeat nystagmus and ataxia",
-    "side": "n/a",
-    "mechanism": "Compression of the craniocervical junction"
-   },
-   {
-    "deficit": "Respiratory arrest, bradycardia, hypertension and coma",
-    "side": "n/a",
-    "mechanism": "Acute medullary compression by herniating tonsils"
-   },
-   {
-    "deficit": "Syringomyelia with cape-like dissociated sensory loss",
-    "side": "bilateral",
-    "mechanism": "Disturbed CSF dynamics at the foramen magnum in Chiari I"
-   }
-  ],
-  "examination": [
-   "Cough-induced headache history",
-   "Downbeat nystagmus, lower cranial nerve function",
-   "Sensory testing for a syrinx pattern",
-   "In a deteriorating patient: breathing pattern, pulse and blood pressure (Cushing response)"
-  ],
-  "syndromes": [
-   "syn-tonsillar-herniation",
-   "syn-chiari-tonsillar-ectopia",
-   "syn-central-cord-syringomyelia"
-  ],
-  "pearls": [
-   "Never perform a lumbar puncture when the tonsils are crowded into the foramen magnum on imaging",
-   "Cough headache in a young adult with downbeat nystagmus should prompt a sagittal MRI of the craniocervical junction"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 5,
-   "pages": [
-    215,
-    215
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 6,
-   "pages": [
-    231,
-    231
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 18,
-   "pages": [
-    513,
-    513
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 25,
-   "pages": [
-    270,
-    270
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 5,
-   "pages": [
-    44,
-    44
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    112,
-    112
-   ]
-  }
- ],
- "tags": [
-  "cerebellum"
- ],
- "status": "draft",
- "latin": "Tonsilla cerebelli",
- "subsystem": "lobes"
+  "status": "draft",
+  "latin": "Tonsilla cerebelli",
+  "subsystem": "lobes"
 }

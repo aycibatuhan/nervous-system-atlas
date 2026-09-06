@@ -1,156 +1,144 @@
 {
- "kind": "structure",
- "id": "tract-superior-longitudinal-fasciculus-iii",
- "name": "Superior longitudinal fasciculus III",
- "synonyms": [
-  "SLF III",
-  "anterior indirect segment of the language pathway"
- ],
- "system": "tracts",
- "meshIds": [
-  "tract-superior-longitudinal-fasciculus-iii-l",
-  "tract-superior-longitudinal-fasciculus-iii-r"
- ],
- "summary": "The ventral branch of the superior longitudinal fasciculus runs in the white matter of the frontal and parietal opercula, immediately above the Sylvian fissure and the arcuate fasciculus, connecting the supramarginal gyrus and the parietal operculum with the inferior frontal gyrus and the ventral premotor cortex. It is the anterior segment of the perisylvian language network on the left, carrying articulatory and phonological information for speech production and repetition, and on both sides it links the somatosensory representation of the body and the mirror system of the inferior parietal lobule with the ventral premotor cortex for imitation, gesture and tool use. Lesions contribute to apraxia of speech, conduction aphasia and ideomotor apraxia.",
- "anatomy": {
-  "location": "From the supramarginal gyrus and the parietal operculum forward through the opercular white matter above the Sylvian fissure and lateral to the arcuate fasciculus, to the pars opercularis and triangularis of the inferior frontal gyrus and the ventral precentral gyrus.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Supramarginal gyrus and parietal operculum",
-    "via": "parietal origin"
-   }
+  "kind": "structure",
+  "id": "tract-superior-longitudinal-fasciculus-iii",
+  "name": "Superior longitudinal fasciculus III",
+  "synonyms": [
+    "SLF III",
+    "anterior indirect segment of the language pathway"
   ],
-  "efferents": [
-   {
-    "to": "Inferior frontal gyrus and ventral premotor cortex",
-    "via": "frontal termination"
-   }
+  "system": "tracts",
+  "meshIds": [
+    "tract-superior-longitudinal-fasciculus-iii-l",
+    "tract-superior-longitudinal-fasciculus-iii-r"
   ],
-  "pathways": [
-   "pathway-corticobulbar"
-  ]
- },
- "function": "The SLF III carries the sensorimotor representations of speech (the felt and heard consequences of articulation) from the supramarginal gyrus to the frontal operculum, forming the anterior indirect segment of the language loop that supports articulation and repetition, and it carries the inferior parietal representations of hand and tool actions to the ventral premotor cortex for imitation, gesture and the understanding of others' actions. On the right it takes part in spatial attention with the SLF II and in the perception of one's own body. Interruption produces phonemic errors and apraxia of speech on the left, ideomotor apraxia on either side (more on the left) and, on the right, contributes to neglect and to the sense of limb ownership.",
- "bloodSupply": {
-  "arteries": [
-   "artery-mca",
-   "artery-mca-superior-division",
-   "artery-mca-inferior-division"
-  ],
-  "territories": [
-   "territory-mca-frontal",
-   "territory-mca-parietal",
-   "territory-mca-insular"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "tract-superior-longitudinal-fasciculus-iii-l"
-    },
-    "label": "SLF III in the opercular white matter above the Sylvian fissure"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "tract-superior-longitudinal-fasciculus-iii-r"
-    },
-    "label": "ventral branch of the SLF between the supramarginal gyrus and the frontal operculum"
-   }
-  ],
-  "normalAppearance": "Tractography shows a short thick bundle above the Sylvian fissure between the inferior parietal lobule and the inferior frontal gyrus, lateral and superior to the arcuate; it occupies the opercular white matter on coronal images.",
-  "pathology": [
-   {
-    "pathology": "MCA branch infarct with apraxia of speech or conduction aphasia",
-    "modality": "MRI",
-    "finding": "Restricted diffusion of the frontal or parietal opercular white matter in the dominant hemisphere.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Ideomotor apraxia after left inferior parietal stroke",
-    "modality": "MRI",
-    "finding": "Lesion of the supramarginal gyrus and its opercular white matter with impaired pantomime and imitation.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Opercular glioma",
-    "modality": "MRI",
-    "finding": "Tumor of the frontal or parietal operculum; stimulation of the SLF III during awake surgery produces articulatory disturbance.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apraxia of speech and phonemic paraphasias (left)",
-    "side": "n/a",
-    "mechanism": "Disconnection of the sensorimotor speech interface from the frontal articulator"
-   },
-   {
-    "deficit": "Ideomotor apraxia",
-    "side": "bilateral",
-    "mechanism": "Disconnection of parietal action representations from the ventral premotor cortex"
-   },
-   {
-    "deficit": "Contribution to neglect and asomatognosia (right)",
-    "side": "contralateral",
-    "mechanism": "Interruption of the ventral fronto-parietal attention and body-schema network"
-   }
-  ],
-  "examination": [
-   "Repetition and articulation of multisyllabic words",
-   "Imitation of meaningless hand postures and pantomime of tool use",
-   "Extinction testing"
-  ],
-  "syndromes": [
-   "syn-aphasia-conduction-global",
-   "syn-aphasia-broca",
-   "syn-hemineglect"
-  ],
-  "pearls": [
-   "The SLF III is the imitation wire: it links seeing a gesture to making it",
-   "Articulation problems with a normal tongue and normal comprehension point to the opercular white matter",
-   "Three SLF branches stack from dorsal to ventral above the Sylvian fissure: I, II, III"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 7,
-   "pages": [
-    262,
-    268
-   ]
+  "summary": "The ventral branch of the superior longitudinal fasciculus runs in the white matter of the frontal and parietal opercula, immediately above the Sylvian fissure and the arcuate fasciculus, connecting the supramarginal gyrus and the parietal operculum with the inferior frontal gyrus and the ventral premotor cortex. It is the anterior segment of the perisylvian language network on the left, carrying articulatory and phonological information for speech production and repetition, and on both sides it links the somatosensory representation of the body and the mirror system of the inferior parietal lobule with the ventral premotor cortex for imitation, gesture and tool use. Lesions contribute to apraxia of speech, conduction aphasia and ideomotor apraxia.",
+  "anatomy": {
+    "location": "From the supramarginal gyrus and the parietal operculum forward through the opercular white matter above the Sylvian fissure and lateral to the arcuate fasciculus, to the pars opercularis and triangularis of the inferior frontal gyrus and the ventral precentral gyrus.",
+    "subdivisions": []
   },
-  {
-   "book": "snell",
-   "chapter": 8,
-   "pages": [
-    288,
-    291
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "Supramarginal gyrus and parietal operculum",
+        "via": "parietal origin"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Inferior frontal gyrus and ventral premotor cortex",
+        "via": "frontal termination"
+      }
+    ],
+    "pathways": [
+      "pathway-corticobulbar"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    53,
-    60
-   ]
-  }
- ],
- "tags": [
-  "white matter",
-  "tractography"
- ],
- "status": "draft",
- "subsystem": "association",
- "parent": "cerebral-white-matter"
+  "function": "The SLF III carries the sensorimotor representations of speech (the felt and heard consequences of articulation) from the supramarginal gyrus to the frontal operculum, forming the anterior indirect segment of the language loop that supports articulation and repetition, and it carries the inferior parietal representations of hand and tool actions to the ventral premotor cortex for imitation, gesture and the understanding of others' actions. On the right it takes part in spatial attention with the SLF II and in the perception of one's own body. Interruption produces phonemic errors and apraxia of speech on the left, ideomotor apraxia on either side (more on the left) and, on the right, contributes to neglect and to the sense of limb ownership.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-mca",
+      "artery-mca-superior-division",
+      "artery-mca-inferior-division"
+    ],
+    "territories": [
+      "territory-mca-frontal",
+      "territory-mca-parietal",
+      "territory-mca-insular"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "tract-superior-longitudinal-fasciculus-iii-l"
+        },
+        "label": "SLF III in the opercular white matter above the Sylvian fissure"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "tract-superior-longitudinal-fasciculus-iii-r"
+        },
+        "label": "ventral branch of the SLF between the supramarginal gyrus and the frontal operculum"
+      }
+    ],
+    "normalAppearance": "Tractography shows a short thick bundle above the Sylvian fissure between the inferior parietal lobule and the inferior frontal gyrus, lateral and superior to the arcuate; it occupies the opercular white matter on coronal images.",
+    "pathology": [
+      {
+        "pathology": "MCA branch infarct with apraxia of speech or conduction aphasia",
+        "modality": "MRI",
+        "finding": "Restricted diffusion of the frontal or parietal opercular white matter in the dominant hemisphere.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Ideomotor apraxia after left inferior parietal stroke",
+        "modality": "MRI",
+        "finding": "Lesion of the supramarginal gyrus and its opercular white matter with impaired pantomime and imitation.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Opercular glioma",
+        "modality": "MRI",
+        "finding": "Tumor of the frontal or parietal operculum; stimulation of the SLF III during awake surgery produces articulatory disturbance.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apraxia of speech and phonemic paraphasias (left)",
+        "side": "n/a",
+        "mechanism": "Disconnection of the sensorimotor speech interface from the frontal articulator"
+      },
+      {
+        "deficit": "Ideomotor apraxia",
+        "side": "bilateral",
+        "mechanism": "Disconnection of parietal action representations from the ventral premotor cortex"
+      },
+      {
+        "deficit": "Contribution to neglect and asomatognosia (right)",
+        "side": "contralateral",
+        "mechanism": "Interruption of the ventral fronto-parietal attention and body-schema network"
+      }
+    ],
+    "examination": [
+      "Repetition and articulation of multisyllabic words",
+      "Imitation of meaningless hand postures and pantomime of tool use",
+      "Extinction testing"
+    ],
+    "syndromes": [
+      "syn-aphasia-conduction-global",
+      "syn-aphasia-broca",
+      "syn-hemineglect"
+    ],
+    "pearls": [
+      "The SLF III is the imitation wire: it links seeing a gesture to making it",
+      "Articulation problems with a normal tongue and normal comprehension point to the opercular white matter",
+      "Three SLF branches stack from dorsal to ventral above the Sylvian fissure: I, II, III"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-broca-area",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-conduction-aphasia",
+      "section": "Pathophysiology"
+    },
+    {
+      "ref": "sp-sylvian-fissure",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "white matter",
+    "tractography"
+  ],
+  "status": "draft",
+  "subsystem": "association",
+  "parent": "cerebral-white-matter"
 }

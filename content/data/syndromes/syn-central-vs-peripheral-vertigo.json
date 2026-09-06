@@ -1,128 +1,132 @@
 {
- "kind": "syndrome",
- "id": "syn-central-vs-peripheral-vertigo",
- "name": "Central versus peripheral vertigo",
- "eponyms": [],
- "category": "functional-pattern",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "vestibular-nuclei",
-   "cn-08-vestibulocochlear",
-   "flocculonodular-lobe",
-   "inferior-cerebellar-peduncle",
-   "medial-longitudinal-fasciculus"
+  "kind": "syndrome",
+  "id": "syn-central-vs-peripheral-vertigo",
+  "name": "Central versus peripheral vertigo",
+  "eponyms": [],
+  "category": "functional-pattern",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "vestibular-nuclei",
+      "cn-08-vestibulocochlear",
+      "flocculonodular-lobe",
+      "inferior-cerebellar-peduncle",
+      "medial-longitudinal-fasciculus"
+    ],
+    "side": "n/a"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "brainstem"
+    ]
+  },
+  "presentation": "A patient arrives with acute vertigo, vomiting and nystagmus. The question is whether the labyrinth or the brainstem is at fault, and three bedside tests answer it better than an early scan: the head impulse test, the direction of nystagmus on gaze to each side, and the cover test for skew deviation. A peripheral lesion gives an abnormal head impulse, unidirectional nystagmus and no skew; any one of a normal head impulse, direction-changing nystagmus or skew deviation means the lesion is central.",
+  "deficits": [
+    {
+      "modality": "vestibular",
+      "side": "ipsilateral",
+      "distribution": "labyrinth or nerve (peripheral)",
+      "sign": "Abnormal head impulse toward the lesion, unidirectional horizontal-torsional nystagmus suppressed by fixation, hearing may be affected",
+      "substrate": "pathway-vestibular-vor"
+    },
+    {
+      "modality": "vestibular",
+      "side": "n/a",
+      "distribution": "vestibular nuclei, cerebellum, MLF (central)",
+      "sign": "Normal head impulse, gaze-evoked direction-changing or vertical nystagmus not suppressed by fixation, skew deviation",
+      "substrate": "vestibular-nuclei"
+    },
+    {
+      "modality": "gait",
+      "side": "n/a",
+      "distribution": "trunk",
+      "sign": "Central: cannot stand unaided; peripheral: veers but stands",
+      "substrate": "pathway-vestibulospinal"
+    },
+    {
+      "modality": "cranial-nerve",
+      "side": "ipsilateral",
+      "distribution": "brainstem neighbors (central)",
+      "sign": "Diplopia, dysarthria, dysphagia, facial numbness, Horner or limb ataxia",
+      "substrate": "level-medulla-olive"
+    }
   ],
-  "side": "n/a"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "brainstem"
-  ]
- },
- "presentation": "A patient arrives with acute vertigo, vomiting and nystagmus. The question is whether the labyrinth or the brainstem is at fault, and three bedside tests answer it better than an early scan: the head impulse test, the direction of nystagmus on gaze to each side, and the cover test for skew deviation. A peripheral lesion gives an abnormal head impulse, unidirectional nystagmus and no skew; any one of a normal head impulse, direction-changing nystagmus or skew deviation means the lesion is central.",
- "deficits": [
-  {
-   "modality": "vestibular",
-   "side": "ipsilateral",
-   "distribution": "labyrinth or nerve (peripheral)",
-   "sign": "Abnormal head impulse toward the lesion, unidirectional horizontal-torsional nystagmus suppressed by fixation, hearing may be affected",
-   "substrate": "pathway-vestibular-vor"
+  "reasoning": "The vestibulo-ocular reflex is a three-neuron arc from the semicircular canals through the vestibular nuclei to the ocular motor nuclei, and its speed and gain depend on the peripheral input. When one labyrinth or nerve fails, the reflex cannot follow a rapid head turn toward that side and the patient makes a corrective saccade, so a positive head impulse test proves the periphery is at fault; central lesions leave the reflex intact, so a normal head impulse in a patient with continuous vertigo means the imbalance arises in the vestibular nuclei, the cerebellar flocculus or their connections, and the commonest such lesion is a posterior circulation stroke. The direction of peripheral nystagmus is fixed by the side of the dead labyrinth and stays the same in all gaze positions, whereas cerebellar and brainstem lesions impair gaze-holding so the fast phase reverses when the patient looks the other way, and fixation, which uses cerebellar pathways, suppresses only peripheral nystagmus. Vertical (downbeat, upbeat) or purely torsional nystagmus arises from the vertical canal pathways in the MLF and cerebellum and is always central. Skew deviation, a vertical misalignment of the eyes with head tilt, results from an imbalance of the otolith pathways after they have crossed in the brainstem and is a central sign. The crossed sensory loss, Horner, dysphagia or limb ataxia of a lateral medullary or cerebellar infarct confirm the localization. Hearing loss, in contrast, favors a peripheral cause, because the cochlear and vestibular labyrinths share the labyrinthine artery and the eighth nerve, with the important exception of AICA territory infarction.",
+  "imagingFindings": [
+    {
+      "pathology": "Posterior circulation stroke",
+      "modality": "MRI",
+      "finding": "Restricted diffusion in the lateral medulla, inferior cerebellum or peduncles; early DWI misses up to a fifth of small brainstem infarcts, so repeat if the examination is central.",
+      "sequence": "DWI",
+      "pitfalls": "CT is nearly useless for acute posterior fossa ischemia"
+    },
+    {
+      "pathology": "Vertebrobasilar occlusion or dissection",
+      "modality": "CTA",
+      "finding": "Vertebral artery dissection or basilar stenosis in a patient with central signs."
+    },
+    {
+      "pathology": "Peripheral lesion",
+      "modality": "MRI",
+      "finding": "Normal brain; occasionally nerve enhancement or a schwannoma.",
+      "sequence": "T1+Gd"
+    }
+  ],
+  "commonCauses": [
+    "Peripheral: vestibular neuritis, BPPV, Ménière, labyrinthitis",
+    "Central: cerebellar or lateral medullary infarct, vertebrobasilar dissection, multiple sclerosis, cerebellar hemorrhage, vestibular migraine"
+  ],
+  "mimics": [
+    {
+      "name": "Vestibular migraine",
+      "howToDistinguish": "Recurrent, with migraine features; examination between attacks normal"
+    },
+    {
+      "name": "Cardiac presyncope",
+      "howToDistinguish": "No spinning, no nystagmus; orthostatic or exertional"
+    },
+    {
+      "name": "Intoxication (alcohol, anticonvulsants)",
+      "howToDistinguish": "Bilateral gaze-evoked nystagmus with ataxia; history and levels"
+    }
+  ],
+  "management": [
+    "HINTS examination in every patient with an acute vestibular syndrome; central pattern or any vascular risk factor with an atypical examination: MRI with DWI and vessel imaging",
+    "Peripheral pattern: symptomatic treatment and vestibular rehabilitation",
+    "Do not rely on a negative early CT or on the absence of headache to exclude stroke"
+  ],
+  "citations": [
+    {
+      "ref": "sp-central-vertigo",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-vertigo-in-clinical-practice-evidence-based-diagnosis-and",
+      "section": "History and Physical"
+    },
+    {
+      "ref": "sp-vestibular-neuronitis",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "axial",
+    "mni": {
+      "x": -10,
+      "y": -42,
+      "z": -46
+    },
+    "label": "vestibular nuclei at the pontomedullary junction"
   },
-  {
-   "modality": "vestibular",
-   "side": "n/a",
-   "distribution": "vestibular nuclei, cerebellum, MLF (central)",
-   "sign": "Normal head impulse, gaze-evoked direction-changing or vertical nystagmus not suppressed by fixation, skew deviation",
-   "substrate": "vestibular-nuclei"
-  },
-  {
-   "modality": "gait",
-   "side": "n/a",
-   "distribution": "trunk",
-   "sign": "Central: cannot stand unaided; peripheral: veers but stands",
-   "substrate": "pathway-vestibulospinal"
-  },
-  {
-   "modality": "cranial-nerve",
-   "side": "ipsilateral",
-   "distribution": "brainstem neighbors (central)",
-   "sign": "Diplopia, dysarthria, dysphagia, facial numbness, Horner or limb ataxia",
-   "substrate": "level-medulla-olive"
-  }
- ],
- "reasoning": "The vestibulo-ocular reflex is a three-neuron arc from the semicircular canals through the vestibular nuclei to the ocular motor nuclei, and its speed and gain depend on the peripheral input. When one labyrinth or nerve fails, the reflex cannot follow a rapid head turn toward that side and the patient makes a corrective saccade, so a positive head impulse test proves the periphery is at fault; central lesions leave the reflex intact, so a normal head impulse in a patient with continuous vertigo means the imbalance arises in the vestibular nuclei, the cerebellar flocculus or their connections, and the commonest such lesion is a posterior circulation stroke. The direction of peripheral nystagmus is fixed by the side of the dead labyrinth and stays the same in all gaze positions, whereas cerebellar and brainstem lesions impair gaze-holding so the fast phase reverses when the patient looks the other way, and fixation, which uses cerebellar pathways, suppresses only peripheral nystagmus. Vertical (downbeat, upbeat) or purely torsional nystagmus arises from the vertical canal pathways in the MLF and cerebellum and is always central. Skew deviation, a vertical misalignment of the eyes with head tilt, results from an imbalance of the otolith pathways after they have crossed in the brainstem and is a central sign. The crossed sensory loss, Horner, dysphagia or limb ataxia of a lateral medullary or cerebellar infarct confirm the localization. Hearing loss, in contrast, favors a peripheral cause, because the cochlear and vestibular labyrinths share the labyrinthine artery and the eighth nerve, with the important exception of AICA territory infarction.",
- "imagingFindings": [
-  {
-   "pathology": "Posterior circulation stroke",
-   "modality": "MRI",
-   "finding": "Restricted diffusion in the lateral medulla, inferior cerebellum or peduncles; early DWI misses up to a fifth of small brainstem infarcts, so repeat if the examination is central.",
-   "sequence": "DWI",
-   "pitfalls": "CT is nearly useless for acute posterior fossa ischemia"
-  },
-  {
-   "pathology": "Vertebrobasilar occlusion or dissection",
-   "modality": "CTA",
-   "finding": "Vertebral artery dissection or basilar stenosis in a patient with central signs."
-  },
-  {
-   "pathology": "Peripheral lesion",
-   "modality": "MRI",
-   "finding": "Normal brain; occasionally nerve enhancement or a schwannoma.",
-   "sequence": "T1+Gd"
-  }
- ],
- "commonCauses": [
-  "Peripheral: vestibular neuritis, BPPV, Ménière, labyrinthitis",
-  "Central: cerebellar or lateral medullary infarct, vertebrobasilar dissection, multiple sclerosis, cerebellar hemorrhage, vestibular migraine"
- ],
- "mimics": [
-  {
-   "name": "Vestibular migraine",
-   "howToDistinguish": "Recurrent, with migraine features; examination between attacks normal"
-  },
-  {
-   "name": "Cardiac presyncope",
-   "howToDistinguish": "No spinning, no nystagmus; orthostatic or exertional"
-  },
-  {
-   "name": "Intoxication (alcohol, anticonvulsants)",
-   "howToDistinguish": "Bilateral gaze-evoked nystagmus with ataxia; history and levels"
-  }
- ],
- "management": [
-  "HINTS examination in every patient with an acute vestibular syndrome; central pattern or any vascular risk factor with an atypical examination: MRI with DWI and vessel imaging",
-  "Peripheral pattern: symptomatic treatment and vestibular rehabilitation",
-  "Do not rely on a negative early CT or on the absence of headache to exclude stroke"
- ],
- "citations": [
-  {
-   "book": "berkowitz",
-   "chapter": 12,
-   "pages": [
-    110,
-    112
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "axial",
-  "mni": {
-   "x": -10,
-   "y": -42,
-   "z": -46
-  },
-  "label": "vestibular nuclei at the pontomedullary junction"
- },
- "examSequence": [
-  "Head impulse test to each side",
-  "Nystagmus direction in primary gaze, right gaze and left gaze",
-  "Alternate cover test for vertical skew",
-  "Can the patient stand unaided?",
-  "Hearing to finger rub; the rest of the cranial nerves",
-  "Finger-nose and heel-shin"
- ],
- "cameraPreset": "posterior"
+  "examSequence": [
+    "Head impulse test to each side",
+    "Nystagmus direction in primary gaze, right gaze and left gaze",
+    "Alternate cover test for vertical skew",
+    "Can the patient stand unaided?",
+    "Hearing to finger rub; the rest of the cranial nerves",
+    "Finger-nose and heel-shin"
+  ],
+  "cameraPreset": "posterior"
 }

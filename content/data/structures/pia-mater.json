@@ -1,136 +1,116 @@
 {
- "kind": "structure",
- "id": "pia-mater",
- "name": "Pia mater",
- "synonyms": [],
- "system": "meninges",
- "meshIds": [
-  "brain-envelope"
- ],
- "summary": "The innermost meninx, a thin vascular membrane that clings to the brain and cord and follows every sulcus and fissure. It carries the blood vessels that enter the brain, forming the perivascular (Virchow–Robin) spaces around penetrating arteries, and it thickens on the cord as the denticulate ligaments and the filum terminale. With the arachnoid it forms the leptomeninges, the site of leptomeningeal metastasis and of the enhancement seen in meningitis. The glia limitans beneath it is the outer boundary of the brain proper.",
- "anatomy": {
-  "location": "Directly on the surface of the brain and spinal cord, dipping into the sulci, ensheathing the vessels entering the brain, and forming the denticulate ligaments and filum terminale of the cord.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [],
-  "efferents": [],
-  "pathways": []
- },
- "function": "Vascular support of the brain surface, formation of perivascular spaces that drain interstitial fluid, mechanical anchoring of the cord, and part of the blood–brain interface.",
- "bloodSupply": {
-  "arteries": [
-   "pial branches of all cerebral arteries"
+  "kind": "structure",
+  "id": "pia-mater",
+  "name": "Pia mater",
+  "synonyms": [],
+  "system": "meninges",
+  "meshIds": [
+    "brain-envelope"
   ],
-  "territories": []
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 25,
-     "y": 5,
-     "z": 5
+  "summary": "The innermost meninx, a thin vascular membrane that clings to the brain and cord and follows every sulcus and fissure. It carries the blood vessels that enter the brain, forming the perivascular (Virchow–Robin) spaces around penetrating arteries, and it thickens on the cord as the denticulate ligaments and the filum terminale. With the arachnoid it forms the leptomeninges, the site of leptomeningeal metastasis and of the enhancement seen in meningitis. The glia limitans beneath it is the outer boundary of the brain proper.",
+  "anatomy": {
+    "location": "Directly on the surface of the brain and spinal cord, dipping into the sulci, ensheathing the vessels entering the brain, and forming the denticulate ligaments and filum terminale of the cord.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [],
+    "efferents": [],
+    "pathways": []
+  },
+  "function": "Vascular support of the brain surface, formation of perivascular spaces that drain interstitial fluid, mechanical anchoring of the cord, and part of the blood–brain interface.",
+  "bloodSupply": {
+    "arteries": [
+      "pial branches of all cerebral arteries"
+    ],
+    "territories": []
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 25,
+          "y": 5,
+          "z": 5
+        },
+        "label": "perivascular spaces along the lenticulostriate arteries in the basal ganglia"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 0,
+          "y": -20,
+          "z": 50
+        },
+        "label": "pial surface following the sulci"
+      }
+    ],
+    "normalAppearance": "Not seen as a membrane; enlarged perivascular spaces are round CSF-signal dots along the perforating arteries in the basal ganglia and centrum semiovale (suppressing on FLAIR, unlike lacunes), and leptomeningeal disease shows as enhancement following the gyri and sulci.",
+    "pathology": [
+      {
+        "pathology": "Enlarged perivascular spaces",
+        "modality": "MRI",
+        "finding": "Multiple small CSF-signal spaces in the basal ganglia and white matter following the vessels; benign.",
+        "sequence": "T2",
+        "pitfalls": "Distinguish from lacunes (which have a FLAIR rim) and from cystic tumors"
+      },
+      {
+        "pathology": "Leptomeningeal carcinomatosis",
+        "modality": "MRI",
+        "finding": "Nodular enhancement coating the gyri, cerebellar folia and cranial nerves.",
+        "sequence": "T1+Gd"
+      },
+      {
+        "pathology": "Pial arteriovenous fistula / superficial siderosis",
+        "modality": "MRI",
+        "finding": "Hemosiderin staining of the pial surface of the cerebellum and brainstem on SWI after chronic subarachnoid bleeding.",
+        "sequence": "SWI"
+      }
+    ],
+    "sequenceOfChoice": "T1+Gd, FLAIR, SWI"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Multiple cranial and spinal root palsies with headache",
+        "side": "bilateral",
+        "mechanism": "Leptomeningeal infiltration by tumor or infection"
+      },
+      {
+        "deficit": "Progressive deafness and ataxia",
+        "side": "bilateral",
+        "mechanism": "Superficial siderosis of the cerebellum and eighth nerves"
+      }
+    ],
+    "examination": [
+      "Cranial nerves and root signs",
+      "Hearing and gait",
+      "CSF cytology when leptomeningeal disease is suspected"
+    ],
+    "syndromes": [],
+    "pearls": [
+      "Cranial neuropathies plus radicular signs in a cancer patient is leptomeningeal disease: repeat CSF cytology up to three times",
+      "Perivascular spaces are normal and numerous; lacunes are pathological and rimmed"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-dura-mater",
+      "section": "Structure and Function"
     },
-    "label": "perivascular spaces along the lenticulostriate arteries in the basal ganglia"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 0,
-     "y": -20,
-     "z": 50
+    {
+      "ref": "sp-subarachnoid-space",
+      "section": "Structure and Function"
     },
-    "label": "pial surface following the sulci"
-   }
+    {
+      "ref": "sp-back-spinal-meninges",
+      "section": "Structure and Function"
+    }
   ],
-  "normalAppearance": "Not seen as a membrane; enlarged perivascular spaces are round CSF-signal dots along the perforating arteries in the basal ganglia and centrum semiovale (suppressing on FLAIR, unlike lacunes), and leptomeningeal disease shows as enhancement following the gyri and sulci.",
-  "pathology": [
-   {
-    "pathology": "Enlarged perivascular spaces",
-    "modality": "MRI",
-    "finding": "Multiple small CSF-signal spaces in the basal ganglia and white matter following the vessels; benign.",
-    "sequence": "T2",
-    "pitfalls": "Distinguish from lacunes (which have a FLAIR rim) and from cystic tumors"
-   },
-   {
-    "pathology": "Leptomeningeal carcinomatosis",
-    "modality": "MRI",
-    "finding": "Nodular enhancement coating the gyri, cerebellar folia and cranial nerves.",
-    "sequence": "T1+Gd"
-   },
-   {
-    "pathology": "Pial arteriovenous fistula / superficial siderosis",
-    "modality": "MRI",
-    "finding": "Hemosiderin staining of the pial surface of the cerebellum and brainstem on SWI after chronic subarachnoid bleeding.",
-    "sequence": "SWI"
-   }
+  "tags": [
+    "meninges"
   ],
-  "sequenceOfChoice": "T1+Gd, FLAIR, SWI"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Multiple cranial and spinal root palsies with headache",
-    "side": "bilateral",
-    "mechanism": "Leptomeningeal infiltration by tumor or infection"
-   },
-   {
-    "deficit": "Progressive deafness and ataxia",
-    "side": "bilateral",
-    "mechanism": "Superficial siderosis of the cerebellum and eighth nerves"
-   }
-  ],
-  "examination": [
-   "Cranial nerves and root signs",
-   "Hearing and gait",
-   "CSF cytology when leptomeningeal disease is suspected"
-  ],
-  "syndromes": [],
-  "pearls": [
-   "Cranial neuropathies plus radicular signs in a cancer patient is leptomeningeal disease: repeat CSF cytology up to three times",
-   "Perivascular spaces are normal and numerous; lacunes are pathological and rimmed"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    424,
-    425
-   ]
-  },
-  {
-   "book": "snell",
-   "chapter": 15,
-   "pages": [
-    428,
-    433
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 3,
-   "pages": [
-    26,
-    29
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 24,
-   "pages": [
-    261,
-    262
-   ]
-  }
- ],
- "tags": [
-  "meninges"
- ],
- "status": "draft",
- "latin": "Pia mater"
+  "status": "draft",
+  "latin": "Pia mater"
 }

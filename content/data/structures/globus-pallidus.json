@@ -1,184 +1,172 @@
 {
- "kind": "structure",
- "id": "globus-pallidus",
- "name": "Globus pallidus",
- "synonyms": [
-  "pallidum",
-  "paleostriatum"
- ],
- "system": "basal-ganglia",
- "meshIds": [
-  "globus-pallidus-internus-l",
-  "globus-pallidus-internus-r",
-  "globus-pallidus-externus-l",
-  "globus-pallidus-externus-r"
- ],
- "summary": "The medial, wedge-shaped part of the lentiform nucleus, paler than the putamen because of its myelinated fibers, divided by the internal medullary lamina into an external segment (GPe), a relay of the indirect pathway to the subthalamic nucleus, and an internal segment (GPi), the main output nucleus of the basal ganglia. GPi tonically inhibits the ventral anterior and ventral lateral thalamus through the ansa and fasciculus lenticularis; movement is released by pausing that inhibition. Its output is too active in Parkinson disease (hence pallidotomy and GPi stimulation help) and too weak in hemiballismus and chorea. It is rich in iron and is the target of carbon monoxide, hepatic disease and iron-accumulation disorders.",
- "anatomy": {
-  "location": "Medial part of the lentiform nucleus, between the putamen laterally and the posterior limb of the internal capsule medially, above the substantia innominata and anterior commissure; GPi lies medial to GPe.",
-  "subdivisions": [
-   {
-    "name": "External segment (GPe)",
-    "note": "receives striatal indirect-pathway input; projects to the subthalamic nucleus"
-   },
-   {
-    "name": "Internal segment (GPi)",
-    "note": "receives direct-pathway striatal input and subthalamic input; tonic GABAergic output to VA/VL thalamus (ansa lenticularis, lenticular fasciculus) and to the pedunculopontine nucleus"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "putamen and caudate-nucleus",
-    "note": "GABAergic"
-   },
-   {
-    "from": "subthalamic-nucleus",
-    "note": "glutamatergic"
-   }
+  "kind": "structure",
+  "id": "globus-pallidus",
+  "name": "Globus pallidus",
+  "synonyms": [
+    "pallidum",
+    "paleostriatum"
   ],
-  "efferents": [
-   {
-    "to": "thalamus-va-vl",
-    "via": "ansa lenticularis and lenticular fasciculus (GPi)",
-    "note": "GABAergic"
-   },
-   {
-    "to": "subthalamic-nucleus",
-    "note": "from GPe"
-   },
-   {
-    "to": "pedunculopontine-nucleus"
-   }
+  "system": "basal-ganglia",
+  "meshIds": [
+    "globus-pallidus-internus-l",
+    "globus-pallidus-internus-r",
+    "globus-pallidus-externus-l",
+    "globus-pallidus-externus-r"
   ],
-  "pathways": [
-   "pathway-basal-ganglia-loops"
-  ]
- },
- "function": "Final output stage of the motor basal ganglia loop: sets the level of thalamocortical facilitation of movement; also part of the limbic loop through the ventral pallidum.",
- "bloodSupply": {
-  "arteries": [
-   "arteries-lenticulostriate",
-   "artery-anterior-choroidal"
-  ],
-  "territories": [
-   "territory-lenticulostriate",
-   "territory-anterior-choroidal"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "x": 18,
-     "y": -2,
-     "z": -2
-    },
-    "label": "globus pallidus medial to the putamen beside the posterior limb"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "x": 18,
-     "y": -2,
-     "z": -2
-    },
-    "label": "internal and external segments separated by the medial medullary lamina"
-   }
-  ],
-  "normalAppearance": "Darker than the putamen on T2 and SWI because of iron; T1-bright pallidi are seen in liver failure (manganese) and after parenteral nutrition. Symmetric pallidal necrosis after carbon monoxide poisoning and the eye-of-the-tiger sign in pantothenate kinase deficiency are classic patterns.",
-  "pathology": [
-   {
-    "pathology": "Carbon monoxide poisoning",
-    "modality": "MRI",
-    "finding": "Bilateral symmetric globus pallidus T2 hyperintensity/necrosis, sometimes with delayed white matter injury.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Hepatic encephalopathy / manganese",
-    "modality": "MRI",
-    "finding": "Bilateral symmetric T1 hyperintensity of the globus pallidus from manganese deposition in chronic liver disease or parenteral nutrition, without T2 change.",
-    "sequence": "T1"
-   },
-   {
-    "pathology": "Neurodegeneration with brain iron accumulation",
-    "modality": "MRI",
-    "finding": "Eye-of-the-tiger sign: central T2 bright spot within a hypointense pallidum.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Kernicterus",
-    "modality": "MRI",
-    "finding": "Bilateral pallidal T2 hyperintensity in neonates.",
-    "sequence": "T2"
-   }
-  ],
-  "sequenceOfChoice": "T2, SWI and T1"
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Parkinsonism, apathy and reduced spontaneous movement",
-    "side": "bilateral",
-    "mechanism": "Bilateral pallidal necrosis (CO, hypoxia)"
-   },
-   {
-    "deficit": "Dystonia",
-    "side": "contralateral",
-    "mechanism": "Pallidal output disruption"
-   },
-   {
-    "deficit": "Improvement of parkinsonian rigidity and dyskinesia after GPi lesioning or stimulation",
-    "side": "contralateral",
-    "mechanism": "Reduction of excessive inhibitory output"
-   }
-  ],
-  "examination": [
-   "Bradykinesia, rigidity, tremor",
-   "Dystonic posturing",
-   "Cognitive and behavioral change (apathy) after CO or anoxia"
-  ],
-  "syndromes": [
-   "syn-parkinsonism",
-   "syn-hemiballismus"
-  ],
-  "pearls": [
-   "Symmetric pallidal lesions after coma: think carbon monoxide or anoxia",
-   "The pallidum inhibits the thalamus; too much inhibition is parkinsonism, too little is chorea"
-  ]
- },
- "pitfalls": [],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 10,
-   "pages": [
-    310,
-    315
-   ]
+  "summary": "The medial, wedge-shaped part of the lentiform nucleus, paler than the putamen because of its myelinated fibers, divided by the internal medullary lamina into an external segment (GPe), a relay of the indirect pathway to the subthalamic nucleus, and an internal segment (GPi), the main output nucleus of the basal ganglia. GPi tonically inhibits the ventral anterior and ventral lateral thalamus through the ansa and fasciculus lenticularis; movement is released by pausing that inhibition. Its output is too active in Parkinson disease (hence pallidotomy and GPi stimulation help) and too weak in hemiballismus and chorea. It is rich in iron and is the target of carbon monoxide, hepatic disease and iron-accumulation disorders.",
+  "anatomy": {
+    "location": "Medial part of the lentiform nucleus, between the putamen laterally and the posterior limb of the internal capsule medially, above the substantia innominata and anterior commissure; GPi lies medial to GPe.",
+    "subdivisions": [
+      {
+        "name": "External segment (GPe)",
+        "note": "receives striatal indirect-pathway input; projects to the subthalamic nucleus"
+      },
+      {
+        "name": "Internal segment (GPi)",
+        "note": "receives direct-pathway striatal input and subthalamic input; tonic GABAergic output to VA/VL thalamus (ansa lenticularis, lenticular fasciculus) and to the pedunculopontine nucleus"
+      }
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 7,
-   "pages": [
-    55,
-    56
-   ]
+  "connections": {
+    "afferents": [
+      {
+        "from": "putamen and caudate-nucleus",
+        "note": "GABAergic"
+      },
+      {
+        "from": "subthalamic-nucleus",
+        "note": "glutamatergic"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "thalamus-va-vl",
+        "via": "ansa lenticularis and lenticular fasciculus (GPi)",
+        "note": "GABAergic"
+      },
+      {
+        "to": "subthalamic-nucleus",
+        "note": "from GPe"
+      },
+      {
+        "to": "pedunculopontine-nucleus"
+      }
+    ],
+    "pathways": [
+      "pathway-basal-ganglia-loops"
+    ]
   },
-  {
-   "book": "berkowitz",
-   "chapter": 23,
-   "pages": [
-    242,
-    250
-   ]
-  }
- ],
- "tags": [
-  "basal-ganglia"
- ],
- "status": "draft",
- "latin": "Globus pallidus"
+  "function": "Final output stage of the motor basal ganglia loop: sets the level of thalamocortical facilitation of movement; also part of the limbic loop through the ventral pallidum.",
+  "bloodSupply": {
+    "arteries": [
+      "arteries-lenticulostriate",
+      "artery-anterior-choroidal"
+    ],
+    "territories": [
+      "territory-lenticulostriate",
+      "territory-anterior-choroidal"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "x": 18,
+          "y": -2,
+          "z": -2
+        },
+        "label": "globus pallidus medial to the putamen beside the posterior limb"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "x": 18,
+          "y": -2,
+          "z": -2
+        },
+        "label": "internal and external segments separated by the medial medullary lamina"
+      }
+    ],
+    "normalAppearance": "Darker than the putamen on T2 and SWI because of iron; T1-bright pallidi are seen in liver failure (manganese) and after parenteral nutrition. Symmetric pallidal necrosis after carbon monoxide poisoning and the eye-of-the-tiger sign in pantothenate kinase deficiency are classic patterns.",
+    "pathology": [
+      {
+        "pathology": "Carbon monoxide poisoning",
+        "modality": "MRI",
+        "finding": "Bilateral symmetric globus pallidus T2 hyperintensity/necrosis, sometimes with delayed white matter injury.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Hepatic encephalopathy / manganese",
+        "modality": "MRI",
+        "finding": "Bilateral symmetric T1 hyperintensity of the globus pallidus from manganese deposition in chronic liver disease or parenteral nutrition, without T2 change.",
+        "sequence": "T1"
+      },
+      {
+        "pathology": "Neurodegeneration with brain iron accumulation",
+        "modality": "MRI",
+        "finding": "Eye-of-the-tiger sign: central T2 bright spot within a hypointense pallidum.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Kernicterus",
+        "modality": "MRI",
+        "finding": "Bilateral pallidal T2 hyperintensity in neonates.",
+        "sequence": "T2"
+      }
+    ],
+    "sequenceOfChoice": "T2, SWI and T1"
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Parkinsonism, apathy and reduced spontaneous movement",
+        "side": "bilateral",
+        "mechanism": "Bilateral pallidal necrosis (CO, hypoxia)"
+      },
+      {
+        "deficit": "Dystonia",
+        "side": "contralateral",
+        "mechanism": "Pallidal output disruption"
+      },
+      {
+        "deficit": "Improvement of parkinsonian rigidity and dyskinesia after GPi lesioning or stimulation",
+        "side": "contralateral",
+        "mechanism": "Reduction of excessive inhibitory output"
+      }
+    ],
+    "examination": [
+      "Bradykinesia, rigidity, tremor",
+      "Dystonic posturing",
+      "Cognitive and behavioral change (apathy) after CO or anoxia"
+    ],
+    "syndromes": [
+      "syn-parkinsonism",
+      "syn-hemiballismus"
+    ],
+    "pearls": [
+      "Symmetric pallidal lesions after coma: think carbon monoxide or anoxia",
+      "The pallidum inhibits the thalamus; too much inhibition is parkinsonism, too little is chorea"
+    ]
+  },
+  "pitfalls": [],
+  "citations": [
+    {
+      "ref": "sp-globus-pallidus",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-basal-ganglia",
+      "section": "Structure and Function"
+    },
+    {
+      "ref": "sp-extrapyramidal-system",
+      "section": "Structure and Function"
+    }
+  ],
+  "tags": [
+    "basal-ganglia"
+  ],
+  "status": "draft",
+  "latin": "Globus pallidus"
 }

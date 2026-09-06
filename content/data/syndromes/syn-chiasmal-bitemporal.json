@@ -1,139 +1,127 @@
 {
- "kind": "syndrome",
- "id": "syn-chiasmal-bitemporal",
- "name": "Chiasmal syndrome (bitemporal hemianopia)",
- "eponyms": [],
- "category": "compressive",
- "tier": "core",
- "localisation": {
-  "structures": [
-   "optic-chiasm",
-   "pituitary-infundibulum",
-   "cn-02-optic",
-   "hypothalamus"
+  "kind": "syndrome",
+  "id": "syn-chiasmal-bitemporal",
+  "name": "Chiasmal syndrome (bitemporal hemianopia)",
+  "eponyms": [],
+  "category": "compressive",
+  "tier": "core",
+  "localisation": {
+    "structures": [
+      "optic-chiasm",
+      "pituitary-infundibulum",
+      "cn-02-optic",
+      "hypothalamus"
+    ],
+    "side": "bilateral"
+  },
+  "lesionMarker": {
+    "kind": "structures",
+    "meshIds": [
+      "optic-chiasm"
+    ]
+  },
+  "presentation": "The patient keeps bumping into door frames and has stopped driving because cars appear from nowhere on either side, yet reads normally. Field testing shows loss of the temporal half of the field in each eye, respecting the vertical meridian, worse in the upper quadrants. There may be amenorrhea, galactorrhea, acromegalic features or the fatigue of hypopituitarism, and a large adenoma is found on MRI. Sudden headache and visual loss with ophthalmoplegia mean pituitary apoplexy.",
+  "deficits": [
+    {
+      "modality": "visual-field",
+      "side": "bilateral",
+      "distribution": "temporal fields of both eyes",
+      "sign": "Bitemporal hemianopia respecting the vertical midline, upper quadrants first with lesions from below",
+      "substrate": "pathway-visual"
+    },
+    {
+      "modality": "visual-acuity",
+      "side": "bilateral",
+      "distribution": "variable",
+      "sign": "Acuity preserved unless the nerves are involved; junctional scotoma with anterior lesions",
+      "substrate": "cn-02-optic"
+    },
+    {
+      "modality": "other",
+      "side": "n/a",
+      "distribution": "endocrine",
+      "sign": "Hyperprolactinemia, acromegaly, Cushing features or hypopituitarism",
+      "substrate": "pituitary-infundibulum"
+    },
+    {
+      "modality": "oculomotor",
+      "side": "ipsilateral",
+      "distribution": "cavernous sinus extension",
+      "sign": "Ocular motor palsies with lateral extension or apoplexy",
+      "substrate": "sinus-cavernous"
+    }
   ],
-  "side": "bilateral"
- },
- "lesionMarker": {
-  "kind": "structures",
-  "meshIds": [
-   "optic-chiasm"
-  ]
- },
- "presentation": "The patient keeps bumping into door frames and has stopped driving because cars appear from nowhere on either side, yet reads normally. Field testing shows loss of the temporal half of the field in each eye, respecting the vertical meridian, worse in the upper quadrants. There may be amenorrhea, galactorrhea, acromegalic features or the fatigue of hypopituitarism, and a large adenoma is found on MRI. Sudden headache and visual loss with ophthalmoplegia mean pituitary apoplexy.",
- "deficits": [
-  {
-   "modality": "visual-field",
-   "side": "bilateral",
-   "distribution": "temporal fields of both eyes",
-   "sign": "Bitemporal hemianopia respecting the vertical midline, upper quadrants first with lesions from below",
-   "substrate": "pathway-visual"
+  "reasoning": "At the optic chiasm the fibers from the nasal half of each retina, which see the temporal half of the visual field, cross to the opposite optic tract, while the temporal retinal fibers, which see the nasal field, stay on the same side. A lesion of the middle of the chiasm interrupts only the crossing fibers, so each eye loses its temporal field and nothing else: the bitemporal hemianopia is the one field defect that is neither monocular nor homonymous, and it identifies the chiasm with certainty. The chiasm sits about a centimeter above the pituitary fossa, so a pituitary adenoma growing upward through the diaphragma sellae presses on its lower surface first, where the fibers from the inferior nasal retina cross, which serve the upper temporal fields; the defect therefore begins in the superior quadrants and descends. A craniopharyngioma pressing from above does the reverse. The lower nasal fibers make a forward loop (Wilbrand's knee) into the opposite optic nerve, so a lesion at the junction of one nerve and the chiasm causes a central scotoma in that eye with an upper temporal defect in the other, the junctional scotoma. Patients often have normal acuity and pass reading tests, because the intact nasal fields overlap in the center, but the two hemifields no longer overlap for depth perception, so they misjudge distances and cannot fuse images beyond the fixation point.",
+  "imagingFindings": [
+    {
+      "pathology": "Pituitary macroadenoma",
+      "modality": "MRI",
+      "finding": "Sellar mass with suprasellar extension elevating and flattening the chiasm; 'snowman' shape at the diaphragma; compare its signal with the normal gland.",
+      "sequence": "T1+Gd"
+    },
+    {
+      "pathology": "Pituitary apoplexy",
+      "modality": "MRI",
+      "finding": "Hemorrhage or infarction in an adenoma with fluid levels and sudden chiasmal compression; hyperdense on CT.",
+      "sequence": "T1"
+    },
+    {
+      "pathology": "Craniopharyngioma",
+      "modality": "CT",
+      "finding": "Suprasellar cystic and calcified mass in a child or an older adult compressing the chiasm from above.",
+      "sequence": "CT non-contrast"
+    }
+  ],
+  "commonCauses": [
+    "Pituitary adenoma",
+    "Craniopharyngioma",
+    "Suprasellar meningioma",
+    "Internal carotid or anterior communicating aneurysm",
+    "Optic chiasm glioma (neurofibromatosis 1)",
+    "Chiasmal neuritis or sarcoidosis"
+  ],
+  "mimics": [
+    {
+      "name": "Bilateral optic neuropathy",
+      "howToDistinguish": "Defects do not respect the vertical meridian; acuity and color reduced"
+    },
+    {
+      "name": "Tilted discs or nasal retinal disease",
+      "howToDistinguish": "Temporal defects that cross the vertical meridian; fundus abnormal"
+    },
+    {
+      "name": "Bilateral homonymous defects",
+      "howToDistinguish": "Respect the vertical meridian but are homonymous, not bitemporal"
+    }
+  ],
+  "management": [
+    "MRI of the sella with contrast and a full pituitary hormone panel including prolactin",
+    "Dopamine agonists for prolactinomas; transsphenoidal surgery for other compressive adenomas",
+    "Pituitary apoplexy: urgent steroids and neurosurgical review"
+  ],
+  "citations": [
+    {
+      "ref": "sp-bitemporal-hemianopsia",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-optic-chiasm",
+      "section": "Clinical Significance"
+    },
+    {
+      "ref": "sp-pituitary-adenoma",
+      "section": "History and Physical"
+    }
+  ],
+  "status": "draft",
+  "imagingHint": {
+    "plane": "coronal",
+    "mni": {
+      "x": 0,
+      "y": 2,
+      "z": -18
+    },
+    "label": "optic chiasm above the pituitary fossa"
   },
-  {
-   "modality": "visual-acuity",
-   "side": "bilateral",
-   "distribution": "variable",
-   "sign": "Acuity preserved unless the nerves are involved; junctional scotoma with anterior lesions",
-   "substrate": "cn-02-optic"
-  },
-  {
-   "modality": "other",
-   "side": "n/a",
-   "distribution": "endocrine",
-   "sign": "Hyperprolactinemia, acromegaly, Cushing features or hypopituitarism",
-   "substrate": "pituitary-infundibulum"
-  },
-  {
-   "modality": "oculomotor",
-   "side": "ipsilateral",
-   "distribution": "cavernous sinus extension",
-   "sign": "Ocular motor palsies with lateral extension or apoplexy",
-   "substrate": "sinus-cavernous"
-  }
- ],
- "reasoning": "At the optic chiasm the fibers from the nasal half of each retina, which see the temporal half of the visual field, cross to the opposite optic tract, while the temporal retinal fibers, which see the nasal field, stay on the same side. A lesion of the middle of the chiasm interrupts only the crossing fibers, so each eye loses its temporal field and nothing else: the bitemporal hemianopia is the one field defect that is neither monocular nor homonymous, and it identifies the chiasm with certainty. The chiasm sits about a centimeter above the pituitary fossa, so a pituitary adenoma growing upward through the diaphragma sellae presses on its lower surface first, where the fibers from the inferior nasal retina cross, which serve the upper temporal fields; the defect therefore begins in the superior quadrants and descends. A craniopharyngioma pressing from above does the reverse. The lower nasal fibers make a forward loop (Wilbrand's knee) into the opposite optic nerve, so a lesion at the junction of one nerve and the chiasm causes a central scotoma in that eye with an upper temporal defect in the other, the junctional scotoma. Patients often have normal acuity and pass reading tests, because the intact nasal fields overlap in the center, but the two hemifields no longer overlap for depth perception, so they misjudge distances and cannot fuse images beyond the fixation point.",
- "imagingFindings": [
-  {
-   "pathology": "Pituitary macroadenoma",
-   "modality": "MRI",
-   "finding": "Sellar mass with suprasellar extension elevating and flattening the chiasm; 'snowman' shape at the diaphragma; compare its signal with the normal gland.",
-   "sequence": "T1+Gd"
-  },
-  {
-   "pathology": "Pituitary apoplexy",
-   "modality": "MRI",
-   "finding": "Hemorrhage or infarction in an adenoma with fluid levels and sudden chiasmal compression; hyperdense on CT.",
-   "sequence": "T1"
-  },
-  {
-   "pathology": "Craniopharyngioma",
-   "modality": "CT",
-   "finding": "Suprasellar cystic and calcified mass in a child or an older adult compressing the chiasm from above.",
-   "sequence": "CT non-contrast"
-  }
- ],
- "commonCauses": [
-  "Pituitary adenoma",
-  "Craniopharyngioma",
-  "Suprasellar meningioma",
-  "Internal carotid or anterior communicating aneurysm",
-  "Optic chiasm glioma (neurofibromatosis 1)",
-  "Chiasmal neuritis or sarcoidosis"
- ],
- "mimics": [
-  {
-   "name": "Bilateral optic neuropathy",
-   "howToDistinguish": "Defects do not respect the vertical meridian; acuity and color reduced"
-  },
-  {
-   "name": "Tilted discs or nasal retinal disease",
-   "howToDistinguish": "Temporal defects that cross the vertical meridian; fundus abnormal"
-  },
-  {
-   "name": "Bilateral homonymous defects",
-   "howToDistinguish": "Respect the vertical meridian but are homonymous, not bitemporal"
-  }
- ],
- "management": [
-  "MRI of the sella with contrast and a full pituitary hormone panel including prolactin",
-  "Dopamine agonists for prolactinomas; transsphenoidal surgery for other compressive adenomas",
-  "Pituitary apoplexy: urgent steroids and neurosurgical review"
- ],
- "citations": [
-  {
-   "book": "snell",
-   "chapter": 11,
-   "pages": [
-    349,
-    350
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 6,
-   "pages": [
-    47,
-    49
-   ]
-  },
-  {
-   "book": "berkowitz",
-   "chapter": 29,
-   "pages": [
-    260,
-    260
-   ]
-  }
- ],
- "status": "draft",
- "imagingHint": {
-  "plane": "coronal",
-  "mni": {
-   "x": 0,
-   "y": 2,
-   "z": -18
-  },
-  "label": "optic chiasm above the pituitary fossa"
- },
- "cameraPreset": "anterior"
+  "cameraPreset": "anterior"
 }
