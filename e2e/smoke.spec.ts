@@ -46,3 +46,32 @@ test('quiz answers and glossary render', async ({ page }) => {
   await page.goto('/#/glossary/g-decussation');
   await expect(page.locator('.gterm.active h3')).toContainText('Decussation');
 });
+
+test('real mouse input: click selects, drag orbits, nothing hidden covers the canvas', async ({ page }) => {
+  test.setTimeout(120_000);
+  await boot(page);
+  await page.waitForFunction(() => [...(window as unknown as { atlas: { registry: { loaded(): Iterable<unknown> } } }).atlas.registry.loaded()].length > 100, null, { timeout: 90_000 });
+  const box = (await page.locator('#gl').boundingBox())!;
+  const cx = box.x + box.width / 2, cy = box.y + box.height / 2;
+  // no [hidden] element may still be laid out (that was the bug: overlays with display:flex swallowed pointer events)
+  const covering = await page.evaluate(([x, y]) => {
+    const el = document.elementFromPoint(x!, y!);
+    const bad = [...document.querySelectorAll('[hidden]')].filter((e) => getComputedStyle(e).display !== 'none').map((e) => e.id || e.className);
+    return { center: el?.id ?? null, bad };
+  }, [cx, cy]);
+  expect(covering).toEqual({ center: 'gl', bad: [] });
+  await page.mouse.click(cx, cy);
+  await expect.poll(() => page.evaluate(() => (window as unknown as { atlas: { store: { get(): { selectedId: string | null } } } }).atlas.store.get().selectedId), { timeout: 10_000 }).not.toBeNull();
+  const before = await page.evaluate(() => (window as unknown as { atlas: { sm: { camera: { position: { toArray(): number[] } } } } }).atlas.sm.camera.position.toArray());
+  await page.mouse.move(cx - 80, cy);
+  await page.mouse.down();
+  for (let i = 1; i <= 10; i++) await page.mouse.move(cx - 80 + i * 16, cy + i * 4);
+  await page.mouse.up();
+  await page.waitForTimeout(600);
+  const after = await page.evaluate(() => (window as unknown as { atlas: { sm: { camera: { position: { toArray(): number[] } } } } }).atlas.sm.camera.position.toArray());
+  const moved = Math.hypot(after[0]! - before[0]!, after[1]! - before[1]!, after[2]! - before[2]!);
+  expect(moved).toBeGreaterThan(20);
+  // a drag must not count as a click (selection unchanged by the orbit)
+  const sel = await page.evaluate(() => (window as unknown as { atlas: { store: { get(): { selectedId: string | null } } } }).atlas.store.get().selectedId);
+  expect(sel).not.toBeNull();
+});

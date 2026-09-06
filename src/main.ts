@@ -44,6 +44,12 @@ async function boot(): Promise<void> {
       if (hit.id) selectStructure(app, hit.id, { moveSlices: !ev.shiftKey });
       else if (!ev.shiftKey) selectStructure(app, null);
     },
+    onFocus: (hit) => {
+      // double-click: frame the clicked structure (or the structure under the MRI slice); empty space re-centres on the brain
+      const id = hit.id ?? (hit.onSlice && hit.point ? structureAt(app, hit.point) : null);
+      if (id) selectStructure(app, id, { moveSlices: false, fit: true });
+      else app.sm.fitToBox(app.registry.sceneBounds());
+    },
   });
   app.picker.extra = Object.values(app.slices).map((s) => s.mesh);
 

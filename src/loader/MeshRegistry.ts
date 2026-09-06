@@ -102,6 +102,14 @@ export class MeshRegistry {
     if (m && m.visible !== v) { m.visible = v; this.pickCache = null; }
   }
 
+  /** World-space bounds of every visible loaded mesh (falls back to the manifest brain box). */
+  sceneBounds(): THREE.Box3 {
+    const box = new THREE.Box3();
+    for (const m of this.meshes.values()) if (m.visible) box.expandByObject(m);
+    if (box.isEmpty()) box.set(new THREE.Vector3(-75, -110, -75), new THREE.Vector3(75, 80, 90));
+    return box;
+  }
+
   pickables(): AtlasMesh[] {
     if (!this.pickCache) this.pickCache = Array.from(this.meshes.values()).filter((m) => m.visible);
     return this.pickCache;

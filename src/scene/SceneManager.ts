@@ -31,6 +31,14 @@ export class SceneManager {
     this.controls.dampingFactor = 0.12;
     this.controls.minDistance = 30;
     this.controls.maxDistance = 1500;
+    this.controls.zoomToCursor = true;
+    this.controls.rotateSpeed = 0.9;
+    this.controls.panSpeed = 0.9;
+    this.controls.screenSpacePanning = true;
+    this.controls.mouseButtons = { LEFT: THREE.MOUSE.ROTATE, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.PAN };
+    this.controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
+    // keep keyboard shortcuts working after the user interacts with the 3D view
+    canvas.addEventListener('pointerdown', () => canvas.focus({ preventScroll: true }));
     this.controls.addEventListener('change', () => this.requestRender());
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0x445566, 1.1));
     this.keyLight = new THREE.DirectionalLight(0xffffff, 1.6);
