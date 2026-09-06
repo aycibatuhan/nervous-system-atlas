@@ -1,0 +1,188 @@
+{
+ "kind": "structure",
+ "id": "reticular-formation-medullary-superior",
+ "name": "Superior medullary reticular formation",
+ "synonyms": [
+  "sMRt",
+  "rostral medullary reticular formation",
+  "gigantocellular reticular nucleus",
+  "rostral ventrolateral medulla"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "reticular-formation-medullary-superior-l",
+  "reticular-formation-medullary-superior-r",
+  "reticular-formation-medullary-superior-lateral-l",
+  "reticular-formation-medullary-superior-lateral-r",
+  "reticular-formation-medullary-superior-medial-l",
+  "reticular-formation-medullary-superior-medial-r"
+ ],
+ "summary": "The superior medullary reticular formation is the rostral half of the medullary reticular core, occupying the tegmentum from the pontomedullary junction down to about the level of the obex. It contains the gigantocellular nucleus and, in its ventrolateral corner, the rostral ventrolateral medulla, the cluster of sympathetic premotor neurons that sets resting arterial pressure. This is where the baroreflex is completed, where the respiratory rhythm is generated in the pre-Bötzinger complex a little more laterally, and where the descending pain modulatory pathway from the periaqueductal gray is relayed to the spinal cord alongside the raphe magnus. Its ascending projections contribute to arousal and its descending ones to postural tone, so a lesion here can produce coma, hemodynamic collapse and abnormal breathing at once. The 7 T atlas separates a medial and a lateral part.",
+ "anatomy": {
+  "location": "Tegmentum of the rostral medulla from the pontomedullary junction to about the obex, dorsal to the inferior olivary nucleus and the pyramid, ventral to the vagal and hypoglossal nuclear column, lateral to the midline raphe and medial to the spinal trigeminal complex. The nucleus ambiguus and the rostral ventrolateral medulla lie in its ventrolateral part. It is supplied by median and lateral perforators of the vertebral artery, by the anterior spinal artery and by the posterior inferior cerebellar artery, so both medial and lateral medullary syndromes encroach on it.",
+  "subdivisions": [
+   {
+    "name": "Medial part (sMRtm)",
+    "note": "Gigantocellular column giving rise to reticulospinal fibers and to ascending arousal collaterals"
+   },
+   {
+    "name": "Lateral part (sMRtl)",
+    "note": "Ventrolateral field holding the sympathetic premotor neurons and the ventral respiratory column"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Nucleus of the solitary tract",
+    "via": "baroreflex and chemoreflex input"
+   },
+   {
+    "from": "Cerebral cortex and hypothalamus",
+    "via": "corticoreticular and hypothalamoreticular fibers"
+   },
+   {
+    "from": "Periaqueductal gray",
+    "via": "descending pain modulatory fibers"
+   },
+   {
+    "from": "Spinal cord and trigeminal nuclei",
+    "via": "spinoreticular and trigeminoreticular fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Intermediolateral cell column",
+    "via": "sympathetic premotor projection"
+   },
+   {
+    "to": "Phrenic and intercostal motor pools",
+    "via": "respiratory drive"
+   },
+   {
+    "to": "Spinal cord",
+    "via": "reticulospinal tract"
+   },
+   {
+    "to": "Thalamus, hypothalamus and basal forebrain",
+    "via": "ascending arousal projection"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal",
+   "pathway-oculosympathetic"
+  ]
+ },
+ "function": "Sympathetic premotor neurons of the rostral ventrolateral medulla project directly to the intermediolateral cell column and maintain the tonic vasoconstrictor drive that produces resting blood pressure; they are inhibited through the caudal ventrolateral medulla by baroreceptor signals arriving in the nucleus of the solitary tract, which is the whole of the baroreflex arc. Neighboring neurons of the ventral respiratory column generate the inspiratory rhythm and pattern it with the pontine parabrachial nuclei. Gigantocellular neurons give rise to reticulospinal fibers that modulate axial and limb tone and relay corticoreticular commands for posture and locomotion, and the same territory relays descending analgesia from the periaqueductal gray to the dorsal horn. Ascending fibers reach the thalamus, hypothalamus and basal forebrain and contribute to the reticular activating system, while spinoreticular and trigeminoreticular afferents make pain and visceral distress raise arousal, blood pressure and ventilation together. This convergence is why the rostral medulla is the most autonomically dangerous few cubic centimeters in the nervous system.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "reticular-formation-medullary-superior-l"
+    },
+    "label": "reticular core of the rostral medulla with the ventrolateral medulla"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "reticular-formation-medullary-superior-r"
+    },
+    "label": "medullary tegmentum from the pontomedullary junction to the obex"
+   }
+  ],
+  "normalAppearance": "Homogeneous tegmental gray between the olive and the fourth ventricle floor on axial T2 of the upper medulla; the functional subregions are not separable at clinical field strength.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary (Wallenberg) infarct",
+    "modality": "MRI",
+    "finding": "Dorsolateral restricted diffusion with dysphagia, Horner syndrome, crossed sensory loss and, when extensive, failure of automatic breathing.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Medullary compression or herniation",
+    "modality": "CT",
+    "finding": "Tonsillar descent through the foramen magnum with bradycardia, hypertension and irregular breathing, the Cushing response.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Baroreflex failure",
+    "modality": "MRI",
+    "finding": "Structural imaging may be normal after surgery or radiation to the neck; volatile hypertension with tachycardia reflects loss of the afferent arm of the same reflex.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hypertension or hemodynamic collapse",
+    "side": "bilateral",
+    "mechanism": "Damage to the sympathetic premotor neurons of the rostral ventrolateral medulla"
+   },
+   {
+    "deficit": "Loss of automatic breathing with preserved voluntary breathing",
+    "side": "bilateral",
+    "mechanism": "Damage to the ventral respiratory column, Ondine's curse"
+   },
+   {
+    "deficit": "Coma",
+    "side": "bilateral",
+    "mechanism": "Interruption of the ascending reticular projection"
+   },
+   {
+    "deficit": "Loss of descending pain inhibition",
+    "side": "bilateral",
+    "mechanism": "Interruption of the relay from the periaqueductal gray to the dorsal horn"
+   }
+  ],
+  "examination": [
+   "Blood pressure and heart rate lying and standing, and their variability over time",
+   "Watch breathing during sleep as well as awake; automatic breathing fails first",
+   "Full brainstem reflex examination when consciousness is impaired"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-tonsillar-herniation",
+   "syn-basilar-occlusion"
+  ],
+  "pearls": [
+   "Resting blood pressure is generated by a few thousand neurons in the ventrolateral medulla",
+   "Ondine's curse is the loss of automatic breathing while voluntary breathing survives, and it kills during sleep",
+   "The Cushing response of hypertension, bradycardia and irregular breathing means the medulla is being compressed"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
+  },
+  {
+   "ref": "sp-reticular-formation"
+  },
+  {
+   "ref": "sp-autonomic-nervous-system"
+  }
+ ],
+ "tags": [
+  "blood pressure",
+  "respiration",
+  "arousal",
+  "reticular formation"
+ ],
+ "status": "draft",
+ "subsystem": "medulla",
+ "parent": "brainstem"
+}

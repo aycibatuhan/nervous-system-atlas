@@ -1,176 +1,183 @@
 {
-  "kind": "structure",
-  "id": "substantia-nigra",
-  "name": "Substantia nigra",
-  "synonyms": [],
-  "system": "brainstem",
-  "meshIds": [
-    "substantia-nigra-l",
-    "substantia-nigra-r",
-    "substantia-nigra-pars-compacta-l",
-    "substantia-nigra-pars-compacta-r",
-    "substantia-nigra-pars-reticulata-l",
-    "substantia-nigra-pars-reticulata-r"
+ "kind": "structure",
+ "id": "substantia-nigra",
+ "name": "Substantia nigra",
+ "synonyms": [],
+ "system": "brainstem",
+ "meshIds": [
+  "substantia-nigra-l",
+  "substantia-nigra-r",
+  "substantia-nigra-pars-compacta-l",
+  "substantia-nigra-pars-compacta-r",
+  "substantia-nigra-pars-reticulata-l",
+  "substantia-nigra-pars-reticulata-r",
+  "substantia-nigra-bsn-1-l",
+  "substantia-nigra-bsn-1-r",
+  "substantia-nigra-bsn-2-l",
+  "substantia-nigra-bsn-2-r"
+ ],
+ "summary": "A pigmented band of neurons between the crus cerebri and the tegmentum of the midbrain, black in fresh specimens because its dopaminergic neurons contain neuromelanin. The pars compacta sends dopamine to the striatum (nigrostriatal pathway) and dies in Parkinson disease; the pars reticulata is a GABAergic output nucleus like the internal pallidum, controlling the thalamus and, through the superior colliculus, saccades. Its loss produces bradykinesia, rigidity, rest tremor and postural instability, and it is the site of the swallow-tail sign lost on susceptibility-weighted MRI.",
+ "anatomy": {
+  "location": "Ventral midbrain tegmentum along the whole length of the midbrain, dorsal to the crus cerebri and ventral to the red nucleus and medial lemniscus, extending rostrally to the subthalamus.",
+  "subdivisions": [
+   {
+    "name": "Pars compacta",
+    "note": "densely packed dopaminergic neurons projecting to the striatum; degenerates in Parkinson disease, ventrolateral tier first"
+   },
+   {
+    "name": "Pars reticulata",
+    "note": "GABAergic output neurons projecting to the thalamus and superior colliculus; functionally continuous with the internal pallidum"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "putamen and caudate-nucleus",
+    "note": "striatonigral GABAergic"
+   },
+   {
+    "from": "subthalamic-nucleus",
+    "note": "to pars reticulata"
+   }
   ],
-  "summary": "A pigmented band of neurons between the crus cerebri and the tegmentum of the midbrain, black in fresh specimens because its dopaminergic neurons contain neuromelanin. The pars compacta sends dopamine to the striatum (nigrostriatal pathway) and dies in Parkinson disease; the pars reticulata is a GABAergic output nucleus like the internal pallidum, controlling the thalamus and, through the superior colliculus, saccades. Its loss produces bradykinesia, rigidity, rest tremor and postural instability, and it is the site of the swallow-tail sign lost on susceptibility-weighted MRI.",
-  "anatomy": {
-    "location": "Ventral midbrain tegmentum along the whole length of the midbrain, dorsal to the crus cerebri and ventral to the red nucleus and medial lemniscus, extending rostrally to the subthalamus.",
-    "subdivisions": [
-      {
-        "name": "Pars compacta",
-        "note": "densely packed dopaminergic neurons projecting to the striatum; degenerates in Parkinson disease, ventrolateral tier first"
-      },
-      {
-        "name": "Pars reticulata",
-        "note": "GABAergic output neurons projecting to the thalamus and superior colliculus; functionally continuous with the internal pallidum"
-      }
-    ]
-  },
-  "connections": {
-    "afferents": [
-      {
-        "from": "putamen and caudate-nucleus",
-        "note": "striatonigral GABAergic"
-      },
-      {
-        "from": "subthalamic-nucleus",
-        "note": "to pars reticulata"
-      }
-    ],
-    "efferents": [
-      {
-        "to": "putamen and caudate-nucleus",
-        "via": "nigrostriatal pathway",
-        "note": "dopamine"
-      },
-      {
-        "to": "thalamus-va-vl",
-        "note": "from pars reticulata"
-      },
-      {
-        "to": "superior-colliculus",
-        "note": "saccade gating"
-      }
-    ],
-    "pathways": [
-      "pathway-basal-ganglia-loops"
-    ]
-  },
-  "function": "Dopaminergic modulation of striatal activity enabling movement initiation and reward learning (pars compacta); tonic inhibition of thalamus and superior colliculus controlling movement and saccades (pars reticulata).",
-  "bloodSupply": {
-    "arteries": [
-      "artery-pca",
-      "arteries-thalamoperforating",
-      "artery-basilar"
-    ],
-    "territories": [
-      "territory-pca",
-      "territory-basilar-paramedian"
-    ]
-  },
-  "imaging": {
-    "bestView": [
-      {
-        "plane": "axial",
-        "mni": {
-          "x": 10,
-          "y": -20,
-          "z": -14
-        },
-        "label": "substantia nigra behind the crus cerebri at the level of the red nucleus"
-      },
-      {
-        "plane": "coronal",
-        "mni": {
-          "x": 10,
-          "y": -20,
-          "z": -14
-        },
-        "label": "pigmented band between crus and tegmentum"
-      }
-    ],
-    "normalAppearance": "A dark band behind the crus on T2 and SWI (iron), best seen at the level of the red nucleus; the dorsolateral nigral hyperintensity (swallow tail) on high-resolution SWI is lost in Parkinson disease, and neuromelanin-sensitive T1 shows reduced signal. Structural MRI is otherwise normal in idiopathic disease.",
-    "pathology": [
-      {
-        "pathology": "Parkinson disease",
-        "modality": "MRI",
-        "finding": "Loss of the swallow-tail sign on SWI and of neuromelanin signal in the pars compacta; dopamine transporter SPECT shows reduced putaminal uptake.",
-        "sequence": "SWI"
-      },
-      {
-        "pathology": "Midbrain infarct or hemorrhage",
-        "modality": "MRI",
-        "finding": "Paramedian midbrain lesion involving the nigra and adjacent structures: contralateral parkinsonism or hemiballismus with a third nerve palsy (Benedikt).",
-        "sequence": "DWI"
-      },
-      {
-        "pathology": "Progressive supranuclear palsy",
-        "modality": "MRI",
-        "finding": "Midbrain atrophy (hummingbird sign) with nigral involvement.",
-        "sequence": "T1"
-      }
-    ],
-    "sequenceOfChoice": "Axial SWI and T2 through the midbrain; dopamine transporter imaging"
-  },
-  "clinical": {
-    "lesionEffects": [
-      {
-        "deficit": "Bradykinesia, rigidity, rest tremor, postural instability",
-        "side": "contralateral",
-        "mechanism": "Loss of dopaminergic pars compacta neurons (symptoms appear after ~60% loss)"
-      },
-      {
-        "deficit": "Hemiparkinsonism after a unilateral lesion",
-        "side": "contralateral",
-        "mechanism": "Unilateral nigral damage"
-      },
-      {
-        "deficit": "Anhedonia and reduced motivation",
-        "side": "bilateral",
-        "mechanism": "Mesolimbic dopamine from the adjacent ventral tegmental area"
-      },
-      {
-        "deficit": "Hemiballismus or dystonia with tegmental lesions",
-        "side": "contralateral",
-        "mechanism": "Adjacent subthalamic and pallidothalamic pathways"
-      }
-    ],
-    "examination": [
-      "Finger tapping with decrement, rapid alternating movements, foot tapping",
-      "Rigidity at the wrist with activation",
-      "Rest tremor with distraction",
-      "Pull test and gait with arm swing",
-      "Ask about anosmia, REM sleep behavior disorder and constipation"
-    ],
-    "syndromes": [
-      "syn-parkinsonism",
-      "syn-benedikt",
-      "syn-weber"
-    ],
-    "pearls": [
-      "Asymmetric onset of bradykinesia with rest tremor and a good levodopa response is Parkinson disease; symmetric onset with early falls suggests an atypical syndrome",
-      "Neuroleptics block the same dopamine receptors and mimic nigral loss"
-    ]
-  },
-  "pitfalls": [],
-  "citations": [
-    {
-      "ref": "sp-substantia-nigra",
-      "section": "Structure and Function"
+  "efferents": [
+   {
+    "to": "putamen and caudate-nucleus",
+    "via": "nigrostriatal pathway",
+    "note": "dopamine"
+   },
+   {
+    "to": "thalamus-va-vl",
+    "note": "from pars reticulata"
+   },
+   {
+    "to": "superior-colliculus",
+    "note": "saccade gating"
+   }
+  ],
+  "pathways": [
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "Dopaminergic modulation of striatal activity enabling movement initiation and reward learning (pars compacta); tonic inhibition of thalamus and superior colliculus controlling movement and saccades (pars reticulata).",
+ "bloodSupply": {
+  "arteries": [
+   "artery-pca",
+   "arteries-thalamoperforating",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-basilar-paramedian"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 10,
+     "y": -20,
+     "z": -14
     },
-    {
-      "ref": "sp-brainstem",
-      "section": "Structure and Function"
+    "label": "substantia nigra behind the crus cerebri at the level of the red nucleus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 10,
+     "y": -20,
+     "z": -14
     },
-    {
-      "ref": "sp-cranial-nerve",
-      "section": "Structure and Function"
-    }
+    "label": "pigmented band between crus and tegmentum"
+   }
   ],
-  "tags": [
-    "basal-ganglia"
+  "normalAppearance": "A dark band behind the crus on T2 and SWI (iron), best seen at the level of the red nucleus; the dorsolateral nigral hyperintensity (swallow tail) on high-resolution SWI is lost in Parkinson disease, and neuromelanin-sensitive T1 shows reduced signal. Structural MRI is otherwise normal in idiopathic disease.",
+  "pathology": [
+   {
+    "pathology": "Parkinson disease",
+    "modality": "MRI",
+    "finding": "Loss of the swallow-tail sign on SWI and of neuromelanin signal in the pars compacta; dopamine transporter SPECT shows reduced putaminal uptake.",
+    "sequence": "SWI"
+   },
+   {
+    "pathology": "Midbrain infarct or hemorrhage",
+    "modality": "MRI",
+    "finding": "Paramedian midbrain lesion involving the nigra and adjacent structures: contralateral parkinsonism or hemiballismus with a third nerve palsy (Benedikt).",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Progressive supranuclear palsy",
+    "modality": "MRI",
+    "finding": "Midbrain atrophy (hummingbird sign) with nigral involvement.",
+    "sequence": "T1"
+   }
   ],
-  "status": "draft",
-  "latin": "Substantia nigra",
-  "subsystem": "midbrain"
+  "sequenceOfChoice": "Axial SWI and T2 through the midbrain; dopamine transporter imaging"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Bradykinesia, rigidity, rest tremor, postural instability",
+    "side": "contralateral",
+    "mechanism": "Loss of dopaminergic pars compacta neurons (symptoms appear after ~60% loss)"
+   },
+   {
+    "deficit": "Hemiparkinsonism after a unilateral lesion",
+    "side": "contralateral",
+    "mechanism": "Unilateral nigral damage"
+   },
+   {
+    "deficit": "Anhedonia and reduced motivation",
+    "side": "bilateral",
+    "mechanism": "Mesolimbic dopamine from the adjacent ventral tegmental area"
+   },
+   {
+    "deficit": "Hemiballismus or dystonia with tegmental lesions",
+    "side": "contralateral",
+    "mechanism": "Adjacent subthalamic and pallidothalamic pathways"
+   }
+  ],
+  "examination": [
+   "Finger tapping with decrement, rapid alternating movements, foot tapping",
+   "Rigidity at the wrist with activation",
+   "Rest tremor with distraction",
+   "Pull test and gait with arm swing",
+   "Ask about anosmia, REM sleep behavior disorder and constipation"
+  ],
+  "syndromes": [
+   "syn-parkinsonism",
+   "syn-benedikt",
+   "syn-weber"
+  ],
+  "pearls": [
+   "Asymmetric onset of bradykinesia with rest tremor and a good levodopa response is Parkinson disease; symmetric onset with early falls suggests an atypical syndrome",
+   "Neuroleptics block the same dopamine receptors and mimic nigral loss"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "ref": "sp-substantia-nigra",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-brainstem",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-cranial-nerve",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "oa-bianciardi-brainstem-nuclei-template"
+  }
+ ],
+ "tags": [
+  "basal-ganglia"
+ ],
+ "status": "draft",
+ "latin": "Substantia nigra",
+ "subsystem": "midbrain"
 }

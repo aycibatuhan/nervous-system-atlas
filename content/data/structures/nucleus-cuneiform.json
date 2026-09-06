@@ -1,0 +1,157 @@
+{
+ "kind": "structure",
+ "id": "nucleus-cuneiform",
+ "name": "Cuneiform nucleus",
+ "synonyms": [
+  "CnF",
+  "nucleus cuneiformis",
+  "mesencephalic locomotor region (with the pedunculopontine nucleus)"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "nucleus-cuneiform-l",
+  "nucleus-cuneiform-r"
+ ],
+ "summary": "The cuneiform nucleus is a glutamatergic cell group in the dorsolateral tegmentum of the caudal midbrain, packed between the periaqueductal gray and the lateral lemniscus and sitting just above and behind the pedunculopontine nucleus. Together with that neighbor it forms the mesencephalic locomotor region, the small patch of midbrain whose stimulation makes an animal walk and whose firing rate sets how fast. Where the pedunculopontine nucleus is cholinergic and concerned with starting and permitting movement, the cuneiform nucleus is the speed and urgency control: it drives fast, goal-directed and escape locomotion through the medullary reticulospinal system, and it is coupled to the defensive circuitry of the periaqueductal gray. Interest in it is clinical as well as physiological, because freezing of gait and falls in Parkinson disease resist dopamine and the mesencephalic locomotor region has become a deep brain stimulation target for them.",
+ "anatomy": {
+  "location": "Caudal midbrain tegmentum at the level of the inferior colliculus, immediately lateral to the periaqueductal gray and dorsal to the pedunculopontine nucleus, with the lateral lemniscus and the brachium of the inferior colliculus on its lateral side and the decussation of the superior cerebellar peduncles below and in front. It extends caudally toward the isthmus, where it merges with the isthmic reticular formation, and rostrally it thins out beneath the inferior collicular plate. Its blood comes from perforators of the superior cerebellar and posterior cerebral arteries.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Motor and premotor cortex",
+    "via": "corticotegmental fibers"
+   },
+   {
+    "from": "Substantia nigra pars reticulata and internal pallidum",
+    "via": "inhibitory nigrotegmental and pallidotegmental fibers"
+   },
+   {
+    "from": "Periaqueductal gray and lateral hypothalamus",
+    "via": "defensive and appetitive drive"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Gigantocellular reticular formation of the pons and medulla",
+    "via": "descending glutamatergic fibers"
+   },
+   {
+    "to": "Spinal locomotor networks",
+    "via": "medial reticulospinal tract"
+   },
+   {
+    "to": "Pedunculopontine nucleus and substantia nigra pars compacta",
+    "via": "local tegmental fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal"
+  ]
+ },
+ "function": "The cuneiform nucleus converts a decision to move into a locomotor command. Glutamatergic neurons project caudally to the gigantocellular and magnocellular reticular formation of the pons and medulla, which in turn drive the spinal pattern generators through the medial reticulospinal tract; the strength of that drive grades locomotor speed and gait pattern rather than simply switching walking on. Inputs arrive from the motor and premotor cortex, from the internal pallidum and the substantia nigra pars reticulata, whose tonic inhibition rises in parkinsonism, from the subthalamic nucleus, and from the lateral hypothalamus and the periaqueductal gray, which is why the same region drives escape running and the freezing that precedes it. The nucleus also contributes to postural set and to the autonomic adjustments that accompany effort, raising heart rate and ventilation before the first step is taken. Because its output is glutamatergic and reticulospinal rather than dopaminergic, its dysfunction produces axial motor failure that levodopa cannot correct, and stimulating it in animals restores locomotion after nigral lesions.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "artery-sca",
+   "arteries-pontine"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "nucleus-cuneiform-l"
+    },
+    "label": "cuneiform nucleus lateral to the periaqueductal gray at the inferior collicular level"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "nucleus-cuneiform-r"
+    },
+    "label": "dorsolateral tegmentum of the caudal midbrain"
+   }
+  ],
+  "normalAppearance": "Not resolvable on clinical MRI: the region appears as undifferentiated tegmental gray lateral to the aqueduct on axial T2 at the level of the inferior colliculus. On 7 T images with heavy T2-weighting it can be separated from the pedunculopontine nucleus, and diffusion tractography is used to place stimulating electrodes.",
+  "pathology": [
+   {
+    "pathology": "Freezing of gait in Parkinson disease",
+    "modality": "MRI",
+    "finding": "Structural MRI is normal or shows nonspecific midbrain atrophy; tractography of the mesencephalic locomotor region is used for electrode targeting and shows reduced connectivity with the medullary reticular formation.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Midbrain tegmental infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the dorsolateral tegmentum with gait failure, postural instability and hypersomnolence out of proportion to limb weakness.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Progressive supranuclear palsy",
+    "modality": "MRI",
+    "finding": "Midbrain atrophy with a concave superior profile; early falls reflect failure of the brainstem locomotor and postural systems rather than of the corticospinal tract.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Freezing of gait and slow, short-stepped walking",
+    "side": "bilateral",
+    "mechanism": "Loss of glutamatergic drive to the pontomedullary reticulospinal system"
+   },
+   {
+    "deficit": "Postural instability with backward falls",
+    "side": "bilateral",
+    "mechanism": "Failure of anticipatory postural adjustment"
+   },
+   {
+    "deficit": "Reduced escape and defensive responses",
+    "side": "bilateral",
+    "mechanism": "Disconnection from the periaqueductal gray"
+   }
+  ],
+  "examination": [
+   "Watch gait initiation, turning and walking through a doorway, the classic freezing provocations",
+   "Pull test for postural instability",
+   "Ask whether levodopa helps the legs; axial failure that ignores the drug points below the striatum"
+  ],
+  "syndromes": [
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "The mesencephalic locomotor region is two nuclei: the pedunculopontine permits walking, the cuneiform sets the pace",
+   "Gait that does not respond to dopamine is a brainstem problem, not an underdosed one",
+   "Escape running and freezing come from the same neighborhood, which is why fear changes gait"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-bianciardi-mesopontine-tegmental-template"
+  },
+  {
+   "ref": "sp-reticular-formation"
+  },
+  {
+   "ref": "sp-gait-disturbances"
+  }
+ ],
+ "tags": [
+  "locomotion",
+  "gait",
+  "deep brain stimulation"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

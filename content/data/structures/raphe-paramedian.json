@@ -1,0 +1,156 @@
+{
+ "kind": "structure",
+ "id": "raphe-paramedian",
+ "name": "Paramedian raphe nucleus",
+ "synonyms": [
+  "PMnR",
+  "nucleus raphes paramedianus",
+  "paramedian nucleus"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "raphe-paramedian"
+ ],
+ "summary": "The paramedian raphe nucleus is a serotonergic group lying just off the midline of the pontine tegmentum, immediately lateral to the median raphe nucleus with which it is usually considered together as the B8 cell group. Its distinguishing feature is its output to the hippocampus and the septum: through the fornix and the cingulum it supplies the septohippocampal system with serotonin, and by doing so it desynchronizes the hippocampal theta rhythm. Where the median raphe suppresses theta, the paramedian group contributes to the same control, so this small nucleus is part of the machinery that decides whether the hippocampus is in an exploratory, theta-dominated state or a quiet one. It is also part of the ascending serotonergic system that regulates mood, anxiety and sleep.",
+ "anatomy": {
+  "location": "Paramedian pontine tegmentum immediately lateral to the midline raphe at the level of the rostral pons, between the median raphe nucleus medially and the pontine reticular nucleus laterally, ventral to the medial longitudinal fasciculus and dorsal to the pontine base. It extends from the isthmus down toward the level of the abducens nucleus. Paramedian perforating branches of the basilar artery supply it, so it is caught in the same paramedian pontine infarcts that produce pure motor hemiparesis from damage to the pontine base a few millimeters in front of it.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal cortex",
+    "via": "corticofugal fibers"
+   },
+   {
+    "from": "Lateral habenula",
+    "via": "fasciculus retroflexus"
+   },
+   {
+    "from": "Hypothalamus and periaqueductal gray",
+    "via": "medial forebrain bundle and local fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Medial septum and hippocampus",
+    "via": "ascending serotonergic fibers through the fornix and cingulum"
+   },
+   {
+    "to": "Interpeduncular nucleus and prefrontal cortex",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Pontomedullary reticular formation",
+    "via": "descending serotonergic fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "The paramedian raphe sends serotonergic axons rostrally through the medial forebrain bundle to the medial septum, the hippocampus, the interpeduncular nucleus and the medial prefrontal cortex, and it receives the prefrontal cortex, the lateral habenula and the hypothalamus. Its hippocampal projection acts on the septohippocampal pacemaker: increased serotonergic tone suppresses the theta rhythm and shifts the hippocampus toward a desynchronized state, while a fall in tone allows theta to emerge during exploration and REM sleep. This gives the nucleus a role in the switching between encoding and consolidation states and, through the same targets, in anxiety and behavioral inhibition; drugs that raise synaptic serotonin change hippocampal rhythmicity through this route. Like the other serotonergic nuclei it is wake-active and REM-off, so its silence at REM onset helps permit the cholinergic activation of dreaming. Descending fibers reach the pontine and medullary reticular formation and modulate motor tone and pain transmission.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "arteries-pontine",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "raphe-paramedian"
+    },
+    "label": "paramedian raphe beside the midline of the pontine tegmentum"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "raphe-paramedian"
+    },
+    "label": "paramedian pontine tegmentum above the base of the pons"
+   }
+  ],
+  "normalAppearance": "Not visible on clinical MRI; the location is the paramedian tegmental strip on axial images at the level of the upper pons, just behind the transverse pontine fibers.",
+  "pathology": [
+   {
+    "pathology": "Paramedian pontine infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the paramedian pons, usually involving the base as well, with hemiparesis and often apathy or emotional change.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Depression and anxiety in neurodegenerative disease",
+    "modality": "PET",
+    "finding": "Reduced serotonin transporter binding in the brainstem raphe and hippocampus; MRI normal.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Osmotic demyelination",
+    "modality": "MRI",
+    "finding": "Central pontine T2 hyperintensity sparing the periphery, involving the paramedian tegmentum in severe cases.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Anxiety and behavioral inhibition",
+    "side": "bilateral",
+    "mechanism": "Loss of serotonergic projection to the septohippocampal system and prefrontal cortex"
+   },
+   {
+    "deficit": "Altered hippocampal rhythmicity and memory encoding",
+    "side": "bilateral",
+    "mechanism": "Loss of serotonergic control of theta"
+   },
+   {
+    "deficit": "Sleep fragmentation",
+    "side": "bilateral",
+    "mechanism": "Loss of wake-active serotonergic tone"
+   }
+  ],
+  "examination": [
+   "Ask about anxiety and rumination as well as low mood",
+   "Sleep history focused on fragmentation and early waking",
+   "Look for paramedian pontine long-tract signs that would place a lesion here"
+  ],
+  "syndromes": [
+   "syn-lacunar-pure-motor"
+  ],
+  "pearls": [
+   "The paramedian raphe writes to the hippocampus and turns the theta rhythm down",
+   "Serotonergic nuclei are wake-active and REM-off; their silence is what permits dreaming",
+   "Midline pontine nuclei are supplied by paramedian perforators, so mood change can accompany a lacunar hemiparesis"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-bianciardi-mesopontine-tegmental-template"
+  },
+  {
+   "ref": "sp-nucleus-raphe"
+  },
+  {
+   "ref": "sp-serotonin-2"
+  }
+ ],
+ "tags": [
+  "serotonin",
+  "theta rhythm",
+  "raphe"
+ ],
+ "status": "draft",
+ "subsystem": "pons",
+ "parent": "brainstem"
+}

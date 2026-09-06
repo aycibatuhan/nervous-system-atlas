@@ -1,0 +1,191 @@
+{
+ "kind": "structure",
+ "id": "reticular-formation-mesencephalic",
+ "name": "Mesencephalic reticular formation",
+ "synonyms": [
+  "mRt",
+  "midbrain reticular formation",
+  "mesencephalic tegmental reticular field"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "reticular-formation-mesencephalic-l",
+  "reticular-formation-mesencephalic-r",
+  "reticular-formation-mesencephalic-anterior-l",
+  "reticular-formation-mesencephalic-anterior-r",
+  "reticular-formation-mesencephalic-dorsal-l",
+  "reticular-formation-mesencephalic-dorsal-r",
+  "reticular-formation-mesencephalic-lateral-l",
+  "reticular-formation-mesencephalic-lateral-r"
+ ],
+ "summary": "The mesencephalic reticular formation is the diffuse core of the midbrain tegmentum, lying between the periaqueductal gray behind, the red nucleus and substantia nigra in front and the medial lemniscus laterally. It is the rostral end of the ascending reticular activating system, the point at which brainstem arousal signals hand over to the thalamus, the hypothalamus and the basal forebrain, and lesions here cause coma more reliably than lesions anywhere else in the brainstem. Embedded within it are the premotor structures for vertical gaze, the interstitial nucleus of Cajal and the rostral interstitial nucleus of the medial longitudinal fasciculus, so the same region controls upward and downward saccades, ocular torsion and head-eye coordination. The 7 T atlas divides it into anterior, dorsal and lateral parts, which the atlas offers as hidden subdivisions of this structure.",
+ "anatomy": {
+  "location": "Central tegmentum of the midbrain from the level of the superior colliculus to the isthmus, bounded dorsally by the periaqueductal gray, ventrally by the red nucleus and the substantia nigra, medially by the midline raphe and the medial longitudinal fasciculus and laterally by the medial lemniscus and the spinothalamic tract. The oculomotor and trochlear nuclei and their fascicles run through it, as do the superior cerebellar peduncle fibers on their way to the red nucleus and thalamus. Perfusion comes from paramedian midbrain perforators of the basilar tip and posterior cerebral arteries and from short circumferential branches.",
+  "subdivisions": [
+   {
+    "name": "Anterior part (mRta)",
+    "note": "Ventral tegmental field next to the red nucleus, closely tied to the descending and oculomotor systems"
+   },
+   {
+    "name": "Dorsal part (mRtd)",
+    "note": "Field beneath the periaqueductal gray holding the vertical gaze premotor neurons"
+   },
+   {
+    "name": "Lateral part (mRtl)",
+    "note": "Field alongside the medial lemniscus receiving spinoreticular and collicular input"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal, cingulate and frontal eye field cortex",
+    "via": "corticoreticular fibers"
+   },
+   {
+    "from": "Spinal cord and trigeminal nuclei",
+    "via": "spinoreticular and trigeminoreticular fibers"
+   },
+   {
+    "from": "Superior colliculus, cerebellum and periaqueductal gray",
+    "via": "tectoreticular, cerebelloreticular and periaqueductal fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Intralaminar, midline and reticular thalamic nuclei",
+    "via": "ascending arousal projection"
+   },
+   {
+    "to": "Basal forebrain and posterior hypothalamus",
+    "via": "ascending reticular fibers"
+   },
+   {
+    "to": "Oculomotor and trochlear nuclei",
+    "via": "vertical gaze premotor fibers"
+   },
+   {
+    "to": "Spinal cord",
+    "via": "reticulospinal and tectospinal tracts"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal",
+   "pathway-vertical-gaze",
+   "pathway-tectospinal"
+  ]
+ },
+ "function": "This region is where arousal is generated and gaze is composed. Glutamatergic and cholinergic reticular neurons project to the intralaminar, midline and reticular nuclei of the thalamus and to the basal forebrain and posterior hypothalamus, and their tonic firing keeps the cortex desynchronized and responsive; the projection is bilateral, so unilateral damage rarely causes coma while bilateral paramedian damage does. Within the same territory the rostral interstitial nucleus of the medial longitudinal fasciculus generates vertical and torsional saccades and the interstitial nucleus of Cajal holds vertical gaze position and coordinates eye and head torsion through the posterior commissure, so lesions here produce upgaze or downgaze palsy, skew deviation and ocular tilt reactions. Descending fibers join the reticulospinal and tectospinal systems to orient the head, and reciprocal connections with the superior colliculus, the frontal eye field, the cerebellum and the periaqueductal gray tie orienting, arousal and defensive behavior together. Spinoreticular and trigeminoreticular afferents let pain wake the brain.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "reticular-formation-mesencephalic-l"
+    },
+    "label": "tegmental core of the midbrain behind the red nucleus"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "reticular-formation-mesencephalic-r"
+    },
+    "label": "midbrain tegmentum from the superior colliculus to the isthmus"
+   }
+  ],
+  "normalAppearance": "The midbrain tegmentum is uniform intermediate signal on T1 and T2, bounded by the darker substantia nigra and red nucleus in front and the aqueduct behind; the reticular formation cannot be resolved as a separate structure at clinical field strength.",
+  "pathology": [
+   {
+    "pathology": "Bilateral paramedian midbrain infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the paramedian tegmentum, often with medial thalamic infarction from an artery of Percheron, producing coma, vertical gaze palsy and amnesia.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Central transtentorial herniation",
+    "modality": "CT",
+    "finding": "Downward displacement of the midbrain with effacement of the perimesencephalic cisterns and Duret hemorrhages; progressive loss of arousal with midposition fixed pupils.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Symmetric FLAIR hyperintensity of the periaqueductal gray, medial thalami and mammillary bodies with confusion, ophthalmoplegia and ataxia.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Coma",
+    "side": "bilateral",
+    "mechanism": "Interruption of the bilateral ascending arousal projection to thalamus and basal forebrain"
+   },
+   {
+    "deficit": "Vertical gaze palsy and skew deviation",
+    "side": "bilateral",
+    "mechanism": "Damage to the vertical saccade generator in the rostral interstitial nucleus of the medial longitudinal fasciculus, and to Cajal's interstitial nucleus"
+   },
+   {
+    "deficit": "Ocular tilt reaction with head tilt and torsion",
+    "side": "ipsilateral",
+    "mechanism": "Loss of the graviceptive pathway through the interstitial nucleus of Cajal"
+   },
+   {
+    "deficit": "Akinetic mutism and abulia",
+    "side": "bilateral",
+    "mechanism": "Loss of ascending drive to the thalamus and cingulate cortex"
+   }
+  ],
+  "examination": [
+   "Grade arousal by the stimulus needed to elicit a response and by what the eyes do",
+   "Vertical saccades up and down, then the oculocephalic maneuver",
+   "Look for skew deviation and ocular counter-roll, which localize to this tegmentum"
+  ],
+  "syndromes": [
+   "syn-top-of-basilar",
+   "syn-parinaud-dorsal-midbrain",
+   "syn-central-transtentorial-herniation",
+   "syn-wernicke-korsakoff"
+  ],
+  "pearls": [
+   "Coma is a midbrain and upper pontine sign until proved otherwise: the cortex needs both sides of this tegmentum",
+   "Vertical gaze lives in the midbrain, horizontal gaze in the pons",
+   "An artery of Percheron infarct gives coma, upgaze palsy and amnesia from one small vessel"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-singh-mesencephalic-reticular-formation-atlas"
+  },
+  {
+   "ref": "sp-reticular-activating-system"
+  },
+  {
+   "ref": "sp-coma"
+  }
+ ],
+ "tags": [
+  "arousal",
+  "coma",
+  "vertical gaze",
+  "reticular formation"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

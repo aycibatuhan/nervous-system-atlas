@@ -8,7 +8,7 @@
   ],
   "type": "descending",
   "modality": "axial and proximal muscle control",
-  "summary": "The 10–15% of pyramidal fibers that do not cross in the medulla continue down the anterior funiculus beside the anterior median fissure as the anterior (ventral) corticospinal tract. Most of them cross at their segment of termination through the anterior white commissure to reach motor neurons of the trunk and proximal limb muscles, and some end bilaterally, so axial muscles have bilateral cortical control. This is why trunk and neck strength are relatively preserved in hemiplegia and why bilateral corticospinal lesions are needed to paralyze the trunk.",
+  "summary": "The 10\u201315% of pyramidal fibers that do not cross in the medulla continue down the anterior funiculus beside the anterior median fissure as the anterior (ventral) corticospinal tract. Most of them cross at their segment of termination through the anterior white commissure to reach motor neurons of the trunk and proximal limb muscles, and some end bilaterally, so axial muscles have bilateral cortical control. This is why trunk and neck strength are relatively preserved in hemiplegia and why bilateral corticospinal lesions are needed to paralyze the trunk.",
   "origin": {
     "structures": [
       "gyrus-precentral",
@@ -56,14 +56,14 @@
     {
       "order": 4,
       "structureId": "spinal-white-columns",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "ipsilateral",
       "note": "anterior funiculus beside the anterior median fissure, cervical and upper thoracic segments mainly"
     },
     {
       "order": 5,
       "structureId": "spinal-grey-anterior-horn",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "bilateral",
       "note": "medial motor column via the anterior white commissure"
     }

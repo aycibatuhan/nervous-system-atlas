@@ -43,6 +43,21 @@ export interface VolumeFile {
   level?: number;
   spacing?: [number, number, number];
   lut?: string;
+  /** set on volumes that do not live on the MNI brain grid (the cord MRI has its own affine) */
+  space?: 'cord';
+  origin_ras?: [number, number, number];
+  affine_ras?: number[][];
+}
+
+/** A volume grid other than the 193x229x193 brain box. */
+export interface ExtraGrid {
+  shape: [number, number, number];
+  spacing: [number, number, number];
+  origin_ras: [number, number, number];
+  affine_ras: number[][];
+  source: string;
+  license: string;
+  reformat?: Record<string, unknown>;
 }
 
 export interface Manifest {
@@ -51,6 +66,8 @@ export interface Manifest {
   space: 'MNI152NLin2009cAsym';
   grid: { shape: [number, number, number]; spacing: [number, number, number]; origin_ras: [number, number, number]; affine_ras: number[][] };
   volumes: Record<string, VolumeFile>;
+  /** extra volume grids; `cord` is the PAM50 curved-reformat cord MRI, absent until atlas-pam50 has run */
+  grids?: { cord?: ExtraGrid };
   transforms: Record<string, unknown>;
   systems: { id: SystemId; name: string; colour: string; defaultVisible: boolean }[];
   licenses: Record<string, { name: string; url: string; attribution: string; nc: boolean; text: string }>;

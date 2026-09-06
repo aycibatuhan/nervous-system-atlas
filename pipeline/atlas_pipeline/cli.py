@@ -35,6 +35,9 @@ def build_all():
 def zanatomy_register():
     from .zanatomy import main_register; main_register()
 
+def zanatomy_midline():
+    from .midline import main; main()
+
 def zanatomy_meshes():
     from .zanatomy import main_meshes; main_meshes()
 
@@ -46,3 +49,6 @@ def brainstem_nav():
 
 def derived():
     from .derived import main; main()
+
+def pam50():
+    from .pam50 import main; main()

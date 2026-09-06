@@ -1,2207 +1,2321 @@
 {
- "generated": "2026-09-05",
- "entries": [
-  {
-   "id": "lobe-frontal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Frontal lobe"
-  },
-  {
-   "id": "gyrus-precentral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Precentral gyrus (primary motor cortex)"
-  },
-  {
-   "id": "cortex-premotor-sma",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Premotor cortex and supplementary motor area"
-  },
-  {
-   "id": "area-broca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Broca's area"
-  },
-  {
-   "id": "cortex-prefrontal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Prefrontal cortex"
-  },
-  {
-   "id": "frontal-eye-field",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Frontal eye field"
-  },
-  {
-   "id": "lobe-parietal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Parietal lobe"
-  },
-  {
-   "id": "gyrus-postcentral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Postcentral gyrus (primary somatosensory cortex)"
-  },
-  {
-   "id": "lobule-superior-parietal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior parietal lobule"
-  },
-  {
-   "id": "gyrus-supramarginal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Supramarginal gyrus"
-  },
-  {
-   "id": "gyrus-angular",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Angular gyrus"
-  },
-  {
-   "id": "lobe-temporal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Temporal lobe"
-  },
-  {
-   "id": "gyrus-heschl",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Heschl's gyrus (primary auditory cortex)"
-  },
-  {
-   "id": "area-wernicke",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Wernicke's area"
-  },
-  {
-   "id": "gyrus-parahippocampal-uncus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Parahippocampal gyrus and uncus"
-  },
-  {
-   "id": "lobe-occipital",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Occipital lobe"
-  },
-  {
-   "id": "cortex-calcarine",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Calcarine (primary visual) cortex"
-  },
-  {
-   "id": "insula",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Insula"
-  },
-  {
-   "id": "gyrus-cingulate",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cingulate gyrus"
-  },
-  {
-   "id": "corpus-callosum",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Corpus callosum"
-  },
-  {
-   "id": "fornix",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Fornix"
-  },
-  {
-   "id": "hippocampus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Hippocampus"
-  },
-  {
-   "id": "amygdala",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Amygdala"
-  },
-  {
-   "id": "internal-capsule",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Internal capsule"
-  },
-  {
-   "id": "corona-radiata",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Corona radiata"
-  },
-  {
-   "id": "caudate-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Caudate nucleus"
-  },
-  {
-   "id": "putamen",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Putamen"
-  },
-  {
-   "id": "globus-pallidus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Globus pallidus"
-  },
-  {
-   "id": "substantia-nigra",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Substantia nigra"
-  },
-  {
-   "id": "subthalamic-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Subthalamic nucleus"
-  },
-  {
-   "id": "thalamus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Thalamus"
-  },
-  {
-   "id": "thalamus-vpl",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Ventral posterolateral nucleus (VPL)"
-  },
-  {
-   "id": "thalamus-vpm",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Ventral posteromedial nucleus (VPM)"
-  },
-  {
-   "id": "thalamus-va-vl",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Ventral anterior and ventral lateral nuclei"
-  },
-  {
-   "id": "thalamus-anterior-nuclei",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior thalamic nuclei"
-  },
-  {
-   "id": "thalamus-mediodorsal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Mediodorsal nucleus"
-  },
-  {
-   "id": "thalamus-pulvinar",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pulvinar"
-  },
-  {
-   "id": "lateral-geniculate-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lateral geniculate nucleus"
-  },
-  {
-   "id": "medial-geniculate-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medial geniculate nucleus"
-  },
-  {
-   "id": "hypothalamus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Hypothalamus"
-  },
-  {
-   "id": "pituitary-infundibulum",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pituitary gland and infundibulum"
-  },
-  {
-   "id": "mammillary-body",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Mammillary bodies"
-  },
-  {
-   "id": "pineal-gland",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pineal gland"
-  },
-  {
-   "id": "optic-chiasm",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Optic chiasm"
-  },
-  {
-   "id": "ventricle-lateral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lateral ventricles"
-  },
-  {
-   "id": "ventricle-third",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Third ventricle"
-  },
-  {
-   "id": "cerebral-aqueduct",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cerebral aqueduct"
-  },
-  {
-   "id": "ventricle-fourth",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Fourth ventricle"
-  },
-  {
-   "id": "choroid-plexus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Choroid plexus and CSF production"
-  },
-  {
-   "id": "subarachnoid-space-cisterns",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Subarachnoid space and basal cisterns"
-  },
-  {
-   "id": "arachnoid-granulations",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Arachnoid granulations"
-  },
-  {
-   "id": "level-medulla-pyramidal-decussation",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medulla: level of the pyramidal decussation"
-  },
-  {
-   "id": "level-medulla-sensory-decussation",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medulla: level of the sensory (lemniscal) decussation"
-  },
-  {
-   "id": "level-medulla-olive",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medulla: level of the inferior olive"
-  },
-  {
-   "id": "level-pons-caudal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Caudal pons (facial colliculus level)"
-  },
-  {
-   "id": "level-pons-rostral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Rostral pons"
-  },
-  {
-   "id": "level-midbrain-inferior-colliculus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Midbrain: inferior colliculus level"
-  },
-  {
-   "id": "level-midbrain-superior-colliculus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Midbrain: superior colliculus level"
-  },
-  {
-   "id": "pyramid",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medullary pyramid and pyramidal decussation"
-  },
-  {
-   "id": "medial-lemniscus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medial lemniscus"
-  },
-  {
-   "id": "nucleus-gracilis-cuneatus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Gracile and cuneate nuclei"
-  },
-  {
-   "id": "inferior-olivary-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Inferior olivary nucleus"
-  },
-  {
-   "id": "nucleus-ambiguus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Nucleus ambiguus"
-  },
-  {
-   "id": "dorsal-motor-nucleus-vagus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Dorsal motor nucleus of the vagus"
-  },
-  {
-   "id": "nucleus-solitarius",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Nucleus of the solitary tract"
-  },
-  {
-   "id": "spinal-trigeminal-nucleus-tract",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Spinal trigeminal nucleus and tract"
-  },
-  {
-   "id": "hypoglossal-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Hypoglossal nucleus"
-  },
-  {
-   "id": "vestibular-nuclei",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Vestibular nuclei"
-  },
-  {
-   "id": "cochlear-nuclei",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cochlear nuclei"
-  },
-  {
-   "id": "inferior-cerebellar-peduncle",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Inferior cerebellar peduncle"
-  },
-  {
-   "id": "medial-longitudinal-fasciculus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Medial longitudinal fasciculus"
-  },
-  {
-   "id": "abducens-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Abducens nucleus"
-  },
-  {
-   "id": "facial-motor-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Facial motor nucleus"
-  },
-  {
-   "id": "pprf",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Paramedian pontine reticular formation"
-  },
-  {
-   "id": "pontine-nuclei",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pontine nuclei and transverse pontine fibers"
-  },
-  {
-   "id": "middle-cerebellar-peduncle",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Middle cerebellar peduncle"
-  },
-  {
-   "id": "superior-cerebellar-peduncle",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior cerebellar peduncle"
-  },
-  {
-   "id": "trigeminal-nuclei",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Trigeminal sensory and motor nuclei"
-  },
-  {
-   "id": "superior-olivary-complex",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior olivary complex and lateral lemniscus"
-  },
-  {
-   "id": "cerebral-peduncle-crus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Crus cerebri (cerebral peduncle)"
-  },
-  {
-   "id": "red-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Red nucleus"
-  },
-  {
-   "id": "oculomotor-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Oculomotor and Edinger-Westphal nuclei"
-  },
-  {
-   "id": "trochlear-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Trochlear nucleus"
-  },
-  {
-   "id": "superior-colliculus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior colliculus"
-  },
-  {
-   "id": "inferior-colliculus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Inferior colliculus"
-  },
-  {
-   "id": "periaqueductal-grey",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Periaqueductal grey"
-  },
-  {
-   "id": "pretectal-area",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pretectal area"
-  },
-  {
-   "id": "reticular-formation",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Reticular formation"
-  },
-  {
-   "id": "rimlf",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Rostral interstitial nucleus of the MLF (vertical gaze centre)"
-  },
-  {
-   "id": "cerebellum",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cerebellum"
-  },
-  {
-   "id": "cerebellar-hemisphere",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cerebellar hemispheres (lateral zone)"
-  },
-  {
-   "id": "cerebellar-vermis",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Vermis"
-  },
-  {
-   "id": "flocculonodular-lobe",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Flocculonodular lobe"
-  },
-  {
-   "id": "cerebellar-tonsil",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cerebellar tonsil"
-  },
-  {
-   "id": "dentate-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Dentate nucleus"
-  },
-  {
-   "id": "interposed-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Interposed nuclei"
-  },
-  {
-   "id": "fastigial-nucleus",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Fastigial nucleus"
-  },
-  {
-   "id": "spinal-cord",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Spinal cord"
-  },
-  {
-   "id": "spinal-grey-anterior-horn",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior (ventral) horn"
-  },
-  {
-   "id": "spinal-grey-posterior-horn",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Posterior (dorsal) horn"
-  },
-  {
-   "id": "intermediolateral-column",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Intermediolateral cell column"
-  },
-  {
-   "id": "spinal-white-columns",
-   "kind": "structure",
-   "tier": "core",
-   "name": "White columns of the spinal cord"
-  },
-  {
-   "id": "cervical-enlargement",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cervical and lumbosacral enlargements"
-  },
-  {
-   "id": "conus-medullaris",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Conus medullaris"
-  },
-  {
-   "id": "cauda-equina",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cauda equina"
-  },
-  {
-   "id": "segment-vertebral-levels",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Spinal segments versus vertebral levels"
-  },
-  {
-   "id": "dorsal-root-ganglion",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Dorsal root ganglion"
-  },
-  {
-   "id": "spinal-nerve-root-dermatome",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Spinal nerve roots and dermatomes"
-  },
-  {
-   "id": "sympathetic-trunk",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Sympathetic trunk and ganglia"
-  },
-  {
-   "id": "anterior-spinal-artery",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior spinal artery"
-  },
-  {
-   "id": "posterior-spinal-arteries",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Posterior spinal arteries"
-  },
-  {
-   "id": "artery-adamkiewicz",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Artery of Adamkiewicz"
-  },
-  {
-   "id": "dura-mater",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Dura mater"
-  },
-  {
-   "id": "falx-cerebri",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Falx cerebri"
-  },
-  {
-   "id": "tentorium-cerebelli",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Tentorium cerebelli and incisura"
-  },
-  {
-   "id": "arachnoid-mater",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Arachnoid mater"
-  },
-  {
-   "id": "pia-mater",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pia mater"
-  },
-  {
-   "id": "meningeal-spaces",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Epidural, subdural and subarachnoid spaces"
-  },
-  {
-   "id": "sinus-superior-sagittal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior sagittal sinus"
-  },
-  {
-   "id": "sinus-straight",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Straight sinus and inferior sagittal sinus"
-  },
-  {
-   "id": "sinus-transverse-sigmoid",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Transverse and sigmoid sinuses"
-  },
-  {
-   "id": "sinus-cavernous",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cavernous sinus"
-  },
-  {
-   "id": "sinus-petrosal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior and inferior petrosal sinuses"
-  },
-  {
-   "id": "vein-great-cerebral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Great cerebral vein and deep venous system"
-  },
-  {
-   "id": "veins-superficial-cerebral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superficial cerebral (bridging) veins"
-  },
-  {
-   "id": "artery-internal-carotid",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Internal carotid artery"
-  },
-  {
-   "id": "artery-ophthalmic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Ophthalmic artery"
-  },
-  {
-   "id": "artery-anterior-choroidal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior choroidal artery"
-  },
-  {
-   "id": "artery-aca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior cerebral artery"
-  },
-  {
-   "id": "artery-acom",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior communicating artery"
-  },
-  {
-   "id": "artery-mca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Middle cerebral artery"
-  },
-  {
-   "id": "artery-mca-superior-division",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Middle cerebral artery, superior division"
-  },
-  {
-   "id": "artery-mca-inferior-division",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Middle cerebral artery, inferior division"
-  },
-  {
-   "id": "arteries-lenticulostriate",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lenticulostriate arteries"
-  },
-  {
-   "id": "artery-pcom",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Posterior communicating artery"
-  },
-  {
-   "id": "artery-pca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Posterior cerebral artery"
-  },
-  {
-   "id": "arteries-thalamoperforating",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Thalamoperforating and thalamogeniculate arteries"
-  },
-  {
-   "id": "artery-vertebral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Vertebral artery"
-  },
-  {
-   "id": "artery-basilar",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Basilar artery"
-  },
-  {
-   "id": "artery-pica",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Posterior inferior cerebellar artery"
-  },
-  {
-   "id": "artery-aica",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior inferior cerebellar artery"
-  },
-  {
-   "id": "artery-sca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior cerebellar artery"
-  },
-  {
-   "id": "arteries-pontine",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pontine (paramedian and circumferential) arteries"
-  },
-  {
-   "id": "circle-of-willis",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Circle of Willis"
-  },
-  {
-   "id": "territory-aca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "ACA territory"
-  },
-  {
-   "id": "territory-mca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "MCA territory"
-  },
-  {
-   "id": "territory-pca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "PCA territory"
-  },
-  {
-   "id": "territory-lenticulostriate",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lenticulostriate (deep MCA) territory"
-  },
-  {
-   "id": "territory-anterior-choroidal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Anterior choroidal territory"
-  },
-  {
-   "id": "territory-watershed",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Watershed (borderzone) territories"
-  },
-  {
-   "id": "territory-pica-lateral-medulla",
-   "kind": "structure",
-   "tier": "core",
-   "name": "PICA / lateral medullary territory"
-  },
-  {
-   "id": "territory-aica",
-   "kind": "structure",
-   "tier": "core",
-   "name": "AICA territory"
-  },
-  {
-   "id": "territory-sca",
-   "kind": "structure",
-   "tier": "core",
-   "name": "SCA territory"
-  },
-  {
-   "id": "territory-basilar-paramedian",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Basilar paramedian (pontine) territory"
-  },
-  {
-   "id": "plexus-brachial",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Brachial plexus"
-  },
-  {
-   "id": "nerve-phrenic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Phrenic nerve"
-  },
-  {
-   "id": "nerve-long-thoracic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Long thoracic nerve"
-  },
-  {
-   "id": "nerve-suprascapular",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Suprascapular nerve"
-  },
-  {
-   "id": "nerve-axillary",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Axillary nerve"
-  },
-  {
-   "id": "nerve-musculocutaneous",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Musculocutaneous nerve"
-  },
-  {
-   "id": "nerve-median",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Median nerve"
-  },
-  {
-   "id": "nerve-ulnar",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Ulnar nerve"
-  },
-  {
-   "id": "nerve-radial",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Radial nerve"
-  },
-  {
-   "id": "roots-c5-t1",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cervical roots C5\u2013T1"
-  },
-  {
-   "id": "plexus-lumbosacral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lumbar and sacral plexuses"
-  },
-  {
-   "id": "nerve-femoral",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Femoral nerve"
-  },
-  {
-   "id": "nerve-obturator",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Obturator nerve"
-  },
-  {
-   "id": "nerve-lateral-femoral-cutaneous",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lateral femoral cutaneous nerve"
-  },
-  {
-   "id": "nerve-sciatic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Sciatic nerve"
-  },
-  {
-   "id": "nerve-tibial",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Tibial nerve"
-  },
-  {
-   "id": "nerve-common-peroneal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Common (and deep/superficial) peroneal nerve"
-  },
-  {
-   "id": "roots-l2-s1",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Lumbosacral roots L2\u2013S1"
-  },
-  {
-   "id": "neuromuscular-junction",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Neuromuscular junction"
-  },
-  {
-   "id": "motor-unit",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Motor unit and skeletal muscle"
-  },
-  {
-   "id": "autonomic-cranial-parasympathetic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cranial parasympathetic outflow"
-  },
-  {
-   "id": "autonomic-sacral-parasympathetic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Sacral parasympathetic outflow and bladder control"
-  },
-  {
-   "id": "cervical-sympathetic-chain",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Cervical sympathetic chain and stellate ganglion"
-  },
-  {
-   "id": "ganglion-trigeminal",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Trigeminal ganglion"
-  },
-  {
-   "id": "ganglion-geniculate",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Geniculate ganglion"
-  },
-  {
-   "id": "ganglion-ciliary",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Ciliary ganglion"
-  },
-  {
-   "id": "ganglion-pterygopalatine",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Pterygopalatine ganglion"
-  },
-  {
-   "id": "ganglion-otic",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Otic ganglion"
-  },
-  {
-   "id": "ganglion-submandibular",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Submandibular ganglion"
-  },
-  {
-   "id": "ganglion-superior-cervical",
-   "kind": "structure",
-   "tier": "core",
-   "name": "Superior cervical ganglion"
-  },
-  {
-   "id": "septal-area",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Septal area"
-  },
-  {
-   "id": "claustrum",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Claustrum"
-  },
-  {
-   "id": "nucleus-accumbens",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Nucleus accumbens"
-  },
-  {
-   "id": "habenula",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Habenula"
-  },
-  {
-   "id": "area-postrema",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Area postrema"
-  },
-  {
-   "id": "locus-coeruleus",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Locus coeruleus"
-  },
-  {
-   "id": "raphe-nuclei",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Raphe nuclei"
-  },
-  {
-   "id": "cerebellar-cortex-layers",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Cerebellar cortex: layers and circuitry"
-  },
-  {
-   "id": "veins-deep-cerebral",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Deep cerebral veins"
-  },
-  {
-   "id": "artery-labyrinthine",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Labyrinthine artery"
-  },
-  {
-   "id": "nerve-sural",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Sural nerve"
-  },
-  {
-   "id": "nerve-pudendal",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Pudendal nerve"
-  },
-  {
-   "id": "splanchnic-nerves",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Splanchnic nerves"
-  },
-  {
-   "id": "cn-01-olfactory",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Olfactory nerve (CN I)"
-  },
-  {
-   "id": "cn-02-optic",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Optic nerve (CN II)"
-  },
-  {
-   "id": "cn-03-oculomotor",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Oculomotor nerve (CN III)"
-  },
-  {
-   "id": "cn-04-trochlear",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Trochlear nerve (CN IV)"
-  },
-  {
-   "id": "cn-05-trigeminal",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Trigeminal nerve (CN V)"
-  },
-  {
-   "id": "cn-06-abducens",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Abducens nerve (CN VI)"
-  },
-  {
-   "id": "cn-07-facial",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Facial nerve (CN VII)"
-  },
-  {
-   "id": "cn-08-vestibulocochlear",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Vestibulocochlear nerve (CN VIII)"
-  },
-  {
-   "id": "cn-09-glossopharyngeal",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Glossopharyngeal nerve (CN IX)"
-  },
-  {
-   "id": "cn-10-vagus",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Vagus nerve (CN X)"
-  },
-  {
-   "id": "cn-11-accessory",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Accessory nerve (CN XI)"
-  },
-  {
-   "id": "cn-12-hypoglossal",
-   "kind": "cranial-nerve",
-   "tier": "core",
-   "name": "Hypoglossal nerve (CN XII)"
-  },
-  {
-   "id": "pathway-lateral-corticospinal",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Lateral corticospinal tract"
-  },
-  {
-   "id": "pathway-anterior-corticospinal",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Anterior corticospinal tract"
-  },
-  {
-   "id": "pathway-corticobulbar",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Corticobulbar tract"
-  },
-  {
-   "id": "pathway-dcml",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Dorsal column\u2013medial lemniscus pathway"
-  },
-  {
-   "id": "pathway-lateral-spinothalamic",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Lateral spinothalamic tract"
-  },
-  {
-   "id": "pathway-anterior-spinothalamic",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Anterior spinothalamic tract"
-  },
-  {
-   "id": "pathway-trigeminothalamic",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Trigeminal sensory pathways"
-  },
-  {
-   "id": "pathway-posterior-spinocerebellar",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Posterior spinocerebellar tract"
-  },
-  {
-   "id": "pathway-anterior-spinocerebellar",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Anterior spinocerebellar tract"
-  },
-  {
-   "id": "pathway-rubrospinal",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Rubrospinal tract"
-  },
-  {
-   "id": "pathway-vestibulospinal",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Vestibulospinal tracts"
-  },
-  {
-   "id": "pathway-reticulospinal",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Reticulospinal tracts"
-  },
-  {
-   "id": "pathway-tectospinal",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Tectospinal tract"
-  },
-  {
-   "id": "pathway-visual",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Visual pathway"
-  },
-  {
-   "id": "pathway-pupillary-light-reflex",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Pupillary light reflex pathway"
-  },
-  {
-   "id": "pathway-oculosympathetic",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Oculosympathetic pathway"
-  },
-  {
-   "id": "pathway-horizontal-gaze",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Horizontal gaze pathway"
-  },
-  {
-   "id": "pathway-vertical-gaze",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Vertical gaze pathway"
-  },
-  {
-   "id": "pathway-auditory",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Auditory pathway"
-  },
-  {
-   "id": "pathway-vestibular-vor",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Vestibular pathways and vestibulo-ocular reflex"
-  },
-  {
-   "id": "pathway-cerebellar-circuits",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Cerebellar afferent and efferent circuits"
-  },
-  {
-   "id": "pathway-basal-ganglia-loops",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Basal ganglia direct and indirect loops"
-  },
-  {
-   "id": "pathway-papez-limbic",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Papez circuit and limbic connections"
-  },
-  {
-   "id": "pathway-olfactory",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Olfactory pathway"
-  },
-  {
-   "id": "pathway-gustatory",
-   "kind": "pathway",
-   "tier": "core",
-   "name": "Gustatory pathway"
-  },
-  {
-   "id": "syn-aca-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Anterior cerebral artery infarction"
-  },
-  {
-   "id": "syn-mca-stem-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "MCA stem (M1) infarction"
-  },
-  {
-   "id": "syn-mca-superior-division",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "MCA superior division infarction"
-  },
-  {
-   "id": "syn-mca-inferior-division",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "MCA inferior division infarction"
-  },
-  {
-   "id": "syn-lacunar-pure-motor",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Pure motor lacunar stroke"
-  },
-  {
-   "id": "syn-lacunar-pure-sensory",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Pure sensory lacunar stroke"
-  },
-  {
-   "id": "syn-lacunar-ataxic-hemiparesis",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Ataxic hemiparesis"
-  },
-  {
-   "id": "syn-lacunar-dysarthria-clumsy-hand",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Dysarthria\u2013clumsy hand syndrome"
-  },
-  {
-   "id": "syn-lacunar-sensorimotor",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Sensorimotor lacunar stroke"
-  },
-  {
-   "id": "syn-anterior-choroidal-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Anterior choroidal artery infarction"
-  },
-  {
-   "id": "syn-pca-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Posterior cerebral artery infarction"
-  },
-  {
-   "id": "syn-top-of-basilar",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Top-of-the-basilar syndrome"
-  },
-  {
-   "id": "syn-watershed-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Watershed (borderzone) infarction"
-  },
-  {
-   "id": "syn-thalamic-dejerine-roussy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Thalamic pain syndrome (Dejerine\u2013Roussy)"
-  },
-  {
-   "id": "syn-gerstmann",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Gerstmann syndrome"
-  },
-  {
-   "id": "syn-aphasia-broca",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Broca (expressive) aphasia"
-  },
-  {
-   "id": "syn-aphasia-wernicke",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Wernicke (receptive) aphasia"
-  },
-  {
-   "id": "syn-aphasia-conduction-global",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Conduction and global aphasia"
-  },
-  {
-   "id": "syn-hemineglect",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Hemispatial neglect"
-  },
-  {
-   "id": "syn-anton",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Anton syndrome (cortical blindness)"
-  },
-  {
-   "id": "syn-balint",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "B\u00e1lint syndrome"
-  },
-  {
-   "id": "syn-alexia-without-agraphia",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Alexia without agraphia"
-  },
-  {
-   "id": "syn-wallenberg-lateral-medullary",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Lateral medullary (Wallenberg) syndrome"
-  },
-  {
-   "id": "syn-dejerine-medial-medullary",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Medial medullary (Dejerine) syndrome"
-  },
-  {
-   "id": "syn-millard-gubler",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Millard\u2013Gubler syndrome"
-  },
-  {
-   "id": "syn-foville",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Foville syndrome"
-  },
-  {
-   "id": "syn-locked-in",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Locked-in syndrome"
-  },
-  {
-   "id": "syn-weber",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Weber syndrome"
-  },
-  {
-   "id": "syn-claude",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Claude syndrome"
-  },
-  {
-   "id": "syn-benedikt",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Benedikt syndrome"
-  },
-  {
-   "id": "syn-parinaud-dorsal-midbrain",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Parinaud (dorsal midbrain) syndrome"
-  },
-  {
-   "id": "syn-ino",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Internuclear ophthalmoplegia"
-  },
-  {
-   "id": "syn-one-and-a-half",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "One-and-a-half syndrome"
-  },
-  {
-   "id": "syn-horizontal-gaze-palsy-pontine",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Pontine horizontal gaze palsy"
-  },
-  {
-   "id": "syn-aica-lateral-pontine",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "AICA (lateral pontine) syndrome"
-  },
-  {
-   "id": "syn-sca-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Superior cerebellar artery infarction"
-  },
-  {
-   "id": "syn-pica-cerebellar-infarct",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "PICA cerebellar infarction with mass effect"
-  },
-  {
-   "id": "syn-basilar-occlusion",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Basilar artery occlusion"
-  },
-  {
-   "id": "syn-horner",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Horner syndrome"
-  },
-  {
-   "id": "syn-cerebellar-hemispheric",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Cerebellar hemispheric syndrome"
-  },
-  {
-   "id": "syn-cerebellar-vermian-midline",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Midline (vermian) cerebellar syndrome"
-  },
-  {
-   "id": "syn-chiari-tonsillar-ectopia",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Chiari malformation / tonsillar ectopia"
-  },
-  {
-   "id": "syn-cn3-palsy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Third nerve palsy: pupil-involving versus pupil-sparing"
-  },
-  {
-   "id": "syn-cn4-palsy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Fourth nerve palsy"
-  },
-  {
-   "id": "syn-cn6-palsy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Sixth nerve palsy and the false-localizing sign"
-  },
-  {
-   "id": "syn-trigeminal-neuralgia",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Trigeminal neuralgia"
-  },
-  {
-   "id": "syn-facial-palsy-peripheral-vs-central",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Facial weakness: peripheral (Bell) versus central"
-  },
-  {
-   "id": "syn-cerebellopontine-angle",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Cerebellopontine angle syndrome"
-  },
-  {
-   "id": "syn-cavernous-sinus",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Cavernous sinus syndrome"
-  },
-  {
-   "id": "syn-jugular-foramen-vernet",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Jugular foramen (Vernet) syndrome"
-  },
-  {
-   "id": "syn-hypoglossal-palsy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Hypoglossal nerve palsy"
-  },
-  {
-   "id": "syn-bulbar-vs-pseudobulbar",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Bulbar versus pseudobulbar palsy"
-  },
-  {
-   "id": "syn-vagal-palsy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Vagus nerve palsy"
-  },
-  {
-   "id": "syn-optic-neuritis",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Optic neuritis"
-  },
-  {
-   "id": "syn-chiasmal-bitemporal",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Chiasmal lesion with bitemporal hemianopia"
-  },
-  {
-   "id": "syn-homonymous-hemianopia",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Homonymous hemianopia and its variants"
-  },
-  {
-   "id": "syn-rapd",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Relative afferent pupillary defect"
-  },
-  {
-   "id": "syn-argyll-robertson",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Argyll Robertson pupil"
-  },
-  {
-   "id": "syn-adie-tonic-pupil",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Adie tonic pupil"
-  },
-  {
-   "id": "syn-bppv",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Benign paroxysmal positional vertigo"
-  },
-  {
-   "id": "syn-vestibular-neuritis",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Vestibular neuritis"
-  },
-  {
-   "id": "syn-meniere",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "M\u00e9ni\u00e8re disease"
-  },
-  {
-   "id": "syn-central-vs-peripheral-vertigo",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Central versus peripheral vertigo"
-  },
-  {
-   "id": "syn-hearing-loss",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Conductive versus sensorineural hearing loss"
-  },
-  {
-   "id": "syn-brown-sequard",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Brown-S\u00e9quard syndrome"
-  },
-  {
-   "id": "syn-anterior-cord",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Anterior cord (anterior spinal artery) syndrome"
-  },
-  {
-   "id": "syn-central-cord-syringomyelia",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Central cord syndrome and syringomyelia"
-  },
-  {
-   "id": "syn-posterior-cord-subacute-combined",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Posterior cord syndrome and subacute combined degeneration"
-  },
-  {
-   "id": "syn-complete-transection-spinal-shock",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Complete cord transection and spinal shock"
-  },
-  {
-   "id": "syn-conus-vs-cauda-equina",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Conus medullaris versus cauda equina syndrome"
-  },
-  {
-   "id": "syn-cervical-spondylotic-myelopathy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Cervical spondylotic myelopathy"
-  },
-  {
-   "id": "syn-als-pattern",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Amyotrophic lateral sclerosis: UMN plus LMN pattern"
-  },
-  {
-   "id": "syn-radiculopathy-cervical",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Cervical radiculopathy (C5\u2013C8)"
-  },
-  {
-   "id": "syn-radiculopathy-lumbosacral",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Lumbosacral radiculopathy (L4\u2013S1)"
-  },
-  {
-   "id": "syn-erb-duchenne",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Erb\u2013Duchenne (upper trunk) palsy"
-  },
-  {
-   "id": "syn-klumpke",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Klumpke (lower trunk) palsy"
-  },
-  {
-   "id": "syn-neurogenic-thoracic-outlet",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Neurogenic thoracic outlet syndrome"
-  },
-  {
-   "id": "syn-carpal-tunnel",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Carpal tunnel syndrome"
-  },
-  {
-   "id": "syn-cubital-tunnel",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Ulnar neuropathy at the elbow"
-  },
-  {
-   "id": "syn-radial-neuropathy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Radial neuropathy (Saturday-night palsy)"
-  },
-  {
-   "id": "syn-femoral-neuropathy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Femoral neuropathy"
-  },
-  {
-   "id": "syn-meralgia-paresthetica",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Meralgia paresthetica"
-  },
-  {
-   "id": "syn-sciatic-neuropathy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Sciatic neuropathy"
-  },
-  {
-   "id": "syn-peroneal-palsy-foot-drop",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Peroneal neuropathy and the approach to foot drop"
-  },
-  {
-   "id": "syn-tarsal-tunnel",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Tarsal tunnel syndrome"
-  },
-  {
-   "id": "syn-length-dependent-polyneuropathy",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Length-dependent polyneuropathy"
-  },
-  {
-   "id": "syn-guillain-barre",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Guillain\u2013Barr\u00e9 syndrome"
-  },
-  {
-   "id": "syn-myasthenia-gravis",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Myasthenia gravis"
-  },
-  {
-   "id": "syn-uncal-herniation",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Uncal herniation and Kernohan notch"
-  },
-  {
-   "id": "syn-subfalcine-herniation",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Subfalcine herniation"
-  },
-  {
-   "id": "syn-central-transtentorial-herniation",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Central transtentorial herniation"
-  },
-  {
-   "id": "syn-tonsillar-herniation",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Tonsillar herniation"
-  },
-  {
-   "id": "syn-hydrocephalus",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Obstructive versus communicating hydrocephalus"
-  },
-  {
-   "id": "syn-normal-pressure-hydrocephalus",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Normal pressure hydrocephalus"
-  },
-  {
-   "id": "syn-idiopathic-intracranial-hypertension",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Idiopathic intracranial hypertension"
-  },
-  {
-   "id": "syn-epidural-hematoma",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Epidural hematoma"
-  },
-  {
-   "id": "syn-subdural-hematoma",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Subdural hematoma"
-  },
-  {
-   "id": "syn-subarachnoid-hemorrhage",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Subarachnoid hemorrhage and vasospasm"
-  },
-  {
-   "id": "syn-cerebral-venous-sinus-thrombosis",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Cerebral venous sinus thrombosis"
-  },
-  {
-   "id": "syn-hemiballismus",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Hemiballismus"
-  },
-  {
-   "id": "syn-parkinsonism",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Parkinsonism"
-  },
-  {
-   "id": "syn-wernicke-korsakoff",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Wernicke encephalopathy and Korsakoff syndrome"
-  },
-  {
-   "id": "syn-pituitary-mass",
-   "kind": "syndrome",
-   "tier": "core",
-   "name": "Pituitary mass and the sellar region"
-  },
-  {
-   "id": "syn-callosal-disconnection",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Callosal disconnection syndromes"
-  },
-  {
-   "id": "syn-raymond",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Raymond syndrome"
-  },
-  {
-   "id": "syn-pontine-hemorrhage",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Pontine hemorrhage"
-  },
-  {
-   "id": "syn-ramsay-hunt",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Ramsay Hunt syndrome"
-  },
-  {
-   "id": "syn-superior-orbital-fissure",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Superior orbital fissure syndrome"
-  },
-  {
-   "id": "syn-accessory-palsy",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Accessory nerve palsy"
-  },
-  {
-   "id": "syn-physiologic-anisocoria",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Physiologic anisocoria"
-  },
-  {
-   "id": "syn-anosmia",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Anosmia"
-  },
-  {
-   "id": "syn-transverse-myelitis",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Transverse myelitis"
-  },
-  {
-   "id": "syn-poliomyelitis",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Poliomyelitis (anterior horn disease)"
-  },
-  {
-   "id": "syn-lumbar-stenosis",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Lumbar canal stenosis and neurogenic claudication"
-  },
-  {
-   "id": "syn-parsonage-turner",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Neuralgic amyotrophy (Parsonage\u2013Turner)"
-  },
-  {
-   "id": "syn-axillary-neuropathy",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Axillary neuropathy"
-  },
-  {
-   "id": "syn-lumbosacral-plexopathy",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Lumbosacral plexopathy"
-  },
-  {
-   "id": "syn-mononeuritis-multiplex",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Mononeuritis multiplex"
-  },
-  {
-   "id": "syn-lambert-eaton",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Lambert\u2013Eaton myasthenic syndrome"
-  },
-  {
-   "id": "syn-myopathy-pattern",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Myopathy: pattern recognition"
-  },
-  {
-   "id": "syn-cavernous-sinus-thrombosis",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Cavernous sinus thrombosis"
-  },
-  {
-   "id": "syn-huntington-chorea",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Huntington disease and chorea"
-  },
-  {
-   "id": "syn-kluver-bucy",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Kl\u00fcver\u2013Bucy syndrome"
-  },
-  {
-   "id": "syn-hypothalamic-syndromes",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Hypothalamic syndromes"
-  },
-  {
-   "id": "syn-multiple-sclerosis-pattern",
-   "kind": "syndrome",
-   "tier": "extended",
-   "name": "Multiple sclerosis: lesion pattern and localization"
-  },
-  {
-   "id": "spinal-segment-cervical",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Spinal cord, cervical segments"
-  },
-  {
-   "id": "spinal-segment-thoracic",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Spinal cord, thoracic segments"
-  },
-  {
-   "id": "spinal-segment-lumbar",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Spinal cord, lumbar segments"
-  },
-  {
-   "id": "spinal-segment-sacral",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Spinal cord, sacral and coccygeal segments"
-  },
-  {
-   "id": "lumbosacral-trunk",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Lumbosacral trunk"
-  },
-  {
-   "id": "vein-internal-cerebral",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Internal cerebral vein"
-  },
-  {
-   "id": "vein-basal",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Basal vein of Rosenthal"
-  },
-  {
-   "id": "veins-venat-atlas",
-   "kind": "structure",
-   "tier": "extended",
-   "name": "Cerebral venous system (VENAT surface)"
-  }
- ]
+  "generated": "2026-09-05",
+  "entries": [
+    {
+      "id": "lobe-frontal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Frontal lobe"
+    },
+    {
+      "id": "gyrus-precentral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Precentral gyrus (primary motor cortex)"
+    },
+    {
+      "id": "cortex-premotor-sma",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Premotor cortex and supplementary motor area"
+    },
+    {
+      "id": "area-broca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Broca's area"
+    },
+    {
+      "id": "cortex-prefrontal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Prefrontal cortex"
+    },
+    {
+      "id": "frontal-eye-field",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Frontal eye field"
+    },
+    {
+      "id": "lobe-parietal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Parietal lobe"
+    },
+    {
+      "id": "gyrus-postcentral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Postcentral gyrus (primary somatosensory cortex)"
+    },
+    {
+      "id": "lobule-superior-parietal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior parietal lobule"
+    },
+    {
+      "id": "gyrus-supramarginal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Supramarginal gyrus"
+    },
+    {
+      "id": "gyrus-angular",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Angular gyrus"
+    },
+    {
+      "id": "lobe-temporal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Temporal lobe"
+    },
+    {
+      "id": "gyrus-heschl",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Heschl's gyrus (primary auditory cortex)"
+    },
+    {
+      "id": "area-wernicke",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Wernicke's area"
+    },
+    {
+      "id": "gyrus-parahippocampal-uncus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Parahippocampal gyrus and uncus"
+    },
+    {
+      "id": "lobe-occipital",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Occipital lobe"
+    },
+    {
+      "id": "cortex-calcarine",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Calcarine (primary visual) cortex"
+    },
+    {
+      "id": "insula",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Insula"
+    },
+    {
+      "id": "gyrus-cingulate",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cingulate gyrus"
+    },
+    {
+      "id": "corpus-callosum",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Corpus callosum"
+    },
+    {
+      "id": "fornix",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Fornix"
+    },
+    {
+      "id": "hippocampus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Hippocampus"
+    },
+    {
+      "id": "amygdala",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Amygdala"
+    },
+    {
+      "id": "internal-capsule",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Internal capsule"
+    },
+    {
+      "id": "corona-radiata",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Corona radiata"
+    },
+    {
+      "id": "caudate-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Caudate nucleus"
+    },
+    {
+      "id": "putamen",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Putamen"
+    },
+    {
+      "id": "globus-pallidus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Globus pallidus"
+    },
+    {
+      "id": "substantia-nigra",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Substantia nigra"
+    },
+    {
+      "id": "subthalamic-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Subthalamic nucleus"
+    },
+    {
+      "id": "thalamus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Thalamus"
+    },
+    {
+      "id": "thalamus-vpl",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Ventral posterolateral nucleus (VPL)"
+    },
+    {
+      "id": "thalamus-vpm",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Ventral posteromedial nucleus (VPM)"
+    },
+    {
+      "id": "thalamus-va-vl",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Ventral anterior and ventral lateral nuclei"
+    },
+    {
+      "id": "thalamus-anterior-nuclei",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior thalamic nuclei"
+    },
+    {
+      "id": "thalamus-mediodorsal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Mediodorsal nucleus"
+    },
+    {
+      "id": "thalamus-pulvinar",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pulvinar"
+    },
+    {
+      "id": "lateral-geniculate-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lateral geniculate nucleus"
+    },
+    {
+      "id": "medial-geniculate-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medial geniculate nucleus"
+    },
+    {
+      "id": "hypothalamus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Hypothalamus"
+    },
+    {
+      "id": "pituitary-infundibulum",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pituitary gland and infundibulum"
+    },
+    {
+      "id": "mammillary-body",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Mammillary bodies"
+    },
+    {
+      "id": "pineal-gland",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pineal gland"
+    },
+    {
+      "id": "optic-chiasm",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Optic chiasm"
+    },
+    {
+      "id": "ventricle-lateral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lateral ventricles"
+    },
+    {
+      "id": "ventricle-third",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Third ventricle"
+    },
+    {
+      "id": "cerebral-aqueduct",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cerebral aqueduct"
+    },
+    {
+      "id": "ventricle-fourth",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Fourth ventricle"
+    },
+    {
+      "id": "choroid-plexus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Choroid plexus and CSF production"
+    },
+    {
+      "id": "subarachnoid-space-cisterns",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Subarachnoid space and basal cisterns"
+    },
+    {
+      "id": "arachnoid-granulations",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Arachnoid granulations"
+    },
+    {
+      "id": "level-medulla-pyramidal-decussation",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medulla: level of the pyramidal decussation"
+    },
+    {
+      "id": "level-medulla-sensory-decussation",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medulla: level of the sensory (lemniscal) decussation"
+    },
+    {
+      "id": "level-medulla-olive",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medulla: level of the inferior olive"
+    },
+    {
+      "id": "level-pons-caudal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Caudal pons (facial colliculus level)"
+    },
+    {
+      "id": "level-pons-rostral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Rostral pons"
+    },
+    {
+      "id": "level-midbrain-inferior-colliculus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Midbrain: inferior colliculus level"
+    },
+    {
+      "id": "level-midbrain-superior-colliculus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Midbrain: superior colliculus level"
+    },
+    {
+      "id": "pyramid",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medullary pyramid and pyramidal decussation"
+    },
+    {
+      "id": "medial-lemniscus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medial lemniscus"
+    },
+    {
+      "id": "nucleus-gracilis-cuneatus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Gracile and cuneate nuclei"
+    },
+    {
+      "id": "inferior-olivary-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Inferior olivary nucleus"
+    },
+    {
+      "id": "nucleus-ambiguus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Nucleus ambiguus"
+    },
+    {
+      "id": "dorsal-motor-nucleus-vagus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Dorsal motor nucleus of the vagus"
+    },
+    {
+      "id": "nucleus-solitarius",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Nucleus of the solitary tract"
+    },
+    {
+      "id": "spinal-trigeminal-nucleus-tract",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Spinal trigeminal nucleus and tract"
+    },
+    {
+      "id": "hypoglossal-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Hypoglossal nucleus"
+    },
+    {
+      "id": "vestibular-nuclei",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Vestibular nuclei"
+    },
+    {
+      "id": "cochlear-nuclei",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cochlear nuclei"
+    },
+    {
+      "id": "inferior-cerebellar-peduncle",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Inferior cerebellar peduncle"
+    },
+    {
+      "id": "medial-longitudinal-fasciculus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Medial longitudinal fasciculus"
+    },
+    {
+      "id": "abducens-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Abducens nucleus"
+    },
+    {
+      "id": "facial-motor-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Facial motor nucleus"
+    },
+    {
+      "id": "pprf",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Paramedian pontine reticular formation"
+    },
+    {
+      "id": "pontine-nuclei",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pontine nuclei and transverse pontine fibers"
+    },
+    {
+      "id": "middle-cerebellar-peduncle",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Middle cerebellar peduncle"
+    },
+    {
+      "id": "superior-cerebellar-peduncle",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior cerebellar peduncle"
+    },
+    {
+      "id": "trigeminal-nuclei",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Trigeminal sensory and motor nuclei"
+    },
+    {
+      "id": "superior-olivary-complex",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior olivary complex and lateral lemniscus"
+    },
+    {
+      "id": "cerebral-peduncle-crus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Crus cerebri (cerebral peduncle)"
+    },
+    {
+      "id": "red-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Red nucleus"
+    },
+    {
+      "id": "oculomotor-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Oculomotor and Edinger-Westphal nuclei"
+    },
+    {
+      "id": "trochlear-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Trochlear nucleus"
+    },
+    {
+      "id": "superior-colliculus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior colliculus"
+    },
+    {
+      "id": "inferior-colliculus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Inferior colliculus"
+    },
+    {
+      "id": "periaqueductal-grey",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Periaqueductal grey"
+    },
+    {
+      "id": "pretectal-area",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pretectal area"
+    },
+    {
+      "id": "reticular-formation",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Reticular formation"
+    },
+    {
+      "id": "rimlf",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Rostral interstitial nucleus of the MLF (vertical gaze centre)"
+    },
+    {
+      "id": "cerebellum",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cerebellum"
+    },
+    {
+      "id": "cerebellar-hemisphere",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cerebellar hemispheres (lateral zone)"
+    },
+    {
+      "id": "cerebellar-vermis",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Vermis"
+    },
+    {
+      "id": "flocculonodular-lobe",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Flocculonodular lobe"
+    },
+    {
+      "id": "cerebellar-tonsil",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cerebellar tonsil"
+    },
+    {
+      "id": "dentate-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Dentate nucleus"
+    },
+    {
+      "id": "interposed-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Interposed nuclei"
+    },
+    {
+      "id": "fastigial-nucleus",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Fastigial nucleus"
+    },
+    {
+      "id": "spinal-cord",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Spinal cord"
+    },
+    {
+      "id": "spinal-grey-anterior-horn",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior (ventral) horn"
+    },
+    {
+      "id": "spinal-grey-posterior-horn",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Posterior (dorsal) horn"
+    },
+    {
+      "id": "intermediolateral-column",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Intermediolateral cell column"
+    },
+    {
+      "id": "spinal-white-columns",
+      "kind": "structure",
+      "tier": "core",
+      "name": "White columns of the spinal cord"
+    },
+    {
+      "id": "cervical-enlargement",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cervical and lumbosacral enlargements"
+    },
+    {
+      "id": "conus-medullaris",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Conus medullaris"
+    },
+    {
+      "id": "filum-terminale",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Filum terminale"
+    },
+    {
+      "id": "cauda-equina",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cauda equina"
+    },
+    {
+      "id": "segment-vertebral-levels",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Spinal segments versus vertebral levels"
+    },
+    {
+      "id": "dorsal-root-ganglion",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Dorsal root ganglion"
+    },
+    {
+      "id": "spinal-nerve-root-dermatome",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Spinal nerve roots and dermatomes"
+    },
+    {
+      "id": "sympathetic-trunk",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Sympathetic trunk and ganglia"
+    },
+    {
+      "id": "anterior-spinal-artery",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior spinal artery"
+    },
+    {
+      "id": "posterior-spinal-arteries",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Posterior spinal arteries"
+    },
+    {
+      "id": "artery-adamkiewicz",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Artery of Adamkiewicz"
+    },
+    {
+      "id": "dura-mater",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Dura mater"
+    },
+    {
+      "id": "falx-cerebri",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Falx cerebri"
+    },
+    {
+      "id": "tentorium-cerebelli",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Tentorium cerebelli and incisura"
+    },
+    {
+      "id": "arachnoid-mater",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Arachnoid mater"
+    },
+    {
+      "id": "pia-mater",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pia mater"
+    },
+    {
+      "id": "meningeal-spaces",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Epidural, subdural and subarachnoid spaces"
+    },
+    {
+      "id": "sinus-superior-sagittal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior sagittal sinus"
+    },
+    {
+      "id": "sinus-straight",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Straight sinus and inferior sagittal sinus"
+    },
+    {
+      "id": "sinus-transverse-sigmoid",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Transverse and sigmoid sinuses"
+    },
+    {
+      "id": "sinus-cavernous",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cavernous sinus"
+    },
+    {
+      "id": "sinus-petrosal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior and inferior petrosal sinuses"
+    },
+    {
+      "id": "vein-great-cerebral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Great cerebral vein and deep venous system"
+    },
+    {
+      "id": "veins-superficial-cerebral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superficial cerebral (bridging) veins"
+    },
+    {
+      "id": "artery-internal-carotid",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Internal carotid artery"
+    },
+    {
+      "id": "artery-ophthalmic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Ophthalmic artery"
+    },
+    {
+      "id": "artery-anterior-choroidal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior choroidal artery"
+    },
+    {
+      "id": "artery-aca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior cerebral artery"
+    },
+    {
+      "id": "artery-acom",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior communicating artery"
+    },
+    {
+      "id": "artery-mca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Middle cerebral artery"
+    },
+    {
+      "id": "artery-mca-superior-division",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Middle cerebral artery, superior division"
+    },
+    {
+      "id": "artery-mca-inferior-division",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Middle cerebral artery, inferior division"
+    },
+    {
+      "id": "arteries-lenticulostriate",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lenticulostriate arteries"
+    },
+    {
+      "id": "artery-pcom",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Posterior communicating artery"
+    },
+    {
+      "id": "artery-pca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Posterior cerebral artery"
+    },
+    {
+      "id": "arteries-thalamoperforating",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Thalamoperforating and thalamogeniculate arteries"
+    },
+    {
+      "id": "artery-vertebral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Vertebral artery"
+    },
+    {
+      "id": "artery-basilar",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Basilar artery"
+    },
+    {
+      "id": "artery-pica",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Posterior inferior cerebellar artery"
+    },
+    {
+      "id": "artery-aica",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior inferior cerebellar artery"
+    },
+    {
+      "id": "artery-sca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior cerebellar artery"
+    },
+    {
+      "id": "arteries-pontine",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pontine (paramedian and circumferential) arteries"
+    },
+    {
+      "id": "circle-of-willis",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Circle of Willis"
+    },
+    {
+      "id": "territory-aca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "ACA territory"
+    },
+    {
+      "id": "territory-mca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "MCA territory"
+    },
+    {
+      "id": "territory-pca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "PCA territory"
+    },
+    {
+      "id": "territory-lenticulostriate",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lenticulostriate (deep MCA) territory"
+    },
+    {
+      "id": "territory-anterior-choroidal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Anterior choroidal territory"
+    },
+    {
+      "id": "territory-watershed",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Watershed (borderzone) territories"
+    },
+    {
+      "id": "territory-pica-lateral-medulla",
+      "kind": "structure",
+      "tier": "core",
+      "name": "PICA / lateral medullary territory"
+    },
+    {
+      "id": "territory-aica",
+      "kind": "structure",
+      "tier": "core",
+      "name": "AICA territory"
+    },
+    {
+      "id": "territory-sca",
+      "kind": "structure",
+      "tier": "core",
+      "name": "SCA territory"
+    },
+    {
+      "id": "territory-basilar-paramedian",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Basilar paramedian (pontine) territory"
+    },
+    {
+      "id": "plexus-brachial",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Brachial plexus"
+    },
+    {
+      "id": "nerve-phrenic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Phrenic nerve"
+    },
+    {
+      "id": "nerve-long-thoracic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Long thoracic nerve"
+    },
+    {
+      "id": "nerve-suprascapular",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Suprascapular nerve"
+    },
+    {
+      "id": "nerve-axillary",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Axillary nerve"
+    },
+    {
+      "id": "nerve-musculocutaneous",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Musculocutaneous nerve"
+    },
+    {
+      "id": "nerve-median",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Median nerve"
+    },
+    {
+      "id": "nerve-ulnar",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Ulnar nerve"
+    },
+    {
+      "id": "nerve-radial",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Radial nerve"
+    },
+    {
+      "id": "roots-c5-t1",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cervical roots C5\u2013T1"
+    },
+    {
+      "id": "plexus-lumbosacral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lumbar and sacral plexuses"
+    },
+    {
+      "id": "nerve-femoral",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Femoral nerve"
+    },
+    {
+      "id": "nerve-obturator",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Obturator nerve"
+    },
+    {
+      "id": "nerve-lateral-femoral-cutaneous",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lateral femoral cutaneous nerve"
+    },
+    {
+      "id": "nerve-sciatic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Sciatic nerve"
+    },
+    {
+      "id": "nerve-tibial",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Tibial nerve"
+    },
+    {
+      "id": "nerve-common-peroneal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Common (and deep/superficial) peroneal nerve"
+    },
+    {
+      "id": "roots-l2-s1",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Lumbosacral roots L2\u2013S1"
+    },
+    {
+      "id": "neuromuscular-junction",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Neuromuscular junction"
+    },
+    {
+      "id": "motor-unit",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Motor unit and skeletal muscle"
+    },
+    {
+      "id": "autonomic-cranial-parasympathetic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cranial parasympathetic outflow"
+    },
+    {
+      "id": "autonomic-sacral-parasympathetic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Sacral parasympathetic outflow and bladder control"
+    },
+    {
+      "id": "cervical-sympathetic-chain",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Cervical sympathetic chain and stellate ganglion"
+    },
+    {
+      "id": "ganglion-trigeminal",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Trigeminal ganglion"
+    },
+    {
+      "id": "ganglion-geniculate",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Geniculate ganglion"
+    },
+    {
+      "id": "ganglion-ciliary",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Ciliary ganglion"
+    },
+    {
+      "id": "ganglion-pterygopalatine",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Pterygopalatine ganglion"
+    },
+    {
+      "id": "ganglion-otic",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Otic ganglion"
+    },
+    {
+      "id": "ganglion-submandibular",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Submandibular ganglion"
+    },
+    {
+      "id": "ganglion-superior-cervical",
+      "kind": "structure",
+      "tier": "core",
+      "name": "Superior cervical ganglion"
+    },
+    {
+      "id": "septal-area",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Septal area"
+    },
+    {
+      "id": "claustrum",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Claustrum"
+    },
+    {
+      "id": "nucleus-accumbens",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Nucleus accumbens"
+    },
+    {
+      "id": "habenula",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Habenula"
+    },
+    {
+      "id": "area-postrema",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Area postrema"
+    },
+    {
+      "id": "locus-coeruleus",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Locus coeruleus"
+    },
+    {
+      "id": "raphe-nuclei",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Raphe nuclei"
+    },
+    {
+      "id": "cerebellar-cortex-layers",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Cerebellar cortex: layers and circuitry"
+    },
+    {
+      "id": "veins-deep-cerebral",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Deep cerebral veins"
+    },
+    {
+      "id": "artery-labyrinthine",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Labyrinthine artery"
+    },
+    {
+      "id": "nerve-sural",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Sural nerve"
+    },
+    {
+      "id": "nerve-pudendal",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Pudendal nerve"
+    },
+    {
+      "id": "splanchnic-nerves",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Splanchnic nerves"
+    },
+    {
+      "id": "cn-01-olfactory",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Olfactory nerve (CN I)"
+    },
+    {
+      "id": "cn-02-optic",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Optic nerve (CN II)"
+    },
+    {
+      "id": "cn-03-oculomotor",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Oculomotor nerve (CN III)"
+    },
+    {
+      "id": "cn-04-trochlear",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Trochlear nerve (CN IV)"
+    },
+    {
+      "id": "cn-05-trigeminal",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Trigeminal nerve (CN V)"
+    },
+    {
+      "id": "cn-06-abducens",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Abducens nerve (CN VI)"
+    },
+    {
+      "id": "cn-07-facial",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Facial nerve (CN VII)"
+    },
+    {
+      "id": "cn-08-vestibulocochlear",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Vestibulocochlear nerve (CN VIII)"
+    },
+    {
+      "id": "cn-09-glossopharyngeal",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Glossopharyngeal nerve (CN IX)"
+    },
+    {
+      "id": "cn-10-vagus",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Vagus nerve (CN X)"
+    },
+    {
+      "id": "cn-11-accessory",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Accessory nerve (CN XI)"
+    },
+    {
+      "id": "cn-12-hypoglossal",
+      "kind": "cranial-nerve",
+      "tier": "core",
+      "name": "Hypoglossal nerve (CN XII)"
+    },
+    {
+      "id": "pathway-lateral-corticospinal",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Lateral corticospinal tract"
+    },
+    {
+      "id": "pathway-anterior-corticospinal",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Anterior corticospinal tract"
+    },
+    {
+      "id": "pathway-corticobulbar",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Corticobulbar tract"
+    },
+    {
+      "id": "pathway-dcml",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Dorsal column\u2013medial lemniscus pathway"
+    },
+    {
+      "id": "pathway-lateral-spinothalamic",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Lateral spinothalamic tract"
+    },
+    {
+      "id": "pathway-anterior-spinothalamic",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Anterior spinothalamic tract"
+    },
+    {
+      "id": "pathway-trigeminothalamic",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Trigeminal sensory pathways"
+    },
+    {
+      "id": "pathway-posterior-spinocerebellar",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Posterior spinocerebellar tract"
+    },
+    {
+      "id": "pathway-anterior-spinocerebellar",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Anterior spinocerebellar tract"
+    },
+    {
+      "id": "pathway-rubrospinal",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Rubrospinal tract"
+    },
+    {
+      "id": "pathway-vestibulospinal",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Vestibulospinal tracts"
+    },
+    {
+      "id": "pathway-reticulospinal",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Reticulospinal tracts"
+    },
+    {
+      "id": "pathway-tectospinal",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Tectospinal tract"
+    },
+    {
+      "id": "pathway-visual",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Visual pathway"
+    },
+    {
+      "id": "pathway-pupillary-light-reflex",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Pupillary light reflex pathway"
+    },
+    {
+      "id": "pathway-oculosympathetic",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Oculosympathetic pathway"
+    },
+    {
+      "id": "pathway-horizontal-gaze",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Horizontal gaze pathway"
+    },
+    {
+      "id": "pathway-vertical-gaze",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Vertical gaze pathway"
+    },
+    {
+      "id": "pathway-auditory",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Auditory pathway"
+    },
+    {
+      "id": "pathway-vestibular-vor",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Vestibular pathways and vestibulo-ocular reflex"
+    },
+    {
+      "id": "pathway-cerebellar-circuits",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Cerebellar afferent and efferent circuits"
+    },
+    {
+      "id": "pathway-basal-ganglia-loops",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Basal ganglia direct and indirect loops"
+    },
+    {
+      "id": "pathway-papez-limbic",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Papez circuit and limbic connections"
+    },
+    {
+      "id": "pathway-olfactory",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Olfactory pathway"
+    },
+    {
+      "id": "pathway-gustatory",
+      "kind": "pathway",
+      "tier": "core",
+      "name": "Gustatory pathway"
+    },
+    {
+      "id": "syn-aca-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Anterior cerebral artery infarction"
+    },
+    {
+      "id": "syn-mca-stem-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "MCA stem (M1) infarction"
+    },
+    {
+      "id": "syn-mca-superior-division",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "MCA superior division infarction"
+    },
+    {
+      "id": "syn-mca-inferior-division",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "MCA inferior division infarction"
+    },
+    {
+      "id": "syn-lacunar-pure-motor",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Pure motor lacunar stroke"
+    },
+    {
+      "id": "syn-lacunar-pure-sensory",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Pure sensory lacunar stroke"
+    },
+    {
+      "id": "syn-lacunar-ataxic-hemiparesis",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Ataxic hemiparesis"
+    },
+    {
+      "id": "syn-lacunar-dysarthria-clumsy-hand",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Dysarthria\u2013clumsy hand syndrome"
+    },
+    {
+      "id": "syn-lacunar-sensorimotor",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Sensorimotor lacunar stroke"
+    },
+    {
+      "id": "syn-anterior-choroidal-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Anterior choroidal artery infarction"
+    },
+    {
+      "id": "syn-pca-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Posterior cerebral artery infarction"
+    },
+    {
+      "id": "syn-top-of-basilar",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Top-of-the-basilar syndrome"
+    },
+    {
+      "id": "syn-watershed-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Watershed (borderzone) infarction"
+    },
+    {
+      "id": "syn-thalamic-dejerine-roussy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Thalamic pain syndrome (Dejerine\u2013Roussy)"
+    },
+    {
+      "id": "syn-gerstmann",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Gerstmann syndrome"
+    },
+    {
+      "id": "syn-aphasia-broca",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Broca (expressive) aphasia"
+    },
+    {
+      "id": "syn-aphasia-wernicke",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Wernicke (receptive) aphasia"
+    },
+    {
+      "id": "syn-aphasia-conduction-global",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Conduction and global aphasia"
+    },
+    {
+      "id": "syn-hemineglect",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Hemispatial neglect"
+    },
+    {
+      "id": "syn-anton",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Anton syndrome (cortical blindness)"
+    },
+    {
+      "id": "syn-balint",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "B\u00e1lint syndrome"
+    },
+    {
+      "id": "syn-alexia-without-agraphia",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Alexia without agraphia"
+    },
+    {
+      "id": "syn-wallenberg-lateral-medullary",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Lateral medullary (Wallenberg) syndrome"
+    },
+    {
+      "id": "syn-dejerine-medial-medullary",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Medial medullary (Dejerine) syndrome"
+    },
+    {
+      "id": "syn-millard-gubler",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Millard\u2013Gubler syndrome"
+    },
+    {
+      "id": "syn-foville",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Foville syndrome"
+    },
+    {
+      "id": "syn-locked-in",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Locked-in syndrome"
+    },
+    {
+      "id": "syn-weber",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Weber syndrome"
+    },
+    {
+      "id": "syn-claude",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Claude syndrome"
+    },
+    {
+      "id": "syn-benedikt",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Benedikt syndrome"
+    },
+    {
+      "id": "syn-parinaud-dorsal-midbrain",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Parinaud (dorsal midbrain) syndrome"
+    },
+    {
+      "id": "syn-ino",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Internuclear ophthalmoplegia"
+    },
+    {
+      "id": "syn-one-and-a-half",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "One-and-a-half syndrome"
+    },
+    {
+      "id": "syn-horizontal-gaze-palsy-pontine",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Pontine horizontal gaze palsy"
+    },
+    {
+      "id": "syn-aica-lateral-pontine",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "AICA (lateral pontine) syndrome"
+    },
+    {
+      "id": "syn-sca-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Superior cerebellar artery infarction"
+    },
+    {
+      "id": "syn-pica-cerebellar-infarct",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "PICA cerebellar infarction with mass effect"
+    },
+    {
+      "id": "syn-basilar-occlusion",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Basilar artery occlusion"
+    },
+    {
+      "id": "syn-horner",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Horner syndrome"
+    },
+    {
+      "id": "syn-cerebellar-hemispheric",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Cerebellar hemispheric syndrome"
+    },
+    {
+      "id": "syn-cerebellar-vermian-midline",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Midline (vermian) cerebellar syndrome"
+    },
+    {
+      "id": "syn-chiari-tonsillar-ectopia",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Chiari malformation / tonsillar ectopia"
+    },
+    {
+      "id": "syn-cn3-palsy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Third nerve palsy: pupil-involving versus pupil-sparing"
+    },
+    {
+      "id": "syn-cn4-palsy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Fourth nerve palsy"
+    },
+    {
+      "id": "syn-cn6-palsy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Sixth nerve palsy and the false-localizing sign"
+    },
+    {
+      "id": "syn-trigeminal-neuralgia",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Trigeminal neuralgia"
+    },
+    {
+      "id": "syn-facial-palsy-peripheral-vs-central",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Facial weakness: peripheral (Bell) versus central"
+    },
+    {
+      "id": "syn-cerebellopontine-angle",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Cerebellopontine angle syndrome"
+    },
+    {
+      "id": "syn-cavernous-sinus",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Cavernous sinus syndrome"
+    },
+    {
+      "id": "syn-jugular-foramen-vernet",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Jugular foramen (Vernet) syndrome"
+    },
+    {
+      "id": "syn-hypoglossal-palsy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Hypoglossal nerve palsy"
+    },
+    {
+      "id": "syn-bulbar-vs-pseudobulbar",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Bulbar versus pseudobulbar palsy"
+    },
+    {
+      "id": "syn-vagal-palsy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Vagus nerve palsy"
+    },
+    {
+      "id": "syn-optic-neuritis",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Optic neuritis"
+    },
+    {
+      "id": "syn-chiasmal-bitemporal",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Chiasmal lesion with bitemporal hemianopia"
+    },
+    {
+      "id": "syn-homonymous-hemianopia",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Homonymous hemianopia and its variants"
+    },
+    {
+      "id": "syn-rapd",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Relative afferent pupillary defect"
+    },
+    {
+      "id": "syn-argyll-robertson",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Argyll Robertson pupil"
+    },
+    {
+      "id": "syn-adie-tonic-pupil",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Adie tonic pupil"
+    },
+    {
+      "id": "syn-bppv",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Benign paroxysmal positional vertigo"
+    },
+    {
+      "id": "syn-vestibular-neuritis",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Vestibular neuritis"
+    },
+    {
+      "id": "syn-meniere",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "M\u00e9ni\u00e8re disease"
+    },
+    {
+      "id": "syn-central-vs-peripheral-vertigo",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Central versus peripheral vertigo"
+    },
+    {
+      "id": "syn-hearing-loss",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Conductive versus sensorineural hearing loss"
+    },
+    {
+      "id": "syn-brown-sequard",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Brown-S\u00e9quard syndrome"
+    },
+    {
+      "id": "syn-anterior-cord",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Anterior cord (anterior spinal artery) syndrome"
+    },
+    {
+      "id": "syn-central-cord-syringomyelia",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Central cord syndrome and syringomyelia"
+    },
+    {
+      "id": "syn-posterior-cord-subacute-combined",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Posterior cord syndrome and subacute combined degeneration"
+    },
+    {
+      "id": "syn-complete-transection-spinal-shock",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Complete cord transection and spinal shock"
+    },
+    {
+      "id": "syn-conus-vs-cauda-equina",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Conus medullaris versus cauda equina syndrome"
+    },
+    {
+      "id": "syn-cervical-spondylotic-myelopathy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Cervical spondylotic myelopathy"
+    },
+    {
+      "id": "syn-als-pattern",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Amyotrophic lateral sclerosis: UMN plus LMN pattern"
+    },
+    {
+      "id": "syn-radiculopathy-cervical",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Cervical radiculopathy (C5\u2013C8)"
+    },
+    {
+      "id": "syn-radiculopathy-lumbosacral",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Lumbosacral radiculopathy (L4\u2013S1)"
+    },
+    {
+      "id": "syn-erb-duchenne",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Erb\u2013Duchenne (upper trunk) palsy"
+    },
+    {
+      "id": "syn-klumpke",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Klumpke (lower trunk) palsy"
+    },
+    {
+      "id": "syn-neurogenic-thoracic-outlet",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Neurogenic thoracic outlet syndrome"
+    },
+    {
+      "id": "syn-carpal-tunnel",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Carpal tunnel syndrome"
+    },
+    {
+      "id": "syn-cubital-tunnel",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Ulnar neuropathy at the elbow"
+    },
+    {
+      "id": "syn-radial-neuropathy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Radial neuropathy (Saturday-night palsy)"
+    },
+    {
+      "id": "syn-femoral-neuropathy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Femoral neuropathy"
+    },
+    {
+      "id": "syn-meralgia-paresthetica",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Meralgia paresthetica"
+    },
+    {
+      "id": "syn-sciatic-neuropathy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Sciatic neuropathy"
+    },
+    {
+      "id": "syn-peroneal-palsy-foot-drop",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Peroneal neuropathy and the approach to foot drop"
+    },
+    {
+      "id": "syn-tarsal-tunnel",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Tarsal tunnel syndrome"
+    },
+    {
+      "id": "syn-length-dependent-polyneuropathy",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Length-dependent polyneuropathy"
+    },
+    {
+      "id": "syn-guillain-barre",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Guillain\u2013Barr\u00e9 syndrome"
+    },
+    {
+      "id": "syn-myasthenia-gravis",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Myasthenia gravis"
+    },
+    {
+      "id": "syn-uncal-herniation",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Uncal herniation and Kernohan notch"
+    },
+    {
+      "id": "syn-subfalcine-herniation",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Subfalcine herniation"
+    },
+    {
+      "id": "syn-central-transtentorial-herniation",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Central transtentorial herniation"
+    },
+    {
+      "id": "syn-tonsillar-herniation",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Tonsillar herniation"
+    },
+    {
+      "id": "syn-hydrocephalus",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Obstructive versus communicating hydrocephalus"
+    },
+    {
+      "id": "syn-normal-pressure-hydrocephalus",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Normal pressure hydrocephalus"
+    },
+    {
+      "id": "syn-idiopathic-intracranial-hypertension",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Idiopathic intracranial hypertension"
+    },
+    {
+      "id": "syn-epidural-hematoma",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Epidural hematoma"
+    },
+    {
+      "id": "syn-subdural-hematoma",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Subdural hematoma"
+    },
+    {
+      "id": "syn-subarachnoid-hemorrhage",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Subarachnoid hemorrhage and vasospasm"
+    },
+    {
+      "id": "syn-cerebral-venous-sinus-thrombosis",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Cerebral venous sinus thrombosis"
+    },
+    {
+      "id": "syn-hemiballismus",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Hemiballismus"
+    },
+    {
+      "id": "syn-parkinsonism",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Parkinsonism"
+    },
+    {
+      "id": "syn-wernicke-korsakoff",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Wernicke encephalopathy and Korsakoff syndrome"
+    },
+    {
+      "id": "syn-pituitary-mass",
+      "kind": "syndrome",
+      "tier": "core",
+      "name": "Pituitary mass and the sellar region"
+    },
+    {
+      "id": "syn-callosal-disconnection",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Callosal disconnection syndromes"
+    },
+    {
+      "id": "syn-raymond",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Raymond syndrome"
+    },
+    {
+      "id": "syn-pontine-hemorrhage",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Pontine hemorrhage"
+    },
+    {
+      "id": "syn-ramsay-hunt",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Ramsay Hunt syndrome"
+    },
+    {
+      "id": "syn-superior-orbital-fissure",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Superior orbital fissure syndrome"
+    },
+    {
+      "id": "syn-accessory-palsy",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Accessory nerve palsy"
+    },
+    {
+      "id": "syn-physiologic-anisocoria",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Physiologic anisocoria"
+    },
+    {
+      "id": "syn-anosmia",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Anosmia"
+    },
+    {
+      "id": "syn-transverse-myelitis",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Transverse myelitis"
+    },
+    {
+      "id": "syn-poliomyelitis",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Poliomyelitis (anterior horn disease)"
+    },
+    {
+      "id": "syn-lumbar-stenosis",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Lumbar canal stenosis and neurogenic claudication"
+    },
+    {
+      "id": "syn-parsonage-turner",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Neuralgic amyotrophy (Parsonage\u2013Turner)"
+    },
+    {
+      "id": "syn-axillary-neuropathy",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Axillary neuropathy"
+    },
+    {
+      "id": "syn-lumbosacral-plexopathy",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Lumbosacral plexopathy"
+    },
+    {
+      "id": "syn-mononeuritis-multiplex",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Mononeuritis multiplex"
+    },
+    {
+      "id": "syn-lambert-eaton",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Lambert\u2013Eaton myasthenic syndrome"
+    },
+    {
+      "id": "syn-myopathy-pattern",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Myopathy: pattern recognition"
+    },
+    {
+      "id": "syn-cavernous-sinus-thrombosis",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Cavernous sinus thrombosis"
+    },
+    {
+      "id": "syn-huntington-chorea",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Huntington disease and chorea"
+    },
+    {
+      "id": "syn-kluver-bucy",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Kl\u00fcver\u2013Bucy syndrome"
+    },
+    {
+      "id": "syn-hypothalamic-syndromes",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Hypothalamic syndromes"
+    },
+    {
+      "id": "syn-multiple-sclerosis-pattern",
+      "kind": "syndrome",
+      "tier": "extended",
+      "name": "Multiple sclerosis: lesion pattern and localization"
+    },
+    {
+      "id": "spinal-segment-cervical",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Spinal cord, cervical segments"
+    },
+    {
+      "id": "spinal-segment-thoracic",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Spinal cord, thoracic segments"
+    },
+    {
+      "id": "spinal-segment-lumbar",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Spinal cord, lumbar segments"
+    },
+    {
+      "id": "spinal-segment-sacral",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Spinal cord, sacral and coccygeal segments"
+    },
+    {
+      "id": "lumbosacral-trunk",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Lumbosacral trunk"
+    },
+    {
+      "id": "vein-internal-cerebral",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Internal cerebral vein"
+    },
+    {
+      "id": "vein-basal",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Basal vein of Rosenthal"
+    },
+    {
+      "id": "veins-venat-atlas",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Cerebral venous system (VENAT surface)"
+    },
+    {
+      "id": "nucleus-cuneiform",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Cuneiform nucleus"
+    },
+    {
+      "id": "nucleus-microcellular-tegmental-parabigeminal",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Microcellular tegmental and parabigeminal nuclei"
+    },
+    {
+      "id": "raphe-linear-caudal-rostral",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Caudal-rostral linear raphe nucleus complex"
+    },
+    {
+      "id": "reticular-formation-isthmic",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Isthmic reticular formation"
+    },
+    {
+      "id": "reticular-formation-mesencephalic",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Mesencephalic reticular formation"
+    },
+    {
+      "id": "nucleus-subcoeruleus",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Subcoeruleus nucleus"
+    },
+    {
+      "id": "nucleus-laterodorsal-tegmental",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Laterodorsal tegmental nucleus and central gray of the pons"
+    },
+    {
+      "id": "nucleus-parabrachial-lateral",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Lateral parabrachial nucleus"
+    },
+    {
+      "id": "nucleus-parabrachial-medial",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Medial parabrachial nucleus"
+    },
+    {
+      "id": "raphe-paramedian",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Paramedian raphe nucleus"
+    },
+    {
+      "id": "reticular-formation-pontine",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Pontine reticular nucleus, oral and caudal parts"
+    },
+    {
+      "id": "nuclei-viscero-sensory-motor",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Viscero-sensory-motor nuclei complex"
+    },
+    {
+      "id": "nucleus-parvicellular-reticular-alpha",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Parvicellular reticular nucleus, alpha part"
+    },
+    {
+      "id": "raphe-magnus",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Raphe magnus nucleus"
+    },
+    {
+      "id": "raphe-obscurus",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Raphe obscurus nucleus"
+    },
+    {
+      "id": "raphe-pallidus",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Raphe pallidus nucleus"
+    },
+    {
+      "id": "reticular-formation-medullary-inferior",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Inferior medullary reticular formation"
+    },
+    {
+      "id": "reticular-formation-medullary-superior",
+      "kind": "structure",
+      "tier": "extended",
+      "name": "Superior medullary reticular formation"
+    }
+  ]
 }

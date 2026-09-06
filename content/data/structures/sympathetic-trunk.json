@@ -8,19 +8,20 @@
   ],
   "system": "autonomic",
   "meshIds": [
-    "spinal-cord"
+    "sympathetic-trunk-l",
+    "sympathetic-trunk-r"
   ],
-  "summary": "A chain of ganglia running along each side of the vertebral column from the skull base to the coccyx, receiving preganglionic fibers from the T1–L2 segments through white rami communicantes and distributing postganglionic fibers to every spinal nerve through gray rami, to the head along the carotid arteries and to the viscera through cardiac, pulmonary and splanchnic nerves. Its three cervical ganglia (superior, middle and stellate) carry the entire sympathetic supply of the head and neck, so lesions of the chain in the neck or chest apex (Pancoast tumor, carotid dissection, surgery) cause Horner syndrome.",
+  "summary": "A chain of ganglia running along each side of the vertebral column from the skull base to the coccyx, receiving preganglionic fibers from the T1\u2013L2 segments through white rami communicantes and distributing postganglionic fibers to every spinal nerve through gray rami, to the head along the carotid arteries and to the viscera through cardiac, pulmonary and splanchnic nerves. Its three cervical ganglia (superior, middle and stellate) carry the entire sympathetic supply of the head and neck, so lesions of the chain in the neck or chest apex (Pancoast tumor, carotid dissection, surgery) cause Horner syndrome.",
   "anatomy": {
     "location": "Paravertebral gutter on each side from C1 to the coccyx: cervical ganglia in front of the transverse processes behind the carotid sheath, thoracic ganglia on the heads of the ribs, lumbar ganglia on the vertebral bodies, sacral ganglia medial to the anterior sacral foramina, joining at the ganglion impar.",
     "subdivisions": [
       {
         "name": "Superior cervical ganglion",
-        "note": "C1–C4 level; postganglionic fibers to the head (pupil, lid, face sweating) via the internal carotid plexus"
+        "note": "C1\u2013C4 level; postganglionic fibers to the head (pupil, lid, face sweating) via the internal carotid plexus"
       },
       {
         "name": "Middle cervical and stellate (cervicothoracic) ganglia",
-        "note": "C6–T1; upper limb, heart"
+        "note": "C6\u2013T1; upper limb, heart"
       },
       {
         "name": "Thoracic ganglia",
@@ -82,7 +83,7 @@
       {
         "pathology": "Pancoast (superior sulcus) tumor",
         "modality": "CT",
-        "finding": "Apical lung mass invading the stellate ganglion and lower brachial plexus: Horner syndrome with C8–T1 pain and hand weakness.",
+        "finding": "Apical lung mass invading the stellate ganglion and lower brachial plexus: Horner syndrome with C8\u2013T1 pain and hand weakness.",
         "sequence": "CT contrast"
       },
       {

@@ -6,7 +6,10 @@ meshes:
   - {id: bp3d-cerebrum-r, fma: 67292, name: "Right cerebral hemisphere (BodyParts3D)", system: envelope, side: right, budget: huge, colour: "#E6D5C3", visible: false, structureId: lobe-frontal}
   - {id: bp3d-brainstem, fma: 79876, name: "Brainstem (BodyParts3D)", system: brainstem, subsystem: reference, side: midline, budget: large, visible: false, structureId: brainstem}
   - {id: bp3d-cerebellum, fma: 67944, name: "Cerebellum (BodyParts3D)", system: cerebellum, subsystem: reference, side: midline, budget: large, visible: false, structureId: cerebellum}
-  - {id: spinal-cord, fma: 7647, name: "Spinal cord", system: spinal-cord, side: midline, budget: large, colour: "#C7B299", visible: true}
+  # FMA7647 "Spinal cord" retired 2026-09-06: the BodyParts3D concept is a 36 mm upper-cervical stub
+  # (z -83..-49) and, having no sub-cranial post-correction, it sat 20-25 mm behind the corrected
+  # Z-Anatomy cord.  The cord is now the Z-Anatomy white/grey meshes and the atlas-derived segment
+  # blocks + filum terminale; content entries point at those.
   - {id: pituitary-gland, fma: 13889, name: "Pituitary gland", system: diencephalon, subsystem: hypothalamus, side: midline, budget: small, colour: "#E6B89C", visible: true, structureId: pituitary-infundibulum}
   - {id: pineal-gland, fma: 62033, name: "Pineal gland", system: diencephalon, side: midline, budget: tiny, colour: "#D2A679", visible: true}
   - {id: optic-chiasm, fma: 62045, name: "Optic chiasm", system: cranial-nerves, subsystem: visual, side: midline, budget: small, colour: "#EFE3A8", visible: true}

@@ -14,8 +14,11 @@ export class SliceControls {
 
   constructor(private app: App, container: HTMLElement) {
     const bar = h('div', { class: 'slicebar' });
+    // brain-only ranges by default; the cord MRI grid reaches to the conus, so its range is added only once the
+    // cord MRI is switched on, which keeps the brain sliders as precise as they were
+    const extent = (axis: Axis): [number, number] => axisExtentMm(axis, app.store.get().cordMri ? app.grids : app.grid);
     for (const a of AXES) {
-      const [lo, hi] = axisExtentMm(a.axis, app.grid);
+      const [lo, hi] = extent(a.axis);
       const cb = h('input', { type: 'checkbox', onchange: (e: Event) => setSliceVisible(app, a.axis, (e.target as HTMLInputElement).checked) });
       const sl = h('input', { type: 'range', min: lo, max: hi, step: 1, oninput: (e: Event) => setSlices(app, { [a.axis]: Number((e.target as HTMLInputElement).value) }) });
       const num = h('input', { type: 'number', class: 'mm', min: lo, max: hi, step: 1, onchange: (e: Event) => setSlices(app, { [a.axis]: Number((e.target as HTMLInputElement).value) }) });
@@ -32,9 +35,22 @@ export class SliceControls {
     const all = h('input', { type: 'checkbox', title: 'Colour every visible structure on the slices', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, showAllLabels: (e.target as HTMLInputElement).checked } }) });
     const terr = h('input', { type: 'checkbox', title: 'Tint arterial territories', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, territory: (e.target as HTMLInputElement).checked } }) });
     const pin = h('input', { type: 'checkbox', title: 'Keep slices where they are when selecting', onchange: (e: Event) => app.store.set({ slices: { ...app.store.get().slices, pinned: (e.target as HTMLInputElement).checked } }) });
+    const cord = h('input', { type: 'checkbox', title: 'Continue the MRI below the foramen magnum with the PAM50 spinal cord template (loaded on demand)',
+      onchange: (e: Event) => app.store.set({ cordMri: (e.target as HTMLInputElement).checked }) });
+    const cordLabel = h('label', { class: 'cord-mri' }, cord, ' cord MRI');
+    cordLabel.hidden = !app.cordGrid;
     bar.append(h('div', { class: 'slice-opts' },
-      h('label', {}, 'MRI ', contrast), h('label', {}, 'overlay ', opacity), h('label', {}, all, ' all labels'), h('label', {}, terr, ' territories'), h('label', {}, pin, ' pin slices')));
+      h('label', {}, 'MRI ', contrast), h('label', {}, 'overlay ', opacity), h('label', {}, all, ' all labels'), h('label', {}, terr, ' territories'), h('label', {}, pin, ' pin slices'), cordLabel));
     container.append(bar);
+    app.store.subscribe((s) => s.cordMri, (on) => {
+      cord.checked = on;
+      for (const a of AXES) {
+        const [lo, hi] = extent(a.axis);
+        const s = this.sliders.get(a.axis)!; const n = this.nums.get(a.axis)!;
+        s.min = String(lo); s.max = String(hi); n.min = String(lo); n.max = String(hi);
+        const v = app.store.get().slices[a.axis]; s.value = String(v); n.value = String(v);
+      }
+    });
     app.store.subscribe((s) => s.slices, (sl) => {
       for (const a of AXES) {
         const v = sl[a.axis]; const s = this.sliders.get(a.axis)!; const n = this.nums.get(a.axis)!;

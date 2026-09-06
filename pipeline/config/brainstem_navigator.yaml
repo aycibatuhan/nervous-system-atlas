@@ -4,14 +4,19 @@
 # fetch BrainstemNavigatorv1.0.zip by hand (see the module docstring of brainstem_nav.py) and drop it in
 # pipeline/raw/manual/ or unpack it into pipeline/raw/brainstem_navigator/.
 #
-# `space` is what the meshes are tagged with. The v1.0 probabilistic and thresholded label sets are
-# distributed in MNI152 (NLin6-like, the FSL box), so the default is nlin6 -> alignment
-# "nlin6-identity"; set it to mni2009 (alignment "native-mni") only if the shipped README or the NIfTI
-# headers say the labels were resampled to MNI152NLin2009cAsym.
+# LICENCE: BrainstemNavigator-NC-ND (sources.yaml) - non-commercial research, and derived files may NOT
+# leave the organisation. Every mesh built here records source "brainstem_navigator", so the manifest
+# marks it nc: true / noRedistribution: true. These meshes must be excluded from any shared build.
+#
+# `space` is what the meshes are tagged with. The v1.0 MNI label sets are 182x218x182 at 1 mm on the
+# affine [[1,0,0,-91],[0,1,0,-126],[0,0,1,-72]] - the FSL MNI152 6th-generation box named by the shipped
+# Readme - so the default is nlin6 -> alignment "nlin6-identity". Set it to mni2009 (alignment
+# "native-mni") only if a release says the labels were resampled to MNI152NLin2009cAsym.
 space: nlin6
 
-# Prefer the 0.5 mm label set when the toolkit ships both, and prefer the thresholded binary labels over
-# the probabilistic ones (the probabilistic maps are meshed at `probability_threshold`).
+# Prefer the 0.5 mm label set when a release ships both (v1.0's MNI trees are 1 mm only, so this is just
+# a tie-break), and prefer the thresholded binary labels over the probabilistic ones (the probabilistic
+# maps are meshed at `probability_threshold`). The voxel size is read from the NIfTI header.
 prefer_resolution: "0.5"
 prefer_labels: labels_thresholded_binary
 probability_threshold: 0.35
@@ -19,55 +24,163 @@ probability_threshold: 0.35
 # Nuclei that MASSP20 / CIT168 / Neudorfer already provide are skipped unless --with-duplicates is given.
 skip_duplicates: true
 
-# abbreviation -> mesh entry. `paired: true` means the toolkit ships a left and a right file (or one file
-# per side inside a lateralised name) and the meshes get the usual -l / -r suffixes.
-# `duplicates` names the mesh id this nucleus would repeat; such entries are skipped by default.
+# abbreviation -> mesh entry. The key must be the file stem with the trailing _l / _r removed, matched
+# exactly (so PnO_PnC is not shadowed by a shorter PnO key). Full names are from
+# Documentation/ListofNuclei.pdf.
+#   paired:      the toolkit ships <ABBREV>_l and <ABBREV>_r; the meshes get the usual -l / -r suffixes
+#   duplicates:  names the mesh id this nucleus would repeat; such entries are skipped by default
+#   structureId: content entry the mesh belongs to (defaults to `id`); used to hang the 7 T subdivisions
+#                off their parent structure and to attach a nucleus to an entry that already exists
+#   visible:     false everywhere - these are small, local-only meshes and none of them is a first-paint
+#                structure; the subdivisions are additionally hidden behind their parent
 nuclei:
-  # ---- midbrain
-  SN1: {id: bsn-substantia-nigra-1, name: "Substantia nigra, subregion 1", subsystem: midbrain, paired: true, colour: "#5A4450", duplicates: substantia-nigra}
-  SN2: {id: bsn-substantia-nigra-2, name: "Substantia nigra, subregion 2", subsystem: midbrain, paired: true, colour: "#4E3A48", duplicates: substantia-nigra}
-  RN1: {id: bsn-red-nucleus-1, name: "Red nucleus, subregion 1", subsystem: midbrain, paired: true, colour: "#C4665A", duplicates: red-nucleus}
-  RN2: {id: bsn-red-nucleus-2, name: "Red nucleus, subregion 2", subsystem: midbrain, paired: true, colour: "#B85E56", duplicates: red-nucleus}
-  PAG: {id: bsn-periaqueductal-grey, name: "Periaqueductal gray", subsystem: midbrain, paired: true, colour: "#A08A96", duplicates: periaqueductal-grey}
-  VTA: {id: bsn-ventral-tegmental-area, name: "Ventral tegmental area", subsystem: midbrain, paired: true, colour: "#8E6E7E", duplicates: ventral-tegmental-area}
-  SC: {id: bsn-superior-colliculus, name: "Superior colliculus", subsystem: midbrain, paired: true, colour: "#CCB0A8", duplicates: superior-colliculus}
-  IC: {id: bsn-inferior-colliculus, name: "Inferior colliculus", subsystem: midbrain, paired: true, colour: "#C4A6A0", duplicates: inferior-colliculus}
-  DR: {id: bsn-raphe-dorsal, name: "Dorsal raphe nucleus", subsystem: midbrain, paired: false, colour: "#A48C90", duplicates: raphe-dorsal}
-  MiTg-PBG: {id: nucleus-microcellular-tegmental-parabigeminal, name: "Microcellular tegmental nucleus and parabigeminal nucleus", subsystem: midbrain, paired: true, colour: "#B39AA2"}
-  CnF: {id: nucleus-cuneiform, name: "Cuneiform nucleus", subsystem: midbrain, paired: true, colour: "#B69FA6"}
-  PTg: {id: bsn-pedunculopontine-nucleus, name: "Pedunculotegmental nucleus", subsystem: midbrain, paired: true, colour: "#AC9AA4", duplicates: pedunculopontine-nucleus}
-  isRt: {id: reticular-formation-isthmic, name: "Isthmic reticular formation", subsystem: midbrain, paired: true, colour: "#BCA79E"}
-  mRt: {id: reticular-formation-mesencephalic, name: "Mesencephalic reticular formation", subsystem: midbrain, paired: true, colour: "#B8A39B"}
+  # ================================================================ 2a. brainstem atlas - midbrain
+  CLi_RLi:
+    {id: raphe-linear-caudal-rostral, name: "Caudal-rostral linear raphe nucleus complex",
+     subsystem: midbrain, paired: false, colour: "#A8949E"}
+  CnF:
+    {id: nucleus-cuneiform, name: "Cuneiform nucleus", subsystem: midbrain, paired: true, colour: "#B69FA6"}
+  MiTg_PBG:
+    {id: nucleus-microcellular-tegmental-parabigeminal,
+     name: "Microcellular tegmental and parabigeminal nuclei", subsystem: midbrain, paired: true, colour: "#B39AA2"}
+  isRt:
+    {id: reticular-formation-isthmic, name: "Isthmic reticular formation", subsystem: midbrain,
+     paired: true, colour: "#BCA79E"}
+  mRt:
+    {id: reticular-formation-mesencephalic, name: "Mesencephalic reticular formation", subsystem: midbrain,
+     paired: true, colour: "#B8A39B"}
+  mRta:
+    {id: reticular-formation-mesencephalic-anterior, name: "Mesencephalic reticular formation, anterior part",
+     structureId: reticular-formation-mesencephalic, subsystem: midbrain, paired: true, visible: false, colour: "#C0ABA2"}
+  mRtd:
+    {id: reticular-formation-mesencephalic-dorsal, name: "Mesencephalic reticular formation, dorsal part",
+     structureId: reticular-formation-mesencephalic, subsystem: midbrain, paired: true, visible: false, colour: "#B4A099"}
+  mRtl:
+    {id: reticular-formation-mesencephalic-lateral, name: "Mesencephalic reticular formation, lateral part",
+     structureId: reticular-formation-mesencephalic, subsystem: midbrain, paired: true, visible: false, colour: "#AC9A93"}
 
-  # ---- pons
-  LC: {id: locus-coeruleus, name: "Locus coeruleus", subsystem: pons, paired: true, colour: "#6E7FA0"}
-  SubC: {id: nucleus-subcoeruleus, name: "Subcoeruleus nucleus", subsystem: pons, paired: true, colour: "#7C8AA8"}
-  LDTg: {id: nucleus-laterodorsal-tegmental, name: "Laterodorsal tegmental nucleus", subsystem: pons, paired: true, colour: "#A99BA6"}
-  LDTg-CGPn: {id: nucleus-laterodorsal-tegmental, name: "Laterodorsal tegmental nucleus and central gray of the pons", subsystem: pons, paired: true, colour: "#A99BA6"}
-  CGPn: {id: central-gray-pons, name: "Central gray of the pons", subsystem: pons, paired: false, colour: "#AEA0A8"}
-  PBN: {id: nucleus-parabrachial, name: "Parabrachial nuclei", subsystem: pons, paired: true, colour: "#B0989E"}
-  MPB: {id: nucleus-parabrachial-medial, name: "Medial parabrachial nucleus", subsystem: pons, paired: true, colour: "#B49CA2"}
-  LPB: {id: nucleus-parabrachial-lateral, name: "Lateral parabrachial nucleus", subsystem: pons, paired: true, colour: "#AC949A"}
-  MnR: {id: bsn-raphe-median, name: "Median raphe nucleus", subsystem: pons, paired: false, colour: "#AE979C", duplicates: raphe-median}
-  PMnR: {id: raphe-paramedian, name: "Paramedian raphe nucleus", subsystem: pons, paired: false, colour: "#A8939A"}
-  PnO-PnC: {id: reticular-formation-pontine, name: "Pontine reticular formation (oral and caudal parts)", subsystem: pons, paired: true, colour: "#BCA69C"}
-  PnO: {id: reticular-formation-pontine-oral, name: "Pontine reticular formation, oral part", subsystem: pons, paired: true, colour: "#BEA89E"}
-  PnC: {id: reticular-formation-pontine-caudal, name: "Pontine reticular formation, caudal part", subsystem: pons, paired: true, colour: "#B8A29A"}
-  sMRt: {id: reticular-formation-medullary-superior, name: "Superior medullary reticular formation", subsystem: medulla, paired: true, colour: "#B7A29B"}
+  # ---- midbrain nuclei the atlas already has from MASSP20 / CIT168 (skipped by default)
+  DR:
+    {id: bsn-raphe-dorsal, name: "Dorsal raphe nucleus", subsystem: midbrain, paired: false,
+     colour: "#A48C90", duplicates: raphe-dorsal}
+  IC:
+    {id: bsn-inferior-colliculus, name: "Inferior colliculus", subsystem: midbrain, paired: true,
+     colour: "#C4A6A0", duplicates: inferior-colliculus}
+  SC:
+    {id: bsn-superior-colliculus, name: "Superior colliculus", subsystem: midbrain, paired: true,
+     colour: "#CCB0A8", duplicates: superior-colliculus}
+  PAG:
+    {id: bsn-periaqueductal-grey, name: "Periaqueductal gray", subsystem: midbrain, paired: false,
+     colour: "#A08A96", duplicates: periaqueductal-grey}
+  PTg:
+    {id: bsn-pedunculotegmental, name: "Pedunculotegmental (pedunculopontine) nucleus", subsystem: midbrain,
+     paired: true, colour: "#AC9AA4", duplicates: pedunculopontine-nucleus}
+  VTA_PBP:
+    {id: bsn-ventral-tegmental-area, name: "Ventral tegmental area - parabrachial pigmented nucleus complex",
+     subsystem: midbrain, paired: true, colour: "#8E6E7E", duplicates: ventral-tegmental-area}
+  SN:
+    {id: bsn-substantia-nigra, name: "Substantia nigra", subsystem: midbrain, paired: true,
+     colour: "#5A4450", duplicates: substantia-nigra}
+  RN:
+    {id: bsn-red-nucleus, name: "Red nucleus", subsystem: midbrain, paired: true,
+     colour: "#C4665A", duplicates: red-nucleus}
 
-  # ---- medulla
-  Ve: {id: nuclei-vestibular, name: "Vestibular nuclei complex", subsystem: medulla, paired: true, colour: "#A2A8B4"}
-  VSM: {id: nuclei-viscero-sensory-motor, name: "Viscero-sensory-motor nuclei complex", subsystem: medulla, paired: true, colour: "#A6A0AC"}
-  Sol: {id: nucleus-solitary-tract, name: "Nucleus of the solitary tract", subsystem: medulla, paired: true, colour: "#A29CAA"}
-  ION: {id: nucleus-inferior-olivary, name: "Inferior olivary nucleus", subsystem: medulla, paired: true, colour: "#C0A594"}
-  RMg: {id: raphe-magnus, name: "Raphe magnus nucleus", subsystem: medulla, paired: false, colour: "#AC9498"}
-  ROb: {id: raphe-obscurus, name: "Raphe obscurus nucleus", subsystem: medulla, paired: false, colour: "#A69096"}
-  RPa: {id: raphe-pallidus, name: "Raphe pallidus nucleus", subsystem: medulla, paired: false, colour: "#B29A9E"}
-  iMRt: {id: reticular-formation-medullary-inferior, name: "Inferior medullary reticular formation", subsystem: medulla, paired: true, colour: "#B29D96"}
-  mMRt: {id: reticular-formation-medullary-middle, name: "Middle medullary reticular formation", subsystem: medulla, paired: true, colour: "#B5A099"}
-  PCRt: {id: nucleus-parvicellular-reticular, name: "Parvicellular reticular nucleus", subsystem: medulla, paired: true, colour: "#B09B94"}
+  # ---- 7 T subdivisions of those nuclei: NOT duplicates, they are finer than anything else in the atlas
+  SN1:
+    {id: substantia-nigra-bsn-1, name: "Substantia nigra, subregion 1 (compatible with pars reticulata)",
+     structureId: substantia-nigra, subsystem: midbrain, paired: true, visible: false, colour: "#6E5A66"}
+  SN2:
+    {id: substantia-nigra-bsn-2, name: "Substantia nigra, subregion 2 (compatible with pars compacta)",
+     structureId: substantia-nigra, subsystem: midbrain, paired: true, visible: false, colour: "#4E3A48"}
+  RN1:
+    {id: red-nucleus-bsn-1, name: "Red nucleus, subregion 1", structureId: red-nucleus,
+     subsystem: midbrain, paired: true, visible: false, colour: "#C4665A"}
+  RN2:
+    {id: red-nucleus-bsn-2, name: "Red nucleus, subregion 2", structureId: red-nucleus,
+     subsystem: midbrain, paired: true, visible: false, colour: "#B05650"}
 
-  # ---- diencephalic nuclei shipped with the toolkit
-  STh: {id: bsn-subthalamic-nucleus, name: "Subthalamic nucleus", system: basal-ganglia, subsystem: null, paired: true, colour: "#B27A78", duplicates: subthalamic-nucleus}
-  HTH: {id: bsn-hypothalamus, name: "Hypothalamus", system: diencephalon, subsystem: hypothalamus, paired: true, colour: "#C9A27E", duplicates: hypothalamus-lateral}
-  MB: {id: bsn-mammillary-body, name: "Mammillary body", system: diencephalon, subsystem: hypothalamus, paired: true, colour: "#CDA880", duplicates: mammillary-body}
+  # ================================================================ 2a. brainstem atlas - pons
+  LC:
+    {id: locus-coeruleus, name: "Locus coeruleus", subsystem: pons, paired: true, colour: "#6E7FA0"}
+  SubC:
+    {id: nucleus-subcoeruleus, name: "Subcoeruleus nucleus", subsystem: pons, paired: true, colour: "#7C8AA8"}
+  LDTg_CGPn:
+    {id: nucleus-laterodorsal-tegmental,
+     name: "Laterodorsal tegmental nucleus and central gray of the rhombencephalon",
+     subsystem: pons, paired: true, colour: "#A99BA6"}
+  LPB:
+    {id: nucleus-parabrachial-lateral, name: "Lateral parabrachial nucleus", subsystem: pons,
+     paired: true, colour: "#AC949A"}
+  MPB:
+    {id: nucleus-parabrachial-medial, name: "Medial parabrachial nucleus", subsystem: pons,
+     paired: true, colour: "#B49CA2"}
+  PMnR:
+    {id: raphe-paramedian, name: "Paramedian raphe nucleus", subsystem: pons, paired: false, colour: "#A8939A"}
+  PnO_PnC:
+    {id: reticular-formation-pontine, name: "Pontine reticular nucleus, oral and caudal parts",
+     subsystem: pons, paired: true, colour: "#BCA69C"}
+  SOC:
+    {id: nucleus-superior-olivary, name: "Superior olivary complex", structureId: superior-olivary-complex,
+     subsystem: pons, paired: true, colour: "#C2A89A"}
+  MnR:
+    {id: bsn-raphe-median, name: "Median raphe nucleus", subsystem: pons, paired: false,
+     colour: "#AE979C", duplicates: raphe-median}
+
+  # ================================================================ 2a. brainstem atlas - medulla
+  ION:
+    {id: nucleus-inferior-olivary, name: "Inferior olivary nucleus", structureId: inferior-olivary-nucleus,
+     subsystem: medulla, paired: true, colour: "#C0A594"}
+  Ve:
+    {id: nuclei-vestibular, name: "Vestibular nuclei complex", structureId: vestibular-nuclei,
+     subsystem: medulla, paired: true, colour: "#A2A8B4"}
+  VSM:
+    {id: nuclei-viscero-sensory-motor, name: "Viscero-sensory-motor nuclei complex", subsystem: medulla,
+     paired: true, colour: "#A6A0AC"}
+  PCRtA:
+    {id: nucleus-parvicellular-reticular-alpha, name: "Parvicellular reticular nucleus, alpha part",
+     subsystem: medulla, paired: true, colour: "#B09B94"}
+  RMg:
+    {id: raphe-magnus, name: "Raphe magnus nucleus", subsystem: medulla, paired: false, colour: "#AC9498"}
+  ROb:
+    {id: raphe-obscurus, name: "Raphe obscurus nucleus", subsystem: medulla, paired: false, colour: "#A69096"}
+  RPa:
+    {id: raphe-pallidus, name: "Raphe pallidus nucleus", subsystem: medulla, paired: false, colour: "#B29A9E"}
+  iMRt:
+    {id: reticular-formation-medullary-inferior, name: "Inferior medullary reticular formation",
+     subsystem: medulla, paired: true, colour: "#B29D96"}
+  iMRtl:
+    {id: reticular-formation-medullary-inferior-lateral,
+     name: "Inferior medullary reticular formation, lateral part",
+     structureId: reticular-formation-medullary-inferior, subsystem: medulla, paired: true, visible: false, colour: "#BAA59E"}
+  iMRtm:
+    {id: reticular-formation-medullary-inferior-medial,
+     name: "Inferior medullary reticular formation, medial part",
+     structureId: reticular-formation-medullary-inferior, subsystem: medulla, paired: true, visible: false, colour: "#AA958E"}
+  sMRt:
+    {id: reticular-formation-medullary-superior, name: "Superior medullary reticular formation",
+     subsystem: medulla, paired: true, colour: "#B7A29B"}
+  sMRtl:
+    {id: reticular-formation-medullary-superior-lateral,
+     name: "Superior medullary reticular formation, lateral part",
+     structureId: reticular-formation-medullary-superior, subsystem: medulla, paired: true, visible: false, colour: "#BFAAA3"}
+  sMRtm:
+    {id: reticular-formation-medullary-superior-medial,
+     name: "Superior medullary reticular formation, medial part",
+     structureId: reticular-formation-medullary-superior, subsystem: medulla, paired: true, visible: false, colour: "#AF9A93"}
+
+  # ================================================================ 2b. diencephalic atlas
+  LG:
+    {id: bsn-lateral-geniculate-nucleus, name: "Lateral geniculate nucleus", system: diencephalon,
+     paired: true, colour: "#C9A27E", duplicates: lateral-geniculate-nucleus}
+  MG:
+    {id: bsn-medial-geniculate-nucleus, name: "Medial geniculate nucleus", system: diencephalon,
+     paired: true, colour: "#C29A78", duplicates: medial-geniculate-nucleus}
+  STh:
+    {id: bsn-subthalamic-nucleus, name: "Subthalamic nucleus", system: basal-ganglia, paired: true,
+     colour: "#B27A78", duplicates: subthalamic-nucleus}
+  STh1:
+    {id: subthalamic-nucleus-bsn-1, name: "Subthalamic nucleus, subregion 1",
+     structureId: subthalamic-nucleus, system: basal-ganglia, paired: true, visible: false, colour: "#B27A78"}
+  STh2:
+    {id: subthalamic-nucleus-bsn-2, name: "Subthalamic nucleus, subregion 2",
+     structureId: subthalamic-nucleus, system: basal-ganglia, paired: true, visible: false, colour: "#A46E6E"}

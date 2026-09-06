@@ -162,5 +162,78 @@
    "used": true
   }
  },
- "notes": "Z-Anatomy world meters (+x subject left, +y posterior, +z up) -> MNI152NLin2009cAsym RAS mm; 12-dof affine from landmark centroids."
+ "notes": "Z-Anatomy world meters (+x subject left, +y posterior, +z up) -> MNI152NLin2009cAsym RAS mm; 12-dof affine from landmark centroids.",
+ "post_correction": {
+  "enabled": true,
+  "model": "midline-shear",
+  "space": "zanatomy-source-metres",
+  "applies_to": "x",
+  "dx_mm": {
+   "ky": 0.446415,
+   "kz": 7.527621,
+   "k0": -12.192761
+  },
+  "blend": {
+   "kind": "smoothstep",
+   "z_zero_m": 1.5505,
+   "z_full_m": 1.5205
+  },
+  "fit": {
+   "samples": 1435,
+   "used": 1413,
+   "residual_mean_mm": 0.0055,
+   "residual_max_mm": 0.4182
+  },
+  "notes": "dx = -w(z_src) * (ky*y_src + kz*z_src + k0), applied to MNI x after the affine; y_src/z_src are Z-Anatomy world metres and w is a smoothstep that is exactly 0 at and above the foramen magnum (z_src >= z_zero_m) and exactly 1 below z_full_m. Fitted to the mirror-symmetric midline of the Z-Anatomy source (1356 .l/.r object pairs plus the vertebral column, cord and sacrum); it removes the x-from-z shear of the brain-only landmark affine, which is unconstrained below the skull base.",
+  "ap": {
+   "enabled": true,
+   "model": "monotone-cubic-ramp",
+   "space": "zanatomy-source-metres",
+   "applies_to": "y",
+   "knots": [
+    [
+     1.543,
+     23.31
+    ],
+    [
+     1.5505,
+     20.17
+    ],
+    [
+     1.5646,
+     15.2
+    ],
+    [
+     1.577,
+     8.38
+    ],
+    [
+     1.589,
+     3.81
+    ],
+    [
+     1.599,
+     0.0
+    ]
+   ],
+   "knot_labels": [
+    "cervicomedullary junction",
+    "foramen magnum",
+    "obex",
+    "pontomedullary junction",
+    "mid-pons",
+    "pontomesencephalic junction"
+   ],
+   "anchor_zero_m": 1.599,
+   "anchor_full_m": 1.543,
+   "full_dy_mm": 23.31,
+   "fit": {
+    "samples": 27,
+    "rms_mm": 1.058,
+    "mean_abs_mm": 0.745,
+    "max_abs_mm": 3.202
+   },
+   "notes": "dy = ramp(z_src), added to MNI y (positive = anterior) after the affine. ramp is a Fritsch-Carlson monotone cubic Hermite through the knots with clamped zero end tangents, exactly 0.0 at and above anchor_zero_m (the pontomesencephalic junction, so the midbrain and everything above it is bit-identical) and exactly full_dy_mm at and below anchor_full_m (the cervicomedullary junction, so the cord's own shape and its ~21 deg slope are preserved). Knot heights are anatomy read off the Z-Anatomy objects; knot values are least-squares-fitted to the measured per-slab AP profile of the Z-Anatomy brainstem silhouette against the MNI aseg brainstem (label 16)."
+  }
+ }
 }

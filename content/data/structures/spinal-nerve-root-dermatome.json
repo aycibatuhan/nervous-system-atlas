@@ -5,14 +5,17 @@
   "synonyms": [],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-cord"
+    "spinal-roots-anterior-l",
+    "spinal-roots-anterior-r",
+    "spinal-roots-posterior-l",
+    "spinal-roots-posterior-r"
   ],
   "summary": "Each segment of the cord gives a ventral (motor) and a dorsal (sensory) root that unite in the intervertebral foramen into a spinal nerve, which immediately divides into a dorsal ramus for the back and a ventral ramus for the limbs and trunk. The skin supplied by one dorsal root is its dermatome and the muscles supplied by one ventral root its myotome; because adjacent dermatomes overlap, a single root lesion produces pain and paresthesia in the dermatome but only patchy numbness, whereas the myotome pattern and the lost reflex localize the root. The key landmarks are C6 thumb, C7 middle finger, C8 little finger, T4 nipple, T10 umbilicus, L4 medial leg, L5 dorsum of the foot and great toe, S1 lateral foot and sole.",
   "anatomy": {
     "location": "Roots run from the cord to the foramina, increasingly obliquely downward; cervical roots emerge above their vertebra (C8 below C7), thoracic and lumbar roots below theirs; the dorsal root ganglion sits in the foramen.",
     "subdivisions": [
       {
-        "name": "Cervical roots C5–T1",
+        "name": "Cervical roots C5\u2013T1",
         "note": "brachial plexus: C5 deltoid/biceps reflex, C6 biceps and wrist extensors/brachioradialis reflex, C7 triceps/triceps reflex, C8 finger flexors, T1 hand intrinsics"
       },
       {
@@ -20,11 +23,11 @@
         "note": "intercostal and abdominal muscles; band-like dermatomes"
       },
       {
-        "name": "Lumbosacral roots L2–S1",
-        "note": "L2–L3 hip flexion, L4 knee extension/knee reflex, L5 dorsiflexion and great toe extension, S1 plantar flexion/ankle reflex"
+        "name": "Lumbosacral roots L2\u2013S1",
+        "note": "L2\u2013L3 hip flexion, L4 knee extension/knee reflex, L5 dorsiflexion and great toe extension, S1 plantar flexion/ankle reflex"
       },
       {
-        "name": "Sacral roots S2–S4",
+        "name": "Sacral roots S2\u2013S4",
         "note": "pelvic floor, sphincters, perineal sensation"
       }
     ]
@@ -50,7 +53,7 @@
           "y": -48,
           "z": -65
         },
-        "label": "upper cervical cord with the C1–C2 root region"
+        "label": "upper cervical cord with the C1\u2013C2 root region"
       }
     ],
     "normalAppearance": "Root compression is diagnosed on axial and sagittal spine MRI where a disc or osteophyte narrows the foramen or the lateral recess; the root affected depends on the level and position of the disc. Root enhancement indicates inflammation or infiltration.",
@@ -58,11 +61,11 @@
       {
         "pathology": "Foraminal disc herniation",
         "modality": "MRI",
-        "finding": "Disc material in the foramen compressing the exiting root (C5–C6 disc: C6 root; L4–L5 posterolateral disc: L5 root).",
+        "finding": "Disc material in the foramen compressing the exiting root (C5\u2013C6 disc: C6 root; L4\u2013L5 posterolateral disc: L5 root).",
         "sequence": "T2"
       },
       {
-        "pathology": "Polyradiculitis (Guillain–Barré, CMV, Lyme, carcinomatosis)",
+        "pathology": "Polyradiculitis (Guillain\u2013Barr\u00e9, CMV, Lyme, carcinomatosis)",
         "modality": "MRI",
         "finding": "Smooth or nodular enhancement of the roots.",
         "sequence": "T1+Gd"
@@ -91,7 +94,7 @@
     "examination": [
       "Map pin-prick and light touch against the dermatome chart",
       "Test the key muscle and reflex for each root",
-      "Straight-leg raise (L5, S1) and femoral stretch (L2–L4); Spurling's test in the neck"
+      "Straight-leg raise (L5, S1) and femoral stretch (L2\u2013L4); Spurling's test in the neck"
     ],
     "syndromes": [
       "syn-radiculopathy-cervical",
@@ -99,7 +102,7 @@
       "syn-guillain-barre"
     ],
     "pearls": [
-      "A reflex loss plus a dermatomal symptom is the quickest root localization: biceps C5–C6, triceps C7, knee L4, ankle S1",
+      "A reflex loss plus a dermatomal symptom is the quickest root localization: biceps C5\u2013C6, triceps C7, knee L4, ankle S1",
       "Root lesions spare the dorsal ramus territory on the trunk only if the lesion is distal to it: paraspinal EMG separates root from plexus"
     ]
   },

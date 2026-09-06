@@ -34,7 +34,7 @@
     }
   ],
   "decussation": {
-    "level": "Anterior white commissure, 1–2 segments above entry",
+    "level": "Anterior white commissure, 1\u20132 segments above entry",
     "structureId": "spinal-white-columns",
     "note": "Second-order axons cross obliquely; a syrinx damages them here."
   },
@@ -48,14 +48,14 @@
     {
       "order": 2,
       "structureId": "spinal-grey-posterior-horn",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "ipsilateral",
       "note": "synapse in the substantia gelatinosa and nucleus proprius"
     },
     {
       "order": 3,
       "structureId": "spinal-white-columns",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "contralateral",
       "note": "crosses in the anterior white commissure; ascends in the anterolateral funiculus, sacral fibers lateral"
     },
@@ -110,7 +110,7 @@
       "side": "bilateral"
     },
     {
-      "level": "Hemicord (Brown-Séquard)",
+      "level": "Hemicord (Brown-S\u00e9quard)",
       "effects": "Contralateral loss starting one to two segments below the lesion",
       "side": "contralateral"
     },

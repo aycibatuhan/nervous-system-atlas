@@ -44,6 +44,10 @@ def main(argv=None) -> None:
     meshes = json.loads((WORK / "meshes.json").read_text())
     labels = json.loads((VOLUMES / "labels.json").read_text())
     volume = json.loads((VOLUMES / "volume.json").read_text())
+    # the cord MRI (atlas-pam50) lives on its own grid off the 193x229x193 brain box, so it ships as a second
+    # volume set with its own affine; absent until atlas-pam50 has run.
+    cord_path = VOLUMES / "cord.json"
+    cord = json.loads(cord_path.read_text()) if cord_path.exists() else None
     cfg = load_sources()
     lock = load_lock()
     by_mesh = labels["byMesh"]
@@ -69,20 +73,25 @@ def main(argv=None) -> None:
     manifest = {
         "schema": 1, "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "space": "MNI152NLin2009cAsym",
         "grid": {"shape": volume["shape"], "spacing": volume["spacing"], "origin_ras": volume["origin_ras"], "affine_ras": volume["affine_ras"]},
-        "volumes": {**volume["contrasts"], **{k: {**v, "lut": "volumes/labels.json"} for k, v in labels["volumes"].items()}},
+        "volumes": {**volume["contrasts"], **{k: {**v, "lut": "volumes/labels.json"} for k, v in labels["volumes"].items()},
+                    **(cord["contrasts"] if cord else {})},
+        "grids": {"cord": {k: cord[k] for k in ("shape", "spacing", "origin_ras", "affine_ras", "source", "license", "reformat")}} if cord else {},
         "transforms": transforms,
         "systems": [{"id": s[0], "name": s[1], "colour": s[2], "defaultVisible": s[3]} for s in catalog.SYSTEMS],
         "licenses": {k: {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""), "nc": bool(v.get("nc", False)), "noRedistribution": bool(v.get("no_redistribution", False)),
                          "text": f"licenses/{k}.txt"} for k, v in cfg["licenses"].items()},
         "sources": {s["id"]: {"license": s["license"], "citation": s["citation"],
                               "files": {f: lock.get(f"{s['id']}/{f}", {}).get("sha256") for f in [d.get("dest") or d["url"].rsplit("/", 1)[-1] for d in s["files"]]}}
-                    for s in cfg["sources"] if any(m["source"] == s["id"] for m in meshes) or s["id"] == "mni_t1w"},
+                    for s in cfg["sources"] if any(m["source"] == s["id"] for m in meshes) or s["id"] == "mni_t1w"
+                    or (cord is not None and s["id"] == cord.get("source"))},
         "meshes": out_meshes,
     }
     (OUT / "manifest.json").write_text(json.dumps(manifest, indent=1))
     total = sum(m["bytes"] for m in out_meshes)
     lod_total = sum(m["lod"]["bytes"] for m in out_meshes if m.get("lod"))
     first = sum((m["lod"]["bytes"] if m.get("lod") else m["bytes"]) for m in out_meshes if m["visible"])
+    if cord:
+        print(f"manifest: + cord volumes {list(cord['contrasts'])} on a {cord['shape']} grid at {cord['spacing'][0]} mm")
     print(f"manifest: {len(out_meshes)} meshes, {total/1e6:.1f} MB full + {lod_total/1e6:.1f} MB stand-ins, first paint ~{first/1e6:.1f} MB, systems {len(manifest['systems'])} -> {OUT / 'manifest.json'}")
 
 

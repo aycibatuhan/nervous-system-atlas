@@ -1,0 +1,160 @@
+{
+ "kind": "structure",
+ "id": "raphe-linear-caudal-rostral",
+ "name": "Caudal-rostral linear raphe nucleus complex",
+ "synonyms": [
+  "CLi",
+  "RLi",
+  "caudal linear nucleus",
+  "rostral linear nucleus",
+  "B8 group"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "raphe-linear-caudal-rostral"
+ ],
+ "summary": "The caudal and rostral linear raphe nuclei form a slender midline column in the midbrain tegmentum, running from just behind the interpeduncular fossa up toward the posterior hypothalamus between the two red nuclei. They are the most rostral of the raphe nuclei and are unusual in being chemically mixed: serotonergic neurons of the B8 group are interleaved with dopaminergic neurons that belong to the same continuum as the ventral tegmental area, so the column contributes to both the serotonergic and the mesolimbic ascending systems. Its projections reach the ventral striatum, the amygdala, the septum and the interpeduncular nucleus, and it is of interest in reward, motivation and the sleep-wake control of REM. Like all the raphe nuclei it is invisible on clinical imaging and is known in living humans only from 7 T templates.",
+ "anatomy": {
+  "location": "Midline of the midbrain tegmentum between the medial longitudinal fasciculi and above the interpeduncular nucleus, extending from the level of the trochlear nucleus caudally to the posterior hypothalamic border rostrally, with the red nuclei on either side and the ventral tegmental area lying just ventrolateral. The caudal linear nucleus lies below and behind, the rostral linear nucleus above and in front, and the two are continuous. Thalamoperforating and posterior communicating perforators supply the column, which is why paramedian midbrain infarcts involve it together with the red nucleus and the oculomotor fascicles.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Lateral habenula",
+    "via": "fasciculus retroflexus"
+   },
+   {
+    "from": "Prefrontal cortex",
+    "via": "corticofugal fibers"
+   },
+   {
+    "from": "Hypothalamus and ventral tegmental area",
+    "via": "medial forebrain bundle"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Nucleus accumbens and olfactory tubercle",
+    "via": "medial forebrain bundle"
+   },
+   {
+    "to": "Interpeduncular nucleus",
+    "via": "raphe-interpeduncular fibers"
+   },
+   {
+    "to": "Amygdala, septum and prefrontal cortex",
+    "via": "ascending serotonergic and dopaminergic fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-papez-limbic"
+  ]
+ },
+ "function": "The linear raphe complex sends serotonergic and dopaminergic fibers rostrally through the medial forebrain bundle to the nucleus accumbens, olfactory tubercle, amygdala, septum and prefrontal cortex, and it projects heavily to the interpeduncular nucleus, which links it to the habenular system that signals disappointment and aversive outcomes. Its dopaminergic neurons form part of the A10 group and are recruited by reward prediction and by novelty; its serotonergic neurons modulate the same targets with an opposing, patience-promoting influence, so the column is a place where two ascending modulatory systems are physically intermingled. Descending and local projections reach the dorsal raphe, the ventral tegmental area and the pontine reticular formation. Activity is highest in waking, falls in non-REM sleep and is lowest in REM, a pattern shared with the other serotonergic raphe nuclei and required for the orderly release of REM sleep. Because it is small and midline, both linear nuclei are usually damaged together or not at all.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pca",
+   "artery-basilar"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "raphe-linear-caudal-rostral"
+    },
+    "label": "midline linear raphe column above the interpeduncular fossa"
+   },
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "raphe-linear-caudal-rostral"
+    },
+    "label": "paramedian midbrain tegmentum between the red nuclei"
+   }
+  ],
+  "normalAppearance": "Not separable from the surrounding paramedian tegmentum on clinical MRI; the column occupies the midline strip between the red nuclei on axial images at the level of the oculomotor nucleus.",
+  "pathology": [
+   {
+    "pathology": "Paramedian midbrain infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the midline tegmentum, often bilateral from a single artery of Percheron, with hypersomnolence, vertical gaze palsy and apathy.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Parkinson disease and related synucleinopathy",
+    "modality": "PET",
+    "finding": "Reduced serotonin transporter and dopamine transporter binding in the midbrain raphe and its forebrain targets, associated with apathy, depression and fatigue; MRI is normal.",
+    "sequence": "n/a"
+   },
+   {
+    "pathology": "Wernicke encephalopathy",
+    "modality": "MRI",
+    "finding": "Periaqueductal and paramedian midbrain FLAIR hyperintensity extending into the midline tegmentum with confusion and ophthalmoplegia.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Apathy and loss of motivation",
+    "side": "bilateral",
+    "mechanism": "Loss of mixed serotonergic and dopaminergic drive to the ventral striatum"
+   },
+   {
+    "deficit": "Hypersomnolence",
+    "side": "bilateral",
+    "mechanism": "Damage to the paramedian ascending arousal system"
+   },
+   {
+    "deficit": "Disturbed REM regulation",
+    "side": "bilateral",
+    "mechanism": "Loss of the wake-active serotonergic tone that gates REM sleep"
+   }
+  ],
+  "examination": [
+   "Screen for apathy and anhedonia separately from depressed mood",
+   "Assess daytime sleepiness and sleep-wake reversal",
+   "Look for accompanying vertical gaze and third nerve signs that localize the paramedian midbrain"
+  ],
+  "syndromes": [
+   "syn-top-of-basilar",
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "The linear raphe is where the serotonergic and dopaminergic ascending systems physically overlap",
+   "A paramedian midbrain infarct takes the raphe with the red nucleus, so apathy accompanies the tremor",
+   "Midline nuclei are damaged bilaterally by single paramedian arteries"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-singh-mesencephalic-reticular-formation-atlas"
+  },
+  {
+   "ref": "sp-nucleus-raphe"
+  },
+  {
+   "ref": "sp-mesencephalon-midbrain"
+  }
+ ],
+ "tags": [
+  "serotonin",
+  "dopamine",
+  "reward",
+  "raphe"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

@@ -1,0 +1,161 @@
+{
+ "kind": "structure",
+ "id": "nucleus-parvicellular-reticular-alpha",
+ "name": "Parvicellular reticular nucleus, alpha part",
+ "synonyms": [
+  "PCRtA",
+  "parvicellular reticular nucleus alpha part",
+  "lateral reticular premotor field"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "nucleus-parvicellular-reticular-alpha-l",
+  "nucleus-parvicellular-reticular-alpha-r"
+ ],
+ "summary": "The parvicellular reticular nucleus is the small-celled lateral part of the medullary reticular formation, and its alpha subdivision lies at the rostral end of that column just behind the trigeminal complex. It is the premotor organizer of the cranial motor nuclei: it receives trigeminal, gustatory and cortical input and distributes it to the trigeminal motor, facial, ambiguus and hypoglossal nuclei, coordinating the muscle sequences of chewing, licking, swallowing, facial expression and airway protection. It is the lateral, sensory-driven counterpart of the giant-celled medial column that projects to the spinal cord, and it is the reason a lesion in the lateral medulla can disorganize swallowing even when each individual motor nucleus is intact.",
+ "anatomy": {
+  "location": "Lateral medullary tegmentum at and just below the pontomedullary junction, dorsal to the inferior olivary nucleus, ventromedial to the spinal trigeminal nucleus and tract and lateral to the gigantocellular reticular nucleus, extending rostrally into the caudal pontine reticular territory. It lies within the field supplied by the posterior inferior cerebellar artery and by lateral perforating branches of the vertebral artery, which is why it is damaged in the lateral medullary syndrome.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Spinal and principal trigeminal nuclei",
+    "via": "trigeminoreticular fibers"
+   },
+   {
+    "from": "Cerebral cortex",
+    "via": "corticoreticular fibers of the corticobulbar system"
+   },
+   {
+    "from": "Nucleus of the solitary tract and cerebellum",
+    "via": "visceral and cerebellar input"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Trigeminal motor and facial nuclei",
+    "via": "premotor reticular fibers"
+   },
+   {
+    "to": "Nucleus ambiguus and hypoglossal nucleus",
+    "via": "premotor reticular fibers"
+   },
+   {
+    "to": "Adjacent medullary reticular formation",
+    "via": "local connections"
+   }
+  ],
+  "pathways": [
+   "pathway-corticobulbar",
+   "pathway-reticulospinal"
+  ]
+ },
+ "function": "Parvicellular reticular neurons receive the spinal and principal trigeminal nuclei, the nucleus of the solitary tract, the cerebral cortex through corticoreticular fibers and the cerebellum, and project short axons to the motor nuclei of the trigeminal, facial, glossopharyngeal, vagus and hypoglossal nerves. They therefore act as pattern generators and premotor interneurons for orofacial behavior: the rhythmic jaw movements of chewing, the sequenced pharyngeal contraction of swallowing, the coordinated closure and expulsion of coughing and vomiting, and the reflex responses of the face to trigeminal stimulation such as the corneal blink and the jaw jerk modulation. Because the same neurons carry cortical commands to the bulbar motor nuclei, they form part of the corticobulbar route that produces pseudobulbar palsy when interrupted bilaterally above the medulla. The alpha subdivision is the part most closely tied to the trigeminal system and to chewing. Its output is bilateral for most muscles, which is why unilateral lesions typically cause incoordination rather than paralysis.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "nucleus-parvicellular-reticular-alpha-l"
+    },
+    "label": "parvicellular reticular field behind the inferior olive"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "nucleus-parvicellular-reticular-alpha-r"
+    },
+    "label": "lateral medullary tegmentum below the pontomedullary junction"
+   }
+  ],
+  "normalAppearance": "Not resolvable on clinical MRI; the region is the lateral tegmental strip between the spinal trigeminal nucleus and the medial reticular column on axial images of the upper medulla.",
+  "pathology": [
+   {
+    "pathology": "Lateral medullary (Wallenberg) infarct",
+    "modality": "MRI",
+    "finding": "Wedge-shaped dorsolateral medullary restricted diffusion with severe dysphagia and dysarthria out of proportion to limb findings.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Amyotrophic lateral sclerosis with bulbar onset",
+    "modality": "MRI",
+    "finding": "Imaging is normal or shows corticospinal T2 hyperintensity; tongue wasting, fasciculation and a brisk jaw jerk reflect combined bulbar and corticobulbar involvement.",
+    "sequence": "FLAIR"
+   },
+   {
+    "pathology": "Brainstem encephalitis",
+    "modality": "MRI",
+    "finding": "Patchy tegmental FLAIR hyperintensity with disorganized swallowing and facial weakness.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Dysphagia and dysarthria out of proportion to weakness",
+    "side": "bilateral",
+    "mechanism": "Loss of premotor coordination of the bulbar motor nuclei"
+   },
+   {
+    "deficit": "Impaired chewing rhythm",
+    "side": "bilateral",
+    "mechanism": "Loss of the trigeminal premotor pattern generator"
+   },
+   {
+    "deficit": "Weak or disorganized cough",
+    "side": "bilateral",
+    "mechanism": "Loss of coordination between the laryngeal and respiratory motor pools"
+   }
+  ],
+  "examination": [
+   "Watch a swallow and time it; listen to speech for both slurring and nasality",
+   "Test jaw opening and closing against resistance and observe chewing",
+   "Assess cough strength and the ability to clear the throat on command"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-bulbar-vs-pseudobulbar",
+   "syn-als-pattern"
+  ],
+  "pearls": [
+   "Swallowing fails when the coordinator fails, even if every motor nucleus is intact",
+   "The lateral reticular column organizes the face and pharynx; the medial column organizes the limbs and trunk",
+   "Severe dysphagia with modest limb findings should raise the lateral medulla"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
+  },
+  {
+   "ref": "sp-reticular-formation"
+  },
+  {
+   "ref": "sp-medulla-oblongata"
+  }
+ ],
+ "tags": [
+  "swallowing",
+  "chewing",
+  "premotor",
+  "reticular formation"
+ ],
+ "status": "draft",
+ "subsystem": "medulla",
+ "parent": "brainstem"
+}

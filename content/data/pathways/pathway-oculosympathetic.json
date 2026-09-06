@@ -5,7 +5,7 @@
   "synonyms": [],
   "type": "autonomic",
   "modality": "pupillary dilation, lid elevation, facial sweating",
-  "summary": "The sympathetic supply to the eye is a three-neuron chain that travels a remarkable distance: from the hypothalamus down the brainstem tegmentum and lateral cervical cord to the ciliospinal center at C8–T2; out through the T1 root over the lung apex and up the cervical chain to the superior cervical ganglion; and finally along the internal carotid artery through the cavernous sinus and the ophthalmic division to the dilator pupillae and Müller's muscle, with the sweat fibers leaving on the external carotid. A lesion anywhere along this route gives Horner syndrome, and the company it keeps (brainstem signs, hand weakness, neck pain, cavernous sinus nerves) plus the sweating pattern tells you where.",
+  "summary": "The sympathetic supply to the eye is a three-neuron chain that travels a remarkable distance: from the hypothalamus down the brainstem tegmentum and lateral cervical cord to the ciliospinal center at C8\u2013T2; out through the T1 root over the lung apex and up the cervical chain to the superior cervical ganglion; and finally along the internal carotid artery through the cavernous sinus and the ophthalmic division to the dilator pupillae and M\u00fcller's muscle, with the sweat fibers leaving on the external carotid. A lesion anywhere along this route gives Horner syndrome, and the company it keeps (brainstem signs, hand weakness, neck pain, cavernous sinus nerves) plus the sweating pattern tells you where.",
   "origin": {
     "structures": [
       "hypothalamus"
@@ -16,7 +16,7 @@
     {
       "order": 1,
       "cellBody": "Hypothalamic neuron",
-      "synapse": "intermediolateral column at C8–T2 (ciliospinal center)"
+      "synapse": "intermediolateral column at C8\u2013T2 (ciliospinal center)"
     },
     {
       "order": 2,
@@ -26,7 +26,7 @@
     {
       "order": 3,
       "cellBody": "Superior cervical ganglion neuron",
-      "synapse": "dilator pupillae, Müller's muscle, facial sweat glands"
+      "synapse": "dilator pupillae, M\u00fcller's muscle, facial sweat glands"
     }
   ],
   "decussation": null,
@@ -55,9 +55,9 @@
     {
       "order": 4,
       "structureId": "intermediolateral-column",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "ipsilateral",
-      "note": "ciliospinal center C8–T2"
+      "note": "ciliospinal center C8\u2013T2"
     },
     {
       "order": 5,
@@ -93,7 +93,7 @@
       "note": "nasociliary nerve and long ciliary nerves to the dilator"
     }
   ],
-  "termination": "Dilator pupillae, superior tarsal (Müller's) muscle, orbital vessels and the sweat glands of the face.",
+  "termination": "Dilator pupillae, superior tarsal (M\u00fcller's) muscle, orbital vessels and the sweat glands of the face.",
   "meshIds": [
     "artery-internal-carotid-l",
     "artery-internal-carotid-r",

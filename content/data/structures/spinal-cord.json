@@ -5,15 +5,23 @@
   "synonyms": [],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-cord"
+    "spinal-white-columns",
+    "spinal-grey-anterior-horn",
+    "spinal-grey-posterior-horn",
+    "spinal-segment-cervical",
+    "spinal-segment-thoracic",
+    "spinal-segment-lumbar",
+    "spinal-segment-sacral",
+    "spinal-enlargement-lumbosacral",
+    "filum-terminale"
   ],
-  "summary": "A cylinder of nervous tissue about 45 cm long in the adult, running from the foramen magnum to the conus medullaris at the L1–L2 disc, enclosed by the three meninges inside the vertebral canal. Its central H-shaped gray matter contains the motor neurons, sensory relay neurons and autonomic neurons of 31 segments; the surrounding white matter carries the long tracts in three funiculi. Two rules make cord lesions localizable: tracts have a fixed cross-sectional position (motor lateral, pain anterolateral, proprioception posterior), and the sensory level and reflex pattern mark the segment. Because the cord ends at L1–L2, lumbar puncture below L3 is safe and cauda equina lesions below the conus are lower motor neuron lesions.",
+  "summary": "A cylinder of nervous tissue about 45 cm long in the adult, running from the foramen magnum to the conus medullaris at the L1\u2013L2 disc, enclosed by the three meninges inside the vertebral canal. Its central H-shaped gray matter contains the motor neurons, sensory relay neurons and autonomic neurons of 31 segments; the surrounding white matter carries the long tracts in three funiculi. Two rules make cord lesions localizable: tracts have a fixed cross-sectional position (motor lateral, pain anterolateral, proprioception posterior), and the sensory level and reflex pattern mark the segment. Because the cord ends at L1\u2013L2, lumbar puncture below L3 is safe and cauda equina lesions below the conus are lower motor neuron lesions.",
   "anatomy": {
-    "location": "Vertebral canal from the cervicomedullary junction at the foramen magnum to the conus medullaris at the lower border of L1 (range T12–L3), with cervical and lumbosacral enlargements for the limbs, suspended by the denticulate ligaments and anchored below by the filum terminale; the cord segments lie progressively higher than the vertebrae of the same number.",
+    "location": "Vertebral canal from the cervicomedullary junction at the foramen magnum to the conus medullaris at the lower border of L1 (range T12\u2013L3), with cervical and lumbosacral enlargements for the limbs, suspended by the denticulate ligaments and anchored below by the filum terminale; the cord segments lie progressively higher than the vertebrae of the same number.",
     "subdivisions": [
       {
         "name": "Gray matter",
-        "note": "anterior horn (motor), posterior horn (sensory), lateral horn T1–L2 (sympathetic) and S2–S4 (parasympathetic), central canal"
+        "note": "anterior horn (motor), posterior horn (sensory), lateral horn T1\u2013L2 (sympathetic) and S2\u2013S4 (parasympathetic), central canal"
       },
       {
         "name": "White matter",
@@ -25,7 +33,7 @@
       },
       {
         "name": "Enlargements",
-        "note": "cervical C5–T1 for the arm, lumbosacral L2–S3 for the leg"
+        "note": "cervical C5\u2013T1 for the arm, lumbosacral L2\u2013S3 for the leg"
       }
     ],
     "relations": {
@@ -82,7 +90,7 @@
         "label": "cord descending through the foramen magnum"
       }
     ],
-    "normalAppearance": "The upper cervical cord is in the MNI volume; the rest needs a dedicated spine MRI. Sagittal T2 shows the cord as intermediate signal within bright CSF; axial T2 at 3 T shows the butterfly of gray matter. Cord signal change, swelling, atrophy, compression and the level of a lesion relative to the vertebrae are the key observations.",
+    "normalAppearance": "The upper cervical cord is in the MNI volume; the rest needs a dedicated spine MRI. Sagittal T2 shows the cord as intermediate signal within bright CSF; axial T2 at 3 T shows the butterfly of gray matter. Cord signal change, swelling, atrophy, compression and the level of a lesion relative to the vertebrae are the key observations. Below the foramen magnum this atlas shows a curved reformat of the open PAM50 template (De Leener 2018), which images the brainstem and the whole cord at 0.5 mm but stores the cord straightened: its 475 mm of cord is resampled along the arc length of the atlas's own curved cord surface, so the brain MRI continues into a cord MRI in the same millimetre frame. It is a template average, so it shows the normal cord, the surrounding CSF and the vertebral levels but no individual variation, and its gray-matter butterfly is faint.",
     "pathology": [
       {
         "pathology": "Spinal cord compression (metastasis, disc, epidural abscess)",
@@ -183,6 +191,10 @@
     {
       "ref": "sp-spinal-cord-arteries",
       "section": "Introduction"
+    },
+    {
+      "ref": "web-pam50-template-docs",
+      "note": "PAM50 template (De Leener et al. 2018, doi 10.1016/j.neuroimage.2017.10.041, paywalled); the free documentation page describes the template, contrasts, levels and atlases"
     }
   ],
   "tags": [

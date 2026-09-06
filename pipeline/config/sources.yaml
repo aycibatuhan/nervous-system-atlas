@@ -1,6 +1,6 @@
 # Every external dataset the pipeline uses. `atlas-download` streams each file into raw/<id>/,
 # verifies/records sha256 in sources.lock.yaml, and copies the licence text alongside.
-# groups: core (always), bp3d, tracts, vessels, warp, zanatomy, manual
+# groups: core (always), bp3d, tracts, vessels, warp, zanatomy, spine, manual
 templateflow_base: &tf https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/
 templateflow_nlin6: &tf6 https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/
 
@@ -30,6 +30,14 @@ licenses:
     name: Creative Commons Attribution-NonCommercial 3.0 (Diedrichsen cerebellar atlas)
     url: https://creativecommons.org/licenses/by-nc/3.0/
     nc: true
+
+  PAM50-unlicensed:
+    name: PAM50 template and atlas (no licence file is shipped with the data)
+    url: https://github.com/spinalcordtoolbox/PAM50
+    attribution: "PAM50 template, De Leener B et al. NeuroImage 2018; the PAM50 data repository carries no LICENSE
+      file and states no licence, so derived files are treated as research-use-only and are not redistributed"
+    nc: true
+    no_redistribution: true
 
   BrainstemNavigator-NC-ND:
     name: Brainstem Navigator licence (non-commercial research, NO redistribution of derived files)
@@ -170,6 +178,16 @@ sources:
     citation: "Z-Anatomy, an open 3D atlas of human anatomy (BodyParts3D-derived)."
     files:
       - url: https://raw.githubusercontent.com/Z-Anatomy/Models-of-human-anatomy/master/Z-Anatomy.zip
+        unzip: true
+  # ---------------- spinal cord template ----------------
+  - id: pam50
+    group: spine
+    license: PAM50-unlicensed
+    citation: "De Leener B, Fonov VS, Collins DL, Callot V, Stikov N, Cohen-Adad J. PAM50: Unbiased multimodal
+      template of the brainstem and spinal cord aligned with the ICBM152 space. NeuroImage 2018;165:170-179.
+      doi:10.1016/j.neuroimage.2017.10.041 (release r20250730)."
+    files:
+      - url: https://github.com/spinalcordtoolbox/PAM50/releases/download/r20250730/PAM50-r20250730.zip
         unzip: true
   - id: brainstem_navigator
     group: manual

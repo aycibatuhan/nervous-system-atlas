@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "nucleus-microcellular-tegmental-parabigeminal",
+ "name": "Microcellular tegmental and parabigeminal nuclei",
+ "synonyms": [
+  "MiTg",
+  "PBG",
+  "nucleus isthmi",
+  "parabigeminal nucleus"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "nucleus-microcellular-tegmental-parabigeminal-l",
+  "nucleus-microcellular-tegmental-parabigeminal-r"
+ ],
+ "summary": "The microcellular tegmental nucleus and the parabigeminal nucleus are two small, closely apposed cell groups at the lateral edge of the caudal midbrain tegmentum, drawn as one label because 7 T imaging cannot reliably separate them. The parabigeminal nucleus is the primate equivalent of the nucleus isthmi of lower vertebrates: a thin cholinergic shell lying against the lateral lemniscus that is reciprocally and topographically wired with the superior colliculus, and that sharpens which point in space the colliculus selects for the next orienting movement. The microcellular tegmental nucleus lies just medial to it and belongs to the isthmic reticular territory, contributing to arousal and to the premotor control of eye and head movements. Both are far too small to see clinically, but they matter for the physiology of covert attention and of collicular target selection.",
+ "anatomy": {
+  "location": "Lateral tegmentum of the caudal midbrain at and just below the level of the inferior colliculus, sandwiched between the lateral lemniscus laterally, the brachium of the inferior colliculus above and the cuneiform and pedunculopontine territory medially. The parabigeminal component hugs the outer surface of the lemniscus as a curved lamina; the microcellular tegmental component sits a little deeper and more medially, at the transition from midbrain to isthmus. Perforators from the superior cerebellar artery and the quadrigeminal branch of the posterior cerebral artery supply the region.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Superficial superior colliculus",
+    "via": "topographic tectoparabigeminal fibers"
+   },
+   {
+    "from": "Frontal eye field and cortical eye fields",
+    "via": "corticotegmental fibers"
+   },
+   {
+    "from": "Lateral lemniscus territory and inferior colliculus",
+    "via": "local connections"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Superior colliculus of both sides",
+    "via": "cholinergic parabigeminotectal fibers"
+   },
+   {
+    "to": "Lateral geniculate nucleus and pretectum",
+    "via": "cholinergic fibers"
+   },
+   {
+    "to": "Pontine gaze centers",
+    "via": "isthmic premotor fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-visual",
+   "pathway-tectospinal"
+  ]
+ },
+ "function": "The parabigeminal nucleus receives a dense topographic projection from the superficial layers of the superior colliculus and sends cholinergic fibers back to the same collicular point and, more weakly, to the opposite colliculus. That loop behaves as a winner-take-all circuit: it amplifies the collicular representation of the currently selected target and suppresses competing locations, so it is treated as a substrate of covert spatial attention and of stimulus salience. It also projects to the lateral geniculate nucleus and the pretectum, coupling attentional selection to the earliest stages of the visual pathway. The microcellular tegmental nucleus shares the connections of the surrounding isthmic reticular formation, projecting to the oculomotor and pontine gaze structures and receiving collicular and cortical eye-field input, so the pair sits at the junction of orienting, arousal and premotor gaze control. Their cholinergic output means that the same neuromodulator that supports cortical arousal is used locally to bias which part of the visual world is acted upon next.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "artery-sca",
+   "arteries-pontine"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "nucleus-microcellular-tegmental-parabigeminal-l"
+    },
+    "label": "parabigeminal lamina against the lateral lemniscus"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "nucleus-microcellular-tegmental-parabigeminal-r"
+    },
+    "label": "lateral tegmentum below the inferior colliculus"
+   }
+  ],
+  "normalAppearance": "Invisible on clinical MRI; the location corresponds to the lateral tegmental margin just inside the surface of the midbrain at the inferior collicular level, where the lateral lemniscus turns upward into its brachium.",
+  "pathology": [
+   {
+    "pathology": "Dorsolateral midbrain infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the lateral tegmentum with contralateral hearing change, ataxia and impaired orienting to visual targets.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Tectal or pineal region tumor",
+    "modality": "MRI",
+    "finding": "Mass effect on the quadrigeminal plate and the adjacent lateral tegmentum with aqueductal obstruction and dorsal midbrain eye signs.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Progressive supranuclear palsy",
+    "modality": "MRI",
+    "finding": "Midbrain and tegmental atrophy accompanying slow vertical saccades and impaired visual search.",
+    "sequence": "T1"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Impaired covert attention and slowed target selection",
+    "side": "contralateral",
+    "mechanism": "Loss of the cholinergic collicular feedback loop"
+   },
+   {
+    "deficit": "Reduced orienting saccades to novel stimuli",
+    "side": "contralateral",
+    "mechanism": "Weakened salience signal in the superior colliculus"
+   },
+   {
+    "deficit": "Reduced arousal to sensory events",
+    "side": "bilateral",
+    "mechanism": "Loss of isthmic cholinergic tone"
+   }
+  ],
+  "examination": [
+   "Test visual search and extinction to double simultaneous stimulation",
+   "Time reflexive saccades to a suddenly appearing target on each side",
+   "Look for accompanying dorsal midbrain signs, since nothing here occurs in isolation"
+  ],
+  "syndromes": [
+   "syn-parinaud-dorsal-midbrain"
+  ],
+  "pearls": [
+   "The parabigeminal nucleus is the mammalian nucleus isthmi: a spotlight amplifier for the superior colliculus",
+   "Attention has an anatomy in the midbrain, not only in the parietal cortex",
+   "This label holds two nuclei because 7 T cannot yet separate them; treat it as a territory, not a border"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-singh-mesencephalic-reticular-formation-atlas"
+  },
+  {
+   "ref": "sp-mesencephalon-midbrain"
+  },
+  {
+   "ref": "sp-acetylcholine"
+  }
+ ],
+ "tags": [
+  "attention",
+  "cholinergic",
+  "superior colliculus"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

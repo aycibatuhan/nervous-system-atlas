@@ -8,18 +8,19 @@
   ],
   "system": "autonomic",
   "meshIds": [
-    "spinal-cord"
+    "sympathetic-trunk-l",
+    "sympathetic-trunk-r"
   ],
-  "summary": "The splanchnic nerves carry the sympathetic outflow from the thoracic and lumbar cord to the abdominal and pelvic viscera, bypassing the paravertebral chain to synapse in the prevertebral ganglia. The greater (T5–T9), lesser (T10–T11) and least (T12) splanchnic nerves pierce the diaphragm to reach the celiac, superior mesenteric and aorticorenal ganglia, and the lumbar splanchnic nerves (L1–L2) reach the inferior mesenteric and hypogastric plexuses. They also carry the visceral pain afferents from the gut, whose cell bodies lie in the thoracolumbar dorsal root ganglia, which is why visceral pain is referred to the dermatomes of those segments and why a celiac plexus block relieves pancreatic cancer pain. The pelvic splanchnic nerves, despite the name, are the parasympathetic outflow of S2–S4 and are described with the sacral parasympathetic system.",
+  "summary": "The splanchnic nerves carry the sympathetic outflow from the thoracic and lumbar cord to the abdominal and pelvic viscera, bypassing the paravertebral chain to synapse in the prevertebral ganglia. The greater (T5\u2013T9), lesser (T10\u2013T11) and least (T12) splanchnic nerves pierce the diaphragm to reach the celiac, superior mesenteric and aorticorenal ganglia, and the lumbar splanchnic nerves (L1\u2013L2) reach the inferior mesenteric and hypogastric plexuses. They also carry the visceral pain afferents from the gut, whose cell bodies lie in the thoracolumbar dorsal root ganglia, which is why visceral pain is referred to the dermatomes of those segments and why a celiac plexus block relieves pancreatic cancer pain. The pelvic splanchnic nerves, despite the name, are the parasympathetic outflow of S2\u2013S4 and are described with the sacral parasympathetic system.",
   "anatomy": {
-    "location": "Preganglionic sympathetic fibers leave the T5–L2 intermediolateral column through the white rami, pass through the sympathetic chain without synapsing, and form the greater, lesser and least thoracic splanchnic nerves on the vertebral bodies, which pierce the crura of the diaphragm, and the lumbar splanchnic nerves from the lumbar chain; they end in the prevertebral ganglia around the origins of the celiac, superior mesenteric and inferior mesenteric arteries and in the hypogastric plexus.",
+    "location": "Preganglionic sympathetic fibers leave the T5\u2013L2 intermediolateral column through the white rami, pass through the sympathetic chain without synapsing, and form the greater, lesser and least thoracic splanchnic nerves on the vertebral bodies, which pierce the crura of the diaphragm, and the lumbar splanchnic nerves from the lumbar chain; they end in the prevertebral ganglia around the origins of the celiac, superior mesenteric and inferior mesenteric arteries and in the hypogastric plexus.",
     "subdivisions": []
   },
   "connections": {
     "afferents": [
       {
         "from": "Visceral afferents from the abdominal viscera (pain, distension)",
-        "via": "run with the sympathetic fibers to the T5–L2 dorsal root ganglia"
+        "via": "run with the sympathetic fibers to the T5\u2013L2 dorsal root ganglia"
       }
     ],
     "efferents": [
@@ -46,7 +47,7 @@
           "y": -50,
           "z": -120
         },
-        "label": "T5–L2 segments of the cord: intermediolateral column and the origin of the splanchnic outflow"
+        "label": "T5\u2013L2 segments of the cord: intermediolateral column and the origin of the splanchnic outflow"
       },
       {
         "plane": "axial",
@@ -94,13 +95,13 @@
       {
         "deficit": "Referred visceral pain",
         "side": "bilateral",
-        "mechanism": "Convergence of splanchnic afferents on T5–L2 dorsal horn neurons shared with somatic dermatomes"
+        "mechanism": "Convergence of splanchnic afferents on T5\u2013L2 dorsal horn neurons shared with somatic dermatomes"
       }
     ],
     "examination": [
       "Lying and standing blood pressure, including after meals",
       "Abdominal examination for distension in cord-injured patients with hypertension and headache",
-      "Map referred pain to dermatomes: epigastrium T5–T9, umbilicus T10, suprapubic T11–L1"
+      "Map referred pain to dermatomes: epigastrium T5\u2013T9, umbilicus T10, suprapubic T11\u2013L1"
     ],
     "syndromes": [
       "syn-complete-transection-spinal-shock",
@@ -113,7 +114,7 @@
     ]
   },
   "pitfalls": [
-    "The pelvic splanchnic nerves are parasympathetic (S2–S4), not sympathetic, despite the shared name"
+    "The pelvic splanchnic nerves are parasympathetic (S2\u2013S4), not sympathetic, despite the shared name"
   ],
   "citations": [
     {

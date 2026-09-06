@@ -15,6 +15,10 @@ export interface SliceUniforms {
   uFlags: { value: THREE.Texture };
   uWorldToVoxel: { value: THREE.Matrix4 };
   uDims: { value: THREE.Vector3 };
+  uCord: { value: THREE.Texture | null };
+  uCordWorldToVoxel: { value: THREE.Matrix4 };
+  uCordDims: { value: THREE.Vector3 };
+  uHasCord: { value: number };
   uWindow: { value: number };
   uLevel: { value: number };
   uOverlayOpacity: { value: number };
@@ -31,12 +35,14 @@ const dummy3d = (): THREE.Data3DTexture => {
   t.format = THREE.RedIntegerFormat; t.type = THREE.UnsignedByteType; t.internalFormat = 'R8UI'; t.needsUpdate = true; return t;
 };
 
-export function createSliceUniforms(grid: VolumeGrid, luts: { struct: THREE.Texture; tract: THREE.Texture; terr: THREE.Texture; flags: THREE.Texture }): SliceUniforms {
+export function createSliceUniforms(grid: VolumeGrid, cordGrid: VolumeGrid | null, luts: { struct: THREE.Texture; tract: THREE.Texture; terr: THREE.Texture; flags: THREE.Texture }): SliceUniforms {
   const dummyI = new THREE.Data3DTexture(new Uint8Array(1), 1, 1, 1); dummyI.format = THREE.RedFormat; dummyI.internalFormat = 'R8'; dummyI.needsUpdate = true;
   return {
     uIntensity: { value: dummyI }, uLabels: { value: dummy3d() }, uTracts: { value: dummy3d() }, uTerritories: { value: dummy3d() },
     uStructLut: { value: luts.struct }, uTractLut: { value: luts.tract }, uTerrLut: { value: luts.terr }, uFlags: { value: luts.flags },
     uWorldToVoxel: { value: grid.inverse.clone() }, uDims: { value: new THREE.Vector3(...grid.dims) },
+    uCord: { value: dummyI }, uCordWorldToVoxel: { value: (cordGrid ?? grid).inverse.clone() },
+    uCordDims: { value: new THREE.Vector3(...(cordGrid ?? grid).dims) }, uHasCord: { value: 0 },
     uWindow: { value: 255 }, uLevel: { value: 127 }, uOverlayOpacity: { value: 0.75 }, uShowAllLabels: { value: 0 },
     uHasLabels: { value: 0 }, uHasTracts: { value: 0 }, uHasTerritories: { value: 0 }, uOutlineColor: { value: new THREE.Color(0xffe066) }, uLinearOut: { value: 0 },
   };
@@ -45,8 +51,9 @@ export function createSliceUniforms(grid: VolumeGrid, luts: { struct: THREE.Text
 export class SlicePlane {
   readonly mesh: THREE.Mesh<THREE.PlaneGeometry, THREE.ShaderMaterial>;
   positionMm = 0;
+  private extended = false;
 
-  constructor(readonly axis: Axis, private grid: VolumeGrid, shared: SliceUniforms) {
+  constructor(readonly axis: Axis, private grids: VolumeGrid[], shared: SliceUniforms) {
     const [u, v] = inPlaneSteps(axis);
     const mat = new THREE.ShaderMaterial({
       glslVersion: THREE.GLSL3, vertexShader: vert, fragmentShader: frag,
@@ -67,8 +74,16 @@ export class SlicePlane {
 
   setPosition(mm: number): void {
     this.positionMm = mm;
-    sliceMatrix(this.axis, mm, this.grid, this.mesh.matrix);
+    sliceMatrix(this.axis, mm, this.extended ? this.grids : this.grids[0]!, this.mesh.matrix);
     this.mesh.matrixWorldNeedsUpdate = true;
+  }
+
+  /** Grow the plane from the brain box to the union with the cord grid (500 mm taller), and back.
+   *  Kept off by default: the plane is shaded per fragment, so the brain-only view must not pay for the cord. */
+  setExtended(v: boolean): void {
+    if (this.extended === v) return;
+    this.extended = v;
+    this.setPosition(this.positionMm);
   }
 
   setVisible(v: boolean): void { this.mesh.visible = v; }

@@ -1,0 +1,159 @@
+{
+ "kind": "structure",
+ "id": "reticular-formation-isthmic",
+ "name": "Isthmic reticular formation",
+ "synonyms": [
+  "isRt",
+  "isthmus rhombencephali reticular formation"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "reticular-formation-isthmic-l",
+  "reticular-formation-isthmic-r"
+ ],
+ "summary": "The isthmic reticular formation occupies the narrow waist between the midbrain and the pons, the isthmus rhombencephali, where the tegmentum is squeezed between the superior cerebellar peduncles as they turn medially to decussate. It is a transition zone rather than a nucleus with a sharp border: rostrally it becomes the mesencephalic reticular formation, caudally the oral pontine reticular nucleus, and embedded in it are the cholinergic pedunculopontine and laterodorsal tegmental cell groups. Functionally it is a critical link of the ascending arousal system, and its position explains why small lesions at the mesopontine junction produce coma out of proportion to their size. It also contributes premotor neurons to vertical gaze and to the startle response.",
+ "anatomy": {
+  "location": "Tegmentum of the isthmus, between the caudal border of the inferior colliculus above and the rostral pons below, bounded laterally by the superior cerebellar peduncle and the lateral lemniscus, dorsally by the periaqueductal gray as it becomes the central gray of the pons, and ventrally by the decussation of the superior cerebellar peduncles and the medial lemniscus. The trochlear nucleus and the anterior medullary velum lie at its dorsal margin. Blood supply is from the superior cerebellar artery and short circumferential branches of the upper basilar artery.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal and cingulate cortex",
+    "via": "corticoreticular fibers"
+   },
+   {
+    "from": "Spinal cord and trigeminal system",
+    "via": "spinoreticular and trigeminoreticular fibers"
+   },
+   {
+    "from": "Superior colliculus and periaqueductal gray",
+    "via": "tectoreticular and periaqueductal fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Intralaminar and reticular thalamic nuclei",
+    "via": "ascending arousal projection"
+   },
+   {
+    "to": "Basal forebrain and hypothalamus",
+    "via": "ascending reticular fibers"
+   },
+   {
+    "to": "Pontomedullary reticular formation",
+    "via": "descending reticuloreticular fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal",
+   "pathway-vertical-gaze"
+  ]
+ },
+ "function": "The isthmic reticular formation is a relay of the ascending arousal system. Its glutamatergic and cholinergic neurons project rostrally to the intralaminar and reticular nuclei of the thalamus, to the basal forebrain and to the hypothalamus, keeping the thalamocortical system in the desynchronized state that permits waking consciousness; this is the narrowest part of that pathway, and it is here that bilateral tegmental damage abolishes arousal while the cortex remains intact. Descending projections join the pontine reticular formation and the reticulospinal system, contributing to postural tone, to the acoustic startle reflex and to autonomic adjustment. Locally the isthmus houses premotor neurons for vertical and torsional eye movements that communicate with the trochlear and oculomotor nuclei and with the rostral interstitial nucleus of the medial longitudinal fasciculus. It receives the prefrontal and cingulate cortex, the hypothalamus, the periaqueductal gray, the superior colliculus and the spinoreticular fibers that carry nociceptive information, so pain and threat can raise arousal directly.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "artery-sca",
+   "arteries-pontine"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "reticular-formation-isthmic-l"
+    },
+    "label": "isthmic tegmentum between the superior cerebellar peduncles"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "reticular-formation-isthmic-r"
+    },
+    "label": "waist between the midbrain and the pons"
+   }
+  ],
+  "normalAppearance": "On sagittal T1 the isthmus is the narrowing between the midbrain and the bulging pons, behind the interpeduncular cistern and in front of the anterior medullary velum; the reticular formation itself is not distinguishable from surrounding tegmental gray at clinical field strength.",
+  "pathology": [
+   {
+    "pathology": "Mesopontine tegmental infarct",
+    "modality": "MRI",
+    "finding": "Small paramedian tegmental infarct at the midbrain-pons junction causing coma or hypersomnolence with preserved brainstem reflexes early.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Top of the basilar syndrome",
+    "modality": "MRI",
+    "finding": "Bilateral rostral brainstem and thalamic infarction with fluctuating consciousness, vertical gaze failure and visual hallucinations.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Diffuse axonal injury of the brainstem",
+    "modality": "MRI",
+    "finding": "Petechial hemorrhage in the dorsolateral upper brainstem on susceptibility-weighted imaging in a comatose patient after high-energy trauma.",
+    "sequence": "SWI"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Coma or hypersomnolence",
+    "side": "bilateral",
+    "mechanism": "Interruption of the ascending arousal pathway at its narrowest point"
+   },
+   {
+    "deficit": "Vertical gaze disturbance",
+    "side": "bilateral",
+    "mechanism": "Damage to isthmic premotor neurons connected with the trochlear and oculomotor nuclei"
+   },
+   {
+    "deficit": "Loss of startle and reduced postural tone",
+    "side": "bilateral",
+    "mechanism": "Loss of descending reticulospinal drive"
+   }
+  ],
+  "examination": [
+   "Level of arousal graded against stimulus intensity, not a single Glasgow score",
+   "Brainstem reflexes: pupils, corneal, oculocephalic and cold caloric responses",
+   "Vertical saccades and the response to an optokinetic drum"
+  ],
+  "syndromes": [
+   "syn-top-of-basilar",
+   "syn-basilar-occlusion",
+   "syn-central-transtentorial-herniation"
+  ],
+  "pearls": [
+   "A lesion the size of a pea at the isthmus can abolish consciousness while the hemispheres are intact",
+   "Coma with intact pupils and corneal reflexes points above the pons, coma without them below it",
+   "The isthmus is a transition, so its label is a territory rather than a nucleus"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-singh-mesencephalic-reticular-formation-atlas"
+  },
+  {
+   "ref": "sp-reticular-activating-system"
+  },
+  {
+   "ref": "sp-reticular-formation"
+  }
+ ],
+ "tags": [
+  "arousal",
+  "coma",
+  "reticular formation"
+ ],
+ "status": "draft",
+ "subsystem": "midbrain",
+ "parent": "brainstem"
+}

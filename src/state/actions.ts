@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import type { App } from '../app.ts';
 import type { SystemId } from '../types/manifest.ts';
-import type { Axis, Contrast, PresetName } from '../types/state.ts';
+import type { AppState, Axis, Contrast, PresetName } from '../types/state.ts';
 import { applyVisualState, type VisualState } from '../scene/materials.ts';
 import { applyPreset } from '../scene/cameraPresets.ts';
 import { setEq } from './store.ts';
@@ -54,6 +54,44 @@ export function setStructureVisible(app: App, id: string, on: boolean): void {
   const hidden = new Set(s.hiddenStructures); const shown = new Set(s.shownStructures);
   if (on) { hidden.delete(id); shown.add(id); } else { shown.delete(id); hidden.add(id); }
   app.store.set({ hiddenStructures: hidden, shownStructures: shown });
+}
+
+/**
+ * Show or hide every mesh of a tree group at once (a system row or a subsystem row).
+ * Ticking a group means "show all of it", so meshes the manifest hides by default come on too;
+ * unticking hides them whatever their system flag says. Pass `system` for a whole-system row so
+ * the system flag follows the same click.
+ */
+export function toggleGroup(app: App, meshIds: Iterable<string>, on: boolean, system?: SystemId): void {
+  const s = app.store.get();
+  const hidden = new Set(s.hiddenStructures); const shown = new Set(s.shownStructures);
+  for (const id of meshIds) {
+    if (on) { hidden.delete(id); shown.add(id); } else { shown.delete(id); hidden.add(id); }
+  }
+  const patch: Partial<AppState> = { hiddenStructures: hidden, shownStructures: shown };
+  if (system) { const v = new Set(s.visibleSystems); if (on) v.add(system); else v.delete(system); patch.visibleSystems = v; }
+  app.store.set(patch);
+}
+
+/** Master switch behind the tree's "All structures" box: every mesh in the atlas on, or nothing at all. */
+export function setAllSystems(app: App, on: boolean): void {
+  const s = app.store.get();
+  if (!on) { app.store.set({ visibleSystems: new Set<SystemId>(), hiddenStructures: new Set<string>(), shownStructures: new Set<string>() }); return; }
+  const shown = new Set<string>(app.manifest.meshes.filter((m) => s.showNc || !m.nc).map((m) => m.id));
+  app.store.set({ visibleSystems: new Set<SystemId>(app.manifest.systems.map((x) => x.id)), hiddenStructures: new Set<string>(), shownStructures: shown });
+}
+
+/** Back to the manifest's own defaults (the view you get on a fresh load). */
+export function resetSystems(app: App): void {
+  app.store.set({
+    visibleSystems: new Set<SystemId>(app.manifest.systems.filter((x) => x.defaultVisible).map((x) => x.id)),
+    hiddenStructures: new Set<string>(), shownStructures: new Set<string>(),
+  });
+}
+
+/** Show only this group: everything else off, the group fully on. */
+export function soloGroup(app: App, meshIds: Iterable<string>): void {
+  app.store.set({ visibleSystems: new Set<SystemId>(), hiddenStructures: new Set<string>(), shownStructures: new Set(meshIds) });
 }
 
 export function selectStructure(app: App, id: string | null, opts: { moveSlices?: boolean; ensureVisible?: boolean; fit?: boolean } = {}): void {

@@ -27,22 +27,35 @@ export function voxelToMm(vox: THREE.Vector3, g: VolumeGrid, out = new THREE.Vec
   return out.copy(vox).applyMatrix4(g.affine);
 }
 
-/** mm range covered by the volume along a world axis (assumes an axis-aligned affine, true for MNI). */
-export function axisExtentMm(axis: Axis, g: VolumeGrid): [number, number] {
+/** Axis-aligned world box a grid covers, from voxel centre 0 to dims-1 (`pad` = 0.5 for the outer voxel faces). */
+export function gridBoxMm(g: VolumeGrid, pad = 0): THREE.Box3 {
+  const a = voxelToMm(new THREE.Vector3(-pad, -pad, -pad), g);
+  const b = voxelToMm(new THREE.Vector3(g.dims[0] - 1 + pad, g.dims[1] - 1 + pad, g.dims[2] - 1 + pad), g);
+  return new THREE.Box3(new THREE.Vector3(Math.min(a.x, b.x), Math.min(a.y, b.y), Math.min(a.z, b.z)),
+    new THREE.Vector3(Math.max(a.x, b.x), Math.max(a.y, b.y), Math.max(a.z, b.z)));
+}
+
+/** Union of the boxes of one or more grids. Several grids exist because the cord MRI sits on its own grid. */
+export function unionBoxMm(grids: VolumeGrid | VolumeGrid[], pad = 0): THREE.Box3 {
+  const list = Array.isArray(grids) ? grids : [grids];
+  const box = gridBoxMm(list[0]!, pad);
+  for (const g of list.slice(1)) box.union(gridBoxMm(g, pad));
+  return box;
+}
+
+/** mm range covered along a world axis (assumes axis-aligned affines, true for the MNI and cord grids). */
+export function axisExtentMm(axis: Axis, grids: VolumeGrid | VolumeGrid[]): [number, number] {
   const k = AXIS_INDEX[axis];
-  const a = voxelToMm(new THREE.Vector3(0, 0, 0), g);
-  const b = voxelToMm(new THREE.Vector3(g.dims[0] - 1, g.dims[1] - 1, g.dims[2] - 1), g);
-  const lo = Math.min(a.getComponent(k), b.getComponent(k)); const hi = Math.max(a.getComponent(k), b.getComponent(k));
-  return [Math.ceil(lo), Math.floor(hi)];
+  const box = unionBoxMm(grids);
+  return [Math.ceil(box.min.getComponent(k)), Math.floor(box.max.getComponent(k))];
 }
 
 /** Object matrix for a unit PlaneGeometry (x,y in -0.5..0.5) so it covers the whole slab at `positionMm` along `axis`. */
-export function sliceMatrix(axis: Axis, positionMm: number, g: VolumeGrid, out = new THREE.Matrix4()): THREE.Matrix4 {
+export function sliceMatrix(axis: Axis, positionMm: number, grids: VolumeGrid | VolumeGrid[], out = new THREE.Matrix4()): THREE.Matrix4 {
   const k = AXIS_INDEX[axis];
-  const lo = voxelToMm(new THREE.Vector3(-0.5, -0.5, -0.5), g);
-  const hi = voxelToMm(new THREE.Vector3(g.dims[0] - 0.5, g.dims[1] - 0.5, g.dims[2] - 0.5), g);
-  const min = new THREE.Vector3(Math.min(lo.x, hi.x), Math.min(lo.y, hi.y), Math.min(lo.z, hi.z));
-  const max = new THREE.Vector3(Math.max(lo.x, hi.x), Math.max(lo.y, hi.y), Math.max(lo.z, hi.z));
+  const box = unionBoxMm(grids, 0.5);
+  const min = box.min.clone();
+  const max = box.max.clone();
   const size = max.clone().sub(min);
   const center = min.clone().add(max).multiplyScalar(0.5);
   center.setComponent(k, positionMm);

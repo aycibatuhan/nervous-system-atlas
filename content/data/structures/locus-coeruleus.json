@@ -1,160 +1,165 @@
 {
-  "kind": "structure",
-  "id": "locus-coeruleus",
-  "name": "Locus coeruleus",
-  "synonyms": [
-    "nucleus coeruleus",
-    "A6 noradrenergic group"
+ "kind": "structure",
+ "id": "locus-coeruleus",
+ "name": "Locus coeruleus",
+ "synonyms": [
+  "nucleus coeruleus",
+  "A6 noradrenergic group"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "brainstem",
+  "locus-coeruleus-l",
+  "locus-coeruleus-r"
+ ],
+ "summary": "The locus coeruleus is a compact column of pigmented noradrenergic neurons in the upper pontine tegmentum beneath the floor of the fourth ventricle, at the lateral edge of the periaqueductal gray, whose axons reach almost the entire brain and spinal cord. With only a few tens of thousands of cells it supplies most of the noradrenaline of the cerebral cortex, hippocampus, cerebellum and thalamus and is the engine of arousal, vigilance and the response to novelty and stress. It regulates the sleep–wake cycle, is silent in REM sleep, and modulates pain in the spinal dorsal horn. It degenerates early in Parkinson disease and Alzheimer disease, contributing to the sleep, autonomic and cognitive symptoms that precede the classical signs, and it is the site of the neuromelanin signal that can now be imaged.",
+ "anatomy": {
+  "location": "Dorsolateral tegmentum of the rostral pons beneath the lateral floor of the fourth ventricle, medial to the mesencephalic trigeminal nucleus and lateral to the periaqueductal gray, extending into the caudal midbrain; its blue-black pigment is visible to the naked eye on a cut brainstem.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Prefrontal cortex and amygdala"
+   },
+   {
+    "from": "Hypothalamus (orexin neurons)"
+   },
+   {
+    "from": "Nucleus paragigantocellularis and the nucleus of the solitary tract"
+   }
   ],
-  "system": "brainstem",
-  "meshIds": [
-    "brainstem"
+  "efferents": [
+   {
+    "to": "Entire cerebral cortex, hippocampus and thalamus",
+    "via": "dorsal noradrenergic bundle"
+   },
+   {
+    "to": "Cerebellum",
+    "via": "superior cerebellar peduncle"
+   },
+   {
+    "to": "Spinal dorsal horn and intermediolateral column",
+    "via": "coeruleospinal tract"
+   },
+   {
+    "to": "Hypothalamus and amygdala"
+   }
   ],
-  "summary": "The locus coeruleus is a compact column of pigmented noradrenergic neurons in the upper pontine tegmentum beneath the floor of the fourth ventricle, at the lateral edge of the periaqueductal gray, whose axons reach almost the entire brain and spinal cord. With only a few tens of thousands of cells it supplies most of the noradrenaline of the cerebral cortex, hippocampus, cerebellum and thalamus and is the engine of arousal, vigilance and the response to novelty and stress. It regulates the sleep–wake cycle, is silent in REM sleep, and modulates pain in the spinal dorsal horn. It degenerates early in Parkinson disease and Alzheimer disease, contributing to the sleep, autonomic and cognitive symptoms that precede the classical signs, and it is the site of the neuromelanin signal that can now be imaged.",
-  "anatomy": {
-    "location": "Dorsolateral tegmentum of the rostral pons beneath the lateral floor of the fourth ventricle, medial to the mesencephalic trigeminal nucleus and lateral to the periaqueductal gray, extending into the caudal midbrain; its blue-black pigment is visible to the naked eye on a cut brainstem.",
-    "subdivisions": []
-  },
-  "connections": {
-    "afferents": [
-      {
-        "from": "Prefrontal cortex and amygdala"
-      },
-      {
-        "from": "Hypothalamus (orexin neurons)"
-      },
-      {
-        "from": "Nucleus paragigantocellularis and the nucleus of the solitary tract"
-      }
-    ],
-    "efferents": [
-      {
-        "to": "Entire cerebral cortex, hippocampus and thalamus",
-        "via": "dorsal noradrenergic bundle"
-      },
-      {
-        "to": "Cerebellum",
-        "via": "superior cerebellar peduncle"
-      },
-      {
-        "to": "Spinal dorsal horn and intermediolateral column",
-        "via": "coeruleospinal tract"
-      },
-      {
-        "to": "Hypothalamus and amygdala"
-      }
-    ],
-    "pathways": [
-      "pathway-reticulospinal"
-    ]
-  },
-  "function": "Locus coeruleus neurons fire tonically during waking, phasically to salient stimuli and fall silent in REM sleep; their noradrenaline release through beta and alpha receptors increases the signal-to-noise ratio of cortical processing, focuses attention, promotes memory consolidation in the hippocampus and amygdala, and drives the sympathetic response to stress through the hypothalamus and the medullary pressor centers. Descending fibers to the dorsal horn inhibit pain transmission, and cerebellar fibers modulate Purkinje cell excitability. The nucleus is inhibited by opioids and clonidine and activated by their withdrawal, which produces the sweating, anxiety and tachycardia of the withdrawal syndrome.",
-  "bloodSupply": {
-    "arteries": [
-      "artery-sca",
-      "arteries-pontine"
-    ],
-    "territories": []
-  },
-  "imaging": {
-    "bestView": [
-      {
-        "plane": "axial",
-        "mni": {
-          "x": -5,
-          "y": -36,
-          "z": -22
-        },
-        "label": "dorsolateral rostral pontine tegmentum beneath the fourth ventricle"
-      },
-      {
-        "plane": "sagittal",
-        "mni": {
-          "x": -5,
-          "y": -36,
-          "z": -22
-        },
-        "label": "rostral pons at the lateral floor of the fourth ventricle"
-      }
-    ],
-    "normalAppearance": "A few millimeters of tissue in the dorsolateral pontine tegmentum, not seen on routine sequences; neuromelanin-sensitive T1 imaging shows it as a small bright focus on each side of the fourth ventricle at the level of the rostral pons.",
-    "pathology": [
-      {
-        "pathology": "Parkinson disease and Lewy body disease",
-        "modality": "MRI",
-        "finding": "Loss of the neuromelanin signal of the locus coeruleus on neuromelanin-sensitive imaging, often before nigral loss, correlating with REM sleep behavior disorder.",
-        "sequence": "T1"
-      },
-      {
-        "pathology": "Dorsal pontine lesion",
-        "modality": "MRI",
-        "finding": "Infarct, demyelination or Wernicke encephalopathy involving the periaqueductal and dorsal pontine tegmentum with hypersomnolence.",
-        "sequence": "FLAIR"
-      }
-    ]
-  },
-  "clinical": {
-    "lesionEffects": [
-      {
-        "deficit": "Hypersomnolence and reduced arousal",
-        "side": "bilateral",
-        "mechanism": "Loss of the noradrenergic drive to the cortex and thalamus"
-      },
-      {
-        "deficit": "REM sleep behavior disorder and autonomic dysfunction",
-        "side": "bilateral",
-        "mechanism": "Early Lewy body degeneration of the coeruleus and neighboring nuclei"
-      },
-      {
-        "deficit": "Attention and memory impairment",
-        "side": "bilateral",
-        "mechanism": "Loss of noradrenergic modulation of prefrontal and hippocampal circuits in Alzheimer disease"
-      },
-      {
-        "deficit": "Altered pain threshold",
-        "side": "bilateral",
-        "mechanism": "Loss of descending coeruleospinal inhibition"
-      }
-    ],
-    "examination": [
-      "Sleep history including dream enactment",
-      "Attention testing (digit span, vigilance) in neurodegenerative disease",
-      "Autonomic symptoms: orthostasis, sweating"
-    ],
-    "syndromes": [
-      "syn-parkinsonism"
-    ],
-    "pearls": [
-      "Opioid withdrawal is a locus coeruleus storm, which is why clonidine, which silences the nucleus, relieves it",
-      "The coeruleus is one of the first nuclei to degenerate in Parkinson and Alzheimer disease, decades before diagnosis",
-      "It is silent in REM sleep; its early loss is linked to REM sleep behavior disorder"
-    ]
-  },
-  "pitfalls": [
-    "Isolated lesions of the locus coeruleus are not clinically recognized; its disorders are pharmacological and degenerative"
+  "pathways": [
+   "pathway-reticulospinal"
+  ]
+ },
+ "function": "Locus coeruleus neurons fire tonically during waking, phasically to salient stimuli and fall silent in REM sleep; their noradrenaline release through beta and alpha receptors increases the signal-to-noise ratio of cortical processing, focuses attention, promotes memory consolidation in the hippocampus and amygdala, and drives the sympathetic response to stress through the hypothalamus and the medullary pressor centers. Descending fibers to the dorsal horn inhibit pain transmission, and cerebellar fibers modulate Purkinje cell excitability. The nucleus is inhibited by opioids and clonidine and activated by their withdrawal, which produces the sweating, anxiety and tachycardia of the withdrawal syndrome.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-sca",
+   "arteries-pontine"
   ],
-  "citations": [
-    {
-      "ref": "sp-locus-coeruleus",
-      "section": "Structure and Function"
+  "territories": []
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": -5,
+     "y": -36,
+     "z": -22
     },
-    {
-      "ref": "sp-brainstem",
-      "section": "Structure and Function"
+    "label": "dorsolateral rostral pontine tegmentum beneath the fourth ventricle"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": -5,
+     "y": -36,
+     "z": -22
     },
-    {
-      "ref": "sp-cranial-nerve",
-      "section": "Structure and Function"
-    }
+    "label": "rostral pons at the lateral floor of the fourth ventricle"
+   }
   ],
-  "tags": [
-    "noradrenaline",
-    "arousal"
+  "normalAppearance": "A few millimeters of tissue in the dorsolateral pontine tegmentum, not seen on routine sequences; neuromelanin-sensitive T1 imaging shows it as a small bright focus on each side of the fourth ventricle at the level of the rostral pons.",
+  "pathology": [
+   {
+    "pathology": "Parkinson disease and Lewy body disease",
+    "modality": "MRI",
+    "finding": "Loss of the neuromelanin signal of the locus coeruleus on neuromelanin-sensitive imaging, often before nigral loss, correlating with REM sleep behavior disorder.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Dorsal pontine lesion",
+    "modality": "MRI",
+    "finding": "Infarct, demyelination or Wernicke encephalopathy involving the periaqueductal and dorsal pontine tegmentum with hypersomnolence.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hypersomnolence and reduced arousal",
+    "side": "bilateral",
+    "mechanism": "Loss of the noradrenergic drive to the cortex and thalamus"
+   },
+   {
+    "deficit": "REM sleep behavior disorder and autonomic dysfunction",
+    "side": "bilateral",
+    "mechanism": "Early Lewy body degeneration of the coeruleus and neighboring nuclei"
+   },
+   {
+    "deficit": "Attention and memory impairment",
+    "side": "bilateral",
+    "mechanism": "Loss of noradrenergic modulation of prefrontal and hippocampal circuits in Alzheimer disease"
+   },
+   {
+    "deficit": "Altered pain threshold",
+    "side": "bilateral",
+    "mechanism": "Loss of descending coeruleospinal inhibition"
+   }
   ],
-  "status": "draft",
-  "subsystem": "pons",
-  "level": {
-    "region": "pons",
-    "sub": "pons-rostral"
+  "examination": [
+   "Sleep history including dream enactment",
+   "Attention testing (digit span, vigilance) in neurodegenerative disease",
+   "Autonomic symptoms: orthostasis, sweating"
+  ],
+  "syndromes": [
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "Opioid withdrawal is a locus coeruleus storm, which is why clonidine, which silences the nucleus, relieves it",
+   "The coeruleus is one of the first nuclei to degenerate in Parkinson and Alzheimer disease, decades before diagnosis",
+   "It is silent in REM sleep; its early loss is linked to REM sleep behavior disorder"
+  ]
+ },
+ "pitfalls": [
+  "Isolated lesions of the locus coeruleus are not clinically recognized; its disorders are pharmacological and degenerative"
+ ],
+ "citations": [
+  {
+   "ref": "sp-locus-coeruleus",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-brainstem",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-cranial-nerve",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
   }
+ ],
+ "tags": [
+  "noradrenaline",
+  "arousal"
+ ],
+ "status": "draft",
+ "subsystem": "pons",
+ "level": {
+  "region": "pons",
+  "sub": "pons-rostral"
+ }
 }

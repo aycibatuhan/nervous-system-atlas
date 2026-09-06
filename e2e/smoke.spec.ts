@@ -95,3 +95,134 @@ test('the sources tab lists open-access citations that link to free full text', 
   await expect(link).toHaveAttribute('href', /^https:\/\/(www\.ncbi\.nlm\.nih\.gov\/books\/NBK|pmc\.ncbi\.nlm\.nih\.gov\/articles\/PMC)/);
   await expect(page.locator('#right .section')).not.toContainText(/Snell|Berkowitz/i);
 });
+
+// ---- left tree: group visibility -------------------------------------------------
+type TreeWin = { atlas: { manifest: { systems: { id: string }[]; meshes: { id: string; system: string; subsystem?: string }[] };
+  registry: { loaded(): Iterable<{ userData: { id: string }; visible: boolean }>; byId: Map<string, { visible: boolean }> };
+  store: { get(): { visibleSystems: Set<string>; shownStructures: Set<string>; hiddenStructures: Set<string> } } } };
+
+/** how many meshes of one tree group are actually visible in the scene right now */
+const groupVisible = (page: Page, key: string) => page.evaluate((k) => {
+  const a = (window as unknown as TreeWin).atlas;
+  const [sys, sub = ''] = k.split('/');
+  const ids = new Set(a.manifest.meshes.filter((m) => m.system === sys && (m.subsystem ?? '') === sub).map((m) => m.id));
+  let visible = 0;
+  for (const m of a.registry.loaded()) if (ids.has(m.userData.id) && m.visible) visible++;
+  return { total: ids.size, visible };
+}, key);
+
+const sceneVisible = (page: Page) => page.evaluate(() => {
+  let n = 0;
+  for (const m of (window as unknown as TreeWin).atlas.registry.loaded()) if (m.visible) n++;
+  return n;
+});
+
+test('tree groups: a subsystem checkbox shows/hides all of its meshes, tri-state and all', async ({ page }) => {
+  test.setTimeout(120_000);
+  await boot(page);
+  await page.waitForFunction(() => [...(window as unknown as { atlas: { registry: { loaded(): Iterable<unknown> } } }).atlas.registry.loaded()].length > 20, null, { timeout: 90_000 });
+  await page.locator('.tree-sys .name', { hasText: 'Cerebrum' }).first().click();
+  const sub = page.locator('.tree-sub').first();
+  const key = (await sub.getAttribute('data-group'))!;
+  expect(key).toContain('/');
+  const box = sub.locator('input[type=checkbox]');
+  const total = (await groupVisible(page, key)).total;
+  expect(total).toBeGreaterThan(0);
+  // tick → every mesh in the group is on (even the ones the manifest hides by default)
+  await box.click();
+  await expect.poll(() => groupVisible(page, key).then((g) => g.visible), { timeout: 30_000 }).toBe(total);
+  expect(await box.isChecked()).toBe(true);
+  expect(await box.evaluate((e: HTMLInputElement) => e.indeterminate)).toBe(false);
+  // untick → all of them off
+  await box.click();
+  await expect.poll(() => groupVisible(page, key).then((g) => g.visible), { timeout: 30_000 }).toBe(0);
+  expect(await box.isChecked()).toBe(false);
+  // a single structure back on inside the group → the group box goes indeterminate
+  await page.locator(`.tree-sub[data-group="${key}"]`).click();          // expand it
+  await page.locator('.tree-row input[type=checkbox]').first().click();
+  await expect.poll(() => page.locator(`.tree-sub[data-group="${key}"] input`).evaluate((e: HTMLInputElement) => e.indeterminate), { timeout: 20_000 }).toBe(true);
+});
+
+test('tree master switch turns every structure on and off, and Defaults restores the start view', async ({ page }) => {
+  // "all on" pulls every one of the ~660 meshes in, which saturates the main thread under the
+  // software renderer a headless run uses — hence the roomy budget; the store itself changes synchronously.
+  test.setTimeout(420_000);
+  await boot(page);
+  await page.waitForFunction(() => [...(window as unknown as { atlas: { registry: { loaded(): Iterable<unknown> } } }).atlas.registry.loaded()].length > 20, null, { timeout: 90_000 });
+  const before = await sceneVisible(page);
+  expect(before).toBeGreaterThan(0);
+  // first click: everything on (all systems, every mesh forced visible)
+  await page.locator('.master-box').click();
+  await expect.poll(() => page.evaluate(() => {
+    const a = (window as unknown as TreeWin).atlas; const s = a.store.get();
+    return s.visibleSystems.size === a.manifest.systems.length && s.shownStructures.size === a.manifest.meshes.length && s.hiddenStructures.size === 0;
+  }), { timeout: 90_000 }).toBe(true);
+  // let the ~660 meshes finish arriving: while they decode, the main thread starves input and the
+  // next click can sit in the queue for a long time
+  await page.waitForFunction(() => {
+    const a = (window as unknown as TreeWin).atlas;
+    return [...a.registry.loaded()].length === a.manifest.meshes.length;
+  }, null, { timeout: 240_000 });
+  await expect(page.locator('.master-box')).toBeChecked();
+  // second click: nothing at all
+  await page.locator('.master-box').click();
+  await expect.poll(() => page.evaluate(() => {
+    const s = (window as unknown as TreeWin).atlas.store.get();
+    return s.visibleSystems.size + s.shownStructures.size + s.hiddenStructures.size;
+  }), { timeout: 60_000 }).toBe(0);
+  await expect.poll(() => sceneVisible(page), { timeout: 60_000 }).toBe(0);
+  // Defaults: back to the manifest's own view (more meshes have finished loading by now, so
+  // compare the state rather than a count taken while the scene was still filling in)
+  await page.locator('.tree-master button').click();
+  await expect.poll(() => page.evaluate(() => {
+    const a = (window as unknown as TreeWin).atlas; const s = a.store.get();
+    return { shown: s.shownStructures.size, hidden: s.hiddenStructures.size, systems: s.visibleSystems.size };
+  }), { timeout: 60_000 }).toEqual({ shown: 0, hidden: 0, systems: (await page.evaluate(() => (window as unknown as { atlas: { manifest: { systems: { defaultVisible?: boolean }[] } } }).atlas.manifest.systems.filter((x) => x.defaultVisible).length)) });
+  const after = await sceneVisible(page);
+  expect(after).toBeGreaterThanOrEqual(before);
+  expect(after).toBeLessThan(await page.evaluate(() => (window as unknown as TreeWin).atlas.manifest.meshes.length));
+});
+
+// ---- camera interaction budget --------------------------------------------------
+type PerfWin = { atlas: { picker: { picks: number }; sm: { renders: number } } };
+const counters = (page: Page) => page.evaluate(() => ({ picks: (window as unknown as PerfWin).atlas.picker.picks, renders: (window as unknown as PerfWin).atlas.sm.renders }));
+
+test('interaction budget: a drag runs no hover raycasts, the view settles and the loop idles', async ({ page }) => {
+  test.setTimeout(300_000);
+  await boot(page);
+  await page.waitForFunction(() => [...(window as unknown as { atlas: { registry: { loaded(): Iterable<unknown> } } }).atlas.registry.loaded()].length > 100, null, { timeout: 120_000 });
+  await page.waitForTimeout(3000);
+  const box = (await page.locator('#gl').boundingBox())!;
+  const cx = box.x + box.width / 2, cy = box.y + box.height / 2;
+  for (const quality of ['low', 'high'] as const) {
+    await page.evaluate((q) => (window as unknown as { atlas: { store: { set(p: { quality: string }): void } } }).atlas.store.set({ quality: q }), quality);
+    await page.waitForTimeout(1500);
+    await page.mouse.move(cx - 250, cy - 80);
+    await page.waitForTimeout(400);
+    await page.evaluate(() => { const w = window as unknown as { __frames: number[] }; w.__frames = []; let last = performance.now(); const tick = (): void => { const n = performance.now(); w.__frames.push(n - last); last = n; requestAnimationFrame(tick); }; requestAnimationFrame(tick); });
+    const start = await counters(page);
+    await page.mouse.down();
+    // few steps on purpose: headless Chromium software-renders ~600 meshes at about 1 fps, and every
+    // mouse.move waits for a frame. The counters below do not depend on how fast the frames come.
+    for (let i = 1; i <= 10; i++) await page.mouse.move(cx - 250 + i * 40, cy - 80 + Math.sin(i / 2) * 40);
+    const during = await counters(page);
+    await page.mouse.up();
+    // a BVH raycast over ~600 meshes must not run while the pointer is steering the camera
+    expect(during.picks - start.picks).toBe(0);
+    const frames = await page.evaluate(() => { const w = window as unknown as { __frames: number[] }; const f = [...w.__frames]; w.__frames = []; return f; });
+    const sorted = [...frames].sort((a, b) => a - b);
+    const p95 = sorted[Math.floor(sorted.length * 0.95)] ?? 0;
+    console.log(`[${quality}] drag: ${during.renders - start.renders} frames, p50 ${sorted[Math.floor(sorted.length / 2)]?.toFixed(1)} ms, p95 ${p95.toFixed(1)} ms, picks ${during.picks - start.picks}`);
+    // the flick coasts briefly and stops instead of drifting
+    await page.waitForTimeout(1500);
+    const settled = await counters(page);
+    const idle0 = settled.renders;
+    await page.waitForTimeout(2000);
+    const idle1 = (await counters(page)).renders;
+    console.log(`[${quality}] coast after release: ${settled.renders - during.renders} frames · idle 2 s: ${idle1 - idle0} renders`);
+    expect(settled.renders - during.renders).toBeLessThan(60);   // ~1 s of damping tail at 60 Hz would be 60+
+    // render-on-demand: a continuous loop would draw once per animation frame (~120 over 2 s in a
+    // real browser). A handful is fine — background LOD upgrades still request the odd frame.
+    expect(idle1 - idle0).toBeLessThanOrEqual(10);
+  }
+});

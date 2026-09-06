@@ -16,6 +16,10 @@ uniform sampler2D  uTerrLut;      // 256x1
 uniform usampler2D uFlags;        // 256x256 R8UI
 uniform mat4  uWorldToVoxel;
 uniform vec3  uDims;
+uniform sampler3D uCord;          // spinal cord MRI on its own grid (PAM50 curved reformat), R8
+uniform mat4  uCordWorldToVoxel;
+uniform vec3  uCordDims;
+uniform float uHasCord;
 uniform float uWindow, uLevel;    // 0..255
 uniform float uOverlayOpacity;
 uniform float uShowAllLabels;
@@ -52,26 +56,37 @@ vec3 inverseAces(vec3 y) {
 
 void main() {
   vec3 vox = (uWorldToVoxel * vec4(vWorldPos, 1.0)).xyz;
-  if (any(lessThan(vox, vec3(-0.5))) || any(greaterThan(vox, uDims - 0.5))) discard;
+  bool inMni = all(greaterThanEqual(vox, vec3(-0.5))) && all(lessThanEqual(vox, uDims - 0.5));
 
-  float raw = texture(uIntensity, (vox + 0.5) / uDims).r * 255.0;
+  float raw;
+  if (inMni) {
+    raw = texture(uIntensity, (vox + 0.5) / uDims).r * 255.0;
+  } else if (uHasCord > 0.5) {
+    // below the foramen magnum the MNI template has no data; the cord volume takes over on its own grid
+    vec3 cv = (uCordWorldToVoxel * vec4(vWorldPos, 1.0)).xyz;
+    if (any(lessThan(cv, vec3(-0.5))) || any(greaterThan(cv, uCordDims - 0.5))) discard;
+    raw = texture(uCord, (cv + 0.5) / uCordDims).r * 255.0;
+    if (raw <= 0.0) discard;   // outside the reformatted tube: keep the plane transparent, not black
+  } else {
+    discard;
+  }
   float lo = uLevel - uWindow * 0.5;
   float g = clamp((raw - lo) / max(uWindow, 1.0), 0.0, 1.0);
   vec3 color = vec3(g);
   ivec3 p = ivec3(floor(vox + 0.5));
 
-  if (uHasTerritories > 0.5) {
+  if (inMni && uHasTerritories > 0.5) {
     uint terr = texelFetch(uTerritories, p, 0).r;
     vec4 tc = texelFetch(uTerrLut, ivec2(int(terr), 0), 0);
     color = mix(color, color * 0.35 + tc.rgb * 0.65, tc.a * uOverlayOpacity);
   }
-  if (uHasTracts > 0.5) {
+  if (inMni && uHasTracts > 0.5) {
     uint tr = texelFetch(uTracts, p, 0).r;
     vec4 tc = texelFetch(uTractLut, ivec2(int(tr), 0), 0);
     color = mix(color, tc.rgb, tc.a * uOverlayOpacity);
   }
   uint fl = 0u;
-  if (uHasLabels > 0.5) {
+  if (inMni && uHasLabels > 0.5) {
     uint id = texelFetch(uLabels, p, 0).r;
     ivec2 lc = ivec2(int(id & 255u), int(id >> 8u));
     vec4 sc = texelFetch(uStructLut, lc, 0);

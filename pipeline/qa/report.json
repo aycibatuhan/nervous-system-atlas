@@ -1,7 +1,7 @@
 {
- "meshes": 595,
- "bytes": 39849488,
- "triangles": 6164980,
+ "meshes": 662,
+ "bytes": 40809628,
+ "triangles": 6287942,
  "registration": {
   "bp3d_to_mni.json": {
    "landmark_mean_mm": 3.31,
@@ -17,9 +17,32 @@
    "scale": 1.0367
   }
  },
+ "zanatomyMidline": {
+  "before_max_abs_mm": 12.183,
+  "after_max_abs_mm": 0.4182,
+  "ap": {
+   "cmj_residual_max_abs_mm": 0.98,
+   "above_anchor_max_abs_dy_mm": 0.0,
+   "full_dy_mm": 23.31,
+   "meshes_moved": 145,
+   "max_mesh_dy_mm": 23.31
+  }
+ },
+ "cordVolume": {
+  "grid": [
+   45,
+   279,
+   613
+  ],
+  "spacing": 0.75,
+  "bytes_gz": 758311,
+  "mni_residual_rms_mm": 0.59
+ },
  "ncSources": [
+  "brainstem_navigator",
   "diedrichsen_cerebellum",
-  "harvard_oxford"
+  "harvard_oxford",
+  "pam50"
  ],
  "problems": [],
  "warnings": [
@@ -135,6 +158,10 @@
   "phrenic-nerve-l: extends beyond the MNI volume (registered-affine)",
   "phrenic-nerve-r: extends beyond the MNI volume (registered-affine)",
   "lumbosacral-trunk-l: extends beyond the MNI volume (registered-affine)",
-  "lumbosacral-trunk-r: extends beyond the MNI volume (registered-affine)"
+  "lumbosacral-trunk-r: extends beyond the MNI volume (registered-affine)",
+  "filum-terminale: extends beyond the MNI volume (registered-affine)",
+  "spinal-enlargement-cervical: extends beyond the MNI volume (registered-affine)",
+  "spinal-enlargement-lumbosacral: extends beyond the MNI volume (registered-affine)",
+  "cord volumes are PAM50-unlicensed (no redistribution): keep ['cord_t1', 'cord_t2', 'labels_spine'] out of any shared build"
  ]
 }

@@ -17,6 +17,8 @@ button:hover { border-color: var(--accent2); }
 .status { color: var(--muted); margin-left: 8px; white-space: nowrap; }
 .panel-head { padding: 8px 10px; font-weight: 600; border-bottom: 1px solid var(--border); }
 .tree-filter { margin: 8px 10px; padding: 4px 8px; background: var(--bg); color: var(--fg); border: 1px solid var(--border); border-radius: 4px; width: calc(100% - 20px); }
+.tree-master { display: flex; align-items: center; gap: 6px; padding: 6px 10px 0; }
+.tree-master .name { cursor: pointer; } .tree-master button { margin-left: auto; }
 .tree { overflow: auto; flex: 1; padding-bottom: 20px; }
 .tree-sys, .tree-sub, .tree-row { display: flex; align-items: center; gap: 6px; padding: 3px 8px; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tree-sys { font-weight: 600; position: sticky; top: 0; background: var(--panel); border-bottom: 1px solid var(--border); }

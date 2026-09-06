@@ -19,7 +19,7 @@ import { h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
 import { loadRawVolume } from './volume/VolumeSource.ts';
 import { makeIntensityTexture, makeLabelTexture } from './volume/textures.ts';
-import { mmToVoxel } from './volume/coords.ts';
+import { gridBoxMm, mmToVoxel } from './volume/coords.ts';
 import type { SystemId } from './types/manifest.ts';
 import type { Axis } from './types/state.ts';
 import { PRESETS } from './scene/cameraPresets.ts';
@@ -76,7 +76,8 @@ async function boot(): Promise<void> {
     h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' toggle axial / coronal / sagittal slice'),
     h('div', {}, h('kbd', {}, '↑'), h('kbd', {}, '↓'), ' move the last touched slice'), h('div', {}, h('kbd', {}, 't'), ' T1 / T2'),
     h('div', {}, h('kbd', {}, 'p'), ' peel at the axial slice'), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' toggle panels'),
-    h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'A'), '–', h('kbd', {}, 'E'), ' answer quiz'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'));
+    h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'A'), '–', h('kbd', {}, 'E'), ' answer quiz'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'),
+    h('div', {}, h('kbd', {}, 'Alt'), '+click a system or group in the tree: show only that group'));
   document.getElementById('viewport')!.append(help);
   const toolbar = new Toolbar(app, top, { onSearchFocus: () => (left.querySelector('.tree-filter') as HTMLInputElement)?.focus(), onHelp: () => { help.hidden = !help.hidden; } });
   const search = new SearchBox(toolbar.searchHost, (doc) => {
@@ -108,11 +109,45 @@ async function boot(): Promise<void> {
   toolbar.setQuality(app.store.get().quality);
   app.store.subscribe((s) => s.overlay, (o) => { app.uniforms.uOverlayOpacity.value = o.opacity; app.uniforms.uShowAllLabels.value = o.showAllLabels ? 1 : 0; updateLuts(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.windowLevel, (w) => { app.uniforms.uWindow.value = w.window; app.uniforms.uLevel.value = w.level; app.sm.requestRender(); });
-  app.store.subscribe((s) => s.contrast, (c) => void loadContrast(app, c, progress));
+  app.store.subscribe((s) => s.contrast, (c) => { void loadContrast(app, c, progress); void ensureCord(); });
+
+  // ---- spinal cord MRI (PAM50 curved reformat, its own grid below the MNI box), loaded on demand
+  const cordTex: Record<string, THREE.Data3DTexture> = {};
+  let cordInflight: Promise<void> | null = null;
+  const mniFloorZ = gridBoxMm(app.grid).min.z;
+  async function ensureCord(): Promise<void> {
+    if (!app.cordGrid) return;
+    if (!app.store.get().cordMri) { app.uniforms.uHasCord.value = 0; app.sm.requestRender(); return; }
+    const key = app.store.get().contrast === 't2w' ? 'cord_t2' : 'cord_t1';
+    const meta = app.manifest.volumes[key];
+    if (!meta) return;
+    if (!cordTex[key]) {
+      const job = (async () => {
+        const vol = await loadRawVolume(meta, (f) => (progress.style.transform = `scaleX(${f})`));
+        cordTex[key] = makeIntensityTexture(vol);
+        progress.style.transform = 'scaleX(0)';
+      })();
+      cordInflight = job;
+      try { await job; } catch (e) { console.error('cord volume', e); return; } finally { if (cordInflight === job) cordInflight = null; }
+    }
+    if (!app.store.get().cordMri) return;
+    app.uniforms.uCord.value = cordTex[key]!;
+    app.uniforms.uHasCord.value = 1;
+    if (!app.store.get().loaded.cord) app.store.set({ loaded: { ...app.store.get().loaded, cord: true } });
+    app.sm.requestRender();
+  }
+  app.store.subscribe((s) => s.cordMri, (on) => {
+    for (const ax of ['axial', 'coronal', 'sagittal'] as Axis[]) app.slices[ax].setExtended(on && !!app.cordGrid);
+    void ensureCord();
+  });
+  // switch it on by itself once a slice reaches the cord, or a structure below the foramen magnum is selected
+  const wantCord = () => { if (app.cordGrid && !app.store.get().cordMri) app.store.set({ cordMri: true }); };
+  app.store.subscribe((s) => s.slices, (sl) => { if (sl.axial < mniFloorZ + 2 || sl.coronal < gridBoxMm(app.grid).min.y + 2) wantCord(); });
+  app.store.subscribe((s) => s.selectedId, (id) => { const m = id ? app.registry.byId.get(id) : null; if (m && m.bbox[0][2] < mniFloorZ) wantCord(); });
   app.registry.byId.forEach(() => undefined);
   // reflect newly loaded meshes
   const origOnChange = (app.registry as unknown as { onChange: (id: string) => void }).onChange;
-  (app.registry as unknown as { onChange: (id: string) => void }).onChange = (id: string) => { origOnChange(id); app.registry.setVisible(id, meshVisible(app, id)); app.registry.invalidatePickCache(); applyStates(app); };
+  (app.registry as unknown as { onChange: (id: string) => void }).onChange = (id: string) => { origOnChange(id); app.registry.setVisible(id, meshVisible(app, id)); app.registry.invalidatePickCache(); applyStates(app); if (Object.keys(app.store.get().peel).length) applyPeel(app); };
 
   // ---- initial visibility: systems flagged defaultVisible
   const defaults = new Set<SystemId>(manifest.systems.filter((s) => s.defaultVisible).map((s) => s.id));

@@ -1,0 +1,161 @@
+{
+ "kind": "structure",
+ "id": "nucleus-subcoeruleus",
+ "name": "Subcoeruleus nucleus",
+ "synonyms": [
+  "SubC",
+  "subcoeruleus",
+  "sublaterodorsal nucleus",
+  "peri-locus coeruleus alpha"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "nucleus-subcoeruleus-l",
+  "nucleus-subcoeruleus-r"
+ ],
+ "summary": "The subcoeruleus nucleus is a small group of glutamatergic and noradrenergic neurons lying just ventral and lateral to the locus coeruleus in the dorsal tegmentum of the upper pons. In humans it corresponds to the sublaterodorsal nucleus of the rat, and it is the generator of the muscle atonia of REM sleep: its glutamatergic neurons fire during REM and excite inhibitory neurons of the ventromedial medulla and the spinal cord, which hyperpolarize motor neurons so that dreams are not acted out. Loss of these neurons produces REM sleep behavior disorder, in which patients punch, kick and shout during dreaming, and that disorder is the earliest reliable clinical marker of Parkinson disease, dementia with Lewy bodies and multiple system atrophy, often preceding the movement disorder by a decade or more.",
+ "anatomy": {
+  "location": "Dorsolateral tegmentum of the rostral pons immediately below and lateral to the locus coeruleus, in the angle between the superior cerebellar peduncle laterally, the medial longitudinal fasciculus medially and the floor of the fourth ventricle above. It merges caudally with the pontine reticular formation and rostrally with the laterodorsal tegmental territory. It lies in the territory of short circumferential branches of the basilar artery and of the superior cerebellar artery, and it is close enough to the locus coeruleus that the two are nearly always affected together.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Ventrolateral periaqueductal gray and adjacent tegmentum",
+    "via": "GABAergic REM-off input"
+   },
+   {
+    "from": "Laterodorsal tegmental and pedunculopontine nuclei",
+    "via": "cholinergic fibers"
+   },
+   {
+    "from": "Lateral hypothalamus (orexin neurons)",
+    "via": "hypothalamotegmental fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Ventromedial medullary reticular formation",
+    "via": "glutamatergic drive to glycinergic premotor neurons"
+   },
+   {
+    "to": "Spinal ventral horn",
+    "via": "descending atonia pathway"
+   },
+   {
+    "to": "Thalamus and basal forebrain",
+    "via": "ascending activating fibers"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal"
+  ]
+ },
+ "function": "During REM sleep the subcoeruleus is one of the few brainstem regions that becomes more active rather than less. Its glutamatergic neurons project to glycinergic and GABAergic premotor neurons in the ventromedial medulla and directly to the spinal ventral horn, and the resulting postsynaptic inhibition of alpha motor neurons produces the near-complete skeletal atonia that defines REM. The same population is held in check during waking by GABAergic neurons of the ventrolateral periaqueductal gray and adjacent tegmentum, and it is released when those neurons fall silent at REM onset; the switch is reciprocal, so damage on either side of it produces either REM without atonia or a failure to enter REM at all. Ascending fibers reach the thalamus and basal forebrain and contribute to cortical activation, and noradrenergic neurons intermingled with the glutamatergic ones share the projections of the locus coeruleus. In the synucleinopathies the subcoeruleus degenerates early, at Braak stage 2, before the substantia nigra.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-basilar",
+   "arteries-pontine",
+   "artery-aica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "nucleus-subcoeruleus-l"
+    },
+    "label": "subcoeruleus below the locus coeruleus in the dorsal pontine tegmentum"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "meshId": "nucleus-subcoeruleus-r"
+    },
+    "label": "dorsolateral pontine tegmentum beneath the fourth ventricle"
+   }
+  ],
+  "normalAppearance": "Not resolvable at 3 T. Neuromelanin-sensitive sequences show the locus coeruleus as a bright dot in the dorsal pons; the subcoeruleus lies immediately ventrolateral to it and reduced signal in that region has been reported in REM sleep behavior disorder.",
+  "pathology": [
+   {
+    "pathology": "REM sleep behavior disorder",
+    "modality": "MRI",
+    "finding": "Conventional MRI is normal; neuromelanin imaging shows reduced locus coeruleus and subcoeruleus signal and diffusion imaging shows altered dorsal pontine connectivity.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Multiple system atrophy",
+    "modality": "MRI",
+    "finding": "Pontine atrophy with a hot cross bun sign and middle cerebellar peduncle T2 hyperintensity, with dream enactment often preceding the diagnosis.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Dorsal pontine infarct or demyelination",
+    "modality": "MRI",
+    "finding": "Tegmental lesion with internuclear ophthalmoplegia and loss of REM atonia on polysomnography.",
+    "sequence": "FLAIR"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "REM sleep without atonia and dream enactment",
+    "side": "bilateral",
+    "mechanism": "Loss of glutamatergic drive to medullary and spinal inhibitory premotor neurons"
+   },
+   {
+    "deficit": "Excessive daytime sleepiness and disturbed sleep architecture",
+    "side": "bilateral",
+    "mechanism": "Disruption of the REM switch"
+   },
+   {
+    "deficit": "Cataplexy-like episodes",
+    "side": "bilateral",
+    "mechanism": "Inappropriate activation of the same atonia circuit during waking"
+   }
+  ],
+  "examination": [
+   "Ask the bed partner about kicking, punching and shouting during sleep, not the patient",
+   "Screen for the other prodromal features of synucleinopathy: hyposmia, constipation, orthostatic symptoms",
+   "Polysomnography with chin and limb electromyography to document REM without atonia"
+  ],
+  "syndromes": [
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "Dream enactment is a brainstem sign that arrives years before the tremor",
+   "The subcoeruleus paralyzes you so you can dream safely; when it fails, dreams get out",
+   "Neuromelanin imaging looks at the locus coeruleus, but the clinically important neighbor is just below it"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
+  },
+  {
+   "ref": "sp-rem-sleep"
+  },
+  {
+   "ref": "sp-rapid-eye-movement-sleep-behavior-disorder"
+  },
+  {
+   "ref": "sp-norepinephrine"
+  }
+ ],
+ "tags": [
+  "REM sleep",
+  "atonia",
+  "synucleinopathy"
+ ],
+ "status": "draft",
+ "subsystem": "pons",
+ "parent": "brainstem"
+}

@@ -28,28 +28,41 @@ what is missing and exits cleanly.
 
 WHAT THE TOOLKIT CONTAINS
 -------------------------
-Bianciardi's Brainstem Navigator v1.0 ships in-vivo probabilistic and thresholded-binary labels of 31
-brainstem nuclei per side plus a few diencephalic nuclei, in MNI152 space at 1 mm and 0.5 mm, under
-directory names that contain "MNI" with the label files under `labels_thresholded_binary/` and
-`labels_probabilistic/`. Abbreviations look like SN1, SN2, RN1, RN2, PAG, VTA, SC, IC, LC, LDTg, PBN,
-MnR, DR, PMnR, iMRt, mMRt, sMRt, PCRt, PTg, CnF, isRt, MPB, LPB, PnO-PnC, Ve, STh, VSM, ION, RMg, ROb,
-RPa, CGPn, Sol. Because the exact file names of a release are not known here, discovery is by pattern and
-every abbreviation that is not in config/brainstem_navigator.yaml is logged and skipped rather than
-guessed at, and any file that fails to load is reported and skipped - this step never raises.
+Bianciardi's Brainstem Navigator v1.0 unpacks to `BrainstemNavigatorv1.0/1.0/` with four label trees: the
+same nuclei drawn on the IIT template (1a, 1b) and in MNI space (2a.BrainstemNucleiAtlas_MNI,
+2b.DiencephalicNucleiAtlas_MNI). Only the two MNI trees are used - discovery requires "mni" somewhere in
+the path. Each tree holds `labels_probabilistic/`, `labels_thresholded_probabilistic_0.35/` and
+`labels_thresholded_binary_0.35/`; the binary set is preferred and the probabilistic maps are meshed at
+`probability_threshold` when only they are present.
+
+The v1.0 MNI release ships 42 brainstem abbreviations (31 numbered nuclei plus the SN/RN/mRt/iMRt/sMRt
+subdivisions) and 5 diencephalic ones (LG, MG, STh, STh1, STh2). File names are `<ABBREV>.nii.gz` for the
+midline nuclei and `<ABBREV>_l.nii.gz` / `<ABBREV>_r.nii.gz` for the bilateral ones, so a file stem is
+matched by stripping a trailing side token and comparing the remainder to a key of
+config/brainstem_navigator.yaml **exactly**. That matters: a substring match would let `PnO` shadow the
+combined `PnO_PnC` file and `LDTg` shadow `LDTg_CGPn`, meshing the wrong volume under the wrong name.
+Every abbreviation that is not in the YAML is logged and skipped rather than guessed at, and any file
+that fails to load is reported and skipped - this step never raises. macOS AppleDouble sidecars
+(`__MACOSX/…` and `._*`) are ignored.
 
 SPACE
 -----
-The label sets are distributed on the FSL MNI152 (NLin6-like) box, so the meshes are tagged
-"nlin6-identity" exactly like the other NLin6 atlases in this pipeline. If a release states that the
-labels are in MNI152NLin2009cAsym (check the shipped README and the NIfTI headers, which `--inventory`
-prints), set `space: mni2009` in config/brainstem_navigator.yaml and the meshes become "native-mni".
+The MNI label sets are 182x218x182 at 1 mm with affine [[1,0,0,-91],[0,1,0,-126],[0,0,1,-72]], i.e. the
+FSL MNI152 (6th generation, NLin6-like) box that the shipped Readme names, so the meshes are tagged
+"nlin6-identity" exactly like the other NLin6 atlases in this pipeline. Nothing in the MNI trees is
+0.5 mm, so `prefer_resolution` is only a tie-break; the voxel size is read from the NIfTI header, never
+from the file name. If a future release states that the labels are in MNI152NLin2009cAsym, set
+`space: mni2009` in config/brainstem_navigator.yaml and the meshes become "native-mni".
 
 DUPLICATES
 ----------
 Several of these nuclei already exist in the atlas from MASSP20, CIT168 or the Neudorfer hypothalamus
 atlas (substantia nigra, red nucleus, PAG, VTA, colliculi, dorsal and median raphe, pedunculopontine
-nucleus, subthalamic nucleus). Those entries carry a `duplicates:` key in the YAML and are skipped unless
-`--with-duplicates` is given, so the default run only adds nuclei the atlas does not already have.
+nucleus, subthalamic nucleus, and the geniculate bodies). Those entries carry a `duplicates:` key in the
+YAML and are skipped unless `--with-duplicates` is given, so the default run only adds nuclei the atlas
+does not already have. The 7 T *subdivisions* of those same nuclei (SN1/SN2, RN1/RN2, STh1/STh2 and the
+reticular-formation parts) are NOT duplicates: they are meshed, hidden by default, and carry a
+`structureId` pointing at the parent structure so they inherit its content entry.
 """
 from __future__ import annotations
 
@@ -67,7 +80,7 @@ from . import catalog
 from .atlas_meshes import record
 from .catalog import BUDGET, LOD_FACES, LOD_MIN_FACES, MeshSpec
 from .meshing import export_with_lod, mesh_from_mask
-from .paths import CONFIG, MESHES, RAW, WORK
+from .paths import CONFIG, LICENSES, MESHES, RAW, WORK
 from .spaces import load_ras
 
 SOURCE_ID = "brainstem_navigator"
@@ -78,6 +91,9 @@ LABEL_DIRS = ("labels_thresholded_binary", "labels_probabilistic")
 SIDE_TOKENS = {"l": "left", "left": "left", "lh": "left", "lft": "left",
                "r": "right", "right": "right", "rh": "right", "rgt": "right"}
 NIFTI = re.compile(r"\.nii(\.gz)?$", re.I)
+# macOS puts AppleDouble resource forks (__MACOSX/…/._Name.nii.gz) into archives it re-zips; they are
+# 4 kB of metadata, not NIfTI, and would otherwise show up as a second copy of every abbreviation.
+APPLEDOUBLE = re.compile(r"(^|/)__MACOSX(/|$)")
 
 
 def load_config() -> dict:
@@ -130,32 +146,43 @@ def unzip_if_needed() -> Path | None:
     return ROOT_DIR if ROOT_DIR.exists() else None
 
 
+def _junk(path: Path) -> bool:
+    """AppleDouble sidecars and the __MACOSX shadow tree an OS X re-zip leaves behind."""
+    return path.name.startswith("._") or APPLEDOUBLE.search("/".join(path.parts)) is not None
+
+
 def _resolution_of(path: Path) -> str:
-    s = "/".join(path.parts).lower()
-    if re.search(r"0[._]5\s*mm|_05mm|0p5", s):
-        return "0.5"
-    if re.search(r"(?<![\d.])1\s*mm|_1mm|1p0", s):
-        return "1"
-    return "?"
+    """Voxel size from the NIfTI header. The toolkit does not put the resolution in the file name, and
+    the 1 mm and 0.5 mm label sets live in identically named folders, so the header is the only source."""
+    try:
+        import nibabel as nib
+        z = [abs(float(v)) for v in nib.load(str(path)).header.get_zooms()[:3]]
+    except Exception:  # noqa: BLE001 - a header that will not parse is reported as unknown, not fatal
+        return "?"
+    if not z or max(z) <= 0:
+        return "?"
+    v = sum(z) / len(z)
+    return f"{v:g}" if abs(v - round(v, 1)) < 1e-3 else f"{v:.2f}"
 
 
-def _match_abbrev(stem: str, keys) -> tuple[str | None, tuple[int, int] | None]:
-    """Longest-first match of a YAML key as a whole token inside the file stem."""
-    for k in sorted(keys, key=len, reverse=True):
-        m = re.search(r"(?:^|[_\-. ])" + re.escape(k) + r"(?:[_\-. ]|$)", stem, re.I)
-        if m:
-            return k, m.span()
-    return None, None
+def _split_side(stem: str) -> tuple[str, str | None]:
+    """"LDTg_CGPn_l" -> ("LDTg_CGPn", "left"). Only a trailing side token is stripped, so a compound
+    abbreviation keeps every part of its name and cannot be shadowed by a shorter key (PnO_PnC by PnO)."""
+    m = re.match(r"^(.*?)[_\-.]([A-Za-z]+)$", stem)
+    if m and m.group(1) and m.group(2).lower() in SIDE_TOKENS:
+        return m.group(1), SIDE_TOKENS[m.group(2).lower()]
+    return stem, None
 
 
-def _side_of(stem: str, skip: tuple[int, int] | None) -> str | None:
-    for m in re.finditer(r"[A-Za-z]+", stem):
-        if skip and not (m.end() <= skip[0] or m.start() >= skip[1]):
-            continue
-        side = SIDE_TOKENS.get(m.group(0).lower())
-        if side:
-            return side
-    return None
+def _match_abbrev(stem: str, keys) -> tuple[str | None, str | None]:
+    """Exact (case-insensitive) match of the side-stripped file stem against a YAML key."""
+    base, side = _split_side(stem)
+    if base in keys:
+        return base, side
+    low = {k.lower(): k for k in keys}
+    if base.lower() in low:
+        return low[base.lower()], side
+    return None, side
 
 
 def discover(root: Path, cfg: dict) -> list[Found]:
@@ -168,6 +195,8 @@ def discover(root: Path, cfg: dict) -> list[Found]:
         print(f"  [FAIL] cannot walk {root}: {e}")
         return out
     for p in paths:
+        if _junk(p):
+            continue
         parts = [x.lower() for x in p.parts]
         kind = None
         for d in LABEL_DIRS:
@@ -175,11 +204,14 @@ def discover(root: Path, cfg: dict) -> list[Found]:
                 kind = "thresholded" if d == LABEL_DIRS[0] else "probabilistic"
         if kind is None:
             continue
+        # the toolkit ships the same nuclei twice: once on the IIT template and once in MNI space
+        # (2a.BrainstemNucleiAtlas_MNI / 2b.DiencephalicNucleiAtlas_MNI). Only the MNI sets are used.
         if not any("mni" in x for x in parts):
             continue
         stem = NIFTI.sub("", p.name)
-        ab, span = _match_abbrev(stem, keys)
-        out.append(Found(p, ab or stem, _side_of(stem, span), kind, _resolution_of(p), ab is not None))
+        ab, side = _match_abbrev(stem, keys)
+        base = ab or _split_side(stem)[0]
+        out.append(Found(p, base, side, kind, _resolution_of(p), ab is not None))
     return out
 
 
@@ -210,12 +242,14 @@ def spec_for(f: Found, entry: dict) -> MeshSpec:
     sub = entry.get("subsystem")
     colour = entry.get("colour") or catalog.jitter(catalog.SYSTEM_COLOUR[system], base)
     budget = entry.get("budget", "tiny")
+    visible = bool(entry.get("visible", False))
     if f.side is None:
         return MeshSpec(base, entry["name"], system, subsystem=sub, side="midline", budget=budget,
-                        colour=colour, structure_id=entry.get("structureId") or base)
+                        colour=colour, visible=visible, structure_id=entry.get("structureId") or base)
     sfx = "-l" if f.side == "left" else "-r"
     return MeshSpec(base + sfx, f"{entry['name']} ({'L' if f.side == 'left' else 'R'})", system, subsystem=sub,
-                    side=f.side, budget=budget, colour=colour, structure_id=entry.get("structureId") or base)
+                    side=f.side, budget=budget, colour=colour, visible=visible,
+                    structure_id=entry.get("structureId") or base)
 
 
 def palette_specs() -> dict[str, MeshSpec]:
@@ -231,6 +265,43 @@ def palette_specs() -> dict[str, MeshSpec]:
 
 
 # ---------------------------------------------------------------- build
+
+
+# The smallest nuclei here are a handful of 1 mm voxels one voxel thick (the locus coeruleus is 12
+# voxels in a 4x4x11 box, raphe magnus 11 in 2x4x4). The default 2x / sigma 0.6 signed-distance
+# smoothing either wipes such a sheet out completely - the smoothed field never crosses zero and
+# marching cubes finds nothing - or shrinks it to a bead a tenth of its true size. So each mask is
+# meshed on a ladder of finer grids with gentler smoothing and the first rung is kept only if the
+# surface it produces still spans most of the mask.
+SMOOTHING_LADDER = ((2, None), (4, 0.35), (4, 0.15))
+MIN_EXTENT_FRAC = 0.85     # mesh bounding-box diagonal / mask bounding-box diagonal
+
+
+def _mask_diagonal_mm(mask: np.ndarray, affine: np.ndarray) -> float:
+    idx = np.argwhere(mask)
+    lo, hi = idx.min(0), idx.max(0) + 1          # +1: a single voxel still spans one voxel
+    corners = np.array([[x, y, z] for x in (lo[0], hi[0]) for y in (lo[1], hi[1]) for z in (lo[2], hi[2])], float)
+    mm = corners @ affine[:3, :3].T + affine[:3, 3]
+    return float(np.linalg.norm(mm.max(0) - mm.min(0)))
+
+
+def _mesh_tiny(mask: np.ndarray, affine: np.ndarray, target_faces: int, vox: float):
+    """mesh_from_mask with a fallback ladder for sub-voxel-thin nuclei. Returns (mesh|None, extra)."""
+    default = 0.6 if vox >= 0.9 else 1.0
+    want = MIN_EXTENT_FRAC * _mask_diagonal_mm(mask, affine)
+    best, best_extra, best_span = None, {}, -1.0
+    for up, sigma in SMOOTHING_LADDER:
+        sig = default if sigma is None else sigma
+        mesh = mesh_from_mask(mask, affine, target_faces, sigma=sig, upsample=up)
+        if mesh is None or len(mesh.faces) < 40:
+            continue
+        span = float(np.linalg.norm(mesh.bounds[1] - mesh.bounds[0]))
+        extra = {} if (up, sigma) == SMOOTHING_LADDER[0] else {"smoothing": {"upsample": up, "sigma": sig}}
+        if span > best_span:
+            best, best_extra, best_span = mesh, extra, span
+        if span >= want:
+            return mesh, extra
+    return best, best_extra
 
 
 def build(sel: list[Found], cfg: dict, only: set[str] | None, with_duplicates: bool) -> list[dict]:
@@ -258,19 +329,45 @@ def build(sel: list[Found], cfg: dict, only: set[str] | None, with_duplicates: b
                 print(f"  [skip] {spec.id}: empty at threshold")
                 continue
             vox = float(np.cbrt(abs(np.linalg.det(img.affine[:3, :3]))))
-            mesh = mesh_from_mask(mask, img.affine, BUDGET[spec.budget], sigma=0.6 if vox >= 0.9 else 1.0)
+            mesh, smoothing = _mesh_tiny(mask, img.affine, BUDGET[spec.budget], vox)
             if mesh is None:
-                print(f"  [skip] {spec.id}: no surface")
+                print(f"  [skip] {spec.id}: no surface ({int(mask.sum())} voxels)")
                 continue
             path = MESHES / spec.system / f"{spec.id}.glb"
             nbytes, lod = export_with_lod(mesh, path, spec.id, LOD_FACES, LOD_MIN_FACES)
             out.append(record(spec, SOURCE_ID, None, alignment, mesh, path, nbytes, int(mask.sum()),
                               {"labelVolume": "anat", "abbrev": f.abbrev, "labelKind": f.kind,
-                               "sourceFile": f.path.name, "lod": lod}))
+                               "sourceFile": f.path.name, "lod": lod, **smoothing}))
             print(f"  {spec.id:44s} {len(mesh.faces):6d} tris {nbytes / 1024:7.1f} KB  ({f.abbrev}, {f.kind})")
         except Exception as e:  # noqa: BLE001 - one bad file must not stop the run
             print(f"  [FAIL] {f.path.name}: {type(e).__name__}: {e}")
     return out
+
+
+LICENSE_ID = "BrainstemNavigator-NC-ND"
+LICENSE_NOTE = """
+--------------------------------------------------------------------------------
+Note for this atlas: the meshes built from the Brainstem Navigator carry the source
+id "brainstem_navigator" and are marked nc: true / noRedistribution: true in
+public/data/manifest.json. Under clause 2 above they are local-only and must be
+excluded from any build that leaves the organisation.
+"""
+
+
+def copy_license(root: Path) -> None:
+    """Put the toolkit's own Copyright.txt into public/data/licenses/ (clause 1 requires the original
+    notices to travel with every copy). atlas-download writes a 3-line stub for every licence id, so
+    this runs after every ingest rather than once."""
+    src = next((p for p in root.rglob("Copyright.txt") if not _junk(p)), None)
+    if src is None:
+        print("  [warn] Documentation/Copyright.txt not found; licence text left as is")
+        return
+    try:
+        LICENSES.mkdir(parents=True, exist_ok=True)
+        (LICENSES / f"{LICENSE_ID}.txt").write_text(src.read_text().rstrip() + "\n" + LICENSE_NOTE)
+        print(f"  licence: {src} -> {LICENSES / (LICENSE_ID + '.txt')}")
+    except OSError as e:
+        print(f"  [warn] could not write the licence text: {e}")
 
 
 def print_inventory(root: Path, found: list[Found], sel: list[Found], cfg: dict) -> None:
@@ -334,6 +431,7 @@ def main(argv=None) -> None:
         print_inventory(root, found, sel, cfg)
         return
     print_inventory(root, found, sel, cfg)
+    copy_license(root)
     only = set(a.only.split(",")) if a.only else None
     results = build(sel, cfg, only, a.with_duplicates)
     if not results:

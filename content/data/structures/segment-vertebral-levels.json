@@ -8,11 +8,14 @@
   ],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-cord"
+    "spinal-segment-cervical",
+    "spinal-segment-thoracic",
+    "spinal-segment-lumbar",
+    "spinal-segment-sacral"
   ],
-  "summary": "Because the vertebral column outgrows the cord, each cord segment lies higher than the vertebra of the same number, and the discrepancy increases caudally: cervical segments lie about one vertebra above their spine, upper thoracic two, lower thoracic three, and the whole lumbar and sacral cord lies opposite T10–L1. Clinicians need this in two directions: to convert the sensory level found at the bedside into the vertebral level to image, and to convert the vertebra injured on the scan into the segments and deficits expected. Roots leave through the foramen of the same number below the pedicle (cervical roots above their vertebra, C8 below C7), which decides which root a disc compresses.",
+  "summary": "Because the vertebral column outgrows the cord, each cord segment lies higher than the vertebra of the same number, and the discrepancy increases caudally: cervical segments lie about one vertebra above their spine, upper thoracic two, lower thoracic three, and the whole lumbar and sacral cord lies opposite T10\u2013L1. Clinicians need this in two directions: to convert the sensory level found at the bedside into the vertebral level to image, and to convert the vertebra injured on the scan into the segments and deficits expected. Roots leave through the foramen of the same number below the pedicle (cervical roots above their vertebra, C8 below C7), which decides which root a disc compresses.",
   "anatomy": {
-    "location": "Cervical cord segments opposite C1–C7 vertebrae; T1–T6 segments opposite C7–T4; T7–T12 segments opposite T5–T9; L1–L5 opposite T10–T12; sacral segments opposite L1; conus at L1–L2.",
+    "location": "Cervical cord segments opposite C1\u2013C7 vertebrae; T1\u2013T6 segments opposite C7\u2013T4; T7\u2013T12 segments opposite T5\u2013T9; L1\u2013L5 opposite T10\u2013T12; sacral segments opposite L1; conus at L1\u2013L2.",
     "subdivisions": [
       {
         "name": "Cervical",
@@ -28,11 +31,11 @@
       },
       {
         "name": "Lumbar and sacral",
-        "note": "L1–S5 segments compressed into the T10–L1 region"
+        "note": "L1\u2013S5 segments compressed into the T10\u2013L1 region"
       },
       {
         "name": "Root exit",
-        "note": "cervical roots exit above the same-numbered vertebra (C1–C7), C8 below C7, thoracic and lumbar roots below the same-numbered vertebra"
+        "note": "cervical roots exit above the same-numbered vertebra (C1\u2013C7), C8 below C7, thoracic and lumbar roots below the same-numbered vertebra"
       }
     ]
   },
@@ -60,7 +63,7 @@
         "label": "cervicomedullary junction: C1 segment opposite the atlas"
       }
     ],
-    "normalAppearance": "On sagittal spine MRI count vertebrae from C2 (or from the sacrum) to name the level of a lesion; the cord segment involved is then inferred by the rule above. A thoracic sensory level at T10 means imaging the T7–T8 vertebrae, not T10 alone.",
+    "normalAppearance": "On sagittal spine MRI count vertebrae from C2 (or from the sacrum) to name the level of a lesion; the cord segment involved is then inferred by the rule above. A thoracic sensory level at T10 means imaging the T7\u2013T8 vertebrae, not T10 alone.",
     "pathology": [
       {
         "pathology": "Vertebral fracture with cord injury",
@@ -71,7 +74,7 @@
       {
         "pathology": "Disc herniation and the root affected",
         "modality": "MRI",
-        "finding": "A posterolateral C5–C6 disc compresses the C6 root; an L4–L5 disc compresses L5; a far-lateral disc compresses the root above.",
+        "finding": "A posterolateral C5\u2013C6 disc compresses the C6 root; an L4\u2013L5 disc compresses L5; a far-lateral disc compresses the root above.",
         "sequence": "T2"
       }
     ],
@@ -90,7 +93,7 @@
         "mechanism": "Root exit anatomy"
       },
       {
-        "deficit": "Cauda equina rather than cord syndrome below L1–L2",
+        "deficit": "Cauda equina rather than cord syndrome below L1\u2013L2",
         "side": "bilateral",
         "mechanism": "No cord below the conus"
       }
@@ -107,7 +110,7 @@
     ],
     "pearls": [
       "Add one in the neck, two in the upper back, three in the lower back to convert a vertebra into a segment",
-      "A T10 sensory level (umbilicus) points to the T7–T8 vertebrae"
+      "A T10 sensory level (umbilicus) points to the T7\u2013T8 vertebrae"
     ]
   },
   "pitfalls": [],

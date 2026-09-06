@@ -128,7 +128,7 @@
     ]
   },
   "pitfalls": [
-    "DERIVED MESH: the four cord blocks are not measured on an individual. The Z-Anatomy cord surface was cut by horizontal planes placed at the classical cord-segment to vertebral-body relationship read off the Z-Anatomy vertebrae, so the block boundaries teach the rule rather than record a specimen; use them for orientation, never to read a level off an image.",
+    "DERIVED MESH: the four cord blocks are cut from the Z-Anatomy cord surface, not segmented on an individual. Their boundaries are now measured rather than assumed: the PAM50 spinal template is reformatted along this cord's own centerline, and each block is cut at the PAM50 C8/T1, T12/L1 and L5/S1 spinal-level boundaries on a plane normal to the local centerline tangent. PAM50 is a template average of adult cords, so the levels are representative rather than personal; use the blocks for orientation, never to read a level off a patient's image.",
     "The C8 segment lies opposite the C7 vertebra, so the vertebral level of an injury is not its cord level",
     "A cervical cord lesion can present as painless hand wasting and be mistaken for an ulnar neuropathy or motor neuron disease"
   ],

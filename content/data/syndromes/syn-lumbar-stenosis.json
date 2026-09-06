@@ -18,9 +18,7 @@
   "lesionMarker": {
     "kind": "sphere",
     "mni": {
-      "x": 0,
-      "y": -50,
-      "z": -180
+      "meshId": "cauda-equina"
     },
     "radiusMm": 10
   },
@@ -124,9 +122,7 @@
   "imagingHint": {
     "plane": "sagittal",
     "mni": {
-      "x": 0,
-      "y": -50,
-      "z": -180
+      "meshId": "cauda-equina"
     },
     "label": "lumbar canal at L3–L5"
   },

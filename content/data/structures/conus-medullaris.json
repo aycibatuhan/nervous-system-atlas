@@ -5,11 +5,12 @@
   "synonyms": [],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-cord"
+    "spinal-segment-sacral",
+    "filum-terminale"
   ],
-  "summary": "The tapered lower end of the spinal cord, containing the sacral segments (S2–S5 and coccygeal), ending at the L1–L2 disc level in most adults, from which the filum terminale continues to the coccyx. It houses the sacral parasympathetic nucleus and Onuf's nucleus, so its lesions produce early, symmetric sphincter failure and saddle anesthesia with relatively little leg weakness, the conus syndrome, which must be distinguished from the asymmetric, painful, lower motor neuron cauda equina syndrome affecting the roots below it.",
+  "summary": "The tapered lower end of the spinal cord, containing the sacral segments (S2\u2013S5 and coccygeal), ending at the L1\u2013L2 disc level in most adults, from which the filum terminale continues to the coccyx. It houses the sacral parasympathetic nucleus and Onuf's nucleus, so its lesions produce early, symmetric sphincter failure and saddle anesthesia with relatively little leg weakness, the conus syndrome, which must be distinguished from the asymmetric, painful, lower motor neuron cauda equina syndrome affecting the roots below it.",
   "anatomy": {
-    "location": "Lower border of L1 to the L1–L2 disc in most adults (range T12–L3), surrounded by the emerging lumbar and sacral roots of the cauda equina; the level is fixed by the age of two years.",
+    "location": "Lower border of L1 to the L1\u2013L2 disc in most adults (range T12\u2013L3), surrounded by the emerging lumbar and sacral roots of the cauda equina; the level is fixed by the age of two years.",
     "subdivisions": []
   },
   "connections": {
@@ -43,7 +44,7 @@
           "y": -48,
           "z": -65
         },
-        "label": "cord (the conus lies at L1–L2, below the MNI volume)"
+        "label": "cord (the conus lies at L1\u2013L2, below the MNI volume)"
       }
     ],
     "normalAppearance": "On sagittal lumbar MRI the conus should end at or above L2; a low-lying conus with a thick filum indicates tethering. Conus lesions (ependymoma, infarct, myelitis) appear as focal signal change or expansion of the cone.",
@@ -103,7 +104,7 @@
     ],
     "pearls": [
       "Sphincters first, symmetric and painless: conus. Legs first, asymmetric and painful: cauda equina",
-      "The conus is at L1–L2: a lumbar puncture at L3–L4 or below is safe"
+      "The conus is at L1\u2013L2: a lumbar puncture at L3\u2013L4 or below is safe"
     ]
   },
   "pitfalls": [],

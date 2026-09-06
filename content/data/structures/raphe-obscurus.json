@@ -1,0 +1,157 @@
+{
+ "kind": "structure",
+ "id": "raphe-obscurus",
+ "name": "Raphe obscurus nucleus",
+ "synonyms": [
+  "ROb",
+  "nucleus raphes obscurus",
+  "B2 group"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "raphe-obscurus"
+ ],
+ "summary": "The raphe obscurus is a serotonergic midline nucleus of the caudal medulla, lying between the hypoglossal nuclei and the inferior olives and extending down toward the cervical cord. Its neurons are central chemoreceptors: they are directly sensitive to carbon dioxide and to the resulting fall in pH, and they excite the respiratory rhythm generator and the motor neurons of the airway and the diaphragm, so the nucleus is part of the system that keeps ventilation matched to metabolism and that arouses a sleeping person when carbon dioxide rises. It also supplies serotonin to the motor neurons of the ventral horn and the cranial motor nuclei, where it sets their background excitability. Abnormalities of medullary serotonergic nuclei including this one have been reported in the sudden infant death syndrome.",
+ "anatomy": {
+  "location": "Midline of the caudal medulla behind the inferior olivary nuclei and beneath the hypoglossal nuclei, from below the level of the raphe magnus to the cervicomedullary junction, continuous caudally with the midline raphe of the upper cervical cord. The medial lemnisci lie on either side and the pyramids in front. Median perforating branches of the vertebral and anterior spinal arteries supply it, so it shares its blood with the medial medullary territory.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Arterial and central chemoreceptor pathways",
+    "via": "solitary and local medullary fibers"
+   },
+   {
+    "from": "Hypothalamus and periaqueductal gray",
+    "via": "descending fibers"
+   },
+   {
+    "from": "Nucleus of the solitary tract",
+    "via": "visceral afferent relay"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Ventral respiratory column and pre-Bötzinger complex",
+    "via": "serotonergic fibers"
+   },
+   {
+    "to": "Hypoglossal nucleus and phrenic motor pool",
+    "via": "descending serotonergic drive"
+   },
+   {
+    "to": "Spinal ventral horn",
+    "via": "raphespinal facilitation"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal"
+  ]
+ },
+ "function": "Raphe obscurus neurons sense carbon dioxide and pH directly, and their firing rate rises steeply with hypercapnia. They project to the ventral respiratory column including the pre-Bötzinger complex, to the phrenic and intercostal motor pools and to the hypoglossal nucleus, increasing respiratory drive and stiffening the upper airway; this last projection matters in obstructive sleep apnea, since serotonergic tone to the genioglossus falls during sleep and especially during REM. Ascending and local fibers reach the nucleus of the solitary tract and the ventrolateral medulla, coupling the chemoreflex to cardiovascular control, and descending fibers to the spinal ventral horn provide the serotonergic facilitation that allows motor neurons to sustain repetitive firing. The nucleus is also engaged in thermoregulation together with the raphe pallidus. Because it is wake-active and REM-off like the other serotonergic groups, its output falls exactly when the airway is most vulnerable.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "raphe-obscurus"
+    },
+    "label": "raphe obscurus in the midline of the caudal medulla"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "raphe-obscurus"
+    },
+    "label": "midline caudal medulla toward the cervicomedullary junction"
+   }
+  ],
+  "normalAppearance": "Not visible on clinical MRI; the location is the midline of the caudal medulla behind the pyramids on sagittal images, near the cervicomedullary junction.",
+  "pathology": [
+   {
+    "pathology": "Central hypoventilation and sleep-disordered breathing",
+    "modality": "MRI",
+    "finding": "Structural imaging is usually normal; the defect is functional in the medullary chemoreceptive network.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Paramedian medullary restricted diffusion with contralateral hemiparesis, tongue weakness and, when bilateral, respiratory failure.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Foramen magnum compression",
+    "modality": "MRI",
+    "finding": "Cervicomedullary distortion by a Chiari malformation or mass with central apnea and impaired arousal from sleep.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Blunted ventilatory response to carbon dioxide",
+    "side": "bilateral",
+    "mechanism": "Loss of medullary serotonergic chemoreception"
+   },
+   {
+    "deficit": "Sleep-disordered breathing with upper airway collapse",
+    "side": "bilateral",
+    "mechanism": "Loss of serotonergic drive to the hypoglossal motor pool"
+   },
+   {
+    "deficit": "Reduced motor neuron excitability and fatigue",
+    "side": "bilateral",
+    "mechanism": "Loss of descending serotonergic facilitation"
+   }
+  ],
+  "examination": [
+   "Ask about morning headache, witnessed apneas and daytime sleepiness",
+   "Measure oxygen saturation and end-tidal carbon dioxide during sleep when suspicion is high",
+   "Look for tongue and airway tone during sleep on polysomnography"
+  ],
+  "syndromes": [
+   "syn-dejerine-medial-medullary"
+  ],
+  "pearls": [
+   "Breathing has a chemical thermostat in the midline of the medulla",
+   "Serotonergic neurons are quiet in REM sleep, which is when obstructive apnea is worst",
+   "Midline medullary serotonergic abnormalities have been described in sudden infant death syndrome"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-bianciardi-brainstem-nuclei-template"
+  },
+  {
+   "ref": "sp-nucleus-raphe"
+  },
+  {
+   "ref": "sp-medulla-oblongata"
+  }
+ ],
+ "tags": [
+  "chemoreception",
+  "respiration",
+  "serotonin",
+  "raphe"
+ ],
+ "status": "draft",
+ "subsystem": "medulla",
+ "parent": "brainstem"
+}

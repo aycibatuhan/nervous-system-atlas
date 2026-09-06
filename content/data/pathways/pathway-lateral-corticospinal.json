@@ -7,7 +7,7 @@
   ],
   "type": "descending",
   "modality": "voluntary skilled movement of the limbs",
-  "summary": "The main voluntary motor pathway. Pyramidal neurons of the motor and premotor cortex send axons through the corona radiata, the posterior limb of the internal capsule, the middle of the crus cerebri and the basis pontis to the medullary pyramid, where about 85–90% cross in the pyramidal decussation to descend in the lateral funiculus of the cord as the lateral corticospinal tract, ending on interneurons and, for the hand, directly on motor neurons of the anterior horn. Because the crossing happens at the cervicomedullary junction, a lesion anywhere above it weakens the opposite side of the body and a lesion below it the same side, and the accompanying signs of the neighbors (face, cranial nerves, sensation) give the level.",
+  "summary": "The main voluntary motor pathway. Pyramidal neurons of the motor and premotor cortex send axons through the corona radiata, the posterior limb of the internal capsule, the middle of the crus cerebri and the basis pontis to the medullary pyramid, where about 85\u201390% cross in the pyramidal decussation to descend in the lateral funiculus of the cord as the lateral corticospinal tract, ending on interneurons and, for the hand, directly on motor neurons of the anterior horn. Because the crossing happens at the cervicomedullary junction, a lesion anywhere above it weakens the opposite side of the body and a lesion below it the same side, and the accompanying signs of the neighbors (face, cranial nerves, sensation) give the level.",
   "origin": {
     "structures": [
       "gyrus-precentral",
@@ -31,7 +31,7 @@
   "decussation": {
     "level": "Pyramidal decussation, cervicomedullary junction",
     "structureId": "pyramid",
-    "note": "About 85–90% of fibers cross; the arm fibers cross rostral to the leg fibers, the basis of cruciate paralysis."
+    "note": "About 85\u201390% of fibers cross; the arm fibers cross rostral to the leg fibers, the basis of cruciate paralysis."
   },
   "waypoints": [
     {
@@ -85,14 +85,14 @@
     {
       "order": 8,
       "structureId": "spinal-white-columns",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "contralateral",
       "note": "lateral funiculus, medial to the spinocerebellar tract; leg fibers lateral"
     },
     {
       "order": 9,
       "structureId": "spinal-grey-anterior-horn",
-      "meshId": "spinal-cord",
+      "meshId": "spinal-white-columns",
       "sideRelativeToOrigin": "contralateral",
       "note": "termination on interneurons and motor neurons"
     }
@@ -120,7 +120,7 @@
     },
     {
       "level": "Pons",
-      "effects": "Contralateral hemiparesis with ipsilateral VI or VII palsy (Millard–Gubler, Foville); bilateral: locked-in",
+      "effects": "Contralateral hemiparesis with ipsilateral VI or VII palsy (Millard\u2013Gubler, Foville); bilateral: locked-in",
       "side": "contralateral"
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "level": "Spinal cord below the decussation",
-      "effects": "Ipsilateral upper motor neuron weakness below the level (Brown-Séquard)",
+      "effects": "Ipsilateral upper motor neuron weakness below the level (Brown-S\u00e9quard)",
       "side": "ipsilateral"
     }
   ],

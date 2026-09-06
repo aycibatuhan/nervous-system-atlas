@@ -1,6 +1,7 @@
 // Verifies public/data: every manifest mesh decodes (meshopt), triangle counts, bbox/centroid sanity, label ids exist.
 // usage: node scripts/check-data.ts [--deep] [glb paths...]
 import { readFileSync, existsSync, statSync } from 'node:fs';
+import { gunzipSync } from 'node:zlib';
 import { resolve } from 'node:path';
 import { NodeIO } from '@gltf-transform/core';
 import { ALL_EXTENSIONS } from '@gltf-transform/extensions';
@@ -66,9 +67,41 @@ async function main() {
     }
     if (!manifest.licenses[m.license]) { console.error(`${m.id}: unknown licence ${m.license}`); errors++; }
   }
-  for (const [k, v] of Object.entries(manifest.volumes as Record<string, { file: string }>)) {
-    if (!existsSync(resolve(DATA, v.file))) { console.error(`volume ${k} missing ${v.file}`); errors++; }
+  // volumes: the payload must gunzip to exactly shape[0]*shape[1]*shape[2] samples of the declared dtype
+  type Vol = { file: string; dtype: string; shape: number[]; bytes_raw?: number; space?: string; spacing?: number[]; affine_ras?: number[][] };
+  let volBytes = 0;
+  for (const [k, v] of Object.entries(manifest.volumes as Record<string, Vol>)) {
+    const f = resolve(DATA, v.file);
+    if (!existsSync(f)) { console.error(`volume ${k} missing ${v.file}`); errors++; continue; }
+    volBytes += statSync(f).size;
+    const buf = readFileSync(f);
+    const raw = buf[0] === 0x1f && buf[1] === 0x8b ? gunzipSync(buf) : buf;
+    const expect = v.shape[0]! * v.shape[1]! * v.shape[2]! * (v.dtype === 'uint16' ? 2 : 1);
+    if (raw.length !== expect) { console.error(`volume ${k}: ${raw.length} bytes, expected ${expect} for ${v.shape} ${v.dtype}`); errors++; }
+    if (v.bytes_raw !== undefined && v.bytes_raw !== expect) { console.error(`volume ${k}: bytes_raw ${v.bytes_raw} != ${expect}`); errors++; }
+    // volumes off the brain grid must carry their own affine and match the grid they name
+    const cordGrid = manifest.grids?.cord;
+    if (v.space === 'cord') {
+      if (!cordGrid) { console.error(`volume ${k}: space "cord" but manifest.grids.cord is missing`); errors++; }
+      else {
+        if (JSON.stringify(v.shape) !== JSON.stringify(cordGrid.shape)) { console.error(`volume ${k}: shape ${v.shape} != grids.cord ${cordGrid.shape}`); errors++; }
+        if (JSON.stringify(v.affine_ras) !== JSON.stringify(cordGrid.affine_ras)) { console.error(`volume ${k}: affine != grids.cord affine`); errors++; }
+      }
+    } else if (JSON.stringify(v.shape) !== JSON.stringify(manifest.grid.shape) && !v.spacing) {
+      console.error(`volume ${k}: shape ${v.shape} is neither the brain grid nor a declared second grid`); errors++;
+    }
   }
+  if (manifest.grids?.cord) {
+    const g = manifest.grids.cord;
+    if (!manifest.licenses[g.license]) { console.error(`grids.cord: unknown licence ${g.license}`); errors++; }
+    if (!manifest.sources[g.source]) { console.error(`grids.cord: unknown source ${g.source}`); errors++; }
+    // the cord grid must actually reach the spinal cord meshes it is reformatted onto
+    const zmin = g.origin_ras[2]; const zmax = zmin + (g.shape[2] - 1) * g.spacing[2];
+    // it must reach up to the MNI floor (-78 mm, so the two MRIs meet) and down past the conus
+    if (zmax < -78 || zmin > -400) { console.error(`grids.cord: z range ${zmin}..${zmax} does not span the foramen magnum to the conus`); errors++; }
+    console.log(`cord grid ${g.shape.join('x')} at ${g.spacing[0]} mm, z ${zmin.toFixed(1)}..${zmax.toFixed(1)} mm, source ${g.source}`);
+  }
+  console.log(`volumes: ${(volBytes / 1e6).toFixed(2)} MB shipped`);
   console.log(`${manifest.meshes.length} meshes, ${(bytes / 1e6).toFixed(1)} MB, ${(tris / 1e6).toFixed(2)} M triangles, ${errors} error(s)`);
   if (errors) process.exit(1);
 }

@@ -7,18 +7,27 @@ manifest passes through, so the UI and the content entries can say plainly that 
 
 What is built
 -------------
-spinal-segment-cervical / -thoracic / -lumbar / -sacral
-    The Z-Anatomy cord surface (pipeline/work/zanatomy/objs/spinal-white-columns.ply, world metres) cut by
-    horizontal planes and capped.  The cut levels come from the Z-Anatomy vertebral bodies together with the
-    classical cord-segment-to-vertebra relationship (cervical segments opposite C1-C7, thoracic opposite
-    T1-T9/T10, lumbar opposite T10-T12, sacral and coccygeal opposite T12-L1, conus at the cord's own tip).
-    Z-Anatomy models one spinal root and ganglion pair per intervertebral foramen from C2 to L2, i.e. it puts
-    every cord segment opposite the same-numbered vertebra, so its roots cannot supply the boundaries; the
-    vertebral-body landmarks are used instead.
+spinal-segment-cervical / -thoracic / -lumbar / -sacral, filum-terminale,
+spinal-enlargement-cervical / -lumbosacral
+    The Z-Anatomy cord surface (pipeline/work/zanatomy/objs/spinal-white-columns.ply, world metres), mapped to
+    MNI with the affine and the post-correction (atlas_pipeline.midline: the sub-cranial x shear and the
+    anteroposterior ramp) and then cut and capped.  The cut levels are *measured*: atlas-pam50 reformats the
+    PAM50 spinal template along this cord's own centreline and writes every PAM50 spinal level C1-S5 as world
+    points on that centreline (public/data/volumes/cord_levels.json), so a block boundary is the PAM50
+    level boundary and the cut is the plane through that centreline point normal to the local tangent -- not a
+    horizontal z plane, which would cut obliquely wherever the cord leans.  PAM50's S5 ends about 90 mm above
+    the caudal end of the Z-Anatomy surface, because that surface tapers on into the filum terminale: the
+    remainder below the S5 boundary is exported as `filum-terminale` (Z-Anatomy has no "Filum terminale"
+    object of its own).  The two enlargements are the same cut machinery over C5-T1 and L1-S3, off by default.
+    Without cord_levels.json the step warns and falls back to the previous construction, horizontal planes at
+    the Z-Anatomy vertebral-body landmarks with the classical cord-segment-to-vertebra rule.  (Z-Anatomy models
+    one spinal root and ganglion pair per intervertebral foramen from C2 to L2, i.e. it puts every cord segment
+    opposite the same-numbered vertebra, so its own roots can never supply the boundaries.)
 
 phrenic-nerve-l/-r, lumbosacral-trunk-l/-r
     Polylines from pipeline/config/derived_nerves.yaml (each waypoint read off a named Z-Anatomy object),
     mapped to MNI mm, smoothed with a centripetal Catmull-Rom spline and swept into a round, round-capped tube.
+    The waypoints are corrected before the spline, so the tube is round in corrected MNI space.
 
 choroid-plexus-fourth-ventricle
     The posterior (roof) boundary of the caudal half of the FreeSurfer aseg fourth ventricle (label 15),
@@ -33,16 +42,48 @@ import numpy as np
 import trimesh
 import yaml
 
+from . import midline
 from .catalog import LOD_FACES, LOD_MIN_FACES, MeshSpec
 from .meshing import export_with_lod, mesh_from_mask
-from .paths import CONFIG, MESHES, RAW, WORK
+from .paths import CONFIG, MESHES, RAW, VOLUMES, WORK
 
 ZW = WORK / "zanatomy"
 CORD_PLY = ZW / "objs" / "spinal-white-columns.ply"
+CORD_LEVELS_JSON = VOLUMES / "cord_levels.json"   # written by atlas-pam50
 ASEG = RAW / "mni_aseg" / "tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz"
 
 # ---------------------------------------------------------------- spinal cord segments
-# Cut planes in Z-Anatomy world metres (+z up).  Vertebral landmarks are bboxes from work/zanatomy/objects.json.
+# Preferred: the measured PAM50 spinal levels that atlas-pam50 lands on our own cord centreline
+# (public/data/volumes/cord_levels.json).  Each block runs from the boundary above its first level to the
+# boundary below its last, cut on the plane through that centreline point normal to the local tangent.
+CORD_BLOCKS = [
+    # id, name, first level, last level, colour, visible, note
+    ("spinal-segment-cervical", "Cervical cord (C1-C8)", "C1", "C8", "#DDC8AD", False,
+     "runs from the top of the cord surface (the cervicomedullary junction) to the PAM50 C8/T1 boundary"),
+    ("spinal-segment-thoracic", "Thoracic cord (T1-T12)", "T1", "T12", "#D0B899", False,
+     "runs from the PAM50 C8/T1 boundary to the PAM50 T12/L1 boundary"),
+    ("spinal-segment-lumbar", "Lumbar cord (L1-L5)", "L1", "L5", "#C3A785", False,
+     "runs from the PAM50 T12/L1 boundary to the PAM50 L5/S1 boundary"),
+    ("spinal-segment-sacral", "Sacral and coccygeal cord (S1-S5, Co)", "S1", "S5", "#B69771", False,
+     "runs from the PAM50 L5/S1 boundary to the caudal end of the PAM50 S5 level, i.e. the tip of the conus "
+     "medullaris"),
+]
+# Overlays cut from the same centreline; off by default, so they never double the cord in the default scene.
+CORD_OVERLAYS = [
+    ("spinal-enlargement-cervical", "Cervical enlargement (C5-T1)", "C5", "T1", "#E2CDB1", "cervical-enlargement",
+     "the C5 to T1 span of the cord, the segments of the brachial plexus"),
+    ("spinal-enlargement-lumbosacral", "Lumbosacral enlargement (L1-S3)", "L1", "S3", "#CBB08D", "spinal-cord",
+     "the L1 to S3 span of the cord, the segments of the lumbosacral plexus"),
+]
+FILUM = ("filum-terminale", "Filum terminale", "#C9BBA6",
+         "everything below the caudal end of the PAM50 S5 level: the thread of pia and glial tissue that the "
+         "Z-Anatomy cord surface continues into below the conus")
+CORD_METHOD_PAM50 = (
+    "Z-Anatomy cord surface, mapped to MNI with the affine and the sub-cranial post-correction, then cut on "
+    "planes normal to the local tangent of its own measured centreline at the PAM50 spinal-level boundaries "
+    "(atlas-pam50 curved reformat, public/data/volumes/cord_levels.json); the levels are those of the PAM50 "
+    "template average, not of an individual")
+# Fallback: the old cut planes in Z-Anatomy world metres (+z up), from work/zanatomy/objects.json bboxes.
 CORD_LEVELS = [
     ("spinal-segment-cervical", "Cervical cord (C1-C8)", 1.4420, None,
      "C8 ends at the C7/T1 intervertebral disc (Intervertebral disc C7-T1, z 1.436-1.448)", "#DDC8AD"),
@@ -66,12 +107,22 @@ FV_RECESS_LEN = 7.0       # mm of lateral extension towards each foramen of Lusc
 FV_RECESS_R = 1.6         # mm radius of that extension
 
 
-def ztomni() -> np.ndarray:
-    return np.array(json.loads((CONFIG / "zanatomy_to_mni.json").read_text())["matrix"])
+def ztomni() -> tuple[np.ndarray, dict | None]:
+    """The Z-Anatomy affine and the post-correction fitted by `atlas-zanatomy-midline` (x shear + AP ramp).
+
+    Everything built here from Z-Anatomy geometry goes through both, so the cord blocks, the phrenic nerves
+    and the lumbosacral trunks sit on the same corrected midline -- and at the same corrected anteroposterior
+    position -- as the exported Z-Anatomy meshes."""
+    cfg = json.loads((CONFIG / "zanatomy_to_mni.json").read_text())
+    pc = cfg.get("post_correction")
+    if pc is not None and pc.get("stale"):
+        raise SystemExit("post_correction is marked stale (the affine was refitted): run atlas-zanatomy-midline")
+    return np.array(cfg["matrix"]), pc
 
 
-def apply(T: np.ndarray, P: np.ndarray) -> np.ndarray:
-    return np.asarray(P, float) @ T[:3, :3].T + T[:3, 3]
+def apply(T: np.ndarray, P: np.ndarray, pc: dict | None = None) -> np.ndarray:
+    """Z-Anatomy world metres -> corrected MNI mm."""
+    return midline.transform(np.asarray(P, float), T, pc)
 
 
 # ---------------------------------------------------------------- polyline -> tube
@@ -154,7 +205,130 @@ def tube(points: np.ndarray, radius: float, sections: int = 16) -> trimesh.Trime
 
 
 # ---------------------------------------------------------------- builders
-def cord_segments(T: np.ndarray) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+def cord_levels() -> dict | None:
+    """The measured PAM50 levels on our cord centreline, or None if atlas-pam50 has not run."""
+    if not CORD_LEVELS_JSON.exists():
+        return None
+    d = json.loads(CORD_LEVELS_JSON.read_text())
+    if "centreline" not in d or not d.get("spinalLevels"):
+        return None
+    return d
+
+
+def centreline_frame(levels: dict) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """(arc, points, unit tangents) of the cord centreline shipped in cord_levels.json, in world mm."""
+    c = levels["centreline"]
+    s = np.asarray(c["arc"], float)
+    P = np.asarray(c["points"], float)
+    Tg = np.gradient(P, axis=0)
+    Tg /= np.linalg.norm(Tg, axis=1)[:, None]
+    return s, P, Tg
+
+
+def cut_plane(frame: tuple[np.ndarray, np.ndarray, np.ndarray], arc: float) -> tuple[np.ndarray, np.ndarray]:
+    """The point at arc length `arc` on the centreline and the unit tangent (caudal) there."""
+    s, P, Tg = frame
+    pt = np.array([np.interp(arc, s, P[:, k]) for k in range(3)])
+    tan = np.array([np.interp(arc, s, Tg[:, k]) for k in range(3)])
+    return pt, tan / np.linalg.norm(tan)
+
+
+def boundary_arc(by: dict, above: str, below: str) -> float:
+    """Arc length of the boundary between two consecutive PAM50 spinal levels (they abut within 0.5 mm)."""
+    return 0.5 * (by[above]["arc_mm"][1] + by[below]["arc_mm"][0])
+
+
+def slice_between(cord: trimesh.Trimesh, frame, arc_top: float | None, arc_bottom: float | None):
+    """The part of the cord between two centreline arc lengths, cut normal to the local tangent and capped."""
+    m = cord.copy()
+    if arc_top is not None:
+        pt, tan = cut_plane(frame, arc_top)
+        m = m.slice_plane(pt, tan, cap=True)          # keep the caudal side
+    if m is not None and len(m.faces) and arc_bottom is not None:
+        pt, tan = cut_plane(frame, arc_bottom)
+        m = m.slice_plane(pt, -tan, cap=True)         # keep the rostral side
+    return m
+
+
+def tidy(m: trimesh.Trimesh, faces: int = 6000) -> trimesh.Trimesh:
+    m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
+    if len(m.faces) > faces:
+        m = m.simplify_quadric_decimation(face_count=faces)
+        m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
+    try:
+        m.fix_normals()
+    except Exception:  # noqa: BLE001
+        pass
+    return m
+
+
+def cord_segments(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+    """The four cord blocks, the filum terminale and the two enlargement overlays.
+
+    Preferred path: cut the corrected cord surface at the PAM50 spinal-level boundaries that atlas-pam50 landed
+    on our own centreline, on planes normal to the local tangent.  If cord_levels.json is missing, fall back to
+    the old horizontal cuts at the Z-Anatomy vertebral landmarks and say so.
+    """
+    levels = cord_levels()
+    if levels is None:
+        print("  [warn] no public/data/volumes/cord_levels.json: falling back to the Z-Anatomy vertebral "
+              "landmarks for the cord segment blocks (run atlas-pam50 first for the measured PAM50 levels)")
+        return cord_segments_by_vertebrae(T, pc)
+
+    cord = trimesh.load(str(CORD_PLY), force="mesh", process=True)
+    # map to corrected MNI mm *first*: the post-correction is not a plane-preserving map, so the cut planes
+    # have to be applied after it if they are to be planes on the shipped geometry
+    cord.vertices = apply(T, np.asarray(cord.vertices, float), pc)
+    frame = centreline_frame(levels)
+    by = {r["name"]: r for r in levels["spinalLevels"]}
+    order = [r["name"] for r in sorted(levels["spinalLevels"], key=lambda r: r["arc_mm"][0])]
+    arc_end = float(frame[0][-1])
+
+    def arc_top_of(first: str) -> float | None:
+        i = order.index(first)
+        return None if i == 0 else boundary_arc(by, order[i - 1], first)
+
+    def arc_bottom_of(last: str) -> float:
+        i = order.index(last)
+        return by[last]["arc_mm"][1] if i == len(order) - 1 else boundary_arc(by, last, order[i + 1])
+
+    out = []
+    for mid, name, first, last, colour, visible, note in CORD_BLOCKS:
+        a0, a1 = arc_top_of(first), arc_bottom_of(last)
+        m = slice_between(cord, frame, a0, a1)
+        if m is None or not len(m.faces):
+            print("  [empty]", mid); continue
+        out.append((MeshSpec(id=mid, name=name, system="spinal-cord", subsystem="segments", side="midline",
+                             colour=colour, visible=visible, structure_id=mid, budget="medium"),
+                    tidy(m), f"{CORD_METHOD_PAM50}; this block {note} "
+                             f"(arc {0.0 if a0 is None else a0:.1f}-{a1:.1f} mm along the centreline)"))
+
+    # the filum terminale: whatever the cord surface still has below the caudal end of S5
+    a0 = by[order[-1]]["arc_mm"][1]
+    m = slice_between(cord, frame, a0, None)
+    if m is not None and len(m.faces):
+        mid, name, colour, note = FILUM
+        out.append((MeshSpec(id=mid, name=name, system="spinal-cord", subsystem="segments", side="midline",
+                             colour=colour, visible=False, structure_id=mid, budget="medium"),
+                    tidy(m, 4000), f"{CORD_METHOD_PAM50}; this mesh is {note} "
+                                   f"(arc {a0:.1f}-{arc_end:.1f} mm along the centreline)"))
+    else:
+        print("  [empty] filum-terminale: the cord surface stops at the S5 boundary")
+
+    for mid, name, first, last, colour, sid, note in CORD_OVERLAYS:
+        a0, a1 = by[first]["arc_mm"][0], by[last]["arc_mm"][1]
+        m = slice_between(cord, frame, a0, a1)
+        if m is None or not len(m.faces):
+            print("  [empty]", mid); continue
+        out.append((MeshSpec(id=mid, name=name, system="spinal-cord", subsystem="segments", side="midline",
+                             colour=colour, visible=False, structure_id=sid, budget="medium"),
+                    tidy(m), f"{CORD_METHOD_PAM50}; this overlay is {note} "
+                             f"(arc {a0:.1f}-{a1:.1f} mm along the centreline)"))
+    return out
+
+
+def cord_segments_by_vertebrae(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+    """Fallback: the pre-PAM50 construction, horizontal cuts at the Z-Anatomy vertebral landmarks."""
     cord = trimesh.load(str(CORD_PLY), force="mesh", process=True)
     out = []
     for mid, name, zmin, zmax, note, colour in CORD_LEVELS:
@@ -165,28 +339,21 @@ def cord_segments(T: np.ndarray) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
             m = m.slice_plane([0, 0, zmin], [0, 0, 1], cap=True)
         if m is None or len(m.faces) == 0:
             print("  [empty]", mid); continue
-        m.apply_transform(T)
-        m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
-        if len(m.faces) > 6000:
-            m = m.simplify_quadric_decimation(face_count=6000)
-            m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
-        try:
-            m.fix_normals()
-        except Exception:  # noqa: BLE001
-            pass
+        # cut in Z-Anatomy world metres (the CORD_LEVELS planes), then map with the affine + midline correction
+        m.vertices = apply(T, np.asarray(m.vertices, float), pc)
         spec = MeshSpec(id=mid, name=name, system="spinal-cord", subsystem="segments", side="midline",
-                        colour=colour, structure_id=mid, budget="medium")
-        out.append((spec, m, f"{CORD_METHOD}; this block {note}"))
+                        colour=colour, visible=False, structure_id=mid, budget="medium")
+        out.append((spec, tidy(m), f"{CORD_METHOD}; this block {note}"))
     return out
 
 
-def derived_nerves(T: np.ndarray) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+def derived_nerves(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
     cfg = yaml.safe_load((CONFIG / "derived_nerves.yaml").read_text())
     out = []
     for e in cfg["nerves"]:
         for side, pts in e["sides"].items():
             mid = f"{e['id']}-{side}"
-            P = apply(T, np.array(pts, float))
+            P = apply(T, np.array(pts, float), pc)
             curve = catmull_rom(P, per_segment=14)
             m = tube(curve, e["radius_mm"], sections=16)
             if len(m.faces) > e.get("budget", 4000):
@@ -261,11 +428,11 @@ def fourth_ventricle_plexus() -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
 def main(argv=None) -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); a = ap.parse_args(argv)
     only = set(a.only.split(",")) if a.only else None
-    T = ztomni()
+    T, pc = ztomni()
     from .atlas_meshes import record
     items: list[tuple[MeshSpec, trimesh.Trimesh, str]] = []
-    items += cord_segments(T)
-    items += derived_nerves(T)
+    items += cord_segments(T, pc)
+    items += derived_nerves(T, pc)
     items += fourth_ventricle_plexus()
     meshes_json = WORK / "meshes.json"
     existing = {m["id"]: m for m in json.loads(meshes_json.read_text())} if meshes_json.exists() else {}

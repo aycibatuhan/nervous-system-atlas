@@ -1,151 +1,158 @@
 {
-  "kind": "structure",
-  "id": "subthalamic-nucleus",
-  "name": "Subthalamic nucleus",
-  "synonyms": [
-    "corpus Luysi",
-    "STN"
+ "kind": "structure",
+ "id": "subthalamic-nucleus",
+ "name": "Subthalamic nucleus",
+ "synonyms": [
+  "corpus Luysi",
+  "STN"
+ ],
+ "system": "basal-ganglia",
+ "meshIds": [
+  "subthalamic-nucleus-l",
+  "subthalamic-nucleus-r",
+  "subthalamic-nucleus-bsn-1-l",
+  "subthalamic-nucleus-bsn-1-r",
+  "subthalamic-nucleus-bsn-2-l",
+  "subthalamic-nucleus-bsn-2-r"
+ ],
+ "summary": "A small lens-shaped nucleus below the thalamus, above the substantia nigra and medial to the internal capsule as it becomes the crus. It is the only glutamatergic (excitatory) nucleus of the basal ganglia: it receives inhibitory input from the external pallidum in the indirect pathway and direct cortical input (the hyperdirect pathway), and drives the internal pallidum and nigral pars reticulata. Its destruction, classically by a lacunar infarct from posterior perforators, releases wild flinging movements of the opposite limbs (hemiballismus); its stimulation is the most widely used deep brain stimulation target for Parkinson disease.",
+ "anatomy": {
+  "location": "Ventral to the thalamus and zona incerta, dorsomedial to the internal capsule and crus cerebri, rostral and dorsolateral to the substantia nigra, at the mesodiencephalic junction; about 12 mm lateral to the midline and 4 mm below the AC–PC line.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "globus-pallidus (external segment)",
+    "note": "GABAergic indirect pathway"
+   },
+   {
+    "from": "cortex-premotor-sma and gyrus-precentral",
+    "note": "hyperdirect pathway"
+   }
   ],
-  "system": "basal-ganglia",
-  "meshIds": [
-    "subthalamic-nucleus-l",
-    "subthalamic-nucleus-r"
+  "efferents": [
+   {
+    "to": "globus-pallidus (internal segment)",
+    "note": "glutamatergic"
+   },
+   {
+    "to": "substantia-nigra (pars reticulata)"
+   }
   ],
-  "summary": "A small lens-shaped nucleus below the thalamus, above the substantia nigra and medial to the internal capsule as it becomes the crus. It is the only glutamatergic (excitatory) nucleus of the basal ganglia: it receives inhibitory input from the external pallidum in the indirect pathway and direct cortical input (the hyperdirect pathway), and drives the internal pallidum and nigral pars reticulata. Its destruction, classically by a lacunar infarct from posterior perforators, releases wild flinging movements of the opposite limbs (hemiballismus); its stimulation is the most widely used deep brain stimulation target for Parkinson disease.",
-  "anatomy": {
-    "location": "Ventral to the thalamus and zona incerta, dorsomedial to the internal capsule and crus cerebri, rostral and dorsolateral to the substantia nigra, at the mesodiencephalic junction; about 12 mm lateral to the midline and 4 mm below the AC–PC line.",
-    "subdivisions": []
-  },
-  "connections": {
-    "afferents": [
-      {
-        "from": "globus-pallidus (external segment)",
-        "note": "GABAergic indirect pathway"
-      },
-      {
-        "from": "cortex-premotor-sma and gyrus-precentral",
-        "note": "hyperdirect pathway"
-      }
-    ],
-    "efferents": [
-      {
-        "to": "globus-pallidus (internal segment)",
-        "note": "glutamatergic"
-      },
-      {
-        "to": "substantia-nigra (pars reticulata)"
-      }
-    ],
-    "pathways": [
-      "pathway-basal-ganglia-loops"
-    ]
-  },
-  "function": "Excitatory driver of the basal ganglia output nuclei; braking and stopping of movement, selection among competing motor programs, and (through limbic and associative subregions) impulse control and mood.",
-  "bloodSupply": {
-    "arteries": [
-      "arteries-thalamoperforating",
-      "artery-pcom",
-      "artery-anterior-choroidal"
-    ],
-    "territories": [
-      "territory-pca",
-      "territory-anterior-choroidal"
-    ]
-  },
-  "imaging": {
-    "bestView": [
-      {
-        "plane": "axial",
-        "mni": {
-          "x": 12,
-          "y": -12,
-          "z": -6
-        },
-        "label": "subthalamic nucleus dorsomedial to the internal capsule at the mesodiencephalic junction"
-      },
-      {
-        "plane": "coronal",
-        "mni": {
-          "x": 12,
-          "y": -12,
-          "z": -6
-        },
-        "label": "STN above the substantia nigra, below the thalamus"
-      }
-    ],
-    "normalAppearance": "A small hypointense (iron) oval on T2 and SWI dorsolateral to the red nucleus and above the nigra, best seen on coronal or axial 3 T images; it is the target on stereotactic planning MRI. The MASSP mesh in this atlas outlines it.",
-    "pathology": [
-      {
-        "pathology": "Subthalamic infarct with hemiballismus",
-        "modality": "MRI",
-        "finding": "Small restricted-diffusion lesion in the subthalamic region from a posterior perforator.",
-        "sequence": "DWI"
-      },
-      {
-        "pathology": "Deep brain stimulation electrode",
-        "modality": "CT",
-        "finding": "Electrode tip in the dorsolateral STN on post-operative CT fused to MRI.",
-        "sequence": "CT non-contrast"
-      },
-      {
-        "pathology": "Non-ketotic hyperglycemia",
-        "modality": "MRI",
-        "finding": "Striatal T1 hyperintensity with hemichorea-hemiballismus (the striatum rather than the STN).",
-        "sequence": "T1"
-      }
-    ],
-    "sequenceOfChoice": "DWI; T2/SWI for targeting"
-  },
-  "clinical": {
-    "lesionEffects": [
-      {
-        "deficit": "Hemiballismus: violent flinging movements of the contralateral limbs",
-        "side": "contralateral",
-        "mechanism": "Loss of subthalamic excitation of the internal pallidum reduces inhibition of the thalamus"
-      },
-      {
-        "deficit": "Improvement of bradykinesia, tremor and rigidity with stimulation",
-        "side": "contralateral",
-        "mechanism": "Suppression of the overactive nucleus in Parkinson disease"
-      },
-      {
-        "deficit": "Impulse control disorders, mood change, weight gain after stimulation",
-        "side": "n/a",
-        "mechanism": "Spread to limbic and associative subregions"
-      }
-    ],
-    "examination": [
-      "Observe for large-amplitude proximal flinging movements, worse with action",
-      "Cardinal parkinsonian signs on and off stimulation",
-      "Mood, impulsivity and gambling history in stimulated patients"
-    ],
-    "syndromes": [
-      "syn-hemiballismus",
-      "syn-parkinsonism"
-    ],
-    "pearls": [
-      "Hemiballismus is a subthalamic lesion until proven otherwise; it usually settles over weeks and responds to dopamine blockers",
-      "The STN is the brake: lose it and the limb flies, stimulate it and the parkinsonian brake is released"
-    ]
-  },
-  "pitfalls": [],
-  "citations": [
-    {
-      "ref": "sp-subthalamic-nucleus",
-      "section": "Structure and Function"
+  "pathways": [
+   "pathway-basal-ganglia-loops"
+  ]
+ },
+ "function": "Excitatory driver of the basal ganglia output nuclei; braking and stopping of movement, selection among competing motor programs, and (through limbic and associative subregions) impulse control and mood.",
+ "bloodSupply": {
+  "arteries": [
+   "arteries-thalamoperforating",
+   "artery-pcom",
+   "artery-anterior-choroidal"
+  ],
+  "territories": [
+   "territory-pca",
+   "territory-anterior-choroidal"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "x": 12,
+     "y": -12,
+     "z": -6
     },
-    {
-      "ref": "sp-basal-ganglia",
-      "section": "Structure and Function"
+    "label": "subthalamic nucleus dorsomedial to the internal capsule at the mesodiencephalic junction"
+   },
+   {
+    "plane": "coronal",
+    "mni": {
+     "x": 12,
+     "y": -12,
+     "z": -6
     },
-    {
-      "ref": "sp-extrapyramidal-system",
-      "section": "Structure and Function"
-    }
+    "label": "STN above the substantia nigra, below the thalamus"
+   }
   ],
-  "tags": [
-    "basal-ganglia"
+  "normalAppearance": "A small hypointense (iron) oval on T2 and SWI dorsolateral to the red nucleus and above the nigra, best seen on coronal or axial 3 T images; it is the target on stereotactic planning MRI. The MASSP mesh in this atlas outlines it.",
+  "pathology": [
+   {
+    "pathology": "Subthalamic infarct with hemiballismus",
+    "modality": "MRI",
+    "finding": "Small restricted-diffusion lesion in the subthalamic region from a posterior perforator.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Deep brain stimulation electrode",
+    "modality": "CT",
+    "finding": "Electrode tip in the dorsolateral STN on post-operative CT fused to MRI.",
+    "sequence": "CT non-contrast"
+   },
+   {
+    "pathology": "Non-ketotic hyperglycemia",
+    "modality": "MRI",
+    "finding": "Striatal T1 hyperintensity with hemichorea-hemiballismus (the striatum rather than the STN).",
+    "sequence": "T1"
+   }
   ],
-  "status": "draft",
-  "latin": "Nucleus subthalamicus"
+  "sequenceOfChoice": "DWI; T2/SWI for targeting"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Hemiballismus: violent flinging movements of the contralateral limbs",
+    "side": "contralateral",
+    "mechanism": "Loss of subthalamic excitation of the internal pallidum reduces inhibition of the thalamus"
+   },
+   {
+    "deficit": "Improvement of bradykinesia, tremor and rigidity with stimulation",
+    "side": "contralateral",
+    "mechanism": "Suppression of the overactive nucleus in Parkinson disease"
+   },
+   {
+    "deficit": "Impulse control disorders, mood change, weight gain after stimulation",
+    "side": "n/a",
+    "mechanism": "Spread to limbic and associative subregions"
+   }
+  ],
+  "examination": [
+   "Observe for large-amplitude proximal flinging movements, worse with action",
+   "Cardinal parkinsonian signs on and off stimulation",
+   "Mood, impulsivity and gambling history in stimulated patients"
+  ],
+  "syndromes": [
+   "syn-hemiballismus",
+   "syn-parkinsonism"
+  ],
+  "pearls": [
+   "Hemiballismus is a subthalamic lesion until proven otherwise; it usually settles over weeks and responds to dopamine blockers",
+   "The STN is the brake: lose it and the limb flies, stimulate it and the parkinsonian brake is released"
+  ]
+ },
+ "pitfalls": [],
+ "citations": [
+  {
+   "ref": "sp-subthalamic-nucleus",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-basal-ganglia",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-extrapyramidal-system",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "oa-bianciardi-brainstem-nuclei-template"
+  }
+ ],
+ "tags": [
+  "basal-ganglia"
+ ],
+ "status": "draft",
+ "latin": "Nucleus subthalamicus"
 }

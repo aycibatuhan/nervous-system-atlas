@@ -1,0 +1,158 @@
+{
+ "kind": "structure",
+ "id": "raphe-pallidus",
+ "name": "Raphe pallidus nucleus",
+ "synonyms": [
+  "RPa",
+  "nucleus raphes pallidus",
+  "B1 group"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "raphe-pallidus"
+ ],
+ "summary": "The raphe pallidus is the most ventral of the midline serotonergic nuclei, a thin sheet lying just behind the pyramids in the rostral and middle medulla. It is the sympathetic premotor nucleus for thermoregulation: neurons here receive the hypothalamic command for heat production and relay it to the sympathetic preganglionic neurons of the thoracic cord that drive brown adipose tissue, cutaneous vasoconstriction, shivering and the tachycardia of a febrile response. The pathway from the preoptic hypothalamus through the raphe pallidus is the final common route by which fever, cold defense and psychological stress raise body temperature, which is why it is invoked in explanations of stress-induced hyperthermia and of the autonomic storms seen after brain injury.",
+ "anatomy": {
+  "location": "Midline of the medulla immediately dorsal to the pyramids and ventral to the raphe magnus, from the pontomedullary junction down to the middle of the medulla, spreading a little laterally over the pyramidal surface. The inferior olivary nuclei lie dorsolaterally and the medial lemnisci behind. Its blood supply is from median perforators of the vertebral and anterior spinal arteries, the same vessels that serve the pyramids, so a medial medullary infarct can include it.",
+  "subdivisions": []
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Median preoptic and dorsomedial hypothalamus",
+    "via": "descending thermoregulatory command"
+   },
+   {
+    "from": "Periaqueductal gray",
+    "via": "descending defensive fibers"
+   },
+   {
+    "from": "Nucleus of the solitary tract",
+    "via": "visceral afferent relay"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Intermediolateral cell column of the thoracic cord",
+    "via": "raphespinal sympathetic premotor fibers"
+   },
+   {
+    "to": "Spinal ventral horn",
+    "via": "shivering-related serotonergic drive"
+   },
+   {
+    "to": "Spinal dorsal horn",
+    "via": "descending nociceptive modulation"
+   }
+  ],
+  "pathways": [
+   "pathway-oculosympathetic"
+  ]
+ },
+ "function": "Sympathetic premotor neurons of the raphe pallidus receive a disynaptic command from the median preoptic and dorsomedial hypothalamus that carries both the thermoregulatory set point and the prostaglandin-mediated signal of fever, and they project directly to the intermediolateral cell column of the thoracic spinal cord. Their firing raises sympathetic outflow to brown adipose tissue, producing non-shivering thermogenesis, constricts cutaneous vessels to conserve heat, recruits shivering through connections with somatic motor pathways and accelerates the heart. The same neurons are engaged by psychological stress, producing the rise in core temperature and heart rate that accompanies acute anxiety, and by inflammatory signals reaching the brain through prostaglandin E2. Serotonergic and glutamatergic subpopulations are intermingled, and the descending projection also modulates spinal nociception in parallel with the raphe magnus. Cooling the body, blocking prostaglandin synthesis or interrupting this pathway all reduce fever by acting at successive points along the same chain.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "raphe-pallidus"
+    },
+    "label": "raphe pallidus behind the pyramids in the midline medulla"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "raphe-pallidus"
+    },
+    "label": "ventral midline of the medulla"
+   }
+  ],
+  "normalAppearance": "Not visible on clinical MRI; the landmark is the midline immediately behind the medullary pyramids on axial images of the rostral medulla.",
+  "pathology": [
+   {
+    "pathology": "Paroxysmal sympathetic hyperactivity after brain injury",
+    "modality": "MRI",
+    "finding": "Diffuse axonal injury or hypoxic damage with episodic fever, tachycardia, hypertension, sweating and posturing; the medulla itself often looks normal.",
+    "sequence": "SWI"
+   },
+   {
+    "pathology": "Medial medullary infarct",
+    "modality": "MRI",
+    "finding": "Paramedian restricted diffusion behind the pyramids with contralateral hemiparesis and sometimes disturbed thermoregulation.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Central fever",
+    "modality": "CT",
+    "finding": "No infective source with a temperature that does not follow the usual diurnal pattern in a patient with brainstem or hypothalamic injury.",
+    "sequence": "CT non-contrast"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Impaired thermoregulation with poikilothermia",
+    "side": "bilateral",
+    "mechanism": "Loss of the descending sympathetic premotor drive to brown fat and skin vessels"
+   },
+   {
+    "deficit": "Absent shivering and cutaneous vasoconstriction in the cold",
+    "side": "bilateral",
+    "mechanism": "Interruption of the hypothalamic-raphe-spinal pathway"
+   },
+   {
+    "deficit": "Episodic hyperthermia and tachycardia after brain injury",
+    "side": "bilateral",
+    "mechanism": "Disinhibited sympathetic premotor activity"
+   }
+  ],
+  "examination": [
+   "Measure core temperature and compare it with the ambient temperature and the skin",
+   "Look for sweating, skin color and shivering during a temperature change",
+   "Record heart rate and blood pressure during episodes of fever without infection"
+  ],
+  "syndromes": [
+   "syn-dejerine-medial-medullary",
+   "syn-hypothalamic-syndromes"
+  ],
+  "pearls": [
+   "Fever is produced, not merely permitted: the hypothalamus commands and the raphe pallidus executes",
+   "A febrile patient with no source and a brainstem injury may have central fever from this pathway",
+   "Stress raises core temperature through the same neurons that raise it in infection"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-bianciardi-brainstem-nuclei-template"
+  },
+  {
+   "ref": "sp-nucleus-raphe"
+  },
+  {
+   "ref": "sp-autonomic-nervous-system"
+  }
+ ],
+ "tags": [
+  "thermoregulation",
+  "fever",
+  "sympathetic",
+  "raphe"
+ ],
+ "status": "draft",
+ "subsystem": "medulla",
+ "parent": "brainstem"
+}

@@ -1,7 +1,16 @@
 """Phase 6: Z-Anatomy meshes (exported by blender/export_zanatomy.py) -> MNI registration -> glb records.
 
 atlas-zanatomy-register : landmark affine (Z-Anatomy meters, +x left, +y posterior, +z up) -> MNI RAS mm
-atlas-zanatomy-meshes   : apply the transform, decimate, export glb, merge records into work/meshes.json
+atlas-zanatomy-midline  : fit the sub-cranial midline correction (see midline.py) into the same config
+atlas-zanatomy-meshes   : apply the transform + correction, decimate, export glb, merge records into work/meshes.json
+
+The affine is fitted on brain landmarks only, so below the skull base it is unconstrained in two ways: its
+x-from-z shear leaves the mapped midline drifting off MNI x = 0 (-1.2 mm at C7, -4.2 mm at the conus, -12 mm
+at the ankle), and its pitch leaves the brainstem falling behind the MNI one from the pons downwards (-8 mm at
+the pontomedullary junction, -23 mm at the cervicomedullary junction, where the cord used to emerge behind the
+occiput).  Every vertex therefore goes through `midline.correct` after the affine.  The x weight is exactly
+zero at and above the foramen magnum and the y ramp is exactly zero at and above the pontomesencephalic
+junction, so the midbrain, diencephalon and forebrain are bit-identical to the pure-affine result.
 """
 from __future__ import annotations
 
@@ -12,6 +21,7 @@ import numpy as np
 import trimesh
 import yaml
 
+from . import midline
 from .catalog import LOD_FACES, LOD_MIN_FACES, MeshSpec
 from .meshing import export_glb, export_with_lod
 from .paths import CONFIG, MESHES, WORK
@@ -78,13 +88,25 @@ def main_register(argv=None) -> None:
     out = {"method": "landmark-affine", "matrix": np.round(full, 6).tolist(), "metrics": metrics,
            "landmarks": {n: {"residual_mm": round(float(r), 1), "used": bool(k)} for n, r, k in zip(names, res, keep)},
            "notes": "Z-Anatomy world meters (+x subject left, +y posterior, +z up) -> MNI152NLin2009cAsym RAS mm; 12-dof affine from landmark centroids."}
-    (CONFIG / "zanatomy_to_mni.json").write_text(json.dumps(out, indent=1))
+    p = CONFIG / "zanatomy_to_mni.json"
+    if p.exists():
+        old = json.loads(p.read_text()).get("post_correction")
+        if old is not None:     # the midline correction is fitted against the matrix: keep it, but it is now stale
+            out["post_correction"] = old | {"stale": True}
+            print("  note: the matrix changed -- re-run atlas-zanatomy-midline to refit post_correction")
+    p.write_text(json.dumps(out, indent=1))
     print(json.dumps(metrics)); print("wrote", CONFIG / "zanatomy_to_mni.json")
 
 
 def main_meshes(argv=None) -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); a = ap.parse_args(argv)
-    T = np.array(json.loads((CONFIG / "zanatomy_to_mni.json").read_text())["matrix"])
+    zcfg = json.loads((CONFIG / "zanatomy_to_mni.json").read_text())
+    T = np.array(zcfg["matrix"])
+    pc = zcfg.get("post_correction")
+    if pc is None:
+        print("  note: no post_correction in zanatomy_to_mni.json -- run atlas-zanatomy-midline first")
+    elif pc.get("stale"):
+        raise SystemExit("post_correction is marked stale (the affine was refitted): run atlas-zanatomy-midline")
     cfg = yaml.safe_load((CONFIG / "zanatomy_selection.yaml").read_text())
     report = {r["id"]: r for r in json.loads((ZW / "export_report.json").read_text())}
     from .atlas_meshes import record
@@ -99,7 +121,7 @@ def main_meshes(argv=None) -> None:
             p = ZW / "objs" / f"{mid}.ply"
             if not p.exists(): continue
             m = trimesh.load(str(p), force="mesh", process=True)
-            m.apply_transform(T)
+            m.vertices = midline.transform(np.asarray(m.vertices, float), T, pc)
             m.update_faces(m.nondegenerate_faces()); m.remove_unreferenced_vertices()
             if len(m.faces) > 200:
                 trimesh.smoothing.filter_taubin(m, lamb=0.5, nu=0.53, iterations=6)

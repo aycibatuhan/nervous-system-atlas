@@ -1,0 +1,187 @@
+{
+ "kind": "structure",
+ "id": "reticular-formation-medullary-inferior",
+ "name": "Inferior medullary reticular formation",
+ "synonyms": [
+  "iMRt",
+  "caudal medullary reticular formation",
+  "ventromedial medulla"
+ ],
+ "system": "brainstem",
+ "meshIds": [
+  "reticular-formation-medullary-inferior-l",
+  "reticular-formation-medullary-inferior-r",
+  "reticular-formation-medullary-inferior-lateral-l",
+  "reticular-formation-medullary-inferior-lateral-r",
+  "reticular-formation-medullary-inferior-medial-l",
+  "reticular-formation-medullary-inferior-medial-r"
+ ],
+ "summary": "The inferior medullary reticular formation is the caudal half of the medullary reticular core, the field that lies between the inferior olive in front and the dorsal nuclei behind and that runs down to become continuous with the reticular gray of the cervical cord. Its medial, large-celled part gives rise to the lateral reticulospinal tract, which inhibits extensor tone and shapes posture and locomotion, while its lateral, small-celled part organizes the bulbar motor nuclei. It also contains the ventromedial region through which REM sleep atonia is imposed on spinal motor neurons, and it holds the caudal parts of the respiratory and cardiovascular networks, so lesions here mix disorders of posture, breathing and blood pressure. The 7 T atlas separates a medial and a lateral part, offered here as hidden subdivisions.",
+ "anatomy": {
+  "location": "Central tegmentum of the caudal medulla from about the level of the obex down to the cervicomedullary junction, between the inferior olivary nucleus and pyramid in front and the hypoglossal, vagal and gracile and cuneate nuclei behind, with the spinal trigeminal complex laterally and the midline raphe medially. It is continuous rostrally with the superior medullary reticular formation and caudally with the intermediate gray of the upper cervical cord. Median and lateral perforating branches of the vertebral artery and the posterior inferior cerebellar artery supply it.",
+  "subdivisions": [
+   {
+    "name": "Medial part (iMRtm)",
+    "note": "Large-celled column giving rise to the lateral reticulospinal tract and to the REM atonia pathway"
+   },
+   {
+    "name": "Lateral part (iMRtl)",
+    "note": "Small-celled premotor field for the bulbar motor nuclei and the reflexes of the airway"
+   }
+  ]
+ },
+ "connections": {
+  "afferents": [
+   {
+    "from": "Cerebral cortex",
+    "via": "corticoreticular fibers"
+   },
+   {
+    "from": "Spinal cord",
+    "via": "spinoreticular fibers"
+   },
+   {
+    "from": "Subcoeruleus and pontine reticular formation",
+    "via": "descending REM atonia drive"
+   },
+   {
+    "from": "Cerebellar fastigial nucleus and vestibular nuclei",
+    "via": "fastigioreticular and vestibuloreticular fibers"
+   }
+  ],
+  "efferents": [
+   {
+    "to": "Spinal cord",
+    "via": "lateral reticulospinal tract"
+   },
+   {
+    "to": "Spinal motor neurons",
+    "via": "glycinergic and GABAergic atonia pathway"
+   },
+   {
+    "to": "Bulbar motor nuclei",
+    "via": "premotor reticular fibers"
+   },
+   {
+    "to": "Thalamus and basal forebrain",
+    "via": "ascending arousal collaterals"
+   }
+  ],
+  "pathways": [
+   "pathway-reticulospinal",
+   "pathway-lateral-corticospinal"
+  ]
+ },
+ "function": "The medial column of large cells here gives rise to the lateral reticulospinal tract, which descends in the lateral funiculus and inhibits extensor motor neurons and gamma motor neurons; with the medial reticulospinal tract from the pons it forms the pair of systems whose imbalance explains decerebrate and decorticate posturing and much of the spasticity that follows a hemispheric lesion, since the corticoreticular fibers that drive it run in the internal capsule and corona radiata. The ventromedial part receives the pontine subcoeruleus and contains the glycinergic and GABAergic premotor neurons that produce REM sleep atonia and, when abnormally recruited in waking, cataplexy. Lateral small-celled neurons coordinate the pharyngeal, laryngeal and tongue muscles for swallowing, coughing and vomiting. Ascending collaterals contribute to arousal, and spinoreticular afferents carrying diffuse nociceptive information terminate throughout, giving this region a role in the affective response to pain and in the reflex cardiovascular and respiratory answer to injury.",
+ "bloodSupply": {
+  "arteries": [
+   "artery-vertebral",
+   "anterior-spinal-artery",
+   "artery-pica"
+  ],
+  "territories": [
+   "territory-basilar"
+  ]
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "axial",
+    "mni": {
+     "meshId": "reticular-formation-medullary-inferior-l"
+    },
+    "label": "reticular core of the caudal medulla behind the olive"
+   },
+   {
+    "plane": "sagittal",
+    "mni": {
+     "meshId": "reticular-formation-medullary-inferior-r"
+    },
+    "label": "medullary tegmentum from the obex to the cervicomedullary junction"
+   }
+  ],
+  "normalAppearance": "The medullary tegmentum is homogeneous intermediate signal between the olives and the dorsal column nuclei on axial T2; the reticular formation is defined by position and is not separately visible at clinical field strength.",
+  "pathology": [
+   {
+    "pathology": "Medullary infarct",
+    "modality": "MRI",
+    "finding": "Restricted diffusion in the medial or lateral medulla with a mixture of long-tract, cranial nerve and autonomic signs; small lesions are easily missed on early DWI.",
+    "sequence": "DWI"
+   },
+   {
+    "pathology": "Cervicomedullary compression",
+    "modality": "MRI",
+    "finding": "Chiari malformation, foramen magnum meningioma or basilar invagination distorting the lower medulla with central apnea, syncope and quadriparesis.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Narcolepsy with cataplexy",
+    "modality": "MRI",
+    "finding": "Structural imaging is normal; the atonia circuit of the ventromedial medulla is inappropriately activated during waking.",
+    "sequence": "T2"
+   }
+  ]
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Decerebrate posturing and altered tone",
+    "side": "bilateral",
+    "mechanism": "Imbalance between medial and lateral reticulospinal drive"
+   },
+   {
+    "deficit": "Cataplexy and REM sleep atonia intruding into waking",
+    "side": "bilateral",
+    "mechanism": "Inappropriate activation of ventromedial inhibitory premotor neurons"
+   },
+   {
+    "deficit": "Irregular ataxic breathing",
+    "side": "bilateral",
+    "mechanism": "Damage to the caudal respiratory network"
+   },
+   {
+    "deficit": "Labile blood pressure",
+    "side": "bilateral",
+    "mechanism": "Interruption of medullary cardiovascular control"
+   }
+  ],
+  "examination": [
+   "Posture at rest and to noxious stimulus, then tone in the limbs",
+   "Breathing pattern watched over a full minute for irregularity",
+   "Ask about knee-buckling with laughter or surprise when cataplexy is suspected"
+  ],
+  "syndromes": [
+   "syn-wallenberg-lateral-medullary",
+   "syn-dejerine-medial-medullary",
+   "syn-tonsillar-herniation"
+  ],
+  "pearls": [
+   "Spasticity after a capsular stroke is largely a reticulospinal phenomenon, not a pyramidal one",
+   "Ataxic, irregular breathing localizes to the medulla and warns of impending arrest",
+   "The same medullary neurons that paralyze you in REM sleep produce cataplexy when they fire while you are awake"
+  ]
+ },
+ "pitfalls": [
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+ ],
+ "citations": [
+  {
+   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
+  },
+  {
+   "ref": "sp-reticular-formation"
+  },
+  {
+   "ref": "sp-medulla-oblongata"
+  }
+ ],
+ "tags": [
+  "reticulospinal",
+  "posture",
+  "atonia",
+  "reticular formation"
+ ],
+ "status": "draft",
+ "subsystem": "medulla",
+ "parent": "brainstem"
+}

@@ -6,7 +6,7 @@ export type PresetName = 'lateral-r' | 'lateral-l' | 'medial-r' | 'medial-l' | '
 export type ContentTab = 'overview' | 'anatomy' | 'connections' | 'function' | 'blood' | 'imaging' | 'clinical' | 'pitfalls' | 'citations';
 
 export interface AppState {
-  loaded: { manifest: boolean; volume: boolean; labels: boolean; content: boolean };
+  loaded: { manifest: boolean; volume: boolean; labels: boolean; content: boolean; cord: boolean };
   visibleSystems: ReadonlySet<SystemId>;
   hiddenStructures: ReadonlySet<string>;     // per-mesh overrides (hidden although its system is visible)
   shownStructures: ReadonlySet<string>;      // per-mesh overrides (shown although its system is hidden)
@@ -26,11 +26,12 @@ export interface AppState {
   camera: PresetName | 'custom';
   showNc: boolean;
   quality: 'low' | 'high';
+  cordMri: boolean;              // show the PAM50 cord MRI on the slices (loads it on demand)
 }
 
 export function initialState(): AppState {
   return {
-    loaded: { manifest: false, volume: false, labels: false, content: false },
+    loaded: { manifest: false, volume: false, labels: false, content: false, cord: false },
     visibleSystems: new Set<SystemId>(),
     hiddenStructures: new Set(),
     shownStructures: new Set(),
@@ -50,5 +51,6 @@ export function initialState(): AppState {
     camera: 'lateral-l',
     showNc: true,
     quality: 'low',
+    cordMri: false,
   };
 }
