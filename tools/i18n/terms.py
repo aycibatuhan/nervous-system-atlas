@@ -27,6 +27,12 @@ Table columns (one row per atlas entry):
   tna tna_la tna_en tna_path               best TNA term
   wd ta98 wd_en wd_tr wd_tr_aliases        Wikidata item, its TA98 code, English and Turkish labels
   trwiki trwiki_redirects                  Turkish Wikipedia article and the titles that redirect to it
+  relation                                 exact (same concept, matched by its Latin or English term), synonym
+                                           (matched through a synonym), narrower (the FIPAT term is one component
+                                           of a broader atlas entry: a pathway, an "A and B" entry), broader (the
+                                           FIPAT term encompasses an atlas subdivision such as "X, anterior
+                                           division"), fuzzy, related (no single FIPAT concept; related terms are
+                                           listed in alt) or none
   match                                    how each source was matched: latin / en / syn / fuzzy
   alt                                      other candidates the reviewer may prefer (source:id "term")
   note                                     ambiguity or disagreement flags
@@ -353,33 +359,43 @@ PLURALS = [("bodies", "body"), ("arteries", "artery"), ("nuclei", "nucleus"), ("
            ("lobules", "lobule"), ("cisterns", "cistern"), ("spaces", "space"), ("granulations", "granulation")]
 
 
-def name_variants(name: str) -> list[str]:
-    """Extra keys for an atlas name: without a bracketed qualifier, without a leading Left/Right, the parts of
-    "A and B" / "A, B part" names, and the singular of a plural ("Mammillary bodies" -> "Mammillary body")."""
-    out = [name]
-    bare = re.sub(r"\s*\(.*?\)", "", name).strip()
-    if bare != name:
-        out.append(bare)
-    for v in list(out):
+def variant_kinds(name: str) -> list[tuple[str, str]]:
+    """Keys for an atlas name with what each one is: the name itself ("name": also without a bracketed
+    qualifier or a leading Left/Right), one half of an "A and B" name ("part"), the head of an "X, qualifier"
+    name ("head"); singulars ("Mammillary bodies" -> "Mammillary body") keep the kind of the form they came from."""
+    out: list[tuple[str, str]] = [(name, "name")]
+    have = {name}
+
+    def add(v: str, kind: str) -> None:
+        if v and v not in have:
+            have.add(v)
+            out.append((v, kind))
+
+    add(re.sub(r"\s*\(.*?\)", "", name).strip(), "name")
+    for v, _ in list(out):
         m = re.match(r"^(left|right)\s+(.+)$", v, re.I)
-        if m and m.group(2) not in out:
-            out.append(m.group(2))
-    for v in list(out):
+        if m:
+            add(m.group(2), "name")
+    for v, _ in list(out):
         if " and " in v and ":" not in v:
             a, b = [x.strip() for x in v.split(" and ", 1)]
-            if len(a.split()) == 1 and len(b.split()) >= 2:
+            if len(a.split()) == 1 and len(b.split()) >= 2:      # "Superior and inferior petrosal sinuses"
                 a = a + " " + " ".join(b.split()[1:])
-            out += [x for x in (a, b) if len(x.split()) >= 2 and x not in out]
+            for x in (a, b):
+                if len(x.split()) >= 2:
+                    add(x, "part")
         m = re.match(r"^(.+?),\s+(.+)$", v)
-        if m and m.group(1) not in out:
-            out.append(m.group(1))
-    for v in list(out):
+        if m:
+            add(m.group(1), "head")
+    for v, kind in list(out):
         for pl, sg in PLURALS:
             if v.lower().endswith(" " + pl) or v.lower() == pl:
-                w = v[: len(v) - len(pl)] + sg
-                if w not in out:
-                    out.append(w)
+                add(v[: len(v) - len(pl)] + sg, kind)
     return out
+
+
+def name_variants(name: str) -> list[str]:
+    return [v for v, _ in variant_kinds(name)]
 
 
 PARENT_ADJ = {"hypothalamus": "hypothalamic", "thalamus": "thalamic", "cerebellum": "cerebellar", "pons": "pontine",
@@ -402,6 +418,7 @@ class Index:
         self.latin: dict[tuple[str, str], str] = {}                              # (source, id) -> norm(Latin)
         self.path: dict[tuple[str, str], str] = {}                               # (source, id) -> norm(Latin + ancestors)
         self.links: dict[tuple[str, str], list[tuple[str, str]]] = defaultdict(list)   # (source, id) -> [(other, id)]
+        self.en_text: dict[tuple[str, str], str] = {}                            # nervous-system rows: norm(English + synonyms)
 
     def add(self, source: str, rid: str, field: str, term: str, fuzzy: bool = True):
         k = norm(term)
@@ -424,6 +441,8 @@ def build_index(ta2: list[dict], tna: list[dict], wd: dict[str, dict]) -> Index:
             rid = str(r["id"])
             ix.chapter[(src, rid)] = r["chapter"]
             ix.latin[(src, rid)] = norm(r["la"])
+            if r["chapter"].startswith("14") or (src == "tna" and not r["chapter"].startswith("3")):
+                ix.en_text[(src, rid)] = norm(" ".join([r["en_uk"], r["en_us"]] + r["en_syn"]))
             ix.add(src, rid, "latin", r["la"], fuzzy=False)
             for s in r["la_syn"]:
                 ix.add(src, rid, "latin-syn", s, fuzzy=False)
@@ -467,28 +486,28 @@ FIELD_RANK = {"latin": 0, "en": 1, "latin-syn": 2, "syn": 3, "other": 4, "fuzzy"
 
 def candidates(entry: dict, ix: Index) -> dict[str, list[dict]]:
     """Per source, candidates ordered by match quality: [{'id','field','via','score'}]."""
-    queries: list[tuple[str, str]] = []                      # (our text, our field)
-    for lat in re.split(r"\s*;\s*", entry.get("latin") or ""):
-        if lat:
-            queries.append((re.sub(r"\s*\(.*?\)", "", lat), "latin"))
-    for v in name_variants(entry["name"]):
-        queries.append((v, "name"))
+    queries: list[tuple[str, str, str]] = []                 # (our text, our field, kind of key)
+    lats = [x for x in re.split(r"\s*;\s*", entry.get("latin") or "") if x]
+    for k, lat in enumerate(lats):
+        queries.append((re.sub(r"\s*\(.*?\)", "", lat), "latin", "latin" if len(lats) == 1 else "part"))
+    for v, kind in variant_kinds(entry["name"]):
+        queries.append((v, "name", kind))
     parent = entry.get("parent_name") or ""
     if parent and len(entry["name"].split()) <= 3:        # "Dorsomedial nucleus" under "Hypothalamus"
         for v in name_variants(entry["name"]):
             for pv in name_variants(parent):
-                queries.append((f"{v} of {pv.lower()}", "name"))
-                queries.append((f"{v} of the {pv.lower()}", "name"))
-                queries.append((f"{pv.lower()} {v.lower()}", "name"))
+                queries.append((f"{v} of {pv.lower()}", "name", "name"))
+                queries.append((f"{v} of the {pv.lower()}", "name", "name"))
+                queries.append((f"{pv.lower()} {v.lower()}", "name", "name"))
                 adj = PARENT_ADJ.get(norm(pv))
                 if adj and len(v.split()) >= 2:            # "Dorsomedial hypothalamic nucleus"
                     w = v.split()
-                    queries.append((" ".join(w[:-1] + [adj, w[-1]]), "name"))
+                    queries.append((" ".join(w[:-1] + [adj, w[-1]]), "name", "name"))
     for s in entry.get("synonyms") or []:
         if not is_abbrev(s):
-            queries.append((s, "synonym"))
+            queries.append((s, "synonym", "synonym"))
     found: dict[str, dict[str, dict]] = defaultdict(dict)
-    for text, ours in queries:
+    for text, ours, qkind in queries:
         k = norm(text)
         for source, rid, field in ix.exact.get(k, []):
             # a Latin key must be matched by a Latin field, an English key by an English field
@@ -499,12 +518,12 @@ def candidates(entry: dict, ix: Index) -> dict[str, list[dict]]:
             f = field if ours != "synonym" else ("syn" if not field.startswith("latin") else "latin-syn")
             cur = found[source].get(rid)
             if cur is None or FIELD_RANK[f] < FIELD_RANK[cur["field"]]:
-                found[source][rid] = {"id": rid, "field": f, "via": text, "score": 1.0}
+                found[source][rid] = {"id": rid, "field": f, "via": text, "score": 1.0, "qkind": qkind}
     # fuzzy fallback on English keys, only when nothing exact turned up for that source
     for source in ("ta2", "tna", "wd"):
         if found[source]:
             continue
-        for text, ours in queries:
+        for text, ours, qkind in queries:
             if ours == "latin" or _looks_latin(text):
                 continue
             k = norm(text)
@@ -519,7 +538,8 @@ def candidates(entry: dict, ix: Index) -> dict[str, list[dict]]:
                         continue
                     cur = found[source].get(rid)
                     if cur is None or ratio > cur["score"]:
-                        found[source][rid] = {"id": rid, "field": "fuzzy", "via": f"{text} ~ {close}", "score": round(ratio, 3)}
+                        found[source][rid] = {"id": rid, "field": "fuzzy", "via": f"{text} ~ {close}", "score": round(ratio, 3),
+                                              "qkind": qkind}
     # a hit in one source nominates the linked concept in the others (TA2 <-> Wikidata by TA2 number,
     # TA2 <-> TNA by Latin term); candidates named by several sources come first
     for source in ("ta2", "tna", "wd"):
@@ -527,17 +547,17 @@ def candidates(entry: dict, ix: Index) -> dict[str, list[dict]]:
             for other, oid in ix.links.get((source, c["id"]), []):
                 if oid not in found[other]:
                     found[other][oid] = {"id": oid, "field": c["field"], "via": f"{source} {c['id']}", "score": c["score"] - 0.01,
-                                         "linked": True}
+                                         "linked": True, "qkind": c["qkind"]}
     for source in ("ta2", "tna", "wd"):
         for c in found[source].values():
-            c["support"] = sum(1 for other, oid in ix.links.get((source, c["id"]), []) if oid in found[other])
+            c["support"] = len({other for other, oid in ix.links.get((source, c["id"]), []) if oid in found[other]})
     ctx = {t[:7] for t in re.split(r"[-\s]+", (entry["id"] + " " + norm(entry.get("parent_name") or "")).lower()) if len(t) >= 6}
     out = {}
     for source, d in found.items():
         for c in d.values():
             path = ix.path.get((source, c["id"]), "")
             c["context"] = any(t in path for t in ctx)
-        cands = sorted(d.values(), key=lambda c: (-c["support"], FIELD_RANK[c["field"]], c.get("linked", False), -c["score"],
+        cands = sorted(d.values(), key=lambda c: (FIELD_RANK[c["field"]], -c["support"], c.get("linked", False), -c["score"],
                                                   not c["context"],
                                                   0 if ix.chapter.get((source, c["id"]), "").startswith(("14", "1:", "2:", "3:")) else 1,
                                                   int(re.sub(r"\D", "", c["id"]) or 0)))
@@ -564,6 +584,31 @@ LATIN_ENDINGS = re.compile(r"(us|um|is|ae|orum|arum|ii|alis|aris|icus|ica|icum|i
 
 def _numerals(k: str) -> set[str]:
     return {t for t in k.split() if re.fullmatch(r"[ivx]+[ab]?|\d+[a-z]?", t)}
+
+
+GENERIC = set("""pathway pathways territory territories circuit circuits reflex reflexes level levels division divisions
+nucleus nuclei tract tracts complex system systems artery arteries major minor cortex anterior posterior superior inferior
+medial lateral cerebral spinal cranial nerve nerves ventral dorsal central internal external group loops connections
+atlas surface segment segments region regions part parts horizontal vertical column columns light sensory motor
+lesion lesions primary secondary between versus""".split())
+
+
+def related_terms(entry: dict, ix: "Index", n: int = 4) -> list[tuple[str, str, int]]:
+    """Nervous-system FIPAT rows sharing the entry's distinctive words ("vestibulospinal", "olfactory"):
+    (source, id, shared-word count), best first."""
+    words = set()
+    for text in [entry["name"]] + list(entry.get("synonyms") or []):
+        for w in norm(re.sub(r"\s*\(.*?\)", "", text)).split():
+            if len(w) >= 6 and w not in GENERIC:
+                words.add(w)
+    if not words:
+        return []
+    hits: Counter = Counter()
+    for (source, rid), text in ix.en_text.items():
+        shared = sum(1 for w in words if re.search(rf"\b{w}\b", text))
+        if shared:
+            hits[(source, rid)] = shared
+    return [(src, rid, k) for (src, rid), k in sorted(hits.items(), key=lambda x: (-x[1], x[0][0], int(re.sub(r"\D", "", x[0][1]) or 0)))[:n]]
 
 
 def _looks_latin(s: str) -> bool:
@@ -608,7 +653,7 @@ def resolve(entry: dict, ix: Index, ta2_by: dict, tna_by: dict, wd: dict, wd_by_
     row = {"kind": entry["kind"], "id": entry["id"], "name": entry["name"], "latin": entry["latin"],
            "ta2": "", "ta2_la": "", "ta2_en": "", "ta2_path": "", "tna": "", "tna_la": "", "tna_en": "", "tna_path": "",
            "wd": "", "ta98": "", "wd_en": "", "wd_tr": "", "wd_tr_aliases": "", "trwiki": "", "trwiki_redirects": "",
-           "match": "", "alt": "", "note": "", "decision": ""}
+           "relation": "", "match": "", "alt": "", "note": "", "decision": ""}
     match, alt, notes = [], [], []
     best = {s: (c.get(s) or [None])[0] for s in ("ta2", "tna", "wd")}
     # cross-fill: a TA2 hit names the Wikidata item (P7173) and the TNA row with the same Latin term, and so on
@@ -665,10 +710,53 @@ def resolve(entry: dict, ix: Index, ta2_by: dict, tna_by: dict, wd: dict, wd_by_
         notes.append("fuzzy")
     if any(len(c.get(s) or []) > 1 and c[s][0]["field"] == c[s][1]["field"] for s in c):
         notes.append("ambiguous")
+    # one FIPAT term narrower than the other: "Tractus reticulospinalis anterior" (TA2) vs "Tractus reticulospinales" (TNA)
+    if row["ta2_la"] and row["tna_la"]:
+        a, b = {_stem(w) for w in norm(row["ta2_la"]).split()}, {_stem(w) for w in norm(row["tna_la"]).split()}
+        if b < a:
+            notes.append(f"TA2 {row['ta2']} is a subdivision of TNA {row['tna']}")
+        elif a < b:
+            notes.append(f"TNA {row['tna']} is a subdivision of TA2 {row['ta2']}")
     if not any(best.values()):
-        notes.append("no TA concept found")
+        rel = related_terms(entry, ix)
+        for src, rid, k in rel:
+            alt.append(f"related {src}:{rid} \"{_term(src, rid, ta2_by, tna_by, wd)}\"")
+        notes.append("no single TA concept" + ("; related terms in alt" if rel else ""))
+        row["relation"] = "related" if rel else "none"
+    else:
+        row["relation"] = relation(entry, best, ta2_by, tna_by, wd)
     row.update(match=" ".join(match), alt=" | ".join(alt), note="; ".join(notes))
     return row
+
+
+def _stem(w: str) -> str:
+    """Latin number/case endings folded: reticulospinales / reticulospinalis -> reticulospinal."""
+    return re.sub(r"(es|is|us|um|ae|orum|arum|i|a|e|s)$", "", w) if len(w) > 4 else w
+
+
+UMBRELLA = re.compile(r"pathway|circuit|reflex|loops|connections|complex|levels|\band\b|versus|:", re.I)
+
+
+def relation(entry: dict, best: dict, ta2_by, tna_by, wd) -> str:
+    """How the mapped concept relates to the atlas entry (see the module docstring)."""
+    src = next(s for s in ("ta2", "tna", "wd") if best.get(s))
+    b = best[src]
+    if b["field"] == "fuzzy":
+        return "fuzzy"
+    if b.get("qkind") == "part":
+        return "narrower"
+    if b.get("qkind") == "head":
+        return "broader"
+    r = ta2_by[b["id"]] if src == "ta2" else tna_by[b["id"]] if src == "tna" else None
+    mapped_en = (r["en_uk"] if r else wd[b["id"]].get("en", "")) or ""
+    mapped_la = (r["la"] if r else (wd[b["id"]].get("ta98_la") or [""])[0]) or ""
+    same = norm(mapped_en) == norm(re.sub(r"\s*\(.*?\)", "", entry["name"])) or \
+        (entry.get("latin") and norm(mapped_la) == norm(re.sub(r"\s*\(.*?\)", "", entry["latin"].split(";")[0])))
+    if (entry["kind"] == "pathways" or UMBRELLA.search(entry["name"])) and not same:
+        return "narrower"
+    if b["field"] in ("latin", "en") and not b.get("linked"):
+        return "exact"
+    return "synonym"
 
 
 def _term(source: str, rid: str, ta2_by, tna_by, wd) -> str:
@@ -702,10 +790,11 @@ def build_table() -> tuple[list[dict], dict]:
         "trwiki": sum(1 for r in rows if r["trwiki"]),
         "any_tr": sum(1 for r in rows if r["wd_tr"] or r["trwiki"]),
         "latin_any": sum(1 for r in rows if r["ta2_la"] or r["tna_la"]),
-        "none": sum(1 for r in rows if "no TA concept" in r["note"]),
+        "none": sum(1 for r in rows if "no single TA concept" in r["note"]),
         "fuzzy": sum(1 for r in rows if "fuzzy" in r["note"]),
         "ambiguous": sum(1 for r in rows if "ambiguous" in r["note"]),
         "latin_differs": sum(1 for r in rows if "our Latin differs" in r["note"]),
+        "relations": dict(Counter(r["relation"] for r in rows)),
         "sources": {"ta2_rows": len(ta2), "tna_rows": len(tna), "wd_items": len(wd),
                     "wd_tr_labels": sum(1 for it in wd.values() if "tr" in it),
                     "wd_trwiki": sum(1 for it in wd.values() if "trwiki" in it)},
@@ -743,7 +832,7 @@ def write_table(rows: list[dict], stats: dict) -> None:
          f"| with a Wikidata Turkish label | {stats['wd_tr']} |",
          f"| with a Turkish Wikipedia article | {stats['trwiki']} |",
          f"| with any Turkish name | {stats['any_tr']} |",
-         f"| no TA concept found (to be named by hand) | {stats['none']} |",
+         f"| no single TA concept (umbrella entries; related terms listed) | {stats['none']} |",
          f"| fuzzy matches to check | {stats['fuzzy']} |",
          f"| ambiguous (several equal candidates) | {stats['ambiguous']} |",
          f"| our `latin` differs from FIPAT | {stats['latin_differs']} |",
@@ -751,7 +840,16 @@ def write_table(rows: list[dict], stats: dict) -> None:
          f"Sources: TA2 {stats['sources']['ta2_rows']} rows, TNA {stats['sources']['tna_rows']} rows, "
          f"Wikidata {stats['sources']['wd_items']} items with a TA98/TA2 id "
          f"({stats['sources']['wd_tr_labels']} with a Turkish label, {stats['sources']['wd_trwiki']} with a Turkish article).", ""]
-    L += ["## Coverage by group", "", "| kind | group | entries | TA2 | TNA | Turkish name |", "|---|---|---|---|---|---|"]
+    L += ["## Relation of the mapped FIPAT term to the atlas entry", "", "| relation | rows | meaning |", "|---|---|---|"]
+    for rel, meaning in (("exact", "same concept, matched by its Latin or English term"),
+                         ("synonym", "same concept, matched through a synonym (or linked from another source)"),
+                         ("narrower", "the FIPAT term is one component of a broader atlas entry (a pathway, an \"A and B\" entry)"),
+                         ("broader", "the FIPAT term encompasses an atlas subdivision (\"X, anterior division\")"),
+                         ("fuzzy", "spelling-distance match, to be checked"),
+                         ("related", "no single FIPAT concept; related FIPAT terms are listed in `alt`"),
+                         ("none", "nothing found")):
+        L.append(f"| {rel} | {stats['relations'].get(rel, 0)} | {meaning} |")
+    L += ["", "## Coverage by group", "", "| kind | group | entries | TA2 | TNA | Turkish name |", "|---|---|---|---|---|---|"]
     rb = {r["id"]: r for r in rows}
     for (kind, sub), n in sorted(by_kind.items()):
         ids = [e["id"] for e in entries if e["kind"] == kind and e["subsystem"] == sub]
@@ -760,6 +858,9 @@ def write_table(rows: list[dict], stats: dict) -> None:
     L += ["", "## Rows to look at first", ""]
     for title, pred in (("Our Latin differs from FIPAT", lambda r: "our Latin differs" in r["note"]),
                         ("TA2 and TNA Latin differ", lambda r: "TA2/TNA Latin differ" in r["note"]),
+                        ("One FIPAT term is a subdivision of the other", lambda r: "subdivision" in r["note"]),
+                        ("Narrower: the FIPAT term is a component of the entry", lambda r: r["relation"] == "narrower"),
+                        ("Broader: the FIPAT term encompasses the entry", lambda r: r["relation"] == "broader"),
                         ("Fuzzy matches", lambda r: "fuzzy" in r["note"]),
                         ("Ambiguous", lambda r: "ambiguous" in r["note"])):
         sel = [r for r in rows if pred(r)]
@@ -770,16 +871,18 @@ def write_table(rows: list[dict], stats: dict) -> None:
                      (f"; TNA {r['tna']} *{r['tna_la']}*" if r["tna"] else "") +
                      (f"; alt: {r['alt']}" if r["alt"] else ""))
         L.append("")
-    sel = [r for r in rows if "no TA concept" in r["note"]]
-    L += [f"### No TA concept found ({len(sel)})", "", "Territories, composite meshes, clinical regions and pathways "
-          "that FIPAT does not name; their Turkish names will be authored.", ""]
+    sel = [r for r in rows if "no single TA concept" in r["note"]]
+    L += [f"### No single TA concept ({len(sel)})", "", "Territories, composite meshes, clinical regions and umbrella "
+          "pathways that FIPAT does not name as one term. FIPAT usually names their components; the closest ones are "
+          "listed. Their Turkish names will be authored.", ""]
     for r in sel:
-        L.append(f"- `{r['id']}` {r['name']}")
+        L.append(f"- `{r['id']}` {r['name']}" + (f" — {r['alt']}" if r["alt"] else ""))
     L.append("")
     (REVIEW / "terms-review.md").write_text("\n".join(L))
     print(f"wrote {REVIEW / 'terms-review.csv'} ({len(rows)} rows) and terms-review.md")
     for k in ("entries", "ta2", "tna", "latin_any", "wd", "wd_tr", "trwiki", "any_tr", "none", "fuzzy", "ambiguous", "latin_differs"):
         print(f"  {k:14s} {stats[k]}")
+    print("  relations     " + ", ".join(f"{k} {v}" for k, v in sorted(stats["relations"].items())))
 
 
 # ------------------------------------------------------------------ commands ----
@@ -839,10 +942,13 @@ def selftest() -> None:
     assert "cerebral hemisphere" in name_variants("Left cerebral hemisphere (MRA)")
     assert "Mammillary body" in name_variants("Mammillary bodies")
     assert name_variants("Medullary pyramid and pyramidal decussation")[1:] == ["Medullary pyramid", "pyramidal decussation"]
+    vk = dict(variant_kinds("Middle temporal gyrus, posterior division"))
+    assert vk["Middle temporal gyrus"] == "head" and dict(variant_kinds("Gracile and cuneate nuclei"))["cuneate nucleus"] == "part"
     v = name_variants("Superior and inferior petrosal sinuses")
     assert v[1:3] == ["Superior petrosal sinuses", "inferior petrosal sinuses"] and "inferior petrosal sinus" in v, v
     assert "Middle temporal gyrus" in name_variants("Middle temporal gyrus, posterior division")
     assert is_abbrev("SMA") and is_abbrev("V1") and is_abbrev("CA1") and not is_abbrev("Pons") and not is_abbrev("Broca")
+    assert _stem("reticulospinales") == _stem("reticulospinalis") == "reticulospinal" and _stem("tractus") == "tract"
     assert _numerals("lobule ix") == {"ix"} and _numerals("lobule viiia") == {"viiia"} and _numerals("cuneiform 2") == {"2"}
     # row assembly: a synthetic page of words (x0, y0, x1, y1, text)
     words = [(72, 73, 87, 82, "5881"), (106, 73, 137, 82, "Substantia"), (139, 73, 153, 82, "nigra"),
