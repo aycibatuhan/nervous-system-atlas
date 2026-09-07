@@ -62,8 +62,9 @@ def main(argv=None) -> None:
                 "mni_residual_rms_mm": round(c["reformat"]["mni_residual"]["dxy_rms"], 2)}
         if cord["mni_residual_rms_mm"] > 2.0:
             problems.append(f"cord.json: PAM50 <-> MNI residual {cord['mni_residual_rms_mm']} mm exceeds the 2 mm gate")
-    # The public edition cannot ship the cord MRI above (PAM50 has no licence), so `atlas-spine-generic` builds
-    # a second one from openly licensed data and `atlas-manifest --public` swaps it into grids.cord.  Without it
+    # The public edition cannot ship the cord MRI above (PAM50 has no licence), so `atlas-cord-public` composes
+    # a second one from the openly licensed straightened templates in work/cord_public/ (`atlas-spine-generic`,
+    # `atlas-fudan-spine`) and `atlas-manifest --public` swaps it into grids.cord.  Without it
     # the public app has no MRI at all below the foramen magnum, so its absence is a warning and everything
     # about it that could silently regress -- the licence, the levels it claims, the join with the MNI volume --
     # is a gate.
@@ -71,7 +72,7 @@ def main(argv=None) -> None:
     pp = OUT / "volumes" / "cord_public.json"
     if not pp.exists():
         warnings.append("no volumes/cord_public.json: the public edition will ship no cord MRI "
-                        "(run atlas-spine-generic)")
+                        "(run atlas-spine-generic, then atlas-cord-public)")
     else:
         c = json.loads(pp.read_text())
         lic = licences.get(c.get("license"), None)
@@ -87,18 +88,52 @@ def main(argv=None) -> None:
                 problems.append(f"public cord volume {k}: file missing {v['file']}")
         levels = c.get("coverage", {}).get("spinal_levels", [])
         zlo, zhi = c["origin_ras"][2], c["origin_ras"][2] + (c["shape"][2] - 1) * c["spacing"][2]
+        # since `atlas-cord-public` the volume is composed from one or more straightened templates, each
+        # recorded in reformat.templates with the sources.yaml id it came from and how far it reaches.
+        tpls = c.get("reformat", {}).get("templates", [])
+        for t in tpls:
+            if t.get("source") and t["source"] not in sources:
+                problems.append(f"cord_public.json: template {t.get('name')} names unknown source '{t['source']}'")
+            tl = licences.get(t.get("license"), None)
+            if tl is None:
+                problems.append(f"cord_public.json: template {t.get('name')} has licence "
+                                f"'{t.get('license')}', which is not described in sources.yaml")
+            elif tl.get("nc") or tl.get("no_redistribution"):
+                problems.append(f"cord_public.json: template {t.get('name')} is {t['license']}, which may not "
+                                "be redistributed, so it cannot go into the public edition's cord MRI")
+        to_conus = any(t.get("reaches_conus") for t in tpls)
         cord_public = {"grid": c["shape"], "spacing": c["spacing"][0], "source": c["source"],
+                       "sources": c.get("sources", [c["source"]]),
+                       "templates": [t.get("name") for t in tpls],
                        "license": c["license"], "subjects": len(c["reformat"].get("subjects", [])),
-                       "levels": levels, "z_mm": [round(zlo, 1), round(zhi, 1)],
+                       "levels": levels, "z_mm": [round(zlo, 1), round(zhi, 1)], "to_conus": to_conus,
                        "bytes_gz": sum(v.get("bytes_gz", 0) for v in c.get("contrasts", {}).values()),
                        "mni_residual_rms_mm": round(c["reformat"]["mni_residual"].get("dxy_rms", 99), 2),
                        "mni_residual_slices": c["reformat"]["mni_residual"].get("n_slices", 0)}
-        # it has to meet the brain MRI at the foramen magnum and carry on into the upper thoracic cord
+        # it has to meet the brain MRI at the foramen magnum and carry on down the cord: as far as the upper
+        # thoracic levels with the cervical template alone, and to the conus as soon as a template that
+        # reaches it (the Fudan whole-spine average) is in the composite.
         if zhi < -78:
             problems.append(f"cord_public.json: the grid tops out at z {zhi:.1f} mm and never meets the MNI "
                             "volume, whose floor is z = -78 mm")
-        if zlo > -200:
-            problems.append(f"cord_public.json: the grid stops at z {zlo:.1f} mm, above the upper thoracic cord")
+        floor = -470 if to_conus else -200
+        if zlo > floor:
+            reach = ("a template that reaches the conus is in the composite"
+                     if to_conus else "the templates cover the cervical and upper thoracic cord")
+            problems.append(f"cord_public.json: the grid stops at z {zlo:.1f} mm, above z = {floor} mm "
+                            f"({reach})")
+        # level-matching: the disc residual is zero by construction, so the number that can regress is how
+        # far each inter-disc segment of a template is stretched to fit our own vertebral column.
+        stretches = [(t.get("name"), sg) for t in tpls for sg in t.get("disc_mapping", {}).get("segments", [])]
+        for name, sg in stretches:
+            # the Z-Anatomy column (anisotropic affine, one specimen) differs from the group mean by up to
+            # a third per segment, which is a property of the model, not a regression; see cord_public.py
+            if not (0.7 <= sg.get("stretch", 1.0) <= 1.45):
+                problems.append(f"cord_public.json: template {name} is stretched by {sg['stretch']:.3f} "
+                                f"between the {sg['from']} and {sg['to']} discs, outside 0.7-1.45")
+        if stretches:
+            cord_public["stretch_range"] = [round(min(s["stretch"] for _n, s in stretches), 3),
+                                            round(max(s["stretch"] for _n, s in stretches), 3)]
         if not levels:
             problems.append("cord_public.json: no spinal levels are claimed for the public cord MRI")
         if cord_public["mni_residual_slices"] < 5:
@@ -258,10 +293,16 @@ def main(argv=None) -> None:
     if cord_public:
         cp_ = cord_public
         print(f"  cord MRI (public): {'x'.join(map(str, cp_['grid']))} at {cp_['spacing']} mm, "
-              f"{cp_['bytes_gz']/1e6:.2f} MB gz, {cp_['subjects']} subjects from {cp_['source']} ({cp_['license']}), "
-              f"levels {cp_['levels'][0]}-{cp_['levels'][-1]}, z {cp_['z_mm'][0]}..{cp_['z_mm'][1]} mm, "
-              f"MNI medulla residual {cp_['mni_residual_rms_mm']} mm over {cp_['mni_residual_slices']} slices "
-              f"(gate 2.5)")
+              f"{cp_['bytes_gz']/1e6:.2f} MB gz, {cp_['subjects']} subjects from "
+              f"{', '.join(cp_.get('sources') or [cp_['source']])} ({cp_['license']}), "
+              f"templates {', '.join(cp_.get('templates') or [])}"
+              + (" (to the conus)" if cp_.get("to_conus") else "")
+              + f", levels {cp_['levels'][0]}-{cp_['levels'][-1]}, z {cp_['z_mm'][0]}..{cp_['z_mm'][1]} mm "
+                f"(floor gate {-470 if cp_.get('to_conus') else -200})"
+              + (f", disc stretch {cp_['stretch_range'][0]}..{cp_['stretch_range'][1]} (gate 0.7-1.45)"
+                 if cp_.get("stretch_range") else "")
+              + f", MNI medulla residual {cp_['mni_residual_rms_mm']} mm over "
+                f"{cp_['mni_residual_slices']} slices (gate 2.5)")
     for w in warnings: print("  warn:", w)
     for p_ in problems: print("  FAIL:", p_)
     print(f"non-commercial sources: {nc}")

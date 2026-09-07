@@ -12,6 +12,16 @@ echo "== zanatomy meshes $(date)"; uv run atlas-zanatomy-meshes
 # order matters: atlas-pam50 reads the shipped cord surface (zanatomy-meshes) and writes cord_levels.json;
 # atlas-derived reads cord_levels.json to cut the cord segment blocks at the measured PAM50 levels.
 echo "== cord MRI (PAM50 curved reformat) $(date)"; uv run atlas-pam50
+# the public edition's cord MRI: each step writes a straightened template into work/cord_public/, and
+# atlas-cord-public lays them all on the same centreline and writes the public cord volumes.  The Fudan
+# whole-spine template is optional, like the other steps whose raw data has to be fetched separately.
+echo "== cord template: spine-generic $(date)"; uv run atlas-spine-generic
+if [ -d raw/lumbosacral_fudan ] && [ -f atlas_pipeline/fudan_spine.py ]; then
+  echo "== cord template: Fudan whole spine $(date)"; uv run atlas-fudan-spine
+else
+  echo "== cord template: Fudan whole spine -- skipped (no raw/lumbosacral_fudan, or the step is not installed)"
+fi
+echo "== public cord MRI (compose) $(date)"; uv run atlas-cord-public
 echo "== derived meshes $(date)"; uv run atlas-derived
 echo "== manifest $(date)"; uv run atlas-manifest
 echo "== qa $(date)"; uv run atlas-qa || true

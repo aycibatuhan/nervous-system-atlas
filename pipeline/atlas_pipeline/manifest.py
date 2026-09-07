@@ -171,7 +171,7 @@ def source_record(s: dict, lock: dict) -> dict:
 
 
 def public_cord() -> dict | None:
-    """The openly licensed cord MRI built by `atlas-spine-generic`, or None when it has not been built.
+    """The openly licensed cord MRI composed by `atlas-cord-public`, or None when it has not been built.
 
     It is deliberately not part of the private manifest: the private edition already has a cord MRI, and
     adding a second one would change public/data/manifest.json for no reason.
@@ -200,28 +200,44 @@ def swap_public_cord(public: dict, exclusions: dict, cord: dict, cfg: dict, lock
     public["grids"] = {**(public.get("grids") or {}), "cord": {**{k: cord[k] for k in both}, "edition": "public",
                                                                "coverage": cord.get("coverage", {})}}
     public["volumes"] = {**public["volumes"], **{k: {**v, "edition": "public"} for k, v in cord["contrasts"].items()}}
-    lic = cord["license"]
-    if lic not in public["licenses"]:
-        v = cfg["licenses"][lic]
-        public["licenses"][lic] = {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""),
+    def add_licence(lid: str) -> None:
+        if not lid or lid in public["licenses"]:
+            return
+        v = cfg["licenses"][lid]
+        public["licenses"][lid] = {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""),
                                    "nc": bool(v.get("nc", False)),
                                    "noRedistribution": bool(v.get("no_redistribution", False)),
-                                   "text": f"licenses/{lic}.txt"}
+                                   "text": f"licenses/{lid}.txt"}
+
+    # `cord_public.json` names one `source` (the one grids.cord carries, for consumers that expect a single
+    # id) and, since the compose step, a `sources` list of every template that went into it.  Every one of
+    # them has to be attributed, so every one of them -- and its licence -- goes into the public manifest.
+    lic = cord["license"]
+    add_licence(lic)
     sid = cord["source"]
-    if sid not in public["sources"]:
-        s = next((x for x in cfg["sources"] if x["id"] == sid), None)
+    sids = [x for x in (cord.get("sources") or [sid]) if x]
+    if sid not in sids:
+        sids.insert(0, sid)
+    lics = [lic]
+    for one in sids:
+        s = next((x for x in cfg["sources"] if x["id"] == one), None)
         if s is None:
-            raise SystemExit(f"manifest --public: cord_public.json names source {sid}, which is not in sources.yaml")
-        public["sources"][sid] = source_record(s, lock)
+            raise SystemExit(f"manifest --public: cord_public.json names source {one}, which is not in sources.yaml")
+        add_licence(s["license"])
+        if s["license"] not in lics:
+            lics.append(s["license"])
+        if one not in public["sources"]:
+            public["sources"][one] = source_record(s, lock)
     exclusions["substitutions"] = {
         "cord": {"replaces": [v["key"] for v in exclusions["volumes"]] + ["grids.cord"],
                  "with": {"grid": "grids.cord", "volumes": sorted(cord["contrasts"]),
-                          "source": sid, "license": lic,
+                          "source": sid, "sources": sids, "license": lic, "licenses": lics,
+                          "templates": [t.get("name") for t in cord.get("reformat", {}).get("templates", [])],
                           "files": [v["file"] for v in cord["contrasts"].values()],
                           "bytes": sum(v.get("bytes_gz", 0) for v in cord["contrasts"].values()),
                           "coverage": cord.get("coverage", {})},
                  "reason": "the private cord MRI may not be redistributed, so the public edition ships its own "
-                           "cord template built from openly licensed data (atlas-spine-generic)"}}
+                           "cord template composed from openly licensed data (atlas-cord-public)"}}
 
 
 def verify_public(public: dict, exclusions: dict) -> list[str]:

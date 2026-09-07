@@ -95,7 +95,7 @@ export interface Manifest {
   grid: { shape: [number, number, number]; spacing: [number, number, number]; origin_ras: [number, number, number]; affine_ras: number[][] };
   volumes: Record<string, VolumeFile>;
   /** extra volume grids; `cord` is the curved-reformat cord MRI (PAM50 in the private edition, the
-   *  spine-generic average in the public one), absent until atlas-pam50 / atlas-spine-generic has run */
+   *  composed template in the public one), absent until atlas-pam50 / atlas-cord-public has run */
   grids?: { cord?: ExtraGrid };
   transforms: Record<string, unknown>;
   systems: { id: SystemId; name: string; colour: string; defaultVisible: boolean }[];
@@ -117,6 +117,10 @@ export interface SpineLevelEntry {
   colour: string;               // per-region rostral -> caudal ramp
   zMm?: [number, number];       // world z range of the level on our centreline
   arcMm?: [number, number];     // arc length range along the centreline
+  // true when the level was not measured on an image: the public edition's composed cord MRI places the
+  // levels below the last rootlet-measured one by the classical cord-segment-to-vertebra rule on the
+  // Z-Anatomy vertebral column (atlas-cord-public), and the readout says so.
+  estimated?: boolean;
 }
 
 export interface SpineRegionEntry { name: string; meshId: string; structureId: string; system: SystemId; levels: string[]; colour: string }

@@ -68,13 +68,21 @@
  "cordVolumePublic": {
   "grid": [
    45,
-   154,
-   238
+   427,
+   889
   ],
   "spacing": 0.75,
   "source": "spine_generic",
+  "sources": [
+   "spine_generic",
+   "lumbosacral_fudan"
+  ],
+  "templates": [
+   "spine_generic_t2",
+   "fudan_t2"
+  ],
   "license": "CC-BY-4.0",
-  "subjects": 10,
+  "subjects": 24,
   "levels": [
    "C2",
    "C3",
@@ -83,15 +91,41 @@
    "C6",
    "C7",
    "C8",
-   "T1"
+   "T1",
+   "T2",
+   "T3",
+   "T4",
+   "T5",
+   "T6",
+   "T7",
+   "T8",
+   "T9",
+   "T10",
+   "T11",
+   "T12",
+   "L1",
+   "L2",
+   "L3",
+   "L4",
+   "L5",
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S5"
   ],
   "z_mm": [
-   -230.0,
-   -52.3
+   -718.2,
+   -52.2
   ],
-  "bytes_gz": 174031,
-  "mni_residual_rms_mm": 1.62,
-  "mni_residual_slices": 15
+  "to_conus": true,
+  "bytes_gz": 1195350,
+  "mni_residual_rms_mm": 1.53,
+  "mni_residual_slices": 15,
+  "stretch_range": [
+   0.811,
+   1.331
+  ]
  },
  "ncSources": [
   "brainstem_navigator",

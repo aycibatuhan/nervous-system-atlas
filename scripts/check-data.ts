@@ -95,8 +95,9 @@ async function check(manifestPath: string): Promise<number> {
   }
   // the spinal-level LUT: every id in labels_spine.u8.bin must resolve to a level whose cord segment block is
   // a real mesh, so a level painted on a slice can be clicked into a selection. Both editions ship one -- the
-  // private edition's from atlas-pam50, the public edition's from atlas-spine-generic, which paints only the
-  // levels it measured on the nerve rootlets but keeps the same 1..30 id space and the same LUT shape.
+  // private edition's from atlas-pam50, the public edition's from atlas-cord-public, which paints the levels
+  // its templates measured on the nerve rootlets plus, below them, levels placed by the classical
+  // cord-segment-to-vertebra rule and flagged `estimated`; it keeps the same 1..30 id space and LUT shape.
   const spineVol = (manifest.volumes as Record<string, Vol>)['labels_spine'];
   if (spineVol) {
     const expectLut = spineVol.edition === 'public' ? 'volumes/labels_spine_public.json' : 'volumes/labels_spine.json';
@@ -139,8 +140,9 @@ async function check(manifestPath: string): Promise<number> {
     const zmin = g.origin_ras[2]; const zmax = zmin + (g.shape[2] - 1) * g.spacing[2];
     // Both editions must reach up to the MNI floor (-78 mm), so the brain MRI and the cord MRI meet on a
     // sagittal slice. Below that they differ by construction: the private edition's template is the whole
-    // cord past the conus, while the public edition's is built from an openly licensed source that only
-    // images the cervical and upper thoracic cord, so it only has to reach the upper thoracic levels.
+    // cord past the conus, while the public edition's is composed of openly licensed templates whose reach
+    // depends on which of them were built, so it only has to reach the upper thoracic levels. How far it
+    // actually reaches is gated against its own declared coverage in atlas-qa, not here.
     const floor = manifest.edition === 'public' ? -200 : -400;
     if (zmax < -78) { console.error(`grids.cord: z range ${zmin}..${zmax} does not reach the MNI floor at -78 mm`); errors++; }
     if (zmin > floor) { console.error(`grids.cord: z range ${zmin}..${zmax} stops above ${floor} mm (${manifest.edition ?? 'private'} edition)`); errors++; }

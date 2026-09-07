@@ -1,4 +1,5 @@
-// Reference views of the PUBLIC edition's spinal cord MRI (atlas-spine-generic) into qa/shots/public-cord-mri/.
+// Reference views of the PUBLIC edition's spinal cord MRI (atlas-cord-public: the spine-generic template handing
+// over to the Fudan whole-spine template) into qa/shots/public-cord-mri/.
 // Serve the built public edition first:  npx vite preview --outDir dist-public --port 5183
 // Usage:                                 node scripts/shots-public-cord.mjs [port]
 //
@@ -19,6 +20,8 @@ const mid = (name) => {
   return { x: (l.top[0] + l.bottom[0]) / 2, y: (l.top[1] + l.bottom[1]) / 2, z: (l.top[2] + l.bottom[2]) / 2 };
 };
 const c5 = mid('C5'), t1 = mid('T1');
+const t7 = levels.spinalLevels.find((x) => x.name === 'T7') ? mid('T7') : null;
+const conus = levels.conusTipMeasured?.world_mm ?? null;
 
 // axial views use a long lens (fov 6 deg) so the projection is near-orthographic and the cord mesh, which runs
 // far above and below the slice, lands on top of the MRI cord instead of splaying out in perspective
@@ -32,6 +35,14 @@ const VIEWS = [
   // the level bands the rootlets measured, painted on the cord and lit up by the selected cervical block
   { name: 'sagittal-levels-selected', axis: 'sagittal', at: { x: -1, y: -72, z: -125 }, dir: [-1, 0, 0], half: 80,
     select: 'spinal-segment-cervical-vert', label: 'cervical block selected, C2-T1 level bands' },
+  // the whole cord once the Fudan template is in the composite: brain to sacrum on one sagittal slice, the
+  // thoracic cord with the vertebra meshes it was level-matched to, and the conus / cauda equina in the canal
+  { name: 'sagittal-whole-cord', axis: 'sagittal', at: { x: -1, y: -170, z: -330 }, dir: [-1, 0, 0], half: 400, label: 'whole cord, brain to sacrum' },
+  { name: 'sagittal-whole-cord-mri', axis: 'sagittal', at: { x: -1, y: -170, z: -330 }, dir: [-1, 0, 0], half: 400, systems: [], label: 'whole cord, MRI only' },
+  { name: 'sagittal-thoracic-vertebrae', axis: 'sagittal', at: { x: -1, y: -190, z: -300 }, dir: [-1, 0, 0], half: 110, systems: ['spinal-cord', 'skeleton'], label: 'thoracic cord with the vertebral column' },
+  { name: 'sagittal-conus-cauda', axis: 'sagittal', at: { x: -1, y: -250, z: -560 }, dir: [-1, 0, 0], half: 110, label: 'conus and cauda equina' },
+  { name: 'sagittal-conus-cauda-mri', axis: 'sagittal', at: { x: -1, y: -250, z: -560 }, dir: [-1, 0, 0], half: 110, systems: [], label: 'conus and cauda equina, MRI only' },
+  ...(t7 ? [{ name: 'axial-t7', axis: 'axial', at: t7, dir: [0, 0, 1], half: 24, fov: 6, label: 'T7 (estimated level)' }] : []),
 ];
 
 const browser = await chromium.launch();

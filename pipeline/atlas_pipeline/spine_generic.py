@@ -1,19 +1,30 @@
-"""Phase 10b: an openly licensed spinal cord MRI for the PUBLIC edition, from the spine-generic database.
+"""Phase 10b: the spine-generic straightened cord template, for the PUBLIC edition's cord MRI.
 
   atlas-spine-generic [--spacing 0.75] [--no-write] [--quiet]
 
-Why a second cord MRI
----------------------
+Why this template
+-----------------
 `atlas-pam50` gives the private edition its cord MRI, but the PAM50 data repository ships no licence file and
 states no licence, so nothing derived from it may be redistributed and `atlas-manifest --public` drops the whole
 cord grid.  The public edition therefore had no MRI at all below the foramen magnum.
 
-This step builds a replacement out of data that *may* be redistributed: ten T2w scans from the spine-generic
-multi-subject public database (Cohen-Adad et al., Sci Data 2021 / Nat Protoc 2021), whose repository carries the
-verbatim CC BY 4.0 legal code -- see pipeline/raw/spine_generic/LICENCE_VERIFICATION.txt.  It is *our own*
-template: the subjects are straightened, aligned and averaged here, and the result is then laid along our cord
-centreline by the same curved reformat `atlas-pam50` uses (pam50.cord_frame / pam50.tube_grid, shared so that
-both editions measure the cord on exactly the same curve).
+This step builds part of a replacement out of data that *may* be redistributed: ten T2w scans from the
+spine-generic multi-subject public database (Cohen-Adad et al., Sci Data 2021 / Nat Protoc 2021), whose
+repository carries the verbatim CC BY 4.0 legal code -- see pipeline/raw/spine_generic/LICENCE_VERIFICATION.txt.
+It is *our own* template: the subjects are straightened, aligned and averaged here.
+
+What it writes
+--------------
+It no longer writes the public volumes itself.  It writes one *straightened template* -- the whole cord
+sampled on a straight (arc, u, v) lattice, with the landmarks it measured on it --
+
+  pipeline/work/cord_public/spine_generic_t2.npz + spine_generic_t2.json
+
+in the contract documented at the top of `cord_public.py`, and `atlas-cord-public` lays it (together with any
+other template in that directory, such as the Fudan whole-spine average) along our own cord centreline,
+level-matches it to the Z-Anatomy vertebral column, blends the templates and writes
+`public/data/volumes/cord_t2_public.u8.bin` and its companions.  Splitting the two means a second dataset can
+cover the cord below this one's field of view without either step knowing about the other.
 
 No Spinal Cord Toolbox is needed and none is used.  Every per-subject label this step would otherwise have had
 to compute is manual ground truth shipped in the dataset's own derivatives/labels: the cord segmentation, the
@@ -29,24 +40,21 @@ How
    `sct_straighten_spinalcord` in pure numpy, and the inverse of what the reformat later does.
 2. Arc length is measured from that subject's **C2/C3 intervertebral disc** (manual disc label 2), the anchor.
    The remaining disc labels then give a piecewise-linear arc warp onto the group-mean disc positions, so the
-   subjects are level-matched and not merely translated; the residual disc scatter before and after is printed.
+   subjects are level-matched and not merely translated; the residual disc scatter before and after is printed
+   and carried into the template's `qa` block.
 3. Intensities are normalised per subject on two robust anchors measured inside the tube -- the median of the
    cord itself and the 95th percentile of the surrounding CSF -- and averaged with a per-arc subject count.
+   Every template normalises the same way, so `atlas-cord-public` can blend them without re-windowing.
 4. Spinal levels come from the rootlets: the boundary between segment n and n+1 is the midpoint between the
    caudal end of the n rootlets and the rostral end of the n+1 rootlets, averaged over the subjects.
-5. The template is laid on our centreline with arc length 1:1, anchored so that its C2/C3 disc sits at the
-   arc length where the Z-Anatomy vertebral column (the same geometry the atlas is registered from, mapped
-   through `zanatomy_to_mni.json`) puts the C2/C3 disc.  Nothing in the chain touches PAM50.
+5. The group-mean arc of every disc label goes into the template's `discs` block, keyed like the Z-Anatomy
+   objects ("C2-C3", "C3-C4", ...), which is how `atlas-cord-public` level-matches it to our own vertebral
+   column.  Labels 1 and 2 have no Z-Anatomy disc object; they are kept under "C1(top)" and "C1-C2" anyway,
+   and the compose step ignores keys the vertebral column lacks.  Nothing in the chain touches PAM50.
 
-Outputs (public/data/volumes/), all tagged `edition: "public"` by atlas-manifest
--------------------------------------------------------------------------------
-cord_t2_public.u8.bin        the reformatted template on its own axis-aligned MNI-frame grid, gzipped
-labels_spine_public.u8.bin   spinal levels through the same reformat, in the same 1 = C1 ... 30 = S5 id space
-                             the private volume uses -- but only the ids this template actually measured
-                             (C2..T1) are ever painted
-labels_spine_public.json     its lookup table, the same shape labels_spine.json has
-cord_public.json             grid + per-volume metadata, swapped in for grids.cord by `atlas-manifest --public`
-cord_levels_public.json      measured spinal levels (rootlets) and vertebral levels (disc labels) in world mm
+The reformat helpers this module used to own -- `anchor_on_centreline`, `medulla_residual`, `world_levels`,
+`project` -- now live in `cord_public.py` and are re-exported here under their old names, so `reformat()` and
+`level_volume()` below still work for anything that imports them.
 """
 from __future__ import annotations
 
@@ -56,8 +64,10 @@ from pathlib import Path
 
 import numpy as np
 
-from . import midline, pam50
-from .paths import CONFIG, RAW, VOLUMES, WORK
+from . import pam50
+from .cord_public import (TEMPLATE_DIR, anchor_on_centreline, medulla_residual,  # noqa: F401  (re-exported)
+                          project, world_levels)
+from .paths import RAW, WORK
 
 SRC = RAW / "spine_generic"
 MNI_T2 = RAW / "mni_t1w" / "tpl-MNI152NLin2009cAsym_res-01_T2w.nii.gz"
@@ -91,6 +101,7 @@ VERTEBRAE = [f"C{i}" for i in range(1, 8)] + [f"T{i}" for i in range(1, 13)]
 ROOTLET_NAMES = {2: "C2", 3: "C3", 4: "C4", 5: "C5", 6: "C6", 7: "C7", 8: "C8", 9: "T1"}
 
 SPINE_SOURCE = "spine_generic"
+TEMPLATE_NAME = "spine_generic_t2"   # work/cord_public/<name>.npz + <name>.json
 MESH_SUFFIX = "-vert"   # the public edition's cord segment blocks are the `-vert` ones (Z-Anatomy cuts)
 
 
@@ -174,13 +185,6 @@ def extend(P: np.ndarray, s: np.ndarray, by: float, step: float = 0.25) -> tuple
     post = P[-1] + np.outer(np.arange(1, n + 1) * step, t1)
     return np.vstack([pre, P, post]), np.concatenate([s[0] - np.arange(n, 0, -1) * step, s,
                                                       s[-1] + np.arange(1, n + 1) * step])
-
-
-def project(P: np.ndarray, s: np.ndarray, T: np.ndarray, pts: np.ndarray) -> np.ndarray:
-    """Arc length of the foot of the perpendicular from each point onto the centreline."""
-    from scipy.spatial import cKDTree
-    d, i = cKDTree(P).query(np.atleast_2d(pts))
-    return s[i] + np.einsum("ij,ij->i", np.atleast_2d(pts) - P[i], T[i])
 
 
 def straighten(sub: str, verbose: bool = True) -> dict:
@@ -346,32 +350,6 @@ def spinal_levels(subs: list[dict], verbose: bool = True) -> tuple[dict[str, tup
 
 
 # ---------------------------------------------------------------- placing it on our cord
-def anchor_on_centreline(fr: dict) -> tuple[float, dict]:
-    """Arc length on our own cord centreline of the C2/C3 disc, from the Z-Anatomy vertebral column.
-
-    The atlas' cord surface and its vertebral column are the same Z-Anatomy specimen, mapped to MNI by the
-    same affine and midline correction, so the disc gives a landmark on our geometry that owes nothing to any
-    cord template.  It is the one number that fixes where the spine-generic average is laid down.
-    """
-    cfg = json.loads((CONFIG / "zanatomy_to_mni.json").read_text())
-    objs = json.loads((WORK / "zanatomy" / "objects.json").read_text())
-    by = {o["name"]: o for o in objs}
-    out = {}
-    for name in [n for n in by if n.startswith("Intervertebral disc ")]:
-        centre = np.array(by[name]["bbox"], float).mean(0)
-        out[name[len("Intervertebral disc "):]] = midline.transform(centre[None, :], np.array(cfg["matrix"]),
-                                                                    cfg.get("post_correction"))[0]
-    if ZA_ANCHOR not in by:
-        raise SystemExit(f"{ZA_ANCHOR} is not in work/zanatomy/objects.json")
-    P, s = fr["centreline"], fr["arc"]
-    T = fr["frame"][0]
-    arcs = {k: float(project(P, s, T, v)[0]) for k, v in out.items()}
-    key = ZA_ANCHOR[len("Intervertebral disc "):]
-    return arcs[key], {"landmark": ZA_ANCHOR, "world_mm": [round(float(x), 2) for x in out[key]],
-                       "arc_mm": round(arcs[key], 2),
-                       "all_disc_arc_mm": {k: round(v, 2) for k, v in sorted(arcs.items(), key=lambda kv: kv[1])}}
-
-
 def reformat(tpl: dict, spacing: float, verbose: bool = True) -> dict:
     """Lay the straightened template along our cord centreline, arc length 1:1 from the C2/C3 disc."""
     from scipy import ndimage
@@ -409,70 +387,55 @@ def level_volume(tpl: dict, levels: dict[str, tuple[float, float]]) -> np.ndarra
     return vol
 
 
-# ---------------------------------------------------------------- QA: does it land on the MNI medulla?
-def medulla_residual(cord: np.ndarray, origin, spacing: float, band=(-77.0, -70.0),
-                     verbose: bool = True) -> dict:
-    """Cord centre in the public cord volume vs the medulla in the MNI T2w, over the band where both exist.
-
-    Both volumes are T2-weighted there, so in a small disc around the cord the tissue is the dark part and the
-    CSF the bright part; the centre is the intensity-*inverted* centroid inside that disc.  A small residual
-    says the reformat put the cord where the MNI template's medulla actually is.
-    """
-    from scipy import ndimage
-    from .spaces import load_ras
-    mni = load_ras(MNI_T2)
-    M = np.asanyarray(mni.dataobj).astype(np.float32)
-    C = np.asarray(cord, np.float32)
-    xs = np.arange(-9, 9.01, 0.25)
-    XX, YY = np.meshgrid(xs, xs, indexing="ij")
-    aff_c = np.eye(4); aff_c[:3, :3] = np.diag([spacing] * 3); aff_c[:3, 3] = origin
-
-    def centre(data, aff, z, x0, y0):
-        W = np.stack([(XX + x0).ravel(), (YY + y0).ravel(), np.full(XX.size, z)], -1)
-        v = (W - aff[:3, 3]) @ np.linalg.inv(aff[:3, :3]).T
-        img = ndimage.map_coordinates(data, v.T, order=1, mode="constant", cval=0.0).reshape(XX.shape)
-        r = np.hypot(XX, YY)
-        disc = r <= 6.0
-        if img[disc].max() <= 0:
-            return None
-        w = np.clip(img[disc].max() - img, 0, None) * disc
-        w = np.where(w >= w.max() * 0.5, w, 0.0)
-        if w.sum() <= 0:
-            return None
-        return float(((XX + x0) * w).sum() / w.sum()), float(((YY + y0) * w).sum() / w.sum())
-
-    out = []
-    for z in np.arange(band[0], band[1] + 1e-6, 0.5):
-        # start both searches from the cord volume's own bright/dark structure near the midline
-        a = centre(C, aff_c, z, 0.0, -47.0)
-        if a is None:
-            continue
-        b = centre(M, mni.affine, z, *a)
-        if b is None:
-            continue
-        out.append([z, a[0], a[1], b[0], b[1]])
-    if not out:
-        return {"n_slices": 0, "note": "no overlap between the public cord grid and the MNI volume"}
-    r = np.array(out)
-    dx, dy = r[:, 1] - r[:, 3], r[:, 2] - r[:, 4]
-    res = {"band_mm": [float(band[0]), float(band[1])], "n_slices": len(r),
-           "dx_mean": float(np.mean(dx)), "dx_sd": float(np.std(dx)),
-           "dy_mean": float(np.mean(dy)), "dy_sd": float(np.std(dy)),
-           "dxy_rms": float(np.sqrt(np.mean(dx ** 2 + dy ** 2)))}
-    if verbose:
-        print(f"\npublic cord <-> MNI T2w, cord centre over z {band[0]:.0f} .. {band[1]:.0f} mm "
-              f"({len(r)} slices at 0.5 mm)")
-        print(f"{'z':>7} {'cord x':>7} {'cord y':>7} {'MNI x':>7} {'MNI y':>7} {'dx':>6} {'dy':>6}")
-        for row, a, b in zip(r, dx, dy):
-            print(f"{row[0]:7.1f} {row[1]:7.2f} {row[2]:7.2f} {row[3]:7.2f} {row[4]:7.2f} {a:6.2f} {b:6.2f}")
-        print(f"residual dx {res['dx_mean']:+.2f} +- {res['dx_sd']:.2f} mm, dy {res['dy_mean']:+.2f} +- "
-              f"{res['dy_sd']:.2f} mm, RMS {res['dxy_rms']:.2f} mm")
-    return res
-
-
 # ---------------------------------------------------------------- driver
+def template_record(subs: list[dict], tpl: dict, levels: dict, level_meta: dict, ids: list[str]) -> tuple[dict, dict]:
+    """The straightened template of the `cord_public.py` contract: the arrays, and the JSON beside them.
+
+    Only the arc rows that reached `MIN_SUBJECTS` are kept, so the arc axis stays uniform and every row of
+    `avg` that is not all-NaN is a row the compose step may use.
+    """
+    keep = np.asarray(tpl["keep"])
+    i0, i1 = int(np.argmax(keep)), int(len(keep) - 1 - np.argmax(keep[::-1]))
+    sl = slice(i0, i1 + 1)
+    arc = np.asarray(tpl["arc"][sl], np.float32)
+    avg = np.asarray(tpl["avg"][sl], np.float32).copy()
+    cord = np.nan_to_num(np.asarray(tpl["cord"][sl], np.float32), nan=0.0)
+    count = np.asarray(tpl["count"][sl]).max(axis=(1, 2)).astype(np.int16)
+    gap = ~keep[sl]
+    avg[gap] = np.nan
+    cord[gap] = 0.0
+    count[gap] = 0
+    arrays = {"arc": arc, "inplane": np.asarray(tpl["inplane"], np.float32),
+              "avg": avg, "cord": cord, "count": count}
+    meta = {
+        "source": SPINE_SOURCE, "license": "CC-BY-4.0", "step_mm": STEP,
+        "discs": {DISC_NAMES.get(k, str(k)): round(float(x), 3) for k, x in sorted(tpl["discs"].items())},
+        "subjects": [s.replace("sub-", "") for s in ids],
+        "spinal_levels": {n: [round(float(a0), 3), round(float(a1), 3)] for n, (a0, a1) in levels.items()},
+        "level_method": level_meta,
+        "coverage": {
+            "arc_mm": [round(float(arc[0]), 2), round(float(arc[-1]), 2)],
+            "vertebral_levels": vertebral_span(tpl),
+            "spinal_levels": sorted(levels, key=pam50.SPINAL_LEVELS.index),
+            "subjects": len(ids),
+            "resolution": "0.8 mm isotropic (per-subject T2w), resampled to 0.5 mm on the straight lattice",
+            "sequence": "T2w sagittal 3D (spine-generic protocol, 3 T Siemens Prisma / Prisma-fit)",
+            "note": "the cervical and upper thoracic cord: about the foramen magnum to the T3/T4 vertebral "
+                    "level; C2-T1 spinal levels are measured on the manually corrected nerve rootlets",
+        },
+        "qa": {"min_subjects_per_bin": MIN_SUBJECTS,
+               "arc_bins_kept": int(keep.sum()), "arc_bins_total": int(keep.size),
+               "disc_sd_before_warp_mm": {DISC_NAMES.get(k, str(k)): round(x, 2)
+                                          for k, x in tpl["disc_sd"].items()},
+               "disc_sd_after_warp_mm": 0.0},
+    }
+    return arrays, meta
+
+
 def main(argv=None) -> None:
     ap = argparse.ArgumentParser(prog="atlas-spine-generic", description=__doc__.split("\n")[0])
+    # kept for compatibility: the output grid is atlas-cord-public's business now, this step writes a
+    # straightened template on its own 0.5 mm lattice.
     ap.add_argument("--spacing", type=float, default=pam50.SPACING)
     ap.add_argument("--no-write", action="store_true")
     ap.add_argument("--quiet", action="store_true")
@@ -492,107 +455,21 @@ def main(argv=None) -> None:
 
     tpl = build_template(subs, v)
     levels, level_meta = spinal_levels(subs, v)
-    rf = reformat(tpl, a.spacing, v)
-    g, fr = rf["grid"], rf["frame"]
+    arrays, meta = template_record(subs, tpl, levels, level_meta, ids)
 
-    # intensity: window on the template's own cord, exactly as the private reformat windows PAM50's
-    cordmask = np.isfinite(tpl["avg"]) & (tpl["cord"] > 0.5)
-    c5, c95 = np.percentile(tpl["avg"][cordmask], [5, 95])
-    span = max(float(c95 - c5), 1e-3)
-    lo, hi = float(c5) - 0.25 * span, float(c95) + 0.25 * span
-    vals = rf["read"](tpl["avg"], 1, cval=lo)
-    u8 = np.clip((vals - lo) / (hi - lo) * 255.0, 0, 255) * g["fade"]
-
-    lab = rf["read"](level_volume(tpl, levels).astype(np.float32), 0, cval=0.0).astype(np.uint8)
-
-    dims, sel = g["dims"], g["sel"]
-    zmin = float(g["origin"][2]); zmax = zmin + (dims[2] - 1) * a.spacing
-    out = {
-        "space": "MNI152NLin2009cAsym", "edition": "public",
-        "shape": [int(d) for d in dims], "spacing": [a.spacing] * 3,
-        "origin_ras": [round(float(x), 4) for x in g["origin"]],
-        "affine_ras": [[round(float(x), 6) for x in row] for row in g["affine"][:3].tolist()] + [[0, 0, 0, 1]],
-        "source": SPINE_SOURCE, "license": "CC-BY-4.0",
-        "reformat": {
-            "method": "curved reformat of an average T2w cord template built here from "
-                      f"{len(subs)} spine-generic subjects (each straightened along the centreline of its own "
-                      "shipped cord segmentation, arc length measured from its manual C2/C3 disc label, "
-                      "piecewise-linearly level-matched on the remaining disc labels, then averaged) onto the "
-                      f"centreline of {fr['mesh_source']} (per-z slab centroids, {pam50.SMOOTH} mm boxcar); "
-                      "arc length mapped 1:1 and anchored at the C2/C3 intervertebral disc of the Z-Anatomy "
-                      "vertebral column, the same specimen the cord surface comes from",
-            "anchor": rf["anchor"], "anchor_arc_mm": round(rf["s_anchor"], 3),
-            "template_arc_mm": [round(x, 2) for x in rf["arc_band"]],
-            "cord_arc_total_mm": round(fr["cord_arc_total"], 2),
-            "radius_full_mm": pam50.R_FULL, "radius_fade_mm": pam50.R_FADE,
-            "subjects": [s.replace("sub-", "") for s in ids],
-            "template_step_mm": STEP, "min_subjects_per_bin": MIN_SUBJECTS,
-            "disc_sd_before_warp_mm": {DISC_NAMES.get(k, str(k)): round(x, 2) for k, x in tpl["disc_sd"].items()},
-        },
-        "coverage": {"z_mm": [round(zmin, 2), round(zmax, 2)],
-                     "vertebral_levels": vertebral_span(tpl),
-                     "spinal_levels": sorted(levels, key=pam50.SPINAL_LEVELS.index),
-                     "note": "the template covers the cervical and upper thoracic cord only; spinal levels are "
-                             "painted only where the rootlets measured them"},
-        "contrasts": {},
-    }
-
-    rec = pam50.write_volume("cord_t2_public", dims, u8.astype(np.uint8), sel) if not a.no_write else {}
-    rec.update({"window": 255, "level": 127, "source_window": [round(lo, 3), round(hi, 3)],
-                "space": "cord", "edition": "public", "spacing": [a.spacing] * 3,
-                "origin_ras": out["origin_ras"], "affine_ras": out["affine_ras"]})
-    out["contrasts"]["cord_t2"] = rec
-    print(f"\n  {'cord_t2':16s} window {lo:.2f}..{hi:.2f}  {rec.get('bytes_gz', 0)/1024:8.1f} KB gz "
-          f"({rec.get('bytes_raw', 0)/1e6:.1f} MB raw)")
-
-    rec = pam50.write_volume("labels_spine_public", dims, lab, sel) if not a.no_write else {}
-    rec.update({"space": "cord", "edition": "public", "spacing": [a.spacing] * 3,
-                "origin_ras": out["origin_ras"], "affine_ras": out["affine_ras"],
-                "lut": "volumes/labels_spine_public.json"})
-    out["contrasts"]["labels_spine"] = rec
-    print(f"  {'labels_spine':16s} {len(levels)} levels      {rec.get('bytes_gz', 0)/1024:8.1f} KB gz")
-
-    spinal = world_levels(fr, rf["s_anchor"], levels)
-    vert = world_levels(fr, rf["s_anchor"], vertebral_levels(tpl))
-    dense = np.zeros(int(np.prod(dims)), np.float32)
-    dense[sel] = u8
-    residual = medulla_residual(dense.reshape(dims), g["origin"], a.spacing, verbose=v)
-    out["reformat"]["mni_residual"] = residual
-
-    print(f"\n{'level':>6} {'arc mm':>16} {'our world z':>17}  centre (x, y) mm")
-    for r in spinal:
-        print(f"{r['name']:>6} {r['arc_mm'][0]:7.1f}..{r['arc_mm'][1]:7.1f} {r['z_mm'][1]:8.1f}..{r['z_mm'][0]:7.1f}"
-              f"  ({r['top'][0]:5.1f}, {r['top'][1]:7.1f})")
-
+    print(f"\ntemplate {arrays['avg'].shape} on a {STEP} mm lattice, arc "
+          f"{meta['coverage']['arc_mm'][0]:.1f} .. {meta['coverage']['arc_mm'][1]:.1f} mm from the C2/C3 disc, "
+          f"vertebrae {'-'.join(meta['coverage']['vertebral_levels'])}, "
+          f"levels {'-'.join(meta['coverage']['spinal_levels'][::max(len(meta['coverage']['spinal_levels']) - 1, 1)])}")
+    print("discs: " + ", ".join(f"{k} {x:.1f}" for k, x in meta["discs"].items()))
     if a.no_write:
         return
-    (VOLUMES / "cord_public.json").write_text(json.dumps(out, indent=1))
-    sl = pam50.spine_lut(spinal, mesh_suffix=MESH_SUFFIX, source=SPINE_SOURCE, volume="labels_spine_public",
-                         note="Spinal levels measured on the dorsal and ventral nerve rootlets of "
-                              f"{len(subs)} spine-generic subjects and carried onto our cord centreline by the "
-                              "atlas-spine-generic curved reformat. ids are the same 1 = C1 ... 30 = S5 ids the "
-                              "private volume uses, as they appear in volumes/labels_spine_public.u8.bin; only "
-                              "the levels this template measured are ever painted. meshId is the cord segment "
-                              "block that contains the level, so selecting a level and selecting its 3D block "
-                              "are the same selection.")
-    sl["coverage"] = out["coverage"]
-    sl["levelMethod"] = level_meta
-    (VOLUMES / "labels_spine_public.json").write_text(json.dumps(sl, indent=1))
-    cl_s, cl_p = pam50.centreline_table({"centreline": fr["centreline"], "arc": fr["arc"]})
-    (VOLUMES / "cord_levels_public.json").write_text(json.dumps(
-        {"space": "MNI152NLin2009cAsym", "edition": "public", "source": SPINE_SOURCE,
-         "note": "spinal levels measured on the nerve rootlets and vertebral levels measured on the disc "
-                 "labels of the spine-generic subjects, carried onto our cord centreline by the "
-                 "atlas-spine-generic curved reformat; top/bottom are world mm on the centreline",
-         "anchor": rf["anchor"], "centrelineSource": fr["mesh_source"],
-         "centreline": {"stepMm": pam50.CENTRELINE_STEP,
-                        "arc": [round(float(x), 3) for x in cl_s],
-                        "points": [[round(float(c), 3) for c in q] for q in cl_p]},
-         "levelMethod": level_meta,
-         "spinalLevels": spinal, "vertebralLevels": vert}, indent=1))
-    print(f"\nwrote {VOLUMES / 'cord_public.json'}, {VOLUMES / 'labels_spine_public.json'} and "
-          f"{VOLUMES / 'cord_levels_public.json'}")
-    print(f"total shipped: {sum(x.get('bytes_gz', 0) for x in out['contrasts'].values())/1e6:.2f} MB gz")
+    TEMPLATE_DIR.mkdir(parents=True, exist_ok=True)
+    npz = TEMPLATE_DIR / f"{TEMPLATE_NAME}.npz"
+    np.savez_compressed(npz, **arrays)
+    (TEMPLATE_DIR / f"{TEMPLATE_NAME}.json").write_text(json.dumps(meta, indent=1))
+    print(f"wrote {npz} ({npz.stat().st_size/1e6:.1f} MB) and {TEMPLATE_DIR / (TEMPLATE_NAME + '.json')}")
+    print("run atlas-cord-public to lay it (and any other template in that directory) on our cord centreline")
 
 
 def vertebral_levels(tpl: dict) -> dict[str, tuple[float, float]]:
@@ -608,19 +485,6 @@ def vertebral_levels(tpl: dict) -> dict[str, tuple[float, float]]:
 def vertebral_span(tpl: dict) -> list[str]:
     v = vertebral_levels(tpl)
     return [next(iter(v)), list(v)[-1]] if v else []
-
-
-def world_levels(fr: dict, s_anchor: float, levels: dict[str, tuple[float, float]]) -> list[dict]:
-    """Template arc -> arc on our centreline -> world mm, in the shape cord_levels.json uses."""
-    P, s = fr["centreline"], fr["arc"]
-    out = []
-    for name, (a0, a1) in levels.items():
-        rec = {"name": name, "arc_mm": [round(s_anchor + a0, 2), round(s_anchor + a1, 2)]}
-        for key, arc in (("top", s_anchor + a0), ("bottom", s_anchor + a1)):
-            rec[key] = [round(float(np.interp(arc, s, P[:, k])), 2) for k in range(3)]
-        rec["z_mm"] = [rec["bottom"][2], rec["top"][2]]
-        out.append(rec)
-    return out
 
 
 if __name__ == "__main__":

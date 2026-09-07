@@ -39,8 +39,10 @@ export function spineLevelAt(spine: SpineLabels | null, cordGrid: VolumeGrid | n
   return entry ? { id, entry } : null;
 }
 
-/** "C5 · cervical segment" — the readout label for a level. */
-export function spineLevelLabel(e: SpineLevelEntry): string { return `${e.name} · ${e.region} segment`; }
+/** "C5 · cervical segment", plus " (vertebral rule)" for a level placed by the rule rather than measured. */
+export function spineLevelLabel(e: SpineLevelEntry): string {
+  return `${e.name} · ${e.region} segment` + (e.estimated ? ' (vertebral rule)' : '');
+}
 
 /** 32-bit mask of the level ids a predicate selects (ids are 1..30, so one uint carries them all). */
 export function spineMask(byId: Map<number, SpineLevelEntry>, pick: (id: number, e: SpineLevelEntry) => boolean): number {
