@@ -34,7 +34,7 @@ def build_all():
     import subprocess, sys
     from pathlib import Path
     steps = ["atlas-download", "atlas-volumes", "atlas-atlas-meshes", "atlas-venat", "atlas-bp3d-select", "atlas-bp3d-meshes",
-             "atlas-zanatomy-midline", "atlas-zanatomy-meshes", "atlas-pam50", "atlas-spine-generic", "atlas-derived", "atlas-brainstem-nav",
+             "atlas-zanatomy-midline", "atlas-zanatomy-meshes", "atlas-pam50", "atlas-spine-generic", "atlas-fudan-spine", "atlas-cord-public", "atlas-derived", "atlas-brainstem-nav",
              "atlas-lc-metamask", "atlas-aan",
              "atlas-labels", "atlas-manifest", "atlas-qa"]
     bindir = Path(sys.executable).parent
@@ -76,3 +76,9 @@ def pam50():
 
 def spine_generic():
     from .spine_generic import main; main()
+
+def fudan_spine():
+    from .fudan_spine import main; main()
+
+def cord_public():
+    from .cord_public import main; main()

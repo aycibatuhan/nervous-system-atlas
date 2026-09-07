@@ -383,6 +383,37 @@ sources:
         dest: sub-geneva01_T2w_label-discs_dlabel.nii.gz
       - url: https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32683--a2f2f5c6fd4bd576c58248f1613011fae78d7df05cee228c4ea60c82d8ae3c1a.nii.gz
         dest: sub-geneva01_T2w_label-rootlets_dseg.nii.gz
+  # ---------------- lumbosacral spine MRI (conus, cauda equina, nerve roots) ----------------
+  # Fourteen healthy adults scanned at 3 T (Fudan University; ethics FE23166I): a composed WHOLE-SPINE
+  # sagittal T2-TSE (0.62 x 0.62 x 3.3 mm, skull base to sacrum, ~820 mm), plus lumbosacral CISS (0.3-0.35 mm
+  # in-plane) and DESS that resolve the nerve roots, with 3D Slicer markups of the conus outline, the dura,
+  # the L1-S2 ganglia and nerve-root trajectories (LPS scanner mm), MRIQC results and reconstructed models.  The figshare collection carries CC BY 4.0 on every article; the
+  # companion Scientific Data paper is CC BY-NC-ND but the data licence is the figshare one.  This is the
+  # only openly licensed healthy-volunteer MRI of the whole cord found (2026-09): `atlas-fudan-spine` builds
+  # the public edition's cord template below the spine-generic field of view from it, conus included.
+  - id: lumbosacral_fudan
+    name: "Open-access lumbosacral spine MRI dataset with enhanced spinal nerve root resolution (14 subjects)"
+    group: spine-open
+    license: CC-BY-4.0
+    citation: "Li S, et al. An open-access lumbosacral spine MRI dataset with enhanced spinal nerve root
+      structure resolution. Scientific Data 2024;11:1131. doi:10.1038/s41597-024-03919-4 (PMC11480038).
+      Data: figshare collection 10.6084/m9.figshare.c.7372564, CC BY 4.0."
+    files:
+      - url: https://ndownloader.figshare.com/files/48012196
+        dest: README
+      - url: https://ndownloader.figshare.com/files/48013579
+        dest: dataset_description.json
+      - url: https://ndownloader.figshare.com/files/48012544
+        dest: anatqc.zip
+        unzip: true
+      - url: https://ndownloader.figshare.com/files/48012541
+        dest: markers.zip
+        unzip: true
+      - url: https://ndownloader.figshare.com/files/48111607
+        dest: inter-annotators_variability.xlsx
+      - url: https://ndownloader.figshare.com/files/48013288
+        dest: rawdata.zip
+        unzip: true
   # ---------------- open locus coeruleus mask (public edition) ----------------
   # The Brainstem Navigator LC label may not be redistributed, so the public edition uses the openly
   # licensed Dahl et al. LC "meta mask" instead: a consensus volume of interest aggregated across six
