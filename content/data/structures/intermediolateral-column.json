@@ -10,24 +10,24 @@
   "meshIds": [
     "spinal-segment-thoracic"
   ],
-  "summary": "The lateral horn of gray matter present from T1 to L2, containing the preganglionic sympathetic neurons of the whole body, and its sacral counterpart at S2\u2013S4 containing the preganglionic parasympathetic neurons for the pelvic organs. Its axons leave in the ventral roots (white rami communicantes) to the sympathetic chain. Because all sympathetic outflow to the head passes through the upper thoracic segments and the cervical cord above them, cervical and upper thoracic cord lesions cause Horner syndrome, and lesions above T6 disconnect most of the sympathetic outflow from the brain, producing autonomic dysreflexia.",
+  "summary": "The lateral horn of gray matter present from T1 to L2, containing the preganglionic sympathetic neurons of the whole body, and its sacral counterpart at S2–S4 containing the preganglionic parasympathetic neurons for the pelvic organs. Its axons leave in the ventral roots (white rami communicantes) to the sympathetic chain. Because all sympathetic outflow to the head passes through the upper thoracic segments and the cervical cord above them, cervical and upper thoracic cord lesions cause Horner syndrome, and lesions above T6 disconnect most of the sympathetic outflow from the brain, producing autonomic dysreflexia.",
   "anatomy": {
-    "location": "Lateral projection of the gray matter between the anterior and posterior horns at T1\u2013L2 (sympathetic) and the equivalent position at S2\u2013S4 (parasympathetic, sacral autonomic nucleus).",
+    "location": "Lateral projection of the gray matter between the anterior and posterior horns at T1–L2 (sympathetic) and the equivalent position at S2–S4 (parasympathetic, sacral autonomic nucleus).",
     "subdivisions": [
       {
-        "name": "T1\u2013T2 (ciliospinal center of Budge)",
+        "name": "T1–T2 (ciliospinal center of Budge)",
         "note": "oculosympathetic outflow to the pupil, lid and face"
       },
       {
-        "name": "T1\u2013T5",
+        "name": "T1–T5",
         "note": "heart, lungs, upper limb"
       },
       {
-        "name": "T5\u2013L2",
+        "name": "T5–L2",
         "note": "abdominal and pelvic viscera, lower limb"
       },
       {
-        "name": "S2\u2013S4 (sacral parasympathetic nucleus)",
+        "name": "S2–S4 (sacral parasympathetic nucleus)",
         "note": "bladder detrusor, rectum, erection"
       }
     ]
@@ -46,7 +46,7 @@
       },
       {
         "to": "pelvic ganglia",
-        "via": "pelvic splanchnic nerves (S2\u2013S4)"
+        "via": "pelvic splanchnic nerves (S2–S4)"
       }
     ],
     "pathways": [
@@ -95,7 +95,7 @@
       {
         "deficit": "Horner syndrome (ptosis, miosis, anhidrosis)",
         "side": "ipsilateral",
-        "mechanism": "Ciliospinal center at C8\u2013T2 or the descending fibers above it"
+        "mechanism": "Ciliospinal center at C8–T2 or the descending fibers above it"
       },
       {
         "deficit": "Autonomic dysreflexia: paroxysmal hypertension, headache, flushing above the level, bradycardia",
@@ -125,7 +125,7 @@
       "syn-conus-vs-cauda-equina"
     ],
     "pearls": [
-      "Horner syndrome with arm weakness and hand wasting: think of the C8\u2013T1 region (syrinx, Pancoast tumor, cord lesion)",
+      "Horner syndrome with arm weakness and hand wasting: think of the C8–T1 region (syrinx, Pancoast tumor, cord lesion)",
       "Severe headache with hypertension in a tetraplegic patient is autonomic dysreflexia: find the noxious trigger (full bladder) first"
     ]
   },
@@ -149,6 +149,9 @@
   ],
   "status": "draft",
   "latin": "Columna intermediolateralis",
+  "names": {
+    "tr": "Columna intermediolateralis"
+  },
   "subsystem": "cord",
   "level": {
     "region": "spinal"

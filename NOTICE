@@ -386,6 +386,77 @@ public edition of the atlas.
   *** NON-COMMERCIAL, NO REDISTRIBUTION OF DERIVED FILES - EXCLUDED FROM THE PUBLIC EDITION ***
 
 ==============================================================================
+TERMINOLOGY
+==============================================================================
+
+The Latin structure names (`latin`, and the Turkish display names `names.tr`)
+and the Turkish search synonyms (`synonymsByLang.tr`) in content/ come from
+the sources below, matched to the atlas entries by tools/i18n/terms.py and
+reviewed by hand. The FIPAT terminologies are published as PDFs under CC BY-ND
+4.0; only the terms are used, which FIPAT places in the public domain, and the
+PDFs are not redistributed. Wikidata is CC0. Turkish Wikipedia titles are CC
+BY-SA 4.0, the licence of the atlas content.
+
+--- fipat_ta2 ---
+  Dataset:     Terminologia Anatomica, 2nd edition (FIPAT, 2019), parts 1-5
+  Citation:    FIPAT. Terminologia Anatomica, 2nd edition (TA2, version
+               2.07). Federative International Programme for Anatomical
+               Terminology, 2019. https://fipat.library.dal.ca/ta2/
+  Licence:     FIPAT terminology terms (public domain; the PDF files are CC BY-ND 4.0 and are not redistributed)
+               https://creativecommons.org/licenses/by-nd/4.0/
+  Attribution: Terms from Terminologia Anatomica, 2nd edition (2019) and
+               Terminologia Neuroanatomica (2017), FIPAT - the Federative
+               International Programme for Anatomical Terminology, IFAA; the
+               terms are public domain
+  Download:    https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-1.pdf
+               https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf
+               https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-3.pdf
+               https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-4.pdf
+               https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-5.pdf
+
+--- fipat_tna ---
+  Dataset:     Terminologia Neuroanatomica (FIPAT, 2017), chapters 1-3
+  Citation:    FIPAT. Terminologia Neuroanatomica. Federative International
+               Programme for Anatomical Terminology, 2017.
+               https://fipat.library.dal.ca/tna/ (ten Donkelaar HJ, Broman J,
+               Neumann PE, et al. Towards a Terminologia Neuroanatomica. Clin
+               Anat 2017;30:145-155)
+  Licence:     FIPAT terminology terms (public domain; the PDF files are CC BY-ND 4.0 and are not redistributed)
+               https://creativecommons.org/licenses/by-nd/4.0/
+  Attribution: Terms from Terminologia Anatomica, 2nd edition (2019) and
+               Terminologia Neuroanatomica (2017), FIPAT - the Federative
+               International Programme for Anatomical Terminology, IFAA; the
+               terms are public domain
+  Download:    https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TNA/FIPAT-TNA-Ch1.pdf
+               https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TNA/FIPAT-TNA-Ch2.pdf
+               https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TNA/FIPAT-TNA-Ch3.pdf
+
+--- wikidata ---
+  Dataset:     Wikidata: anatomical items carrying a TA98 or TA2 identifier (labels, aliases, Wikipedia sitelinks)
+  Citation:    Wikidata contributors. Wikidata, the free knowledge base.
+               Wikimedia Foundation. https://www.wikidata.org/ (5923 items
+               with a TA98 ID (P1323) or TA2 ID (P7173), read on 2026-09-07
+               through the SPARQL endpoint and the wbgetentities API)
+  Licence:     CC0 1.0 Universal (public domain dedication)
+               https://creativecommons.org/publicdomain/zero/1.0/
+  Accessed:    https://query.wikidata.org/sparql
+               (live API, read by tools/i18n/terms.py and cached under reference/terms/; nothing is downloaded as a file)
+
+--- turkish_wikipedia ---
+  Dataset:     Turkish Wikipedia (Vikipedi): article titles and redirects of anatomical items
+  Citation:    Vikipedi contributors. Vikipedi, özgür ansiklopedi. Wikimedia
+               Foundation. https://tr.wikipedia.org/ (titles and redirects of
+               the 620 articles linked from Wikidata anatomical items, read
+               on 2026-09-07 through the MediaWiki API)
+  Licence:     Creative Commons Attribution-ShareAlike 4.0 International (Wikipedia)
+               https://creativecommons.org/licenses/by-sa/4.0/
+  Attribution: Turkish Wikipedia (Vikipedi) contributors,
+               https://tr.wikipedia.org/ - article titles and redirects used
+               as Turkish search synonyms
+  Accessed:    https://tr.wikipedia.org/w/api.php
+               (live API, read by tools/i18n/terms.py and cached under reference/terms/; nothing is downloaded as a file)
+
+==============================================================================
 SOFTWARE
 ==============================================================================
 

@@ -1,7 +1,7 @@
 import Fuse from 'fuse.js';
 import { h, clear } from './dom.ts';
 
-export interface SearchDoc { id: string; kind: string; name: string; aliases: string[]; summary: string }
+export interface SearchDoc { id: string; kind: string; name: string; names?: { tr?: string }; latin?: string; aliases: string[]; summary: string }
 
 /** Toolbar search over the prebuilt content index (structures, cranial nerves, pathways, syndromes). */
 export class SearchBox {

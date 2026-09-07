@@ -6,6 +6,10 @@
     "anterolateral system",
     "spinal lemniscus"
   ],
+  "latin": "Tractus spinothalamicus lateralis",
+  "names": {
+    "tr": "Tractus spinothalamicus lateralis"
+  },
   "type": "ascending",
   "modality": "pain and temperature",
   "summary": "Small myelinated and unmyelinated pain and temperature fibers end in the dorsal horn (laminae I, II and V) within a segment or two of their entry; second-order neurons cross in the anterior white commissure over one to two segments and ascend in the anterolateral funiculus as the spinothalamic tract, joined in the brainstem by spinoreticular and spinomesencephalic fibers, to the ventral posterolateral thalamus and then the somatosensory cortex and insula. The early crossing is the key: cord lesions cause contralateral loss beginning one or two segments below the lesion, and a central cord lesion catches the crossing fibers of both sides for a band of dissociated loss.",
@@ -34,7 +38,7 @@
     }
   ],
   "decussation": {
-    "level": "Anterior white commissure, 1\u20132 segments above entry",
+    "level": "Anterior white commissure, 1–2 segments above entry",
     "structureId": "spinal-white-columns",
     "note": "Second-order axons cross obliquely; a syrinx damages them here."
   },
@@ -110,7 +114,7 @@
       "side": "bilateral"
     },
     {
-      "level": "Hemicord (Brown-S\u00e9quard)",
+      "level": "Hemicord (Brown-Séquard)",
       "effects": "Contralateral loss starting one to two segments below the lesion",
       "side": "contralateral"
     },

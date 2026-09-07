@@ -27,6 +27,7 @@ describe('NOTICE', () => {
       expect(text, `licence of ${s.id}`).toContain(lic.url);
       // a `generated: true` source has no URL at all: it is produced on this machine, and NOTICE says so
       if (s.generated) expect(text, `provenance of ${s.id}`).toContain(`pipeline/raw/${s.id}/SOURCE.json`);
+      else if (s.api) expect(text, `api of ${s.id}`).toContain(s.api);
       else expect(text, `download url of ${s.id}`).toContain(s.files![0]!.url);
       if (lic.nc || lic.no_redistribution) expect(text).toContain('EXCLUDED FROM THE PUBLIC EDITION');
     }

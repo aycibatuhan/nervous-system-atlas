@@ -29,6 +29,19 @@ licenses:
   CC0-1.0:
     name: CC0 1.0 Universal (public domain dedication)
     url: https://creativecommons.org/publicdomain/zero/1.0/
+  # Terminology sources (Turkish edition).  FIPAT publishes its terminologies as PDFs under CC BY-ND 4.0 and states in
+  # the front matter that "the individual terms in this terminology are within the public domain"; the atlas uses only
+  # the terms (Latin and English names, term numbers) and never redistributes the PDFs.
+  FIPAT-terms:
+    name: FIPAT terminology terms (public domain; the PDF files are CC BY-ND 4.0 and are not redistributed)
+    url: https://creativecommons.org/licenses/by-nd/4.0/
+    attribution: "Terms from Terminologia Anatomica, 2nd edition (2019) and Terminologia Neuroanatomica (2017), FIPAT -
+      the Federative International Programme for Anatomical Terminology, IFAA; the terms are public domain"
+  CC-BY-SA-4.0-Wikipedia:
+    name: Creative Commons Attribution-ShareAlike 4.0 International (Wikipedia)
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    attribution: "Turkish Wikipedia (Vikipedi) contributors, https://tr.wikipedia.org/ - article titles and redirects
+      used as Turkish search synonyms"
   FSL-NC:
     name: Harvard-Oxford atlas (FSL, non-commercial)
     url: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases
@@ -500,3 +513,54 @@ sources:
       - url: https://www.nitrc.org/frs/download.php/17380/BrainstemNavigatorv1.0.zip
         dest: BrainstemNavigatorv1.0.zip
         unzip: true
+
+  # ---------------- terminology (Turkish edition) ----------------
+  # Not meshes or volumes: the Latin structure names and Turkish search synonyms in content/data/ come from these,
+  # through tools/i18n/terms.py (fetch / table / apply).  `api` sources are queried live and cached under
+  # reference/terms/; nothing from them is downloaded by atlas-download.
+  - id: fipat_ta2
+    name: "Terminologia Anatomica, 2nd edition (FIPAT, 2019), parts 1-5"
+    group: terms
+    license: FIPAT-terms
+    citation: "FIPAT. Terminologia Anatomica, 2nd edition (TA2, version 2.07). Federative International Programme for
+      Anatomical Terminology, 2019. https://fipat.library.dal.ca/ta2/"
+    files:
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-1.pdf
+        dest: FIPAT-TA2-Part-1.pdf
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf
+        dest: FIPAT-TA2-Part-2.pdf
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-3.pdf
+        dest: FIPAT-TA2-Part-3.pdf
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-4.pdf
+        dest: FIPAT-TA2-Part-4.pdf
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-5.pdf
+        dest: FIPAT-TA2-Part-5.pdf
+  - id: fipat_tna
+    name: "Terminologia Neuroanatomica (FIPAT, 2017), chapters 1-3"
+    group: terms
+    license: FIPAT-terms
+    citation: "FIPAT. Terminologia Neuroanatomica. Federative International Programme for Anatomical Terminology, 2017.
+      https://fipat.library.dal.ca/tna/ (ten Donkelaar HJ, Broman J, Neumann PE, et al. Towards a Terminologia
+      Neuroanatomica. Clin Anat 2017;30:145-155)"
+    files:
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TNA/FIPAT-TNA-Ch1.pdf
+        dest: FIPAT-TNA-Ch1.pdf
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TNA/FIPAT-TNA-Ch2.pdf
+        dest: FIPAT-TNA-Ch2.pdf
+      - url: https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TNA/FIPAT-TNA-Ch3.pdf
+        dest: FIPAT-TNA-Ch3.pdf
+  - id: wikidata
+    name: "Wikidata: anatomical items carrying a TA98 or TA2 identifier (labels, aliases, Wikipedia sitelinks)"
+    group: terms
+    license: CC0-1.0
+    citation: "Wikidata contributors. Wikidata, the free knowledge base. Wikimedia Foundation. https://www.wikidata.org/
+      (5923 items with a TA98 ID (P1323) or TA2 ID (P7173), read on 2026-09-07 through the SPARQL endpoint and the
+      wbgetentities API)"
+    api: https://query.wikidata.org/sparql
+  - id: turkish_wikipedia
+    name: "Turkish Wikipedia (Vikipedi): article titles and redirects of anatomical items"
+    group: terms
+    license: CC-BY-SA-4.0-Wikipedia
+    citation: "Vikipedi contributors. Vikipedi, özgür ansiklopedi. Wikimedia Foundation. https://tr.wikipedia.org/ (titles
+      and redirects of the 620 articles linked from Wikidata anatomical items, read on 2026-09-07 through the MediaWiki API)"
+    api: https://tr.wikipedia.org/w/api.php

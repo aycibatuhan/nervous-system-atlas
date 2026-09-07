@@ -10,6 +10,7 @@ author checks once, before any Turkish label is written into content/.
                                                          #   Wikidata items with a TA98/TA2 id; trwiki redirects
   python3 tools/i18n/terms.py table                       # content/i18n/review/terms-review.csv + .md
   python3 tools/i18n/terms.py show substantia-nigra       # every candidate for one entry, with the reasons
+  python3 tools/i18n/terms.py apply [--dry-run]           # write the reviewed terms into content/data/ (see below)
   python3 tools/i18n/terms.py --selftest
 
 `fetch` needs pymupdf (in pipeline/.venv) for the PDFs; `table` and `show` only read the cached JSON.
@@ -38,7 +39,19 @@ Table columns (one row per atlas entry):
   note                                     ambiguity or disagreement flags
   decision                                 filled in by the reviewer and kept across regenerations: "ok" to accept
                                            the row as it stands, "ta2:5728" / "tna:1931" / "wd:Q5298925" to pick
-                                           another candidate, "none" when FIPAT has no such concept
+                                           another candidate, "none" / "skip" when FIPAT has no such concept
+
+`apply` takes every row whose relation is exact or synonym and is not flagged ambiguous, plus every row with a
+decision, and writes into the entry's JSON:
+  latin           the FIPAT Latin term, TNA first (traditional word order: "Arteria cerebri anterior"), TA2 as the
+                  fallback.  An existing `latin` is kept when it is only a variant of the FIPAT term (word order,
+                  ae/oe spelling, a bracketed eponym, plural, an extra qualifier such as "thalami"); it is replaced
+                  only when the entry was matched by its own name or Latin term (relation exact) and the old value
+                  then moves to `synonyms`.  A synonym-matched row never overwrites a different existing Latin.
+  names.tr        the Turkish display name: the Latin term (Turkish medical teaching names structures in Latin)
+  synonymsByLang.tr   Turkish search synonyms: the Wikidata Turkish label and aliases, the Turkish Wikipedia title
+                  and the titles redirecting to it, minus anything equal to the Latin or English names
+Every change is listed in content/i18n/review/apply-log.md.
 """
 from __future__ import annotations
 
@@ -734,7 +747,7 @@ def _stem(w: str) -> str:
     return re.sub(r"(es|is|us|um|ae|orum|arum|i|a|e|s)$", "", w) if len(w) > 4 else w
 
 
-UMBRELLA = re.compile(r"pathway|circuit|reflex|loops|connections|complex|levels|\band\b|versus|:", re.I)
+UMBRELLA = re.compile(r"pathway|circuit|reflex|loops|connections|complex|levels|\band\b|versus|:|/", re.I)
 
 
 def relation(entry: dict, best: dict, ta2_by, tna_by, wd) -> str:
@@ -931,6 +944,152 @@ def cmd_show(a) -> None:
     print(json.dumps(next(r for r in rows if r["id"] == a.id), ensure_ascii=False, indent=1))
 
 
+# ------------------------------------------------------------------ apply ----
+def _stems(s: str) -> list[str]:
+    return sorted(_stem(w) for w in norm(re.sub(r"\s*\(.*?\)", "", s)).split())
+
+
+def latin_variant(ours: str, fipat: str) -> bool:
+    """True when `ours` names the same term as `fipat` up to word order, ae/oe spelling, a bracketed eponym,
+    number, or an extra qualifier ("Nucleus ventralis posterolateralis thalami" vs "... posterolateralis")."""
+    a, b = _stems(ours), _stems(fipat)
+    return bool(a) and bool(b) and set(b) <= set(a)
+
+
+def decide_latin(ours: str, fipat: str, decided: bool, others: list[str] = ()) -> tuple[str, str]:
+    """(new value, action): set / same / kept-variant / replaced / kept-differs / no-fipat.
+    An existing Latin is never replaced without a reviewer decision; `others` are the other source's Latin
+    terms (a TA2 term equal to ours means the TNA row was reached through a Latin synonym: keep ours)."""
+    if not fipat:
+        return ours, "no-fipat"
+    if not ours:
+        return fipat, "set"
+    for cand in [fipat] + list(others):
+        if cand and norm(ours) == norm(cand):
+            return ours, "same"
+    for cand in [fipat] + list(others):
+        if cand and latin_variant(ours, cand):
+            return ours, "kept-variant"
+    if decided:
+        return fipat, "replaced"
+    return ours, "kept-differs"
+
+
+def _insert_after(d: dict, after: str, key: str, value) -> dict:
+    """Return d with key set, placed right after `after` when the key is new (keeps the authored key order)."""
+    if key in d:
+        d[key] = value
+        return d
+    out = {}
+    placed = False
+    for k, v in d.items():
+        out[k] = v
+        if k == after:
+            out[key] = value
+            placed = True
+    if not placed:
+        out[key] = value
+    return out
+
+
+def cmd_apply(a) -> None:
+    ta2, tna, wd, redirects = load_cache()
+    ta2_by = {str(r["id"]): r for r in ta2}
+    tna_by = {str(r["id"]): r for r in tna}
+    with (REVIEW / "terms-review.csv").open(newline="") as f:
+        rows = list(csv.DictReader(f))
+    paths = {f.stem: f for kind in KINDS for f in (CONTENT / kind).glob("*.json")}
+    log: list[dict] = []
+    counts: Counter = Counter()
+    for r in rows:
+        dec = (r.get("decision") or "").strip()
+        pick = {"ta2": r["ta2"], "tna": r["tna"], "wd": r["wd"]}
+        relation = r["relation"]
+        if dec.lower() in ("none", "skip"):
+            counts["skipped (decision)"] += 1
+            continue
+        if dec and dec.lower() != "ok":
+            bad = False
+            for tok in re.split(r"[\s,]+", dec):
+                src, _, val = tok.partition(":")
+                if src in pick and val:
+                    pick[src] = val
+                else:
+                    print(f"[apply] {r['id']}: cannot read decision {dec!r}, skipped", file=sys.stderr)
+                    bad = True
+            if bad:
+                counts["skipped (bad decision)"] += 1
+                continue
+            relation = "exact"                                # the reviewer chose the concept
+        elif not dec and (relation not in ("exact", "synonym") or "ambiguous" in r["note"]):
+            counts["skipped (undecided)"] += 1
+            continue
+        elif not dec and relation == "synonym" and len(r["match"].split()) < 2:
+            counts["skipped (synonym match in one source only)"] += 1   # "Wernicke's area" -> TNA "Pars posterior"
+            continue
+        if pick["tna"] and pick["tna"] not in tna_by or pick["ta2"] and pick["ta2"] not in ta2_by or pick["wd"] and pick["wd"] not in wd:
+            print(f"[apply] {r['id']}: unknown id in {pick}, skipped", file=sys.stderr)
+            counts["skipped (bad id)"] += 1
+            continue
+        tna_la = tna_by[pick["tna"]]["la"] if pick["tna"] else ""
+        ta2_la = ta2_by[pick["ta2"]]["la"] if pick["ta2"] else ""
+        fipat = tna_la or ta2_la
+        path = paths.get(r["id"])
+        if not path:
+            counts["skipped (no file)"] += 1
+            continue
+        raw = path.read_text()
+        indent = len(raw.split("\n")[1]) - len(raw.split("\n")[1].lstrip()) if "\n" in raw else 2
+        d = json.loads(raw)
+        old = d.get("latin") or ""
+        new_latin, action = decide_latin(old, fipat, bool(dec), [ta2_la] if tna_la else [])
+        if action == "replaced":
+            syn = list(d.get("synonyms") or [])
+            if norm(old) not in {norm(x) for x in syn}:
+                syn.append(old)
+            d["synonyms"] = syn
+        if new_latin:
+            d = _insert_after(d, "synonyms", "latin", new_latin)
+            d = _insert_after(d, "latin", "names", {**(d.get("names") or {}), "tr": new_latin})
+        # Turkish search synonyms
+        it = wd.get(pick["wd"]) if pick["wd"] else None
+        tr: list[str] = []
+        if it:
+            tr += [it.get("tr", "")] + it.get("tr_aliases", []) + [it.get("trwiki", "")] + redirects.get(it.get("trwiki", ""), [])
+        taken = {norm(x) for x in [new_latin, d["name"]] + list(d.get("synonyms") or [])}
+        seen: set[str] = set()
+        tr_syn = []
+        for t in tr:
+            t = t.strip()
+            k = norm(t)
+            if t and k and k not in taken and k not in seen and not is_abbrev(t):
+                seen.add(k)
+                tr_syn.append(t)
+        if tr_syn:
+            d = _insert_after(d, "names", "synonymsByLang", {**(d.get("synonymsByLang") or {}), "tr": tr_syn})
+        elif "synonymsByLang" in d and "tr" in d["synonymsByLang"]:
+            del d["synonymsByLang"]["tr"]
+            if not d["synonymsByLang"]:
+                del d["synonymsByLang"]
+        text = json.dumps(d, indent=indent, ensure_ascii=False) + "\n"
+        changed = text != raw
+        if changed and not a.dry_run:
+            path.write_text(text)
+        counts[action] += 1
+        counts["files changed" if changed else "files unchanged"] += 1
+        log.append({"id": r["id"], "kind": r["kind"], "action": action, "old": old, "new": new_latin, "fipat": fipat,
+                    "source": "tna " + pick["tna"] if pick["tna"] else "ta2 " + pick["ta2"] if pick["ta2"] else "", "tr": tr_syn,
+                    "decision": dec, "relation": relation})
+    L = ["# Apply log", "", f"`tools/i18n/terms.py apply`{' --dry-run' if a.dry_run else ''}: " +
+         ", ".join(f"{k} {v}" for k, v in sorted(counts.items())), "",
+         "| entry | action | Latin before | Latin after | FIPAT (source) | Turkish synonyms |", "|---|---|---|---|---|---|"]
+    for e in sorted(log, key=lambda e: (e["action"], e["id"])):
+        L.append(f"| `{e['id']}` | {e['action']} | {e['old']} | {e['new']} | {e['fipat']} ({e['source']}) | {'; '.join(e['tr'])} |")
+    (REVIEW / "apply-log.md").write_text("\n".join(L) + "\n")
+    print(f"apply{' (dry run)' if a.dry_run else ''}: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())))
+    print(f"  log: {REVIEW / 'apply-log.md'}")
+
+
 def selftest() -> None:
     assert norm("Nucleus nervi abducentis") == "nucleus nervi abducentis"
     assert norm("Broca's area") == "broca area"
@@ -949,6 +1108,16 @@ def selftest() -> None:
     assert "Middle temporal gyrus" in name_variants("Middle temporal gyrus, posterior division")
     assert is_abbrev("SMA") and is_abbrev("V1") and is_abbrev("CA1") and not is_abbrev("Pons") and not is_abbrev("Broca")
     assert _stem("reticulospinales") == _stem("reticulospinalis") == "reticulospinal" and _stem("tractus") == "tract"
+    assert latin_variant("Arteria cerebri anterior", "Arteria anterior cerebri")
+    assert latin_variant("Ganglion trigeminale (Gasseri)", "Ganglion trigeminale")
+    assert latin_variant("Corpora mammillaria", "Corpus mamillare") is False   # different spelling of the stem: not a variant
+    assert latin_variant("Nucleus ventralis posterolateralis thalami", "Nucleus ventralis posterolateralis")
+    assert not latin_variant("Aqueductus cerebri", "Aqueductus mesencephali")
+    assert decide_latin("", "Oliva", False) == ("Oliva", "set")
+    assert decide_latin("Nucleus olivaris inferior", "Oliva", False) == ("Nucleus olivaris inferior", "kept-differs")
+    assert decide_latin("Aqueductus cerebri", "Aqueductus mesencephali", True) == ("Aqueductus mesencephali", "replaced")
+    assert decide_latin("Crus cerebri", "Pedunculus cerebri", True, ["Crus cerebri"]) == ("Crus cerebri", "same")
+    assert list(_insert_after({"a": 1, "b": 2}, "a", "x", 0)) == ["a", "x", "b"]
     assert _numerals("lobule ix") == {"ix"} and _numerals("lobule viiia") == {"viiia"} and _numerals("cuneiform 2") == {"2"}
     # row assembly: a synthetic page of words (x0, y0, x1, y1, text)
     words = [(72, 73, 87, 82, "5881"), (106, 73, 137, 82, "Substantia"), (139, 73, 153, 82, "nigra"),
@@ -987,6 +1156,8 @@ def main(argv=None) -> None:
     sub.add_parser("table", help="write content/i18n/review/terms-review.csv and .md")
     s = sub.add_parser("show", help="print every candidate for one atlas entry")
     s.add_argument("id")
+    ap_ = sub.add_parser("apply", help="write the reviewed Latin terms and Turkish names into content/data/")
+    ap_.add_argument("--dry-run", action="store_true", help="write only the log")
     a = ap.parse_args(argv)
     if a.selftest:
         return selftest()
@@ -996,6 +1167,8 @@ def main(argv=None) -> None:
         return cmd_table(a)
     if a.cmd == "show":
         return cmd_show(a)
+    if a.cmd == "apply":
+        return cmd_apply(a)
     ap.print_help()
 
 

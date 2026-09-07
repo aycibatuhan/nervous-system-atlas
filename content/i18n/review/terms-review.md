@@ -25,8 +25,8 @@ Sources: TA2 7112 rows, TNA 4398 rows, Wikidata 5923 items with a TA98/TA2 id (7
 | relation | rows | meaning |
 |---|---|---|
 | exact | 197 | same concept, matched by its Latin or English term |
-| synonym | 59 | same concept, matched through a synonym (or linked from another source) |
-| narrower | 31 | the FIPAT term is one component of a broader atlas entry (a pathway, an "A and B" entry) |
+| synonym | 58 | same concept, matched through a synonym (or linked from another source) |
+| narrower | 32 | the FIPAT term is one component of a broader atlas entry (a pathway, an "A and B" entry) |
 | broader | 25 | the FIPAT term encompasses an atlas subdivision ("X, anterior division") |
 | fuzzy | 10 | spelling-distance match, to be checked |
 | related | 80 | no single FIPAT concept; related FIPAT terms are listed in `alt` |
@@ -257,7 +257,7 @@ Sources: TA2 7112 rows, TNA 4398 rows, Wikidata 5923 items with a TA98/TA2 id (7
 - `tract-uncinate-fasciculus` Uncinate fasciculus; TA2 5600 *Fasciculus uncinatus cerebri*; TNA 2460 *Fasciculus uncinatus*
 - `pathway-reticulospinal` Reticulospinal tracts; TA2 6117 *Tractus reticulospinalis anterior*; TNA 1179 *Tractus reticulospinales*
 
-### Narrower: the FIPAT term is a component of the entry (31)
+### Narrower: the FIPAT term is a component of the entry (32)
 
 - `arteries-thalamoperforating` Thalamoperforating and thalamogeniculate arteries; TNA 573 *Arteria thalami perforans*; alt: tna:577 "Arteria thalamogeniculata" (en)
 - `cerebellar-cortex-layers` Cerebellar cortex: layers and circuit; TA2 5834 *Cortex cerebelli*; TNA 1621 *Cortex cerebelli*; alt: ta2:2841 "Papillae foliatae" (syn)
@@ -283,6 +283,7 @@ Sources: TA2 7112 rows, TNA 4398 rows, Wikidata 5923 items with a TA98/TA2 id (7
 - `spinal-trigeminal-nucleus-tract` Spinal trigeminal nucleus and tract — ours *Nucleus et tractus spinalis nervi trigemini*; TA2 6001 *Nucleus spinalis nervi trigemini*; TNA 994 *Nucleus spinalis nervi trigemini*
 - `subarachnoid-space-cisterns` Subarachnoid space and basal cisterns — ours *Spatium subarachnoideum; cisternae subarachnoideae*; TA2 5387 *Spatium subarchnoidale*; TNA 265 *Spatium subarachnoideum*; alt: tna:282 "Cisternae subarachnoideae" (latin)
 - `superior-olivary-complex` Superior olivary complex and lateral lemniscus; TA2 5866 *Lemniscus lateralis*; TNA 1337 *Lemniscus lateralis*; alt: ta2:5960 "Corpus trapezoideum" (syn) | ta2:5937 "Nucleus olivaris superior" (syn) | tna:1236 "Complexus olivaris superior" (en) | tna:1332 "Corpus trapezoideum" (syn) | wd:Q1817033 "lateral lemniscus" (en) | wd:Q7835580 "trapezoid body" (syn)
+- `thalamus-pulvinar-medial-centrolateral` Medial pulvinar / centrolateral group; TA2 5685 *Nuclei intralaminares thalami*; TNA 1813 *Nuclei intralaminares thalami*
 - `thalamus-va-vl` Ventral anterior and ventral lateral nuclei (VA/VL) — ours *Nucleus ventralis anterior; nucleus ventralis lateralis*; TA2 5688 *Nucleus ventralis anterior*; TNA 1826 *Nucleus ventralis anterior*; alt: ta2:5689 "Nuclei ventrales laterales" (en) | tna:1829 "Nuclei ventrales laterales" (en)
 - `trigeminal-nuclei` Trigeminal sensory and motor nuclei; TNA 850 *Lamina spinalis IX*
 - `vein-great-cerebral` Great cerebral vein and deep venous system — ours *Vena magna cerebri (Galeni); venae cerebri internae*; TA2 4922 *Vena magna cerebri*; TNA 648 *Vena cerebri magna*; alt: ta2:4923 "Vena interna cerebri" (syn) | wd:Q6047801 "Internal cerebral veins" (syn)

@@ -203,7 +203,7 @@ function collectMeshIds(v: unknown, out: Set<string>): void {
   for (const x of Object.values(o)) collectMeshIds(x, out);
 }
 const bundle = { generated: new Date().toISOString(), bibliography, structures: {} as Record<string, unknown>, pathways: {} as Record<string, unknown>, syndromes: {} as Record<string, unknown>, glossary: {} as Record<string, unknown>, quiz: {} as Record<string, unknown>, topics: {} as Record<string, unknown>, meshToStructure: {} as Record<string, string>, wordCounts: wc };
-const searchDocs: { id: string; kind: string; name: string; aliases: string[]; summary: string }[] = [];
+const searchDocs: { id: string; kind: string; name: string; names?: { tr?: string }; latin?: string; aliases: string[]; summary: string }[] = [];
 for (const { e } of entries) {
   const html: Record<string, string> = {};
   for (const f of htmlFields[e.kind] ?? []) { const v = get(e as unknown as Record<string, unknown>, f); if (typeof v === 'string') html[f] = render(v); }
@@ -235,9 +235,12 @@ for (const { e } of entries) {
     else if (!(m in bundle.meshToStructure)) bundle.meshToStructure[m] = e.id;
   }
   const name = 'name' in e ? e.name : (e as { term?: string }).term ?? e.id;
-  const aliases = 'synonyms' in e ? e.synonyms : 'eponyms' in e ? e.eponyms : [];
+  const latin = 'latin' in e ? e.latin : undefined;
+  const names = 'names' in e && e.names && Object.keys(e.names).length ? e.names : undefined;
+  // the Latin term and the Turkish synonyms are searchable in every locale; the locale only changes what is displayed
+  const aliases = [...('synonyms' in e ? e.synonyms : 'eponyms' in e ? e.eponyms : []), ...(latin ? [latin] : []), ...('synonymsByLang' in e ? e.synonymsByLang?.tr ?? [] : [])];
   const summary = 'summary' in e ? e.summary : 'presentation' in e ? (e as { presentation: string }).presentation : 'definition' in e ? (e as { definition: string }).definition : '';
-  searchDocs.push({ id: e.id, kind: e.kind, name, aliases, summary: summary.slice(0, 200) });
+  searchDocs.push({ id: e.id, kind: e.kind, name, ...(names ? { names } : {}), ...(latin ? { latin } : {}), aliases, summary: summary.slice(0, 200) });
 }
 // structures referenced by syndromes get a back-link
 for (const s of Object.values(bundle.syndromes) as { id: string; localisation: { structures: string[] } }[]) {

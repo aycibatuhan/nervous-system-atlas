@@ -6,7 +6,13 @@ export interface BibEntry {
   container: string; publisher?: string; url: string; nbk?: string; doi?: string; pmid?: string; pmcid?: string;
   license?: string; accessed: string; verified: true; tags: string[];
 }
-export interface ContentEntryBase { kind: string; id: string; name: string; synonyms?: string[]; summary?: string; citations: Citation[]; status?: string; html?: Record<string, string> }
+export type Locale = 'en' | 'tr';
+/** Per-locale display names: `tr` is the Latin term (Turkish medical teaching names structures in Latin); absent = fall back to `name`. */
+export interface LocalNames { tr?: string }
+export interface ContentEntryBase {
+  kind: string; id: string; name: string; synonyms?: string[]; latin?: string; names?: LocalNames; synonymsByLang?: { tr?: string[] };
+  summary?: string; citations: Citation[]; status?: string; html?: Record<string, string>;
+}
 export interface ContentBundle {
   generated: string;
   bibliography: Record<string, BibEntry>;

@@ -138,7 +138,7 @@ export function parseYaml(src: string): Y {
 }
 
 // ---------------------------------------------------------------- sources ----
-export interface SourceEntry { id: string; name?: string; group?: string; license: string; citation: string; manual?: boolean; generated?: boolean; files?: { url: string; dest?: string }[] }
+export interface SourceEntry { id: string; name?: string; group?: string; license: string; citation: string; manual?: boolean; generated?: boolean; api?: string; files?: { url: string; dest?: string }[] }
 export interface LicenseEntry { name: string; url: string; attribution?: string; nc?: boolean; no_redistribution?: boolean }
 
 export function readSources(file = SOURCES): { licenses: Record<string, LicenseEntry>; sources: SourceEntry[] } {
@@ -209,7 +209,7 @@ export function renderNotice(root = ROOT): string {
   L.push(wrap('Sources whose licence is non-commercial or forbids redistribution are marked below; the meshes and volumes derived from them are flagged `nc` / `noRedistribution` in public/data/manifest.json and are excluded from the public edition of the atlas.', 78, ''));
   L.push('');
 
-  for (const s of sources) {
+  const block = (s: SourceEntry): void => {
     const lic = licenses[s.license];
     if (!lic) throw new Error(`source ${s.id}: unknown licence ${s.license}`);
     L.push(`--- ${s.id} ---`);
@@ -222,6 +222,9 @@ export function renderNotice(root = ROOT): string {
     if (s.generated) {
       L.push('  Generated:   produced on this machine by the pipeline, not downloaded');
       L.push(`               (pipeline/raw/${s.id}/SOURCE.json records the tool, its version and the command)`);
+    } else if (s.api) {
+      L.push(`  Accessed:    ${s.api}`);
+      L.push('               (live API, read by tools/i18n/terms.py and cached under reference/terms/; nothing is downloaded as a file)');
     } else {
       L.push(`  Download:    ${urls[0] ?? ''}`);
       for (const u of urls.slice(1)) L.push(`               ${u}`);
@@ -232,7 +235,16 @@ export function renderNotice(root = ROOT): string {
       L.push(`  *** ${why.toUpperCase()} - EXCLUDED FROM THE PUBLIC EDITION ***`);
     }
     L.push('');
-  }
+  };
+  for (const s of sources.filter((x) => x.group !== 'terms')) block(s);
+
+  L.push(rule);
+  L.push('TERMINOLOGY');
+  L.push(rule);
+  L.push('');
+  L.push(wrap('The Latin structure names (`latin`, and the Turkish display names `names.tr`) and the Turkish search synonyms (`synonymsByLang.tr`) in content/ come from the sources below, matched to the atlas entries by tools/i18n/terms.py and reviewed by hand. The FIPAT terminologies are published as PDFs under CC BY-ND 4.0; only the terms are used, which FIPAT places in the public domain, and the PDFs are not redistributed. Wikidata is CC0. Turkish Wikipedia titles are CC BY-SA 4.0, the licence of the atlas content.', 78, ''));
+  L.push('');
+  for (const s of sources.filter((x) => x.group === 'terms')) block(s);
 
   L.push(rule);
   L.push('SOFTWARE');

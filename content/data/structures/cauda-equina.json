@@ -9,7 +9,7 @@
   ],
   "summary": "The bundle of lumbar, sacral and coccygeal nerve roots that descends below the conus medullaris inside the lumbar cistern to reach their intervertebral foramina, produced by the differential growth of the vertebral column over the cord. They are peripheral nerve roots, so their compression by a large central disc, tumor or hematoma causes a lower motor neuron syndrome: asymmetric leg weakness, radicular pain, saddle sensory loss and late sphincter failure. It is a surgical emergency, and the roots float in CSF, which is what makes lumbar puncture below L2 safe.",
   "anatomy": {
-    "location": "Lumbar cistern of the subarachnoid space from the conus at L1\u2013L2 down to the end of the dural sac at S2, surrounding the filum terminale; the roots arrange themselves with the lower sacral roots central and the higher lumbar roots lateral.",
+    "location": "Lumbar cistern of the subarachnoid space from the conus at L1–L2 down to the end of the dural sac at S2, surrounding the filum terminale; the roots arrange themselves with the lower sacral roots central and the higher lumbar roots lateral.",
     "subdivisions": []
   },
   "connections": {
@@ -17,7 +17,7 @@
     "efferents": [],
     "pathways": []
   },
-  "function": "Conveys motor, sensory and autonomic fibers of the L2\u2013S5 roots to and from the lower limbs, perineum and pelvic organs.",
+  "function": "Conveys motor, sensory and autonomic fibers of the L2–S5 roots to and from the lower limbs, perineum and pelvic organs.",
   "bloodSupply": {
     "arteries": [
       "artery-adamkiewicz"
@@ -41,11 +41,11 @@
       {
         "pathology": "Cauda equina syndrome from central disc herniation",
         "modality": "MRI",
-        "finding": "Large L4\u2013L5 or L5\u2013S1 disc filling the canal and compressing the roots.",
+        "finding": "Large L4–L5 or L5–S1 disc filling the canal and compressing the roots.",
         "sequence": "T2"
       },
       {
-        "pathology": "Leptomeningeal metastases / Guillain\u2013Barr\u00e9",
+        "pathology": "Leptomeningeal metastases / Guillain–Barré",
         "modality": "MRI",
         "finding": "Enhancement and thickening of the roots after contrast.",
         "sequence": "T1+Gd"
@@ -74,7 +74,7 @@
       {
         "deficit": "Urinary retention with overflow, fecal incontinence, impotence (later and less symmetric than conus lesions)",
         "side": "bilateral",
-        "mechanism": "Sacral roots S2\u2013S4"
+        "mechanism": "Sacral roots S2–S4"
       },
       {
         "deficit": "Absent ankle jerks with preserved plantars",
@@ -118,6 +118,9 @@
   ],
   "status": "draft",
   "latin": "Cauda equina",
+  "names": {
+    "tr": "Cauda equina"
+  },
   "subsystem": "roots",
   "level": {
     "region": "spinal"

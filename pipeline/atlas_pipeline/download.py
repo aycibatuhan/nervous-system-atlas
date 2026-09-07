@@ -85,8 +85,8 @@ def run(groups: set[str] | None = None, strict: bool = True) -> int:
                 continue
             # a source marked `generated: true` is produced on this machine, not fetched (fastsurfer_cerebellum):
             # it has no URLs and its SOURCE.json records the tool and the command, so leave the folder alone
-            if src.get("generated"):
-                continue
+            if src.get("generated") or src.get("api"):
+                continue                       # produced here (fastsurfer) or read live by tools/i18n/terms.py (wikidata)
             folder = RAW / src["id"]
             folder.mkdir(parents=True, exist_ok=True)
             lic = cfg["licenses"][src["license"]]
