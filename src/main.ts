@@ -78,7 +78,7 @@ async function boot(): Promise<void> {
     ...PRESETS.map((p) => h('div', {}, h('kbd', {}, p.key), ' ', p.label)),
     h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' toggle axial / coronal / sagittal slice'),
     h('div', {}, h('kbd', {}, '↑'), h('kbd', {}, '↓'), ' move the last touched slice'), h('div', {}, h('kbd', {}, 't'), ' T1 / T2'),
-    h('div', {}, h('kbd', {}, 'p'), ' peel at the axial slice'), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' toggle panels'),
+    h('div', {}, h('kbd', {}, 'p'), ' peel at the last slice toggled with a / c / s (each slider also has a peel menu)'), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' toggle panels'),
     h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'A'), '–', h('kbd', {}, 'E'), ' answer quiz'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'),
     h('div', {}, h('kbd', {}, 'Alt'), '+click a system or group in the tree: show only that group'));
   document.getElementById('viewport')!.append(help);
@@ -251,7 +251,7 @@ async function boot(): Promise<void> {
       case 'ArrowUp': setSlices(app, { [lastAxis]: s.slices[lastAxis] + (e.shiftKey ? 5 : 1) }); e.preventDefault(); break;
       case 'ArrowDown': setSlices(app, { [lastAxis]: s.slices[lastAxis] - (e.shiftKey ? 5 : 1) }); e.preventDefault(); break;
       case 't': setContrast(app, s.contrast === 't1w' ? 't2w' : 't1w'); break;
-      case 'p': setPeel(app, 'axial', s.peel.axial ? null : 'positive'); break;
+      case 'p': setPeel(app, lastAxis, s.peel[lastAxis] ? null : 'positive'); break;   // the slice last toggled with a / c / s
       case '[': document.getElementById('app')!.classList.toggle('no-left'); app.sm.resize(); break;
       case ']': document.getElementById('app')!.classList.toggle('no-right'); app.sm.resize(); break;
       case 'Escape': if (s.syndrome) location.hash = '#/slice'; else selectStructure(app, null); break;
