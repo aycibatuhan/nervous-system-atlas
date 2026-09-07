@@ -2,9 +2,14 @@
 // Serve it first:  npx vite preview --outDir dist-public --port 5183
 // Usage:           node scripts/shots-public-edition.mjs [baseURL]
 //
-// Checks: no console/page errors; the manifest really is the public one; a Harvard-Oxford gyrus and a Brainstem
-// Navigator nucleus still open their content and show the "no mesh in this edition" notice; the tree omits the
-// excluded meshes; the cord MRI toggle is hidden because grids.cord is gone.
+// Checks: no console/page errors; the manifest really is the public one; two entries that genuinely have no
+// mesh in this edition still open their content and show the "no mesh in this edition" notice; no Harvard-Oxford
+// gyrus mesh id survives in the manifest; the cord MRI toggle is hidden because grids.cord is gone.
+//
+// The "no mesh" probes have to be picked with care, because most of the entries that lost a mesh have since been
+// given an openly licensed stand-in: gyrus-precentral has the CerebrA/DKT parcels, the locus coeruleus has the
+// Dahl meta mask, the parabrachial, raphe and viscero-sensory-motor entries have landmark-anchored markers, and
+// the cord blocks have their vertebral-landmark variant. The two used below have none.
 import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 
@@ -54,10 +59,10 @@ await shot('01-home');
 const cordVisible = await page.locator('label.cord-mri').isVisible().catch(() => false);
 check(!cordVisible, 'the cord MRI toggle is hidden');
 
-// ---- 3. a Harvard-Oxford gyrus and a Brainstem Navigator nucleus: content opens, no mesh.
-// NOT the locus coeruleus: the public edition ships an LC of its own (the CC BY 4.0 Dahl meta mask,
-// `locus-coeruleus-meta-l/-r`), so that entry does have a mesh here.
-for (const [id, label] of [['gyrus-precentral', '02-gyrus-precentral'], ['nucleus-parabrachial-lateral', '03-nucleus-parabrachial-lateral']]) {
+// ---- 3. two entries with no mesh in this edition: the content opens, the notice shows.
+// Both are Brainstem Navigator nuclei with no open delineation and no landmark-anchored stand-in.
+for (const [id, label] of [['reticular-formation-medullary-inferior', '02-reticular-formation-medullary-inferior'],
+                           ['nucleus-laterodorsal-tegmental', '03-nucleus-laterodorsal-tegmental']]) {
   await page.goto(`${base}/#/structure/${id}`);
   await ready();
   await page.waitForTimeout(800);
@@ -79,20 +84,22 @@ for (const [id, label] of [['gyrus-precentral', '02-gyrus-precentral'], ['nucleu
   await page.waitForTimeout(400);
   const imaging = await page.evaluate(() => document.querySelector('.section')?.textContent ?? '');
   check(!imaging.includes('NaN'), `${id}: the imaging tab has no NaN coordinates`);
-  if (label.startsWith('02')) await shot('04-gyrus-precentral-imaging');
+  if (label.startsWith('02')) await shot('04-no-mesh-imaging');
   await page.evaluate(() => window.atlas.store.set({ contentTab: 'overview' }));
 }
 
-// ---- 4. the tree omits the excluded meshes, a surviving structure still works
+// ---- 4. no excluded gyrus mesh survives, a surviving structure still works.
+// Tested on mesh ids, not on tree labels: the CerebrA/DKT parcels that replace the excluded gyri carry the same
+// anatomical names ("Precentral gyrus"), so a label test would fail on the replacement rather than the original.
 await page.goto(`${base}/#/structure/thalamus-l`);
 await ready();
 await page.waitForTimeout(1200);
 const tree = await page.evaluate(() => ({
   rows: document.querySelectorAll('.tree .row, .tree .leaf').length,
-  mentionsGyrus: (document.querySelector('.tree')?.textContent ?? '').includes('Precentral'),
+  hoGyri: window.atlas.manifest.meshes.filter((m) => /^gyrus-.*-[lr]$/.test(m.id)).map((m) => m.id),
   selected: window.atlas.store.get().selectedId,
 }));
-check(!tree.mentionsGyrus, 'the tree does not list the excluded Harvard-Oxford gyri');
+check(tree.hoGyri.length === 0, `no excluded gyrus-*-l/-r mesh id is in the manifest (${tree.hoGyri.slice(0, 3).join(', ')})`);
 check(tree.selected === 'thalamus-l', `a shipped structure still selects (${tree.selected})`);
 await shot('05-thalamus-selected');
 

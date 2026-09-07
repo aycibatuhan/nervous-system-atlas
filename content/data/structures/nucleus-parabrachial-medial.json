@@ -10,7 +10,9 @@
  "system": "brainstem",
  "meshIds": [
   "nucleus-parabrachial-medial-l",
-  "nucleus-parabrachial-medial-r"
+  "nucleus-parabrachial-medial-r",
+  "nucleus-parabrachial-medial-anchor-l",
+  "nucleus-parabrachial-medial-anchor-r"
  ],
  "summary": "The medial parabrachial nucleus lies against the medial face of the superior cerebellar peduncle, just inside its lateral partner, and is the pontine taste and respiratory relay. In primates the gustatory information that reaches the rostral nucleus of the solitary tract is passed mainly straight to the thalamus, but the medial parabrachial nucleus remains part of the visceral afferent chain and carries taste, gastric and cardiorespiratory signals toward the hypothalamus and the amygdala. Together with the neighboring Kölliker-Fuse nucleus it forms the classical pneumotaxic center, the pontine group that limits the length of inspiration and smooths the switch from breathing in to breathing out; damage in this region produces apneustic breathing, a pattern of prolonged inspiratory gasps that localizes a lesion to the upper pons.",
  "anatomy": {
@@ -134,7 +136,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 47 mm3 per side, the volume published by Singh et al. (2019), centred in the dorsal pontine tegmentum of the upper pons, medial to the superior cerebellar peduncle, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {

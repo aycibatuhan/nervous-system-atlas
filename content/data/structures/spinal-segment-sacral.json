@@ -9,7 +9,8 @@
   ],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-segment-sacral"
+    "spinal-segment-sacral",
+    "spinal-segment-sacral-vert"
   ],
   "summary": "The sacral and coccygeal segments make up the conus medullaris, the tapering tip of the cord that lies opposite the T12 and L1 vertebrae and ends at the L1-L2 disc in most adults. They are the smallest segments but they carry the reflex machinery of the pelvic floor: the parasympathetic nucleus at S2, S3 and S4 that empties the bladder and rectum and produces erection, Onuf nucleus that holds the motor neurons of the external urethral and anal sphincters, and the afferents of the saddle area. A lesion confined to the conus therefore produces early, symmetric retention with overflow incontinence, saddle anesthesia, impotence and absent anal and bulbocavernosus reflexes, with little or no leg weakness, and it is separated from a cauda equina lesion by being symmetric, less painful and less likely to abolish the ankle jerks on one side only.",
   "anatomy": {
@@ -136,7 +137,8 @@
   "pitfalls": [
     "DERIVED MESH: the four cord blocks are cut from the Z-Anatomy cord surface, not segmented on an individual. Their boundaries are now measured rather than assumed: the PAM50 spinal template is reformatted along this cord's own centerline, and each block is cut at the PAM50 C8/T1, T12/L1 and L5/S1 spinal-level boundaries on a plane normal to the local centerline tangent. PAM50 is a template average of adult cords, so the levels are representative rather than personal; use the blocks for orientation, never to read a level off a patient's image.",
     "The conus sits at the T12-L1 vertebral level, so a lumbar puncture below L2 is safe in an adult but not in an infant, whose conus lies lower",
-    "A normal ankle jerk does not exclude a conus lesion, because the sphincter segments can be hit alone"
+    "A normal ankle jerk does not exclude a conus lesion, because the sphincter segments can be hit alone",
+    "PUBLIC EDITION - VERTEBRAL-LANDMARK CUT: the measured block boundaries are spinal-level boundaries of a template whose data may not be redistributed, so the openly shareable build of the atlas ships the older construction instead -- the same Z-Anatomy cord surface cut by horizontal planes at its own vertebral-body landmarks, using the classical cord-segment / vertebra rule (cervical opposite C1-C7, thoracic opposite T1-T9/T10, lumbar opposite T10-T12, sacral and coccygeal opposite T12-L1). Those boundaries are a textbook rule applied to one model, not a measurement, so this block marks roughly where the level sits and nothing more. (This is the S1-S5 and coccygeal block.)"
   ],
   "citations": [
     {

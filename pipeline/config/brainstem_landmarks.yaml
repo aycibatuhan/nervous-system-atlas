@@ -1,0 +1,206 @@
+# Landmark-anchored brainstem nuclei for the PUBLIC edition (atlas_pipeline.derived.landmark_nuclei).
+#
+# WHY
+# ---
+# The 7 T delineations of these nuclei come from the Brainstem Navigator, whose licence forbids
+# redistributing derived files, so the public edition has no surface for them at all. The papers behind
+# that toolkit are open access and publish each nucleus's VOLUME, but no MNI centroid, so a coordinate-
+# anchored copy is impossible. What is possible, and what this file describes, is a *location marker*:
+# an ellipsoid of the published volume, put where a textbook puts the nucleus relative to geometry this
+# atlas already holds under an open licence.
+#
+# Nothing here is read from, measured on, or copied out of Brainstem Navigator files. Every anchor is a
+# voxel set from one of:
+#   aseg   FreeSurfer aseg of the MNI152NLin2009cAsym template (MNI licence)  - 15 = fourth ventricle,
+#          16 = brainstem
+#   massp  MASSP20 subcortical parcellation (MNI licence)                     - 26/27 = periaqueductal grey,
+#          32/33 = inferior colliculus
+#   hcp    HCP1065 averaged tractography atlas (CC BY-SA 4.0)                 - cerebellum/SCP, projection/ML_*;
+#          "{S}" in a file name is replaced by L or R for the side being built
+#
+# HOW AN ANCHOR IS EVALUATED
+# --------------------------
+#   source      the voxel set, as above
+#   within      optional world-mm crop, per axis, applied before anything else (this is how a level is
+#               chosen: "the pons at the trapezoid-body level" is a z band)
+#   split_sides take only the voxels of the side being built
+#   at          one rule per axis (x, y, z) over the cropped voxels:
+#                 centroid   the mean
+#                 min / max  the bounding-box extreme (max y = the anterior-most voxel)
+#                 frac:F     F of the way from the bounding-box minimum to its maximum, so on y it runs
+#                            from the posterior surface (0) to the anterior surface (1)
+#                 mm:V       an absolute world coordinate (mm:0 = the midline)
+#   offset      [dx, dy, dz] in world mm added last; dx is mirrored for the left side
+#   axes        relative semi-axes (x, y, z), scaled so the ellipsoid has exactly `volume_mm3`
+#
+# The ellipsoid is then clipped to the aseg brainstem label dilated by 1 mm, so a marker can never float
+# outside the brainstem, and meshed on a 0.5 mm sub-grid.
+#
+# LEVELS IN THIS TEMPLATE (measured on the aseg brainstem label, for the `within` bands below)
+#   midbrain            z  -22 .. 0     (PAG spans z -22..-4, superior colliculus z -9..-2)
+#   pons                z  -50 .. -22   (the basis pontis reaches y = -19 at its anterior surface)
+#   medulla             z  -72 .. -50
+#   fourth ventricle    z  -58 .. -22 ; it narrows to the central canal below z = -56, so the obex is
+#                       at about z = -57
+#
+# EVERY SIZE IS A PUBLISHED NUMBER, and `volume_ref` names the bibliography entry it comes from. Where a
+# nucleus has no published volume of its own (raphe obscurus, raphe pallidus) the raphe magnus volume from
+# the same table is used and `volume_note` says so.
+nuclei:
+  # ------------------------------------------------------------------ medulla
+  - id: raphe-magnus
+    name: Raphe magnus nucleus
+    subsystem: medulla
+    side: midline
+    colour: "#AC9498"
+    volume_mm3: 16
+    volume_ref: oa-bianciardi-brainstem-nuclei-template
+    volume_note: "16 mm3, the raphe magnus volume of Bianciardi et al. 2015"
+    topography: >-
+      on the midline of the rostral ventromedial medulla, at and just below the pontomedullary junction,
+      in the ventral third of the tegmentum
+    topography_ref: sp-nucleus-raphe
+    axes: [1.0, 1.0, 2.2]
+    anchor:
+      source: {kind: aseg, labels: [16]}
+      within: {z: [-56, -50]}
+      at: {x: "mm:0", y: "frac:0.66", z: "centroid"}
+
+  - id: raphe-obscurus
+    name: Raphe obscurus nucleus
+    subsystem: medulla
+    side: midline
+    colour: "#A69096"
+    volume_mm3: 16
+    volume_ref: oa-bianciardi-brainstem-nuclei-template
+    volume_note: >-
+      16 mm3; no volume for the raphe obscurus is published, so it is sized on the raphe magnus volume of
+      Bianciardi et al. 2015
+    topography: >-
+      on the midline of the dorsal medulla below the obex, dorsal to the raphe magnus and pallidus columns
+    topography_ref: sp-nucleus-raphe
+    axes: [1.0, 1.0, 2.4]
+    anchor:
+      source: {kind: aseg, labels: [16]}
+      within: {z: [-66, -58]}
+      at: {x: "mm:0", y: "frac:0.26", z: "centroid"}
+
+  - id: raphe-pallidus
+    name: Raphe pallidus nucleus
+    subsystem: medulla
+    side: midline
+    colour: "#B29A9E"
+    volume_mm3: 16
+    volume_ref: oa-bianciardi-brainstem-nuclei-template
+    volume_note: >-
+      16 mm3; no volume for the raphe pallidus is published, so it is sized on the raphe magnus volume of
+      Bianciardi et al. 2015
+    topography: >-
+      on the midline of the ventral medulla immediately dorsal to the pyramids, ventral to the raphe magnus
+      column
+    topography_ref: sp-nucleus-raphe
+    axes: [1.0, 1.0, 2.4]
+    anchor:
+      source: {kind: aseg, labels: [16]}
+      within: {z: [-64, -56]}
+      at: {x: "mm:0", y: "frac:0.80", z: "centroid"}
+
+  - id: nuclei-viscero-sensory-motor
+    name: Viscero-sensory-motor nuclei complex
+    subsystem: medulla
+    side: paired
+    colour: "#A6A0AC"
+    volume_mm3: 86
+    volume_ref: oa-singh-parabrachial-vestibular-vsm-atlas
+    volume_note: "about 86 mm3 per side (Singh et al. 2019, Table 1)"
+    topography: >-
+      in the dorsomedial medulla just deep to the floor of the fourth ventricle, at and below the obex: the
+      solitary nucleus and tract with the dorsal motor nucleus of the vagus medial to it and the nucleus
+      ambiguus ventral to both
+    topography_ref: sp-nucleus-solitarius
+    axes: [1.0, 1.0, 2.6]
+    anchor:
+      source: {kind: aseg, labels: [15]}          # fourth ventricle: its floor is the landmark
+      within: {z: [-60, -48]}
+      at: {x: "mm:0", y: "max", z: "centroid"}    # max y = the anterior wall, i.e. the rhomboid floor
+      offset: [3.5, 2.5, 0.0]                     # ventrolateral to the floor (dx mirrored on the left)
+
+  # ------------------------------------------------------------------ pons
+  - id: superior-olivary-complex
+    name: Superior olivary complex
+    subsystem: pons
+    side: paired
+    colour: "#C2A89A"
+    volume_mm3: 18
+    volume_ref: oa-garcia-gomar-colliculi-geniculate-atlas
+    volume_note: "16 mm3 on the right and 20 mm3 on the left (Garcia-Gomar et al. 2019, Table 1)"
+    topography: >-
+      in the ventrolateral pontine tegmentum at the level of the trapezoid body, lateral and slightly
+      ventral to the medial lemniscus
+    topography_ref: sp-superior-and-inferior-olivary-nucleus
+    axes: [1.5, 1.0, 1.0]
+    anchor:
+      source: {kind: hcp, file: "projection/ML_{S}"}   # the medial lemniscus of the side being built
+      within: {z: [-48, -40]}
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [2.0, 6.0, 0.0]
+
+  - id: nucleus-parabrachial-lateral
+    name: Lateral parabrachial nucleus
+    subsystem: pons
+    side: paired
+    colour: "#AC949A"
+    volume_mm3: 54
+    volume_ref: oa-singh-parabrachial-vestibular-vsm-atlas
+    volume_note: "about 54 mm3 per side (Singh et al. 2019, Table 1)"
+    topography: >-
+      in the dorsolateral pontine tegmentum of the upper pons, wrapped around the lateral side of the
+      superior cerebellar peduncle
+    topography_ref: sp-brainstem
+    axes: [1.0, 1.0, 1.7]
+    anchor:
+      source: {kind: hcp, file: "cerebellum/SCP"}
+      within: {z: [-28, -20]}
+      split_sides: true
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [3.5, 5.0, 0.0]
+
+  - id: nucleus-parabrachial-medial
+    name: Medial parabrachial nucleus
+    subsystem: pons
+    side: paired
+    colour: "#B49CA2"
+    volume_mm3: 47
+    volume_ref: oa-singh-parabrachial-vestibular-vsm-atlas
+    volume_note: "about 47 mm3 per side (Singh et al. 2019, Table 1)"
+    topography: >-
+      in the dorsal pontine tegmentum of the upper pons, on the medial side of the superior cerebellar
+      peduncle, between the peduncle and the fourth ventricle
+    topography_ref: sp-brainstem
+    axes: [1.0, 1.0, 1.7]
+    anchor:
+      source: {kind: hcp, file: "cerebellum/SCP"}
+      within: {z: [-28, -20]}
+      split_sides: true
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [-2.5, 3.0, 0.0]
+
+  # ------------------------------------------------------------------ midbrain
+  - id: reticular-formation-mesencephalic
+    name: Mesencephalic reticular formation
+    subsystem: midbrain
+    side: paired
+    colour: "#B8A39B"
+    volume_mm3: 371
+    volume_ref: oa-singh-mesencephalic-reticular-formation-atlas
+    volume_note: "373 mm3 on the right and 369 mm3 on the left (Singh et al. 2021, Table 1)"
+    topography: >-
+      the midbrain tegmentum lateral and ventral to the periaqueductal grey, running the whole
+      rostro-caudal length of the midbrain
+    topography_ref: sp-reticular-activating-system
+    axes: [1.0, 1.0, 1.8]
+    anchor:
+      source: {kind: massp, labels: [26, 27]}      # periaqueductal grey
+      split_sides: true
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [7.0, 1.0, 0.0]

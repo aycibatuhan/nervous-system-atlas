@@ -10,7 +10,9 @@
  "meshIds": [
   "brainstem",
   "nucleus-superior-olivary-l",
-  "nucleus-superior-olivary-r"
+  "nucleus-superior-olivary-r",
+  "superior-olivary-complex-anchor-l",
+  "superior-olivary-complex-anchor-r"
  ],
  "summary": "The first binaural station of the auditory pathway. Axons from the cochlear nuclei cross in the trapezoid body of the caudal pons and converge on the superior olivary complex of both sides, whose neurons compare timing (medial superior olive) and intensity (lateral superior olive) between the two ears to localize sound. Output ascends in the lateral lemniscus to the inferior colliculus. The complex also gives rise to the olivocochlear bundle that tunes the outer hair cells and to the efferent limb of the stapedius reflex through the facial nucleus.",
  "anatomy": {
@@ -107,7 +109,9 @@
    "Brainstem auditory evoked potentials map lesions of this pathway wave by wave"
   ]
  },
- "pitfalls": [],
+ "pitfalls": [
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 18 mm3 per side, the 16 mm3 right and 20 mm3 left volumes published by Garcia-Gomar et al. (2019), centred in the ventrolateral pontine tegmentum at the level of the trapezoid body, lateral to the medial lemniscus, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
+ ],
  "citations": [
   {
    "ref": "sp-superior-and-inferior-olivary-nucleus",

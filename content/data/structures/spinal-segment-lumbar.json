@@ -9,7 +9,8 @@
   ],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-segment-lumbar"
+    "spinal-segment-lumbar",
+    "spinal-segment-lumbar-vert"
   ],
   "summary": "The five lumbar cord segments are packed into the vertebral canal opposite the T10, T11 and T12 vertebral bodies, far above the lumbar vertebrae they are named for, and together with the upper sacral segments they form the lumbosacral enlargement whose broad anterior horns supply the leg. The L1 and L2 segments carry the last of the sympathetic outflow and the cremasteric reflex, L2 to L4 supply the hip flexors, adductors and quadriceps and the knee jerk, and L4 and L5 supply ankle dorsiflexion, inversion and eversion. Their long roots have to travel far down the canal to reach their own foramina, so they run in the cauda equina beside the cord itself. A lesion confined to these segments, the epiconus syndrome, gives weak hips and knees with a preserved knee jerk pattern that shifts as the level rises, an absent ankle jerk, and less bladder involvement than a true conus lesion.",
   "anatomy": {
@@ -129,7 +130,8 @@
   "pitfalls": [
     "DERIVED MESH: the four cord blocks are cut from the Z-Anatomy cord surface, not segmented on an individual. Their boundaries are now measured rather than assumed: the PAM50 spinal template is reformatted along this cord's own centerline, and each block is cut at the PAM50 C8/T1, T12/L1 and L5/S1 spinal-level boundaries on a plane normal to the local centerline tangent. PAM50 is a template average of adult cords, so the levels are representative rather than personal; use the blocks for orientation, never to read a level off a patient's image.",
     "The lumbar cord segments lie opposite the T10-T12 vertebrae, several levels above the lumbar vertebrae of the same name",
-    "Weakness from lumbar cord segments is bilateral and symmetric; asymmetric weakness with radicular pain is more likely root disease"
+    "Weakness from lumbar cord segments is bilateral and symmetric; asymmetric weakness with radicular pain is more likely root disease",
+    "PUBLIC EDITION - VERTEBRAL-LANDMARK CUT: the measured block boundaries are spinal-level boundaries of a template whose data may not be redistributed, so the openly shareable build of the atlas ships the older construction instead -- the same Z-Anatomy cord surface cut by horizontal planes at its own vertebral-body landmarks, using the classical cord-segment / vertebra rule (cervical opposite C1-C7, thoracic opposite T1-T9/T10, lumbar opposite T10-T12, sacral and coccygeal opposite T12-L1). Those boundaries are a textbook rule applied to one model, not a measurement, so this block marks roughly where the level sits and nothing more. (This is the L1-L5 block.)"
   ],
   "citations": [
     {

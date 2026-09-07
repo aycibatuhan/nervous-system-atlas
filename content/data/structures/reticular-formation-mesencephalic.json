@@ -16,7 +16,9 @@
   "reticular-formation-mesencephalic-dorsal-l",
   "reticular-formation-mesencephalic-dorsal-r",
   "reticular-formation-mesencephalic-lateral-l",
-  "reticular-formation-mesencephalic-lateral-r"
+  "reticular-formation-mesencephalic-lateral-r",
+  "reticular-formation-mesencephalic-anchor-l",
+  "reticular-formation-mesencephalic-anchor-r"
  ],
  "summary": "The mesencephalic reticular formation is the diffuse core of the midbrain tegmentum, lying between the periaqueductal gray behind, the red nucleus and substantia nigra in front and the medial lemniscus laterally. It is the rostral end of the ascending reticular activating system, the point at which brainstem arousal signals hand over to the thalamus, the hypothalamus and the basal forebrain, and lesions here cause coma more reliably than lesions anywhere else in the brainstem. Embedded within it are the premotor structures for vertical gaze, the interstitial nucleus of Cajal and the rostral interstitial nucleus of the medial longitudinal fasciculus, so the same region controls upward and downward saccades, ocular torsion and head-eye coordination. The 7 T atlas divides it into anterior, dorsal and lateral parts, which the atlas offers as hidden subdivisions of this structure.",
  "anatomy": {
@@ -166,7 +168,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 371 mm3 per side, the 373 mm3 right and 369 mm3 left volumes published by Singh et al. (2021), centred in the midbrain tegmentum lateral and ventral to the periaqueductal grey, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {
@@ -177,6 +180,9 @@
   },
   {
    "ref": "sp-coma"
+  },
+  {
+   "ref": "oa-edlow-aan-wakefulness-connectivity"
   }
  ],
  "tags": [

@@ -262,6 +262,53 @@ sources:
         dest: LCmetaMask_left_MNI05_s01f_plus50.nii.gz
       - url: https://osf.io/download/zcrxe/
         dest: LCmetaMask_right_MNI05_s01f_plus50.nii.gz
+  # ---------------- Harvard Ascending Arousal Network atlas (public edition) ----------------
+  # Edlow/Kinney (Massachusetts General Hospital), "Harvard Ascending Arousal Network Atlas - Version 2.0",
+  # Dryad doi:10.5061/dryad.zw3r228d2, released under CC0 1.0 (verified live against
+  # https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.zw3r228d2, which reports
+  # "license: https://spdx.org/licenses/CC0-1.0.html"). Twenty-five files: one whole-brainstem label volume with
+  # a FreeSurfer colour LUT, a README, and per-node ROIs in FSL MNI152 1 mm space for DR, LC, LDTg, MnR, mRt,
+  # PAG, PBC, PnO, PTg and VTA (most of them as a midline/bilateral file plus a _L and an _R file).
+  #
+  # MANUAL, and not by choice: Dryad no longer serves file bytes to a script. /api/v2/files/<id>/download
+  # answers 401 "must have current bearer token", and the browser path /downloads/file_stream/<id> is behind an
+  # Anubis proof-of-work anti-bot interstitial. Neither is something this pipeline may work around, so the eight
+  # lateralised ROIs the atlas needs are listed here with their Dryad download URLs and the sha256 digests Dryad
+  # publishes for them (pre-seeded in sources.lock.yaml): download them in a browser from
+  # https://datadryad.org/dataset/doi:10.5061/dryad.zw3r228d2, drop them in pipeline/raw/aan_atlas/, and
+  # `atlas-download --with brainstem-open` will verify every digest before `atlas-aan` meshes them.
+  #
+  # Only the nuclei with no open mesh yet are listed: LC already has the Dahl meta mask, and PAG, VTA, DR, MnR
+  # and PTg (= the pedunculopontine nucleus) already come from MASSP20, which ships in both editions.
+  - id: aan_atlas
+    name: "Harvard Ascending Arousal Network Atlas v2.0"
+    group: brainstem-open
+    license: CC0-1.0
+    manual: true
+    citation: "Edlow BL, Kinney HC, et al. Harvard Ascending Arousal Network Atlas - Version 2.0. Dryad 2023;
+      doi:10.5061/dryad.zw3r228d2 (CC0 1.0). Atlas described in Edlow BL et al. Neuroanatomic connectivity of the
+      human ascending arousal network. J Neuropathol Exp Neurol 2012;71(6):531-546."
+    files:
+      - url: https://datadryad.org/api/v2/files/2419155/download
+        dest: AAN_PBC_L_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419154/download
+        dest: AAN_PBC_R_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419147/download
+        dest: AAN_LDTg_L_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419149/download
+        dest: AAN_LDTg_R_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419160/download
+        dest: AAN_PnO_L_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419159/download
+        dest: AAN_PnO_R_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419157/download
+        dest: AAN_mRt_L_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419152/download
+        dest: AAN_mRt_R_MNI152_1mm_v2p0.nii
+      - url: https://datadryad.org/api/v2/files/2419168/download
+        dest: README.md
+      - url: https://datadryad.org/api/v2/files/2419165/download
+        dest: AAN_Brainstem_v2p0_Color_LUT_FreeSurfer.txt
   - id: brainstem_navigator
     name: "Brainstem Navigator v1.0 (in vivo 7 T brainstem nuclei)"
     group: manual

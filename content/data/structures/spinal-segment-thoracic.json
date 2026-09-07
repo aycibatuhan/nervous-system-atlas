@@ -8,7 +8,8 @@
   ],
   "system": "spinal-cord",
   "meshIds": [
-    "spinal-segment-thoracic"
+    "spinal-segment-thoracic",
+    "spinal-segment-thoracic-vert"
   ],
   "summary": "The thoracic cord is the long, slender middle third of the cord, the part with the smallest cross-section, the poorest blood supply and the narrowest bony canal, which together make it the segment where compression and infarction do the most damage for the least warning. It has no limb enlargement, so its anterior horns are small and supply only the intercostal and abdominal muscles, but its lateral horn runs the entire sympathetic outflow of the body from T1 to L2, and the T1 segment supplies the sympathetic fibers of the head. Because the thoracic dermatomes wrap the trunk in neat bands, a lesion here declares itself as a sensory level: the nipple line is T4, the xiphisternum T6 and the umbilicus T10. A complete thoracic lesion gives spastic paraplegia with a sensory level and a neurogenic bladder, with normal arms.",
   "anatomy": {
@@ -131,7 +132,8 @@
   "pitfalls": [
     "DERIVED MESH: the four cord blocks are cut from the Z-Anatomy cord surface, not segmented on an individual. Their boundaries are now measured rather than assumed: the PAM50 spinal template is reformatted along this cord's own centerline, and each block is cut at the PAM50 C8/T1, T12/L1 and L5/S1 spinal-level boundaries on a plane normal to the local centerline tangent. PAM50 is a template average of adult cords, so the levels are representative rather than personal; use the blocks for orientation, never to read a level off a patient's image.",
     "Thoracic cord segments lie two to three vertebrae above the bone of the same number, so a T10 sensory level is not a T10 vertebral lesion",
-    "The mid-thoracic cord is the watershed of the spinal circulation and infarcts there with little warning"
+    "The mid-thoracic cord is the watershed of the spinal circulation and infarcts there with little warning",
+    "PUBLIC EDITION - VERTEBRAL-LANDMARK CUT: the measured block boundaries are spinal-level boundaries of a template whose data may not be redistributed, so the openly shareable build of the atlas ships the older construction instead -- the same Z-Anatomy cord surface cut by horizontal planes at its own vertebral-body landmarks, using the classical cord-segment / vertebra rule (cervical opposite C1-C7, thoracic opposite T1-T9/T10, lumbar opposite T10-T12, sacral and coccygeal opposite T12-L1). Those boundaries are a textbook rule applied to one model, not a measurement, so this block marks roughly where the level sits and nothing more. (This is the T1-T12 block.)"
   ],
   "citations": [
     {

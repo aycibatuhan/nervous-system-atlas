@@ -11,9 +11,19 @@
 // (src/ui/sourceLine.ts labels every licence; the cord toggle says "PAM50 spinal cord template"), which is
 // vocabulary, not data.
 //
-// Three deliberate, reported exceptions, all inside content.json / search-index.json (authored prose):
-//  * ten ids name both an excluded mesh and an authored entry that describes it (filum-terminale, the cord
-//    segment blocks). The entry keeps its own id; the structural pass proves no mesh field points at them.
+// Ids are matched on whole tokens, never as bare substrings: `"<id>"` (a quoted id) or `/<id>` followed by
+// something that is not another id character. The public edition ships ids that *extend* an excluded one --
+// `spinal-segment-cervical-vert` for the excluded `spinal-segment-cervical`, `raphe-magnus-anchor` for the
+// excluded `raphe-magnus` -- and a bare substring test would fail on their file paths.
+//
+// Deliberate, reported exceptions, all for ids that name both an excluded mesh and an authored entry:
+//  * inside content.json / search-index.json (authored prose): filum-terminale, the cord segment blocks and
+//    the midline raphe nuclei. The entry keeps its own id; the structural pass proves no mesh field points
+//    at them.
+//  * inside data/manifest.json, the quoted form only: a shipped mesh names its content entry in
+//    `structureId`, and for those structures that id is also the excluded mesh's id. The structural pass
+//    above (manifest.meshes carries no excluded id) is what proves the mesh itself is gone; file paths are
+//    still matched in full.
 //  * the dataset names occur as citations and teaching notes ("the group probability map of the Brainstem
 //    Navigator..."). Naming a dataset is attribution, not redistribution.
 //  * a bibliography entry is tagged "pam50", which happens to equal a restricted source id. The content bundle
@@ -33,6 +43,12 @@ const PROSE_FILES = ['data/content.json', 'data/search-index.json'];
 const fail: string[] = [];
 const note: string[] = [];
 const bad = (m: string) => fail.push(m);
+
+// Whole-token id matching. `spinal-segment-cervical-vert` and `raphe-magnus-anchor` are public ids that
+// begin with an excluded one, so an id only counts as present when nothing that could continue it follows.
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const quotedId = (text: string, id: string) => text.includes(`"${id}"`);
+const pathId = (text: string, id: string) => new RegExp(`/${esc(id)}(?![A-Za-z0-9_-])`).test(text);
 
 if (!existsSync(DATA)) { console.error(`check-public: ${DIR} has no data/ — run npm run build:public first`); process.exit(1); }
 
@@ -126,9 +142,12 @@ for (const p of files) {
   if (!TEXT_EXT.some((e) => rel.endsWith(e)) && base !== 'LICENSE' && base !== 'NOTICE') continue;
   const text = readFileSync(p, 'utf8');
   const prose = PROSE_FILES.includes(rel);
+  const isManifest = rel === 'data/manifest.json';
   for (const id of exMeshIds) {
-    if (prose && sharedIds.has(id)) continue;                       // the authored entry of the same name
-    if (text.includes(`"${id}"`) || text.includes(`/${id}`)) bad(`${rel} mentions the excluded mesh id ${id}`);
+    // a shared id in prose is the authored entry; in the manifest it is a shipped mesh's structureId
+    const quotedOk = sharedIds.has(id) && (prose || isManifest);
+    if (!quotedOk && quotedId(text, id)) bad(`${rel} mentions the excluded mesh id ${id}`);
+    if (pathId(text, id)) bad(`${rel} references the excluded mesh file ${id}`);
   }
   if (!inData) continue;                                            // the app bundle names licences in code, not data
   for (const id of exLicenceIds) if (text.includes(`"${id}"`) || text.includes(`${id}.txt`)) bad(`${rel} mentions the restricted licence ${id}`);

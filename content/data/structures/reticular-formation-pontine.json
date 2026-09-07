@@ -149,7 +149,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - NO MESH: the 7 T probabilistic outline of this nucleus may not be redistributed and no openly licensed delineation of it has been built here yet, so the openly shareable build of the atlas describes the nucleus in full but draws no surface for it. The Harvard Ascending Arousal Network atlas (Edlow et al.) does publish an oral pontine reticular ROI under CC0."
  ],
  "citations": [
   {
@@ -160,6 +161,12 @@
   },
   {
    "ref": "sp-pons"
+  },
+  {
+   "ref": "oa-edlow-aan-wakefulness-connectivity"
+  },
+  {
+   "ref": "oa-edlow-ascending-arousal-network"
   }
  ],
  "tags": [

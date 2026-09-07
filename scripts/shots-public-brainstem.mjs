@@ -14,15 +14,12 @@ const base = process.argv[2] ?? 'http://localhost:5183';
 const out = 'qa/shots/public-brainstem';
 mkdirSync(out, { recursive: true });
 
-// The only brainstem nuclei the public edition can ship are the two halves of the locus coeruleus meta
-// mask; every other Brainstem Navigator nucleus is content-only here (README, "Public and private editions").
+// Two kinds of brainstem nucleus can ship here. The locus coeruleus comes from the openly licensed Dahl meta
+// mask, i.e. it is a real delineation. Everything else is a landmark-anchored location marker built by
+// atlas-derived: an ellipsoid of the nucleus's published volume put where a textbook puts it relative to open
+// geometry (README, "Public and private editions"; pipeline/config/brainstem_landmarks.yaml). The marker list
+// is read off the manifest rather than hard-coded, so a new marker shows up here without editing this file.
 const LC = ['locus-coeruleus-meta-l', 'locus-coeruleus-meta-r'];
-const VIEWS = [
-  { name: '01-locus-coeruleus-posterior', preset: '4', pad: 30, ids: LC },
-  { name: '02-locus-coeruleus-lateral-l', preset: '1', pad: 30, ids: LC },
-  { name: '03-locus-coeruleus-posterior-close', preset: '4', pad: 10, ids: LC },
-  { name: '04-locus-coeruleus-lateral-close', preset: '1', pad: 10, ids: LC },
-];
 
 const problems = [];
 const errors = [];
@@ -42,12 +39,36 @@ const facts = await page.evaluate(() => {
     meshes: m.meshes.length,
     bsn: m.meshes.filter((x) => x.source === 'brainstem_navigator').map((x) => x.id),
     lc: m.meshes.filter((x) => x.structureId === 'locus-coeruleus').map((x) => `${x.id} (${x.source}, ${x.license})`),
+    anchored: m.meshes.filter((x) => (x.derived ?? '').startsWith('landmark-anchored'))
+      .map((x) => ({ id: x.id, structureId: x.structureId, centroid: x.centroid })),
   };
 });
 console.log(JSON.stringify(facts, null, 1));
 check(facts.edition === 'public', `the loaded manifest is the public edition (${facts.edition})`);
 check(facts.bsn.length === 0, `no Brainstem Navigator mesh is loadable at all (${facts.bsn.length})`);
 check(facts.lc.length === LC.length, `the locus coeruleus meta mask is there (${facts.lc.join(', ')})`);
+check(facts.anchored.length > 0, `landmark-anchored markers are there (${facts.anchored.length})`);
+if (problems.length) { for (const p of problems) console.error(p); await browser.close(); process.exit(1); }
+
+const anchored = facts.anchored.map((a) => a.id);
+const pick = (...sids) => anchored.filter((id) => sids.some((s) => id.startsWith(`${s}-anchor`)));
+const medulla = pick('raphe-magnus', 'raphe-obscurus', 'raphe-pallidus', 'nuclei-viscero-sensory-motor');
+const upper = pick('nucleus-parabrachial-lateral', 'nucleus-parabrachial-medial', 'superior-olivary-complex',
+                   'reticular-formation-mesencephalic');
+const ALL = [...LC, ...anchored];
+const VIEWS = [
+  { name: '01-locus-coeruleus-posterior', preset: '4', pad: 30, ids: LC },
+  { name: '02-locus-coeruleus-lateral-l', preset: '1', pad: 30, ids: LC },
+  { name: '03-locus-coeruleus-posterior-close', preset: '4', pad: 10, ids: LC },
+  { name: '04-locus-coeruleus-lateral-close', preset: '1', pad: 10, ids: LC },
+  { name: '05-all-public-nuclei-posterior', preset: '4', pad: 12, ids: ALL },
+  { name: '06-all-public-nuclei-lateral-l', preset: '1', pad: 12, ids: ALL },
+  { name: '07-medullary-markers-posterior', preset: '4', pad: 8, ids: medulla },
+  { name: '08-medullary-markers-lateral-l', preset: '1', pad: 8, ids: medulla },
+  { name: '09-pontomesencephalic-markers-posterior', preset: '4', pad: 8, ids: upper },
+  { name: '10-pontomesencephalic-markers-lateral-l', preset: '1', pad: 8, ids: upper },
+];
+for (const v of VIEWS) check(v.ids.length > 0, `${v.name}: has meshes to show (${v.ids.length})`);
 if (problems.length) { for (const p of problems) console.error(p); await browser.close(); process.exit(1); }
 
 await page.evaluate(() => {

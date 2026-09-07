@@ -1,7 +1,7 @@
 {
- "meshes": 726,
- "bytes": 48396040,
- "triangles": 7444416,
+ "meshes": 743,
+ "bytes": 48605108,
+ "triangles": 7471523,
  "registration": {
   "bp3d_to_mni.json": {
    "landmark_mean_mm": 3.31,
@@ -189,6 +189,10 @@
   "filum-terminale: extends beyond the MNI volume (registered-affine)",
   "spinal-enlargement-cervical: extends beyond the MNI volume (registered-affine)",
   "spinal-enlargement-lumbosacral: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-cervical-vert: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-thoracic-vert: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-lumbar-vert: extends beyond the MNI volume (registered-affine)",
+  "spinal-segment-sacral-vert: extends beyond the MNI volume (registered-affine)",
   "cord volumes are PAM50-unlicensed (no redistribution): keep ['cord_t1', 'cord_t2', 'labels_spine'] out of any shared build"
  ]
 }

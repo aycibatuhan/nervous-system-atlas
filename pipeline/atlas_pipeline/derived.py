@@ -32,6 +32,24 @@ phrenic-nerve-l/-r, lumbosacral-trunk-l/-r
 choroid-plexus-fourth-ventricle
     The posterior (roof) boundary of the caudal half of the FreeSurfer aseg fourth ventricle (label 15),
     dilated 1 mm, with two short lateral extensions along the lateral recesses towards the foramina of Luschka.
+
+spinal-segment-*-vert  (PUBLIC edition only)
+    The same four cord blocks cut the *other* way: horizontal planes at the Z-Anatomy vertebral-body landmarks
+    with the classical cord-segment-to-vertebra rule, i.e. `cord_segments_by_vertebrae()` above.  The measured
+    cut uses PAM50 spinal levels, which makes those four blocks derived files of a template the public edition
+    may not redistribute; this variant is Z-Anatomy geometry and a textbook rule and nothing else, so it ships
+    in the public edition instead.  The sacral block runs to the caudal end of the cord surface, so there is no
+    separate filum terminale here.
+
+<nucleus>-anchor[-l/-r]  (PUBLIC edition only)
+    Landmark-anchored location markers for the brainstem nuclei whose only delineation in this atlas comes
+    from a source the public edition may not redistribute.  Each is an ellipsoid of the nucleus's PUBLISHED
+    volume, placed by a textbook topographic relation to open geometry (the aseg brainstem and fourth
+    ventricle, MASSP20 nuclei, HCP1065 tracts) and clipped to the aseg brainstem label dilated 1 mm.  The
+    recipes, the volumes and the bibliography refs they come from live in
+    pipeline/config/brainstem_landmarks.yaml; not one number in this construction is measured on, or copied
+    from, the restricted data.  Records carry `derived: "landmark-anchored: ..."` so the UI and the content
+    entries say plainly that the shape is schematic and marks a location, not a boundary.
 """
 from __future__ import annotations
 
@@ -43,7 +61,7 @@ import trimesh
 import yaml
 
 from . import midline
-from .catalog import LOD_FACES, LOD_MIN_FACES, MeshSpec
+from .catalog import BUDGET, LOD_FACES, LOD_MIN_FACES, MeshSpec
 from .meshing import export_with_lod, mesh_from_mask
 from .paths import CONFIG, MESHES, RAW, VOLUMES, WORK
 
@@ -424,16 +442,190 @@ def fourth_ventricle_plexus() -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
     return [(spec, m, method)]
 
 
+# ---------------------------------------------------------------- public-edition cord blocks
+# The measured cut (cord_segments) lands on PAM50 spinal-level boundaries, so those four blocks are derived
+# files of a template that may not be redistributed and `atlas-manifest --public` drops them.  The vertebral
+# fallback is Z-Anatomy geometry plus the classical cord-segment/vertebra rule and nothing else, so it is
+# built a second time under `-vert` ids, tagged `edition: "public"`, and ships in the public edition alone.
+CORD_VERT_SUFFIX = "-vert"
+
+
+def cord_segments_public(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+    out = []
+    for spec, mesh, method in cord_segments_by_vertebrae(T, pc):
+        pub = MeshSpec(**{**spec.__dict__, "id": spec.id + CORD_VERT_SUFFIX, "structure_id": spec.id,
+                          "name": spec.name})
+        out.append((pub, mesh, f"vertebral-landmark cut (Z-Anatomy geometry only): {method}"))
+    return out
+
+
+# ---------------------------------------------------------------- landmark-anchored brainstem nuclei
+LANDMARKS = CONFIG / "brainstem_landmarks.yaml"
+ANCHOR_SUFFIX = "-anchor"
+ANCHOR_SOURCE = {"aseg": "mni_aseg", "massp": "massp", "hcp": "hcp1065_tracts"}
+ANCHOR_FILE = {"aseg": ASEG,
+               "massp": RAW / "massp" / "tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz",
+               "hcp": RAW / "hcp1065_tracts" / "nifti"}
+ANCHOR_GRID_MM = 0.5      # sub-grid the ellipsoid is voxelised on (the label volumes are 1 mm)
+BRAINSTEM_LABEL = 16
+_vol_cache: dict = {}
+ANCHOR_IDS: list[str] = []
+
+
+def _volume(path):
+    import nibabel as nib
+    key = str(path)
+    if key not in _vol_cache:
+        img = nib.as_closest_canonical(nib.load(key))
+        _vol_cache[key] = (np.asanyarray(img.dataobj), img.affine)
+    return _vol_cache[key]
+
+
+def anchor_points(source: dict, side: str) -> np.ndarray:
+    """World-mm coordinates of every voxel of one anchor source."""
+    kind = source["kind"]
+    if kind in ("aseg", "massp"):
+        data, aff = _volume(ANCHOR_FILE[kind])
+        mask = np.isin(np.rint(data).astype(np.int32), source["labels"])
+    elif kind == "hcp":
+        name = source["file"].replace("{S}", "L" if side == "l" else "R")
+        data, aff = _volume(ANCHOR_FILE["hcp"] / f"{name}.nii.gz")
+        mask = np.asarray(data) >= source.get("threshold", 0.5)
+    else:
+        raise SystemExit(f"brainstem_landmarks.yaml: unknown anchor source kind {kind!r}")
+    idx = np.argwhere(mask)
+    return idx @ aff[:3, :3].T + aff[:3, 3]
+
+
+def _axis_value(col: np.ndarray, rule: str) -> float:
+    if rule == "centroid":
+        return float(col.mean())
+    if rule == "min":
+        return float(col.min())
+    if rule == "max":
+        return float(col.max())
+    if rule.startswith("frac:"):
+        f = float(rule.split(":", 1)[1])
+        return float(col.min() + f * (col.max() - col.min()))
+    if rule.startswith("mm:"):
+        return float(rule.split(":", 1)[1])
+    raise SystemExit(f"brainstem_landmarks.yaml: unknown axis rule {rule!r}")
+
+
+def anchor_point(anchor: dict, side: str) -> tuple[np.ndarray, int]:
+    P = anchor_points(anchor["source"], side)
+    for k, ax in (("x", 0), ("y", 1), ("z", 2)):
+        band = (anchor.get("within") or {}).get(k)
+        if band:
+            P = P[(P[:, ax] >= band[0]) & (P[:, ax] <= band[1])]
+    if anchor.get("split_sides"):
+        P = P[P[:, 0] < 0] if side == "l" else P[P[:, 0] >= 0]
+    if not len(P):
+        raise SystemExit("brainstem_landmarks.yaml: an anchor selected no voxels")
+    at = anchor["at"]
+    p = np.array([_axis_value(P[:, i], at[k]) for i, k in enumerate("xyz")])
+    off = np.array(anchor.get("offset") or [0.0, 0.0, 0.0], float)
+    if side == "l":
+        off = off * np.array([-1.0, 1.0, 1.0])
+    return p + off, len(P)
+
+
+def semi_axes(volume_mm3: float, ratio) -> np.ndarray:
+    """Semi-axes proportional to `ratio` whose ellipsoid has exactly `volume_mm3`."""
+    r = np.asarray(ratio, float)
+    return r * (3.0 * volume_mm3 / (4.0 * np.pi * float(r.prod()))) ** (1.0 / 3.0)
+
+
+def brainstem_envelope() -> tuple[np.ndarray, np.ndarray]:
+    """The aseg brainstem label dilated by 1 mm, and its affine. Every marker is clipped to it."""
+    from scipy import ndimage
+    data, aff = _volume(ASEG)
+    mask = np.rint(data).astype(np.int32) == BRAINSTEM_LABEL
+    return ndimage.binary_dilation(mask, ndimage.generate_binary_structure(3, 1), iterations=1), aff
+
+
+def ellipsoid_mesh(centre: np.ndarray, axes: np.ndarray, target_faces: int):
+    """An ellipsoid voxelised on a 0.5 mm sub-grid, clipped to the dilated brainstem, then meshed."""
+    env, env_aff = brainstem_envelope()
+    pad = 2.0
+    lo = centre - axes - pad
+    shape = np.ceil((2 * (axes + pad)) / ANCHOR_GRID_MM).astype(int) + 1
+    aff = np.eye(4)
+    aff[:3, :3] = np.diag([ANCHOR_GRID_MM] * 3)
+    aff[:3, 3] = lo
+    g = np.stack(np.meshgrid(*[np.arange(n) for n in shape], indexing="ij"), -1).reshape(-1, 3)
+    w = g * ANCHOR_GRID_MM + lo
+    inside = (((w - centre) / axes) ** 2).sum(1) <= 1.0
+    inv = np.linalg.inv(env_aff)
+    vi = np.rint(w @ inv[:3, :3].T + inv[:3, 3]).astype(int)
+    ok = np.all((vi >= 0) & (vi < np.array(env.shape)), axis=1)
+    keep = inside.copy()
+    keep[~ok] = False
+    keep[ok] &= env[vi[ok, 0], vi[ok, 1], vi[ok, 2]]
+    mask = np.zeros(tuple(shape), bool)
+    mask[g[keep, 0], g[keep, 1], g[keep, 2]] = True
+    clipped = 1.0 - (keep.sum() / max(inside.sum(), 1))
+    return mesh_from_mask(mask, aff, target_faces, sigma=0.6, min_component_frac=0.05), clipped
+
+
+def landmark_nuclei() -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+    """Ellipsoids of published volume at textbook positions relative to open geometry (see the yaml)."""
+    if not LANDMARKS.exists():
+        print(f"  [skip] {LANDMARKS} is missing"); return []
+    cfg = yaml.safe_load(LANDMARKS.read_text())
+    out = []
+    for n in cfg["nuclei"]:
+        axes = semi_axes(float(n["volume_mm3"]), n["axes"])
+        sides = [("m", "", "midline")] if n["side"] == "midline" else [("l", "-l", "left"), ("r", "-r", "right")]
+        for side, sfx, side_name in sides:
+            centre, npts = anchor_point(n["anchor"], side)
+            mesh, clipped = ellipsoid_mesh(centre, axes, BUDGET["tiny"])
+            if mesh is None:
+                print(f"  [empty] {n['id']}{ANCHOR_SUFFIX}{sfx}"); continue
+            # `<entry-id>-anchor[-l/-r]`, never `<entry-id>[-l/-r]`: the private edition already owns those ids
+            # and scripts/check-public.ts rejects any text that holds one.
+            mid = f"{n['id']}{ANCHOR_SUFFIX}{sfx}"
+            spec = MeshSpec(id=mid, name=f"{n['name']}{'' if side == 'm' else f' ({side.upper()})'} (location marker)",
+                            system="brainstem", subsystem=n.get("subsystem"), side=side_name,
+                            colour=n.get("colour"), visible=False, budget="tiny", structure_id=n["id"])
+            method = ("landmark-anchored: an ellipsoid of the published volume of this nucleus "
+                      f"({n['volume_note']}), centred where a textbook puts it -- {n['topography']} -- "
+                      f"relative to geometry this atlas holds openly, and clipped to the brainstem. "
+                      f"It marks a location, not a boundary; the centre is at MNI "
+                      f"({centre[0]:.1f}, {centre[1]:.1f}, {centre[2]:.1f}) mm with semi-axes "
+                      f"{axes[0]:.1f} x {axes[1]:.1f} x {axes[2]:.1f} mm.")
+            out.append((spec, mesh, method))
+            print(f"  {mid:44s} centre ({centre[0]:6.1f},{centre[1]:6.1f},{centre[2]:6.1f}) "
+                  f"axes {np.round(axes, 2).tolist()} V={n['volume_mm3']} mm3 "
+                  f"surface {mesh.volume:6.1f} mm3, {clipped*100:4.1f}% clipped, anchor {npts} vox "
+                  f"[{n['anchor']['source']['kind']}]")
+    return out
+
+
+def landmark_source(mesh_id: str) -> str:
+    """Which downloaded dataset a landmark marker's geometry comes from (its anchor's own volume)."""
+    cfg = yaml.safe_load(LANDMARKS.read_text()) if LANDMARKS.exists() else {"nuclei": []}
+    for n in cfg["nuclei"]:
+        base = f"{n['id']}{ANCHOR_SUFFIX}"
+        if mesh_id in (base, base + "-l", base + "-r"):
+            return ANCHOR_SOURCE[n["anchor"]["source"]["kind"]]
+    return "mni_aseg"
+
+
 # ---------------------------------------------------------------- driver
 def main(argv=None) -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); a = ap.parse_args(argv)
     only = set(a.only.split(",")) if a.only else None
+    global ANCHOR_IDS
+    ANCHOR_IDS = [n["id"] for n in (yaml.safe_load(LANDMARKS.read_text())["nuclei"] if LANDMARKS.exists() else [])]
     T, pc = ztomni()
     from .atlas_meshes import record
     items: list[tuple[MeshSpec, trimesh.Trimesh, str]] = []
     items += cord_segments(T, pc)
+    items += cord_segments_public(T, pc)
     items += derived_nerves(T, pc)
     items += fourth_ventricle_plexus()
+    items += landmark_nuclei()
     meshes_json = WORK / "meshes.json"
     existing = {m["id"]: m for m in json.loads(meshes_json.read_text())} if meshes_json.exists() else {}
     n = 0
@@ -442,10 +634,20 @@ def main(argv=None) -> None:
             continue
         path = MESHES / spec.system / f"{spec.id}.glb"
         nbytes, lod = export_with_lod(m, path, spec.id, LOD_FACES, LOD_MIN_FACES)
-        source = "mni_aseg" if spec.id.startswith("choroid-plexus-fourth") else "zanatomy"
-        alignment = "native-mni" if source == "mni_aseg" else "registered-affine"
+        anchored = spec.id.startswith(tuple(f"{n}{ANCHOR_SUFFIX}" for n in ANCHOR_IDS))
+        if anchored:
+            source = landmark_source(spec.id)
+        elif spec.id.startswith("choroid-plexus-fourth"):
+            source = "mni_aseg"
+        else:
+            source = "zanatomy"
+        alignment = "registered-affine" if source == "zanatomy" else "native-mni"
+        # public-only: the measured cord blocks and the private nuclei already fill these ids in the
+        # private edition, so these records exist for `atlas-manifest --public` alone (see manifest.py)
+        public = anchored or spec.id.endswith(CORD_VERT_SUFFIX)
         rec = record(spec, source, None, alignment, m, path, nbytes, 0,
-                     {"labelVolume": None, "lod": lod, "derived": method})
+                     {"labelVolume": None, "lod": lod, "derived": method,
+                      **({"edition": "public"} if public else {})})
         existing[rec["id"]] = rec; n += 1
         print(f"  {spec.id:38s} {len(m.faces):6d} tris {nbytes/1024:7.1f} KB  bbox {np.round(m.bounds, 1).tolist()}")
     meshes_json.write_text(json.dumps(list(existing.values()), indent=1))

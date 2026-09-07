@@ -9,7 +9,8 @@
  ],
  "system": "brainstem",
  "meshIds": [
-  "raphe-obscurus"
+  "raphe-obscurus",
+  "raphe-obscurus-anchor"
  ],
  "summary": "The raphe obscurus is a serotonergic midline nucleus of the caudal medulla, lying between the hypoglossal nuclei and the inferior olives and extending down toward the cervical cord. Its neurons are central chemoreceptors: they are directly sensitive to carbon dioxide and to the resulting fall in pH, and they excite the respiratory rhythm generator and the motor neurons of the airway and the diaphragm, so the nucleus is part of the system that keeps ventilation matched to metabolism and that arouses a sleeping person when carbon dioxide rises. It also supplies serotonin to the motor neurons of the ventral horn and the cranial motor nuclei, where it sets their background excitability. Abnormalities of medullary serotonergic nuclei including this one have been reported in the sudden infant death syndrome.",
  "anatomy": {
@@ -132,7 +133,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 16 mm3 ellipsoid -- no volume is published for the raphe obscurus itself, so it is sized on the raphe magnus volume of Bianciardi et al. (2015), centred on the midline of the dorsal medulla below the obex, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {

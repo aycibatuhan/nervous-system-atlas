@@ -10,7 +10,9 @@
  "system": "brainstem",
  "meshIds": [
   "nucleus-parabrachial-lateral-l",
-  "nucleus-parabrachial-lateral-r"
+  "nucleus-parabrachial-lateral-r",
+  "nucleus-parabrachial-lateral-anchor-l",
+  "nucleus-parabrachial-lateral-anchor-r"
  ],
  "summary": "The lateral parabrachial nucleus wraps around the superior cerebellar peduncle in the dorsolateral tegmentum of the upper pons and is the brain's alarm relay for the body's internal state. Visceral and nociceptive signals that reach the nucleus of the solitary tract and the spinal dorsal horn are passed here, and the parabrachial neurons distribute them to the amygdala, the bed nucleus of the stria terminalis, the hypothalamus and the thalamus, generating the unpleasantness of pain, the aversiveness of nausea, air hunger, thirst and the arousal that follows a rise in carbon dioxide. Its calcitonin gene-related peptide neurons form a general alarm system that interrupts ongoing behavior and produces the affective, motivational side of a bodily threat rather than its sensory detail.",
  "anatomy": {
@@ -144,7 +146,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 54 mm3 per side, the volume published by Singh et al. (2019), centred in the dorsolateral pontine tegmentum of the upper pons, lateral to the superior cerebellar peduncle, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {
@@ -155,6 +158,12 @@
   },
   {
    "ref": "sp-physiology-pain"
+  },
+  {
+   "ref": "oa-edlow-aan-wakefulness-connectivity"
+  },
+  {
+   "ref": "oa-edlow-ascending-arousal-network"
   }
  ],
  "tags": [

@@ -468,6 +468,46 @@ def venat_entries() -> dict[str, MeshSpec]:
     return e
 
 
+
+# ================================================================ Harvard AAN atlas (PUBLIC edition only)
+# The Brainstem Navigator delineations of these four nuclei may not be redistributed, so the public
+# edition carries the Harvard Ascending Arousal Network atlas v2.0 instead (source id `aan_atlas`,
+# CC0 1.0; Dryad doi:10.5061/dryad.zw3r228d2). Only the nodes with no open mesh yet are listed: the
+# locus coeruleus has the Dahl meta mask, and PAG, VTA, DR, MnR and PTg (this atlas's name for the
+# pedunculopontine nucleus) come from MASSP20, which ships in both editions.
+#
+# PBC is one node covering the whole parabrachial complex, so it hangs off the lateral parabrachial
+# entry; the medial parabrachial entry gets the landmark-anchored ellipsoid from `atlas-derived`.
+# Colours are the ones pipeline/config/brainstem_navigator.yaml gives the same structures, so the two
+# editions look alike. Built by atlas_pipeline.aan (`atlas-aan`).
+AAN_NODES = [
+    # node, content structure id, display name, subsystem, colour
+    ("PBC", "nucleus-parabrachial-lateral", "Parabrachial complex", "pons", "#AC949A"),
+    ("LDTg", "nucleus-laterodorsal-tegmental", "Laterodorsal tegmental nucleus", "pons", "#A99BA6"),
+    ("PnO", "reticular-formation-pontine", "Oral pontine reticular nucleus", "pons", "#BCA69C"),
+    ("mRt", "reticular-formation-mesencephalic", "Mesencephalic reticular formation", "midbrain", "#B8A39B"),
+]
+# mesh id -> AAN node abbreviation (the file name stem), filled in by aan_entries()
+AAN_NODE_OF: dict[str, str] = {}
+
+
+def aan_entries() -> dict[str, MeshSpec]:
+    """mesh id -> spec for every AAN node meshed into the public edition (both sides)."""
+    e: dict[str, MeshSpec] = {}
+    for node, sid, name, sub, colour in AAN_NODES:
+        for side, sfx in (("left", "-l"), ("right", "-r")):
+            # `<entry-id>-aan-l`, never `<entry-id>-l`: scripts/check-public.ts rejects any text holding an
+            # excluded mesh id, and the private edition already owns `<entry-id>-l`.
+            mid = f"{sid}-aan{sfx}"
+            AAN_NODE_OF[mid] = node
+            e[mid] = MeshSpec(id=mid, name=f"{name} ({'L' if side == 'left' else 'R'}, AAN atlas)",
+                              system="brainstem", subsystem=sub, side=side, budget="tiny", colour=colour,
+                              visible=False, structure_id=sid)
+    return e
+
+
+aan_entries()   # populate AAN_NODE_OF at import time
+
 # ================================================================ locus coeruleus meta mask (PUBLIC edition only)
 # The Brainstem Navigator LC label may not be redistributed, so the public edition carries the openly
 # licensed Dahl et al. 2022 LC "meta mask" instead (source id `lc_metamask`, CC BY 4.0; OSF sf2ky).
