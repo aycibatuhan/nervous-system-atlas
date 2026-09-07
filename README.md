@@ -92,6 +92,20 @@ python3 tools/cite/oa.py --pmc-search "claustrum connectivity review"
 
 `tools/ref_*.py` and `tools/refcorpus.py` build an **optional private text corpus** under `reference/` used only by the build's 11-word-shingle plagiarism check (`scripts/content/plagiarism.ts`). Nothing from it is shipped, and the check is skipped when `reference/` is absent.
 
+## Turkish terminology (in preparation)
+
+A Turkish edition with Latin structure names is planned. Nothing in the app or in `content/data/` is translated yet; the first step is a terminology table that fixes, once, which FIPAT term every atlas entry corresponds to and which Turkish names already exist for it:
+
+```bash
+pipeline/.venv/bin/python tools/i18n/terms.py fetch     # FIPAT TA2 + TNA PDFs, Wikidata, Turkish Wikipedia -> reference/terms/ (cached)
+python3 tools/i18n/terms.py table                       # content/i18n/review/terms-review.csv + terms-review.md
+python3 tools/i18n/terms.py show substantia-nigra       # every candidate for one entry and why it was ranked there
+```
+
+`fetch` parses the terminology tables of FIPAT's *Terminologia Anatomica 2* (2019, 7112 terms in five parts) and *Terminologia Neuroanatomica* (2017, 4398 terms in three chapters) from the PDFs on the Dalhousie library CDN, keeping the Latin term, Latin synonym, UK and US English, English synonyms, the "Other" column, the indentation depth and the bold heading rows; the parser was checked against the Open Anatomy TA2 viewer's copy of TA2 (all 7112 term numbers, 5 Latin and 3 English differences, every one a typo in one copy or the other). It then pulls every Wikidata item that carries a TA98 or TA2 id (5923 items: labels and aliases in English, Latin and Turkish, the TA98 Latin term, FMA/UBERON/NeuroNames ids, Turkish and English Wikipedia sitelinks) and the redirects of the 620 Turkish Wikipedia articles among them. `table` matches the 416 structures, cranial nerves and pathways to those sources by Latin term first, then English term, English synonym, and a numeral-safe fuzzy fallback, joins the sources to each other (TA2 to Wikidata by TA2 number, TA2 to TNA by Latin term) so a hit in one source nominates the linked concept in the others, prefers candidates several sources agree on and whose ancestors mention the entry's parent, and writes one row per entry with the best TA2, TNA and Wikidata concept, the Turkish label and article, and `match` / `alt` / `note` columns saying how it got there. The `decision` column is the reviewer's and survives regeneration. Today 322 entries get a FIPAT Latin term and 104 a Turkish name from Wikidata or Turkish Wikipedia; the 94 without a TA concept are territories, brainstem levels, composite meshes and pathways, which will be named by hand.
+
+Licences: the FIPAT PDFs are CC BY-ND 4.0 and are downloaded, never redistributed; the terms in them are public domain and only the terms are used. Wikidata is CC0. Turkish Wikipedia titles are CC BY-SA 4.0, the licence of the atlas content; an attribution line is added to `NOTICE` when Turkish labels are written into `content/`.
+
 ## Checks
 
 ```bash
