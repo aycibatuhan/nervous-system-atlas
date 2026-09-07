@@ -13,10 +13,16 @@ licenses:
   CC-BY-SA-4.0:
     name: Creative Commons Attribution-ShareAlike 4.0 International
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  CC-BY-SA-2.1-JP:
-    name: Creative Commons Attribution-ShareAlike 2.1 Japan
-    url: https://creativecommons.org/licenses/by-sa/2.1/jp/
-    attribution: "BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan"
+  # BodyParts3D was released under CC BY-SA 2.1 Japan (2009); the LSDB Archive that now serves it relicensed the
+  # database to CC BY 4.0 (dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html, "last updated 2025/02/27"), with
+  # the attribution wording below.  Z-Anatomy still names the 2.1 JP licence for the BodyParts3D it started from;
+  # that chain holds too, because CC BY-SA 2.1 JP article 5(2) lets adaptations be released under "a newer
+  # version of this License", and CC lists every BY-SA 2.0+ port as compatible with BY-SA 4.0.  See
+  # pipeline/raw/bodyparts3d/LICENCE_VERIFICATION.txt.
+  CC-BY-4.0-BodyParts3D:
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+    attribution: "BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution 4.0 International"
   CC-BY-4.0:
     name: Creative Commons Attribution 4.0 International
     url: https://creativecommons.org/licenses/by/4.0/
@@ -220,7 +226,7 @@ sources:
   - id: bodyparts3d
     name: "BodyParts3D anatomical model database"
     group: bp3d
-    license: CC-BY-SA-2.1-JP
+    license: CC-BY-4.0-BodyParts3D
     citation: "Mitsuhashi N et al. BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Res 2009."
     files:
       - url: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip

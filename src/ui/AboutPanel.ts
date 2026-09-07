@@ -58,6 +58,8 @@ export class AboutPanel {
           h('div', { class: 'crumbs' }, 'Clinical Neuroanatomy Atlas · ', h('span', { class: `tag edition-${edition}`, id: 'about-edition' }, `${edition} edition`),
             ` · ${man.meshes.length} meshes · ${sourceIds.length} data sources`))),
 
+      h('p', { class: 'prose disclaimer', id: 'about-disclaimer' }, h('b', {}, 'Not for clinical use. '),
+        'This atlas is an educational reference. Its structures are group-average templates and a registered specimen, not any patient\'s anatomy, and its syndrome, imaging and management text is a teaching summary written from the cited sources that may be incomplete, out of date or wrong. Nothing here is medical advice; do not use it to diagnose, treat or make decisions about a patient. Those decisions belong to qualified clinicians using current guidelines and the patient\'s own findings and imaging.'),
       h('p', { class: 'prose' }, 'A local 3D atlas of clinical neuroanatomy with synchronized MRI slices, pathway tracing, a syndrome mode, clinical topics, a glossary and a quiz. Everything is expressed in one coordinate frame, MNI152NLin2009cAsym RAS millimetres.'),
 
       h('h3', {}, 'Licences'),

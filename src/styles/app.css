@@ -102,3 +102,6 @@ ul.cites li { margin: 3px 0; line-height: 1.35; }
 .licence-details { border: 1px solid var(--border); border-radius: 4px; padding: 6px 8px; margin-bottom: 6px; }
 .licence-details summary { cursor: pointer; } .licence-details summary .tag { margin-left: 6px; }
 .licence-text { max-height: 320px; overflow: auto; white-space: pre-wrap; font-size: 11px; line-height: 1.35; background: var(--panel2); border-radius: 4px; padding: 8px; margin: 6px 0 0; }
+
+/* the "not for clinical use" notice at the top of the About panel */
+.prose.disclaimer { border-left: 3px solid #c8a24a; background: rgba(200, 162, 74, 0.10); padding: 8px 10px; border-radius: 4px; }
