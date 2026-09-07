@@ -11,7 +11,9 @@
  "system": "brainstem",
  "meshIds": [
   "nucleus-subcoeruleus-l",
-  "nucleus-subcoeruleus-r"
+  "nucleus-subcoeruleus-r",
+  "nucleus-subcoeruleus-anchor-l",
+  "nucleus-subcoeruleus-anchor-r"
  ],
  "summary": "The subcoeruleus nucleus is a small group of glutamatergic and noradrenergic neurons lying just ventral and lateral to the locus coeruleus in the dorsal tegmentum of the upper pons. In humans it corresponds to the sublaterodorsal nucleus of the rat, and it is the generator of the muscle atonia of REM sleep: its glutamatergic neurons fire during REM and excite inhibitory neurons of the ventromedial medulla and the spinal cord, which hyperpolarize motor neurons so that dreams are not acted out. Loss of these neurons produces REM sleep behavior disorder, in which patients punch, kick and shout during dreaming, and that disorder is the earliest reliable clinical marker of Parkinson disease, dementia with Lewy bodies and multiple system atrophy, often preceding the movement disorder by a decade or more.",
  "anatomy": {
@@ -134,7 +136,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 28 mm3 ellipsoid per side -- 27.5 mm3 on the right and 28.1 mm3 on the left in the validation panel of Garcia-Gomar et al. (2022) -- placed ventrolateral to the locus coeruleus meta mask, which is the public edition's own locus coeruleus, and clipped to the brainstem. The meta mask is a sampling volume of interest and is deliberately larger than the locus coeruleus itself, so the two surfaces may touch or overlap; that overlap is an artefact of the anchor, not an anatomical claim. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {
@@ -148,6 +151,9 @@
   },
   {
    "ref": "sp-norepinephrine"
+  },
+  {
+   "ref": "oa-dahl-lc-meta-mask"
   }
  ],
  "tags": [

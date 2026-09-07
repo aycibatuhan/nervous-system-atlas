@@ -9,7 +9,9 @@
  "system": "brainstem",
  "meshIds": [
   "reticular-formation-isthmic-l",
-  "reticular-formation-isthmic-r"
+  "reticular-formation-isthmic-r",
+  "reticular-formation-isthmic-anchor-l",
+  "reticular-formation-isthmic-anchor-r"
  ],
  "summary": "The isthmic reticular formation occupies the narrow waist between the midbrain and the pons, the isthmus rhombencephali, where the tegmentum is squeezed between the superior cerebellar peduncles as they turn medially to decussate. It is a transition zone rather than a nucleus with a sharp border: rostrally it becomes the mesencephalic reticular formation, caudally the oral pontine reticular nucleus, and embedded in it are the cholinergic pedunculopontine and laterodorsal tegmental cell groups. Functionally it is a critical link of the ascending arousal system, and its position explains why small lesions at the mesopontine junction produce coma out of proportion to their size. It also contributes premotor neurons to vertical gaze and to the startle response.",
  "anatomy": {
@@ -135,7 +137,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 56 mm3 ellipsoid per side -- 57.8 mm3 on the right and 53.9 mm3 on the left in the volume table of Singh et al. (2021), the paper that delineated the isthmic reticular formation at 7 T -- centered in the tegmentum of the pontomesencephalic isthmus, lateral to the aqueduct and the central grey, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {

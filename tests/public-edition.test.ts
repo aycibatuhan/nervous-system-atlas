@@ -19,8 +19,8 @@ interface Mesh { id: string; license: string; source: string; nc?: boolean; deri
 interface Manifest {
   edition?: string;
   meshes: Mesh[];
-  volumes: Record<string, { file: string; space?: string; lut?: string }>;
-  grids?: Record<string, { license: string; source: string }>;
+  volumes: Record<string, { file: string; space?: string; lut?: string; edition?: string }>;
+  grids?: Record<string, { license: string; source: string; edition?: string }>;
   licenses: Record<string, { nc?: boolean; noRedistribution?: boolean; text: string }>;
   sources: Record<string, { license: string }>;
 }
@@ -41,7 +41,7 @@ function excludeFrom(man: Manifest) {
 const priv = read('manifest.json') as Manifest;
 const pub = has('manifest.public.json') ? read('manifest.public.json') as Manifest : null;
 const exclusions = has('manifest.public.exclusions.json') ? read('manifest.public.exclusions.json') as {
-  meshes: { id: string }[]; volumes: { key: string }[]; licenses: Record<string, string>; sources: Record<string, unknown>;
+  meshes: { id: string }[]; volumes: { key: string; file: string }[]; licenses: Record<string, string>; sources: Record<string, unknown>;
 } : null;
 
 describe('public edition — the private edition is untouched', () => {
@@ -103,9 +103,40 @@ describe('public edition — the manifest filter', () => {
       expect(pub.sources[m.source], `source of ${m.id}`).toBeTruthy();
     }
     for (const [k, v] of Object.entries(pub.volumes)) expect(v.space ? !!pub.grids?.[v.space] : true, `volume ${k}`).toBe(true);
-    expect(pub.grids?.['cord']).toBeFalsy();
+    // grids.cord survives, but only because it has been *replaced*: the PAM50 reformat is gone and the cord
+    // MRI the public edition ships is the atlas' own spine-generic average, under the same keys
+    const cord = pub.grids?.['cord'];
+    expect(cord, 'the public edition ships no cord MRI at all').toBeTruthy();
+    expect(ex.restricted.has(cord!.license)).toBe(false);
+    expect(cord!.source).not.toBe('pam50');
+    expect(pub.sources[cord!.source], `cord source ${cord!.source}`).toBeTruthy();
+    expect(pub.licenses[cord!.license], `cord licence ${cord!.license}`).toBeTruthy();
     const blob = JSON.stringify(pub);
     for (const n of NAME_STRINGS) expect(blob.includes(n), `manifest names ${n}`).toBe(false);
+  });
+
+  it('swaps in a cord MRI that may be redistributed, under the same manifest keys', () => {
+    if (!pub || !exclusions) return;
+    const cord = pub.grids?.['cord'];
+    if (!cord) return;                                              // atlas-spine-generic has not been run
+    const dropped = new Set(exclusions.volumes.map((v) => v.key));
+    const droppedFiles = new Set(exclusions.volumes.map((v) => v.file));
+    expect(dropped.has('cord_t2')).toBe(true);                      // the PAM50 one was dropped ...
+    expect(pub.volumes['cord_t2'], 'no cord_t2 in the public edition').toBeTruthy();   // ... and refilled
+    for (const k of ['cord_t2', 'labels_spine']) {
+      const v = pub.volumes[k]!;
+      expect(v.space).toBe('cord');
+      expect(v.edition, `${k} is not tagged as a public-edition volume`).toBe('public');
+      expect(droppedFiles.has(v.file), `${k} still points at the excluded file ${v.file}`).toBe(false);
+    }
+    expect(pub.volumes['labels_spine']!.lut).toBe('volumes/labels_spine_public.json');
+    // the LUT must point at cord segment blocks this edition actually ships
+    const lut = read('volumes/labels_spine_public.json') as { lut: Record<string, { meshId: string }> };
+    const shipped = new Set(pub.meshes.map((m) => m.id));
+    for (const [id, e] of Object.entries(lut.lut)) expect(shipped.has(e.meshId), `level ${id} -> ${e.meshId}`).toBe(true);
+    // and the substitution is recorded, so the exclusions file explains where the cord MRI went
+    const sub = (exclusions as unknown as { substitutions?: { cord?: { with?: { source?: string } } } }).substitutions;
+    expect(sub?.cord?.with?.source).toBe(cord.source);
   });
 
   it('keeps the systems and the bulk of the atlas', () => {

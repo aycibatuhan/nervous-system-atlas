@@ -14,7 +14,9 @@
   "reticular-formation-medullary-inferior-lateral-l",
   "reticular-formation-medullary-inferior-lateral-r",
   "reticular-formation-medullary-inferior-medial-l",
-  "reticular-formation-medullary-inferior-medial-r"
+  "reticular-formation-medullary-inferior-medial-r",
+  "reticular-formation-medullary-inferior-anchor-l",
+  "reticular-formation-medullary-inferior-anchor-r"
  ],
  "summary": "The inferior medullary reticular formation is the caudal half of the medullary reticular core, the field that lies between the inferior olive in front and the dorsal nuclei behind and that runs down to become continuous with the reticular gray of the cervical cord. Its medial, large-celled part gives rise to the lateral reticulospinal tract, which inhibits extensor tone and shapes posture and locomotion, while its lateral, small-celled part organizes the bulbar motor nuclei. It also contains the ventromedial region through which REM sleep atonia is imposed on spinal motor neurons, and it holds the caudal parts of the respiratory and cardiovascular networks, so lesions here mix disorders of posture, breathing and blood pressure. The 7 T atlas separates a medial and a lateral part, offered here as hidden subdivisions.",
  "anatomy": {
@@ -162,7 +164,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 235 mm3 ellipsoid per side -- 238.2 mm3 on the right and 231.7 mm3 on the left in the validation panel of Garcia-Gomar et al. (2022) -- centered in the central tegmentum of the medulla caudal to the obex (the fourth ventricle narrows to the central canal at about z = -57 mm in this template) and clipped to the brainstem. The 7 T label has a lateral and a medial subregion; the marker is a single ellipsoid of the two together. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {

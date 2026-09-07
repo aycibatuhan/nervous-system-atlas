@@ -10,6 +10,8 @@
   "meshIds": [
     "cerebellar-lobule-crus-ii-l",
     "cerebellar-lobule-crus-ii-r",
+    "cerebellar-lobule-crus-ii-fs-l",
+    "cerebellar-lobule-crus-ii-fs-r",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -126,7 +128,9 @@
       "Posterior fossa mutism appears after a silent interval and is a dentate-outflow injury"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition this lobule is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; meshes `cerebellar-lobule-crus-ii-fs-l` and `-r`). It is a neural network's reading of one average brain rather than a hand-corrected probabilistic map, so treat the fissure lines as approximate: Dice against the private-edition lobule is 0.86 on the left and 0.85 on the right, while the cerebellar cortex as a whole agrees at 0.93."
+  ],
   "citations": [
     {
       "ref": "sp-cerebellar-dysfunction",
@@ -143,6 +147,14 @@
     {
       "ref": "oa-cerebellum-hierarchical-atlas",
       "section": "Social-linguistic-spatial regions"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [],

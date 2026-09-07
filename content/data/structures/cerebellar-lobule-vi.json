@@ -10,6 +10,8 @@
   "meshIds": [
     "cerebellar-lobule-vi-l",
     "cerebellar-lobule-vi-r",
+    "cerebellar-lobule-vi-fs-l",
+    "cerebellar-lobule-vi-fs-r",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -128,7 +130,9 @@
       "Lobule VI is where the motor cerebellum shades into the cognitive cerebellum"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition this lobule is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; meshes `cerebellar-lobule-vi-fs-l` and `-r`). It is a neural network's reading of one average brain rather than a hand-corrected probabilistic map, so treat the fissure lines as approximate: Dice against the private-edition lobule is 0.84 on the left and 0.87 on the right, while the cerebellar cortex as a whole agrees at 0.93."
+  ],
   "citations": [
     {
       "ref": "sp-cerebellar-dysfunction",
@@ -145,6 +149,14 @@
     {
       "ref": "oa-cerebellum-hierarchical-atlas",
       "section": "Action regions"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [],

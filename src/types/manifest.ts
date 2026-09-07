@@ -94,7 +94,8 @@ export interface Manifest {
   edition?: 'private' | 'public';
   grid: { shape: [number, number, number]; spacing: [number, number, number]; origin_ras: [number, number, number]; affine_ras: number[][] };
   volumes: Record<string, VolumeFile>;
-  /** extra volume grids; `cord` is the PAM50 curved-reformat cord MRI, absent until atlas-pam50 has run */
+  /** extra volume grids; `cord` is the curved-reformat cord MRI (PAM50 in the private edition, the
+   *  spine-generic average in the public one), absent until atlas-pam50 / atlas-spine-generic has run */
   grids?: { cord?: ExtraGrid };
   transforms: Record<string, unknown>;
   systems: { id: SystemId; name: string; colour: string; defaultVisible: boolean }[];
@@ -105,7 +106,7 @@ export interface Manifest {
 
 export interface LabelEntry { meshId: string; structureId: string; name: string; colour: string; system: SystemId; atlas?: string }
 
-/** One PAM50 spinal level in public/data/volumes/labels_spine.json (written by atlas-pam50). */
+/** One spinal level in the cord grid's LUT (labels_spine.json / labels_spine_public.json). */
 export interface SpineLevelEntry {
   name: string;                 // "C5"
   region: 'cervical' | 'thoracic' | 'lumbar' | 'sacral';

@@ -138,7 +138,7 @@ export function parseYaml(src: string): Y {
 }
 
 // ---------------------------------------------------------------- sources ----
-export interface SourceEntry { id: string; name?: string; group?: string; license: string; citation: string; manual?: boolean; files: { url: string; dest?: string }[] }
+export interface SourceEntry { id: string; name?: string; group?: string; license: string; citation: string; manual?: boolean; generated?: boolean; files?: { url: string; dest?: string }[] }
 export interface LicenseEntry { name: string; url: string; attribution?: string; nc?: boolean; no_redistribution?: boolean }
 
 export function readSources(file = SOURCES): { licenses: Record<string, LicenseEntry>; sources: SourceEntry[] } {
@@ -219,8 +219,13 @@ export function renderNotice(root = ROOT): string {
     L.push(`               ${lic.url}`);
     if (lic.attribution) L.push(`  Attribution: ${wrap(lic.attribution, 62, '               ')}`);
     const urls = (s.files ?? []).map((f) => f.url);
-    L.push(`  Download:    ${urls[0] ?? ''}`);
-    for (const u of urls.slice(1)) L.push(`               ${u}`);
+    if (s.generated) {
+      L.push('  Generated:   produced on this machine by the pipeline, not downloaded');
+      L.push(`               (pipeline/raw/${s.id}/SOURCE.json records the tool, its version and the command)`);
+    } else {
+      L.push(`  Download:    ${urls[0] ?? ''}`);
+      for (const u of urls.slice(1)) L.push(`               ${u}`);
+    }
     if (s.manual) L.push('  Download requires a manual click-through on the provider\'s site.');
     if (lic.nc || lic.no_redistribution) {
       const why = [lic.nc ? 'non-commercial' : null, lic.no_redistribution ? 'no redistribution of derived files' : null].filter(Boolean).join(', ');

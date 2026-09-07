@@ -52,9 +52,20 @@ if (problems.length) { for (const p of problems) console.error(p); await browser
 
 const anchored = facts.anchored.map((a) => a.id);
 const pick = (...sids) => anchored.filter((id) => sids.some((s) => id.startsWith(`${s}-anchor`)));
-const medulla = pick('raphe-magnus', 'raphe-obscurus', 'raphe-pallidus', 'nuclei-viscero-sensory-motor');
+const medulla = pick('raphe-magnus', 'raphe-obscurus', 'raphe-pallidus', 'nuclei-viscero-sensory-motor',
+                     'reticular-formation-medullary-superior', 'reticular-formation-medullary-inferior',
+                     'nucleus-parvicellular-reticular-alpha');
 const upper = pick('nucleus-parabrachial-lateral', 'nucleus-parabrachial-medial', 'superior-olivary-complex',
-                   'reticular-formation-mesencephalic');
+                   'reticular-formation-mesencephalic', 'reticular-formation-isthmic', 'nucleus-subcoeruleus',
+                   'nucleus-cuneiform', 'nucleus-microcellular-tegmental-parabigeminal');
+// the reticular columns end to end, and the midline serotonergic column end to end: the two groups whose
+// markers are meant to be read as a series rather than one at a time
+const reticular = pick('reticular-formation-medullary-inferior', 'reticular-formation-medullary-superior',
+                       'reticular-formation-isthmic', 'reticular-formation-mesencephalic');
+const raphe = pick('raphe-pallidus', 'raphe-obscurus', 'raphe-magnus', 'raphe-paramedian',
+                   'raphe-linear-caudal-rostral');
+// the subcoeruleus is placed against the locus coeruleus meta mask, so it is only readable next to it
+const coeruleus = [...LC, ...pick('nucleus-subcoeruleus')];
 const ALL = [...LC, ...anchored];
 const VIEWS = [
   { name: '01-locus-coeruleus-posterior', preset: '4', pad: 30, ids: LC },
@@ -67,7 +78,18 @@ const VIEWS = [
   { name: '08-medullary-markers-lateral-l', preset: '1', pad: 8, ids: medulla },
   { name: '09-pontomesencephalic-markers-posterior', preset: '4', pad: 8, ids: upper },
   { name: '10-pontomesencephalic-markers-lateral-l', preset: '1', pad: 8, ids: upper },
+  { name: '11-reticular-column-lateral-l', preset: '1', pad: 8, ids: reticular },
+  { name: '12-reticular-column-posterior', preset: '4', pad: 8, ids: reticular },
+  { name: '13-raphe-column-lateral-l', preset: '1', pad: 8, ids: raphe },
+  { name: '14-raphe-column-posterior', preset: '4', pad: 8, ids: raphe },
+  { name: '15-subcoeruleus-with-lc-posterior', preset: '4', pad: 8, ids: coeruleus },
+  { name: '16-subcoeruleus-with-lc-lateral-l', preset: '1', pad: 8, ids: coeruleus },
 ];
+// every marker the manifest carries has to appear in at least one view, so a new nucleus in
+// brainstem_landmarks.yaml cannot be added without a picture of it
+const shown = new Set(VIEWS.flatMap((v) => v.ids));
+const unshown = anchored.filter((id) => !shown.has(id));
+check(unshown.length === 0, `every landmark-anchored marker appears in some view (missing: ${unshown.join(', ') || 'none'})`);
 for (const v of VIEWS) check(v.ids.length > 0, `${v.name}: has meshes to show (${v.ids.length})`);
 if (problems.length) { for (const p of problems) console.error(p); await browser.close(); process.exit(1); }
 

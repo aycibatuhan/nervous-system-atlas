@@ -35,7 +35,7 @@ export class SliceControls {
     const all = h('input', { type: 'checkbox', title: 'Colour every visible structure on the slices, and every spinal level on the cord slices', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, showAllLabels: (e.target as HTMLInputElement).checked } }) });
     const terr = h('input', { type: 'checkbox', title: 'Tint arterial territories', onchange: (e: Event) => app.store.set({ overlay: { ...app.store.get().overlay, territory: (e.target as HTMLInputElement).checked } }) });
     const pin = h('input', { type: 'checkbox', title: 'Keep slices where they are when selecting', onchange: (e: Event) => app.store.set({ slices: { ...app.store.get().slices, pinned: (e.target as HTMLInputElement).checked } }) });
-    const cord = h('input', { type: 'checkbox', title: 'Continue the MRI below the foramen magnum with the PAM50 spinal cord template (loaded on demand)',
+    const cord = h('input', { type: 'checkbox', title: 'Continue the MRI below the foramen magnum with the spinal cord template (loaded on demand)',
       onchange: (e: Event) => app.store.set({ cordMri: (e.target as HTMLInputElement).checked }) });
     const cordLabel = h('label', { class: 'cord-mri' }, cord, ' cord MRI');
     cordLabel.hidden = !app.cordGrid;

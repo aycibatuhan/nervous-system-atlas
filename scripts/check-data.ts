@@ -68,7 +68,7 @@ async function check(manifestPath: string): Promise<number> {
     if (!manifest.licenses[m.license]) { console.error(`${m.id}: unknown licence ${m.license}`); errors++; }
   }
   // volumes: the payload must gunzip to exactly shape[0]*shape[1]*shape[2] samples of the declared dtype
-  type Vol = { file: string; dtype: string; shape: number[]; bytes_raw?: number; space?: string; spacing?: number[]; affine_ras?: number[][]; lut?: string };
+  type Vol = { file: string; dtype: string; shape: number[]; bytes_raw?: number; space?: string; spacing?: number[]; affine_ras?: number[][]; lut?: string; edition?: string };
   let volBytes = 0;
   const spineIdsInVolume = new Set<number>();
   for (const [k, v] of Object.entries(manifest.volumes as Record<string, Vol>)) {
@@ -93,11 +93,14 @@ async function check(manifestPath: string): Promise<number> {
       console.error(`volume ${k}: shape ${v.shape} is neither the brain grid nor a declared second grid`); errors++;
     }
   }
-  // the PAM50 spinal-level LUT (atlas-pam50): every id in labels_spine.u8.bin must resolve to a level whose
-  // cord segment block is a real mesh, so a level painted on a slice can be clicked into a selection
+  // the spinal-level LUT: every id in labels_spine.u8.bin must resolve to a level whose cord segment block is
+  // a real mesh, so a level painted on a slice can be clicked into a selection. Both editions ship one -- the
+  // private edition's from atlas-pam50, the public edition's from atlas-spine-generic, which paints only the
+  // levels it measured on the nerve rootlets but keeps the same 1..30 id space and the same LUT shape.
   const spineVol = (manifest.volumes as Record<string, Vol>)['labels_spine'];
   if (spineVol) {
-    if (spineVol.lut !== 'volumes/labels_spine.json') { console.error(`volume labels_spine: lut is ${spineVol.lut}, expected volumes/labels_spine.json`); errors++; }
+    const expectLut = spineVol.edition === 'public' ? 'volumes/labels_spine_public.json' : 'volumes/labels_spine.json';
+    if (spineVol.lut !== expectLut) { console.error(`volume labels_spine: lut is ${spineVol.lut}, expected ${expectLut}`); errors++; }
     const f = resolve(DATA, spineVol.lut ?? 'volumes/labels_spine.json');
     if (!existsSync(f)) { console.error(`labels_spine.json missing (${spineVol.lut})`); errors++; }
     else {
@@ -123,18 +126,27 @@ async function check(manifestPath: string): Promise<number> {
         if (e.zMm) { if (e.zMm[1]! > prevTop + 0.5) { console.error(`labels_spine.json ${e.name}: z ${e.zMm} is above the level before it`); errors++; } prevTop = e.zMm[1]!; }
       }
       for (const id of spineIdsInVolume) if (!sj.lut[String(id)]) { console.error(`labels_spine.u8.bin: id ${id} has no LUT entry`); errors++; }
-      console.log(`spinal levels: ${ids.length} in ${Object.keys(sj.regions).length} regions, ${spineIdsInVolume.size} present in the volume`);
+      if (!spineIdsInVolume.size) { console.error('labels_spine.u8.bin: no level is painted anywhere in the volume'); errors++; }
+      console.log(`spinal levels: ${ids.length} in ${Object.keys(sj.regions).length} regions, ${spineIdsInVolume.size} present in the volume`
+        + (spineIdsInVolume.size < ids.length ? ` (${[...spineIdsInVolume].sort((a, b) => a - b).map((i) => sj.lut[String(i)]!.name).join(', ')})` : ''));
     }
   }
   if (manifest.grids?.cord) {
     const g = manifest.grids.cord;
     if (!manifest.licenses[g.license]) { console.error(`grids.cord: unknown licence ${g.license}`); errors++; }
     if (!manifest.sources[g.source]) { console.error(`grids.cord: unknown source ${g.source}`); errors++; }
-    // the cord grid must actually reach the spinal cord meshes it is reformatted onto
+    // the cord grid must actually reach the spinal cord meshes it is reformatted onto.
     const zmin = g.origin_ras[2]; const zmax = zmin + (g.shape[2] - 1) * g.spacing[2];
-    // it must reach up to the MNI floor (-78 mm, so the two MRIs meet) and down past the conus
-    if (zmax < -78 || zmin > -400) { console.error(`grids.cord: z range ${zmin}..${zmax} does not span the foramen magnum to the conus`); errors++; }
-    console.log(`cord grid ${g.shape.join('x')} at ${g.spacing[0]} mm, z ${zmin.toFixed(1)}..${zmax.toFixed(1)} mm, source ${g.source}`);
+    // Both editions must reach up to the MNI floor (-78 mm), so the brain MRI and the cord MRI meet on a
+    // sagittal slice. Below that they differ by construction: the private edition's template is the whole
+    // cord past the conus, while the public edition's is built from an openly licensed source that only
+    // images the cervical and upper thoracic cord, so it only has to reach the upper thoracic levels.
+    const floor = manifest.edition === 'public' ? -200 : -400;
+    if (zmax < -78) { console.error(`grids.cord: z range ${zmin}..${zmax} does not reach the MNI floor at -78 mm`); errors++; }
+    if (zmin > floor) { console.error(`grids.cord: z range ${zmin}..${zmax} stops above ${floor} mm (${manifest.edition ?? 'private'} edition)`); errors++; }
+    const cov: string[] = g.coverage?.spinal_levels ?? [];
+    console.log(`cord grid ${g.shape.join('x')} at ${g.spacing[0]} mm, z ${zmin.toFixed(1)}..${zmax.toFixed(1)} mm, source ${g.source}`
+      + (g.edition ? ` (${g.edition} edition${cov.length ? `, ${cov[0]}-${cov[cov.length - 1]}` : ''})` : ''));
   }
   console.log(`volumes: ${(volBytes / 1e6).toFixed(2)} MB shipped`);
   console.log(`${manifestPath.replace(process.cwd() + '/', '')} (${manifest.edition ?? 'private'} edition): ${manifest.meshes.length} meshes, ${(bytes / 1e6).toFixed(1)} MB, ${(tris / 1e6).toFixed(2)} M triangles, ${errors} error(s)`);

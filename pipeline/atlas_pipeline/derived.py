@@ -33,13 +33,15 @@ choroid-plexus-fourth-ventricle
     The posterior (roof) boundary of the caudal half of the FreeSurfer aseg fourth ventricle (label 15),
     dilated 1 mm, with two short lateral extensions along the lateral recesses towards the foramina of Luschka.
 
-spinal-segment-*-vert  (PUBLIC edition only)
+spinal-segment-*-vert, filum-terminale-vert  (PUBLIC edition only)
     The same four cord blocks cut the *other* way: horizontal planes at the Z-Anatomy vertebral-body landmarks
     with the classical cord-segment-to-vertebra rule, i.e. `cord_segments_by_vertebrae()` above.  The measured
     cut uses PAM50 spinal levels, which makes those four blocks derived files of a template the public edition
     may not redistribute; this variant is Z-Anatomy geometry and a textbook rule and nothing else, so it ships
-    in the public edition instead.  The sacral block runs to the caudal end of the cord surface, so there is no
-    separate filum terminale here.
+    in the public edition instead.  The sacral block ends at the conus, whose tip is put at the middle of the
+    Z-Anatomy "Intervertebral disc L1-L2" (`conus_level()`, read from work/zanatomy/objects.json) -- the
+    classical adult level -- and the remainder of the cord surface below it is exported as `filum-terminale-vert`,
+    the public edition's filum.  No PAM50 number enters either cut.
 
 <nucleus>-anchor[-l/-r]  (PUBLIC edition only)
     Landmark-anchored location markers for the brainstem nuclei whose only delineation in this atlas comes
@@ -112,6 +114,12 @@ CORD_LEVELS = [
     ("spinal-segment-sacral", "Sacral and coccygeal cord (S1-S5, Co)", None, 1.1390,
      "runs to the tip of the conus medullaris (the caudal end of the Z-Anatomy cord surface)", "#B69771"),
 ]
+# The PUBLIC cord blocks stop at the conus and a filum runs on below it.  The conus tip is put at the L1-L2
+# intervertebral disc -- the classical adult level -- read off the Z-Anatomy vertebral column itself, so this
+# cut, like the four block cuts above it, is Z-Anatomy geometry and a textbook rule and nothing else.
+ZOBJECTS = ZW / "objects.json"
+CONUS_DISC = "Intervertebral disc L1-L2"
+FILUM_VERT = ("filum-terminale", "Filum terminale", "#C9BBA6")
 CORD_METHOD = ("Z-Anatomy cord surface cut by horizontal planes at the classical cord-segment / vertebral-body "
                "levels (cervical opposite C1-C7, thoracic opposite T1-T9/T10, lumbar opposite T10-T12, sacral "
                "and coccygeal opposite T12-L1); block boundaries are schematic, not measured on this specimen")
@@ -345,11 +353,27 @@ def cord_segments(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec,
     return out
 
 
-def cord_segments_by_vertebrae(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
-    """Fallback: the pre-PAM50 construction, horizontal cuts at the Z-Anatomy vertebral landmarks."""
+def cord_segments_by_vertebrae(T: np.ndarray, pc: dict | None = None,
+                               conus: tuple[float, str] | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
+    """Horizontal cuts at the Z-Anatomy vertebral landmarks: the pre-PAM50 fallback, and the public edition's cut.
+
+    With `conus` given (the public edition), the sacral block stops at that level instead of running on to the
+    caudal end of the surface, and everything below it is exported as the filum terminale.  Without it (the
+    fallback) the sacral block keeps its old extent and there is no filum, exactly as before."""
     cord = trimesh.load(str(CORD_PLY), force="mesh", process=True)
+    levels = list(CORD_LEVELS)
+    if conus is not None:
+        conus_z, conus_note = conus
+        levels = [(mid, name, conus_z if mid == "spinal-segment-sacral" else zmin, zmax,
+                   (f"ends at {conus_note}, i.e. at the tip of the conus medullaris; below it the cord surface "
+                    "is exported as the filum terminale") if mid == "spinal-segment-sacral" else note, colour)
+                  for mid, name, zmin, zmax, note, colour in levels]
+        fid, fname, fcolour = FILUM_VERT
+        levels.append((fid, fname, None, conus_z,
+                       f"is the remainder of the cord surface below {conus_note}: the thread of pia and glial "
+                       "tissue that the Z-Anatomy cord surface tapers into below the conus", fcolour))
     out = []
-    for mid, name, zmin, zmax, note, colour in CORD_LEVELS:
+    for mid, name, zmin, zmax, note, colour in levels:
         m = cord.copy()
         if zmax is not None:
             m = m.slice_plane([0, 0, zmax], [0, 0, -1], cap=True)
@@ -363,6 +387,22 @@ def cord_segments_by_vertebrae(T: np.ndarray, pc: dict | None = None) -> list[tu
                         colour=colour, visible=False, structure_id=mid, budget="medium")
         out.append((spec, tidy(m), f"{CORD_METHOD}; this block {note}"))
     return out
+
+
+def zanatomy_object_z(name: str) -> tuple[float, float]:
+    """The z extent (Z-Anatomy world metres) of one exported Z-Anatomy object, from work/zanatomy/objects.json."""
+    for o in json.loads(ZOBJECTS.read_text()):
+        if o["name"].strip() == name:
+            return float(o["bbox"][0][2]), float(o["bbox"][1][2])
+    raise SystemExit(f"{ZOBJECTS} has no object named {name!r} (re-run the Z-Anatomy export)")
+
+
+def conus_level() -> tuple[float, str]:
+    """Where the public cord stops being cord: the middle of the Z-Anatomy L1-L2 intervertebral disc."""
+    z0, z1 = zanatomy_object_z(CONUS_DISC)
+    z = 0.5 * (z0 + z1)
+    return z, (f'the middle of the Z-Anatomy "{CONUS_DISC}" (z {z0:.4f}-{z1:.4f} m, midpoint {z:.4f} m), the '
+               "classical adult level of the tip of the conus medullaris")
 
 
 def derived_nerves(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
@@ -452,7 +492,7 @@ CORD_VERT_SUFFIX = "-vert"
 
 def cord_segments_public(T: np.ndarray, pc: dict | None = None) -> list[tuple[MeshSpec, trimesh.Trimesh, str]]:
     out = []
-    for spec, mesh, method in cord_segments_by_vertebrae(T, pc):
+    for spec, mesh, method in cord_segments_by_vertebrae(T, pc, conus=conus_level()):
         pub = MeshSpec(**{**spec.__dict__, "id": spec.id + CORD_VERT_SUFFIX, "structure_id": spec.id,
                           "name": spec.name})
         out.append((pub, mesh, f"vertebral-landmark cut (Z-Anatomy geometry only): {method}"))
@@ -462,10 +502,14 @@ def cord_segments_public(T: np.ndarray, pc: dict | None = None) -> list[tuple[Me
 # ---------------------------------------------------------------- landmark-anchored brainstem nuclei
 LANDMARKS = CONFIG / "brainstem_landmarks.yaml"
 ANCHOR_SUFFIX = "-anchor"
-ANCHOR_SOURCE = {"aseg": "mni_aseg", "massp": "massp", "hcp": "hcp1065_tracts"}
+ANCHOR_SOURCE = {"aseg": "mni_aseg", "massp": "massp", "hcp": "hcp1065_tracts", "zanatomy": "zanatomy"}
 ANCHOR_FILE = {"aseg": ASEG,
                "massp": RAW / "massp" / "tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz",
                "hcp": RAW / "hcp1065_tracts" / "nifti"}
+ZOBJS = ZW / "objs"          # the exported Z-Anatomy objects, in Z-Anatomy world metres
+# a marker's own geometry is an ellipsoid in world mm, but its POSITION is read off the anchor dataset, so the
+# record inherits that dataset's alignment
+ANCHOR_ALIGNMENT = {"zanatomy": "registered-affine", "lc_metamask": "nlin6-identity"}
 ANCHOR_GRID_MM = 0.5      # sub-grid the ellipsoid is voxelised on (the label volumes are 1 mm)
 BRAINSTEM_LABEL = 16
 _vol_cache: dict = {}
@@ -481,6 +525,17 @@ def _volume(path):
     return _vol_cache[key]
 
 
+def _sub(name: str, side: str) -> str:
+    """`{S}` -> L/R, `{s}` -> l/r, `{side}` -> left/right, for a per-side anchor file name."""
+    return (name.replace("{S}", "L" if side == "l" else "R").replace("{s}", side)
+                .replace("{side}", "left" if side == "l" else "right"))
+
+
+def source_dataset(source: dict) -> str:
+    """The downloaded dataset an anchor's geometry comes from (for the record's `source` and the NOTICE)."""
+    return source["dataset"] if source["kind"] == "mask" else ANCHOR_SOURCE[source["kind"]]
+
+
 def anchor_points(source: dict, side: str) -> np.ndarray:
     """World-mm coordinates of every voxel of one anchor source."""
     kind = source["kind"]
@@ -491,6 +546,18 @@ def anchor_points(source: dict, side: str) -> np.ndarray:
         name = source["file"].replace("{S}", "L" if side == "l" else "R")
         data, aff = _volume(ANCHOR_FILE["hcp"] / f"{name}.nii.gz")
         mask = np.asarray(data) >= source.get("threshold", 0.5)
+    elif kind == "zanatomy":
+        # an open Z-Anatomy object (work/zanatomy/objs/*.ply), mapped to corrected MNI mm through exactly the
+        # same affine + post-correction as every other Z-Anatomy mesh in the atlas, so the anchor sits where
+        # the shipped surface sits.  Its vertices, not its voxels, are the point set.
+        T, pc = ztomni()
+        m = trimesh.load(str(ZOBJS / f"{_sub(source['file'], side)}.ply"), force="mesh", process=True)
+        return apply(T, np.asarray(m.vertices, float), pc)
+    elif kind == "mask":
+        # any other openly licensed probability/label volume under pipeline/raw, named by `dataset` so the
+        # record can credit it (e.g. the Dahl locus coeruleus meta mask, dataset lc_metamask)
+        data, aff = _volume(RAW / _sub(source["file"], side))
+        mask = np.nan_to_num(np.asarray(data, float), nan=0.0) >= source.get("threshold", 0.5)
     else:
         raise SystemExit(f"brainstem_landmarks.yaml: unknown anchor source kind {kind!r}")
     idx = np.argwhere(mask)
@@ -608,7 +675,7 @@ def landmark_source(mesh_id: str) -> str:
     for n in cfg["nuclei"]:
         base = f"{n['id']}{ANCHOR_SUFFIX}"
         if mesh_id in (base, base + "-l", base + "-r"):
-            return ANCHOR_SOURCE[n["anchor"]["source"]["kind"]]
+            return source_dataset(n["anchor"]["source"])
     return "mni_aseg"
 
 
@@ -641,7 +708,7 @@ def main(argv=None) -> None:
             source = "mni_aseg"
         else:
             source = "zanatomy"
-        alignment = "registered-affine" if source == "zanatomy" else "native-mni"
+        alignment = ANCHOR_ALIGNMENT.get(source, "native-mni")
         # public-only: the measured cord blocks and the private nuclei already fill these ids in the
         # private edition, so these records exist for `atlas-manifest --public` alone (see manifest.py)
         public = anchored or spec.id.endswith(CORD_VERT_SUFFIX)

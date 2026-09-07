@@ -160,6 +160,70 @@ def filter_public(man: dict) -> tuple[dict, dict]:
     return public, exclusions
 
 
+def source_record(s: dict, lock: dict) -> dict:
+    """One entry of manifest.sources: the attribution the About panel and NOTICE need, plus the locked digests."""
+    return {"name": s.get("name", s["id"]), "license": s["license"], "citation": s["citation"],
+            "url": (s["files"][0]["url"] if s.get("files") else ""),
+            "urls": [d["url"] for d in s.get("files", [])],
+            "manual": bool(s.get("manual", False)),
+            "files": {f: lock.get(f"{s['id']}/{f}", {}).get("sha256")
+                      for f in [d.get("dest") or d["url"].rsplit("/", 1)[-1] for d in s.get("files", [])]}}
+
+
+def public_cord() -> dict | None:
+    """The openly licensed cord MRI built by `atlas-spine-generic`, or None when it has not been built.
+
+    It is deliberately not part of the private manifest: the private edition already has a cord MRI, and
+    adding a second one would change public/data/manifest.json for no reason.
+    """
+    p = VOLUMES / "cord_public.json"
+    if not p.exists():
+        return None
+    cord = json.loads(p.read_text())
+    lut = VOLUMES / "labels_spine_public.json"
+    if "labels_spine" in cord["contrasts"] and lut.exists():
+        cord["contrasts"]["labels_spine"]["lut"] = f"volumes/{lut.name}"
+    return cord
+
+
+def swap_public_cord(public: dict, exclusions: dict, cord: dict, cfg: dict, lock: dict) -> None:
+    """Put the public edition's own cord MRI into the grid slot `filter_public` has just emptied.
+
+    The private cord MRI is a derived file of a template with no licence, so `filter_public` drops grids.cord
+    and every volume sitting on it, and the public app then hides the cord toggle.  `atlas-spine-generic`
+    builds a replacement from redistributable data, and this puts it back under exactly the same keys --
+    grids.cord, volumes.cord_t2, volumes.labels_spine -- so nothing downstream has to know which edition it is
+    looking at.  Each substituted record carries `edition: "public"`, and the licence and source it needs are
+    added to the manifest here because the private manifest has no reason to name them.
+    """
+    both = ("shape", "spacing", "origin_ras", "affine_ras", "source", "license", "reformat")
+    public["grids"] = {**(public.get("grids") or {}), "cord": {**{k: cord[k] for k in both}, "edition": "public",
+                                                               "coverage": cord.get("coverage", {})}}
+    public["volumes"] = {**public["volumes"], **{k: {**v, "edition": "public"} for k, v in cord["contrasts"].items()}}
+    lic = cord["license"]
+    if lic not in public["licenses"]:
+        v = cfg["licenses"][lic]
+        public["licenses"][lic] = {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""),
+                                   "nc": bool(v.get("nc", False)),
+                                   "noRedistribution": bool(v.get("no_redistribution", False)),
+                                   "text": f"licenses/{lic}.txt"}
+    sid = cord["source"]
+    if sid not in public["sources"]:
+        s = next((x for x in cfg["sources"] if x["id"] == sid), None)
+        if s is None:
+            raise SystemExit(f"manifest --public: cord_public.json names source {sid}, which is not in sources.yaml")
+        public["sources"][sid] = source_record(s, lock)
+    exclusions["substitutions"] = {
+        "cord": {"replaces": [v["key"] for v in exclusions["volumes"]] + ["grids.cord"],
+                 "with": {"grid": "grids.cord", "volumes": sorted(cord["contrasts"]),
+                          "source": sid, "license": lic,
+                          "files": [v["file"] for v in cord["contrasts"].values()],
+                          "bytes": sum(v.get("bytes_gz", 0) for v in cord["contrasts"].values()),
+                          "coverage": cord.get("coverage", {})},
+                 "reason": "the private cord MRI may not be redistributed, so the public edition ships its own "
+                           "cord template built from openly licensed data (atlas-spine-generic)"}}
+
+
 def verify_public(public: dict, exclusions: dict) -> list[str]:
     """Every reason the manifest may not be published. An empty list means it is clean."""
     bad: list[str] = []
@@ -263,17 +327,17 @@ def main(argv=None) -> None:
                          "text": f"licenses/{k}.txt"} for k, v in cfg["licenses"].items()},
         # every shipped source with the attribution the About panel and NOTICE need: dataset name, citation,
         # licence id and the download URLs the files actually came from (url = the dataset's landing/first URL).
-        "sources": {s["id"]: {"name": s.get("name", s["id"]), "license": s["license"], "citation": s["citation"],
-                              "url": (s["files"][0]["url"] if s.get("files") else ""),
-                              "urls": [d["url"] for d in s.get("files", [])],
-                              "manual": bool(s.get("manual", False)),
-                              "files": {f: lock.get(f"{s['id']}/{f}", {}).get("sha256") for f in [d.get("dest") or d["url"].rsplit("/", 1)[-1] for d in s["files"]]}}
+        "sources": {s["id"]: source_record(s, lock)
                     for s in cfg["sources"] if any(m["source"] == s["id"] for m in meshes) or s["id"] == "mni_t1w"
                     or (cord is not None and s["id"] == cord.get("source"))},
         "meshes": out_meshes,
     }
     if args.public:
         public, exclusions = filter_public(manifest)
+        # the cord MRI the public edition may actually ship, in the slot the PAM50 one has just left
+        pub_cord = public_cord()
+        if pub_cord:
+            swap_public_cord(public, exclusions, pub_cord, cfg, lock)
         bad = verify_public(public, exclusions)
         if bad:
             for b in bad:
@@ -285,6 +349,11 @@ def main(argv=None) -> None:
         print(f"manifest --public: dropped {t['meshes']} meshes ({t['meshBytes']/1e6:.1f} MB), {t['volumes']} volumes "
               f"({t['volumeBytes']/1e6:.1f} MB), {t['grids']} grid(s), {t['licenses']} licences, {t['sources']} sources "
               f"-> {OUT / 'manifest.public.exclusions.json'}")
+        if pub_cord:
+            g = public["grids"]["cord"]
+            print(f"manifest --public: + cord volumes {sorted(pub_cord['contrasts'])} on a {g['shape']} grid at "
+                  f"{g['spacing'][0]} mm from source {g['source']} ({g['license']}), covering "
+                  f"{'-'.join(pub_cord['coverage']['spinal_levels'][::max(len(pub_cord['coverage']['spinal_levels']) - 1, 1)])}")
         print(f"manifest --public: {t['meshesKept']} meshes ({t['meshBytesKept']/1e6:.1f} MB), "
               f"{len(public['volumes'])} volumes, {len(public['licenses'])} licences, {len(public['sources'])} sources "
               f"-> {OUT / 'manifest.public.json'}")

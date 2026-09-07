@@ -119,12 +119,14 @@ async function boot(): Promise<void> {
   app.store.subscribe((s) => s.windowLevel, (w) => { app.uniforms.uWindow.value = w.window; app.uniforms.uLevel.value = w.level; app.sm.requestRender(); });
   app.store.subscribe((s) => s.contrast, (c) => { void loadContrast(app, c, progress); void ensureCord(); });
 
-  // ---- spinal cord MRI (PAM50 curved reformat, its own grid below the MNI box), loaded on demand
+  // ---- spinal cord MRI (curved reformat onto our cord centreline, its own grid below the MNI box), loaded
+  // on demand. The private edition reformats PAM50 and has T2 and T1; the public edition reformats the atlas'
+  // own spine-generic average and has T2 only, so the contrast choice falls back to whatever the grid ships.
   const cordTex: Record<string, THREE.Data3DTexture> = {};
   let cordInflight: Promise<void> | null = null;
   let spineInflight: Promise<void> | null = null;
   const mniFloorZ = gridBoxMm(app.grid).min.z;
-  /** The PAM50 spinal-level volume + LUT, fetched once, next to the cord MRI. */
+  /** The spinal-level volume + LUT of whichever cord template this edition ships, fetched once with it. */
   async function ensureSpineLabels(): Promise<void> {
     if (app.spine || spineInflight || !app.cordGrid) return spineInflight ?? undefined;
     const meta = app.manifest.volumes['labels_spine'];
@@ -143,7 +145,8 @@ async function boot(): Promise<void> {
   async function ensureCord(): Promise<void> {
     if (!app.cordGrid) return;
     if (!app.store.get().cordMri) { app.uniforms.uHasCord.value = 0; app.sm.requestRender(); return; }
-    const key = app.store.get().contrast === 't2w' ? 'cord_t2' : 'cord_t1';
+    const want = app.store.get().contrast === 't2w' ? 'cord_t2' : 'cord_t1';
+    const key = app.manifest.volumes[want] ? want : app.manifest.volumes['cord_t2'] ? 'cord_t2' : 'cord_t1';
     const meta = app.manifest.volumes[key];
     if (!meta) return;
     if (!cordTex[key]) {

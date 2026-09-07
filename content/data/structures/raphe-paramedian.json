@@ -9,7 +9,9 @@
  ],
  "system": "brainstem",
  "meshIds": [
-  "raphe-paramedian"
+  "raphe-paramedian",
+  "raphe-paramedian-anchor-l",
+  "raphe-paramedian-anchor-r"
  ],
  "summary": "The paramedian raphe nucleus is a serotonergic group lying just off the midline of the pontine tegmentum, immediately lateral to the median raphe nucleus with which it is usually considered together as the B8 cell group. Its distinguishing feature is its output to the hippocampus and the septum: through the fornix and the cingulum it supplies the septohippocampal system with serotonin, and by doing so it desynchronizes the hippocampal theta rhythm. Where the median raphe suppresses theta, the paramedian group contributes to the same control, so this small nucleus is part of the machinery that decides whether the hippocampus is in an exploratory, theta-dominated state or a quiet one. It is also part of the ascending serotonergic system that regulates mood, anxiety and sleep.",
  "anatomy": {
@@ -132,7 +134,8 @@
   ]
  },
  "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn."
+  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 42 mm3 ellipsoid per side, placed just off the midline on either side of the median raphe in the pontine tegmentum and clipped to the brainstem. The size is approximate on purpose: Bianciardi et al. (2018) publish the paramedian raphe label volume only as a plotted bar in their label-volume chart, from which about 41 mm3 on the right and 42 mm3 on the left can be read, and no table in that paper gives the number. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
  ],
  "citations": [
   {

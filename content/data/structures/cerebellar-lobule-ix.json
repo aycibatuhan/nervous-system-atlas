@@ -10,6 +10,8 @@
   "meshIds": [
     "cerebellar-lobule-ix-l",
     "cerebellar-lobule-ix-r",
+    "cerebellar-lobule-ix-fs-l",
+    "cerebellar-lobule-ix-fs-r",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -132,7 +134,9 @@
       "Never do a lumbar puncture when the tonsils are already in the foramen"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition this lobule is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; meshes `cerebellar-lobule-ix-fs-l` and `-r`). It is a neural network's reading of one average brain rather than a hand-corrected probabilistic map, so treat the fissure lines as approximate: Dice against the private-edition lobule is 0.74 on the left and 0.84 on the right, while the cerebellar cortex as a whole agrees at 0.93."
+  ],
   "citations": [
     {
       "ref": "sp-cerebellum",
@@ -153,6 +157,14 @@
     {
       "ref": "oa-nodulus-uvula-otolith",
       "section": "Role of the nodulus and uvula in the tVOR"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [],

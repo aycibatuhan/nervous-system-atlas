@@ -418,6 +418,62 @@ def cerebra_atlas(file: str | None = None, alignment: str = "nlin2009csym-identi
                      edition="public", entries=cerebra_entries())
 
 
+# ================================================================ FastSurfer CerebNet cerebellum (PUBLIC edition only)
+# The Diedrichsen cerebellar atlas is CC BY-NC 3.0, so the public edition cannot ship the 34 lobule meshes.
+# The stand-in is not another atlas but a segmentation of our own template: FastSurfer v2.5.4 (Apache-2.0,
+# Henschel 2020) was run on raw/mni_t1w/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz -- FastSurferVINN for the
+# aseg/DKT prior, then the CerebNet module (Faber 2022) for the cerebellum -- and the label volume that came
+# out is our own derivative of the MNI template, released here under CC BY-SA 4.0. The exact commands, the
+# tool commit and the checkpoint licences are in raw/fastsurfer_cerebellum/SOURCE.json.
+#
+# The labels are FreeSurfer ids 601-631 (FastSurferCNN/config/FreeSurferColorLUT.txt, "Cbm_*"). CerebNet's
+# vermis is coarser than the Diedrichsen one: it has VI, VII (crus I + crus II + VIIb together), VIII
+# (VIIIa + VIIIb), IX and X -- five vermian parcels where the private edition has eight. The deep nuclei are
+# not segmented at all, so dentate/interposed/fastigial keep the aseg cerebellar white matter as their
+# public-edition fallback, exactly as before.
+#
+# ids are suffixed "-fs" so they never collide with the private-edition ids, and the colours are the same
+# jitter of the cerebellum tone keyed on the same structure id, so a lobule looks the same in both editions.
+FASTSURFER_CEREB_FILE = "fastsurfer_cerebellum/tpl-MNI152NLin2009cAsym_res-01_atlas-CerebNet_dseg.nii.gz"
+
+# key, display name, FreeSurfer label L, R, vermis label (None when CerebNet has no vermian parcel for it)
+CEREBNET_LOBULES = [
+    ("i-iv", "Lobules I\u2013IV", 601, 602, None), ("v", "Lobule V", 603, 604, None),
+    ("vi", "Lobule VI", 605, 607, 606), ("crus-i", "Crus I", 608, 610, None),
+    ("crus-ii", "Crus II", 611, 613, None), ("viib", "Lobule VIIb", 614, 616, None),
+    ("viiia", "Lobule VIIIa", 617, 619, None), ("viiib", "Lobule VIIIb", 620, 622, None),
+    ("ix", "Lobule IX", 623, 625, 624), ("x", "Lobule X (flocculonodular)", 626, 628, 627),
+]
+# vermian parcels CerebNet reports as a group rather than per lobule
+CEREBNET_VERMIS_GROUPS = [("vii", "Vermis VII (crus I, crus II and VIIb)", 630),
+                          ("viii", "Vermis VIII (VIIIa and VIIIb)", 631)]
+
+
+def fastsurfer_cerebellum_entries() -> dict[int, MeshSpec]:
+    """CerebNet FreeSurfer label -> mesh. Not LR(), because the content structure id is not the mesh id here."""
+    e: dict[int, MeshSpec] = {}
+    for key, name, lab_l, lab_r, lab_v in CEREBNET_LOBULES:
+        sid = f"cerebellar-lobule-{key}"
+        for lab, side, sfx in ((lab_l, "left", "-l"), (lab_r, "right", "-r")):
+            e[lab] = MeshSpec(id=f"{sid}-fs{sfx}", name=f"{name} ({'L' if side == 'left' else 'R'})",
+                              system="cerebellum", subsystem="lobules", side=side, budget="medium",
+                              colour=jitter("#B5978A", sid, 0.16), structure_id=sid)
+        if lab_v:
+            e[lab_v] = MeshSpec(f"cerebellar-vermis-{key}-fs", f"Vermis {name.replace('Lobule ', '')}", "cerebellum",
+                                subsystem="vermis", budget="small", colour=jitter("#A88B7E", sid, 0.16),
+                                structure_id="cerebellar-vermis")
+    for key, name, lab in CEREBNET_VERMIS_GROUPS:
+        e[lab] = MeshSpec(f"cerebellar-vermis-{key}-fs", name, "cerebellum", subsystem="vermis", budget="small",
+                          colour=jitter("#A88B7E", f"cerebellar-lobule-{key}", 0.16), structure_id="cerebellar-vermis")
+    return e
+
+
+def fastsurfer_cerebellum_atlas(file: str | None = None) -> AtlasSpec:
+    """The CerebNet cerebellum as an atlas spec (segmented on our own template, so it is already native)."""
+    return AtlasSpec("fastsurfer_cerebellum", file or FASTSURFER_CEREB_FILE, "mni2009", priority=3,
+                     alignment="native-mni", edition="public", entries=fastsurfer_cerebellum_entries())
+
+
 # ---------------------------------------------------------------- atlases in build order
 def atlases() -> list[AtlasSpec]:
     return [

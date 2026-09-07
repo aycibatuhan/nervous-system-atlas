@@ -11,6 +11,9 @@
     "cerebellar-lobule-x-l",
     "cerebellar-lobule-x-r",
     "cerebellar-vermis-x",
+    "cerebellar-lobule-x-fs-l",
+    "cerebellar-lobule-x-fs-r",
+    "cerebellar-vermis-x-fs",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -123,7 +126,9 @@
       "Positional vertigo that does not fatigue and is downbeating is central until proven otherwise"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition the flocculonodular lobe is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; `cerebellar-lobule-x-fs-l`, `-r` and `cerebellar-vermis-x-fs`). Lobule X is the smallest cerebellar parcel — about 950 mm³ per flocculus and 600 mm³ for the nodulus — so it is the one a network places least reliably: Dice against the private-edition lobule is 0.73 left, 0.77 right and 0.69 for the nodulus. Use it to find the flocculus in the cerebellopontine angle, not to measure it."
+  ],
   "citations": [
     {
       "ref": "sp-nucleus-vestibular",
@@ -136,6 +141,14 @@
     {
       "ref": "sp-vestibulo-ocular-reflex",
       "section": "Structure and Function"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [

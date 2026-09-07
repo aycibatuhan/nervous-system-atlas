@@ -7,6 +7,8 @@
   "meshIds": [
     "cerebellar-lobule-ix-l",
     "cerebellar-lobule-ix-r",
+    "cerebellar-lobule-ix-fs-l",
+    "cerebellar-lobule-ix-fs-r",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -112,7 +114,9 @@
       "Cough headache in a young adult with downbeat nystagmus should prompt a sagittal MRI of the craniocervical junction"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition the tonsil is shown through lobule IX, and that lobule is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; `cerebellar-lobule-ix-fs-l` and `-r`); Dice against the private-edition lobule is 0.74 left and 0.84 right. Neither edition delineates the tonsil separately — lobule IX is the biventer-tonsil-uvula complex, so the surface is larger than the tonsil that herniates through the foramen magnum."
+  ],
   "citations": [
     {
       "ref": "sp-cerebellum",
@@ -125,6 +129,14 @@
     {
       "ref": "sp-brain-herniation",
       "section": "Pathophysiology"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [

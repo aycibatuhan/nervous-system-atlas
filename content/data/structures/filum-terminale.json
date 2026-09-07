@@ -1,166 +1,167 @@
 {
-  "kind": "structure",
-  "id": "filum-terminale",
-  "name": "Filum terminale",
-  "synonyms": [
-    "terminal filum",
-    "filum terminale internum and externum"
+ "kind": "structure",
+ "id": "filum-terminale",
+ "name": "Filum terminale",
+ "synonyms": [
+  "terminal filum",
+  "filum terminale internum and externum"
+ ],
+ "system": "spinal-cord",
+ "meshIds": [
+  "filum-terminale",
+  "filum-terminale-vert"
+ ],
+ "summary": "A thin, glistening thread of pia mater and residual glial tissue that runs from the tip of the conus medullaris to the back of the first coccygeal segment, anchoring the lower end of the spinal cord inside the thecal sac and then to the coccyx. It contains no functioning cord segments and no roots of its own, but it is the embryological remnant of the caudal cord and it is the structure that gives way in tethered cord syndrome. Two parts are described: the filum terminale internum, about 15 cm long, which lies inside the dural sac surrounded by the roots of the cauda equina, and the filum terminale externum, about 5 cm long, which is invested by the dura it pierces at the S2 level and continues as the coccygeal ligament. Its normal diameter is 2 mm or less, and a filum thicker than that, or one infiltrated by fat, is the commonest anatomical cause of a tethered cord in an adult.",
+ "anatomy": {
+  "location": "From the apex of the conus medullaris at the L1–L2 disc in the adult, down through the lumbar cistern in the midline among the descending roots of the cauda equina, to the caudal end of the dural sac at about S2, where it pierces the dura and continues outside it as the coccygeal ligament to the dorsum of the first coccygeal vertebra. In the newborn the conus and therefore the origin of the filum lie two to three vertebral levels lower, and they rise to the adult position by about two years of age as the vertebral column outgrows the cord.",
+  "boundaries": "Above, the tapering tip of the conus medullaris; below, the periosteum of the coccyx. Around it in the lumbar cistern lie the lumbar, sacral and coccygeal roots of the cauda equina; behind it are the laminae and the ligamentum flavum, in front the posterior longitudinal ligament and the lumbar vertebral bodies.",
+  "subdivisions": [
+   {
+    "name": "Filum terminale internum",
+    "note": "the intradural part, roughly 15 cm, from the conus to the caudal end of the dural sac at S2, bathed in cerebrospinal fluid and surrounded by the cauda equina"
+   },
+   {
+    "name": "Filum terminale externum (coccygeal ligament)",
+    "note": "the extradural part, roughly 5 cm, ensheathed by dura, fused with the periosteum of the coccyx"
+   }
   ],
-  "system": "spinal-cord",
-  "meshIds": [
-    "filum-terminale"
-  ],
-  "summary": "A thin, glistening thread of pia mater and residual glial tissue that runs from the tip of the conus medullaris to the back of the first coccygeal segment, anchoring the lower end of the spinal cord inside the thecal sac and then to the coccyx. It contains no functioning cord segments and no roots of its own, but it is the embryological remnant of the caudal cord and it is the structure that gives way in tethered cord syndrome. Two parts are described: the filum terminale internum, about 15 cm long, which lies inside the dural sac surrounded by the roots of the cauda equina, and the filum terminale externum, about 5 cm long, which is invested by the dura it pierces at the S2 level and continues as the coccygeal ligament. Its normal diameter is 2 mm or less, and a filum thicker than that, or one infiltrated by fat, is the commonest anatomical cause of a tethered cord in an adult.",
-  "anatomy": {
-    "location": "From the apex of the conus medullaris at the L1\u2013L2 disc in the adult, down through the lumbar cistern in the midline among the descending roots of the cauda equina, to the caudal end of the dural sac at about S2, where it pierces the dura and continues outside it as the coccygeal ligament to the dorsum of the first coccygeal vertebra. In the newborn the conus and therefore the origin of the filum lie two to three vertebral levels lower, and they rise to the adult position by about two years of age as the vertebral column outgrows the cord.",
-    "boundaries": "Above, the tapering tip of the conus medullaris; below, the periosteum of the coccyx. Around it in the lumbar cistern lie the lumbar, sacral and coccygeal roots of the cauda equina; behind it are the laminae and the ligamentum flavum, in front the posterior longitudinal ligament and the lumbar vertebral bodies.",
-    "subdivisions": [
-      {
-        "name": "Filum terminale internum",
-        "note": "the intradural part, roughly 15 cm, from the conus to the caudal end of the dural sac at S2, bathed in cerebrospinal fluid and surrounded by the cauda equina"
-      },
-      {
-        "name": "Filum terminale externum (coccygeal ligament)",
-        "note": "the extradural part, roughly 5 cm, ensheathed by dura, fused with the periosteum of the coccyx"
-      }
-    ],
-    "relations": {
-      "anterior": "posterior longitudinal ligament and the bodies of L2 to S2",
-      "posterior": "laminae, ligamenta flava and the epidural fat",
-      "lateral": "the descending roots of the cauda equina on each side"
-    }
-  },
-  "connections": {
-    "afferents": [],
-    "efferents": [],
-    "pathways": []
-  },
-  "function": "Mechanical rather than neural: the filum anchors the caudal end of the cord to the coccyx and, together with the denticulate ligaments higher up, limits the excursion of the cord within the vertebral canal during flexion and extension of the trunk. Its elasticity lets the cord move a few millimeters cranially and caudally without traction on the roots. Histologically it holds ependymal cells, glial tissue and occasional nests of neurons that are the remains of the caudal cord segments lost during retrogressive differentiation, which is why tumors of ependymal origin arise here.",
-  "bloodSupply": {
-    "arteries": [
-      "anterior-spinal-artery"
-    ],
-    "territories": [],
-    "note": "A slender continuation of the anterior spinal artery, the artery of the filum terminale, runs on its surface and anastomoses with sacral radicular branches."
-  },
-  "imaging": {
-    "bestView": [
-      {
-        "plane": "sagittal",
-        "mni": {
-          "x": 0,
-          "y": -48,
-          "z": -65
-        },
-        "label": "cord (the filum runs from L1\u2013L2 to the coccyx, far below the MNI volume)"
-      }
-    ],
-    "normalAppearance": "The normal filum is best judged on axial T1 or T2 images of the lumbar cistern at the L5\u2013S1 level, where the cauda equina roots have swept anterolaterally and the filum sits alone in the posterior midline; it should measure 2 mm or less and follow the same signal as a root. On sagittal images it is a fine dark line in bright cerebrospinal fluid and is often invisible. The two observations that matter are the level of the conus tip, which should be at or above the lower border of L2, and the thickness and fat content of the filum. In this atlas the filum is the part of the cord surface below the caudal end of the PAM50 S5 spinal level, so it stands for the whole taper below the conus rather than for a measured thread.",
-    "pathology": [
-      {
-        "pathology": "Tight filum terminale (tethered cord)",
-        "modality": "MRI",
-        "finding": "Conus below the L2 level with a filum thicker than 2 mm, often with a posteriorly displaced conus lying against the laminae.",
-        "sequence": "T2"
-      },
-      {
-        "pathology": "Fatty (lipomatous) filum",
-        "modality": "MRI",
-        "finding": "Linear T1 hyperintensity within the filum that suppresses on fat-saturated images; an incidental finding in some adults and a cause of tethering in others.",
-        "sequence": "T1"
-      },
-      {
-        "pathology": "Myxopapillary ependymoma",
-        "modality": "MRI",
-        "finding": "Enhancing sausage-shaped mass of the filum and conus in the lumbar cistern, often with hemorrhagic caps.",
-        "sequence": "T1+Gd"
-      },
-      {
-        "pathology": "Occult spinal dysraphism",
-        "modality": "MRI",
-        "finding": "Thick or fatty filum with a low conus, a dermal sinus or a lipoma, in a child with a cutaneous stigma over the lower back.",
-        "sequence": "T1"
-      }
-    ],
-    "sequenceOfChoice": "Sagittal and axial lumbar T1 and T2 through to the coccyx, with fat saturation to confirm a fatty filum"
-  },
-  "clinical": {
-    "lesionEffects": [
-      {
-        "deficit": "Progressive back and leg pain worsened by growth, flexion or exercise",
-        "side": "bilateral",
-        "mechanism": "Traction on the conus and the sacral roots by a short, inelastic filum"
-      },
-      {
-        "deficit": "Urinary urgency, frequency, incontinence or retention",
-        "side": "bilateral",
-        "mechanism": "Stretch injury to the sacral parasympathetic neurons of the conus"
-      },
-      {
-        "deficit": "Foot deformity, leg length or calf asymmetry, and a spastic-ataxic gait",
-        "side": "bilateral",
-        "mechanism": "Chronic traction myelopathy of the lower lumbar and sacral segments"
-      },
-      {
-        "deficit": "Saddle sensory loss with absent ankle jerks",
-        "side": "bilateral",
-        "mechanism": "Involvement of the sacral segments and the adjacent cauda equina roots"
-      }
-    ],
-    "examination": [
-      "Inspect the lower back for a dimple, sinus, hairy patch, hemangioma or subcutaneous lipoma",
-      "Compare foot size, calf circumference and arch shape between the two legs",
-      "Ankle jerks, plantar responses and tone in the legs",
-      "Perianal sensation, anal tone and the bulbocavernosus reflex",
-      "Post-void bladder scan and a formal urodynamic study when tethering is suspected"
-    ],
-    "syndromes": [
-      "syn-conus-vs-cauda-equina"
-    ],
-    "pearls": [
-      "A conus tip at or above the lower border of L2 with a filum of 2 mm or less is normal; both have to be checked before tethering is excluded",
-      "Tethered cord in an adult usually declares itself after a growth spurt, a fall or a period of heavy lifting rather than at birth",
-      "The filum carries no roots, so cutting it at surgery costs nothing neurologically, which is why sectioning a tight filum is a short and effective operation",
-      "A cutaneous stigma over the lumbosacral midline in an infant is an indication to image the whole lumbar spine, not to wait for symptoms"
-    ]
-  },
-  "pitfalls": [
-    "DERIVED MESH: this is not a measured filum. It is the part of the Z-Anatomy cord surface that lies below the caudal end of the PAM50 S5 spinal level, cut on a plane normal to the cord centerline, so it shows where the taper below the conus runs but not the true caliber of the thread; use it for orientation, never to judge filum thickness",
-    "A fatty filum on its own, with a normal conus level and no symptoms, is a common incidental finding and is not by itself a diagnosis of tethered cord",
-    "A low conus can be missed if the sagittal lumbar study stops above the coccyx, because the tethering lesion is often at the very bottom of the sac",
-    "The filum is easily mistaken for a nerve root during lumbar puncture and during surgery: intraoperative stimulation, not appearance, tells them apart",
-    "PUBLIC EDITION - NO MESH: this mesh is cut at a spinal-level boundary of a template whose data may not be redistributed, so the openly shareable build of the atlas has no filum surface at all. There the sacral block runs on to the caudal end of the cord model, which means the taper below the conus is drawn as part of the sacral cord rather than as a filum."
-  ],
-  "citations": [
-    {
-      "ref": "sp-conus-medullaris",
-      "section": "Structure and Function"
-    },
-    {
-      "ref": "sp-tethered-cord-syndrome",
-      "section": "Introduction"
-    },
-    {
-      "ref": "sp-back-cauda-equina",
-      "section": "Structure and Function"
-    },
-    {
-      "ref": "sp-back-spinal-meninges",
-      "section": "Structure and Function"
-    },
-    {
-      "ref": "sp-spinal-cord",
-      "section": "Structure and Function"
-    }
-  ],
-  "tags": [
-    "spinal"
-  ],
-  "status": "draft",
-  "latin": "Filum terminale",
-  "parent": "spinal-cord",
-  "subsystem": "cord",
-  "level": {
-    "region": "spinal"
+  "relations": {
+   "anterior": "posterior longitudinal ligament and the bodies of L2 to S2",
+   "posterior": "laminae, ligamenta flava and the epidural fat",
+   "lateral": "the descending roots of the cauda equina on each side"
   }
+ },
+ "connections": {
+  "afferents": [],
+  "efferents": [],
+  "pathways": []
+ },
+ "function": "Mechanical rather than neural: the filum anchors the caudal end of the cord to the coccyx and, together with the denticulate ligaments higher up, limits the excursion of the cord within the vertebral canal during flexion and extension of the trunk. Its elasticity lets the cord move a few millimeters cranially and caudally without traction on the roots. Histologically it holds ependymal cells, glial tissue and occasional nests of neurons that are the remains of the caudal cord segments lost during retrogressive differentiation, which is why tumors of ependymal origin arise here.",
+ "bloodSupply": {
+  "arteries": [
+   "anterior-spinal-artery"
+  ],
+  "territories": [],
+  "note": "A slender continuation of the anterior spinal artery, the artery of the filum terminale, runs on its surface and anastomoses with sacral radicular branches."
+ },
+ "imaging": {
+  "bestView": [
+   {
+    "plane": "sagittal",
+    "mni": {
+     "x": 0,
+     "y": -48,
+     "z": -65
+    },
+    "label": "cord (the filum runs from L1–L2 to the coccyx, far below the MNI volume)"
+   }
+  ],
+  "normalAppearance": "The normal filum is best judged on axial T1 or T2 images of the lumbar cistern at the L5–S1 level, where the cauda equina roots have swept anterolaterally and the filum sits alone in the posterior midline; it should measure 2 mm or less and follow the same signal as a root. On sagittal images it is a fine dark line in bright cerebrospinal fluid and is often invisible. The two observations that matter are the level of the conus tip, which should be at or above the lower border of L2, and the thickness and fat content of the filum. In this atlas the filum is the part of the cord surface below the caudal end of the PAM50 S5 spinal level, so it stands for the whole taper below the conus rather than for a measured thread.",
+  "pathology": [
+   {
+    "pathology": "Tight filum terminale (tethered cord)",
+    "modality": "MRI",
+    "finding": "Conus below the L2 level with a filum thicker than 2 mm, often with a posteriorly displaced conus lying against the laminae.",
+    "sequence": "T2"
+   },
+   {
+    "pathology": "Fatty (lipomatous) filum",
+    "modality": "MRI",
+    "finding": "Linear T1 hyperintensity within the filum that suppresses on fat-saturated images; an incidental finding in some adults and a cause of tethering in others.",
+    "sequence": "T1"
+   },
+   {
+    "pathology": "Myxopapillary ependymoma",
+    "modality": "MRI",
+    "finding": "Enhancing sausage-shaped mass of the filum and conus in the lumbar cistern, often with hemorrhagic caps.",
+    "sequence": "T1+Gd"
+   },
+   {
+    "pathology": "Occult spinal dysraphism",
+    "modality": "MRI",
+    "finding": "Thick or fatty filum with a low conus, a dermal sinus or a lipoma, in a child with a cutaneous stigma over the lower back.",
+    "sequence": "T1"
+   }
+  ],
+  "sequenceOfChoice": "Sagittal and axial lumbar T1 and T2 through to the coccyx, with fat saturation to confirm a fatty filum"
+ },
+ "clinical": {
+  "lesionEffects": [
+   {
+    "deficit": "Progressive back and leg pain worsened by growth, flexion or exercise",
+    "side": "bilateral",
+    "mechanism": "Traction on the conus and the sacral roots by a short, inelastic filum"
+   },
+   {
+    "deficit": "Urinary urgency, frequency, incontinence or retention",
+    "side": "bilateral",
+    "mechanism": "Stretch injury to the sacral parasympathetic neurons of the conus"
+   },
+   {
+    "deficit": "Foot deformity, leg length or calf asymmetry, and a spastic-ataxic gait",
+    "side": "bilateral",
+    "mechanism": "Chronic traction myelopathy of the lower lumbar and sacral segments"
+   },
+   {
+    "deficit": "Saddle sensory loss with absent ankle jerks",
+    "side": "bilateral",
+    "mechanism": "Involvement of the sacral segments and the adjacent cauda equina roots"
+   }
+  ],
+  "examination": [
+   "Inspect the lower back for a dimple, sinus, hairy patch, hemangioma or subcutaneous lipoma",
+   "Compare foot size, calf circumference and arch shape between the two legs",
+   "Ankle jerks, plantar responses and tone in the legs",
+   "Perianal sensation, anal tone and the bulbocavernosus reflex",
+   "Post-void bladder scan and a formal urodynamic study when tethering is suspected"
+  ],
+  "syndromes": [
+   "syn-conus-vs-cauda-equina"
+  ],
+  "pearls": [
+   "A conus tip at or above the lower border of L2 with a filum of 2 mm or less is normal; both have to be checked before tethering is excluded",
+   "Tethered cord in an adult usually declares itself after a growth spurt, a fall or a period of heavy lifting rather than at birth",
+   "The filum carries no roots, so cutting it at surgery costs nothing neurologically, which is why sectioning a tight filum is a short and effective operation",
+   "A cutaneous stigma over the lumbosacral midline in an infant is an indication to image the whole lumbar spine, not to wait for symptoms"
+  ]
+ },
+ "pitfalls": [
+  "DERIVED MESH: this is not a measured filum. It is the part of the Z-Anatomy cord surface that lies below the caudal end of the PAM50 S5 spinal level, cut on a plane normal to the cord centerline, so it shows where the taper below the conus runs but not the true caliber of the thread; use it for orientation, never to judge filum thickness",
+  "A fatty filum on its own, with a normal conus level and no symptoms, is a common incidental finding and is not by itself a diagnosis of tethered cord",
+  "A low conus can be missed if the sagittal lumbar study stops above the coccyx, because the tethering lesion is often at the very bottom of the sac",
+  "The filum is easily mistaken for a nerve root during lumbar puncture and during surgery: intraoperative stimulation, not appearance, tells them apart",
+  "PUBLIC EDITION - VERTEBRAL-LANDMARK CUT: the mesh above is cut at a spinal-level boundary of a template whose data may not be redistributed, so the openly shareable build of the atlas cuts the same Z-Anatomy cord surface at a vertebral landmark instead: the conus tip is put at the middle of the model's own L1-L2 intervertebral disc, the classical adult level, and everything below that plane is the filum. That level is a textbook rule applied to one model rather than a measurement, and the two cuts do not fall in the same place -- the vertebral filum is the lower 5 cm or so of the taper, the PAM50-cut one about twice that -- so read either as where the thread runs, never as how long or how thick it is."
+ ],
+ "citations": [
+  {
+   "ref": "sp-conus-medullaris",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-tethered-cord-syndrome",
+   "section": "Introduction"
+  },
+  {
+   "ref": "sp-back-cauda-equina",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-back-spinal-meninges",
+   "section": "Structure and Function"
+  },
+  {
+   "ref": "sp-spinal-cord",
+   "section": "Structure and Function"
+  }
+ ],
+ "tags": [
+  "spinal"
+ ],
+ "status": "draft",
+ "latin": "Filum terminale",
+ "parent": "spinal-cord",
+ "subsystem": "cord",
+ "level": {
+  "region": "spinal"
+ }
 }

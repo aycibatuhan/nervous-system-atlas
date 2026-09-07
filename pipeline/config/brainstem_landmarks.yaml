@@ -15,8 +15,15 @@
 #          16 = brainstem
 #   massp  MASSP20 subcortical parcellation (MNI licence)                     - 26/27 = periaqueductal grey,
 #          32/33 = inferior colliculus
-#   hcp    HCP1065 averaged tractography atlas (CC BY-SA 4.0)                 - cerebellum/SCP, projection/ML_*;
-#          "{S}" in a file name is replaced by L or R for the side being built
+#   hcp    HCP1065 averaged tractography atlas (CC BY-SA 4.0)                 - cerebellum/SCP, projection/ML_*
+#   zanatomy  an exported Z-Anatomy object (CC BY-SA 4.0), work/zanatomy/objs/*.ply, mapped to corrected MNI
+#          mm through the same affine + post-correction as every shipped Z-Anatomy mesh - inferior-olivary-
+#          nucleus-{s}, pyramid-{s}
+#   mask   any other openly licensed volume under pipeline/raw, named by `dataset` so the record credits it -
+#          lc_metamask, the Dahl et al. locus coeruleus meta mask (CC BY 4.0)
+#
+# In a file name "{S}" is replaced by L or R, "{s}" by l or r and "{side}" by left or right, for the side
+# being built.
 #
 # HOW AN ANCHOR IS EVALUATED
 # --------------------------
@@ -43,9 +50,11 @@
 #   fourth ventricle    z  -58 .. -22 ; it narrows to the central canal below z = -56, so the obex is
 #                       at about z = -57
 #
-# EVERY SIZE IS A PUBLISHED NUMBER, and `volume_ref` names the bibliography entry it comes from. Where a
-# nucleus has no published volume of its own (raphe obscurus, raphe pallidus) the raphe magnus volume from
-# the same table is used and `volume_note` says so.
+# EVERY SIZE IS A PUBLISHED NUMBER, and `volume_ref` names the bibliography entry it comes from. Two of them
+# are read off a plotted bar rather than a table: Bianciardi et al. 2018 publishes the cuneiform and paramedian
+# raphe label volumes only in its Figure 3C, so those two say "approximately N mm3, read from Figure 3C" and
+# nothing pretends to be a tabulated number. Nothing here is invented: a nucleus with no published volume at
+# all gets no marker.
 nuclei:
   # ------------------------------------------------------------------ medulla
   - id: raphe-magnus
@@ -71,11 +80,9 @@ nuclei:
     subsystem: medulla
     side: midline
     colour: "#A69096"
-    volume_mm3: 16
-    volume_ref: oa-bianciardi-brainstem-nuclei-template
-    volume_note: >-
-      16 mm3; no volume for the raphe obscurus is published, so it is sized on the raphe magnus volume of
-      Bianciardi et al. 2015
+    volume_mm3: 48
+    volume_ref: oa-garcia-gomar-rbd-brainstem-connectivity
+    volume_note: "48 mm3 (Garcia-Gomar et al. 2022, Figure 1D)"
     topography: >-
       on the midline of the dorsal medulla below the obex, dorsal to the raphe magnus and pallidus columns
     topography_ref: sp-nucleus-raphe
@@ -90,11 +97,9 @@ nuclei:
     subsystem: medulla
     side: midline
     colour: "#B29A9E"
-    volume_mm3: 16
-    volume_ref: oa-bianciardi-brainstem-nuclei-template
-    volume_note: >-
-      16 mm3; no volume for the raphe pallidus is published, so it is sized on the raphe magnus volume of
-      Bianciardi et al. 2015
+    volume_mm3: 86
+    volume_ref: oa-garcia-gomar-rbd-brainstem-connectivity
+    volume_note: "85.9 mm3 (Garcia-Gomar et al. 2022, Figure 1D)"
     topography: >-
       on the midline of the ventral medulla immediately dorsal to the pyramids, ventral to the raphe magnus
       column
@@ -124,6 +129,65 @@ nuclei:
       within: {z: [-60, -48]}
       at: {x: "mm:0", y: "max", z: "centroid"}    # max y = the anterior wall, i.e. the rhomboid floor
       offset: [3.5, 2.5, 0.0]                     # ventrolateral to the floor (dx mirrored on the left)
+
+  - id: reticular-formation-medullary-superior
+    name: Superior medullary reticular formation
+    subsystem: medulla
+    side: paired
+    colour: "#A89C94"
+    volume_mm3: 52
+    volume_ref: oa-garcia-gomar-rbd-brainstem-connectivity
+    volume_note: >-
+      50.9 mm3 on the right and 52.1 mm3 on the left (Garcia-Gomar et al. 2022, Figure 1D); the delineated
+      label is much smaller than the histological figure the paper compares it with, which the paper marks
+    topography: >-
+      the central tegmentum of the rostral medulla, dorsal and medial to the inferior olive and ventral to
+      the floor of the fourth ventricle
+    topography_ref: sp-reticular-formation
+    axes: [1.0, 1.0, 2.4]
+    anchor:
+      source: {kind: zanatomy, file: "inferior-olivary-nucleus-{s}"}   # the open Z-Anatomy inferior olive
+      within: {z: [-54, -46]}                     # the rostral medulla, at the olive
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [-3.5, -5.0, 0.0]                   # dorsomedial to the olive, into the central tegmentum
+
+  - id: reticular-formation-medullary-inferior
+    name: Inferior medullary reticular formation
+    subsystem: medulla
+    side: paired
+    colour: "#A09488"
+    volume_mm3: 235
+    volume_ref: oa-garcia-gomar-rbd-brainstem-connectivity
+    volume_note: "238.2 mm3 on the right and 231.7 mm3 on the left (Garcia-Gomar et al. 2022, Figure 1D)"
+    topography: >-
+      the same central tegmental column as the superior medullary reticular formation, continued caudal to
+      the obex into the closed medulla, between the central canal and the ventrolateral surface
+    topography_ref: sp-reticular-formation
+    axes: [1.0, 1.0, 2.2]
+    anchor:
+      source: {kind: aseg, labels: [16]}          # the medulla itself, below the obex (z about -57)
+      within: {z: [-70, -58]}
+      split_sides: true
+      at: {x: "centroid", y: "frac:0.45", z: "centroid"}
+
+  - id: nucleus-parvicellular-reticular-alpha
+    name: Parvicellular reticular nucleus, alpha part
+    subsystem: medulla
+    side: paired
+    colour: "#ADA096"
+    volume_mm3: 20
+    volume_ref: oa-garcia-gomar-rbd-brainstem-connectivity
+    volume_note: "19.5 mm3 on the right and 19.8 mm3 on the left (Garcia-Gomar et al. 2022, Figure 1D)"
+    topography: >-
+      in the lateral tegmentum of the rostral medulla, lateral to the viscero-sensory-motor column under the
+      floor of the fourth ventricle and medial to the spinal trigeminal complex
+    topography_ref: sp-reticular-formation
+    axes: [1.0, 1.0, 1.8]
+    anchor:
+      source: {kind: aseg, labels: [15]}          # the same fourth-ventricle floor the VSM marker uses
+      within: {z: [-60, -48]}
+      at: {x: "mm:0", y: "max", z: "centroid"}
+      offset: [7.5, 2.0, 0.0]                     # twice as far lateral as the VSM marker (offset 3.5)
 
   # ------------------------------------------------------------------ pons
   - id: superior-olivary-complex
@@ -185,6 +249,47 @@ nuclei:
       at: {x: "centroid", y: "centroid", z: "centroid"}
       offset: [-2.5, 3.0, 0.0]
 
+  - id: nucleus-subcoeruleus
+    name: Subcoeruleus nucleus
+    subsystem: pons
+    side: paired
+    colour: "#9E96A8"
+    volume_mm3: 28
+    volume_ref: oa-garcia-gomar-rbd-brainstem-connectivity
+    volume_note: "27.5 mm3 on the right and 28.1 mm3 on the left (Garcia-Gomar et al. 2022, Figure 1D)"
+    topography: >-
+      in the dorsolateral tegmentum of the rostral pons immediately ventral and lateral to the locus
+      coeruleus, between the superior cerebellar peduncle laterally and the medial longitudinal fasciculus
+      medially
+    topography_ref: sp-rem-sleep
+    axes: [1.0, 1.0, 1.6]
+    anchor:
+      # the locus coeruleus meta mask (Dahl et al., CC BY 4.0) is the public edition's own LC, so the
+      # subcoeruleus can be placed by its textbook relation to it without touching restricted data
+      source: {kind: mask, dataset: lc_metamask, file: "lc_metamask/LCmetaMask_{side}_MNI05_s01f_plus50.nii.gz", threshold: 0.5}
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [1.5, 2.5, -2.0]                    # ventrolateral to the locus coeruleus and just below it
+
+  - id: raphe-paramedian
+    name: Paramedian raphe nucleus
+    subsystem: pons
+    side: paired
+    colour: "#B29CA0"
+    volume_mm3: 42
+    volume_ref: oa-bianciardi-mesopontine-tegmental-template
+    volume_note: >-
+      approximately 41 mm3 on the right and 42 mm3 on the left, read from Figure 3C of Bianciardi et al.
+      2018, which plots the label volumes and tabulates none of them
+    topography: >-
+      a paired paramedian column of the pontine tegmentum flanking the median raphe, just off the midline
+      at the level of the upper pons
+    topography_ref: sp-nucleus-raphe
+    axes: [1.0, 1.0, 2.2]
+    anchor:
+      source: {kind: massp, labels: [59]}         # the median raphe it flanks
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [3.0, 0.0, -1.0]
+
   # ------------------------------------------------------------------ midbrain
   - id: reticular-formation-mesencephalic
     name: Mesencephalic reticular formation
@@ -204,3 +309,81 @@ nuclei:
       split_sides: true
       at: {x: "centroid", y: "centroid", z: "centroid"}
       offset: [7.0, 1.0, 0.0]
+
+  - id: reticular-formation-isthmic
+    name: Isthmic reticular formation
+    subsystem: midbrain
+    side: paired
+    colour: "#B0A098"
+    volume_mm3: 56
+    volume_ref: oa-singh-mesencephalic-reticular-formation-atlas
+    volume_note: "57.8 mm3 on the right and 53.9 mm3 on the left (Singh et al. 2021, Table 1)"
+    topography: >-
+      the tegmentum of the pontomesencephalic isthmus, lateral to the aqueduct and the central grey as it
+      becomes the central grey of the pons, medial to the superior cerebellar peduncle
+    topography_ref: sp-reticular-activating-system
+    axes: [1.0, 1.0, 1.8]
+    anchor:
+      source: {kind: aseg, labels: [15]}          # the aqueduct, at the isthmus
+      within: {z: [-26, -20]}
+      at: {x: "mm:0", y: "centroid", z: "centroid"}
+      offset: [5.0, 3.0, 0.0]                     # lateral and slightly ventral to it (dx mirrored)
+
+  - id: nucleus-cuneiform
+    name: Cuneiform nucleus
+    subsystem: midbrain
+    side: paired
+    colour: "#BCA79E"
+    volume_mm3: 47
+    volume_ref: oa-bianciardi-mesopontine-tegmental-template
+    volume_note: >-
+      approximately 49 mm3 on the right and 46 mm3 on the left, read from Figure 3C of Bianciardi et al.
+      2018, which plots the label volumes and tabulates none of them
+    topography: >-
+      in the caudal midbrain tegmentum lateral to the periaqueductal grey and beneath the inferior
+      colliculus, dorsomedial to the pedunculopontine nucleus
+    topography_ref: sp-reticular-activating-system
+    axes: [1.0, 1.0, 1.8]
+    anchor:
+      source: {kind: massp, labels: [26, 27]}     # periaqueductal grey, at the inferior-colliculus level
+      within: {z: [-21, -15]}
+      split_sides: true
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [5.0, 1.0, -1.0]
+
+  - id: nucleus-microcellular-tegmental-parabigeminal
+    name: Microcellular tegmental and parabigeminal nuclei
+    subsystem: midbrain
+    side: paired
+    colour: "#B6A49C"
+    volume_mm3: 27
+    volume_ref: oa-singh-mesencephalic-reticular-formation-atlas
+    volume_note: "28.1 mm3 on the right and 26.2 mm3 on the left (Singh et al. 2021, Table 1)"
+    topography: >-
+      in the lateral tegmentum of the caudal midbrain ventrolateral to the inferior colliculus, alongside
+      the lateral lemniscus as it climbs to the colliculus
+    topography_ref: sp-brainstem
+    axes: [1.0, 1.0, 1.5]
+    anchor:
+      source: {kind: massp, labels: [32, 33]}     # inferior colliculus
+      split_sides: true
+      at: {x: "centroid", y: "centroid", z: "centroid"}
+      offset: [3.0, 2.5, -3.0]                    # ventrolateral to it
+
+  - id: raphe-linear-caudal-rostral
+    name: Caudal-rostral linear raphe nucleus complex
+    subsystem: midbrain
+    side: midline
+    colour: "#A89298"
+    volume_mm3: 111
+    volume_ref: oa-singh-mesencephalic-reticular-formation-atlas
+    volume_note: "110.7 mm3 for the whole midline complex (Singh et al. 2021, Table 1)"
+    topography: >-
+      on the midline of the midbrain tegmentum ventral to the periaqueductal grey, running from between the
+      red nuclei rostrally down towards the decussation of the superior cerebellar peduncles
+    topography_ref: sp-nucleus-raphe
+    axes: [1.0, 1.0, 2.6]
+    anchor:
+      source: {kind: massp, labels: [7, 8]}       # red nucleus: the column runs up between the two of them
+      at: {x: "mm:0", y: "min", z: "centroid"}    # min y = the posterior border of the red nuclei
+      offset: [0.0, -1.0, 0.0]

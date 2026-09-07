@@ -188,6 +188,31 @@ public edition of the atlas.
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-DKT31_dseg.nii.gz
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_from-OASISTRT20_mode-image_xfm.mat
 
+--- fastsurfer_cerebellum ---
+  Dataset:     Cerebellar lobules of the MNI152NLin2009cAsym template, segmented with FastSurfer CerebNet
+  Citation:    Derived here by running FastSurfer v2.5.4 (Deep-MI,
+               Apache-2.0) on the MNI152NLin2009cAsym T1w template -
+               FastSurferVINN for the aseg/DKT prior (checkpoints Zenodo
+               doi:10.5281/zenodo.10390573, Apache-2.0) then the CerebNet
+               cerebellum module (checkpoints Zenodo
+               doi:10.5281/zenodo.10390742, CC BY 4.0). Software - Henschel
+               L, Conjeti S, Estrada S, Diers K, Fischl B, Reuter M.
+               FastSurfer, a fast and accurate deep learning based
+               neuroimaging pipeline. NeuroImage 2020;219:117012.
+               doi:10.1016/j.neuroimage.2020.117012. Cerebellum module -
+               Faber J, Kugler D, Bahrami E, et al. CerebNet, a fast and
+               reliable deep-learning pipeline for detailed cerebellum
+               sub-segmentation. NeuroImage 2022;264:119703.
+               doi:10.1016/j.neuroimage.2022.119703. The label volume itself
+               is a derivative of the MNI template (Fonov et al. 2011) and is
+               released under CC BY-SA 4.0; see
+               pipeline/raw/fastsurfer_cerebellum/SOURCE.json for the exact
+               commands.
+  Licence:     Creative Commons Attribution-ShareAlike 4.0 International
+               https://creativecommons.org/licenses/by-sa/4.0/
+  Generated:   produced on this machine by the pipeline, not downloaded
+               (pipeline/raw/fastsurfer_cerebellum/SOURCE.json records the tool, its version and the command)
+
 --- bodyparts3d ---
   Dataset:     BodyParts3D anatomical model database
   Citation:    Mitsuhashi N et al. BodyParts3D: 3D structure database for
@@ -237,6 +262,64 @@ public edition of the atlas.
                redistributed
   Download:    https://github.com/spinalcordtoolbox/PAM50/releases/download/r20250730/PAM50-r20250730.zip
   *** NON-COMMERCIAL, NO REDISTRIBUTION OF DERIVED FILES - EXCLUDED FROM THE PUBLIC EDITION ***
+
+--- spine_generic ---
+  Dataset:     Spinal Cord MRI Public Database (multi-subject), 10 subjects' T2w
+  Citation:    Cohen-Adad J, Alonso-Ortiz E, Abramovic M, et al. Generic
+               acquisition protocol for quantitative MRI of the spinal cord.
+               Nature Protocols 2021;16:4611-4632.
+               doi:10.1038/s41596-021-00588-0; and Cohen-Adad J, Alonso-Ortiz
+               E, Abramovic M, et al. Open-access quantitative MRI data of
+               the spinal cord and reproducibility across participants, sites
+               and manufacturers. Scientific Data 2021;8:219.
+               doi:10.1038/s41597-021-00941-8 (spine-generic multi-subject
+               database, commit 718cbe8f, CC BY 4.0). Rootlet segmentations:
+               Valosek J, Mathieu T, Krejci K et al., manual ground truth
+               shipped in the dataset's derivatives/labels.
+  Licence:     Creative Commons Attribution 4.0 International
+               https://creativecommons.org/licenses/by/4.0/
+  Download:    https://raw.githubusercontent.com/spine-generic/data-multi-subject/718cbe8f3f8e8f6d57f89b35c9cfb199c93a20bf/LICENSE
+               https://raw.githubusercontent.com/spine-generic/data-multi-subject/718cbe8f3f8e8f6d57f89b35c9cfb199c93a20bf/dataset_description.json
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s22933875--b1b681f3cb5803eca741c24a862e56444784606a9c0e872f2eb3f825d37d032a.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s36513--4be40587a3970cf5194d54649636bae1ab377519907075a1a78c3e64275a4978.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28893--0e5e641ae965cdb411703786ea773284e8288412999d8a46f9a843b671706e0e.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32300--b99099f287f43efdf5e80abb0b27acdffa6019ad47bd731edfcd1c45d7709edf.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s20884093--90ab250854fa6be5009b29d3445882464983d3c867afad1d2edbc401d6017b02.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s37171--a32d4cf21de6d5abfbee010d72d983abbe3de7293efc2ac80fcad61418e01868.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28867--f6473d3730d1fca3914f5e8fda4b0a5db32d92c3935051c4f1ec465cda527445.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32390--f97606c675cf148462a892aeb46b53fd5c717ef717bc3fd72c83272d32f77ee2.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s11342180--aef09ce8e8eee1c93497f90decbdbcb80001b834feeba28afd8583d0f508bc17.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s36847--830d252034afa23466b429de8a1fc4809fc5a1c5db01346d01785f19efcfbd6e.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28859--6d97506c8dabe1bdc4cea971e0619c69d216b3dfefb7abf01fb15361cca6671e.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32186--3beba35f67da956d4f1d3561ae9f0f2d82bab472622b66996a729a87f409ca79.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s17929938--732a163f9d80dac4d01f10d7262e51fa24f2dfd9880008ce468d7ecf8a6eafc7.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s37535--d2792c418c2d133278e2e99d6f9bb92eb0fde6748afa21cc66b59a492fda6800.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28892--0a5d2c29fa7431b696e76fe31915c6aaf8f6b903affe23268cf60fee9d16a045.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s33384--429c9e5f08d8308dc3022d0be888de3a530df2751da194e448537a593d5a65c8.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s10224433--19328d4f3799e1ae7b6dfd2bbfef5fa1c91434523948b37c1cffca7381d9b9f6.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s36929--02629af4b689ac1146aaddf74e1a7ac42ae557f0b8e2b3bfc84771b6847f6a69.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28868--45f5b4c9b6d0e387beb31f51786548e89b53fe17e9ac7fd08735c5ab29b7a6da.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32179--3c3a06a77558f2348dfd62206df111272ecf5b66fc3436752cd00eb1123934b8.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s10609917--863eff5eedbd02e465bee72fb601029142c6de733f42be6b9d0a5e2738551fea.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s37309--133d0833b071c5b363e65bca8e626df8ef10a3259ffaaa8b44aa5d7afd0bcdb5.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28895--c9ec278372bc7f274ce7e65923ff1b165869bc5ac60a14e0c83494df52f68afe.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32119--9568b33b53720f641029c030de90f584999ccc4236fe446d6f54cc5f1f055e36.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s10319599--f33f3a0a595796eb3506371fc2c5842a9efae22c20181462d81258e0b43bd94b.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s37831--edbf9a98dcd90a2e79422c5c345f27461dbcb5d1d06809af999c0919fcd7b862.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28895--f213a633a06b00814daaed34fc0ef1a8519054e64adf14bf2f10cdd4f62b5338.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32194--fbf986921743a97253467f95e28febad8acdac9100288455b2674ac3b004be72.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s20251012--37af92c4053e16180e8fa6b9771e47e44fbce026015f993f39c73dcf13377861.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s38173--fb87461add9127fb6d2496f8d50c0970638b5e5d0d0387a5e6340a2e3b674455.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28885--721791d85f2b3e7ac13d83ff52ed1d6e2602b63d65d6df6dca2d44d3c9c98d0e.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s33146--0a7defbe32adafbdaef1d2a39a695beaa6522e29a7504c207defa70556002096.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s16837362--fd2e530835ba665c90551eb18c38d0b8acdff6032d2ea67b9883e3833dcc8115.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s37197--b2434d773d8426907bb349206942864692fbd72d8002244bd3a5c8fed5c3a659.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28892--e519bd91a90f04c3fc44f77610e2e771024f935500b85a91d639f24d9e92605d.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s31679--7b24c6278144053397f5e5434fb07b506085d064ac6188f8c83b16de34e66b1d.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s20542671--6fa5cfec1693f205922c8f4a9c847af1269fd7a78f3dfdcfe4981d5c5b591556.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s37597--e387f4fb873a4d03d412e7477ed9b26ebb1ed9b1e9e3e90b0e77eeabb5c44938.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s28883--f08c8f24c5f583087be5640f61675cf960c67f3ae48656a1386b8b300ff6b793.nii.gz
+               https://object-arbutus.alliancecan.ca/4f21233170e74c7d8653d790029d4ce2:def-jcohen-data-multi-subject/SHA256E-s32683--a2f2f5c6fd4bd576c58248f1613011fae78d7df05cee228c4ea60c82d8ae3c1a.nii.gz
 
 --- lc_metamask ---
   Dataset:     Locus coeruleus meta mask (Dahl et al.)

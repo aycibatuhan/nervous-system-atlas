@@ -170,6 +170,19 @@ def cerebra_spec() -> catalog.AtlasSpec | None:
     return catalog.cerebra_atlas(str(CEREBRA_WARPED), alignment="warped-sym-to-asym")
 
 
+# ---------------------------------------------------------------- FastSurfer CerebNet cerebellum (public edition)
+# The public-edition stand-in for the Diedrichsen lobules. Unlike every other atlas here it was not
+# downloaded: FastSurfer v2.5.4 (Apache-2.0) was run on our own T1w template and the label volume it
+# produced is our derivative, resampled onto the template grid with nearest-neighbour and stored in
+# raw/fastsurfer_cerebellum/ with the commands, the tool commit and the checkpoint licences in SOURCE.json.
+# It is therefore already native-mni and needs no warp -- the whole hook is "is the file there?".
+def fastsurfer_cerebellum_spec() -> catalog.AtlasSpec | None:
+    """None when the CerebNet run is missing (raw/fastsurfer_cerebellum/SOURCE.json says how to redo it)."""
+    if not (RAW / catalog.FASTSURFER_CEREB_FILE).exists():
+        return None
+    return catalog.fastsurfer_cerebellum_atlas()
+
+
 def build_envelope() -> dict:
     img = load_ras(MASK)
     mask = np.asanyarray(img.dataobj) > 0
@@ -227,6 +240,15 @@ def main(argv=None) -> None:
     elif not only or ce.id in only or any(s.id in only or s.structure_id in only for s in ce.entries.values()):
         print(f"[{ce.id}]")
         results += build_label_atlas(ce, only, a.force)
+        for r in results:
+            existing[r["id"]] = r
+        out_path.write_text(json.dumps(list(existing.values()), indent=1))
+    fs = fastsurfer_cerebellum_spec()
+    if fs is None:
+        print("[fastsurfer_cerebellum] skipped: no CerebNet run in raw/fastsurfer_cerebellum/ (public-edition lobules)")
+    elif not only or fs.id in only or any(s.id in only or s.structure_id in only for s in fs.entries.values()):
+        print(f"[{fs.id}]")
+        results += build_label_atlas(fs, only, a.force)
         for r in results:
             existing[r["id"]] = r
         out_path.write_text(json.dumps(list(existing.values()), indent=1))

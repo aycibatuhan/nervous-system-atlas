@@ -62,6 +62,51 @@ def main(argv=None) -> None:
                 "mni_residual_rms_mm": round(c["reformat"]["mni_residual"]["dxy_rms"], 2)}
         if cord["mni_residual_rms_mm"] > 2.0:
             problems.append(f"cord.json: PAM50 <-> MNI residual {cord['mni_residual_rms_mm']} mm exceeds the 2 mm gate")
+    # The public edition cannot ship the cord MRI above (PAM50 has no licence), so `atlas-spine-generic` builds
+    # a second one from openly licensed data and `atlas-manifest --public` swaps it into grids.cord.  Without it
+    # the public app has no MRI at all below the foramen magnum, so its absence is a warning and everything
+    # about it that could silently regress -- the licence, the levels it claims, the join with the MNI volume --
+    # is a gate.
+    cord_public = {}
+    pp = OUT / "volumes" / "cord_public.json"
+    if not pp.exists():
+        warnings.append("no volumes/cord_public.json: the public edition will ship no cord MRI "
+                        "(run atlas-spine-generic)")
+    else:
+        c = json.loads(pp.read_text())
+        lic = licences.get(c.get("license"), None)
+        if lic is None:
+            problems.append(f"cord_public.json: licence '{c.get('license')}' not described in sources.yaml")
+        elif lic.get("nc") or lic.get("no_redistribution"):
+            problems.append(f"cord_public.json: licence '{c['license']}' may not be redistributed, so it cannot "
+                            "be the public edition's cord MRI")
+        if c.get("source") not in sources:
+            problems.append(f"cord_public.json: unknown source '{c.get('source')}'")
+        for k, v in c.get("contrasts", {}).items():
+            if not (OUT / v["file"]).exists():
+                problems.append(f"public cord volume {k}: file missing {v['file']}")
+        levels = c.get("coverage", {}).get("spinal_levels", [])
+        zlo, zhi = c["origin_ras"][2], c["origin_ras"][2] + (c["shape"][2] - 1) * c["spacing"][2]
+        cord_public = {"grid": c["shape"], "spacing": c["spacing"][0], "source": c["source"],
+                       "license": c["license"], "subjects": len(c["reformat"].get("subjects", [])),
+                       "levels": levels, "z_mm": [round(zlo, 1), round(zhi, 1)],
+                       "bytes_gz": sum(v.get("bytes_gz", 0) for v in c.get("contrasts", {}).values()),
+                       "mni_residual_rms_mm": round(c["reformat"]["mni_residual"].get("dxy_rms", 99), 2),
+                       "mni_residual_slices": c["reformat"]["mni_residual"].get("n_slices", 0)}
+        # it has to meet the brain MRI at the foramen magnum and carry on into the upper thoracic cord
+        if zhi < -78:
+            problems.append(f"cord_public.json: the grid tops out at z {zhi:.1f} mm and never meets the MNI "
+                            "volume, whose floor is z = -78 mm")
+        if zlo > -200:
+            problems.append(f"cord_public.json: the grid stops at z {zlo:.1f} mm, above the upper thoracic cord")
+        if not levels:
+            problems.append("cord_public.json: no spinal levels are claimed for the public cord MRI")
+        if cord_public["mni_residual_slices"] < 5:
+            problems.append(f"cord_public.json: the public template overlaps the MNI medulla on only "
+                            f"{cord_public['mni_residual_slices']} slices; the residual is not measurable")
+        elif cord_public["mni_residual_rms_mm"] > 2.5:
+            problems.append(f"cord_public.json: public cord <-> MNI medulla residual "
+                            f"{cord_public['mni_residual_rms_mm']} mm exceeds the 2.5 mm gate")
     # Z-Anatomy sub-cranial midline: the brain-only affine leaves an x-from-z shear below the skull base, removed
     # by the post-correction fitted by atlas-zanatomy-midline.  Gate on the residual it reports.
     midline = {}
@@ -185,7 +230,8 @@ def main(argv=None) -> None:
             if mean is not None and mean > 4.0:
                 problems.append(f"{name}: landmark mean residual {mean} mm exceeds the 4 mm gate")
     report = {"meshes": len(meshes), "bytes": total_bytes, "triangles": total_tris, "registration": reg,
-              "zanatomyMidline": midline, "bp3dSubcranialAp": bp3d_ap, "cordVolume": cord, "ncSources": nc,
+              "zanatomyMidline": midline, "bp3dSubcranialAp": bp3d_ap, "cordVolume": cord,
+              "cordVolumePublic": cord_public, "ncSources": nc,
               "problems": problems, "warnings": warnings}
     (WORK.parent / "qa").mkdir(exist_ok=True)
     (WORK.parent / "qa" / "report.json").write_text(json.dumps(report, indent=1))
@@ -209,6 +255,13 @@ def main(argv=None) -> None:
     if cord:
         print(f"  cord MRI: {'x'.join(map(str, cord['grid']))} at {cord['spacing']} mm, {cord['bytes_gz']/1e6:.2f} MB gz, "
               f"PAM50<->MNI residual {cord['mni_residual_rms_mm']} mm (gate 2.0)")
+    if cord_public:
+        cp_ = cord_public
+        print(f"  cord MRI (public): {'x'.join(map(str, cp_['grid']))} at {cp_['spacing']} mm, "
+              f"{cp_['bytes_gz']/1e6:.2f} MB gz, {cp_['subjects']} subjects from {cp_['source']} ({cp_['license']}), "
+              f"levels {cp_['levels'][0]}-{cp_['levels'][-1]}, z {cp_['z_mm'][0]}..{cp_['z_mm'][1]} mm, "
+              f"MNI medulla residual {cp_['mni_residual_rms_mm']} mm over {cp_['mni_residual_slices']} slices "
+              f"(gate 2.5)")
     for w in warnings: print("  warn:", w)
     for p_ in problems: print("  FAIL:", p_)
     print(f"non-commercial sources: {nc}")

@@ -11,6 +11,8 @@
   "meshIds": [
     "cerebellar-lobule-x-l",
     "cerebellar-lobule-x-r",
+    "cerebellar-lobule-x-fs-l",
+    "cerebellar-lobule-x-fs-r",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -133,7 +135,9 @@
       "A big flocculus is a normal finding that has caused unnecessary surgery"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition this lobule is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; meshes `cerebellar-lobule-x-fs-l` and `-r`). It is a neural network's reading of one average brain rather than a hand-corrected probabilistic map, so treat the fissure lines as approximate: Dice against the private-edition lobule is 0.73 on the left and 0.77 on the right, while the cerebellar cortex as a whole agrees at 0.93."
+  ],
   "citations": [
     {
       "ref": "sp-vestibulo-ocular-reflex",
@@ -154,6 +158,14 @@
     {
       "ref": "oa-cerebellum-functional-gradients",
       "section": "Confirmation of the double/triple representation hypothesis"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [],

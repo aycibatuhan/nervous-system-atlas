@@ -1,7 +1,7 @@
 {
- "meshes": 743,
- "bytes": 48605108,
- "triangles": 7471523,
+ "meshes": 794,
+ "bytes": 50050008,
+ "triangles": 7677407,
  "registration": {
   "bp3d_to_mni.json": {
    "landmark_mean_mm": 3.31,
@@ -64,6 +64,34 @@
   "spacing": 0.75,
   "bytes_gz": 758077,
   "mni_residual_rms_mm": 0.59
+ },
+ "cordVolumePublic": {
+  "grid": [
+   45,
+   154,
+   238
+  ],
+  "spacing": 0.75,
+  "source": "spine_generic",
+  "license": "CC-BY-4.0",
+  "subjects": 10,
+  "levels": [
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "C6",
+   "C7",
+   "C8",
+   "T1"
+  ],
+  "z_mm": [
+   -230.0,
+   -52.3
+  ],
+  "bytes_gz": 174031,
+  "mni_residual_rms_mm": 1.62,
+  "mni_residual_slices": 15
  },
  "ncSources": [
   "brainstem_navigator",
@@ -193,6 +221,7 @@
   "spinal-segment-thoracic-vert: extends beyond the MNI volume (registered-affine)",
   "spinal-segment-lumbar-vert: extends beyond the MNI volume (registered-affine)",
   "spinal-segment-sacral-vert: extends beyond the MNI volume (registered-affine)",
+  "filum-terminale-vert: extends beyond the MNI volume (registered-affine)",
   "cord volumes are PAM50-unlicensed (no redistribution): keep ['cord_t1', 'cord_t2', 'labels_spine'] out of any shared build"
  ]
 }

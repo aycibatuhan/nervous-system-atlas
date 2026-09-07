@@ -228,16 +228,30 @@ def check(verbose: bool = True) -> dict:
 
 
 # ---------------------------------------------------------------- 2. the reformat
-def build_map(spacing: float = SPACING):
-    """Everything geometric: the centreline, the frame, the output grid and the per-voxel PAM50 coordinates."""
-    from scipy.spatial import cKDTree
+def cord_frame() -> dict:
+    """Our cord surface, its measured centreline, the arc length along it and the carried frame.
+
+    The half of the reformat that knows nothing about the template being laid down: `atlas-spine-generic`
+    reuses it so the public cord MRI is measured on exactly the same curve as the private one.
+    """
     mesh, src = load_cord_mesh()
     C = centreline(mesh)
     P, s = resample_arc(C, 0.25)
     T, R, A = carry_frame(P)
-    s0 = anchor_arc(P, s)
-    # the reformat only covers the arc that PAM50 actually holds
-    lo, hi = s0, s0 + ARC_PAM50
+    return {"mesh_source": src, "centreline": P, "arc": s, "frame": (T, R, A), "cord_arc_total": float(s[-1])}
+
+
+def tube_grid(fr: dict, lo: float, hi: float, spacing: float = SPACING) -> dict:
+    """The output grid around the arc band [lo, hi] of the centreline, and the tube coordinates of its voxels.
+
+    Axis-aligned in the MNI frame and big enough to hold the band plus `R_FADE` of margin.  For every voxel
+    within `R_FADE` of the centreline it returns the flat grid index (`sel`), the arc length of the foot of the
+    perpendicular (`arc_of_voxel`), the in-plane offsets `u` (right) and `v` (anterior) and the edge `fade`.
+    Whatever template is being sampled only has to turn (arc, u, v) into its own coordinates.
+    """
+    from scipy.spatial import cKDTree
+    P, s = fr["centreline"], fr["arc"]
+    T, R, A = fr["frame"]
     inband = (s >= lo - 1) & (s <= hi + 1)
     box_lo = P[inband].min(0) - R_FADE
     box_hi = P[inband].max(0) + R_FADE
@@ -267,17 +281,26 @@ def build_map(spacing: float = SPACING):
     keep = (arc >= lo) & (arc <= hi) & (r <= R_FADE)
     sel, u, v, r, arc = sel[keep], u[keep], v[keep], r[keep], arc[keep]
 
+    fade = np.clip((R_FADE - r) / (R_FADE - R_FULL), 0.0, 1.0).astype(np.float32)
+    return {"dims": tuple(int(d) for d in dims), "origin": origin, "affine": affine, "spacing": spacing,
+            "sel": sel, "u": u, "v": v, "fade": fade, "arc_of_voxel": arc}
+
+
+def build_map(spacing: float = SPACING):
+    """Everything geometric: the centreline, the frame, the output grid and the per-voxel PAM50 coordinates."""
+    fr = cord_frame()
+    P, s = fr["centreline"], fr["arc"]
+    s0 = anchor_arc(P, s)
+    # the reformat only covers the arc that PAM50 actually holds
+    g = tube_grid(fr, s0, s0 + ARC_PAM50, spacing)
+    arc, u, v = g["arc_of_voxel"], g["u"], g["v"]
     Z = Z_TOP - (arc - s0)
     czs, cx0, cy0 = pam50_centre()
     order = np.argsort(czs)
     x0 = np.interp(Z, czs[order], cx0[order])
     y0 = np.interp(Z, czs[order], cy0[order])
     world_pam = np.column_stack([x0 + u, y0 + v, Z])
-    fade = np.clip((R_FADE - r) / (R_FADE - R_FULL), 0.0, 1.0).astype(np.float32)
-    return {"mesh_source": src, "centreline": P, "arc": s, "s0": s0, "frame": (T, R, A),
-            "dims": tuple(int(d) for d in dims), "origin": origin, "affine": affine, "spacing": spacing,
-            "sel": sel, "world_pam": world_pam, "fade": fade, "arc_of_voxel": arc,
-            "cord_arc_total": float(s[-1])}
+    return {**fr, "s0": s0, **g, "world_pam": world_pam}
 
 
 def cord_window(name: str, k: float = 0.25) -> tuple[float, float]:
@@ -362,21 +385,28 @@ def ramp(lo: str, hi: str, n: int, i: int) -> str:
     return "#" + "".join(f"{round(x + (y - x) * t):02X}" for x, y in zip(a, b))
 
 
-def spine_lut(spinal: list[dict]) -> dict:
+def spine_lut(spinal: list[dict], mesh_suffix: str = "", source: str = "pam50",
+              volume: str = "labels_spine", note: str | None = None) -> dict:
     """labels_spine.json: id -> level entry, in the same shape labels.json uses for the anatomical volume.
 
     Every id in labels_spine.u8.bin (1 = C1 ... 30 = S5) maps to its name, the cord region it belongs to, the
     derived.py cord segment block that carries it in 3D, and a colour from that region's ramp.  Where the level
     was measured on our centreline the world z range and arc length come along, so the UI can name the level
     under the cursor without reloading cord_levels.json.
+
+    `mesh_suffix` picks which set of cord segment blocks the levels point at: the private edition's measured
+    blocks by default, and the public edition's `-vert` blocks (Z-Anatomy vertebral-landmark cuts, the only
+    ones that ship there) when `atlas-spine-generic` builds the public LUT.  Nothing else differs, so both
+    editions hand the app a lookup table of exactly the same shape.
     """
     by = {r["name"]: r for r in spinal}
-    regions = {key: {"name": name, "meshId": mid, "structureId": mid, "system": "spinal-cord",
+    regions = {key: {"name": name, "meshId": mid + mesh_suffix, "structureId": mid + mesh_suffix,
+                     "system": "spinal-cord",
                      "levels": [n for n in SPINAL_LEVELS if REGION_OF[n[0]] == key],
                      "colour": ramp(lo, hi, 2, 1)}
                for key, mid, name, lo, hi in SPINE_REGIONS}
     anchors = {key: (lo, hi) for key, _mid, _name, lo, hi in SPINE_REGIONS}
-    mesh_of = {key: mid for key, mid, _name, _lo, _hi in SPINE_REGIONS}
+    mesh_of = {key: mid + mesh_suffix for key, mid, _name, _lo, _hi in SPINE_REGIONS}
     lut = {}
     for lid, name in enumerate(SPINAL_LEVELS, 1):
         key = REGION_OF[name[0]]
@@ -390,11 +420,12 @@ def spine_lut(spinal: list[dict]) -> dict:
             e["zMm"] = r["z_mm"]
             e["arcMm"] = r["arc_mm"]
         lut[str(lid)] = e
-    return {"space": "MNI152NLin2009cAsym", "volume": "labels_spine", "source": "pam50",
-            "note": "PAM50 spinal levels carried onto our cord centreline by the atlas-pam50 curved reformat. "
-                    "ids are the PAM50 spinal-level ids (1 = C1 ... 30 = S5) as they appear in "
-                    "volumes/labels_spine.u8.bin; meshId is the derived.py cord segment block that contains "
-                    "the level, so selecting a level and selecting its 3D block are the same selection.",
+    return {"space": "MNI152NLin2009cAsym", "volume": volume, "source": source,
+            "note": note or ("PAM50 spinal levels carried onto our cord centreline by the atlas-pam50 curved "
+                             "reformat. ids are the PAM50 spinal-level ids (1 = C1 ... 30 = S5) as they appear "
+                             "in volumes/labels_spine.u8.bin; meshId is the derived.py cord segment block that "
+                             "contains the level, so selecting a level and selecting its 3D block are the same "
+                             "selection."),
             "regions": regions, "lut": lut}
 
 

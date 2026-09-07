@@ -83,6 +83,10 @@ def run(groups: set[str] | None = None, strict: bool = True) -> int:
         for src in cfg["sources"]:
             if src["group"] not in groups and "all" not in groups:
                 continue
+            # a source marked `generated: true` is produced on this machine, not fetched (fastsurfer_cerebellum):
+            # it has no URLs and its SOURCE.json records the tool and the command, so leave the folder alone
+            if src.get("generated"):
+                continue
             folder = RAW / src["id"]
             folder.mkdir(parents=True, exist_ok=True)
             lic = cfg["licenses"][src["license"]]

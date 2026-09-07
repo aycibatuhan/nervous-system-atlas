@@ -13,6 +13,11 @@
     "cerebellar-vermis-viiib",
     "cerebellar-vermis-ix",
     "cerebellar-vermis-x",
+    "cerebellar-vermis-vi-fs",
+    "cerebellar-vermis-vii-fs",
+    "cerebellar-vermis-viii-fs",
+    "cerebellar-vermis-ix-fs",
+    "cerebellar-vermis-x-fs",
     "cerebellar-hemisphere-l",
     "cerebellar-hemisphere-r"
   ],
@@ -137,7 +142,9 @@
       "A child with morning headache, vomiting and truncal ataxia has a midline posterior fossa tumor until proven otherwise"
     ]
   },
-  "pitfalls": [],
+  "pitfalls": [
+    "In the public edition the vermis is not the non-commercial probabilistic cerebellar atlas but a segmentation of the MNI152NLin2009cAsym template itself, made here with FastSurfer's CerebNet module (Apache-2.0 software; the five `cerebellar-vermis-*-fs` meshes), and CerebNet's vermis is coarser than the private edition's eight parcels: it names VI, VII (crus I, crus II and VIIb together), VIII (VIIIa and VIIIb together), IX and X. Dice against the private-edition vermis is 0.87 for VI, 0.74 for VII, 0.78 for VIII, 0.71 for IX and 0.69 for X, so the vermian strips are the least certain surfaces in that edition — read them as the position of the vermian lobule, not as its exact width."
+  ],
   "citations": [
     {
       "ref": "sp-spinocerebellar-dorsal-tract",
@@ -154,6 +161,14 @@
     {
       "ref": "oa-cerebellum-individual-topography",
       "section": "Somatomotor Topography of the Cerebellum Is Evident within the Individual"
+    },
+    {
+      "ref": "oa-cerebnet-cerebellum",
+      "section": "Methods (cerebellum sub-segmentation and its accuracy)"
+    },
+    {
+      "ref": "oa-fastsurfer-pipeline",
+      "section": "Methods (whole-brain segmentation network)"
     }
   ],
   "tags": [
