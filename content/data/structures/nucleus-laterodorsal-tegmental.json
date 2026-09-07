@@ -1,170 +1,172 @@
 {
- "kind": "structure",
- "id": "nucleus-laterodorsal-tegmental",
- "name": "Laterodorsal tegmental nucleus and central gray of the pons",
- "synonyms": [
-  "LDTg",
-  "CGPn",
-  "Ch6 cholinergic group",
-  "central gray of the rhombencephalon"
- ],
- "system": "brainstem",
- "meshIds": [
-  "nucleus-laterodorsal-tegmental-l",
-  "nucleus-laterodorsal-tegmental-r"
- ],
- "summary": "The laterodorsal tegmental nucleus is a cholinergic cell group in the central gray of the upper pons, lying in the floor of the fourth ventricle just medial to the locus coeruleus. With the pedunculopontine nucleus it makes up the Ch5-Ch6 cholinergic system of the brainstem, the source of acetylcholine for the thalamus, and it is one of the two engines of the ascending arousal system that switch the thalamocortical loop from burst firing to the tonic mode of waking and REM sleep. Its neurons are REM-on: they fire fastest during REM sleep and during waking and fall silent in non-REM sleep. The label used here also contains the surrounding central gray of the rhombencephalon, because 7 T imaging cannot separate the nucleus from the periventricular gray it sits in.",
- "anatomy": {
-  "location": "Central gray of the rostral pons in the floor of the fourth ventricle, medial and slightly dorsal to the locus coeruleus, lateral to the medial longitudinal fasciculus and above the level of the abducens nucleus, extending rostrally into the isthmus where it becomes continuous with the periaqueductal gray and with the pedunculopontine territory. The superior cerebellar peduncle bounds it laterally. Blood supply is from the superior cerebellar artery and dorsal perforators of the basilar artery, and its periventricular position makes it vulnerable in thiamine deficiency.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Prefrontal cortex",
-    "via": "corticotegmental fibers"
-   },
-   {
-    "from": "Lateral hypothalamus (orexin neurons)",
-    "via": "hypothalamotegmental fibers"
-   },
-   {
-    "from": "Nucleus of the solitary tract and periaqueductal gray",
-    "via": "visceral and defensive input"
-   }
+  "kind": "structure",
+  "id": "nucleus-laterodorsal-tegmental",
+  "name": "Laterodorsal tegmental nucleus and central gray of the pons",
+  "synonyms": [
+    "LDTg",
+    "CGPn",
+    "Ch6 cholinergic group",
+    "central gray of the rhombencephalon"
   ],
-  "efferents": [
-   {
-    "to": "Thalamus (intralaminar, reticular and relay nuclei)",
-    "via": "ascending cholinergic projection"
-   },
-   {
-    "to": "Ventral tegmental area",
-    "via": "cholinergic gating of dopamine bursts"
-   },
-   {
-    "to": "Basal forebrain and lateral hypothalamus",
-    "via": "ascending cholinergic fibers"
-   },
-   {
-    "to": "Pontine reticular formation",
-    "via": "REM-generating fibers"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "nucleus-laterodorsal-tegmental-l",
+    "nucleus-laterodorsal-tegmental-r",
+    "nucleus-laterodorsal-tegmental-aan-l",
+    "nucleus-laterodorsal-tegmental-aan-r"
   ],
-  "pathways": [
-   "pathway-reticulospinal"
-  ]
- },
- "function": "Cholinergic neurons of the laterodorsal tegmental nucleus project densely to the thalamus, including the intralaminar and reticular nuclei and the specific relay nuclei, and to the lateral hypothalamus, the basal forebrain, the ventral tegmental area and the medial prefrontal cortex. Acetylcholine released on thalamic neurons depolarizes them out of the burst firing that produces sleep spindles and slow waves and into the single-spike mode required for cortical arousal, so this nucleus is a switch between sleep and waking rather than a carrier of specific information. Its projection to the ventral tegmental area gates dopamine burst firing and therefore reward signaling, giving cholinergic brainstem control over motivation and drug reinforcement. During REM sleep the same neurons drive the pontine reticular formation to generate rapid eye movements and the cortical activation of dreaming, while the noradrenergic and serotonergic systems are silent. Afferents come from the prefrontal cortex, the lateral hypothalamus including the orexin neurons, the periaqueductal gray and the nucleus of the solitary tract, tying arousal to appetite, threat and visceral state.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-aica"
+  "summary": "The laterodorsal tegmental nucleus is a cholinergic cell group in the central gray of the upper pons, lying in the floor of the fourth ventricle just medial to the locus coeruleus. With the pedunculopontine nucleus it makes up the Ch5-Ch6 cholinergic system of the brainstem, the source of acetylcholine for the thalamus, and it is one of the two engines of the ascending arousal system that switch the thalamocortical loop from burst firing to the tonic mode of waking and REM sleep. Its neurons are REM-on: they fire fastest during REM sleep and during waking and fall silent in non-REM sleep. The label used here also contains the surrounding central gray of the rhombencephalon, because 7 T imaging cannot separate the nucleus from the periventricular gray it sits in.",
+  "anatomy": {
+    "location": "Central gray of the rostral pons in the floor of the fourth ventricle, medial and slightly dorsal to the locus coeruleus, lateral to the medial longitudinal fasciculus and above the level of the abducens nucleus, extending rostrally into the isthmus where it becomes continuous with the periaqueductal gray and with the pedunculopontine territory. The superior cerebellar peduncle bounds it laterally. Blood supply is from the superior cerebellar artery and dorsal perforators of the basilar artery, and its periventricular position makes it vulnerable in thiamine deficiency.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Prefrontal cortex",
+        "via": "corticotegmental fibers"
+      },
+      {
+        "from": "Lateral hypothalamus (orexin neurons)",
+        "via": "hypothalamotegmental fibers"
+      },
+      {
+        "from": "Nucleus of the solitary tract and periaqueductal gray",
+        "via": "visceral and defensive input"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Thalamus (intralaminar, reticular and relay nuclei)",
+        "via": "ascending cholinergic projection"
+      },
+      {
+        "to": "Ventral tegmental area",
+        "via": "cholinergic gating of dopamine bursts"
+      },
+      {
+        "to": "Basal forebrain and lateral hypothalamus",
+        "via": "ascending cholinergic fibers"
+      },
+      {
+        "to": "Pontine reticular formation",
+        "via": "REM-generating fibers"
+      }
+    ],
+    "pathways": [
+      "pathway-reticulospinal"
+    ]
+  },
+  "function": "Cholinergic neurons of the laterodorsal tegmental nucleus project densely to the thalamus, including the intralaminar and reticular nuclei and the specific relay nuclei, and to the lateral hypothalamus, the basal forebrain, the ventral tegmental area and the medial prefrontal cortex. Acetylcholine released on thalamic neurons depolarizes them out of the burst firing that produces sleep spindles and slow waves and into the single-spike mode required for cortical arousal, so this nucleus is a switch between sleep and waking rather than a carrier of specific information. Its projection to the ventral tegmental area gates dopamine burst firing and therefore reward signaling, giving cholinergic brainstem control over motivation and drug reinforcement. During REM sleep the same neurons drive the pontine reticular formation to generate rapid eye movements and the cortical activation of dreaming, while the noradrenergic and serotonergic systems are silent. Afferents come from the prefrontal cortex, the lateral hypothalamus including the orexin neurons, the periaqueductal gray and the nucleus of the solitary tract, tying arousal to appetite, threat and visceral state.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "nucleus-laterodorsal-tegmental-l"
+        },
+        "label": "laterodorsal tegmental nucleus in the central gray of the pons"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "nucleus-laterodorsal-tegmental-r"
+        },
+        "label": "periventricular gray of the upper pontine tegmentum"
+      }
+    ],
+    "normalAppearance": "The central gray of the pons is a thin band of slightly higher T2 signal under the floor of the fourth ventricle; the nucleus itself is not separable on clinical images and is defined here by a 7 T probabilistic template.",
+    "pathology": [
+      {
+        "pathology": "Wernicke encephalopathy",
+        "modality": "MRI",
+        "finding": "Symmetric FLAIR hyperintensity of the periventricular gray around the fourth ventricle and aqueduct together with the medial thalami and mammillary bodies.",
+        "sequence": "FLAIR"
+      },
+      {
+        "pathology": "Dementia with Lewy bodies and Parkinson disease dementia",
+        "modality": "PET",
+        "finding": "Reduced cortical and thalamic cholinergic markers with fluctuating attention and visual hallucinations; MRI is often unremarkable.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Dorsal pontine infarct",
+        "modality": "MRI",
+        "finding": "Tegmental restricted diffusion with hypersomnolence, internuclear ophthalmoplegia and disturbed REM sleep.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Hypersomnolence and reduced arousal",
+        "side": "bilateral",
+        "mechanism": "Loss of cholinergic drive to the thalamus"
+      },
+      {
+        "deficit": "Fluctuating attention and visual hallucinations",
+        "side": "bilateral",
+        "mechanism": "Cholinergic deafferentation of thalamus and cortex"
+      },
+      {
+        "deficit": "Disordered REM sleep",
+        "side": "bilateral",
+        "mechanism": "Loss of REM-on cholinergic neurons"
+      }
+    ],
+    "examination": [
+      "Ask about fluctuating alertness across the day and well-formed visual hallucinations",
+      "Sleep history including dream enactment and daytime sleepiness",
+      "Test attention with serial tasks rather than orientation questions"
+    ],
+    "syndromes": [
+      "syn-wernicke-korsakoff",
+      "syn-parkinsonism"
+    ],
+    "pearls": [
+      "Acetylcholine from the pons is what lets the thalamus pass information to the cortex",
+      "Fluctuating attention with hallucinations is a cholinergic pattern, and cholinesterase inhibitors help",
+      "REM-on cholinergic neurons and REM-off monoaminergic neurons sit millimeters apart in the same tegmentum"
+    ]
+  },
+  "pitfalls": [
+    "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+    "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build also shows the Harvard Ascending Arousal Network atlas v2.0 region of interest (Edlow et al. 2024, CC0), a group probabilistic label in MNI152 space that marks the location of the nucleus but not its exact borders."
   ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "nucleus-laterodorsal-tegmental-l"
+  "citations": [
+    {
+      "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
     },
-    "label": "laterodorsal tegmental nucleus in the central gray of the pons"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "nucleus-laterodorsal-tegmental-r"
+    {
+      "ref": "sp-acetylcholine"
     },
-    "label": "periventricular gray of the upper pontine tegmentum"
-   }
+    {
+      "ref": "sp-reticular-activating-system"
+    },
+    {
+      "ref": "oa-edlow-aan-wakefulness-connectivity"
+    },
+    {
+      "ref": "oa-edlow-ascending-arousal-network"
+    }
   ],
-  "normalAppearance": "The central gray of the pons is a thin band of slightly higher T2 signal under the floor of the fourth ventricle; the nucleus itself is not separable on clinical images and is defined here by a 7 T probabilistic template.",
-  "pathology": [
-   {
-    "pathology": "Wernicke encephalopathy",
-    "modality": "MRI",
-    "finding": "Symmetric FLAIR hyperintensity of the periventricular gray around the fourth ventricle and aqueduct together with the medial thalami and mammillary bodies.",
-    "sequence": "FLAIR"
-   },
-   {
-    "pathology": "Dementia with Lewy bodies and Parkinson disease dementia",
-    "modality": "PET",
-    "finding": "Reduced cortical and thalamic cholinergic markers with fluctuating attention and visual hallucinations; MRI is often unremarkable.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Dorsal pontine infarct",
-    "modality": "MRI",
-    "finding": "Tegmental restricted diffusion with hypersomnolence, internuclear ophthalmoplegia and disturbed REM sleep.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Hypersomnolence and reduced arousal",
-    "side": "bilateral",
-    "mechanism": "Loss of cholinergic drive to the thalamus"
-   },
-   {
-    "deficit": "Fluctuating attention and visual hallucinations",
-    "side": "bilateral",
-    "mechanism": "Cholinergic deafferentation of thalamus and cortex"
-   },
-   {
-    "deficit": "Disordered REM sleep",
-    "side": "bilateral",
-    "mechanism": "Loss of REM-on cholinergic neurons"
-   }
+  "tags": [
+    "acetylcholine",
+    "arousal",
+    "REM sleep"
   ],
-  "examination": [
-   "Ask about fluctuating alertness across the day and well-formed visual hallucinations",
-   "Sleep history including dream enactment and daytime sleepiness",
-   "Test attention with serial tasks rather than orientation questions"
-  ],
-  "syndromes": [
-   "syn-wernicke-korsakoff",
-   "syn-parkinsonism"
-  ],
-  "pearls": [
-   "Acetylcholine from the pons is what lets the thalamus pass information to the cortex",
-   "Fluctuating attention with hallucinations is a cholinergic pattern, and cholinesterase inhibitors help",
-   "REM-on cholinergic neurons and REM-off monoaminergic neurons sit millimeters apart in the same tegmentum"
-  ]
- },
- "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
-  "PUBLIC EDITION - NO MESH: the 7 T probabilistic outline of this nucleus may not be redistributed and no openly licensed delineation of it has been built here yet, so the openly shareable build of the atlas describes the nucleus in full but draws no surface for it. The Harvard Ascending Arousal Network atlas (Edlow et al.) does publish a laterodorsal tegmental ROI under CC0."
- ],
- "citations": [
-  {
-   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
-  },
-  {
-   "ref": "sp-acetylcholine"
-  },
-  {
-   "ref": "sp-reticular-activating-system"
-  },
-  {
-   "ref": "oa-edlow-aan-wakefulness-connectivity"
-  },
-  {
-   "ref": "oa-edlow-ascending-arousal-network"
-  }
- ],
- "tags": [
-  "acetylcholine",
-  "arousal",
-  "REM sleep"
- ],
- "status": "draft",
- "subsystem": "pons",
- "parent": "brainstem"
+  "status": "draft",
+  "subsystem": "pons",
+  "parent": "brainstem"
 }

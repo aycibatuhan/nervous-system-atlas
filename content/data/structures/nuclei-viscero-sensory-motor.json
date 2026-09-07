@@ -1,186 +1,186 @@
 {
- "kind": "structure",
- "id": "nuclei-viscero-sensory-motor",
- "name": "Viscero-sensory-motor nuclei complex",
- "synonyms": [
-  "VSM",
-  "viscero-sensory-motor complex",
-  "solitary, dorsal vagal and hypoglossal nuclear complex"
- ],
- "system": "brainstem",
- "meshIds": [
-  "nuclei-viscero-sensory-motor-l",
-  "nuclei-viscero-sensory-motor-r",
-  "nuclei-viscero-sensory-motor-anchor-l",
-  "nuclei-viscero-sensory-motor-anchor-r"
- ],
- "summary": "The viscero-sensory-motor complex is the block of gray matter in the dorsal medulla that holds the visceral afferent and efferent machinery of the vagus and glossopharyngeal nerves together with the hypoglossal nucleus. It is drawn as a single label because 7 T imaging cannot separate the nucleus of the solitary tract, the dorsal motor nucleus of the vagus and the hypoglossal nucleus in a living brain, and because functionally they act as a unit: taste and visceral afferents arrive in the solitary nucleus, and the reflex responses leave through the adjacent parasympathetic and motor columns. This is the floor of the fourth ventricle at the level of the vagal trigone, and it is where blood pressure, heart rate, gastric secretion, swallowing, coughing and vomiting are put together.",
- "anatomy": {
-  "location": "Dorsal medulla under the floor of the fourth ventricle and, more caudally, around the central canal, from the level of the striae medullares down to the obex and a little below it. The solitary tract and its nucleus lie laterally, the dorsal motor nucleus of the vagus makes the vagal trigone medial to it, and the hypoglossal nucleus forms the hypoglossal trigone next to the midline; the area postrema sits at the obex on the ventricular surface outside the blood-brain barrier. Posterior spinal and medial branches of the vertebral and posterior inferior cerebellar arteries supply the complex.",
-  "subdivisions": [
-   {
-    "name": "Nucleus of the solitary tract",
-    "note": "Visceral and gustatory afferent column, topographically ordered from taste rostrally to gut caudally"
-   },
-   {
-    "name": "Dorsal motor nucleus of the vagus",
-    "note": "Preganglionic parasympathetic column for heart, airway and gut"
-   },
-   {
-    "name": "Hypoglossal nucleus",
-    "note": "Motor column for the tongue, adjacent to the midline"
-   }
-  ]
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Vagus and glossopharyngeal nerves",
-    "via": "solitary tract"
-   },
-   {
-    "from": "Insular and infralimbic cortex",
-    "via": "descending visceral corticofugal fibers"
-   },
-   {
-    "from": "Area postrema",
-    "via": "chemosensitive fibers"
-   }
+  "kind": "structure",
+  "id": "nuclei-viscero-sensory-motor",
+  "name": "Viscero-sensory-motor nuclei complex",
+  "synonyms": [
+    "VSM",
+    "viscero-sensory-motor complex",
+    "solitary, dorsal vagal and hypoglossal nuclear complex"
   ],
-  "efferents": [
-   {
-    "to": "Heart, airway and gastrointestinal tract",
-    "via": "preganglionic vagal fibers"
-   },
-   {
-    "to": "Nucleus ambiguus and the pharyngeal and laryngeal muscles",
-    "via": "local medullary connections"
-   },
-   {
-    "to": "Parabrachial nuclei, hypothalamus, amygdala and insula",
-    "via": "ascending visceral projection"
-   },
-   {
-    "to": "Tongue muscles",
-    "via": "hypoglossal nerve"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "nuclei-viscero-sensory-motor-l",
+    "nuclei-viscero-sensory-motor-r",
+    "nuclei-viscero-sensory-motor-anchor-l",
+    "nuclei-viscero-sensory-motor-anchor-r"
   ],
-  "pathways": [
-   "pathway-gustatory"
-  ]
- },
- "function": "Afferents from the vagus and glossopharyngeal nerves carrying taste, arterial baroreceptor and chemoreceptor signals, airway irritant information and gastrointestinal distension enter the solitary tract and end in a topographic order along the solitary nucleus, taste rostrally and cardiorespiratory and gastrointestinal input caudally. From there short axons reach the dorsal motor nucleus of the vagus, which supplies preganglionic parasympathetic fibers to the heart, airway and gut, and the nucleus ambiguus in the ventrolateral medulla, which drives the pharynx and larynx; ascending fibers travel to the parabrachial nuclei, the hypothalamus, the amygdala and the insular cortex. The hypoglossal nucleus, immediately medial, supplies the tongue and is recruited in swallowing, chewing and airway maintenance during sleep. The reflexes assembled here include the baroreflex, the chemoreflex, the cough and gag reflexes, the swallowing sequence and emesis, and the area postrema adds a chemosensitive trigger zone that samples the blood directly.",
- "bloodSupply": {
-  "arteries": [
-   "artery-vertebral",
-   "anterior-spinal-artery",
-   "artery-pica"
-  ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "nuclei-viscero-sensory-motor-l"
-    },
-    "label": "vagal and hypoglossal trigones in the floor of the fourth ventricle"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "nuclei-viscero-sensory-motor-r"
-    },
-    "label": "dorsal medulla from the striae medullares to the obex"
-   }
-  ],
-  "normalAppearance": "The dorsal medulla is a narrow band of gray under the floor of the fourth ventricle on sagittal T2; the individual nuclei are not resolvable, but the region can be identified by the obex and the vagal and hypoglossal trigones on high-resolution imaging.",
-  "pathology": [
-   {
-    "pathology": "Area postrema syndrome in neuromyelitis optica",
-    "modality": "MRI",
-    "finding": "Linear T2 hyperintensity of the dorsal medulla around the area postrema with intractable nausea, vomiting and hiccups.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Lateral medullary (Wallenberg) infarct",
-    "modality": "MRI",
-    "finding": "Dorsolateral medullary restricted diffusion involving the solitary nucleus and nucleus ambiguus with dysphagia, hoarseness, loss of taste and autonomic instability.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Brainstem compression by a Chiari malformation or foramen magnum mass",
-    "modality": "MRI",
-    "finding": "Distortion of the dorsal medulla with sleep apnea, syncope and swallowing failure.",
-    "sequence": "T2"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Dysphagia with nasal regurgitation and a wet voice",
-    "side": "bilateral",
-    "mechanism": "Loss of the solitary-ambiguus swallowing circuit"
-   },
-   {
-    "deficit": "Intractable nausea, vomiting and hiccups",
-    "side": "bilateral",
-    "mechanism": "Involvement of the area postrema and caudal solitary nucleus"
-   },
-   {
-    "deficit": "Labile blood pressure and syncope",
-    "side": "bilateral",
-    "mechanism": "Interruption of the baroreflex arc"
-   },
-   {
-    "deficit": "Tongue weakness with deviation to the weak side",
-    "side": "ipsilateral",
-    "mechanism": "Damage to the hypoglossal nucleus"
-   }
-  ],
-  "examination": [
-   "Watch a swallow of water, listen for a wet voice and test the gag and cough",
-   "Lying and standing blood pressure and heart rate variability",
-   "Inspect the tongue at rest for wasting and fasciculation, then ask for protrusion"
-  ],
-  "syndromes": [
-   "syn-wallenberg-lateral-medullary",
-   "syn-vagal-palsy",
-   "syn-hypoglossal-palsy",
-   "syn-bulbar-vs-pseudobulbar"
-  ],
-  "pearls": [
-   "Intractable hiccups and vomiting with a normal abdomen should send you to the dorsal medulla and to aquaporin-4 antibodies",
-   "Taste, blood pressure, cough and vomiting all report to one nucleus a few millimeters long",
-   "The area postrema has no blood-brain barrier, which is why circulating emetics act there"
-  ]
- },
- "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
-  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 86 mm3 per side, the volume published by Singh et al. (2019), centred in the dorsomedial medulla just deep to the floor of the fourth ventricle, at and below the obex, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
- ],
- "citations": [
-  {
-   "ref": "oa-singh-parabrachial-vestibular-vsm-atlas"
+  "summary": "The viscero-sensory-motor complex is the block of gray matter in the dorsal medulla that holds the visceral afferent and efferent machinery of the vagus and glossopharyngeal nerves together with the hypoglossal nucleus. It is drawn as a single label because 7 T imaging cannot separate the nucleus of the solitary tract, the dorsal motor nucleus of the vagus and the hypoglossal nucleus in a living brain, and because functionally they act as a unit: taste and visceral afferents arrive in the solitary nucleus, and the reflex responses leave through the adjacent parasympathetic and motor columns. This is the floor of the fourth ventricle at the level of the vagal trigone, and it is where blood pressure, heart rate, gastric secretion, swallowing, coughing and vomiting are put together.",
+  "anatomy": {
+    "location": "Dorsal medulla under the floor of the fourth ventricle and, more caudally, around the central canal, from the level of the striae medullares down to the obex and a little below it. The solitary tract and its nucleus lie laterally, the dorsal motor nucleus of the vagus makes the vagal trigone medial to it, and the hypoglossal nucleus forms the hypoglossal trigone next to the midline; the area postrema sits at the obex on the ventricular surface outside the blood-brain barrier. Posterior spinal and medial branches of the vertebral and posterior inferior cerebellar arteries supply the complex.",
+    "subdivisions": [
+      {
+        "name": "Nucleus of the solitary tract",
+        "note": "Visceral and gustatory afferent column, topographically ordered from taste rostrally to gut caudally"
+      },
+      {
+        "name": "Dorsal motor nucleus of the vagus",
+        "note": "Preganglionic parasympathetic column for heart, airway and gut"
+      },
+      {
+        "name": "Hypoglossal nucleus",
+        "note": "Motor column for the tongue, adjacent to the midline"
+      }
+    ]
   },
-  {
-   "ref": "sp-nucleus-solitarius"
+  "connections": {
+    "afferents": [
+      {
+        "from": "Vagus and glossopharyngeal nerves",
+        "via": "solitary tract"
+      },
+      {
+        "from": "Insular and infralimbic cortex",
+        "via": "descending visceral corticofugal fibers"
+      },
+      {
+        "from": "Area postrema",
+        "via": "chemosensitive fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Heart, airway and gastrointestinal tract",
+        "via": "preganglionic vagal fibers"
+      },
+      {
+        "to": "Nucleus ambiguus and the pharyngeal and laryngeal muscles",
+        "via": "local medullary connections"
+      },
+      {
+        "to": "Parabrachial nuclei, hypothalamus, amygdala and insula",
+        "via": "ascending visceral projection"
+      },
+      {
+        "to": "Tongue muscles",
+        "via": "hypoglossal nerve"
+      }
+    ],
+    "pathways": [
+      "pathway-gustatory"
+    ]
   },
-  {
-   "ref": "sp-nucleus-ambiguus"
-  }
- ],
- "tags": [
-  "autonomic",
-  "swallowing",
-  "baroreflex",
-  "vomiting"
- ],
- "status": "draft",
- "subsystem": "medulla",
- "parent": "brainstem"
+  "function": "Afferents from the vagus and glossopharyngeal nerves carrying taste, arterial baroreceptor and chemoreceptor signals, airway irritant information and gastrointestinal distension enter the solitary tract and end in a topographic order along the solitary nucleus, taste rostrally and cardiorespiratory and gastrointestinal input caudally. From there short axons reach the dorsal motor nucleus of the vagus, which supplies preganglionic parasympathetic fibers to the heart, airway and gut, and the nucleus ambiguus in the ventrolateral medulla, which drives the pharynx and larynx; ascending fibers travel to the parabrachial nuclei, the hypothalamus, the amygdala and the insular cortex. The hypoglossal nucleus, immediately medial, supplies the tongue and is recruited in swallowing, chewing and airway maintenance during sleep. The reflexes assembled here include the baroreflex, the chemoreflex, the cough and gag reflexes, the swallowing sequence and emesis, and the area postrema adds a chemosensitive trigger zone that samples the blood directly.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-vertebral",
+      "anterior-spinal-artery",
+      "artery-pica"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "nuclei-viscero-sensory-motor-l"
+        },
+        "label": "vagal and hypoglossal trigones in the floor of the fourth ventricle"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "nuclei-viscero-sensory-motor-r"
+        },
+        "label": "dorsal medulla from the striae medullares to the obex"
+      }
+    ],
+    "normalAppearance": "The dorsal medulla is a narrow band of gray under the floor of the fourth ventricle on sagittal T2; the individual nuclei are not resolvable, but the region can be identified by the obex and the vagal and hypoglossal trigones on high-resolution imaging.",
+    "pathology": [
+      {
+        "pathology": "Area postrema syndrome in neuromyelitis optica",
+        "modality": "MRI",
+        "finding": "Linear T2 hyperintensity of the dorsal medulla around the area postrema with intractable nausea, vomiting and hiccups.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Lateral medullary (Wallenberg) infarct",
+        "modality": "MRI",
+        "finding": "Dorsolateral medullary restricted diffusion involving the solitary nucleus and nucleus ambiguus with dysphagia, hoarseness, loss of taste and autonomic instability.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Brainstem compression by a Chiari malformation or foramen magnum mass",
+        "modality": "MRI",
+        "finding": "Distortion of the dorsal medulla with sleep apnea, syncope and swallowing failure.",
+        "sequence": "T2"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Dysphagia with nasal regurgitation and a wet voice",
+        "side": "bilateral",
+        "mechanism": "Loss of the solitary-ambiguus swallowing circuit"
+      },
+      {
+        "deficit": "Intractable nausea, vomiting and hiccups",
+        "side": "bilateral",
+        "mechanism": "Involvement of the area postrema and caudal solitary nucleus"
+      },
+      {
+        "deficit": "Labile blood pressure and syncope",
+        "side": "bilateral",
+        "mechanism": "Interruption of the baroreflex arc"
+      },
+      {
+        "deficit": "Tongue weakness with deviation to the weak side",
+        "side": "ipsilateral",
+        "mechanism": "Damage to the hypoglossal nucleus"
+      }
+    ],
+    "examination": [
+      "Watch a swallow of water, listen for a wet voice and test the gag and cough",
+      "Lying and standing blood pressure and heart rate variability",
+      "Inspect the tongue at rest for wasting and fasciculation, then ask for protrusion"
+    ],
+    "syndromes": [
+      "syn-wallenberg-lateral-medullary",
+      "syn-vagal-palsy",
+      "syn-hypoglossal-palsy",
+      "syn-bulbar-vs-pseudobulbar"
+    ],
+    "pearls": [
+      "Intractable hiccups and vomiting with a normal abdomen should send you to the dorsal medulla and to aquaporin-4 antibodies",
+      "Taste, blood pressure, cough and vomiting all report to one nucleus a few millimeters long",
+      "The area postrema has no blood-brain barrier, which is why circulating emetics act there"
+    ]
+  },
+  "pitfalls": [
+    "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+    "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 86 mm3 per side, the volume published by Singh et al. (2019), centered in the dorsomedial medulla just deep to the floor of the fourth ventricle, at and below the obex, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
+  ],
+  "citations": [
+    {
+      "ref": "oa-singh-parabrachial-vestibular-vsm-atlas"
+    },
+    {
+      "ref": "sp-nucleus-solitarius"
+    },
+    {
+      "ref": "sp-nucleus-ambiguus"
+    }
+  ],
+  "tags": [
+    "autonomic",
+    "swallowing",
+    "baroreflex",
+    "vomiting"
+  ],
+  "status": "draft",
+  "subsystem": "medulla",
+  "parent": "brainstem"
 }

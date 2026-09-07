@@ -1,162 +1,162 @@
 {
- "kind": "structure",
- "id": "raphe-magnus",
- "name": "Raphe magnus nucleus",
- "synonyms": [
-  "RMg",
-  "nucleus raphes magnus",
-  "B3 group",
-  "rostral ventromedial medulla"
- ],
- "system": "brainstem",
- "meshIds": [
-  "raphe-magnus",
-  "raphe-magnus-anchor"
- ],
- "summary": "The raphe magnus nucleus is the serotonergic midline nucleus of the rostral medulla and the output stage of the descending pain control system. Together with the surrounding gigantocellular and paragigantocellular cells it forms the rostral ventromedial medulla, the relay through which the periaqueductal gray suppresses or facilitates transmission in the spinal and trigeminal dorsal horns. Opioid analgesia, stimulation-produced analgesia and the analgesia of stress all work through this link, and the same neurons can facilitate rather than inhibit nociception, which is why the system is implicated in the maintenance of chronic pain and in opioid-induced hyperalgesia. It is a midline structure, so it is nearly always affected on both sides at once.",
- "anatomy": {
-  "location": "Midline of the rostral medulla in front of the fourth ventricle floor and behind the pyramids, at and just below the pontomedullary junction, between the two medial lemnisci and above the raphe obscurus and pallidus. The nucleus ambiguus and the ventrolateral medulla lie laterally, and the gigantocellular reticular nucleus surrounds it. Median perforating branches of the vertebral and basilar arteries supply it, which links it to medial medullary rather than lateral medullary infarction.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Periaqueductal gray",
-    "via": "descending pain modulatory fibers"
-   },
-   {
-    "from": "Hypothalamus and amygdala",
-    "via": "descending limbic fibers"
-   },
-   {
-    "from": "Spinal dorsal horn",
-    "via": "spinoreticular feedback"
-   }
+  "kind": "structure",
+  "id": "raphe-magnus",
+  "name": "Raphe magnus nucleus",
+  "synonyms": [
+    "RMg",
+    "nucleus raphes magnus",
+    "B3 group",
+    "rostral ventromedial medulla"
   ],
-  "efferents": [
-   {
-    "to": "Spinal dorsal horn laminae I, II and V",
-    "via": "raphespinal fibers in the dorsolateral funiculus"
-   },
-   {
-    "to": "Spinal trigeminal nucleus",
-    "via": "descending serotonergic fibers"
-   },
-   {
-    "to": "Ventral horn motor neurons",
-    "via": "serotonergic modulation of excitability"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "raphe-magnus",
+    "raphe-magnus-anchor"
   ],
-  "pathways": [
-   "pathway-lateral-spinothalamic",
-   "pathway-trigeminothalamic"
-  ]
- },
- "function": "Serotonergic and enkephalinergic neurons of the raphe magnus project down the dorsolateral funiculus to laminae I, II and V of the spinal dorsal horn and to the spinal trigeminal nucleus, where they suppress the transmission of nociceptive signals from primary afferents to projection neurons. The pathway is driven by the periaqueductal gray, which itself is engaged by the hypothalamus, the amygdala and the anterior cingulate cortex, so attention, expectation and fear can change how much pain reaches consciousness; placebo analgesia and the relief produced by systemic opioids both require this descending arm. Two functional classes of neuron have been described, one that pauses just before a nocifensive reflex and facilitates pain and one that fires before it and inhibits, and a shift toward facilitation is thought to help maintain chronic and neuropathic pain states. The nucleus also modulates the trigeminovascular system in migraine and contributes serotonergic tone to motor neurons and to the respiratory network.",
- "bloodSupply": {
-  "arteries": [
-   "artery-vertebral",
-   "anterior-spinal-artery",
-   "artery-pica"
-  ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "raphe-magnus"
-    },
-    "label": "raphe magnus in the midline of the rostral medulla"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "raphe-magnus"
-    },
-    "label": "midline medullary raphe column"
-   }
-  ],
-  "normalAppearance": "Not visible on clinical MRI; the midline of the rostral medulla in front of the fourth ventricle is the landmark, and functional imaging studies localize descending pain modulation to this region.",
-  "pathology": [
-   {
-    "pathology": "Chronic pain and opioid-induced hyperalgesia",
-    "modality": "MRI",
-    "finding": "Structural imaging is normal; functional imaging shows altered engagement of the periaqueductal gray and rostral ventromedial medulla.",
-    "sequence": "n/a"
-   },
-   {
-    "pathology": "Medial medullary infarct",
-    "modality": "MRI",
-    "finding": "Paramedian medullary restricted diffusion involving the midline raphe with contralateral hemiparesis, tongue weakness and altered pain modulation.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Migraine",
-    "modality": "MRI",
-    "finding": "Interictal imaging is normal; brainstem activation in the raphe and periaqueductal region has been reported during attacks.",
-    "sequence": "n/a"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Loss of descending pain inhibition with widespread hyperalgesia",
-    "side": "bilateral",
-    "mechanism": "Interruption of the serotonergic projection to the dorsal horn"
-   },
-   {
-    "deficit": "Reduced opioid analgesia",
-    "side": "bilateral",
-    "mechanism": "Loss of the periaqueductal-ventromedial medullary relay"
-   },
-   {
-    "deficit": "Altered respiratory chemosensitivity",
-    "side": "bilateral",
-    "mechanism": "Loss of medullary serotonergic tone"
-   }
-  ],
-  "examination": [
-   "Ask whether pain is widespread and disproportionate to the injury",
-   "Test conditioned pain modulation: does a distant painful stimulus reduce local pain",
-   "Review opioid dose escalation with worsening pain, the signature of hyperalgesia"
-  ],
-  "syndromes": [
-   "syn-dejerine-medial-medullary",
-   "syn-central-post-stroke-pain-syndrome"
-  ],
-  "pearls": [
-   "Pain is not simply received; the medulla decides how much of it gets through",
-   "Opioids work partly by recruiting this descending pathway, and the same pathway can turn pain up",
-   "Midline nuclei are bilateral by definition, so their signs are never lateralized"
-  ]
- },
- "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
-  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 16 mm3 ellipsoid, the raphe magnus volume published by Bianciardi et al. (2015), centred on the midline of the rostral ventromedial medulla, in the ventral third of the tegmentum at the pontomedullary junction, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
- ],
- "citations": [
-  {
-   "ref": "oa-bianciardi-brainstem-nuclei-template"
+  "summary": "The raphe magnus nucleus is the serotonergic midline nucleus of the rostral medulla and the output stage of the descending pain control system. Together with the surrounding gigantocellular and paragigantocellular cells it forms the rostral ventromedial medulla, the relay through which the periaqueductal gray suppresses or facilitates transmission in the spinal and trigeminal dorsal horns. Opioid analgesia, stimulation-produced analgesia and the analgesia of stress all work through this link, and the same neurons can facilitate rather than inhibit nociception, which is why the system is implicated in the maintenance of chronic pain and in opioid-induced hyperalgesia. It is a midline structure, so it is nearly always affected on both sides at once.",
+  "anatomy": {
+    "location": "Midline of the rostral medulla in front of the fourth ventricle floor and behind the pyramids, at and just below the pontomedullary junction, between the two medial lemnisci and above the raphe obscurus and pallidus. The nucleus ambiguus and the ventrolateral medulla lie laterally, and the gigantocellular reticular nucleus surrounds it. Median perforating branches of the vertebral and basilar arteries supply it, which links it to medial medullary rather than lateral medullary infarction.",
+    "subdivisions": []
   },
-  {
-   "ref": "sp-nucleus-raphe"
+  "connections": {
+    "afferents": [
+      {
+        "from": "Periaqueductal gray",
+        "via": "descending pain modulatory fibers"
+      },
+      {
+        "from": "Hypothalamus and amygdala",
+        "via": "descending limbic fibers"
+      },
+      {
+        "from": "Spinal dorsal horn",
+        "via": "spinoreticular feedback"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Spinal dorsal horn laminae I, II and V",
+        "via": "raphespinal fibers in the dorsolateral funiculus"
+      },
+      {
+        "to": "Spinal trigeminal nucleus",
+        "via": "descending serotonergic fibers"
+      },
+      {
+        "to": "Ventral horn motor neurons",
+        "via": "serotonergic modulation of excitability"
+      }
+    ],
+    "pathways": [
+      "pathway-lateral-spinothalamic",
+      "pathway-trigeminothalamic"
+    ]
   },
-  {
-   "ref": "sp-physiology-pain"
-  }
- ],
- "tags": [
-  "pain",
-  "serotonin",
-  "descending modulation",
-  "raphe"
- ],
- "status": "draft",
- "subsystem": "medulla",
- "parent": "brainstem"
+  "function": "Serotonergic and enkephalinergic neurons of the raphe magnus project down the dorsolateral funiculus to laminae I, II and V of the spinal dorsal horn and to the spinal trigeminal nucleus, where they suppress the transmission of nociceptive signals from primary afferents to projection neurons. The pathway is driven by the periaqueductal gray, which itself is engaged by the hypothalamus, the amygdala and the anterior cingulate cortex, so attention, expectation and fear can change how much pain reaches consciousness; placebo analgesia and the relief produced by systemic opioids both require this descending arm. Two functional classes of neuron have been described, one that pauses just before a nocifensive reflex and facilitates pain and one that fires before it and inhibits, and a shift toward facilitation is thought to help maintain chronic and neuropathic pain states. The nucleus also modulates the trigeminovascular system in migraine and contributes serotonergic tone to motor neurons and to the respiratory network.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-vertebral",
+      "anterior-spinal-artery",
+      "artery-pica"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "raphe-magnus"
+        },
+        "label": "raphe magnus in the midline of the rostral medulla"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "raphe-magnus"
+        },
+        "label": "midline medullary raphe column"
+      }
+    ],
+    "normalAppearance": "Not visible on clinical MRI; the midline of the rostral medulla in front of the fourth ventricle is the landmark, and functional imaging studies localize descending pain modulation to this region.",
+    "pathology": [
+      {
+        "pathology": "Chronic pain and opioid-induced hyperalgesia",
+        "modality": "MRI",
+        "finding": "Structural imaging is normal; functional imaging shows altered engagement of the periaqueductal gray and rostral ventromedial medulla.",
+        "sequence": "n/a"
+      },
+      {
+        "pathology": "Medial medullary infarct",
+        "modality": "MRI",
+        "finding": "Paramedian medullary restricted diffusion involving the midline raphe with contralateral hemiparesis, tongue weakness and altered pain modulation.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Migraine",
+        "modality": "MRI",
+        "finding": "Interictal imaging is normal; brainstem activation in the raphe and periaqueductal region has been reported during attacks.",
+        "sequence": "n/a"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Loss of descending pain inhibition with widespread hyperalgesia",
+        "side": "bilateral",
+        "mechanism": "Interruption of the serotonergic projection to the dorsal horn"
+      },
+      {
+        "deficit": "Reduced opioid analgesia",
+        "side": "bilateral",
+        "mechanism": "Loss of the periaqueductal-ventromedial medullary relay"
+      },
+      {
+        "deficit": "Altered respiratory chemosensitivity",
+        "side": "bilateral",
+        "mechanism": "Loss of medullary serotonergic tone"
+      }
+    ],
+    "examination": [
+      "Ask whether pain is widespread and disproportionate to the injury",
+      "Test conditioned pain modulation: does a distant painful stimulus reduce local pain",
+      "Review opioid dose escalation with worsening pain, the signature of hyperalgesia"
+    ],
+    "syndromes": [
+      "syn-dejerine-medial-medullary",
+      "syn-thalamic-dejerine-roussy"
+    ],
+    "pearls": [
+      "Pain is not simply received; the medulla decides how much of it gets through",
+      "Opioids work partly by recruiting this descending pathway, and the same pathway can turn pain up",
+      "Midline nuclei are bilateral by definition, so their signs are never lateralized"
+    ]
+  },
+  "pitfalls": [
+    "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+    "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: a 16 mm3 ellipsoid, the raphe magnus volume published by Bianciardi et al. (2015), centered on the midline of the rostral ventromedial medulla, in the ventral third of the tegmentum at the pontomedullary junction, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
+  ],
+  "citations": [
+    {
+      "ref": "oa-bianciardi-brainstem-nuclei-template"
+    },
+    {
+      "ref": "sp-nucleus-raphe"
+    },
+    {
+      "ref": "sp-physiology-pain"
+    }
+  ],
+  "tags": [
+    "pain",
+    "serotonin",
+    "descending modulation",
+    "raphe"
+  ],
+  "status": "draft",
+  "subsystem": "medulla",
+  "parent": "brainstem"
 }

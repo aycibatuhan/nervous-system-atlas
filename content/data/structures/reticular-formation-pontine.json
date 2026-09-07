@@ -1,181 +1,183 @@
 {
- "kind": "structure",
- "id": "reticular-formation-pontine",
- "name": "Pontine reticular nucleus, oral and caudal parts",
- "synonyms": [
-  "PnO",
-  "PnC",
-  "paramedian pontine reticular formation",
-  "PPRF",
-  "pontine gaze center"
- ],
- "system": "brainstem",
- "meshIds": [
-  "reticular-formation-pontine-l",
-  "reticular-formation-pontine-r"
- ],
- "summary": "The oral and caudal pontine reticular nuclei form the large medial reticular column of the pons, the region traditionally called the paramedian pontine reticular formation. It does four things that matter at the bedside: it generates horizontal saccades and drives the abducens nucleus for conjugate gaze to its own side, it is the obligatory relay of the acoustic startle reflex, it supplies the medial reticulospinal tract that sets axial and antigravity tone, and it is the effector arm of the REM atonia circuit. Because it also carries the ascending arousal projection through the upper pons, destructive lesions here produce coma, ipsilateral gaze palsy and, when the ventral pons is spared, the locked-in state.",
- "anatomy": {
-  "location": "Medial tegmentum of the pons on both sides of the midline raphe, from the isthmus to the pontomedullary junction. The oral part occupies the rostral half around and above the level of the trigeminal motor nucleus; the caudal part lies below it, next to the abducens nucleus and the genu of the facial nerve. The medial longitudinal fasciculus and the tectospinal tract run along its medial edge, the medial lemniscus lies ventrally and the transverse pontine fibers and corticospinal tract are in front. Paramedian perforating branches of the basilar artery supply it, so its lesions accompany basilar branch occlusion and pontine hemorrhage.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Frontal eye field and superior colliculus",
-    "via": "corticoreticular and tectoreticular fibers"
-   },
-   {
-    "from": "Cochlear nuclei",
-    "via": "startle pathway"
-   },
-   {
-    "from": "Cerebellar fastigial nucleus and vestibular nuclei",
-    "via": "fastigioreticular and vestibuloreticular fibers"
-   }
+  "kind": "structure",
+  "id": "reticular-formation-pontine",
+  "name": "Pontine reticular nucleus, oral and caudal parts",
+  "synonyms": [
+    "PnO",
+    "PnC",
+    "paramedian pontine reticular formation",
+    "PPRF",
+    "pontine gaze center"
   ],
-  "efferents": [
-   {
-    "to": "Abducens nucleus",
-    "via": "excitatory burst neuron projection for horizontal saccades"
-   },
-   {
-    "to": "Spinal cord",
-    "via": "medial reticulospinal tract"
-   },
-   {
-    "to": "Ventromedial medulla",
-    "via": "REM atonia pathway"
-   },
-   {
-    "to": "Thalamus",
-    "via": "ascending arousal collaterals"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "reticular-formation-pontine-l",
+    "reticular-formation-pontine-r",
+    "reticular-formation-pontine-aan-l",
+    "reticular-formation-pontine-aan-r"
   ],
-  "pathways": [
-   "pathway-horizontal-gaze",
-   "pathway-reticulospinal"
-  ]
- },
- "function": "Excitatory burst neurons in the paramedian pontine reticular formation fire a high-frequency burst immediately before every ipsilateral horizontal saccade and drive the abducens nucleus, whose motor neurons move the ipsilateral lateral rectus while its interneurons cross in the medial longitudinal fasciculus to the contralateral medial rectus subnucleus; omnipause neurons in the midline raphe hold the bursters silent between saccades. A lesion therefore produces an ipsilateral conjugate gaze palsy that, unlike a frontal lesion, cannot be overcome by the oculocephalic maneuver. The caudal part contains giant reticular neurons that relay the acoustic startle response from the cochlear nuclei to the spinal cord within a few synapses and that give rise to the medial reticulospinal tract, which facilitates extensor and axial muscles; loss of this drive contributes to the decerebrate posture. During REM sleep the same region, driven by the subcoeruleus and the cholinergic tegmental nuclei, produces rapid eye movements and, through the ventromedial medulla, muscle atonia. Ascending collaterals contribute to the reticular activating system.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-aica"
+  "summary": "The oral and caudal pontine reticular nuclei form the large medial reticular column of the pons, the region traditionally called the paramedian pontine reticular formation. It does four things that matter at the bedside: it generates horizontal saccades and drives the abducens nucleus for conjugate gaze to its own side, it is the obligatory relay of the acoustic startle reflex, it supplies the medial reticulospinal tract that sets axial and antigravity tone, and it is the effector arm of the REM atonia circuit. Because it also carries the ascending arousal projection through the upper pons, destructive lesions here produce coma, ipsilateral gaze palsy and, when the ventral pons is spared, the locked-in state.",
+  "anatomy": {
+    "location": "Medial tegmentum of the pons on both sides of the midline raphe, from the isthmus to the pontomedullary junction. The oral part occupies the rostral half around and above the level of the trigeminal motor nucleus; the caudal part lies below it, next to the abducens nucleus and the genu of the facial nerve. The medial longitudinal fasciculus and the tectospinal tract run along its medial edge, the medial lemniscus lies ventrally and the transverse pontine fibers and corticospinal tract are in front. Paramedian perforating branches of the basilar artery supply it, so its lesions accompany basilar branch occlusion and pontine hemorrhage.",
+    "subdivisions": []
+  },
+  "connections": {
+    "afferents": [
+      {
+        "from": "Frontal eye field and superior colliculus",
+        "via": "corticoreticular and tectoreticular fibers"
+      },
+      {
+        "from": "Cochlear nuclei",
+        "via": "startle pathway"
+      },
+      {
+        "from": "Cerebellar fastigial nucleus and vestibular nuclei",
+        "via": "fastigioreticular and vestibuloreticular fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Abducens nucleus",
+        "via": "excitatory burst neuron projection for horizontal saccades"
+      },
+      {
+        "to": "Spinal cord",
+        "via": "medial reticulospinal tract"
+      },
+      {
+        "to": "Ventromedial medulla",
+        "via": "REM atonia pathway"
+      },
+      {
+        "to": "Thalamus",
+        "via": "ascending arousal collaterals"
+      }
+    ],
+    "pathways": [
+      "pathway-horizontal-gaze",
+      "pathway-reticulospinal"
+    ]
+  },
+  "function": "Excitatory burst neurons in the paramedian pontine reticular formation fire a high-frequency burst immediately before every ipsilateral horizontal saccade and drive the abducens nucleus, whose motor neurons move the ipsilateral lateral rectus while its interneurons cross in the medial longitudinal fasciculus to the contralateral medial rectus subnucleus; omnipause neurons in the midline raphe hold the bursters silent between saccades. A lesion therefore produces an ipsilateral conjugate gaze palsy that, unlike a frontal lesion, cannot be overcome by the oculocephalic maneuver. The caudal part contains giant reticular neurons that relay the acoustic startle response from the cochlear nuclei to the spinal cord within a few synapses and that give rise to the medial reticulospinal tract, which facilitates extensor and axial muscles; loss of this drive contributes to the decerebrate posture. During REM sleep the same region, driven by the subcoeruleus and the cholinergic tegmental nuclei, produces rapid eye movements and, through the ventromedial medulla, muscle atonia. Ascending collaterals contribute to the reticular activating system.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "reticular-formation-pontine-l"
+        },
+        "label": "paramedian pontine reticular formation beside the midline"
+      },
+      {
+        "plane": "sagittal",
+        "mni": {
+          "meshId": "reticular-formation-pontine-r"
+        },
+        "label": "pontine tegmentum from the isthmus to the pontomedullary junction"
+      }
+    ],
+    "normalAppearance": "The pontine tegmentum lies behind the transverse pontine fibers and in front of the fourth ventricle and is homogeneous on clinical T1 and T2; the reticular nuclei are defined by position rather than by signal.",
+    "pathology": [
+      {
+        "pathology": "Paramedian pontine infarct",
+        "modality": "MRI",
+        "finding": "Restricted diffusion beside the midline with ipsilateral horizontal gaze palsy, contralateral hemiparesis and sometimes a one-and-a-half syndrome.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Pontine hemorrhage",
+        "modality": "CT",
+        "finding": "Central pontine hematoma with coma, pinpoint reactive pupils, absent horizontal eye movements and extensor posturing.",
+        "sequence": "CT non-contrast"
+      },
+      {
+        "pathology": "Basilar occlusion with locked-in syndrome",
+        "modality": "MRI",
+        "finding": "Bilateral ventral pontine infarction sparing the tegmentum, leaving the patient awake with only vertical eye movements and blinking.",
+        "sequence": "DWI"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Ipsilateral conjugate horizontal gaze palsy",
+        "side": "ipsilateral",
+        "mechanism": "Loss of excitatory burst neurons driving the abducens nucleus"
+      },
+      {
+        "deficit": "One-and-a-half syndrome when the medial longitudinal fasciculus is included",
+        "side": "ipsilateral",
+        "mechanism": "Combined gaze palsy and internuclear ophthalmoplegia"
+      },
+      {
+        "deficit": "Loss of the startle reflex",
+        "side": "bilateral",
+        "mechanism": "Interruption of the caudal pontine relay"
+      },
+      {
+        "deficit": "Coma and extensor posturing",
+        "side": "bilateral",
+        "mechanism": "Loss of the ascending arousal projection and of reticulospinal tone control"
+      }
+    ],
+    "examination": [
+      "Horizontal saccades and pursuit to each side, then the oculocephalic maneuver: a pontine gaze palsy does not budge",
+      "Cold caloric testing when the patient is unresponsive",
+      "Startle to a sudden loud sound, and posture at rest and to pain"
+    ],
+    "syndromes": [
+      "syn-horizontal-gaze-palsy-pontine",
+      "syn-one-and-a-half",
+      "syn-foville",
+      "syn-pontine-hemorrhage",
+      "syn-locked-in"
+    ],
+    "pearls": [
+      "The eyes look toward a pontine lesion's paralyzed side and away from a hemispheric one",
+      "A gaze palsy that the doll's eye maneuver overcomes is above the pons; one that it cannot is in it",
+      "Pinpoint reactive pupils with absent horizontal gaze is a pontine hemorrhage until proved otherwise"
+    ]
+  },
+  "pitfalls": [
+    "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+    "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build also shows the Harvard Ascending Arousal Network atlas v2.0 region of interest (Edlow et al. 2024, CC0), a group probabilistic label in MNI152 space that marks the location of the nucleus but not its exact borders."
   ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "reticular-formation-pontine-l"
+  "citations": [
+    {
+      "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
     },
-    "label": "paramedian pontine reticular formation beside the midline"
-   },
-   {
-    "plane": "sagittal",
-    "mni": {
-     "meshId": "reticular-formation-pontine-r"
+    {
+      "ref": "sp-reticular-formation"
     },
-    "label": "pontine tegmentum from the isthmus to the pontomedullary junction"
-   }
+    {
+      "ref": "sp-pons"
+    },
+    {
+      "ref": "oa-edlow-aan-wakefulness-connectivity"
+    },
+    {
+      "ref": "oa-edlow-ascending-arousal-network"
+    }
   ],
-  "normalAppearance": "The pontine tegmentum lies behind the transverse pontine fibers and in front of the fourth ventricle and is homogeneous on clinical T1 and T2; the reticular nuclei are defined by position rather than by signal.",
-  "pathology": [
-   {
-    "pathology": "Paramedian pontine infarct",
-    "modality": "MRI",
-    "finding": "Restricted diffusion beside the midline with ipsilateral horizontal gaze palsy, contralateral hemiparesis and sometimes a one-and-a-half syndrome.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Pontine hemorrhage",
-    "modality": "CT",
-    "finding": "Central pontine hematoma with coma, pinpoint reactive pupils, absent horizontal eye movements and extensor posturing.",
-    "sequence": "CT non-contrast"
-   },
-   {
-    "pathology": "Basilar occlusion with locked-in syndrome",
-    "modality": "MRI",
-    "finding": "Bilateral ventral pontine infarction sparing the tegmentum, leaving the patient awake with only vertical eye movements and blinking.",
-    "sequence": "DWI"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Ipsilateral conjugate horizontal gaze palsy",
-    "side": "ipsilateral",
-    "mechanism": "Loss of excitatory burst neurons driving the abducens nucleus"
-   },
-   {
-    "deficit": "One-and-a-half syndrome when the medial longitudinal fasciculus is included",
-    "side": "ipsilateral",
-    "mechanism": "Combined gaze palsy and internuclear ophthalmoplegia"
-   },
-   {
-    "deficit": "Loss of the startle reflex",
-    "side": "bilateral",
-    "mechanism": "Interruption of the caudal pontine relay"
-   },
-   {
-    "deficit": "Coma and extensor posturing",
-    "side": "bilateral",
-    "mechanism": "Loss of the ascending arousal projection and of reticulospinal tone control"
-   }
+  "tags": [
+    "horizontal gaze",
+    "startle",
+    "reticulospinal",
+    "PPRF"
   ],
-  "examination": [
-   "Horizontal saccades and pursuit to each side, then the oculocephalic maneuver: a pontine gaze palsy does not budge",
-   "Cold caloric testing when the patient is unresponsive",
-   "Startle to a sudden loud sound, and posture at rest and to pain"
-  ],
-  "syndromes": [
-   "syn-horizontal-gaze-palsy-pontine",
-   "syn-one-and-a-half",
-   "syn-foville",
-   "syn-pontine-hemorrhage",
-   "syn-locked-in"
-  ],
-  "pearls": [
-   "The eyes look toward a pontine lesion's paralyzed side and away from a hemispheric one",
-   "A gaze palsy that the doll's eye maneuver overcomes is above the pons; one that it cannot is in it",
-   "Pinpoint reactive pupils with absent horizontal gaze is a pontine hemorrhage until proved otherwise"
-  ]
- },
- "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
-  "PUBLIC EDITION - NO MESH: the 7 T probabilistic outline of this nucleus may not be redistributed and no openly licensed delineation of it has been built here yet, so the openly shareable build of the atlas describes the nucleus in full but draws no surface for it. The Harvard Ascending Arousal Network atlas (Edlow et al.) does publish an oral pontine reticular ROI under CC0."
- ],
- "citations": [
-  {
-   "ref": "oa-garcia-gomar-rbd-brainstem-connectivity"
-  },
-  {
-   "ref": "sp-reticular-formation"
-  },
-  {
-   "ref": "sp-pons"
-  },
-  {
-   "ref": "oa-edlow-aan-wakefulness-connectivity"
-  },
-  {
-   "ref": "oa-edlow-ascending-arousal-network"
-  }
- ],
- "tags": [
-  "horizontal gaze",
-  "startle",
-  "reticulospinal",
-  "PPRF"
- ],
- "status": "draft",
- "subsystem": "pons",
- "parent": "brainstem"
+  "status": "draft",
+  "subsystem": "pons",
+  "parent": "brainstem"
 }

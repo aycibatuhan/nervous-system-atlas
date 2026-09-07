@@ -1,161 +1,163 @@
 {
- "kind": "structure",
- "id": "nucleus-parabrachial-medial",
- "name": "Medial parabrachial nucleus",
- "synonyms": [
-  "MPB",
-  "medial parabrachial area",
-  "pneumotaxic center (with the Kölliker-Fuse nucleus)"
- ],
- "system": "brainstem",
- "meshIds": [
-  "nucleus-parabrachial-medial-l",
-  "nucleus-parabrachial-medial-r",
-  "nucleus-parabrachial-medial-anchor-l",
-  "nucleus-parabrachial-medial-anchor-r"
- ],
- "summary": "The medial parabrachial nucleus lies against the medial face of the superior cerebellar peduncle, just inside its lateral partner, and is the pontine taste and respiratory relay. In primates the gustatory information that reaches the rostral nucleus of the solitary tract is passed mainly straight to the thalamus, but the medial parabrachial nucleus remains part of the visceral afferent chain and carries taste, gastric and cardiorespiratory signals toward the hypothalamus and the amygdala. Together with the neighboring Kölliker-Fuse nucleus it forms the classical pneumotaxic center, the pontine group that limits the length of inspiration and smooths the switch from breathing in to breathing out; damage in this region produces apneustic breathing, a pattern of prolonged inspiratory gasps that localizes a lesion to the upper pons.",
- "anatomy": {
-  "location": "Dorsolateral tegmentum of the rostral pons medial to the superior cerebellar peduncle and to the lateral parabrachial nucleus, below the inferior colliculus and lateral to the locus coeruleus, extending from the isthmus to the level of the motor trigeminal nucleus. The Kölliker-Fuse nucleus lies at its ventrolateral corner and the mesencephalic trigeminal tract runs nearby. It is supplied by the superior cerebellar artery and long circumferential branches of the basilar artery.",
-  "subdivisions": []
- },
- "connections": {
-  "afferents": [
-   {
-    "from": "Rostral (gustatory) nucleus of the solitary tract",
-    "via": "solitarioparabrachial fibers"
-   },
-   {
-    "from": "Insular and infralimbic cortex",
-    "via": "descending corticofugal fibers"
-   },
-   {
-    "from": "Amygdala and hypothalamus",
-    "via": "descending limbic fibers"
-   }
+  "kind": "structure",
+  "id": "nucleus-parabrachial-medial",
+  "name": "Medial parabrachial nucleus",
+  "synonyms": [
+    "MPB",
+    "medial parabrachial area",
+    "pneumotaxic center (with the Kölliker-Fuse nucleus)"
   ],
-  "efferents": [
-   {
-    "to": "Ventral posteromedial thalamus and insular cortex",
-    "via": "ascending gustatory and visceral projection"
-   },
-   {
-    "to": "Ventral respiratory column and pre-Bötzinger complex",
-    "via": "descending respiratory fibers"
-   },
-   {
-    "to": "Lateral hypothalamus and central amygdala",
-    "via": "visceral limbic projection"
-   }
+  "system": "brainstem",
+  "meshIds": [
+    "nucleus-parabrachial-medial-l",
+    "nucleus-parabrachial-medial-r",
+    "nucleus-parabrachial-medial-anchor-l",
+    "nucleus-parabrachial-medial-anchor-r",
+    "nucleus-parabrachial-lateral-aan-l",
+    "nucleus-parabrachial-lateral-aan-r"
   ],
-  "pathways": [
-   "pathway-gustatory"
-  ]
- },
- "function": "The medial parabrachial nucleus receives the rostral, gustatory part of the nucleus of the solitary tract and the visceral afferents that report gastric distension, airway irritation and blood pressure, and projects to the ventral posteromedial thalamus, the lateral hypothalamus, the central amygdala and the insular cortex. Through these connections it contributes to the hedonic evaluation of food, to satiety and to conditioned taste aversion. Its respiratory role is exerted through dense reciprocal connections with the ventral respiratory column of the medulla and the pre-Bötzinger complex: parabrachial and Kölliker-Fuse neurons fire in phase with inspiration and terminate it, setting respiratory rate and the inspiratory to expiratory ratio, and they coordinate breathing with swallowing, vocalization and airway protection. Loss of this control with an intact medullary rhythm generator yields apneusis, while its ascending arm contributes to the sensation of dyspnea. The nucleus also receives descending input from the insula, the amygdala and the hypothalamus, which is how emotion changes the breathing pattern.",
- "bloodSupply": {
-  "arteries": [
-   "artery-basilar",
-   "arteries-pontine",
-   "artery-aica"
-  ],
-  "territories": [
-   "territory-basilar"
-  ]
- },
- "imaging": {
-  "bestView": [
-   {
-    "plane": "axial",
-    "mni": {
-     "meshId": "nucleus-parabrachial-medial-l"
-    },
-    "label": "medial parabrachial nucleus inside the superior cerebellar peduncle"
-   },
-   {
-    "plane": "coronal",
-    "mni": {
-     "meshId": "nucleus-parabrachial-medial-r"
-    },
-    "label": "upper pontine tegmentum at the pneumotaxic level"
-   }
-  ],
-  "normalAppearance": "Not separable from the lateral parabrachial nucleus or from surrounding tegmental gray on clinical MRI; the landmark is the medial edge of the superior cerebellar peduncle on axial T2 in the upper pons.",
-  "pathology": [
-   {
-    "pathology": "Upper pontine infarct or hemorrhage",
-    "modality": "MRI",
-    "finding": "Tegmental lesion with apneustic or cluster breathing, impaired taste and autonomic instability; breathing pattern is a bedside localizer.",
-    "sequence": "DWI"
-   },
-   {
-    "pathology": "Central hypoventilation syndromes",
-    "modality": "MRI",
-    "finding": "Structural imaging is typically normal; the abnormality is functional in the pontomedullary respiratory network.",
-    "sequence": "T2"
-   },
-   {
-    "pathology": "Brainstem encephalitis",
-    "modality": "MRI",
-    "finding": "Patchy FLAIR hyperintensity of the pontine tegmentum with respiratory irregularity, dysgeusia and cranial nerve signs.",
-    "sequence": "FLAIR"
-   }
-  ]
- },
- "clinical": {
-  "lesionEffects": [
-   {
-    "deficit": "Apneustic breathing with prolonged inspiratory pauses",
-    "side": "bilateral",
-    "mechanism": "Loss of the pontine inspiratory off-switch"
-   },
-   {
-    "deficit": "Loss or distortion of taste",
-    "side": "bilateral",
-    "mechanism": "Interruption of the ascending gustatory relay"
-   },
-   {
-    "deficit": "Impaired coordination of breathing with swallowing",
-    "side": "bilateral",
-    "mechanism": "Loss of parabrachial control over the ventral respiratory column"
-   }
-  ],
-  "examination": [
-   "Watch the breathing pattern for a full minute before touching the patient",
-   "Test taste with sweet and salt solutions on each side of the tongue",
-   "Observe a swallow and listen for a wet voice afterward"
-  ],
-  "syndromes": [
-   "syn-sca-infarct",
-   "syn-locked-in"
-  ],
-  "pearls": [
-   "Breathing pattern localizes: apneusis is upper pons, ataxic breathing is medulla, Cheyne-Stokes is hemispheric or diencephalic",
-   "The pneumotaxic center is a pair of parabrachial nuclei, not a single spot",
-   "Taste and breathing share a relay because both report on what is entering the airway"
-  ]
- },
- "pitfalls": [
-  "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
-  "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 47 mm3 per side, the volume published by Singh et al. (2019), centred in the dorsal pontine tegmentum of the upper pons, medial to the superior cerebellar peduncle, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid."
- ],
- "citations": [
-  {
-   "ref": "oa-singh-parabrachial-vestibular-vsm-atlas"
+  "summary": "The medial parabrachial nucleus lies against the medial face of the superior cerebellar peduncle, just inside its lateral partner, and is the pontine taste and respiratory relay. In primates the gustatory information that reaches the rostral nucleus of the solitary tract is passed mainly straight to the thalamus, but the medial parabrachial nucleus remains part of the visceral afferent chain and carries taste, gastric and cardiorespiratory signals toward the hypothalamus and the amygdala. Together with the neighboring Kölliker-Fuse nucleus it forms the classical pneumotaxic center, the pontine group that limits the length of inspiration and smooths the switch from breathing in to breathing out; damage in this region produces apneustic breathing, a pattern of prolonged inspiratory gasps that localizes a lesion to the upper pons.",
+  "anatomy": {
+    "location": "Dorsolateral tegmentum of the rostral pons medial to the superior cerebellar peduncle and to the lateral parabrachial nucleus, below the inferior colliculus and lateral to the locus coeruleus, extending from the isthmus to the level of the motor trigeminal nucleus. The Kölliker-Fuse nucleus lies at its ventrolateral corner and the mesencephalic trigeminal tract runs nearby. It is supplied by the superior cerebellar artery and long circumferential branches of the basilar artery.",
+    "subdivisions": []
   },
-  {
-   "ref": "sp-pons"
+  "connections": {
+    "afferents": [
+      {
+        "from": "Rostral (gustatory) nucleus of the solitary tract",
+        "via": "solitarioparabrachial fibers"
+      },
+      {
+        "from": "Insular and infralimbic cortex",
+        "via": "descending corticofugal fibers"
+      },
+      {
+        "from": "Amygdala and hypothalamus",
+        "via": "descending limbic fibers"
+      }
+    ],
+    "efferents": [
+      {
+        "to": "Ventral posteromedial thalamus and insular cortex",
+        "via": "ascending gustatory and visceral projection"
+      },
+      {
+        "to": "Ventral respiratory column and pre-Bötzinger complex",
+        "via": "descending respiratory fibers"
+      },
+      {
+        "to": "Lateral hypothalamus and central amygdala",
+        "via": "visceral limbic projection"
+      }
+    ],
+    "pathways": [
+      "pathway-gustatory"
+    ]
   },
-  {
-   "ref": "sp-nucleus-solitarius"
-  }
- ],
- "tags": [
-  "taste",
-  "respiration",
-  "apneusis"
- ],
- "status": "draft",
- "subsystem": "pons",
- "parent": "brainstem"
+  "function": "The medial parabrachial nucleus receives the rostral, gustatory part of the nucleus of the solitary tract and the visceral afferents that report gastric distension, airway irritation and blood pressure, and projects to the ventral posteromedial thalamus, the lateral hypothalamus, the central amygdala and the insular cortex. Through these connections it contributes to the hedonic evaluation of food, to satiety and to conditioned taste aversion. Its respiratory role is exerted through dense reciprocal connections with the ventral respiratory column of the medulla and the pre-Bötzinger complex: parabrachial and Kölliker-Fuse neurons fire in phase with inspiration and terminate it, setting respiratory rate and the inspiratory to expiratory ratio, and they coordinate breathing with swallowing, vocalization and airway protection. Loss of this control with an intact medullary rhythm generator yields apneusis, while its ascending arm contributes to the sensation of dyspnea. The nucleus also receives descending input from the insula, the amygdala and the hypothalamus, which is how emotion changes the breathing pattern.",
+  "bloodSupply": {
+    "arteries": [
+      "artery-basilar",
+      "arteries-pontine",
+      "artery-aica"
+    ],
+    "territories": [
+      "territory-basilar"
+    ]
+  },
+  "imaging": {
+    "bestView": [
+      {
+        "plane": "axial",
+        "mni": {
+          "meshId": "nucleus-parabrachial-medial-l"
+        },
+        "label": "medial parabrachial nucleus inside the superior cerebellar peduncle"
+      },
+      {
+        "plane": "coronal",
+        "mni": {
+          "meshId": "nucleus-parabrachial-medial-r"
+        },
+        "label": "upper pontine tegmentum at the pneumotaxic level"
+      }
+    ],
+    "normalAppearance": "Not separable from the lateral parabrachial nucleus or from surrounding tegmental gray on clinical MRI; the landmark is the medial edge of the superior cerebellar peduncle on axial T2 in the upper pons.",
+    "pathology": [
+      {
+        "pathology": "Upper pontine infarct or hemorrhage",
+        "modality": "MRI",
+        "finding": "Tegmental lesion with apneustic or cluster breathing, impaired taste and autonomic instability; breathing pattern is a bedside localizer.",
+        "sequence": "DWI"
+      },
+      {
+        "pathology": "Central hypoventilation syndromes",
+        "modality": "MRI",
+        "finding": "Structural imaging is typically normal; the abnormality is functional in the pontomedullary respiratory network.",
+        "sequence": "T2"
+      },
+      {
+        "pathology": "Brainstem encephalitis",
+        "modality": "MRI",
+        "finding": "Patchy FLAIR hyperintensity of the pontine tegmentum with respiratory irregularity, dysgeusia and cranial nerve signs.",
+        "sequence": "FLAIR"
+      }
+    ]
+  },
+  "clinical": {
+    "lesionEffects": [
+      {
+        "deficit": "Apneustic breathing with prolonged inspiratory pauses",
+        "side": "bilateral",
+        "mechanism": "Loss of the pontine inspiratory off-switch"
+      },
+      {
+        "deficit": "Loss or distortion of taste",
+        "side": "bilateral",
+        "mechanism": "Interruption of the ascending gustatory relay"
+      },
+      {
+        "deficit": "Impaired coordination of breathing with swallowing",
+        "side": "bilateral",
+        "mechanism": "Loss of parabrachial control over the ventral respiratory column"
+      }
+    ],
+    "examination": [
+      "Watch the breathing pattern for a full minute before touching the patient",
+      "Test taste with sweet and salt solutions on each side of the tongue",
+      "Observe a swallow and listen for a wet voice afterward"
+    ],
+    "syndromes": [
+      "syn-sca-infarct",
+      "syn-locked-in"
+    ],
+    "pearls": [
+      "Breathing pattern localizes: apneusis is upper pons, ataxic breathing is medulla, Cheyne-Stokes is hemispheric or diencephalic",
+      "The pneumotaxic center is a pair of parabrachial nuclei, not a single spot",
+      "Taste and breathing share a relay because both report on what is entering the airway"
+    ]
+  },
+  "pitfalls": [
+    "SEVEN-TESLA TEMPLATE: the outline shown here is the group probability map of the Brainstem Navigator thresholded at 0.35, not a boundary you can trace on a clinical scan. At 3 T the nucleus is invisible, and in an individual brain its true edge may sit a millimeter or two outside the surface drawn.",
+    "PUBLIC EDITION - LOCATION MARKER: the 7 T probabilistic outline of this nucleus may not be redistributed, so the openly shareable build of the atlas shows a landmark-anchored ellipsoid instead: an ellipsoid of about 47 mm3 per side, the volume published by Singh et al. (2019), centered in the dorsal pontine tegmentum of the upper pons, medial to the superior cerebellar peduncle, and clipped to the brainstem. It marks where the nucleus lies, not where its border runs -- do not read a shape, an edge or a neighbour relation off it, and note that its position is a textbook relation to open landmarks, not a measured centroid. In addition, the openly shareable build also shows the Harvard Ascending Arousal Network atlas v2.0 parabrachial-complex region of interest, which spans the medial and lateral nuclei together (Edlow et al. 2024, CC0), a group probabilistic label in MNI152 space that marks the location of the nucleus but not its exact borders."
+  ],
+  "citations": [
+    {
+      "ref": "oa-singh-parabrachial-vestibular-vsm-atlas"
+    },
+    {
+      "ref": "sp-pons"
+    },
+    {
+      "ref": "sp-nucleus-solitarius"
+    }
+  ],
+  "tags": [
+    "taste",
+    "respiration",
+    "apneusis"
+  ],
+  "status": "draft",
+  "subsystem": "pons",
+  "parent": "brainstem"
 }
