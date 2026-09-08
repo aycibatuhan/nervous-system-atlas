@@ -19,6 +19,28 @@ this file. When the repository is published, add link definitions of the form
 and replace the placeholder host with the real one.
 -->
 
+## [Unreleased]
+
+Work on `main` after the v1.0.0 tag.
+
+### Added
+
+- Six more screenshots, all of the MRI with something read on it: an axial through the internal capsule, a
+  coronal at the hippocampal body, a hemisected near-midline sagittal, the arcuate fasciculus over a lateral
+  sagittal slice with the tract atlas behind it, the arterial territories tinted on an axial slice, and the
+  slices continuing below the foramen magnum into the cord MRI.
+- The whole README translated into Turkish, after the English document, with a language line under each title.
+
+### Fixed
+
+- The content panel said "no 3D mesh in this edition" whenever no mesh carried the entry's own id, which is
+  wrong for an entry whose shapes belong to structures that are themselves entries (the spinal cord lights up
+  the white columns and the grey horns). The notice now appears only when the entry really has no geometry,
+  and distinguishes a shape this edition dropped for its licence from one no atlas provides at all.
+- `scripts/shots-public-edition.mjs` was asserting that the public edition has no cord grid and no cord
+  volumes, which stopped being true when `atlas-cord-public` gave it a cord MRI of its own, and its two
+  "no mesh" probes had since been given stand-ins. It passes again.
+
 ## [1.0.0] - 2026-09-08
 
 First public release. There is no earlier published version, so this section describes
