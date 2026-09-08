@@ -2,7 +2,7 @@
 
 **English** · [Türkçe](#klinik-nöroanatomi-atlası)
 
-A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI slices, arterial territories, traced pathways, a lesion mode that shows you what a syndrome does and why, plus clinical topics, a glossary and a quiz. Everything lives in one coordinate frame — MNI152NLin2009cAsym RAS millimetres — so the surfaces, the T1/T2 slices and the label overlays line up exactly, and below the foramen magnum the slices continue into a spinal cord MRI reformatted along the atlas's own cord. The text is original, and every entry cites open-access sources that anyone can read for free. It runs locally, from static files, with no server and no account.
+A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI slices, arterial territories, traced pathways, a lesion mode that shows you what a syndrome does and why, plus clinical topics, a glossary and a quiz. Everything lives in one coordinate frame — MNI152NLin2009cAsym RAS millimetres — so the surfaces, the T1/T2 slices and the label overlays line up exactly, and below the foramen magnum the slices continue into a spinal cord MRI reformatted along the atlas's own cord. Every entry cites open-access sources that anyone can read for free. It runs locally, from static files, with no server and no account.
 
 > **Not for clinical use.** This is an educational reference. Its structures are group-average templates and a registered specimen, not any patient's anatomy; its syndrome, imaging and management text is a teaching summary written from the cited sources and may be incomplete, out of date or wrong. Nothing in it is medical advice, and it must not be used to diagnose, treat or make decisions about a patient. Clinical decisions belong to qualified clinicians using current guidelines and the patient's own findings and imaging.
 
@@ -50,7 +50,7 @@ slices to it.
 
 ## Features
 
-- **One coordinate frame.** Meshes, T1/T2 volumes, label volumes and the cord MRI are all MNI152NLin2009cAsym RAS mm, so nothing has to be lined up by eye.
+- **One coordinate frame.** Meshes, T1/T2 volumes, label volumes and the cord MRI are all MNI152NLin2009cAsym RAS mm.
 - **Tree, search and selection.** Tri-state checkboxes per system and subsystem, an all-structures master switch, Alt-click to solo a group, and a search over structures, pathways and syndromes (`>` for syndromes only).
 - **3D view.** Orbit, pan and zoom toward the cursor; click a mesh or the MRI slice to select, double-click to frame it; eight camera presets on keys `1`–`8`. Physically based materials with an anatomical palette, and a **Quality** switch for ambient occlusion, soft shadows and anti-aliasing.
 - **Slices.** Axial, coronal and sagittal with T1/T2, peel modes, arterial-territory tint, label outlines and an "all labels" paint; the cord MRI switches itself on as soon as a slice reaches the foramen magnum, names the spinal level under the cursor and lets you click one to select that cord segment.
@@ -104,7 +104,7 @@ The substitutions are worth reading about — none of them is a like-for-like co
 
 ## Content and citations
 
-The prose is original, written entry by entry, and **every non-glossary entry cites open-access sources only**: StatPearls chapters on the NCBI Bookshelf, articles in PubMed Central, openly licensed reference pages. No printed textbook is cited anywhere in the shipped atlas, and no paywalled article. Today that is **2387 citations over 657 sources**, and a citation names the section it came from, read from the live chapter rather than guessed.
+**Every non-glossary entry cites open-access sources only**: StatPearls chapters on the NCBI Bookshelf, articles in PubMed Central, openly licensed reference pages. No printed textbook is cited anywhere in the shipped atlas, and no paywalled article. Today that is **2387 citations over 657 sources**, and a citation names the section it came from, read from the live chapter.
 
 `verified: true` on a bibliography entry is only ever written by a tool from live source metadata, never by hand. The build fails on an unknown reference, and `npm run citations:check` fails on a malformed citation, an unverified entry or an entry nothing cites. See [Content and citations](docs/content.md) for the schemas, the authoring tools and the rules.
 
@@ -116,7 +116,7 @@ All 825 entries' clinical prose is translated too, as overlays under `content/i1
 
 ![The atlas in Turkish: the structure tree and panel naming structures by their Latin terms with the English name beneath, the interface in Turkish, and the machine-assisted translation notice along the foot of the 3D view](docs/screenshots/turkish.webp)
 
-> **The Turkish clinical prose is a machine-assisted translation and is still under specialist review.** It reads as clinical Turkish and has been checked mechanically and for terminology, but it has not yet been reviewed by a Turkish neurologist. Where the two texts differ, the English is the reference. The app says so in Turkish mode, and an entry whose translation is missing or stale carries an *English* tag instead.
+> **The Turkish clinical prose is a machine-assisted translation and is still under specialist review.** It has been checked mechanically and for terminology, but not by a Turkish neurologist. Where the two texts differ, the English is the reference. The app says so in Turkish mode, and an entry whose translation is missing or stale carries an *English* tag instead.
 
 [The Turkish edition](docs/turkish-edition.md) covers the terminology table, the overlay format and the tooling.
 
@@ -146,7 +146,7 @@ python3 tools/i18n/prose.py check                 # the Turkish overlays against
 | Authored content (`content/`) | CC BY-SA 4.0 | [content/LICENSE](content/LICENSE) |
 | Generated data (`public/data/`) | CC BY-SA 4.0 | written by the pipeline into `public/data/LICENSE` |
 
-The prose is original. The meshes and volumes are **derivatives** of the third-party datasets listed in [NOTICE](NOTICE), used under their own licences, with changes: registration into MNI152NLin2009cAsym space, remeshing of the label masks through a signed-distance field, smoothing, decimation to per-class triangle budgets, welding of neighbouring parcels, relabelling and recolouring, and the construction of meshes no source atlas provides. Each source licence keeps applying to what is derived from it, alongside CC BY-SA 4.0.
+The meshes and volumes are **derivatives** of the third-party datasets listed in [NOTICE](NOTICE), used under their own licences, with changes: registration into MNI152NLin2009cAsym space, remeshing of the label masks through a signed-distance field, smoothing, decimation to per-class triangle budgets, welding of neighbouring parcels, relabelling and recolouring, and the construction of meshes no source atlas provides. Each source licence keeps applying to what is derived from it, alongside CC BY-SA 4.0.
 
 `NOTICE` is generated, never edited by hand — one block per dataset with its citation, licence and download URLs — and `npm run notice -- --check` fails if it is stale. Verbatim licence texts ship with the data in `public/data/licenses/`. In the app, **About** (or `#/about`) lists every source in the loaded build with its licence, its citation and a link to the full text.
 
@@ -182,7 +182,7 @@ Pull requests are welcome — read [CONTRIBUTING.md](CONTRIBUTING.md) first, esp
 
 *(This is the Turkish version of the document above. [Back to English](#clinical-neuroanatomy-atlas).)*
 
-Tarayıcıda çalışan üç boyutlu bir klinik nöroanatomi atlası: 592 mesh, eşzamanlı MR kesitleri, arter sulama alanları, izlenebilir yolaklar, bir sendromun neyi nasıl bozduğunu gösteren lezyon kipi, klinik konular, bir sözlük ve vaka soruları. Her şey tek bir koordinat çerçevesindedir (MNI152NLin2009cAsym RAS milimetre), bu yüzden yüzeyler, T1/T2 kesitleri ve etiket kaplamaları tam olarak çakışır; foramen magnumun altında kesitler, atlasın kendi omuriliği boyunca yeniden biçimlenmiş bir spinal kord MR'ına devam eder. Metinler özgündür ve her kayıt, herkesin ücretsiz okuyabileceği açık erişimli kaynaklara atıf verir. Uygulama yerelde, statik dosyalardan çalışır; sunucu da hesap da gerektirmez.
+Tarayıcıda çalışan üç boyutlu bir klinik nöroanatomi atlası: 592 mesh, eşzamanlı MR kesitleri, arter sulama alanları, izlenebilir yolaklar, bir sendromun neyi nasıl bozduğunu gösteren lezyon kipi, klinik konular, bir sözlük ve vaka soruları. Her şey tek bir koordinat çerçevesindedir (MNI152NLin2009cAsym RAS milimetre), bu yüzden yüzeyler, T1/T2 kesitleri ve etiket kaplamaları tam olarak çakışır; foramen magnumun altında kesitler, atlasın kendi omuriliği boyunca yeniden biçimlenmiş bir spinal kord MR'ına devam eder. Her kayıt, herkesin ücretsiz okuyabileceği açık erişimli kaynaklara atıf verir. Uygulama yerelde, statik dosyalardan çalışır; sunucu da hesap da gerektirmez.
 
 > **Klinik kullanım için değildir.** Bu atlas eğitim amaçlı bir başvuru kaynağıdır. İçindeki yapılar grup ortalaması şablonlar ve kayıtlanmış bir örnektir, hiçbir hastanın kendi anatomisi değildir; sendrom, görüntüleme ve tedavi metinleri ise belirtilen kaynaklardan yazılmış öğretim özetleridir ve eksik, güncelliğini yitirmiş ya da yanlış olabilir. Buradaki hiçbir bilgi tıbbi tavsiye değildir; hastaya tanı koymak, tedavi vermek ya da hastayla ilgili karar almak için kullanmayın. Bu kararlar, güncel kılavuzları ve hastanın kendi bulgularını ve görüntülerini kullanan yetkin hekimlere aittir.
 
@@ -228,7 +228,7 @@ Her kesit, meshlerin kayıtlandığı MR'ın kendisidir; böylece bir yapı hem 
 
 ## Özellikler
 
-- **Tek koordinat çerçevesi.** Meshler, T1/T2 hacimleri, etiket hacimleri ve kord MR'ı hep MNI152NLin2009cAsym RAS mm'dir; hiçbir şeyi gözle hizalamak gerekmez.
+- **Tek koordinat çerçevesi.** Meshler, T1/T2 hacimleri, etiket hacimleri ve kord MR'ı hep MNI152NLin2009cAsym RAS mm'dir.
 - **Ağaç, arama ve seçim.** Her sistem ve alt sistem için üç durumlu kutular, tüm yapıları açıp kapatan ana anahtar, bir grubu yalnız bırakmak için Alt+tıklama ve yapılar, yolaklar ve sendromlar üzerinde arama (`>` yalnızca sendromlar için).
 - **Üç boyutlu görünüm.** Döndürme, kaydırma ve imlece doğru yakınlaşma; bir meshe ya da MR kesitine tıklayarak seçme, çift tıklayarak çerçeveleme; `1`–`8` tuşlarında sekiz kamera ön ayarı. Anatomik paletli fiziksel tabanlı malzemeler ve ortam okluzyonu, yumuşak gölge ve kenar yumuşatma için bir **Kalite** düğmesi.
 - **Kesitler.** T1/T2 ile aksiyal, koronal ve sagital; soyma kipleri, sulama alanı renklendirmesi, etiket konturları ve "tüm etiketler" boyaması. Bir kesit foramen magnuma indiği anda kord MR'ı kendiliğinden açılır, imlecin altındaki spinal düzeyi adlandırır ve düzeye tıklayınca o kord segmentini seçer.
@@ -282,7 +282,7 @@ Karşılıkların hiçbiri birebir kopya değildir; her birinin gerekçesi [İki
 
 ## İçerik ve kaynaklar
 
-Metinler özgündür, kayıt kayıt yazılmıştır ve **sözlük dışındaki her kayıt yalnızca açık erişimli kaynaklara atıf verir**: NCBI Bookshelf üzerindeki StatPearls bölümleri, PubMed Central'daki makaleler, açık lisanslı başvuru sayfaları. Yayımlanan atlasın hiçbir yerinde basılı ders kitabına ya da ödeme duvarı ardındaki bir makaleye atıf yoktur. Bugün bu, **657 kaynak üzerinden 2387 atıf** demektir ve her atıf, tahmin edilerek değil canlı bölümden okunarak, geldiği bölümü adlandırır.
+**Sözlük dışındaki her kayıt yalnızca açık erişimli kaynaklara atıf verir**: NCBI Bookshelf üzerindeki StatPearls bölümleri, PubMed Central'daki makaleler, açık lisanslı başvuru sayfaları. Yayımlanan atlasın hiçbir yerinde basılı ders kitabına ya da ödeme duvarı ardındaki bir makaleye atıf yoktur. Bugün bu, **657 kaynak üzerinden 2387 atıf** demektir ve her atıf, canlı bölümden okunarak geldiği bölümü adlandırır.
 
 Bir kaynakça kaydındaki `verified: true` yalnızca bir araç tarafından, canlı kaynak üstverisinden yazılır; elle asla. Bilinmeyen bir kaynağa atıf derlemeyi durdurur; `npm run citations:check` ise bozuk bir atıfta, doğrulanmamış bir kayıtta ya da hiçbir yerden atıf almayan bir kayıtta hata verir. Şemalar, yazım araçları ve kurallar için [İçerik ve kaynaklar](docs/content.md).
 
@@ -294,7 +294,7 @@ Arayüz İngilizce ve Türkçedir (`src/i18n/en.ts` ve `src/i18n/tr.ts`, 293 diz
 
 ![Atlas Türkçe kipte: yapı ağacı ve panel, yapıları Latince adlarıyla, altında İngilizce adıyla gösteriyor; arayüz Türkçe ve üç boyutlu pencerenin altında makine destekli çeviri uyarısı](docs/screenshots/turkish.webp)
 
-> **Türkçe klinik metinler makine destekli çeviridir ve uzman incelemesi sürmektedir.** Metin klinik Türkçe olarak okunur, makineyle ve terminoloji açısından denetlenmiştir; ancak henüz bir Türk nöroloğun incelemesinden geçmemiştir. İki metin ayrıldığında İngilizce metin esastır. Uygulama bunu Türkçe kipte söyler; çevirisi eksik ya da eskimiş bir kayıt ise *English* etiketi taşır.
+> **Türkçe klinik metinler makine destekli çeviridir ve uzman incelemesi sürmektedir.** Makineyle ve terminoloji açısından denetlenmiştir; bir Türk nöroloğun incelemesinden ise henüz geçmemiştir. İki metin ayrıldığında İngilizce metin esastır. Uygulama bunu Türkçe kipte söyler; çevirisi eksik ya da eskimiş bir kayıt ise *English* etiketi taşır.
 
 Terminoloji tablosunu, kaplama biçimini ve araçları [Türkçe sürüm](docs/turkish-edition.md) anlatır.
 
@@ -324,7 +324,7 @@ python3 tools/i18n/prose.py check                 # Türkçe kaplamaların İngi
 | Yazılmış içerik (`content/`) | CC BY-SA 4.0 | [content/LICENSE](content/LICENSE) |
 | Üretilen veri (`public/data/`) | CC BY-SA 4.0 | işlem hattının yazdığı `public/data/LICENSE` |
 
-Metinler özgündür. Meshler ve hacimler, [NOTICE](NOTICE) dosyasında listelenen üçüncü taraf veri kümelerinin, kendi lisansları altında kullanılan **türevleridir**; yapılan değişiklikler: MNI152NLin2009cAsym uzayına kayıtlama, etiket maskelerinin işaretli mesafe alanı üzerinden yeniden meshlenmesi, yumuşatma, sınıf başına üçgen bütçesine indirgeme, komşu parsellerin kaynaştırılması, yeniden etiketleme ve renklendirme ve hiçbir kaynak atlasın vermediği meshlerin kurulması. Her kaynak lisansı, kendisinden türetilene CC BY-SA 4.0 ile birlikte uygulanmaya devam eder.
+Meshler ve hacimler, [NOTICE](NOTICE) dosyasında listelenen üçüncü taraf veri kümelerinin, kendi lisansları altında kullanılan **türevleridir**; yapılan değişiklikler: MNI152NLin2009cAsym uzayına kayıtlama, etiket maskelerinin işaretli mesafe alanı üzerinden yeniden meshlenmesi, yumuşatma, sınıf başına üçgen bütçesine indirgeme, komşu parsellerin kaynaştırılması, yeniden etiketleme ve renklendirme ve hiçbir kaynak atlasın vermediği meshlerin kurulması. Her kaynak lisansı, kendisinden türetilene CC BY-SA 4.0 ile birlikte uygulanmaya devam eder.
 
 `NOTICE` üretilir, elle düzenlenmez; her veri kümesi için atıf, lisans ve indirme adresleriyle bir blok içerir ve `npm run notice -- --check` dosya eskidiyse hata verir. Lisans metinlerinin tamamı veriyle birlikte `public/data/licenses/` altında gider. Uygulamada **Hakkında** (ya da `#/about`), yüklü derlemedeki her kaynağı lisansı, atfı ve tam metin bağlantısıyla listeler.
 
