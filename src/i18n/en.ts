@@ -142,6 +142,7 @@ export const en = {
   'content.empty.title': 'Select a structure',
   'content.empty.body': 'Click a mesh in the 3D view, click the MRI slice, or pick a structure from the tree on the left.',
   'content.hover': 'Hover: ',
+  'content.noMeshAnywhere': 'No 3D shape for this structure: no source atlas provides one, in either edition. The text, imaging notes and clinical links below are unchanged.',
   'content.noMesh': 'No 3D mesh in this edition — the atlas this structure was segmented from may not be redistributed. The text, imaging notes and clinical links below are unchanged.',
   'content.noContent.before': 'No authored content yet for ',
   'content.noContent.after': '.',

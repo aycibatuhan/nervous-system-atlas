@@ -94,7 +94,16 @@ export class ContentPanel {
       h('div', {}, h('h2', {}, name.primary, secondaryName(name)), h('div', { class: 'crumbs' }, crumbs + latin)));
     this.body.append(head);
     // this edition has the text but not the shape: the atlas the mesh came from may not be redistributed
-    if (!mesh) this.body.append(h('p', { class: 'muted no-mesh', 'data-testid': 'no-mesh' }, t('content.noMesh')));
+    // "no mesh in this edition" only when the entry really has none. An entry can also be opened without a
+    // selected mesh because its shapes belong to other structures (the spinal cord lights up the white columns
+    // and the grey horns, each of which is a structure in its own right); the bundle has already dropped any
+    // mesh id this edition does not ship, so a non-empty meshIds means there is geometry to show.
+    const ownMeshes = ((entry?.['meshIds'] as string[] | undefined) ?? []).filter((id) => this.app.registry.byId.has(id));
+    if (!mesh && !ownMeshes.length) {
+      // Two different facts: this edition dropped the shape, or no atlas ever provided one.
+      const dropped = entry?.['meshesDropped'] === true;
+      this.body.append(h('p', { class: 'muted no-mesh', 'data-testid': 'no-mesh' }, t(dropped ? 'content.noMesh' : 'content.noMeshAnywhere')));
+    }
     // where the geometry came from: every mesh of this entry, with its dataset and licence, linked to #/about
     const meshIds = [...(mesh ? [mesh.id] : []), ...(((entry?.['meshIds'] as string[] | undefined) ?? []).filter((m) => m !== mesh?.id))];
     const src = meshIds.length ? sourceLine(this.app, meshIds) : null;

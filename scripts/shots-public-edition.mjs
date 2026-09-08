@@ -2,14 +2,17 @@
 // Serve it first:  npx vite preview --outDir dist --port 5183
 // Usage:           node scripts/shots-public-edition.mjs [baseURL]
 //
-// Checks: no console/page errors; the manifest really is the public one; two entries that genuinely have no
-// mesh in this edition still open their content and show the "no mesh in this edition" notice; no Harvard-Oxford
-// gyrus mesh id survives in the manifest; the cord MRI toggle is hidden because grids.cord is gone.
+// Checks: no console/page errors; the manifest really is the public one; the entries whose shape this edition
+// drops still open their content and say so; no Harvard-Oxford gyrus mesh id survives in the manifest; and the
+// cord MRI is the public edition's own -- composed from openly licensed data by atlas-cord-public, on
+// grids.cord, with the toggle available (it used to be absent here, when dropping PAM50 left no cord at all).
 //
-// The "no mesh" probes have to be picked with care, because most of the entries that lost a mesh have since been
+// The "no mesh" probes have to be picked with care, because nearly every entry that lost a mesh has since been
 // given an openly licensed stand-in: gyrus-precentral has the CerebrA/DKT parcels, the locus coeruleus has the
-// Dahl meta mask, the parabrachial, raphe and viscero-sensory-motor entries have landmark-anchored markers, and
-// the cord blocks have their vertebral-landmark variant. The two used below have none.
+// Dahl meta mask, the parabrachial, raphe, viscero-sensory-motor and reticular entries have landmark-anchored
+// markers, the laterodorsal tegmental nucleus has its AAN volume, and the cord blocks have their
+// vertebral-landmark variant. Three entries are left whose shape this edition really does drop, and they are
+// the ones the bundle marks `meshesDropped`.
 import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 
@@ -43,6 +46,7 @@ const facts = await page.evaluate(() => {
     cordGrid: !!m.grids?.cord,
     hasHO: m.meshes.some((x) => x.source === 'harvard_oxford'),
     hasBSN: m.meshes.some((x) => x.source === 'brainstem_navigator'),
+    cordSource: m.grids?.cord?.source ?? null,
     authored: Object.keys(window.atlas.content?.structures ?? {}).length,
   };
 });
@@ -50,19 +54,23 @@ console.log(JSON.stringify(facts, null, 1));
 check(facts.edition === 'public', `manifest declares the public edition (${facts.edition})`);
 check(facts.nc === 0, `no mesh is flagged nc (${facts.nc})`);
 check(!facts.hasHO && !facts.hasBSN, 'no Harvard-Oxford or Brainstem Navigator meshes');
-check(!facts.cordGrid, 'grids.cord is absent');
-check(!facts.volumes.some((v) => v.startsWith('cord_') || v === 'labels_spine'), 'no cord volumes');
+// The cord MRI here is the public edition's own: PAM50 is dropped and atlas-cord-public composes a
+// replacement from spine-generic and the Fudan whole-spine data, on the same grids.cord slot.
+check(!!facts.cordGrid, 'grids.cord is present (the composed public cord)');
+check(facts.cordSource !== 'pam50', `the cord does not come from PAM50 (${facts.cordSource})`);
+check(facts.volumes.includes('cord_t2') && facts.volumes.includes('labels_spine'), 'the cord volumes ship');
+check(!facts.volumes.includes('cord_t1'), 'no cord_t1: only PAM50 had one');
 check(facts.authored > 300, `content is still complete (${facts.authored} authored structures)`);
 await shot('01-home');
 
-// ---- 2. the cord MRI toggle is hidden when there is no cord grid
+// ---- 2. the cord MRI toggle is offered, because this edition has a cord to show
 const cordVisible = await page.locator('label.cord-mri').isVisible().catch(() => false);
-check(!cordVisible, 'the cord MRI toggle is hidden');
+check(cordVisible, 'the cord MRI toggle is available');
 
 // ---- 3. two entries with no mesh in this edition: the content opens, the notice shows.
 // Both are Brainstem Navigator nuclei with no open delineation and no landmark-anchored stand-in.
-for (const [id, label] of [['reticular-formation-medullary-inferior', '02-reticular-formation-medullary-inferior'],
-                           ['nucleus-laterodorsal-tegmental', '03-nucleus-laterodorsal-tegmental']]) {
+for (const [id, label] of [['cervical-enlargement', '02-cervical-enlargement'],
+                           ['intermediolateral-column', '03-intermediolateral-column']]) {
   await page.goto(`${base}/#/structure/${id}`);
   await ready();
   await page.waitForTimeout(800);

@@ -14,6 +14,8 @@ export interface ContentEntryBase {
   summary?: string; citations: Citation[]; status?: string; html?: Record<string, string>;
   /** 'tr' when the entry comes from the translated bundle */
   lang?: string;
+  /** the entry had meshes, and this edition's licence filter dropped every one of them */
+  meshesDropped?: boolean;
 }
 export interface ContentBundle {
   generated: string;

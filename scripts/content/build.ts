@@ -264,7 +264,13 @@ for (const { e } of entries) {
   if (droppedIds.size) {
     const had = Array.isArray((resolved as { meshIds?: unknown }).meshIds) && (resolved as { meshIds: string[] }).meshIds.length > 0;
     walkMeshIdKeys(resolved, () => { meshIdsDropped++; });
-    if (had && !(resolved as { meshIds: string[] }).meshIds.length) emptied.push(e.id);
+    // An entry that had shapes and lost every one of them to this edition's licence filter says so, so the
+    // panel can tell "the atlas this was segmented from may not be redistributed" apart from "no atlas has
+    // ever segmented this", which is a different sentence and true of about twenty entries in both editions.
+    if (had && !(resolved as { meshIds: string[] }).meshIds.length) {
+      emptied.push(e.id);
+      (resolved as { meshesDropped?: boolean }).meshesDropped = true;
+    }
   }
   const entry = { ...resolved, html };
   const target = e.kind === 'structure' || e.kind === 'cranial-nerve' ? bundle.structures : e.kind === 'pathway' ? bundle.pathways : e.kind === 'syndrome' ? bundle.syndromes : e.kind === 'glossary' ? bundle.glossary : e.kind === 'topic' ? bundle.topics : bundle.quiz;

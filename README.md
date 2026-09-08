@@ -1,5 +1,7 @@
 # Clinical Neuroanatomy Atlas
 
+**English** · [Türkçe](#klinik-nöroanatomi-atlası)
+
 A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI slices, arterial territories, traced pathways, a lesion mode that shows you what a syndrome does and why, plus clinical topics, a glossary and a quiz. Everything lives in one coordinate frame — MNI152NLin2009cAsym RAS millimetres — so the surfaces, the T1/T2 slices and the label overlays line up exactly, and below the foramen magnum the slices continue into a spinal cord MRI reformatted along the atlas's own cord. The text is original, and every entry cites open-access sources that anyone can read for free. It runs locally, from static files, with no server and no account.
 
 > **Not for clinical use.** This is an educational reference. Its structures are group-average templates and a registered specimen, not any patient's anatomy; its syndrome, imaging and management text is a teaching summary written from the cited sources and may be incomplete, out of date or wrong. Nothing in it is medical advice, and it must not be used to diagnose, treat or make decisions about a patient. Clinical decisions belong to qualified clinicians using current guidelines and the patient's own findings and imaging.
@@ -16,6 +18,21 @@ A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI 
 | **Pathways.** Neuron chain, where it crosses, and every station as a clickable waypoint. | **Cranial nerves.** Nuclei, course, branches, reflexes, bedside tests and localising signs. |
 | ![A clinical vignette asking where the lesion is, with five answer options](docs/screenshots/quiz.webp) | ![The same syndrome page in Turkish, with Latin structure names and the machine-assisted translation notice along the foot of the view](docs/screenshots/turkish-syndrome.webp) |
 | **Quiz.** 60 original vignettes; answering spotlights the structures in 3D. | **Turkish.** The whole interface and all the clinical prose, structures named in Latin. |
+
+## Sections, tracts and territories
+
+Every slice is the same MRI the meshes are registered to, so a structure can be read on the section and in
+three dimensions at once. Click the slice to select what is under the cursor, or click a structure to move the
+slices to it.
+
+| | |
+|---|---|
+| ![Axial T1 through the internal capsule at z = 16 mm, the caudate and thalamus drawn over the slice and the left internal capsule outlined, its content panel open on the right](docs/screenshots/axial-capsule.webp) | ![Coronal T1 at the hippocampal body, the lateral ventricles in blue and the hippocampi and amygdalae in pink over the slice, the left hippocampus outlined](docs/screenshots/coronal-temporal.webp) |
+| **Axial, through the internal capsule.** The label overlay paints the deep grey nuclei on the MRI; the selected structure is outlined. | **Coronal, at the hippocampus.** The temporal horn, the hippocampi and the amygdalae on the section that shows them. |
+| ![Near-midline sagittal T1 with the left hemisphere peeled away, showing the corpus callosum, the lateral ventricle, the brainstem and the cerebellum painted on the section](docs/screenshots/sagittal-midline.webp) | ![The left arcuate fasciculus arching over a sagittal T1 at x = -30 mm, with the tract atlas painted faintly on the slice and the tract tree open on the left](docs/screenshots/tracts.webp) |
+| **Sagittal, hemisected.** Peel mode hides everything on one side of the plane, so you look at the cut surface with the MRI behind it. | **Tracts.** Sixty white-matter bundles from the HCP1065 atlas, in 3D and painted on the slice. |
+| ![Axial T1 tinted with the arterial territories, anterior cerebral in orange, middle cerebral in pink, posterior cerebral in blue, with the arteries in 3D](docs/screenshots/territories.webp) | ![The sagittal slice continuing below the foramen magnum into the cord MRI, the cervical cord segment outlined in orange and the thoracic segment in green](docs/screenshots/cord-mri.webp) |
+| **Arterial territories.** The territory tint answers "which vessel would do this?" on the section itself. | **The cord.** Below the foramen magnum the slices continue into a cord MRI reformatted along the atlas's own cord, with the spinal levels painted. |
 
 ## What is in it
 
@@ -44,7 +61,7 @@ A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI 
 ## Quick start
 
 ```bash
-git clone <this repo> && cd nervous-system-atlas
+git clone https://github.com/aycibatuhan/nervous-system-atlas.git && cd nervous-system-atlas
 npm ci
 npm run dev            # http://localhost:5173
 ```
@@ -156,3 +173,181 @@ The prose is original. The meshes and volumes are **derivatives** of the third-p
 ## Contributing, security and contact
 
 Pull requests are welcome — read [CONTRIBUTING.md](CONTRIBUTING.md) first, especially the two-branch layout and what must never be committed. Licence, redistribution or data-integrity concerns go to the address in [SECURITY.md](SECURITY.md) rather than a public issue. Clinically wrong or dangerous content is an ordinary issue, and a welcome one.
+
+---
+
+<a id="klinik-nöroanatomi-atlası"></a>
+
+# Klinik Nöroanatomi Atlası
+
+*(This is the Turkish version of the document above. [Back to English](#clinical-neuroanatomy-atlas).)*
+
+Tarayıcıda çalışan üç boyutlu bir klinik nöroanatomi atlası: 592 mesh, eşzamanlı MR kesitleri, arter sulama alanları, izlenebilir yolaklar, bir sendromun neyi nasıl bozduğunu gösteren lezyon kipi, klinik konular, bir sözlük ve vaka soruları. Her şey tek bir koordinat çerçevesindedir (MNI152NLin2009cAsym RAS milimetre), bu yüzden yüzeyler, T1/T2 kesitleri ve etiket kaplamaları tam olarak çakışır; foramen magnumun altında kesitler, atlasın kendi omuriliği boyunca yeniden biçimlenmiş bir spinal kord MR'ına devam eder. Metinler özgündür ve her kayıt, herkesin ücretsiz okuyabileceği açık erişimli kaynaklara atıf verir. Uygulama yerelde, statik dosyalardan çalışır; sunucu da hesap da gerektirmez.
+
+> **Klinik kullanım için değildir.** Bu atlas eğitim amaçlı bir başvuru kaynağıdır. İçindeki yapılar grup ortalaması şablonlar ve kayıtlanmış bir örnektir, hiçbir hastanın kendi anatomisi değildir; sendrom, görüntüleme ve tedavi metinleri ise belirtilen kaynaklardan yazılmış öğretim özetleridir ve eksik, güncelliğini yitirmiş ya da yanlış olabilir. Buradaki hiçbir bilgi tıbbi tavsiye değildir; hastaya tanı koymak, tedavi vermek ya da hastayla ilgili karar almak için kullanmayın. Bu kararlar, güncel kılavuzları ve hastanın kendi bulgularını ve görüntülerini kullanan yetkin hekimlere aittir.
+
+![Atlasın açılış görünümü: üç boyutlu pencerede korteks yüzeyi ve damarlar, solda yapı ağacı, altta kesit denetimleri](docs/screenshots/overview.webp)
+
+## Nasıl görünüyor
+
+| | |
+|---|---|
+| ![Derin gri çekirdeklerin boyandığı aksiyal T1 kesiti, putamen turuncu konturla işaretli, sağda içerik paneli açık](docs/screenshots/slices-mri.webp) | ![Lezyon kipinde lateral medüller sendrom: sahne yalnızca tutulan yapılara indirgenmiş, sol medullada lezyon işareti, defisit tablosu bulguları tek tek geziyor](docs/screenshots/syndrome-wallenberg.webp) |
+| **Kesit ve üç boyut aynı çerçevede.** MR'a tıklayarak yapıyı seçin ya da bir yapıya tıklayarak kesitleri oraya taşıyın. | **Lezyon kipi.** Sendrom, sahneyi tuttuğu yapılara indirger ve defisitleri sırayla gösterir. |
+| ![Tractus corticospinalis lateralis'in nöron zinciri, çaprazlaşması ve numaralı seyri sağ panelde](docs/screenshots/pathway.webp) | ![Alttan bakışta kranial sinirler ve arterler; nervus trigeminus seçili, seyri, çekirdekleri ve dalları listeleniyor](docs/screenshots/cranial-nerves.webp) |
+| **Yolaklar.** Nöron zinciri, nerede çaprazlaştığı ve her durağı tıklanabilir bir ara nokta olarak. | **Kranial sinirler.** Çekirdekler, seyir, dallar, refleksler, yatak başı testler ve lokalize edici bulgular. |
+| ![Lezyonun yerini soran bir klinik vaka, beş seçenekle](docs/screenshots/quiz.webp) | ![Aynı sendrom sayfası Türkçe: Latince yapı adları ve makine destekli çeviri uyarısı](docs/screenshots/turkish-syndrome.webp) |
+| **Vaka soruları.** 60 özgün vaka; yanıtlayınca ilgili yapılar üç boyutta öne çıkar. | **Türkçe.** Arayüzün tamamı ve bütün klinik metinler, yapı adları Latince. |
+
+## Kesitler, traktuslar ve sulama alanları
+
+Her kesit, meshlerin kayıtlandığı MR'ın kendisidir; böylece bir yapı hem kesitte hem üç boyutta aynı anda okunur. Kesite tıklayınca imlecin altındaki yapı seçilir, bir yapıya tıklayınca kesitler ona taşınır.
+
+| | |
+|---|---|
+| ![z = 16 mm'de capsula interna düzeyinden aksiyal T1; nucleus caudatus ve thalamus kesitin üzerinde, sol capsula interna konturlu](docs/screenshots/axial-capsule.webp) | ![Hippocampus gövdesi düzeyinde koronal T1; yan ventriküller mavi, hippocampus ve amygdala pembe, sol hippocampus konturlu](docs/screenshots/coronal-temporal.webp) |
+| **Aksiyal, capsula interna düzeyi.** Etiket kaplaması derin gri çekirdekleri MR'ın üzerine boyar; seçili yapı konturlanır. | **Koronal, hippocampus düzeyi.** Cornu temporale, hippocampus ve amygdala, onları gösteren kesitte. |
+| ![Orta hatta yakın sagital T1; sol yarım küre soyulmuş, corpus callosum, yan ventrikül, beyin sapı ve serebellum kesit üzerinde boyanmış](docs/screenshots/sagittal-midline.webp) | ![x = -30 mm'de sagital T1 üzerinde kavis çizen sol fasciculus arcuatus; traktus atlası kesite soluk boyanmış, solda traktus ağacı açık](docs/screenshots/tracts.webp) |
+| **Sagital, hemiseksiyon.** Soyma kipi düzlemin bir yanındaki her şeyi gizler; kesit yüzeyine arkadaki MR ile birlikte bakarsınız. | **Traktuslar.** HCP1065 atlasından altmış ak madde demeti, üç boyutta ve kesitin üzerinde boyalı. |
+| ![Arter sulama alanlarıyla renklendirilmiş aksiyal T1: arteria cerebri anterior turuncu, media pembe, posterior mavi; arterler üç boyutta](docs/screenshots/territories.webp) | ![Sagital kesit foramen magnumun altında spinal kord MR'ına devam ediyor; servikal segment turuncu konturlu, torakal segment yeşil](docs/screenshots/cord-mri.webp) |
+| **Sulama alanları.** "Hangi damar bunu yapardı?" sorusunu kesitin kendisinde yanıtlar. | **Omurilik.** Foramen magnumun altında kesitler, atlasın kendi kordonu boyunca yeniden biçimlenmiş bir kord MR'ına devam eder; spinal düzeyler boyanmıştır. |
+
+## İçindekiler
+
+| Tür | Sayı | Not |
+|---|---|---|
+| Yapılar | 379 | derin serebral venler, kord segmentleri, loblar ve giruslar, hippokampal alt alanlar, bazal ön beyin, talamik ve hipotalamik çekirdekler, beyin sapı çekirdekleri, serebellar lobüller, ak madde traktusları, arter sulama alanları, ventriküller, meninksler, arterler, periferik ve kutanöz sinirler, otonom yapılar |
+| Kranial sinirler | 12 | çekirdekler, seyir, dallar, refleksler, yatak başı testler, lokalize edici bulgular |
+| Yolaklar | 25 | nöron zinciri, çaprazlaşma, tıklanabilir ara noktalar, düzeye göre lezyon etkileri |
+| Sendromlar | 125 | lokalizasyon, anatomik zeminiyle defisitler, taraf mantığı, görüntüleme, ayırıcı tanılar, tedavi incileri |
+| Konular | 19 | gelişim, BOS ve kan-beyin bariyeri, nörotransmitterler, uyku ve EEG, epilepsi, baş ağrısı, demans, hareket bozuklukları, nöromusküler desenler, pediatrik sendromlar, lokalizasyon, görüntüleme, inme, enfeksiyon, tümörler, lökodistrofiler, sinir hasarı, kortikal katmanlar, koma |
+| Sözlük | 205 | |
+| Vaka soruları | 60 | özgün vakalar; yanıt, ilgili yapıları üç boyutta öne çıkarır |
+| Mesh | 592 açık / 662 özel | etiket maskelerinden yeniden meshlenen MNI atlasları, VENAT venöz atlası, işaret noktalarıyla kayıtlanan BodyParts3D ve Z-Anatomy geometrisi ve hiçbir atlasın vermediği, burada kurulan meshler (iki sürümde de 12, açık sürümde 40); tam ayrıntıda 36 MB, ilk boyamada yaklaşık 3,5 MB |
+| Atıflar | 2387 | 825 kaydın tamamında, 657 açık erişimli kaynağa |
+
+## Özellikler
+
+- **Tek koordinat çerçevesi.** Meshler, T1/T2 hacimleri, etiket hacimleri ve kord MR'ı hep MNI152NLin2009cAsym RAS mm'dir; hiçbir şeyi gözle hizalamak gerekmez.
+- **Ağaç, arama ve seçim.** Her sistem ve alt sistem için üç durumlu kutular, tüm yapıları açıp kapatan ana anahtar, bir grubu yalnız bırakmak için Alt+tıklama ve yapılar, yolaklar ve sendromlar üzerinde arama (`>` yalnızca sendromlar için).
+- **Üç boyutlu görünüm.** Döndürme, kaydırma ve imlece doğru yakınlaşma; bir meshe ya da MR kesitine tıklayarak seçme, çift tıklayarak çerçeveleme; `1`–`8` tuşlarında sekiz kamera ön ayarı. Anatomik paletli fiziksel tabanlı malzemeler ve ortam okluzyonu, yumuşak gölge ve kenar yumuşatma için bir **Kalite** düğmesi.
+- **Kesitler.** T1/T2 ile aksiyal, koronal ve sagital; soyma kipleri, sulama alanı renklendirmesi, etiket konturları ve "tüm etiketler" boyaması. Bir kesit foramen magnuma indiği anda kord MR'ı kendiliğinden açılır, imlecin altındaki spinal düzeyi adlandırır ve düzeye tıklayınca o kord segmentini seçer.
+- **Lezyon kipi.** `#/syndrome/<id>` sahneyi karartır, tutulan yapıları öne çıkarır, lezyon işaretini yerleştirir ve defisitleri sırayla gezer; **Yansıt** lezyonu diğer tarafa taşır.
+- **İki dil.** Araç çubuğundaki **TR / EN** düğmesi ya da `L` ile İngilizce ve Türkçe. Seçim adres çubuğunda tutulur, böylece bir bağlantı kopyalandığı dilde açılır.
+- **Her şeyin adresi var.** `#/structure/<id>`, `#/pathway/<id>`, `#/syndrome/<id>?step=n&side=l`, `#/topic/<id>`, `#/glossary`, `#/quiz`, `#/about`. Kısayollar için `?` tuşuna basın.
+
+## Hızlı başlangıç
+
+```bash
+git clone https://github.com/aycibatuhan/nervous-system-atlas.git && cd nervous-system-atlas
+npm ci
+npm run dev            # http://localhost:5173
+```
+
+Bu, uygulamayı çalıştırır; ancak yeni bir klonda **veri yoktur**: `public/data/` altındaki meshler, MR hacimleri, etiket tabloları ve `manifest.json`, açık lisanslı kaynak atlaslardan Python işlem hattıyla üretilir ve depoya konamayacak kadar büyüktür. Üretmek için:
+
+```bash
+cd pipeline && uv sync && cd ..
+uv run --project pipeline atlas-build      # indirme → hacimler → meshler → etiketler → manifest → QA
+node scripts/check-data.ts                 # üretilen verinin bütünlük denetimi
+npm run content                            # content/ dizinini public/data/content.json içine paketler
+npm run dev
+```
+
+Bu adım birkaç GB indirir ve zaman alır. Adımları, isteğe bağlı ekleri ve her birinin neye ihtiyaç duyduğunu [Verinin üretilmesi](docs/pipeline.md) anlatır.
+
+Yayımlanabilir bir derleme için:
+
+```bash
+npm run build          # açık sürümü dist/ içine derler, son adımı yeniden dağıtım denetimidir
+npm run check-tree     # ve hiç veri gerektirmeyen depo denetimi
+```
+
+## İki sürüm
+
+Atlas aynı ağaçtan iki kez derlenir.
+
+**Açık sürüm** yeniden dağıtılabilen sürümdür (kod Apache-2.0, veri ve içerik CC BY-SA 4.0) ve her yerde varsayılandır: `npm run dev` onu sunar, `npm run build` onu `dist/` içine derler ve `scripts/check-public.ts` yayımlanmadan önce bu derlemeyi denetler. **Özel sürüm** buna ek olarak, lisansı ticari olmayan kullanımla sınırlı ya da türev dosyaların aktarılmasını yasaklayan dört veri kümesini içerir; bu yüzden onu derleyen makineden hiç çıkmaz: `npm run dev:private`, `npm run build:private`.
+
+| Veri kümesi | Lisans | Neden yayımlanamaz | Açık sürümdeki karşılığı |
+|---|---|---|---|
+| Harvard-Oxford (FSL) | `FSL-NC` | yalnızca ticari olmayan kullanım | CerebrA/DKT kortikal parselleri (CC0) |
+| Diedrichsen serebellum atlası | `CC-BY-NC-3.0` | yalnızca ticari olmayan kullanım | kendi şablonumuzun FastSurfer CerebNet bölütlemesi (CC BY-SA 4.0) |
+| Brainstem Navigator 7 T çekirdekleri | `BrainstemNavigator-NC-ND` | türev dosyalar kurum dışına çıkamaz | Dahl locus coeruleus meta-maskesi (CC BY 4.0) ve yayımlanmış hacimlerden kurulan işaret noktası tabanlı belirteçler |
+| PAM50 kord şablonu | `PAM50-unlicensed` | deposunda hiçbir lisans yok | burada spine-generic ve Fudan tüm-omurga verisinden birleştirilen bir kord MR'ı (CC BY 4.0) |
+
+Hiçbir şey adına göre ayıklanmaz: bir veri kümesi, lisans kaydında `nc: true` ya da `no_redistribution: true` taşıyorsa açık sürümden çıkar. Bu dördü `restricted` indirme grubundadır; `atlas-download` onları yalnızca `private` dalında ya da `ATLAS_ALLOW_RESTRICTED=1` ile indirir, böylece bu dalın düz bir klonu paylaşamayacağı veriyi üretemez. Sonuçta açık sürüm özel sürümden 202 mesh eksiktir ve yerine 132 karşılık koyar: 592'ye karşı 662.
+
+Karşılıkların hiçbiri birebir kopya değildir; her birinin gerekçesi [İki sürüm](docs/editions.md) içindedir.
+
+## İçerik ve kaynaklar
+
+Metinler özgündür, kayıt kayıt yazılmıştır ve **sözlük dışındaki her kayıt yalnızca açık erişimli kaynaklara atıf verir**: NCBI Bookshelf üzerindeki StatPearls bölümleri, PubMed Central'daki makaleler, açık lisanslı başvuru sayfaları. Yayımlanan atlasın hiçbir yerinde basılı ders kitabına ya da ödeme duvarı ardındaki bir makaleye atıf yoktur. Bugün bu, **657 kaynak üzerinden 2387 atıf** demektir ve her atıf, tahmin edilerek değil canlı bölümden okunarak, geldiği bölümü adlandırır.
+
+Bir kaynakça kaydındaki `verified: true` yalnızca bir araç tarafından, canlı kaynak üstverisinden yazılır; elle asla. Bilinmeyen bir kaynağa atıf derlemeyi durdurur; `npm run citations:check` ise bozuk bir atıfta, doğrulanmamış bir kayıtta ya da hiçbir yerden atıf almayan bir kayıtta hata verir. Şemalar, yazım araçları ve kurallar için [İçerik ve kaynaklar](docs/content.md).
+
+## Türkçe sürüm
+
+Arayüz İngilizce ve Türkçedir (`src/i18n/en.ts` ve `src/i18n/tr.ts`, 293 dizge; Türkçe tablo İngilizcesine göre tiplenmiştir, bu yüzden eksik bir anahtar tip denetimini düşürür). Türkçe kipte yapılar, kranial sinirler ve yolaklar Türk tıp eğitiminin adlandırdığı gibi, FIPAT'ın *Terminologia Neuroanatomica* ve *Terminologia Anatomica 2* listelerinden gelen Latince terimleriyle adlandırılır; İngilizce ad ikinci satırda kalır.
+
+825 kaydın klinik metinlerinin tamamı da çevrilmiştir. Çeviriler `content/i18n/tr/` altında, üretildikleri İngilizce metnin özetine (hash) sabitlenmiş kaplamalar olarak durur; böylece İngilizce metin değiştiğinde çeviri sessizce yanlış kalmak yerine "eskimiş" olarak işaretlenir.
+
+![Atlas Türkçe kipte: yapı ağacı ve panel, yapıları Latince adlarıyla, altında İngilizce adıyla gösteriyor; arayüz Türkçe ve üç boyutlu pencerenin altında makine destekli çeviri uyarısı](docs/screenshots/turkish.webp)
+
+> **Türkçe klinik metinler makine destekli çeviridir ve uzman incelemesi sürmektedir.** Metin klinik Türkçe olarak okunur, makineyle ve terminoloji açısından denetlenmiştir; ancak henüz bir Türk nöroloğun incelemesinden geçmemiştir. İki metin ayrıldığında İngilizce metin esastır. Uygulama bunu Türkçe kipte söyler; çevirisi eksik ya da eskimiş bir kayıt ise *English* etiketi taşır.
+
+Terminoloji tablosunu, kaplama biçimini ve araçları [Türkçe sürüm](docs/turkish-edition.md) anlatır.
+
+## Denetimler
+
+```bash
+npm run check-tree                                # özel, kısıtlı ya da üretilmiş hiçbir dosya depoda değil
+npm run typecheck
+npm test                                          # 47 birim testi
+npm run content:validate                          # şemalar, çapraz bağlantılar, sözcük alt sınırları, yazım, kapsam
+npm run citations:check
+node scripts/check-data.ts --all                  # iki manifest: meshler, hacimler, koordinatlar
+npm run notice -- --check                         # NOTICE üretilir; elle düzenlenmez
+uv run --project pipeline atlas-qa                # işlem hattının kendi veri kapıları
+npx playwright install chromium && npm run e2e    # 15 tarayıcı testi
+npm run build                                     # açık derleme, sonunda yeniden dağıtım denetimi
+python3 tools/i18n/prose.py check                 # Türkçe kaplamaların İngilizce kayıtlarla karşılaştırılması
+```
+
+`.github/workflows/checks.yml` bu listeden üretilmiş veri gerektirmeyen her şeyi çalıştırır. Kalanı, sürüm öncesi yerelde yapılır. Çalışma düzenini [CONTRIBUTING.md](CONTRIBUTING.md), neyin değiştiğini [CHANGELOG.md](CHANGELOG.md) anlatır.
+
+## Lisanslar ve atıf
+
+| Ne | Lisans | Dosya |
+|---|---|---|
+| Kod (`src/`, `scripts/`, `pipeline/`, `tools/`, `blender/`) | Apache License 2.0 | [LICENSE](LICENSE) |
+| Yazılmış içerik (`content/`) | CC BY-SA 4.0 | [content/LICENSE](content/LICENSE) |
+| Üretilen veri (`public/data/`) | CC BY-SA 4.0 | işlem hattının yazdığı `public/data/LICENSE` |
+
+Metinler özgündür. Meshler ve hacimler, [NOTICE](NOTICE) dosyasında listelenen üçüncü taraf veri kümelerinin, kendi lisansları altında kullanılan **türevleridir**; yapılan değişiklikler: MNI152NLin2009cAsym uzayına kayıtlama, etiket maskelerinin işaretli mesafe alanı üzerinden yeniden meshlenmesi, yumuşatma, sınıf başına üçgen bütçesine indirgeme, komşu parsellerin kaynaştırılması, yeniden etiketleme ve renklendirme ve hiçbir kaynak atlasın vermediği meshlerin kurulması. Her kaynak lisansı, kendisinden türetilene CC BY-SA 4.0 ile birlikte uygulanmaya devam eder.
+
+`NOTICE` üretilir, elle düzenlenmez; her veri kümesi için atıf, lisans ve indirme adresleriyle bir blok içerir ve `npm run notice -- --check` dosya eskidiyse hata verir. Lisans metinlerinin tamamı veriyle birlikte `public/data/licenses/` altında gider. Uygulamada **Hakkında** (ya da `#/about`), yüklü derlemedeki her kaynağı lisansı, atfı ve tam metin bağlantısıyla listeler.
+
+**Nasıl atıf verilir:** Ayci B. *Clinical Neuroanatomy Atlas*, v1.0.0, 2026. Kod Apache 2.0, veri ve içerik CC BY-SA 4.0; `NOTICE` içindeki veri kümelerinden türetilmiştir. Meshleri kullanırken kaynak veri kümelerine, metin için `content/bibliography/` altındaki açık erişimli kaynaklara da atıf verin.
+
+## Bilinen sınırlar
+
+- **Türkçe klinik metinler bir hekim tarafından incelenmemiştir** (yukarıya bakın). Esas metin İngilizcedir.
+- **Atlas bir şablondur, bir hasta değil.** Grup ortalaması parselasyonlar ve kayıtlanmış tek bir örnek; içindeki hiçbir şey bir bireyin ölçümü değildir.
+- **Açık sürümün beyin sapı çekirdekleri konum belirteçleridir**, bölütleme değil: yayımlanmış hacim kadar elipsoidler, açık işaret noktalarına göre yerleştirilmiştir; çünkü kopyalanabilecek açık lisanslı bir 7 T çekirdek atlası yoktur. Panelde ve `manifest.derived` içinde nasıl kuruldukları açıkça yazılıdır.
+- **Bazı yapıların iki sürümde de meshi yoktur.** Vena thalamostriata venöz atlasta vena cerebri interna'dan ayrılamıyor; birkaç kayıt benzer nedenlerle yalnızca metindir.
+- **On iki mesh bölütlenmemiş, kurulmuştur** (nervus phrenicus, kord segment blokları, truncus lumbosacralis, dördüncü ventrikülün pleksus koroideusu) ve göründükleri her yerde şematik olarak işaretlenmiştir.
+- **Genel nöron ve glia biyolojisi** yalnızca bir konuya değdiği ölçüde işlenmiştir (transmitterler, sinir hasarı, kortikal katmanlar).
+- **Mobil düzen yoktur.** Var olan, üç sütunlu masaüstü düzenidir; küçülür ama telefon için tasarlanmamıştır.
+
+## Yol haritası
+
+- Çevrilmiş metinlerin bir Türk nörolog tarafından kayıt kayıt incelenmesi.
+- PAM50 şablonu için bir lisans. `pipeline/raw/pam50/LICENSE_REQUEST_DRAFT.txt` yazarlara gönderilmemiş bir istek taslağıdır; lisans belirtirlerse özel kord MR'ı, ölçülmüş kord segmentleri ve PAM50 ile kesilen filum terminale de açık sürümde yer alabilir ve iki sürüm arasındaki fark o kadar azalır.
+- Periferik sinir sisteminin daha geniş kapsanması: bugünkü kapsam klinik olarak yük taşıyan sinirlerdir, eksiksiz bir periferik atlas değil.
+- Tabletler için duyarlı bir düzen.
+- Belirli bir kesit ve kameraya doğrudan bağlantı, böylece bir öğretim bağlantısı tam olarak tek bir görünümü açar.
+
+## Katkı, güvenlik ve iletişim
+
+Katkılar beklenir; önce [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını, özellikle iki dallı düzeni ve `main` dalına asla konmaması gerekenleri okuyun. Lisans, yeniden dağıtım ya da veri bütünlüğüyle ilgili endişeler için genel bir issue yerine [SECURITY.md](SECURITY.md) içindeki adrese yazın. Klinik olarak yanlış ya da tehlikeli içerik ise sıradan bir issue konusudur ve bildirilmesi memnuniyetle karşılanır.

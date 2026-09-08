@@ -139,6 +139,7 @@ export const tr: Record<keyof typeof en, string> = {
   'content.empty.title': 'Bir yapı seçin',
   'content.empty.body': '3B görünümde bir yapıya tıklayın, MR kesitine tıklayın ya da soldaki ağaçtan bir yapı seçin.',
   'content.hover': 'İmleç: ',
+  'content.noMeshAnywhere': 'Bu yapının üç boyutlu bir şekli yok: hiçbir kaynak atlas onu ayrı olarak bölütlemiyor, iki sürümde de. Aşağıdaki metin, görüntüleme notları ve klinik bağlantılar değişmemiştir.',
   'content.noMesh': 'Bu sürümde 3B yapı yok — bu yapının çıkarıldığı atlasın yeniden dağıtımına izin verilmiyor olabilir. Aşağıdaki metin, görüntüleme notları ve klinik bağlantılar değişmedi.',
   'content.noContent.before': '',
   'content.noContent.after': ' için henüz içerik yazılmadı.',
