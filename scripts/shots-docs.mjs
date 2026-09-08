@@ -20,8 +20,6 @@ mkdirSync(out, { recursive: true });
 const VIEWS = [
   { name: 'overview', hash: '#/', preset: 'lateral-l', systems: null, wait: 6000,
     note: 'first paint: the cortical surface, the vessels and the tree' },
-  { name: 'structure', hash: '#/structure/thalamus', preset: 'anterior', systems: ['diencephalon', 'basal-ganglia', 'ventricles-csf', 'brainstem'], wait: 6000,
-    note: 'one structure open, with its panel' },
   { name: 'syndrome-wallenberg', hash: '#/syndrome/syn-wallenberg-lateral-medullary?step=2&side=l', preset: null, systems: null, wait: 7000,
     note: 'syndrome mode: the lesion, the involved structures, the deficit table' },
   { name: 'slices-mri', hash: '#/structure/putamen', preset: 'superior', systems: ['basal-ganglia', 'diencephalon', 'ventricles-csf'], slices: { axial: 2 }, wait: 7000,

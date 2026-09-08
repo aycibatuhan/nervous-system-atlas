@@ -97,6 +97,8 @@ The interface exists in English and Turkish (`src/i18n/en.ts` and `src/i18n/tr.t
 
 All 825 entries' clinical prose is translated too, as overlays under `content/i18n/tr/` that pin a hash of the English text they were made from, so an English edit shows up as stale rather than as silently wrong Turkish.
 
+![The atlas in Turkish: the structure tree and panel naming structures by their Latin terms with the English name beneath, the interface in Turkish, and the machine-assisted translation notice along the foot of the 3D view](docs/screenshots/turkish.webp)
+
 > **The Turkish clinical prose is a machine-assisted translation and is still under specialist review.** It reads as clinical Turkish and has been checked mechanically and for terminology, but it has not yet been reviewed by a Turkish neurologist. Where the two texts differ, the English is the reference. The app says so in Turkish mode, and an entry whose translation is missing or stale carries an *English* tag instead.
 
 [The Turkish edition](docs/turkish-edition.md) covers the terminology table, the overlay format and the tooling.
