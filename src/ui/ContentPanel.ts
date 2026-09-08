@@ -51,6 +51,26 @@ export class ContentPanel {
     const n = entryName(entry, id);
     return h('a', { class: 'chip', href, title: n.secondary ?? undefined }, n.primary);
   }
+  /** A connection endpoint or waypoint: an entry id becomes a named cross-link, any other string is prose. */
+  private endpoint(v: unknown): Node {
+    const id = String(v ?? '');
+    if (entryOf(this.app, 'structures', id)) return this.structLink(id);
+    const pw = entryOf(this.app, 'pathways', id);
+    if (pw) return this.chip(pw, id, `#/pathway/${id}`);
+    return document.createTextNode(id);
+  }
+
+  /** "<endpoint> via <waypoint> — note", with every id in it named rather than printed raw. */
+  private connection(x: Rec, key: 'from' | 'to'): Node {
+    const parts: Node[] = [this.endpoint(x[key])];
+    if (x['via']) {
+      const via = t('content.conn.via', { via: '\u0000' }).split('\u0000');
+      parts.push(document.createTextNode(via[0] ?? ''), this.endpoint(x['via']), document.createTextNode(via[1] ?? ''));
+    }
+    if (x['note']) parts.push(document.createTextNode(` \u2014 ${String(x['note'])}`));
+    return h('span', {}, ...parts);
+  }
+
   private list(items: unknown[], fmt: (x: Rec) => Node | string): HTMLElement { return h('ul', {}, ...items.map((x) => h('li', {}, fmt(x as Rec)))); }
 
   render(): void {
@@ -111,8 +131,8 @@ export class ContentPanel {
           if ((cn['ganglia'] as unknown[]).length) sec.append(h('h3', {}, t('content.cn.ganglia')), this.list(cn['ganglia'] as unknown[], (g) => `${g['name']} (${g['type']})`)); }
         break;
       case 'connections':
-        if ((conn['afferents'] as unknown[]).length) sec.append(h('h3', {}, enTag(this.current), t('content.conn.afferents')), this.list(conn['afferents'] as unknown[], (x) => `${x['from']}${x['via'] ? t('content.conn.via', { via: String(x['via']) }) : ''}${x['note'] ? ' — ' + x['note'] : ''}`));
-        if ((conn['efferents'] as unknown[]).length) sec.append(h('h3', {}, enTag(this.current), t('content.conn.efferents')), this.list(conn['efferents'] as unknown[], (x) => `${x['to']}${x['via'] ? t('content.conn.via', { via: String(x['via']) }) : ''}${x['note'] ? ' — ' + x['note'] : ''}`));
+        if ((conn['afferents'] as unknown[]).length) sec.append(h('h3', {}, enTag(this.current), t('content.conn.afferents')), this.list(conn['afferents'] as unknown[], (x) => this.connection(x, 'from')));
+        if ((conn['efferents'] as unknown[]).length) sec.append(h('h3', {}, enTag(this.current), t('content.conn.efferents')), this.list(conn['efferents'] as unknown[], (x) => this.connection(x, 'to')));
         if ((conn['pathways'] as string[]).length) sec.append(h('h3', {}, t('content.conn.pathways')), this.list(conn['pathways'] as unknown[], (p) => this.chip(entryOf(this.app, 'pathways', String(p)), String(p), `#/pathway/${String(p)}`)));
         if (cn && (cn['reflexes'] as unknown[]).length) sec.append(h('h3', {}, enTag(this.current), t('content.conn.reflexes')), this.list(cn['reflexes'] as unknown[], (r) => h('span', {}, h('b', {}, String(r['name'])), t('content.conn.reflexLine', { afferent: String(r['afferent']), center: String(r['center']), efferent: String(r['efferent']) }))));
         if (!sec.childElementCount) sec.append(h('p', { class: 'muted' }, t('content.conn.none')));

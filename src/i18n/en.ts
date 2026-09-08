@@ -337,6 +337,8 @@ export const en = {
   'kind.mesh': 'mesh',
 
   // ---- untranslated-prose marker (only ever shown in Turkish)
+  'trNotice.body': 'The Turkish clinical text is a machine-assisted translation and is still under specialist review. Where the two differ, the English text is the reference.',
+  'trNotice.dismiss': 'Dismiss',
   'tag.langEn': 'English',
   'tag.langEn.title': 'Bu metin henüz Türkçeye çevrilmedi',
 } as const;

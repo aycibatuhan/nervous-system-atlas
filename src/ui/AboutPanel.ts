@@ -2,7 +2,7 @@ import type { App } from '../app.ts';
 import { DATA_URL } from '../loader/manifest.ts';
 import { h, clear } from './dom.ts';
 import { licenceShort } from './sourceLine.ts';
-import { t } from '../i18n/index.ts';
+import { getLocale, t } from '../i18n/index.ts';
 
 const CODE_LICENCE = { name: 'Apache License 2.0', url: 'https://www.apache.org/licenses/LICENSE-2.0' };
 const DATA_LICENCE = { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' };
@@ -61,6 +61,7 @@ export class AboutPanel {
             t('about.counts', { meshes: man.meshes.length, sources: sourceIds.length })))),
 
       h('p', { class: 'prose disclaimer', id: 'about-disclaimer' }, h('b', {}, t('about.disclaimer.lead')), t('about.disclaimer.body')),
+      getLocale() === 'tr' ? h('p', { class: 'prose small', id: 'about-tr-notice' }, t('trNotice.body')) : null,
       h('p', { class: 'prose' }, t('about.intro')),
 
       h('h3', {}, t('about.licences')),

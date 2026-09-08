@@ -334,6 +334,8 @@ export const tr: Record<keyof typeof en, string> = {
   'kind.mesh': 'mesh',
 
   // ---- çevrilmemiş metin işareti (yalnızca Türkçe kipte görünür)
+  'trNotice.body': 'Türkçe klinik metinler makine destekli çeviridir ve uzman incelemesi sürmektedir. İki metin ayrıldığında İngilizce metin esastır.',
+  'trNotice.dismiss': 'Kapat',
   'tag.langEn': 'English',
   'tag.langEn.title': 'Bu metin henüz Türkçeye çevrilmedi',
 };

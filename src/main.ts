@@ -16,7 +16,7 @@ import { GlossaryPanel } from './ui/GlossaryPanel.ts';
 import { TopicPanel } from './ui/TopicPanel.ts';
 import { AboutPanel } from './ui/AboutPanel.ts';
 import { enterSyndrome, exitSyndrome } from './state/syndrome.ts';
-import { h } from './ui/dom.ts';
+import { clear, h } from './ui/dom.ts';
 import { applyStates, selectStructure, setHover, setSlices, syncVisibility } from './state/actions.ts';
 import { loadRawVolume } from './volume/VolumeSource.ts';
 import { makeIntensityTexture, makeLabelTexture } from './volume/textures.ts';
@@ -108,6 +108,21 @@ async function boot(): Promise<void> {
   }
   onLocaleChange((l) => { if (l === 'tr' && !app.contentTr) void ensureTr().then(() => app.store.set({ locale: l })); else app.store.set({ locale: l }); });
   app.store.subscribe((s) => s.locale, () => renderHelp());
+  // The Turkish clinical prose is a machine-assisted translation: say so where it cannot be missed, until
+  // the reader dismisses it. The same sentence is repeated, undismissable, in the About panel.
+  const trNotice = h('div', { class: 'tr-notice', id: 'tr-notice' });
+  document.getElementById('viewport')!.append(trNotice);
+  function renderTrNotice(): void {
+    clear(trNotice);
+    let dismissed = false;
+    try { dismissed = localStorage.getItem('atlas.trNotice.dismissed') === '1'; } catch { /* storage blocked */ }
+    trNotice.hidden = getLocale() !== 'tr' || dismissed;
+    if (trNotice.hidden) return;
+    trNotice.append(h('span', {}, t('trNotice.body')),
+      h('button', { class: 'mini', onclick: () => { try { localStorage.setItem('atlas.trNotice.dismissed', '1'); } catch { /* storage blocked */ } renderTrNotice(); } }, t('trNotice.dismiss')));
+  }
+  renderTrNotice();
+  app.store.subscribe((s) => s.locale, () => renderTrNotice());
   const hudEl = h('div', { class: 'hud' }); document.getElementById('viewport')!.append(hudEl);
   const progress = h('div', { class: 'progress' }); document.getElementById('viewport')!.append(progress);
   /** MNI readout; over a cord slice it also names the PAM50 spinal level under the cursor ("C5 · cervical segment"). */

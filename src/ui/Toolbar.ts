@@ -49,7 +49,7 @@ export class Toolbar {
         btn('toolbar.glossary', 'toolbar.glossary.title', { onclick: () => { location.hash = '#/glossary'; } }),
         btn('toolbar.about', 'toolbar.about.title', { class: 'about-btn', onclick: () => { location.hash = '#/about'; } }),
         this.qualityBtn,
-        btn('toolbar.screenshot', 'toolbar.screenshot.title', { onclick: () => this.shot() }),
+        btn('toolbar.screenshot', 'toolbar.screenshot.title', { class: 'shot-btn', onclick: () => this.shot() }),
         this.localeBtn,
         this.helpBtn,
         this.status),
