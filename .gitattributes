@@ -1,0 +1,160 @@
+# Attributes for the Clinical Neuroanatomy Atlas repository.
+#
+# Two jobs here:
+#   1. keep every committed text file in one canonical form (LF), so that a
+#      contributor on Windows cannot rewrite 2300 content JSON files as CRLF;
+#   2. keep the large, binary and tool-written files that *are* committed out of
+#      the way — collapsed in GitHub pull requests, never diffed as text, never
+#      counted as if somebody had hand-written them.
+#
+# Note that almost everything large in this project is generated and therefore
+# gitignored, not committed: public/data/ (meshes, volumes, labels, manifest),
+# pipeline/raw/, pipeline/work/, dist/, dist-private/. The rules below cover the
+# few generated artefacts that are deliberately committed, plus the file types
+# that would arrive if somebody added one.
+
+
+# ---------------------------------------------------------------- line endings
+
+# Normalise every text file to LF in the object database and check it out as LF
+# on every platform. The atlas content is compared byte for byte in places
+# (tools/i18n/prose.py pins a SHA-1 of the English strings of each entry; the
+# content build hashes bundles), so a CRLF round-trip would silently invalidate
+# translations and make diffs unreadable.
+* text=auto eol=lf
+
+# Shell scripts are run directly by the pipeline (pipeline/rebuild.sh,
+# pipeline/add_zanatomy.sh, pipeline/add_brainstem_navigator.sh,
+# tools/ref_page.sh). CRLF after the shebang breaks the interpreter line, so
+# force LF explicitly rather than relying on text=auto's detection.
+*.sh text eol=lf
+
+# Same reasoning for the other executable/consumed-verbatim text formats.
+*.py    text eol=lf
+*.ts    text eol=lf
+*.mjs   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.glsl  text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.md    text eol=lf
+*.csv   text eol=lf
+
+
+# ------------------------------------------------------------------- binaries
+
+# Marked binary (= -text -diff): never line-ending-normalised, never shown as a
+# textual diff, never merged line by line. Most of these live under the
+# gitignored public/data/ or pipeline/raw/, but a stray or intentionally
+# committed one must not be mangled on checkout.
+
+# QA screenshots and any other raster image.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+
+# glTF meshes — the atlas's whole geometry output (public/data/meshes/*.glb and
+# the *.lod.glb stand-ins).
+*.glb   binary
+*.gltf  binary
+*.bin   binary
+
+# Volume blobs streamed by the slice viewer: the 8-bit MRI/label volumes
+# (public/data/volumes/*.u8.bin) are matched by *.bin above, but name the
+# suffix explicitly so the intent survives a rename of the pattern.
+*.u8.bin binary
+
+# NIfTI: everything the pipeline downloads and registers.
+*.nii    binary
+*.nii.gz binary
+*.mgz    binary
+
+# Archives (the manually downloaded Brainstem Navigator toolkit, source atlases).
+*.gz     binary
+*.tgz    binary
+*.bz2    binary
+*.xz     binary
+*.zip    binary
+
+# Fonts and PDFs (the FIPAT terminology PDFs are downloaded, never redistributed,
+# but the rule keeps a stray one from being treated as text).
+*.woff2  binary
+*.woff   binary
+*.ttf    binary
+*.otf    binary
+*.pdf    binary
+
+
+# ------------------------------------------- generated files that ARE committed
+
+# `linguist-generated` does two things on GitHub: it collapses the file by
+# default in pull-request diffs, and it removes the file from the repository's
+# language statistics. It does NOT suppress local `git diff` output, which is
+# deliberate — every file below is auditable and a reviewer may need to read the
+# change (a licence line moving in NOTICE, a checksum changing in the source
+# lock) even though nobody typed it by hand.
+
+# NOTICE is rewritten from pipeline/config/sources.yaml and package.json by
+# `npm run notice`; `npm run notice -- --check` and tests/notice.test.ts fail if
+# it is stale. Never edit it by hand.
+NOTICE linguist-generated
+
+# Dependency lock files.
+package-lock.json linguist-generated
+pipeline/uv.lock  linguist-generated
+
+# The download lock: one sha256 + size + fetch date per source file, written by
+# `atlas-download`. Large, machine-written, but the checksums are exactly what a
+# licence audit reads, so it stays textually diffable.
+pipeline/config/sources.lock.yaml linguist-generated
+
+# Bibliography entries are written by tools/cite/*.py from live source metadata
+# (`verified: true` is only ever written by a tool, never by hand). A citation
+# pass rewrites hundreds of them at once, which would otherwise bury the real
+# change in a pull request.
+content/bibliography/*.json linguist-generated
+
+# The authoring coverage table, written by the content build.
+content/coverage.json linguist-generated
+
+# The Turkish terminology review artefacts, written by `tools/i18n/terms.py
+# table` (416 rows of FIPAT / Wikidata / Turkish Wikipedia candidates) and
+# `terms.py apply`. Collapsed in pull requests because regenerating the table
+# touches every row; still diffable locally, because the `decision` column in
+# terms-review.csv is the reviewer's own and survives regeneration, so a human
+# edit does live in this file and must be reviewable.
+content/i18n/review/*.csv linguist-generated
+content/i18n/review/*.md  linguist-generated
+
+# ...with one exception to the LF rule above. terms.py writes the CSV through
+# Python's csv module, which emits CRLF (RFC 4180), and the file is already
+# committed that way. `-text` turns off end-of-line conversion for it, so the
+# bytes git stores are exactly the bytes the tool writes and regenerating the
+# table never shows up as a whole-file rewrite. It is still diffed as text.
+content/i18n/review/*.csv -text
+
+
+# ---------------------------------------------------- GitHub language statistics
+
+# Linguist only counts files whose language `type` is programming or markup, so
+# the 2300+ authored JSON entries under content/, the pipeline YAML and the
+# Markdown docs are already excluded from the language bar and do not need a
+# `linguist-detectable=false`. Two things still need marking:
+
+# Verbatim third-party legal code shipped with the data. Not ours, not prose we
+# wrote — vendored.
+pipeline/config/license_texts/** linguist-vendored
+LICENSE                          linguist-vendored
+content/LICENSE                  linguist-vendored
+
+# Documentation, so a 68 KB README and the translation style guide are not
+# weighed against the source.
+README.md               linguist-documentation
+CONTRIBUTING.md         linguist-documentation
+SECURITY.md             linguist-documentation
+tools/i18n/STYLE-tr.md  linguist-documentation
