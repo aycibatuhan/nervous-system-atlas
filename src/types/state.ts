@@ -1,4 +1,5 @@
 import type { SystemId } from './manifest.ts';
+import { getLocale, type Locale } from '../i18n/index.ts';
 
 export type Axis = 'axial' | 'coronal' | 'sagittal';
 export type Contrast = 't1w' | 't2w';
@@ -31,6 +32,7 @@ export interface AppState {
   quality: 'low' | 'high';
   cordMri: boolean;              // show the PAM50 cord MRI on the slices (loads it on demand)
   cordLevel: number | null;      // PAM50 spinal level id (1 = C1 ... 30 = S5) under the cursor on a cord slice
+  locale: Locale;                // interface language; every panel re-renders from this
 }
 
 export function initialState(): AppState {
@@ -58,5 +60,6 @@ export function initialState(): AppState {
     quality: 'low',
     cordMri: false,
     cordLevel: null,
+    locale: getLocale(),
   };
 }

@@ -29,13 +29,14 @@ import { applyCameraPreset, setContrast, setSliceVisible, setPeel } from './stat
 import { sameSet } from './state/actions.ts';
 import { bindRouter } from './router/hashRouter.ts';
 import type { ContentBundle } from './types/content.ts';
+import { getLocale, onLocaleChange, otherLocale, setLocale, t } from './i18n/index.ts';
 
 const msg = document.getElementById('overlay-msg')!;
 function showMsg(text: string | null): void { msg.hidden = !text; msg.textContent = text ?? ''; }
 
 async function boot(): Promise<void> {
-  if (!WebGL.isWebGL2Available()) { showMsg('This atlas needs WebGL 2 (any current Chrome, Firefox, Safari or Edge).'); return; }
-  showMsg('Loading atlas manifest…');
+  if (!WebGL.isWebGL2Available()) { showMsg(t('boot.webgl')); return; }
+  showMsg(t('boot.manifest'));
   const manifest = await loadManifest();
   const canvas = document.getElementById('gl') as HTMLCanvasElement;
   const app = createApp(canvas, manifest);
@@ -74,13 +75,21 @@ async function boot(): Promise<void> {
   const showPanel = (which: 'main' | 'pathway' | 'syndrome' | 'quiz' | 'glossary' | 'topic' | 'about') => { mainPanel.hidden = which !== 'main'; pathwayHost.hidden = which !== 'pathway'; syndromeHost.hidden = which !== 'syndrome'; quizHost.hidden = which !== 'quiz'; glossaryHost.hidden = which !== 'glossary'; topicHost.hidden = which !== 'topic'; aboutHost.hidden = which !== 'about'; if (which !== 'quiz') quizPanel.exit(); if (which !== 'topic') topicPanel.exit(); if (which !== 'quiz' && which !== 'glossary' && which !== 'topic' && which !== 'about' && app.store.get().panel) app.store.set({ panel: null }); };
   const showPathway = (id: string | null) => { if (id) { pathwayPanel.show(id); showPanel('pathway'); } else { pathwayPanel.exit(); if (!pathwayHost.hidden) showPanel('main'); } };
   void contentPanel;
-  const help = h('div', { class: 'help', hidden: true }, h('b', {}, 'Shortcuts'), h('br'),
-    ...PRESETS.map((p) => h('div', {}, h('kbd', {}, p.key), ' ', p.label)),
-    h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' toggle axial / coronal / sagittal slice'),
-    h('div', {}, h('kbd', {}, '↑'), h('kbd', {}, '↓'), ' move the last touched slice'), h('div', {}, h('kbd', {}, 't'), ' T1 / T2'),
-    h('div', {}, h('kbd', {}, 'p'), ' peel at the last slice toggled with a / c / s (each slider also has a peel menu)'), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' toggle panels'),
-    h('div', {}, h('kbd', {}, 'f'), ' search'), h('div', {}, h('kbd', {}, 'A'), '–', h('kbd', {}, 'E'), ' answer quiz'), h('div', {}, h('kbd', {}, 'Esc'), ' clear selection / exit syndrome'), h('div', {}, h('kbd', {}, 'Shift'), '+click: select without moving slices'),
-    h('div', {}, h('kbd', {}, 'Alt'), '+click a system or group in the tree: show only that group'));
+  const help = h('div', { class: 'help', hidden: true });
+  const renderHelp = (): void => {
+    const wasHidden = help.hidden;
+    help.replaceChildren(h('b', {}, t('help.title')), h('br'),
+      ...PRESETS.map((p) => h('div', {}, h('kbd', {}, p.key), ' ', t(`preset.${p.id}` as Parameters<typeof t>[0]))),
+      h('div', {}, h('kbd', {}, 'a'), '/', h('kbd', {}, 'c'), '/', h('kbd', {}, 's'), ' ' + t('help.slices')),
+      h('div', {}, h('kbd', {}, '↑'), h('kbd', {}, '↓'), ' ' + t('help.move')), h('div', {}, h('kbd', {}, 't'), ' ' + t('help.contrast')),
+      h('div', {}, h('kbd', {}, 'p'), ' ' + t('help.peel')), h('div', {}, h('kbd', {}, '['), h('kbd', {}, ']'), ' ' + t('help.panels')),
+      h('div', {}, h('kbd', {}, 'f'), ' ' + t('help.search')), h('div', {}, h('kbd', {}, 'A'), '–', h('kbd', {}, 'E'), ' ' + t('help.quiz')),
+      h('div', {}, h('kbd', {}, 'L'), ' ' + t('help.language')),
+      h('div', {}, h('kbd', {}, 'Esc'), ' ' + t('help.escape')), h('div', {}, h('kbd', {}, 'Shift'), t('help.shiftClick')),
+      h('div', {}, h('kbd', {}, 'Alt'), t('help.altClick')));
+    help.hidden = wasHidden;
+  };
+  renderHelp();
   document.getElementById('viewport')!.append(help);
   const toolbar = new Toolbar(app, top, { onSearchFocus: () => (left.querySelector('.tree-filter') as HTMLInputElement)?.focus(), onHelp: () => { help.hidden = !help.hidden; } });
   const search = new SearchBox(toolbar.searchHost, (doc) => {
@@ -90,14 +99,17 @@ async function boot(): Promise<void> {
     else if (doc.kind === 'glossary') location.hash = `#/glossary/${doc.id}`;
     else if (doc.kind === 'mesh') selectStructure(app, doc.id, { moveSlices: true, fit: true });
     else location.hash = `#/structure/${doc.id}`;
-  });
+  }, app);
+  // the locale lives in the store: setLocale tells us, every panel re-renders from its own subscription
+  onLocaleChange((l) => app.store.set({ locale: l }));
+  app.store.subscribe((s) => s.locale, () => renderHelp());
   const hudEl = h('div', { class: 'hud' }); document.getElementById('viewport')!.append(hudEl);
   const progress = h('div', { class: 'progress' }); document.getElementById('viewport')!.append(progress);
   /** MNI readout; over a cord slice it also names the PAM50 spinal level under the cursor ("C5 · cervical segment"). */
   function hud(onSlice: THREE.Vector3 | null, p: THREE.Vector3 | null): void {
     const lvl = onSlice ? spineLevelAt(app.spine, app.cordGrid, onSlice) : null;
     if (app.store.get().cordLevel !== (lvl?.id ?? null)) app.store.set({ cordLevel: lvl?.id ?? null });
-    hudEl.textContent = p ? `MNI ${p.x.toFixed(0)}, ${p.y.toFixed(0)}, ${p.z.toFixed(0)} mm` + (lvl ? ` · ${spineLevelLabel(lvl.entry)}` : '') : '';
+    hudEl.textContent = p ? t('hud.mni', { x: p.x.toFixed(0), y: p.y.toFixed(0), z: p.z.toFixed(0) }) + (lvl ? ` · ${spineLevelLabel(lvl.entry)}` : '') : '';
   }
 
   // ---- state → scene wiring
@@ -184,16 +196,17 @@ async function boot(): Promise<void> {
   app.store.set({ visibleSystems: defaults, loaded: { ...app.store.get().loaded, manifest: true } });
   showMsg(null);
   applyCameraPreset(app, 'lateral-l');
-  toolbar.status.textContent = `${manifest.meshes.length} structures`;
+  toolbar.setCounts(manifest.meshes.length);
 
   // ---- content bundle (optional until authored) then router
   try {
     const r = await fetch('data/content.json');
-    if (r.ok) { app.content = (await r.json()) as ContentBundle; app.store.set({ loaded: { ...app.store.get().loaded, content: true } }); toolbar.status.textContent += ` · ${Object.keys(app.content.structures).length} authored`; }
+    if (r.ok) { app.content = (await r.json()) as ContentBundle; app.store.set({ loaded: { ...app.store.get().loaded, content: true } }); toolbar.setCounts(manifest.meshes.length, Object.keys(app.content.structures).length); }
   } catch (e) { console.warn('no content bundle', e); }
-  void search.load('data/search-index.json', manifest.meshes.filter((m) => !app.content?.structures[m.structureId]).map((m) => ({ id: m.id, kind: 'mesh', name: m.name, aliases: [], summary: `${m.system} · ${m.side} · unauthored mesh` })));
+  void search.load('data/search-index.json', manifest.meshes.filter((m) => !app.content?.structures[m.structureId]).map((m) => ({ id: m.id, kind: 'mesh', name: m.name, aliases: [], summary: t('search.unauthored', { system: m.system, side: m.side }) })));
   bindRouter(app.store, {
     onRoute(route, params) {
+      if (params.lang && params.lang !== getLocale()) setLocale(params.lang);
       if (params.ax !== undefined || params.cor !== undefined || params.sag !== undefined) setSlices(app, { ...(params.ax !== undefined ? { axial: params.ax } : {}), ...(params.cor !== undefined ? { coronal: params.cor } : {}), ...(params.sag !== undefined ? { sagittal: params.sag } : {}) });
       if (params.c) setContrast(app, params.c);
       if (route.kind === 'quiz') { if (app.store.get().syndrome) exitSyndrome(app); pathwayPanel.exit(); showPanel('quiz'); app.store.set({ panel: { kind: 'quiz', index: route.index ?? 0 } }); quizPanel.show(route.index ?? 0); return; }
@@ -233,7 +246,7 @@ async function boot(): Promise<void> {
       app.store.set({ loaded: { ...app.store.get().loaded, labels: true } });
       updateLuts(app); app.sm.requestRender();
       progress.style.transform = 'scaleX(0)';
-    } catch (e) { console.error(e); toolbar.status.textContent = 'volume load failed: ' + (e as Error).message; }
+    } catch (e) { console.error(e); toolbar.setError((e as Error).message); }
   })();
 
   // ---- keyboard
@@ -258,6 +271,7 @@ async function boot(): Promise<void> {
       case 'f': search.input.focus(); e.preventDefault(); break;
       case '?': help.hidden = !help.hidden; break;
       case 'S': if (e.shiftKey) void toolbar.shot(); break;
+      case 'l': case 'L': setLocale(otherLocale()); break;
     }
   });
 }
@@ -341,4 +355,4 @@ function applyPeel(app: App): void {
   for (const mesh of app.registry.loaded()) { const mat = mesh.material as THREE.Material; mat.clippingPlanes = planes.length ? planes : null; mat.side = planes.length ? THREE.DoubleSide : THREE.FrontSide; }
 }
 
-boot().catch((e) => { console.error(e); showMsg('Failed to start: ' + (e as Error).message); });
+boot().catch((e) => { console.error(e); showMsg(t('boot.failed', { message: (e as Error).message })); });

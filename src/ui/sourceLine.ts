@@ -1,16 +1,18 @@
 import type { App } from '../app.ts';
 import type { ManifestLicense } from '../types/manifest.ts';
 import { h } from './dom.ts';
+import { t, type Key } from '../i18n/index.ts';
 
 /** Short form of a licence for the one-line credit ("CC BY-SA 4.0", "FSL, non-commercial"). */
 export function licenceShort(id: string, lic: ManifestLicense | undefined): string {
-  const special: Record<string, string> = {
-    'FSL-NC': 'FSL, non-commercial',
-    'MNI': 'MNI/McGill licence',
-    'PAM50-unlicensed': 'no licence stated, research use only',
-    'BrainstemNavigator-NC-ND': 'non-commercial, no redistribution',
+  const special: Record<string, Key> = {
+    'FSL-NC': 'licence.fslNc',
+    'MNI': 'licence.mni',
+    'PAM50-unlicensed': 'licence.pam50',
+    'BrainstemNavigator-NC-ND': 'licence.ncNd',
   };
-  if (special[id]) return special[id];
+  const key = special[id];
+  if (key) return t(key);
   if (/^CC/.test(id)) return id.replace(/^CC-BY/, 'CC BY').replace(/^CC0/, 'CC0').replace(/-(\d[\d.]*)(-JP)?$/, (_m, v: string, jp?: string) => ` ${v}${jp ? ' JP' : ''}`);
   return lic?.name ?? id;
 }
@@ -48,12 +50,12 @@ export function creditsFor(app: App, meshIds: Iterable<string>): { credits: Sour
 export function sourceLine(app: App, meshIds: Iterable<string>): HTMLElement | null {
   const { credits, derived } = creditsFor(app, meshIds);
   if (!credits.length) return null;
-  const el = h('div', { class: 'source-line muted small' }, 'Source: ');
+  const el = h('div', { class: 'source-line muted small' }, t('source.label'));
   credits.forEach((c, i) => {
     if (i) el.append(' · ');
-    el.append(h('a', { href: '#/about', title: `${c.name} — ${c.licenceName}. Open the credits`, class: 'src-credit' }, c.name),
+    el.append(h('a', { href: '#/about', title: t('source.credit.title', { name: c.name, licence: c.licenceName }), class: 'src-credit' }, c.name),
       h('span', { class: 'src-lic' }, ` (${c.licenceName})`));
   });
-  for (const d of derived) el.append(' · ', h('span', { class: 'tag derived-tag', title: d.note }, `derived: ${derivedShort(d.note)}`));
+  for (const d of derived) el.append(' · ', h('span', { class: 'tag derived-tag', title: d.note }, t('source.derived', { note: derivedShort(d.note) })));
   return el;
 }

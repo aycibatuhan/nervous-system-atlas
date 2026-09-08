@@ -3,6 +3,7 @@ import type { SpineLabelsJson, SpineLevelEntry } from '../types/manifest.ts';
 import { DATA_URL } from '../loader/manifest.ts';
 import type { VolumeData } from './VolumeSource.ts';
 import { mmToVoxel, type VolumeGrid } from './coords.ts';
+import { t } from '../i18n/index.ts';
 
 /** The PAM50 spinal-level volume plus its lookup table, loaded next to the cord MRI. */
 export interface SpineLabels {
@@ -41,7 +42,7 @@ export function spineLevelAt(spine: SpineLabels | null, cordGrid: VolumeGrid | n
 
 /** "C5 · cervical segment", plus " (vertebral rule)" for a level placed by the rule rather than measured. */
 export function spineLevelLabel(e: SpineLevelEntry): string {
-  return `${e.name} · ${e.region} segment` + (e.estimated ? ' (vertebral rule)' : '');
+  return t('spine.level', { name: e.name, region: e.region }) + (e.estimated ? t('spine.vertebralRule') : '');
 }
 
 /** 32-bit mask of the level ids a predicate selects (ids are 1..30, so one uint carries them all). */

@@ -92,9 +92,11 @@ python3 tools/cite/oa.py --pmc-search "claustrum connectivity review"
 
 `tools/ref_*.py` and `tools/refcorpus.py` build an **optional private text corpus** under `reference/` used only by the build's 11-word-shingle plagiarism check (`scripts/content/plagiarism.ts`). Nothing from it is shipped, and the check is skipped when `reference/` is absent.
 
-## Turkish terminology (in preparation)
+## Turkish edition
 
-A Turkish edition with Latin structure names is planned. Nothing in the app or in `content/data/` is translated yet; the first step is a terminology table that fixes, once, which FIPAT term every atlas entry corresponds to and which Turkish names already exist for it:
+The interface exists in English and Turkish. The **TR / EN** button in the toolbar (shortcut `L`) switches the language; the choice is kept in the URL hash (`#/structure/brainstem?lang=tr`, so a link opens in the language it was copied in) and in `localStorage`, and a first visit follows the browser language. Every interface string lives in `src/i18n/en.ts` and `src/i18n/tr.ts` (289 keys; the Turkish table is typed against the English one, so a missing translation fails `npm run typecheck`, and `tests/i18n.test.ts` checks that the placeholders agree). In Turkish mode, structures, cranial nerves and pathways are named the way Turkish medical teaching names them, by their Latin term (`names.tr`, falling back to `latin`), with the English name as a secondary line in the panels, the tree and the search results; Turkish synonyms from Wikidata and Turkish Wikipedia are searchable but never displayed. Clinical prose (structure text, syndromes, topics, glossary, quiz) is still English and carries a small *English* tag in Turkish mode; entries without a FIPAT concept (arterial territories, gaze pathways, the envelope) keep their English name in both languages. The About panel's disclaimer and credits are in both languages. `node scripts/shots-tr.mjs` captures the Turkish interface from the dev server into `qa/shots/tr-ui/`.
+
+The names come from a terminology table that fixes, once, which FIPAT term every atlas entry corresponds to and which Turkish names already exist for it:
 
 ```bash
 pipeline/.venv/bin/python tools/i18n/terms.py fetch     # FIPAT TA2 + TNA PDFs, Wikidata, Turkish Wikipedia -> reference/terms/ (cached)

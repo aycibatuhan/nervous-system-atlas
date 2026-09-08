@@ -1,5 +1,6 @@
 import type { Store } from '../state/store.ts';
 import type { AppState, Axis } from '../types/state.ts';
+import type { Locale } from '../i18n/index.ts';
 
 export type Route =
   | { kind: 'home' }
@@ -12,7 +13,7 @@ export type Route =
   | { kind: 'about' }
   | { kind: 'slice' };
 
-export interface RouteParams { ax?: number; cor?: number; sag?: number; c?: 't1w' | 't2w'; side?: 'l' | 'r' }
+export interface RouteParams { ax?: number; cor?: number; sag?: number; c?: 't1w' | 't2w'; side?: 'l' | 'r'; lang?: Locale }
 
 export function parseHash(hash: string): { route: Route; params: RouteParams } {
   const h = hash.replace(/^#\/?/, '');
@@ -22,6 +23,7 @@ export function parseHash(hash: string): { route: Route; params: RouteParams } {
   const params: RouteParams = { ax: num('ax'), cor: num('cor'), sag: num('sag') };
   const c = q.get('c'); if (c === 't1w' || c === 't2w') params.c = c;
   const side = q.get('side'); if (side === 'l' || side === 'r') params.side = side;
+  const lang = q.get('lang'); if (lang === 'en' || lang === 'tr') params.lang = lang;
   const seg = (path ?? '').split('/').filter(Boolean);
   let route: Route = { kind: 'home' };
   if (seg[0] === 'structure' && seg[1]) route = { kind: 'structure', id: seg[1] };
@@ -52,6 +54,7 @@ export function serialize(route: Route, params: RouteParams): string {
   if (params.sag !== undefined) q.set('sag', String(params.sag));
   if (params.c) q.set('c', params.c);
   if (params.side) q.set('side', params.side);
+  if (params.lang) q.set('lang', params.lang);
   const qs = q.toString();
   return `#/${path}${qs ? '?' + qs : ''}`;
 }
@@ -62,13 +65,13 @@ export function bindRouter(store: Store<AppState>, handlers: { onRoute(route: Ro
   const apply = () => { applying = true; try { const { route, params } = parseHash(location.hash); handlers.onRoute(route, params); } finally { applying = false; } };
   window.addEventListener('hashchange', apply);
   let timer = 0;
-  const unsub = store.subscribe((s) => [s.selectedId ?? s.selectedStructureId, s.syndrome?.id ?? null, s.syndrome?.step ?? -1, s.slices.axial, s.slices.coronal, s.slices.sagittal, s.contrast, s.syndrome ? s.lesionSide : null, s.panel] as const, (v) => {
+  const unsub = store.subscribe((s) => [s.selectedId ?? s.selectedStructureId, s.syndrome?.id ?? null, s.syndrome?.step ?? -1, s.slices.axial, s.slices.coronal, s.slices.sagittal, s.contrast, s.syndrome ? s.lesionSide : null, s.panel, s.locale] as const, (v) => {
     if (applying) return;
     clearTimeout(timer);
     timer = window.setTimeout(() => {
-      const [sel, syn, step, ax, cor, sag, c, side, panel] = v;
+      const [sel, syn, step, ax, cor, sag, c, side, panel, locale] = v;
       const route: Route = syn ? { kind: 'syndrome', id: syn, step: step >= 0 ? step : undefined } : panel?.kind === 'quiz' ? { kind: 'quiz', index: panel.index } : panel?.kind === 'glossary' ? { kind: 'glossary', id: panel.id ?? undefined } : panel?.kind === 'topic' ? { kind: 'topic', id: panel.id ?? undefined } : panel?.kind === 'about' ? { kind: 'about' } : sel ? { kind: 'structure', id: sel } : { kind: 'slice' };
-      const hash = serialize(route, { ax, cor, sag, c: c === 't2w' ? 't2w' : undefined, side: syn && side ? side : undefined });
+      const hash = serialize(route, { ax, cor, sag, c: c === 't2w' ? 't2w' : undefined, side: syn && side ? side : undefined, lang: locale === 'en' ? undefined : locale });
       if (location.hash !== hash) history.replaceState(null, '', hash);
     }, 150);
   }, (a, b) => a.every((x, i) => x === b[i] || (i === 8 && JSON.stringify(x) === JSON.stringify(b[i]))));

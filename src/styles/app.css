@@ -105,3 +105,8 @@ ul.cites li { margin: 3px 0; line-height: 1.35; }
 
 /* the "not for clinical use" notice at the top of the About panel */
 .prose.disclaimer { border-left: 3px solid #c8a24a; background: rgba(200, 162, 74, 0.10); padding: 8px 10px; border-radius: 4px; }
+/* ---- interface language (English / Türkçe) */
+#locale-switch { min-width: 32px; font-weight: 600; letter-spacing: .04em; }
+.name-secondary { display: block; color: var(--muted); font-size: 11px; font-weight: 400; line-height: 1.35; letter-spacing: 0; text-transform: none; }
+.tree-row .name-secondary, .chip .name-secondary, .wp .name-secondary { display: inline; margin-left: 6px; }
+.tag.lang-en { display: inline-block; margin-right: 6px; cursor: help; border-color: var(--accent2); color: var(--accent2); vertical-align: 1px; }

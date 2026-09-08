@@ -1,5 +1,12 @@
 import Fuse from 'fuse.js';
-import { h, clear } from './dom.ts';
+import type { App } from '../app.ts';
+import { h, clear, secondaryName } from './dom.ts';
+import { entryName, t, type Key } from '../i18n/index.ts';
+
+const KIND_KEY: Record<string, Key> = {
+  structure: 'kind.structure', 'cranial-nerve': 'kind.cranial-nerve', pathway: 'kind.pathway',
+  syndrome: 'kind.syndrome', topic: 'kind.topic', glossary: 'kind.glossary', mesh: 'kind.mesh',
+};
 
 export interface SearchDoc { id: string; kind: string; name: string; names?: { tr?: string }; latin?: string; aliases: string[]; summary: string }
 
@@ -9,8 +16,8 @@ export class SearchBox {
   private list: HTMLElement;
   private fuse: Fuse<SearchDoc> | null = null;
   private docs: SearchDoc[] = [];
-  constructor(container: HTMLElement, private onPick: (doc: SearchDoc) => void) {
-    this.input = h('input', { type: 'search', class: 'search', placeholder: 'Search structures, pathways, syndromes…  ( > syndromes )', autocomplete: 'off' }) as HTMLInputElement;
+  constructor(container: HTMLElement, private onPick: (doc: SearchDoc) => void, app?: App) {
+    this.input = h('input', { type: 'search', class: 'search', placeholder: t('search.placeholder'), autocomplete: 'off' }) as HTMLInputElement;
     this.list = h('div', { class: 'search-results', hidden: true });
     const wrap = h('div', { class: 'search-wrap' }, this.input, this.list);
     container.append(wrap);
@@ -24,6 +31,7 @@ export class SearchBox {
       else if (e.key === 'Escape') { this.input.blur(); this.list.hidden = true; }
     });
     document.addEventListener('click', (e) => { if (!wrap.contains(e.target as Node)) this.list.hidden = true; });
+    app?.store.subscribe((s) => s.locale, () => { this.input.placeholder = t('search.placeholder'); if (!this.list.hidden) this.update(); });
   }
   async load(url = 'data/search-index.json', extra: SearchDoc[] = []): Promise<void> {
     try { const r = await fetch(url); if (r.ok) this.docs = (await r.json()) as SearchDoc[]; } catch { /* no index yet */ }
@@ -40,7 +48,13 @@ export class SearchBox {
     if (kind) hits = hits.filter((d) => d.kind === kind);
     hits = hits.slice(0, 12);
     if (!hits.length) { this.list.hidden = true; return; }
-    for (const d of hits) this.list.append(h('div', { class: 'sr', onclick: () => { this.onPick(d); this.list.hidden = true; this.input.blur(); } }, h('span', { class: `kind kind-${d.kind}` }, d.kind === 'cranial-nerve' ? 'CN' : d.kind), ' ', h('b', {}, d.name), h('div', { class: 'muted small' }, d.summary.slice(0, 110))));
+    for (const d of hits) {
+      const n = entryName(d, d.name);
+      const kindKey = KIND_KEY[d.kind];
+      this.list.append(h('div', { class: 'sr', onclick: () => { this.onPick(d); this.list.hidden = true; this.input.blur(); } },
+        h('span', { class: `kind kind-${d.kind}` }, kindKey ? t(kindKey) : d.kind), ' ', h('b', {}, n.primary, secondaryName(n)),
+        h('div', { class: 'muted small' }, d.summary.slice(0, 110))));
+    }
     (this.list.firstElementChild as HTMLElement).classList.add('active');
     this.list.hidden = false;
   }

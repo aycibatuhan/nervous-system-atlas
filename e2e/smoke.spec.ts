@@ -411,3 +411,51 @@ test('every structure panel shows a Source line that opens the credits', async (
   await expect.poll(() => page.evaluate(() => location.hash), { timeout: 30_000 }).toBe('#/about');
   await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText('About and credits', { timeout: 30_000 });
 });
+
+// ---- interface language (English / Türkçe) ---------------------------------------
+/** boot() only waits for the manifest; the Turkish names live in the content bundle. */
+async function bootWithContent(page: Page, hash: string): Promise<void> {
+  await boot(page, hash);
+  await page.waitForFunction(() => (window as unknown as { atlas: { store: { get(): { loaded: { content: boolean } } } } }).atlas.store.get().loaded.content === true, null, { timeout: 60_000 });
+}
+
+test('#/...?lang=tr renders the interface and the structure names in Turkish', async ({ page }) => {
+  test.setTimeout(180_000);
+  await bootWithContent(page, '#/structure/brainstem?lang=tr');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'tr');
+  const panel = page.locator('#right .content:not([hidden])');
+  // Turkish medical teaching names structures in Latin; the English name stays underneath
+  await expect(panel.locator('h2').first()).toContainText('Truncus encephali', { timeout: 30_000 });
+  await expect(panel.locator('h2 .name-secondary').first()).toHaveText('Brainstem');
+  await expect(page.locator('#toolbar')).toContainText('Sözlük');
+  await expect(page.locator('#toolbar')).toContainText('Vaka soruları');
+  await expect(page.locator('#left .panel-head')).toHaveText('Yapılar');
+  await expect(page.locator('#locale-switch')).toHaveText('EN');
+
+  // untranslated prose is flagged, and only in Turkish
+  await page.goto('/#/syndrome/syn-wallenberg-lateral-medullary?lang=tr');
+  await expect(page.locator('#right .content:not([hidden]) .tag.lang-en').first()).toBeVisible({ timeout: 30_000 });
+  expect(await page.locator('#right .content:not([hidden]) .tag.lang-en').count()).toBeGreaterThan(0);
+
+  // switching back to English drops the flags, the lang attribute and the hash parameter
+  await page.locator('#locale-switch').click();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page.locator('#right .content:not([hidden]) .tag.lang-en')).toHaveCount(0, { timeout: 20_000 });
+  await expect(page.locator('#toolbar')).toContainText('Glossary');
+  await expect.poll(() => page.evaluate(() => location.hash)).not.toMatch(/lang=/);
+});
+
+test('the L shortcut switches language and the choice survives a reload', async ({ page }) => {
+  test.setTimeout(180_000);
+  await bootWithContent(page, '#/structure/putamen');
+  await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText(/Putamen/i, { timeout: 30_000 });
+  await page.keyboard.press('l');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'tr', { timeout: 20_000 });
+  await expect(page.locator('#toolbar')).toContainText('Sözlük');
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('atlas.locale'))).toBe('tr');
+  // no hash: localStorage decides
+  await page.goto('/');
+  await page.waitForFunction(() => (window as unknown as { atlas?: { store: { get(): { loaded: { manifest: boolean } } } } }).atlas?.store.get().loaded.manifest === true, null, { timeout: 60_000 });
+  await expect(page.locator('html')).toHaveAttribute('lang', 'tr');
+  await page.evaluate(() => localStorage.setItem('atlas.locale', 'en'));
+});

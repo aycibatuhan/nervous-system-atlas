@@ -1,6 +1,7 @@
 import type { App } from '../app.ts';
 import type { ManifestMesh, SystemId } from '../types/manifest.ts';
-import { h, clear } from './dom.ts';
+import { h, clear, secondaryName } from './dom.ts';
+import { meshLabel, t } from '../i18n/index.ts';
 import { meshShouldBeVisible, resetSystems, selectStructure, setAllSystems, setStructureVisible, soloGroup, toggleGroup } from '../state/actions.ts';
 import { sameSet } from '../state/actions.ts';
 
@@ -15,21 +16,39 @@ export class TreePanel {
   private master: HTMLInputElement;
   private open = new Set<string>();
   private filter = '';
+  private head: HTMLElement;
+  private allLabel: HTMLElement;
+  private defaultsBtn: HTMLButtonElement;
+  private search: HTMLInputElement;
 
   constructor(private app: App, container: HTMLElement) {
     this.root = h('div', { class: 'tree' });
-    const search = h('input', { class: 'tree-filter', type: 'search', placeholder: 'Filter structures…', oninput: (e: Event) => { this.filter = (e.target as HTMLInputElement).value.toLowerCase(); this.render(); } });
-    this.master = h('input', { type: 'checkbox', class: 'master-box', title: 'Show or hide every structure in the atlas',
+    this.search = h('input', { class: 'tree-filter', type: 'search', oninput: (e: Event) => { this.filter = (e.target as HTMLInputElement).value.toLowerCase(); this.render(); } }) as HTMLInputElement;
+    this.master = h('input', { type: 'checkbox', class: 'master-box',
       onclick: (e: Event) => { e.stopPropagation(); setAllSystems(this.app, (e.target as HTMLInputElement).checked); } });
-    const masterRow = h('div', { class: 'tree-master' }, this.master,
-      h('span', { class: 'name', onclick: () => { this.master.checked = !this.master.checked; setAllSystems(this.app, this.master.checked); } }, 'All structures'),
-      h('button', { class: 'mini', title: 'Back to the default view', onclick: (e: Event) => { e.stopPropagation(); resetSystems(this.app); } }, 'Defaults'));
-    container.append(h('div', { class: 'panel-head' }, 'Structures'), masterRow, search, this.root);
-    this.render();
+    this.allLabel = h('span', { class: 'name', onclick: () => { this.master.checked = !this.master.checked; setAllSystems(this.app, this.master.checked); } });
+    this.defaultsBtn = h('button', { class: 'mini', onclick: (e: Event) => { e.stopPropagation(); resetSystems(this.app); } });
+    const masterRow = h('div', { class: 'tree-master' }, this.master, this.allLabel, this.defaultsBtn);
+    this.head = h('div', { class: 'panel-head' });
+    container.append(this.head, masterRow, this.search, this.root);
+    this.applyLocale();
     app.store.subscribe((s) => s.visibleSystems, () => this.syncChecks(), sameSet);
     app.store.subscribe((s) => s.hiddenStructures, () => this.syncChecks(), sameSet);
     app.store.subscribe((s) => s.shownStructures, () => this.syncChecks(), sameSet);
     app.store.subscribe((s) => s.selectedId, (id, prev) => { this.mark(prev, false); this.mark(id, true); if (id) this.reveal(id); });
+    app.store.subscribe((s) => s.locale, () => this.applyLocale());
+    app.store.subscribe((s) => s.loaded.content, () => this.render());
+  }
+
+  /** Static labels of the panel plus a full re-render (mesh rows carry their own names). */
+  private applyLocale(): void {
+    this.head.textContent = t('tree.head');
+    this.allLabel.textContent = t('tree.all');
+    this.master.title = t('tree.all.title');
+    this.defaultsBtn.textContent = t('tree.defaults');
+    this.defaultsBtn.title = t('tree.defaults.title');
+    this.search.placeholder = t('tree.filter.placeholder');
+    this.render();
   }
 
   private mark(id: string | null, on: boolean): void { const r = id ? this.rows.get(id) : null; r?.classList.toggle('selected', on); }
@@ -66,12 +85,12 @@ export class TreePanel {
     const s = this.app.store.get();
     for (const sys of this.app.manifest.systems) {
       const meshes = (this.app.registry.bySystem.get(sys.id) ?? []).filter((m) => s.showNc || !m.nc);
-      const matching = this.filter ? meshes.filter((m) => (m.name + ' ' + m.structureId).toLowerCase().includes(this.filter)) : meshes;
+      const matching = this.filter ? meshes.filter((m) => this.haystack(m).includes(this.filter)) : meshes;
       if (!matching.length) continue;
       const isOpen = this.open.has(sys.id) || !!this.filter;
       const ids = matching.map((m) => m.id);
       const box = this.groupBox(sys.id, ids, sys.id);
-      const head = h('div', { class: 'tree-sys', title: 'Click to expand · Alt-click to show only this system',
+      const head = h('div', { class: 'tree-sys', title: t('tree.system.title'),
         onclick: (e: MouseEvent) => {
           if (e.altKey) { soloGroup(this.app, ids); return; }
           if (this.open.has(sys.id)) this.open.delete(sys.id); else this.open.add(sys.id);
@@ -89,7 +108,7 @@ export class TreePanel {
         if (sub && groups.size > 1) {
           const subOpen = this.open.has(key) || !!this.filter;
           const subIds = list.map((m) => m.id);
-          this.root.append(h('div', { class: 'tree-sub', dataset: { group: key }, title: 'Click to expand · Alt-click to show only this group',
+          this.root.append(h('div', { class: 'tree-sub', dataset: { group: key }, title: t('tree.group.title'),
             onclick: (e: MouseEvent) => {
               if (e.altKey) { soloGroup(this.app, subIds); return; }
               if (this.open.has(key)) this.open.delete(key); else this.open.add(key);
@@ -104,13 +123,21 @@ export class TreePanel {
     this.syncMaster();
   }
 
+  /** name in both languages plus the id, so the filter finds a structure however the reader types it */
+  private haystack(m: ManifestMesh): string {
+    const n = meshLabel(this.app, m.id);
+    return `${n.primary} ${n.secondary ?? ''} ${m.name} ${m.structureId}`.toLowerCase();
+  }
+
   private row(m: ManifestMesh): HTMLElement {
     const vis = meshShouldBeVisible(this.app, m.id);
+    const label = meshLabel(this.app, m.id);
     const cb = h('input', { type: 'checkbox', checked: vis, onclick: (e: Event) => { e.stopPropagation(); setStructureVisible(this.app, m.id, (e.target as HTMLInputElement).checked); } });
     const row = h('div', { class: 'tree-row' + (this.app.store.get().selectedId === m.id ? ' selected' : ''), dataset: { id: m.id },
       onclick: () => selectStructure(this.app, m.id, { fit: false }), ondblclick: () => selectStructure(this.app, m.id, { fit: true }) },
-      cb, h('span', { class: 'swatch', style: `background:${m.colour}` }), h('span', { class: 'name', title: `${m.source} · ${m.alignment}` }, m.name),
-      m.nc ? h('span', { class: 'tag', title: 'non-commercial licence' }, 'NC') : null);
+      cb, h('span', { class: 'swatch', style: `background:${m.colour}` }),
+      h('span', { class: 'name', title: `${m.source} · ${m.alignment}` }, label.primary, secondaryName(label)),
+      m.nc ? h('span', { class: 'tag', title: t('tree.nc.title') }, t('tree.nc')) : null);
     this.rows.set(m.id, row);
     return row;
   }
