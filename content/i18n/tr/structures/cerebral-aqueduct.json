@@ -1,0 +1,30 @@
+{
+ "id": "cerebral-aqueduct",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "c9f70a22e51fdbab",
+ "fields": {
+  "summary": "Mezensefalonun içinden ventriculus tertius'tan ventriculus quartus'a uzanan, yaklaşık 1 mm genişliğinde 15 mm'lik bir kanaldır; çevresini substantia grisea periaqueductalis sarar, arkasında tectum, önünde tegmentum bulunur. Ventrikül sisteminin en dar noktası ve en sık tıkanma yeridir: konjenital stenoz, tektal gliomlar, pineal kitleler ve kanama sonrası glioz, hepsi ventriculus quartus normalken lateral ventrikülleri ve ventriculus tertius'u genişleten, triventriküler hidrosefali diye bilinen tabloyu yapar.",
+  "anatomy.location": "Mezensefalonun orta hattındadır; ventriculus tertius'un arka ucunda commissura posterior'un altında başlar ve velum medullare superius'un altında ventriculus quartus'a açılır; colliculus düzeyinde hafifçe kıvrım yapar.",
+  "function": "Ventriculus tertius'tan ventriculus quartus'a BOS'un tek geçiş yoludur; her kalp atımıyla BOS buradan atımlı olarak geçer ve T2'de akım boşluğu (flow void) oluşturur.",
+  "imaging.bestView[0].label": "tectum ile tegmentum arasında mezensefalondan geçen aqueductus",
+  "imaging.bestView[1].label": "mezensefalonda merkezî BOS noktası",
+  "imaging.normalAppearance": "Sagital kesitlerde mezensefalonun orta hattında T2'de koyu bir akım boşluğu, aksiyal kesitlerde ise küçük merkezî bir nokta olarak görülür; ağır T2 ağırlıklı CISS lümenini gösterir, faz kontrast MR ise akımı sayısallaştırır. Triventriküler genişlemeyle birlikte akım boşluğunun kaybolması stenozu düşündürür.",
+  "imaging.pathology[0].pathology": "Aqueductus stenozu",
+  "imaging.pathology[0].finding": "Ventriculus quartus normalken lateral ventriküllerin ve ventriculus tertius'un genişlemesi, sagital CISS'te daralmış ya da bir zarla tıkanmış aqueductus ve akım boşluğunun yokluğu; erişkinlikte de ortaya çıkabilir.",
+  "imaging.pathology[1].pathology": "Tektal gliom",
+  "imaging.pathology[1].finding": "Aqueductus'a bası yapan, T2'de parlak ve şişkin tectum.",
+  "imaging.pathology[2].pathology": "Kanama ya da menenjit sonrası aqueductus tıkanması",
+  "imaging.pathology[2].finding": "Aynı triventriküler paterni yapan gliotik daralma.",
+  "imaging.sequenceOfChoice": "Orta hattan geçen sagital T2/CISS; faz kontrast BOS akım çalışması",
+  "clinical.lesionEffects[0].deficit": "Triventriküler hidrosefali: baş ağrısı, papilödem, yürüyüş bozukluğu",
+  "clinical.lesionEffects[0].mechanism": "Aqueductus düzeyindeki tıkanma ventriculus quartus'u etkilemez",
+  "clinical.lesionEffects[1].deficit": "Parinaud sendromu",
+  "clinical.lesionEffects[1].mechanism": "Genişlemiş ventriculus tertius ve recessus suprapinealis'in ya da tabloya yol açan tektal kitlenin dorsal mezensefalona bası yapması",
+  "clinical.examination[0]": "Papilödem",
+  "clinical.examination[1]": "Yukarı bakış ve pupillada ışık-yakın disosiyasyonu",
+  "clinical.examination[2]": "Yürüyüş ve biliş",
+  "clinical.pearls[0]": "Lateral ventriküller ve ventriculus tertius geniş, ventriculus quartus küçükse tıkanıklık aqueductus düzeyindedir",
+  "clinical.pearls[1]": "Erişkinde başlayan aqueductus stenozu normal basınçlı hidrosefaliyi taklit edebilir"
+ }
+}

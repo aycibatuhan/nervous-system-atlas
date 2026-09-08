@@ -1,0 +1,26 @@
+{
+ "id": "pathway-anterior-corticospinal",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "4817e1c338b9c0f5",
+ "fields": {
+  "summary": "Piramidal liflerin medulla oblongata'da çaprazlaşmayan %10–15'i, fissura mediana anterior'un yanında funiculus anterior içinde tractus corticospinalis anterior (ventralis) olarak aşağı iner. Bunların çoğu sonlandıkları segmentte commissura alba anterior'dan çaprazlaşarak gövde ve proksimal ekstremite kaslarının motor nöronlarına ulaşır, bir bölümü de iki taraflı sonlanır; böylece aksiyal kaslar iki taraflı kortikal denetim altındadır. Hemiplejide gövde ve boyun gücünün göreli olarak korunmasının ve gövdenin felç olması için iki taraflı kortikospinal lezyon gerekmesinin nedeni budur.",
+  "origin.note": "Başlıca motor korteksin gövde ve proksimal ekstremite alanlarından ve suplementer motor alandan.",
+  "neuronChain[0].cellBody": "Motor korteksteki piramidal hücre",
+  "neuronChain[0].synapse": "commissura alba anterior'da çaprazlaştıktan sonra spinal internöronlar ve medial motor nöronlar üzerinde",
+  "neuronChain[1].cellBody": "Ön boynuz hücresi (medial motor sütun)",
+  "neuronChain[1].synapse": "nöromusküler kavşak",
+  "decussation.level": "Segment düzeyinde commissura alba anterior",
+  "decussation.note": "Medulla oblongata'da çaprazlaşmaz; segment düzeyinde çaprazlaşır, bir bölüm lif çaprazlaşmadan kalır.",
+  "waypoints[2].note": "dekusasyondan çaprazlaşmadan geçer",
+  "waypoints[3].note": "fissura mediana anterior'un yanında funiculus anterior; başlıca servikal ve üst torakal segmentler",
+  "waypoints[4].note": "commissura alba anterior üzerinden medial motor sütun",
+  "termination": "Boyun, gövde ve proksimal ekstremite kasları için servikal ve üst torakal omuriliğin medial motor nöronları ve internöronları; iki taraflı.",
+  "lesionEffectsByLevel[0].level": "Herhangi bir düzeyde tek taraflı lezyon",
+  "lesionEffectsByLevel[0].effects": "İki taraflı projeksiyon nedeniyle saptanabilir defisit hemen hemen yoktur",
+  "lesionEffectsByLevel[1].level": "İki taraflı lezyonlar (iki taraflı inmeler, servikal miyelopati)",
+  "lesionEffectsByLevel[1].effects": "Gövde güçsüzlüğüyle birlikte gövde kontrolünün ve postural dengenin kaybı",
+  "clinical.pearls[0]": "Aksiyal kaslar iki taraflı kortikal denetim altındadır; tek taraflı inmeler gövde ve boyun gücünü korur",
+  "clinical.pearls[1]": "Traktus çoğunlukla servikal ve üst torakal omurilikte sonlanır, daha aşağıda sıklıkla bulunmaz"
+ }
+}

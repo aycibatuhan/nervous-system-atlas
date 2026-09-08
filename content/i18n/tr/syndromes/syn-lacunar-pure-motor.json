@@ -1,0 +1,31 @@
+{
+  "id": "syn-lacunar-pure-motor",
+  "kind": "syndromes",
+  "lang": "tr",
+  "source": "b2967950f9e16e0a",
+  "fields": {
+    "name": "Saf motor laküner inme",
+    "presentation": "Hipertansif bir hasta, bir tarafta yüz, kol ve bacakta yaklaşık olarak eşit derecede güçsüzlükle uyanır ve başka hiçbir bulgusu yoktur: duyu, görme, konuşmanın içeriği ve farkındalık normaldir, ancak yüzdeki güçsüzlük konuşmayı peltekleştirebilir. Baş ağrısı yoktur ve hasta tümüyle uyanıktır. Güçsüzlük yerleşmeden önce saatler boyunca dalgalı bir seyir gösterebilir.",
+    "deficits[0].distribution": "yüz, kol ve bacak eşit ölçüde",
+    "deficits[0].sign": "Hiperrefleksi ve ekstansör taban derisi yanıtıyla birlikte hemiparezi",
+    "deficits[1].distribution": "yüzün alt yarısı ve dil",
+    "deficits[1].sign": "Kortikobulber tutuluma bağlı dizartri",
+    "deficits[2].distribution": "yok",
+    "deficits[2].sign": "Duyu korunmuştur: saf motor laküner enfarktın ayırt edici bulgusu",
+    "reasoning": "Yüz, kol ve bacağa ait kortikospinal ve kortikobulber lifler capsula interna'nın arka bacağı ile genu'sunda ve yine basis pontis'te birkaç milimetrekarelik bir alana sıkışmıştır; bu yüzden tek bir küçük perforan dal enfarktı hepsini birden ortadan kaldırır ve kortikal homunkulusu izlemek yerine vücut boyunca orantılı bir hemiparezi oluşturur. Lifler her iki yerde de henüz çaprazlaşmamıştır, bu nedenle felç, tıpkı kortikal bir lezyondan sonra olduğu gibi karşı taraftadır. Laküner enfarktı ayıran şey, tabloda bulunmayanlardır: talamokortikal duyu lifleri kapsülde birkaç milimetre arkada ve ponsun tegmentumunda yer alır, radiatio optica çok lateraldedir ve korteks sağlamdır; bu yüzden duyu kaybı, görme alanı defekti, afazi ya da ihmal görülmez. Kapsüler laküner enfarkt ile pontin laküner enfarkt klinik olarak birbirinin aynıdır; kararı görüntüleme verir. Lentikülostriat ve paramedian pontin perforan dallar hipertansiyonun zedelediği son arterler olduğundan enfarkt küçüktür ve iyileşme çoğu kez iyidir.",
+    "imagingFindings[0].pathology": "Akut laküner enfarkt",
+    "imagingFindings[0].finding": "Capsula interna arka bacağında ya da basis pontis'te küçük (15 mm'nin altında) bir difüzyon kısıtlaması odağı; BT ilk gün çoğu kez normaldir.",
+    "imagingFindings[1].pathology": "Kronik laküner enfarkt",
+    "imagingFindings[1].finding": "FLAIR'de parlak bir halkası olan, BOS yoğunluğunda küçük kavite; sıklıkla birden çoktur ve küçük damar hastalığının yaygın beyaz cevher hiperintensitesiyle birliktedir.",
+    "commonCauses[0]": "Tek bir perforan arterin hipertansif lipohiyalinozu",
+    "commonCauses[1]": "Perforan dalın çıkışında mikroateroma",
+    "mimics[0].name": "Kortikal dal enfarktı",
+    "mimics[0].howToDistinguish": "Kortikal bulgular (afazi, ihmal, görme alanı kaybı, bakış deviyasyonu) laküner enfarktı dışlar",
+    "mimics[1].name": "Küçük kanama",
+    "mimics[1].howToDistinguish": "BT'de hiperdens; aynı yerlerde görülür",
+    "management[0]": "Antiagregan tedavi, statin ve kan basıncı kontrolü",
+    "management[1]": "Zaman penceresi içinde başvuran ve yeti yitimine yol açan olgularda tromboliz",
+    "management[2]": "Erken mobilizasyon; iyileşme prognozu iyidir",
+    "imagingHint.label": "capsula interna arka bacağı"
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "id": "pia-mater",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "17b40921edca1c40",
+ "fields": {
+  "summary": "En içteki meninkstir; beyne ve omuriliğe yapışan, her sulkusu ve fissurayı izleyen ince, damardan zengin bir zardır. Beyne giren kan damarlarını taşır ve delici arterlerin çevresinde perivasküler (Virchow–Robin) aralıkları oluşturur; omurilikte ligamenta denticulata ve filum terminale olarak kalınlaşır. Araknoidle birlikte leptomeninksleri oluşturur; leptomeningeal metastazın ve menenjitte görülen kontrastlanmanın yeri burasıdır. Altındaki glia limitans, beynin kendisinin dış sınırıdır.",
+  "anatomy.location": "Doğrudan beynin ve omuriliğin yüzeyinde yer alır, sulkusların içine dalar, beyne giren damarları kılıflar ve omurilikte ligamenta denticulata ile filum terminale'yi oluşturur.",
+  "function": "Beyin yüzeyinin damarsal desteği, interstisyel sıvıyı drene eden perivasküler aralıkların oluşturulması, omuriliğin mekanik olarak sabitlenmesi ve kan-beyin arayüzünün bir parçası olma.",
+  "imaging.bestView[0].label": "bazal gangliyonlarda arteriae lenticulostriatae boyunca perivasküler aralıklar",
+  "imaging.bestView[1].label": "sulkusları izleyen piyal yüzey",
+  "imaging.normalAppearance": "Bir zar olarak görülmez; genişlemiş perivasküler aralıklar, bazal gangliyonlarda ve centrum semiovale'de perforan arterler boyunca yuvarlak, BOS sinyalli noktalar olarak izlenir (lakünlerin aksine FLAIR'de baskılanırlar), leptomeningeal hastalık ise gyrusları ve sulkusları izleyen kontrastlanma olarak görülür.",
+  "imaging.pathology[0].pathology": "Genişlemiş perivasküler aralıklar",
+  "imaging.pathology[0].finding": "Bazal gangliyonlarda ve beyaz cevherde damarları izleyen çok sayıda küçük BOS sinyalli aralık; iyi huyludur.",
+  "imaging.pathology[0].pitfalls": "Lakünlerden (FLAIR'de çevresinde halka bulunur) ve kistik tümörlerden ayırt edin",
+  "imaging.pathology[1].pathology": "Leptomeningeal karsinomatoz",
+  "imaging.pathology[1].finding": "Gyrusları, serebellar folyaları ve kraniyal sinirleri kaplayan nodüler kontrastlanma.",
+  "imaging.pathology[2].pathology": "Piyal arteriyovenöz fistül / yüzeyel siderozis",
+  "imaging.pathology[2].finding": "Kronik subaraknoid kanama sonrasında SWI'da serebellumun ve beyin sapının piyal yüzeyinde hemosiderin boyanması.",
+  "imaging.sequenceOfChoice": "T1+Gd, FLAIR, SWI",
+  "clinical.lesionEffects[0].deficit": "Baş ağrısıyla birlikte çok sayıda kraniyal sinir ve spinal kök felci",
+  "clinical.lesionEffects[0].mechanism": "Tümör ya da enfeksiyonun leptomeningeal infiltrasyonu",
+  "clinical.lesionEffects[1].deficit": "İlerleyici işitme kaybı ve ataksi",
+  "clinical.lesionEffects[1].mechanism": "Serebellumun ve sekizinci sinirlerin yüzeyel siderozisi",
+  "clinical.examination[0]": "Kraniyal sinirler ve kök bulguları",
+  "clinical.examination[1]": "İşitme ve yürüyüş",
+  "clinical.examination[2]": "Leptomeningeal hastalıktan kuşkulanıldığında BOS sitolojisi",
+  "clinical.pearls[0]": "Kanser hastasında kraniyal nöropatilere radiküler bulguların eşlik etmesi leptomeningeal hastalıktır: BOS sitolojisini üç kez tekrarlayın",
+  "clinical.pearls[1]": "Perivasküler aralıklar normaldir ve çok sayıdadır; lakünler patolojiktir ve çevrelerinde halka bulunur"
+ }
+}

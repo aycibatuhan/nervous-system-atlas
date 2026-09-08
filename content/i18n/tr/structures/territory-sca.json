@@ -1,0 +1,31 @@
+{
+ "id": "territory-sca",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "ac0615e475daac19",
+ "fields": {
+  "summary": "Arteria cerebelli superior tarafından beslenen üst serebellum, nucleus dentatus, pedunculus cerebellaris superior ve dorsolateral rostral pons. En saf ekstremite ataksisini yapan serebellar sulama alanıdır; çünkü nucleus dentatus ve onun pedunculus cerebellaris superior üzerinden olan çıkışı bu alanın içindedir. Enfarktları en sık baziler tepeye yerleşen kardiyak embolilerden kaynaklanan sulama alanı da burasıdır.",
+  "anatomy.location": "Fissura horizontalis'in üstündeki serebellar hemisfer ve vermis (lobus anterior ve lobus posterior'un üst bölümü), nucleus dentatus ve diğer derin çekirdekler, mezensefalona doğru tırmanan pedunculus cerebellaris superior ve tractus spinothalamicus ile inen sempatik liflerin geçtiği üst pons'un dorsolateral tegmentumu.",
+  "function": "Nucleus dentatus ve pedunculus cerebellaris superior içindeki dentatorubrotalamik çıkış aracılığıyla aynı taraf ekstremitelerin koordinasyonu; rostral pons tegmentumunda ağrı ve ısı duyusunun aktarımı (tractus spinothalamicus) ve başa giden sempatik çıkış.",
+  "bloodSupply.note": "Bu atlastaki sulama alanı sınırları olasılıksal bir inme lezyon atlasından (Liu ve ark. 2023) gelir ve circulus arteriosus Willisi anatomisine göre kişiden kişiye kayar.",
+  "imaging.bestView[0].label": "tentorium altındaki üst serebellar hemisfer",
+  "imaging.bestView[1].label": "fissura horizontalis'in üstündeki sulama alanı",
+  "imaging.normalAppearance": "Aksiyal kesitlerde tentoriumun hemen altındaki üst serebellum; PICA sulama alanıyla sınırı fissura horizontalis boyunca uzanır.",
+  "imaging.pathology[0].pathology": "SCA enfarktı",
+  "imaging.pathology[0].finding": "Üst serebellumda tentoriuma bakan yüze ulaşan kama biçimli difüzyon kısıtlaması; rostral pons tutulumu değişkendir.",
+  "imaging.sequenceOfChoice": "DAG; BTA",
+  "clinical.lesionEffects[0].deficit": "Aynı tarafta ekstremite ataksisi ve intansiyonel tremor",
+  "clinical.lesionEffects[0].mechanism": "Nucleus dentatus ve pedunculus cerebellaris superior",
+  "clinical.lesionEffects[1].deficit": "Karşı tarafta ağrı ve ısı duyusu kaybı",
+  "clinical.lesionEffects[1].mechanism": "Rostral pons'ta tractus spinothalamicus",
+  "clinical.lesionEffects[2].deficit": "Horner sendromu",
+  "clinical.lesionEffects[2].mechanism": "Tegmentumdaki sempatik lifler",
+  "clinical.examination[0]": "Parmak-burun ve topuk-diz testleri",
+  "clinical.examination[1]": "Vücutta iğne batması duyusu",
+  "clinical.examination[2]": "Pupillalar",
+  "clinical.pearls[0]": "SCA enfarktlarında vertigo hafiftir ya da yoktur; çünkü vestibüler çekirdekler daha aşağıda yer alır",
+  "clinical.pearls[1]": "Büyük SCA enfarktları yukarıda tentoriuma, aşağıda dördüncü ventriküle doğru şişer; bu nedenle 2–3. günde uykulu hale gelen hastada BT tekrarlanmalıdır",
+  "clinical.pearls[2]": "Üst serebellar enfarktlar PICA enfarktlarından daha sık emboliktir; PICA enfarktları ise daha sık vertebral arter hastalığına bağlıdır",
+  "pitfalls[0]": "Karşı tarafta duyu kaybıyla birlikte olan ataksi, talamik ya da kapsüler bir lezyon sanılabilir; aynı taraftaki Horner sendromu ve serebellar bulgular pons ile serebellumu işaret eder"
+ }
+}

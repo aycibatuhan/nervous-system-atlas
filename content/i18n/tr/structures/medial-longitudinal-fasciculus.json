@@ -1,0 +1,33 @@
+{
+ "id": "medial-longitudinal-fasciculus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "249b3f5c89d1daf7",
+ "fields": {
+  "summary": "Beyin sapının boyunca, aqueductus'un ve dördüncü ventrikül tabanının hemen altında uzanan çift paramedian bir demettir. Klinik açıdan belirleyici içeriği, nucleus nervi abducentis'in internükleer nöronlarının karşı taraf nucleus nervi oculomotorii'ye çaprazlaşan aksonlarıdır; bunlar konjuge horizontal bakış için medial rektusu karşı taraf lateral rektusla eşler. Demet ayrıca göz hareketi çekirdeklerine giden vestibüler lifleri taşır ve tractus vestibulospinalis medialis olarak aşağı iner. Lezyonu internükleer oftalmopleji yapar: lezyon tarafındaki göz adduksiyon yapamazken diğer göz nistagmusla abduksiyona gider.",
+  "anatomy.location": "Rostral mezensefalondan (Cajal'ın interstisyel çekirdeği) başlayarak pons ve bulbus içinden servikal omuriliğe kadar inen dorsal paramedian tegmentumda, periakuaduktal gri cevherin ve nucleus nervi hypoglossi ile nucleus nervi abducentis'in ventralinde yer alır.",
+  "function": "III, IV ve VI çekirdekleri arasında konjuge horizontal ve vertikal göz hareketlerini eşgüdümler ve bunları vestibüler çekirdeklere bağlar; baş-göz eşgüdümü için tractus vestibulospinalis medialis'i taşır.",
+  "imaging.bestView[0].label": "dördüncü ventrikülün önünde paramedian dorsal pons tegmentumu",
+  "imaging.bestView[1].label": "mezensefalondan bulbusa dorsal paramedian demet",
+  "imaging.normalAppearance": "Rutin MR'da ayırt edilemez; lezyonları paramedian dorsal tegmentumda küçük noktalar olarak görülür. Multipl sklerozda iki yanlı INO'ya genellikle ventrikül tabanının altında orta hattın iki yanına taşan, FLAIR'de parlak küçük bir lezyon eşlik eder.",
+  "imaging.pathology[0].pathology": "Demiyelinizan INO",
+  "imaging.pathology[0].finding": "Dorsal paramedian pons tegmentumunda T2/FLAIR'de parlak küçük lezyon; multipl sklerozda sıklıkla iki yanlıdır ve 5 mm'lik kesitlerde görünmeyebilir.",
+  "imaging.pathology[0].pitfalls": "İnce kesitli aksiyal FLAIR ya da sagital 3B FLAIR kullanın; rutin MR'ın normal olması demiyelinizan bir INO'yu dışlamaz",
+  "imaging.pathology[1].pathology": "İskemik INO",
+  "imaging.pathology[1].finding": "Damarsal risk etkenleri olan yaşlı hastalarda küçük bir perforan artere bağlı tek yanlı paramedian tegmental difüzyon kısıtlaması.",
+  "imaging.sequenceOfChoice": "Pons ve mezensefalondan geçen ince kesitli FLAIR ve DAG",
+  "clinical.lesionEffects[0].deficit": "Lezyon tarafındaki gözün adduksiyon yapamaması ve diğer gözde abduksiyon nistagmusu (INO)",
+  "clinical.lesionEffects[0].mechanism": "Karşı taraf nucleus nervi abducentis'ten aynı taraf medial rektus alt çekirdeğine giden internöron aksonları",
+  "clinical.lesionEffects[1].deficit": "Konverjansın korunması",
+  "clinical.lesionEffects[1].mechanism": "Konverjans ayrı bir mezensefalik yolağı kullanır",
+  "clinical.lesionEffects[2].deficit": "Skew deviasyon ve vertikal nistagmus",
+  "clinical.lesionEffects[2].mechanism": "MLF içindeki vestibüler lifler",
+  "clinical.lesionEffects[3].deficit": "Nucleus nervi abducentis ya da PPRF lezyonuyla birlikte olduğunda bir buçuk sendromu",
+  "clinical.lesionEffects[3].mechanism": "Aynı taraf bakış felci ile INO'nun bir arada bulunması",
+  "clinical.examination[0]": "Hastadan her iki yana iyice bakmasını isteyin ve adduksiyona giden gözde yavaşlama ya da yetersizlik olup olmadığını izleyin; abduksiyona giden gözde nistagmus arayın",
+  "clinical.examination[1]": "Medial rektusun kendisinin çalıştığını göstermek için konverjansı sınayın",
+  "clinical.examination[2]": "Vertikal bakışı ve skew varlığını değerlendirin",
+  "clinical.pearls[0]": "Genç erişkinde INO aksi kanıtlanana dek multipl sklerozdur; yaşlı hastada genellikle küçük bir inmedir",
+  "clinical.pearls[1]": "Lezyon tarafı, adduksiyon yapamayan gözün tarafıdır"
+ }
+}

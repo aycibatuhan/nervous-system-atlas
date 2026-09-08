@@ -1,0 +1,32 @@
+{
+ "id": "nerve-lateral-antebrachial-cutaneous",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "ff475e2aded65445",
+ "fields": {
+  "summary": "Nervus cutaneus antebrachii lateralis, nervus musculocutaneus'un (C5, C6) duyusal uç dalıdır; dirsekte musculus biceps brachii tendonunun lateralinden çıkar ve önkolun dış yüzünün derisini dirsekten başparmağın köküne kadar innerve eder. Kaybı nervus musculocutaneus yaralanmasına ve üst trunkus pleksus lezyonlarına (Erb felci) eşlik eder; duyusal potansiyeli C6 radikülopatisini (potansiyel normal) üst trunkus pleksopatisinden (potansiyel azalmış) ayırır. Sporcularda musculus biceps brachii aponevrozu altında basıya uğrar ve vena cephalica'dan kan alınırken zedelenir.",
+  "anatomy.location": "Nervus musculocutaneus'un musculus coracobrachialis, musculus biceps brachii ve musculus brachialis'i innerve ettikten sonraki devamıdır; dirseğin hemen üzerinde musculus biceps brachii tendonunun lateralinde, musculus biceps brachii ile musculus brachialis arasından çıkar, derin fasyayı deler ve ön ile arka dallarına ayrılarak vena cephalica ile birlikte önkolun dış yüzünden el bileğine ve tenar bölgeye kadar iner.",
+  "function": "Tümüyle duyusaldır; önkolun dış yüzünün duyusunu nervus musculocutaneus, fasciculus lateralis ve üst trunkus üzerinden C6 arka kök gangliyonuna taşır (C5 katkısı vardır). C6 ile dermatom örtüşmesi yakındır; bu nedenle duyusal potansiyeli C6 kök lezyonunda (gangliyonun proksimalinde) korunur, üst trunkus ya da fasciculus lateralis lezyonunda kaybolur; kolun dış yüzündeki uyuşukluğu lokalize etmenin elektrofizyolojik dayanağı budur. Musculus biceps brachii tendonunun yanında fasyayı deldiği yerde sıkışır ve dirsek ekstansiyonu ile pronasyonda önkolun dış yüzünde ağrı ve uyuşukluk yapar; vena cephalica kanülasyonunda ve dirsek cerrahisinde risk altındadır.",
+  "imaging.bestView[0].label": "musculus biceps brachii tendonunun yanından çıkan nervus cutaneus antebrachii lateralis",
+  "imaging.bestView[1].label": "önkolun dış yüzünde vena cephalica ile birlikte seyreden sinir",
+  "imaging.normalAppearance": "Ultrasonda dirsekte musculus biceps brachii tendonunun lateralinden çıkan ve vena cephalica ile birlikte seyreden küçük bir sinirdir; rutin MR'da görülmez. Sulama alanı: önkolun dış yüzünün derisi.",
+  "imaging.pathology[0].pathology": "Muskülokutanöz nöropati",
+  "imaging.pathology[0].finding": "Musculus biceps brachii ve musculus brachialis'te güçsüzlük ve denervasyonla birlikte azalmış nervus cutaneus antebrachii lateralis duyusal potansiyeli; pleksus lezyonunda tabloya musculus deltoideus ve musculus supraspinatus tutulumu eklenir.",
+  "imaging.pathology[1].pathology": "Üst trunkus pleksopatisi (Erb felci ya da nevraljik amiyotrofi)",
+  "imaging.pathology[1].finding": "Üst trunkusta kalınlaşma ve sinyal değişikliği; azalmış nervus cutaneus antebrachii lateralis potansiyeli bunu C5-6 radikülopatisinden ayırır.",
+  "imaging.pathology[2].pathology": "Musculus biceps brachii aponevrozunda sıkışma",
+  "imaging.pathology[2].finding": "Pronasyonda önkolun dış yüzünde ağrısı olan hastada, sinirin musculus biceps brachii tendonunun lateralinde fasyayı deldiği yerde fokal şişme.",
+  "clinical.lesionEffects[0].deficit": "Önkolun dış yüzünde uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Sinirin, nervus musculocutaneus'un ya da fasciculus lateralis ile üst trunkusun kesintiye uğraması",
+  "clinical.lesionEffects[1].deficit": "Dirsek ekstansiyonu ve pronasyonla ortaya çıkan, önkolun dış yüzünde ağrı",
+  "clinical.lesionEffects[1].mechanism": "Musculus biceps brachii aponevrozunun altında sıkışma",
+  "clinical.lesionEffects[2].deficit": "Deri dalının kendisine bağlı motor defisit bulunmaz",
+  "clinical.lesionEffects[2].mechanism": "Bu dal tümüyle duyusaldır; güçsüzlük varsa nervus musculocutaneus gövdesi tutulmuştur",
+  "clinical.examination[0]": "Önkolun dış yüzündeki duyunun başparmaktaki C6 dermatomuyla karşılaştırılması",
+  "clinical.examination[1]": "Muskülokutanöz ya da üst trunkus tutulumunu saptamak için musculus biceps brachii gücü ve refleksi",
+  "clinical.examination[2]": "Kökü pleksustan ayırmak için duyusal sinir ileti çalışması",
+  "clinical.pearls[0]": "Önkolun dış yüzünde uyuşukluk varken nervus cutaneus antebrachii lateralis potansiyelinin normal olması lezyonun C6 kökünde olduğunu gösterir",
+  "clinical.pearls[1]": "Musculus biceps brachii güçsüzlüğü ve önkolun dış yüzünde uyuşukluk nervus musculocutaneus'a aittir; buna musculus deltoideus güçsüzlüğü eklenirse lezyon üst trunkustadır",
+  "clinical.pearls[2]": "Haltercide önkolun dış yüzündeki ağrı, musculus biceps brachii aponevrozu altındaki bu sinire aittir"
+ }
+}

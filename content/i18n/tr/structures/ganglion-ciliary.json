@@ -1,0 +1,32 @@
+{
+ "id": "ganglion-ciliary",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b622e51c720814cf",
+ "fields": {
+  "summary": "Orbitanın arka bölümünde, nervus opticus'un lateralinde ve musculus rectus lateralis'in medialinde yer alan, toplu iğne başı büyüklüğünde bir parasempatik gangliyondur; nucleus Edinger–Westphal'den çıkıp nervus oculomotorius'un alt bölümü içinde seyreden preganglionik lifler burada sinaps yapar. Postganglionik lifleri nervi ciliares breves içinde göze ulaşır, pupillayı daraltır ve akomodasyon için musculus ciliaris'i kastırır; sempatik ve duyusal lifler ise sinaps yapmadan gangliyondan geçer. Gangliyonun ya da nervi ciliares breves'in hasarı (viral enfeksiyon, orbita cerrahisi, travma) Adie tonik pupillasına yol açar: ışığa zayıf, yakına ise yavaş ve tonik biçimde yanıt veren, seyreltik pilokarpine denervasyon aşırı duyarlılığı gösteren büyük bir pupilla.",
+  "anatomy.location": "Orbita apeksinde, fissura orbitalis superior'un yaklaşık 1 cm önünde, nervus opticus ile musculus rectus lateralis arasında, arteria ophthalmica'nın lateral tarafında yer alır; musculus obliquus inferior'a giden sinirle (parasempatik kök), nervus nasociliaris ile (duyusal kök) ve plexus caroticus internus ile (sempatik kök) bağlantılıdır.",
+  "connections.afferents[0].from": "oculomotor-nucleus (Edinger–Westphal)",
+  "connections.afferents[0].via": "cn-03-oculomotor, alt bölüm",
+  "connections.efferents[0].to": "musculus sphincter pupillae ve musculus ciliaris",
+  "connections.efferents[0].via": "nervi ciliares breves",
+  "function": "Musculus sphincter pupillae ve musculus ciliaris'e giden parasempatik çıkışın aktarma yeridir; dilatatöre giden sempatik lifler ile kornea ve iristen gelen duyusal lifler buradan geçer.",
+  "imaging.bestView[0].label": "nervus opticus'un lateralinde, musculus rectus lateralis'in medialinde orbita apeksi",
+  "imaging.normalAppearance": "Rutin orbita MR'ında seçilemez; bu bölge nervus opticus'un lateralindeki orbita apeksidir. Tonik pupillaya başka orbital bulgular eşlik ettiğinde kitleyi ya da inflamasyonu dışlamak için orbita MR'ı kullanılır.",
+  "imaging.pathology[0].pathology": "Orbita apeksi lezyonu",
+  "imaging.pathology[0].finding": "Apekste gangliyonu ve fissura orbitalis superior'dan geçen sinirleri etkileyen kitle ya da inflamasyon.",
+  "imaging.sequenceOfChoice": "Farmakolojik pupilla testi (%0,1 pilokarpin); yalnızca başka bulgular varsa orbita MR'ı",
+  "clinical.lesionEffects[0].deficit": "Adie tonik pupillası: ışığa zayıf yanıt veren, yakına yavaş ve tonik biçimde daralan, yavaş yeniden genişleyen büyük pupilla",
+  "clinical.lesionEffects[0].mechanism": "Akomodasyon liflerinin sfinktere doğru aberan rejenerasyonuyla giden postganglionik parasempatik denervasyon",
+  "clinical.lesionEffects[1].deficit": "Akomodasyon kaybı ve yakını bulanık görme",
+  "clinical.lesionEffects[1].mechanism": "Musculus ciliaris denervasyonu",
+  "clinical.lesionEffects[2].deficit": "Tonik pupillalarla birlikte aşil reflekslerinin alınamaması (Holmes–Adie sendromu)",
+  "clinical.lesionEffects[2].mechanism": "Eşlik eden, nedeni bilinmeyen benign polinöropati",
+  "clinical.examination[0]": "Aydınlıkta ve karanlıkta pupilla boyutu; segmental (vermiform) iris kasılması için yarık lamba muayenesi",
+  "clinical.examination[1]": "Işık yanıtına karşılık yakın yanıtı (ışık-yakın dissosiyasyonu)",
+  "clinical.examination[2]": "%0,1 pilokarpin ile daralma (aşırı duyarlılık)",
+  "clinical.examination[3]": "Aşil refleksleri",
+  "clinical.pearls[0]": "Işık-yakın dissosiyasyonu gösteren, göz kapağı ve göz hareketleri normal olan genişlemiş bir pupilla üçüncü sinir felci değil, Adie pupillasıdır",
+  "clinical.pearls[1]": "Adie pupillası sık görülür, benigndir ve genellikle genç kadınlardadır; yıllar içinde küçülür"
+ }
+}

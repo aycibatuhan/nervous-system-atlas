@@ -1,0 +1,32 @@
+{
+ "id": "hypothalamus-anterior-area",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b2549ae4dc04f06f",
+ "fields": {
+  "summary": "Ön hipotalamik alan, önde preoptik alan ile arkada tuberal hipotalamus arasında, chiasma opticum'un üstünde ve nucleus paraventricularis ile nucleus supraopticus'un çevresinde yer alan bölgedir. Isı kaybı merkezidir: kanın ısınması nöronlarını etkinleştirir, bunlar terlemeyi, deri damarlarının genişlemesini ve soluma davranışını başlatırken titremeyi ve ısı üretimini baskılar; ayrıca kalp hızını ve kan basıncını düşüren, parasempatik ağırlıklı otonom nöronları barındırır. Hasarı hipertermi, irritasyonu ise hipotermi yapar; bölge suprasellar tümörler, anterior kommünikan anevrizma cerrahisi ve hipotalamik hamartomlar tarafından zedelenir; komşu preoptik çekirdeklerle birlikte uykunun başlatılmasına da katkıda bulunur.",
+  "anatomy.location": "Chiasma opticum'un üstünde ve üçüncü ventrikülün lateralinde, önde nucleus preopticus medialis ile arkada ventromedial ve dorsomedial çekirdekler arasında, nucleus paraventricularis ve nucleus supraopticus'u çevreleyen ön hipotalamus.",
+  "function": "Buradaki sıcağa duyarlı nöronlar kan sıcaklığını deriden gelen termal girdiyle bütünleştirir ve sempatik damar genişlemesi ile terleme yoluyla ısı kaybını başlatırken arka hipotalamusun ısı üretim yolaklarını baskılar; enfeksiyon sırasında prostaglandin E2 ayar noktalarını yeniden belirlediğinde ateşi de bu nöronlar üretir, antipiretiklerin burada etki etmesinin nedeni budur. Alan, nucleus dorsalis nervi vagi'ye ve nucleus tractus solitarii'ye projeksiyon göndererek kalbi yavaşlatan ve kan basıncını düşüren, parasempatik etkinliği artıran otonom nöronlar içerir; preoptik uyku-etkin nöronlarla birlikte uyanıklık sistemlerini inhibe ederek non-REM uykuyu destekler. Ayrıca saldırganlığı ve yakınındaki oksitosin ve vazopressin nöronları aracılığıyla sosyal davranışı düzenler.",
+  "imaging.bestView[0].label": "chiasma opticum'un üstünde ön hipotalamus",
+  "imaging.bestView[1].label": "preoptik ve tuberal bölgeler arasında ön hipotalamik alan",
+  "imaging.normalAppearance": "Koronal kesitlerde chiasma'nın üstünde, commissura anterior ve fornix sütunlarının altında üçüncü ventrikülün ön duvarındaki gri cevher; klinik MR'da tek tek çekirdekler seçilemez.",
+  "imaging.pathology[0].pathology": "Ön hipotalamik hasar sonrası hipertermi",
+  "imaging.pathology[0].finding": "Anevrizma cerrahisi, kraniyofarengiom rezeksiyonu ya da kafa travması sonrası ön hipotalamusta sinyal değişikliği ya da kanama; enfeksiyon olmaksızın kontrol edilemeyen ateşle birlikte.",
+  "imaging.pathology[1].pathology": "Suprasellar kitle",
+  "imaging.pathology[1].finding": "Ön hipotalamusa doğru büyüyen kraniyofarengiom, germinom ya da gliom; ısı düzenlenmesi, uyku ve endokrin bozukluklarla birlikte.",
+  "imaging.pathology[2].pathology": "Wernicke ensefalopatisi",
+  "imaging.pathology[2].finding": "Medial talamuslarda, corpus mammillare'lerde ve periakuaduktal bölgede hipotalamusa uzanabilen ve hipotermiyle giden simetrik FLAIR değişikliği.",
+  "clinical.lesionEffects[0].deficit": "Hipertermi",
+  "clinical.lesionEffects[0].mechanism": "Isı kaybı merkezinin kaybı; ısı üretiminin karşı koyacak bir denge olmadan sürmesi",
+  "clinical.lesionEffects[1].deficit": "İnsomni",
+  "clinical.lesionEffects[1].mechanism": "Ön hipotalamik ve preoptik uykuyu destekleyen nöronların kaybı",
+  "clinical.lesionEffects[2].deficit": "İrritatif lezyonlarda hipotermi ve bradikardi",
+  "clinical.lesionEffects[2].mechanism": "Isı kaybı ve parasempatik çıktıların aşırı etkinliği",
+  "clinical.examination[0]": "Suprasellar lezyonu olan hastada enfeksiyöz nedeni olmayan vücut sıcaklığı seyri",
+  "clinical.examination[1]": "Uyku öyküsü ve gündüz uykululuğu",
+  "clinical.examination[2]": "Otonom işlev: kalp hızı değişkenliği ve ortostatik kan basıncı",
+  "clinical.pearls[0]": "Ön hipotalamus ısıyı kaybettirir, arka hipotalamus ısı üretir: ön hasarda ateş, arka hasarda soğukluk olur",
+  "clinical.pearls[1]": "Hipotalamik cerrahi sonrası santral ateş antibiyotiklere yanıt vermez, ancak soğutmaya yanıt verir",
+  "clinical.pearls[2]": "Ateşin kendisi bir ön hipotalamus eylemidir: prostaglandin termostatı yeniden ayarlar"
+ }
+}

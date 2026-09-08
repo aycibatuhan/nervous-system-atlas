@@ -1,0 +1,32 @@
+{
+ "id": "pathway-corticobulbar",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "44f5df13d2cee5c7",
+ "fields": {
+  "summary": "Kortikobulber lifler motor korteksin yüz ve ağız alanlarından köken alır, tractus corticospinalis ile birlikte capsula interna'nın genusundan ve crus'un medial bölümünden iner ve beyin sapında V, VII, IX, X, XI ve XII'nin motor çekirdeklerine ayrılır. Projeksiyon çekirdeklerin çoğuna iki taraflıdır, ancak nucleus nervi facialis'in alt yüz alt çekirdeğine ve nucleus nervi hypoglossi'ye (genioglossus) başlıca karşı taraflıdır; bu nedenle hemisferik bir inme alnın korunduğu alt yüz güçsüzlüğü ve lezyonun karşı tarafına deviye olan bir dil yaparken, iki taraflı lezyonlar canlı çene refleksi, spastik dizartri, disfaji ve duygusal labilite ile giden psödobulber paralizi doğurur.",
+  "origin.note": "Gyrus precentralis'in alt bölümü (yüz, dil, larinks alanları) ve frontal operkulum.",
+  "neuronChain[0].cellBody": "Lateral motor korteksteki piramidal hücre",
+  "neuronChain[0].synapse": "kraniyal sinir motor çekirdeklerinin çevresindeki internöronlar ve çekirdeklerin kendileri üzerinde",
+  "neuronChain[1].cellBody": "Kraniyal sinir motor nöronu",
+  "neuronChain[1].synapse": "nöromusküler kavşak",
+  "decussation.level": "Her çekirdeğin kendi düzeyinde",
+  "decussation.note": "V'e, VII'nin üst bölümüne, IX, X ve XI'e iki taraflı; VII'nin alt bölümüne ve XII'ye başlıca karşı taraflı.",
+  "waypoints[0].note": "Sylvius fissürünün üzerindeki yüz alanı",
+  "waypoints[1].note": "genu",
+  "waypoints[2].note": "kortikospinal liflerin medialinde",
+  "waypoints[3].note": "V'in motor çekirdeği",
+  "waypoints[4].note": "üst yüz iki taraflı, alt yüz karşı taraflı",
+  "waypoints[6].note": "genioglossus'a başlıca karşı taraflı",
+  "termination": "Nervus trigeminus, nervus facialis, nervus glossopharyngeus, nervus vagus, nervus accessorius ve nervus hypoglossus'un motor çekirdekleri.",
+  "lesionEffectsByLevel[0].level": "Tek taraflı hemisferik ya da kapsüler lezyon",
+  "lesionEffectsByLevel[0].effects": "Karşı tarafta alnın korunduğu alt yüz güçsüzlüğü; dil lezyonun karşı tarafına deviye olur; hafif dizartri; disfaji yoktur",
+  "lesionEffectsByLevel[1].level": "İki taraflı lezyonlar (iki taraflı inmeler, ALS, MS)",
+  "lesionEffectsByLevel[1].effects": "Psödobulber paralizi: spastik dizartri, disfaji, canlı çene ve öğürme refleksi, duygusal labilite",
+  "lesionEffectsByLevel[2].level": "Nucleus nervi facialis'in altındaki pontin lezyon",
+  "lesionEffectsByLevel[2].effects": "Kortikobulber değildir: karşı tarafta ekstremite güçsüzlüğüyle birlikte alt motor nöron tipi fasiyal paralizi",
+  "clinical.pearls[0]": "Alnın korunması kortikobulber (üst motor nöron) fasiyal paralizinin parmak izidir",
+  "clinical.pearls[1]": "Psödobulber paralizi için iki lezyon gerekir: iki taraflı kapsüler ya da pontin inmeleri veya motor nöron hastalığını arayın",
+  "clinical.pearls[2]": "Duygusal yüz hareketleri kortikobulber lezyonlardan sonra korunur, çünkü ayrı bir limbik-beyin sapı yolunu kullanırlar"
+ }
+}

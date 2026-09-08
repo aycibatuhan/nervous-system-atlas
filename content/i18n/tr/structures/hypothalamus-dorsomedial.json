@@ -1,0 +1,32 @@
+{
+ "id": "hypothalamus-dorsomedial",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "d7da54645e8eb3b2",
+ "fields": {
+  "summary": "Nucleus dorsomedialis, tuberal hipotalamusta nucleus ventromedialis'in üstünde ve üçüncü ventrikülün yanında, nucleus paraventricularis'in altında, fornix ve lateral hipotalamik alanın medialinde yer alır. Nucleus suprachiasmaticus'tan gelen sirkadiyen bilgiyi uykuyu ve uyanıklığı, beslenmeyi, ısıyı ve kortikosteroid salgısını denetleyen sistemlere ileten bir eşgüdüm çekirdeğidir; beyin sapının sempatik premotor nöronları aracılığıyla stres ve ateş yanıtlarının kardiyovasküler ve termojenik bileşenlerini yürütür. Hayvanları beklenen bir öğün öncesinde uyandıran besin bekleme ritmine katkıda bulunur; hasarı etkinlik ve beslenmenin sirkadiyen ritimlerini ve strese verilen kardiyovasküler yanıtı köreltir.",
+  "anatomy.location": "Medial tuberal hipotalamusta, üstte nucleus paraventricularis ile altta nucleus ventromedialis arasında; üçüncü ventrikülün lateralinde, lateral hipotalamusun ve fornix'in inen sütununun medialinde, ön hipotalamik alanın arkasında ve arka hipotalamusun önündedir.",
+  "function": "Nucleus dorsomedialis, nucleus suprachiasmaticus saatinin subparaventriküler bölge çıktısını alır ve dağıtır: uykuyu ve uyanıklığı zamanlamak için ventrolateral preoptik ve oreksin nöronlarına, kortikotropin salgılatıcı hormon salınımını zamanlamak için nucleus paraventricularis'e, termojenezi ve kan basıncını zamanlamak için nucleus raphes pallidus'a ve rostral ventrolateral medullaya. Stresle uyarılması aynı beyin sapı projeksiyonları aracılığıyla taşikardi, hipertansiyon ve hipertermi yapar; prostaglandin preoptik alana etki ettiğinde kahverengi yağ termojenezini ve deri damarlarının büzülmesini başlatarak enfeksiyon ateşine aracılık eder. Ayrıca leptine ve ghreline duyarlı nöronları aracılığıyla beslenmenin zamanlanmasına katılır.",
+  "imaging.bestView[0].label": "üçüncü ventrikülün yanında, nucleus ventromedialis'in üstünde nucleus dorsomedialis",
+  "imaging.bestView[1].label": "nucleus paraventricularis'in altında medial tuberal hipotalamus",
+  "imaging.normalAppearance": "Koronal kesitlerde infundibulum düzeyinin üstündeki medial tuberal hipotalamusun gri cevheri; atlas olmadan komşu çekirdeklerden ayırt edilemez.",
+  "imaging.pathology[0].pathology": "Sirkadiyen bozulmayla giden hipotalamik tümör",
+  "imaging.pathology[0].finding": "Uyku-uyanıklık ve beslenme ritimleri düzensizleşmiş, stres yanıtları anormal olan hastada tuberal hipotalamik kitle (gliom, germinom, hamartom).",
+  "imaging.pathology[1].pathology": "Wernicke ensefalopatisi",
+  "imaging.pathology[1].finding": "Otonom dengesizlik ve hipotermiyle birlikte simetrik periventriküler hipotalamik ve medial talamik FLAIR değişikliği.",
+  "imaging.pathology[2].pathology": "Beyin hasarı sonrası paroksismal sempatik hiperaktivite",
+  "imaging.pathology[2].finding": "Epizodik taşikardi, hipertansiyon, hipertermi ve postürle giden diffüz aksonal hasar ya da hipotalamik hasar; dorsomedial-beyin sapı sempatik yolağı disinhibe olmuştur.",
+  "clinical.lesionEffects[0].deficit": "Etkinlik, beslenme ve kortikosteroid salgısının sirkadiyen ritimlerinin kaybı",
+  "clinical.lesionEffects[0].mechanism": "Saat çıktısının nucleus dorsomedialis üzerinden aktarımının kesintiye uğraması",
+  "clinical.lesionEffects[1].deficit": "Kardiyovasküler ve termal stres yanıtlarının körelmesi",
+  "clinical.lesionEffects[1].mechanism": "Sempatik premotor nöronlara giden dorsomedial dürtünün kaybı",
+  "clinical.lesionEffects[2].deficit": "İrritatif lezyonlarda paroksismal sempatik fırtınalar",
+  "clinical.lesionEffects[2].mechanism": "Beyin sapı sempatik yolağının karşı koyulmadan dorsomedial etkinleşmesi",
+  "clinical.examination[0]": "Aktigrafi ve uyku-uyanıklık günlüğü",
+  "clinical.examination[1]": "Stres etkenlerine kan basıncı ve kalp hızı yanıtı",
+  "clinical.examination[2]": "Vücut sıcaklığı örüntüsü ve bunun günün saatiyle ilişkisi",
+  "clinical.pearls[0]": "Nucleus suprachiasmaticus zamanı tutar; nucleus dorsomedialis hipotalamusun geri kalanına saatin kaç olduğunu söyler",
+  "clinical.pearls[1]": "Ağır beyin hasarı sonrası sempatik fırtınalar nöbet değil, hipotalamik-beyin sapı serbestleşme olgusudur",
+  "clinical.pearls[2]": "Ateş için hem preoptik termostat hem de dorsomedial-rafe termojenik yolak gereklidir"
+ }
+}

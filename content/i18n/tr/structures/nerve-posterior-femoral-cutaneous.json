@@ -1,0 +1,32 @@
+{
+ "id": "nerve-posterior-femoral-cutaneous",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "40be47c396e4db9a",
+ "fields": {
+  "summary": "Nervus cutaneus femoris posterior sakral pleksustan (S1, S2, S3) çıkar, nervus ischiadicus ve nervus gluteus inferior ile birlikte musculus piriformis'in altından foramen ischiadicum majus üzerinden pelvisi terk eder ve musculus gluteus maximus'un altından, uyluğun arkasında fasyanın derininden aşağı iner; kalçanın alt bölümünün, perinenin, uyluğun arka yüzünün ve baldırın üst bölümünün derisini innerve eder. Siyatik nöropatiyi sakral pleksopati ya da radikülopatiden ayıran duyu siniridir: düşük ayakla birlikte uyluğun arka yüzünde uyuşukluk pleksusu ya da kökleri gösterir, çünkü nervus ischiadicus'un kendisi uylukta deri innervasyonu yapmaz; kalça cerrahisinde ve enjeksiyonlarda nervus ischiadicus ile birlikte yaralanır, uzun süre oturmakla ve hamstring başlangıcında basıya uğrar.",
+  "anatomy.location": "Sakral pleksustan foramen ischiadicum majus'un infrapiriform bölümünden geçer, nervus ischiadicus'un medialinde ve musculus gluteus maximus'un altında ilerler; kalçaya nervi clunium inferiores dallarını ve bir perineal dal verir, sonra uyluğun arka yüzünün orta hattında fascia lata'nın altında fossa poplitea'ya iner, burada fasyayı delerek baldırın üst bölümüne devam eder.",
+  "function": "Tümüyle duyusaldır; kalçanın alt bölümünden, perineden ve skrotumun ya da labiumun arka yüzünden, uyluğun arka yüzünden ve baldırın üst arka bölümünden gelen duyuyu sakral pleksus üzerinden S1-S3 arka kök gangliyonlarına taşır. Uyluk düzeyindeki siyatik nöropatide innervasyon alanı korunur; bu nedenle siyatik tipte güçsüzlükle birlikte uyluğun arka yüzünde uyuşukluk lezyonu incisura ischiadica, pleksus ya da kök düzeyine yerleştirir (piriformis bölgesi, pelvis tümörü, sakral kırık, radyoterapi). Perineal dalı sakral pleksopatideki perineal uyuşukluğu, nervi clunium inferiores dalları da işiyal bursitin ve sert bir yüzeye oturmanın yol açtığı kalça ağrısını açıklar; sinir tuber ischiadicum'a karşı sıkıştığında bu tabloya kimi zaman cüzdan nöriti denir.",
+  "imaging.bestView[0].label": "musculus gluteus maximus'un altında ve uyluğun arka yüzü boyunca nervus cutaneus femoris posterior",
+  "imaging.bestView[1].label": "musculus piriformis'in altında nervus ischiadicus'un medialindeki sinir",
+  "imaging.normalAppearance": "MR nörografi ve ultrasonda infrapiriform foramende ve uyluğun arka yüzünde nervus ischiadicus'un medialinde bir sinir olarak görülür; innervasyon alanı uyluğun arka yüzü ve kalçanın alt bölümüdür.",
+  "imaging.pathology[0].pathology": "Sakral pleksopati",
+  "imaging.pathology[0].finding": "Tümör, radyoterapi ya da enflamasyona bağlı olarak sakral pleksusta kalınlaşma ya da kontrastlanma; uyluğun arka yüzünde uyuşukluk, düşük ayak ve gluteal güçsüzlük eşlik eder; nervus cutaneus femoris posterior tutulumu lezyonu nervus ischiadicus'un proksimaline yerleştirir.",
+  "imaging.pathology[1].pathology": "İncisura ischiadica düzeyinde yaralanma (kalça cerrahisi, enjeksiyon)",
+  "imaging.pathology[1].finding": "İnfrapiriform foramende nervus ischiadicus ve nervus cutaneus femoris posterior'da sinyal değişikliği; uyluğun arka yüzünde duyu kaybı eşlik eder.",
+  "imaging.pathology[2].pathology": "Tuber ischiadicum düzeyinde tuzaklanma",
+  "imaging.pathology[2].finding": "Hamstring başlangıcında sinirin ve nervi clunium inferiores dallarının basıya uğraması; oturmakla kalçada ve uyluğun arka yüzünde ağrı.",
+  "clinical.lesionEffects[0].deficit": "Uyluğun arka yüzünde, kalçanın alt bölümünde ve perinede uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Sinirin, sakral pleksusun ya da S1-S3 köklerinin lezyonu",
+  "clinical.lesionEffects[1].deficit": "Siyatik paternli güçsüzlükte proksimal (pleksus ya da kök) lezyonun göstergesi",
+  "clinical.lesionEffects[1].mechanism": "Nervus ischiadicus uylukta deri innervasyonu yapmaz",
+  "clinical.lesionEffects[2].deficit": "Oturmakla ağrı",
+  "clinical.lesionEffects[2].mechanism": "Tuber ischiadicum'a karşı tuzaklanma",
+  "clinical.examination[0]": "Siyatik paternli güçsüzlüğün eşlik ettiği her düşük ayakta uyluğun arka yüzünde duyuyu test edin",
+  "clinical.examination[1]": "Pleksus tutulumunu saptamak için gluteal kas gücü ve kalça ekstansiyonu",
+  "clinical.examination[2]": "S2-S3 alanı uyuşuk olduğunda perineal duyu ve sfinkter işlevi",
+  "clinical.pearls[0]": "Düşük ayakla birlikte uyluğun arka yüzünün uyuşuk olması lezyonun nervus ischiadicus'un üzerinde, pleksusta ya da köklerde olduğunu gösterir",
+  "clinical.pearls[1]": "Nervus ischiadicus uylukta deri innerve etmez; bu siniri kullanışlı kılan da budur",
+  "clinical.pearls[2]": "Oturmakla ortaya çıkan kalça ağrısı disk değil, tuber ischiadicum'a karşı sıkışan bu sinir olabilir"
+ }
+}

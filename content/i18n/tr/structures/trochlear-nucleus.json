@@ -1,0 +1,32 @@
+{
+ "id": "trochlear-nucleus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "9fc2c56356e32aca",
+ "fields": {
+  "summary": "Colliculus inferior düzeyinde, ventral periakuaduktal gri cevher içinde, okülomotor kompleksin hemen altında yer alan küçük bir motor çekirdektir. Aksonları başka hiçbir kraniyal sinirin yapmadığı bir şey yapar: aqueductus'un çevresinde dorsale doğru seyreder, velum medullare superius'ta çaprazlaşır ve beyin sapının dorsal yüzünden colliculus inferior'un altından çıkar. Bu nedenle sinir karşı taraftaki musculus obliquus superior'u innerve eder; nükleer ya da fasiküler bir lezyon karşı tarafta, sinir çıktıktan sonraki bir lezyon ise aynı tarafta paraliziye yol açar.",
+  "anatomy.location": "Colliculus inferior düzeyinde ventral periakuaduktal gri cevher içinde, MLF'nin dorsalinde, üzerindeki nucleus nervi oculomotorii ile aynı hizada.",
+  "connections.efferents[0].to": "musculus obliquus superior (karşı taraf)",
+  "connections.efferents[0].via": "cn-04-trochlear",
+  "function": "Adduksiyondaki gözü aşağı çeviren ve abduksiyondaki göze intorsiyon yaptıran musculus obliquus superior'un motor innervasyonu; baş yana eğildiğinde gözlerin düzlemde kalmasını sağlar.",
+  "imaging.bestView[0].label": "colliculus inferior düzeyinde ventral periakuaduktal gri cevher",
+  "imaging.bestView[1].label": "sinirin colliculus inferior'un altından dorsal çıkışı",
+  "imaging.normalAppearance": "Ayırt edilemez; sinirin kendisi en ince kraniyal sinirdir ve yalnızca ara sıra, ambiyens sisternde mezensefalonun çevresinde kıvrılırken yüksek çözünürlüklü T2'de görülebilir.",
+  "imaging.pathology[0].pathology": "Dorsal mezensefalik enfarkt ya da kanama",
+  "imaging.pathology[0].finding": "Kaudal periakuaduktal gri cevherin ya da velum medullare superius'un küçük lezyonu; karşı tarafta musculus obliquus superior paralizisi görülür.",
+  "imaging.pathology[1].pathology": "Travmatik troklear paralizi",
+  "imaging.pathology[1].finding": "Görüntüleme genellikle normaldir; uzun ve ince sinir kapalı kafa travmasında dorsal çıkış yerinde yırtılır.",
+  "imaging.sequenceOfChoice": "Kaudal mezensefalondan geçen ince kesit aksiyal DAG/T2; izole paralizilerde görüntüleme sıklıkla normaldir",
+  "clinical.lesionEffects[0].deficit": "Aşağı ve içe bakışta artan vertikal diplopi; göz ekstorsiyondadır",
+  "clinical.lesionEffects[0].mechanism": "Dekusasyondan önce çekirdek ya da fasikül",
+  "clinical.lesionEffects[1].deficit": "Aynı paralizi, aynı tarafta",
+  "clinical.lesionEffects[1].mechanism": "Çaprazlaşıp çıktıktan sonraki sinir",
+  "clinical.lesionEffects[2].deficit": "Başın tutulan gözün karşı tarafına doğru kompansatuvar eğilmesi",
+  "clinical.lesionEffects[2].mechanism": "Vertikal ve torsiyonel uyumsuzluğu azaltır",
+  "clinical.examination[0]": "Dokuz bakış yönünde kapama-açma testi",
+  "clinical.examination[1]": "Park üç basamak testi: hipertropya karşı tarafa bakışta ve aynı tarafa baş eğiminde artar",
+  "clinical.examination[2]": "Eski fotoğraflara bakarak uzun süredir var olan bir baş eğikliği olup olmadığını araştırın",
+  "clinical.pearls[0]": "Nucleus nervi trochlearis lezyonları karşı tarafta paralizi yapar; diğer bütün kraniyal motor çekirdekler kendi taraflarını innerve eder",
+  "clinical.pearls[1]": "Kafa travmasından sonra iki yanlı dördüncü sinir paralizisi okumada ve merdiven inmede güçlük ile çene aşağıda duruşa yol açar"
+ }
+}

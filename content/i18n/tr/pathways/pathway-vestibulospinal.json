@@ -1,0 +1,27 @@
+{
+ "id": "pathway-vestibulospinal",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "26ba7a3300f599bb",
+ "fields": {
+  "summary": "Vestibüler bilgiyi omuriliğe iki traktus taşır. Nucleus vestibularis lateralis'ten (Deiters) çıkan tractus vestibulospinalis lateralis, funiculus anterior içinde çaprazlaşmadan omuriliğin bütün uzunluğu boyunca iner ve otolitler ile serebellar vermis ve nucleus fastigii tarafından sürülerek ekstansör (antigravite) motor nöronları uyarır; nucleus vestibularis medialis'ten çıkan tractus vestibulospinalis medialis ise MLF içinde iki taraflı olarak servikal omuriliğe iner ve baş ile boyun pozisyonunu göz hareketleriyle uyumlandırır. Tractus reticulospinalis ile birlikte postürün medial (ventromedial) inen sistemini oluştururlar; karşılıksız kalan ekstansör uyarıları da deserebre rijiditeyi doğurur.",
+  "origin.note": "Nucleus vestibularis lateralis (lateral traktus) ve nucleus vestibularis medialis (medial traktus); nervus vestibularis'ten ve serebellumdan girdi alırlar.",
+  "neuronChain[0].cellBody": "Vestibüler çekirdek nöronu",
+  "neuronChain[0].synapse": "spinal internöronlar ve doğrudan ekstansör motor nöronlar",
+  "neuronChain[1].cellBody": "Motor nöron",
+  "neuronChain[1].synapse": "antigravite kasları",
+  "waypoints[0].note": "pontomedüller bileşkede nucleus lateralis ve nucleus medialis",
+  "waypoints[1].note": "lateral traktus ventrolateral medulla oblongata'da; medial traktus MLF içinde",
+  "waypoints[2].note": "funiculus anterior; medial traktus servikal omurilikte sonlanır, lateral traktus sakral omuriliğe kadar iner",
+  "waypoints[3].note": "ekstansör motor nöronlar ve internöronlar",
+  "termination": "Gövdenin ve ekstremitelerin ekstansör motor nöronları (lateral traktus) ve boyun motor nöronları (medial traktus, iki taraflı).",
+  "lesionEffectsByLevel[0].level": "Nervus vestibularis ya da vestibüler çekirdekler (tek taraflı)",
+  "lesionEffectsByLevel[0].effects": "Lezyon tarafına düşme ve past-pointing, lateropulsiyon",
+  "lesionEffectsByLevel[1].level": "Vestibüler çekirdeklerle nucleus ruber arasında beyin sapı kesisi",
+  "lesionEffectsByLevel[1].effects": "Deserebre rijidite: karşılıksız kalan ekstansör uyarı",
+  "lesionEffectsByLevel[2].level": "Serebellar vermis (lobus anterior)",
+  "lesionEffectsByLevel[2].effects": "Nucleus vestibularis lateralis üzerindeki inhibisyonun kaybı: ekstansör tonusta artış ve yürüyüş ataksisi",
+  "clinical.pearls[0]": "Tractus vestibulospinalis lateralis deserebre postürün ekstansör motorudur",
+  "clinical.pearls[1]": "Akut vestibüler lezyonu olan hastalar lezyon tarafına düşer; traktus o taraftaki itişini yitirmiştir"
+ }
+}

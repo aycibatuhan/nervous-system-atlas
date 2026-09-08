@@ -1,0 +1,32 @@
+{
+ "id": "nerve-genitofemoral",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "86df9da38ea45fb7",
+ "fields": {
+  "summary": "Nervus genitofemoralis, musculus psoas major içinde L1 ve L2 köklerinden çıkar, kasın ön yüzünde belirir ve periton arkasında aşağı inerek ligamentum inguinale'nin üzerinde iki dala ayrılır: canalis inguinalis'e girip musculus cremaster'i ve skrotum ya da labium derisini innerve eden genital dal ile ligamentum inguinale'nin altından geçip trigonum femorale üzerinde uyluğun üst ön yüzünün derisini innerve eden femoral dal. Kremaster refleksinin efferent kolunu ve afferent kolunun bir bölümünü oluşturur, herni onarımı ve pelvis cerrahisi sonrasında sıkışır ve sulama alanı L1-L2 lezyonlarını daha lateralde kalan nervus cutaneus femoris lateralis ve nervus ilioinguinalis örüntülerinden ayırır.",
+  "anatomy.location": "Musculus psoas içinde L1 ve L2'den oluşur, kasın ön yüzünü deler, periton ve üreterin altında kas üzerinde aşağı iner, vasa iliaca externa'yı çaprazlar ve dallarına ayrılır: genital dal funiculus spermaticus (ya da ligamentum teres uteri) ile birlikte anulus inguinalis profundus'a girerek musculus cremaster'e ve skrotum ya da labium derisine gider; femoral dal arteria femoralis'in lateralinde ligamentum inguinale'nin altından geçerek uyluğun üst bölümünün derisine ulaşır.",
+  "function": "Genital dalı musculus cremaster'in motor, skrotumun ön yüzünün ya da labium majus'un duyusal innervasyonunu sağlar ve kremaster refleksinin efferent kolunu oluşturur (uyluğun iç yüzünün sıvazlanması testisi yukarı çeker); bu refleksin kaybı L1-L2 kök, pleksus ya da sinir lezyonunu veya daha yukarıdaki bir kortikospinal lezyonu gösterir. Femoral dalı ise ligamentum inguinale'nin altında uyluğun üst ön yüzünün duyusunu taşır. İnguinal herni yaması, varikoselektomi, apendektomi ve psoas apsesinin yaptığı sıkışma ya da yaralanma; kasıkta, skrotumda ve uyluğun üst bölümünde kalça ekstansiyonuyla artan, fleksiyonla azalan ağrı ve uyuşukluk yapar; sinirin bloğu inguinal cerrahinin anestezisinin bir parçasıdır.",
+  "imaging.bestView[0].label": "musculus psoas'ın ön yüzünde ligamentum inguinale'nin üzerinde dallarına ayrılan nervus genitofemoralis",
+  "imaging.bestView[1].label": "periton altında musculus psoas üzerinde sinir",
+  "imaging.normalAppearance": "MR nörografide musculus psoas'ın ön yüzünde küçük bir sinirdir; canalis inguinalis düzeyindeki dalları ultrasonla görülür. Sulama alanı: skrotumun ön yüzü ya da labium ve uyluğun üst ön yüzü.",
+  "imaging.pathology[0].pathology": "Herni onarımı sonrası nevralji",
+  "imaging.pathology[0].finding": "Genital dalın canalis inguinalis düzeyinde yama ya da sütur tarafından sıkıştırılması; kasık ve skrotum ağrısı yapar, ultrason eşliğinde blok hem tanı koydurur hem tedavi eder.",
+  "imaging.pathology[1].pathology": "Psoas apsesi ya da retroperitoneal kitle",
+  "imaging.pathology[1].finding": "Musculus psoas içinde ya da üzerinde siniri tutan sıvı koleksiyonu veya tümör; kasık ağrısı, fleksiyonda duran kalça ve trigonum femorale'de duyu kaybı eşlik eder.",
+  "imaging.pathology[2].pathology": "L1-L2 radikülopatisi",
+  "imaging.pathology[2].finding": "Kasık ağrısı ve alınamayan kremaster refleksiyle giden üst lomber disk ya da foraminal lezyon.",
+  "clinical.lesionEffects[0].deficit": "Kasıkta, skrotumda ya da labiumda ağrı ve uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Genital dalın sıkışması ya da zedelenmesi",
+  "clinical.lesionEffects[1].deficit": "Uyluğun üst ön yüzünde uyuşukluk",
+  "clinical.lesionEffects[1].mechanism": "Femoral dal tutulumu",
+  "clinical.lesionEffects[2].deficit": "Kremaster refleksinin alınamaması",
+  "clinical.lesionEffects[2].mechanism": "L1-L2 refleks arkının kaybı ya da onun üzerinde bir kortikospinal lezyon",
+  "clinical.examination[0]": "Her iki tarafta kremaster refleksi",
+  "clinical.examination[1]": "Trigonum femorale üzerinde ve skrotumun ön yüzünde ya da labiumda duyu",
+  "clinical.examination[2]": "Kalça ekstansiyonuyla ağrının yeniden ortaya çıkması ve fleksiyonla azalması; tanısal blok",
+  "clinical.pearls[0]": "Herni onarımından sonraki kasık ağrısı bu sinire ya da komşularına aittir; blok hangisi olduğunu ayırt eder",
+  "clinical.pearls[1]": "Kremaster refleksi hem L1-L2'yi hem kortikospinal traktusu aynı anda sınar",
+  "clinical.pearls[2]": "Kasık ağrısı ve ateşle birlikte fleksiyonda duran kalça, nervus genitofemoralis üzerine oturmuş bir psoas apsesidir"
+ }
+}

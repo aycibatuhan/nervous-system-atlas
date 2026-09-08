@@ -1,0 +1,33 @@
+{
+  "id": "syn-lacunar-ataxic-hemiparesis",
+  "kind": "syndromes",
+  "lang": "tr",
+  "source": "5ee9090a961dacaa",
+  "fields": {
+    "name": "Ataksik hemiparezi",
+    "presentation": "Hastada genellikle bacakta daha belirgin olan hafif bir hemiparezi vardır, ancak dikkat çeken özellik aynı tarafta güçsüzlükle orantısız bir koordinasyon bozukluğudur: topuk-diz testi beceriksizdir, kol hedefi aşar ve yürüyüş güçsüz tarafa doğru dengesizdir. Duyu ve konuşma normaldir. Vücudun bir yarısında piramidal ve serebellar bulguların birlikteliği küçük ve derin bir lezyonu işaret eder.",
+    "deficits[0].distribution": "kolda olduğundan çok bacakta",
+    "deficits[0].sign": "Hafif üst motor nöron tipi hemiparezi",
+    "deficits[1].distribution": "güçsüzlüğün bulunduğu ekstremiteler",
+    "deficits[1].sign": "Güçsüzlükle orantısız ekstremite ataksisi",
+    "deficits[2].distribution": "bacak",
+    "deficits[2].sign": "Güçsüz tarafa sapan dengesiz yürüyüş",
+    "reasoning": "Capsula interna arka bacağında, corona radiata'da ya da basis pontis'te tek bir perforan dal enfarktı, orada yan yana seyreden iki sistemi keser: tractus corticospinalis ve kortikopontoserebellar bağlantılar. Kortikospinal lifler henüz çaprazlaşmamıştır, bu nedenle güçsüzlük karşı taraftadır. Serebellar bulgular güçsüzlükle aynı taraftadır, çünkü serebellar döngü iki kez çaprazlaşır: kortikopontin lifler ponsta karşı serebellar hemisfere geçer, dentatotalamik çıktı ise mezensefalonda geri çaprazlaşarak başlangıçtaki hemisfere ve onun motor korteksine döner. Bu nedenle döngünün bir tarafta kapsül ya da pons düzeyinde kesilmesi karşı taraftaki ekstremitelerde, yani kortikospinal lezyonun güçsüzleştirdiği ekstremitelerde ataksi oluşturur. Lezyon küçüktür, bu yüzden duyu kaybı ya da kortikal bulgu yoktur. Pontin yerleşim daha sıktır; bacağın ön planda olduğu güçsüzlük karakteristiktir, çünkü bacak lifleri kapsülde arkada, ponsta ise dorsolateralde yer alır.",
+    "imagingFindings[0].pathology": "Akut laküner enfarkt",
+    "imagingFindings[0].finding": "Capsula interna arka bacağında, corona radiata'da ya da basis pontis'te küçük (15 mm'nin altında) bir difüzyon kısıtlaması odağı; BT ilk gün çoğu kez normaldir.",
+    "imagingFindings[1].pathology": "Kronik laküner enfarkt",
+    "imagingFindings[1].finding": "FLAIR'de parlak bir halkası olan, BOS yoğunluğunda küçük kavite; sıklıkla birden çoktur ve küçük damar hastalığının yaygın beyaz cevher hiperintensitesiyle birliktedir.",
+    "commonCauses[0]": "Tek bir perforan arterin hipertansif lipohiyalinozu",
+    "commonCauses[1]": "Perforan dalın çıkışında mikroateroma",
+    "mimics[0].name": "Kortikal dal enfarktı",
+    "mimics[0].howToDistinguish": "Kortikal bulgular (afazi, ihmal, görme alanı kaybı, bakış deviyasyonu) laküner enfarktı dışlar",
+    "mimics[1].name": "Küçük kanama",
+    "mimics[1].howToDistinguish": "BT'de hiperdens; aynı yerlerde görülür",
+    "mimics[2].name": "Kitle etkisi yapan serebellar enfarkt",
+    "mimics[2].howToDistinguish": "Piramidal güçsüzlük olmaksızın serebellar lezyonla aynı tarafta ataksi; baş ağrısı ve kusma",
+    "management[0]": "Antiagregan tedavi, statin ve kan basıncı kontrolü",
+    "management[1]": "Zaman penceresi içinde başvuran ve yeti yitimine yol açan olgularda tromboliz",
+    "management[2]": "Erken mobilizasyon; iyileşme prognozu iyidir",
+    "imagingHint.label": "paramedian basis pontis"
+  }
+}

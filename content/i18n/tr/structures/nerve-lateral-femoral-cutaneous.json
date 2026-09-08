@@ -1,0 +1,25 @@
+{
+ "id": "nerve-lateral-femoral-cutaneous",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "3d09e9a8ac7c8d2a",
+ "fields": {
+  "summary": "Plexus lumbalis'in tümüyle duyusal bir dalıdır (L2–L3); musculus iliacus'u çaprazlar, spina iliaca anterior superior'un hemen medialinde ligamentum inguinale'nin altından ya da içinden geçer ve uyluğun ön dış yüzünün derisini innerve eder. Obezite, gebelik, sıkı kemerler ya da uzun süreli kalça fleksiyonu nedeniyle ligament düzeyinde sıkışması meralgia paresthetica'yı yapar: uyluğun dış yüzünde yanma, karıncalanma ve uyuşukluk görülür, güçsüzlük ve refleks değişikliği olmaz.",
+  "anatomy.location": "Musculus psoas'ın dış kenarından çıkar, fasyasının derininde musculus iliacus'u çaprazlar, spina iliaca anterior superior'un yaklaşık 1 cm medialinde ligamentum inguinale'nin dış ucunun altından geçer, ardından musculus sartorius'un üzerinden uyluğa iner ve ön ile arka dallarına ayrılır.",
+  "function": "Uyluğun ön dış yüzünün trochanter major'dan dize kadar olan bölümünün duyusu; motor lifi yoktur.",
+  "imaging.bestView[0].label": "servikal omurilik; sinir L2–L3'ten köken alır",
+  "imaging.normalAppearance": "Ekstremitelerin periferik sinirleri MNI beyin hacminin dışındadır; atlas meshi gösterilmez. Ultrason ve MR nörografi siniri doğrudan görüntüler; elektrodiagnostik inceleme lezyonu işlevsel olarak lokalize eder. Ultrason tanısal blok için siniri ligamentum inguinale düzeyinde belirler; pelvis kitlesinden kuşkulanılmadıkça başka görüntüleme gerekmez.",
+  "imaging.pathology[0].pathology": "Meralgia paresthetica",
+  "imaging.pathology[0].finding": "Ligamentum inguinale düzeyinde şişmiş sinir; tanısal lokal anestezik bloğu belirtileri geçirir.",
+  "imaging.sequenceOfChoice": "Klinik tanı; sinir bloğu; olanak varsa duyusal ileti çalışmaları",
+  "clinical.lesionEffects[0].deficit": "Uyluğun dış yüzünde ayakta durmakla ve yürümekle artan yanıcı ağrı, karıncalanma ve uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Ligamentum inguinale düzeyinde sıkışma",
+  "clinical.lesionEffects[1].deficit": "Güçsüzlük yoktur, diz refleksi normaldir",
+  "clinical.lesionEffects[1].mechanism": "Tümüyle duyusal sinir",
+  "clinical.examination[0]": "Uyluğun dış yüzünde duyu kaybını haritalayın (uyluğun orta hattını geçmez ve diz eklemine ulaşmaz)",
+  "clinical.examination[1]": "L3 kökü ya da femoral lezyonları dışlamak için musculus quadriceps femoris gücünün ve diz refleksinin normal olduğunu doğrulayın",
+  "clinical.examination[2]": "Ligamentum inguinale düzeyinde hassasiyet ya da Tinel",
+  "clinical.pearls[0]": "Kas gücü ve refleksler normalken uyluğun dış yüzünde bir alanda uyuşukluk radikülopati değil, meralgia paresthetica'dır",
+  "clinical.pearls[1]": "Kilo alımını, gebeliği, kemerleri ve kalça cerrahisini sorgulayın"
+ }
+}

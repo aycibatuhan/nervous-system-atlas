@@ -1,0 +1,31 @@
+{
+ "id": "artery-acom",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "8f4d739fb7d31a38",
+ "fields": {
+  "summary": "Optik kiazmanın önünde iki arteria cerebri anterior'u birleştiren kısa bir orta hat damarıdır. Circulus arteriosus Willisii'nin ön bölümünü tamamlar ve tek bir karotisin her iki medial hemisferi beslemesine olanak tanır. İntrakraniyal sakküler anevrizmanın tek başına en sık görüldüğü yerdir; küçük perforan dalları optik kiazmayı, hipotalamusu, forniksi ve septal bölgeyi besler ve bu durum, anevrizma rüptürü ya da onarımı sonrasında ortaya çıkabilen amneziyi ve kişilik değişikliğini açıklar.",
+  "anatomy.location": "Lamina terminalis sisternasında, optik kiazmanın üzerinde ve corpus callosum rostrumunun altında yer alır ve iki arteria cerebri anterior'un A1–A2 bileşkelerini birbirine bağlar; tipik olarak yalnızca 2–3 mm uzunluğundadır, sıklıkla fenestre ya da çifttir.",
+  "function": "İki arteria carotis interna sistemi arasındaki kollateral kanaldır; perforan dalları ön hipotalamusu, columna fornicis'leri, septal çekirdekleri ve optik kiazmayı besler.",
+  "imaging.bestView[0].label": "kiazmanın üzerinde, A1–A2 bileşkeleri arasında orta hat",
+  "imaging.bestView[1].label": "fissura interhemispherica içinde AComm kompleksi",
+  "imaging.normalAppearance": "Rutin MR'da güvenilir biçimde görülmez; BTA ve MRA'da A1–A2 bileşkelerini birleştiren kısa transvers damar olarak, en iyi ön-arka projeksiyonda değerlendirilir. A1 segmentlerinin asimetrik olması sıktır ve bir tarafı dominant kılar.",
+  "imaging.pathology[0].pathology": "Rüptüre AComm anevrizması",
+  "imaging.pathology[0].finding": "Fissura interhemispherica, suprasellar sisterna ve frontal boynuzlarda yoğunlaşan subaraknoid kan, sıklıkla gyrus rectus hematomuyla birlikte; BTA kesenin öne, yukarı ya da arkaya doğru yöneldiğini gösterir.",
+  "imaging.pathology[0].timing": "Kontrastsız BT ilk 6–12 saatte en duyarlıdır; kan temizlendikçe birkaç gün sonra duyarlılığı düşer",
+  "imaging.pathology[1].pathology": "Klipsleme ya da vazospazm sonrasında bazal ön beyin enfarktı",
+  "imaging.pathology[1].finding": "Septal bölgede, columna fornicis'lerde ya da ön hipotalamusta difüzyon kısıtlaması gösteren küçük lezyonlar; anterograd amnezi ve konfabülasyonla ortaya çıkar.",
+  "imaging.sequenceOfChoice": "Subaraknoid kanama şüphesinde önce kontrastsız BT, ardından BTA; BT negatifse ve şüphe sürüyorsa lomber ponksiyon",
+  "clinical.lesionEffects[0].deficit": "Konfabülasyonla birlikte anterograd amnezi",
+  "clinical.lesionEffects[0].mechanism": "Rüptür, vazospazm ya da cerrahi sonrasında bazal ön beyne ve fornikse giden perforan dalların kaybı",
+  "clinical.lesionEffects[1].deficit": "İki taraflı bacak güçsüzlüğü ve abuli",
+  "clinical.lesionEffects[1].mechanism": "Anevrizmal subaraknoid kanama sonrasında her iki A2 segmentinin vazospazmı",
+  "clinical.lesionEffects[2].deficit": "Bitemporal ya da junctional görme alanı defekti",
+  "clinical.lesionEffects[2].mechanism": "Aşağı doğru yönelmiş büyük bir anevrizmanın kiazmaya doğrudan bası yapması",
+  "clinical.examination[0]": "Subaraknoid kanama sonrasında hasta başında gecikmeli hatırlama ile bellek testi",
+  "clinical.examination[1]": "Hasta mobilize edildiğinde bacak gücü ve yürüyüş",
+  "clinical.examination[2]": "Konfrontasyonla görme alanı muayenesi",
+  "clinical.pearls[0]": "Gök gürültüsü baş ağrısıyla birlikte fissura interhemispherica'da kan bulunması AComm anevrizmasını işaret eder",
+  "clinical.pearls[1]": "AComm anevrizması komplikasyonlarının tipik defisiti hemiparezi değil, amnezi ve kişilik değişikliğidir"
+ }
+}

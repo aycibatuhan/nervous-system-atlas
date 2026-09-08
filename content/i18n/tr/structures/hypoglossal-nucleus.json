@@ -1,0 +1,32 @@
+{
+ "id": "hypoglossal-nucleus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "5491eee513921916",
+ "fields": {
+  "summary": "Dördüncü ventrikül tabanındaki trigonum nervi hypoglossi'nin altında, dorsal paramedian medullada uzanan uzun bir motor nöron kolonudur. Aksonları lemniscus medialis ile oliva inferior arasından ventrale doğru iner ve sulcus preolivaris'te hipoglossal kökçükler olarak çıkar. Dilin tüm intrensek ve çoğu ekstrensek kasını innerve eder; medial medüller enfarktta aynı tarafta dil felcinin bulunmasının nedeni medulla içindeki bu lifleridir.",
+  "anatomy.location": "Orta hattın yanında, dördüncü ventrikülün tabanının (trigonum nervi hypoglossi) altında dorsal medullada yer alır ve kaudalde canalis centralis'in yanında piramidal dekusasyona kadar devam eder; nucleus dorsalis nervi vagi'nin medialindedir.",
+  "connections.efferents[0].to": "dil kasları",
+  "connections.efferents[0].via": "cn-12-hypoglossal",
+  "function": "Konuşma, çiğneme ve yutma için dilin alt motor nöronları; iki taraflı kortikobulbar girdi alır, genioglossus için karşı taraf baskındır.",
+  "imaging.bestView[0].label": "paramedian dorsal medulla; lifler ventrale, sulcus preolivaris'e doğru geçer",
+  "imaging.bestView[1].label": "kaudal dördüncü ventrikül tabanında trigonum nervi hypoglossi",
+  "imaging.normalAppearance": "MR'da seçilemez. Sinir ince kesit T2'de canalis hypoglossi boyunca izlenebilir; çekirdeğin yeri paramedian dorsal medulladan çıkarsanır.",
+  "imaging.pathology[0].pathology": "Medial medüller enfarkt",
+  "imaging.pathology[0].finding": "Hipoglossal fasikülü de içine alan paramedian ventral medüller difüzyon kısıtlaması.",
+  "imaging.pathology[1].pathology": "Canalis hypoglossi lezyonu (metastaz, glomus tümörü, diseksiyon)",
+  "imaging.pathology[1].finding": "Canalis hypoglossi'de kontrastlanan kitle ya da kalınlaşmış sinir; dilin yarısında denervasyon atrofisi ve yağlı değişiklik ile birlikte.",
+  "imaging.sequenceOfChoice": "Kafa tabanından geçen ince kesit aksiyal T2/kontrastlı T1; enfarkt için DAG",
+  "clinical.lesionEffects[0].deficit": "Dil dışarı çıkarıldığında güçsüz tarafa deviye olur; atrofi ve fasikülasyonlar eşlik eder",
+  "clinical.lesionEffects[0].mechanism": "Alt motor nöron kaybı: sağlam genioglossus dili felçli tarafa iter",
+  "clinical.lesionEffects[1].deficit": "Dil seslerinde dizartri",
+  "clinical.lesionEffects[1].mechanism": "Güçsüz dil",
+  "clinical.lesionEffects[2].deficit": "Atrofi olmaksızın dilin hemisferik lezyonun karşı tarafına deviyasyonu",
+  "clinical.lesionEffects[2].mechanism": "Supranükleer kortikobulbar lezyon",
+  "clinical.examination[0]": "Dili ağız içinde istirahatte atrofi ve fasikülasyon açısından inceleyin",
+  "clinical.examination[1]": "Deviyasyon için dilin dışarı çıkarılması ve yanağa karşı sağa sola hareketi",
+  "clinical.examination[2]": "Hızlı 'la-la-la' yinelemesi",
+  "clinical.pearls[0]": "Erimeyle birlikte dilin lezyon tarafına kayması: çekirdek ya da sinir. Erime olmadan dilin lezyonun karşı tarafına kayması: korteks ya da tractus corticobulbaris",
+  "clinical.pearls[1]": "Dil felcine karşı tarafta hemiparezi ve propriyoseptif kaybın eklenmesi medial medullayı gösterir"
+ }
+}

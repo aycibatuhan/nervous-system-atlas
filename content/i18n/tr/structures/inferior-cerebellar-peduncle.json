@@ -1,0 +1,30 @@
+{
+  "id": "inferior-cerebellar-peduncle",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "bfa76132d7b2b58c",
+  "fields": {
+    "summary": "Medulla oblongata'yı serebelluma bağlayan kalın demettir; üst medullanın posterolateral sınırını ve dördüncü ventrikülün alt yan duvarını oluşturur. Taşıdığı liflerin çoğu afferenttir: tractus spinocerebellaris posterior ve tractus cuneocerebellaris (aynı taraf vücuttan bilinçdışı propriyosepsiyon), olivoserebellar tırmanıcı lifler (karşı taraf oliva inferior'dan) ve vestibüler ile retiküler girdiler; daha küçük olan corpus juxtarestiforme bölümü vestibüler çekirdekler ile serebellum arasında iki yönde giden lifleri taşır.",
+    "anatomy.location": "Oliva ve spinal trigeminal kompleksin arkasında posterolateral medulla; yukarı ve arkaya doğru kıvrılarak pedunculus cerebellaris medius'un medialinden serebelluma girer.",
+    "function": "Propriyoseptif, olivar ve vestibüler bilgiyi serebelluma getirir ve fastigial çıktıyı vestibüler çekirdeklere geri gönderir; serebellum vücudun aynı tarafını denetlediği için lezyonu aynı taraf ekstremitede ataksi yapar.",
+    "imaging.bestView[0].label": "posterolateral medulla, serebelluma giren pedunculus",
+    "imaging.bestView[1].label": "medulladan serebellum beyaz cevherine uzanan seyri",
+    "imaging.normalAppearance": "Aksiyal T2 kesitlerde üst medullanın posterolateral köşesindeki sıkı beyaz cevher ve bu atlastaki traktus meshi; difüzyon traktografisinde serebelluma giden başlıca medüller girdidir.",
+    "imaging.pathology[0].pathology": "Ataksi ile giden lateral medüller enfarkt",
+    "imaging.pathology[0].finding": "Pedunculus'u da içine alan dorsolateral medullada difüzyon kısıtlaması.",
+    "imaging.pathology[1].pathology": "Pedunculus'un multipl skleroz lezyonu",
+    "imaging.pathology[1].finding": "Posterolateral medullada ya da pedunculus'ta T2/FLAIR'de parlak plak; aynı taraf ekstremitede ataksi ile birliktedir.",
+    "imaging.sequenceOfChoice": "Medulla ve serebellumdan geçen DAG ve FLAIR",
+    "clinical.lesionEffects[0].deficit": "Aynı taraf ekstremitede ataksi ve dismetri",
+    "clinical.lesionEffects[0].mechanism": "Aynı taraf serebelluma giden propriyoseptif ve olivar girdinin kesintiye uğraması",
+    "clinical.lesionEffects[1].deficit": "Lateropulsiyon ve yürüyüş ataksisi",
+    "clinical.lesionEffects[1].mechanism": "Corpus juxtarestiforme içindeki vestibüloserebellar lifler",
+    "clinical.lesionEffects[2].deficit": "Nistagmus",
+    "clinical.lesionEffects[2].mechanism": "Vestibüloserebellar bağlantılar",
+    "clinical.examination[0]": "Her iki tarafta parmak-burun ve topuk-diz testleri",
+    "clinical.examination[1]": "Tandem yürüyüş ve Romberg",
+    "clinical.examination[2]": "Nistagmusun ve düşme yönünün gözlenmesi",
+    "clinical.pearls[0]": "Lateral medüller sendromdaki ataksi korteksten değil, bu pedunculus ile serebellumdan kaynaklanır",
+    "clinical.pearls[1]": "Aynı tarafta ataksi, karşı taraf vücutta ağrı duyusu kaybı ve aynı taraf yüzde ağrı duyusu kaybı lateral medulla demektir"
+  }
+}

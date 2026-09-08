@@ -1,0 +1,27 @@
+{
+ "id": "pathway-anterior-spinothalamic",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "fb00dd0e26b51ddb",
+ "fields": {
+  "summary": "İnce lokalizasyon gerektirmeyen hafif dokunma ve basıncı taşıyan lifler arka boynuzda sonlanır, commissura alba anterior'da çaprazlaşır ve funiculus anterior içinde tractus spinothalamicus anterior olarak yükselir; beyin sapında tractus spinothalamicus lateralis ile birleşerek lemniscus spinalis'i oluşturur. Kaba dokunma hem buradan hem de arka kordonlardan gittiği için tek bir omurilik lezyonuyla dokunma duyusu nadiren tümüyle kaybolur; omurilik muayenesinde ayırt edici duyu türlerinin ağrı ile ısı (tek yol) ve vibrasyon ile pozisyon (tek yol) olmasının nedeni budur.",
+  "origin.note": "Düşük eşikli mekanoreseptörler; ikinci sıra hücreler nucleus proprius'tadır.",
+  "neuronChain[0].cellBody": "Arka kök gangliyonu hücresi",
+  "neuronChain[0].synapse": "arka boynuz (nucleus proprius)",
+  "neuronChain[1].cellBody": "Arka boynuz nöronu",
+  "neuronChain[1].synapse": "çaprazlaştıktan sonra talamusun VPL'si",
+  "neuronChain[2].cellBody": "VPL nöronu",
+  "neuronChain[2].synapse": "gyrus postcentralis",
+  "decussation.level": "Birkaç segment boyunca commissura alba anterior",
+  "decussation.note": "Ağrı liflerine göre daha az ani çaprazlaşır.",
+  "waypoints[2].note": "funiculus anterior",
+  "waypoints[3].note": "lemniscus spinalis'e katılır ve beyin sapında lemniscus medialis'in yanında seyreder",
+  "termination": "Talamusun ventral posterolateral çekirdeği ve somatosensoriyel korteks.",
+  "lesionEffectsByLevel[0].level": "Yarım omurilik lezyonu",
+  "lesionEffectsByLevel[0].effects": "Çift yol nedeniyle kaba dokunma iki tarafta da büyük ölçüde korunur",
+  "lesionEffectsByLevel[1].level": "Ön omurilik enfarktı",
+  "lesionEffectsByLevel[1].effects": "Seviyenin altında ağrı, ısı ve kaba dokunma kaybı; arka kordon işlevi korunmuştur",
+  "clinical.pearls[0]": "Bir omurilik lezyonunu lokalize ederken hafif dokunmayı değil ağrı ve vibrasyonu test edin: dokunmanın iki yolu vardır ve korunur",
+  "clinical.pearls[1]": "Omurilik lezyonundan sonra 'duyu kaybının' nadiren tam olmasının nedeni tractus spinothalamicus anterior'dur"
+ }
+}

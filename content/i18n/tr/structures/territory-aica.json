@@ -1,0 +1,33 @@
+{
+  "id": "territory-aica",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "17dffce17d6616fd",
+  "fields": {
+    "summary": "Arteria cerebelli inferior anterior tarafından beslenen lateral kaudal pons, pedunculus cerebellaris medius, iç kulak ve serebellumun ön alt bölümüdür. Enfarkt, lateral pons bulgularını sağırlık ve vertigo ile birleştirir; arteria labyrinthi bir uç arter olduğundan ilk zarar gören sıklıkla koklea olur. Sulama alanı küçük ve değişkendir: AICA hipoplastikse serebellar bölümü PICA devralır, PICA hipoplastikse AICA aşağı doğru genişler; bu nedenle PICA sulama alanıyla olan sınır, arka çukurda en az öngörülebilen sınırdır.",
+    "anatomy.location": "Kaudal ponsun lateral tegmentumu ve basisi (nucleus nervi facialis, nucleus spinalis nervi trigemini, vestibüler ve koklear çekirdekler, tractus spinothalamicus), pedunculus cerebellaris medius, flocculus ve serebellumun petrozal yüzü; arteria labyrinthi aracılığıyla koklea ve labirent.",
+    "function": "Yüz hareketleri, yüzde ağrı ve ısı duyusu, işitme, vestibüler girdi ve pontoserebellar koordinasyon.",
+    "bloodSupply.note": "Bu atlastaki sulama alanı sınırları olasılıksal bir inme lezyonu atlasından (Liu ve ark. 2023) alınmıştır ve circulus arteriosus Willisi anatomisine göre kişiden kişiye değişir.",
+    "imaging.bestView[0].label": "lateral kaudal pons ve pedunculus cerebellaris medius",
+    "imaging.bestView[1].label": "petröz kemiğe komşu, serebellumun ön alt bölümü",
+    "imaging.normalAppearance": "Meatus acusticus internus düzeyindeki aksiyal kesitlerde lateral pons ile komşu pedunculus cerebellaris ve serebellumun ön alt yüzü görülür. Burada kullanılan lezyon atlasında AICA ve PICA'nın serebellar bölgeleri, alt serebellar sulama alanı olarak birleştirilmiştir.",
+    "imaging.pathology[0].pathology": "AICA enfarktı",
+    "imaging.pathology[0].finding": "Lateral kaudal ponsta, pedunculus cerebellaris medius'ta ve serebellumun ön alt bölümünde difüzyon kısıtlaması; sıklıkla akut tek taraflı işitme kaybı eşlik eder.",
+    "imaging.sequenceOfChoice": "DAG; odyometri; BTA",
+    "clinical.lesionEffects[0].deficit": "Aynı tarafta sağırlık ve vertigo",
+    "clinical.lesionEffects[0].mechanism": "Arteria labyrinthi ve vestibulokoklear çekirdekler",
+    "clinical.lesionEffects[1].deficit": "Alt motor nöron tipi fasiyal felç",
+    "clinical.lesionEffects[1].mechanism": "Nucleus nervi facialis",
+    "clinical.lesionEffects[2].deficit": "Çaprazlaşmış ağrı ve ısı duyusu kaybı",
+    "clinical.lesionEffects[2].mechanism": "Nucleus spinalis nervi trigemini ve tractus spinothalamicus",
+    "clinical.lesionEffects[3].deficit": "Ataksi",
+    "clinical.lesionEffects[3].mechanism": "Pedunculus cerebellaris medius",
+    "clinical.examination[0]": "İşitme testi",
+    "clinical.examination[1]": "Yüz hareketleri",
+    "clinical.examination[2]": "Korneal refleks",
+    "clinical.examination[3]": "Koordinasyon",
+    "clinical.pearls[0]": "Lateral medüller tabloya sağırlık ve fasiyal felcin eklenmesi lateral pons demektir (AICA)",
+    "clinical.pearls[1]": "Vasküler risk faktörleri olan yaşlı bir hastada vertigoyla birlikte ani tek taraflı sağırlık, yalnızca KBB'ye yönlendirmeyi değil DAG çekilmesini de hak eder",
+    "pitfalls[0]": "Vestibüler nörit de AICA enfarktı da nistagmusun eşlik ettiği akut vertigo yapar; işitme kaybı, yüzde güçsüzlük ve ayakta duramama enfarktı destekler"
+  }
+}

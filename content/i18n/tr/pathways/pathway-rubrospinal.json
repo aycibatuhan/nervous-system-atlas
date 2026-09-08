@@ -1,0 +1,27 @@
+{
+ "id": "pathway-rubrospinal",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "18fa8569377767b0",
+ "fields": {
+  "summary": "Nucleus ruber'in magnoselüler bölümünün nöronları aksonlarını mezensefalonda hemen decussatio tegmentalis ventralis'te çaprazlaştırır; bu aksonlar omuriliğin funiculus lateralis'inde tractus corticospinalis lateralis'in tam önünde iner ve başlıca kolda fleksör motor nöronları uyaran, ekstansör motor nöronları inhibe eden internöronlarda sonlanır. İnsanda küçük olsa da klinikte iki bakımdan önemlidir: serebellum ve nucleus ruber lezyonlarının ekstremite hareketini etkilemesinin nedenlerinden biridir; ayrıca nucleus ruber'in üzerindeki lezyonlardan sonra kollara giden fleksör uyarının korunması dekortike postürü doğururken, nucleus ruber'in altındaki lezyonlar bu uyarıyı ortadan kaldırır ve geriye ekstansör (deserebre) postür kalır.",
+  "origin.note": "Nucleus ruber'in magnoselüler bölümü; motor korteks ve serebellumun nuclei interpositi'si tarafından sürülür.",
+  "neuronChain[0].cellBody": "Nucleus ruber nöronu",
+  "neuronChain[0].synapse": "servikal omuriliğin ara gri cevherindeki spinal internöronlar",
+  "neuronChain[1].cellBody": "İnternöron",
+  "neuronChain[1].synapse": "fleksör motor nöronlar",
+  "decussation.level": "Decussatio tegmentalis ventralis, mezensefalon",
+  "decussation.note": "Nucleus ruber'in hemen altında çaprazlaşır.",
+  "waypoints[0].note": "köken",
+  "waypoints[1].note": "decussatio tegmentalis ventralis",
+  "waypoints[2].note": "lateral tegmentum",
+  "waypoints[3].note": "funiculus lateralis, tractus corticospinalis'in önünde, başlıca servikal segmentler",
+  "termination": "Üst ekstremitenin fleksörlerini kolaylaştıran servikal omurilik internöronları.",
+  "lesionEffectsByLevel[0].level": "Nucleus ruber'in üzerinde (hemisferik kitle, talamus)",
+  "lesionEffectsByLevel[0].effects": "Dekortike postür: kollar fleksiyonda, bacaklar ekstansiyonda (rubrospinal fleksör uyarı korunmuştur)",
+  "lesionEffectsByLevel[1].level": "Nucleus ruber'in altında (pons)",
+  "lesionEffectsByLevel[1].effects": "Deserebre postür: kollar ve bacaklar ekstansiyonda (yalnızca vestibülospinal ve retikülospinal ekstansör uyarı kalır)",
+  "clinical.pearls[0]": "Komadaki bir hastanın postürü nucleus ruber'in omurilikle bağlantısının sürüp sürmediğini söyler: üstteki lezyonda kollar fleksiyonda, alttakinde ekstansiyondadır",
+  "clinical.pearls[1]": "İnsanda tractus rubrospinalis'in kedide yaptıklarının çoğunu tractus corticospinalis üstlenmiştir"
+ }
+}

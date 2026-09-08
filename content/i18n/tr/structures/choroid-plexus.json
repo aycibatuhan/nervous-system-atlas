@@ -1,0 +1,30 @@
+{
+ "id": "choroid-plexus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "63fb66d87e66bb16",
+ "fields": {
+  "summary": "Plexus choroideus, lateral ventriküllere, ventriculus tertius'a ve ventriculus quartus'a sarkan, özelleşmiş bir ependimle örtülü, yaprak biçiminde damarsal bir dokudur ve her gün yapılan yaklaşık 500 mL BOS'un büyük bölümünü üretir. Kapillerleri fenestreli olmakla birlikte koroid epitel hücreleri arasındaki sıkı bağlantılar kan-BOS bariyerini oluşturur. Lateral ventriküllerin pleksusu arteria choroidea anterior ve posterior tarafından beslenir ve foramen interventriculare (Monro) üzerinden ventriculus tertius'un tavanıyla devam eder; ventriculus quartus'un pleksusu ise apertura lateralis (Luschka) üzerinden dışarı taşar. Yaşla birlikte kalsifiye olur, yoğun kontrast tutar ve pleksus papillomlarının ve ksantogranülomların yerleşim yeridir.",
+  "anatomy.location": "Her lateral ventrikülün gövdesi, atriyumu (glomus) ve temporal boynuzu, ventriculus tertius'un tavanı ve ventriculus quartus tavanının alt yarısı ile buradan lateral reseslere uzanan bölümü; frontal ve oksipital boynuzlarda ve aqueductus'ta bulunmaz.",
+  "function": "Aktif taşımayla BOS salgılanması, kan-BOS bariyerinin sürdürülmesi, metabolitlerin temizlenmesi ve BOS'a büyüme faktörleri ile transtiretin salgılanması.",
+  "imaging.bestView[0].label": "atriyumda plexus choroideus'un glomus'u",
+  "imaging.bestView[1].label": "ventriculus tertius'un tavanında ve lateral ventriküllerin gövdelerinde pleksus",
+  "imaging.normalAppearance": "BT ve MR'da kontrast sonrası güçlü biçimde boyanır; atriyumdaki glomus erişkinlerde sıklıkla kalsifiyedir. Glomus içindeki kistler (ksantogranülomlar) selimdir ve yaşlılarda sık görülür.",
+  "imaging.pathology[0].pathology": "Plexus choroideus papillomu / karsinomu",
+  "imaging.pathology[0].finding": "Lobüle, yoğun kontrast tutan intraventriküler kitle; çocuklarda atriyumda, erişkinlerde ventriculus quartus'ta yerleşir; BOS'un aşırı üretimine ve tıkanmaya bağlı hidrosefali yapar.",
+  "imaging.pathology[1].pathology": "Koroid pleksit",
+  "imaging.pathology[1].finding": "Kriptokok ya da tüberküloz enfeksiyonunda büyümüş ve kontrast tutan pleksus.",
+  "imaging.pathology[2].pathology": "Aşırı üretime bağlı kommünikan hidrosefali",
+  "imaging.pathology[2].finding": "Papillom varlığında, tıkanma olmaksızın yaygın ventrikülomegali.",
+  "imaging.sequenceOfChoice": "Kontrastlı T1 MR; kalsifikasyon için BT",
+  "clinical.lesionEffects[0].deficit": "Aşırı üretime ya da tıkanmaya bağlı hidrosefali",
+  "clinical.lesionEffects[0].mechanism": "Pleksus tümörü",
+  "clinical.lesionEffects[1].deficit": "Meningeal bulgular ve BOS bileşiminin değişmesi",
+  "clinical.lesionEffects[1].mechanism": "Menenjitte pleksusun iltihabı",
+  "clinical.examination[0]": "Kafa içi basınç artışı bulguları",
+  "clinical.examination[1]": "Enfeksiyon ya da malignite kuşkusunda BOS incelemesi (protein, hücre, glukoz)",
+  "clinical.pearls[0]": "Plexus choroideus'un kontrast tutması ve kalsifikasyonu normaldir; asimetrik büyüme ya da kitle normal değildir",
+  "clinical.pearls[1]": "BOS saatte yaklaşık 20 mL üretilir; bu nedenle toplam hacim günde üç-dört kez yenilenir",
+  "pitfalls[0]": "TÜRETİLMİŞ MESH: ventriculus quartus'un pleksusu (choroid-plexus-fourth-ventricle) segmente edilmemiş, oluşturulmuştur. Aseg ventriculus quartus etiketinin kaudal yarısının arka (tavan) sınırının 1 mm genişletilmesiyle ve lateral resesler boyunca apertura lateralis'e (Luschka) doğru iki kısa uzantı eklenmesiyle elde edilmiştir; dolayısıyla pleksusun yapraklarını değil bulunduğu yeri gösterir. Lateral ventrikül pleksusunun meshleri Z-Anatomy'den gelir ve gerçek yüzeylerdir."
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "nerve-thoracodorsal",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "16823f5ce79814bf",
+ "fields": {
+  "summary": "Nervus thoracodorsalis plexus brachialis'in fasciculus posterior'undan (C6, C7, C8) nervi subscapulares arasında çıkar, arka aksiller duvar boyunca arteria thoracodorsalis ile birlikte aşağı iner ve innerve ettiği musculus latissimus dorsi'ye girer. Aksiller lenf nodu diseksiyonunda ve omuzun arka bölümüne yapılan cerrahide risk altındadır, rekonstrüksiyonda kullanılan latissimus flebinin siniridir ve EMG'si lezyonları fasciculus posterior'a yerleştirir: radial ve aksiller bulgularla birlikte latissimus güçsüzlüğü fasciculus posterior'u gösterirken, latissimus'un korunması tek tek sinirleri işaret eder.",
+  "anatomy.location": "Aksillada fasciculus posterior'dan nervus subscapularis superior ile inferior arasında ayrılır, arteria thoracodorsalis ile birlikte musculus subscapularis ve musculus teres major'un yüzeyinde arka aksiller duvar boyunca aşağı iner ve musculus latissimus dorsi'nin derin yüzüne tendonuna yakın bir yerden girer.",
+  "function": "Musculus latissimus dorsi'ye motor lifler verir; bu kas kolu adduksiyona, ekstansiyona ve iç rotasyona getirir, tırmanırken ve tekerlekli sandalyeden transfer sırasında gövdeyi yukarı çeker ve zorlu ekspirasyon ile öksürmeye katkıda bulunur. Kaybı dirence karşı adduksiyonu güçsüzleştirir (hasta kolunu muayene edenin eline karşı aşağı bastıramaz) ve en çok sporcular ile transferler için latissimus'a bağımlı olan paraplejik hastalarca hissedilir. Fasciculus posterior'dan çıkması onu pleksus lezyonlarında bir kord göstergesi yapar; cerrahlar aksiller temizleme sırasında bu siniri korur ya da onu arteriyle birlikte, meme ve göğüs duvarı rekonstrüksiyonunda ve brakiyal pleksus yaralanmasından sonra dirsek fleksiyonunu geri kazandırmakta kullanılan latissimus flebinin pedikülü olarak kullanır.",
+  "imaging.bestView[0].label": "arka aksiller duvar boyunca musculus latissimus dorsi'ye giden nervus thoracodorsalis",
+  "imaging.bestView[1].label": "musculus subscapularis üzerinde arteria thoracodorsalis ile birlikte seyreden sinir",
+  "imaging.normalAppearance": "Ultrason ve MR'da arka aksiller duvarda torakodorsal damarlara eşlik eden bir sinir olarak görülür; denervasyon musculus latissimus dorsi'de STIR değişikliği ve atrofi olarak ortaya çıkar.",
+  "imaging.pathology[0].pathology": "Fasciculus posterior pleksopatisi",
+  "imaging.pathology[0].finding": "Musculus deltoideus, musculus teres minor ve radial innervasyonlu kaslarla birlikte musculus latissimus dorsi'de denervasyon; bu da lezyonu fasciculus posterior'a yerleştirir.",
+  "imaging.pathology[1].pathology": "Aksiller diseksiyonda iyatrojenik yaralanma",
+  "imaging.pathology[1].finding": "Aksiller cerrahiden sonra musculus latissimus dorsi'de denervasyon ödemi ve daha sonra atrofi; adduksiyon güçsüzlüğü eşlik eder.",
+  "imaging.pathology[2].pathology": "Latissimus flebinin alınması",
+  "imaging.pathology[2].finding": "Rekonstrüksiyondan sonra sırtta latissimus'un bulunmaması; kas torakodorsal pedikülü üzerinde göğüs duvarına aktarılmıştır.",
+  "clinical.lesionEffects[0].deficit": "Kolun adduksiyon ve ekstansiyonunda güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Musculus latissimus dorsi'nin denervasyonu",
+  "clinical.lesionEffects[1].deficit": "Tırmanma, çekme ve tekerlekli sandalye transferlerinde güçlük",
+  "clinical.lesionEffects[1].mechanism": "Gövdenin yukarı kaldırılmasına latissimus'un yaptığı katkının kaybı",
+  "clinical.lesionEffects[2].deficit": "Fasciculus posterior tutulumunun göstergesi",
+  "clinical.lesionEffects[2].mechanism": "Nervus axillaris ve nervus radialis ile birlikte fasciculus posterior'dan çıkması",
+  "clinical.examination[0]": "Arka aksiller katlantıda latissimus palpe edilirken abduksiyondaki kolun dirence karşı adduksiyonu",
+  "clinical.examination[1]": "İki taraflı tutulumu olan hastalarda öksürük gücü",
+  "clinical.examination[2]": "Fasciculus posterior lezyonundan kuşkulanıldığında latissimus'un EMG'si",
+  "clinical.pearls[0]": "Latissimus tırmanmanın ve transferlerin kasıdır; siniri de aksiller cerrahların koruduğu sinirdir",
+  "clinical.pearls[1]": "Latissimus ile birlikte deltoid tutulumu ve düşük el fasciculus posterior'u gösterir",
+  "clinical.pearls[2]": "Torakodorsal pedikül rekonstrüksiyonda latissimus'u göğüs duvarına taşır"
+ }
+}

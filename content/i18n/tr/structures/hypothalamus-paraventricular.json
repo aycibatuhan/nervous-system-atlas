@@ -1,0 +1,32 @@
+{
+  "id": "hypothalamus-paraventricular",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "b745929b40b2c559",
+  "fields": {
+    "summary": "Nucleus paraventricularis, üçüncü ventrikülün duvarına yaslanan dorsal ön hipotalamusta kama biçiminde bir nöron kümesidir ve nöroendokrin ile otonom hipotalamusun komuta merkezidir. Magnoselüler nöronları oksitosin ve vazopressin yapar ve bunları infundibulum boyunca hipofiz arka lobuna gönderir; parvoselüler nöronları portal sisteme kortikotropin salgılatıcı hormon ve tirotropin salgılatıcı hormon salarak hipofiz-adrenal ve tiroid akslarını çalıştırır; üçüncü bir nöron topluluğu ise doğrudan beyin sapına ve omuriliğin columna intermediolateralis'ine projekte olarak sempatik ve parasempatik çıkışı denetler. Stres yanıtının, sıvı dengesinin ve iştahın efektörüdür; suprasellar tümörler, hipotalamus cerrahisi ve Wernicke ensefalopatisi tarafından hasarlanır.",
+    "anatomy.location": "Üçüncü ventrikülün lateralinde, columna fornicis ve commissura anterior'un altında, nucleus supraopticus ile chiasma opticum'un üstünde, nucleus dorsomedialis'in önünde yer alan ön hipotalamusun dorsal bölümü.",
+    "function": "Magnoselüler vazopressin nöronları ozmoreseptörlerden ve nucleus tractus solitarii üzerinden aktarılan baroreseptör girdisinden gelen uyarılara yanıt vererek hipofiz arka lobundan antidiüretik hormon salgılatır; magnoselüler oksitosin nöronları süt boşalmasını ve uterus kasılmasını başlatır ve sosyal bağlanmayı düzenler. Parvoselüler nöronlar strese ve amygdala ile nucleus striae terminalis'ten gelen girdiye yanıt olarak kortikotropin salgılatıcı hormonu, soğuğa ve enerji durumuna yanıt olarak da tirotropin salgılatıcı hormonu eminentia mediana'nın portal damarlarına salgılar. İnen nöronlar nucleus dorsalis nervi vagi'ye, ventrolateral medullaya ve columna intermediolateralis'e projekte olarak kalp hızını, kan basıncını, mide işlevini ve termogenezi belirler; çekirdek ayrıca nucleus arcuatus'tan gelen leptin ve bağırsak hormonu sinyallerini bütünleştirerek beslenmeyi baskılar.",
+    "imaging.bestView[0].label": "üçüncü ventrikülün duvarına yaslanan nucleus paraventricularis",
+    "imaging.bestView[1].label": "fornix'in altındaki dorsal ön hipotalamus",
+    "imaging.normalAppearance": "Chiasma düzeyindeki koronal kesitlerde columna fornicis'in altında, üçüncü ventrikülün üst ön duvarının gri cevheri; ayrı bir çekirdek olarak seçilemez.",
+    "imaging.pathology[0].pathology": "Santral diabetes insipidus",
+    "imaging.pathology[0].finding": "Hipofizit, germinom ya da histiyositozda sagital T1'de hipofiz arka lobunun parlak noktasının kaybı ve infundibulumun kalınlaşması; eksik hormonun kaynağı nucleus paraventricularis ve nucleus supraopticus'tur.",
+    "imaging.pathology[1].pathology": "Kraniyofarenjiyom cerrahisi sonrası hipotalamik obezite",
+    "imaging.pathology[1].finding": "Ameliyat sonrası ön hipotalamusta ve üçüncü ventrikül tabanında defekt; hızlı kilo alımı, hiperfaji ve endokrin yetmezlik eşlik eder.",
+    "imaging.pathology[2].pathology": "Wernicke ensefalopatisi",
+    "imaging.pathology[2].finding": "Periventriküler hipotalamusta, medial talamuslarda ve corpora mammillaria'da simetrik FLAIR hiperintensitesi; hipotermi ve otonom dengesizlik eşlik eder.",
+    "clinical.lesionEffects[0].deficit": "Diabetes insipidus",
+    "clinical.lesionEffects[0].mechanism": "Vazopressin nöronlarının ya da bunların infundibulumdaki aksonlarının kaybı",
+    "clinical.lesionEffects[1].deficit": "Adrenal ve tiroid aksı yetmezliği",
+    "clinical.lesionEffects[1].mechanism": "Kortikotropin ve tirotropin salgılatıcı hormon nöronlarının kaybı",
+    "clinical.lesionEffects[2].deficit": "Hiperfaji, obezite ve otonom düzensizlik",
+    "clinical.lesionEffects[2].mechanism": "Paraventriküler tokluk ve otonom denetim nöronlarının kaybı",
+    "clinical.examination[0]": "Sıvı dengesi: idrar çıkışı, serum sodyumu ve ozmolalitesi",
+    "clinical.examination[1]": "Her hipotalamik lezyonda sabah kortizolü ve tiroid işlev testleri",
+    "clinical.examination[2]": "Kilo, iştah ve kan basıncı değişkenliği",
+    "clinical.pearls[0]": "Hipofiz cerrahisi sonrası diabetes insipidus sap zedelendiğinde geçici, paraventriküler ve supraoptik nöronlar öldüğünde kalıcıdır",
+    "clinical.pearls[1]": "Nucleus paraventricularis hem bir endokrin bez hem de bir sempatik premotor çekirdektir",
+    "clinical.pearls[2]": "Kraniyofarenjiyom rezeksiyonu sonrası hipotalamik obezite paraventriküler ve ventromedial bir hasardır, davranışsal bir başarısızlık değil"
+  }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "pathway-anterior-spinocerebellar",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "68d456bf5851fa02",
+ "fields": {
+  "summary": "Lumbosakral omurilikte arka boynuzun tabanında ve ara gri cevherde bulunan nöronların aksonları çoğunlukla commissura alba anterior'da çaprazlaşır, tractus spinocerebellaris posterior'un önünde anterolateral funiculus içinde yükselir, medulla oblongata ile pons'tan geçer ve pedunculus cerebellaris superior aracılığıyla serebelluma girer; burada liflerin çoğu yeniden çaprazlaşır, böylece serebellumun her yarısı yine kendi taraf vücudundan bilgi alır. Saf propriyosepsiyondan çok spinal internöronların etkinliği hakkında bilgi taşır ve serebelluma spinal devrelerin inen komutlarla ne yaptığını bildirir.",
+  "origin.note": "Lumbosakral segmentlerin spinal sınır hücreleri ve ara gri cevheri; Golgi tendon organlarından, fleksör refleks afferentlerinden ve inen traktuslardan girdi alır.",
+  "neuronChain[0].cellBody": "Arka kök gangliyonu hücresi",
+  "neuronChain[0].synapse": "spinal sınır hücreleri",
+  "neuronChain[1].cellBody": "Spinal sınır hücresi",
+  "neuronChain[1].synapse": "pedunculus cerebellaris superior üzerinden lobus anterior'un serebellar korteksi (vermis ve paravermis); iki kez çaprazlaşarak",
+  "decussation.level": "Commissura alba anterior (çaprazlaşır) ve pedunculus cerebellaris superior (yeniden çaprazlaşır)",
+  "decussation.note": "Çift çaprazlaşma nedeniyle net projeksiyon aynı taraflıdır.",
+  "waypoints[0].note": "spinal sınır hücreleri, L1–S2",
+  "waypoints[1].note": "anterolateral funiculus, tractus spinocerebellaris posterior'un önünde",
+  "waypoints[2].note": "lateral medulla oblongata",
+  "waypoints[3].note": "üst pons düzeyinde pedunculus superior aracılığıyla girer",
+  "waypoints[4].note": "yeniden çaprazlaştıktan sonra lobus anterior",
+  "termination": "Serebellumun lobus anterior vermisi ve ara bölgesi; ikinci çaprazlaşmadan sonra köken aldığı tarafla aynı taraf.",
+  "lesionEffectsByLevel[0].level": "Omuriliğin anterolateral funiculus'u",
+  "lesionEffectsByLevel[0].effects": "Aynı tarafta bacak ataksisi (çift çaprazlaşmadan sonraki net etki), genellikle spinotalamik bulgularla karışık",
+  "lesionEffectsByLevel[1].level": "Pedunculus cerebellaris superior",
+  "lesionEffectsByLevel[1].effects": "Serebellar çıkış bulgularının baskın olduğu ataksi",
+  "clinical.pearls[0]": "Pedunculus superior aracılığıyla giren tek spinoserebellar traktus budur",
+  "clinical.pearls[1]": "Eklemleri değil spinal internöronları izler: omuriliğin ne yaptığının bir kopyasıdır"
+ }
+}

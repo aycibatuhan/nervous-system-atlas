@@ -1,0 +1,25 @@
+{
+ "id": "artery-pcom",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "abe55d973a4f3c90",
+ "fields": {
+  "summary": "Supraklinoid arteria carotis interna'dan arkaya doğru seyrederek arteria cerebri posterior'a katılan kısa bir damardır; her iki tarafta ön ve arka dolaşımı birbirine bağlar. Doğrudan nervus oculomotorius'un üzerinde seyreder; çıkış yerindeki bir anevrizmanın pupilla dilatasyonu ile birlikte ağrılı üçüncü sinir felci yapmasının nedeni budur. Perforan dalları ön talamusu, hipotalamusu ve capsula interna'nın bir bölümünü besler.",
+  "anatomy.location": "Supraklinoid karotisin arka duvarından ayrılır, cisterna interpeduncularis içinde nervus oculomotorius'un üzerinden ve corpus mammillare'nin lateralinden posteromedial yönde geçer ve P1–P2 birleşim yerinde arteria cerebri posterior'a katılır.",
+  "function": "Karotis ile vertebrobaziler sistem arasında kollateral yoldur; fetal varyantta arteria cerebri posterior'un başlıca kaynağıdır. Talamik perforan dalları (ön talamoperforan dallar) ön talamusu, hipotalamusu ve capsula interna'nın arka bacağını besler.",
+  "imaging.bestView[0].label": "nervus oculomotorius'un üzerinde, karotisten P1–P2 birleşimine doğru arkaya seyri",
+  "imaging.bestView[1].label": "cisterna interpeduncularis içinde nervus oculomotorius ile ilişkisi",
+  "imaging.normalAppearance": "Cisterna suprasellaris düzeyindeki aksiyal T2 kesitlerde sıklıkla karotisin arkasında küçük bir akım boşluğu olarak görülür. BTA/MRA'da karotis ile PCA arasındaki kısa damardır; fetal tip PComm beslediği PCA kadar geniştir ve aynı taraf P1 incedir.",
+  "imaging.pathology[0].pathology": "Üçüncü sinir felci ile birlikte PComm anevrizması",
+  "imaging.pathology[0].finding": "Karotis–PComm birleşiminde, posterolateral yönde nervus oculomotorius'a doğru uzanan sakküler anevrizma; rüptüre ise cisterna suprasellaris ve cisterna ambiens içinde subaraknoid kan.",
+  "imaging.sequenceOfChoice": "Pupilla tutulumlu her ağrılı üçüncü sinir felcinde acil BTA (ya da kateter anjiyografi)",
+  "clinical.lesionEffects[0].deficit": "Pupilla dilatasyonu ile birlikte ağrılı üçüncü sinir felci",
+  "clinical.lesionEffects[0].mechanism": "Parasempatik pupilla liflerinin yüzeyel seyrettiği nervus oculomotorius'un pial yüzeyine bası",
+  "clinical.lesionEffects[1].deficit": "Anevrizma tedavisinden sonra karşı tarafta hemiparezi ve amnezi",
+  "clinical.lesionEffects[1].mechanism": "Talamusa ve kapsüle giden ön talamoperforan dalların kaybı",
+  "clinical.examination[0]": "Pupilla boyutu ve ışık yanıtını ptozis ve göz hareketleriyle birlikte değerlendirin",
+  "clinical.examination[1]": "Felce eşlik eden ani ve şiddetli baş ağrısını sorgulayın",
+  "clinical.pearls[0]": "Pupillayı tutan bir üçüncü sinir felci basıya bağlı bir lezyondur ve atlanmaması gereken tablo PComm anevrizmasıdır",
+  "clinical.pearls[1]": "Fetal PComm varlığında bir karotis tıkanması oksipital lobu da enfarkte edebilir"
+ }
+}

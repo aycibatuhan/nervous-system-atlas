@@ -1,0 +1,29 @@
+{
+ "id": "arachnoid-granulations",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "6144edcd9c9864a2",
+ "fields": {
+  "summary": "Duradan geçerek venöz sinüslere, başlıca sinus sagittalis superior'a ve onun lateral lakünalarına doğru sokulan araknoid püskülleridir; BOS basıncı venöz basıncı birkaç santimetre su kadar aştığında BOS'u kana geri döndüren tek yönlü kapakçıklar gibi çalışır. Subaraknoid kanama ya da menenjit sonrasında skarlaşmaları kominikan hidrosefalinin klasik nedenidir; sinüs trombozuna bağlı venöz basınç artışı da BOS emilimini geriye iterek intrakraniyal hipertansiyona yol açar. Büyük granülasyonlar sık görülen rastlantısal bir bulgudur ve görüntülemede sinüs trombozunu ya da bir kitleyi taklit edebilir.",
+  "anatomy.location": "Parasagital durada sinus sagittalis superior ve lateral lakünaları boyunca, ayrıca sinus transversus ve sinus sigmoideus içinde ve spinal sinir köklerinin çevresinde bulunur; yaşla birlikte büyür ve kalsifiye olur, kafatasının iç tabulasını aşındırabilir.",
+  "function": "BOS'un venöz sisteme kitlesel emilimi; basınca bağımlı ve kapakçık benzeri çalışır, lenfatik ve perinöral drenaj yollarıyla desteklenir.",
+  "imaging.bestView[0].label": "vertekste sinus sagittalis superior ve lateral lakünalar",
+  "imaging.bestView[1].label": "sinus transversus içine uzanan granülasyonlar",
+  "imaging.normalAppearance": "Kontrastlı MR venografi ya da BT venografide dural sinüsler içinde, tüm sekanslarda BOS ile aynı sinyali veren yuvarlak dolum defektleri şeklinde görülür; sıklıkla içlerine giren küçük bir damar bulunur. Trombüsle karıştırılmamalıdır: trombüs BT'de daha dens olup T1/T2'de farklı sinyal verir.",
+  "imaging.pathology[0].pathology": "Kominikan hidrosefali",
+  "imaging.pathology[0].finding": "Subaraknoid kanama, menenjit ya da karsinomatoz sonrasında dördüncü ventrikül dahil dört ventrikülün de genişlemesi ve transependimal ödem.",
+  "imaging.pathology[1].pathology": "Dev araknoid granülasyon",
+  "imaging.pathology[1].finding": "Sinus transversus içinde, difüzyon kısıtlaması göstermeyen ve sinüsü genişletmeyen, keskin sınırlı BOS sinyalinde dolum defekti.",
+  "imaging.pathology[1].pitfalls": "Granülasyona bakarak sinüs trombozu tanısı koymayın: T1 sinyalini ve MR venografideki şeklini kontrol edin",
+  "imaging.sequenceOfChoice": "MR venografi ya da BT venografi",
+  "clinical.lesionEffects[0].deficit": "Subaraknoid kanama ya da menenjit sonrasında kominikan hidrosefali",
+  "clinical.lesionEffects[0].mechanism": "Granülasyonlar düzeyinde emilimin tıkanması",
+  "clinical.lesionEffects[1].deficit": "Sinüs trombozuna eşlik eden kafa içi basınç artışı",
+  "clinical.lesionEffects[1].mechanism": "Venöz hipertansiyonun BOS emilimini engellemesi",
+  "clinical.examination[0]": "Papil ödemi",
+  "clinical.examination[1]": "Subaraknoid kanamayı izleyen haftalarda yürüyüş ve biliş",
+  "clinical.examination[2]": "Baş ağrısının özellikleri ve geçici görme kararmaları",
+  "clinical.pearls[0]": "Dört ventrikülün de genişlediği hidrosefali kominikandır: sorun tıkanma değil, emilimdir",
+  "clinical.pearls[1]": "Sinüs trombozu BOS emilimini engelleyerek kafa içi basıncını artırır; bu nedenle idiyopatik intrakraniyal hipertansiyon gibi ortaya çıkabilir"
+ }
+}

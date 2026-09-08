@@ -1,0 +1,30 @@
+{
+ "id": "medial-geniculate-nucleus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "5678933cbd4665c9",
+ "fields": {
+  "summary": "İşitmenin talamusudur; pulvinar'ın alt yüzünde, corpus geniculatum laterale'nin medialinde yer alan küçük oval bir çekirdektir. Brachium colliculi inferioris'i alır ve capsula interna'nın sublentiküler bölümündeki radiatio acustica aracılığıyla Heschl girusuna projeksiyon verir. İşitme yolağı koklear çekirdeklerden yukarıya doğru iki yanlı olduğundan tek yanlı bir genikülat lezyonu yalnızca karşı tarafta silik işitme ve sesin yerini belirleme defisitleri yapar, asla sağırlık yapmaz.",
+  "anatomy.location": "Talamusun posteroinferior bölümünde, corpus geniculatum laterale'nin inferomedialinde ve colliculus superior'un lateralinde yer alır; brachium colliculi inferioris'i mezensefalonun lateral yüzü boyunca alır.",
+  "connections.afferents[0].from": "inferior-colliculus",
+  "connections.afferents[0].via": "brachium colliculi inferioris",
+  "connections.efferents[0].to": "gyrus-heschl",
+  "connections.efferents[0].via": "tract-acoustic-radiation",
+  "function": "İşitmenin primer işitme korteksine talamik aktarımı; tonotopik olarak düzenlenmiştir. Ayrıca korku koşullanması için işitsel bilgiyi amygdala'ya aktarır.",
+  "imaging.bestView[0].label": "LGN'nin medialinde corpus geniculatum mediale",
+  "imaging.bestView[1].label": "mezensefalonun lateralinde, alt talamusta MGN",
+  "imaging.normalAppearance": "İnce koronal T2'de corpus geniculatum laterale'nin medialinde küçük bir çekirdektir; bu atlasta MASSP meshi ile temsil edilir.",
+  "imaging.pathology[0].pathology": "MGN'yi de içine alan talamik enfarkt",
+  "imaging.pathology[0].finding": "Arka talamusta difüzyon kısıtlaması; LGN de tutulmuşsa hemianopsiyle birlikte karşı tarafta hafif işitme defisiti.",
+  "imaging.sequenceOfChoice": "DAG; santral testlerle birlikte odyometri",
+  "clinical.lesionEffects[0].deficit": "Karşı tarafta hafif işitme kaybı ve sesin yerini belirlemede bozulma",
+  "clinical.lesionEffects[0].mechanism": "Büyük bölümü çaprazlaşmış olan işitme yolağının kısmen kesintiye uğraması",
+  "clinical.lesionEffects[1].deficit": "İki yanlı lezyonlarda işitsel agnozi",
+  "clinical.lesionEffects[1].mechanism": "İki yanlı genikülat ya da radyasyo hasarı",
+  "clinical.examination[0]": "İşitme eşikleri (normale yakın) ve sesin yerinin belirlenmesi",
+  "clinical.examination[1]": "Olanak varsa dikotik dinleme",
+  "clinical.pearls[0]": "Santral işitme lezyonları tek kulakta sağırlık yapmaz; hasta bir tarafta sağırsa sinire ya da kokleaya bakın",
+  "clinical.pearls[1]": "Corpus geniculatum mediale kortekse gelmeden önceki son duraktır: onun ya da radiatio acustica'nın iki yanlı lezyonları, beyin sapı işitsel yanıtları korunmuşken kortikal (santral) sağırlık yapar",
+  "pitfalls[0]": "Hasta başında sesin yerini belirleme testi kabadır; öykü, odyogram normalken gürültülü ortamlarda zorlanmayı düşündürüyorsa hastayı santral işitme testlerine yönlendirin"
+ }
+}

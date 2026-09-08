@@ -1,0 +1,32 @@
+{
+  "id": "hypothalamus-ventromedial",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "aa324dcbe62c3475",
+  "fields": {
+    "summary": "Nucleus ventromedialis, tuberal hipotalamusta nucleus arcuatus'un lateralinde ve nucleus dorsomedialis'in altında yer alan, sınırları belirgin büyük bir çekirdektir ve klasik olarak tokluk merkezidir: hayvanlarda iki yanlı lezyonlar hiperfaji, obezite ve öfke yapar; insanda aynı tablo kraniyofarenjiyom cerrahisi, travma ve hipotalamik gliomlardan sonra ortaya çıkar. Leptin ve glukoz sinyallerini limbik ve beyin sapı girdisiyle bütünleştirerek beslenmeyi sınırlar; ayrıca savunma davranışını ve dişi cinsel davranışını düzenler, glukoz karşı düzenlenmesine ve yağ dokusu ile kasa giden sempatik tonusun denetimine katılır. Arka dolaşımın talamoperforan ve tuberal dallarından kanlanır.",
+    "anatomy.location": "Tuberal hipotalamusun ortası; nucleus arcuatus ile recessus infundibuli'nin üstünde ve lateralinde, nucleus dorsomedialis'in altında, lateral hipotalamik alan ile fornix'in medialinde, chiasma ile corpora mammillaria arasındaki düzeyde.",
+    "function": "Ventromedial nöronlar leptin reseptörleri ve glukoz duyarlı yapılar taşır; beyin kaynaklı nörotrofik faktör ve steroidojenik faktör 1 içeren hücre toplulukları aracılığıyla tokluğu, enerji harcamasını ve hipoglisemiye verilen sempatik yanıtı sağlar; nucleus paraventricularis'e, beyin sapındaki beslenme merkezlerine ve periakuaduktal griye projekte olurlar. Östrojene duyarlı ventrolateral nöronlar lordozu ve dişi cinsel davranışının diğer yönlerini denetler; ayrı bir nöron topluluğu ise hayvan tehdit edildiğinde savunmaya yönelik saldırganlığı başlatır ve amygdala'dan stria terminalis yoluyla girdi alır. Yıkımı, huzursuzlukla birlikte durmak bilmeyen yeme ve kilo alımı yaratırken uyarılması beslenmeyi durdurur ve korkuya benzer davranış oluşturur.",
+    "imaging.bestView[0].label": "nucleus arcuatus'un lateralindeki nucleus ventromedialis",
+    "imaging.bestView[1].label": "fornix'in medialindeki tuberal hipotalamus",
+    "imaging.normalAppearance": "İnfundibulumdan geçen koronal kesitlerde üçüncü ventrikülün alt bölümüne komşu tuberal hipotalamik gri cevherin bir parçası; komşularından yalnızca atlaslarda ayırt edilir.",
+    "imaging.pathology[0].pathology": "Kraniyofarenjiyom sonrası hipotalamik obezite",
+    "imaging.pathology[0].finding": "Tuberal hipotalamusun ameliyata ya da tümöre bağlı hasarı; hızlı kilo alımı, hiperfaji ve enerji harcamasında azalma ile birliktedir.",
+    "imaging.pathology[1].pathology": "Hipotalamik gliom",
+    "imaging.pathology[1].finding": "Obez bir çocukta hipotalamusun ve chiasma'nın kontrast tutan ya da tutmayan kitlesi; lateral hipotalamus tutulduğunda ise paradoksal biçimde zayıflamayla giden diensefalik sendrom görülür.",
+    "imaging.pathology[2].pathology": "Kafa travması sonrası öfke ve hiperfaji",
+    "imaging.pathology[2].finding": "Bazal hipotalamusun hemorajik kontüzyonu ya da makaslanma yaralanması; davranış değişikliği ile birliktedir.",
+    "clinical.lesionEffects[0].deficit": "Hiperfaji, obezite ve tokluk hissinin bozulması",
+    "clinical.lesionEffects[0].mechanism": "Leptinle uyarılan tokluk nöronlarının kaybı",
+    "clinical.lesionEffects[1].deficit": "Öfke ve huzursuzluk",
+    "clinical.lesionEffects[1].mechanism": "Amigdaler ve lateral hipotalamik saldırganlığın ventromedial denetimden kurtulması",
+    "clinical.lesionEffects[2].deficit": "Hipoglisemiye karşı düzenlemenin bozulması",
+    "clinical.lesionEffects[2].mechanism": "Sempatik ve glukagon yanıtını başlatan ventromedial glukoz algılamasının kaybı",
+    "clinical.examination[0]": "Her hipotalamik hasardan sonra kilo ve yeme davranışı",
+    "clinical.examination[1]": "İnsülin kullanan hipotalamik hastalarda kan şekeri izlemi",
+    "clinical.examination[2]": "Davranış öyküsü: öfke, huzursuzluk, saldırganlık",
+    "clinical.pearls[0]": "Ventromedial hasar sonu gelmeyen yeme demektir; lateral hipotalamik hasar ise hiç yememek",
+    "clinical.pearls[1]": "Hipotalamik obezite bir lezyondur, bir tercih değil; ameliyattan önce aileyi bilgilendirin",
+    "clinical.pearls[2]": "Ventromedial glukoz algılayıcıları hipoglisemide adrenalin yanıtını başlatır; bunların hasarı hipoglisemiyi sessizleştirir"
+  }
+}

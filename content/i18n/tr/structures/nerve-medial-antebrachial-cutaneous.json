@@ -1,0 +1,32 @@
+{
+ "id": "nerve-medial-antebrachial-cutaneous",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b83567d36a58ef9d",
+ "fields": {
+  "summary": "Nervus cutaneus antebrachii medialis, plexus brachialis'in fasciculus medialis'inden çıkan duyusal bir daldır (C8, T1); kolun iç yüzünde vena basilica ile birlikte aşağı iner, kolun ortasında derin fasyayı deler ve ön ile arka dallarına ayrılarak önkolun iç yüzünün derisini dirsekten el bileğine kadar innerve eder. Alt trunkus ya da fasciculus medialis pleksus lezyonunu ulnar nöropatiden ayıran duyu alanı budur: nervus ulnaris önkol derisini innerve etmez, bu nedenle güçsüz ve uyuşuk bir elle birlikte önkolun iç yüzünde uyuşukluk bulunması lezyonun dirsekte değil, pleksusta olduğunu gösterir (Klumpke felci, nörojenik torasik çıkış sendromu, Pancoast tümörü). Bu ayrımın elektrofizyolojik belirteci sinirin duyusal potansiyelidir.",
+  "anatomy.location": "Aksillada fasciculus medialis'ten çıkar, arteria brachialis'in medialinde ve sonra vena basilica ile birlikte aşağı iner, dirseğin üzerinde venle birlikte derin fasyayı deler ve epicondylus medialis üzerinde ön ile arka dallarına ayrılarak önkol derisinin iç yarısını el bileğine kadar innerve eder.",
+  "function": "Tümüyle duyusaldır; önkolun iç yüzünden dokunma, ağrı ve ısı duyusunu fasciculus medialis ve alt trunkus üzerinden C8 ve T1 arka kök gangliyonlarına taşır. Sulama alanı, alt pleksus lezyonlarını ulnar nöropatiden ayırmanın anahtarıdır, çünkü nervus ulnaris'in duyusal innervasyonu el bileğinde biter: nervus cutaneus antebrachii medialis duyusal potansiyeli normalken ulnar potansiyelin bozuk olması lezyonu nervus ulnaris'e yerleştirir, her ikisinin de bozuk olması ise lezyonu fasciculus medialis ya da alt trunkusa yerleştirir. Aksilla cerrahisinde ve vena basilica'dan kan alınması ile kanülasyon sırasında zedelenir ve ağrılı bir nörom bırakır; ayrıca greft olarak alınır.",
+  "imaging.bestView[0].label": "kolun iç yüzü boyunca nervus cutaneus antebrachii medialis",
+  "imaging.bestView[1].label": "dirseğin üzerinde vena basilica'nın yanında sinir",
+  "imaging.normalAppearance": "Ultrasonda kolun iç yüzünde vena basilica'ya eşlik eden ince bir sinirdir; rutin görüntülemede görülmez. Sulama alanı önkolun iç yüzünün derisidir.",
+  "imaging.pathology[0].pathology": "Alt trunkus ya da fasciculus medialis pleksopatisi",
+  "imaging.pathology[0].finding": "Nervus cutaneus antebrachii medialis duyusal potansiyelinin alınamaması ya da azalması; ulnar incelemeler bozuktur ve birden çok sinire ait C8-T1 kaslarında denervasyon görülür.",
+  "imaging.pathology[1].pathology": "Nörojenik torasik çıkış sendromu",
+  "imaging.pathology[1].finding": "Alt trunkusa bası yapan fibröz bant ya da servikal kot; nervus cutaneus antebrachii medialis potansiyeli karakteristik olarak azalmıştır.",
+  "imaging.pathology[2].pathology": "Kan alma sırasında iyatrojenik yaralanma",
+  "imaging.pathology[2].finding": "Vena basilica'nın yanında sinirin nöromu; fossa cubitalis düzeyinde ağrılı Tinel işareti verir.",
+  "clinical.lesionEffects[0].deficit": "Önkolun iç yüzünde uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Sinirin ya da fasciculus medialis ile alt trunkusun kesintiye uğraması",
+  "clinical.lesionEffects[1].deficit": "Kan alma sonrasında ağrılı nörom",
+  "clinical.lesionEffects[1].mechanism": "Sinirin vena basilica'ya eşlik ettiği yerde zedelenmesi",
+  "clinical.lesionEffects[2].deficit": "Motor defisit yoktur",
+  "clinical.lesionEffects[2].mechanism": "Sinir tümüyle duyusaldır",
+  "clinical.examination[0]": "Elde ulnar örüntü bulunan her hastada serçe parmağın yanı sıra önkolun iç yüzünde de hafif dokunma duyusunu sınayın",
+  "clinical.examination[1]": "Nervus cutaneus antebrachii medialis duyusal yanıtının sinir ileti çalışması",
+  "clinical.examination[2]": "Elle birlikte önkol da uyuşuksa servikal kot ve Horner sendromunu araştırın",
+  "clinical.pearls[0]": "Uyuşuk önkolla birlikte uyuşuk serçe parmak pleksusu gösterir; tek başına uyuşuk serçe parmak nervus ulnaris'i gösterir",
+  "clinical.pearls[1]": "Nervus cutaneus antebrachii medialis potansiyeli elektrofizyoloğun pleksus testidir",
+  "clinical.pearls[2]": "Kan alınan yerde ortaya çıkan ağrılı bir şişlik bu sinirin nöromu olabilir"
+ }
+}

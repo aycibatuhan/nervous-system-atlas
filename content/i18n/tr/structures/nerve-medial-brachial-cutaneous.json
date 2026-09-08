@@ -1,0 +1,32 @@
+{
+ "id": "nerve-medial-brachial-cutaneous",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "ec3b40239414c892",
+ "fields": {
+  "summary": "Nervus cutaneus brachii medialis, fasciculus medialis'in en küçük dalıdır (T1; nervus intercostobrachialis aracılığıyla T2 katkısı vardır) ve kolun iç yüzünün derisiyle aksillayı innerve eder. Klinikte T1 kökünün ve alt pleksusun belirtecidir: kolun iç yüzündeki uyuşukluk Pancoast tümörüne, alt trunkus yaralanmasına ve nörojenik torasik çıkış sendromuna eşlik eder; ona katılan nervus intercostobrachialis meme kanseri için yapılan aksiller diseksiyonda kesilir ve hastaların ameliyattan sonra fark ettiği uyuşuk iç kol bunun sonucudur.",
+  "anatomy.location": "Aksillada fasciculus medialis'ten çıkar, vena axillaris'in medialinde ilerler, ikinci interkostal sinirden gelen nervus intercostobrachialis ile bağlantı kurar, kolun ortasında derin fasyayı deler ve kolun iç yüzünün derisini aksilladan dirseğe kadar innerve eder.",
+  "function": "Tümüyle duyusaldır; kolun iç yüzünden ve aksillanın tabanından gelen duyuyu fasciculus medialis ve alt trunkus üzerinden T1 (nervus intercostobrachialis aracılığıyla da T2) arka kök gangliyonlarına taşır; bu nedenle sulama alanı pleksusun en alt kökünün dermatomal belirtecidir. Burada duyu kaybının erimiş bir el ve Horner sendromuyla birlikte bulunması, akciğer tepesinde alt trunkusu ve sempatik zinciri invaze eden bir Pancoast tümörünü gösterir; aksilla cerrahisinden sonraki kayıp ise nervus intercostobrachialis'in kesilmesini yansıtır ve iyi huylu ama kalıcı bir uyuşukluktur. Bu alandaki ağrı yansıyan kalp ağrısı olabilir, çünkü T1-T2 kalpten de girdi alır.",
+  "imaging.bestView[0].label": "aksillada ve kolun iç yüzünde nervus cutaneus brachii medialis",
+  "imaging.bestView[1].label": "vena axillaris'in medialinde sinir",
+  "imaging.normalAppearance": "Vena axillaris'in medialinde çok küçük bir sinirdir; rutin görüntülemede seçilemez. Sulama alanı: kolun üst iç yüzü ve aksilla.",
+  "imaging.pathology[0].pathology": "Pancoast tümörü",
+  "imaging.pathology[0].finding": "Plexus brachialis'in alt trunkusunu, T1 kökünü ve ganglion stellatum'u invaze eden apikal akciğer tümörü; kolun iç yüzünde uyuşukluk, elde erime ve Horner sendromu ile birliktedir.",
+  "imaging.pathology[1].pathology": "Mastektomi sonrası uyuşukluk (nervus intercostobrachialis yaralanması)",
+  "imaging.pathology[1].finding": "Görüntüleme bulgusu yoktur; aksiller diseksiyondan sonra kolun iç yüzünde ve aksillada uyuşukluk, ultrasonda olası bir nörom görülebilir.",
+  "imaging.pathology[2].pathology": "Nörojenik torasik çıkış sendromu",
+  "imaging.pathology[2].finding": "T1 kökü ve alt trunkus düzeyinde servikal kot ya da bant; kolun ve önkolun iç yüzünde uyuşuklukla birliktedir.",
+  "clinical.lesionEffects[0].deficit": "Kolun iç yüzünde ve aksillada uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "T1 kökü, alt trunkus ya da fasciculus medialis lezyonu veya nervus intercostobrachialis'in kesilmesi",
+  "clinical.lesionEffects[1].deficit": "Eşlik eden el erimesi ve Horner sendromu",
+  "clinical.lesionEffects[1].mechanism": "Alt pleksusu ve sempatik zinciri invaze eden apikal akciğer tümörü",
+  "clinical.lesionEffects[2].deficit": "Motor defisit yoktur",
+  "clinical.lesionEffects[2].mechanism": "Tümüyle duyusal sinir",
+  "clinical.examination[0]": "Alt pleksus lezyonunun yaygınlığını belirlemek için kolun iç yüzünde, önkolun iç yüzünde ve serçe parmakta duyu",
+  "clinical.examination[1]": "Kolunun iç yüzü uyuşuk olan her hastada ptozis ve miyozis arayın",
+  "clinical.examination[2]": "T1 alanı uyuşuk ve el erimişse akciğer tepesinin görüntülenmesi",
+  "clinical.pearls[0]": "Küçük pupillayla birlikte uyuşuk bir iç kol, akciğer grafisi aksini gösterene dek Pancoast tümörüdür",
+  "clinical.pearls[1]": "Nervus intercostobrachialis aksiller diseksiyonda feda edilir; hastayı uyuşuk iç kol konusunda uyarın",
+  "clinical.pearls[2]": "T1 hem kolun iç yüzünü hem kalbi innerve eder: kol ağrısı anjina olabilir"
+ }
+}

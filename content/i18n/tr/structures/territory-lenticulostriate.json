@@ -1,0 +1,33 @@
+{
+ "id": "territory-lenticulostriate",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "d2481f04278f3947",
+ "fields": {
+  "summary": "M1 ve A1 segmentlerinin perforan dallarının derin sulama alanı: putamen, globus pallidus, nucleus caudatus ve capsula interna'nın ön bacağı, genu'su ve arka bacağının üst bölümü. Laküner enfarktların ve hipertansif kanamanın en sık görüldüğü yerdir ve kortikal bulgu olmaksızın motor sendromlar yapar.",
+  "anatomy.location": "Lateral ventriküllerin frontal boynuzları ve gövdeleri düzeyinde hemisferin merkezi: nucleus lentiformis, nucleus caudatus'un başı ve gövdesi ve bunların arasındaki capsula interna; lateralde insular korteks, medialde talamus (bir PCA/PComm sulama alanı) ile sınırlanır.",
+  "function": "Tractus corticospinalis ve corticobulbaris ile talamokortikal projeksiyonları capsula interna içinden taşır; motor devrenin striatum ve pallidum'unu barındırır.",
+  "bloodSupply.note": "Bu atlastaki sulama alanı sınırları olasılıksal bir inme lezyon atlasından (Liu ve ark. 2023) gelir ve circulus arteriosus Willisi anatomisine göre kişiden kişiye kayar.",
+  "imaging.bestView[0].label": "frontal boynuzlar düzeyinde nucleus lentiformis ve capsula interna",
+  "imaging.bestView[1].label": "insula ile talamus arasındaki perforan arter sulama alanı",
+  "imaging.normalAppearance": "Bazal gangliyonlar düzeyindeki aksiyal kesitlerde merkezi bir bölgedir; lakünler burada difüzyonda parlak, küçük ve yuvarlak noktalar, eski olanlar ise BOS sinyalli kaviteler olarak görülür.",
+  "imaging.pathology[0].pathology": "Laküner enfarkt",
+  "imaging.pathology[0].finding": "Putamende, capsula interna'da ya da corona radiata'da 15–20 mm'nin altında yuvarlak ya da oval difüzyon kısıtlaması.",
+  "imaging.pathology[1].pathology": "Striatokapsüler enfarkt",
+  "imaging.pathology[1].finding": "Geçici M1 tıkanmasının ardından korteksin korunduğu, tüm derin sulama alanını tutan virgül biçimli enfarkt.",
+  "imaging.pathology[2].pathology": "Hipertansif putaminal kanama",
+  "imaging.pathology[2].finding": "Kapsüle uzanan ve ventriküle açılabilen hiperdens putaminal hematom.",
+  "imaging.sequenceOfChoice": "DAG; kontrastsız BT; mikrokanamalar için SWI",
+  "clinical.lesionEffects[0].deficit": "Saf motor hemiparezi",
+  "clinical.lesionEffects[0].mechanism": "Capsula interna'daki kortikospinal lifler",
+  "clinical.lesionEffects[1].deficit": "Sensorimotor inme",
+  "clinical.lesionEffects[1].mechanism": "Talamusa komşu capsula interna arka bacağı",
+  "clinical.lesionEffects[2].deficit": "Hemiballismus ya da distoni",
+  "clinical.lesionEffects[2].mechanism": "Striatum ve pallidum lezyonları",
+  "clinical.examination[0]": "Yüzde, kolda ve bacakta eşit güçsüzlük",
+  "clinical.examination[1]": "Afazi, ihmal ve görme alanı defektinin bulunmaması",
+  "clinical.examination[2]": "Kan basıncı ve göz dibi",
+  "clinical.pearls[0]": "Laküner sendromlar kortikal bulgu olmaksızın motor ve duyusaldır",
+  "clinical.pearls[1]": "Hipertansiyon bu sulama alanının hastalığıdır: SWI'de mikrokanamalar küçük damar arteriyopatisini doğrular"
+ }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "interposed-nucleus",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "8b3a9f4d43d72db7",
+  "fields": {
+    "summary": "Nucleus globosus ve nucleus emboliformis, nucleus dentatus ile nucleus fastigii arasında yer alır ve birlikte paravermal (ara) bölgenin çıkışı olan nucleus interpositus'u oluşturur. Paravermisten Purkinje girdisi ve spinoserebellar kollateraller alır, pedunculus cerebellaris superior yoluyla karşı taraf nucleus ruber'e (tractus rubrospinalis) ve talamusa projekte olurlar. Süregelen ekstremite hareketlerini ve ekstremite kaslarının tonusunu ayarlarlar; bu nedenle lezyonları, fastigial lezyonların gövde ataksisi ile dentat lezyonların dismetrisi arasında bir nitelik taşıyan ekstremite ataksisi yapar.",
+    "anatomy.location": "Her hemisferin beyaz cevherinde, nucleus dentatus'un hilumunun medialinde ve nucleus fastigii'nin lateralinde, dördüncü ventrikülün tavanının üstünde.",
+    "connections.afferents[0].from": "paravermal korteks",
+    "connections.afferents[0].note": "Purkinje hücresi aksonları",
+    "connections.afferents[1].from": "spinal-cord",
+    "connections.afferents[1].via": "spinoserebellar kollateraller",
+    "connections.efferents[0].to": "red-nucleus (karşı taraf)",
+    "connections.efferents[0].via": "superior-cerebellar-peduncle",
+    "function": "Süregelen ekstremite hareketinin düzeltilmesi ile rubrospinal ve talamokortikal yolaklar aracılığıyla agonist-antagonist dengesinin ve ekstremite tonusunun denetimi.",
+    "imaging.bestView[0].label": "derin beyaz cevherde dentat hilumun medialinde",
+    "imaging.normalAppearance": "Rutin MR'da nucleus dentatus'tan ayrı olarak seçilemez; grup, SWI'da dentat bandının medial uzantısı olarak görünür.",
+    "imaging.pathology[0].pathology": "Derin serebellar çekirdek enfarktı",
+    "imaging.pathology[0].finding": "Derin beyaz cevhere ve çekirdeklere ulaşan SCA sulama alanında difüzyon kısıtlaması.",
+    "imaging.sequenceOfChoice": "DAG ve SWI",
+    "clinical.lesionEffects[0].deficit": "Aynı taraf ekstremitede ataksi ve aksiyon tremoru",
+    "clinical.lesionEffects[0].mechanism": "Paravermal çıkış",
+    "clinical.lesionEffects[1].deficit": "Hipotoni",
+    "clinical.lesionEffects[1].mechanism": "Gerilme reflekslerini kolaylaştıran etkinin kaybı",
+    "clinical.examination[0]": "Topuk-diz ve parmak-burun testleri",
+    "clinical.examination[1]": "Tonus ve sarkaç refleksleri",
+    "clinical.pearls[0]": "Ara bölge, serebellumun kortikospinal komutu (pontin kollateraller yoluyla) spinoserebellar geri bildirimle karşılaştırdığı yerdir",
+    "clinical.pearls[1]": "Nucleus interpositus lezyonları nadiren tek başınadır; uygulamada arteria cerebelli superior enfarktlarının ve laterale yayılan orta hat tümörlerinin ekstremite bileşenini bunlar oluşturur",
+    "pitfalls[0]": "Derin çekirdeklerden ve pedunculus cerebellaris superior'dan kaynaklanan ataksi hasta başında ayırt edilemez; sorumlunun çekirdekler mi, pedunculus mu yoksa pontin girdi mi olduğuna görüntüleme karar verir"
+  }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "hypothalamus-lateral",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "66e60c2e2f4e7b9c",
+ "fields": {
+  "summary": "Lateral hipotalamik alan, fornix'in ve medial çekirdeklerin lateralinde kalan, medial ön beyin demetinin içinden geçtiği geniş bölgedir; hipotalamusun tüm uzunluğu boyunca preoptik alandan mammiller bölgeye kadar uzanır. Beslenme ve uyanıklık merkezidir: oreksin (hipokretin) nöronları uyanıklığı sürdürür ve motive davranışı yönlendirir, melanin yoğunlaştırıcı hormon nöronları uykuyu ve beslenmeyi destekler; lezyonları afaji, adipsi ve uyku hali yapar. Oreksin nöronlarının kaybı katapleksili narkolepsiye yol açar; alan hipotalamik gliomlarla zedelenir ve bunlar süt çocuklarında paradoksal uyanıklıkla giden zayıflama tablosunu, yani diensefalik sendromu oluşturur.",
+  "anatomy.location": "Medialde fornix ve medial hipotalamik çekirdekler, lateralde capsula interna, subtalamus ve pedunculus cerebri arasında yer alan lateral hipotalamus; önde lateral preoptik alandan arkada lateral mammiller bölgeye uzanır; medial ön beyin demeti onun içinden uzunlamasına geçer.",
+  "function": "Lateral hipotalamusun oreksin nöronları tüm beyne, özellikle locus coeruleus'a, rafe çekirdeklerine, nucleus tuberomammillaris'e ve bazal ön beyne projeksiyon göndererek uyanıklığı dengeler ve REM uykusuna uygunsuz geçişleri engeller; açlık, stres ve ödülle etkinleşir, besin arayışını ve eyleme geçme motivasyonunu yürütür. Melanin yoğunlaştırıcı hormon nöronları ters etki gösterir; uykuyu ve enerji korunumunu destekler. Alan, septal-preoptik bölge ile beyin sapı arasındaki medial ön beyin demeti trafiğini bütünleştirir, ventral tegmental alandan nucleus accumbens'e ödül sinyallerini taşır ve glukoz düştüğünde beslenmeyi başlatan glukoza duyarlı nöronlar içerir. Harabiyeti yeme ve içmeyi ortadan kaldırır ve stupor yapar.",
+  "imaging.bestView[0].label": "fornix'in lateralinde lateral hipotalamik alan",
+  "imaging.bestView[1].label": "fornix ile capsula interna arasında lateral hipotalamus",
+  "imaging.normalAppearance": "Tuber cinereum'dan geçen koronal kesitlerde fornix'in inen sütununun lateralindeki hipotalamik doku; lateralde tractus opticus ve capsula interna ile sınırlıdır.",
+  "imaging.pathology[0].pathology": "Tip 1 narkolepsi",
+  "imaging.pathology[0].finding": "MR normaldir; tanı, lateral hipotalamik oreksin nöronlarının seçici kaybını yansıtan düşük BOS hipokretin-1 düzeyine ya da çoklu uyku latansı testine dayanır.",
+  "imaging.pathology[1].pathology": "Süt çocukluğunun diensefalik sendromu",
+  "imaging.pathology[1].finding": "Normal besin alımına karşın ileri derecede zayıflama, uyanıklık ve hareketlilikle giden hipotalamik-kiazmatik gliom.",
+  "imaging.pathology[2].pathology": "Hipotalamik lezyonlara bağlı sekonder narkolepsi",
+  "imaging.pathology[2].finding": "Hipersomni ve katapleksi ile giden lateral hipotalamus tümörü, demiyelinizasyonu, sarkoidozu ya da inmesi.",
+  "clinical.lesionEffects[0].deficit": "Afaji, adipsi ve kilo kaybı",
+  "clinical.lesionEffects[0].mechanism": "Lateral hipotalamik beslenme dürtüsünün ve glukoz algılamasının kaybı",
+  "clinical.lesionEffects[1].deficit": "Hipersomni, katapleksi ve REM girişimi (narkolepsi)",
+  "clinical.lesionEffects[1].mechanism": "Uyku-uyanıklık anahtarını dengeleyen oreksin nöronlarının kaybı",
+  "clinical.lesionEffects[2].deficit": "Apati ve motive davranışın kaybı",
+  "clinical.lesionEffects[2].mechanism": "Medial ön beyin demetindeki ödül yolağının kesintiye uğraması",
+  "clinical.examination[0]": "Epworth uykululuk ölçeği ve katapleksi, uyku paralizisi ve hipnagojik halüsinasyon öyküsü",
+  "clinical.examination[1]": "Kilo ve besin alımı öyküsü",
+  "clinical.examination[2]": "Narkolepsiden kuşkulanıldığında çoklu uyku latansı testi ve BOS hipokretin düzeyi",
+  "clinical.pearls[0]": "Narkolepsi lateral hipotalamusun hastalığıdır: doksan bin oreksin nöronu yitirilir ve uyanıklık anahtarı titremeye başlar",
+  "clinical.pearls[1]": "Zayıflamış ama canlı ve neşeli bir süt çocuğunda aksi kanıtlanana dek hipotalamik gliom vardır",
+  "clinical.pearls[2]": "Lateral zayıflatır, ventromedial şişmanlatır"
+ }
+}

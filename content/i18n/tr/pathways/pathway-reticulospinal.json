@@ -1,0 +1,29 @@
+{
+ "id": "pathway-reticulospinal",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "7ecc8d33112bcece",
+ "fields": {
+  "summary": "Pontin ve medüller formatio reticularis omuriliğe iki traktus gönderir: funiculus anterior içinde çaprazlaşmadan inen ve ekstansörler ile aksiyal kasları kolaylaştıran pontin (medial) tractus reticulospinalis ile funiculus lateralis içinde kısmen çaprazlaşarak inen, ekstansör tonusu inhibe eden, reflekslerle ağrı iletimini düzenleyen medüller (lateral) tractus reticulospinalis. Korteks tarafından sürülen bu traktuslar postural ayarlamaların, öngörücü postural denetimin ve lokomotor komutların başlıca yoludur; üst motor nöron lezyonlarından sonra aralarındaki dengenin bozulması (inhibitör medüller traktusa giden kortikal uyarının kaybı) spastisiteye tractus corticospinalis'in kaybından daha çok katkıda bulunur.",
+  "origin.note": "Pontin retiküler çekirdekler (nucleus reticularis pontis oralis ve caudalis) ve medüller nucleus reticularis gigantocellularis; premotor korteks tarafından sürülürler.",
+  "neuronChain[0].cellBody": "Formatio reticularis nöronu",
+  "neuronChain[0].synapse": "birçok segment boyunca spinal internöronlar ile gama ve alfa motor nöronlar",
+  "neuronChain[1].cellBody": "Motor nöron",
+  "neuronChain[1].synapse": "aksiyal ve proksimal kaslar",
+  "decussation.level": "Kısmen çaprazlaşır (medüller traktus)",
+  "decussation.note": "Pontin traktus çaprazlaşmaz; medüller traktus iki taraflıdır.",
+  "waypoints[0].note": "pontin ve medüller retiküler çekirdekler",
+  "waypoints[1].note": "medüller traktus lateral tegmentumda iner",
+  "waypoints[2].note": "pontin traktus funiculus anterior'da, medüller traktus funiculus lateralis'te",
+  "waypoints[3].note": "aksiyal ve proksimal kasların internöronları ve motor nöronları; ayrıca otonom nöronlar",
+  "termination": "Omurilik boyunca, özellikle aksiyal ve proksimal kaslar için internöronlar ve motor nöronlar; sempatik preganglionik nöronlar; arka boynuz (ağrı modülasyonu).",
+  "lesionEffectsByLevel[0].level": "Kortikal ya da kapsüler lezyon (inhibitör medüller traktusa giden uyarının kaybı)",
+  "lesionEffectsByLevel[0].effects": "Lezyonun altında spastisite, sustalı çakı tonusu ve hiperrefleksi",
+  "lesionEffectsByLevel[1].level": "Pontin tegmental lezyon",
+  "lesionEffectsByLevel[1].effects": "Öngörücü postural ayarlamaların kaybı; vestibülospinal serbestleşmeyle birleştiğinde deserebre postüre katkıda bulunur",
+  "lesionEffectsByLevel[2].level": "Medüller lezyon",
+  "lesionEffectsByLevel[2].effects": "İnen ağrı inhibisyonunun ve otonom modülasyonun kaybı (kan basıncı oynaklığı)",
+  "clinical.pearls[0]": "Spastisite büyük ölçüde retikülospinal bir sorundur: tek başına tractus corticospinalis güçsüzlük ve beceriksizlik yapar, hipertoni yapmaz",
+  "clinical.pearls[1]": "Kortikospinal lezyonu olan hastaların katı bir yürüyüşle de olsa yürüyebilmesini retikülospinal yolaklar açıklar: lokomosyonu medial inen sistemler sürer"
+ }
+}

@@ -36,6 +36,7 @@ export class SyndromePanel {
     if (this.currentId === id && this.container.childElementCount) return;
     this.currentId = id; clear(this.container);
     const syn = entryOf(this.app, 'syndromes', id);
+    this.current = syn;
     if (!syn) { this.container.append(h('p', { class: 'muted' }, t('syndrome.notFound', { id }))); return; }
     const html = (syn['html'] ?? {}) as Record<string, string>; const loc = syn['localisation'] as Rec; const step = this.app.store.get().syndrome?.step ?? 0;
     const deficits = (syn['deficits'] as Rec[]) ?? [];

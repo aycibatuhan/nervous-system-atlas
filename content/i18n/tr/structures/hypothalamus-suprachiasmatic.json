@@ -1,0 +1,32 @@
+{
+  "id": "hypothalamus-suprachiasmatic",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "50a44f0cfd55ab0d",
+  "fields": {
+    "summary": "Nucleus suprachiasmaticus, üçüncü ventrikülün tabanında doğrudan chiasma opticum'un üstünde yer alan bir çift küçücük çekirdektir ve vücudun ana sirkadiyen saatidir. Nöronları saat genlerinin oluşturduğu bir transkripsiyonel geri bildirim döngüsü ile 24 saate yakın bir ritmi sürdürür ve melanopsin içeren retinal gangliyon hücrelerinden tractus retinohypothalamicus yoluyla gelen ışıkla her gün yeniden ayarlanır. Uykuyu ve uyanıklığı, vücut sıcaklığını, kortizol ve melatonin salgısını ve beslenmeyi zamanlar; suprasellar tümörler, cerrahi ya da inme ile hasarlanması uyku-uyanıklık ritminin kaybına ve uykunun gece gündüz dağılmasına yol açar; çıktısı jet lag'in, vardiya çalışması bozukluğunun ve ışık tedavisinin zamanlamasının temelidir.",
+    "anatomy.location": "Orta hattın her iki yanında, chiasma opticum'un hemen üstünde üçüncü ventrikülün tabanı; infundibulumun önünde ve nucleus paraventricularis'in altında, retrokiazmatik hipotalamus içinde.",
+    "function": "Suprakiazmatik nöronlar sirkadiyen ritmi kendiliğinden üretir ve tractus retinohypothalamicus yoluyla gelen ışık ile talamusun intergenikulat yaprağı ve nuclei raphes tarafından senkronize edilir; ritmi hipotalamusun geri kalanına, uyku-uyanıklık, beslenme ve sıcaklık sistemlerini denetleyen subparaventriküler bölgeye ve nucleus dorsomedialis'e yaptıkları projeksiyonlarla dayatır, corpus pineale'ye ise nucleus paraventricularis, columna intermediolateralis ve ganglion cervicale superius üzerinden geçen çok sinapslı bir yolla ulaştırır; böylece melatonin yalnızca karanlıkta salgılanır. Saatin çıktısı ayrıca paraventriküler kortikotropin salgılatıcı hormon nöronları aracılığıyla kortizolü zamanlar. Yaşlanmayla ve nörodejeneratif hastalıkta çekirdek nöron yitirir; bu da demanstaki parçalanmış uykuya ve akşam huzursuzluğuna katkıda bulunur.",
+    "imaging.bestView[0].label": "chiasma opticum'un üstündeki nucleus suprachiasmaticus",
+    "imaging.bestView[1].label": "chiasma ile infundibulum arasındaki üçüncü ventrikül tabanı",
+    "imaging.normalAppearance": "Klinik MR'da görülemeyecek kadar küçüktür; orta hat sagital kesitlerde chiasma'nın hemen üstünde, recessus infundibuli'nin önündeki birkaç milimetrelik hipotalamus içinde yer alır.",
+    "imaging.pathology[0].pathology": "Suprasellar lezyonlar sonrası sirkadiyen ritim kaybı",
+    "imaging.pathology[0].finding": "Chiasma'nın üstünde üçüncü ventrikülün tabanını tutan kraniyofarenjiyom, kiazmatik gliom ya da germinom; uyku-uyanıklık düzeninin bozulması eşlik eder.",
+    "imaging.pathology[1].pathology": "Hipofiz makroadenomunun chiasma'ya bası yapması",
+    "imaging.pathology[1].finding": "Diaphragma sellae'nin üstüne uzanan ve chiasma'yı yukarı iten adenom; nucleus suprachiasmaticus yalnızca büyük suprasellar uzanımlarda etkilenir.",
+    "imaging.pathology[2].pathology": "Nörodejeneratif uyku-uyanıklık parçalanması",
+    "imaging.pathology[2].finding": "Özgül bir yapısal lezyon yoktur; demansta suprakiazmatik nöron kaybıyla giden hipotalamik atrofi aktigrafi ve melatonin profillerinden çıkarsanır.",
+    "clinical.lesionEffects[0].deficit": "Düzensiz uyku-uyanıklık ritmi: uykunun 24 saate dağılması",
+    "clinical.lesionEffects[0].mechanism": "Ana sirkadiyen ritim üreticisinin kaybı",
+    "clinical.lesionEffects[1].deficit": "Melatonin ve kortizol ritimlerinin kaybı",
+    "clinical.lesionEffects[1].mechanism": "Saat çıktısının corpus pineale'ye ve nucleus paraventricularis'e ulaşamaması",
+    "clinical.lesionEffects[2].deficit": "Sıcaklık ve beslenme ritimlerinin bozulması",
+    "clinical.lesionEffects[2].mechanism": "Hipotalamik efektör sistemlerin sirkadiyen denetiminin kaybı",
+    "clinical.examination[0]": "İki hafta boyunca uyku günlüğü ya da aktigrafi",
+    "clinical.examination[1]": "Sirkadiyen bozukluk kuşkusunda melatonin ya da kortizol zamanlaması",
+    "clinical.examination[2]": "Görme alanları, çünkü chiasma hemen altında yer alır",
+    "clinical.pearls[0]": "Vücudun sahip olduğu tek saat nucleus suprachiasmaticus'tur; diğerlerini o ayarlar",
+    "clinical.pearls[1]": "Melanopsin hücreleri sağlam olan görme engelli kişiler ışıkla senkronize olmayı sürdürür; gözleri olmayanlar ise serbest koşar",
+    "clinical.pearls[2]": "Parlak sabah ışığı bu çekirdek için bir ilaçtır: saati öne alır"
+  }
+}

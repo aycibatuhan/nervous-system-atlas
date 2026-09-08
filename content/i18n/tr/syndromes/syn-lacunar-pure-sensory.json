@@ -1,0 +1,33 @@
+{
+  "id": "syn-lacunar-pure-sensory",
+  "kind": "syndromes",
+  "lang": "tr",
+  "source": "a4eabc74816a8393",
+  "fields": {
+    "name": "Saf duyusal laküner inme",
+    "presentation": "Hasta, dakikalar içinde başlayan ve bir taraftaki yüzü, kolu, gövdeyi ve bacağı tutan, bazen orta hattı tam olarak ikiye bölen bir uyuşukluk ya da karıncalanma tarif eder. Kas gücü, koordinasyon, görme ve konuşma etkilenmemiştir. Muayene eden, yakınmayla karşılaştırıldığında şaşırtıcı ölçüde az objektif kayıp ya da o tarafta bütün duyu tiplerinde belirgin bir azalma bulabilir.",
+    "deficits[0].distribution": "yüz, kol, gövde ve bacak",
+    "deficits[0].sign": "Dokunma, iğne ve vibrasyon duyusunda, sıklıkla orta hattı ikiye bölen hemihipoestezi",
+    "deficits[1].distribution": "vücudun yarısı",
+    "deficits[1].sign": "Parestezi ve iğne duyusunda azalma",
+    "deficits[2].distribution": "yok",
+    "deficits[2].sign": "Güçsüzlük yok; refleksler simetrik",
+    "reasoning": "Talamusun ventral posterior çekirdekleri, çıkan bütün somatik duyu yolaklarını çaprazlaştıktan sonra alır: medulla oblongata'da çaprazlaşan lemniscus medialis, omurilikte çaprazlaşan tractus spinothalamicus ve yüzden gelen lemniscus trigeminalis. Bu nedenle talamogenikulat perforan dalların sulama alanındaki bir laküner enfarkt, yüz de dahil olmak üzere karşı vücut yarısının tamamından bütün duyu tiplerini kaldırır; bu birliktelik bir omurilik lezyonunun oluşturamayacağı, bir beyin sapı lezyonunun ise ancak çaprazlaşmış yüz tutulumuyla oluşturabileceği bir tablodur. Tractus corticospinalis komşu capsula interna içinde yer alır ve korunur, bu yüzden güçsüzlük olmaz; ona ulaşacak kadar büyük bir enfarkt ise sensorimotor inmeye dönüşür. Gyrus postcentralis'in küçük bir kortikal enfarktı da benzer, sınırlı bir hemisensoriyel defisit yapabilir, ancak genellikle bazı duyu tiplerini korur ve gövdeyi orta hattan ikiye bölmesi enderdir. Bazı hastalarda daha sonra inme sonrası santral ağrı gelişir; bu durumda sendrom Dejerine–Roussy adını alır.",
+    "imagingFindings[0].pathology": "Akut laküner enfarkt",
+    "imagingFindings[0].finding": "Talamusun ventral posterolateral bölümünde küçük (15 mm'nin altında) bir difüzyon kısıtlaması odağı; BT ilk gün çoğu kez normaldir.",
+    "imagingFindings[1].pathology": "Kronik laküner enfarkt",
+    "imagingFindings[1].finding": "FLAIR'de parlak bir halkası olan, BOS yoğunluğunda küçük kavite; sıklıkla birden çoktur ve küçük damar hastalığının yaygın beyaz cevher hiperintensitesiyle birliktedir.",
+    "commonCauses[0]": "Tek bir perforan arterin hipertansif lipohiyalinozu",
+    "commonCauses[1]": "Perforan dalın çıkışında mikroateroma",
+    "mimics[0].name": "Kortikal dal enfarktı",
+    "mimics[0].howToDistinguish": "Kortikal bulgular (afazi, ihmal, görme alanı kaybı, bakış deviyasyonu) laküner enfarktı dışlar",
+    "mimics[1].name": "Küçük kanama",
+    "mimics[1].howToDistinguish": "BT'de hiperdens; aynı yerlerde görülür",
+    "mimics[2].name": "Paryetal kortikal enfarkt",
+    "mimics[2].howToDistinguish": "Primer duyu tipleri korunurken ayırt edici duyuların (grafestezi, stereognozi) kaybı; DAG'da kortikal tutulum",
+    "management[0]": "Antiagregan tedavi, statin ve kan basıncı kontrolü",
+    "management[1]": "Zaman penceresi içinde başvuran ve yeti yitimine yol açan olgularda tromboliz",
+    "management[2]": "Erken mobilizasyon; iyileşme prognozu iyidir",
+    "imagingHint.label": "lateral talamus"
+  }
+}

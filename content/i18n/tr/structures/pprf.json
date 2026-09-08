@@ -1,0 +1,33 @@
+{
+ "id": "pprf",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b4e8cfb569a5c6a1",
+ "fields": {
+  "summary": "Nucleus nervi abducentis'in komşuluğunda, formatio reticularis pontis içinde yer alan ve horizontal sakkadları üreten bir burst nöron kümesidir. Karşı taraf frontal göz alanından ve aynı taraf colliculus superior'dan komut alır, kendi tarafındaki nucleus nervi abducentis'i ateşler; bu nedenle gözler etkin PPRF'nin bulunduğu tarafa doğru sıçrar. Tek taraflı bir lezyon lezyon tarafına doğru istemli ve refleks sakkadları ortadan kaldırır, ancak vestibüler yolaklar burayı atladığı için okülosefalik refleks gözleri o tarafa hâlâ götürebilir.",
+  "anatomy.location": "Kaudal ponsun paramedian tegmentumunda, nucleus nervi abducentis'in ventral ve lateralinde yer alır ve rostralde troklear düzeye doğru uzanır.",
+  "connections.afferents[0].from": "frontal-eye-field",
+  "connections.afferents[0].note": "karşı taraf",
+  "connections.afferents[1].from": "superior-colliculus",
+  "connections.afferents[1].note": "aynı taraf",
+  "connections.efferents[0].to": "abducens-nucleus",
+  "connections.efferents[0].note": "aynı taraf",
+  "function": "Horizontal düzlemde sakkad üretimi; kortikal, kollikular ve serebellar komutları bütünleştirir ve nucleus nervi abducentis'i besler.",
+  "imaging.bestView[0].label": "nucleus nervi abducentis'in önünde kaudal pontin paramedian tegmentum",
+  "imaging.normalAppearance": "Rutin MR'da seçilemez; kaudal ponsun paramedian tegmentumuna lokalize edilir. Buradaki lezyonlar görüntülemede abducens nükleer lezyonlarıyla aynı görünümü verir: FLAIR ya da DAG'da küçük paramedian tegmental odaklar.",
+  "imaging.pathology[0].pathology": "Paramedian pontin tegmental enfarkt",
+  "imaging.pathology[0].finding": "Paramedian tegmentumda difüzyon kısıtlaması gösteren küçük lezyon ve aynı tarafa sakkadik bakış felci.",
+  "imaging.sequenceOfChoice": "İnce kesit FLAIR/DAG",
+  "clinical.lesionEffects[0].deficit": "Lezyon tarafına horizontal sakkadların kaybı, gözlerin karşı tarafa deviye olması",
+  "clinical.lesionEffects[0].mechanism": "Aynı tarafa bakışı sağlayan burst nöronları",
+  "clinical.lesionEffects[1].deficit": "Lezyon tarafına vestibulo-oküler refleksin korunması",
+  "clinical.lesionEffects[1].mechanism": "Vestibüler girdinin nucleus nervi abducentis'e doğrudan ulaşması",
+  "clinical.lesionEffects[2].deficit": "Hemisferik lezyona göre ters yöne bakış deviasyonu",
+  "clinical.lesionEffects[2].mechanism": "Pontin lezyon: gözler lezyonun tersine, hemiparezinin olduğu tarafa bakar",
+  "clinical.examination[0]": "Her iki yana istemli sakkadlar ve yavaş izleme",
+  "clinical.examination[1]": "PPRF lezyonlarını nükleer lezyonlardan ayırmak için okülosefalik (bebek gözü) manevrası",
+  "clinical.examination[2]": "İstirahatteki bakış deviasyonunun yönünü hemipareziye göre değerlendirin",
+  "clinical.pearls[0]": "Hemisferik lezyon: gözler lezyona, güçsüz ekstremitelerin tersine bakar. Pontin lezyon: gözler lezyonun tersine, güçsüz ekstremitelere bakar",
+  "clinical.pearls[1]": "Başın çevrilmesiyle aşılabilen bakış felci supranükleerdir (PPRF); aşılamayan felç nükleerdir (abducens)"
+ }
+}

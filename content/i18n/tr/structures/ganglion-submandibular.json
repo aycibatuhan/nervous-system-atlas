@@ -1,0 +1,30 @@
+{
+ "id": "ganglion-submandibular",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "5f0912f0bfede3ce",
+ "fields": {
+  "summary": "Submandibular bezin derin bölümünün üzerinde, nervus lingualis'ten sarkan küçük bir parasempatik gangliyondur. Nucleus salivatorius superior'dan çıkan preganglionik lifler nervus facialis içinde seyreder, orta kulakta chorda tympani olarak sinirden ayrılır, fossa infratemporalis'te nervus lingualis'e katılır ve burada sinaps yapar; postganglionik lifler submandibular ve sublingual bezler ile ağız tabanının küçük bezlerini uyarır. Chorda tympani aynı zamanda dilin ön bölümünden tat taşır, bu nedenle nervus facialis'in bu dalın proksimalindeki lezyonları hem tükürük salgısını hem de tadı azaltır.",
+  "anatomy.location": "Ağız tabanında, musculus hyoglossus üzerinde, nervus lingualis'in altında, submandibular bezin derin çıkıntısının üzerinde ve ductus submandibularis'in lateralinde yer alır.",
+  "connections.afferents[0].from": "facial-motor-nucleus bölgesi (nucleus salivatorius superior)",
+  "connections.afferents[0].via": "nervus lingualis üzerinden chorda tympani",
+  "connections.efferents[0].to": "submandibular ve sublingual bezler",
+  "function": "Submandibular ve sublingual tükürük bezlerine sekretomotor uyarı sağlar.",
+  "imaging.bestView[0].label": "ağız tabanı bölgesi; gangliyon musculus hyoglossus üzerinde oturur (beyin hacminin dışında)",
+  "imaging.normalAppearance": "Seçilemez; submandibular bez ve nervus lingualis bölgesi boyun MR'ında görülür. Denerve olan bezler atrofiye uğrar ve yağlı değişiklik gösterir.",
+  "imaging.pathology[0].pathology": "Submandibular bez denervasyonu",
+  "imaging.pathology[0].finding": "Chorda tympani ya da nervus lingualis yaralanmasından sonra küçülmüş, yağlanmış bez.",
+  "imaging.sequenceOfChoice": "Kitleden kuşkulanıldığında boyun MR'ı",
+  "clinical.lesionEffects[0].deficit": "Submandibular ve sublingual bezlerden tükürük salgısında azalma",
+  "clinical.lesionEffects[0].mechanism": "Chorda tympani ya da gangliyon lezyonu",
+  "clinical.lesionEffects[1].deficit": "Aynı lezyonla birlikte dilin ön üçte ikisinde tat kaybı",
+  "clinical.lesionEffects[1].mechanism": "Chorda tympani tat duyusunu da taşır",
+  "clinical.lesionEffects[2].deficit": "Dilin ön bölümünde uyuşukluk",
+  "clinical.lesionEffects[2].mechanism": "Nervus lingualis yaralanması (diş cerrahisi)",
+  "clinical.examination[0]": "Şeker ve tuzla dilin ön bölümünde tat muayenesi",
+  "clinical.examination[1]": "Dilin altında tükürük birikimi",
+  "clinical.examination[2]": "Dil duyusu",
+  "clinical.pearls[0]": "Fasiyal paraliziyle birlikte tat kaybı, lezyonu chorda tympani'nin proksimaline, mastoid segmente ya da daha yukarısına yerleştirir",
+  "clinical.pearls[1]": "Üçüncü molar çekimi sonrası nervus lingualis yaralanması dili uyuşturur, tükürük salgısını ve tadı azaltabilir"
+ }
+}

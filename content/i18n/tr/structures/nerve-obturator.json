@@ -1,0 +1,27 @@
+{
+ "id": "nerve-obturator",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "68b037b70fca705b",
+ "fields": {
+  "summary": "Musculus psoas içinde L2–L4'ün ön dallarından oluşan nervus obturatorius, pelvis yan duvarı boyunca ilerler ve canalis obturatorius'tan çıkarak uyluğun adduktor kaslarını (musculus adductor longus, brevis ve magnus, musculus gracilis, musculus obturatorius externus) ve uyluğun iç yüzündeki bir deri alanını innerve eder. Pelvis tümörleri, doğum travması ve pelvis cerrahisiyle yaralanır; lezyonu adduksiyon güçsüzlüğü ve uyluk iç yüzünde uyuşukluk ile birlikte geniş tabanlı, sirkümdüksiyonlu bir yürüyüşe yol açar; kalça ekleminden dize yansıyan ağrı da bu sinirin eklem dalları içinde taşınır.",
+  "anatomy.location": "Musculus psoas'ın medial kenarı, pelvis girişinin (linea terminalis) altında pelvis yan duvarı boyunca, foramen obturatorium'dan canalis obturatorius içinde geçer ve musculus adductor brevis çevresinde ön ve arka dallarına ayrılır.",
+  "function": "Kalça adduksiyonu ve iç rotasyonun bir bölümü; uyluğun iç yüzünün duyusu; kalça ve diz eklemlerine giden duyu lifleri.",
+  "imaging.bestView[0].label": "servikal omurilik; nervus obturatorius L2–L4'ten çıkar",
+  "imaging.normalAppearance": "Ekstremitelerin periferik sinirleri MNI beyin hacminin dışındadır; atlas meshi gösterilmez. Ultrason ve MR nörografi siniri doğrudan görüntüler; elektrodiagnostik inceleme lezyonu işlevsel olarak lokalize eder. Pelvis MR'ı, pelvis yan duvarı boyunca ya da canalis obturatorius düzeyinde bir kitleyi veya endometriozisi ve adduktor kaslarda denervasyonu gösterir.",
+  "imaging.pathology[0].pathology": "Obturator nöropatisi",
+  "imaging.pathology[0].finding": "STIR'de parlak adduktor kaslar; pelvis yan duvarında kitle ya da cerrahi sonrası değişiklik eşlik eder.",
+  "imaging.sequenceOfChoice": "Adduktor kasların EMG'si; pelvis MR'ı",
+  "clinical.lesionEffects[0].deficit": "Sirkümdüksiyonlu yürüyüşle birlikte kalça adduksiyonunda güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Adduktor kasların felci",
+  "clinical.lesionEffects[1].deficit": "Uyluğun iç yüzünde uyuşukluk",
+  "clinical.lesionEffects[1].mechanism": "Sinirin deri dalı",
+  "clinical.lesionEffects[2].deficit": "Kalça hastalığından dize yansıyan ağrı",
+  "clinical.lesionEffects[2].mechanism": "Kalça ve dize giden eklem dalları",
+  "clinical.examination[0]": "Sırtüstü pozisyonda dirence karşı kalça adduksiyonu",
+  "clinical.examination[1]": "Uyluğun iç yüzünde duyu",
+  "clinical.examination[2]": "Femoral muayeneyle birlikte değerlendirin: ikisi de güçsüzse lezyon kök ya da pleksus düzeyindedir",
+  "clinical.pearls[0]": "Pelvis cerrahisinden sonra izole adduktor güçsüzlüğü nervus obturatorius'a aittir",
+  "clinical.pearls[1]": "Diz normalken ve kalça hareketleri kısıtlıyken görülen diz ağrısı, nervus obturatorius üzerinden yansıyan kalça hastalığıdır"
+ }
+}

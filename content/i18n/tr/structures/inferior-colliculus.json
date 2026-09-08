@@ -1,0 +1,32 @@
+{
+  "id": "inferior-colliculus",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "a858414fe8be2ac3",
+  "fields": {
+    "summary": "Tektumun alttaki kabartı çiftidir ve çıkan işitme yolağının zorunlu durağıdır: her lemniscus lateralis lifi, sinyal brachium colliculi inferioris yoluyla corpus geniculatum mediale'ye ve işitme korteksine gitmeden önce burada sonlanır. Nucleus centralis'i tonotopik olarak düzenlenmiştir; ayrıca colliculus superior ile olan bağlantıları aracılığıyla işitsel irkilme yanıtını ve gözler ile başın sese doğru refleks çevrilmesini sağlar.",
+    "anatomy.location": "Orta hattın her iki yanında, colliculi superiores'in altında ve nervus trochlearis'in çıkış yerinin üstünde dorsal kaudal mesencephalon; brachium rostrolateral doğrultuda corpus geniculatum mediale'ye uzanır.",
+    "connections.afferents[0].from": "superior-olivary-complex",
+    "connections.afferents[0].via": "lemniscus lateralis",
+    "connections.efferents[0].to": "medial-geniculate-nucleus",
+    "connections.efferents[0].via": "brachium colliculi inferioris",
+    "function": "Frekans çözümlemesi, sesin yerinin belirlenmesi ve monoaural ile binaural yolakların bütünleştirilmesi; talamusa aktarım ve sese refleks yönelme.",
+    "imaging.bestView[0].label": "troklear düzeyde kaudal lamina tecti",
+    "imaging.bestView[1].label": "colliculus superior'un altındaki colliculus inferior",
+    "imaging.normalAppearance": "Sagital kesitlerde tektumdaki iki kabartıdan alttaki; colliculus inferior düzeyindeki aksiyal kesitlerde aqueductus hemen önünde yer alır. Hipoksik lezyonlar ya da Wernicke ensefalopatisi burada simetrik T2 hiperintensitesi yapabilir.",
+    "imaging.pathology[0].pathology": "Wernicke ensefalopatisi / hipoksik hasar",
+    "imaging.pathology[0].finding": "Colliculi inferiores'te, periakuaduktal gri ve medial talamuslarla birlikte simetrik FLAIR hiperintensitesi.",
+    "imaging.pathology[1].pathology": "Tektal kitle",
+    "imaging.pathology[1].finding": "Kaudal tektumun genişlemesi ve aqueductus'a bası.",
+    "imaging.sequenceOfChoice": "Aksiyal FLAIR ve sagital T2",
+    "clinical.lesionEffects[0].deficit": "Sesin yerini belirlemede bozulma ve sağırlık olmaksızın santral işitme bozukluğu",
+    "clinical.lesionEffects[0].mechanism": "İşitsel bilginin iki yanlı aktarılması",
+    "clinical.lesionEffects[1].deficit": "İşitsel irkilme yanıtında azalma",
+    "clinical.lesionEffects[1].mechanism": "Kollikuler refleks devresi",
+    "clinical.examination[0]": "İşitme eşikleri (normal) ile gözler kapalıyken sesin yerinin belirlenmesinin karşılaştırılması",
+    "clinical.examination[1]": "Öyküde gürültü içinde konuşmayı anlama güçlüğü",
+    "clinical.examination[2]": "Beyin sapı işitsel uyandırılmış potansiyelleri",
+    "clinical.pearls[0]": "Nuclei cochleares'in üstündeki santral işitme lezyonları bir kulakta sağırlık yapmaz",
+    "clinical.pearls[1]": "Beslenme bozukluğu olan ya da alkol bağımlısı bir hastada FLAIR'de iki yanlı parlak colliculi inferiores: tiamin verin"
+  }
+}

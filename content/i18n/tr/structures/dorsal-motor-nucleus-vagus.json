@@ -1,0 +1,33 @@
+{
+ "id": "dorsal-motor-nucleus-vagus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "cd1a214d3a3a7280",
+ "fields": {
+  "summary": "Beyin sapının en büyük parasempatik çekirdeğidir; dördüncü ventrikül tabanında trigonum nervi vagi'nin altında, nucleus nervi hypoglossi'nin lateralinde yer alır. Preganglionik nöronları nervus vagus içinde toraks ve karın iç organlarına gider ve bronkokonstriksiyonu, mide salgısını ve bağırsak hareketlerini yönetir. İşlevsel olarak, hemen lateralindeki nucleus tractus solitarii ile eşleşmiştir; bu çekirdek de reflekslerinin gerektirdiği visseral afferent bilgiyi iletir.",
+  "anatomy.location": "Dördüncü ventrikül tabanındaki trigonum nervi vagi'nin altında, dorsal medulla'da; nucleus nervi hypoglossi'nin lateralinde ve nucleus tractus solitarii'nin medialinde yer alır, obeksten yukarıya doğru medulla'nın açık bölümü boyunca uzanır.",
+  "connections.efferents[0].to": "toraks ve karın iç organları",
+  "connections.efferents[0].via": "cn-10-vagus",
+  "connections.efferents[0].note": "preganglionik parasempatik",
+  "function": "Kalbe (kısmen), akciğerlere, özofagusa, mideye, ince bağırsağa ve proksimal kolona giden preganglionik parasempatik çıkış; bağırsağa sekretomotor ve motor uyarı sağlar.",
+  "imaging.bestView[0].label": "dördüncü ventrikül tabanının altındaki dorsal medulla",
+  "imaging.bestView[1].label": "dördüncü ventrikül tabanının kaudal bölümündeki trigonum nervi vagi",
+  "imaging.normalAppearance": "MR'da ayrı olarak seçilemez; trigonum nervi vagi ve trigonum nervi hypoglossi dördüncü ventrikül tabanının kaudal bölümünü oluşturur. Buradaki dorsal medulla lezyonları ventrikülün altında küçük T2 ya da DAG lezyonları olarak görülür.",
+  "imaging.pathology[0].pathology": "Area postrema / dorsal medulla lezyonu (nöromiyelitis optika)",
+  "imaging.pathology[0].finding": "Dördüncü ventriküle komşu, T2/FLAIR'de parlak dorsal medulla lezyonu; inatçı hıçkırık ve kusma ile başvurur.",
+  "imaging.pathology[1].pathology": "Dorsal medulla enfarktı",
+  "imaging.pathology[1].finding": "PICA ya da vertebral perforan arterlerden kaynaklanan, dorsal medulla'da difüzyon kısıtlaması gösteren küçük lezyon.",
+  "imaging.sequenceOfChoice": "Aksiyal FLAIR ve DAG; lezyon dördüncü ventriküle komşuysa akuaporin-4 antikorları",
+  "clinical.lesionEffects[0].deficit": "Taşikardi ve vagal tonusun kaybı",
+  "clinical.lesionEffects[0].mechanism": "Kalbe giden parasempatik uyarının kaybı (nucleus ambiguus ile birlikte)",
+  "clinical.lesionEffects[1].deficit": "Gastroparezi ve bağırsak hareketlerinde azalma",
+  "clinical.lesionEffects[1].mechanism": "Mide ve bağırsağa giden vagal motor çıkışın kaybı",
+  "clinical.lesionEffects[2].deficit": "İnatçı hıçkırık, bulantı ve kusma",
+  "clinical.lesionEffects[2].mechanism": "Komşu area postrema ve soliter kompleksin tutulması",
+  "clinical.examination[0]": "Kalp hızı değişkenliği ve ortostatik yanıtlar",
+  "clinical.examination[1]": "Erken doyma, bulantı ve hıçkırığın sorgulanması",
+  "clinical.examination[2]": "Eşlik eden nucleus ambiguus tutulumu için damak ve öğürme refleksinin değerlendirilmesi",
+  "clinical.pearls[0]": "Dorsal medulla lezyonu ile birlikte süregelen hıçkırık ve kusma nöromiyelitis optikayı akla getirmelidir",
+  "clinical.pearls[1]": "Kalbe giden vagal parasempatik nöronlar başlıca bu çekirdekten değil, nucleus ambiguus'tan çıkar"
+ }
+}

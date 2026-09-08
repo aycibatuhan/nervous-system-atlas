@@ -1,0 +1,33 @@
+{
+ "id": "artery-anterior-choroidal",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "236f1c671127efbc",
+ "fields": {
+  "summary": "Arteria carotis interna'nın terminal bifurkasyonundan hemen önce çıkan, ince ama stratejik önemi büyük bir daldır; tractus opticus boyunca arkaya doğru seyreder ve temporal boynuzun plexus choroideus'unda sonlanır. Yol boyunca capsula interna'nın arka bacağını, tractus opticus ile corpus geniculatum laterale'yi, medial temporal lobu ve pedunculus cerebri'nin bir bölümünü besler; bu nedenle çok küçük bir damar, hemianopsiyle birlikte yoğun bir hemipleji yapabilir.",
+  "anatomy.location": "Supraklinoid arteria carotis interna'nın posterolateral duvarından, arteria communicans posterior'un çıkışının distalinden ayrılır; tractus opticus'un altından posteromediale doğru geçer, ardından pedunculus cerebri'nin çevresinde laterale kıvrılarak fissura choroidea'ya ve lateral ventrikülün alt boynuzuna girer.",
+  "anatomy.subdivisions[0].name": "Sisternal segment",
+  "anatomy.subdivisions[0].note": "krural ve ambiyens sisternalarda tractus opticus boyunca seyreder; traktusa, pedunkulusa, uncusa ve amigdalaya dallar verir",
+  "anatomy.subdivisions[1].name": "Pleksal segment",
+  "anatomy.subdivisions[1].note": "temporal boynuzun içinde plexus choroideus'u besler ve arteria choroidea posterior lateralis ile anastomoz yapar",
+  "function": "Capsula interna'nın arka bacağını (kortikospinal ve talamokortikal lifler), radiatio optica'nın retrolentiküler liflerini, corpus geniculatum laterale'yi, tractus opticus'u, crus cerebri'yi, uncusu, hippokampus ve amigdalanın bir bölümünü ve globus pallidus'u besler.",
+  "imaging.bestView[0].label": "tractus opticus'un lateralindeki çıkışı ve temporal boynuza doğru arkaya seyri",
+  "imaging.bestView[1].label": "klasik enfarkt yerleşimi olan capsula interna'nın arka bacağı",
+  "imaging.normalAppearance": "Rutin MR'da seçilemez; BTA'da karotis terminusu ile temporal boynuz arasında tractus opticus'a yapışık, iplik gibi bir damar olarak görülür. Sulama alanı, aksiyal kesitlerde capsula interna'nın arka bacağı ve komşu medial temporal yapılar olarak izlenir.",
+  "imaging.pathology[0].pathology": "Arteria choroidea anterior enfarktı",
+  "imaging.pathology[0].finding": "Capsula interna'nın arka bacağında, aşağıda pedunculus cerebri'ye ve corpus geniculatum laterale bölgesine uzanan difüzyon kısıtlaması ve değişken derecede medial temporal bileşen; genellikle küçük damar hastalığına ya da emboliye bağlıdır.",
+  "imaging.pathology[0].timing": "DAG dakikalar ya da saatler içinde pozitifleşir; ADC yaklaşık 1–2 hafta sonra psödonormalleşir",
+  "imaging.sequenceOfChoice": "ADC ile birlikte DAG; karotis terminusu lezyonunu dışlamak için BTA",
+  "clinical.lesionEffects[0].deficit": "Yüz, kol ve bacakta hemiparezi",
+  "clinical.lesionEffects[0].mechanism": "Capsula interna'nın arka bacağındaki kortikospinal lifler",
+  "clinical.lesionEffects[1].deficit": "Hemisensoriyel duyu kaybı",
+  "clinical.lesionEffects[1].mechanism": "Arka bacaktan geçen talamokortikal lifler",
+  "clinical.lesionEffects[2].deficit": "Homonim hemianopsi; bazen yatay bir sektör korunur",
+  "clinical.lesionEffects[2].mechanism": "Tractus opticus, corpus geniculatum laterale ve radiatio optica'nın başlangıcı",
+  "clinical.examination[0]": "Hemiparezinin yüz, kol ve bacakta eşit olup olmadığını değerlendirmek için kas gücünü sınayın",
+  "clinical.examination[1]": "Homonim defekt için konfrontasyonla görme alanı muayenesi",
+  "clinical.examination[2]": "İki tarafta iğne batması ve vibrasyon duyusunu karşılaştırın",
+  "clinical.pearls[0]": "Kortikal bulgu olmadan (afazi yok, ihmal yok) hemipleji, hemianestezi ve hemianopsi üçlüsü arteria choroidea anterior'u düşündürür",
+  "clinical.pearls[1]": "Hemianopside kama biçiminde sektör korunması, corpus geniculatum laterale'nin arteria choroidea anterior ve arteria choroidea posterior lateralis tarafından çift kanlanmasını yansıtır"
+ }
+}

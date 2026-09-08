@@ -1,0 +1,33 @@
+{
+  "id": "syn-lacunar-sensorimotor",
+  "kind": "syndromes",
+  "lang": "tr",
+  "source": "62d2ef9a7d3f837b",
+  "fields": {
+    "name": "Sensorimotor laküner inme",
+    "presentation": "Konuşması ve görmesi normal, uyanık bir hastada bir taraftaki yüz, kol ve bacakta güçsüzlük ve uyuşukluk birlikte gelişir. Tablo geniş bir hemisferik inmeyi andırır, ancak hastada kortikal özelliklerin hiçbiri yoktur ve BT normaldir ya da yalnızca küçük ve derin bir lezyon gösterir. Laküner sendromlar içinde kortikal bir neden aranarak en çok gereksiz tetkike konu olanı budur.",
+    "deficits[0].distribution": "yüz, kol ve bacak",
+    "deficits[0].sign": "Üst motor nöron bulgularıyla birlikte hemiparezi",
+    "deficits[1].distribution": "vücudun yarısı",
+    "deficits[1].sign": "Bütün duyu tiplerinde hemihipoestezi",
+    "deficits[2].distribution": "yok",
+    "deficits[2].sign": "Afazi, ihmal ya da görme alanı defekti yok",
+    "reasoning": "Lezyon, capsula interna arka bacağı ile lateral talamus arasındaki sınırda oturur; burası inen tractus corticospinalis ile çıkan talamokortikal duyu radyasyonunun birbirinden yalnızca birkaç milimetre uzakta bulunduğu yerdir. Bu bölge ya arteria cerebri media'nın lateral lentikülostriat dalıyla ya da arteria cerebri posterior'un talamogenikulat dalıyla beslenir ve olağan laküner enfarkttan biraz daha büyük bir enfarkt her ikisini birden kapsar. Tractus corticospinalis henüz çaprazlaşmamıştır, duyu yolakları ise aşağıda çoktan çaprazlaşmıştır; bu nedenle her iki defisit de karşı tarafta ve birlikte ortaya çıkar. Lezyonun kortikal değil derin olduğunu kanıtlayan şey, bütün kortikal işlevlerin korunmuş olmasıdır: dil alanları, paryetal uzamsal korteks ve radiatio optica el değmemiştir, hasta uyanıktır ve bakışı normaldir. Küçük bir kortikal enfarkttan ayrım, bu bulguların yokluğuna ve görüntülemeye dayanır; çünkü hemianestezinin eşlik ettiği saf bir hemiparezi striyatokapsüler bir enfarkttan ya da arteria choroidea anterior enfarktından sonra da görülebilir; ikincisine genellikle bir görme alanı defekti eklenir.",
+    "imagingFindings[0].pathology": "Akut laküner enfarkt",
+    "imagingFindings[0].finding": "Capsula interna arka bacağında ve komşu talamusta küçük (15 mm'nin altında) bir difüzyon kısıtlaması odağı; BT ilk gün çoğu kez normaldir.",
+    "imagingFindings[1].pathology": "Kronik laküner enfarkt",
+    "imagingFindings[1].finding": "FLAIR'de parlak bir halkası olan, BOS yoğunluğunda küçük kavite; sıklıkla birden çoktur ve küçük damar hastalığının yaygın beyaz cevher hiperintensitesiyle birliktedir.",
+    "commonCauses[0]": "Tek bir perforan arterin hipertansif lipohiyalinozu",
+    "commonCauses[1]": "Perforan dalın çıkışında mikroateroma",
+    "mimics[0].name": "Kortikal dal enfarktı",
+    "mimics[0].howToDistinguish": "Kortikal bulgular (afazi, ihmal, görme alanı kaybı, bakış deviyasyonu) laküner enfarktı dışlar",
+    "mimics[1].name": "Küçük kanama",
+    "mimics[1].howToDistinguish": "BT'de hiperdens; aynı yerlerde görülür",
+    "mimics[2].name": "Arteria choroidea anterior enfarktı",
+    "mimics[2].howToDistinguish": "Buna homonim hemianopsi eklenir",
+    "management[0]": "Antiagregan tedavi, statin ve kan basıncı kontrolü",
+    "management[1]": "Zaman penceresi içinde başvuran ve yeti yitimine yol açan olgularda tromboliz",
+    "management[2]": "Erken mobilizasyon; iyileşme prognozu iyidir",
+    "imagingHint.label": "kapsülotalamik bileşke"
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "id": "frontal-eye-field",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "7053707ec5820d0d",
+ "fields": {
+  "summary": "Sulcus precentralis ile gyrus frontalis medius'un arka bölümünün birleşme yerinde yer alan ve karşı tarafa doğru istemli sakkadları başlatan bölgedir. Çıktısı karşı taraf paramedian pontin retiküler formasyona (ve colliculus superior'a) ulaşır; bu nedenle irritatif bir lezyon gözleri lezyondan uzağa çevirir, destrüktif bir lezyon ise gözleri lezyona doğru kaymış bırakır. Akut inme ve nöbetlerde bakış deviyasyonuna ilişkin yatak başı kuralın temeli budur.",
+  "anatomy.location": "Premotor korteksin önünde, gyrus frontalis medius'un arka bölümünde, gyrus precentralis'in el alanı düzeyinde ve MCA'nın üst bölümünün sulama alanında yer alır.",
+  "connections.efferents[0].to": "pprf (karşı taraf)",
+  "connections.efferents[1].to": "superior-colliculus",
+  "function": "Karşı tarafa istemli sakkadların üretilmesi, görsel arama ve dikkat kaymaları; aynı tarafa yavaş izlemeye katkı.",
+  "imaging.bestView[0].label": "sulcus precentralis düzeyinde gyrus frontalis medius'un arka bölümü",
+  "imaging.normalAppearance": "Yapısal MR'da komşu korteksten ayırt edilemez; sakkad görevleri sırasında fMRG ile yerleştirilir. Bu bölgeyi tutan geniş MCA enfarktlarına, tetkikin kendisinde görülebilen bakış deviyasyonu eşlik eder (BT'de gözler lezyona doğru çevriktir).",
+  "imaging.pathology[0].pathology": "Bakış deviyasyonu ile giden MCA enfarktı",
+  "imaging.pathology[0].finding": "Geniş frontal enfarkt; orbita kesitlerinde göz küreleri lezyon tarafına kaymış olarak görülür.",
+  "imaging.pathology[1].pathology": "Frontal nöbet odağı",
+  "imaging.pathology[1].finding": "Frontal göz alanının yakınında kortikal lezyon; iktal bakış ve baş versiyonu lezyondan uzağa doğrudur.",
+  "imaging.sequenceOfChoice": "DAG; nöbetler için EEG",
+  "clinical.lesionEffects[0].deficit": "Gözler lezyona doğru kaymıştır, hasta istemli olarak karşı tarafa bakamaz",
+  "clinical.lesionEffects[0].mechanism": "Karşı taraf PPRF'ye giden uyarının yıkımı; sağlam kalan karşı taraf FEF gözleri lezyona doğru iter",
+  "clinical.lesionEffects[1].deficit": "Nöbet sırasında gözler ve baş lezyondan uzağa döner",
+  "clinical.lesionEffects[1].mechanism": "Bu alanın iktal etkinleşmesi",
+  "clinical.lesionEffects[2].deficit": "Günler içinde düzelme",
+  "clinical.lesionEffects[2].mechanism": "Refleks ve kollikuler yolakların devreye girmesi",
+  "clinical.examination[0]": "İstirahatteki bakışın gözlenmesi; hastadan her iki yana bakmasının istenmesi",
+  "clinical.examination[1]": "Okülosefalik refleks frontal bakış felcini yener (supranükleer)",
+  "clinical.examination[2]": "Nöbet başlangıcında baş ve göz versiyonunun yönünün not edilmesi",
+  "clinical.pearls[0]": "İnme: gözler lezyona, hemiparezinin tersine bakar. Nöbet: gözler odaktan uzağa bakar. Pons lezyonu: gözler lezyondan uzağa, hemiparezi tarafına bakar",
+  "clinical.pearls[1]": "Frontal bakış deviyasyonu günler içinde düzelir; pons kaynaklı bakış felci kalıcıdır"
+ }
+}

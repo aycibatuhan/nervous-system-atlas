@@ -1,0 +1,32 @@
+{
+ "id": "falx-cerebri",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "04b76b61762f1d93",
+ "fields": {
+  "summary": "Meningeal duranın orak biçimli kıvrımıdır; interhemisferik fissür içinde önde crista galli'den arkada tentorium'a kadar asılı durur, yapışık üst kenarı boyunca sinus sagittalis superior'u, serbest alt kenarında ise corpus callosum'un hemen üzerinde uzanan sinus sagittalis inferior'u kuşatır. Hemisferlerin yana kaymasını sınırlar; supratentoryal kitle etkisinin gyrus cinguli'nin serbest kenarın altına doğru subfalsin herniasyonuna yol açmasının nedeni budur. Ayrıca bacakta güçsüzlük ya da nöbetlerle başvuran parasagital menenjiomların en sevdiği yerleşim yeridir.",
+  "anatomy.location": "Hemisferler arasında orta hatta yer alır; crista frontalis'e, kalvaryumun sulcus sagittalis'ine ve tentorium'a tutunur; serbest kenarı corpus callosum'un üzerinde, arkada ona daha yakın olacak biçimde uzanır.",
+  "function": "Hemisferlerin bölmelere ayrılması ve desteklenmesi, sagital sinüslerin barındırılması, beynin yana kaymasının sınırlanması.",
+  "imaging.bestView[0].label": "üst kısmında sinus sagittalis superior ile birlikte hemisferler arasındaki falx",
+  "imaging.bestView[1].label": "aksiyal kesitlerde falx'ın orta hat çizgisi",
+  "imaging.normalAppearance": "Aksiyal BT'de orta hat çizgisi olarak görülür, kalsifiye olduğunda daha dens izlenir; koronal kesitlerde sinus sagittalis superior verteks düzeyinde üçgen biçimindedir. Bükülmüş bir falx'ın altında septum pellucidum'un orta hat kayması subfalsin herniasyonun ölçüsüdür. Falks ve parasagital menenjiomlar bu yapı boyunca yerleşen, duradan kaynaklanan kontrastlanan kitlelerdir.",
+  "imaging.pathology[0].pathology": "Subfalsin herniasyon",
+  "imaging.pathology[0].finding": "Septum pellucidum'un orta hat kayması ve gyrus cinguli'nin falx'ın altına yer değiştirmesi; ACA'ya bası yapabilir.",
+  "imaging.pathology[1].pathology": "Parasagital / falks menenjiomu",
+  "imaging.pathology[1].finding": "Dural kuyruğu olan kontrastlanan dural kitle; sıklıkla sinus sagittalis superior'u invaze eder ya da tıkar.",
+  "imaging.pathology[2].pathology": "İnterhemisferik subdural hematom",
+  "imaging.pathology[2].finding": "Travmadan sonra ya da kaza dışı yaralanmada falx boyunca yayılan kan.",
+  "imaging.sequenceOfChoice": "Kayma için BT; kitleler için kontrastlı MR; sinüs tutulumu için MRV",
+  "clinical.lesionEffects[0].deficit": "Falx altında ACA basısına bağlı karşı taraf bacakta güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Subfalsin herniasyonun arteria pericallosa'ya bası yapması",
+  "clinical.lesionEffects[1].deficit": "Parasagital kitleye bağlı bacakta güçsüzlük ya da fokal motor nöbetler",
+  "clinical.lesionEffects[1].mechanism": "Lobulus paracentralis'in basısı",
+  "clinical.lesionEffects[2].deficit": "Sinüs tıkanmasına bağlı baş ağrısı ve basınç artışı",
+  "clinical.lesionEffects[2].mechanism": "Sinus sagittalis superior invazyonu",
+  "clinical.examination[0]": "Bacak kas gücü ve yürüyüş",
+  "clinical.examination[1]": "Kitle etkisi varlığında bilinç düzeyi ve baş ağrısı",
+  "clinical.examination[2]": "Nöbet öyküsü",
+  "clinical.pearls[0]": "Görüntülemede orta hat kitlesi ile birlikte iki taraflı bacak güçsüzlüğü: her iki lobulus paracentralis'e bası yapan parasagital menenjiom",
+  "clinical.pearls[1]": "BT'de orta hat kayması subfalsin herniasyondur; unkal herniasyondan önce gelir"
+ }
+}

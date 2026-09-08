@@ -1,0 +1,24 @@
+{
+ "id": "pathway-posterior-spinocerebellar",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "814456768b286e31",
+ "fields": {
+  "summary": "Bacağın ve gövdenin kas iğciklerinden, tendon organlarından ve eklemlerinden gelen propriyoseptif lifler Clarke sütununda (nucleus dorsalis, C8–L3) sonlanır; bu sütunun nöronları çaprazlaşmayan aksonlarını funiculus lateralis içinde tractus spinocerebellaris posterior olarak yukarı, pedunculus cerebellaris inferior aracılığıyla vermis ve paravermise gönderir. Kolun karşılığı, nucleus cuneatus accessorius'tan çıkan tractus cuneocerebellaris'tir. Yolak çaprazlaşmaz ve serebellumun aynı taraf ekstremiteyi koordine etmek için kullandığı bilgiyi taşır; bu nedenle lezyonları bilinçli duyu kaybı olmaksızın aynı tarafta ataksi yapar.",
+  "origin.note": "Bacaktan ve alt gövdeden gelen kas iğciği ve Golgi tendon organı afferentleri; ikinci sıra nöronlar Clarke sütunundadır (lamina VII).",
+  "neuronChain[0].cellBody": "Arka kök gangliyonu hücresi",
+  "neuronChain[0].synapse": "Clarke sütunu (nucleus dorsalis)",
+  "neuronChain[1].cellBody": "Clarke sütunu nöronu",
+  "neuronChain[1].synapse": "yosunsu lifler olarak vermisin ve ara bölgenin serebellar korteksi",
+  "waypoints[1].note": "arka boynuzun tabanında Clarke sütunu, C8–L3 (L3'ün altından gelen lifler önce fasciculus gracilis içinde yükselir)",
+  "waypoints[2].note": "funiculus lateralis'in arka bölümü, yüzeyel",
+  "waypoints[4].note": "lobus anterior ve paravermis",
+  "termination": "Aynı taraf vermisin ve ara bölgenin (spinoserebellum) serebellar korteksi; yosunsu lifler olarak sonlanır ve derin çekirdeklere kollateraller verir.",
+  "lesionEffectsByLevel[0].level": "Omuriliğin funiculus lateralis'i (Friedreich ataksisi, yarım omurilik lezyonu)",
+  "lesionEffectsByLevel[0].effects": "Bilinçli duyu kaybı olmaksızın aynı tarafta ekstremite ataksisi (Friedreich'te arka kordonlar da kaybolur)",
+  "lesionEffectsByLevel[1].level": "Pedunculus cerebellaris inferior ya da medulla oblongata",
+  "lesionEffectsByLevel[1].effects": "Aynı tarafta ekstremite ve yürüyüş ataksisi (lateral medüller sendromun bir parçası)",
+  "clinical.pearls[0]": "Spinoserebellar traktuslar çaprazlaşmaz: omurilik ya da medulla oblongata lezyonlarından doğan ataksi aynı taraftadır",
+  "clinical.pearls[1]": "Friedreich ataksisi hem spinoserebellar traktusları hem de arka kordonları yıkarak karışık serebellar ve duyusal ataksi yapar"
+ }
+}

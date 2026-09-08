@@ -1,0 +1,33 @@
+{
+ "id": "arteries-mra-atlas",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "c54f22be668a5608",
+ "fields": {
+  "summary": "Bu mesh, popülasyon manyetik rezonans anjiyografi atlasından çıkarılmış intrakraniyal arter ağacıdır: ortalama damar olasılık haritasının beyin içinde eşiklenmiş iso-yüzeyidir; dolayısıyla kişiden kişiye değişmeyen damarları gösterir: arteria carotis interna sifonlarını, circulus arteriosus Willisii'yi, arteria cerebri anterior, media ve posterior'un proksimal bölümlerini ilk kortikal dallarıyla birlikte, arteria basilaris ile arteria vertebralis'leri ve serebellar arterleri. Tüm vücut modelinden kaydedilen adlandırılmış arter meshlerinin görüntülemeden türetilmiş karşılığıdır: tam olarak MNI şablonunun üzerine oturur, böylece MR kesitlerine kayıt hatası olmadan bindirilir ve arterlerin beyin yüzeyine ve sisternalara göre gerçekte nerede seyrettiğini gösterir.",
+  "anatomy.location": "Petröz karotisten ve vertebrobaziler bileşkeden ikinci ve üçüncü sıra kortikal dallara kadar uzanan intrakraniyal arterler; bazal sisternaları, Sylvius fissürlerini, interhemisferik fissürü ve ambiyens sisternaları izler ve sınır olarak beyin maskesiyle birlikte MNI uzayında verilir.",
+  "connections.afferents[0].from": "Arteria carotis interna ve arteria vertebralis",
+  "connections.afferents[0].via": "giriş akımı",
+  "connections.efferents[0].to": "Kortikal, perforan ve serebellar dallar",
+  "connections.efferents[0].via": "çıkış akımı",
+  "function": "Ağaç, her arterin beslediği parankimle ve çaprazladığı kraniyal sinirler ve sisternalarla olan uzamsal ilişkisini verir: lentikülostriat arterlerin ayrıldığı, substantia perforata anterior boyunca uzanan M1 segmenti, kiazmanın üzerindeki A1 ve anterior kominikan kompleks, pedunkulusun çevresinde üçüncü sinirin yanındaki P2 segmenti, ponsun önündeki baziler ana gövde ve bulbus düzeyindeki arteria vertebralis'ler. Bir ortalama olduğu için herhangi bir kişinin damarlarından daha kalın ve daha düzgündür ve varyantları (fetal PCA, hipoplazik A1) içermez; yine de anevrizma yerlerini, trombektomi hedeflerini ve perforan arter çıkışlarını atlas MR'ı üzerinde belirlemek için doğru referanstır.",
+  "imaging.bestView[0].label": "suprasellar sisternada circulus arteriosus Willisii",
+  "imaging.bestView[1].label": "karotis sifonları ve beyin sapının önünde arteria basilaris",
+  "imaging.normalAppearance": "Time-of-flight MRA'da intrakraniyal arterler parlak akım sinyali verir; atlasın iso-yüzeyi bu tür çok sayıda anjiyografinin ortalamasını yeniden üretir ve damar kalibresi, damarın ne kadar tutarlı biçimde bulunduğuyla orantılıdır.",
+  "imaging.pathology[0].pathology": "Circulus arteriosus Willisii'nin bir dallanma noktasında anevrizma",
+  "imaging.pathology[0].finding": "En sık görülen üç yerleşim olan anterior kominikan, posterior kominikan ya da MCA bifurkasyonunda sakküler kese; her biri atlas ağacında görülebilir.",
+  "imaging.pathology[1].pathology": "Büyük damar tıkanması",
+  "imaging.pathology[1].finding": "M1'in, arteria basilaris'in ya da karotis terminusunun ani kesilmesi ve distalde dolum olmaması; atlas ağacı, görülmeyen segmentin beklenen seyrini gösterir.",
+  "imaging.pathology[2].pathology": "Moyamoya hastalığı",
+  "imaging.pathology[2].finding": "Terminal karotisin ve ACA ile MCA'nın proksimal bölümlerinin ilerleyici darlığı ve \"duman bulutu\" görünümünde kollateral ağı.",
+  "clinical.lesionEffects[0].deficit": "Defisit yok: referans mesh",
+  "clinical.lesionEffects[0].mechanism": "Bu, görüntülemeden türetilmiş bir referanstır; lezyon sendromu olan bir yapı değildir",
+  "clinical.lesionEffects[1].deficit": "Anevrizma ve tıkanma yerlerini lokalize eder",
+  "clinical.lesionEffects[1].mechanism": "Ağaç, vasküler lokalizasyonda kullanılan dallanma noktalarını ve segmentleri gösterir",
+  "clinical.examination[0]": "Segmentleri ve dallanma noktalarını adlandırmak için hastanın anjiyografisini atlas ağacıyla karşılaştırın",
+  "clinical.examination[1]": "Bir tıkanmayı beklenen enfarktıyla ilişkilendirmek için ağacı sulama alanı katmanlarıyla birlikte kullanın",
+  "clinical.pearls[0]": "MRA ağacı tam olarak atlas MR'ının üzerine oturur; kaydedilen tüm vücut arterlerinde birkaç milimetrelik hata payı vardır",
+  "clinical.pearls[1]": "Anevrizmalar dallanma noktalarında gelişir: atlas ağacı en sık görülen üçünü gösterir",
+  "clinical.pearls[2]": "Ortalama bir arter gerçeğinden daha kalındır; ağacı kalibre için değil, seyri görmek için kullanın"
+ }
+}

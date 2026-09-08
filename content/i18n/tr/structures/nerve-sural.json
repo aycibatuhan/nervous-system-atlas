@@ -1,0 +1,32 @@
+{
+ "id": "nerve-sural",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "be5c5e560adbb16e",
+ "fields": {
+  "summary": "Nervus suralis, nervus tibialis'in nervus cutaneus surae medialis dalına nervus peroneus communis'in ramus communicans peroneus'unun katılmasıyla oluşan, tümüyle duyusal bir baldır siniridir; musculus gastrocnemius'un başları arasından aşağı iner, baldırın ortasında derin fasyayı deler, vena saphena parva'nın yanında malleolus lateralis'in arkasından geçer ve baldırın arka dış yüzünün, topuğun dış yanının ve ayağın dış kenarının derisini beşinci parmağa kadar innerve eder. Klinik önemi küçük innervasyon alanını çok aşar: duyusal aksiyon potansiyeli uzunluğa bağımlı polinöropatinin standart ölçütüdür, düşük ayakta korunmuş olması sinir lezyonundan çok kök lezyonunu işaret eder ve vaskülit ile amiloid için en sık biyopsi edilen sinirdir; biyopsi ayağın dış yanında uyuşuk bir alan bırakır.",
+  "anatomy.location": "Fossa poplitea'da ya da baldırın üst bölümünde tibial ve peroneal katkılardan oluşur (birleşme düzeyi değişkendir), baldırın arka yüzünde tendo calcaneus'un lateralinde yüzeyel olarak iner, vena saphena parva ile birlikte malleolus lateralis'in arkasından geçer ve nervus cutaneus dorsalis lateralis olarak sonlanır.",
+  "connections.afferents[0].from": "Baldırın arka dış yüzünün, topuğun dış yanının ve ayağın dış kenarının derisi",
+  "connections.efferents[0].to": "Nervus tibialis (nervus cutaneus surae medialis) ve nervus peroneus communis (ramus communicans) → nervus ischiadicus → S1 (S2) kökleri",
+  "function": "Baldırın arka dış yüzünden, ayak bileğinin ve topuğun dış yanından ve beşinci parmak dahil ayağın dış kenarından deri duyusunu taşır; ana kökü S1'dir. Ulaşılabilir olması ve konumunun değişmezliği onu duyusal ileti çalışmaları ve biyopsi için tercih edilen sinir yapar; büyük ve küçük lifleri bir arada barındırması da her iki lif tipinin histolojik olarak değerlendirilmesine olanak verir.",
+  "imaging.bestView[0].label": "baldırın arka dış yüzünde vena saphena parva'nın yanında nervus suralis (sanal)",
+  "imaging.normalAppearance": "Beyin ya da omurga görüntülemesinde görülmez; yüksek çözünürlüklü ultrasonda baldırın arka yüzünde vena saphena parva'nın komşuluğunda küçük, fasiküler bir yapı olarak görülür ve MR nörografide tendo calcaneus'un lateralinde deri altı yağ dokusu içinde seçilir.",
+  "imaging.pathology[0].pathology": "Nervus suralis'te genişleme",
+  "imaging.pathology[0].finding": "Demiyelinizan nöropatilerde (CIDP, Charcot–Marie–Tooth) sinirde hipoekoik şişme ya da ayak bileği cerrahisinden sonra odaksal nörom.",
+  "imaging.pathology[1].pathology": "Sinir biyopsisi bulguları",
+  "imaging.pathology[1].finding": "Uzunluğa bağımlı aksonal nöropatide sural duyusal aksiyon potansiyelinin azalması ya da alınamaması; biyopside vaskülit, amiloid ya da demiyelinizasyon görülür.",
+  "clinical.lesionEffects[0].deficit": "Ayağın dış yanında ve topukta uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Sinirin kesilmesi ya da biyopsisi",
+  "clinical.lesionEffects[1].deficit": "Ağrılı nörom",
+  "clinical.lesionEffects[1].mechanism": "Tendo calcaneus ya da ayak bileği cerrahisi sırasında veya greft için alındıktan sonra yaralanma",
+  "clinical.lesionEffects[2].deficit": "Yüzeyel peroneal yanıt normalken sural yanıtın alınamaması",
+  "clinical.lesionEffects[2].mechanism": "Sinirin kendi lezyonu değildir: S1 radikülopatisini (sural yanıt korunur) tibial ya da siyatik lezyonlardan ayırmaya yarayan bir paterndir",
+  "clinical.examination[0]": "Ayağın dış kenarında iğne batırma duyusunu test edin",
+  "clinical.examination[1]": "Polinöropatiden kuşkulanılan her hastada sural duyusal ileti",
+  "clinical.examination[2]": "Düşük ayağı lokalize ederken sural ve yüzeyel peroneal yanıtları karşılaştırın",
+  "clinical.pearls[0]": "Ayağın dış yanında duyu kaybı varken sural duyusal yanıtın korunmuş olması lezyonun arka kök gangliyonunun proksimalinde olduğunu gösterir: S1 radikülopatisi",
+  "clinical.pearls[1]": "Nervus suralis en sık biyopsi edilen sinirdir; çünkü vazgeçilebilir, yüzeyel ve temsil edicidir",
+  "clinical.pearls[2]": "Yaşlılarda sural yanıtların alınamaması normal olabilir; klinik tabloyla birlikte yorumlayın",
+  "pitfalls[0]": "Nervus suralis'i oluşturan bileşenlerin birleşimi değişkendir; bazı kişilerde sinir tümüyle tibial ya da tümüyle peroneal kökenlidir"
+ }
+}

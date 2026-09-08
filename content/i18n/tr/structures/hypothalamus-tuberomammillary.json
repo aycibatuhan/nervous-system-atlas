@@ -1,0 +1,32 @@
+{
+  "id": "hypothalamus-tuberomammillary",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "751721769d5c263a",
+  "fields": {
+    "summary": "Nucleus tuberomammillaris, arka hipotalamusun ventral yüzünde corpora mammillaria'nın çevresinde ve lateral tuberal bölgede dağınık duran büyük nöronlardan oluşur ve beyindeki tek histamin kaynağıdır. Aksonları korteksin tümüne, talamusa, bazal ön beyne ve beyin sapına ulaşır; uyanıklığı, dikkati ve iştah baskılanmasını sağlar. Uykuda susar, preoptik uykuda etkin nöronlarca inhibe edilir ve oreksinle uyarılır. Kan-beyin bariyerini geçen antihistaminiklerin yaptığı sedasyonu, narkolepside kullanılan histamin H3 antagonistlerinin uyanıklık sağlayıcı etkisini ve arka hipotalamus lezyonlarındaki uykuya eğilimi açıklar.",
+    "anatomy.location": "Corpora mammillaria'yı çevreleyen ventrolateral arka hipotalamus; lateralde lateral hipotalamik alana, önde tuberal bölge boyunca uzanır ve cisterna interpeduncularis ile arteriae cerebri posteriores'in hemen üstünde yer alır.",
+    "function": "Histaminerjik nöronlar uyanıklık boyunca tonik olarak, en hızlı da dikkatli uyanıklık sırasında ateşler; korteks ve talamustaki H1 reseptörlerine histamin salarak uyanıklığı sağlar, bazal ön beyin ile beyin sapının uyanıklık çekirdeklerine salarak da onları pekiştirir. Uykuya geçişte nucleus preopticus ventrolateralis'ten gelen GABA ve galanin ile inhibe edilir, lateral hipotalamustan gelen oreksinle uyarılır; böylece uyku-uyanıklık geçiş anahtarının bir kolunu oluşturur. Histamin ayrıca iştahı baskılar, sıvı dengesini ve hipofiz hormonlarının salınımını düzenler ve vestibüler sinyali azaltır; taşıt tutmasının antihistaminikle tedavisinin temeli budur. Çekirdek prefrontal korteksten, septumdan ve beyin sapından girdi alır.",
+    "imaging.bestView[0].label": "corpora mammillaria çevresindeki nucleus tuberomammillaris",
+    "imaging.bestView[1].label": "cisterna interpeduncularis üzerindeki ventral arka hipotalamus",
+    "imaging.normalAppearance": "Fossa interpeduncularis'ten geçen koronal kesitlerde corpora mammillaria çevresindeki ventral arka hipotalamik gri cevher; çekirdek olarak seçilemez.",
+    "imaging.pathology[0].pathology": "Arka hipotalamus lezyonlarına bağlı hipersomni",
+    "imaging.pathology[0].finding": "Arka hipotalamusun tümörü, inmesi ya da iltihabı; aşırı uyku ve dikkatte azalma ile birliktedir.",
+    "imaging.pathology[1].pathology": "Wernicke ensefalopatisi",
+    "imaging.pathology[1].finding": "Corpora mammillaria ve periventriküler bölgede sinyal değişikliği ile bilinç düzeyinde azalma; bunun bir bölümü histaminerjik ve arka hipotalamik uyanıklık sistemlerinin kaybını yansıtır.",
+    "imaging.pathology[2].pathology": "İlaca bağlı sedasyon (fonksiyonel)",
+    "imaging.pathology[2].finding": "Birinci kuşak antihistaminiklerle ve antikolinerjiklerle yavaşlama ve uyku hali; yapısal lezyon yoktur.",
+    "clinical.lesionEffects[0].deficit": "Hipersomni ve dikkatte azalma",
+    "clinical.lesionEffects[0].mechanism": "Histaminerjik kortikal uyanıklık uyarısının kaybı",
+    "clinical.lesionEffects[1].deficit": "İştah artışı",
+    "clinical.lesionEffects[1].mechanism": "Histaminin beslenmeyi baskılayıcı etkisinin kaybı",
+    "clinical.lesionEffects[2].deficit": "Uykudan uyanabilmenin bozulması",
+    "clinical.lesionEffects[2].mechanism": "Uyku-uyanıklık anahtarının bir kolunun kaybı",
+    "clinical.examination[0]": "Gündüz uykululuk ölçeği ve dikkat sürekliliği testleri",
+    "clinical.examination[1]": "Sedatif antihistaminikler ve H1 blokajı yapan antipsikotikler açısından ilaç öyküsü",
+    "clinical.examination[2]": "Kilo ve iştah değişikliği",
+    "clinical.pearls[0]": "İnsanı uykulu ve aç yapan her ilaç H1 reseptörlerini bloke eder: nucleus tuberomammillaris'i susturuyordur",
+    "clinical.pearls[1]": "Histamin beynin çalar saatidir; nucleus preopticus geceleri onu kapatır",
+    "clinical.pearls[2]": "H3 antagonistleri daha çok histamin salınmasını sağlayarak narkoleptik hastayı uyandırır"
+  }
+}

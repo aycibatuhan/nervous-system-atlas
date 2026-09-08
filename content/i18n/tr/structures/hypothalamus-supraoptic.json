@@ -1,0 +1,33 @@
+{
+  "id": "hypothalamus-supraoptic",
+  "kind": "structures",
+  "lang": "tr",
+  "source": "8959b2ee4643d1e0",
+  "fields": {
+    "summary": "Nucleus supraopticus, ön hipotalamusta chiasma opticum ile tractus opticus'un lateral kenarına oturan, büyük nörosekretuvar nöronlardan oluşan yoğun bir kümedir. Nucleus paraventricularis ile birlikte hipofiz arka lobunda depolanan vazopressin ve oksitosinin kaynağıdır; nöronlarının kendisi de ozmoreseptördür ve plazma ozmolalitesi yükseldikçe daha hızlı ateşler. Su dengesinin çekirdeğidir: aksonlarının hipofiz sapında ya da nöronlarının kendisinin harap olması santral diabetes insipidus yapar; uygunsuz etkinleşmesi ise kafa travması, subaraknoid kanama sonrasında ve pek çok ilaç ile akciğer hastalığında görülen uygunsuz antidiüretik hormon salgılanması sendromuna yol açar.",
+    "anatomy.location": "Ön hipotalamusta, chiasma opticum'un ve tractus opticus'un başlangıcının hemen üstünde ve lateralinde, nucleus paraventricularis'in altında; chiasma'nın arkasında daha küçük bir retrokiazmatik bölümü vardır; aksonları infundibulum içinden neurohypophysis'e uzanır.",
+    "function": "Supraoptik magnoselüler nöronlar vazopressin (hücrelerin çoğu) ve oksitosin sentezler, bunları nörofizinlere bağlı olarak tractus supraopticohypophysialis boyunca taşır ve hipofiz arka lobundaki akson uçlarından sistemik dolaşıma salar; ateşleme hızlarını kendi iç ozmoduyarlılıkları, organum vasculosum ile organum subfornicale'nin ozmoreseptörleri, anjiyotensin II ve nucleus tractus solitarii'den aktarılan baroreseptör ile hacim sinyalleri belirler. Vazopressin böbrekteki V2 reseptörleri aracılığıyla idrarı yoğunlaştırır ve yüksek yoğunluklarda damarları büzer; oksitosin doğum eylemini ve süt salınımını başlatır. Çekirdek ayrıca ön hipotalamustan inhibitör girdi alır; alkolle baskılanır, bulantı ve ağrı ile uyarılır.",
+    "imaging.bestView[0].label": "lateral chiasma ve tractus opticus üzerindeki nucleus supraopticus",
+    "imaging.bestView[1].label": "chiasma opticum'un üzerindeki ön hipotalamus",
+    "imaging.normalAppearance": "Ayrı bir çekirdek olarak görülmez; koronal kesitlerde lateral chiasma opticum'un hemen üstündeki hipotalamik dokuyu kaplar. İşlevi, normal kişilerin çoğunda bulunan ve sagital T1 kesitlerde görülen hipofiz arka lobu parlak noktasından çıkarsanır.",
+    "imaging.pathology[0].pathology": "Santral diabetes insipidus",
+    "imaging.pathology[0].finding": "Sap lezyonlarında (hipofizit, germinom, histiyositoz, metastaz) ya da transsfenoidal cerrahi sonrasında hipofiz arka lobu parlak noktasının yokluğu ve sapın kalınlaşması.",
+    "imaging.pathology[1].pathology": "Hipotalamus tutulumuyla birlikte chiasma basısı",
+    "imaging.pathology[1].finding": "Chiasma'yı ve supraoptik bölgeyi yukarı iterek geren suprasellar kitle; bitemporal hemianopsi ve su dengesi bozukluğu ile birliktedir.",
+    "imaging.pathology[2].pathology": "Ozmotik demiyelinizasyon (sodyum düzeltilmesinin sonucu)",
+    "imaging.pathology[2].finding": "Uygunsuz vazopressin salınımına bağlı hiponatreminin hızlı düzeltilmesinden sonra santral pontin ve ekstrapontin T2 sinyal değişikliği.",
+    "imaging.pathology[2].timing": "Sodyumun yükselmesinden günler sonra ortaya çıkar",
+    "clinical.lesionEffects[0].deficit": "Diabetes insipidus: poliüri, polidipsi, hipernatremi",
+    "clinical.lesionEffects[0].mechanism": "Vazopressin nöronlarının kaybı ya da aksonlarının sapın üzerinden kesilmesi",
+    "clinical.lesionEffects[1].deficit": "Hiponatremi ile giden uygunsuz antidiürez",
+    "clinical.lesionEffects[1].mechanism": "Travma, kanama ya da ilaçlar sonrasında denetimsiz vazopressin salınımı",
+    "clinical.lesionEffects[2].deficit": "Adipsik hipernatremi",
+    "clinical.lesionEffects[2].mechanism": "Çekirdekle birlikte ozmoreseptör ve susama düzeneğinin kaybı",
+    "clinical.examination[0]": "Eşzamanlı serum ve idrar ozmolalitesi ile sodyumu, idrar çıkışının çizelgelenmesi",
+    "clinical.examination[1]": "Susama değerlendirmesi: adipsi tehlikelidir ve kolayca gözden kaçar",
+    "clinical.examination[2]": "Görme alanları, çünkü chiasma komşudur",
+    "clinical.pearls[0]": "Hipofizin üzerinden yapılan sap kesisi kalıcı diabetes insipidus yapar; altından yapıldığında çekirdek sağ kalır ve defisit geçicidir",
+    "clinical.pearls[1]": "SIADH duramayan bir nucleus supraopticus'tur; diabetes insipidus ise başlayamayan bir çekirdek",
+    "clinical.pearls[2]": "Sodyumu yavaş düzeltin: aceleciliğin bedeli ozmotik demiyelinizasyondur"
+  }
+}

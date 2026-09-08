@@ -1,0 +1,30 @@
+{
+ "id": "nerve-phrenic",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "531a1cc985d66a08",
+ "fields": {
+  "summary": "Başlıca C4'ten, C3 ve C5'in katkılarıyla musculus scalenus anterior'un lateral kenarında oluşan nervus phrenicus bu kasın üzerinde aşağı iner, arteria ve vena subclavia arasından toraksa girer ve akciğer kökünün önünde perikard üzerinden diyaframa ulaşır; diyaframa motor lifler verir ve ona duyu lifleri de gönderir (ayrıca perikarda, mediastinal plevraya ve diyafram altındaki peritona). Kesintiye uğraması bir hemidiyaframı felç eder; bu durum istirahatte tolere edilir ama ortopneye yol açar. Yüksek servikal omurilik yaralanması, Guillain–Barré sendromu ya da nevraljik amiyotrofide olduğu gibi iki taraflı kayıp solunum yetmezliğine neden olur.",
+  "anatomy.location": "C3–C5 köklerinden başlar, musculus scalenus anterior'u çaprazlar, musculus sternocleidomastoideus ve vena subclavia'nın arkasından, akciğer hilusunun önünde perikard boyunca diyaframa ulaşır; sağdaki sinir daha kısa ve daha diktir.",
+  "function": "Diyaframın tek motor kaynağıdır; diyaframın merkezî bölümüne, perikarda ve mediastinal plevraya duyu verir (C4 üzerinden omuz ucuna yansıyan ağrı).",
+  "imaging.bestView[0].label": "üst servikal omurilik; frenik motor nöronlar C3–C5 düzeyinde yer alır",
+  "imaging.normalAppearance": "Ekstremitelerin periferik sinirleri MNI beyin hacminin dışındadır; atlas meshi gösterilmez. Ultrason ve MR nörografi siniri doğrudan görüntüler; elektrodiagnostik inceleme lezyonu işlevsel olarak lokalize eder. Akciğer grafisinde yükselmiş hemidiyafram ve floroskopik ya da ultrasonografik koklama (sniff) testinde paradoks hareket, frenik felcin görüntüleme bulgusudur.",
+  "imaging.pathology[0].pathology": "Nervus phrenicus felci",
+  "imaging.pathology[0].finding": "Koklama testi ultrasonunda diyafram hareketinin olmaması ya da paradoks olması; grafide yükselmiş hemidiyafram.",
+  "imaging.pathology[1].pathology": "Mediastinal tümör ya da kalp cerrahisine bağlı yaralanma",
+  "imaging.pathology[1].finding": "Sinirin seyri boyunca kitle ya da cerrahi sonrası değişiklik ile birlikte yükselmiş hemidiyafram.",
+  "imaging.sequenceOfChoice": "Akciğer grafisi ve diyafram ultrasonu; nervus phrenicus ileti çalışması ve diyafram EMG'si",
+  "clinical.lesionEffects[0].deficit": "Yükselmiş hemidiyafram ile birlikte ortopne ve efor dispnesi",
+  "clinical.lesionEffects[0].mechanism": "Hemidiyafram felci",
+  "clinical.lesionEffects[1].deficit": "Ventilasyon gerektiren solunum yetmezliği",
+  "clinical.lesionEffects[1].mechanism": "İki taraflı frenik kaybı: C3'ün üzerinde yüksek servikal yaralanma, Guillain–Barré, motor nöron hastalığı",
+  "clinical.lesionEffects[2].deficit": "Omuz ucunda ağrı",
+  "clinical.lesionEffects[2].mechanism": "Diyafram irritasyonundan C4 üzerinden yansıyan duyu lifleri",
+  "clinical.examination[0]": "Sırtüstü düz yatarken abdominal paradoksu gözleyin (inspirasyonda karın içeri çöker)",
+  "clinical.examination[1]": "Otururken ve sırtüstü yatarken vital kapasite (%20'nin üzerinde bir düşüş diyafram güçsüzlüğünü düşündürür)",
+  "clinical.examination[2]": "Diyafram düzeyini perküte edin",
+  "clinical.pearls[0]": "Düz yatamayan ama akciğerleri temiz olan hastada diyafram felci olabilir",
+  "clinical.pearls[1]": "C3'ün üzerindeki omurilik yaralanmaları ventilasyon gerektirir; C4 ve altındaki düzeylerde hastalar genellikle kendi başlarına solur",
+  "pitfalls[0]": "TÜRETİLMİŞ MESH: kaynak atlasların hiçbirinde nervus phrenicus bulunmadığından, gösterilen iki tüp yapay olarak oluşturulmuştur. Seyir, ara noktaları adlandırılmış Z-Anatomy nesnelerinden okunan yumuşatılmış bir çoklu çizgi olarak kurulmuş (C4 spinal gangliyonu, musculus scalenus anterior'un ön yüzü, vena ve arteria subclavia arasındaki aralık, vena brachiocephalica, solda arcus aortae ve sağda vena cava superior, kalbin perikardiyal yüzü ve diyafram) ve 1.5 mm'lik bir tüp olarak süpürülmüştür; ara noktalar pipeline/config/derived_nerves.yaml dosyasında listelenmiştir. Bu yapı sinirin bu örnekteki gerçek halini değil, izlediği yolu gösterir; nervus phrenicus accessorius modellenmemiştir."
+ }
+}

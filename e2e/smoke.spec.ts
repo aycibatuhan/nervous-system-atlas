@@ -432,10 +432,11 @@ test('#/...?lang=tr renders the interface and the structure names in Turkish', a
   await expect(page.locator('#left .panel-head')).toHaveText('Yapılar');
   await expect(page.locator('#locale-switch')).toHaveText('EN');
 
-  // untranslated prose is flagged, and only in Turkish
+  // the clinical prose comes from content.tr.json: the syndrome is named and written in Turkish and carries no English flag
   await page.goto('/#/syndrome/syn-wallenberg-lateral-medullary?lang=tr');
-  await expect(page.locator('#right .content:not([hidden]) .tag.lang-en').first()).toBeVisible({ timeout: 30_000 });
-  expect(await page.locator('#right .content:not([hidden]) .tag.lang-en').count()).toBeGreaterThan(0);
+  await expect(page.locator('#right .content:not([hidden]) h2').first()).toContainText('Lateral medüller sendrom', { timeout: 30_000 });
+  await expect(page.locator('#right .content:not([hidden])')).toContainText('Klinik tablo');
+  await expect(page.locator('#right .content:not([hidden]) .tag.lang-en')).toHaveCount(0);
 
   // switching back to English drops the flags, the lang attribute and the hash parameter
   await page.locator('#locale-switch').click();

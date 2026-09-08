@@ -1,0 +1,31 @@
+{
+  "id": "syn-lacunar-dysarthria-clumsy-hand",
+  "kind": "syndromes",
+  "lang": "tr",
+  "source": "32c2c9355f5e7791",
+  "fields": {
+    "name": "Dizartri–beceriksiz el sendromu",
+    "presentation": "Konuşma peltekleşir ve hasta bir elinin beceriksizleştiğinden yakınır: yazısı bozulur ve ince işlerde eli acemileşir, oysa kas gücü neredeyse normaldir. Muayenede yüzün alt yarısında güçsüzlük, dilde deviyasyon, hiperrefleksi ve beceriksizlikle birlikte hafif el güçsüzlüğü ve bazen ekstansör taban derisi yanıtı bulunur. Duyu sağlamdır.",
+    "deficits[0].distribution": "yüz ve dil",
+    "deficits[0].sign": "Yüzün alt yarısındaki güçsüzlük ve dil deviyasyonuyla birlikte dizartri",
+    "deficits[1].distribution": "el",
+    "deficits[1].sign": "Elde hiperrefleksiyle birlikte beceriksizlik ve hafif güçsüzlük",
+    "deficits[2].distribution": "el",
+    "deficits[2].sign": "İnce parmak hareketlerinin bozulması ve dismetri",
+    "reasoning": "Bu, paramedian basis pontis'te ya da capsula interna'nın genu'sunda görülen bir küçük damar enfarktıdır; burada nucleus nervi facialis ile nucleus nervi hypoglossi'ye giden kortikobulber lifler, el için ayrılmış kortikospinal liflerin yanında seyreder. Kortikobulber lifler ponsta ve medulla oblongata'da çekirdeklerin düzeyinde, kortikospinal lifler ise decussatio pyramidum'da çaprazlaşır; bu nedenle hem yüzdeki güçsüzlük hem de eldeki bulgular lezyonun karşı tarafındadır. Bütün serebellar döngüler gibi iki kez çaprazlaşan kortikopontoserebellar yolağın tutulması, güçsüzlükle aynı tarafta beceriksizliği ekler. Lezyon, pons tegmentumundaki ya da kapsülün arka bölümündeki duyu yolaklarına ulaşamayacak kadar küçüktür ve korteks sağlamdır; bu yüzden duyu kaybı, afazi ya da görme alanı defekti olmaz. Aslında bu tablo, saf motor sendromun bir parçasıdır: kapsülde en önde, crus ile ponsta en medialde yer alan yüz ve el lifleri daha da küçük bir enfarkt tarafından seçilerek tutulmuştur.",
+    "imagingFindings[0].pathology": "Akut laküner enfarkt",
+    "imagingFindings[0].finding": "Paramedian basis pontis'te ya da capsula interna'nın genu'sunda küçük (15 mm'nin altında) bir difüzyon kısıtlaması odağı; BT ilk gün çoğu kez normaldir.",
+    "imagingFindings[1].pathology": "Kronik laküner enfarkt",
+    "imagingFindings[1].finding": "FLAIR'de parlak bir halkası olan, BOS yoğunluğunda küçük kavite; sıklıkla birden çoktur ve küçük damar hastalığının yaygın beyaz cevher hiperintensitesiyle birliktedir.",
+    "commonCauses[0]": "Tek bir perforan arterin hipertansif lipohiyalinozu",
+    "commonCauses[1]": "Perforan dalın çıkışında mikroateroma",
+    "mimics[0].name": "Kortikal dal enfarktı",
+    "mimics[0].howToDistinguish": "Kortikal bulgular (afazi, ihmal, görme alanı kaybı, bakış deviyasyonu) laküner enfarktı dışlar",
+    "mimics[1].name": "Küçük kanama",
+    "mimics[1].howToDistinguish": "BT'de hiperdens; aynı yerlerde görülür",
+    "management[0]": "Antiagregan tedavi, statin ve kan basıncı kontrolü",
+    "management[1]": "Zaman penceresi içinde başvuran ve yeti yitimine yol açan olgularda tromboliz",
+    "management[2]": "Erken mobilizasyon; iyileşme prognozu iyidir",
+    "imagingHint.label": "paramedian pons"
+  }
+}

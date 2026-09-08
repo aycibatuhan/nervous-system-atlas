@@ -1,0 +1,32 @@
+{
+ "id": "nerve-superior-gluteal",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "92ecfc7a6e511cda",
+ "fields": {
+  "summary": "Nervus gluteus superior (L4, L5, S1) pelvisi foramen ischiadicum majus'tan musculus piriformis'in üzerinden terk eder; bunu yapan tek sinirdir. Arteria glutea superior ile birlikte musculus gluteus medius ile minimus arasında seyrederek bu iki kası ve musculus tensor fasciae latae'yi, yani tek ayak üzerinde dururken pelvisi yatay tutan kalça abduktorlarını ve iç rotatorlarını innerve eder. Kaybı Trendelenburg işaretine ve ördekvari yürüyüşe yol açar; lateral yaklaşımla yapılan kalça protezinde, yanlış kadrana yapılan kas içi enjeksiyonlarda ve L5 radikülopatisinde yaralanır; L5 lezyonunda abduktor güçsüzlüğü, musculus gluteus medius'u koruyan peroneal nöropatiden kökü ayıran bulgudur.",
+  "anatomy.location": "Pelviste sakral pleksustan başlar, arteria ve vena glutea superior ile birlikte foramen ischiadicum majus'un suprapiriform bölümünden geçer, sonra laterale doğru musculus gluteus medius ile minimus arasında ilerleyerek ikisini de innerve eder ve öne doğru giderek musculus tensor fasciae latae'de sonlanır.",
+  "function": "Musculus gluteus medius, musculus gluteus minimus ve musculus tensor fasciae latae'ye motor lifler verir; bu kaslar uyluğu abduksiyona ve iç rotasyona getirir, daha da önemlisi yürürken pelvisi basan bacağın üzerinde sabit tutar. Bu kaslar güçsüzleştiğinde pelvis salınan tarafa doğru düşer (Trendelenburg işareti) ve gövde basan bacağın üzerine doğru yalpalar; iki taraflı olduğunda ördekvari bir yürüyüş ortaya çıkar. Sinir ağırlıklı olarak L5 liflerini taşır; bu nedenle abduktor güçsüzlüğü L5 radikülopatisi ve lumbosakral pleksopati tablolarının bir parçasıdır ve collum fibulae düzeyindeki nervus peroneus communis felcinde bulunmaz; bu da düşük ayakta hasta başındaki temel ayrımdır. Sinir ayrıca kalçaya lateral ve anterolateral yaklaşımlarda risk altındadır; bu yaklaşımlarda onu korumak için kas ayrımı sınırlı tutulur ve fazla medialden ya da fazla yukarıdan yapılan gluteal enjeksiyonlarda da zedelenir.",
+  "imaging.bestView[0].label": "nervus gluteus superior'un musculus piriformis'in üzerinden foramen ischiadicum majus'u terk etmesi",
+  "imaging.bestView[1].label": "musculus gluteus medius ile minimus arasındaki sinir",
+  "imaging.normalAppearance": "MR nörografide musculus piriformis'in üzerinde ve gluteal kaslar arasında arteria glutea superior ile birlikte bir sinir olarak görülür; denervasyon musculus gluteus medius, minimus ve tensor fasciae latae'de STIR değişikliği ve yağlı atrofi olarak ortaya çıkar.",
+  "imaging.pathology[0].pathology": "Kalça artroplastisinde iyatrojenik yaralanma",
+  "imaging.pathology[0].finding": "Lateral yaklaşımdan sonra musculus gluteus medius ve minimus'ta denervasyon ödemi ve daha sonra yağlı atrofi; Trendelenburg yürüyüşü eşlik eder.",
+  "imaging.pathology[1].pathology": "L5 radikülopatisi",
+  "imaging.pathology[1].finding": "L4-5 disk ya da foraminal lezyon; EMG musculus tibialis anterior'un yanı sıra musculus gluteus medius ve tensor fasciae latae'de de denervasyon gösterir ve lezyonu peroneal sinire değil köke yerleştirir.",
+  "imaging.pathology[2].pathology": "Gluteal bölgede enjeksiyon yaralanması",
+  "imaging.pathology[2].finding": "Superomedial bir enjeksiyondan sonra sinir yaralanması ve kalça abduktorlarında güçsüzlük; güvenli olan üst dış kadran bunu önler.",
+  "clinical.lesionEffects[0].deficit": "Trendelenburg işareti ve ördekvari yürüyüş",
+  "clinical.lesionEffects[0].mechanism": "Musculus gluteus medius ve minimus güçsüzlüğü",
+  "clinical.lesionEffects[1].deficit": "Kalça abduksiyonu ve iç rotasyonunda güçsüzlük",
+  "clinical.lesionEffects[1].mechanism": "Abduktor kasların ve musculus tensor fasciae latae'nin denervasyonu",
+  "clinical.lesionEffects[2].deficit": "Düşük ayakta L5 kök ya da pleksus tutulumunun göstergesi",
+  "clinical.lesionEffects[2].mechanism": "Sinir, peroneal sinirin test etmediği L5 liflerini taşır",
+  "clinical.examination[0]": "Tek ayak üzerinde durma: karşı kalçanın düşmesini gözleyin",
+  "clinical.examination[1]": "Yan yatar pozisyonda kalça abduksiyon gücü",
+  "clinical.examination[2]": "Her düşük ayakta abduktor gücünü dorsifleksiyonla karşılaştırın",
+  "clinical.pearls[0]": "Kalça abduksiyonunda güçsüzlükle birlikte olan düşük ayak peroneal sinir değil, L5 köküdür",
+  "clinical.pearls[1]": "Trendelenburg işareti nervus gluteus superior'un imzasıdır",
+  "clinical.pearls[2]": "Enjeksiyonu üst dış kadrana yapın: nervus gluteus superior musculus piriformis'in üzerinde bulunur"
+ }
+}

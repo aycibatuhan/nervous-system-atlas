@@ -1,0 +1,27 @@
+{
+ "id": "nerve-musculocutaneous",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "6115e1aa05632be4",
+ "fields": {
+  "summary": "Fasciculus lateralis'in uç dalıdır (C5–C7); musculus coracobrachialis'i deler, musculus biceps brachii ile musculus brachialis arasında ilerleyerek bu üç kası da innerve eder ve musculus biceps brachii tendonunun lateralinden nervus cutaneus antebrachii lateralis olarak çıkar. Tek başına ender zedelenir (ağır kaldırma, omuz cerrahisi, zorlu egzersiz); lezyonu dirsek fleksiyonu ve supinasyonda güçsüzlük, biseps refleksinin alınamaması ve önkolun dış yüzünde uyuşukluk yapar; musculus brachioradialis (nervus radialis) bir miktar fleksiyona izin vermeyi sürdürür.",
+  "anatomy.location": "Aksillada fasciculus lateralis'ten çıkar, musculus coracobrachialis'in içinden geçer, kol boyunca musculus biceps brachii ile musculus brachialis arasında iner ve önkolun radial kenarı boyunca nervus cutaneus antebrachii lateralis olarak devam eder.",
+  "function": "Musculus coracobrachialis, musculus biceps brachii ve musculus brachialis'in motor innervasyonu (dirsek fleksiyonu, önkol supinasyonu, omuz fleksiyonu); önkolun dış yüzünün duyusal innervasyonu.",
+  "imaging.bestView[0].label": "servikal omurilik; lifler C5–C7'den gelir",
+  "imaging.normalAppearance": "Ekstremitelerin periferik sinirleri MNI beyin hacminin dışındadır; atlas meshi gösterilmez. Ultrason ve MR nörografi siniri doğrudan görüntüler; elektrodiagnostik inceleme lezyonu işlevsel olarak lokalize eder. Kol MR'ı musculus biceps brachii ve musculus brachialis'te denervasyonu gösterir; ultrason siniri musculus coracobrachialis içinde izler.",
+  "imaging.pathology[0].pathology": "Muskülokutanöz nöropati",
+  "imaging.pathology[0].finding": "Zorlu efor ya da cerrahi sonrasında musculus biceps brachii, musculus brachialis ve musculus coracobrachialis'te STIR hiperintensitesi.",
+  "imaging.sequenceOfChoice": "EMG; ultrason",
+  "clinical.lesionEffects[0].deficit": "Biseps refleksi alınamayan, dirsek fleksiyonu ve supinasyonda güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Musculus biceps brachii ve musculus brachialis felci; musculus brachioradialis korunur",
+  "clinical.lesionEffects[1].deficit": "Önkolun dış yüzünde uyuşukluk",
+  "clinical.lesionEffects[1].mechanism": "Nervus cutaneus antebrachii lateralis",
+  "clinical.lesionEffects[2].deficit": "Musculus deltoideus ve musculus supraspinatus'un korunması",
+  "clinical.lesionEffects[2].mechanism": "Bu, tabloyu üst trunkus (Erb) lezyonundan ayırır",
+  "clinical.examination[0]": "Önkol supinasyondayken (musculus biceps brachii) ve orta pozisyondayken (musculus brachioradialis) dirsek fleksiyonu",
+  "clinical.examination[1]": "Biseps refleksi",
+  "clinical.examination[2]": "Önkolun dış yüzündeki duyunun kolun dış yüzü (nervus axillaris) ve başparmak (C6) ile karşılaştırılması",
+  "clinical.pearls[0]": "Musculus deltoideus ve musculus brachioradialis normalken görülen musculus biceps brachii güçsüzlüğü nervus musculocutaneus'a aittir; buna musculus deltoideus eklenirse lezyon üst trunkus ya da C5–C6'dır",
+  "clinical.pearls[1]": "Başparmak duyusu sağlamken önkolun dış yüzünde uyuşukluk bulunması siniri C6 kökünden ayırır"
+ }
+}

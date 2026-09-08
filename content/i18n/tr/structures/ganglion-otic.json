@@ -1,0 +1,30 @@
+{
+ "id": "ganglion-otic",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "8fd07b5073670c03",
+ "fields": {
+  "summary": "Foramen ovale'nin hemen altında, nervus mandibularis'in medial tarafında yer alan küçük bir parasempatik gangliyondur; nucleus salivatorius inferior'dan çıkıp nervus petrosus minor ile (nervus glossopharyngeus'tan, plexus tympanicus üzerinden) gelen preganglionik lifler burada sinaps yapar. Postganglionik lifler nervus auriculotemporalis'e katılarak parotis bezine ulaşır. Frey sendromu (parotidektomiden sonra parotis üzerinde yemekle terleme), bu liflerin üzerini örten derinin ter bezlerine doğru aberan rejenerasyonundan kaynaklanır.",
+  "anatomy.location": "Fossa infratemporalis'te, foramen ovale'nin hemen altında, nervus mandibularis'in medialinde, musculus tensor veli palatini'nin lateralinde ve arteria meningea media'nın önünde yer alır.",
+  "connections.afferents[0].from": "nucleus-solitarius bölgesi (nucleus salivatorius inferior)",
+  "connections.afferents[0].via": "cn-09-glossopharyngeal üzerinden nervus petrosus minor",
+  "connections.efferents[0].to": "parotis bezi",
+  "connections.efferents[0].via": "nervus auriculotemporalis",
+  "function": "Parotis bezine giden parasempatik sekretomotor liflerin aktarma yeridir; plexus meningeus medius'tan gelen sempatik lifler ile musculus tensor tympani ve musculus tensor veli palatini'ye giden motor lifler buradan geçer.",
+  "imaging.bestView[0].label": "foramen ovale'nin altında, V3'ün medialinde fossa infratemporalis",
+  "imaging.normalAppearance": "Rutin görüntülemede seçilemez; foramen ovale ve nervus mandibularis kafa tabanı BT ve MR'ında görülür, V3 boyunca perinöral yayılım bu bölgeden geçer.",
+  "imaging.pathology[0].pathology": "V3 boyunca perinöral yayılım",
+  "imaging.pathology[0].finding": "Foramen ovale'den geçen, genişlemiş ve kontrast tutan nervus mandibularis ile çiğneme kaslarında denervasyon atrofisi.",
+  "imaging.sequenceOfChoice": "Yağ baskılamalı kafa tabanı MR'ı",
+  "clinical.lesionEffects[0].deficit": "Parotis salgısında azalma",
+  "clinical.lesionEffects[0].mechanism": "Glossofaringeal parasempatik uyarının kaybı",
+  "clinical.lesionEffects[1].deficit": "Yanak üzerinde yemekle terleme ve kızarma (Frey sendromu)",
+  "clinical.lesionEffects[1].mechanism": "Parotis cerrahisinden sonra parasempatik liflerin deri ter bezlerine doğru aberan rejenerasyonu",
+  "clinical.lesionEffects[2].deficit": "Kitleyle birlikte çene güçsüzlüğü ve V3 uyuşukluğu",
+  "clinical.lesionEffects[2].mechanism": "Komşuluğundaki nervus mandibularis",
+  "clinical.examination[0]": "Yemek sırasında yanağı terleme açısından gözleyin",
+  "clinical.examination[1]": "Masseter ve pterygoid kas gücü, V3 duyusu",
+  "clinical.pearls[0]": "Parotis cerrahisinden sonra yemek yerken yanakta terleme Frey sendromudur; ganglion oticum çıkışının yanlış yönlenmesidir",
+  "clinical.pearls[1]": "Nervus facialis parotisin içinden geçse de bezin parasempatik uyarısı yedinci sinirden değil, dokuzuncu sinirden gelir"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "id": "brain-envelope",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "8b3659fe29a11941",
+ "fields": {
+  "summary": "Bu mesh, MNI152 şablon beyninin dış yüzeyidir; şablonun beyin maskesinden üretilmiştir ve atlasın diğer her yapının çevresinde varsayılan olarak gösterdiği yarı saydam kabuktur. Serebellum ve beyin sapı dahil popülasyon ortalaması beynin pial yüzeyini temsil eder; ortalama alma nedeniyle düzleşmiştir, bu yüzden sulcus'ları sığdır; MR kesitleriyle tam olarak çakışır ve registre edilmiş tüm vücut mesh'lerinin denetlendiği başvuru yüzeyidir. Sendrom kipinde parseller soluklaştırılırken görünür kalır; böylece lezyon işaretine ve tutulan yapılara bir çerçeve sağlar ve atlasın görüş alanını tanımlar.",
+  "anatomy.location": "Şablon beyin maskesinin sınırı: MNI uzayında 1 mm çözünürlükte, kapatılmış ve düzleştirilmiş olarak serebral hemisferler, serebellum ve foramen magnum'a kadar beyin sapı.",
+  "function": "Zarf, herhangi bir yapının beyin yüzeyine ve kafa tabanına göre konumunu gösterir, tentoryal ve interhemisferik hatları belirtir ve sendrom, yolak ve quiz görünümleri için görsel kabı oluşturur; MR ile çakışması, içinden geçen bir kesitin yüzeyde her zaman beyin göstermesi anlamına gelir ve bu da onu registre edilmiş bir mesh'in doğru oturup oturmadığını değerlendirmek için doğal başvuru noktası yapar. Ayrıca atlasın ölçeğini verir; ortalama erişkin beyni için yaklaşık 140 mm genişlik, 170 mm uzunluk ve 120 mm yükseklik; kamera çerçevelemesinde kullanılan yüzey de budur.",
+  "imaging.bestView[0].label": "orta hatta şablon beyin yüzeyi",
+  "imaging.bestView[1].label": "hemisferleri saran beyin zarfı",
+  "imaging.normalAppearance": "Şablon beyin maskesinin sınırı tüm kesitlerde ortalama beynin pial yüzeyini izler; ortalama alma onları düzleştirdiği için tek tek gyrus'lar yalnızca sığ dalgalanmalar olarak görülür.",
+  "imaging.pathology[0].pathology": "Patoloji yok",
+  "imaging.pathology[0].finding": "Zarf, hastalık içermeyen bir başvuru yüzeyidir; bir hastanın beyin yüzeyi atrofi (genişlemiş sulcus'lar, geri çekilmiş yüzey) ya da kitle etkisi (yer değiştirmiş yüzey) ile ondan ayrılır.",
+  "imaging.pathology[1].pathology": "Registrasyon kalite kontrolü",
+  "imaging.pathology[1].finding": "Zarfın dışına taşan registre edilmiş tüm vücut mesh'leri, afin dönüşümün artık hatasını ortaya koyar.",
+  "clinical.lesionEffects[0].deficit": "Defisit yok: başvuru yüzeyi",
+  "clinical.lesionEffects[0].mechanism": "Lezyon sendromu olmayan bağlam zarfı",
+  "clinical.examination[0]": "Zarfı derin yapılar ve sendromlar için görsel çerçeve olarak kullanın",
+  "clinical.examination[1]": "Registre edilmiş mesh'lerin hizasını ona göre denetleyin",
+  "clinical.pearls[0]": "Zarf, ortalama beynin derisidir; atlastaki her şey onun içinde yaşar",
+  "clinical.pearls[1]": "Registre edilmiş bir sinir zarfın dışına taştığında suç anatomide değil, registrasyondadır",
+  "clinical.pearls[2]": "Zarf ile MR, iki ayrı biçimde görülen aynı veridir"
+ }
+}

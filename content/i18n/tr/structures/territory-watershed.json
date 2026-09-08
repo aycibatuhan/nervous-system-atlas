@@ -1,0 +1,33 @@
+{
+ "id": "territory-watershed",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "ece5c09b0bae679a",
+ "fields": {
+  "summary": "Komşu arteriyel sulama alanları arasındaki sınır bölgeleri, beynin en son perfüze olan ve perfüzyon basıncı düştüğünde ilk bozulan bölümleridir. Kortikal (dış) sınır bölgeleri konveksitede ACA ile MCA arasında ve MCA ile PCA arasında yer alır; iç (subkortikal) sınır bölgesi ise corona radiata ve centrum semiovale'de, derin lentikülostriat perforan arterlerle yüzeyel MCA dalları arasındadır. Sınır bölgesi enfarktları emboliyi değil, hipotansiyonu ya da proksimal bir darlığı işaret eder.",
+  "anatomy.location": "Ön kortikal sınır bölgesi: frontal kutuptan verteks'e kadar sulcus frontalis superior boyunca uzanan bir şerit; arka kortikal sınır bölgesi: MCA, ACA ve PCA'nın buluştuğu parieto-oksipital bölge; iç sınır bölgesi: lateral ventriküllerin lateralinde corona radiata ve centrum semiovale'nin derin beyaz cevheri.",
+  "function": "İşlevsel bir birim değildir; bu bölgeler proksimal kol ve omuzun motor ve duyusal korteksini (ön sınır bölgesi), pariyetal görsel asosiasyon korteksini (arka sınır bölgesi) ve corona radiata'daki inen motor lifleri (iç sınır bölgesi) içerir.",
+  "bloodSupply.note": "Bu atlastaki sulama alanı sınırları olasılıksal bir inme lezyon atlasından (Liu ve ark. 2023) gelir ve circulus arteriosus Willisi anatomisine göre kişiden kişiye kayar.",
+  "imaging.bestView[0].label": "sulcus frontalis superior boyunca ön kortikal sınır bölgesi",
+  "imaging.bestView[1].label": "arka parieto-oksipital sınır bölgesi",
+  "imaging.bestView[2].label": "corona radiata'daki iç sınır bölgesi",
+  "imaging.normalAppearance": "Normal MR'da görülebilir bir yapı değildir; enfarkt örüntüsünden tanınır. İç sınır bölgesi enfarktları lateral ventriküle paralel küçük lezyonlardan oluşan bir zincir ('inci dizisi') oluşturur; kortikal sınır bölgesi enfarktları ise sulama alanı sınırlarında kamalar oluşturur.",
+  "imaging.pathology[0].pathology": "Kortikal sınır bölgesi enfarktı",
+  "imaging.pathology[0].finding": "ACA ile MCA ya da MCA ile PCA sulama alanları arasında kama biçimli difüzyon kısıtlaması; yaygın hipotansiyondan sonra sıklıkla iki taraflı, ileri derecede karotis darlığının distalinde ise tek taraflıdır.",
+  "imaging.pathology[1].pathology": "İç sınır bölgesi enfarktı",
+  "imaging.pathology[1].finding": "Karotis darlığının bulunduğu tarafta centrum semiovale ve corona radiata'da difüzyonda parlak küçük lezyonlardan oluşan çizgisel bir dizi.",
+  "imaging.pathology[1].pitfalls": "Subkortikal lezyon dizisi sıklıkla çoklu emboli diye yanlış yorumlanır; karotise bakın",
+  "imaging.sequenceOfChoice": "DAG; darlık için boyun BTA'sı; kan basıncı öyküsü",
+  "clinical.lesionEffects[0].deficit": "'Fıçıdaki adam' (man-in-a-barrel): yüz ve bacaklar korunurken iki taraflı proksimal kol ve omuz güçsüzlüğü",
+  "clinical.lesionEffects[0].mechanism": "ACA ile MCA arasında iki taraflı ön kortikal sınır bölgesi",
+  "clinical.lesionEffects[1].deficit": "Kortikal görme bozukluğu, Bálint özellikleri",
+  "clinical.lesionEffects[1].mechanism": "Arka parieto-oksipital sınır bölgesi",
+  "clinical.lesionEffects[2].deficit": "Subkortikal lezyonlarla birlikte hemiparezi",
+  "clinical.lesionEffects[2].mechanism": "Corona radiata'daki iç sınır bölgesi",
+  "clinical.examination[0]": "Kolun proksimal ve distal gücünün karşılaştırılması",
+  "clinical.examination[1]": "Görme alanları ve görsel dikkat",
+  "clinical.examination[2]": "Karotis üfürümleri ve kan basıncı",
+  "clinical.pearls[0]": "Kardiyak arrest ya da ameliyat sonrası iki taraflı sınır bölgesi enfarktları hipotansiyonu, tek taraflı olanlar proksimal bir darlığı gösterir",
+  "clinical.pearls[1]": "İç sınır bölgesi karotis darlığına kortikal sınır bölgesinden daha duyarlıdır"
+ }
+}

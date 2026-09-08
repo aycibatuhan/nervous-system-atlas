@@ -1,0 +1,29 @@
+{
+ "id": "nerve-axillary",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "407ae81db040f8d6",
+ "fields": {
+  "summary": "Fasciculus posterior'un uç dallarından biri olan nervus axillaris (C5–C6), aksillayı arteria circumflexa humeri posterior ile birlikte dörtgen aralıktan geçerek arkaya doğru terk eder, humerus'un collum chirurgicum'u çevresinde dolanır ve musculus deltoideus ile musculus teres minor'u, ayrıca musculus deltoideus üzerindeki bir deri alanını (alay rozeti bölgesi) innerve eder. Collum chirurgicum düzeyinde seyrinin sabit olması, onu omuzun öne çıkığında ve proksimal humerus kırığında en sık zedelenen sinir yapar; sonuçta abduksiyon yapamayan düz bir omuz ve omzun dış yüzünde uyuşukluk ortaya çıkar.",
+  "anatomy.location": "Arteria axillaris'in arkasında fasciculus posterior'dan ayrılır, dörtgen aralıktan (sınırları musculus teres minor, musculus teres major, musculus triceps brachii'nin uzun başı ve humerus) geçer ve musculus deltoideus'un derininde humerus'un collum chirurgicum'u çevresinde dolanır.",
+  "function": "Musculus deltoideus'un (15 ile 90 derece arasındaki abduksiyon) ve musculus teres minor'un (dış rotasyon) motor innervasyonu; musculus deltoideus'un alt bölümü üzerindeki derinin duyusu (nervus cutaneus brachii lateralis superior).",
+  "imaging.bestView[0].label": "servikal omurilik; lifler C5–C6'dan gelir",
+  "imaging.normalAppearance": "Ekstremitelerin periferik sinirleri MNI beyin hacminin dışındadır; atlas meshi gösterilmez. Ultrason ve MR nörografi siniri doğrudan görüntüler; elektrodiagnostik inceleme lezyonu işlevsel olarak lokalize eder. Omuz MR'ı musculus deltoideus ve musculus teres minor'da denervasyon ödemini ve siniri dörtgen aralıkta gösterir; grafiler sorumlu çıkığı ya da kırığı ortaya koyar.",
+  "imaging.pathology[0].pathology": "Omuz çıkığı sonrası aksiller nöropati",
+  "imaging.pathology[0].finding": "STIR'de parlak musculus deltoideus ve musculus teres minor ile collum chirurgicum düzeyinde kalınlaşmış sinir.",
+  "imaging.pathology[1].pathology": "Dörtgen aralık sendromu",
+  "imaging.pathology[1].finding": "Dörtgen aralıktaki basıya bağlı izole musculus teres minor atrofisi; sıklıkla atma sporu yapan sporcularda görülür.",
+  "imaging.sequenceOfChoice": "Grafi, omuz MR'ı; musculus deltoideus ve musculus teres minor EMG'si",
+  "clinical.lesionEffects[0].deficit": "Musculus deltoideus konturunun düzleşmesiyle birlikte omuz abduksiyonunda güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Musculus deltoideus felci",
+  "clinical.lesionEffects[1].deficit": "Kolun üst dış yüzünde uyuşukluk (alay rozeti)",
+  "clinical.lesionEffects[1].mechanism": "Nervus cutaneus brachii lateralis superior",
+  "clinical.lesionEffects[2].deficit": "Dış rotasyonda güçsüzlük",
+  "clinical.lesionEffects[2].mechanism": "Musculus teres minor",
+  "clinical.examination[0]": "Bir çıkığı redükte etmeden önce dirence karşı abduksiyonu sınayın ve musculus deltoideus'un kasılmasını palpe edin",
+  "clinical.examination[1]": "Musculus deltoideus üzerinde duyu",
+  "clinical.examination[2]": "C5 radikülopatisi (musculus biceps brachii ve musculi rhomboidei de tutulur) ve üst trunkus lezyonuyla (musculus supraspinatus, musculus biceps brachii) karşılaştırın",
+  "clinical.pearls[0]": "Her omuz çıkığında redüksiyondan önce ve sonra musculus deltoideus işlevini ve omzun dış yüzündeki duyuyu kaydedin",
+  "clinical.pearls[1]": "Musculus biceps brachii ve musculus supraspinatus sağlamken görülen musculus deltoideus güçsüzlüğü C5 değil, nervus axillaris'tir"
+ }
+}

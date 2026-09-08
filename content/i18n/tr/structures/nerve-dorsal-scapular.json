@@ -1,0 +1,32 @@
+{
+ "id": "nerve-dorsal-scapular",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b2f01f08da5267bc",
+ "fields": {
+  "summary": "Nervus dorsalis scapulae, üst trunkusun yukarısında C5 kökünden (C4 katkısıyla) çıkar, musculus scalenus medius'u deler ve musculus levator scapulae ile innerve ettiği musculi rhomboidei'nin derininde scapula'nın medial kenarı boyunca aşağı iner. Kökten pleksus oluşmadan önce ayrıldığı için musculi rhomboidei'deki güçsüzlük C5 kök lezyonunu üst trunkus lezyonundan ayırır ve bu sinirin EMG'si lezyonu köke yerleştiren testlerden biridir: C5 radikülopatisi musculi rhomboidei'yi denerve ederken üst trunkusun Erb felci onları korur. Sinir musculus scalenus medius içinde sıkışır ve nervus thoracicus longus'unkinden farklı bir örüntüde interskapuler ağrı ve skapula kanatlaşması yapar.",
+  "anatomy.location": "Boyunda C5 ön dalından ayrılır, musculus scalenus medius'u deler, arteria dorsalis scapulae ile birlikte musculus levator scapulae'nin altında scapula'nın medial kenarı boyunca ilerler ve musculus levator scapulae ile birlikte innerve ettiği musculus rhomboideus minor ve major'un derininde seyreder.",
+  "function": "Musculus levator scapulae ve musculi rhomboidei'nin motor innervasyonunu sağlar; scapula'yı yukarı kaldırır, içe çeker ve kol hareketi sırasında sabitler. Kaybı, scapula'nın alt açısı laterale kayacak biçimde hafif bir lateral skapula kanatlaşması (musculus serratus anterior güçsüzlüğündekinin tersi yön), omuzları geriye doğru kasmakta zorlanma ve künt bir interskapuler sızı yapar. Pleksusun proksimalinden köken alması onu bir kök belirteci hâline getirir: EMG'de musculi rhomboidei denervasyonunun musculus deltoideus ve musculus biceps brachii güçsüzlüğüyle birlikte bulunması C5 kökünü ya da preganglionik bir avulsiyonu (onarım için kötü prognoz) gösterir; musculi rhomboidei korunmuşsa lezyon, rejenere olabilecek postganglionik bir üst trunkus yaralanmasıdır. Musculus scalenus medius içindeki sıkışma boyun travmasına ve torasik çıkış sendromlarına eşlik eder.",
+  "imaging.bestView[0].label": "scapula'nın medial kenarı boyunca nervus dorsalis scapulae",
+  "imaging.bestView[1].label": "C5 kökünden çıkıp musculus scalenus medius'u delen sinir",
+  "imaging.normalAppearance": "Ultrasonda musculus scalenus medius'u delen ve musculus levator scapulae'nin altında seyreden küçük bir sinirdir; rutin MR yalnızca innerve ettiği kasları gösterir, bu kaslarda denervasyon ödemi ya da yağlı atrofi izlenir.",
+  "imaging.pathology[0].pathology": "C5 radikülopatisi ya da kök avulsiyonu",
+  "imaging.pathology[0].finding": "Musculus deltoideus, musculus biceps brachii ve musculus supraspinatus ile birlikte musculi rhomboidei'nin denervasyonu; miyelografi ya da MR'da görülen psödomeningosel kök avulsiyonunun işaretidir.",
+  "imaging.pathology[1].pathology": "Musculi rhomboidei denervasyonu",
+  "imaging.pathology[1].finding": "Musculus serratus anterior normalken musculi rhomboidei ve musculus levator scapulae'de STIR hiperintensitesi ve ardından yağlı atrofi.",
+  "imaging.pathology[2].pathology": "Üst trunkus pleksopatisi (karşılaştırma için)",
+  "imaging.pathology[2].finding": "Musculi rhomboidei normalken musculus deltoideus, musculus biceps brachii ve musculus supraspinatus'ta denervasyon; bu, lezyonu kökün distaline yerleştirir.",
+  "clinical.lesionEffects[0].deficit": "Lateral skapula kanatlaşması ve scapula'yı içe çekmede güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Musculi rhomboidei ve musculus levator scapulae denervasyonu",
+  "clinical.lesionEffects[1].deficit": "İnterskapuler sızı ve boyun ağrısı",
+  "clinical.lesionEffects[1].mechanism": "Musculus scalenus medius içinde sıkışma ya da C5 kök lezyonu",
+  "clinical.lesionEffects[2].deficit": "C5 kök lezyonunun (üst trunkusa karşı) belirteci",
+  "clinical.lesionEffects[2].mechanism": "Sinirin pleksusun proksimalinden köken alması",
+  "clinical.examination[0]": "Hastadan omuzlarını dirence karşı geriye doğru kasmasını isteyin ve scapula'nın alt açısının laterale kayıp kaymadığını izleyin",
+  "clinical.examination[1]": "Üst pleksus ya da C5 lezyonu olan her hastada musculi rhomboidei EMG'si",
+  "clinical.examination[2]": "Duvara şınav sırasındaki musculus serratus anterior kanatlaşmasıyla karşılaştırın",
+  "clinical.pearls[0]": "Musculi rhomboidei güçsüzse lezyon C5 kökündedir; musculi rhomboidei güçlüyse lezyon trunkustadır",
+  "clinical.pearls[1]": "Scapula'yı iki sinir kanatlandırır: nervus thoracicus longus mediale, nervus dorsalis scapulae laterale kanatlandırır",
+  "clinical.pearls[2]": "Kök avulsiyonu onarılamaz; musculi rhomboidei EMG'si cerrahiden önce karar vermeye yardım eder"
+ }
+}

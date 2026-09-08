@@ -1,0 +1,32 @@
+{
+ "id": "nerves-pectoral",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b282e14defcb3fbc",
+ "fields": {
+  "summary": "Fasciculus lateralis'ten çıkan nervus pectoralis lateralis (C5-C7) ile fasciculus medialis'ten çıkan nervus pectoralis medialis (C8-T1) aksillayı çaprazlayarak musculus pectoralis major ve minor'u innerve eder; lateral sinir major'un klavikular ve üst sternal bölümlerini, medial sinir ise alt sternal bölümünü ve minor'u innerve eder; adları konumlarından değil, çıktıkları kordlardan gelir. Pleksus lezyonlarında kordların motor göstergeleridir, meme ve aksilla cerrahisinde ve torasik çıkış sendromlarında musculus pectoralis minor nedeniyle yaralanırlar; pektoral refleks ve adduksiyon sırasında kasın palpe edilen kasılması C5-T1 kökleri için hasta başında bir test sağlar.",
+  "anatomy.location": "Nervus pectoralis lateralis fasciculus lateralis'ten ayrılır, arteria axillaris'i çaprazlar ve fascia clavipectoralis'i delerek musculus pectoralis major'un derin yüzüne girer; nervus pectoralis medialis fasciculus medialis'ten arteria axillaris'in arkasında ayrılır, musculus pectoralis minor'un içinden ya da çevresinden geçerek onu innerve eder ve musculus pectoralis major'un alt bölümünde sonlanır; iki sinir arasındaki bir ilmek arteri çaprazlar.",
+  "function": "Musculus pectoralis major'a (kolun adduksiyonu, iç rotasyonu ve fleksiyonu; klavikular baş fleksiyon, sternal baş adduksiyon yaptırır) ve musculus pectoralis minor'a (scapula'nın aşağı çekilmesi ve öne itilmesi) motor lifler verirler; kolun göğse bastırılmasını ve gövdenin sandalyeden yukarı itilmesini sağlarlar. İki ayrı korddan köken almaları musculus pectoralis major'u pleksusun haritası yapar: klavikular baş güçsüzlüğü üst kökleri ve fasciculus lateralis'i, sternal baş güçsüzlüğü ise alt kökleri ve fasciculus medialis'i gösterir. Kol abduksiyondayken tendona vurularak alınan pektoral refleks C5-T1'i test eder ve servikal miyelopatide canlıdır. Bu sinirler radikal mastektomide kesilir ve sinir transferinde verici olarak kullanılabilir.",
+  "imaging.bestView[0].label": "aksillayı çaprazlayarak musculus pectoralis major ve minor'a giden pektoral sinirler",
+  "imaging.bestView[1].label": "arteria axillaris çevresinde nervus pectoralis medialis ve lateralis",
+  "imaging.normalAppearance": "Ultrasonda fascia clavipectoralis'in altında arteria axillaris'i çaprazlayan sinirler olarak görülür; pektoral denervasyon STIR değişikliği ve atrofi olarak ortaya çıkar, musculus pectoralis major atrofisi de toraks BT'sinde seçilir.",
+  "imaging.pathology[0].pathology": "Fasciculus lateralis ya da fasciculus medialis pleksopatisi",
+  "imaging.pathology[0].finding": "Musculus pectoralis major'un klavikular başında (fasciculus lateralis; muskulokutanöz ve median bulgularla birlikte) ya da sternal başında (fasciculus medialis; ulnar bulgularla birlikte) denervasyon.",
+  "imaging.pathology[1].pathology": "Mastektomi sonrası pektoral denervasyon",
+  "imaging.pathology[1].finding": "Aksilla cerrahisinden sonra musculus pectoralis major'da atrofi; adduksiyon güçsüzlüğü ve infraklavikular bölgede çökme eşlik eder.",
+  "imaging.pathology[2].pathology": "Pektoralis minor sendromu",
+  "imaging.pathology[2].finding": "Gergin bir musculus pectoralis minor'un altında nörovasküler demetin basıya uğraması; kolun yukarı kaldırılmasıyla yeniden ortaya çıkan ağrı ve parestezi olur; pektoral sinirlerin kendisi genellikle korunur.",
+  "clinical.lesionEffects[0].deficit": "Kolun göğüs üzerinden adduksiyonunda güçsüzlük",
+  "clinical.lesionEffects[0].mechanism": "Musculus pectoralis major'un denervasyonu",
+  "clinical.lesionEffects[1].deficit": "Pektoral güçsüzlüğün paterni kordu gösterir",
+  "clinical.lesionEffects[1].mechanism": "Klavikular baş fasciculus lateralis'ten, sternal baş fasciculus medialis'ten gelir",
+  "clinical.lesionEffects[2].deficit": "Canlı pektoral refleks",
+  "clinical.lesionEffects[2].mechanism": "Üst motor nöron bulgularının eşlik ettiği, C5'in üzerindeki servikal miyelopati",
+  "clinical.examination[0]": "Hastaya avuçlarını birbirine bastırtın ve musculus pectoralis major'un her iki başını palpe edin",
+  "clinical.examination[1]": "Kol kısmen abduksiyondayken pektoral refleks",
+  "clinical.examination[2]": "Pleksus lezyonlarında iki başın ayrı ayrı EMG'si",
+  "clinical.pearls[0]": "Musculus pectoralis major pleksusu okur: klavikular baş üst kökleri, sternal baş alt kökleri gösterir",
+  "clinical.pearls[1]": "Canlı bir pektoral refleks servikal omurilik basısının erken bulgusudur",
+  "clinical.pearls[2]": "Adları taraflarından değil kordlarından gelir: nervus pectoralis medialis başlangıçta lateral olanın lateralinde yer alır"
+ }
+}

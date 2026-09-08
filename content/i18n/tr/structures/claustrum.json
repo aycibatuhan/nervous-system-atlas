@@ -1,0 +1,29 @@
+{
+ "id": "claustrum",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "d2678f3e7b8d0649",
+ "fields": {
+  "summary": "Putamen ile insular korteks arasında yer alan ince bir gri cevher tabakasıdır; putamen'den capsula externa, insula'dan ise capsula extrema ile ayrılır. Korteksin neredeyse tamamıyla karşılıklı bağlantılıdır ve kortikal etkinliğin ve bilincin bir düzenleyicisi olduğu öne sürülmüştür, ancak klinik imzası zayıftır: otoimmün ve ateşli ensefalitlerde (claustrum belirtisi) ve bazı status epileptikus olgularında tutulur; uyarılması bilinci askıya alabilir.",
+  "anatomy.location": "İnsula'nın derininde, putamen'in lateralinde, commissura anterior düzeyinden nucleus lentiformis'in arka ucuna kadar uzanan dikey bir gri cevher plağıdır; medialinde capsula externa, lateralinde capsula extrema bulunur.",
+  "connections.afferents[0].from": "korteksin geniş bölümleri",
+  "connections.efferents[0].to": "korteksin geniş bölümleri",
+  "function": "Yaygın karşılıklı kortikal bağlantıları, çok duyulu bütünleştirmede, dikkatte ve bilinçli deneyimin bağlanmasında bir rol düşündürür; ventral claustrum amigdala ve limbik korteksle bağlantı kurar.",
+  "imaging.bestView[0].label": "putamen ile insula arasında ince gri tabaka",
+  "imaging.bestView[1].label": "capsula externa ile capsula extrema arasında claustrum",
+  "imaging.normalAppearance": "Aksiyal T1/T2'de capsula externa ile capsula extrema arasında ince dikey bir gri çizgidir; en kolay yüksek çözünürlüklü 3 T görüntülerde seçilir; simetrik FLAIR hiperintensitesi ensefalitin claustrum belirtisidir.",
+  "imaging.pathology[0].pathology": "Ateşli enfeksiyonla ilişkili epilepsi sendromu / otoimmün ensefalit",
+  "imaging.pathology[0].finding": "Dirençli status epileptikusla birlikte iki yanlı simetrik claustrum FLAIR hiperintensitesi ('claustrum belirtisi').",
+  "imaging.pathology[1].pathology": "İnsüler-operküler enfarkt",
+  "imaging.pathology[1].finding": "MCA dal tıkanmasında insula ve claustrum'da difüzyon kısıtlaması.",
+  "imaging.sequenceOfChoice": "Aksiyal FLAIR",
+  "clinical.lesionEffects[0].deficit": "Ensefalitle birlikte dirençli nöbetler ve bilinç değişikliği",
+  "clinical.lesionEffects[0].mechanism": "İki yanlı claustrum iltihabı",
+  "clinical.lesionEffects[1].deficit": "Tutarlı bir fokal sendromun bulunmaması",
+  "clinical.lesionEffects[1].mechanism": "Yaygın bağlantılar; defisitler komşu insula ve putamen'e bağlanır",
+  "clinical.examination[0]": "Ensefalitte bilinç düzeyi ve nöbet semiyolojisi",
+  "clinical.examination[1]": "İnsüler bulgular: tat, otonom değişiklikler",
+  "clinical.pearls[0]": "Ateşli ve dirençli nöbetleri olan hastada FLAIR'de iki yanlı parlak claustrum bilinen bir ensefalit paternidir",
+  "clinical.pearls[1]": "Claustrum, anatomisi klinik bilgimizin önünde giden bir yapıdır; beklentileri ölçülü tutun"
+ }
+}

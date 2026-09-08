@@ -1,0 +1,25 @@
+{
+ "id": "bp3d-brain",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "7fe76ec45175b4cb",
+ "fields": {
+  "summary": "Bu mesh, BodyParts3D anatomik modelinden alınan bütün beyindir; diğer tüm vücut yapılarıyla aynı dönüşüm kullanılarak MNI uzayına registre edilmiştir ve aynı kaynaktan gelen sol ve sağ serebrum mesh'leriyle birlikte yarı saydam bir bağlam zarfı olarak sunulur. MR şablonundan türetilen popülasyon ortalaması zarfın değil, anatomistlerce modellenmiş tek bir bireyin girus yüzeyini gösterir; bu nedenle sulcus'ları daha derin, gyrus'ları daha belirgindir ve atlastan türetilen kortikal parseller gizlendiğinde görsel bir başvuru kaynağı olarak işe yarar. Derin anatomik işaret noktalarındaki registrasyon artığı birkaç milimetredir; bu nedenle ölçüm için kullanılmamalıdır.",
+  "anatomy.location": "BodyParts3D koordinat sisteminden anatomik işaret noktalarına dayalı afin registrasyon sonrası MNI uzayında, serebral hemisferler, serebellum ve medulla oblongata'ya kadar beyin sapı dahil bütün beyin.",
+  "function": "Mesh, derin yapılar için görsel bir bağlam sağlar: düşük opaklıkla açıldığında bir çekirdeğin ya da traktusun kortikal yüzeye ve sulcus'lara göre nerede yer aldığını gösterir ve düz atlas parsellerinde bulunmayan girus örüntüsü duygusunu verir. Ayrıca tüm vücut kaynağının registrasyon kalitesini de belgeler: bu yüzey ile MR'dan türetilen zarf arasındaki fark, BodyParts3D sisteminin en çok kutuplarda ve ventral yüzde belirginleşen artık hizalanma hatasını gösterir. Yönelim dışında kendine ait klinik bir işlevi yoktur.",
+  "imaging.bestView[0].label": "MNI uzayında BodyParts3D bütün beyni",
+  "imaging.bestView[1].label": "MR şablonu üzerinde registre edilmiş beyin yüzeyi",
+  "imaging.normalAppearance": "Modellenmiş sulcus ve gyrus'ları olan, tek bireye ait poligonal bir beyin yüzeyi; şablon beynin üzerine, yüzeyde en çok frontal ve oksipital kutuplarda görülen birkaç milimetrelik bir uyumsuzlukla oturur.",
+  "imaging.pathology[0].pathology": "Registrasyon uyumsuzluğu (kalite kontrolü)",
+  "imaging.pathology[0].finding": "BodyParts3D yüzeyinin kesitlerde şablon beyin yüzeyinden ayrıldığı yerlerde, tüm vücut kaynaklarının yerel registrasyon hatası doğrudan okunabilir.",
+  "imaging.pathology[1].pathology": "Patoloji yok",
+  "imaging.pathology[1].finding": "Bu bir başvuru mesh'idir; bir hastayı temsil etmez ve hiçbir hastalık göstermez.",
+  "clinical.lesionEffects[0].deficit": "Defisit yok: başvuru mesh'i",
+  "clinical.lesionEffects[0].mechanism": "Lezyon sendromu olmayan bağlam zarfı",
+  "clinical.examination[0]": "Derin yapıları girus yüzeyine göre yerleştirmek için düşük opaklıkla kullanın",
+  "clinical.examination[1]": "Registrasyon kalitesini değerlendirmek için şablon zarfla karşılaştırın",
+  "clinical.pearls[0]": "BodyParts3D beyni tek bir kişinin beynidir; zarf ise herkesin ortalamasıdır",
+  "clinical.pearls[1]": "Sulcus'ları şablonunkilerden daha derindir, çünkü ortalanmamış, modellenmiştir",
+  "clinical.pearls[2]": "Yarı saydam tutun: ölçülecek anatomi değil, dekordur"
+ }
+}

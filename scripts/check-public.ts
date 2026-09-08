@@ -38,7 +38,7 @@ const DATA = join(DIR, 'data');
 /** Dataset names that must not survive in the manifest or volume metadata. Mirrors NAME_STRINGS in manifest.py. */
 const NAME_STRINGS = ['Brainstem Navigator', 'BrainstemNavigator', 'Harvard-Oxford', 'Diedrichsen', 'PAM50'];
 const TEXT_EXT = ['.json', '.js', '.mjs', '.css', '.html', '.txt', '.map'];
-const PROSE_FILES = ['data/content.json', 'data/search-index.json'];
+const PROSE_FILES = ['data/content.json', 'data/content.tr.json', 'data/search-index.json'];
 
 const fail: string[] = [];
 const note: string[] = [];
@@ -91,7 +91,7 @@ for (const m of man.meshes) {
 }
 for (const [k, v] of Object.entries(man.volumes)) if (v.space && !man.grids?.[v.space]) bad(`volume ${k} sits on the dropped grid "${v.space}"`);
 
-const allowed = new Set<string>(['manifest.json', 'content.json', 'search-index.json', 'LICENSE']);
+const allowed = new Set<string>(['manifest.json', 'content.json', 'content.tr.json', 'search-index.json', 'LICENSE']);
 for (const m of man.meshes) { allowed.add(m.file); if (m.lod) allowed.add(m.lod.file); }
 for (const v of Object.values(man.volumes)) { allowed.add(v.file); if (v.lut) allowed.add(v.lut); }
 for (const l of Object.values(man.licenses)) allowed.add(l.text);
@@ -103,8 +103,11 @@ const entryIds = new Set<string>();
 if (content) for (const k of ['structures', 'pathways', 'syndromes', 'glossary', 'quiz', 'topics']) for (const id of Object.keys(content[k] ?? {})) entryIds.add(id);
 const sharedIds = new Set(Array.from(exMeshIds).filter((id) => entryIds.has(id)));
 
-// content.json must not *point* at an excluded mesh from any field that holds mesh ids
-if (content) {
+// content.json (and the Turkish bundle, the same entries translated) must not *point* at an excluded mesh from any field that holds mesh ids
+const trPath = join(DATA, 'content.tr.json');
+const contentTr = existsSync(trPath) ? JSON.parse(readFileSync(trPath, 'utf8')) as Record<string, Record<string, unknown>> : null;
+for (const [bundleName, bundle] of [['content.json', content], ['content.tr.json', contentTr]] as const) if (bundle) {
+  const content = bundle;
   const named = new Set<string>();
   const walk = (v: unknown): void => {
     if (Array.isArray(v)) { for (const x of v) walk(x); return; }
@@ -116,7 +119,7 @@ if (content) {
   };
   walk(content);
   for (const id of Object.keys(content['meshToStructure'] ?? {})) named.add(id);
-  for (const id of named) if (exMeshIds.has(id)) bad(`data/content.json still points at the excluded mesh ${id}`);
+  for (const id of named) if (exMeshIds.has(id)) bad(`data/${bundleName} still points at the excluded mesh ${id}`);
 }
 
 // ---- walk the build

@@ -1,0 +1,27 @@
+{
+ "id": "posterior-spinal-arteries",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "dd8454118e07c2b6",
+ "fields": {
+  "summary": "Her tarafta bir tane olmak üzere, arka köklerin giriş yerinin yakınında omuriliğin posterolateral yüzünde aşağı inen iki küçük arterdir. Arteria vertebralis'ten ya da arteria cerebelli inferior posterior'dan çıkarlar, arka radiküler arterlerle desteklenen pleksiform bir zincir oluştururlar ve omuriliğin arka üçte birini beslerler: arka kordonlar ve arka boynuzların uçları. Eşlenik damarlar birbirleriyle zengin biçimde bağlantılı olduğu için izole arteria spinalis posterior enfarktları seyrektir.",
+  "anatomy.location": "İntrakraniyal arteria vertebralis'ten ya da PICA'dan doğar, medulla oblongata ve omuriliğin sulcus posterolateralis'i boyunca arka köklerin medialinde aşağı iner ve pek çok düzeyde arka radiküler dallar alır.",
+  "function": "Arka beyaz kordonları (fasciculus gracilis ve fasciculus cuneatus) ve arka gri boynuzları, yani lezyon düzeyinin altındaki tüm omurilik için propriyosepsiyon, vibrasyon ve ince dokunma yolaklarını besler.",
+  "imaging.bestView[0].label": "arteria spinalis posterior'ların çıkış yerinde posterolateral medulla oblongata",
+  "imaging.bestView[1].label": "medulla oblongata ve servikal omuriliğin arka yüzü",
+  "imaging.normalAppearance": "Rutin MR'da seyrek olarak seçilir; yüksek çözünürlüklü aksiyal T2'de omuriliğin posterolateral yüzünde minik noktalar biçiminde görülür. Sulama alanı, aksiyal kesitlerde omuriliğin arka üçte biridir.",
+  "imaging.pathology[0].pathology": "Arka omurilik enfarktı",
+  "imaging.pathology[0].finding": "Bir ya da birkaç segment boyunca arka kordonlarla sınırlı T2 hiperintensitesi ve difüzyon kısıtlaması; motor işlev ve ağrı duyusu korunur.",
+  "imaging.pathology[0].pitfalls": "Bu görünüm subakut kombine dejenerasyon ve tabes ile örtüşür; akut başlangıç ve difüzyon kısıtlaması enfarktı ayırır",
+  "imaging.sequenceOfChoice": "DAG ile birlikte aksiyal ve sagital T2",
+  "clinical.lesionEffects[0].deficit": "Lezyon düzeyinin altında vibrasyon ve propriyosepsiyon kaybı ile duyusal ataksi",
+  "clinical.lesionEffects[0].mechanism": "Arka kordonlar",
+  "clinical.lesionEffects[1].deficit": "Segmenter derin tendon reflekslerinin kaybı",
+  "clinical.lesionEffects[1].mechanism": "Enfarkt düzeyinde arka boynuz ve refleksin afferent kolu",
+  "clinical.examination[0]": "Malleoller üzerinde vibrasyon ve ayak parmaklarında eklem pozisyon duyusu",
+  "clinical.examination[1]": "Romberg testi",
+  "clinical.examination[2]": "İğne batırma duyusunu (korunmuş olmalı) vibrasyonla (kaybolmuş) karşılaştırın",
+  "clinical.pearls[0]": "Vasküler bir olaydan sonra ağrı duyusu ve kas gücü korunurken arka kordon kaybı olması arteriae spinales posteriores'i düşündürür",
+  "clinical.pearls[1]": "Arkadaki zengin anastomoz zinciri, arka omurilik enfarktlarının öndekilerden çok daha seyrek olmasını açıklar"
+ }
+}

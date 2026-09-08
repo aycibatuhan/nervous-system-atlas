@@ -1,0 +1,27 @@
+{
+ "id": "pathway-tectospinal",
+ "kind": "pathways",
+ "lang": "tr",
+ "source": "4cc996f953a168b9",
+ "fields": {
+  "summary": "Colliculus superior'un derin tabakalarının nöronları aksonlarını periakuaduktal gri cevherin hemen altında decussatio tegmentalis dorsalis'te çaprazlaştırır; bu aksonlar beyin sapı boyunca MLF'nin yakınında iner ve servikal omurilikte sonlanarak boyun motor nöronlarını sürer, böylece baş görsel, işitsel ya da somatosensoriyel bir uyarana doğru döner. Yönelme yanıtının spinal bileşenidir ve gözleri aynı hedefe götüren tektobulber liflerle birlikte çalışır; böylece bakış ile başın dönüşü birlikte varır ve fovea dikkati çeken şeyin üzerine oturur.",
+  "origin.note": "Colliculus superior'un derin ve ara tabakaları; retinal, işitsel ve kortikal girdiyle sürülür.",
+  "neuronChain[0].cellBody": "Colliculus superior nöronu",
+  "neuronChain[0].synapse": "servikal internöronlar ve motor nöronlar",
+  "neuronChain[1].cellBody": "Motor nöron",
+  "neuronChain[1].synapse": "boyun kasları",
+  "decussation.level": "Decussatio tegmentalis dorsalis, mezensefalon",
+  "decussation.note": "Kollikuluslar düzeyinde periakuaduktal gri cevherin altında çaprazlaşır.",
+  "waypoints[0].note": "köken",
+  "waypoints[1].note": "decussatio tegmentalis dorsalis",
+  "waypoints[2].note": "MLF'nin yanında iner",
+  "waypoints[3].note": "funiculus anterior, yalnızca servikal segmentler",
+  "termination": "Boyun kasları için üst servikal omuriliğin motor nöronları ve internöronları.",
+  "lesionEffectsByLevel[0].level": "Colliculus superior",
+  "lesionEffectsByLevel[0].effects": "Başın ve gözlerin karşı tarafa refleks yönelmesinde bozulma; nadiren izoledir",
+  "lesionEffectsByLevel[1].level": "Dorsal mezensefalon basısı",
+  "lesionEffectsByLevel[1].effects": "Yönelme defisitleri Parinaud sendromunun vertikal bakış felciyle iç içe geçer",
+  "clinical.pearls[0]": "Ani bir sesin nedenini bilmeden başınızı çevirmenizin nedeni bu traktustur",
+  "clinical.pearls[1]": "İzole tektospinal lezyonlar klinik bir tablodan çok ders kitabı kavramıdır; onu dorsal mezensefalonun bir parçası olarak düşünün"
+ }
+}

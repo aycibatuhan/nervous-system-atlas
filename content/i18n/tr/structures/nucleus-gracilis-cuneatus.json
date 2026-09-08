@@ -1,0 +1,28 @@
+{
+ "id": "nucleus-gracilis-cuneatus",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "ded8b8fd3e5ce9f9",
+ "fields": {
+  "summary": "Nucleus gracilis ve nucleus cuneatus, bulbusun alt bölümünün arkasında tuberculum gracile ve tuberculum cuneatum'un altında oturur ve arka kordonların çıkan liflerini alır: nucleus gracilis bacaktan ve gövdenin alt bölümünden (fasciculus gracilis), nucleus cuneatus koldan ve gövdenin üst bölümünden (fasciculus cuneatus). Aksonları fibrae arcuatae internae olarak çaprazlaşıp lemniscus medialis'i oluşturur. Hemen lateralinde yer alan nucleus cuneatus accessorius, koldan gelen bilinçdışı propriyosepsiyonu pedunculus cerebellaris inferior aracılığıyla serebelluma gönderir.",
+  "anatomy.location": "Kapalı bulbusun arka bölümünde, decussatio pyramidum'un hemen üzerinde; ventriculus quartus'un kaudal taban bölgesine doğru kabaran tüberküllerin altında birbirine göre medialde (gracilis) ve lateralde (cuneatus) yer alırlar; nucleus cuneatus accessorius nucleus cuneatus'un lateralindedir.",
+  "connections.efferents[0].to": "medial-lemniscus",
+  "connections.efferents[0].via": "fibrae arcuatae internae",
+  "function": "Ayırt edici dokunma, vibrasyon ve bilinçli propriyosepsiyonun ikinci sıra aktarma yeridir; somatotopik temsilin aynı taraftan karşı tarafa devredildiği yerdir.",
+  "imaging.bestView[0].label": "tuberculum gracile ve tuberculum cuneatum'un altında kapalı bulbusun arka bölümü",
+  "imaging.bestView[1].label": "bulbusun alt bölümünün arka yüzü",
+  "imaging.normalAppearance": "Tüberküller aksiyal T2 ve sagital görüntülerde bulbusun alt bölümünün arka yüzünü oluşturur; çekirdeklerin kendisi ayırt edilemez. Subakut kombine dejenerasyonda arka kordonlarda bu düzeye kadar süren T2 hiperintensitesi görülür.",
+  "imaging.pathology[0].pathology": "Bulbusun arka bölümündeki lezyon (demiyelinizasyon, kavernom)",
+  "imaging.pathology[0].finding": "Servikomedüller bileşkede küçük, arka paramedian lezyon; aynı tarafta vibrasyon ve pozisyon duyusu kaybı eşlik eder.",
+  "imaging.sequenceOfChoice": "Servikomedüller bileşkenin sagital ve aksiyal T2'si",
+  "clinical.lesionEffects[0].deficit": "Düzeyin altında aynı tarafta vibrasyon ve propriyosepsiyon kaybı",
+  "clinical.lesionEffects[0].mechanism": "Lifler ve çekirdekler henüz çaprazlaşmamıştır",
+  "clinical.lesionEffects[1].deficit": "Duyusal ataksi ve elde psödoatetoz",
+  "clinical.lesionEffects[1].mechanism": "Nucleus cuneatus deafferentasyonu",
+  "clinical.examination[0]": "Vibrasyon ve eklem pozisyon duyusunun iki taraf arasında karşılaştırılması",
+  "clinical.examination[1]": "Gözler kapalıyken Romberg ve psödoatetoz",
+  "clinical.examination[2]": "Bu modaliteler için bir duyu düzeyi arayın",
+  "clinical.pearls[0]": "Bu çekirdekler düzeyindeki ya da altındaki arka bir lezyon aynı tarafta propriyoseptif kayıp yapar; üzerindeki lezyonda kayıp karşı taraftadır",
+  "clinical.pearls[1]": "İzole uyuşuk ve beceriksiz el fasciculus cuneatus'tan ya da nucleus cuneatus'tan kaynaklanabilir (servikomedüller demiyelinizasyon)"
+ }
+}

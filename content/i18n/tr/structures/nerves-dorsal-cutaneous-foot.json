@@ -1,0 +1,32 @@
+{
+ "id": "nerves-dorsal-cutaneous-foot",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b3a08a75b6e86921",
+ "fields": {
+  "summary": "Nervus cutaneus dorsalis medialis ve intermedius, nervus peroneus superficialis'in terminal dallarıdır; baldırın alt dış bölümünde derin fasyayı geçerek yüzeye çıkar, ayak bileğini çaprazlar ve ayak sırtının ve parmakların derisini innerve eder; birinci parmak arası aralık (nervus peroneus profundus), ayağın dış kenarı (nervus suralis) ve iç kenarı (nervus saphenus) bunun dışındadır. Ayak sırtında nervus peroneus superficialis'in ve L5 dermatomunun duyu haritasıdırlar; fasyayı deldikleri yerde ve ayak bileğinde sıkı botlarla basıya uğrarlar, ayak bileği artroskopisi ve cerrahisinde yaralanarak ayağın üst yüzünde uyuşukluğa ve nörom ağrısına yol açarlar.",
+  "anatomy.location": "Nervus peroneus superficialis baldırın dış yanının alt üçte birinde derin fasyayı deler ve iki dala ayrılır: nervus cutaneus dorsalis medialis ayak bileğini malleolus lateralis'in önünden çaprazlayarak ayak sırtının iç bölümüne, başparmağa ve ikinci ile üçüncü parmaklara gider; nervus cutaneus dorsalis intermedius daha lateralden ilerleyerek ayak sırtının dış bölümüne ve üçüncüden beşinciye kadar olan parmaklara gider; her ikisi de retinaculum musculorum extensorum üzerinde deri altında yer alır.",
+  "function": "Tümüyle duyusaldırlar; ayak sırtından ve parmaklardan gelen duyuyu nervus peroneus superficialis üzerinden L5 (medial) ve S1 (lateral) arka kök gangliyonlarına taşırlar. Birinci parmak arası aralığı (nervus peroneus profundus), ayağın dış yanını (nervus suralis) ve iç yanını (nervus saphenus) innerve etmemeleri, muayene edenin ayak sırtındaki uyuşukluğu nervus peroneus superficialis'e ya da L5 köküne bağlamasına olanak verir; yüzeyel peroneal duyusal potansiyel de ikisini birbirinden ayırır (kök lezyonunda normaldir). Nervus peroneus superficialis'in fasyayı deldiği yerde tuzaklanırlar (plantar fleksiyon ve inversiyonla ağrı olur), ayak bileğinde botlarla basıya uğrarlar ve anterolateral ayak bileği portallerinde ve halluks valgus cerrahisinde kesilerek uyuşuk bir ayak sırtı ya da ağrılı bir nörom bırakırlar.",
+  "imaging.bestView[0].label": "ayak bileğini çaprazlayarak ayak sırtına giden nervus cutaneus dorsalis medialis ve intermedius",
+  "imaging.bestView[1].label": "retinaculum musculorum extensorum üzerinde nervus peroneus superficialis'in terminal dalları",
+  "imaging.normalAppearance": "Ultrasonda ayak bileğinin ön yüzünde, ayak plantar fleksiyon ve inversiyondayken görülen deri altı sinirlerdir; rutin MR'da seçilemezler. İnnervasyon alanı: birinci parmak arası aralık ve kenarlar dışında ayağın sırtı.",
+  "imaging.pathology[0].pathology": "Nervus peroneus superficialis tuzaklanması",
+  "imaging.pathology[0].finding": "Sinirin baldırın alt dış bölümünde fascia cruris'i deldiği yerde odaksal şişme; inversiyonla ayak sırtında parestezi olur.",
+  "imaging.pathology[1].pathology": "Ayak bileği artroskopisinde iyatrojenik yaralanma",
+  "imaging.pathology[1].finding": "Anterolateral portal skarının altında bir dorsal deri dalında nörom; ağrılı Tinel işareti eşlik eder.",
+  "imaging.pathology[2].pathology": "L5 radikülopatisi (karşılaştırma için)",
+  "imaging.pathology[2].finding": "Ayak sırtı uyuşuk olmasına karşın yüzeyel peroneal duyusal potansiyelin normal olması; bu da lezyonu kök düzeyine yerleştirir.",
+  "clinical.lesionEffects[0].deficit": "Birinci parmak arası aralığı koruyan, ayak sırtında uyuşukluk",
+  "clinical.lesionEffects[0].mechanism": "Nervus peroneus superficialis ya da onun dorsal deri dalları",
+  "clinical.lesionEffects[1].deficit": "Ayak bileği cerrahisinden sonra ayak sırtında ağrılı nörom",
+  "clinical.lesionEffects[1].mechanism": "Bir dorsal deri dalının kesilmesi",
+  "clinical.lesionEffects[2].deficit": "Duyusal potansiyel normalken ayak sırtının uyuşuk olması",
+  "clinical.lesionEffects[2].mechanism": "Gangliyonun proksimalinde L5 radikülopatisi",
+  "clinical.examination[0]": "Birinci parmak arası aralığı (nervus peroneus profundus) ayak sırtının geri kalanından (nervus peroneus superficialis) ayrı test edin",
+  "clinical.examination[1]": "Sinirin fasyayı deldiği baldırın alt dış bölümünde ve ayak bileği skarları üzerinde Tinel işareti",
+  "clinical.examination[2]": "Yüzeyel peroneal duyusal ileti çalışması",
+  "clinical.pearls[0]": "Birinci parmak arası aralık normalken ayağın üst yüzünün uyuşuk olması nervus peroneus superficialis'e aittir; tek başına parmak arası aralığın uyuşuk olması nervus peroneus profundus'a aittir",
+  "clinical.pearls[1]": "Ayak bileği artroskopisinden önce dorsal deri sinirlerini işaretleyin: anterolateral portalin altında yer alırlar",
+  "clinical.pearls[2]": "Uyuşuk bir ayakta yüzeyel peroneal duyusal yanıtın normal olması L5 kökünü gösterir"
+ }
+}

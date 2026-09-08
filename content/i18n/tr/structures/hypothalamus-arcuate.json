@@ -1,0 +1,32 @@
+{
+ "id": "hypothalamus-arcuate",
+ "kind": "structures",
+ "lang": "tr",
+ "source": "b18ca2f24d6cb378",
+ "fields": {
+  "summary": "Nucleus arcuatus, tuberal hipotalamusun tabanında infundibulumun kaidesi çevresinde uzanan kavisli bir nöron bandıdır; recessus infundibuli'nin duvarlarını oluşturur ve eminentia mediana düzeyinde kan-beyin engelinin dışında kalır. Kan ile hipotalamus arasındaki arayüzdür: nöronları leptini, insülini, ghrelini, glukozu ve gonadal steroidleri algılar, iştahı, enerji harcamasını ve büyümeyi denetler; salgılatıcı hormon nöronları (büyüme hormonu salgılatıcı hormon, dopamin ve kisspeptinle sürülen gonadotropin salgılatıcı hormon) eminentia mediana'nın portal kapillerlerine boşalır. Hasarı hiperfaji ve obezite, hipogonadizm ve büyüme geriliği yapar; prolaktini yükselten dopamin antagonistlerinin ve bağırsak hormonlarını taklit eden iştah ilaçlarının etki yeridir.",
+  "anatomy.location": "Üçüncü ventrikülün recessus infundibuli'sini çevreleyen ventral tuberal hipotalamus; hipofiz sapının kaidesinde, nucleus ventromedialis'in medialinde, chiasma opticum'un arkasında ve corpus mammillare'lerin önünde yer alır ve eminentia mediana ile devamlıdır.",
+  "function": "Nucleus arcuatus'ta enerji dengesini belirleyen, birbirine karşıt iki nöron topluluğu vardır: pro-opiomelanokortin nöronları leptin ve insülin yüksekken paraventriküler melanokortin-4 reseptörlerine alfa-melanosit uyarıcı hormon salarak beslenmeyi baskılar ve enerji harcamasını artırır; agouti ile ilişkili peptid ve nöropeptid Y nöronları ise ghrelin yükselip leptin düştüğünde açlığı başlatır. Nucleus arcuatus'un dopamin nöronları (tuberoinfundibular sistem) prolaktin salgısını tonik olarak inhibe eder, büyüme hormonu salgılatıcı hormon nöronları somatotropları uyarır, kisspeptin nöronları ise üremeyi denetleyen gonadotropin salgılatıcı hormon atımlarının hızını belirler. Eminentia mediana'da engel bulunmadığı için dolaşımdaki hormonlar ve toksinler bu nöronlara doğrudan ulaşır.",
+  "imaging.bestView[0].label": "recessus infundibuli çevresinde nucleus arcuatus",
+  "imaging.bestView[1].label": "hipofiz sapının kaidesinde tuber cinereum",
+  "imaging.normalAppearance": "Orta hat sagital kesitlerde chiasma ile corpus mammillare'ler arasında, recessus infundibuli çevresindeki tuber cinereum'un gri cevheri; eminentia mediana engeli bulunmadığı için gadolinyum sonrası normal olarak kontrastlanır.",
+  "imaging.pathology[0].pathology": "Hipotalamik obezite",
+  "imaging.pathology[0].finding": "Kraniyofarengiom cerrahisi ya da radyoterapi sonrası tuberal hipotalamusun ve infundibular bölgenin hasarı; hiperfaji, kilo alımı ve hipogonadizm ile birlikte.",
+  "imaging.pathology[1].pathology": "Hipotalamik hamartom",
+  "imaging.pathology[1].finding": "İnfundibulum ile corpus mammillare'ler arasında, tuber cinereum'dan köken alan sesil ya da saplı, gri cevherle izointens kitle; erken puberte ve jelastik nöbetlerle birlikte.",
+  "imaging.pathology[2].pathology": "Sap etkisine bağlı hiperprolaktinemi",
+  "imaging.pathology[2].finding": "Sapa ya da arkuat bölgeye bası yapan herhangi bir kitle, dopamin inhibisyonunu kaldırarak prolaktini orta derecede yükseltir; prolaktinom ise çok daha fazla yükseltir.",
+  "clinical.lesionEffects[0].deficit": "Hiperfaji ve obezite",
+  "clinical.lesionEffects[0].mechanism": "Pro-opiomelanokortin doygunluk sinyalinin kaybı",
+  "clinical.lesionEffects[1].deficit": "Hipogonadotropik hipogonadizm ve büyüme geriliği",
+  "clinical.lesionEffects[1].mechanism": "Kisspeptin-GnRH ve büyüme hormonu salgılatıcı hormon nöronlarının kaybı",
+  "clinical.lesionEffects[2].deficit": "Hiperprolaktinemi",
+  "clinical.lesionEffects[2].mechanism": "Laktotroplara ulaşan tuberoinfundibular dopaminin kaybı",
+  "clinical.examination[0]": "Kilo seyri, iştah ve doygunluk",
+  "clinical.examination[1]": "Prolaktin, gonad ve büyüme hormonu eksenleri",
+  "clinical.examination[2]": "Suprasellar lezyonu olan çocuklarda puberte evrelemesi",
+  "clinical.pearls[0]": "Nucleus arcuatus kanı tadar: eminentia mediana'da kan-beyin engelinin dışında yer alır",
+  "clinical.pearls[1]": "Sap lezyonuyla birlikte orta derecede yüksek prolaktin disinhibisyondur; çok yüksek prolaktin ise prolaktinomdur",
+  "clinical.pearls[2]": "Bağırsak hormonu kökenli iştah ilaçları nucleus arcuatus ve onun paraventriküler hedefleri üzerinden etki eder"
+ }
+}
