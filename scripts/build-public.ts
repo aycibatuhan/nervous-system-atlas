@@ -47,13 +47,13 @@ if (!args.has('--skip-vite')) {
 step('filter dist-public/data');
 mkdirSync(DATA, { recursive: true });
 writeFileSync(join(DATA, 'manifest.json'), JSON.stringify({ ...manifest, volumes: manifest.volumes }, null, 1));
-for (const [from, to] of [['content.public.json', 'content.json'], ['search-index.public.json', 'search-index.json']] as const) {
+for (const [from, to] of [['content.public.json', 'content.json'], ['search-index.public.json', 'search-index.json'], ['content.tr.public.json', 'content.tr.json']] as const) {
   if (!existsSync(join(SRC, from))) throw new Error(`${from} is missing — run the content build with --public first`);
   copyFileSync(join(SRC, from), join(DATA, to));
 }
 
 // LICENSE is the data folder's own licence (CC BY-SA 4.0), written by atlas-manifest; it ships with the data.
-const keep = new Set<string>(['manifest.json', 'content.json', 'search-index.json', 'LICENSE']);
+const keep = new Set<string>(['manifest.json', 'content.json', 'content.tr.json', 'search-index.json', 'LICENSE']);
 for (const m of manifest.meshes) { keep.add(m.file); if (m.lod) keep.add(m.lod.file); }
 for (const v of Object.values(manifest.volumes)) { keep.add(v.file); if (v.lut) keep.add(v.lut); }
 for (const l of Object.values(manifest.licenses)) keep.add(l.text);

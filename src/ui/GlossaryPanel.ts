@@ -1,6 +1,6 @@
 import type { App } from '../app.ts';
 import { h, clear, enTag } from './dom.ts';
-import { t } from '../i18n/index.ts';
+import { t, entriesOf } from '../i18n/index.ts';
 
 type Rec = Record<string, unknown>;
 
@@ -14,7 +14,7 @@ export class GlossaryPanel {
   show(id?: string): void {
     this.currentId = id;
     clear(this.container);
-    const g = this.app.content?.glossary ?? {};
+    const g = entriesOf(this.app, 'glossary');
     const terms = Object.values(g).map((x) => x as Rec).sort((a, b) => String(a['term']).localeCompare(String(b['term'])));
     const input = h('input', { type: 'search', class: 'search', placeholder: t('glossary.filter'), value: this.filter }) as HTMLInputElement;
     input.addEventListener('input', () => { this.filter = input.value; render(); });
@@ -24,7 +24,7 @@ export class GlossaryPanel {
       for (const term of terms) {
         if (f && !String(term['term']).toLowerCase().includes(f) && !String(term['definition']).toLowerCase().includes(f)) continue;
         const rel = (term['related'] as string[]) ?? [];
-        list.append(h('div', { class: 'gterm', id: String(term['id']) }, h('h3', {}, String(term['term'])), h('p', {}, enTag(), String(term['definition'])),
+        list.append(h('div', { class: 'gterm', id: String(term['id']) }, h('h3', {}, String(term['term'])), h('p', {}, enTag(term), String(term['definition'])),
           rel.length ? h('div', { class: 'chips' }, ...rel.map((r) => h('a', { class: 'chip', href: `#/glossary/${r}` }, String((g[r] as Rec | undefined)?.['term'] ?? r)))) : null));
       }
     };

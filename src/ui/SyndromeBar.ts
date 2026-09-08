@@ -1,6 +1,6 @@
 import type { App } from '../app.ts';
 import { h, clear, secondaryName } from './dom.ts';
-import { entryName, t, type NamedEntry } from '../i18n/index.ts';
+import { entryName, t, type NamedEntry, entryOf } from '../i18n/index.ts';
 import { setSyndromeStep, enterSyndrome } from '../state/syndrome.ts';
 
 type Rec = Record<string, unknown>;
@@ -14,7 +14,7 @@ export class SyndromeBar {
   render(): void {
     const s = this.app.store.get(); clear(this.el);
     if (!s.syndrome) { this.el.hidden = true; return; }
-    const syn = this.app.content?.syndromes[s.syndrome.id] as Rec | undefined; if (!syn) { this.el.hidden = true; return; }
+    const syn = entryOf(this.app, 'syndromes', s.syndrome.id); if (!syn) { this.el.hidden = true; return; }
     const deficits = (syn['deficits'] as Rec[]) ?? []; const step = s.syndrome.step; const d = deficits[step];
     const side = s.lesionSide ?? 'l';
     const bilateral = ['bilateral', 'midline'].includes(String((syn['localisation'] as Rec)['side']));

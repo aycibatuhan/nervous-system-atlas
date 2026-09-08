@@ -29,6 +29,8 @@ export interface App {
   /** PAM50 spinal levels on the cord grid; loaded next to the cord MRI, null until then */
   spine: SpineLabels | null;
   content: ContentBundle | null;
+  /** the Turkish bundle (public/data/content.tr.json): the same entries with their prose translated, fetched in Turkish mode */
+  contentTr: ContentBundle | null;
   lesion: THREE.Mesh;
 }
 
@@ -49,7 +51,7 @@ export function createApp(canvas: HTMLCanvasElement, manifest: Manifest): App {
   for (const s of Object.values(slices)) { sm.sliceRoot.add(s.mesh); s.setVisible(false); }
   const lesion = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 24), new THREE.MeshStandardMaterial({ color: 0xff3030, transparent: true, opacity: 0.45, depthWrite: false, emissive: 0x550000 }));
   lesion.visible = false; lesion.renderOrder = 20; sm.overlayRoot.add(lesion);
-  const app: App = { store, sm, manifest, labels: null, registry, picker: null as unknown as Picker, grid, cordGrid, grids, uniforms, slices, luts, spine: null, content: null, lesion };
+  const app: App = { store, sm, manifest, labels: null, registry, picker: null as unknown as Picker, grid, cordGrid, grids, uniforms, slices, luts, spine: null, content: null, contentTr: null, lesion };
   return app;
 }
 

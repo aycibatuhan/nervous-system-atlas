@@ -101,7 +101,12 @@ async function boot(): Promise<void> {
     else location.hash = `#/structure/${doc.id}`;
   }, app);
   // the locale lives in the store: setLocale tells us, every panel re-renders from its own subscription
-  onLocaleChange((l) => app.store.set({ locale: l }));
+  // the Turkish bundle (translated prose) is fetched the first time Turkish is wanted, before the panels re-render
+  async function ensureTr(): Promise<void> {
+    if (app.contentTr) return;
+    try { const r = await fetch('data/content.tr.json'); if (r.ok) app.contentTr = (await r.json()) as ContentBundle; } catch (e) { console.warn('no Turkish bundle', e); }
+  }
+  onLocaleChange((l) => { if (l === 'tr' && !app.contentTr) void ensureTr().then(() => app.store.set({ locale: l })); else app.store.set({ locale: l }); });
   app.store.subscribe((s) => s.locale, () => renderHelp());
   const hudEl = h('div', { class: 'hud' }); document.getElementById('viewport')!.append(hudEl);
   const progress = h('div', { class: 'progress' }); document.getElementById('viewport')!.append(progress);
@@ -203,6 +208,7 @@ async function boot(): Promise<void> {
     const r = await fetch('data/content.json');
     if (r.ok) { app.content = (await r.json()) as ContentBundle; app.store.set({ loaded: { ...app.store.get().loaded, content: true } }); toolbar.setCounts(manifest.meshes.length, Object.keys(app.content.structures).length); }
   } catch (e) { console.warn('no content bundle', e); }
+  if (getLocale() === 'tr') await ensureTr();
   void search.load('data/search-index.json', manifest.meshes.filter((m) => !app.content?.structures[m.structureId]).map((m) => ({ id: m.id, kind: 'mesh', name: m.name, aliases: [], summary: t('search.unauthored', { system: m.system, side: m.side }) })));
   bindRouter(app.store, {
     onRoute(route, params) {

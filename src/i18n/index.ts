@@ -1,4 +1,5 @@
 import type { App } from '../app.ts';
+import type { ContentBundle, ContentEntryBase } from '../types/content.ts';
 import { en } from './en.ts';
 import { tr } from './tr.ts';
 
@@ -92,6 +93,29 @@ export function entryName(e: NamedEntry | undefined | null, fallback = '', local
   const primary = e?.names?.tr ?? e?.latin ?? name;
   return { primary, secondary: name && name !== primary ? name : null };
 }
+
+export type EntryKind = 'structures' | 'pathways' | 'syndromes' | 'glossary' | 'quiz' | 'topics';
+export type Rec = ContentEntryBase & Record<string, unknown>;
+
+/** One content entry in the current language: the translated copy when the locale is Turkish and content.tr.json has it, else the English one. */
+export function entryOf(app: App, kind: EntryKind, id: string): Rec | undefined {
+  if (current === 'tr') { const tr = (app.contentTr?.[kind] as Record<string, Rec> | undefined)?.[id]; if (tr) return tr; }
+  return (app.content?.[kind] as Record<string, Rec> | undefined)?.[id];
+}
+
+/** Every entry of a kind in the current language (English entries stand in for the untranslated ones). */
+export function entriesOf(app: App, kind: EntryKind): Record<string, Rec> {
+  const base = (app.content?.[kind] as Record<string, Rec> | undefined) ?? {};
+  if (current !== 'tr' || !app.contentTr) return base;
+  const tr = (app.contentTr[kind] as Record<string, Rec> | undefined) ?? {};
+  const out: Record<string, Rec> = {};
+  for (const [id, e] of Object.entries(base)) out[id] = tr[id] ?? e;
+  return out;
+}
+
+/** True when this entry's prose is in the interface language (English mode, or a translated entry). */
+export function isTranslated(e: { lang?: string } | undefined | null): boolean { return current !== 'tr' || e?.lang === 'tr'; }
+export type { ContentBundle };
 
 /** Display name of a mesh: its content entry if it has one, otherwise the manifest label. */
 export function meshLabel(app: App, meshId: string): DisplayName {

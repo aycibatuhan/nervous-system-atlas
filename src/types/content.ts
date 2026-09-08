@@ -12,9 +12,13 @@ export interface LocalNames { tr?: string }
 export interface ContentEntryBase {
   kind: string; id: string; name: string; synonyms?: string[]; latin?: string; names?: LocalNames; synonymsByLang?: { tr?: string[] };
   summary?: string; citations: Citation[]; status?: string; html?: Record<string, string>;
+  /** 'tr' when the entry comes from the translated bundle */
+  lang?: string;
 }
 export interface ContentBundle {
   generated: string;
+  /** 'tr' on the translated bundle; entries in it carry `lang: 'tr'` too */
+  lang?: string;
   bibliography: Record<string, BibEntry>;
   structures: Record<string, ContentEntryBase & Record<string, unknown>>;
   pathways: Record<string, ContentEntryBase & Record<string, unknown>>;

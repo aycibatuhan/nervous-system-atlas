@@ -1,4 +1,4 @@
-import { getLocale, t, type DisplayName } from '../i18n/index.ts';
+import { getLocale, isTranslated, t, type DisplayName } from '../i18n/index.ts';
 
 type Child = Node | string | null | undefined | false;
 export function h<K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<string, unknown> = {}, ...children: Child[]): HTMLElementTagNameMap[K] {
@@ -17,9 +17,10 @@ export function h<K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<s
 }
 export function clear(el: Element): void { while (el.firstChild) el.removeChild(el.firstChild); }
 
-/** In Turkish mode, the pill that marks a prose block still shown in English. Null in English mode. */
-export function enTag(): HTMLElement | null {
-  return getLocale() === 'tr' ? h('span', { class: 'tag lang-en', title: t('tag.langEn.title') }, t('tag.langEn')) : null;
+/** In Turkish mode, the pill that marks a prose block still shown in English: null in English mode and for an entry that is translated. */
+export function enTag(entry?: { lang?: string } | null): HTMLElement | null {
+  if (getLocale() !== 'tr' || (entry && isTranslated(entry))) return null;
+  return h('span', { class: 'tag lang-en', title: t('tag.langEn.title') }, t('tag.langEn'));
 }
 
 /** The muted English name printed under a Latin/Turkish primary name (null when there is nothing to add). */
