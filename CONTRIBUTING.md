@@ -112,6 +112,8 @@ public by default on any machine, and the private edition is what you ask for:
 - `reference/` — the derived private text corpus and the API caches.
 - `pipeline/raw/`, `pipeline/work/` — downloads and intermediates.
 - `public/data/`, `dist/`, `dist-private/` — generated output.
+- `pipeline/qa/report.json` on `main` — the QA record of a *private* build. It carries no
+  geometry, only counts and gate results, so `private` keeps it; the public branch does not.
 
 Two guards enforce this; run both before you push, and definitely before a
 release:

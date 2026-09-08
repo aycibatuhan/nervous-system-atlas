@@ -1,6 +1,9 @@
 import { defineConfig, type Plugin } from 'vite';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+
+// The About panel names the version a build came from, so a bug report can say which one it is.
+const version = (JSON.parse(readFileSync(resolve(import.meta.dirname, 'package.json'), 'utf8')) as { version: string }).version;
 
 // The app always fetches data/manifest.json, data/content.json, data/search-index.json and data/content.tr.json.
 // In public/data/ those plain names are the PUBLIC edition, which is what `npm run dev` should serve — the
@@ -39,6 +42,7 @@ export default defineConfig({
   base: './',
   server: { fs: { strict: true } },
   build: { target: 'es2022', chunkSizeWarningLimit: 1500 },
+  define: { __APP_VERSION__: JSON.stringify(version) },
   assetsInclude: ['**/*.glb'],
   plugins: process.env['ATLAS_EDITION'] === 'private' ? [privateEdition()] : [],
 });

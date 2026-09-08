@@ -7,7 +7,7 @@
 //
 // It fails on:
 //   1. a tracked file under a path that must never be committed (source/, reference/, pipeline/raw/,
-//      pipeline/work/, public/data/, dist/, dist-private/, qa/shots/, blender/work/, pipeline/qa/report.json);
+//      pipeline/work/, public/data/, dist/, dist-private/, qa/shots/, blender/work/);
 //   2. a tracked binary or volumetric data file (.nii, .glb, .zip, .pdf, …), or any tracked file over
 //      MAX_BYTES that is not on the small, named allowlist;
 //   3. a restricted licence id or source id (read from pipeline/config/sources.yaml: any licence marked
@@ -17,7 +17,7 @@
 //   5. a trace of the private book corpus: its page markers, or the pre-migration `{"book": …, "pages": …}`
 //      citation records that named a printed textbook;
 //   6. (public branch only) a restricted dataset sitting in a default `atlas-download` group, which would
-//      make a plain pipeline run build the private edition.
+//      make a plain pipeline run build the private edition, and a committed QA record of a private build.
 //
 // One deliberate, reported exception. The authored content in content/ is shared by both editions and
 // legitimately names mesh ids from both — a gyrus entry lists its Harvard-Oxford mesh and its CerebrA
@@ -45,11 +45,12 @@ const FORBIDDEN_PREFIX = [
   'source/', 'reference/', 'pipeline/raw/', 'pipeline/work/', 'public/data/', 'dist/', 'dist-private/',
   'qa/shots/', 'blender/work/', 'node_modules/', 'test-results/', 'playwright-report/',
 ];
-const FORBIDDEN_FILE = ['pipeline/qa/report.json'];
+// Generated records of a private build. They carry no geometry, only counts, gates and ids, so the private
+// branch is welcome to keep them; they simply have no business on the public one.
+const PRIVATE_BUILD_FILE = ['pipeline/qa/report.json'];
 for (const f of tracked) {
   const p = FORBIDDEN_PREFIX.find((x) => f.startsWith(x));
   if (p) bad(`${f} is tracked, but ${p} must never be committed (private material or generated data)`);
-  if (FORBIDDEN_FILE.includes(f)) bad(`${f} is tracked, but it is a generated report of a private build`);
 }
 
 // ---- 2. binaries and oversized files
@@ -166,13 +167,16 @@ const branch = (() => {
 })();
 const publicBranch = branch !== 'private';
 if (publicBranch) {
+  for (const f of tracked) {
+    if (PRIVATE_BUILD_FILE.includes(f)) bad(`${f} is tracked, but it is a generated QA record of a private build (it belongs on the private branch)`);
+  }
   for (const s of sources) {
     if (DEFAULT_GROUPS.has(s.group) && restrictedLicences.has(s.license)) {
       bad(`pipeline/config/sources.yaml puts the restricted source "${s.id}" (${s.license}) in the default download group "${s.group}" — a plain \`atlas-download\` would build the private edition`);
     }
   }
 } else {
-  note.push('branch "private": the default-download-group rule is not applied here');
+  note.push('branch "private": the default-download-group rule and the private-build-record rule are not applied here');
 }
 
 // ---- report

@@ -100,13 +100,30 @@ build's own validation and the pipeline's `atlas-qa` gates.
 
 Late fixes made while preparing this release:
 
-- `characteriztic` misspelling corrected in three syndromes and two topics.
-- Wallenberg syndrome: the palate and uvula deficit wording corrected against the cited
-  sources.
-- Connection `from` and `to` values are rendered as entry names instead of raw ids.
-- The toolbar search box no longer collapses at narrow window widths.
-- Turkish mode carries a visible notice that the clinical prose is machine-assisted and
-  under review.
+- `characteriztic` misspelling corrected in the 27 entries that carried it (7 structures, a
+  pathway, 11 syndromes, 5 topics, 3 glossary terms), with the Turkish overlays re-pinned to
+  the new English source hashes.
+- Wallenberg syndrome said the palate "droops to the intact side", which reverses the sign.
+  The nucleus ambiguus is ipsilateral, so the palate sags on the side of the lesion and the
+  uvula is pulled to the intact side, as the cited StatPearls chapters and every other entry
+  in the atlas already had it. Corrected in English and Turkish.
+- Connection `from`, `to` and `via` values are rendered as named cross-links instead of raw
+  entry ids, in both languages.
+- The toolbar no longer wraps buttons onto a clipped second row: the search box had
+  collapsed to a few pixels at 1400px and whole buttons disappeared in Turkish. It now sheds
+  the subtitle, the counts, the screenshot button and finally the camera presets as the
+  window narrows, and the search input never drops below 200px.
+- Turkish mode carries a dismissible notice, repeated in the About panel, that the clinical
+  prose is machine-assisted and under specialist review.
+- The deficits table is laid out with fixed columns, so its substrate column no longer
+  overflows the 420px panel and is cut off; the syndrome bar's step text has a flex basis,
+  so the bar is a bar rather than a tall narrow column over the scene.
+- Following a link to a structure from the topic, glossary, quiz or About panel now leaves
+  that panel, even when the structure was already the selected one.
+- A label table naming a mesh the loaded edition does not ship no longer throws while the
+  overlay LUTs are rebuilt.
+- The About panel says where a source with no download URL came from (built by this
+  pipeline, or read live from an API) instead of showing no provenance at all.
 
 ## Development history
 

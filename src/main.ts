@@ -238,6 +238,14 @@ async function boot(): Promise<void> {
       if (app.store.get().syndrome) { exitSyndrome(app); showPanel('main'); }
       if (route.kind === 'pathway') { showPathway(route.id); return; }
       showPathway(null);
+      // Leaving the topic, glossary, quiz or about panel for a structure or the plain view. The selectedId
+      // subscription below does this too, but only when the selection actually changes: opening a structure,
+      // reading About and following a link back to that same structure would otherwise leave About on screen
+      // (and the router would then keep rewriting the hash back to #/about).
+      if ((route.kind === 'structure' || route.kind === 'slice' || route.kind === 'home') && app.store.get().panel) {
+        app.store.set({ panel: null });
+        showPanel('main');
+      }
       if (route.kind === 'structure') {
         // route ids may be structure ids or mesh ids
         const meshId = app.registry.byId.has(route.id) ? route.id : (app.manifest.meshes.find((m) => m.structureId === route.id)?.id ?? null);

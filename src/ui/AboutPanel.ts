@@ -59,7 +59,8 @@ export class AboutPanel {
     this.container.append(h('div', {},
       h('div', { class: 'content-head' }, h('span', { class: 'swatch big', style: 'background:#c8a24a' }),
         h('div', {}, h('h2', {}, t('about.title')),
-          h('div', { class: 'crumbs' }, t('brand.title') + ' · ', h('span', { class: `tag edition-${edition}`, id: 'about-edition' }, t(edition === 'public' ? 'about.edition.public' : 'about.edition.private')),
+          h('div', { class: 'crumbs' }, t('brand.title') + ' · ', h('span', { id: 'about-version' }, `v${__APP_VERSION__}`), ' · ',
+            h('span', { class: `tag edition-${edition}`, id: 'about-edition' }, t(edition === 'public' ? 'about.edition.public' : 'about.edition.private')),
             t('about.counts', { meshes: man.meshes.length, sources: sourceIds.length })))),
 
       h('p', { class: 'prose disclaimer', id: 'about-disclaimer' }, h('b', {}, t('about.disclaimer.lead')), t('about.disclaimer.body')),
