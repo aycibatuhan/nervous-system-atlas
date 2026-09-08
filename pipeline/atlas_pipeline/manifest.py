@@ -288,10 +288,22 @@ def _args(argv) -> argparse.Namespace:
 def main(argv=None) -> None:
     args = _args(argv)
     meshes = json.loads((WORK / "meshes.json").read_text())
+    cfg = load_sources()
+    # Which edition is this build? Not a setting: it is whether any restricted data was built at all. On the
+    # public branch the restricted sources are not in a default download group, so nothing derived from them
+    # exists and this is a public build; add them (atlas-download --with restricted, plus the manual Brainstem
+    # Navigator step) and it becomes a private one.
+    def _restricted(lic: str) -> bool:
+        rec = cfg["licenses"].get(lic, {})
+        return bool(rec.get("nc") or rec.get("no_redistribution"))
+    src_license = {s["id"]: s["license"] for s in cfg["sources"]}
+    built_restricted = sorted({src_license.get(m["source"], "") for m in meshes
+                               if _restricted(src_license.get(m["source"], ""))})
     # A mesh recorded with edition "public" only exists because the private edition's source may not be
     # redistributed (the CerebrA cortex stands in for Harvard-Oxford): it ships in the public edition and
     # is left out of the private one, where the original parcellation is there instead.
-    meshes = [m for m in meshes if args.public or m.get("edition") != "public"]
+    public_build = args.public or not built_restricted
+    meshes = [m for m in meshes if public_build or m.get("edition") != "public"]
     labels = json.loads((VOLUMES / "labels.json").read_text())
     volume = json.loads((VOLUMES / "volume.json").read_text())
     # the cord MRI (atlas-pam50) lives on its own grid off the 193x229x193 brain box, so it ships as a second
@@ -300,7 +312,6 @@ def main(argv=None) -> None:
     cord = json.loads(cord_path.read_text()) if cord_path.exists() else None
     if cord and "labels_spine" in cord["contrasts"] and (VOLUMES / "labels_spine.json").exists():
         cord["contrasts"]["labels_spine"]["lut"] = "volumes/labels_spine.json"   # spinal-level LUT (atlas-pam50)
-    cfg = load_sources()
     # the data folder carries its own licence (CC BY-SA 4.0 + what it covers and how the sources were changed)
     shutil.copyfile(CONFIG / "data_LICENSE.txt", OUT / "LICENSE")
     lock = load_lock()
@@ -325,10 +336,12 @@ def main(argv=None) -> None:
             **({"derived": m["derived"]} if m.get("derived") else {}),
             **({"edition": m["edition"]} if m.get("edition") else {}),
         })
-    # "private" as soon as anything that may not be redistributed is in the build (Brainstem Navigator meshes,
-    # the PAM50 cord MRI); a build without them can be shared, and the About panel says which edition this is.
-    restricted = {m["license"] for m in out_meshes if cfg["licenses"][m["license"]].get("no_redistribution")}
-    if cord and cfg["licenses"].get(cord.get("license"), {}).get("no_redistribution"):
+    # "private" as soon as anything that may not be redistributed under CC BY-SA 4.0 is in the build -- a
+    # non-commercial atlas (Harvard-Oxford, Diedrichsen) as much as one whose licence forbids passing derived
+    # files on (Brainstem Navigator, the PAM50 cord MRI). That is the same rule filter_public() applies, so a
+    # manifest labelled "public" is one filter_public() would not have to change. The About panel shows it.
+    restricted = {m["license"] for m in out_meshes if _restricted(m["license"])}
+    if cord and _restricted(cord.get("license", "")):
         restricted.add(cord["license"])
     manifest = {
         "schema": 1, "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "space": "MNI152NLin2009cAsym",

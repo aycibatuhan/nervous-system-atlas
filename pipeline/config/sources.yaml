@@ -1,6 +1,12 @@
 # Every external dataset the pipeline uses. `atlas-download` streams each file into raw/<id>/,
 # verifies/records sha256 in sources.lock.yaml, and copies the licence text alongside.
-# groups: core (always), bp3d, tracts, vessels, warp, zanatomy, spine, public-parcellations, manual
+# groups: core (the default: everything the public edition needs), bp3d, tracts, vessels, warp, zanatomy,
+#         spine-open, public-parcellations, brainstem-open, terms, and `restricted`.
+# `restricted` holds the four datasets whose licence is non-commercial or forbids redistribution
+# (harvard_oxford, diedrichsen_cerebellum, pam50, brainstem_navigator). They are NOT downloaded by
+# default: they need `atlas-download --with restricted` and belong to the private edition only, which
+# is why the public branch's tree guard (scripts/check-tree.ts) fails if one of them is put back into a
+# default group. brainstem_navigator additionally needs a manual NITRC download (`manual: true`).
 templateflow_base: &tf https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/
 templateflow_nlin6: &tf6 https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/
 templateflow_sym: &tfsym https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cSym/
@@ -89,7 +95,7 @@ sources:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz]
   - id: harvard_oxford
     name: "Harvard-Oxford cortical and subcortical structural atlases"
-    group: core
+    group: restricted
     license: FSL-NC
     citation: "Desikan RS et al. 2006; Makris N et al. 2006; Frazier JA et al. 2005; Goldstein JM et al. 2007 (Harvard-Oxford atlases, FSL)."
     files:
@@ -156,7 +162,7 @@ sources:
         dest: ArterialAtlasLabels.txt
   - id: diedrichsen_cerebellum
     name: "Probabilistic MR atlas of the human cerebellum"
-    group: core
+    group: restricted
     license: CC-BY-NC-3.0
     citation: "Diedrichsen J et al. A probabilistic MR atlas of the human cerebellum. NeuroImage 2009."
     files:
@@ -270,7 +276,7 @@ sources:
   # ---------------- spinal cord template ----------------
   - id: pam50
     name: "PAM50 brainstem and spinal cord template"
-    group: spine
+    group: restricted
     license: PAM50-unlicensed
     citation: "De Leener B, Fonov VS, Collins DL, Callot V, Stikov N, Cohen-Adad J. PAM50: Unbiased multimodal
       template of the brainstem and spinal cord aligned with the ICBM152 space. NeuroImage 2018;165:170-179.
@@ -505,7 +511,7 @@ sources:
         dest: AAN_Brainstem_v2p0_Color_LUT_FreeSurfer.txt
   - id: brainstem_navigator
     name: "Brainstem Navigator v1.0 (in vivo 7 T brainstem nuclei)"
-    group: manual
+    group: restricted
     license: BrainstemNavigator-NC-ND
     citation: "Bianciardi M et al. Brainstem Navigator (NITRC). Manual download required (click-through agreement)."
     manual: true

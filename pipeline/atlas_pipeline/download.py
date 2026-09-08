@@ -1,9 +1,17 @@
-"""Step 01: download every dataset in config/sources.yaml with sha256 locking."""
+"""Step 01: download every dataset in config/sources.yaml with sha256 locking.
+
+The `restricted` group -- the four datasets whose licence is non-commercial or forbids passing derived files
+on -- belongs to the private edition. It is never in the default set, and it is only fetched on the `private`
+branch or with ATLAS_ALLOW_RESTRICTED=1, so a plain checkout of the public branch cannot quietly build data
+it may not redistribute.
+"""
 from __future__ import annotations
 
 import hashlib
 import json
+import os
 import shutil
+import subprocess
 import sys
 import zipfile
 from datetime import datetime, timezone
@@ -74,10 +82,34 @@ def fetch(url: str, dest: Path, client: httpx.Client) -> None:
     tmp.rename(dest)
 
 
+RESTRICTED_GROUP = "restricted"
+
+
+def restricted_allowed() -> bool:
+    """The restricted datasets are for the private edition: the private branch, or an explicit opt-in."""
+    if os.environ.get("ATLAS_ALLOW_RESTRICTED") == "1":
+        return True
+    try:
+        branch = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=CONFIG.parents[1],
+                                capture_output=True, text=True, check=True).stdout.strip()
+    except Exception:                                          # noqa: BLE001 - not a git checkout
+        return False
+    return branch == "private"
+
+
 def run(groups: set[str] | None = None, strict: bool = True) -> int:
     cfg = load_sources()
     lock = load_lock()
     groups = groups or {"core"}
+    if (RESTRICTED_GROUP in groups or "all" in groups) and not restricted_allowed():
+        ids = [s["id"] for s in cfg["sources"] if s["group"] == RESTRICTED_GROUP]
+        msg = (f"the {RESTRICTED_GROUP} group ({', '.join(ids)}) is the private edition's data: its licences are "
+               "non-commercial or forbid passing derived files on, so it may not be built on the public branch. "
+               "Switch to the private branch, or set ATLAS_ALLOW_RESTRICTED=1 if you know what you are doing.")
+        if RESTRICTED_GROUP in groups:
+            sys.exit(f"[restricted] {msg}")
+        print(f"[restricted] skipping: {msg}")
+        groups = groups - {"all"} | {s["group"] for s in cfg["sources"] if s["group"] != RESTRICTED_GROUP}
     failures = 0
     with httpx.Client(headers={"User-Agent": "nervous-system-atlas-pipeline/0.1"}) as client:
         for src in cfg["sources"]:
@@ -149,7 +181,7 @@ def run(groups: set[str] | None = None, strict: bool = True) -> int:
 def main(argv: list[str] | None = None) -> None:
     import argparse
     ap = argparse.ArgumentParser(description="Download atlas sources")
-    ap.add_argument("--with", dest="groups", default="core", help="comma list of groups: core,bp3d,vessels,warp,zanatomy,manual,all")
+    ap.add_argument("--with", dest="groups", default="core", help="comma list of groups: core (default),bp3d,vessels,warp,zanatomy,spine-open,public-parcellations,brainstem-open,restricted,all. `restricted` is the non-redistributable data of the private edition and is never in the default set.")
     ap.add_argument("--no-strict", action="store_true", help="update lock on hash mismatch instead of failing")
     a = ap.parse_args(argv)
     n = run(set(a.groups.split(",")), strict=not a.no_strict)

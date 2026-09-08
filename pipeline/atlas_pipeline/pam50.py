@@ -81,7 +81,7 @@ def pam50_dir() -> Path:
     """The unpacked release directory (pipeline/raw/pam50/spinalcordtoolbox-PAM50-<sha>/)."""
     for p in sorted(PAM50_ROOT.glob("*/template")):
         return p.parent
-    raise SystemExit(f"PAM50 not unpacked under {PAM50_ROOT}; run atlas-download --with spine")
+    raise SystemExit(f"PAM50 not unpacked under {PAM50_ROOT}; run atlas-download --with restricted")
 
 
 def pam(name: str):

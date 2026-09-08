@@ -11,6 +11,8 @@
     "build:public": "node scripts/build-public.ts",
     "content:public": "node scripts/content/build.ts --public",
     "check-public": "node scripts/check-public.ts",
+    "check-tree": "node scripts/check-tree.ts",
+    "hooks:install": "git config core.hooksPath .githooks",
     "preview": "vite preview --port 5173 --strictPort",
     "content": "node scripts/content/build.ts",
     "content:validate": "node scripts/content/build.ts --validate-only",

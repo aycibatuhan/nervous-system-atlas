@@ -1,0 +1,5 @@
+#!/bin/sh
+# Repository guard, installed with `npm run hooks:install` (git config core.hooksPath .githooks).
+# Refuses a commit that would put private material, generated data or a restricted dataset into the tree.
+# It reads the git index, so it sees exactly what is about to be committed.
+exec node "$(git rev-parse --show-toplevel)/scripts/check-tree.ts"
