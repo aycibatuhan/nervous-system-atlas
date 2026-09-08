@@ -79,7 +79,7 @@ export class PathwayPanel {
         ...(p['lesionEffectsByLevel'] as Rec[]).map((x) => h('tr', {}, h('td', {}, String(x['level'])), h('td', {}, String(x['effects'])), h('td', {}, String(x['side']))))),
       h('h3', {}, enTag(this.current), t('pathway.pearls')), h('ul', {}, ...((p['clinical'] as Rec)['pearls'] as string[]).map((x) => h('li', {}, x))),
       ((p['clinical'] as Rec)['syndromes'] as string[]).length ? h('div', {}, h('h3', {}, t('pathway.syndromes')), h('div', { class: 'chips' }, ...((p['clinical'] as Rec)['syndromes'] as string[]).map((sid) => chip(sid)))) : null,
-      h('h3', {}, t('pathway.sources')), h('ul', {}, ...(p['citations'] as Rec[]).map((c) => h('li', {}, this.cite(c as unknown as Citation)))),
+      h('h3', {}, t('pathway.sources')), h('ul', {}, ...(p['citations'] as unknown as Citation[]).map((c) => h('li', {}, this.cite(c)))),
     ));
   }
 }
