@@ -298,7 +298,10 @@ async function boot(): Promise<void> {
 }
 
 function meshVisible(app: App, id: string): boolean {
-  const s = app.store.get(); const m = app.registry.byId.get(id)!;
+  const s = app.store.get(); const m = app.registry.byId.get(id);
+  // A label table can name a mesh this edition does not ship (public/data/ holds whatever the pipeline built,
+  // and the label volumes are only filtered when the edition is packaged), so an unknown id is simply not shown.
+  if (!m) return false;
   if (!s.showNc && m.nc) return false;
   if (s.hiddenStructures.has(id)) return false;
   if (s.shownStructures.has(id)) return true;

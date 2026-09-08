@@ -28,7 +28,7 @@ export class ContentPanel {
     app.store.subscribe((s) => s.contentTab, () => this.render());
     app.store.subscribe((s) => s.loaded.content, () => this.render());
     app.store.subscribe((s) => s.locale, () => this.render());
-    app.store.subscribe((s) => s.hoverId, (id) => { const el = this.body.querySelector('.hover-name'); if (el) el.textContent = id ? meshLabel(app, id).primary : ''; });
+    app.store.subscribe((s) => s.hoverId, (id) => { const el = this.body.querySelector('.hover-line'); if (!el) return; const name = id ? meshLabel(app, id).primary : ''; el.querySelector('.hover-name')!.textContent = name; (el as HTMLElement).hidden = !name; });
   }
 
   private html(s: unknown): HTMLElement {
@@ -83,7 +83,7 @@ export class ContentPanel {
     if (!mesh && !entry) {
       this.body.append(h('div', { class: 'empty' }, h('h2', {}, t('content.empty.title')),
         h('p', {}, t('content.empty.body')),
-        h('p', { class: 'muted' }, t('content.hover'), h('span', { class: 'hover-name' }))));
+        h('p', { class: 'muted hover-line', hidden: true }, t('content.hover'), h('span', { class: 'hover-name' }))));
       return;
     }
     const crumbs = mesh ? `${mesh.system}${mesh.subsystem ? ' › ' + mesh.subsystem : ''} · ${mesh.side}` : String(entry!['system'] ?? '');
@@ -104,7 +104,7 @@ export class ContentPanel {
       this.body.append(h('p', { class: 'muted' }, t('content.noContent.before'), h('code', {}, sid ?? ''), t('content.noContent.after')),
         h('dl', { class: 'facts' }, h('dt', {}, t('content.facts.centroid')), h('dd', {}, mesh!.centroid.map((v) => v.toFixed(0)).join(', ')),
           h('dt', {}, t('content.facts.source')), h('dd', {}, `${mesh!.source} · ${mesh!.alignment}`), h('dt', {}, t('content.facts.licence')), h('dd', {}, lic ? h('a', { href: lic.url, target: '_blank' }, lic.name) : mesh!.license)),
-        h('p', { class: 'muted' }, t('content.hover'), h('span', { class: 'hover-name' })));
+        h('p', { class: 'muted hover-line', hidden: true }, t('content.hover'), h('span', { class: 'hover-name' })));
       return;
     }
     const tabs = h('div', { class: 'tabs' }, ...TABS.map((tab) => h('button', { class: tab.id === s.contentTab ? 'active' : '', onclick: () => this.app.store.set({ contentTab: tab.id }) }, t(tab.label))));
@@ -181,6 +181,6 @@ export class ContentPanel {
           h('p', { class: 'muted small' }, t('content.citations.note')));
         break;
     }
-    this.body.append(sec, h('p', { class: 'muted small' }, t('content.hover'), h('span', { class: 'hover-name' })));
+    this.body.append(sec, h('p', { class: 'muted small hover-line', hidden: true }, t('content.hover'), h('span', { class: 'hover-name' })));
   }
 }

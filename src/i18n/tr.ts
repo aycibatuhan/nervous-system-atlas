@@ -294,6 +294,8 @@ export const tr: Record<keyof typeof en, string> = {
   'about.th.dataset': 'Veri kümesi ve atıf',
   'about.th.licence': 'Lisans',
   'about.th.meshes': 'Mesh',
+  'about.builtHere': 'İndirilmedi; bu işlem hattında üretildi.',
+  'about.fromApi': '{api} adresinden canlı olarak okundu.',
   'about.download': 'indir',
   'about.manual': ' (elle indirilir)',
   'about.excluded': 'açık sürüme alınmadı',

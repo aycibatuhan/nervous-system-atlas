@@ -1,6 +1,6 @@
 // Reference views of the PUBLIC edition's spinal cord MRI (atlas-cord-public: the spine-generic template handing
 // over to the Fudan whole-spine template) into qa/shots/public-cord-mri/.
-// Serve the built public edition first:  npx vite preview --outDir dist-public --port 5183
+// Serve the built public edition first:  npx vite preview --outDir dist --port 5183
 // Usage:                                 node scripts/shots-public-cord.mjs [port]
 //
 // The private counterpart is scripts/shots-cord.mjs; this one proves the same thing for the edition that may

@@ -5,7 +5,7 @@
 // has none. The script asserts that before it shoots anything.
 //
 //   node scripts/build-public.ts
-//   npx vite preview --outDir dist-public --port 5183
+//   npx vite preview --outDir dist --port 5183
 //   node scripts/shots-public-cerebellum.mjs [baseURL]
 //
 // What is on screen is our own derivative: FastSurfer's CerebNet run on the MNI152NLin2009cAsym template

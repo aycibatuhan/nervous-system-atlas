@@ -1,9 +1,18 @@
-"""Step 08: public/data/manifest.json (private edition) and public/data/manifest.public.json (--public)."""
+"""Step 08: the manifests in public/data/.
+
+    manifest.json            the PUBLIC edition -- everything in this build that may be redistributed under
+                             CC BY-SA 4.0. Always written, on every machine, so the plain name is always the
+                             shareable one and a plain `npm run dev` / `npm run build` cannot leak.
+    manifest.exclusions.json what was left out of it, with the reason (empty on a machine that has no
+                             restricted data at all).
+    manifest.private.json    the FULL edition, written only when restricted data was actually built: the
+                             non-commercial parcellations, the Brainstem Navigator nuclei and the PAM50 cord
+                             MRI, together with everything else. It is the private branch's build.
+"""
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -166,6 +175,10 @@ def source_record(s: dict, lock: dict) -> dict:
             "url": (s["files"][0]["url"] if s.get("files") else ""),
             "urls": [d["url"] for d in s.get("files", [])],
             "manual": bool(s.get("manual", False)),
+            # produced on this machine (fastsurfer_cerebellum) or read live from an API (the terminology
+            # sources): there is no file to download, and the About panel says so instead of showing no link
+            "generated": bool(s.get("generated", False)),
+            "api": s.get("api", ""),
             "files": {f: lock.get(f"{s['id']}/{f}", {}).get("sha256")
                       for f in [d.get("dest") or d["url"].rsplit("/", 1)[-1] for d in s.get("files", [])]}}
 
@@ -277,17 +290,14 @@ def verify_public(public: dict, exclusions: dict) -> list[str]:
 
 def _args(argv) -> argparse.Namespace:
     ap = argparse.ArgumentParser(prog="atlas-manifest", description=__doc__)
-    ap.add_argument("--public", action="store_true",
-                    help="write the redistributable public edition to manifest.public.json instead of manifest.json")
+    # There is no --public any more: which editions this writes is decided by what was built, never by a flag.
     a = ap.parse_args(sys.argv[1:] if argv is None else argv)
-    if os.environ.get("ATLAS_EDITION") == "public":
-        a.public = True
     return a
 
 
 def main(argv=None) -> None:
-    args = _args(argv)
-    meshes = json.loads((WORK / "meshes.json").read_text())
+    _args(argv)
+    all_meshes = json.loads((WORK / "meshes.json").read_text())
     cfg = load_sources()
     # Which edition is this build? Not a setting: it is whether any restricted data was built at all. On the
     # public branch the restricted sources are not in a default download group, so nothing derived from them
@@ -297,13 +307,12 @@ def main(argv=None) -> None:
         rec = cfg["licenses"].get(lic, {})
         return bool(rec.get("nc") or rec.get("no_redistribution"))
     src_license = {s["id"]: s["license"] for s in cfg["sources"]}
-    built_restricted = sorted({src_license.get(m["source"], "") for m in meshes
+    built_restricted = sorted({src_license.get(m["source"], "") for m in all_meshes
                                if _restricted(src_license.get(m["source"], ""))})
     # A mesh recorded with edition "public" only exists because the private edition's source may not be
     # redistributed (the CerebrA cortex stands in for Harvard-Oxford): it ships in the public edition and
     # is left out of the private one, where the original parcellation is there instead.
-    public_build = args.public or not built_restricted
-    meshes = [m for m in meshes if public_build or m.get("edition") != "public"]
+    private_meshes = [m for m in all_meshes if m.get("edition") != "public"]
     labels = json.loads((VOLUMES / "labels.json").read_text())
     volume = json.loads((VOLUMES / "volume.json").read_text())
     # the cord MRI (atlas-pam50) lives on its own grid off the 193x229x193 brain box, so it ships as a second
@@ -322,78 +331,92 @@ def main(argv=None) -> None:
         t = json.loads(p.read_text()); transforms["bp3d_to_mni"] = {k: t[k] for k in ("method", "matrix", "metrics") if k in t}
     order = {s[0]: i for i, s in enumerate(catalog.SYSTEMS)}
     pal = palette()
-    out_meshes = []
-    for m in sorted(meshes, key=lambda m: (order.get(m["system"], 99), m["subsystem"] or "", m["name"])):
-        lic = cfg["sources"] and next((s["license"] for s in cfg["sources"] if s["id"] == m["source"]), "MNI")
-        look = pal.get(m["id"], {"colour": m["colour"], "opacity": m["opacity"]})
-        out_meshes.append({
-            "id": m["id"], "structureId": look.get("structureId", m["structureId"]), "name": m["name"], "system": m["system"], "subsystem": m["subsystem"],
-            "side": m["side"], "source": m["source"], "license": lic, "nc": bool(cfg["licenses"][lic].get("nc", False)),
-            "alignment": m["alignment"], "file": m["file"], "bytes": m["bytes"], "triangles": m["triangles"], "compression": "meshopt",
-            "colour": look["colour"], "opacity": look["opacity"], "visible": m["visible"], "bbox": m["bbox"], "centroid": m["centroid"],
-            "labels": by_mesh.get(m["id"], {}), "ontology": {k: v for k, v in (("atlasLabels", m.get("atlasLabels")),) if v},
-            **({"lod": m["lod"]} if m.get("lod") else {}),
-            **({"derived": m["derived"]} if m.get("derived") else {}),
-            **({"edition": m["edition"]} if m.get("edition") else {}),
-        })
-    # "private" as soon as anything that may not be redistributed under CC BY-SA 4.0 is in the build -- a
-    # non-commercial atlas (Harvard-Oxford, Diedrichsen) as much as one whose licence forbids passing derived
-    # files on (Brainstem Navigator, the PAM50 cord MRI). That is the same rule filter_public() applies, so a
-    # manifest labelled "public" is one filter_public() would not have to change. The About panel shows it.
-    restricted = {m["license"] for m in out_meshes if _restricted(m["license"])}
-    if cord and _restricted(cord.get("license", "")):
-        restricted.add(cord["license"])
-    manifest = {
-        "schema": 1, "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "space": "MNI152NLin2009cAsym",
-        "edition": "private" if restricted else "public",
-        "grid": {"shape": volume["shape"], "spacing": volume["spacing"], "origin_ras": volume["origin_ras"], "affine_ras": volume["affine_ras"]},
-        "volumes": {**volume["contrasts"], **{k: {**v, "lut": "volumes/labels.json"} for k, v in labels["volumes"].items()},
-                    **(cord["contrasts"] if cord else {})},
-        "grids": {"cord": {k: cord[k] for k in ("shape", "spacing", "origin_ras", "affine_ras", "source", "license", "reformat")}} if cord else {},
-        "transforms": transforms,
-        "systems": [{"id": s[0], "name": s[1], "colour": s[2], "defaultVisible": s[3]} for s in catalog.SYSTEMS],
-        "licenses": {k: {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""), "nc": bool(v.get("nc", False)), "noRedistribution": bool(v.get("no_redistribution", False)),
-                         "text": f"licenses/{k}.txt"} for k, v in cfg["licenses"].items()},
-        # every shipped source with the attribution the About panel and NOTICE need: dataset name, citation,
-        # licence id and the download URLs the files actually came from (url = the dataset's landing/first URL).
-        "sources": {s["id"]: source_record(s, lock)
-                    for s in cfg["sources"] if any(m["source"] == s["id"] for m in meshes) or s["id"] == "mni_t1w"
-                    or (cord is not None and s["id"] == cord.get("source"))},
-        "meshes": out_meshes,
-    }
-    if args.public:
-        public, exclusions = filter_public(manifest)
-        # the cord MRI the public edition may actually ship, in the slot the PAM50 one has just left
-        pub_cord = public_cord()
-        if pub_cord:
-            swap_public_cord(public, exclusions, pub_cord, cfg, lock)
-        bad = verify_public(public, exclusions)
-        if bad:
-            for b in bad:
-                print(f"manifest --public: {b}", file=sys.stderr)
-            raise SystemExit(f"manifest --public: {len(bad)} restricted item(s) left in the public manifest")
-        (OUT / "manifest.public.json").write_text(json.dumps(public, indent=1))
-        (OUT / "manifest.public.exclusions.json").write_text(json.dumps(exclusions, indent=1))
-        t = exclusions["totals"]
-        print(f"manifest --public: dropped {t['meshes']} meshes ({t['meshBytes']/1e6:.1f} MB), {t['volumes']} volumes "
-              f"({t['volumeBytes']/1e6:.1f} MB), {t['grids']} grid(s), {t['licenses']} licences, {t['sources']} sources "
-              f"-> {OUT / 'manifest.public.exclusions.json'}")
-        if pub_cord:
-            g = public["grids"]["cord"]
-            print(f"manifest --public: + cord volumes {sorted(pub_cord['contrasts'])} on a {g['shape']} grid at "
-                  f"{g['spacing'][0]} mm from source {g['source']} ({g['license']}), covering "
-                  f"{'-'.join(pub_cord['coverage']['spinal_levels'][::max(len(pub_cord['coverage']['spinal_levels']) - 1, 1)])}")
-        print(f"manifest --public: {t['meshesKept']} meshes ({t['meshBytesKept']/1e6:.1f} MB), "
-              f"{len(public['volumes'])} volumes, {len(public['licenses'])} licences, {len(public['sources'])} sources "
-              f"-> {OUT / 'manifest.public.json'}")
+    def build(meshes: list[dict]) -> tuple[dict, list[dict]]:
+        """A complete manifest over exactly this mesh list."""
+        out_meshes = []
+        for m in sorted(meshes, key=lambda m: (order.get(m["system"], 99), m["subsystem"] or "", m["name"])):
+            lic = cfg["sources"] and next((s["license"] for s in cfg["sources"] if s["id"] == m["source"]), "MNI")
+            look = pal.get(m["id"], {"colour": m["colour"], "opacity": m["opacity"]})
+            out_meshes.append({
+                "id": m["id"], "structureId": look.get("structureId", m["structureId"]), "name": m["name"], "system": m["system"], "subsystem": m["subsystem"],
+                "side": m["side"], "source": m["source"], "license": lic, "nc": bool(cfg["licenses"][lic].get("nc", False)),
+                "alignment": m["alignment"], "file": m["file"], "bytes": m["bytes"], "triangles": m["triangles"], "compression": "meshopt",
+                "colour": look["colour"], "opacity": look["opacity"], "visible": m["visible"], "bbox": m["bbox"], "centroid": m["centroid"],
+                "labels": by_mesh.get(m["id"], {}), "ontology": {k: v for k, v in (("atlasLabels", m.get("atlasLabels")),) if v},
+                **({"lod": m["lod"]} if m.get("lod") else {}),
+                **({"derived": m["derived"]} if m.get("derived") else {}),
+                **({"edition": m["edition"]} if m.get("edition") else {}),
+            })
+        # "private" as soon as anything that may not be redistributed under CC BY-SA 4.0 is in the build -- a
+        # non-commercial atlas (Harvard-Oxford, Diedrichsen) as much as one whose licence forbids passing derived
+        # files on (Brainstem Navigator, the PAM50 cord MRI). That is the same rule filter_public() applies, so a
+        # manifest labelled "public" is one filter_public() would not have to change. The About panel shows it.
+        restricted = {m["license"] for m in out_meshes if _restricted(m["license"])}
+        if cord and _restricted(cord.get("license", "")):
+            restricted.add(cord["license"])
+        manifest = {
+            "schema": 1, "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "space": "MNI152NLin2009cAsym",
+            "edition": "private" if restricted else "public",
+            "grid": {"shape": volume["shape"], "spacing": volume["spacing"], "origin_ras": volume["origin_ras"], "affine_ras": volume["affine_ras"]},
+            "volumes": {**volume["contrasts"], **{k: {**v, "lut": "volumes/labels.json"} for k, v in labels["volumes"].items()},
+                        **(cord["contrasts"] if cord else {})},
+            "grids": {"cord": {k: cord[k] for k in ("shape", "spacing", "origin_ras", "affine_ras", "source", "license", "reformat")}} if cord else {},
+            "transforms": transforms,
+            "systems": [{"id": s[0], "name": s[1], "colour": s[2], "defaultVisible": s[3]} for s in catalog.SYSTEMS],
+            "licenses": {k: {"name": v["name"], "url": v["url"], "attribution": v.get("attribution", ""), "nc": bool(v.get("nc", False)), "noRedistribution": bool(v.get("no_redistribution", False)),
+                             "text": f"licenses/{k}.txt"} for k, v in cfg["licenses"].items()},
+            # every shipped source with the attribution the About panel and NOTICE need: dataset name, citation,
+            # licence id and the download URLs the files actually came from (url = the dataset's landing/first URL).
+            "sources": {s["id"]: source_record(s, lock)
+                        for s in cfg["sources"] if any(m["source"] == s["id"] for m in meshes) or s["id"] == "mni_t1w"
+                        or (cord is not None and s["id"] == cord.get("source"))},
+            "meshes": out_meshes,
+        }
+        return manifest, out_meshes
+
+    # ---- the public edition, always, under the plain name
+    full, _ = build(all_meshes)
+    public, exclusions = filter_public(full)
+    pub_cord = public_cord()                       # the cord MRI the public edition may actually ship
+    if pub_cord:
+        swap_public_cord(public, exclusions, pub_cord, cfg, lock)
+    bad = verify_public(public, exclusions)
+    if bad:
+        for b in bad:
+            print(f"manifest: {b}", file=sys.stderr)
+        raise SystemExit(f"manifest: {len(bad)} restricted item(s) left in the public manifest")
+    (OUT / "manifest.json").write_text(json.dumps(public, indent=1))
+    (OUT / "manifest.exclusions.json").write_text(json.dumps(exclusions, indent=1))
+    t = exclusions["totals"]
+    if pub_cord:
+        g = public["grids"]["cord"]
+        levels = pub_cord["coverage"]["spinal_levels"]
+        print(f"manifest: cord volumes {sorted(pub_cord['contrasts'])} on a {g['shape']} grid at "
+              f"{g['spacing'][0]} mm from source {g['source']} ({g['license']}), covering "
+              f"{'-'.join(levels[::max(len(levels) - 1, 1)])}")
+    print(f"manifest: {t['meshesKept']} meshes ({t['meshBytesKept']/1e6:.1f} MB), {len(public['volumes'])} volumes, "
+          f"{len(public['licenses'])} licences, {len(public['sources'])} sources -> {OUT / 'manifest.json'}")
+    if t["meshes"] or t["volumes"] or t["licenses"] or t["sources"]:
+        print(f"manifest: excluded {t['meshes']} meshes ({t['meshBytes']/1e6:.1f} MB), {t['volumes']} volumes "
+              f"({t['volumeBytes']/1e6:.1f} MB), {t['grids']} grid(s), {t['licenses']} licences, {t['sources']} "
+              f"sources -> {OUT / 'manifest.exclusions.json'}")
+
+    # ---- the private edition, only when restricted data was actually built
+    if not built_restricted:
+        (OUT / "manifest.private.json").unlink(missing_ok=True)
+        print("manifest: nothing restricted in this build, so there is no private edition to write")
         return
-    (OUT / "manifest.json").write_text(json.dumps(manifest, indent=1))
-    total = sum(m["bytes"] for m in out_meshes)
-    lod_total = sum(m["lod"]["bytes"] for m in out_meshes if m.get("lod"))
-    first = sum((m["lod"]["bytes"] if m.get("lod") else m["bytes"]) for m in out_meshes if m["visible"])
+    private, out_private = build(private_meshes)
+    (OUT / "manifest.private.json").write_text(json.dumps(private, indent=1))
+    total = sum(m["bytes"] for m in out_private)
+    lod_total = sum(m["lod"]["bytes"] for m in out_private if m.get("lod"))
+    first = sum((m["lod"]["bytes"] if m.get("lod") else m["bytes"]) for m in out_private if m["visible"])
     if cord:
-        print(f"manifest: + cord volumes {list(cord['contrasts'])} on a {cord['shape']} grid at {cord['spacing'][0]} mm")
-    print(f"manifest: {len(out_meshes)} meshes, {total/1e6:.1f} MB full + {lod_total/1e6:.1f} MB stand-ins, first paint ~{first/1e6:.1f} MB, systems {len(manifest['systems'])} -> {OUT / 'manifest.json'}")
+        print(f"manifest: + private cord volumes {list(cord['contrasts'])} on a {cord['shape']} grid at {cord['spacing'][0]} mm")
+    print(f"manifest: {len(out_private)} meshes, {total/1e6:.1f} MB full + {lod_total/1e6:.1f} MB stand-ins, "
+          f"first paint ~{first/1e6:.1f} MB, systems {len(private['systems'])} -> {OUT / 'manifest.private.json'}")
+    print(f"manifest: this build is the PRIVATE edition ({', '.join(built_restricted)}); "
+          f"`npm run build` still produces the public one")
 
 
 if __name__ == "__main__":

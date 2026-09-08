@@ -259,7 +259,11 @@ test('cord slices: the spinal level under the cursor is named, and clicking it s
   await page.waitForFunction(() => (window as unknown as { atlas: { store: { get(): { loaded: { volume: boolean } } } } }).atlas.store.get().loaded.volume === true, null, { timeout: 120_000 });
   // the C5 segment on our own centreline, as atlas-pam50 measured it
   const c5 = await page.evaluate(async () => {
-    const r = await fetch('data/volumes/cord_levels.json');
+    // whichever cord template this edition ships: PAM50 privately, the composed open one publicly. The
+    // manifest names its LUT, and the measured level geometry is that LUT's sibling file.
+    const man = (await (await fetch('data/manifest.json')).json()) as { volumes: Record<string, { lut?: string }> };
+    const pub = (man.volumes['labels_spine']?.lut ?? '').includes('_public');
+    const r = await fetch(`data/volumes/cord_levels${pub ? '_public' : ''}.json`);
     const j = (await r.json()) as { spinalLevels: { name: string; top: number[]; bottom: number[] }[] };
     const l = j.spinalLevels.find((x) => x.name === 'C5')!;
     return { x: (l.top[0]! + l.bottom[0]!) / 2, y: (l.top[1]! + l.bottom[1]!) / 2, z: (l.top[2]! + l.bottom[2]!) / 2 };
@@ -290,12 +294,17 @@ test('cord slices: the spinal level under the cursor is named, and clicking it s
 
   // clicking the level selects the cord segment that contains it, and the shader gets its outline mask
   await page.mouse.click(cx, cy);
-  await expect.poll(() => page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().selectedId), { timeout: 20_000 }).toBe('spinal-segment-cervical');
+  // the cord segment the LUT itself names for this level (spinal-segment-cervical privately, its
+  // vertebral-landmark counterpart in the public edition)
+  const segmentOf = (id: number) => page.evaluate((n) => (window as unknown as SpineWin).atlas.spine!.byId.get(n)!.meshId, id);
+  await expect.poll(() => page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().selectedId), { timeout: 20_000 }).toBe(await segmentOf(5));
   expect(await page.evaluate(() => (window as unknown as SpineWin).atlas.uniforms.uSpineSel.value)).toBe(0b111111110);
 
   // one level lower down the cord the readout follows the level, not the click
   const t10 = await page.evaluate(async () => {
-    const r = await fetch('data/volumes/cord_levels.json');
+    const man = (await (await fetch('data/manifest.json')).json()) as { volumes: Record<string, { lut?: string }> };
+    const pub = (man.volumes['labels_spine']?.lut ?? '').includes('_public');
+    const r = await fetch(`data/volumes/cord_levels${pub ? '_public' : ''}.json`);
     const j = (await r.json()) as { spinalLevels: { name: string; top: number[]; bottom: number[] }[] };
     const l = j.spinalLevels.find((x) => x.name === 'T10')!;
     return { x: (l.top[0]! + l.bottom[0]!) / 2, y: (l.top[1]! + l.bottom[1]!) / 2, z: (l.top[2]! + l.bottom[2]!) / 2 };
@@ -309,7 +318,7 @@ test('cord slices: the spinal level under the cursor is named, and clicking it s
   await page.mouse.move(cx, cy);
   await expect.poll(() => page.locator('.hud').textContent(), { timeout: 30_000 }).toMatch(/T10 · thoracic segment/);
   await page.mouse.click(cx, cy);
-  await expect.poll(() => page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().selectedId), { timeout: 20_000 }).toBe('spinal-segment-thoracic');
+  await expect.poll(() => page.evaluate(() => (window as unknown as SpineWin).atlas.store.get().selectedId), { timeout: 20_000 }).toBe(await segmentOf(18));
   expect(errors.slice(errorsBefore).filter((e) => !/favicon/.test(e))).toEqual([]);
 });
 
@@ -330,6 +339,7 @@ const auditAbout = (page: Page) => page.evaluate(() => {
       licenceName: r.querySelector('.about-lic a')?.textContent ?? '',
       citation: r.querySelector('.cite-text')?.textContent ?? '',
       sourceHref: r.querySelector('.src-link')?.getAttribute('href') ?? '',
+      origin: r.querySelector('.src-origin')?.textContent?.trim() ?? '',
       meshes: r.querySelector('.num')?.textContent ?? '',
       badge: !!r.querySelector('.badge-nc'),
     })),
@@ -355,7 +365,10 @@ test('the About panel credits every data source in the manifest, each with a lic
     expect(r.licenceHref, `licence link of ${r.id}`).toMatch(/^https?:\/\//);
     expect(r.licenceName.length, `licence name of ${r.id}`).toBeGreaterThan(3);
     expect(r.citation.length, `citation of ${r.id}`).toBeGreaterThan(20);
-    expect(r.sourceHref, `download link of ${r.id}`).toMatch(/^https?:\/\//);
+    // every source says where it came from: a download link, or a line saying it was built here or read
+    // live from an API (the FastSurfer cerebellum segmentation and the terminology sources have no file)
+    if (r.sourceHref) expect(r.sourceHref, `download link of ${r.id}`).toMatch(/^https?:\/\//);
+    else expect(r.origin.length, `origin line of ${r.id}`).toBeGreaterThan(10);
     expect(Number(r.meshes), `mesh count of ${r.id}`).toBeGreaterThanOrEqual(0);
   }
   expect(a.rows.some((r) => r.badge), 'a restricted source is badged').toBe(a.edition === 'private');
@@ -392,7 +405,7 @@ test('every structure panel shows a Source line that opens the credits', async (
   const sourceText = () => page.evaluate(() => document.querySelector('#right .content:not([hidden]) .source-line')?.textContent ?? '');
 
   // a derived mesh says so, with the construction method in the tooltip
-  await hash('#/structure/spinal-segment-cervical');
+  await hash('#/structure/nerve-phrenic');
   await expect.poll(sourceText, { timeout: 60_000 }).toMatch(/Source:.*derived:/s);
   expect((await page.getAttribute('#right .content:not([hidden]) .derived-tag', 'title'))!.length).toBeGreaterThan(40);
 

@@ -1,12 +1,13 @@
-// Gate for the public edition: proves that a built dist-public/ carries nothing we may not redistribute.
-//   node scripts/check-public.ts [dir=dist-public]
+// Gate for the public edition: proves that a built dist/ carries nothing we may not redistribute. `npm run
+// build` runs it as its last step, so the default build is always the checked one.
+//   node scripts/check-public.ts [dir=dist]
 //
 // It fails on: an excluded mesh id anywhere in the build; a restricted licence id or source id in the data; a
 // mesh/volume/licence file that should have been dropped but is still on disk; a data file the public manifest
 // does not reference; and the names of the restricted datasets ("Harvard-Oxford", "Diedrichsen", "Brainstem
 // Navigator", "PAM50") in the manifest or the volume metadata.
 //
-// The id and name scans run over dist-public/data (the shipped data), where a hit means leaked atlas data. The
+// The id and name scans run over dist/data (the shipped data), where a hit means leaked atlas data. The
 // app bundle is scanned for excluded mesh ids only: it names licence ids and datasets in code and comments
 // (src/ui/sourceLine.ts labels every licence; the cord toggle says "PAM50 spinal cord template"), which is
 // vocabulary, not data.
@@ -32,7 +33,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, join, relative, sep } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const DIR = resolve(ROOT, process.argv[2] ?? 'dist-public');
+const DIR = resolve(ROOT, process.argv[2] ?? 'dist');
 const DATA = join(DIR, 'data');
 
 /** Dataset names that must not survive in the manifest or volume metadata. Mirrors NAME_STRINGS in manifest.py. */
@@ -50,7 +51,7 @@ const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const quotedId = (text: string, id: string) => text.includes(`"${id}"`);
 const pathId = (text: string, id: string) => new RegExp(`/${esc(id)}(?![A-Za-z0-9_-])`).test(text);
 
-if (!existsSync(DATA)) { console.error(`check-public: ${DIR} has no data/ — run npm run build:public first`); process.exit(1); }
+if (!existsSync(DATA)) { console.error(`check-public: ${DIR} has no data/ — run npm run build first`); process.exit(1); }
 
 // ---- what must not be there, straight from the pipeline's own exclusion record
 type Exclusions = {
@@ -60,8 +61,8 @@ type Exclusions = {
   sources: Record<string, { license: string }>;
   grids: Record<string, unknown>;
 };
-const exPath = resolve(ROOT, 'public/data/manifest.public.exclusions.json');
-if (!existsSync(exPath)) { console.error('check-public: public/data/manifest.public.exclusions.json is missing — run `atlas-manifest --public` first'); process.exit(1); }
+const exPath = resolve(ROOT, 'public/data/manifest.exclusions.json');
+if (!existsSync(exPath)) { console.error('check-public: public/data/manifest.exclusions.json is missing — run `atlas-manifest` first'); process.exit(1); }
 const ex = JSON.parse(readFileSync(exPath, 'utf8')) as Exclusions;
 const exMeshIds = new Set(ex.meshes.map((m) => m.id));
 const exLicenceIds = new Set(Object.keys(ex.licenses));

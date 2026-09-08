@@ -1,7 +1,7 @@
 // Verifies public/data: every manifest mesh decodes (meshopt), triangle counts, bbox/centroid sanity, label ids exist.
 // usage: node scripts/check-data.ts [--deep] [--manifest <file>] [--all] [glb paths...]
 //   --manifest  check this manifest instead of public/data/manifest.json. A bare name resolves inside
-//               public/data (manifest.public.json), a path anywhere (dist-public/data/manifest.json); the data
+//               public/data (manifest.private.json), a path anywhere (dist/data/manifest.json); the data
 //               directory is taken from wherever the manifest sits.
 //   --all       check every manifest in public/data (private, then public if it has been built).
 import { readFileSync, existsSync, statSync } from 'node:fs';
@@ -163,7 +163,7 @@ async function main() {
     return;
   }
   const at = args.indexOf('--manifest');
-  const wanted = at >= 0 && args[at + 1] ? [args[at + 1]!] : args.includes('--all') ? ['manifest.json', 'manifest.public.json'] : ['manifest.json'];
+  const wanted = at >= 0 && args[at + 1] ? [args[at + 1]!] : args.includes('--all') ? ['manifest.json', 'manifest.private.json'] : ['manifest.json'];
   let errors = 0;
   for (const w of wanted) {
     const p = w.includes('/') ? resolve(process.cwd(), w) : resolve(DATA_DEFAULT, w);

@@ -1,13 +1,13 @@
 // Guard for the public branch: proves that the *tracked tree* carries nothing that may not be published.
 //   node scripts/check-tree.ts [--verbose]
 //
-// check-public.ts gates the built dist-public/ — the data a visitor downloads. This gates the repository
+// check-public.ts gates the built dist/ — the data a visitor downloads. This gates the repository
 // itself, which is the other way a restricted file could get out, and it runs without any generated data,
 // so it works in a fresh clone, in CI and in a pre-commit hook (`npm run hooks:install`).
 //
 // It fails on:
 //   1. a tracked file under a path that must never be committed (source/, reference/, pipeline/raw/,
-//      pipeline/work/, public/data/, dist/, dist-public/, qa/shots/, blender/work/, pipeline/qa/report.json);
+//      pipeline/work/, public/data/, dist/, dist-private/, qa/shots/, blender/work/, pipeline/qa/report.json);
 //   2. a tracked binary or volumetric data file (.nii, .glb, .zip, .pdf, …), or any tracked file over
 //      MAX_BYTES that is not on the small, named allowlist;
 //   3. a restricted licence id or source id (read from pipeline/config/sources.yaml: any licence marked
@@ -42,7 +42,7 @@ if (!tracked.length) { console.error('check-tree: `git ls-files` returned nothin
 
 // ---- 1. paths that must never be committed
 const FORBIDDEN_PREFIX = [
-  'source/', 'reference/', 'pipeline/raw/', 'pipeline/work/', 'public/data/', 'dist/', 'dist-public/',
+  'source/', 'reference/', 'pipeline/raw/', 'pipeline/work/', 'public/data/', 'dist/', 'dist-private/',
   'qa/shots/', 'blender/work/', 'node_modules/', 'test-results/', 'playwright-report/',
 ];
 const FORBIDDEN_FILE = ['pipeline/qa/report.json'];

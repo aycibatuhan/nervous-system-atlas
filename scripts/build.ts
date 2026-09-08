@@ -1,10 +1,15 @@
-// Builds the public edition into dist-public/: Apache-2.0 code with CC BY-SA 4.0 data, carrying only the
-// meshes, volumes, label ids and licence texts that may be redistributed.
-//   node scripts/build-public.ts [--skip-manifest] [--skip-content] [--skip-vite] [--skip-check]
+// `npm run build`: the PUBLIC edition into dist/ -- Apache-2.0 code with CC BY-SA 4.0 data, carrying only the
+// meshes, volumes, label ids and licence texts that may be redistributed. This is the default build, so the
+// easy thing to publish is the one the gate has been run over.
+//   node scripts/build.ts [--skip-manifest] [--skip-content] [--skip-vite] [--skip-check]
 //
-// Steps: atlas-manifest --public → content build --public → vite build --outDir dist-public → filter
-// dist-public/data → check-public. The private public/data/manifest.json, content.json and the default
-// `npm run build` are never touched.
+// Steps: atlas-manifest → content build → vite build --outDir dist → filter dist/data → check-public.
+// The filter matters even here: public/data/ holds whatever this machine has built, so on a machine with the
+// restricted atlases it still contains their mesh files, their voxels inside the label volumes and the private
+// bundles. Vite copies public/ verbatim, and this removes everything the public manifest does not reference.
+//
+// The full edition is `npm run build:private` (scripts/build-private.ts), which writes dist-private/.
+// A clone with no generated data yet still builds the app bundle; the data steps and the gate are skipped.
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, rmSync, mkdirSync, copyFileSync } from 'node:fs';
 import { gunzipSync, gzipSync } from 'node:zlib';
@@ -12,45 +17,43 @@ import { resolve, join, relative, sep, dirname } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const SRC = join(ROOT, 'public/data');
-const OUT = join(ROOT, 'dist-public');
+const OUT = join(ROOT, 'dist');
 const DATA = join(OUT, 'data');
 const args = new Set(process.argv.slice(2));
 const step = (s: string) => console.log(`\n── ${s}`);
-const run = (cmd: string, argv: string[]) => execFileSync(cmd, argv, { cwd: ROOT, stdio: 'inherit', env: { ...process.env, ATLAS_EDITION: 'public' } });
+const run = (cmd: string, argv: string[]) => execFileSync(cmd, argv, { cwd: ROOT, stdio: 'inherit', env: process.env });
+const hasData = existsSync(join(SRC, 'manifest.json'));
+if (!hasData) console.log('note: public/data/ has no manifest yet — building the app bundle only (run the pipeline for the data)');
 
-// ---- 1. public manifest
-if (!args.has('--skip-manifest')) {
-  step('atlas-manifest --public');
-  const venv = join(ROOT, 'pipeline/.venv/bin/atlas-manifest');
-  run(existsSync(venv) ? venv : 'atlas-manifest', ['--public']);
+// ---- 1. the manifests
+const venv = join(ROOT, 'pipeline/.venv/bin/atlas-manifest');
+if (hasData && !args.has('--skip-manifest') && existsSync(venv)) {
+  step('atlas-manifest');
+  run(venv, []);
 }
-const manifest = JSON.parse(readFileSync(join(SRC, 'manifest.public.json'), 'utf8')) as Manifest;
-const exclusions = JSON.parse(readFileSync(join(SRC, 'manifest.public.exclusions.json'), 'utf8')) as Exclusions;
+
+// ---- 2. the public content bundle
+if (!args.has('--skip-content')) {
+  step('content build');
+  run(process.execPath, ['scripts/content/build.ts']);
+}
+
+// ---- 3. vite
+if (!args.has('--skip-vite')) {
+  step('vite build --outDir dist');
+  run(join(ROOT, 'node_modules/.bin/vite'), ['build', '--outDir', 'dist', '--emptyOutDir']);
+}
+if (!hasData) { console.log('\nbuilt dist/ without data — nothing to filter or gate'); process.exit(0); }
+const manifest = JSON.parse(readFileSync(join(SRC, 'manifest.json'), 'utf8')) as Manifest;
+const exclusions = JSON.parse(readFileSync(join(SRC, 'manifest.exclusions.json'), 'utf8')) as Exclusions;
 const excluded = new Set(exclusions.meshes.map((m) => m.id));
 
-// ---- 2. public content bundle
-if (!args.has('--skip-content')) {
-  step('content build --public');
-  run(process.execPath, ['scripts/content/build.ts', '--public']);
-}
-
-// ---- 3. vite, into its own out dir so dist/ (private) stays put
-if (!args.has('--skip-vite')) {
-  step('vite build --outDir dist-public');
-  run(join(ROOT, 'node_modules/.bin/vite'), ['build', '--outDir', 'dist-public', '--emptyOutDir']);
-}
-
-// ---- 4. filter dist-public/data down to the public edition
-// Vite copies the whole of public/ verbatim, so at this point dist-public/data is the private data set. Swap in
-// the public manifest and content under their normal names, keep only what the public manifest references, and
-// rewrite the label volume so the label ids of excluded meshes are not painted on the MRI either.
-step('filter dist-public/data');
+// ---- 4. filter dist/data down to what the public manifest references
+// Vite copies the whole of public/ verbatim, so at this point dist/data is whatever this machine has built --
+// on a private machine that includes the restricted meshes, the private bundles and label volumes painted with
+// the excluded atlases' ids. Keep only what the public manifest names, and repaint the label volumes.
+step('filter dist/data');
 mkdirSync(DATA, { recursive: true });
-writeFileSync(join(DATA, 'manifest.json'), JSON.stringify({ ...manifest, volumes: manifest.volumes }, null, 1));
-for (const [from, to] of [['content.public.json', 'content.json'], ['search-index.public.json', 'search-index.json'], ['content.tr.public.json', 'content.tr.json']] as const) {
-  if (!existsSync(join(SRC, from))) throw new Error(`${from} is missing — run the content build with --public first`);
-  copyFileSync(join(SRC, from), join(DATA, to));
-}
 
 // LICENSE is the data folder's own licence (CC BY-SA 4.0), written by atlas-manifest; it ships with the data.
 const keep = new Set<string>(['manifest.json', 'content.json', 'content.tr.json', 'search-index.json', 'LICENSE']);
@@ -115,17 +118,17 @@ prune(DATA);
 for (const f of keep) if (!existsSync(join(DATA, f))) throw new Error(`${f} is referenced by the public manifest but is not in the build (looked in ${dirname(join(DATA, f))})`);
 
 const t = exclusions.totals;
-console.log(`dist-public/data: kept ${manifest.meshes.length} meshes and ${Object.keys(manifest.volumes).length} volumes (${(keptBytes / 1e6).toFixed(1)} MB); removed ${removed} files (${(removedBytes / 1e6).toFixed(1)} MB)`);
+console.log(`dist/data: kept ${manifest.meshes.length} meshes and ${Object.keys(manifest.volumes).length} volumes (${(keptBytes / 1e6).toFixed(1)} MB); removed ${removed} files (${(removedBytes / 1e6).toFixed(1)} MB)`);
 console.log(`excluded: ${t.meshes} meshes (${(t.meshBytes / 1e6).toFixed(1)} MB), ${t.volumes} volumes (${(t.volumeBytes / 1e6).toFixed(1)} MB), ${t.grids} grid(s), ${t.licenses} licences, ${t.sources} sources`);
 for (const [k, n] of Object.entries(zeroed)) console.log(`${k}: ${n.toLocaleString()} voxels of excluded atlases zeroed`);
 
-// the code licence sits next to the build so a published dist-public/ is self-describing
+// the code licence sits next to the build so a published dist/ is self-describing
 for (const f of ['LICENSE', 'NOTICE']) if (existsSync(join(ROOT, f))) copyFileSync(join(ROOT, f), join(OUT, f));
 
 // ---- 5. verify
 if (!args.has('--skip-check')) {
   step('check-public');
-  run(process.execPath, ['scripts/check-public.ts', 'dist-public']);
+  run(process.execPath, ['scripts/check-public.ts', 'dist']);
 }
 
 interface Manifest {

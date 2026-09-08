@@ -1,10 +1,15 @@
 // Content build: validate every entry (zod), check cross-links against the manifest, run quality rules,
-// render Markdown fields to HTML and emit public/data/content.json + search-index.json.
-//   node scripts/content/build.ts [--validate-only] [--report] [--strict] [--public]
-// --public (or ATLAS_EDITION=public) bundles the same authored JSON against public/data/manifest.public.json and
-// writes content.public.json + search-index.public.json: mesh ids that are not in the public edition are dropped
-// from meshIds / meshToStructure, and MniRefs that pointed at them keep their MNI coordinate but lose the mesh id.
-// The authored files under content/ are never touched.
+// render Markdown fields to HTML and emit the bundles in public/data/.
+//   node scripts/content/build.ts [--validate-only] [--report] [--strict] [--private]
+//
+// By default it bundles against public/data/manifest.json -- the PUBLIC edition -- and writes content.json,
+// search-index.json and content.tr.json under those plain names, so the shareable bundle is the one every
+// other tool picks up by default. Mesh ids the public edition does not ship are dropped from meshIds /
+// meshToStructure, and an MniRef that pointed at one keeps its MNI coordinate but loses the mesh id.
+//
+// --private bundles against public/data/manifest.private.json instead and writes content.private.json,
+// search-index.private.json and content.tr.private.json. It only means anything on a machine that has built
+// the restricted data. The authored files under content/ are never touched by either.
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { marked } from 'marked';
@@ -16,7 +21,7 @@ const DATA_DIR = join(ROOT, 'content/data');
 const OUT = join(ROOT, 'public/data');
 const args = new Set(process.argv.slice(2));
 const strict = args.has('--strict');
-const publicEdition = args.has('--public') || process.env['ATLAS_EDITION'] === 'public';
+const privateEdition = args.has('--private') || process.env['ATLAS_EDITION'] === 'private';
 
 interface Problem { file: string; msg: string; level: 'error' | 'warn' }
 const problems: Problem[] = [];
@@ -44,15 +49,19 @@ const readManifest = (name: string): MiniManifest | null => {
 // an entry never becomes "wrong" just because one edition drops its mesh. The editions do not ship the same
 // cortex — the private one has the Harvard-Oxford gyri, the public one the CerebrA/DKT parcels standing in for
 // them — so a gyrus entry legitimately names mesh ids from both.
-const privateManifest = readManifest('manifest.json') ?? { meshes: [] };
-const publicManifest = readManifest('manifest.public.json');
-if (publicEdition && !publicManifest) { console.error('--public: public/data/manifest.public.json is missing — run `atlas-manifest --public` first'); process.exit(1); }
-const allMeshes = [...privateManifest.meshes, ...(publicManifest?.meshes ?? [])];
+const publicManifest = readManifest('manifest.json') ?? { meshes: [] };
+const privateManifest = readManifest('manifest.private.json');
+if (privateEdition && !privateManifest) { console.error('--private: public/data/manifest.private.json is missing — this build has no restricted data, so there is no private edition'); process.exit(1); }
+const allMeshes = [...publicManifest.meshes, ...(privateManifest?.meshes ?? [])];
+// Both editions' mesh ids are known only on a machine that has built both. Elsewhere -- a public clone, which
+// is the normal case -- an id from the other edition is indistinguishable from a typo, so the mesh-id check
+// reports rather than fails. See `unknownMeshId` below.
+const bothEditions = privateManifest !== null && publicManifest.meshes.length > 0;
 const meshIds = new Set(allMeshes.map((m) => m.id));
 const meshCentroid = new Map(allMeshes.map((m) => [m.id, m.centroid] as const));
 const meshStructure = new Map(allMeshes.map((m) => [m.id, m.structureId] as const));
 // The bundle, though, may only mention meshes that ship in THIS edition.
-const shippedIds = new Set((publicEdition ? publicManifest!.meshes : privateManifest.meshes).map((m) => m.id));
+const shippedIds = new Set((privateEdition ? privateManifest!.meshes : publicManifest.meshes).map((m) => m.id));
 const droppedIds = new Set(Array.from(meshIds).filter((id) => !shippedIds.has(id)));
 const ships = (id: string): boolean => !droppedIds.has(id);
 
@@ -117,7 +126,9 @@ for (const { file, e } of entries) {
   if (total < (minWords[e.kind] ?? 0)) err(file, `only ${total} words (min ${minWords[e.kind]})`);
   for (const c of e.citations ?? []) if (!bibliography[c.ref]) err(file, `unknown bibliography ref '${c.ref}'`);
   for (const id of refIds(e)) if (!isKnown(id)) (strict ? err : warn)(file, `unresolved reference '${id}'`);
-  if (e.kind === 'structure' || e.kind === 'cranial-nerve' || e.kind === 'topic') for (const m of e.meshIds) if (meshIds.size && !meshIds.has(m)) err(file, `meshId '${m}' not in manifest`);
+  // A mesh id neither manifest knows is a typo when both editions are on this machine, and merely the other
+  // edition's when only one is (the usual case for a clone of the public branch), so it is reported instead.
+  if (e.kind === 'structure' || e.kind === 'cranial-nerve' || e.kind === 'topic') for (const m of e.meshIds) if (meshIds.size && !meshIds.has(m)) (bothEditions ? err : warn)(file, `meshId '${m}' not in manifest`);
   if (e.kind === 'syndrome') {
     if (!/\b(decussat|cross|uncrossed|ipsilateral|contralateral)/i.test(e.reasoning)) err(file, 'reasoning must state the crossing / side logic');
     if (!e.deficits.some((d) => d.substrate)) warn(file, 'no deficit names its substrate');
@@ -291,31 +302,31 @@ for (const s of Object.values(bundle.syndromes) as { id: string; localisation: {
   for (const sid of s.localisation.structures) for (const b of [bundle, bundleTr]) { const st = b.structures[sid] as { clinical?: { syndromes: string[] } } | undefined; if (st?.clinical && !st.clinical.syndromes.includes(s.id)) st.clinical.syndromes.push(s.id); }
 }
 mkdirSync(OUT, { recursive: true });
-const contentName = publicEdition ? 'content.public.json' : 'content.json';
-const searchName = publicEdition ? 'search-index.public.json' : 'search-index.json';
+const contentName = privateEdition ? 'content.private.json' : 'content.json';
+const searchName = privateEdition ? 'search-index.private.json' : 'search-index.json';
 bundleTr.generated = bundle.generated;
 const bundleText = JSON.stringify(bundle);
 const bundleTrText = JSON.stringify(bundleTr);
 const searchText = JSON.stringify(searchDocs);
-if (publicEdition) {
+if (!privateEdition) {
   // hard gate, structural first: no field that holds a mesh id may name one this edition does not ship
   const named = new Set<string>();
   collectMeshIds(bundle, named);
   for (const id of Object.keys(bundle.meshToStructure)) named.add(id);
   collectMeshIds(bundleTr, named);
   const structural = Array.from(named).filter((id) => !ships(id));
-  if (structural.length) { console.error(`--public: ${structural.length} excluded mesh id(s) still named by the bundle: ${structural.slice(0, 12).join(', ')}`); process.exit(1); }
+  if (structural.length) { console.error(`excluded mesh ids: ${structural.length} of them still named mesh id(s) still named by the bundle: ${structural.slice(0, 12).join(', ')}`); process.exit(1); }
   // then as text, so a stray mention in prose or a rendered link is caught too. A handful of ids are shared by a
   // mesh and the content entry that describes it (filum-terminale, the cord segment blocks); those entries keep
   // their own id — the structural pass above already proved no mesh field points at them.
   const alsoAnEntryId = new Set(Array.from(droppedIds).filter((id) => byId.has(id)));
   const leaked = Array.from(droppedIds).filter((id) => !alsoAnEntryId.has(id) && (bundleText.includes(`"${id}"`) || bundleText.includes(`/${id}`) || bundleTrText.includes(`"${id}"`) || bundleTrText.includes(`/${id}`) || searchText.includes(`"${id}"`)));
-  if (leaked.length) { console.error(`--public: ${leaked.length} excluded mesh id(s) survive in the bundle text: ${leaked.slice(0, 12).join(', ')}`); process.exit(1); }
+  if (leaked.length) { console.error(`excluded mesh ids: ${leaked.length} of them survive mesh id(s) survive in the bundle text: ${leaked.slice(0, 12).join(', ')}`); process.exit(1); }
   if (alsoAnEntryId.size) console.log(`public edition: ${alsoAnEntryId.size} ids are both an excluded mesh and an authored entry, kept as entry ids: ${Array.from(alsoAnEntryId).sort().join(', ')}`);
 }
 writeFileSync(join(OUT, contentName), bundleText);
 writeFileSync(join(OUT, searchName), searchText);
-const trName_ = publicEdition ? 'content.tr.public.json' : 'content.tr.json';
+const trName_ = privateEdition ? 'content.tr.private.json' : 'content.tr.json';
 writeFileSync(join(OUT, trName_), bundleTrText);
 console.log(`wrote public/data/${contentName} (${(bundleText.length / 1024).toFixed(0)} KB), ${searchName} (${searchDocs.length} docs) and ${trName_} (${translated} translated entries, ${(bundleTrText.length / 1024).toFixed(0)} KB)`);
-if (droppedIds.size) console.log(`${publicEdition ? 'public' : 'private'} edition: ${droppedIds.size} meshes not shipped; ${meshIdsDropped} mesh references dropped from the bundle, ${mniRefsStripped} MNI refs kept their coordinate without a mesh id, ${emptied.length} entries left with no mesh`);
+if (droppedIds.size) console.log(`${privateEdition ? 'private' : 'public'} edition: ${droppedIds.size} meshes not shipped; ${meshIdsDropped} mesh references dropped from the bundle, ${mniRefsStripped} MNI refs kept their coordinate without a mesh id, ${emptied.length} entries left with no mesh`);

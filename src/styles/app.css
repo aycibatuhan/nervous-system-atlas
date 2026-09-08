@@ -39,7 +39,7 @@ button:hover { border-color: var(--accent2); }
 .slice-ctl input[type=range] { width: 150px; } .slice-ctl .mm { width: 56px; background: var(--bg); color: var(--fg); border: 1px solid var(--border); border-radius: 3px; padding: 2px 4px; }
 .slice-ctl .unit { color: var(--muted); } select { background: var(--bg); color: var(--fg); border: 1px solid var(--border); border-radius: 3px; padding: 2px 4px; }
 .slice-opts { display: flex; gap: 12px; align-items: center; margin-left: auto; } .slice-opts input[type=range] { width: 80px; vertical-align: middle; }
-#syndrome-bar { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(29,32,38,.92); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; display: flex; gap: 10px; align-items: center; max-width: 90%; }
+#syndrome-bar { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(29,32,38,.92); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; display: flex; gap: 10px; align-items: center; max-width: min(880px, 62vw); }
 #overlay-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(20,22,26,.85); font-size: 15px; text-align: center; padding: 40px; }
 .progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; pointer-events: none; background: var(--accent2); transform-origin: left; transform: scaleX(0); transition: transform .2s; }
 /* Machine-assisted-translation notice, along the foot of the 3D view in Turkish mode only (the syndrome
@@ -63,9 +63,22 @@ code { background: var(--panel2); padding: 0 4px; border-radius: 3px; }
 .wp.side-contralateral { border-left-color: #e15759; } .wp.side-ipsilateral { border-left-color: #59a14f; } .wp.side-bilateral { border-left-color: #f28e2b; } .wp .small { flex-basis: 100%; }
 /* syndrome mode + search */
 #syndrome-bar .sep { width: 1px; height: 18px; background: var(--border); }
-#syndrome-bar .syn-step { max-width: 46vw; font-size: 12px; }
+/* The step text is the bar's only flexible part: without a basis it collapses to its longest word and the
+   bar becomes a tall narrow column over the scene. */
+#syndrome-bar .syn-step { flex: 1 1 auto; min-width: 220px; max-width: none; font-size: 12px; }
 #syndrome-bar button.mini, .mini { font-size: 11px; padding: 2px 8px; }
 .tbl.deficits tr { cursor: pointer; } .tbl.deficits tr.active td { background: rgba(255,120,60,.18); }
+/* Six columns in a 420px panel: without fixed widths the deficits table sizes itself to its longest cell and
+   pushes the substrate column out of the panel, where it is silently cut off. Fixed columns keep it inside,
+   sized so every header stays on one line and the sign -- the column that matters -- gets what is left. */
+.tbl.deficits { table-layout: fixed; }
+.tbl.deficits td, .tbl.deficits .tag { overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+.tbl.deficits th { font-size: 10px; letter-spacing: .02em; }
+.tbl.deficits th:nth-child(1) { width: 20px; }
+.tbl.deficits th:nth-child(2) { width: 58px; }
+.tbl.deficits th:nth-child(3) { width: 52px; }
+.tbl.deficits th:nth-child(4) { width: 74px; }
+.tbl.deficits th:nth-child(6) { width: 72px; }
 .loc { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin: 6px 0; }
 .search-wrap { position: relative; flex: 1; max-width: 420px; }
 .search { width: 100%; box-sizing: border-box; padding: 4px 8px; background: var(--panel2); color: inherit; border: 1px solid var(--border); border-radius: 4px; font-size: 12px; }
@@ -79,14 +92,16 @@ code { background: var(--panel2); padding: 0 4px; border-radius: 3px; }
    cramped -- it used to drop onto a second row that the grid clips, which is how the search box ended up a
    few pixels wide at 1400px (and how toolbar buttons disappeared outright in Turkish, whose labels are
    longer). Nothing wraps now: as the window narrows the row sheds its least useful chrome instead -- the
-   subtitle, the counts and the screenshot button (Shift+S), with smaller buttons, and below 1300px the
-   camera presets (keys 1-8). The results list keeps a readable width even at the input's 200px floor. */
+   subtitle and smaller buttons under 1700px, the counts and the screenshot button (Shift+S) under 1500px,
+   the camera presets (keys 1-8) under 1300px. Checked at 1920/1700/1600/1500/1400/1280 in both languages:
+   nothing overflows, nothing is clipped, and the input never drops below its 200px floor. */
 .presets { min-width: 0; }
 .search-results { min-width: 320px; }
-@media (max-width: 1500px) {
-  .brand .sub, #toolbar .status, #toolbar .shot-btn { display: none; }
+@media (max-width: 1700px) {
+  .brand .sub { display: none; }
   #toolbar button { padding: 2px 6px; font-size: 11px; }
 }
+@media (max-width: 1500px) { #toolbar .status, #toolbar .shot-btn { display: none; } }
 @media (max-width: 1300px) { #toolbar .presets { display: none; } }
 .syn-inner { display: flex; gap: 10px; align-items: center; }
 .vignette { background: var(--panel2); padding: 8px 10px; border-left: 3px solid var(--accent); border-radius: 4px; }

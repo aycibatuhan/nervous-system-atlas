@@ -83,6 +83,10 @@ export interface ManifestSource {
   urls?: string[];
   /** the provider needs a click-through, so the pipeline cannot download it */
   manual?: boolean;
+  /** built on this machine rather than downloaded (the FastSurfer cerebellum segmentation) */
+  generated?: boolean;
+  /** read live from this API rather than downloaded as a file (the terminology sources) */
+  api?: string;
   files: Record<string, string | null>;
 }
 

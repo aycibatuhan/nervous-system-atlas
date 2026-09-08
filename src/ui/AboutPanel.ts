@@ -37,7 +37,9 @@ export class AboutPanel {
           h('div', {}, h('b', {}, s.name ?? id), h('span', { class: 'muted small' }, ` · ${id}`)),
           h('div', { class: 'muted small cite-text' }, s.citation),
           s.url ? h('div', { class: 'small' }, h('a', { class: 'src-link', href: s.url, target: '_blank', rel: 'noopener noreferrer' }, t('about.download')),
-            s.manual ? h('span', { class: 'muted small' }, t('about.manual')) : null) : null),
+            s.manual ? h('span', { class: 'muted small' }, t('about.manual')) : null)
+            // no file to download: built here, or read live from an API
+            : h('div', { class: 'muted small src-origin' }, s.api ? t('about.fromApi', { api: s.api }) : t('about.builtHere'))),
         h('td', { class: 'about-lic' }, licLink(s.license),
           restricted ? h('div', {}, h('span', { class: 'tag badge-nc', title: t(lic?.nc ? 'about.excluded.nc' : 'about.excluded.noRedistribution') }, t('about.excluded'))) : null),
         h('td', { class: 'num' }, String(meshCount.get(id) ?? 0)));

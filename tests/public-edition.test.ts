@@ -38,23 +38,27 @@ function excludeFrom(man: Manifest) {
   return { restricted, sources, meshes, volumes };
 }
 
-const priv = read('manifest.json') as Manifest;
-const pub = has('manifest.public.json') ? read('manifest.public.json') as Manifest : null;
-const exclusions = has('manifest.public.exclusions.json') ? read('manifest.public.exclusions.json') as {
+// manifest.json is the public edition on every machine; manifest.private.json exists only where the
+// restricted data has been built, so every private-side test skips without it.
+const priv = has('manifest.private.json') ? read('manifest.private.json') as Manifest : null;
+const pub = has('manifest.json') ? read('manifest.json') as Manifest : null;
+const exclusions = has('manifest.exclusions.json') ? read('manifest.exclusions.json') as {
   meshes: { id: string }[]; volumes: { key: string; file: string }[]; licenses: Record<string, string>; sources: Record<string, unknown>;
 } : null;
 
 describe('public edition — the private edition is untouched', () => {
   it('still carries the restricted licences and their meshes', () => {
-    expect(priv.edition ?? 'private').toBe('private');
-    for (const id of ['FSL-NC', 'CC-BY-NC-3.0', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']) expect(priv.licenses[id]).toBeTruthy();
-    expect(priv.meshes.some((m) => m.license === 'FSL-NC')).toBe(true);
-    expect(priv.meshes.some((m) => m.license === 'BrainstemNavigator-NC-ND')).toBe(true);
-    expect(priv.grids?.['cord']).toBeTruthy();
-    expect(priv.volumes['labels_spine']).toBeTruthy();
+    if (!priv) return;
+    expect(priv!.edition ?? 'private').toBe('private');
+    for (const id of ['FSL-NC', 'CC-BY-NC-3.0', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']) expect(priv!.licenses[id]).toBeTruthy();
+    expect(priv!.meshes.some((m) => m.license === 'FSL-NC')).toBe(true);
+    expect(priv!.meshes.some((m) => m.license === 'BrainstemNavigator-NC-ND')).toBe(true);
+    expect(priv!.grids?.['cord']).toBeTruthy();
+    expect(priv!.volumes['labels_spine']).toBeTruthy();
   });
 
   it('leaves the authored content JSON referencing the excluded meshes', () => {
+    if (!priv) return;
     const dir = join(ROOT, 'content/data/structures');
     const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
     const ex = excludeFrom(priv).meshes;
@@ -63,25 +67,25 @@ describe('public edition — the private edition is untouched', () => {
   });
 
   it('leaves the private content bundle referencing them too', () => {
-    if (!has('content.json')) return;
-    const bundle = read('content.json') as { meshToStructure: Record<string, string> };
+    if (!priv || !has('content.private.json')) return;
+    const bundle = read('content.private.json') as { meshToStructure: Record<string, string> };
     const ex = excludeFrom(priv).meshes;
     expect(Object.keys(bundle.meshToStructure).some((id) => ex.has(id))).toBe(true);
   });
 });
 
-describe('public edition — the manifest filter', () => {
+describe.skipIf(!priv)('public edition — the manifest filter', () => {
   it('excludes every nc / no-redistribution mesh, source, licence and volume', () => {
-    const ex = excludeFrom(priv);
+    const ex = excludeFrom(priv!);
     expect(ex.restricted).toEqual(new Set(['FSL-NC', 'CC-BY-NC-3.0', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']));
     expect(ex.sources).toEqual(new Set(['harvard_oxford', 'diedrichsen_cerebellum', 'brainstem_navigator', 'pam50']));
     expect(ex.meshes.size).toBeGreaterThan(150);
     expect(ex.volumes).toEqual(new Set(['cord_t2', 'cord_t1', 'labels_spine']));
   });
 
-  it('agrees with what atlas-manifest --public actually dropped', () => {
+  it('agrees with what atlas-manifest actually dropped', () => {
     if (!exclusions) return;                                        // not built in this checkout
-    const ex = excludeFrom(priv);
+    const ex = excludeFrom(priv!);
     expect(new Set(exclusions.meshes.map((m) => m.id))).toEqual(ex.meshes);
     expect(new Set(exclusions.volumes.map((v) => v.key))).toEqual(ex.volumes);
     expect(new Set(Object.keys(exclusions.sources))).toEqual(ex.sources);
@@ -90,7 +94,7 @@ describe('public edition — the manifest filter', () => {
 
   it('produces a manifest with nothing restricted left in it', () => {
     if (!pub) return;
-    const ex = excludeFrom(priv);
+    const ex = excludeFrom(priv!);
     expect(pub.edition).toBe('public');
     for (const [id, l] of Object.entries(pub.licenses)) {
       expect(l.nc, `licence ${id}`).toBeFalsy();
@@ -142,14 +146,14 @@ describe('public edition — the manifest filter', () => {
   it('keeps the systems and the bulk of the atlas', () => {
     if (!pub) return;
     expect((pub as unknown as { systems: unknown[] }).systems).toEqual((priv as unknown as { systems: unknown[] }).systems);
-    expect(pub.meshes.length).toBeGreaterThan(priv.meshes.length * 0.6);
+    expect(pub.meshes.length).toBeGreaterThan(priv!.meshes.length * 0.6);
     expect(pub.volumes['t1w']).toBeTruthy();
     expect(pub.volumes['labels_anat']).toBeTruthy();
   });
 });
 
 describe('public edition — the content bundle', () => {
-  const bundle = has('content.public.json') ? read('content.public.json') as Record<string, Record<string, unknown>> : null;
+  const bundle = has('content.json') ? read('content.json') as Record<string, Record<string, unknown>> : null;
 
   const meshIdsNamedBy = (v: unknown, out = new Set<string>()): Set<string> => {
     if (Array.isArray(v)) { for (const x of v) meshIdsNamedBy(x, out); return out; }
@@ -164,7 +168,7 @@ describe('public edition — the content bundle', () => {
   it('names no mesh that the public manifest does not ship', () => {
     if (!bundle || !pub) return;
     const shipped = new Set(pub.meshes.map((m) => m.id));
-    const known = new Set(priv.meshes.map((m) => m.id));
+    const known = new Set(priv!.meshes.map((m) => m.id));
     const named = meshIdsNamedBy(bundle);
     for (const id of Object.keys(bundle['meshToStructure'] ?? {})) named.add(id);
     // ids that are not meshes in either edition are the content's own business (a few quiz highlights name a
@@ -200,8 +204,8 @@ describe('public edition — the content bundle', () => {
   });
 
   it('has a search index that still covers the mesh-less entries', () => {
-    if (!has('search-index.public.json')) return;
-    const docs = read('search-index.public.json') as { id: string }[];
+    if (!has('search-index.json')) return;
+    const docs = read('search-index.json') as { id: string }[];
     const ids = new Set(docs.map((d) => d.id));
     expect(ids.has('locus-coeruleus')).toBe(true);
     expect(ids.has('gyrus-precentral')).toBe(true);

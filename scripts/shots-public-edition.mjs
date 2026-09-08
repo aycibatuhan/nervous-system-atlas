@@ -1,5 +1,5 @@
 // Loads a built public edition and checks it degrades gracefully where the private atlases are missing.
-// Serve it first:  npx vite preview --outDir dist-public --port 5183
+// Serve it first:  npx vite preview --outDir dist --port 5183
 // Usage:           node scripts/shots-public-edition.mjs [baseURL]
 //
 // Checks: no console/page errors; the manifest really is the public one; two entries that genuinely have no

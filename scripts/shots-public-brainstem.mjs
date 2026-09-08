@@ -5,7 +5,7 @@
 // the frame even by accident: the manifest it loads has none. The script asserts that before shooting.
 //
 //   node scripts/build-public.ts
-//   npx vite preview --outDir dist-public --port 5183
+//   npx vite preview --outDir dist --port 5183
 //   node scripts/shots-public-brainstem.mjs [baseURL]
 import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';

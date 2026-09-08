@@ -297,6 +297,8 @@ export const en = {
   'about.th.dataset': 'Dataset and citation',
   'about.th.licence': 'Licence',
   'about.th.meshes': 'Meshes',
+  'about.builtHere': 'Built by this pipeline, not downloaded.',
+  'about.fromApi': 'Read live from {api}.',
   'about.download': 'download',
   'about.manual': ' (manual click-through)',
   'about.excluded': 'excluded from the public edition',
