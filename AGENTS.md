@@ -77,7 +77,7 @@ npm run citations:check
 node scripts/check-data.ts --all                  # both manifests: meshes, volumes, coordinates
 npm run notice -- --check
 uv run --project pipeline atlas-qa                # the pipeline's own data gates
-npx playwright install chromium && npm run e2e    # 19 browser tests
+npx playwright install chromium && npm run e2e    # 24 browser tests
 npm run build                                     # ends in the redistribution gate
 python3 tools/i18n/prose.py check                 # Turkish overlays against the English entries
 ```
@@ -108,6 +108,11 @@ before a release. Run the whole list before anything is published.
   per entry. macOS hides them from both listing and extraction, so they are invisible where they are created,
   and then appear on Linux as hundreds of files no manifest references. `release-data.sh` handles this and
   verifies with Python's `tarfile`, which does not share tar's blind spot.
+- **`export: false` in `bp3d_selection.yaml` means registration input, not atlas mesh.** The seven gross-brain
+  BodyParts3D concepts (brain, hemispheres, brainstem, cerebellum, lateral ventricles) are selected so that
+  `atlas-register` can fit the frame on them, and `atlas-bp3d-meshes` retires anything they once left in
+  `public/data/`. Do not ship them: they are a second specimen, 10–25 mm off the MNI-native meshes of the same
+  structures, and they read as two brainstems and two cortices.
 - **One e2e test is timing-sensitive.** `interaction budget` measures frame pacing and can fail on a loaded
   machine. Re-run it alone before believing it.
 - **`npm run e2e` needs a dev server with data**, except `e2e/no-data.spec.ts`, which fakes the missing

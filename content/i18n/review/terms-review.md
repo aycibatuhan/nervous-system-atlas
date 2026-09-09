@@ -345,7 +345,6 @@ Sources: TA2 7112 rows, TNA 4398 rows, Wikidata 5923 items with a TA98/TA2 id (7
 
 - `area-broca` Broca's area; TNA 2015 *Pars triangularis*; alt: tna:2016 "Pars opercularis" (syn)
 - `arteries-thalamoperforating` Thalamoperforating and thalamogeniculate arteries; TNA 573 *Arteria thalami perforans*; alt: tna:577 "Arteria thalamogeniculata" (en)
-- `bp3d-brain` Brain (BodyParts3D); TA2 5415 *Encephalon*; TNA 958 *Encephalon*; alt: wd:Q75865 "encephalon" (en)
 - `cerebellar-cortex-layers` Cerebellar cortex: layers and circuit; TA2 5834 *Cortex cerebelli*; TNA 1621 *Cortex cerebelli*; alt: ta2:2841 "Papillae foliatae" (syn)
 - `cerebellar-lobule-vi` Lobule VI; TA2 5811 *Lobulus quadrangularis posterior*; TNA 1590 *Declive*; alt: ta2:5827 "Declive" (syn) | tna:1605 "Lobulus quadrangularis posterior" (syn)
 - `cerebellar-lobule-viib` Lobule VIIB; TA2 5815 *Lobulus gracilis*; TNA 1609 *Lobulus gracilis*; alt: tna:1592 "Tuber" (syn)

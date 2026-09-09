@@ -2,12 +2,17 @@
 meshes:
   # Arteries carry NO explicit colour on purpose: they take the single arteries system colour, so the tree
   # does not read as eight different reds. A vessel is told apart by its course, not its tint.
-  # ---- gross brain (used for registration and as reference layers)
-  - {id: bp3d-brain, fma: 50801, name: "Brain (BodyParts3D)", system: envelope, side: midline, budget: huge, colour: "#E6D5C3", visible: false}
-  - {id: bp3d-cerebrum-l, fma: 61819, name: "Left cerebral hemisphere (BodyParts3D)", system: envelope, side: left, budget: huge, colour: "#E6D5C3", visible: false, structureId: lobe-frontal}
-  - {id: bp3d-cerebrum-r, fma: 67292, name: "Right cerebral hemisphere (BodyParts3D)", system: envelope, side: right, budget: huge, colour: "#E6D5C3", visible: false, structureId: lobe-frontal}
-  - {id: bp3d-brainstem, fma: 79876, name: "Brainstem (BodyParts3D)", system: brainstem, subsystem: reference, side: midline, budget: large, visible: false, structureId: brainstem}
-  - {id: bp3d-cerebellum, fma: 67944, name: "Cerebellum (BodyParts3D)", system: cerebellum, subsystem: reference, side: midline, budget: large, visible: false, structureId: cerebellum}
+  # ---- gross brain: registration inputs only (`export: false`). atlas-register fits the BP3D frame on these
+  # concept meshes, but they are NOT shipped: they are a second specimen, and against the MNI-native meshes of
+  # the same structures they are off by too much to sit beside them -- the hemispheres a mean 15-18 mm inside
+  # the MNI cortex over the convexity, the brainstem 14-25 mm posterior at the medulla, the lateral
+  # ventricles a mean 10 mm off -- so the atlas showed two brainstems and two cortices that did not line up.
+  # Measured against the shipped meshes on 2026-09-09; see docs/pipeline.md.
+  - {id: bp3d-brain, fma: 50801, name: "Brain (BodyParts3D)", system: envelope, side: midline, budget: huge, colour: "#E6D5C3", visible: false, export: false}
+  - {id: bp3d-cerebrum-l, fma: 61819, name: "Left cerebral hemisphere (BodyParts3D)", system: envelope, side: left, budget: huge, colour: "#E6D5C3", visible: false, structureId: lobe-frontal, export: false}
+  - {id: bp3d-cerebrum-r, fma: 67292, name: "Right cerebral hemisphere (BodyParts3D)", system: envelope, side: right, budget: huge, colour: "#E6D5C3", visible: false, structureId: lobe-frontal, export: false}
+  - {id: bp3d-brainstem, fma: 79876, name: "Brainstem (BodyParts3D)", system: brainstem, subsystem: reference, side: midline, budget: large, visible: false, structureId: brainstem, export: false}
+  - {id: bp3d-cerebellum, fma: 67944, name: "Cerebellum (BodyParts3D)", system: cerebellum, subsystem: reference, side: midline, budget: large, visible: false, structureId: cerebellum, export: false}
   # FMA7647 "Spinal cord" retired 2026-09-06: the BodyParts3D concept is a 36 mm upper-cervical stub
   # (z -83..-49) and, having no sub-cranial post-correction, it sat 20-25 mm behind the corrected
   # Z-Anatomy cord.  The cord is now the Z-Anatomy white/grey meshes and the atlas-derived segment
@@ -77,5 +82,5 @@ meshes:
   - {id: tentorium-cerebelli, fma: 83966, name: "Tentorium cerebelli", system: meninges, side: midline, budget: large, colour: "#D0D0D0", visible: false}
   - {id: dura-mater-cranial, fma: [71235, 266054], name: "Cranial dura mater", system: meninges, side: midline, budget: large, colour: "#C8C8C8", visible: false, structureId: dura-mater}
   # ---- ventricles (BP3D versions kept hidden; aseg meshes are primary)
-  - {id: bp3d-lateral-ventricle-l, fma: 78450, name: "Lateral ventricle (BodyParts3D, L)", system: ventricles-csf, subsystem: reference, side: left, budget: medium, visible: false, structureId: ventricle-lateral}
-  - {id: bp3d-lateral-ventricle-r, fma: 78449, name: "Lateral ventricle (BodyParts3D, R)", system: ventricles-csf, subsystem: reference, side: right, budget: medium, visible: false, structureId: ventricle-lateral}
+  - {id: bp3d-lateral-ventricle-l, fma: 78450, name: "Lateral ventricle (BodyParts3D, L)", system: ventricles-csf, subsystem: reference, side: left, budget: medium, visible: false, structureId: ventricle-lateral, export: false}
+  - {id: bp3d-lateral-ventricle-r, fma: 78449, name: "Lateral ventricle (BodyParts3D, R)", system: ventricles-csf, subsystem: reference, side: right, budget: medium, visible: false, structureId: ventricle-lateral, export: false}

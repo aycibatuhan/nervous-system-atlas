@@ -174,6 +174,16 @@ def main_select(argv=None) -> None:
     print(f"selected {len(index)} concept meshes -> {out_dir}")
 
 
+def retire(sel: dict, existing: dict) -> None:
+    """Remove a formerly exported entry's glb, stand-in, record and meshes.json row (all no-ops when absent)."""
+    path = MESHES / sel["system"] / f"{sel['id']}.glb"
+    gone = [p for p in (path, path.with_name(path.stem + ".lod.glb"), WORK / "records" / f"{sel['id']}.json") if p.exists()]
+    for p in gone:
+        p.unlink()
+    if existing.pop(sel["id"], None) is not None or gone:
+        print(f"  {sel['id']:44s} retired (export: false)")
+
+
 def main_meshes(argv=None) -> None:
     """Apply the BP3D->MNI transform, clean, decimate and export glb + records."""
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); a = ap.parse_args(argv)
@@ -185,6 +195,12 @@ def main_meshes(argv=None) -> None:
     existing = {m["id"]: m for m in json.loads(meshes_json.read_text())} if meshes_json.exists() else {}
     for sel in selection():
         if a.only and sel["id"] not in a.only.split(","):
+            continue
+        if sel.get("export") is False:
+            # a registration input (see the gross-brain group in bp3d_selection.yaml): the concept mesh exists in
+            # work/bp3d/ for atlas-register, but nothing of it reaches public/data/. Clear anything an earlier build
+            # left behind, so the manifest cannot keep listing it.
+            retire(sel, existing)
             continue
         p = WORK / "bp3d" / f"{sel['id']}.ply"
         if not p.exists():

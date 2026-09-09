@@ -2,7 +2,7 @@
 
 **English** · [Türkçe](#klinik-nöroanatomi-atlası)
 
-A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI slices, arterial territories, traced pathways, a lesion mode that shows you what a syndrome does and why, plus clinical topics, a glossary and a quiz. Everything lives in one coordinate frame — MNI152NLin2009cAsym RAS millimetres — so the surfaces, the T1/T2 slices and the label overlays line up exactly, and below the foramen magnum the slices continue into a spinal cord MRI reformatted along the atlas's own cord. Every entry cites open-access sources that anyone can read for free. It runs locally, from static files, with no server and no account.
+A browser-based 3D atlas of clinical neuroanatomy: 585 meshes, synchronised MRI slices, arterial territories, traced pathways, a lesion mode that shows you what a syndrome does and why, plus clinical topics, a glossary and a quiz. Everything lives in one coordinate frame — MNI152NLin2009cAsym RAS millimetres — so the surfaces, the T1/T2 slices and the label overlays line up exactly, and below the foramen magnum the slices continue into a spinal cord MRI reformatted along the atlas's own cord. Every entry cites open-access sources that anyone can read for free. It runs locally, from static files, with no server and no account.
 
 **[Open the live demo →](https://aycibatuhan.github.io/nervous-system-atlas/)**  — the same public edition, nothing to install.
 
@@ -47,7 +47,7 @@ slices to it.
 | Topics | 19 | development, CSF and the blood–brain barrier, neurotransmitters, sleep and EEG, epilepsy, headache, dementia, movement disorders, neuromuscular patterns, paediatric syndromes, localisation, imaging, stroke, infection, tumours, leukodystrophies, nerve injury, cortical layers, coma |
 | Glossary | 205 | |
 | Quiz | 60 | original vignettes; the answer spotlights the structures in 3D |
-| Meshes | 592 public / 662 private | MNI atlases remeshed from label masks, the VENAT venous atlas, BodyParts3D and Z-Anatomy geometry registered by landmarks, and meshes constructed here from geometry no atlas provides (12 in both editions, 40 in the public one); 36 MB at full detail, about 3.5 MB on first paint |
+| Meshes | 585 public / 655 private | MNI atlases remeshed from label masks, the VENAT venous atlas, BodyParts3D and Z-Anatomy geometry registered by landmarks, and meshes constructed here from geometry no atlas provides (12 in both editions, 40 in the public one); 36 MB at full detail, about 3.5 MB on first paint |
 | Citations | 2387 | to 657 open-access sources, across all 825 entries |
 
 ## Features
@@ -199,7 +199,7 @@ Pull requests are welcome — read [CONTRIBUTING.md](CONTRIBUTING.md) first, esp
 
 *(This is the Turkish version of the document above. [Back to English](#clinical-neuroanatomy-atlas).)*
 
-Tarayıcıda çalışan üç boyutlu bir klinik nöroanatomi atlası: 592 mesh, eşzamanlı MR kesitleri, arter sulama alanları, izlenebilir yolaklar, bir sendromun neyi nasıl bozduğunu gösteren lezyon kipi, klinik konular, bir sözlük ve vaka soruları. Her şey tek bir koordinat çerçevesindedir (MNI152NLin2009cAsym RAS milimetre), bu yüzden yüzeyler, T1/T2 kesitleri ve etiket kaplamaları tam olarak çakışır; foramen magnumun altında kesitler, atlasın kendi omuriliği boyunca yeniden biçimlenmiş bir spinal kord MR'ına devam eder. Her kayıt, herkesin ücretsiz okuyabileceği açık erişimli kaynaklara atıf verir. Uygulama yerelde, statik dosyalardan çalışır; sunucu da hesap da gerektirmez.
+Tarayıcıda çalışan üç boyutlu bir klinik nöroanatomi atlası: 585 mesh, eşzamanlı MR kesitleri, arter sulama alanları, izlenebilir yolaklar, bir sendromun neyi nasıl bozduğunu gösteren lezyon kipi, klinik konular, bir sözlük ve vaka soruları. Her şey tek bir koordinat çerçevesindedir (MNI152NLin2009cAsym RAS milimetre), bu yüzden yüzeyler, T1/T2 kesitleri ve etiket kaplamaları tam olarak çakışır; foramen magnumun altında kesitler, atlasın kendi omuriliği boyunca yeniden biçimlenmiş bir spinal kord MR'ına devam eder. Her kayıt, herkesin ücretsiz okuyabileceği açık erişimli kaynaklara atıf verir. Uygulama yerelde, statik dosyalardan çalışır; sunucu da hesap da gerektirmez.
 
 **[Canlı demoyu açın →](https://aycibatuhan.github.io/nervous-system-atlas/)**  — aynı genel sürüm, hiçbir kurulum gerekmez.
 
@@ -242,7 +242,7 @@ Her kesit, meshlerin kayıtlandığı MR'ın kendisidir; böylece bir yapı hem 
 | Konular | 19 | gelişim, BOS ve kan-beyin bariyeri, nörotransmitterler, uyku ve EEG, epilepsi, baş ağrısı, demans, hareket bozuklukları, nöromusküler desenler, pediatrik sendromlar, lokalizasyon, görüntüleme, inme, enfeksiyon, tümörler, lökodistrofiler, sinir hasarı, kortikal katmanlar, koma |
 | Sözlük | 205 | |
 | Vaka soruları | 60 | özgün vakalar; yanıt, ilgili yapıları üç boyutta öne çıkarır |
-| Mesh | 592 açık / 662 özel | etiket maskelerinden yeniden meshlenen MNI atlasları, VENAT venöz atlası, işaret noktalarıyla kayıtlanan BodyParts3D ve Z-Anatomy geometrisi ve hiçbir atlasın vermediği, burada kurulan meshler (iki sürümde de 12, açık sürümde 40); tam ayrıntıda 36 MB, ilk boyamada yaklaşık 3,5 MB |
+| Mesh | 585 açık / 655 özel | etiket maskelerinden yeniden meshlenen MNI atlasları, VENAT venöz atlası, işaret noktalarıyla kayıtlanan BodyParts3D ve Z-Anatomy geometrisi ve hiçbir atlasın vermediği, burada kurulan meshler (iki sürümde de 12, açık sürümde 40); tam ayrıntıda 36 MB, ilk boyamada yaklaşık 3,5 MB |
 | Atıflar | 2387 | 825 kaydın tamamında, 657 açık erişimli kaynağa |
 
 ## Özellikler
