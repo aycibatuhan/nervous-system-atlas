@@ -12,34 +12,71 @@ content in `content/` with its bibliography and its Turkish overlays. The app re
 manifest and a content bundle that the pipeline and the content build produced from the
 same tree, so a change to any one of the three can move the version.
 
-<!--
-No remote is configured yet, so there are no release or compare links at the bottom of
-this file. When the repository is published, add link definitions of the form
-[1.0.0]: https://<host>/<owner>/nervous-system-atlas/releases/tag/v1.0.0
-and replace the placeholder host with the real one.
--->
-
 ## [Unreleased]
 
-Work on `main` after the v1.0.0 tag.
+Nothing yet.
+
+## [1.0.1] - 2026-09-09
+
+The data bundle is now `atlas-data-v1.0.1.tar.gz`, attached to the v1.0.1 release. Every version gets its own
+asset name from here on; the v1.0.0 asset was replaced in place three times, and each replacement broke the
+Pages deploy once, because a pushed checksum pointed at an asset that had already changed underneath it.
 
 ### Added
 
-- Six more screenshots, all of the MRI with something read on it: an axial through the internal capsule, a
-  coronal at the hippocampal body, a hemisected near-midline sagittal, the arcuate fasciculus over a lateral
-  sagittal slice with the tract atlas behind it, the arterial territories tinted on an axial slice, and the
-  slices continuing below the foramen magnum into the cord MRI.
-- The whole README translated into Turkish, after the English document, with a language line under each title.
+- `npm run data` fetches the prebuilt public-edition data from the release asset into `public/data/`, checks
+  its pinned SHA-256 before unpacking and removes any macOS AppleDouble twins the archive should not carry.
+  A clone that skips it now starts and says what to run instead of dying in `JSON.parse` on Vite's HTML
+  fallback (the `dataPresence()` plugin makes a missing `/data/*` file 404 honestly).
+- A live demo on GitHub Pages, built by `.github/workflows/pages.yml` from the release asset — never from the
+  repository — and gated by `check-public` before deploy.
+- `AGENTS.md` (with `CLAUDE.md` pointing at it): setup, the non-negotiable rules, the two editions, the check
+  suite, the source-adding flow and the gotchas that cost time.
+- `docs/editions.md`: how to obtain each of the four restricted datasets, and "The exclusion is unconditional"
+  — non-commercial use is not what makes the public edition safe to share; the exclusion is.
+- Six more screenshots, all of the MRI with something read on it, and the whole README in Turkish after the
+  English.
+- Structure labels carry their side again — "Caudate nucleus (L)" / "(R)", "(Sol)" / "(Sağ)" in Turkish —
+  which the tree had lost because both members of a pair resolve through one content entry.
+- Five browser tests for the narrow-window layout.
+
+### Changed
+
+- **Licence records corrected at source.** Three atlases were filed under the `MNI` licence purely because
+  TemplateFlow serves them from the same directory: the MIAL thalamus is CC BY 4.0 (per its sidecar), MASSP is
+  Apache 2.0 (per its FigShare deposit), and nobody upstream states a licence for the FreeSurfer aseg of the
+  template, which now says so (`MNI-FreeSurfer`). Harvard-Oxford is CC BY-SA 4.0 since August 2025, not
+  non-commercial, and stays excluded as a documented hold; the Diedrichsen cerebellum is CC BY-ND, not
+  CC BY-NC, and stays excluded because ND forbids the meshes. The shipped licence texts follow.
+- **Palette.** The arteries are one red — a vessel is told apart by its course, not its tint — and the grey
+  matter is spread apart: the closest pair of colours in the cerebrum was ΔE 0.5, below the just-noticeable
+  difference, and every system now sits at ΔE ≥ 3.0 with its mean lightness unchanged. `palette()` in the
+  manifest step now covers the CerebrA/DKT parcels, the FastSurfer cerebellum and the landmark anchors, which
+  it had silently skipped.
+- **Layout.** Below 1100 px the panels narrow; below 900 px they overlay the 3D view and start closed, so the
+  canvas never loses its width. The toolbar no longer overflows a 768 px window sideways.
+- The MRA arterial iso-surface is off at first paint: drawn over the named vessels it fused them into one mass.
+- The Turkish edition and the content panel no longer print a raw English "left"/"right" in Turkish mode.
 
 ### Fixed
 
-- The content panel said "no 3D mesh in this edition" whenever no mesh carried the entry's own id, which is
-  wrong for an entry whose shapes belong to structures that are themselves entries (the spinal cord lights up
-  the white columns and the grey horns). The notice now appears only when the entry really has no geometry,
-  and distinguishes a shape this edition dropped for its licence from one no atlas provides at all.
-- `scripts/shots-public-edition.mjs` was asserting that the public edition has no cord grid and no cord
-  volumes, which stopped being true when `atlas-cord-public` gave it a cord MRI of its own, and its two
-  "no mesh" probes had since been given stand-ins. It passes again.
+- **The left middle cerebral artery was a stub** — 800 triangles against 3142 on the right — because
+  BodyParts3D has a concept for the right MCA (FMA50082) and none for the left. Both sides are now built from
+  the same named parts (sphenoid, insular, middle temporal branch), 7478 triangles each, symmetric by
+  construction.
+- **Seven BodyParts3D duplicates of MNI-native structures no longer ship** — the whole brain, the cerebral
+  hemispheres, the brainstem, the cerebellum and the lateral ventricles. Measured against the MNI meshes of the
+  same structures they were 10–25 mm off (the hemispheres a mean 15–18 mm inside the cortex), which read as a
+  second brainstem and a second, misaligned cortex. 585 public / 655 private meshes.
+- **Cortical parcels no longer look eroded.** The holes were in the label, not the mesh — a two-voxel ribbon
+  perforated by sulci — and each parcel is now closed with a 1-voxel ball before meshing, without moving any
+  border.
+- `npm run build` and `check-public` no longer require `manifest.exclusions.json`, which a fetched bundle does
+  not contain; the gate runs in a reduced mode and says so.
+- The content panel said "no 3D mesh in this edition" for entries whose shapes belong to other entries; the
+  notice now appears only when the entry really has no geometry.
+- `scripts/shots-public-edition.mjs` asserted things about the public edition that stopped being true when it
+  got its own cord MRI.
 
 ## [1.0.0] - 2026-09-08
 
@@ -284,3 +321,7 @@ Written in numbered batches with the Python authoring helpers in `tools/author/`
   nerves, pathways, syndromes, topics, glossary and quiz, written against `STYLE-tr.md`,
   checked with no errors and terminology-normalised. `content.tr.json` ships in both
   editions and `check-public` treats it like the English bundle.
+
+[Unreleased]: https://github.com/aycibatuhan/nervous-system-atlas/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.1
+[1.0.0]: https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.0

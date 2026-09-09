@@ -74,7 +74,7 @@ npm run dev            # http://localhost:5173
 ```
 
 `npm run data` downloads the prebuilt public edition from the
-[v1.0.0 release](https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.0), checks it against a
+[v1.0.1 release](https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.1), checks it against a
 SHA-256 pinned in the repository before unpacking anything, and will not overwrite data you already have unless
 you pass `--force`. Run the app without it and you get a message on the canvas saying so, not a broken page.
 
@@ -167,7 +167,7 @@ The meshes and volumes are **derivatives** of the third-party datasets listed in
 
 `NOTICE` is generated, never edited by hand — one block per dataset with its citation, licence and download URLs — and `npm run notice -- --check` fails if it is stale. Verbatim licence texts ship with the data in `public/data/licenses/`. In the app, **About** (or `#/about`) lists every source in the loaded build with its licence, its citation and a link to the full text.
 
-**How to cite:** Ayci B. *Clinical Neuroanatomy Atlas*, v1.0.0, 2026. Code Apache 2.0, data and content CC BY-SA 4.0, derived from the datasets in `NOTICE`. Cite the source datasets themselves when you use the meshes, and the open-access references in `content/bibliography/` for the text.
+**How to cite:** Ayci B. *Clinical Neuroanatomy Atlas*, v1.0.1, 2026. Code Apache 2.0, data and content CC BY-SA 4.0, derived from the datasets in `NOTICE`. Cite the source datasets themselves when you use the meshes, and the open-access references in `content/bibliography/` for the text.
 
 ## Known limitations
 
@@ -269,7 +269,7 @@ npm run dev            # http://localhost:5173
 ```
 
 `npm run data`, hazır genel sürümü
-[v1.0.0 sürümünden](https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.0) indirir; hiçbir
+[v1.0.1 sürümünden](https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.1) indirir; hiçbir
 şeyi açmadan önce depoda sabitlenmiş SHA-256 özetiyle doğrular ve `--force` verilmedikçe mevcut veriyi
 üzerine yazmaz. Bu adım atlanırsa uygulama bozuk bir sayfa değil, ne yapılması gerektiğini söyleyen bir ileti
 gösterir.
@@ -363,7 +363,7 @@ Meshler ve hacimler, [NOTICE](NOTICE) dosyasında listelenen üçüncü taraf ve
 
 `NOTICE` üretilir, elle düzenlenmez; her veri kümesi için atıf, lisans ve indirme adresleriyle bir blok içerir ve `npm run notice -- --check` dosya eskidiyse hata verir. Lisans metinlerinin tamamı veriyle birlikte `public/data/licenses/` altında gider. Uygulamada **Hakkında** (ya da `#/about`), yüklü derlemedeki her kaynağı lisansı, atfı ve tam metin bağlantısıyla listeler.
 
-**Nasıl atıf verilir:** Ayci B. *Clinical Neuroanatomy Atlas*, v1.0.0, 2026. Kod Apache 2.0, veri ve içerik CC BY-SA 4.0; `NOTICE` içindeki veri kümelerinden türetilmiştir. Meshleri kullanırken kaynak veri kümelerine, metin için `content/bibliography/` altındaki açık erişimli kaynaklara da atıf verin.
+**Nasıl atıf verilir:** Ayci B. *Clinical Neuroanatomy Atlas*, v1.0.1, 2026. Kod Apache 2.0, veri ve içerik CC BY-SA 4.0; `NOTICE` içindeki veri kümelerinden türetilmiştir. Meshleri kullanırken kaynak veri kümelerine, metin için `content/bibliography/` altındaki açık erişimli kaynaklara da atıf verin.
 
 ## Bilinen sınırlar
 

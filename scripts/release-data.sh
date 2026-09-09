@@ -2,7 +2,12 @@
 # Build the data archive that `npm run data` fetches, and pin its checksum.
 #
 #   scripts/release-data.sh [tag]          # default tag: the version in package.json
-#   scripts/release-data.sh v1.0.0 --upload
+#   scripts/release-data.sh v1.0.1 --upload
+#
+# Order matters: the release exists and the asset is attached BEFORE the commit that pins its checksum is
+# pushed, because that push triggers the Pages deploy, which fetches the asset at once. Every version gets its
+# own asset name (atlas-data-<tag>.tar.gz), and an asset that exists is never replaced -- a pin already on
+# origin points at it. Replacing the v1.0.0 asset in place broke that deploy three times.
 #
 # What goes in is dist/data -- the output of `npm run build`, which is the edition check-public has certified.
 # Nothing else is publishable: dist-private/ must never be uploaded, and public/data/ on a machine with the
@@ -102,9 +107,13 @@ if [[ "${UPLOAD}" == true ]]; then
     echo "release-data: no ${TAG} release yet — create it first (gh release create ${TAG})" >&2
     exit 1
   }
-  gh release upload "${TAG}" "${ASSET}" --clobber
+  if gh release view "${TAG}" --json assets --jq '.assets[].name' | grep -qx "${ASSET}"; then
+    echo "release-data: ${TAG} already has ${ASSET} — a pushed pin may point at it. Cut a new version instead." >&2
+    exit 1
+  fi
+  gh release upload "${TAG}" "${ASSET}"
   echo "attached ${ASSET} to ${TAG}"
 else
   echo
-  echo "not uploaded. To attach it:  gh release upload ${TAG} ${ASSET} --clobber"
+  echo "not uploaded. To attach it:  gh release upload ${TAG} ${ASSET}   (before pushing the pin)"
 fi

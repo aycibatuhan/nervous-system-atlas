@@ -11,7 +11,7 @@ tour; this is the operating manual. The traps below are the ones that actually c
 
 ```bash
 npm ci
-npm run data           # 49 MB from the v1.0.0 release into public/data/, SHA-256 checked
+npm run data           # 48 MB from the v1.0.1 release into public/data/, SHA-256 checked
 npm run dev            # http://localhost:5173
 ```
 
@@ -144,13 +144,23 @@ so in the licence name rather than guessing.
 The data ships as a release asset, not in the repository:
 
 ```bash
-scripts/release-data.sh v1.0.0 --upload
+npm version 1.0.2 --no-git-tag-version         # new tag = new asset name; never re-use one
+scripts/release-data.sh v1.0.2                  # build, gate, verify, pack atlas-data-v1.0.2.tar.gz, re-pin
+gh release create v1.0.2 --target origin/main --title ... --notes-file ...   # the release, from what origin has
+gh release upload v1.0.2 atlas-data-v1.0.2.tar.gz                            # the asset, BEFORE the pin is pushed
+git commit ... && git push                      # the pin lands, Pages fetches an asset that already exists
 ```
 
-It builds fresh, gates, refuses anything that is not the public edition, verifies the archive, rewrites the
-SHA-256 pinned in `scripts/fetch-data.ts` so the fetcher and the asset cannot drift, and uploads. The Pages
-demo (`.github/workflows/pages.yml`) then fetches that same asset — data never reaches the deploy from the
-repository.
+It builds fresh, gates, refuses anything that is not the public edition, verifies the archive and rewrites
+the tag, asset name and SHA-256 pinned in `scripts/fetch-data.ts` so the fetcher and the asset cannot drift.
+The Pages demo (`.github/workflows/pages.yml`) then fetches that same asset — data never reaches the deploy
+from the repository.
+
+**The asset goes up before the pin is pushed, and an asset is never replaced.** Origin pins a checksum, and
+the push that changes it triggers a deploy that fetches the asset immediately; while v1.0.0 kept one asset
+name and clobbered it in place, every re-pin failed that deploy once and needed a re-run, three times over.
+A new version means a new asset name, so the asset can exist before anything points at it and nothing that
+already points at the old one ever breaks. `release-data.sh --upload` refuses to overwrite an existing asset.
 
 ## Conventions
 

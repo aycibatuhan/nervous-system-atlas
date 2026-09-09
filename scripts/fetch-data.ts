@@ -18,10 +18,10 @@ import { join, resolve } from 'node:path';
 
 const RELEASE = {
   repo: 'aycibatuhan/nervous-system-atlas',
-  tag: 'v1.0.0',
-  asset: 'atlas-data-v1.0.0.tar.gz',
-  sha256: 'b0a8d25e421f12c2bbc3be33582ee80398c3365f20763662f06f5e5687cba320',
-  bytes: 47516208,
+  tag: 'v1.0.1',
+  asset: 'atlas-data-v1.0.1.tar.gz',
+  sha256: '3aa410ac8a7d682505045482cfc1c9176311ddf4e2f9f5dac8d06d85fe483af7',
+  bytes: 47515982,
 };
 
 const ROOT = resolve(import.meta.dirname, '..');
