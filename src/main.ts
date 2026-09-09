@@ -108,7 +108,33 @@ async function boot(): Promise<void> {
   };
   renderHelp();
   document.getElementById('viewport')!.append(help);
-  const toolbar = new Toolbar(app, top, { onSearchFocus: () => (left.querySelector('.tree-filter') as HTMLInputElement)?.focus(), onHelp: () => { help.hidden = !help.hidden; } });
+  // Panel layout. `no-left` / `no-right` mean "collapsed" at every width; app.css decides whether that is a
+  // zero-width grid column or a hidden overlay. Below 900px the panels float over the 3D view, so they start
+  // collapsed -- otherwise they would cover the thing the reader came to see. Crossing the breakpoint resets
+  // both, which is also what restores the desktop default on the way back up.
+  const appEl = document.getElementById('app')!;
+  const togglePanel = (side: 'left' | 'right'): void => {
+    const cls = side === 'left' ? 'no-left' : 'no-right';
+    const opened = appEl.classList.toggle(cls) === false;
+    // As overlays the two would sit on top of each other on a phone-width screen, so opening one closes the
+    // other. Side by side in the grid they do not collide, and both stay open.
+    if (opened && overlay.matches) appEl.classList.add(side === 'left' ? 'no-right' : 'no-left');
+    app.sm.resize();
+  };
+  const overlay = window.matchMedia('(max-width: 900px)');
+  const applyOverlay = (m: MediaQueryList | MediaQueryListEvent): void => {
+    appEl.classList.toggle('no-left', m.matches);
+    appEl.classList.toggle('no-right', m.matches);
+    app.sm.resize();
+  };
+  applyOverlay(overlay);
+  overlay.addEventListener('change', applyOverlay);
+
+  const toolbar = new Toolbar(app, top, {
+    onSearchFocus: () => (left.querySelector('.tree-filter') as HTMLInputElement)?.focus(),
+    onHelp: () => { help.hidden = !help.hidden; },
+    onTogglePanel: togglePanel,
+  });
   const search = new SearchBox(toolbar.searchHost, (doc) => {
     if (doc.kind === 'syndrome') location.hash = `#/syndrome/${doc.id}`;
     else if (doc.kind === 'pathway') location.hash = `#/pathway/${doc.id}`;
@@ -156,6 +182,14 @@ async function boot(): Promise<void> {
   app.store.subscribe((s) => s.showNc, () => { syncVisibility(app); tree.render(); });
   // picking a structure while a quiz / glossary / topic panel is open returns to the structure panel
   app.store.subscribe((s) => s.selectedId, (id) => { if (id && app.store.get().panel && !app.store.get().syndrome) { app.store.set({ panel: null }); showPanel('main'); } });
+  // In overlay mode the detail panel is closed by default, so selecting a structure would otherwise write
+  // its text into something the reader cannot see. Open it for them, and get the tree out of the way.
+  app.store.subscribe((s) => s.selectedId, (id) => {
+    if (!id || !overlay.matches) return;
+    appEl.classList.remove('no-right');
+    appEl.classList.add('no-left');
+    app.sm.resize();
+  });
   app.store.subscribe((s) => [s.selectedId, s.hoverId, s.syndrome, s.involved, s.stepHighlight] as const, () => { applyStates(app); updateLuts(app); }, (a, b) => a[0] === b[0] && a[1] === b[1] && a[2] === b[2] && a[3] === b[3] && a[4] === b[4]);
   app.store.subscribe((s) => s.slices, (sl) => { for (const ax of ['axial', 'coronal', 'sagittal'] as Axis[]) { app.slices[ax].setPosition(sl[ax]); app.slices[ax].setVisible(sl.visible[ax] && app.store.get().loaded.volume); } applyPeel(app); app.sm.requestRender(); });
   app.store.subscribe((s) => s.peel, (peel) => { applyPeel(app); app.sm.aoSuppressed = Object.keys(peel).length > 0; app.sm.requestRender(); });
@@ -311,8 +345,8 @@ async function boot(): Promise<void> {
       case 'ArrowDown': setSlices(app, { [lastAxis]: s.slices[lastAxis] - (e.shiftKey ? 5 : 1) }); e.preventDefault(); break;
       case 't': setContrast(app, s.contrast === 't1w' ? 't2w' : 't1w'); break;
       case 'p': setPeel(app, lastAxis, s.peel[lastAxis] ? null : 'positive'); break;   // the slice last toggled with a / c / s
-      case '[': document.getElementById('app')!.classList.toggle('no-left'); app.sm.resize(); break;
-      case ']': document.getElementById('app')!.classList.toggle('no-right'); app.sm.resize(); break;
+      case '[': togglePanel('left'); break;
+      case ']': togglePanel('right'); break;
       case 'Escape': if (s.syndrome) location.hash = '#/slice'; else selectStructure(app, null); break;
       case 'f': search.input.focus(); e.preventDefault(); break;
       case '?': help.hidden = !help.hidden; break;

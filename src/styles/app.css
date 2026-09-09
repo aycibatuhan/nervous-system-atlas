@@ -2,7 +2,7 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); overflow: hidden; }
-#app { display: grid; grid-template-columns: 300px 1fr 420px; grid-template-rows: 44px 1fr 64px; grid-template-areas: "top top top" "left main right" "bottom bottom bottom"; height: 100vh; }
+#app { display: grid; position: relative; grid-template-columns: 300px 1fr 420px; grid-template-rows: 44px 1fr 64px; grid-template-areas: "top top top" "left main right" "bottom bottom bottom"; height: 100vh; }
 #app.no-left { grid-template-columns: 0 1fr 420px; } #app.no-right { grid-template-columns: 300px 1fr 0; } #app.no-left.no-right { grid-template-columns: 0 1fr 0; }
 #toolbar { grid-area: top; display: flex; align-items: center; gap: 12px; padding: 0 12px; background: var(--panel); border-bottom: 1px solid var(--border); }
 #left { grid-area: left; overflow: hidden; display: flex; flex-direction: column; background: var(--panel); border-right: 1px solid var(--border); }
@@ -12,6 +12,7 @@ html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); o
 #bottom { grid-area: bottom; background: var(--panel); border-top: 1px solid var(--border); overflow: hidden; }
 .brand { white-space: nowrap; } .brand .sub { color: var(--muted); margin-left: 6px; }
 .presets, .tools { display: flex; gap: 4px; flex-wrap: nowrap; }
+.panel-toggle { display: none; }
 button { background: var(--panel2); color: var(--fg); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; cursor: pointer; font-size: 12px; }
 button:hover { border-color: var(--accent2); }
 .status { color: var(--muted); margin-left: 8px; white-space: nowrap; }
@@ -103,6 +104,47 @@ code { background: var(--panel2); padding: 0 4px; border-radius: 3px; }
    nothing overflows, nothing is clipped, and the input never drops below its 200px floor. */
 .presets { min-width: 0; }
 .search-results { min-width: 320px; }
+/* ---- narrow windows ---------------------------------------------------------------------------------
+   The three columns are 720 px of panels before the 3D view gets anything at all, so a 900 px window left
+   it 180 px wide and anything under 720 px pushed it off the screen entirely -- which read as a broken page
+   rather than as a desktop layout. Two steps down: narrower panels first, then panels that float over the
+   canvas instead of taking columns from it, so the 3D view always has the whole width.
+
+   `no-left` / `no-right` keep their single meaning, "this panel is collapsed"; the media query only changes
+   what collapsing looks like (a zero-width column, or a hidden overlay). main.ts collapses both on entering
+   overlay mode, and SceneManager's ResizeObserver on #viewport re-sizes the renderer on its own. */
+@media (max-width: 1100px) {
+  #app { grid-template-columns: 240px 1fr 330px; }
+  #app.no-left { grid-template-columns: 0 1fr 330px; }
+  #app.no-right { grid-template-columns: 240px 1fr 0; }
+  #app.no-left.no-right { grid-template-columns: 0 1fr 0; }
+}
+@media (max-width: 900px) {
+  #app, #app.no-left, #app.no-right, #app.no-left.no-right { grid-template-columns: 0 1fr 0; }
+  #left, #right {
+    position: absolute; top: 44px; bottom: 64px; z-index: 30;
+    width: min(330px, 88vw); box-shadow: 0 6px 28px rgba(0, 0, 0, .55);
+  }
+  #left { left: 0; } #right { right: 0; }
+  #app.no-left #left, #app.no-right #right { display: none; }
+  .panel-toggle { display: inline-block; }
+  /* the slice controls wrap onto more rows down here, and 64 px would clip them */
+  #bottom { overflow-y: auto; }
+  /* The toolbar is nowrap, so at this width its contents were 888px in a 768px window: it pushed the whole
+     page sideways, and focusing a button scrolled the layout off its own left edge. Drop the two items that
+     earn least here -- "Tree filter" focuses an input inside a panel that is now closed, and Quality is a
+     nicety -- let the brand ellipsize, and give the bar its own scroll so it can never move the page again. */
+  #toolbar { overflow-x: auto; gap: 8px; }
+  #toolbar .tree-btn, #toolbar .quality-btn { display: none; }
+  #toolbar .brand { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  #toolbar .search-host { min-width: 0; }
+}
+/* On a phone the brand ellipsizes down to an empty box, which looks like a broken control rather than a
+   title; the document title still carries the name. */
+@media (max-width: 600px) {
+  #toolbar .brand { display: none; }
+}
+
 @media (max-width: 1700px) {
   .brand .sub { display: none; }
   #toolbar button { padding: 2px 6px; font-size: 11px; }

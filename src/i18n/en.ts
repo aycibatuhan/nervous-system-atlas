@@ -35,6 +35,10 @@ export const en = {
   'locale.name.tr': 'Türkçe',
 
   // ---- toolbar
+  'toolbar.panelLeft': 'Structures',
+  'toolbar.panelLeft.title': 'Show or hide the structure tree',
+  'toolbar.panelRight': 'Details',
+  'toolbar.panelRight.title': 'Show or hide the detail panel',
   'toolbar.treeFilter': 'Tree filter',
   'toolbar.treeFilter.title': 'Filter tree',
   'toolbar.quiz': 'Quiz',

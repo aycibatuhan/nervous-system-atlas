@@ -177,14 +177,14 @@ The meshes and volumes are **derivatives** of the third-party datasets listed in
 - **Some structures have no mesh in either edition.** The thalamostriate vein is not separable from the internal cerebral vein in the venous atlas, and a handful of entries are text-only for the same kind of reason.
 - **Twelve meshes are constructed, not segmented** — the phrenic nerves, cord segment blocks, the lumbosacral trunk, the fourth-ventricle choroid plexus — and are flagged as schematic wherever they appear.
 - **General neuron and glial biology is covered only where it touches a topic** (transmitters, nerve injury, cortical layers).
-- **No mobile layout.** The three-column desktop layout is what exists; it degrades but is not designed for a phone.
+- **Built for a desktop window.** Below 1100px the panels narrow, and below 900px they float over the 3D view and start closed, so the atlas stays usable on a tablet or a half-width window — but the three-column layout is still what it is designed around, and a phone gets a workable 3D view rather than a phone interface.
 
 ## Roadmap
 
 - A Turkish neurologist's review of the translated prose, entry by entry.
 - A licence for the PAM50 template. `pipeline/raw/pam50/LICENSE_REQUEST_DRAFT.txt` is a drafted, unsent request; if the authors state one, the private cord MRI, the measured cord segments and the PAM50-cut filum could all ship publicly and the two editions would differ by that much less.
 - More of the peripheral nervous system: the current coverage is the clinically load-bearing nerves, not a complete peripheral atlas.
-- A responsive layout for tablets.
+- A layout designed for phones, rather than the desktop one degrading gracefully.
 - Deep links into a specific slice and camera, so a teaching link can open exactly one view.
 
 ## Contributing, security and contact
@@ -373,14 +373,14 @@ Meshler ve hacimler, [NOTICE](NOTICE) dosyasında listelenen üçüncü taraf ve
 - **Bazı yapıların iki sürümde de meshi yoktur.** Vena thalamostriata venöz atlasta vena cerebri interna'dan ayrılamıyor; birkaç kayıt benzer nedenlerle yalnızca metindir.
 - **On iki mesh bölütlenmemiş, kurulmuştur** (nervus phrenicus, kord segment blokları, truncus lumbosacralis, dördüncü ventrikülün pleksus koroideusu) ve göründükleri her yerde şematik olarak işaretlenmiştir.
 - **Genel nöron ve glia biyolojisi** yalnızca bir konuya değdiği ölçüde işlenmiştir (transmitterler, sinir hasarı, kortikal katmanlar).
-- **Mobil düzen yoktur.** Var olan, üç sütunlu masaüstü düzenidir; küçülür ama telefon için tasarlanmamıştır.
+- **Masaüstü penceresi için tasarlanmıştır.** 1100 pikselin altında paneller daralır, 900 pikselin altında ise 3B görünümün üzerine yerleşir ve kapalı başlar; böylece tablette ya da yarım genişlikte pencerede kullanılabilir kalır. Yine de tasarımın dayandığı düzen üç sütunludur ve telefonda elde edilen şey, telefona özgü bir arayüz değil, çalışan bir 3B görünümdür.
 
 ## Yol haritası
 
 - Çevrilmiş metinlerin bir Türk nörolog tarafından kayıt kayıt incelenmesi.
 - PAM50 şablonu için bir lisans. `pipeline/raw/pam50/LICENSE_REQUEST_DRAFT.txt` yazarlara gönderilmemiş bir istek taslağıdır; lisans belirtirlerse özel kord MR'ı, ölçülmüş kord segmentleri ve PAM50 ile kesilen filum terminale de açık sürümde yer alabilir ve iki sürüm arasındaki fark o kadar azalır.
 - Periferik sinir sisteminin daha geniş kapsanması: bugünkü kapsam klinik olarak yük taşıyan sinirlerdir, eksiksiz bir periferik atlas değil.
-- Tabletler için duyarlı bir düzen.
+- Masaüstü düzeninin küçülmesi yerine, telefonlar için tasarlanmış bir düzen.
 - Belirli bir kesit ve kameraya doğrudan bağlantı, böylece bir öğretim bağlantısı tam olarak tek bir görünümü açar.
 
 ## Katkı, güvenlik ve iletişim

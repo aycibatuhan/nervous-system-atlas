@@ -23,12 +23,13 @@ export class Toolbar {
   private counts: { meshes: number; authored: number | null } = { meshes: 0, authored: null };
   private error: string | null = null;
 
-  constructor(private app: App, container: HTMLElement, opts: { onSearchFocus(): void; onHelp(): void }) {
+  constructor(private app: App, container: HTMLElement,
+    opts: { onSearchFocus(): void; onHelp(): void; onTogglePanel(side: 'left' | 'right'): void }) {
     this.searchHost = h('div', { class: 'search-host' });
     this.presetBtns = PRESETS.map((p) => h('button', { dataset: { preset: p.id }, onclick: () => applyCameraPreset(app, p.id) }));
     const presets = h('div', { class: 'presets' }, ...this.presetBtns);
     this.status = h('span', { class: 'status' });
-    this.qualityBtn = h('button', { onclick: () => app.store.set({ quality: app.store.get().quality === 'high' ? 'low' : 'high' }) });
+    this.qualityBtn = h('button', { class: 'quality-btn', onclick: () => app.store.set({ quality: app.store.get().quality === 'high' ? 'low' : 'high' }) });
     this.localeBtn = h('button', { id: 'locale-switch', onclick: () => setLocale(otherLocale()) });
     this.helpBtn = h('button', { id: 'help-btn', onclick: () => opts.onHelp() }, '?');
     const btn = (label: Key, title: Key, extra: Record<string, unknown>): HTMLButtonElement => {
@@ -43,7 +44,10 @@ export class Toolbar {
       presets,
       this.searchHost,
       h('div', { class: 'tools' },
-        btn('toolbar.treeFilter', 'toolbar.treeFilter.title', { onclick: () => opts.onSearchFocus() }),
+        // only rendered below 900px, where the panels float over the 3D view and start closed
+        btn('toolbar.panelLeft', 'toolbar.panelLeft.title', { class: 'panel-toggle', 'data-testid': 'panel-left', onclick: () => opts.onTogglePanel('left') }),
+        btn('toolbar.panelRight', 'toolbar.panelRight.title', { class: 'panel-toggle', 'data-testid': 'panel-right', onclick: () => opts.onTogglePanel('right') }),
+        btn('toolbar.treeFilter', 'toolbar.treeFilter.title', { class: 'tree-btn', onclick: () => opts.onSearchFocus() }),
         btn('toolbar.quiz', 'toolbar.quiz.title', { onclick: () => { location.hash = '#/quiz'; } }),
         btn('toolbar.topics', 'toolbar.topics.title', { onclick: () => { location.hash = '#/topic'; } }),
         btn('toolbar.glossary', 'toolbar.glossary.title', { onclick: () => { location.hash = '#/glossary'; } }),

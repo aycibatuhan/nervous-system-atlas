@@ -32,6 +32,10 @@ export const tr: Record<keyof typeof en, string> = {
   'locale.name.tr': 'Türkçe',
 
   // ---- araç çubuğu
+  'toolbar.panelLeft': 'Yapılar',
+  'toolbar.panelLeft.title': 'Yapı ağacını göster ya da gizle',
+  'toolbar.panelRight': 'Ayrıntılar',
+  'toolbar.panelRight.title': 'Ayrıntı panelini göster ya da gizle',
   'toolbar.treeFilter': 'Yapı filtresi',
   'toolbar.treeFilter.title': 'Yapı ağacında filtrele',
   'toolbar.quiz': 'Vaka soruları',
