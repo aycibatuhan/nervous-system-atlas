@@ -57,10 +57,29 @@ def _record(spec, atlas_id, atlas_labels, alignment, st, path, nbytes, voxels, e
             "atlasLabels": list(atlas_labels) if atlas_labels is not None else None, "voxels": int(voxels), **st, **(extra or {})}
 
 
+def ball(r: int) -> np.ndarray:
+    z, y, x = np.ogrid[-r:r + 1, -r:r + 1, -r:r + 1]
+    return (x * x + y * y + z * z) <= r * r
+
+
+def fill_parcel(mask: np.ndarray, allowed: np.ndarray, radius: int) -> np.ndarray:
+    """Morphological closing of one parcel, confined to `allowed` voxels (not another parcel's, not outside the
+    brain). Fills the tunnels and pits a sulcus punches through a thin cortical ribbon without moving any voxel
+    that was already in the parcel, so borders with neighbouring parcels stay where the atlas put them."""
+    closed = ndimage.binary_closing(mask, structure=ball(radius), border_value=0)
+    return mask | (closed & allowed)
+
+
 def build_label_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool = False) -> list[dict]:
     img = load_atlas(a)
     data = np.rint(np.asanyarray(img.dataobj)).astype(np.int32)
     aff = img.affine
+    allowed = None
+    if a.fill_radius:
+        brain = np.asanyarray(load_ras(MASK).dataobj) > 0
+        if brain.shape != data.shape:
+            raise SystemExit(f"{a.id}: fill_radius needs the atlas on the template grid ({data.shape} vs {brain.shape})")
+        allowed = brain & ~np.isin(data, list(a.entries))
     alignment = a.alignment or ("native-mni" if a.space == "mni2009" else "nlin6-identity")
     # x coordinate of every voxel (for side splitting of unlateralised atlases)
     xs = None
@@ -89,6 +108,8 @@ def build_label_atlas(a: catalog.AtlasSpec, only: set[str] | None, force: bool =
             c = cached(out_id, path, force)
             if c:
                 out.append(c); continue
+            if allowed is not None:
+                mask = fill_parcel(mask, allowed, a.fill_radius)
             spec_side = MeshSpec(**{**spec.__dict__, "id": out_id, "side": side, "name": spec.name + (f" ({'L' if side == 'left' else 'R'})" if spec.side == "bilateral" else ""),
                                     "structure_id": spec.structure_id})
             mesh = mesh_from_mask(mask, aff, BUDGET[spec.budget], sigma=0.6 if abs(aff[0, 0]) >= 0.9 else 1.0)

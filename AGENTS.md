@@ -113,6 +113,9 @@ before a release. Run the whole list before anything is published.
   `atlas-register` can fit the frame on them, and `atlas-bp3d-meshes` retires anything they once left in
   `public/data/`. Do not ship them: they are a second specimen, 10–25 mm off the MNI-native meshes of the same
   structures, and they read as two brainstems and two cortices.
+- **A cortical parcel that looks eroded is the label, not the mesh.** The meshes reproduce the label surface to
+  0.24 mm; the holes are sulci punching through a two-voxel ribbon, and `AtlasSpec.fill_radius` closes them
+  before meshing. Do not reach for the triangle budget — 20k against 60k makes no measurable difference.
 - **One e2e test is timing-sensitive.** `interaction budget` measures frame pacing and can fail on a loaded
   machine. Re-run it alone before believing it.
 - **`npm run e2e` needs a dev server with data**, except `e2e/no-data.spec.ts`, which fakes the missing

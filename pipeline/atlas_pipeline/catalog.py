@@ -41,6 +41,13 @@ BUDGET = {"huge": 60000, "large": 40000, "cortical": 20000, "medium": 8000, "sma
           "tract": 20000, "territory": 16000, "vessel": 60000}
 # one class up for vessels and nerves (bifurcations and thin tubes lose shape first under decimation)
 BUDGET_BUMP = {"tiny": "small", "small": "medium", "medium": "large", "large": "huge"}
+# A cortical parcel in a 1 mm group-average label volume is a ribbon two voxels thick, and sulcal CSF punches
+# straight through it: the superior parietal lobule alone had 54 tunnels and 16 surface shells, and read as
+# "eroded" to a neurologist. The mesh was faithful (0.24 mm mean from the raw label surface, 100% of the label
+# volume); the holes are in the label. Each parcel is therefore closed with a ball of this radius (voxels)
+# before meshing, taking only non-cortical voxels inside the brain mask so parcels never grow into each other.
+CORTICAL_FILL_RADIUS = 1
+
 LOD_FACES = 3000          # stand-in size for the first paint
 LOD_MIN_FACES = 12000     # meshes at or above this get a stand-in
 
@@ -197,6 +204,7 @@ class AtlasSpec:
     files: dict[str, MeshSpec] = field(default_factory=dict)     # per-file binary masks (HCP1065)
     alignment: str | None = None   # overrides the alignment string recorded per mesh (see atlas_meshes)
     edition: str | None = None     # "public" -> the mesh exists only in the public edition (see manifest.py)
+    fill_radius: int = 0           # voxels; close each parcel's perforations before meshing (see atlas_meshes.fill_parcel)
 
 
 def LR(base_id: str, name: str, system: str, lab_l: int, lab_r: int, **kw) -> dict[int, MeshSpec]:
@@ -520,7 +528,7 @@ def cerebra_entries() -> dict[int, MeshSpec]:
 def cerebra_atlas(file: str | None = None, alignment: str = "nlin2009csym-identity") -> AtlasSpec:
     """The CerebrA cortex as an atlas spec. `file` overrides the raw path (used for the warped copy)."""
     return AtlasSpec("cerebra", file or CEREBRA_FILE, "mni2009", priority=2, alignment=alignment,
-                     edition="public", entries=cerebra_entries())
+                     edition="public", entries=cerebra_entries(), fill_radius=CORTICAL_FILL_RADIUS)
 
 
 # ================================================================ FastSurfer CerebNet cerebellum (PUBLIC edition only)
@@ -583,7 +591,8 @@ def fastsurfer_cerebellum_atlas(file: str | None = None) -> AtlasSpec:
 def atlases() -> list[AtlasSpec]:
     return [
         AtlasSpec("mni_aseg", "mni_aseg/tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz", "mni2009", priority=1, entries=aseg_entries()),
-        AtlasSpec("harvard_oxford", "harvard_oxford/tpl-MNI152NLin2009cAsym_res-01_atlas-HOCPAL_desc-th25_dseg.nii.gz", "mni2009", priority=2, entries=hocpal_entries()),
+        AtlasSpec("harvard_oxford", "harvard_oxford/tpl-MNI152NLin2009cAsym_res-01_atlas-HOCPAL_desc-th25_dseg.nii.gz", "mni2009", priority=2, entries=hocpal_entries(),
+                  fill_radius=CORTICAL_FILL_RADIUS),
         AtlasSpec("diedrichsen_cerebellum", "diedrichsen_cerebellum/atl-Anatom_space-MNI_dseg.nii", "nlin6", priority=3, entries=diedrichsen_entries()),
         AtlasSpec("hypothalamus_neudorfer", "hypothalamus_neudorfer/MNI152b_atlas_labels_0.5mm.nii.gz", "mni2009", priority=4, entries=hypothalamus_entries()),
         AtlasSpec("cit168", "cit168/CIT168toMNI152-2009c_det.nii.gz", "mni2009", priority=5,
