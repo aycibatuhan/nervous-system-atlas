@@ -51,10 +51,14 @@ licenses:
   #     FreeSurfer licence grants use, derivative works and redistribution and says nothing about outputs, so
   #     the segmentation is not encumbered -- but the honest label is not "(c) Louis Collins".
   Apache-2.0:
-    name: Apache License 2.0
+    name: Apache License 2.0 (the MASSP project's own licence; the distributor of the file states none)
     url: https://www.apache.org/licenses/LICENSE-2.0
-    attribution: "MASSP structures prior, (c) Pierre-Louis Bazin, University of Amsterdam (doi:10.21942/uva.12074175),
-      Apache License 2.0. The meshes derived from it here are modified: the parcellation was read on the
+    attribution: "MASSP subcortical parcellation, (c) Pierre-Louis Bazin, University of Amsterdam. The file used
+      here is TemplateFlow's tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz, which arrives with no
+      licence and no copyright notice of its own -- TemplateFlow publishes no sidecar for it. Apache License 2.0
+      is the licence the MASSP authors placed on the atlas priors the parcellation is produced from
+      (doi:10.21942/uva.12074175), and it is recorded here as the best-evidenced upstream terms rather than as a
+      statement by the distributor. The meshes derived from it are modified: the parcellation was read on the
       MNI152NLin2009cAsym grid, meshed by signed-distance field, smoothed, decimated and welded as the manifest
       records per mesh."
 
@@ -78,14 +82,36 @@ licenses:
     url: https://creativecommons.org/licenses/by-sa/4.0/
     attribution: "Turkish Wikipedia (Vikipedi) contributors, https://tr.wikipedia.org/ - article titles and redirects
       used as Turkish search synonyms"
+  # HARVARD-OXFORD: `nc: true` BELOW IS A HOLD, NOT A LICENCE STATEMENT. Verified 2026-09-09 against FSL's own
+  # licence page (https://fsl.fmrib.ox.ac.uk/fsl/docs/license.html), which since 2025-08-05 says:
+  #   "The Cerebellum and Harvard-Oxford atlases, whilst not being the property of Oxford, are released under
+  #    the CC BY-SA 4.0 licence"
+  # -- explicitly carving them out of the non-commercial FSL software licence that still covers JHU, Juelich,
+  # Striatum and Thalamus. So Harvard-Oxford is NOT non-commercial, and CC BY-SA 4.0 is exactly this project's
+  # own outbound data licence: it could ship. The flag is left in place because removing it would immediately
+  # add 96 Harvard-Oxford parcels to the public edition, and that is a decision about what to publish, not a
+  # metadata correction. Two caveats for whoever makes it: FSL grants these terms on data it says in the same
+  # sentence is "not being the property of Oxford", and the upstream holder (the Harvard CMA) states no terms
+  # at all. The URL we used to cite, fslwiki/Atlases, is now a 301 to a page that states no licence.
   FSL-NC:
-    name: Harvard-Oxford atlas (FSL, non-commercial)
-    url: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases
+    name: Harvard-Oxford atlas (FSL) - held back pending review, see the note in sources.yaml
+    url: https://fsl.fmrib.ox.ac.uk/fsl/docs/license.html
     nc: true
-  CC-BY-NC-3.0:
-    name: Creative Commons Attribution-NonCommercial 3.0 (Diedrichsen cerebellar atlas)
-    url: https://creativecommons.org/licenses/by-nc/3.0/
-    nc: true
+
+  # DIEDRICHSEN: this was recorded as CC BY-NC 3.0, which is wrong twice over -- wrong licence element and an
+  # invented version. Verified 2026-09-09: the repository has NO LICENSE file (LICENSE, LICENCE, LICENSE.md and
+  # COPYING all 404; GitHub's own licence detection returns null), and the only statement is the last line of
+  # README.md:
+  #   "If not otherwise noted in the contributing paper, the atlases are distributed under a Creative Commons
+  #    license CC BY-ND (Attribution - No derivatives)."
+  # No version is given, so no verbatim legal code is shipped for it -- we do not know which one to ship.
+  # ND is why it stays out, and it is a firmer reason than NC ever was: we mesh the volume, which makes a
+  # derivative, and ND forbids DISTRIBUTING adaptations. Making them locally is fine, which is what the private
+  # edition does. Commerciality is irrelevant to this.
+  CC-BY-ND:
+    name: Creative Commons Attribution-NoDerivatives (Diedrichsen cerebellar atlas; no version stated upstream)
+    url: https://github.com/DiedrichsenLab/cerebellar_atlases#reference-and-licence
+    no_redistribution: true
 
   PAM50-unlicensed:
     name: PAM50 template and atlas (no licence file is shipped with the data)
@@ -193,7 +219,7 @@ sources:
   - id: diedrichsen_cerebellum
     name: "Probabilistic MR atlas of the human cerebellum"
     group: restricted
-    license: CC-BY-NC-3.0
+    license: CC-BY-ND
     citation: "Diedrichsen J et al. A probabilistic MR atlas of the human cerebellum. NeuroImage 2009."
     files:
       - url: https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom_space-MNI_dseg.nii

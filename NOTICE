@@ -59,8 +59,8 @@ public edition of the atlas.
   Citation:    Desikan RS et al. 2006; Makris N et al. 2006; Frazier JA et
                al. 2005; Goldstein JM et al. 2007 (Harvard-Oxford atlases,
                FSL).
-  Licence:     Harvard-Oxford atlas (FSL, non-commercial)
-               https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases
+  Licence:     Harvard-Oxford atlas (FSL) - held back pending review, see the note in sources.yaml
+               https://fsl.fmrib.ox.ac.uk/fsl/docs/license.html
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-HOCPAL_desc-th25_dseg.nii.gz
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-HOSPA_desc-th25_dseg.nii.gz
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_atlas-HOCPAL_dseg.tsv
@@ -82,14 +82,21 @@ public edition of the atlas.
   Dataset:     MASSP multi-contrast subcortical parcellation
   Citation:    Bazin PL et al. Multi-contrast anatomical subcortical
                structures parcellation (MASSP). eLife 2020.
-  Licence:     Apache License 2.0
+  Licence:     Apache License 2.0 (the MASSP project's own licence; the distributor of the file states none)
                https://www.apache.org/licenses/LICENSE-2.0
-  Attribution: MASSP structures prior, (c) Pierre-Louis Bazin, University of
-               Amsterdam (doi:10.21942/uva.12074175), Apache License 2.0. The
-               meshes derived from it here are modified: the parcellation was
-               read on the MNI152NLin2009cAsym grid, meshed by
-               signed-distance field, smoothed, decimated and welded as the
-               manifest records per mesh.
+  Attribution: MASSP subcortical parcellation, (c) Pierre-Louis Bazin,
+               University of Amsterdam. The file used here is TemplateFlow's
+               tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz,
+               which arrives with no licence and no copyright notice of its
+               own -- TemplateFlow publishes no sidecar for it. Apache
+               License 2.0 is the licence the MASSP authors placed on the
+               atlas priors the parcellation is produced from
+               (doi:10.21942/uva.12074175), and it is recorded here as the
+               best-evidenced upstream terms rather than as a statement by
+               the distributor. The meshes derived from it are modified: the
+               parcellation was read on the MNI152NLin2009cAsym grid, meshed
+               by signed-distance field, smoothed, decimated and welded as
+               the manifest records per mesh.
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.tsv
 
@@ -137,11 +144,11 @@ public edition of the atlas.
   Dataset:     Probabilistic MR atlas of the human cerebellum
   Citation:    Diedrichsen J et al. A probabilistic MR atlas of the human
                cerebellum. NeuroImage 2009.
-  Licence:     Creative Commons Attribution-NonCommercial 3.0 (Diedrichsen cerebellar atlas)
-               https://creativecommons.org/licenses/by-nc/3.0/
+  Licence:     Creative Commons Attribution-NoDerivatives (Diedrichsen cerebellar atlas; no version stated upstream)
+               https://github.com/DiedrichsenLab/cerebellar_atlases#reference-and-licence
   Download:    https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom_space-MNI_dseg.nii
                https://raw.githubusercontent.com/DiedrichsenLab/cerebellar_atlases/master/Diedrichsen_2009/atl-Anatom.tsv
-  *** NON-COMMERCIAL - EXCLUDED FROM THE PUBLIC EDITION ***
+  *** NO REDISTRIBUTION OF DERIVED FILES - EXCLUDED FROM THE PUBLIC EDITION ***
 
 --- mouches_arteries ---
   Dataset:     Statistical atlas of the cerebral arteries

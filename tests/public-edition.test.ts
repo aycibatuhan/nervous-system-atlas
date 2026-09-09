@@ -50,7 +50,7 @@ describe('public edition — the private edition is untouched', () => {
   it('still carries the restricted licences and their meshes', () => {
     if (!priv) return;
     expect(priv!.edition ?? 'private').toBe('private');
-    for (const id of ['FSL-NC', 'CC-BY-NC-3.0', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']) expect(priv!.licenses[id]).toBeTruthy();
+    for (const id of ['FSL-NC', 'CC-BY-ND', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']) expect(priv!.licenses[id]).toBeTruthy();
     expect(priv!.meshes.some((m) => m.license === 'FSL-NC')).toBe(true);
     expect(priv!.meshes.some((m) => m.license === 'BrainstemNavigator-NC-ND')).toBe(true);
     expect(priv!.grids?.['cord']).toBeTruthy();
@@ -77,7 +77,7 @@ describe('public edition — the private edition is untouched', () => {
 describe.skipIf(!priv)('public edition — the manifest filter', () => {
   it('excludes every nc / no-redistribution mesh, source, licence and volume', () => {
     const ex = excludeFrom(priv!);
-    expect(ex.restricted).toEqual(new Set(['FSL-NC', 'CC-BY-NC-3.0', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']));
+    expect(ex.restricted).toEqual(new Set(['FSL-NC', 'CC-BY-ND', 'BrainstemNavigator-NC-ND', 'PAM50-unlicensed']));
     expect(ex.sources).toEqual(new Set(['harvard_oxford', 'diedrichsen_cerebellum', 'brainstem_navigator', 'pam50']));
     expect(ex.meshes.size).toBeGreaterThan(150);
     expect(ex.volumes).toEqual(new Set(['cord_t2', 'cord_t1', 'labels_spine']));

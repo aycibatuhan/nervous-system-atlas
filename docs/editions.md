@@ -22,8 +22,8 @@ node scripts/shots-public-cord.mjs           # the public edition's cord MRI + q
 
 | Dataset | Licence | Why |
 |---|---|---|
-| Harvard-Oxford (FSL) | `FSL-NC` | non-commercial only |
-| Diedrichsen cerebellar atlas | `CC-BY-NC-3.0` | non-commercial only |
+| Harvard-Oxford (FSL) | `FSL-NC` | held back pending review; FSL relicensed it to CC BY-SA 4.0 on 2025-08-05 |
+| Diedrichsen cerebellar atlas | `CC-BY-ND` | no derivatives may be distributed, and we mesh the volume |
 | Brainstem Navigator | `BrainstemNavigator-NC-ND` | non-commercial, and clause 2 forbids passing derived files outside the organisation |
 | PAM50 template | `PAM50-unlicensed` | the repository ships no licence at all, so derived files are treated as research-use-only |
 
@@ -93,6 +93,34 @@ The content build validates the authored JSON against the **union** of the two m
 
 `tests/public-edition.test.ts` re-implements the exclusion rule in TypeScript, runs it over the real private manifest, and requires `atlas-manifest` to have dropped exactly the same set from the public manifest — so a change on either side shows up as a test failure — then checks that the private manifest, the private bundle and `content/` are untouched. `node scripts/check-data.ts --all` checks both manifests (`--manifest <file>` picks one, including `dist/data/manifest.json`).
 
+## The exclusion is unconditional
+
+**Nobody's use of this project is what makes publishing it safe. The exclusion is.** That distinction matters
+enough to state plainly, because the obvious shortcut — "this is a non-commercial educational project, so the
+non-commercial datasets are fine" — is wrong on every one of the four, and acting on it would publish material
+we have no right to publish.
+
+| Dataset | Why it is out | Does non-commercial use change it? |
+|---|---|---|
+| Brainstem Navigator | clause 2 forbids distributing the files, or anything derived from them, outside your organisation | **No.** The clause is about distribution, not about money. |
+| PAM50 | the repository states no licence at all, so no permission to redistribute has been given | **No.** Absent permission is absent for everyone. |
+| Diedrichsen cerebellum | CC BY-ND: adaptations may not be distributed, and the pipeline meshes the volume | **No.** ND restricts derivatives, and permits commercial use. |
+| Harvard-Oxford | **held back pending review, not for a licence reason** — FSL relicensed it to CC BY-SA 4.0 on 2025-08-05 | Not applicable; it is no longer non-commercial. |
+
+Two of the four are unaffected by commerciality because their restriction is on *distribution*, not on money.
+A third turned out to restrict *derivatives*, which is the one thing a mesh pipeline unavoidably makes. Only
+Harvard-Oxford was ever really a non-commercial question, and as of August 2025 it is not one either.
+
+The outbound licence makes the same point from the other side. The data ships as **CC BY-SA 4.0**, which
+requires that adaptations be shareable under the same terms. A CC BY-NC input cannot be relicensed into that,
+and a CC BY-ND input cannot be adapted for distribution at all — so a build containing either could not
+honestly carry the licence this one carries, whoever was running it and for whatever purpose.
+
+**Do not add a build mode that includes the restricted data on the grounds that a particular use is
+non-commercial.** There is no such mode and there should not be one: it would produce an artefact that looks
+like the public edition, passes for it, and may not be shared. `npm run build:private` already exists for
+building everything locally, and its output is marked do-not-publish for exactly this reason.
+
 ## Obtaining the restricted datasets
 
 Everything above is about what the public edition leaves out. This is the other direction: what you have to do
@@ -127,18 +155,35 @@ Then `atlas-manifest` (which writes `manifest.private.json` once restricted data
 
 **Harvard-Oxford (`FSL-NC`).** Five files from TemplateFlow — the cortical, subcortical and cortical-parcellation
 segmentations plus their label tables — over plain HTTPS into `pipeline/raw/harvard_oxford/`. Nothing to
-register for and nothing to click through: the downloader just fetches them. What you are agreeing to is the
-licence itself, which is **non-commercial use only** under the FSL atlas terms at
-<https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases>. That page is the authority; the repository records the name
-and the URL, not the clause text, so read it there rather than here. Cite Desikan et al. 2006, Makris et al.
-2006, Frazier et al. 2005 and Goldstein et al. 2007.
+register for and nothing to click through.
 
-**Diedrichsen cerebellum (`CC-BY-NC-3.0`).** Two files — the probabilistic anatomical segmentation and its
-label table — from the DiedrichsenLab `cerebellar_atlases` repository into
-`pipeline/raw/diedrichsen_cerebellum/`. Again nothing to register for; the obligation is the licence,
-[CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/), whose full legal code the pipeline copies into
-`public/data/licenses/CC-BY-NC-3.0.txt`. Attribution and non-commercial use. Cite Diedrichsen et al.,
-*NeuroImage* 2009.
+The licence id is now misleading, and deliberately left alone. Checked against
+[FSL's licence page](https://fsl.fmrib.ox.ac.uk/fsl/docs/license.html) on 2026-09-09, which since 2025-08-05
+says: *"The Cerebellum and Harvard-Oxford atlases, whilst not being the property of Oxford, are released under
+the CC BY-SA 4.0 licence"* — carving them out of the non-commercial FSL software licence that still covers the
+JHU, Juelich, Striatum and Thalamus atlases. **Harvard-Oxford is not non-commercial**, and CC BY-SA 4.0 is this
+project's own outbound data licence, so it could ship. It does not, because removing the flag would add 96
+parcels to the public edition and that is a decision about what to publish rather than a metadata fix. Two
+things for whoever makes that decision: FSL grants these terms on data it says in the same sentence is not its
+property, and the upstream holder (the Harvard CMA) states no terms at all. Cite Desikan et al. 2006, Makris et
+al. 2006, Frazier et al. 2005 and Goldstein et al. 2007.
+
+**Diedrichsen cerebellum (`CC-BY-ND`).** Two files — the probabilistic anatomical segmentation and its label
+table — from the DiedrichsenLab `cerebellar_atlases` repository into `pipeline/raw/diedrichsen_cerebellum/`.
+Nothing to register for.
+
+The repository ships **no LICENSE file** — `LICENSE`, `LICENCE`, `LICENSE.md` and `COPYING` all 404, and
+GitHub's own licence detection returns null. The only statement anywhere is the last line of its
+[README](https://github.com/DiedrichsenLab/cerebellar_atlases#reference-and-licence): *"If not otherwise noted
+in the contributing paper, the atlases are distributed under a Creative Commons license CC BY-ND (Attribution -
+No derivatives)."* No version is given, which is why no verbatim legal code ships for it — we do not know which
+one to ship. `Diedrichsen_2009/atlas_description.json` says `"License": "See LICENSE file"`, pointing at a file
+that does not exist.
+
+**ND, not NC**, and that is a firmer reason to exclude it than non-commercial ever was: the pipeline meshes the
+volume, which makes a derivative, and CC BY-ND forbids *distributing* adaptations. Making them locally is
+permitted, which is exactly what the private edition does. Commerciality has nothing to do with it. Cite
+Diedrichsen et al., *NeuroImage* 2009.
 
 **PAM50 (`PAM50-unlicensed`).** One release zip from
 [spinalcordtoolbox/PAM50](https://github.com/spinalcordtoolbox/PAM50), unpacked in place under

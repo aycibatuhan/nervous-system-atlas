@@ -110,8 +110,8 @@ The **public edition** is what may be redistributed — Apache-2.0 code, CC BY-S
 
 | Dataset | Licence | Why it cannot ship | Replaced in the public edition by |
 |---|---|---|---|
-| Harvard-Oxford (FSL) | `FSL-NC` | non-commercial only | CerebrA/DKT cortical parcels (CC0) |
-| Diedrichsen cerebellar atlas | `CC-BY-NC-3.0` | non-commercial only | a FastSurfer CerebNet segmentation of our own template (CC BY-SA 4.0) |
+| Harvard-Oxford (FSL) | `FSL-NC` | held back pending review — FSL relicensed it to CC BY-SA 4.0 in Aug 2025 | CerebrA/DKT cortical parcels (CC0) |
+| Diedrichsen cerebellar atlas | `CC-BY-ND` | no derivatives may be distributed | a FastSurfer CerebNet segmentation of our own template (CC BY-SA 4.0) |
 | Brainstem Navigator 7 T nuclei | `BrainstemNavigator-NC-ND` | derived files may not leave the organisation | the Dahl locus coeruleus meta-mask (CC BY 4.0) and landmark-anchored markers built from published volumes |
 | PAM50 cord template | `PAM50-unlicensed` | the repository ships no licence at all | a cord MRI composed here from spine-generic and Fudan whole-spine data (CC BY 4.0) |
 
@@ -306,8 +306,8 @@ Atlas aynı ağaçtan iki kez derlenir.
 
 | Veri kümesi | Lisans | Neden yayımlanamaz | Açık sürümdeki karşılığı |
 |---|---|---|---|
-| Harvard-Oxford (FSL) | `FSL-NC` | yalnızca ticari olmayan kullanım | CerebrA/DKT kortikal parselleri (CC0) |
-| Diedrichsen serebellum atlası | `CC-BY-NC-3.0` | yalnızca ticari olmayan kullanım | kendi şablonumuzun FastSurfer CerebNet bölütlemesi (CC BY-SA 4.0) |
+| Harvard-Oxford (FSL) | `FSL-NC` | inceleme bekliyor — FSL, Ağustos 2025'te CC BY-SA 4.0'a geçirdi | CerebrA/DKT kortikal parselleri (CC0) |
+| Diedrichsen serebellum atlası | `CC-BY-ND` | türev çalışmalar dağıtılamaz | kendi şablonumuzun FastSurfer CerebNet bölütlemesi (CC BY-SA 4.0) |
 | Brainstem Navigator 7 T çekirdekleri | `BrainstemNavigator-NC-ND` | türev dosyalar kurum dışına çıkamaz | Dahl locus coeruleus meta-maskesi (CC BY 4.0) ve yayımlanmış hacimlerden kurulan işaret noktası tabanlı belirteçler |
 | PAM50 kord şablonu | `PAM50-unlicensed` | deposunda hiçbir lisans yok | burada spine-generic ve Fudan tüm-omurga verisinden birleştirilen bir kord MR'ı (CC BY 4.0) |
 

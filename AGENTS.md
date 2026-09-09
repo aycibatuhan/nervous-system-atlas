@@ -34,16 +34,25 @@ meshes or volumes are built.
    output is redistributable, and only because `check-public` certifies it.
 4. **The `private` branch and the `v1.0.0-private` tag stay local.** Never push them. Work happens on `main`
    and is rebased onto `private`; never merge `private` into `main`.
-5. **MNI coordinates and mesh ids are stable identifiers.** Content, tests, screenshots and saved links refer
+5. **The exclusion of the four restricted datasets is unconditional, and "this project is non-commercial" is
+   NOT the reason it is safe to publish.** Brainstem Navigator forbids distributing anything derived from it
+   outside your organisation; PAM50 states no licence at all; Diedrichsen is CC BY-ND, so distributing the
+   meshes we make from it is forbidden outright. None of those three is about money. Harvard-Oxford is a
+   separate case — FSL relicensed it to CC BY-SA 4.0 in August 2025 and it is held back pending a decision,
+   not because it is non-commercial. **Never add a build mode that includes restricted data on the grounds
+   that some particular use is non-commercial**, and never relax the gate on that reasoning. See
+   [docs/editions.md](docs/editions.md#the-exclusion-is-unconditional).
+6. **MNI coordinates and mesh ids are stable identifiers.** Content, tests, screenshots and saved links refer
    to them. Do not renumber, rename or re-register without being asked to.
-6. **`NOTICE` is generated.** Never hand-edit it. It comes from `pipeline/config/sources.yaml` +
+7. **`NOTICE` is generated.** Never hand-edit it. It comes from `pipeline/config/sources.yaml` +
    `package.json` via `npm run notice`; `npm run notice -- --check` fails when it is stale.
 
 ## The two editions
 
 A build is the **private** edition if and only if restricted data was built into it — it is decided by the
-data, not by a flag. Four datasets are non-commercial or forbid passing derived files on (Harvard-Oxford,
-Diedrichsen, Brainstem Navigator, PAM50); they sit in `group: restricted` in `sources.yaml`, and
+data, not by a flag. Four datasets are excluded — Brainstem Navigator and PAM50 because they may not be
+redistributed, Diedrichsen because CC BY-ND forbids distributing the meshes we make from it, and
+Harvard-Oxford as a hold pending review (see rule 5); they sit in `group: restricted` in `sources.yaml`, and
 `atlas-download` refuses to fetch that group unless it is on the `private` branch or `ATLAS_ALLOW_RESTRICTED=1`.
 The public edition substitutes openly licensed data for all four. Full detail, including how to obtain the
 restricted ones, is in [docs/editions.md](docs/editions.md).

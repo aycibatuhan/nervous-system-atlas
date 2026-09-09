@@ -75,8 +75,8 @@ default group. Which edition a build *is* follows from the data present, never
 from a flag: with no restricted data, `atlas-manifest` writes only
 `manifest.json` (public); with it, it also writes `manifest.private.json`.
 
-The restricted datasets are Harvard-Oxford (FSL, non-commercial), the
-Diedrichsen cerebellar atlas (CC BY-NC 3.0), the Brainstem Navigator
+The restricted datasets are Harvard-Oxford (FSL; held back pending review), the
+Diedrichsen cerebellar atlas (CC BY-ND), the Brainstem Navigator
 (non-commercial, and its terms forbid passing derived files outside your
 organisation) and the PAM50 spinal cord template (ships no licence file at all).
 They are flagged `nc: true` / `no_redistribution: true` in
