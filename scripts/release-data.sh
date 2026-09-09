@@ -17,7 +17,11 @@ UPLOAD=false
 for a in "$@"; do [[ "$a" == "--upload" ]] && UPLOAD=true; done
 
 # ---- 1. a fresh, gated build
+# dist/ is wiped first on purpose. A stale dist/ is how a file the gate forbids reaches an archive: the build
+# filters what it copied, but anything that arrived in dist/ by other means outlives it, and packaging by hand
+# skips the gate entirely. Build from nothing, then let check-public see the result.
 echo "── npm run build (public edition + check-public)"
+rm -rf dist
 npm run build
 
 # ---- 2. refuse to ship anything the gate did not see
@@ -40,6 +44,16 @@ rm -f "${ASSET}"
 tar -czf "${ASSET}" -C dist/data .
 SHA=$(shasum -a 256 "${ASSET}" | cut -d' ' -f1)
 BYTES=$(wc -c < "${ASSET}" | tr -d ' ')
+
+# ---- 3b. the archive is what actually ships, so check the archive, not just the directory it came from
+DIFF=$(diff <(tar -tzf "${ASSET}" | sed 's|^\./||' | grep -v '/$' | grep -v '^$' | sort) \
+            <(cd dist/data && find . -type f | sed 's|^\./||' | sort) || true)
+if [[ -n "${DIFF}" ]]; then
+  echo "release-data: the archive does not match the gated dist/data:" >&2
+  echo "${DIFF}" >&2
+  exit 1
+fi
+echo "  archive matches the gated dist/data exactly ($(tar -tzf "${ASSET}" | sed 's|^\./||' | grep -v '/$' | grep -vc '^$') files)"
 echo
 echo "${ASSET}"
 echo "  sha256 ${SHA}"

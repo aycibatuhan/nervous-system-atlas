@@ -62,8 +62,29 @@ type Exclusions = {
   grids: Record<string, unknown>;
 };
 const exPath = resolve(ROOT, 'public/data/manifest.exclusions.json');
-if (!existsSync(exPath)) { console.error('check-public: public/data/manifest.exclusions.json is missing — run `atlas-manifest` first'); process.exit(1); }
-const ex = JSON.parse(readFileSync(exPath, 'utf8')) as Exclusions;
+
+// The exclusion record says what THIS machine dropped, so it only exists where the pipeline ran. A machine
+// that got its data from `npm run data` has never had one: the bundle it unpacked was already filtered and
+// already gated on the machine that built it. Rather than refuse to check such a build at all, drop the
+// checks that need the record and say so -- the rest of the gate does not depend on it, and it is worth
+// running over a bundle that has been moved, unpacked and rebuilt.
+//
+// The one case where a missing record is genuinely alarming is a machine that HAS built restricted data:
+// there the record should exist, and its absence would quietly disable exactly the checks that matter.
+const reduced = !existsSync(exPath);
+if (reduced && existsSync(resolve(ROOT, 'public/data/manifest.private.json'))) {
+  console.error('check-public: this machine has built restricted data (public/data/manifest.private.json exists)\n' +
+    'but public/data/manifest.exclusions.json is missing, so the exclusion checks cannot run.\n' +
+    'Run `atlas-manifest` to rewrite it. Refusing to certify this build.');
+  process.exit(1);
+}
+const EMPTY: Exclusions = { meshes: [], volumes: [], licenses: {}, sources: {}, grids: {} };
+const ex = reduced ? EMPTY : (JSON.parse(readFileSync(exPath, 'utf8')) as Exclusions);
+if (reduced) {
+  console.log('note  no manifest.exclusions.json — public/data/ came from a published bundle, so the checks that');
+  console.log('note  compare against this machine\'s exclusion record are skipped. The edition declaration, the nc /');
+  console.log('note  noRedistribution flags, the restricted dataset names and the file accounting are still checked.');
+}
 const exMeshIds = new Set(ex.meshes.map((m) => m.id));
 const exLicenceIds = new Set(Object.keys(ex.licenses));
 const exSourceIds = new Set(Object.keys(ex.sources));
@@ -172,6 +193,7 @@ for (const f of allowed) if (!existsSync(join(DATA, f))) bad(`data/${f} is refer
 for (const n of note) console.log(`note  ${n}`);
 for (const f of fail) console.error(`FAIL  ${f}`);
 console.log(`check-public: ${DIR} — ${man.meshes.length} meshes, ${Object.keys(man.volumes).length} volumes, ${Object.keys(man.licenses).length} licences, ${Object.keys(man.sources).length} sources, ${(dataBytes / 1e6).toFixed(1)} MB of data`);
-console.log(`check-public: excluded ${exMeshIds.size} meshes, ${ex.volumes.length} volumes, ${exLicenceIds.size} licences, ${exSourceIds.size} sources; ${sharedIds.size} shared ids kept as authored entries; ${note.length} prose mention(s)`);
+if (reduced) console.log('check-public: exclusion-record checks skipped (no manifest.exclusions.json on this machine)');
+else console.log(`check-public: excluded ${exMeshIds.size} meshes, ${ex.volumes.length} volumes, ${exLicenceIds.size} licences, ${exSourceIds.size} sources; ${sharedIds.size} shared ids kept as authored entries; ${note.length} prose mention(s)`);
 if (fail.length) { console.error(`check-public: ${fail.length} problem(s) — this build must not be published`); process.exit(1); }
-console.log('check-public: clean');
+console.log(reduced ? 'check-public: clean (reduced — see the note above)' : 'check-public: clean');
