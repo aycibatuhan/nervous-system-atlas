@@ -43,10 +43,15 @@ public edition of the atlas.
   Dataset:     FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template
   Citation:    FreeSurfer aseg segmentation of the MNI152NLin2009cAsym
                template (TemplateFlow).
-  Licence:     MNI/McGill template licence (permissive)
+  Licence:     MNI/McGill template licence; the labels are a FreeSurfer segmentation for which no licence is stated
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/LICENSE
-  Attribution: MNI152NLin2009cAsym template, (c) Louis Collins, McGill
-               University (Fonov et al. 2011)
+  Attribution: FreeSurfer aseg segmentation of the MNI152NLin2009cAsym
+               template, distributed by TemplateFlow, which states no
+               separate licence for this file. Template (c) Louis Collins,
+               McGill University (Fonov et al. 2011); the segmentation was
+               produced with FreeSurfer (Fischl et al. 2002), whose licence
+               permits use, derivative works and redistribution and is silent
+               on the outputs of running it.
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz
 
 --- harvard_oxford ---
@@ -68,10 +73,8 @@ public edition of the atlas.
   Citation:    Najdenovska E et al. In-vivo probabilistic atlas of human
                thalamic nuclei based on diffusion-weighted MRI. Sci Data
                2018.
-  Licence:     MNI/McGill template licence (permissive)
-               https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/LICENSE
-  Attribution: MNI152NLin2009cAsym template, (c) Louis Collins, McGill
-               University (Fonov et al. 2011)
+  Licence:     Creative Commons Attribution 4.0 International
+               https://creativecommons.org/licenses/by/4.0/
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-MIAL67ThalamicNuclei_dseg.nii.gz
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_atlas-MIAL67ThalamicNuclei_dseg.tsv
 
@@ -79,10 +82,14 @@ public edition of the atlas.
   Dataset:     MASSP multi-contrast subcortical parcellation
   Citation:    Bazin PL et al. Multi-contrast anatomical subcortical
                structures parcellation (MASSP). eLife 2020.
-  Licence:     MNI/McGill template licence (permissive)
-               https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/LICENSE
-  Attribution: MNI152NLin2009cAsym template, (c) Louis Collins, McGill
-               University (Fonov et al. 2011)
+  Licence:     Apache License 2.0
+               https://www.apache.org/licenses/LICENSE-2.0
+  Attribution: MASSP structures prior, (c) Pierre-Louis Bazin, University of
+               Amsterdam (doi:10.21942/uva.12074175), Apache License 2.0. The
+               meshes derived from it here are modified: the parcellation was
+               read on the MNI152NLin2009cAsym grid, meshed by
+               signed-distance field, smoothed, decimated and welded as the
+               manifest records per mesh.
   Download:    https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz
                https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.tsv
 

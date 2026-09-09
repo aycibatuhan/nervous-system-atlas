@@ -35,6 +35,36 @@ licenses:
   CC0-1.0:
     name: CC0 1.0 Universal (public domain dedication)
     url: https://creativecommons.org/publicdomain/zero/1.0/
+
+  # Three atlases that TemplateFlow distributes inside tpl-MNI152NLin2009cAsym/ used to be filed under the MNI
+  # licence below, because that is the only LICENSE file in that directory.  They are not the template, and that
+  # licence is Collins's grant for "this software" -- so it was crediting the wrong people for 112 meshes.  The
+  # real terms, checked 2026-09-09:
+  #   * MIAL thalamic nuclei -- TemplateFlow ships a sidecar for it, tpl-MNI152NLin2009cAsym_atlas-
+  #     MIAL67ThalamicNuclei_dseg.json, which states "License": "CC-BY-4", so it now uses CC-BY-4.0.
+  #   * MASSP -- the atlas priors are Bazin's own FigShare deposit doi:10.21942/uva.12074175 ("MASSP structures
+  #     prior"), released under Apache 2.0.  Apache adds two conditions CC does not: keep the licence and the
+  #     copyright notice, and state that changes were made.  Both hold here -- the text ships in
+  #     public/data/licenses/, and every mesh records its construction in the manifest.
+  #   * FreeSurfer aseg -- nobody upstream states a licence.  There is no sidecar and no CHANGES entry, and the
+  #     file is a derivative of two things at once: the template image and FreeSurfer's own atlas priors.  The
+  #     FreeSurfer licence grants use, derivative works and redistribution and says nothing about outputs, so
+  #     the segmentation is not encumbered -- but the honest label is not "(c) Louis Collins".
+  Apache-2.0:
+    name: Apache License 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+    attribution: "MASSP structures prior, (c) Pierre-Louis Bazin, University of Amsterdam (doi:10.21942/uva.12074175),
+      Apache License 2.0. The meshes derived from it here are modified: the parcellation was read on the
+      MNI152NLin2009cAsym grid, meshed by signed-distance field, smoothed, decimated and welded as the manifest
+      records per mesh."
+
+  MNI-FreeSurfer:
+    name: MNI/McGill template licence; the labels are a FreeSurfer segmentation for which no licence is stated
+    url: https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/LICENSE
+    attribution: "FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template, distributed by TemplateFlow,
+      which states no separate licence for this file. Template (c) Louis Collins, McGill University (Fonov et al.
+      2011); the segmentation was produced with FreeSurfer (Fischl et al. 2002), whose licence permits use,
+      derivative works and redistribution and is silent on the outputs of running it."
   # Terminology sources (Turkish edition).  FIPAT publishes its terminologies as PDFs under CC BY-ND 4.0 and states in
   # the front matter that "the individual terms in this terminology are within the public domain"; the atlas uses only
   # the terms (Latin and English names, term numbers) and never redistributes the PDFs.
@@ -89,7 +119,7 @@ sources:
   - id: mni_aseg
     name: "FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template"
     group: core
-    license: MNI
+    license: MNI-FreeSurfer
     citation: "FreeSurfer aseg segmentation of the MNI152NLin2009cAsym template (TemplateFlow)."
     files:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_seg-aseg_dseg.nii.gz]
@@ -107,7 +137,7 @@ sources:
   - id: mial_thalamus
     name: "MIAL probabilistic atlas of the thalamic nuclei"
     group: core
-    license: MNI
+    license: CC-BY-4.0
     citation: "Najdenovska E et al. In-vivo probabilistic atlas of human thalamic nuclei based on diffusion-weighted MRI. Sci Data 2018."
     files:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MIAL67ThalamicNuclei_dseg.nii.gz]
@@ -115,7 +145,7 @@ sources:
   - id: massp
     name: "MASSP multi-contrast subcortical parcellation"
     group: core
-    license: MNI
+    license: Apache-2.0
     citation: "Bazin PL et al. Multi-contrast anatomical subcortical structures parcellation (MASSP). eLife 2020."
     files:
       - url: !join [*tf, tpl-MNI152NLin2009cAsym_res-01_atlas-MASSP20_dseg.nii.gz]
