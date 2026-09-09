@@ -12,6 +12,7 @@
     "build:private": "node scripts/build-private.ts",
     "preview": "vite preview --port 5173 --strictPort",
     "content": "node scripts/content/build.ts",
+    "data": "node scripts/fetch-data.ts",
     "content:private": "node scripts/content/build.ts --private",
     "content:validate": "node scripts/content/build.ts --validate-only",
     "content:report": "node scripts/content/build.ts --report",

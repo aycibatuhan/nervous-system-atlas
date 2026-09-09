@@ -8,8 +8,10 @@ pipeline/work/
 pipeline/qa/*.png
 blender/work/
 
-# generated data (regenerable from pipeline + content)
+# generated data (regenerable from pipeline + content, or `npm run data`)
 public/data/
+# the release archive `npm run data` fetches and scripts/release-data.sh builds
+atlas-data-*.tar.gz
 
 # environments
 .venv*/

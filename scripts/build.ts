@@ -45,82 +45,91 @@ if (!args.has('--skip-vite')) {
 }
 if (!hasData) { console.log('\nbuilt dist/ without data — nothing to filter or gate'); process.exit(0); }
 const manifest = JSON.parse(readFileSync(join(SRC, 'manifest.json'), 'utf8')) as Manifest;
-const exclusions = JSON.parse(readFileSync(join(SRC, 'manifest.exclusions.json'), 'utf8')) as Exclusions;
-const excluded = new Set(exclusions.meshes.map((m) => m.id));
 
-// ---- 4. filter dist/data down to what the public manifest references
-// Vite copies the whole of public/ verbatim, so at this point dist/data is whatever this machine has built --
-// on a private machine that includes the restricted meshes, the private bundles and label volumes painted with
-// the excluded atlases' ids. Keep only what the public manifest names, and repaint the label volumes.
-step('filter dist/data');
-mkdirSync(DATA, { recursive: true });
+// manifest.exclusions.json is the record atlas-manifest writes beside the two editions, saying what the public
+// one dropped. It is deliberately not part of a published bundle, so its absence means public/data/ IS one:
+// someone ran `npm run data` and unpacked the release rather than running the pipeline. There is then nothing
+// left to filter -- the data arrived filtered -- but the gate still runs over the result.
+const prefiltered = !existsSync(join(SRC, 'manifest.exclusions.json'));
+if (prefiltered) console.log('\nnote: public/data/ came from a published bundle (no manifest.exclusions.json) — nothing to filter');
 
-// LICENSE is the data folder's own licence (CC BY-SA 4.0), written by atlas-manifest; it ships with the data.
-const keep = new Set<string>(['manifest.json', 'content.json', 'content.tr.json', 'search-index.json', 'LICENSE']);
-for (const m of manifest.meshes) { keep.add(m.file); if (m.lod) keep.add(m.lod.file); }
-for (const v of Object.values(manifest.volumes)) { keep.add(v.file); if (v.lut) keep.add(v.lut); }
-for (const l of Object.values(manifest.licenses)) keep.add(l.text);
+if (!prefiltered) {
+  const exclusions = JSON.parse(readFileSync(join(SRC, 'manifest.exclusions.json'), 'utf8')) as Exclusions;
+  const excluded = new Set(exclusions.meshes.map((m) => m.id));
+  // ---- 4. filter dist/data down to what the public manifest references
+  // Vite copies the whole of public/ verbatim, so at this point dist/data is whatever this machine has built --
+  // on a private machine that includes the restricted meshes, the private bundles and label volumes painted with
+  // the excluded atlases' ids. Keep only what the public manifest names, and repaint the label volumes.
+  step('filter dist/data');
+  mkdirSync(DATA, { recursive: true });
 
-// 4a. labels.json: drop the lut and byMesh records of meshes this edition does not ship
-const labelsRel = 'volumes/labels.json';
-let zeroed: Record<string, number> = {};
-if (keep.has(labelsRel) && existsSync(join(DATA, labelsRel))) {
-  const labels = JSON.parse(readFileSync(join(DATA, labelsRel), 'utf8')) as LabelsJson;
-  const drop: Record<string, Set<number>> = {};
-  for (const [vol, lut] of Object.entries(labels.lut)) {
-    drop[vol] = new Set();
-    for (const [id, entry] of Object.entries(lut)) if (excluded.has(entry.meshId)) { drop[vol]!.add(Number(id)); delete lut[id]; }
+  // LICENSE is the data folder's own licence (CC BY-SA 4.0), written by atlas-manifest; it ships with the data.
+  const keep = new Set<string>(['manifest.json', 'content.json', 'content.tr.json', 'search-index.json', 'LICENSE']);
+  for (const m of manifest.meshes) { keep.add(m.file); if (m.lod) keep.add(m.lod.file); }
+  for (const v of Object.values(manifest.volumes)) { keep.add(v.file); if (v.lut) keep.add(v.lut); }
+  for (const l of Object.values(manifest.licenses)) keep.add(l.text);
+
+  // 4a. labels.json: drop the lut and byMesh records of meshes this edition does not ship
+  const labelsRel = 'volumes/labels.json';
+  let zeroed: Record<string, number> = {};
+  if (keep.has(labelsRel) && existsSync(join(DATA, labelsRel))) {
+    const labels = JSON.parse(readFileSync(join(DATA, labelsRel), 'utf8')) as LabelsJson;
+    const drop: Record<string, Set<number>> = {};
+    for (const [vol, lut] of Object.entries(labels.lut)) {
+      drop[vol] = new Set();
+      for (const [id, entry] of Object.entries(lut)) if (excluded.has(entry.meshId)) { drop[vol]!.add(Number(id)); delete lut[id]; }
+    }
+    for (const id of Object.keys(labels.byMesh)) if (excluded.has(id)) delete labels.byMesh[id];
+    labels.volumes = Object.fromEntries(Object.entries(labels.volumes).filter(([k]) => manifest.volumes[k]));
+    writeFileSync(join(DATA, labelsRel), JSON.stringify(labels, null, 1));
+
+    // 4b. the label volumes themselves: an excluded atlas must not survive as painted voxels either
+    for (const [vol, ids] of Object.entries(drop)) {
+      if (!ids.size) continue;
+      const key = Object.keys(labels.volumes).find((k) => k === `labels_${vol}`) ?? `labels_${vol}`;
+      const v = manifest.volumes[key];
+      if (!v) continue;
+      const p = join(DATA, v.file);
+      const u8 = new Uint8Array(gunzipSync(readFileSync(p)));   // fresh buffer: the uint16 view needs offset 0
+      const arr: Uint8Array | Uint16Array = v.dtype === 'uint16' ? new Uint16Array(u8.buffer) : u8;
+      let n = 0;
+      for (let i = 0; i < arr.length; i++) if (ids.has(arr[i]!)) { arr[i] = 0; n++; }
+      const gz = gzipSync(Buffer.from(u8.buffer), { level: 9 });
+      writeFileSync(p, gz);
+      v.bytes_gz = gz.length;
+      zeroed[key] = n;
+    }
+    writeFileSync(join(DATA, 'manifest.json'), JSON.stringify(manifest, null, 1));
   }
-  for (const id of Object.keys(labels.byMesh)) if (excluded.has(id)) delete labels.byMesh[id];
-  labels.volumes = Object.fromEntries(Object.entries(labels.volumes).filter(([k]) => manifest.volumes[k]));
-  writeFileSync(join(DATA, labelsRel), JSON.stringify(labels, null, 1));
 
-  // 4b. the label volumes themselves: an excluded atlas must not survive as painted voxels either
-  for (const [vol, ids] of Object.entries(drop)) {
-    if (!ids.size) continue;
-    const key = Object.keys(labels.volumes).find((k) => k === `labels_${vol}`) ?? `labels_${vol}`;
-    const v = manifest.volumes[key];
-    if (!v) continue;
-    const p = join(DATA, v.file);
-    const u8 = new Uint8Array(gunzipSync(readFileSync(p)));   // fresh buffer: the uint16 view needs offset 0
-    const arr: Uint8Array | Uint16Array = v.dtype === 'uint16' ? new Uint16Array(u8.buffer) : u8;
-    let n = 0;
-    for (let i = 0; i < arr.length; i++) if (ids.has(arr[i]!)) { arr[i] = 0; n++; }
-    const gz = gzipSync(Buffer.from(u8.buffer), { level: 9 });
-    writeFileSync(p, gz);
-    v.bytes_gz = gz.length;
-    zeroed[key] = n;
+  // 4c. delete everything the public manifest does not reference
+  const walk = (dir: string, out: string[] = []): string[] => {
+    for (const name of readdirSync(dir)) {
+      const p = join(dir, name);
+      if (statSync(p).isDirectory()) walk(p, out); else out.push(p);
+    }
+    return out;
+  };
+  let removed = 0, removedBytes = 0, keptBytes = 0;
+  for (const p of walk(DATA)) {
+    const rel = relative(DATA, p).split(sep).join('/');
+    if (keep.has(rel)) { keptBytes += statSync(p).size; continue; }
+    removedBytes += statSync(p).size; removed++;
+    rmSync(p);
   }
-  writeFileSync(join(DATA, 'manifest.json'), JSON.stringify(manifest, null, 1));
+  // prune the directories the deletions emptied
+  const prune = (dir: string): void => {
+    for (const name of readdirSync(dir)) { const p = join(dir, name); if (statSync(p).isDirectory()) prune(p); }
+    if (dir !== DATA && !readdirSync(dir).length) rmSync(dir, { recursive: true });
+  };
+  prune(DATA);
+  for (const f of keep) if (!existsSync(join(DATA, f))) throw new Error(`${f} is referenced by the public manifest but is not in the build (looked in ${dirname(join(DATA, f))})`);
+
+  const t = exclusions.totals;
+  console.log(`dist/data: kept ${manifest.meshes.length} meshes and ${Object.keys(manifest.volumes).length} volumes (${(keptBytes / 1e6).toFixed(1)} MB); removed ${removed} files (${(removedBytes / 1e6).toFixed(1)} MB)`);
+  console.log(`excluded: ${t.meshes} meshes (${(t.meshBytes / 1e6).toFixed(1)} MB), ${t.volumes} volumes (${(t.volumeBytes / 1e6).toFixed(1)} MB), ${t.grids} grid(s), ${t.licenses} licences, ${t.sources} sources`);
+  for (const [k, n] of Object.entries(zeroed)) console.log(`${k}: ${n.toLocaleString()} voxels of excluded atlases zeroed`);
 }
-
-// 4c. delete everything the public manifest does not reference
-const walk = (dir: string, out: string[] = []): string[] => {
-  for (const name of readdirSync(dir)) {
-    const p = join(dir, name);
-    if (statSync(p).isDirectory()) walk(p, out); else out.push(p);
-  }
-  return out;
-};
-let removed = 0, removedBytes = 0, keptBytes = 0;
-for (const p of walk(DATA)) {
-  const rel = relative(DATA, p).split(sep).join('/');
-  if (keep.has(rel)) { keptBytes += statSync(p).size; continue; }
-  removedBytes += statSync(p).size; removed++;
-  rmSync(p);
-}
-// prune the directories the deletions emptied
-const prune = (dir: string): void => {
-  for (const name of readdirSync(dir)) { const p = join(dir, name); if (statSync(p).isDirectory()) prune(p); }
-  if (dir !== DATA && !readdirSync(dir).length) rmSync(dir, { recursive: true });
-};
-prune(DATA);
-for (const f of keep) if (!existsSync(join(DATA, f))) throw new Error(`${f} is referenced by the public manifest but is not in the build (looked in ${dirname(join(DATA, f))})`);
-
-const t = exclusions.totals;
-console.log(`dist/data: kept ${manifest.meshes.length} meshes and ${Object.keys(manifest.volumes).length} volumes (${(keptBytes / 1e6).toFixed(1)} MB); removed ${removed} files (${(removedBytes / 1e6).toFixed(1)} MB)`);
-console.log(`excluded: ${t.meshes} meshes (${(t.meshBytes / 1e6).toFixed(1)} MB), ${t.volumes} volumes (${(t.volumeBytes / 1e6).toFixed(1)} MB), ${t.grids} grid(s), ${t.licenses} licences, ${t.sources} sources`);
-for (const [k, n] of Object.entries(zeroed)) console.log(`${k}: ${n.toLocaleString()} voxels of excluded atlases zeroed`);
 
 // the code licence sits next to the build so a published dist/ is self-describing
 for (const f of ['LICENSE', 'NOTICE']) if (existsSync(join(ROOT, f))) copyFileSync(join(ROOT, f), join(OUT, f));
