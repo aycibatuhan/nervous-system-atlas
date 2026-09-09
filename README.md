@@ -4,6 +4,8 @@
 
 A browser-based 3D atlas of clinical neuroanatomy: 592 meshes, synchronised MRI slices, arterial territories, traced pathways, a lesion mode that shows you what a syndrome does and why, plus clinical topics, a glossary and a quiz. Everything lives in one coordinate frame — MNI152NLin2009cAsym RAS millimetres — so the surfaces, the T1/T2 slices and the label overlays line up exactly, and below the foramen magnum the slices continue into a spinal cord MRI reformatted along the atlas's own cord. Every entry cites open-access sources that anyone can read for free. It runs locally, from static files, with no server and no account.
 
+**[Open the live demo →](https://aycibatuhan.github.io/nervous-system-atlas/)**  — the same public edition, nothing to install.
+
 > **Not for clinical use.** This is an educational reference. Its structures are group-average templates and a registered specimen, not any patient's anatomy; its syndrome, imaging and management text is a teaching summary written from the cited sources and may be incomplete, out of date or wrong. Nothing in it is medical advice, and it must not be used to diagnose, treat or make decisions about a patient. Clinical decisions belong to qualified clinicians using current guidelines and the patient's own findings and imaging.
 
 ![The atlas on first paint: the cortical surface and the vessels in the 3D view, the structure tree on the left, the slice controls along the foot of the window](docs/screenshots/overview.webp)
@@ -60,13 +62,33 @@ slices to it.
 
 ## Quick start
 
+**The atlas data is not in this repository.** The meshes, the MRI volumes and the label tables under
+`public/data/` are 63 MB of generated files, far too large to commit, so they ship as a release asset instead.
+A clone fetches them once — that is what `npm run data` below is for.
+
 ```bash
 git clone https://github.com/aycibatuhan/nervous-system-atlas.git && cd nervous-system-atlas
 npm ci
+npm run data           # fetches the data bundle (49 MB) into public/data/
 npm run dev            # http://localhost:5173
 ```
 
-That serves the app, but a fresh clone has **no data**: the meshes, MRI volumes, label tables and `manifest.json` under `public/data/` are built by the Python pipeline from openly licensed source atlases and are far too large to commit. To build them:
+`npm run data` downloads the prebuilt public edition from the
+[v1.0.0 release](https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.0), checks it against a
+SHA-256 pinned in the repository before unpacking anything, and will not overwrite data you already have unless
+you pass `--force`. Run the app without it and you get a message on the canvas saying so, not a broken page.
+
+To produce a publishable build:
+
+```bash
+npm run build          # the public edition into dist/, with the redistribution gate as its last step
+npm run check-tree     # and the repository guard, which needs no data at all
+```
+
+### Building the data instead of downloading it
+
+The release bundle is generated; you can generate it yourself from the source atlases, which is also what you
+need if you want to change how the meshes are made:
 
 ```bash
 cd pipeline && uv sync && cd ..
@@ -76,14 +98,9 @@ npm run content                            # bundle content/ into public/data/co
 npm run dev
 ```
 
-This downloads several GB and takes a while. [Building the data](docs/pipeline.md) explains the steps, the optional extras and what each one needs.
-
-To produce a publishable build:
-
-```bash
-npm run build          # the public edition into dist/, with the redistribution gate as its last step
-npm run check-tree     # and the repository guard, which needs no data at all
-```
+This downloads several GB and takes a while. [Building the data](docs/pipeline.md) explains the steps, the
+optional extras and what each one needs. Obtaining the four restricted datasets of the full edition is covered
+in [the two editions](docs/editions.md).
 
 ## The two editions
 
@@ -131,7 +148,7 @@ npm run citations:check
 node scripts/check-data.ts --all                  # both manifests: meshes, volumes, coordinates
 npm run notice -- --check                         # NOTICE is generated; never edit it by hand
 uv run --project pipeline atlas-qa                # the pipeline's own data gates
-npx playwright install chromium && npm run e2e    # 15 browser smoke tests
+npx playwright install chromium && npm run e2e    # 19 browser tests (4 of them need no data)
 npm run build                                     # the public build, ending in the redistribution gate
 python3 tools/i18n/prose.py check                 # the Turkish overlays against the English entries
 ```
@@ -183,6 +200,8 @@ Pull requests are welcome — read [CONTRIBUTING.md](CONTRIBUTING.md) first, esp
 *(This is the Turkish version of the document above. [Back to English](#clinical-neuroanatomy-atlas).)*
 
 Tarayıcıda çalışan üç boyutlu bir klinik nöroanatomi atlası: 592 mesh, eşzamanlı MR kesitleri, arter sulama alanları, izlenebilir yolaklar, bir sendromun neyi nasıl bozduğunu gösteren lezyon kipi, klinik konular, bir sözlük ve vaka soruları. Her şey tek bir koordinat çerçevesindedir (MNI152NLin2009cAsym RAS milimetre), bu yüzden yüzeyler, T1/T2 kesitleri ve etiket kaplamaları tam olarak çakışır; foramen magnumun altında kesitler, atlasın kendi omuriliği boyunca yeniden biçimlenmiş bir spinal kord MR'ına devam eder. Her kayıt, herkesin ücretsiz okuyabileceği açık erişimli kaynaklara atıf verir. Uygulama yerelde, statik dosyalardan çalışır; sunucu da hesap da gerektirmez.
+
+**[Canlı demoyu açın →](https://aycibatuhan.github.io/nervous-system-atlas/)**  — aynı genel sürüm, hiçbir kurulum gerekmez.
 
 > **Klinik kullanım için değildir.** Bu atlas eğitim amaçlı bir başvuru kaynağıdır. İçindeki yapılar grup ortalaması şablonlar ve kayıtlanmış bir örnektir, hiçbir hastanın kendi anatomisi değildir; sendrom, görüntüleme ve tedavi metinleri ise belirtilen kaynaklardan yazılmış öğretim özetleridir ve eksik, güncelliğini yitirmiş ya da yanlış olabilir. Buradaki hiçbir bilgi tıbbi tavsiye değildir; hastaya tanı koymak, tedavi vermek ya da hastayla ilgili karar almak için kullanmayın. Bu kararlar, güncel kılavuzları ve hastanın kendi bulgularını ve görüntülerini kullanan yetkin hekimlere aittir.
 
@@ -238,13 +257,34 @@ Her kesit, meshlerin kayıtlandığı MR'ın kendisidir; böylece bir yapı hem 
 
 ## Hızlı başlangıç
 
+**Atlas verisi bu depoda değildir.** `public/data/` altındaki yüzey ağları, MR hacimleri ve etiket tabloları
+63 MB'lık üretilmiş dosyalardır; depoya konamayacak kadar büyük oldukları için sürüm eki olarak dağıtılır.
+Yeni bir kopya bunları bir kez indirir — aşağıdaki `npm run data` bunun içindir.
+
 ```bash
 git clone https://github.com/aycibatuhan/nervous-system-atlas.git && cd nervous-system-atlas
 npm ci
+npm run data           # veri paketini (49 MB) public/data/ içine indirir
 npm run dev            # http://localhost:5173
 ```
 
-Bu, uygulamayı çalıştırır; ancak yeni bir klonda **veri yoktur**: `public/data/` altındaki meshler, MR hacimleri, etiket tabloları ve `manifest.json`, açık lisanslı kaynak atlaslardan Python işlem hattıyla üretilir ve depoya konamayacak kadar büyüktür. Üretmek için:
+`npm run data`, hazır genel sürümü
+[v1.0.0 sürümünden](https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.0) indirir; hiçbir
+şeyi açmadan önce depoda sabitlenmiş SHA-256 özetiyle doğrular ve `--force` verilmedikçe mevcut veriyi
+üzerine yazmaz. Bu adım atlanırsa uygulama bozuk bir sayfa değil, ne yapılması gerektiğini söyleyen bir ileti
+gösterir.
+
+Yayımlanabilir bir derleme için:
+
+```bash
+npm run build          # açık sürümü dist/ içine derler, son adımı yeniden dağıtım denetimidir
+npm run check-tree     # ve hiç veri gerektirmeyen depo denetimi
+```
+
+### Veriyi indirmek yerine üretmek
+
+Sürüm paketi üretilmiş bir çıktıdır; aynısını kaynak atlaslardan kendiniz de üretebilirsiniz. Yüzey ağlarının
+nasıl oluşturulduğunu değiştirmek isterseniz zaten bu yol gerekir:
 
 ```bash
 cd pipeline && uv sync && cd ..
@@ -254,14 +294,9 @@ npm run content                            # content/ dizinini public/data/conte
 npm run dev
 ```
 
-Bu adım birkaç GB indirir ve zaman alır. Adımları, isteğe bağlı ekleri ve her birinin neye ihtiyaç duyduğunu [Verinin üretilmesi](docs/pipeline.md) anlatır.
-
-Yayımlanabilir bir derleme için:
-
-```bash
-npm run build          # açık sürümü dist/ içine derler, son adımı yeniden dağıtım denetimidir
-npm run check-tree     # ve hiç veri gerektirmeyen depo denetimi
-```
+Bu adım birkaç GB indirir ve zaman alır. Adımları, isteğe bağlı ekleri ve her birinin neye ihtiyaç duyduğunu
+[Verinin üretilmesi](docs/pipeline.md) anlatır. Tam sürümün dört kısıtlı veri kümesinin nasıl edinileceği
+[iki sürüm](docs/editions.md) belgesindedir.
 
 ## İki sürüm
 
@@ -309,7 +344,7 @@ npm run citations:check
 node scripts/check-data.ts --all                  # iki manifest: meshler, hacimler, koordinatlar
 npm run notice -- --check                         # NOTICE üretilir; elle düzenlenmez
 uv run --project pipeline atlas-qa                # işlem hattının kendi veri kapıları
-npx playwright install chromium && npm run e2e    # 15 tarayıcı testi
+npx playwright install chromium && npm run e2e    # 19 tarayıcı testi (4'ü veri gerektirmez)
 npm run build                                     # açık derleme, sonunda yeniden dağıtım denetimi
 python3 tools/i18n/prose.py check                 # Türkçe kaplamaların İngilizce kayıtlarla karşılaştırılması
 ```
