@@ -1,0 +1,106 @@
+# Deploys the live demo to GitHub Pages: https://aycibatuhan.github.io/nervous-system-atlas/
+#
+# WHERE THE DATA COMES FROM
+#
+# Not from the repository — public/data/ is gitignored and the tree guard fails if anyone commits it. The
+# workflow fetches the published release asset instead (`npm run data`, which verifies a pinned SHA-256 before
+# unpacking), so what gets deployed is the same bundle a reader downloads: the public edition, 592 meshes, with
+# the four restricted atlases already substituted away.
+#
+# `npm run build` then runs its usual last step, check-public, over the result. On a runner there is no
+# manifest.exclusions.json — that record only exists where the pipeline ran — so the gate runs reduced and says
+# so: it still proves the manifest declares itself public, that nothing is flagged nc or noRedistribution, that
+# no restricted dataset is named in the data, and that every shipped file is one the manifest references.
+# The full gate ran on the machine that built the release asset.
+
+name: pages
+
+on:
+  push:
+    branches: [main]
+    # Only when something that changes the site changes. The data comes from the release, so a docs-only
+    # commit does not need a 50 MB download and a redeploy.
+    paths:
+      - 'src/**'
+      - 'content/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'index.html'
+      - 'vite.config.ts'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time, and never cancel one in flight: a half-finished deploy would leave the live site broken.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: build the public edition
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: install
+        run: npm ci
+
+      # The repo must not be carrying data of its own before we fetch any.
+      - name: the repository carries no atlas data
+        run: |
+          npm run check-tree
+          if [ -e public/data ]; then
+            echo "public/data/ exists in a fresh checkout — it must be gitignored, not committed" >&2
+            exit 1
+          fi
+
+      # Downloads the release asset and checks its SHA-256 against the one pinned in scripts/fetch-data.ts.
+      - name: fetch the published data bundle
+        run: npm run data
+
+      # content bundle -> vite -> filter -> check-public. The gate is the last step and fails the job.
+      - name: build
+        run: npm run build
+
+      # check-public has already run inside the build; this is a second, blunter look at what is about to be
+      # served publicly, in the one place where a mistake is hardest to take back.
+      - name: nothing restricted in what we are about to publish
+        run: |
+          test -f dist/data/manifest.json || { echo "dist/data/manifest.json missing — no data was built" >&2; exit 1; }
+          node -e '
+            const m = JSON.parse(require("fs").readFileSync("dist/data/manifest.json","utf8"));
+            if (m.edition !== "public") { console.error(`edition is "${m.edition}", refusing to deploy`); process.exit(1); }
+            const bad = Object.entries(m.licenses).filter(([,l]) => l.nc || l.noRedistribution);
+            if (bad.length) { console.error("restricted licences present: " + bad.map(([k]) => k).join(", ")); process.exit(1); }
+            console.log(`deploying ${m.meshes.length} meshes, ${Object.keys(m.volumes).length} volumes, edition ${m.edition}`);
+          '
+          if ls dist/data/*.private.json >/dev/null 2>&1; then echo "a private bundle is in dist/" >&2; exit 1; fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

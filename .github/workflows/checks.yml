@@ -96,6 +96,16 @@ jobs:
       - name: build (content bundle + vite)
         run: npm run build
 
+      # The fresh-clone path, which is the one a stranger hits first and the one that used to fail with
+      # "Unexpected token '<'". These four tests need no generated data -- they intercept the manifest request
+      # to produce each way it can be missing -- so unlike the smoke suite they belong in CI, and this is the
+      # only place the data-less startup is exercised automatically.
+      - name: install chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: e2e (the no-data startup path)
+        run: npx playwright test e2e/no-data.spec.ts
+
   translations:
     name: turkish translations
     runs-on: ubuntu-latest
@@ -146,10 +156,12 @@ jobs:
 #       a machine that has built the restricted data.
 #
 #   npx playwright install chromium && npm run e2e
-#       all 15 smoke tests fail. They boot the app against `npm run dev` and
-#       wait for the manifest to load; with no public/data/ the dev server
-#       answers /data/manifest.json with the SPA index.html fallback, the atlas
-#       never sets loaded.manifest, and every test times out in boot().
+#       the 15 smoke tests in e2e/smoke.spec.ts fail. They boot the app against
+#       `npm run dev` and wait for the manifest to load; with no public/data/
+#       the atlas never sets loaded.manifest and every one times out in boot().
+#       e2e/no-data.spec.ts is the exception and DOES run above: it asserts the
+#       data-less startup itself, and fakes the missing manifest rather than
+#       needing a real one.
 #
 #   uv run --project pipeline atlas-qa
 #       the pipeline's own data gates (registration residuals, mesh budgets);
