@@ -11,7 +11,7 @@
 // download fails loudly instead of producing a half-broken atlas.
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { createWriteStream, existsSync, mkdirSync, readFileSync, rmSync, statSync } from 'node:fs';
+import { createWriteStream, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync } from 'node:fs';
 import { Readable } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 import { join, resolve } from 'node:path';
@@ -20,8 +20,8 @@ const RELEASE = {
   repo: 'aycibatuhan/nervous-system-atlas',
   tag: 'v1.0.0',
   asset: 'atlas-data-v1.0.0.tar.gz',
-  sha256: '35755c82cbad1b77f8f15f015cc8465bd12563089eb59c8d07a9d0c1e34b5ac3',
-  bytes: 49223481,
+  sha256: 'a9a4a608a197b24208a0c9c27fdaf1c2d9c59346343607f8daee8945e0a20ebc',
+  bytes: 49179249,
 };
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -82,6 +82,24 @@ mkdirSync(DEST, { recursive: true });
 console.log(`unpacking into public/data/`);
 execFileSync('tar', ['-xzf', file, '-C', DEST], { stdio: 'inherit' });
 if (!local && !has('--keep-archive')) rmSync(archive, { force: true });
+
+// An archive packed on macOS without COPYFILE_DISABLE=1 carries a ._<name> AppleDouble twin for every entry.
+// macOS tar hides them on both listing and extraction, so they are invisible where such an archive is made and
+// only appear here, on Linux -- as files no manifest references, which is exactly what check-public rejects.
+const appleDouble = (dir: string, out: string[] = []): string[] => {
+  for (const name of readdirSync(dir)) {
+    const p = join(dir, name);
+    if (statSync(p).isDirectory()) appleDouble(p, out);
+    else if (name.startsWith('._')) out.push(p);
+  }
+  return out;
+};
+const junk = appleDouble(DEST);
+if (junk.length) {
+  console.warn(`\nremoved ${junk.length} AppleDouble (._*) file(s) the archive should not have contained.`);
+  console.warn('The release asset was packed without COPYFILE_DISABLE=1; please report it.');
+  for (const f of junk) rmSync(f, { force: true });
+}
 
 // ---- 4. say what arrived
 const manifest = JSON.parse(readFileSync(join(DEST, 'manifest.json'), 'utf8')) as {
