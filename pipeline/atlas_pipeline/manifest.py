@@ -29,13 +29,14 @@ SEPARATE_SYSTEMS = ("cerebrum", "diencephalon", "basal-ganglia", "brainstem", "c
 
 
 def palette() -> dict[str, dict]:
-    """mesh id -> {colour, opacity} from the current catalogue and selection files, so colour edits never need a re-mesh."""
+    """mesh id -> {colour, opacity, visible} from the current catalogue and selection files, so a presentation
+    change -- a colour, or whether a mesh is on at first paint -- never needs a re-mesh."""
     look: dict[str, dict] = {}
 
-    def put(mid, colour, opacity, structure_id=None, system=None):
+    def put(mid, colour, opacity, structure_id=None, system=None, visible=None):
         if colour:
             look[mid] = {"colour": colour, "opacity": opacity, **({"structureId": structure_id} if structure_id else {}),
-                         **({"_system": system} if system else {})}
+                         **({"_system": system} if system else {}), **({"visible": visible} if visible is not None else {})}
     for a in catalog.atlases():
         for spec in list(a.entries.values()) + list(a.files.values()):
             put(spec.id, spec.colour, spec.opacity, spec.structure_id, spec.system)
@@ -47,10 +48,10 @@ def palette() -> dict[str, dict]:
     for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA, *catalog.venat_entries().values(),
                  *catalog.lc_metamask_entries().values(), *catalog.aan_entries().values(),
                  *catalog.cerebra_entries().values(), *catalog.fastsurfer_cerebellum_entries().values()):
-        put(spec.id, spec.colour, spec.opacity, spec.structure_id, spec.system)
+        put(spec.id, spec.colour, spec.opacity, spec.structure_id, spec.system, spec.visible)
         if spec.side == "bilateral":
-            put(spec.id + "-l", spec.colour, spec.opacity, spec.structure_id, spec.system)
-            put(spec.id + "-r", spec.colour, spec.opacity, spec.structure_id, spec.system)
+            put(spec.id + "-l", spec.colour, spec.opacity, spec.structure_id, spec.system, spec.visible)
+            put(spec.id + "-r", spec.colour, spec.opacity, spec.structure_id, spec.system, spec.visible)
     # the landmark-anchored brainstem markers: their colours are authored in brainstem_landmarks.yaml
     for n in (yaml.safe_load((CONFIG / "brainstem_landmarks.yaml").read_text()) or {}).get("nuclei", []):
         if not n.get("colour"):
@@ -377,7 +378,7 @@ def main(argv=None) -> None:
                 "id": m["id"], "structureId": look.get("structureId", m["structureId"]), "name": m["name"], "system": m["system"], "subsystem": m["subsystem"],
                 "side": m["side"], "source": m["source"], "license": lic, "nc": bool(cfg["licenses"][lic].get("nc", False)),
                 "alignment": m["alignment"], "file": m["file"], "bytes": m["bytes"], "triangles": m["triangles"], "compression": "meshopt",
-                "colour": look["colour"], "opacity": look["opacity"], "visible": m["visible"], "bbox": m["bbox"], "centroid": m["centroid"],
+                "colour": look["colour"], "opacity": look["opacity"], "visible": look.get("visible", m["visible"]), "bbox": m["bbox"], "centroid": m["centroid"],
                 "labels": by_mesh.get(m["id"], {}), "ontology": {k: v for k, v in (("atlasLabels", m.get("atlasLabels")),) if v},
                 **({"lod": m["lod"]} if m.get("lod") else {}),
                 **({"derived": m["derived"]} if m.get("derived") else {}),

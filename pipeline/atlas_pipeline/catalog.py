@@ -597,7 +597,10 @@ def atlases() -> list[AtlasSpec]:
 
 
 ENVELOPE = MeshSpec("brain-envelope", "Brain surface (mask)", "envelope", visible=True, budget="huge", colour="#DCBFAE", opacity=0.12)
-ARTERIES_MRA = MeshSpec("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)", "arteries", subsystem="mra", visible=True, budget="vessel", colour="#C42B2B")
+# Off by default. It is the population MRA iso-surface, not a named vessel, and drawn on top of the named
+# arteries it fuses them into one red mass -- the ACAs in particular stop being two vessels. A reader
+# turns it on from the tree when they want the imaging-derived tree; the named anatomy is the default.
+ARTERIES_MRA = MeshSpec("arteries-mra-atlas", "Cerebral arteries (MRA atlas iso-surface)", "arteries", subsystem="mra", visible=False, budget="vessel", colour="#C42B2B")
 
 
 # ================================================================ VENAT venous atlas (Huck et al. 2019)

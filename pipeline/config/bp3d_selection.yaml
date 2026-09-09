@@ -45,8 +45,15 @@ meshes:
   - {id: artery-aca-l, fma: 50030, name: "Anterior cerebral artery (L)", system: arteries, subsystem: anterior-circulation, side: left, budget: small, visible: true, structureId: artery-aca}
   - {id: artery-aca-r, fma: 50029, name: "Anterior cerebral artery (R)", system: arteries, subsystem: anterior-circulation, side: right, budget: small, visible: true, structureId: artery-aca}
   - {id: artery-acom, fma: 50169, name: "Anterior communicating artery", system: arteries, subsystem: circle-of-willis, side: midline, budget: tiny, visible: true}
-  - {id: artery-mca-r, fma: [50082, 50366], name: "Middle cerebral artery (R)", system: arteries, subsystem: anterior-circulation, side: right, budget: medium, visible: true, structureId: artery-mca}
-  - {id: artery-mca-l, fma: [50083, 50367], name: "Middle cerebral artery (L)", system: arteries, subsystem: anterior-circulation, side: left, budget: medium, visible: true, structureId: artery-mca}
+  # The MCA is built from its named parts on BOTH sides -- sphenoid (M1), insular (M2) and the middle
+  # temporal branch. BodyParts3D has a whole-vessel concept for the RIGHT MCA (FMA50082) but none for the
+  # left: FMA50083 is not in the element map at all, so the left side was a lone sphenoid segment, 800
+  # faces against 3142, and a 90% bounding-box difference -- by far the worst left/right asymmetry in the
+  # atlas, in the artery that matters most clinically. Part-for-part the two sides are identical (7478
+  # faces, 58x75x50 mm each), so building both the same way makes them symmetric by construction. The
+  # anterolateral central branches (FMA50377/50378) stay out: they ship as arteries-lenticulostriate-*.
+  - {id: artery-mca-r, fma: [50366, 50369, 50467], name: "Middle cerebral artery (R)", system: arteries, subsystem: anterior-circulation, side: right, budget: medium, visible: true, structureId: artery-mca}
+  - {id: artery-mca-l, fma: [50367, 50370, 50468], name: "Middle cerebral artery (L)", system: arteries, subsystem: anterior-circulation, side: left, budget: medium, visible: true, structureId: artery-mca}
   - {id: arteries-lenticulostriate-l, fma: 50378, name: "Lenticulostriate arteries (L)", system: arteries, subsystem: perforators, side: left, budget: small, visible: false, structureId: arteries-lenticulostriate}
   - {id: arteries-lenticulostriate-r, fma: 50377, name: "Lenticulostriate arteries (R)", system: arteries, subsystem: perforators, side: right, budget: small, visible: false, structureId: arteries-lenticulostriate}
   - {id: artery-pcom-l, fma: 50086, name: "Posterior communicating artery (L)", system: arteries, subsystem: circle-of-willis, side: left, budget: tiny, visible: true, structureId: artery-pcom}
