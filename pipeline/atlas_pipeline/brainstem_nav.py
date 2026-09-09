@@ -240,7 +240,7 @@ def spec_for(f: Found, entry: dict) -> MeshSpec:
     base = entry["id"]
     system = entry.get("system") or "brainstem"
     sub = entry.get("subsystem")
-    colour = entry.get("colour") or catalog.jitter(catalog.SYSTEM_COLOUR[system], base)
+    colour = entry.get("colour") or catalog.system_jitter(system, base)
     budget = entry.get("budget", "tiny")
     visible = bool(entry.get("visible", False))
     if f.side is None:

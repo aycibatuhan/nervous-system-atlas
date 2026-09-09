@@ -45,15 +45,120 @@ LOD_FACES = 3000          # stand-in size for the first paint
 LOD_MIN_FACES = 12000     # meshes at or above this get a stand-in
 
 
-def jitter(colour: str, key: str, amount: float = 0.06) -> str:
-    """Deterministic small lightness/hue variation so neighbouring structures are distinguishable."""
+# How much each system spreads its structures around its base colour.
+#
+# Two opposite complaints from a neurology resident reading the atlas, both measurable. The ARTERIES came out
+# in eight shades of red because every vessel jittered off the system colour -- vessels are told apart by
+# course and calibre, not tint, so the variation only made the tree look like eight different things; they are
+# uniform now. The GREY MATTER had the reverse problem: measured over the shipped manifest the closest pair of
+# colours in the cerebrum was dE 0.5, in the basal ganglia 1.3, in the diencephalon 1.7 -- all under the ~2.3
+# just-noticeable difference, i.e. genuinely the same colour on a shaded surface. Those systems spread wider.
+SYSTEM_JITTER = {
+    "arteries": 0.0,          # one red; shape and position carry the identity
+    "cerebrum": 0.15,
+    "diencephalon": 0.24,     # the densest: thalamic and hypothalamic nuclei, many and small
+    "basal-ganglia": 0.20,
+    "brainstem": 0.18,
+    "cerebellum": 0.18,
+}
+
+
+def system_jitter(system: str, key: str, colour: str | None = None) -> str:
+    """The colour a structure gets from its system, with that system's spread. Used wherever a mesh has no
+    explicit colour, so catalog.py and manifest.py cannot drift apart on it."""
+    return jitter(colour or SYSTEM_COLOUR[system], key, SYSTEM_JITTER.get(system, 0.06))
+
+
+JITTER_STEPS = 7          # distinct offsets per axis; 7x7 = 49 slots around a base colour
+
+
+def jitter(colour: str, key: str, amount: float = 0.06, steps: int = JITTER_STEPS) -> str:
+    """
+    Deterministic hue/lightness variation so neighbouring structures are distinguishable.
+
+    The offsets are QUANTISED onto a grid rather than taken as a continuous random value. With a continuous
+    offset two structures could land arbitrarily close: measured over the shipped manifest the nearest pair in
+    the cerebrum was dE 0.5 and in the basal ganglia 1.3, both under the ~2.3 just-noticeable difference, so
+    they were the same colour to a reader while still being "different" to the code. On a grid two structures
+    are either the SAME slot -- identical, which is honest and only happens to a handful -- or a full step
+    apart, which is visible. Widening `amount` alone cannot fix that; it just spreads the near-misses out.
+    """
+    if amount == 0:
+        return colour
     h = int(hashlib.md5(key.encode()).hexdigest()[:8], 16)
     r, g, b = (int(colour[i:i + 2], 16) / 255 for i in (1, 3, 5))
     hh, ll, ss = colorsys.rgb_to_hls(r, g, b)
-    hh = (hh + ((h % 1000) / 1000 - 0.5) * amount) % 1.0
-    ll = min(0.92, max(0.25, ll + (((h >> 10) % 1000) / 1000 - 0.5) * amount * 1.5))
+    slot = lambda v: v / (steps - 1) - 0.5                      # 0..steps-1  ->  -0.5 .. +0.5
+    hh = (hh + slot(h % steps) * amount) % 1.0
+    ll = min(0.92, max(0.25, ll + slot((h // steps) % steps) * amount * 1.5))
     r, g, b = colorsys.hls_to_rgb(hh, ll, ss)
     return "#%02x%02x%02x" % (round(r * 255), round(g * 255), round(b * 255))
+
+
+# Perceptual distance, so "are these two the same colour to a reader" is a measured question rather than a
+# guess. CIE76 in Lab is crude but ample here: ~2.3 is the just-noticeable difference.
+def _lab(hexc: str) -> tuple[float, float, float]:
+    r, g, b = (int(hexc[i:i + 2], 16) / 255 for i in (1, 3, 5))
+    f = lambda u: u / 12.92 if u <= 0.04045 else ((u + 0.055) / 1.055) ** 2.4  # noqa: E731
+    r, g, b = f(r), f(g), f(b)
+    x, y, z = r * .4124 + g * .3576 + b * .1805, r * .2126 + g * .7152 + b * .0722, r * .0193 + g * .1192 + b * .9505
+    q = lambda v: v ** (1 / 3) if v > 0.008856 else 7.787 * v + 16 / 116  # noqa: E731
+    fx, fy, fz = q(x / .95047), q(y), q(z / 1.08883)
+    return (116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz))
+
+
+def delta_e(a: str, b: str) -> float:
+    la, lb = _lab(a), _lab(b)
+    return sum((u - v) ** 2 for u, v in zip(la, lb)) ** 0.5
+
+
+MIN_DELTA_E = 3.0         # a little above the JND, so it survives shading on a curved surface
+
+
+def separate(colours: dict[str, str], min_de: float = MIN_DELTA_E) -> dict[str, str]:
+    """
+    Push apart any two colours in `colours` that a reader could not tell apart.
+
+    Jitter alone cannot promise this. It offsets each structure from its system's base colour, but the cortex
+    has six lobe bases, so two parcels on different bases can still land on top of each other -- measured, the
+    closest pair in the cerebrum was dE 0.5. This walks the keys in sorted order, keeps what it has accepted,
+    and moves anything too close to the nearest free spot.
+
+    The search covers hue as well as lightness, and is bounded. Lightness alone runs out of room in a system
+    with forty-odd structures in a narrow tonal band -- the first attempt walked the medullary raphe nuclei
+    from #B29A9E to a near-white #daced0, which fixed the arithmetic and ruined the anatomy. Candidates are
+    tried in order of how far they move the colour, so most structures keep the tone they were given and only
+    the genuinely colliding ones shift, by the least that works.
+
+    Sorted key order makes it deterministic, and running it over the whole catalogue rather than one edition
+    keeps a structure the same colour in both.
+    """
+    # (dl, dh) offsets ordered by magnitude: small lightness moves first, then hue, then both
+    steps: list[tuple[float, float]] = [(0.0, 0.0)]
+    for ring in range(1, 7):
+        for dl in (ring * 0.022, -ring * 0.022):
+            steps.append((dl, 0.0))
+        for dh in (ring * 0.012, -ring * 0.012):
+            steps.append((0.0, dh))
+            steps.append((ring * 0.018, dh))
+            steps.append((-ring * 0.018, dh))
+
+    out: dict[str, str] = {}
+    accepted: list[str] = []
+    for key in sorted(colours):
+        base = colours[key]
+        r, g, b = (int(base[i:i + 2], 16) / 255 for i in (1, 3, 5))
+        hh, ll, ss = colorsys.rgb_to_hls(r, g, b)
+        chosen = base
+        for dl, dh in steps:
+            rr, gg, bb = colorsys.hls_to_rgb((hh + dh) % 1.0, min(0.90, max(0.24, ll + dl)), ss)
+            cand = "#%02x%02x%02x" % (round(rr * 255), round(gg * 255), round(bb * 255))
+            if all(delta_e(cand, a) >= min_de for a in accepted):
+                chosen = cand
+                break
+        accepted.append(chosen)
+        out[key] = chosen
+    return out
 
 
 @dataclass
@@ -75,7 +180,7 @@ class MeshSpec:
         if self.structure_id is None:
             self.structure_id = self.id[:-2] if self.id.endswith(("-l", "-r")) else self.id
         if self.colour is None:
-            self.colour = jitter(SYSTEM_COLOUR[self.system], self.structure_id)
+            self.colour = system_jitter(self.system, self.structure_id)
 
 
 @dataclass
@@ -152,7 +257,7 @@ def hocpal_entries() -> dict[int, MeshSpec]:
     for k, (sid, name, lobe) in enumerate(HOCPA):
         # lateralised index = 2k (L) / 2k+1 (R); voxel value = index + 1
         out.update(LR(sid, name, "cerebrum", 2 * k + 1, 2 * k + 2, subsystem=f"lobe-{lobe}", visible=True,
-                      budget="cortical", colour=jitter(LOBE_COLOUR[lobe], sid), opacity=1.0))
+                      budget="cortical", colour=system_jitter("cerebrum", sid, LOBE_COLOUR[lobe]), opacity=1.0))
     return out
 
 
@@ -220,7 +325,7 @@ def mial_entries() -> dict[int, MeshSpec]:
               ("thalamus-ventral-posterior-ventrolateral", "Ventral posterior / ventrolateral group (VPL/VPM)")]
     e = {}
     for k, (sid, name) in enumerate(groups):
-        e.update(LR(sid, name, "diencephalon", k + 1, k + 8, subsystem="thalamic-nuclei", budget="tiny", colour=jitter("#C9A27E", sid, 0.18)))
+        e.update(LR(sid, name, "diencephalon", k + 1, k + 8, subsystem="thalamic-nuclei", budget="tiny", colour=jitter("#C9A27E", sid, 0.24)))
     return e
 
 
@@ -242,7 +347,7 @@ def hypothalamus_entries() -> dict[int, MeshSpec]:
     e = {}
     for r, l, sid, name in rows:
         sys_ = "cerebrum" if sid in ("bed-nucleus-stria-terminalis", "nucleus-basalis-meynert") else "diencephalon"
-        e.update(LR(sid, name, sys_, l, r, subsystem="hypothalamus", budget="tiny", colour=jitter("#CDA880", sid, 0.16)))
+        e.update(LR(sid, name, sys_, l, r, subsystem="hypothalamus", budget="tiny", colour=jitter("#C89A93", sid, 0.24)))
     return e
 
 
@@ -255,10 +360,10 @@ def diedrichsen_entries() -> dict[int, MeshSpec]:
     e = {}
     for key, name, l, r, v in lob:
         sid = "cerebellar-lobule-" + key.lower().replace("–", "-")
-        e.update(LR(sid, name, "cerebellum", l, r, subsystem="lobules", budget="medium", colour=jitter("#B5978A", sid, 0.16)))
+        e.update(LR(sid, name, "cerebellum", l, r, subsystem="lobules", budget="medium", colour=jitter("#B5978A", sid, 0.18)))
         if v:
             e[v] = MeshSpec(f"cerebellar-vermis-{key.lower()}", f"Vermis {name.replace('Lobule ', '')}", "cerebellum", subsystem="vermis",
-                            budget="small", colour=jitter("#A88B7E", sid, 0.16), structure_id="cerebellar-vermis")
+                            budget="small", colour=jitter("#A88B7E", sid, 0.18), structure_id="cerebellar-vermis")
     e.update(LR("dentate-nucleus", "Dentate nucleus", "cerebellum", 29, 30, subsystem="deep-nuclei", visible=True, budget="small", colour="#8A6E64"))
     e.update(LR("interposed-nucleus", "Interposed nuclei (emboliform + globose)", "cerebellum", 31, 32, subsystem="deep-nuclei", budget="tiny", colour="#957A70"))
     e.update(LR("fastigial-nucleus", "Fastigial nucleus", "cerebellum", 33, 34, subsystem="deep-nuclei", budget="tiny", colour="#9F857B"))
@@ -407,7 +512,7 @@ def cerebra_entries() -> dict[int, MeshSpec]:
         for lab, side, sfx in ((lab_l, "left", "-l"), (lab_r, "right", "-r")):
             e[lab] = MeshSpec(id=f"dkt-{key}{sfx}", name=f"{name} ({'L' if side == 'left' else 'R'})",
                               system="cerebrum", subsystem=f"lobe-{lobe}", side=side, visible=True,
-                              budget="cortical", colour=jitter(LOBE_COLOUR[lobe], f"dkt-{key}"),
+                              budget="cortical", colour=system_jitter("cerebrum", f"dkt-{key}", LOBE_COLOUR[lobe]),
                               opacity=1.0, structure_id=sid)
     return e
 
@@ -457,10 +562,10 @@ def fastsurfer_cerebellum_entries() -> dict[int, MeshSpec]:
         for lab, side, sfx in ((lab_l, "left", "-l"), (lab_r, "right", "-r")):
             e[lab] = MeshSpec(id=f"{sid}-fs{sfx}", name=f"{name} ({'L' if side == 'left' else 'R'})",
                               system="cerebellum", subsystem="lobules", side=side, budget="medium",
-                              colour=jitter("#B5978A", sid, 0.16), structure_id=sid)
+                              colour=jitter("#B5978A", sid, 0.18), structure_id=sid)
         if lab_v:
             e[lab_v] = MeshSpec(f"cerebellar-vermis-{key}-fs", f"Vermis {name.replace('Lobule ', '')}", "cerebellum",
-                                subsystem="vermis", budget="small", colour=jitter("#A88B7E", sid, 0.16),
+                                subsystem="vermis", budget="small", colour=jitter("#A88B7E", sid, 0.18),
                                 structure_id="cerebellar-vermis")
     for key, name, lab in CEREBNET_VERMIS_GROUPS:
         e[lab] = MeshSpec(f"cerebellar-vermis-{key}-fs", name, "cerebellum", subsystem="vermis", budget="small",

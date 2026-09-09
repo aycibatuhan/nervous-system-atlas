@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -24,33 +25,68 @@ from .download import load_sources, load_lock
 from .paths import CONFIG, OUT, VOLUMES, WORK
 
 
+SEPARATE_SYSTEMS = ("cerebrum", "diencephalon", "basal-ganglia", "brainstem", "cerebellum")
+
+
 def palette() -> dict[str, dict]:
     """mesh id -> {colour, opacity} from the current catalogue and selection files, so colour edits never need a re-mesh."""
     look: dict[str, dict] = {}
 
-    def put(mid, colour, opacity, structure_id=None):
+    def put(mid, colour, opacity, structure_id=None, system=None):
         if colour:
-            look[mid] = {"colour": colour, "opacity": opacity, **({"structureId": structure_id} if structure_id else {})}
+            look[mid] = {"colour": colour, "opacity": opacity, **({"structureId": structure_id} if structure_id else {}),
+                         **({"_system": system} if system else {})}
     for a in catalog.atlases():
         for spec in list(a.entries.values()) + list(a.files.values()):
-            put(spec.id, spec.colour, spec.opacity, spec.structure_id)
+            put(spec.id, spec.colour, spec.opacity, spec.structure_id, spec.system)
             if spec.side == "bilateral":
-                put(spec.id + "-l", spec.colour, spec.opacity); put(spec.id + "-r", spec.colour, spec.opacity)
+                put(spec.id + "-l", spec.colour, spec.opacity, None, spec.system); put(spec.id + "-r", spec.colour, spec.opacity, None, spec.system)
+    # CerebrA/DKT, the FastSurfer cerebellum and the landmark anchors used to be missing here, so the manifest
+    # fell back to the colour each mesh was built with and a palette edit silently did nothing to them -- which
+    # is exactly what this function exists to prevent. They are covered now.
     for spec in (catalog.ENVELOPE, catalog.ARTERIES_MRA, *catalog.venat_entries().values(),
-                 *catalog.lc_metamask_entries().values(), *catalog.aan_entries().values()):
-        put(spec.id, spec.colour, spec.opacity, spec.structure_id)
+                 *catalog.lc_metamask_entries().values(), *catalog.aan_entries().values(),
+                 *catalog.cerebra_entries().values(), *catalog.fastsurfer_cerebellum_entries().values()):
+        put(spec.id, spec.colour, spec.opacity, spec.structure_id, spec.system)
+        if spec.side == "bilateral":
+            put(spec.id + "-l", spec.colour, spec.opacity, spec.structure_id, spec.system)
+            put(spec.id + "-r", spec.colour, spec.opacity, spec.structure_id, spec.system)
+    # the landmark-anchored brainstem markers: their colours are authored in brainstem_landmarks.yaml
+    for n in (yaml.safe_load((CONFIG / "brainstem_landmarks.yaml").read_text()) or {}).get("nuclei", []):
+        if not n.get("colour"):
+            continue
+        base = f"{n['id']}-anchor"
+        if n.get("side") == "paired":
+            put(base + "-l", n["colour"], 1.0, n["id"], "brainstem"); put(base + "-r", n["colour"], 1.0, n["id"], "brainstem")
+        else:
+            put(base, n["colour"], 1.0, n["id"], "brainstem")
     try:
         from .brainstem_nav import palette_specs
         for spec in palette_specs().values():
-            put(spec.id, spec.colour, spec.opacity, spec.structure_id)
+            put(spec.id, spec.colour, spec.opacity, spec.structure_id, spec.system)
     except Exception:  # noqa: BLE001 - the Brainstem Navigator mapping is optional
         pass
     for e in yaml.safe_load((CONFIG / "bp3d_selection.yaml").read_text())["meshes"]:
-        put(e["id"], e.get("colour") or catalog.jitter(catalog.SYSTEM_COLOUR[e["system"]], e.get("structureId") or e["id"]), e.get("opacity", 1.0))
+        put(e["id"], e.get("colour") or catalog.system_jitter(e["system"], e.get("structureId") or e["id"]), e.get("opacity", 1.0), None, e["system"])
     for e in yaml.safe_load((CONFIG / "zanatomy_selection.yaml").read_text())["entries"]:
-        col = e.get("colour") or catalog.jitter(catalog.SYSTEM_COLOUR[e["system"]], e.get("structureId") or e["id"])
+        col = e.get("colour") or catalog.system_jitter(e["system"], e.get("structureId") or e["id"])
         for mid in (e["id"], e["id"] + "-l", e["id"] + "-r"):
-            put(mid, col, e.get("opacity", 1.0))
+            put(mid, col, e.get("opacity", 1.0), None, e["system"])
+
+    # Finally, pull apart colours a reader could not tell apart. Only the dense grey-matter systems: the
+    # arteries are deliberately one colour, and the territories and tracts encode identity in their tint.
+    # A left/right pair shares one colour and moves as one unit.
+    for system in SEPARATE_SYSTEMS:
+        units: dict[str, str] = {}
+        for mid, rec in look.items():
+            if rec.get("_system") == system:
+                units.setdefault(re.sub(r"-(l|r)$", "", mid), rec["colour"])
+        moved = catalog.separate(units)
+        for mid, rec in look.items():
+            if rec.get("_system") == system:
+                rec["colour"] = moved[re.sub(r"-(l|r)$", "", mid)]
+    for rec in look.values():
+        rec.pop("_system", None)
     return look
 
 
