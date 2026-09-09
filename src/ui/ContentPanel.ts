@@ -86,7 +86,9 @@ export class ContentPanel {
         h('p', { class: 'muted hover-line', hidden: true }, t('content.hover'), h('span', { class: 'hover-name' }))));
       return;
     }
-    const crumbs = mesh ? `${mesh.system}${mesh.subsystem ? ' › ' + mesh.subsystem : ''} · ${mesh.side}` : String(entry!['system'] ?? '');
+    // mesh.side is the raw 'left' / 'right' from the manifest; the crumb shows it in the interface language
+    const sideWord = mesh?.side === 'left' ? t('side.left') : mesh?.side === 'right' ? t('side.right') : mesh?.side;
+    const crumbs = mesh ? `${mesh.system}${mesh.subsystem ? ' › ' + mesh.subsystem : ''} · ${sideWord}` : String(entry!['system'] ?? '');
     const name = entryName(entry as NamedEntry | undefined, mesh?.name ?? '');
     // in Turkish the Latin term is the heading itself, so the crumbs no longer repeat it
     const latin = getLocale() === 'en' && entry?.['latin'] ? ` · ${String(entry['latin'])}` : '';

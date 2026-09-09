@@ -117,10 +117,36 @@ export function entriesOf(app: App, kind: EntryKind): Record<string, Rec> {
 export function isTranslated(e: { lang?: string } | undefined | null): boolean { return current !== 'tr' || e?.lang === 'tr'; }
 export type { ContentBundle };
 
-/** Display name of a mesh: its content entry if it has one, otherwise the manifest label. */
+/**
+ * A trailing side marker as the manifest writes it: `(L)`, `(R)`, or `(L, AAN atlas)` where the parenthesis
+ * carries something else too. Matched so it can be stripped and re-added in the interface language.
+ */
+const SIDE_TAIL = /\s*\((?:L|R)(?:,\s*([^)]*))?\)\s*$/i;
+
+/**
+ * Put the side into a display name.
+ *
+ * The two members of a pair share one content entry -- `caudate-nucleus-l` and `-r` both resolve to
+ * `caudate-nucleus` -- so a name taken from the entry has no side in it and the tree printed "Caudate nucleus"
+ * twice. The mesh record always knows: `side` is "left" or "right". The manifest's own name carries a marker
+ * too, but only in English, so any existing one is stripped and rewritten in the current language.
+ */
+function withSide(n: DisplayName, side: string | undefined): DisplayName {
+  if (side !== 'left' && side !== 'right') return n;
+  const put = (s: string, mark: string): string => {
+    const rest = SIDE_TAIL.exec(s)?.[1];
+    const base = s.replace(SIDE_TAIL, '').trim();
+    return rest ? `${base} (${mark}, ${rest})` : `${base} (${mark})`;
+  };
+  const key = side === 'left' ? 'side.l' : 'side.r';
+  // the secondary line is the English name, so it keeps the English marker
+  return { primary: put(n.primary, t(key)), secondary: n.secondary ? put(n.secondary, en[key]) : null };
+}
+
+/** Display name of a mesh: its content entry if it has one, otherwise the manifest label, plus its side. */
 export function meshLabel(app: App, meshId: string): DisplayName {
   const mesh = app.registry?.byId.get(meshId) ?? app.manifest.meshes.find((m) => m.id === meshId);
   const sid = app.content?.meshToStructure[meshId] ?? mesh?.structureId ?? null;
   const entry = sid ? (app.content?.structures[sid] as NamedEntry | undefined) : undefined;
-  return entryName(entry, mesh?.name ?? meshId);
+  return withSide(entryName(entry, mesh?.name ?? meshId), mesh?.side);
 }

@@ -16,6 +16,11 @@ export const tr: Record<keyof typeof en, string> = {
   'boot.noData.cmdNote': 'hazır genel paketi (yaklaşık 50 MB) v1.0.0 sürümünden indirir',
   'boot.noData.orBuild': 'Ya da veriyi kaynak atlaslardan kendiniz üretin: {link}',
   'boot.noData.docs': 'docs/pipeline.md',
+  // 'sol' ve 'sağ' aynı harfle başladığı için kısaltma tek harf olamaz.
+  'side.l': 'Sol',
+  'side.r': 'Sağ',
+  'side.left': 'sol',
+  'side.right': 'sağ',
   'hud.mni': 'MNI {x}, {y}, {z} mm',
 
   // ---- başlık ve durum

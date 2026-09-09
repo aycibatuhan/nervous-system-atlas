@@ -19,6 +19,11 @@ export const en = {
   'boot.noData.cmdNote': 'downloads the prebuilt public bundle (about 50 MB) from the v1.0.0 release',
   'boot.noData.orBuild': 'Or build the data yourself from the source atlases: {link}',
   'boot.noData.docs': 'docs/pipeline.md',
+  // Paired structures share one content entry, so the side marker has to be added from the mesh record.
+  'side.l': 'L',
+  'side.r': 'R',
+  'side.left': 'left',
+  'side.right': 'right',
   'hud.mni': 'MNI {x}, {y}, {z} mm',
 
   // ---- brand and status
