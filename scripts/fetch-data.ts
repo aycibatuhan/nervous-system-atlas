@@ -4,7 +4,7 @@
 //
 // The data is not in the repository -- 63 MB of meshes, MRI volumes and label tables -- so it ships as a
 // release asset instead. What this downloads is exactly the `dist/data` of `npm run build`: the edition that
-// check-public has certified, 592 meshes with every restricted atlas already removed. There is no private
+// check-public has certified, 585 meshes with every restricted atlas already removed. There is no private
 // bundle to fetch; that edition never leaves the machine that built it.
 //
 // The archive's SHA-256 is pinned below rather than trusted from the server, so a corrupted or substituted
@@ -20,8 +20,8 @@ const RELEASE = {
   repo: 'aycibatuhan/nervous-system-atlas',
   tag: 'v1.0.0',
   asset: 'atlas-data-v1.0.0.tar.gz',
-  sha256: '910bd57642bf82223e9d57c682075e90cacdb97fcbfeae5c00fdd3fef5d33a86',
-  bytes: 49250235,
+  sha256: 'b0a8d25e421f12c2bbc3be33582ee80398c3365f20763662f06f5e5687cba320',
+  bytes: 47516208,
 };
 
 const ROOT = resolve(import.meta.dirname, '..');
