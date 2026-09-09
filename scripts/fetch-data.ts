@@ -20,8 +20,8 @@ const RELEASE = {
   repo: 'aycibatuhan/nervous-system-atlas',
   tag: 'v1.0.0',
   asset: 'atlas-data-v1.0.0.tar.gz',
-  sha256: '3cca6e33ab54fb07d6c1f85915f7d145c9f2513d9b9b4505a00eeb95f4636fc8',
-  bytes: 49186310,
+  sha256: 'aa09a6ec2f29e21892dd19329d15a834d6eea422683f7dbe4dd5c7a81e61e99a',
+  bytes: 49186562,
 };
 
 const ROOT = resolve(import.meta.dirname, '..');
