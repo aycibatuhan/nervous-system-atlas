@@ -41,6 +41,12 @@ button:hover { border-color: var(--accent2); }
 .slice-opts { display: flex; gap: 12px; align-items: center; margin-left: auto; } .slice-opts input[type=range] { width: 80px; vertical-align: middle; }
 #syndrome-bar { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(29,32,38,.92); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; display: flex; gap: 10px; align-items: center; max-width: min(880px, 62vw); }
 #overlay-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(20,22,26,.85); font-size: 15px; text-align: center; padding: 40px; }
+/* The fresh-clone message: a short block of prose with a command and a link, rather than one centred line. */
+.boot-help { max-width: 560px; text-align: left; line-height: 1.55; }
+.boot-help h2 { margin: 0 0 10px; font-size: 17px; color: var(--accent2); }
+.boot-help p { margin: 0 0 10px; }
+.boot-help p:last-child { margin-bottom: 0; }
+.boot-help code { font-size: 14px; }
 .progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; pointer-events: none; background: var(--accent2); transform-origin: left; transform: scaleX(0); transition: transform .2s; }
 /* Machine-assisted-translation notice, along the foot of the 3D view in Turkish mode only (the syndrome
    bar owns the top of the viewport). */

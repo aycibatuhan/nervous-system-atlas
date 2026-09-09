@@ -13,6 +13,12 @@ export const en = {
   'boot.webgl': 'This atlas needs WebGL 2 (any current Chrome, Firefox, Safari or Edge).',
   'boot.manifest': 'Loading atlas manifest…',
   'boot.failed': 'Failed to start: {message}',
+  'boot.noData.title': 'No atlas data found',
+  'boot.noData.body': 'The meshes, MRI volumes and label tables are not kept in the repository — they are far too large. A fresh clone fetches them once:',
+  'boot.noData.cmd': 'npm run data',
+  'boot.noData.cmdNote': 'downloads the prebuilt public bundle (about 50 MB) from the v1.0.0 release',
+  'boot.noData.orBuild': 'Or build the data yourself from the source atlases: {link}',
+  'boot.noData.docs': 'docs/pipeline.md',
   'hud.mni': 'MNI {x}, {y}, {z} mm',
 
   // ---- brand and status

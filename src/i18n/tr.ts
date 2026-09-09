@@ -10,6 +10,12 @@ export const tr: Record<keyof typeof en, string> = {
   'boot.webgl': 'Bu atlas WebGL 2 gerektirir (güncel Chrome, Firefox, Safari ya da Edge).',
   'boot.manifest': 'Atlas manifesti yükleniyor…',
   'boot.failed': 'Başlatılamadı: {message}',
+  'boot.noData.title': 'Atlas verisi bulunamadı',
+  'boot.noData.body': 'Yüzey ağları, MR hacimleri ve etiket tabloları depoda tutulmuyor — fazlasıyla büyükler. Yeni bir kopya bunları bir kez indirir:',
+  'boot.noData.cmd': 'npm run data',
+  'boot.noData.cmdNote': 'hazır genel paketi (yaklaşık 50 MB) v1.0.0 sürümünden indirir',
+  'boot.noData.orBuild': 'Ya da veriyi kaynak atlaslardan kendiniz üretin: {link}',
+  'boot.noData.docs': 'docs/pipeline.md',
   'hud.mni': 'MNI {x}, {y}, {z} mm',
 
   // ---- başlık ve durum

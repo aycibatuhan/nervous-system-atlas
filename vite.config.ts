@@ -38,11 +38,41 @@ function privateEdition(): Plugin {
   };
 }
 
+// A fresh clone has no public/data/ at all: the pipeline builds it, or `npm run data` fetches it. Two things
+// go wrong without this plugin. The dev server answers every unknown path with index.html, so `data/manifest.json`
+// comes back 200 with a page of HTML and the app dies on `JSON.parse` with "Unexpected token '<'"; and nothing in
+// the terminal ever mentions the missing data. So: say it once at startup, and let a missing data file 404 like
+// it would on a real server, which is also what the app's own check expects.
+function dataPresence(): Plugin {
+  const dir = resolve(import.meta.dirname, 'public/data');
+  return {
+    name: 'atlas-data-presence',
+    apply: 'serve',
+    configureServer(server) {
+      if (!existsSync(resolve(dir, 'manifest.json'))) {
+        const l = server.config.logger;
+        l.warn('');
+        l.warn('  no atlas data: public/data/manifest.json is missing, so the app will show a setup message.');
+        l.warn('  `npm run data` downloads the prebuilt public bundle (~50 MB) from the v1.0.0 release,');
+        l.warn('  or build it yourself from the source atlases -- see docs/pipeline.md.');
+        l.warn('');
+      }
+      server.middlewares.use((req, res, next) => {
+        const path = (req.url ?? '').split('?')[0] ?? '';
+        if (!path.startsWith('/data/') || existsSync(resolve(dir, decodeURIComponent(path.slice('/data/'.length))))) return next();
+        res.statusCode = 404;
+        res.setHeader('content-type', 'text/plain');
+        res.end(`${path} is not built -- run \`npm run data\`, or see docs/pipeline.md`);
+      });
+    },
+  };
+}
+
 export default defineConfig({
   base: './',
   server: { fs: { strict: true } },
   build: { target: 'es2022', chunkSizeWarningLimit: 1500 },
   define: { __APP_VERSION__: JSON.stringify(version) },
   assetsInclude: ['**/*.glb'],
-  plugins: process.env['ATLAS_EDITION'] === 'private' ? [privateEdition()] : [],
+  plugins: [dataPresence(), ...(process.env['ATLAS_EDITION'] === 'private' ? [privateEdition()] : [])],
 });

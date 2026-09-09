@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import WebGL from 'three/addons/capabilities/WebGL.js';
 import { createApp, type App } from './app.ts';
-import { loadLabels, loadManifest } from './loader/manifest.ts';
+import { loadLabels, loadManifest, MissingDataError } from './loader/manifest.ts';
 import { Picker } from './picking/Picker.ts';
 import { TreePanel } from './ui/TreePanel.ts';
 import { SliceControls } from './ui/SliceControls.ts';
@@ -33,6 +33,23 @@ import { getLocale, onLocaleChange, otherLocale, setLocale, t } from './i18n/ind
 
 const msg = document.getElementById('overlay-msg')!;
 function showMsg(text: string | null): void { msg.hidden = !text; msg.textContent = text ?? ''; }
+
+/**
+ * The fresh-clone case: the app is fine, the data was simply never fetched. Say so on the canvas, and say
+ * what to run -- a stranger who clones and runs `npm run dev` sees this instead of a JSON parse error.
+ */
+function showNoData(): void {
+  msg.hidden = false;
+  clear(msg);
+  msg.append(h('div', { class: 'boot-help', 'data-testid': 'no-data' },
+    h('h2', {}, t('boot.noData.title')),
+    h('p', {}, t('boot.noData.body')),
+    h('p', {}, h('code', {}, t('boot.noData.cmd')), ' — ', t('boot.noData.cmdNote')),
+    h('p', {}, t('boot.noData.orBuild', { link: '' }),
+      h('a', { href: 'https://github.com/aycibatuhan/nervous-system-atlas/blob/main/docs/pipeline.md',
+        target: '_blank', rel: 'noreferrer' }, t('boot.noData.docs'))),
+  ));
+}
 
 async function boot(): Promise<void> {
   if (!WebGL.isWebGL2Available()) { showMsg(t('boot.webgl')); return; }
@@ -387,4 +404,8 @@ function applyPeel(app: App): void {
   for (const mesh of app.registry.loaded()) { const mat = mesh.material as THREE.Material; mat.clippingPlanes = planes.length ? planes : null; mat.side = planes.length ? THREE.DoubleSide : THREE.FrontSide; }
 }
 
-boot().catch((e) => { console.error(e); showMsg(t('boot.failed', { message: (e as Error).message })); });
+boot().catch((e) => {
+  console.error(e);
+  if (e instanceof MissingDataError) showNoData();
+  else showMsg(t('boot.failed', { message: (e as Error).message }));
+});
