@@ -4,7 +4,7 @@ WHAT YOU MUST DOWNLOAD BY HAND
 ------------------------------
 The pipeline cannot fetch this dataset: NITRC serves a login / click-through licence page rather than the
 file, so `atlas-download` lists it as manual (config/sources.yaml, id `brainstem_navigator`, group
-`manual`). To add it:
+`restricted` with `manual: true` -- there is no `manual` group). To add it:
 
   1. Open https://www.nitrc.org/projects/brainstemnavig/ and, under "Download", accept the terms and
      download the toolkit archive **BrainstemNavigatorv1.0.zip** (about 1 GB; a NITRC account may be

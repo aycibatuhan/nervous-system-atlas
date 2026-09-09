@@ -93,6 +93,89 @@ The content build validates the authored JSON against the **union** of the two m
 
 `tests/public-edition.test.ts` re-implements the exclusion rule in TypeScript, runs it over the real private manifest, and requires `atlas-manifest` to have dropped exactly the same set from the public manifest — so a change on either side shows up as a test failure — then checks that the private manifest, the private bundle and `content/` are untouched. `node scripts/check-data.ts --all` checks both manifests (`--manifest <file>` picks one, including `dist/data/manifest.json`).
 
+## Obtaining the restricted datasets
+
+Everything above is about what the public edition leaves out. This is the other direction: what you have to do
+to build the **private** edition yourself, dataset by dataset. You need this only if you want the original
+Harvard-Oxford gyri, the Diedrichsen lobules, the Brainstem Navigator nuclei or the PAM50 cord — the public
+edition substitutes all four and needs none of it.
+
+**The gate comes first.** All four sit in `group: restricted`, and `atlas-download` refuses to fetch that group
+unless it is on the `private` branch or told explicitly:
+
+```bash
+git switch private                      # or: export ATLAS_ALLOW_RESTRICTED=1
+uv run --project pipeline atlas-download --with restricted
+```
+
+Asked for the group by name on a public branch it exits with
+
+> `[restricted] the restricted group (harvard_oxford, diedrichsen_cerebellum, pam50, brainstem_navigator) is the private edition's data: its licences are non-commercial or forbid passing derived files on, so it may not be built on the public branch. Switch to the private branch, or set ATLAS_ALLOW_RESTRICTED=1 if you know what you are doing.`
+
+`--with all` does not fail; it prints the same reason and carries on with every other group. Whatever you build
+from these four is yours to keep locally: `npm run build` will not ship it, `check-public` fails if it tries,
+and `check-tree` fails if any of it is committed.
+
+| Dataset | Fetched by | Then run |
+|---|---|---|
+| Harvard-Oxford | `atlas-download --with restricted` | `atlas-atlas-meshes` |
+| Diedrichsen cerebellum | `atlas-download --with restricted` | `atlas-atlas-meshes` |
+| PAM50 | `atlas-download --with restricted` | `atlas-pam50` |
+| Brainstem Navigator | **by hand — see below** | `pipeline/add_brainstem_navigator.sh` |
+
+Then `atlas-manifest` (which writes `manifest.private.json` once restricted data is present) and `atlas-qa`.
+
+**Harvard-Oxford (`FSL-NC`).** Five files from TemplateFlow — the cortical, subcortical and cortical-parcellation
+segmentations plus their label tables — over plain HTTPS into `pipeline/raw/harvard_oxford/`. Nothing to
+register for and nothing to click through: the downloader just fetches them. What you are agreeing to is the
+licence itself, which is **non-commercial use only** under the FSL atlas terms at
+<https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases>. That page is the authority; the repository records the name
+and the URL, not the clause text, so read it there rather than here. Cite Desikan et al. 2006, Makris et al.
+2006, Frazier et al. 2005 and Goldstein et al. 2007.
+
+**Diedrichsen cerebellum (`CC-BY-NC-3.0`).** Two files — the probabilistic anatomical segmentation and its
+label table — from the DiedrichsenLab `cerebellar_atlases` repository into
+`pipeline/raw/diedrichsen_cerebellum/`. Again nothing to register for; the obligation is the licence,
+[CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/), whose full legal code the pipeline copies into
+`public/data/licenses/CC-BY-NC-3.0.txt`. Attribution and non-commercial use. Cite Diedrichsen et al.,
+*NeuroImage* 2009.
+
+**PAM50 (`PAM50-unlicensed`).** One release zip from
+[spinalcordtoolbox/PAM50](https://github.com/spinalcordtoolbox/PAM50), unpacked in place under
+`pipeline/raw/pam50/`; `atlas-pam50` then looks for a `*/template/` directory beneath it. There is nothing to
+agree to, and **that is the problem**: the repository ships no `LICENSE` file and states no terms, so the
+pipeline treats everything derived from it as research-use-only and never redistributes it. Spinal Cord Toolbox
+itself is LGPL-3.0, but that covers the code, not the template data. This is the one restriction here that
+exists only because nobody has said otherwise, and
+`pipeline/raw/pam50/LICENSE_REQUEST_DRAFT.txt` is a drafted, unsent letter asking the authors to state one; if
+they do, the cord MRI and the PAM50-cut cord segments could ship publicly and the two editions would differ by
+that much less. Cite De Leener et al., *NeuroImage* 2018.
+
+**Brainstem Navigator (`BrainstemNavigator-NC-ND`) — the manual one.** This is the only dataset the pipeline
+cannot fetch for you. NITRC serves it behind a click-through agreement, so `atlas-download --with restricted`
+will only print
+
+> `[manual] brainstem_navigator/BrainstemNavigatorv1.0.zip: place the file at … (download from …)`
+
+and move on. Do this instead:
+
+1. Open <https://www.nitrc.org/projects/brainstemnavig/>, and under **Download** accept the terms and take
+   `BrainstemNavigatorv1.0.zip`. A NITRC account may be required. The direct link recorded in `sources.yaml`
+   works only after the click-through, so use a browser.
+2. Put the archive at `pipeline/raw/manual/BrainstemNavigatorv1.0.zip`, or at
+   `pipeline/raw/brainstem_navigator/BrainstemNavigatorv1.0.zip`, or unpack it into
+   `pipeline/raw/brainstem_navigator/`. (`atlas-brainstem-nav` looks in both places; `atlas-download` only ever
+   looks in `pipeline/raw/brainstem_navigator/`, so its `[manual]` line names that one.)
+3. Run `pipeline/add_brainstem_navigator.sh`, which does `atlas-brainstem-nav --inventory`, then
+   `atlas-brainstem-nav`, then `atlas-manifest` and `atlas-qa`.
+
+What you accept at the click-through is stricter than the other three, and it is the reason these meshes can
+never be shared: non-commercial research use only, copies within your own organisation with the original
+notices attached, **no distribution of the files or of anything derived from them outside your organisation**,
+not for clinical use, and cite the papers in the toolkit's reference list. The verbatim terms are copied to
+`public/data/licenses/BrainstemNavigator-NC-ND.txt` during the ingest, so they only appear after you have
+agreed to them. The section below covers what the ingest builds.
+
 ## Brainstem Navigator
 
 Brainstem Navigator nuclei **are** included in this local build but never in a shared one. The toolkit needs a manual NITRC download (click-through licence), and clause 2 of its terms forbids distributing the files, or anything derived from them, outside your organisation: the 65 meshes are therefore tagged `nc` + `noRedistribution` in the manifest (licence `BrainstemNavigator-NC-ND`, verbatim terms in `public/data/licenses/`), shown with an **NC** badge in the tree, and **must be excluded from any build that is published or shared**. To rebuild them: put `BrainstemNavigatorv1.0.zip` in `pipeline/raw/manual/` (or unpack it into `pipeline/raw/brainstem_navigator/`) and run `pipeline/add_brainstem_navigator.sh` (`atlas-brainstem-nav --inventory` first). The abbreviation-to-mesh table is `pipeline/config/brainstem_navigator.yaml`: all 47 abbreviations of the two MNI label trees are mapped, 12 that MASSP20/CIT168 already provide (SN, RN, STh, VTA, PAG, SC, IC, DR, MnR, PTg, LG, MG) are skipped as duplicates, and their 7 T subdivisions (SN1/SN2, RN1/RN2, STh1/STh2 and the reticular-formation parts) are built hidden and attached to the parent structure entry.
