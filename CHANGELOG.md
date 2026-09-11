@@ -14,6 +14,10 @@ same tree, so a change to any one of the three can move the version.
 
 ## [Unreleased]
 
+Nothing yet.
+
+## [1.0.2] - 2026-09-10
+
 ### Fixed
 
 - **63 meshes had inside-out shells, 59 of them wholly inverted** — the right superior frontal gyrus among
@@ -328,6 +332,7 @@ Written in numbered batches with the Python authoring helpers in `tools/author/`
   checked with no errors and terminology-normalised. `content.tr.json` ships in both
   editions and `check-public` treats it like the English bundle.
 
-[Unreleased]: https://github.com/aycibatuhan/nervous-system-atlas/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/aycibatuhan/nervous-system-atlas/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.2
 [1.0.1]: https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.1
 [1.0.0]: https://github.com/aycibatuhan/nervous-system-atlas/releases/tag/v1.0.0

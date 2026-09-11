@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "atlas", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 5173 }
+    { "name": "atlas", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 5173 },
+    { "name": "atlas-dist", "runtimeExecutable": "npx", "runtimeArgs": ["vite", "preview", "--outDir", "dist", "--port", "5183", "--strictPort"], "port": 5183 }
   ]
 }

@@ -11,7 +11,7 @@ tour; this is the operating manual. The traps below are the ones that actually c
 
 ```bash
 npm ci
-npm run data           # 48 MB from the v1.0.1 release into public/data/, SHA-256 checked
+npm run data           # 48 MB from the v1.0.2 release into public/data/, SHA-256 checked
 npm run dev            # http://localhost:5173
 ```
 
