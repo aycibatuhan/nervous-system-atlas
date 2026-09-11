@@ -27,6 +27,10 @@ def main(argv=None) -> None:
             problems.append(f"{m['id']}: centroid outside bbox")
         if m["triangles"] < 4:
             problems.append(f"{m['id']}: degenerate mesh ({m['triangles']} triangles)")
+        # the viewer culls back faces, so an inside-out shell renders as a hollow wall (meshing.orient_outward);
+        # a record from before that field existed carries no count and is not judged here
+        if m.get("insideOutShells"):
+            problems.append(f"{m['id']}: {m['insideOutShells']} closed shell(s) wound inside-out")
         if m["bytes"] > MAX_BYTES:
             warnings.append(f"{m['id']}: {m['bytes']/1e6:.2f} MB exceeds the per-mesh budget")
         outside = np.any(b[0] < MNI_MIN - 10) or np.any(b[1] > MNI_MAX + 10)

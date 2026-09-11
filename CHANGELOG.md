@@ -14,7 +14,13 @@ same tree, so a change to any one of the three can move the version.
 
 ## [Unreleased]
 
-Nothing yet.
+### Fixed
+
+- **63 meshes had inside-out shells, 59 of them wholly inverted** — the right superior frontal gyrus among
+  them, visible at first paint as a hollow trough, and before that the left superior parietal lobule and the
+  right lateral occipital cortex a neurologist reported as "eroded". trimesh only repairs the winding of a
+  watertight mesh; every glb is now wound outward shell by shell before it is written, and the pipeline QA
+  fails any mesh that is not. The v1.0.1 notes blamed the "eroded" look on the label; that was wrong.
 
 ## [1.0.1] - 2026-09-09
 

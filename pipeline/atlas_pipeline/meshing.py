@@ -20,6 +20,8 @@ GLTF_TRANSFORM = ROOT / "node_modules" / ".bin" / "gltf-transform"
 
 TAUBIN = {"lamb": 0.5, "nu": 0.53, "iterations": 20}   # trimesh applies +lamb then -nu (i.e. mu = -0.53)
 MIN_COMPONENT_FACES = 40
+OPEN_EDGE_FRACTION = 0.02  # a shell is "closed" when at most this share of its edges border only one face (orient_outward)
+FLAT = 1e-4                # ...and encloses something when |volume| >= FLAT * area**1.5; below that it is a sliver
 
 
 def signed_distance(sub: np.ndarray) -> np.ndarray:
@@ -139,7 +141,60 @@ def make_lod(mesh: trimesh.Trimesh, faces: int) -> trimesh.Trimesh | None:
     return lod
 
 
+def shells(mesh: trimesh.Trimesh):
+    """Yield (face mask, signed volume about the shell's own centroid, closed?) for every connected shell.
+
+    A shell counts as closed when at most OPEN_EDGE_FRACTION of its edges border a single face and it encloses
+    a volume of at least FLAT * area**1.5. Only then does the sign of the volume say which way it is wound: an
+    open shell -- a sheet, or the spray of little open tubes Z-Anatomy draws the cavernous sinus with -- has a
+    volume that depends on the point it is measured from, and a flat closed sliver (six faces, 0.000 mm^3, of
+    which that sinus has two) has one whose sign the glb's vertex quantisation decides. Real shells sit far
+    above FLAT: 6e-4 for the smallest closed sinus tube, ~1e-2 for a gyrus or a tract."""
+    if not len(mesh.faces):
+        return
+    labels = trimesh.graph.connected_component_labels(mesh.face_adjacency, node_count=len(mesh.faces))
+    open_edges = trimesh.grouping.group_rows(mesh.edges_sorted, require_count=1)
+    open_per_face = np.bincount(mesh.edges_face[open_edges], minlength=len(mesh.faces))
+    tri = mesh.triangles
+    for c in np.unique(labels):
+        sel = labels == c
+        n = int(sel.sum())
+        t = tri[sel]
+        o = t.reshape(-1, 3).mean(0)
+        vol = float(np.einsum("ij,ij->i", t[:, 0] - o, np.cross(t[:, 1] - o, t[:, 2] - o)).sum() / 6.0)
+        closed = (n >= 4 and open_per_face[sel].sum() <= OPEN_EDGE_FRACTION * 1.5 * n
+                  and abs(vol) >= FLAT * float(mesh.area_faces[sel].sum()) ** 1.5)
+        yield sel, vol, closed
+
+
+def orient_outward(mesh: trimesh.Trimesh) -> int:
+    """Wind every closed shell of `mesh` so its normals point out, in place. Returns the shells flipped.
+
+    trimesh's fix_normals() only corrects a mesh that is watertight -- repair.fix_inversion says flipping "will
+    make things worse for non-watertight meshes" and skips them -- and a surface that has been decimated,
+    welded to its neighbours or clipped often is not. 59 of the 585 public meshes shipped inside-out, every
+    one of them open: marching-cubes surfaces carry a stray speck or a seam, and that was enough. The viewer
+    culls back faces, so an inside-out mesh is drawn as its own far wall seen through the missing near one: a
+    hollow, shredded shape that a neurologist read as an eroded gyrus. Each shell that is closed apart from a
+    few seams is flipped on the sign of its own volume; open ones are left as their source drew them.
+    """
+    flip = np.zeros(len(mesh.faces), dtype=bool)
+    flipped = 0
+    for sel, vol, closed in shells(mesh):
+        if closed and vol < 0:
+            flip |= sel
+            flipped += 1
+    if flipped:
+        faces = mesh.faces.copy()
+        faces[flip] = faces[flip][:, ::-1]
+        mesh.faces = faces
+    return flipped
+
+
 def export_glb(mesh: trimesh.Trimesh, path: Path, name: str) -> int:
+    # every glb the pipeline writes comes through here, stand-ins included, so this is the one place the
+    # winding is settled (see orient_outward)
+    orient_outward(mesh)
     path.parent.mkdir(parents=True, exist_ok=True)
     mesh.metadata["name"] = name
     scene = trimesh.Scene()
@@ -175,4 +230,6 @@ def compress(src: Path, dst: Path) -> int:
 def mesh_stats(mesh: trimesh.Trimesh) -> dict:
     b = mesh.bounds
     return {"triangles": int(len(mesh.faces)), "bbox": [[round(float(x), 1) for x in b[0]], [round(float(x), 1) for x in b[1]]],
-            "centroid": [round(float(x), 1) for x in mesh.vertices.mean(0)], "watertight": bool(mesh.is_watertight)}
+            "centroid": [round(float(x), 1) for x in mesh.vertices.mean(0)], "watertight": bool(mesh.is_watertight),
+            # closed shells wound inwards; atlas-qa fails anything but 0 (see orient_outward)
+            "insideOutShells": sum(1 for _, vol, closed in shells(mesh) if closed and vol < 0)}
